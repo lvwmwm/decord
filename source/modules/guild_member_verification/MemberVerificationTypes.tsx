@@ -1,10 +1,10 @@
-// Module ID: 3950
-// Function ID: 32627
+// Module ID: 3951
+// Function ID: 32638
 // Name: isTermsFormField
 // Dependencies: [2]
 // Exports: hasNonTermsFormField
 
-// Module 3950 (isTermsFormField)
+// Module 3951 (isTermsFormField)
 function isTermsFormField(field_type) {
   let tmp = null != field_type;
   if (tmp) {

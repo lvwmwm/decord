@@ -1,9 +1,9 @@
-// Module ID: 13620
-// Function ID: 104647
+// Module ID: 13631
+// Function ID: 104774
 // Name: styles
-// Dependencies: [31, 27, 33, 4130, 689, 665, 4660, 3974, 1273, 10017, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 665, 4661, 3975, 1273, 9946, 2]
 
-// Module 13620 (styles)
+// Module 13631 (styles)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ const memoResult = require("result").memo((color) => {
   const v = obj.int2hsv(color).v;
   if (null != onSelect) {
     obj = { accessibilityRole: "button" };
-    let obj3 = color(3974);
+    let obj3 = color(3975);
     let obj4 = color(665);
     obj.accessibilityLabel = obj3.hexToColorName(obj4.int2hex(color), true);
     obj = { selected };
@@ -42,16 +42,16 @@ const memoResult = require("result").memo((color) => {
     obj.style = items;
     if (!selected) {
       obj.children = null;
-      let tmp25Result = tmp12(color(4660).PressableOpacity, obj);
+      let tmp25Result = tmp12(color(4661).PressableOpacity, obj);
     } else {
-      const obj2 = { source: onSelect(10017) };
+      const obj2 = { source: onSelect(9946) };
       if (v < 0.5) {
         let BLACK2 = onSelect(689).unsafe_rawColors.WHITE;
       } else {
         BLACK2 = onSelect(689).unsafe_rawColors.BLACK;
       }
       obj2.color = BLACK2;
-      jsx(color(1273).Icon, { source: onSelect(10017) });
+      jsx(color(1273).Icon, { source: onSelect(9946) });
       const tmp16 = jsx;
     }
     const obj8 = color(665);
@@ -66,14 +66,14 @@ const memoResult = require("result").memo((color) => {
       obj3.children = null;
       tmp25Result = tmp25(tmp26, obj3);
     } else {
-      const obj5 = { source: onSelect(10017) };
+      const obj5 = { source: onSelect(9946) };
       if (v < 0.5) {
         let BLACK = onSelect(689).unsafe_rawColors.WHITE;
       } else {
         BLACK = onSelect(689).unsafe_rawColors.BLACK;
       }
       obj5.color = BLACK;
-      jsx(color(1273).Icon, { source: onSelect(10017) });
+      jsx(color(1273).Icon, { source: onSelect(9946) });
       const tmp2 = jsx;
     }
     const obj12 = color(665);

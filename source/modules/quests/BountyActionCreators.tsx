@@ -1,10 +1,10 @@
-// Module ID: 10872
-// Function ID: 84327
+// Module ID: 10822
+// Function ID: 83917
 // Name: fetchBountiesAndDispatch
-// Dependencies: [5, 4222, 6940, 653, 686, 6969, 10873, 6957, 4030, 6697, 6961, 507, 6939, 2]
+// Dependencies: [5, 4223, 5931, 653, 686, 5960, 10823, 5948, 4031, 5693, 5952, 507, 5930, 2]
 // Exports: claimBountyReward, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 10872 (fetchBountiesAndDispatch)
+// Module 10822 (fetchBountiesAndDispatch)
 import AdCreativeType from "AdCreativeType";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -43,10 +43,10 @@ export const fetchBountyPreview = function fetchBountyPreview(arg0, arg1) {
   return _fetchBountyPreview(...arguments);
 };
 export const setBountyVideoProgress = function setBountyVideoProgress(bountyId, arg1) {
-  let obj = require(6961) /* isAdSessionExpired */;
+  let obj = require(5952) /* isAdSessionExpired */;
   if (null != obj.getCurrentAdSession()) {
-    const orRefreshAdSession = require(6961) /* isAdSessionExpired */.getOrRefreshAdSession(true);
-    const obj2 = require(6961) /* isAdSessionExpired */;
+    const orRefreshAdSession = require(5952) /* isAdSessionExpired */.getOrRefreshAdSession(true);
+    const obj2 = require(5952) /* isAdSessionExpired */;
     obj = { type: "BOUNTIES_VIDEO_PROGRESS_UPDATE", bountyId };
     ({ timestampSec: obj4.timestampSec, maxTimestampSec: obj4.maxTimestampSec, duration: obj4.duration } = arg1);
     importDefault(686).dispatch(obj);

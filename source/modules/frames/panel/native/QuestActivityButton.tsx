@@ -1,9 +1,9 @@
-// Module ID: 15760
-// Function ID: 121488
+// Module ID: 15771
+// Function ID: 121657
 // Name: QuestActivityButtonInner
-// Dependencies: [31, 27, 4122, 6941, 15761, 4976, 33, 3991, 8063, 4130, 689, 10493, 566, 4337, 15762, 1934, 4098, 15763, 4131, 5453, 14078, 15764, 13949, 1212, 10505, 2]
+// Dependencies: [31, 27, 4123, 5932, 15772, 4977, 33, 3992, 8463, 4131, 689, 10427, 566, 4338, 15773, 1935, 4099, 15774, 4132, 5453, 14089, 15775, 13960, 1212, 10439, 2]
 
-// Module 15760 (QuestActivityButtonInner)
+// Module 15771 (QuestActivityButtonInner)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -12,7 +12,7 @@ import closure_7 from "_isNativeReflectConstruct";
 import { QuestVariants } from "QuestsExperimentLocations";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let closure_10;
 let closure_9;
@@ -27,7 +27,7 @@ function QuestActivityButtonInner(quest) {
   let sharedValue1;
   let ref;
   let c8;
-  let obj = quest(10493);
+  let obj = quest(10427);
   let obj1 = quest(566);
   let items = [sharedValue];
   const stateFromStores = obj1.useStateFromStores(items, () => sharedValue.useReducedMotion);
@@ -86,9 +86,9 @@ function QuestActivityButtonInner(quest) {
     tmp8 = null != completedAt;
   }
   c4 = tmp8;
-  let obj2 = quest(3991);
+  let obj2 = quest(3992);
   sharedValue = obj2.useSharedValue(num);
-  let obj3 = quest(3991);
+  let obj3 = quest(3992);
   let num2 = 0;
   if (tmp8) {
     num2 = 1;
@@ -97,7 +97,7 @@ function QuestActivityButtonInner(quest) {
   ref = num.useRef(null);
   const tmp13 = callback3();
   c8 = tmp13;
-  let obj4 = quest(3991);
+  let obj4 = quest(3992);
   class I {
     constructor() {
       obj = { shadowOpacity: c6.get() };
@@ -118,7 +118,7 @@ function QuestActivityButtonInner(quest) {
     obj["transform"] = items;
     return obj;
   }, items2);
-  let obj5 = quest(3991);
+  let obj5 = quest(3992);
   class E {
     constructor() {
       obj = { strokeDashoffset: c2 - c2 * c5.get() };
@@ -167,36 +167,36 @@ function QuestActivityButtonInner(quest) {
   ({ container: arr6[0], completionGlow: arr6[1] } = tmp13);
   items5[2] = animatedStyle;
   obj = { style: memo, pointerEvents: "none" };
-  obj1 = { ref, source: quest(14078), autoPlay: false, loop: false };
+  obj1 = { ref, source: quest(14089), autoPlay: false, loop: false };
   obj.children = callback(stateFromStores(5453), obj1);
   const items6 = [callback(c4, obj), , , ];
   obj2 = { style: tmp13.buttonWrapper };
   obj3 = {};
   const tmp19 = stateFromStores(5453);
-  obj3.icon = stateFromStores(13949);
+  obj3.icon = stateFromStores(13960);
   obj3.onPress = callback;
   const intl = quest(1212).intl;
   obj3.accessibilityLabel = intl.string(quest(1212).t.JALI2K);
-  obj2.children = callback(stateFromStores(15764), obj3);
+  obj2.children = callback(stateFromStores(15775), obj3);
   items6[1] = callback(c4, obj2);
   obj4 = { pointerEvents: "none", style: tmp13.canvas };
   obj5 = { height: c11, width: c11 };
   const obj6 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: stateFromStores(689).unsafe_rawColors.OPACITY_32, strokeWidth: 3.4, strokeDasharray: result };
-  obj5.children = callback(quest(8063).Circle, obj6);
-  obj4.children = callback(quest(8063).Svg, obj5);
+  obj5.children = callback(quest(8463).Circle, obj6);
+  obj4.children = callback(quest(8463).Svg, obj5);
   items6[2] = callback(c4, obj4);
   const obj7 = { pointerEvents: "none", style: tmp13.canvas };
   const obj8 = { height: c11, width: c11 };
   const obj9 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: tmp13.progressPath.color, strokeWidth: 3.4, strokeDasharray: result, animatedProps };
   obj8.children = callback(closure_12, obj9);
-  obj7.children = callback(quest(8063).Svg, obj8);
+  obj7.children = callback(quest(8463).Svg, obj8);
   items6[3] = callback(c4, obj7);
   obj.children = items6;
-  return callback2(stateFromStores(3991).View, obj);
+  return callback2(stateFromStores(3992).View, obj);
 }
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let c11 = 32;
-let closure_12 = require("module_3991").createAnimatedComponent(require("inlineStyles").Circle);
+let closure_12 = require("module_3992").createAnimatedComponent(require("inlineStyles").Circle);
 obj = { container: { position: "relative", width: 32, height: 32, justifyContent: "center", alignItems: "center" }, completionGlow: obj, canvas: { position: "absolute", transform: items } };
 obj = { shadowOffset: { width: 0, height: 0 }, shadowRadius: 12, shadowOpacity: 0, elevation: 4, shadowColor: "#30C77399" };
 items = [{ rotate: "-90deg" }];

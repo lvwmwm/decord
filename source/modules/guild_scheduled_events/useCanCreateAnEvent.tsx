@@ -1,10 +1,10 @@
-// Module ID: 8498
-// Function ID: 67669
+// Module ID: 8258
+// Function ID: 66323
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 1907, 1838, 3758, 653, 566, 8446, 2]
+// Dependencies: [57, 1908, 1838, 3759, 653, 566, 8204, 2]
 // Exports: default
 
-// Module 8498 (_createForOfIteratorHelperLoose)
+// Module 8258 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";

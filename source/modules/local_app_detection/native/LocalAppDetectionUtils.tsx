@@ -1,10 +1,10 @@
-// Module ID: 12687
-// Function ID: 98538
+// Module ID: 12698
+// Function ID: 98665
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 5590, 653, 12688, 12686, 478, 4304, 675, 686, 2]
+// Dependencies: [5, 5590, 653, 12699, 12697, 478, 4305, 675, 686, 2]
 // Exports: detectLocalApps
 
-// Module 12687 (_createForOfIteratorHelperLoose)
+// Module 12698 (_createForOfIteratorHelperLoose)
 import isWindows from "isWindows";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -92,58 +92,58 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function isGameCommunityUpsellMultiExperimentEnabled() {
-  const GameCommunityUpsellMultiExperiment = require(12688) /* GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT */.GameCommunityUpsellMultiExperiment;
+  const GameCommunityUpsellMultiExperiment = require(12699) /* GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT */.GameCommunityUpsellMultiExperiment;
   return GameCommunityUpsellMultiExperiment.getConfig({ location: "LocalAppDetectionUtils" }).enabled;
 }
 function getDetectableApp(arg0) {
-  if (require(12686) /* DetectableAppNames */.DetectableAppNames.ROBLOX === arg0) {
+  if (require(12697) /* DetectableAppNames */.DetectableAppNames.ROBLOX === arg0) {
     return { androidScheme: "roblox", iosScheme: "roblox" };
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.MINECRAFT === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.MINECRAFT === arg0) {
     let obj = { androidScheme: "minecraft", iosScheme: "minecraft", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.FORTNITE === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.FORTNITE === arg0) {
     obj = { androidScheme: "fortnite", iosScheme: "com.epicgames.fortnite", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.GENSHIN === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.GENSHIN === arg0) {
     const obj1 = { androidScheme: "genshin", iosScheme: "genshin", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj1;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.PUBG_MOBILE === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.PUBG_MOBILE === arg0) {
     const obj2 = { androidScheme: "pubgmobile", iosScheme: "igame1320", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj2;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.CALL_OF_DUTY_MOBILE === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.CALL_OF_DUTY_MOBILE === arg0) {
     const obj3 = { androidScheme: "codm", iosScheme: "codm", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj3;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.CLASH_OF_CLANS === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.CLASH_OF_CLANS === arg0) {
     const obj4 = { androidScheme: "clashofclans", iosScheme: "clashofclans", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj4;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.MOBILE_LEGENDS_BANG_BANG === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.MOBILE_LEGENDS_BANG_BANG === arg0) {
     const obj5 = { androidScheme: "mobilelegends", iosScheme: "mobilelegends", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj5;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.GARENA_FREE_FIRE === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.GARENA_FREE_FIRE === arg0) {
     const obj6 = { androidScheme: "garenafreefire", iosScheme: "freefire", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj6;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.POKEMON_GO === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.POKEMON_GO === arg0) {
     const obj7 = { androidScheme: "pokemongo", iosScheme: "pokemongo", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj7;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.POKEMON_TCG_POCKET === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.POKEMON_TCG_POCKET === arg0) {
     const obj8 = { androidScheme: "pokemontcgp", iosScheme: "pokemontcgp", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj8;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.CLASH_ROYALE === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.CLASH_ROYALE === arg0) {
     const obj9 = { androidScheme: "clashroyale", iosScheme: "clashroyale", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj9;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.AMONG_US === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.AMONG_US === arg0) {
     const obj10 = { androidScheme: "amongus", iosScheme: "amongus", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj10;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.MONOPOLY_GO === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.MONOPOLY_GO === arg0) {
     const obj11 = { androidScheme: "monopolygo", iosScheme: "monopolygo", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj11;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.BRAWL_STARS === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.BRAWL_STARS === arg0) {
     const obj12 = { androidScheme: "brawlstars", iosScheme: "brawlstars", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj12;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.BRAWLHALLA === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.BRAWLHALLA === arg0) {
     const obj13 = { androidScheme: "brawlhalla", iosScheme: null, predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj13;
-  } else if (require(12686) /* DetectableAppNames */.DetectableAppNames.WUTHERING_WAVES === arg0) {
+  } else if (require(12697) /* DetectableAppNames */.DetectableAppNames.WUTHERING_WAVES === arg0) {
     obj = { androidScheme: "wutheringwaves", iosScheme: "akioversea", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj;
   }

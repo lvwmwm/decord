@@ -1,10 +1,10 @@
-// Module ID: 13701
-// Function ID: 105166
+// Module ID: 13712
+// Function ID: 105293
 // Name: SafetySettingsNotice
-// Dependencies: [31, 27, 7563, 33, 4130, 689, 13702, 4086, 4126, 1212, 2]
+// Dependencies: [31, 27, 6659, 33, 4131, 689, 13713, 4087, 4127, 1212, 2]
 // Exports: default
 
-// Module 13701 (SafetySettingsNotice)
+// Module 13712 (SafetySettingsNotice)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { SafetySettingsNoticeAction as closure_4 } from "SafetyToastType";

@@ -1,5 +1,5 @@
 // Module ID: 1085
-// Function ID: 12459
+// Function ID: 12465
 // Name: listenForSentryMessages
 // Dependencies: [794, 1048, 1004, 1054, 1007]
 // Exports: registerWebWorker

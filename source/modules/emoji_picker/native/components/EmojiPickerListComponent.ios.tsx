@@ -1,8 +1,8 @@
-// Module ID: 9413
-// Function ID: 73349
-// Dependencies: [31, 9365, 33, 9393, 9403, 9414, 7527, 2]
+// Module ID: 9333
+// Function ID: 72935
+// Dependencies: [31, 9271, 33, 9311, 9321, 9334, 9330, 6619, 2]
 
-// Module 9413
+// Module 9333
 import importAllResult from "result";
 import IMAGE_SIZE from "IMAGE_SIZE";
 import { jsx } from "jsxProd";
@@ -87,7 +87,8 @@ const forwardRefResult = importAllResult.forwardRef((paddingTop) => {
       const result = outer1_0.set(num);
     }
   }));
-  return jsx(require(paddingTop[6]).BottomSheetFlashList, { contentContainerStyle, data: data.data, getItemType, keyboardShouldPersistTaps: "always", keyExtractor, onViewableItemsChanged: stickyHeaderIndices(paddingTop[5])(onViewableItemsChanged).onViewableItemsChanged, overrideItemLayout, ref, renderItem, stickyHeaderIndices });
+  const preventNativeModalDismiss = require(paddingTop[6]).useIsPortalKeyboardInModal();
+  return jsx(require(paddingTop[7]).BottomSheetFlashList, { contentContainerStyle, data: data.data, getItemType, keyboardShouldPersistTaps: "always", keyExtractor, onViewableItemsChanged: stickyHeaderIndices(paddingTop[5])(onViewableItemsChanged).onViewableItemsChanged, overrideItemLayout, preventNativeModalDismiss, ref, renderItem, stickyHeaderIndices });
 });
 let result = require("jsxProd").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponent.ios.tsx");
 

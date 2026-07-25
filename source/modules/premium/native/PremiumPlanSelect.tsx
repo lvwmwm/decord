@@ -1,10 +1,10 @@
-// Module ID: 12525
-// Function ID: 96974
+// Module ID: 12506
+// Function ID: 96825
 // Name: BoostPurchaseNitroBanner
-// Dependencies: [5, 57, 31, 27, 6663, 1838, 3781, 3782, 5619, 12526, 1851, 653, 6671, 4113, 33, 4130, 5052, 4973, 689, 4541, 5807, 4126, 1212, 3776, 12527, 12528, 12529, 12530, 12531, 12532, 7486, 3834, 566, 12533, 7117, 4066, 1273, 7402, 7403, 5165, 12534, 5584, 5217, 3976, 478, 6648, 7156, 4471, 12535, 1934, 5501, 4554, 12537, 5622, 3791, 4337, 6649, 7161, 5462, 5638, 5450, 4559, 7157, 7118, 1456, 6656, 7414, 5482, 7120, 4451, 7187, 7378, 6642, 675, 7194, 7195, 2]
+// Dependencies: [5, 57, 31, 27, 6164, 1838, 3782, 3783, 5619, 12507, 1852, 653, 6173, 4114, 33, 4131, 5053, 4974, 689, 4542, 6727, 4127, 1212, 3777, 12508, 12509, 12510, 12511, 12512, 12513, 6570, 3835, 566, 12514, 6194, 4067, 1273, 6478, 6479, 5164, 12515, 5584, 5217, 3977, 478, 6195, 6238, 4472, 12516, 1935, 5501, 4555, 12518, 5622, 3792, 4338, 6269, 6245, 5462, 6244, 5450, 4560, 6239, 6196, 1456, 6234, 6490, 5482, 6198, 4452, 6301, 6454, 6495, 675, 6445, 6608, 2]
 // Exports: default
 
-// Module 12525 (BoostPurchaseNitroBanner)
+// Module 12506 (BoostPurchaseNitroBanner)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import getHeaderBackground from "getHeaderBackground";
 import importAllResult from "map";
@@ -51,7 +51,7 @@ const require = arg1;
 function BoostPurchaseNitroBanner() {
   const tmp = callback5();
   let obj = { align: "center", spacing: importDefault(689).space.PX_12, style: tmp.nitroBanner };
-  const items = [callback3(require(5807) /* AccountAgeTier10LargeBadge */.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
+  const items = [callback3(require(6727) /* AccountAgeTier10LargeBadge */.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
   obj = { align: "center", spacing: importDefault(689).space.PX_4 };
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.nitroBannerText };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -59,17 +59,17 @@ function BoostPurchaseNitroBanner() {
   const obj2 = { variant: "text-md/semibold", color: "text-feedback-positive" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.RmVM19, { percentageOff: closure_16 });
-  obj1.discount = callback3(require(4126) /* Text */.Text, obj2, "discount");
+  obj1.discount = callback3(require(4127) /* Text */.Text, obj2, "discount");
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.jbrHpT, obj1);
-  const items1 = [callback3(require(4126) /* Text */.Text, obj), ];
+  const items1 = [callback3(require(4127) /* Text */.Text, obj), ];
   const obj4 = { variant: "text-sm/medium", color: "text-muted", style: tmp.nitroBannerText };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl3.format(require(1212) /* getSystemLocale */.t.HYpETY, { boostCount: closure_17 });
-  items1[1] = callback3(require(4126) /* Text */.Text, obj4);
+  items1[1] = callback3(require(4127) /* Text */.Text, obj4);
   obj.children = items1;
-  items[1] = callback4(require(4541) /* Stack */.Stack, obj);
+  items[1] = callback4(require(4542) /* Stack */.Stack, obj);
   obj.children = items;
-  return callback4(require(4541) /* Stack */.Stack, obj);
+  return callback4(require(4542) /* Stack */.Stack, obj);
 }
 function getPlanDescription(premiumTier) {
   let flag = arg1;
@@ -81,8 +81,8 @@ function getPlanDescription(premiumTier) {
     let obj = { numSubscriptions: premiumTier.numPremiumGuild };
     let formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.gDsyB9, obj);
   } else if (0 === premiumTier.numPremiumGuild) {
-    formatToPlainStringResult = require(3776) /* _createForOfIteratorHelperLoose */.getPremiumTypeDisplayName(premiumTier.premiumTier);
-    const obj3 = require(3776) /* _createForOfIteratorHelperLoose */;
+    formatToPlainStringResult = require(3777) /* _createForOfIteratorHelperLoose */.getPremiumTypeDisplayName(premiumTier.premiumTier);
+    const obj3 = require(3777) /* _createForOfIteratorHelperLoose */;
   } else {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl2.formatToPlainString;
@@ -108,7 +108,7 @@ function BoostDeltaPriceTrailing(arg0) {
   ({ price, interval } = arg0);
   let obj = { direction: "horizontal", align: "center", spacing: importDefault(689).space.PX_4 };
   obj = { size: "xs", color: importDefault(689).colors.ICON_FEEDBACK_POSITIVE };
-  const items = [callback3(require(7486) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
+  const items = [callback3(require(6570) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
   obj = { variant: "text-sm/medium", color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
   if (interval === constants.MONTH) {
@@ -117,10 +117,10 @@ function BoostDeltaPriceTrailing(arg0) {
     rS8FA_ = require(1212) /* getSystemLocale */.t["rS8FA+"];
   }
   const obj2 = { variant: "text-sm/semibold", color: "text-feedback-positive", children: price };
-  obj.children = intl.format(rS8FA_, { price: callback3(require(4126) /* Text */.Text, obj2, "price") });
-  items[1] = callback3(require(4126) /* Text */.Text, obj);
+  obj.children = intl.format(rS8FA_, { price: callback3(require(4127) /* Text */.Text, obj2, "price") });
+  items[1] = callback3(require(4127) /* Text */.Text, obj);
   obj.children = items;
-  return closure_33(require(4541) /* Stack */.Stack, obj);
+  return closure_33(require(4542) /* Stack */.Stack, obj);
 }
 function PlanRow(plan) {
   let importDefault;
@@ -458,21 +458,21 @@ function CurrentPlanRow(subscription) {
   const tmp = callback5();
   if (subscription.showCurrentPlan) {
     if (null != subscription) {
-      productIdFromSubscription = subscription(6648).getProductIdFromSubscription(subscription, true);
-      let obj4 = subscription(6648);
-      const premiumBundledItemsFromProductId = subscription(6648).getPremiumBundledItemsFromProductId(productIdFromSubscription);
+      productIdFromSubscription = subscription(6195).getProductIdFromSubscription(subscription, true);
+      let obj4 = subscription(6195);
+      const premiumBundledItemsFromProductId = subscription(6195).getPremiumBundledItemsFromProductId(productIdFromSubscription);
       const premiumTier = premiumBundledItemsFromProductId.premiumTier;
       if (null != premiumTier) {
         let PREMIUM_GUILD = callback2(premiumTier);
       } else {
         PREMIUM_GUILD = constants7.PREMIUM_GUILD;
       }
-      let obj = subscription(6648);
+      let obj = subscription(6195);
       toggledIntervalProduct = obj.getToggledIntervalProduct(productIdFromSubscription);
       obj = { style: tmp.currentPlanGradient, colors: PREMIUM_GUILD, start: constants4.START, end: constants4.END };
       obj = { plan: premiumBundledItemsFromProductId, subscription };
       let tmp15 = null == toggledIntervalProduct;
-      const obj5 = subscription(6648);
+      const obj5 = subscription(6195);
       const tmp8 = closure_32;
       if (tmp15) {
         tmp15 = subscription.status !== constants6.CANCELED;
@@ -534,7 +534,7 @@ function CurrentPlanRow(subscription) {
       };
       obj.style = tmp.currentPlanRow;
       obj.children = closure_32(PlanRow, obj);
-      return tmp8(importDefault(4554), obj);
+      return tmp8(importDefault(4555), obj);
     }
   }
   return null;
@@ -717,7 +717,7 @@ obj.nitroBannerText = { textAlign: "center" };
 let obj8 = { alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj.recommendedText = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GUILD_BOOSTING_PINK };
 let closure_35 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_36 = { [importDefault(12530)]: "imgWumpusNitro", [importDefault(12532)]: "imgWumpusNitroBoost", [importDefault(12529)]: "imgWumpusNitroClassic", [importDefault(12531)]: "imgWumpusNitroClassicBoost", [importDefault(12528)]: "imgWumpusNitroTier0", [importDefault(12527)]: "imgBoost" };
+let closure_36 = { [importDefault(12511)]: "imgWumpusNitro", [importDefault(12513)]: "imgWumpusNitroBoost", [importDefault(12510)]: "imgWumpusNitroClassic", [importDefault(12512)]: "imgWumpusNitroClassicBoost", [importDefault(12509)]: "imgWumpusNitroTier0", [importDefault(12508)]: "imgBoost" };
 items = [
   {
     id: "premium",

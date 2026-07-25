@@ -1,10 +1,10 @@
-// Module ID: 10859
-// Function ID: 84263
+// Module ID: 11232
+// Function ID: 87397
 // Name: _getPrimaryAppCommand
-// Dependencies: [5, 31, 1348, 8007, 1881, 8015, 8011, 8224, 2]
+// Dependencies: [5, 31, 1348, 5669, 1882, 5680, 5673, 5655, 2]
 // Exports: default, useIsPrimaryAppCommandUsableInAppDM
 
-// Module 10859 (_getPrimaryAppCommand)
+// Module 11232 (_getPrimaryAppCommand)
 import ScoreMethod from "ScoreMethod";
 import result from "result";
 import closure_4 from "_isNativeReflectConstruct";
@@ -21,9 +21,9 @@ function _getPrimaryAppCommand() {
 }
 function queryForPrimaryAppCommand(outer1_0, id) {
   let obj = {};
-  const items = [require(1881) /* PermissionOverwriteType */.ApplicationCommandType.PRIMARY_ENTRY_POINT];
+  const items = [require(1882) /* PermissionOverwriteType */.ApplicationCommandType.PRIMARY_ENTRY_POINT];
   obj.commandTypes = items;
-  obj = { placeholderCount: 1, scoreMethod: require(8015) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
+  obj = { placeholderCount: 1, scoreMethod: require(5680) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
   return closure_7.query(outer1_0, obj, obj).commands[0];
 }
 function useGetPrimaryAppCommand(context, applicationId) {
@@ -48,7 +48,7 @@ function useGetPrimaryAppCommand(context, applicationId) {
 }
 function useQueryForPrimaryAppCommand(context, applicationId) {
   let obj = { commandTypes: items };
-  obj = { placeholderCount: 1, scoreMethod: require(8015) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
+  obj = { placeholderCount: 1, scoreMethod: require(5680) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
   return callback2(context, obj, obj);
 }
 function isPrimaryAppCommandUsableInAppDM(integration_types) {
@@ -58,12 +58,12 @@ function isPrimaryAppCommandUsableInAppDM(integration_types) {
     let hasItem = null != integration_types.integration_types;
     if (hasItem) {
       integration_types = integration_types.integration_types;
-      hasItem = integration_types.includes(require(8224) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
+      hasItem = integration_types.includes(require(5655) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
     }
     let hasItem1 = null != integration_types.contexts;
     if (hasItem1) {
       const contexts = integration_types.contexts;
-      hasItem1 = contexts.includes(require(1881) /* PermissionOverwriteType */.InteractionContextType.BOT_DM);
+      hasItem1 = contexts.includes(require(1882) /* PermissionOverwriteType */.InteractionContextType.BOT_DM);
     }
     if (hasItem) {
       hasItem = hasItem1;

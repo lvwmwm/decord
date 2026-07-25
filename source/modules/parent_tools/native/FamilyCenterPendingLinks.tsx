@@ -1,10 +1,10 @@
-// Module ID: 13878
-// Function ID: 106208
+// Module ID: 13889
+// Function ID: 106335
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [31, 27, 6770, 33, 4130, 689, 7122, 11091, 1212, 2198, 4126, 7123, 4660, 4337, 13879, 1934, 1273, 10361, 13880, 13877, 13881, 13872, 2]
+// Dependencies: [31, 27, 5766, 33, 4131, 689, 6200, 11050, 1212, 2199, 4127, 6201, 4661, 4338, 13890, 1935, 1273, 10294, 13891, 13888, 13892, 13883, 2]
 // Exports: default
 
-// Module 13878 (FamilyCenterPendingLinkRow)
+// Module 13889 (FamilyCenterPendingLinkRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserLinkStatus } from "items";
@@ -19,7 +19,7 @@ const require = arg1;
 function FamilyCenterPendingLinkRow(otherUser) {
   let str = otherUser.otherUser;
   const tmp = callback3();
-  str(7122);
+  str(6200);
   if (undefined === str) {
     return null;
   } else {
@@ -32,16 +32,16 @@ function FamilyCenterPendingLinkRow(otherUser) {
         str = str.toString();
       }
       obj.name = str;
-      obj.accessibilityLabel = intl3.formatToPlainString(importDefault(2198).oUpA6X, obj);
+      obj.accessibilityLabel = intl3.formatToPlainString(importDefault(2199).oUpA6X, obj);
       obj.onPress = function onPress() {
         let obj = outer1_1(outer1_2[13]);
         obj = { otherUser: str };
         obj.pushLazy(str(outer1_2[15])(outer1_2[20], outer1_2.paths), obj);
       };
       obj.style = tmp.actionButton;
-      const obj1 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13877) };
+      const obj1 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13888) };
       obj.children = callback(str(1273).Icon, obj1);
-      let tmp5Result = callback(str(4660).PressableOpacity, obj);
+      let tmp5Result = callback(str(4661).PressableOpacity, obj);
       const tmp28 = callback;
     } else {
       obj = {};
@@ -57,7 +57,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
           str1 = str.toString();
         }
         obj3.name = str1;
-        obj2.accessibilityLabel = intl.formatToPlainString(importDefault(2198).jc1Ip7, obj3);
+        obj2.accessibilityLabel = intl.formatToPlainString(importDefault(2199).jc1Ip7, obj3);
         obj2.onPress = function onPress() {
           let obj = outer1_1(outer1_2[13]);
           obj = { otherUser: str };
@@ -66,9 +66,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
         const items = [, ];
         ({ actionButton: arr[0], actionButtonFirst: arr[1] } = tmp);
         obj2.style = items;
-        const obj4 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(10361) };
+        const obj4 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(10294) };
         obj2.children = callback(str(1273).Icon, obj4);
-        tmp9Result = callback(str(4660).PressableOpacity, obj2);
+        tmp9Result = callback(str(4661).PressableOpacity, obj2);
         const tmp9 = callback;
       }
       const items1 = [tmp9Result, ];
@@ -80,16 +80,16 @@ function FamilyCenterPendingLinkRow(otherUser) {
         str2 = str.toString();
       }
       obj6.name = str2;
-      obj5.accessibilityLabel = intl2.formatToPlainString(importDefault(2198)["4GtllP"], obj6);
+      obj5.accessibilityLabel = intl2.formatToPlainString(importDefault(2199)["4GtllP"], obj6);
       obj5.onPress = function onPress() {
         let obj = outer1_1(outer1_2[13]);
         obj = { otherUser: str };
         obj.pushLazy(str(outer1_2[15])(outer1_2[18], outer1_2.paths), obj);
       };
       obj5.style = tmp.actionButton;
-      const obj7 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13877) };
+      const obj7 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13888) };
       obj5.children = callback(str(1273).Icon, obj7);
-      items1[1] = callback(str(4660).PressableOpacity, obj5);
+      items1[1] = callback(str(4661).PressableOpacity, obj5);
       obj.children = items1;
       tmp5Result = closure_6(closure_7, obj);
       const tmp18 = callback;
@@ -97,9 +97,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
       const tmp6 = closure_7;
     }
     const obj8 = { otherUser: str, actions: tmp5Result };
-    return callback(importDefault(13872), obj8);
+    return callback(importDefault(13883), obj8);
   }
-  tmp2 = importDefault(7123)();
+  tmp2 = importDefault(6201)();
 }
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = { container: { marginTop: 24 } };
@@ -117,18 +117,18 @@ const result = require("items").fileFinishedImporting("modules/parent_tools/nati
 
 export default function FamilyCenterPendingLinks() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(7122) /* useUserIdsForLinkStatus */;
+  let obj = require(6200) /* useUserIdsForLinkStatus */;
   const usersForLinkStatus = obj.useUsersForLinkStatus(UserLinkStatus.PENDING);
-  require(11091) /* useAgeSpecificText */;
+  require(11050) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { count: usersForLinkStatus.length };
-  intl.formatToPlainString(importDefault(2198).IkAgkG, obj);
+  intl.formatToPlainString(importDefault(2199).IkAgkG, obj);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   let tmp5 = null;
   if (0 !== usersForLinkStatus.length) {
     obj = { style: tmp.container };
     const obj1 = { style: tmp.header, variant: "eyebrow", color: "text-default", children: tmp4 };
-    const items = [callback(require(4126) /* Text */.Text, obj1), ];
+    const items = [callback(require(4127) /* Text */.Text, obj1), ];
     const obj2 = { style: tmp.content, children: usersForLinkStatus.map((id) => outer1_5(outer1_10, { otherUser: id }, "pending-" + id.id)) };
     items[1] = callback(View, obj2);
     obj.children = items;

@@ -1,9 +1,9 @@
-// Module ID: 12672
-// Function ID: 98311
+// Module ID: 12683
+// Function ID: 98438
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4044, 1188, 1906, 653, 12673, 4206, 12674, 3982, 3981, 5784, 12676, 668, 587, 675, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4045, 1188, 1907, 653, 12684, 4207, 12685, 3983, 3982, 6687, 12687, 668, 587, 675, 566, 686, 2]
 
-// Module 12672 (_isNativeReflectConstruct)
+// Module 12683 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getFirstInstallTimeMillis from "getFirstInstallTimeMillis";
@@ -31,7 +31,7 @@ function recordRequestRevision(arg0) {
 }
 function delayShowReviewRequestModal() {
   cancelExistingTimeout();
-  const RequestReviewNoTTIExperiment = require(12673) /* apexExperiment */.RequestReviewNoTTIExperiment;
+  const RequestReviewNoTTIExperiment = require(12684) /* apexExperiment */.RequestReviewNoTTIExperiment;
   let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
   let tmp2 = c15;
   if (c15) {
@@ -46,33 +46,33 @@ function delayShowReviewRequestModal() {
   }
   if (tmp2) {
     const _setTimeout = setTimeout;
-    const timeout = setTimeout(showReviewRequestModal, require(4206) /* sleep */.MS_PER_MINUTE);
+    const timeout = setTimeout(showReviewRequestModal, require(4207) /* sleep */.MS_PER_MINUTE);
   }
 }
 function showReviewRequestModal() {
-  let obj = require(3982) /* getRootNavigationRef */;
+  let obj = require(3983) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   obj = {};
   let tmp = null != rootNavigationRef && rootNavigationRef.isReady();
   if (tmp) {
-    tmp = null != require(3981) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
-    const obj4 = require(3981) /* _createForOfIteratorHelperLoose */;
+    tmp = null != require(3982) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
+    const obj4 = require(3982) /* _createForOfIteratorHelperLoose */;
   }
   obj.isViewingChat = tmp;
-  obj.isKeyboardOpen = require(5784) /* getKeyboardIsOpen */.getKeyboardIsOpen();
+  obj.isKeyboardOpen = require(6687) /* getKeyboardIsOpen */.getKeyboardIsOpen();
   obj.isInVoice = null != voiceChannelId.getVoiceChannelId();
   if (obj.isViewingChat) {
     if (!obj.isKeyboardOpen) {
       if (!obj.isInVoice) {
         importDefault(675).track(AnalyticEvents.REVIEW_REQUEST_SHOW_ATTEMPTED);
         recordRequestRevision(1);
-        importDefault(12674)();
+        importDefault(12685)();
         let c15 = false;
         const obj6 = importDefault(675);
       }
     }
   }
-  const obj5 = require(5784) /* getKeyboardIsOpen */;
+  const obj5 = require(6687) /* getKeyboardIsOpen */;
   obj = { is_keyboard_open: obj.isKeyboardOpen, is_in_voice: obj.isInVoice, is_viewing_chat: obj.isViewingChat };
   importDefault(675).track(AnalyticEvents.REVIEW_REQUEST_DEFERRED, obj);
   delayShowReviewRequestModal();
@@ -136,8 +136,8 @@ tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     guilds = guilds.guilds;
     let obj = {};
-    obj = { from: "authed", unit: require(4206) /* sleep */.TimeUnits.DAYS };
-    obj.isInstallOldEnough = require(12676) /* getFirstInstallTimeMillis */.getFirstInstallTimeElapsed(obj) >= 10;
+    obj = { from: "authed", unit: require(4207) /* sleep */.TimeUnits.DAYS };
+    obj.isInstallOldEnough = require(12687) /* getFirstInstallTimeMillis */.getFirstInstallTimeElapsed(obj) >= 10;
     obj.isInLargeEnoughGuild = guilds.some((member_count) => member_count.member_count >= 5);
     obj.isAccountVerified = true === guilds.user.verified;
     obj.isNewRevision = revision.revision < 1;

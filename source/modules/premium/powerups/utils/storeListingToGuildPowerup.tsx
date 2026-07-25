@@ -1,10 +1,10 @@
-// Module ID: 11552
-// Function ID: 90001
+// Module ID: 11518
+// Function ID: 89718
 // Name: storeListingToGuildPowerup
-// Dependencies: [1851, 4018, 1852, 2]
+// Dependencies: [1852, 4019, 1853, 2]
 // Exports: default
 
-// Module 11552 (storeListingToGuildPowerup)
+// Module 11518 (storeListingToGuildPowerup)
 import GuildFeatures from "GuildFeatures";
 import { GuildPowerupType } from "BoostedGuildTiers";
 import { DEFAULT_EMOJI_SLOTS } from "set";

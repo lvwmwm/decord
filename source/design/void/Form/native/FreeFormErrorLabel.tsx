@@ -1,10 +1,10 @@
-// Module ID: 9043
-// Function ID: 71101
+// Module ID: 8931
+// Function ID: 70580
 // Name: Label
-// Dependencies: [31, 33, 3836, 3976, 4126, 2]
+// Dependencies: [31, 33, 3837, 3977, 4127, 2]
 // Exports: default
 
-// Module 9043 (Label)
+// Module 8931 (Label)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -13,7 +13,7 @@ const result = require("getNodeText").fileFinishedImporting("design/void/Form/na
 
 export default function Label(children) {
   children = children.children;
-  let obj = nodeText(3836);
+  let obj = nodeText(3837);
   nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = React.useEffect(() => {
@@ -27,5 +27,5 @@ export default function Label(children) {
     }
   }, items);
   obj = { style: children.style, variant: "text-xs/medium", color: "text-feedback-critical", children };
-  return jsx(nodeText(4126).Text, { style: children.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  return jsx(nodeText(4127).Text, { style: children.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
 };

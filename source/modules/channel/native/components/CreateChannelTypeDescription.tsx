@@ -1,10 +1,10 @@
-// Module ID: 8460
-// Function ID: 67261
+// Module ID: 8218
+// Function ID: 65912
 // Name: CreateChannelTypeDescription
-// Dependencies: [31, 27, 8461, 653, 33, 8462, 5132, 4126, 1212, 2]
+// Dependencies: [31, 27, 8219, 653, 33, 8220, 5131, 4127, 1212, 2]
 // Exports: default
 
-// Module 8460 (CreateChannelTypeDescription)
+// Module 8218 (CreateChannelTypeDescription)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "_isNativeReflectConstruct";
@@ -18,12 +18,12 @@ export default function CreateChannelTypeDescription(guildId) {
   let fetchGuildProfile;
   let guildProfile;
   guildId = guildId.guildId;
-  let obj = fetchGuildProfile(8462);
+  let obj = fetchGuildProfile(8220);
   guildProfile = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile);
   let hasItem = null != guildProfile;
   if (hasItem) {
-    const VISIBLE = fetchGuildProfile(5132).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = fetchGuildProfile(5131).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = !tmp2;
@@ -43,7 +43,7 @@ export default function CreateChannelTypeDescription(guildId) {
     obj = { variant: "text-sm/normal", color: "text-subtle" };
     const intl = fetchGuildProfile(1212).intl;
     obj.children = intl.string(fetchGuildProfile(1212).t["2Ab4Id"]);
-    obj.children = jsx(fetchGuildProfile(4126).Text, { variant: "text-sm/normal", color: "text-subtle" });
+    obj.children = jsx(fetchGuildProfile(4127).Text, { variant: "text-sm/normal", color: "text-subtle" });
     tmp9 = <View variant="text-sm/normal" color="text-subtle" />;
   }
   return tmp9;

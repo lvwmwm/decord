@@ -1,11 +1,11 @@
 // Module ID: 7844
-// Function ID: 61893
+// Function ID: 62590
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 7844 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6547bb7b75af42cdcf6f655476c57657", name: "UserCheckIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/guild_sidebar", width: 24, height: 24, scales: [2, 3], hash: "ff39eeadf9f2f52f7094ca9f3833e97b", name: "img_guild_folder", type: "png" };
 
 export default registerAsset.registerAsset(obj);

@@ -1,10 +1,10 @@
-// Module ID: 11391
-// Function ID: 88584
+// Module ID: 11353
+// Function ID: 88240
 // Name: generateBase64EncodedWaveform
-// Dependencies: [5, 4177, 11130, 11131, 653, 3, 11392, 206, 22, 4227, 675, 4099, 477, 2]
+// Dependencies: [5, 4178, 11090, 11091, 653, 3, 11354, 206, 22, 4228, 675, 4100, 477, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, startAudioRecording, triggerHaptic
 
-// Module 11391 (generateBase64EncodedWaveform)
+// Module 11353 (generateBase64EncodedWaveform)
 import timestamp from "timestamp";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";
@@ -30,7 +30,7 @@ const require = arg1;
 function generateBase64EncodedWaveform(waveform) {
   let arr = waveform;
   if (waveform.length > closure_16) {
-    arr = importDefault(11392)(waveform, tmp);
+    arr = importDefault(11354)(waveform, tmp);
   }
   const mapped = arr.map((arg0) => Math.min(arg0, outer1_13));
   const uint8Array = new Uint8Array(mapped);
@@ -43,7 +43,7 @@ function _startAudioRecording() {
 }
 function resetAudioRecording() {
   mediaEngine = mediaEngine.getMediaEngine();
-  mediaEngine.removeListener(require(4227) /* getMediaEngineImpl */.MediaEngineEvent.VoiceActivity, closure_21);
+  mediaEngine.removeListener(require(4228) /* getMediaEngineImpl */.MediaEngineEvent.VoiceActivity, closure_21);
   callback3();
 }
 function stopAndGetAudioRecording() {
@@ -118,8 +118,8 @@ export const emitVoiceMessageRecorded = function emitVoiceMessageRecorded(CANCEL
   }
 };
 export const triggerHaptic = function triggerHaptic() {
-  const obj = require(4099) /* getAndroidLightImpactEffect */;
+  const obj = require(4100) /* getAndroidLightImpactEffect */;
   const obj2 = require(477) /* set */;
-  const HapticFeedbackTypes = require(4099) /* getAndroidLightImpactEffect */.HapticFeedbackTypes;
+  const HapticFeedbackTypes = require(4100) /* getAndroidLightImpactEffect */.HapticFeedbackTypes;
   const result = obj.triggerHapticFeedback(require(477) /* set */.isAndroid() ? HapticFeedbackTypes.IMPACT_LIGHT : HapticFeedbackTypes.IMPACT_MEDIUM);
 };

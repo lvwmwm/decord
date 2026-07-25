@@ -1,9 +1,9 @@
-// Module ID: 3929
-// Function ID: 32427
+// Module ID: 3930
+// Function ID: 32438
 // Name: MicrophoneRive
-// Dependencies: [29, 31, 33, 3859, 3930, 3910, 2]
+// Dependencies: [29, 31, 33, 3860, 3931, 3911, 2]
 
-// Module 3929 (MicrophoneRive)
+// Module 3930 (MicrophoneRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -19,8 +19,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3859) /* useObservedValue */;
+    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3860) /* useObservedValue */;
     let fill;
     if (null != dataBinding) {
       fill = dataBinding.fill;
@@ -29,8 +29,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       fill1 = onDataBindingChange.fill;
     }
-    const colorBinding = require(3859) /* useObservedValue */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
-    const obj2 = require(3859) /* useObservedValue */;
+    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
+    const obj2 = require(3860) /* useObservedValue */;
     let on;
     if (null != dataBinding) {
       on = dataBinding.on;
@@ -39,7 +39,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       on1 = onDataBindingChange.on;
     }
-    const booleanBinding1 = require(3859) /* useObservedValue */.useBooleanBinding("on", instance, on, on1, playIfNeeded);
+    const booleanBinding1 = require(3860) /* useObservedValue */.useBooleanBinding("on", instance, on, on1, playIfNeeded);
     return null;
   },
   "Animation Main": function AnimationMainBindings(reducedMotionEnabled) {
@@ -48,8 +48,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3859) /* useObservedValue */;
+    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3860) /* useObservedValue */;
     let fill;
     if (null != dataBinding) {
       fill = dataBinding.fill;
@@ -58,8 +58,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       fill1 = onDataBindingChange.fill;
     }
-    const colorBinding = require(3859) /* useObservedValue */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
-    const obj2 = require(3859) /* useObservedValue */;
+    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
+    const obj2 = require(3860) /* useObservedValue */;
     let on;
     if (null != dataBinding) {
       on = dataBinding.on;
@@ -68,7 +68,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       on1 = onDataBindingChange.on;
     }
-    const booleanBinding1 = require(3859) /* useObservedValue */.useBooleanBinding("on", instance, on, on1, playIfNeeded);
+    const booleanBinding1 = require(3860) /* useObservedValue */.useBooleanBinding("on", instance, on, on1, playIfNeeded);
     return null;
   }
 };
@@ -108,7 +108,7 @@ const forwardRefResult = importAllResult.forwardRef(function MicrophoneRiveWithB
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3910) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  return jsx(require(3911) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/MicrophoneRive.tsx");
 

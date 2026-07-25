@@ -1,10 +1,10 @@
-// Module ID: 5640
-// Function ID: 48241
+// Module ID: 12555
+// Function ID: 97243
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1849, 5641, 5642, 3751, 2]
+// Dependencies: [1850, 12556, 12557, 3752, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 5640 (canUserSeeMonetizationOnboarding)
+// Module 12555 (canUserSeeMonetizationOnboarding)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -16,11 +16,11 @@ export const canUserSeeMonetizationOnboarding = function canUserSeeMonetizationO
   if (null != currentUser) {
     id = currentUser.id;
   }
-  let obj = require(5641) /* canSeeGuildRoleSubscriptionSettingsContent */;
-  obj = { guild, isOwner: guild.ownerId === id, canManageGuildRoleSubscriptions: require(5641) /* canSeeGuildRoleSubscriptionSettingsContent */.canManageGuildRoleSubscriptions(guild) };
-  const obj3 = require(5641) /* canSeeGuildRoleSubscriptionSettingsContent */;
-  obj.isUserInCreatorMonetizationEligibleCountry = require(5642) /* getCreatorMonetizationEligibleCountry */.isUserInCreatorMonetizationEligibleCountry();
-  const obj4 = require(5642) /* getCreatorMonetizationEligibleCountry */;
-  obj.shouldRestrictUpdatingRoleSubscriptionSettings = require(3751) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
+  let obj = require(12556) /* canSeeGuildRoleSubscriptionSettingsContent */;
+  obj = { guild, isOwner: guild.ownerId === id, canManageGuildRoleSubscriptions: require(12556) /* canSeeGuildRoleSubscriptionSettingsContent */.canManageGuildRoleSubscriptions(guild) };
+  const obj3 = require(12556) /* canSeeGuildRoleSubscriptionSettingsContent */;
+  obj.isUserInCreatorMonetizationEligibleCountry = require(12557) /* getCreatorMonetizationEligibleCountry */.isUserInCreatorMonetizationEligibleCountry();
+  const obj4 = require(12557) /* getCreatorMonetizationEligibleCountry */;
+  obj.shouldRestrictUpdatingRoleSubscriptionSettings = require(3752) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
   return obj.canSeeGuildRoleSubscriptionSettings(obj);
 };

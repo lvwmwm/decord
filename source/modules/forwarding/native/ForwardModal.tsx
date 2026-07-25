@@ -1,10 +1,10 @@
-// Module ID: 9906
-// Function ID: 76638
+// Module ID: 9833
+// Function ID: 76249
 // Name: ForwardModal
-// Dependencies: [5, 57, 31, 27, 6830, 8350, 1348, 4349, 8375, 9907, 8857, 33, 4130, 689, 1450, 7088, 566, 9905, 9904, 5093, 7087, 3831, 1212, 1327, 9908, 4472, 9909, 9910, 4138, 7085, 9912, 4312, 4099, 4100, 3830, 5490, 477, 5094, 9158, 5087, 5788, 4074, 7423, 4662, 9915, 9925, 9936, 2]
+// Dependencies: [5, 57, 31, 27, 5830, 8108, 1348, 4350, 8133, 9834, 8745, 33, 4131, 689, 1450, 6106, 566, 9831, 9830, 5093, 6105, 3832, 1212, 1327, 9835, 4473, 9836, 9837, 4139, 6103, 9839, 4313, 4100, 4101, 3831, 5490, 477, 9842, 6695, 4075, 4663, 9843, 9853, 9864, 2]
 // Exports: default
 
-// Module 9906 (ForwardModal)
+// Module 9833 (ForwardModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -24,11 +24,8 @@ let closure_15;
 const require = arg1;
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.headerContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: "transparent" };
-let obj1 = { flex: 1, display: "flex", backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.container = obj1;
+_createForOfIteratorHelperLoose = { flex: 1, display: "flex", backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let result = require("result").fileFinishedImporting("modules/forwarding/native/ForwardModal.tsx");
 
@@ -57,9 +54,8 @@ export default function ForwardModal(message) {
   let closure_17;
   let first2;
   let closure_19;
-  let c20;
   let callback4;
-  let closure_22;
+  let closure_21;
   let tmp = _createForOfIteratorHelperLoose();
   height = forwardOptions(source[14])({ ignoreKeyboard: true }).height;
   channel_id = message.channel_id;
@@ -120,7 +116,6 @@ export default function ForwardModal(message) {
   const tmp13 = height(channel_id.useState(prop), 2);
   first2 = tmp13[0];
   closure_19 = tmp13[1];
-  c20 = tmp14;
   const items6 = [first2, channel_id, id, first1, trackForwardAddRecipientOnce];
   const effect = channel_id.useEffect(() => {
     if (first2.length > 0) {
@@ -169,7 +164,7 @@ export default function ForwardModal(message) {
   const callback5 = channel_id.useCallback(() => {
     callback4();
   }, items10);
-  closure_22 = channel_id.useCallback(() => {
+  closure_21 = channel_id.useCallback(() => {
     const channel = stateFromStores1.getChannel(channel_id);
     let guild_id;
     if (null != channel) {
@@ -204,79 +199,62 @@ export default function ForwardModal(message) {
     stringResult = intl.formatToPlainString(message(source[22]).t.jWtYUm, obj);
   }
   obj = { style: memo1 };
-  obj1 = { style: tmp.headerContainer };
-  obj2 = { headerStyle: tmp.header };
+  obj1 = {};
   const intl3 = message(source[22]).intl;
-  obj2.title = intl3.string(message(source[22]).t["+SkRRj"]);
-  obj2.headerTitle = function headerTitle(children) {
-    let obj = { title: children.children, subtitleColor: "text-feedback-warning" };
-    let formatToPlainStringResult;
-    if (c20) {
-      const intl = message(source[22]).intl;
-      obj = { count: trackForwardEditSearchOnce };
-      formatToPlainStringResult = intl.formatToPlainString(message(source[22]).t["3Fbkir"], obj);
-    }
-    obj.subtitle = formatToPlainStringResult;
-    obj.variant = "redesign/heading-18/bold";
-    return closure_14(message(source[38]).GenericHeaderTitle, obj);
-  };
-  obj2.headerTitleAlign = "center";
-  obj2.headerLeft = message(source[39]).getHeaderCloseButton(callback2);
-  obj2.headerRight = function headerRight(arg0) {
+  obj1.title = intl3.string(message(source[22]).t["+SkRRj"]);
+  obj1.subtitleColor = "text-feedback-warning";
+  let formatToPlainStringResult;
+  if (first2.length >= trackForwardEditSearchOnce) {
+    const intl4 = message(source[22]).intl;
+    obj2 = { count: trackForwardEditSearchOnce };
+    formatToPlainStringResult = intl4.formatToPlainString(message(source[22]).t["3Fbkir"], obj2);
+  }
+  obj1.subtitle = formatToPlainStringResult;
+  obj1.headerRight = function headerRight(arg0) {
     let tmp = null;
     if (closure_10) {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["onPress"] = closure_22;
+      obj["onPress"] = closure_21;
       const intl = message(source[22]).intl;
       obj["accessibilityLabel"] = intl.string(message(source[22]).t.Xrt5Po);
-      obj["IconComponent"] = message(source[41]).LinkIcon;
-      tmp = ref2(message(source[40]).HeaderActionButton, obj);
+      obj["IconComponent"] = message(source[39]).LinkIcon;
+      tmp = ref2(message(source[38]).HeaderActionButton, obj);
     }
     return tmp;
   };
-  const obj10 = message(source[39]);
-  const tmp28 = first1;
-  let num3;
-  if (obj11.isIOS()) {
-    if (!obj12.getIsWindowLarge()) {
-      num3 = 0;
-    }
-    obj12 = message(source[42]);
-  }
-  obj2.headerStatusBarHeight = num3;
-  obj1.children = callback(message(source[37]).Header, obj2);
-  const items13 = [callback(id, obj1), ];
+  obj1.onClose = callback2;
+  const items13 = [callback(forwardOptions(source[37]), obj1), ];
   obj3 = { style: tmp.container };
-  const items14 = [callback(forwardOptions(source[43]), { absolute: true }), , ];
+  const items14 = [callback(forwardOptions(source[40]), { absolute: true }), , ];
   obj4 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: prop, onSelectedDestinationChange: callback1, onSearchTextChange: callback, getRowIsUnavailable: callback3, originDestination: memo, insetEnd: 0, disableGradient: true, disableStickySections: true, disableSelection: first2.length >= trackForwardEditSearchOnce };
-  items14[1] = callback(forwardOptions(source[44]), obj4);
+  items14[1] = callback(forwardOptions(source[41]), obj4);
   if (null != stateFromStores) {
     const obj5 = { message: stateFromStores, forwardOptions, sendLabel: stringResult, canSend: length > 0, selectedDestinations: first2, isSending: first, onSend: callback4 };
-    let tmp45Result = callback(message(source[45]).ForwardMessageFooter, obj5);
+    let tmp48Result = callback(message(source[42]).ForwardMessageFooter, obj5);
   } else {
     const obj6 = { isVisible: length > 0, floatingBackgroundColor: tmp.container.backgroundColor };
     if (1 === length) {
-      const intl5 = message(source[22]).intl;
-      let stringResult1 = intl5.string(message(source[22]).t.TXNS7S);
+      const intl6 = message(source[22]).intl;
+      let stringResult1 = intl6.string(message(source[22]).t.TXNS7S);
     } else {
-      const intl4 = message(source[22]).intl;
+      const intl5 = message(source[22]).intl;
       const obj7 = { count: length };
-      stringResult1 = intl4.formatToPlainString(message(source[22]).t.jWtYUm, obj7);
+      stringResult1 = intl5.formatToPlainString(message(source[22]).t.jWtYUm, obj7);
     }
     obj6.text = stringResult1;
-    let tmp40;
+    let tmp43;
     if (!first) {
-      tmp40 = callback5;
+      tmp43 = callback5;
     }
-    obj6.onPress = tmp40;
+    obj6.onPress = tmp43;
     obj6.loading = first;
-    tmp45Result = callback(message(source[46]).ModalFloatingAction, obj6);
-    const tmp45 = callback;
+    tmp48Result = callback(message(source[43]).ModalFloatingAction, obj6);
+    const tmp48 = callback;
   }
-  items14[2] = tmp45Result;
+  items14[2] = tmp48Result;
   obj3.children = items14;
   items13[1] = first1(id, obj3);
   obj.children = items13;
-  return tmp28(id, obj);
+  return first1(id, obj);
 };

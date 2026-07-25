@@ -1,9 +1,9 @@
-// Module ID: 5048
-// Function ID: 43617
+// Module ID: 5049
+// Function ID: 43629
 // Name: showTooManyUserGuildsAlert
-// Dependencies: [29, 5, 5049, 1194, 4971, 1907, 1838, 1906, 3947, 1849, 653, 1197, 4470, 1212, 686, 5050, 507, 1198, 5053, 1934, 5587, 5595, 5600, 5626, 5697, 4942, 480, 5716, 3763, 483, 5717, 3799, 675, 5721, 4345, 5723, 2]
+// Dependencies: [29, 5, 5050, 1194, 4972, 1908, 1838, 1907, 3948, 1850, 653, 1197, 4471, 1212, 686, 5051, 507, 1198, 5054, 1935, 5587, 5595, 5600, 5626, 11466, 4943, 480, 12561, 3764, 483, 7629, 3800, 675, 12562, 4346, 7668, 2]
 
-// Module 5048 (showTooManyUserGuildsAlert)
+// Module 5049 (showTooManyUserGuildsAlert)
 import fromHexReverseArray from "fromHexReverseArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
@@ -27,7 +27,7 @@ let closure_21;
 let closure_22;
 const require = arg1;
 function showTooManyUserGuildsAlert(quantity) {
-  let obj = importDefault(4470);
+  let obj = importDefault(4471);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.cTaRxF);
@@ -215,7 +215,7 @@ export default {
   },
   deleteGuild,
   selectGuild(guildId) {
-    require(5697) /* _createForOfIteratorHelperLoose */.stopLurking(guildId);
+    require(11466) /* _createForOfIteratorHelperLoose */.stopLurking(guildId);
   },
   createGuild(guild) {
     let obj = importDefault(686);
@@ -267,7 +267,7 @@ export default {
     let reason;
     let userId;
     ({ guildId, userId, communicationDisabledUntilTimestamp, duration, reason, location: _location } = moderator_report_id);
-    let obj = importDefault(4942);
+    let obj = importDefault(4943);
     obj = { url: closure_16.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderator_report_id.moderatorReportId }, oldFormErrors: true };
     obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE };
     const obj1 = { guild_id: guildId, target_user_id: userId };
@@ -330,7 +330,7 @@ export default {
     let closure_3 = arg3;
     const self = this;
     return callback(async () => {
-      let obj = callback(5716);
+      let obj = callback(12561);
       const usePubSub = obj.getConfig({ location: "startBulkBan" }).usePubSub;
       let num = 14;
       let obj1 = callback(686);
@@ -390,7 +390,7 @@ export default {
           obj.primary_color = num2;
         }
         obj.colors = obj;
-        obj.permissions = callback3(3763).NONE;
+        obj.permissions = callback3(3764).NONE;
         const HTTP = callback(507).HTTP;
         obj = { url: outer2_16.GUILD_ROLES(outer1_0), oldFormErrors: true };
         obj.body = obj;
@@ -406,7 +406,7 @@ export default {
           const obj6 = callback2(686);
         }
         const obj5 = callback3(483);
-        const result = callback2(5717).checkGuildTemplateDirty(outer1_0);
+        const result = callback2(7629).checkGuildTemplateDirty(outer1_0);
         return body;
       }
       const intl = callback(1212).intl;
@@ -603,7 +603,7 @@ export default {
     obj.dispatch(obj);
   },
   nsfwReturnToSafety(guildId) {
-    const tmp = importDefault(5721)(guildId);
+    const tmp = importDefault(12562)(guildId);
     if (null == tmp) {
       if (null != guildId) {
         const defaultChannel = store.getDefaultChannel(guildId);
@@ -613,9 +613,9 @@ export default {
               require(1198) /* shouldNavigate */.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
               const obj4 = require(1198) /* shouldNavigate */;
             }
-            obj3 = require(5723) /* getSpoilerGatingChannelId */;
+            obj3 = require(7668) /* getSpoilerGatingChannelId */;
           }
-          obj6 = require(4345) /* shouldAgeVerifyForAgeGate */;
+          obj6 = require(4346) /* shouldAgeVerifyForAgeGate */;
         }
         require(1198) /* shouldNavigate */.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
         const obj5 = require(1198) /* shouldNavigate */;

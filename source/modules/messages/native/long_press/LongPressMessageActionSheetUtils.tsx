@@ -1,10 +1,10 @@
-// Module ID: 9578
-// Function ID: 74509
+// Module ID: 9499
+// Function ID: 74096
 // Name: getContextBarCancelReason
-// Dependencies: [31, 6921, 3768, 6922, 7079, 1849, 9579, 653, 1355, 6835, 33, 3969, 21, 9580, 9581, 5482, 675, 6691, 4470, 1212, 9891, 9895, 9896, 3843, 7075, 9898, 7006, 3981, 1198, 4353, 5490, 3830, 4312, 4140, 9899, 4317, 1443, 9617, 8320, 8380, 8383, 5670, 4098, 9900, 1934, 5667, 7689, 2298, 5655, 4138, 8537, 4324, 9351, 9903, 1207, 9904, 1881, 9943, 9955, 9967, 9974, 2]
+// Dependencies: [31, 5912, 3769, 5913, 6097, 1850, 9500, 653, 1355, 5837, 33, 3970, 21, 9501, 9502, 5482, 675, 5685, 4471, 1212, 9815, 9819, 9820, 3844, 6093, 9822, 6024, 3982, 1198, 4354, 5490, 3831, 4313, 4141, 9823, 4318, 1443, 9538, 8055, 8138, 8141, 5849, 4099, 9824, 1935, 6009, 7633, 2299, 6000, 4139, 8297, 4325, 9244, 9829, 1207, 9830, 1882, 9871, 9883, 9895, 9902, 2]
 // Exports: longPressMessageOptionHandler
 
-// Module 9578 (getContextBarCancelReason)
+// Module 9499 (getContextBarCancelReason)
 import "presentAddedFriendToast";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { isMessageComponentsV2 } from "_callSuper";
@@ -15,7 +15,7 @@ import closure_8 from "_isNativeReflectConstruct";
 import ME from "ME";
 import { isStaticChannelRoute } from "set";
 import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_19 } from "USER_SETTING_ACTION_SHEET_KEY";
-import { jsx } from "module_4140";
+import { jsx } from "module_4141";
 
 let closure_10;
 let closure_11;
@@ -53,8 +53,8 @@ function handleEdit(id, isForumPost, current, source) {
     let obj = importDefault(21);
     if (isForumPost.id === obj.castMessageIdAsChannelId(id.id)) {
       if (null != isForumPost.parent_id) {
-        require(9580) /* createPendingReply */.deletePendingReply(isForumPost.id);
-        const obj9 = require(9580) /* createPendingReply */;
+        require(9501) /* createPendingReply */.deletePendingReply(isForumPost.id);
+        const obj9 = require(9501) /* createPendingReply */;
         obj = {};
         ({ guild_id: obj11.guildId, parent_id: obj11.parentChannelId, id: obj11.threadId } = isForumPost);
         obj.messageId = id.id;
@@ -63,8 +63,8 @@ function handleEdit(id, isForumPost, current, source) {
         obj.analyticsLocations = items;
         obj = { page: constants3.GUILD_CHANNEL, section: constants4.FORUM_POST_HEADER, object: constants2.CONTEXT_MENU };
         obj.analyticsLocationObject = obj;
-        const result = require(9581) /* openCreateForumPostModal */.openCreateForumPostModal(obj);
-        const obj10 = require(9581) /* openCreateForumPostModal */;
+        const result = require(9502) /* openCreateForumPostModal */.openCreateForumPostModal(obj);
+        const obj10 = require(9502) /* openCreateForumPostModal */;
       }
     }
   }
@@ -83,7 +83,7 @@ function handleEdit(id, isForumPost, current, source) {
         obj1.is_own_message = tmp17;
         importDefault(675).track(constants.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj1);
         const obj5 = importDefault(675);
-        importDefault(6691).endEditMessage(isForumPost.id);
+        importDefault(5685).endEditMessage(isForumPost.id);
         let tmp22 = null == current;
         if (!tmp22) {
           const current2 = current.current;
@@ -93,7 +93,7 @@ function handleEdit(id, isForumPost, current, source) {
         if (!tmp22) {
           obj8.dismissKeyboard();
         }
-        const obj7 = importDefault(6691);
+        const obj7 = importDefault(5685);
       }
     }
   }
@@ -108,9 +108,9 @@ function handleEdit(id, isForumPost, current, source) {
     importDefault(675).track(constants.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj2);
     const obj13 = importDefault(675);
   }
-  obj1 = require(9580) /* createPendingReply */;
+  obj1 = require(9501) /* createPendingReply */;
   obj1.deletePendingReply(isForumPost.id);
-  obj2 = importDefault(6691);
+  obj2 = importDefault(5685);
   const result1 = obj2.startEditMessageRecord(isForumPost.id, id, source);
   let tmp9 = null == current;
   if (!tmp9) {
@@ -127,7 +127,7 @@ function handleConfirmDelete(id, id2, arg2) {
   if (arg2 === undefined) {
     flag = false;
   }
-  importDefault(6691).deleteMessage(id, id2, flag);
+  importDefault(5685).deleteMessage(id, id2, flag);
 }
 function handleCreateThread(guild_id, id, SUMMARY_ACTION_SHEET) {
   let str = SUMMARY_ACTION_SHEET;
@@ -138,10 +138,10 @@ function handleCreateThread(guild_id, id, SUMMARY_ACTION_SHEET) {
   if (null != id) {
     id = id.id;
   }
-  const result = importDefault(7006).openThreadCreationForMobile(guild_id, id, str);
+  const result = importDefault(6024).openThreadCreationForMobile(guild_id, id, str);
   let result1 = null == id;
   if (!result1) {
-    const obj2 = require(3981) /* _createForOfIteratorHelperLoose */;
+    const obj2 = require(3982) /* _createForOfIteratorHelperLoose */;
     result1 = obj2.navigateToCreateThread(guild_id.guild_id, importDefault(21).castMessageIdAsChannelId(id.id));
     const obj3 = importDefault(21);
   }
@@ -155,7 +155,7 @@ function handleCopyMessageLink(channel, id2) {
   let obj = importDefault(675);
   obj = { message_id: id2, channel: channel.id };
   obj.track(constants.MESSAGE_LINK_COPIED, obj);
-  handleCopyLink(require(4312) /* _createForOfIteratorHelperLoose */.getChannelPermalink(channel.guild_id, channel.id, id2));
+  handleCopyLink(require(4313) /* _createForOfIteratorHelperLoose */.getChannelPermalink(channel.guild_id, channel.id, id2));
 }
 function getChannelAnalyticsMetadata(id) {
   const tmp = isStaticChannelRoute(id);
@@ -177,16 +177,16 @@ function handleCopyLink(channelPermalink) {
   if (flag) {
     require(5490) /* _copy */.copy(channelPermalink);
     const obj = require(5490) /* _copy */;
-    require(3830) /* presentAddedFriendToast */.presentLinkCopied();
+    require(3831) /* presentAddedFriendToast */.presentLinkCopied();
     flag = true;
-    const obj2 = require(3830) /* presentAddedFriendToast */;
+    const obj2 = require(3831) /* presentAddedFriendToast */;
   }
   return flag;
 }
 function handleCopyId(id2) {
   require(5490) /* _copy */.copy(id2);
   const obj = require(5490) /* _copy */;
-  const result = require(3830) /* presentAddedFriendToast */.presentMessageIdCopied();
+  const result = require(3831) /* presentAddedFriendToast */.presentMessageIdCopied();
 }
 function handleSuppressEmbeds(id, chatInputRef, id2) {
   const _require = id;
@@ -212,7 +212,7 @@ function handleSuppressEmbeds(id, chatInputRef, id2) {
   obj.onConfirm = function onConfirm() {
     id2(outer1_2[17]).suppressEmbeds(closure_0, id2);
   };
-  importDefault(4470).show(obj);
+  importDefault(4471).show(obj);
 }
 function handleRemoveAttachment(id, chatInputRef, message, selectedMedia) {
   const _require = id;
@@ -249,8 +249,8 @@ function handleRemoveAttachment(id, chatInputRef, message, selectedMedia) {
         const result = callback(table[17]).patchMessageAttachments(closure_0, closure_1.id, found);
       })(closure_0, closure_1, selectedMedia.source.id);
     };
-    importDefault(4470).show(obj);
-    const obj2 = importDefault(4470);
+    importDefault(4471).show(obj);
+    const obj2 = importDefault(4471);
   }
 }
 ({ AnalyticEvents: closure_9, AnalyticsObjects: closure_10, AnalyticsPages: closure_11, AnalyticsSections: closure_12, ComponentActions: closure_13, GIF_RE_IOS: closure_14, MediaType: closure_15, MessageStates: closure_16, MessageTypes: closure_17 } = ME);

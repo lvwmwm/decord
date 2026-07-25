@@ -1,8 +1,8 @@
-// Module ID: 14136
-// Function ID: 108670
-// Dependencies: [57, 31, 27, 33, 4130, 14126, 10493, 10953, 4979, 14077, 4126, 2]
+// Module ID: 14147
+// Function ID: 108797
+// Dependencies: [57, 31, 27, 33, 4131, 14137, 10427, 10904, 4980, 14088, 4127, 2]
 
-// Module 14136
+// Module 14147
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -15,26 +15,26 @@ const require = arg1;
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 let closure_8 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { alignItems: "center", display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1, gap: 8, justifyContent: "center", padding: 8 }, progressIndicatorWrapper: { flexGrow: 0, flexShrink: 0 }, copy: { flexGrow: 1, flexShrink: 1 } });
 const memoResult = importAllResult.memo(function QuestDockEnrolledHeader() {
-  const quest = importAllResult.useContext(importDefault(14126)).quest;
+  const quest = importAllResult.useContext(importDefault(14137)).quest;
   const tmp = callback4();
-  let obj = require(10493) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10427) /* _createForOfIteratorHelperLoose */;
   const questTaskDetails = obj.useQuestTaskDetails(quest);
-  let obj1 = require(10493) /* _createForOfIteratorHelperLoose */;
-  let obj2 = require(10953) /* formatWithOrWithoutMarkdown */;
+  let obj1 = require(10427) /* _createForOfIteratorHelperLoose */;
+  let obj2 = require(10904) /* formatWithOrWithoutMarkdown */;
   const questBarTitle = obj2.useQuestBarTitle(quest);
-  let obj3 = require(10953) /* formatWithOrWithoutMarkdown */;
-  obj = { quest, isExpanded: false, activeScreen: callback(obj1.useTaskPlatformScreen(quest, questTaskDetails), 1)[0], sourceQuestContent: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE };
+  let obj3 = require(10904) /* formatWithOrWithoutMarkdown */;
+  obj = { quest, isExpanded: false, activeScreen: callback(obj1.useTaskPlatformScreen(quest, questTaskDetails), 1)[0], sourceQuestContent: require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE };
   obj = { style: tmp.wrapper };
   obj1 = { style: tmp.progressIndicatorWrapper };
   const questBarSubtitle = obj3.useQuestBarSubtitle(obj);
   obj2 = { quest, size: "x-sm", progress: questTaskDetails.percentComplete, loading: false, hasConfetti: true };
-  obj1.children = callback2(importDefault(14077), obj2);
+  obj1.children = callback2(importDefault(14088), obj2);
   const items = [callback2(View, obj1), ];
   obj3 = { style: tmp.copy };
   const obj4 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: questBarTitle };
-  const items1 = [callback2(require(4126) /* Text */.Text, obj4), ];
+  const items1 = [callback2(require(4127) /* Text */.Text, obj4), ];
   const obj5 = { variant: "text-sm/medium", color: "text-muted", children: questBarSubtitle };
-  items1[1] = callback2(require(4126) /* Text */.Text, obj5);
+  items1[1] = callback2(require(4127) /* Text */.Text, obj5);
   obj3.children = items1;
   items[1] = callback3(View, obj3);
   obj.children = items;

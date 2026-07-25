@@ -1,9 +1,9 @@
-// Module ID: 13700
-// Function ID: 105159
+// Module ID: 13711
+// Function ID: 105286
 // Name: RestrictedAccountRedirect
-// Dependencies: [31, 27, 3767, 1849, 653, 7563, 33, 4130, 689, 13701, 1212, 5796, 566, 9270, 9217, 5165, 4543, 2]
+// Dependencies: [31, 27, 3768, 1850, 653, 6659, 33, 4131, 689, 13712, 1212, 6554, 566, 9162, 9109, 5164, 4544, 2]
 
-// Module 13700 (RestrictedAccountRedirect)
+// Module 13711 (RestrictedAccountRedirect)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,7 +26,7 @@ function RestrictedAccountRedirect() {
     },
     noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   };
-  return callback(importDefault(13701), obj);
+  return callback(importDefault(13712), obj);
 }
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let obj = {};
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(() => {
   let obj = require(566) /* initialize */;
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
-  let obj1 = require(9270) /* handleOpenEmailVerification */;
+  let obj1 = require(9162) /* handleOpenEmailVerification */;
   const bannerText = obj1.getBannerText(stateFromStores);
   const tmp = callback2();
   const items1 = [_isNativeReflectConstruct];
@@ -59,10 +59,10 @@ const memoResult = importAllResult.memo(() => {
       obj1 = {};
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       obj1.onPress = callback;
-      obj.trailing = callback(require(4543) /* Button */.Button, obj1);
+      obj.trailing = callback(require(4544) /* Button */.Button, obj1);
       obj.start = true;
       obj.end = true;
-      tmp12 = callback(require(5165) /* TableRowInner */.TableRow, obj);
+      tmp12 = callback(require(5164) /* TableRowInner */.TableRow, obj);
     }
     items2[1] = tmp12;
     obj.children = items2;

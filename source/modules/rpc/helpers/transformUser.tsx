@@ -1,10 +1,10 @@
-// Module ID: 10531
-// Function ID: 82169
+// Module ID: 10559
+// Function ID: 82298
 // Name: transformUser
 // Dependencies: [1828, 2]
 // Exports: default
 
-// Module 10531 (transformUser)
+// Module 10559 (transformUser)
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/transformUser.tsx");
 
 export default function transformUser(id) {

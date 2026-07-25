@@ -1,10 +1,10 @@
-// Module ID: 10251
-// Function ID: 79141
+// Module ID: 10184
+// Function ID: 78776
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [22, 2198, 1212, 10252, 2]
+// Dependencies: [22, 2199, 1212, 10185, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 10251 (_createForOfIteratorHelperLoose)
+// Module 10184 (_createForOfIteratorHelperLoose)
 let Created;
 let Disabled;
 let Enabled;
@@ -317,12 +317,12 @@ export const getRestrictedScheduleNotificationTitle = function getRestrictedSche
 export const getRestrictedScheduleNotificationSubtitle = function getRestrictedScheduleNotificationSubtitle(rule) {
   let result = null;
   if (null != rule) {
-    result = require(10252) /* _createForOfIteratorHelperLoose */.formatRestrictedScheduleInAppSubtitle(rule);
-    const obj = require(10252) /* _createForOfIteratorHelperLoose */;
+    result = require(10185) /* _createForOfIteratorHelperLoose */.formatRestrictedScheduleInAppSubtitle(rule);
+    const obj = require(10185) /* _createForOfIteratorHelperLoose */;
   }
   if (null == result) {
     const intl = require(1212) /* getSystemLocale */.intl;
-    result = intl.string(importDefault(2198)["8OlpoY"]);
+    result = intl.string(importDefault(2199)["8OlpoY"]);
   }
   return result;
 };

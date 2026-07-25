@@ -1,10 +1,10 @@
-// Module ID: 14779
-// Function ID: 112689
+// Module ID: 14790
+// Function ID: 112817
 // Name: RegistrationTransitionActionTypes
 // Dependencies: [668, 2]
 // Exports: authStateToRegisterTransitionStep
 
-// Module 14779 (RegistrationTransitionActionTypes)
+// Module 14790 (RegistrationTransitionActionTypes)
 const obj = { ACCOUNT_IDENTITY: "Account Identity", ACCOUNT_DISPLAY_NAME: "Account Display Name", ACCOUNT_INFORMATION: "Account Information", AGE_GATE: "Age Gate", AGE_GATE_UNDERAGE: "Age Gate Underage", PHONE_VERIFICATION: "Phone Verification", REGISTER: "Register", CAPTCHA: "Captcha" };
 const result = require("set").fileFinishedImporting("modules/auth/RegistrationConstants.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 10153
-// Function ID: 78524
+// Module ID: 10085
+// Function ID: 78154
 // Name: num2
-// Dependencies: [31, 27, 33, 4130, 689, 478, 1324, 1212, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 478, 1324, 1212, 4127, 2]
 
-// Module 10153 (num2)
+// Module 10085 (num2)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -89,7 +89,7 @@ const memoResult = importAllResult.memo(function MemberCount(arg0) {
     obj3.lineClamp = 1;
     obj3.style = tmp ? tmp17.refreshText : tmp17.text;
     obj3.children = intl.format(etqpUG, obj);
-    items2[1] = callback(require(4126) /* Text */.Text, obj3);
+    items2[1] = callback(require(4127) /* Text */.Text, obj3);
     obj.children = items2;
     return closure_5(View, obj);
   }

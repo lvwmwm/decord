@@ -1,9 +1,9 @@
-// Module ID: 4162
-// Function ID: 35153
+// Module ID: 4163
+// Function ID: 35164
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4153, 653, 4156, 664, 4163, 587, 477, 4164, 21, 1327, 1881, 675, 3803, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4154, 653, 4157, 664, 4164, 587, 477, 4165, 21, 1327, 1882, 675, 3804, 566, 686, 2]
 
-// Module 4162 (_isNativeReflectConstruct)
+// Module 4163 (_isNativeReflectConstruct)
 import ME from "ME";
 import ApplicationTypes from "ApplicationTypes";
 import PermissionOverwriteType from "PermissionOverwriteType";
@@ -202,7 +202,7 @@ function addDetectableGame(value) {
   let id;
   let name;
   let tmp = value;
-  if (value instanceof require(4164) /* _isNativeReflectConstruct */.DetectableGameRecord) {
+  if (value instanceof require(4165) /* _isNativeReflectConstruct */.DetectableGameRecord) {
     tmp = convertGameRecordToGame(value);
   }
   const result = importDefaultResult.set(value.id, tmp);

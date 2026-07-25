@@ -1,20 +1,20 @@
-// Module ID: 15271
-// Function ID: 116404
+// Module ID: 15281
+// Function ID: 116532
 // Name: isMediaSourceGif
-// Dependencies: [57, 31, 27, 4122, 1348, 3767, 1849, 8350, 653, 33, 4130, 689, 4317, 668, 566, 8342, 8346, 3991, 4131, 15272, 5085, 4126, 1212, 8330, 4674, 4660, 8365, 10746, 4658, 15227, 8320, 7086, 1327, 22, 5069, 8318, 4320, 2]
+// Dependencies: [57, 31, 27, 4123, 1348, 3768, 1850, 8108, 653, 33, 4131, 689, 4318, 668, 566, 8080, 3992, 4132, 15282, 5085, 4127, 1212, 8065, 4675, 4661, 8123, 10710, 4659, 15237, 8055, 6104, 1327, 22, 5070, 8053, 4321, 2]
 // Exports: default
 
-// Module 15271 (isMediaSourceGif)
+// Module 15281 (isMediaSourceGif)
 import _slicedToArray from "_slicedToArray";
-import MessageEmbedTypes from "MessageEmbedTypes";
-import get_ActivityIndicator from "VoiceXIcon";
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
+import get_ActivityIndicator from "VoiceNormalIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
 import closure_10 from "_isNativeReflectConstruct";
 import closure_11 from "_isNativeReflectConstruct";
 import ME from "ME";
-import jsxProd from "apply";
+import jsxProd from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_12;
@@ -29,8 +29,8 @@ const require = arg1;
 function isMediaSourceGif(source) {
   let isGIFV = source.isGIFV;
   if (!isGIFV) {
-    isGIFV = require(4317) /* urlMatchesFileExtension */.urlMatchesFileExtension(source.sourceURI, require(668) /* keys */.GIF_RE_IOS);
-    const obj = require(4317) /* urlMatchesFileExtension */;
+    isGIFV = require(4318) /* urlMatchesFileExtension */.urlMatchesFileExtension(source.sourceURI, require(668) /* keys */.GIF_RE_IOS);
+    const obj = require(4318) /* urlMatchesFileExtension */;
   }
   return isGIFV;
 }
@@ -45,12 +45,9 @@ function MediaMosaicVideo(source) {
   let obj = require(566) /* initialize */;
   const items = [closure_11];
   let isGIFV = obj.useStateFromStores(items, () => outer1_11.videosMuted());
-  const rnvHttpEngine = require(8342) /* apexExperiment */.useRnvHttpEngine();
   obj = {};
   obj = {};
   let uri = source.videoURI;
-  const obj2 = require(8342) /* apexExperiment */;
-  const tmp3 = closure_15;
   if (null == uri) {
     uri = source.sourceURI;
   }
@@ -72,8 +69,7 @@ function MediaMosaicVideo(source) {
     isGIFV = source.isGIFV;
   }
   obj.disableFocus = isGIFV;
-  obj.httpEngine = rnvHttpEngine;
-  return tmp3(importDefault(8346), obj);
+  return closure_15(importDefault(8080), obj);
 }
 function MediaMosaicImage(source) {
   let dimensions;
@@ -85,17 +81,17 @@ function MediaMosaicImage(source) {
   let num = 0;
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
-  let obj = source(3991);
+  let obj = source(3992);
   const fn = function c() {
     const obj = {};
     let num = 1;
     if (first) {
       num = 0;
     }
-    obj.opacity = source(4131).withTiming(num, { duration: 150 });
+    obj.opacity = source(4132).withTiming(num, { duration: 150 });
     return obj;
   };
-  obj = { withTiming: source(4131).withTiming, imageFinishedLoading: first };
+  obj = { withTiming: source(4132).withTiming, imageFinishedLoading: first };
   fn.__closure = obj;
   fn.__workletHash = 7803531897566;
   fn.__initData = closure_19;
@@ -105,7 +101,7 @@ function MediaMosaicImage(source) {
   obj = {};
   const memo = React.useMemo(() => {
     if (null != source.placeholder) {
-      const obj = { uri: source(15272).createThumbhashImageFromPlaceholder(source.placeholder) };
+      const obj = { uri: source(15282).createThumbhashImageFromPlaceholder(source.placeholder) };
       ({ width: obj.width, height: obj.height } = source);
       return obj;
     }
@@ -114,7 +110,7 @@ function MediaMosaicImage(source) {
   items1 = [animatedStyle, tmp.thumbhashMedia];
   const items2 = [style, tmp.media, dimensions];
   obj1.children = callback2(first(5085), { source: memo, style: items2 });
-  const items3 = [callback2(first(3991).View, obj1), ];
+  const items3 = [callback2(first(3992).View, obj1), ];
   const obj2 = {
     source,
     style: items4,
@@ -127,7 +123,7 @@ function MediaMosaicImage(source) {
     num = 100;
   }
   obj2.blurRadius = num;
-  items3[1] = callback2(first(3991).Image, obj2, source.uri);
+  items3[1] = callback2(first(3992).Image, obj2, source.uri);
   obj.children = items3;
   return closure_17(closure_16, obj);
 }
@@ -172,12 +168,12 @@ function Media(handlePressMedia) {
     obj = { style: tmp.centerContainer };
     obj1 = { style: tmp.spoilerText };
     const obj2 = { maxFontSizeMultiplier: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
-    const intl = initialIndex(ref[22]).intl;
-    obj2.children = intl.string(initialIndex(ref[22]).t["F+x38C"]).toUpperCase();
-    obj1.children = callback2(initialIndex(ref[21]).Text, obj2);
+    const intl = initialIndex(ref[21]).intl;
+    obj2.children = intl.string(initialIndex(ref[21]).t["F+x38C"]).toUpperCase();
+    obj1.children = callback2(initialIndex(ref[20]).Text, obj2);
     obj.children = callback2(closure_6, obj1);
     tmp12 = callback2(closure_6, obj);
-    const str = intl.string(initialIndex(ref[22]).t["F+x38C"]);
+    const str = intl.string(initialIndex(ref[21]).t["F+x38C"]);
   }
   const items3 = [tmp12, , , ];
   let tmp20 = null != source.videoURI && !first;
@@ -191,12 +187,12 @@ function Media(handlePressMedia) {
     const obj3 = { style: tmp.centerContainer };
     const obj4 = { style: tmp.videoIcon };
     const obj5 = { color: handlePressMedia(ref[11]).colors.REDESIGN_BUTTON_TERTIARY_TEXT, size: "lg" };
-    obj4.children = callback2(initialIndex(ref[23]).PlayIcon, obj5);
+    obj4.children = callback2(initialIndex(ref[22]).PlayIcon, obj5);
     obj3.children = callback2(closure_6, obj4);
     tmp20 = callback2(closure_6, obj3);
   }
   items3[1] = tmp20;
-  let obj9 = initialIndex(ref[24]);
+  let obj9 = initialIndex(ref[23]);
   let tmp30 = null;
   if (obj9.isVideo(source.uri)) {
     tmp30 = null;
@@ -206,20 +202,20 @@ function Media(handlePressMedia) {
       const items4 = [tmp.muteIcon, stateFromStores ? tmp.iconBg : tmp.iconBgSelected];
       obj7.style = items4;
       obj7.onPress = function onPress() {
-        return handlePressMedia(ref[26]).setVideosMuted(!stateFromStores);
+        return handlePressMedia(ref[25]).setVideosMuted(!stateFromStores);
       };
       obj7.activeOpacity = 0.8;
       let VoiceXIcon = initialIndex;
       if (stateFromStores) {
-        VoiceXIcon = VoiceXIcon(tmp38[27]).VoiceXIcon;
+        VoiceXIcon = VoiceXIcon(tmp38[26]).VoiceXIcon;
         const obj8 = { color: handlePressMedia(tmp38[11]).colors.INTERACTIVE_TEXT_DEFAULT, size: "sm" };
         let tmp37Result = tmp37(VoiceXIcon, obj8);
       } else {
         obj9 = { color: handlePressMedia(tmp38[11]).colors.BLACK, size: "sm" };
-        tmp37Result = tmp37(VoiceXIcon(tmp38[28]).VoiceNormalIcon, obj9);
+        tmp37Result = tmp37(VoiceXIcon(tmp38[27]).VoiceNormalIcon, obj9);
       }
       obj7.children = tmp37Result;
-      obj7 = callback2(initialIndex(ref[25]).PressableOpacity, obj7);
+      obj7 = callback2(initialIndex(ref[24]).PressableOpacity, obj7);
       obj6.children = obj7;
       callback2(closure_6, obj6);
       const tmp32 = callback2;
@@ -397,8 +393,8 @@ class GravityAttachmentMediaMosaic {
     items = [, ];
     items[0] = length;
     items[1] = sources;
-    tmp = f116430();
-    memo = MessageEmbedTypes.useMemo(() => {
+    tmp = f116558();
+    memo = isDiscordFrontendDevelopment.useMemo(() => {
       let sum;
       const items = [];
       const result = length % 3;
@@ -418,7 +414,7 @@ class GravityAttachmentMediaMosaic {
       }
       return items;
     }, items);
-    MessageEmbedTypes = memo;
+    isDiscordFrontendDevelopment = memo;
     num = 0;
     if (0 === length) {
       return null;
@@ -487,7 +483,7 @@ class GravityAttachmentMediaMosaic {
 }
 function useMaxWidth(widthOverride) {
   let diff = widthOverride;
-  const context = React.useContext(require(15227) /* useICYMIContextConstructor */.ICYMIContext);
+  const context = React.useContext(require(15237) /* useICYMIContextConstructor */.ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (null != context) {
@@ -552,11 +548,11 @@ export default function ICYMIMediaMosaic(message) {
   c5 = tmp4;
   const items1 = [message];
   const memo = React.useMemo(() => {
-    let obj = message(itemType[30]);
-    const result = obj.extractMediaSourcesFromMessage(message, message, undefined, message(itemType[31]).GRAVITY_VALID_EMBED_TYPES);
-    const mapped = result.map((closure_1) => message(itemType[30]).flattenSource(closure_1));
-    const found = mapped.filter(message(itemType[32]).isNotNullish);
-    const tmp2 = stateFromStores(message(itemType[33]).partition(found, (accessoryType) => "embed" === accessoryType.accessoryType), 2);
+    let obj = message(itemType[29]);
+    const result = obj.extractMediaSourcesFromMessage(message, message, undefined, message(itemType[30]).GRAVITY_VALID_EMBED_TYPES);
+    const mapped = result.map((closure_1) => message(itemType[29]).flattenSource(closure_1));
+    const found = mapped.filter(message(itemType[31]).isNotNullish);
+    const tmp2 = stateFromStores(message(itemType[32]).partition(found, (accessoryType) => "embed" === accessoryType.accessoryType), 2);
     obj = { allMediaSources: found, nonEmbedSources: tmp2[1], embedSources: tmp2[0] };
     return obj;
   }, items1);
@@ -572,13 +568,13 @@ export default function ICYMIMediaMosaic(message) {
     let initialIndex;
     let ref;
     ({ ref, initialIndex } = arg0);
-    let obj = widthOverride(itemType[26]);
+    let obj = widthOverride(itemType[25]);
     obj.itemInteracted(items.id, "message", "press_media");
-    let obj1 = widthOverride(itemType[26]);
+    let obj1 = widthOverride(itemType[25]);
     obj = { itemId: items.id, itemType, actionParameters: { actionGestureType: "press", actionTargetElement: "media_mosaic", actionIntentType: "open", actionDestinationType: null } };
     obj1.feedItemActioned(obj);
     obj = { page: outer1_14.ICYMI, object: outer1_13.ACK_MEDIA_VIEWED, objectType: outer1_12.ACK_SEMI_AUTOMATIC };
-    message(itemType[34]).ack(items.channel_id, obj, true, true, items.id);
+    message(itemType[33]).ack(items.channel_id, obj, true, true, items.id);
     items = [];
     const item = allMediaSources.forEach((arg0) => {
       const obj = {};
@@ -587,12 +583,12 @@ export default function ICYMIMediaMosaic(message) {
       items.push(obj);
     });
     callback(true);
-    const obj4 = message(itemType[34]);
+    const obj4 = message(itemType[33]);
     obj1 = { disableDownload: false, initialSources: items, initialIndex, analyticsSource: "Channel", channelId: items.channel_id };
     let str = "";
     if (null != stateFromStores) {
-      str = message(itemType[36]).computeChannelName(stateFromStores, outer1_10, outer1_9);
-      const obj8 = message(itemType[36]);
+      str = message(itemType[35]).computeChannelName(stateFromStores, outer1_10, outer1_9);
+      const obj8 = message(itemType[35]);
     }
     obj1.contextName = str;
     obj1.contextIcon = undefined;
@@ -600,7 +596,7 @@ export default function ICYMIMediaMosaic(message) {
     obj1.onClose = function onClose() {
       return outer1_4(false);
     };
-    message(itemType[35]).openMediaModal(obj1);
+    message(itemType[34]).openMediaModal(obj1);
   }, items2);
   if (0 !== nonEmbedSources.length) {
     obj = { style: tmp.container };

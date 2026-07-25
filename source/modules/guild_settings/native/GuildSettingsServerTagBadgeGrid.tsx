@@ -1,10 +1,10 @@
-// Module ID: 16326
-// Function ID: 127061
+// Module ID: 16337
+// Function ID: 127229
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [31, 27, 7721, 33, 689, 4130, 16327, 11542, 4541, 4126, 1212, 16328, 16329, 12974, 5512, 2]
+// Dependencies: [31, 27, 7665, 33, 689, 4131, 16338, 11508, 4542, 4127, 1212, 16339, 16340, 12985, 5512, 2]
 // Exports: default
 
-// Module 16326 (GuildSettingsServerTagBadgeGrid)
+// Module 16337 (GuildSettingsServerTagBadgeGrid)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { GuildTagBadgeSize } from "items";
@@ -37,7 +37,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
   guildId = guildId.guildId;
   ({ selectedBadge: importDefault, onSelectBadge: dependencyMap, cellSize: result } = guildId);
   const tmp = _createForOfIteratorHelperLoose();
-  ({ unlockedBadges, lockedBadges } = importDefault(16327)());
+  ({ unlockedBadges, lockedBadges } = importDefault(16338)());
   const items = [guildId];
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[7])({ guildId, autoOpenPerkId: "guildTagsBadgePacks" });
@@ -46,7 +46,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
   obj = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header" };
   const intl = guildId(1212).intl;
   obj.children = intl.string(guildId(1212).t.wRnfnY);
-  const items1 = [callback(guildId(4126).Text, obj), , ];
+  const items1 = [callback(guildId(4127).Text, obj), , ];
   obj = {
     accessibilityRole: "radiogroup",
     style: tmp.grid,
@@ -83,7 +83,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     const obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.upsellText };
     const intl3 = guildId(1212).intl;
     obj3.children = intl3.string(guildId(1212).t.U5p3GZ);
-    items2[1] = callback(guildId(4126).Text, obj3);
+    items2[1] = callback(guildId(4127).Text, obj3);
     const obj4 = { size: "md", color: importDefault(689).colors.ICON_SUBTLE };
     items2[2] = callback(guildId(5512).ChevronSmallRightIcon, obj4);
     obj1.children = items2;
@@ -91,5 +91,5 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
   }
   items1[2] = tmp5;
   obj.children = items1;
-  return callback2(guildId(4541).Stack, obj);
+  return callback2(guildId(4542).Stack, obj);
 };

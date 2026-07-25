@@ -1,10 +1,10 @@
-// Module ID: 5713
-// Function ID: 49117
+// Module ID: 10034
+// Function ID: 77575
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1838, 5714, 653, 1331, 1360, 2]
+// Dependencies: [1838, 10035, 653, 1331, 1360, 2]
 // Exports: setHubProgressActionComplete, skipHubProgress
 
-// Module 5713 (_createForOfIteratorHelperLoose)
+// Module 10034 (_createForOfIteratorHelperLoose)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { HUB_PROGRESS_STEP_ORDER } from "items";
 import { GuildFeatures } from "ME";

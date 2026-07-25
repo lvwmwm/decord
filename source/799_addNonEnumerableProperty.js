@@ -1,5 +1,5 @@
 // Module ID: 799
-// Function ID: 8989
+// Function ID: 8995
 // Name: addNonEnumerableProperty
 // Dependencies: [800, 801, 804, 805]
 

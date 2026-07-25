@@ -1,10 +1,10 @@
-// Module ID: 11139
-// Function ID: 86621
+// Module ID: 11099
+// Function ID: 86259
 // Name: RefreshChatInputCoachmark
-// Dependencies: [57, 31, 1345, 1324, 5802, 1334, 1212, 3842, 8608, 2]
+// Dependencies: [57, 31, 1345, 1324, 8379, 1334, 1212, 3843, 8368, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 11139 (RefreshChatInputCoachmark)
+// Module 11099 (RefreshChatInputCoachmark)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -16,14 +16,14 @@ export default function RefreshChatInputCoachmark(buttonRef) {
   let obj = Object.create(null);
   obj.buttonRef = 0;
   const merged = Object.assign(buttonRef, obj);
-  obj = require(8608) /* useCoachmark */;
+  obj = require(8368) /* useCoachmark */;
   const coachmark = obj.useCoachmark(buttonRef.buttonRef, merged);
   return null;
 };
 export const useRefreshChatInputCoachmark = function useRefreshChatInputCoachmark(disabled) {
   let _require;
   let importDefault;
-  _require(5802);
+  _require(8379);
   if (tmp) {
     if (!disabled.disabled) {
       let items = [_require(1334).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];

@@ -1,10 +1,10 @@
-// Module ID: 12282
-// Function ID: 95933
+// Module ID: 12258
+// Function ID: 95742
 // Name: MediaViewerItemPresenter
-// Dependencies: [31, 27, 33, 12281, 8319, 12280, 3991, 3992, 2]
+// Dependencies: [31, 27, 33, 12257, 8054, 12256, 3992, 3993, 2]
 // Exports: default
 
-// Module 12282 (MediaViewerItemPresenter)
+// Module 12258 (MediaViewerItemPresenter)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

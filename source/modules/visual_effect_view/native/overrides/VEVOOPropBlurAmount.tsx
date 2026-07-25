@@ -1,8 +1,8 @@
-// Module ID: 14759
-// Function ID: 112469
-// Dependencies: [57, 31, 4534, 33, 4130, 7636, 5503, 14760, 2]
+// Module ID: 14770
+// Function ID: 112597
+// Dependencies: [57, 31, 4535, 33, 4131, 7575, 5503, 14771, 2]
 
-// Module 14759
+// Module 14770
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import useVisualEffectViewOverrides from "useVisualEffectViewOverrides";
@@ -66,9 +66,9 @@ const memoResult = importAllResult.memo(function VEVOOPropBlurAmount() {
   });
   const ref = importAllResult.useRef(first1);
   const tmp7 = jsx;
-  obj.subLabel = jsx(first1(14760), { disabled: !first, disabledOpacity: !first, initialValue: importAllResult.useRef(first1), onValueChange: callback });
+  obj.subLabel = jsx(first1(14771), { disabled: !first, disabledOpacity: !first, initialValue: importAllResult.useRef(first1), onValueChange: callback });
   obj.disabled = !first;
-  return tmp7(_require(7636).FormRow, obj);
+  return tmp7(_require(7575).FormRow, obj);
 });
 const result = require("useVisualEffectViewOverrides").fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOPropBlurAmount.tsx");
 

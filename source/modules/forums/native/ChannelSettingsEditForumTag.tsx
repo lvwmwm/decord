@@ -1,10 +1,10 @@
-// Module ID: 15586
-// Function ID: 120193
+// Module ID: 15596
+// Function ID: 120321
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [57, 31, 27, 4991, 1348, 1852, 33, 4130, 689, 1456, 566, 4126, 1212, 9175, 5788, 4541, 5501, 5165, 4660, 9362, 5151, 1392, 7437, 1273, 5776, 5502, 4471, 2]
+// Dependencies: [57, 31, 27, 4992, 1348, 1853, 33, 4131, 689, 1456, 566, 4127, 1212, 9067, 6695, 4542, 5501, 5164, 4661, 9268, 5150, 1392, 6519, 1273, 6679, 5502, 4472, 2]
 // Exports: default
 
-// Module 15586 (ChannelSettingsEditForumTag)
+// Module 15596 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "set";
@@ -163,7 +163,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
           stringResult = string(t.zeVg5d);
         }
         obj.children = stringResult;
-        return closure_10(channelId(4126).Text, obj);
+        return closure_10(channelId(4127).Text, obj);
       }
     });
   }, items3);
@@ -229,7 +229,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
         const obj = { style: outer1_2.saveButton, onPress: outer1_14 };
         const intl = channelId(1212).intl;
         obj.text = intl.string(channelId(1212).t["R3BPH+"]);
-        return callback(channelId(5788).HeaderActionButton, obj);
+        return callback(channelId(6695).HeaderActionButton, obj);
       };
       setOptions(obj);
     } else {
@@ -278,19 +278,19 @@ export default function ChannelSettingsEditForumTag(channelId) {
                 }
         };
         const obj8 = { size: "xs" };
-        obj7.children = callback2(channelId(5776).CircleXIcon, obj8);
-        let tmp47 = callback2(channelId(4660).PressableOpacity, obj7);
+        obj7.children = callback2(channelId(6679).CircleXIcon, obj8);
+        let tmp47 = callback2(channelId(4661).PressableOpacity, obj7);
       } else {
         tmp47 = null;
       }
       obj4.trailing = tmp47;
-      obj3.children = tmp30(channelId(5165).TableRow, obj4);
+      obj3.children = tmp30(channelId(5164).TableRow, obj4);
       const items6 = [tmp30(channelId(5501).TableRowGroup, obj3), ];
       const obj9 = { style: tmp.hint };
       const obj10 = { variant: "text-sm/medium", color: "text-muted" };
       let intl2 = channelId(1212).intl;
       obj10.children = intl2.string(channelId(1212).t["3v8kZH"]);
-      obj9.children = callback2(channelId(4126).Text, obj10);
+      obj9.children = callback2(channelId(4127).Text, obj10);
       items6[1] = callback2(first, obj9);
       obj2.children = items6;
       const items7 = [tmp32(tmp31, obj2), , ];
@@ -342,12 +342,12 @@ export default function ChannelSettingsEditForumTag(channelId) {
           };
           obj.show(obj);
         };
-        obj13.children = callback2(channelId(5165).TableRow, obj14);
+        obj13.children = callback2(channelId(5164).TableRow, obj14);
         tmp55 = callback2(channelId(5501).TableRowGroup, obj13);
       }
       items7[2] = tmp55;
       obj1.children = items7;
-      obj.children = tmp32(channelId(4541).Stack, obj1);
+      obj.children = tmp32(channelId(4542).Stack, obj1);
       return tmp30(tmp31, obj);
     }
     const obj15 = {};
@@ -370,9 +370,9 @@ export default function ChannelSettingsEditForumTag(channelId) {
       str2 = name2;
     }
     obj15.name = str2;
-    tmp34Result = callback2(tag(5151), obj15);
+    tmp34Result = callback2(tag(5150), obj15);
     const tmp34 = callback2;
-    const tmp37 = tag(5151);
+    const tmp37 = tag(5150);
   }
-  tmp34Result = callback2(channelId(7437).ReactionIcon, {});
+  tmp34Result = callback2(channelId(6519).ReactionIcon, {});
 };

@@ -1,9 +1,9 @@
-// Module ID: 12747
-// Function ID: 99258
+// Module ID: 12758
+// Function ID: 99385
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1917, 1838, 3947, 1849, 653, 3746, 587, 3969, 3981, 1360, 4098, 12748, 1934, 3982, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1918, 1838, 3948, 1850, 653, 3747, 587, 3970, 3982, 1360, 4099, 12759, 1935, 3983, 5078, 2]
 
-// Module 12747 (_isNativeReflectConstruct)
+// Module 12758 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import showActionSheet from "showActionSheet";
@@ -31,8 +31,8 @@ function requiresChannelOnboard() {
   const Storage = require(587) /* Storage */.Storage;
   let isNewUserResult = !Storage.get(c14);
   if (isNewUserResult) {
-    isNewUserResult = require(3969) /* conceal */.isNewUser(currentUser.getCurrentUser());
-    const obj = require(3969) /* conceal */;
+    isNewUserResult = require(3970) /* conceal */.isNewUser(currentUser.getCurrentUser());
+    const obj = require(3970) /* conceal */;
   }
   return isNewUserResult;
 }

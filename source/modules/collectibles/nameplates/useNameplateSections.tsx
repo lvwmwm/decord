@@ -1,10 +1,10 @@
-// Module ID: 13655
-// Function ID: 104852
+// Module ID: 13666
+// Function ID: 104979
 // Name: useNameplateSections
-// Dependencies: [57, 31, 6774, 6790, 624, 6786, 1212, 2]
+// Dependencies: [57, 31, 5770, 5786, 624, 5782, 1212, 2]
 // Exports: default
 
-// Module 13655 (useNameplateSections)
+// Module 13666 (useNameplateSections)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

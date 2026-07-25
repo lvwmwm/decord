@@ -1,10 +1,10 @@
-// Module ID: 11785
-// Function ID: 91533
+// Module ID: 11761
+// Function ID: 91338
 // Name: getDescriptiveInviteError
-// Dependencies: [1849, 653, 3776, 1212, 1920, 2]
+// Dependencies: [1850, 653, 3777, 1212, 1921, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 11785 (getDescriptiveInviteError)
+// Module 11761 (getDescriptiveInviteError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -36,7 +36,7 @@ export const getDescriptiveInviteError = function getDescriptiveInviteError(code
       return obj;
     }
     tmp13 = closure_7;
-    obj5 = importDefault(3776);
+    obj5 = importDefault(3777);
   } else if (constants.GUILD_AT_CAPACITY === code) {
     const obj1 = {};
     const intl5 = require(1212) /* getSystemLocale */.intl;
@@ -77,7 +77,7 @@ export const getInviteError = function getInviteError(_Set) {
     return intl3.string(require(1212) /* getSystemLocale */.t["mY2R+F"]);
   } else if (constants.INVITES_DISABLED === _Set) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj = { articleLink: importDefault(1920).getArticleURL(constants2.INVITE_DISABLED) };
+    const obj = { articleLink: importDefault(1921).getArticleURL(constants2.INVITE_DISABLED) };
     return intl2.format(require(1212) /* getSystemLocale */.t.RXSeLl, obj);
   } else {
     const intl = require(1212) /* getSystemLocale */.intl;

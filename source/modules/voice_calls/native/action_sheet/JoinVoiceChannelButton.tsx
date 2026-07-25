@@ -1,10 +1,10 @@
-// Module ID: 12763
-// Function ID: 99311
+// Module ID: 12774
+// Function ID: 99438
 // Name: JoinVoiceChannelButton
-// Dependencies: [31, 27, 3758, 653, 33, 4130, 10708, 566, 1212, 1820, 4944, 4543, 2]
+// Dependencies: [31, 27, 3759, 653, 33, 4131, 10672, 566, 1212, 1820, 4945, 4544, 2]
 // Exports: default
 
-// Module 12763 (JoinVoiceChannelButton)
+// Module 12774 (JoinVoiceChannelButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,6 +45,6 @@ export default function JoinVoiceChannelButton(channel) {
     const voiceChannel = outer1_1(outer1_3[10]).selectVoiceChannel(channel.id);
   }, items1);
   obj = { disabled: flag, text: stringResult, onPress: callback };
-  obj.children = jsx(channel(4543).Button, { disabled: flag, text: stringResult, onPress: callback });
+  obj.children = jsx(channel(4544).Button, { disabled: flag, text: stringResult, onPress: callback });
   return <View disabled={flag} text={stringResult} onPress={callback} />;
 };

@@ -1,9 +1,9 @@
-// Module ID: 16184
-// Function ID: 125410
+// Module ID: 16195
+// Function ID: 125578
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 27, 3760, 1194, 1348, 4325, 11478, 11479, 653, 4344, 4098, 16185, 1934, 480, 3712, 11481, 10254, 675, 477, 14363, 668, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5, 27, 3761, 1194, 1348, 4326, 11441, 11442, 653, 4345, 4099, 16196, 1935, 480, 3713, 11444, 10187, 675, 477, 14374, 668, 5078, 2]
 
-// Module 16184 (_isNativeReflectConstruct)
+// Module 16195 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import showActionSheet from "showActionSheet";
@@ -43,8 +43,8 @@ function haveNotSeenPromptSince(arg0, arg1) {
   if (!tmp2) {
     let tmp4;
     if (items.includes(arg0)) {
-      tmp4 = importDefault(3712)().diff(tmp, "days") >= 1;
-      const obj = importDefault(3712)();
+      tmp4 = importDefault(3713)().diff(tmp, "days") >= 1;
+      const obj = importDefault(3713)();
     }
     tmp2 = tmp4;
   }

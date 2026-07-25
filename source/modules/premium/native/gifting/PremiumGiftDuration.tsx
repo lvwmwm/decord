@@ -1,10 +1,10 @@
-// Module ID: 9796
-// Function ID: 76140
+// Module ID: 9720
+// Function ID: 75735
 // Name: PremiumGiftDurationButton
-// Dependencies: [31, 27, 1851, 33, 4130, 689, 8848, 5165, 7639, 9723, 3848, 4126, 1212, 8849, 5450, 2]
+// Dependencies: [31, 27, 1852, 33, 4131, 689, 8736, 5164, 7578, 9647, 3849, 4127, 1212, 8737, 5450, 2]
 // Exports: default
 
-// Module 9796 (PremiumGiftDurationButton)
+// Module 9720 (PremiumGiftDurationButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
@@ -23,21 +23,21 @@ function PremiumGiftDurationButton(arg0) {
   let planInterval;
   let selected;
   ({ selected, planInterval } = arg0);
-  let obj = planInterval(8848);
+  let obj = planInterval(8736);
   const nativeGiftContext = obj.useNativeGiftContext();
   const setPlanInterval = nativeGiftContext.setPlanInterval;
   const tmp2 = _createForOfIteratorHelperLoose();
   if (selected) {
-    let RowButton = tmp3(5165).TableRow;
+    let RowButton = tmp3(5164).TableRow;
   } else {
-    RowButton = tmp3(7639).RowButton;
+    RowButton = tmp3(7578).RowButton;
   }
   let combined = null;
   if (planInterval === SubscriptionIntervalTypes.YEAR) {
     const _HermesInternal = HermesInternal;
     combined = "" + closure_5 + "%";
   }
-  let obj1 = planInterval(3848);
+  let obj1 = planInterval(3849);
   obj = { selected };
   const radioA11yNative = obj1.useRadioA11yNative(obj);
   obj = {};
@@ -59,7 +59,7 @@ function PremiumGiftDurationButton(arg0) {
     stringResult = intl.string(planInterval(1212).t.DRgqMo);
   }
   obj3.children = stringResult;
-  const items1 = [callback(planInterval(4126).Text, obj3), ];
+  const items1 = [callback(planInterval(4127).Text, obj3), ];
   let tmp21 = null != combined;
   if (tmp21) {
     const obj4 = { style: tmp2.labelPromo };
@@ -67,14 +67,14 @@ function PremiumGiftDurationButton(arg0) {
     const intl3 = planInterval(1212).intl;
     const obj6 = { discount: combined };
     obj5.children = intl3.formatToPlainString(planInterval(1212).t.IAybsG, obj6).toUpperCase();
-    obj4.children = callback(planInterval(4126).Text, obj5);
+    obj4.children = callback(planInterval(4127).Text, obj5);
     tmp21 = callback(View, obj4);
     const str3 = intl3.formatToPlainString(planInterval(1212).t.IAybsG, obj6);
   }
   items1[1] = tmp21;
   obj2.children = items1;
   obj1.label = closure_8(View, obj2);
-  obj1.trailing = callback(planInterval(4126).Text, { variant: "text-md/semibold", children: setPlanInterval(9723)(nativeGiftContext.premiumType, planInterval) });
+  obj1.trailing = callback(planInterval(4127).Text, { variant: "text-md/semibold", children: setPlanInterval(9647)(nativeGiftContext.premiumType, planInterval) });
   obj1.onPress = function onPress() {
     setPlanInterval(planInterval);
   };
@@ -109,9 +109,9 @@ const result = require("GuildFeatures").fileFinishedImporting("modules/premium/n
 
 export default function PremiumGiftDuration() {
   const tmp = callback3();
-  let obj = planInterval(8848);
+  let obj = planInterval(8736);
   planInterval = obj.useNativeGiftContext().planInterval;
-  const tmp2 = importDefault(5450)(importDefault(8849).useConfig({ location: "PremiumGiftDuration" }).monthlyDefaultSelected);
+  const tmp2 = importDefault(5450)(importDefault(8737).useConfig({ location: "PremiumGiftDuration" }).monthlyDefaultSelected);
   importDefault = tmp2;
   let items = [tmp2];
   const memo = React.useMemo(() => {
@@ -128,7 +128,7 @@ export default function PremiumGiftDuration() {
   obj = { style: tmp.durationTitle, variant: "text-sm/semibold" };
   const intl = planInterval(1212).intl;
   obj.children = intl.string(planInterval(1212).t["8XT6Nf"]);
-  const items1 = [callback(planInterval(4126).Text, obj), memo.map((planInterval) => outer1_7(outer1_12, { selected: planInterval === planInterval, planInterval }, arg1))];
+  const items1 = [callback(planInterval(4127).Text, obj), memo.map((planInterval) => outer1_7(outer1_12, { selected: planInterval === planInterval, planInterval }, arg1))];
   obj.children = items1;
   return callback2(View, obj);
 };

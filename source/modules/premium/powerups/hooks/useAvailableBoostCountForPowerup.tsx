@@ -1,10 +1,10 @@
-// Module ID: 11597
-// Function ID: 90240
+// Module ID: 11563
+// Function ID: 89957
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [31, 1838, 4017, 4018, 566, 4037, 1327, 2]
+// Dependencies: [31, 1838, 4018, 4019, 566, 4038, 1327, 2]
 // Exports: default
 
-// Module 11597 (useAvailableBoostCountForPowerup)
+// Module 11563 (useAvailableBoostCountForPowerup)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

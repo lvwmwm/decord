@@ -1,7 +1,7 @@
 // Module ID: 5622
-// Function ID: 47999
+// Function ID: 48004
 // Name: SubscriptionPlans
-// Dependencies: [1851, 1553, 2]
+// Dependencies: [1852, 1553, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
 // Module 5622 (SubscriptionPlans)

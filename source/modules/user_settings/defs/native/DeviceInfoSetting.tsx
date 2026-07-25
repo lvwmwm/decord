@@ -1,8 +1,8 @@
-// Module ID: 14438
-// Function ID: 110346
-// Dependencies: [14437, 4110, 10127, 1212, 14439, 3803, 2]
+// Module ID: 14449
+// Function ID: 110473
+// Dependencies: [14448, 4111, 10059, 1212, 14450, 3804, 2]
 
-// Module 14438
+// Module 14449
 import createToggle from "createToggle";
 
 let obj = {
@@ -13,11 +13,11 @@ let obj = {
   parent: null,
   IconComponent: require("MobilePhoneSettingsIcon").MobilePhoneSettingsIcon,
   useTrailing: function useDeviceInfo() {
-    const obj = require(14437) /* getClientInfoString */;
-    const clientInfoString = obj.getClientInfoString(require(4110) /* getSystemVersion */.getDeviceInfo());
-    const obj2 = require(4110) /* getSystemVersion */;
-    const obj3 = require(14437) /* getClientInfoString */;
-    return "" + clientInfoString + " (" + obj3.getClientInfoString(require(4110) /* getSystemVersion */.getSystemVersion()) + ")";
+    const obj = require(14448) /* getClientInfoString */;
+    const clientInfoString = obj.getClientInfoString(require(4111) /* getSystemVersion */.getDeviceInfo());
+    const obj2 = require(4111) /* getSystemVersion */;
+    const obj3 = require(14448) /* getClientInfoString */;
+    return "" + clientInfoString + " (" + obj3.getClientInfoString(require(4111) /* getSystemVersion */.getSystemVersion()) + ")";
   },
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting
 };
@@ -29,11 +29,11 @@ const createStaticResult = createToggle.createStatic({
   parent: null,
   IconComponent: require("MobilePhoneSettingsIcon").MobilePhoneSettingsIcon,
   useTrailing: function useDeviceInfo() {
-    const obj = require(14437) /* getClientInfoString */;
-    const clientInfoString = obj.getClientInfoString(require(4110) /* getSystemVersion */.getDeviceInfo());
-    const obj2 = require(4110) /* getSystemVersion */;
-    const obj3 = require(14437) /* getClientInfoString */;
-    return "" + clientInfoString + " (" + obj3.getClientInfoString(require(4110) /* getSystemVersion */.getSystemVersion()) + ")";
+    const obj = require(14448) /* getClientInfoString */;
+    const clientInfoString = obj.getClientInfoString(require(4111) /* getSystemVersion */.getDeviceInfo());
+    const obj2 = require(4111) /* getSystemVersion */;
+    const obj3 = require(14448) /* getClientInfoString */;
+    return "" + clientInfoString + " (" + obj3.getClientInfoString(require(4111) /* getSystemVersion */.getSystemVersion()) + ")";
   },
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting
 });

@@ -1,10 +1,10 @@
-// Module ID: 9013
-// Function ID: 70991
+// Module ID: 8901
+// Function ID: 70470
 // Name: PlayStationLinkLanding
-// Dependencies: [31, 9012, 653, 33, 4130, 1212, 4658, 8979, 1456, 1920, 9014, 8981, 2]
+// Dependencies: [31, 8900, 653, 33, 4131, 1212, 4659, 8867, 1456, 1921, 8902, 8869, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 9013 (PlayStationLinkLanding)
+// Module 8901 (PlayStationLinkLanding)
 import result from "result";
 import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
 import { HelpdeskArticles } from "ME";
@@ -19,9 +19,9 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
   let obj = navigation(1456);
   navigation = obj.useNavigation();
   const tmp = callback();
-  const articleURL = importDefault(1920).getArticleURL(HelpdeskArticles.PS_CONNECTION);
+  const articleURL = importDefault(1921).getArticleURL(HelpdeskArticles.PS_CONNECTION);
   let intl = navigation(1212).intl;
-  const obj2 = importDefault(1920);
+  const obj2 = importDefault(1921);
   let items = [navigation];
   const memo = React.useMemo(() => {
     let obj = {};
@@ -50,5 +50,5 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
   obj.body = intl.format(navigation(1212).t.kqZQNe, { helpdeskArticleUrl: articleURL });
   obj.onNext = callback;
   obj.valueProps = memo;
-  return jsx(navigation(8981).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image });
+  return jsx(navigation(8869).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image });
 };

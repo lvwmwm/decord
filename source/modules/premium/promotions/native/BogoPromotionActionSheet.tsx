@@ -1,10 +1,10 @@
-// Module ID: 15660
-// Function ID: 120745
+// Module ID: 15671
+// Function ID: 120913
 // Name: BogoPromotionActionSheet
-// Dependencies: [31, 27, 1851, 653, 1345, 33, 4130, 689, 5462, 6661, 5187, 5085, 4126, 1212, 1920, 8605, 2]
+// Dependencies: [31, 27, 1852, 653, 1345, 33, 4131, 689, 5462, 6162, 5187, 5085, 4127, 1212, 1921, 8365, 2]
 // Exports: default
 
-// Module 15660 (BogoPromotionActionSheet)
+// Module 15671 (BogoPromotionActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -60,22 +60,22 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   obj1.style = items4;
   const intl = markAsDismissed(1212).intl;
   obj1.children = intl.string(markAsDismissed(1212).t["6Jjfk8"]);
-  items3[1] = callback(markAsDismissed(4126).Text, obj1);
+  items3[1] = callback(markAsDismissed(4127).Text, obj1);
   const obj2 = { style: null, color: "text-subtle", variant: "text-md/medium" };
   const items5 = [tmp.subheader];
   obj2.style = items5;
   const intl2 = markAsDismissed(1212).intl;
-  const obj3 = { helpCenterLink: analyticsLocations(1920).getArticleURL(SUMMER_BOGO_2025.SUMMER_BOGO_2025) };
+  const obj3 = { helpCenterLink: analyticsLocations(1921).getArticleURL(SUMMER_BOGO_2025.SUMMER_BOGO_2025) };
   obj2.children = intl2.format(markAsDismissed(1212).t.y7lJK6, obj3);
-  items3[2] = callback(markAsDismissed(4126).Text, obj2);
+  items3[2] = callback(markAsDismissed(4127).Text, obj2);
   const obj4 = { style: items6 };
   items6 = [tmp.buttonContainer];
   const obj5 = {};
-  const obj7 = analyticsLocations(1920);
+  const obj7 = analyticsLocations(1921);
   const intl3 = markAsDismissed(1212).intl;
   obj5.text = intl3.string(markAsDismissed(1212).t.J61px0);
   obj5.onPress = callback;
-  obj4.children = callback(analyticsLocations(8605), obj5);
+  obj4.children = callback(analyticsLocations(8365), obj5);
   items3[3] = callback(View, obj4);
   obj.children = items3;
   obj.children = callback2(View, obj);

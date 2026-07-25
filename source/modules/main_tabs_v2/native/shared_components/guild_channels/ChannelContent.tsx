@@ -1,10 +1,10 @@
-// Module ID: 15401
-// Function ID: 117538
+// Module ID: 15411
+// Function ID: 117666
 // Name: ChannelContentComponent
-// Dependencies: [31, 27, 10289, 4326, 33, 4130, 477, 10290, 4623, 15402, 4652, 7631, 15018, 4126, 2]
+// Dependencies: [31, 27, 10222, 4327, 33, 4131, 477, 10223, 4624, 15412, 4653, 7570, 15028, 4127, 2]
 // Exports: renderChannelContent
 
-// Module 15401 (ChannelContentComponent)
+// Module 15411 (ChannelContentComponent)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
@@ -35,12 +35,12 @@ function ChannelContentComponent(arg0) {
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, muted, connected, needSubscriptionToAccess } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(10290) /* getLayoutStyles */;
+  let obj = require(10223) /* getLayoutStyles */;
   let tmp3 = null != channel;
   const layoutStyles = obj.getLayoutStyles(layout);
   if (tmp3) {
     if (!locked) {
-      locked = importDefault(4623)(channel);
+      locked = importDefault(4624)(channel);
     }
     tmp3 = locked;
   }
@@ -80,7 +80,7 @@ function ChannelContentComponent(arg0) {
   obj5.resolvedUnreadSetting = resolvedUnreadSetting;
   obj5.connected = connected;
   obj5.layout = layout;
-  const items1 = [callback(importDefault(15402), obj5), ];
+  const items1 = [callback(importDefault(15412), obj5), ];
   let tmp22Result = tmp3;
   if (!tmp3) {
     tmp22Result = isNSFWResult;
@@ -101,17 +101,17 @@ function ChannelContentComponent(arg0) {
     obj6.style = items2;
     if (tmp3) {
       const obj8 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      tmp3 = callback(require(4652) /* LockIcon */.LockIcon, obj8);
+      tmp3 = callback(require(4653) /* LockIcon */.LockIcon, obj8);
     }
     const items3 = [tmp3, , ];
     if (isNSFWResult) {
       const obj9 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      isNSFWResult = callback(require(7631) /* WarningIcon */.WarningIcon, obj9);
+      isNSFWResult = callback(require(7570) /* WarningIcon */.WarningIcon, obj9);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj10 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = callback(importDefault(15018), obj10);
+      isSubscriptionGated = callback(importDefault(15028), obj10);
     }
     items3[2] = isSubscriptionGated;
     obj6.children = items3;
@@ -154,7 +154,7 @@ function ChannelContentComponent(arg0) {
     const obj16 = { marginLeft: "auto" };
     obj15.style = obj16;
     obj15.children = lastMessageTimestampString;
-    tmp38 = callback(require(4126) /* Text */.Text, obj15);
+    tmp38 = callback(require(4127) /* Text */.Text, obj15);
   }
   const items7 = [tmp38, , ];
   const obj17 = {};

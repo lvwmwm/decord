@@ -1,10 +1,10 @@
-// Module ID: 7419
-// Function ID: 59647
+// Module ID: 6500
+// Function ID: 58102
 // Name: getBillingInformationStringNative
-// Dependencies: [5, 653, 3776, 478, 1212, 7203, 2]
+// Dependencies: [5, 653, 3777, 478, 1212, 6275, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 7419 (getBillingInformationStringNative)
+// Module 6500 (getBillingInformationStringNative)
 import serializePurchaseResponse from "serializePurchaseResponse";
 import { SubscriptionStatusTypes } from "ME";
 
@@ -20,7 +20,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
     flag = false;
   }
   let _require;
-  let obj = _require(3776);
+  let obj = _require(3777);
   let billingInformationString = obj.getBillingInformationString(subscription, first, tmp, flag, fractionalPremiumInfo);
   let tmp3 = _require(478).isIOS() && subscription.isPurchasedViaApple;
   if (tmp3) {

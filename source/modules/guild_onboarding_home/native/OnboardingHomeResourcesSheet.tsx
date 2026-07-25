@@ -1,10 +1,10 @@
-// Module ID: 15334
-// Function ID: 116895
+// Module ID: 15344
+// Function ID: 117023
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [31, 15332, 33, 3834, 689, 15333, 11412, 4098, 5498, 5500, 1392, 5085, 2]
+// Dependencies: [31, 15342, 33, 3835, 689, 15343, 11375, 4099, 5498, 5500, 1392, 5085, 2]
 // Exports: default
 
-// Module 15334 (OnboardingHomeResourcesSheet)
+// Module 15344 (OnboardingHomeResourcesSheet)
 import "result";
 import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_3 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
 import { jsx } from "jsxProd";
@@ -14,12 +14,12 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_onboardin
 
 export default function OnboardingHomeResourcesSheet(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(3834);
+  let obj = guildId(3835);
   importDefault = obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_ICON_SIZE);
   obj = {};
   obj = {
     hasIcons: true,
-    children: importDefault(15333)(guildId).map((label) => {
+    children: importDefault(15343)(guildId).map((label) => {
       let closure_0 = label;
       let obj = callback(outer1_2[10]);
       const resourceChannelIconURL = obj.getResourceChannelIconURL(label);
@@ -49,7 +49,7 @@ export default function OnboardingHomeResourcesSheet(guildId) {
   };
   obj.children = jsx(guildId(5500).ActionSheetRow.Group, {
     hasIcons: true,
-    children: importDefault(15333)(guildId).map((label) => {
+    children: importDefault(15343)(guildId).map((label) => {
       let closure_0 = label;
       let obj = callback(outer1_2[10]);
       const resourceChannelIconURL = obj.getResourceChannelIconURL(label);
@@ -79,7 +79,7 @@ export default function OnboardingHomeResourcesSheet(guildId) {
   });
   return jsx(guildId(5498).ActionSheet, {
     hasIcons: true,
-    children: importDefault(15333)(guildId).map((label) => {
+    children: importDefault(15343)(guildId).map((label) => {
       let closure_0 = label;
       let obj = callback(outer1_2[10]);
       const resourceChannelIconURL = obj.getResourceChannelIconURL(label);

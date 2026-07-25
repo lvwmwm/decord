@@ -1,16 +1,16 @@
-// Module ID: 4999
-// Function ID: 43255
+// Module ID: 5000
+// Function ID: 43267
 // Name: importDefaultResult2
-// Dependencies: [7, 6, 5000, 5001, 2]
+// Dependencies: [7, 6, 5001, 5002, 2]
 
-// Module 4999 (importDefaultResult2)
+// Module 5000 (importDefaultResult2)
 import "_defineProperties";
 import "_classCallCheck";
 import importDefaultResult2 from "LazyPromiseInitializer";
 
 const require = arg1;
 importDefaultResult2 = new importDefaultResult2(function loadEmoji(arg0) {
-  const tmp = require(5001) /* emojiTermsImporter */.emojiTermsImporter[arg0];
+  const tmp = require(5002) /* emojiTermsImporter */.emojiTermsImporter[arg0];
   if (undefined !== tmp) {
     let nextPromise = tmp().then((arg0) => arg0.default);
     const tmpResult = tmp();

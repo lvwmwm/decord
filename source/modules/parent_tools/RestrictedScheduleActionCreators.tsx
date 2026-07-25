@@ -1,10 +1,10 @@
-// Module ID: 13890
-// Function ID: 106305
+// Module ID: 13901
+// Function ID: 106432
 // Name: _addRestrictedScheduleRule
 // Dependencies: [5, 653, 507, 686, 2]
 // Exports: addRestrictedScheduleRule, deleteRestrictedScheduleRule, updateRestrictedScheduleRule
 
-// Module 13890 (_addRestrictedScheduleRule)
+// Module 13901 (_addRestrictedScheduleRule)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

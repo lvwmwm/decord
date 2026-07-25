@@ -1,10 +1,10 @@
-// Module ID: 1882
-// Function ID: 20966
+// Module ID: 1883
+// Function ID: 20977
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1883, 1898, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1884, 1899, 566, 686, 2]
 
-// Module 1882 (_isNativeReflectConstruct)
-import module_1883 from "module_1883";
+// Module 1883 (_isNativeReflectConstruct)
+import module_1884 from "module_1884";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
@@ -36,9 +36,9 @@ function makeDao(arg0) {
     return tmp5;
   };
 }
-let items = [require("module_1883").TableId.KvCache, "guild_basic_channels"];
+let items = [require("module_1884").TableId.KvCache, "guild_basic_channels"];
 let items1 = [items, ];
-const items2 = [require("module_1883").TableId.KvCache, "basic_channels_stale"];
+const items2 = [require("module_1884").TableId.KvCache, "basic_channels_stale"];
 items1[1] = items2;
 let tmp2 = ((Store) => {
   class DatabaseDaos {

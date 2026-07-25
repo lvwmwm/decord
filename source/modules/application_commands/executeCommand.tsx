@@ -1,10 +1,10 @@
-// Module ID: 8228
-// Function ID: 64816
+// Module ID: 7957
+// Function ID: 63308
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 4991, 1921, 1838, 4467, 1849, 7021, 653, 4123, 6755, 686, 7006, 6753, 1881, 8229, 8231, 44, 8232, 4324, 7019, 8025, 3771, 1327, 6995, 7890, 7075, 7889, 8233, 7976, 6994, 6691, 4670, 1212, 4666, 7082, 2]
+// Dependencies: [5, 4992, 1922, 1838, 4468, 1850, 6039, 653, 4124, 5676, 686, 6024, 5674, 1882, 7958, 7960, 44, 7961, 4325, 6037, 6134, 3772, 1327, 5987, 7837, 6093, 7836, 7962, 5656, 5986, 5685, 4671, 1212, 4667, 6100, 2]
 // Exports: default, retryCommandMessage
 
-// Module 8228 (_createForOfIteratorHelperLoose)
+// Module 7957 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -1422,8 +1422,8 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj = { applicationId, channelId: id, guildId: id, data: tmp };
     let nonce = interactionLifecycleOptions.nonce;
     if (null == nonce) {
-      nonce = onMessageSuccess(6995).createNonce();
-      const obj2 = onMessageSuccess(6995);
+      nonce = onMessageSuccess(5987).createNonce();
+      const obj2 = onMessageSuccess(5987);
     }
     obj.nonce = nonce;
     obj.attachments = attachments;
@@ -1433,9 +1433,9 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj.source = tmp4;
     obj = {};
     ({ messageId: obj4.messageId, onCreate: obj4.onCreate, onSuccess: obj4.onSuccess, onFailure: obj4.onFailure } = interactionLifecycleOptions);
-    obj = { interactionType: onMessageSuccess(1881).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
+    obj = { interactionType: onMessageSuccess(1882).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     obj.data = obj;
-    importAll(7890).addQueued(obj.nonce, obj);
+    importAll(7837).addQueued(obj.nonce, obj);
     if (null != attachments) {
       if (attachments.length > 0) {
         (function stageAttachments(attachments, nonce, id, maxSizeCallback) {
@@ -1451,14 +1451,14 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
       }
     }
     queueCommand(obj, onMessageSuccess);
-    const obj3 = importAll(7890);
+    const obj3 = importAll(7837);
   }
 }
 function queueCommand(message, onMessageSuccess) {
   const _require = message;
   const importDefault = onMessageSuccess;
-  let obj = importDefault(7075);
-  obj = { type: _require(7075).MessageDataType.COMMAND, message };
+  let obj = importDefault(6093);
+  obj = { type: _require(6093).MessageDataType.COMMAND, message };
   obj.enqueue(obj, (ok) => {
     let applicationId;
     let channelId;
@@ -1603,26 +1603,26 @@ async function _displayInteractionLifecycleInChat(arg0, arg1, arg2, arg3) {
   }
 }
 function getAnalyticsLocationFromCommandOrigin(arg0) {
-  if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.APP_LAUNCHER;
-  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
-  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.IMAGE_RECS_MENU === arg0) {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
-  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
-  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
-  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
-  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.MINI_SHELF === arg0) {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
-  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
-  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
+  if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.APP_LAUNCHER;
+  } else if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
+  } else if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.IMAGE_RECS_MENU === arg0) {
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
+  } else if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
+  } else if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
+  } else if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
+  } else if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.MINI_SHELF === arg0) {
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
+  } else if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
+  } else if (require(5676) /* ApplicationCommandSectionType */.CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
   } else {
-    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.SLASH_UI;
+    return require(5676) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.SLASH_UI;
   }
 }
 function getMaxAndTotalFileSize() {

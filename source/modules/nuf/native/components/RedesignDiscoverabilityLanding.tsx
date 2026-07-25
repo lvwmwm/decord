@@ -1,10 +1,10 @@
-// Module ID: 16181
-// Function ID: 125396
+// Module ID: 16192
+// Function ID: 125564
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [31, 27, 33, 4130, 689, 1557, 5084, 4126, 1212, 5085, 11812, 11736, 4543, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1557, 5084, 4127, 1212, 5085, 11788, 11706, 4544, 2]
 // Exports: default
 
-// Module 16181 (RedesignDiscoverabilityLanding)
+// Module 16192 (RedesignDiscoverabilityLanding)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,12 +43,12 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t.n8nw6j);
-  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  items[1] = callback(require(4127) /* Text */.Text, obj1);
   const obj2 = { variant: "text-sm/medium", color: "text-default", style: tmp.subtitle };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.KMW0kP);
-  items[2] = callback(require(4126) /* Text */.Text, obj2);
-  const obj3 = { resizeMode: "contain", style: tmp.image, source: importDefault(11812) };
+  items[2] = callback(require(4127) /* Text */.Text, obj2);
+  const obj3 = { resizeMode: "contain", style: tmp.image, source: importDefault(11788) };
   items[3] = callback(importDefault(5085), obj3);
   const obj4 = { style: tmp.info, variant: "text-sm/medium", color: "text-default" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
@@ -61,13 +61,13 @@ export default function RedesignDiscoverabilityLanding(onNext) {
     }
   });
   obj4.children = items1;
-  items[4] = callback2(require(4126) /* Text */.Text, obj4);
+  items[4] = callback2(require(4127) /* Text */.Text, obj4);
   items[5] = callback(closure_3, { style: tmp.growContainer });
   const obj7 = { variant: "primary", size: "lg" };
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj7.text = intl5.string(require(1212) /* getSystemLocale */.t.gHPk3I);
   obj7.onPress = onNext.onNext;
-  items[6] = callback(require(4543) /* Button */.Button, obj7);
+  items[6] = callback(require(4544) /* Button */.Button, obj7);
   obj.children = items;
   return callback2(closure_4, obj);
 };

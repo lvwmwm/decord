@@ -1,10 +1,10 @@
-// Module ID: 12935
-// Function ID: 100368
+// Module ID: 12946
+// Function ID: 100495
 // Name: useActivateDeviceStepTracking
-// Dependencies: [31, 653, 8328, 12936, 675, 2]
+// Dependencies: [31, 653, 8063, 12947, 675, 2]
 // Exports: useActivateDeviceStepTracking
 
-// Module 12935 (useActivateDeviceStepTracking)
+// Module 12946 (useActivateDeviceStepTracking)
 import result from "result";
 import { AnalyticEvents } from "ME";
 
@@ -13,7 +13,7 @@ let result = require("usePrevious").fileFinishedImporting("modules/activate_devi
 
 export const useActivateDeviceStepTracking = function useActivateDeviceStepTracking(first) {
   let closure_0 = first;
-  const tmp = importDefault(8328)(first);
+  const tmp = importDefault(8063)(first);
   importDefault = tmp;
   const items = [tmp, first];
   const effect = React.useEffect(() => {

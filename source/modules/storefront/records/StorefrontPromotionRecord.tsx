@@ -1,9 +1,9 @@
-// Module ID: 8728
-// Function ID: 69035
+// Module ID: 8616
+// Function ID: 68510
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 1858, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1859, 2]
 
-// Module 8728 (_isNativeReflectConstruct)
+// Module 8616 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import Record from "Record";
 import set from "set";
@@ -56,6 +56,67 @@ function parseSkuIds(arg0) {
     }
     return obj;
   }
+}
+function parseTenantMetadata(collectibles) {
+  const obj = {};
+  let tmp;
+  if (null != collectibles.collectibles) {
+    tmp = parseCollectiblesTenantMetadata(collectibles.collectibles);
+  }
+  obj.collectibles = tmp;
+  return obj;
+}
+function parseCollectiblesTenantMetadata(collectibles) {
+  let obj = {};
+  const reward = collectibles.reward;
+  let nagbar;
+  if (null != reward) {
+    const storefront = reward.storefront;
+    if (null != storefront) {
+      nagbar = storefront.nagbar;
+    }
+  }
+  let tmp2;
+  if (null != nagbar) {
+    obj = {};
+    obj = {};
+    const obj1 = {};
+    const header_text = collectibles.reward.storefront.nagbar.header_text;
+    let tmp3;
+    if (null != header_text) {
+      tmp3 = header_text;
+    }
+    obj1.headerText = tmp3;
+    const body_text = collectibles.reward.storefront.nagbar.body_text;
+    let tmp4;
+    if (null != body_text) {
+      tmp4 = body_text;
+    }
+    obj1.bodyText = tmp4;
+    let tmp5;
+    if (null != collectibles.reward.storefront.nagbar.cta) {
+      const obj2 = {};
+      const text = collectibles.reward.storefront.nagbar.cta.text;
+      let tmp6;
+      if (null != text) {
+        tmp6 = text;
+      }
+      obj2.text = tmp6;
+      tmp5 = obj2;
+    }
+    obj1.cta = tmp5;
+    const help_center_id = collectibles.reward.storefront.nagbar.help_center_id;
+    let tmp7;
+    if (null != help_center_id) {
+      tmp7 = help_center_id;
+    }
+    obj1.helpCenterId = tmp7;
+    obj.nagbar = obj1;
+    obj.storefront = obj;
+    tmp2 = obj;
+  }
+  obj.reward = tmp2;
+  return obj;
 }
 let result = require("_defineProperties").fileFinishedImporting("modules/storefront/records/StorefrontPromotionRecord.tsx");
 

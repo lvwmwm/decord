@@ -1,9 +1,9 @@
-// Module ID: 3849
-// Function ID: 32054
+// Module ID: 3850
+// Function ID: 32065
 // Name: context
 // Dependencies: [31, 2]
 
-// Module 3849 (context)
+// Module 3850 (context)
 import importAllResult from "result";
 
 const obj = { reducedMotion: { enabled: false, rawValue: "no-preference" }, prefersCrossfades: false, forcedColors: { enabled: false, rawValue: "none" }, alwaysShowLinkDecorations: false, highContrastModeEnabled: false, keyboardModeEnabled: true, switchIconsEnabled: false };

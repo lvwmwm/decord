@@ -1,10 +1,10 @@
-// Module ID: 4365
-// Function ID: 38703
+// Module ID: 4366
+// Function ID: 38714
 // Name: isMentioned
-// Dependencies: [1348, 1917, 1838, 2]
+// Dependencies: [1348, 1918, 1838, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 4365 (isMentioned)
+// Module 4366 (isMentioned)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

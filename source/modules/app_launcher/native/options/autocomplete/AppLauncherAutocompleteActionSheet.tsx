@@ -1,10 +1,10 @@
-// Module ID: 11323
-// Function ID: 88110
+// Module ID: 11285
+// Function ID: 87766
 // Name: Item
-// Dependencies: [57, 31, 27, 7020, 1838, 653, 4566, 33, 22, 8228, 4130, 689, 624, 4098, 11318, 11319, 1212, 44, 5165, 4329, 4126, 1273, 11320, 2]
+// Dependencies: [57, 31, 27, 6038, 1838, 653, 4567, 33, 22, 7957, 4131, 689, 624, 4099, 11280, 11281, 1212, 44, 5164, 4330, 4127, 1273, 11282, 2]
 // Exports: default
 
-// Module 11323 (Item)
+// Module 11285 (Item)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -43,9 +43,9 @@ function Item(arg0) {
   _slicedToArray = callback2();
   React = React.useMemo(() => 100 * Math.random() + 50, []);
   const tmp = importDefault(44);
-  const match = require(4329) /* n */.match(item);
+  const match = require(4330) /* n */.match(item);
   let obj = { type: AutoCompleteResultTypes.CHOICE };
-  const str = require(4329) /* n */;
+  const str = require(4330) /* n */;
   obj = { type: AutoCompleteResultTypes.LABEL };
   const withResult = match.with(obj, (choice) => {
     let closure_0 = choice;
@@ -134,7 +134,7 @@ function Item(arg0) {
   }).exhaustive();
 }
 function AutocompleteFailedEmptyState() {
-  const obj = { style: callback2().emptyState, lightSource: importDefault(11320), darkSource: importDefault(11320) };
+  const obj = { style: callback2().emptyState, lightSource: importDefault(11282), darkSource: importDefault(11282) };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.rTAbPn);
   return callback(require(1273) /* Button */.EmptyState, obj);

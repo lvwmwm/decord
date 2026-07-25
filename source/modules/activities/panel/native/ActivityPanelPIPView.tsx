@@ -1,13 +1,13 @@
-// Module ID: 15746
-// Function ID: 121379
+// Module ID: 15757
+// Function ID: 121548
 // Name: useBaseActivityPanelPIPView
-// Dependencies: [31, 27, 4122, 10649, 1348, 1347, 4155, 10256, 15747, 653, 10048, 33, 1273, 4130, 689, 1557, 566, 1450, 15742, 10051, 3991, 15748, 4476, 4131, 4542, 15749, 15750, 1212, 3842, 5217, 3748, 15744, 10630, 2]
+// Dependencies: [31, 27, 4123, 10613, 1348, 1347, 4156, 5660, 15758, 653, 9977, 33, 1273, 4131, 689, 1557, 566, 1450, 15753, 9980, 3992, 15759, 4477, 4132, 4543, 15760, 15761, 1212, 3843, 5217, 3749, 15755, 10594, 2]
 
-// Module 15746 (useBaseActivityPanelPIPView)
+// Module 15757 (useBaseActivityPanelPIPView)
 import importAllResult from "useActivityWebViewLock";
 import { View } from "getSystemLocale";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_10649 from "module_10649";
+import module_10613 from "module_10613";
 import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_createForOfIteratorHelperLoose";
 import { ActivityLayoutMode } from "items3";
@@ -77,7 +77,7 @@ class BaseActivityPanelPIPView {
     }, items1);
     tmp8 = setMode((shouldDisableSafeAreas) => shouldDisableSafeAreas.shouldDisableSafeAreas());
     ACTIVITY_PIP_SIZE = tmp8;
-    obj3 = require("module_3991");
+    obj3 = require("module_3992");
     class J {
       constructor() {
         point = pipState.get();
@@ -189,7 +189,7 @@ class BaseActivityPanelPIPView {
         return;
       }
     }
-    obj = { pipState, getClampedPIPPosition: require("clamp").getClampedPIPPosition, ACTIVITY_PIP_SIZE, windowDimensions: tmp3, safeArea: tmp4, pipAvoidanceSpecs, wrapperOffset, disableHorizontalSafeAreas: tmp8, shown, reduceMotion: stateFromStores, PIP_WINDOW_OFFSET, transitionState, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3991").runOnJS, transitionCleanUp, withTiming: require("withTiming").withTiming, REDUCED_MOTION_TIMING: jsx, withSpring: require("withSpring").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: height, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: ActivityPanelModes };
+    obj = { pipState, getClampedPIPPosition: require("clamp").getClampedPIPPosition, ACTIVITY_PIP_SIZE, windowDimensions: tmp3, safeArea: tmp4, pipAvoidanceSpecs, wrapperOffset, disableHorizontalSafeAreas: tmp8, shown, reduceMotion: stateFromStores, PIP_WINDOW_OFFSET, transitionState, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3992").runOnJS, transitionCleanUp, withTiming: require("withTiming").withTiming, REDUCED_MOTION_TIMING: jsx, withSpring: require("withSpring").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: height, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: ActivityPanelModes };
     J.__closure = obj;
     J.__workletHash = 14326479117867;
     J.__initData = c21;
@@ -203,14 +203,14 @@ class BaseActivityPanelPIPView {
     items2[1] = height;
     class W {
       constructor() {
-        obj = require("module_3991");
+        obj = require("module_3992");
         tmp = obj.runOnJS(setMode)(width.PANEL);
         return;
       }
     }
     obj2 = {};
     memo = defineProperty.useMemo(() => ({ width, height, pointerEvents: "none" }), items2);
-    obj2.runOnJS = require("module_3991").runOnJS;
+    obj2.runOnJS = require("module_3992").runOnJS;
     obj2.setMode = setMode;
     obj2.ActivityPanelModes = width;
     W.__closure = obj2;
@@ -268,7 +268,7 @@ class BaseActivityPanelPIPView {
     obj7.children = tmp22;
     obj6.children = tmp19(tmp20, obj7);
     obj5["children"] = tmp18(require("Directions").GestureDetector, obj6);
-    obj4.children = tmp16(require("module_3991").View, obj5);
+    obj4.children = tmp16(require("module_3992").View, obj5);
     return tmp15(require("ManaContext").ThemeContextProvider, obj4);
   }
 }

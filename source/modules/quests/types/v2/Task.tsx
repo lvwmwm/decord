@@ -1,10 +1,10 @@
-// Module ID: 6950
-// Function ID: 55562
+// Module ID: 5941
+// Function ID: 52868
 // Name: _firstPartyTasksFromServer
-// Dependencies: [6951, 4983, 6952, 6953, 2]
+// Dependencies: [5942, 4984, 5943, 5944, 2]
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer
 
-// Module 6950 (_firstPartyTasksFromServer)
+// Module 5941 (_firstPartyTasksFromServer)
 function _firstPartyTasksFromServer(tasks) {
   let obj = {};
   const keys = Object.keys(tasks);
@@ -35,45 +35,45 @@ function _thirdPartyTasksFromServer(tasks) {
 }
 function _questTaskFromServer(type) {
   type = type.type;
-  if (require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO === type) {
-    let obj = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO, target: type.target, assets: require(6952) /* videoAssetFromServer */.desktopVideoAssetsFromServer(type.assets) };
-    const obj14 = require(6952) /* videoAssetFromServer */;
-    obj.messages = require(6952) /* videoAssetFromServer */.desktopVideoMessagesFromServer(type.messages);
+  if (require(4984) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO === type) {
+    let obj = { type: require(4984) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO, target: type.target, assets: require(5943) /* videoAssetFromServer */.desktopVideoAssetsFromServer(type.assets) };
+    const obj14 = require(5943) /* videoAssetFromServer */;
+    obj.messages = require(5943) /* videoAssetFromServer */.desktopVideoMessagesFromServer(type.messages);
     return obj;
-  } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE === type) {
-    obj = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE, target: type.target, assets: require(6952) /* videoAssetFromServer */.mobileVideoAssetsFromServer(type.assets) };
-    const obj11 = require(6952) /* videoAssetFromServer */;
-    obj.messages = require(6952) /* videoAssetFromServer */.mobileVideoMessagesFromServer(type.messages);
+  } else if (require(4984) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE === type) {
+    obj = { type: require(4984) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE, target: type.target, assets: require(5943) /* videoAssetFromServer */.mobileVideoAssetsFromServer(type.assets) };
+    const obj11 = require(5943) /* videoAssetFromServer */;
+    obj.messages = require(5943) /* videoAssetFromServer */.mobileVideoMessagesFromServer(type.messages);
     return obj;
-  } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP === type) {
-    const obj1 = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
+  } else if (require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP === type) {
+    const obj1 = { type: require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
     ({ target: obj9.target, applications: obj9.applications } = type);
     return obj1;
-  } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP === type) {
-    const obj2 = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+  } else if (require(4984) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP === type) {
+    const obj2 = { type: require(4984) /* set */.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
     ({ target: obj8.target, applications: obj8.applications } = type);
     return obj2;
-  } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY === type) {
-    const obj3 = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY };
+  } else if (require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY === type) {
+    const obj3 = { type: require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ACTIVITY };
     ({ target: obj7.target, applications: obj7.applications } = type);
     return obj3;
-  } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_XBOX === type) {
-    const obj4 = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_XBOX };
+  } else if (require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_XBOX === type) {
+    const obj4 = { type: require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_XBOX };
     ({ target: obj6.target, external_ids: obj6.externalIds, applications: obj6.applications } = type);
     return obj4;
-  } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION === type) {
-    const obj5 = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION };
+  } else if (require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION === type) {
+    const obj5 = { type: require(4984) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION };
     ({ target: obj5.target, external_ids: obj5.externalIds, applications: obj5.applications } = type);
     return obj5;
-  } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME === type) {
-    const obj6 = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME };
+  } else if (require(4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME === type) {
+    const obj6 = { type: require(4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME };
     ({ target: obj3.target, event_name: obj3.eventName } = type);
     const obj7 = { taskTitle: type.messages.task_title, taskDescription: type.messages.task_description };
     obj6.messages = obj7;
     ({ applications: obj3.applications, account_link_instructions: obj3.accountLinkInstructions } = type);
     return obj6;
-  } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY === type) {
-    obj = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY };
+  } else if (require(4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY === type) {
+    obj = { type: require(4984) /* set */.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY };
     ({ target: obj.target, event_name: obj.eventName } = type);
     const obj8 = { taskTitle: type.messages.task_title, taskDescription: type.messages.task_description };
     obj.messages = obj8;
@@ -87,11 +87,11 @@ const result = require("videoAssetFromServer").fileFinishedImporting("modules/qu
 
 export const questTaskConfigFromServer = function questTaskConfigFromServer(type) {
   type = type.type;
-  if (require(6951) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY === type) {
-    let obj = { type: require(6951) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY, tasks: _firstPartyTasksFromServer(type.tasks), joinOperator: type.join_operator };
+  if (require(5942) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY === type) {
+    let obj = { type: require(5942) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY, tasks: _firstPartyTasksFromServer(type.tasks), joinOperator: type.join_operator };
     return obj;
-  } else if (require(6951) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.THIRD_PARTY === type) {
-    obj = { type: require(6951) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.THIRD_PARTY, tasks: _thirdPartyTasksFromServer(type.tasks) };
+  } else if (require(5942) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.THIRD_PARTY === type) {
+    obj = { type: require(5942) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.THIRD_PARTY, tasks: _thirdPartyTasksFromServer(type.tasks) };
     ({ enrollment_url: obj.enrollmentUrl, developer_application_id: obj.developerApplicationId, join_operator: obj.joinOperator } = type);
     return obj;
   }

@@ -1,9 +1,9 @@
-// Module ID: 10176
-// Function ID: 78681
+// Module ID: 10108
+// Function ID: 78311
 // Name: InappropriateConversationBlockAndReportAlert
-// Dependencies: [31, 33, 10163, 10177, 1212, 2]
+// Dependencies: [31, 33, 10095, 10109, 1212, 2]
 
-// Module 10176 (InappropriateConversationBlockAndReportAlert)
+// Module 10108 (InappropriateConversationBlockAndReportAlert)
 import result from "result";
 import { jsx } from "jsxProd";
 

@@ -1,10 +1,10 @@
-// Module ID: 3990
-// Function ID: 33111
+// Module ID: 3991
+// Function ID: 33122
 // Name: isScreenIndexFrozen
-// Dependencies: [31, 3991, 2]
+// Dependencies: [31, 3992, 2]
 // Exports: freezeScreenIndex, useIsScreenIndexFrozenSharedValue
 
-// Module 3990 (isScreenIndexFrozen)
+// Module 3991 (isScreenIndexFrozen)
 import result from "result";
 import set from "set";
 

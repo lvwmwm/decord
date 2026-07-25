@@ -1,17 +1,17 @@
-// Module ID: 12502
-// Function ID: 96916
+// Module ID: 12483
+// Function ID: 96767
 // Name: getTopPatternSource
-// Dependencies: [31, 27, 33, 7405, 12503, 12504, 12505, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 12484, 12485, 12486, 3977, 2]
 // Exports: TopPattern
 
-// Module 12502 (getTopPatternSource)
+// Module 12483 (getTopPatternSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getTopPatternSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getTopPatternSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useTopPatternSource() {
-  return getTopPatternSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getTopPatternSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/TopPattern.tsx");
 

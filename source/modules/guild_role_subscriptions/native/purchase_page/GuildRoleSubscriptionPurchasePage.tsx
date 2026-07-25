@@ -1,10 +1,10 @@
-// Module ID: 15309
-// Function ID: 116778
+// Module ID: 15319
+// Function ID: 116906
 // Name: Separator
-// Dependencies: [31, 27, 1278, 1348, 1838, 653, 33, 4130, 689, 4126, 1212, 1273, 10710, 14149, 14151, 14152, 624, 15310, 4320, 15312, 15313, 15314, 4593, 5085, 5513, 15315, 9441, 15317, 15318, 3827, 15319, 2]
+// Dependencies: [31, 27, 1278, 1348, 1838, 653, 33, 4131, 689, 4127, 1212, 1273, 10674, 14160, 14162, 14163, 624, 15320, 4321, 15322, 15323, 15324, 4594, 5085, 5513, 15325, 9361, 15327, 15328, 3828, 15329, 2]
 // Exports: default
 
-// Module 15309 (Separator)
+// Module 15319 (Separator)
 import "set";
 import get_ActivityIndicator from "registerAsset";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ function LegalDisclaimer() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { termsURL: constants3.TERMS, paidURL: constants3.PAID_TERMS };
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.FSPTDI, obj);
-  return callback(require(4126) /* Text */.Text, obj);
+  return callback(require(4127) /* Text */.Text, obj);
 }
 function SocialBadge(onPress) {
   let iconSource;
@@ -52,9 +52,9 @@ function SocialBadge(onPress) {
   obj = { source: iconSource, style: tmp.socialBadgeIcon, resizeMode: "contain", disableColor: true };
   const items = [callback(require(1273) /* Button */.Icon, obj), , ];
   obj = { variant: "text-sm/medium", color: "text-default", children: text };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   if (tmp2) {
-    const obj1 = { source: importDefault(10710), style: tmp.socialBadgeArrow };
+    const obj1 = { source: importDefault(10674), style: tmp.socialBadgeArrow };
     tmp2 = callback(require(1273) /* Button */.Icon, obj1);
   }
   items[2] = tmp2;

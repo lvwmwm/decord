@@ -1,10 +1,10 @@
-// Module ID: 10194
-// Function ID: 78759
+// Module ID: 10126
+// Function ID: 78389
 // Name: IconUploader
-// Dependencies: [5, 31, 27, 653, 33, 4130, 4674, 5513, 1392, 10195, 4660, 1212, 2]
+// Dependencies: [5, 31, 27, 653, 33, 4131, 4675, 5513, 1392, 10127, 4661, 1212, 2]
 // Exports: default
 
-// Module 10194 (IconUploader)
+// Module 10126 (IconUploader)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -77,7 +77,7 @@ export default function IconUploader(disabled) {
   const items1 = [tmp7, ];
   let tmp16 = null;
   if (!flag) {
-    const obj2 = { style: tmp.uploadIcon, source: importDefault(10195) };
+    const obj2 = { style: tmp.uploadIcon, source: importDefault(10127) };
     tmp16 = callback(closure_6, obj2);
   }
   items1[1] = tmp16;
@@ -93,7 +93,7 @@ export default function IconUploader(disabled) {
       return _handleChangeIcon(...arguments);
     };
     obj4.children = tmp14Result;
-    obj3.children = callback(require(4660) /* PressableBase */.PressableOpacity, obj4);
+    obj3.children = callback(require(4661) /* PressableBase */.PressableOpacity, obj4);
     tmp22 = callback(closure_5, obj3);
   }
   return tmp22;

@@ -1,9 +1,9 @@
-// Module ID: 13429
-// Function ID: 103116
+// Module ID: 13440
+// Function ID: 103243
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 1188, 11482, 12695, 1194, 13430, 653, 1212, 11481, 686, 10667, 13433, 13434, 1184, 2492, 477, 13435, 675, 4530, 2]
+// Dependencies: [6, 7, 15, 17, 18, 27, 1188, 11445, 12706, 1194, 13441, 653, 1212, 11444, 686, 10631, 13444, 13445, 1184, 2493, 477, 13446, 675, 4531, 2]
 
-// Module 13429 (_isNativeReflectConstruct)
+// Module 13440 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import createNotification from "createNotification";

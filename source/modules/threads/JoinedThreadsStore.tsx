@@ -1,9 +1,9 @@
-// Module ID: 3760
-// Function ID: 28774
+// Module ID: 3761
+// Function ID: 28785
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1352, 1194, 3761, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1352, 1194, 3762, 22, 566, 686, 2]
 
-// Module 3760 (_isNativeReflectConstruct)
+// Module 3761 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import MuteTimers from "MuteTimers";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

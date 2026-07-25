@@ -1,10 +1,10 @@
-// Module ID: 12022
-// Function ID: 92932
+// Module ID: 11998
+// Function ID: 92737
 // Name: UserProfileWidgetReportButton
-// Dependencies: [31, 27, 33, 1212, 9453, 7689, 9338, 9007, 689, 2]
+// Dependencies: [31, 27, 33, 1212, 9373, 7633, 9231, 8895, 689, 2]
 // Exports: default
 
-// Module 12022 (UserProfileWidgetReportButton)
+// Module 11998 (UserProfileWidgetReportButton)
 import "result";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ export default function UserProfileWidgetReportButton(arg0) {
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.D4GvHE);
   obj.variant = "destructive";
-  obj.IconComponent = require(9453) /* FlagIcon */.FlagIcon;
+  obj.IconComponent = require(9373) /* FlagIcon */.FlagIcon;
   obj.action = function action() {
     return outer1_0(outer1_2[5]).showReportModalForWidget(closure_0, closure_1);
   };
@@ -42,7 +42,7 @@ export default function UserProfileWidgetReportButton(arg0) {
       return outer1_4(outer1_3, obj);
     }
   };
-  return jsx(require(9338) /* ContextMenu */.ContextMenu, {
+  return jsx(require(9231) /* ContextMenu */.ContextMenu, {
     items,
     children(ref) {
       let obj = Object.create(null);

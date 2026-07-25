@@ -1,10 +1,10 @@
-// Module ID: 10827
-// Function ID: 84016
+// Module ID: 10799
+// Function ID: 83758
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4143, 4951, 566, 4964, 4957, 22, 4963, 10828, 2]
+// Dependencies: [57, 31, 4144, 4952, 566, 4965, 4958, 22, 4964, 10800, 2]
 // Exports: useStageChannelParticipantsListThrottled, useThrottleDurationForChannel
 
-// Module 10827 (_createForOfIteratorHelperLoose)
+// Module 10799 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -99,7 +99,7 @@ function useStageChannelParticipantsList(id, memo, flag) {
   const stateFromStores = _require(566).useStateFromStores(items, () => {
     const items = [closure_0, outer1_5.getParticipantsVersion(closure_0)];
     return items;
-  }, items1, _require(4964).isVersionEqual);
+  }, items1, _require(4965).isVersionEqual);
   const obj = _require(566);
   let items2 = [stateFromStores1];
   let items3 = [id];
@@ -171,7 +171,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export { useStageChannelParticipantsList };
 export const useThrottleDurationForChannel = function useThrottleDurationForChannel(id) {
-  stageParticipantsCount = stageParticipantsCount(4963).useStageParticipantsCount(id, stageParticipantsCount(4957).StageChannelParticipantNamedIndex.AUDIENCE);
+  stageParticipantsCount = stageParticipantsCount(4964).useStageParticipantsCount(id, stageParticipantsCount(4958).StageChannelParticipantNamedIndex.AUDIENCE);
   const tmp2 = callback(React.useState(false), 2);
   let num = 0;
   const dependencyMap = tmp2[1];
@@ -195,8 +195,8 @@ export const useStageChannelParticipantsListThrottled = function useStageChannel
   const tmp = useStageChannelParticipantsList(id, memo, flag);
   const tmp2 = callback(tmp, 2);
   const first = tmp2[0];
-  const items = [memo[require(undefined, 4957) /* sortKey */.StageChannelParticipantNamedIndex.AUDIENCE]];
-  const tmp5 = callback(require(10828) /* throttleStateFn */.useThrottledState(tmp, throttleDurationForChannel, items), 2);
+  const items = [memo[require(undefined, 4958) /* sortKey */.StageChannelParticipantNamedIndex.AUDIENCE]];
+  const tmp5 = callback(require(10800) /* throttleStateFn */.useThrottledState(tmp, throttleDurationForChannel, items), 2);
   const items1 = [first[flag ? constants.MEDIA : constants.SELECTED], first[constants.SPEAKER], tmp5[0][constants.AUDIENCE]];
   const items2 = [items1, ];
   const items3 = [tmp2[1][flag ? constants.MEDIA : constants.SELECTED], tmp2[1][constants.SPEAKER], tmp5[1][constants.AUDIENCE]];

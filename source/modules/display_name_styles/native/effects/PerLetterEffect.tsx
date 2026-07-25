@@ -1,10 +1,10 @@
-// Module ID: 8565
-// Function ID: 68181
+// Module ID: 8325
+// Function ID: 66835
 // Name: PerLetterEffect
-// Dependencies: [31, 27, 33, 4130, 8566, 8567, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 8326, 8327, 4127, 2]
 // Exports: default
 
-// Module 8565 (PerLetterEffect)
+// Module 8325 (PerLetterEffect)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -65,6 +65,6 @@ export default function PerLetterEffect(name) {
   const items1 = [name.textStyle, { lineHeight: undefined }];
   obj["style"] = items1;
   obj["children"] = memo;
-  obj.children = jsx(name(4126).Text, {});
+  obj.children = jsx(name(4127).Text, {});
   return <closure_4 />;
 };

@@ -1,10 +1,10 @@
-// Module ID: 1874
-// Function ID: 20878
+// Module ID: 1875
+// Function ID: 20889
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 102, 18, 1875, 1876, 2]
+// Dependencies: [6, 7, 15, 17, 102, 18, 1876, 1877, 2]
 // Exports: isNameplateRecord
 
-// Module 1874 (_isNativeReflectConstruct)
+// Module 1875 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import CollectiblesItemType from "CollectiblesItemType";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

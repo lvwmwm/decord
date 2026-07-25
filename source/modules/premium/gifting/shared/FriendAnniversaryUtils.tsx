@@ -1,10 +1,10 @@
-// Module ID: 7848
-// Function ID: 61951
+// Module ID: 7795
+// Function ID: 61923
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [3355, 2]
+// Dependencies: [3356, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 7848 (_createForOfIteratorHelperLoose)
+// Module 7795 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;
@@ -94,14 +94,14 @@ export const isFriendAnniversary = function isFriendAnniversary(date) {
     while (true) {
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      let obj = require(3355);
+      let obj = require(3356);
       let setYearResult = obj.setYear(date, tmp2 + items[num]);
-      let obj2 = require(3355);
+      let obj2 = require(3356);
       if (!obj2.isSameDay(setYearResult, date)) {
         let _Math = Math;
         let tmp6 = require;
         let tmp7 = dependencyMap;
-        let obj3 = require(3355);
+        let obj3 = require(3356);
         if (Math.abs(obj3.differenceInDays(date, setYearResult)) <= 7) {
           break;
         }
@@ -113,7 +113,7 @@ export const isFriendAnniversary = function isFriendAnniversary(date) {
   return false;
 };
 export const yearsSince = function yearsSince(friendsSince) {
-  const obj = require(3355);
+  const obj = require(3356);
   return Math.round(obj.differenceInMonths(new Date(), friendsSince) / 12);
 };
 export const categorizeFriendAnniversariesByAffinity = function categorizeFriendAnniversariesByAffinity(closure_16, arg1, flag) {

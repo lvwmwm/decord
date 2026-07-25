@@ -1,10 +1,10 @@
-// Module ID: 10287
-// Function ID: 79470
+// Module ID: 10220
+// Function ID: 79123
 // Name: getRules
-// Dependencies: [4564, 4565, 10288, 3829, 4120, 3808, 1362, 2]
+// Dependencies: [4565, 4566, 10221, 3830, 4121, 3809, 1362, 2]
 // Exports: renderMessagePreviewMarkup
 
-// Module 10287 (getRules)
+// Module 10220 (getRules)
 import importDefaultResult from "priv";
 
 const require = arg1;
@@ -13,8 +13,8 @@ function getRules(layout) {
   let fontScale;
   let maxFontSizeMultiplier;
   ({ color, fontScale, maxFontSizeMultiplier } = layout);
-  const items = [importDefault(4565).RULES, importDefault(10288)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
-  return importDefault(4564)(items);
+  const items = [importDefault(4566).RULES, importDefault(10221)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
+  return importDefault(4565)(items);
 }
 function renderASTToReact(layout) {
   let initialParserState;
@@ -22,13 +22,13 @@ function renderASTToReact(layout) {
   ({ tree, initialParserState } = layout);
   const obj = { layout: layout.layout, color: layout.color, fontScale: layout.fontScale, maxFontSizeMultiplier: layout.maxFontSizeMultiplier };
   const tmp = getRules({ layout: layout.layout, color: layout.color, fontScale: layout.fontScale, maxFontSizeMultiplier: layout.maxFontSizeMultiplier });
-  const obj2 = importDefault(3829);
-  return obj2.reactFor(importDefault(3829).ruleOutput(tmp, "react"))(tree, initialParserState);
+  const obj2 = importDefault(3830);
+  return obj2.reactFor(importDefault(3830).ruleOutput(tmp, "react"))(tree, initialParserState);
 }
 function getMessagePreviewASTParser(layout) {
   const obj = { layout: layout.layout, color: layout.color, fontScale: layout.fontScale, maxFontSizeMultiplier: layout.maxFontSizeMultiplier };
   const tmp = getRules({ layout: layout.layout, color: layout.color, fontScale: layout.fontScale, maxFontSizeMultiplier: layout.maxFontSizeMultiplier });
-  return importDefault(4120).astParserFor(tmp);
+  return importDefault(4121).astParserFor(tmp);
 }
 function getOrParseMessagePreviewMarkupAST(arg0) {
   let color;
@@ -77,7 +77,7 @@ export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fo
   ({ content, muted, layout } = fontScale);
   ({ guildId, channelId } = fontScale);
   if (layout === undefined) {
-    layout = require(3808) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT;
+    layout = require(3809) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT;
   }
   ({ color, disableAnimatedEmoji, postProcessor } = fontScale);
   if (disableAnimatedEmoji === undefined) {

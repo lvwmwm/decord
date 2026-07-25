@@ -1,10 +1,10 @@
-// Module ID: 7988
-// Function ID: 63185
+// Module ID: 7935
+// Function ID: 63142
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4122, 4991, 1348, 1917, 4349, 1849, 7989, 653, 4329, 3771, 3775, 1392, 7990, 3764, 3747, 7991, 1212, 7002, 7993, 477, 7994, 7995, 2]
+// Dependencies: [4123, 4992, 1348, 1918, 4350, 1850, 7936, 653, 4330, 3772, 3776, 1392, 7937, 3765, 3748, 7938, 1212, 6020, 7940, 477, 7941, 7942, 2]
 // Exports: default
 
-// Module 7988 (_createForOfIteratorHelperLoose)
+// Module 7935 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -162,15 +162,15 @@ function transformPollEmoji(animated, size) {
     obj.id = combined;
     obj.name = animated.name;
     if (null == animated.id) {
-      let name = importDefault(3771).convertSurrogateToName(animated.name);
-      const obj3 = importDefault(3771);
+      let name = importDefault(3772).convertSurrogateToName(animated.name);
+      const obj3 = importDefault(3772);
     } else {
       name = animated.name;
     }
     obj.displayName = name;
     if (null == animated.id) {
-      let uRL = importDefault(3775).getURL(animated.name);
-      const obj6 = importDefault(3775);
+      let uRL = importDefault(3776).getURL(animated.name);
+      const obj6 = importDefault(3776);
     } else {
       obj = { id: animated.id, animated: flag, size: num };
       uRL = importDefault(1392).getEmojiURL(obj);
@@ -204,8 +204,8 @@ function computeBasicPollChatData(message, arg1, maxSettingsForPreset) {
     let str = "";
     if (message.state === MessageStates.SENT) {
       if (null == formattedExpirationLabel) {
-        formattedExpirationLabel = require(7990) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
-        const obj2 = require(7990) /* formatExpirationLabel */;
+        formattedExpirationLabel = require(7937) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
+        const obj2 = require(7937) /* formatExpirationLabel */;
       }
       str = formattedExpirationLabel;
     }
@@ -260,11 +260,11 @@ function computeBasicPollChatData(message, arg1, maxSettingsForPreset) {
     if (null != guildId) {
       selfMember = selfMember.getSelfMember(guildId);
     }
-    const result = require(3764) /* getAutomodQuarantinedProfileFlags */.hasAutomodQuarantinedProfile(selfMember);
-    const obj5 = require(3764) /* getAutomodQuarantinedProfileFlags */;
+    const result = require(3765) /* getAutomodQuarantinedProfileFlags */.hasAutomodQuarantinedProfile(selfMember);
+    const obj5 = require(3765) /* getAutomodQuarantinedProfileFlags */;
     obj = { poll, canTapAnswers: tmp18 };
     let tmp28 = tmp15;
-    const result1 = require(3747) /* isCommunicationDisabled */.isMemberCommunicationDisabled(selfMember);
+    const result1 = require(3748) /* isCommunicationDisabled */.isMemberCommunicationDisabled(selfMember);
     if (tmp15) {
       tmp28 = tmp3;
     }

@@ -1,10 +1,10 @@
-// Module ID: 16379
-// Function ID: 127797
+// Module ID: 16390
+// Function ID: 127965
 // Name: Header
-// Dependencies: [57, 31, 27, 653, 4940, 33, 4130, 689, 4066, 10016, 1273, 1392, 3976, 5165, 1212, 4660, 5119, 5502, 477, 4126, 4814, 5501, 2]
+// Dependencies: [57, 31, 27, 653, 4941, 33, 4131, 689, 4067, 9945, 1273, 1392, 3977, 5164, 1212, 4661, 5119, 5502, 477, 4127, 4815, 5501, 2]
 // Exports: default
 
-// Module 16379 (Header)
+// Module 16390 (Header)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -30,7 +30,7 @@ function Header(arg0) {
   let platform;
   ({ platform, integration, applicationId } = arg0);
   ({ onRemove, locked } = arg0);
-  let obj = require(10016) /* useRequestApplication */;
+  let obj = require(9945) /* useRequestApplication */;
   let application;
   if (null != integration) {
     application = integration.application;
@@ -80,7 +80,7 @@ function Header(arg0) {
   } else if (null != platform) {
     const obj1 = {};
     let obj2 = require(1392) /* getAvatarURL */;
-    let obj3 = require(3976) /* AccessibilityAnnouncer */;
+    let obj3 = require(3977) /* AccessibilityAnnouncer */;
     const icon = platform.icon;
     obj1.source = obj2.makeSource(obj3.isThemeDark(tmp) ? icon.darkPNG : icon.lightPNG);
     obj1.disableColor = true;
@@ -105,8 +105,8 @@ function Header(arg0) {
   obj4.onPress = onRemove;
   obj4.disabled = locked;
   obj4.children = callback2(require(5119) /* XSmallIcon */.XSmallIcon, {});
-  obj2.trailing = callback2(require(4660) /* PressableBase */.PressableOpacity, obj4);
-  return callback2(require(5165) /* TableRowInner */.TableRow, obj2);
+  obj2.trailing = callback2(require(4661) /* PressableBase */.PressableOpacity, obj4);
+  return callback2(require(5164) /* TableRowInner */.TableRow, obj2);
 }
 function BooleanConfigRule(metadataField) {
   let _slicedToArray;
@@ -324,7 +324,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       obj2.children = onInputValueChange(metadataField(1273).TextInput, obj3, metadataField);
       let items1 = [onInputValueChange(View, obj2, "_numericalInputContainer"), ];
       obj = { variant: "text-md/semibold", style: fieldTextHookResult.appNumericalInputText, children: fieldText };
-      items1[1] = onInputValueChange(metadataField(4126).Text, obj);
+      items1[1] = onInputValueChange(metadataField(4127).Text, obj);
       obj1.children = items1;
       tmp32Result = closure_13(View, obj1);
       const tmp32 = closure_13;
@@ -385,7 +385,7 @@ function BlueskyMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4814);
+  let obj = importDefault(4815);
   const value = obj.get(PlatformTypes.BLUESKY);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -400,7 +400,7 @@ function SteamMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4814);
+  let obj = importDefault(4815);
   const value = obj.get(PlatformTypes.STEAM);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -417,7 +417,7 @@ function TwitterMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4814);
+  let obj = importDefault(4815);
   const value = obj.get(PlatformTypes.TWITTER);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -441,7 +441,7 @@ function RedditMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4814);
+  let obj = importDefault(4815);
   const value = obj.get(PlatformTypes.REDDIT);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -472,7 +472,7 @@ function PaypalMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4814);
+  let obj = importDefault(4815);
   const value = obj.get(PlatformTypes.PAYPAL);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -494,7 +494,7 @@ function EbayMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4814);
+  let obj = importDefault(4815);
   const value = obj.get(PlatformTypes.EBAY);
   obj = {};
   obj = { fieldTextHook: require(1212) /* getSystemLocale */.t["REyUZ/"], metadataField: closure_7.CREATED_AT, existingPendingConfiguration: configMetadataMap.get(closure_7.CREATED_AT), platform: value, onConfigurationChange, locked };
@@ -520,7 +520,7 @@ function TikTokMetadataRules(arg0) {
   let locked;
   let onConfigurationChange;
   ({ configMetadataMap, onConfigurationChange, locked } = arg0);
-  let obj = importDefault(4814);
+  let obj = importDefault(4815);
   const value = obj.get(PlatformTypes.TIKTOK);
   obj = {};
   obj = {};

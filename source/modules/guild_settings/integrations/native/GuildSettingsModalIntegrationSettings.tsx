@@ -1,10 +1,10 @@
-// Module ID: 16332
-// Function ID: 127088
+// Module ID: 16343
+// Function ID: 127256
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1910, 8483, 33, 16333, 1212, 4130, 689, 7653, 4660, 5165, 16334, 5501, 5502, 8482, 4126, 4814, 1392, 3976, 7636, 4541, 3712, 7654, 16335, 5448, 3842, 566, 4066, 16297, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1911, 8243, 33, 16344, 1212, 4131, 689, 7595, 4661, 5164, 16345, 5501, 5502, 8242, 4127, 4815, 1392, 3977, 7575, 4542, 3713, 7596, 16346, 5448, 3843, 566, 4067, 16308, 2]
 // Exports: default
 
-// Module 16332 (_isNativeReflectConstruct)
+// Module 16343 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import PressableBase from "PressableBase";
@@ -35,7 +35,7 @@ function _isNativeReflectConstruct() {
 function GraceOption(option) {
   const iter = option.option;
   const onPress = option.onPress;
-  return callback3(iter(7653).TableRadioRow, {
+  return callback3(iter(7595).TableRadioRow, {
     value: iter.value,
     label: iter.label,
     legacyCompat_onPress() {
@@ -52,9 +52,9 @@ function ForceSyncIcon(isSyncing) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["+Josox"]);
     obj.onPress = tmp;
-    obj = { source: importDefault(16334) };
-    obj.children = callback3(require(5165) /* TableRowInner */.TableRow.Icon, obj);
-    tmp2Result = tmp2(require(4660) /* PressableBase */.PressableOpacity, obj);
+    obj = { source: importDefault(16345) };
+    obj.children = callback3(require(5164) /* TableRowInner */.TableRow.Icon, obj);
+    tmp2Result = tmp2(require(4661) /* PressableBase */.PressableOpacity, obj);
   }
   return tmp2Result;
 }

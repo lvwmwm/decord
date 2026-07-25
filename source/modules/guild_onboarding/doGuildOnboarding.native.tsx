@@ -1,10 +1,10 @@
-// Module ID: 5053
-// Function ID: 43726
+// Module ID: 5054
+// Function ID: 43738
 // Name: getBaseAnimationData
-// Dependencies: [5, 27, 3947, 5054, 5055, 653, 5056, 4098, 4337, 5048, 5057, 1392, 1825, 5061, 5062, 5063, 5081, 1934, 1198, 2]
+// Dependencies: [5, 27, 3948, 5055, 5056, 653, 5057, 4099, 4338, 5049, 5058, 1392, 1825, 5062, 5063, 5064, 5081, 1935, 1198, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 5053 (getBaseAnimationData)
+// Module 5054 (getBaseAnimationData)
 import closure_3 from "ME";
 import { NativeModules } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -16,7 +16,7 @@ let closure_8;
 let closure_9;
 const require = arg1;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(require(5056) /* items */));
+  return JSON.parse(JSON.stringify(require(5057) /* items */));
 }
 async function _doGuildOnboarding(arg0, arg1) {
   let iter = (function*(guildId) {

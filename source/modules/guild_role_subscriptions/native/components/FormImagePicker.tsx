@@ -1,10 +1,10 @@
-// Module ID: 16472
-// Function ID: 128328
+// Module ID: 16483
+// Function ID: 128496
 // Name: pickImage
-// Dependencies: [5, 31, 27, 33, 4130, 689, 4674, 1426, 8518, 1212, 5085, 16473, 9142, 4126, 4543, 2]
+// Dependencies: [5, 31, 27, 33, 4131, 689, 4675, 1426, 8278, 1212, 5085, 16484, 9034, 4127, 4544, 2]
 // Exports: default
 
-// Module 16472 (pickImage)
+// Module 16483 (pickImage)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -167,7 +167,7 @@ export default function FormImagePicker(imageUploadSize) {
   obj = { style: tmp3.imageSelectionRow };
   obj = { style: tmp3.buttonColumn };
   const obj1 = { style: tmp3.imageDescription, variant: "text-sm/medium", color: "text-default", children: imageUploadSize.description };
-  const items = [callback2(imageUploadSize(4126).Text, obj1), ];
+  const items = [callback2(imageUploadSize(4127).Text, obj1), ];
   const obj2 = {
     text: stringResult,
     variant: "secondary",
@@ -177,7 +177,7 @@ export default function FormImagePicker(imageUploadSize) {
     size: "md",
     disabled
   };
-  items[1] = callback2(imageUploadSize(4543).Button, obj2);
+  items[1] = callback2(imageUploadSize(4544).Button, obj2);
   obj.children = items;
   const items1 = [callback3(View, obj), ];
   const obj3 = {};

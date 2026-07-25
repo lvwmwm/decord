@@ -1,7 +1,7 @@
 // Module ID: 5448
-// Function ID: 46587
+// Function ID: 46592
 // Name: NavScrim
-// Dependencies: [31, 27, 33, 4130, 689, 5160, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5159, 2]
 
 // Module 5448 (NavScrim)
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -18,7 +18,7 @@ obj["top"] = undefined;
 obj.androidNavScrim = obj;
 let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = require("result").memo(() => {
-  const insets = importDefault(5160)({ includeCustomKeyboardHeight: false }).insets;
+  const insets = importDefault(5159)({ includeCustomKeyboardHeight: false }).insets;
   let tmp2 = null;
   if (0 !== insets.bottom) {
     let obj = {};

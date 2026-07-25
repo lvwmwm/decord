@@ -1,10 +1,10 @@
-// Module ID: 3986
-// Function ID: 33091
+// Module ID: 3987
+// Function ID: 33102
 // Name: useBaseAppContainerDimensions
 // Dependencies: [31, 1450, 1557, 2]
 // Exports: default, getBaseAppContainerDimensions
 
-// Module 3986 (useBaseAppContainerDimensions)
+// Module 3987 (useBaseAppContainerDimensions)
 import result from "result";
 
 const require = arg1;

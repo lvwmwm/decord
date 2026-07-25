@@ -1,20 +1,20 @@
-// Module ID: 13910
-// Function ID: 106415
+// Module ID: 13921
+// Function ID: 106542
 // Name: onPress
-// Dependencies: [31, 33, 4098, 13911, 1934, 1456, 6653, 9158, 1212, 13912, 2]
+// Dependencies: [31, 33, 4099, 13922, 1935, 1456, 6273, 9050, 1212, 13923, 2]
 
-// Module 13910 (onPress)
+// Module 13921 (onPress)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function onPress() {
-  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13911, dependencyMap.paths), "AddConnection");
+  importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(13922, dependencyMap.paths), "AddConnection");
 }
 const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
   let obj = stackNavigation(1456);
   stackNavigation = obj.useStackNavigation();
-  const params = stackNavigation(6653).useSettingNavigationRoute().params;
+  const params = stackNavigation(6273).useSettingNavigationRoute().params;
   let selectedPlatformType;
   if (null != params) {
     selectedPlatformType = params.selectedPlatformType;
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
     });
   }, items);
   obj = { selectedPlatformType };
-  return jsx(stackNavigation(13912).UserSettingsConnections, { selectedPlatformType });
+  return jsx(stackNavigation(13923).UserSettingsConnections, { selectedPlatformType });
 });
 const result = require("showActionSheet").fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 

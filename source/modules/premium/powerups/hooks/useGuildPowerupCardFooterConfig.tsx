@@ -1,10 +1,10 @@
-// Module ID: 11593
-// Function ID: 90216
+// Module ID: 11559
+// Function ID: 89933
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [1838, 4018, 653, 11561, 566, 4021, 11558, 2]
+// Dependencies: [1838, 4019, 653, 11527, 566, 4022, 11524, 2]
 // Exports: default
 
-// Module 11593 (useGuildPowerupCardFooterConfig)
+// Module 11559 (useGuildPowerupCardFooterConfig)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import BoostedGuildTiers from "BoostedGuildTiers";
 import { GuildFeatures } from "ME";
@@ -18,7 +18,7 @@ const result = require("ME").fileFinishedImporting("modules/premium/powerups/hoo
 
 export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   const _require = arg0;
-  const tmp = importDefault(11561)(arg0, skuId);
+  const tmp = importDefault(11527)(arg0, skuId);
   let obj = _require(566);
   const items = [_createForOfIteratorHelperLoose];
   const items1 = [arg0];
@@ -31,7 +31,7 @@ export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
     }
     return true === hasItem;
   }, items1);
-  let tmp3 = skuId.skuId === _require(4021).GUILD_POWERUP_GUILD_THEME_SKU_ID;
+  let tmp3 = skuId.skuId === _require(4022).GUILD_POWERUP_GUILD_THEME_SKU_ID;
   let tmp4 = tmp.type !== constants.INACTIVE;
   if (!tmp4) {
     if (tmp3) {
@@ -42,7 +42,7 @@ export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   obj = {};
   let tmp5 = tmp4;
   if (!tmp4) {
-    tmp5 = !importDefault(11558)(arg0, skuId, "GuildPowerupCardFooterAdmin");
+    tmp5 = !importDefault(11524)(arg0, skuId, "GuildPowerupCardFooterAdmin");
   }
   if (tmp5) {
     tmp5 = tmp.type !== constants.TIER_OVERRIDE_ACTIVATED;

@@ -1,9 +1,9 @@
-// Module ID: 8852
-// Function ID: 69693
+// Module ID: 8740
+// Function ID: 69172
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 8852 (apexExperiment)
+// Module 8740 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-04-gift-promotion-reminder", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

@@ -1,16 +1,16 @@
-// Module ID: 14948
-// Function ID: 113935
+// Module ID: 7911
+// Function ID: 63007
 // Name: flattenColorOverOpaqueBackground
 // Dependencies: [666, 2]
 // Exports: flattenColorOverOpaqueBackground
 
-// Module 14948 (flattenColorOverOpaqueBackground)
+// Module 7911 (flattenColorOverOpaqueBackground)
 const result = require("set").fileFinishedImporting("design/utils/shared/colors.tsx");
 
-export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueBackground(backgroundColor, backgroundColor2) {
-  const obj = importDefault(666)(backgroundColor);
+export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueBackground(arg0, arg1) {
+  const obj = importDefault(666)(arg0);
   const rgbaResult = obj.rgba();
-  const rgbaResult1 = importDefault(666)(backgroundColor2).rgba();
+  const rgbaResult1 = importDefault(666)(arg1).rgba();
   if (1 !== rgbaResult1[3]) {
     const _Error = Error;
     const error = new Error("Expected solid cutout background color to be opaque");
@@ -26,5 +26,5 @@ export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueB
     const obj3 = importDefault(666);
     return importDefault(666).rgb(rounded, rounded1, rounded2).hex();
   }
-  const obj2 = importDefault(666)(backgroundColor2);
+  const obj2 = importDefault(666)(arg1);
 };

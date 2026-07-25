@@ -1,10 +1,10 @@
-// Module ID: 9953
-// Function ID: 76942
+// Module ID: 9881
+// Function ID: 76557
 // Name: validateJumpWithAlert
-// Dependencies: [1348, 3758, 3767, 653, 4470, 1212, 6739, 2]
+// Dependencies: [1348, 3759, 3768, 653, 4471, 1212, 5735, 2]
 // Exports: default
 
-// Module 9953 (validateJumpWithAlert)
+// Module 9881 (validateJumpWithAlert)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ export default function validateJumpWithAlert(author, onConfirm) {
     obj.body = intl12.formatToPlainString(require(1212) /* getSystemLocale */.t.dTNNgr, obj);
     const intl13 = require(1212) /* getSystemLocale */.intl;
     obj.confirmText = intl13.string(require(1212) /* getSystemLocale */.t.BddRzS);
-    importDefault(4470).show(obj);
+    importDefault(4471).show(obj);
     return false;
   } else if (closure_5.isIgnoredForMessage(author)) {
     const obj1 = {};
@@ -34,10 +34,10 @@ export default function validateJumpWithAlert(author, onConfirm) {
     obj1.body = intl9.formatToPlainString(require(1212) /* getSystemLocale */.t["8t8doK"], obj2);
     const intl10 = require(1212) /* getSystemLocale */.intl;
     obj1.confirmText = intl10.string(require(1212) /* getSystemLocale */.t.BddRzS);
-    importDefault(4470).show(obj1);
+    importDefault(4471).show(obj1);
     return false;
   } else {
-    obj = require(6739) /* isSpammer */;
+    obj = require(5735) /* isSpammer */;
     if (obj.isSpam(author)) {
       channel = channel.getChannel(author.channel_id);
       let isPrivateResult;
@@ -46,7 +46,7 @@ export default function validateJumpWithAlert(author, onConfirm) {
       }
       if (!isPrivateResult) {
         if (!closure_4.can(Permissions.MODERATE_MEMBERS, channel)) {
-          obj2 = importDefault(4470);
+          obj2 = importDefault(4471);
           const obj3 = {};
           const intl = require(1212) /* getSystemLocale */.intl;
           obj3.title = intl.string(require(1212) /* getSystemLocale */.t["6vJKFk"]);
@@ -59,7 +59,7 @@ export default function validateJumpWithAlert(author, onConfirm) {
         }
         return false;
       }
-      let obj5 = importDefault(4470);
+      let obj5 = importDefault(4471);
       obj5 = {};
       const intl4 = require(1212) /* getSystemLocale */.intl;
       obj5.title = intl4.string(require(1212) /* getSystemLocale */.t["cZcG+P"]);

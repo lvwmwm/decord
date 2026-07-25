@@ -1,7 +1,7 @@
 // Module ID: 5087
-// Function ID: 44288
+// Function ID: 44296
 // Name: HeaderBackImage
-// Dependencies: [5, 31, 27, 653, 33, 4130, 689, 4126, 5088, 5091, 1457, 5093, 1212, 5094, 5119, 477, 1557, 5084, 2]
+// Dependencies: [5, 31, 27, 653, 33, 4131, 689, 4127, 5088, 5091, 1457, 5093, 1212, 5094, 5119, 477, 1557, 5084, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
 // Module 5087 (HeaderBackImage)
@@ -133,7 +133,7 @@ export const NavigatorHeader = function NavigatorHeader(subtitle) {
   obj = { style: tmp.navigatorHeaderTitleContainer };
   const items = [icon, ];
   obj = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   const items1 = [callback2(closure_4, obj), , ];
   let tmp5 = null != subtitle;
@@ -142,7 +142,7 @@ export const NavigatorHeader = function NavigatorHeader(subtitle) {
   }
   if (tmp5) {
     const obj1 = { lineClamp: 1, style: tmp.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
-    tmp5 = callback(require(4126) /* Text */.Text, obj1);
+    tmp5 = callback(require(4127) /* Text */.Text, obj1);
   }
   items1[1] = tmp5;
   items1[2] = importDefault(5088)("js-stack");

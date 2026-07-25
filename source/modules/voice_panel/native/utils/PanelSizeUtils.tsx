@@ -1,9 +1,9 @@
-// Module ID: 15809
-// Function ID: 121946
+// Module ID: 15820
+// Function ID: 122115
 // Name: getMaxPanelWidth
-// Dependencies: [10047, 2]
+// Dependencies: [9976, 2]
 
-// Module 15809 (getMaxPanelWidth)
+// Module 15820 (getMaxPanelWidth)
 import { VOICE_PANEL_DRAWER_MAX_WIDTH as closure_0 } from "VoicePanelModes";
 
 let closure_1 = { code: "function getMaxPanelWidth_PanelSizeUtilsTsx1({windowWidth:windowWidth,connected:connected,safeAreaLeft:safeAreaLeft,safeAreaRight:safeAreaRight}){const{VOICE_PANEL_DRAWER_MAX_WIDTH}=this.__closure;return Math.min(windowWidth,connected?windowWidth:Math.min(VOICE_PANEL_DRAWER_MAX_WIDTH,windowWidth-safeAreaLeft-safeAreaRight));}" };

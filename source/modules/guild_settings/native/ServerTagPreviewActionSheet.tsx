@@ -1,10 +1,10 @@
-// Module ID: 12971
-// Function ID: 100600
+// Module ID: 12982
+// Function ID: 100727
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [31, 27, 8461, 33, 4130, 689, 8462, 8463, 12972, 4098, 4126, 1212, 4543, 5583, 5498, 5186, 2]
+// Dependencies: [31, 27, 8219, 33, 4131, 689, 8220, 8221, 12983, 4099, 4127, 1212, 4544, 5583, 5498, 5186, 2]
 // Exports: default
 
-// Module 12971 (ServerTagPreviewActionSheet)
+// Module 12982 (ServerTagPreviewActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export default function ServerTagPreviewActionSheet(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(8462);
+  let obj = guildId(8220);
   let guildProfile = obj.useGuildProfile(guildId);
   guildProfile = guildProfile.guildProfile;
   const items = [guildId];
@@ -38,20 +38,20 @@ export default function ServerTagPreviewActionSheet(guildId) {
     obj.onAdopted = function onAdopted(arg0) {
       return outer1_1(outer1_2[9]).hideActionSheet();
     };
-    let tmp7 = callback(importDefault(12972), obj);
+    let tmp7 = callback(importDefault(12983), obj);
   } else if (guildProfile.fetchStatus === GuildProfileFetchStatus.FETCHED) {
     obj = { style: tmp.error };
     const obj1 = { variant: "text-md/medium", color: "text-muted" };
     const intl = guildId(1212).intl;
     obj1.children = intl.string(guildId(1212).t.tmGHjc);
-    const items1 = [callback(guildId(4126).Text, obj1), ];
+    const items1 = [callback(guildId(4127).Text, obj1), ];
     const obj2 = { variant: "secondary" };
     const intl2 = guildId(1212).intl;
     obj2.text = intl2.string(guildId(1212).t["5911Lb"]);
     obj2.onPress = function onPress() {
       return guildId(outer1_2[7]).getGuildProfile(guildId, true);
     };
-    items1[1] = callback(guildId(4543).Button, obj2);
+    items1[1] = callback(guildId(4544).Button, obj2);
     obj.children = items1;
     tmp7 = callback2(View, obj);
   } else {

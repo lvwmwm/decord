@@ -1,10 +1,10 @@
-// Module ID: 9113
-// Function ID: 71410
+// Module ID: 9005
+// Function ID: 70895
 // Name: PresenceActivityStatus
-// Dependencies: [31, 653, 33, 6981, 8979, 7472, 9114, 9109, 9116, 9108, 9111, 2]
+// Dependencies: [31, 653, 33, 5972, 8867, 6556, 9006, 9001, 9008, 9000, 9003, 2]
 // Exports: default
 
-// Module 9113 (PresenceActivityStatus)
+// Module 9005 (PresenceActivityStatus)
 import "result";
 import { ActivityTypes } from "ME";
 import jsxProd from "jsxProd";
@@ -36,22 +36,22 @@ export default function PresenceActivityStatus(hideText) {
       return null;
     }
   }
-  if (importDefault(6981)(activity)) {
-    let AppsIcon = require(7472) /* AppsIcon */.AppsIcon;
+  if (importDefault(5972)(activity)) {
+    let AppsIcon = require(6556) /* AppsIcon */.AppsIcon;
   } else if (activity.type === ActivityTypes.PLAYING) {
-    AppsIcon = require(8979) /* GameControllerIcon */.GameControllerIcon;
+    AppsIcon = require(8867) /* GameControllerIcon */.GameControllerIcon;
   } else if (activity.type === ActivityTypes.LISTENING) {
-    AppsIcon = require(9114) /* MusicIcon */.MusicIcon;
+    AppsIcon = require(9006) /* MusicIcon */.MusicIcon;
   } else {
     if (activity.type !== ActivityTypes.WATCHING) {
       if (activity.type !== ActivityTypes.STREAMING) {
         AppsIcon = null;
         if (activity.type === ActivityTypes.COMPETING) {
-          AppsIcon = require(8979) /* GameControllerIcon */.GameControllerIcon;
+          AppsIcon = require(8867) /* GameControllerIcon */.GameControllerIcon;
         }
       }
     }
-    AppsIcon = require(9109) /* TvIcon */.TvIcon;
+    AppsIcon = require(9001) /* TvIcon */.TvIcon;
   }
   let obj = {};
   let tmp18 = !hideIcon;
@@ -60,13 +60,13 @@ export default function PresenceActivityStatus(hideText) {
   }
   if (tmp18) {
     obj = { icon: AppsIcon, style: iconStyle };
-    tmp18 = callback(importDefault(9108), obj);
+    tmp18 = callback(importDefault(9000), obj);
   }
   const items = [tmp18, ];
   let tmp23 = !flag;
   if (tmp23) {
-    obj = { style: textStyle, maxFontSizeMultiplier, children: importDefault(9116)(activity, true).text };
-    tmp23 = callback(importDefault(9111), obj);
+    obj = { style: textStyle, maxFontSizeMultiplier, children: importDefault(9008)(activity, true).text };
+    tmp23 = callback(importDefault(9003), obj);
   }
   items[1] = tmp23;
   obj.children = items;

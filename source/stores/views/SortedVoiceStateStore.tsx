@@ -1,9 +1,9 @@
-// Module ID: 4203
-// Function ID: 36216
+// Module ID: 4204
+// Function ID: 36227
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 1857, 1194, 1348, 1917, 1849, 4146, 653, 3969, 3754, 22, 21, 566, 686, 2]
+// Dependencies: [15, 17, 18, 6, 7, 1858, 1194, 1348, 1918, 1850, 4147, 653, 3970, 3755, 22, 21, 566, 686, 2]
 
-// Module 4203 (_isNativeReflectConstruct)
+// Module 4204 (_isNativeReflectConstruct)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import dispatcher from "dispatcher";
 import set from "set";
@@ -126,8 +126,8 @@ function makeMemberAndComparator(voiceState, member, arg2) {
     nick = member.nick;
   }
   if (null == nick) {
-    nick = importDefault(3969).getName(arg2);
-    const obj2 = importDefault(3969);
+    nick = importDefault(3970).getName(arg2);
+    const obj2 = importDefault(3970);
   }
   obj.comparator = getComparator(voiceState, nick);
   return obj;

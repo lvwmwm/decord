@@ -1,7 +1,7 @@
 // Module ID: 5585
-// Function ID: 47415
+// Function ID: 47420
 // Name: getKeyboardHeightWithOffset
-// Dependencies: [57, 31, 27, 1452, 33, 1823, 3996, 1555, 5163, 5161, 5162, 2]
+// Dependencies: [57, 31, 27, 1452, 33, 1823, 3997, 1555, 5162, 5160, 5161, 2]
 
 // Module 5585 (getKeyboardHeightWithOffset)
 import _slicedToArray from "_slicedToArray";
@@ -16,14 +16,14 @@ const require = arg1;
 function getKeyboardHeightWithOffset(style) {
   let systemKeyboardHeight = require(1823) /* useSystemKeyboardHeight */.getSystemKeyboardHeight();
   if (0 === systemKeyboardHeight) {
-    const keyboardType = require(3996) /* getKeyboardContextForType */.getKeyboardType();
+    const keyboardType = require(3997) /* getKeyboardContextForType */.getKeyboardType();
     let num3 = 0;
     if (keyboardType !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
-      num3 = require(5163) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
-      const obj3 = require(5163) /* useCustomKeyboardHeight */;
+      num3 = require(5162) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
+      const obj3 = require(5162) /* useCustomKeyboardHeight */;
     }
     systemKeyboardHeight = num3;
-    const obj2 = require(3996) /* getKeyboardContextForType */;
+    const obj2 = require(3997) /* getKeyboardContextForType */;
   }
   return Math.max(0, systemKeyboardHeight + style);
 }

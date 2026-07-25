@@ -1,9 +1,9 @@
-// Module ID: 3783
-// Function ID: 29442
+// Module ID: 3784
+// Function ID: 29453
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1858, 3784, 3785, 653, 3787, 1851, 3788, 44, 477, 3789, 1872, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1859, 3785, 3786, 653, 3788, 1852, 3789, 44, 477, 3790, 1873, 2]
 
-// Module 3783 (_isNativeReflectConstruct)
+// Module 3784 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import isPremiumAtLeast from "isPremiumAtLeast";

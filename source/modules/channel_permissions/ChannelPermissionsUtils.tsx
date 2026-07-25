@@ -1,10 +1,10 @@
-// Module ID: 8457
-// Function ID: 67185
+// Module ID: 8215
+// Function ID: 65836
 // Name: isAdmin
-// Dependencies: [1352, 1391, 1911, 1917, 1849, 7565, 653, 1912, 1212, 483, 21, 3969, 1327, 3763, 8458, 1881, 4312, 2]
+// Dependencies: [1352, 1391, 1912, 1918, 1850, 6661, 653, 1913, 1212, 483, 21, 3970, 1327, 3764, 8216, 1882, 4313, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, getExistingMembersRows, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8457 (isAdmin)
+// Module 8215 (isAdmin)
 import { isGuildVocalChannelType } from "_callSuper";
 import { isGuildOwner } from "isGuildOwner";
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
@@ -51,8 +51,8 @@ function sortRoles(guildId, id) {
   if (num2 !== num) {
     let diff = num2 - num;
   } else {
-    diff = require(1912) /* _createForOfIteratorHelperLoose */.compareGuildRoles(guildId, id);
-    const obj = require(1912) /* _createForOfIteratorHelperLoose */;
+    diff = require(1913) /* _createForOfIteratorHelperLoose */.compareGuildRoles(guildId, id);
+    const obj = require(1913) /* _createForOfIteratorHelperLoose */;
   }
   return diff;
 }
@@ -135,8 +135,8 @@ function getAllExistingRolesWithPermission(arg0, arr, channel, MODERATE_STAGE_CH
 function getDisplayName(id, id2) {
   nick = nick.getNick(id2.id, id.id);
   if (null == nick) {
-    nick = importDefault(3969).getName(id);
-    const obj = importDefault(3969);
+    nick = importDefault(3970).getName(id);
+    const obj = importDefault(3970);
   }
   return nick;
 }
@@ -145,7 +145,7 @@ function isDefaultMember(id, id2) {
 }
 function getMemberRowData(id, id2) {
   const tmp2 = isGuildOwner(id2, id) ? RowType.OWNER : RowType.MEMBER;
-  const obj = { rowType: tmp2, name: getDisplayName(id, id2), username: importDefault(3969).getUserTag(id), id: id.id, avatarURL: id.getAvatarURL(id2.id, 24), bot: id.bot, verifiedBot: id.isVerifiedBot(), disabled: isDefaultMember(id, id2), key: "" + tmp2 + ":" + id.id };
+  const obj = { rowType: tmp2, name: getDisplayName(id, id2), username: importDefault(3970).getUserTag(id), id: id.id, avatarURL: id.getAvatarURL(id2.id, 24), bot: id.bot, verifiedBot: id.isVerifiedBot(), disabled: isDefaultMember(id, id2), key: "" + tmp2 + ":" + id.id };
   return obj;
 }
 function sortMembers(rowType, rowType2) {
@@ -178,7 +178,7 @@ function getExistingMembers(memberIds, channel, guild, accessPermissions, arg4) 
 function flipEveryonePermission(guild_id, accessPermissions, result) {
   let everyoneOverwrite = guild_id.permissionOverwrites[guild_id.guild_id];
   if (null == everyoneOverwrite) {
-    let obj = importAll(3763);
+    let obj = importAll(3764);
     everyoneOverwrite = obj.makeEveryoneOverwrite(guild_id.guild_id);
   }
   obj = {};
@@ -359,7 +359,7 @@ export const getRemoveTooltipHint = function getRemoveTooltipHint(arg0) {
 export { flipEveryonePermission };
 export const toggleChannelEveryonePermission = function toggleChannelEveryonePermission(guild_id, accessPermissions, result) {
   const tmp = flipEveryonePermission(guild_id, accessPermissions, result);
-  require(8458) /* _updatePermission */.updatePermission(guild_id, tmp.id, tmp.allow, tmp.deny);
+  require(8216) /* _updatePermission */.updatePermission(guild_id, tmp.id, tmp.allow, tmp.deny);
 };
 export const grantUserChannelAccess = function grantUserChannelAccess(id, accessPermissions) {
   let allow;
@@ -367,14 +367,14 @@ export const grantUserChannelAccess = function grantUserChannelAccess(id, access
   const currentUser = authStore.getCurrentUser();
   if (null != currentUser) {
     if (null == id.permissionOverwrites[currentUser.id]) {
-      let obj = { id: currentUser.id, type: require(1881) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER, allow: importAll(483).add(importAll(3763).NONE, accessPermissions), deny: importAll(3763).NONE };
+      let obj = { id: currentUser.id, type: require(1882) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER, allow: importAll(483).add(importAll(3764).NONE, accessPermissions), deny: importAll(3764).NONE };
       const obj4 = importAll(483);
       const items = [obj];
-      return require(8458) /* _updatePermission */.savePermissionUpdates(id.id, items, true);
+      return require(8216) /* _updatePermission */.savePermissionUpdates(id.id, items, true);
     } else {
       ({ allow, deny } = tmp2);
       obj = importAll(483);
-      const obj2 = require(8458) /* _updatePermission */;
+      const obj2 = require(8216) /* _updatePermission */;
       return obj2.updatePermission(id, tmp2.id, obj.add(allow, accessPermissions), deny);
     }
   }

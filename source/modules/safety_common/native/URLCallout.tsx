@@ -1,10 +1,10 @@
-// Module ID: 12248
-// Function ID: 95710
+// Module ID: 12224
+// Function ID: 95519
 // Name: URLCallout
-// Dependencies: [31, 27, 33, 4130, 689, 12249, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 12225, 4127, 2]
 // Exports: URLCallout
 
-// Module 12248 (URLCallout)
+// Module 12224 (URLCallout)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export const URLCallout = function URLCallout(url) {
   let protocol;
   let theRestOfTheUrl;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(12249) /* useUrlParts */;
+  let obj = require(12225) /* useUrlParts */;
   const urlParts = obj.useUrlParts(url.url);
   obj = { style: tmp.linkCalloutContainer };
   ({ protocol, hostname, theRestOfTheUrl } = urlParts);
@@ -35,12 +35,12 @@ export const URLCallout = function URLCallout(url) {
   const obj1 = { variant: "text-md/normal", color: "text-muted" };
   const items = [protocol, "//"];
   obj1.children = items;
-  const items1 = [callback(require(4126) /* Text */.Text, obj1), , ];
+  const items1 = [callback(require(4127) /* Text */.Text, obj1), , ];
   const obj2 = { variant: "text-md/semibold", color: "text-default", children: hostname };
-  items1[1] = callback2(require(4126) /* Text */.Text, obj2);
+  items1[1] = callback2(require(4127) /* Text */.Text, obj2);
   const obj3 = { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl };
-  items1[2] = callback2(require(4126) /* Text */.Text, obj3);
+  items1[2] = callback2(require(4127) /* Text */.Text, obj3);
   obj.children = items1;
-  obj.children = callback(require(4126) /* Text */.Text, obj);
+  obj.children = callback(require(4127) /* Text */.Text, obj);
   return callback2(ScrollView, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 9707
-// Function ID: 75536
+// Module ID: 9631
+// Function ID: 75131
 // Name: FOOTER_HEIGHT
-// Dependencies: [31, 27, 33, 4130, 689, 9697, 4126, 1212, 4543, 9708, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 9621, 4127, 1212, 4544, 9632, 2]
 
-// Module 9707 (FOOTER_HEIGHT)
+// Module 9631 (FOOTER_HEIGHT)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -31,21 +31,21 @@ const memoResult = importAllResult.memo(function MediaKeyboardFooter(arg0) {
   let onViewAll;
   ({ disabled, onViewAll } = arg0);
   const tmp = callback3();
-  let obj = importDefault(9697);
+  let obj = importDefault(9621);
   if (obj.useHasReachedEnd()) {
     obj = { style: tmp.container };
     obj = { variant: "text-sm/normal", style: tmp.label };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(require(1212) /* getSystemLocale */.t.mKSwAW);
-    const items = [callback(require(4126) /* Text */.Text, obj), , ];
+    const items = [callback(require(4127) /* Text */.Text, obj), , ];
     const obj1 = { style: tmp.buttonWrapper };
     const obj2 = { variant: "primary", size: "sm", onPress: onViewAll };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj2.text = intl2.string(require(1212) /* getSystemLocale */.t.ZT24In);
     obj2.disabled = disabled;
-    obj1.children = callback(require(4543) /* Button */.Button, obj2);
+    obj1.children = callback(require(4544) /* Button */.Button, obj2);
     items[1] = callback(closure_3, obj1);
-    const obj3 = { source: importDefault(9708) };
+    const obj3 = { source: importDefault(9632) };
     items[2] = callback(closure_4, obj3);
     obj.children = items;
     let tmp4 = callback2(closure_3, obj);

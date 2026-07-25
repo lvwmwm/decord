@@ -1,9 +1,9 @@
-// Module ID: 5773
-// Function ID: 49442
+// Module ID: 6676
+// Function ID: 58974
 // Name: TextField
-// Dependencies: [31, 33, 5774, 5775, 5779, 5782, 2]
+// Dependencies: [31, 33, 6677, 6678, 6682, 6685, 2]
 
-// Module 5773 (TextField)
+// Module 6676 (TextField)
 import { jsx } from "jsxProd";
 import importAllResult from "result";
 
@@ -14,18 +14,18 @@ const forwardRefResult = require("result").forwardRef((onClear) => {
   let leading;
   let state;
   let trailing;
-  let obj = require(5774) /* useTextFieldState */;
+  let obj = require(6677) /* useTextFieldState */;
   const textField = obj.useTextField(onClear, arg1);
   ({ innerRef, state } = textField);
-  const inputClearButtonConfig = require(5775) /* useInputClearButtonConfig */.useInputClearButtonConfig(onClear, state);
+  const inputClearButtonConfig = require(6678) /* useInputClearButtonConfig */.useInputClearButtonConfig(onClear, state);
   let tmp3;
   if (null != inputClearButtonConfig) {
     obj = {};
     ({ content: obj3.trailing, pressableProps: obj3.trailingPressableProps } = inputClearButtonConfig);
     tmp3 = obj;
   }
-  const obj2 = require(5775) /* useInputClearButtonConfig */;
-  const inputAttachments = require(5779) /* estimateAttachmentWidth */.useInputAttachments(onClear, tmp3);
+  const obj2 = require(6678) /* useInputClearButtonConfig */;
+  const inputAttachments = require(6682) /* estimateAttachmentWidth */.useInputAttachments(onClear, tmp3);
   ({ leading, trailing, inputStyle } = inputAttachments);
   obj = {};
   const merged = Object.assign(textField.inputProps);
@@ -33,7 +33,7 @@ const forwardRefResult = require("result").forwardRef((onClear) => {
   obj["leading"] = leading;
   obj["trailing"] = trailing;
   obj["inputStyle"] = inputStyle;
-  return jsx(require(5782) /* collapseNewlines */.BaseTextField, {});
+  return jsx(require(6685) /* collapseNewlines */.BaseTextField, {});
 });
 const result = require("useTextFieldState").fileFinishedImporting("design/components/TextField/native/TextField.native.tsx");
 

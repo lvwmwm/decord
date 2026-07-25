@@ -1,8 +1,8 @@
-// Module ID: 15160
-// Function ID: 115422
-// Dependencies: [31, 27, 1849, 14047, 33, 4130, 689, 566, 3991, 4542, 3969, 15161, 15162, 15163, 2]
+// Module ID: 15170
+// Function ID: 115550
+// Dependencies: [31, 27, 1850, 14058, 33, 4131, 689, 566, 3992, 4543, 3970, 15171, 15172, 15173, 2]
 
-// Module 15160
+// Module 15170
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -36,13 +36,13 @@ const memoResult = importAllResult.memo(function YouBarUser(arg0) {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
   require = tmp3;
-  let obj1 = require(3991);
+  let obj1 = require(3992);
   sharedValue = obj1.useSharedValue(tmp3 ? closure_7 : closure_8);
   const items1 = [!isQuestRendered, sharedValue];
   const effect = importAllResult.useEffect(() => {
     const result = sharedValue.set(tmp3(outer1_2[9]).withSpring(tmp3 ? outer1_7 : outer1_8, outer1_6));
   }, items1);
-  let obj2 = require(3991);
+  let obj2 = require(3992);
   class S {
     constructor() {
       obj = { marginLeft: c1.get() };
@@ -53,32 +53,32 @@ const memoResult = importAllResult.memo(function YouBarUser(arg0) {
   S.__workletHash = 12063452832866;
   S.__initData = closure_12;
   const animatedStyle = obj2.useAnimatedStyle(S);
-  let obj3 = sharedValue(3969);
+  let obj3 = sharedValue(3970);
   const name = obj3.useName(stateFromStores);
   if (null != stateFromStores) {
     if (null != name) {
       obj = { style: tmp.youButton };
       obj = { isLargeAvatar: tmp3, onPress: onAvatarPress };
-      const items2 = [callback(sharedValue(15162), obj), ];
+      const items2 = [callback(sharedValue(15172), obj), ];
       obj1 = {};
       const items3 = [tmp.userText, animatedStyle, ];
       obj2 = { flexShrink: 1 };
       items3[2] = obj2;
       obj1.style = items3;
       obj3 = { userId: stateFromStores.id, username: name };
-      obj1.children = callback(sharedValue(15163), obj3);
-      items2[1] = callback(sharedValue(3991).View, obj1);
+      obj1.children = callback(sharedValue(15173), obj3);
+      items2[1] = callback(sharedValue(3992).View, obj1);
       obj.children = items2;
     }
     return tmp8(tmp9, obj);
   }
   const obj4 = { style: items4 };
   items4 = [tmp.youButton];
-  const items5 = [callback(sharedValue(15161), { isLarge: !isQuestRendered }), ];
+  const items5 = [callback(sharedValue(15171), { isLarge: !isQuestRendered }), ];
   const obj5 = { style: items6 };
   items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj5.children = callback(View, { style: tmp.placeholder });
-  items5[1] = callback(sharedValue(3991).View, obj5);
+  items5[1] = callback(sharedValue(3992).View, obj5);
   obj4.children = items5;
   obj = obj4;
 });

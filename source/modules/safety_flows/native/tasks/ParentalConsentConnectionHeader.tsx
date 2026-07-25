@@ -1,10 +1,10 @@
-// Module ID: 16618
-// Function ID: 129574
+// Module ID: 16629
+// Function ID: 129742
 // Name: ParentalConsentConnectionNavbar
-// Dependencies: [31, 27, 1849, 33, 4130, 5084, 689, 1557, 566, 4126, 5588, 1212, 2460, 2]
+// Dependencies: [31, 27, 1850, 33, 4131, 5084, 689, 1557, 566, 4127, 5588, 1212, 2461, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 16618 (ParentalConsentConnectionNavbar)
+// Module 16629 (ParentalConsentConnectionNavbar)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -47,12 +47,12 @@ export const ParentalConsentConnectionNavbar = function ParentalConsentConnectio
     }
   };
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(importDefault(2460)["3HuGuY"]);
-  const items1 = [callback(require(4126) /* Text */.Text, obj1), ];
+  obj1.children = intl.string(importDefault(2461)["3HuGuY"]);
+  const items1 = [callback(require(4127) /* Text */.Text, obj1), ];
   let tmp6 = null != stateFromStores;
   if (tmp6) {
     const obj2 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
-    tmp6 = callback(require(4126) /* Text */.Text, obj2);
+    tmp6 = callback(require(4127) /* Text */.Text, obj2);
   }
   items1[1] = tmp6;
   obj.children = items1;

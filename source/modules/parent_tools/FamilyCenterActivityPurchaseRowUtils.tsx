@@ -1,10 +1,10 @@
-// Module ID: 13856
-// Function ID: 106096
+// Module ID: 13867
+// Function ID: 106223
 // Name: getCollectibleTypeName
-// Dependencies: [6779, 6780, 1851, 1876, 1212, 2198, 1392, 2]
+// Dependencies: [5775, 5776, 1852, 1877, 1212, 2199, 1392, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 13856 (getCollectibleTypeName)
+// Module 13867 (getCollectibleTypeName)
 import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
 import { isProfileEffectRecord } from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
@@ -12,21 +12,21 @@ import GuildFeatures from "GuildFeatures";
 let closure_5;
 let closure_6;
 function getCollectibleTypeName(type) {
-  if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+  if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = require(1212) /* getSystemLocale */.intl;
-    return intl5.string(importDefault(2198).obi47v);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+    return intl5.string(importDefault(2199).obi47v);
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(importDefault(2198).RX8BMR);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+    return intl4.string(importDefault(2199).RX8BMR);
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(importDefault(2198).nNGEHk);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE === type) {
+    return intl3.string(importDefault(2199).nNGEHk);
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE === type) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(importDefault(2198).VS1fKo);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
+    return intl2.string(importDefault(2199).VS1fKo);
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2198).JiIY1l);
+    return intl.string(importDefault(2199).JiIY1l);
   } else {
     return "";
   }

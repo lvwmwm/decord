@@ -1,9 +1,9 @@
-// Module ID: 14805
-// Function ID: 112905
+// Module ID: 14816
+// Function ID: 113033
 // Name: PasswordStrength
-// Dependencies: [29, 57, 31, 9232, 14778, 33, 4130, 689, 3991, 14802, 1212, 4126, 14796, 9245, 566, 3813, 7574, 3838, 9254, 8777, 2]
+// Dependencies: [29, 57, 31, 9124, 14789, 33, 4131, 689, 3992, 14813, 1212, 4127, 14807, 9137, 566, 3814, 6670, 3839, 9146, 8665, 2]
 
-// Module 14805 (PasswordStrength)
+// Module 14816 (PasswordStrength)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -11,10 +11,10 @@ import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import useRegistrationUIStore from "useRegistrationUIStore";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import { FadeIn } from "module_3991";
-import { FadeOut } from "module_3991";
-import { LinearTransition } from "module_3991";
-import { Easing } from "module_3991";
+import { FadeIn } from "module_3992";
+import { FadeOut } from "module_3992";
+import { LinearTransition } from "module_3992";
+import { Easing } from "module_3992";
 
 let closure_10;
 let closure_11;
@@ -33,17 +33,17 @@ function PasswordStrength(passwordScore) {
     if (isPasswordFocused) {
       if (0 !== password.length) {
         if (null == passwordError) {
-          if (passwordScore <= require(14802) /* PasswordScore */.PasswordScore.WEAK) {
+          if (passwordScore <= require(14813) /* PasswordScore */.PasswordScore.WEAK) {
             const intl2 = require(1212) /* getSystemLocale */.intl;
             let str = intl2.string(require(1212) /* getSystemLocale */.t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === require(14802) /* PasswordScore */.PasswordScore.MEDIUM) {
+          } else if (passwordScore === require(14813) /* PasswordScore */.PasswordScore.MEDIUM) {
             const intl = require(1212) /* getSystemLocale */.intl;
             str = intl.string(require(1212) /* getSystemLocale */.t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === require(14802) /* PasswordScore */.PasswordScore.STRONG) {
+            if (passwordScore === require(14813) /* PasswordScore */.PasswordScore.STRONG) {
               const intl4 = require(1212) /* getSystemLocale */.intl;
               str = intl4.string(require(1212) /* getSystemLocale */.t.Xraqqc);
               strong = tmp.strong;
@@ -59,7 +59,7 @@ function PasswordStrength(passwordScore) {
           const intl3 = require(1212) /* getSystemLocale */.intl;
           const items1 = [intl3.string(require(1212) /* getSystemLocale */.t["5gbdUX"]), ": ", str];
           obj["children"] = items1;
-          return callback2(require(4126) /* Text */.Text, obj);
+          return callback2(require(4127) /* Text */.Text, obj);
         }
       }
     }
@@ -84,7 +84,7 @@ obj3.exiting = require("module_300");
 const obj4 = {};
 let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_POSITIVE };
 obj4.layout = require("module_300");
-const easingResult = LinearTransition.easing(Easing.inOut(require("module_3991").Easing.quad));
+const easingResult = LinearTransition.easing(Easing.inOut(require("module_3992").Easing.quad));
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   let autoFocus;
   let onPasswordChange;

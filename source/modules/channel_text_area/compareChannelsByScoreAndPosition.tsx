@@ -1,10 +1,10 @@
-// Module ID: 5731
-// Function ID: 49257
+// Module ID: 12566
+// Function ID: 97308
 // Name: getGuildChannelPosition
 // Dependencies: [1348, 653, 2]
 // Exports: default
 
-// Module 5731 (getGuildChannelPosition)
+// Module 12566 (getGuildChannelPosition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelTypes } from "ME";
 

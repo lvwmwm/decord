@@ -1,10 +1,10 @@
-// Module ID: 15177
-// Function ID: 115536
+// Module ID: 15187
+// Function ID: 115664
 // Name: IconWithBadge
-// Dependencies: [31, 27, 6878, 33, 4130, 689, 566, 15168, 1273, 7961, 478, 5091, 5119, 4084, 2]
+// Dependencies: [31, 27, 5868, 33, 4131, 689, 566, 15178, 1273, 7909, 478, 5091, 5119, 4085, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 15177 (IconWithBadge)
+// Module 15187 (IconWithBadge)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,7 +31,7 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(15168)().value;
+    num2 = memo(15178)().value;
   }
   const sum = num + num2;
   _require = sum;
@@ -70,7 +70,7 @@ function IconWithBadge(includeNotificationsCount) {
   obj2.cutouts = items4;
   const obj3 = { size: "md", style: tmp.backIcon, color: "interactive-text-default" };
   obj2.children = callback(includeNotificationsCount.Icon, obj3);
-  const items5 = [callback(memo(7961), obj2), ];
+  const items5 = [callback(memo(7909), obj2), ];
   let tmp12 = null;
   if (sum > 0) {
     const obj4 = { style: tmp.badgeWrapper };
@@ -119,7 +119,7 @@ export const LeftBackIconWithBadge = function LeftBackIconWithBadge(includeNotif
 export const CloseIconWithBadgeOnSide = function CloseIconWithBadgeOnSide(count) {
   count = count.count;
   let obj = { style: _createForOfIteratorHelperLoose().iconWithBadge };
-  const items = [callback(require(4084) /* XLargeIcon */.XLargeIcon, { size: "sm", color: "white" }), ];
+  const items = [callback(require(4085) /* XLargeIcon */.XLargeIcon, { size: "sm", color: "white" }), ];
   let tmp3 = null;
   if (count > 0) {
     obj = { value: count };

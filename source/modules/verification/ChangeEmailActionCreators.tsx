@@ -1,10 +1,10 @@
-// Module ID: 9227
-// Function ID: 72187
+// Module ID: 9119
+// Function ID: 71672
 // Name: _confirmEmailChange
-// Dependencies: [5, 653, 4942, 480, 2]
+// Dependencies: [5, 653, 4943, 480, 2]
 // Exports: confirmEmailChange, sendConfirmationCode
 
-// Module 9227 (_confirmEmailChange)
+// Module 9119 (_confirmEmailChange)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -21,7 +21,7 @@ export const sendConfirmationCode = function sendConfirmationCode() {
   if (arg0 === undefined) {
     flag = false;
   }
-  let obj = importDefault(4942);
+  let obj = importDefault(4943);
   obj = { url: Endpoints.USER_EMAIL };
   obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE, properties: obj1 };
   obj1 = { is_resend: flag };

@@ -1,10 +1,10 @@
-// Module ID: 6994
-// Function ID: 55948
+// Module ID: 5986
+// Function ID: 53256
 // Name: userRecordToServer
-// Dependencies: [6829, 1857, 1849, 653, 44, 6995, 2]
+// Dependencies: [5829, 1858, 1850, 653, 44, 5987, 2]
 // Exports: createBotMessage, default
 
-// Module 6994 (userRecordToServer)
+// Module 5986 (userRecordToServer)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ReferencedMessageState } from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -74,8 +74,8 @@ export default function createMessage(tts) {
   importDefault(44)(null != tmp9, "createMessage: author cannot be undefined");
   const obj = {};
   if (null == nonce) {
-    nonce = require(6995) /* snowflakeSequence */.createNonce();
-    const obj2 = require(6995) /* snowflakeSequence */;
+    nonce = require(5987) /* snowflakeSequence */.createNonce();
+    const obj2 = require(5987) /* snowflakeSequence */;
   }
   obj.id = nonce;
   obj.type = DEFAULT;
@@ -119,8 +119,8 @@ export const createBotMessage = function createBotMessage(arg0) {
   let obj = {};
   ({ channelId, content, loggingName } = arg0);
   if (null == messageId) {
-    messageId = require(6995) /* snowflakeSequence */.createNonce();
-    const obj2 = require(6995) /* snowflakeSequence */;
+    messageId = require(5987) /* snowflakeSequence */.createNonce();
+    const obj2 = require(5987) /* snowflakeSequence */;
   }
   obj.id = messageId;
   obj.type = constants2.DEFAULT;

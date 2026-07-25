@@ -1,10 +1,10 @@
-// Module ID: 13616
-// Function ID: 104617
+// Module ID: 13627
+// Function ID: 104744
 // Name: ChangeBannerColorRow
-// Dependencies: [5, 31, 27, 7930, 653, 33, 4130, 689, 5462, 3776, 4098, 4674, 5498, 5186, 1212, 7486, 5501, 5165, 7636, 13617, 566, 7943, 7974, 7971, 665, 7933, 13618, 13620, 4126, 1273, 13625, 2]
+// Dependencies: [5, 31, 27, 7877, 653, 33, 4131, 689, 5462, 3777, 4099, 4675, 5498, 5186, 1212, 6570, 5501, 5164, 7575, 13628, 566, 7890, 7922, 7919, 665, 7880, 13629, 13631, 4127, 1273, 13636, 2]
 // Exports: default
 
-// Module 13616 (ChangeBannerColorRow)
+// Module 13627 (ChangeBannerColorRow)
 import closure_3 from "jsxProd";
 import set from "set";
 import { View } from "styles";
@@ -29,16 +29,16 @@ function ChangeBannerColorRow(user) {
   const items = [_isNativeReflectConstruct];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_6.getPendingChanges());
   let pendingAccentColor = stateFromStoresObject.pendingAccentColor;
-  let obj1 = _require(7943);
+  let obj1 = _require(7890);
   obj = { userId: user.id, image: stateFromStoresObject.pendingAvatar };
   let pendingAvatarSrc = obj1.getPendingAvatarSrc(obj);
-  const tmp4 = num2(7974)(user.id);
+  const tmp4 = num2(7922)(user.id);
   if (null == pendingAvatarSrc) {
     pendingAvatarSrc = user.getAvatarURL(undefined, 80);
   }
-  let obj3 = _require(7971);
+  let obj3 = _require(7919);
   let obj4 = _require(665);
-  let obj5 = _require(7971);
+  let obj5 = _require(7919);
   const rgb2intResult = obj4.rgb2int(obj5.useDominantColorFromImage(pendingAvatarSrc, obj3.memoizedImageSource(pendingAvatarSrc)));
   _require = rgb2intResult;
   if (undefined === pendingAccentColor) {
@@ -62,7 +62,7 @@ function ChangeBannerColorRow(user) {
     if (arg0 === _undefined) {
       tmp = null;
     }
-    let obj = _undefined(7933);
+    let obj = _undefined(7880);
     obj = { accentColor: tmp };
     obj.setPendingChanges(obj);
   }, items1);
@@ -70,22 +70,22 @@ function ChangeBannerColorRow(user) {
   obj1 = { style: tmp.label };
   const intl = _require(1212).intl;
   obj1.text = intl.string(_require(1212).t.xzNfPz);
-  obj.label = callback(_require(7636).FormLabel, obj1);
+  obj.label = callback(_require(7575).FormLabel, obj1);
   const obj2 = { style: tmp.selectedColor };
   obj3 = { style: tmp.bannerColor, color: num2 };
-  const items2 = [callback(num2(13620), obj3), , ];
+  const items2 = [callback(num2(13631), obj3), , ];
   obj4 = { style: tmp.selectedColorHex, variant: "text-md/medium", color: "interactive-text-default" };
   const memoizedImageSourceResult = obj3.memoizedImageSource(pendingAvatarSrc);
   obj4.children = _require(665).int2hex(num2);
-  items2[1] = callback(_require(4126).Text, obj4);
-  obj5 = { style: tmp.rowArrow, size: _require(1273).Icon.Sizes.CUSTOM, source: num2(13625) };
+  items2[1] = callback(_require(4127).Text, obj4);
+  obj5 = { style: tmp.rowArrow, size: _require(1273).Icon.Sizes.CUSTOM, source: num2(13636) };
   items2[2] = callback(_require(1273).Icon, obj5);
   obj2.children = items2;
   obj.trailing = callback2(View, obj2);
   obj.onPress = function handleChangeColor() {
-    num2(13618)({ color: num2, onSelect: dependencyMap });
+    num2(13629)({ color: num2, onSelect: dependencyMap });
   };
-  return callback(_require(5165).TableRow, obj);
+  return callback(_require(5164).TableRow, obj);
 }
 ({ AnalyticsObjects: closure_7, UPLOAD_BANNER_SIZE: closure_8 } = ME);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
@@ -130,7 +130,7 @@ export default function ChangeBannerActionSheet(isTryItOut) {
   }
   const tmp = _createForOfIteratorHelperLoose();
   if (!flag) {
-    let obj = _handleBannerUploadSelect(3776);
+    let obj = _handleBannerUploadSelect(3777);
     flag = obj.canUsePremiumProfileCustomization(user);
   }
   obj = { value: _handleBannerUploadSelect(5462)(isTryItOut.analyticsLocations).analyticsLocations };
@@ -140,7 +140,7 @@ export default function ChangeBannerActionSheet(isTryItOut) {
   obj1.title = intl.string(require(1212) /* getSystemLocale */.t.Vgdusv);
   let tmp7 = flag;
   if (flag) {
-    tmp7 = callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, {});
+    tmp7 = callback(require(6570) /* NitroWheelIcon */.NitroWheelIcon, {});
   }
   obj1.trailing = tmp7;
   ({ titleWrapper: obj4.titleWrapperStyle, titleContainer: obj4.titleContainerStyle } = tmp);
@@ -164,11 +164,11 @@ export default function ChangeBannerActionSheet(isTryItOut) {
     stringResult = string(t["70CYsY"]);
   }
   obj6.text = stringResult;
-  const items2 = [callback(require(7636) /* Form */.FormLabel, obj6), ];
+  const items2 = [callback(require(7575) /* Form */.FormLabel, obj6), ];
   let tmp20 = !flag;
   if (tmp20) {
     const obj7 = { style: tmp.nitroWheel, size: "sm" };
-    tmp20 = callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, obj7);
+    tmp20 = callback(require(6570) /* NitroWheelIcon */.NitroWheelIcon, obj7);
   }
   items2[1] = tmp20;
   obj5.children = items2;
@@ -184,12 +184,12 @@ export default function ChangeBannerActionSheet(isTryItOut) {
     string2Result = string2(t2.NSTmdO);
   }
   obj9.text = string2Result;
-  const items3 = [callback(require(7636) /* Form */.FormSubLabel, obj9), ];
+  const items3 = [callback(require(7575) /* Form */.FormSubLabel, obj9), ];
   let tmp28 = !flag;
   if (tmp28) {
     const obj10 = { style: tmp.upsellButton };
     const obj11 = { analyticsObject: constants.EDIT_PROFILE_BANNER };
-    obj10.children = callback(_handleBannerUploadSelect(13617), obj11);
+    obj10.children = callback(_handleBannerUploadSelect(13628), obj11);
     tmp28 = callback(View, obj10);
   }
   items3[1] = tmp28;
@@ -202,7 +202,7 @@ export default function ChangeBannerActionSheet(isTryItOut) {
     };
   }
   obj4.onPress = handleBannerUploadSelect;
-  items1[1] = callback(require(5165) /* TableRowInner */.TableRow, obj4);
+  items1[1] = callback(require(5164) /* TableRowInner */.TableRow, obj4);
   if (showRemoveBanner) {
     const obj12 = {};
     const obj13 = {};
@@ -214,12 +214,12 @@ export default function ChangeBannerActionSheet(isTryItOut) {
       removeText = intl4.string(require(1212) /* getSystemLocale */.t.tT9n7D);
     }
     obj13.text = removeText;
-    obj12.label = callback(require(7636) /* Form */.FormLabel, obj13);
+    obj12.label = callback(require(7575) /* Form */.FormLabel, obj13);
     obj12.onPress = function handleBannerDelete() {
       callback(null);
       _handleBannerUploadSelect(outer1_2[10]).hideActionSheet();
     };
-    showRemoveBanner = callback(require(5165) /* TableRowInner */.TableRow, obj12);
+    showRemoveBanner = callback(require(5164) /* TableRowInner */.TableRow, obj12);
     const tmp35 = callback;
     const tmp38 = callback;
   }

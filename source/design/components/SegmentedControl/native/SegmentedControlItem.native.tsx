@@ -1,10 +1,10 @@
-// Module ID: 8800
-// Function ID: 69489
+// Module ID: 8688
+// Function ID: 68968
 // Name: SegmentedControlItem
-// Dependencies: [31, 27, 33, 4130, 689, 8321, 3991, 4542, 477, 1212, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 8056, 3992, 4543, 477, 1212, 4127, 2]
 // Exports: SegmentedControlItem
 
-// Module 8800 (SegmentedControlItem)
+// Module 8688 (SegmentedControlItem)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

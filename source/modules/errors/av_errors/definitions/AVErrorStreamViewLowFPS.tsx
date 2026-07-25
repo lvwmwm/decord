@@ -1,9 +1,9 @@
-// Module ID: 16577
-// Function ID: 129282
+// Module ID: 16588
+// Function ID: 129450
 // Name: AVErrorStreamViewLowFPSDefinition
-// Dependencies: [4143, 4149, 1194, 4216, 653, 16578, 4194, 8895, 8896, 16575, 2]
+// Dependencies: [4144, 4150, 1194, 4217, 653, 16589, 4195, 8783, 8784, 16586, 2]
 
-// Module 16577 (AVErrorStreamViewLowFPSDefinition)
+// Module 16588 (AVErrorStreamViewLowFPSDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

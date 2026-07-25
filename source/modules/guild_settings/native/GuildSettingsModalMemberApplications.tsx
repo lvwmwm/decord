@@ -1,9 +1,9 @@
-// Module ID: 15351
-// Function ID: 117039
+// Module ID: 15361
+// Function ID: 117167
 // Name: memoResult1
-// Dependencies: [31, 27, 6692, 33, 4130, 689, 3969, 4126, 15352, 1392, 5165, 1273, 1557, 15357, 3950, 15358, 566, 1212, 7527, 8547, 5448, 2]
+// Dependencies: [31, 27, 5686, 33, 4131, 689, 3970, 4127, 15362, 1392, 5164, 1273, 1557, 15367, 3951, 15368, 566, 1212, 6619, 8307, 5448, 2]
 
-// Module 15351 (memoResult1)
+// Module 15361 (memoResult1)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -28,7 +28,7 @@ obj.spinner = _createForOfIteratorHelperLoose;
 let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((user) => {
   user = user.user;
-  let obj = importDefault(3969);
+  let obj = importDefault(3970);
   const globalName = obj.getGlobalName(user);
   obj = {};
   obj = { variant: "text-md/semibold" };
@@ -37,11 +37,11 @@ const memoResult = importAllResult.memo((user) => {
     username = user.username;
   }
   obj.children = username;
-  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  const items = [callback(require(4127) /* Text */.Text, obj), ];
   let tmp5 = null != globalName;
   if (tmp5) {
     const obj1 = { variant: "text-xs/medium", children: user.username };
-    tmp5 = callback(require(4126) /* Text */.Text, obj1);
+    tmp5 = callback(require(4127) /* Text */.Text, obj1);
   }
   items[1] = tmp5;
   obj.children = items;
@@ -73,7 +73,7 @@ let closure_12 = importAllResult.memo((joinRequest) => {
       obj.onPress = tmp;
       obj.start = start;
       obj.end = end;
-      return callback(joinRequest(5165).TableRow, obj);
+      return callback(joinRequest(5164).TableRow, obj);
     }
   }
 });

@@ -1,9 +1,9 @@
-// Module ID: 6728
-// Function ID: 52431
+// Module ID: 5724
+// Function ID: 49744
 // Name: getGuildMemberSecondaryIndexes
-// Dependencies: [6, 7, 1849, 3754, 6729, 6730, 6732, 6733, 6739, 4276, 2]
+// Dependencies: [6, 7, 1850, 3755, 5725, 5726, 5728, 5729, 5735, 4277, 2]
 
-// Module 6728 (getGuildMemberSecondaryIndexes)
+// Module 5724 (getGuildMemberSecondaryIndexes)
 import getSortValueForMember from "getSortValueForMember";
 import getMemberSupplementalByGuildId from "getMemberSupplementalByGuildId";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ function getGuildMemberSecondarySortBy(arg0) {
   return arg0.sort;
 }
 function createMembersMap() {
-  const secondaryIndexMap = new require(3754) /* sortedInsert */.SecondaryIndexMap(getGuildMemberSecondaryIndexes, getGuildMemberSecondarySortBy);
+  const secondaryIndexMap = new require(3755) /* sortedInsert */.SecondaryIndexMap(getGuildMemberSecondaryIndexes, getGuildMemberSecondarySortBy);
   return secondaryIndexMap;
 }
 function hasUnusualDmActivity(arg0) {
@@ -29,7 +29,7 @@ function hasUnusualDmActivity(arg0) {
     const _Date = Date;
     const date = new Date(arg0);
     const time = date.getTime();
-    tmp = time >= closure_6 - require(6729) /* result */.UNUSUAL_DM_COMPARISON_DELTA;
+    tmp = time >= closure_6 - require(5725) /* result */.UNUSUAL_DM_COMPARISON_DELTA;
   }
   return tmp;
 }

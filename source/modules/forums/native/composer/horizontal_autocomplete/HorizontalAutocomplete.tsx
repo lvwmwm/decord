@@ -1,9 +1,9 @@
-// Module ID: 9677
-// Function ID: 75307
+// Module ID: 9601
+// Function ID: 74902
 // Name: HorizontalAutocompleteOption
-// Dependencies: [31, 27, 1910, 1838, 3767, 1849, 653, 33, 4130, 5052, 689, 3991, 4559, 4131, 1273, 4126, 3969, 566, 5487, 5488, 7897, 4593, 4320, 5085, 2]
+// Dependencies: [31, 27, 1911, 1838, 3768, 1850, 653, 33, 4131, 5053, 689, 3992, 4560, 4132, 1273, 4127, 3970, 566, 5487, 5488, 7844, 4594, 4321, 5085, 2]
 
-// Module 9677 (HorizontalAutocompleteOption)
+// Module 9601 (HorizontalAutocompleteOption)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -24,9 +24,9 @@ function HorizontalAutocompleteOption(arg0) {
   let children;
   let onPress;
   ({ children, onPress } = arg0);
-  let obj = sharedValue(3991);
+  let obj = sharedValue(3992);
   sharedValue = obj.useSharedValue(0);
-  importDefault(4559)(() => {
+  importDefault(4560)(() => {
     const result = sharedValue.set(sharedValue(outer1_2[13]).withTiming(1));
   });
   const tmp = _createForOfIteratorHelperLoose();
@@ -37,9 +37,9 @@ function HorizontalAutocompleteOption(arg0) {
   fn.__workletHash = 14159604656069;
   fn.__initData = closure_13;
   obj = { onPress };
-  const animatedStyle = sharedValue(3991).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(3992).useAnimatedStyle(fn);
   const items = [tmp.horizontalAutocompleteOption, animatedStyle];
-  obj.children = callback(importDefault(3991).View, { style: items, children });
+  obj.children = callback(importDefault(3992).View, { style: items, children });
   return callback(closure_3, obj);
 }
 ({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
@@ -74,15 +74,15 @@ let obj3 = {
     const obj1 = { style: items1, variant: "text-sm/semibold" };
     items1 = [tmp.nickname];
     if (null == nick) {
-      nick = importDefault(3969).getName(user);
-      const obj5 = importDefault(3969);
+      nick = importDefault(3970).getName(user);
+      const obj5 = importDefault(3970);
     }
     obj1.children = nick;
-    const items2 = [callback(require(4126) /* Text */.Text, obj1), ];
+    const items2 = [callback(require(4127) /* Text */.Text, obj1), ];
     const obj2 = { variant: "text-xs/medium", color: "text-muted" };
-    const items3 = ["@", importDefault(3969).getUserTag(user, { decoration: "never" })];
+    const items3 = ["@", importDefault(3970).getUserTag(user, { decoration: "never" })];
     obj2.children = items3;
-    items2[1] = callback2(require(4126) /* Text */.Text, obj2);
+    items2[1] = callback2(require(4127) /* Text */.Text, obj2);
     obj.children = items2;
     items[1] = callback2(closure_4, obj);
     obj.children = items;
@@ -143,9 +143,9 @@ let obj3 = {
     channel(566);
     [][0] = channel;
     if (channel.type === ChannelTypes.GUILD_CATEGORY) {
-      let channelIconWithGuild = importDefault(7897);
+      let channelIconWithGuild = importDefault(7844);
     } else {
-      let obj = channel(4593);
+      let obj = channel(4594);
       channelIconWithGuild = obj.getChannelIconWithGuild(channel, tmp3);
     }
     obj = { source: channelIconWithGuild };
@@ -153,8 +153,8 @@ let obj3 = {
     const tmp9 = callback(channel(1273).Icon, obj);
     obj = { onPress: channel.onPress };
     const items = [tmp9, ];
-    const channelName = channel(4320).computeChannelName(channel, closure_8, _isNativeReflectConstruct);
-    items[1] = callback(channel(4126).Text, { style: tmp.channelName, variant: "text-sm/semibold", children: channelName });
+    const channelName = channel(4321).computeChannelName(channel, closure_8, _isNativeReflectConstruct);
+    items[1] = callback(channel(4127).Text, { style: tmp.channelName, variant: "text-sm/semibold", children: channelName });
     obj.children = items;
     return callback2(HorizontalAutocompleteOption, obj);
   },
@@ -186,7 +186,7 @@ let obj3 = {
     const obj2 = { children: tmp5 };
     const items2 = [callback(closure_4, obj2), ];
     const obj3 = { style: tmp.emojiName, variant: "text-sm/semibold", children: ":" + name + ":" };
-    items2[1] = callback(require(4126) /* Text */.Text, obj3);
+    items2[1] = callback(require(4127) /* Text */.Text, obj3);
     obj1.children = items2;
     return callback2(HorizontalAutocompleteOption, obj1);
   }

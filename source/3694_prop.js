@@ -1,5 +1,5 @@
 // Module ID: 3694
-// Function ID: 28070
+// Function ID: 28080
 // Name: prop
 // Dependencies: []
 
@@ -10,14 +10,14 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { end: "{0} \uBC0F {1}", middle: "{0}, {1}", pair: "{0} \uBC0F {1}", start: "{0}, {1}" }, narrow: { end: "{0} \uBC0F {1}", middle: "{0}, {1}", pair: "{0} \uBC0F {1}", start: "{0}, {1}" }, short: { end: "{0} \uBC0F {1}", middle: "{0}, {1}", pair: "{0} \uBC0F {1}", start: "{0}, {1}" } };
+    obj = { long: { end: "{0}\u3001{1}", middle: "{0}\u3001{1}", pair: "{0}\u3001{1}", start: "{0}\u3001{1}" }, narrow: { end: "{0}\u3001{1}", middle: "{0}\u3001{1}", pair: "{0}\u3001{1}", start: "{0}\u3001{1}" }, short: { end: "{0}\u3001{1}", middle: "{0}\u3001{1}", pair: "{0}\u3001{1}", start: "{0}\u3001{1}" } };
     obj.conjunction = obj;
-    const obj1 = { long: { end: "{0} \uB610\uB294 {1}", middle: "{0}, {1}", pair: "{0} \uB610\uB294 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \uB610\uB294 {1}", middle: "{0}, {1}", pair: "{0} \uB610\uB294 {1}", start: "{0}, {1}" }, short: { end: "{0} \uB610\uB294 {1}", middle: "{0}, {1}", pair: "{0} \uB610\uB294 {1}", start: "{0}, {1}" } };
+    const obj1 = { long: { end: "{0}\u3001\u307E\u305F\u306F{1}", middle: "{0}\u3001{1}", pair: "{0}\u307E\u305F\u306F{1}", start: "{0}\u3001{1}" }, narrow: { end: "{0}\u3001\u307E\u305F\u306F{1}", middle: "{0}\u3001{1}", pair: "{0}\u307E\u305F\u306F{1}", start: "{0}\u3001{1}" }, short: { end: "{0}\u3001\u307E\u305F\u306F{1}", middle: "{0}\u3001{1}", pair: "{0}\u307E\u305F\u306F{1}", start: "{0}\u3001{1}" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" } };
+    const obj2 = { long: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, narrow: { end: "{0}{1}", middle: "{0}{1}", pair: "{0}{1}", start: "{0}{1}" }, short: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" } };
     obj.unit = obj2;
     obj.data = obj;
-    obj.locale = "ko";
+    obj.locale = "ja";
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { end: "{0} \uBC0F {1}", middle: "{0}, {1}", pair: "{0} \uBC0F {1}", start: "{0}, {1}" }, narrow: { end: "{0} \uBC0F {1}", middle: "{0}, {1}", pair: "{0} \uBC0F {1}", start: "{0}, {1}" }, short: { end: "{0} \uBC0F {1}", middle: "{0}, {1}", pair: "{0} \uBC0F {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} \uB610\uB294 {1}", middle: "{0}, {1}", pair: "{0} \uB610\uB294 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \uB610\uB294 {1}", middle: "{0}, {1}", pair: "{0} \uB610\uB294 {1}", start: "{0}, {1}" }, short: { end: "{0} \uB610\uB294 {1}", middle: "{0}, {1}", pair: "{0} \uB610\uB294 {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" } } }, locale: "ko" });
+prop.push({ data: { conjunction: { long: { end: "{0}\u3001{1}", middle: "{0}\u3001{1}", pair: "{0}\u3001{1}", start: "{0}\u3001{1}" }, narrow: { end: "{0}\u3001{1}", middle: "{0}\u3001{1}", pair: "{0}\u3001{1}", start: "{0}\u3001{1}" }, short: { end: "{0}\u3001{1}", middle: "{0}\u3001{1}", pair: "{0}\u3001{1}", start: "{0}\u3001{1}" } }, disjunction: { long: { end: "{0}\u3001\u307E\u305F\u306F{1}", middle: "{0}\u3001{1}", pair: "{0}\u307E\u305F\u306F{1}", start: "{0}\u3001{1}" }, narrow: { end: "{0}\u3001\u307E\u305F\u306F{1}", middle: "{0}\u3001{1}", pair: "{0}\u307E\u305F\u306F{1}", start: "{0}\u3001{1}" }, short: { end: "{0}\u3001\u307E\u305F\u306F{1}", middle: "{0}\u3001{1}", pair: "{0}\u307E\u305F\u306F{1}", start: "{0}\u3001{1}" } }, unit: { long: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, narrow: { end: "{0}{1}", middle: "{0}{1}", pair: "{0}{1}", start: "{0}{1}" }, short: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" } } }, locale: "ja" });

@@ -1,10 +1,10 @@
-// Module ID: 14633
-// Function ID: 111499
+// Module ID: 14644
+// Function ID: 111626
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 13603, 10128, 33, 4130, 689, 14624, 13608, 44, 13606, 8404, 8799, 8797, 2]
+// Dependencies: [57, 31, 27, 13614, 10060, 33, 4131, 689, 14635, 13619, 44, 13617, 8162, 8687, 8685, 2]
 // Exports: default
 
-// Module 14633 (_createForOfIteratorHelperLoose)
+// Module 14644 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -157,10 +157,10 @@ export default function SettingSegmentedControl(node) {
     });
     return items;
   }, items);
-  let obj = require(8404) /* useSegmentedControlState */;
+  let obj = require(8162) /* useSegmentedControlState */;
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: tmp3, defaultIndex: tmp5 });
   obj = {};
-  obj = { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8799) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) };
+  obj = { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8687) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) };
   const items1 = [callback2(View, obj), ];
   const tmp4 = callback(React.useState(() => {
     const field = outer1_6.getField("selected");
@@ -185,7 +185,7 @@ export default function SettingSegmentedControl(node) {
     }
     return closure_0;
   }), 2);
-  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(require(8797) /* SegmentedControlPage */.SegmentedControlPages, { state: segmentedControlState }) });
+  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(require(8685) /* SegmentedControlPage */.SegmentedControlPages, { state: segmentedControlState }) });
   obj.children = items1;
   return callback3(closure_9, obj);
 };

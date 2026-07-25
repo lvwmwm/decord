@@ -1,9 +1,9 @@
-// Module ID: 14098
-// Function ID: 108372
+// Module ID: 14109
+// Function ID: 108499
 // Name: renderDefaultButton
-// Dependencies: [29, 31, 6941, 653, 33, 7533, 9008, 1212, 10493, 566, 4979, 10952, 10497, 9504, 6962, 477, 4111, 10946, 10501, 6968, 3843, 14054, 9480, 7620, 14099, 4078, 6964, 5490, 4082, 9485, 9486, 9487, 6969, 9338, 2]
+// Dependencies: [29, 31, 5932, 653, 33, 6625, 8896, 1212, 10427, 566, 4980, 10903, 10431, 9425, 5953, 477, 4112, 10897, 10435, 5959, 3844, 14065, 9401, 7562, 14110, 4079, 5955, 5490, 4083, 9406, 9407, 9408, 5960, 9231, 2]
 
-// Module 14098 (renderDefaultButton)
+// Module 14109 (renderDefaultButton)
 import apexExperiment from "apexExperiment";
 import importAllResult from "AdUserActionType";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -14,13 +14,13 @@ const require = arg1;
 function renderDefaultButton(ref) {
   const obj = { ref: ref.ref };
   const merged = Object.assign(callback(ref, closure_3));
-  obj["icon"] = importDefault(9008);
+  obj["icon"] = importDefault(8896);
   obj["variant"] = "secondary";
   const intl = require(1212) /* getSystemLocale */.intl;
   obj["accessibilityLabel"] = intl.string(require(1212) /* getSystemLocale */.t.CAgr1w);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj["accessibilityHint"] = intl2.string(require(1212) /* getSystemLocale */.t.hd0b7t);
-  return jsx(require(7533) /* IconButton */.IconButton, { ref: ref.ref });
+  return jsx(require(6625) /* IconButton */.IconButton, { ref: ref.ref });
 }
 let closure_3 = ["ref"];
 const memoResult = importAllResult.memo((children) => {

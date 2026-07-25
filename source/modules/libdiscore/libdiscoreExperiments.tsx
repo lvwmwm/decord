@@ -1,10 +1,10 @@
-// Module ID: 1841
-// Function ID: 20201
+// Module ID: 1842
+// Function ID: 20212
 // Name: _callSuper
-// Dependencies: [15, 17, 18, 6, 7, 1842, 3, 1844, 44, 2]
+// Dependencies: [15, 17, 18, 6, 7, 1843, 3, 1845, 44, 2]
 // Exports: clearLibdiscoreExperimentCache, isExperimentSyncDisabled
 
-// Module 1841 (_callSuper)
+// Module 1842 (_callSuper)
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -358,8 +358,8 @@ export const clearLibdiscoreExperimentCache = function clearLibdiscoreExperiment
   if (obj.isLibdiscoreInitialized()) {
     importDefaultResult.info("Clearing libdiscore experiment cache and disabling sync");
     let c12 = true;
-    const experimentCacher = require(1844) /* isBlockedDomain */.getExperimentCacher();
+    const experimentCacher = require(1845) /* isBlockedDomain */.getExperimentCacher();
     experimentCacher.clearCache();
-    const obj2 = require(1844) /* isBlockedDomain */;
+    const obj2 = require(1845) /* isBlockedDomain */;
   }
 };

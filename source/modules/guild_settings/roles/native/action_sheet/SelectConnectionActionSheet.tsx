@@ -1,10 +1,10 @@
-// Module ID: 16380
-// Function ID: 127820
+// Module ID: 16391
+// Function ID: 127988
 // Name: IdentityApplicationRow
-// Dependencies: [57, 31, 27, 33, 10016, 5165, 1273, 4066, 5186, 1212, 6735, 1392, 3976, 4098, 8404, 5498, 8799, 5189, 5121, 5501, 2]
+// Dependencies: [57, 31, 27, 33, 9945, 5164, 1273, 4067, 5186, 1212, 5731, 1392, 3977, 4099, 8162, 5498, 8687, 5189, 5121, 5501, 2]
 // Exports: default
 
-// Module 16380 (IdentityApplicationRow)
+// Module 16391 (IdentityApplicationRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -17,7 +17,7 @@ function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;
   ({ applicationId, onPress } = arg0);
-  let obj = require(10016) /* useRequestApplication */;
+  let obj = require(9945) /* useRequestApplication */;
   const getOrFetchApplicationBatched = obj.useGetOrFetchApplicationBatched(applicationId);
   if (null == getOrFetchApplicationBatched) {
     return null;
@@ -37,7 +37,7 @@ function IdentityApplicationRow(arg0) {
     }
     obj.subLabel = description;
     obj.onPress = onPress;
-    return callback2(require(5165) /* TableRowInner */.TableRow, obj);
+    return callback2(require(5164) /* TableRowInner */.TableRow, obj);
   }
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -52,7 +52,7 @@ export default function SelectConnectionActionSheet(arg0) {
   let onCompleteIdentityApplication;
   let require;
   ({ addConnection: require, excludedConnections: importDefault, excludedApplications: dependencyMap, integrations, onCompleteApplication: _slicedToArray, gameApplicationIds, onCompleteIdentityApplication } = arg0);
-  let closure_5 = importDefault(4066)();
+  let closure_5 = importDefault(4067)();
   let obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.Sm0YG7);
@@ -78,7 +78,7 @@ export default function SelectConnectionActionSheet(arg0) {
       return tmp2;
     });
   }
-  let obj1 = require(6735) /* usePlatformAllowed */;
+  let obj1 = require(5731) /* usePlatformAllowed */;
   const platforms = obj1.usePlatforms();
   const found1 = platforms.filter((type) => !set.has(type.type));
   let mapped1;
@@ -158,7 +158,7 @@ export default function SelectConnectionActionSheet(arg0) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
     items.push(intl4.string(require(1212) /* getSystemLocale */.t.y3ZnnU));
   }
-  let obj2 = require(8404) /* useSegmentedControlState */;
+  let obj2 = require(8162) /* useSegmentedControlState */;
   obj = { pageWidth: 0, defaultIndex: first, onSetActiveIndex: tmp2[1], items: items.map((id) => ({ id, label: id, page: null })) };
   const segmentedControlState = obj2.useSegmentedControlState(obj);
   if (1 === first) {
@@ -177,7 +177,7 @@ export default function SelectConnectionActionSheet(arg0) {
   if (num > 0) {
     obj1 = {};
     obj2 = { state: segmentedControlState };
-    obj1.children = callback2(require(8799) /* SegmentedControl */.SegmentedControl, obj2);
+    obj1.children = callback2(require(8687) /* SegmentedControl */.SegmentedControl, obj2);
     let tmp19 = callback2(closure_5, obj1);
   } else {
     tmp19 = null;

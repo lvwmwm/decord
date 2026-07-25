@@ -1,8 +1,8 @@
-// Module ID: 11793
-// Function ID: 91574
-// Dependencies: [5, 653, 4942, 480, 1361, 507, 686, 2]
+// Module ID: 11769
+// Function ID: 91379
+// Dependencies: [5, 653, 4943, 480, 1361, 507, 686, 2]
 
-// Module 11793
+// Module 11769
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";
 
@@ -11,7 +11,7 @@ const result = require("makeRequest").fileFinishedImporting("actions/HubActionCr
 
 export default {
   signup(email, school) {
-    let obj = importDefault(4942);
+    let obj = importDefault(4943);
     obj = { url: Endpoints.HUB_WAITLIST_SIGNUP, body: obj };
     obj = {
       email,

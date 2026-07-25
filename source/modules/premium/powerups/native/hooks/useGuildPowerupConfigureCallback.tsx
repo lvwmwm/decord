@@ -1,10 +1,10 @@
-// Module ID: 11604
-// Function ID: 90278
+// Module ID: 11571
+// Function ID: 90001
 // Name: useGuildPowerupConfigureCallback
-// Dependencies: [31, 653, 4098, 11579, 4021, 8482, 8485, 44, 2]
+// Dependencies: [31, 653, 4099, 11545, 4022, 8242, 8245, 44, 2]
 // Exports: default
 
-// Module 11604 (useGuildPowerupConfigureCallback)
+// Module 11571 (useGuildPowerupConfigureCallback)
 import result from "result";
 import ME from "ME";
 

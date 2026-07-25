@@ -1,10 +1,10 @@
-// Module ID: 7073
-// Function ID: 56564
+// Module ID: 6091
+// Function ID: 54376
 // Name: getStepwiseValue
-// Dependencies: [6920, 688, 2]
+// Dependencies: [5911, 688, 2]
 // Exports: getComboPercentage, getComboScore, getComboShakeIntensity, getComboStyles
 
-// Module 7073 (getStepwiseValue)
+// Module 6091 (getStepwiseValue)
 import ConfettiLocation from "ConfettiLocation";
 
 let closure_2;

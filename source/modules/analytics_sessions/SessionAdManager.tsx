@@ -1,9 +1,9 @@
-// Module ID: 13522
-// Function ID: 104001
+// Module ID: 13533
+// Function ID: 104128
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 653, 6698, 4015, 664, 1184, 6961, 675, 686, 4530, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 653, 5694, 4016, 664, 1184, 5952, 675, 686, 4531, 2]
 
-// Module 13522 (_isNativeReflectConstruct)
+// Module 13533 (_isNativeReflectConstruct)
 import closure_3 from "ME";
 import isForegrounded from "isForegrounded";
 import set from "set";

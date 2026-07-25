@@ -1,10 +1,10 @@
-// Module ID: 11257
-// Function ID: 87659
+// Module ID: 11218
+// Function ID: 87304
 // Name: ExpandableList
-// Dependencies: [57, 31, 27, 33, 4130, 8328, 3991, 4131, 4134, 5165, 1212, 4126, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 8063, 3992, 4132, 4135, 5164, 1212, 4127, 2]
 // Exports: default
 
-// Module 11257 (ExpandableList)
+// Module 11218 (ExpandableList)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -62,7 +62,7 @@ export default function ExpandableList(items) {
   const tmp4 = expandedOverride(React.useState(tmp3), 2);
   first = tmp4[0];
   closure_6 = tmp4[1];
-  const tmp6 = onExpand(8328)(first);
+  const tmp6 = onExpand(8063)(first);
   let tmp7 = first;
   if (null != tmp6) {
     tmp7 = tmp6;
@@ -86,11 +86,11 @@ export default function ExpandableList(items) {
   if (null == showsExpandCTAOverride) {
     showsExpandCTAOverride = items.length > bound;
   }
-  let obj = items(3991);
+  let obj = items(3992);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = items(3991);
+  let obj1 = items(3992);
   sharedValue1 = obj1.useSharedValue(0);
-  let obj2 = items(3991);
+  let obj2 = items(3992);
   class A {
     constructor() {
       if (c5) {
@@ -119,7 +119,7 @@ export default function ExpandableList(items) {
   const items4 = [items, bound];
   const memo = React.useMemo(() => items.slice(0, bound), items3);
   const memo1 = React.useMemo(() => items.slice(bound, items.length), items4);
-  let obj3 = items(3991);
+  let obj3 = items(3992);
   class I {
     constructor() {
       if (0 !== c9.get()) {
@@ -138,7 +138,7 @@ export default function ExpandableList(items) {
       return obj;
     }
   }
-  obj = { collapsedListHeight: sharedValue, withTiming: items(4131).withTiming, containerHeight: derivedValue, timingStandard: items(4134).timingStandard };
+  obj = { collapsedListHeight: sharedValue, withTiming: items(4132).withTiming, containerHeight: derivedValue, timingStandard: items(4135).timingStandard };
   I.__closure = obj;
   I.__workletHash = 2086836441465;
   I.__initData = derivedValue;
@@ -176,7 +176,7 @@ export default function ExpandableList(items) {
   }
   items6[1] = tmp22Result;
   obj1.children = items6;
-  const items7 = [c7(onExpand(3991).View, obj1), ];
+  const items7 = [c7(onExpand(3992).View, obj1), ];
   if (!showsExpandCTAOverride) {
     items7[1] = showsExpandCTAOverride;
     obj.children = items7;
@@ -204,7 +204,7 @@ export default function ExpandableList(items) {
       stringResult1 = intl3.format(tmp37(tmp38[num5]).t.gVw57p, {});
     }
     obj10.children = stringResult1;
-    obj10 = tmp33(items(4126).Text, obj10);
+    obj10 = tmp33(items(4127).Text, obj10);
     obj9.children = obj10;
     obj9 = tmp33(first, obj9);
     obj7.label = obj9;
@@ -220,7 +220,7 @@ export default function ExpandableList(items) {
       }
     };
     obj7.end = true;
-    obj7 = tmp24(items(5165).TableRow, obj7);
+    obj7 = tmp24(items(5164).TableRow, obj7);
     obj6.children = obj7;
     closure_6(first, obj6);
     const tmp25 = first;

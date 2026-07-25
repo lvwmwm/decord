@@ -1,9 +1,9 @@
-// Module ID: 1893
-// Function ID: 21160
+// Module ID: 1894
+// Function ID: 21171
 // Name: EntityDao
-// Dependencies: [6, 7, 1887, 1889, 2]
+// Dependencies: [6, 7, 1888, 1890, 2]
 
-// Module 1893 (EntityDao)
+// Module 1894 (EntityDao)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

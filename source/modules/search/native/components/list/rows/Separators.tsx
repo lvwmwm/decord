@@ -1,10 +1,10 @@
-// Module ID: 15390
-// Function ID: 117457
+// Module ID: 15400
+// Function ID: 117585
 // Name: MessageVerticalSeparator
-// Dependencies: [31, 27, 9141, 33, 4130, 2]
+// Dependencies: [31, 27, 9033, 33, 4131, 2]
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 15390 (MessageVerticalSeparator)
+// Module 15400 (MessageVerticalSeparator)
 import "result";
 import { View } from "get ActivityIndicator";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";

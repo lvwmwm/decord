@@ -1,7 +1,7 @@
 // Module ID: 5088
-// Function ID: 44318
+// Function ID: 44326
 // Name: useHeaderDebugOverlay
-// Dependencies: [31, 27, 33, 4130, 689, 5089, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5089, 4127, 2]
 // Exports: default
 
 // Module 5088 (useHeaderDebugOverlay)
@@ -51,7 +51,7 @@ export default function useHeaderDebugOverlay(arg0, arg1) {
     const items2 = [tmp3.badge, tmp6];
     obj1.style = items2;
     const obj2 = { variant: "text-xs/bold", color: "text-overlay-light", children: tmp };
-    obj1.children = callback(require(4126) /* Text */.Text, obj2);
+    obj1.children = callback(require(4127) /* Text */.Text, obj2);
     obj.children = callback(View, obj1);
     items1[1] = callback(View, obj);
     obj.children = items1;

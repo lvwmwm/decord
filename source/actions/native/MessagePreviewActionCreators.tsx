@@ -1,8 +1,8 @@
-// Module ID: 10060
-// Function ID: 77665
+// Module ID: 9989
+// Function ID: 77284
 // Dependencies: [653, 507, 686, 2]
 
-// Module 10060
+// Module 9989
 import ME from "ME";
 
 let closure_3;

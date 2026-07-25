@@ -1,9 +1,9 @@
-// Module ID: 1889
-// Function ID: 21085
+// Module ID: 1890
+// Function ID: 21096
 // Name: TableId
 // Dependencies: [2]
 
-// Module 1889 (TableId)
+// Module 1890 (TableId)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/types/index.tsx");
 
 export const TableId = { Kv: "kv", KvCache: "kv_cache", Messages: "messages" };

@@ -1,10 +1,10 @@
-// Module ID: 7828
-// Function ID: 61800
+// Module ID: 7775
+// Function ID: 61772
 // Name: createReferralTrialEmbedRedesign
-// Dependencies: [1348, 1849, 3782, 6688, 5619, 653, 1851, 4130, 689, 5622, 7829, 1212, 3969, 1920, 3776, 6687, 7830, 1553, 7724, 7487, 2]
+// Dependencies: [1348, 1850, 3783, 6157, 5619, 653, 1852, 4131, 689, 5622, 7776, 1212, 3970, 1921, 3777, 6189, 7777, 1553, 7670, 6571, 2]
 // Exports: createReferralTrialEmbedRedesign
 
-// Module 7828 (createReferralTrialEmbedRedesign)
+// Module 7775 (createReferralTrialEmbedRedesign)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -27,7 +27,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
   let titleColor;
   if (null != message.author) {
     let obj = { titleColor: importDefault(689).colors.TEXT_DEFAULT, headerTextColor: importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY, bodyTextColor: importDefault(689).colors.TEXT_SUBTLE, footerTextColor: importDefault(689).colors.TEXT_MUTED, subTextColor: importDefault(689).colors.TEXT_SUBTLE, backgroundColor: importDefault(689).colors.BACKGROUND_MOD_NORMAL, acceptLabelColor: importDefault(689).colors.WHITE, linkTextColor: importDefault(689).colors.TEXT_LINK };
-    const tmp75 = require(4130) /* _createForOfIteratorHelperLoose */.createNativeStyleProperties(obj)(theme);
+    const tmp75 = require(4131) /* _createForOfIteratorHelperLoose */.createNativeStyleProperties(obj)(theme);
     ({ titleColor, headerTextColor, bodyTextColor, backgroundColor } = tmp75);
     ({ footerTextColor, subTextColor, acceptLabelColor, linkTextColor } = tmp75);
     channel = channel.getChannel(message.getChannelId());
@@ -45,22 +45,22 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
         const user1 = authStore.getUser(referrer_id);
         if (null != user) {
           if (null != user1) {
-            const name = importDefault(3969).getName(user1);
+            const name = importDefault(3970).getName(user1);
             const intl10 = require(1212) /* getSystemLocale */.intl;
             obj = { sender: name };
-            const obj27 = importDefault(3969);
-            obj.helpdeskArticle = importDefault(1920).getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
-            const obj29 = importDefault(1920);
+            const obj27 = importDefault(3970);
+            obj.helpdeskArticle = importDefault(1921).getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
+            const obj29 = importDefault(1921);
             const intl11 = require(1212) /* getSystemLocale */.intl;
             let obj1 = { sender: name };
             let obj2 = { action: "bindOpenUrl" };
             const formatToPlainStringResult = intl10.formatToPlainString(require(1212) /* getSystemLocale */.t.yisueA, obj);
-            obj2.url = importDefault(1920).getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
+            obj2.url = importDefault(1921).getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
             obj2.linkColor = linkTextColor;
             obj1.helpdeskArticle = obj2;
             let obj3 = { titleText: formatToPlainStringResult, titleColor };
-            const obj32 = importDefault(1920);
-            obj3.headerImageUrl = importDefault(7829);
+            const obj32 = importDefault(1921);
+            obj3.headerImageUrl = importDefault(7776);
             const intl12 = require(1212) /* getSystemLocale */.intl;
             obj3.headerText = intl12.string(require(1212) /* getSystemLocale */.t.HtTvXA);
             obj3.headerColor = headerTextColor;
@@ -86,7 +86,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
                 const values = Object.values(outer1_0(outer1_2[9]).TrialIdToProductOfferId[outer1_9]);
                 return values.every((arg0) => set.has(arg0));
               })();
-              obj = importDefault(3776);
+              obj = importDefault(3777);
               const isPremiumResult = obj.isPremium(user);
               let tmp12 = isPremiumResult;
               if (!isPremiumResult) {
@@ -95,20 +95,20 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
                   tmp12 = null != premiumTypeSubscription.getPremiumTypeSubscription();
                 }
               }
-              obj1 = require(6687) /* hasUserTrialOfferExpired */;
+              obj1 = require(6189) /* hasUserTrialOfferExpired */;
               const result = obj1.hasUserTrialOfferExpired(relevantUserTrialOffer);
-              obj2 = importDefault(3969);
+              obj2 = importDefault(3970);
               const name1 = obj2.getName(user);
               if (null != relevantUserTrialOffer.expires_at) {
                 if (!result) {
                   if (!tmp12) {
                     if (!tmp19) {
-                      obj3 = require(7830) /* isReferralProgramPopoverSeen */;
+                      obj3 = require(7777) /* isReferralProgramPopoverSeen */;
                       const _Date = Date;
                       const referralTrialOfferExpirationCopy = obj3.getReferralTrialOfferExpirationCopy(Date.parse(relevantUserTrialOffer.expires_at));
                       const intl = require(1212) /* getSystemLocale */.intl;
                       let obj5 = {};
-                      obj5 = require(3776) /* _createForOfIteratorHelperLoose */;
+                      obj5 = require(3777) /* _createForOfIteratorHelperLoose */;
                       const obj6 = {};
                       const subscription_trial = relevantUserTrialOffer.subscription_trial;
                       let interval;
@@ -136,7 +136,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
                     const intl2 = require(1212) /* getSystemLocale */.intl;
                     const obj7 = {};
                     const obj8 = { action: "bindOpenUrl" };
-                    let obj9 = importDefault(1920);
+                    let obj9 = importDefault(1921);
                     obj8.url = obj9.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
                     obj7.helpdeskArticle = obj8;
                     let formatToPartsResult1 = intl2.formatToParts(require(1212) /* getSystemLocale */.t.LwCwT9, obj7);
@@ -159,9 +159,9 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
                     const intl7 = require(1212) /* getSystemLocale */.intl;
                     obj10["acceptLabelText"] = intl7.string(require(1212) /* getSystemLocale */.t.bXTClc);
                     obj10["acceptLabelColor"] = acceptLabelColor;
-                    obj10["acceptLabelIconUrl"] = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7487));
+                    obj10["acceptLabelIconUrl"] = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(6571));
                     tmp56 = obj10;
-                    const obj21 = require(7724) /* frozen */;
+                    const obj21 = require(7670) /* frozen */;
                   }
                   return tmp56;
                 }
@@ -186,7 +186,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
                       const obj12 = {};
                       let obj13 = { action: "bindOpenUrl" };
                       const isMetaQuestResult = obj10.isMetaQuest();
-                      obj13 = importDefault(1920);
+                      obj13 = importDefault(1921);
                       obj13.url = obj13.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
                       obj12.helpdeskArticle = obj13;
                       let formatToPartsResult2 = intl4.formatToParts(obj10.isMetaQuest() ? t.yqX4Dr : t["7O7Zg3"], obj12);
@@ -198,7 +198,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
                 const intl5 = require(1212) /* getSystemLocale */.intl;
                 const obj14 = {};
                 const obj15 = { action: "bindOpenUrl" };
-                let obj16 = importDefault(1920);
+                let obj16 = importDefault(1921);
                 obj15.url = obj16.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
                 obj14.helpdeskArticle = obj15;
                 obj14.username = name;
@@ -213,7 +213,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
             const formatToPartsResult = intl11.formatToParts(require(1212) /* getSystemLocale */.t.yisueA, obj1);
           }
         }
-        obj16 = { titleText: "", titleColor, headerImageUrl: importDefault(7829), headerText: "", headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor };
+        obj16 = { titleText: "", titleColor, headerImageUrl: importDefault(7776), headerText: "", headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor };
         const intl9 = require(1212) /* getSystemLocale */.intl;
         obj16.bodyText = intl9.string(require(1212) /* getSystemLocale */.t.eEz1N5);
         obj16.bodyTextColor = bodyTextColor;
@@ -221,6 +221,6 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
         return obj16;
       }
     }
-    const obj24 = require(4130) /* _createForOfIteratorHelperLoose */;
+    const obj24 = require(4131) /* _createForOfIteratorHelperLoose */;
   }
 };

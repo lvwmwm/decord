@@ -1,15 +1,15 @@
-// Module ID: 14231
-// Function ID: 109319
+// Module ID: 14242
+// Function ID: 109446
 // Name: ActivityCardsItem
-// Dependencies: [31, 33, 7527, 689, 14232, 2]
+// Dependencies: [31, 33, 6619, 689, 14243, 2]
 // Exports: default
 
-// Module 14231 (ActivityCardsItem)
+// Module 14242 (ActivityCardsItem)
 import "result";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("defaultMVCPConfig").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardsItem.tsx");
+const result = require("useModalDismissGuardRefreshControl").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardsItem.tsx");
 
 export default function ActivityCardsItem(animatedStyles) {
   animatedStyles = animatedStyles.animatedStyles;
@@ -26,5 +26,5 @@ export default function ActivityCardsItem(animatedStyles) {
   };
   obj.showsHorizontalScrollIndicator = false;
   obj.horizontal = true;
-  return jsx(animatedStyles(7527).FlashList, { paddingVertical: importDefault(689).space.PX_16, paddingHorizontal: importDefault(689).space.PX_16 });
+  return jsx(animatedStyles(6619).FlashList, { paddingVertical: importDefault(689).space.PX_16, paddingHorizontal: importDefault(689).space.PX_16 });
 };

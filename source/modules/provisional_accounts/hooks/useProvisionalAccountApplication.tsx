@@ -1,10 +1,10 @@
-// Module ID: 11690
-// Function ID: 90689
+// Module ID: 11659
+// Function ID: 90433
 // Name: useProvisionalAccountApplication
-// Dependencies: [6900, 566, 5468, 2]
+// Dependencies: [5891, 566, 5468, 2]
 // Exports: default
 
-// Module 11690 (useProvisionalAccountApplication)
+// Module 11659 (useProvisionalAccountApplication)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

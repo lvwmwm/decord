@@ -1,10 +1,10 @@
-// Module ID: 4803
-// Function ID: 41752
+// Module ID: 4804
+// Function ID: 41764
 // Name: mergeMessage
-// Dependencies: [153, 6, 7, 653, 3, 4351, 22, 4062, 21, 4804, 4805, 4806, 4807, 2]
+// Dependencies: [153, 6, 7, 653, 3, 4352, 22, 4063, 21, 4805, 4806, 4807, 4808, 2]
 // Exports: flatMapChannelMessages
 
-// Module 4803 (mergeMessage)
+// Module 4804 (mergeMessage)
 import "_readOnlyError";
 import apply from "apply";
 import GuildThemeSourcePreference from "GuildThemeSourcePreference";
@@ -48,7 +48,7 @@ function mergeMessage(get, id) {
     }
     return messageRecord;
   }
-  messageRecord = require(4351) /* createMinimalMessageRecord */.createMessageRecord(id);
+  messageRecord = require(4352) /* createMinimalMessageRecord */.createMessageRecord(id);
 }
 ({ MAX_MESSAGES_PER_CHANNEL: closure_6, MAX_LOADED_MESSAGES: closure_7, MAX_MESSAGE_CACHE_SIZE: closure_8, TRUNCATED_MESSAGE_VIEW_SIZE: closure_9, MessageStates: closure_10 } = ME);
 importDefaultResult1 = new importDefaultResult1("ChannelMessages");

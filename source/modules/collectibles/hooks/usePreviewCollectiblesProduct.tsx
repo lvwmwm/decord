@@ -1,10 +1,10 @@
-// Module ID: 8781
-// Function ID: 69348
+// Module ID: 8669
+// Function ID: 68825
 // Name: usePreviewCollectibleProduct
-// Dependencies: [57, 31, 6779, 1874, 6780, 6781, 8251, 1876, 7933, 2]
+// Dependencies: [57, 31, 5775, 1875, 5776, 5777, 7984, 1877, 7880, 2]
 // Exports: usePreviewCollectibleProduct
 
-// Module 8781 (usePreviewCollectibleProduct)
+// Module 8669 (usePreviewCollectibleProduct)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
@@ -19,14 +19,14 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
   const _require = product;
   const dependencyMap = arg1;
   let _slicedToArray = arg2;
-  const shopProductItems = _require(8251).useShopProductItems(product);
+  const shopProductItems = _require(7984).useShopProductItems(product);
   const firstProfileEffect = shopProductItems.firstProfileEffect;
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstNameplate = shopProductItems.firstNameplate;
   const firstProfileFrame = shopProductItems.firstProfileFrame;
   const items = [product, arg1, firstProfileEffect, firstAvatarDecoration, firstNameplate, firstProfileFrame, arg2];
   const effect = firstProfileEffect.useEffect(() => {
-    if (product.type === product(1876).CollectiblesItemType.BUNDLE) {
+    if (product.type === product(1877).CollectiblesItemType.BUNDLE) {
       let obj = {};
       if (null != firstAvatarDecoration) {
         obj.avatarDecoration = firstAvatarDecoration;
@@ -54,24 +54,24 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
           obj.nameplate = callback;
         }
       }
-      product(7933).setPendingChanges(obj);
-      const obj10 = product(7933);
+      product(7880).setPendingChanges(obj);
+      const obj10 = product(7880);
     } else {
       const first = callback(product.items, 1)[0];
       if (firstAvatarDecoration(first)) {
         obj = { avatarDecoration: first };
-        product(7933).setPendingChanges(obj);
-        const obj7 = product(7933);
+        product(7880).setPendingChanges(obj);
+        const obj7 = product(7880);
       } else if (firstProfileFrame(first)) {
         const obj1 = { profileEffect: first };
-        product(7933).setPendingChanges(obj1);
-        const obj5 = product(7933);
+        product(7880).setPendingChanges(obj1);
+        const obj5 = product(7880);
       } else if (firstNameplate(first)) {
-        let obj2 = product(7933);
+        let obj2 = product(7880);
         obj2 = { nameplate: first };
         obj2.setPendingChanges(obj2);
       } else if (outer1_7(first)) {
-        obj = product(7933);
+        obj = product(7880);
         const obj3 = { profileFrame: first };
         obj.setPendingChanges(obj3);
       }

@@ -1,10 +1,10 @@
-// Module ID: 15921
-// Function ID: 122975
+// Module ID: 15932
+// Function ID: 123143
 // Name: VoicePanelNoVideoPermissionsAlert
-// Dependencies: [31, 33, 4475, 4475, 1212, 2]
+// Dependencies: [31, 33, 4476, 4476, 1212, 2]
 // Exports: default
 
-// Module 15921 (VoicePanelNoVideoPermissionsAlert)
+// Module 15932 (VoicePanelNoVideoPermissionsAlert)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("getAlertModalItemKey").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNoVideoPermissionsAlert.tsx");
 
 export default function VoicePanelNoVideoPermissionsAlert() {
-  let obj = require(4475) /* getAlertModalItemKey */;
+  let obj = require(4476) /* getAlertModalItemKey */;
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.OYzPcW);
@@ -22,7 +22,7 @@ export default function VoicePanelNoVideoPermissionsAlert() {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t["NX+WJN"]);
   obj.onPress = obj.useDismissModalCallback();
-  obj.actions = jsx(require(4475) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary" });
-  return jsx(require(4475) /* getAlertModalItemKey */.AlertModal, { variant: "secondary" });
+  obj.actions = jsx(require(4476) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary" });
+  return jsx(require(4476) /* getAlertModalItemKey */.AlertModal, { variant: "secondary" });
 };
 export const VOICE_PANEL_NO_VIDEO_PERMS_KEY = "voice-panel-no-video-perms";

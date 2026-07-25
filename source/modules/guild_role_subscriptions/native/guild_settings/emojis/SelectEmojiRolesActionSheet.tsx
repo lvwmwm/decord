@@ -1,10 +1,10 @@
-// Module ID: 16523
-// Function ID: 128690
+// Module ID: 16534
+// Function ID: 128858
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [57, 31, 27, 1277, 482, 33, 4130, 689, 5052, 14151, 4660, 1273, 1212, 5186, 5498, 7677, 7636, 4126, 2]
+// Dependencies: [57, 31, 27, 1277, 482, 33, 4131, 689, 5053, 14162, 4661, 1273, 1212, 5186, 5498, 7619, 7575, 4127, 2]
 // Exports: default
 
-// Module 16523 (SelectEmojiRolesActionSheet)
+// Module 16534 (SelectEmojiRolesActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -64,7 +64,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = require(14151) /* _createForOfIteratorHelperLoose */;
+  let obj = require(14162) /* _createForOfIteratorHelperLoose */;
   const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { includeSoftDeleted: true, sortDeletedListingsLast: true });
   obj = {
     onPress() {
@@ -95,11 +95,11 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   obj1.title = intl3.string(require(1212) /* getSystemLocale */.t.JPU0EF);
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj1.subtitle = intl4.string(require(1212) /* getSystemLocale */.t.MZusPv);
-  obj1.trailing = callback(require(4660) /* PressableBase */.PressableOpacity, obj);
-  const tmp5Result = callback(require(4660) /* PressableBase */.PressableOpacity, obj);
+  obj1.trailing = callback(require(4661) /* PressableBase */.PressableOpacity, obj);
+  const tmp5Result = callback(require(4661) /* PressableBase */.PressableOpacity, obj);
   let obj2 = { scrollable: true, header: callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj1), startExpanded: true, onDismiss: onCancel };
   let items1 = [subscriptionListingsForGuild.length];
-  obj2.children = callback(emoji(7677), {
+  obj2.children = callback(emoji(7619), {
     inActionSheet: true,
     style: tmp.list,
     itemSize: closure_9,

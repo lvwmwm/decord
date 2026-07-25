@@ -1,10 +1,10 @@
-// Module ID: 14178
-// Function ID: 109069
+// Module ID: 14189
+// Function ID: 109196
 // Name: EmojiGallery
-// Dependencies: [31, 27, 33, 9439, 9441, 14179, 2]
+// Dependencies: [31, 27, 33, 9359, 9361, 14190, 2]
 // Exports: default
 
-// Module 14178 (EmojiGallery)
+// Module 14189 (EmojiGallery)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,7 +22,7 @@ export default function EmojiGallery(emojiIds) {
   let obj = {};
   obj = {
     gap: 8,
-    children: importDefault(9439)(emojiIds.emojiIds, maxPerRow).map((arr) => {
+    children: importDefault(9359)(emojiIds.emojiIds, maxPerRow).map((arr) => {
       let obj = { style: { flexDirection: "row" } };
       obj = {
         gap: 16,
@@ -35,9 +35,9 @@ export default function EmojiGallery(emojiIds) {
       return outer1_4(outer1_3, obj, arg1);
     })
   };
-  obj.children = jsx(require(9441) /* GappedList */.GappedList, {
+  obj.children = jsx(require(9361) /* GappedList */.GappedList, {
     gap: 8,
-    children: importDefault(9439)(emojiIds.emojiIds, maxPerRow).map((arr) => {
+    children: importDefault(9359)(emojiIds.emojiIds, maxPerRow).map((arr) => {
       let obj = { style: { flexDirection: "row" } };
       obj = {
         gap: 16,
@@ -50,7 +50,7 @@ export default function EmojiGallery(emojiIds) {
       return outer1_4(outer1_3, obj, arg1);
     })
   });
-  return <View gap={8}>{importDefault(9439)(arg0.emojiIds, maxPerRow).map((arr) => {
+  return <View gap={8}>{importDefault(9359)(arg0.emojiIds, maxPerRow).map((arr) => {
     let obj = { style: { flexDirection: "row" } };
     obj = {
       gap: 16,

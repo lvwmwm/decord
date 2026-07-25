@@ -1,7 +1,7 @@
 // Module ID: 5600
-// Function ID: 47591
+// Function ID: 47596
 // Name: getChannelIdForGuildTransition
-// Dependencies: [5054, 1348, 1907, 1838, 1906, 5601, 653, 1355, 5605, 5607, 5609, 2]
+// Dependencies: [5055, 1348, 1908, 1838, 1907, 5601, 653, 1355, 5605, 5607, 5609, 2]
 // Exports: getChannelIdForGuildTransition
 
 // Module 5600 (getChannelIdForGuildTransition)

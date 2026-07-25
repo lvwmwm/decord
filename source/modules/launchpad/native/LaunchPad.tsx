@@ -1,9 +1,9 @@
-// Module ID: 15697
-// Function ID: 121008
+// Module ID: 15708
+// Function ID: 121177
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 3823, 6757, 5722, 5039, 1352, 1194, 1348, 6960, 6878, 12729, 4142, 4970, 4325, 4146, 653, 33, 689, 4130, 4660, 4126, 566, 3991, 3989, 5772, 1212, 11960, 10234, 14454, 477, 13556, 11837, 7104, 3981, 7105, 7093, 1450, 1557, 7094, 10840, 675, 15698, 15705, 13557, 15724, 15725, 2]
+// Dependencies: [57, 31, 27, 3824, 5750, 10192, 5040, 1352, 1194, 1348, 5951, 5868, 12740, 4143, 4971, 4326, 4147, 653, 33, 689, 4131, 4661, 4127, 566, 3992, 3990, 9171, 1212, 11936, 10167, 14465, 477, 13567, 11813, 6122, 3982, 6123, 6111, 1450, 1557, 6112, 10812, 675, 15709, 15716, 13568, 15735, 15736, 2]
 
-// Module 15697 (_createForOfIteratorHelperLoose)
+// Module 15708 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import { View } from "getSystemLocale";
@@ -134,15 +134,15 @@ function TabButton(selected) {
   obj.accessibilityState = { selected };
   const colors = importDefault(689).colors;
   obj.children = icon(selected ? colors.INTERACTIVE_TEXT_ACTIVE : colors.INTERACTIVE_TEXT_DEFAULT);
-  return closure_25(require(4660) /* PressableBase */.PressableHighlight, obj);
+  return closure_25(require(4661) /* PressableBase */.PressableHighlight, obj);
 }
 function TabHeader(text) {
   const obj = { style: callback3().subheader, variant: "heading-md/extrabold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: text.text };
-  return callback2(require(4126) /* Text */.Text, obj);
+  return callback2(require(4127) /* Text */.Text, obj);
 }
 function createAndAppendChannel(arg0, has, arr) {
   if (!has.has(arg0)) {
-    const tmp3 = importDefault(7104)(arg0);
+    const tmp3 = importDefault(6122)(arg0);
     if (null != tmp3) {
       arr.push(tmp3);
       has.add(arg0);

@@ -1,10 +1,10 @@
-// Module ID: 7071
-// Function ID: 56533
+// Module ID: 6089
+// Function ID: 54345
 // Name: updatePoggermodeSettings
-// Dependencies: [1194, 6919, 7072, 686, 7074, 2]
+// Dependencies: [1194, 5910, 6090, 686, 6092, 2]
 // Exports: clearMessageCombo, updateCombo, updateComboOnMessageSend, updatePoggermodeSettings
 
-// Module 7071 (updatePoggermodeSettings)
+// Module 6089 (updatePoggermodeSettings)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -18,7 +18,7 @@ export const updatePoggermodeSettings = function updatePoggermodeSettings(settin
   obj = {};
   const merged = Object.assign(state.getState());
   const merged1 = Object.assign(settings);
-  importDefault(7074)(obj);
+  importDefault(6092)(obj);
 };
 export const updateCombo = function updateCombo(arg0) {
   let obj = importDefault(686);

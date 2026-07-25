@@ -1,9 +1,9 @@
-// Module ID: 9234
-// Function ID: 72252
+// Module ID: 9126
+// Function ID: 71737
 // Name: PasswordResetMethods
 // Dependencies: [2]
 
-// Module 9234 (PasswordResetMethods)
+// Module 9126 (PasswordResetMethods)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/PasswordResetMethods.tsx");
 
 export const PasswordResetMethods = { ONE_TIME_LOGIN: "one_time_login", PASSWORD_RESET: "password_reset" };

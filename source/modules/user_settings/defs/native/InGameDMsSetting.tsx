@@ -1,9 +1,9 @@
-// Module ID: 14598
-// Function ID: 111304
+// Module ID: 14609
+// Function ID: 111431
 // Name: radio
-// Dependencies: [31, 7751, 3803, 1282, 1212, 10127, 2]
+// Dependencies: [31, 7697, 3804, 1282, 1212, 10059, 2]
 
-// Module 14598 (radio)
+// Module 14609 (radio)
 import result from "result";
 import createToggle from "createToggle";
 
@@ -32,7 +32,7 @@ createToggle = {
     }, []);
   },
   useValue: function useInGameDMsSettingValue() {
-    const SlayerSDKReceiveDMsInGame = require(3803) /* explicitContentFromProto */.SlayerSDKReceiveDMsInGame;
+    const SlayerSDKReceiveDMsInGame = require(3804) /* explicitContentFromProto */.SlayerSDKReceiveDMsInGame;
     let SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = SlayerSDKReceiveDMsInGame.useSetting();
     if (SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL === require(1282) /* _callSuper */.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET) {
       SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = require(1282) /* _callSuper */.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
@@ -40,7 +40,7 @@ createToggle = {
     return SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
   },
   onValueChange: function onInGameDMsSettingValueChange(arg0) {
-    const SlayerSDKReceiveDMsInGame = require(3803) /* explicitContentFromProto */.SlayerSDKReceiveDMsInGame;
+    const SlayerSDKReceiveDMsInGame = require(3804) /* explicitContentFromProto */.SlayerSDKReceiveDMsInGame;
     SlayerSDKReceiveDMsInGame.updateSetting(Number(arg0));
   },
   useSearchTerms() {

@@ -1,10 +1,10 @@
-// Module ID: 1922
-// Function ID: 21751
+// Module ID: 1923
+// Function ID: 21762
 // Name: _setAppLocale
-// Dependencies: [5, 677, 1923, 1212, 1933, 1250, 3204, 3679, 3710, 3712, 1184, 2]
+// Dependencies: [5, 677, 1924, 1212, 1934, 1250, 3205, 3680, 3711, 3713, 1184, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
-// Module 1922 (_setAppLocale)
+// Module 1923 (_setAppLocale)
 import module_1250 from "module_1250";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
@@ -81,7 +81,7 @@ const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) 
     isLoading: false,
     inProgressLocale: undefined,
     error: undefined,
-    localeData: importDefault(1923),
+    localeData: importDefault(1924),
     setLoadingStarted(inProgressLocale) {
       return callback({ isLoading: true, inProgressLocale });
     },
@@ -102,7 +102,7 @@ const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) 
     }
   };
 });
-const result = require("module_1923").fileFinishedImporting("intl/IntlLoaderStore.tsx");
+const result = require("module_1924").fileFinishedImporting("intl/IntlLoaderStore.tsx");
 
 export const useIntlLoaderStore = withEqualityFn;
 export const subscribeToIntlLoadingSuccess = function subscribeToIntlLoadingSuccess(arg0) {
@@ -119,7 +119,7 @@ export const setAppLocale = function setAppLocale() {
 export const useLocaleData = function useLocaleData() {
   let tmp = withEqualityFn((localeData) => localeData.localeData);
   if (null == tmp) {
-    tmp = importDefault(1923);
+    tmp = importDefault(1924);
   }
   return tmp;
 };

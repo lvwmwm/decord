@@ -1,10 +1,10 @@
-// Module ID: 9908
-// Function ID: 76664
+// Module ID: 9835
+// Function ID: 76274
 // Name: isStaffChannel
-// Dependencies: [1348, 1838, 1849, 653, 2]
+// Dependencies: [1348, 1838, 1850, 653, 2]
 // Exports: default
 
-// Module 9908 (isStaffChannel)
+// Module 9835 (isStaffChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_2 from "_isNativeReflectConstruct";

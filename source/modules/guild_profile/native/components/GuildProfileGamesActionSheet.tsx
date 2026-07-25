@@ -1,10 +1,10 @@
-// Module ID: 11909
-// Function ID: 92192
+// Module ID: 11885
+// Function ID: 91997
 // Name: GuildProfileGameRow
-// Dependencies: [31, 27, 33, 8631, 8642, 5165, 11903, 4130, 11907, 11908, 7186, 1212, 4098, 8621, 1934, 5187, 5189, 5501, 2]
+// Dependencies: [31, 27, 33, 8407, 8418, 5164, 11879, 4131, 11883, 11884, 7892, 1212, 4099, 8385, 1935, 5187, 5189, 5501, 2]
 // Exports: default
 
-// Module 11909 (GuildProfileGameRow)
+// Module 11885 (GuildProfileGameRow)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -15,19 +15,19 @@ function GuildProfileGameRow(activityLevel) {
   let clickable;
   let game;
   ({ game, clickable } = activityLevel);
-  let obj = { gameId: game.id, source: require(8642) /* GameProfileEmbedAction */.GameProfileSources.GuildProfileGames, trackEntryPointImpression: clickable };
-  const tmpResult = importDefault(8631)(obj);
+  let obj = { gameId: game.id, source: require(8418) /* GameProfileEmbedAction */.GameProfileSources.GuildProfileGames, trackEntryPointImpression: clickable };
+  const tmpResult = importDefault(8407)(obj);
   require = tmpResult;
   if (clickable) {
     clickable = null != tmpResult;
   }
-  obj = { icon: jsx(importDefault(11903), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable };
+  obj = { icon: jsx(importDefault(11879), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable };
   let fn;
   if (clickable) {
     fn = () => tmpResult();
   }
   obj.onPress = fn;
-  return jsx(require(5165) /* TableRowInner */.TableRow, { icon: jsx(importDefault(11903), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable });
+  return jsx(require(5164) /* TableRowInner */.TableRow, { icon: jsx(importDefault(11879), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable });
 }
 let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, paddingBottom: 48 } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGamesActionSheet.tsx");

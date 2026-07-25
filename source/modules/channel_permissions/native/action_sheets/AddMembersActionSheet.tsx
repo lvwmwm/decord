@@ -1,10 +1,10 @@
-// Module ID: 8464
-// Function ID: 67309
+// Module ID: 8222
+// Function ID: 65960
 // Name: _toPropertyKey
-// Dependencies: [5, 29, 57, 31, 27, 1917, 1910, 1838, 1849, 7565, 482, 33, 4130, 689, 3763, 5160, 4118, 566, 8457, 3843, 1212, 1273, 4126, 8465, 5189, 7527, 8469, 5047, 8474, 4320, 4312, 8458, 3830, 4098, 5187, 5186, 4543, 2]
+// Dependencies: [5, 29, 57, 31, 27, 1918, 1911, 1838, 1850, 6661, 482, 33, 4131, 689, 3764, 5159, 4119, 566, 8215, 3844, 1212, 1273, 4127, 8223, 5189, 6619, 8227, 5048, 8234, 4321, 4313, 8216, 3831, 4099, 5187, 5186, 4544, 2]
 // Exports: default
 
-// Module 8464 (_toPropertyKey)
+// Module 8222 (_toPropertyKey)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
 import _slicedToArray from "_slicedToArray";
@@ -215,14 +215,14 @@ class AddMembersBody {
     } else {
       BottomSheetScrollView = c9;
     }
-    tmp37 = require("defaultMVCPConfig");
+    tmp37 = require("useModalDismissGuardRefreshControl");
     obj3 = {};
     obj4 = { style: tmp5.inputContainer };
     tmp38 = inActionSheet ? tmp37.BottomSheetFlashList : tmp37.FlashList;
     tmp39 = jsxs;
     tmp40 = Fragment;
     obj5 = {};
-    tmp41 = require("module_8469");
+    tmp41 = require("module_8227");
     intl5 = require("getSystemLocale").intl;
     obj5.accessibilityLabel = intl5.string(require("getSystemLocale").t["5h0QOP"]);
     intl6 = require("getSystemLocale").intl;
@@ -417,7 +417,7 @@ export default function AddMembersActionSheet(channel) {
     }
     return outer1_12.getGuild(guildId);
   });
-  const tmp5 = first(4320)(channel, true);
+  const tmp5 = first(4321)(channel, true);
   let str = "";
   if (null != tmp5) {
     str = tmp5;

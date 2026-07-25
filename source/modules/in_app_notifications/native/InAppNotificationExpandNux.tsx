@@ -1,10 +1,10 @@
-// Module ID: 10341
-// Function ID: 79779
+// Module ID: 10274
+// Function ID: 79432
 // Name: getExpandNUXState
 // Dependencies: [587, 2]
 // Exports: markExpandNUXStateAsShown, resetExpandNUXState
 
-// Module 10341 (getExpandNUXState)
+// Module 10274 (getExpandNUXState)
 function getExpandNUXState() {
   const Storage = require(587) /* Storage */.Storage;
   let value = Storage.get(inAppNotificationExpandNux);

@@ -1,15 +1,15 @@
-// Module ID: 11016
-// Function ID: 85721
-// Dependencies: [4337, 11017, 1934, 686, 2]
+// Module ID: 10972
+// Function ID: 85341
+// Dependencies: [4338, 10973, 1935, 686, 2]
 
-// Module 11016
+// Module 10972
 const result = require("maybeLoadBundle").fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModalActionCreators.tsx");
 
 export default {
   open(guild, toUser) {
-    let obj = importDefault(4337);
+    let obj = importDefault(4338);
     obj = { guild, toUser };
-    obj.pushLazy(require(1934) /* maybeLoadBundle */(11017, dependencyMap.paths), obj, "TRANSFER_OWNERSHIP_MODAL_KEY");
+    obj.pushLazy(require(1935) /* maybeLoadBundle */(10973, dependencyMap.paths), obj, "TRANSFER_OWNERSHIP_MODAL_KEY");
   },
   close() {
     importDefault(686).wait(() => {

@@ -1,7 +1,7 @@
 // Module ID: 3549
-// Function ID: 27605
+// Function ID: 27597
 // Name: _typeof
-// Dependencies: [3517, 3518, 3515]
+// Dependencies: [3518, 3519, 3516]
 
 // Module 3549 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const ISOTimezoneParser = ((Parser) => {
-  class ISOTimezoneParser {
+export const ISOTimezoneWithZParser = ((Parser) => {
+  class ISOTimezoneWithZParser {
     constructor() {
-      if (this instanceof ISOTimezoneParser) {
+      if (this instanceof ISOTimezoneWithZParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -162,7 +162,7 @@ export const ISOTimezoneParser = ((Parser) => {
         tmp17 = outer1_8(applyResult, "priority", 10);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "X"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "x"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +177,9 @@ export const ISOTimezoneParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class ISOTimezoneParser {
+    class ISOTimezoneWithZParser {
       constructor() {
-        if (this instanceof ISOTimezoneParser) {
+        if (this instanceof ISOTimezoneWithZParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -205,7 +205,7 @@ export const ISOTimezoneParser = ((Parser) => {
           tmp17 = outer1_8(applyResult, "priority", 10);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "X"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "x"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +224,12 @@ export const ISOTimezoneParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: ISOTimezoneParser, writable: true, configurable: true };
-  ISOTimezoneParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: ISOTimezoneWithZParser, writable: true, configurable: true };
+  ISOTimezoneWithZParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class ISOTimezoneParser {
+    class ISOTimezoneWithZParser {
       constructor() {
-        if (this instanceof ISOTimezoneParser) {
+        if (this instanceof ISOTimezoneWithZParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -255,7 +255,7 @@ export const ISOTimezoneParser = ((Parser) => {
           tmp17 = outer1_8(applyResult, "priority", 10);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "X"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "x"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,22 +269,22 @@ export const ISOTimezoneParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(ISOTimezoneParser, Parser);
+    _setPrototypeOf(ISOTimezoneWithZParser, Parser);
   }
-  let closure_0 = _createSuper(ISOTimezoneParser);
+  let closure_0 = _createSuper(ISOTimezoneWithZParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1) {
-      if ("x" === arg1) {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.basicOptionalMinutes, arg0);
-      } else if ("xx" === arg1) {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.basic, arg0);
-      } else if ("xxxx" === arg1) {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.basicOptionalSeconds, arg0);
-      } else if ("xxxxx" === arg1) {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.extendedOptionalSeconds, arg0);
+      if ("X" === arg1) {
+        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.basicOptionalMinutes, arg0);
+      } else if ("XX" === arg1) {
+        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.basic, arg0);
+      } else if ("XXXX" === arg1) {
+        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.basicOptionalSeconds, arg0);
+      } else if ("XXXXX" === arg1) {
+        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.extendedOptionalSeconds, arg0);
       } else {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.extended, arg0);
+        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.extended, arg0);
       }
     }
   };
@@ -301,6 +301,6 @@ export const ISOTimezoneParser = ((Parser) => {
     }
   };
   items[1] = obj;
-  _defineProperties(ISOTimezoneParser.prototype, items);
-  return ISOTimezoneParser;
+  _defineProperties(ISOTimezoneWithZParser.prototype, items);
+  return ISOTimezoneWithZParser;
 })(require("_defineProperties").Parser);

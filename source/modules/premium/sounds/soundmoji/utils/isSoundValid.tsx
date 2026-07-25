@@ -1,10 +1,10 @@
-// Module ID: 4583
-// Function ID: 40197
+// Module ID: 4584
+// Function ID: 40209
 // Name: isSoundValid
-// Dependencies: [1348, 3758, 1849, 4579, 482, 3776, 2]
+// Dependencies: [1348, 3759, 1850, 4580, 482, 3777, 2]
 // Exports: default
 
-// Module 4583 (isSoundValid)
+// Module 4584 (isSoundValid)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -37,7 +37,7 @@ export default function isSoundValid(guildId, arg1, channelId) {
       }
       if (guildId2 !== arg1) {
         let canResult = null == channel;
-        const result = importDefault(3776).canUseSoundboardEverywhere(currentUser.getCurrentUser());
+        const result = importDefault(3777).canUseSoundboardEverywhere(currentUser.getCurrentUser());
         if (!canResult) {
           canResult = null == channel.guild_id;
         }

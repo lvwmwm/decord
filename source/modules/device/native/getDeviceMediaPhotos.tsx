@@ -1,10 +1,10 @@
-// Module ID: 9698
-// Function ID: 75499
+// Module ID: 9622
+// Function ID: 75094
 // Name: getDeviceMediaPhotos
-// Dependencies: [27, 3, 1184, 477, 9699, 2]
+// Dependencies: [27, 3, 1184, 477, 9623, 2]
 // Exports: default
 
-// Module 9698 (getDeviceMediaPhotos)
+// Module 9622 (getDeviceMediaPhotos)
 import { NativeModules } from "get ActivityIndicator";
 import importDefaultResult from "set";
 
@@ -29,10 +29,10 @@ export default function getDeviceMediaPhotos(arg0) {
   }
   let obj = require(477) /* set */;
   if (obj.isIOS()) {
-    if (null != importDefault(9699)) {
+    if (null != importDefault(9623)) {
       obj = { first: batchSize, groupTypes: "Recents", assetType: "All", after: endCursor, extensions };
-      const photos = importDefault(9699).getPhotos(obj);
-      const obj3 = importDefault(9699);
+      const photos = importDefault(9623).getPhotos(obj);
+      const obj3 = importDefault(9623);
       photos.then(onFetched).catch(onError);
       const nextPromise = photos.then(onFetched);
     }

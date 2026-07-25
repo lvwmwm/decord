@@ -1,10 +1,10 @@
-// Module ID: 11958
-// Function ID: 92550
+// Module ID: 11934
+// Function ID: 92355
 // Name: NewUserIcon
-// Dependencies: [31, 33, 689, 3833, 11959, 2]
+// Dependencies: [31, 33, 689, 3834, 11935, 2]
 // Exports: NewUserIcon
 
-// Module 11958 (NewUserIcon)
+// Module 11934 (NewUserIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const NewUserIcon = function NewUserIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11959) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11935) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11959) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(11935) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

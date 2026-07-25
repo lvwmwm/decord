@@ -1,11 +1,11 @@
 // Module ID: 9964
-// Function ID: 77001
+// Function ID: 77163
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9964 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/saved_messages", width: 280, height: 262, scales: [1], hash: "f30ab52fb194d8e8f6a2de0e6e9d812d", name: "empty_state_image", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images", width: 52, height: 54, scales: [1], hash: "952194349b0f8cbc08a58b40dbb32cb2", name: "connections-profile-steam-tf2", type: "png" };
 
 export default registerAsset.registerAsset(obj);

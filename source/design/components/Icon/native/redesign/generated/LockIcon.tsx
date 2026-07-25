@@ -1,10 +1,10 @@
-// Module ID: 4652
-// Function ID: 40354
+// Module ID: 4653
+// Function ID: 40366
 // Name: LockIcon
-// Dependencies: [31, 33, 689, 3833, 4628, 2]
+// Dependencies: [31, 33, 689, 3834, 4629, 2]
 // Exports: LockIcon
 
-// Module 4652 (LockIcon)
+// Module 4653 (LockIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const LockIcon = function LockIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4628) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4629) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4628) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4629) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

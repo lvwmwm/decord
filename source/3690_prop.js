@@ -1,5 +1,5 @@
 // Module ID: 3690
-// Function ID: 28066
+// Function ID: 28076
 // Name: prop
 // Dependencies: []
 
@@ -10,14 +10,14 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" }, narrow: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" }, short: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" } };
+    obj = { long: { end: "{0} et {1}", middle: "{0}, {1}", pair: "{0} et {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} et {1}", middle: "{0}, {1}", pair: "{0} et {1}", start: "{0}, {1}" } };
     obj.conjunction = obj;
-    const obj1 = { long: { end: "{0} ili {1}", middle: "{0}, {1}", pair: "{0} ili {1}", start: "{0}, {1}" }, narrow: { end: "{0} ili {1}", middle: "{0}, {1}", pair: "{0} ili {1}", start: "{0}, {1}" }, short: { end: "{0} ili {1}", middle: "{0}, {1}", pair: "{0} ili {1}", start: "{0}, {1}" } };
+    const obj1 = { long: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" }, narrow: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" }, short: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" } };
+    const obj2 = { long: { end: "{0} et {1}", middle: "{0}, {1}", pair: "{0} et {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} et {1}", middle: "{0}, {1}", pair: "{0} et {1}", start: "{0}, {1}" } };
     obj.unit = obj2;
     obj.data = obj;
-    obj.locale = "hr";
+    obj.locale = "fr";
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" }, narrow: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" }, short: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} ili {1}", middle: "{0}, {1}", pair: "{0} ili {1}", start: "{0}, {1}" }, narrow: { end: "{0} ili {1}", middle: "{0}, {1}", pair: "{0} ili {1}", start: "{0}, {1}" }, short: { end: "{0} ili {1}", middle: "{0}, {1}", pair: "{0} ili {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} i {1}", middle: "{0}, {1}", pair: "{0} i {1}", start: "{0}, {1}" } } }, locale: "hr" });
+prop.push({ data: { conjunction: { long: { end: "{0} et {1}", middle: "{0}, {1}", pair: "{0} et {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} et {1}", middle: "{0}, {1}", pair: "{0} et {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" }, narrow: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" }, short: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} et {1}", middle: "{0}, {1}", pair: "{0} et {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} et {1}", middle: "{0}, {1}", pair: "{0} et {1}", start: "{0}, {1}" } } }, locale: "fr" });

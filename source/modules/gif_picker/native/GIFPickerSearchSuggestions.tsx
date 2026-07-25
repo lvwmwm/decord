@@ -1,8 +1,8 @@
-// Module ID: 9622
-// Function ID: 74895
-// Dependencies: [31, 27, 9611, 33, 4130, 689, 566, 4126, 1212, 4543, 2]
+// Module ID: 9543
+// Function ID: 74482
+// Dependencies: [31, 27, 9532, 33, 4131, 689, 566, 4127, 1212, 4544, 2]
 
-// Module 9622
+// Module 9543
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo(function GIFPickerSearchSuggestions(onCl
     obj = { style: tmp.footerSuggestionsTitle, variant: "text-md/medium", color: "text-default" };
     const intl = onClickSuggestion(1212).intl;
     obj.children = intl.string(onClickSuggestion(1212).t["3JGJo2"]);
-    const items1 = [callback(onClickSuggestion(4126).Text, obj), ];
+    const items1 = [callback(onClickSuggestion(4127).Text, obj), ];
     const obj1 = {
       style: tmp.suggestionsContainer,
       children: stateFromStoresArray.map((text) => {

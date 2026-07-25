@@ -1,10 +1,10 @@
-// Module ID: 9101
-// Function ID: 71369
+// Module ID: 8993
+// Function ID: 70854
 // Name: AcceptRequestConfirmationModal
-// Dependencies: [31, 27, 33, 4130, 689, 4561, 1212, 4470, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4562, 1212, 4471, 4127, 2]
 // Exports: default
 
-// Module 9101 (AcceptRequestConfirmationModal)
+// Module 8993 (AcceptRequestConfirmationModal)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,12 +38,12 @@ export default function AcceptRequestConfirmationModal(onConfirm) {
   obj = { variant: "heading-lg/bold", color: "text-strong", style: tmp.text };
   const intl3 = onConfirm(1212).intl;
   obj.children = intl3.string(onConfirm(1212).t.eJzSDT);
-  const items = [callback(onConfirm(4126).Text, obj), ];
+  const items = [callback(onConfirm(4127).Text, obj), ];
   const obj1 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text };
   const intl4 = onConfirm(1212).intl;
   obj1.children = intl4.string(onConfirm(1212).t.GB4jUw);
-  items[1] = callback(onConfirm(4126).Text, obj1);
+  items[1] = callback(onConfirm(4127).Text, obj1);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(importDefault(4561), obj);
+  return callback(importDefault(4562), obj);
 };

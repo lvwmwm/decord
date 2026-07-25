@@ -1,10 +1,10 @@
-// Module ID: 4642
-// Function ID: 40334
+// Module ID: 4643
+// Function ID: 40346
 // Name: ImageLockIcon
-// Dependencies: [31, 33, 689, 3833, 4625, 2]
+// Dependencies: [31, 33, 689, 3834, 4626, 2]
 // Exports: ImageLockIcon
 
-// Module 4642 (ImageLockIcon)
+// Module 4643 (ImageLockIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ImageLockIcon = function ImageLockIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4625) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4626) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4625) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4626) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

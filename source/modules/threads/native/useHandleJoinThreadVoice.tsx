@@ -1,10 +1,10 @@
-// Module ID: 9180
-// Function ID: 71901
+// Module ID: 9072
+// Function ID: 71386
 // Name: useHandleJoinThreadVoice
-// Dependencies: [5, 3760, 4619, 9181, 1934, 7006, 4341, 2]
+// Dependencies: [5, 3761, 4620, 9073, 1935, 6024, 4342, 2]
 // Exports: default
 
-// Module 9180 (useHandleJoinThreadVoice)
+// Module 9072 (useHandleJoinThreadVoice)
 import patchThread from "patchThread";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

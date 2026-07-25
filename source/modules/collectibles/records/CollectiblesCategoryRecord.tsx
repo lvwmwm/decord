@@ -1,9 +1,9 @@
-// Module ID: 6775
-// Function ID: 53360
+// Module ID: 5771
+// Function ID: 50634
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 102, 18, 6776, 6783, 1876, 6785, 6786, 2]
+// Dependencies: [6, 7, 15, 17, 102, 18, 5772, 5779, 1877, 5781, 5782, 2]
 
-// Module 6775 (_isNativeReflectConstruct)
+// Module 5771 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -24,9 +24,9 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function allowEmptyItems(arg0) {
-  let tmp = arg0 === require(1876) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
+  let tmp = arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
   if (!tmp) {
-    tmp = arg0 === require(1876) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
+    tmp = arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
   }
   return tmp;
 }

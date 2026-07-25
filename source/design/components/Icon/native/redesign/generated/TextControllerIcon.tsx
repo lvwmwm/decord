@@ -1,10 +1,10 @@
-// Module ID: 4637
-// Function ID: 40324
+// Module ID: 4638
+// Function ID: 40336
 // Name: TextControllerIcon
-// Dependencies: [31, 33, 689, 3833, 4624, 2]
+// Dependencies: [31, 33, 689, 3834, 4625, 2]
 // Exports: TextControllerIcon
 
-// Module 4637 (TextControllerIcon)
+// Module 4638 (TextControllerIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TextControllerIcon = function TextControllerIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4624) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4625) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4624) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4625) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

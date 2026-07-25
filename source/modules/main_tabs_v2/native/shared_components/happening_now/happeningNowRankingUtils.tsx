@@ -1,10 +1,10 @@
-// Module ID: 14977
-// Function ID: 114144
+// Module ID: 14987
+// Function ID: 114271
 // Name: cardSize
-// Dependencies: [3767, 4146, 14233, 1327, 22, 2]
+// Dependencies: [3768, 4147, 14244, 1327, 22, 2]
 // Exports: filterHappeningNowCards, sortHappeningNowCards
 
-// Module 14977 (cardSize)
+// Module 14987 (cardSize)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";

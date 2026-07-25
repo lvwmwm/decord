@@ -1,9 +1,9 @@
-// Module ID: 16255
-// Function ID: 126202
+// Module ID: 16266
+// Function ID: 126370
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 29, 1352, 1907, 3758, 653, 5071, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 29, 1352, 1908, 3759, 653, 5072, 22, 566, 686, 2]
 
-// Module 16255 (_isNativeReflectConstruct)
+// Module 16266 (_isNativeReflectConstruct)
 import closure_3 from "_callSuper";
 import closure_4 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -96,7 +96,7 @@ function buildSortedChannels() {
       }
     }
   });
-  const item2 = importDefault(5071)(_null._categories, _null).forEach(setIndex);
+  const item2 = importDefault(5072)(_null._categories, _null).forEach(setIndex);
   setupSortLists();
 }
 function rebuildChannels() {
@@ -130,7 +130,7 @@ function rebuildChannels() {
 }
 function setupSortLists() {
   if (null != _null) {
-    const arr = importDefault(5071)(_null._categories, _null, (channel) => {
+    const arr = importDefault(5072)(_null._categories, _null, (channel) => {
       channel = channel.channel;
       let tmp = channel.type === outer1_15.GUILD_CATEGORY;
       if (!tmp) {

@@ -1,9 +1,9 @@
-// Module ID: 6843
-// Function ID: 54113
+// Module ID: 5848
+// Function ID: 51581
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4351, 6834, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4352, 5834, 566, 686, 2]
 
-// Module 6843 (_isNativeReflectConstruct)
+// Module 5848 (_isNativeReflectConstruct)
 import timeoutAttachmentsAndEmbedsForMessage from "timeoutAttachmentsAndEmbedsForMessage";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -83,7 +83,7 @@ tmp2 = new tmp2(require("dispatcher"), {
         const tmp2 = createCompositeKey(message);
         let flag = null != tmp4;
         if (flag) {
-          let obj = require(4351) /* createMinimalMessageRecord */;
+          let obj = require(4352) /* createMinimalMessageRecord */;
           obj = {};
           ({ attachments: obj2.attachments, embeds: obj2.embeds } = message);
           dependencyMap[tmp2] = obj.updateMessageRecord(tmp4, obj);
@@ -103,8 +103,8 @@ tmp2 = new tmp2(require("dispatcher"), {
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function handleScanTimeout(id) {
     const tmp = createCompositeKey({ id: id.messageId, channel_id: id.channelId });
     if (null != dependencyMap[tmp]) {
-      dependencyMap[tmp] = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(tmp2);
-      const obj2 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
+      dependencyMap[tmp] = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(tmp2);
+      const obj2 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
     }
   }
 });

@@ -1,10 +1,10 @@
-// Module ID: 13952
-// Function ID: 106646
+// Module ID: 13963
+// Function ID: 106773
 // Name: isFilterOptionEqual
-// Dependencies: [57, 31, 27, 4976, 33, 4130, 689, 5121, 4965, 4543, 1212, 4528, 3976, 4098, 10493, 5187, 5186, 5189, 4541, 7654, 7653, 5501, 9132, 9504, 2]
+// Dependencies: [57, 31, 27, 4977, 33, 4131, 689, 5121, 4966, 4544, 1212, 4529, 3977, 4099, 10427, 5187, 5186, 5189, 4542, 7596, 7595, 5501, 9024, 9425, 2]
 // Exports: default
 
-// Module 13952 (isFilterOptionEqual)
+// Module 13963 (isFilterOptionEqual)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -43,14 +43,14 @@ function FilterFooter(inline) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl.string(require(1212) /* getSystemLocale */.t.i4jeWR);
   obj1.onPress = onConfirm;
-  const items = [callback2(require(4543) /* Button */.Button, obj1), ];
+  const items = [callback2(require(4544) /* Button */.Button, obj1), ];
   const obj2 = { size: "lg", grow: true, text: null, onPress: null, variant: "secondary" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.text = intl2.string(require(1212) /* getSystemLocale */.t.yBZMsQ);
   obj2.onPress = onReset;
-  items[1] = callback2(require(4543) /* Button */.Button, obj2);
+  items[1] = callback2(require(4544) /* Button */.Button, obj2);
   obj.children = items;
-  obj.children = callback3(require(4965) /* ButtonGroup */.ButtonGroup, obj);
+  obj.children = callback3(require(4966) /* ButtonGroup */.ButtonGroup, obj);
   obj.children = callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
   return callback2(View, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 8808
-// Function ID: 69531
+// Module ID: 8696
+// Function ID: 69010
 // Name: NativePaymentContextProvider
-// Dependencies: [57, 31, 3781, 482, 33, 6667, 7433, 5638, 8809, 566, 2]
+// Dependencies: [57, 31, 3782, 482, 33, 6168, 6515, 6244, 8697, 566, 2]
 // Exports: NativePaymentContextProvider
 
-// Module 8808 (NativePaymentContextProvider)
+// Module 8696 (NativePaymentContextProvider)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PaymentGateways } from "sum";

@@ -1,7 +1,7 @@
 // Module ID: 5588
-// Function ID: 47434
+// Function ID: 47439
 // Name: dispatchLogout
-// Dependencies: [5, 5589, 1194, 5590, 653, 5591, 3, 4124, 686, 3982, 1198, 4337, 4942, 480, 507, 4029, 5592, 5593, 587, 684, 2]
+// Dependencies: [5, 5589, 1194, 5590, 653, 5591, 3, 4125, 686, 3983, 1198, 4338, 4943, 480, 507, 4030, 5592, 5593, 587, 684, 2]
 
 // Module 5588 (dispatchLogout)
 import closure_5 from "str2";
@@ -21,7 +21,7 @@ let closure_15;
 let closure_9;
 const require = arg1;
 function dispatchLogout(arg0) {
-  let obj = importDefault(4124);
+  let obj = importDefault(4125);
   const result = obj.clearNavigationHistory();
   obj = { type: "LOGOUT" };
   const merged = Object.assign(arg0);
@@ -41,21 +41,21 @@ function handleLogout(source, CHANNELResult) {
   }
   dispatchLogout();
   if (null != DEFAULT_LOGGED_OUT) {
-    const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
+    const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
     if (null != rootNavigationRef) {
-      importDefault(4337).popAll();
+      importDefault(4338).popAll();
       let obj = { index: 0 };
       obj = { name: "auth" };
       const items = [obj];
       obj.routes = items;
       rootNavigationRef.reset(obj);
-      const obj3 = importDefault(4337);
+      const obj3 = importDefault(4338);
     } else {
       obj = require(1198) /* shouldNavigate */;
       const obj1 = { source };
       obj.transitionTo(DEFAULT_LOGGED_OUT, obj1);
     }
-    const obj6 = require(3982) /* getRootNavigationRef */;
+    const obj6 = require(3983) /* getRootNavigationRef */;
   }
 }
 ({ Endpoints: closure_9, DEVICE_TOKEN: closure_10, DEVICE_VOIP_TOKEN: closure_11, AbortCodes: closure_12, Routes: closure_13 } = ME);
@@ -206,7 +206,7 @@ obj = {
     const self = this;
     ({ isMultiAccount: importDefault, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
-    let obj = importDefault(4942);
+    let obj = importDefault(4943);
     obj = { url: closure_9.LOGIN_MFA(mfaType), body: null, retries: 2, oldFormErrors: true, trackedActionData: null, rejectWithError: true };
     obj = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId };
     if (null == loginInstanceId) {
@@ -275,7 +275,7 @@ obj = {
     const self = this;
     isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    let obj = isMultiAccount(4942);
+    let obj = isMultiAccount(4943);
     obj = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1 };
     obj = { event: self(480).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
     obj.trackedActionData = obj;
@@ -375,7 +375,7 @@ obj = {
       DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
     }
     const importAll = arg2;
-    let obj = DEFAULT_LOGGED_OUT(4942);
+    let obj = DEFAULT_LOGGED_OUT(4943);
     obj = { url: closure_9.LOGOUT };
     obj = { provider: callback2() };
     const Storage = _require(587).Storage;
@@ -460,19 +460,19 @@ obj = {
     })();
   },
   authorizePayment(token) {
-    let obj = importDefault(4942);
+    let obj = importDefault(4943);
     obj = { url: closure_9.AUTHORIZE_PAYMENT, body: obj };
     obj = { token, trackedActionData: { event: require(480) /* isThrottled */.NetworkActionNames.AUTHORIZE_PAYMENT }, rejectWithError: true };
     return obj.post(obj);
   },
   authorizeIPAddress(token) {
-    let obj = importDefault(4942);
+    let obj = importDefault(4943);
     obj = { url: closure_9.AUTHORIZE_IP, body: obj };
     obj = { token, trackedActionData: { event: require(480) /* isThrottled */.NetworkActionNames.AUTHORIZE_IP }, rejectWithError: true };
     return obj.post(obj);
   },
   verifyResend() {
-    let obj = importDefault(4942);
+    let obj = importDefault(4943);
     obj = { url: closure_9.VERIFY_RESEND, oldFormErrors: true };
     obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_VERIFY_RESEND };
     obj.trackedActionData = obj;

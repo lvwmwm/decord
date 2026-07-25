@@ -1,8 +1,8 @@
-// Module ID: 8551
-// Function ID: 68116
-// Dependencies: [57, 31, 27, 33, 3842, 8284, 8552, 4554, 2]
+// Module ID: 8311
+// Function ID: 66770
+// Dependencies: [57, 31, 27, 33, 3843, 8019, 8312, 4555, 2]
 
-// Module 8551
+// Module 8311
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -19,13 +19,13 @@ const memoResult = require("result").memo((style) => {
   let secondaryColor;
   style = style.style;
   ({ gradientHeight, bannerHeight } = style);
-  let obj = require(3842) /* ManaContext */;
+  let obj = require(3843) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, secondaryColor } = themeContext);
-  const gradientFallbackBackground = require(8284) /* useUserProfileColors */.useUserProfileColors({ theme: themeContext.theme, primaryColor, secondaryColor }).gradientFallbackBackground;
-  const obj2 = require(8284) /* useUserProfileColors */;
-  const obj3 = require(8552) /* useUserProfileGradientColors */;
-  const first = callback(require(8552) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
+  const gradientFallbackBackground = require(8019) /* useUserProfileColors */.useUserProfileColors({ theme: themeContext.theme, primaryColor, secondaryColor }).gradientFallbackBackground;
+  const obj2 = require(8019) /* useUserProfileColors */;
+  const obj3 = require(8312) /* useUserProfileGradientColors */;
+  const first = callback(require(8312) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
   if (null != primaryColor) {
     if (null != secondaryColor) {
       const _Math = Math;
@@ -39,7 +39,7 @@ const memoResult = require("result").memo((style) => {
       const items2 = [closure_4.absoluteFill, style];
       obj.style = items2;
       obj.pointerEvents = "none";
-      return jsx(importDefault(4554), {});
+      return jsx(importDefault(4555), {});
     }
   }
   style = [closure_4.absoluteFill, { backgroundColor: gradientFallbackBackground }, ];

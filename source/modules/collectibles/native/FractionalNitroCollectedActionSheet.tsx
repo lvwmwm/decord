@@ -1,10 +1,10 @@
-// Module ID: 11863
-// Function ID: 91991
+// Module ID: 11839
+// Function ID: 91796
 // Name: NitroAcquiredHeader
-// Dependencies: [31, 27, 653, 1851, 33, 4130, 689, 8758, 5085, 11864, 4066, 6822, 3976, 7176, 7177, 4126, 1212, 1920, 3827, 5187, 6670, 4660, 9834, 4543, 4098, 5446, 2]
+// Dependencies: [31, 27, 653, 1852, 33, 4131, 689, 8646, 5085, 11840, 4067, 5818, 3977, 6260, 6261, 4127, 1212, 1921, 3828, 5187, 6172, 4661, 9758, 4544, 4099, 5446, 2]
 // Exports: default
 
-// Module 11863 (NitroAcquiredHeader)
+// Module 11839 (NitroAcquiredHeader)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -23,11 +23,11 @@ const require = arg1;
 function NitroAcquiredHeader(skuId) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.header };
-  obj = { source: importDefault(11864) };
+  obj = { source: importDefault(11840) };
   const items = [callback(importDefault(5085), obj), ];
   obj = { style: tmp.fractionNitroIcon };
-  const obj1 = { skuId: skuId.skuId, width: require(8758) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET, height: require(8758) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET };
-  obj.children = callback(require(8758) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj1);
+  const obj1 = { skuId: skuId.skuId, width: require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET, height: require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET };
+  obj.children = callback(require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj1);
   items[1] = callback(closure_5, obj);
   obj.children = items;
   return callback2(closure_5, obj);
@@ -65,9 +65,9 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
   ({ onPressExplorePerks, onPressViewCredits } = skuId);
   const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let tmp2 = consumed(4066)();
+  let tmp2 = consumed(4067)();
   const React = tmp2;
-  let obj = skuId(6822);
+  let obj = skuId(5818);
   const fetchFractionalPremiumInfo = obj.useFetchFractionalPremiumInfo();
   const isFractionalPremiumActive = fetchFractionalPremiumInfo.isFractionalPremiumActive;
   const expiresAt = fetchFractionalPremiumInfo.expiresAt;
@@ -132,7 +132,7 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
   obj = {};
   if (consumed) {
     let obj1 = { premiumType: TIER_2.TIER_2 };
-    let tmp10Result = tmp10(consumed(6670), obj1);
+    let tmp10Result = tmp10(consumed(6172), obj1);
   } else {
     const obj2 = { skuId };
     tmp10Result = tmp10(NitroAcquiredHeader, obj2);
@@ -140,8 +140,8 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
   const items2 = [tmp10Result, ];
   let obj3 = { style: tmp.questionIconContainer, onPress: callback };
   const obj4 = { style: tmp.questionIcon, color: consumed(689).colors.WHITE };
-  obj3.children = callback(skuId(9834).CircleQuestionIcon, obj4);
-  items2[1] = callback(skuId(4660).PressableOpacity, obj3);
+  obj3.children = callback(skuId(9758).CircleQuestionIcon, obj4);
+  items2[1] = callback(skuId(4661).PressableOpacity, obj3);
   obj.children = items2;
   const items3 = [closure_10(closure_11, obj), , ];
   const obj5 = { style: tmp.body };
@@ -165,14 +165,14 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
       obj9.onPress = onPressViewCredits;
       tmp27 = obj9;
     }
-    const items5 = [callback(skuId(4543).Button, tmp27), ];
+    const items5 = [callback(skuId(4544).Button, tmp27), ];
     const obj10 = { size: "lg", variant: "secondary" };
     let intl2 = skuId(1212).intl;
     obj10.text = intl2.string(skuId(1212).t.TkTvBz);
     obj10.onPress = function onPress() {
       return consumed(tmp[24]).hideActionSheet();
     };
-    items5[1] = callback(skuId(4543).Button, obj10);
+    items5[1] = callback(skuId(4544).Button, obj10);
     obj8.children = items5;
     items4[2] = closure_10(expiresAt, obj8);
     obj7.children = items4;

@@ -1,7 +1,7 @@
 // Module ID: 5171
-// Function ID: 45002
+// Function ID: 45007
 // Name: TableRowArrow
-// Dependencies: [31, 33, 4130, 689, 1324, 4545, 5172, 5173, 2]
+// Dependencies: [31, 33, 4131, 689, 1324, 4546, 5172, 5173, 2]
 // Exports: TableRowArrow
 
 // Module 5171 (TableRowArrow)
@@ -30,6 +30,6 @@ export const TableRowArrow = function TableRowArrow() {
     tmp7 = 5173;
   }
   obj.source = tmp(tmp7);
-  obj.size = require(4545) /* getIconSize */.IconSizes.CUSTOM;
-  return tmp4(importDefault(4545), obj);
+  obj.size = require(4546) /* getIconSize */.IconSizes.CUSTOM;
+  return tmp4(importDefault(4546), obj);
 };

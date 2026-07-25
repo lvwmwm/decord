@@ -1,10 +1,10 @@
-// Module ID: 9673
-// Function ID: 75254
+// Module ID: 9595
+// Function ID: 74844
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [31, 27, 653, 33, 9674, 9677, 3991, 4131, 2]
+// Dependencies: [31, 27, 653, 33, 9596, 9601, 3992, 4132, 2]
 // Exports: default
 
-// Module 9673 (HorizontalAutocompleteWrapper)
+// Module 9595 (HorizontalAutocompleteWrapper)
 import result from "result";
 import { FlatList } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

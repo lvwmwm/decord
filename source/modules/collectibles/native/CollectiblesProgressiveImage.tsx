@@ -1,10 +1,10 @@
-// Module ID: 14562
-// Function ID: 111103
+// Module ID: 14573
+// Function ID: 111230
 // Name: CollectiblesProgressiveImage
-// Dependencies: [31, 27, 33, 3991, 4131, 2]
+// Dependencies: [31, 27, 33, 3992, 4132, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 14562 (CollectiblesProgressiveImage)
+// Module 14573 (CollectiblesProgressiveImage)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ export const CollectiblesProgressiveImage = function CollectiblesProgressiveImag
   obj.source = 0;
   obj.style = 0;
   const merged = Object.assign(arg0, obj);
-  obj = sharedValue(3991);
+  obj = sharedValue(3992);
   sharedValue = obj.useSharedValue(0);
   obj = { style };
   const obj1 = {};
@@ -40,6 +40,6 @@ export const CollectiblesProgressiveImage = function CollectiblesProgressiveImag
     obj.easing = Easing.inOut(sharedValue(outer1_2[3]).Easing.ease);
     const result = sharedValue.set(obj.withTiming(1, obj));
   };
-  obj.children = jsx(importDefault(3991).Image, {});
+  obj.children = jsx(importDefault(3992).Image, {});
   return <closure_3 style={style} />;
 };

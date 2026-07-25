@@ -1,10 +1,10 @@
-// Module ID: 6939
-// Function ID: 55344
+// Module ID: 5930
+// Function ID: 52650
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1921, 6940, 6941, 4976, 4979, 1360, 6956, 1184, 2]
+// Dependencies: [1922, 5931, 5932, 4977, 4980, 1360, 5947, 1184, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdTrafficMetadataSealed, getIsQuestExpiredButWithinThirtyDayLookback, getQuestForPlacement, getQuestFormattedDate, hasUnclaimedReward, isBillableQuestContent, isDismissed
 
-// Module 6939 (_createForOfIteratorHelperLoose)
+// Module 5930 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";
@@ -95,7 +95,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function isDismissible(ACTIVITY_PANEL) {
   const keys = Object.keys(closure_6);
-  return keys.includes(require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent[ACTIVITY_PANEL]);
+  return keys.includes(require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent[ACTIVITY_PANEL]);
 }
 function isQuestConfigExpired(config) {
   const date = new Date(config.expiresAt);
@@ -106,20 +106,20 @@ function isQuestExpired(value) {
 }
 function getQuestPlacementFromQuestContent(questContent) {
   const obj = {};
-  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
-  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_V2] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
-  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.MOBILE_HOME_DOCK_AREA;
-  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_HERO] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_BANNER_DESKTOP;
-  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_HERO_SHELF] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_BANNER_DESKTOP;
-  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_MOBILE_CAROUSEL] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_MOBILE_CAROUSEL;
-  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.VIDEO_MODAL_MOBILE] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.VIDEO_MODAL_MOBILE;
+  obj[require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR] = require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
+  obj[require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_V2] = require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
+  obj[require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE] = require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.MOBILE_HOME_DOCK_AREA;
+  obj[require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_HERO] = require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_BANNER_DESKTOP;
+  obj[require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_HERO_SHELF] = require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_BANNER_DESKTOP;
+  obj[require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_MOBILE_CAROUSEL] = require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_MOBILE_CAROUSEL;
+  obj[require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.VIDEO_MODAL_MOBILE] = require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.VIDEO_MODAL_MOBILE;
   return obj[questContent];
 }
 function mapQuestAdDecision(value) {
   return { questId: value.questId, adCreativeId: value.adCreativeId, adDecisionData: value.adDecisionData, adContext: value.adContext, metadataSealed: value.metadataSealed, trafficMetadataSealed: value.trafficMetadataSealed };
 }
 function getQuestDeliveryDataForPlacement(arg0, adContentId) {
-  if (arg0 === require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_MOBILE_CAROUSEL) {
+  if (arg0 === require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_MOBILE_CAROUSEL) {
     let tmp3 = null;
     if (null != adContentId) {
       adDecisionByPlacementAndAdCreativeId = adDecisionByPlacementAndAdCreativeId.getAdDecisionByPlacementAndAdCreativeId(arg0, adContentId);
@@ -138,7 +138,7 @@ function getQuestDeliveryDataForPlacement(arg0, adContentId) {
     let obj = { location: "getQuestDeliveryDataForPlacement" };
     const questAdDecisionByPlacement = quest.questAdDecisionByPlacement;
     let value = questAdDecisionByPlacement.get(arg0);
-    if (arg0 === require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
+    if (arg0 === require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
       if (null != value) {
         return mapQuestAdDecision(value);
       }
@@ -160,7 +160,7 @@ function getQuestDeliveryDataForPlacement(arg0, adContentId) {
       }
       return tmp11;
     }
-    obj2 = importDefault(6956);
+    obj2 = importDefault(5947);
   }
 }
 ({ DismissibleQuestContentFlags: closure_6, BILLABLE_PLACEMENTS: closure_7, EMPTY_AD_DECISION_DATA: closure_8 } = QuestsExperimentLocations);
@@ -212,7 +212,7 @@ export const findQuestOrReplacement = function findQuestOrReplacement(scrollToQu
 export { isDismissible };
 export const isDismissed = function isDismissed(userStatus, ACTIVITY_PANEL) {
   if (isDismissible(ACTIVITY_PANEL)) {
-    return require(1360) /* hasFlag */.hasFlag(userStatus.dismissedQuestContent, table[require(undefined, 4979) /* QuestsVisibleMessagesChangedSource */.QuestContent[ACTIVITY_PANEL]]);
+    return require(1360) /* hasFlag */.hasFlag(userStatus.dismissedQuestContent, table[require(undefined, 4980) /* QuestsVisibleMessagesChangedSource */.QuestContent[ACTIVITY_PANEL]]);
   } else {
     return false;
   }

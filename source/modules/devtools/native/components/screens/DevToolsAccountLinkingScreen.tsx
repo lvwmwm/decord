@@ -1,10 +1,10 @@
-// Module ID: 14742
-// Function ID: 112364
+// Module ID: 14753
+// Function ID: 112492
 // Name: DevToolsAccountLinkingScreen
-// Dependencies: [57, 31, 27, 4167, 5066, 1838, 3947, 33, 4130, 689, 566, 5470, 1557, 5468, 5465, 5501, 5165, 4126, 7574, 4543, 2]
+// Dependencies: [57, 31, 27, 4168, 5067, 1838, 3948, 33, 4131, 689, 566, 5470, 1557, 5468, 5465, 5501, 5164, 4127, 6670, 4544, 2]
 // Exports: default
 
-// Module 14742 (DevToolsAccountLinkingScreen)
+// Module 14753 (DevToolsAccountLinkingScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -149,25 +149,25 @@ export default function DevToolsAccountLinkingScreen() {
         };
         let tmp2;
         if (closure_0 === name.id) {
-          tmp2 = outer1_12(first(4126).Text, { variant: "text-sm/semibold", children: "Selected" });
+          tmp2 = outer1_12(first(4127).Text, { variant: "text-sm/semibold", children: "Selected" });
         }
         obj.trailing = tmp2;
-        return outer1_12(first(5165).TableRow, obj, name.id);
+        return outer1_12(first(5164).TableRow, obj, name.id);
       });
     } else {
       obj2 = { label: "No official games" };
-      mapped1 = callback(first(5165).TableRow, obj2);
+      mapped1 = callback(first(5164).TableRow, obj2);
     }
   } else {
     obj3 = { label: "No guild selected" };
-    obj1.children = callback(first(5165).TableRow, obj3);
+    obj1.children = callback(first(5164).TableRow, obj3);
     const items4 = [callback(first(5501).TableRowGroup, obj1), , , ];
     const obj4 = { title: "Application", hasIcons: false };
     const obj5 = {};
     const obj6 = { padding: importDefault(689).space.PX_12 };
     obj5.style = obj6;
     const obj7 = { label: "Application ID", value: first, onChange: tmp5 };
-    obj5.children = callback(first(7574).TextInput, obj7);
+    obj5.children = callback(first(6670).TextInput, obj7);
     const items5 = [callback(closure_7, obj5), , ];
     const obj8 = {};
     if (null != getOrFetchApplication) {
@@ -175,11 +175,11 @@ export default function DevToolsAccountLinkingScreen() {
     }
     let _HermesInternal = HermesInternal;
     obj8.label = "Name: " + str;
-    items5[1] = callback(first(5165).TableRow, obj8);
+    items5[1] = callback(first(5164).TableRow, obj8);
     const obj9 = {};
     const _HermesInternal2 = HermesInternal;
     obj9.label = "Linked Games: " + str2;
-    items5[2] = callback(first(5165).TableRow, obj9);
+    items5[2] = callback(first(5164).TableRow, obj9);
     obj4.children = items5;
     items4[1] = callback2(first(5501).TableRowGroup, obj4);
     const obj10 = { title: "Authorization", hasIcons: false };
@@ -195,8 +195,8 @@ export default function DevToolsAccountLinkingScreen() {
       str12 = "Set";
     }
     obj12.children = str12;
-    obj11.trailing = callback(first(4126).Text, obj12);
-    const items6 = [callback(first(5165).TableRow, obj11), , ];
+    obj11.trailing = callback(first(4127).Text, obj12);
+    const items6 = [callback(first(5164).TableRow, obj11), , ];
     const obj13 = { label: "Already Linked" };
     const obj14 = { variant: "text-sm/semibold" };
     let str14 = "text-muted";
@@ -209,8 +209,8 @@ export default function DevToolsAccountLinkingScreen() {
       str15 = "Yes";
     }
     obj14.children = str15;
-    obj13.trailing = callback(first(4126).Text, obj14);
-    items6[1] = callback(first(5165).TableRow, obj13);
+    obj13.trailing = callback(first(4127).Text, obj14);
+    items6[1] = callback(first(5164).TableRow, obj13);
     const obj15 = { style: tmp.buttonRow };
     const obj16 = {
       disabled: !tmp8.canStartAuthorization,
@@ -220,9 +220,9 @@ export default function DevToolsAccountLinkingScreen() {
       variant: "primary",
       text: "Start Authorization"
     };
-    const items7 = [callback(first(4543).Button, obj16), ];
+    const items7 = [callback(first(4544).Button, obj16), ];
     const obj17 = { disabled: !canDeauthorize, onPress: deauthorize, variant: "critical-primary", text: "Deauthorize" };
-    items7[1] = callback(first(4543).Button, obj17);
+    items7[1] = callback(first(4544).Button, obj17);
     obj15.children = items7;
     items6[2] = callback2(closure_7, obj15);
     obj10.children = items6;
@@ -255,7 +255,7 @@ export default function DevToolsAccountLinkingScreen() {
       }
       const _HermesInternal3 = HermesInternal;
       obj23.label = "Reward: " + str20;
-      items8[1] = callback(first(5165).TableRow, obj23);
+      items8[1] = callback(first(5164).TableRow, obj23);
       obj18.children = items8;
       tmp44Result = callback2(first(5501).TableRowGroup, obj18);
       const tmp44 = callback2;

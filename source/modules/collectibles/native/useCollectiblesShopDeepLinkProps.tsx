@@ -1,10 +1,10 @@
-// Module ID: 14527
-// Function ID: 110927
+// Module ID: 14538
+// Function ID: 111054
 // Name: useCollectiblesShopDeepLinkProps
-// Dependencies: [31, 6774, 6791, 566, 6785, 2]
+// Dependencies: [31, 5770, 5787, 566, 5781, 2]
 // Exports: useCollectiblesShopDeepLinkProps
 
-// Module 14527 (useCollectiblesShopDeepLinkProps)
+// Module 14538 (useCollectiblesShopDeepLinkProps)
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

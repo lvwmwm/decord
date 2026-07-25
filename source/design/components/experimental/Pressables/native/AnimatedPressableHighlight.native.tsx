@@ -1,25 +1,25 @@
 // Module ID: 5168
-// Function ID: 44990
+// Function ID: 44995
 // Name: AnimatedPressableHighlight
-// Dependencies: [31, 27, 33, 3991, 4660, 5169, 3834, 689, 477, 2]
+// Dependencies: [31, 27, 33, 3992, 4661, 5169, 3835, 689, 477, 2]
 
 // Module 5168 (AnimatedPressableHighlight)
 import result from "result";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 import set from "jsxProd";
 
 const require = arg1;
-let closure_6 = require("module_3991").createAnimatedComponent(require("PressableBase").PressableHighlight);
+let closure_6 = require("module_3992").createAnimatedComponent(require("PressableBase").PressableHighlight);
 const result = set.fileFinishedImporting("design/components/experimental/Pressables/native/AnimatedPressableHighlight.native.tsx");
 
 export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPressableHighlightAndroid(children) {
   let obj = Object.create(null);
   obj.children = 0;
   const merged = Object.assign(children, obj);
-  obj = merged(3834);
+  obj = merged(3835);
   token = obj.useToken(token(689).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
   const items = [token, ];
   let androidRippleConfig = merged.androidRippleConfig;

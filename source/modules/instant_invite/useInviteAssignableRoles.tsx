@@ -1,10 +1,10 @@
-// Module ID: 16539
-// Function ID: 128854
+// Module ID: 16550
+// Function ID: 129022
 // Name: useInviteAssignableRoles
-// Dependencies: [31, 1911, 1910, 3758, 1849, 653, 566, 3763, 2]
+// Dependencies: [31, 1912, 1911, 3759, 1850, 653, 566, 3764, 2]
 // Exports: default
 
-// Module 16539 (useInviteAssignableRoles)
+// Module 16550 (useInviteAssignableRoles)
 import result from "result";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

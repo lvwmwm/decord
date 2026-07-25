@@ -1,9 +1,9 @@
-// Module ID: 4621
-// Function ID: 40299
+// Module ID: 4622
+// Function ID: 40311
 // Name: items
-// Dependencies: [3950, 2]
+// Dependencies: [3951, 2]
 
-// Module 4621 (items)
+// Module 4622 (items)
 import set from "set";
 
 const items = [{ field_type: require("isTermsFormField").VerificationFormFieldTypes.VERIFICATION }];

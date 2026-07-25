@@ -1,10 +1,10 @@
-// Module ID: 8788
-// Function ID: 69397
+// Module ID: 8676
+// Function ID: 68876
 // Name: ProfilePreviewWrapper
-// Dependencies: [31, 27, 655, 33, 4130, 689, 4554, 8708, 8278, 8789, 8790, 8791, 1876, 656, 8793, 8796, 2]
+// Dependencies: [31, 27, 655, 33, 4131, 689, 4555, 8596, 8013, 8677, 8678, 8679, 1877, 656, 8681, 8684, 2]
 // Exports: IndividualProductPreview
 
-// Module 8788 (ProfilePreviewWrapper)
+// Module 8676 (ProfilePreviewWrapper)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import items from "items";
@@ -39,7 +39,7 @@ function ProfilePreviewWrapper(children) {
   obj = { style: tmp.profilePreviewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 } };
   const items1 = ["" + tmp.profilePreviewGradient.color + "00", tmp.profilePreviewGradient.color];
   obj.colors = items1;
-  items[1] = callback(importDefault(4554), obj);
+  items[1] = callback(importDefault(4555), obj);
   obj.children = items;
   obj.children = callback2(closure_4, obj);
   return callback(closure_3, obj);
@@ -62,11 +62,11 @@ function ProfileFramePreview(arg0) {
   let profileFrame;
   let width;
   ({ profileFrame, width, handlePreviewPress, onTrackPress } = arg0);
-  let obj = require(8708) /* useCurrentUser */;
+  let obj = require(8596) /* useCurrentUser */;
   obj = { handlePreviewPress, onTrackPress };
   const currentUser = obj.useCurrentUser();
   obj = { profileFrame, user: currentUser, maxWidth: width, style: _createForOfIteratorHelperLoose().profilePreview };
-  obj.children = callback(importDefault(8789), obj);
+  obj.children = callback(importDefault(8677), obj);
   return callback(ProfilePreviewWrapper, obj);
 }
 class AvatarDecorationPreview {
@@ -120,26 +120,26 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   let width;
   ({ product, width, handlePreviewPress, onTrackPress } = arg0);
   const type = product.type;
-  if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+  if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
     let obj = { product };
     return callback(NameplatePreview, obj);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
     obj = { profileEffect: product.items[0], width, handlePreviewPress, onTrackPress };
     return callback(ProfileEffectPreview, obj);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
     const obj1 = { profileFrame: product.items[0], width, handlePreviewPress, onTrackPress };
     return callback(ProfileFramePreview, obj1);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
     obj = { product, handlePreviewPress, onTrackPress };
     return callback(AvatarDecorationPreview, obj);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU === type) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = require(656) /* set */.FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = callback(require(8793) /* FractionalNitroPreview */.FractionalNitroPreview, {});
+      let tmp5 = callback(require(8681) /* FractionalNitroPreview */.FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = callback(require(8796) /* OrbBadgePreview */.OrbBadgePreview, {});
+        tmp5 = callback(require(8684) /* OrbBadgePreview */.OrbBadgePreview, {});
       }
     }
     return tmp5;

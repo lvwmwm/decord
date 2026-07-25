@@ -1,10 +1,10 @@
-// Module ID: 11876
-// Function ID: 92045
+// Module ID: 11852
+// Function ID: 91850
 // Name: useGameProfileShopCollection
-// Dependencies: [31, 8638, 566, 8700, 2]
+// Dependencies: [31, 8414, 566, 8588, 2]
 // Exports: useGameProfileShopCollection
 
-// Module 11876 (useGameProfileShopCollection)
+// Module 11852 (useGameProfileShopCollection)
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

@@ -1,10 +1,10 @@
-// Module ID: 8721
-// Function ID: 68938
+// Module ID: 8609
+// Function ID: 68413
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 6779, 6778, 1874, 6780, 6781, 4169, 8720, 653, 1876, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5775, 5774, 1875, 5776, 5777, 4170, 8608, 653, 1877, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 8721 (_createForOfIteratorHelperLoose)
+// Module 8609 (_createForOfIteratorHelperLoose)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -111,13 +111,13 @@ function _isNativeReflectConstruct() {
 }
 function createCollectiblesItemFromServerResponse(type) {
   type = type.type;
-  if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+  if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
     return closure_7.fromServer(type);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
     return closure_10.fromServer(type);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
     return closure_9.fromServer(type);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
     return closure_11.fromServer(type);
   } else {
     return null;

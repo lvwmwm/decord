@@ -1,10 +1,10 @@
-// Module ID: 11691
-// Function ID: 90692
+// Module ID: 11660
+// Function ID: 90436
 // Name: ChatBeginningRowJoinRequest
-// Dependencies: [31, 27, 3758, 1849, 653, 33, 4130, 689, 11692, 566, 11693, 5513, 4126, 1212, 3950, 4965, 4543, 2]
+// Dependencies: [31, 27, 3759, 1850, 653, 33, 4131, 689, 11661, 566, 11662, 5513, 4127, 1212, 3951, 4966, 4544, 2]
 // Exports: default
 
-// Module 11691 (ChatBeginningRowJoinRequest)
+// Module 11660 (ChatBeginningRowJoinRequest)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

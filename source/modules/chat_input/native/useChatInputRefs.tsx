@@ -1,10 +1,10 @@
-// Module ID: 11140
-// Function ID: 86626
+// Module ID: 11100
+// Function ID: 86264
 // Name: useChatInputRefs
-// Dependencies: [31, 5035, 4468, 6922, 6927, 1849, 9349, 653, 4567, 4123, 5450, 3989, 22, 11141, 11145, 11146, 11149, 8021, 7018, 3996, 1555, 1454, 477, 3997, 1820, 675, 9578, 6691, 9580, 11150, 6923, 11151, 4466, 11183, 5784, 2]
+// Dependencies: [31, 5036, 4469, 5913, 5918, 1850, 9242, 653, 4568, 4124, 5450, 3990, 22, 11101, 11105, 11106, 11109, 6130, 6036, 3997, 1555, 1454, 477, 3998, 1820, 675, 9499, 5685, 9501, 11110, 5914, 11111, 4467, 11144, 6687, 2]
 // Exports: default
 
-// Module 11140 (useChatInputRefs)
+// Module 11100 (useChatInputRefs)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DraftType } from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ export default function useChatInputRefs(chatInputProps) {
   let closure_8 = React.useRef(null);
   let closure_9 = React.useRef(null);
   let closure_10 = React.useRef(new Map());
-  const tmp2 = chatInputTextFieldHeight(5450)(() => chatInputProps(3989).createInputRefTracker(chatInputProps.channel.id, chatInputProps.screenIndex));
+  const tmp2 = chatInputTextFieldHeight(5450)(() => chatInputProps(3990).createInputRefTracker(chatInputProps.channel.id, chatInputProps.screenIndex));
   const COMMAND_SENTINEL = tmp2;
   let closure_12 = React.useRef(chatInputProps);
   let closure_13 = React.useRef(chatInputProps);
@@ -252,7 +252,7 @@ export default function useChatInputRefs(chatInputProps) {
           const editingMessage = store.getEditingMessage(channel.id);
           if (null != editingMessage) {
             const obj = { channel, isEdit: true };
-            const handleLegacyCommandsResult = chatInputProps(11150).handleLegacyCommands(text, obj);
+            const handleLegacyCommandsResult = chatInputProps(11110).handleLegacyCommands(text, obj);
             let content;
             if (null != handleLegacyCommandsResult) {
               content = handleLegacyCommandsResult.content;
@@ -270,20 +270,20 @@ export default function useChatInputRefs(chatInputProps) {
                   mentionGames = applicationCommandManager.getMentionGames();
                 }
               }
-              const obj2 = chatInputTextFieldHeight(6923);
+              const obj2 = chatInputTextFieldHeight(5914);
               const parsed = obj2.parse(channel, content, undefined, mentionGames);
               if (parsed.content !== editingMessage.content) {
-                chatInputTextFieldHeight(6691).editMessage(channel.id, editingMessage.id, parsed);
-                const obj3 = chatInputTextFieldHeight(6691);
+                chatInputTextFieldHeight(5685).editMessage(channel.id, editingMessage.id, parsed);
+                const obj3 = chatInputTextFieldHeight(5685);
               }
             }
-            const obj5 = chatInputProps(11150);
-            chatInputTextFieldHeight(6691).endEditMessage(channel.id);
+            const obj5 = chatInputProps(11110);
+            chatInputTextFieldHeight(5685).endEditMessage(channel.id);
             const current = outer2_16.current;
             if (null != current) {
               current.showSideActions();
             }
-            const obj4 = chatInputTextFieldHeight(6691);
+            const obj4 = chatInputTextFieldHeight(5685);
           }
         }
         if (null == text) {
@@ -300,7 +300,7 @@ export default function useChatInputRefs(chatInputProps) {
           threadCreationCallback = outer1_13.current.threadCreationCallback;
           if (null != threadCreationCallback) {
             const text = chatInputTextFieldHeight(ref[13]).getText(outer1_8.current, outer1_10.current, (text) => {
-              let obj = chatInputProps(11151);
+              let obj = chatInputProps(11111);
               obj = { text };
               obj = {};
               const merged = Object.assign(outer2_13.current);
@@ -309,8 +309,8 @@ export default function useChatInputRefs(chatInputProps) {
               const result = obj.chatInputValidateContentLength(obj);
               if (null != result) {
                 const obj1 = { text: result.content, threadCreationCallback };
-                const result1 = chatInputProps(11151).chatInputCreateThread(obj1);
-                const obj4 = chatInputProps(11151);
+                const result1 = chatInputProps(11111).chatInputCreateThread(obj1);
+                const obj4 = chatInputProps(11111);
               }
             });
             outer1_15.current.sending = false;
@@ -320,7 +320,7 @@ export default function useChatInputRefs(chatInputProps) {
             let sendCommandResult;
             if (null != applicationCommandManager) {
               sendCommandResult = applicationCommandManager.sendCommand(outer1_14.current.text, outer1_13.current.channel, (command, optionValues) => {
-                let obj = chatInputProps(11151);
+                let obj = chatInputProps(11111);
                 obj = { applicationCommand: obj };
                 obj = { command, optionValues };
                 const obj1 = {};
@@ -340,7 +340,7 @@ export default function useChatInputRefs(chatInputProps) {
                   }
                 } else {
                   outer1_1.cancel();
-                  let obj = chatInputProps(11151);
+                  let obj = chatInputProps(11111);
                   obj = { text };
                   obj = {};
                   const merged = Object.assign(outer2_13.current);
@@ -348,7 +348,7 @@ export default function useChatInputRefs(chatInputProps) {
                   obj.params = obj;
                   const result = obj.chatInputHandleSendText(obj);
                 }
-                const keyboardType = chatInputProps(3996).getKeyboardType();
+                const keyboardType = chatInputProps(3997).getKeyboardType();
                 if (keyboardType === chatInputProps(1555).KeyboardTypes.SYSTEM) {
                   const current2 = outer2_16.current;
                   current2.focus();

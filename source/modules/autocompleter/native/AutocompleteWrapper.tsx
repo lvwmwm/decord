@@ -1,9 +1,9 @@
-// Module ID: 11458
-// Function ID: 89109
+// Module ID: 11421
+// Function ID: 88768
 // Name: isSlashAutocompleteType
-// Dependencies: [57, 31, 27, 7021, 4991, 4808, 5035, 653, 4566, 9594, 4567, 9676, 1852, 33, 4130, 477, 689, 11459, 1450, 5160, 5084, 566, 3834, 9921, 11462, 3803, 5164, 9675, 5728, 11463, 9363, 6753, 1881, 9593, 11146, 1555, 4324, 11464, 1324, 4528, 11465, 8028, 11366, 1273, 3991, 11466, 6755, 11473, 4126, 1212, 7191, 11474, 11475, 2]
+// Dependencies: [57, 31, 27, 6039, 4992, 4809, 5036, 653, 4567, 9515, 4568, 9598, 1853, 33, 4131, 477, 689, 11422, 1450, 5159, 5084, 566, 3835, 9849, 11425, 3804, 5163, 9597, 9599, 11426, 9269, 5674, 1882, 9514, 11106, 1555, 4325, 11427, 1324, 4529, 11428, 6137, 11328, 1273, 3992, 11429, 5676, 11436, 4127, 1212, 7582, 11437, 11438, 2]
 
-// Module 11458 (isSlashAutocompleteType)
+// Module 11421 (isSlashAutocompleteType)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "_createForOfIteratorHelperLoose";
 import get_ActivityIndicator from "toGameResults";
@@ -53,10 +53,10 @@ function getAutocompletesHeight(arg0, arg1, arg2, arg3) {
   return num;
 }
 function getStickersItemLayout(arg0, index) {
-  const obj = { length: require(11459) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE };
-  const result = index * (require(11459) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE + require(11459) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN);
+  const obj = { length: require(11422) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE };
+  const result = index * (require(11422) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE + require(11422) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN);
   const diff = index - 1;
-  obj.offset = result + diff * require(11459) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN;
+  obj.offset = result + diff * require(11422) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN;
   obj.index = index;
   return obj;
 }
@@ -87,8 +87,8 @@ let closure_28 = _createForOfIteratorHelperLoose.createStyles((borderRadius, bor
   obj.sectionDivider = obj2;
   const obj3 = { backgroundColor: importDefault(689).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingLeft: 12, marginVertical: 12, justifyContent: "center" };
   obj.sectionTitle = obj3;
-  obj.stickersAutocompleteList = { paddingLeft: 12 - require(11459) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11459) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
-  const obj4 = { paddingLeft: 12 - require(11459) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11459) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
+  obj.stickersAutocompleteList = { paddingLeft: 12 - require(11422) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11422) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
+  const obj4 = { paddingLeft: 12 - require(11422) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11422) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
   obj.newTag = { backgroundColor: importDefault(689).colors.BADGE_BACKGROUND_BRAND };
   return obj;
 });

@@ -1,10 +1,10 @@
-// Module ID: 10394
-// Function ID: 80184
+// Module ID: 10327
+// Function ID: 79837
 // Name: getChildMapping
 // Dependencies: [31, 2]
 // Exports: getChildMapping, mergeChildMappings
 
-// Module 10394 (getChildMapping)
+// Module 10327 (getChildMapping)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionChildMapping.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 4143
-// Function ID: 34733
+// Module ID: 4144
+// Function ID: 34744
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1347, 4144, 4149, 1194, 4809, 1348, 4217, 1906, 4952, 1849, 10562, 4146, 4148, 653, 3, 10561, 22, 44, 8960, 4194, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1347, 4145, 4150, 1194, 4810, 1348, 4218, 1907, 4953, 1850, 10449, 4147, 4149, 653, 3, 10448, 22, 44, 8848, 4195, 566, 686, 2]
 
-// Module 4143 (_isNativeReflectConstruct)
+// Module 4144 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -126,7 +126,7 @@ function _arrayLikeToArray(arg0, arg1) {
 function _getParticipants(channelId) {
   let tmp = table[channelId];
   if (null == tmp) {
-    let tmp4 = importDefault(10561);
+    let tmp4 = importDefault(10448);
     const prototype = tmp4.prototype;
     tmp4 = new tmp4(channelId);
     table[channelId] = tmp4;
@@ -288,9 +288,9 @@ function setSelectedParticipantId(channelId, arg1) {
   }
 }
 function hasVideo(id) {
-  let hasEmbeddedActivityResult = id.size(require(10561) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM) > 0;
+  let hasEmbeddedActivityResult = id.size(require(10448) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM) > 0;
   if (!hasEmbeddedActivityResult) {
-    hasEmbeddedActivityResult = id.size(require(10561) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.VIDEO) > 0;
+    hasEmbeddedActivityResult = id.size(require(10448) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.VIDEO) > 0;
   }
   if (!hasEmbeddedActivityResult) {
     hasEmbeddedActivityResult = id.hasEmbeddedActivity();
@@ -366,7 +366,7 @@ function handleChannelDelete(channel) {
   clearChannel(id);
 }
 function handleStreamClose(streamKey) {
-  const decodeStreamKeyResult = require(4194) /* isStreamKey */.decodeStreamKey(streamKey.streamKey);
+  const decodeStreamKeyResult = require(4195) /* isStreamKey */.decodeStreamKey(streamKey.streamKey);
   const items = [decodeStreamKeyResult.channelId];
   return updateParticipant(decodeStreamKeyResult.ownerId, items);
 }
@@ -807,12 +807,12 @@ tmp8 = new tmp8(require("dispatcher"), {
     const tmp3 = _getParticipants(channelId);
     const require = tmp3;
     if (null == id) {
-      const item = tmp3.toArray(require(10561) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM).forEach((user) => {
+      const item = tmp3.toArray(require(10448) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM).forEach((user) => {
         if (outer1_23(user)) {
           tmp3.updateParticipant(user.user.id);
         }
       });
-      const toArrayResult = tmp3.toArray(require(10561) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM);
+      const toArrayResult = tmp3.toArray(require(10448) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM);
     }
     if (null != id) {
       let NONE = id;
@@ -822,7 +822,7 @@ tmp8 = new tmp8(require("dispatcher"), {
     const items = [NONE, callback3(_getSelectedParticipantId(channelId), 2)[1]];
     setSelectedParticipantId(channelId, items);
     if (obj2.isStreamKey(id)) {
-      const ownerId = require(4194) /* isStreamKey */.decodeStreamKey(tmp2).ownerId;
+      const ownerId = require(4195) /* isStreamKey */.decodeStreamKey(tmp2).ownerId;
       if (ownerId === store.getId()) {
         const items1 = [tmp];
         updateParticipant(tmp14, items1);
@@ -840,7 +840,7 @@ tmp8 = new tmp8(require("dispatcher"), {
         }
         break;
       }
-      const obj3 = require(4194) /* isStreamKey */;
+      const obj3 = require(4195) /* isStreamKey */;
       tmp14 = ownerId;
     }
   },
@@ -906,11 +906,11 @@ tmp8 = new tmp8(require("dispatcher"), {
     const id = store.getId();
     if (channelId.selfStreamHidden) {
       const first = callback3(_getSelectedParticipantId(channelId), 1)[0];
-      const obj2 = require(4194) /* isStreamKey */;
+      const obj2 = require(4195) /* isStreamKey */;
       if (tmp6) {
         setSelectedParticipantId(channelId, null);
       }
-      tmp6 = require(4194) /* isStreamKey */.isStreamKey(first) && first.includes(id);
+      tmp6 = require(4195) /* isStreamKey */.isStreamKey(first) && first.includes(id);
     }
     const items = [channelId];
     updateParticipant(id, items);
@@ -940,7 +940,7 @@ tmp8 = new tmp8(require("dispatcher"), {
   STREAM_CLOSE: handleStreamClose,
   STREAM_DELETE: handleStreamClose,
   STREAM_WATCH: function handleStreamWatch(streamKey) {
-    const decodeStreamKeyResult = require(4194) /* isStreamKey */.decodeStreamKey(streamKey.streamKey);
+    const decodeStreamKeyResult = require(4195) /* isStreamKey */.decodeStreamKey(streamKey.streamKey);
     const items = [decodeStreamKeyResult.channelId];
     return updateParticipant(decodeStreamKeyResult.ownerId, items);
   },
@@ -966,7 +966,7 @@ tmp8 = new tmp8(require("dispatcher"), {
     } else {
       return false;
     }
-    obj = importDefault(8960);
+    obj = importDefault(8848);
   },
   GUILD_RING_STOP: function handleGuildRingStop(guildId) {
     let channelId;
@@ -981,7 +981,7 @@ tmp8 = new tmp8(require("dispatcher"), {
     } else {
       return false;
     }
-    obj = importDefault(8960);
+    obj = importDefault(8848);
   },
   USER_UPDATE: handleUserUpdate,
   GUILD_MEMBER_UPDATE: handleUserUpdate,

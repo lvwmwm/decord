@@ -1,10 +1,10 @@
-// Module ID: 15168
-// Function ID: 115488
+// Module ID: 15178
+// Function ID: 115616
 // Name: useNotificationsTabBadge
-// Dependencies: [31, 6881, 566, 6882, 2]
+// Dependencies: [31, 5872, 566, 5873, 2]
 // Exports: default
 
-// Module 15168 (useNotificationsTabBadge)
+// Module 15178 (useNotificationsTabBadge)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

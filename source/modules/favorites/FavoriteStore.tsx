@@ -1,5 +1,5 @@
 // Module ID: 1351
-// Function ID: 16097
+// Function ID: 16103
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1316, 1352, 1386, 653, 22, 1282, 566, 686, 2]
 
@@ -40,25 +40,25 @@ function initializeFromUserSettings() {
   }
   if (null != favoriteChannels) {
     for (const key10011 in favoriteChannels) {
-      let tmp16 = key10011;
-      let tmp17 = favoriteChannels[key10011];
+      let tmp19 = key10011;
+      let tmp20 = favoriteChannels[key10011];
       obj = { id: key10011 };
       let nickname = null;
-      if ("" !== tmp17.nickname) {
-        nickname = tmp17.nickname;
+      if ("" !== tmp20.nickname) {
+        nickname = tmp20.nickname;
       }
       obj.nickname = nickname;
-      ({ type: obj4.type, channelType } = tmp17);
+      ({ type: obj4.type, channelType } = tmp20);
       let value;
       if (null != channelType) {
         value = channelType.value;
       }
       obj.channelType = value;
-      obj.order = tmp17.position;
+      obj.order = tmp20.position;
       let tmp6 = closure_9;
       let parentId = null;
-      if (tmp17.parentId !== closure_9) {
-        parentId = tmp17.parentId;
+      if (tmp20.parentId !== closure_9) {
+        parentId = tmp20.parentId;
       }
       obj.parentId = parentId;
       obj[key10011] = obj;
@@ -71,13 +71,17 @@ function initializeFromUserSettings() {
       value = iter.value;
     }
   }
+  let tmp9 = value;
   if (null == value) {
-    value = !require(22) /* apply */.isEmpty(obj);
+    tmp9 = !require(22) /* apply */.isEmpty(obj);
     const obj2 = require(22) /* apply */;
   }
   let flag = c13 !== tmp2;
   if (!flag) {
-    flag = c14 !== value;
+    flag = c14 !== tmp9;
+  }
+  if (!flag) {
+    flag = c15 !== tmp12;
   }
   if (!flag) {
     flag = !require(22) /* apply */.isEqual(obj, obj);
@@ -85,7 +89,8 @@ function initializeFromUserSettings() {
   }
   if (flag) {
     c13 = tmp2;
-    c14 = value;
+    c14 = tmp9;
+    c15 = tmp12;
     flag = true;
   }
   return flag;
@@ -94,6 +99,7 @@ function initializeFromUserSettings() {
 let closure_12 = {};
 let c13 = false;
 let c14 = false;
+let c15 = false;
 let tmp3 = ((Store) => {
   class FavoriteStore {
     constructor() {
@@ -101,7 +107,7 @@ let tmp3 = ((Store) => {
       tmp = outer1_2(this, FavoriteStore);
       obj = outer1_5(FavoriteStore);
       tmp2 = outer1_4;
-      if (outer1_15()) {
+      if (outer1_16()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
         tmp7 = outer1_5;
@@ -120,12 +126,12 @@ let tmp3 = ((Store) => {
     key: "initialize",
     value() {
       this.waitFor(outer1_7);
-      outer1_16();
+      outer1_17();
       const items = [outer1_7];
-      this.syncWith(items, outer1_16);
+      this.syncWith(items, outer1_17);
     }
   };
-  let items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "getFavoriteChannels",
     value() {
@@ -147,6 +153,12 @@ let tmp3 = ((Store) => {
     }
   };
   items[4] = {
+    key: "favoriteGuildExplicitlyHidden",
+    get() {
+      return outer1_15;
+    }
+  };
+  items[5] = {
     key: "isFavorite",
     value(arg0) {
       let tmp = null != arg0;
@@ -156,7 +168,7 @@ let tmp3 = ((Store) => {
       return tmp;
     }
   };
-  items[5] = {
+  items[6] = {
     key: "getFavorite",
     value(arg0) {
       if (null != arg0) {
@@ -164,7 +176,7 @@ let tmp3 = ((Store) => {
       }
     }
   };
-  items[6] = {
+  items[7] = {
     key: "getCategoryRecord",
     value(arg0) {
       let nickname;
@@ -189,7 +201,7 @@ let tmp3 = ((Store) => {
       return tmp;
     }
   };
-  items[7] = {
+  items[8] = {
     key: "getNickname",
     value(arg0) {
       const favorite = this.getFavorite(arg0);
@@ -204,13 +216,13 @@ let tmp3 = ((Store) => {
       return tmp3;
     }
   };
-  items[8] = {
+  items[9] = {
     key: "getFavoritesCount",
     value() {
       return Object.keys(this.getFavoriteChannels()).length;
     }
   };
-  items[9] = {
+  items[10] = {
     key: "hasStoredFavorites",
     value() {
       return !FavoriteStore(outer1_1[9]).isEmpty(this.getFavoriteChannels());

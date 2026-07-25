@@ -1,10 +1,10 @@
-// Module ID: 11842
-// Function ID: 91896
+// Module ID: 11818
+// Function ID: 91701
 // Name: OrbCheckoutAmountTag
-// Dependencies: [27, 33, 4130, 689, 8749, 4126, 1212, 2]
+// Dependencies: [27, 33, 4131, 689, 8637, 4127, 1212, 2]
 // Exports: default
 
-// Module 11842 (OrbCheckoutAmountTag)
+// Module 11818 (OrbCheckoutAmountTag)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,7 +24,7 @@ export default function OrbCheckoutAmountTag(orbAmount) {
   const tmp = callback2();
   let obj = { style: tmp.orbAmountTag };
   obj = { size: "custom", color: "icon-strong", style: tmp.orbsIcon };
-  const items = [callback(require(8749) /* OrbsIcon */.OrbsIcon, obj), ];
+  const items = [callback(require(8637) /* OrbsIcon */.OrbsIcon, obj), ];
   obj = { variant: "text-md/semibold" };
   if (null == orbAmount) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -40,7 +40,7 @@ export default function OrbCheckoutAmountTag(orbAmount) {
     str = orbAmount;
   }
   obj.children = str;
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return closure_4(View, obj);
 };

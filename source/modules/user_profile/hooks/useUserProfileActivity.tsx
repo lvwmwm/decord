@@ -1,10 +1,10 @@
-// Module ID: 11989
-// Function ID: 92687
+// Module ID: 11965
+// Function ID: 92492
 // Name: useUserProfileActivity
-// Dependencies: [31, 8731, 4217, 9104, 566, 11990, 7906, 8356, 8352, 2]
+// Dependencies: [31, 8619, 4218, 8996, 566, 11966, 7853, 8114, 8110, 2]
 // Exports: default
 
-// Module 11989 (useUserProfileActivity)
+// Module 11965 (useUserProfileActivity)
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

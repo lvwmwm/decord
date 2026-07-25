@@ -1,10 +1,10 @@
-// Module ID: 4351
-// Function ID: 38595
+// Module ID: 4352
+// Function ID: 38606
 // Name: createMinimalMessageRecord
-// Dependencies: [4352, 3768, 1857, 1194, 3767, 1849, 653, 4353, 4114, 4360, 21, 4365, 4366, 4463, 3712, 4464, 4466, 2]
+// Dependencies: [4353, 3769, 1858, 1194, 3768, 1850, 653, 4354, 4115, 4361, 21, 4366, 4367, 4464, 3713, 4465, 4467, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 4351 (createMinimalMessageRecord)
+// Module 4352 (createMinimalMessageRecord)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import closure_6 from "_callSuper";
@@ -42,12 +42,12 @@ function createMinimalMessageRecord(timestamp) {
   if (null == components) {
     components = [];
   }
-  obj["components"] = require(4353) /* _createForOfIteratorHelperLoose */.transformComponents(components);
+  obj["components"] = require(4354) /* _createForOfIteratorHelperLoose */.transformComponents(components);
   const NON_PARSED = constants3.NON_PARSED;
   if (NON_PARSED.has(timestamp.type)) {
     let items = [];
   } else {
-    items = importDefault(4114)(timestamp.content);
+    items = importDefault(4115)(timestamp.content);
   }
   obj["codedLinks"] = items;
   tmp = new tmp(obj);
@@ -95,7 +95,7 @@ function createMessageRecord(message, message) {
     }
   }
   obj = { channel_id: message.channel_id, author: user };
-  const messageAuthor = require(4360) /* useNullableMessageAuthor */.getMessageAuthor(obj);
+  const messageAuthor = require(4361) /* useNullableMessageAuthor */.getMessageAuthor(obj);
   let gift_info;
   if (null != message) {
     gift_info = message.gift_info;
@@ -166,17 +166,17 @@ function createMessageRecord(message, message) {
   obj["mentionChannels"] = mention_channels;
   obj["mentionGames"] = mention_games;
   obj["messageReference"] = message.message_reference;
-  const obj3 = require(4360) /* useNullableMessageAuthor */;
+  const obj3 = require(4361) /* useNullableMessageAuthor */;
   obj1 = { userId: store.getId(), channelId: message.channel_id, mentionEveryone: tmp33 };
   const mention_everyone = message.mention_everyone;
   obj1.mentionUsers = mapped;
   obj1.mentionRoles = mention_roles;
-  obj["mentioned"] = require(4365) /* isMentioned */.isMentioned(obj1);
-  const obj8 = require(4365) /* isMentioned */;
+  obj["mentioned"] = require(4366) /* isMentioned */.isMentioned(obj1);
+  const obj8 = require(4366) /* isMentioned */;
   tmp33 = null != mention_everyone && mention_everyone;
-  const obj10 = require(4366) /* unambiguousRegex */;
-  const isGiftCodeEmbedResult = require(4366) /* unambiguousRegex */.isGiftCodeEmbed(message);
-  const findGiftCodes = require(4366) /* unambiguousRegex */.findGiftCodes;
+  const obj10 = require(4367) /* unambiguousRegex */;
+  const isGiftCodeEmbedResult = require(4367) /* unambiguousRegex */.isGiftCodeEmbed(message);
+  const findGiftCodes = require(4367) /* unambiguousRegex */.findGiftCodes;
   if (isGiftCodeEmbedResult) {
     let url;
     if (null != message) {
@@ -206,7 +206,7 @@ function createMessageRecord(message, message) {
   obj["purchaseNotification"] = message.purchase_notification;
   let tmp39;
   if (null != message.poll) {
-    tmp39 = importDefault(4463)(message.poll);
+    tmp39 = importDefault(4464)(message.poll);
   }
   obj["poll"] = tmp39;
   obj["sharedClientTheme"] = message.shared_client_theme;
@@ -226,12 +226,12 @@ function transformMessageCall(call, timestamp) {
     if (null != call.ended_timestamp) {
       const _Date = Date;
       const date = new Date(call.ended_timestamp);
-      tmp = importDefault(3712)(date);
-      const tmp4 = importDefault(3712);
+      tmp = importDefault(3713)(date);
+      const tmp4 = importDefault(3713);
     }
     let durationResult = null;
     if (null != tmp) {
-      let obj = importDefault(3712);
+      let obj = importDefault(3713);
       durationResult = obj.duration(tmp.diff(timestamp));
     }
     obj = { participants: call.participants, endedTimestamp: tmp, duration: durationResult };
@@ -247,7 +247,7 @@ function transformEmbeds(embeds) {
   } else {
     embeds = embeds.embeds;
     const mapped = embeds.map((footer) => embeds(outer1_2[15]).sanitizeEmbed(embeds.channel_id, embeds.id, footer));
-    return _require(4464).mergeEmbedsOnURL(mapped);
+    return _require(4465).mergeEmbedsOnURL(mapped);
   }
 }
 function transformReactions(arg0, results) {
@@ -402,8 +402,8 @@ export const updateMessageRecord = function updateMessageRecord(message, message
     }
     let result10 = result9;
     if (null != message2.components) {
-      result10 = result9.set("components", require(4353) /* _createForOfIteratorHelperLoose */.transformComponents(message2.components));
-      const obj12 = require(4353) /* _createForOfIteratorHelperLoose */;
+      result10 = result9.set("components", require(4354) /* _createForOfIteratorHelperLoose */.transformComponents(message2.components));
+      const obj12 = require(4354) /* _createForOfIteratorHelperLoose */;
     }
     let result11 = result10;
     if (null != message2.role_subscription_data) {
@@ -420,7 +420,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
     }
     let result13 = result12;
     if (null != message2.poll) {
-      result13 = result12.set("poll", importDefault(4463)(message2.poll));
+      result13 = result12.set("poll", importDefault(4464)(message2.poll));
     }
     let result14 = result13;
     let flag = false;
@@ -442,14 +442,14 @@ export const updateMessageRecord = function updateMessageRecord(message, message
     let result17 = result16;
     if (flag) {
       obj = { message: result16, userId: store.getId() };
-      result17 = result16.set("mentioned", importDefault(4365)(obj));
-      const tmp20 = importDefault(4365);
+      result17 = result16.set("mentioned", importDefault(4366)(obj));
+      const tmp20 = importDefault(4366);
     }
     return result17;
   }
 };
 export const canEditMessageWithStickers = function canEditMessageWithStickers(content) {
-  let tmp = 0 === require(4466) /* getStickerPackPreviewSticker */.getMessageStickers(content).length;
+  let tmp = 0 === require(4467) /* getStickerPackPreviewSticker */.getMessageStickers(content).length;
   if (!tmp) {
     tmp = "" !== content.content;
   }

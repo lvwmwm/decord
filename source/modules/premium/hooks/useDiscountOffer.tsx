@@ -1,10 +1,10 @@
-// Module ID: 7127
-// Function ID: 57293
+// Module ID: 6205
+// Function ID: 55666
 // Name: useDiscountOffer
-// Dependencies: [57, 31, 1849, 6688, 1851, 566, 3776, 4015, 2]
+// Dependencies: [57, 31, 1850, 6157, 1852, 566, 3777, 4016, 2]
 // Exports: default
 
-// Module 7127 (useDiscountOffer)
+// Module 6205 (useDiscountOffer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,9 +1,9 @@
-// Module ID: 5039
-// Function ID: 43477
+// Module ID: 5040
+// Function ID: 43489
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1352, 1348, 1838, 4142, 1906, 5040, 3760, 1355, 21, 4345, 5041, 686, 22, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1352, 1348, 1838, 4143, 1907, 5041, 3761, 1355, 21, 4346, 5042, 686, 22, 566, 2]
 
-// Module 5039 (_isNativeReflectConstruct)
+// Module 5040 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import getThreadLastActivityTime from "getThreadLastActivityTime";
@@ -443,7 +443,7 @@ function anyThreadsNSFW(guild_id, parent_id) {
         let tmp11 = key10008;
         let tmp12 = require;
         let tmp13 = dependencyMap;
-        let obj = require(4345) /* shouldAgeVerifyForAgeGate */;
+        let obj = require(4346) /* shouldAgeVerifyForAgeGate */;
         if (!obj.isChannelContentGated(tmp[key10008].channel)) {
           continue;
         } else {
@@ -463,7 +463,7 @@ function anyThreadsNSFW(guild_id, parent_id) {
           let tmp14 = tmp8;
           let tmp15 = require;
           let tmp16 = dependencyMap;
-          let obj2 = require(4345) /* shouldAgeVerifyForAgeGate */;
+          let obj2 = require(4346) /* shouldAgeVerifyForAgeGate */;
           if (!obj2.isChannelContentGated(tmp5[tmp8])) {
             continue;
           } else {
@@ -705,8 +705,8 @@ function parseThreadState(channel) {
   let tmp6 = isActiveThreadResult;
   if (isActiveThreadResult) {
     const _Date = Date;
-    tmp6 = importDefault(5041)(channel) > Date.now();
-    const tmp9 = importDefault(5041)(channel);
+    tmp6 = importDefault(5042)(channel) > Date.now();
+    const tmp9 = importDefault(5042)(channel);
   }
   const obj = {};
   if (!isActiveThreadResult) {
@@ -1106,7 +1106,7 @@ obj = {
     let iter = tmp();
     if (!iter.done) {
       const value = iter.value;
-      const result = require(4345) /* shouldAgeVerifyForAgeGate */.isChannelContentGated(value);
+      const result = require(4346) /* shouldAgeVerifyForAgeGate */.isChannelContentGated(value);
       while (result === anyThreadsNSFW(value.guild_id, value.parent_id)) {
         let iter2 = tmp();
         iter = iter2;

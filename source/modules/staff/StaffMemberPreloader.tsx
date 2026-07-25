@@ -1,10 +1,10 @@
-// Module ID: 16224
-// Function ID: 125798
+// Module ID: 16235
+// Function ID: 125966
 // Name: preloadStaffMembers
-// Dependencies: [1838, 1849, 16225, 5048, 2]
+// Dependencies: [1838, 1850, 16236, 5049, 2]
 // Exports: preloadStaffMembers
 
-// Module 16224 (preloadStaffMembers)
+// Module 16235 (preloadStaffMembers)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PRELOAD_SERVER_ID } from "PRELOAD_SERVER_ID";
@@ -18,7 +18,7 @@ export const preloadStaffMembers = function preloadStaffMembers() {
     tmp = null != guild.getGuild(PRELOAD_SERVER_ID);
   }
   if (tmp) {
-    const obj2 = importDefault(5048);
+    const obj2 = importDefault(5049);
     const members = obj2.requestMembers(PRELOAD_SERVER_ID, "", 0, false);
   }
 };

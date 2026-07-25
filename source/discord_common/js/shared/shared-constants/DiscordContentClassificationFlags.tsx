@@ -1,9 +1,9 @@
-// Module ID: 6869
-// Function ID: 54372
+// Module ID: 5644
+// Function ID: 48280
 // Name: frozen
 // Dependencies: [483, 2]
 
-// Module 6869 (frozen)
+// Module 5644 (frozen)
 import importAllResult from "fromHexReverseArray";
 import importAllResult1 from "fromHexReverseArray";
 import importAllResult2 from "fromHexReverseArray";

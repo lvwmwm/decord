@@ -1,10 +1,10 @@
-// Module ID: 11762
-// Function ID: 91334
+// Module ID: 11732
+// Function ID: 91084
 // Name: onCreateGuild
-// Dependencies: [5, 31, 27, 3951, 653, 11763, 9263, 33, 5048, 11537, 10913, 11764, 11806, 675, 480, 5087, 11739, 1198, 11766, 11768, 10095, 1212, 11776, 11777, 11807, 11788, 5517, 2]
+// Dependencies: [5, 31, 27, 3952, 653, 11733, 9155, 33, 5049, 11503, 10863, 11734, 11782, 675, 480, 5087, 11709, 1198, 11736, 11738, 10024, 1212, 11746, 11747, 11783, 11764, 5517, 2]
 // Exports: default
 
-// Module 11762 (onCreateGuild)
+// Module 11732 (onCreateGuild)
 import GuildTemplateId from "GuildTemplateId";
 import result from "result";
 import { Keyboard } from "set";

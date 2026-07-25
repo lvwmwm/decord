@@ -1,9 +1,9 @@
-// Module ID: 10065
-// Function ID: 77693
+// Module ID: 9994
+// Function ID: 77312
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 10066, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 9995, 566, 686, 2]
 
-// Module 10065 (_isNativeReflectConstruct)
+// Module 9994 (_isNativeReflectConstruct)
 import initialize from "initialize";
 import dispatcher from "dispatcher";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -111,7 +111,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     });
     obj = {};
     const merged1 = Object.assign(dependencyMap2[channelId]);
-    obj = { results: items(10066).orderByTotalMemberCount(items), lastSearchedAt: Date.now() };
+    obj = { results: items(9995).orderByTotalMemberCount(items), lastSearchedAt: Date.now() };
     obj[query.query] = obj;
     dependencyMap2[channelId] = obj;
   },

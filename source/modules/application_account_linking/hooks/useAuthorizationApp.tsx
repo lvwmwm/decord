@@ -1,7 +1,7 @@
 // Module ID: 5467
-// Function ID: 46731
+// Function ID: 46736
 // Name: getAuthorizationApp
-// Dependencies: [31, 4167, 4153, 4156, 1881, 5468, 2]
+// Dependencies: [31, 4168, 4154, 4157, 1882, 5468, 2]
 // Exports: useAuthorizationApp
 
 // Module 5467 (getAuthorizationApp)

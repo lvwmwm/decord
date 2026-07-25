@@ -1,9 +1,9 @@
-// Module ID: 6077
-// Function ID: 50081
+// Module ID: 6997
+// Function ID: 59731
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 6077 (vanityUrl)
+// Module 6997 (vanityUrl)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDepthTier10SmallBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/5505196b5fb7e6a771b5ac34f03e7dc60ff823cdb22146dc5d79e26a865ac70d.png";

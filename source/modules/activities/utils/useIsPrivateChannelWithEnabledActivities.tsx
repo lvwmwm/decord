@@ -1,10 +1,10 @@
-// Module ID: 10583
-// Function ID: 82626
+// Module ID: 10471
+// Function ID: 81241
 // Name: useIsPrivateChannelWithEnabledActivities
 // Dependencies: [1348, 624, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 10583 (useIsPrivateChannelWithEnabledActivities)
+// Module 10471 (useIsPrivateChannelWithEnabledActivities)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

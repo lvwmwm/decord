@@ -1,10 +1,10 @@
-// Module ID: 15346
-// Function ID: 116992
+// Module ID: 15356
+// Function ID: 117120
 // Name: showMembersManagementActionSheet
-// Dependencies: [1849, 1212, 4098, 15347, 1934, 5646, 15348, 5495, 2]
+// Dependencies: [1850, 1212, 4099, 15357, 1935, 6010, 15358, 5495, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 15346 (showMembersManagementActionSheet)
+// Module 15356 (showMembersManagementActionSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -26,8 +26,8 @@ export default function showMembersManagementActionSheet(guild) {
   };
   const items = [obj];
   if (null == canPrune) {
-    canPrune = guild(5646).canPruneGuildMembers(guild, authStore.getCurrentUser());
-    const obj2 = guild(5646);
+    canPrune = guild(6010).canPruneGuildMembers(guild, authStore.getCurrentUser());
+    const obj2 = guild(6010);
   }
   if (canPrune) {
     obj = {};
@@ -60,8 +60,8 @@ export const getMembersManagementActions = function getMembersManagementActions(
   };
   const items = [obj];
   if (null == canPrune) {
-    canPrune = guild(5646).canPruneGuildMembers(guild, authStore.getCurrentUser());
-    const obj2 = guild(5646);
+    canPrune = guild(6010).canPruneGuildMembers(guild, authStore.getCurrentUser());
+    const obj2 = guild(6010);
   }
   if (canPrune) {
     obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 13869
-// Function ID: 106177
+// Module ID: 13880
+// Function ID: 106304
 // Name: FamilyCenterAcceptedLinkRow
-// Dependencies: [31, 27, 6770, 33, 4130, 689, 7123, 7122, 11091, 1212, 2198, 4126, 13870, 13872, 4660, 4337, 13875, 1934, 1273, 13877, 2]
+// Dependencies: [31, 27, 5766, 33, 4131, 689, 6201, 6200, 11050, 1212, 2199, 4127, 13881, 13883, 4661, 4338, 13886, 1935, 1273, 13888, 2]
 // Exports: default
 
-// Module 13869 (FamilyCenterAcceptedLinkRow)
+// Module 13880 (FamilyCenterAcceptedLinkRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import items from "items";
@@ -30,18 +30,18 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
       str = str.toString();
     }
     obj1.name = str;
-    obj.accessibilityLabel = intl.formatToPlainString(importDefault(2198).T7DUoU, obj1);
+    obj.accessibilityLabel = intl.formatToPlainString(importDefault(2199).T7DUoU, obj1);
     obj.onPress = function onPress() {
       let obj = outer1_1(outer1_2[15]);
       obj = { otherUser: str };
       obj.pushLazy(str(outer1_2[17])(outer1_2[16], outer1_2.paths), obj);
     };
     obj.style = tmp.actionButton;
-    obj = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13877) };
+    obj = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13888) };
     obj.children = callback(str(1273).Icon, obj);
-    obj.actions = callback(str(4660).PressableOpacity, obj);
-    tmp8Result = callback(importDefault(13872), obj);
-    const tmp11 = importDefault(13872);
+    obj.actions = callback(str(4661).PressableOpacity, obj);
+    tmp8Result = callback(importDefault(13883), obj);
+    const tmp11 = importDefault(13883);
     const tmp12 = callback;
     const tmp8 = callback;
   }
@@ -63,26 +63,26 @@ const result = require("items").fileFinishedImporting("modules/parent_tools/nati
 
 export default function FamilyCenterAcceptedLinks() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(7122) /* useUserIdsForLinkStatus */;
+  let obj = require(6200) /* useUserIdsForLinkStatus */;
   const activeLinkUsers = obj.useActiveLinkUsers();
-  obj = { count: activeLinkUsers.length, max: importDefault(7123)() ? closure_4 : closure_5 };
-  let obj2 = require(11091) /* useAgeSpecificText */;
+  obj = { count: activeLinkUsers.length, max: importDefault(6201)() ? closure_4 : closure_5 };
+  let obj2 = require(11050) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
-  const tmp2 = importDefault(7123)();
+  const tmp2 = importDefault(6201)();
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj = { style: tmp.container };
-  const ageSpecificText = obj2.useAgeSpecificText(intl.formatToPlainString(importDefault(2198)["+tnO34"], obj), intl2.formatToPlainString(importDefault(2198)["pu6/U0"], obj));
+  const ageSpecificText = obj2.useAgeSpecificText(intl.formatToPlainString(importDefault(2199)["+tnO34"], obj), intl2.formatToPlainString(importDefault(2199)["pu6/U0"], obj));
   const obj1 = { style: tmp.header, variant: "eyebrow", color: "text-default", children: ageSpecificText };
-  const items = [callback(require(4126) /* Text */.Text, obj1), ];
+  const items = [callback(require(4127) /* Text */.Text, obj1), ];
   obj2 = { style: tmp.content };
   if (0 === activeLinkUsers.length) {
     const obj3 = { style: tmp.empty };
     const obj4 = {};
     const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj4.text = intl3.string(importDefault(2198).C4ScLD);
-    obj3.children = callback(importDefault(13870), obj4);
+    obj4.text = intl3.string(importDefault(2199).C4ScLD);
+    obj3.children = callback(importDefault(13881), obj4);
     let mapped = callback(View, obj3);
-    const tmp14 = importDefault(13870);
+    const tmp14 = importDefault(13881);
   } else {
     mapped = activeLinkUsers.map((id) => outer1_6(outer1_10, { otherUser: id }, "accepted-" + id.id));
   }

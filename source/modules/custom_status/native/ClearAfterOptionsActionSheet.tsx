@@ -1,10 +1,10 @@
-// Module ID: 11937
-// Function ID: 92406
+// Module ID: 11913
+// Function ID: 92211
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [57, 31, 27, 11928, 33, 4130, 689, 5187, 5186, 1212, 7654, 7653, 11938, 4543, 4098, 2]
+// Dependencies: [57, 31, 27, 11904, 33, 4131, 689, 5187, 5186, 1212, 7596, 7595, 11914, 4544, 4099, 2]
 // Exports: default
 
-// Module 11937 (ClearAfterOptionsActionSheet)
+// Module 11913 (ClearAfterOptionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -45,7 +45,7 @@ export default function ClearAfterOptionsActionSheet(arg0) {
     const obj = { value, label: callback2(outer1_2[12])(value) };
     return outer1_7(outer1_0(outer1_2[11]).TableRadioRow, obj, value);
   });
-  const items = [callback2(require(7654) /* context */.TableRadioGroup, obj), ];
+  const items = [callback2(require(7596) /* context */.TableRadioGroup, obj), ];
   const obj1 = { style: tmp.buttonWrapper };
   const obj2 = {
     onPress() {
@@ -55,7 +55,7 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.text = intl3.string(require(1212) /* getSystemLocale */.t.TyCVIq);
-  obj1.children = callback2(require(4543) /* Button */.Button, obj2);
+  obj1.children = callback2(require(4544) /* Button */.Button, obj2);
   items[1] = callback2(View, obj1);
   obj.children = items;
   return callback3(require(5187) /* Background */.BottomSheet, obj);

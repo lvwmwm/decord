@@ -1,10 +1,10 @@
-// Module ID: 12136
-// Function ID: 95101
+// Module ID: 12112
+// Function ID: 94906
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [27, 33, 4130, 689, 4126, 1212, 2]
+// Dependencies: [27, 33, 4131, 689, 4127, 1212, 2]
 // Exports: default
 
-// Module 12136 (UserProfilePrivateInfoBanner)
+// Module 12112 (UserProfilePrivateInfoBanner)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -29,6 +29,6 @@ export default function UserProfilePrivateInfoBanner(username) {
   obj = { variant: "text-sm/normal" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.P8ij6Z, { username: username.username });
-  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-sm/normal" });
+  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-sm/normal" });
   return <View variant="text-sm/normal" />;
 };

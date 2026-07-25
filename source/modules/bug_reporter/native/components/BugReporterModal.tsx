@@ -1,10 +1,10 @@
-// Module ID: 10350
-// Function ID: 79820
+// Module ID: 10283
+// Function ID: 79473
 // Name: handleClose
-// Dependencies: [5, 57, 31, 27, 1849, 10349, 33, 4130, 689, 666, 664, 4337, 1456, 566, 1212, 5087, 4665, 3831, 7696, 10351, 561, 10352, 10361, 5788, 7653, 5085, 1392, 4686, 4541, 4126, 5167, 9868, 4660, 1273, 4543, 7574, 5501, 5165, 4098, 10362, 1934, 7654, 7645, 685, 10363, 9651, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 10282, 33, 4131, 689, 666, 664, 4338, 1456, 566, 1212, 5087, 4666, 3832, 7640, 10284, 561, 10285, 10294, 6695, 7595, 5085, 1392, 4687, 4542, 4127, 5166, 9792, 4661, 1273, 4544, 6670, 5501, 5164, 4099, 10295, 1935, 7596, 7585, 685, 10296, 9573, 5517, 2]
 // Exports: default
 
-// Module 10350 (handleClose)
+// Module 10283 (handleClose)
 import zustandStore from "zustandStore";
 import _slicedToArray from "_slicedToArray";
 import AttachmentIcon from "AttachmentIcon";
@@ -23,7 +23,7 @@ let closure_7;
 const require = arg1;
 function handleClose() {
   state.setState({ isReportOpen: false });
-  let arr = importDefault(4337);
+  let arr = importDefault(4338);
   arr = arr.pop();
 }
 class BugCreateScreen {
@@ -197,7 +197,7 @@ class BugCreateScreen {
             tmp8 = tmp13;
           }
           obj.disabled = tmp8;
-          return first5(screenshotUri(5788).HeaderActionButton, obj);
+          return first5(screenshotUri(6695).HeaderActionButton, obj);
         }
       });
     }, items3);

@@ -1,10 +1,10 @@
-// Module ID: 4667
-// Function ID: 40532
+// Module ID: 4668
+// Function ID: 40544
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 4184, 653, 4191, 4668, 4187, 675, 4669, 2]
+// Dependencies: [57, 4185, 653, 4192, 4669, 4188, 675, 4670, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds
 
-// Module 4667 (_createForOfIteratorHelperLoose)
+// Module 4668 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { AnalyticEvents } from "ME";
@@ -130,7 +130,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
       const diff = clip.decision.timestamp - clip.length;
       const sum = diff + 1000 * editMetadata.start;
       const sum1 = diff + 1000 * editMetadata.end;
-      let obj1 = _require(4668);
+      let obj1 = _require(4669);
       const importDefault = obj1.isGameEventsOnPlayerEnabled("getClipEventsTimeline");
       const timeline1 = clip.timeline;
       const found = timeline1.filter((signal) => {
@@ -166,7 +166,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
             let value = iter.value;
             let tmp17 = _require;
             let tmp18 = dependencyMap;
-            if (value.signal.type !== _require(4187).ClipSignalTypes.SPEAKING) {
+            if (value.signal.type !== _require(4188).ClipSignalTypes.SPEAKING) {
               let iter2 = tmp16();
               iter = iter2;
               if (iter2.done) {
@@ -207,7 +207,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
             value = iter6.value;
             let tmp35 = _require;
             let tmp36 = dependencyMap;
-            if (value.signal.type === _require(4187).ClipSignalTypes.SPEAKING) {
+            if (value.signal.type === _require(4188).ClipSignalTypes.SPEAKING) {
               let tmp41 = tmp30;
               let tmp42 = tmp31;
               let tmp43 = tmp32;
@@ -251,7 +251,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
               tmp43 = tmp32;
               tmp44 = tmp33;
               tmp45 = tmp34;
-              if (value.signal.type === _require(4187).ClipSignalTypes.GAME_EVENT) {
+              if (value.signal.type === _require(4188).ClipSignalTypes.GAME_EVENT) {
                 tmp41 = tmp30;
                 tmp42 = tmp31;
                 tmp43 = tmp32;
@@ -264,13 +264,13 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
                     let eventType = value.signal.eventType;
                     let tmp61 = _require;
                     let tmp62 = dependencyMap;
-                    if (_require(4187).GameEventType.KILL === eventType) {
+                    if (_require(4188).GameEventType.KILL === eventType) {
                       let tmp40 = obj;
                       let MULTIKILL = obj.KILL;
                     } else {
                       let tmp37 = _require;
                       let tmp38 = dependencyMap;
-                      if (_require(4187).GameEventType.MULTIKILL === eventType) {
+                      if (_require(4188).GameEventType.MULTIKILL === eventType) {
                         let tmp39 = obj;
                         MULTIKILL = obj.MULTIKILL;
                       }
@@ -334,9 +334,9 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
         if (substr.length !== items.length) {
           const obj6 = { clip_uuid: clip.id, clip_event_timeline_size: items.length };
           const obj12 = importDefault(675);
-          obj6.clip_runtime = _require(4669).getClipsRuntime("getClipEventsTimeline");
+          obj6.clip_runtime = _require(4670).getClipsRuntime("getClipEventsTimeline");
           obj12.track(AnalyticEvents.CLIP_TIMELINE_TRIMMED, obj6);
-          const obj14 = _require(4669);
+          const obj14 = _require(4670);
         }
         let tmp58;
         if (substr.length > 0) {

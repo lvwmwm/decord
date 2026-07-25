@@ -1,9 +1,9 @@
-// Module ID: 12697
-// Function ID: 98719
+// Module ID: 12708
+// Function ID: 98846
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 6688, 1851, 653, 587, 3712, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 6157, 1852, 653, 587, 3713, 566, 686, 2]
 
-// Module 12697 (_isNativeReflectConstruct)
+// Module 12708 (_isNativeReflectConstruct)
 import GuildFeatures from "GuildFeatures";
 import ME from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -134,10 +134,10 @@ function isNoticeDismissed(PREMIUM_TIER_0_TRIAL_ENDING) {
       let value = Storage.get(dismissUntilStorageKey(PREMIUM_TIER_0_TRIAL_ENDING));
       let tmp5 = null;
       if (null != value) {
-        tmp5 = importDefault(3712)(value);
+        tmp5 = importDefault(3713)(value);
       }
       if (null != tmp5) {
-        return tmp5.isAfter(importDefault(3712)());
+        return tmp5.isAfter(importDefault(3713)());
       }
     }
     let tmp8 = null != tmp16;

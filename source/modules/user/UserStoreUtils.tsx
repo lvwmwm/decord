@@ -1,10 +1,10 @@
-// Module ID: 1855
-// Function ID: 20440
+// Module ID: 1856
+// Function ID: 20451
 // Name: getEnv
-// Dependencies: [1856, 653, 44, 1360, 2]
+// Dependencies: [1857, 653, 44, 1360, 2]
 // Exports: getPremiumTypeFromRawValue, isStaffEnv, isStaffEnvRawData, validatePremiumType
 
-// Module 1855 (getEnv)
+// Module 1856 (getEnv)
 import { Environments } from "Environments";
 import ME from "ME";
 

@@ -1,10 +1,10 @@
-// Module ID: 16365
-// Function ID: 127608
+// Module ID: 16376
+// Function ID: 127776
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 5, 6, 7, 15, 17, 18, 31, 27, 1911, 1194, 1917, 1910, 1838, 8483, 16352, 16347, 653, 16354, 33, 4130, 689, 4324, 16356, 22, 675, 8457, 16366, 3831, 1212, 10361, 9212, 5048, 10031, 4470, 1273, 5087, 5788, 5501, 5165, 16367, 16375, 16377, 16378, 4541, 7636, 3842, 1456, 566, 3763, 5448, 2]
+// Dependencies: [29, 5, 6, 7, 15, 17, 18, 31, 27, 1912, 1194, 1918, 1911, 1838, 8243, 16363, 16358, 653, 16365, 33, 4131, 689, 4325, 16367, 22, 675, 8215, 16377, 3832, 1212, 10294, 9104, 5049, 9960, 4471, 1273, 5087, 6695, 5501, 5164, 16378, 16386, 16388, 16389, 4542, 7575, 3843, 1456, 566, 3764, 5448, 2]
 // Exports: default
 
-// Module 16365 (_isNativeReflectConstruct)
+// Module 16376 (_isNativeReflectConstruct)
 import getSystemLocale from "getSystemLocale";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";

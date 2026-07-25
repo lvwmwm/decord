@@ -1,9 +1,9 @@
-// Module ID: 14348
-// Function ID: 109871
+// Module ID: 14359
+// Function ID: 109998
 // Name: toggle
-// Dependencies: [1280, 7751, 566, 8042, 10127, 1212, 2]
+// Dependencies: [1280, 7697, 566, 6152, 10059, 1212, 2]
 
-// Module 14348 (toggle)
+// Module 14359 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -19,7 +19,7 @@ createToggle = {
     return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.saveCameraUploadsToDevice);
   },
   onValueChange: function onSaveCameraUploadsToDeviceValueChange(saveCameraUploadsToDevice) {
-    let obj = importDefault(8042);
+    let obj = importDefault(6152);
     obj = { saveCameraUploadsToDevice };
     const result = obj.updatedUnsyncedSettings(obj);
   }

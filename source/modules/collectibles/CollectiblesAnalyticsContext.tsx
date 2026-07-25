@@ -1,10 +1,10 @@
-// Module ID: 8707
-// Function ID: 68805
+// Module ID: 8595
+// Function ID: 68280
 // Name: useCollectiblesAnalyticsContext
 // Dependencies: [31, 33, 2]
 // Exports: CollectiblesAnalyticsProvider
 
-// Module 8707 (useCollectiblesAnalyticsContext)
+// Module 8595 (useCollectiblesAnalyticsContext)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 

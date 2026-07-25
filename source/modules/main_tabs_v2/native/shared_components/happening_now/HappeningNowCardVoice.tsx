@@ -1,9 +1,9 @@
-// Module ID: 14996
-// Function ID: 114271
+// Module ID: 15006
+// Function ID: 114398
 // Name: useVoiceChannelUsers
-// Dependencies: [31, 27, 6901, 1849, 4146, 14233, 653, 33, 4130, 675, 10844, 1934, 14979, 14234, 4658, 11988, 14989, 7842, 566, 22, 1327, 4319, 1212, 2]
+// Dependencies: [31, 27, 5892, 1850, 4147, 14244, 653, 33, 4131, 675, 10816, 1935, 14989, 14245, 4659, 11964, 14999, 7789, 566, 22, 1327, 4320, 1212, 2]
 
-// Module 14996 (useVoiceChannelUsers)
+// Module 15006 (useVoiceChannelUsers)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,8 +19,8 @@ let closure_11;
 const require = arg1;
 function useVoiceChannelUsers(voiceState) {
   const _require = voiceState;
-  const voiceUserAffinitySortType = _require(7842).useVoiceUserAffinitySortType("useVoiceChannelUsers");
-  const obj = _require(7842);
+  const voiceUserAffinitySortType = _require(7789).useVoiceUserAffinitySortType("useVoiceChannelUsers");
+  const obj = _require(7789);
   let items = [closure_7, closure_6, _isNativeReflectConstruct];
   const items1 = [voiceUserAffinitySortType, voiceState.channelId];
   return _require(566).useStateFromStoresArray(items, () => {
@@ -61,18 +61,18 @@ function formatVoiceActivityTitle(arr, guildId) {
   if (0 === arr.length) {
     return "";
   } else if (1 === length) {
-    return importDefault(4319).getName(guildId, null, arr[0]);
+    return importDefault(4320).getName(guildId, null, arr[0]);
   } else if (2 === length) {
     const intl = require(1212) /* getSystemLocale */.intl;
-    let obj = { user1: importDefault(4319).getName(guildId, null, arr[0]) };
-    const obj2 = importDefault(4319);
-    obj.user2 = importDefault(4319).getName(guildId, null, arr[1]);
+    let obj = { user1: importDefault(4320).getName(guildId, null, arr[0]) };
+    const obj2 = importDefault(4320);
+    obj.user2 = importDefault(4320).getName(guildId, null, arr[1]);
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["4SM/RX"], obj);
   } else {
     const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { user1: importDefault(4319).getName(guildId, null, arr[0]) };
-    const obj6 = importDefault(4319);
-    obj.user2 = importDefault(4319).getName(guildId, null, arr[1]);
+    obj = { user1: importDefault(4320).getName(guildId, null, arr[0]) };
+    const obj6 = importDefault(4320);
+    obj.user2 = importDefault(4320).getName(guildId, null, arr[1]);
     obj.extras = arr.length - 2;
     return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.pjxkCI, obj);
   }

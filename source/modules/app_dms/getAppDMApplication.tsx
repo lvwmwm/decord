@@ -1,10 +1,10 @@
-// Module ID: 11345
-// Function ID: 88270
+// Module ID: 11307
+// Function ID: 87926
 // Name: getAppDMApplication
-// Dependencies: [4167, 6855, 1849, 2]
+// Dependencies: [4168, 5630, 1850, 2]
 // Exports: getAppDMApplication
 
-// Module 11345 (getAppDMApplication)
+// Module 11307 (getAppDMApplication)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";

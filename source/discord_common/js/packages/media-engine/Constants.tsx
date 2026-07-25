@@ -1,9 +1,9 @@
-// Module ID: 4191
-// Function ID: 36062
+// Module ID: 4192
+// Function ID: 36073
 // Name: DesktopSources
-// Dependencies: [2, 4192]
+// Dependencies: [2, 4193]
 
-// Module 4191 (DesktopSources)
+// Module 4192 (DesktopSources)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");
 
 export const DesktopSources = require("_isNativeReflectConstruct").DesktopSources;

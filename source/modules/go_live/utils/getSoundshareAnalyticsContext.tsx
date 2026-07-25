@@ -1,10 +1,10 @@
-// Module ID: 4306
-// Function ID: 37696
+// Module ID: 4307
+// Function ID: 37707
 // Name: getSoundshareAnalyticsContext
-// Dependencies: [4150, 2]
+// Dependencies: [4151, 2]
 // Exports: default
 
-// Module 4306 (getSoundshareAnalyticsContext)
+// Module 4307 (getSoundshareAnalyticsContext)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("set").fileFinishedImporting("modules/go_live/utils/getSoundshareAnalyticsContext.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 1909
-// Function ID: 21498
+// Module ID: 1910
+// Function ID: 21509
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1910, 1838, 653, 662, 21, 1915, 1360, 1916, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1911, 1838, 653, 662, 21, 1916, 1360, 1917, 566, 686, 2]
 
-// Module 1909 (_isNativeReflectConstruct)
+// Module 1910 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
 import set from "set";
@@ -280,7 +280,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (null != guildId) {
       if (null != dependencyMap[guildId]) {
         if (null != dependencyMap[guildId]) {
-          if (tmp9.type === overrides(1915).ImpersonateType.NEW_MEMBER) {
+          if (tmp9.type === overrides(1916).ImpersonateType.NEW_MEMBER) {
             optInChannels = tmp9.optInChannels;
             if (null == optInChannels) {
               const _Set = Set;
@@ -317,7 +317,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (null != guildId) {
       if (null != dependencyMap[guildId]) {
         if (null != dependencyMap[guildId]) {
-          if (tmp11.type === onboardingResponses(1915).ImpersonateType.NEW_MEMBER) {
+          if (tmp11.type === onboardingResponses(1916).ImpersonateType.NEW_MEMBER) {
             onboardingResponses = tmp11.onboardingResponses;
             if (null == onboardingResponses) {
               const _Set = Set;
@@ -365,7 +365,7 @@ tmp2 = new tmp2(require("dispatcher"), {
         }
         let tmp3 = null != flags;
         if (tmp3) {
-          tmp3 = tmp2.type === guildId(1915).ImpersonateType.NEW_MEMBER;
+          tmp3 = tmp2.type === guildId(1916).ImpersonateType.NEW_MEMBER;
         }
         flag = true;
         if (tmp3) {

@@ -1,10 +1,10 @@
-// Module ID: 11463
-// Function ID: 89186
+// Module ID: 11426
+// Function ID: 88845
 // Name: isMentionAnchorValid
-// Dependencies: [57, 31, 653, 9593, 2]
+// Dependencies: [57, 31, 653, 9514, 2]
 // Exports: default
 
-// Module 11463 (isMentionAnchorValid)
+// Module 11426 (isMentionAnchorValid)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { WHITESPACE_RE } from "ME";
@@ -22,8 +22,8 @@ function isMentionAnchorValid(text, selectionEnd, anchor, prefix) {
     startsWithResult = selectionEnd >= anchor + prefix.length;
   }
   if (startsWithResult) {
-    startsWithResult = require(9593) /* getMentionTextWithUser */.isUnbrokenRun(text, anchor + prefix.length, selectionEnd);
-    const obj = require(9593) /* getMentionTextWithUser */;
+    startsWithResult = require(9514) /* getMentionTextWithUser */.isUnbrokenRun(text, anchor + prefix.length, selectionEnd);
+    const obj = require(9514) /* getMentionTextWithUser */;
   }
   return startsWithResult;
 }
@@ -44,7 +44,7 @@ function transition(first, enabled, enabled) {
       const lastIndexOfResult = text.lastIndexOf(prefix, selectionEnd);
       let tmp13 = null;
       if (-1 !== lastIndexOfResult) {
-        let obj10 = require(9593) /* getMentionTextWithUser */;
+        let obj10 = require(9514) /* getMentionTextWithUser */;
         let tmp16 = null;
         if (obj10.isWhitespaceSeparatingBoundary(text, lastIndexOfResult)) {
           tmp16 = null;

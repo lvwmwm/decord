@@ -1,10 +1,10 @@
-// Module ID: 11738
-// Function ID: 91165
+// Module ID: 11708
+// Function ID: 90915
 // Name: Steps
-// Dependencies: [1849, 11733, 11734, 653, 11736, 675, 11739, 2]
+// Dependencies: [1850, 11703, 11704, 653, 11706, 675, 11709, 2]
 // Exports: trackFlowEnd, trackFlowStart, trackFlowStep
 
-// Module 11738 (Steps)
+// Module 11708 (Steps)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { getIsOnboarding } from "initialValues";
 import { ContactPermissions } from "ContactSyncLandingPage";
@@ -28,7 +28,7 @@ export const trackFlowStart = function trackFlowStart(arg0) {
     phone = currentUser.phone;
   }
   let closure_1 = null != phone;
-  obj = _require(11736);
+  obj = _require(11706);
   const result = obj.checkContactPermissions();
   result.then((arg0) => {
     let tmp = null;
@@ -78,8 +78,8 @@ export const trackFlowStep = function trackFlowStep(ADD_PHONE_NUMBER, skip, arg2
   obj.track(AnalyticEvents.CONTACT_SYNC_FLOW_KEY, obj);
   if (tmp) {
     obj = { skip };
-    require(11739) /* trackNUFStep */.trackNUFStep(closure_8, ADD_PHONE_NUMBER, obj);
-    const obj3 = require(11739) /* trackNUFStep */;
+    require(11709) /* trackNUFStep */.trackNUFStep(closure_8, ADD_PHONE_NUMBER, obj);
+    const obj3 = require(11709) /* trackNUFStep */;
   }
   closure_8 = ADD_PHONE_NUMBER;
 };

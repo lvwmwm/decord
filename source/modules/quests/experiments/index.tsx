@@ -1,10 +1,10 @@
-// Module ID: 10495
-// Function ID: 81183
+// Module ID: 10429
+// Function ID: 80852
 // Name: date
-// Dependencies: [57, 31, 4976, 1428, 9501, 9502, 10496, 664, 2]
+// Dependencies: [57, 31, 4977, 1428, 9422, 9423, 10430, 664, 2]
 // Exports: useMobileQuestOrbRewardModalCtaPriorityExperiment, useQuestOrbsMultiplierMarketing, useShouldRemoveQuestHomeHero
 
-// Module 10495 (date)
+// Module 10429 (date)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
@@ -57,7 +57,7 @@ ApexExperiment = { name: "2026-05-bounty-stale-refresh-quest-home", kind: "user"
 ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
 const obj19 = { name: "2026-06-remove-quest-home-hero", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 let closure_7 = ApexExperiment.createApexExperiment(obj19);
-const date = new Date("2026-07-31T10:00:00-07:00");
+const date = new Date("2026-08-01T10:00:00-07:00");
 const date1 = new Date("2026-08-07T10:00:00-07:00");
 let closure_10 = 5 * require("set").Millis.MINUTE;
 const obj20 = { CONTROL: 0, [0]: "CONTROL", NEW_LAYOUT_WITH_SEARCH: 1, [1]: "NEW_LAYOUT_WITH_SEARCH", LARGE_MASK_MARGIN: 2, [2]: "LARGE_MASK_MARGIN", REMOVE_QUEST_TITLE_SUFFIX: 3, [3]: "REMOVE_QUEST_TITLE_SUFFIX", REPLACE_QUEST_NAME_WITH_GAME_PUBLISHER: 4, [4]: "REPLACE_QUEST_NAME_WITH_GAME_PUBLISHER" };
@@ -77,17 +77,17 @@ export const MutedVideoQuestNewDefaultsVariant = obj3;
 export const MutedVideoQuestNewDefaultsExperiment = ApexExperiment;
 export const useQuestOrbsMultiplierMarketing = function useQuestOrbsMultiplierMarketing(location) {
   let obj = { location };
-  const questOrbMultiplierEligibility = require(9501) /* getQuestOrbMultiplierEligibilityForUser */.useQuestOrbMultiplierEligibility();
+  const questOrbMultiplierEligibility = require(9422) /* getQuestOrbMultiplierEligibilityForUser */.useQuestOrbMultiplierEligibility();
   obj = {};
-  let enabled = questOrbMultiplierEligibility !== require(9502) /* items */.QuestOrbMultiplierEligibilityType.INELIGIBLE;
+  let enabled = questOrbMultiplierEligibility !== require(9423) /* items */.QuestOrbMultiplierEligibilityType.INELIGIBLE;
   if (enabled) {
-    enabled = questOrbMultiplierEligibility !== require(9502) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
+    enabled = questOrbMultiplierEligibility !== require(9423) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
   }
   if (enabled) {
     enabled = closure_5.useConfig(obj).enabled;
   }
   obj.shouldShowBonusOrbsUX = enabled;
-  obj.multiplier = require(10496) /* QuestOrbsMultiplier */.QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100;
+  obj.multiplier = require(10430) /* QuestOrbsMultiplier */.QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100;
   return obj;
 };
 export const VideoQuestPlayerRefactorExperiment = ApexExperiment;

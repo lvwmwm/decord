@@ -1,23 +1,23 @@
-// Module ID: 4336
-// Function ID: 38289
+// Module ID: 4337
+// Function ID: 38300
 // Name: transitionToStream
-// Dependencies: [1348, 4098, 4337, 4341, 2]
+// Dependencies: [1348, 4099, 4338, 4342, 2]
 // Exports: default
 
-// Module 4336 (transitionToStream)
+// Module 4337 (transitionToStream)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
-const result = require("module_4337").fileFinishedImporting("modules/go_live/utils/transitionToStream.native.tsx");
+const result = require("module_4338").fileFinishedImporting("modules/go_live/utils/transitionToStream.native.tsx");
 
 export default function transitionToStream(channelId) {
   channel = channel.getChannel(channelId.channelId);
   if (null != channel) {
-    importDefault(4098).hideActionSheet();
-    const obj = importDefault(4098);
-    importDefault(4337).popAll();
-    const obj2 = importDefault(4337);
-    require(4341) /* getVoiceChannelKeyByChannelId */.openGuildVoiceModal(channel, "Go Live");
-    const obj3 = require(4341) /* getVoiceChannelKeyByChannelId */;
+    importDefault(4099).hideActionSheet();
+    const obj = importDefault(4099);
+    importDefault(4338).popAll();
+    const obj2 = importDefault(4338);
+    require(4342) /* getVoiceChannelKeyByChannelId */.openGuildVoiceModal(channel, "Go Live");
+    const obj3 = require(4342) /* getVoiceChannelKeyByChannelId */;
   }
 };

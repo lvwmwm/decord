@@ -1,9 +1,9 @@
-// Module ID: 13725
-// Function ID: 105323
+// Module ID: 13736
+// Function ID: 105450
 // Name: pressable
-// Dependencies: [7751, 7581, 7583, 4347, 1212, 3809, 10127, 2]
+// Dependencies: [7697, 6690, 6692, 4348, 1212, 3810, 10059, 2]
 
-// Module 13725 (pressable)
+// Module 13736 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -13,7 +13,7 @@ const pressable = createToggle.createPressable({
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   useTrailing: function useAccountAgeGroupNonAdultSettingTrailing() {
-    const isAgeVerified = require(4347) /* isReactiveCheckEnabled */.useIsAgeVerified();
+    const isAgeVerified = require(4348) /* isReactiveCheckEnabled */.useIsAgeVerified();
     const intl = require(1212) /* getSystemLocale */.intl;
     let stringResult = intl.string(require(1212) /* getSystemLocale */.t.lKDPGA);
     if (isAgeVerified) {
@@ -23,17 +23,17 @@ const pressable = createToggle.createPressable({
     return stringResult;
   },
   onPress: function onAccountAgeGroupNonAdultSettingPress() {
-    let obj = importDefault(7581);
-    obj = { entryPoint: require(7583) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = importDefault(6690);
+    obj = { entryPoint: require(6692) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,
   usePredicate: function AccountAgeGroupNonAdultSettingPredicate() {
-    const isAgeVerified = require(4347) /* isReactiveCheckEnabled */.useIsAgeVerified();
-    const obj = require(4347) /* isReactiveCheckEnabled */;
-    const isVerifiedTeen = require(4347) /* isReactiveCheckEnabled */.useIsVerifiedTeen();
-    const obj2 = require(4347) /* isReactiveCheckEnabled */;
-    let hasTeenDefaults = require(3809) /* isFeatureAgeGated */.useHasTeenDefaults();
+    const isAgeVerified = require(4348) /* isReactiveCheckEnabled */.useIsAgeVerified();
+    const obj = require(4348) /* isReactiveCheckEnabled */;
+    const isVerifiedTeen = require(4348) /* isReactiveCheckEnabled */.useIsVerifiedTeen();
+    const obj2 = require(4348) /* isReactiveCheckEnabled */;
+    let hasTeenDefaults = require(3810) /* isFeatureAgeGated */.useHasTeenDefaults();
     if (hasTeenDefaults) {
       hasTeenDefaults = !isAgeVerified || isVerifiedTeen;
       const tmp4 = !isAgeVerified || isVerifiedTeen;
@@ -48,7 +48,7 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   useTrailing: function useAccountAgeGroupNonAdultSettingTrailing() {
-    const isAgeVerified = require(4347) /* isReactiveCheckEnabled */.useIsAgeVerified();
+    const isAgeVerified = require(4348) /* isReactiveCheckEnabled */.useIsAgeVerified();
     const intl = require(1212) /* getSystemLocale */.intl;
     let stringResult = intl.string(require(1212) /* getSystemLocale */.t.lKDPGA);
     if (isAgeVerified) {
@@ -58,17 +58,17 @@ let obj = {
     return stringResult;
   },
   onPress: function onAccountAgeGroupNonAdultSettingPress() {
-    let obj = importDefault(7581);
-    obj = { entryPoint: require(7583) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = importDefault(6690);
+    obj = { entryPoint: require(6692) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,
   usePredicate: function AccountAgeGroupNonAdultSettingPredicate() {
-    const isAgeVerified = require(4347) /* isReactiveCheckEnabled */.useIsAgeVerified();
-    const obj = require(4347) /* isReactiveCheckEnabled */;
-    const isVerifiedTeen = require(4347) /* isReactiveCheckEnabled */.useIsVerifiedTeen();
-    const obj2 = require(4347) /* isReactiveCheckEnabled */;
-    let hasTeenDefaults = require(3809) /* isFeatureAgeGated */.useHasTeenDefaults();
+    const isAgeVerified = require(4348) /* isReactiveCheckEnabled */.useIsAgeVerified();
+    const obj = require(4348) /* isReactiveCheckEnabled */;
+    const isVerifiedTeen = require(4348) /* isReactiveCheckEnabled */.useIsVerifiedTeen();
+    const obj2 = require(4348) /* isReactiveCheckEnabled */;
+    let hasTeenDefaults = require(3810) /* isFeatureAgeGated */.useHasTeenDefaults();
     if (hasTeenDefaults) {
       hasTeenDefaults = !isAgeVerified || isVerifiedTeen;
       const tmp4 = !isAgeVerified || isVerifiedTeen;

@@ -1,9 +1,9 @@
-// Module ID: 15529
-// Function ID: 119509
+// Module ID: 15539
+// Function ID: 119637
 // Name: str2
-// Dependencies: [31, 27, 33, 15520, 15179, 689, 7961, 4130, 1212, 8416, 4126, 2]
+// Dependencies: [31, 27, 33, 15530, 15189, 689, 7909, 4131, 1212, 8174, 4127, 2]
 
-// Module 15529 (str2)
+// Module 15539 (str2)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -113,7 +113,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
   if (flag) {
     obj = {};
     obj = { cutouts: items, children: tmp2 };
-    items = [callback(importDefault(7961), obj), ];
+    items = [callback(importDefault(7909), obj), ];
     const obj1 = { style: tmp.dot };
     items[1] = callback(View, obj1);
     obj.children = items;
@@ -128,7 +128,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
   }
   const obj3 = { ref, style: tmp.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp10, onPress, hitSlop: importDefault(689).space.PX_8 };
   if (showNitroSlant) {
-    let obj6 = require(15520) /* isYouNavFloating */;
+    let obj6 = require(15530) /* isYouNavFloating */;
     showNitroSlant = !obj6.isYouNavFloating();
   }
   if (showNitroSlant) {
@@ -160,16 +160,16 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
       accessibilityLabel = label;
     }
     obj7.children = accessibilityLabel;
-    let tmp23Result = callback(require(4126) /* Text */.Text, obj7);
-    obj13 = require(15520) /* isYouNavFloating */;
+    let tmp23Result = callback(require(4127) /* Text */.Text, obj7);
+    obj13 = require(15530) /* isYouNavFloating */;
     const tmp23 = callback;
   } else {
     tmp23Result = null;
-    const obj11 = require(15520) /* isYouNavFloating */;
+    const obj11 = require(15530) /* isYouNavFloating */;
   }
   items4[2] = tmp23Result;
   obj3.children = items4;
-  return callback2(require(8416) /* TwinButtons */.PressableScale, obj3);
+  return callback2(require(8174) /* TwinButtons */.PressableScale, obj3);
 }));
 const result1 = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIcon.tsx");
 

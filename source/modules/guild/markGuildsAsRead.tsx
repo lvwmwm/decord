@@ -1,10 +1,10 @@
-// Module ID: 13019
-// Function ID: 100708
+// Module ID: 13030
+// Function ID: 100835
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5058, 5039, 1907, 4142, 653, 4326, 22, 21, 675, 5069, 2]
+// Dependencies: [5059, 5040, 1908, 4143, 653, 4327, 22, 21, 675, 5070, 2]
 // Exports: default
 
-// Module 13019 (_createForOfIteratorHelperLoose)
+// Module 13030 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -161,5 +161,5 @@ export default function markGuildsAsRead(arr, source, onFinished) {
   obj = { source, type: "guild" };
   importDefault(675).track(AnalyticEvents.MARK_AS_READ, obj);
   let obj2 = importDefault(675);
-  return mapped(5069).bulkAck(mapped, onFinished);
+  return mapped(5070).bulkAck(mapped, onFinished);
 };

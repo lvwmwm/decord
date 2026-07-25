@@ -1,10 +1,10 @@
-// Module ID: 6200
-// Function ID: 50265
+// Module ID: 7120
+// Function ID: 59915
 // Name: GiftCardRedeem3dIllustration
-// Dependencies: [33, 5085, 6201, 2]
+// Dependencies: [33, 5085, 7121, 2]
 // Exports: GiftCardRedeem3dIllustration
 
-// Module 6200 (GiftCardRedeem3dIllustration)
+// Module 7120 (GiftCardRedeem3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardRedeem3dIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const GiftCardRedeem3dIllustration = function GiftCardRedeem3dIllustratio
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6201) };
+  obj = { uri: importDefault(7121) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

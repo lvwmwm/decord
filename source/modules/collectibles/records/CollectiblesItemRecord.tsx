@@ -1,10 +1,10 @@
-// Module ID: 6778
-// Function ID: 53400
+// Module ID: 5774
+// Function ID: 50674
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6779, 1874, 6780, 6781, 6782, 653, 1876, 2]
+// Dependencies: [5775, 1875, 5776, 5777, 5778, 653, 1877, 2]
 // Exports: createCollectiblesItemsFromServerResponse
 
-// Module 6778 (_createForOfIteratorHelperLoose)
+// Module 5774 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -146,7 +146,7 @@ function transformSKUToCollectiblesItem(value) {
       }
       if (null != item) {
         type = item.type;
-        if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+        if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
           obj = { type: "single" };
           const obj1 = { skuId: value.id };
           ({ type: obj8.type, asset: obj8.asset, label: obj8.label } = item);
@@ -154,7 +154,7 @@ function transformSKUToCollectiblesItem(value) {
           const tmp28 = new ctor(obj1);
           obj.item = tmp28;
           return obj;
-        } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+        } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
           const obj2 = { type: "single" };
           const obj3 = { skuId: value.id };
           ({ type: obj6.type, asset: obj6.asset, label: obj6.label, palette: obj6.palette } = item);
@@ -162,7 +162,7 @@ function transformSKUToCollectiblesItem(value) {
           const tmp22 = new ctor2(obj3);
           obj2.item = tmp22;
           return obj2;
-        } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+        } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
           const obj4 = { type: "single" };
           let tmp12 = closure_4;
           const obj5 = { skuId: value.id };
@@ -176,7 +176,7 @@ function transformSKUToCollectiblesItem(value) {
           tmp12 = new tmp12(obj5);
           obj4.item = tmp12;
           return obj4;
-        } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
+        } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
           obj = { type: "single" };
           const obj6 = { skuId: value.id };
           ({ type: obj2.type, label: obj2.label, layers: obj2.layers, innerWidth: obj2.innerWidth, overflowTop: obj2.overflowTop, overflowBottom: obj2.overflowBottom, overflowHorizontal: obj2.overflowHorizontal } = item);

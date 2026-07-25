@@ -1,5 +1,5 @@
 // Module ID: 1373
-// Function ID: 16503
+// Function ID: 16510
 // Name: isTypedArray
 // Dependencies: [1374]
 

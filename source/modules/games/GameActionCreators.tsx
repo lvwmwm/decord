@@ -1,10 +1,10 @@
-// Module ID: 6865
-// Function ID: 54345
+// Module ID: 5640
+// Function ID: 48253
 // Name: requestGames
-// Dependencies: [5, 4151, 653, 507, 686, 4015, 22, 2]
+// Dependencies: [5, 4152, 653, 507, 686, 4016, 22, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 6865 (requestGames)
+// Module 5640 (requestGames)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

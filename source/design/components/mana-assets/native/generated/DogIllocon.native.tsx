@@ -1,10 +1,10 @@
-// Module ID: 6026
-// Function ID: 50004
+// Module ID: 6946
+// Function ID: 59654
 // Name: DogIllocon
-// Dependencies: [33, 5085, 6027, 2]
+// Dependencies: [33, 5085, 6947, 2]
 // Exports: DogIllocon
 
-// Module 6026 (DogIllocon)
+// Module 6946 (DogIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DogIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const DogIllocon = function DogIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6027) };
+  obj = { uri: importDefault(6947) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];

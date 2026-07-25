@@ -1,10 +1,10 @@
-// Module ID: 15045
-// Function ID: 114573
+// Module ID: 15055
+// Function ID: 114700
 // Name: checkPowerupUpsellEligibility
-// Dependencies: [1917, 4970, 1849, 4023, 1851, 1872, 566, 2]
+// Dependencies: [1918, 4971, 1850, 4024, 1852, 1873, 566, 2]
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 15045 (checkPowerupUpsellEligibility)
+// Module 15055 (checkPowerupUpsellEligibility)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -18,7 +18,7 @@ function checkPowerupUpsellEligibility(stateFromStores, stateFromStoresArray, ar
   if (tmp) {
     let tmp2 = !stateFromStores.isPremiumGroupMember();
     if (tmp2) {
-      const tmp6 = !_require(1872).isPremium(stateFromStores, PremiumTypes.TIER_2);
+      const tmp6 = !_require(1873).isPremium(stateFromStores, PremiumTypes.TIER_2);
       let tmp7 = !tmp6;
       if (tmp6) {
         const tmp8 = !stateFromStoresArray.some((premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription);
@@ -36,7 +36,7 @@ function checkPowerupUpsellEligibility(stateFromStores, stateFromStoresArray, ar
         tmp7 = someResult;
       }
       tmp2 = tmp7;
-      const obj = _require(1872);
+      const obj = _require(1873);
     }
     tmp = tmp2;
   }

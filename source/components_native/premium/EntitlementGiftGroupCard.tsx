@@ -1,9 +1,9 @@
-// Module ID: 12546
-// Function ID: 97130
+// Module ID: 12527
+// Function ID: 96981
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4167, 1194, 8237, 3781, 4175, 653, 1851, 33, 4130, 689, 8239, 4126, 1212, 4543, 5609, 8256, 1273, 5472, 8570, 5512, 12547, 12548, 12295, 12297, 12298, 12296, 12299, 12300, 12301, 12302, 11852, 12303, 12306, 12307, 12549, 3842, 566, 8246, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4168, 1194, 7970, 3782, 4176, 653, 1852, 33, 4131, 689, 7972, 4127, 1212, 4544, 5609, 7991, 1273, 5472, 8330, 5512, 12528, 12529, 12271, 12273, 12274, 12272, 12275, 12276, 12277, 12278, 11828, 12279, 12282, 12283, 12530, 3843, 566, 7979, 2]
 
-// Module 12546 (_isNativeReflectConstruct)
+// Module 12527 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -405,7 +405,7 @@ const tmp12 = require("initialize").connectStores(items, (arg0) => {
     let obj = { sku: value, isFetching: importDefaultResult2.getUserGiftCodesFetchingForSKUAndPlan(skuId, subscriptionPlanId), loadedAt: importDefaultResult2.getUserGiftCodesLoadedAtForSKUAndPlan(skuId, subscriptionPlanId), application: importDefaultResult.getApplication(value.applicationId) };
     let orFetchSubscriptionPlan = null;
     if (null != subscriptionPlanId) {
-      obj = require(8246) /* _createForOfIteratorHelperLoose */;
+      obj = require(7979) /* _createForOfIteratorHelperLoose */;
       orFetchSubscriptionPlan = obj.getOrFetchSubscriptionPlan(subscriptionPlanId);
     }
     obj.subscriptionPlan = orFetchSubscriptionPlan;

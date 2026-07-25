@@ -1,10 +1,10 @@
-// Module ID: 8886
-// Function ID: 70008
+// Module ID: 8774
+// Function ID: 69487
 // Name: trackVoiceAndVideoDebuggingSettingsUpdated
 // Dependencies: [653, 675, 2]
 // Exports: default
 
-// Module 8886 (trackVoiceAndVideoDebuggingSettingsUpdated)
+// Module 8774 (trackVoiceAndVideoDebuggingSettingsUpdated)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_settings/voice/trackVoiceAndVideoSettingsUpdate.tsx");

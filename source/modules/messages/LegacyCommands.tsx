@@ -1,10 +1,10 @@
-// Module ID: 11150
-// Function ID: 86797
+// Module ID: 11110
+// Function ID: 86435
 // Name: executeCommand
-// Dependencies: [57, 4991, 4349, 653, 3803, 8020, 3829, 7004, 3769, 6691, 4324, 2]
+// Dependencies: [57, 4992, 4350, 653, 3804, 6129, 3830, 6022, 3770, 5685, 4325, 2]
 // Exports: handleLegacyCommands
 
-// Module 11150 (executeCommand)
+// Module 11110 (executeCommand)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -17,7 +17,7 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function executeCommand(command, action) {
-  let obj = importDefault(4324);
+  let obj = importDefault(4325);
   obj = { command };
   obj.trackWithMetadata(constants.SLASH_COMMAND_USED, obj);
   return action.action(arg2, arg3);
@@ -28,7 +28,7 @@ obj = { tts: obj, me: obj, tableflip: obj1, unflip: obj2, shrug: obj3, nick: obj
 obj = {
   action() {
     const obj = {};
-    const EnableTTSCommand = require(3803) /* explicitContentFromProto */.EnableTTSCommand;
+    const EnableTTSCommand = require(3804) /* explicitContentFromProto */.EnableTTSCommand;
     obj.tts = EnableTTSCommand.getSetting();
     return obj;
   }
@@ -52,8 +52,8 @@ const obj5 = {
             const trimmed = str.trim();
             const byName = disambiguatedEmojiContext.getByName(trimmed.slice(2, -1));
             if (null != byName) {
-              const obj2 = require(7004) /* checkReactionResponse */;
-              obj2.addReaction(channel.id, lastResult.id, require(3769) /* getReactionEmojiName */.toReactionEmoji(byName));
+              const obj2 = require(6022) /* checkReactionResponse */;
+              obj2.addReaction(channel.id, lastResult.id, require(3770) /* getReactionEmojiName */.toReactionEmoji(byName));
               const obj = { content: "" };
               return obj;
             }
@@ -87,7 +87,7 @@ obj4 = {
   action(arg0, channel) {
     channel = channel.channel;
     if (null != channel.guild_id) {
-      let obj = importDefault(8020);
+      let obj = importDefault(6129);
       obj.changeNickname(channel.guild_id, channel.id, closure_8, arg0);
       obj = { content: "" };
       return obj;
@@ -124,14 +124,14 @@ obj6.action = function action(str, channel) {
         }
         if (null == str7) {
           if (0 === lastEditableMessage.attachments.length) {
-            let obj = importDefault(6691);
+            let obj = importDefault(5685);
             obj.deleteMessage(channel.id, lastEditableMessage.id);
           }
           obj = { content: "" };
           return obj;
         }
         if (str7 !== lastEditableMessage.content) {
-          let obj1 = importDefault(6691);
+          let obj1 = importDefault(5685);
           obj = { content: str7 };
           obj1.editMessage(channel.id, lastEditableMessage.id, obj);
         }

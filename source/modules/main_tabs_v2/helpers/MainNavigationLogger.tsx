@@ -1,9 +1,9 @@
-// Module ID: 13534
-// Function ID: 104136
+// Module ID: 13545
+// Function ID: 104263
 // Name: timestamp
 // Dependencies: [3, 2]
 
-// Module 13534 (timestamp)
+// Module 13545 (timestamp)
 import importDefaultResult from "timestamp";
 
 importDefaultResult = new importDefaultResult("MainNavigationLogger");

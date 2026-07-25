@@ -1,9 +1,9 @@
-// Module ID: 13499
-// Function ID: 103764
+// Module ID: 13510
+// Function ID: 103891
 // Name: voiceSettingsEventHandlers
-// Dependencies: [13500, 10529, 2]
+// Dependencies: [13511, 10557, 2]
 
-// Module 13499 (voiceSettingsEventHandlers)
+// Module 13510 (voiceSettingsEventHandlers)
 import importDefaultResult from "createVoiceSettingsEventHandlers";
 
 const importDefaultResultResult = require("createVoiceSettingsEventHandlers")(require("validateSocketClient").getDeprecatedVoiceSettings, require("validateSocketClient").getVoiceSettings);

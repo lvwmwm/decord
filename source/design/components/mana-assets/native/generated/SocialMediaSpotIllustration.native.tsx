@@ -1,10 +1,10 @@
-// Module ID: 6522
-// Function ID: 50748
+// Module ID: 7442
+// Function ID: 60398
 // Name: SocialMediaSpotIllustration
-// Dependencies: [33, 5085, 6523, 2]
+// Dependencies: [33, 5085, 7443, 2]
 // Exports: SocialMediaSpotIllustration
 
-// Module 6522 (SocialMediaSpotIllustration)
+// Module 7442 (SocialMediaSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SocialMediaSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const SocialMediaSpotIllustration = function SocialMediaSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6523) };
+  obj = { uri: importDefault(7443) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

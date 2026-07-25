@@ -1,10 +1,10 @@
-// Module ID: 13056
-// Function ID: 100901
+// Module ID: 13067
+// Function ID: 101028
 // Name: getIcon
-// Dependencies: [31, 27, 33, 4130, 689, 665, 7577, 4086, 5776, 4091, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 665, 6673, 4087, 6679, 4092, 4127, 2]
 // Exports: default
 
-// Module 13056 (getIcon)
+// Module 13067 (getIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,16 +24,16 @@ const require = arg1;
 function getIcon(arg0) {
   if (pad2.WARNING === arg0) {
     let obj = { color: importDefault(689).unsafe_rawColors.YELLOW_300 };
-    return callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, obj);
+    return callback(require(6673) /* CircleErrorIcon */.CircleErrorIcon, obj);
   } else if (pad2.INFO === arg0) {
     obj = { color: importDefault(689).unsafe_rawColors.BLUE_345 };
-    return callback(require(4086) /* CircleInformationIcon */.CircleInformationIcon, obj);
+    return callback(require(4087) /* CircleInformationIcon */.CircleInformationIcon, obj);
   } else if (pad2.ERROR === arg0) {
     const obj1 = { color: importDefault(689).unsafe_rawColors.RED_400 };
-    return callback(require(5776) /* CircleXIcon */.CircleXIcon, obj1);
+    return callback(require(6679) /* CircleXIcon */.CircleXIcon, obj1);
   } else if (pad2.SUCCESS === arg0) {
     obj = { color: importDefault(689).unsafe_rawColors.GREEN_400 };
-    return callback(require(4091) /* CircleCheckIcon */.CircleCheckIcon, obj);
+    return callback(require(4092) /* CircleCheckIcon */.CircleCheckIcon, obj);
   }
 }
 function useContainerStyle(messageType, warningContainer) {
@@ -98,7 +98,7 @@ export default function HelpMessage(textColor) {
   obj = { style: tmp3.row };
   const items1 = [getIcon(messageType), ];
   const obj1 = { style: tmp3.content, color: str, variant: textVariant, children: textColor.children };
-  items1[1] = callback(require(4126) /* Text */.Text, obj1);
+  items1[1] = callback(require(4127) /* Text */.Text, obj1);
   obj.children = items1;
   const items2 = [callback2(View, obj), textColor.button];
   obj.children = items2;

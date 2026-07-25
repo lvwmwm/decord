@@ -1,10 +1,10 @@
-// Module ID: 8645
-// Function ID: 68535
+// Module ID: 8421
+// Function ID: 67268
 // Name: set
-// Dependencies: [31, 8646, 8647, 8649, 8648, 2]
+// Dependencies: [31, 8422, 8423, 8425, 8424, 2]
 // Exports: useGameProfileStoreWebsites
 
-// Module 8645 (set)
+// Module 8421 (set)
 import result from "result";
 import set from "buildSteamStoreUrl";
 

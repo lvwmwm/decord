@@ -1,10 +1,10 @@
-// Module ID: 8523
-// Function ID: 67861
+// Module ID: 8283
+// Function ID: 66515
 // Name: DeleteEventAlert
-// Dependencies: [5, 31, 6758, 33, 4130, 566, 8388, 4098, 4475, 1212, 4126, 2]
+// Dependencies: [5, 31, 5751, 33, 4131, 566, 8146, 4099, 4476, 1212, 4127, 2]
 // Exports: default
 
-// Module 8523 (DeleteEventAlert)
+// Module 8283 (DeleteEventAlert)
 import initialize from "initialize";
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

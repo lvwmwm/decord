@@ -1,10 +1,10 @@
-// Module ID: 9531
-// Function ID: 74182
+// Module ID: 9452
+// Function ID: 73769
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 1348, 1910, 1838, 4349, 3767, 1849, 8007, 4566, 653, 1455, 4567, 33, 4130, 689, 1881, 1273, 4098, 8537, 3969, 4126, 4320, 1212, 5462, 566, 5085, 1395, 5167, 477, 9532, 3830, 5165, 1555, 6755, 4541, 5501, 5482, 7890, 5187, 2]
+// Dependencies: [31, 27, 1348, 1911, 1838, 4350, 3768, 1850, 5669, 4567, 653, 1455, 4568, 33, 4131, 689, 1882, 1273, 4099, 8297, 3970, 4127, 4321, 1212, 5462, 566, 5085, 1395, 5166, 477, 9453, 3831, 5164, 1555, 5676, 4542, 5501, 5482, 7837, 5187, 2]
 // Exports: default
 
-// Module 9531 (_createForOfIteratorHelperLoose)
+// Module 9452 (_createForOfIteratorHelperLoose)
 import presentAddedFriendToast from "presentAddedFriendToast";
 import get_ActivityIndicator from "ensureAvatarSource";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -166,31 +166,31 @@ function getCommandOptionComponents(option) {
     const _HermesInternal = HermesInternal;
     combined = " " + name_localized;
   }
-  if (iter.type !== iter(1881).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (iter.type !== iter(1881).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (iter.type !== iter(1882).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (iter.type !== iter(1882).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       if (null != iter.value) {
         const type = iter.type;
-        if (iter(1881).ApplicationCommandOptionType.USER === type) {
+        if (iter(1882).ApplicationCommandOptionType.USER === type) {
           const user = authStore.getUser(iter.value.toString());
           let userComponent = null;
           if (null != user) {
             userComponent = getUserComponent(user, styles);
           }
           const str5 = iter.value;
-        } else if (iter(1881).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (iter(1882).ApplicationCommandOptionType.CHANNEL === type) {
           channel = store.getChannel(iter.value.toString());
           userComponent = null;
           if (null != channel) {
             let obj = { style: styles.commandOptionMentionText };
             const items1 = [closure_18, ];
-            let obj1 = iter(4320);
+            let obj1 = iter(4321);
             items1[1] = obj1.computeChannelName(channel, authStore, closure_11);
             obj.children = items1;
             const _HermesInternal3 = HermesInternal;
             userComponent = callback2(iter(1273).LegacyText, obj, "optionValue-" + iter.name);
           }
           const str3 = iter.value;
-        } else if (iter(1881).ApplicationCommandOptionType.ROLE === type) {
+        } else if (iter(1882).ApplicationCommandOptionType.ROLE === type) {
           let value = iter.value;
           let role;
           if (null != guild) {
@@ -200,7 +200,7 @@ function getCommandOptionComponents(option) {
           if (null != role) {
             userComponent = getRoleComponent(role);
           }
-        } else if (iter(1881).ApplicationCommandOptionType.MENTIONABLE === type) {
+        } else if (iter(1882).ApplicationCommandOptionType.MENTIONABLE === type) {
           str = iter.value.toString();
           let role1;
           if (null != guild) {
@@ -218,7 +218,7 @@ function getCommandOptionComponents(option) {
           const str2 = iter.value;
         } else {
           userComponent = null;
-          if (iter(1881).ApplicationCommandOptionType.ATTACHMENT === type) {
+          if (iter(1882).ApplicationCommandOptionType.ATTACHMENT === type) {
             const intl = iter(1212).intl;
             userComponent = getCommandValueText(intl.string(iter(1212).t.nONJVc));
           }
@@ -319,29 +319,29 @@ function getCommandCopyText(value, arg1, id, name_localized) {
     let str = "";
     combined = "" + name_localized;
   }
-  if (value.type !== _require(1881).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (value.type !== _require(1881).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (value.type !== _require(1882).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (value.type !== _require(1882).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       let sum = null;
       if (null != value.value) {
         const type = value.type;
-        if (_require(1881).ApplicationCommandOptionType.USER === type) {
+        if (_require(1882).ApplicationCommandOptionType.USER === type) {
           const user = authStore.getUser(value.value.toString());
           sum = null;
           if (null != user) {
             let obj = { decoration: "never" };
-            sum = closure_20 + importDefault(3969).getUserTag(user, obj);
-            const obj4 = importDefault(3969);
+            sum = closure_20 + importDefault(3970).getUserTag(user, obj);
+            const obj4 = importDefault(3970);
           }
           const str6 = value.value;
-        } else if (_require(1881).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (_require(1882).ApplicationCommandOptionType.CHANNEL === type) {
           const channel = store.getChannel(value.value.toString());
           sum = null;
           if (null != channel) {
-            sum = closure_18 + _require(4320).computeChannelName(channel, authStore, closure_11);
-            const obj3 = _require(4320);
+            sum = closure_18 + _require(4321).computeChannelName(channel, authStore, closure_11);
+            const obj3 = _require(4321);
           }
           const str5 = value.value;
-        } else if (_require(1881).ApplicationCommandOptionType.ROLE === type) {
+        } else if (_require(1882).ApplicationCommandOptionType.ROLE === type) {
           value = value.value;
           let role;
           if (null != id) {
@@ -353,7 +353,7 @@ function getCommandCopyText(value, arg1, id, name_localized) {
           }
         } else {
           sum = null;
-          if (_require(1881).ApplicationCommandOptionType.MENTIONABLE === type) {
+          if (_require(1882).ApplicationCommandOptionType.MENTIONABLE === type) {
             str = value.value.toString();
             let role1;
             if (null != id) {
@@ -365,7 +365,7 @@ function getCommandCopyText(value, arg1, id, name_localized) {
               const user1 = authStore.getUser(str);
               sum = null;
               if (null != user1) {
-                obj = importDefault(3969);
+                obj = importDefault(3970);
                 obj = { decoration: "never" };
                 sum = closure_20 + obj.getUserTag(user1, obj);
               }

@@ -1,10 +1,10 @@
-// Module ID: 5988
-// Function ID: 49947
+// Module ID: 6908
+// Function ID: 59597
 // Name: DevIdentityTallAbstractUI
-// Dependencies: [33, 5085, 5989, 2]
+// Dependencies: [33, 5085, 6909, 2]
 // Exports: DevIdentityTallAbstractUI
 
-// Module 5988 (DevIdentityTallAbstractUI)
+// Module 6908 (DevIdentityTallAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DevIdentityTallAbstractUI.native.tsx");
@@ -27,7 +27,7 @@ export const DevIdentityTallAbstractUI = function DevIdentityTallAbstractUI(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5989) };
+  obj = { uri: importDefault(6909) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

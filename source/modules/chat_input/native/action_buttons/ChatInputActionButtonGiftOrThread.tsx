@@ -1,9 +1,9 @@
-// Module ID: 11380
-// Function ID: 88476
+// Module ID: 11342
+// Function ID: 88132
 // Name: renderChatInputActionButtonGiftAndThread
-// Dependencies: [31, 27, 11132, 33, 4130, 11381, 11374, 1212, 11372, 11383, 3834, 689, 4476, 2]
+// Dependencies: [31, 27, 11092, 33, 4131, 11343, 11336, 1212, 11334, 11345, 3835, 689, 4477, 2]
 
-// Module 11380 (renderChatInputActionButtonGiftAndThread)
+// Module 11342 (renderChatInputActionButtonGiftAndThread)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { ChatInputActionType } from "TextAreaCta";
@@ -27,19 +27,19 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     const intl = onPress(1212).intl;
     obj.accessibilityLabel = intl.string(onPress(1212).t["4WNcpu"]);
     obj.disabled = !canStartThreads;
-    obj.IconComponent = onPress(11372).ThreadPlusIcon;
+    obj.IconComponent = onPress(11334).ThreadPlusIcon;
     obj.onPress = function onPress(arg0) {
       return onPress(arg0, outer1_5.THREAD);
     };
     obj.style = styleButton;
-    let tmp3Result = tmp3(tmp4(11374), obj);
-    const tmp4Result = tmp4(11374);
+    let tmp3Result = tmp3(tmp4(11336), obj);
+    const tmp4Result = tmp4(11336);
   } else {
     obj = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmp3Result = tmp3(tmp4(11383), obj);
+    tmp3Result = tmp3(tmp4(11345), obj);
   }
   obj.children = tmp3Result;
-  return jsx(importDefault(11381), { cleanup, state }, arg0);
+  return jsx(importDefault(11343), { cleanup, state }, arg0);
 }
 function getChatInputActionButtonGiftAndThreadKey(shouldShowThread) {
   let str = "gift";
@@ -54,17 +54,17 @@ let closure_7 = _createForOfIteratorHelperLoose.createStyles((height) => {
 });
 const memoResult = importAllResult.memo(function ChatInputActionButtonGiftOrThread(arg0) {
   const _require = arg0;
-  let obj = _require(3834);
+  let obj = _require(3835);
   const token = obj.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
   let items = [arg0];
-  const obj2 = _require(3834);
-  obj = { style: callback(token, _require(3834).useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN)).container };
+  const obj2 = _require(3835);
+  obj = { style: callback(token, _require(3835).useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN)).container };
   const memo = importAllResult.useMemo(() => {
     const items = [closure_0];
     return items;
   }, items);
   obj = { items: memo, renderItem: renderChatInputActionButtonGiftAndThread, getItemKey: getChatInputActionButtonGiftAndThreadKey };
-  obj.children = jsx(_require(4476).TransitionGroup, { items: memo, renderItem: renderChatInputActionButtonGiftAndThread, getItemKey: getChatInputActionButtonGiftAndThreadKey });
+  obj.children = jsx(_require(4477).TransitionGroup, { items: memo, renderItem: renderChatInputActionButtonGiftAndThread, getItemKey: getChatInputActionButtonGiftAndThreadKey });
   return <View items={memo} renderItem={renderChatInputActionButtonGiftAndThread} getItemKey={getChatInputActionButtonGiftAndThreadKey} />;
 });
 const result = require("TextAreaCta").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonGiftOrThread.tsx");

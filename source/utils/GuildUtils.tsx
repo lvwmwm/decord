@@ -1,10 +1,10 @@
-// Module ID: 5047
-// Function ID: 43608
+// Module ID: 5048
+// Function ID: 43620
 // Name: requestMembersDebounced
-// Dependencies: [1838, 1849, 1362, 664, 5048, 3969, 1212, 2]
+// Dependencies: [1838, 1850, 1362, 664, 5049, 3970, 1212, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 5047 (requestMembersDebounced)
+// Module 5048 (requestMembersDebounced)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importDefaultResult from "priv";
@@ -65,7 +65,7 @@ function getCachedResults(arg0, arg1) {
 }
 function getGuildNameSuggestion(truncateUsername) {
   currentUser = currentUser.getCurrentUser();
-  let obj = importAll(3969);
+  let obj = importAll(3970);
   const name = obj.getName(currentUser);
   let str = "";
   if (null != name) {

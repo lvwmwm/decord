@@ -1,10 +1,10 @@
-// Module ID: 5062
-// Function ID: 43863
+// Module ID: 5063
+// Function ID: 43875
 // Name: waitForOnboardingCompletion
-// Dependencies: [1917, 3746, 1360, 5063, 2]
+// Dependencies: [1918, 3747, 1360, 5064, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 5062 (waitForOnboardingCompletion)
+// Module 5063 (waitForOnboardingCompletion)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildMemberFlags } from "GuildMemberFlags";
 

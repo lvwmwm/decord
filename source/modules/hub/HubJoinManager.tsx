@@ -1,9 +1,9 @@
-// Module ID: 11801
-// Function ID: 91631
+// Module ID: 11777
+// Function ID: 91436
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 653, 5737, 686, 4530, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1838, 653, 6633, 686, 4531, 2]
 
-// Module 11801 (_isNativeReflectConstruct)
+// Module 11777 (_isNativeReflectConstruct)
 import ME from "ME";
 import transitionToGuild from "transitionToGuild";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

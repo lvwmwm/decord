@@ -1,10 +1,10 @@
-// Module ID: 9627
-// Function ID: 74907
+// Module ID: 9548
+// Function ID: 74494
 // Name: GIFPickerResultsList
-// Dependencies: [57, 31, 33, 9608, 9628, 7527, 9618, 2]
+// Dependencies: [57, 31, 33, 9529, 9549, 6619, 9330, 9539, 2]
 // Exports: default
 
-// Module 9627 (GIFPickerResultsList)
+// Module 9548 (GIFPickerResultsList)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";
@@ -27,12 +27,13 @@ export default function GIFPickerResultsList(columnWidth) {
   let loading;
   let onPressGIF;
   let resultItems;
+  let selectedGifSrc;
   columnWidth = columnWidth.columnWidth;
   ({ resultItems, onPressGIF } = columnWidth);
-  const selectedGifSrc = columnWidth.selectedGifSrc;
+  ({ inActionSheet, selectedGifSrc } = columnWidth);
   let callback;
   let viewedItemIndexes;
-  ({ columns, inActionSheet, ListFooterComponent, loading, keyboardDismissMode } = columnWidth);
+  ({ columns, ListFooterComponent, loading, keyboardDismissMode } = columnWidth);
   if (loading) {
     resultItems = closure_6;
   }
@@ -101,6 +102,22 @@ export default function GIFPickerResultsList(columnWidth) {
     }
   }, items2);
   let tmp6 = columnWidth(selectedGifSrc[5]);
-  let obj = { contentContainerStyle: { paddingBottom: onPressGIF(selectedGifSrc[3])({ hasCategories: false }).safeAreaBottomKeyboardAware }, data: resultItems, drawDistance: columnWidth(selectedGifSrc[6]).GIF_PICKER_ITEM_ESIMTATED_HEIGHT, extraData: memo, keyExtractor: callback1, keyboardDismissMode, keyboardShouldPersistTaps: "always", numColumns: columns, ListFooterComponent, optimizeItemArrangement: true, onViewableItemsChanged: tmp3.onViewableItemsChanged, renderItem: callback2 };
-  return jsx(inActionSheet ? tmp6.BottomSheetMasonryFlashList : tmp6.MasonryFlashList, { contentContainerStyle: { paddingBottom: onPressGIF(selectedGifSrc[3])({ hasCategories: false }).safeAreaBottomKeyboardAware }, data: resultItems, drawDistance: columnWidth(selectedGifSrc[6]).GIF_PICKER_ITEM_ESIMTATED_HEIGHT, extraData: memo, keyExtractor: callback1, keyboardDismissMode, keyboardShouldPersistTaps: "always", numColumns: columns, ListFooterComponent, optimizeItemArrangement: true, onViewableItemsChanged: tmp3.onViewableItemsChanged, renderItem: callback2 });
+  let obj = columnWidth(selectedGifSrc[6]);
+  obj = { contentContainerStyle: { paddingBottom: onPressGIF(selectedGifSrc[3])({ hasCategories: false }).safeAreaBottomKeyboardAware }, data: resultItems };
+  const isPortalKeyboardInModal = obj.useIsPortalKeyboardInModal();
+  obj.drawDistance = columnWidth(selectedGifSrc[7]).GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
+  obj.extraData = memo;
+  obj.keyExtractor = callback1;
+  obj.keyboardDismissMode = keyboardDismissMode;
+  obj.keyboardShouldPersistTaps = "always";
+  obj.numColumns = columns;
+  obj.ListFooterComponent = ListFooterComponent;
+  obj.optimizeItemArrangement = true;
+  obj.onViewableItemsChanged = tmp3.onViewableItemsChanged;
+  if (inActionSheet) {
+    inActionSheet = isPortalKeyboardInModal;
+  }
+  obj.preventNativeModalDismiss = inActionSheet;
+  obj.renderItem = callback2;
+  return jsx(inActionSheet ? tmp6.BottomSheetMasonryFlashList : tmp6.MasonryFlashList, { contentContainerStyle: { paddingBottom: onPressGIF(selectedGifSrc[3])({ hasCategories: false }).safeAreaBottomKeyboardAware }, data: resultItems });
 };

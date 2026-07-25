@@ -1,10 +1,10 @@
-// Module ID: 9814
-// Function ID: 76248
+// Module ID: 9738
+// Function ID: 75843
 // Name: useOpenProfileSettings
-// Dependencies: [31, 1849, 9815, 653, 662, 7930, 9816, 9817, 5796, 2]
+// Dependencies: [31, 1850, 9739, 653, 662, 7877, 9740, 9741, 6554, 2]
 // Exports: default
 
-// Module 9814 (useOpenProfileSettings)
+// Module 9738 (useOpenProfileSettings)
 import "_isNativeReflectConstruct";
 import zustandStore from "zustandStore";
 import { UserSettingsSections } from "ME";

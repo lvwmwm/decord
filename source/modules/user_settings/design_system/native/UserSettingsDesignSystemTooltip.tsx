@@ -1,10 +1,10 @@
-// Module ID: 14501
-// Function ID: 110722
+// Module ID: 14512
+// Function ID: 110849
 // Name: useCanRotate
-// Dependencies: [57, 31, 27, 33, 4130, 8347, 8609, 4543, 5502, 4126, 5121, 5449, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 8105, 8369, 4544, 5502, 4127, 5121, 5449, 2]
 // Exports: default
 
-// Module 14501 (useCanRotate)
+// Module 14512 (useCanRotate)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -60,10 +60,10 @@ function Content() {
     };
     return obj;
   }, items);
-  let obj = first(8609);
+  let obj = first(8369);
   const tooltip = obj.useTooltip(ref, memo);
   obj = {};
-  obj = { style: tmp.container, children: callback2(first(4543).Button, obj1) };
+  obj = { style: tmp.container, children: callback2(first(4544).Button, obj1) };
   obj1 = {
     ref,
     onPress() {

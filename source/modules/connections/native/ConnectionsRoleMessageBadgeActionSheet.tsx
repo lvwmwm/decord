@@ -1,10 +1,10 @@
-// Module ID: 10991
-// Function ID: 85423
+// Module ID: 10946
+// Function ID: 85039
 // Name: PopoutCheck
-// Dependencies: [57, 31, 27, 1857, 1194, 1917, 1910, 1838, 10992, 4940, 653, 33, 4130, 689, 1212, 4939, 4082, 4126, 4066, 22, 3834, 4814, 10019, 8568, 1273, 1392, 3976, 44, 5462, 5482, 566, 675, 4324, 5048, 5187, 5506, 4543, 4098, 10022, 8537, 2]
+// Dependencies: [57, 31, 27, 1858, 1194, 1918, 1911, 1838, 10947, 4941, 653, 33, 4131, 689, 1212, 4940, 4083, 4127, 4067, 22, 3835, 4815, 9948, 8328, 1273, 1392, 3977, 44, 5462, 5482, 566, 675, 4325, 5049, 5187, 5506, 4544, 4099, 9951, 8297, 2]
 // Exports: default
 
-// Module 10991 (PopoutCheck)
+// Module 10946 (PopoutCheck)
 import _slicedToArray from "_slicedToArray";
 import expandLocation from "expandLocation";
 import get_ActivityIndicator from "invariant";
@@ -56,7 +56,7 @@ function PopoutCheck(arg0) {
       }
     }
   } else {
-    obj = require(4939) /* officialApplicationIds */;
+    obj = require(4940) /* officialApplicationIds */;
     const obj1 = { connectionType, connectionMetadataField, operator, value };
     formatResult = obj.getConnectionsCheckText(obj1);
   }
@@ -64,9 +64,9 @@ function PopoutCheck(arg0) {
   if (null != formatResult) {
     const obj2 = { style: tmp.popoutCheck };
     const obj3 = { size: "sm", style: tmp.popoutCheckIcon };
-    const items = [callback(require(4082) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, obj3), ];
+    const items = [callback(require(4083) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: formatResult };
-    items[1] = callback(require(4126) /* Text */.Text, obj4);
+    items[1] = callback(require(4127) /* Text */.Text, obj4);
     obj2.children = items;
     tmp9 = callback2(closure_6, obj2);
   }
@@ -95,7 +95,7 @@ class PopoutChecks {
       children: keys.map((arg0, arg1) => {
             const found = arr.filter((operator) => null != operator.operator);
             const found1 = arr.find((application) => null != application.application);
-            let obj = lib(4814);
+            let obj = lib(4815);
             const value = obj.get(arg0);
             let application;
             if (null != found1) {
@@ -110,7 +110,7 @@ class PopoutChecks {
               const prototype = outer1_7.prototype;
               tmp5 = new outer1_7(application.bot);
             }
-            const officialApplicationIds = guildId(4939).officialApplicationIds;
+            const officialApplicationIds = guildId(4940).officialApplicationIds;
             let id;
             if (null != application) {
               id = application.id;
@@ -121,10 +121,10 @@ class PopoutChecks {
             }
             if (officialApplicationIds.includes(str)) {
               obj = { style: lib.botTag, guildId, roleColor: closure_5, size: 16 };
-              let tmp10 = outer1_16(lib(10019), obj);
+              let tmp10 = outer1_16(lib(9948), obj);
             } else if (null != tmp5) {
               obj = { style: lib.botTag, verified: false };
-              tmp10 = outer1_16(lib(8568), obj);
+              tmp10 = outer1_16(lib(8328), obj);
             }
             const obj1 = {};
             const items = [lib.popoutChecksGroup, ];
@@ -156,7 +156,7 @@ class PopoutChecks {
                 name = name1;
               }
               obj4.children = name;
-              items1[2] = outer1_16(guildId(4126).Text, obj4);
+              items1[2] = outer1_16(guildId(4127).Text, obj4);
               items1[3] = tmp10;
               obj2.children = items1;
               const items2 = [
@@ -181,12 +181,12 @@ class PopoutChecks {
               const tmp27 = outer1_16;
               const tmp31 = guildId(1392);
               const icon = value.icon;
-              obj5.source = makeSource(guildId(3976).isThemeDark(dependencyMap) ? icon.darkPNG : icon.lightPNG);
+              obj5.source = makeSource(guildId(3977).isThemeDark(dependencyMap) ? icon.darkPNG : icon.lightPNG);
               obj5.disableColor = true;
               makeSource = guildId;
               obj5.size = guildId(1273).Icon.Sizes.MEDIUM;
               tmp27(guildId(1273).Icon, obj5);
-              const obj7 = guildId(3976);
+              const obj7 = guildId(3977);
             }
           })
     };

@@ -1,10 +1,10 @@
-// Module ID: 11313
-// Function ID: 88038
+// Module ID: 11275
+// Function ID: 87694
 // Name: LayoutAnimation
-// Dependencies: [57, 31, 4131, 3991, 2]
+// Dependencies: [57, 31, 4132, 3992, 2]
 // Exports: useOptionEnteringAnimation
 
-// Module 11313 (LayoutAnimation)
+// Module 11275 (LayoutAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -22,7 +22,7 @@ const tmp2 = (() => {
       return { initialValues: obj, animations };
     }
   }
-  LayoutAnimation.__closure = { withTiming: require(4131) /* withTiming */.withTiming, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: 300 };
+  LayoutAnimation.__closure = { withTiming: require(4132) /* withTiming */.withTiming, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: 300 };
   LayoutAnimation.__workletHash = 16804895997501;
   LayoutAnimation.__initData = closure_4;
   return LayoutAnimation;
@@ -40,7 +40,7 @@ const tmp3 = (() => {
       return { initialValues: obj, animations };
     }
   }
-  ExitingAnimation.__closure = { withTiming: require(4131) /* withTiming */.withTiming, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: 300 };
+  ExitingAnimation.__closure = { withTiming: require(4132) /* withTiming */.withTiming, OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION: 300 };
   ExitingAnimation.__workletHash = 8977480282966;
   ExitingAnimation.__initData = closure_5;
   return ExitingAnimation;
@@ -51,7 +51,7 @@ export const OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION = 300;
 export const LayoutAnimation = tmp2;
 export const ExitingAnimation = tmp3;
 export const useOptionEnteringAnimation = function useOptionEnteringAnimation() {
-  let obj = sharedValue(3991);
+  let obj = sharedValue(3992);
   sharedValue = obj.useSharedValue(false);
   const dependencyMap = React.useRef([]);
   let items = [sharedValue];
@@ -65,19 +65,19 @@ export const useOptionEnteringAnimation = function useOptionEnteringAnimation() 
   obj = {
     EnteringAnimation: callback(React.useState(() => {
       const fn = function n() {
-        let obj = sharedValue(4131);
+        let obj = sharedValue(4132);
         obj = { duration: 250 };
-        const Easing = sharedValue(3991).Easing;
+        const Easing = sharedValue(3992).Easing;
         obj.easing = Easing.bezier(0.25, 1.75, 0.25, 1.25);
-        let obj2 = sharedValue(4131);
+        let obj2 = sharedValue(4132);
         obj = {};
         const obj1 = {};
         const withTimingResult = obj.withTiming(1, obj);
         const withTimingResult1 = obj2.withTiming(1, { duration: 200 });
-        obj1.opacity = sharedValue(3991).withDelay(200, withTimingResult1);
+        obj1.opacity = sharedValue(3992).withDelay(200, withTimingResult1);
         obj2 = {};
-        const obj6 = sharedValue(3991);
-        obj2.scale = sharedValue(3991).withDelay(200, withTimingResult);
+        const obj6 = sharedValue(3992);
+        obj2.scale = sharedValue(3992).withDelay(200, withTimingResult);
         const items = [obj2];
         obj1.transform = items;
         obj.animations = obj1;

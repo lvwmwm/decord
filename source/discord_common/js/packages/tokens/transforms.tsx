@@ -1,5 +1,5 @@
 // Module ID: 785
-// Function ID: 8901
+// Function ID: 8907
 // Name: interpolate
 // Dependencies: [666, 2]
 // Exports: transformColorContrast, transformColorForIncreasedContrast, transformColorForReducedContrast, transformColorForReducedSaturation

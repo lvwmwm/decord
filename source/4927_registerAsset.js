@@ -1,11 +1,11 @@
 // Module ID: 4927
-// Function ID: 42277
+// Function ID: 42288
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 4927 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "e827a9aa91787067eeb0248dd9424f71", name: "img_domain_light", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 500, height: 500, scales: [1], hash: "537a5a5a0fd47a14c531a6a53114ce50", name: "img_account_sync_crunchyroll_white", type: "svg" };
 
 export default registerAsset.registerAsset(obj);

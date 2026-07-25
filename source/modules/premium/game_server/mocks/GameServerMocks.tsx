@@ -1,11 +1,11 @@
-// Module ID: 11546
-// Function ID: 89973
+// Module ID: 11512
+// Function ID: 89690
 // Name: createMockGame
-// Dependencies: [4020, 11547, 2]
+// Dependencies: [4021, 11513, 2]
 
-// Module 11546 (createMockGame)
+// Module 11512 (createMockGame)
 function createMockGame(_1, name) {
-  const obj = { id: _1, name, provider: require(4020) /* GameServerProviderType */.GameServerProviderType.SHOCKBYTE, plans: items1 };
+  const obj = { id: _1, name, provider: require(4021) /* GameServerProviderType */.GameServerProviderType.SHOCKBYTE, plans: items1 };
   const items = [...items1.map((cost) => cost.cost)];
   obj.baseCost = Math.min.apply(items);
   obj.gameId = "1";

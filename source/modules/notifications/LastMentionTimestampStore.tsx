@@ -1,10 +1,10 @@
-// Module ID: 5074
-// Function ID: 44122
+// Module ID: 5075
+// Function ID: 44134
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1917, 4325, 1849, 686, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1918, 4326, 1850, 686, 566, 2]
 // Exports: trackMessageNotificationTimestamps
 
-// Module 5074 (_isNativeReflectConstruct)
+// Module 5075 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

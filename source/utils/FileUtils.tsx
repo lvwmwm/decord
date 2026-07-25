@@ -1,10 +1,10 @@
-// Module ID: 4670
-// Function ID: 40550
+// Module ID: 4671
+// Function ID: 40562
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1838, 1849, 653, 1851, 22, 4671, 4057, 3776, 4025, 1212, 2]
+// Dependencies: [1838, 1850, 653, 1852, 22, 4672, 4058, 3777, 4026, 1212, 2]
 // Exports: anyFileTooLarge, classifyFile, fileUploadLimitRoadblockDescription, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 4670 (_createForOfIteratorHelperLoose)
+// Module 4671 (_createForOfIteratorHelperLoose)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -131,7 +131,7 @@ function classifyFileName(name, type) {
 }
 function maxFileSize(guildId) {
   const currentUser = authStore.getCurrentUser();
-  const userMaxFileSize = importDefault(3776).getUserMaxFileSize(currentUser);
+  const userMaxFileSize = importDefault(3777).getUserMaxFileSize(currentUser);
   if (null == guildId) {
     return userMaxFileSize;
   } else {
@@ -167,7 +167,7 @@ function maxFileSize(guildId) {
     const _Math = Math;
     return Math.max(tmp5, userMaxFileSize);
   }
-  const obj = importDefault(3776);
+  const obj = importDefault(3777);
 }
 function getUploadFileSizeSum(arg0) {
   let done;
@@ -240,7 +240,7 @@ export const classifyFile = function classifyFile(file) {
 };
 export { classifyFileName };
 export const sizeString = function sizeString(c2) {
-  return importDefault(4671).filesize(c2);
+  return importDefault(4672).filesize(c2);
 };
 export { maxFileSize };
 export const anyFileTooLarge = function anyFileTooLarge(arg0, guildId) {
@@ -261,9 +261,9 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
   if (null == maxSize) {
     maxSize = maxFileSize(guildId);
   }
-  maxSize = require(4025) /* formatSize */.formatSize(maxSize / 1024, { useKibibytes: true });
-  const obj = require(4025) /* formatSize */;
-  const premiumMaxSize = require(4025) /* formatSize */.formatSize(closure_7 / 1024, { useKibibytes: true });
+  maxSize = require(4026) /* formatSize */.formatSize(maxSize / 1024, { useKibibytes: true });
+  const obj = require(4026) /* formatSize */;
+  const premiumMaxSize = require(4026) /* formatSize */.formatSize(closure_7 / 1024, { useKibibytes: true });
   const intl = require(1212) /* getSystemLocale */.intl;
   return intl.format(require(1212) /* getSystemLocale */.t.tRuxk9, { maxSize, premiumMaxSize, onClick });
 };

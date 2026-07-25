@@ -1,5 +1,5 @@
 // Module ID: 5395
-// Function ID: 46237
+// Function ID: 46242
 // Name: _superPropBase
 // Dependencies: [5393]
 

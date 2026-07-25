@@ -1,9 +1,9 @@
-// Module ID: 16545
-// Function ID: 128910
+// Module ID: 16556
+// Function ID: 129078
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 4199, 1194, 4177, 4202, 4216, 4183, 4184, 653, 4195, 4189, 4227, 4194, 675, 4669, 3803, 686, 4190, 3741, 4187, 477, 4188, 5078, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 4200, 1194, 4178, 4203, 4217, 4184, 4185, 653, 4196, 4190, 4228, 4195, 675, 4670, 3804, 686, 4191, 3742, 4188, 477, 4189, 5078, 2]
 
-// Module 16545 (_isNativeReflectConstruct)
+// Module 16556 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import getSystemAnalyticsInfo from "getSystemAnalyticsInfo";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

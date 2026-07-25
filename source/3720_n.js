@@ -1,52 +1,105 @@
 // Module ID: 3720
-// Function ID: 28464
+// Function ID: 28472
 // Name: n
-// Dependencies: [3712]
+// Dependencies: [3713]
 
 // Module 3720 (n)
 const fn = function n(moment) {
-  return moment.defineLocale("fr", {
-    months: "janvier_f\u00E9vrier_mars_avril_mai_juin_juillet_ao\u00FBt_septembre_octobre_novembre_d\u00E9cembre".split("_"),
-    monthsShort: "janv._f\u00E9vr._mars_avr._mai_juin_juil._ao\u00FBt_sept._oct._nov._d\u00E9c.".split("_"),
-    monthsParseExact: true,
-    weekdays: "dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi".split("_"),
-    weekdaysShort: "dim._lun._mar._mer._jeu._ven._sam.".split("_"),
-    weekdaysMin: "di_lu_ma_me_je_ve_sa".split("_"),
-    weekdaysParseExact: true,
-    longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD/MM/YYYY", LL: "D MMMM YYYY", LLL: "D MMMM YYYY HH:mm", LLLL: "dddd D MMMM YYYY HH:mm" },
-    calendar: { sameDay: "[Aujourd\u2019hui \u00E0] LT", nextDay: "[Demain \u00E0] LT", nextWeek: "dddd [\u00E0] LT", lastDay: "[Hier \u00E0] LT", lastWeek: "dddd [dernier \u00E0] LT", sameElse: "L" },
-    relativeTime: { future: "dans %s", past: "il y a %s", s: "quelques secondes", ss: "%d secondes", m: "une minute", mm: "%d minutes", h: "une heure", hh: "%d heures", d: "un jour", dd: "%d jours", M: "un mois", MM: "%d mois", y: "un an", yy: "%d ans" },
-    dayOfMonthOrdinalParse: /\d{1,2}(er|)/,
-    ordinal(arg0, arg1) {
-      if ("D" === arg1) {
-        let str9 = "";
-        if (1 === arg0) {
-          str9 = "er";
-        }
-        return arg0 + str9;
-      } else {
-        if ("M" !== arg1) {
-          if ("Q" !== arg1) {
-            if ("DDD" !== arg1) {
-              if ("d" !== arg1) {
-                let str7 = "e";
-                if (1 === arg0) {
-                  str7 = "re";
-                }
-                return arg0 + str7;
-              }
-            }
-          }
-        }
-        let str8 = "e";
-        if (1 === arg0) {
-          str8 = "er";
-        }
-        return arg0 + str8;
+  let split;
+  let split2;
+  function translate(arg0, arg1, arg2, arg3) {
+    if ("s" === arg2) {
+      let str18 = "muutama sekunti";
+      if (arg3) {
+        str18 = "muutaman sekunnin";
       }
-    },
-    week: { dow: 1, doy: 4 }
-  });
+      return str18;
+    } else if ("ss" === arg2) {
+      let str17 = "sekuntia";
+      if (arg3) {
+        str17 = "sekunnin";
+      }
+      return str17;
+    } else if ("m" === arg2) {
+      let str16 = "minuutti";
+      if (arg3) {
+        str16 = "minuutin";
+      }
+      return str16;
+    } else {
+      if ("mm" === arg2) {
+        let str14 = "minuuttia";
+        if (arg3) {
+          str14 = "minuutin";
+        }
+        let str4 = str14;
+      } else if ("h" === arg2) {
+        let str13 = "tunti";
+        if (arg3) {
+          str13 = "tunnin";
+        }
+        return str13;
+      } else if ("hh" === arg2) {
+        let str12 = "tuntia";
+        if (arg3) {
+          str12 = "tunnin";
+        }
+        str4 = str12;
+      } else if ("d" === arg2) {
+        let str11 = "p\u00E4iv\u00E4";
+        if (arg3) {
+          str11 = "p\u00E4iv\u00E4n";
+        }
+        return str11;
+      } else if ("dd" === arg2) {
+        let str10 = "p\u00E4iv\u00E4\u00E4";
+        if (arg3) {
+          str10 = "p\u00E4iv\u00E4n";
+        }
+        str4 = str10;
+      } else if ("M" === arg2) {
+        let str9 = "kuukausi";
+        if (arg3) {
+          str9 = "kuukauden";
+        }
+        return str9;
+      } else if ("MM" === arg2) {
+        let str8 = "kuukautta";
+        if (arg3) {
+          str8 = "kuukauden";
+        }
+        str4 = str8;
+      } else if ("y" === arg2) {
+        let str7 = "vuosi";
+        if (arg3) {
+          str7 = "vuoden";
+        }
+        return str7;
+      } else {
+        str4 = "";
+        if ("yy" === arg2) {
+          let str6 = "vuotta";
+          if (arg3) {
+            str6 = "vuoden";
+          }
+          str4 = str6;
+        }
+      }
+      if (arg0 >= 10) {
+        return arg0 + " " + str4;
+      } else if (arg3) {
+        let tmp3 = items[arg0];
+      } else {
+        tmp3 = parts[arg0];
+      }
+    }
+  }
+  const parts = "nolla yksi kaksi kolme nelj\u00E4 viisi kuusi seitsem\u00E4n kahdeksan yhdeks\u00E4n".split(" ");
+  const items = ["nolla", "yhden", "kahden", "kolmen", "nelj\u00E4n", "viiden", "kuuden", parts[7], parts[8], parts[9]];
+  obj = { months: "tammikuu_helmikuu_maaliskuu_huhtikuu_toukokuu_kes\u00E4kuu_hein\u00E4kuu_elokuu_syyskuu_lokakuu_marraskuu_joulukuu".split("_"), monthsShort: "tammi_helmi_maalis_huhti_touko_kes\u00E4_hein\u00E4_elo_syys_loka_marras_joulu".split("_"), weekdays: "sunnuntai_maanantai_tiistai_keskiviikko_torstai_perjantai_lauantai".split("_"), weekdaysShort: "su_ma_ti_ke_to_pe_la".split("_"), weekdaysMin: "su_ma_ti_ke_to_pe_la".split("_"), longDateFormat: { LT: "HH.mm", LTS: "HH.mm.ss", L: "DD.MM.YYYY", LL: "Do MMMM[ta] YYYY", LLL: "Do MMMM[ta] YYYY, [klo] HH.mm", LLLL: "dddd, Do MMMM[ta] YYYY, [klo] HH.mm", l: "D.M.YYYY", ll: "Do MMM YYYY", lll: "Do MMM YYYY, [klo] HH.mm", llll: "ddd, Do MMM YYYY, [klo] HH.mm" }, calendar: { sameDay: "[t\u00E4n\u00E4\u00E4n] [klo] LT", nextDay: "[huomenna] [klo] LT", nextWeek: "dddd [klo] LT", lastDay: "[eilen] [klo] LT", lastWeek: "[viime] dddd[na] [klo] LT", sameElse: "L" }, relativeTime: obj, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 4 } };
+  ({ split, split: split2 } = "su_ma_ti_ke_to_pe_la");
+  obj = { future: "%s p\u00E4\u00E4st\u00E4", past: "%s sitten", s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
+  return moment.defineLocale("fi", obj);
 };
 if ("object" === typeof exports) {
   if (undefined !== module) {

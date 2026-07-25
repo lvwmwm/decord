@@ -1,10 +1,10 @@
-// Module ID: 11060
-// Function ID: 86078
+// Module ID: 11016
+// Function ID: 85698
 // Name: useSafetyHubAccountStanding
-// Dependencies: [11053, 566, 2]
+// Dependencies: [11009, 566, 2]
 // Exports: useSafetyHubAccountStanding
 
-// Module 11060 (useSafetyHubAccountStanding)
+// Module 11016 (useSafetyHubAccountStanding)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

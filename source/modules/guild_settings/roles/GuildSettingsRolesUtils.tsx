@@ -1,10 +1,10 @@
-// Module ID: 16356
-// Function ID: 127535
+// Module ID: 16367
+// Function ID: 127703
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 1917, 1849, 16347, 653, 566, 3969, 5150, 5047, 675, 5045, 1327, 2]
+// Dependencies: [31, 1918, 1850, 16358, 653, 566, 3970, 5149, 5048, 675, 5046, 1327, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 16356 (_createForOfIteratorHelperLoose)
+// Module 16367 (_createForOfIteratorHelperLoose)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -207,14 +207,14 @@ export const filterFullMembersByQuery = function filterFullMembersByQuery(str, i
   const formatted = str.trim().toLowerCase();
   let tmp8Result = id.id === formatted;
   if (!tmp8Result) {
-    tmp8Result = importDefault(5045)(formatted, id.name.toLowerCase());
+    tmp8Result = importDefault(5046)(formatted, id.name.toLowerCase());
     const str2 = id.name;
-    const tmp5 = importDefault(5045);
+    const tmp5 = importDefault(5046);
   }
   if (!tmp8Result) {
-    tmp8Result = importDefault(5045)(formatted, id.userTag.toLowerCase());
+    tmp8Result = importDefault(5046)(formatted, id.userTag.toLowerCase());
     const str3 = id.userTag;
-    const tmp8 = importDefault(5045);
+    const tmp8 = importDefault(5046);
   }
   return tmp8Result;
 };

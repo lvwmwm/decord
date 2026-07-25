@@ -1,9 +1,9 @@
-// Module ID: 8019
-// Function ID: 63646
+// Module ID: 5684
+// Function ID: 48923
 // Name: get untranslatedDescription
-// Dependencies: [3767, 1849, 4566, 1881, 6755, 1212, 4320, 4470, 4140, 6691, 2]
+// Dependencies: [3768, 1850, 4567, 1882, 5676, 1212, 4321, 4471, 4141, 5685, 2]
 
-// Module 8019 (get untranslatedDescription)
+// Module 5684 (get untranslatedDescription)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -30,10 +30,10 @@ obj.predicate = function predicate(channel) {
 obj.execute = function execute(arg0, channel) {
   channel = channel.channel;
   if (null != channel) {
-    const channelName = channel(4320).computeChannelName(channel, closure_4, _isNativeReflectConstruct);
+    const channelName = channel(4321).computeChannelName(channel, closure_4, _isNativeReflectConstruct);
     const intl5 = channel(1212).intl;
     let obj = { name: channelName };
-    const obj5 = channel(4320);
+    const obj5 = channel(4321);
     const intl6 = channel(1212).intl;
     obj = { name: channelName };
     let formatResult = intl6.format(channel(1212).t.SSIVOu, obj);
@@ -46,7 +46,7 @@ obj.execute = function execute(arg0, channel) {
       const obj1 = { name: channelName };
       formatResult = intl2.format(channel(1212).t.IK1Qvs, obj1);
     }
-    let obj2 = importDefault(4470);
+    let obj2 = importDefault(4471);
     obj2 = { title: formatToPlainStringResult1, body: formatResult };
     const intl3 = channel(1212).intl;
     obj2.confirmText = intl3.string(channel(1212).t["26C4oi"]);

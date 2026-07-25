@@ -1,9 +1,9 @@
-// Module ID: 16090
-// Function ID: 124540
-// Dependencies: [8989, 1212, 1920, 2]
+// Module ID: 16101
+// Function ID: 124708
+// Dependencies: [8877, 1212, 1921, 2]
 // Exports: default
 
-// Module 16090
+// Module 16101
 import { GameConsoleCommandResultErrorCodes as closure_3 } from "XBOX_URL_BASE";
 
 const result = require("wrapURL").fileFinishedImporting("modules/game_console/getErrorMessageForCommandResult.tsx");
@@ -77,7 +77,7 @@ export default function getErrorMessageForCommandResult(arg0, arg1, code) {
     if (null != tmp) {
       const intl9 = require(1212) /* getSystemLocale */.intl;
       const obj13 = {};
-      obj12 = importDefault(1920);
+      obj12 = importDefault(1921);
       obj13.supportURL = obj12.getSubmitRequestURL();
       obj13.errorCode = code.code;
       tmp.errorCodeMessage = intl9.format(require(1212) /* getSystemLocale */.t["1Bi9Cf"], obj13);

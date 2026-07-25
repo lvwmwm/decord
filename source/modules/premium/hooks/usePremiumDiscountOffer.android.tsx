@@ -1,10 +1,10 @@
-// Module ID: 7126
-// Function ID: 57287
+// Module ID: 6204
+// Function ID: 55660
 // Name: useGetDiscountOffer
-// Dependencies: [5619, 1851, 7127, 5622, 624, 2]
+// Dependencies: [5619, 1852, 6205, 5622, 624, 2]
 // Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer
 
-// Module 7126 (useGetDiscountOffer)
+// Module 6204 (useGetDiscountOffer)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
 

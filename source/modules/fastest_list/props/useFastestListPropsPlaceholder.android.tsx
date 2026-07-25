@@ -1,10 +1,10 @@
-// Module ID: 9286
-// Function ID: 72526
+// Module ID: 9179
+// Function ID: 72013
 // Name: createNativePlaceholderConfig
-// Dependencies: [31, 8867, 3974, 2]
+// Dependencies: [31, 8755, 3975, 2]
 // Exports: default
 
-// Module 9286 (createNativePlaceholderConfig)
+// Module 9179 (createNativePlaceholderConfig)
 import result from "result";
 
 let require = arg1;
@@ -20,7 +20,7 @@ function createNativePlaceholderConfig(type) {
   const obj = { borderRadius: undefined, borderTopLeftRadius: undefined, borderTopRightRadius: undefined, borderBottomLeftRadius: undefined, borderBottomRightRadius: undefined, divider: undefined, dividerColorRgba: undefined, dividerPaddingLeft: undefined, dividerPaddingRight: undefined, placeholderShape: undefined, placeholderShapeColorRgba: undefined, placeholderShapeCount: undefined, placeholderShapeGap: undefined, placeholderShapePaddingHorizontal: undefined, placeholderShapePaddingVertical: undefined, placeholderFeedBackgroundColorRgba: undefined, placeholderFeedColorRgba: undefined, placeholderFeedLabelPadding: undefined, placeholderFeedLabelPaddingInnerRatio: undefined, placeholderFeedLabelSize: undefined, placeholderFeedLabelSecondarySize: undefined, placeholderFeedPadding: undefined, placeholderFeedShape: undefined, placeholderFeedShapeSize: undefined };
   let NONE = type;
   if (null == type) {
-    NONE = require(8867) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
+    NONE = require(8755) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
   }
   obj.placeholderType = NONE;
   obj.width = undefined;
@@ -31,7 +31,7 @@ function createNativePlaceholderConfig(type) {
     return obj;
   } else {
     let num20 = 1;
-    if (require(8867) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
+    if (require(8755) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
       if (require(dependencyMap[num20]).FastestListPropsPlaceholderType.SHAPE === type) {
         const borderRadius2 = type.borderRadius;
         let num15 = 0;
@@ -57,7 +57,7 @@ function createNativePlaceholderConfig(type) {
           num18 = paddingVertical;
         }
         obj.placeholderShapePaddingVertical = num18;
-        obj.placeholderShapeColorRgba = require(3974) /* hexToRgb */.hexToRgbaString(type.colorHex, type.opacity);
+        obj.placeholderShapeColorRgba = require(3975) /* hexToRgb */.hexToRgbaString(type.colorHex, type.opacity);
         const shapeCount = type.shapeCount;
         if (null != shapeCount) {
           num20 = shapeCount;
@@ -75,7 +75,7 @@ function createNativePlaceholderConfig(type) {
           str2 = horizonalAlignment;
         }
         obj.horizontalAlignment = str2;
-        const obj5 = require(3974) /* hexToRgb */;
+        const obj5 = require(3975) /* hexToRgb */;
       } else if (require(dependencyMap[num20]).FastestListPropsPlaceholderType.FEED_ITEM === type) {
         const borderRadius = type.borderRadius;
         let num2 = 0;
@@ -111,8 +111,8 @@ function createNativePlaceholderConfig(type) {
         obj.divider = null != divider && divider;
         let hexToRgbaStringResult;
         if (null != type.dividerColorHex) {
-          hexToRgbaStringResult = require(3974) /* hexToRgb */.hexToRgbaString(type.dividerColorHex);
-          const obj2 = require(3974) /* hexToRgb */;
+          hexToRgbaStringResult = require(3975) /* hexToRgb */.hexToRgbaString(type.dividerColorHex);
+          const obj2 = require(3975) /* hexToRgb */;
         }
         obj.dividerColorRgba = hexToRgbaStringResult;
         const dividerPaddingLeft = type.dividerPaddingLeft;
@@ -129,11 +129,11 @@ function createNativePlaceholderConfig(type) {
         obj.dividerPaddingRight = num9;
         let hexToRgbaStringResult1;
         if (null != type.backgroundColorHex) {
-          hexToRgbaStringResult1 = require(3974) /* hexToRgb */.hexToRgbaString(type.backgroundColorHex);
-          const obj3 = require(3974) /* hexToRgb */;
+          hexToRgbaStringResult1 = require(3975) /* hexToRgb */.hexToRgbaString(type.backgroundColorHex);
+          const obj3 = require(3975) /* hexToRgb */;
         }
         obj.placeholderFeedBackgroundColorRgba = hexToRgbaStringResult1;
-        obj.placeholderFeedColorRgba = require(3974) /* hexToRgb */.hexToRgbaString(type.colorHex);
+        obj.placeholderFeedColorRgba = require(3975) /* hexToRgb */.hexToRgbaString(type.colorHex);
         ({ labelSize: obj.placeholderFeedLabelSize, labelSecondarySize } = type);
         let num12 = 0;
         if (null != labelSecondarySize) {
@@ -153,7 +153,7 @@ function createNativePlaceholderConfig(type) {
         }
         obj.placeholderFeedPadding = num14;
         ({ shape: obj.placeholderFeedShape, shapeSize: obj.placeholderFeedShapeSize } = type);
-        const obj4 = require(3974) /* hexToRgb */;
+        const obj4 = require(3975) /* hexToRgb */;
       } else {
         const _Error = Error;
         const _HermesInternal = HermesInternal;

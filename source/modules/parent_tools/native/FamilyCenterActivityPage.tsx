@@ -1,10 +1,10 @@
-// Module ID: 13826
-// Function ID: 105957
+// Module ID: 13837
+// Function ID: 106084
 // Name: FamilyCenterActivityPage
-// Dependencies: [31, 27, 33, 4130, 689, 7122, 5121, 13827, 13829, 13839, 11090, 13843, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 6200, 5121, 13838, 13840, 13850, 11049, 13854, 2]
 // Exports: default
 
-// Module 13826 (FamilyCenterActivityPage)
+// Module 13837 (FamilyCenterActivityPage)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,21 +28,21 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterActivityPage() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(7122) /* useUserIdsForLinkStatus */;
+  let obj = require(6200) /* useUserIdsForLinkStatus */;
   obj = { style: tmp.scrollView };
   const activeLinkUserIds = obj.useActiveLinkUserIds();
   obj = { bottom: true };
   const obj1 = { style: tmp.container };
-  const items = [callback(importDefault(13827), {}), ];
+  const items = [callback(importDefault(13838), {}), ];
   if (0 === activeLinkUserIds.length) {
     const obj2 = {};
-    const items1 = [callback(importDefault(13829), {}), callback(importDefault(13839), {}), ];
-    const obj3 = { style: tmp.dataConfirmation, children: callback(importDefault(11090), {}) };
+    const items1 = [callback(importDefault(13840), {}), callback(importDefault(13850), {}), ];
+    const obj3 = { style: tmp.dataConfirmation, children: callback(importDefault(11049), {}) };
     items1[2] = callback(closure_3, obj3);
     obj2.children = items1;
     let tmp9 = callback2(closure_6, obj2);
   } else {
-    tmp9 = callback(importDefault(13843), {});
+    tmp9 = callback(importDefault(13854), {});
   }
   items[1] = tmp9;
   obj1.children = items;

@@ -1,10 +1,10 @@
-// Module ID: 10162
-// Function ID: 78594
+// Module ID: 10094
+// Function ID: 78224
 // Name: shouldShowTakeoverForWarnings
-// Dependencies: [1316, 1849, 9139, 10163, 2]
+// Dependencies: [1316, 1850, 9031, 10095, 2]
 // Exports: getInappropriateConversationTakeoverForChannel, getSafetyAlertsSettingOrDefault, shouldShowInappropriateConversationTakeoverForChannelRecord
 
-// Module 10162 (shouldShowTakeoverForWarnings)
+// Module 10094 (shouldShowTakeoverForWarnings)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -30,10 +30,10 @@ export const getSafetyAlertsSettingOrDefault = function getSafetyAlertsSettingOr
       value = iter.value;
     }
   }
-  const obj2 = require(10163) /* trackViewedEvent */;
+  const obj2 = require(10095) /* trackViewedEvent */;
   const tmp2 = true === isStaffResult;
   const tmp4 = null == value || value;
-  return (require(10163) /* trackViewedEvent */.getUserIsTeen() || true === isStaffResult) && (null == value || value);
+  return (require(10095) /* trackViewedEvent */.getUserIsTeen() || true === isStaffResult) && (null == value || value);
 };
 export const getInappropriateConversationTakeoverForChannel = function getInappropriateConversationTakeoverForChannel(channelId) {
   const arr = (function getTier1WarningsForChannel(channelId) {

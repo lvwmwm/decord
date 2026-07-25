@@ -1,10 +1,10 @@
-// Module ID: 16010
-// Function ID: 123611
+// Module ID: 16021
+// Function ID: 123779
 // Name: useCaptchaModalEffects
-// Dependencies: [31, 653, 4559, 9482, 675, 2]
+// Dependencies: [31, 653, 4560, 9403, 675, 2]
 // Exports: default
 
-// Module 16010 (useCaptchaModalEffects)
+// Module 16021 (useCaptchaModalEffects)
 import result from "result";
 import { AnalyticEvents } from "ME";
 
@@ -20,7 +20,7 @@ export default function useCaptchaModalEffects(arg0) {
   }
   let dependencyMap;
   dependencyMap = React.useRef(true);
-  analyticsType(4559)(() => () => {
+  analyticsType(4560)(() => () => {
     if (outer1_2.current) {
       if (null != outer1_0) {
         outer1_0(outer2_0(table[3]).CaptchaError.CANCEL);

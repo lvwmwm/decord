@@ -1,9 +1,9 @@
-// Module ID: 6888
-// Function ID: 54678
+// Module ID: 5879
+// Function ID: 51984
 // Name: Entry
 // Dependencies: [6, 7, 2]
 
-// Module 6888 (Entry)
+// Module 5879 (Entry)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

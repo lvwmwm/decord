@@ -1,10 +1,10 @@
-// Module ID: 4552
-// Function ID: 39907
+// Module ID: 4553
+// Function ID: 39919
 // Name: PillWrapper
-// Dependencies: [57, 31, 27, 33, 4547, 4130, 689, 4548, 3842, 3834, 4553, 4554, 3991, 3976, 4558, 3849, 4542, 4546, 2]
+// Dependencies: [57, 31, 27, 33, 4548, 4131, 689, 4549, 3843, 3835, 4554, 4555, 3992, 3977, 4559, 3850, 4543, 4547, 2]
 // Exports: ButtonPill
 
-// Module 4552 (PillWrapper)
+// Module 4553 (PillWrapper)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -33,23 +33,23 @@ function PillWrapper(expressivePressState) {
   }
   expressivePressState = expressivePressState.expressivePressState;
   ({ expressiveRiveRef, size } = expressivePressState);
-  let obj = require(4548) /* useProfileThemedButtonStyles */;
+  let obj = require(4549) /* useProfileThemedButtonStyles */;
   const buttonPillStyles = obj.useButtonPillStyles(variant, expressivePressState.pressed);
-  let obj1 = require(4548) /* useProfileThemedButtonStyles */;
+  let obj1 = require(4549) /* useProfileThemedButtonStyles */;
   const gradientPillStyles = obj1.useGradientPillStyles(variant);
-  let obj2 = require(3842) /* ManaContext */;
+  let obj2 = require(3843) /* ManaContext */;
   const tmp3 = callback4(variant, size);
-  let obj3 = require(3834) /* map */;
+  let obj3 = require(3835) /* map */;
   let items = [obj3.useToken(importDefault(689).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
-  let obj4 = require(3834) /* map */;
+  let obj4 = require(3835) /* map */;
   items[1] = obj4.useToken(importDefault(689).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
-  let obj5 = require(3834) /* map */;
+  let obj5 = require(3835) /* map */;
   items[2] = obj5.useToken(importDefault(689).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
   const items1 = [importDefault(689).unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, importDefault(689).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2, importDefault(689).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS];
   let tmp4 = null;
   if (shiny) {
     obj = { variant };
-    tmp4 = callback2(require(4553) /* useShineEffectStyles */.ButtonShine, obj);
+    tmp4 = callback2(require(4554) /* useShineEffectStyles */.ButtonShine, obj);
   }
   if ("experimental_premium-primary" !== variant) {
     if ("experimental_premium-basic" !== variant) {
@@ -68,9 +68,9 @@ function PillWrapper(expressivePressState) {
         obj3 = { buttonColor: tmp3.expressiveRiveFill.color, cornerRadius: tmp3.expressivePill.borderRadius };
         const merged = Object.assign(expressivePressState);
         obj2.dataBinding = obj3;
-        obj1.children = callback2(require(3842) /* ManaContext */.ExpressiveButtonRive, obj2);
+        obj1.children = callback2(require(3843) /* ManaContext */.ExpressiveButtonRive, obj2);
         tmp10Result = callback2(closure_5, obj1);
-        obj10 = require(3976) /* AccessibilityAnnouncer */;
+        obj10 = require(3977) /* AccessibilityAnnouncer */;
         const tmp10 = callback2;
         const tmp11 = closure_5;
         const tmp13 = callback2;
@@ -81,7 +81,7 @@ function PillWrapper(expressivePressState) {
       obj4.style = items4;
       const items5 = [children, tmp4];
       obj4.children = items5;
-      items3[1] = callback3(importDefault(3991).View, obj4);
+      items3[1] = callback3(importDefault(3992).View, obj4);
       obj.children = items3;
     }
     return tmp8(tmp9, obj);
@@ -93,10 +93,10 @@ function PillWrapper(expressivePressState) {
     items = items1;
   }
   obj6.colors = items;
-  const items7 = [callback2(importDefault(4554), obj6), ];
+  const items7 = [callback2(importDefault(4555), obj6), ];
   const items8 = [style, buttonPillStyles];
   const items9 = [children, tmp4];
-  items7[1] = callback3(importDefault(3991).View, { style: items8, children: items9 });
+  items7[1] = callback3(importDefault(3992).View, { style: items8, children: items9 });
   obj5.children = items7;
   obj = obj5;
 }
@@ -119,7 +119,7 @@ class BasicButtonPill {
       flag = false;
     }
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39916(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = f39928(str, DEFAULT_BUTTON_SIZE);
     obj = {};
     obj.variant = str;
     obj.size = DEFAULT_BUTTON_SIZE;
@@ -159,7 +159,7 @@ class LoadingButtonPill {
     useRef = undefined;
     c2 = undefined;
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39916(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = f39928(str, DEFAULT_BUTTON_SIZE);
     useRef = result.useRef(null);
     tmp4 = _slicedToArray(result.useState(flag), 2);
     first = tmp4[0];
@@ -198,7 +198,7 @@ class LoadingButtonPill {
     items2[0] = tmp3.childContainer;
     items2[1] = tmp8;
     items3 = [, ];
-    items3[0] = jsx(require("module_3991").View, { style: items2, children });
+    items3[0] = jsx(require("module_3992").View, { style: items2, children });
     tmp12 = jsx;
     obj = { style: items4 };
     items4 = [, ];
@@ -218,7 +218,7 @@ class LoadingButtonPill {
       first = tmp13(require("EllipsisCircle").Ellipsis, obj1);
     }
     obj.children = first;
-    items3[1] = tmp12(require("module_3991").View, obj);
+    items3[1] = tmp12(require("module_3992").View, obj);
     obj.children = items3;
     return tmp10(tmp11, obj);
   }
@@ -320,24 +320,20 @@ const buttonPadding3 = getButtonPadding.getButtonPadding(require("getButtonPaddi
 let closure_14 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
   let obj = {};
   if ("sm" === arg1) {
-    obj = { minHeight: require(4547) /* getButtonPadding */.SMALL_BUTTON_HEIGHT, minWidth: require(4547) /* getButtonPadding */.SMALL_BUTTON_HEIGHT, paddingHorizontal: require(4547) /* getButtonPadding */.SMALL_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_11 };
+    obj = { minHeight: require(4548) /* getButtonPadding */.SMALL_BUTTON_HEIGHT, minWidth: require(4548) /* getButtonPadding */.SMALL_BUTTON_HEIGHT, paddingHorizontal: require(4548) /* getButtonPadding */.SMALL_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_11 };
   } else if ("md" === arg1) {
-    obj = { minHeight: require(4547) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT, minWidth: require(4547) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT, paddingHorizontal: require(4547) /* getButtonPadding */.MEDIUM_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_12 };
+    obj = { minHeight: require(4548) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT, minWidth: require(4548) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT, paddingHorizontal: require(4548) /* getButtonPadding */.MEDIUM_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_12 };
   } else if ("lg" === arg1) {
-    const obj1 = { minHeight: require(4547) /* getButtonPadding */.LARGE_BUTTON_HEIGHT, minWidth: require(4547) /* getButtonPadding */.LARGE_BUTTON_HEIGHT, paddingHorizontal: require(4547) /* getButtonPadding */.LARGE_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_13 };
+    const obj1 = { minHeight: require(4548) /* getButtonPadding */.LARGE_BUTTON_HEIGHT, minWidth: require(4548) /* getButtonPadding */.LARGE_BUTTON_HEIGHT, paddingHorizontal: require(4548) /* getButtonPadding */.LARGE_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_13 };
     obj = obj1;
   }
-  if ("lg" === arg1) {
-    let BORDER_RADIUS = importDefault(689).modules.button.BORDER_RADIUS_LG;
-  } else {
-    BORDER_RADIUS = importDefault(689).modules.button.BORDER_RADIUS;
-  }
+  let obj3 = require(4548) /* getButtonPadding */;
+  const buttonBorderRadius = obj3.getButtonBorderRadius(arg1);
   const obj2 = {};
-  const obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", overflow: "hidden", borderWidth: require(4547) /* getButtonPadding */.BUTTON_BORDER_WIDTH, borderRadius: BORDER_RADIUS };
+  obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", overflow: "hidden", borderWidth: require(4548) /* getButtonPadding */.BUTTON_BORDER_WIDTH, borderRadius: buttonBorderRadius };
   const merged = Object.assign(obj);
   obj2.pill = obj3;
-  const obj4 = { overflow: "hidden", borderRadius: BORDER_RADIUS };
-  obj2.expressivePill = obj4;
+  obj2.expressivePill = { overflow: "hidden", borderRadius: buttonBorderRadius };
   obj2.expressiveRiveFill = { color: importDefault(689).colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
   obj2.childContainer = { flexDirection: "row", alignItems: "center", justifyContent: "center", flexGrow: 1, maxWidth: "100%" };
   obj2.ellipsis = { position: "absolute", height: "100%", width: "100%", justifyContent: "center", alignItems: "center" };

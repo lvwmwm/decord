@@ -1,10 +1,10 @@
-// Module ID: 11873
-// Function ID: 92033
+// Module ID: 11849
+// Function ID: 91838
 // Name: apexExperiment
-// Dependencies: [1428, 11874, 2]
+// Dependencies: [1428, 11850, 2]
 // Exports: useOneDayFractionalNitroEnabled
 
-// Module 11873 (apexExperiment)
+// Module 11849 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { name: "2026-04-one-day-fractional-nitro", kind: "user", defaultConfig: false, variations: { [1]: true } };
@@ -15,6 +15,6 @@ export default apexExperiment;
 export const useOneDayFractionalNitroEnabled = function useOneDayFractionalNitroEnabled(product_card) {
   let obj = { location: product_card };
   obj = { location: product_card };
-  const tmp = importDefault(11874)(obj);
-  return apexExperiment.useConfig(obj) && !importDefault(11874)(obj);
+  const tmp = importDefault(11850)(obj);
+  return apexExperiment.useConfig(obj) && !importDefault(11850)(obj);
 };

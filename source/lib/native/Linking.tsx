@@ -1,8 +1,8 @@
-// Module ID: 3827
-// Function ID: 31806
-// Dependencies: [27, 3822, 2]
+// Module ID: 3828
+// Function ID: 31817
+// Dependencies: [27, 3823, 2]
 
-// Module 3827
+// Module 3828
 import { Linking } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("lib/native/Linking.tsx");
@@ -14,10 +14,10 @@ export default {
       flag = true;
     }
     const obj = { allowExternal: flag };
-    require(3822) /* _createForOfIteratorHelperLoose */.default(defaultResult1, defaultResult2, obj);
+    require(3823) /* _createForOfIteratorHelperLoose */.default(defaultResult1, defaultResult2, obj);
   },
   openURLExternally(href, SAFARI) {
-    require(3822) /* _createForOfIteratorHelperLoose */.default(href, SAFARI, { forceExternalBrowser: true });
+    require(3823) /* _createForOfIteratorHelperLoose */.default(href, SAFARI, { forceExternalBrowser: true });
   },
   performURLNavigation(href) {
     Linking.openURL(href).catch(() => {

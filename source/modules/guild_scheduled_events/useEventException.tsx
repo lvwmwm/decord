@@ -1,10 +1,10 @@
-// Module ID: 8395
-// Function ID: 66732
+// Module ID: 8153
+// Function ID: 65383
 // Name: _getEventException
-// Dependencies: [6758, 566, 2]
+// Dependencies: [5751, 566, 2]
 // Exports: default, getEventException
 
-// Module 8395 (_getEventException)
+// Module 8153 (_getEventException)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

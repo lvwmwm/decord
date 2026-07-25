@@ -1,11 +1,11 @@
-// Module ID: 14940
-// Function ID: 113871
-// Dependencies: [29, 31, 27, 4122, 4808, 33, 4130, 689, 5462, 5482, 3991, 14049, 14040, 14941, 14960, 14962, 14963, 12397, 14964, 1324, 8870, 477, 3982, 3981, 5162, 6707, 14, 14945, 14965, 14957, 14956, 14966, 14967, 15005, 15007, 9288, 8867, 14048, 14942, 15009, 9280, 1212, 10057, 2]
+// Module ID: 14951
+// Function ID: 114000
+// Dependencies: [29, 31, 27, 4123, 4809, 33, 4131, 689, 5462, 5482, 3992, 14060, 14051, 14952, 14970, 14972, 14973, 12374, 14974, 1324, 477, 3983, 3982, 5161, 5703, 14, 14956, 14975, 14967, 14966, 14976, 7910, 14977, 15015, 15017, 9181, 8755, 14059, 14953, 15019, 9173, 1212, 9986, 2]
 
-// Module 14940
-import getMessagesItemSuggestedFriendHeight from "getMessagesItemSuggestedFriendHeight";
-import importAllResult from "sum";
-import { View } from "getMessagesItemChannelSizes";
+// Module 14951
+import module_14966 from "module_14966";
+import importAllResult from "useCutoutBackgroundColor";
+import { View } from "PX_12";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
 import jsxProd from "MESSAGES_ITEM_EMPTY_STATE_HEIGHT";
@@ -32,9 +32,9 @@ const memoResult = importAllResult.memo(function Messages(style) {
   const sharedValue = obj.useSharedValue(0);
   let obj1 = require(height[11]);
   const youBarTotalHeight = obj1.useYouBarTotalHeight();
+  let obj2 = require(height[12]);
+  const sum = youBarTotalHeight + obj2.useMobileQuestDockHeight();
   const tmp2 = sharedValue(height[8]);
-  const sum = youBarTotalHeight + require(height[12]).useMobileQuestDockHeight();
-  let obj3 = require(height[12]);
   const youBarTotalHeight1 = require(height[11]).useYouBarTotalHeight(-16);
   const tmp7 = sharedValue(height[13])();
   const listItemSizes = tmp7.listItemSizes;
@@ -61,60 +61,58 @@ const memoResult = importAllResult.memo(function Messages(style) {
   const commonTriggerPoint = require(height[17]).useCommonTriggerPoint(require(height[18]).DmGdmListRenderTriggerPoint);
   const tmp15 = sharedValue(height[19])("Messages");
   let closure_16 = tmp15;
-  const obj5 = require(height[17]);
-  const isClientThemeOrCustomThemeActive = require(height[20]).useIsClientThemeOrCustomThemeActive();
   const items = [dataKey];
   const effect = listLeft.useEffect(() => {
     if (null != dataKey) {
       if (!obj7.isAndroid()) {
         if (!channels.useReducedMotion) {
-          const rootNavigationRef = tmp(height[22]).getRootNavigationRef();
+          const rootNavigationRef = tmp(height[21]).getRootNavigationRef();
           let tmp4 = null != rootNavigationRef && rootNavigationRef.isReady();
           if (tmp4) {
-            const obj3 = tmp(height[23]);
-            const rootNavigationRef1 = tmp(height[22]).getRootNavigationRef();
+            const obj3 = tmp(height[22]);
+            const rootNavigationRef1 = tmp(height[21]).getRootNavigationRef();
             let currentRoute;
             if (null != rootNavigationRef1) {
               currentRoute = rootNavigationRef1.getCurrentRoute();
             }
             tmp4 = null != obj3.coerceGuildsRoute(currentRoute);
-            const obj4 = tmp(height[22]);
+            const obj4 = tmp(height[21]);
           }
           if (tmp4) {
-            const result = tmp(height[24]).DeprecatedLayoutAnimation();
-            const obj6 = tmp(height[24]);
+            const result = tmp(height[23]).DeprecatedLayoutAnimation();
+            const obj6 = tmp(height[23]);
           }
-          const obj = tmp(height[22]);
+          const obj = tmp(height[21]);
         }
       }
-      obj7 = tmp(height[21]);
+      obj7 = tmp(height[20]);
     }
   }, items);
   const layoutEffect = listLeft.useLayoutEffect(() => {
-    tmp(height[25]).trackAppUIViewed();
-    const obj = tmp(height[25]);
+    tmp(height[24]).trackAppUIViewed();
+    const obj = tmp(height[24]);
     const reduced = sections.reduce((arg0, arg1) => arg0 + arg1, 0);
-    sharedValue(height[26]).recordRender(reduced, channelFavorites.isConnected());
+    sharedValue(height[25]).recordRender(reduced, channelFavorites.isConnected());
   });
-  const items1 = [channelFavorites, isClientThemeOrCustomThemeActive, height, channels, friendSuggestions, setAddedFriendSuggestions, listItemSuggestedFriendHeight];
+  const items1 = [channelFavorites, height, channels, friendSuggestions, setAddedFriendSuggestions, listItemSuggestedFriendHeight];
   const items2 = [listTop, listLeft, sharedValue];
   const callback = listLeft.useCallback((arg0, row) => {
     if (tmp(height[14]).MessagesDataSections.FavoriteChannels === arg0) {
-      let obj = { channelId: channelFavorites[row].channelId, isGradientTheme: isClientThemeOrCustomThemeActive, placeholderHeight: height, row };
-      return dataKey(sharedValue(height[27]), obj);
+      let obj = { channelId: channelFavorites[row].channelId, placeholderHeight: height, row };
+      return dataKey(sharedValue(height[26]), obj);
     } else if (tmp(height[14]).MessagesDataSections.Channels === arg0) {
-      obj = { channelId: channels[row].channelId, isGradientTheme: isClientThemeOrCustomThemeActive, placeholderHeight: height, row };
-      return dataKey(sharedValue(height[27]), obj);
+      obj = { channelId: channels[row].channelId, placeholderHeight: height, row };
+      return dataKey(sharedValue(height[26]), obj);
     } else if (tmp(height[14]).MessagesDataSections.Separator === arg0) {
-      return dataKey(sharedValue(height[28]), {});
+      return dataKey(sharedValue(height[27]), {});
     } else if (tmp(height[14]).MessagesDataSections.SuggestedFriends === arg0) {
       const obj1 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
       const obj2 = { height: listItemSuggestedFriendHeight };
       const merged = Object.assign(obj1);
-      return dataKey(sharedValue(height[29]), obj2);
+      return dataKey(sharedValue(height[28]), obj2);
     } else if (tmp(height[14]).MessagesDataSections.Placeholders === arg0) {
       obj = { row, height };
-      return dataKey(sharedValue(height[30]), obj);
+      return dataKey(sharedValue(height[29]), obj);
     } else {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
@@ -127,14 +125,14 @@ const memoResult = importAllResult.memo(function Messages(style) {
       let tmp = null;
       if (arg0 === callback(height[14]).MessagesDataSections.SuggestedFriends) {
         const obj = { scrollPosition: outer1_1, stickyAt, stickyTop: outer1_6, stickyLeft: outer1_5 };
-        tmp = dataKey(sharedValue(height[31]), obj);
+        tmp = dataKey(sharedValue(height[30]), obj);
       }
       return tmp;
     },
     getSize(arg0) {
       let num = 0;
       if (arg0 === callback(height[14]).MessagesDataSections.SuggestedFriends) {
-        num = callback(height[31]).MESSAGES_ITEM_SUGGESTED_FRIENDS_HEADER_HEIGHT;
+        num = callback(height[30]).MESSAGES_ITEM_SUGGESTED_FRIENDS_HEADER_HEIGHT;
       }
       return num;
     }
@@ -143,8 +141,10 @@ const memoResult = importAllResult.memo(function Messages(style) {
   const memo1 = listLeft.useMemo(() => ({
     getComponent() {
       if (callback(height[14]).MessagesDataHeader.HappeningNow === outer1_11) {
-        const obj = { listRef: outer1_15 };
-        return dataKey(sharedValue(height[32]), obj);
+        let obj = { backgroundColor: null };
+        obj = { listRef: outer1_15 };
+        obj.children = dataKey(sharedValue(height[32]), obj);
+        return dataKey(callback(height[31]).CutoutBackgroundProvider, obj);
       } else if (callback(height[14]).MessagesDataHeader.EmptyState === tmp) {
         return dataKey(sharedValue(height[33]), {});
       } else {
@@ -189,7 +189,7 @@ const memoResult = importAllResult.memo(function Messages(style) {
           if (tmp(height[14]).MessagesDataSections.SuggestedFriends === arg0) {
             return listItemSuggestedFriendHeight;
           } else if (tmp(height[14]).MessagesDataSections.Separator === arg0) {
-            return tmp(height[28]).MESSAGES_ITEM_SEPERATOR_HEIGHT;
+            return tmp(height[27]).MESSAGES_ITEM_SEPERATOR_HEIGHT;
           } else {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -223,53 +223,58 @@ const memoResult = importAllResult.memo(function Messages(style) {
     obj.sectionItem = obj;
     return obj;
   }, items7);
-  let obj6 = require(height[20]);
+  const obj5 = require(height[17]);
   const externalScrollEventHandler = require(height[37]).useExternalScrollEventHandler({ id: "messages" });
-  let obj7 = require(height[37]);
-  const fn = function j(contentOffset) {
-    const result = sharedValue.set(contentOffset.contentOffset.y);
-    externalScrollEventHandler(contentOffset.contentOffset.y, contentOffset.contentSize.height, contentOffset.layoutMeasurement.height);
-  };
-  fn.__closure = { scrollPosition: sharedValue, handleGuildsNavigationScroll: externalScrollEventHandler };
-  fn.__workletHash = 5461403437592;
-  fn.__initData = renderFooter;
-  const obj8 = require(height[10]);
+  let obj6 = require(height[37]);
+  class Y {
+    constructor(arg0) {
+      result = closure_1.set(style.contentOffset.y);
+      tmp2 = useMemo(style.contentOffset.y, style.contentSize.height, style.layoutMeasurement.height);
+      return;
+    }
+  }
+  Y.__closure = { scrollPosition: sharedValue, handleGuildsNavigationScroll: externalScrollEventHandler };
+  Y.__workletHash = 5461403437592;
+  Y.__initData = renderFooter;
+  let obj7 = require(height[10]);
   obj = { value: tmp2(sharedValue(height[9]).MESSAGES).analyticsLocations };
   obj = { style: items8 };
   items8 = [tmp.container, style.style];
+  obj1 = { backgroundColor: tmp.container.backgroundColor };
   const items9 = [dataKey(sharedValue(height[38]), { height: tmp7.headerSize, scrollPosition: sharedValue }), , ];
   if (tmp9.showFullscreenEmptyState) {
-    let tmp31Result = tmp31(tmp32(tmp33[39]), {});
+    let tmp30Result = tmp30(tmp31(tmp32[39]), {});
   } else {
-    obj1 = { insetEnd: sum };
-    const intl = require(tmp33[41]).intl;
-    obj1.accessibilityLabel = intl.string(require(tmp33[41]).t.OIgYlQ);
-    obj1.estimatedListSize = "windowSize";
-    obj1.keyExtractor = callback2;
-    obj1.itemSize = callback1;
-    obj1.listId = "dm-messages-list";
-    obj1.listFooterSize = memo2.getSize;
-    obj1.listFooterAlwaysMounted = true;
-    obj1.listHeaderSize = memo1.getSize;
-    obj1.listHeaderAlwaysMounted = true;
-    obj1.placeholderConfig = memo3;
-    obj1.ref = ref;
-    obj1.renderItem = callback;
-    obj1.renderListFooter = memo2.getComponent;
-    obj1.renderListHeader = memo1.getComponent;
-    obj1.renderSectionHeader = memo.getComponent;
-    obj1.scrollIndicatorInsetEnd = youBarTotalHeight1;
-    obj1.scrollReporting = "animatedCallbacks";
-    obj1.scrollHandlerAnimated = animatedScrollHandler;
-    obj1.sections = sections;
-    obj1.sectionHeaderSize = memo.getSize;
-    tmp31Result = tmp31(tmp32(tmp33[40]), obj1);
-    const tmp32Result = tmp32(tmp33[40]);
+    obj2 = { insetEnd: sum };
+    const intl = require(tmp32[41]).intl;
+    obj2.accessibilityLabel = intl.string(require(tmp32[41]).t.OIgYlQ);
+    obj2.estimatedListSize = "windowSize";
+    obj2.keyExtractor = callback2;
+    obj2.itemSize = callback1;
+    obj2.listId = "dm-messages-list";
+    obj2.listFooterSize = memo2.getSize;
+    obj2.listFooterAlwaysMounted = true;
+    obj2.listHeaderSize = memo1.getSize;
+    obj2.listHeaderAlwaysMounted = true;
+    obj2.placeholderConfig = memo3;
+    obj2.ref = ref;
+    obj2.renderItem = callback;
+    obj2.renderListFooter = memo2.getComponent;
+    obj2.renderListHeader = memo1.getComponent;
+    obj2.renderSectionHeader = memo.getComponent;
+    obj2.scrollIndicatorInsetEnd = youBarTotalHeight1;
+    obj2.scrollReporting = "animatedCallbacks";
+    obj2.scrollHandlerAnimated = animatedScrollHandler;
+    obj2.sections = sections;
+    obj2.sectionHeaderSize = memo.getSize;
+    tmp30Result = tmp30(tmp31(tmp32[40]), obj2);
+    const tmp31Result = tmp31(tmp32[40]);
   }
-  items9[1] = tmp31Result;
+  items9[1] = tmp30Result;
   items9[2] = dataKey(require(height[42]).TTIFirstContentfulPaint, { label: "messages_tabs" });
-  obj.children = items9;
-  obj.children = friendSuggestions(listTop, obj);
+  obj1.children = items9;
+  obj.children = friendSuggestions(require(height[31]).CutoutBackgroundProvider, obj1);
+  obj.children = dataKey(listTop, obj);
   return dataKey(require(height[8]).AnalyticsLocationProvider, obj);
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/Messages.tsx");

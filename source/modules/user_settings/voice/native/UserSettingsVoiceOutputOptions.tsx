@@ -1,10 +1,10 @@
-// Module ID: 10744
-// Function ID: 83605
+// Module ID: 10708
+// Function ID: 83292
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [31, 27, 4149, 1194, 4177, 4191, 33, 4130, 566, 44, 8882, 10738, 1212, 5165, 10745, 2]
+// Dependencies: [31, 27, 4150, 1194, 4178, 4192, 33, 4131, 566, 44, 8770, 10702, 1212, 5164, 10709, 2]
 // Exports: default
 
-// Module 10744 (UserSettingsVoiceOutputOptions)
+// Module 10708 (UserSettingsVoiceOutputOptions)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -60,7 +60,7 @@ export default function UserSettingsVoiceOutputOptions() {
   obj = {};
   const intl2 = stateFromStores1(1212).intl;
   obj.label = intl2.string(stateFromStores1(1212).t.xPHVBs);
-  obj1 = { style: tmp.slider, children: callback(importDefault(10745), obj2) };
+  obj1 = { style: tmp.slider, children: callback(importDefault(10709), obj2) };
   obj2 = {
     style: tmp.slider,
     value: stateFromStores,
@@ -69,7 +69,7 @@ export default function UserSettingsVoiceOutputOptions() {
     }
   };
   obj.subLabel = callback(View, obj1);
-  const items4 = [callback(stateFromStores1(5165).TableRow, obj), ];
+  const items4 = [callback(stateFromStores1(5164).TableRow, obj), ];
   let tmp7 = null != stateFromStores1;
   if (tmp7) {
     const obj3 = {};
@@ -77,11 +77,11 @@ export default function UserSettingsVoiceOutputOptions() {
     obj3.label = intl3.string(stateFromStores1(1212).t.pEAl4b);
     const obj4 = { style: tmp.slider };
     const obj5 = { value: stateFromStores2, onValueChange: callback };
-    obj4.children = callback(importDefault(10745), obj5);
+    obj4.children = callback(importDefault(10709), obj5);
     obj3.subLabel = callback(View, obj4);
-    tmp7 = callback(stateFromStores1(5165).TableRow, obj3);
+    tmp7 = callback(stateFromStores1(5164).TableRow, obj3);
   }
   items4[1] = tmp7;
   obj.children = items4;
-  return closure_10(stateFromStores1(10738).UserSettingsTableRowGroup, obj);
+  return closure_10(stateFromStores1(10702).UserSettingsTableRowGroup, obj);
 };

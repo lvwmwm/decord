@@ -1,9 +1,9 @@
-// Module ID: 6689
-// Function ID: 51544
+// Module ID: 6158
+// Function ID: 55204
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1849, 653, 6690, 686, 663, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1850, 653, 6159, 686, 663, 566, 2]
 
-// Module 6689 (_isNativeReflectConstruct)
+// Module 6158 (_isNativeReflectConstruct)
 import ME from "ME";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -311,8 +311,8 @@ tmp7 = new tmp7(require("dispatcher"), {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function handleReferralTrialOfferUpdate(userTrialOfferId) {
     userTrialOfferId = userTrialOfferId.userTrialOfferId;
     if (!c13) {
-      const referralsRemaining = userTrialOfferId(6690).fetchReferralsRemaining();
-      const obj = userTrialOfferId(6690);
+      const referralsRemaining = userTrialOfferId(6159).fetchReferralsRemaining();
+      const obj = userTrialOfferId(6159);
     }
     if (!set1.has(userTrialOfferId)) {
       handleReferralTrialResolve(userTrialOfferId);
@@ -371,13 +371,13 @@ tmp7 = new tmp7(require("dispatcher"), {
   },
   BILLING_CREATE_REFERRAL_SUCCESS: function handleCreateReferralSuccess(userTrialOffer) {
     userTrialOffer = userTrialOffer.userTrialOffer;
-    const referralsRemaining = require(6690) /* _createForOfIteratorHelperLoose */.fetchReferralsRemaining();
+    const referralsRemaining = require(6159) /* _createForOfIteratorHelperLoose */.fetchReferralsRemaining();
     const result = map1.set(userTrialOffer.id, userTrialOffer);
     set.add(userTrialOffer.user_id);
   },
   CREATE_REFERRALS_SUCCESS: function handleCreateReferralsSuccess(userTrialOffers) {
     let done;
-    const referralsRemaining = require(6690) /* _createForOfIteratorHelperLoose */.fetchReferralsRemaining();
+    const referralsRemaining = require(6159) /* _createForOfIteratorHelperLoose */.fetchReferralsRemaining();
     const tmp2 = _createForOfIteratorHelperLoose(userTrialOffers.userTrialOffers);
     let iter = tmp2();
     if (!iter.done) {

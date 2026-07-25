@@ -1,10 +1,10 @@
-// Module ID: 10208
-// Function ID: 78831
+// Module ID: 10140
+// Function ID: 78461
 // Name: InstantInviteDetails
-// Dependencies: [31, 27, 1352, 3767, 1849, 33, 4130, 689, 4593, 4638, 4541, 4126, 4320, 4094, 1212, 10196, 2]
+// Dependencies: [31, 27, 1352, 3768, 1850, 33, 4131, 689, 4594, 4639, 4542, 4127, 4321, 4095, 1212, 10128, 2]
 // Exports: default
 
-// Module 10208 (InstantInviteDetails)
+// Module 10140 (InstantInviteDetails)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { createChannelRecordFromInvite as closure_5 } from "_callSuper";
@@ -86,11 +86,11 @@ export default function InstantInviteCode(invite) {
   const memo = React.useMemo(() => outer1_5(invite.channel), items);
   obj = {};
   obj = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
-  const items1 = [callback(invite(4126).Text, obj), ];
+  const items1 = [callback(invite(4127).Text, obj), ];
   const tmp = _createForOfIteratorHelperLoose();
   items1[1] = callback(InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
   obj.children = items1;
-  obj.children = callback2(invite(4541).Stack, obj);
+  obj.children = callback2(invite(4542).Stack, obj);
   return callback(View, obj);
 };
 export { InstantInviteDetails };

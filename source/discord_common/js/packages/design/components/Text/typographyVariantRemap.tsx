@@ -1,10 +1,10 @@
-// Module ID: 4136
-// Function ID: 34387
+// Module ID: 4137
+// Function ID: 34398
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 4137, 2]
+// Dependencies: [57, 4138, 2]
 // Exports: remapTypographyVariant
 
-// Module 4136 (_createForOfIteratorHelperLoose)
+// Module 4137 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -91,7 +91,7 @@ const result = require("set").fileFinishedImporting("../discord_common/js/packag
 
 export const remapTypographyVariant = function remapTypographyVariant(enabledExperiments, variant, arg2) {
   let value;
-  const tmp = _createForOfIteratorHelperLoose(require(4137) /* map */.TYPOGRAPHY_EXPERIMENT_REMAPS);
+  const tmp = _createForOfIteratorHelperLoose(require(4138) /* map */.TYPOGRAPHY_EXPERIMENT_REMAPS);
   const iter = tmp();
   let iter2 = iter;
   if (!iter.done) {

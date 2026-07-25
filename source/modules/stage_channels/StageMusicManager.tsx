@@ -1,10 +1,10 @@
-// Module ID: 10677
-// Function ID: 83336
+// Module ID: 10641
+// Function ID: 83023
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 4177, 1906, 4146, 4951, 1353, 10675, 10276, 566, 4963, 4957, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 4178, 1907, 4147, 4952, 1353, 10639, 10209, 566, 4964, 4958, 5078, 2]
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 10677 (_isNativeReflectConstruct)
+// Module 10641 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import sortKey from "sortKey";
@@ -88,8 +88,8 @@ export const useShowStageMusicMuteButton = function useShowStageMusicMuteButton(
   const items = [closure_9];
   let stateFromStores = _require(566).useStateFromStores(items, () => outer1_9.getVoiceChannelId() === closure_0);
   const obj = _require(566);
-  const stageParticipants = _require(4963).useStageParticipants(channelId, _require(4957).StageChannelParticipantNamedIndex.SPEAKER);
-  const obj2 = _require(4963);
+  const stageParticipants = _require(4964).useStageParticipants(channelId, _require(4958).StageChannelParticipantNamedIndex.SPEAKER);
+  const obj2 = _require(4964);
   const tmp2 = null != stageParticipants.find((voiceState) => {
     voiceState = voiceState.voiceState;
     return !voiceState.isVoiceMuted();
@@ -105,7 +105,7 @@ export const useShowStageMusicMuteButton = function useShowStageMusicMuteButton(
 };
 export const shouldShowStageMusicMuteButton = function shouldShowStageMusicMuteButton(arg0) {
   let tmp = store.getVoiceChannelId() === arg0;
-  mutableParticipants = mutableParticipants.getMutableParticipants(arg0, require(4957) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
+  mutableParticipants = mutableParticipants.getMutableParticipants(arg0, require(4958) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
   if (tmp) {
     tmp = null == closure_12.getStageInstanceByChannel(arg0);
   }

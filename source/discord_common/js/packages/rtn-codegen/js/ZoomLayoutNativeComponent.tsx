@@ -1,9 +1,9 @@
-// Module ID: 10613
-// Function ID: 82801
+// Module ID: 10501
+// Function ID: 81416
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [110, 42, 117, 2]
 
-// Module 10613 (__INTERNAL_VIEW_CONFIG)
+// Module 10501 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
 import get from "get";
 

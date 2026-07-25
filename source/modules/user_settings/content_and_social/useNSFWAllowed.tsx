@@ -1,10 +1,10 @@
-// Module ID: 8014
-// Function ID: 63508
+// Module ID: 5679
+// Function ID: 48785
 // Name: useNSFWAllowed
-// Dependencies: [1849, 566, 2]
+// Dependencies: [1850, 566, 2]
 // Exports: useNSFWAllowed
 
-// Module 8014 (useNSFWAllowed)
+// Module 5679 (useNSFWAllowed)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

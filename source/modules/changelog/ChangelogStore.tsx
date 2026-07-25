@@ -1,9 +1,9 @@
-// Module ID: 4141
-// Function ID: 34464
+// Module ID: 4142
+// Function ID: 34475
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1921, 1316, 1905, 587, 3803, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1922, 1316, 1906, 587, 3804, 566, 686, 2]
 
-// Module 4141 (_isNativeReflectConstruct)
+// Module 4142 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "CHANGELOG_MODAL_KEY";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -27,7 +27,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleUserSettingsProtoStoreChange() {
-  const LastReceivedChangelogId = require(3803) /* explicitContentFromProto */.LastReceivedChangelogId;
+  const LastReceivedChangelogId = require(3804) /* explicitContentFromProto */.LastReceivedChangelogId;
   const setting = LastReceivedChangelogId.getSetting();
 }
 ({ AssetType: closure_9, ChangelogLoadState: closure_10 } = CHANGELOG_MODAL_KEY);

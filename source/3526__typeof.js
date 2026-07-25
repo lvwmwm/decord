@@ -1,12 +1,9 @@
 // Module ID: 3526
-// Function ID: 27212
+// Function ID: 27202
 // Name: _typeof
-// Dependencies: [3527, 3212, 3517, 3518, 3515]
+// Dependencies: [3518, 3519, 3516]
 
 // Module 3526 (_typeof)
-import setUTCWeek from "setUTCWeek";
-import startOfUTCWeek from "startOfUTCWeek";
-
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
     let _Symbol = Symbol;
@@ -81,19 +78,19 @@ function _createSuper(arg0) {
   })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = outer1_9(closure_0);
+    const obj = outer1_7(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, outer1_9(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      outer1_8(self);
+      outer1_6(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== outer1_4(constructResult)) {
+      if ("object" !== outer1_2(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -136,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const LocalWeekParser = ((Parser) => {
-  class LocalWeekParser {
+export const StandAloneMonthParser = ((Parser) => {
+  class StandAloneMonthParser {
     constructor() {
-      if (this instanceof LocalWeekParser) {
+      if (this instanceof StandAloneMonthParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -151,21 +148,21 @@ export const LocalWeekParser = ((Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = outer1_10;
-        tmp12 = outer1_8;
+        tmp11 = outer1_8;
+        tmp12 = outer1_6;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = outer1_8(applyResult);
+        tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 100;
-        tmp17 = outer1_10(applyResult, "priority", 100);
-        tmp18 = outer1_8(applyResult);
+        num2 = 110;
+        tmp17 = outer1_8(applyResult, "priority", 110);
+        tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_10(applyResult, "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "i", "t", "T"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "M", "w", "I", "D", "i", "e", "c", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -180,9 +177,9 @@ export const LocalWeekParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class LocalWeekParser {
+    class StandAloneMonthParser {
       constructor() {
-        if (this instanceof LocalWeekParser) {
+        if (this instanceof StandAloneMonthParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -194,21 +191,21 @@ export const LocalWeekParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_10;
-          tmp12 = outer1_8;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_8(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 100;
-          tmp17 = outer1_10(applyResult, "priority", 100);
-          tmp18 = outer1_8(applyResult);
+          num2 = 110;
+          tmp17 = outer1_8(applyResult, "priority", 110);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_10(applyResult, "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "i", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "M", "w", "I", "D", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -227,12 +224,12 @@ export const LocalWeekParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: LocalWeekParser, writable: true, configurable: true };
-  LocalWeekParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: StandAloneMonthParser, writable: true, configurable: true };
+  StandAloneMonthParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class LocalWeekParser {
+    class StandAloneMonthParser {
       constructor() {
-        if (this instanceof LocalWeekParser) {
+        if (this instanceof StandAloneMonthParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -244,21 +241,21 @@ export const LocalWeekParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_10;
-          tmp12 = outer1_8;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_8(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 100;
-          tmp17 = outer1_10(applyResult, "priority", 100);
-          tmp18 = outer1_8(applyResult);
+          num2 = 110;
+          tmp17 = outer1_8(applyResult, "priority", 110);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_10(applyResult, "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "i", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "M", "w", "I", "D", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -272,19 +269,28 @@ export const LocalWeekParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(LocalWeekParser, Parser);
+    _setPrototypeOf(StandAloneMonthParser, Parser);
   }
-  let closure_0 = _createSuper(LocalWeekParser);
+  let closure_0 = _createSuper(StandAloneMonthParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
-      if ("w" === arg1) {
-        return callback(LocalWeekParser[2]).parseNumericPattern(callback(LocalWeekParser[3]).numericPatterns.week, arg0);
-      } else if ("wo" === arg1) {
-        const obj = { unit: "week" };
-        return ordinalNumber.ordinalNumber(arg0, obj);
+      function valueCallback(arg0) {
+        return arg0 - 1;
+      }
+      if ("L" === arg1) {
+        return callback(StandAloneMonthParser[0]).mapValue(callback(StandAloneMonthParser[0]).parseNumericPattern(callback(StandAloneMonthParser[1]).numericPatterns.month, arg0), valueCallback);
+      } else if ("LL" === arg1) {
+        return callback(StandAloneMonthParser[0]).mapValue(callback(StandAloneMonthParser[0]).parseNDigits(2, arg0), valueCallback);
+      } else if ("Lo" === arg1) {
+        const obj = { unit: "month" };
+        return callback(StandAloneMonthParser[0]).mapValue(ordinalNumber.ordinalNumber(arg0, obj), valueCallback);
+      } else if ("LLL" === arg1) {
+        return ordinalNumber.month(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.month(arg0, { width: "narrow", context: "standalone" });
+      } else if ("LLLLL" === arg1) {
+        return ordinalNumber.month(arg0, { width: "narrow", context: "standalone" });
       } else {
-        return callback(LocalWeekParser[2]).parseNDigits(arg1.length, arg0);
+        return ordinalNumber.month(arg0, { width: "wide", context: "standalone" }) || ordinalNumber.month(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.month(arg0, { width: "narrow", context: "standalone" });
       }
     }
   };
@@ -292,9 +298,9 @@ export const LocalWeekParser = ((Parser) => {
   obj = {
     key: "validate",
     value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 1;
+      let tmp = arg1 >= 0;
       if (tmp) {
-        tmp = arg1 <= 53;
+        tmp = arg1 <= 11;
       }
       return tmp;
     }
@@ -302,10 +308,12 @@ export const LocalWeekParser = ((Parser) => {
   items[1] = obj;
   items[2] = {
     key: "set",
-    value: function set(defaultResult1, arg1, defaultResult2, defaultResult2) {
-      return outer1_3.default(outer1_2.default(defaultResult1, defaultResult2, defaultResult2), defaultResult2);
+    value: function set(setUTCMonth) {
+      setUTCMonth.setUTCMonth(arg2, 1);
+      setUTCMonth.setUTCHours(0, 0, 0, 0);
+      return setUTCMonth;
     }
   };
-  _defineProperties(LocalWeekParser.prototype, items);
-  return LocalWeekParser;
+  _defineProperties(StandAloneMonthParser.prototype, items);
+  return StandAloneMonthParser;
 })(require("_defineProperties").Parser);

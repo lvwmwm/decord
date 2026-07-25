@@ -1,10 +1,10 @@
-// Module ID: 4139
-// Function ID: 34400
+// Module ID: 4140
+// Function ID: 34411
 // Name: useGuildIdForChannelRoute
-// Dependencies: [3947, 1351, 653, 566, 2]
+// Dependencies: [3948, 1351, 653, 566, 1841, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 4139 (useGuildIdForChannelRoute)
+// Module 4140 (useGuildIdForChannelRoute)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { FAVORITES } from "ME";
@@ -21,12 +21,10 @@ export default function useGuildIdForChannelRoute(getGuildId) {
   return stateFromStores;
 };
 export const getGuildIdForGenericRedirect = function getGuildIdForGenericRedirect(channel) {
-  if (guildId.getGuildId() !== FAVORITES) {
+  if (!obj.isFavoritesGuildId(guildId.getGuildId())) {
     guildId = channel.getGuildId();
   } else if (closure_3.isFavorite(channel.id)) {
     guildId = FAVORITES;
-  } else {
-    guildId = channel.getGuildId();
   }
   return guildId;
 };

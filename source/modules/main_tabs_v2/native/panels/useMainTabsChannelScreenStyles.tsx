@@ -1,10 +1,10 @@
-// Module ID: 15305
-// Function ID: 116753
+// Module ID: 15315
+// Function ID: 116881
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [31, 27, 4130, 689, 3991, 2]
+// Dependencies: [31, 27, 4131, 689, 3992, 2]
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 15305 (useMainTabsChannelScreenStyles)
+// Module 15315 (useMainTabsChannelScreenStyles)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -66,7 +66,7 @@ export const useMainTabsChannelScreenStyles = function useMainTabsChannelScreenS
   fn.__closure = { freezeValue: parentFreezeValue, isDragging, translateX, maxWidth, elevationStyle: elevation, isCompletelyCovered };
   fn.__workletHash = 16765484569296;
   fn.__initData = closure_4;
-  const animatedStyle = _require(3991).useAnimatedStyle(fn);
+  const animatedStyle = _require(3992).useAnimatedStyle(fn);
   let items = [tmp, animatedStyle];
   return React.useMemo(() => {
     const items = [tmp.elevation, animatedStyle];

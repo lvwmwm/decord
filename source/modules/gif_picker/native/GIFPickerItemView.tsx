@@ -1,10 +1,10 @@
-// Module ID: 9628
-// Function ID: 74920
+// Module ID: 9549
+// Function ID: 74507
 // Name: GIFPickerItemView
-// Dependencies: [31, 27, 33, 4130, 9618, 689, 1820, 4098, 9629, 1934, 1212, 4660, 5085, 2]
+// Dependencies: [31, 27, 33, 4131, 9539, 689, 1820, 4099, 9550, 1935, 1212, 4661, 5085, 2]
 // Exports: default
 
-// Module 9628 (GIFPickerItemView)
+// Module 9549 (GIFPickerItemView)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 const require = arg1;
 let closure_6 = _createForOfIteratorHelperLoose.createStyles((height) => {
   let obj = {};
-  obj = { paddingBottom: require(9618) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: require(9618) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: importDefault(689).radii.xs, width: "100%", height, flex: 1 };
+  obj = { paddingBottom: require(9539) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: require(9539) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: importDefault(689).radii.xs, width: "100%", height, flex: 1 };
   obj.container = obj;
   obj = { backgroundColor: importDefault(689).colors.BORDER_SUBTLE, borderRadius: importDefault(689).radii.xs, flex: 1 };
   obj.gifImage = obj;

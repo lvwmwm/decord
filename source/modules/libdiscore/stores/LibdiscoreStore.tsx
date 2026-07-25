@@ -1,5 +1,5 @@
 // Module ID: 1839
-// Function ID: 20099
+// Function ID: 20106
 // Name: _isNativeReflectConstruct
 // Dependencies: [15, 17, 18, 6, 7, 3, 686, 1840, 566, 2]
 
@@ -946,15 +946,15 @@ let tmp6 = ((Store) => {
   };
   items[5] = {
     key: "addKVDatabase",
-    value: function addKVDatabase(guilds, outer1_20) {
-      let tmp = outer1_20;
+    value: function addKVDatabase(guilds, outer1_19) {
+      let tmp = outer1_19;
       const self = this;
       const nextVersion = this.nextVersion;
       const obj = new outer1_13(nextVersion.bind(this));
       this.state.databases[guilds] = obj;
       const recordCreators = this.recordCreators;
-      let tmp3 = outer1_20;
-      if (null == outer1_20) {
+      let tmp3 = outer1_19;
+      if (null == outer1_19) {
         tmp3 = outer1_17;
       }
       const result = recordCreators.set(guilds, tmp3);

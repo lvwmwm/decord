@@ -1,10 +1,10 @@
-// Module ID: 1918
-// Function ID: 21706
+// Module ID: 1919
+// Function ID: 21717
 // Name: DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY
-// Dependencies: [57, 1919, 587, 622, 682, 677, 3743, 2]
+// Dependencies: [57, 1920, 587, 622, 682, 677, 3744, 2]
 // Exports: clearCommunicationDisabledNotice, useCommunicationDisabledNoticeStore
 
-// Module 1918 (DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY)
+// Module 1919 (DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY)
 import _slicedToArray from "_slicedToArray";
 import { DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY } from "getFriendlyDurationString";
 import keys from "keys";
@@ -54,7 +54,7 @@ export const useCommunicationDisabledNoticeStore = function useCommunicationDisa
     const items = [, ];
     ({ notificationDismissedInGuilds: arr[0], dismissNotification: arr[1] } = arg0);
     return items;
-  }, require(3743) /* isIterable */.shallow), 2);
+  }, require(3744) /* isIterable */.shallow), 2);
   const first = tmp[0];
   let items = [!first.has(arg0), tmp[1]];
   return items;

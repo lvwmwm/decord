@@ -1,9 +1,9 @@
-// Module ID: 6711
-// Function ID: 52167
+// Module ID: 5707
+// Function ID: 49480
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 3, 664, 686, 1882, 566, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 3, 664, 686, 1883, 566, 2]
 
-// Module 6711 (_isNativeReflectConstruct)
+// Module 5707 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import timestamp from "timestamp";
 import set from "set";
@@ -28,10 +28,10 @@ let tmp4 = ((Store) => {
     constructor() {
       self = this;
       tmp = outer1_3(this, FileSystemStore);
-      tmp2 = f52178;
+      tmp2 = f49491;
       tmp3 = FileSystemStore;
       items = [, ];
-      items[0] = f52178(FileSystemStore[8]);
+      items[0] = f49491(FileSystemStore[8]);
       items[1] = {
         APP_STATE_UPDATE(arg0) {
               return tmp4Result.handleAppStateUpdate(arg0);

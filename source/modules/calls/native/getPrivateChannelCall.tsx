@@ -1,10 +1,10 @@
-// Module ID: 8874
-// Function ID: 69870
+// Module ID: 8762
+// Function ID: 69349
 // Name: getPrivateChannelCall
-// Dependencies: [4146, 653, 4341, 7757, 1212, 8875, 2]
+// Dependencies: [4147, 653, 4342, 7703, 1212, 8763, 2]
 // Exports: default
 
-// Module 8874 (getPrivateChannelCall)
+// Module 8762 (getPrivateChannelCall)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { NOOP_NULL } from "ME";
 

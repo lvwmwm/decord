@@ -1,9 +1,9 @@
-// Module ID: 4538
-// Function ID: 39830
+// Module ID: 4539
+// Function ID: 39841
 // Name: MODERN_ANDROID_BLURRING_AVAILABLE
-// Dependencies: [4110, 4536, 4537, 2]
+// Dependencies: [4111, 4537, 4538, 2]
 
-// Module 4538 (MODERN_ANDROID_BLURRING_AVAILABLE)
+// Module 4539 (MODERN_ANDROID_BLURRING_AVAILABLE)
 import getSystemVersion from "getSystemVersion";
 import importDefaultResult from "map";
 

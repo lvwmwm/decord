@@ -1,10 +1,10 @@
-// Module ID: 10528
-// Function ID: 82121
+// Module ID: 10556
+// Function ID: 82250
 // Name: createRpcJoiSchemaObject
 // Dependencies: [2]
 // Exports: default
 
-// Module 10528 (createRpcJoiSchemaObject)
+// Module 10556 (createRpcJoiSchemaObject)
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/createRpcJoiSchemaObject.tsx");
 
 export default function createRpcJoiSchemaObject(object) {

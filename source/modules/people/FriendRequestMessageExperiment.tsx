@@ -1,9 +1,9 @@
-// Module ID: 12915
-// Function ID: 100276
+// Module ID: 12926
+// Function ID: 100403
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12915 (apexExperiment)
+// Module 12926 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-03-friend-request-message", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

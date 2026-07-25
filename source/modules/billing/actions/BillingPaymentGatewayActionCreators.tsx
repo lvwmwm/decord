@@ -1,10 +1,10 @@
-// Module ID: 4454
-// Function ID: 39118
+// Module ID: 4455
+// Function ID: 39129
 // Name: _getClientSecret
-// Dependencies: [5, 653, 482, 3, 507, 1212, 4452, 4455, 686, 44, 4456, 4457, 3798, 4029, 2]
+// Dependencies: [5, 653, 482, 3, 507, 1212, 4453, 4456, 686, 44, 4457, 4458, 3799, 4030, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmIdeal, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createPaymentRequestPaymentSource, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 4454 (_getClientSecret)
+// Module 4455 (_getClientSecret)
 import getSystemLocale from "getSystemLocale";
 import ME from "ME";
 import sum from "sum";
@@ -45,7 +45,7 @@ function dispatchPaymentElementsConfirmationError(error, flag, stringResult) {
     const intl = require(1212) /* getSystemLocale */.intl;
     stringResult = intl.string(require(1212) /* getSystemLocale */.t.khEaRI);
   }
-  let obj = require(4452) /* _validatePaymentSourceBillingAddress */;
+  let obj = require(4453) /* _validatePaymentSourceBillingAddress */;
   obj = { tags: { source: "payment_elements" } };
   return obj.dispatchConfirmationError(error, flag, stringResult, obj);
 }
@@ -620,14 +620,14 @@ export const confirmCardPaymentSource = function confirmCardPaymentSource() {
 };
 export const createPaymentRequestPaymentSource = function createPaymentRequestPaymentSource(billing_details, billingAddressInfo, analyticsLocation) {
   let token;
-  let obj = importAll(4457);
+  let obj = importAll(4458);
   const result = obj.parseStripePaymentMethod(billing_details);
   ({ token, billingAddressInfo } = result);
   obj = { analyticsLocation };
-  return require(4452) /* _validatePaymentSourceBillingAddress */.createPaymentSource(constants.STRIPE, token, billingAddressInfo, obj);
+  return require(4453) /* _validatePaymentSourceBillingAddress */.createPaymentSource(constants.STRIPE, token, billingAddressInfo, obj);
 };
 export const createBraintreePaymentSource = function createBraintreePaymentSource(id, billingAddressInfo, analyticsLocation) {
-  let obj = require(4452) /* _validatePaymentSourceBillingAddress */;
+  let obj = require(4453) /* _validatePaymentSourceBillingAddress */;
   obj = { analyticsLocation };
   return obj.createPaymentSource(constants.BRAINTREE, id, billingAddressInfo, obj);
 };

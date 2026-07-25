@@ -1,8 +1,8 @@
-// Module ID: 10830
-// Function ID: 84039
-// Dependencies: [57, 31, 27, 4143, 10802, 653, 33, 4130, 689, 566, 4964, 4660, 10026, 4126, 1212, 2]
+// Module ID: 10802
+// Function ID: 83781
+// Dependencies: [57, 31, 27, 4144, 10774, 653, 33, 4131, 689, 566, 4965, 4661, 9955, 4127, 1212, 2]
 
-// Module 10830
+// Module 10802
 import _slicedToArray from "_slicedToArray";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo((channel) => {
     const speakingParticipants = outer1_5.getSpeakingParticipants(channel.id);
     const items = [speakingParticipants.map((user) => user.user), outer1_5.getParticipantsVersion(channel.id)];
     return items;
-  }, items1, channel(4964).isVersionEqual), 1)[0];
+  }, items1, channel(4965).isVersionEqual), 1)[0];
   let tmp3 = null;
   if (0 !== first.length) {
     tmp3 = null;
@@ -47,19 +47,19 @@ const memoResult = importAllResult.memo((channel) => {
       obj = { style: tmp.participantItemContainer };
       const obj1 = { style: tmp.participantAvatarContainer };
       const obj2 = { namesStyle: tmp.participantAvatarText, users: first, withNames: true, channelId: channel.id, guildId: channel.getGuildId() };
-      obj1.children = callback3(importDefault(10026), obj2);
+      obj1.children = callback3(importDefault(9955), obj2);
       const items2 = [callback3(View, obj1), ];
       const obj3 = { style: tmp.participantNameplateContainer };
       const obj4 = { style: tmp.participantNameplateSpeakingText, variant: "text-xs/medium", color: "text-default" };
       const intl = channel(1212).intl;
       const obj5 = { count: first.length };
       obj4.children = intl.format(channel(1212).t["+dia6l"], obj5);
-      obj3.children = callback3(channel(4126).Text, obj4);
+      obj3.children = callback3(channel(4127).Text, obj4);
       items2[1] = callback3(View, obj3);
       obj.children = items2;
       obj.children = callback4(View, obj);
-      tmp3 = callback3(channel(4660).PressableOpacity, obj);
-      const tmp10 = importDefault(10026);
+      tmp3 = callback3(channel(4661).PressableOpacity, obj);
+      const tmp10 = importDefault(9955);
     }
   }
   return tmp3;

@@ -1,5 +1,5 @@
 // Module ID: 1040
-// Function ID: 11189
+// Function ID: 11195
 // Name: _onElementTiming
 // Dependencies: [77, 57, 1035, 794, 1010]
 // Exports: startTrackingElementTiming

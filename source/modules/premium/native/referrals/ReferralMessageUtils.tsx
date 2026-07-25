@@ -1,10 +1,10 @@
-// Module ID: 10986
-// Function ID: 85398
+// Module ID: 10941
+// Function ID: 85014
 // Name: canOpenPremiumPlanDirectlyForReferralTrial
-// Dependencies: [3782, 6688, 2]
+// Dependencies: [3783, 6157, 2]
 // Exports: canOpenPremiumPlanDirectlyForReferralTrial
 
-// Module 10986 (canOpenPremiumPlanDirectlyForReferralTrial)
+// Module 10941 (canOpenPremiumPlanDirectlyForReferralTrial)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

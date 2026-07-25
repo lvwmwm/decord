@@ -1,10 +1,10 @@
-// Module ID: 8220
-// Function ID: 64779
+// Module ID: 7963
+// Function ID: 63424
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1838, 4566, 653, 8221, 8012, 6755, 1881, 483, 8224, 44, 6753, 6754, 2]
+// Dependencies: [1352, 1838, 4567, 653, 7964, 5677, 5676, 1882, 483, 5655, 44, 5674, 5675, 2]
 // Exports: hasAccess
 
-// Module 8220 (_createForOfIteratorHelperLoose)
+// Module 7963 (_createForOfIteratorHelperLoose)
 import { ChannelRecordBase } from "_callSuper";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
@@ -107,14 +107,14 @@ function computeAllowedForChannel(permissions, context, guild_id) {
       }
       id2 = id;
     }
-    const obj = require(6754) /* toPermissionKey */;
-    const tmp3 = permissions[obj.toPermissionKey(obj, id2, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
+    const obj = require(5675) /* toPermissionKey */;
+    const tmp3 = permissions[obj.toPermissionKey(obj, id2, require(undefined, 5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
     if (null != tmp3) {
       return tmp3.permission;
     } else {
-      const obj2 = require(6754) /* toPermissionKey */;
-      const obj3 = require(6753) /* _createForOfIteratorHelperLoose */;
-      const tmp8 = permissions[obj2.toPermissionKey(obj2, require(6753) /* _createForOfIteratorHelperLoose */.allChannelsSentinel(guild_id), require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
+      const obj2 = require(5675) /* toPermissionKey */;
+      const obj3 = require(5674) /* _createForOfIteratorHelperLoose */;
+      const tmp8 = permissions[obj2.toPermissionKey(obj2, require(5674) /* _createForOfIteratorHelperLoose */.allChannelsSentinel(guild_id), require(undefined, 5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
       let permission = null;
       if (null != tmp8) {
         permission = tmp8.permission;
@@ -128,8 +128,8 @@ function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImperso
     return null;
   } else {
     if (!isImpersonating) {
-      const obj = require(6754) /* toPermissionKey */;
-      const tmp4 = permissions[obj.toPermissionKey(obj, userId, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
+      const obj = require(5675) /* toPermissionKey */;
+      const tmp4 = permissions[obj.toPermissionKey(obj, userId, require(undefined, 5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
       if (null != tmp4) {
         return tmp4.permission;
       }
@@ -143,8 +143,8 @@ function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImperso
       while (true) {
         let tmp8 = require;
         let tmp9 = dependencyMap;
-        let obj2 = require(6754) /* toPermissionKey */;
-        let tmp10 = permissions[obj2.toPermissionKey(obj2, iter2.value, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
+        let obj2 = require(5675) /* toPermissionKey */;
+        let tmp10 = permissions[obj2.toPermissionKey(obj2, iter2.value, require(undefined, 5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
         if (null != tmp10) {
           flag3 = true;
           if (tmp10.permission) {
@@ -162,8 +162,8 @@ function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImperso
     } else {
       let tmp11 = null;
       if (null != guild_id) {
-        const obj3 = require(6754) /* toPermissionKey */;
-        tmp11 = permissions[obj3.toPermissionKey(obj3, guild_id, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
+        const obj3 = require(5675) /* toPermissionKey */;
+        tmp11 = permissions[obj3.toPermissionKey(obj3, guild_id, require(undefined, 5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
       }
       let permission = null;
       if (null != tmp11) {
@@ -202,7 +202,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
       }
     }
     if (null != context) {
-      obj = require(8012) /* computeAllowNsfw */;
+      obj = require(5677) /* computeAllowNsfw */;
       const commandContextType = obj.computeCommandContextType(context, commandBotId);
     }
     if (null != type.contexts) {
@@ -212,13 +212,13 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
           return obj.CONTEXT_NOT_ALLOWED;
         }
       }
-    } else if (type.inputType === require(6755) /* ApplicationCommandSectionType */.ApplicationCommandInputType.BOT) {
+    } else if (type.inputType === require(5676) /* ApplicationCommandSectionType */.ApplicationCommandInputType.BOT) {
       if (false === type.dmPermission) {
-        if (commandContextType === require(1881) /* PermissionOverwriteType */.InteractionContextType.BOT_DM) {
+        if (commandContextType === require(1882) /* PermissionOverwriteType */.InteractionContextType.BOT_DM) {
           return obj.CONTEXT_NOT_ALLOWED;
         }
       }
-      if (commandContextType === require(1881) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL) {
+      if (commandContextType === require(1882) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL) {
         return obj.CONTEXT_NOT_ALLOWED;
       }
     }
@@ -235,8 +235,8 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
     } else {
       let contextGuildId;
       if (null != context) {
-        contextGuildId = require(8012) /* computeAllowNsfw */.getContextGuildId(context);
-        const obj3 = require(8012) /* computeAllowNsfw */;
+        contextGuildId = require(5677) /* computeAllowNsfw */.getContextGuildId(context);
+        const obj3 = require(5677) /* computeAllowNsfw */;
       }
       if (null == contextGuildId) {
         return obj.ALLOWED;
@@ -247,7 +247,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
           if (isUserInstalled) {
             const integration_types = type.integration_types;
             if (null != integration_types) {
-              if (integration_types.includes(require(8224) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL)) {
+              if (integration_types.includes(require(5655) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL)) {
                 return obj.ALLOWED;
               }
             }
@@ -278,7 +278,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
             if (!isExplicitDeny(tmp43)) {
               if (!isExplicitDeny(applicationAllowedForUser)) {
                 if (null != type.defaultMemberPermissions) {
-                  if (!obj4.equals(type.defaultMemberPermissions, require(6753) /* _createForOfIteratorHelperLoose */.DISABLED_BY_DEFAULT_PERMISSION_FLAG)) {
+                  if (!obj4.equals(type.defaultMemberPermissions, require(5674) /* _createForOfIteratorHelperLoose */.DISABLED_BY_DEFAULT_PERMISSION_FLAG)) {
                     if (obj5.has(computedPermissions, type.defaultMemberPermissions)) {
                       let USER_DENIED2 = obj.ALLOWED;
                     }

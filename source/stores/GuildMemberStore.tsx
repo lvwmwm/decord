@@ -1,10 +1,10 @@
-// Module ID: 1917
-// Function ID: 21604
+// Module ID: 1918
+// Function ID: 21615
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1918, 1909, 1194, 1348, 1910, 1838, 3746, 3, 3747, 1912, 1360, 21, 1828, 1829, 1860, 1327, 1880, 22, 3748, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1919, 1910, 1194, 1348, 1911, 1838, 3747, 3, 3748, 1913, 1360, 21, 1828, 1829, 1861, 1327, 1881, 22, 3749, 566, 686, 2]
 // Exports: getUserCommunicationDisabledVersion
 
-// Module 1917 (_isNativeReflectConstruct)
+// Module 1918 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import hasFlag from "hasFlag";
@@ -114,15 +114,15 @@ function trackCommunicationDisabled(guildId, tmp4Result) {
       const tmp2 = getCommunicationDisabledUserKey(guildId, tmp4Result.userId);
       let result = dependencyMap2[tmp2] !== tmp4Result.communicationDisabledUntil;
       if (result) {
-        result = require(3747) /* isCommunicationDisabled */.isMemberCommunicationDisabled(tmp4Result);
-        const obj = require(3747) /* isCommunicationDisabled */;
+        result = require(3748) /* isCommunicationDisabled */.isMemberCommunicationDisabled(tmp4Result);
+        const obj = require(3748) /* isCommunicationDisabled */;
       }
       if (result) {
         dependencyMap2[tmp2] = tmp4Result.communicationDisabledUntil;
         incrementCommunicationDisabledVersion(tmp2);
       }
     }
-    obj2 = require(3747) /* isCommunicationDisabled */;
+    obj2 = require(3748) /* isCommunicationDisabled */;
   }
   removeCommunicationDisabled(guildId, tmp4Result.userId);
 }
@@ -198,7 +198,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
           if (!doesRoleSortHigherResult) {
             let tmp6 = require;
             let tmp7 = dependencyMap;
-            obj = require(1912) /* _createForOfIteratorHelperLoose */;
+            obj = require(1913) /* _createForOfIteratorHelperLoose */;
             doesRoleSortHigherResult = obj.doesRoleSortHigher(tmp, tmp26);
           }
           let tmp9 = tmp26;
@@ -211,7 +211,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
             if (!doesRoleSortHigherResult1) {
               let tmp12 = require;
               let tmp13 = dependencyMap;
-              let obj2 = require(1912) /* _createForOfIteratorHelperLoose */;
+              let obj2 = require(1913) /* _createForOfIteratorHelperLoose */;
               doesRoleSortHigherResult1 = obj2.doesRoleSortHigher(tmp, tmp23);
             }
             tmp10 = doesRoleSortHigherResult1;
@@ -226,7 +226,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
             if (!doesRoleSortHigherResult2) {
               let tmp16 = require;
               let tmp17 = dependencyMap;
-              let obj3 = require(1912) /* _createForOfIteratorHelperLoose */;
+              let obj3 = require(1913) /* _createForOfIteratorHelperLoose */;
               doesRoleSortHigherResult2 = obj3.doesRoleSortHigher(tmp, tmp24);
             }
             hoist = doesRoleSortHigherResult2;
@@ -241,7 +241,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
             if (!doesRoleSortHigherResult3) {
               let tmp21 = require;
               let tmp22 = dependencyMap;
-              let obj4 = require(1912) /* _createForOfIteratorHelperLoose */;
+              let obj4 = require(1913) /* _createForOfIteratorHelperLoose */;
               doesRoleSortHigherResult3 = obj4.doesRoleSortHigher(tmp, tmp25);
             }
             tmp19 = doesRoleSortHigherResult3;
@@ -500,7 +500,7 @@ function _removeMemberFromGuild(guildId, id) {
 }
 function buildMembersFromActivityParticipants(embeddedActivityLocationGuildId, participants) {
   const obj = { id: embeddedActivityLocationGuildId };
-  const found = participants.filter(importDefault(1880));
+  const found = participants.filter(importDefault(1881));
   obj.members = found.map((member) => member.member);
   return buildMembers(obj);
 }
@@ -547,7 +547,7 @@ function buildMembers(guild) {
         let tmp10 = dependencyMap;
         let obj2 = require(1829) /* parseSkuIdFromServerData */;
         obj.collectibles = obj2.parseServerUserCollectibles(value.collectibles);
-        let obj3 = require(1860) /* wrapHue */;
+        let obj3 = require(1861) /* wrapHue */;
         obj.displayNameStyles = obj3.parseServerDisplayNameStyles(value.display_name_styles);
         let tmp4Result = tmp4(obj);
         tmp15[id2] = tmp4Result;
@@ -1327,7 +1327,7 @@ tmp4 = new tmp4(require("dispatcher"), {
         obj.fullProfileLoadedTimestamp = Date.now();
         obj.collectibles = require(1829) /* parseSkuIdFromServerData */.parseServerUserCollectibles(guildMember.collectibles);
         const obj2 = require(1829) /* parseSkuIdFromServerData */;
-        obj.displayNameStyles = require(1860) /* wrapHue */.parseServerDisplayNameStyles(guildMember.display_name_styles);
+        obj.displayNameStyles = require(1861) /* wrapHue */.parseServerDisplayNameStyles(guildMember.display_name_styles);
         tmp[guildMember.user.id] = createMember(obj);
         trackCommunicationDisabled(guildId, tmp[guildMember.user.id]);
       }
@@ -1407,7 +1407,7 @@ tmp4 = new tmp4(require("dispatcher"), {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = require(3748) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const embeddedActivityLocationGuildId = require(3749) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
     let tmp2 = null != embeddedActivityLocationGuildId;
     if (tmp2) {
       tmp2 = buildMembersFromActivityParticipants(embeddedActivityLocationGuildId, instance.participants);

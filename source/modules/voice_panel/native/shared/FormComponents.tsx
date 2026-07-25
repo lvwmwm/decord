@@ -1,10 +1,10 @@
-// Module ID: 8904
-// Function ID: 70155
+// Module ID: 8792
+// Function ID: 69634
 // Name: VoiceBadges
-// Dependencies: [31, 4217, 33, 4130, 689, 5515, 5501, 8905, 1273, 5462, 8906, 8917, 8959, 4361, 8561, 8537, 566, 6980, 4126, 1212, 5165, 4543, 8961, 3969, 8620, 8970, 2]
+// Dependencies: [31, 4218, 33, 4131, 689, 5515, 5501, 8793, 1273, 5462, 8794, 8805, 8847, 4362, 8321, 8297, 566, 5971, 4127, 1212, 5164, 4544, 8849, 3970, 8384, 8858, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 8904 (VoiceBadges)
+// Module 8792 (VoiceBadges)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ function VoiceBadges(arg0) {
   if (null != muteDeafenIconState) {
     obj = { style: tmp.iconWrapper };
     obj = { state: muteDeafenIconState, size: require(1273) /* Button */.IconSizes.SMALL, style: tmp.icon };
-    obj.children = callback(require(8905) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
+    obj.children = callback(require(8793) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
     tmp4 = callback(importDefault(5515), obj);
     const tmp8 = importDefault(5515);
   }
@@ -32,7 +32,7 @@ function VoiceBadges(arg0) {
   if (null != videoIconState) {
     const obj1 = { style: tmp.iconWrapper };
     const obj2 = { state: videoIconState, size: require(1273) /* Button */.IconSizes.SMALL, style: tmp.icon };
-    obj1.children = callback(require(8905) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
+    obj1.children = callback(require(8793) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
     tmp11 = callback(importDefault(5515), obj1);
     const tmp15 = importDefault(5515);
   }

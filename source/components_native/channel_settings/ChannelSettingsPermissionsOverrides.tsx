@@ -1,10 +1,10 @@
-// Module ID: 15560
-// Function ID: 119930
+// Module ID: 15570
+// Function ID: 120058
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [57, 5, 31, 27, 1391, 1348, 1910, 1838, 3758, 3767, 1849, 653, 33, 4130, 689, 1456, 1557, 566, 3763, 483, 8459, 4140, 1881, 3969, 4470, 1212, 3827, 1920, 1356, 15561, 9158, 4126, 4320, 10209, 5165, 5501, 15565, 15566, 2]
+// Dependencies: [57, 5, 31, 27, 1391, 1348, 1911, 1838, 3759, 3768, 1850, 653, 33, 4131, 689, 1456, 1557, 566, 3764, 483, 8217, 4141, 1882, 3970, 4471, 1212, 3828, 1921, 1356, 15571, 9050, 4127, 4321, 10141, 5164, 5501, 15575, 477, 15576, 2]
 // Exports: default
 
-// Module 15560 (ChannelSettingsPermissionsOverrides)
+// Module 15570 (ChannelSettingsPermissionsOverrides)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import Text from "Text";
@@ -135,19 +135,19 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
             };
             const intl = outer2_0(1212).intl;
             obj.label = intl.string(outer2_0(1212).t.i4jeWR);
-            return outer2_19(outer2_0(9158).HeaderTextButton, obj);
+            return outer2_19(outer2_0(9050).HeaderTextButton, obj);
           }
       };
       navigation.setOptions(obj);
     }
   }, items4);
   obj = { variant: "text-md/medium", color: "text-muted" };
-  let obj3 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+  let obj3 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
   obj.children = obj3.computeChannelName(stateFromStores, closure_15, closure_14, true);
-  const tmp6 = callback(require(4126) /* Text */.Text, obj);
+  let tmp6 = callback(require(4127) /* Text */.Text, obj);
   if (fromCreate.type === constants.MEMBER) {
     obj = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp6 };
-    let tmp7Result = callback(id(10209), obj);
+    let tmp7Result = callback(id(10141), obj);
   } else {
     obj1 = { end: true, label: null, start: true };
     role = role.getRole(stateFromStores.guild_id, id);
@@ -161,7 +161,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
     }
     obj1.label = str;
     obj1.trailing = tmp6;
-    tmp7Result = callback(require(5165) /* TableRowInner */.TableRow, obj1);
+    tmp7Result = callback(require(5164) /* TableRowInner */.TableRow, obj1);
     const tmp7 = callback;
   }
   let obj2 = { style: tmp.container, contentContainerStyle: items5 };
@@ -179,25 +179,32 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
       }
       obj.title = title;
       obj.hasIcons = false;
-      obj.children = permissions.map((flag) => {
-        let description;
+      obj.children = permissions.map((description) => {
+        let flag;
         let title;
-        flag = flag.flag;
-        ({ title, description } = flag);
+        ({ title, flag } = description);
         const tmp = outer1_7(flag);
-        let obj = { variant: "text-xs/medium", color: "text-subtle", children: outer2_0(15565).renderDescription(description) };
-        const obj2 = outer2_0(15565);
+        let obj = { variant: "text-xs/medium", color: "text-subtle", children: outer2_0(15575).renderDescription(description.description) };
+        const obj2 = outer2_0(15575);
         const tmp2 = null != tmp && tmp;
-        obj = { disabled: tmp4, label: title, subLabel: outer2_19(outer2_0(4126).Text, obj) };
+        const tmp3 = outer2_19;
         obj = {};
-        const tmp3 = outer2_19(outer2_0(4126).Text, obj);
+        const tmp4 = outer2_19(outer2_0(4127).Text, obj);
+        const tmp5 = !outer2_0(477).isAndroid();
+        obj.accessible = !tmp5;
+        obj.disabled = false !== tmp2;
+        obj.label = title;
+        obj.subLabel = tmp4;
+        obj = { permissionTitle: title };
+        const obj4 = outer2_0(477);
+        const tmp6 = !tmp5;
         obj.value = outer1_8(flag);
         obj.disabled = false !== tmp2;
         obj.onValueChange = function onValueChange(arg0) {
           outer2_6(flag, arg0);
         };
-        obj.trailing = outer2_19(id(15566), obj);
-        return outer2_19(outer2_0(5165).TableRow, obj, "row-" + arg1);
+        obj.trailing = outer2_19(id(15576), obj);
+        return tmp3(outer2_0(5164).TableRow, obj, "row-" + arg1);
       });
       obj.children = outer1_19(outer1_0(outer1_19[35]).TableRowGroup, obj);
       return outer1_19(closure_7, obj, "section-" + arg1);

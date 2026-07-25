@@ -1,10 +1,10 @@
-// Module ID: 4044
-// Function ID: 33673
+// Module ID: 4045
+// Function ID: 33684
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1196, 4045, 653, 3, 4046, 1193, 675, 4049, 587, 22, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1196, 4046, 653, 3, 4047, 1193, 675, 4050, 587, 22, 686, 2]
 // Exports: registerExperiment
 
-// Module 4044 (_isNativeReflectConstruct)
+// Module 4045 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import Storage from "Storage";
@@ -316,8 +316,8 @@ function _loadGuildFilter(arg0) {
   let tmp2;
   [tmp, tmp2] = arg0;
   let tmp3 = null;
-  if (null != require(4049) /* _createForOfIteratorHelperLoose */.GUILD_FILTERS[tmp]) {
-    const GUILD_FILTERS = require(4049) /* _createForOfIteratorHelperLoose */.GUILD_FILTERS;
+  if (null != require(4050) /* _createForOfIteratorHelperLoose */.GUILD_FILTERS[tmp]) {
+    const GUILD_FILTERS = require(4050) /* _createForOfIteratorHelperLoose */.GUILD_FILTERS;
     tmp3 = GUILD_FILTERS[tmp](tmp2);
   }
   return tmp3;
@@ -886,7 +886,7 @@ function loadLocalOverrides() {
     } while (num < items.length);
   }
   const obj4 = importDefault(22);
-  const buildOverrideExperiments = require(4046) /* getAPIEndpoint */.getBuildOverrideExperiments();
+  const buildOverrideExperiments = require(4047) /* getAPIEndpoint */.getBuildOverrideExperiments();
   let flag2 = false;
   let flag3 = false;
   const keys1 = Object.keys();

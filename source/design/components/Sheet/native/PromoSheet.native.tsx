@@ -1,10 +1,10 @@
-// Module ID: 7515
-// Function ID: 59942
+// Module ID: 6599
+// Function ID: 58424
 // Name: PromoSheet
-// Dependencies: [29, 31, 27, 33, 4130, 689, 1324, 7516, 5187, 4541, 7517, 4126, 2]
+// Dependencies: [29, 31, 27, 33, 4131, 689, 1324, 6600, 5187, 4542, 6601, 4127, 2]
 // Exports: PromoSheet
 
-// Module 7515 (PromoSheet)
+// Module 6599 (PromoSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -59,7 +59,7 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj = {};
       const merged1 = Object.assign(graphic);
       obj["style"] = tmp3.graphic;
-      let tmp10 = callback2(gradientColor(7517).Graphic, obj);
+      let tmp10 = callback2(gradientColor(6601).Graphic, obj);
     }
     const items1 = [tmp10, , ];
     const obj1 = {};
@@ -72,7 +72,7 @@ export const PromoSheet = function PromoSheet(arg0) {
     obj2.color = "mobile-text-heading-primary";
     obj2.style = tmp3.title;
     obj2.children = title;
-    const items2 = [callback2(gradientColor(4126).Text, obj2), ];
+    const items2 = [callback2(gradientColor(4127).Text, obj2), ];
     let tmp24Result = null;
     if (null != description) {
       const obj3 = {};
@@ -88,12 +88,12 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj3.color = str5;
       obj3.style = tmp3.description;
       obj3.children = description;
-      tmp24Result = callback2(gradientColor(4126).Text, obj3);
+      tmp24Result = callback2(gradientColor(4127).Text, obj3);
       const tmp24 = callback2;
     }
     items2[1] = tmp24Result;
     obj1.children = items2;
-    items1[1] = closure_8(gradientColor(4541).Stack, obj1);
+    items1[1] = closure_8(gradientColor(4542).Stack, obj1);
     items1[2] = actions;
     obj.children = items1;
     obj["children"] = closure_8(tmp8, obj);

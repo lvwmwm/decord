@@ -1,9 +1,9 @@
-// Module ID: 9492
-// Function ID: 73885
+// Module ID: 9413
+// Function ID: 73472
 // Name: canUIRequestGatewaySocket
-// Dependencies: [6651, 566, 2]
+// Dependencies: [6271, 566, 2]
 
-// Module 9492 (canUIRequestGatewaySocket)
+// Module 9413 (canUIRequestGatewaySocket)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,11 +1,11 @@
 // Module ID: 3112
-// Function ID: 25496
+// Function ID: 25506
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 3112 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "91ee2068a927df40fffe3f0329248ca0", name: "es-ES.messages.91ee2068a927df40fffe3f0329248ca0.compiled.messages", type: "jsona" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "8490d00b0ef76e269e73a1bfd698b3d1", name: "es-419.messages.8490d00b0ef76e269e73a1bfd698b3d1.compiled.messages", type: "jsona" };
 
 export default registerAsset.registerAsset(obj);

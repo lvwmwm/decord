@@ -1,8 +1,8 @@
-// Module ID: 12916
-// Function ID: 100277
-// Dependencies: [31, 11735, 653, 33, 4130, 689, 7636, 675, 11732, 5495, 1212, 12917, 2]
+// Module ID: 12927
+// Function ID: 100404
+// Dependencies: [31, 11705, 653, 33, 4131, 689, 7575, 675, 11702, 5495, 1212, 12928, 2]
 
-// Module 12916
+// Module 12927
 import { dismissUpsellCTA } from "setStoredContacts";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -55,12 +55,12 @@ const memoResult = require("result").memo(function ContactSyncUpsellCTA(location
     style: items
   };
   items = [callback().container, location.style];
-  obj.iconSource = importDefault(12917);
+  obj.iconSource = importDefault(12928);
   let intl = location(1212).intl;
   obj.title = intl.string(location(1212).t.T6Rfd9);
   const intl2 = location(1212).intl;
   obj.subtitle = intl2.string(location(1212).t.c6KIpg);
-  return jsx(location(7636).FormCTA, {
+  return jsx(location(7575).FormCTA, {
     onPress() {
       let obj = outer1_1(outer1_2[7]);
       obj = { type: outer1_5.CONTACT_SYNC_MODAL };

@@ -1,10 +1,10 @@
-// Module ID: 3856
-// Function ID: 32068
+// Module ID: 3857
+// Function ID: 32079
 // Name: hasThemeFlag
-// Dependencies: [3853, 2]
+// Dependencies: [3854, 2]
 // Exports: setThemeFlag, useThemeFlag
 
-// Module 3856 (hasThemeFlag)
+// Module 3857 (hasThemeFlag)
 function hasThemeFlag(flags, MOBILE_DARK_GRADIENT_THEME_ENABLED) {
   return (flags.flags & MOBILE_DARK_GRADIENT_THEME_ENABLED) === MOBILE_DARK_GRADIENT_THEME_ENABLED;
 }
@@ -16,5 +16,5 @@ export const setThemeFlag = function setThemeFlag(arg0, MOBILE_DARK_GRADIENT_THE
   return arg0 | MOBILE_DARK_GRADIENT_THEME_ENABLED;
 };
 export const useThemeFlag = function useThemeFlag(MOBILE_DARK_GRADIENT_THEME_ENABLED) {
-  return hasThemeFlag(require(3853) /* createThemedContext */.useThemeContext(), MOBILE_DARK_GRADIENT_THEME_ENABLED);
+  return hasThemeFlag(require(3854) /* createThemedContext */.useThemeContext(), MOBILE_DARK_GRADIENT_THEME_ENABLED);
 };

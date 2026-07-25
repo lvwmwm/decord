@@ -1,9 +1,9 @@
-// Module ID: 15861
-// Function ID: 122391
+// Module ID: 15872
+// Function ID: 122560
 // Name: SelfStreamCard
-// Dependencies: [57, 31, 27, 4149, 4202, 4952, 10047, 10045, 15817, 10050, 653, 4148, 10048, 33, 3991, 4126, 1273, 4130, 689, 4309, 4194, 5515, 1212, 4543, 10046, 566, 10594, 4227, 11987, 10596, 10593, 15862, 10606, 8257, 1324, 7974, 7979, 7975, 4131, 4542, 7678, 4554, 5085, 3834, 15863, 9923, 9459, 4476, 5462, 15821, 15833, 15816, 15864, 15865, 8537, 5217, 15866, 10049, 15867, 15868, 15869, 15870, 15871, 15881, 2]
+// Dependencies: [57, 31, 27, 4150, 4203, 4953, 9976, 9974, 15828, 9979, 653, 4149, 9977, 33, 3992, 4127, 1273, 4131, 689, 4310, 4195, 5515, 1212, 4544, 9975, 566, 10482, 4228, 11963, 10484, 10481, 15873, 10494, 7992, 1324, 7922, 7926, 7923, 4132, 4543, 7620, 4555, 5085, 3835, 15874, 9851, 9379, 4477, 5462, 15832, 15844, 15827, 15875, 15876, 8297, 5217, 15877, 9978, 15878, 15879, 15880, 15881, 15882, 15892, 2]
 
-// Module 15861 (SelfStreamCard)
+// Module 15872 (SelfStreamCard)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import importAllResult from "getScaleChangeWithOverscroll";
 import { StyleSheet } from "getMediaEngineImpl";
@@ -19,7 +19,7 @@ import { ParticipantTypes } from "ParticipantTypes";
 import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE";
 import jsxProd from "getCachedSourceFromURI";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let closure_10;
 let closure_11;
@@ -754,7 +754,7 @@ function AnimatedWrapper(cleanUp) {
 ({ VoicePanelCTACard: closure_9, VoicePanelModes: closure_10, MODE_CHANGE_PHYSICS: closure_11, SPEAKING_PHYSICS: closure_12, VoicePanelCardItemType: closure_13 } = VoicePanelModes);
 ({ ApplicationStreamStates: closure_17, EMPTY_STRING_SNOWFLAKE_ID: closure_18 } = ME);
 ({ jsx: closure_21, Fragment: closure_22, jsxs: closure_23 } = jsxProd);
-let closure_24 = require("module_3991").createAnimatedComponent(require("Text").Text);
+let closure_24 = require("module_3992").createAnimatedComponent(require("Text").Text);
 let tmp5 = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.XXLARGE];
 let obj = {};
 let merged = Object.assign(SCALE_PHYSICS);
@@ -1138,7 +1138,7 @@ let closure_47 = (() => {
     obj.initialValues = { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight };
     return obj;
   }
-  layoutTransitionFunction.__closure = { withSpring: require(4542) /* withSpring */.withSpring };
+  layoutTransitionFunction.__closure = { withSpring: require(4543) /* withSpring */.withSpring };
   layoutTransitionFunction.__workletHash = 4871152530917;
   layoutTransitionFunction.__initData = closure_46;
   return layoutTransitionFunction;

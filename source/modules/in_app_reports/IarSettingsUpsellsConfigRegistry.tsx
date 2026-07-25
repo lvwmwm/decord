@@ -1,10 +1,10 @@
-// Module ID: 7701
-// Function ID: 61306
+// Module ID: 7645
+// Function ID: 61252
 // Name: SettingsUpsellsConfigRegistry
-// Dependencies: [31, 7690, 7702, 7703, 7704, 1327, 2]
+// Dependencies: [31, 7634, 7646, 7647, 7648, 1327, 2]
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs
 
-// Module 7701 (SettingsUpsellsConfigRegistry)
+// Module 7645 (SettingsUpsellsConfigRegistry)
 import result from "result";
 
 const require = arg1;

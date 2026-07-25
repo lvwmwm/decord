@@ -1,9 +1,9 @@
-// Module ID: 3937
-// Function ID: 32453
+// Module ID: 3938
+// Function ID: 32464
 // Name: ThemeAwareNitroWishlistingWumpusRive
-// Dependencies: [29, 31, 33, 3859, 3938, 3910, 2]
+// Dependencies: [29, 31, 33, 3860, 3939, 3911, 2]
 
-// Module 3937 (ThemeAwareNitroWishlistingWumpusRive)
+// Module 3938 (ThemeAwareNitroWishlistingWumpusRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -19,8 +19,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3859) /* useObservedValue */;
+    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3860) /* useObservedValue */;
     let logoColor;
     if (null != dataBinding) {
       logoColor = dataBinding.logoColor;
@@ -29,7 +29,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       logoColor1 = onDataBindingChange.logoColor;
     }
-    const colorBinding = require(3859) /* useObservedValue */.useColorBinding("logoColor", instance, logoColor, logoColor1, playIfNeeded);
+    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("logoColor", instance, logoColor, logoColor1, playIfNeeded);
     return null;
   }
 };
@@ -69,7 +69,7 @@ const forwardRefResult = importAllResult.forwardRef(function ThemeAwareNitroWish
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3910) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  return jsx(require(3911) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/ThemeAwareNitroWishlistingWumpusRive.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12968
-// Function ID: 100544
+// Module ID: 12979
+// Function ID: 100671
 // Name: MessageRequestRestrictedGuildPrivacyOption
-// Dependencies: [31, 33, 3803, 5793, 5500, 1212, 11508, 2]
+// Dependencies: [31, 33, 3804, 6449, 5500, 1212, 11474, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 12968 (MessageRequestRestrictedGuildPrivacyOption)
+// Module 12979 (MessageRequestRestrictedGuildPrivacyOption)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -12,10 +12,10 @@ const require = arg1;
 function MessageRequestRestrictedGuildPrivacyOption(guild) {
   guild = guild.guild;
   const id = guild.id;
-  let MessageRequestRestrictedGuildIds = id(3803).MessageRequestRestrictedGuildIds;
+  let MessageRequestRestrictedGuildIds = id(3804).MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.useSetting();
   const hasItem = setting.includes(id);
-  const RestrictedGuildIds = id(3803).RestrictedGuildIds;
+  const RestrictedGuildIds = id(3804).RestrictedGuildIds;
   const setting1 = RestrictedGuildIds.useSetting();
   const hasItem1 = setting1.includes(guild.id);
   const items = [id];
@@ -43,7 +43,7 @@ const result = require("explicitContentFromProto").fileFinishedImporting("module
 
 export const useMessageRequestPrivacyOption = function useMessageRequestPrivacyOption(guild) {
   let tmp = null;
-  if (!importDefault(11508)()) {
+  if (!importDefault(11474)()) {
     const obj = { guild: guild.guild };
     tmp = <MessageRequestRestrictedGuildPrivacyOption guild={arg0.guild} />;
   }

@@ -1,10 +1,10 @@
-// Module ID: 5741
-// Function ID: 49375
+// Module ID: 10715
+// Function ID: 83334
 // Name: _getCancellationSlowConnection
-// Dependencies: [4991, 1906, 5742, 5743, 653, 4579, 22, 5744, 507, 5767, 5482, 4585, 2]
+// Dependencies: [4992, 1907, 10716, 10510, 653, 4580, 22, 10509, 507, 10717, 5482, 4586, 2]
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEffect
 
-// Module 5741 (_getCancellationSlowConnection)
+// Module 10715 (_getCancellationSlowConnection)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -40,16 +40,16 @@ export const sendVoiceChannelCustomCallSoundEffect = function sendVoiceChannelCu
   if (null == BASIC) {
     BASIC = constants.BASIC;
   }
-  let obj = { animation_type: BASIC, animation_id: abortController(5744).sampleAnimationId(BASIC, abortController(5744).CUSTOM_CALL_SOUND_ANIMATION_RANGE) };
+  let obj = { animation_type: BASIC, animation_id: abortController(10509).sampleAnimationId(BASIC, abortController(10509).CUSTOM_CALL_SOUND_ANIMATION_RANGE) };
   const HTTP = abortController(507).HTTP;
   obj = { url: closure_7.CUSTOM_CALL_SOUNDS(id), body: obj, signal: abortController.signal, onRequestProgress: tmp.onRequestProgress, rejectWithError: true };
-  const obj2 = abortController(5744);
+  const obj2 = abortController(10509);
   HTTP.post(obj).then(closure_8, () => {
 
   });
   const postResult = HTTP.post(obj);
   const items = [importDefault(5482).CHANNEL_CALL];
-  importDefault(5767)(items, arg2, sound, abortController(4585).AnalyticsSoundType.ENTRY);
+  importDefault(10717)(items, arg2, sound, abortController(4586).AnalyticsSoundType.ENTRY);
 };
 export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundboardEffect(id, emojiId, arg2, arg3, arg4) {
   let items = arg3;
@@ -81,5 +81,5 @@ export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundbo
   if (null == items) {
     items = [];
   }
-  importDefault(5767)(items, arg2, emojiId, abortController(4585).AnalyticsSoundType.DEFAULT, arg4);
+  importDefault(10717)(items, arg2, emojiId, abortController(4586).AnalyticsSoundType.DEFAULT, arg4);
 };

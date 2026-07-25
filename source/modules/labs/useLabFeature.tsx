@@ -1,10 +1,10 @@
-// Module ID: 8369
-// Function ID: 66197
+// Module ID: 8127
+// Function ID: 64848
 // Name: useLabFeature
-// Dependencies: [8367, 566, 2]
+// Dependencies: [8125, 566, 2]
 // Exports: default
 
-// Module 8369 (useLabFeature)
+// Module 8127 (useLabFeature)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

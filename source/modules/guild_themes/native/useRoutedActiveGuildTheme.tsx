@@ -1,10 +1,10 @@
-// Module ID: 3980
-// Function ID: 33011
+// Module ID: 3981
+// Function ID: 33022
 // Name: getGuildIdFromNavigationState
-// Dependencies: [57, 31, 653, 3981, 3982, 4011, 4012, 2]
+// Dependencies: [57, 31, 653, 3982, 3983, 4012, 4013, 2]
 // Exports: default
 
-// Module 3980 (getGuildIdFromNavigationState)
+// Module 3981 (getGuildIdFromNavigationState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ME } from "ME";
@@ -34,7 +34,7 @@ function getGuildIdFromNavigationState(routes) {
   }
 }
 function getActiveGuildThemeGuildIdSnapshot() {
-  const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       let tmp = (function getGuildIdFromRootNavigationState(rootState) {
@@ -97,5 +97,5 @@ export default function useRoutedActiveGuildTheme() {
     }
     return first;
   })();
-  return require(4012) /* resolveRenderableGuildThemeSettings */.useActiveGuildThemeForGuildId(tmp);
+  return require(4013) /* resolveRenderableGuildThemeSettings */.useActiveGuildThemeForGuildId(tmp);
 };

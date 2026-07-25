@@ -1,10 +1,10 @@
-// Module ID: 10452
-// Function ID: 80482
+// Module ID: 10386
+// Function ID: 80151
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [57, 31, 3767, 1849, 9139, 33, 566, 3969, 10163, 8962, 1212, 8777, 9254, 10453, 5501, 10454, 2]
+// Dependencies: [57, 31, 3768, 1850, 9031, 33, 566, 3970, 10095, 8850, 1212, 8665, 9146, 10387, 5501, 10388, 2]
 // Exports: default
 
-// Module 10452 (StrangerDangerMoreTipsModalActionItems)
+// Module 10386 (StrangerDangerMoreTipsModalActionItems)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

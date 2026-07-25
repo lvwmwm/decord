@@ -1,10 +1,10 @@
-// Module ID: 16032
-// Function ID: 123922
+// Module ID: 16043
+// Function ID: 124090
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 57, 31, 27, 653, 33, 4130, 1456, 5121, 4126, 1212, 1920, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 653, 33, 4131, 1456, 5121, 4127, 1212, 1921, 4544, 2]
 // Exports: default
 
-// Module 16032 (ExistingUserAgeGateConfirm)
+// Module 16043 (ExistingUserAgeGateConfirm)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -39,12 +39,12 @@ export default function ExistingUserAgeGateConfirm(age) {
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = onConfirm(1212).intl;
   obj.children = intl.format(onConfirm(1212).t.wumolR, { age: age.age });
-  const items = [callback2(onConfirm(4126).Text, obj), , ];
+  const items = [callback2(onConfirm(4127).Text, obj), , ];
   const obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default" };
   const intl2 = onConfirm(1212).intl;
-  const obj2 = { helpURL: importDefault(1920).getArticleURL(HelpdeskArticles.AGE_GATE) };
+  const obj2 = { helpURL: importDefault(1921).getArticleURL(HelpdeskArticles.AGE_GATE) };
   obj1.children = intl2.format(onConfirm(1212).t.n3QjDE, obj2);
-  items[1] = callback2(onConfirm(4126).Text, obj1);
+  items[1] = callback2(onConfirm(4127).Text, obj1);
   const obj3 = { style: tmp.buttonWrapper };
   const obj4 = { loading: first, disabled: first };
   const intl3 = onConfirm(1212).intl;
@@ -53,7 +53,7 @@ export default function ExistingUserAgeGateConfirm(age) {
     return _handleConfirm(...arguments);
   };
   obj4.grow = true;
-  obj3.children = callback2(onConfirm(4543).Button, obj4);
+  obj3.children = callback2(onConfirm(4544).Button, obj4);
   items[2] = callback2(View, obj3);
   obj.children = items;
   return callback3(onConfirm(5121).SafeAreaPaddingView, obj);

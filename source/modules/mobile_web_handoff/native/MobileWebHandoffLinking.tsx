@@ -1,9 +1,9 @@
-// Module ID: 5692
-// Function ID: 49018
+// Module ID: 11749
+// Function ID: 91266
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1194, 653, 4337, 5693, 5695, 675, 490, 5696, 1443, 3827, 2]
+// Dependencies: [5, 1194, 653, 4338, 11750, 11752, 675, 490, 11753, 1443, 3828, 2]
 
-// Module 5692 (createHandoffTokenWithLoadingModal)
+// Module 11749 (createHandoffTokenWithLoadingModal)
 import _createHandoffToken from "_createHandoffToken";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -47,84 +47,15 @@ function createHandoffTokenWithLoadingModal(arg0) {
     }
   });
 }
-async function _redirectWithHandoffToken(arg0, arg1) {
-  let iter = (function*(arg0) {
-    let obj = arg1;
-    if (obj === undefined) {
-      obj = {};
-    }
-    let flag = obj.forceExternalBrowser;
-    if (flag === undefined) {
-      flag = false;
-    }
-    obj = Object.create(null);
-    obj.forceExternalBrowser = 0;
-    const merged = Object.assign(obj, obj);
-    yield undefined;
-    obj = {};
-    const merged1 = Object.assign(merged);
-    let nonce = merged.nonce;
-    if (null == nonce) {
-      nonce = outer2_1(outer2_2[5]).generateNonce();
-      const obj3 = outer2_1(outer2_2[5]);
-    }
-    obj["nonce"] = nonce;
-    obj["handoffSource"] = outer2_0(outer2_2[8]).getLoginHandoffSourceFromRedirectTo(arg0);
-    const obj4 = outer2_0(outer2_2[8]);
-    if (true === merged.skipLoginRedirect) {
-      const _URL2 = URL;
-      const _location = location;
-      const _window = window;
-      const _HermesInternal = HermesInternal;
-      const uRL = new URL("" + location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
-      const _URL3 = URL;
-      const uRL1 = new URL(arg0, uRL);
-      ({ pathname: tmp18.pathname, search: tmp18.search, hash: tmp18.hash } = uRL1);
-      let uRL2 = uRL;
-    } else {
-      const _URL = URL;
-      uRL2 = new URL(outer2_1(outer2_2[9]).makeUrl(outer2_7.LOGIN_HANDOFF, false));
-      const obj5 = outer2_1(outer2_2[9]);
-    }
-    const searchParams = uRL2.searchParams;
-    searchParams.append("handoff_token", yield outer2_9(obj));
-    if (true !== merged.skipLoginRedirect) {
-      const searchParams2 = uRL2.searchParams;
-      searchParams2.append("handoff_key", obj.nonce);
-      const searchParams3 = uRL2.searchParams;
-      searchParams3.append("redirect_to", arg0);
-    }
-    const obj6 = outer2_1(outer2_2[10]);
-    if (flag) {
-      obj6.openURLExternally(uRL2.href);
-    } else {
-      obj6.performURLNavigation(uRL2.href);
-    }
-  })();
-  iter.next();
-  return iter;
+function _redirectWithHandoffToken() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
-async function _redirectDeveloperPortalWithHandoffToken(arg0, arg1) {
-  let iter = (function*(arg0) {
-    let obj = arg1;
-    if (obj === undefined) {
-      obj = {};
-    }
-    yield undefined;
-    obj = {};
-    const merged = Object.assign(obj);
-    let nonce = obj.nonce;
-    if (null == nonce) {
-      nonce = outer2_1(outer2_2[5]).generateNonce();
-      const obj3 = outer2_1(outer2_2[5]);
-    }
-    obj["nonce"] = nonce;
-    obj["handoffSource"] = outer2_0(outer2_2[8]).LoginHandoffSource.ROLE_SUBSCRIPTION_SETTING;
-    const uRL = new URL("" + location.protocol + outer2_6.DEVELOPER_PORTAL_LOGIN_HANDOFF(obj.nonce, yield outer2_9(obj), arg0));
-    outer2_1(outer2_2[10]).performURLNavigation(uRL.href);
-  })();
-  iter.next();
-  return iter;
+function _redirectDeveloperPortalWithHandoffToken() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
 ({ AnalyticEvents: closure_5, MarketingURLs: closure_6, Routes: closure_7 } = ME);
 let c8 = "mweb-handoff";

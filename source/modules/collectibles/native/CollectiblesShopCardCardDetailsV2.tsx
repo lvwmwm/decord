@@ -1,9 +1,9 @@
-// Module ID: 8759
-// Function ID: 69201
+// Module ID: 8647
+// Function ID: 68678
 // Name: memoResult1
-// Dependencies: [31, 27, 5619, 653, 33, 4130, 689, 8705, 6785, 8760, 6786, 8763, 8769, 4126, 1212, 8749, 477, 7512, 7486, 8708, 8744, 1876, 3776, 3834, 3974, 8770, 566, 4554, 8771, 2]
+// Dependencies: [31, 27, 5619, 653, 33, 4131, 689, 8593, 5781, 8648, 5782, 8651, 8657, 4127, 1212, 8637, 477, 6596, 6570, 8596, 8632, 1877, 3777, 3835, 3975, 8658, 566, 4555, 8659, 2]
 
-// Module 8759 (memoResult1)
+// Module 8647 (memoResult1)
 import importAllResult from "result";
 import { View } from "LinearGradient";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -217,29 +217,29 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(product) {
   product = product.product;
   ({ collectibleProductState, preferVCPrice, isDisabled, hidePrice } = product);
   const tmp = callback3();
-  let obj = require(8708) /* useCurrentUser */;
+  let obj = require(8596) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(8744) /* isUserPaidTier2 */;
+  let obj1 = require(8632) /* isUserPaidTier2 */;
   let isProfileFramesEarlyAccessPhase = obj1.useIsProfileFramesEarlyAccessPhase("CollectiblesShopCardCardDetailsV2");
   if (isProfileFramesEarlyAccessPhase) {
-    let obj2 = require(6785) /* getProductOrbPrice */;
+    let obj2 = require(5781) /* getProductOrbPrice */;
     const productType = obj2.getProductType(product);
-    isProfileFramesEarlyAccessPhase = productType === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
+    isProfileFramesEarlyAccessPhase = productType === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
   }
-  let obj3 = importDefault(3776);
+  let obj3 = importDefault(3777);
   const tmp7 = obj3.canUseShopDiscounts(currentUser) || isProfileFramesEarlyAccessPhase;
-  const shopDiscountSource = require(6786) /* getPriceForCollectiblesProduct */.getShopDiscountSource(currentUser);
-  const obj5 = require(6786) /* getPriceForCollectiblesProduct */;
-  const token = require(3834) /* map */.useToken(importDefault(689).colors.BACKGROUND_BASE_LOW);
-  const obj6 = require(3834) /* map */;
-  const obj7 = require(3974) /* hexToRgb */;
-  const obj8 = require(3974) /* hexToRgb */;
-  const hexToRgbaStringResult = obj7.hexToRgbaString(require(3974) /* hexToRgb */.hexWithOpacity(token, 0.9));
-  const obj9 = require(3974) /* hexToRgb */;
-  const obj10 = require(3974) /* hexToRgb */;
-  const hexToRgbaStringResult1 = obj9.hexToRgbaString(require(3974) /* hexToRgb */.hexWithOpacity(token, 0));
-  const productName = require(8770) /* getProductName */.getProductName(product);
-  const obj11 = require(8770) /* getProductName */;
+  const shopDiscountSource = require(5782) /* getPriceForCollectiblesProduct */.getShopDiscountSource(currentUser);
+  const obj5 = require(5782) /* getPriceForCollectiblesProduct */;
+  const token = require(3835) /* map */.useToken(importDefault(689).colors.BACKGROUND_BASE_LOW);
+  const obj6 = require(3835) /* map */;
+  const obj7 = require(3975) /* hexToRgb */;
+  const obj8 = require(3975) /* hexToRgb */;
+  const hexToRgbaStringResult = obj7.hexToRgbaString(require(3975) /* hexToRgb */.hexWithOpacity(token, 0.9));
+  const obj9 = require(3975) /* hexToRgb */;
+  const obj10 = require(3975) /* hexToRgb */;
+  const hexToRgbaStringResult1 = obj9.hexToRgbaString(require(3975) /* hexToRgb */.hexWithOpacity(token, 0));
+  const productName = require(8658) /* getProductName */.getProductName(product);
+  const obj11 = require(8658) /* getProductName */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.isFetchingGoogleSkus());
   obj = { style: items1, colors: items2, locations: [0, 0.4, 1], start: constants.START, end: constants.END };
@@ -248,20 +248,20 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(product) {
   const obj12 = require(566) /* initialize */;
   const tmp14 = callback2;
   obj = { style: tmp.assetName, variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: productName };
-  const items3 = [callback(require(4126) /* Text */.Text, obj), ];
+  const items3 = [callback(require(4127) /* Text */.Text, obj), ];
   let tmp16 = !hidePrice;
   if (tmp16) {
     obj1 = { style: tmp.priceVariantsContainer };
     obj2 = { product, hasShopDiscount: tmp7, discountSource: shopDiscountSource, styles: tmp, collectibleProductState, isFetchingGoogleSkus: stateFromStores, preferVCPrice, isDisabled };
     const items4 = [callback(closure_11, obj2), ];
     obj3 = { product };
-    items4[1] = callback(importDefault(8771), obj3);
+    items4[1] = callback(importDefault(8659), obj3);
     obj1.children = items4;
     tmp16 = callback2(View, obj1);
   }
   items3[1] = tmp16;
   obj.children = items3;
-  return tmp14(importDefault(4554), obj);
+  return tmp14(importDefault(4555), obj);
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardCardDetailsV2.tsx");
 

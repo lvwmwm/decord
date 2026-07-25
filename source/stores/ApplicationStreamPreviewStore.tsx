@@ -1,9 +1,9 @@
-// Module ID: 4311
-// Function ID: 37765
+// Module ID: 4312
+// Function ID: 37776
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4195, 22, 4194, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4196, 22, 4195, 566, 686, 2]
 
-// Module 4311 (_isNativeReflectConstruct)
+// Module 4312 (_isNativeReflectConstruct)
 import apply from "apply";
 import isStreamKey from "isStreamKey";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

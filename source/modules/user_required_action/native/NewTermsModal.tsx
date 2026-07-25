@@ -1,10 +1,10 @@
-// Module ID: 16251
-// Function ID: 126103
+// Module ID: 16262
+// Function ID: 126271
 // Name: handleTouch
-// Dependencies: [5, 57, 31, 27, 1342, 653, 33, 4130, 689, 5495, 1212, 5588, 1557, 5093, 4540, 7976, 8604, 480, 4126, 4543, 8518, 8512, 2]
+// Dependencies: [5, 57, 31, 27, 1342, 653, 33, 4131, 689, 5495, 1212, 5588, 1557, 5093, 4541, 5656, 8364, 480, 4127, 4544, 8278, 8272, 2]
 // Exports: default
 
-// Module 16251 (handleTouch)
+// Module 16262 (handleTouch)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -68,9 +68,9 @@ export default function NewTermsModal() {
   importDefault = tmp3[1];
   let obj = memo(5093);
   // CreateGeneratorClosureLongIndex (0x67)
-  const dependencyMap = React.useCallback(callback(obj.useNavigatorBackPressHandler(memo(4540).BackPressHandler.minimize)), []);
+  const dependencyMap = React.useCallback(callback(obj.useNavigatorBackPressHandler(memo(4541).BackPressHandler.minimize)), []);
   obj = { type: memo(480).ImpressionTypes.VIEW, name: memo(480).ImpressionNames.USER_AGREEMENTS, properties: { required_action: memo } };
-  importDefault(8604)(obj, {}, []);
+  importDefault(8364)(obj, {}, []);
   let tmp6 = null;
   if (null != memo) {
     obj = {};
@@ -86,36 +86,36 @@ export default function NewTermsModal() {
     const obj3 = { maxFontSizeMultiplier: 2, variant: "heading-xxl/bold" };
     const intl = memo(1212).intl;
     obj3.children = intl.string(memo(1212).t["7glvXu"]);
-    const items2 = [callback3(memo(4126).Text, obj3), , , , , , ];
+    const items2 = [callback3(memo(4127).Text, obj3), , , , , , ];
     const obj4 = { variant: "text-md/normal", style: tmp.description };
     const intl2 = memo(1212).intl;
     const obj5 = { url: constants.TERMS_SUMMARY };
     obj4.children = intl2.format(memo(1212).t.CN0Hvb, obj5);
-    items2[1] = callback3(memo(4126).Text, obj4);
+    items2[1] = callback3(memo(4127).Text, obj4);
     const obj6 = { variant: "text-md/normal" };
     const intl3 = memo(1212).intl;
     const obj7 = { url: constants.TERMS };
     obj6.children = intl3.format(memo(1212).t.iw0hFi, obj7);
-    items2[2] = callback3(memo(4126).Text, obj6);
+    items2[2] = callback3(memo(4127).Text, obj6);
     const obj8 = { variant: "text-md/normal" };
     const intl4 = memo(1212).intl;
     const obj9 = { url: constants.PAID_TERMS };
     obj8.children = intl4.format(memo(1212).t["36klnD"], obj9);
-    items2[3] = callback3(memo(4126).Text, obj8);
+    items2[3] = callback3(memo(4127).Text, obj8);
     const obj10 = { variant: "text-md/normal" };
     const intl5 = memo(1212).intl;
     const obj11 = { url: constants.PRIVACY };
     obj10.children = intl5.format(memo(1212).t.TquFBF, obj11);
-    items2[4] = callback3(memo(4126).Text, obj10);
+    items2[4] = callback3(memo(4127).Text, obj10);
     const obj12 = { variant: "text-md/normal" };
     const intl6 = memo(1212).intl;
     const obj13 = { url: constants.GUIDELINES };
     obj12.children = intl6.format(memo(1212).t.ia96Tb, obj13);
-    items2[5] = callback3(memo(4126).Text, obj12);
+    items2[5] = callback3(memo(4127).Text, obj12);
     const obj14 = { variant: "text-md/normal", style: tmp.agreementDescription };
     const intl7 = memo(1212).intl;
     obj14.children = intl7.string(memo(1212).t["+USXQE"]);
-    items2[6] = callback3(memo(4126).Text, obj14);
+    items2[6] = callback3(memo(4127).Text, obj14);
     obj2.children = items2;
     const items3 = [callback4(closure_8, obj2), , ];
     const obj15 = { style: tmp.stickyFooter };
@@ -129,23 +129,23 @@ export default function NewTermsModal() {
     };
     const intl8 = memo(1212).intl;
     obj16.text = intl8.string(memo(1212).t["+TBKL1"]);
-    obj15.children = callback3(memo(4543).Button, obj16);
+    obj15.children = callback3(memo(4544).Button, obj16);
     items3[1] = callback3(closure_6, obj15);
     const obj17 = {};
     const items4 = [tmp.navbarRight, ];
     const obj18 = { top };
     items4[1] = obj18;
     obj17.style = items4;
-    obj17.source = importDefault(8512);
+    obj17.source = importDefault(8272);
     obj17.color = tmp.navbarRight.tintColor;
     obj17.onPress = handleMoreActions;
     obj17.accessibilityRole = "button";
     const intl9 = memo(1212).intl;
     obj17.accessibilityLabel = intl9.string(memo(1212).t["UKOtz+"]);
-    items3[2] = callback3(importDefault(8518), obj17);
+    items3[2] = callback3(importDefault(8278), obj17);
     obj.children = items3;
     tmp6 = callback4(closure_6, obj);
-    const tmp16 = importDefault(8518);
+    const tmp16 = importDefault(8278);
   }
   return tmp6;
 };

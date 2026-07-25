@@ -1,10 +1,10 @@
-// Module ID: 11779
-// Function ID: 91504
+// Module ID: 11755
+// Function ID: 91309
 // Name: getMemberCountFromInvite
-// Dependencies: [57, 31, 27, 11482, 1857, 1849, 653, 11780, 33, 4130, 689, 4973, 6977, 1273, 11718, 3969, 1212, 9207, 4126, 1392, 5085, 675, 566, 11781, 8405, 4543, 4965, 2]
+// Dependencies: [57, 31, 27, 11445, 1858, 1850, 653, 11756, 33, 4131, 689, 4974, 5968, 1273, 11688, 3970, 1212, 9099, 4127, 1392, 5085, 675, 566, 11757, 8163, 4544, 4966, 2]
 // Exports: default
 
-// Module 11779 (getMemberCountFromInvite)
+// Module 11755 (getMemberCountFromInvite)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "set";
@@ -92,15 +92,15 @@ function InviteDestinationIcon(invite) {
   }
   tmp5 = null;
   if (null != invite.guild) {
-    obj = { style: tmp.avatar, guild: invite.guild, size: importDefault(11718).Sizes.LARGE, textScale: 2 };
-    tmp5 = callback2(importDefault(11718), obj);
-    const tmp9 = importDefault(11718);
+    obj = { style: tmp.avatar, guild: invite.guild, size: importDefault(11688).Sizes.LARGE, textScale: 2 };
+    tmp5 = callback2(importDefault(11688), obj);
+    const tmp9 = importDefault(11688);
   }
 }
 function InviteHeader(invite) {
   invite = invite.invite;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6977) /* isGroupDMInvite */;
+  let obj = require(5968) /* isGroupDMInvite */;
   if (obj.isGroupDMInvite(invite)) {
     const channel = invite.channel;
     let name;
@@ -108,7 +108,7 @@ function InviteHeader(invite) {
       name = channel.name;
     }
     if (null == name) {
-      let obj1 = importDefault(3969);
+      let obj1 = importDefault(3970);
       name = obj1.getFormattedName(invite.inviter);
     }
   } else {
@@ -117,20 +117,20 @@ function InviteHeader(invite) {
       name = guild.name;
     }
   }
-  let obj2 = require(6977) /* isGroupDMInvite */;
+  let obj2 = require(5968) /* isGroupDMInvite */;
   if (obj2.isFriendInvite(invite)) {
     const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { username: importDefault(3969).getFormattedName(invite.inviter) };
+    obj = { username: importDefault(3970).getFormattedName(invite.inviter) };
     name = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["4aF92R"], obj);
-    const obj5 = importDefault(3969);
+    const obj5 = importDefault(3970);
   }
   let tmp10 = null;
   if (null != name) {
     obj = { style: tmp.guildNameContainer };
     obj1 = { guild: invite.guild, style: tmp.featureIcon, disableColor: true };
-    const items = [callback2(importDefault(9207), obj1), ];
+    const items = [callback2(importDefault(9099), obj1), ];
     obj2 = { style: tmp.guildNameText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: name };
-    items[1] = callback2(require(4126) /* Text */.Heading, obj2);
+    items[1] = callback2(require(4127) /* Text */.Heading, obj2);
     obj.children = items;
     tmp10 = callback3(View, obj);
   }
@@ -159,32 +159,32 @@ function InviteJoinContext(invite) {
     }
   }, items);
   const intl = invite(1212).intl;
-  let obj = invite(6977);
+  let obj = invite(5968);
   if (obj.isFriendInvite(invite)) {
     const intl7 = tmp4(1212).intl;
-    obj = { username: isGuildMember(3969).getFormattedName(invite.inviter) };
+    obj = { username: isGuildMember(3970).getFormattedName(invite.inviter) };
     let formatResult = intl7.format(tmp4(1212).t.Quj7HX, obj);
-    const obj11 = isGuildMember(3969);
+    const obj11 = isGuildMember(3970);
   } else {
     if (tmp4Result.isGroupDMInvite(invite)) {
       if (null != invite.channel) {
         if (null != invite.inviter) {
           const intl6 = invite(1212).intl;
-          obj = { username: isGuildMember(3969).getFormattedName(invite.inviter) };
+          obj = { username: isGuildMember(3970).getFormattedName(invite.inviter) };
           let formatResult1 = intl6.format(invite(1212).t.Lu4h18, obj);
-          const obj9 = isGuildMember(3969);
+          const obj9 = isGuildMember(3970);
         }
         formatResult = formatResult1;
       }
       const intl5 = invite(1212).intl;
       formatResult1 = intl5.string(invite(1212).t.OsdY8B);
     } else {
-      let obj2 = invite(6977);
+      let obj2 = invite(5968);
       if (obj2.isStreamInvite(invite)) {
         if (null != invite.target_user) {
           const intl4 = invite(1212).intl;
           const obj1 = {};
-          let obj6 = isGuildMember(3969);
+          let obj6 = isGuildMember(3970);
           obj1.username = obj6.getFormattedName(invite.target_user);
           formatResult = intl4.formatToPlainString(invite(1212).t.x2L32Q, obj1);
         }
@@ -208,13 +208,13 @@ function InviteJoinContext(invite) {
         if (tmp11) {
           const intl2 = invite(1212).intl;
           obj2 = {};
-          let obj4 = isGuildMember(3969);
+          let obj4 = isGuildMember(3970);
           obj2.username = obj4.getFormattedName(invite.inviter);
           formatResult = intl2.format(invite(1212).t.spU2mI, obj2);
         }
       }
     }
-    tmp4Result = tmp4(6977);
+    tmp4Result = tmp4(5968);
   }
   let obj3 = { style: tmp.inviteJoinContainer };
   let tmp33 = null;
@@ -226,11 +226,11 @@ function InviteJoinContext(invite) {
       obj4.children = callback2(isGuildMember(5085), obj5);
       tmp33 = callback2(View, obj4);
     }
-    obj13 = invite(6977);
+    obj13 = invite(5968);
   }
   const items1 = [tmp33, ];
   obj6 = { style: tmp.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: formatResult };
-  items1[1] = callback2(invite(4126).Text, obj6);
+  items1[1] = callback2(invite(4127).Text, obj6);
   obj3.children = items1;
   return closure_13(View, obj3);
 }
@@ -261,7 +261,7 @@ function InviteMemberCounts(invite) {
           const intl = require(1212) /* getSystemLocale */.intl;
           const obj2 = { membersOnline: tmp2.onlineCount };
           obj1.children = intl.format(require(1212) /* getSystemLocale */.t["LC+S+m"], obj2);
-          items[1] = callback2(require(4126) /* Text */.Text, obj1);
+          items[1] = callback2(require(4127) /* Text */.Text, obj1);
           obj.children = items;
           tmp14 = callback3(closure_14, obj);
         }
@@ -275,7 +275,7 @@ function InviteMemberCounts(invite) {
           const intl2 = require(1212) /* getSystemLocale */.intl;
           const obj6 = { count: tmp2.memberCount };
           obj5.children = intl2.format(require(1212) /* getSystemLocale */.t.zRl6XR, obj6);
-          items2[1] = callback2(require(4126) /* Text */.Text, obj5);
+          items2[1] = callback2(require(4127) /* Text */.Text, obj5);
           obj3.children = items2;
           tmp15 = callback3(closure_14, obj3);
         }
@@ -349,16 +349,16 @@ export default function InviteDetails(invite) {
   items2[2] = callback2(InviteHeader, obj2);
   const merged3 = Object.assign(obj);
   items2[3] = callback2(InviteMemberCounts, {});
-  items2[4] = callback2(importDefault(11781), { invite, style: tmp.rolesList });
+  items2[4] = callback2(importDefault(11757), { invite, style: tmp.rolesList });
   let tmp12 = null != guild_scheduled_event;
   if (tmp12) {
     const obj5 = { style: tmp.embedDetailsCard };
     const obj6 = { event: guild_scheduled_event };
-    const items3 = [callback2(invite(8405).GuildEventCardHeader, obj6), , ];
+    const items3 = [callback2(invite(8163).GuildEventCardHeader, obj6), , ];
     const obj7 = { event: guild_scheduled_event };
-    items3[1] = callback2(invite(8405).GuildEventCardMetaInfo, obj7);
+    items3[1] = callback2(invite(8163).GuildEventCardMetaInfo, obj7);
     const obj8 = { event: guild_scheduled_event };
-    items3[2] = callback2(invite(8405).GuildEventCardGuildInfo, obj8);
+    items3[2] = callback2(invite(8163).GuildEventCardGuildInfo, obj8);
     obj5.children = items3;
     tmp12 = callback3(View, obj5);
   }
@@ -372,7 +372,7 @@ export default function InviteDetails(invite) {
   let tmp24;
   if (null != userAvatarSource) {
     const obj9 = { source: userAvatarSource, variant: "entity" };
-    tmp24 = callback2(invite(4543).Button.Icon, obj9);
+    tmp24 = callback2(invite(4544).Button.Icon, obj9);
   }
   if (null != stateFromStores) {
     const intl = invite(1212).intl;
@@ -418,7 +418,7 @@ export default function InviteDetails(invite) {
     loading: first === constants2.ACCEPT,
     disabled: first === constants2.ACCEPT
   };
-  const items4 = [callback2(invite(4543).Button, obj12), ];
+  const items4 = [callback2(invite(4544).Button, obj12), ];
   obj13 = { variant: "secondary", size: "lg" };
   const intl4 = invite(1212).intl;
   const string = intl4.string;
@@ -444,9 +444,9 @@ export default function InviteDetails(invite) {
   };
   obj13.loading = first === constants2.DECLINE;
   obj13.disabled = first === constants2.DECLINE;
-  items4[1] = callback2(invite(4543).Button, obj13);
+  items4[1] = callback2(invite(4544).Button, obj13);
   obj11.children = items4;
-  items2[6] = callback3(invite(4965).ButtonGroup, obj11);
+  items2[6] = callback3(invite(4966).ButtonGroup, obj11);
   obj.children = items2;
   return callback3(closure_14, obj);
 };

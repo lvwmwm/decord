@@ -1,10 +1,10 @@
-// Module ID: 9763
-// Function ID: 75840
+// Module ID: 9687
+// Function ID: 75435
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 6855, 1194, 9764, 5610, 664, 566, 8717, 1327, 8724, 22, 8725, 7975, 9765, 9766, 2]
+// Dependencies: [57, 31, 5630, 1194, 9688, 5610, 664, 566, 8605, 1327, 8612, 22, 8613, 7923, 9689, 9690, 2]
 // Exports: useRecommendationsForApplicationIds, useRecommendationsForSingleUser, useWishlistRecommendationsForSingleUser
 
-// Module 9763 (_createForOfIteratorHelperLoose)
+// Module 9687 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -387,15 +387,15 @@ export const useWishlistRecommendationsForSingleUser = function useWishlistRecom
   let wishlistAndRecommendations;
   ({ userId, numItems, source } = arg0);
   if (source === undefined) {
-    source = require(8717) /* _createForOfIteratorHelperLoose */.WishlistFetchSource.USER_PROFILE;
+    source = require(8605) /* _createForOfIteratorHelperLoose */.WishlistFetchSource.USER_PROFILE;
   }
   const tmp3 = useMemoizedUserIdAndWishlistId(userId);
-  let obj = { userIdsAndWishlistIds: tmp3.userIdsAndWishlistIds, applicationIds: require(9765) /* useWishlistApplicationIds */.useWishlistApplicationIds(userId), numItems, source };
+  let obj = { userIdsAndWishlistIds: tmp3.userIdsAndWishlistIds, applicationIds: require(9689) /* useWishlistApplicationIds */.useWishlistApplicationIds(userId), numItems, source };
   const tmp4 = useWishlistRecommendationsWithWishlists(obj);
   const skusToUserAndReason = tmp4.skusToUserAndReason;
   ({ wishlistAndRecommendations, status } = tmp4);
-  const obj2 = require(9765) /* useWishlistApplicationIds */;
-  const wishlistSkuFilter = require(9766) /* useWishlistSkuFilter */.useWishlistSkuFilter({ wishlistAndRecommendations, skusToUserAndReason, userId, numItems });
+  const obj2 = require(9689) /* useWishlistApplicationIds */;
+  const wishlistSkuFilter = require(9690) /* useWishlistSkuFilter */.useWishlistSkuFilter({ wishlistAndRecommendations, skusToUserAndReason, userId, numItems });
   obj = { wishlistAndRecommendations: wishlistSkuFilter.slicedWishlistAndRecommendations, skusToUserAndReason, status, defaultWishlistId: tmp3.defaultWishlistId, totalUnownedWishlistItemCount: wishlistSkuFilter.totalUnownedWishlistItemCount };
   return obj;
 };
@@ -457,10 +457,10 @@ export const useRecommendationsForSingleUser = function useRecommendationsForSin
   ({ userId, numItems } = source);
   let USER_PROFILE = source.source;
   if (USER_PROFILE === undefined) {
-    USER_PROFILE = numItems(8717).WishlistFetchSource.USER_PROFILE;
+    USER_PROFILE = numItems(8605).WishlistFetchSource.USER_PROFILE;
   }
   let recommendations;
-  let obj = { userIdsAndWishlistIds: useMemoizedUserIdAndWishlistId(userId).userIdsAndWishlistIds, applicationIds: numItems(9765).useWishlistApplicationIds(userId), numItems, source: USER_PROFILE };
+  let obj = { userIdsAndWishlistIds: useMemoizedUserIdAndWishlistId(userId).userIdsAndWishlistIds, applicationIds: numItems(9689).useWishlistApplicationIds(userId), numItems, source: USER_PROFILE };
   const tmp3 = useWishlistRecommendationsWithWishlists(obj);
   recommendations = tmp3.recommendations;
   obj = { recommendations: React.useMemo(() => recommendations.slice(0, numItems), items), skusToUserAndReason, status };

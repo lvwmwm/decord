@@ -1,9 +1,9 @@
-// Module ID: 5961
-// Function ID: 49907
+// Module ID: 6881
+// Function ID: 59557
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5961 (metadata)
+// Module 6881 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CoinBagSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/44eb54db930beb8d731d739454ef78b7e4869dd8dc3f40e0402c0be0e50f6450.png";

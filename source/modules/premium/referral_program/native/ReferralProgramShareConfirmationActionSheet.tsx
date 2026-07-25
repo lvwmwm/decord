@@ -1,10 +1,10 @@
-// Module ID: 12436
-// Function ID: 96546
+// Module ID: 12413
+// Function ID: 96357
 // Name: SharedUser
-// Dependencies: [27, 653, 33, 4130, 689, 3969, 6690, 1273, 4126, 1212, 4543, 4629, 4098, 4140, 1920, 5187, 5186, 4541, 5807, 2]
+// Dependencies: [27, 653, 33, 4131, 689, 3970, 6159, 1273, 4127, 1212, 4544, 4630, 4099, 4141, 1921, 5187, 5186, 4542, 6727, 2]
 // Exports: default
 
-// Module 12436 (SharedUser)
+// Module 12413 (SharedUser)
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -16,9 +16,9 @@ let closure_7;
 function SharedUser(user) {
   user = user.user;
   const tmp = callback3();
-  let obj = importDefault(3969);
+  let obj = importDefault(3970);
   const name = obj.getName(user);
-  const tmp3 = user.trialCreationResult === user(6690).CreateReferralStatus.FAIL;
+  const tmp3 = user.trialCreationResult === user(6159).CreateReferralStatus.FAIL;
   obj = { style: tmp.recipientRow };
   obj = {};
   const items = [tmp.avatarContainer, ];
@@ -35,31 +35,31 @@ function SharedUser(user) {
   if (tmp3) {
     const obj1 = {};
     const obj2 = { variant: "text-md/medium", color: "text-muted", style: tmp.recipientDisplayName, children: name };
-    const items2 = [callback(user(4126).Text, obj2), ];
+    const items2 = [callback(user(4127).Text, obj2), ];
     const obj3 = { variant: "text-md/medium", color: "text-muted" };
     const intl = user(1212).intl;
     const obj4 = { userName: name };
     obj3.children = intl.format(user(1212).t.RO3T4B, obj4);
-    items2[1] = callback(user(4126).Text, obj3);
+    items2[1] = callback(user(4127).Text, obj3);
     obj1.children = items2;
     let tmp10 = callback2(closure_6, obj1);
   } else {
     const obj5 = { variant: "text-md/medium", color: "text-strong", style: tmp.recipientDisplayName, children: name };
-    tmp10 = callback(user(4126).Text, obj5);
+    tmp10 = callback(user(4127).Text, obj5);
   }
   items1[1] = tmp10;
   const obj6 = { variant: "secondary", size: "sm" };
   const intl2 = user(1212).intl;
   obj6.text = intl2.string(user(1212).t["g33r/P"]);
   const obj7 = { size: "xs", color: importDefault(689).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-  obj6.icon = callback(user(4629).ChatIcon, obj7);
+  obj6.icon = callback(user(4630).ChatIcon, obj7);
   obj6.onPress = function onPress() {
     let obj = outer1_1(outer1_2[12]);
     obj.hideActionSheet();
     obj = { recipientIds: user.id };
     outer1_1(outer1_2[13]).openPrivateChannel(obj);
   };
-  items1[2] = callback(user(4543).Button, obj6);
+  items1[2] = callback(user(4544).Button, obj6);
   obj.children = items1;
   return callback2(View, obj);
 }
@@ -95,21 +95,21 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   }
   const intl3 = require(1212) /* getSystemLocale */.intl;
   let obj = {};
-  let obj1 = importDefault(1920);
+  let obj1 = importDefault(1921);
   obj.helpdeskArticle = obj1.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
   obj = { startExpanded: true, contentStyles: tmp.content, header: callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null }) };
   obj = {};
-  obj1 = { style: tmp.headerAsset, children: callback(require(5807) /* AccountAgeTier10LargeBadge */.FistBumpSpotIllustration, {}) };
+  obj1 = { style: tmp.headerAsset, children: callback(require(6727) /* AccountAgeTier10LargeBadge */.FistBumpSpotIllustration, {}) };
   const items = [callback(View, obj1), , , ];
   const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };
-  items[1] = callback(require(4126) /* Text */.Text, obj2);
+  items[1] = callback(require(4127) /* Text */.Text, obj2);
   const obj3 = { variant: "text-md/medium", color: "text-default", style: tmp.subheader, children: intl3.format(require(1212) /* getSystemLocale */.t.AwGSWl, obj) };
-  items[2] = callback(require(4126) /* Text */.Text, obj3);
+  items[2] = callback(require(4127) /* Text */.Text, obj3);
   const obj4 = { style: tmp.recipientContainer };
   arr = Array.from(trialCreationResult.selectedUsers);
   obj4.children = arr.map((id) => outer1_5(outer1_9, { user: id, trialCreationResult: trialCreationResult.get(id.id) }, id.id));
   items[3] = callback(View, obj4);
   obj.children = items;
-  obj.children = callback2(require(4541) /* Stack */.Stack, obj);
+  obj.children = callback2(require(4542) /* Stack */.Stack, obj);
   return callback(require(5187) /* Background */.BottomSheet, obj);
 };

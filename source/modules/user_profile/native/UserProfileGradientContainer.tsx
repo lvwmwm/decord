@@ -1,8 +1,8 @@
-// Module ID: 11936
-// Function ID: 92404
-// Dependencies: [31, 33, 8552, 4554, 2]
+// Module ID: 11912
+// Function ID: 92209
+// Dependencies: [31, 33, 8312, 4555, 2]
 
-// Module 11936
+// Module 11912
 import { jsx } from "jsxProd";
 import importAllResult from "result";
 
@@ -14,8 +14,8 @@ const memoResult = require("result").memo((arg0) => {
   let primaryColor;
   let secondaryColor;
   ({ primaryColor, secondaryColor, fallbackBackground, containerStyle, children } = arg0);
-  const colors = require(8552) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, fallbackBackground);
-  return jsx(importDefault(4554), { colors, style, children });
+  const colors = require(8312) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, fallbackBackground);
+  return jsx(importDefault(4555), { colors, style, children });
 });
 const result = require("useUserProfileGradientColors").fileFinishedImporting("modules/user_profile/native/UserProfileGradientContainer.tsx");
 

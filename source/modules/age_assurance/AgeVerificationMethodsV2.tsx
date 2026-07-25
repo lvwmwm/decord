@@ -1,16 +1,20 @@
-// Module ID: 7612
-// Function ID: 60627
+// Module ID: 6722
+// Function ID: 59298
 // Name: _fetchAgeVerificationMethodsV
-// Dependencies: [5, 653, 507, 2]
+// Dependencies: [5, 6691, 653, 1868, 507, 2]
 // Exports: fetchAgeVerificationMethodsV2
 
-// Module 7612 (_fetchAgeVerificationMethodsV)
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 6722 (_fetchAgeVerificationMethodsV)
+import closure_2 from "set";
+import set from "set";
 import { Endpoints } from "ME";
+import set from "ME";
 
+let VerificationMethod;
+let VerificationVendorName;
 const require = arg1;
 async function _fetchAgeVerificationMethodsV() {
-  const HTTP = outer2_0(outer2_1[2]).HTTP;
+  const HTTP = outer2_0(outer2_1[4]).HTTP;
   const methods = yield HTTP.get({ url: outer2_3.AGE_VERIFICATION_METHODS_V2, rejectWithError: true }).body.methods;
   return methods.map((method) => {
     const obj = { method: method.method, vendor: method.vendor, title: method.title, description: method.description };
@@ -23,8 +27,13 @@ async function _fetchAgeVerificationMethodsV() {
     return obj;
   });
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/age_assurance/AgeVerificationMethodsV2.tsx");
+({ VerificationMethod, VerificationVendorName } = set);
+let obj = { [arg1(1868).AgeAssuranceMethod.FACIAL_AGE_ESTIMATION]: VerificationMethod.FACIAL_AGE_ESTIMATION, [arg1(1868).AgeAssuranceMethod.ID_SELFIE_MATCH]: VerificationMethod.ID_VERIFICATION };
+obj = { [arg1(1868).AgeAssuranceVendor.K_ID]: VerificationVendorName.K_ID, [arg1(1868).AgeAssuranceVendor.INCODE]: VerificationVendorName.INCODE, [arg1(1868).AgeAssuranceVendor.GOOGLE_WALLET]: VerificationVendorName.GOOGLE_WALLET };
+const result = set.fileFinishedImporting("modules/age_assurance/AgeVerificationMethodsV2.tsx");
 
+export const V2_METHOD_TO_VERIFICATION_METHOD = obj;
+export const V2_VENDOR_TO_VERIFICATION_VENDOR = obj;
 export const fetchAgeVerificationMethodsV2 = function fetchAgeVerificationMethodsV2() {
   return _fetchAgeVerificationMethodsV(...arguments);
 };

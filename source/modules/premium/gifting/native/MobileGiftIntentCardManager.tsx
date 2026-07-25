@@ -1,9 +1,9 @@
-// Module ID: 16203
-// Function ID: 125591
+// Module ID: 16214
+// Function ID: 125759
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 6901, 1348, 4349, 1906, 7847, 1851, 669, 3803, 7109, 8604, 480, 4015, 7850, 8860, 16204, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5892, 1348, 4350, 1907, 7794, 1852, 669, 3804, 6127, 8364, 480, 4016, 7797, 8748, 16215, 2]
 
-// Module 16203 (_isNativeReflectConstruct)
+// Module 16214 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import isThrottled from "isThrottled";

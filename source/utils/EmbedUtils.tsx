@@ -1,10 +1,10 @@
-// Module ID: 4464
-// Function ID: 39381
+// Module ID: 4465
+// Function ID: 39392
 // Name: validateSize
-// Dependencies: [653, 4465, 21, 1360, 22, 3712, 665, 4353, 2]
+// Dependencies: [653, 4466, 21, 1360, 22, 3713, 665, 4354, 2]
 // Exports: canEmbedLinks, getEffectiveVideoProvider, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 4464 (validateSize)
+// Module 4465 (validateSize)
 import ME from "ME";
 import { EMBED_TYPES_WITH_PARSEABLE_FIELDS as closure_6 } from "MessageEmbedTypes";
 
@@ -81,8 +81,8 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   if (null != footer.timestamp) {
     const _Date = Date;
     const date = new Date(footer.timestamp);
-    obj.timestamp = importDefault(3712)(date);
-    const tmp5 = importDefault(3712);
+    obj.timestamp = importDefault(3713)(date);
+    const tmp5 = importDefault(3713);
   }
   if (null != footer.color) {
     obj.color = require(665) /* pad2 */.int2hsl(footer.color, false);
@@ -168,13 +168,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const transformComponentsResult = require(4353) /* _createForOfIteratorHelperLoose */.transformComponents(footer.components);
+    const transformComponentsResult = require(4354) /* _createForOfIteratorHelperLoose */.transformComponents(footer.components);
     let tmp38;
     if (transformComponentsResult.length > 0) {
       tmp38 = transformComponentsResult;
     }
     obj.components = tmp38;
-    const obj11 = require(4353) /* _createForOfIteratorHelperLoose */;
+    const obj11 = require(4354) /* _createForOfIteratorHelperLoose */;
   }
   return obj;
 };

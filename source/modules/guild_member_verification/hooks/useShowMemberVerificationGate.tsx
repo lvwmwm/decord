@@ -1,10 +1,10 @@
-// Module ID: 4619
-// Function ID: 40288
+// Module ID: 4620
+// Function ID: 40300
 // Name: shouldShowMembershipVerificationGate
-// Dependencies: [1917, 1838, 1849, 4620, 566, 2]
+// Dependencies: [1918, 1838, 1850, 4621, 566, 2]
 // Exports: useShowMemberVerificationGate
 
-// Module 4619 (shouldShowMembershipVerificationGate)
+// Module 4620 (shouldShowMembershipVerificationGate)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";
@@ -36,8 +36,8 @@ function shouldShowMembershipVerificationGate(guildId, items) {
       const tmp9 = null != isPending && isPending;
     }
     if (flag) {
-      flag = require(4620) /* isValidFormResponse */.guildHasVerificationGate(guild);
-      const obj4 = require(4620) /* isValidFormResponse */;
+      flag = require(4621) /* isValidFormResponse */.guildHasVerificationGate(guild);
+      const obj4 = require(4621) /* isValidFormResponse */;
     }
     return flag;
   }

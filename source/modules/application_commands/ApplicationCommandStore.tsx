@@ -1,9 +1,9 @@
-// Module ID: 7021
-// Function ID: 56359
+// Module ID: 6039
+// Function ID: 54171
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 5659, 1906, 6753, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 5846, 1907, 5674, 566, 686, 2]
 
-// Module 7021 (_isNativeReflectConstruct)
+// Module 6039 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -90,8 +90,8 @@ function handleSetActiveCommand(channelId) {
     tmp.optionStates = obj;
     if (null != command) {
       obj = { command, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source };
-      obj(6753).trackCommandSelected(obj);
-      const obj2 = obj(6753);
+      obj(5674).trackCommandSelected(obj);
+      const obj2 = obj(5674);
     }
     return true;
   }

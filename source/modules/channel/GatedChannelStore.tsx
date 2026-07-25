@@ -1,9 +1,9 @@
-// Module ID: 1908
-// Function ID: 21475
+// Module ID: 1909
+// Function ID: 21486
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1909, 1352, 1911, 1348, 1917, 1910, 1838, 1849, 653, 3749, 3750, 3751, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1910, 1352, 1912, 1348, 1918, 1911, 1838, 1850, 653, 3750, 3751, 3752, 566, 686, 2]
 
-// Module 1908 (_isNativeReflectConstruct)
+// Module 1909 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
 import isChannelAccessDeniedBy from "isChannelAccessDeniedBy";
@@ -116,7 +116,7 @@ function isSubscriptionGated(role) {
   let isPreviewingRoles;
   role = role.role;
   ({ guildId, isPreviewingRoles } = role);
-  const tmp = !require(3749) /* isSubscriptionRole */.isSubscriptionRole(role);
+  const tmp = !require(3750) /* isSubscriptionRole */.isSubscriptionRole(role);
   let tmp2 = !tmp;
   if (!tmp) {
     let tmp4 = !tmp3;
@@ -125,7 +125,7 @@ function isSubscriptionGated(role) {
       if (null != role) {
         tmp8 = role;
       }
-      const tmp9 = !require(3749) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(tmp8);
+      const tmp9 = !require(3750) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(tmp8);
       let tmp10 = !tmp9;
       if (tmp9) {
         let flag = false;
@@ -145,7 +145,7 @@ function isSubscriptionGated(role) {
         tmp10 = flag;
       }
       tmp4 = tmp10;
-      const obj2 = require(3749) /* isSubscriptionRole */;
+      const obj2 = require(3750) /* isSubscriptionRole */;
     }
     tmp2 = tmp4;
   }
@@ -171,7 +171,7 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
       if (isSubscriptionGated(obj)) {
         let tmp6 = require;
         let tmp7 = dependencyMap;
-        let obj2 = require(3750) /* isChannelAccessDeniedBy */;
+        let obj2 = require(3751) /* isChannelAccessDeniedBy */;
         if (obj2.isChannelAccessGrantedBy(channel, channel.permissionOverwrites[tmp3])) {
           break;
         }
@@ -193,7 +193,7 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
           if (isSubscriptionGated(obj)) {
             let tmp13 = require;
             let tmp14 = dependencyMap;
-            let obj5 = require(3750) /* isChannelAccessDeniedBy */;
+            let obj5 = require(3751) /* isChannelAccessDeniedBy */;
             if (obj5.hasViewChannelPermission(value)) {
               break;
             }

@@ -1,10 +1,10 @@
-// Module ID: 4643
-// Function ID: 40336
+// Module ID: 4644
+// Function ID: 40348
 // Name: ForumLockIcon
-// Dependencies: [31, 33, 689, 3833, 4626, 2]
+// Dependencies: [31, 33, 689, 3834, 4627, 2]
 // Exports: ForumLockIcon
 
-// Module 4643 (ForumLockIcon)
+// Module 4644 (ForumLockIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ForumLockIcon = function ForumLockIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4626) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4627) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4626) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4627) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

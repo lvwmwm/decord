@@ -1,10 +1,10 @@
-// Module ID: 8810
-// Function ID: 69537
+// Module ID: 8698
+// Function ID: 69016
 // Name: GiftButton
-// Dependencies: [57, 31, 27, 6663, 6790, 655, 653, 8811, 1851, 33, 4130, 689, 7533, 8812, 4098, 8775, 8813, 1212, 8806, 8805, 8754, 1456, 5462, 4337, 11858, 1934, 6773, 11862, 656, 11863, 9804, 8749, 4126, 4544, 1876, 4066, 3976, 3834, 8708, 566, 8574, 3776, 6786, 6785, 8763, 9810, 11865, 11866, 11867, 7128, 11869, 1557, 478, 4554, 8063, 4543, 5482, 1920, 11870, 2]
+// Dependencies: [57, 31, 27, 6164, 5786, 655, 653, 8699, 1852, 33, 4131, 689, 6625, 8700, 4099, 8663, 8701, 1212, 8694, 8693, 8642, 1456, 5462, 4338, 11834, 1935, 5769, 11838, 656, 11839, 9728, 8637, 4127, 4545, 1877, 4067, 3977, 3835, 8596, 566, 8334, 3777, 5782, 5781, 8651, 9734, 11841, 11842, 11843, 6206, 11845, 1557, 478, 4555, 8463, 4544, 5482, 1921, 11846, 2]
 // Exports: default
 
-// Module 8810 (GiftButton)
+// Module 8698 (GiftButton)
 import wrapURL from "wrapURL";
 import OrbsIcon from "OrbsIcon";
 import { View } from "screens";
@@ -208,14 +208,14 @@ function PurchaseDisclaimer(arg0) {
   let product;
   ({ product, buyButtonLabel } = arg0);
   let obj = { style: _createForOfIteratorHelperLoose().disclaimer, variant: "text-xxs/normal", color: "interactive-text-active" };
-  let formatResult = product.type !== require(1876) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
+  let formatResult = product.type !== require(1877) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
   if (formatResult) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj = { buyButtonLabel, paidServiceTermURL: constants.PAID_TERMS };
     formatResult = intl.format(require(1212) /* getSystemLocale */.t.iIglwJ, obj);
   }
   obj.children = formatResult;
-  return closure_16(require(4126) /* Text */.Text, obj);
+  return closure_16(require(4127) /* Text */.Text, obj);
 }
 ({ EXTERNAL_PRODUCT_SKU_IDS: closure_8, ShopCtaEnum: closure_9 } = items);
 ({ HelpdeskArticles: closure_10, MarketingURLs: closure_11, UserSettingsSections: closure_12 } = ME);

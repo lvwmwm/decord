@@ -1,10 +1,10 @@
-// Module ID: 15297
-// Function ID: 116693
+// Module ID: 15307
+// Function ID: 116821
 // Name: useNotificationPermissionPrompt
-// Dependencies: [31, 1341, 4808, 1342, 11478, 566, 1344, 11487, 15298, 15300, 2]
+// Dependencies: [31, 1341, 4809, 1342, 11441, 566, 1344, 11450, 15308, 15310, 2]
 // Exports: default
 
-// Module 15297 (useNotificationPermissionPrompt)
+// Module 15307 (useNotificationPermissionPrompt)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ export default function useNotificationPermissionPrompt() {
     }
   }, items2);
   const obj2 = stateFromStores(566);
-  const guildOpenNudge = stateFromStores(15298).useGuildOpenNudge();
-  const obj3 = stateFromStores(15298);
-  const postCallDisconnectNudge = stateFromStores(15300).usePostCallDisconnectNudge();
+  const guildOpenNudge = stateFromStores(15308).useGuildOpenNudge();
+  const obj3 = stateFromStores(15308);
+  const postCallDisconnectNudge = stateFromStores(15310).usePostCallDisconnectNudge();
 };

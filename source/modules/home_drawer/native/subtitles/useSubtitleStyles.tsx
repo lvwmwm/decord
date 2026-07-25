@@ -1,9 +1,9 @@
-// Module ID: 14902
-// Function ID: 113646
+// Module ID: 14913
+// Function ID: 113774
 // Name: styles
-// Dependencies: [4130, 2]
+// Dependencies: [4131, 2]
 
-// Module 14902 (styles)
+// Module 14913 (styles)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const styles = _createForOfIteratorHelperLoose.createStyles({ subtitleRow: { flexDirection: "row", alignItems: "center" }, subtitleText: { flexShrink: 1 }, channelIcon: { marginRight: 2 }, unreadChannelIcon: { marginLeft: 2, marginRight: 2 } });

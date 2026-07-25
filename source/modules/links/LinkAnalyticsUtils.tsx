@@ -1,9 +1,9 @@
-// Module ID: 8385
-// Function ID: 66316
+// Module ID: 8143
+// Function ID: 64967
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [653, 8386, 1443, 4321, 675, 2]
+// Dependencies: [653, 8144, 1443, 4322, 675, 2]
 
-// Module 8385 (_createForOfIteratorHelperLoose)
+// Module 8143 (_createForOfIteratorHelperLoose)
 import { AnalyticEvents } from "ME";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -142,7 +142,7 @@ const items = [
     if (null == safeParseWithQueryResult) {
       return null;
     } else {
-      const tryParseChannelPathResult = require(4321) /* canViewChannel */.tryParseChannelPath(safeParseWithQueryResult.path);
+      const tryParseChannelPathResult = require(4322) /* canViewChannel */.tryParseChannelPath(safeParseWithQueryResult.path);
       let tmp5 = null;
       if (null != tryParseChannelPathResult) {
         obj = {};

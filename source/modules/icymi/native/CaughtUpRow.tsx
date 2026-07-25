@@ -1,23 +1,23 @@
-// Module ID: 15289
-// Function ID: 116619
+// Module ID: 15299
+// Function ID: 116747
 // Name: ExploreServersRow
-// Dependencies: [5, 57, 31, 27, 33, 3991, 4126, 15226, 689, 8365, 15243, 15239, 3982, 4131, 3834, 11960, 1212, 4543, 15265, 4554, 668, 666, 2]
+// Dependencies: [5, 57, 31, 27, 33, 3992, 4127, 15236, 689, 8123, 15253, 15249, 3983, 4132, 3835, 11936, 1212, 4544, 15275, 4555, 668, 666, 2]
 // Exports: default
 
-// Module 15289 (ExploreServersRow)
-import module_3991 from "module_3991";
+// Module 15299 (ExploreServersRow)
+import module_3992 from "module_3992";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createICYMIStyles from "createICYMIStyles";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let closure_7;
 let closure_8;
 const require = arg1;
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = require("module_3991").createAnimatedComponent(require("Text").Text);
+let closure_9 = require("module_3992").createAnimatedComponent(require("Text").Text);
 let closure_10 = createICYMIStyles.createICYMIStyles((margin) => {
   let obj = {};
   obj = { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: importDefault(689).space.PX_32 };
@@ -44,7 +44,7 @@ let result = require("result").fileFinishedImporting("modules/icymi/native/Caugh
 export default function ExploreServersRow(visible) {
   visible = visible.visible;
   let tmp = callback5();
-  let obj = visible(3991);
+  let obj = visible(3992);
   const sharedValue = obj.useSharedValue(false);
   let items = [visible, sharedValue];
   const effect = React.useEffect(() => {
@@ -75,7 +75,7 @@ export default function ExploreServersRow(visible) {
       rootNavigationRef.navigate("tabs", obj);
     }
   }, []);
-  let obj1 = visible(3991);
+  let obj1 = visible(3992);
   class E {
     constructor() {
       obj = {};
@@ -130,12 +130,12 @@ export default function ExploreServersRow(visible) {
       return obj;
     }
   }
-  obj = { visibleSharedValue: sharedValue, withTiming: visible(4131).withTiming, Easing: visible(3991).Easing };
+  obj = { visibleSharedValue: sharedValue, withTiming: visible(4132).withTiming, Easing: visible(3992).Easing };
   E.__closure = obj;
   E.__workletHash = 6575188656069;
   E.__initData = closure_11;
   const animatedStyle = obj1.useAnimatedStyle(E);
-  let obj3 = visible(3991);
+  let obj3 = visible(3992);
   const fn = function b() {
     let obj = {};
     obj = {};
@@ -159,12 +159,12 @@ export default function ExploreServersRow(visible) {
     obj.transform = items;
     return obj;
   };
-  obj = { visibleSharedValue: sharedValue, withDelay: visible(3991).withDelay, withSequence: visible(3991).withSequence, withTiming: visible(4131).withTiming, Easing: visible(3991).Easing };
+  obj = { visibleSharedValue: sharedValue, withDelay: visible(3992).withDelay, withSequence: visible(3992).withSequence, withTiming: visible(4132).withTiming, Easing: visible(3992).Easing };
   fn.__closure = obj;
   fn.__workletHash = 469742746264;
   fn.__initData = closure_12;
   const animatedStyle1 = obj3.useAnimatedStyle(fn);
-  let obj5 = visible(3991);
+  let obj5 = visible(3992);
   const fn2 = function x() {
     let obj = {};
     obj = {};
@@ -188,12 +188,12 @@ export default function ExploreServersRow(visible) {
     obj.transform = items;
     return obj;
   };
-  obj1 = { visibleSharedValue: sharedValue, withDelay: visible(3991).withDelay, withSequence: visible(3991).withSequence, withTiming: visible(4131).withTiming, Easing: visible(3991).Easing };
+  obj1 = { visibleSharedValue: sharedValue, withDelay: visible(3992).withDelay, withSequence: visible(3992).withSequence, withTiming: visible(4132).withTiming, Easing: visible(3992).Easing };
   fn2.__closure = obj1;
   fn2.__workletHash = 14933607481025;
   fn2.__initData = closure_13;
   const animatedStyle2 = obj5.useAnimatedStyle(fn2);
-  let obj7 = visible(3834);
+  let obj7 = visible(3835);
   const token = obj7.useToken(sharedValue(689).colors.BACKGROUND_BRAND);
   let obj2 = {};
   obj3 = { style: tmp.container };
@@ -201,8 +201,8 @@ export default function ExploreServersRow(visible) {
   obj5 = { style: items1 };
   items1 = [tmp.iconWrapper, animatedStyle];
   const obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
-  obj5.children = callback3(visible(11960).FlashIcon, obj6);
-  const items2 = [callback3(sharedValue(3991).View, obj5), , ];
+  obj5.children = callback3(visible(11936).FlashIcon, obj6);
+  const items2 = [callback3(sharedValue(3992).View, obj5), , ];
   obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
   const items3 = [tmp.headerText, animatedStyle1];
   obj7.style = items3;
@@ -223,18 +223,18 @@ export default function ExploreServersRow(visible) {
   obj10.text = intl3.string(visible(1212).t.lNJYV8);
   obj10.onPress = callback;
   obj10.loading = tmp4[0];
-  const items6 = [callback3(visible(4543).Button, obj10), ];
+  const items6 = [callback3(visible(4544).Button, obj10), ];
   const obj11 = { size: "md", text: null, grow: true, variant: "secondary" };
   const intl4 = visible(1212).intl;
   obj11.text = intl4.string(visible(1212).t.AGrUbj);
   obj11.onPress = callback1;
-  items6[1] = callback3(visible(4543).Button, obj11);
+  items6[1] = callback3(visible(4544).Button, obj11);
   obj9.children = items6;
   items5[1] = callback4(View, obj9);
   obj3.children = items5;
-  const items7 = [callback4(View, obj3), callback3(visible(15265).Separator, {}), ];
+  const items7 = [callback4(View, obj3), callback3(visible(15275).Separator, {}), ];
   const obj12 = { style: tmp.gradient, start: visible(668).VerticalGradient.START, end: visible(668).VerticalGradient.END };
-  const tmp12 = sharedValue(4554);
+  const tmp12 = sharedValue(4555);
   const obj20 = sharedValue(666)(token);
   const items8 = [sharedValue(666)(token).alpha(0.2).hex(), ];
   const alphaResult = sharedValue(666)(token).alpha(0.2);

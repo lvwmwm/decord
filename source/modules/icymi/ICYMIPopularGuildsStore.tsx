@@ -1,9 +1,9 @@
-// Module ID: 15257
-// Function ID: 116222
+// Module ID: 15267
+// Function ID: 116350
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 1387, 5736, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1838, 1387, 6632, 566, 686, 2]
 
-// Module 15257 (_isNativeReflectConstruct)
+// Module 15267 (_isNativeReflectConstruct)
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields";
 import _startLurking from "_startLurking";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

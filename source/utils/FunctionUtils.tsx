@@ -1,10 +1,10 @@
-// Module ID: 1916
-// Function ID: 21598
+// Module ID: 1917
+// Function ID: 21609
 // Name: areArraysShallowlyEqual
 // Dependencies: [2]
 // Exports: cachedFunction, clearObject, isPlainObjectEmpty
 
-// Module 1916 (areArraysShallowlyEqual)
+// Module 1917 (areArraysShallowlyEqual)
 function areArraysShallowlyEqual(arg0, arg1) {
   if (arg0 === arg1) {
     return true;

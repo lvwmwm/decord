@@ -1,10 +1,10 @@
-// Module ID: 6992
-// Function ID: 55942
+// Module ID: 5984
+// Function ID: 53250
 // Name: _getDeviceState
-// Dependencies: [5, 27, 3, 6993, 2]
+// Dependencies: [5, 27, 3, 5985, 2]
 // Exports: getDeviceState
 
-// Module 6992 (_getDeviceState)
+// Module 5984 (_getDeviceState)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 import importDefaultResult from "ThermalState";

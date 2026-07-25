@@ -1,10 +1,10 @@
-// Module ID: 7748
-// Function ID: 61546
+// Module ID: 7694
+// Function ID: 61514
 // Name: DoubleTapErrorToastIcon
-// Dependencies: [31, 27, 1852, 33, 4130, 689, 7749, 3831, 4126, 1212, 2]
+// Dependencies: [31, 27, 1853, 33, 4131, 689, 7695, 3832, 4127, 1212, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7748 (DoubleTapErrorToastIcon)
+// Module 7694 (DoubleTapErrorToastIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import { EmojiDisabledReasons } from "set";
@@ -15,7 +15,7 @@ const require = arg1;
 function DoubleTapErrorToastIcon() {
   let obj = { style: _createForOfIteratorHelperLoose().icon, "aria-hidden": true };
   obj = { color: importDefault(689).colors.WHITE, size: "xs" };
-  obj.children = jsx(require(7749) /* XSmallBoldIcon */.XSmallBoldIcon, { color: importDefault(689).colors.WHITE, size: "xs" });
+  obj.children = jsx(require(7695) /* XSmallBoldIcon */.XSmallBoldIcon, { color: importDefault(689).colors.WHITE, size: "xs" });
   return <View color={importDefault(689).colors.WHITE} size="xs" />;
 }
 _createForOfIteratorHelperLoose = {};
@@ -28,7 +28,7 @@ export const showDoubleTapErrorToast = function showDoubleTapErrorToast(arg0) {
   let importDefault;
   let require;
   ({ emojiName: require, reason: importDefault } = arg0);
-  let obj = importDefault(3831);
+  let obj = importDefault(3832);
   obj = {
     key: "EMOJI_DOUBLE_TAP_ERROR",
     icon() {

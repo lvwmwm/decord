@@ -1,9 +1,9 @@
-// Module ID: 4535
-// Function ID: 39825
+// Module ID: 4536
+// Function ID: 39836
 // Name: BLUR_EFFECT_NAMES
-// Dependencies: [4110, 4536, 4537, 2]
+// Dependencies: [4111, 4537, 4538, 2]
 
-// Module 4535 (BLUR_EFFECT_NAMES)
+// Module 4536 (BLUR_EFFECT_NAMES)
 import getSystemVersion from "getSystemVersion";
 import importDefaultResult from "map";
 

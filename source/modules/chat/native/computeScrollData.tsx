@@ -1,10 +1,10 @@
-// Module ID: 9475
-// Function ID: 73680
+// Module ID: 9396
+// Function ID: 73267
 // Name: findMessageRowIndex
-// Dependencies: [4122, 7711, 9476, 4062, 2]
+// Dependencies: [4123, 7655, 9397, 4063, 2]
 // Exports: default
 
-// Module 9475 (findMessageRowIndex)
+// Module 9396 (findMessageRowIndex)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import Changeset from "Changeset";
 
@@ -47,13 +47,13 @@ export default function computeScrollData(shouldInitialScroll) {
         return -1 !== findIndexResult ? findIndexResult : undefined;
       })(rows);
       if (null != tmp2) {
-        let obj = { type: require(9476) /* ChatScrollPosition */.ChatScrollType.SCROLL, index: tmp2 };
+        let obj = { type: require(9397) /* ChatScrollPosition */.ChatScrollType.SCROLL, index: tmp2 };
         if (animated) {
           animated = !_isNativeReflectConstruct.useReducedMotion;
         }
         obj.animate = animated;
         obj.highlight = false;
-        obj.position = require(9476) /* ChatScrollPosition */.ChatScrollPosition.TOP;
+        obj.position = require(9397) /* ChatScrollPosition */.ChatScrollPosition.TOP;
         return obj;
       }
     }
@@ -62,15 +62,15 @@ export default function computeScrollData(shouldInitialScroll) {
   if (null != scrollToMessageId) {
     const tmp5 = findMessageRowIndex(rows, scrollToMessageId);
     if (null != tmp5) {
-      obj = { type: require(9476) /* ChatScrollPosition */.ChatScrollType.SCROLL, index: tmp5 };
+      obj = { type: require(9397) /* ChatScrollPosition */.ChatScrollType.SCROLL, index: tmp5 };
       let tmp9 = !_isNativeReflectConstruct.useReducedMotion;
       if (tmp9) {
-        tmp9 = jumpType !== require(4062) /* GuildThemeSourcePreference */.JumpType.INSTANT;
+        tmp9 = jumpType !== require(4063) /* GuildThemeSourcePreference */.JumpType.INSTANT;
       }
       obj.animate = tmp9;
       obj.highlight = scrollToMessageId === jumpTargetId;
       if (null == scrollPosition) {
-        scrollPosition = require(9476) /* ChatScrollPosition */.ChatScrollPosition.TOP;
+        scrollPosition = require(9397) /* ChatScrollPosition */.ChatScrollPosition.TOP;
       }
       obj.position = scrollPosition;
       tmp3 = obj;
@@ -81,7 +81,7 @@ export default function computeScrollData(shouldInitialScroll) {
     if (null != focusTargetId) {
       const tmp16 = findMessageRowIndex(rows, focusTargetId);
       if (null != tmp16) {
-        obj = { type: require(9476) /* ChatScrollPosition */.ChatScrollType.FOCUS_ONLY, index: tmp16 };
+        obj = { type: require(9397) /* ChatScrollPosition */.ChatScrollType.FOCUS_ONLY, index: tmp16 };
         tmp14 = obj;
       }
     }

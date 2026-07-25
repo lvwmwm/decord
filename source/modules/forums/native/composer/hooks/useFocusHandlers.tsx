@@ -1,10 +1,10 @@
-// Module ID: 9590
-// Function ID: 74684
+// Module ID: 9511
+// Function ID: 74271
 // Name: PostComposerInputs
 // Dependencies: [57, 31, 2]
 // Exports: useFocusHandlers
 
-// Module 9590 (PostComposerInputs)
+// Module 9511 (PostComposerInputs)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

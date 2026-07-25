@@ -1,10 +1,10 @@
-// Module ID: 12148
-// Function ID: 95184
+// Module ID: 12124
+// Function ID: 94989
 // Name: WishlistEmptyState
-// Dependencies: [5, 31, 27, 6774, 9787, 8718, 8721, 8723, 8719, 1849, 4175, 6855, 8308, 653, 655, 1851, 33, 3, 4130, 689, 12149, 3842, 3976, 8310, 4098, 6773, 5482, 4126, 1212, 4543, 11815, 4086, 12150, 5462, 7433, 566, 12151, 7882, 12132, 12152, 3982, 3831, 12153, 9713, 478, 7539, 5613, 9768, 8537, 3789, 8813, 5692, 3791, 8775, 12154, 1934, 7533, 9142, 9785, 2]
+// Dependencies: [5, 31, 27, 5770, 9711, 8606, 8609, 8611, 8607, 1850, 4176, 5630, 8043, 653, 655, 1852, 33, 3, 4131, 689, 12125, 3843, 3977, 8045, 4099, 5769, 5482, 4127, 1212, 4544, 11791, 4087, 12126, 5462, 6515, 566, 12127, 7829, 12108, 12128, 3983, 3832, 12129, 9637, 478, 6631, 5613, 9692, 8297, 3790, 8701, 11749, 3792, 8663, 12130, 1935, 6625, 9034, 9709, 2]
 // Exports: default
 
-// Module 12148 (WishlistEmptyState)
+// Module 12124 (WishlistEmptyState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import CircleInformationIcon from "CircleInformationIcon";
 import { View } from "Text";
@@ -40,7 +40,8 @@ class WishlistEmptyState {
     shouldShowMRNotice = global.shouldShowMRNotice;
     c0 = undefined;
     obj = require("useIsMobileWishlistSuggestionsEnabled");
-    tmp = f95187(obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState"));
+    isMobileWishlistSuggestionsEnabled = obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
+    tmp2 = f94992(isMobileWishlistSuggestionsEnabled);
     obj2 = require("ManaContext");
     obj3 = require("AccessibilityAnnouncer");
     str = "mobile-text-heading-primary";
@@ -52,8 +53,9 @@ class WishlistEmptyState {
     c0 = trackUserProfileWishlistAction;
     items = [];
     items[0] = trackUserProfileWishlistAction;
+    tmp4 = jsxs;
     obj = {};
-    obj1 = { style: tmp.emptyState };
+    obj1 = { style: tmp2.emptyState };
     callback = CircleInformationIcon.useCallback(() => {
       let obj = { action: outer1_15.PRESS_ADD_WISHLIST_ITEM };
       const items = [outer1_18.COLLECTIBLES];
@@ -68,8 +70,8 @@ class WishlistEmptyState {
       obj.screen = outer1_19.FEATURED_PAGE;
       const result = trackUserProfileWishlistAction(outer1_2[25]).openCollectiblesShopMobile(obj);
     }, items);
-    tmp3 = jsxs;
-    tmp4 = Fragment;
+    tmp5 = Fragment;
+    tmp6 = View;
     obj2 = { variant: "text-md/medium", color: null, accessibilityRole: "header" };
     obj2.color = str;
     intl = require("getSystemLocale").intl;
@@ -77,48 +79,64 @@ class WishlistEmptyState {
     items1 = [, , ];
     items1[0] = jsx(require("Text").Text, obj2);
     obj3 = { variant: "text-sm/normal", color: "mobile-text-heading-primary" };
-    obj3.style = tmp.emptyStateText;
+    obj3.style = tmp2.emptyStateText;
     intl2 = require("getSystemLocale").intl;
     obj3.children = intl2.string(require("getSystemLocale").t["/X1ny6"]);
     items1[1] = jsx(require("Text").Text, obj3);
-    obj4 = { style: tmp.emptyStateCta };
-    obj5 = { size: "md", variant: "secondary" };
-    obj5.icon = jsx(require("PlusMediumIcon").PlusMediumIcon, { size: "xs" });
-    intl3 = require("getSystemLocale").intl;
-    obj5.text = intl3.string(require("getSystemLocale").t.SDUwM0);
-    obj5.onPress = callback;
-    obj4.children = jsx(require("Button").Button, obj5);
-    items1[2] = jsx(View, obj4);
+    tmp7 = !isMobileWishlistSuggestionsEnabled;
+    if (tmp7) {
+      tmp8 = jsx;
+      tmp9 = View;
+      obj4 = {};
+      obj4.style = tmp2.emptyStateCta;
+      tmp10 = jsx;
+      tmp11 = c0;
+      tmp12 = closure_2;
+      num = 29;
+      obj5 = { size: "md", variant: "secondary" };
+      tmp13 = jsx;
+      num2 = 30;
+      obj6 = {};
+      str2 = "xs";
+      obj6.size = "xs";
+      obj5.icon = jsx(require("PlusMediumIcon").PlusMediumIcon, obj6);
+      intl3 = require("getSystemLocale").intl;
+      obj5.text = intl3.string(require("getSystemLocale").t.SDUwM0);
+      obj5.onPress = callback;
+      obj4.children = jsx(require("Button").Button, obj5);
+      tmp7 = jsx(View, obj4);
+    }
+    items1[2] = tmp7;
     obj1.children = items1;
     items2 = [, ];
-    items2[0] = jsxs(View, obj1);
+    items2[0] = tmp4(tmp6, obj1);
     if (shouldShowMRNotice) {
-      tmp5 = jsxs;
-      tmp6 = View;
-      obj6 = {};
-      items3 = [, ];
-      ({ disclaimer: arr4[0], disclaimerBottom: arr4[1] } = tmp);
-      obj6.style = items3;
-      tmp7 = jsx;
-      tmp8 = c0;
-      tmp9 = closure_2;
-      num = 31;
+      tmp14 = jsxs;
+      tmp15 = View;
       obj7 = {};
-      str2 = "sm";
-      obj7.size = "sm";
+      items3 = [, ];
+      ({ disclaimer: arr4[0], disclaimerBottom: arr4[1] } = tmp2);
+      obj7.style = items3;
+      tmp16 = jsx;
+      tmp17 = c0;
+      tmp18 = closure_2;
+      num3 = 31;
+      obj8 = {};
+      str3 = "sm";
+      obj8.size = "sm";
       items4 = [, ];
-      items4[0] = jsx(require("CircleInformationIcon").CircleInformationIcon, obj7);
-      tmp10 = jsx;
-      obj8 = { variant: "text-xs/medium", color: "text-subtle" };
+      items4[0] = jsx(require("CircleInformationIcon").CircleInformationIcon, obj8);
+      tmp19 = jsx;
+      obj9 = { variant: "text-xs/medium", color: "text-subtle" };
       intl4 = require("getSystemLocale").intl;
-      obj8.children = intl4.string(require("getSystemLocale").t.Wp9bEl);
-      items4[1] = jsx(require("Text").Text, obj8);
-      obj6.children = items4;
-      shouldShowMRNotice = jsxs(View, obj6);
+      obj9.children = intl4.string(require("getSystemLocale").t.Wp9bEl);
+      items4[1] = jsx(require("Text").Text, obj9);
+      obj7.children = items4;
+      shouldShowMRNotice = jsxs(View, obj7);
     }
     items2[1] = shouldShowMRNotice;
     obj.children = items2;
-    return tmp3(tmp4, obj);
+    return tmp4(tmp5, obj);
   }
 }
 ({ TrackUserProfileWishlistActions: closure_15, UserProfileSections: closure_16 } = USER_PROFILE_TOOLTIP_DELAY);
@@ -137,22 +155,23 @@ let closure_26 = _createForOfIteratorHelperLoose.createStyles(() => {
   obj = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_8 };
   obj.headerButtons = obj;
   obj.gridWrapper = { width: "100%", alignItems: "center" };
-  obj.itemsContainer = { flexDirection: "row", flexWrap: "wrap", gap: 16, justifyContent: "flex-start" };
-  const obj1 = { alignItems: "center", paddingTop: importDefault(689).space.PX_48 };
+  const obj1 = { flexDirection: "row", flexWrap: "wrap", gap: importDefault(689).space.PX_16, justifyContent: "flex-start" };
+  obj.itemsContainer = obj1;
+  const obj2 = { alignItems: "center" };
   const space = importDefault(689).space;
-  obj1.paddingBottom = flag ? space.PX_40 : space.PX_48;
-  obj1.paddingHorizontal = importDefault(689).space.PX_32;
-  obj1.gap = importDefault(689).space.PX_8;
-  obj.emptyState = obj1;
-  obj.emptyStateText = { textAlign: "center" };
-  const obj2 = {};
+  obj2.paddingTop = flag ? space.PX_24 : space.PX_48;
   const space2 = importDefault(689).space;
-  obj2.marginTop = flag ? space2.PX_20 : space2.PX_24;
-  obj.emptyStateCta = obj2;
-  const obj3 = { padding: importDefault(689).space.PX_8, gap: importDefault(689).space.PX_4, flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: importDefault(689).radii.sm, borderWidth: 1, borderColor: importDefault(689).colors.BORDER_SUBTLE };
-  obj.disclaimer = obj3;
+  obj2.paddingBottom = flag ? space2.PX_12 : space2.PX_48;
+  obj2.paddingHorizontal = importDefault(689).space.PX_32;
+  obj2.gap = importDefault(689).space.PX_8;
+  obj.emptyState = obj2;
+  obj.emptyStateText = { textAlign: "center" };
+  obj.emptyStateCta = { marginTop: importDefault(689).space.PX_24 };
+  const obj4 = { padding: importDefault(689).space.PX_8, gap: importDefault(689).space.PX_4, flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: importDefault(689).radii.sm, borderWidth: 1, borderColor: importDefault(689).colors.BORDER_SUBTLE };
+  obj.disclaimer = obj4;
+  const obj3 = { marginTop: importDefault(689).space.PX_24 };
   obj.disclaimerTop = { marginBottom: importDefault(689).space.PX_16 };
-  const obj4 = { marginBottom: importDefault(689).space.PX_16 };
+  const obj5 = { marginBottom: importDefault(689).space.PX_16 };
   obj.disclaimerBottom = { marginTop: importDefault(689).space.PX_16 };
   return obj;
 });

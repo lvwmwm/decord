@@ -1,10 +1,10 @@
-// Module ID: 11574
-// Function ID: 90138
+// Module ID: 11540
+// Function ID: 89855
 // Name: useGuildPowerupRollbackModalConfig
-// Dependencies: [31, 1838, 4017, 566, 11575, 4021, 11560, 11562, 1334, 1212, 2230, 2]
+// Dependencies: [31, 1838, 4018, 566, 11541, 4022, 11526, 11528, 1334, 1212, 2231, 2]
 // Exports: default
 
-// Module 11574 (useGuildPowerupRollbackModalConfig)
+// Module 11540 (useGuildPowerupRollbackModalConfig)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

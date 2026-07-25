@@ -1,10 +1,10 @@
-// Module ID: 11049
-// Function ID: 85928
+// Module ID: 11005
+// Function ID: 85548
 // Name: useUserIsConsideredAdult
-// Dependencies: [1849, 566, 2]
+// Dependencies: [1850, 566, 2]
 // Exports: default
 
-// Module 11049 (useUserIsConsideredAdult)
+// Module 11005 (useUserIsConsideredAdult)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

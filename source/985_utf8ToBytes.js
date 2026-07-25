@@ -1,5 +1,5 @@
 // Module ID: 985
-// Function ID: 10634
+// Function ID: 10640
 // Name: utf8ToBytes
 // Dependencies: [986]
 

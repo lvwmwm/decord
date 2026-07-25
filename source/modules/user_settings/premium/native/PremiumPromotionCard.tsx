@@ -1,10 +1,10 @@
-// Module ID: 12457
-// Function ID: 96649
+// Module ID: 12438
+// Function ID: 96500
 // Name: PremiumPromotionCard
-// Dependencies: [31, 27, 4122, 653, 1851, 33, 4130, 689, 566, 5462, 6661, 5085, 4126, 1212, 1920, 4543, 7486, 2]
+// Dependencies: [31, 27, 4123, 653, 1852, 33, 4131, 689, 566, 5462, 6162, 5085, 4127, 1212, 1921, 4544, 6570, 2]
 // Exports: default
 
-// Module 12457 (PremiumPromotionCard)
+// Module 12438 (PremiumPromotionCard)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

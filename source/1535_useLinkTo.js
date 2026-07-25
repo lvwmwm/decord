@@ -1,5 +1,5 @@
 // Module ID: 1535
-// Function ID: 17519
+// Function ID: 17526
 // Name: useLinkTo
 // Dependencies: [31, 1459, 1534]
 // Exports: default

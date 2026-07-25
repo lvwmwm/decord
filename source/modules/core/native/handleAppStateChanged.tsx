@@ -1,10 +1,10 @@
-// Module ID: 16636
-// Function ID: 129750
+// Module ID: 16647
+// Function ID: 129918
 // Name: handleAppStateChanged
-// Dependencies: [1194, 6651, 653, 3, 20, 686, 4202, 16635, 6707, 3972, 14, 675, 2]
+// Dependencies: [1194, 6271, 653, 3, 20, 686, 4203, 16646, 5703, 3973, 14, 675, 2]
 // Exports: default
 
-// Module 16636 (handleAppStateChanged)
+// Module 16647 (handleAppStateChanged)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -35,18 +35,18 @@ export default function handleAppStateChanged(state) {
     isAuthenticatedResult = authenticated.isAuthenticated();
   }
   if (isAuthenticatedResult) {
-    isAuthenticatedResult = require(4202) /* _isNativeReflectConstruct */.default.isDisconnected();
-    const _default = require(4202) /* _isNativeReflectConstruct */.default;
+    isAuthenticatedResult = require(4203) /* _isNativeReflectConstruct */.default.isDisconnected();
+    const _default = require(4203) /* _isNativeReflectConstruct */.default;
   }
   if (isAuthenticatedResult) {
-    importDefault(16635).deferUpdate();
-    const obj4 = importDefault(16635);
+    importDefault(16646).deferUpdate();
+    const obj4 = importDefault(16646);
   }
   if (state === constants2.ACTIVE) {
-    require(6707) /* _createForOfIteratorHelperLoose */.trackAppOpened("launcher");
-    const obj5 = require(6707) /* _createForOfIteratorHelperLoose */;
-    const result = require(3972) /* setSystemTheme */.setSystemThemeIfNeeded();
-    const obj6 = require(3972) /* setSystemTheme */;
+    require(5703) /* _createForOfIteratorHelperLoose */.trackAppOpened("launcher");
+    const obj5 = require(5703) /* _createForOfIteratorHelperLoose */;
+    const result = require(3973) /* setSystemTheme */.setSystemThemeIfNeeded();
+    const obj6 = require(3973) /* setSystemTheme */;
   }
   const obj2 = importDefault(686);
   importDefault(14).appStateChanged(state);

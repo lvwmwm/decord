@@ -1,5 +1,5 @@
 // Module ID: 811
-// Function ID: 9094
+// Function ID: 9100
 // Name: extractTraceparentData
 // Dependencies: [812, 806, 808, 813, 814, 801]
 

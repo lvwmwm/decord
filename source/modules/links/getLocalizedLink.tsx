@@ -1,10 +1,10 @@
-// Module ID: 3742
-// Function ID: 28575
+// Module ID: 3743
+// Function ID: 28586
 // Name: getLocalizedLink
 // Dependencies: [1212, 2]
 // Exports: default
 
-// Module 3742 (getLocalizedLink)
+// Module 3743 (getLocalizedLink)
 const result = require("set").fileFinishedImporting("modules/links/getLocalizedLink.tsx");
 
 export default function getLocalizedLink(arg0) {

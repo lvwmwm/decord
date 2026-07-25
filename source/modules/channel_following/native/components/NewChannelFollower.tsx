@@ -1,10 +1,10 @@
-// Module ID: 10400
-// Function ID: 80207
+// Module ID: 10333
+// Function ID: 79860
 // Name: NewChannelFollower
-// Dependencies: [57, 31, 27, 1348, 1907, 1838, 3758, 4970, 653, 33, 4130, 689, 7186, 4066, 566, 4320, 4559, 3976, 10401, 10402, 5187, 5189, 5513, 1273, 4593, 4126, 1212, 4541, 5501, 5165, 4098, 8426, 1934, 10403, 7636, 4965, 4543, 9894, 5446, 2]
+// Dependencies: [57, 31, 27, 1348, 1908, 1838, 3759, 4971, 653, 33, 4131, 689, 7892, 4067, 566, 4321, 4560, 3977, 10334, 10335, 5187, 5189, 5513, 1273, 4594, 4127, 1212, 4542, 5501, 5164, 4099, 8184, 1935, 10336, 7575, 4966, 4544, 9818, 5446, 2]
 // Exports: default
 
-// Module 10400 (NewChannelFollower)
+// Module 10333 (NewChannelFollower)
 import _slicedToArray from "_slicedToArray";
 import ItemSelectorActionSheet from "ItemSelectorActionSheet";
 import get_ActivityIndicator from "Stack";

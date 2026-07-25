@@ -1,31 +1,31 @@
-// Module ID: 14609
-// Function ID: 111363
+// Module ID: 14620
+// Function ID: 111490
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: [6769, 7751, 13778, 6834, 13782, 1212, 13775, 1282, 10127, 2]
+// Dependencies: [5765, 7697, 13789, 5834, 13793, 1212, 13786, 1282, 10059, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 14609 (useObscuredContentNonFriendsDmSettingValue)
+// Module 14620 (useObscuredContentNonFriendsDmSettingValue)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useObscuredContentNonFriendsDmSettingValue() {
-  const parentalControlledExplicitContentSettings = require(13778) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
+  const parentalControlledExplicitContentSettings = require(13789) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
   let prop;
   if (null != parentalControlledExplicitContentSettings) {
     prop = parentalControlledExplicitContentSettings.explicitContentNonFriendDm;
   }
   let tmp3 = null;
   if (null != prop) {
-    tmp3 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(prop)();
-    const obj2 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
+    tmp3 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(prop)();
+    const obj2 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
   }
   return tmp3;
 }
 function onObscuredContentNonFriendsDmOnPress() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(13782);
+    let obj = selectedTeenId(13793);
     const intl = selectedTeenId(1212).intl;
     const stringResult = intl.string(selectedTeenId(1212).t.GYpoAq);
     obj = { title: stringResult, subtitle: getTitle() };
@@ -37,8 +37,8 @@ function onObscuredContentNonFriendsDmOnPress() {
       const result = obj.updateExplicitContentSetting(selectedTeenId, obj);
     };
     obj.currentValue = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentNonFriendDm;
-    let result = selectedTeenId(13775).handleSensitiveMediaFilterPress(obj);
-    const obj2 = selectedTeenId(13775);
+    let result = selectedTeenId(13786).handleSensitiveMediaFilterPress(obj);
+    const obj2 = selectedTeenId(13786);
   }
 }
 function getTitle() {

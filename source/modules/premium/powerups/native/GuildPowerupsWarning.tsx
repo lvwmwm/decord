@@ -1,10 +1,10 @@
-// Module ID: 11620
-// Function ID: 90324
+// Module ID: 11587
+// Function ID: 90047
 // Name: GuildPowerupsWarning
-// Dependencies: [31, 27, 33, 4130, 689, 11621, 7577, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 11588, 6673, 4127, 2]
 // Exports: default
 
-// Module 11620 (GuildPowerupsWarning)
+// Module 11587 (GuildPowerupsWarning)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,11 +37,11 @@ export default function GuildPowerupsWarning(warnings) {
     let obj = { style: tmp.container };
     obj = { style: tmp.contentContainer };
     obj = { color: importDefault(689).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    let items = [callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, obj), , , ];
+    let items = [callback(require(6673) /* CircleErrorIcon */.CircleErrorIcon, obj), , , ];
     const obj1 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp.text, children: tmp3 };
-    items[1] = callback(require(4126) /* Text */.Text, obj1);
+    items[1] = callback(require(4127) /* Text */.Text, obj1);
     const obj2 = { variant: "text-sm/medium", style: tmp.text, children: tmp4 };
-    items[2] = callback(require(4126) /* Text */.Text, obj2);
+    items[2] = callback(require(4127) /* Text */.Text, obj2);
     let mapped;
     if (null != warnings) {
       mapped = warnings.map((children) => {

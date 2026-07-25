@@ -1,10 +1,10 @@
-// Module ID: 10920
-// Function ID: 84842
+// Module ID: 10870
+// Function ID: 84432
 // Name: TopicsIcon
-// Dependencies: [31, 33, 689, 3833, 10921, 2]
+// Dependencies: [31, 33, 689, 3834, 10871, 2]
 // Exports: TopicsIcon
 
-// Module 10920 (TopicsIcon)
+// Module 10870 (TopicsIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TopicsIcon = function TopicsIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10921) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10871) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(10921) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10871) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

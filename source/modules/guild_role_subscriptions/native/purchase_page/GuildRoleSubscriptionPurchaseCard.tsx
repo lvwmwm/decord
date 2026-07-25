@@ -1,10 +1,10 @@
-// Module ID: 15320
-// Function ID: 116832
+// Module ID: 15330
+// Function ID: 116960
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [57, 31, 27, 33, 4130, 689, 1557, 14166, 15315, 5187, 4126, 1273, 15321, 5189, 1212, 14176, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 1557, 14177, 15325, 5187, 4127, 1273, 15331, 5189, 1212, 14187, 2]
 // Exports: default
 
-// Module 15320 (GuildRoleSubscriptionPurchaseCard)
+// Module 15330 (GuildRoleSubscriptionPurchaseCard)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -32,31 +32,31 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/g
 export default function GuildRoleSubscriptionPurchaseCard(guildId) {
   const listingId = guildId.listingId;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(14166);
-  let obj1 = importAll(14166);
-  let obj2 = require(15315) /* TruncatedText */;
+  let obj = importAll(14177);
+  let obj1 = importAll(14177);
+  let obj2 = require(15325) /* TruncatedText */;
   const formattedSubscriptionPlan = obj2.useFormattedSubscriptionPlan(listingId);
   obj = { scrollable: true, startExpanded: true };
   obj = { style: tmp.container };
   obj1 = { style: tmp.header };
   obj2 = { style: tmp.headerText };
   const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: callback(obj1.useName(listingId), 1)[0] };
-  const items = [callback2(require(4126) /* Text */.Text, obj3), callback2(View, { style: tmp.headerDot }), ];
+  const items = [callback2(require(4127) /* Text */.Text, obj3), callback2(View, { style: tmp.headerDot }), ];
   const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan };
-  items[2] = callback2(require(4126) /* Text */.Text, obj5);
+  items[2] = callback2(require(4127) /* Text */.Text, obj5);
   obj2.children = items;
   const items1 = [callback3(View, obj2), callback2(require(1273) /* Button */.Spacer, { size: 16 }), , , ];
   const obj6 = { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: callback(obj.useDescription(listingId), 1)[0] };
-  items1[2] = callback2(require(15315) /* TruncatedText */.TruncatedText, obj6);
+  items1[2] = callback2(require(15325) /* TruncatedText */.TruncatedText, obj6);
   items1[3] = callback2(require(1273) /* Button */.Spacer, { size: 24 });
-  items1[4] = callback2(importDefault(15321), { listingId });
+  items1[4] = callback2(importDefault(15331), { listingId });
   obj1.children = items1;
   const items2 = [callback3(View, obj1), callback2(View, { style: tmp.seperator }), ];
   const obj8 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj9 };
   const obj10 = { variant: "text-sm/bold", color: "text-default", style: { textTransform: "uppercase" } };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj10.children = intl.string(require(1212) /* getSystemLocale */.t.UdEvUi);
-  const items3 = [callback2(require(4126) /* Text */.Text, obj10), callback2(require(1273) /* Button */.Spacer, { size: 24 }), callback2(require(14176) /* SectionTitle */.Content, { listingId, guildId: guildId.guildId })];
+  const items3 = [callback2(require(4127) /* Text */.Text, obj10), callback2(require(1273) /* Button */.Spacer, { size: 24 }), callback2(require(14187) /* SectionTitle */.Content, { listingId, guildId: guildId.guildId })];
   obj8.children = items3;
   items2[2] = callback3(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj8);
   obj.children = items2;

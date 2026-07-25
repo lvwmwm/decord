@@ -1,11 +1,11 @@
 // Module ID: 4936
-// Function ID: 42286
+// Function ID: 42297
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 4936 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "fe74ca7646b268434faf18f4ad85990b", name: "img_meta_quest_light", type: "svg" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 128, height: 128, scales: [1], hash: "665fb7ab43f458f1e2e4d5c788dac4b4", name: "img_meta_quest_white", type: "png" };
 
 export default registerAsset.registerAsset(obj);

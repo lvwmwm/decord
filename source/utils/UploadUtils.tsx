@@ -1,10 +1,10 @@
-// Module ID: 4666
-// Function ID: 40504
+// Module ID: 4667
+// Function ID: 40516
 // Name: items
-// Dependencies: [4667, 4665, 2]
+// Dependencies: [4668, 4666, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData
 
-// Module 4666 (items)
+// Module 4667 (items)
 let obj = {
   reName: /\.jpe?g$/i,
   name(arg0) {
@@ -167,17 +167,17 @@ export const getAttachmentPayload = function getAttachmentPayload(id, arg1, name
     obj.is_clip = true;
     obj.title = id.clip.name;
     obj.application_id = id.clip.applicationId;
-    obj.clip_created_at = require(4667) /* _createForOfIteratorHelperLoose */.getClipCreatedAt(id.clip.createdAt);
-    const obj2 = require(4667) /* _createForOfIteratorHelperLoose */;
-    obj.clip_participant_ids = require(4667) /* _createForOfIteratorHelperLoose */.getClipParticipantIds(id.clip.users);
+    obj.clip_created_at = require(4668) /* _createForOfIteratorHelperLoose */.getClipCreatedAt(id.clip.createdAt);
+    const obj2 = require(4668) /* _createForOfIteratorHelperLoose */;
+    obj.clip_participant_ids = require(4668) /* _createForOfIteratorHelperLoose */.getClipParticipantIds(id.clip.users);
     obj.clip_remote_id = id.clip.remoteClipId;
-    const obj3 = require(4667) /* _createForOfIteratorHelperLoose */;
-    obj.clip_events_timeline = require(4667) /* _createForOfIteratorHelperLoose */.getClipEventsTimeline(id.clip);
-    const obj4 = require(4667) /* _createForOfIteratorHelperLoose */;
+    const obj3 = require(4668) /* _createForOfIteratorHelperLoose */;
+    obj.clip_events_timeline = require(4668) /* _createForOfIteratorHelperLoose */.getClipEventsTimeline(id.clip);
+    const obj4 = require(4668) /* _createForOfIteratorHelperLoose */;
   }
   let tmp9 = "item" in id && null != id.item;
   if (tmp9) {
-    tmp9 = id.item.platform === require(4665) /* _isNativeReflectConstruct */.UploadPlatform.WEB;
+    tmp9 = id.item.platform === require(4666) /* _isNativeReflectConstruct */.UploadPlatform.WEB;
   }
   if (tmp9) {
     str = "mimeType";

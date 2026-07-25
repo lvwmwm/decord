@@ -1,17 +1,17 @@
-// Module ID: 12486
-// Function ID: 96880
+// Module ID: 12467
+// Function ID: 96731
 // Name: getSubscriptionPlaceholderPatternSource
-// Dependencies: [31, 27, 33, 7405, 12487, 12488, 12489, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 12468, 12469, 12470, 3977, 2]
 // Exports: SubscriptionPlaceholderPattern
 
-// Module 12486 (getSubscriptionPlaceholderPatternSource)
+// Module 12467 (getSubscriptionPlaceholderPatternSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getSubscriptionPlaceholderPatternSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getSubscriptionPlaceholderPatternSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useSubscriptionPlaceholderPatternSource() {
-  return getSubscriptionPlaceholderPatternSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getSubscriptionPlaceholderPatternSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/SubscriptionPlaceholderPattern.tsx");
 

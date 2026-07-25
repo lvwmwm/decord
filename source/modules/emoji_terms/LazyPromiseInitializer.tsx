@@ -1,9 +1,9 @@
-// Module ID: 5000
-// Function ID: 43260
+// Module ID: 5001
+// Function ID: 43272
 // Name: LazyPromiseInitializer
 // Dependencies: [6, 7, 2]
 
-// Module 5000 (LazyPromiseInitializer)
+// Module 5001 (LazyPromiseInitializer)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

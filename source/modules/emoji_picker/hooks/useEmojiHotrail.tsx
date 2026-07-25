@@ -1,10 +1,10 @@
-// Module ID: 9371
-// Function ID: 73167
+// Module ID: 9277
+// Function ID: 72692
 // Name: getEmojiHotrail
-// Dependencies: [31, 4995, 2]
+// Dependencies: [31, 4996, 2]
 // Exports: default
 
-// Module 9371 (getEmojiHotrail)
+// Module 9277 (getEmojiHotrail)
 import result from "result";
 import { EMOJI_ROW_SIZE } from "EmojiCategoryTypes";
 

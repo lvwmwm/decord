@@ -1,10 +1,10 @@
-// Module ID: 9456
-// Function ID: 73535
+// Module ID: 9376
+// Function ID: 73121
 // Name: ExpressionPickerCategories
-// Dependencies: [31, 27, 33, 4130, 689, 1324, 4001, 9457, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1324, 4002, 9377, 2]
 // Exports: default
 
-// Module 9456 (ExpressionPickerCategories)
+// Module 9376 (ExpressionPickerCategories)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,10 +41,10 @@ export default function ExpressionPickerCategories(arg0) {
   obj.style = items;
   let tmp7 = null;
   if (!tmp2) {
-    tmp7 = callback(importDefault(9457), {});
+    tmp7 = callback(importDefault(9377), {});
   }
   const items1 = [tmp7, children];
   obj.children = items1;
   obj.children = closure_5(View, obj);
-  return callback(require(4001) /* Portal */.Portal, obj);
+  return callback(require(4002) /* Portal */.Portal, obj);
 };

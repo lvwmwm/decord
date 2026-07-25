@@ -1,10 +1,10 @@
-// Module ID: 6592
-// Function ID: 50853
+// Module ID: 7512
+// Function ID: 60503
 // Name: TentSpotIllustration
-// Dependencies: [33, 5085, 6593, 2]
+// Dependencies: [33, 5085, 7513, 2]
 // Exports: TentSpotIllustration
 
-// Module 6592 (TentSpotIllustration)
+// Module 7512 (TentSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TentSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const TentSpotIllustration = function TentSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6593) };
+  obj = { uri: importDefault(7513) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

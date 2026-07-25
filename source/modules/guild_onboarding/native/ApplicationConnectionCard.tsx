@@ -1,7 +1,7 @@
 // Module ID: 5461
-// Function ID: 46666
+// Function ID: 46671
 // Name: ApplicationConnectionCard
-// Dependencies: [31, 4167, 653, 33, 566, 5462, 5463, 1212, 5465, 5472, 675, 4324, 5477, 2]
+// Dependencies: [31, 4168, 653, 33, 566, 5462, 5463, 1212, 5465, 5472, 675, 4325, 5477, 2]
 // Exports: default
 
 // Module 5461 (ApplicationConnectionCard)

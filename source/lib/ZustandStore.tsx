@@ -1,10 +1,10 @@
-// Module ID: 3998
-// Function ID: 33160
+// Module ID: 3999
+// Function ID: 33171
 // Name: defaultStatesAreEqual
-// Dependencies: [677, 3999, 682, 2]
+// Dependencies: [677, 4000, 682, 2]
 // Exports: createZustandStore
 
-// Module 3998 (defaultStatesAreEqual)
+// Module 3999 (defaultStatesAreEqual)
 function defaultStatesAreEqual(arg0, arg1) {
   return arg0 === arg1;
 }
@@ -28,7 +28,7 @@ export const createZustandStore = function createZustandStore(arg0) {
     return tmp2;
   }
   let obj = _require(677);
-  const dependencyMap = obj.createWithEqualityFn(_require(3999).subscribeWithSelector((arg0, arg1, arg2) => {
+  const dependencyMap = obj.createWithEqualityFn(_require(4000).subscribeWithSelector((arg0, arg1, arg2) => {
     let callback = arg0;
     return callback((arg0) => {
       const callback = arg0;

@@ -1,10 +1,10 @@
-// Module ID: 7750
-// Function ID: 61553
+// Module ID: 7696
+// Function ID: 61521
 // Name: DoubleTapNitroAlert
-// Dependencies: [31, 27, 7746, 653, 7751, 33, 4130, 5796, 4472, 4475, 7577, 1212, 2]
+// Dependencies: [31, 27, 7692, 653, 7697, 33, 4131, 6554, 4473, 4476, 6673, 1212, 2]
 // Exports: default
 
-// Module 7750 (DoubleTapNitroAlert)
+// Module 7696 (DoubleTapNitroAlert)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY";
@@ -36,7 +36,7 @@ export default function DoubleTapNitroAlert(emojiName) {
     });
   }, []);
   let obj = {};
-  obj = { style: callback3().icon, children: callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+  obj = { style: callback3().icon, children: callback(require(6673) /* CircleErrorIcon */.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
   obj.header = callback(View, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.HRAWfC);
@@ -46,12 +46,12 @@ export default function DoubleTapNitroAlert(emojiName) {
   const obj1 = { onPress: callback };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl3.string(require(1212) /* getSystemLocale */.t.LIIHRy);
-  const items = [callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj1, "confirm"), ];
+  const items = [callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj1, "confirm"), ];
   const obj2 = { variant: "secondary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj2.text = intl4.string(require(1212) /* getSystemLocale */.t["Nr6v2+"]);
-  items[1] = callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel");
+  items[1] = callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel");
   obj.children = items;
   obj.actions = callback2(closure_8, obj);
-  return callback(require(4475) /* getAlertModalItemKey */.AlertModal, obj);
+  return callback(require(4476) /* getAlertModalItemKey */.AlertModal, obj);
 };

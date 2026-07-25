@@ -1,10 +1,10 @@
-// Module ID: 11262
-// Function ID: 87687
+// Module ID: 11223
+// Function ID: 87332
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4130, 689, 3976, 4066, 11263, 11264, 11201, 8226, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3977, 4067, 11224, 11225, 11162, 7955, 4127, 1212, 2]
 // Exports: default
 
-// Module 11262 (EmptyState)
+// Module 11223 (EmptyState)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,21 +27,21 @@ const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/na
 
 export default function EmptyState() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3976) /* AccessibilityAnnouncer */;
-  if (obj.isThemeLight(importDefault(4066)())) {
-    let tmp4 = 11263;
+  let obj = require(3977) /* AccessibilityAnnouncer */;
+  if (obj.isThemeLight(importDefault(4067)())) {
+    let tmp4 = 11224;
   } else {
-    tmp4 = 11264;
+    tmp4 = 11225;
   }
-  let obj1 = require(11201) /* handleApplicationSelected */;
-  const logAppLauncherEmptyStateView = obj1.useLogAppLauncherEmptyStateView(require(8226) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  let obj1 = require(11162) /* handleApplicationSelected */;
+  const logAppLauncherEmptyStateView = obj1.useLogAppLauncherEmptyStateView(require(7955) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   obj = { style: tmp.container };
   obj = { style: tmp.image, resizeMode: "contain", source: importDefault(tmp4) };
   const items = [callback(closure_4, obj), ];
   obj1 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t.uDnXXj);
-  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  items[1] = callback(require(4127) /* Text */.Text, obj1);
   obj.children = items;
   return callback2(closure_3, obj);
 };

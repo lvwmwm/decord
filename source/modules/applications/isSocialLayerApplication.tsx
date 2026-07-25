@@ -1,17 +1,17 @@
-// Module ID: 10882
-// Function ID: 84472
+// Module ID: 10832
+// Function ID: 84062
 // Name: isSocialLayerApplication
-// Dependencies: [653, 7371, 8994, 2]
+// Dependencies: [653, 5664, 8882, 2]
 // Exports: isSocialLayerSDKAuthorization
 
-// Module 10882 (isSocialLayerApplication)
+// Module 10832 (isSocialLayerApplication)
 import { ApplicationFlags } from "ME";
 
 function isSocialLayerApplication(application) {
-  let hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION_LIMITED);
+  let hasApplicationFlagResult = require(5664) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION_LIMITED);
   if (!hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION);
-    const obj2 = require(7371) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(5664) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION);
+    const obj2 = require(5664) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 }

@@ -1,13 +1,24 @@
 // Module ID: 3279
-// Function ID: 26007
-// Dependencies: [3280, 3281, 3282, 3283, 3284]
+// Function ID: 26014
+// Dependencies: [1932, 1933]
 
 // Module 3279
 import result from "result";
-import result1 from "result1";
-import result2 from "result2";
-import result3 from "result3";
 
+obj = { ordinalNumber: require("result")(obj), era: result.default({ matchPatterns: obj1, defaultMatchWidth: "wide", parsePatterns: { any: items }, defaultParseWidth: "any" }), quarter: result.default(obj2), month: result.default({ matchPatterns: obj4, defaultMatchWidth: "wide", parsePatterns: { narrow: items2, any: items3 }, defaultParseWidth: "any" }), day: result.default({ matchPatterns: obj5, defaultMatchWidth: "wide", parsePatterns: { narrow: items4, any: items5 }, defaultParseWidth: "any" }), dayPeriod: result.default({ matchPatterns: obj6, defaultMatchWidth: "any", parsePatterns: { any: obj7 }, defaultParseWidth: "any" }) };
+obj = {
+  matchPattern: /^(\d+)(º)?/i,
+  parsePattern: /\d+/i,
+  valueCallback(replaced) {
+    return parseInt(replaced, 10);
+  }
+};
+items = [/^a/i, /^(d|e)/i];
+const items1 = [/1/i, /2/i, /3/i, /4/i];
+items2 = [/^g/i, /^f/i, /^m/i, /^a/i, /^m/i, /^g/i, /^l/i, /^a/i, /^s/i, /^o/i, /^n/i, /^d/i];
+items3 = [/^ge/i, /^f/i, /^mar/i, /^ap/i, /^mag/i, /^gi/i, /^l/i, /^ag/i, /^s/i, /^o/i, /^n/i, /^d/i];
+items4 = [/^d/i, /^l/i, /^m/i, /^m/i, /^g/i, /^v/i, /^s/i];
+items5 = [/^d/i, /^l/i, /^ma/i, /^me/i, /^g/i, /^v/i, /^s/i];
 
-export default { code: "ja", formatDistance: result.default, formatLong: result1.default, formatRelative: result2.default, localize: result3.default, match: require("module_3284"), options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };
+export default obj;
 export default exports.default;

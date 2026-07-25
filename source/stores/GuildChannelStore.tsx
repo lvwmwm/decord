@@ -1,14 +1,14 @@
-// Module ID: 1907
-// Function ID: 21421
+// Module ID: 1908
+// Function ID: 21432
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1908, 1351, 3757, 1352, 1194, 1348, 1917, 1838, 3758, 3767, 1849, 653, 22, 4320, 483, 3763, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1909, 1351, 3758, 1352, 1194, 1348, 1918, 1838, 3759, 3768, 1850, 653, 1841, 22, 4321, 483, 3764, 566, 686, 2]
 
-// Module 1907 (_isNativeReflectConstruct)
+// Module 1908 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createFavoritesChannelRecord from "createFavoritesChannelRecord";
 import closure_6 from "_isNativeReflectConstruct";
+import isFavoritesGuildId from "isFavoritesGuildId";
 import apply from "apply";
-import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
 import closure_9 from "_isNativeReflectConstruct";
 import closure_10 from "_isNativeReflectConstruct";
 import { createFavoritesChannelRecord as closure_11 } from "createFavoritesChannelRecord";
@@ -126,32 +126,32 @@ function comparator(comparator, comparator2) {
   return comparator.comparator - comparator2.comparator;
 }
 function getChannelsForGuild(id) {
-  if (id === closure_22) {
-    let obj = {};
+  let obj = require(1841) /* isFavoritesGuildId */;
+  obj = {};
+  if (obj.isFavoritesGuildId(id)) {
     favoriteChannels = favoriteChannels.getFavoriteChannels();
-    for (const key10017 in favoriteChannels) {
-      let tmp11 = key10017;
+    for (const key10022 in favoriteChannels) {
+      let tmp11 = key10022;
       let tmp12 = store;
-      let channel = store.getChannel(key10017);
+      let channel = store.getChannel(key10022);
       if (null == channel) {
         continue;
       } else {
         let tmp8 = callback3;
-        let tmp9 = callback3(favoriteChannels, favoriteChannels[key10017], channel);
+        let tmp9 = callback3(favoriteChannels, favoriteChannels[key10022], channel);
         obj = { channel: tmp9, comparator: tmp9.position };
-        obj[key10017] = obj;
+        obj[key10022] = obj;
         continue;
       }
       continue;
     }
     return obj;
   } else {
-    obj = {};
     const mutableGuildChannelsForGuild = store.getMutableGuildChannelsForGuild(id);
-    for (const key10008 in mutableGuildChannelsForGuild) {
-      let tmp10 = key10008;
-      let obj1 = { channel: mutableGuildChannelsForGuild[key10008], comparator: mutableGuildChannelsForGuild[key10008].position };
-      obj[key10008] = obj1;
+    for (const key10015 in mutableGuildChannelsForGuild) {
+      let tmp10 = key10015;
+      let obj1 = { channel: mutableGuildChannelsForGuild[key10015], comparator: mutableGuildChannelsForGuild[key10015].position };
+      obj[key10015] = obj1;
       continue;
     }
     return obj;
@@ -207,7 +207,7 @@ function rebuildGuildChannels(guildId) {
     let closure_1 = {};
     const item = id[outer1_26].forEach((channel) => {
       channel = channel.channel;
-      let obj = outer2_0(outer2_3[18]);
+      let obj = outer2_0(outer2_3[19]);
       const channelName = obj.computeChannelName(channel, outer2_21, outer2_20);
       let tmp2 = null;
       if (hasOwnProperty.call(table, channelName)) {
@@ -301,7 +301,7 @@ function handleGuildRoleUpdate(guildId) {
 function hasElevatedPermissions(id) {
   let obj = importAll(483);
   obj = { user: id, context: arg1, checkElevated: false };
-  return obj.hasAny(importAll(3763).computePermissions(obj), closure_25);
+  return obj.hasAny(importAll(3764).computePermissions(obj), closure_25);
 }
 function updateSelectedVoiceChannel(getGuildId) {
   let closure_32 = arg1;

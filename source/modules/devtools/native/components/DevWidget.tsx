@@ -1,10 +1,10 @@
-// Module ID: 14756
-// Function ID: 112447
+// Module ID: 14767
+// Function ID: 112575
 // Name: DraggableContainer
-// Dependencies: [31, 6959, 687, 33, 4130, 689, 3991, 10423, 14757, 5217, 4542, 4546, 4660, 13556, 14454, 14758, 13561, 2]
+// Dependencies: [31, 5950, 687, 33, 4131, 689, 3992, 10357, 14768, 5217, 4543, 4547, 4661, 13567, 14465, 14769, 13572, 2]
 // Exports: default
 
-// Module 14756 (DraggableContainer)
+// Module 14767 (DraggableContainer)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES";
@@ -147,18 +147,18 @@ let closure_15 = importAllResult.memo(() => {
       return outer1_0(outer1_2[13]).navigateToDevTools();
     },
     activeOpacity: 0.5,
-    children: callback(require(14454) /* StaffBadgeIcon */.StaffBadgeIcon, { size: "md", color: "white" })
+    children: callback(require(14465) /* StaffBadgeIcon */.StaffBadgeIcon, { size: "md", color: "white" })
   };
-  return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
+  return callback(require(4661) /* PressableBase */.PressableOpacity, obj);
 });
 let result = require("STORAGE_KEY_LOG_DISPATCHES").fileFinishedImporting("modules/devtools/native/components/DevWidget.tsx");
 
 export default function DevWidget() {
-  let obj = require(3991);
+  let obj = require(3992);
   const sharedValue = obj.useSharedValue(_isNativeReflectConstruct.devWidgetPosition.x);
-  const sharedValue1 = require(3991).useSharedValue(_isNativeReflectConstruct.devWidgetPosition.y);
+  const sharedValue1 = require(3992).useSharedValue(_isNativeReflectConstruct.devWidgetPosition.y);
   obj = {};
-  const items = [callback(importDefault(14758), { x: sharedValue, y: sharedValue1 }), ];
+  const items = [callback(importDefault(14769), { x: sharedValue, y: sharedValue1 }), ];
   obj = {
     x: sharedValue,
     y: sharedValue1,

@@ -1,10 +1,10 @@
-// Module ID: 4996
-// Function ID: 43215
+// Module ID: 4997
+// Function ID: 43227
 // Name: isPurchasableRoleSubscriptionEmoji
-// Dependencies: [4992, 2]
+// Dependencies: [4993, 2]
 // Exports: isRoleSubscriptionEmoji, isUnusableRoleSubscriptionEmoji
 
-// Module 4996 (isPurchasableRoleSubscriptionEmoji)
+// Module 4997 (isPurchasableRoleSubscriptionEmoji)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 function isPurchasableRoleSubscriptionEmoji(customEmojiFromJoinedGuild) {

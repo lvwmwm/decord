@@ -1,10 +1,10 @@
-// Module ID: 7714
-// Function ID: 61361
+// Module ID: 7658
+// Function ID: 61307
 // Name: processColorOrThrow
 // Dependencies: [27, 2]
 // Exports: processColorOrThrow
 
-// Module 7714 (processColorOrThrow)
+// Module 7658 (processColorOrThrow)
 import { processColor } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/RowGeneratorStyleSheet.tsx");

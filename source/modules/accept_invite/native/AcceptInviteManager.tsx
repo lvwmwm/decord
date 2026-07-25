@@ -1,13 +1,13 @@
-// Module ID: 16023
-// Function ID: 123826
+// Module ID: 16034
+// Function ID: 123994
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1194, 1348, 1917, 1838, 4115, 3758, 6911, 653, 6977, 5698, 1198, 4098, 4337, 16024, 1934, 16025, 686, 8693, 5736, 5482, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 1194, 1348, 1918, 1838, 4116, 3759, 5902, 653, 5968, 6634, 1198, 4099, 4338, 16035, 1935, 16036, 686, 8581, 6632, 5482, 5078, 2]
 
-// Module 16023 (_isNativeReflectConstruct)
+// Module 16034 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import shouldNavigate from "shouldNavigate";
-import module_4337 from "module_4337";
+import module_4338 from "module_4338";
 import AcceptInviteModal from "AcceptInviteModal";
 import closure_8 from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";

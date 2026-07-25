@@ -1,10 +1,10 @@
-// Module ID: 11340
-// Function ID: 88232
+// Module ID: 11302
+// Function ID: 87888
 // Name: ChannelIcon
-// Dependencies: [57, 31, 1838, 33, 4130, 689, 4638, 4593, 11331, 4974, 4098, 11318, 11319, 4320, 5165, 4126, 2]
+// Dependencies: [57, 31, 1838, 33, 4131, 689, 4639, 4594, 11293, 4975, 4099, 11280, 11281, 4321, 5164, 4127, 2]
 // Exports: default
 
-// Module 11340 (ChannelIcon)
+// Module 11302 (ChannelIcon)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -60,12 +60,12 @@ function ChannelListItem(arg0) {
   ({ channel, index } = arg0);
   ({ totalCount, onPress } = arg0);
   let obj = { onPress };
-  obj = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: importDefault(4320)(channel) };
-  obj.label = callback(require(4126) /* Text */.Text, obj);
+  obj = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: importDefault(4321)(channel) };
+  obj.label = callback(require(4127) /* Text */.Text, obj);
   obj.icon = callback(ChannelIcon, { channel });
   obj.start = 0 === index;
   obj.end = index === totalCount - 1;
-  return callback(require(5165) /* TableRowInner */.TableRow, obj, channel.id);
+  return callback(require(5164) /* TableRowInner */.TableRow, obj, channel.id);
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = {};

@@ -1,10 +1,10 @@
-// Module ID: 15490
-// Function ID: 119084
+// Module ID: 15500
+// Function ID: 119212
 // Name: getGroupDMRecipientLimit
-// Dependencies: [1849, 653, 2]
+// Dependencies: [1850, 653, 2]
 // Exports: default
 
-// Module 15490 (getGroupDMRecipientLimit)
+// Module 15500 (getGroupDMRecipientLimit)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

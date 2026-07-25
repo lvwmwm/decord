@@ -1,9 +1,9 @@
-// Module ID: 11656
-// Function ID: 90524
+// Module ID: 11625
+// Function ID: 90268
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1849, 5602, 5603, 4351, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1850, 5602, 5603, 4352, 566, 686, 2]
 
-// Module 11656 (_isNativeReflectConstruct)
+// Module 11625 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -119,7 +119,7 @@ function storeMessagePreview(channel_id, message) {
     if (null == message) {
       let messageRecord = null;
       if (null != message) {
-        let obj = require(4351) /* createMinimalMessageRecord */;
+        let obj = require(4352) /* createMinimalMessageRecord */;
         messageRecord = obj.createMessageRecord(message);
       }
       obj = { loaded: true, error: flag, message: messageRecord };
@@ -235,9 +235,9 @@ tmp3 = new tmp3(require("dispatcher"), {
         if (null != tmp2.message) {
           const obj = {};
           const merged = Object.assign(tmp2);
-          obj["message"] = require(4351) /* createMinimalMessageRecord */.updateMessageRecord(tmp2.message, message.message);
+          obj["message"] = require(4352) /* createMinimalMessageRecord */.updateMessageRecord(tmp2.message, message.message);
           table[channel_id] = obj;
-          const obj2 = require(4351) /* createMinimalMessageRecord */;
+          const obj2 = require(4352) /* createMinimalMessageRecord */;
         }
         tmp3 = tmp4;
       }

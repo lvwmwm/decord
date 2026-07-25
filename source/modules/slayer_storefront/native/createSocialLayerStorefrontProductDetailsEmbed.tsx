@@ -1,10 +1,10 @@
-// Module ID: 10881
-// Function ID: 84459
+// Module ID: 10831
+// Function ID: 84049
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4167, 4175, 653, 6978, 7722, 1212, 10882, 5613, 5609, 3104, 7882, 7433, 4119, 7539, 478, 566, 1327, 5468, 2]
+// Dependencies: [57, 31, 4168, 4176, 653, 5969, 7666, 1212, 10832, 5613, 5609, 3105, 7829, 6515, 4120, 6631, 478, 566, 1327, 5468, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10881 (_createForOfIteratorHelperLoose)
+// Module 10831 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -100,7 +100,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   let guildOrApplication;
   let skuId;
   ({ skuId, guildOrApplication } = theme);
-  ({ colors, baseColors } = importDefault(7722)(theme.theme));
+  ({ colors, baseColors } = importDefault(7666)(theme.theme));
   const value = closure_6.get(skuId);
   let applicationId;
   if (null != value) {
@@ -109,7 +109,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   const application = _isNativeReflectConstruct.getApplication(applicationId);
   const isFetchingResult = closure_6.isFetching(skuId);
   let result = null != applicationId;
-  const tmp = importDefault(7722)(theme.theme);
+  const tmp = importDefault(7666)(theme.theme);
   if (result) {
     result = _isNativeReflectConstruct.isFetchingApplication(applicationId);
   }
@@ -131,7 +131,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (importDefault(10882)(application)) {
+        if (importDefault(10832)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result2 = require(5613) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(value);
             const obj2 = require(5613) /* transformStorefrontSKUPricesServer */;
@@ -163,7 +163,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
             if (result2) {
               let stringResult = string(require(1212) /* getSystemLocale */.t.boqtTA);
             } else {
-              stringResult = string(importDefault(3104).BKf0MM);
+              stringResult = string(importDefault(3105).BKf0MM);
             }
             obj["acceptLabelText"] = stringResult;
             let prop;

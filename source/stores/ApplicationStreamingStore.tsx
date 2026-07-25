@@ -1,9 +1,9 @@
-// Module ID: 4149
-// Function ID: 34948
+// Module ID: 4150
+// Function ID: 34959
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4144, 4150, 1194, 1348, 1838, 4177, 3758, 4202, 1906, 4146, 653, 4195, 664, 4194, 12890, 12891, 12892, 1934, 6966, 12781, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4145, 4151, 1194, 1348, 1838, 4178, 3759, 4203, 1907, 4147, 653, 4196, 664, 4195, 12901, 12902, 12903, 1935, 5957, 12792, 566, 686, 2]
 
-// Module 4149 (_isNativeReflectConstruct)
+// Module 4150 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
 import closure_9 from "ME";
@@ -165,7 +165,7 @@ function handleStreamUpdate(streamKey) {
     store5.delete(streamKey);
   }
   const obj = {};
-  const merged = Object.assign(require(4194) /* isStreamKey */.decodeStreamKey(streamKey));
+  const merged = Object.assign(require(4195) /* isStreamKey */.decodeStreamKey(streamKey));
   obj["state"] = paused ? closure_22.PAUSED : closure_22.ACTIVE;
   const result = store.set(streamKey, obj);
   closure_5[streamKey] = { streamKey, region, viewerIds };
@@ -189,7 +189,7 @@ function isWatchableStream(streamType) {
     const basicChannel = store4.getBasicChannel(streamType.channelId);
     let first = null != basicChannel;
     if (first) {
-      const obj = require(6966) /* _createForOfIteratorHelperLoose */;
+      const obj = require(5957) /* _createForOfIteratorHelperLoose */;
       first = obj.canWatchStream(basicChannel, closure_21, _createForOfIteratorHelperLoose, closure_18, closure_12)[0];
     }
     return first;
@@ -689,7 +689,7 @@ tmp4 = new tmp4(require("dispatcher"), {
         pid = gameForPID1.pid;
       }
       if (tmp) {
-        const tmp11 = importDefault(12891)(content);
+        const tmp11 = importDefault(12902)(content);
         let obj = { pid };
         let id;
         if (null != gameForPID1) {
@@ -814,7 +814,7 @@ tmp4 = new tmp4(require("dispatcher"), {
   },
   STREAM_WATCH: function handleStreamWatch(streamKey) {
     streamKey = streamKey.streamKey;
-    let obj = require(4194) /* isStreamKey */;
+    let obj = require(4195) /* isStreamKey */;
     const decodeStreamKeyResult = obj.decodeStreamKey(streamKey);
     store.delete(streamKey);
     obj = {};
@@ -836,7 +836,7 @@ tmp4 = new tmp4(require("dispatcher"), {
     let streamType;
     ({ streamType, guildId, channelId, pid, sourceId } = arg0);
     ({ sourceName, sourceIcon, previewDisabled } = arg0);
-    let obj = sourceId(4194);
+    let obj = sourceId(4195);
     obj = { streamType, guildId, channelId, ownerId: store3.getId() };
     const encodeStreamKeyResult = obj.encodeStreamKey(obj);
     let startsWithResult = null != sourceId;
@@ -924,13 +924,13 @@ tmp4 = new tmp4(require("dispatcher"), {
       } else if (reason === constants3.UNAUTHORIZED) {
         FAILED = constants.FAILED;
       } else if (reason === constants3.SAFETY_GUILD_RATE_LIMITED) {
-        let obj = guildId(4194);
+        let obj = guildId(4195);
         guildId = obj.decodeStreamKey(streamKey).guildId;
-        guildId(1934)(12892, dependencyMap.paths).then((arg0) => {
+        guildId(1935)(12903, dependencyMap.paths).then((arg0) => {
           arg0.default(guildId);
         });
         FAILED = constants.ENDED;
-        const promise = guildId(1934)(12892, dependencyMap.paths);
+        const promise = guildId(1935)(12903, dependencyMap.paths);
       } else {
         let tmp10 = value.state === constants.FAILED;
         if (tmp10) {
@@ -960,7 +960,7 @@ tmp4 = new tmp4(require("dispatcher"), {
     let channelId;
     let selfStreamHidden;
     ({ channelId, selfStreamHidden } = arg0);
-    let isStreamKeyResult = require(4194) /* isStreamKey */.isStreamKey(c29);
+    let isStreamKeyResult = require(4195) /* isStreamKey */.isStreamKey(c29);
     if (isStreamKeyResult) {
       isStreamKeyResult = null != c29;
       const obj2 = c29;
@@ -1046,8 +1046,8 @@ tmp4 = new tmp4(require("dispatcher"), {
     });
     let isStreamKeyResult = null != id;
     if (isStreamKeyResult) {
-      isStreamKeyResult = require(4194) /* isStreamKey */.isStreamKey(id);
-      const obj = require(4194) /* isStreamKey */;
+      isStreamKeyResult = require(4195) /* isStreamKey */.isStreamKey(id);
+      const obj = require(4195) /* isStreamKey */;
     }
     if (isStreamKeyResult) {
       isStreamKeyResult = id.includes(store3.getId());

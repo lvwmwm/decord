@@ -1,9 +1,9 @@
-// Module ID: 7090
-// Function ID: 56865
+// Module ID: 6108
+// Function ID: 54677
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1362, 7091, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1362, 6109, 566, 686, 2]
 
-// Module 7090 (_isNativeReflectConstruct)
+// Module 6108 (_isNativeReflectConstruct)
 import GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH from "GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,15 +1,15 @@
-// Module ID: 16091
-// Function ID: 124542
+// Module ID: 16102
+// Function ID: 124710
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 5, 7, 6, 15, 17, 18, 1909, 1194, 1348, 1917, 1838, 3947, 4333, 4334, 3746, 1360, 4337, 16092, 1934, 11413, 668, 11412, 5605, 5606, 5078, 2]
+// Dependencies: [57, 5, 7, 6, 15, 17, 18, 1910, 1194, 1348, 1918, 1838, 3948, 4334, 4335, 3747, 1360, 4338, 16103, 1935, 11376, 668, 11375, 5605, 5606, 5078, 2]
 
-// Module 16091 (_isNativeReflectConstruct)
+// Module 16102 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import _getPrototypeOf from "_getPrototypeOf";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _inherits from "_inherits";
 import GuildMemberFlags from "GuildMemberFlags";
-import module_4337 from "module_4337";
+import module_4338 from "module_4338";
 import NewMemberActionsCompleted from "NewMemberActionsCompleted";
 import closure_10 from "_isNativeReflectConstruct";
 import closure_11 from "_isNativeReflectConstruct";

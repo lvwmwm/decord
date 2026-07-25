@@ -1,8 +1,8 @@
-// Module ID: 8365
-// Function ID: 66136
-// Dependencies: [5, 653, 507, 686, 1184, 8364, 3803, 2]
+// Module ID: 8123
+// Function ID: 64787
+// Dependencies: [5, 653, 507, 686, 1184, 8122, 3804, 2]
 
-// Module 8365
+// Module 8123
 import generateHydrationId from "generateHydrationId";
 import { Endpoints } from "ME";
 
@@ -13,8 +13,14 @@ export default {
   fetchPopularGuildsFromCategories(stateFromStoresArray1, sum) {
     let closure_0 = stateFromStoresArray1;
     let closure_1 = sum;
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(async () => {
+      const HTTP = callback(outer2_2[2]).HTTP;
+      obj = { url: outer2_4.GRAVITY_TOPIC_GUILDS, body: obj, rejectWithError: false };
+      obj = { category_ids: outer1_0, offset: outer1_1 };
+      obj = { type: "LOAD_ICYMI_POPULAR_GUILDS", categoryIds: outer1_0, guilds: yield HTTP.post(obj).body.guilds, offset: outer1_1 };
+      callback2(outer2_2[3]).dispatch(obj);
+      return true;
+    })();
   },
   fetchDehydrated(arg0) {
     let dependencyMap;
@@ -25,23 +31,71 @@ export default {
       obj = {};
     }
     ({ isInitialLoad: require, isReloading: importDefault, forceRefresh: dependencyMap } = obj);
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(async () => {
+      let obj = outer2_0(outer2_2[5]);
+      if (obj.icymiEnabled("fetchDehydrated")) {
+        if (outer1_1) {
+          let obj1 = outer2_1(outer2_2[3]);
+          obj1.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: true });
+        }
+        const _Date = Date;
+        const timestamp = Date.now();
+        const HTTP = outer2_0(outer2_2[2]).HTTP;
+        obj = { url: outer2_4.GRAVITY_ITEMS_DEHYDRATED };
+        obj = { refresh: outer1_2 };
+        obj.query = obj;
+        obj.rejectWithError = false;
+        const tmp11 = yield HTTP.get(obj);
+        obj1 = { type: "LOAD_ICYMI_DEHYDRATED", items: tmp11.body.items, loadId: tmp11.body.load_id, startTime: timestamp, isReloading: outer1_1, isInitialLoad: outer1_0 };
+        yield outer2_1(outer2_2[3]).dispatch(obj1);
+        const obj5 = outer2_1(outer2_2[3]);
+      }
+    })();
   },
   gravityJoinGuild(items, icymi_info_modal) {
     let closure_0 = items;
     let closure_1 = icymi_info_modal;
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(async () => {
+      let obj = callback(outer2_2[5]);
+      if (obj.icymiEnabled("gravityJoinGuild")) {
+        if (0 !== outer1_0.length) {
+          const HTTP = callback(outer2_2[2]).HTTP;
+          obj = { url: outer2_4.GRAVITY_JOIN_GUILD };
+          obj = { guild_ids: outer1_0, location: outer1_1 };
+          obj.body = obj;
+          obj.rejectWithError = false;
+          yield HTTP.post(obj);
+          return true;
+        }
+      }
+    })();
   },
   fetchForNotification(channel_id, message_id) {
     let closure_0 = channel_id;
     let closure_1 = message_id;
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(async () => {
+      let obj = callback(outer2_2[5]);
+      if (obj.icymiEnabled("fetchInitial")) {
+        const HTTP = callback(outer2_2[2]).HTTP;
+        obj = { url: outer2_4.GRAVITY_ITEMS_HYDRATE };
+        obj = {};
+        const obj1 = { channel_id: outer1_0, message_id: outer1_1 };
+        const items = [obj1];
+        obj.message_items = items;
+        obj.activity_items = [];
+        obj.body = obj;
+        obj.rejectWithError = false;
+        const tmp6 = yield HTTP.post(obj);
+        if (0 !== tmp6.body.message_items.length) {
+          const obj2 = { type: "LOAD_ICYMI_FROM_NOTIFICATION", messageItem: tmp6.body.message_items[0] };
+          callback2(outer2_2[3]).dispatch(obj2);
+          const obj5 = callback2(outer2_2[3]);
+        }
+      }
+    })();
   },
   fetchForStatusNotification(customStatusItem) {
-    let obj = require(8364) /* generateHydrationId */;
+    let obj = require(8122) /* generateHydrationId */;
     if (obj.icymiEnabled("fetchInitialStatus")) {
       obj = { type: "LOAD_ICYMI_FROM_NOTIFICATION", customStatusItem };
       importDefault(686).dispatch(obj);
@@ -52,20 +106,78 @@ export default {
     let closure_0 = arg0;
     let closure_1 = arg1;
     let closure_2 = arg2;
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(async () => {
+      let activityItems;
+      let messageItems;
+      let obj = callback(8122);
+      if (obj.icymiEnabled("fetchHydrated")) {
+        ({ messageItems, activityItems } = outer1_2);
+        if (0 === messageItems.length) {
+          if (0 === activityItems.length) {
+            let obj1 = callback2(686);
+            obj = { type: "LOAD_ICYMI_HYDRATED", requestMessageItems: [], requestActivityItems: [], messageItems: [], activityItems: [], startingIndex: outer1_0, endingIndex: outer1_1 };
+            obj1.dispatch(obj);
+          }
+        }
+        const HTTP = callback(507).HTTP;
+        obj = { url: outer2_4.GRAVITY_ITEMS_HYDRATE };
+        obj1 = { message_items: messageItems, activity_items: activityItems };
+        obj.body = obj1;
+        obj.rejectWithError = false;
+        const tmp14 = yield HTTP.post(obj);
+        const obj2 = { type: "LOAD_ICYMI_HYDRATED", requestMessageItems: messageItems, requestActivityItems: activityItems, messageItems: tmp14.body.message_items, activityItems: tmp14.body.activity_items, startingIndex: outer1_0, endingIndex: outer1_1 };
+        callback2(686).dispatch(obj2);
+        const obj6 = callback2(686);
+        const tmp2 = messageItems;
+      }
+    })();
   },
   getGuildChannelScores() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(async () => {
+      let obj = outer2_0(outer2_2[5]);
+      if (obj.icymiEnabled("guildChannelScores")) {
+        const HTTP = outer2_0(outer2_2[2]).HTTP;
+        obj = { url: outer2_4.GRAVITY_CUSTOM_SCORES, rejectWithError: false };
+        const tmp4 = yield HTTP.get(obj);
+        obj = { type: "LOAD_ICYMI_CUSTOM_SCORES", scores: tmp4.body };
+        outer2_1(outer2_2[3]).dispatch(obj);
+        const obj3 = outer2_1(outer2_2[3]);
+      }
+    })();
   },
   getRecommendedGuilds() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(async () => {
+      let obj = outer2_0(outer2_2[5]);
+      if (obj.icymiEnabled("recommendedGuilds")) {
+        const HTTP = outer2_0(outer2_2[2]).HTTP;
+        obj = { url: outer2_4.GRAVITY_RECOMMENDED_GUILDS, rejectWithError: false };
+        const tmp4 = yield HTTP.get(obj);
+        obj = { type: "LOAD_ICYMI_RECOMMENDED_GUILDS", guilds: tmp4.body.guilds };
+        outer2_1(outer2_2[3]).dispatch(obj);
+        const obj3 = outer2_1(outer2_2[3]);
+      }
+    })();
   },
   getMediaForCurrentStatus() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(async () => {
+      let obj = outer2_0(outer2_2[5]);
+      if (obj.icymiEnabled("mediaForCurrentStatus")) {
+        const CustomStatusSetting = outer2_0(outer2_2[6]).CustomStatusSetting;
+        const setting = CustomStatusSetting.getSetting();
+        if (null != setting) {
+          if (null != tmp4.createdAtMs) {
+            const HTTP = outer2_0(outer2_2[2]).HTTP;
+            obj = { url: outer2_4.GRAVITY_ATTACHMENTS, rejectWithError: false };
+            const tmp14 = yield HTTP.get(obj);
+            obj = { type: "LOAD_ICYMI_CURRENT_STATUS_MEDIA", attachments: tmp14.body.attachments };
+            const _Number = Number;
+            obj.createdAtMs = Number(setting.createdAtMs);
+            outer2_1(outer2_2[3]).dispatch(obj);
+            const obj2 = outer2_1(outer2_2[3]);
+          }
+        }
+      }
+    })();
   },
   reloadICYMITab() {
     importDefault(686).dispatch({ type: "RELOAD_ICYMI" });

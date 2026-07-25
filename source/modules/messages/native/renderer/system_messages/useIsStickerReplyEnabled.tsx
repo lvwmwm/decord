@@ -1,10 +1,10 @@
-// Module ID: 7773
-// Function ID: 61661
+// Module ID: 7720
+// Function ID: 61633
 // Name: computeIsStickerReplyEnabled
-// Dependencies: [1917, 3758, 1849, 653, 5650, 2]
+// Dependencies: [1918, 3759, 1850, 653, 5996, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 7773 (computeIsStickerReplyEnabled)
+// Module 7720 (computeIsStickerReplyEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ export const computeIsStickerReplyEnabled = function computeIsStickerReplyEnable
     }
     tmp2 = isPending;
   }
-  const isReadOnlyThread = require(5650) /* useCanStartPublicThread */.computeIsReadOnlyThread(channel);
+  const isReadOnlyThread = require(5996) /* useCanStartPublicThread */.computeIsReadOnlyThread(channel);
   let canResult = closure_3.can(Permissions.SEND_MESSAGES, channel);
   if (canResult) {
     canResult = !isReadOnlyThread;

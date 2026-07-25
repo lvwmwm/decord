@@ -1,10 +1,10 @@
-// Module ID: 5803
-// Function ID: 49618
+// Module ID: 8380
+// Function ID: 67023
 // Name: useGetVisibleContent
-// Dependencies: [31, 1316, 3947, 1338, 1340, 653, 662, 675, 1334, 5804, 566, 1336, 3968, 1333, 3946, 21, 2]
+// Dependencies: [31, 1316, 3948, 1338, 1340, 653, 662, 675, 1334, 8381, 566, 1336, 3969, 1333, 3947, 21, 2]
 // Exports: useDangerouslyPeekDismissibleContents, useGetDismissibleContent, useGetSingleUseGuildDismissibleContent_UNSAFE, useGetSnowflakeBoundDismissibleContent, useGetSnowflakeBoundGuildDismissibleContent_UNSAFE, useGetTimeRecurringDismissibleContent, useGetTimeRecurringGuildDismissibleContent_UNSAFE, useGetTimeRecurringSnowflakeBoundDismissibleContent, useGetVersionedDismissibleContent
 
-// Module 5803 (useGetVisibleContent)
+// Module 8380 (useGetVisibleContent)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -29,8 +29,8 @@ function useGetVisibleContent(contentType, stateFromStores, GUILD_HEADER_TOOLTIP
     }
     return hasItem;
   });
-  const anyOverlayRenderingLocked = _require(5804).useAnyOverlayRenderingLocked();
-  let obj = _require(5804);
+  const anyOverlayRenderingLocked = _require(8381).useAnyOverlayRenderingLocked();
+  let obj = _require(8381);
   stateFromStores = _require(566).useStateFromStores([], () => {
 
   });
@@ -280,7 +280,7 @@ export const useGetTimeRecurringDismissibleContent = function useGetTimeRecurrin
     }
     dependencyMap = tmp10;
     tmp3 = tmp10;
-    obj2 = _require(3968);
+    obj2 = _require(3969);
   }
   const items1 = [useGetVisibleContent(tmp3, stateFromStores, groupName), ];
   const items2 = [tmp3, groupName, stateFromStores];
@@ -367,7 +367,7 @@ export const useGetSnowflakeBoundGuildDismissibleContent_UNSAFE = function useGe
   let React = null;
   let tmp5 = null;
   if (null != prop) {
-    const tmp8 = !_require(3968).disableNewUserDismissibleContent(prop);
+    const tmp8 = !_require(3969).disableNewUserDismissibleContent(prop);
     if (_isNativeReflectConstruct.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp14 = null;
       if (tmp8) {
@@ -395,7 +395,7 @@ export const useGetSnowflakeBoundGuildDismissibleContent_UNSAFE = function useGe
         tmp5 = tmp11;
       }
     }
-    const obj2 = _require(3968);
+    const obj2 = _require(3969);
   }
   const items1 = [useGetVisibleContent(tmp5, stateFromStores, GUILD_HEADER_TOOLTIPS, undefined, newSnowflakeId), ];
   const items2 = [tmp5, GUILD_HEADER_TOOLTIPS, stateFromStores, newSnowflakeId];
@@ -503,7 +503,7 @@ export const useGetTimeRecurringGuildDismissibleContent_UNSAFE = function useGet
   let dependencyMap = null;
   let tmp5 = null;
   if (null != prop) {
-    const tmp8 = !_require(3968).disableNewUserDismissibleContent(prop);
+    const tmp8 = !_require(3969).disableNewUserDismissibleContent(prop);
     let lastDismissedAtMs;
     if (null != tmp2) {
       lastDismissedAtMs = tmp2.lastDismissedAtMs;
@@ -514,7 +514,7 @@ export const useGetTimeRecurringGuildDismissibleContent_UNSAFE = function useGet
     }
     dependencyMap = tmp15;
     tmp5 = tmp15;
-    const obj2 = _require(3968);
+    const obj2 = _require(3969);
   }
   const items1 = [useGetVisibleContent(tmp5, id, GUILD_HEADER_TOOLTIPS), ];
   const items2 = [tmp5, GUILD_HEADER_TOOLTIPS, id];

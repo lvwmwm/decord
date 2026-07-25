@@ -1,10 +1,10 @@
-// Module ID: 13679
-// Function ID: 105014
+// Module ID: 13690
+// Function ID: 105141
 // Name: PasskeyUpsellView
-// Dependencies: [57, 31, 27, 13675, 653, 1345, 33, 4130, 689, 1456, 1212, 13680, 13681, 5087, 1920, 5121, 13684, 4126, 477, 4543, 9237, 2]
+// Dependencies: [57, 31, 27, 13686, 653, 1345, 33, 4131, 689, 1456, 1212, 13691, 13692, 5087, 1921, 5121, 13695, 4127, 477, 4544, 9129, 2]
 // Exports: default
 
-// Module 13679 (PasskeyUpsellView)
+// Module 13690 (PasskeyUpsellView)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -69,17 +69,17 @@ export default function PasskeyUpsellView() {
     const obj = { headerLeft: navigation(outer1_2[13]).getHeaderCloseButton(onCancel) };
     navigation.setOptions(obj);
   }, items);
-  let obj1 = importDefault(1920);
+  let obj1 = importDefault(1921);
   const articleURL = obj1.getArticleURL(HelpdeskArticles.SETTING_UP_TWO_FACTOR);
   obj = { bottom: true, style: tmp2.container };
   obj = { contentContainerStyle: tmp2.scrollViewContainer };
   obj1 = { style: tmp2.headerContainer };
-  const obj2 = { source: importDefault(13684), style: tmp2.headerImage };
+  const obj2 = { source: importDefault(13695), style: tmp2.headerImage };
   const items1 = [callback(closure_6, obj2), , ];
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.headerText };
   let intl = navigation(1212).intl;
   obj3.children = intl.string(navigation(1212).t.CjleBl);
-  items1[1] = callback(navigation(4126).Text, obj3);
+  items1[1] = callback(navigation(4127).Text, obj3);
   const obj4 = { variant: "heading-md/normal", color: "text-default", style: tmp2.headerText };
   let obj8 = navigation(477);
   const tmp10 = closure_7;
@@ -94,7 +94,7 @@ export default function PasskeyUpsellView() {
     stringResult = string(t.d6uxJy);
   }
   obj4.children = stringResult;
-  items1[2] = callback(navigation(4126).Text, obj4);
+  items1[2] = callback(navigation(4127).Text, obj4);
   obj1.children = items1;
   const items2 = [callback2(tmp11, obj1), , ];
   const obj5 = { style: tmp2.listContainer };
@@ -103,7 +103,7 @@ export default function PasskeyUpsellView() {
   obj8 = { variant: "heading-md/normal", color: "text-default", style: tmp2.text };
   const intl3 = navigation(1212).intl;
   obj8.children = intl3.string(navigation(1212).t.HtqVkj);
-  items3[1] = callback(navigation(4126).Text, obj8);
+  items3[1] = callback(navigation(4127).Text, obj8);
   obj6.children = items3;
   const items4 = [callback2(closure_5, obj6), ];
   const obj9 = { style: tmp2.row };
@@ -123,7 +123,7 @@ export default function PasskeyUpsellView() {
     string2Result = string2(t2.uYfqlo);
   }
   obj11.children = string2Result;
-  items5[1] = tmp16(navigation(4126).Text, obj11);
+  items5[1] = tmp16(navigation(4127).Text, obj11);
   obj9.children = items5;
   items4[1] = callback2(closure_5, obj9);
   obj5.children = items4;
@@ -132,7 +132,7 @@ export default function PasskeyUpsellView() {
   const obj13 = { variant: "text-sm/semibold", color: "text-brand" };
   const intl5 = navigation(1212).intl;
   obj13.children = intl5.format(navigation(1212).t.OeGXVv, { learnMoreLink: articleURL });
-  const items6 = [callback(navigation(4126).Text, obj13), , ];
+  const items6 = [callback(navigation(4127).Text, obj13), , ];
   const obj14 = {};
   const intl6 = navigation(1212).intl;
   const string3 = intl6.string;
@@ -153,7 +153,7 @@ export default function PasskeyUpsellView() {
   obj14.disabled = tmp5;
   obj14.loading = tmp5;
   obj14.grow = true;
-  items6[1] = callback(navigation(4543).Button, obj14);
+  items6[1] = callback(navigation(4544).Button, obj14);
   const obj15 = { text: null, onPress: null, size: "lg", variant: "secondary", grow: true };
   const intl7 = navigation(1212).intl;
   const string4 = intl7.string;
@@ -165,7 +165,7 @@ export default function PasskeyUpsellView() {
   }
   obj15.text = string4Result;
   obj15.onPress = onCancel;
-  items6[2] = callback(navigation(4543).Button, obj15);
+  items6[2] = callback(navigation(4544).Button, obj15);
   obj12.children = items6;
   items2[2] = callback2(closure_5, obj12);
   obj.children = items2;

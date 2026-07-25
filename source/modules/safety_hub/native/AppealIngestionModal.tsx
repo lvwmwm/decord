@@ -1,10 +1,10 @@
-// Module ID: 11068
-// Function ID: 86137
+// Module ID: 11024
+// Function ID: 85757
 // Name: getHeader
-// Dependencies: [5, 57, 31, 27, 11053, 7589, 653, 33, 4130, 689, 4126, 566, 11058, 1456, 7590, 11067, 11059, 7588, 5121, 1212, 4543, 5087, 11069, 480, 11074, 11076, 11078, 11080, 11081, 5450, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 11009, 6699, 653, 33, 4131, 689, 4127, 566, 11014, 1456, 6700, 11023, 11015, 6698, 5121, 1212, 4544, 5087, 11025, 480, 11030, 11032, 11034, 11036, 11037, 5450, 5517, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 11068 (getHeader)
+// Module 11024 (getHeader)
 import closure_4 from "SafetyHubLinks";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -22,7 +22,7 @@ let closure_14;
 let closure_9;
 const require = arg1;
 function getHeader(arg0) {
-  return callback2(require(4126) /* Text */.Text, { variant: "text-md/normal", children: undefined });
+  return callback2(require(4127) /* Text */.Text, { variant: "text-md/normal", children: undefined });
 }
 ({ APPEAL_INGESTION_IMPRESSION_PROPERTIES: closure_9, AppealIngestionSections: closure_10 } = SafetyHubLinks);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
@@ -45,7 +45,7 @@ export default function AppealIngestionModal(classificationId) {
   let require;
   let flag;
   let flag2;
-  let obj = require(11058) /* useSafetyHubClassifications */;
+  let obj = require(11014) /* useSafetyHubClassifications */;
   const safetyHubClassification = obj.useSafetyHubClassification(classificationId.classificationId);
   ({ isDsaEligible: require, classification } = safetyHubClassification);
   flag = undefined;
@@ -161,7 +161,7 @@ export const AppealIngestionModalHeader = function AppealIngestionModalHeader(ar
   }
   if (tmp4) {
     obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: headerText };
-    tmp4 = callback2(require(4126) /* Text */.Text, obj);
+    tmp4 = callback2(require(4127) /* Text */.Text, obj);
   }
   const items = [tmp4, ];
   let tmp8 = null;
@@ -169,7 +169,7 @@ export const AppealIngestionModalHeader = function AppealIngestionModalHeader(ar
     tmp8 = null;
     if (subHeaderText.length > 0) {
       obj = { style: tmp.subheader, variant: "text-md/medium", color: "text-default", children: subHeaderText };
-      tmp8 = callback2(require(4126) /* Text */.Text, obj);
+      tmp8 = callback2(require(4127) /* Text */.Text, obj);
     }
   }
   items[1] = tmp8;

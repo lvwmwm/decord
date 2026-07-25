@@ -1,10 +1,10 @@
-// Module ID: 10378
-// Function ID: 80061
+// Module ID: 10311
+// Function ID: 79714
 // Name: ActionSheetIconHeader
-// Dependencies: [31, 27, 33, 4130, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 4127, 2]
 // Exports: ActionSheetIconHeader
 
-// Module 10378 (ActionSheetIconHeader)
+// Module 10311 (ActionSheetIconHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,11 +27,11 @@ export const ActionSheetIconHeader = function ActionSheetIconHeader(subtitle) {
   const items = [callback(View, { children: icon }), ];
   obj = { style: tmp.titles };
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title };
-  const items1 = [callback(require(4126) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4127) /* Text */.Text, obj), ];
   let tmp4 = null;
   if (null != subtitle) {
     const obj1 = { variant: "text-xs/medium", color: "text-default", children: subtitle };
-    tmp4 = callback(require(4126) /* Text */.Text, obj1);
+    tmp4 = callback(require(4127) /* Text */.Text, obj1);
   }
   items1[1] = tmp4;
   obj.children = items1;

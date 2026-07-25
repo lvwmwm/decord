@@ -1,10 +1,10 @@
-// Module ID: 11685
-// Function ID: 90672
+// Module ID: 11654
+// Function ID: 90416
 // Name: UserProfileAlertUserReported
-// Dependencies: [31, 33, 4475, 1212, 4475, 2]
+// Dependencies: [31, 33, 4476, 1212, 4476, 2]
 // Exports: default
 
-// Module 11685 (UserProfileAlertUserReported)
+// Module 11654 (UserProfileAlertUserReported)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -21,7 +21,7 @@ export default function UserProfileAlertUserReported() {
   obj = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t.BddRzS);
-  obj.children = jsx(require(4475) /* getAlertModalItemKey */.AlertActionButton, {}, "okay");
-  obj.actions = jsx(require(4475) /* getAlertModalItemKey */.AlertActions, {});
-  return jsx(require(4475) /* getAlertModalItemKey */.AlertModal, {});
+  obj.children = jsx(require(4476) /* getAlertModalItemKey */.AlertActionButton, {}, "okay");
+  obj.actions = jsx(require(4476) /* getAlertModalItemKey */.AlertActions, {});
+  return jsx(require(4476) /* getAlertModalItemKey */.AlertModal, {});
 };

@@ -1,10 +1,10 @@
-// Module ID: 9603
-// Function ID: 74746
+// Module ID: 9524
+// Function ID: 74333
 // Name: ExpressionPickerActionSheet
-// Dependencies: [31, 1348, 5188, 9604, 33, 3991, 3996, 1555, 566, 9605, 4098, 1450, 1557, 5084, 477, 9378, 5187, 9606, 2]
+// Dependencies: [31, 1348, 5188, 9525, 33, 3992, 3997, 1555, 566, 9526, 4099, 1450, 1557, 5084, 477, 9284, 5187, 9527, 2]
 // Exports: default
 
-// Module 9603 (ExpressionPickerActionSheet)
+// Module 9524 (ExpressionPickerActionSheet)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -35,9 +35,9 @@ export default function ExpressionPickerActionSheet(arg0) {
   }
   let tmp = null;
   ({ hideGifFavorites, onDismiss, visibleTabs, initialGifQuery } = arg0);
-  let obj = require(3991);
+  let obj = require(3992);
   const sharedValue = obj.useSharedValue(-1);
-  let obj1 = require(3996) /* getKeyboardContextForType */;
+  let obj1 = require(3997) /* getKeyboardContextForType */;
   const keyboardContextForType = obj1.useKeyboardContextForType(require(1555) /* KeyboardTypes */.KeyboardTypes.EXPRESSION);
   let obj2 = require(566) /* initialize */;
   const items = [dismissSheet];
@@ -49,7 +49,7 @@ export default function ExpressionPickerActionSheet(arg0) {
     let isIOSResult = require(477) /* set */.isIOS();
     if (isIOSResult) {
       obj = { animatedSheetIndex: sharedValue, followSystemKeyboard: true };
-      isIOSResult = callback(importDefault(9378), obj);
+      isIOSResult = callback(importDefault(9284), obj);
     }
     const items1 = [isIOSResult, ];
     obj1 = { scrollable: true, animatedIndex: sharedValue, startHeight: height * closure_5, containerHeight: diff, onDismiss };
@@ -76,7 +76,7 @@ export default function ExpressionPickerActionSheet(arg0) {
       stickerFormats: STICKER_FORMATS,
       height: diff
     };
-    obj1.children = callback(importDefault(9606), obj2);
+    obj1.children = callback(importDefault(9527), obj2);
     items1[1] = callback(require(5187) /* Background */.BottomSheet, obj1);
     obj.children = items1;
     tmp = closure_9(closure_8, obj);

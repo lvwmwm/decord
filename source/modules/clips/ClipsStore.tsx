@@ -1,9 +1,9 @@
-// Module ID: 4183
-// Function ID: 35925
+// Module ID: 4184
+// Function ID: 35936
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 4150, 1194, 4184, 653, 4185, 3741, 4186, 4187, 44, 4188, 4194, 1360, 4197, 4198, 566, 4177, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5, 4151, 1194, 4185, 653, 4186, 3742, 4187, 4188, 44, 4189, 4195, 1360, 4198, 4199, 566, 4178, 686, 2]
 
-// Module 4183 (_isNativeReflectConstruct)
+// Module 4184 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import isClipsEnabled from "isClipsEnabled";
@@ -171,7 +171,7 @@ function trackSharedRemoteClipId(arg0, arg1, arg2) {
   } else {
     return false;
   }
-  obj = importDefault(4197);
+  obj = importDefault(4198);
 }
 ({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_11, ClipSaveTypes: closure_12, ClipsUserEducationType: closure_13, ClipsLogger: closure_14, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: closure_15 } = result);
 ({ ClipsLengthSettings, ClipsViewerConnectivitySettings, DEFAULT_MAX_AUTO_CLIPS, DEFAULT_CLIPS_BITRATE_PERCENT } = result);
@@ -521,7 +521,7 @@ let items = [
   },
   (clipsSettings) => {
     let hardwareEncoding;
-    const _default = require(4177) /* _isNativeReflectConstruct */.default;
+    const _default = require(4178) /* _isNativeReflectConstruct */.default;
     if (null != _default) {
       hardwareEncoding = _default.getHardwareEncoding();
     }
@@ -774,9 +774,9 @@ obj = {
   },
   CLIPS_SAVE_CLIP_NO_OP: function handleSaveClipNoOp(reason) {
     reason = reason.reason;
-    let tmp = reason !== require(4187) /* getClipCropAspectRatio */.ClipsSaveNoOpReason.BUFFER_WARMING_UP;
+    let tmp = reason !== require(4188) /* getClipCropAspectRatio */.ClipsSaveNoOpReason.BUFFER_WARMING_UP;
     if (tmp) {
-      tmp = reason !== require(4187) /* getClipCropAspectRatio */.ClipsSaveNoOpReason.BRIDGE_SHUTDOWN;
+      tmp = reason !== require(4188) /* getClipCropAspectRatio */.ClipsSaveNoOpReason.BRIDGE_SHUTDOWN;
     }
     if (!tmp) {
       const _Math = Math;
@@ -787,7 +787,7 @@ obj = {
     let pid;
     let sourceName;
     ({ sourceName, pid } = arg0);
-    let obj = require(4188) /* isClipsEnabled */;
+    let obj = require(4189) /* isClipsEnabled */;
     if (obj.isClipsEnabled()) {
       let tmp2 = sourceName;
       if (null != pid) {
@@ -814,7 +814,7 @@ obj = {
   STREAM_STOP: function handleStreamStop(arg0) {
     let tmp2 = null != _null;
     if (tmp2) {
-      let obj = require(4194) /* isStreamKey */;
+      let obj = require(4195) /* isStreamKey */;
       const tmp6 = obj.decodeStreamKey(tmp).ownerId === store.getId();
       if (tmp6) {
         let tmp8 = null;
@@ -940,18 +940,18 @@ obj = {
     obj.hardwareClassificationVersion = closure_11;
     obj.hardwareClassification = classification;
     ({ hardwareClassification, hardwareClassification: hardwareClassification2 } = obj);
-    let tmp = hardwareClassification2 === require(4187) /* getClipCropAspectRatio */.ClipsHardwareClassification.MEETS_AUTO_ENABLE;
+    let tmp = hardwareClassification2 === require(4188) /* getClipCropAspectRatio */.ClipsHardwareClassification.MEETS_AUTO_ENABLE;
     if (tmp) {
-      tmp = hardwareClassification !== require(4187) /* getClipCropAspectRatio */.ClipsHardwareClassification.MEETS_AUTO_ENABLE;
+      tmp = hardwareClassification !== require(4188) /* getClipCropAspectRatio */.ClipsHardwareClassification.MEETS_AUTO_ENABLE;
     }
     if (tmp) {
       obj.clipsSettings.clipsEnabled = true;
     }
     obj.hardwareClassificationForDecoupled = classification;
     ({ hardwareClassificationForDecoupled, hardwareClassificationForDecoupled: hardwareClassificationForDecoupled2 } = obj);
-    let clipsEnabled = hardwareClassificationForDecoupled2 === require(4187) /* getClipCropAspectRatio */.ClipsHardwareClassification.MEETS_AUTO_ENABLE;
+    let clipsEnabled = hardwareClassificationForDecoupled2 === require(4188) /* getClipCropAspectRatio */.ClipsHardwareClassification.MEETS_AUTO_ENABLE;
     if (clipsEnabled) {
-      clipsEnabled = hardwareClassificationForDecoupled !== require(4187) /* getClipCropAspectRatio */.ClipsHardwareClassification.MEETS_AUTO_ENABLE;
+      clipsEnabled = hardwareClassificationForDecoupled !== require(4188) /* getClipCropAspectRatio */.ClipsHardwareClassification.MEETS_AUTO_ENABLE;
     }
     if (clipsEnabled) {
       clipsEnabled = obj.clipsSettings.clipsEnabled;
@@ -962,7 +962,7 @@ obj = {
   },
   CLIPS_INIT: function handleClipsInit(applicationName) {
     let c29 = null;
-    let obj = require(4188) /* isClipsEnabled */;
+    let obj = require(4189) /* isClipsEnabled */;
     if (obj.isClipsEnabled()) {
       obj = { applicationName: applicationName.applicationName, newClipIds: [], ended: false };
     } else {

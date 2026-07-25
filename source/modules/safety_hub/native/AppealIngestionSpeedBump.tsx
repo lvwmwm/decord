@@ -1,10 +1,10 @@
-// Module ID: 11069
-// Function ID: 86165
+// Module ID: 11025
+// Function ID: 85785
 // Name: AppealIngestionSpeedBump
-// Dependencies: [31, 27, 11053, 7589, 653, 33, 4130, 566, 11058, 11070, 1212, 11068, 11071, 11072, 11073, 4126, 2]
+// Dependencies: [31, 27, 11009, 6699, 653, 33, 4131, 566, 11014, 11026, 1212, 11024, 11027, 11028, 11029, 4127, 2]
 // Exports: default
 
-// Module 11069 (AppealIngestionSpeedBump)
+// Module 11025 (AppealIngestionSpeedBump)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,12 +33,12 @@ export default function AppealIngestionSpeedBump(arg0) {
   let obj = _require(566);
   const items = [_isNativeReflectConstruct];
   let stateFromStores = obj.useStateFromStores(items, () => outer1_4.getAppealClassificationId());
-  let obj1 = _require(11058);
+  let obj1 = _require(11014);
   if (null == stateFromStores) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
   const safetyHubClassification = obj1.useSafetyHubClassification(stateFromStores);
-  let obj2 = _require(11070);
+  let obj2 = _require(11026);
   _require = obj2.useEmitAppealIngestionEvent();
   ({ isDsaEligible, classification } = safetyHubClassification);
   let explainer_link;
@@ -62,16 +62,16 @@ export default function AppealIngestionSpeedBump(arg0) {
   const intl2 = _require(1212).intl;
   const stringResult = intl.string(_require(1212).t["C5q+pW"]);
   obj = {};
-  const items1 = [callback(_require(11068).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1212).t.URt7VI) }), ];
+  const items1 = [callback(_require(11024).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1212).t.URt7VI) }), ];
   obj = { style: tmp.container };
   let tmp9 = flagged_content.length > 0;
   if (tmp9) {
     obj1 = { flaggedContent: flagged_content };
-    tmp9 = callback(importDefault(11071), obj1);
+    tmp9 = callback(importDefault(11027), obj1);
   }
   const items2 = [tmp9, , , , , ];
   obj2 = { classification: safetyHubClassification.classification };
-  items2[1] = callback(importDefault(11072), obj2);
+  items2[1] = callback(importDefault(11028), obj2);
   let tmp13 = isCoppa;
   if (isCoppa) {
     const obj3 = {};
@@ -81,8 +81,8 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj3.onPress = function onPress() {
       return callback(outer1_5.ClickAgeVerificationLink);
     };
-    tmp13 = callback(importDefault(11073), obj3);
-    const tmp17 = importDefault(11073);
+    tmp13 = callback(importDefault(11029), obj3);
+    const tmp17 = importDefault(11029);
   }
   items2[2] = tmp13;
   if (isSpam) {
@@ -96,8 +96,8 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj4.onPress = function onPress() {
       return callback(outer1_5.ClickSpamWebformLink);
     };
-    isSpam = callback(importDefault(11073), obj4);
-    const tmp23 = importDefault(11073);
+    isSpam = callback(importDefault(11029), obj4);
+    const tmp23 = importDefault(11029);
   }
   items2[3] = isSpam;
   let tmp26 = !isCoppa;
@@ -109,19 +109,19 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj5.onPress = function onPress() {
       return callback(outer1_5.ClickLearnMoreLink);
     };
-    tmp26 = callback(importDefault(11073), obj5);
-    const tmp30 = importDefault(11073);
+    tmp26 = callback(importDefault(11029), obj5);
+    const tmp30 = importDefault(11029);
   }
   items2[4] = tmp26;
   if (isDsaEligible) {
     const obj6 = { variant: "text-xs/normal" };
     const intl6 = _require(1212).intl;
     obj6.children = intl6.format(_require(1212).t.WMUgCX, {});
-    isDsaEligible = callback(_require(4126).Text, obj6);
+    isDsaEligible = callback(_require(4127).Text, obj6);
   }
   items2[5] = isDsaEligible;
   obj.children = items2;
   items1[1] = closure_9(View, obj);
   obj.children = items1;
-  return closure_9(_require(11068).AppealIngestionModalScreen, obj);
+  return closure_9(_require(11024).AppealIngestionModalScreen, obj);
 };

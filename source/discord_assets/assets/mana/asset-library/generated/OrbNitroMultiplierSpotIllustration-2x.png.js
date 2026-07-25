@@ -1,9 +1,9 @@
-// Module ID: 6397
-// Function ID: 50561
+// Module ID: 7317
+// Function ID: 60211
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6397 (metadata)
+// Module 7317 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/OrbNitroMultiplierSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/14bf76d2614ee51fa4035af69d3d2c741efb5ea71d7f9dfb92d044d2abe2abad.png";

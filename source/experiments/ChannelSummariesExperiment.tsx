@@ -1,10 +1,10 @@
-// Module ID: 9522
-// Function ID: 74149
+// Module ID: 9443
+// Function ID: 73736
 // Name: canSeeChannelSummaries
-// Dependencies: [1391, 1838, 653, 1355, 624, 2]
+// Dependencies: [1391, 1838, 653, 1355, 1841, 624, 2]
 // Exports: channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 9522 (canSeeChannelSummaries)
+// Module 9443 (canSeeChannelSummaries)
 import { isGuildNSFW } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
@@ -14,7 +14,6 @@ let closure_4;
 let closure_5;
 let closure_6;
 let closure_7;
-let closure_8;
 function canSeeChannelSummaries(channel, flag, flag2) {
   if (flag === undefined) {
     flag = false;
@@ -66,32 +65,33 @@ function canGuildUseConversationSummaries(guild, flag2) {
     const id = guild.id;
     let tmp2 = null != id;
     if (tmp2) {
-      let tmp4 = id === closure_4;
-      if (!tmp4) {
-        tmp4 = id === closure_5;
+      let isFavoritesGuildIdResult = id === closure_4;
+      if (!isFavoritesGuildIdResult) {
+        isFavoritesGuildIdResult = require(1841) /* isFavoritesGuildId */.isFavoritesGuildId(id);
+        const obj = require(1841) /* isFavoritesGuildId */;
       }
-      tmp2 = tmp4;
+      tmp2 = isFavoritesGuildIdResult;
     }
-    let tmp6 = !tmp2;
-    if (!tmp2) {
+    let tmp7 = !tmp2;
+    if (tmp7) {
       const features = guild.features;
-      const tmp8 = !features.has(constants2.SUMMARIES_ENABLED_GA);
-      let tmp9 = !tmp8;
-      if (!tmp8) {
+      const tmp9 = !features.has(constants2.SUMMARIES_ENABLED_GA);
+      let tmp10 = !tmp9;
+      if (!tmp9) {
         let hasItem = !flag;
         if (!hasItem) {
           const features2 = guild.features;
           hasItem = features2.has(constants2.SUMMARIES_ENABLED_BY_USER);
         }
-        tmp9 = hasItem;
+        tmp10 = hasItem;
       }
-      tmp6 = tmp9;
+      tmp7 = tmp10;
     }
-    tmp = tmp6;
+    tmp = tmp7;
   }
   return tmp;
 }
-({ ME: closure_4, FAVORITES: closure_5, ChannelTypesSets: closure_6, GuildFeatures: closure_7, EMPTY_STRING_SNOWFLAKE_ID: closure_8 } = ME);
+({ ME: closure_4, ChannelTypesSets: closure_5, GuildFeatures: closure_6, EMPTY_STRING_SNOWFLAKE_ID: closure_7 } = ME);
 const result = require("ME").fileFinishedImporting("experiments/ChannelSummariesExperiment.tsx");
 
 export const channelEligibleForSummaries = function channelEligibleForSummaries(channel) {
@@ -115,8 +115,8 @@ export const useGuildEligibleForSummaries = function useGuildEligibleForSummarie
       id = id.id;
     }
     if (null == id) {
-      id = outer1_8;
+      id = outer1_7;
     }
-    return outer1_11(outer1_3.getGuild(id), false);
+    return outer1_10(outer1_3.getGuild(id), false);
   }, items1);
 };

@@ -1,9 +1,9 @@
-// Module ID: 13803
-// Function ID: 105787
+// Module ID: 13814
+// Function ID: 105914
 // Name: setConversationSuggestionsEnabled
-// Dependencies: [31, 27, 7751, 677, 682, 3743, 477, 3, 10127, 1212, 2]
+// Dependencies: [31, 27, 7697, 677, 682, 3744, 477, 3, 10059, 1212, 2]
 
-// Module 13803 (setConversationSuggestionsEnabled)
+// Module 13814 (setConversationSuggestionsEnabled)
 import result from "result";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 import createToggle from "createToggle";

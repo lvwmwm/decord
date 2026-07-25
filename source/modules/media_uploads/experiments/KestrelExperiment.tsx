@@ -1,10 +1,10 @@
-// Module ID: 4711
-// Function ID: 40989
+// Module ID: 4712
+// Function ID: 41001
 // Name: getKestrelConfig
 // Dependencies: [1428, 2]
 // Exports: getEffectiveKestrelLimit, getKestrelConfig, getKestrelVariantName
 
-// Module 4711 (getKestrelConfig)
+// Module 4712 (getKestrelConfig)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-04-kestrel", kind: "user", defaultConfig: { enabled: false, threshold: 0 }, variations: { [0]: { enabled: false, threshold: 0 }, [1]: { enabled: true, threshold: 15 }, [2]: { enabled: true, threshold: 20 }, [3]: { enabled: true, threshold: 25 } } };

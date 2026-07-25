@@ -1,8 +1,8 @@
-// Module ID: 15710
-// Function ID: 121141
-// Dependencies: [31, 27, 10289, 4326, 33, 4130, 15706, 4549, 9164, 2]
+// Module ID: 15721
+// Function ID: 121310
+// Dependencies: [31, 27, 10222, 4327, 33, 4131, 15717, 4550, 9056, 2]
 
-// Module 15710
+// Module 15721
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -17,8 +17,8 @@ const memoResult = require("result").memo(function UnreadBadge(arg0) {
   let resolvedUnreadSetting;
   let unread;
   ({ unread, resolvedUnreadSetting, muted } = arg0);
-  const tmp2 = importDefault(15706)();
-  require(4549) /* getFontScale */;
+  const tmp2 = importDefault(15717)();
+  require(4550) /* getFontScale */;
   let tmp6Result = null;
   if (unread) {
     let obj = {};
@@ -29,7 +29,7 @@ const memoResult = require("result").memo(function UnreadBadge(arg0) {
     obj = { classic: true };
     const _Math = Math;
     let num2 = 1;
-    obj.size = require(9164) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp4, 1);
+    obj.size = require(9056) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp4, 1);
     const obj1 = {};
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       num2 = MUTED_OPACITY_CONTENT;
@@ -37,9 +37,9 @@ const memoResult = require("result").memo(function UnreadBadge(arg0) {
     obj1.opacity = num2;
     const items1 = [obj1];
     obj.badgeStyle = items1;
-    obj.children = jsx(importDefault(9164), { classic: true });
+    obj.children = jsx(importDefault(9056), { classic: true });
     tmp6Result = tmp6(View, obj);
-    const tmp10 = importDefault(9164);
+    const tmp10 = importDefault(9056);
     const tmp7 = View;
   }
   return tmp6Result;

@@ -1,9 +1,9 @@
-// Module ID: 9821
-// Function ID: 76280
+// Module ID: 9745
+// Function ID: 75875
 // Name: OrbLottieAnimation
-// Dependencies: [31, 33, 4066, 3976, 9822, 9825, 2]
+// Dependencies: [31, 33, 4067, 3977, 9746, 9749, 2]
 
-// Module 9821 (OrbLottieAnimation)
+// Module 9745 (OrbLottieAnimation)
 import closure_2 from "result";
 import result from "result";
 import { jsx } from "jsxProd";
@@ -14,9 +14,9 @@ const require = arg1;
 ({ useRef: closure_3, useEffect: closure_4 } = result);
 const forwardRefResult = result.forwardRef((animationType) => {
   animationType = animationType.animationType;
-  let obj = animationType(4066);
+  let obj = animationType(4067);
   const theme = obj.useTheme();
-  const obj2 = animationType(3976);
+  const obj2 = animationType(3977);
   const tmp3 = callback(null);
   const dependencyMap = tmp3;
   const items = [animationType];
@@ -39,9 +39,9 @@ const forwardRefResult = result.forwardRef((animationType) => {
     }
   }));
   if (isThemeLightResult) {
-    let SpendEarnOrbsLottie = tmp6(9822).SpendEarnOrbsLightThemeLottie;
+    let SpendEarnOrbsLottie = tmp6(9746).SpendEarnOrbsLightThemeLottie;
   } else {
-    SpendEarnOrbsLottie = tmp6(9825).SpendEarnOrbsLottie;
+    SpendEarnOrbsLottie = tmp6(9749).SpendEarnOrbsLottie;
   }
   obj = { ref: tmp3, size: "custom", width: 60, height: 60, opacity: 0.8, animation: null, useLottieDefaultColors: true };
   let str = "spend";

@@ -1,10 +1,10 @@
-// Module ID: 8303
-// Function ID: 65381
+// Module ID: 8038
+// Function ID: 63936
 // Name: OverrideProfileFrameLayer
-// Dependencies: [31, 27, 8301, 5510, 33, 4130, 5085, 2]
+// Dependencies: [31, 27, 8036, 5510, 33, 4131, 5085, 2]
 // Exports: default
 
-// Module 8303 (OverrideProfileFrameLayer)
+// Module 8038 (OverrideProfileFrameLayer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO";

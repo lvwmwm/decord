@@ -1,9 +1,9 @@
-// Module ID: 16292
-// Function ID: 126802
+// Module ID: 16303
+// Function ID: 126970
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 1857, 3767, 1849, 653, 33, 4130, 689, 1395, 1392, 4814, 3976, 5468, 4126, 16275, 1212, 3969, 1273, 1387, 4320, 4312, 3712, 1327, 665, 9680, 5151, 5167, 16284, 4660, 4098, 8537, 13625, 3842, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 1858, 3768, 1850, 653, 33, 4131, 689, 1395, 1392, 4815, 3977, 5468, 4127, 16286, 1212, 3970, 1273, 1387, 4321, 4313, 3713, 1327, 665, 9604, 5150, 5166, 16295, 4661, 4099, 8297, 13636, 3843, 566, 2]
 
-// Module 16292 (_isNativeReflectConstruct)
+// Module 16303 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ensureAvatarSource from "ensureAvatarSource";
@@ -43,14 +43,14 @@ function getUserAvatarSource(arg0, action, guildId) {
       if (action.action !== constants.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
         if (action.action !== constants.AUTO_MODERATION_QUARANTINE_USER) {
           if (null != action.options.integration_type) {
-            const value = importDefault(4814).get(action.options.integration_type);
+            const value = importDefault(4815).get(action.options.integration_type);
             if (null != value) {
               const icon = value.icon;
-              const obj2 = require(3976) /* AccessibilityAnnouncer */;
-              const tmp9 = require(3976) /* AccessibilityAnnouncer */.isThemeDark(arg0) ? icon.darkPNG : icon.lightPNG;
+              const obj2 = require(3977) /* AccessibilityAnnouncer */;
+              const tmp9 = require(3977) /* AccessibilityAnnouncer */.isThemeDark(arg0) ? icon.darkPNG : icon.lightPNG;
               return require(1392) /* getAvatarURL */.makeSource(tmp9);
             }
-            const obj = importDefault(4814);
+            const obj = importDefault(4815);
           }
           let tmp4;
           if (null != guildId) {
@@ -76,7 +76,7 @@ function ApplicationHook(applicationId) {
   let tmp2 = null;
   if (null != getOrFetchApplication) {
     obj = { variant: "text-md/normal", color: "text-default", children: getOrFetchApplication.name };
-    tmp2 = callback3(require(4126) /* Text */.Text, obj);
+    tmp2 = callback3(require(4127) /* Text */.Text, obj);
   }
   return tmp2;
 }

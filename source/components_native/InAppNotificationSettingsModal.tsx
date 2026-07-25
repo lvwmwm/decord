@@ -1,9 +1,9 @@
-// Module ID: 10308
-// Function ID: 79566
+// Module ID: 10241
+// Function ID: 79219
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 3767, 4325, 1849, 653, 33, 5079, 5073, 5796, 4320, 7636, 1212, 10309, 566, 5087, 5517, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 3768, 4326, 1850, 653, 33, 5079, 5074, 6554, 4321, 7575, 1212, 10242, 566, 5087, 5517, 2]
 
-// Module 10308 (_isNativeReflectConstruct)
+// Module 10241 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import openUserSettings from "openUserSettings";

@@ -1,10 +1,10 @@
-// Module ID: 8951
-// Function ID: 70544
+// Module ID: 8839
+// Function ID: 70023
 // Name: SecureFramesStreamVerificationBottomSheet
-// Dependencies: [31, 4216, 653, 33, 566, 8946, 8376, 8952, 1212, 8936, 2]
+// Dependencies: [31, 4217, 653, 33, 566, 8834, 8134, 8840, 1212, 8824, 2]
 // Exports: default
 
-// Module 8951 (SecureFramesStreamVerificationBottomSheet)
+// Module 8839 (SecureFramesStreamVerificationBottomSheet)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticsSections } from "ME";
@@ -41,8 +41,8 @@ export default function SecureFramesStreamVerificationBottomSheet(channelId) {
   obj.subtitle = intl2.string(channelId(1212).t.qODBkW);
   const intl3 = channelId(1212).intl;
   obj = {};
-  const tmp3 = streamKey(8952);
-  obj.helpArticle = channelId(8936).getSecureFramesHelpdeskArticle();
+  const tmp3 = streamKey(8840);
+  obj.helpArticle = channelId(8824).getSecureFramesHelpdeskArticle();
   obj.footer = intl3.format(channelId(1212).t["H3+ktv"], obj);
   obj.epochAuthenticator = stateFromStores;
   obj.onShareClick = callback;

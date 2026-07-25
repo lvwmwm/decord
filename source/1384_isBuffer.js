@@ -1,5 +1,5 @@
 // Module ID: 1384
-// Function ID: 16539
+// Function ID: 16546
 // Name: isBuffer
 // Dependencies: []
 

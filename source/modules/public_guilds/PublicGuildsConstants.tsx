@@ -1,9 +1,9 @@
-// Module ID: 7811
-// Function ID: 61757
+// Module ID: 7758
+// Function ID: 61729
 // Name: PUBLIC_SUCCESS_MODAL_SEEN_KEY
 // Dependencies: [653, 483, 2]
 
-// Module 7811 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
+// Module 7758 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
 import importAllResult from "fromHexReverseArray";
 
 const items = [, , , , , , , , , , , , , ];

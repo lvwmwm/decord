@@ -1,16 +1,16 @@
-// Module ID: 12710
-// Function ID: 98873
+// Module ID: 12721
+// Function ID: 99000
 // Name: useSharedSpacesWarningStore
-// Dependencies: [621, 3999, 6945, 2]
+// Dependencies: [621, 4000, 5936, 2]
 // Exports: dequeueBlockWarning, getChannelDismissTimestamp, getGlobalDismissTimestamp, getUserDismissTimestamp, isBlockedWarningQueued, queueBlockWarning, setDismissalTimeForChannel, setDismissalTimeForUser, setDismissalTimeForUsers
 
-// Module 12710 (useSharedSpacesWarningStore)
+// Module 12721 (useSharedSpacesWarningStore)
 import keys from "keys";
 import createJSONStorage from "createJSONStorage";
 import createJSONStorage from "createJSONStorage";
 
 let obj = { name: "shared-spaces-warning-storage" };
-obj.storage = createJSONStorage.createJSONStorage(() => importDefault(6945));
+obj.storage = createJSONStorage.createJSONStorage(() => importDefault(5936));
 obj = keys.create(createJSONStorage.persist(() => ({ channelDismissTimestamps: {}, userDismissTimestamps: {}, globalDismissTimestamp: null, queuedWarning: false }), obj));
 const result = require("frozen").fileFinishedImporting("modules/shared_space_warnings/SharedSpacesWarningStore.tsx");
 

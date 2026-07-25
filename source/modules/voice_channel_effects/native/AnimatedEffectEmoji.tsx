@@ -1,10 +1,10 @@
-// Module ID: 10625
-// Function ID: 82856
+// Module ID: 10537
+// Function ID: 81504
 // Name: Emoji
-// Dependencies: [31, 27, 4122, 33, 664, 4130, 689, 5085, 1273, 566, 3991, 4131, 5744, 2]
+// Dependencies: [31, 27, 4123, 33, 664, 4131, 689, 5085, 1273, 566, 3992, 4132, 10509, 2]
 // Exports: default
 
-// Module 10625 (Emoji)
+// Module 10537 (Emoji)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

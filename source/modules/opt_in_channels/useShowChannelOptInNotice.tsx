@@ -1,10 +1,10 @@
-// Module ID: 10465
-// Function ID: 80569
+// Module ID: 10399
+// Function ID: 80238
 // Name: useShowChannelOptInNotice
-// Dependencies: [4325, 653, 1355, 6767, 566, 5605, 2]
+// Dependencies: [4326, 653, 1355, 5761, 566, 5605, 2]
 // Exports: default
 
-// Module 10465 (useShowChannelOptInNotice)
+// Module 10399 (useShowChannelOptInNotice)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { NULL_STRING_GUILD_ID } from "ME";
 import { ChannelFlags } from "set";
@@ -18,8 +18,8 @@ export default function useShowChannelOptInNotice(getGuildId) {
   if (null != getGuildId) {
     guildId = getGuildId.getGuildId();
   }
-  let optInEnabledForGuild = _require(6767).useOptInEnabledForGuild(null != guildId ? getGuildId.guild_id : NULL_STRING_GUILD_ID);
-  const obj = _require(6767);
+  let optInEnabledForGuild = _require(5761).useOptInEnabledForGuild(null != guildId ? getGuildId.guild_id : NULL_STRING_GUILD_ID);
+  const obj = _require(5761);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(566).useStateFromStores(items, () => {
     let result = null != closure_0;

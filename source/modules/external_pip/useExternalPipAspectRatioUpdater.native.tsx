@@ -1,10 +1,10 @@
-// Module ID: 15818
-// Function ID: 122039
+// Module ID: 15829
+// Function ID: 122208
 // Name: useExternalPipAspectRatioUpdater
-// Dependencies: [31, 10263, 2]
+// Dependencies: [31, 10196, 2]
 // Exports: default
 
-// Module 15818 (useExternalPipAspectRatioUpdater)
+// Module 15829 (useExternalPipAspectRatioUpdater)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("modules/external_pip/useExternalPipAspectRatioUpdater.native.tsx");

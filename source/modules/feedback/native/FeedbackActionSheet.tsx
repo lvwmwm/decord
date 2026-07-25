@@ -1,10 +1,10 @@
-// Module ID: 9557
-// Function ID: 74309
+// Module ID: 9478
+// Function ID: 73896
 // Name: closeActionSheet
-// Dependencies: [57, 31, 27, 9536, 33, 4130, 689, 4098, 8328, 22, 9539, 4559, 4337, 9558, 1934, 1557, 5187, 5186, 5499, 5189, 4126, 9540, 5501, 5165, 9132, 1212, 2]
+// Dependencies: [57, 31, 27, 9457, 33, 4131, 689, 4099, 8063, 22, 9460, 4560, 4338, 9479, 1935, 1557, 5187, 5186, 5499, 5189, 4127, 9461, 5501, 5164, 9024, 1212, 2]
 // Exports: default
 
-// Module 9557 (closeActionSheet)
+// Module 9478 (closeActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -16,7 +16,7 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function closeActionSheet() {
-  importDefault(4098).hideActionSheet();
+  importDefault(4099).hideActionSheet();
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 _createForOfIteratorHelperLoose = {};

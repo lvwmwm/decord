@@ -1,10 +1,10 @@
-// Module ID: 11664
-// Function ID: 90578
+// Module ID: 11633
+// Function ID: 90322
 // Name: UserProfileStackedActionSheet
-// Dependencies: [31, 27, 33, 4130, 689, 1557, 5189, 7636, 477, 5187, 4660, 1212, 5091, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1557, 5189, 7575, 477, 5187, 4661, 1212, 5091, 4127, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 11664 (UserProfileStackedActionSheet)
+// Module 11633 (UserProfileStackedActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -56,11 +56,11 @@ export default function UserProfileStackedActionSheet(onBack) {
     obj2.onPress = onBack;
     const obj3 = { size: "md" };
     obj2.children = callback(require(5091) /* ArrowLargeLeftIcon */.ArrowLargeLeftIcon, obj3);
-    tmp9 = callback(require(4660) /* PressableBase */.PressableOpacity, obj2);
+    tmp9 = callback(require(4661) /* PressableBase */.PressableOpacity, obj2);
   }
   const items1 = [tmp9, , ];
   const obj4 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-  items1[1] = callback(require(4126) /* Text */.Text, obj4);
+  items1[1] = callback(require(4127) /* Text */.Text, obj4);
   if (tmp4) {
     const obj5 = { style: tmp3.headerSpacer };
     tmp4 = callback(View, obj5);

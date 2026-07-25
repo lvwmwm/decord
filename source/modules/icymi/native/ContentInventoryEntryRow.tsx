@@ -1,10 +1,10 @@
-// Module ID: 15274
-// Function ID: 116476
+// Module ID: 15284
+// Function ID: 116604
 // Name: ContentInventoryEntryRow
-// Dependencies: [31, 3767, 33, 566, 7901, 15275, 15284, 2]
+// Dependencies: [31, 3768, 33, 566, 7848, 15285, 15294, 2]
 // Exports: default
 
-// Module 15274 (ContentInventoryEntryRow)
+// Module 15284 (ContentInventoryEntryRow)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -25,22 +25,22 @@ export default function ContentInventoryEntryRow(content) {
     return null;
   } else {
     const content_type = content.content_type;
-    if (content(7901).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (content(7901).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (content(7901).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (content(7848).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(7848).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(7848).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           obj = { content, renderForScreenshot: flag };
           let tmp11 = null != visible;
           if (tmp11) {
             tmp11 = visible;
           }
           obj.visible = tmp11;
-          return jsx(importDefault(15284), { content, renderForScreenshot: flag });
+          return jsx(importDefault(15294), { content, renderForScreenshot: flag });
         } else {
           return null;
         }
       }
     }
     obj = { content, renderForScreenshot: flag };
-    return jsx(importDefault(15275), { content, renderForScreenshot: flag });
+    return jsx(importDefault(15285), { content, renderForScreenshot: flag });
   }
 };

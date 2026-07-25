@@ -1,9 +1,9 @@
-// Module ID: 16352
-// Function ID: 127432
+// Module ID: 16363
+// Function ID: 127600
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1388, 16353, 1911, 1910, 8483, 16347, 653, 16354, 11485, 4571, 1327, 483, 3763, 665, 1913, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1388, 16364, 1912, 1911, 8243, 16358, 653, 16365, 11448, 4572, 1327, 483, 3764, 665, 1914, 22, 566, 686, 2]
 
-// Module 16352 (_isNativeReflectConstruct)
+// Module 16363 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
@@ -50,7 +50,7 @@ function clearConfigurationEdit(id) {
 function calculatePositionDeltas() {
   if (null != user) {
     if (null != closure_30) {
-      let obj = importDefault(11485);
+      let obj = importDefault(11448);
       obj = {
         oldOrdering: store.getSortedRoles(user.id),
         newOrdering: closure_30,
@@ -499,7 +499,7 @@ obj = {
     const tmp = _getRole(id.id);
     let tmp2 = null != tmp;
     if (tmp2) {
-      const obj = { permissions: importAll(3763).NONE };
+      const obj = { permissions: importAll(3764).NONE };
       tmp2 = updateRole(tmp, obj);
     }
     return tmp2;
@@ -568,7 +568,7 @@ obj = {
     if (null == tmp) {
       return false;
     } else {
-      const result = require(1913) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(colors);
+      const result = require(1914) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(colors);
       const value = map2.get(id);
       let tmp8 = null != value;
       if (tmp8) {
@@ -719,7 +719,7 @@ obj = {
       } else {
         let obj = { currentStyle, styleColors: value.styleColors };
         const result = map2.set(id, obj);
-        const result1 = require(1913) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(tmp7);
+        const result1 = require(1914) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(tmp7);
         obj = {};
         const primary_color = tmp7.primary_color;
         let tmp2;

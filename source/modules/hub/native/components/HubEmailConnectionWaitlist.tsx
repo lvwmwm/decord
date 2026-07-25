@@ -1,10 +1,10 @@
-// Module ID: 11795
-// Function ID: 91589
+// Module ID: 11771
+// Function ID: 91394
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1456, 5788, 1212, 11796, 1273, 4126, 4543, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1456, 6695, 1212, 11772, 1273, 4127, 4544, 2]
 // Exports: default
 
-// Module 11795 (HubEmailConnectionWaitlist)
+// Module 11771 (HubEmailConnectionWaitlist)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,7 +43,7 @@ export default function HubEmailConnectionWaitlist(school) {
     });
   }, items);
   obj = { style: tmp.container };
-  obj = { source: navigation(11796), style: tmp.header };
+  obj = { source: navigation(11772), style: tmp.header };
   const items1 = [callback(closure_5, obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header" };
   let intl = onClose(1212).intl;
@@ -52,13 +52,13 @@ export default function HubEmailConnectionWaitlist(school) {
   const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   const intl2 = onClose(1212).intl;
   obj2.children = intl2.format(onClose(1212).t.Rs7MXJ, { school: school.school });
-  items1[2] = callback(onClose(4126).Text, obj2);
+  items1[2] = callback(onClose(4127).Text, obj2);
   const obj3 = { style: tmp.redesignButton };
   const obj4 = { size: "lg" };
   const intl3 = onClose(1212).intl;
   obj4.text = intl3.string(onClose(1212).t.i4jeWR);
   obj4.onPress = onClose;
-  obj3.children = callback(onClose(4543).Button, obj4);
+  obj3.children = callback(onClose(4544).Button, obj4);
   items1[3] = callback(closure_4, obj3);
   obj.children = items1;
   return callback2(closure_4, obj);

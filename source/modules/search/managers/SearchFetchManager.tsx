@@ -1,9 +1,9 @@
-// Module ID: 10121
-// Function ID: 78305
+// Module ID: 10053
+// Function ID: 77935
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 10119, 10120, 2]
+// Dependencies: [6, 7, 15, 17, 18, 10051, 10052, 2]
 
-// Module 10121 (_isNativeReflectConstruct)
+// Module 10053 (_isNativeReflectConstruct)
 import AbstractSearchFetchManager from "AbstractSearchFetchManager";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

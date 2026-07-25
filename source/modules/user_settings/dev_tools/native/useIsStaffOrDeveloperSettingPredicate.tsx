@@ -1,10 +1,10 @@
-// Module ID: 13796
-// Function ID: 105740
+// Module ID: 13807
+// Function ID: 105867
 // Name: useStaffOrDeveloperSettingPredicate
-// Dependencies: [6960, 566, 2]
+// Dependencies: [5951, 566, 2]
 // Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 13796 (useStaffOrDeveloperSettingPredicate)
+// Module 13807 (useStaffOrDeveloperSettingPredicate)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

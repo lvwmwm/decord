@@ -1,20 +1,20 @@
-// Module ID: 4227
-// Function ID: 36897
+// Module ID: 4228
+// Function ID: 36908
 // Name: getMediaEngineImpl
-// Dependencies: [4191, 4228, 4298, 2, 4280, 4299]
+// Dependencies: [4192, 4229, 4299, 2, 4281, 4300]
 // Exports: determineMediaEngine, initializeMediaEngine
 
-// Module 4227 (getMediaEngineImpl)
+// Module 4228 (getMediaEngineImpl)
 import DesktopSources from "DesktopSources";
 
 function getMediaEngineImpl(getMediaEngineImpl) {
   if (constants.NATIVE === getMediaEngineImpl) {
-    return require(4228) /* _isNativeReflectConstruct */.default;
+    return require(4229) /* _isNativeReflectConstruct */.default;
   } else {
     if (constants.WEBRTC !== getMediaEngineImpl) {
       const DUMMY = constants.DUMMY;
     }
-    return require(4298) /* _isNativeReflectConstruct */.default;
+    return require(4299) /* _isNativeReflectConstruct */.default;
   }
 }
 let closure_2 = DesktopSources.MediaEngineImplementations;

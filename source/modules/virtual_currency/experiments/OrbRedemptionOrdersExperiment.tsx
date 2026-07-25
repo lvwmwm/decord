@@ -1,9 +1,9 @@
-// Module ID: 8768
-// Function ID: 69298
+// Module ID: 8656
+// Function ID: 68775
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 8768 (apexExperiment)
+// Module 8656 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2025-12-orb-redemption-thru-orders", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

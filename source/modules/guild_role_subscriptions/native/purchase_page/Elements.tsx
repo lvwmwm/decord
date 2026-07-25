@@ -1,10 +1,10 @@
-// Module ID: 15315
-// Function ID: 116809
+// Module ID: 15325
+// Function ID: 116937
 // Name: TruncatedText
-// Dependencies: [57, 31, 27, 3781, 33, 4130, 689, 4126, 1212, 4660, 1273, 15316, 7433, 14166, 624, 7434, 5616, 2]
+// Dependencies: [57, 31, 27, 3782, 33, 4131, 689, 4127, 1212, 4661, 1273, 15326, 6515, 14177, 624, 6516, 5616, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15315 (TruncatedText)
+// Module 15325 (TruncatedText)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -80,7 +80,7 @@ export const TruncatedText = function TruncatedText(lineClamp) {
         callback2(nativeEvent.nativeEvent.lines.length > num);
       }
     };
-    const items = [closure_9(num(4126).Text, obj1), first1];
+    const items = [closure_9(num(4127).Text, obj1), first1];
     obj.children = items;
     return closure_10(closure_6, obj);
   } else {
@@ -96,7 +96,7 @@ export const TruncatedText = function TruncatedText(lineClamp) {
       stringResult = string(JQX_Pb.Fbrd8J);
     }
     obj2.children = stringResult;
-    obj2 = tmp8(num(4126).Text, obj2);
+    obj2 = tmp8(num(4127).Text, obj2);
     obj.children = obj2;
     closure_9(closure_7, obj);
     const tmp9 = closure_7;
@@ -109,19 +109,19 @@ export const ArrowButton = function ArrowButton(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress };
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
-  const items = [callback2(require(4126) /* Text */.Text, obj), ];
-  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, source: importDefault(15316), style: tmp.arrowButtonIcon };
+  const items = [callback2(require(4127) /* Text */.Text, obj), ];
+  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, source: importDefault(15326), style: tmp.arrowButtonIcon };
   items[1] = callback2(require(1273) /* Button */.Icon, obj);
   obj.children = items;
-  return callback3(require(4660) /* PressableBase */.PressableOpacity, obj);
+  return callback3(require(4661) /* PressableBase */.PressableOpacity, obj);
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
-  const obj = importDefault(7433);
-  const _require = callback(importAll(14166).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(14166);
+  const obj = importDefault(6515);
+  const _require = callback(importAll(14177).useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = importAll(14177);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(624).useStateFromStores(items, () => outer1_8.get(id.id));
-  const price = importDefault(7434)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
+  const price = importDefault(6516)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;

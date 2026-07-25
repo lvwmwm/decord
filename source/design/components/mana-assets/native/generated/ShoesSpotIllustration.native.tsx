@@ -1,10 +1,10 @@
-// Module ID: 6508
-// Function ID: 50727
+// Module ID: 7428
+// Function ID: 60377
 // Name: ShoesSpotIllustration
-// Dependencies: [33, 5085, 6509, 2]
+// Dependencies: [33, 5085, 7429, 2]
 // Exports: ShoesSpotIllustration
 
-// Module 6508 (ShoesSpotIllustration)
+// Module 7428 (ShoesSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ShoesSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const ShoesSpotIllustration = function ShoesSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6509) };
+  obj = { uri: importDefault(7429) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

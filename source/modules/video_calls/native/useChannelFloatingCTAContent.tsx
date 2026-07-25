@@ -1,10 +1,10 @@
-// Module ID: 15790
-// Function ID: 121801
+// Module ID: 15801
+// Function ID: 121970
 // Name: useChannelFloatingCTAContent
-// Dependencies: [31, 4177, 4202, 624, 8972, 1334, 2]
+// Dependencies: [31, 4178, 4203, 624, 8860, 1334, 2]
 // Exports: default
 
-// Module 15790 (useChannelFloatingCTAContent)
+// Module 15801 (useChannelFloatingCTAContent)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

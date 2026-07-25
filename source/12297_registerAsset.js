@@ -1,11 +1,11 @@
 // Module ID: 12297
-// Function ID: 95983
+// Function ID: 95850
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12297 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 144, height: 150, scales: [1], hash: "8d849400b440a33fbe389f999a0310ea", name: "cake_idle", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_templates/native/images", width: 32, height: 32, scales: [2, 3], hash: "10db56263423f61f9d871a4581be001b", name: "ic_guild_template", type: "png" };
 
 export default registerAsset.registerAsset(obj);

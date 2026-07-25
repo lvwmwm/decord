@@ -1,10 +1,10 @@
-// Module ID: 8944
-// Function ID: 70498
+// Module ID: 8832
+// Function ID: 69977
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 57, 31, 4202, 8938, 566, 8936, 2]
+// Dependencies: [5, 57, 31, 4203, 8826, 566, 8824, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 8944 (useIsPersistentSecureFramesFingerprint)
+// Module 8832 (useIsPersistentSecureFramesFingerprint)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

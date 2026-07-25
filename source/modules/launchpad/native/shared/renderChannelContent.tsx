@@ -1,10 +1,10 @@
-// Module ID: 15711
-// Function ID: 121143
+// Module ID: 15722
+// Function ID: 121312
 // Name: ChannelContent
-// Dependencies: [31, 27, 10289, 4326, 33, 4130, 477, 15706, 4623, 15712, 4126, 4652, 7631, 15018, 2]
+// Dependencies: [31, 27, 10222, 4327, 33, 4131, 477, 15717, 4624, 15723, 4127, 4653, 7570, 15028, 2]
 // Exports: default
 
-// Module 15711 (ChannelContent)
+// Module 15722 (ChannelContent)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
@@ -39,7 +39,7 @@ function ChannelContent(arg0) {
   let tmp3 = null != channel;
   if (tmp3) {
     if (!locked) {
-      locked = importDefault(4623)(channel);
+      locked = importDefault(4624)(channel);
     }
     tmp3 = locked;
   }
@@ -82,20 +82,20 @@ function ChannelContent(arg0) {
   const tmp16 = closure_8;
   const tmp17 = View;
   const tmp18 = callback;
-  const tmp2 = importDefault(15706)();
+  const tmp2 = importDefault(15717)();
   if (null == resolvedUnreadSetting) {
     resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
   }
   obj4.resolvedUnreadSetting = resolvedUnreadSetting;
   obj4.connected = connected;
-  const items1 = [tmp18(importDefault(15712), obj4), , ];
+  const items1 = [tmp18(importDefault(15723), obj4), , ];
   let tmp21 = null;
   if (null != channelCategoryName) {
     const obj5 = { variant: "text-xs/bold", color: "text-muted" };
     const obj6 = { marginRight: 4 };
     obj5.style = obj6;
     obj5.children = channelCategoryName;
-    tmp21 = callback(require(4126) /* Text */.Text, obj5);
+    tmp21 = callback(require(4127) /* Text */.Text, obj5);
   }
   items1[1] = tmp21;
   let tmp26Result = tmp3;
@@ -118,17 +118,17 @@ function ChannelContent(arg0) {
     obj7.style = items2;
     if (tmp3) {
       const obj9 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      tmp3 = callback(require(4652) /* LockIcon */.LockIcon, obj9);
+      tmp3 = callback(require(4653) /* LockIcon */.LockIcon, obj9);
     }
     const items3 = [tmp3, , ];
     if (isNSFWResult) {
       const obj10 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      isNSFWResult = callback(require(7631) /* WarningIcon */.WarningIcon, obj10);
+      isNSFWResult = callback(require(7570) /* WarningIcon */.WarningIcon, obj10);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj11 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = callback(importDefault(15018), obj11);
+      isSubscriptionGated = callback(importDefault(15028), obj11);
     }
     items3[2] = isSubscriptionGated;
     obj7.children = items3;
@@ -176,7 +176,7 @@ function ChannelContent(arg0) {
     obj17.opacity = num14;
     obj16.style = obj17;
     obj16.children = lastMessageTimestampString;
-    tmp43Result = callback(require(4126) /* Text */.Text, obj16);
+    tmp43Result = callback(require(4127) /* Text */.Text, obj16);
     const tmp43 = callback;
   }
   const items7 = [tmp43Result, , ];

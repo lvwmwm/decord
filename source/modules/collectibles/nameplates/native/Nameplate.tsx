@@ -1,10 +1,10 @@
-// Module ID: 8273
-// Function ID: 65241
+// Module ID: 8008
+// Function ID: 63796
 // Name: NameplateInner
-// Dependencies: [31, 4122, 33, 4130, 566, 4066, 3991, 4131, 1873, 8274, 4554, 477, 8043, 5085, 2]
+// Dependencies: [31, 4123, 33, 4131, 566, 4067, 3992, 4132, 1874, 8009, 4555, 477, 6153, 5085, 2]
 // Exports: default
 
-// Module 8273 (NameplateInner)
+// Module 8008 (NameplateInner)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -55,7 +55,7 @@ function NameplateInner(isFocused) {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
   const tmp2 = callback2(flag3, isPressed, flag, flag2, flag5);
-  let obj1 = flag6(3991);
+  let obj1 = flag6(3992);
   let num = 1;
   if (flag6) {
     num = 0;
@@ -71,7 +71,7 @@ function NameplateInner(isFocused) {
       const result = sharedValue.set(obj.withTiming(1, obj));
     }
   }, items1);
-  let obj2 = flag6(3991);
+  let obj2 = flag6(3992);
   const fn = function j() {
     return { opacity: sharedValue.get() };
   };
@@ -79,9 +79,9 @@ function NameplateInner(isFocused) {
   fn.__workletHash = 15588901070870;
   fn.__initData = closure_8;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  let obj3 = flag6(1873);
-  const backgroundGradientColors = obj3.getBackgroundGradientColors(nameplate.palette, sharedValue(4066)());
-  let obj4 = flag6(8274);
+  let obj3 = flag6(1874);
+  const backgroundGradientColors = obj3.getBackgroundGradientColors(nameplate.palette, sharedValue(4067)());
+  let obj4 = flag6(8009);
   const nameplateAssets = obj4.getNameplateAssets(nameplate);
   ({ staticImageUrl, animatedImageUrl } = nameplateAssets);
   if (flag7) {
@@ -111,21 +111,21 @@ function NameplateInner(isFocused) {
     const items3 = [, ];
     ({ left: arr4[0], right: arr4[1] } = backgroundGradientColors);
     obj.colors = items3;
-    tmp11Result = callback(sharedValue(4554), obj);
+    tmp11Result = callback(sharedValue(4555), obj);
     const tmp11 = callback;
-    const tmp14 = sharedValue(4554);
+    const tmp14 = sharedValue(4555);
   }
   const items4 = [tmp11Result, ];
-  const tmp3 = sharedValue(4066)();
+  const tmp3 = sharedValue(4067)();
   const tmp9 = closure_6;
   if (obj9.isAndroid()) {
     if (flag7) {
       obj2 = { url: str, style: tmp2.img, autoplay: true };
-      let tmp15 = callback(flag6(8043).APNGPlayer, obj2);
+      let tmp15 = callback(flag6(6153).APNGPlayer, obj2);
     }
     items4[1] = tmp15;
     obj.children = items4;
-    return tmp9(sharedValue(3991).View, obj);
+    return tmp9(sharedValue(3992).View, obj);
   }
   obj3 = { source: obj4, style: tmp2.img, accessibilityRole: "image" };
   obj4 = { uri: str };

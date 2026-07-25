@@ -1,9 +1,9 @@
-// Module ID: 6916
-// Function ID: 55088
+// Module ID: 5907
+// Function ID: 52394
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 6917, 2]
+// Dependencies: [6, 7, 15, 17, 18, 27, 5908, 2]
 
-// Module 6916 (_isNativeReflectConstruct)
+// Module 5907 (_isNativeReflectConstruct)
 import ProcessUtils from "ProcessUtils";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

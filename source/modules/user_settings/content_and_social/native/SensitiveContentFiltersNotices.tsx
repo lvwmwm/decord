@@ -1,10 +1,10 @@
-// Module ID: 13771
-// Function ID: 105566
+// Module ID: 13782
+// Function ID: 105693
 // Name: SensitiveContentFiltersTeenNotice
-// Dependencies: [31, 7563, 33, 5678, 13701, 1212, 3827, 1920, 7581, 7583, 2]
+// Dependencies: [31, 6659, 33, 5855, 13712, 1212, 3828, 1921, 6690, 6692, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 13771 (SensitiveContentFiltersTeenNotice)
+// Module 13782 (SensitiveContentFiltersTeenNotice)
 import "result";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 let result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersNotices.tsx");
 
 export const SensitiveContentFiltersTeenNotice = function SensitiveContentFiltersTeenNotice() {
-  let obj = _require(5678);
+  let obj = _require(5855);
   _require = obj.useSensitiveContentFilterHelpArticle();
   obj = {
     label: _require(1212).t.EUo0yj,
@@ -23,7 +23,7 @@ export const SensitiveContentFiltersTeenNotice = function SensitiveContentFilter
     },
     noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
   };
-  return jsx(importDefault(13701), {
+  return jsx(importDefault(13712), {
     label: _require(1212).t.EUo0yj,
     labelHook() {
       const obj = outer1_1(outer1_2[6]);
@@ -42,7 +42,7 @@ export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveCo
     },
     noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
   };
-  return jsx(importDefault(13701), {
+  return jsx(importDefault(13712), {
     label: require(1212) /* getSystemLocale */.t.OX4ybh,
     labelHook() {
       let obj = outer1_1(outer1_2[8]);

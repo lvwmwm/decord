@@ -1,5 +1,5 @@
 // Module ID: 1659
-// Function ID: 18416
+// Function ID: 18423
 // Name: rubberBandDecay
 // Dependencies: [1658]
 

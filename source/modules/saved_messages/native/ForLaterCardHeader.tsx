@@ -1,10 +1,10 @@
-// Module ID: 9961
-// Function ID: 76989
+// Module ID: 9889
+// Function ID: 76604
 // Name: HeaderIcon
-// Dependencies: [27, 1838, 33, 4130, 689, 5512, 566, 5513, 9134, 1273, 4629, 4320, 4593, 1212, 4126, 2]
+// Dependencies: [27, 1838, 33, 4131, 689, 5512, 566, 5513, 9026, 1273, 4630, 4321, 4594, 1212, 4127, 2]
 // Exports: ForLaterCardHeader
 
-// Module 9961 (HeaderIcon)
+// Module 9889 (HeaderIcon)
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import jsxProd from "jsxProd";
@@ -25,13 +25,13 @@ function HeaderIcon(channel) {
     if (null != channel) {
       if (channel.isGroupDM()) {
         obj = { channel, size: channel(1273).AvatarSizes.XSMALL };
-        tmp8 = callback(importDefault(9134), obj);
-        const tmp12 = importDefault(9134);
+        tmp8 = callback(importDefault(9026), obj);
+        const tmp12 = importDefault(9026);
       }
     }
     const obj1 = { style: tmp.dmIcon };
     const obj2 = { size: "xxs" };
-    obj1.children = callback(channel(4629).ChatIcon, obj2);
+    obj1.children = callback(channel(4630).ChatIcon, obj2);
     tmp8 = callback(View, obj1);
   }
   return tmp8;
@@ -42,8 +42,8 @@ function ChannelName(channel) {
   let obj = channel(566);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
-  const tmp3 = importDefault(4320)(channel, false);
-  let obj1 = channel(4593);
+  const tmp3 = importDefault(4321)(channel, false);
+  let obj1 = channel(4594);
   const channelIconComponentWithGuild = obj1.getChannelIconComponentWithGuild(channel, stateFromStores);
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {
@@ -63,7 +63,7 @@ function ChannelName(channel) {
   }
   const items1 = [tmp12, ];
   const obj2 = { style: tmp.channelName, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: formatToPlainStringResult };
-  items1[1] = callback(channel(4126).Text, obj2);
+  items1[1] = callback(channel(4127).Text, obj2);
   obj.children = items1;
   return closure_6(View, obj);
 }

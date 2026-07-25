@@ -1,7 +1,7 @@
 // Module ID: 5608
-// Function ID: 47690
+// Function ID: 47695
 // Name: items
-// Dependencies: [4042, 2]
+// Dependencies: [4043, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
 // Module 5608 (items)

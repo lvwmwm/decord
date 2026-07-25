@@ -1,9 +1,9 @@
-// Module ID: 14367
-// Function ID: 109953
+// Module ID: 14378
+// Function ID: 110080
 // Name: toggle
-// Dependencies: [7751, 653, 3803, 10260, 1212, 675, 10127, 2]
+// Dependencies: [7697, 653, 3804, 10193, 1212, 675, 10059, 2]
 
-// Module 14367 (toggle)
+// Module 14378 (toggle)
 import { AnalyticEvents } from "ME";
 import createToggle from "createToggle";
 
@@ -14,13 +14,13 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: function useInAppNotificationsSettingValue() {
-    const FocusMode = require(3803) /* explicitContentFromProto */.FocusMode;
+    const FocusMode = require(3804) /* explicitContentFromProto */.FocusMode;
     const setting = FocusMode.useSetting();
-    const ShowInAppNotifications = require(3803) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(3804) /* explicitContentFromProto */.ShowInAppNotifications;
     return !setting && ShowInAppNotifications.useSetting();
   },
   onValueChange: function updateInAppNotificationSettings(notifications_in_app_enabled) {
-    const ShowInAppNotifications = require(3803) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(3804) /* explicitContentFromProto */.ShowInAppNotifications;
     ShowInAppNotifications.updateSetting(notifications_in_app_enabled);
     let obj = importDefault(675);
     obj = { notifications_in_app_enabled };
@@ -43,13 +43,13 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: function useInAppNotificationsSettingValue() {
-    const FocusMode = require(3803) /* explicitContentFromProto */.FocusMode;
+    const FocusMode = require(3804) /* explicitContentFromProto */.FocusMode;
     const setting = FocusMode.useSetting();
-    const ShowInAppNotifications = require(3803) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(3804) /* explicitContentFromProto */.ShowInAppNotifications;
     return !setting && ShowInAppNotifications.useSetting();
   },
   onValueChange: function updateInAppNotificationSettings(notifications_in_app_enabled) {
-    const ShowInAppNotifications = require(3803) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(3804) /* explicitContentFromProto */.ShowInAppNotifications;
     ShowInAppNotifications.updateSetting(notifications_in_app_enabled);
     let obj = importDefault(675);
     obj = { notifications_in_app_enabled };

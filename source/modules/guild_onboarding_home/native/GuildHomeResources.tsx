@@ -1,10 +1,10 @@
-// Module ID: 15339
-// Function ID: 116923
+// Module ID: 15349
+// Function ID: 117051
 // Name: ResourceChannelRow
-// Dependencies: [31, 27, 1348, 1907, 4349, 3758, 653, 33, 4130, 689, 566, 8372, 11163, 15340, 6691, 11412, 1392, 4660, 4126, 4120, 15333, 1198, 1212, 15341, 4543, 2]
+// Dependencies: [31, 27, 1348, 1908, 4350, 3759, 653, 33, 4131, 689, 566, 8130, 11123, 15350, 5685, 11375, 1392, 4661, 4127, 4121, 15343, 1198, 1212, 15351, 4544, 2]
 // Exports: default
 
-// Module 15339 (ResourceChannelRow)
+// Module 15349 (ResourceChannelRow)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -39,9 +39,9 @@ function ResourceChannelRow(channelId) {
   const items2 = [closure_8];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => outer1_8.getMessages(channelId));
   const firstResult = stateFromStores2.first();
-  let obj4 = channelId(8372);
+  let obj4 = channelId(8130);
   const forumPostMediaProperties = obj4.useForumPostMediaProperties(firstResult, false);
-  let obj5 = channelId(8372);
+  let obj5 = channelId(8130);
   let length;
   const firstMediaIsEmbed = obj5.useFirstMediaIsEmbed(firstResult, false);
   if (null != forumPostMediaProperties) {
@@ -51,10 +51,10 @@ function ResourceChannelRow(channelId) {
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  let obj6 = channelId(11163);
+  let obj6 = channelId(11123);
   obj = { channel: stateFromStores, media: first };
   const shouldObscure = obj6.useSharedMediaProps(obj).shouldObscure;
-  const tmp8 = stateFromStores(15340)(firstResult);
+  const tmp8 = stateFromStores(15350)(firstResult);
   const tmp9 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp9;
   const items3 = [channelId, tmp9];
@@ -74,7 +74,7 @@ function ResourceChannelRow(channelId) {
       obj1 = { onPress: tmp11, style: tmp.channelContainer };
       obj2 = { style: tmp.textContent };
       const obj3 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: channelId.title };
-      const items4 = [callback(channelId(4126).Text, obj3), , ];
+      const items4 = [callback(channelId(4127).Text, obj3), , ];
       let tmp22 = tmp15;
       if (null == description || 0 === description.length) {
         tmp22 = null != tmp8;
@@ -83,18 +83,18 @@ function ResourceChannelRow(channelId) {
         obj4 = { variant: "text-sm/normal", color: "text-default", style: tmp.messageContent, lineClamp: 3, ellipsizeMode: "tail" };
         obj5 = {};
         ({ guild_id: obj16.guildId, id: obj16.channelId } = stateFromStores);
-        obj4.children = stateFromStores(4120).parse(tmp8, true, obj5);
-        tmp22 = callback(channelId(4126).Text, obj4);
-        const obj15 = stateFromStores(4120);
+        obj4.children = stateFromStores(4121).parse(tmp8, true, obj5);
+        tmp22 = callback(channelId(4127).Text, obj4);
+        const obj15 = stateFromStores(4121);
       }
       items4[1] = tmp22;
       let tmp27 = !tmp15;
       if (!(null == description || 0 === description.length)) {
         obj6 = { variant: "text-sm/normal", color: "text-default", style: tmp.messageContent, lineClamp: 3, ellipsizeMode: "tail" };
         ({ guild_id: obj19.guildId, id: obj19.channelId } = stateFromStores);
-        obj6.children = stateFromStores(4120).parse(description, true, {});
-        tmp27 = callback(channelId(4126).Text, obj6);
-        const obj18 = stateFromStores(4120);
+        obj6.children = stateFromStores(4121).parse(description, true, {});
+        tmp27 = callback(channelId(4127).Text, obj6);
+        const obj18 = stateFromStores(4121);
         const obj7 = {};
       }
       items4[2] = tmp27;
@@ -124,15 +124,15 @@ function ResourceChannelRow(channelId) {
               if (tmp39) {
                 tmp39 = shouldObscure;
               }
-              obj10.embedLeftBorderColor = channelId(8372).getEmbedColor(firstResult, tmp39);
+              obj10.embedLeftBorderColor = channelId(8130).getEmbedColor(firstResult, tmp39);
               let id;
               if (null != firstResult) {
                 id = firstResult.id;
               }
               obj10.firstMessageId = id;
               obj10.containerStyle = tmp.thumbnail;
-              tmp36Result = callback(channelId(11163).ForumPostMediaThumbnail, obj10);
-              const obj23 = channelId(8372);
+              tmp36Result = callback(channelId(11123).ForumPostMediaThumbnail, obj10);
+              const obj23 = channelId(8130);
               const tmp36 = callback;
             }
           } else {
@@ -142,7 +142,7 @@ function ResourceChannelRow(channelId) {
       }
       items5[2] = tmp36Result;
       obj1.children = items5;
-      return closure_13(channelId(4660).PressableOpacity, obj1);
+      return closure_13(channelId(4661).PressableOpacity, obj1);
     }
   }
   return null;
@@ -164,14 +164,14 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export default function GuildHomeResources(guildId) {
   guildId = guildId.guildId;
   const tmp = _createForOfIteratorHelperLoose();
-  const arr = importDefault(15333)(guildId);
+  const arr = importDefault(15343)(guildId);
   if (0 === arr.length) {
     let obj = { style: tmp.emptyStateContainer };
     obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
     const intl = guildId(1212).intl;
     obj.children = intl.string(guildId(1212).t.owvC9U);
-    const items = [callback(guildId(4126).Text, obj), , ];
-    const obj1 = { style: tmp.emptyStateImage, source: importDefault(15341) };
+    const items = [callback(guildId(4127).Text, obj), , ];
+    const obj1 = { style: tmp.emptyStateImage, source: importDefault(15351) };
     items[1] = callback(closure_5, obj1);
     const obj2 = {
       onPress() {
@@ -184,7 +184,7 @@ export default function GuildHomeResources(guildId) {
     };
     const intl2 = guildId(1212).intl;
     obj2.text = intl2.string(guildId(1212).t["3iCBUn"]);
-    items[2] = callback(guildId(4543).Button, obj2);
+    items[2] = callback(guildId(4544).Button, obj2);
     obj.children = items;
     let tmp4 = callback2(closure_4, obj);
   } else {

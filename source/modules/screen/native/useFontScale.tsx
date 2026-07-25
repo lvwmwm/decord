@@ -1,10 +1,10 @@
-// Module ID: 4549
-// Function ID: 39896
+// Module ID: 4550
+// Function ID: 39908
 // Name: getFontScale
 // Dependencies: [31, 1451, 1453, 2]
 // Exports: getFontScale, useFontScale
 
-// Module 4549 (getFontScale)
+// Module 4550 (getFontScale)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

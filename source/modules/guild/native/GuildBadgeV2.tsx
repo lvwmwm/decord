@@ -1,10 +1,10 @@
-// Module ID: 5701
-// Function ID: 49097
+// Module ID: 8396
+// Function ID: 67128
 // Name: GuildBadgeV2
-// Dependencies: [31, 33, 4130, 1273, 3976, 5702, 5704, 5703, 2]
+// Dependencies: [31, 33, 4131, 1273, 3977, 8397, 8394, 8395, 2]
 // Exports: default, hasGuildBadge
 
-// Module 5701 (GuildBadgeV2)
+// Module 8396 (GuildBadgeV2)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,11 +24,11 @@ export default function GuildBadgeV2(arg0) {
   obj.guild = 0;
   obj.size = 0;
   const merged = Object.assign(arg0, obj);
-  require(3976) /* AccessibilityAnnouncer */;
+  require(3977) /* AccessibilityAnnouncer */;
   if (null == guild) {
     return null;
   } else {
-    obj = require(5702) /* resolveImageSource */;
+    obj = require(8397) /* resolveImageSource */;
     const guildBadgeImageSource = obj.getGuildBadgeImageSource(guild, tmp7);
     let tmp11 = null;
     if (null != guildBadgeImageSource) {
@@ -41,14 +41,14 @@ export default function GuildBadgeV2(arg0) {
   tmp5 = callback();
 };
 export const hasGuildBadge = function hasGuildBadge(fromGuildProfileResult, closure_2) {
-  const guildTraits = require(5704) /* isPremiumGuild */.getGuildTraits(fromGuildProfileResult);
-  const obj = require(5704) /* isPremiumGuild */;
-  const badgeCategory = require(5703) /* BadgeCategory */.getBadgeCategory(guildTraits);
-  const tmp3 = require(5702) /* resolveImageSource */.badgeVariants[badgeCategory];
+  const guildTraits = require(8394) /* isPremiumGuild */.getGuildTraits(fromGuildProfileResult);
+  const obj = require(8394) /* isPremiumGuild */;
+  const badgeCategory = require(8395) /* BadgeCategory */.getBadgeCategory(guildTraits);
+  const tmp3 = require(8397) /* resolveImageSource */.badgeVariants[badgeCategory];
   let tmp4 = null != tmp3;
   if (tmp4) {
-    tmp4 = null != require(5702) /* resolveImageSource */.resolveImageSource(tmp3, guildTraits, closure_2);
-    const obj3 = require(5702) /* resolveImageSource */;
+    tmp4 = null != require(8397) /* resolveImageSource */.resolveImageSource(tmp3, guildTraits, closure_2);
+    const obj3 = require(8397) /* resolveImageSource */;
   }
   return tmp4;
 };

@@ -1,5 +1,5 @@
 // Module ID: 837
-// Function ID: 9318
+// Function ID: 9324
 // Name: logSpanEnd
 // Dependencies: [800, 796, 801]
 

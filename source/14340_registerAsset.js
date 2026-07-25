@@ -1,11 +1,11 @@
 // Module ID: 14340
-// Function ID: 109826
+// Function ID: 109939
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 14340 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b191595a7f3df6e7807ea696cffe591c", name: "ImageTextIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "d5073ab2ca9ee7c06c3f4d761968ac44", name: "ro", type: "png" };
 
 export default registerAsset.registerAsset(obj);

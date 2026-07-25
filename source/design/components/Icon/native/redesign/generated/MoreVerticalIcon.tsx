@@ -1,10 +1,10 @@
-// Module ID: 12265
-// Function ID: 95776
+// Module ID: 12241
+// Function ID: 95585
 // Name: MoreVerticalIcon
-// Dependencies: [31, 33, 689, 3833, 12266, 2]
+// Dependencies: [31, 33, 689, 3834, 12242, 2]
 // Exports: MoreVerticalIcon
 
-// Module 12265 (MoreVerticalIcon)
+// Module 12241 (MoreVerticalIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const MoreVerticalIcon = function MoreVerticalIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(12266) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(12242) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(12266) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(12242) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

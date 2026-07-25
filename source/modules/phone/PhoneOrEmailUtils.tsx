@@ -1,10 +1,10 @@
-// Module ID: 9251
-// Function ID: 72330
+// Module ID: 9143
+// Function ID: 71815
 // Name: PhoneOrEmailSelectorForceMode
 // Dependencies: [2]
 // Exports: getPhoneOrEmail, shouldShowCountryCodeSelector
 
-// Module 9251 (PhoneOrEmailSelectorForceMode)
+// Module 9143 (PhoneOrEmailSelectorForceMode)
 let obj = { PHONE: "phone", EMAIL: "email" };
 const re1 = /^[-() \d]+$/;
 const result = require("set").fileFinishedImporting("modules/phone/PhoneOrEmailUtils.tsx");

@@ -1,8 +1,8 @@
-// Module ID: 10484
-// Function ID: 80864
-// Dependencies: [5, 1348, 653, 4123, 686, 507, 6923, 6691, 4324, 4140, 2]
+// Module ID: 10418
+// Function ID: 80533
+// Dependencies: [5, 1348, 653, 4124, 686, 507, 5914, 5685, 4325, 4141, 2]
 
-// Module 10484
+// Module 10418
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -121,8 +121,8 @@ export default {
     let importDefault;
     const self = this;
     ({ type: importDefault, activity: dependencyMap, content: _isNativeReflectConstruct, location: closure_4 } = userId);
-    const obj = importDefault(4140);
-    return importDefault(4140).ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: _isNativeReflectConstruct, location: closure_4 }));
+    const obj = importDefault(4141);
+    return importDefault(4141).ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: _isNativeReflectConstruct, location: closure_4 }));
   },
   getJoinSecret(arg0, arg1, arg2, arg3, arg4) {
     let closure_0 = arg0;

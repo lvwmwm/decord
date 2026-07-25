@@ -1,10 +1,10 @@
-// Module ID: 9597
-// Function ID: 74715
+// Module ID: 9518
+// Function ID: 74302
 // Name: ForumComposerHeader
-// Dependencies: [31, 27, 33, 4130, 689, 4320, 4660, 1212, 5119, 4645, 4126, 4633, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4321, 4661, 1212, 5119, 4646, 4127, 4634, 2]
 // Exports: default
 
-// Module 9597 (ForumComposerHeader)
+// Module 9518 (ForumComposerHeader)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -51,9 +51,9 @@ export default function ForumComposerHeader(height) {
     return callback(false);
   };
   obj.children = callback(require(5119) /* XSmallIcon */.XSmallIcon, {});
-  const items = [callback(require(4660) /* PressableBase */.PressableOpacity, obj), , , ];
+  const items = [callback(require(4661) /* PressableBase */.PressableOpacity, obj), , , ];
   obj = { style: tmp.headerBarContent };
-  const items1 = [callback(require(4645) /* ForumIcon */.ForumIcon, { size: "sm" }), ];
+  const items1 = [callback(require(4646) /* ForumIcon */.ForumIcon, { size: "sm" }), ];
   const obj1 = { style: tmp.headerBarText };
   const obj2 = { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   if ("" === title) {
@@ -61,9 +61,9 @@ export default function ForumComposerHeader(height) {
     title = intl2.string(require(1212) /* getSystemLocale */.t["7EjFCk"]);
   }
   obj2.children = title;
-  const items2 = [callback(require(4126) /* Text */.Text, obj2), ];
-  const obj3 = { variant: "text-xs/medium", color: "text-default", children: importDefault(4320)(channel) };
-  items2[1] = callback(require(4126) /* Text */.Text, obj3);
+  const items2 = [callback(require(4127) /* Text */.Text, obj2), ];
+  const obj3 = { variant: "text-xs/medium", color: "text-default", children: importDefault(4321)(channel) };
+  items2[1] = callback(require(4127) /* Text */.Text, obj3);
   obj1.children = items2;
   items1[1] = closure_6(closure_4, obj1);
   obj.children = items1;
@@ -79,8 +79,8 @@ export default function ForumComposerHeader(height) {
     obj4.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t.yR6HwZ);
     obj4.style = tmp.button;
     obj4.onPress = onGuidelinesPress;
-    obj4.children = callback(require(4633) /* BookCheckIcon */.BookCheckIcon, {});
-    tmp9 = callback(require(4660) /* PressableBase */.PressableOpacity, obj4);
+    obj4.children = callback(require(4634) /* BookCheckIcon */.BookCheckIcon, {});
+    tmp9 = callback(require(4661) /* PressableBase */.PressableOpacity, obj4);
   }
   items[2] = tmp9;
   items[3] = callback(closure_4, { style: tmp.headerBarSeparator });

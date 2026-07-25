@@ -1,10 +1,10 @@
-// Module ID: 4300
-// Function ID: 37654
+// Module ID: 4301
+// Function ID: 37665
 // Name: normalizePath
-// Dependencies: [4162, 4301, 477, 2]
+// Dependencies: [4163, 4302, 477, 2]
 // Exports: getRunningGameAnalytics, isVerifiedGameExecutable
 
-// Module 4300 (normalizePath)
+// Module 4301 (normalizePath)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -94,8 +94,8 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
     obj.sku = tmp12;
     let subgameMetadata;
     if (null != streamApplication) {
-      subgameMetadata = require(4301) /* hasSubgameInfoChanged */.getSubgameMetadata(streamApplication);
-      const obj3 = require(4301) /* hasSubgameInfoChanged */;
+      subgameMetadata = require(4302) /* hasSubgameInfoChanged */.getSubgameMetadata(streamApplication);
+      const obj3 = require(4302) /* hasSubgameInfoChanged */;
     }
     obj.gameMetadata = subgameMetadata;
     obj.rawExePath = tmp;

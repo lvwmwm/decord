@@ -1,9 +1,9 @@
-// Module ID: 8888
-// Function ID: 70033
+// Module ID: 8776
+// Function ID: 69512
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1316, 4177, 1906, 1849, 8889, 4227, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1316, 4178, 1907, 1850, 8777, 4228, 566, 686, 2]
 
-// Module 8888 (_isNativeReflectConstruct)
+// Module 8776 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -36,8 +36,8 @@ function hasVideoBackgroundLive(backgroundOption) {
       if (null != voiceAndVideo) {
         prop = voiceAndVideo.videoBackgroundFilterDesktop;
       }
-      videoBackgroundOptionFromProto = require(8889) /* isCustomBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
-      const obj = require(8889) /* isCustomBackgroundOption */;
+      videoBackgroundOptionFromProto = require(8777) /* isCustomBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+      const obj = require(8777) /* isCustomBackgroundOption */;
     }
     let isVideoEnabledResult = null != store.getVoiceChannelId();
     if (isVideoEnabledResult) {
@@ -160,11 +160,11 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: function handleApplyMediaFilterSettings(settings) {
     settings = settings.settings;
-    if (require(4227) /* getMediaEngineImpl */.FilterSettingsKey.CAMERA_BACKGROUND_LIVE in settings) {
+    if (require(4228) /* getMediaEngineImpl */.FilterSettingsKey.CAMERA_BACKGROUND_LIVE in settings) {
       let c11 = true;
       let c15 = false;
     }
-    if (require(4227) /* getMediaEngineImpl */.FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW in settings) {
+    if (require(4228) /* getMediaEngineImpl */.FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW in settings) {
       let c16 = false;
     }
   },

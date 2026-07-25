@@ -1,10 +1,10 @@
-// Module ID: 15636
-// Function ID: 120506
+// Module ID: 15646
+// Function ID: 120634
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [31, 6651, 13603, 566, 668, 8328, 4559, 5794, 2]
+// Dependencies: [31, 6271, 13614, 566, 668, 8063, 4560, 6450, 2]
 // Exports: useAutoSettingsSearchSessionAnalytics
 
-// Module 15636 (useAutoSettingsSearchSessionAnalytics)
+// Module 15646 (useAutoSettingsSearchSessionAnalytics)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import zustandStore from "zustandStore";
@@ -18,9 +18,9 @@ export const useAutoSettingsSearchSessionAnalytics = function useAutoSettingsSea
     const state = outer1_4.getState();
     return state === stateFromStores(outer1_2[4]).AppStates.ACTIVE;
   });
-  let tmp2 = importDefault(8328)(stateFromStores);
+  let tmp2 = importDefault(8063)(stateFromStores);
   importDefault = tmp2;
-  importDefault(4559)(() => () => {
+  importDefault(4560)(() => () => {
     callback(outer2_2[7]).terminate();
   });
   const items1 = [stateFromStores, tmp2];

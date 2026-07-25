@@ -1,10 +1,10 @@
-// Module ID: 15903
-// Function ID: 122871
+// Module ID: 15914
+// Function ID: 123040
 // Name: VoicePanelConsoleStatus
-// Dependencies: [31, 10047, 10050, 10045, 33, 4130, 689, 10046, 15898, 3991, 4476, 15904, 4542, 5515, 1273, 4126, 4660, 9079, 1212, 15905, 2]
+// Dependencies: [31, 9976, 9979, 9974, 33, 4131, 689, 9975, 15909, 3992, 4477, 15915, 4543, 5515, 1273, 4127, 4661, 8971, 1212, 15916, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 15903 (VoicePanelConsoleStatus)
+// Module 15914 (VoicePanelConsoleStatus)
 import result from "result";
 import { EDGE_GUTTER } from "CARD_SIZE";
 import { CONTROLS_HEIGHT } from "VoicePanelControlsModes";
@@ -26,7 +26,7 @@ class VoicePanelConsoleStatus {
     tmp3 = require("useConsoleConnectingInfo")(channelId);
     color = tmp3.color;
     ({ icon, text, displayCancel } = tmp3);
-    obj = require("module_3991");
+    obj = require("module_3992");
     sharedValue = obj.useSharedValue(false);
     useSharedValue = sharedValue;
     items = [, ];
@@ -36,7 +36,7 @@ class VoicePanelConsoleStatus {
       const result = sharedValue.set(state !== state(windowDimensions[10]).TransitionStates.YEETED);
     }, items);
     tmp6 = require("useControlsTranslation")(mode, wrapperSpecs, accessoryHeights);
-    obj2 = require("module_3991");
+    obj2 = require("module_3992");
     fn = function v() {
       let obj = { backgroundColor: color, width: windowDimensions.get().width - 2 * sharedValue, height: outer1_5 + 36, borderRadius: 32 };
       obj = {};
@@ -63,12 +63,12 @@ class VoicePanelConsoleStatus {
       obj.transform = items;
       return obj;
     };
-    obj = { color, windowDimensions, EDGE_GUTTER: useSharedValue, CONTROLS_HEIGHT, CONSOLE_STATUS_HEIGHT: 36, withSpring: require("withSpring").withSpring, shouldShow: sharedValue, FADE_IN_MODE_PHYSICS: jsx, runOnJS: require("module_3991").runOnJS, cleanUp };
+    obj = { color, windowDimensions, EDGE_GUTTER: useSharedValue, CONTROLS_HEIGHT, CONSOLE_STATUS_HEIGHT: 36, withSpring: require("withSpring").withSpring, shouldShow: sharedValue, FADE_IN_MODE_PHYSICS: jsx, runOnJS: require("module_3992").runOnJS, cleanUp };
     fn.__closure = obj;
     fn.__workletHash = 14156265059426;
     fn.__initData = jsx;
     animatedStyle = obj2.useAnimatedStyle(fn);
-    obj4 = require("module_3991");
+    obj4 = require("module_3992");
     class V {
       constructor() {
         obj = { width: windowDimensions.get().width - 2 * useSharedValue };
@@ -126,7 +126,7 @@ class VoicePanelConsoleStatus {
     items3[2] = tmp15;
     obj5.children = items3;
     obj4.children = tmp13(tmp14, obj5);
-    obj3.children = tmp12(require("module_3991").View, obj4);
+    obj3.children = tmp12(require("module_3992").View, obj4);
     items4 = [, ];
     items4[0] = tmp10(tmp11, obj3);
     obj10 = { style: items5 };
@@ -134,9 +134,9 @@ class VoicePanelConsoleStatus {
     items5[0] = tmp.blockingControlCover;
     items5[1] = animatedStyle1;
     obj10.children = jsx(require("VoicePanelVisualEffectView").VoicePanelVisualEffectView, {});
-    items4[1] = jsx(require("module_3991").View, obj10);
+    items4[1] = jsx(require("module_3992").View, obj10);
     obj2.children = items4;
-    return tmp9(require("module_3991").View, obj2);
+    return tmp9(require("module_3992").View, obj2);
   }
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);

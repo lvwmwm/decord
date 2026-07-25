@@ -1,7 +1,7 @@
 // Module ID: 5616
-// Function ID: 47875
+// Function ID: 47880
 // Name: formatSingleCurrencyPrice
-// Dependencies: [1921, 3778, 1851, 482, 477, 5617, 5619, 5621, 1212, 3776, 2]
+// Dependencies: [1922, 3779, 1852, 482, 477, 5617, 5619, 5621, 1212, 3777, 2]
 // Exports: formatPercent, formatSubscriptionPlanRate, shortenAndFormatPrice
 
 // Module 5616 (formatSingleCurrencyPrice)
@@ -132,7 +132,7 @@ export const formatPercent = function formatPercent(arg0, arg1) {
   return Intl.NumberFormat(arg0, { style: "percent", minimumFractionDigits: 0 }).format(arg1);
 };
 export const formatSubscriptionPlanRate = function formatSubscriptionPlanRate(interval_count) {
-  const price = require(3776) /* _createForOfIteratorHelperLoose */.getPrice(interval_count.id);
+  const price = require(3777) /* _createForOfIteratorHelperLoose */.getPrice(interval_count.id);
   return formatRate(formatPrice(price.amount, price.currency), interval_count.interval, "interval_count" in interval_count ? interval_count.interval_count : interval_count.intervalCount);
 };
 export { maybeShortenPrice };

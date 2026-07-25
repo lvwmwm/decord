@@ -1,9 +1,9 @@
-// Module ID: 1867
-// Function ID: 20544
+// Module ID: 1868
+// Function ID: 20555
 // Name: _callSuper
-// Dependencies: [57, 6, 7, 15, 17, 18, 1284, 1313, 1868, 1312, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1284, 1313, 1869, 1312, 2]
 
-// Module 1867 (_callSuper)
+// Module 1868 (_callSuper)
 import _slicedToArray from "_slicedToArray";
 import module_1284 from "module_1284";
 import _callSuper from "_callSuper";
@@ -257,21 +257,15 @@ let tmp4 = ((MessageType) => {
   let items = [obj, , ];
   obj = {
     key: "internalBinaryRead",
-    value(pos, arg1, binaryReadOptionsResult2) {
+    value(pos) {
       let obj = arg3;
       const self = this;
       if (null == arg3) {
         obj = self.create();
       }
-      const sum = pos.pos + arg1;
-      if (pos.pos < sum) {
-        obj.displayNameStyles = outer1_24.internalBinaryRead(pos, pos.uint32(), binaryReadOptionsResult2, obj.displayNameStyles);
-        while (true) {
-          do {
-            let tmp3 = tmp9;
-            let tmp4 = tmp10;
-          } while (pos.pos >= sum);
-        }
+      if (pos.pos < pos.pos + arg1) {
+        [r10027, r10028] = outer1_2(pos.tag(), 2);
+        const tmp3 = outer1_2(pos.tag(), 2);
       }
       return obj;
     }

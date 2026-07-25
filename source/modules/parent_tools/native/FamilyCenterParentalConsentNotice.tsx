@@ -1,10 +1,10 @@
-// Module ID: 13827
-// Function ID: 105959
+// Module ID: 13838
+// Function ID: 106086
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [31, 33, 4130, 689, 13819, 13820, 3827, 4126, 13828, 1212, 2198, 2]
+// Dependencies: [31, 33, 4131, 689, 13830, 13831, 3828, 4127, 13839, 1212, 2199, 2]
 // Exports: default
 
-// Module 13827 (FamilyCenterParentalConsentNotice)
+// Module 13838 (FamilyCenterParentalConsentNotice)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,9 +24,9 @@ export default function FamilyCenterParentalConsentNotice() {
   }
   const tmp = _createForOfIteratorHelperLoose();
   const require = tmp;
-  let obj = require(13819) /* useIsParentalConsentBannerActive */;
+  let obj = require(13830) /* useIsParentalConsentBannerActive */;
   const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-  let obj1 = require(13820) /* useParentalConsentWarning */;
+  let obj1 = require(13831) /* useParentalConsentWarning */;
   const parentalConsentWarning = obj1.useParentalConsentWarning();
   let daysRemaining;
   if (null != parentalConsentWarning) {
@@ -46,14 +46,14 @@ export default function FamilyCenterParentalConsentNotice() {
         if (0 === tmp5) {
           const intl2 = require(1212) /* getSystemLocale */.intl;
           obj = { learnMoreHook };
-          let formatResult = intl2.format(importDefault(2198).S5kmfO, obj);
+          let formatResult = intl2.format(importDefault(2199).S5kmfO, obj);
         } else {
           const intl = require(1212) /* getSystemLocale */.intl;
           obj1 = { count: tmp5, learnMoreHook };
-          formatResult = intl.format(importDefault(2198)["5jm+T3"], obj1);
+          formatResult = intl.format(importDefault(2199)["5jm+T3"], obj1);
         }
         obj.text = formatResult;
-        return jsx(importDefault(13828), { style: tmp.container });
+        return jsx(importDefault(13839), { style: tmp.container });
       }
     }
   }

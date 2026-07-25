@@ -1,9 +1,9 @@
-// Module ID: 7880
-// Function ID: 62478
+// Module ID: 7827
+// Function ID: 62450
 // Name: nativeStyleProperties
-// Dependencies: [27, 4122, 1348, 1838, 4123, 7711, 653, 4130, 3974, 689, 5648, 4351, 1449, 2]
+// Dependencies: [27, 4123, 1348, 1838, 4124, 7655, 653, 4131, 3975, 689, 5994, 4352, 1449, 2]
 
-// Module 7880 (nativeStyleProperties)
+// Module 7827 (nativeStyleProperties)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -21,7 +21,7 @@ let closure_9;
 const require = arg1;
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_6, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: closure_7 } = MESSAGE_GROUP_SPACING);
 ({ MessageFlags: closure_9, MessageTypes: closure_10 } = ME);
-const result = _createForOfIteratorHelperLoose.experimental_createToken(() => require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.BRAND_500, 0.1));
+const result = _createForOfIteratorHelperLoose.experimental_createToken(() => require(3975) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.BRAND_500, 0.1));
 _createForOfIteratorHelperLoose = { ephemeralBackgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE, ephemeralGutterColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, giftIntentEphemeralBackgroundColor: result, mentionedBackgroundColor: require("_createForOfIteratorHelperLoose").colors.MESSAGE_MENTIONED_BACKGROUND_DEFAULT, mentionedGutterColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300, automodBlockedBackgroundColor: require("_createForOfIteratorHelperLoose").colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, automodBlockedGutterColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_345, editingColor: require("_createForOfIteratorHelperLoose").colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT };
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createNativeStyleProperties(_createForOfIteratorHelperLoose);
 const MediaManager = require("get ActivityIndicator").NativeModules.MediaManager;
@@ -60,7 +60,7 @@ _createForOfIteratorHelperLoose = {
       return obj;
     } else {
       if (message.hasFlag(constants.IS_GUILD_OFFICIAL)) {
-        obj = require(5648) /* isGuildOfficialMessagesEnabled */;
+        obj = require(5994) /* isGuildOfficialMessagesEnabled */;
         if (obj.showGuildOfficialMessageGradient(officialMessageStyle.officialMessageStyle)) {
           channel = channel.getChannel(message.getChannelId());
           let guild_id;
@@ -68,7 +68,7 @@ _createForOfIteratorHelperLoose = {
             guild_id = channel.guild_id;
           }
           guild = guild.getGuild(guild_id);
-          let obj1 = require(5648) /* isGuildOfficialMessagesEnabled */;
+          let obj1 = require(5994) /* isGuildOfficialMessagesEnabled */;
           if (obj1.isGuildOfficialMessagesEnabled(guild, "RowGeneratorUtils")) {
             let officialMessageColor;
             if (null != guild) {
@@ -83,7 +83,7 @@ _createForOfIteratorHelperLoose = {
               if (obj6.hasEphemeralAppearance(message)) {
                 ephemeralGutterColor = tmp.ephemeralGutterColor;
               }
-              obj6 = require(4351) /* createMinimalMessageRecord */;
+              obj6 = require(4352) /* createMinimalMessageRecord */;
             }
             obj1 = { backgroundColor: officialMessageColor | closure_7, gutterColor: ephemeralGutterColor };
             return obj1;
@@ -95,7 +95,7 @@ _createForOfIteratorHelperLoose = {
         ({ mentionedBackgroundColor: obj5.backgroundColor, mentionedGutterColor: obj5.gutterColor } = tmp);
         const tmp16 = obj2;
       } else {
-        obj2 = require(4351) /* createMinimalMessageRecord */;
+        obj2 = require(4352) /* createMinimalMessageRecord */;
         if (obj2.hasEphemeralAppearance(message)) {
           const obj3 = { backgroundColor: message.type === constants2.GIFTING_PROMPT ? tmp.giftIntentEphemeralBackgroundColor : tmp.ephemeralBackgroundColor, gutterColor: tmp.ephemeralGutterColor };
         }

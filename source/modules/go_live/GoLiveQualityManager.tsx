@@ -1,9 +1,9 @@
-// Module ID: 12787
-// Function ID: 99479
+// Module ID: 12798
+// Function ID: 99606
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3, 4015, 4297, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3, 4016, 4298, 2]
 
-// Module 12787 (_isNativeReflectConstruct)
+// Module 12798 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import TypedEventEmitter from "TypedEventEmitter";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

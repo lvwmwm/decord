@@ -1,9 +1,9 @@
-// Module ID: 16628
-// Function ID: 129662
+// Module ID: 16639
+// Function ID: 129830
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 5, 6, 7, 15, 17, 18, 1347, 10508, 4150, 4149, 4162, 4203, 6941, 15761, 4976, 664, 6947, 6939, 10505, 4977, 9480, 4979, 6968, 4302, 4301, 4983, 6964, 4194, 1327, 4300, 6962, 5078, 2]
+// Dependencies: [57, 5, 6, 7, 15, 17, 18, 1347, 5658, 4151, 4150, 4163, 4204, 5932, 15772, 4977, 664, 5938, 5930, 10439, 4978, 9401, 4980, 5959, 4303, 4302, 4984, 5955, 4195, 1327, 4301, 5953, 5078, 2]
 
-// Module 16628 (_isNativeReflectConstruct)
+// Module 16639 (_isNativeReflectConstruct)
 import "_slicedToArray";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -113,7 +113,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function isQuestProgressable(userStatus) {
-  let tmp = !require(6939) /* _createForOfIteratorHelperLoose */.isQuestExpired(userStatus);
+  let tmp = !require(5930) /* _createForOfIteratorHelperLoose */.isQuestExpired(userStatus);
   if (tmp) {
     tmp = null != userStatus.userStatus;
   }
@@ -126,7 +126,7 @@ function isQuestProgressable(userStatus) {
   return tmp;
 }
 function handleEmbeddedActivityLaunchSuccess(applicationId) {
-  let obj = require(10505) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10439) /* _createForOfIteratorHelperLoose */;
   const tmp2 = _createForOfIteratorHelperLoose(obj.getEligibleQuestsForApplicationId(quests.quests, applicationId));
   const iter = tmp2();
   let iter2 = iter;
@@ -136,15 +136,15 @@ function handleEmbeddedActivityLaunchSuccess(applicationId) {
         let features = iter2.value.config.features;
         let tmp4 = require;
         let tmp5 = dependencyMap;
-        if (features.includes(require(4977) /* QuestVariants */.QuestVariants.MOBILE_ACTIVITY_QUEST)) {
+        if (features.includes(require(4978) /* QuestVariants */.QuestVariants.MOBILE_ACTIVITY_QUEST)) {
           break;
         }
       }
       let iter3 = tmp2();
       iter2 = iter3;
     }
-    obj = { questContent: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.RUNNING_ACTIVITY, questContentCTA: require(6968) /* getQuestContentName */.QuestContentCTA.START_QUEST, sourceQuestContent: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.RUNNING_ACTIVITY };
-    return require(9480) /* _manuallyStartConsoleQuest */.enrollInQuest(tmp3.id, obj);
+    obj = { questContent: require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.RUNNING_ACTIVITY, questContentCTA: require(5959) /* getQuestContentName */.QuestContentCTA.START_QUEST, sourceQuestContent: require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.RUNNING_ACTIVITY };
+    return require(9401) /* _manuallyStartConsoleQuest */.enrollInQuest(tmp3.id, obj);
   }
 }
 function isQuestRobloxRelated(arr, distributor) {
@@ -152,8 +152,8 @@ function isQuestRobloxRelated(arr, distributor) {
   if (tmp) {
     let someResult = arr.some((arg0) => arg0 === outer1_0(outer1_2[24]).ROBLOX_APPLICATION_ID);
     if (someResult) {
-      someResult = require(4301) /* hasSubgameInfoChanged */.isRobloxSubgame(distributor);
-      const obj = require(4301) /* hasSubgameInfoChanged */;
+      someResult = require(4302) /* hasSubgameInfoChanged */.isRobloxSubgame(distributor);
+      const obj = require(4302) /* hasSubgameInfoChanged */;
     }
     tmp = someResult;
   }
@@ -163,7 +163,7 @@ function manualHeartbeatInitializationQuest(config) {
   let hasItem = null != config;
   if (hasItem) {
     const features = config.config.features;
-    hasItem = features.includes(require(4977) /* QuestVariants */.QuestVariants.MANUAL_HEARTBEAT_INITIALIZATION);
+    hasItem = features.includes(require(4978) /* QuestVariants */.QuestVariants.MANUAL_HEARTBEAT_INITIALIZATION);
   }
   return hasItem;
 }

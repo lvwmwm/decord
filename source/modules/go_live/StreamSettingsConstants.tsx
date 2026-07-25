@@ -1,10 +1,10 @@
-// Module ID: 4185
-// Function ID: 36021
+// Module ID: 4186
+// Function ID: 36032
 // Name: makeButton
-// Dependencies: [653, 1851, 1212, 2]
+// Dependencies: [653, 1852, 1212, 2]
 // Exports: getApplicationFramerate, getApplicationResolution
 
-// Module 4185 (makeButton)
+// Module 4186 (makeButton)
 import { BoostedGuildTiers } from "ME";
 import { StreamQualities } from "GuildFeatures";
 

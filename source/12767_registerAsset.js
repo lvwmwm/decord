@@ -1,11 +1,11 @@
 // Module ID: 12767
-// Function ID: 99375
+// Function ID: 99422
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12767 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "81937e526a0dd862a80691425a7cb222", name: "ic_mic_muted_dark_24px", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/nuf_channels/native/images", width: 23, height: 45, scales: [1], hash: "997fd56d3361833ef80c750f0e0e48a8", name: "star_purple", type: "png" };
 
 export default registerAsset.registerAsset(obj);

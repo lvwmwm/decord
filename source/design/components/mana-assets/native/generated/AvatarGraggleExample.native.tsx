@@ -1,10 +1,10 @@
-// Module ID: 5874
-// Function ID: 49776
+// Module ID: 6794
+// Function ID: 59426
 // Name: AvatarGraggleExample
-// Dependencies: [33, 5085, 5875, 2]
+// Dependencies: [33, 5085, 6795, 2]
 // Exports: AvatarGraggleExample
 
-// Module 5874 (AvatarGraggleExample)
+// Module 6794 (AvatarGraggleExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarGraggleExample.native.tsx");
@@ -27,7 +27,7 @@ export const AvatarGraggleExample = function AvatarGraggleExample(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5875) };
+  obj = { uri: importDefault(6795) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

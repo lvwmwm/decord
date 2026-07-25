@@ -1,10 +1,10 @@
-// Module ID: 8012
-// Function ID: 63488
+// Module ID: 5677
+// Function ID: 48765
 // Name: computeAllowNsfw
-// Dependencies: [31, 1909, 1352, 1391, 1194, 1348, 1917, 1838, 3758, 1849, 653, 8013, 566, 483, 1881, 2]
+// Dependencies: [31, 1910, 1352, 1391, 1194, 1348, 1918, 1838, 3759, 1850, 653, 5678, 566, 483, 1882, 2]
 // Exports: buildPermissionContext, computeCommandContextType, usePermissionContext
 
-// Module 8012 (computeAllowNsfw)
+// Module 5677 (computeAllowNsfw)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelRecordBase } from "_callSuper";
@@ -95,7 +95,7 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
   if (null != tmp) {
     tmp5 = getContextGuildId(tmp);
   }
-  let obj = require(8013) /* resolveNsfwTogglesWithDefaults */;
+  let obj = require(5678) /* resolveNsfwTogglesWithDefaults */;
   const viewNsfwCommandsOrDefault = obj.getViewNsfwCommandsOrDefault();
   id = id.getId();
   currentUser = currentUser.getCurrentUser();
@@ -199,16 +199,16 @@ export const computeCommandContextType = function computeCommandContextType(chan
         type = channel.type;
       }
       if (type !== constants.DM) {
-        const PRIVATE_CHANNEL = require(1881) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL;
+        const PRIVATE_CHANNEL = require(1882) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL;
       } else {
         let recipientId;
         if (null != channel) {
           recipientId = channel.getRecipientId();
         }
       }
-      const BOT_DM = require(1881) /* PermissionOverwriteType */.InteractionContextType.BOT_DM;
+      const BOT_DM = require(1882) /* PermissionOverwriteType */.InteractionContextType.BOT_DM;
     }
   }
-  return require(1881) /* PermissionOverwriteType */.InteractionContextType.GUILD;
+  return require(1882) /* PermissionOverwriteType */.InteractionContextType.GUILD;
 };
 export { getContextGuildId };

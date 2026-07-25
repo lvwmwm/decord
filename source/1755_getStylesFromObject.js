@@ -1,5 +1,5 @@
 // Module ID: 1755
-// Function ID: 19617
+// Function ID: 19624
 // Name: getStylesFromObject
 // Dependencies: [57, 1585, 1593]
 // Exports: advanceAnimationByFrame, advanceAnimationByTime, getAnimatedStyle, setUpTests, withReanimatedTimer

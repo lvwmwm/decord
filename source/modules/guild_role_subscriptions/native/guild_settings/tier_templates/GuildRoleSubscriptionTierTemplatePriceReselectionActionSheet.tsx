@@ -1,10 +1,10 @@
-// Module ID: 16530
-// Function ID: 128739
+// Module ID: 16541
+// Function ID: 128907
 // Name: PriceOptionRow
-// Dependencies: [57, 31, 27, 1851, 482, 33, 4130, 689, 3848, 8518, 5085, 16434, 15337, 4126, 1212, 5616, 14170, 1557, 5187, 5189, 1273, 4544, 4098, 2]
+// Dependencies: [57, 31, 27, 1852, 482, 33, 4131, 689, 3849, 8278, 5085, 16445, 15347, 4127, 1212, 5616, 14181, 1557, 5187, 5189, 1273, 4545, 4099, 2]
 // Exports: default
 
-// Module 16530 (PriceOptionRow)
+// Module 16541 (PriceOptionRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -26,7 +26,7 @@ function PriceOptionRow(selected) {
   selected = selected.selected;
   ({ price, onPress } = selected);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3848) /* useCheckboxA11yNative */;
+  let obj = require(3849) /* useCheckboxA11yNative */;
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   obj = {};
@@ -42,13 +42,13 @@ function PriceOptionRow(selected) {
   obj.onPress = onPress;
   obj = { style: tmp.rowStatusIcon };
   const tmp3 = closure_10;
-  const tmp4 = importDefault(8518);
+  const tmp4 = importDefault(8278);
   const tmp6 = callback2;
   const tmp7 = importDefault;
   if (selected) {
-    let tmp10 = 16434;
+    let tmp10 = 16445;
   } else {
-    tmp10 = 15337;
+    tmp10 = 15347;
   }
   obj.source = tmp7(tmp10);
   const items1 = [tmp6(importDefault(5085), obj), ];
@@ -58,9 +58,9 @@ function PriceOptionRow(selected) {
   const tmp8 = importDefault(5085);
   obj2.price = require(5616) /* formatSingleCurrencyPrice */.formatPrice(price, CurrencyCodes.USD);
   const obj6 = require(5616) /* formatSingleCurrencyPrice */;
-  obj2.interval = require(14170) /* getBenefitKey */.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
+  obj2.interval = require(14181) /* getBenefitKey */.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
   obj1.children = intl.format(require(1212) /* getSystemLocale */.t.CgmBaG, obj2);
-  items1[1] = callback2(require(4126) /* Text */.Text, obj1);
+  items1[1] = callback2(require(4127) /* Text */.Text, obj1);
   obj.children = items1;
   return tmp3(tmp4, obj);
 }

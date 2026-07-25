@@ -1,10 +1,10 @@
-// Module ID: 14906
-// Function ID: 113657
+// Module ID: 14917
+// Function ID: 113785
 // Name: useGuildsBarBadges
-// Dependencies: [29, 31, 10249, 3948, 3759, 1917, 1838, 3758, 1849, 653, 33, 4130, 566, 3949, 14907, 3834, 689, 1273, 14909, 14874, 14872, 2]
+// Dependencies: [29, 31, 10182, 3949, 3760, 1918, 1838, 3759, 1850, 653, 33, 4131, 566, 3950, 14918, 3835, 689, 1273, 14920, 14885, 14883, 2]
 // Exports: default
 
-// Module 14906 (useGuildsBarBadges)
+// Module 14917 (useGuildsBarBadges)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

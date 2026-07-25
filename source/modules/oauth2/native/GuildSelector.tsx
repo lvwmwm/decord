@@ -1,10 +1,10 @@
-// Module ID: 9057
-// Function ID: 71159
+// Module ID: 8947
+// Function ID: 70641
 // Name: styles
-// Dependencies: [31, 27, 653, 33, 4130, 689, 4098, 8426, 1934, 1212, 483, 4126, 1273, 7636, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 4099, 8184, 1935, 1212, 483, 4127, 1273, 7575, 2]
 // Exports: default
 
-// Module 9057 (styles)
+// Module 8947 (styles)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { Permissions } from "ME";
@@ -57,7 +57,7 @@ export default function GuildSelector(onGuildChange) {
   obj = { variant: "eyebrow", color: "text-default" };
   let intl = selectedGuildId(1212).intl;
   obj.children = intl.string(selectedGuildId(1212).t["1DXFFd"]);
-  const items1 = [callback(selectedGuildId(4126).Text, obj), , , ];
+  const items1 = [callback(selectedGuildId(4127).Text, obj), , , ];
   let tmp6 = null;
   if (null != error) {
     tmp6 = null;
@@ -78,10 +78,10 @@ export default function GuildSelector(onGuildChange) {
   }
   obj1.label = name;
   obj1.disabled = onGuildChange.disabled;
-  obj1.trailing = callback(selectedGuildId(7636).FormRow.Arrow, {});
+  obj1.trailing = callback(selectedGuildId(7575).FormRow.Arrow, {});
   obj1.DEPRECATED_style = tmp.select;
   obj1.onPress = callback;
-  items1[2] = callback(selectedGuildId(7636).FormRow, obj1);
+  items1[2] = callback(selectedGuildId(7575).FormRow, obj1);
   const obj2 = { style: tmp.label };
   const intl3 = selectedGuildId(1212).intl;
   obj2.children = intl3.format(selectedGuildId(1212).t.t9Jm9o, {});

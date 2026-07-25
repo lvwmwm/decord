@@ -1,9 +1,9 @@
-// Module ID: 14773
-// Function ID: 112583
+// Module ID: 14784
+// Function ID: 112711
 // Name: getAuthComponent
-// Dependencies: [57, 31, 27, 1194, 14774, 653, 33, 4130, 477, 4110, 13137, 14775, 14776, 14834, 15472, 15477, 15480, 15517, 15541, 9322, 15595, 15598, 15602, 15604, 15633, 15638, 3989, 1454, 1555, 4324, 9158, 15639, 15685, 624, 10566, 3984, 5517, 10883, 15533, 15688, 15726, 10664, 15728, 10191, 2]
+// Dependencies: [57, 31, 27, 1194, 14785, 653, 33, 4131, 477, 4111, 13148, 14786, 14787, 14845, 15482, 15487, 15490, 15527, 15551, 9215, 15605, 15608, 15612, 15614, 15643, 15648, 3990, 1454, 1555, 4325, 9050, 15649, 15696, 624, 10453, 3985, 5517, 10833, 15543, 15699, 15737, 10628, 15739, 10123, 2]
 
-// Module 14773 (getAuthComponent)
+// Module 14784 (getAuthComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "BurstReactionAnimationContainer";
 import { View } from "_createForOfIteratorHelperLoose";
@@ -22,49 +22,49 @@ let closure_8;
 let closure_9;
 let require = arg1;
 function getAuthComponent() {
-  return require(14776) /* getInitialAuthScreen */.default;
+  return require(14787) /* getInitialAuthScreen */.default;
 }
 function getTabsComponent() {
-  return require(14834).default;
+  return require(14845).default;
 }
 function getChannelComponent() {
   return View;
 }
 function WrappedAutoAnalytics() {
-  return callback2(require(15472) /* _isNativeReflectConstruct */.default, {});
+  return callback2(require(15482) /* _isNativeReflectConstruct */.default, {});
 }
 function getMemberVerificationComponent() {
-  return require(15477) /* Loading */.default;
+  return require(15487) /* Loading */.default;
 }
 function getFriendsNavigatorComponent() {
-  return require(15480) /* RequestsSettingsModalButton */.default;
+  return require(15490) /* RequestsSettingsModalButton */.default;
 }
 function getYouComponent() {
-  return require(15517).default;
+  return require(15527).default;
 }
 function getChannelDetailsComponent() {
-  return require(15541) /* ConnectedCreateThreadHeaderButton */.default;
+  return require(15551) /* ConnectedCreateThreadHeaderButton */.default;
 }
 function getConversationsComponent() {
-  return require(9322) /* HeaderWithBorder */.default;
+  return require(9215) /* HeaderWithBorder */.default;
 }
 function getSearchComponent() {
-  return require(15595).default;
+  return require(15605).default;
 }
 function getContextMenuCommandNavigatorComponent() {
-  return require(15598) /* ContextMenuCommandNavigator */.default;
+  return require(15608) /* ContextMenuCommandNavigator */.default;
 }
 function getModalComponent() {
-  return require(15602) /* Modal */.default;
+  return require(15612) /* Modal */.default;
 }
 function getMessageRequestsComponent() {
-  return require(15604) /* MessageRequestsNavigator */.default;
+  return require(15614) /* MessageRequestsNavigator */.default;
 }
 function getSettingsComponent() {
-  return require(15633) /* Settings */.default;
+  return require(15643) /* Settings */.default;
 }
 function getAccountStanding() {
-  return require(15638) /* SuspendedUserSafetyHubPage */.default;
+  return require(15648) /* SuspendedUserSafetyHubPage */.default;
 }
 function getChannelScreen() {
   let animation = arg0;

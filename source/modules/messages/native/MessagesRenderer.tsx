@@ -1,9 +1,9 @@
-// Module ID: 10884
-// Function ID: 84480
+// Module ID: 10834
+// Function ID: 84070
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 9349, 1917, 3758, 4142, 4175, 7711, 653, 33, 14, 10885, 9348, 9918, 9346, 7710, 9476, 10486, 22, 21, 10888, 9480, 9510, 9475, 10890, 6691, 10891, 11121, 4062, 1184, 9478, 10874, 620, 4119, 6977, 11126, 10055, 9564, 477, 1555, 4979, 11127, 2]
+// Dependencies: [5, 57, 31, 9242, 1918, 3759, 4143, 4176, 7655, 653, 33, 14, 10835, 9241, 9846, 9239, 7654, 9397, 10420, 22, 21, 10838, 9401, 9431, 9396, 10840, 5685, 10841, 11081, 4063, 1184, 9399, 10824, 620, 4120, 5968, 11086, 9984, 9485, 477, 1555, 4980, 11087, 2]
 
-// Module 10884 (_createForOfIteratorHelperLoose)
+// Module 10834 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "weakMap";
@@ -114,10 +114,10 @@ function recordTimings(arg0, arr) {
   importDefault(14).recordMessageRender(arg0, mapped, hasFetched, arr.hasMoreAfter);
 }
 function handleTapShowAltText(description) {
-  importDefault(10885)({ description: description.nativeEvent.description });
+  importDefault(10835)({ description: description.nativeEvent.description });
 }
 function handleMediaPlayFinishedAnalytics(nativeEvent) {
-  const result = require(9348) /* _createForOfIteratorHelperLoose */.handleMediaPlayFinishedAnalytics(nativeEvent.nativeEvent);
+  const result = require(9241) /* _createForOfIteratorHelperLoose */.handleMediaPlayFinishedAnalytics(nativeEvent.nativeEvent);
 }
 function isLoadingAtTop(arg0, arg1) {
   if (arg1) {
@@ -302,7 +302,7 @@ const forwardRefResult = importAllResult.forwardRef((messages) => {
     first(outer1_2[17]).updateRows(ref5.current, { rows, isLoadingAtTop: tmp, scrollData, HACK_iOSForceAnimations, forceReload, isAnimated });
     ref1.current = hasMoreMessagesAfter;
   }, []);
-  let obj = _require(10486);
+  let obj = _require(10420);
   let chatUpdatesQueue = obj.useChatUpdatesQueue(ref5, callback);
   let items = [, ];
   ({ canChat: arr[0], channel: arr[1] } = messages);
@@ -345,7 +345,7 @@ const forwardRefResult = importAllResult.forwardRef((messages) => {
     return isForumPostResult;
   }, items2);
   obj = { channelId: messages.channelId, jumpTargetId: messages.messages.jumpTargetId, oldestUnreadMessageId: messages.oldestUnreadMessageId, shouldJumpToOriginalPost: callback3 };
-  let tmp16 = first(10888)(obj);
+  let tmp16 = first(10838)(obj);
   let closure_15 = tmp16.startOrCancelLatestMessagesLoad;
   obj = {
     chatRef: ref5,
@@ -403,12 +403,12 @@ const forwardRefResult = importAllResult.forwardRef((messages) => {
     visibleMessagesWindowHandler: messages.visibleMessagesWindowHandler
   };
   let tmp2 = first1(importAllResult.useState(false), 2);
-  ({ hasHandledScrollRef: closure_16, isAtBottomRef: closure_17, isNearBottomRef: closure_18, isNearTopRef: closure_19, deceleratingRef: _createForOfIteratorHelperLoose, draggingRef: _arrayLikeToArray, firstIgnoredScrollEventTimestampRef: recordTimings, scrollToTop: handleTapShowAltText, handleScrollCallbacks: handleMediaPlayFinishedAnalytics, loadMoreBefore, loadMoreAfter, scrollToTopMessage, updateNativeRows, handleScrollPosition } = first(10890)(obj));
+  ({ hasHandledScrollRef: closure_16, isAtBottomRef: closure_17, isNearBottomRef: closure_18, isNearTopRef: closure_19, deceleratingRef: _createForOfIteratorHelperLoose, draggingRef: _arrayLikeToArray, firstIgnoredScrollEventTimestampRef: recordTimings, scrollToTop: handleTapShowAltText, handleScrollCallbacks: handleMediaPlayFinishedAnalytics, loadMoreBefore, loadMoreAfter, scrollToTopMessage, updateNativeRows, handleScrollPosition } = first(10840)(obj));
   const ref6 = importAllResult.useRef(null);
   ref6.current = { getMessage: callback2, chatInputRef: messages.chatInputRef, selectedChannelId: messages.channelId, revealedMessageId: messages.messages.revealedMessageId, uploads: messages.uploads, paymentsBlocked: messages.paymentsBlocked, loadMoreBefore, loadMoreAfter };
   const first2 = first1(importAllResult.useState(() => new messages(outer1_2[27]).MessagesHandlers(() => outer1_25.current)), 1)[0];
   const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({ scrollToBottom, jumpToPresent, scrollToNewMessages, getChatRef }));
-  let tmp17 = first(10890)(obj);
+  let tmp17 = first(10840)(obj);
   let obj1 = {
     chatManager: first,
     rowGenerator: first1(tmp3[1].useState(() => {
@@ -456,7 +456,7 @@ const forwardRefResult = importAllResult.forwardRef((messages) => {
     scrollToTopMessage,
     useReducedMotion: messages.useReducedMotion
   };
-  ({ updateRows: computeForceReload, scrollToMessageId: closure_27 } = first(11121)({
+  ({ updateRows: computeForceReload, scrollToMessageId: closure_27 } = first(11081)({
     chatManager: first,
     rowGenerator: first1(tmp3[1].useState(() => {
       let tmp = first(outer1_2[16]);
@@ -1302,7 +1302,7 @@ const forwardRefResult = importAllResult.forwardRef((messages) => {
   });
   let obj3 = {};
   const items4 = [
-    callback(first(10055), {
+    callback(first(9984), {
       ref: ref5,
       style: messages.style,
       inverted: true,
@@ -1439,7 +1439,7 @@ const forwardRefResult = importAllResult.forwardRef((messages) => {
         handleVisibleMessagesChange({ firstVisibleMessageRowIndex: nativeEvent.firstVisibleMessageIndex, lastVisibleMessageRowIndex: nativeEvent.lastVisibleMessageIndex, firstVisibleMessagePercentVisible: nativeEvent.firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible: nativeEvent.lastVisibleMessagePercentVisible, source: messages(outer1_2[41]).QuestsVisibleMessagesChangedSource.VISIBILITY_CHANGED });
       }
     }),
-    callback(_require(11127).ChatTTITracker, { messages: messages.messages })
+    callback(_require(11087).ChatTTITracker, { messages: messages.messages })
   ];
   obj3.children = items4;
   return callback2(closure_18, obj3);

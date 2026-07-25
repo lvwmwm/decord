@@ -1,10 +1,10 @@
-// Module ID: 7655
-// Function ID: 60863
+// Module ID: 7597
+// Function ID: 60787
 // Name: FormRadio
-// Dependencies: [31, 33, 4130, 689, 3849, 3991, 4542, 4546, 2]
+// Dependencies: [31, 33, 4131, 689, 3850, 3992, 4543, 4547, 2]
 // Exports: FormRadio
 
-// Module 7655 (FormRadio)
+// Module 7597 (FormRadio)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -124,8 +124,8 @@ export const FormRadio = function FormRadio(selected) {
       fn.__workletHash = 15209729079449;
       fn.__initData = outer1_9;
       return obj.useAnimatedStyle(fn);
-    })(React.useContext(require(3849) /* context */.AccessibilityPreferencesContext).reducedMotion.enabled, selected)
+    })(React.useContext(require(3850) /* context */.AccessibilityPreferencesContext).reducedMotion.enabled, selected)
   ];
-  obj.children = jsx(importDefault(3991).View, { style: items1 });
-  return jsx(importDefault(3991).View, { style: items });
+  obj.children = jsx(importDefault(3992).View, { style: items1 });
+  return jsx(importDefault(3992).View, { style: items });
 };

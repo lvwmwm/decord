@@ -1,10 +1,10 @@
-// Module ID: 4341
-// Function ID: 38312
+// Module ID: 4342
+// Function ID: 38323
 // Name: getVoiceChannelKeyByChannelId
-// Dependencies: [5, 31, 3823, 4342, 1348, 3767, 1906, 1849, 653, 1197, 4344, 33, 4345, 4323, 10662, 1207, 4337, 10557, 1934, 5582, 5587, 4098, 12745, 4944, 4471, 1212, 4675, 3989, 12780, 4472, 8961, 3981, 7558, 2]
+// Dependencies: [5, 31, 3824, 4343, 1348, 3768, 1907, 1850, 653, 1197, 4345, 33, 4346, 4324, 10626, 1207, 4338, 10444, 1935, 5582, 5587, 4099, 12756, 4945, 4472, 1212, 4676, 3990, 12791, 4473, 8849, 3982, 6654, 2]
 // Exports: handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openVoiceChannelActionSheet
 
-// Module 4341 (getVoiceChannelKeyByChannelId)
+// Module 4342 (getVoiceChannelKeyByChannelId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";
@@ -29,10 +29,10 @@ function getVoiceChannelKey(id) {
   return getVoiceChannelKeyByChannelId(id);
 }
 function openChannelCallModal(channel) {
-  let obj = require(4345) /* shouldAgeVerifyForAgeGate */;
+  let obj = require(4346) /* shouldAgeVerifyForAgeGate */;
   if (!obj.maybeOpenAgeGateForVoiceChannel(channel.id)) {
-    const result = importDefault(4323).rebuildRTCActiveChannels();
-    const obj2 = importDefault(4323);
+    const result = importDefault(4324).rebuildRTCActiveChannels();
+    const obj2 = importDefault(4324);
     if (obj3.isVoicePanelEnabled(channel)) {
       state = state.getState();
       state.openChannel(channel.id);
@@ -41,19 +41,19 @@ function openChannelCallModal(channel) {
       ComponentDispatch.dispatch(constants2.VOICE_PANEL_OPEN, obj);
     } else {
       obj = { channel };
-      const obj4 = importDefault(4337);
-      obj4.pushLazy(require(1934) /* maybeLoadBundle */(10557, dependencyMap.paths), obj, getVoiceChannelKey(channel.id));
-      const tmp8 = require(1934) /* maybeLoadBundle */(10557, dependencyMap.paths);
+      const obj4 = importDefault(4338);
+      obj4.pushLazy(require(1935) /* maybeLoadBundle */(10444, dependencyMap.paths), obj, getVoiceChannelKey(channel.id));
+      const tmp8 = require(1935) /* maybeLoadBundle */(10444, dependencyMap.paths);
     }
-    obj3 = require(10662) /* isVoicePanelEnabled */;
+    obj3 = require(10626) /* isVoicePanelEnabled */;
   }
 }
 function dismissVoiceChannelScreens(channel, onExited) {
   const tmp = getVoiceChannelKey(channel.id);
-  importDefault(4337).popWithKey(tmp, onExited);
+  importDefault(4338).popWithKey(tmp, onExited);
   if (key.getKey() === tmp) {
-    importDefault(4098).hideActionSheet();
-    const obj2 = importDefault(4098);
+    importDefault(4099).hideActionSheet();
+    const obj2 = importDefault(4099);
   }
 }
 function monkeyPatchCall() {
@@ -68,7 +68,7 @@ function monkeyPatchCall() {
 }
 function showGuardCallAlert(arg0) {
   const _require = arg0;
-  let obj = importDefault(4471);
+  let obj = importDefault(4472);
   obj = {};
   const intl = _require(1212).intl;
   obj.title = intl.string(_require(1212).t["91WuJ9"]);
@@ -124,12 +124,12 @@ export const maybeShowAgeGateModal = function maybeShowAgeGateModal(channelId) {
   }
 };
 export const openVoiceChannelActionSheet = function openVoiceChannelActionSheet(outer1_0) {
-  let obj = importDefault(4098);
+  let obj = importDefault(4099);
   obj = { channel: outer1_0 };
-  obj.openLazy(require(1934) /* maybeLoadBundle */(12745, dependencyMap.paths), getVoiceChannelKey(outer1_0.id), obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(12756, dependencyMap.paths), getVoiceChannelKey(outer1_0.id), obj);
 };
 export const hideVoiceChannelActionSheet = function hideVoiceChannelActionSheet(id) {
-  importDefault(4098).hideActionSheet(getVoiceChannelKey(id.id));
+  importDefault(4099).hideActionSheet(getVoiceChannelKey(id.id));
 };
 export { dismissVoiceChannelScreens };
 export { monkeyPatchCall };
@@ -235,8 +235,8 @@ export const navigateToVoiceChannel = function navigateToVoiceChannel(channel, L
   if (channel.isPrivate()) {
     openChannelCallModal(channel);
   } else if (channel.isGuildStageVoice()) {
-    require(7558) /* openStageChannel */.openStageChannel(channel);
-    const obj = require(7558) /* openStageChannel */;
+    require(6654) /* openStageChannel */.openStageChannel(channel);
+    const obj = require(6654) /* openStageChannel */;
   } else {
     openGuildVoiceModal(channel);
   }

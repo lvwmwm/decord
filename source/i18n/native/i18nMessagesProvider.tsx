@@ -1,10 +1,10 @@
-// Module ID: 16639
-// Function ID: 129816
+// Module ID: 16650
+// Function ID: 129984
 // Name: i18nManager
-// Dependencies: [27, 477, 16640, 1250, 1212, 2]
+// Dependencies: [27, 477, 16651, 1250, 1212, 2]
 // Exports: default
 
-// Module 16639 (i18nManager)
+// Module 16650 (i18nManager)
 import set from "set";
 import set from "enforcing";
 

@@ -1,10 +1,10 @@
-// Module ID: 11627
-// Function ID: 90407
+// Module ID: 11594
+// Function ID: 90130
 // Name: useGuildPowerupOnShowMore
-// Dependencies: [31, 11579, 2]
+// Dependencies: [31, 11545, 2]
 // Exports: default
 
-// Module 11627 (useGuildPowerupOnShowMore)
+// Module 11594 (useGuildPowerupOnShowMore)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnShowMore.tsx");

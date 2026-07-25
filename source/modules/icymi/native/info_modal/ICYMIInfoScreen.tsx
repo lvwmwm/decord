@@ -1,10 +1,10 @@
-// Module ID: 15242
-// Function ID: 115985
+// Module ID: 15252
+// Function ID: 116113
 // Name: ICYMIInfoScreen
-// Dependencies: [57, 5, 31, 27, 482, 33, 4130, 689, 5084, 1557, 4066, 1456, 8374, 15243, 4337, 9158, 9166, 1212, 5085, 15245, 15246, 15247, 15248, 4126, 9048, 11958, 4091, 4098, 15249, 1934, 4543, 2]
+// Dependencies: [57, 5, 31, 27, 482, 33, 4131, 689, 5084, 1557, 4067, 1456, 8132, 15253, 4338, 9050, 9058, 1212, 5085, 15255, 15256, 15257, 15258, 4127, 8936, 11934, 4092, 4099, 15259, 1935, 4544, 2]
 // Exports: default
 
-// Module 15242 (ICYMIInfoScreen)
+// Module 15252 (ICYMIInfoScreen)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
 import set from "set";
@@ -75,15 +75,15 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   obj = { style: items2 };
   items2 = [{ marginTop: top }, tmp.closeIcon];
   const obj1 = {
-    source: navigation(9166),
+    source: navigation(9058),
     onPress() {
-      return navigation(4337).pop();
+      return navigation(4338).pop();
     }
   };
   const intl = extendedOnboarding(1212).intl;
   obj1.accessibilityLabel = intl.string(extendedOnboarding(1212).t.cpT0Cq);
   obj1.color = tmp.closeIconColor.backgroundColor;
-  obj.children = callback3(extendedOnboarding(9158).HeaderIconButton, obj1);
+  obj.children = callback3(extendedOnboarding(9050).HeaderIconButton, obj1);
   const items3 = [callback3(closure_6, obj), , ];
   const obj2 = { style: items4 };
   items4 = [tmp.container, { marginBottom: bottom }];
@@ -91,9 +91,9 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const obj4 = {};
   const tmp10 = callback3;
   const tmp12 = closure_7;
-  const tmp3 = navigation(4066)();
+  const tmp3 = navigation(4067)();
   const tmp9 = closure_11;
-  obj4.uri = navigation(15245);
+  obj4.uri = navigation(15255);
   obj3.source = obj4;
   obj3.style = tmp.bgImage;
   const items5 = [callback3(navigation(5085), obj3), ];
@@ -107,9 +107,9 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const obj9 = {};
   const obj6 = { marginTop: top + navigation(689).space.PX_12 };
   if (tmp3 === ThemeTypes.LIGHT) {
-    let tmp17 = navigation(15246);
+    let tmp17 = navigation(15256);
   } else {
-    tmp17 = navigation(15247);
+    tmp17 = navigation(15257);
   }
   obj9.uri = tmp17;
   obj8.source = obj9;
@@ -117,50 +117,50 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const items7 = [tmp10(navigation(5085), obj8), , , ];
   const obj10 = {};
   const tmp14 = navigation(5085);
-  obj10.source = navigation(15248);
+  obj10.source = navigation(15258);
   obj10.style = tmp.flashIcon;
   items7[1] = callback3(navigation(5085), obj10);
   const obj11 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
   const intl2 = extendedOnboarding(1212).intl;
   obj11.children = intl2.string(extendedOnboarding(1212).t["jnXV/V"]);
-  items7[2] = callback3(extendedOnboarding(4126).Text, obj11);
+  items7[2] = callback3(extendedOnboarding(4127).Text, obj11);
   const obj12 = { variant: "text-md/normal", color: "text-default", style: tmp.headerText };
   const intl3 = extendedOnboarding(1212).intl;
   obj12.children = intl3.string(extendedOnboarding(1212).t["9SjvoK"]);
-  items7[3] = callback3(extendedOnboarding(4126).Text, obj12);
+  items7[3] = callback3(extendedOnboarding(4127).Text, obj12);
   obj7.children = items7;
   const items8 = [callback4(closure_6, obj7), ];
   const obj13 = {};
   const obj14 = { style: tmp.body };
   const obj15 = { style: tmp.infoRow };
   const tmp21 = navigation(5085);
-  const items9 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(9048).ServerIcon, { size: "sm", color: "interactive-text-active" }) }), ];
+  const items9 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(8936).ServerIcon, { size: "sm", color: "interactive-text-active" }) }), ];
   const obj17 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText };
   const intl4 = extendedOnboarding(1212).intl;
   obj17.children = intl4.string(extendedOnboarding(1212).t.knxfqR);
-  items9[1] = callback3(extendedOnboarding(4126).Text, obj17);
+  items9[1] = callback3(extendedOnboarding(4127).Text, obj17);
   obj15.children = items9;
   const items10 = [callback4(closure_6, obj15), callback3(closure_6, { style: tmp.divider }), , , ];
   const obj19 = { style: tmp.infoRow };
-  const obj16 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(9048).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj16 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(8936).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
   const obj18 = { style: tmp.divider };
   const tmp22 = closure_6;
-  const items11 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(11958).NewUserIcon, { size: "sm", color: "interactive-text-active" }) }), ];
+  const items11 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(11934).NewUserIcon, { size: "sm", color: "interactive-text-active" }) }), ];
   const obj21 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText };
   const intl5 = extendedOnboarding(1212).intl;
   obj21.children = intl5.string(extendedOnboarding(1212).t.BnUXZi);
-  items11[1] = callback3(extendedOnboarding(4126).Text, obj21);
+  items11[1] = callback3(extendedOnboarding(4127).Text, obj21);
   obj19.children = items11;
   items10[2] = callback4(closure_6, obj19);
   items10[3] = callback3(closure_6, { style: tmp.divider });
   const obj23 = { style: tmp.infoRow };
-  const obj20 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(11958).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj20 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(11934).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
   const obj22 = { style: tmp.divider };
-  const items12 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(4091).CircleCheckIcon, { size: "sm", color: "interactive-text-active" }) }), ];
+  const items12 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(4092).CircleCheckIcon, { size: "sm", color: "interactive-text-active" }) }), ];
   const obj25 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText };
   const intl6 = extendedOnboarding(1212).intl;
   obj25.children = intl6.string(extendedOnboarding(1212).t.itb1rh);
-  items12[1] = callback3(extendedOnboarding(4126).Text, obj25);
+  items12[1] = callback3(extendedOnboarding(4127).Text, obj25);
   obj23.children = items12;
   items10[4] = callback4(closure_6, obj23);
   obj14.children = items10;
@@ -177,10 +177,10 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
         },
         children
       };
-      return outer1_9(extendedOnboarding(4126).Text, obj, arg1);
+      return outer1_9(extendedOnboarding(4127).Text, obj, arg1);
     }
   });
-  items13[1] = callback3(extendedOnboarding(4126).Text, obj26);
+  items13[1] = callback3(extendedOnboarding(4127).Text, obj26);
   obj13.children = items13;
   items8[1] = callback4(closure_6, obj13);
   obj5.children = items8;
@@ -200,7 +200,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   }
   obj29.text = stringResult;
   obj29.onPress = callback;
-  obj28.children = callback3(extendedOnboarding(4543).Button, obj29);
+  obj28.children = callback3(extendedOnboarding(4544).Button, obj29);
   items3[2] = callback3(tmp22, obj28);
   obj.children = items3;
   return callback4(tmp9, obj);

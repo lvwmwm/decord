@@ -1,10 +1,10 @@
-// Module ID: 9391
-// Function ID: 73264
+// Module ID: 9297
+// Function ID: 72789
 // Name: ShinyButton
-// Dependencies: [31, 33, 4130, 689, 4544, 1273, 9392, 2]
+// Dependencies: [31, 33, 4131, 689, 4545, 1273, 9298, 2]
 // Exports: default
 
-// Module 9391 (ShinyButton)
+// Module 9297 (ShinyButton)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -40,17 +40,17 @@ export default function ShinyButton(style) {
   obj.disabled = disabled;
   let tmp6Result;
   if (!loading) {
-    obj = { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9392) };
+    obj = { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9298) };
     const items1 = [tmp3.sparkleIcon, ];
     if (disabled) {
       disabled = tmp3.disabled;
     }
     items1[1] = disabled;
     obj.style = items1;
-    tmp6Result = jsx(require(1273) /* Button */.Icon, { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9392) });
+    tmp6Result = jsx(require(1273) /* Button */.Icon, { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9298) });
     const tmp6 = jsx;
   }
   obj.icon = tmp6Result;
   const merged1 = Object.assign(merged);
-  return jsx(require(4544) /* CollapsingText */.BaseTextButton, { onPress });
+  return jsx(require(4545) /* CollapsingText */.BaseTextButton, { onPress });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12360
-// Function ID: 96198
+// Module ID: 12336
+// Function ID: 96007
 // Name: RemediationsElement
-// Dependencies: [31, 27, 33, 4130, 689, 5501, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5501, 1212, 2]
 // Exports: default
 
-// Module 12360 (RemediationsElement)
+// Module 12336 (RemediationsElement)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

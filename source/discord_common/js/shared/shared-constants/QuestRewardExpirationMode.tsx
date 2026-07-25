@@ -1,9 +1,9 @@
-// Module ID: 9500
-// Function ID: 73956
+// Module ID: 9421
+// Function ID: 73543
 // Name: QuestRewardExpirationMode
 // Dependencies: [2]
 
-// Module 9500 (QuestRewardExpirationMode)
+// Module 9421 (QuestRewardExpirationMode)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardExpirationMode.tsx");
 
 export const QuestRewardExpirationMode = { NORMAL: 1, [1]: "NORMAL", PREMIUM_EXTENSION: 2, [2]: "PREMIUM_EXTENSION", PREMIUM_PERMANENT: 3, [3]: "PREMIUM_PERMANENT" };

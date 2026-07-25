@@ -1,10 +1,10 @@
-// Module ID: 10918
-// Function ID: 84833
+// Module ID: 10868
+// Function ID: 84423
 // Name: trackRepliedMessageClicked
-// Dependencies: [6829, 653, 8696, 4324, 2]
+// Dependencies: [5829, 653, 8584, 4325, 2]
 // Exports: default
 
-// Module 10918 (trackRepliedMessageClicked)
+// Module 10868 (trackRepliedMessageClicked)
 import { ReferencedMessageState } from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 
@@ -19,7 +19,7 @@ export default function trackRepliedMessageClicked(messageReference, state, guil
   let tmp2 = null;
   let tmp3 = null;
   if (state.state === ReferencedMessageState.LOADED) {
-    const tmp10 = importDefault(8696)(state.message);
+    const tmp10 = importDefault(8584)(state.message);
     const content = tmp10.content;
     let length;
     if (null != content) {
@@ -33,7 +33,7 @@ export default function trackRepliedMessageClicked(messageReference, state, guil
     tmp2 = tmp10.attachments.length > 0 || tmp10.embeds.length > 0 || tmp10.stickerItems.length > 0 || tmp10.stickers.length > 0;
     const tmp4 = tmp10.attachments.length > 0 || tmp10.embeds.length > 0 || tmp10.stickerItems.length > 0 || tmp10.stickers.length > 0;
   }
-  let obj = require(4324) /* _createForOfIteratorHelperLoose */;
+  let obj = require(4325) /* _createForOfIteratorHelperLoose */;
   obj = {};
   guild_id = guild_id.guild_id;
   let tmp6;

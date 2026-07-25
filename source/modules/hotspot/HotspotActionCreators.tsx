@@ -1,5 +1,5 @@
 // Module ID: 5599
-// Function ID: 47586
+// Function ID: 47591
 // Name: hideHotspot
 // Dependencies: [653, 675, 686, 2]
 // Exports: clearHotspotOverride, hideHotspot, setHotspotOverride

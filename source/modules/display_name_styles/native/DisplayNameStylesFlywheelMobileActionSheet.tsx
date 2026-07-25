@@ -1,10 +1,10 @@
-// Module ID: 15666
-// Function ID: 120779
+// Module ID: 15677
+// Function ID: 120948
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [31, 27, 1849, 653, 1345, 33, 3849, 3976, 4066, 566, 3776, 1212, 2556, 5796, 5582, 3946, 1334, 5187, 5121, 5446, 5807, 477, 5085, 15667, 8043, 1273, 4126, 4543, 4130, 689, 2]
+// Dependencies: [31, 27, 1850, 653, 1345, 33, 3850, 3977, 4067, 566, 3777, 1212, 2557, 6554, 5582, 3947, 1334, 5187, 5121, 5446, 6727, 477, 5085, 15678, 6153, 1273, 4127, 4544, 4131, 689, 2]
 // Exports: default
 
-// Module 15666 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 15677 (DisplayNameStylesFlywheelMobileActionSheet)
 import result from "result";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,19 +40,19 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const ref = React.useRef(null);
-  let enabled = React.useContext(markAsDismissed(3849).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj = markAsDismissed(3976);
-  const isThemeDarkResult = obj.isThemeDark(ref(4066)());
+  let enabled = React.useContext(markAsDismissed(3850).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj = markAsDismissed(3977);
+  const isThemeDarkResult = obj.isThemeDark(ref(4067)());
   const tmp3 = callback3();
   let obj1 = markAsDismissed(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  let obj2 = ref(3776);
+  let obj2 = ref(3777);
   let result = obj2.canUsePremiumProfileCustomization(stateFromStores);
   const dependencyMap = result;
   const intl = markAsDismissed(1212).intl;
   const string = intl.string;
-  const tmp6 = ref(2556);
+  const tmp6 = ref(2557);
   if (result) {
     let stringResult = string(tmp6.TyUdka);
   } else {
@@ -98,7 +98,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   let tmp14 = enabled;
   if (enabled) {
     const obj4 = { resizeMode: "contain" };
-    tmp14 = callback(markAsDismissed(5807).DisplayNameStylesV2AbstractUI, obj4);
+    tmp14 = callback(markAsDismissed(6727).DisplayNameStylesV2AbstractUI, obj4);
   }
   const items5 = [tmp14, ];
   if (!!enabled) {
@@ -115,26 +115,26 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     }
     obj6.color = str5;
     const intl2 = markAsDismissed(1212).intl;
-    obj6.children = intl2.string(ref(2556).Uzms61);
-    items4[3] = callback(markAsDismissed(4126).Text, obj6);
+    obj6.children = intl2.string(ref(2557).Uzms61);
+    items4[3] = callback(markAsDismissed(4127).Text, obj6);
     const obj7 = { variant: "text-lg/medium", style: tmp3.subtitle };
     if (isThemeDarkResult) {
       str4 = "text-overlay-light";
     }
     obj7.color = str4;
     obj7.children = stringResult;
-    items4[4] = callback(markAsDismissed(4126).Text, obj7);
+    items4[4] = callback(markAsDismissed(4127).Text, obj7);
     const obj8 = { style: tmp3.actions };
     let obj9 = { text: null, variant: "primary", size: "lg" };
     const intl3 = markAsDismissed(1212).intl;
     obj9.text = intl3.string(markAsDismissed(1212).t["4P5I8V"]);
     obj9.onPress = callback;
-    const items6 = [callback(markAsDismissed(4543).Button, obj9), ];
+    const items6 = [callback(markAsDismissed(4544).Button, obj9), ];
     const obj10 = { text: null, variant: "secondary", size: "lg" };
     const intl4 = markAsDismissed(1212).intl;
     obj10.text = intl4.string(markAsDismissed(1212).t.TulDPl);
     obj10.onPress = callback1;
-    items6[1] = callback(markAsDismissed(4543).Button, obj10);
+    items6[1] = callback(markAsDismissed(4544).Button, obj10);
     obj8.children = items6;
     items4[5] = callback2(View, obj8);
     obj1.children = items4;
@@ -145,7 +145,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     obj9 = markAsDismissed(477);
     if (obj9.isIOS()) {
       const obj11 = {};
-      const obj12 = { uri: ref(15667) };
+      const obj12 = { uri: ref(15678) };
       obj11.source = obj12;
       obj11.style = tmp3.image;
       obj11.resizeMode = "contain";
@@ -154,8 +154,8 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       let tmp21Result = tmp21(ref(5085), obj11);
       const tmp28 = ref(5085);
     } else {
-      const obj13 = { url: ref(15667), style: tmp3.image, autoplay: true };
-      tmp21Result = tmp21(markAsDismissed(8043).APNGPlayer, obj13);
+      const obj13 = { url: ref(15678), style: tmp3.image, autoplay: true };
+      tmp21Result = tmp21(markAsDismissed(6153).APNGPlayer, obj13);
     }
   }
 };

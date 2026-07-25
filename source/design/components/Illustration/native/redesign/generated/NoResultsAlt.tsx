@@ -1,17 +1,17 @@
-// Module ID: 8474
-// Function ID: 67399
+// Module ID: 8234
+// Function ID: 66053
 // Name: getNoResultsAltSource
-// Dependencies: [31, 27, 33, 7405, 8475, 8476, 8477, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 8235, 8236, 8237, 3977, 2]
 // Exports: NoResultsAlt
 
-// Module 8474 (getNoResultsAltSource)
+// Module 8234 (getNoResultsAltSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getNoResultsAltSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getNoResultsAltSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useNoResultsAltSource() {
-  return getNoResultsAltSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getNoResultsAltSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoResultsAlt.tsx");
 

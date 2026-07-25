@@ -1,21 +1,21 @@
-// Module ID: 9376
-// Function ID: 73194
+// Module ID: 9282
+// Function ID: 72719
 // Name: BurstReactionToggle
-// Dependencies: [31, 27, 4122, 1345, 33, 3991, 566, 3834, 689, 4131, 4542, 4130, 9377, 1212, 7483, 2]
+// Dependencies: [31, 27, 4123, 1345, 33, 3992, 566, 3835, 689, 4132, 4543, 4131, 9283, 1212, 6567, 2]
 // Exports: default
 
-// Module 9376 (BurstReactionToggle)
+// Module 9282 (BurstReactionToggle)
 import result from "result";
 import { Pressable } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
-import { Easing } from "module_3991";
+import { Easing } from "module_3992";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;
 let obj = { duration: 100 };
-obj.easing = Easing.out(require("module_3991").Easing.quad);
+obj.easing = Easing.out(require("module_3992").Easing.quad);
 let closure_9 = { stiffness: 750, mass: 2.5, damping: 70 };
 let closure_10 = { code: "function BurstReactionToggleTsx1(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
 obj = {};
@@ -31,7 +31,7 @@ export default function BurstReactionToggle(arg0) {
   let importDefault;
   let colors = importDefault(689).colors;
   const ref = React.useRef(null);
-  importDefault = importDefault(9377)(ref);
+  importDefault = importDefault(9283)(ref);
   let obj = {
     onPress() {
       callback2(outer1_6.AUTO);
@@ -104,7 +104,7 @@ export default function BurstReactionToggle(arg0) {
       return { containerStyle };
     })(isActive).containerStyle
   ];
-  obj.children = jsx(require(7483) /* SuperReactionIcon */.SuperReactionIcon, { color: isActive ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT });
-  obj.children = jsx(importDefault(3991).View, { style: items, ref });
+  obj.children = jsx(require(6567) /* SuperReactionIcon */.SuperReactionIcon, { color: isActive ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT });
+  obj.children = jsx(importDefault(3992).View, { style: items, ref });
   return <Pressable style={items} ref={ref} />;
 };

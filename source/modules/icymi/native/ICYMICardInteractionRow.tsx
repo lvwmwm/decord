@@ -1,10 +1,10 @@
-// Module ID: 15273
-// Function ID: 116445
+// Module ID: 15283
+// Function ID: 116573
 // Name: onAddReaction
-// Dependencies: [57, 31, 27, 5683, 1348, 4946, 3758, 653, 1852, 33, 3769, 7004, 4130, 689, 477, 3974, 566, 4140, 6691, 9362, 4660, 1212, 7437, 4126, 9467, 665, 1392, 9348, 9125, 10381, 9912, 9983, 15265, 4629, 7005, 9998, 9570, 8365, 9904, 9580, 3834, 4554, 666, 5512, 2]
+// Dependencies: [57, 31, 27, 6014, 1348, 4947, 3759, 653, 1853, 33, 3770, 6022, 4131, 689, 477, 3975, 566, 4141, 5685, 9268, 4661, 1212, 6519, 4127, 9388, 665, 1392, 9241, 9017, 10314, 9839, 9911, 15275, 4630, 6023, 9926, 9491, 8123, 9830, 9501, 3835, 4555, 666, 5512, 2]
 // Exports: default
 
-// Module 15273 (onAddReaction)
+// Module 15283 (onAddReaction)
 import _slicedToArray from "_slicedToArray";
 import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon";
 import get_ActivityIndicator from "_createForOfIteratorHelperLoose";
@@ -29,10 +29,10 @@ let closure_7;
 const require = arg1;
 function onAddReaction(id, id2, byName, burst) {
   if (null != byName) {
-    let obj = require(3769) /* getReactionEmojiName */;
-    const obj2 = require(7004) /* checkReactionResponse */;
+    let obj = require(3770) /* getReactionEmojiName */;
+    const obj2 = require(6022) /* checkReactionResponse */;
     obj = { burst };
-    obj2.addReaction(id, id2, obj.toReactionEmoji(byName), require(7004) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
+    obj2.addReaction(id, id2, obj.toReactionEmoji(byName), require(6022) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
     const toReactionEmojiResult = obj.toReactionEmoji(byName);
   }
 }
@@ -85,11 +85,11 @@ function useThread(id) {
       tmp = null == outer1_8.getMostRecentMessage(lib.id);
     }
     if (tmp) {
-      let obj = lib(4140);
+      let obj = lib(4141);
       obj.preload(id.id, lib.id);
       obj = { channelId: lib.id, isPreload: true, limit: 25 };
-      const messages = lib(6691).fetchMessages(obj);
-      const obj2 = lib(6691);
+      const messages = lib(5685).fetchMessages(obj);
+      const obj2 = lib(5685);
     }
   }, items1);
   return { thread, messageCount, mostRecentMessage };
@@ -299,8 +299,8 @@ function ForwardButton(disabled) {
   obj.disabled = disabled;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.xIUfJS);
-  obj.children = callback(importDefault(9912), { size: "sm" });
-  return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
+  obj.children = callback(importDefault(9839), { size: "sm" });
+  return callback(require(4661) /* PressableBase */.PressableOpacity, obj);
 }
 function ReplyButton(disabled) {
   disabled = disabled.disabled;
@@ -318,8 +318,8 @@ function ReplyButton(disabled) {
   obj.disabled = disabled;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["5NwaNY"]);
-  obj.children = callback(require(9983) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
-  return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
+  obj.children = callback(require(9911) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
+  return callback(require(4661) /* PressableBase */.PressableOpacity, obj);
 }
 function ThreadAsCommentsButton(parentMessage) {
   let handleItemInteracted;
@@ -403,7 +403,7 @@ let closure_20 = _createForOfIteratorHelperLoose.createStyles(() => {
   obj.selectedInnerTextContainer = { paddingBottom: 3.5 };
   obj.innerTextContainer = { alignSelf: "flex-end", paddingBottom: 4.5 };
   obj.emojiImage = { resizeMode: "contain", width: c19, height: c19 };
-  const obj3 = { borderColor: importDefault(689).unsafe_rawColors.BRAND_560, borderWidth: 1, paddingHorizontal: 7, backgroundColor: require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.BRAND_500, 0.3) };
+  const obj3 = { borderColor: importDefault(689).unsafe_rawColors.BRAND_560, borderWidth: 1, paddingHorizontal: 7, backgroundColor: require(3975) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.BRAND_500, 0.3) };
   obj.selected = obj3;
   obj.gradient = { position: "absolute", right: 0, top: 0, bottom: 0, width: 48 };
   obj.overflowChevron = { position: "absolute", right: 0 };

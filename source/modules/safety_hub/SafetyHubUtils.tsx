@@ -1,10 +1,10 @@
-// Module ID: 7588
-// Function ID: 60485
+// Module ID: 6698
+// Function ID: 59144
 // Name: parseMessageEmbedForProps
-// Dependencies: [1194, 7589, 653, 3712, 4317, 1212, 7590, 566, 2]
+// Dependencies: [1194, 6699, 653, 3713, 4318, 1212, 6700, 566, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 7588 (parseMessageEmbedForProps)
+// Module 6698 (parseMessageEmbedForProps)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import SafetyHubLinks from "SafetyHubLinks";
 import ME from "ME";
@@ -56,14 +56,14 @@ function parseMessageEmbedForProps(fields) {
 const result = require("ME").fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  return importDefault(3712)().to(importDefault(3712)(timestamp));
+  return importDefault(3713)().to(importDefault(3713)(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   if (obj.isImageFile(filename.filename)) {
     let num = constants5.IS_SPOILER;
   } else {
     num = 0;
-    const obj2 = require(4317) /* urlMatchesFileExtension */;
+    const obj2 = require(4318) /* urlMatchesFileExtension */;
   }
   return num;
 };
@@ -97,7 +97,7 @@ export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_l
   }
 };
 export const isFlaggedContentEmpty = function isFlaggedContentEmpty(first) {
-  let tmp = first.type !== require(7590) /* ContentIdType */.ContentIdType.MESSAGE;
+  let tmp = first.type !== require(6700) /* ContentIdType */.ContentIdType.MESSAGE;
   if (!tmp) {
     let tmp2 = "" === first.content;
     if (tmp2) {

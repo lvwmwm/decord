@@ -1,10 +1,10 @@
-// Module ID: 4037
-// Function ID: 33601
+// Module ID: 4038
+// Function ID: 33612
 // Name: useGuildAppliedBoostCount
-// Dependencies: [31, 1838, 4038, 4017, 4041, 566, 2]
+// Dependencies: [31, 1838, 4039, 4018, 4042, 566, 2]
 // Exports: default, getGuildPowerupsBoostCount
 
-// Module 4037 (useGuildAppliedBoostCount)
+// Module 4038 (useGuildAppliedBoostCount)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -80,7 +80,7 @@ export const getGuildPowerupsBoostCount = function getGuildPowerupsBoostCount(id
   if (null != prop) {
     num = prop;
   }
-  let obj = require(4041) /* items */;
+  let obj = require(4042) /* items */;
   const gameServerEnabled = obj.getGameServerEnabled(id, "GuildPowerupsBoostCount");
   const stateForGuild = stateForGuild2.getStateForGuild(id);
   let appliedBoosts;

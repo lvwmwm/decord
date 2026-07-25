@@ -1,10 +1,10 @@
-// Module ID: 9974
-// Function ID: 77104
+// Module ID: 9902
+// Function ID: 76719
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [31, 27, 1857, 1838, 1849, 33, 4130, 1557, 9975, 8224, 566, 7976, 5513, 4126, 1212, 4660, 8537, 1273, 5187, 2]
+// Dependencies: [31, 27, 1858, 1838, 1850, 33, 4131, 1557, 9903, 5655, 566, 5656, 5513, 4127, 1212, 4661, 8297, 1273, 5187, 2]
 // Exports: default
 
-// Module 9974 (AppInteractionInfoActionSheet)
+// Module 9902 (AppInteractionInfoActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -36,13 +36,13 @@ export default function AppInteractionInfoActionSheet(message) {
   let tmp3;
   const memo = React.useMemo(() => outer1_8(onBack(_undefined[8]), { onBack }), items);
   if (null != interactionMetadata) {
-    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 8224).ApplicationIntegrationType.USER_INSTALL];
+    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 5655).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp3;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp6;
   if (null != interactionMetadata2) {
-    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 8224).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 5655).ApplicationIntegrationType.GUILD_INSTALL];
   }
   React = tmp6;
   const interactionMetadata3 = message.interactionMetadata;
@@ -89,12 +89,12 @@ export default function AppInteractionInfoActionSheet(message) {
     const items5 = [callback(onBack(5513), obj), ];
     obj1 = { style: tmp.itemLabel };
     obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores1.name };
-    const items6 = [callback(message(4126).Text, obj2), ];
+    const items6 = [callback(message(4127).Text, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "text-subtle" };
     const intl2 = message(1212).intl;
     const obj4 = { application: message.author.username };
     obj3.children = intl2.format(message(1212).t.ShLXXB, obj4);
-    items6[1] = callback(message(4126).Text, obj3);
+    items6[1] = callback(message(4127).Text, obj3);
     obj1.children = items6;
     items5[1] = callback2(id, obj1);
     obj.children = items5;
@@ -113,17 +113,17 @@ export default function AppInteractionInfoActionSheet(message) {
       const items7 = [callback(message(1273).Avatar, obj7), ];
       const obj8 = { style: tmp.itemLabel };
       const obj9 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.username };
-      const items8 = [callback(message(4126).Text, obj9), ];
+      const items8 = [callback(message(4127).Text, obj9), ];
       const obj10 = { variant: "text-xs/medium", color: "text-subtle" };
       const intl = message(1212).intl;
       const obj11 = { application: message.author.username };
       obj10.children = intl.format(message(1212).t.ShLXXB, obj11);
-      items8[1] = callback(message(4126).Text, obj10);
+      items8[1] = callback(message(4127).Text, obj10);
       obj8.children = items8;
       items7[1] = callback2(id, obj8);
       obj6.children = items7;
       obj5.children = callback2(id, obj6);
-      tmp27 = callback(message(4660).PressableOpacity, obj5);
+      tmp27 = callback(message(4661).PressableOpacity, obj5);
     }
   }
   const obj12 = { header: memo, bodyStyles: { paddingBottom: onBack(1557)().bottom } };
@@ -140,16 +140,16 @@ export default function AppInteractionInfoActionSheet(message) {
     const items10 = [callback(message(1273).Avatar, obj15), ];
     const obj16 = { style: tmp.itemLabel };
     const obj17 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp14.username };
-    const items11 = [callback(message(4126).Text, obj17), ];
+    const items11 = [callback(message(4127).Text, obj17), ];
     const obj18 = { variant: "text-xs/medium", color: "text-subtle" };
     const intl3 = message(1212).intl;
     obj18.children = intl3.string(message(1212).t["04gxNg"]);
-    items11[1] = callback(message(4126).Text, obj18);
+    items11[1] = callback(message(4127).Text, obj18);
     obj16.children = items11;
     items10[1] = callback2(id, obj16);
     obj14.children = items10;
     obj13.children = callback2(id, obj14);
-    tmp36 = callback(message(4660).PressableOpacity, obj13);
+    tmp36 = callback(message(4661).PressableOpacity, obj13);
   }
   items9[1] = tmp36;
   obj12.children = items9;

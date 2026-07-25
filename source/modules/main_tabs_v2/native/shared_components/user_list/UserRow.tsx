@@ -1,9 +1,9 @@
-// Module ID: 8873
-// Function ID: 69838
+// Module ID: 8761
+// Function ID: 69317
 // Name: handleCall
-// Dependencies: [31, 27, 4122, 4167, 6904, 1348, 4217, 3767, 8857, 653, 33, 4130, 689, 4140, 44, 8874, 9096, 3830, 9097, 8962, 6905, 566, 1273, 4126, 3969, 9102, 5462, 9126, 1212, 9127, 4084, 4082, 4543, 1833, 9123, 4629, 8537, 1934, 9128, 9129, 7477, 4571, 7739, 4361, 8561, 8558, 8568, 9131, 8620, 9132, 8792, 5165, 2]
+// Dependencies: [31, 27, 4123, 4168, 5895, 1348, 4218, 3768, 8745, 653, 33, 4131, 689, 4141, 44, 8762, 8988, 3831, 8989, 8850, 5896, 566, 1273, 4127, 3970, 8994, 5462, 9018, 1212, 9019, 4085, 4083, 4544, 1833, 9015, 4630, 8297, 1935, 9020, 9021, 6561, 4572, 7685, 4362, 8321, 8318, 8328, 9023, 8384, 9024, 8680, 5164, 2]
 
-// Module 8873 (handleCall)
+// Module 8761 (handleCall)
 import importAllResult from "CheckmarkLargeIcon";
 import { View } from "getAvatarDecoration";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,8 +26,8 @@ let closure_16;
 const require = arg1;
 function handleCall(id) {
   let closure_0 = id;
-  let obj = importDefault(4140);
-  importDefault(4140).ensurePrivateChannel(id.id).then((channelId) => {
+  let obj = importDefault(4141);
+  importDefault(4141).ensurePrivateChannel(id.id).then((channelId) => {
     const channel = outer1_8.getChannel(channelId);
     if (null != channel) {
       outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
@@ -44,7 +44,7 @@ function handleCall(id) {
 }
 function handleAccept(id, applicationId) {
   let closure_0 = applicationId;
-  let obj = importDefault(9096);
+  let obj = importDefault(8988);
   obj = {
     userId: id.id,
     applicationId,
@@ -64,24 +64,24 @@ function handleAccept(id, applicationId) {
 function handleCancel(id, applicationId) {
   if (null != applicationId) {
     let obj = { userId: id.id, applicationId };
-    const result = importDefault(9097).cancelGameFriendRequest(obj);
-    const obj4 = importDefault(9097);
-    const result1 = require(3830) /* presentAddedFriendToast */.presentGameFriendRequestIgnoredToast();
-    const obj6 = require(3830) /* presentAddedFriendToast */;
+    const result = importDefault(8989).cancelGameFriendRequest(obj);
+    const obj4 = importDefault(8989);
+    const result1 = require(3831) /* presentAddedFriendToast */.presentGameFriendRequestIgnoredToast();
+    const obj6 = require(3831) /* presentAddedFriendToast */;
   } else {
-    obj = importDefault(8962);
+    obj = importDefault(8850);
     obj = { location: Friends_v2 };
     obj.cancelFriendRequest(id.id, obj);
-    const result2 = require(3830) /* presentAddedFriendToast */.presentFriendRequestIgnoredToast();
-    const obj3 = require(3830) /* presentAddedFriendToast */;
+    const result2 = require(3831) /* presentAddedFriendToast */.presentFriendRequestIgnoredToast();
+    const obj3 = require(3831) /* presentAddedFriendToast */;
   }
 }
 function handleAcceptSuggestion(id) {
-  let obj = importDefault(8962);
+  let obj = importDefault(8850);
   obj = { userId: id.id, context: obj, type: undefined, fromFriendSuggestion: true };
   obj = { location: Friends_v2 };
   obj.addRelationship(obj);
-  const result = require(3830) /* presentAddedFriendToast */.presentAddedFriendToast();
+  const result = require(3831) /* presentAddedFriendToast */.presentAddedFriendToast();
 }
 function UserRowSubLabel(arg0) {
   let animate;
@@ -100,15 +100,15 @@ function UserRowSubLabel(arg0) {
     if (type !== constants.SUGGESTION) {
       if (type !== constants.PENDING_OUTGOING) {
         obj = { userId: user.id, guildId, textStyle: gameIcon.activityText, animate };
-        return callback(importDefault(9102), obj);
+        return callback(importDefault(8994), obj);
       }
     }
   }
   if (!isGameRelationship) {
     obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted" };
-    let obj4 = require(3969) /* conceal */;
+    let obj4 = require(3970) /* conceal */;
     obj.children = obj4.getUserTag(user);
-    callback(require(4126) /* Text */.Text, obj);
+    callback(require(4127) /* Text */.Text, obj);
   }
   if (null == stateFromStores) {
     const obj1 = {};
@@ -129,7 +129,7 @@ function UserRowSubLabel(arg0) {
     obj3.disableColor = true;
     const items1 = [callback(require(1273) /* Button */.Icon, obj3, stateFromStores.id), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: stateFromStores.name };
-    items1[1] = callback(require(4126) /* Text */.Text, obj5);
+    items1[1] = callback(require(4127) /* Text */.Text, obj5);
     obj2.children = items1;
     closure_15(View, obj2);
     const tmp16 = closure_15;

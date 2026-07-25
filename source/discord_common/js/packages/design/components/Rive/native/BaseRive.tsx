@@ -1,10 +1,10 @@
-// Module ID: 3859
-// Function ID: 32080
+// Module ID: 3860
+// Function ID: 32091
 // Name: useObservedValue
-// Dependencies: [31, 27, 33, 3860, 3849, 3906, 3907, 3908, 2]
+// Dependencies: [31, 27, 33, 3861, 3850, 3907, 3908, 3909, 2]
 // Exports: useArtboardBinding, useBooleanBinding, useColorBinding, useEnumBinding, useImageBinding, useNumberBinding, useStringBinding, useTriggerBinding
 
-// Module 3859 (useObservedValue)
+// Module 3860 (useObservedValue)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -190,7 +190,7 @@ export const BaseRive = forwardRefResult;
 export const useNumberBinding = function useNumberBinding(AnimationState, instance, AnimationState2, AnimationState1, playIfNeeded) {
   const _require = AnimationState2;
   const dependencyMap = playIfNeeded;
-  const iter = _require(3860).useRiveNumber(AnimationState, instance);
+  const iter = _require(3861).useRiveNumber(AnimationState, instance);
   const setValue = iter.setValue;
   const items = [AnimationState2, setValue, playIfNeeded];
   const effect = setValue.useEffect(() => {
@@ -220,7 +220,7 @@ export const useNumberBinding = function useNumberBinding(AnimationState, instan
 export const useStringBinding = function useStringBinding(LVL, instance, LVL2, LVL1, playIfNeeded) {
   const _require = LVL2;
   const dependencyMap = playIfNeeded;
-  const iter = _require(3860).useRiveString(LVL, instance);
+  const iter = _require(3861).useRiveString(LVL, instance);
   const setValue = iter.setValue;
   const items = [LVL2, setValue, playIfNeeded];
   const effect = setValue.useEffect(() => {
@@ -236,7 +236,7 @@ export const useStringBinding = function useStringBinding(LVL, instance, LVL2, L
 export const useBooleanBinding = function useBooleanBinding(reducedMotion, instance, reducedMotionEnabled, pressed1, playIfNeeded) {
   const _require = reducedMotionEnabled;
   const dependencyMap = playIfNeeded;
-  const iter = _require(3860).useRiveBoolean(reducedMotion, instance);
+  const iter = _require(3861).useRiveBoolean(reducedMotion, instance);
   const setValue = iter.setValue;
   const items = [reducedMotionEnabled, setValue, playIfNeeded];
   const effect = setValue.useEffect(() => {
@@ -253,7 +253,7 @@ export const useBooleanBinding = function useBooleanBinding(reducedMotion, insta
 export const useColorBinding = function useColorBinding(FillColor, instance, FillColor2, FillColor1, playIfNeeded) {
   const _require = FillColor2;
   const dependencyMap = FillColor1;
-  const iter = _require(3860).useRiveColor(FillColor, instance);
+  const iter = _require(3861).useRiveColor(FillColor, instance);
   const setValue = iter.setValue;
   const value = iter.value;
   const items = [FillColor2, setValue, playIfNeeded];
@@ -282,7 +282,7 @@ export const useColorBinding = function useColorBinding(FillColor, instance, Fil
 export const useEnumBinding = function useEnumBinding(FillColor, instance, arg2, LVL1) {
   const _require = arg2;
   const dependencyMap = arg4;
-  const iter = _require(3860).useRiveEnum(FillColor, instance);
+  const iter = _require(3861).useRiveEnum(FillColor, instance);
   const setValue = iter.setValue;
   const items = [arg2, setValue, arg4];
   const effect = setValue.useEffect(() => {
@@ -298,7 +298,7 @@ export const useEnumBinding = function useEnumBinding(FillColor, instance, arg2,
 export const useTriggerBinding = function useTriggerBinding(startAnimation, instance, startAnimation2, startAnimation1, playIfNeeded) {
   const _require = startAnimation2;
   const dependencyMap = playIfNeeded;
-  let obj = _require(3860);
+  let obj = _require(3861);
   let tmp;
   if (null != startAnimation1) {
     obj = { onTrigger: startAnimation1 };

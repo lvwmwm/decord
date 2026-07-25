@@ -1,10 +1,10 @@
-// Module ID: 4945
-// Function ID: 42400
+// Module ID: 4946
+// Function ID: 42412
 // Name: selectVoiceChannelAdditional
-// Dependencies: [1348, 1838, 4946, 3758, 1906, 1849, 4146, 4947, 4312, 4948, 3830, 4949, 4950, 4098, 4962, 1934, 12612, 491, 686, 2]
+// Dependencies: [1348, 1838, 4947, 3759, 1907, 1850, 4147, 4948, 4313, 4949, 3831, 4950, 4951, 4099, 4963, 1935, 12623, 491, 686, 2]
 // Exports: selectVoiceChannelAdditional
 
-// Module 4945 (selectVoiceChannelAdditional)
+// Module 4946 (selectVoiceChannelAdditional)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";

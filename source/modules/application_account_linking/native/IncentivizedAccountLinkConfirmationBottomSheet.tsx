@@ -1,10 +1,10 @@
-// Module ID: 15673
-// Function ID: 120852
+// Module ID: 15684
+// Function ID: 121021
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [31, 27, 4122, 653, 33, 566, 14547, 477, 7964, 14548, 5085, 4543, 1212, 10189, 689, 4098, 3827, 1920, 7515, 2844, 2]
+// Dependencies: [31, 27, 4123, 653, 33, 566, 14558, 477, 6154, 14559, 5085, 4544, 1212, 10121, 689, 4099, 3828, 1921, 6599, 2845, 2]
 // Exports: default
 
-// Module 15673 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 15684 (IncentivizedAccountLinkConfirmationBottomSheet)
 import "result";
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,23 +19,23 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   const items = [_isNativeReflectConstruct];
   if (obj.useStateFromStores(items, () => outer1_4.useReducedMotion)) {
     obj = {};
-    obj = { uri: importDefault(14547) };
+    obj = { uri: importDefault(14558) };
     obj.source = obj;
     obj.style = { width: 150, height: 150 };
-    let tmp3Result = <Image uri={importDefault(14547)} />;
+    let tmp3Result = <Image uri={importDefault(14558)} />;
   } else {
     let obj1 = require(477) /* set */;
     if (obj1.isAndroid()) {
       obj1 = {};
-      let tmp4Result = tmp4(7964);
-      obj1.url = tmp4(14548);
+      let tmp4Result = tmp4(6154);
+      obj1.url = tmp4(14559);
       obj1.style = { width: 150, height: 150 };
       tmp3Result = tmp3(tmp4Result, obj1);
     } else {
       let obj2 = {};
       const obj3 = {};
       tmp4Result = tmp4(5085);
-      obj3.uri = tmp4(14548);
+      obj3.uri = tmp4(14559);
       obj2.source = obj3;
       obj2.resizeMode = "contain";
       obj2.style = { width: 150, height: 150 };
@@ -46,7 +46,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj4.text = intl.string(require(1212) /* getSystemLocale */.t.aRIFWD);
   const obj5 = { size: "sm", color: importDefault(689).colors.WHITE };
-  obj4.icon = jsx(require(10189) /* WindowLaunchIcon */.WindowLaunchIcon, { size: "sm", color: importDefault(689).colors.WHITE });
+  obj4.icon = jsx(require(10121) /* WindowLaunchIcon */.WindowLaunchIcon, { size: "sm", color: importDefault(689).colors.WHITE });
   obj4.iconPosition = "end";
   obj4.size = "lg";
   obj4.onPress = function onPress() {
@@ -57,13 +57,13 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   };
   const obj6 = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj6.title = intl2.string(importDefault(2844).ublzTG);
+  obj6.title = intl2.string(importDefault(2845).ublzTG);
   const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj6.description = intl3.string(importDefault(2844).JgM2xu);
-  obj6.actions = jsx(require(4543) /* Button */.Button, {});
+  obj6.description = intl3.string(importDefault(2845).JgM2xu);
+  obj6.actions = jsx(require(4544) /* Button */.Button, {});
   obj6.illustration = tmp3Result;
   obj6.onDismiss = function onDismiss() {
     outer1_1(outer1_2[15]).hideActionSheet();
   };
-  return jsx(require(7515) /* PromoSheet */.PromoSheet, {});
+  return jsx(require(6599) /* PromoSheet */.PromoSheet, {});
 };

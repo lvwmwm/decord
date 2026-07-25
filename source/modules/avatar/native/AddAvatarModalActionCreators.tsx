@@ -1,18 +1,18 @@
-// Module ID: 16161
-// Function ID: 125265
+// Module ID: 16172
+// Function ID: 125433
 // Name: closeAddAvatarModal
-// Dependencies: [16162, 653, 675, 9266, 4470, 1212, 7933, 7935, 4337, 16163, 1934, 11760, 2]
+// Dependencies: [16173, 653, 675, 9158, 4471, 1212, 7880, 7882, 4338, 16174, 1935, 11730, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 16161 (closeAddAvatarModal)
+// Module 16172 (closeAddAvatarModal)
 import { ADD_AVATAR_MODAL_KEY } from "ADD_AVATAR_MODAL_KEY";
 import { AnalyticEvents } from "ME";
 
 function closeAddAvatarModal(skip) {
-  let obj = importDefault(4337);
+  let obj = importDefault(4338);
   obj.popWithKey(ADD_AVATAR_MODAL_KEY);
   obj = { skip };
-  require(11760) /* _startContactSyncForDiscoverability */.nextOnboardingStep(obj);
+  require(11730) /* _startContactSyncForDiscoverability */.nextOnboardingStep(obj);
 }
 let result = require("expandLocation").fileFinishedImporting("modules/avatar/native/AddAvatarModalActionCreators.tsx");
 
@@ -24,9 +24,9 @@ export const handlePressNext = function handlePressNext(c4, first1, arg2) {
     obj.location = obj;
     obj.track(AnalyticEvents.USER_AVATAR_UPDATED, obj);
     ({ imageUri: obj5.avatar, description: obj5.avatar_description } = c4);
-    const result = require(9266) /* saveProfileAndAccountRequest */.saveProfileAndAccountRequest({});
+    const result = require(9158) /* saveProfileAndAccountRequest */.saveProfileAndAccountRequest({});
     const obj1 = {};
-    const obj4 = require(9266) /* saveProfileAndAccountRequest */;
+    const obj4 = require(9158) /* saveProfileAndAccountRequest */;
   }
   if (null != arg2) {
     arg2();
@@ -58,8 +58,8 @@ export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
     }
   };
   obj.hideActionSheet = false;
-  importDefault(4470).show(obj);
+  importDefault(4471).show(obj);
 };
 export const openAddAvatarModal = function openAddAvatarModal() {
-  importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(16163, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(16174, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 };

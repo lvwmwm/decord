@@ -1,17 +1,17 @@
-// Module ID: 1899
-// Function ID: 21340
+// Module ID: 1900
+// Function ID: 21351
 // Name: getUserId
-// Dependencies: [27, 477, 1900, 2]
+// Dependencies: [27, 477, 1901, 2]
 // Exports: getUserId, setUserId
 
-// Module 1899 (getUserId)
+// Module 1900 (getUserId)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");
 
 export const getUserId = function getUserId() {
   if (obj.isAndroid()) {
-    const userId2 = importDefault(1900).getConstants().userId;
+    const userId2 = importDefault(1901).getConstants().userId;
     let tmp5 = null;
     if (null != userId2) {
       tmp5 = userId2;
@@ -29,8 +29,8 @@ export const getUserId = function getUserId() {
 };
 export const setUserId = function setUserId(id) {
   if (obj.isAndroid()) {
-    importDefault(1900).setUserId(id);
-    const obj2 = importDefault(1900);
+    importDefault(1901).setUserId(id);
+    const obj2 = importDefault(1901);
   } else {
     const DCDAppDatabase = NativeModules.DCDAppDatabase;
     DCDAppDatabase.setUserId(id);

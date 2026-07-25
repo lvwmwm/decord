@@ -1,10 +1,10 @@
-// Module ID: 15611
-// Function ID: 120353
+// Module ID: 15621
+// Function ID: 120481
 // Name: useMutualGuildsForMessageRequests
-// Dependencies: [31, 6855, 1849, 566, 686, 7975, 2]
+// Dependencies: [31, 5630, 1850, 566, 686, 7923, 2]
 // Exports: useMutualGuildsForMessageRequests
 
-// Module 15611 (useMutualGuildsForMessageRequests)
+// Module 15621 (useMutualGuildsForMessageRequests)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

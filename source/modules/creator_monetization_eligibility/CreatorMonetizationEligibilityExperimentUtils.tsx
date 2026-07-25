@@ -1,10 +1,10 @@
-// Module ID: 5642
-// Function ID: 48254
+// Module ID: 12557
+// Function ID: 97256
 // Name: getCreatorMonetizationEligibleCountry
-// Dependencies: [1849, 3778, 653, 566, 2]
+// Dependencies: [1850, 3779, 653, 566, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, useIsExpeditedOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry
 
-// Module 5642 (getCreatorMonetizationEligibleCountry)
+// Module 12557 (getCreatorMonetizationEligibleCountry)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { GuildFeatures } from "ME";

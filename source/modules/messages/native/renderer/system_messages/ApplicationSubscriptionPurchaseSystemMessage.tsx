@@ -1,19 +1,19 @@
-// Module ID: 7806
-// Function ID: 61744
+// Module ID: 7753
+// Function ID: 61716
 // Name: createApplicationSubscriptionPurchaseSystemMessage
-// Dependencies: [7738, 7771, 7740, 7741, 2]
+// Dependencies: [7684, 7718, 7686, 7687, 2]
 // Exports: createApplicationSubscriptionPurchaseSystemMessage
 
-// Module 7806 (createApplicationSubscriptionPurchaseSystemMessage)
+// Module 7753 (createApplicationSubscriptionPurchaseSystemMessage)
 const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationSubscriptionPurchaseSystemMessage.tsx");
 
 export const createApplicationSubscriptionPurchaseSystemMessage = function createApplicationSubscriptionPurchaseSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7738) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7684) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   obj = {};
-  obj = { application: message.application, username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7740)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
-  obj.content = require(7771) /* getApplicationSubscriptionSystemMessageASTContent */.getApplicationSubscriptionSystemMessageASTContent(obj);
-  const merged = Object.assign(importDefault(7741)(roleStyle));
+  obj = { application: message.application, username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7686)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj.content = require(7718) /* getApplicationSubscriptionSystemMessageASTContent */.getApplicationSubscriptionSystemMessageASTContent(obj);
+  const merged = Object.assign(importDefault(7687)(roleStyle));
   return obj;
 };

@@ -1,8 +1,8 @@
-// Module ID: 10977
-// Function ID: 85320
-// Dependencies: [4808, 1838, 653, 686, 507, 5737, 2]
+// Module ID: 10928
+// Function ID: 84912
+// Dependencies: [4809, 1838, 653, 686, 507, 6633, 2]
 
-// Module 10977
+// Module 10928
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { Endpoints } from "ME";
@@ -39,9 +39,9 @@ export default {
             }
           });
         } else {
-          callback(5737).transitionToGuild(body.id);
+          callback(6633).transitionToGuild(body.id);
           body(body);
-          const obj3 = callback(5737);
+          const obj3 = callback(6633);
         }
       }, (body) => {
         let obj = callback2(686);

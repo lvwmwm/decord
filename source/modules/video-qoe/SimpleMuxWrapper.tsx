@@ -1,9 +1,9 @@
-// Module ID: 14084
-// Function ID: 107825
+// Module ID: 14095
+// Function ID: 107952
 // Name: logger
-// Dependencies: [6, 7, 4, 14085, 14086, 14087, 2]
+// Dependencies: [6, 7, 4, 14096, 14097, 14098, 2]
 
-// Module 14084 (logger)
+// Module 14095 (logger)
 import set from "set";
 import _defineProperties from "_defineProperties";
 

@@ -1,9 +1,9 @@
-// Module ID: 10280
-// Function ID: 79352
+// Module ID: 10213
+// Function ID: 79005
 // Name: RNSound
 // Dependencies: [6, 7, 27, 1553, 477, 2]
 
-// Module 10280 (RNSound)
+// Module 10213 (RNSound)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { NativeModules } from "get ActivityIndicator";

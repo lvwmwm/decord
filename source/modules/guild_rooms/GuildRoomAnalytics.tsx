@@ -1,10 +1,10 @@
-// Module ID: 16100
-// Function ID: 124708
+// Module ID: 16111
+// Function ID: 124876
 // Name: resolveGuildId
-// Dependencies: [1194, 1348, 4202, 4146, 16096, 16101, 653, 4324, 2]
+// Dependencies: [1194, 1348, 4203, 4147, 16107, 16112, 653, 4325, 2]
 // Exports: trackGuildRoomInteracted, trackGuildRoomLayoutToggled, trackGuildRoomObjectInteracted, trackGuildRoomOpened, trackGuildRoomSeatSelected, trackGuildRoomUserConnected, trackGuildRoomUserDisconnected, trackGuildRoomUserInteracted, trackGuildRoomUserUpdated
 
-// Module 16100 (resolveGuildId)
+// Module 16111 (resolveGuildId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -233,7 +233,7 @@ export const trackGuildRoomUserConnected = function trackGuildRoomUserConnected(
   });
 };
 export const trackGuildRoomUserDisconnected = function trackGuildRoomUserDisconnected(channelId) {
-  let obj = importDefault(4324);
+  let obj = importDefault(4325);
   obj = {};
   const merged = Object.assign(getBaseProperties(channelId));
   obj["voice_state_count"] = Object.keys(store.getVoiceStatesForChannel(channelId.channelId)).length;

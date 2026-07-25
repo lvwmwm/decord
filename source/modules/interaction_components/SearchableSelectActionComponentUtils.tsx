@@ -1,10 +1,10 @@
-// Module ID: 7893
-// Function ID: 62603
+// Module ID: 7840
+// Function ID: 62575
 // Name: getSnowflakeSelectDefaultValues
-// Dependencies: [1348, 1917, 1910, 1838, 3767, 1849, 7886, 1881, 4974, 4319, 4359, 4320, 7894, 1327, 2]
+// Dependencies: [1348, 1918, 1911, 1838, 3768, 1850, 7833, 1882, 4975, 4320, 4360, 4321, 7841, 1327, 2]
 // Exports: getInitialSnowflakeSelectOptions, queryChannels, queryMentionables
 
-// Module 7893 (getSnowflakeSelectDefaultValues)
+// Module 7840 (getSnowflakeSelectDefaultValues)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -92,15 +92,15 @@ export const queryMentionables = function queryMentionables(type, query, channel
   if (null == channel) {
     return [];
   } else {
-    let tmp4 = type === _require(1881).ComponentType.USER_SELECT;
+    let tmp4 = type === _require(1882).ComponentType.USER_SELECT;
     if (!tmp4) {
-      tmp4 = type === _require(1881).ComponentType.MENTIONABLE_SELECT;
+      tmp4 = type === _require(1882).ComponentType.MENTIONABLE_SELECT;
     }
-    let tmp7 = type === _require(1881).ComponentType.ROLE_SELECT;
+    let tmp7 = type === _require(1882).ComponentType.ROLE_SELECT;
     if (!tmp7) {
-      tmp7 = type === _require(1881).ComponentType.MENTIONABLE_SELECT;
+      tmp7 = type === _require(1882).ComponentType.MENTIONABLE_SELECT;
     }
-    let obj = channel(4974);
+    let obj = channel(4975);
     obj = { query, channel, canMentionEveryone: false, canMentionHere: false, canMentionUsers: tmp4, canMentionRoles: tmp7, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
     ({ users, roles } = obj.queryMentionResults(obj));
     const items = [];
@@ -126,7 +126,7 @@ export const queryChannels = function queryChannels(query, channelId, channelTyp
   if (null == channel) {
     let items = [];
   } else {
-    let obj = importDefault(4974);
+    let obj = importDefault(4975);
     obj = { query, channel, channelTypes, limit: 15 };
     const channels = obj.queryApplicationCommandChannelResults(obj).channels;
     items = channels.map((id) => {
@@ -142,7 +142,7 @@ export const getInitialSnowflakeSelectOptions = function getInitialSnowflakeSele
   interactionComponentState = interactionComponentState.getInteractionComponentState(containerId, selectActionComponent.id);
   ({ defaultValues, type } = selectActionComponent);
   let channelTypes;
-  if (type === require(1881) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT) {
+  if (type === require(1882) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT) {
     channelTypes = selectActionComponent.channelTypes;
   }
   let items = getSnowflakeSelectDefaultValues(defaultValues, guildId, channelTypes);
@@ -150,17 +150,17 @@ export const getInitialSnowflakeSelectOptions = function getInitialSnowflakeSele
   if (null != interactionComponentState) {
     type = interactionComponentState.type;
   }
-  if (type !== require(1881) /* PermissionOverwriteType */.ComponentType.USER_SELECT) {
+  if (type !== require(1882) /* PermissionOverwriteType */.ComponentType.USER_SELECT) {
     let type1;
     if (null != interactionComponentState) {
       type1 = interactionComponentState.type;
     }
-    if (type1 !== require(1881) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT) {
+    if (type1 !== require(1882) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT) {
       let type2;
       if (null != interactionComponentState) {
         type2 = interactionComponentState.type;
       }
-      if (type2 !== require(1881) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT) {
+      if (type2 !== require(1882) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT) {
         let type3;
         if (null != interactionComponentState) {
           type3 = interactionComponentState.type;

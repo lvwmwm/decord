@@ -1,9 +1,9 @@
-// Module ID: 12223
-// Function ID: 95592
+// Module ID: 12199
+// Function ID: 95401
 // Name: ImageButton
-// Dependencies: [31, 27, 33, 4130, 4547, 689, 4548, 3991, 4542, 4546, 4550, 7534, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 4548, 689, 4549, 3992, 4543, 4547, 4551, 6626, 4127, 2]
 
-// Module 12223 (ImageButton)
+// Module 12199 (ImageButton)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -17,14 +17,16 @@ const require = arg1;
 ({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 let closure_8 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2) => {
-  let MEDIUM_BUTTON_PADDING = require(4547) /* getButtonPadding */.LARGE_BUTTON_PADDING;
+  let MEDIUM_BUTTON_PADDING = require(4548) /* getButtonPadding */.LARGE_BUTTON_PADDING;
   if ("sm" === arg0) {
-    MEDIUM_BUTTON_PADDING = require(4547) /* getButtonPadding */.SMALL_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = require(4548) /* getButtonPadding */.SMALL_BUTTON_PADDING;
   } else if ("md" === arg0) {
-    MEDIUM_BUTTON_PADDING = require(4547) /* getButtonPadding */.MEDIUM_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = require(4548) /* getButtonPadding */.MEDIUM_BUTTON_PADDING;
   }
   const sum = arg1 + 2 * MEDIUM_BUTTON_PADDING;
-  let obj = {};
+  let obj = require(4548) /* getButtonPadding */;
+  const buttonBorderRadius = obj.getButtonBorderRadius(arg0);
+  obj = {};
   obj = { paddingBottom: importDefault(689).space.PX_4, gap: importDefault(689).space.PX_8, alignItems: "center", alignSelf: "center" };
   let num = 0;
   if (arg2) {
@@ -32,12 +34,12 @@ let closure_8 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2) 
   }
   obj.flexGrow = num;
   obj.labelPressable = obj;
-  obj = { paddingHorizontal: 0, paddingVertical: 0, minHeight: sum, minWidth: sum, borderRadius: importDefault(689).radii.round };
-  obj.pill = obj;
+  const obj1 = { paddingHorizontal: 0, paddingVertical: 0, minHeight: sum, minWidth: sum, borderRadius: buttonBorderRadius, borderWidth: 0, outlineWidth: require(4548) /* getButtonPadding */.BUTTON_BORDER_WIDTH, outlineColor: importDefault(689).colors.CONTROL_SECONDARY_BORDER_DEFAULT, outlineStyle: "solid" };
+  obj.pill = obj1;
   obj.imageWrapper = { width: sum, height: sum, position: "relative" };
   obj.image = { width: sum, height: sum };
-  const obj1 = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: importDefault(689).colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND, borderRadius: importDefault(689).radii.round };
-  obj.imageDim = obj1;
+  const obj2 = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: importDefault(689).colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND, borderRadius: buttonBorderRadius };
+  obj.imageDim = obj2;
   return obj;
 });
 let closure_9 = { code: "function ImageButtonNativeTsx1(){const{withSpring,pressed,ON_PRESS_SPRING}=this.__closure;return{opacity:withSpring(pressed.get()===1?1:0,ON_PRESS_SPRING,'animate-always')};}" };
@@ -78,22 +80,25 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
     }
   }, items1);
   let obj3 = onPressIn(sharedValue[7]);
-  const fn = function w() {
-    const obj = {};
-    let num = 0;
-    if (1 === sharedValue.get()) {
-      num = 1;
+  class B {
+    constructor() {
+      obj = {};
+      obj2 = onPressIn(c2[8]);
+      num = 0;
+      if (1 === c2.get()) {
+        num = 1;
+      }
+      obj.opacity = obj2.withSpring(num, onPressIn(c2[9]).ON_PRESS_SPRING, "animate-always");
+      return obj;
     }
-    obj.opacity = onPressIn(sharedValue[8]).withSpring(num, onPressIn(sharedValue[9]).ON_PRESS_SPRING, "animate-always");
-    return obj;
-  };
+  }
   obj = { withSpring: onPressIn(sharedValue[8]).withSpring, pressed: sharedValue, ON_PRESS_SPRING: onPressIn(sharedValue[9]).ON_PRESS_SPRING };
-  fn.__closure = obj;
-  fn.__workletHash = 17257158773379;
-  fn.__initData = closure_9;
+  B.__closure = obj;
+  B.__workletHash = 17257158773379;
+  B.__initData = closure_9;
   obj = { style: tmp3.imageWrapper };
   obj1 = { source: image, style: tmp3.image };
-  const animatedStyle = obj3.useAnimatedStyle(fn);
+  const animatedStyle = obj3.useAnimatedStyle(B);
   const items2 = [callback(closure_5, obj1), ];
   const items3 = [tmp3.imageDim, animatedStyle];
   items2[1] = callback(onPressOut(sharedValue[7]).View, { style: items3 });
@@ -116,23 +121,36 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
     obj3["onPressOut"] = callback1;
     obj3["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
     const items4 = [callback(onPressIn(sharedValue[11]).BaseIconButton, obj3), ];
-    const obj4 = { variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
-    items4[1] = callback(onPressIn(sharedValue[12]).Text, obj4);
+    class B {
+      constructor() {
+        obj = {};
+        obj2 = onPressIn(c2[8]);
+        num = 0;
+        if (1 === c2.get()) {
+          num = 1;
+        }
+        obj.opacity = obj2.withSpring(num, onPressIn(c2[9]).ON_PRESS_SPRING, "animate-always");
+        return obj;
+      }
+    }
+    tmp19.maxFontSizeMultiplier = maxFontSizeMultiplier;
+    tmp19.children = label;
+    items4[1] = callback(onPressIn(sharedValue[12]).Text, tmp19);
     obj2["children"] = items4;
-    let tmp19 = callback2(onPressIn(sharedValue[10]).BaseButton, obj2);
+    let tmp20 = callback2(onPressIn(sharedValue[10]).BaseButton, obj2);
   } else {
-    const obj5 = { ref };
+    const obj4 = { ref };
     const merged3 = Object.assign(merged);
-    obj5["size"] = str;
-    obj5["icon"] = tmp8;
-    obj5["accessibilityLabel"] = accessibilityLabel;
-    obj5["pillStyle"] = tmp3.pill;
-    obj5["variant"] = "secondary";
-    obj5["onPressIn"] = callback;
-    obj5["onPressOut"] = callback1;
-    tmp19 = callback(onPressIn(sharedValue[11]).BaseIconButton, obj5);
+    obj4["size"] = str;
+    obj4["icon"] = tmp8;
+    obj4["accessibilityLabel"] = accessibilityLabel;
+    obj4["pillStyle"] = tmp3.pill;
+    obj4["variant"] = "secondary";
+    obj4["onPressIn"] = callback;
+    obj4["onPressOut"] = callback1;
+    tmp20 = callback(onPressIn(sharedValue[11]).BaseIconButton, obj4);
   }
-  return tmp19;
+  return tmp20;
 });
 let result = require("jsxProd").fileFinishedImporting("design/components/Button/native/ImageButton.native.tsx");
 

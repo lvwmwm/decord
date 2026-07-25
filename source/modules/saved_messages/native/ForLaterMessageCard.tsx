@@ -1,9 +1,9 @@
-// Module ID: 9951
-// Function ID: 76921
+// Module ID: 9879
+// Function ID: 76536
 // Name: ForLaterDeletedMessageCard
-// Dependencies: [5, 31, 27, 3758, 653, 33, 4130, 689, 5167, 7577, 4126, 1212, 7533, 4090, 9943, 9952, 4337, 675, 9569, 3712, 9953, 566, 9954, 9960, 9961, 9962, 2]
+// Dependencies: [5, 31, 27, 3759, 653, 33, 4131, 689, 5166, 6673, 4127, 1212, 6625, 4091, 9871, 9880, 4338, 675, 9490, 3713, 9881, 566, 9882, 9888, 9889, 9890, 2]
 
-// Module 9951 (ForLaterDeletedMessageCard)
+// Module 9879 (ForLaterDeletedMessageCard)
 import closure_3 from "jsxProd";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -77,7 +77,7 @@ let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessage) {
   savedMessage = savedMessage.savedMessage;
   const tmp = callback3();
-  const useSavedMessageChannel = savedMessage(9952).useSavedMessageChannel;
+  const useSavedMessageChannel = savedMessage(9880).useSavedMessageChannel;
   const savedMessageChannel = useSavedMessageChannel(savedMessage);
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [savedMessage, savedMessageChannel];
@@ -106,12 +106,12 @@ const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessag
         return tmp3;
       })) {
         obj = { savedMessage, jumpToMessage: callback };
-        const tmp8 = callback2(savedMessageChannel(9954), obj);
+        const tmp8 = callback2(savedMessageChannel(9882), obj);
         obj = { variant: "primary", border: "subtle", shadow: "none", style: tmp.card, onPress: callback };
         let tmp12 = null;
         if (null != savedMessage.saveData.dueAt) {
           const obj1 = { savedMessage, throttledNow: savedMessage.throttledNow, actions: tmp8 };
-          tmp12 = callback2(savedMessage(9960).ForLaterCardReminderHeader, obj1);
+          tmp12 = callback2(savedMessage(9888).ForLaterCardReminderHeader, obj1);
         }
         const items2 = [tmp12, , , ];
         const obj2 = { channel: savedMessageChannel };
@@ -120,15 +120,15 @@ const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessag
           tmp19 = tmp8;
         }
         obj2.actions = tmp19;
-        items2[1] = callback2(savedMessage(9961).ForLaterCardHeader, obj2);
+        items2[1] = callback2(savedMessage(9889).ForLaterCardHeader, obj2);
         const obj3 = { style: tmp.cardDivider };
         items2[2] = callback2(View, obj3);
         const obj4 = { style: tmp.messagePreview };
         const obj5 = { message: savedMessage.message, lineClamp: 2, maxHeight: 250 };
-        obj4.children = callback2(savedMessage(9962).ForLaterMessageRow, obj5);
+        obj4.children = callback2(savedMessage(9890).ForLaterMessageRow, obj5);
         items2[3] = callback2(View, obj4);
         obj.children = items2;
-        return closure_11(savedMessage(5167).Card, obj);
+        return closure_11(savedMessage(5166).Card, obj);
       }
     }
   }

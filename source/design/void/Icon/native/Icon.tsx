@@ -1,9 +1,9 @@
-// Module ID: 4545
-// Function ID: 39867
+// Module ID: 4546
+// Function ID: 39878
 // Name: getIconSize
-// Dependencies: [31, 27, 33, 4130, 689, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 2]
 
-// Module 4545 (getIconSize)
+// Module 4546 (getIconSize)
 import importAllResult from "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

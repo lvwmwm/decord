@@ -1,10 +1,10 @@
-// Module ID: 7827
-// Function ID: 61798
+// Module ID: 7774
+// Function ID: 61770
 // Name: createReferralSystemMessage
-// Dependencies: [6689, 1194, 4130, 689, 7828, 7741, 7724, 7487, 7837, 2]
+// Dependencies: [6158, 1194, 4131, 689, 7775, 7687, 7670, 6571, 7784, 2]
 // Exports: createReferralSystemMessage
 
-// Module 7827 (createReferralSystemMessage)
+// Module 7774 (createReferralSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,31 +28,31 @@ export const createReferralSystemMessage = function createReferralSystemMessage(
       referrer_id = relevantUserTrialOffer.referrer_id;
     }
     if (referrer_id === id) {
-      let obj = require(7837) /* createReferralTrialEmbedRedeemable */;
+      let obj = require(7784) /* createReferralTrialEmbedRedeemable */;
       const referralTrialEmbedRedeemable = obj.createReferralTrialEmbedRedeemable(message, theme, id, relevantUserTrialOffer);
       if (null == referralTrialEmbedRedeemable) {
         return null;
       } else {
         const tmp29 = _createForOfIteratorHelperLoose(theme);
         obj = {};
-        const merged = Object.assign(importDefault(7741)(message));
+        const merged = Object.assign(importDefault(7687)(message));
         obj["referralTrialOfferInfo"] = referralTrialEmbedRedeemable;
-        obj["iconUrl"] = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7487));
+        obj["iconUrl"] = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(6571));
         obj["iconTintColor"] = tmp29.iconTintColor;
         obj["iconDividerColor"] = tmp29.iconDividerColor;
         return obj;
       }
     } else {
-      const obj2 = require(7828) /* createReferralTrialEmbedRedesign */;
+      const obj2 = require(7775) /* createReferralTrialEmbedRedesign */;
       const referralTrialEmbedRedesign = obj2.createReferralTrialEmbedRedesign(message, theme, id, relevantUserTrialOffer);
       if (null == referralTrialEmbedRedesign) {
         return null;
       } else {
         const tmp22 = _createForOfIteratorHelperLoose(theme);
         obj = {};
-        const merged1 = Object.assign(importDefault(7741)(message));
+        const merged1 = Object.assign(importDefault(7687)(message));
         obj["referralTrialOfferInfoRedesign"] = referralTrialEmbedRedesign;
-        obj["iconUrl"] = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7487));
+        obj["iconUrl"] = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(6571));
         obj["iconTintColor"] = tmp22.iconTintColor;
         obj["iconDividerColor"] = tmp22.iconDividerColor;
         obj["timestamp"] = undefined;

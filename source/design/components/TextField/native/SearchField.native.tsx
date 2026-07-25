@@ -1,9 +1,9 @@
-// Module ID: 5772
-// Function ID: 49440
+// Module ID: 9171
+// Function ID: 71986
 // Name: SearchField
-// Dependencies: [31, 33, 5773, 1212, 5786, 2]
+// Dependencies: [31, 33, 6676, 1212, 8232, 2]
 
-// Module 5772 (SearchField)
+// Module 9171 (SearchField)
 import { jsx } from "jsxProd";
 import importAllResult from "result";
 
@@ -18,9 +18,9 @@ const forwardRefResult = require("result").forwardRef((arg0, ref) => {
   obj["autoCorrect"] = false;
   obj["autoCapitalize"] = "none";
   obj["accessibilityRole"] = "search";
-  obj["leadingIcon"] = require(5786) /* MagnifyingGlassIcon */.MagnifyingGlassIcon;
+  obj["leadingIcon"] = require(8232) /* MagnifyingGlassIcon */.MagnifyingGlassIcon;
   obj["isClearable"] = true;
-  return jsx(require(5773) /* TextField */.TextField, {});
+  return jsx(require(6676) /* TextField */.TextField, {});
 });
 const result = require("TextField").fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
 

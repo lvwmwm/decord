@@ -1,10 +1,10 @@
-// Module ID: 10348
-// Function ID: 79813
+// Module ID: 10281
+// Function ID: 79466
 // Name: BugReporterNotification
-// Dependencies: [31, 27, 10349, 653, 33, 4130, 689, 10339, 10284, 10266, 4337, 10265, 10350, 1934, 5796, 2]
+// Dependencies: [31, 27, 10282, 653, 33, 4131, 689, 10272, 10217, 10199, 4338, 10198, 10283, 1935, 6554, 2]
 // Exports: BugReporterNotification
 
-// Module 10348 (BugReporterNotification)
+// Module 10281 (BugReporterNotification)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import zustandStore from "zustandStore";
@@ -31,8 +31,8 @@ export const BugReporterNotification = function BugReporterNotification(notifica
   obj = { source: { uri: notification.imageUri }, style: tmp.preview };
   const memo = React.useMemo(() => ({ type: "simple", text: "Bug Catcher Clyde" }), []);
   obj.children = <closure_4 source={{ uri: notification.imageUri }} style={tmp.preview} />;
-  obj = { header: memo, children: jsx(notification(10284).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }) };
-  obj.rightAccessory = <closure_5 header={memo}>{jsx(notification(10284).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." })}</closure_5>;
+  obj = { header: memo, children: jsx(notification(10217).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }) };
+  obj.rightAccessory = <closure_5 header={memo}>{jsx(notification(10217).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." })}</closure_5>;
   obj.onPress = function onPress() {
     if (!outer1_6.getField("isReportOpen")) {
       let obj = notification(outer1_2[9]);
@@ -56,5 +56,5 @@ export const BugReporterNotification = function BugReporterNotification(notifica
     obj.openUserSettings(obj);
   };
   obj.notification = notification;
-  return jsx(notification(10339).NotificationPressable, { header: memo, children: jsx(notification(10284).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }) });
+  return jsx(notification(10272).NotificationPressable, { header: memo, children: jsx(notification(10217).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }) });
 };

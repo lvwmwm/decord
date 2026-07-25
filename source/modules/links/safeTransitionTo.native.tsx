@@ -1,7 +1,7 @@
 // Module ID: 5626
-// Function ID: 48029
+// Function ID: 48034
 // Name: _safeTransitionTo
-// Dependencies: [5, 1838, 653, 4321, 5627, 1198, 5628, 4471, 1212, 5655, 2298, 5691, 2]
+// Dependencies: [5, 1838, 653, 4322, 5627, 1198, 5628, 4472, 1212, 6000, 2299, 11748, 2]
 // Exports: default
 
 // Module 5626 (_safeTransitionTo)

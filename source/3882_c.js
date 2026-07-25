@@ -1,14 +1,8 @@
 // Module ID: 3882
-// Function ID: 32161
+// Function ID: 32171
 // Name: c
-// Dependencies: [31]
-// Exports: c
+// Dependencies: [3883]
 
 // Module 3882 (c)
-import { __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE as closure_0 } from "result";
 
-
-export const c = (arg0) => {
-  const H = constants.H;
-  return H.useMemoCache(arg0);
-};
+export { default } from "c";

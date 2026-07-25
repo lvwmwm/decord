@@ -1,10 +1,10 @@
-// Module ID: 15022
-// Function ID: 114457
+// Module ID: 15032
+// Function ID: 114584
 // Name: VoiceUserConnected
-// Dependencies: [31, 1347, 4143, 4149, 1194, 4177, 4145, 4146, 33, 566, 15023, 2]
+// Dependencies: [31, 1347, 4144, 4150, 1194, 4178, 4146, 4147, 33, 566, 15033, 2]
 // Exports: default
 
-// Module 15022 (VoiceUserConnected)
+// Module 15032 (VoiceUserConnected)
 import "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

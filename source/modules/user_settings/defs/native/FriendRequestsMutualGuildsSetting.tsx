@@ -1,9 +1,9 @@
-// Module ID: 13932
-// Function ID: 106553
+// Module ID: 13943
+// Function ID: 106680
 // Name: toggle
-// Dependencies: [31, 7751, 653, 13778, 3803, 5793, 1360, 10127, 1212, 2]
+// Dependencies: [31, 7697, 653, 13789, 3804, 6449, 1360, 10059, 1212, 2]
 
-// Module 13932 (toggle)
+// Module 13943 (toggle)
 import result from "result";
 import { FriendSourceFlags } from "ME";
 import createToggle from "createToggle";
@@ -16,15 +16,15 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useFriendRequestsMutualGuildsSettingValue() {
-    const FriendSourceFlagsSetting = setting(3803).FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = setting(3804).FriendSourceFlagsSetting;
     setting = FriendSourceFlagsSetting.useSetting();
     const items = [setting];
     return React.useMemo(() => setting(outer1_2[5]).computeFlags(setting), items).mutualGuilds;
   },
   onValueChange: function onFriendRequestsMutualGuildsSettingValueChange(arg0) {
-    const FriendSourceFlagsSetting = require(3803) /* explicitContentFromProto */.FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = require(3804) /* explicitContentFromProto */.FriendSourceFlagsSetting;
     const setting = FriendSourceFlagsSetting.getSetting();
-    const FriendSourceFlagsSetting2 = require(3803) /* explicitContentFromProto */.FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting2 = require(3804) /* explicitContentFromProto */.FriendSourceFlagsSetting;
     const obj = importAll(1360);
     if (arg0) {
       let addFlagResult = obj.addFlag(setting, FriendSourceFlags.MUTUAL_GUILDS);
@@ -34,7 +34,7 @@ createToggle = {
     FriendSourceFlagsSetting2.updateSetting(addFlagResult);
   },
   useIsDisabled() {
-    return require(13778) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(13789) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

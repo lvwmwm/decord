@@ -1,9 +1,9 @@
-// Module ID: 4219
-// Function ID: 36779
+// Module ID: 4220
+// Function ID: 36790
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 102, 18, 6, 7, 4183, 4199, 4220, 1194, 1348, 4221, 4177, 4222, 4202, 4223, 653, 4191, 664, 4194, 4224, 4015, 4225, 22, 686, 4226, 4227, 4300, 675, 4124, 4306, 4206, 4307, 4308, 4188, 6912, 4204, 2]
+// Dependencies: [15, 17, 102, 18, 6, 7, 4184, 4200, 4221, 1194, 1348, 4222, 4178, 4223, 4203, 4224, 653, 4192, 664, 4195, 4225, 4016, 4226, 22, 686, 4227, 4228, 4301, 675, 4125, 4307, 4207, 4308, 4309, 4189, 5903, 4205, 2]
 
-// Module 4219 (_isNativeReflectConstruct)
+// Module 4220 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import DesktopSources from "DesktopSources";
 import _get from "_get";

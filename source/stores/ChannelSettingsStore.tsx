@@ -1,9 +1,9 @@
-// Module ID: 7686
-// Function ID: 61096
+// Module ID: 7628
+// Function ID: 61020
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1352, 7544, 1857, 1348, 653, 1211, 3769, 3771, 1357, 1358, 507, 686, 22, 1387, 3712, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1352, 6640, 1858, 1348, 653, 1211, 3770, 3772, 1357, 1358, 507, 686, 22, 1387, 3713, 566, 2]
 
-// Module 7686 (_isNativeReflectConstruct)
+// Module 7628 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -146,7 +146,7 @@ function normalizeChannelPropertyForCompare(arg0, emojiId) {
         if ("defaultReactionEmoji" === arg0) {
           let tmp2 = null;
           if (null != emojiId) {
-            let obj = require(3769) /* getReactionEmojiName */;
+            let obj = require(3770) /* getReactionEmojiName */;
             if (obj.isCustomReactionEmojiId(emojiId.emojiId)) {
               obj = { emojiId: emojiId.emojiId };
               tmp2 = obj;
@@ -156,9 +156,9 @@ function normalizeChannelPropertyForCompare(arg0, emojiId) {
               if (null != emojiName) {
                 tmp5 = null;
                 if ("" !== emojiName) {
-                  obj = { emojiName: importDefault(3771).translateInlineEmojiToSurrogates(emojiName) };
+                  obj = { emojiName: importDefault(3772).translateInlineEmojiToSurrogates(emojiName) };
                   tmp5 = obj;
-                  const obj3 = importDefault(3771);
+                  const obj3 = importDefault(3772);
                 }
               }
               tmp2 = tmp5;
@@ -227,7 +227,7 @@ function _createInvite(code) {
   }
   obj.guild = fromInviteGuildResult;
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
-  obj.createdAt = importDefault(3712)(code.created_at);
+  obj.createdAt = importDefault(3713)(code.created_at);
   ({ type: obj.type, roles: obj.roles } = code);
   tmp = new tmp(obj);
   return tmp;

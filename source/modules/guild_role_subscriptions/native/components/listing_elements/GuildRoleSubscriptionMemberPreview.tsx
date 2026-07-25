@@ -1,10 +1,10 @@
-// Module ID: 14177
-// Function ID: 109066
+// Module ID: 14188
+// Function ID: 109193
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [31, 27, 1849, 33, 4130, 689, 1212, 566, 4319, 1392, 5487, 5085, 4126, 665, 1273, 5488, 2]
+// Dependencies: [31, 27, 1850, 33, 4131, 689, 1212, 566, 4320, 1392, 5487, 5085, 4127, 665, 1273, 5488, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 14177 (GuildRoleSubscriptionMemberPreview)
+// Module 14188 (GuildRoleSubscriptionMemberPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,7 +41,7 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  importDefault(4319);
+  importDefault(4320);
   if (null == role) {
     return null;
   } else {
@@ -69,7 +69,7 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
     obj4.color = obj10.int2hex(role.color);
     obj3.style = obj4;
     obj3.children = tmp5;
-    const items3 = [callback(require(4126) /* Text */.Text, obj3), , , ];
+    const items3 = [callback(require(4127) /* Text */.Text, obj3), , , ];
     let tmp19Result = null;
     if (null != roleIconData) {
       const obj5 = {};
@@ -95,11 +95,11 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
     items3[1] = tmp19Result;
     const obj9 = { size: 8 };
     items3[2] = callback(require(1273) /* Button */.Spacer, obj9);
-    items3[3] = callback(require(4126) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
+    items3[3] = callback(require(4127) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
     obj2.children = items3;
     const items5 = [closure_8(View, obj2), ];
     obj10 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: content };
-    items5[1] = callback(require(4126) /* Text */.Text, obj10);
+    items5[1] = callback(require(4127) /* Text */.Text, obj10);
     obj1.children = items5;
     items2[1] = closure_8(View, obj1);
     obj.children = items2;

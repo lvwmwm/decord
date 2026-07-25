@@ -1,10 +1,10 @@
-// Module ID: 11066
-// Function ID: 86124
+// Module ID: 11022
+// Function ID: 85744
 // Name: items
-// Dependencies: [31, 27, 11053, 7589, 33, 4130, 689, 1212, 566, 1557, 11065, 7581, 7583, 4098, 5187, 5189, 4126, 5501, 5165, 3827, 4543, 11059, 2]
+// Dependencies: [31, 27, 11009, 6699, 33, 4131, 689, 1212, 566, 1557, 11021, 6690, 6692, 4099, 5187, 5189, 4127, 5501, 5164, 3828, 4544, 11015, 2]
 // Exports: default
 
-// Module 11066 (items)
+// Module 11022 (items)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -105,11 +105,11 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const obj4 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
   const intl = onClose(1212).intl;
   obj4.children = intl.string(onClose(1212).t["9SDLnj"]);
-  const items5 = [callback(onClose(4126).Text, obj4), ];
+  const items5 = [callback(onClose(4127).Text, obj4), ];
   const obj5 = { variant: "heading-md/medium", color: "text-default" };
   const intl2 = onClose(1212).intl;
   obj5.children = intl2.string(onClose(1212).t["yvx//1"]);
-  items5[1] = callback(onClose(4126).Text, obj5);
+  items5[1] = callback(onClose(4127).Text, obj5);
   obj3.children = items5;
   const items6 = [callback2(callback, obj3), , , ];
   const obj6 = {};
@@ -142,7 +142,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   obj10.onPress = function onPress() {
     return classificationId(tmp[19]).openURL(outer1_7.AGE_VERIFICATION_LINK);
   };
-  obj9.children = callback(onClose(5165).TableRow, obj10);
+  obj9.children = callback(onClose(5164).TableRow, obj10);
   obj8.children = callback(onClose(5501).TableRowGroup, obj9);
   items6[2] = callback(callback, obj8);
   const obj11 = { style: tmp.footer };
@@ -155,11 +155,11 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   };
   const intl6 = onClose(1212).intl;
   obj12.text = intl6.string(onClose(1212).t["54b8V0"]);
-  const items7 = [callback(onClose(4543).Button, obj12), ];
+  const items7 = [callback(onClose(4544).Button, obj12), ];
   const obj13 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore };
   const intl7 = onClose(1212).intl;
   obj13.children = intl7.format(onClose(1212).t.ZbWsOF, { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK });
-  items7[1] = callback(onClose(4126).Text, obj13);
+  items7[1] = callback(onClose(4127).Text, obj13);
   obj11.children = items7;
   items6[3] = callback2(callback, obj11);
   obj1.children = items6;

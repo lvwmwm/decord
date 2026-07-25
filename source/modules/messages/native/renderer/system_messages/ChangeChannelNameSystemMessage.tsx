@@ -1,10 +1,10 @@
-// Module ID: 7758
-// Function ID: 61588
+// Module ID: 7704
+// Function ID: 61556
 // Name: createChangeChannelNameSystemMessage
-// Dependencies: [1348, 7731, 7738, 7740, 1212, 7741, 7744, 2]
+// Dependencies: [1348, 7677, 7684, 7686, 1212, 7687, 7690, 2]
 // Exports: createChangeChannelNameSystemMessage
 
-// Module 7758 (createChangeChannelNameSystemMessage)
+// Module 7704 (createChangeChannelNameSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -15,10 +15,10 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
   let theme;
   message = message.message;
   ({ theme, roleStyle } = message);
-  const tmp = importDefault(7731)(theme);
-  let obj = require(7738) /* getMessageAuthorWithProcessedColor */;
+  const tmp = importDefault(7677)(theme);
+  let obj = require(7684) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp3 = importDefault(7740)({ message, author: messageAuthorWithProcessedColor, roleStyle });
+  const tmp3 = importDefault(7686)({ message, author: messageAuthorWithProcessedColor, roleStyle });
   channel = channel.getChannel(message.channel_id);
   let isGroupDMResult;
   if (null != channel) {
@@ -31,7 +31,7 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
   } else {
     rk0be9 = require(1212) /* getSystemLocale */.t.rk0be9;
   }
-  const tmp10 = importDefault(7741)(message);
+  const tmp10 = importDefault(7687)(message);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   const formatToParts = intl.formatToParts;
@@ -65,7 +65,7 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     const obj4 = {};
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj4.label = intl2.string(require(1212) /* getSystemLocale */.t["5Q9+/L"]);
-    obj4.name = require(7744) /* getQuickReactionLabel */.MessageAccessibilityAction.EDIT_GDM;
+    obj4.name = require(7690) /* getQuickReactionLabel */.MessageAccessibilityAction.EDIT_GDM;
     items[arraySpreadResult] = obj4;
     const sum = arraySpreadResult + 1;
     obj3.accessibilityActions = items;

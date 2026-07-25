@@ -1,10 +1,10 @@
-// Module ID: 8770
-// Function ID: 69303
+// Module ID: 8658
+// Function ID: 68780
 // Name: getProductName
-// Dependencies: [1212, 6785, 1876, 2]
+// Dependencies: [1212, 5781, 1877, 2]
 // Exports: getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 8770 (getProductName)
+// Module 8658 (getProductName)
 function getProductName(product) {
   if (null == product) {
     return "";
@@ -46,21 +46,21 @@ export const getPurchasedProductName = function getPurchasedProductName(baseVari
 };
 export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(closure_0) {
   const tmp = getProductName(closure_0);
-  let obj = require(6785) /* getProductOrbPrice */;
+  let obj = require(5781) /* getProductOrbPrice */;
   const productType = obj.getProductType(closure_0);
-  if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === productType) {
+  if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === productType) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj = { product: tmp };
     return intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.lvBzLi, obj);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === productType) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === productType) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj = { product: tmp };
     return intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.eR7moP, obj);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === productType) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === productType) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj1 = { product: tmp };
     return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.YFOwHj, obj1);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === productType) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === productType) {
     const intl = require(1212) /* getSystemLocale */.intl;
     const obj2 = { product: tmp };
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.vov8LX, obj2);

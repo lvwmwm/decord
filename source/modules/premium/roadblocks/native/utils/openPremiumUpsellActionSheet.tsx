@@ -1,15 +1,15 @@
-// Module ID: 8036
-// Function ID: 63735
+// Module ID: 6145
+// Function ID: 55074
 // Name: openPremiumUpsellActionSheet
-// Dependencies: [4098, 8037, 1934, 2]
+// Dependencies: [4099, 6146, 1935, 2]
 // Exports: default
 
-// Module 8036 (openPremiumUpsellActionSheet)
+// Module 6145 (openPremiumUpsellActionSheet)
 const result = require("maybeLoadBundle").fileFinishedImporting("modules/premium/roadblocks/native/utils/openPremiumUpsellActionSheet.tsx");
 
 export default function openPremiumUpsellActionSheet(featureName) {
-  let obj = importDefault(4098);
+  let obj = importDefault(4099);
   obj = { featureName };
-  obj.openLazy(require(1934) /* maybeLoadBundle */(8037, dependencyMap.paths), "PremiumUpsellActionSheetKey", obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(6146, dependencyMap.paths), "PremiumUpsellActionSheetKey", obj);
 };
 export const PREMIUM_UPSELL_ACTION_SHEET_KEY = "PremiumUpsellActionSheetKey";

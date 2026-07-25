@@ -1,10 +1,10 @@
-// Module ID: 4332
-// Function ID: 38240
+// Module ID: 4333
+// Function ID: 38251
 // Name: hasPendingMemberAction
-// Dependencies: [1348, 1917, 1838, 4333, 4334, 653, 3746, 4335, 1360, 2]
+// Dependencies: [1348, 1918, 1838, 4334, 4335, 653, 3747, 4336, 1360, 2]
 // Exports: hasPendingMemberAction
 
-// Module 4332 (hasPendingMemberAction)
+// Module 4333 (hasPendingMemberAction)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -20,7 +20,7 @@ export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, 
   channel = channel.getChannel(selectedChannelId);
   let hasItem = null != guild && null != channel;
   if (hasItem) {
-    hasItem = importDefault(4335)(guild);
+    hasItem = importDefault(4336)(guild);
   }
   if (hasItem) {
     const features = guild.features;

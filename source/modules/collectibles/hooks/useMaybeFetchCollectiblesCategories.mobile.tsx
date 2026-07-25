@@ -1,10 +1,10 @@
-// Module ID: 7950
-// Function ID: 62973
+// Module ID: 7898
+// Function ID: 62950
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [4129, 566, 7951, 2]
+// Dependencies: [4130, 566, 7899, 2]
 // Exports: default
 
-// Module 7950 (useMaybeFetchCollectiblesCategories)
+// Module 7898 (useMaybeFetchCollectiblesCategories)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -36,5 +36,5 @@ export default function useMaybeFetchCollectiblesCategories(paymentGateway) {
   if (null != paymentGateway) {
     noOp = paymentGateway.noOp;
   }
-  return require(7951) /* useMaybeFetchCollectiblesCategoriesShared */.useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1);
+  return require(7899) /* useMaybeFetchCollectiblesCategoriesShared */.useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1);
 };

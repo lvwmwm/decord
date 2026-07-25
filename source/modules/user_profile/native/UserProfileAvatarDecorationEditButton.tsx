@@ -1,10 +1,10 @@
-// Module ID: 13643
-// Function ID: 104777
+// Module ID: 13654
+// Function ID: 104904
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [31, 27, 1917, 5510, 482, 33, 4130, 689, 566, 7968, 7935, 8250, 7927, 1212, 13640, 7960, 1273, 7956, 2]
+// Dependencies: [31, 27, 1918, 5510, 482, 33, 4131, 689, 566, 7916, 7882, 7983, 7874, 1212, 13651, 7908, 1273, 7904, 2]
 // Exports: default
 
-// Module 13643 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 13654 (COLLECTIBLES_PREVIEW_SIZE)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

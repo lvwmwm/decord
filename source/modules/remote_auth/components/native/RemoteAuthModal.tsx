@@ -1,10 +1,10 @@
-// Module ID: 12922
-// Function ID: 100307
+// Module ID: 12933
+// Function ID: 100434
 // Name: RemoteAuthBody
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 1557, 12923, 12921, 5162, 507, 22, 12924, 4126, 1212, 1273, 4965, 4543, 4337, 12925, 12926, 5584, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 1557, 12934, 12932, 5161, 507, 22, 12935, 4127, 1212, 1273, 4966, 4544, 4338, 12936, 12937, 5584, 2]
 // Exports: default
 
-// Module 12922 (RemoteAuthBody)
+// Module 12933 (RemoteAuthBody)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -83,12 +83,12 @@ function RemoteAuthLogin(arg0) {
     tmp6 = !tmp3[0];
   }
   obj = {};
-  obj = { source: importDefault(12924), style: tmp.mainImage };
+  obj = { source: importDefault(12935), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   const obj1 = { variant: "heading-md/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t.jD2pqF);
-  items[1] = callback2(require(4126) /* Text */.Heading, obj1);
+  items[1] = callback2(require(4127) /* Text */.Heading, obj1);
   const obj2 = { style: tmp.warningCaption };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["hcd/kh"]);
@@ -110,7 +110,7 @@ function RemoteAuthLogin(arg0) {
     });
   }, 1000, { leading: true, trailing: false });
   obj4.disabled = tmp6;
-  const items1 = [callback2(require(4543) /* Button */.Button, obj4, "" + tmp6), ];
+  const items1 = [callback2(require(4544) /* Button */.Button, obj4, "" + tmp6), ];
   const obj5 = { variant: "secondary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj5.text = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
@@ -119,58 +119,58 @@ function RemoteAuthLogin(arg0) {
     obj = { url: outer1_8.REMOTE_AUTH_CANCEL, body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { handshake_token: closure_0 };
     HTTP.post(obj);
-    let arr = outer1_1(4337);
+    let arr = outer1_1(4338);
     arr = arr.pop();
   };
-  items1[1] = callback2(require(4543) /* Button */.Button, obj5);
+  items1[1] = callback2(require(4544) /* Button */.Button, obj5);
   obj3.children = items1;
-  items[3] = callback3(require(4965) /* ButtonGroup */.ButtonGroup, obj3);
+  items[3] = callback3(require(4966) /* ButtonGroup */.ButtonGroup, obj3);
   obj.children = items;
   return callback3(closure_11, obj);
 }
 function RemoteAuthLoginSucceeded() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(12925), style: tmp.mainImage };
+  obj = { source: importDefault(12936), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.HbwTOZ);
-  items[1] = callback2(require(4126) /* Text */.Heading, obj);
+  items[1] = callback2(require(4127) /* Text */.Heading, obj);
   const obj1 = { style: tmp.caption, variant: "text-md/medium", color: "text-muted" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.wKknJ0);
-  items[2] = callback2(require(4126) /* Text */.Text, obj1);
+  items[2] = callback2(require(4127) /* Text */.Text, obj1);
   const obj2 = { style: tmp.buttonGroup };
   const obj3 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.pYWLA0);
-  obj3.onPress = importDefault(4337).pop;
-  obj2.children = callback2(require(4543) /* Button */.Button, obj3);
-  items[3] = callback2(require(4965) /* ButtonGroup */.ButtonGroup, obj2);
+  obj3.onPress = importDefault(4338).pop;
+  obj2.children = callback2(require(4544) /* Button */.Button, obj3);
+  items[3] = callback2(require(4966) /* ButtonGroup */.ButtonGroup, obj2);
   obj.children = items;
   return callback3(closure_11, obj);
 }
 function RemoteAuthNotFound() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(12926), style: tmp.mainImage };
+  obj = { source: importDefault(12937), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.NShI3Q);
-  items[1] = callback2(require(4126) /* Text */.Heading, obj);
+  items[1] = callback2(require(4127) /* Text */.Heading, obj);
   const obj1 = { style: tmp.caption, variant: "text-md/medium", color: "text-muted" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.Ygezov);
-  items[2] = callback2(require(4126) /* Text */.Text, obj1);
+  items[2] = callback2(require(4127) /* Text */.Text, obj1);
   const obj2 = { style: tmp.buttonGroup };
   const obj3 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  obj3.onPress = importDefault(4337).pop;
-  obj2.children = callback2(require(4543) /* Button */.Button, obj3);
-  items[3] = callback2(require(4965) /* ButtonGroup */.ButtonGroup, obj2);
+  obj3.onPress = importDefault(4338).pop;
+  obj2.children = callback2(require(4544) /* Button */.Button, obj3);
+  items[3] = callback2(require(4966) /* ButtonGroup */.ButtonGroup, obj2);
   obj.children = items;
   return callback3(closure_11, obj);
 }
@@ -193,9 +193,9 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/rem
 
 export default function RemoteAuth(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = { source: importDefault(12923) };
+  let obj = { source: importDefault(12934) };
   ({ imageStyle: obj.imageStyle, background: obj.style } = tmp);
-  obj = { style: items, source: importDefault(12921) };
+  obj = { style: items, source: importDefault(12932) };
   items = [tmp.logo, { marginTop: importDefault(1557)().top }];
   const items1 = [callback2(closure_6, obj), ];
   obj = { style: tmp.container };

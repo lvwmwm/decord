@@ -1,9 +1,9 @@
-// Module ID: 15555
-// Function ID: 119813
+// Module ID: 15565
+// Function ID: 119941
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 7686, 1348, 653, 7565, 587, 3763, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 7628, 1348, 653, 6661, 587, 3764, 22, 566, 686, 2]
 
-// Module 15555 (_isNativeReflectConstruct)
+// Module 15565 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -112,8 +112,8 @@ function getPermissionOverwrites(channel) {
   const obj = {};
   const merged = Object.assign(channel.permissionOverwrites);
   if (tmp3) {
-    obj[guildId] = importAll(3763).makeEveryoneOverwrite(guildId);
-    const obj2 = importAll(3763);
+    obj[guildId] = importAll(3764).makeEveryoneOverwrite(guildId);
+    const obj2 = importAll(3764);
   }
   return obj;
 }
@@ -128,7 +128,7 @@ function init() {
     let c19 = tmp13;
     let c20 = tmp13;
     let closure_15 = null != category;
-    let closure_14 = importAll(3763).areChannelsLocked(_null2, category);
+    let closure_14 = importAll(3764).areChannelsLocked(_null2, category);
     let c24 = null;
     let c18 = false;
     const CLOSED = FormStates.CLOSED;
@@ -159,7 +159,7 @@ function syncChannelUpdates(id) {
             tmp2 = null == channel.permissionOverwrites[guildId];
           }
           if (tmp2) {
-            obj = importAll(3763);
+            obj = importAll(3764);
             obj[guildId] = obj.makeEveryoneOverwrite(guildId);
           }
           obj = {};
@@ -177,7 +177,7 @@ function syncChannelUpdates(id) {
               c24 = null;
             }
           }
-          let closure_14 = importAll(3763).areChannelsLocked(channel, category);
+          let closure_14 = importAll(3764).areChannelsLocked(channel, category);
           return true;
         }
       }
@@ -338,7 +338,7 @@ tmp5 = new tmp5(require("dispatcher"), {
         const OPEN = FormStates.OPEN;
         let closure_18 = !importDefault(22).isEqual(obj, c20);
         const obj3 = importDefault(22);
-        let closure_14 = importAll(3763).areChannelsLocked(c21, c22);
+        let closure_14 = importAll(3764).areChannelsLocked(c21, c22);
       }
     }
     return false;

@@ -1,10 +1,10 @@
-// Module ID: 11634
-// Function ID: 90430
+// Module ID: 11601
+// Function ID: 90153
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [31, 27, 4122, 4038, 33, 4130, 689, 566, 11635, 11636, 11627, 11631, 3842, 2]
+// Dependencies: [31, 27, 4123, 4039, 33, 4131, 689, 566, 11602, 11603, 11594, 11598, 3843, 2]
 // Exports: default
 
-// Module 11634 (GuildPowerupsGameServerCard)
+// Module 11601 (GuildPowerupsGameServerCard)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,7 +25,7 @@ export default function GuildPowerupsGameServerCard(guildId) {
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getStateForGuild(guildId));
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp4 = importDefault(11636)(guildId);
+  const tmp4 = importDefault(11603)(guildId);
   let obj1 = guildId(566);
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_4.useReducedMotion);
@@ -40,13 +40,13 @@ export default function GuildPowerupsGameServerCard(guildId) {
       obj1 = { stateMachine: "SM_Auto" };
       const obj2 = { reducedMotion: stateFromStores1 };
       obj1.dataBinding = obj2;
-      obj.children = jsx(guildId(3842).GameServerHostingRive, { stateMachine: "SM_Auto" });
+      obj.children = jsx(guildId(3843).GameServerHostingRive, { stateMachine: "SM_Auto" });
       obj.riveComponent = <View style={tmp.riveContainer} />;
       obj.badge = "beta";
       obj.status = tmp3;
       obj.onPress = tmp6;
-      tmp7 = jsx(importDefault(11631), { style: tmp.riveContainer });
-      const tmp11 = importDefault(11631);
+      tmp7 = jsx(importDefault(11598), { style: tmp.riveContainer });
+      const tmp11 = importDefault(11598);
     }
   }
   return tmp7;

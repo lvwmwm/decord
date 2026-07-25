@@ -1,10 +1,10 @@
-// Module ID: 8822
-// Function ID: 69604
+// Module ID: 8710
+// Function ID: 69083
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: [57, 31, 27, 4122, 33, 4130, 566, 7851, 8823, 5453, 2]
+// Dependencies: [57, 31, 27, 4123, 33, 4131, 566, 7798, 8711, 5453, 2]
 // Exports: default
 
-// Module 8822 (PremiumGiftBackgroundAnimation)
+// Module 8710 (PremiumGiftBackgroundAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 5634
-// Function ID: 48072
+// Module ID: 12550
+// Function ID: 97086
 // Name: useCreatorMonetizationRestrictions
-// Dependencies: [31, 3752, 1838, 653, 5635, 5636, 566, 3751, 2]
+// Dependencies: [31, 3753, 1838, 653, 12551, 12552, 566, 3752, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 5634 (useCreatorMonetizationRestrictions)
+// Module 12550 (useCreatorMonetizationRestrictions)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
@@ -16,7 +16,7 @@ let closure_9;
 const require = arg1;
 function useCreatorMonetizationRestrictions(has) {
   const _require = has;
-  const tmp = importDefault(5635)();
+  const tmp = importDefault(12551)();
   importDefault = tmp;
   const items = [has, tmp];
   const effect = React.useEffect(() => {
@@ -100,8 +100,8 @@ export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuild
     tmp2 = tmp2 == hasItem3 || hasItem3;
     let result = tmp2;
   } else {
-    result = _require(3751).isRestrictedFromShowingGuildPurchaseEntryPoints(tmp.restrictions);
-    const obj3 = _require(3751);
+    result = _require(3752).isRestrictedFromShowingGuildPurchaseEntryPoints(tmp.restrictions);
+    const obj3 = _require(3752);
   }
 };
 export const useShouldRestrictUpdatingCreatorMonetizationSettings = function useShouldRestrictUpdatingCreatorMonetizationSettings(guildId) {
@@ -120,8 +120,8 @@ export const useShouldRestrictUpdatingCreatorMonetizationSettings = function use
     let result = null == hasItem || hasItem;
     const tmp10 = null == hasItem || hasItem;
   } else {
-    result = _require(3751).isRestrictedFromUpdatingCreatorMonetizationSettings(tmp3);
-    const obj2 = _require(3751);
+    result = _require(3752).isRestrictedFromUpdatingCreatorMonetizationSettings(tmp3);
+    const obj2 = _require(3752);
   }
   let tmp11 = null == stateFromStores;
   if (!tmp11) {
@@ -148,7 +148,7 @@ export const useIsMonetizationReapplicationDisabled = function useIsMonetization
   obj = {};
   ({ restrictions, restrictionsLoading } = useCreatorMonetizationRestrictions(obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1)));
   const tmp = useCreatorMonetizationRestrictions(obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1));
-  obj.isMonetizationReapplicationDisabled = _require(3751).isRestrictedFromMonetizationReapplication(restrictions);
+  obj.isMonetizationReapplicationDisabled = _require(3752).isRestrictedFromMonetizationReapplication(restrictions);
   obj.restrictionsLoading = restrictionsLoading;
   return obj;
 };

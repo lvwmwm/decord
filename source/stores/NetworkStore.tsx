@@ -1,9 +1,9 @@
-// Module ID: 4222
-// Function ID: 36853
+// Module ID: 4223
+// Function ID: 36864
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 653, 1430, 566, 686, 2]
 
-// Module 4222 (_isNativeReflectConstruct)
+// Module 4223 (_isNativeReflectConstruct)
 import awaitOnline from "awaitOnline";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,9 +1,9 @@
-// Module ID: 6694
-// Function ID: 51817
+// Module ID: 5690
+// Function ID: 49130
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 4051, 4222, 653, 3, 6695, 675, 6918, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 4052, 4223, 653, 3, 5691, 675, 5909, 566, 686, 2]
 
-// Module 6694 (_isNativeReflectConstruct)
+// Module 5690 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import set from "set";
@@ -41,10 +41,10 @@ function trackRoundtrip(channelId) {
       if (null != channelId.gatewaySeenTimestamp) {
         diff1 = channelId.gatewaySeenTimestamp - channelId.initialSendTimestamp;
       }
-      let obj = require(6695) /* receiveNetworkInfoformation */;
+      let obj = require(5691) /* receiveNetworkInfoformation */;
       const signalStrength = obj.getSignalStrength();
       obj = {};
-      const merged = Object.assign(importDefault(6918)());
+      const merged = Object.assign(importDefault(5909)());
       obj["api_latency_ms"] = diff;
       obj["gateway_latency_ms"] = diff1;
       obj["channel_id"] = basicChannel.id;

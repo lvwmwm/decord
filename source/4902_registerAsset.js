@@ -1,11 +1,11 @@
 // Module ID: 4902
-// Function ID: 42252
+// Function ID: 42263
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 4902 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 267, height: 267, scales: [1], hash: "898dc79e0285b8e9855531eeca36bf84", name: "img_roblox_dark", type: "svg" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 267, height: 267, scales: [1], hash: "8004c631509b26672d76ec4ff50dd8cb", name: "img_roblox_light", type: "svg" };
 
 export default registerAsset.registerAsset(obj);

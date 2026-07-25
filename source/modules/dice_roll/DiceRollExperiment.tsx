@@ -1,9 +1,9 @@
-// Module ID: 8219
-// Function ID: 64778
+// Module ID: 12545
+// Function ID: 97067
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 8219 (apexExperiment)
+// Module 12545 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-05-dice-roll-slash-command", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

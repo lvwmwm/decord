@@ -1,10 +1,10 @@
-// Module ID: 5739
-// Function ID: 49350
+// Module ID: 10713
+// Function ID: 83309
 // Name: hasPermissionToPlaySound
-// Dependencies: [5, 1316, 1352, 3758, 1849, 4578, 4579, 653, 1314, 3803, 3776, 5740, 5733, 4585, 5741, 686, 5768, 5769, 5770, 624, 3969, 1334, 1331, 675, 4324, 2]
+// Dependencies: [5, 1316, 1352, 3759, 1850, 4579, 4580, 653, 1314, 3804, 3777, 10714, 7986, 4586, 10715, 686, 10718, 10719, 10720, 624, 3970, 1334, 1331, 675, 4325, 2]
 // Exports: getAmplitudinalSoundboardVolume, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 5739 (hasPermissionToPlaySound)
+// Module 10713 (hasPermissionToPlaySound)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_5 } from "_callSuper";
@@ -46,7 +46,7 @@ function canUseSoundboardSound(currentUser, sound, channel) {
   if (arg3 === undefined) {
     flag = true;
   }
-  let result = importDefault(3776).canUseSoundboardEverywhere(currentUser);
+  let result = importDefault(3777).canUseSoundboardEverywhere(currentUser);
   if (!result) {
     let guild_id;
     if (null != channel) {
@@ -67,7 +67,7 @@ function canUseSoundboardSound(currentUser, sound, channel) {
   return result;
 }
 function canMakeSound(channel) {
-  let obj = require(5740) /* getMuteStates */;
+  let obj = require(10714) /* getMuteStates */;
   obj = { channel };
   const muteStates = obj.getMuteStates(obj);
   return !muteStates.mute && !muteStates.suppress;
@@ -84,42 +84,10 @@ function hasSetAnyCustomJoinSound() {
   const values = Object.values(guilds);
   return values.some((joinSound) => null != joinSound.joinSound);
 }
-async function _maybePlayCustomJoinSound(arg0, arg1) {
-  const currentUser = outer2_7.getCurrentUser();
-  const tmp2 = outer2_1(outer2_2[16])();
-  const customJoinSound = outer2_0(outer2_2[17]).getCustomJoinSound(arg0);
-  if (null != tmp2) {
-    if (!outer2_5.has(tmp2.type)) {
-      if (null != customJoinSound) {
-        if (obj6.canUseCustomCallSounds(currentUser)) {
-          if (obj2.canSelectedVoiceChannelUseSoundboard()) {
-            yield outer2_0(outer2_2[12]).maybeFetchSoundboardSounds();
-            const sound = outer2_8.getSound(customJoinSound.guildId === outer2_9 ? outer2_10 : customJoinSound.guildId, customJoinSound.soundId);
-            if (null != sound) {
-              let tmp16 = null;
-              if (outer2_14(sound, tmp2)) {
-                tmp16 = null;
-                if (outer2_15(currentUser, sound, tmp2, true)) {
-                  tmp16 = null;
-                  if (outer2_16(tmp2)) {
-                    const id = tmp2.id;
-                    outer2_0(outer2_2[12]).playSoundLocally(id, sound, outer2_0(outer2_2[13]).LocalSoundTrigger.JOINED_VOICE_CHANNEL);
-                    const obj4 = outer2_0(outer2_2[12]);
-                    const result = outer2_0(outer2_2[14]).sendVoiceChannelCustomCallSoundEffect(id, sound, false);
-                    const obj5 = outer2_0(outer2_2[14]);
-                  }
-                }
-              }
-              return tmp16;
-            }
-            const obj3 = outer2_0(outer2_2[12]);
-          }
-          obj2 = outer2_0(outer2_2[18]);
-        }
-        obj6 = outer2_1(outer2_2[10]);
-      }
-    }
-  }
+function _maybePlayCustomJoinSound() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
 function trackCustomCallSettingsChanged(guildId) {
   let _location;
@@ -147,7 +115,7 @@ let result = require("_callSuper").fileFinishedImporting("modules/soundboard/Sou
 
 export const getAmplitudinalSoundboardVolume = function getAmplitudinalSoundboardVolume() {
   let volume;
-  const SoundboardSettings = require(3803) /* explicitContentFromProto */.SoundboardSettings;
+  const SoundboardSettings = require(3804) /* explicitContentFromProto */.SoundboardSettings;
   const setting = SoundboardSettings.getSetting();
   if (null != setting) {
     volume = setting.volume;
@@ -162,10 +130,10 @@ export { hasPermissionToPlaySound };
 export { canUseSoundboardSound };
 export { canMakeSound };
 export const playSound = function playSound(soundId, channelId) {
-  let obj = require(5733) /* _fetchDefaultSoundsFromApi2 */;
-  obj.playSoundLocally(channelId, soundId, require(4585) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
-  const result = require(5741) /* _getCancellationSlowConnection */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
-  const obj2 = require(5741) /* _getCancellationSlowConnection */;
+  let obj = require(7986) /* _fetchDefaultSoundsFromApi2 */;
+  obj.playSoundLocally(channelId, soundId, require(4586) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
+  const result = require(10715) /* _getCancellationSlowConnection */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
+  const obj2 = require(10715) /* _getCancellationSlowConnection */;
   obj = { type: "SOUNDBOARD_TRACK_USAGE", soundId: soundId.soundId };
   importDefault(686).dispatch(obj);
 };
@@ -183,13 +151,13 @@ export const useSoundBoardDismissContentTypes = function useSoundBoardDismissCon
   const items1 = [];
   if (!flag) {
     if (!hasSetAnyCustomJoinSound()) {
-      const result = require(3969) /* conceal */.ageEligibleForPremiumUpsell(stateFromStores);
-      const obj2 = require(3969) /* conceal */;
-      const obj3 = importDefault(3776);
+      const result = require(3970) /* conceal */.ageEligibleForPremiumUpsell(stateFromStores);
+      const obj2 = require(3970) /* conceal */;
+      const obj3 = importDefault(3777);
       if (tmp7) {
         items1.push(require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL);
       }
-      tmp7 = importDefault(3776).canUseCustomCallSounds(stateFromStores) || result;
+      tmp7 = importDefault(3777).canUseCustomCallSounds(stateFromStores) || result;
     }
   }
   return items1;
@@ -207,11 +175,11 @@ export const updateCustomJoinSound = function updateCustomJoinSound(arg0, arg1, 
   let closure_1 = arg1;
   const dependencyMap = arg2;
   const result = _require(1331).updateUserGuildSettings(arg0, (joinSound) => {
-    const AnalyticsSoundSource = callback(4585).AnalyticsSoundSource;
+    const AnalyticsSoundSource = callback(4586).AnalyticsSoundSource;
     if (null != joinSound.joinSound) {
-      let ADDED = callback(4585).AnalyticsChangeType.UPDATED;
+      let ADDED = callback(4586).AnalyticsChangeType.UPDATED;
     } else {
-      ADDED = callback(4585).AnalyticsChangeType.ADDED;
+      ADDED = callback(4586).AnalyticsChangeType.ADDED;
     }
     let obj = { soundId: closure_1.soundId };
     if (closure_1.guildId === outer1_10) {
@@ -221,7 +189,7 @@ export const updateCustomJoinSound = function updateCustomJoinSound(arg0, arg1, 
     }
     obj.guildId = guildId;
     joinSound.joinSound = obj;
-    obj = { guildId: callback, changeType: ADDED, soundSource: closure_1.guildId === outer1_10 ? AnalyticsSoundSource.DEFAULT : AnalyticsSoundSource.CUSTOM, soundType: callback(4585).AnalyticsSoundType.ENTRY, location: dependencyMap };
+    obj = { guildId: callback, changeType: ADDED, soundSource: closure_1.guildId === outer1_10 ? AnalyticsSoundSource.DEFAULT : AnalyticsSoundSource.CUSTOM, soundType: callback(4586).AnalyticsSoundType.ENTRY, location: dependencyMap };
     outer1_19(obj);
   }, _require(1331).UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
@@ -230,7 +198,7 @@ export const trackCustomCallSoundExternallyDeleted = function trackCustomCallSou
 };
 export const trackSoundFavorited = function trackSoundFavorited(location) {
   const sound = location.sound;
-  let obj = importDefault(4324);
+  let obj = importDefault(4325);
   obj = { location: location.location, expression_type: ExpressionPickerViewType.SOUNDBOARD, expression_id: sound.soundId, expression_name: sound.name, expression_guild_id: sound.guildId };
   obj.trackWithMetadata(constants2.EXPRESSION_FAVORITED, obj);
 };

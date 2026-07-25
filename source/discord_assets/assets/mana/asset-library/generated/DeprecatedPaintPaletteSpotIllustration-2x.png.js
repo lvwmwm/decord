@@ -1,9 +1,9 @@
-// Module ID: 5983
-// Function ID: 49940
+// Module ID: 6903
+// Function ID: 59590
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5983 (metadata)
+// Module 6903 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DeprecatedPaintPaletteSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/b699815a486c8df82f566a38fb112659af9b9f7d1039cf2585ac451c260dd5e9.png";

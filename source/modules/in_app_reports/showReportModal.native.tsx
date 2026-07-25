@@ -1,10 +1,10 @@
-// Module ID: 7691
-// Function ID: 61170
+// Module ID: 7635
+// Function ID: 61116
 // Name: _showReportModal
-// Dependencies: [5, 7692, 7693, 4337, 7694, 1934, 2]
+// Dependencies: [5, 7636, 7637, 4338, 7638, 1935, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 7691 (_showReportModal)
+// Module 7635 (_showReportModal)
 import maybeLoadBundle from "maybeLoadBundle";
 
 const require = arg1;
@@ -40,5 +40,5 @@ export const showReportModal = function showReportModal(arg0, arg1, arg2) {
   return _showReportModal(...arguments);
 };
 export const hideReportModal = function hideReportModal() {
-  importDefault(4337).popWithKey(IN_APP_REPORT_MODAL_KEY);
+  importDefault(4338).popWithKey(IN_APP_REPORT_MODAL_KEY);
 };

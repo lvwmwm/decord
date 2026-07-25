@@ -1,9 +1,9 @@
-// Module ID: 6809
-// Function ID: 53742
+// Module ID: 5805
+// Function ID: 51016
 // Name: FeedBlockRecord
-// Dependencies: [6, 7, 6805, 2]
+// Dependencies: [6, 7, 5801, 2]
 
-// Module 6809 (FeedBlockRecord)
+// Module 5805 (FeedBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

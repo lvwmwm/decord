@@ -1,9 +1,9 @@
-// Module ID: 14776
-// Function ID: 112624
+// Module ID: 14787
+// Function ID: 112752
 // Name: getInitialAuthScreen
-// Dependencies: [57, 31, 27, 653, 33, 14777, 5087, 14786, 5519, 9239, 4130, 689, 14827, 9233, 1571, 9258, 14828, 9256, 5517, 478, 1212, 14829, 6707, 14833, 2]
+// Dependencies: [57, 31, 27, 653, 33, 14788, 5087, 14797, 5519, 9131, 4131, 689, 14838, 9125, 1571, 9150, 14839, 9148, 5517, 478, 1212, 14840, 5703, 14844, 2]
 
-// Module 14776 (getInitialAuthScreen)
+// Module 14787 (getInitialAuthScreen)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -22,7 +22,7 @@ function getInitialAuthScreen() {
   return AuthStates.WELCOME;
 }
 function NavigatorWithCaptchaHook() {
-  let obj = _require(14827);
+  let obj = _require(14838);
   const isHCaptchaModalOpenTracking = obj.useIsHCaptchaModalOpenTracking();
   const tmp3 = callback3();
   let tmp4 = callback(importAllResult.useState(getInitialAuthScreen()), 2);
@@ -50,10 +50,10 @@ function NavigatorWithCaptchaHook() {
   obj = {};
   const tmp11 = closure_10;
   const tmp12 = closure_9;
-  const tmp2 = importDefault(9233)();
-  obj.backgroundImageSource = _require(14828);
+  const tmp2 = importDefault(9125)();
+  obj.backgroundImageSource = _require(14839);
   obj.backgroundImageCover = true;
-  const items = [callback2(importDefault(9258), obj), ];
+  const items = [callback2(importDefault(9150), obj), ];
   if (tmp2) {
     obj1 = { value: tmp7 };
     const obj2 = {};
@@ -107,7 +107,7 @@ function NavigatorWithCaptchaHook() {
     obj4.children = callback2(_require(5517).Navigator, obj7);
     obj2.children = callback2(closure_6, obj4);
     obj1.children = callback2(closure_6, obj2);
-    let tmp14Result = tmp14(tmp15(9256).WideAuthScrollContext.Provider, obj1);
+    let tmp14Result = tmp14(tmp15(9148).WideAuthScrollContext.Provider, obj1);
     obj15 = _require(478);
     const tmp21 = callback2;
     const tmp22 = closure_6;
@@ -206,7 +206,7 @@ const memoResult = importAllResult.memo(function Auth() {
     return () => outer2_1(outer2_2[21]).terminate();
   }, []);
   const layoutEffect = importAllResult.useLayoutEffect(() => callback(outer1_2[22]).trackAppUIViewed(), []);
-  importDefault(14833)();
+  importDefault(14844)();
   let closure_0 = importAllResult.useRef(undefined);
   return callback2(context.Provider, { value: importAllResult.useCallback(() => callback(outer1_2[7]).getTrackRegTransition(callback), [])(), children: callback2(NavigatorWithCaptchaHook, {}) });
 });

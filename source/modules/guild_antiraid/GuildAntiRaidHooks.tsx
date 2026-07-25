@@ -1,10 +1,10 @@
-// Module ID: 10269
-// Function ID: 79288
+// Module ID: 10202
+// Function ID: 78941
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1316, 1838, 3758, 3947, 1849, 10249, 7792, 653, 624, 21, 7791, 483, 3763, 10270, 2]
+// Dependencies: [1316, 1838, 3759, 3948, 1850, 10182, 7739, 653, 624, 21, 7738, 483, 3764, 10203, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 10269 (_createForOfIteratorHelperLoose)
+// Module 10202 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_6 from "_isNativeReflectConstruct";
@@ -114,16 +114,16 @@ function getFirstGuildIncidentId(guildId) {
         if (null != tmp14) {
           let tmp16 = require;
           let tmp17 = dependencyMap;
-          let obj7 = require(7791) /* hasDetectedRaid */;
+          let obj7 = require(7738) /* hasDetectedRaid */;
           if (obj7.hasDetectedActivity(tmp14)) {
             let tmp7 = require;
             let tmp8 = dependencyMap;
-            let obj3 = require(7791) /* hasDetectedRaid */;
+            let obj3 = require(7738) /* hasDetectedRaid */;
             if (!obj3.isUnderLockdown(tmp14)) {
               let tmp10 = importAll;
               let tmp11 = dependencyMap;
               let obj4 = importAll(483);
-              let obj5 = importAll(3763);
+              let obj5 = importAll(3764);
               obj = { user: currentUser, context: value, checkElevated: false };
               let tmp12 = closure_10;
               let tmp13 = tmp14;
@@ -136,7 +136,7 @@ function getFirstGuildIncidentId(guildId) {
           } else {
             let tmp4 = require;
             let tmp5 = dependencyMap;
-            let obj2 = require(7791) /* hasDetectedRaid */;
+            let obj2 = require(7738) /* hasDetectedRaid */;
             let tmp6 = tmp14;
           }
         }
@@ -175,12 +175,12 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         if (null != tmp11) {
           let tmp13 = stateFromStores1;
           let tmp14 = dependencyMap;
-          let obj8 = stateFromStores1(7791);
+          let obj8 = stateFromStores1(7738);
           if (obj8.hasDetectedActivity(tmp11)) {
             let tmp7 = importAll;
             let tmp8 = dependencyMap;
             let obj5 = importAll(483);
-            let obj6 = importAll(3763);
+            let obj6 = importAll(3764);
             obj = { user: stateFromStores, context: value, checkElevated: false };
             let tmp9 = closure_10;
             let tmp10 = tmp11;
@@ -190,7 +190,7 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
           } else {
             let tmp4 = stateFromStores1;
             let tmp5 = dependencyMap;
-            let obj4 = stateFromStores1(7791);
+            let obj4 = stateFromStores1(7738);
             let tmp6 = tmp11;
           }
         }
@@ -231,8 +231,8 @@ export const useGuildIncidentsState = function useGuildIncidentsState(id) {
   obj = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1 };
   let isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = _require(7791).isUnderLockdown(stateFromStores1);
-    const obj4 = _require(7791);
+    isUnderLockdownResult = _require(7738).isUnderLockdown(stateFromStores1);
+    const obj4 = _require(7738);
   }
   obj.isUnderLockdown = isUnderLockdownResult;
   return obj;
@@ -266,8 +266,8 @@ export const shouldShowRaidInAppNotification = function shouldShowRaidInAppNotif
   }
   let isUnderLockdownResult = null != guildIncident;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = require(7791) /* hasDetectedRaid */.isUnderLockdown(guildIncident);
-    const obj2 = require(7791) /* hasDetectedRaid */;
+    isUnderLockdownResult = require(7738) /* hasDetectedRaid */.isUnderLockdown(guildIncident);
+    const obj2 = require(7738) /* hasDetectedRaid */;
   }
   const show = null != guildId && !isUnderLockdownResult && !(null != tmp2 && tmp2.disableRaidAlertNag);
   return { show, guildId };

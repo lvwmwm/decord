@@ -1,10 +1,10 @@
-// Module ID: 8509
-// Function ID: 67754
+// Module ID: 8269
+// Function ID: 66408
 // Name: useGuildEventRecurrences
-// Dependencies: [57, 31, 6758, 566, 8510, 8390, 22, 21, 664, 8401, 2]
+// Dependencies: [57, 31, 5751, 566, 8270, 8148, 22, 21, 664, 8159, 2]
 // Exports: default
 
-// Module 8509 (useGuildEventRecurrences)
+// Module 8269 (useGuildEventRecurrences)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,16 +19,16 @@ export default function useGuildEventRecurrences(arg0, arg1, closure_2) {
   let obj = _require(566);
   let items = [first];
   const stateFromStores = obj.useStateFromStores(items, () => first.getGuildScheduledEvent(closure_0));
-  const tmp2 = importDefault(8510)(closure_2);
+  const tmp2 = importDefault(8270)(closure_2);
   const React = tmp2;
   if (null != closure_2) {
     if (null != stateFromStores) {
-      let obj2 = _require(8390);
+      let obj2 = _require(8148);
       let _Date = Date;
-      let rRule = _require(8390).getRRule(closure_2);
+      let rRule = _require(8148).getRRule(closure_2);
       let date = new Date(stateFromStores.scheduled_start_time);
       const nextRecurrences = obj2.generateNextRecurrences(4, rRule, date);
-      let obj3 = _require(8390);
+      let obj3 = _require(8148);
     }
     const tmp15 = stateFromStores(tmp4([]), 2);
     first = tmp15[0];
@@ -39,12 +39,12 @@ export default function useGuildEventRecurrences(arg0, arg1, closure_2) {
         if (null != dependencyMap) {
           if (null != stateFromStores) {
             if (!obj3.isEqual(result, dependencyMap)) {
-              const rRule = callback(8390).getRRule(dependencyMap);
-              const obj = callback(8390);
+              const rRule = callback(8148).getRRule(dependencyMap);
+              const obj = callback(8148);
               const _Date = Date;
               const date = new Date(stateFromStores.scheduled_start_time);
-              callback3(callback(8390).generateNextRecurrences(first.length, rRule, date));
-              const obj2 = callback(8390);
+              callback3(callback(8148).generateNextRecurrences(first.length, rRule, date));
+              const obj2 = callback(8148);
             }
             obj3 = callback2(22);
           }
@@ -59,8 +59,8 @@ export default function useGuildEventRecurrences(arg0, arg1, closure_2) {
           const rounded = Math.floor(time / callback(664).Millis.SECOND);
           return callback(21).fromTimestamp(rounded * callback(664).Millis.SECOND);
         });
-        const guildEventUserCounts = callback2(8401).getGuildEventUserCounts(callback2, closure_0, mapped);
-        const obj = callback2(8401);
+        const guildEventUserCounts = callback2(8159).getGuildEventUserCounts(callback2, closure_0, mapped);
+        const obj = callback2(8159);
       }
     }, items2);
     const items3 = [closure_2, first, ];
@@ -82,8 +82,8 @@ export default function useGuildEventRecurrences(arg0, arg1, closure_2) {
                 const _Date = Date;
                 const date = new Date();
                 const fullYear = date.getFullYear();
-                date.setFullYear(fullYear + callback(8390).MAX_YEARS_AHEAD_RECURRING_EVENT);
-                const rRule = callback(8390).getRRule(dependencyMap);
+                date.setFullYear(fullYear + callback(8148).MAX_YEARS_AHEAD_RECURRING_EVENT);
+                const rRule = callback(8148).getRRule(dependencyMap);
                 const afterResult = rRule.after(first[first.length - 1]);
                 return null != afterResult && afterResult <= date;
               }
@@ -94,13 +94,13 @@ export default function useGuildEventRecurrences(arg0, arg1, closure_2) {
       updateRecurrenceStartTimes() {
           if (null != dependencyMap) {
             if (null != stateFromStores) {
-              const rRule = callback(8390).getRRule(dependencyMap);
+              const rRule = callback(8148).getRRule(dependencyMap);
               const items = [];
               let arraySpreadResult = HermesBuiltin.arraySpread(first, 0);
-              const obj2 = callback(8390);
+              const obj2 = callback(8148);
               arraySpreadResult = HermesBuiltin.arraySpread(obj2.generateNextRecurrences(4, rRule, tmp7, true), arraySpreadResult);
               callback3(items);
-              const obj = callback(8390);
+              const obj = callback(8148);
             }
           }
         }

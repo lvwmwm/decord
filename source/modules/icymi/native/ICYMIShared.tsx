@@ -1,10 +1,10 @@
-// Module ID: 15265
-// Function ID: 116321
+// Module ID: 15275
+// Function ID: 116449
 // Name: Separator
-// Dependencies: [31, 27, 5683, 1348, 1917, 3758, 1849, 653, 33, 7086, 11905, 4644, 9883, 15194, 5069, 5626, 5582, 6691, 4062, 15226, 477, 689, 1273, 7961, 5513, 4549, 4660, 4126, 6883, 15266, 9007, 566, 4319, 8365, 8537, 4651, 8364, 14998, 8505, 1212, 15227, 4066, 3834, 3974, 3991, 4131, 4140, 4629, 5512, 4120, 2]
+// Dependencies: [31, 27, 6014, 1348, 1918, 3759, 1850, 653, 33, 6104, 11881, 4645, 9807, 15204, 5070, 5626, 5582, 5685, 4063, 15236, 477, 689, 1273, 7909, 5513, 4550, 4661, 4127, 5874, 15276, 8895, 566, 4320, 8123, 8297, 4652, 8122, 15008, 8265, 1212, 15237, 4067, 3835, 3975, 3992, 4132, 4141, 4630, 5512, 4121, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost
 
-// Module 15265 (Separator)
+// Module 15275 (Separator)
 import initialize from "initialize";
 import { View } from "Text";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
 import ME from "ME";
-import jsxProd from "module_8365";
+import jsxProd from "module_8123";
 import createICYMIStyles from "createICYMIStyles";
 
 let closure_10;
@@ -30,7 +30,7 @@ let closure_20;
 const require = arg1;
 class Separator {
   constructor() {
-    obj = { style: f116328().separator };
+    obj = { style: f116456().separator };
     return jsx(View, obj);
   }
 }
@@ -76,7 +76,7 @@ class GuildContentPost {
     guild = global.guild;
     ({ channel, id, type } = global);
     ({ timestamp, hideTimestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f116328();
+    tmp = f116456();
     obj = require("getFontScale");
     obj = {};
     fontScale = obj.useFontScale();
@@ -509,26 +509,26 @@ export const SimplePost = function SimplePost(arg0) {
   let dependencyMap;
   let sharedValue;
   const tmp = callback3();
-  let obj = highlight(3834);
-  token = obj.useToken(token(689).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4066)());
-  let obj1 = highlight(3974);
+  let obj = highlight(3835);
+  token = obj.useToken(token(689).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4067)());
+  let obj1 = highlight(3975);
   const hexWithOpacityResult = obj1.hexWithOpacity(token(689).unsafe_rawColors.BRAND_360, 0.25);
   dependencyMap = hexWithOpacityResult;
-  let obj2 = highlight(3991);
+  let obj2 = highlight(3992);
   sharedValue = obj2.useSharedValue(0);
-  const tmp2 = token(4066)();
+  const tmp2 = token(4067)();
   const fn = function c() {
     const obj = {};
     const items = [token, _undefined];
     obj.backgroundColor = highlight(_undefined[44]).interpolateColor(sharedValue.get(), [0, 1], items);
     return obj;
   };
-  obj = { interpolateColor: highlight(3991).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
+  obj = { interpolateColor: highlight(3992).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
   fn.__closure = obj;
   fn.__workletHash = 11116019021445;
   fn.__initData = closure_22;
   let items = [highlight, sharedValue];
-  const animatedStyle = highlight(3991).useAnimatedStyle(fn);
+  const animatedStyle = highlight(3992).useAnimatedStyle(fn);
   const effect = sharedValue.useEffect(() => {
     if (highlight) {
       let obj = highlight(_undefined[44]);
@@ -547,7 +547,7 @@ export const SimplePost = function SimplePost(arg0) {
     const items1 = [tmp.simplePostContent, animatedStyle];
     obj1.style = items1;
     obj1.children = children;
-    const items2 = [tmp10(token(3991).View, obj1), ];
+    const items2 = [tmp10(token(3992).View, obj1), ];
     let tmp18 = null;
     if (!hideDivider) {
       tmp18 = callback(Separator, {});
@@ -638,25 +638,25 @@ export const ThreadAsComments = function ThreadAsComments(parentMessage) {
         const items2 = [callback(parentMessage(1273).Avatar, obj), , ];
         const obj1 = { variant: "text-sm/semibold", lineClamp: 1, style: tmp.recentCommentText };
         if (mostRecentMessage.content.length > 0) {
-          let obj4 = importDefault(4120);
+          let obj4 = importDefault(4121);
           let parseInlineReplyResult = obj4.parseInlineReply(mostRecentMessage.content, true);
         } else {
           const intl = parentMessage(1212).intl;
           parseInlineReplyResult = intl.string(parentMessage(1212).t["6kp9H2"]);
         }
         obj1.children = parseInlineReplyResult;
-        items2[1] = callback(parentMessage(4126).Text, obj1);
+        items2[1] = callback(parentMessage(4127).Text, obj1);
         let obj2 = { style: tmp.commentCount };
         const obj3 = { style: tmp.commentsIcon };
-        const items3 = [callback(parentMessage(4629).ChatIcon, obj3), , ];
+        const items3 = [callback(parentMessage(4630).ChatIcon, obj3), , ];
         obj4 = { variant: "text-sm/bold", color: "interactive-text-default", children: str };
-        items3[1] = callback(parentMessage(4126).Text, obj4);
+        items3[1] = callback(parentMessage(4127).Text, obj4);
         const obj5 = { style: tmp.chevron, size: "xxs" };
         items3[2] = callback(parentMessage(5512).ChevronSmallRightIcon, obj5);
         obj2.children = items3;
         items2[2] = callback2(View, obj2);
         obj.children = items2;
-        return callback2(parentMessage(4660).PressableHighlight, obj);
+        return callback2(parentMessage(4661).PressableHighlight, obj);
       }
     }
     const obj6 = {};
@@ -666,16 +666,16 @@ export const ThreadAsComments = function ThreadAsComments(parentMessage) {
     const obj7 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.recentCommentText };
     const intl2 = parentMessage(1212).intl;
     obj7.children = intl2.string(parentMessage(1212).t.VMWjXW);
-    const items5 = [callback(parentMessage(4126).Text, obj7), ];
+    const items5 = [callback(parentMessage(4127).Text, obj7), ];
     const obj8 = { style: tmp.commentCount };
     const obj9 = { style: tmp.commentsIcon };
-    const items6 = [callback(parentMessage(4629).ChatIcon, obj9), ];
+    const items6 = [callback(parentMessage(4630).ChatIcon, obj9), ];
     const obj10 = { style: tmp.chevron, size: "xxs" };
     items6[1] = callback(parentMessage(5512).ChevronSmallRightIcon, obj10);
     obj8.children = items6;
     items5[1] = callback2(View, obj8);
     obj6.children = items5;
-    return callback2(parentMessage(4660).PressableHighlight, obj6);
+    return callback2(parentMessage(4661).PressableHighlight, obj6);
   } else {
     return null;
   }

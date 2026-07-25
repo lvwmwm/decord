@@ -1,10 +1,10 @@
-// Module ID: 10844
-// Function ID: 84159
+// Module ID: 10816
+// Function ID: 83901
 // Name: openChannelCallModalForChannelId
-// Dependencies: [1348, 7557, 4341, 2]
+// Dependencies: [1348, 6653, 4342, 2]
 // Exports: default
 
-// Module 10844 (openChannelCallModalForChannelId)
+// Module 10816 (openChannelCallModalForChannelId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -18,12 +18,12 @@ export default function openChannelCallModalForChannelId(channelId) {
       isGuildStageVoiceResult = channel.isGuildStageVoice();
     }
     if (isGuildStageVoiceResult) {
-      isGuildStageVoiceResult = false === require(7557) /* connectToStage */.connectToStage(channel);
-      const obj2 = require(7557) /* connectToStage */;
+      isGuildStageVoiceResult = false === require(6653) /* connectToStage */.connectToStage(channel);
+      const obj2 = require(6653) /* connectToStage */;
     }
     if (!isGuildStageVoiceResult) {
-      require(4341) /* getVoiceChannelKeyByChannelId */.openChannelCallModal(channel);
-      const obj3 = require(4341) /* getVoiceChannelKeyByChannelId */;
+      require(4342) /* getVoiceChannelKeyByChannelId */.openChannelCallModal(channel);
+      const obj3 = require(4342) /* getVoiceChannelKeyByChannelId */;
     }
   }
 };

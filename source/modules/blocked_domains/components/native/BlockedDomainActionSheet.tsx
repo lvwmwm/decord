@@ -1,10 +1,10 @@
-// Module ID: 12247
-// Function ID: 95707
+// Module ID: 12223
+// Function ID: 95516
 // Name: BlockedDomainActionSheet
-// Dependencies: [31, 33, 4130, 689, 5187, 4541, 5807, 4126, 1212, 12248, 4543, 4098, 2]
+// Dependencies: [31, 33, 4131, 689, 5187, 4542, 6727, 4127, 1212, 12224, 4544, 4099, 2]
 // Exports: default
 
-// Module 12247 (BlockedDomainActionSheet)
+// Module 12223 (BlockedDomainActionSheet)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -26,25 +26,25 @@ export default function BlockedDomainActionSheet(url) {
   let obj = { startExpanded: true };
   obj = { spacing: 16, justify: "center", align: "center", style: tmp.container };
   obj = { spacing: 8, justify: "center", align: "center" };
-  const items = [callback(require(5807) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
+  const items = [callback(require(6727) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t["2B3wj8"]);
-  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  items[1] = callback(require(4127) /* Text */.Text, obj1);
   const obj2 = { style: tmp.warningMessage, variant: "text-md/medium" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.jnHyYU, {});
-  items[2] = callback(require(4126) /* Text */.Text, obj2);
+  items[2] = callback(require(4127) /* Text */.Text, obj2);
   obj.children = items;
-  const items1 = [callback2(require(4541) /* Stack */.Stack, obj), callback(require(12248) /* URLCallout */.URLCallout, { url: url.url }), ];
+  const items1 = [callback2(require(4542) /* Stack */.Stack, obj), callback(require(12224) /* URLCallout */.URLCallout, { url: url.url }), ];
   const obj3 = { grow: true };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["/g10LC"]);
   obj3.onPress = function onPress() {
     return outer1_1(outer1_2[11]).hideActionSheet();
   };
-  items1[2] = callback(require(4543) /* Button */.Button, obj3);
+  items1[2] = callback(require(4544) /* Button */.Button, obj3);
   obj.children = items1;
-  obj.children = callback2(require(4541) /* Stack */.Stack, obj);
+  obj.children = callback2(require(4542) /* Stack */.Stack, obj);
   return callback(require(5187) /* Background */.BottomSheet, obj);
 };

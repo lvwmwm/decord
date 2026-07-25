@@ -1,10 +1,10 @@
-// Module ID: 15175
-// Function ID: 115520
+// Module ID: 15185
+// Function ID: 115648
 // Name: goBack
-// Dependencies: [31, 27, 8811, 1345, 33, 4130, 689, 3982, 7423, 9571, 15176, 5121, 4660, 1212, 15177, 4126, 15178, 9569, 15180, 5462, 5482, 6707, 5093, 5449, 15184, 15185, 10057, 3977, 1557, 14846, 4662, 3842, 2]
+// Dependencies: [31, 27, 8699, 1345, 33, 4131, 689, 3983, 6504, 9492, 15186, 5121, 4661, 1212, 15187, 4127, 15188, 9490, 15190, 5462, 5482, 5703, 5093, 5449, 15194, 15195, 9986, 3978, 1557, 14857, 4663, 3843, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 15175 (goBack)
+// Module 15185 (goBack)
 import importAllResult from "ManaContext";
 import { View } from "getGuildThemeName";
 import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
@@ -17,7 +17,7 @@ let closure_8;
 let closure_9;
 let require = arg1;
 function goBack() {
-  const navigation = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
+  const navigation = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != navigation) {
     if (navigation.canGoBack()) {
       navigation.goBack();
@@ -134,9 +134,9 @@ let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_11 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
   const tmp = callback3();
-  let obj = importDefault(9571);
+  let obj = importDefault(9492);
   const ref = importAllResult.useRef(null);
-  const tmp4 = importDefault(15176)(ref);
+  const tmp4 = importDefault(15186)(ref);
   const require = tmp4;
   const items = [tmp4];
   const callback = importAllResult.useCallback(() => tmp4(outer1_6.TAKE_ACTION), items);
@@ -154,28 +154,28 @@ let closure_11 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj2.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
     obj2.onPress = goBack;
-    obj2.children = callback(require(15177) /* IconWithBadge */.LeftBackIconWithBadge, {});
-    const items1 = [callback(require(4660) /* PressableBase */.PressableOpacity, obj2), , ];
+    obj2.children = callback(require(15187) /* IconWithBadge */.LeftBackIconWithBadge, {});
+    const items1 = [callback(require(4661) /* PressableBase */.PressableOpacity, obj2), , ];
     const obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.HcoRu0);
-    items1[1] = callback(require(4126) /* Text */.Text, obj3);
+    items1[1] = callback(require(4127) /* Text */.Text, obj3);
     const obj4 = { style: tmp.actionButtons };
     let tmp21 = null;
     if (obj.useConfig({ location: "NativeNotifications" }).enabled) {
       const obj5 = {};
-      const obj6 = { ref, type: require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK, onOpen: callback };
-      const items2 = [callback(importDefault(15178), obj6), ];
+      const obj6 = { ref, type: require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK, onOpen: callback };
+      const items2 = [callback(importDefault(15188), obj6), ];
       const obj7 = {};
-      const tmp27 = importDefault(15178);
-      obj7.type = require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
+      const tmp27 = importDefault(15188);
+      obj7.type = require(9490) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
       obj7.onOpen = callback;
-      items2[1] = callback(importDefault(15178), obj7);
+      items2[1] = callback(importDefault(15188), obj7);
       obj5.children = items2;
       tmp21 = callback2(closure_8, obj5);
-      const tmp30 = importDefault(15178);
+      const tmp30 = importDefault(15188);
     }
-    const items3 = [tmp21, callback(importDefault(15180), {})];
+    const items3 = [tmp21, callback(importDefault(15190), {})];
     obj4.children = items3;
     items1[2] = callback2(View, obj4);
     obj1.children = items1;

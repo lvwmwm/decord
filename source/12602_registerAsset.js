@@ -1,11 +1,11 @@
 // Module ID: 12602
-// Function ID: 97417
+// Function ID: 97500
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12602 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/dark", width: 24, height: 23, scales: [2, 3], hash: "0e23713e9cb6c9f18c86b80cbd5851e5", name: "tier_3_24px", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 18, height: 18, scales: [1, 2, 3], hash: "62d7aa01daae8d1f045686e6148f0a24", name: "ic_add_18px", type: "png" };
 
 export default registerAsset.registerAsset(obj);

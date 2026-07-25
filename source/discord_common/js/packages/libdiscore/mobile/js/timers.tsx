@@ -1,10 +1,10 @@
-// Module ID: 1848
-// Function ID: 20268
+// Module ID: 1849
+// Function ID: 20279
 // Name: setTimeout
-// Dependencies: [1846, 2]
+// Dependencies: [1847, 2]
 // Exports: keepAliveWorkaround, registerTimerPolyfills, setTimersMonitorCallback
 
-// Module 1848 (setTimeout)
+// Module 1849 (setTimeout)
 function setTimeout(arg0, arg1) {
   let num = 0;
   if (null != arg1) {

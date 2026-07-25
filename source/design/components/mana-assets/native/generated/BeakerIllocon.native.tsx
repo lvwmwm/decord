@@ -1,10 +1,10 @@
-// Module ID: 5896
-// Function ID: 49809
+// Module ID: 6816
+// Function ID: 59459
 // Name: BeakerIllocon
-// Dependencies: [33, 5085, 5897, 2]
+// Dependencies: [33, 5085, 6817, 2]
 // Exports: BeakerIllocon
 
-// Module 5896 (BeakerIllocon)
+// Module 6816 (BeakerIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BeakerIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const BeakerIllocon = function BeakerIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5897) };
+  obj = { uri: importDefault(6817) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];

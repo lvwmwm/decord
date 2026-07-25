@@ -1,10 +1,10 @@
-// Module ID: 8692
-// Function ID: 68688
+// Module ID: 8580
+// Function ID: 68163
 // Name: getExtendedInviteType
-// Dependencies: [1194, 1838, 6978, 653, 6977, 4116, 675, 4942, 480, 1361, 2]
+// Dependencies: [1194, 1838, 5969, 653, 5968, 4117, 675, 4943, 480, 1361, 2]
 // Exports: default
 
-// Module 8692 (getExtendedInviteType)
+// Module 8580 (getExtendedInviteType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import InviteSendStates from "InviteSendStates";
@@ -25,7 +25,7 @@ function getExtendedInviteType(target_type) {
   } else if (target_type.target_type === constants.EMBEDDED_APPLICATION) {
     return constants4.APPLICATION;
   } else {
-    const inviteType = require(6977) /* isGroupDMInvite */.getInviteType(target_type);
+    const inviteType = require(5968) /* isGroupDMInvite */.getInviteType(target_type);
     if (constants2.FRIEND === inviteType) {
       return constants4.FRIEND_INVITE;
     } else if (constants2.GROUP_DM === inviteType) {
@@ -36,7 +36,7 @@ function getExtendedInviteType(target_type) {
       const _String = String;
       return String(inviteType);
     }
-    const obj = require(6977) /* isGroupDMInvite */;
+    const obj = require(5968) /* isGroupDMInvite */;
   }
 }
 ({ InviteTargetTypes: closure_5, InviteTypes: closure_6 } = InviteSendStates);
@@ -51,7 +51,7 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
   const _require = inviteKey;
   const importDefault = arg1;
   const dependencyMap = inviteInstanceId;
-  let obj = _require(4116);
+  let obj = _require(4117);
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   const baseCode = result.baseCode;
   ({ targetChannelId, targetMessageId, guildScheduledEventId } = result);
@@ -165,8 +165,8 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
     };
     obj1.trackedActionData = obj2;
     obj1.rejectWithError = false;
-    const value = importDefault(4942).get(obj1);
-    const obj5 = importDefault(4942);
+    const value = importDefault(4943).get(obj1);
+    const obj5 = importDefault(4943);
     const tmp6 = !(null == inviteInstanceId || !inviteInstanceId.withGames);
     const cleanupPromise = value.then((body) => {
       body = body.body;

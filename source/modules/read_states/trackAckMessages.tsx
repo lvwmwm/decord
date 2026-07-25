@@ -1,10 +1,10 @@
-// Module ID: 12900
-// Function ID: 100178
+// Module ID: 12911
+// Function ID: 100305
 // Name: trackAckMessages
-// Dependencies: [1348, 6878, 1838, 4325, 653, 4324, 2]
+// Dependencies: [1348, 5868, 1838, 4326, 653, 4325, 2]
 // Exports: default
 
-// Module 12900 (trackAckMessages)
+// Module 12911 (trackAckMessages)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -29,5 +29,5 @@ export default function trackAckMessages(channel_id, location) {
     const hasUnreadResult = outer1_3.hasUnread(id.id);
     return "" + id.id + "," + hasUnreadResult + "," + mentionCount + "," + outer1_5.isMuted(id.id) + "," + outer1_5.resolveGuildUnreadSetting(id);
   });
-  require(4324) /* _createForOfIteratorHelperLoose */.trackWithMetadata(AnalyticEvents.ACK_MESSAGES, obj);
+  require(4325) /* _createForOfIteratorHelperLoose */.trackWithMetadata(AnalyticEvents.ACK_MESSAGES, obj);
 };

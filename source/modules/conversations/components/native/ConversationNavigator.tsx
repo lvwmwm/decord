@@ -1,10 +1,10 @@
-// Module ID: 9322
-// Function ID: 72753
+// Module ID: 9215
+// Function ID: 72242
 // Name: HeaderWithBorder
-// Dependencies: [31, 33, 3834, 689, 9158, 477, 9149, 5517, 9323, 9324, 1212, 9325, 9333, 9344, 3982, 2]
+// Dependencies: [31, 33, 3835, 689, 9050, 477, 9041, 5517, 9216, 9217, 1212, 9218, 9226, 9237, 3983, 2]
 // Exports: default, openConversationNavigator
 
-// Module 9322 (HeaderWithBorder)
+// Module 9215 (HeaderWithBorder)
 import "result";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -13,11 +13,11 @@ let closure_3;
 let closure_4;
 const require = arg1;
 function HeaderWithBorder(arg0) {
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const token = obj.useToken(importDefault(689).colors.BORDER_SUBTLE);
   obj = {};
   const merged = Object.assign(arg0);
-  const obj2 = require(9158) /* GenericHeaderTitle */;
+  const obj2 = require(9050) /* GenericHeaderTitle */;
   obj["shouldHandleSafeArea"] = require(477) /* set */.isAndroid();
   obj["style"] = { borderColor: token };
   return obj2.renderHeader(obj);
@@ -35,7 +35,7 @@ export default function ConversationNavigator(route) {
   obj = { id: "conversation-navigator", screenOptions: obj.useAccessibilityNativeStackOptions() };
   obj = {
     initialParams: { channelId, guildId: params.guildId },
-    name: channelId(9323).ConversationNavigatorScreens.LIST,
+    name: channelId(9216).ConversationNavigatorScreens.LIST,
     options(navigation) {
       let obj = {
         header(arg0) {
@@ -60,7 +60,7 @@ export default function ConversationNavigator(route) {
   const items = [
     callback(Screen, obj),
     callback(createNativeStackNavigator.Screen, {
-      name: channelId(9323).ConversationNavigatorScreens.FOCUS,
+      name: channelId(9216).ConversationNavigatorScreens.FOCUS,
       options(route) {
         route = route.route;
         const obj = {
@@ -90,7 +90,7 @@ export const openConversationNavigator = function openConversationNavigator(arg0
   let channelId;
   let guildId;
   ({ channelId, guildId } = arg0);
-  let obj = require(3982) /* getRootNavigationRef */;
+  let obj = require(3983) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (tmp) {
     obj = { channelId, guildId };

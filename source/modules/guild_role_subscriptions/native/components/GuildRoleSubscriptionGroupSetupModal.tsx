@@ -1,9 +1,9 @@
-// Module ID: 16514
-// Function ID: 128630
+// Module ID: 16525
+// Function ID: 128798
 // Name: _createGroupFromStore
-// Dependencies: [57, 5, 31, 16471, 14144, 653, 33, 14151, 14166, 3830, 1212, 480, 4324, 16483, 16466, 16484, 2]
+// Dependencies: [57, 5, 31, 16482, 14155, 653, 33, 14162, 14177, 3831, 1212, 480, 4325, 16494, 16477, 16495, 2]
 
-// Module 16514 (_createGroupFromStore)
+// Module 16525 (_createGroupFromStore)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 import result from "result";
@@ -74,8 +74,8 @@ class GuildRoleSubscriptionGroupSetupModal {
           const intl = merged(1212).intl;
           anyErrorMessage = intl.string(merged(1212).t.R0RpRX);
         }
-        merged(3830).presentError(anyErrorMessage);
-        const obj = merged(3830);
+        merged(3831).presentError(anyErrorMessage);
+        const obj = merged(3831);
       }
     }, items);
     memo = c6.useMemo(() => {
@@ -95,7 +95,7 @@ class GuildRoleSubscriptionGroupSetupModal {
     }, []);
     callback = c6.useCallback((arg0) => {
       let closure_0 = arg0;
-      let obj = guildId(4324);
+      let obj = guildId(4325);
       obj = { setup_modal_step: memo.findIndex((arg0) => arg0 === closure_0) + 1 };
       obj.trackWithMetadata(memo.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj);
     }, items1);

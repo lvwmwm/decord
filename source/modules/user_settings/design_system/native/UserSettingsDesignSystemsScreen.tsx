@@ -1,10 +1,10 @@
-// Module ID: 13600
-// Function ID: 104465
+// Module ID: 13611
+// Function ID: 104592
 // Name: SettingsDesignSystemsScreen
-// Dependencies: [31, 7751, 33, 10127, 13601, 2]
+// Dependencies: [31, 7697, 33, 10059, 13612, 2]
 // Exports: default
 
-// Module 13600 (SettingsDesignSystemsScreen)
+// Module 13611 (SettingsDesignSystemsScreen)
 import result from "result";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -27,5 +27,5 @@ export default function SettingsDesignSystemsScreen() {
     sections[3] = { label: "Legacy Audit", settings: items4 };
     return outer1_0(outer1_2[3]).createList({ sections });
   }, []);
-  return jsx(importDefault(13601), { node });
+  return jsx(importDefault(13612), { node });
 };

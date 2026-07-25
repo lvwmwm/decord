@@ -1,9 +1,9 @@
-// Module ID: 16667
-// Function ID: 129914
+// Module ID: 16678
+// Function ID: 130082
 // Name: resolved
-// Dependencies: [4808, 1194, 6651, 3, 1898, 16043, 2]
+// Dependencies: [4809, 1194, 6271, 3, 1899, 16054, 2]
 
-// Module 16667 (resolved)
+// Module 16678 (resolved)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -23,8 +23,8 @@ export default (arg0) => {
       isConnectedResult = _isNativeReflectConstruct.isTryingToConnect();
     }
     if (!isConnectedResult) {
-      const result = importDefault(1898).carefullyOpenDatabase(id.getId());
-      let obj = importDefault(1898);
+      const result = importDefault(1899).carefullyOpenDatabase(id.getId());
+      let obj = importDefault(1899);
     }
     resolved = new Promise((arg0) => {
       outer1_6.log("Executing BackgroundSync with ", callback);

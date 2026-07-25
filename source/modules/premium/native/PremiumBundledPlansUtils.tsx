@@ -1,10 +1,10 @@
-// Module ID: 6648
-// Function ID: 51052
+// Module ID: 6195
+// Function ID: 55559
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 1851, 5622, 3776, 2]
+// Dependencies: [57, 1852, 5622, 3777, 2]
 // Exports: getModifySubscriptionItemsForProduct, getPremiumBundlesWithPredicate, getProductIdFromSubscription, getProductIdsForBothIntervals, productsHaveSamePerks, shouldAlwaysExcludeFromPlanSelect
 
-// Module 6648 (_createForOfIteratorHelperLoose)
+// Module 6195 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import GuildFeatures from "GuildFeatures";
 
@@ -298,7 +298,7 @@ export const getModifySubscriptionItemsForProduct = function getModifySubscripti
   let tmp = getPremiumBundledItemsFromProductId(productId);
   if (null != tmp.premiumTier) {
     if (obj.isBoostOnlySubscription(subscription)) {
-      const itemsWithUpsertedPremiumPlanId = found(3776).getItemsWithUpsertedPremiumPlanId(subscription, tmp.basePlanId);
+      const itemsWithUpsertedPremiumPlanId = found(3777).getItemsWithUpsertedPremiumPlanId(subscription, tmp.basePlanId);
       const reversed = itemsWithUpsertedPremiumPlanId.reverse();
       const additionalPlans = tmp.additionalPlans;
       found = additionalPlans.find((planId) => outer1_3.has(planId.planId));
@@ -318,7 +318,7 @@ export const getModifySubscriptionItemsForProduct = function getModifySubscripti
       }
       return mapped;
     }
-    obj = found(3776);
+    obj = found(3777);
   }
   return getSubscriptionItemsForProduct(productId);
 };

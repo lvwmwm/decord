@@ -1,9 +1,9 @@
-// Module ID: 3919
-// Function ID: 32376
+// Module ID: 3920
+// Function ID: 32387
 // Name: CheckpointFriendsRive
-// Dependencies: [29, 31, 33, 3859, 3920, 3910, 2]
+// Dependencies: [29, 31, 33, 3860, 3921, 3911, 2]
 
-// Module 3919 (CheckpointFriendsRive)
+// Module 3920 (CheckpointFriendsRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -19,8 +19,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    let booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3859) /* useObservedValue */;
+    let booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3860) /* useObservedValue */;
     let twoFriends;
     if (null != dataBinding) {
       twoFriends = dataBinding.twoFriends;
@@ -29,8 +29,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       twoFriends1 = onDataBindingChange.twoFriends;
     }
-    const booleanBinding1 = require(3859) /* useObservedValue */.useBooleanBinding("twoFriends", instance, twoFriends, twoFriends1, playIfNeeded);
-    const obj2 = require(3859) /* useObservedValue */;
+    const booleanBinding1 = require(3860) /* useObservedValue */.useBooleanBinding("twoFriends", instance, twoFriends, twoFriends1, playIfNeeded);
+    const obj2 = require(3860) /* useObservedValue */;
     let AnimationState;
     if (null != dataBinding) {
       AnimationState = dataBinding.AnimationState;
@@ -39,8 +39,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3859) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj3 = require(3859) /* useObservedValue */;
+    const numberBinding = require(3860) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj3 = require(3860) /* useObservedValue */;
     let prop;
     if (null != dataBinding) {
       prop = dataBinding["Avatar01/ShadowVisibility"];
@@ -49,8 +49,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop1 = onDataBindingChange["Avatar01/ShadowVisibility"];
     }
-    const numberBinding1 = require(3859) /* useObservedValue */.useNumberBinding("Avatar01/ShadowVisibility", instance, prop, prop1, playIfNeeded);
-    const obj4 = require(3859) /* useObservedValue */;
+    const numberBinding1 = require(3860) /* useObservedValue */.useNumberBinding("Avatar01/ShadowVisibility", instance, prop, prop1, playIfNeeded);
+    const obj4 = require(3860) /* useObservedValue */;
     let prop2;
     if (null != dataBinding) {
       prop2 = dataBinding["Avatar01/StrokeVisibility"];
@@ -59,8 +59,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop3 = onDataBindingChange["Avatar01/StrokeVisibility"];
     }
-    const numberBinding2 = require(3859) /* useObservedValue */.useNumberBinding("Avatar01/StrokeVisibility", instance, prop2, prop3, playIfNeeded);
-    const obj5 = require(3859) /* useObservedValue */;
+    const numberBinding2 = require(3860) /* useObservedValue */.useNumberBinding("Avatar01/StrokeVisibility", instance, prop2, prop3, playIfNeeded);
+    const obj5 = require(3860) /* useObservedValue */;
     let prop4;
     if (null != dataBinding) {
       prop4 = dataBinding["Avatar01/UsernameVisibility"];
@@ -69,8 +69,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop5 = onDataBindingChange["Avatar01/UsernameVisibility"];
     }
-    const numberBinding3 = require(3859) /* useObservedValue */.useNumberBinding("Avatar01/UsernameVisibility", instance, prop4, prop5, playIfNeeded);
-    const obj6 = require(3859) /* useObservedValue */;
+    const numberBinding3 = require(3860) /* useObservedValue */.useNumberBinding("Avatar01/UsernameVisibility", instance, prop4, prop5, playIfNeeded);
+    const obj6 = require(3860) /* useObservedValue */;
     let prop6;
     if (null != dataBinding) {
       prop6 = dataBinding["Avatar01/Stroke"];
@@ -79,8 +79,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop7 = onDataBindingChange["Avatar01/Stroke"];
     }
-    const colorBinding = require(3859) /* useObservedValue */.useColorBinding("Avatar01/Stroke", instance, prop6, prop7, playIfNeeded);
-    const obj7 = require(3859) /* useObservedValue */;
+    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("Avatar01/Stroke", instance, prop6, prop7, playIfNeeded);
+    const obj7 = require(3860) /* useObservedValue */;
     let prop8;
     if (null != dataBinding) {
       prop8 = dataBinding["Avatar01/Fill"];
@@ -89,8 +89,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop9 = onDataBindingChange["Avatar01/Fill"];
     }
-    const colorBinding1 = require(3859) /* useObservedValue */.useColorBinding("Avatar01/Fill", instance, prop8, prop9, playIfNeeded);
-    const obj8 = require(3859) /* useObservedValue */;
+    const colorBinding1 = require(3860) /* useObservedValue */.useColorBinding("Avatar01/Fill", instance, prop8, prop9, playIfNeeded);
+    const obj8 = require(3860) /* useObservedValue */;
     let prop10;
     if (null != dataBinding) {
       prop10 = dataBinding["Avatar01/Username"];
@@ -99,8 +99,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop11 = onDataBindingChange["Avatar01/Username"];
     }
-    const stringBinding = require(3859) /* useObservedValue */.useStringBinding("Avatar01/Username", instance, prop10, prop11, playIfNeeded);
-    const obj9 = require(3859) /* useObservedValue */;
+    const stringBinding = require(3860) /* useObservedValue */.useStringBinding("Avatar01/Username", instance, prop10, prop11, playIfNeeded);
+    const obj9 = require(3860) /* useObservedValue */;
     let prop12;
     if (null != dataBinding) {
       prop12 = dataBinding["Avatar01/img"];
@@ -109,8 +109,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop13 = onDataBindingChange["Avatar01/img"];
     }
-    const imageBinding = require(3859) /* useObservedValue */.useImageBinding("Avatar01/img", instance, prop12, prop13, playIfNeeded);
-    const obj10 = require(3859) /* useObservedValue */;
+    const imageBinding = require(3860) /* useObservedValue */.useImageBinding("Avatar01/img", instance, prop12, prop13, playIfNeeded);
+    const obj10 = require(3860) /* useObservedValue */;
     let prop14;
     if (null != dataBinding) {
       prop14 = dataBinding["Avatar02/ShadowVisibility"];
@@ -119,8 +119,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop15 = onDataBindingChange["Avatar02/ShadowVisibility"];
     }
-    const numberBinding4 = require(3859) /* useObservedValue */.useNumberBinding("Avatar02/ShadowVisibility", instance, prop14, prop15, playIfNeeded);
-    const obj11 = require(3859) /* useObservedValue */;
+    const numberBinding4 = require(3860) /* useObservedValue */.useNumberBinding("Avatar02/ShadowVisibility", instance, prop14, prop15, playIfNeeded);
+    const obj11 = require(3860) /* useObservedValue */;
     let prop16;
     if (null != dataBinding) {
       prop16 = dataBinding["Avatar02/StrokeVisibility"];
@@ -129,8 +129,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop17 = onDataBindingChange["Avatar02/StrokeVisibility"];
     }
-    const numberBinding5 = require(3859) /* useObservedValue */.useNumberBinding("Avatar02/StrokeVisibility", instance, prop16, prop17, playIfNeeded);
-    const obj12 = require(3859) /* useObservedValue */;
+    const numberBinding5 = require(3860) /* useObservedValue */.useNumberBinding("Avatar02/StrokeVisibility", instance, prop16, prop17, playIfNeeded);
+    const obj12 = require(3860) /* useObservedValue */;
     let prop18;
     if (null != dataBinding) {
       prop18 = dataBinding["Avatar02/UsernameVisibility"];
@@ -139,8 +139,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop19 = onDataBindingChange["Avatar02/UsernameVisibility"];
     }
-    const numberBinding6 = require(3859) /* useObservedValue */.useNumberBinding("Avatar02/UsernameVisibility", instance, prop18, prop19, playIfNeeded);
-    const obj13 = require(3859) /* useObservedValue */;
+    const numberBinding6 = require(3860) /* useObservedValue */.useNumberBinding("Avatar02/UsernameVisibility", instance, prop18, prop19, playIfNeeded);
+    const obj13 = require(3860) /* useObservedValue */;
     let prop20;
     if (null != dataBinding) {
       prop20 = dataBinding["Avatar02/Stroke"];
@@ -149,8 +149,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop21 = onDataBindingChange["Avatar02/Stroke"];
     }
-    const colorBinding2 = require(3859) /* useObservedValue */.useColorBinding("Avatar02/Stroke", instance, prop20, prop21, playIfNeeded);
-    const obj14 = require(3859) /* useObservedValue */;
+    const colorBinding2 = require(3860) /* useObservedValue */.useColorBinding("Avatar02/Stroke", instance, prop20, prop21, playIfNeeded);
+    const obj14 = require(3860) /* useObservedValue */;
     let prop22;
     if (null != dataBinding) {
       prop22 = dataBinding["Avatar02/Fill"];
@@ -159,8 +159,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop23 = onDataBindingChange["Avatar02/Fill"];
     }
-    const colorBinding3 = require(3859) /* useObservedValue */.useColorBinding("Avatar02/Fill", instance, prop22, prop23, playIfNeeded);
-    const obj15 = require(3859) /* useObservedValue */;
+    const colorBinding3 = require(3860) /* useObservedValue */.useColorBinding("Avatar02/Fill", instance, prop22, prop23, playIfNeeded);
+    const obj15 = require(3860) /* useObservedValue */;
     let prop24;
     if (null != dataBinding) {
       prop24 = dataBinding["Avatar02/Username"];
@@ -169,8 +169,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop25 = onDataBindingChange["Avatar02/Username"];
     }
-    const stringBinding1 = require(3859) /* useObservedValue */.useStringBinding("Avatar02/Username", instance, prop24, prop25, playIfNeeded);
-    const obj16 = require(3859) /* useObservedValue */;
+    const stringBinding1 = require(3860) /* useObservedValue */.useStringBinding("Avatar02/Username", instance, prop24, prop25, playIfNeeded);
+    const obj16 = require(3860) /* useObservedValue */;
     let prop26;
     if (null != dataBinding) {
       prop26 = dataBinding["Avatar02/img"];
@@ -179,8 +179,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop27 = onDataBindingChange["Avatar02/img"];
     }
-    const imageBinding1 = require(3859) /* useObservedValue */.useImageBinding("Avatar02/img", instance, prop26, prop27, playIfNeeded);
-    const obj17 = require(3859) /* useObservedValue */;
+    const imageBinding1 = require(3860) /* useObservedValue */.useImageBinding("Avatar02/img", instance, prop26, prop27, playIfNeeded);
+    const obj17 = require(3860) /* useObservedValue */;
     let prop28;
     if (null != dataBinding) {
       prop28 = dataBinding["Avatar03/ShadowVisibility"];
@@ -189,8 +189,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop29 = onDataBindingChange["Avatar03/ShadowVisibility"];
     }
-    const numberBinding7 = require(3859) /* useObservedValue */.useNumberBinding("Avatar03/ShadowVisibility", instance, prop28, prop29, playIfNeeded);
-    const obj18 = require(3859) /* useObservedValue */;
+    const numberBinding7 = require(3860) /* useObservedValue */.useNumberBinding("Avatar03/ShadowVisibility", instance, prop28, prop29, playIfNeeded);
+    const obj18 = require(3860) /* useObservedValue */;
     let prop30;
     if (null != dataBinding) {
       prop30 = dataBinding["Avatar03/StrokeVisibility"];
@@ -199,8 +199,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop31 = onDataBindingChange["Avatar03/StrokeVisibility"];
     }
-    const numberBinding8 = require(3859) /* useObservedValue */.useNumberBinding("Avatar03/StrokeVisibility", instance, prop30, prop31, playIfNeeded);
-    const obj19 = require(3859) /* useObservedValue */;
+    const numberBinding8 = require(3860) /* useObservedValue */.useNumberBinding("Avatar03/StrokeVisibility", instance, prop30, prop31, playIfNeeded);
+    const obj19 = require(3860) /* useObservedValue */;
     let prop32;
     if (null != dataBinding) {
       prop32 = dataBinding["Avatar03/UsernameVisibility"];
@@ -209,8 +209,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop33 = onDataBindingChange["Avatar03/UsernameVisibility"];
     }
-    const numberBinding9 = require(3859) /* useObservedValue */.useNumberBinding("Avatar03/UsernameVisibility", instance, prop32, prop33, playIfNeeded);
-    const obj20 = require(3859) /* useObservedValue */;
+    const numberBinding9 = require(3860) /* useObservedValue */.useNumberBinding("Avatar03/UsernameVisibility", instance, prop32, prop33, playIfNeeded);
+    const obj20 = require(3860) /* useObservedValue */;
     let prop34;
     if (null != dataBinding) {
       prop34 = dataBinding["Avatar03/Stroke"];
@@ -219,8 +219,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop35 = onDataBindingChange["Avatar03/Stroke"];
     }
-    const colorBinding4 = require(3859) /* useObservedValue */.useColorBinding("Avatar03/Stroke", instance, prop34, prop35, playIfNeeded);
-    const obj21 = require(3859) /* useObservedValue */;
+    const colorBinding4 = require(3860) /* useObservedValue */.useColorBinding("Avatar03/Stroke", instance, prop34, prop35, playIfNeeded);
+    const obj21 = require(3860) /* useObservedValue */;
     let prop36;
     if (null != dataBinding) {
       prop36 = dataBinding["Avatar03/Fill"];
@@ -229,8 +229,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop37 = onDataBindingChange["Avatar03/Fill"];
     }
-    const colorBinding5 = require(3859) /* useObservedValue */.useColorBinding("Avatar03/Fill", instance, prop36, prop37, playIfNeeded);
-    const obj22 = require(3859) /* useObservedValue */;
+    const colorBinding5 = require(3860) /* useObservedValue */.useColorBinding("Avatar03/Fill", instance, prop36, prop37, playIfNeeded);
+    const obj22 = require(3860) /* useObservedValue */;
     let prop38;
     if (null != dataBinding) {
       prop38 = dataBinding["Avatar03/Username"];
@@ -239,8 +239,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop39 = onDataBindingChange["Avatar03/Username"];
     }
-    const stringBinding2 = require(3859) /* useObservedValue */.useStringBinding("Avatar03/Username", instance, prop38, prop39, playIfNeeded);
-    const obj23 = require(3859) /* useObservedValue */;
+    const stringBinding2 = require(3860) /* useObservedValue */.useStringBinding("Avatar03/Username", instance, prop38, prop39, playIfNeeded);
+    const obj23 = require(3860) /* useObservedValue */;
     let prop40;
     if (null != dataBinding) {
       prop40 = dataBinding["Avatar03/img"];
@@ -249,8 +249,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop41 = onDataBindingChange["Avatar03/img"];
     }
-    const imageBinding2 = require(3859) /* useObservedValue */.useImageBinding("Avatar03/img", instance, prop40, prop41, playIfNeeded);
-    const obj24 = require(3859) /* useObservedValue */;
+    const imageBinding2 = require(3860) /* useObservedValue */.useImageBinding("Avatar03/img", instance, prop40, prop41, playIfNeeded);
+    const obj24 = require(3860) /* useObservedValue */;
     let prop42;
     if (null != dataBinding) {
       prop42 = dataBinding["Avatar04/ShadowVisibility"];
@@ -259,8 +259,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop43 = onDataBindingChange["Avatar04/ShadowVisibility"];
     }
-    const numberBinding10 = require(3859) /* useObservedValue */.useNumberBinding("Avatar04/ShadowVisibility", instance, prop42, prop43, playIfNeeded);
-    const obj25 = require(3859) /* useObservedValue */;
+    const numberBinding10 = require(3860) /* useObservedValue */.useNumberBinding("Avatar04/ShadowVisibility", instance, prop42, prop43, playIfNeeded);
+    const obj25 = require(3860) /* useObservedValue */;
     let prop44;
     if (null != dataBinding) {
       prop44 = dataBinding["Avatar04/StrokeVisibility"];
@@ -269,8 +269,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop45 = onDataBindingChange["Avatar04/StrokeVisibility"];
     }
-    const numberBinding11 = require(3859) /* useObservedValue */.useNumberBinding("Avatar04/StrokeVisibility", instance, prop44, prop45, playIfNeeded);
-    const obj26 = require(3859) /* useObservedValue */;
+    const numberBinding11 = require(3860) /* useObservedValue */.useNumberBinding("Avatar04/StrokeVisibility", instance, prop44, prop45, playIfNeeded);
+    const obj26 = require(3860) /* useObservedValue */;
     let prop46;
     if (null != dataBinding) {
       prop46 = dataBinding["Avatar04/UsernameVisibility"];
@@ -279,8 +279,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop47 = onDataBindingChange["Avatar04/UsernameVisibility"];
     }
-    const numberBinding12 = require(3859) /* useObservedValue */.useNumberBinding("Avatar04/UsernameVisibility", instance, prop46, prop47, playIfNeeded);
-    const obj27 = require(3859) /* useObservedValue */;
+    const numberBinding12 = require(3860) /* useObservedValue */.useNumberBinding("Avatar04/UsernameVisibility", instance, prop46, prop47, playIfNeeded);
+    const obj27 = require(3860) /* useObservedValue */;
     let prop48;
     if (null != dataBinding) {
       prop48 = dataBinding["Avatar04/Stroke"];
@@ -289,8 +289,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop49 = onDataBindingChange["Avatar04/Stroke"];
     }
-    const colorBinding6 = require(3859) /* useObservedValue */.useColorBinding("Avatar04/Stroke", instance, prop48, prop49, playIfNeeded);
-    const obj28 = require(3859) /* useObservedValue */;
+    const colorBinding6 = require(3860) /* useObservedValue */.useColorBinding("Avatar04/Stroke", instance, prop48, prop49, playIfNeeded);
+    const obj28 = require(3860) /* useObservedValue */;
     let prop50;
     if (null != dataBinding) {
       prop50 = dataBinding["Avatar04/Fill"];
@@ -299,8 +299,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop51 = onDataBindingChange["Avatar04/Fill"];
     }
-    const colorBinding7 = require(3859) /* useObservedValue */.useColorBinding("Avatar04/Fill", instance, prop50, prop51, playIfNeeded);
-    const obj29 = require(3859) /* useObservedValue */;
+    const colorBinding7 = require(3860) /* useObservedValue */.useColorBinding("Avatar04/Fill", instance, prop50, prop51, playIfNeeded);
+    const obj29 = require(3860) /* useObservedValue */;
     let prop52;
     if (null != dataBinding) {
       prop52 = dataBinding["Avatar04/Username"];
@@ -309,8 +309,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop53 = onDataBindingChange["Avatar04/Username"];
     }
-    const stringBinding3 = require(3859) /* useObservedValue */.useStringBinding("Avatar04/Username", instance, prop52, prop53, playIfNeeded);
-    const obj30 = require(3859) /* useObservedValue */;
+    const stringBinding3 = require(3860) /* useObservedValue */.useStringBinding("Avatar04/Username", instance, prop52, prop53, playIfNeeded);
+    const obj30 = require(3860) /* useObservedValue */;
     let prop54;
     if (null != dataBinding) {
       prop54 = dataBinding["Avatar04/img"];
@@ -319,8 +319,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop55 = onDataBindingChange["Avatar04/img"];
     }
-    const imageBinding3 = require(3859) /* useObservedValue */.useImageBinding("Avatar04/img", instance, prop54, prop55, playIfNeeded);
-    const obj31 = require(3859) /* useObservedValue */;
+    const imageBinding3 = require(3860) /* useObservedValue */.useImageBinding("Avatar04/img", instance, prop54, prop55, playIfNeeded);
+    const obj31 = require(3860) /* useObservedValue */;
     let prop56;
     if (null != dataBinding) {
       prop56 = dataBinding["Avatar05/ShadowVisibility"];
@@ -329,8 +329,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop57 = onDataBindingChange["Avatar05/ShadowVisibility"];
     }
-    const numberBinding13 = require(3859) /* useObservedValue */.useNumberBinding("Avatar05/ShadowVisibility", instance, prop56, prop57, playIfNeeded);
-    const obj32 = require(3859) /* useObservedValue */;
+    const numberBinding13 = require(3860) /* useObservedValue */.useNumberBinding("Avatar05/ShadowVisibility", instance, prop56, prop57, playIfNeeded);
+    const obj32 = require(3860) /* useObservedValue */;
     let prop58;
     if (null != dataBinding) {
       prop58 = dataBinding["Avatar05/StrokeVisibility"];
@@ -339,8 +339,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop59 = onDataBindingChange["Avatar05/StrokeVisibility"];
     }
-    const numberBinding14 = require(3859) /* useObservedValue */.useNumberBinding("Avatar05/StrokeVisibility", instance, prop58, prop59, playIfNeeded);
-    const obj33 = require(3859) /* useObservedValue */;
+    const numberBinding14 = require(3860) /* useObservedValue */.useNumberBinding("Avatar05/StrokeVisibility", instance, prop58, prop59, playIfNeeded);
+    const obj33 = require(3860) /* useObservedValue */;
     let prop60;
     if (null != dataBinding) {
       prop60 = dataBinding["Avatar05/UsernameVisibility"];
@@ -349,8 +349,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop61 = onDataBindingChange["Avatar05/UsernameVisibility"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useNumberBinding("Avatar05/UsernameVisibility", instance, prop60, prop61, playIfNeeded);
-    const obj34 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useNumberBinding("Avatar05/UsernameVisibility", instance, prop60, prop61, playIfNeeded);
+    const obj34 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/Stroke"];
@@ -359,8 +359,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/Stroke"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useColorBinding("Avatar05/Stroke", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj35 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useColorBinding("Avatar05/Stroke", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj35 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/Fill"];
@@ -369,8 +369,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/Fill"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useColorBinding("Avatar05/Fill", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj36 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useColorBinding("Avatar05/Fill", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj36 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/Username"];
@@ -379,8 +379,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/Username"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useStringBinding("Avatar05/Username", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj37 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useStringBinding("Avatar05/Username", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj37 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/img"];
@@ -389,8 +389,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/img"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useImageBinding("Avatar05/img", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj38 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useImageBinding("Avatar05/img", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj38 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding.ConnectorColor;
@@ -399,7 +399,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange.ConnectorColor;
     }
-    booleanBinding = require(3859) /* useObservedValue */.useColorBinding("ConnectorColor", instance, booleanBinding, booleanBinding, playIfNeeded);
+    booleanBinding = require(3860) /* useObservedValue */.useColorBinding("ConnectorColor", instance, booleanBinding, booleanBinding, playIfNeeded);
     return null;
   },
   Sidekick: function SidekickBindings(reducedMotionEnabled) {
@@ -408,8 +408,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    let booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3859) /* useObservedValue */;
+    let booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3860) /* useObservedValue */;
     let twoFriends;
     if (null != dataBinding) {
       twoFriends = dataBinding.twoFriends;
@@ -418,8 +418,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       twoFriends1 = onDataBindingChange.twoFriends;
     }
-    const booleanBinding1 = require(3859) /* useObservedValue */.useBooleanBinding("twoFriends", instance, twoFriends, twoFriends1, playIfNeeded);
-    const obj2 = require(3859) /* useObservedValue */;
+    const booleanBinding1 = require(3860) /* useObservedValue */.useBooleanBinding("twoFriends", instance, twoFriends, twoFriends1, playIfNeeded);
+    const obj2 = require(3860) /* useObservedValue */;
     let AnimationState;
     if (null != dataBinding) {
       AnimationState = dataBinding.AnimationState;
@@ -428,8 +428,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3859) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj3 = require(3859) /* useObservedValue */;
+    const numberBinding = require(3860) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj3 = require(3860) /* useObservedValue */;
     let prop;
     if (null != dataBinding) {
       prop = dataBinding["Avatar01/ShadowVisibility"];
@@ -438,8 +438,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop1 = onDataBindingChange["Avatar01/ShadowVisibility"];
     }
-    const numberBinding1 = require(3859) /* useObservedValue */.useNumberBinding("Avatar01/ShadowVisibility", instance, prop, prop1, playIfNeeded);
-    const obj4 = require(3859) /* useObservedValue */;
+    const numberBinding1 = require(3860) /* useObservedValue */.useNumberBinding("Avatar01/ShadowVisibility", instance, prop, prop1, playIfNeeded);
+    const obj4 = require(3860) /* useObservedValue */;
     let prop2;
     if (null != dataBinding) {
       prop2 = dataBinding["Avatar01/StrokeVisibility"];
@@ -448,8 +448,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop3 = onDataBindingChange["Avatar01/StrokeVisibility"];
     }
-    const numberBinding2 = require(3859) /* useObservedValue */.useNumberBinding("Avatar01/StrokeVisibility", instance, prop2, prop3, playIfNeeded);
-    const obj5 = require(3859) /* useObservedValue */;
+    const numberBinding2 = require(3860) /* useObservedValue */.useNumberBinding("Avatar01/StrokeVisibility", instance, prop2, prop3, playIfNeeded);
+    const obj5 = require(3860) /* useObservedValue */;
     let prop4;
     if (null != dataBinding) {
       prop4 = dataBinding["Avatar01/UsernameVisibility"];
@@ -458,8 +458,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop5 = onDataBindingChange["Avatar01/UsernameVisibility"];
     }
-    const numberBinding3 = require(3859) /* useObservedValue */.useNumberBinding("Avatar01/UsernameVisibility", instance, prop4, prop5, playIfNeeded);
-    const obj6 = require(3859) /* useObservedValue */;
+    const numberBinding3 = require(3860) /* useObservedValue */.useNumberBinding("Avatar01/UsernameVisibility", instance, prop4, prop5, playIfNeeded);
+    const obj6 = require(3860) /* useObservedValue */;
     let prop6;
     if (null != dataBinding) {
       prop6 = dataBinding["Avatar01/Stroke"];
@@ -468,8 +468,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop7 = onDataBindingChange["Avatar01/Stroke"];
     }
-    const colorBinding = require(3859) /* useObservedValue */.useColorBinding("Avatar01/Stroke", instance, prop6, prop7, playIfNeeded);
-    const obj7 = require(3859) /* useObservedValue */;
+    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("Avatar01/Stroke", instance, prop6, prop7, playIfNeeded);
+    const obj7 = require(3860) /* useObservedValue */;
     let prop8;
     if (null != dataBinding) {
       prop8 = dataBinding["Avatar01/Fill"];
@@ -478,8 +478,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop9 = onDataBindingChange["Avatar01/Fill"];
     }
-    const colorBinding1 = require(3859) /* useObservedValue */.useColorBinding("Avatar01/Fill", instance, prop8, prop9, playIfNeeded);
-    const obj8 = require(3859) /* useObservedValue */;
+    const colorBinding1 = require(3860) /* useObservedValue */.useColorBinding("Avatar01/Fill", instance, prop8, prop9, playIfNeeded);
+    const obj8 = require(3860) /* useObservedValue */;
     let prop10;
     if (null != dataBinding) {
       prop10 = dataBinding["Avatar01/Username"];
@@ -488,8 +488,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop11 = onDataBindingChange["Avatar01/Username"];
     }
-    const stringBinding = require(3859) /* useObservedValue */.useStringBinding("Avatar01/Username", instance, prop10, prop11, playIfNeeded);
-    const obj9 = require(3859) /* useObservedValue */;
+    const stringBinding = require(3860) /* useObservedValue */.useStringBinding("Avatar01/Username", instance, prop10, prop11, playIfNeeded);
+    const obj9 = require(3860) /* useObservedValue */;
     let prop12;
     if (null != dataBinding) {
       prop12 = dataBinding["Avatar01/img"];
@@ -498,8 +498,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop13 = onDataBindingChange["Avatar01/img"];
     }
-    const imageBinding = require(3859) /* useObservedValue */.useImageBinding("Avatar01/img", instance, prop12, prop13, playIfNeeded);
-    const obj10 = require(3859) /* useObservedValue */;
+    const imageBinding = require(3860) /* useObservedValue */.useImageBinding("Avatar01/img", instance, prop12, prop13, playIfNeeded);
+    const obj10 = require(3860) /* useObservedValue */;
     let prop14;
     if (null != dataBinding) {
       prop14 = dataBinding["Avatar02/ShadowVisibility"];
@@ -508,8 +508,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop15 = onDataBindingChange["Avatar02/ShadowVisibility"];
     }
-    const numberBinding4 = require(3859) /* useObservedValue */.useNumberBinding("Avatar02/ShadowVisibility", instance, prop14, prop15, playIfNeeded);
-    const obj11 = require(3859) /* useObservedValue */;
+    const numberBinding4 = require(3860) /* useObservedValue */.useNumberBinding("Avatar02/ShadowVisibility", instance, prop14, prop15, playIfNeeded);
+    const obj11 = require(3860) /* useObservedValue */;
     let prop16;
     if (null != dataBinding) {
       prop16 = dataBinding["Avatar02/StrokeVisibility"];
@@ -518,8 +518,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop17 = onDataBindingChange["Avatar02/StrokeVisibility"];
     }
-    const numberBinding5 = require(3859) /* useObservedValue */.useNumberBinding("Avatar02/StrokeVisibility", instance, prop16, prop17, playIfNeeded);
-    const obj12 = require(3859) /* useObservedValue */;
+    const numberBinding5 = require(3860) /* useObservedValue */.useNumberBinding("Avatar02/StrokeVisibility", instance, prop16, prop17, playIfNeeded);
+    const obj12 = require(3860) /* useObservedValue */;
     let prop18;
     if (null != dataBinding) {
       prop18 = dataBinding["Avatar02/UsernameVisibility"];
@@ -528,8 +528,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop19 = onDataBindingChange["Avatar02/UsernameVisibility"];
     }
-    const numberBinding6 = require(3859) /* useObservedValue */.useNumberBinding("Avatar02/UsernameVisibility", instance, prop18, prop19, playIfNeeded);
-    const obj13 = require(3859) /* useObservedValue */;
+    const numberBinding6 = require(3860) /* useObservedValue */.useNumberBinding("Avatar02/UsernameVisibility", instance, prop18, prop19, playIfNeeded);
+    const obj13 = require(3860) /* useObservedValue */;
     let prop20;
     if (null != dataBinding) {
       prop20 = dataBinding["Avatar02/Stroke"];
@@ -538,8 +538,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop21 = onDataBindingChange["Avatar02/Stroke"];
     }
-    const colorBinding2 = require(3859) /* useObservedValue */.useColorBinding("Avatar02/Stroke", instance, prop20, prop21, playIfNeeded);
-    const obj14 = require(3859) /* useObservedValue */;
+    const colorBinding2 = require(3860) /* useObservedValue */.useColorBinding("Avatar02/Stroke", instance, prop20, prop21, playIfNeeded);
+    const obj14 = require(3860) /* useObservedValue */;
     let prop22;
     if (null != dataBinding) {
       prop22 = dataBinding["Avatar02/Fill"];
@@ -548,8 +548,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop23 = onDataBindingChange["Avatar02/Fill"];
     }
-    const colorBinding3 = require(3859) /* useObservedValue */.useColorBinding("Avatar02/Fill", instance, prop22, prop23, playIfNeeded);
-    const obj15 = require(3859) /* useObservedValue */;
+    const colorBinding3 = require(3860) /* useObservedValue */.useColorBinding("Avatar02/Fill", instance, prop22, prop23, playIfNeeded);
+    const obj15 = require(3860) /* useObservedValue */;
     let prop24;
     if (null != dataBinding) {
       prop24 = dataBinding["Avatar02/Username"];
@@ -558,8 +558,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop25 = onDataBindingChange["Avatar02/Username"];
     }
-    const stringBinding1 = require(3859) /* useObservedValue */.useStringBinding("Avatar02/Username", instance, prop24, prop25, playIfNeeded);
-    const obj16 = require(3859) /* useObservedValue */;
+    const stringBinding1 = require(3860) /* useObservedValue */.useStringBinding("Avatar02/Username", instance, prop24, prop25, playIfNeeded);
+    const obj16 = require(3860) /* useObservedValue */;
     let prop26;
     if (null != dataBinding) {
       prop26 = dataBinding["Avatar02/img"];
@@ -568,8 +568,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop27 = onDataBindingChange["Avatar02/img"];
     }
-    const imageBinding1 = require(3859) /* useObservedValue */.useImageBinding("Avatar02/img", instance, prop26, prop27, playIfNeeded);
-    const obj17 = require(3859) /* useObservedValue */;
+    const imageBinding1 = require(3860) /* useObservedValue */.useImageBinding("Avatar02/img", instance, prop26, prop27, playIfNeeded);
+    const obj17 = require(3860) /* useObservedValue */;
     let prop28;
     if (null != dataBinding) {
       prop28 = dataBinding["Avatar03/ShadowVisibility"];
@@ -578,8 +578,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop29 = onDataBindingChange["Avatar03/ShadowVisibility"];
     }
-    const numberBinding7 = require(3859) /* useObservedValue */.useNumberBinding("Avatar03/ShadowVisibility", instance, prop28, prop29, playIfNeeded);
-    const obj18 = require(3859) /* useObservedValue */;
+    const numberBinding7 = require(3860) /* useObservedValue */.useNumberBinding("Avatar03/ShadowVisibility", instance, prop28, prop29, playIfNeeded);
+    const obj18 = require(3860) /* useObservedValue */;
     let prop30;
     if (null != dataBinding) {
       prop30 = dataBinding["Avatar03/StrokeVisibility"];
@@ -588,8 +588,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop31 = onDataBindingChange["Avatar03/StrokeVisibility"];
     }
-    const numberBinding8 = require(3859) /* useObservedValue */.useNumberBinding("Avatar03/StrokeVisibility", instance, prop30, prop31, playIfNeeded);
-    const obj19 = require(3859) /* useObservedValue */;
+    const numberBinding8 = require(3860) /* useObservedValue */.useNumberBinding("Avatar03/StrokeVisibility", instance, prop30, prop31, playIfNeeded);
+    const obj19 = require(3860) /* useObservedValue */;
     let prop32;
     if (null != dataBinding) {
       prop32 = dataBinding["Avatar03/UsernameVisibility"];
@@ -598,8 +598,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop33 = onDataBindingChange["Avatar03/UsernameVisibility"];
     }
-    const numberBinding9 = require(3859) /* useObservedValue */.useNumberBinding("Avatar03/UsernameVisibility", instance, prop32, prop33, playIfNeeded);
-    const obj20 = require(3859) /* useObservedValue */;
+    const numberBinding9 = require(3860) /* useObservedValue */.useNumberBinding("Avatar03/UsernameVisibility", instance, prop32, prop33, playIfNeeded);
+    const obj20 = require(3860) /* useObservedValue */;
     let prop34;
     if (null != dataBinding) {
       prop34 = dataBinding["Avatar03/Stroke"];
@@ -608,8 +608,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop35 = onDataBindingChange["Avatar03/Stroke"];
     }
-    const colorBinding4 = require(3859) /* useObservedValue */.useColorBinding("Avatar03/Stroke", instance, prop34, prop35, playIfNeeded);
-    const obj21 = require(3859) /* useObservedValue */;
+    const colorBinding4 = require(3860) /* useObservedValue */.useColorBinding("Avatar03/Stroke", instance, prop34, prop35, playIfNeeded);
+    const obj21 = require(3860) /* useObservedValue */;
     let prop36;
     if (null != dataBinding) {
       prop36 = dataBinding["Avatar03/Fill"];
@@ -618,8 +618,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop37 = onDataBindingChange["Avatar03/Fill"];
     }
-    const colorBinding5 = require(3859) /* useObservedValue */.useColorBinding("Avatar03/Fill", instance, prop36, prop37, playIfNeeded);
-    const obj22 = require(3859) /* useObservedValue */;
+    const colorBinding5 = require(3860) /* useObservedValue */.useColorBinding("Avatar03/Fill", instance, prop36, prop37, playIfNeeded);
+    const obj22 = require(3860) /* useObservedValue */;
     let prop38;
     if (null != dataBinding) {
       prop38 = dataBinding["Avatar03/Username"];
@@ -628,8 +628,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop39 = onDataBindingChange["Avatar03/Username"];
     }
-    const stringBinding2 = require(3859) /* useObservedValue */.useStringBinding("Avatar03/Username", instance, prop38, prop39, playIfNeeded);
-    const obj23 = require(3859) /* useObservedValue */;
+    const stringBinding2 = require(3860) /* useObservedValue */.useStringBinding("Avatar03/Username", instance, prop38, prop39, playIfNeeded);
+    const obj23 = require(3860) /* useObservedValue */;
     let prop40;
     if (null != dataBinding) {
       prop40 = dataBinding["Avatar03/img"];
@@ -638,8 +638,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop41 = onDataBindingChange["Avatar03/img"];
     }
-    const imageBinding2 = require(3859) /* useObservedValue */.useImageBinding("Avatar03/img", instance, prop40, prop41, playIfNeeded);
-    const obj24 = require(3859) /* useObservedValue */;
+    const imageBinding2 = require(3860) /* useObservedValue */.useImageBinding("Avatar03/img", instance, prop40, prop41, playIfNeeded);
+    const obj24 = require(3860) /* useObservedValue */;
     let prop42;
     if (null != dataBinding) {
       prop42 = dataBinding["Avatar04/ShadowVisibility"];
@@ -648,8 +648,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop43 = onDataBindingChange["Avatar04/ShadowVisibility"];
     }
-    const numberBinding10 = require(3859) /* useObservedValue */.useNumberBinding("Avatar04/ShadowVisibility", instance, prop42, prop43, playIfNeeded);
-    const obj25 = require(3859) /* useObservedValue */;
+    const numberBinding10 = require(3860) /* useObservedValue */.useNumberBinding("Avatar04/ShadowVisibility", instance, prop42, prop43, playIfNeeded);
+    const obj25 = require(3860) /* useObservedValue */;
     let prop44;
     if (null != dataBinding) {
       prop44 = dataBinding["Avatar04/StrokeVisibility"];
@@ -658,8 +658,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop45 = onDataBindingChange["Avatar04/StrokeVisibility"];
     }
-    const numberBinding11 = require(3859) /* useObservedValue */.useNumberBinding("Avatar04/StrokeVisibility", instance, prop44, prop45, playIfNeeded);
-    const obj26 = require(3859) /* useObservedValue */;
+    const numberBinding11 = require(3860) /* useObservedValue */.useNumberBinding("Avatar04/StrokeVisibility", instance, prop44, prop45, playIfNeeded);
+    const obj26 = require(3860) /* useObservedValue */;
     let prop46;
     if (null != dataBinding) {
       prop46 = dataBinding["Avatar04/UsernameVisibility"];
@@ -668,8 +668,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop47 = onDataBindingChange["Avatar04/UsernameVisibility"];
     }
-    const numberBinding12 = require(3859) /* useObservedValue */.useNumberBinding("Avatar04/UsernameVisibility", instance, prop46, prop47, playIfNeeded);
-    const obj27 = require(3859) /* useObservedValue */;
+    const numberBinding12 = require(3860) /* useObservedValue */.useNumberBinding("Avatar04/UsernameVisibility", instance, prop46, prop47, playIfNeeded);
+    const obj27 = require(3860) /* useObservedValue */;
     let prop48;
     if (null != dataBinding) {
       prop48 = dataBinding["Avatar04/Stroke"];
@@ -678,8 +678,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop49 = onDataBindingChange["Avatar04/Stroke"];
     }
-    const colorBinding6 = require(3859) /* useObservedValue */.useColorBinding("Avatar04/Stroke", instance, prop48, prop49, playIfNeeded);
-    const obj28 = require(3859) /* useObservedValue */;
+    const colorBinding6 = require(3860) /* useObservedValue */.useColorBinding("Avatar04/Stroke", instance, prop48, prop49, playIfNeeded);
+    const obj28 = require(3860) /* useObservedValue */;
     let prop50;
     if (null != dataBinding) {
       prop50 = dataBinding["Avatar04/Fill"];
@@ -688,8 +688,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop51 = onDataBindingChange["Avatar04/Fill"];
     }
-    const colorBinding7 = require(3859) /* useObservedValue */.useColorBinding("Avatar04/Fill", instance, prop50, prop51, playIfNeeded);
-    const obj29 = require(3859) /* useObservedValue */;
+    const colorBinding7 = require(3860) /* useObservedValue */.useColorBinding("Avatar04/Fill", instance, prop50, prop51, playIfNeeded);
+    const obj29 = require(3860) /* useObservedValue */;
     let prop52;
     if (null != dataBinding) {
       prop52 = dataBinding["Avatar04/Username"];
@@ -698,8 +698,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop53 = onDataBindingChange["Avatar04/Username"];
     }
-    const stringBinding3 = require(3859) /* useObservedValue */.useStringBinding("Avatar04/Username", instance, prop52, prop53, playIfNeeded);
-    const obj30 = require(3859) /* useObservedValue */;
+    const stringBinding3 = require(3860) /* useObservedValue */.useStringBinding("Avatar04/Username", instance, prop52, prop53, playIfNeeded);
+    const obj30 = require(3860) /* useObservedValue */;
     let prop54;
     if (null != dataBinding) {
       prop54 = dataBinding["Avatar04/img"];
@@ -708,8 +708,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop55 = onDataBindingChange["Avatar04/img"];
     }
-    const imageBinding3 = require(3859) /* useObservedValue */.useImageBinding("Avatar04/img", instance, prop54, prop55, playIfNeeded);
-    const obj31 = require(3859) /* useObservedValue */;
+    const imageBinding3 = require(3860) /* useObservedValue */.useImageBinding("Avatar04/img", instance, prop54, prop55, playIfNeeded);
+    const obj31 = require(3860) /* useObservedValue */;
     let prop56;
     if (null != dataBinding) {
       prop56 = dataBinding["Avatar05/ShadowVisibility"];
@@ -718,8 +718,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop57 = onDataBindingChange["Avatar05/ShadowVisibility"];
     }
-    const numberBinding13 = require(3859) /* useObservedValue */.useNumberBinding("Avatar05/ShadowVisibility", instance, prop56, prop57, playIfNeeded);
-    const obj32 = require(3859) /* useObservedValue */;
+    const numberBinding13 = require(3860) /* useObservedValue */.useNumberBinding("Avatar05/ShadowVisibility", instance, prop56, prop57, playIfNeeded);
+    const obj32 = require(3860) /* useObservedValue */;
     let prop58;
     if (null != dataBinding) {
       prop58 = dataBinding["Avatar05/StrokeVisibility"];
@@ -728,8 +728,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop59 = onDataBindingChange["Avatar05/StrokeVisibility"];
     }
-    const numberBinding14 = require(3859) /* useObservedValue */.useNumberBinding("Avatar05/StrokeVisibility", instance, prop58, prop59, playIfNeeded);
-    const obj33 = require(3859) /* useObservedValue */;
+    const numberBinding14 = require(3860) /* useObservedValue */.useNumberBinding("Avatar05/StrokeVisibility", instance, prop58, prop59, playIfNeeded);
+    const obj33 = require(3860) /* useObservedValue */;
     let prop60;
     if (null != dataBinding) {
       prop60 = dataBinding["Avatar05/UsernameVisibility"];
@@ -738,8 +738,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop61 = onDataBindingChange["Avatar05/UsernameVisibility"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useNumberBinding("Avatar05/UsernameVisibility", instance, prop60, prop61, playIfNeeded);
-    const obj34 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useNumberBinding("Avatar05/UsernameVisibility", instance, prop60, prop61, playIfNeeded);
+    const obj34 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/Stroke"];
@@ -748,8 +748,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/Stroke"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useColorBinding("Avatar05/Stroke", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj35 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useColorBinding("Avatar05/Stroke", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj35 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/Fill"];
@@ -758,8 +758,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/Fill"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useColorBinding("Avatar05/Fill", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj36 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useColorBinding("Avatar05/Fill", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj36 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/Username"];
@@ -768,8 +768,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/Username"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useStringBinding("Avatar05/Username", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj37 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useStringBinding("Avatar05/Username", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj37 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/img"];
@@ -778,8 +778,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/img"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useImageBinding("Avatar05/img", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj38 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useImageBinding("Avatar05/img", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj38 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding.ConnectorColor;
@@ -788,7 +788,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange.ConnectorColor;
     }
-    booleanBinding = require(3859) /* useObservedValue */.useColorBinding("ConnectorColor", instance, booleanBinding, booleanBinding, playIfNeeded);
+    booleanBinding = require(3860) /* useObservedValue */.useColorBinding("ConnectorColor", instance, booleanBinding, booleanBinding, playIfNeeded);
     return null;
   },
   Avatar: function AvatarBindings(arg0) {
@@ -805,8 +805,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       ShadowVisibility1 = onDataBindingChange.ShadowVisibility;
     }
-    const numberBinding = require(3859) /* useObservedValue */.useNumberBinding("ShadowVisibility", instance, ShadowVisibility, ShadowVisibility1, playIfNeeded);
-    const obj = require(3859) /* useObservedValue */;
+    const numberBinding = require(3860) /* useObservedValue */.useNumberBinding("ShadowVisibility", instance, ShadowVisibility, ShadowVisibility1, playIfNeeded);
+    const obj = require(3860) /* useObservedValue */;
     let StrokeVisibility;
     if (null != dataBinding) {
       StrokeVisibility = dataBinding.StrokeVisibility;
@@ -815,8 +815,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       StrokeVisibility1 = onDataBindingChange.StrokeVisibility;
     }
-    const numberBinding1 = require(3859) /* useObservedValue */.useNumberBinding("StrokeVisibility", instance, StrokeVisibility, StrokeVisibility1, playIfNeeded);
-    const obj2 = require(3859) /* useObservedValue */;
+    const numberBinding1 = require(3860) /* useObservedValue */.useNumberBinding("StrokeVisibility", instance, StrokeVisibility, StrokeVisibility1, playIfNeeded);
+    const obj2 = require(3860) /* useObservedValue */;
     let UsernameVisibility;
     if (null != dataBinding) {
       UsernameVisibility = dataBinding.UsernameVisibility;
@@ -825,8 +825,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       UsernameVisibility1 = onDataBindingChange.UsernameVisibility;
     }
-    const numberBinding2 = require(3859) /* useObservedValue */.useNumberBinding("UsernameVisibility", instance, UsernameVisibility, UsernameVisibility1, playIfNeeded);
-    const obj3 = require(3859) /* useObservedValue */;
+    const numberBinding2 = require(3860) /* useObservedValue */.useNumberBinding("UsernameVisibility", instance, UsernameVisibility, UsernameVisibility1, playIfNeeded);
+    const obj3 = require(3860) /* useObservedValue */;
     let Stroke;
     if (null != dataBinding) {
       Stroke = dataBinding.Stroke;
@@ -835,8 +835,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Stroke1 = onDataBindingChange.Stroke;
     }
-    const colorBinding = require(3859) /* useObservedValue */.useColorBinding("Stroke", instance, Stroke, Stroke1, playIfNeeded);
-    const obj4 = require(3859) /* useObservedValue */;
+    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("Stroke", instance, Stroke, Stroke1, playIfNeeded);
+    const obj4 = require(3860) /* useObservedValue */;
     let Fill;
     if (null != dataBinding) {
       Fill = dataBinding.Fill;
@@ -845,8 +845,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Fill1 = onDataBindingChange.Fill;
     }
-    const colorBinding1 = require(3859) /* useObservedValue */.useColorBinding("Fill", instance, Fill, Fill1, playIfNeeded);
-    const obj5 = require(3859) /* useObservedValue */;
+    const colorBinding1 = require(3860) /* useObservedValue */.useColorBinding("Fill", instance, Fill, Fill1, playIfNeeded);
+    const obj5 = require(3860) /* useObservedValue */;
     let Username;
     if (null != dataBinding) {
       Username = dataBinding.Username;
@@ -855,8 +855,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Username1 = onDataBindingChange.Username;
     }
-    const stringBinding = require(3859) /* useObservedValue */.useStringBinding("Username", instance, Username, Username1, playIfNeeded);
-    const obj6 = require(3859) /* useObservedValue */;
+    const stringBinding = require(3860) /* useObservedValue */.useStringBinding("Username", instance, Username, Username1, playIfNeeded);
+    const obj6 = require(3860) /* useObservedValue */;
     let img;
     if (null != dataBinding) {
       img = dataBinding.img;
@@ -865,7 +865,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       img1 = onDataBindingChange.img;
     }
-    const imageBinding = require(3859) /* useObservedValue */.useImageBinding("img", instance, img, img1, playIfNeeded);
+    const imageBinding = require(3860) /* useObservedValue */.useImageBinding("img", instance, img, img1, playIfNeeded);
     return null;
   },
   Username: function UsernameBindings(arg0) {
@@ -882,8 +882,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       ShadowVisibility1 = onDataBindingChange.ShadowVisibility;
     }
-    const numberBinding = require(3859) /* useObservedValue */.useNumberBinding("ShadowVisibility", instance, ShadowVisibility, ShadowVisibility1, playIfNeeded);
-    const obj = require(3859) /* useObservedValue */;
+    const numberBinding = require(3860) /* useObservedValue */.useNumberBinding("ShadowVisibility", instance, ShadowVisibility, ShadowVisibility1, playIfNeeded);
+    const obj = require(3860) /* useObservedValue */;
     let StrokeVisibility;
     if (null != dataBinding) {
       StrokeVisibility = dataBinding.StrokeVisibility;
@@ -892,8 +892,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       StrokeVisibility1 = onDataBindingChange.StrokeVisibility;
     }
-    const numberBinding1 = require(3859) /* useObservedValue */.useNumberBinding("StrokeVisibility", instance, StrokeVisibility, StrokeVisibility1, playIfNeeded);
-    const obj2 = require(3859) /* useObservedValue */;
+    const numberBinding1 = require(3860) /* useObservedValue */.useNumberBinding("StrokeVisibility", instance, StrokeVisibility, StrokeVisibility1, playIfNeeded);
+    const obj2 = require(3860) /* useObservedValue */;
     let UsernameVisibility;
     if (null != dataBinding) {
       UsernameVisibility = dataBinding.UsernameVisibility;
@@ -902,8 +902,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       UsernameVisibility1 = onDataBindingChange.UsernameVisibility;
     }
-    const numberBinding2 = require(3859) /* useObservedValue */.useNumberBinding("UsernameVisibility", instance, UsernameVisibility, UsernameVisibility1, playIfNeeded);
-    const obj3 = require(3859) /* useObservedValue */;
+    const numberBinding2 = require(3860) /* useObservedValue */.useNumberBinding("UsernameVisibility", instance, UsernameVisibility, UsernameVisibility1, playIfNeeded);
+    const obj3 = require(3860) /* useObservedValue */;
     let Stroke;
     if (null != dataBinding) {
       Stroke = dataBinding.Stroke;
@@ -912,8 +912,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Stroke1 = onDataBindingChange.Stroke;
     }
-    const colorBinding = require(3859) /* useObservedValue */.useColorBinding("Stroke", instance, Stroke, Stroke1, playIfNeeded);
-    const obj4 = require(3859) /* useObservedValue */;
+    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("Stroke", instance, Stroke, Stroke1, playIfNeeded);
+    const obj4 = require(3860) /* useObservedValue */;
     let Fill;
     if (null != dataBinding) {
       Fill = dataBinding.Fill;
@@ -922,8 +922,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Fill1 = onDataBindingChange.Fill;
     }
-    const colorBinding1 = require(3859) /* useObservedValue */.useColorBinding("Fill", instance, Fill, Fill1, playIfNeeded);
-    const obj5 = require(3859) /* useObservedValue */;
+    const colorBinding1 = require(3860) /* useObservedValue */.useColorBinding("Fill", instance, Fill, Fill1, playIfNeeded);
+    const obj5 = require(3860) /* useObservedValue */;
     let Username;
     if (null != dataBinding) {
       Username = dataBinding.Username;
@@ -932,8 +932,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Username1 = onDataBindingChange.Username;
     }
-    const stringBinding = require(3859) /* useObservedValue */.useStringBinding("Username", instance, Username, Username1, playIfNeeded);
-    const obj6 = require(3859) /* useObservedValue */;
+    const stringBinding = require(3860) /* useObservedValue */.useStringBinding("Username", instance, Username, Username1, playIfNeeded);
+    const obj6 = require(3860) /* useObservedValue */;
     let img;
     if (null != dataBinding) {
       img = dataBinding.img;
@@ -942,7 +942,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       img1 = onDataBindingChange.img;
     }
-    const imageBinding = require(3859) /* useObservedValue */.useImageBinding("img", instance, img, img1, playIfNeeded);
+    const imageBinding = require(3860) /* useObservedValue */.useImageBinding("img", instance, img, img1, playIfNeeded);
     return null;
   },
   "Friends 01 Rotation": function Friends01RotationBindings(reducedMotionEnabled) {
@@ -951,8 +951,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    let booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3859) /* useObservedValue */;
+    let booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3860) /* useObservedValue */;
     let twoFriends;
     if (null != dataBinding) {
       twoFriends = dataBinding.twoFriends;
@@ -961,8 +961,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       twoFriends1 = onDataBindingChange.twoFriends;
     }
-    const booleanBinding1 = require(3859) /* useObservedValue */.useBooleanBinding("twoFriends", instance, twoFriends, twoFriends1, playIfNeeded);
-    const obj2 = require(3859) /* useObservedValue */;
+    const booleanBinding1 = require(3860) /* useObservedValue */.useBooleanBinding("twoFriends", instance, twoFriends, twoFriends1, playIfNeeded);
+    const obj2 = require(3860) /* useObservedValue */;
     let AnimationState;
     if (null != dataBinding) {
       AnimationState = dataBinding.AnimationState;
@@ -971,8 +971,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3859) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj3 = require(3859) /* useObservedValue */;
+    const numberBinding = require(3860) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj3 = require(3860) /* useObservedValue */;
     let prop;
     if (null != dataBinding) {
       prop = dataBinding["Avatar01/ShadowVisibility"];
@@ -981,8 +981,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop1 = onDataBindingChange["Avatar01/ShadowVisibility"];
     }
-    const numberBinding1 = require(3859) /* useObservedValue */.useNumberBinding("Avatar01/ShadowVisibility", instance, prop, prop1, playIfNeeded);
-    const obj4 = require(3859) /* useObservedValue */;
+    const numberBinding1 = require(3860) /* useObservedValue */.useNumberBinding("Avatar01/ShadowVisibility", instance, prop, prop1, playIfNeeded);
+    const obj4 = require(3860) /* useObservedValue */;
     let prop2;
     if (null != dataBinding) {
       prop2 = dataBinding["Avatar01/StrokeVisibility"];
@@ -991,8 +991,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop3 = onDataBindingChange["Avatar01/StrokeVisibility"];
     }
-    const numberBinding2 = require(3859) /* useObservedValue */.useNumberBinding("Avatar01/StrokeVisibility", instance, prop2, prop3, playIfNeeded);
-    const obj5 = require(3859) /* useObservedValue */;
+    const numberBinding2 = require(3860) /* useObservedValue */.useNumberBinding("Avatar01/StrokeVisibility", instance, prop2, prop3, playIfNeeded);
+    const obj5 = require(3860) /* useObservedValue */;
     let prop4;
     if (null != dataBinding) {
       prop4 = dataBinding["Avatar01/UsernameVisibility"];
@@ -1001,8 +1001,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop5 = onDataBindingChange["Avatar01/UsernameVisibility"];
     }
-    const numberBinding3 = require(3859) /* useObservedValue */.useNumberBinding("Avatar01/UsernameVisibility", instance, prop4, prop5, playIfNeeded);
-    const obj6 = require(3859) /* useObservedValue */;
+    const numberBinding3 = require(3860) /* useObservedValue */.useNumberBinding("Avatar01/UsernameVisibility", instance, prop4, prop5, playIfNeeded);
+    const obj6 = require(3860) /* useObservedValue */;
     let prop6;
     if (null != dataBinding) {
       prop6 = dataBinding["Avatar01/Stroke"];
@@ -1011,8 +1011,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop7 = onDataBindingChange["Avatar01/Stroke"];
     }
-    const colorBinding = require(3859) /* useObservedValue */.useColorBinding("Avatar01/Stroke", instance, prop6, prop7, playIfNeeded);
-    const obj7 = require(3859) /* useObservedValue */;
+    const colorBinding = require(3860) /* useObservedValue */.useColorBinding("Avatar01/Stroke", instance, prop6, prop7, playIfNeeded);
+    const obj7 = require(3860) /* useObservedValue */;
     let prop8;
     if (null != dataBinding) {
       prop8 = dataBinding["Avatar01/Fill"];
@@ -1021,8 +1021,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop9 = onDataBindingChange["Avatar01/Fill"];
     }
-    const colorBinding1 = require(3859) /* useObservedValue */.useColorBinding("Avatar01/Fill", instance, prop8, prop9, playIfNeeded);
-    const obj8 = require(3859) /* useObservedValue */;
+    const colorBinding1 = require(3860) /* useObservedValue */.useColorBinding("Avatar01/Fill", instance, prop8, prop9, playIfNeeded);
+    const obj8 = require(3860) /* useObservedValue */;
     let prop10;
     if (null != dataBinding) {
       prop10 = dataBinding["Avatar01/Username"];
@@ -1031,8 +1031,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop11 = onDataBindingChange["Avatar01/Username"];
     }
-    const stringBinding = require(3859) /* useObservedValue */.useStringBinding("Avatar01/Username", instance, prop10, prop11, playIfNeeded);
-    const obj9 = require(3859) /* useObservedValue */;
+    const stringBinding = require(3860) /* useObservedValue */.useStringBinding("Avatar01/Username", instance, prop10, prop11, playIfNeeded);
+    const obj9 = require(3860) /* useObservedValue */;
     let prop12;
     if (null != dataBinding) {
       prop12 = dataBinding["Avatar01/img"];
@@ -1041,8 +1041,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop13 = onDataBindingChange["Avatar01/img"];
     }
-    const imageBinding = require(3859) /* useObservedValue */.useImageBinding("Avatar01/img", instance, prop12, prop13, playIfNeeded);
-    const obj10 = require(3859) /* useObservedValue */;
+    const imageBinding = require(3860) /* useObservedValue */.useImageBinding("Avatar01/img", instance, prop12, prop13, playIfNeeded);
+    const obj10 = require(3860) /* useObservedValue */;
     let prop14;
     if (null != dataBinding) {
       prop14 = dataBinding["Avatar02/ShadowVisibility"];
@@ -1051,8 +1051,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop15 = onDataBindingChange["Avatar02/ShadowVisibility"];
     }
-    const numberBinding4 = require(3859) /* useObservedValue */.useNumberBinding("Avatar02/ShadowVisibility", instance, prop14, prop15, playIfNeeded);
-    const obj11 = require(3859) /* useObservedValue */;
+    const numberBinding4 = require(3860) /* useObservedValue */.useNumberBinding("Avatar02/ShadowVisibility", instance, prop14, prop15, playIfNeeded);
+    const obj11 = require(3860) /* useObservedValue */;
     let prop16;
     if (null != dataBinding) {
       prop16 = dataBinding["Avatar02/StrokeVisibility"];
@@ -1061,8 +1061,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop17 = onDataBindingChange["Avatar02/StrokeVisibility"];
     }
-    const numberBinding5 = require(3859) /* useObservedValue */.useNumberBinding("Avatar02/StrokeVisibility", instance, prop16, prop17, playIfNeeded);
-    const obj12 = require(3859) /* useObservedValue */;
+    const numberBinding5 = require(3860) /* useObservedValue */.useNumberBinding("Avatar02/StrokeVisibility", instance, prop16, prop17, playIfNeeded);
+    const obj12 = require(3860) /* useObservedValue */;
     let prop18;
     if (null != dataBinding) {
       prop18 = dataBinding["Avatar02/UsernameVisibility"];
@@ -1071,8 +1071,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop19 = onDataBindingChange["Avatar02/UsernameVisibility"];
     }
-    const numberBinding6 = require(3859) /* useObservedValue */.useNumberBinding("Avatar02/UsernameVisibility", instance, prop18, prop19, playIfNeeded);
-    const obj13 = require(3859) /* useObservedValue */;
+    const numberBinding6 = require(3860) /* useObservedValue */.useNumberBinding("Avatar02/UsernameVisibility", instance, prop18, prop19, playIfNeeded);
+    const obj13 = require(3860) /* useObservedValue */;
     let prop20;
     if (null != dataBinding) {
       prop20 = dataBinding["Avatar02/Stroke"];
@@ -1081,8 +1081,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop21 = onDataBindingChange["Avatar02/Stroke"];
     }
-    const colorBinding2 = require(3859) /* useObservedValue */.useColorBinding("Avatar02/Stroke", instance, prop20, prop21, playIfNeeded);
-    const obj14 = require(3859) /* useObservedValue */;
+    const colorBinding2 = require(3860) /* useObservedValue */.useColorBinding("Avatar02/Stroke", instance, prop20, prop21, playIfNeeded);
+    const obj14 = require(3860) /* useObservedValue */;
     let prop22;
     if (null != dataBinding) {
       prop22 = dataBinding["Avatar02/Fill"];
@@ -1091,8 +1091,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop23 = onDataBindingChange["Avatar02/Fill"];
     }
-    const colorBinding3 = require(3859) /* useObservedValue */.useColorBinding("Avatar02/Fill", instance, prop22, prop23, playIfNeeded);
-    const obj15 = require(3859) /* useObservedValue */;
+    const colorBinding3 = require(3860) /* useObservedValue */.useColorBinding("Avatar02/Fill", instance, prop22, prop23, playIfNeeded);
+    const obj15 = require(3860) /* useObservedValue */;
     let prop24;
     if (null != dataBinding) {
       prop24 = dataBinding["Avatar02/Username"];
@@ -1101,8 +1101,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop25 = onDataBindingChange["Avatar02/Username"];
     }
-    const stringBinding1 = require(3859) /* useObservedValue */.useStringBinding("Avatar02/Username", instance, prop24, prop25, playIfNeeded);
-    const obj16 = require(3859) /* useObservedValue */;
+    const stringBinding1 = require(3860) /* useObservedValue */.useStringBinding("Avatar02/Username", instance, prop24, prop25, playIfNeeded);
+    const obj16 = require(3860) /* useObservedValue */;
     let prop26;
     if (null != dataBinding) {
       prop26 = dataBinding["Avatar02/img"];
@@ -1111,8 +1111,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop27 = onDataBindingChange["Avatar02/img"];
     }
-    const imageBinding1 = require(3859) /* useObservedValue */.useImageBinding("Avatar02/img", instance, prop26, prop27, playIfNeeded);
-    const obj17 = require(3859) /* useObservedValue */;
+    const imageBinding1 = require(3860) /* useObservedValue */.useImageBinding("Avatar02/img", instance, prop26, prop27, playIfNeeded);
+    const obj17 = require(3860) /* useObservedValue */;
     let prop28;
     if (null != dataBinding) {
       prop28 = dataBinding["Avatar03/ShadowVisibility"];
@@ -1121,8 +1121,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop29 = onDataBindingChange["Avatar03/ShadowVisibility"];
     }
-    const numberBinding7 = require(3859) /* useObservedValue */.useNumberBinding("Avatar03/ShadowVisibility", instance, prop28, prop29, playIfNeeded);
-    const obj18 = require(3859) /* useObservedValue */;
+    const numberBinding7 = require(3860) /* useObservedValue */.useNumberBinding("Avatar03/ShadowVisibility", instance, prop28, prop29, playIfNeeded);
+    const obj18 = require(3860) /* useObservedValue */;
     let prop30;
     if (null != dataBinding) {
       prop30 = dataBinding["Avatar03/StrokeVisibility"];
@@ -1131,8 +1131,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop31 = onDataBindingChange["Avatar03/StrokeVisibility"];
     }
-    const numberBinding8 = require(3859) /* useObservedValue */.useNumberBinding("Avatar03/StrokeVisibility", instance, prop30, prop31, playIfNeeded);
-    const obj19 = require(3859) /* useObservedValue */;
+    const numberBinding8 = require(3860) /* useObservedValue */.useNumberBinding("Avatar03/StrokeVisibility", instance, prop30, prop31, playIfNeeded);
+    const obj19 = require(3860) /* useObservedValue */;
     let prop32;
     if (null != dataBinding) {
       prop32 = dataBinding["Avatar03/UsernameVisibility"];
@@ -1141,8 +1141,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop33 = onDataBindingChange["Avatar03/UsernameVisibility"];
     }
-    const numberBinding9 = require(3859) /* useObservedValue */.useNumberBinding("Avatar03/UsernameVisibility", instance, prop32, prop33, playIfNeeded);
-    const obj20 = require(3859) /* useObservedValue */;
+    const numberBinding9 = require(3860) /* useObservedValue */.useNumberBinding("Avatar03/UsernameVisibility", instance, prop32, prop33, playIfNeeded);
+    const obj20 = require(3860) /* useObservedValue */;
     let prop34;
     if (null != dataBinding) {
       prop34 = dataBinding["Avatar03/Stroke"];
@@ -1151,8 +1151,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop35 = onDataBindingChange["Avatar03/Stroke"];
     }
-    const colorBinding4 = require(3859) /* useObservedValue */.useColorBinding("Avatar03/Stroke", instance, prop34, prop35, playIfNeeded);
-    const obj21 = require(3859) /* useObservedValue */;
+    const colorBinding4 = require(3860) /* useObservedValue */.useColorBinding("Avatar03/Stroke", instance, prop34, prop35, playIfNeeded);
+    const obj21 = require(3860) /* useObservedValue */;
     let prop36;
     if (null != dataBinding) {
       prop36 = dataBinding["Avatar03/Fill"];
@@ -1161,8 +1161,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop37 = onDataBindingChange["Avatar03/Fill"];
     }
-    const colorBinding5 = require(3859) /* useObservedValue */.useColorBinding("Avatar03/Fill", instance, prop36, prop37, playIfNeeded);
-    const obj22 = require(3859) /* useObservedValue */;
+    const colorBinding5 = require(3860) /* useObservedValue */.useColorBinding("Avatar03/Fill", instance, prop36, prop37, playIfNeeded);
+    const obj22 = require(3860) /* useObservedValue */;
     let prop38;
     if (null != dataBinding) {
       prop38 = dataBinding["Avatar03/Username"];
@@ -1171,8 +1171,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop39 = onDataBindingChange["Avatar03/Username"];
     }
-    const stringBinding2 = require(3859) /* useObservedValue */.useStringBinding("Avatar03/Username", instance, prop38, prop39, playIfNeeded);
-    const obj23 = require(3859) /* useObservedValue */;
+    const stringBinding2 = require(3860) /* useObservedValue */.useStringBinding("Avatar03/Username", instance, prop38, prop39, playIfNeeded);
+    const obj23 = require(3860) /* useObservedValue */;
     let prop40;
     if (null != dataBinding) {
       prop40 = dataBinding["Avatar03/img"];
@@ -1181,8 +1181,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop41 = onDataBindingChange["Avatar03/img"];
     }
-    const imageBinding2 = require(3859) /* useObservedValue */.useImageBinding("Avatar03/img", instance, prop40, prop41, playIfNeeded);
-    const obj24 = require(3859) /* useObservedValue */;
+    const imageBinding2 = require(3860) /* useObservedValue */.useImageBinding("Avatar03/img", instance, prop40, prop41, playIfNeeded);
+    const obj24 = require(3860) /* useObservedValue */;
     let prop42;
     if (null != dataBinding) {
       prop42 = dataBinding["Avatar04/ShadowVisibility"];
@@ -1191,8 +1191,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop43 = onDataBindingChange["Avatar04/ShadowVisibility"];
     }
-    const numberBinding10 = require(3859) /* useObservedValue */.useNumberBinding("Avatar04/ShadowVisibility", instance, prop42, prop43, playIfNeeded);
-    const obj25 = require(3859) /* useObservedValue */;
+    const numberBinding10 = require(3860) /* useObservedValue */.useNumberBinding("Avatar04/ShadowVisibility", instance, prop42, prop43, playIfNeeded);
+    const obj25 = require(3860) /* useObservedValue */;
     let prop44;
     if (null != dataBinding) {
       prop44 = dataBinding["Avatar04/StrokeVisibility"];
@@ -1201,8 +1201,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop45 = onDataBindingChange["Avatar04/StrokeVisibility"];
     }
-    const numberBinding11 = require(3859) /* useObservedValue */.useNumberBinding("Avatar04/StrokeVisibility", instance, prop44, prop45, playIfNeeded);
-    const obj26 = require(3859) /* useObservedValue */;
+    const numberBinding11 = require(3860) /* useObservedValue */.useNumberBinding("Avatar04/StrokeVisibility", instance, prop44, prop45, playIfNeeded);
+    const obj26 = require(3860) /* useObservedValue */;
     let prop46;
     if (null != dataBinding) {
       prop46 = dataBinding["Avatar04/UsernameVisibility"];
@@ -1211,8 +1211,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop47 = onDataBindingChange["Avatar04/UsernameVisibility"];
     }
-    const numberBinding12 = require(3859) /* useObservedValue */.useNumberBinding("Avatar04/UsernameVisibility", instance, prop46, prop47, playIfNeeded);
-    const obj27 = require(3859) /* useObservedValue */;
+    const numberBinding12 = require(3860) /* useObservedValue */.useNumberBinding("Avatar04/UsernameVisibility", instance, prop46, prop47, playIfNeeded);
+    const obj27 = require(3860) /* useObservedValue */;
     let prop48;
     if (null != dataBinding) {
       prop48 = dataBinding["Avatar04/Stroke"];
@@ -1221,8 +1221,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop49 = onDataBindingChange["Avatar04/Stroke"];
     }
-    const colorBinding6 = require(3859) /* useObservedValue */.useColorBinding("Avatar04/Stroke", instance, prop48, prop49, playIfNeeded);
-    const obj28 = require(3859) /* useObservedValue */;
+    const colorBinding6 = require(3860) /* useObservedValue */.useColorBinding("Avatar04/Stroke", instance, prop48, prop49, playIfNeeded);
+    const obj28 = require(3860) /* useObservedValue */;
     let prop50;
     if (null != dataBinding) {
       prop50 = dataBinding["Avatar04/Fill"];
@@ -1231,8 +1231,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop51 = onDataBindingChange["Avatar04/Fill"];
     }
-    const colorBinding7 = require(3859) /* useObservedValue */.useColorBinding("Avatar04/Fill", instance, prop50, prop51, playIfNeeded);
-    const obj29 = require(3859) /* useObservedValue */;
+    const colorBinding7 = require(3860) /* useObservedValue */.useColorBinding("Avatar04/Fill", instance, prop50, prop51, playIfNeeded);
+    const obj29 = require(3860) /* useObservedValue */;
     let prop52;
     if (null != dataBinding) {
       prop52 = dataBinding["Avatar04/Username"];
@@ -1241,8 +1241,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop53 = onDataBindingChange["Avatar04/Username"];
     }
-    const stringBinding3 = require(3859) /* useObservedValue */.useStringBinding("Avatar04/Username", instance, prop52, prop53, playIfNeeded);
-    const obj30 = require(3859) /* useObservedValue */;
+    const stringBinding3 = require(3860) /* useObservedValue */.useStringBinding("Avatar04/Username", instance, prop52, prop53, playIfNeeded);
+    const obj30 = require(3860) /* useObservedValue */;
     let prop54;
     if (null != dataBinding) {
       prop54 = dataBinding["Avatar04/img"];
@@ -1251,8 +1251,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop55 = onDataBindingChange["Avatar04/img"];
     }
-    const imageBinding3 = require(3859) /* useObservedValue */.useImageBinding("Avatar04/img", instance, prop54, prop55, playIfNeeded);
-    const obj31 = require(3859) /* useObservedValue */;
+    const imageBinding3 = require(3860) /* useObservedValue */.useImageBinding("Avatar04/img", instance, prop54, prop55, playIfNeeded);
+    const obj31 = require(3860) /* useObservedValue */;
     let prop56;
     if (null != dataBinding) {
       prop56 = dataBinding["Avatar05/ShadowVisibility"];
@@ -1261,8 +1261,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop57 = onDataBindingChange["Avatar05/ShadowVisibility"];
     }
-    const numberBinding13 = require(3859) /* useObservedValue */.useNumberBinding("Avatar05/ShadowVisibility", instance, prop56, prop57, playIfNeeded);
-    const obj32 = require(3859) /* useObservedValue */;
+    const numberBinding13 = require(3860) /* useObservedValue */.useNumberBinding("Avatar05/ShadowVisibility", instance, prop56, prop57, playIfNeeded);
+    const obj32 = require(3860) /* useObservedValue */;
     let prop58;
     if (null != dataBinding) {
       prop58 = dataBinding["Avatar05/StrokeVisibility"];
@@ -1271,8 +1271,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop59 = onDataBindingChange["Avatar05/StrokeVisibility"];
     }
-    const numberBinding14 = require(3859) /* useObservedValue */.useNumberBinding("Avatar05/StrokeVisibility", instance, prop58, prop59, playIfNeeded);
-    const obj33 = require(3859) /* useObservedValue */;
+    const numberBinding14 = require(3860) /* useObservedValue */.useNumberBinding("Avatar05/StrokeVisibility", instance, prop58, prop59, playIfNeeded);
+    const obj33 = require(3860) /* useObservedValue */;
     let prop60;
     if (null != dataBinding) {
       prop60 = dataBinding["Avatar05/UsernameVisibility"];
@@ -1281,8 +1281,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       prop61 = onDataBindingChange["Avatar05/UsernameVisibility"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useNumberBinding("Avatar05/UsernameVisibility", instance, prop60, prop61, playIfNeeded);
-    const obj34 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useNumberBinding("Avatar05/UsernameVisibility", instance, prop60, prop61, playIfNeeded);
+    const obj34 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/Stroke"];
@@ -1291,8 +1291,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/Stroke"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useColorBinding("Avatar05/Stroke", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj35 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useColorBinding("Avatar05/Stroke", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj35 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/Fill"];
@@ -1301,8 +1301,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/Fill"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useColorBinding("Avatar05/Fill", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj36 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useColorBinding("Avatar05/Fill", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj36 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/Username"];
@@ -1311,8 +1311,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/Username"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useStringBinding("Avatar05/Username", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj37 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useStringBinding("Avatar05/Username", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj37 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding["Avatar05/img"];
@@ -1321,8 +1321,8 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange["Avatar05/img"];
     }
-    booleanBinding = require(3859) /* useObservedValue */.useImageBinding("Avatar05/img", instance, booleanBinding, booleanBinding, playIfNeeded);
-    const obj38 = require(3859) /* useObservedValue */;
+    booleanBinding = require(3860) /* useObservedValue */.useImageBinding("Avatar05/img", instance, booleanBinding, booleanBinding, playIfNeeded);
+    const obj38 = require(3860) /* useObservedValue */;
     booleanBinding = undefined;
     if (null != dataBinding) {
       booleanBinding = dataBinding.ConnectorColor;
@@ -1331,7 +1331,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       booleanBinding = onDataBindingChange.ConnectorColor;
     }
-    booleanBinding = require(3859) /* useObservedValue */.useColorBinding("ConnectorColor", instance, booleanBinding, booleanBinding, playIfNeeded);
+    booleanBinding = require(3860) /* useObservedValue */.useColorBinding("ConnectorColor", instance, booleanBinding, booleanBinding, playIfNeeded);
     return null;
   }
 };
@@ -1371,7 +1371,7 @@ const forwardRefResult = importAllResult.forwardRef(function CheckpointFriendsRi
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3910) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  return jsx(require(3911) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointFriendsRive.tsx");
 

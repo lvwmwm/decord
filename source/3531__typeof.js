@@ -1,7 +1,7 @@
 // Module ID: 3531
-// Function ID: 27280
+// Function ID: 27271
 // Name: _typeof
-// Dependencies: [3517, 3518, 3515]
+// Dependencies: [3518, 3519, 3516]
 
 // Module 3531 (_typeof)
 function _typeof(arg0) {
@@ -78,19 +78,19 @@ function _createSuper(arg0) {
   })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = outer1_7(closure_0);
+    const obj = outer1_9(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_9(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      outer1_6(self);
+      outer1_8(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== outer1_2(constructResult)) {
+      if ("object" !== outer1_4(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -132,11 +132,13 @@ function _defineProperty(arg0, arg1, value) {
   }
   return arg0;
 }
+let closure_2 = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+let closure_3 = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-export const DayOfYearParser = ((Parser) => {
-  class DayOfYearParser {
+export const DateParser = ((Parser) => {
+  class DateParser {
     constructor() {
-      if (this instanceof DayOfYearParser) {
+      if (this instanceof DateParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -148,25 +150,25 @@ export const DayOfYearParser = ((Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = outer1_8;
-        tmp12 = outer1_6;
+        tmp11 = outer1_10;
+        tmp12 = outer1_8;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = outer1_6(applyResult);
+        tmp16 = outer1_8(applyResult);
         str2 = "priority";
         num2 = 90;
-        tmp17 = outer1_8(applyResult, "priority", 90);
-        tmp18 = outer1_6(applyResult);
-        str3 = "subpriority";
+        tmp17 = outer1_10(applyResult, "priority", 90);
+        tmp18 = outer1_8(applyResult);
+        str3 = "subPriority";
         num3 = 1;
-        tmp19 = outer1_8(applyResult, "subpriority", 1);
-        tmp20 = outer1_6(applyResult);
+        tmp19 = outer1_10(applyResult, "subPriority", 1);
+        tmp20 = outer1_8(applyResult);
         str4 = "incompatibleTokens";
-        tmp21 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "M", "L", "w", "I", "d", "E", "i", "e", "c", "t", "T"]);
+        tmp21 = outer1_10(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "w", "I", "D", "i", "e", "c", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -181,9 +183,9 @@ export const DayOfYearParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class DayOfYearParser {
+    class DateParser {
       constructor() {
-        if (this instanceof DayOfYearParser) {
+        if (this instanceof DateParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -195,25 +197,25 @@ export const DayOfYearParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_8;
-          tmp12 = outer1_6;
+          tmp11 = outer1_10;
+          tmp12 = outer1_8;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_6(applyResult);
+          tmp16 = outer1_8(applyResult);
           str2 = "priority";
           num2 = 90;
-          tmp17 = outer1_8(applyResult, "priority", 90);
-          tmp18 = outer1_6(applyResult);
-          str3 = "subpriority";
+          tmp17 = outer1_10(applyResult, "priority", 90);
+          tmp18 = outer1_8(applyResult);
+          str3 = "subPriority";
           num3 = 1;
-          tmp19 = outer1_8(applyResult, "subpriority", 1);
-          tmp20 = outer1_6(applyResult);
+          tmp19 = outer1_10(applyResult, "subPriority", 1);
+          tmp20 = outer1_8(applyResult);
           str4 = "incompatibleTokens";
-          tmp21 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "M", "L", "w", "I", "d", "E", "i", "e", "c", "t", "T"]);
+          tmp21 = outer1_10(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "w", "I", "D", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -232,12 +234,12 @@ export const DayOfYearParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: DayOfYearParser, writable: true, configurable: true };
-  DayOfYearParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: DateParser, writable: true, configurable: true };
+  DateParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class DayOfYearParser {
+    class DateParser {
       constructor() {
-        if (this instanceof DayOfYearParser) {
+        if (this instanceof DateParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -249,25 +251,25 @@ export const DayOfYearParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_8;
-          tmp12 = outer1_6;
+          tmp11 = outer1_10;
+          tmp12 = outer1_8;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_6(applyResult);
+          tmp16 = outer1_8(applyResult);
           str2 = "priority";
           num2 = 90;
-          tmp17 = outer1_8(applyResult, "priority", 90);
-          tmp18 = outer1_6(applyResult);
-          str3 = "subpriority";
+          tmp17 = outer1_10(applyResult, "priority", 90);
+          tmp18 = outer1_8(applyResult);
+          str3 = "subPriority";
           num3 = 1;
-          tmp19 = outer1_8(applyResult, "subpriority", 1);
-          tmp20 = outer1_6(applyResult);
+          tmp19 = outer1_10(applyResult, "subPriority", 1);
+          tmp20 = outer1_8(applyResult);
           str4 = "incompatibleTokens";
-          tmp21 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "M", "L", "w", "I", "d", "E", "i", "e", "c", "t", "T"]);
+          tmp21 = outer1_10(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "w", "I", "D", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -281,23 +283,20 @@ export const DayOfYearParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(DayOfYearParser, Parser);
+    _setPrototypeOf(DateParser, Parser);
   }
-  let closure_0 = _createSuper(DayOfYearParser);
+  let closure_0 = _createSuper(DateParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
-      if ("D" !== arg1) {
-        if ("DD" !== arg1) {
-          if ("Do" === arg1) {
-            const obj = { unit: "date" };
-            return ordinalNumber.ordinalNumber(arg0, obj);
-          } else {
-            return callback(DayOfYearParser[0]).parseNDigits(arg1.length, arg0);
-          }
-        }
+      if ("d" === arg1) {
+        return callback(DateParser[0]).parseNumericPattern(callback(DateParser[1]).numericPatterns.date, arg0);
+      } else if ("do" === arg1) {
+        const obj = { unit: "date" };
+        return ordinalNumber.ordinalNumber(arg0, obj);
+      } else {
+        return callback(DateParser[0]).parseNDigits(arg1.length, arg0);
       }
-      return callback(DayOfYearParser[0]).parseNumericPattern(callback(DayOfYearParser[1]).numericPatterns.dayOfYear, arg0);
     }
   };
   let items = [obj, , ];
@@ -305,30 +304,31 @@ export const DayOfYearParser = ((Parser) => {
     key: "validate",
     value: function validate(getUTCFullYear) {
       const uTCFullYear = getUTCFullYear.getUTCFullYear();
-      let tmp2 = arg1 >= 1;
-      if (callback(DayOfYearParser[0]).isLeapYearIndex(uTCFullYear)) {
-        if (tmp2) {
-          tmp2 = arg1 <= 366;
+      const uTCMonth = getUTCFullYear.getUTCMonth();
+      let tmp4 = arg1 >= 1;
+      if (isLeapYearIndexResult) {
+        if (tmp4) {
+          tmp4 = arg1 <= outer1_3[uTCMonth];
         }
-        let tmp3 = tmp2;
+        let tmp5 = tmp4;
       } else {
-        tmp3 = tmp2;
-        if (tmp2) {
-          tmp3 = arg1 <= 365;
+        tmp5 = tmp4;
+        if (tmp4) {
+          tmp5 = arg1 <= outer1_2[uTCMonth];
         }
       }
-      return tmp3;
+      return tmp5;
     }
   };
   items[1] = obj;
   items[2] = {
     key: "set",
-    value: function set(setUTCMonth) {
-      setUTCMonth.setUTCMonth(0, arg2);
-      setUTCMonth.setUTCHours(0, 0, 0, 0);
-      return setUTCMonth;
+    value: function set(setUTCDate) {
+      setUTCDate.setUTCDate(arg2);
+      setUTCDate.setUTCHours(0, 0, 0, 0);
+      return setUTCDate;
     }
   };
-  _defineProperties(DayOfYearParser.prototype, items);
-  return DayOfYearParser;
+  _defineProperties(DateParser.prototype, items);
+  return DateParser;
 })(require("_defineProperties").Parser);

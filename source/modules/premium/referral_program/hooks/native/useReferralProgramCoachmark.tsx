@@ -1,10 +1,10 @@
-// Module ID: 15522
-// Function ID: 119467
+// Module ID: 15532
+// Function ID: 119595
 // Name: ReferralProgramCoachmarkImg
-// Dependencies: [57, 31, 27, 653, 1345, 33, 4130, 5085, 15523, 3946, 1334, 7831, 5802, 1212, 15520, 689, 5796, 2]
+// Dependencies: [57, 31, 27, 653, 1345, 33, 4131, 5085, 15533, 3947, 1334, 7778, 8379, 1212, 15530, 689, 6554, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 15522 (ReferralProgramCoachmarkImg)
+// Module 15532 (ReferralProgramCoachmarkImg)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -17,9 +17,9 @@ const require = arg1;
 function ReferralProgramCoachmarkImg() {
   const tmp = callback2();
   let obj = { style: tmp.coachmarkImageContainer };
-  obj = { source: importDefault(15523), style: tmp.coachmarkImage };
-  obj.children = jsx(importDefault(5085), { source: importDefault(15523), style: tmp.coachmarkImage });
-  return <View source={importDefault(15523)} style={tmp.coachmarkImage} />;
+  obj = { source: importDefault(15533), style: tmp.coachmarkImage };
+  obj.children = jsx(importDefault(5085), { source: importDefault(15533), style: tmp.coachmarkImage });
+  return <View source={importDefault(15533)} style={tmp.coachmarkImage} />;
 }
 let closure_9 = _createForOfIteratorHelperLoose.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 200, height: 112 } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/referral_program/hooks/native/useReferralProgramCoachmark.tsx");
@@ -28,13 +28,13 @@ export const useReferralProgramCoachmark = function useReferralProgramCoachmark(
   disabled = disabled.disabled;
   let _require;
   let c1;
-  let obj = _require(3946);
+  let obj = _require(3947);
   let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1334).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK);
   if (!result) {
     result = disabled;
   }
-  const isEligibleSenderForReferralProgram = _require(7831).useIsEligibleSenderForReferralProgram(result);
-  _require(5802);
+  const isEligibleSenderForReferralProgram = _require(7778).useIsEligibleSenderForReferralProgram(result);
+  _require(8379);
   if (isEligibleSenderForReferralProgram) {
     if (!disabled) {
       let items = [_require(1334).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];

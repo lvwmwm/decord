@@ -1,10 +1,10 @@
-// Module ID: 4148
-// Function ID: 34944
+// Module ID: 4149
+// Function ID: 34955
 // Name: ParticipantTypes
 // Dependencies: [2]
 // Exports: isActivityParticipant, isStreamParticipant, isUserParticipant
 
-// Module 4148 (ParticipantTypes)
+// Module 4149 (ParticipantTypes)
 let obj = { STREAM: 0, [0]: "STREAM", HIDDEN_STREAM: 1, [1]: "HIDDEN_STREAM", USER: 2, [2]: "USER", ACTIVITY: 3, [3]: "ACTIVITY" };
 obj = { VIDEO: 0, [0]: "VIDEO", CAMERA_PREVIEW: 1, [1]: "CAMERA_PREVIEW", HAVEN: 2, [2]: "HAVEN" };
 const result = require("set").fileFinishedImporting("modules/calls/CallConstants.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8785
-// Function ID: 69376
+// Module ID: 8673
+// Function ID: 68853
 // Name: BundleProductPreview
-// Dependencies: [57, 31, 27, 655, 33, 4130, 689, 1876, 8277, 8786, 8251, 1212, 8788, 8404, 8797, 8799, 2]
+// Dependencies: [57, 31, 27, 655, 33, 4131, 689, 1877, 8012, 8674, 7984, 1212, 8676, 8162, 8685, 8687, 2]
 // Exports: default
 
-// Module 8785 (BundleProductPreview)
+// Module 8673 (BundleProductPreview)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -26,10 +26,10 @@ function BundleProductPreview(onActiveItemTypeChange) {
   let product;
   let width;
   ({ product, width, handlePreviewPress, onTrackPress, onActiveItemChange } = onActiveItemTypeChange);
-  let obj = require(8277) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(8012) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment("ProductDetailsActionSheetPreview").enabled) {
     obj = { product, width, handlePreviewPress, onTrackPress, onActiveItemChange };
-    let tmp2Result = tmp2(importDefault(8786), obj);
+    let tmp2Result = tmp2(importDefault(8674), obj);
   } else {
     obj = { style: tmp.previewDivider };
     const obj1 = { product, width, handlePreviewPress, onTrackPress, onActiveItemChange, onActiveItemTypeChange: onActiveItemTypeChange.onActiveItemTypeChange };
@@ -187,13 +187,13 @@ export default function ProductDetailsActionSheetPreview(arg0) {
       callback(nativeEvent.nativeEvent.layout.width);
     }, [])
   };
-  if (product.type === _require(1876).CollectiblesItemType.BUNDLE) {
+  if (product.type === _require(1877).CollectiblesItemType.BUNDLE) {
     obj = { product, width: first, handlePreviewPress, onTrackPress, onActiveItemChange: onBundleActiveItemChange, onActiveItemTypeChange: onBundleActiveItemTypeChange };
     let tmp12 = callback4(BundleProductPreview, obj);
   } else {
     obj = { style: tmp.previewDivider };
     const obj1 = { product, width: first, handlePreviewPress, onTrackPress };
-    obj.children = callback4(_require(8788).IndividualProductPreview, obj1);
+    obj.children = callback4(_require(8676).IndividualProductPreview, obj1);
     tmp12 = callback4(View, obj);
   }
   obj.children = tmp12;

@@ -1,10 +1,10 @@
-// Module ID: 7015
-// Function ID: 56305
+// Module ID: 6033
+// Function ID: 54117
 // Name: collectThreadMetadata
-// Dependencies: [7011, 5683, 1352, 3758, 653, 1198, 21, 2]
+// Dependencies: [6029, 6014, 1352, 3759, 653, 1198, 21, 2]
 // Exports: collectThreadMetadata
 
-// Module 7015 (collectThreadMetadata)
+// Module 6033 (collectThreadMetadata)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { THREAD_CHANNEL_TYPES } from "_callSuper";

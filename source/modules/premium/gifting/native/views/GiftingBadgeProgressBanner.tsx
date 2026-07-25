@@ -1,10 +1,10 @@
-// Module ID: 9727
-// Function ID: 75634
+// Module ID: 9651
+// Function ID: 75229
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [31, 27, 33, 4130, 689, 5462, 8604, 480, 9720, 4126, 1212, 2294, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5462, 8364, 480, 9644, 4127, 1212, 2295, 2]
 // Exports: default
 
-// Module 9727 (GiftingBadgeProgressBanner)
+// Module 9651 (GiftingBadgeProgressBanner)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,20 +41,20 @@ export default function GiftingBadgeProgressBanner(arg0) {
   obj.name = require(480) /* isThrottled */.ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER;
   obj.type = require(480) /* isThrottled */.ImpressionTypes.VIEW;
   obj.properties = { gifts_to_next_tier: giftsToNextTier, next_tier: nextTierName, location_stack: tmp2(...items1).analyticsLocations };
-  importDefault(8604)(obj, { trackOnInitialLoad: true });
+  importDefault(8364)(obj, { trackOnInitialLoad: true });
   obj = { style: tmp.container };
   obj = { style: tmp.iconContainer };
   let tmp8 = null != nextTierIcon;
   if (tmp8) {
     const obj1 = { icon: nextTierIcon, size: 24 };
-    tmp8 = callback(importDefault(9720), obj1);
+    tmp8 = callback(importDefault(9644), obj1);
   }
   obj.children = tmp8;
   const items2 = [callback(View, obj), ];
   const obj2 = { variant: "text-md/semibold" };
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl.formatToPlainString(importDefault(2294)["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
-  items2[1] = callback(require(4126) /* Text */.Text, obj2);
+  obj2.children = intl.formatToPlainString(importDefault(2295)["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
+  items2[1] = callback(require(4127) /* Text */.Text, obj2);
   obj.children = items2;
   return closure_5(View, obj);
 };

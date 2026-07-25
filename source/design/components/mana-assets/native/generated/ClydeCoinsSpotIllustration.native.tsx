@@ -1,10 +1,10 @@
-// Module ID: 5952
-// Function ID: 49893
+// Module ID: 6872
+// Function ID: 59543
 // Name: ClydeCoinsSpotIllustration
-// Dependencies: [33, 5085, 5953, 2]
+// Dependencies: [33, 5085, 6873, 2]
 // Exports: ClydeCoinsSpotIllustration
 
-// Module 5952 (ClydeCoinsSpotIllustration)
+// Module 6872 (ClydeCoinsSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ClydeCoinsSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const ClydeCoinsSpotIllustration = function ClydeCoinsSpotIllustration(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5953) };
+  obj = { uri: importDefault(6873) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

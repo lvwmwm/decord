@@ -1,9 +1,9 @@
-// Module ID: 14713
-// Function ID: 112108
+// Module ID: 14724
+// Function ID: 112236
 // Name: BalanceWidgetMenuSection
-// Dependencies: [57, 31, 27, 33, 9149, 5517, 9158, 10191, 4130, 689, 4541, 4126, 14714, 4098, 9830, 1934, 1212, 7574, 4543, 9819, 9829, 5160, 5449, 14716, 2]
+// Dependencies: [57, 31, 27, 33, 9041, 5517, 9050, 10123, 4131, 689, 4542, 4127, 14725, 4099, 9754, 1935, 1212, 6670, 4544, 9743, 9753, 5159, 5449, 14727, 2]
 
-// Module 14713 (BalanceWidgetMenuSection)
+// Module 14724 (BalanceWidgetMenuSection)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -20,9 +20,9 @@ function BalanceWidgetMenuSection() {
   const tmp = callback4();
   let obj = { spacing: 16, style: tmp.container };
   obj = { variant: "text-lg/semibold", style: tmp.title, children: "Balance Widget Menu" };
-  const items = [callback2(require(4126) /* Text */.Text, obj), callback2(importDefault(14714), {})];
+  const items = [callback2(require(4127) /* Text */.Text, obj), callback2(importDefault(14725), {})];
   obj.children = items;
-  return callback3(require(4541) /* Stack */.Stack, obj);
+  return callback3(require(4542) /* Stack */.Stack, obj);
 }
 function BalanceWidgetPillSection() {
   const tmp = callback4();
@@ -79,11 +79,11 @@ function BalanceWidgetPillSection() {
   return callback3(first(first1[10]).Stack, obj);
 }
 function OrbsFlowTest() {
-  const insets = importDefault(5160)({ includeKeyboardHeight: true }).insets;
+  const insets = importDefault(5159)({ includeKeyboardHeight: true }).insets;
   let obj = {};
   obj = { style: callback4().wrap, contentContainerStyle: obj };
   obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right };
-  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(14716), {})];
+  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(14727), {})];
   obj.children = items;
   obj.children = callback3(closure_5, obj);
   return callback2(require(5449) /* Layer */.LayerScope, obj);

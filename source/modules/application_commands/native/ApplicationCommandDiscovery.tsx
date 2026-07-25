@@ -1,10 +1,10 @@
-// Module ID: 11466
-// Function ID: 89199
+// Module ID: 11429
+// Function ID: 88858
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4566, 11467, 9594, 653, 33, 11468, 4130, 689, 4549, 11469, 8233, 1881, 8015, 3843, 1212, 4324, 22, 11470, 6755, 11471, 11472, 1273, 9670, 2]
+// Dependencies: [57, 31, 27, 4567, 11430, 9515, 653, 33, 11431, 4131, 689, 4550, 11432, 7962, 1882, 5680, 3844, 1212, 4325, 22, 11433, 5676, 11434, 11435, 1273, 9592, 2]
 // Exports: default
 
-// Module 11466 (_createForOfIteratorHelperLoose)
+// Module 11429 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -138,21 +138,21 @@ export default function ApplicationCommandDiscovery(channel) {
   let closure_19;
   let tmp = callback();
   const dependencyMap = tmp;
-  let obj = require(4549) /* getFontScale */;
+  let obj = require(4550) /* getFontScale */;
   const bound = Math.max(obj.useFontScale() * c11, c11);
   ref = ref.useRef(null);
   const tmp4 = bound(ref.useState(0), 2);
   const first = tmp4[0];
   let closure_7 = tmp6;
   let closure_8 = ref.useRef(false);
-  let obj1 = require(11469) /* useCommandDiscoveryManager */;
+  let obj1 = require(11432) /* useCommandDiscoveryManager */;
   const commandDiscoveryManager = obj1.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let obj2 = channel(8233);
+  let obj2 = channel(7962);
   obj = { context: { channel, type: "channel" } };
   obj = {};
-  let items = [require(1881) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
+  let items = [require(1882) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
   obj.commandTypes = items;
-  const BuiltInCommandFilter = require(8015) /* ScoreMethod */.BuiltInCommandFilter;
+  const BuiltInCommandFilter = require(5680) /* ScoreMethod */.BuiltInCommandFilter;
   obj.builtIns = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   obj.applicationCommands = !canOnlyUseTextCommands;
   obj.filters = obj;
@@ -195,9 +195,9 @@ export default function ApplicationCommandDiscovery(channel) {
         if (0 !== commandsByActiveSection.length) {
           num = commandsByActiveSection.reduce((arg0, data) => {
             if (0 === data.data.length) {
-              let sum = outer3_0(11468).APPLICATION_SECTION_HEADER_HEIGHT + 160;
+              let sum = outer3_0(11431).APPLICATION_SECTION_HEADER_HEIGHT + 160;
             } else {
-              sum = arg0 + (outer3_0(11468).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
+              sum = arg0 + (outer3_0(11431).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
             }
             return sum;
           }, 0);

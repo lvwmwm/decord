@@ -1,10 +1,10 @@
-// Module ID: 11686
-// Function ID: 90674
+// Module ID: 11655
+// Function ID: 90418
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [31, 33, 3969, 4475, 1212, 4475, 2]
+// Dependencies: [31, 33, 3970, 4476, 1212, 4476, 2]
 // Exports: default
 
-// Module 11686 (UserProfileConfirmThreadRemove)
+// Module 11655 (UserProfileConfirmThreadRemove)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -19,7 +19,7 @@ export default function UserProfileConfirmThreadRemove(isForumPost) {
   let user;
   isForumPost = isForumPost.isForumPost;
   ({ user, onConfirm } = isForumPost);
-  let obj = importDefault(3969);
+  let obj = importDefault(3970);
   const name = obj.useName(user);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -33,12 +33,12 @@ export default function UserProfileConfirmThreadRemove(isForumPost) {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl3.string(require(1212) /* getSystemLocale */.t.N86XcP);
   obj1.onPress = onConfirm;
-  const items = [callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj1, "remove-user-from-thread"), ];
+  const items = [callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj1, "remove-user-from-thread"), ];
   const obj2 = { variant: "secondary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj2.text = intl4.string(require(1212) /* getSystemLocale */.t.yNbnce);
-  items[1] = callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel-remove-user-from-thread");
+  items[1] = callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel-remove-user-from-thread");
   obj.children = items;
-  obj.actions = callback2(require(4475) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4475) /* getAlertModalItemKey */.AlertModal, obj);
+  obj.actions = callback2(require(4476) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4476) /* getAlertModalItemKey */.AlertModal, obj);
 };

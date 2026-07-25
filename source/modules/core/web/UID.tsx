@@ -1,16 +1,16 @@
-// Module ID: 9341
-// Function ID: 72885
+// Module ID: 9234
+// Function ID: 72374
 // Name: uid
-// Dependencies: [4338, 5450, 2]
+// Dependencies: [4339, 5450, 2]
 // Exports: UID
 
-// Module 9341 (uid)
+// Module 9234 (uid)
 function uid() {
   let str = arg0;
   if (arg0 === undefined) {
     str = "uid_";
   }
-  return importDefault(4338)(str);
+  return importDefault(4339)(str);
 }
 function useUID() {
   return importDefault(5450)(() => outer1_2());

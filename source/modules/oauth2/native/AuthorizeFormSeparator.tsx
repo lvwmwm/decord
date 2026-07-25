@@ -1,10 +1,10 @@
-// Module ID: 9055
-// Function ID: 71151
+// Module ID: 8945
+// Function ID: 70633
 // Name: AuthorizeFormSeparator
-// Dependencies: [27, 33, 4130, 689, 2]
+// Dependencies: [27, 33, 4131, 689, 2]
 // Exports: AuthorizeFormSeparator
 
-// Module 9055 (AuthorizeFormSeparator)
+// Module 8945 (AuthorizeFormSeparator)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

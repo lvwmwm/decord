@@ -1,10 +1,10 @@
-// Module ID: 9214
-// Function ID: 72106
+// Module ID: 9106
+// Function ID: 71591
 // Name: TermsField
-// Dependencies: [31, 27, 33, 4130, 5124, 9132, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 5124, 9024, 1212, 2]
 // Exports: default
 
-// Module 9214 (TermsField)
+// Module 9106 (TermsField)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function TermsField(field) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t["2EXfGJ"]);
   obj.onPress = onChange;
-  items[1] = callback(require(9132) /* TableCheckboxRow */.TableCheckboxRow, obj);
+  items[1] = callback(require(9024) /* TableCheckboxRow */.TableCheckboxRow, obj);
   obj.children = items;
   return callback2(View, obj);
 };

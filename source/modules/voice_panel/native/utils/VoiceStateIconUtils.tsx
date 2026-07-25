@@ -1,10 +1,10 @@
-// Module ID: 8906
-// Function ID: 70167
+// Module ID: 8794
+// Function ID: 69646
 // Name: isStableVoiceStateEqual
-// Dependencies: [4177, 4146, 620, 566, 2]
+// Dependencies: [4178, 4147, 620, 566, 2]
 // Exports: useMuteDeafenIconState, useVideoIconState
 
-// Module 8906 (isStableVoiceStateEqual)
+// Module 8794 (isStableVoiceStateEqual)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 

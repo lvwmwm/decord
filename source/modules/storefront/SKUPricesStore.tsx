@@ -1,7 +1,7 @@
 // Module ID: 5614
-// Function ID: 47855
+// Function ID: 47860
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1921, 1327, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1922, 1327, 566, 686, 2]
 
 // Module 5614 (_isNativeReflectConstruct)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";

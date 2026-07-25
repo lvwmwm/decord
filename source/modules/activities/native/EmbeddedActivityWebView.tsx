@@ -1,10 +1,10 @@
-// Module ID: 10635
-// Function ID: 82913
+// Module ID: 10599
+// Function ID: 82600
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 7370, 4155, 653, 33, 4130, 3, 477, 10636, 491, 7592, 1207, 10637, 1554, 10638, 10639, 675, 624, 4470, 1212, 507, 10640, 1443, 10520, 10521, 8328, 4323, 10554, 2]
+// Dependencies: [5, 57, 31, 27, 5663, 4156, 653, 33, 4131, 3, 477, 10600, 491, 6702, 1207, 10601, 1554, 10602, 10603, 675, 624, 4471, 1212, 507, 10604, 1443, 10548, 10549, 8063, 4324, 10546, 2]
 // Exports: default
 
-// Module 10635 (_createForOfIteratorHelperLoose)
+// Module 10599 (_createForOfIteratorHelperLoose)
 import closure_4 from "items3";
 import _slicedToArray from "_slicedToArray";
 import closure_6 from "set";
@@ -625,7 +625,7 @@ class BaseActivityWebView {
 function useHasInvalidUrlErrorState() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8328)(first) };
+  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8063)(first) };
 }
 ({ ActivityPlatform: closure_9, DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY: closure_10 } = items3);
 ({ ComponentActions: closure_11, AnalyticEvents: closure_12 } = ME);

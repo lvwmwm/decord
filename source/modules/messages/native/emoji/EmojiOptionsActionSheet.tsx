@@ -1,10 +1,10 @@
-// Module ID: 9435
-// Function ID: 73468
+// Module ID: 9355
+// Function ID: 73054
 // Name: EmojiOptionsActionSheet
-// Dependencies: [31, 33, 5490, 3830, 4098, 5498, 5501, 5165, 4074, 1212, 2]
+// Dependencies: [31, 33, 5490, 3831, 4099, 5498, 5501, 5164, 4075, 1212, 2]
 // Exports: default
 
-// Module 9435 (EmojiOptionsActionSheet)
+// Module 9355 (EmojiOptionsActionSheet)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -23,11 +23,11 @@ export default function EmojiOptionsActionSheet(emojiSrc) {
   }, items);
   let obj = {};
   obj = { hasIcons: true };
-  obj = { icon: jsx(emojiSrc(4074).LinkIcon, {}) };
+  obj = { icon: jsx(emojiSrc(4075).LinkIcon, {}) };
   const intl = emojiSrc(1212).intl;
   obj.label = intl.string(emojiSrc(1212).t.cIoudn);
   obj.onPress = callback;
-  obj.children = jsx(emojiSrc(5165).TableRow, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
-  obj.children = jsx(emojiSrc(5501).TableRowGroup, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
-  return jsx(emojiSrc(5498).ActionSheet, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
+  obj.children = jsx(emojiSrc(5164).TableRow, { icon: jsx(emojiSrc(4075).LinkIcon, {}) });
+  obj.children = jsx(emojiSrc(5501).TableRowGroup, { icon: jsx(emojiSrc(4075).LinkIcon, {}) });
+  return jsx(emojiSrc(5498).ActionSheet, { icon: jsx(emojiSrc(4075).LinkIcon, {}) });
 };

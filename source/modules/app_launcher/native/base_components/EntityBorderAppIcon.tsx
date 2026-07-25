@@ -1,10 +1,10 @@
-// Module ID: 11206
-// Function ID: 87162
+// Module ID: 11167
+// Function ID: 86807
 // Name: EntityBorderAppIcon
-// Dependencies: [27, 33, 689, 4130, 5085, 2]
+// Dependencies: [27, 33, 689, 4131, 5085, 2]
 // Exports: default
 
-// Module 11206 (EntityBorderAppIcon)
+// Module 11167 (EntityBorderAppIcon)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

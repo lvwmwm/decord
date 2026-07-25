@@ -1,10 +1,10 @@
-// Module ID: 16065
-// Function ID: 124262
+// Module ID: 16076
+// Function ID: 124430
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [31, 27, 1838, 33, 4130, 689, 566, 16062, 16066, 5498, 10442, 4126, 1212, 5513, 4543, 5793, 3803, 3831, 10361, 4098, 12966, 2]
+// Dependencies: [31, 27, 1838, 33, 4131, 689, 566, 16073, 16077, 5498, 10376, 4127, 1212, 5513, 4544, 6449, 3804, 3832, 10294, 4099, 12977, 2]
 // Exports: default
 
-// Module 16065 (DmSettingsUpsellActionSheet)
+// Module 16076 (DmSettingsUpsellActionSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -49,27 +49,27 @@ export default function DmSettingsUpsellActionSheet(guildId) {
   if (null != stateFromStores) {
     obj = { startExpanded: true };
     obj = { style: tmp.container };
-    const obj1 = { source: stateFromStores(10442), style: tmp.headerImage };
+    const obj1 = { source: stateFromStores(10376), style: tmp.headerImage };
     const items2 = [callback(closure_5, obj1), , , , , , ];
     let obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.title };
     let intl = guildId(1212).intl;
     obj2.children = intl.string(guildId(1212).t.w2BvnL);
-    items2[1] = callback(guildId(4126).Text, obj2);
+    items2[1] = callback(guildId(4127).Text, obj2);
     let obj3 = { variant: "text-md/normal", color: "text-default", style: tmp.body };
     const intl2 = guildId(1212).intl;
     const obj4 = { guild_name: stateFromStores.name };
     obj3.children = intl2.format(guildId(1212).t.Depjkv, obj4);
-    items2[2] = callback(guildId(4126).Text, obj3);
+    items2[2] = callback(guildId(4127).Text, obj3);
     const obj5 = { style: tmp.guildContainer };
     const obj6 = { variant: "eyebrow", color: "text-default" };
     const intl3 = guildId(1212).intl;
     obj6.children = intl3.string(guildId(1212).t.KPB2iw);
-    const items3 = [callback(guildId(4126).Text, obj6), ];
+    const items3 = [callback(guildId(4127).Text, obj6), ];
     const obj7 = { style: tmp.guildInfo };
     const obj8 = { guild: stateFromStores, size: guildId(5513).GuildIconSizes.SMALL_32 };
     const items4 = [callback(stateFromStores(5513), obj8), ];
     const obj9 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
-    items4[1] = callback(guildId(4126).Text, obj9);
+    items4[1] = callback(guildId(4127).Text, obj9);
     obj7.children = items4;
     items3[1] = callback2(closure_4, obj7);
     obj5.children = items3;
@@ -96,7 +96,7 @@ export default function DmSettingsUpsellActionSheet(guildId) {
     };
     const intl4 = guildId(1212).intl;
     obj10.text = intl4.string(guildId(1212).t.TD7iUx);
-    items2[4] = callback(guildId(4543).Button, obj10);
+    items2[4] = callback(guildId(4544).Button, obj10);
     const obj11 = {
       size: "lg",
       variant: "secondary",
@@ -108,7 +108,7 @@ export default function DmSettingsUpsellActionSheet(guildId) {
     };
     const intl5 = guildId(1212).intl;
     obj11.text = intl5.string(guildId(1212).t.PsWbcp);
-    items2[5] = callback(guildId(4543).Button, obj11);
+    items2[5] = callback(guildId(4544).Button, obj11);
     const obj12 = { variant: "text-xs/normal", style: tmp.footer };
     const intl6 = guildId(1212).intl;
     const obj13 = {
@@ -123,7 +123,7 @@ export default function DmSettingsUpsellActionSheet(guildId) {
         }
     };
     obj12.children = intl6.format(guildId(1212).t.IzZxXW, obj13);
-    items2[6] = callback(guildId(4126).Text, obj12);
+    items2[6] = callback(guildId(4127).Text, obj12);
     obj.children = items2;
     obj.children = callback2(closure_4, obj);
     tmp4 = callback(guildId(5498).ActionSheet, obj);

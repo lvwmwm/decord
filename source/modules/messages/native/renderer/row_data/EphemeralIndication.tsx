@@ -1,10 +1,10 @@
-// Module ID: 7854
-// Function ID: 61973
+// Module ID: 7801
+// Function ID: 61945
 // Name: createEphemeralIndication
-// Dependencies: [7716, 653, 7855, 1212, 1920, 2]
+// Dependencies: [7660, 653, 7802, 1212, 1921, 2]
 // Exports: createEphemeralIndication
 
-// Module 7854 (createEphemeralIndication)
+// Module 7801 (createEphemeralIndication)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -22,7 +22,7 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       ephemerality_reason = interactionMetadata.ephemerality_reason;
     }
     if (null != ephemerality_reason) {
-      let obj1 = require(7855) /* getEphemeralReasonMessage */;
+      let obj1 = require(7802) /* getEphemeralReasonMessage */;
       const interactionMetadata2 = message.interactionMetadata;
       let ephemerality_reason1;
       if (null != interactionMetadata2) {
@@ -36,7 +36,7 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       obj.handleDelete = obj1;
       obj.reason = ephemeralReasonMessage;
       obj.content = intl2.formatToParts(require(1212) /* getSystemLocale */.t.xgCMRQ, obj);
-      obj.helpArticleLink = importDefault(1920).getArticleURL(constants.USING_APPS_FAQ);
+      obj.helpArticleLink = importDefault(1921).getArticleURL(constants.USING_APPS_FAQ);
       const intl3 = require(1212) /* getSystemLocale */.intl;
       obj.helpButtonAccessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t.OIWSJe);
       return obj;
@@ -47,11 +47,11 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       const obj4 = { action: "bindDismissMessage", message };
       obj3.handleDelete = obj4;
       obj2.content = intl4.formatToParts(require(1212) /* getSystemLocale */.t.uX3ecL, obj3);
-      obj2.helpArticleLink = importDefault(1920).getAppsSupportURL(constants.EPHEMERAL_MESSAGES);
+      obj2.helpArticleLink = importDefault(1921).getAppsSupportURL(constants.EPHEMERAL_MESSAGES);
       const intl5 = require(1212) /* getSystemLocale */.intl;
       obj2.helpButtonAccessibilityLabel = intl5.string(require(1212) /* getSystemLocale */.t.htHOrp);
       if (null != message.getMessage(message.id)) {
-        obj = importDefault(1920);
+        obj = importDefault(1921);
         obj2.helpArticleLink = obj.getArticleURL(constants.GUILD_AUTOMOD_BLOCKED_MESSAGE);
         const intl = require(1212) /* getSystemLocale */.intl;
         obj2.helpButtonAccessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.OiCBhP);

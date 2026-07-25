@@ -1,8 +1,8 @@
-// Module ID: 11519
-// Function ID: 89694
-// Dependencies: [31, 27, 4122, 11132, 653, 33, 4130, 9198, 3950, 11520, 1212, 4324, 9188, 11521, 5119, 9181, 566, 11511, 5453, 11522, 2]
+// Module ID: 11485
+// Function ID: 89411
+// Dependencies: [31, 27, 4123, 11092, 653, 33, 4131, 9090, 3951, 11486, 1212, 4325, 9080, 11487, 5119, 9073, 566, 11477, 5453, 11488, 2]
 
-// Module 11519
+// Module 11485
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { TextAreaCta } from "TextAreaCta";
@@ -16,14 +16,14 @@ let closure_8 = _createForOfIteratorHelperLoose.createStyles({ noticeIcon: { hei
 const memoResult = require("result").memo(function ChatInputGuardGuildMemberVerification(guildId) {
   guildId = guildId.guildId;
   const tmp = callback();
-  let obj = guildId(9198);
+  let obj = guildId(9090);
   const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (null != currentUserGuildJoinRequest) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  if (guildId(3950).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-    let tmp7 = importDefault(11520);
+  if (guildId(3951).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+    let tmp7 = importDefault(11486);
     const intl2 = guildId(1212).intl;
     let stringResult = intl2.string(guildId(1212).t.lk30cY);
     class A {
@@ -37,8 +37,8 @@ const memoResult = require("result").memo(function ChatInputGuardGuildMemberVeri
         return;
       }
     }
-  } else if (guildId(3950).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-    tmp7 = importDefault(11521);
+  } else if (guildId(3951).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+    tmp7 = importDefault(11487);
     class A {
       constructor() {
         obj = outer1_1(outer1_2[11]);
@@ -98,7 +98,7 @@ const memoResult = require("result").memo(function ChatInputGuardGuildMemberVeri
   const intl3 = guildId(1212).intl;
   obj.actionLabel = intl3.string(guildId(1212).t["r8/DT+"]);
   obj.actionOnPress = A;
-  return tmp17(importDefault(11511), obj);
+  return tmp17(importDefault(11477), obj);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardGuildMemberVerification.tsx");
 

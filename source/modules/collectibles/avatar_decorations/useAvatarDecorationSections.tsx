@@ -1,10 +1,10 @@
-// Module ID: 7952
-// Function ID: 62982
+// Module ID: 7900
+// Function ID: 62959
 // Name: useAvatarDecorationSections
-// Dependencies: [57, 31, 6774, 6790, 624, 6786, 1212, 2]
+// Dependencies: [57, 31, 5770, 5786, 624, 5782, 1212, 2]
 // Exports: default
 
-// Module 7952 (useAvatarDecorationSections)
+// Module 7900 (useAvatarDecorationSections)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

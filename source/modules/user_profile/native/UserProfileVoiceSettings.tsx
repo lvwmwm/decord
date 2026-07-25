@@ -1,10 +1,10 @@
-// Module ID: 11992
-// Function ID: 92708
+// Module ID: 11968
+// Function ID: 92513
 // Name: UserVoiceSettings
-// Dependencies: [31, 27, 4578, 4177, 3758, 653, 482, 33, 4130, 8310, 566, 4314, 8955, 10745, 8882, 5509, 1212, 8913, 10764, 11993, 7491, 11995, 7496, 7577, 4126, 11680, 8970, 7636, 4098, 8940, 8936, 2]
+// Dependencies: [31, 27, 4579, 4178, 3759, 653, 482, 33, 4131, 8045, 566, 4315, 8843, 10709, 8770, 5509, 1212, 8801, 10736, 11969, 6575, 11971, 6580, 6673, 4127, 11649, 8858, 7575, 4099, 8828, 8824, 2]
 // Exports: default
 
-// Module 11992 (UserVoiceSettings)
+// Module 11968 (UserVoiceSettings)
 import "set";
 import { View } from "Form";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -192,7 +192,7 @@ function CurrentUserVoiceSettings(channel) {
   channel = channel.channel;
   ({ user, style } = channel);
   const tmp = callback3();
-  let obj = channel(8310);
+  let obj = channel(8045);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let obj1 = channel(566);
   const items = [closure_5];
@@ -228,9 +228,9 @@ function CurrentUserVoiceSettings(channel) {
     }
     obj1.label = stringResult;
     if (stateFromStores) {
-      let MicrophoneIcon = tmp18(8913).MicrophoneSlashIcon;
+      let MicrophoneIcon = tmp18(8801).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp18(10764).MicrophoneIcon;
+      MicrophoneIcon = tmp18(10736).MicrophoneIcon;
     }
     obj1.icon = MicrophoneIcon;
     obj1.onPress = function onPress() {

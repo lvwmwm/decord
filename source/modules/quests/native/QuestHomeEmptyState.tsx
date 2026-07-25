@@ -1,10 +1,10 @@
-// Module ID: 14011
-// Function ID: 107136
+// Module ID: 14022
+// Function ID: 107263
 // Name: QuestHomeEmptyState
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1212, 3834, 3984, 5121, 477, 4126, 14012, 4554, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1212, 3835, 3985, 5121, 477, 4127, 14023, 4555, 2]
 // Exports: default
 
-// Module 14011 (QuestHomeEmptyState)
+// Module 14022 (QuestHomeEmptyState)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { VerticalGradient } from "ME";
@@ -44,7 +44,7 @@ export default function QuestHomeEmptyState(subtitle) {
     subtitle = intl2.string(require(1212) /* getSystemLocale */.t["R7mv+G"]);
   }
   const tmp5 = _createForOfIteratorHelperLoose();
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const token = obj.useToken(importDefault(689).colors.BACKGROUND_BASE_LOWER);
   obj = {};
   let obj2 = require(477) /* set */;
@@ -54,9 +54,9 @@ export default function QuestHomeEmptyState(subtitle) {
   const obj1 = { style: tmp5.emptyStateContainer };
   obj2 = { style: tmp5.emptyStateContentContainer };
   const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title };
-  const items = [callback(require(4126) /* Text */.Text, obj3), , ];
+  const items = [callback(require(4127) /* Text */.Text, obj3), , ];
   const obj4 = { variant: "text-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle };
-  items[1] = callback(require(4126) /* Text */.Text, obj4);
+  items[1] = callback(require(4127) /* Text */.Text, obj4);
   let tmp10 = null != action;
   if (tmp10) {
     const obj5 = { style: tmp5.actionWrapper, children: action };
@@ -66,15 +66,15 @@ export default function QuestHomeEmptyState(subtitle) {
   obj2.children = items;
   const items1 = [callback2(closure_3, obj2), ];
   let tmp13 = null;
-  if (!importDefault(3984)().isChatLockedOpen) {
+  if (!importDefault(3985)().isChatLockedOpen) {
     const obj6 = {};
-    const obj7 = { style: tmp5.emptyImage, source: importDefault(14012), resizeMode: "cover" };
+    const obj7 = { style: tmp5.emptyImage, source: importDefault(14023), resizeMode: "cover" };
     const items2 = [callback(closure_4, obj7), ];
     const obj8 = { style: tmp5.gradient };
     ({ END: obj12.end, START: obj12.start } = VerticalGradient);
     const items3 = ["rgba(0, 0, 0, 0)", token];
     obj8.colors = items3;
-    items2[1] = callback(importDefault(4554), obj8);
+    items2[1] = callback(importDefault(4555), obj8);
     obj6.children = items2;
     tmp13 = callback2(closure_8, obj6);
   }

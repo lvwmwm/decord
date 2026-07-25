@@ -1,9 +1,9 @@
-// Module ID: 16546
-// Function ID: 128956
+// Module ID: 16557
+// Function ID: 129124
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 12919, 653, 12918, 5626, 5078, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 12930, 653, 12929, 5626, 5078, 2]
 
-// Module 16546 (_isNativeReflectConstruct)
+// Module 16557 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import MIDJOURNEY_GUILD_ID from "MIDJOURNEY_GUILD_ID";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 6434
-// Function ID: 50616
+// Module ID: 7354
+// Function ID: 60266
 // Name: QrCodeLoginSpotIllustration
-// Dependencies: [33, 5085, 6435, 2]
+// Dependencies: [33, 5085, 7355, 2]
 // Exports: QrCodeLoginSpotIllustration
 
-// Module 6434 (QrCodeLoginSpotIllustration)
+// Module 7354 (QrCodeLoginSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/QrCodeLoginSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const QrCodeLoginSpotIllustration = function QrCodeLoginSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6435) };
+  obj = { uri: importDefault(7355) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

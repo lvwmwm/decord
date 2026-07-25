@@ -1,15 +1,15 @@
-// Module ID: 11938
-// Function ID: 92410
+// Module ID: 11914
+// Function ID: 92215
 // Name: formatDuration
-// Dependencies: [11928, 3800, 1212, 664, 1327, 2]
+// Dependencies: [11904, 3801, 1212, 664, 1327, 2]
 // Exports: default
 
-// Module 11938 (formatDuration)
+// Module 11914 (formatDuration)
 import { ClearAfterValues } from "StatusTypes";
 
 function formatDuration(arg0) {
   const sum = Date.now() + arg0;
-  let obj = require(3800) /* resetCache */;
+  let obj = require(3801) /* resetCache */;
   const date = new Date();
   const date1 = new Date(sum);
   const intl = require(1212) /* getSystemLocale */.intl;

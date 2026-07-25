@@ -1,10 +1,10 @@
-// Module ID: 9146
-// Function ID: 71586
+// Module ID: 9038
+// Function ID: 71071
 // Name: useNavigatorBackHandler
 // Dependencies: [31, 1456, 477, 2]
 // Exports: default
 
-// Module 9146 (useNavigatorBackHandler)
+// Module 9038 (useNavigatorBackHandler)
 import result from "result";
 
 const require = arg1;

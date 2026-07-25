@@ -1,10 +1,10 @@
-// Module ID: 9453
-// Function ID: 73529
+// Module ID: 9373
+// Function ID: 73115
 // Name: FlagIcon
-// Dependencies: [31, 33, 689, 3833, 9454, 2]
+// Dependencies: [31, 33, 689, 3834, 9374, 2]
 // Exports: FlagIcon
 
-// Module 9453 (FlagIcon)
+// Module 9373 (FlagIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const FlagIcon = function FlagIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9454) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9374) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9454) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9374) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

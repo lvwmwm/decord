@@ -1,10 +1,10 @@
-// Module ID: 11880
-// Function ID: 92082
+// Module ID: 11856
+// Function ID: 91887
 // Name: GameProfileWebsiteButton
-// Dependencies: [31, 27, 8373, 33, 4130, 689, 3827, 8673, 1212, 1881, 3800, 11881, 11890, 4126, 2]
+// Dependencies: [31, 27, 8131, 33, 4131, 689, 3828, 8449, 1212, 1882, 3801, 11857, 11866, 4127, 2]
 // Exports: default
 
-// Module 11880 (GameProfileWebsiteButton)
+// Module 11856 (GameProfileWebsiteButton)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { IGDB_ATTRIBUTION_LINK } from "ContentInventoryFeedKey";

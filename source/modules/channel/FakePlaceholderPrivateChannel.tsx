@@ -1,5 +1,5 @@
 // Module ID: 5604
-// Function ID: 47674
+// Function ID: 47679
 // Name: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID
 // Dependencies: [1352, 653, 2]
 

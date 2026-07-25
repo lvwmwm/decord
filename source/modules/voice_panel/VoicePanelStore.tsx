@@ -1,9 +1,9 @@
-// Module ID: 4342
-// Function ID: 38353
+// Module ID: 4343
+// Function ID: 38364
 // Name: withEqualityFn
-// Dependencies: [1348, 677, 4343, 682, 2]
+// Dependencies: [1348, 677, 4344, 682, 2]
 
-// Module 4342 (withEqualityFn)
+// Module 4343 (withEqualityFn)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
@@ -29,7 +29,7 @@ const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) 
   obj.voicePanelsPIP = new Set();
   obj.openChannel = function openChannel(channelId) {
     const callback = channelId;
-    let result = callback(4343).isStageVoicePanelEnabled("voice_panel_store");
+    let result = callback(4344).isStageVoicePanelEnabled("voice_panel_store");
     if (!result) {
       const channel = outer1_2.getChannel(channelId);
       let isGuildStageVoiceResult;

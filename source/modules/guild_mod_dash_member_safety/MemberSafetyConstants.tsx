@@ -1,9 +1,9 @@
-// Module ID: 3762
-// Function ID: 28820
+// Module ID: 3763
+// Function ID: 28831
 // Name: MemberSafetyPagePermissions
 // Dependencies: [653, 483, 2]
 
-// Module 3762 (MemberSafetyPagePermissions)
+// Module 3763 (MemberSafetyPagePermissions)
 import { Permissions } from "ME";
 import importAllResult from "fromHexReverseArray";
 

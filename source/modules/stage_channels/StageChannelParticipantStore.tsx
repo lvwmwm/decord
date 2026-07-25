@@ -1,9 +1,9 @@
-// Module ID: 4951
-// Function ID: 42453
+// Module ID: 4952
+// Function ID: 42465
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4149, 1194, 1348, 1838, 3758, 3767, 4952, 1849, 4146, 4203, 4954, 1353, 3754, 22, 4957, 4194, 636, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4150, 1194, 1348, 1838, 3759, 3768, 4953, 1850, 4147, 4204, 4955, 1353, 3755, 22, 4958, 4195, 636, 566, 686, 2]
 
-// Module 4951 (_isNativeReflectConstruct)
+// Module 4952 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -163,7 +163,7 @@ function maybeGetParticipants(channelId) {
 function getOrCreateParticipants(value) {
   let tmp = dependencyMap[value];
   if (null == tmp) {
-    let tmp4 = importDefault(4957);
+    let tmp4 = importDefault(4958);
     const prototype = tmp4.prototype;
     tmp4 = new tmp4(value);
     dependencyMap[value] = tmp4;
@@ -275,7 +275,7 @@ function handleGuildCreateOrDelete(guild) {
 function handleStreamClose(streamKey) {
   let channelId;
   let ownerId;
-  const decodeStreamKeyResult = require(4194) /* isStreamKey */.decodeStreamKey(streamKey.streamKey);
+  const decodeStreamKeyResult = require(4195) /* isStreamKey */.decodeStreamKey(streamKey.streamKey);
   const guildId = decodeStreamKeyResult.guildId;
   let tmp2 = null == guildId;
   ({ channelId, ownerId } = decodeStreamKeyResult);

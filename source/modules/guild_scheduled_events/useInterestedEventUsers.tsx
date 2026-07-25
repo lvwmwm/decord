@@ -1,10 +1,10 @@
-// Module ID: 8402
-// Function ID: 66805
+// Module ID: 8160
+// Function ID: 65456
 // Name: useInterestedEventUsers
-// Dependencies: [31, 6758, 1354, 566, 2]
+// Dependencies: [31, 5751, 1354, 566, 2]
 // Exports: default
 
-// Module 8402 (useInterestedEventUsers)
+// Module 8160 (useInterestedEventUsers)
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildScheduledEventUserResponses as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";

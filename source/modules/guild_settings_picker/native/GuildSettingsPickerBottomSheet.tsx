@@ -1,9 +1,9 @@
-// Module ID: 12948
-// Function ID: 100407
+// Module ID: 12959
+// Function ID: 100534
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [31, 27, 33, 4130, 12949, 5187, 5186, 4126, 1273, 12953, 4098, 4543, 44, 8482, 2]
+// Dependencies: [31, 27, 33, 4131, 12960, 5187, 5186, 4127, 1273, 12964, 4099, 4544, 44, 8242, 2]
 
-// Module 12948 (GuildSettingsPickerBottomSheet)
+// Module 12959 (GuildSettingsPickerBottomSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 10742
-// Function ID: 83577
+// Module ID: 10706
+// Function ID: 83264
 // Name: handleInputModePress
-// Dependencies: [31, 27, 4177, 653, 33, 4130, 5495, 1212, 8882, 566, 10738, 5165, 4126, 5502, 10743, 2]
+// Dependencies: [31, 27, 4178, 653, 33, 4131, 5495, 1212, 8770, 566, 10702, 5164, 4127, 5502, 10707, 2]
 // Exports: default
 
-// Module 10742 (handleInputModePress)
+// Module 10706 (handleInputModePress)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -68,9 +68,9 @@ export default function UserSettingsVoiceInputOptions() {
     stringResult = intl3.string(inputMode(1212).t.cHCEOJ);
   }
   obj1.children = stringResult;
-  obj.trailing = callback(inputMode(4126).Text, obj1);
+  obj.trailing = callback(inputMode(4127).Text, obj1);
   obj.onPress = handleInputModePress;
-  const items1 = [callback(inputMode(5165).TableRow, obj), ];
+  const items1 = [callback(inputMode(5164).TableRow, obj), ];
   let tmp9 = null;
   if (inputMode !== InputModes.PUSH_TO_TALK) {
     const obj2 = {};
@@ -97,14 +97,14 @@ export default function UserSettingsVoiceInputOptions() {
           return obj.setMode(inputMode, obj);
         }
     };
-    obj5.children = callback(importDefault(10743), obj6);
+    obj5.children = callback(importDefault(10707), obj6);
     obj4.subLabel = callback(View, obj5);
-    items2[1] = callback(inputMode(5165).TableRow, obj4);
+    items2[1] = callback(inputMode(5164).TableRow, obj4);
     obj2.children = items2;
     tmp9 = callback2(closure_7, obj2);
   }
   items1[1] = tmp9;
   obj.children = items1;
-  return callback2(inputMode(10738).UserSettingsTableRowGroup, obj);
+  return callback2(inputMode(10702).UserSettingsTableRowGroup, obj);
 };
 export { handleInputModePress };

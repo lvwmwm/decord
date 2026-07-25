@@ -1,10 +1,10 @@
-// Module ID: 8185
-// Function ID: 64637
+// Module ID: 12543
+// Function ID: 97059
 // Name: openForumExplicitMediaWarning
-// Dependencies: [33, 4471, 8186, 1934, 2]
+// Dependencies: [33, 4472, 12544, 1935, 2]
 // Exports: default
 
-// Module 8185 (openForumExplicitMediaWarning)
+// Module 12543 (openForumExplicitMediaWarning)
 import { jsx } from "jsxProd";
 
 const result = require("ForumExplicitMediaAlert").fileFinishedImporting("modules/forums/openForumExplicitMediaWarning.native.tsx");
@@ -12,7 +12,7 @@ const result = require("ForumExplicitMediaAlert").fileFinishedImporting("modules
 export default function openForumExplicitMediaWarning(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = importDefault(4471);
+  let obj = importDefault(4472);
   obj = {
     importer() {
       return callback(outer1_2[3])(outer1_2[2], outer1_2.paths).then((arg0) => {

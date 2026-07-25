@@ -1,10 +1,10 @@
-// Module ID: 15079
-// Function ID: 114832
+// Module ID: 15089
+// Function ID: 114959
 // Name: GuildHomeChannelRow
-// Dependencies: [31, 653, 1355, 10289, 33, 4130, 689, 1198, 11452, 1212, 12902, 2]
+// Dependencies: [31, 653, 1355, 10222, 33, 4131, 689, 1198, 11415, 1212, 12913, 2]
 // Exports: default
 
-// Module 15079 (GuildHomeChannelRow)
+// Module 15089 (GuildHomeChannelRow)
 import result from "result";
 import { Routes } from "ME";
 import { StaticChannelRoute } from "set";
@@ -25,7 +25,7 @@ export default function GuildHomeChannelRow(selected) {
   const callback = React.useCallback(() => {
     id(outer1_2[7]).transitionTo(outer1_4.CHANNEL(id, outer1_5.GUILD_HOME));
   }, items);
-  const ChannelModes = id(11452).ChannelModes;
+  const ChannelModes = id(11415).ChannelModes;
   const tmp3 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
   let obj = { onPress: callback, style: _createForOfIteratorHelperLoose().container, accessible: true };
   const tmp = _createForOfIteratorHelperLoose();
@@ -37,8 +37,8 @@ export default function GuildHomeChannelRow(selected) {
   const intl2 = id(1212).intl;
   obj.name = intl2.string(id(1212).t.VbpLyU);
   obj.mode = tmp3;
-  obj.name = jsx(id(11452).BaseChannelName, {});
-  obj = { mode: tmp3, IconComponent: id(12902).SignPostIcon };
-  obj.icon = jsx(id(11452).BaseChannelIcon, { mode: tmp3, IconComponent: id(12902).SignPostIcon });
-  return jsx(importDefault(11452), { mode: tmp3, IconComponent: id(12902).SignPostIcon });
+  obj.name = jsx(id(11415).BaseChannelName, {});
+  obj = { mode: tmp3, IconComponent: id(12913).SignPostIcon };
+  obj.icon = jsx(id(11415).BaseChannelIcon, { mode: tmp3, IconComponent: id(12913).SignPostIcon });
+  return jsx(importDefault(11415), { mode: tmp3, IconComponent: id(12913).SignPostIcon });
 };

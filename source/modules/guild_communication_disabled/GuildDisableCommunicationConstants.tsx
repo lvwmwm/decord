@@ -1,10 +1,10 @@
-// Module ID: 1919
-// Function ID: 21717
+// Module ID: 1920
+// Function ID: 21728
 // Name: getFriendlyDurationString
-// Dependencies: [653, 1212, 1920, 2]
+// Dependencies: [653, 1212, 1921, 2]
 // Exports: getDisableCommunicationDurationOptions
 
-// Module 1919 (getFriendlyDurationString)
+// Module 1920 (getFriendlyDurationString)
 import importDefaultResult from "wrapURL";
 
 const require = arg1;

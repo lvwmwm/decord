@@ -1,10 +1,10 @@
-// Module ID: 13853
-// Function ID: 106082
+// Module ID: 13864
+// Function ID: 106209
 // Name: FamilyCenterActivitySectionHeader
-// Dependencies: [57, 31, 27, 6770, 33, 4130, 689, 7123, 6827, 13848, 4126, 11088, 1212, 2198, 13854, 4660, 2]
+// Dependencies: [57, 31, 27, 5766, 33, 4131, 689, 6201, 5827, 13859, 4127, 11047, 1212, 2199, 13865, 4661, 2]
 // Exports: default
 
-// Module 13853 (FamilyCenterActivitySectionHeader)
+// Module 13864 (FamilyCenterActivitySectionHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,13 +23,13 @@ const require = arg1;
 function FamilyCenterActivitySectionHeader(displayType) {
   displayType = displayType.displayType;
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(7123)();
-  let obj = require(6827) /* getActivityTypeTextConfigs */;
+  const tmp2 = importDefault(6201)();
+  let obj = require(5827) /* getActivityTypeTextConfigs */;
   const activityTypeTextConfigs = obj.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
-  const actionsForDisplayType = require(13848) /* useActionTotalsForDisplayType */.useActionsForDisplayType(displayType);
-  const obj4 = require(13848) /* useActionTotalsForDisplayType */;
-  let length = require(13848) /* useActionTotalsForDisplayType */.useFormattedTotalForDisplayType(displayType);
+  const actionsForDisplayType = require(13859) /* useActionTotalsForDisplayType */.useActionsForDisplayType(displayType);
+  const obj4 = require(13859) /* useActionTotalsForDisplayType */;
+  let length = require(13859) /* useActionTotalsForDisplayType */.useFormattedTotalForDisplayType(displayType);
   if (displayType === constants.PURCHASES) {
     let sectionHeaderResult;
     if (null != value) {
@@ -53,11 +53,11 @@ function FamilyCenterActivitySectionHeader(displayType) {
     }
     obj = {};
     obj = { variant: "text-sm/semibold", style: tmp.header, children: sectionHeaderResult };
-    const items = [callback2(require(4126) /* Text */.Text, obj), ];
+    const items = [callback2(require(4127) /* Text */.Text, obj), ];
     let tmp16 = null;
     if (null !== tmp8) {
       const obj1 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: tmp8 };
-      tmp16 = callback2(require(4126) /* Text */.Text, obj1);
+      tmp16 = callback2(require(4127) /* Text */.Text, obj1);
     }
     items[1] = tmp16;
     obj.children = items;
@@ -84,11 +84,11 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/p
 export default function FamilyCenterActivitySection(displayType) {
   displayType = displayType.displayType;
   let loadMoreButton = callback3();
-  let obj = displayType(13848);
+  let obj = displayType(13859);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  let obj1 = displayType(13848);
+  let obj1 = displayType(13859);
   const actionTotalsForDisplayType = obj1.useActionTotalsForDisplayType(displayType);
-  let obj2 = displayType(11088);
+  let obj2 = displayType(11047);
   const familyCenterActions = obj2.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const tmp3 = callback(React.useState(closure_7), 2);
@@ -102,10 +102,10 @@ export default function FamilyCenterActivitySection(displayType) {
     obj = {};
     const _Math = Math;
     obj.pageSize = Math.min(actionTotalsForDisplayType - substr.length, closure_7);
-    const formatToPlainStringResult = intl.formatToPlainString(loadMore(2198)["7dMmJY"], obj);
+    const formatToPlainStringResult = intl.formatToPlainString(loadMore(2199)["7dMmJY"], obj);
     obj = { style: loadMoreButton.container };
     obj1 = { displayType };
-    const items1 = [callback2(FamilyCenterActivitySectionHeader, obj1), substr.map((action) => outer1_9(loadMore(13854), { action }, action.event_id)), ];
+    const items1 = [callback2(FamilyCenterActivitySectionHeader, obj1), substr.map((action) => outer1_9(loadMore(13865), { action }, action.event_id)), ];
     if (substr.length >= actionTotalsForDisplayType) {
       items1[2] = null;
       obj.children = items1;
@@ -122,8 +122,8 @@ export default function FamilyCenterActivitySection(displayType) {
       } else {
         const obj5 = { style: loadMoreButton.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp4 };
         const obj6 = { style: loadMoreButton.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-        obj5.children = callback2(displayType(4126).Text, obj6);
-        tmp7Result = tmp7(displayType(4660).PressableOpacity, obj5);
+        obj5.children = callback2(displayType(4127).Text, obj6);
+        tmp7Result = tmp7(displayType(4661).PressableOpacity, obj5);
       }
       obj2.children = tmp7Result;
       callback2(closure_6, obj2);

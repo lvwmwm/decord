@@ -1,12 +1,12 @@
-// Module ID: 15296
-// Function ID: 116688
+// Module ID: 15306
+// Function ID: 116816
 // Name: jsx
-// Dependencies: [31, 8337, 33, 5515, 4489, 2]
+// Dependencies: [31, 8072, 33, 5515, 4490, 2]
 // Exports: default
 
-// Module 15296 (jsx)
+// Module 15306 (jsx)
 import "result";
-import module_8337 from "module_8337";
+import module_8072 from "module_8072";
 import { jsx } from "jsxProd";
 import set from "set";
 
@@ -39,5 +39,5 @@ export default function AppFreezer(manualFreeze) {
   obj.freeze = tmp;
   obj.placeholder = placeholder;
   obj.children = manualFreeze.children;
-  return jsx(lockKeys(4489).Freeze, {});
+  return jsx(lockKeys(4490).Freeze, {});
 };

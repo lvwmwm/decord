@@ -1,9 +1,9 @@
-// Module ID: 14089
-// Function ID: 108300
+// Module ID: 14100
+// Function ID: 108427
 // Name: logger
-// Dependencies: [6, 7, 4, 14085, 14087, 2]
+// Dependencies: [6, 7, 4, 14096, 14098, 2]
 
-// Module 14089 (logger)
+// Module 14100 (logger)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

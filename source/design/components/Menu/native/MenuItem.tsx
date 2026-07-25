@@ -1,9 +1,9 @@
-// Module ID: 13096
-// Function ID: 101029
+// Module ID: 13107
+// Function ID: 101156
 // Name: MenuItem
-// Dependencies: [31, 33, 4130, 13094, 4545, 5158, 5177, 2]
+// Dependencies: [31, 33, 4131, 13105, 4546, 5157, 5177, 2]
 
-// Module 13096 (MenuItem)
+// Module 13107 (MenuItem)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13094).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13105).MenuContext).menuClose;
   if (null != IconComponent) {
     let obj = { size: "sm" };
     let tmp2 = <IconComponent size="sm" />;
@@ -36,7 +36,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
     tmp2 = null;
     if (null != iconSource) {
       obj = { source: iconSource, style: tmp.formIcon };
-      tmp2 = jsx(menuClose(4545), { source: iconSource, style: tmp.formIcon });
+      tmp2 = jsx(menuClose(4546), { source: iconSource, style: tmp.formIcon });
     }
   }
   obj = { ref, style, accessibilityRole: "menuitem", disabled };
@@ -66,7 +66,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
     action();
     menuClose();
   };
-  return jsx(menuClose(5158), { ref, style, accessibilityRole: "menuitem", disabled });
+  return jsx(menuClose(5157), { ref, style, accessibilityRole: "menuitem", disabled });
 });
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
 

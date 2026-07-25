@@ -1,9 +1,9 @@
-// Module ID: 9140
-// Function ID: 71573
+// Module ID: 9032
+// Function ID: 71058
 // Name: ChannelDetailsNavigatorScreens
-// Dependencies: [9141, 2]
+// Dependencies: [9033, 2]
 
-// Module 9140 (ChannelDetailsNavigatorScreens)
+// Module 9032 (ChannelDetailsNavigatorScreens)
 const sum = require("SearchAutocompleteSelectAnalyticsActions").SEARCH_BAR_HEIGHT + 40;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsConstants.tsx");
 

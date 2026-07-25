@@ -1,10 +1,10 @@
-// Module ID: 16027
-// Function ID: 123874
+// Module ID: 16038
+// Function ID: 124042
 // Name: onClose
-// Dependencies: [31, 3947, 1197, 16028, 653, 33, 477, 3831, 16029, 1212, 5587, 5048, 4337, 675, 480, 5087, 16030, 16032, 16033, 14818, 9385, 4345, 4347, 5517, 2]
+// Dependencies: [31, 3948, 1197, 16039, 653, 33, 477, 3832, 16040, 1212, 5587, 5049, 4338, 675, 480, 5087, 16041, 16043, 16044, 14829, 9291, 4346, 4348, 5517, 2]
 // Exports: default
 
-// Module 16027 (onClose)
+// Module 16038 (onClose)
 import closure_3 from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import result from "result";
@@ -182,11 +182,11 @@ result = require("result").fileFinishedImporting("modules/age_gate/native/compon
 
 export default function ExistingUserAgeGateModal(source) {
   source = source.source;
-  let obj = source(4345);
+  let obj = source(4346);
   const shouldAgeVerifyForAgeGate = obj.useShouldAgeVerifyForAgeGate();
   let closure_1 = React.useRef(shouldAgeVerifyForAgeGate);
   const items = [source];
-  const watchAgeVerificationStatusChange = source(4347).useWatchAgeVerificationStatusChange(React.useCallback(() => {
+  const watchAgeVerificationStatusChange = source(4348).useWatchAgeVerificationStatusChange(React.useCallback(() => {
     if (ref.current) {
       source(outer1_2[10]).closeAgeGateModal(source);
       const obj = source(outer1_2[10]);

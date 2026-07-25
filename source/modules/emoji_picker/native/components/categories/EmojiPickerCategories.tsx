@@ -1,9 +1,9 @@
-// Module ID: 9442
-// Function ID: 73491
+// Module ID: 9362
+// Function ID: 73077
 // Name: EXPRESSION_FOOTER_HEIGHT
-// Dependencies: [31, 4995, 653, 1314, 33, 4130, 689, 3991, 675, 4099, 4100, 9443, 9455, 5217, 9456, 9280, 9458, 9460, 2]
+// Dependencies: [31, 4996, 653, 1314, 33, 4131, 689, 3992, 675, 4100, 4101, 9363, 9375, 5217, 9376, 9173, 9378, 9380, 2]
 
-// Module 9442 (EXPRESSION_FOOTER_HEIGHT)
+// Module 9362 (EXPRESSION_FOOTER_HEIGHT)
 import importAllResult from "result";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
 import ME from "ME";
@@ -207,8 +207,8 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
         tmp2 = categories;
         num = 7;
         obj = bottomSheetRef(categories[7]);
-        tmp3 = f73499;
-        tmp4 = obj.runOnJS(f73499)();
+        tmp3 = f73085;
+        tmp4 = obj.runOnJS(f73085)();
       }
       return;
     }

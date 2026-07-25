@@ -1,10 +1,10 @@
-// Module ID: 13965
-// Function ID: 106839
+// Module ID: 13976
+// Function ID: 106966
 // Name: getRecapOrbCountFromPullProgress
-// Dependencies: [57, 31, 3991, 13961, 2]
+// Dependencies: [57, 31, 3992, 13972, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 13965 (getRecapOrbCountFromPullProgress)
+// Module 13976 (getRecapOrbCountFromPullProgress)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -31,7 +31,7 @@ const tmp2 = (() => {
 let closure_5 = tmp2;
 let closure_6 = { code: "function useBountiesRecapOrbCountTsx2(){const{enabled,recapRevealHeight,getRevealProgress,scrollY,lastBountyScrollOffset,RECAP_ORB_COUNT_REACHES_TARGET_AT_PROGRESS,getRecapOrbCountFromPullProgress,targetOrbAmount}=this.__closure;if(!enabled||recapRevealHeight<=0){return{count:0,revealed:false};}const pullProgress=getRevealProgress(scrollY.get(),lastBountyScrollOffset,recapRevealHeight)/RECAP_ORB_COUNT_REACHES_TARGET_AT_PROGRESS;if(pullProgress<=0.1){return{count:0,revealed:false};}return{count:getRecapOrbCountFromPullProgress(pullProgress,targetOrbAmount),revealed:true};}" };
 let closure_7 = { code: "function useBountiesRecapOrbCountTsx3({count:count,revealed:revealed}){const{runOnJS,resetDisplayCount,setDisplayCountMonotonic}=this.__closure;if(!revealed){runOnJS(resetDisplayCount)();return;}runOnJS(setDisplayCountMonotonic)(count);}" };
-let result = require("module_3991").fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapOrbCount.tsx");
+let result = require("module_3992").fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapOrbCount.tsx");
 
 export const useBountiesRecapOrbCount = function useBountiesRecapOrbCount(scrollY) {
   let closure_5;

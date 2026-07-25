@@ -1,10 +1,10 @@
-// Module ID: 15587
-// Function ID: 120210
+// Module ID: 15597
+// Function ID: 120338
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [57, 31, 27, 1348, 33, 4130, 689, 7685, 7654, 1212, 1358, 7653, 15550, 9203, 4126, 5501, 5085, 15588, 15589, 566, 2]
+// Dependencies: [57, 31, 27, 1348, 33, 4131, 689, 7627, 7596, 1212, 1358, 7595, 15560, 9095, 4127, 5501, 5085, 15598, 15599, 566, 2]
 // Exports: default
 
-// Module 15587 (ChannelSettingsChangeDefaultForumLayout)
+// Module 15597 (ChannelSettingsChangeDefaultForumLayout)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

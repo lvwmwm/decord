@@ -1,10 +1,10 @@
-// Module ID: 6642
-// Function ID: 51015
+// Module ID: 6495
+// Function ID: 58068
 // Name: getPremiumManagementMethod
-// Dependencies: [653, 482, 33, 3, 4471, 1212, 477, 1553, 6643, 6646, 2]
+// Dependencies: [653, 482, 33, 3, 4472, 1212, 477, 1553, 6496, 6499, 2]
 // Exports: getExternalManagementMessage
 
-// Module 6642 (getPremiumManagementMethod)
+// Module 6495 (getPremiumManagementMethod)
 import { SubscriptionStatusTypes } from "ME";
 import { PaymentGatewayToFriendlyName as closure_4 } from "sum";
 import { jsx } from "jsxProd";
@@ -29,7 +29,7 @@ function defaultMobileWebNitroManagementSuccessCallback() {
 }
 function defaultMobileWebNitroManagementFailureCallback(arg0) {
   importDefaultResult.error("Failed to open mobile web Nitro Management page, error response: ", arg0);
-  let obj = importDefault(4471);
+  let obj = importDefault(4472);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.NrBVjw);
@@ -117,7 +117,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
               const t = require(1212) /* getSystemLocale */.t;
               obj.text = intl3.string(tmp13 ? t.tqSSSA : t["olSp/D"]);
               obj.variant = "text-sm/semibold";
-              jsx(require(6646) /* LinkButton */.LinkButton, {});
+              jsx(require(6499) /* LinkButton */.LinkButton, {});
               const tmp18 = jsx;
             } else {
               const intl2 = require(1212) /* getSystemLocale */.intl;

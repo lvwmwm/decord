@@ -1,10 +1,10 @@
-// Module ID: 9384
-// Function ID: 73242
+// Module ID: 9290
+// Function ID: 72767
 // Name: isNSFWInvite
-// Dependencies: [1838, 3758, 1849, 653, 477, 4337, 9385, 1934, 8013, 2]
+// Dependencies: [1838, 3759, 1850, 653, 477, 4338, 9291, 1935, 5678, 2]
 // Exports: handleNSFWGuildInvite, shouldNSFWGateGuild
 
-// Module 9384 (isNSFWInvite)
+// Module 9290 (isNSFWInvite)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -48,7 +48,7 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
     if (!tmp6) {
       obj = {};
       let id1;
-      const obj2 = importDefault(4337);
+      const obj2 = importDefault(4338);
       if (null != invite) {
         const guild2 = invite.guild;
         if (null != guild2) {
@@ -56,9 +56,9 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
         }
       }
       obj.guildId = id1;
-      obj2.pushLazy(require(1934) /* maybeLoadBundle */(9385, dependencyMap.paths), obj);
+      obj2.pushLazy(require(1935) /* maybeLoadBundle */(9291, dependencyMap.paths), obj);
       flag2 = true;
-      const tmp10 = require(1934) /* maybeLoadBundle */(9385, dependencyMap.paths);
+      const tmp10 = require(1935) /* maybeLoadBundle */(9291, dependencyMap.paths);
     }
     return flag2;
   } else {
@@ -84,8 +84,8 @@ export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
         let tmp15 = guild.nsfwLevel === GuildNSFWContentLevel.AGE_RESTRICTED;
         let nsfwAllowed = currentUser.nsfwAllowed;
         if (nsfwAllowed) {
-          nsfwAllowed = require(8013) /* resolveNsfwTogglesWithDefaults */.getViewNsfwGuildsOrDefault();
-          const obj2 = require(8013) /* resolveNsfwTogglesWithDefaults */;
+          nsfwAllowed = require(5678) /* resolveNsfwTogglesWithDefaults */.getViewNsfwGuildsOrDefault();
+          const obj2 = require(5678) /* resolveNsfwTogglesWithDefaults */;
         }
         let tmp20 = !canResult;
         if (tmp20) {

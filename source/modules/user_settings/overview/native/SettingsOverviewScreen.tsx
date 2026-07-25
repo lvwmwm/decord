@@ -1,10 +1,10 @@
-// Module ID: 15637
-// Function ID: 120520
+// Module ID: 15647
+// Function ID: 120648
 // Name: getOverviewSettings
-// Dependencies: [31, 7751, 33, 1212, 1327, 3776, 10127, 13602, 2]
+// Dependencies: [31, 7697, 33, 1212, 1327, 3777, 10059, 13613, 2]
 // Exports: default
 
-// Module 15637 (getOverviewSettings)
+// Module 15647 (getOverviewSettings)
 import result from "result";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -79,7 +79,7 @@ function getOverviewSettings(isPremiumUser) {
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/overview/native/SettingsOverviewScreen.tsx");
 
 export default function SettingsOverviewScreen() {
-  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(3776).useHasPremiumSubscriptionToDisplay();
+  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(3777).useHasPremiumSubscriptionToDisplay();
   const items = [hasPremiumSubscriptionToDisplay];
   const node = React.useMemo(() => {
     let obj = hasPremiumSubscriptionToDisplay(outer1_1[6]);
@@ -87,5 +87,5 @@ export default function SettingsOverviewScreen() {
     obj = { isPremiumUser: hasPremiumSubscriptionToDisplay };
     return obj.createList(obj);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(13602).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(13613).SearchableSettingsList, { node });
 };

@@ -1,10 +1,10 @@
-// Module ID: 11609
-// Function ID: 90293
+// Module ID: 11576
+// Function ID: 90016
 // Name: usePowerupGroupConfig
-// Dependencies: [31, 1838, 566, 7934, 1212, 2230, 11610, 11611, 1327, 2]
+// Dependencies: [31, 1838, 566, 7881, 1212, 2231, 11577, 11578, 1327, 2]
 // Exports: default
 
-// Module 11609 (usePowerupGroupConfig)
+// Module 11576 (usePowerupGroupConfig)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

@@ -1,9 +1,9 @@
-// Module ID: 4142
-// Function ID: 34490
+// Module ID: 4143
+// Function ID: 34501
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 5, 57, 6, 7, 1347, 4143, 1908, 4044, 6758, 5602, 5603, 6881, 5040, 3760, 1316, 1352, 1194, 5659, 1348, 4802, 4469, 1838, 4943, 4349, 3758, 3767, 1906, 4325, 1849, 12895, 653, 10256, 1355, 1354, 4326, 1211, 3, 12896, 12897, 21, 664, 686, 4365, 12898, 507, 4015, 9492, 10259, 3766, 12899, 6767, 6878, 12900, 1934, 1360, 3712, 22, 1327, 4806, 3982, 10258, 3765, 1361, 6651, 8384, 566, 2]
+// Dependencies: [15, 17, 18, 5, 57, 6, 7, 1347, 4144, 1909, 4045, 5751, 5602, 5603, 5872, 5041, 3761, 1316, 1352, 1194, 5846, 1348, 4803, 4470, 1838, 4944, 4350, 3759, 3768, 1907, 4326, 1850, 12906, 653, 5660, 1355, 1354, 4327, 1211, 3, 12907, 12908, 21, 664, 686, 4366, 12909, 507, 4016, 9413, 10191, 3767, 12910, 5761, 5868, 12911, 1935, 1360, 3713, 22, 1327, 4807, 3983, 10190, 3766, 1361, 6271, 8142, 566, 2]
 
-// Module 4142 (_isNativeReflectConstruct)
+// Module 4143 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_callSuper";
@@ -196,13 +196,13 @@ function shouldBadgeMessage(channel_id, id) {
     let tmp4 = !closure_36.isBlockedOrIgnoredForMessage(channel_id);
     if (tmp4) {
       const obj = { message: channel_id, userId: id.id, suppressEveryone: closure_38.isSuppressEveryoneEnabled(channel.guild_id), suppressRoles: closure_38.isSuppressRolesEnabled(channel.guild_id) };
-      const tmp11 = !importDefault(4365)(obj);
+      const tmp11 = !importDefault(4366)(obj);
       let tmp12 = !tmp11;
       if (tmp11) {
         tmp12 = isNonMutedPrivateMessage(channel);
       }
       tmp4 = tmp12;
-      const tmp7 = importDefault(4365);
+      const tmp7 = importDefault(4366);
     }
     tmp2 = tmp4;
   }
@@ -280,7 +280,7 @@ function shouldAutomaticallyAck(value, timestamp) {
           staffLog(value, "App not active");
           return false;
         }
-        obj = importDefault(9492);
+        obj = importDefault(9413);
       }
       if (tmp2) {
         if (!value._persisted) {
@@ -319,7 +319,7 @@ function shouldAutomaticallyAck(value, timestamp) {
                   tmp35(value, "Chat not focused");
                   flag6 = false;
                 }
-                obj2 = require(10259) /* getFocusedChannelId */;
+                obj2 = require(10191) /* getFocusedChannelId */;
               }
               return flag6;
             }
@@ -423,9 +423,9 @@ function mergeForGuild(guild) {
   })(guild);
   let value = tmp10.get(guild.id, ReadStateTypes.GUILD_HOME);
   let obj = importDefault(21);
-  const tmp4 = importDefault(3712);
-  const tmp4Result = importDefault(3712)(Date.now());
-  value.lastMessageId = obj.fromTimestamp(importDefault(3712)(Date.now()).subtract(24, "h").valueOf());
+  const tmp4 = importDefault(3713);
+  const tmp4Result = importDefault(3713)(Date.now());
+  value.lastMessageId = obj.fromTimestamp(importDefault(3713)(Date.now()).subtract(24, "h").valueOf());
   guild = guild.getGuild(guild.id);
   if (null != guild) {
     let prop;
@@ -2944,7 +2944,7 @@ tmp13 = new tmp13(require("dispatcher"), {
     } else {
       return false;
     }
-    obj = require(4806) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
+    obj = require(4807) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
   },
   MESSAGE_CREATE: function handleIncomingMessage(isPushNotification) {
     let channelId;
@@ -2969,7 +2969,7 @@ tmp13 = new tmp13(require("dispatcher"), {
         }
       }
     }
-    let obj2 = require(3982) /* getRootNavigationRef */;
+    let obj2 = require(3983) /* getRootNavigationRef */;
     const rootNavigationRef = obj2.getRootNavigationRef();
     let isReadyResult;
     if (null != rootNavigationRef) {
@@ -3025,8 +3025,8 @@ tmp13 = new tmp13(require("dispatcher"), {
       if (null != value.oldestUnreadMessageId) {
         if (!value.oldestUnreadMessageIdStale) {
           if (!hasUnreadResult) {
-            hasUnreadResult = require(10259) /* getFocusedChannelId */.getFocusedChannelId() === channelId;
-            const obj7 = require(10259) /* getFocusedChannelId */;
+            hasUnreadResult = require(10191) /* getFocusedChannelId */.getFocusedChannelId() === channelId;
+            const obj7 = require(10191) /* getFocusedChannelId */;
           }
           if (!hasUnreadResult) {
             value.oldestUnreadMessageId = message.id;
@@ -3052,7 +3052,7 @@ tmp13 = new tmp13(require("dispatcher"), {
                   }
                 }
               }
-              obj8 = require(4365) /* isMentioned */;
+              obj8 = require(4366) /* isMentioned */;
             }
             const channel = store3.getChannel(message.channel_id);
             if (isNonMutedPrivateMessage(channel)) {
@@ -3064,7 +3064,7 @@ tmp13 = new tmp13(require("dispatcher"), {
                     if (obj12.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
                       obj5 = { shouldMention: true, isMentionLowImportance: true };
                     }
-                    obj12 = require(10258) /* computeThreadNotificationSetting */;
+                    obj12 = require(10190) /* computeThreadNotificationSetting */;
                   } else if (!channel.isVocal()) {
                     if (!closure_38.isChannelMuted(channel.guild_id, channel.id)) {
                       if (closure_38.resolvedMessageNotifications(channel) === constants9.ALL_MESSAGES) {
@@ -3281,7 +3281,7 @@ tmp13 = new tmp13(require("dispatcher"), {
     return value.syncThreadSettings();
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(id) {
-    let result = require(3765) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(id);
+    let result = require(3766) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(id);
     if (result) {
       const value = tmp10.get(id.id);
       result = value.syncThreadSettings();

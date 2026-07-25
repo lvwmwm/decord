@@ -1,10 +1,10 @@
-// Module ID: 15558
-// Function ID: 119871
+// Module ID: 15568
+// Function ID: 119999
 // Name: ChannelPermissionSyncModule
-// Dependencies: [57, 5, 31, 27, 1911, 1348, 1910, 1838, 3767, 1849, 653, 33, 4130, 689, 4470, 1212, 4320, 3763, 8459, 7685, 22, 5501, 5165, 13562, 1456, 11815, 9601, 14251, 566, 1881, 10209, 1327, 5162, 9158, 4140, 2]
+// Dependencies: [57, 5, 31, 27, 1912, 1348, 1911, 1838, 3768, 1850, 653, 33, 4131, 689, 4471, 1212, 4321, 3764, 8217, 7627, 22, 5501, 5164, 13573, 1456, 11791, 9522, 14262, 566, 1882, 10141, 1327, 5161, 9050, 4141, 2]
 // Exports: default
 
-// Module 15558 (ChannelPermissionSyncModule)
+// Module 15568 (ChannelPermissionSyncModule)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
@@ -49,7 +49,7 @@ function ChannelPermissionSyncModule(channel) {
     };
     obj.show(obj);
   }, items);
-  let obj = channel(4320);
+  let obj = channel(4321);
   const channelName = obj.computeChannelName(category, closure_13, closure_12);
   obj = { style: _createForOfIteratorHelperLoose().tableRowGroupContainer };
   obj = {};
@@ -65,11 +65,11 @@ function ChannelPermissionSyncModule(channel) {
   }
   obj.title = formatToPlainStringResult;
   obj.hasIcons = true;
-  const obj3 = { icon: callback(channel(13562).RefreshIcon, {}) };
+  const obj3 = { icon: callback(channel(13573).RefreshIcon, {}) };
   let intl2 = channel(1212).intl;
   obj3.label = intl2.string(channel(1212).t.NVwuHq);
   obj3.onPress = callback;
-  obj.children = callback(channel(5165).TableRow, obj3);
+  obj.children = callback(channel(5164).TableRow, obj3);
   obj.children = callback(channel(5501).TableRowGroup, obj);
   return callback(View, obj);
 }
@@ -100,20 +100,20 @@ function AddPermission(isEditing) {
     const intl = _require(1212).intl;
     obj.title = intl.string(_require(1212).t.vPHdP5);
     obj.hasIcons = true;
-    const obj1 = { icon: callback(_require(11815).PlusMediumIcon, {}) };
+    const obj1 = { icon: callback(_require(11791).PlusMediumIcon, {}) };
     const intl2 = _require(1212).intl;
     obj1.label = intl2.string(_require(1212).t.fVWxvT);
     obj1.onPress = function onPress() {
       handleCreatePermissionOverwrite(outer1_14.ROLE);
     };
-    const items = [callback(_require(5165).TableRow, obj1), ];
-    const obj2 = { icon: callback(_require(11815).PlusMediumIcon, {}) };
+    const items = [callback(_require(5164).TableRow, obj1), ];
+    const obj2 = { icon: callback(_require(11791).PlusMediumIcon, {}) };
     const intl3 = _require(1212).intl;
     obj2.label = intl3.string(_require(1212).t.riesLt);
     obj2.onPress = function onPress() {
       handleCreatePermissionOverwrite(outer1_14.MEMBER);
     };
-    items[1] = callback(_require(5165).TableRow, obj2);
+    items[1] = callback(_require(5164).TableRow, obj2);
     obj.children = items;
     obj.children = callback2(_require(5501).TableRowGroup, obj);
     return callback(View, obj);
@@ -130,7 +130,7 @@ function RoleRow(onDelete) {
   ({ role, isEditing, onSelect } = onDelete);
   ({ name, colorString, colorStrings } = role);
   const tmp = isEveryoneRole(role);
-  let obj = { label: callback(require(9601) /* RoleLabel */.RoleLabel, { name, color: colorString, colors: colorStrings }), arrow: !isEditing };
+  let obj = { label: callback(require(9522) /* RoleLabel */.RoleLabel, { name, color: colorString, colors: colorStrings }), arrow: !isEditing };
   let tmp3 = null;
   if (isEditing) {
     tmp3 = null;
@@ -138,7 +138,7 @@ function RoleRow(onDelete) {
       obj = { color: importDefault(689).colors.ICON_FEEDBACK_CRITICAL };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.N86XcP);
-      tmp3 = callback(require(14251) /* CircleMinusIcon */.CircleMinusIcon, obj);
+      tmp3 = callback(require(14262) /* CircleMinusIcon */.CircleMinusIcon, obj);
     }
   }
   obj.icon = tmp3;
@@ -150,7 +150,7 @@ function RoleRow(onDelete) {
     }
   }
   obj.onPress = onDelete;
-  return callback(require(5165) /* TableRowInner */.TableRow, obj);
+  return callback(require(5164) /* TableRowInner */.TableRow, obj);
 }
 function RoleOverwrites(guild) {
   let dependencyMap;
@@ -164,8 +164,8 @@ function RoleOverwrites(guild) {
   obj = {};
   const merged = Object.assign(guild.channel.permissionOverwrites);
   if (null == obj[guild.id]) {
-    obj[guild.id] = importAll(3763).makeEveryoneOverwrite(guild.id);
-    const obj3 = importAll(3763);
+    obj[guild.id] = importAll(3764).makeEveryoneOverwrite(guild.id);
+    const obj3 = importAll(3764);
   }
   const found = stateFromStores.filter((arg0) => {
     let type;
@@ -214,10 +214,10 @@ function MemberRow(arg0) {
     obj = { color: importDefault(689).colors.ICON_FEEDBACK_CRITICAL };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.N86XcP);
-    tmp3 = callback(require(14251) /* CircleMinusIcon */.CircleMinusIcon, obj);
+    tmp3 = callback(require(14262) /* CircleMinusIcon */.CircleMinusIcon, obj);
   }
   obj.leading = tmp3;
-  return callback(importDefault(10209), obj);
+  return callback(importDefault(10141), obj);
 }
 function MemberOverwrites(channel) {
   let dependencyMap;

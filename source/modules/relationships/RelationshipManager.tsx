@@ -1,9 +1,9 @@
-// Module ID: 16209
-// Function ID: 125680
+// Module ID: 16220
+// Function ID: 125848
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 653, 3976, 1212, 16210, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 653, 3977, 1212, 16221, 5078, 2]
 
-// Module 16209 (_isNativeReflectConstruct)
+// Module 16220 (_isNativeReflectConstruct)
 import getSystemLocale from "getSystemLocale";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -25,20 +25,20 @@ function _isNativeReflectConstruct() {
 function handleRelationshipAdd(relationship) {
   relationship = relationship.relationship;
   if (!tmp) {
-    const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     const intl = require(1212) /* getSystemLocale */.intl;
     const obj = { username: relationship.user.username };
     AccessibilityAnnouncer.announce(intl.formatToPlainString(require(1212) /* getSystemLocale */.t.zH0kC7, obj));
-    const result = importAll(16210).showPendingNotification(relationship.user);
-    const obj2 = importAll(16210);
+    const result = importAll(16221).showPendingNotification(relationship.user);
+    const obj2 = importAll(16221);
   }
 }
 function handleFriendRequestAccepted(user) {
   user = user.user;
-  const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   const intl = require(1212) /* getSystemLocale */.intl;
   AccessibilityAnnouncer.announce(intl.formatToPlainString(require(1212) /* getSystemLocale */.t["/+7xky"], { username: user.username }));
-  const result = importAll(16210).showAcceptedNotification(user);
+  const result = importAll(16221).showAcceptedNotification(user);
 }
 tmp2 = new tmp2();
 let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/relationships/RelationshipManager.tsx");

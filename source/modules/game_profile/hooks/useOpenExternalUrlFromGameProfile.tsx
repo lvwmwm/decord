@@ -1,10 +1,10 @@
-// Module ID: 8639
-// Function ID: 68488
+// Module ID: 8415
+// Function ID: 67221
 // Name: _getDeepLinkUrl
-// Dependencies: [57, 5, 31, 8640, 8641, 3821, 2]
+// Dependencies: [57, 5, 31, 8416, 8417, 3822, 2]
 // Exports: default
 
-// Module 8639 (_getDeepLinkUrl)
+// Module 8415 (_getDeepLinkUrl)
 import _slicedToArray from "_slicedToArray";
 import _openURL from "_openURL";
 import result from "result";

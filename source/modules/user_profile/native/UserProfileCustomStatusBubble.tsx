@@ -1,9 +1,9 @@
-// Module ID: 11925
-// Function ID: 92306
+// Module ID: 11901
+// Function ID: 92111
 // Name: getClampedMaxLines
-// Dependencies: [57, 31, 27, 5510, 1852, 33, 4130, 689, 3803, 5085, 1392, 477, 4126, 5151, 8310, 9106, 9921, 4098, 11926, 5482, 1212, 4660, 11283, 2]
+// Dependencies: [57, 31, 27, 5510, 1853, 33, 4131, 689, 3804, 5085, 1392, 477, 4127, 5150, 8045, 8998, 9849, 4099, 11902, 5482, 1212, 4661, 11245, 2]
 
-// Module 11925 (getClampedMaxLines)
+// Module 11901 (getClampedMaxLines)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -28,7 +28,7 @@ function EmojiImage(id) {
   if (animated === undefined) {
     animated = false;
   }
-  const AnimateEmoji = require(3803) /* explicitContentFromProto */.AnimateEmoji;
+  const AnimateEmoji = require(3804) /* explicitContentFromProto */.AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   let obj = { style: items };
   items = [{ height: size, width: size }, id.style];
@@ -99,7 +99,7 @@ function TextStatusContent(arg0) {
     }
     const items2 = [tmp14, text];
     obj.children = items2;
-    return callback3(require(4126) /* Text */.Text, obj);
+    return callback3(require(4127) /* Text */.Text, obj);
   } else {
     obj1 = require(477) /* set */;
     const obj9 = {};
@@ -116,7 +116,7 @@ function EmojiOnlyStatusContent(arg0) {
   let emoji;
   let size;
   ({ emoji, size } = arg0);
-  const AnimateEmoji = require(3803) /* explicitContentFromProto */.AnimateEmoji;
+  const AnimateEmoji = require(3804) /* explicitContentFromProto */.AnimateEmoji;
   let id;
   const setting = AnimateEmoji.useSetting();
   if (null != emoji) {
@@ -150,7 +150,7 @@ function EmojiOnlyStatusContent(arg0) {
     str = name;
   }
   obj1.name = str;
-  obj.children = tmp13(importDefault(5151), obj1);
+  obj.children = tmp13(importDefault(5150), obj1);
   return tmp11(tmp12, obj);
 }
 ({ PixelRatio: closure_5, View: closure_6 } = get_ActivityIndicator);
@@ -246,9 +246,9 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
   const textVariant = tmp3.textVariant;
   const emojiOnlyEmojiSize = tmp3.emojiOnlyEmojiSize;
   ({ statusBubblePaddingHorizontal, statusBubblePaddingVertical } = tmp3);
-  obj = _require(8310);
+  obj = _require(8045);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let obj1 = _require(9106);
+  let obj1 = _require(8998);
   if (undefined === previewText) {
     let state;
     if (null != customStatusActivity) {
@@ -328,7 +328,7 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
   obj = { top: statusBubblePaddingVertical, bottom: statusBubblePaddingVertical, left: statusBubblePaddingHorizontal, right: statusBubblePaddingHorizontal };
   const ref = textVariant.useRef(null);
   const imperativeHandle = textVariant.useImperativeHandle(arg1, () => ref.current);
-  let obj4 = _require(9921);
+  let obj4 = _require(9849);
   const scaledTextLineHeight = obj4.useScaledTextLineHeight(textVariant);
   if (!tmp7) {
     if (!tmp15) {
@@ -433,14 +433,14 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
         tmp59 = obj10;
       }
       obj9.style = tmp59;
-      obj8.children = callback2(_require(11283).CirclePlusIcon, obj9);
+      obj8.children = callback2(_require(11245).CirclePlusIcon, obj9);
       const items8 = [callback2(trackUserProfileAction, obj8), , ];
       const obj11 = { style: tmp2.addStatusIconSpacer };
       items8[1] = callback2(trackUserProfileAction, obj11);
       items8[2] = stringResult;
       obj6.children = items8;
-      obj4.children = tmp43(_require(4126).Text, obj6);
-      let tmp26Result = tmp37(_require(4660).PressableOpacity, obj4);
+      obj4.children = tmp43(_require(4127).Text, obj6);
+      let tmp26Result = tmp37(_require(4661).PressableOpacity, obj4);
       obj21 = _require(477);
       const tmp55 = trackUserProfileAction;
     } else {
@@ -464,7 +464,7 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
     obj13.onPress = handlePressAddOrEditStatus;
     obj13.hitSlop = obj;
     obj13.children = renderStatusContent();
-    tmp26Result = callback2(_require(4660).PressableOpacity, obj13);
+    tmp26Result = callback2(_require(4661).PressableOpacity, obj13);
   } else {
     if (null != onPressTruncatedStatus) {
       if (tmp16[0]) {
@@ -490,7 +490,7 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
           obj14.onPress = onPressTruncatedStatus;
           obj14.hitSlop = obj;
           obj14.children = renderStatusContent();
-          tmp26Result = callback2(_require(4660).PressableOpacity, obj14);
+          tmp26Result = callback2(_require(4661).PressableOpacity, obj14);
           const tmp26 = callback2;
         }
       }

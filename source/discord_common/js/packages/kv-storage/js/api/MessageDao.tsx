@@ -1,9 +1,9 @@
-// Module ID: 1897
-// Function ID: 21270
+// Module ID: 1898
+// Function ID: 21281
 // Name: makeCell
-// Dependencies: [6, 7, 1887, 1889, 2]
+// Dependencies: [6, 7, 1888, 1890, 2]
 
-// Module 1897 (makeCell)
+// Module 1898 (makeCell)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

@@ -1,10 +1,10 @@
-// Module ID: 9856
-// Function ID: 76414
+// Module ID: 9780
+// Function ID: 76009
 // Name: useCanSetThumbnail
 // Dependencies: [1348, 624, 2]
 // Exports: default
 
-// Module 9856 (useCanSetThumbnail)
+// Module 9780 (useCanSetThumbnail)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

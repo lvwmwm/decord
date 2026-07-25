@@ -1,10 +1,10 @@
-// Module ID: 6232
-// Function ID: 50313
+// Module ID: 7152
+// Function ID: 59963
 // Name: GiftingTier5LargeBadge
-// Dependencies: [33, 5085, 6233, 2]
+// Dependencies: [33, 5085, 7153, 2]
 // Exports: GiftingTier5LargeBadge
 
-// Module 6232 (GiftingTier5LargeBadge)
+// Module 7152 (GiftingTier5LargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GiftingTier5LargeBadge.native.tsx");
@@ -27,7 +27,7 @@ export const GiftingTier5LargeBadge = function GiftingTier5LargeBadge(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6233) };
+  obj = { uri: importDefault(7153) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

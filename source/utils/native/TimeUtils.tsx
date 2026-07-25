@@ -1,10 +1,10 @@
-// Module ID: 4704
-// Function ID: 40944
+// Module ID: 4705
+// Function ID: 40956
 // Name: getTimeFormat
 // Dependencies: [2]
 // Exports: getTimeFormat
 
-// Module 4704 (getTimeFormat)
+// Module 4705 (getTimeFormat)
 let result = require("set").fileFinishedImporting("utils/native/TimeUtils.tsx");
 
 export const getTimeFormat = function getTimeFormat(playableDuration, padMinutes) {

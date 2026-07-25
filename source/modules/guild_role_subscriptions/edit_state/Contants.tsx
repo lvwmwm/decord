@@ -1,9 +1,9 @@
-// Module ID: 14169
-// Function ID: 108992
+// Module ID: 14180
+// Function ID: 109119
 // Name: result
-// Dependencies: [653, 1914, 2]
+// Dependencies: [653, 1915, 2]
 
-// Module 14169 (result)
+// Module 14180 (result)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const obj = { id: "0", guildId: "0", name: "", mentionable: false, managed: false, position: 0, hoist: false, permissions: require("ME").Permissions.SEND_MESSAGES, color: 0, colors: { primary_color: 0, secondary_color: null, tertiary_color: null }, colorString: "0", colorStrings: { primaryColor: "0", secondaryColor: null, tertiaryColor: null }, icon: null, unicodeEmoji: null, flags: 0, description: null, tags: {}, version: 0 };

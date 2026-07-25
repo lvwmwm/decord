@@ -1,15 +1,15 @@
-// Module ID: 12006
-// Function ID: 92794
+// Module ID: 11982
+// Function ID: 92599
 // Name: UserProfileEditNoteModal
-// Dependencies: [31, 33, 4337, 5517, 478, 1212, 4126, 5087, 12007, 2]
+// Dependencies: [31, 33, 4338, 5517, 478, 1212, 4127, 5087, 11983, 2]
 // Exports: default
 
-// Module 12006 (UserProfileEditNoteModal)
+// Module 11982 (UserProfileEditNoteModal)
 import "result";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("module_4337").fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
+const result = require("module_4338").fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
 
 export default function UserProfileEditNoteModal(arg0) {
   let dependencyMap;

@@ -1,5 +1,5 @@
 // Module ID: 1165
-// Function ID: 13259
+// Function ID: 13265
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 31, 27, 978, 973]
 // Exports: getRNSentryOnDrawReporter

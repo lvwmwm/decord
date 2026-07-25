@@ -1,10 +1,10 @@
-// Module ID: 9106
-// Function ID: 71394
+// Module ID: 8998
+// Function ID: 70879
 // Name: useGameMentionsAsPlainText
-// Dependencies: [31, 4151, 1849, 4567, 6864, 566, 1832, 8643, 1212, 2]
+// Dependencies: [31, 4152, 1850, 4568, 5639, 566, 1832, 8419, 1212, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9106 (useGameMentionsAsPlainText)
+// Module 8998 (useGameMentionsAsPlainText)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 10247
-// Function ID: 79033
+// Module ID: 10180
+// Function ID: 78668
 // Name: Notifications
-// Dependencies: [31, 10248, 33, 566, 10281, 2]
+// Dependencies: [31, 10181, 33, 566, 10214, 2]
 // Exports: default
 
-// Module 10247 (Notifications)
+// Module 10180 (Notifications)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ export default function Notifications() {
   let tmp2 = null;
   if (null != stateFromStores) {
     obj = { notification: stateFromStores };
-    tmp2 = jsx(importDefault(10281), { notification: stateFromStores }, stateFromStores.key);
+    tmp2 = jsx(importDefault(10214), { notification: stateFromStores }, stateFromStores.key);
   }
   return tmp2;
 };

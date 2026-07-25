@@ -1,10 +1,10 @@
-// Module ID: 4524
-// Function ID: 39765
+// Module ID: 4525
+// Function ID: 39776
 // Name: Dialog
-// Dependencies: [31, 27, 33, 4525, 2]
+// Dependencies: [31, 27, 33, 4526, 2]
 // Exports: Dialog
 
-// Module 4524 (Dialog)
+// Module 4525 (Dialog)
 import result from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -28,5 +28,5 @@ export const Dialog = function Dialog(dialogKey) {
   }
   obj.nativeID = id;
   const merged1 = Object.assign(merged);
-  return jsx(require(4525) /* AccessibilityView */.AccessibilityView, { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss });
+  return jsx(require(4526) /* AccessibilityView */.AccessibilityView, { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss });
 };

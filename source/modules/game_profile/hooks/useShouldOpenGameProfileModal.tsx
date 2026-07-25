@@ -1,10 +1,10 @@
-// Module ID: 8632
-// Function ID: 68423
+// Module ID: 8408
+// Function ID: 67156
 // Name: getRejectionReasons
-// Dependencies: [31, 4151, 653, 675, 1360, 8633, 8223, 8634, 44, 2]
+// Dependencies: [31, 4152, 653, 675, 1360, 8409, 7966, 8410, 44, 2]
 // Exports: default, gameIdIsAcceptable
 
-// Module 8632 (getRejectionReasons)
+// Module 8408 (getRejectionReasons)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
@@ -16,7 +16,7 @@ function getRejectionReasons(gameFlags) {
     return items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(gameFlags.gameFlags, require(8633) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(gameFlags.gameFlags, require(8409) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       items1.push(closure_7.Disabled);
     }
     obj2 = importAll(1360);

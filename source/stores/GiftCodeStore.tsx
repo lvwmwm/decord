@@ -1,9 +1,9 @@
-// Module ID: 8237
-// Function ID: 64943
+// Module ID: 7970
+// Function ID: 63449
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8238, 653, 4015, 3712, 4366, 686, 8239, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 7971, 653, 4016, 3713, 4367, 686, 7972, 566, 2]
 
-// Module 8237 (_isNativeReflectConstruct)
+// Module 7970 (_isNativeReflectConstruct)
 import closure_3 from "ME";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -35,7 +35,7 @@ function updateGiftCode(giftCode) {
   } else {
     const result1 = set(code, fromServer);
     if (null != fromServer.expiresAt) {
-      const Timeout = require(4015) /* _createForOfIteratorHelperLoose */.Timeout;
+      const Timeout = require(4016) /* _createForOfIteratorHelperLoose */.Timeout;
       const prototype = Timeout.prototype;
       const timeout = new Timeout();
       closure_12[code] = timeout;
@@ -50,7 +50,7 @@ function checkGiftCodeExpiry(code) {
     if (null != value.expiresAt) {
       const expiresAt = value.expiresAt;
       const valueOfResult = expiresAt.valueOf();
-      const diff = valueOfResult - importDefault(3712)().valueOf();
+      const diff = valueOfResult - importDefault(3713)().valueOf();
       if (diff <= 0) {
         map.delete(code);
         delete tmp[tmp2];
@@ -61,7 +61,7 @@ function checkGiftCodeExpiry(code) {
           outer1_24(closure_0);
         });
       }
-      const obj2 = importDefault(3712)();
+      const obj2 = importDefault(3713)();
     }
   }
 }
@@ -75,9 +75,9 @@ function resolveMessageGiftCodes(message, arg1) {
       return false;
     }
   }
-  let obj = require(4366) /* unambiguousRegex */;
-  const isGiftCodeEmbedResult = require(4366) /* unambiguousRegex */.isGiftCodeEmbed(message);
-  const findGiftCodes = require(4366) /* unambiguousRegex */.findGiftCodes;
+  let obj = require(4367) /* unambiguousRegex */;
+  const isGiftCodeEmbedResult = require(4367) /* unambiguousRegex */.isGiftCodeEmbed(message);
+  const findGiftCodes = require(4367) /* unambiguousRegex */.findGiftCodes;
   if (isGiftCodeEmbedResult) {
     let embeds;
     if (null != message) {
@@ -375,7 +375,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     let skuId;
     let subscriptionPlanId;
     ({ skuId, subscriptionPlanId } = arg0);
-    set.add(require(4366) /* unambiguousRegex */.makeComboId(skuId, subscriptionPlanId));
+    set.add(require(4367) /* unambiguousRegex */.makeComboId(skuId, subscriptionPlanId));
   },
   GIFT_CODES_FETCH_SUCCESS: function handleGiftCodesFetchSuccess(giftCodes) {
     let skuId;
@@ -383,7 +383,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     giftCodes = giftCodes.giftCodes;
     ({ skuId, subscriptionPlanId } = giftCodes);
     const item = giftCodes.forEach(updateGiftCode);
-    const comboId = require(4366) /* unambiguousRegex */.makeComboId(skuId, subscriptionPlanId);
+    const comboId = require(4367) /* unambiguousRegex */.makeComboId(skuId, subscriptionPlanId);
     closure_18[comboId] = Date.now();
     set.delete(comboId);
   },
@@ -391,7 +391,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     let skuId;
     let subscriptionPlanId;
     ({ skuId, subscriptionPlanId } = arg0);
-    set.delete(require(4366) /* unambiguousRegex */.makeComboId(skuId, subscriptionPlanId));
+    set.delete(require(4367) /* unambiguousRegex */.makeComboId(skuId, subscriptionPlanId));
   },
   MESSAGE_CREATE: handleMessage,
   MESSAGE_UPDATE: handleMessage,

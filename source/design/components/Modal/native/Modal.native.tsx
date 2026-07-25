@@ -1,10 +1,10 @@
-// Module ID: 11100
-// Function ID: 86338
+// Module ID: 11059
+// Function ID: 85971
 // Name: Modal
 // Dependencies: [31, 33, 1557, 5517, 5084, 2]
 // Exports: Modal
 
-// Module 11100 (Modal)
+// Module 11059 (Modal)
 import "result";
 import { jsx } from "jsxProd";
 

@@ -1,9 +1,9 @@
-// Module ID: 5656
-// Function ID: 48402
+// Module ID: 6001
+// Function ID: 53410
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5657, 1849, 21, 4351, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 6002, 1850, 21, 4352, 566, 686, 2]
 
-// Module 5656 (_isNativeReflectConstruct)
+// Module 6001 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -136,7 +136,7 @@ function handleLoadThreadsSuccess(firstMessages) {
 function storeFirstMessage(channel_id, first_message) {
   let messageRecord = null;
   if (null != first_message) {
-    let obj = require(4351) /* createMinimalMessageRecord */;
+    let obj = require(4352) /* createMinimalMessageRecord */;
     messageRecord = obj.createMessageRecord(first_message);
   }
   obj = { loaded: true, firstMessage: messageRecord };
@@ -257,9 +257,9 @@ tmp2 = new tmp2(require("dispatcher"), {
           obj = {};
           const result = obj.castMessageIdAsChannelId(message.message.id);
           const merged = Object.assign(tmp14);
-          obj["firstMessage"] = require(4351) /* createMinimalMessageRecord */.updateMessageRecord(tmp14.firstMessage, message.message);
+          obj["firstMessage"] = require(4352) /* createMinimalMessageRecord */.updateMessageRecord(tmp14.firstMessage, message.message);
           dependencyMap[result] = obj;
-          const obj3 = require(4351) /* createMinimalMessageRecord */;
+          const obj3 = require(4352) /* createMinimalMessageRecord */;
         }
         tmp10 = tmp;
       }
@@ -370,9 +370,9 @@ tmp2 = new tmp2(require("dispatcher"), {
       tmp2 = tmp.id === obj.castChannelIdAsMessageId(channelId);
     }
     if (tmp2) {
-      obj = { loaded: true, firstMessage: require(4351) /* createMinimalMessageRecord */.createMessageRecord(tmp) };
+      obj = { loaded: true, firstMessage: require(4352) /* createMinimalMessageRecord */.createMessageRecord(tmp) };
       closure_10[channelId] = obj;
-      const obj3 = require(4351) /* createMinimalMessageRecord */;
+      const obj3 = require(4352) /* createMinimalMessageRecord */;
     }
   }
 });

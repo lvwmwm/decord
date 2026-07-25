@@ -1,10 +1,10 @@
-// Module ID: 10323
-// Function ID: 79686
+// Module ID: 10256
+// Function ID: 79339
 // Name: updateGuildPreset
-// Dependencies: [4325, 653, 662, 4328, 5079, 10318, 5073, 624, 2]
+// Dependencies: [4326, 653, 662, 4329, 5079, 10251, 5074, 624, 2]
 // Exports: updateGuildPreset, useGuildPresetSettings
 
-// Module 10323 (updateGuildPreset)
+// Module 10256 (updateGuildPreset)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserNotificationSettings } from "ME";
 import { GuildNotificationSettingsFlags as closure_5 } from "MAX_FAVORITES";
@@ -14,23 +14,23 @@ let result = require("MAX_FAVORITES").fileFinishedImporting("modules/notificatio
 
 export const updateGuildPreset = function updateGuildPreset(guildId, arg1) {
   guildFlags = guildFlags.getGuildFlags(guildId);
-  if (arg1 === require(4328) /* Presets */.Presets.ALL_MESSAGES) {
+  if (arg1 === require(4329) /* Presets */.Presets.ALL_MESSAGES) {
     let obj = { message_notifications: UserNotificationSettings.ALL_MESSAGES };
     const obj4 = importDefault(5079);
-    obj.flags = require(10318) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES);
-    const result = obj4.updateGuildNotificationSettings(guildId, obj, require(5073) /* differ */.NotificationLabels.PresetAll);
-    const obj6 = require(10318) /* resetGuildUnreadFlags */;
-  } else if (arg1 === require(4328) /* Presets */.Presets.MENTIONS) {
+    obj.flags = require(10251) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES);
+    const result = obj4.updateGuildNotificationSettings(guildId, obj, require(5074) /* differ */.NotificationLabels.PresetAll);
+    const obj6 = require(10251) /* resetGuildUnreadFlags */;
+  } else if (arg1 === require(4329) /* Presets */.Presets.MENTIONS) {
     obj = importDefault(5079);
-    obj = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: require(10318) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
-    const result1 = obj.updateGuildNotificationSettings(guildId, obj, require(5073) /* differ */.NotificationLabels.PresetMentions);
-    const obj3 = require(10318) /* resetGuildUnreadFlags */;
-  } else if (arg1 === require(4328) /* Presets */.Presets.NOTHING) {
+    obj = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: require(10251) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
+    const result1 = obj.updateGuildNotificationSettings(guildId, obj, require(5074) /* differ */.NotificationLabels.PresetMentions);
+    const obj3 = require(10251) /* resetGuildUnreadFlags */;
+  } else if (arg1 === require(4329) /* Presets */.Presets.NOTHING) {
     const obj1 = { message_notifications: UserNotificationSettings.NO_MESSAGES };
     const obj7 = importDefault(5079);
-    obj1.flags = require(10318) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS);
-    const result2 = obj7.updateGuildNotificationSettings(guildId, obj1, require(5073) /* differ */.NotificationLabels.PresetNothing);
-    const obj9 = require(10318) /* resetGuildUnreadFlags */;
+    obj1.flags = require(10251) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS);
+    const result2 = obj7.updateGuildNotificationSettings(guildId, obj1, require(5074) /* differ */.NotificationLabels.PresetNothing);
+    const obj9 = require(10251) /* resetGuildUnreadFlags */;
   }
 };
 export const useGuildPresetSettings = function useGuildPresetSettings(guildId) {
@@ -42,6 +42,6 @@ export const useGuildPresetSettings = function useGuildPresetSettings(guildId) {
   const stateFromStores1 = _require(624).useStateFromStores(items1, () => outer1_3.getMessageNotifications(closure_0));
   obj = { unread: stateFromStores, notification: stateFromStores1 };
   const obj2 = _require(624);
-  obj.preset = _require(4328).presetFromSettings(stateFromStores, stateFromStores1);
+  obj.preset = _require(4329).presetFromSettings(stateFromStores, stateFromStores1);
   return obj;
 };

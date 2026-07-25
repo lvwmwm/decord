@@ -1,9 +1,9 @@
-// Module ID: 16160
-// Function ID: 125246
+// Module ID: 16171
+// Function ID: 125414
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 7, 6, 15, 17, 18, 9232, 4812, 1849, 7542, 11761, 653, 11780, 16161, 11732, 11760, 668, 8526, 686, 11739, 11808, 5078, 2]
+// Dependencies: [5, 7, 6, 15, 17, 18, 9124, 4813, 1850, 6638, 11731, 653, 11756, 16172, 11702, 11730, 668, 8286, 686, 11709, 11784, 5078, 2]
 
-// Module 16160 (_isNativeReflectConstruct)
+// Module 16171 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -84,7 +84,7 @@ let items = [
       }
     },
     transitionToStep() {
-      const result = require(11760) /* _startContactSyncForDiscoverability */.transitionToHubEmailConnectionModal(require(668) /* keys */.ModalAnimation.SLIDE_IN, true);
+      const result = require(11730) /* _startContactSyncForDiscoverability */.transitionToHubEmailConnectionModal(require(668) /* keys */.ModalAnimation.SLIDE_IN, true);
     }
   },
   {
@@ -93,7 +93,7 @@ let items = [
       return store2.getType() === NewUserTypes.ORGANIC_REGISTERED;
     },
     transitionToStep() {
-      return require(11760) /* _startContactSyncForDiscoverability */.transitionToNUFGuildTemplatesModal(require(668) /* keys */.ModalAnimation.SLIDE_IN);
+      return require(11730) /* _startContactSyncForDiscoverability */.transitionToNUFGuildTemplatesModal(require(668) /* keys */.ModalAnimation.SLIDE_IN);
     }
   },
 

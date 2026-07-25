@@ -1,10 +1,10 @@
-// Module ID: 6773
-// Function ID: 53246
+// Module ID: 5769
+// Function ID: 50520
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 4129, 1921, 6774, 6789, 6790, 6791, 6792, 6796, 6776, 6802, 6803, 655, 653, 6819, 6820, 3982, 686, 6821, 6822, 6824, 507, 4029, 5734, 6823, 6786, 6825, 6826, 2]
+// Dependencies: [5, 4130, 1922, 5770, 5785, 5786, 5787, 5788, 5792, 5772, 5798, 5799, 655, 653, 5815, 5816, 3983, 686, 5817, 5818, 5823, 507, 4030, 5824, 5819, 5782, 5825, 5826, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 6773 (_createForOfIteratorHelperLoose)
+// Module 5769 (_createForOfIteratorHelperLoose)
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -112,7 +112,7 @@ function openCollectiblesShop(arg0) {
 }
 function openCollectiblesShopMobile(screen) {
   dispatchOpenCollectiblesShop(screen);
-  let obj = require(3982) /* getRootNavigationRef */;
+  let obj = require(3983) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -150,7 +150,7 @@ function dispatchOpenCollectiblesShop(screen) {
 function closeCollectiblesShop() {
   importDefault(686).dispatch({ type: "COLLECTIBLES_SHOP_CLOSE" });
   const obj = importDefault(686);
-  require(6821) /* pushLayer */.popLayer();
+  require(5817) /* pushLayer */.popLayer();
 }
 function areOptionalBooleansEqual(arg0, arg1) {
   return Boolean(arg0) === Boolean(arg1);
@@ -511,7 +511,7 @@ export default { openCollectiblesShop, closeCollectiblesShop, fetchCollectiblesP
 export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
-  const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
   let tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {
@@ -692,7 +692,7 @@ export const maybeFetchCollectiblesProduct = function maybeFetchCollectiblesProd
 export const seedCollectiblesProductFromStandaloneLoad = function seedCollectiblesProductFromStandaloneLoad(arg0) {
   let iter2;
   const timestamp = Date.now();
-  let obj = require(6786) /* getPriceForCollectiblesProduct */;
+  let obj = require(5782) /* getPriceForCollectiblesProduct */;
   const items = [arg0];
   const tmp2 = _createForOfIteratorHelperLoose(obj.extendVariantsProducts(items));
   let iter = tmp2();

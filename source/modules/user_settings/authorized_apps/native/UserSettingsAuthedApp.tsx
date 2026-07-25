@@ -1,10 +1,10 @@
-// Module ID: 13895
-// Function ID: 106338
+// Module ID: 13906
+// Function ID: 106465
 // Name: WarningLabel
-// Dependencies: [31, 27, 1347, 5066, 1348, 3767, 4325, 1921, 653, 9140, 10449, 33, 4130, 689, 4086, 4126, 1456, 1457, 1212, 5470, 10554, 8999, 566, 11659, 1392, 4472, 11658, 4098, 10450, 1934, 480, 8962, 7568, 7375, 5793, 8380, 3982, 5079, 5073, 21, 11206, 9051, 5501, 5502, 5165, 2]
+// Dependencies: [31, 27, 1347, 5067, 1348, 3768, 4326, 1922, 653, 9032, 10383, 33, 4131, 689, 4087, 4127, 1456, 1457, 1212, 5470, 10546, 8887, 566, 11628, 1392, 4473, 11627, 4099, 10384, 1935, 480, 8850, 6664, 6448, 6449, 8138, 3983, 5079, 5074, 21, 11167, 8939, 5501, 5502, 5164, 2]
 // Exports: default
 
-// Module 13895 (WarningLabel)
+// Module 13906 (WarningLabel)
 import showAlert from "showAlert";
 import get_ActivityIndicator from "showActionSheet";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -31,9 +31,9 @@ function WarningLabel(text) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.warningContainer };
   obj = { size: "xs", color: importDefault(689).colors.TEXT_MUTED, style: tmp.warningIcon };
-  const items = [callback(require(4086) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
+  const items = [callback(require(4087) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
   obj = { color: "text-default", variant: "text-sm/medium", children: text.text };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_5, obj);
 }
@@ -71,7 +71,7 @@ function handleDeleteApp(outer1_1) {
   }
   obj.location = _location;
   obj.applicationId = application.id;
-  importDefault(10554).leaveActivity(obj);
+  importDefault(10546).leaveActivity(obj);
 }
 ({ ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ UserSettingsSections: closure_12, AnalyticsSections: closure_13, AnalyticsPages: closure_14 } = ME);

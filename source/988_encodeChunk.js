@@ -1,5 +1,5 @@
 // Module ID: 988
-// Function ID: 10638
+// Function ID: 10644
 // Name: encodeChunk
 // Dependencies: []
 

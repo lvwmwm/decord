@@ -1,9 +1,9 @@
-// Module ID: 15241
-// Function ID: 115984
+// Module ID: 15251
+// Function ID: 116112
 // Name: ICYMI_INFO_MODAL_KEY
 // Dependencies: [2]
 
-// Module 15241 (ICYMI_INFO_MODAL_KEY)
+// Module 15251 (ICYMI_INFO_MODAL_KEY)
 const result = require("set").fileFinishedImporting("modules/icymi/native/info_modal/ICYMIInfoModalTypes.tsx");
 
 export const ICYMI_INFO_MODAL_KEY = "icymi-info-modal";

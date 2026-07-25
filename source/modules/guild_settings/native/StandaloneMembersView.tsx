@@ -1,10 +1,10 @@
-// Module ID: 15342
-// Function ID: 116939
+// Module ID: 15352
+// Function ID: 117067
 // Name: StandaloneMembersView
-// Dependencies: [31, 33, 1456, 1557, 8482, 5087, 1212, 15343, 11008, 11021, 11023, 5517, 2]
+// Dependencies: [31, 33, 1456, 1557, 8242, 5087, 1212, 15353, 10964, 10977, 10979, 5517, 2]
 // Exports: default
 
-// Module 15342 (StandaloneMembersView)
+// Module 15352 (StandaloneMembersView)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export default function StandaloneMembersView(guildId) {
   const importDefault = obj.useNavigation();
   const items = [guildId];
   const effect = React.useEffect(() => {
-    navigation(8482).init(guildId);
+    navigation(8242).init(guildId);
   }, items);
   obj = { paddingBottom: 16 + importDefault(1557)().bottom };
   const dependencyMap = { contentContainerStyle: obj };
@@ -32,7 +32,7 @@ export default function StandaloneMembersView(guildId) {
       return outer1_4(guildId(5087).NavigatorHeader, obj);
     },
     render() {
-      return outer1_4(navigation(15343), { guildId });
+      return outer1_4(navigation(15353), { guildId });
     }
   };
   obj[constants.MAIN] = obj1;
@@ -40,7 +40,7 @@ export default function StandaloneMembersView(guildId) {
     render(arg0) {
       const merged = Object.assign(arg0);
       const merged1 = Object.assign(dependencyMap);
-      return outer1_4(guildId(11008).GuildSettingsModalMemberEditScene, { guildId });
+      return outer1_4(guildId(10964).GuildSettingsModalMemberEditScene, { guildId });
     }
   };
   obj[constants.MEMBER_KICK] = {
@@ -50,7 +50,7 @@ export default function StandaloneMembersView(guildId) {
     render(arg0) {
       const merged = Object.assign(arg0);
       const merged1 = Object.assign(dependencyMap);
-      return outer1_4(navigation(11021), { guildId });
+      return outer1_4(navigation(10977), { guildId });
     }
   };
   obj[constants.MEMBER_BAN] = {
@@ -60,7 +60,7 @@ export default function StandaloneMembersView(guildId) {
     render(arg0) {
       const merged = Object.assign(arg0);
       const merged1 = Object.assign(dependencyMap);
-      return outer1_4(navigation(11023), { guildId });
+      return outer1_4(navigation(10979), { guildId });
     }
   };
   const obj2 = { screens: obj, initialRouteName: constants.MAIN };

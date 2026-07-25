@@ -1,9 +1,9 @@
-// Module ID: 6818
-// Function ID: 53778
+// Module ID: 5814
+// Function ID: 51052
 // Name: WideBannerBlockRecord
-// Dependencies: [6, 7, 6805, 2]
+// Dependencies: [6, 7, 5801, 2]
 
-// Module 6818 (WideBannerBlockRecord)
+// Module 5814 (WideBannerBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

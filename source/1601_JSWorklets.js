@@ -1,5 +1,5 @@
 // Module ID: 1601
-// Function ID: 17819
+// Function ID: 17826
 // Name: JSWorklets
 // Dependencies: [6, 7, 1593]
 // Exports: createJSWorkletsModule

@@ -1,8 +1,8 @@
-// Module ID: 3945
-// Function ID: 32549
-// Dependencies: [2, 3843, 3849, 3850, 3851, 3853, 3854, 3855, 3856]
+// Module ID: 3946
+// Function ID: 32560
+// Dependencies: [2, 3844, 3850, 3851, 3852, 3854, 3855, 3856, 3857]
 
-// Module 3945
+// Module 3946
 import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD";
 
 const result = require("context").fileFinishedImporting("../discord_common/js/packages/design/shared.tsx");

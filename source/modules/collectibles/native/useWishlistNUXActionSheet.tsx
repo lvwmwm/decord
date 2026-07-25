@@ -1,10 +1,10 @@
-// Module ID: 8711
-// Function ID: 68820
+// Module ID: 8599
+// Function ID: 68295
 // Name: useHasNeverWishlisted
-// Dependencies: [31, 6855, 1194, 1345, 566, 3946, 1334, 1336, 4098, 8712, 1934, 2]
+// Dependencies: [31, 5630, 1194, 1345, 566, 3947, 1334, 1336, 4099, 8600, 1935, 2]
 // Exports: default
 
-// Module 8711 (useHasNeverWishlisted)
+// Module 8599 (useHasNeverWishlisted)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -36,7 +36,7 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export default function useWishlistNUXActionSheet() {
   let tmp = useHasNeverWishlisted();
-  let obj = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
+  let obj = require(3947) /* UNSAFE_isDismissibleContentDismissed */;
   obj = {};
   if (tmp) {
     tmp = !obj.useIsDismissibleContentDismissed_UNSAFE(require(1334) /* DismissibleContent */.DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);

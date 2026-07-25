@@ -1,10 +1,10 @@
-// Module ID: 4574
-// Function ID: 40114
+// Module ID: 4575
+// Function ID: 40126
 // Name: getChannelRoleSubscriptionStatus
-// Dependencies: [1908, 1348, 3758, 653, 566, 2]
+// Dependencies: [1909, 1348, 3759, 653, 566, 2]
 // Exports: default
 
-// Module 4574 (getChannelRoleSubscriptionStatus)
+// Module 4575 (getChannelRoleSubscriptionStatus)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

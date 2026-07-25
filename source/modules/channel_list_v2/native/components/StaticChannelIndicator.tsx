@@ -1,10 +1,10 @@
-// Module ID: 10333
-// Function ID: 79725
+// Module ID: 10266
+// Function ID: 79378
 // Name: ChannelIndicator
-// Dependencies: [27, 4326, 33, 4130, 689, 3834, 2]
+// Dependencies: [27, 4327, 33, 4131, 689, 3835, 2]
 // Exports: default
 
-// Module 10333 (ChannelIndicator)
+// Module 10266 (ChannelIndicator)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
@@ -29,7 +29,7 @@ export default function ChannelIndicator(arg0) {
   let unread;
   ({ unread, resolvedUnreadSetting, style } = arg0);
   const tmp = callback();
-  require(3834) /* map */;
+  require(3835) /* map */;
   if (resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
     let CHANNELS_DEFAULT = importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE;
   } else {

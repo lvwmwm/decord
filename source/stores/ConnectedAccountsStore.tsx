@@ -1,9 +1,9 @@
-// Module ID: 4812
-// Function ID: 42081
+// Module ID: 4813
+// Function ID: 42093
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4813, 653, 4814, 1387, 4938, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4814, 653, 4815, 1387, 4939, 566, 686, 2]
 
-// Module 4812 (_isNativeReflectConstruct)
+// Module 4813 (_isNativeReflectConstruct)
 import ME from "ME";
 import getPlatformUserUrl from "getPlatformUserUrl";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -175,7 +175,7 @@ tmp4 = new tmp4(require("dispatcher"), {
         }));
       }
     }
-    const response = importDefault(4938).fetch();
+    const response = importDefault(4939).fetch();
   },
   USER_CONNECTIONS_INTEGRATION_JOINING: function handleJoining(integrationId) {
     closure_13[integrationId.integrationId] = integrationId.joining;
@@ -217,7 +217,7 @@ tmp4 = new tmp4(require("dispatcher"), {
     let provider;
     let state;
     ({ code, state, openid_params, provider } = arg0);
-    importDefault(4938).callback(provider, { code, state, openid_params });
+    importDefault(4939).callback(provider, { code, state, openid_params });
   }
 });
 let result = set.fileFinishedImporting("stores/ConnectedAccountsStore.tsx");

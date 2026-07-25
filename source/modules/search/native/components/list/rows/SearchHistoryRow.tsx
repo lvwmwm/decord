@@ -1,9 +1,9 @@
-// Module ID: 15395
-// Function ID: 117487
+// Module ID: 15405
+// Function ID: 117615
 // Name: SearchHistoryRemoveIcon
-// Dependencies: [5, 31, 27, 1348, 4142, 1849, 9141, 33, 4130, 689, 11434, 4660, 5119, 15384, 10108, 15393, 4126, 5786, 624, 15394, 7976, 4140, 15392, 15396, 15404, 1212, 2]
+// Dependencies: [5, 31, 27, 1348, 4143, 1850, 9033, 33, 4131, 689, 11397, 4661, 5119, 15394, 10040, 15403, 4127, 8232, 624, 15404, 5656, 4141, 15402, 15406, 15414, 1212, 2]
 
-// Module 15395 (SearchHistoryRemoveIcon)
+// Module 15405 (SearchHistoryRemoveIcon)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -25,14 +25,14 @@ function SearchHistoryRemoveIcon(searchContext) {
     const result = searchHistoryItem(outer1_2[10]).removeSearchHistoryItem(searchContext, searchHistoryItem);
   }, items);
   const obj = { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: callback(searchContext(5119).XSmallIcon, { size: "sm", color: "interactive-text-default" }) };
-  return callback(searchContext(4660).PressableHighlight, obj);
+  return callback(searchContext(4661).PressableHighlight, obj);
 }
 function SearchHistoryTextRow(searchContext) {
   searchContext = searchContext.searchContext;
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = callback2();
   const dependencyMap = tmp;
-  let obj = searchContext(15384);
+  let obj = searchContext(15394);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -55,14 +55,14 @@ function SearchHistoryTextRow(searchContext) {
   }
   const items1 = [mapped, ];
   const obj1 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text };
-  items1[1] = callback(searchContext(4126).Text, obj1);
+  items1[1] = callback(searchContext(4127).Text, obj1);
   obj.children = items1;
   obj.label = closure_11(View, obj);
   obj.onPress = callback;
   obj.trailing = callback(SearchHistoryRemoveIcon, { searchContext, searchHistoryItem });
   obj.iconContainerStyle = tmp.textIconContainer;
-  obj.icon = callback(View, { style: tmp.iconContainer, children: callback(searchContext(5786).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
-  return callback(searchContext(15393).SearchListRow, obj);
+  obj.icon = callback(View, { style: tmp.iconContainer, children: callback(searchContext(8232).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
+  return callback(searchContext(15403).SearchListRow, obj);
 }
 function SearchHistoryGroupDMRow(searchContext) {
   searchContext = searchContext.searchContext;

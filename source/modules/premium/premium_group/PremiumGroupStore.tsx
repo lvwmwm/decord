@@ -1,9 +1,9 @@
-// Module ID: 12472
-// Function ID: 96703
+// Module ID: 12453
+// Function ID: 96554
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3782, 3790, 653, 686, 12473, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3783, 3791, 653, 686, 12454, 566, 2]
 
-// Module 12472 (_isNativeReflectConstruct)
+// Module 12453 (_isNativeReflectConstruct)
 import closure_3 from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 import ME from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,10 +1,10 @@
-// Module ID: 6678
-// Function ID: 51447
+// Module ID: 6180
+// Function ID: 55510
 // Name: useCountdown
-// Dependencies: [31, 3800, 6679, 6684, 2]
+// Dependencies: [31, 3801, 6181, 6186, 2]
 // Exports: default
 
-// Module 6678 (useCountdown)
+// Module 6180 (useCountdown)
 require("result").useCallback;
 const result = require("useForceUpdate").fileFinishedImporting("hooks/useCountdown.tsx");
 

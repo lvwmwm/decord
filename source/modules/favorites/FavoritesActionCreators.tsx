@@ -1,10 +1,10 @@
-// Module ID: 10219
-// Function ID: 78877
+// Module ID: 10151
+// Function ID: 78507
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1348, 3758, 1351, 1386, 482, 1282, 1313, 10220, 22, 4470, 1212, 1331, 10224, 21, 2]
+// Dependencies: [1352, 1348, 3759, 1351, 1386, 482, 1282, 1313, 10152, 22, 4471, 1212, 1331, 10156, 21, 2]
 // Exports: addFavoriteCategory, addFavoriteChannel, removeFavoriteCategory, setAllFavoriteCategoriesCollapsed, setFavoriteCategoryCollapsed, setFavoriteChannelNickname, setFavoritesGuildVisibility, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 10219 (_createForOfIteratorHelperLoose)
+// Module 10151 (_createForOfIteratorHelperLoose)
 import { THREAD_CHANNEL_TYPES } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -197,7 +197,7 @@ function cleanupChannelParentId(arg0, arg1) {
 }
 function hasReachedLimit(arg0) {
   cleanFavoriteChannels(arg0);
-  const favoriteLimit = require(10220) /* computeFavoritesAccess */.getFavoritesAccess().favoriteLimit;
+  const favoriteLimit = require(10152) /* computeFavoritesAccess */.getFavoritesAccess().favoriteLimit;
   let tmp3 = !tmp2;
   if (favoriteLimit > 0) {
     tmp3 = importDefault(22).size(arg0) >= favoriteLimit;
@@ -206,17 +206,17 @@ function hasReachedLimit(arg0) {
   return tmp3;
 }
 function showLimitReachedAlert() {
-  let obj = importDefault(4470);
+  let obj = importDefault(4471);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["+XYXtZ"]);
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj = { count: require(10220) /* computeFavoritesAccess */.getFavoritesAccess().favoriteLimit };
+  obj = { count: require(10152) /* computeFavoritesAccess */.getFavoritesAccess().favoriteLimit };
   obj.body = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.JaIyFi, obj);
   obj.show(obj);
 }
 function onSaveFailed() {
-  let obj = importDefault(4470);
+  let obj = importDefault(4471);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.iufib1);
@@ -419,7 +419,7 @@ export const addFavoriteCategory = function addFavoriteCategory(arg0) {
       const FavoriteChannel = callback(1282).FavoriteChannel;
       const obj = { nickname: callback, type: callback(1282).FavoriteChannelType.CATEGORY, position: outer1_11(favoriteChannels.favoriteChannels), parentId: outer1_7 };
       favoriteChannels.favoriteChannels[dependencyMap] = FavoriteChannel.create(obj);
-      const obj2 = callback(10224);
+      const obj2 = callback(10156);
       const result = obj2.trackFavoritesGuildAddToFavorites(str, outer1_18(dependencyMap, callback(1282).FavoriteChannelType.CATEGORY), outer1_17(favoriteChannels.favoriteChannels));
     }
   }, _require(1331).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);

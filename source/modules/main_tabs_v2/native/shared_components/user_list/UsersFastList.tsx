@@ -1,9 +1,9 @@
-// Module ID: 8864
-// Function ID: 69795
+// Module ID: 8752
+// Function ID: 69274
 // Name: Placeholder
-// Dependencies: [57, 31, 27, 8865, 33, 4130, 689, 8866, 5165, 1324, 8868, 3991, 4126, 1273, 4660, 4662, 1557, 8871, 8872, 8873, 9133, 9136, 9280, 2]
+// Dependencies: [57, 31, 27, 8753, 33, 4131, 689, 8754, 5164, 1324, 8756, 3992, 4127, 1273, 4661, 4663, 1557, 8759, 8760, 8761, 9025, 9028, 9173, 2]
 
-// Module 8864 (Placeholder)
+// Module 8752 (Placeholder)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -19,7 +19,7 @@ function Placeholder(arg0) {
   let end;
   let start;
   ({ start, end } = arg0);
-  let obj = require(8866) /* styles */;
+  let obj = require(8754) /* styles */;
   const fastestListTableRowPlaceholderStyles = obj.useFastestListTableRowPlaceholderStyles();
   obj = { end, start };
   const items = [fastestListTableRowPlaceholderStyles.placeholderUsername, callback(importAllResult.useState(() => ({ width: `${10 + 80 * Math.random() | 0}%` })), 1)[0]];
@@ -27,7 +27,7 @@ function Placeholder(arg0) {
   obj = { style: fastestListTableRowPlaceholderStyles.placeholderAvatar };
   obj.icon = callback2(View, obj);
   obj.height = "100%";
-  return callback2(require(5165) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5164) /* TableRowInner */.TableRow, obj);
 }
 function PlaceholderSection() {
   return callback2(View, {});

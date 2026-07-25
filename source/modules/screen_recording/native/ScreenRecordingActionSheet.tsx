@@ -1,10 +1,10 @@
-// Module ID: 14768
-// Function ID: 112565
+// Module ID: 14779
+// Function ID: 112693
 // Name: ScreenRecordingActionSheet
-// Dependencies: [31, 27, 14764, 33, 4130, 689, 4126, 4543, 4098, 4660, 5119, 4120, 5498, 2]
+// Dependencies: [31, 27, 14775, 33, 4131, 689, 4127, 4544, 4099, 4661, 5119, 4121, 5498, 2]
 // Exports: default
 
-// Module 14768 (ScreenRecordingActionSheet)
+// Module 14779 (ScreenRecordingActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";
@@ -71,10 +71,10 @@ export default function ScreenRecordingActionSheet() {
   }
   obj = { style: tmp.container };
   obj = { variant: "heading-xl/bold", children: str };
-  const items = [callback(_require(4126).Text, obj), , ];
+  const items = [callback(_require(4127).Text, obj), , ];
   const obj1 = { variant: "text-md/normal", children: str2 };
-  items[1] = callback(_require(4126).Text, obj1);
-  items[2] = callback(_require(4543).Button, {
+  items[1] = callback(_require(4127).Text, obj1);
+  items[2] = callback(_require(4544).Button, {
     disabled: tmp2,
     text: "Done",
     loading: tmp2,
@@ -93,13 +93,13 @@ export default function ScreenRecordingActionSheet() {
     accessibilityLabel: "close",
     children: callback(_require(5119).XSmallIcon, { size: "md", color: "text-default" })
   };
-  const items1 = [callback(_require(4660).PressableOpacity, obj4), , , ];
+  const items1 = [callback(_require(4661).PressableOpacity, obj4), , , ];
   const obj5 = { variant: "heading-xl/bold", children: tmp5.title };
-  items1[1] = callback(_require(4126).Text, obj5);
+  items1[1] = callback(_require(4127).Text, obj5);
   const obj6 = { variant: "text-md/normal" };
-  let obj9 = importDefault(4120);
+  let obj9 = importDefault(4121);
   obj6.children = obj9.parse(tmp5.instructions);
-  items1[2] = callback(_require(4126).Text, obj6);
+  items1[2] = callback(_require(4127).Text, obj6);
   const obj7 = { style: tmp.buttonContainer };
   const obj8 = {};
   let tmp14 = !(null != isStepCompleted && isStepCompleted);
@@ -112,7 +112,7 @@ export default function ScreenRecordingActionSheet() {
   obj8.onPress = function onPress() {
     callback();
   };
-  obj7.children = callback(_require(4543).Button, obj8);
+  obj7.children = callback(_require(4544).Button, obj8);
   items1[3] = callback(View, obj7);
   obj3.children = items1;
   let tmp10Result = callback2(tmp11, obj3);

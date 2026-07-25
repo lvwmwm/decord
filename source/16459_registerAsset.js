@@ -1,11 +1,11 @@
 // Module ID: 16459
-// Function ID: 128258
+// Function ID: 128370
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 16459 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 375, height: 187, scales: [2, 3], hash: "a089de21c15f6e03808f87d787c28c08", name: "role_subscription_settings_hero", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 88.5, height: 72.5, scales: [2, 3], hash: "676cd159b1913e0ab2a481c3bd4a0b5c", name: "role_subscription_earning_illo", type: "png" };
 
 export default registerAsset.registerAsset(obj);

@@ -1,10 +1,10 @@
-// Module ID: 16374
-// Function ID: 127723
+// Module ID: 16385
+// Function ID: 127891
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1911, 653, 483, 15561, 2]
+// Dependencies: [1912, 653, 483, 15571, 2]
 // Exports: getPowerfulPermissionTitles, isRolePowerful
 
-// Module 16374 (_createForOfIteratorHelperLoose)
+// Module 16385 (_createForOfIteratorHelperLoose)
 import { hasPermission } from "GuildRoleRecordTypeTag";
 import ME from "ME";
 
@@ -98,7 +98,7 @@ export const isRolePowerful = function isRolePowerful(role) {
 export const getPowerfulPermissionTitles = function getPowerfulPermissionTitles(id) {
   let iter2;
   const items = [];
-  const guildPermissionSpecMap = importDefault(15561).getGuildPermissionSpecMap(id);
+  const guildPermissionSpecMap = importDefault(15571).getGuildPermissionSpecMap(id);
   const tmp2 = _createForOfIteratorHelperLoose(closure_5);
   let iter = tmp2();
   if (!iter.done) {

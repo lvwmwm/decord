@@ -1,10 +1,10 @@
-// Module ID: 4082
-// Function ID: 33898
+// Module ID: 4083
+// Function ID: 33909
 // Name: CheckmarkLargeIcon
-// Dependencies: [31, 33, 689, 3833, 4083, 2]
+// Dependencies: [31, 33, 689, 3834, 4084, 2]
 // Exports: CheckmarkLargeIcon
 
-// Module 4082 (CheckmarkLargeIcon)
+// Module 4083 (CheckmarkLargeIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const CheckmarkLargeIcon = function CheckmarkLargeIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4083) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4084) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4083) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4084) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

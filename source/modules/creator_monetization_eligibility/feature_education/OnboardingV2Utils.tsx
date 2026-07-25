@@ -1,10 +1,10 @@
-// Module ID: 15122
-// Function ID: 115069
+// Module ID: 15132
+// Function ID: 115197
 // Name: items
-// Dependencies: [1391, 1838, 1849, 653, 566, 5641, 2]
+// Dependencies: [1391, 1838, 1850, 653, 566, 12556, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 15122 (items)
+// Module 15132 (items)
 import { isGuildOwner } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,9 +46,9 @@ export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreato
     if (null == currentUser) {
       return false;
     } else {
-      const guildRoleSubscriptionSettingsVisibility = guild(5641).getGuildRoleSubscriptionSettingsVisibility(guild);
-      let tmp5 = guildRoleSubscriptionSettingsVisibility === guild(5641).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
-      const obj = guild(5641);
+      const guildRoleSubscriptionSettingsVisibility = guild(12556).getGuildRoleSubscriptionSettingsVisibility(guild);
+      let tmp5 = guildRoleSubscriptionSettingsVisibility === guild(12556).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
+      const obj = guild(12556);
       const tmp7 = isGuildOwner(guild, currentUser);
       if (tmp5) {
         tmp5 = tmp7;

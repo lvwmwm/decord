@@ -1,9 +1,9 @@
-// Module ID: 15534
-// Function ID: 119532
+// Module ID: 15544
+// Function ID: 119660
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 15534 (__INTERNAL_VIEW_CONFIG)
+// Module 15544 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "DCDVisualEffectViewTarget", validAttributes: {} };

@@ -1,9 +1,9 @@
-// Module ID: 8640
-// Function ID: 68501
+// Module ID: 8416
+// Function ID: 67234
 // Name: set
 // Dependencies: [2]
 
-// Module 8640 (set)
+// Module 8416 (set)
 const result = require("set").fileFinishedImporting("utils/GameUtils.native.tsx");
 
 export default {

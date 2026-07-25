@@ -1,26 +1,26 @@
-// Module ID: 11987
-// Function ID: 92671
+// Module ID: 11963
+// Function ID: 92476
 // Name: VoicePanelStreamPreview
-// Dependencies: [31, 27, 4149, 1194, 33, 3991, 4543, 4130, 689, 10818, 566, 4194, 4131, 7678, 4126, 1212, 2]
+// Dependencies: [31, 27, 4150, 1194, 33, 3992, 4544, 4131, 689, 10790, 566, 4195, 4132, 7620, 4127, 1212, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 11987 (VoicePanelStreamPreview)
+// Module 11963 (VoicePanelStreamPreview)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult1 from "module_3991";
+import importDefaultResult1 from "module_3992";
 
 let closure_6;
 let closure_7;
 const require = arg1;
 const View = get_ActivityIndicator.View;
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = require("module_3991").createAnimatedComponent(get_ActivityIndicator.Pressable);
-let closure_9 = require("module_3991").createAnimatedComponent(require("Button").Button);
+let closure_8 = require("module_3992").createAnimatedComponent(get_ActivityIndicator.Pressable);
+let closure_9 = require("module_3992").createAnimatedComponent(require("Button").Button);
 let closure_10 = { duration: 200 };
 let obj = {};
 obj = { position: "absolute", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
@@ -54,7 +54,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   if (null != stream) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(10818)(guildId, channelId, ownerId).previewUrl;
+  const previewUrl = stream(10790)(guildId, channelId, ownerId).previewUrl;
   let obj = mode(566);
   const items = [_isNativeReflectConstruct, closure_5];
   const items1 = [stream];
@@ -69,7 +69,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     }
     return tmp;
   }, items1);
-  let obj1 = mode(3991);
+  let obj1 = mode(3992);
   class T {
     constructor() {
       if (null == mode) {
@@ -94,7 +94,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
       return obj;
     }
   }
-  obj = { mode, withTiming: mode(4131).withTiming, OPACITY_TIMING: closure_10 };
+  obj = { mode, withTiming: mode(4132).withTiming, OPACITY_TIMING: closure_10 };
   T.__closure = obj;
   T.__workletHash = 15496474861955;
   T.__initData = closure_12;
@@ -113,12 +113,12 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     obj1.source = obj2;
     obj1.style = tmp.streamPreviewImage;
     obj1.resizeMode = "cover";
-    tmp11 = callback(stream(3991).Image, obj1);
+    tmp11 = callback(stream(3992).Image, obj1);
   }
   const items2 = [tmp11, ];
   const obj3 = { style: animatedStyle, layout };
   const tmp15 = callback;
-  const tmp2 = stream(10818);
+  const tmp2 = stream(10790);
   const tmp8 = closure_7;
   const tmp9 = closure_8;
   if (stateFromStores) {
@@ -126,7 +126,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     const obj5 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText };
     const intl2 = mode(1212).intl;
     obj5.children = intl2.string(mode(1212).t["ro/HN8"]);
-    obj4.children = tmp17(mode(4126).Text, obj5);
+    obj4.children = tmp17(mode(4127).Text, obj5);
     let tmp17Result = tmp17(View, obj4);
   } else {
     const obj6 = { layout, disabled };
@@ -138,7 +138,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     tmp17Result = tmp17(closure_9, obj6);
   }
   obj3.children = tmp17Result;
-  items2[1] = tmp15(stream(7678), obj3);
+  items2[1] = tmp15(stream(7620), obj3);
   obj.children = items2;
   return tmp8(tmp9, obj);
 };

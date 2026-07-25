@@ -1,10 +1,10 @@
-// Module ID: 9586
-// Function ID: 74653
+// Module ID: 9507
+// Function ID: 74240
 // Name: useCreateThread
-// Dependencies: [5, 31, 4468, 4123, 5462, 8022, 6691, 6923, 8026, 8025, 7080, 4711, 4670, 8027, 2]
+// Dependencies: [5, 31, 4469, 4124, 5462, 6131, 5685, 5914, 6135, 6134, 6098, 4712, 4671, 6136, 2]
 // Exports: default, useCreateForumPost
 
-// Module 9586 (useCreateThread)
+// Module 9507 (useCreateThread)
 import getIsPrivate from "getIsPrivate";
 import result from "result";
 import { DraftType } from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ export default function useCreateThread(arg0) {
   let useDefaultThreadName;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
   const analyticsLocations = importDefault(5462)().analyticsLocations;
-  let obj = analyticsLocations(8022);
+  let obj = analyticsLocations(6131);
   obj = {
     parentChannel,
     parentMessageId,
@@ -70,7 +70,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
       return callback(...arguments);
     };
   })(), items);
-  let obj = parentChannel(8022);
+  let obj = parentChannel(6131);
   obj = { parentChannel };
   if (null != threadSettings) {
     name = threadSettings.name;

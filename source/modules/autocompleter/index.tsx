@@ -1,9 +1,9 @@
-// Module ID: 7093
-// Function ID: 56889
+// Module ID: 6111
+// Function ID: 54701
 // Name: sortByMatchScore
-// Dependencies: [2, 7094, 5043, 7102, 7103, 5046]
+// Dependencies: [2, 6112, 5044, 6120, 6121, 5047]
 
-// Module 7093 (sortByMatchScore)
+// Module 6111 (sortByMatchScore)
 import HeaderRecord from "HeaderRecord";
 
 const result = require("HeaderRecord").fileFinishedImporting("modules/autocompleter/index.tsx");
@@ -15,5 +15,5 @@ for (const key10026 in _module1) {
 
 export { default } from "_createForOfIteratorHelperLoose";
 export const createHeaderResult = require("HeaderRecord").createHeaderResult;
-export const findNextSelectedResult = require("module_7103");
+export const findNextSelectedResult = require("module_6121");
 export const sortByMatchScore = require("sortByMatchScore");

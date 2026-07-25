@@ -1,10 +1,10 @@
-// Module ID: 6701
-// Function ID: 51916
+// Module ID: 5697
+// Function ID: 49229
 // Name: clickstreamExperimentEnabled
 // Dependencies: [1428, 2]
 // Exports: clickstreamExperimentEnabled
 
-// Module 6701 (clickstreamExperimentEnabled)
+// Module 5697 (clickstreamExperimentEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-clickstream-analytics", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

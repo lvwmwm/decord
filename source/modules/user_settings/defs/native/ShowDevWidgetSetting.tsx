@@ -1,9 +1,9 @@
-// Module ID: 14453
-// Function ID: 110437
+// Module ID: 14464
+// Function ID: 110564
 // Name: toggle
-// Dependencies: [6959, 13561, 566, 10127, 14454, 13796, 2]
+// Dependencies: [5950, 13572, 566, 10059, 14465, 13807, 2]
 
-// Module 14453 (toggle)
+// Module 14464 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -15,7 +15,7 @@ createToggle = {
   parent: null,
   IconComponent: require("StaffBadgeIcon").StaffBadgeIcon,
   onValueChange: function handleShowDevWidgetSettingToggle(showDevWidget) {
-    let obj = require(13561) /* updateDevToolsSettings */;
+    let obj = require(13572) /* updateDevToolsSettings */;
     obj = { showDevWidget };
     const result = obj.updateDevToolsSettings(obj);
   },

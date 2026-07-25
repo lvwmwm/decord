@@ -1,10 +1,10 @@
-// Module ID: 10406
-// Function ID: 80235
+// Module ID: 10339
+// Function ID: 79888
 // Name: items
-// Dependencies: [31, 27, 33, 10407, 10408, 10409, 10410, 10411, 10412, 1212, 4130, 4066, 3976, 6679, 22, 4561, 4126, 2]
+// Dependencies: [31, 27, 33, 10340, 10341, 10342, 10343, 10344, 10345, 1212, 4131, 4067, 3977, 6181, 22, 4562, 4127, 2]
 // Exports: default
 
-// Module 10406 (items)
+// Module 10339 (items)
 import "result";
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -63,27 +63,27 @@ const result = require("jsxProd").fileFinishedImporting("modules/channel_followi
 
 export default function ChannelFollowSuccessAlert(arg0) {
   const tmp = callback3();
-  let obj = require(3976) /* AccessibilityAnnouncer */;
-  const tmp3 = obj.isThemeDark(importDefault(4066)()) ? items1 : items;
+  let obj = require(3977) /* AccessibilityAnnouncer */;
+  const tmp3 = obj.isThemeDark(importDefault(4067)()) ? items1 : items;
   require = tmp3;
-  let obj1 = require(6679) /* useForceUpdate */;
+  let obj1 = require(6181) /* useForceUpdate */;
   items = [tmp3];
   const stableMemo = obj1.useStableMemo(() => outer1_1(outer1_2[14]).sample(closure_0), items);
-  let obj2 = require(6679) /* useForceUpdate */;
+  let obj2 = require(6181) /* useForceUpdate */;
   const stableMemo1 = obj2.useStableMemo(() => outer1_1(outer1_2[14]).sample(outer1_8), []);
   obj = {};
-  const tmp2 = importDefault(4066)();
+  const tmp2 = importDefault(4067)();
   const merged = Object.assign(arg0);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj["confirmText"] = intl.string(require(1212) /* getSystemLocale */.t["+IrDzN"]);
   obj = { source: stableMemo, style: tmp.image };
   items1 = [callback(Image, obj), , ];
   obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stableMemo1() };
-  items1[1] = callback(require(4126) /* Text */.Text, obj1);
+  items1[1] = callback(require(4127) /* Text */.Text, obj1);
   obj2 = { style: tmp.text, variant: "text-md/medium", color: "text-muted" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["2QbSea"]);
-  items1[2] = callback(require(4126) /* Text */.Text, obj2);
+  items1[2] = callback(require(4127) /* Text */.Text, obj2);
   obj["children"] = items1;
-  return callback2(importDefault(4561), obj);
+  return callback2(importDefault(4562), obj);
 };

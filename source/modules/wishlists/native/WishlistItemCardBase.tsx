@@ -1,10 +1,10 @@
-// Module ID: 8714
-// Function ID: 68843
+// Module ID: 8602
+// Function ID: 68318
 // Name: SourceIcon
-// Dependencies: [31, 27, 33, 4130, 689, 3831, 8715, 3842, 8284, 3834, 8717, 1212, 1327, 8735, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3832, 8603, 3843, 8019, 3835, 8605, 1212, 1327, 8623, 2]
 // Exports: default
 
-// Module 8714 (SourceIcon)
+// Module 8602 (SourceIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,7 +30,7 @@ function SourceIcon(toastText) {
     importantForAccessibility: "no-hide-descendants"
   };
   obj = { color: importDefault(689).colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  obj.children = callback(toastText(8715).HeartIcon, obj);
+  obj.children = callback(toastText(8603).HeartIcon, obj);
   return callback(closure_3, obj);
 }
 ({ Pressable: closure_3, View: closure_4 } = get_ActivityIndicator);
@@ -73,12 +73,12 @@ export default function WishlistItemCardBase(username) {
   }
   const accessibilityHidden = username.accessibilityHidden;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3842) /* ManaContext */;
+  let obj = require(3843) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   const primaryColor = themeContext.primaryColor;
   ({ theme, secondaryColor } = themeContext);
-  let obj1 = require(8284) /* useUserProfileColors */;
-  let obj2 = require(3834) /* map */;
+  let obj1 = require(8019) /* useUserProfileColors */;
+  let obj2 = require(3835) /* map */;
   let containerBackground = obj2.useToken(importDefault(689).colors.BG_SURFACE_RAISED);
   if (null != primaryColor) {
     containerBackground = obj1.useUserProfileColors({ theme, primaryColor, secondaryColor }).containerBackground;
@@ -94,7 +94,7 @@ export default function WishlistItemCardBase(username) {
     obj1 = { width: size, aspectRatio: 1 };
   }
   items[2] = obj1;
-  let tmp3 = source === require(8717) /* _createForOfIteratorHelperLoose */.WishlistItemSource.WISHLIST;
+  let tmp3 = source === require(8605) /* _createForOfIteratorHelperLoose */.WishlistItemSource.WISHLIST;
   const intl = require(1212) /* getSystemLocale */.intl;
   const formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.p3RmJF, { username: username.recipientName });
   const items1 = [accessibilityLabel, , ];
@@ -113,7 +113,7 @@ export default function WishlistItemCardBase(username) {
   obj2 = { style: tmp.ownedOverlay, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const joined = found.join(", ");
   const obj3 = { color: importDefault(689).colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-  obj2.children = callback(require(8735) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, obj3);
+  obj2.children = callback(require(8623) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, obj3);
   const obj4 = {};
   const obj5 = {};
   const items2 = [tmp.previewWrap, ];

@@ -1,10 +1,10 @@
-// Module ID: 5730
-// Function ID: 49253
+// Module ID: 9931
+// Function ID: 76817
 // Name: useGuildOnboardingAvailable
-// Dependencies: [1909, 653, 566, 2]
+// Dependencies: [1910, 653, 566, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 5730 (useGuildOnboardingAvailable)
+// Module 9931 (useGuildOnboardingAvailable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildFeatures } from "ME";
 

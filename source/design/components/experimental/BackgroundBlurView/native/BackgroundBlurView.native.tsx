@@ -1,9 +1,9 @@
-// Module ID: 7640
-// Function ID: 60793
+// Module ID: 7579
+// Function ID: 60707
 // Name: BackgroundBlurView
-// Dependencies: [31, 27, 33, 4130, 7641, 2]
+// Dependencies: [31, 27, 33, 4131, 7580, 2]
 
-// Module 7640 (BackgroundBlurView)
+// Module 7579 (BackgroundBlurView)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -32,10 +32,10 @@ const forwardRefResult = require("result").forwardRef(function BackgroundBlurVie
   obj["ref"] = arg1;
   if (null != pressed) {
     obj = { blurTheme, pressed, android_blurTargetViewNativeId };
-    let tmp10 = callback(require(7641) /* useBlurTheme */.BackgroundBlurFillWithPress, obj);
+    let tmp10 = callback(require(7580) /* useBlurTheme */.BackgroundBlurFillWithPress, obj);
   } else {
     const obj1 = { blurTheme, android_blurTargetViewNativeId };
-    tmp10 = callback(require(7641) /* useBlurTheme */.BackgroundBlurFill, obj1);
+    tmp10 = callback(require(7580) /* useBlurTheme */.BackgroundBlurFill, obj1);
   }
   const items1 = [tmp10, children];
   obj["children"] = items1;

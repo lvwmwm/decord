@@ -1,10 +1,10 @@
-// Module ID: 4566
-// Function ID: 40047
+// Module ID: 4567
+// Function ID: 40059
 // Name: TRUE_OPTION_NAME
-// Dependencies: [1212, 1881, 2]
+// Dependencies: [1212, 1882, 2]
 // Exports: getValidationErrorText
 
-// Module 4566 (TRUE_OPTION_NAME)
+// Module 4567 (TRUE_OPTION_NAME)
 const items = [{ name: "True", displayName: "True", value: "true" }, { name: "False", displayName: "False", value: "false" }];
 const frozen = Object.freeze([]);
 const frozen1 = Object.freeze([]);
@@ -33,25 +33,25 @@ export const getValidationErrorText = function getValidationErrorText(option) {
     return intl9.string(require(1212) /* getSystemLocale */.t.xi5aah);
   } else {
     const type = option.type;
-    if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.BOOLEAN === type) {
+    if (require(1882) /* PermissionOverwriteType */.ApplicationCommandOptionType.BOOLEAN === type) {
       const intl8 = require(1212) /* getSystemLocale */.intl;
       return intl8.string(require(1212) /* getSystemLocale */.t.ATIx6O);
-    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.CHANNEL === type) {
+    } else if (require(1882) /* PermissionOverwriteType */.ApplicationCommandOptionType.CHANNEL === type) {
       const intl7 = require(1212) /* getSystemLocale */.intl;
       return intl7.string(require(1212) /* getSystemLocale */.t.Q0z2Gx);
-    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.INTEGER === type) {
+    } else if (require(1882) /* PermissionOverwriteType */.ApplicationCommandOptionType.INTEGER === type) {
       const intl6 = require(1212) /* getSystemLocale */.intl;
       return intl6.string(require(1212) /* getSystemLocale */.t["d/9Rk4"]);
-    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.NUMBER === type) {
+    } else if (require(1882) /* PermissionOverwriteType */.ApplicationCommandOptionType.NUMBER === type) {
       const intl5 = require(1212) /* getSystemLocale */.intl;
       return intl5.string(require(1212) /* getSystemLocale */.t["FDyk/V"]);
-    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.ROLE === type) {
+    } else if (require(1882) /* PermissionOverwriteType */.ApplicationCommandOptionType.ROLE === type) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       return intl4.string(require(1212) /* getSystemLocale */.t.vrRQn0);
-    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.USER === type) {
+    } else if (require(1882) /* PermissionOverwriteType */.ApplicationCommandOptionType.USER === type) {
       const intl3 = require(1212) /* getSystemLocale */.intl;
       return intl3.string(require(1212) /* getSystemLocale */.t.i2r7j5);
-    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.MENTIONABLE === type) {
+    } else if (require(1882) /* PermissionOverwriteType */.ApplicationCommandOptionType.MENTIONABLE === type) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       return intl2.string(require(1212) /* getSystemLocale */.t.I7imec);
     } else {

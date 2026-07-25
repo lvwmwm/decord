@@ -1,13 +1,13 @@
-// Module ID: 6647
-// Function ID: 51049
+// Module ID: 6489
+// Function ID: 58012
 // Name: launchPremiumPlanSelect
-// Dependencies: [653, 6648, 4337, 6649, 1934, 6649, 5793, 2]
+// Dependencies: [653, 6195, 4338, 6269, 1935, 6269, 6449, 2]
 // Exports: launchPremiumPlanSelect
 
-// Module 6647 (launchPremiumPlanSelect)
+// Module 6489 (launchPremiumPlanSelect)
 import { UserSettingsSections } from "ME";
 
-let result = require("module_4337").fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
+let result = require("module_4338").fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
 
 export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostPurchaseFlow) {
   let analyticsLocation;
@@ -47,9 +47,9 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
     navigation.push(PREMIUM_PLAN_SELECT, obj);
   } else {
     obj = { initialRoute: PREMIUM_PLAN_SELECT, analyticsLocation, analyticsLocations, predicate: wrappedPredicate, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onBack: tmp, onPaymentSuccess, onPaymentDismiss };
-    const obj3 = importDefault(4337);
-    obj3.pushLazy(require(1934) /* maybeLoadBundle */(6649, dependencyMap.paths), obj, require(6649) /* getScreens */.PREMIUM_KEY);
-    const tmp7 = require(1934) /* maybeLoadBundle */(6649, dependencyMap.paths);
+    const obj3 = importDefault(4338);
+    obj3.pushLazy(require(1935) /* maybeLoadBundle */(6269, dependencyMap.paths), obj, require(6269) /* getScreens */.PREMIUM_KEY);
+    const tmp7 = require(1935) /* maybeLoadBundle */(6269, dependencyMap.paths);
   }
-  const result = require(5793) /* getSanitizedRestrictedGuilds */.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
+  const result = require(6449) /* getSanitizedRestrictedGuilds */.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
 };

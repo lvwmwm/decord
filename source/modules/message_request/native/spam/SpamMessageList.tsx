@@ -1,10 +1,10 @@
-// Module ID: 15622
-// Function ID: 120398
+// Module ID: 15632
+// Function ID: 120526
 // Name: PendingSpamMessageRequestRow
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1212, 11513, 3831, 9212, 4138, 4337, 11505, 675, 4660, 15607, 1273, 10361, 13877, 7636, 1557, 15616, 15623, 15614, 4559, 6836, 6841, 15617, 477, 4126, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1212, 11479, 3832, 9104, 4139, 4338, 11471, 675, 4661, 15617, 1273, 10294, 13888, 7575, 1557, 15626, 15633, 15624, 4560, 5839, 5844, 15627, 477, 4127, 2]
 // Exports: default
 
-// Module 15622 (PendingSpamMessageRequestRow)
+// Module 15632 (PendingSpamMessageRequestRow)
 import result from "result";
 import get_ActivityIndicator from "MessageRequestEmpty";
 import { AnalyticEvents } from "ME";
@@ -197,23 +197,23 @@ export default function SpamMessageList(goToMessageRequestPreview) {
   const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
   const bottom = importDefault(1557)().bottom;
-  let obj = goToMessageRequestPreview(15616);
+  let obj = goToMessageRequestPreview(15626);
   const dependencyMap = obj.useSpamMessageRequestCount();
-  const arr = importDefault(15623)();
-  let obj1 = goToMessageRequestPreview(15614);
+  const arr = importDefault(15633)();
+  let obj1 = goToMessageRequestPreview(15624);
   let closure_4 = obj1.useListHasSingleSpamMessageRequest();
-  importDefault(4559)(() => {
+  importDefault(4560)(() => {
     let obj = tmp(675);
     obj = { num_spam_message_requests: dependencyMap };
     obj.track(outer1_7.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
-    obj = { name: goToMessageRequestPreview(6841).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
-    tmp(6836).increment(obj);
+    obj = { name: goToMessageRequestPreview(5844).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
+    tmp(5839).increment(obj);
   });
   if (0 === arr.length) {
     obj = {};
     let intl = goToMessageRequestPreview(1212).intl;
     obj.bodyText = intl.string(goToMessageRequestPreview(1212).t.hasFPQ);
-    return callback(importDefault(15617), obj);
+    return callback(importDefault(15627), obj);
   } else {
     const items = ["header-section"];
     HermesBuiltin.arraySpread(arr, 1);
@@ -239,7 +239,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
         const intl = goToMessageRequestPreview(1212).intl;
         obj = { count: arr.length };
         obj.children = intl.format(goToMessageRequestPreview(1212).t.aNh5Kf, obj);
-        obj.children = outer1_8(goToMessageRequestPreview(4126).Text, obj);
+        obj.children = outer1_8(goToMessageRequestPreview(4127).Text, obj);
         let tmp11Result = outer1_8(outer1_5, obj);
       } else {
         const obj1 = {

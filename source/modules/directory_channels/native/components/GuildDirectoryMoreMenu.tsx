@@ -1,10 +1,10 @@
-// Module ID: 10075
-// Function ID: 77788
+// Module ID: 10004
+// Function ID: 77407
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [31, 33, 10069, 10076, 4471, 1212, 10078, 1273, 7689, 9142, 4089, 9453, 9338, 7533, 9007, 689, 2]
+// Dependencies: [31, 33, 9998, 10005, 4472, 1212, 10007, 1273, 7633, 9034, 4090, 9373, 9231, 6625, 8895, 689, 2]
 // Exports: default
 
-// Module 10075 (GuildDirectoryMoreMenu)
+// Module 10004 (GuildDirectoryMoreMenu)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -15,14 +15,14 @@ export default function GuildDirectoryMoreMenu(entry) {
   let canRemove;
   let isEntryAdmin;
   entry = entry.entry;
-  const tmp = importDefault(10069)(entry);
+  const tmp = importDefault(9998)(entry);
   const items = [];
   ({ isEntryAdmin, canRemove } = tmp);
   if (tmp.canEdit) {
     let obj = {};
     let intl = entry(1212).intl;
     obj.label = intl.string(entry(1212).t.XnuOvN);
-    obj.IconComponent = entry(9142).PencilIcon;
+    obj.IconComponent = entry(9034).PencilIcon;
     obj.action = function handleEdit() {
       let obj = outer1_1(outer1_3[3]);
       obj = { entry };
@@ -34,7 +34,7 @@ export default function GuildDirectoryMoreMenu(entry) {
     obj = {};
     let intl2 = entry(1212).intl;
     obj.label = intl2.string(entry(1212).t.KUxYWH);
-    obj.IconComponent = entry(4089).TrashIcon;
+    obj.IconComponent = entry(4090).TrashIcon;
     obj.variant = "destructive";
     obj.action = function handleRemove() {
       let obj = outer1_1(outer1_3[4]);
@@ -63,7 +63,7 @@ export default function GuildDirectoryMoreMenu(entry) {
     obj = {};
     let intl3 = entry(1212).intl;
     obj.label = intl3.string(entry(1212).t.Aen9eh);
-    obj.IconComponent = entry(9453).FlagIcon;
+    obj.IconComponent = entry(9373).FlagIcon;
     obj.variant = "destructive";
     obj.action = function handleReport() {
       const result = entry(outer1_3[8]).showReportModalForGuildDirectoryEntry(entry);
@@ -89,7 +89,7 @@ export default function GuildDirectoryMoreMenu(entry) {
           return outer1_4(entry(outer1_3[13]).IconButton, obj);
         }
     };
-    tmp11 = jsx(entry(9338).ContextMenu, {
+    tmp11 = jsx(entry(9231).ContextMenu, {
       items,
       children(ref) {
           let obj = Object.create(null);

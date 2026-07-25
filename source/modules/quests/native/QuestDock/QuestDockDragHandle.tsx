@@ -1,9 +1,9 @@
-// Module ID: 14141
-// Function ID: 108705
+// Module ID: 14152
+// Function ID: 108832
 // Name: getDragHandleOffsetLeft
-// Dependencies: [31, 27, 4976, 14044, 33, 4130, 14126, 14045, 14046, 3991, 1324, 4542, 7678, 14043, 5446, 1212, 2]
+// Dependencies: [31, 27, 4977, 14055, 33, 4131, 14137, 14056, 14057, 3992, 1324, 4543, 7620, 14054, 5446, 1212, 2]
 
-// Module 14141 (getDragHandleOffsetLeft)
+// Module 14152 (getDragHandleOffsetLeft)
 import importAllResult from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import { QuestDockMode } from "QuestsExperimentLocations";
@@ -50,18 +50,18 @@ let closure_14 = { code: "function QuestDockDragHandleTsx4(){const{withSpring,is
 let closure_15 = { code: "function QuestDockDragHandleTsx5(){const{withSpring,isEnrolled,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS}=this.__closure;return{opacity:withSpring(!isEnrolled&&activeQuestDockMode.get()!==QuestDockMode.CLOSED&&activeQuestDockMode.get()!==QuestDockMode.SOFT_DISMISSED?0.5:0,QUEST_DOCK_MODE_CHANGE_PHYSICS)};}" };
 const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded) {
   const tmp = callback2();
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(14045).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(14056).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
-  const userStatus = youBarHorizontalMargin.useContext(windowDimensions(14126)).quest.userStatus;
+  const userStatus = youBarHorizontalMargin.useContext(windowDimensions(14137)).quest.userStatus;
   let enrolledAt;
   if (null != userStatus) {
     enrolledAt = userStatus.enrolledAt;
   }
   const dependencyMap = tmp4;
-  let obj = activeQuestDockMode(14046);
+  let obj = activeQuestDockMode(14057);
   youBarHorizontalMargin = obj.useYouBarHorizontalMargin();
-  let obj1 = activeQuestDockMode(3991);
+  let obj1 = activeQuestDockMode(3992);
   class D {
     constructor() {
       obj = { width: Math.min(windowDimensions.get().width, outer1_6) };
@@ -75,7 +75,7 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded)
   const animatedStyle = obj1.useAnimatedStyle(D);
   let obj3 = activeQuestDockMode(1324);
   const enabled = obj3.useMobileVisualRefreshConfig({ location: "QuestDockDragHandle" }).enabled;
-  let obj4 = activeQuestDockMode(3991);
+  let obj4 = activeQuestDockMode(3992);
   class E {
     constructor() {
       obj = { left: outer1_11(activeQuestDockMode.get(), closure_3) };
@@ -106,7 +106,7 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded)
   E.__workletHash = 2091098328770;
   E.__initData = closure_13;
   const animatedStyle1 = obj4.useAnimatedStyle(E);
-  let obj6 = activeQuestDockMode(3991);
+  let obj6 = activeQuestDockMode(3992);
   const fn = function h() {
     const obj = {};
     activeQuestDockMode(tmp4[11]);
@@ -119,7 +119,7 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded)
     }
     num = 1;
   };
-  obj1 = { withSpring: activeQuestDockMode(4542).withSpring, isEnrolled: tmp4, activeQuestDockMode, QuestDockMode: enabled, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
+  obj1 = { withSpring: activeQuestDockMode(4543).withSpring, isEnrolled: tmp4, activeQuestDockMode, QuestDockMode: enabled, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
   fn.__closure = obj1;
   fn.__workletHash = 12299455640931;
   fn.__initData = closure_14;
@@ -144,21 +144,21 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded)
       return;
     }
   }
-  const obj9 = activeQuestDockMode(3991);
-  C.__closure = { withSpring: activeQuestDockMode(4542).withSpring, isEnrolled: null != enrolledAt, activeQuestDockMode, QuestDockMode: enabled, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
+  const obj9 = activeQuestDockMode(3992);
+  C.__closure = { withSpring: activeQuestDockMode(4543).withSpring, isEnrolled: null != enrolledAt, activeQuestDockMode, QuestDockMode: enabled, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
   C.__workletHash = 9632835517209;
   C.__initData = closure_15;
   const animatedStyle3 = obj9.useAnimatedStyle(C);
   obj3 = { style: items };
   items = [tmp.dragHandleWrapper, animatedStyle];
-  const obj2 = { withSpring: activeQuestDockMode(4542).withSpring, isEnrolled: null != enrolledAt, activeQuestDockMode, QuestDockMode: enabled, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
+  const obj2 = { withSpring: activeQuestDockMode(4543).withSpring, isEnrolled: null != enrolledAt, activeQuestDockMode, QuestDockMode: enabled, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
   obj4 = { style: animatedStyle1 };
-  const tmp11 = windowDimensions(7678);
+  const tmp11 = windowDimensions(7620);
   const tmp12 = closure_8;
-  obj4.layout = activeQuestDockMode(14043).dimensionsLayoutTransition;
+  obj4.layout = activeQuestDockMode(14054).dimensionsLayoutTransition;
   const obj5 = { style: items1 };
   items1 = [tmp.dragHandleOverlay, animatedStyle3];
-  const tmp13 = windowDimensions(7678);
+  const tmp13 = windowDimensions(7620);
   obj6 = { variant: "overlay" };
   const intl = activeQuestDockMode(1212).intl;
   const string = intl.string;
@@ -170,13 +170,13 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded)
   }
   obj6.accessibilityLabel = stringResult;
   obj5.children = callback(activeQuestDockMode(5446).ActionSheetHeaderBar, obj6);
-  const items2 = [callback(windowDimensions(7678), obj5), ];
+  const items2 = [callback(windowDimensions(7620), obj5), ];
   const obj7 = { style: null, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const items3 = [tmp.dragHandleOverlay, animatedStyle2];
   obj7.style = items3;
-  const tmp14 = windowDimensions(7678);
+  const tmp14 = windowDimensions(7620);
   obj7.children = callback(activeQuestDockMode(5446).ActionSheetHeaderBar, { variant: "default" });
-  items2[1] = callback(windowDimensions(7678), obj7);
+  items2[1] = callback(windowDimensions(7620), obj7);
   obj4.children = items2;
   obj3.children = tmp12(tmp13, obj4);
   return callback(tmp11, obj3);

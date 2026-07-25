@@ -1,23 +1,23 @@
-// Module ID: 8356
-// Function ID: 66024
+// Module ID: 8114
+// Function ID: 64675
 // Name: isPlayedGameEntry
-// Dependencies: [7901, 8357, 2]
+// Dependencies: [7848, 8115, 2]
 // Exports: isConsoleEntry, isLaunchedActivityEntry, isListeningLikeEntry, isRecentActivityEntry
 
-// Module 8356 (isPlayedGameEntry)
+// Module 8114 (isPlayedGameEntry)
 function isPlayedGameEntry(content_type) {
   content_type = undefined;
   if (null != content_type) {
     content_type = content_type.content_type;
   }
-  return content_type === require(7901) /* ContentInventoryEntryType */.ContentInventoryEntryType.PLAYED_GAME;
+  return content_type === require(7848) /* ContentInventoryEntryType */.ContentInventoryEntryType.PLAYED_GAME;
 }
 function isTopGameEntry(content_type) {
   content_type = undefined;
   if (null != content_type) {
     content_type = content_type.content_type;
   }
-  return content_type === require(7901) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_GAME;
+  return content_type === require(7848) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_GAME;
 }
 function isGamingLikeEntry(content) {
   let tmp = isPlayedGameEntry(content);
@@ -46,27 +46,27 @@ function isListenedSessionEntry(closure_0) {
   if (null != closure_0) {
     content_type = closure_0.content_type;
   }
-  return content_type === require(7901) /* ContentInventoryEntryType */.ContentInventoryEntryType.LISTENED_SESSION;
+  return content_type === require(7848) /* ContentInventoryEntryType */.ContentInventoryEntryType.LISTENED_SESSION;
 }
 function isTopArtistEntry(entry) {
   let content_type;
   if (null != entry) {
     content_type = entry.content_type;
   }
-  return content_type === require(7901) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_ARTIST;
+  return content_type === require(7848) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_ARTIST;
 }
 function isWatchedMediaEntry(entry) {
   let content_type;
   if (null != entry) {
     content_type = entry.content_type;
   }
-  return content_type === require(7901) /* ContentInventoryEntryType */.ContentInventoryEntryType.WATCHED_MEDIA;
+  return content_type === require(7848) /* ContentInventoryEntryType */.ContentInventoryEntryType.WATCHED_MEDIA;
 }
 function isXboxEntry(extra) {
   const tmp = isGamingLikeEntry(extra);
   let tmp2 = tmp;
   if (tmp) {
-    tmp2 = extra.extra.platform === require(8357) /* PlatformType */.PlatformType.XBOX;
+    tmp2 = extra.extra.platform === require(8115) /* PlatformType */.PlatformType.XBOX;
   }
   return tmp2;
 }
@@ -74,7 +74,7 @@ function isPlaystationEntry(extra) {
   const tmp = isGamingLikeEntry(extra);
   let tmp2 = tmp;
   if (tmp) {
-    tmp2 = extra.extra.platform === require(8357) /* PlatformType */.PlatformType.PLAYSTATION;
+    tmp2 = extra.extra.platform === require(8115) /* PlatformType */.PlatformType.PLAYSTATION;
   }
   return tmp2;
 }
@@ -108,7 +108,7 @@ export const isLaunchedActivityEntry = function isLaunchedActivityEntry(content_
   if (null != content_type) {
     content_type = content_type.content_type;
   }
-  return content_type === require(7901) /* ContentInventoryEntryType */.ContentInventoryEntryType.LAUNCHED_ACTIVITY;
+  return content_type === require(7848) /* ContentInventoryEntryType */.ContentInventoryEntryType.LAUNCHED_ACTIVITY;
 };
 export const isRecentActivityEntry = function isRecentActivityEntry(content) {
   let tmp = isGamingLikeEntry(content);

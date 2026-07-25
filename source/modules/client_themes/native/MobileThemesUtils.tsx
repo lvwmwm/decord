@@ -1,10 +1,10 @@
-// Module ID: 4063
-// Function ID: 33839
+// Module ID: 4064
+// Function ID: 33850
 // Name: getCustomThemesName
-// Dependencies: [1278, 4064, 1322, 3943, 1212, 2396, 3944, 4065, 566, 1324, 2]
+// Dependencies: [1278, 4065, 1322, 3944, 1212, 2397, 3945, 4066, 566, 1324, 2]
 // Exports: getAllMobileThemes, useAllMobileThemes
 
-// Module 4063 (getCustomThemesName)
+// Module 4064 (getCustomThemesName)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -16,24 +16,24 @@ let closure_8;
 const require = arg1;
 function getCustomThemesName() {
   const intl = require(1212) /* getSystemLocale */.intl;
-  return intl.string(importDefault(2396).yl1iMm);
+  return intl.string(importDefault(2397).yl1iMm);
 }
 function getCustomBackgroundGradient() {
   customThemeDisplaySettings = customThemeDisplaySettings.getCustomThemeDisplaySettings();
   let tmp2 = null;
   if (undefined !== customThemeDisplaySettings) {
-    const obj = { type: require(3944) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName };
+    const obj = { type: require(3945) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName };
     ({ baseTheme: obj.theme, customTheme: obj.customThemeSettings } = customThemeDisplaySettings);
     tmp2 = obj;
   }
   return tmp2;
 }
 function useCustomBackgroundGradient(base_theme) {
-  let obj = require(4065) /* useCustomThemeDisplaySettings */;
+  let obj = require(4066) /* useCustomThemeDisplaySettings */;
   const customThemeDisplaySettings = obj.useCustomThemeDisplaySettings(base_theme);
   let tmp2 = null;
   if (undefined !== customThemeDisplaySettings) {
-    obj = { type: require(3944) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName };
+    obj = { type: require(3945) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName };
     ({ baseTheme: obj2.theme, customTheme: obj2.customThemeSettings } = customThemeDisplaySettings);
     tmp2 = obj;
   }

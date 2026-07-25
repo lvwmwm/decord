@@ -1,10 +1,10 @@
-// Module ID: 7840
-// Function ID: 61870
+// Module ID: 7787
+// Function ID: 61842
 // Name: getSortedVoiceSessionParticipants
-// Dependencies: [31, 6901, 1348, 1849, 7841, 566, 7756, 4360, 1212, 22, 2]
+// Dependencies: [31, 5892, 1348, 1850, 7788, 566, 7702, 4361, 1212, 22, 2]
 // Exports: getVoiceSessionMessageContent, useSortedVoiceSessionParticipants
 
-// Module 7840 (getSortedVoiceSessionParticipants)
+// Module 7787 (getSortedVoiceSessionParticipants)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ function getSortedVoiceSessionParticipants(channel_id) {
     }
     return reduced;
   })(channel_id);
-  return require(7841) /* maybeSortByProbability */.maybeSortByProbability(tmp, userAffinitiesMap, "VoiceSessionUtils - participants");
+  return require(7788) /* maybeSortByProbability */.maybeSortByProbability(tmp, userAffinitiesMap, "VoiceSessionUtils - participants");
 }
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/VoiceSessionUtils.tsx");
 
@@ -74,8 +74,8 @@ export const useSortedVoiceSessionParticipants = function useSortedVoiceSessionP
 };
 export const getVoiceSessionMessageContent = function getVoiceSessionMessageContent(channel_id) {
   const _require = channel.getChannel(channel_id.channel_id);
-  const tmp = importDefault(7756)(channel_id);
-  let obj = _require(4360);
+  const tmp = importDefault(7702)(channel_id);
+  let obj = _require(4361);
   const messageAuthor = obj.getMessageAuthor(channel_id);
   const mapped = getSortedVoiceSessionParticipants(channel_id).map((user) => {
     const obj = { user, messageAuthor: callback(outer1_2[7]).getUserAuthor(user, callback) };

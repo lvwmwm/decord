@@ -1,10 +1,10 @@
-// Module ID: 14919
-// Function ID: 113736
+// Module ID: 14930
+// Function ID: 113864
 // Name: useBaseChannelUnreadBadgeState
-// Dependencies: [6764, 4142, 4325, 566, 6767, 2]
+// Dependencies: [5757, 4143, 4326, 566, 5761, 2]
 // Exports: useChannelUnreadBadgeState
 
-// Module 14919 (useBaseChannelUnreadBadgeState)
+// Module 14930 (useBaseChannelUnreadBadgeState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -41,8 +41,8 @@ export const useChannelUnreadBadgeState = function useChannelUnreadBadgeState(ch
   const stateFromStores = obj.useStateFromStores(items, () => outer1_2.shouldIndicateNewChannel(channel.guild_id, channel.id), items1);
   const tmp = useBaseChannelUnreadBadgeState(channel, flag);
   obj = { unread };
-  const optInEnabledForGuild = _require(6767).useOptInEnabledForGuild(channel.guild_id);
-  const obj2 = _require(6767);
+  const optInEnabledForGuild = _require(5761).useOptInEnabledForGuild(channel.guild_id);
+  const obj2 = _require(5761);
   const items2 = [closure_4];
   obj.resolvedUnreadSetting = _require(566).useStateFromStores(items2, () => outer1_4.resolveUnreadSetting(closure_0));
   obj.newChannel = stateFromStores;

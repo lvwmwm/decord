@@ -1,10 +1,10 @@
-// Module ID: 14544
-// Function ID: 111021
+// Module ID: 14555
+// Function ID: 111148
 // Name: feedBlock
-// Dependencies: [31, 27, 4122, 1278, 5590, 655, 653, 33, 4130, 689, 566, 3976, 14023, 14545, 14025, 6773, 5482, 5462, 1212, 4126, 4660, 4098, 14546, 1934, 4086, 4543, 14538, 14547, 477, 7964, 14548, 5085, 14549, 14550, 2]
+// Dependencies: [31, 27, 4123, 1278, 5590, 655, 653, 33, 4131, 689, 566, 3977, 14034, 14556, 14036, 5769, 5482, 5462, 1212, 4127, 4661, 4099, 14557, 1935, 4087, 4544, 14549, 14558, 477, 6154, 14559, 5085, 14560, 14561, 2]
 // Exports: default
 
-// Module 14544 (feedBlock)
+// Module 14555 (feedBlock)
 import preload from "preload";
 import get_ActivityIndicator from "metadata";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -58,7 +58,7 @@ export default function _default(feedBlock) {
   let obj1 = feedBlock(566);
   let items1 = [closure_8];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_8.hasConsented(outer1_10.PERSONALIZATION));
-  const tmp3 = stateFromStores1(14023)();
+  const tmp3 = stateFromStores1(14034)();
   const dependencyMap = tmp3;
   const items2 = [feedBlock.sortedSkuIds, tmp3, stateFromStores1];
   const memo = React.useMemo(() => {
@@ -91,7 +91,7 @@ export default function _default(feedBlock) {
     return obj;
   }, items2);
   let isPersonalized = memo.isPersonalized;
-  let obj2 = feedBlock(14025);
+  let obj2 = feedBlock(14036);
   const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts({ products: memo.feedProducts, maxProducts: 36, screen });
   let obj3 = feedBlock(566);
   const items3 = [_isNativeReflectConstruct];
@@ -109,7 +109,7 @@ export default function _default(feedBlock) {
   obj1 = { style: str.feedHeader };
   obj2 = { style: str.feedTitle };
   obj3 = { variant: "heading-lg/semibold", children: stringResult };
-  const items4 = [callback(feedBlock(4126).Heading, obj3), ];
+  const items4 = [callback(feedBlock(4127).Heading, obj3), ];
   if (isPersonalized) {
     const obj4 = {
       onPress() {
@@ -120,8 +120,8 @@ export default function _default(feedBlock) {
     const intl2 = feedBlock(1212).intl;
     obj4["aria-label"] = intl2.string(feedBlock(1212).t.hvVgAZ);
     const obj5 = { size: "xs" };
-    obj4.children = callback(feedBlock(4086).CircleInformationIcon, obj5);
-    isPersonalized = callback(feedBlock(4660).PressableOpacity, obj4);
+    obj4.children = callback(feedBlock(4087).CircleInformationIcon, obj5);
+    isPersonalized = callback(feedBlock(4661).PressableOpacity, obj4);
   }
   items4[1] = isPersonalized;
   obj2.children = items4;
@@ -133,28 +133,28 @@ export default function _default(feedBlock) {
     obj6.text = intl3.string(feedBlock(1212).t.xFcotU);
     obj6.variant = "primary";
     obj6.size = "sm";
-    tmp16 = callback(feedBlock(4543).Button, obj6);
+    tmp16 = callback(feedBlock(4544).Button, obj6);
   }
   items5[1] = tmp16;
   obj1.children = items5;
   const items6 = [closure_12(closure_5, obj1), , ];
   const obj7 = { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground };
-  items6[1] = callback(stateFromStores1(14538), obj7);
+  items6[1] = callback(stateFromStores1(14549), obj7);
   const obj8 = { style: str.feedFooter };
   const obj9 = { variant: "heading-lg/bold", accessibilityRole: "header" };
   const intl4 = feedBlock(1212).intl;
   obj9.children = intl4.string(feedBlock(1212).t.Yr70c4);
-  const items7 = [callback(feedBlock(4126).Text, obj9), , ];
+  const items7 = [callback(feedBlock(4127).Text, obj9), , ];
   const obj10 = { onPress: goToShopAll };
   const intl5 = feedBlock(1212).intl;
   obj10.text = intl5.string(feedBlock(1212).t.AfrvRD);
   obj10.variant = "primary";
   obj10.size = "md";
-  items7[1] = callback(feedBlock(4543).Button, obj10);
+  items7[1] = callback(feedBlock(4544).Button, obj10);
   if (screen === constants.ORBS) {
     if (stateFromStores2) {
       const obj11 = {};
-      const obj12 = { uri: stateFromStores1(14547) };
+      const obj12 = { uri: stateFromStores1(14558) };
       obj11.source = obj12;
       obj11.style = str.feedFooterOrbImage;
       obj11.accessibilityElementsHidden = true;
@@ -164,15 +164,15 @@ export default function _default(feedBlock) {
     } else {
       if (obj18.isAndroid()) {
         const obj13 = { url: null, autoplay: true, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        let tmp30Result = tmp30(7964);
-        obj13.url = tmp30(14548);
+        let tmp30Result = tmp30(6154);
+        obj13.url = tmp30(14559);
         obj13.style = `no-hide-descendants`.feedFooterOrbImage;
         tmp29Result = tmp29(tmp30Result, obj13);
       } else {
         const obj14 = { source: null, enableAnimation: true, resizeMode: "contain", style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
         const obj15 = {};
         tmp30Result = tmp30(5085);
-        obj15.uri = tmp30(14548);
+        obj15.uri = tmp30(14559);
         obj14.source = obj15;
         obj14.style = `no-hide-descendants`.feedFooterOrbImage;
         tmp29Result = tmp29(tmp30Result, obj14);
@@ -182,13 +182,13 @@ export default function _default(feedBlock) {
   } else {
     const obj16 = {};
     if (stateFromStores) {
-      obj16.source = tmp24(14549);
+      obj16.source = tmp24(14560);
       obj16.style = str.feedFooterImage;
       obj16.accessibilityElementsHidden = true;
       obj16.importantForAccessibility = "no-hide-descendants";
       let tmp26 = obj16;
     } else {
-      obj16.source = tmp24(14550);
+      obj16.source = tmp24(14561);
       obj16.style = str.feedFooterImage;
       obj16.accessibilityElementsHidden = true;
       obj16.importantForAccessibility = "no-hide-descendants";

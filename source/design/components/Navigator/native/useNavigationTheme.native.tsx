@@ -1,7 +1,7 @@
 // Module ID: 5586
-// Function ID: 47422
+// Function ID: 47427
 // Name: useNavigationTheme
-// Dependencies: [31, 3834, 689, 3976, 2]
+// Dependencies: [31, 3835, 689, 3977, 2]
 // Exports: useNavigationTheme
 
 // Module 5586 (useNavigationTheme)

@@ -1,10 +1,10 @@
-// Module ID: 9892
-// Function ID: 76513
+// Module ID: 9816
+// Function ID: 76108
 // Name: useChannelFollowerStats
-// Dependencies: [57, 31, 9893, 664, 566, 9894, 2]
+// Dependencies: [57, 31, 9817, 664, 566, 9818, 2]
 // Exports: default
 
-// Module 9892 (useChannelFollowerStats)
+// Module 9816 (useChannelFollowerStats)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,8 +26,8 @@ export default function useChannelFollowerStats(arg0) {
     if (null == stateFromStores) {
       if (!first) {
         dependencyMap(true);
-        const channelFollowerStats = first(9894).fetchChannelFollowerStats(closure_0);
-        const obj = first(9894);
+        const channelFollowerStats = first(9818).fetchChannelFollowerStats(closure_0);
+        const obj = first(9818);
       }
     } else {
       const _Date = Date;

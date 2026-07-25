@@ -1,9 +1,9 @@
-// Module ID: 12237
-// Function ID: 95676
+// Module ID: 12213
+// Function ID: 95485
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 12238, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 12214, 566, 686, 2]
 
-// Module 12237 (_isNativeReflectConstruct)
+// Module 12213 (_isNativeReflectConstruct)
 import initialize from "initialize";
 import dispatcher from "dispatcher";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

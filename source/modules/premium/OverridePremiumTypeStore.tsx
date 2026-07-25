@@ -1,9 +1,9 @@
-// Module ID: 1850
-// Function ID: 20419
+// Module ID: 1851
+// Function ID: 20430
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1851, 1855, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1852, 1856, 566, 686, 2]
 
-// Module 1850 (_isNativeReflectConstruct)
+// Module 1851 (_isNativeReflectConstruct)
 import getEnv from "getEnv";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -22,7 +22,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function setPremiumTypeActual(user) {
-  closure_9.premiumTypeActual = require(1855) /* getEnv */.getPremiumTypeFromRawValue(user.user.premium_type);
+  closure_9.premiumTypeActual = require(1856) /* getEnv */.getPremiumTypeFromRawValue(user.user.premium_type);
 }
 const UNSELECTED_CREATED_AT_DATE = GuildFeatures.UNSELECTED_CREATED_AT_DATE;
 const UNSELECTED_PREMIUM_TYPE_OVERRIDE = GuildFeatures.UNSELECTED_PREMIUM_TYPE_OVERRIDE;

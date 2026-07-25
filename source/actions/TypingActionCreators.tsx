@@ -1,9 +1,9 @@
-// Module ID: 11145
-// Function ID: 86706
+// Module ID: 11105
+// Function ID: 86344
 // Name: dispatcher
 // Dependencies: [686, 2]
 
-// Module 11145 (dispatcher)
+// Module 11105 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/TypingActionCreators.tsx");
 
 export default {

@@ -1,10 +1,10 @@
-// Module ID: 10994
-// Function ID: 85466
+// Module ID: 10949
+// Function ID: 85082
 // Name: SelectionHeader
-// Dependencies: [31, 27, 1348, 1906, 5188, 33, 4130, 689, 5186, 1212, 4543, 8469, 3848, 5165, 7638, 8569, 5160, 3843, 1557, 1450, 5084, 566, 4098, 5187, 5189, 2]
+// Dependencies: [31, 27, 1348, 1907, 5188, 33, 4131, 689, 5186, 1212, 4544, 8227, 3849, 5164, 7577, 8329, 5159, 3844, 1557, 1450, 5084, 566, 4099, 5187, 5189, 2]
 // Exports: default
 
-// Module 10994 (SelectionHeader)
+// Module 10949 (SelectionHeader)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -84,7 +84,7 @@ function SelectionHeader(renderIcon) {
     obj1.onPress = renderIcon.submitSelection;
     const intl3 = renderIcon(1212).intl;
     obj1.text = intl3.string(renderIcon(1212).t.XqMe3N);
-    tmp13Result = callback(renderIcon(4543).Button, obj1);
+    tmp13Result = callback(renderIcon(4544).Button, obj1);
     const tmp13 = callback;
   }
   obj.trailing = tmp13Result;
@@ -118,9 +118,9 @@ function SelectionHeader(renderIcon) {
         }
         onQueryChange(arg0);
       };
-      tmp19Result = callback(selectedOptions(8469), obj2);
+      tmp19Result = callback(selectedOptions(8227), obj2);
       const tmp19 = callback;
-      const tmp22 = selectedOptions(8469);
+      const tmp22 = selectedOptions(8227);
     }
   }
   items1[1] = tmp19Result;
@@ -145,7 +145,7 @@ function SelectionOptionItem(item) {
   item = item.item;
   ({ onPressOptionItem: importDefault, selected, disabled, index: dependencyMap, itemAccessibilityLabel, renderDescription, renderOptionSuffix } = item);
   ({ clearable, start, end, iconContainerStyle, skipIcon, multi, renderIcon } = item);
-  let obj = item(3848);
+  let obj = item(3849);
   obj = {};
   let tmp2 = null != selected;
   if (tmp2) {
@@ -154,7 +154,7 @@ function SelectionOptionItem(item) {
   obj.checked = tmp2;
   obj.disabled = disabled;
   const checkboxA11yNative = obj.useCheckboxA11yNative(obj);
-  let obj2 = item(3848);
+  let obj2 = item(3849);
   obj = {};
   let tmp4 = null != selected;
   if (tmp4) {
@@ -208,19 +208,19 @@ function SelectionOptionItem(item) {
       selected = false;
     }
     obj4.checked = selected;
-    let tmp19Result = callback(item(7638).FormCheckbox, obj4);
+    let tmp19Result = callback(item(7577).FormCheckbox, obj4);
     const tmp19 = callback;
   } else {
     tmp19Result = null;
     if (true === selected) {
       const obj5 = { color: "text-brand" };
-      tmp19Result = callback(item(8569).CheckmarkSmallBoldIcon, obj5);
+      tmp19Result = callback(item(8329).CheckmarkSmallBoldIcon, obj5);
     }
   }
   items1[1] = tmp19Result;
   obj3.children = items1;
   obj1.trailing = closure_10(View, obj3);
-  return callback(item(5165).TableRow, obj1);
+  return callback(item(5164).TableRow, obj1);
 }
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
 _createForOfIteratorHelperLoose = {};

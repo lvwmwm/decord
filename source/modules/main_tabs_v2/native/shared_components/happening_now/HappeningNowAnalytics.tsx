@@ -1,10 +1,10 @@
-// Module ID: 14969
-// Function ID: 114053
+// Module ID: 14979
+// Function ID: 114180
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 1194, 21, 2]
 // Exports: getAffinityProperties
 
-// Module 14969 (_createForOfIteratorHelperLoose)
+// Module 14979 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

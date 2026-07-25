@@ -1,10 +1,10 @@
-// Module ID: 16120
-// Function ID: 124855
+// Module ID: 16131
+// Function ID: 125023
 // Name: useApplicationInfo
-// Dependencies: [5, 57, 31, 1194, 1348, 4468, 1917, 3947, 4467, 13383, 7886, 653, 7885, 1881, 1392, 10510, 5635, 566, 5450, 21, 686, 8025, 1212, 44, 4353, 7082, 7890, 4666, 507, 664, 2]
+// Dependencies: [5, 57, 31, 1194, 1348, 4469, 1918, 3948, 4468, 13394, 7833, 653, 7832, 1882, 1392, 5661, 12551, 566, 5450, 21, 686, 6134, 1212, 44, 4354, 6100, 7837, 4667, 507, 664, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16120 (useApplicationInfo)
+// Module 16131 (useApplicationInfo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -217,7 +217,7 @@ function _submitModal() {
 let result = require("result").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
 
 export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id) {
-  const componentStateContext = require(7885) /* isInteractionComponent */.useComponentStateContext();
+  const componentStateContext = require(7832) /* isInteractionComponent */.useComponentStateContext();
   let first;
   if (null != componentStateContext) {
     const modal = componentStateContext.modal;
@@ -229,7 +229,7 @@ export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id
   if (null != first) {
     type = first.type;
   }
-  let tmp4 = type === require(1881) /* PermissionOverwriteType */.ComponentType.ACTION_ROW;
+  let tmp4 = type === require(1882) /* PermissionOverwriteType */.ComponentType.ACTION_ROW;
   if (tmp4) {
     tmp4 = first.components[0].id === id;
   }

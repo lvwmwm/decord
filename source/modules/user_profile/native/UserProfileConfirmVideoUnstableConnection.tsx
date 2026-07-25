@@ -1,10 +1,10 @@
-// Module ID: 11684
-// Function ID: 90670
+// Module ID: 11653
+// Function ID: 90414
 // Name: UserProfileConfirmVideoUnstableConnection
-// Dependencies: [31, 33, 4475, 1212, 4475, 2]
+// Dependencies: [31, 33, 4476, 1212, 4476, 2]
 // Exports: default
 
-// Module 11684 (UserProfileConfirmVideoUnstableConnection)
+// Module 11653 (UserProfileConfirmVideoUnstableConnection)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -25,12 +25,12 @@ export default function UserProfileConfirmVideoUnstableConnection(onConfirm) {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t.ND1my3);
   obj.onPress = onConfirm.onConfirm;
-  const items = [callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const items = [callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl4.string(require(1212) /* getSystemLocale */.t.jEqEhy);
-  items[1] = callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
+  items[1] = callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
   obj.children = items;
-  obj.actions = callback2(require(4475) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4475) /* getAlertModalItemKey */.AlertModal, obj);
+  obj.actions = callback2(require(4476) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4476) /* getAlertModalItemKey */.AlertModal, obj);
 };

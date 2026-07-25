@@ -1,9 +1,9 @@
-// Module ID: 15566
-// Function ID: 120004
+// Module ID: 15576
+// Function ID: 120132
 // Name: getAccessibilityLabel
-// Dependencies: [31, 27, 33, 689, 4130, 3763, 1212, 10453, 8735, 15567, 3848, 2]
+// Dependencies: [31, 27, 33, 689, 4131, 3764, 1212, 10387, 8623, 15577, 3849, 2]
 
-// Module 15566 (getAccessibilityLabel)
+// Module 15576 (getAccessibilityLabel)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -13,70 +13,61 @@ let closure_3;
 let closure_4;
 const require = arg1;
 function getAccessibilityLabel(arg0) {
-  if (require(3763) /* calculateElevatedPermissions */.DENY === arg0) {
+  if (require(3764) /* calculateElevatedPermissions */.DENY === arg0) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     return intl3.string(require(1212) /* getSystemLocale */.t["6639O5"]);
-  } else if (require(3763) /* calculateElevatedPermissions */.ALLOW === arg0) {
+  } else if (require(3764) /* calculateElevatedPermissions */.ALLOW === arg0) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     return intl2.string(require(1212) /* getSystemLocale */.t.RzDfSk);
-  } else if (require(3763) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
+  } else if (require(3764) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t.ujC3ZS);
   }
 }
 function getIcon(arg0, arg1, icon) {
-  if (require(3763) /* calculateElevatedPermissions */.DENY === arg0) {
+  if (require(3764) /* calculateElevatedPermissions */.DENY === arg0) {
     let obj = { size: "sm", style: icon.icon };
     const colors3 = importDefault(689).colors;
     obj.color = arg1 ? colors3.WHITE : colors3.ICON_FEEDBACK_CRITICAL;
-    return jsx(require(10453) /* DenyIcon */.DenyIcon, { size: "sm", style: icon.icon });
-  } else if (require(3763) /* calculateElevatedPermissions */.ALLOW === arg0) {
+    return jsx(require(10387) /* DenyIcon */.DenyIcon, { size: "sm", style: icon.icon });
+  } else if (require(3764) /* calculateElevatedPermissions */.ALLOW === arg0) {
     obj = { size: "sm", style: icon.icon };
     const colors2 = importDefault(689).colors;
     obj.color = arg1 ? colors2.WHITE : colors2.ICON_FEEDBACK_POSITIVE;
-    return jsx(require(8735) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, { size: "sm", style: icon.icon });
-  } else if (require(3763) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
+    return jsx(require(8623) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, { size: "sm", style: icon.icon });
+  } else if (require(3764) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
     obj = { size: "sm", style: icon.icon };
     const colors = importDefault(689).colors;
     obj.color = arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT;
-    return jsx(require(15567) /* SlashIcon */.SlashIcon, { size: "sm", style: icon.icon });
+    return jsx(require(15577) /* SlashIcon */.SlashIcon, { size: "sm", style: icon.icon });
   } else {
     return null;
   }
 }
 function getPressableStyleOverrides(arg0, arg1, denySelected) {
-  if (require(3763) /* calculateElevatedPermissions */.DENY === arg0) {
+  if (require(3764) /* calculateElevatedPermissions */.DENY === arg0) {
     return arg1 ? denySelected.denySelected : denySelected.denyActive;
-  } else if (require(3763) /* calculateElevatedPermissions */.ALLOW === arg0) {
+  } else if (require(3764) /* calculateElevatedPermissions */.ALLOW === arg0) {
     return arg1 ? denySelected.allowSelected : denySelected.allowActive;
-  } else if (require(3763) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
+  } else if (require(3764) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
     return arg1 ? denySelected.passthroughSelected : denySelected.passthroughActive;
   }
 }
-function OverrideOption(onPress) {
-  const type = onPress.type;
-  const selected = onPress.selected;
-  const styles = onPress.styles;
+function OverrideOption(type) {
+  let onPress;
+  let permissionTitle;
+  type = type.type;
+  const selected = type.selected;
+  const styles = type.styles;
+  ({ permissionTitle, onPress } = type);
   let obj = type(styles[10]);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
-  obj = {
-    accessibilityRole: radioA11yNative.accessibilityRole,
-    accessibilityLabel: getAccessibilityLabel(type),
-    accessibilityState: radioA11yNative.accessibilityState,
-    style(pressed) {
-      if (!selected) {
-        if (!pressed.pressed) {
-          let iconWrapper = styles.iconWrapper;
-        }
-        return iconWrapper;
-      }
-      const items = [outer1_10(type, selected, styles), styles.iconWrapper];
-      iconWrapper = items;
-    },
-    onPress: onPress.onPress,
-    children: getIcon(type, selected, styles)
-  };
-  return <closure_3 accessibilityRole={radioA11yNative.accessibilityRole} accessibilityLabel={getAccessibilityLabel(type)} accessibilityState={radioA11yNative.accessibilityState} style={function style(pressed) {
+  obj = { accessibilityRole: radioA11yNative.accessibilityRole };
+  let items = [permissionTitle, getAccessibilityLabel(type)];
+  const found = items.filter(Boolean);
+  obj.accessibilityLabel = found.join(", ");
+  obj.accessibilityState = radioA11yNative.accessibilityState;
+  obj.style = function style(pressed) {
     if (!selected) {
       if (!pressed.pressed) {
         let iconWrapper = styles.iconWrapper;
@@ -85,7 +76,10 @@ function OverrideOption(onPress) {
     }
     const items = [outer1_10(type, selected, styles), styles.iconWrapper];
     iconWrapper = items;
-  }} onPress={arg0.onPress}>{getIcon(type, selected, styles)}</closure_3>;
+  };
+  obj.onPress = onPress;
+  obj.children = getIcon(type, selected, styles);
+  return <closure_3 accessibilityRole={radioA11yNative.accessibilityRole} />;
 }
 ({ Pressable: closure_3, View: closure_4 } = get_ActivityIndicator);
 const PX_4 = require("_createForOfIteratorHelperLoose").space.PX_4;
@@ -112,17 +106,18 @@ obj.disabled = { opacity: 0.3 };
 let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 let items = [require("calculateElevatedPermissions").DENY, require("calculateElevatedPermissions").PASSTHROUGH, require("calculateElevatedPermissions").ALLOW];
 const obj8 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER };
-const memoResult = importAllResult.memo(function ChannelSettingsPermissionsOverrideCheckbox(onValueChange) {
+const memoResult = importAllResult.memo(function ChannelSettingsPermissionsOverrideCheckbox(permissionTitle) {
   let disabled;
-  let require;
-  ({ value: require, disabled } = onValueChange);
+  let importDefault;
+  permissionTitle = permissionTitle.permissionTitle;
+  ({ value: importDefault, disabled } = permissionTitle);
   if (disabled === undefined) {
     disabled = false;
   }
-  onValueChange = onValueChange.onValueChange;
-  let c2;
+  const onValueChange = permissionTitle.onValueChange;
+  let c3;
   let tmp = callback();
-  c2 = tmp;
+  c3 = tmp;
   const obj = {};
   const items = [tmp.ternaryCheckBox, ];
   let disabled2 = disabled;
@@ -137,19 +132,21 @@ const memoResult = importAllResult.memo(function ChannelSettingsPermissionsOverr
   }
   obj.pointerEvents = str;
   obj.accessibilityRole = "radiogroup";
+  obj.accessibilityLabel = permissionTitle;
   obj.children = items.map((type) => {
     let closure_0 = type;
     return outer1_5(outer1_11, {
+      permissionTitle: closure_0,
       type,
-      selected: closure_0 === type,
-      styles: c2,
+      selected: closure_1 === type,
+      styles: c3,
       onPress() {
-        let tmp = null != outer1_1;
+        let tmp = null != outer1_2;
         if (tmp) {
-          tmp = closure_0 !== closure_0;
+          tmp = outer1_1 !== closure_0;
         }
         if (tmp) {
-          outer1_1(closure_0);
+          outer1_2(closure_0);
         }
       }
     }, "checkbox-" + arg1);

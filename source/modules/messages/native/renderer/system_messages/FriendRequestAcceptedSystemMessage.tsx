@@ -1,10 +1,10 @@
-// Module ID: 7843
-// Function ID: 61891
+// Module ID: 7790
+// Function ID: 61863
 // Name: createFriendRequestAcceptedSystemMessage
-// Dependencies: [1348, 1849, 7738, 7740, 4130, 689, 1212, 7724, 7844, 7741, 2]
+// Dependencies: [1348, 1850, 7684, 7686, 4131, 689, 1212, 7670, 7791, 7687, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 7843 (createFriendRequestAcceptedSystemMessage)
+// Module 7790 (createFriendRequestAcceptedSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -21,14 +21,14 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
       const currentUser = authStore.getCurrentUser();
       if (null != user) {
         if (null != currentUser) {
-          let str5 = require(7738) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
+          let str5 = require(7684) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
           let obj = { userId: recipientId, message, author: str5, roleStyle: message.roleStyle };
           obj = { username: str5.nick };
-          obj.usernameOnClick = importDefault(7740)(obj);
+          obj.usernameOnClick = importDefault(7686)(obj);
           const content = message.content;
           if (null != content) {
             if ("" !== content) {
-              let obj1 = require(4130) /* _createForOfIteratorHelperLoose */;
+              let obj1 = require(4131) /* _createForOfIteratorHelperLoose */;
               obj1 = { baseTextColor: importDefault(689).colors.TEXT_SUBTLE };
               const intl2 = require(1212) /* getSystemLocale */.intl;
               const formatToParts2 = intl2.formatToParts;
@@ -61,10 +61,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
             formatToPartsResult = formatToParts(t.hyPOTm, obj);
           }
           const obj4 = { content: formatToPartsResult };
-          const obj10 = require(7738) /* getMessageAuthorWithProcessedColor */;
-          obj4.iconUrl = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7844));
+          const obj10 = require(7684) /* getMessageAuthorWithProcessedColor */;
+          obj4.iconUrl = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(7791));
           obj4.textColor = undefined;
-          const merged2 = Object.assign(importDefault(7741)(message));
+          const merged2 = Object.assign(importDefault(7687)(message));
           return obj4;
         }
       }

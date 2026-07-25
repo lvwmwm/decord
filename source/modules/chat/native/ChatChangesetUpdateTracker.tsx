@@ -1,10 +1,10 @@
-// Module ID: 9478
-// Function ID: 73704
+// Module ID: 9399
+// Function ID: 73291
 // Name: weakMap
 // Dependencies: [2]
 // Exports: getAndIncrementChangesetIdForChat, getChangesetIdForChat
 
-// Module 9478 (weakMap)
+// Module 9399 (weakMap)
 const weakMap = new WeakMap();
 let result = require("set").fileFinishedImporting("modules/chat/native/ChatChangesetUpdateTracker.tsx");
 

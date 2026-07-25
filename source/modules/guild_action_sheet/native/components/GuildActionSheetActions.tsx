@@ -1,10 +1,10 @@
-// Module ID: 12969
-// Function ID: 100548
+// Module ID: 12980
+// Function ID: 100675
 // Name: HideMutedChannelsOption
-// Dependencies: [31, 27, 6764, 1316, 1391, 6878, 1910, 4142, 4325, 1849, 653, 5055, 7721, 4326, 33, 4130, 689, 566, 5500, 1212, 10237, 5730, 3946, 1334, 6760, 4098, 4337, 10002, 1934, 11418, 4319, 5462, 5482, 9814, 1273, 9465, 12970, 1282, 1331, 8485, 12971, 7934, 8620, 4126, 3803, 5793, 5079, 10315, 5073, 13019, 10310, 13020, 8498, 4939, 8456, 8409, 10022, 13021, 4472, 44, 12968, 10270, 10269, 6767, 10008, 13022, 7689, 7793, 11001, 5489, 5490, 3830, 1392, 2]
+// Dependencies: [31, 27, 5757, 1316, 1391, 5868, 1911, 4143, 4326, 1850, 653, 5056, 7665, 4327, 33, 4131, 689, 566, 5500, 1212, 10170, 9931, 3947, 1334, 5753, 4099, 4338, 9930, 1935, 11381, 4320, 5462, 5482, 9738, 1273, 9386, 12981, 1282, 1331, 8245, 12982, 7881, 8384, 4127, 3804, 6449, 5079, 10248, 5074, 13030, 10243, 13031, 8258, 4940, 8214, 8167, 9951, 13032, 4473, 44, 12979, 10203, 10202, 5761, 9937, 13033, 7633, 7740, 10956, 5489, 5490, 3831, 1392, 2]
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction
 
-// Module 12969 (HideMutedChannelsOption)
+// Module 12980 (HideMutedChannelsOption)
 import mergeLocations from "mergeLocations";
 import { View } from "ChannelsAndRolesScreen";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -47,9 +47,9 @@ function HideMutedChannelsOption(guild) {
 }
 function BrowseChannelsOption(guild) {
   guild = guild.guild;
-  let obj = guild(3946);
+  let obj = guild(3947);
   const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(1334).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
-  const tmp = importDefault(5730)(guild);
+  const tmp = importDefault(9931)(guild);
   const items = [closure_11];
   const stateFromStores = guild(566).useStateFromStores(items, () => outer1_11.hasUnread(guild.id, outer1_20.GUILD_ONBOARDING_QUESTION));
   const obj2 = guild(566);
@@ -85,7 +85,7 @@ function BrowseChannelsOption(guild) {
       obj.label = stringResult;
       tmp6(tmp9, obj);
     }
-    tmp10 = callback2(guild(11418).NewBadge, {});
+    tmp10 = callback2(guild(11381).NewBadge, {});
     tmp6 = callback2;
   }
 }
@@ -94,9 +94,9 @@ function ChangeIdentityOption(arg0) {
   let user;
   ({ guild, user } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importDefault(4319);
+  let obj = importDefault(4320);
   const nickname = obj.getNickname(guild.id, undefined, user);
-  const _require = importDefault(9814)({ guild, analyticsLocations: importDefault(5462)(importDefault(5482).GUILD_SETTINGS).analyticsLocations });
+  const _require = importDefault(9738)({ guild, analyticsLocations: importDefault(5462)(importDefault(5482).GUILD_SETTINGS).analyticsLocations });
   obj = {};
   const intl = _require(1212).intl;
   const features = guild.features;
@@ -112,7 +112,7 @@ function ChangeIdentityOption(arg0) {
       const items = [callback2(_require(1273).Avatar, obj1), ];
       const obj2 = { user, nick: nickname };
       ({ identityName: obj5.usernameStyle, identityName: obj5.discriminatorStyle, identityName: obj5.nicknameStyle } = tmp);
-      items[1] = callback2(importDefault(9465), obj2);
+      items[1] = callback2(importDefault(9386), obj2);
       obj.children = items;
       tmp6 = callback3(View, obj);
     }
@@ -144,11 +144,11 @@ function GuildThemePreferenceOption(guild) {
 }
 function ServerTagOption(guild) {
   guild = guild.guild;
-  let obj = guild(8485);
+  let obj = guild(8245);
   [][0] = guild.id;
   const result = obj.canViewMobileServerTag(guild.id);
   if (result) {
-    let obj1 = guild(7934);
+    let obj1 = guild(7881);
     const profile = guild.profile;
     let badge;
     if (null != profile) {
@@ -171,12 +171,12 @@ function ServerTagOption(guild) {
     obj2.guildTag = tmp20;
     obj2.guildBadge = guildTagBadgeUrl;
     obj2.badgeSize = GuildTagBadgeSize.SIZE_16;
-    obj1.children = callback2(guild(8620).BaseGuildTagChiplet, obj2);
+    obj1.children = callback2(guild(8384).BaseGuildTagChiplet, obj2);
     const items = [callback2(View, obj1), ];
     const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
     const intl = guild(1212).intl;
     obj3.children = intl.string(guild(1212).t["2QmKZ2"]);
-    items[1] = callback2(guild(4126).Text, obj3);
+    items[1] = callback2(guild(4127).Text, obj3);
     obj.children = items;
     obj.label = closure_22(View, obj);
     obj.onPress = tmp3;
@@ -236,11 +236,11 @@ class NotificationAction {
   }
 }
 function handleLeaveServer(guild) {
-  let obj = importDefault(4098);
+  let obj = importDefault(4099);
   obj.hideActionSheet();
   const lazyResult = React.lazy(() => outer1_0(outer1_2[28])(outer1_2[57], outer1_2.paths));
   obj = { guild };
-  require(4472) /* useAlertStore */.openAlert("guild-action-sheet-leave-server", callback2(lazyResult, obj));
+  require(4473) /* useAlertStore */.openAlert("guild-action-sheet-leave-server", callback2(lazyResult, obj));
 }
 ({ isGuildOwner: closure_7, getGuildIconURL: closure_8 } = isGuildOwner);
 ({ ChannelTypes: closure_14, GuildFeatures: closure_15, AnalyticsSections: closure_16, AVATAR_MAX_SIZE: closure_17 } = ME);
@@ -324,7 +324,7 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
 };
 export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryActions(guild) {
   guild = guild.guild;
-  let obj = guild(13020);
+  let obj = guild(13031);
   let obj1 = guild(566);
   const items = [closure_10];
   const items1 = [];
@@ -393,7 +393,7 @@ export const GuildActionSheetDirectoryActions = function GuildActionSheetDirecto
   items.push(callback2(NotificationAction, { guild }));
   items.push(callback2(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
-  let obj = guild(12968);
+  let obj = guild(12979);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
@@ -432,13 +432,13 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   let shouldShowIncidentActions;
   guild = guild.guild;
   const currentUser = authStore.getCurrentUser();
-  let obj = guild(10270);
+  let obj = guild(10203);
   const canReportRaid = obj.useCanReportRaid(guild);
-  let obj1 = guild(10269);
+  let obj1 = guild(10202);
   const guildIncidentsState = obj1.useGuildIncidentsState(guild.id);
   const items = [];
   ({ shouldShowIncidentActions, isUnderLockdown } = guildIncidentsState);
-  let obj2 = guild(6767);
+  let obj2 = guild(5761);
   const optInEnabledForGuild = obj2.useOptInEnabledForGuild(guild.id);
   items.push(callback2(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(callback2(GuildThemePreferenceOption, { guild }));
@@ -456,7 +456,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   }
   items.push(callback2(HideMutedChannelsOption, { guild }));
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
-  let obj4 = guild(12968);
+  let obj4 = guild(12979);
   const messageRequestPrivacyOption = obj4.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
@@ -536,7 +536,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
 };
 export const GuildDeveloperOptionAction = function GuildDeveloperOptionAction(guild) {
   guild = guild.guild;
-  const DeveloperMode = guild(3803).DeveloperMode;
+  const DeveloperMode = guild(3804).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   importDefault(5489);
   if (setting) {

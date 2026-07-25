@@ -1,17 +1,17 @@
-// Module ID: 16399
-// Function ID: 127995
+// Module ID: 16410
+// Function ID: 128163
 // Name: getIntroHeaderSource
-// Dependencies: [31, 27, 33, 7405, 16400, 16401, 16402, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 16411, 16412, 16413, 3977, 2]
 // Exports: IntroHeader
 
-// Module 16399 (getIntroHeaderSource)
+// Module 16410 (getIntroHeaderSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getIntroHeaderSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getIntroHeaderSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useIntroHeaderSource() {
-  return getIntroHeaderSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getIntroHeaderSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/IntroHeader.tsx");
 

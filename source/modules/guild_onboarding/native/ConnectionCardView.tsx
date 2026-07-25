@@ -1,7 +1,7 @@
 // Module ID: 5477
-// Function ID: 46783
+// Function ID: 46788
 // Name: ConnectionCardView
-// Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 4091, 4543, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4127, 1212, 4092, 4544, 2]
 // Exports: default
 
 // Module 5477 (ConnectionCardView)
@@ -46,14 +46,14 @@ export default function ConnectionCardView(description) {
   const items = [callback(closure_2, obj), ];
   const obj1 = { style: tmp.textContent };
   const obj2 = { variant: "text-md/medium", color: "text-strong", children: displayName };
-  const items1 = [callback(require(4126) /* Text */.Text, obj2), ];
+  const items1 = [callback(require(4127) /* Text */.Text, obj2), ];
   let tmp4 = null != description;
   if (tmp4) {
     tmp4 = description.length > 0;
   }
   if (tmp4) {
     const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp4 = callback(require(4126) /* Text */.Text, obj3);
+    tmp4 = callback(require(4127) /* Text */.Text, obj3);
   }
   items1[1] = tmp4;
   obj1.children = items1;
@@ -68,7 +68,7 @@ export default function ConnectionCardView(description) {
     const obj6 = { variant: "text-sm/medium", color: "text-feedback-positive" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj6.children = intl2.string(require(1212) /* getSystemLocale */.t["LV+CXH"]);
-    const items3 = [callback(require(4126) /* Text */.Text, obj6), callback(require(4091) /* CircleCheckIcon */.CircleCheckIcon, { size: "sm", color: "status-positive" })];
+    const items3 = [callback(require(4127) /* Text */.Text, obj6), callback(require(4092) /* CircleCheckIcon */.CircleCheckIcon, { size: "sm", color: "status-positive" })];
     obj5.children = items3;
     tmp11 = callback2(closure_2, obj5);
   } else {
@@ -76,7 +76,7 @@ export default function ConnectionCardView(description) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj7.text = intl.string(require(1212) /* getSystemLocale */.t.S0W8Z5);
     obj7.disabled = !canConnect;
-    tmp11 = callback(require(4543) /* Button */.Button, obj7);
+    tmp11 = callback(require(4544) /* Button */.Button, obj7);
   }
   items2[1] = tmp11;
   obj.children = items2;

@@ -1,5 +1,5 @@
 // Module ID: 1394
-// Function ID: 16641
+// Function ID: 16648
 // Name: getAvatarSpecs
 // Dependencies: [2]
 // Exports: getAvatarSize, getStatusSize

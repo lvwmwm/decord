@@ -1,7 +1,7 @@
 // Module ID: 5581
-// Function ID: 47401
+// Function ID: 47406
 // Name: PostponeRender
-// Dependencies: [57, 31, 27, 33, 4130, 689, 4559, 5582, 5583, 5585, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 4560, 5582, 5583, 5585, 2]
 // Exports: PostponeRender
 
 // Module 5581 (PostponeRender)
@@ -31,7 +31,7 @@ export const PostponeRender = function PostponeRender(children) {
   const first = tmp2[0];
   const importDefault = tmp2[1];
   const dependencyMap = React.useRef(undefined);
-  importDefault(4559)(() => {
+  importDefault(4560)(() => {
     if (first) {
       table.current = first(table[7]).runAfterInteractions(() => {
         outer1_1(false);

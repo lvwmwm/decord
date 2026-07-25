@@ -1,10 +1,10 @@
-// Module ID: 11743
-// Function ID: 91238
+// Module ID: 11713
+// Function ID: 90988
 // Name: ContactSyncSettingsActionSheet
-// Dependencies: [31, 27, 11733, 653, 33, 4130, 689, 7636, 1212, 4126, 11736, 5498, 2]
+// Dependencies: [31, 27, 11703, 653, 33, 4131, 689, 7575, 1212, 4127, 11706, 5498, 2]
 // Exports: default
 
-// Module 11743 (ContactSyncSettingsActionSheet)
+// Module 11713 (ContactSyncSettingsActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import initialValues from "initialValues";

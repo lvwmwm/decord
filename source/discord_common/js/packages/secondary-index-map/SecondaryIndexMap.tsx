@@ -1,16 +1,16 @@
-// Module ID: 3754
-// Function ID: 28663
+// Module ID: 3755
+// Function ID: 28674
 // Name: sortedInsert
-// Dependencies: [57, 6, 7, 3755, 2]
+// Dependencies: [57, 6, 7, 3756, 2]
 
-// Module 3754 (sortedInsert)
+// Module 3755 (sortedInsert)
 import _slicedToArray from "_slicedToArray";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 
 function sortedInsert(arr) {
   if (null != arg1) {
-    const tmp3 = importDefault(3755)(arr, arg1, arg3);
+    const tmp3 = importDefault(3756)(arr, arg1, arg3);
     let tmp4 = tmp3;
     if (arr[tmp3] !== arg1) {
       let tmp5 = tmp3;
@@ -30,7 +30,7 @@ function sortedInsert(arr) {
     arr.splice(tmp4, 1);
   }
   if (null != arg2) {
-    arr.splice(importDefault(3755)(arr, arg2, arg3), 0, arg2);
+    arr.splice(importDefault(3756)(arr, arg2, arg3), 0, arg2);
   }
 }
 let closure_5 = [];

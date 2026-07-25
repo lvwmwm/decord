@@ -1,10 +1,10 @@
-// Module ID: 9762
-// Function ID: 75821
+// Module ID: 9686
+// Function ID: 75416
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 31, 27, 5610, 1851, 653, 655, 8308, 33, 689, 4130, 8704, 8717, 9763, 9767, 5462, 5482, 675, 8537, 9716, 9768, 3982, 3831, 1212, 6773, 8813, 3969, 4126, 9785, 9790, 2]
+// Dependencies: [5, 31, 27, 5610, 1852, 653, 655, 8043, 33, 689, 4131, 8592, 8605, 9687, 9691, 5462, 5482, 675, 8297, 9640, 9692, 3983, 3832, 1212, 5769, 8701, 3970, 4127, 9709, 9714, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 9762 (PremiumGiftWishlistBanner)
+// Module 9686 (PremiumGiftWishlistBanner)
 import closure_3 from "ME";
 import result from "result";
 import get_ActivityIndicator from "Text";

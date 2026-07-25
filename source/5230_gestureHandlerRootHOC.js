@@ -1,7 +1,7 @@
 // Module ID: 5230
-// Function ID: 45212
+// Function ID: 45217
 // Name: gestureHandlerRootHOC
-// Dependencies: [31, 27, 33, 5231, 3964]
+// Dependencies: [31, 27, 33, 5231, 3965]
 // Exports: default
 
 // Module 5230 (gestureHandlerRootHOC)
@@ -26,6 +26,6 @@ export default function gestureHandlerRootHOC(displayName) {
     }
   }
   Wrapper.displayName = "gestureHandlerRootHOC(" + displayName.displayName || displayName.name + ")";
-  importDefault(3964)(Wrapper, displayName);
+  importDefault(3965)(Wrapper, displayName);
   return Wrapper;
 };

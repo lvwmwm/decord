@@ -1,10 +1,10 @@
-// Module ID: 9772
-// Function ID: 75974
+// Module ID: 9696
+// Function ID: 75569
 // Name: useFormattedSKUPrice
-// Dependencies: [31, 7160, 566, 5619, 2]
+// Dependencies: [31, 6243, 566, 5619, 2]
 // Exports: useFormattedSKUPrice
 
-// Module 9772 (useFormattedSKUPrice)
+// Module 9696 (useFormattedSKUPrice)
 import result from "result";
 
 const require = arg1;

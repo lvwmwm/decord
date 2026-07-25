@@ -1,10 +1,10 @@
-// Module ID: 9649
-// Function ID: 75093
+// Module ID: 9571
+// Function ID: 74683
 // Name: generateListData
-// Dependencies: [31, 27, 33, 4130, 689, 4466, 1212, 4126, 4660, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4467, 1212, 4127, 4661, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 9649 (generateListData)
+// Module 9571 (generateListData)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -17,7 +17,7 @@ let closure_5;
 let require = arg1;
 function generateListData(stickerPack) {
   const items = [];
-  let obj = require(4466) /* getStickerPackPreviewSticker */;
+  let obj = require(4467) /* getStickerPackPreviewSticker */;
   if (obj.isStickerPackAnimated(stickerPack)) {
     obj = { key: "animated" };
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -52,15 +52,15 @@ export default function StickerPackInformationPopout(stickerPack) {
   obj = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.XDm6yN, { stickerPackName: stickerPack.name });
-  let items1 = [callback(require(4126) /* Text */.Text, obj), ];
+  let items1 = [callback(require(4127) /* Text */.Text, obj), ];
   const obj2 = { onPress: onClose, accessibilityRole: "button" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   const obj3 = { variant: "text-md/bold", color: "text-brand" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl3.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj2.children = callback(require(4126) /* Text */.Text, obj3);
-  items1[1] = callback(require(4660) /* PressableBase */.PressableOpacity, obj2);
+  obj2.children = callback(require(4127) /* Text */.Text, obj3);
+  items1[1] = callback(require(4661) /* PressableBase */.PressableOpacity, obj2);
   obj.children = items1;
   const items2 = [callback2(closure_2, obj), ];
   const obj1 = { stickerPackName: stickerPack.name };

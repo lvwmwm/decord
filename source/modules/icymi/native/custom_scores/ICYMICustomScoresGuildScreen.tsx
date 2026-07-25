@@ -1,13 +1,13 @@
-// Module ID: 15231
-// Function ID: 115924
+// Module ID: 15241
+// Function ID: 116052
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 6757, 1348, 1838, 4325, 8350, 33, 4130, 689, 566, 4320, 8364, 1212, 4098, 15232, 1934, 4593, 5165, 1273, 10313, 4126, 6760, 1557, 15233, 8570, 7527, 2]
+// Dependencies: [57, 31, 27, 5750, 1348, 1838, 4326, 8108, 33, 4131, 689, 566, 4321, 8122, 1212, 4099, 15242, 1935, 4594, 5164, 1273, 10246, 4127, 5753, 1557, 15243, 8330, 6619, 2]
 // Exports: default
 
-// Module 15231 (_createForOfIteratorHelperLoose)
+// Module 15241 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
-import { View } from "defaultMVCPConfig";
+import { View } from "useModalDismissGuardRefreshControl";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_createForOfIteratorHelperLoose";
@@ -234,9 +234,9 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   let obj1 = navigation(566);
   const items2 = [closure_10];
   const stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_10.getCustomGuildScore(guildId));
-  const numberToCustomScoreResult = navigation(8364).numberToCustomScore(stateFromStores1);
+  const numberToCustomScoreResult = navigation(8122).numberToCustomScore(stateFromStores1);
   React = numberToCustomScoreResult;
-  let obj3 = navigation(8364);
+  let obj3 = navigation(8122);
   const items3 = [_isNativeReflectConstruct];
   guildChannels = navigation(566).useStateFromStoresObject(items3, () => outer1_6.getGuild(guildId)).guildChannels;
   const items4 = [numberToCustomScoreResult, guildChannels];
@@ -455,6 +455,6 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   obj.renderItem = callback;
   obj.data = memo;
   obj.keyExtractor = keyExtractor;
-  obj.children = callback(navigation(7527).AnimatedFlashList, obj);
+  obj.children = callback(navigation(6619).AnimatedFlashList, obj);
   return callback(guildChannels, obj);
 };

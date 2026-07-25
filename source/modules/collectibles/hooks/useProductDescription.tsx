@@ -1,10 +1,10 @@
-// Module ID: 8802
-// Function ID: 69499
+// Module ID: 8690
+// Function ID: 68978
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 1212, 1876, 2]
+// Dependencies: [31, 1212, 1877, 2]
 // Exports: useProductDescription
 
-// Module 8802 (_createForOfIteratorHelperLoose)
+// Module 8690 (_createForOfIteratorHelperLoose)
 import { useMemo } from "result";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -119,7 +119,7 @@ function getBundleDescription(bundledProducts) {
         let type = value.type;
         let tmp4 = require;
         let tmp5 = dependencyMap;
-        if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+        if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
           let tmp9 = require;
           let tmp10 = dependencyMap;
           let intl2 = require(1212) /* getSystemLocale */.intl;
@@ -129,7 +129,7 @@ function getBundleDescription(bundledProducts) {
         } else {
           let tmp22 = require;
           let tmp23 = dependencyMap;
-          if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+          if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
             let tmp6 = require;
             let tmp7 = dependencyMap;
             let intl = require(1212) /* getSystemLocale */.intl;
@@ -140,7 +140,7 @@ function getBundleDescription(bundledProducts) {
             let tmp24 = require;
             let tmp25 = dependencyMap;
             flag4 = flag2;
-            if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+            if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
               let tmp26 = require;
               let tmp27 = dependencyMap;
               let intl6 = require(1212) /* getSystemLocale */.intl;

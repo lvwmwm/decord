@@ -1,10 +1,10 @@
-// Module ID: 7538
-// Function ID: 60054
+// Module ID: 6630
+// Function ID: 58609
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [5, 1838, 5611, 653, 7539, 5609, 1198, 5736, 7540, 2]
+// Dependencies: [5, 1838, 5611, 653, 6631, 5609, 1198, 6632, 6636, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 7538 (navigateToSocialLayerStorefrontWithGuildPreview)
+// Module 6630 (navigateToSocialLayerStorefrontWithGuildPreview)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -119,7 +119,7 @@ export const eagerNavigateToSocialLayerStorefront = function eagerNavigateToSoci
     guildId = id;
   }
   if (null != guildId) {
-    let obj = require(7539) /* _fetchSocialLayerStorefront */;
+    let obj = require(6631) /* _fetchSocialLayerStorefront */;
     obj = { eager: true, forceFetch: forceFetch.forceFetch };
     const socialLayerStorefront = obj.fetchSocialLayerStorefront(guildId, obj);
   }
@@ -128,6 +128,6 @@ export const eagerNavigateToSocialLayerStorefrontForApplication = function eager
   let applicationId;
   let forceFetch;
   ({ applicationId, forceFetch } = arg0);
-  const socialLayerStorefrontForApplication = require(7539) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
+  const socialLayerStorefrontForApplication = require(6631) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
 };
 export { navigateToSocialLayerStorefrontWithGuildPreview };

@@ -1,8 +1,8 @@
-// Module ID: 14950
-// Function ID: 113939
-// Dependencies: [31, 4122, 1194, 4217, 11135, 1849, 10289, 33, 4130, 689, 1273, 566, 9134, 2]
+// Module ID: 14960
+// Function ID: 114066
+// Dependencies: [31, 4123, 1194, 4218, 11095, 1850, 10222, 33, 4131, 689, 1273, 566, 9026, 2]
 
-// Module 14950
+// Module 14960
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -109,7 +109,7 @@ const memoResult = require("result").memo(function MessagesItemChannelAvatar(cha
   });
   if (channel.isGroupDM()) {
     obj = { status, size: REFRESH_MEDIUM_32, channel, animate: stateFromStores1, style: tmpResult.avatar };
-    let tmp9Result = jsx(importDefault(9134), { status, size: REFRESH_MEDIUM_32, channel, animate: stateFromStores1, style: tmpResult.avatar });
+    let tmp9Result = jsx(importDefault(9026), { status, size: REFRESH_MEDIUM_32, channel, animate: stateFromStores1, style: tmpResult.avatar });
   } else {
     tmp9Result = null;
     if (null != stateFromStores2) {

@@ -1,10 +1,10 @@
-// Module ID: 10454
-// Function ID: 80493
+// Module ID: 10388
+// Function ID: 80162
 // Name: MoreYouCanDoRow
-// Dependencies: [31, 33, 5165, 2]
+// Dependencies: [31, 33, 5164, 2]
 // Exports: default
 
-// Module 10454 (MoreYouCanDoRow)
+// Module 10388 (MoreYouCanDoRow)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -19,5 +19,5 @@ export default function MoreYouCanDoRow(arg0) {
   let title;
   let variant;
   ({ title, description, variant, onClick, icon, disabled } = arg0);
-  return jsx(require(5165) /* TableRowInner */.TableRow, { label, subLabel, onPress, icon, variant, disabled });
+  return jsx(require(5164) /* TableRowInner */.TableRow, { label, subLabel, onPress, icon, variant, disabled });
 };

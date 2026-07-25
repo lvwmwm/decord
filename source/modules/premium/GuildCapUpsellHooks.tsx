@@ -1,7 +1,7 @@
 // Module ID: 5595
-// Function ID: 47560
+// Function ID: 47565
 // Name: hasIncreasedGuildCap
-// Dependencies: [1838, 1849, 653, 566, 5596, 3776, 2]
+// Dependencies: [1838, 1850, 653, 566, 5596, 3777, 2]
 // Exports: hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
 // Module 5595 (hasIncreasedGuildCap)
@@ -11,7 +11,7 @@ import { MAX_USER_GUILDS } from "ME";
 
 const require = arg1;
 function hasIncreasedGuildCap(currentUser) {
-  let result = importDefault(3776).canUseIncreasedGuildCap(currentUser);
+  let result = importDefault(3777).canUseIncreasedGuildCap(currentUser);
   if (!result) {
     let isStaffResult;
     if (null != currentUser) {

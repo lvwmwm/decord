@@ -1,9 +1,9 @@
-// Module ID: 4958
-// Function ID: 42595
+// Module ID: 4959
+// Function ID: 42607
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1917, 4959, 686, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1918, 4960, 686, 566, 2]
 
-// Module 4958 (_isNativeReflectConstruct)
+// Module 4959 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildMemberRequestState from "GuildMemberRequestState";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

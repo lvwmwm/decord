@@ -1,10 +1,10 @@
-// Module ID: 11927
-// Function ID: 92322
+// Module ID: 11903
+// Function ID: 92127
 // Name: ClearInputButton
-// Dependencies: [57, 31, 27, 1849, 11928, 653, 1852, 33, 4130, 689, 4660, 1212, 1273, 9042, 11929, 675, 8283, 566, 11930, 11931, 3976, 11933, 4539, 9362, 5160, 9862, 9147, 3989, 11934, 9158, 5087, 4126, 9125, 7644, 5501, 5165, 4098, 11937, 1934, 11939, 4089, 478, 1571, 4337, 5517, 2]
+// Dependencies: [57, 31, 27, 1850, 11904, 653, 1853, 33, 4131, 689, 4661, 1212, 1273, 8930, 11905, 675, 8018, 566, 11906, 11907, 3977, 11909, 4540, 9268, 5159, 9786, 9039, 3990, 11910, 9050, 5087, 4127, 9017, 7584, 5501, 5164, 4099, 11913, 1935, 11915, 4090, 478, 1571, 4338, 5517, 2]
 // Exports: default
 
-// Module 11927 (ClearInputButton)
+// Module 11903 (ClearInputButton)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import get_ActivityIndicator from "getHighestActiveScreenIndex";
@@ -12,7 +12,7 @@ import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { STATUS_MAX_LENGTH } from "StatusTypes";
 import ME from "ME";
 import { EmojiIntention } from "set";
-import jsxProd from "module_7644";
+import jsxProd from "module_7584";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_10;
@@ -29,9 +29,9 @@ function ClearInputButton(onPress) {
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.VkKicb);
   obj.onPress = onPress.onPress;
   obj.hitSlop = { top: 8, bottom: 8, right: 8 };
-  obj = { source: importDefault(9042), style: _createForOfIteratorHelperLoose().closeIcon, size: require(1273) /* Button */.Icon.Sizes.SMALL };
+  obj = { source: importDefault(8930), style: _createForOfIteratorHelperLoose().closeIcon, size: require(1273) /* Button */.Icon.Sizes.SMALL };
   obj.children = callback(require(1273) /* Button */.Icon, obj);
-  return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
+  return callback(require(4661) /* PressableBase */.PressableOpacity, obj);
 }
 function EditCustomStatusWithPreview(navigation) {
   navigation = navigation.navigation;

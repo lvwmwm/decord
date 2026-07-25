@@ -1,10 +1,10 @@
-// Module ID: 15833
-// Function ID: 122194
+// Module ID: 15844
+// Function ID: 122363
 // Name: isStableStreamParticipant
-// Dependencies: [4143, 1194, 4177, 1849, 4148, 620, 566, 4319, 9126, 10052, 2]
+// Dependencies: [4144, 1194, 4178, 1850, 4149, 620, 566, 4320, 9018, 9981, 2]
 // Exports: default, isStableParticipantWithUser, stableParticipantHasVideo
 
-// Module 15833 (isStableStreamParticipant)
+// Module 15844 (isStableStreamParticipant)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -75,9 +75,9 @@ export default function useStableParticipant(arg0, arg1, arg2) {
         if (null != user) {
           let obj = { type: outer1_7.USER, id: callback, user, selfVideo: false, canRenderVideo: false };
           const id = outer1_4.getId();
-          obj.userNick = callback(4319).getName(dependencyMap, callback2, user);
-          const obj5 = callback(4319);
-          obj.userAvatarDecoration = callback(9126).getAvatarDecoration(user, dependencyMap);
+          obj.userNick = callback(4320).getName(dependencyMap, callback2, user);
+          const obj5 = callback(4320);
+          obj.userAvatarDecoration = callback(9018).getAvatarDecoration(user, dependencyMap);
           obj.streamId = undefined;
           obj.ringing = false;
           obj.hasVideo = false;
@@ -85,7 +85,7 @@ export default function useStableParticipant(arg0, arg1, arg2) {
           return obj;
         }
       } else {
-        const tmp24 = callback2(10052)(tmp);
+        const tmp24 = callback2(9981)(tmp);
         const type = tmp.type;
         if (outer1_7.ACTIVITY === type) {
           obj = { type: tmp.type, id: callback, applicationId: tmp.applicationId };

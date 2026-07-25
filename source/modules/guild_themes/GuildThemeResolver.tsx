@@ -1,10 +1,10 @@
-// Module ID: 4012
-// Function ID: 33288
+// Module ID: 4013
+// Function ID: 33299
 // Name: resolveRenderableGuildThemeSettings
-// Dependencies: [31, 1316, 1838, 3947, 4013, 4016, 653, 3978, 566, 4059, 4062, 2]
+// Dependencies: [31, 1316, 1838, 3948, 4014, 4017, 653, 3979, 566, 4060, 4063, 2]
 // Exports: getActiveGuildTheme, isRenderableGuildThemeSettings, useActiveGuildTheme, useEnabledGuildThemeForGuildId, useIsGuildThemePreviewActive
 
-// Module 4012 (resolveRenderableGuildThemeSettings)
+// Module 4013 (resolveRenderableGuildThemeSettings)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -38,7 +38,7 @@ function resolveRenderableGuildThemeSettings(themeSettings) {
     if (null != tmp2) {
       return tmp2;
     } else {
-      const guildThemePreset = require(3978) /* createPresetAppearance */.getGuildThemePreset(themeSettings.presetId);
+      const guildThemePreset = require(3979) /* createPresetAppearance */.getGuildThemePreset(themeSettings.presetId);
       let tmp6 = null;
       if (null != guildThemePreset) {
         obj = { type: "preset", preset: guildThemePreset };
@@ -98,7 +98,7 @@ function getActiveGuildThemeForGuildId(guildId, getActiveGuildTheme) {
         const features = guild.features;
         if (features.has(GuildFeatures.GUILD_THEME)) {
           const guildThemeSourcePreference = _isNativeReflectConstruct.resolveGuildThemeSourcePreference(guildId);
-          if (guildThemeSourcePreference === require(4062) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.PERSONAL) {
+          if (guildThemeSourcePreference === require(4063) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.PERSONAL) {
             return null;
           } else {
             let guildTheme = guildThemeSnapshot.getGuildThemeSnapshot(guildId);
@@ -111,7 +111,7 @@ function getActiveGuildThemeForGuildId(guildId, getActiveGuildTheme) {
       }
       return null;
     }
-    obj = require(4059) /* apexExperiment */;
+    obj = require(4060) /* apexExperiment */;
   }
   return null;
 }
@@ -171,7 +171,7 @@ export const useEnabledGuildThemeForGuildId = function useEnabledGuildThemeForGu
   if (GuildThemeNuxTrigger === undefined) {
     str = "useEnabledGuildThemeForGuildId";
   }
-  return useSavedActiveGuildThemeForGuildId(guildId, require(4059) /* apexExperiment */.useServerThemeUserEnabled(str));
+  return useSavedActiveGuildThemeForGuildId(guildId, require(4060) /* apexExperiment */.useServerThemeUserEnabled(str));
 };
 export { getActiveGuildThemeForGuildId };
 export const getActiveGuildTheme = function getActiveGuildTheme() {

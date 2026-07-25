@@ -1,10 +1,10 @@
-// Module ID: 9004
-// Function ID: 70952
+// Module ID: 8892
+// Function ID: 70431
 // Name: error
-// Dependencies: [31, 27, 33, 4130, 689, 5121, 9005, 4126, 1212, 4543, 4337, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5121, 8893, 4127, 1212, 4544, 4338, 2]
 // Exports: default
 
-// Module 9004 (error)
+// Module 8892 (error)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function ErrorResult(error) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { bottom: true, style: tmp.container };
   obj = { style: tmp.inner };
-  obj = { source: importDefault(9005), style: tmp.image };
+  obj = { source: importDefault(8893), style: tmp.image };
   const items = [callback(closure_3, obj), ];
   const obj1 = { style: tmp.text, variant: "text-md/medium" };
   if (null == error) {
@@ -40,7 +40,7 @@ export default function ErrorResult(error) {
     error = intl.string(require(1212) /* getSystemLocale */.t.mqn873);
   }
   obj1.children = error;
-  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  items[1] = callback(require(4127) /* Text */.Text, obj1);
   obj.children = items;
   const items1 = [closure_6(closure_4, obj), ];
   let tmp7 = null;
@@ -51,7 +51,7 @@ export default function ErrorResult(error) {
     obj2.onPress = function onPress() {
       return outer1_1(outer1_2[10]).pop();
     };
-    tmp7 = callback(require(4543) /* Button */.Button, obj2);
+    tmp7 = callback(require(4544) /* Button */.Button, obj2);
   }
   items1[1] = tmp7;
   obj.children = items1;

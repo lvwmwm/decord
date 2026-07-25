@@ -1,10 +1,10 @@
-// Module ID: 5138
-// Function ID: 44562
+// Module ID: 5137
+// Function ID: 44564
 // Name: normalizeLocale
-// Dependencies: [5, 57, 6, 7, 1921, 3, 3741, 5139, 5140, 5141, 22, 1835, 1327, 2]
+// Dependencies: [5, 57, 6, 7, 1922, 3, 3742, 5138, 5139, 5140, 22, 1835, 1327, 2]
 // Exports: install
 
-// Module 5138 (normalizeLocale)
+// Module 5137 (normalizeLocale)
 import timestamp from "timestamp";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -16,11 +16,11 @@ import importDefaultResult1 from "apply";
 const require = arg1;
 function normalizeLocale(arg0) {
   let str = arg0;
-  const tmp = importDefault(5139)[arg0];
+  const tmp = importDefault(5138)[arg0];
   if (null != tmp) {
     str = tmp;
   }
-  const parsed = require(5140) /* parse */.parse(str.replace(/[_-]/g, "-"));
+  const parsed = require(5139) /* parse */.parse(str.replace(/[_-]/g, "-"));
   if (null != parsed) {
     if (null != parsed.langtag.language) {
       if (null != parsed.langtag.region) {

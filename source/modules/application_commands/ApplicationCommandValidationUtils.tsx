@@ -1,10 +1,10 @@
-// Module ID: 11307
-// Function ID: 87974
+// Module ID: 11269
+// Function ID: 87630
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4566, 6755, 8229, 1212, 11308, 2]
+// Dependencies: [4567, 5676, 7958, 1212, 11270, 2]
 // Exports: getValidationResults
 
-// Module 11307 (_createForOfIteratorHelperLoose)
+// Module 11269 (_createForOfIteratorHelperLoose)
 import { getValidationErrorText } from "TRUE_OPTION_NAME";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -94,11 +94,11 @@ function validateOptionContent(allowEmptyValues) {
   let option;
   ({ option, content, guildId, channelId, commandOrigin } = allowEmptyValues);
   if (commandOrigin === undefined) {
-    commandOrigin = require(6755) /* ApplicationCommandSectionType */.CommandOrigin.CHAT;
+    commandOrigin = require(5676) /* ApplicationCommandSectionType */.CommandOrigin.CHAT;
   }
   let str = "";
   if (null != content) {
-    let obj = require(8229) /* _createForOfIteratorHelperLoose */;
+    let obj = require(7958) /* _createForOfIteratorHelperLoose */;
     obj = { content };
     str = obj.getString(obj, "content").trim();
     const str3 = obj.getString(obj, "content");
@@ -137,7 +137,7 @@ function validateOptionContent(allowEmptyValues) {
     } else {
       first = content[0];
     }
-    const tmp8 = importDefault(11308);
+    const tmp8 = importDefault(11270);
     const tmp15 = tmp8[option.type](first, option, channelId, guildId, commandOrigin);
     if (!tmp16) {
       tmp15.error = getValidationErrorText(option);

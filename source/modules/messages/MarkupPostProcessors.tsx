@@ -1,10 +1,10 @@
-// Module ID: 7871
-// Function ID: 62082
+// Module ID: 7818
+// Function ID: 62054
 // Name: checkForJumboEmoji
-// Dependencies: [653, 4464, 4046, 7872, 4114, 1184, 2]
+// Dependencies: [653, 4465, 4047, 7819, 4115, 1184, 2]
 // Exports: runMessageMarkupPostProcessors
 
-// Module 7871 (checkForJumboEmoji)
+// Module 7818 (checkForJumboEmoji)
 import ME from "ME";
 import set from "getAPIEndpoint";
 
@@ -117,7 +117,7 @@ function checkForSimpleEmbedMessage(arg0, first1) {
           if (obj.isEmbedInline(first1)) {
             items = [];
           }
-          obj = require(4464) /* validateSize */;
+          obj = require(4465) /* validateSize */;
         }
       } else {
         items = arg0;

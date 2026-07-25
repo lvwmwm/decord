@@ -1,10 +1,10 @@
-// Module ID: 10134
-// Function ID: 78415
+// Module ID: 10066
+// Function ID: 78045
 // Name: useCanSearchForumPostsByChannelId
-// Dependencies: [1348, 3758, 653, 566, 2]
+// Dependencies: [1348, 3759, 653, 566, 2]
 // Exports: useCanSearchForumPostsByChannelId
 
-// Module 10134 (useCanSearchForumPostsByChannelId)
+// Module 10066 (useCanSearchForumPostsByChannelId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { Permissions } from "ME";

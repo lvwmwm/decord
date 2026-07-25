@@ -1,9 +1,9 @@
-// Module ID: 15138
-// Function ID: 115190
+// Module ID: 15148
+// Function ID: 115318
 // Name: handleJoinGuild
-// Dependencies: [57, 31, 27, 1194, 1838, 3947, 653, 33, 4130, 689, 4126, 11764, 15139, 1212, 4541, 4543, 1457, 624, 8604, 480, 3983, 4663, 14049, 2]
+// Dependencies: [57, 31, 27, 1194, 1838, 3948, 653, 33, 4131, 689, 4127, 11734, 15149, 1212, 4542, 4544, 1457, 624, 8364, 480, 1841, 3984, 4664, 14060, 2]
 
-// Module 15138 (handleJoinGuild)
+// Module 15148 (handleJoinGuild)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -18,16 +18,15 @@ let closure_11;
 let closure_12;
 let closure_13;
 let closure_14;
-let closure_15;
 let closure_5;
 let closure_6;
 let closure_7;
 const require = arg1;
 function handleJoinGuild() {
-  const result = importDefault(11764).openGuildJoinServerScreen();
+  const result = importDefault(11734).openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  importDefault(11764).openCreateGuildModal();
+  importDefault(11734).openCreateGuildModal();
 }
 class GuildsEmptyContent {
   constructor(arg0) {
@@ -84,8 +83,8 @@ class GuildsEmptyContent {
   }
 }
 ({ Image: closure_5, View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ ME: closure_11, FAVORITES: closure_12, MOBILE_GUILD_UPSELL_LIST: closure_13 } = ME);
-({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
+({ ME: closure_11, MOBILE_GUILD_UPSELL_LIST: closure_12 } = ME);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
 let obj = {};
 obj = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.xxl, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm };
 obj.scrollView = obj;
@@ -109,7 +108,7 @@ obj7["fontSize"] = 18;
 obj7["marginBottom"] = 8;
 obj.headerText = obj7;
 obj.text = { textAlign: "center" };
-let closure_16 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj);
 let obj6 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_24 };
 const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   let selectedGuildId;
@@ -128,14 +127,14 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   }
   importDefault = tmp4;
   obj = { type: navigation(480).ImpressionTypes.VIEW, name: navigation(480).ImpressionNames.GUILDS_EMPTY_NUX };
-  importDefault(8604)(obj);
+  importDefault(8364)(obj);
   const items1 = [tmp4, navigation];
   const effect = importAllResult.useEffect(() => {
     if (null != c1) {
       if (null != navigation) {
         if (c1 !== outer1_11) {
-          if (c1 !== outer1_12) {
-            if (c1 !== outer1_13) {
+          if (!obj2.isFavoritesGuildId(c1)) {
+            if (c1 !== outer1_12) {
               let guild = outer1_9.getGuild(c1);
               if (null == guild) {
                 guild = outer1_9.getGuild(outer1_10.getGuildId());
@@ -148,33 +147,34 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
                 guild = guilds[outer1_9.getGuildIds(outer1_9)[0]];
               }
               if (null != guild) {
-                navigation = outer1_3(navigation(outer1_2[20]).getInitialGuildState(guild.id, undefined, false), 2)[1];
+                navigation = outer1_3(navigation(outer1_2[21]).getInitialGuildState(guild.id, undefined, false), 2)[1];
                 navigation.dispatch(() => {
                   const CommonActions = navigation(outer2_2[16]).CommonActions;
                   return CommonActions.reset(closure_0);
                 });
-                const obj = navigation(outer1_2[20]);
+                const obj = navigation(outer1_2[21]);
               }
             }
           }
+          obj2 = navigation(outer1_2[20]);
         }
       }
     }
   }, items1);
-  let obj3 = navigation(4663);
+  let obj3 = navigation(4664);
   const isScreenLandscape = obj3.useIsScreenLandscape();
-  navigation(14049);
+  navigation(14060);
   let tmp12Result = null;
   if (stateFromStores) {
     obj = {};
     const items2 = [tmp.header, style];
     obj.style = items2;
     obj1 = { style: tmp.headerTitle };
-    const obj2 = { style: tmp.headerInner };
+    let obj2 = { style: tmp.headerInner };
     obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header" };
     const intl = navigation(1212).intl;
     obj3.children = intl.string(navigation(1212).t["7hB4kg"]);
-    obj2.children = callback(navigation(4126).Text, obj3);
+    obj2.children = callback(navigation(4127).Text, obj3);
     obj1.children = callback(closure_6, obj2);
     const items3 = [callback(closure_6, obj1), ];
     const obj4 = {};
@@ -186,8 +186,8 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
     obj4.contentContainerStyle = tmp23;
     items3[1] = callback(GuildsEmptyContent, obj4);
     obj.children = items3;
-    tmp12Result = closure_15(closure_6, obj);
-    const tmp12 = closure_15;
+    tmp12Result = closure_14(closure_6, obj);
+    const tmp12 = closure_14;
     const tmp13 = closure_6;
     const tmp21 = callback;
     const tmp22 = GuildsEmptyContent;

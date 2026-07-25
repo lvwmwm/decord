@@ -1,10 +1,10 @@
-// Module ID: 16271
-// Function ID: 126341
+// Module ID: 16282
+// Function ID: 126509
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 3758, 8483, 653, 33, 4130, 689, 7705, 8482, 5501, 1212, 1920, 5502, 5087, 5788, 7654, 13791, 7653, 4126, 7636, 4541, 5448, 3842, 1456, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 3759, 8243, 653, 33, 4131, 689, 7649, 8242, 5501, 1212, 1921, 5502, 5087, 6695, 7596, 13802, 7595, 4127, 7575, 4542, 5448, 3843, 1456, 566, 2]
 // Exports: default
 
-// Module 16271 (_isNativeReflectConstruct)
+// Module 16282 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getSystemLocale from "getSystemLocale";
@@ -44,7 +44,7 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
   if (null == DEFAULT2) {
     DEFAULT2 = constants2.DEFAULT;
   }
-  let obj = require(7705) /* useUserIsTeen */;
+  let obj = require(7649) /* useUserIsTeen */;
   let tmp4 = DEFAULT === constants2.AGE_RESTRICTED;
   const userIsTeen = obj.useUserIsTeen();
   if (tmp4) {
@@ -57,7 +57,7 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
     obj.title = intl.string(require(1212) /* getSystemLocale */.t.YJlvBM);
     obj.hasIcons = false;
     const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { helpArticleLink: importDefault(1920).getArticleURL(constants.NSFW_SERVER_AGE_RESTRICTION) };
+    obj = { helpArticleLink: importDefault(1921).getArticleURL(constants.NSFW_SERVER_AGE_RESTRICTION) };
     obj.description = intl2.format(require(1212) /* getSystemLocale */.t.iyQQ62, obj);
     const obj1 = {};
     const intl3 = require(1212) /* getSystemLocale */.intl;
@@ -67,7 +67,7 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
     obj1.disabled = tmp4;
     obj.children = callback3(require(5502) /* TableSwitchRow */.TableSwitchRow, obj1);
     tmp7 = callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj, "filter-section");
-    const obj4 = importDefault(1920);
+    const obj4 = importDefault(1921);
   }
   return tmp7;
 }

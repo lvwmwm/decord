@@ -1,10 +1,10 @@
-// Module ID: 10942
-// Function ID: 84982
+// Module ID: 10892
+// Function ID: 84572
 // Name: getShouldShowAppAuthPrompt
-// Dependencies: [5066, 5467, 5470, 2]
+// Dependencies: [5067, 5467, 5470, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 10942 (getShouldShowAppAuthPrompt)
+// Module 10892 (getShouldShowAppAuthPrompt)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
 

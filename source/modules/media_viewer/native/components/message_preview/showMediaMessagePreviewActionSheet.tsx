@@ -1,10 +1,10 @@
-// Module ID: 12271
-// Function ID: 95838
+// Module ID: 12247
+// Function ID: 95647
 // Name: showMediaMessagePreviewActionSheet
-// Dependencies: [1348, 1849, 4098, 12272, 1934, 2]
+// Dependencies: [1348, 1850, 4099, 12248, 1935, 2]
 // Exports: default
 
-// Module 12271 (showMediaMessagePreviewActionSheet)
+// Module 12247 (showMediaMessagePreviewActionSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -18,9 +18,9 @@ export default function showMediaMessagePreviewActionSheet(message) {
     if (null != message) {
       user = user.getUser(message.author.id);
       if (null != user) {
-        let obj = importDefault(4098);
+        let obj = importDefault(4099);
         obj = { channel, message, user, closeMediaModal: message.closeMediaModal };
-        obj.openLazy(require(1934) /* maybeLoadBundle */(12272, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
+        obj.openLazy(require(1935) /* maybeLoadBundle */(12248, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
       }
     }
   }

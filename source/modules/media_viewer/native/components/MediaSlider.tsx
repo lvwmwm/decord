@@ -1,10 +1,10 @@
-// Module ID: 8329
-// Function ID: 65635
+// Module ID: 8064
+// Function ID: 64190
 // Name: num2
-// Dependencies: [57, 31, 27, 33, 4130, 477, 5450, 22, 666, 4704, 4660, 1212, 8330, 8332, 4126, 7658, 8334, 689, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 477, 5450, 22, 666, 4705, 4661, 1212, 8065, 8067, 4127, 7600, 8069, 689, 2]
 // Exports: default
 
-// Module 8329 (num2)
+// Module 8064 (num2)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -100,7 +100,7 @@ export default function MediaSlider(controls) {
       ref.current = false;
     }
   }, items2);
-  let obj = controls(4704);
+  let obj = controls(4705);
   obj = { style: items3 };
   items3 = [tmp.container, controls.style];
   const timeFormat = obj.getTimeFormat(first);
@@ -122,17 +122,17 @@ export default function MediaSlider(controls) {
   };
   obj.hitSlop = { top: 8, right: 8, bottom: 8, left: 8 };
   if (paused) {
-    let PauseIcon = tmp20(8330).PlayIcon;
+    let PauseIcon = tmp20(8065).PlayIcon;
   } else {
-    PauseIcon = tmp20(8332).PauseIcon;
+    PauseIcon = tmp20(8067).PauseIcon;
   }
   obj.children = callback2(PauseIcon, { size: "md", color: "white" });
-  const items4 = [callback2(controls(4660).PressableOpacity, obj), , , ];
+  const items4 = [callback2(controls(4661).PressableOpacity, obj), , , ];
   const obj1 = { style: null, tabularNumbers: true, lineClamp: 1, color: "text-overlay-light", variant: "text-xs/medium" };
   const items5 = [tmp.centerText, { width: tmp8[0] }];
   obj1.style = items5;
   obj1.children = timeFormat;
-  items4[1] = callback2(controls(4126).Text, obj1);
+  items4[1] = callback2(controls(4127).Text, obj1);
   const obj2 = { style: tmp.sliderContainer };
   const obj3 = { pointerEvents: "none", style: tmp.progressSliderContainer };
   const obj4 = { style: tmp.timelineBackgroundSlider, value: 1, minimumValue: 0, maximumValue: 1 };
@@ -142,7 +142,7 @@ export default function MediaSlider(controls) {
   const tmp19 = callback2;
   const tmp5 = callback(React.useState("transparent"), 2);
   let obj7 = paused(666)("#FFFFFF");
-  const tmp22 = paused(7658);
+  const tmp22 = paused(7600);
   obj4.thumbTintColor = obj7.alpha(0).hex();
   let alphaResult = obj7.alpha(0);
   const obj10 = paused(666)("#FFFFFF");
@@ -153,7 +153,7 @@ export default function MediaSlider(controls) {
   const items6 = [callback2(tmp22, obj4), ];
   const obj5 = { style: tmp.downloadProgressSlider, value: tmp4[0], minimumValue: 0, maximumValue: 1 };
   const alphaResult2 = paused(666)("#FFFFFF").alpha(0.1);
-  const tmp23 = paused(7658);
+  const tmp23 = paused(7600);
   const obj15 = paused(666)("#FFFFFF");
   obj5.thumbTintColor = paused(666)("#FFFFFF").alpha(0).hex();
   const alphaResult3 = paused(666)("#FFFFFF").alpha(0);
@@ -165,7 +165,7 @@ export default function MediaSlider(controls) {
   const items7 = [callback3(closure_5, obj3), ];
   const obj6 = { style: tmp.playbackSlider, value: first };
   const alphaResult4 = paused(666)("#FFFFFF").alpha(0.2);
-  obj6.thumbImage = paused(8334);
+  obj6.thumbImage = paused(8069);
   obj6.minimumValue = 0;
   obj6.maximumValue = ref.current;
   obj6.minimumTrackTintColor = paused(689).unsafe_rawColors.WHITE;
@@ -173,7 +173,7 @@ export default function MediaSlider(controls) {
   obj6.onValueChange = tmp9;
   obj6.onSlidingStart = callback;
   obj6.onSlidingComplete = callback1;
-  items7[1] = callback2(paused(7658), obj6);
+  items7[1] = callback2(paused(7600), obj6);
   obj2.children = items7;
   items4[2] = callback3(closure_5, obj2);
   obj7 = {
@@ -186,9 +186,9 @@ export default function MediaSlider(controls) {
       callback3(nativeEvent.nativeEvent.layout.width);
     }
   };
-  const tmp24 = paused(7658);
-  obj7.children = controls(4704).getTimeFormat(ref.current);
-  items4[3] = callback2(controls(4126).Text, obj7);
+  const tmp24 = paused(7600);
+  obj7.children = controls(4705).getTimeFormat(ref.current);
+  items4[3] = callback2(controls(4127).Text, obj7);
   obj.children = items4;
   return tmp15(tmp16, obj);
 };

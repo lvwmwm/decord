@@ -1,10 +1,10 @@
-// Module ID: 15786
-// Function ID: 121759
+// Module ID: 15797
+// Function ID: 121928
 // Name: useFloatingCTAProps
-// Dependencies: [57, 31, 27, 4143, 15787, 6758, 1348, 1354, 33, 4066, 10046, 15766, 8499, 624, 8446, 8390, 8400, 4098, 8409, 15788, 12229, 7639, 8505, 1212, 5119, 15789, 10225, 15790, 5803, 8321, 3946, 7577, 1334, 15791, 7491, 7065, 2]
+// Dependencies: [57, 31, 27, 4144, 15798, 5751, 1348, 1354, 33, 4067, 9975, 15777, 8259, 624, 8204, 8148, 8158, 4099, 8167, 15799, 12205, 7578, 8265, 1212, 5119, 15800, 10158, 15801, 8380, 8056, 3947, 6673, 1334, 15802, 6575, 6083, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 15786 (useFloatingCTAProps)
+// Module 15797 (useFloatingCTAProps)
 import _slicedToArray from "_slicedToArray";
 import CircleErrorIcon from "CircleErrorIcon";
 import { Pressable } from "useChannelFloatingCTAContent";
@@ -28,7 +28,7 @@ function useFloatingCTAProps(stateFromStores) {
       }
       return tmp;
     }, items);
-  })(importDefault(8321)(React.useContext(importDefault(10046)).showFloatingCTA));
+  })(importDefault(8056)(React.useContext(importDefault(9975)).showFloatingCTA));
   let tmp2 = (function useGuildEventControlsProps(id) {
     let entity_type;
     let name;
@@ -164,8 +164,8 @@ function getBadConnectionCTAProps(arg0) {
   obj.label = intl.string(_require(1212).t.uv1tVh);
   const intl2 = _require(1212).intl;
   obj.subLabel = intl2.string(_require(1212).t["gQ14+g"]);
-  obj = { IconComponent: _require(7577).CircleErrorIcon, variant: "translucent" };
-  obj.icon = jsx(_require(7639).RowButton.Icon, { IconComponent: _require(7577).CircleErrorIcon, variant: "translucent" });
+  obj = { IconComponent: _require(6673).CircleErrorIcon, variant: "translucent" };
+  obj.icon = jsx(_require(7578).RowButton.Icon, { IconComponent: _require(6673).CircleErrorIcon, variant: "translucent" });
   obj.onPress = function onPress() {
     let tmp;
     if (null != callback) {
@@ -187,7 +187,7 @@ function getBadConnectionCTAProps(arg0) {
   return obj;
 }
 function handleSoundboardMobileFloatingCtaClose() {
-  const result = require(3946) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
+  const result = require(3947) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
 }
 function CloseSoundboardMobileFloatingCtaIcon() {
   const obj = { accessibilityRole: "button" };
@@ -206,7 +206,7 @@ function getDismissableCTAProps(arg0) {
   } else if (require(1334) /* DismissibleContent */.DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA === dismissableContent) {
     let obj = {};
     obj = { color: "interactive-icon-default" };
-    obj.icon = jsx(require(7491) /* SoundboardIcon */.SoundboardIcon, { color: "interactive-icon-default" });
+    obj.icon = jsx(require(6575) /* SoundboardIcon */.SoundboardIcon, { color: "interactive-icon-default" });
     obj.onPress = function onPress() {
       if (null != closure_0) {
         let obj = outer1_0(outer1_2[33]);
@@ -216,7 +216,7 @@ function getDismissableCTAProps(arg0) {
       outer1_15();
     };
     obj = { quest: require(1212) /* getSystemLocale */.t.XLlWUe };
-    obj.label = require(7065) /* getDeviceSpecificString */.getDeviceSpecificString(obj, require(1212) /* getSystemLocale */.t.IJgkPX);
+    obj.label = require(6083) /* getDeviceSpecificString */.getDeviceSpecificString(obj, require(1212) /* getSystemLocale */.t.IJgkPX);
     obj.trailing = <CloseSoundboardMobileFloatingCtaIcon />;
     return obj;
   } else {

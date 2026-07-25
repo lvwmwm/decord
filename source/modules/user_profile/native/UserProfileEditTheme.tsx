@@ -1,10 +1,10 @@
-// Module ID: 13641
-// Function ID: 104764
+// Module ID: 13652
+// Function ID: 104891
 // Name: ColorSwatch
-// Dependencies: [31, 27, 33, 4130, 689, 665, 5507, 4660, 1212, 9142, 4126, 7974, 8280, 7903, 4276, 3946, 1334, 13618, 4098, 13642, 1934, 9007, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 665, 5507, 4661, 1212, 9034, 4127, 7922, 8015, 7850, 4277, 3947, 1334, 13629, 4099, 13653, 1935, 8895, 2]
 // Exports: default
 
-// Module 13641 (ColorSwatch)
+// Module 13652 (ColorSwatch)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,10 +34,10 @@ function ColorSwatch(color) {
   obj.style = items1;
   obj.onPress = onPress;
   obj1 = { size: "xs", color: higherContrastColor, style: tmp.dropperIcon };
-  obj.children = callback(require(9142) /* PencilIcon */.PencilIcon, obj1);
-  const items2 = [callback(require(4660) /* PressableBase */.PressableOpacity, obj, color), ];
+  obj.children = callback(require(9034) /* PencilIcon */.PencilIcon, obj1);
+  const items2 = [callback(require(4661) /* PressableBase */.PressableOpacity, obj, color), ];
   const obj2 = { variant: "text-sm/normal", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: label };
-  items2[1] = callback(require(4126) /* Text */.Text, obj2);
+  items2[1] = callback(require(4127) /* Text */.Text, obj2);
   obj.children = items2;
   return callback2(View, obj);
 }

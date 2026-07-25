@@ -1,10 +1,10 @@
-// Module ID: 7706
-// Function ID: 61336
+// Module ID: 7650
+// Function ID: 61282
 // Name: ShieldElement
-// Dependencies: [31, 27, 33, 4130, 5807, 2]
+// Dependencies: [31, 27, 33, 4131, 6727, 2]
 // Exports: default
 
-// Module 7706 (ShieldElement)
+// Module 7650 (ShieldElement)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,8 +20,8 @@ export default function ShieldElement(element) {
   if (null != element) {
     tmp2 = null;
     if ("success" === element.type) {
-      const obj = { style: tmp.container, children: jsx(require(5807) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 }) };
-      tmp2 = <View style={tmp.container}>{jsx(require(5807) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 })}</View>;
+      const obj = { style: tmp.container, children: jsx(require(6727) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 }) };
+      tmp2 = <View style={tmp.container}>{jsx(require(6727) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 })}</View>;
     }
   }
   return tmp2;

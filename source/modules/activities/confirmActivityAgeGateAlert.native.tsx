@@ -1,10 +1,10 @@
-// Module ID: 10850
-// Function ID: 84220
+// Module ID: 10587
+// Function ID: 82544
 // Name: ConfirmActivityGateContent
-// Dependencies: [31, 27, 33, 4130, 689, 10851, 4126, 1212, 4470, 1273, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 10588, 4127, 1212, 4471, 1273, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 10850 (ConfirmActivityGateContent)
+// Module 10587 (ConfirmActivityGateContent)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,9 +16,9 @@ const require = arg1;
 function ConfirmActivityGateContent(children) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.alertContainer };
-  const items = [callback(importDefault(10851), {}), ];
+  const items = [callback(importDefault(10588), {}), ];
   obj = { style: tmp.alertBodyText, variant: "text-md/normal", children: children.description };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }
@@ -48,5 +48,5 @@ export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(
   obj.onConfirm = onAgree;
   obj.onCancel = onDisagree;
   obj.confirmColor = require(1273) /* Button */.ButtonColors.RED;
-  return Promise.resolve(importDefault(4470).show(obj));
+  return Promise.resolve(importDefault(4471).show(obj));
 };

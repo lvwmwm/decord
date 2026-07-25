@@ -1,10 +1,10 @@
-// Module ID: 13666
-// Function ID: 104919
+// Module ID: 13677
+// Function ID: 105046
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 31, 27, 33, 4130, 13667, 4126, 1212, 4543, 11764, 1934, 2]
+// Dependencies: [5, 31, 27, 33, 4131, 13678, 4127, 1212, 4544, 11734, 1935, 2]
 // Exports: default
 
-// Module 13666 (GuildProfileEmptyState)
+// Module 13677 (GuildProfileEmptyState)
 import SvgComponent from "SvgComponent";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -24,17 +24,17 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/u
 export default function GuildProfileEmptyState() {
   const tmp2 = callback4();
   let obj = { contentContainerStyle: tmp2.container };
-  obj = { style: tmp2.image, children: callback2(importDefault(13667), obj) };
+  obj = { style: tmp2.image, children: callback2(importDefault(13678), obj) };
   obj = { style: tmp2.image };
   const items = [callback2(closure_5, obj), , , , ];
   const obj1 = { style: tmp2.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t.Z1OZCV);
-  items[1] = callback2(require(4126) /* Text */.Text, obj1);
+  items[1] = callback2(require(4127) /* Text */.Text, obj1);
   const obj2 = { style: tmp2.header, variant: "text-sm/normal", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.UEmBq7);
-  items[2] = callback2(require(4126) /* Text */.Text, obj2);
+  items[2] = callback2(require(4127) /* Text */.Text, obj2);
   const obj3 = { style: tmp2.createButton };
   const obj4 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
@@ -42,7 +42,7 @@ export default function GuildProfileEmptyState() {
   obj4.text = stringResult;
   // CreateGeneratorClosureLongIndex (0x67)
   obj4.onPress = callback(stringResult);
-  obj3.children = callback2(require(4543) /* Button */.Button, obj4);
+  obj3.children = callback2(require(4544) /* Button */.Button, obj4);
   items[3] = callback2(closure_5, obj3);
   const obj5 = {};
   const intl4 = require(1212) /* getSystemLocale */.intl;
@@ -50,7 +50,7 @@ export default function GuildProfileEmptyState() {
   obj5.variant = "secondary";
   // CreateGeneratorClosureLongIndex (0x67)
   obj5.onPress = callback(tmp);
-  items[4] = callback2(require(4543) /* Button */.Button, obj5);
+  items[4] = callback2(require(4544) /* Button */.Button, obj5);
   obj.children = items;
   return callback3(closure_4, obj);
 };

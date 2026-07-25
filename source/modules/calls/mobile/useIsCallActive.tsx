@@ -1,10 +1,10 @@
-// Module ID: 7757
-// Function ID: 61581
+// Module ID: 7703
+// Function ID: 61549
 // Name: checkIsCallActive
-// Dependencies: [4809, 4143, 4148, 566, 2]
+// Dependencies: [4810, 4144, 4149, 566, 2]
 // Exports: default, useIsCallActiveNullable
 
-// Module 7757 (checkIsCallActive)
+// Module 7703 (checkIsCallActive)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { ParticipantTypes } from "ParticipantTypes";

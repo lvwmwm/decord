@@ -1,10 +1,10 @@
-// Module ID: 9940
-// Function ID: 76848
+// Module ID: 9868
+// Function ID: 76463
 // Name: GuildIconWithChannelTypeSizes
-// Dependencies: [31, 27, 33, 5513, 4130, 689, 4593, 9941, 7961, 1273, 2]
+// Dependencies: [31, 27, 33, 5513, 4131, 689, 4594, 9869, 7909, 1273, 2]
 // Exports: GuildIconWithChannelType
 
-// Module 9940 (GuildIconWithChannelTypeSizes)
+// Module 9868 (GuildIconWithChannelTypeSizes)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -50,9 +50,9 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   const items2 = [typeIconSize];
   const memo1 = sum.useMemo(() => ({ width: result, height: result, padding: typeIconPadding }), items1);
   const memo2 = sum.useMemo(() => ({ width: typeIconSize, height: typeIconSize }), items2);
-  let obj1 = typeIconSize(4593);
+  let obj1 = typeIconSize(4594);
   const channelIcon = obj1.getChannelIcon(channel);
-  obj = { "aria-label": tmp, shape: typeIconSize(7961).CutoutShape.Circle, size: memo, gap, depthX: sum1, depthY: sum1 };
+  obj = { "aria-label": tmp, shape: typeIconSize(7909).CutoutShape.Circle, size: memo, gap, depthX: sum1, depthY: sum1 };
   obj = {};
   const tmp4 = callback3();
   const merged1 = Object.assign(merged);
@@ -63,5 +63,5 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   items5 = [memo2];
   items3[1] = callback(View, obj1);
   obj.children = items3;
-  return callback2(typeIconSize(9941).Pile, obj);
+  return callback2(typeIconSize(9869).Pile, obj);
 };

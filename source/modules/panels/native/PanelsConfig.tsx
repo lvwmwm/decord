@@ -1,9 +1,9 @@
-// Module ID: 14839
-// Function ID: 113160
+// Module ID: 14850
+// Function ID: 113288
 // Name: isTimingConfig
 // Dependencies: [1273, 2]
 
-// Module 14839 (isTimingConfig)
+// Module 14850 (isTimingConfig)
 let closure_0 = { code: "function isTimingConfig_PanelsConfigTsx1(obj){return obj!=null&&obj.duration!=null;}" };
 let obj = { mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 obj = { damping: 30 };

@@ -1,10 +1,10 @@
-// Module ID: 4475
-// Function ID: 39535
+// Module ID: 4476
+// Function ID: 39546
 // Name: getAlertModalItemKey
-// Dependencies: [5, 57, 830, 31, 27, 482, 33, 4130, 689, 4476, 4472, 3991, 1820, 4477, 4524, 682, 4531, 1212, 3849, 1557, 4539, 1450, 4540, 4541, 4126, 4542, 4543, 2]
+// Dependencies: [5, 57, 830, 31, 27, 482, 33, 4131, 689, 4477, 4473, 3992, 1820, 4478, 4525, 682, 4532, 1212, 3850, 1557, 4540, 1450, 4541, 4542, 4127, 4543, 4544, 2]
 // Exports: showConfirmModal, useDismissModalCallback
 
-// Module 4475 (getAlertModalItemKey)
+// Module 4476 (getAlertModalItemKey)
 import sum from "sum";
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
@@ -25,7 +25,7 @@ function getAlertModalItemKey(key) {
   return key.key;
 }
 function dismissTopAlert() {
-  let useAlertStore = _require(4472).useAlertStore;
+  let useAlertStore = _require(4473).useAlertStore;
   const arr = callback2(useAlertStore.getState().alerts);
   const first = arr[0];
   _require = arr.slice(1);
@@ -38,8 +38,8 @@ function dismissTopAlert() {
     if (null != first) {
       key = first.key;
     }
-    _require(4472).dismissAlert(key);
-    const obj = _require(4472);
+    _require(4473).dismissAlert(key);
+    const obj = _require(4473);
     _require(682).batchUpdates(() => {
       const useAlertStore = callback(outer1_2[10]).useAlertStore;
       return useAlertStore.setState({ alerts: callback });
@@ -52,7 +52,7 @@ function AlertModalBackdrop() {
   const tmp2 = callback(useSharedAnimationState(), 2);
   let first = tmp2[0];
   const dependencyMap = tmp4;
-  let obj = context(4472);
+  let obj = context(4473);
   const alertStore = obj.useAlertStore((arg0) => {
     const first = arg0.alerts[0];
     let dismissable;
@@ -70,20 +70,20 @@ function AlertModalBackdrop() {
         }
         if (tmp) {
           const value = outer1_1.get();
-          tmp = value === context(4476).TransitionStates.YEETED;
+          tmp = value === context(4477).TransitionStates.YEETED;
         }
         if (tmp) {
-          context(3991).runOnJS(outer1_0)();
-          const obj = context(3991);
+          context(3992).runOnJS(outer1_0)();
+          const obj = context(3992);
         }
       })
     };
   };
-  obj = { withAlertModalSpring: closure_23, sharedVisible: tmp4, sharedTransitionState: first, TransitionStates: context(4476).TransitionStates, runOnJS: context(3991).runOnJS, cleanUp: context };
+  obj = { withAlertModalSpring: closure_23, sharedVisible: tmp4, sharedTransitionState: first, TransitionStates: context(4477).TransitionStates, runOnJS: context(3992).runOnJS, cleanUp: context };
   fn.__closure = obj;
   fn.__workletHash = 4470729133936;
   fn.__initData = closure_20;
-  const animatedStyle = context(3991).useAnimatedStyle(fn);
+  const animatedStyle = context(3992).useAnimatedStyle(fn);
   obj = { blur: "strong", style: animatedStyle };
   let tmp8 = null;
   if (alertStore) {
@@ -92,7 +92,7 @@ function AlertModalBackdrop() {
   obj.onDismiss = tmp8;
   const intl = context(1212).intl;
   obj.accessibilityLabel = intl.string(context(1212).t.Xkfav5);
-  return closure_10(context(4531).Backdrop, obj);
+  return closure_10(context(4532).Backdrop, obj);
 }
 class AlertModal {
   constructor(arg0) {
@@ -108,7 +108,7 @@ class AlertModal {
     enabled = Object.useContext(require("context").AccessibilityPreferencesContext).reducedMotion.enabled;
     ref = Object.useRef(null);
     c4 = ref;
-    obj = require("module_3991");
+    obj = require("module_3992");
     sharedValue = obj.useSharedValue(context1);
     c5 = sharedValue;
     tmp7 = c4(useSharedAnimationState(), 2);
@@ -129,7 +129,7 @@ class AlertModal {
       }
     }, items);
     height = require("useWindowDimensions")().height;
-    obj2 = require("module_3991");
+    obj2 = require("module_3992");
     class B {
       constructor() {
         diff = height - 32;
@@ -203,7 +203,7 @@ class AlertModal {
         return obj;
       }
     }
-    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3991").runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39567, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
+    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3992").runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39578, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
     B.__closure = obj;
     B.__workletHash = 655123755546;
     B.__initData = memo;
@@ -283,7 +283,7 @@ class AlertModal {
     obj3.children = tmp19(require("Stack").Stack, obj4);
     obj2.children = tmp17(tmp18, obj3);
     obj1.children = tmp15(tmp16, obj2);
-    return tmp14(require("module_3991").View, obj1);
+    return tmp14(require("module_3992").View, obj1);
   }
 }
 function useSharedAnimationState() {
@@ -394,7 +394,7 @@ let closure_23 = (() => {
   function withAlertModalSpring(value, fn) {
     return outer1_0(outer1_2[25]).withSpring(value, outer1_14, "animate-always", fn);
   }
-  withAlertModalSpring.__closure = { withSpring: require(4542) /* withSpring */.withSpring, MODAL_SPRING: closure_14 };
+  withAlertModalSpring.__closure = { withSpring: require(4543) /* withSpring */.withSpring, MODAL_SPRING: closure_14 };
   withAlertModalSpring.__workletHash = 15556562210180;
   withAlertModalSpring.__initData = closure_22;
   return withAlertModalSpring;
@@ -404,9 +404,9 @@ let closure_25 = { code: "function AlertModalNativeTsx5(transitionState){const{T
 const memoResult = importAllResult.memo(() => {
   let tmp = callback5();
   const require = tmp;
-  let obj = require(4472) /* useAlertStore */;
+  let obj = require(4473) /* useAlertStore */;
   const alertStore = obj.useAlertStore((alerts) => alerts.alerts);
-  const sharedValue = require(3991).useSharedValue(0);
+  const sharedValue = require(3992).useSharedValue(0);
   const tmp4 = (function createTransitionGroupItems(alertStore) {
     if (0 === alertStore.length) {
       return [];
@@ -460,7 +460,7 @@ const memoResult = importAllResult.memo(() => {
     return outer1_10(outer1_19.Provider, obj, value);
   }, items2);
   obj = { wrapChildren: callback, items: tmp4, renderItem: callback1, getItemKey: getAlertModalItemKey };
-  return callback3(require(4476) /* _createForOfIteratorHelperLoose */.TransitionGroup, obj);
+  return callback3(require(4477) /* _createForOfIteratorHelperLoose */.TransitionGroup, obj);
 });
 let result = require("_toArray").fileFinishedImporting("design/components/AlertModal/native/AlertModal.native.tsx");
 
@@ -498,7 +498,7 @@ export const showConfirmModal = function showConfirmModal(arg0) {
     variant = "destructive";
   }
   ({ onConfirm, onCancel, onCloseCallback, dismissable } = arg0);
-  let obj = require(4472) /* useAlertStore */;
+  let obj = require(4473) /* useAlertStore */;
   obj = { title, content, extraContent };
   obj = {};
   const obj1 = { variant, text: confirmText, onPress: onConfirm };

@@ -1,10 +1,10 @@
-// Module ID: 12235
-// Function ID: 95657
+// Module ID: 12211
+// Function ID: 95466
 // Name: EndEventActionSheet
-// Dependencies: [31, 27, 1354, 653, 33, 4130, 689, 8499, 4098, 8875, 7634, 1273, 1212, 4126, 4543, 8388, 2]
+// Dependencies: [31, 27, 1354, 653, 33, 4131, 689, 8259, 4099, 8763, 7573, 1273, 1212, 4127, 4544, 8146, 2]
 // Exports: default
 
-// Module 12235 (EndEventActionSheet)
+// Module 12211 (EndEventActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";

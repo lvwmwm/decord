@@ -1,9 +1,9 @@
-// Module ID: 13440
-// Function ID: 103195
+// Module ID: 13451
+// Function ID: 103322
 // Name: migrateDismissibleContent
-// Dependencies: [1348, 653, 11483, 1282, 1333, 5596, 587, 1318, 566, 1313, 1334, 6753, 2]
+// Dependencies: [1348, 653, 11446, 1282, 1333, 5596, 587, 1318, 566, 1313, 1334, 5674, 2]
 
-// Module 13440 (migrateDismissibleContent)
+// Module 13451 (migrateDismissibleContent)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelNoticeTypes } from "ME";
 import { MULTIACCOUNT_TOOLTIP_SEEN_KEY as closure_5 } from "MAX_ACCOUNTS";
@@ -622,7 +622,7 @@ items[17] = {
         Storage2.remove("lastChangeLogId");
         return false;
       }
-      obj = require(6753) /* _createForOfIteratorHelperLoose */;
+      obj = require(5674) /* _createForOfIteratorHelperLoose */;
     }
   },
   cleanup() {

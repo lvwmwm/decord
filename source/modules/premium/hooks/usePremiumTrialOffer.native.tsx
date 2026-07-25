@@ -1,10 +1,10 @@
-// Module ID: 6686
-// Function ID: 51470
+// Module ID: 6188
+// Function ID: 55533
 // Name: useGetTrialOffer
-// Dependencies: [5619, 1851, 6687, 5622, 624, 2]
+// Dependencies: [5619, 1852, 6189, 5622, 624, 2]
 // Exports: usePremiumTrialOffer
 
-// Module 6686 (useGetTrialOffer)
+// Module 6188 (useGetTrialOffer)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
 
@@ -17,7 +17,7 @@ let closure_8;
 const require = arg1;
 function useGetTrialOffer(closure_3, offerIds) {
   const _require = offerIds;
-  const trialOffer = _require(6687).useTrialOffer(closure_3);
+  const trialOffer = _require(6189).useTrialOffer(closure_3);
   const values = Object.values(_require(5622).TrialIdToProductOfferId[closure_3]);
   let tmp2 = null;
   if (values.every((arg0) => offerIds.has(arg0))) {

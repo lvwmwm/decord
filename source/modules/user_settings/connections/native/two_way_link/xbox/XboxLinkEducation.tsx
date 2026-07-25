@@ -1,10 +1,10 @@
-// Module ID: 9076
-// Function ID: 71219
+// Module ID: 8968
+// Function ID: 70704
 // Name: XboxLinkEducation
-// Dependencies: [31, 27, 653, 33, 4130, 8982, 1920, 9021, 4126, 1212, 5121, 4543, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 8870, 1921, 8909, 4127, 1212, 5121, 4544, 2]
 // Exports: default
 
-// Module 9076 (XboxLinkEducation)
+// Module 8968 (XboxLinkEducation)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -22,9 +22,9 @@ let closure_9 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 1
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
 
 export default function XboxLinkEducation(onClose) {
-  let obj = require(8982) /* styles */;
+  let obj = require(8870) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  let obj1 = importDefault(1920);
+  let obj1 = importDefault(1921);
   const articleURL = obj1.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   obj = { style: twoWayLinkStyles.container };
   obj = { style: twoWayLinkStyles.content };
@@ -33,11 +33,11 @@ export default function XboxLinkEducation(onClose) {
   const obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl.string(require(1212) /* getSystemLocale */.t.jHytat);
-  items[1] = callback(require(4126) /* Text */.Text, obj2);
+  items[1] = callback(require(4127) /* Text */.Text, obj2);
   const obj3 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl2.format(require(1212) /* getSystemLocale */.t.yhozpz, { helpdeskArticleUrl: articleURL });
-  items[2] = callback(require(4126) /* Text */.Text, obj3);
+  items[2] = callback(require(4127) /* Text */.Text, obj3);
   obj.children = items;
   const items1 = [callback2(closure_5, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer };
@@ -46,7 +46,7 @@ export default function XboxLinkEducation(onClose) {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.text = intl3.string(require(1212) /* getSystemLocale */.t.i4jeWR);
   obj6.onPress = onClose.onClose;
-  obj5.children = callback(require(4543) /* Button */.Button, obj6);
+  obj5.children = callback(require(4544) /* Button */.Button, obj6);
   obj4.children = callback(closure_5, obj5);
   items1[1] = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   obj.children = items1;

@@ -1,8 +1,8 @@
-// Module ID: 15665
-// Function ID: 120777
-// Dependencies: [31, 27, 33, 4130, 689, 10997, 1212, 9053, 4632, 5807, 4126, 14708, 4543, 7486, 2]
+// Module ID: 15676
+// Function ID: 120946
+// Dependencies: [31, 27, 33, 4131, 689, 10952, 1212, 8941, 4633, 6727, 4127, 14719, 4544, 6570, 2]
 
-// Module 15665
+// Module 15676
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,19 +24,19 @@ const memoResult = require("result").memo(function PremiumDiscountOfferActionShe
   let onConfirm;
   ({ discountOffer, onConfirm } = arg0);
   const tmp = callback3();
-  let obj = { IconComponent: require(10997) /* UserIcon */.UserIcon };
+  let obj = { IconComponent: require(10952) /* UserIcon */.UserIcon };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.kpMomJ);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl2.string(require(1212) /* getSystemLocale */.t.uVUtPw);
   const items = [obj, , ];
-  obj = { IconComponent: require(9053) /* ChatSmileIcon */.ChatSmileIcon };
+  obj = { IconComponent: require(8941) /* ChatSmileIcon */.ChatSmileIcon };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl3.string(require(1212) /* getSystemLocale */.t["R2IV/Q"]);
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl4.string(require(1212) /* getSystemLocale */.t["3SUJLd"]);
   items[1] = obj;
-  obj = { IconComponent: require(4632) /* FolderIcon */.FolderIcon };
+  obj = { IconComponent: require(4633) /* FolderIcon */.FolderIcon };
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl5.string(require(1212) /* getSystemLocale */.t["u/NJKc"]);
   const intl6 = require(1212) /* getSystemLocale */.intl;
@@ -44,12 +44,12 @@ const memoResult = require("result").memo(function PremiumDiscountOfferActionShe
   items[2] = obj;
   const amount = discountOffer.discount.amount;
   const obj1 = { style: tmp.contentContainer };
-  const items1 = [callback(View, { style: tmp.heroIllustrationContainer, children: callback(require(5807) /* AccountAgeTier10LargeBadge */.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
+  const items1 = [callback(View, { style: tmp.heroIllustrationContainer, children: callback(require(6727) /* AccountAgeTier10LargeBadge */.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
   const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title };
   const intl7 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl7.formatToPlainString(require(1212) /* getSystemLocale */.t.qowbUk, { percent: amount });
-  items1[1] = callback(require(4126) /* Text */.Text, obj3);
-  items1[2] = callback(importDefault(14708), { perks: items });
+  items1[1] = callback(require(4127) /* Text */.Text, obj3);
+  items1[2] = callback(importDefault(14719), { perks: items });
   const obj4 = { style: tmp.buttonContainer };
   const obj5 = { size: "lg" };
   const intl8 = require(1212) /* getSystemLocale */.intl;
@@ -57,8 +57,8 @@ const memoResult = require("result").memo(function PremiumDiscountOfferActionShe
   obj5.onPress = onConfirm;
   obj5.grow = true;
   const obj6 = { size: "md", color: importDefault(689).unsafe_rawColors.WHITE };
-  obj5.icon = callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, obj6);
-  obj4.children = callback(require(4543) /* Button */.Button, obj5);
+  obj5.icon = callback(require(6570) /* NitroWheelIcon */.NitroWheelIcon, obj6);
+  obj4.children = callback(require(4544) /* Button */.Button, obj5);
   items1[3] = callback(View, obj4);
   obj1.children = items1;
   return callback2(View, obj1);

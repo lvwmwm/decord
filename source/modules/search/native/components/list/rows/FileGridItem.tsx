@@ -1,9 +1,9 @@
-// Module ID: 15418
-// Function ID: 117643
+// Module ID: 15428
+// Function ID: 117771
 // Name: getAttachmentIcon
-// Dependencies: [31, 27, 1348, 9141, 33, 4130, 4317, 4644, 7496, 10303, 566, 7987, 15406, 15408, 4670, 2]
+// Dependencies: [31, 27, 1348, 9033, 33, 4131, 4318, 4645, 6580, 10236, 566, 7934, 15416, 15418, 4671, 2]
 
-// Module 15418 (getAttachmentIcon)
+// Module 15428 (getAttachmentIcon)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -20,14 +20,14 @@ let closure_9;
 const require = arg1;
 function getAttachmentIcon(filename) {
   if (obj.isImageFile(filename)) {
-    let tmp3Result = callback(require(4644) /* ImageIcon */.ImageIcon, { size: "lg", color: "interactive-text-default" });
+    let tmp3Result = callback(require(4645) /* ImageIcon */.ImageIcon, { size: "lg", color: "interactive-text-default" });
   } else {
     if (obj2.isVideoFile(filename)) {
-      tmp3Result = tmp3(tmp4(7496).VideoIcon, { size: "lg", color: "interactive-text-default" });
+      tmp3Result = tmp3(tmp4(6580).VideoIcon, { size: "lg", color: "interactive-text-default" });
     } else {
-      tmp3Result = tmp3(tmp4(10303).FileIcon, { size: "lg", color: "interactive-text-default" });
+      tmp3Result = tmp3(tmp4(10236).FileIcon, { size: "lg", color: "interactive-text-default" });
     }
-    obj2 = require(4317) /* urlMatchesFileExtension */;
+    obj2 = require(4318) /* urlMatchesFileExtension */;
   }
   return tmp3Result;
 }

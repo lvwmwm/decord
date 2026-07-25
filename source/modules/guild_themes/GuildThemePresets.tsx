@@ -1,10 +1,10 @@
-// Module ID: 3978
-// Function ID: 32992
+// Module ID: 3979
+// Function ID: 33003
 // Name: createPresetAppearance
-// Dependencies: [482, 666, 3979, 2]
+// Dependencies: [482, 666, 3980, 2]
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSingleColorGuildThemeGradientColors
 
-// Module 3978 (createPresetAppearance)
+// Module 3979 (createPresetAppearance)
 import { ThemeTypes } from "sum";
 import set from "items";
 
@@ -108,7 +108,7 @@ export const getSingleColorGuildThemeGradientColors = function getSingleColorGui
   return items;
 };
 export const getRandomSingleColorGuildTheme = function getRandomSingleColorGuildTheme() {
-  const tmp = require(3979) /* items */.COLOR_PALETTE[getRandomInteger(undefined, 0, require(undefined, 3979) /* items */.COLOR_PALETTE.length - 1)];
+  const tmp = require(3980) /* items */.COLOR_PALETTE[getRandomInteger(undefined, 0, require(undefined, 3980) /* items */.COLOR_PALETTE.length - 1)];
   const obj = { color: getSaturationPinnedColor(getToneAdjustedColor(tmp, Math.min(45, Math.round(100 * importDefault(666)(tmp).get("hsl.l"))))), baseMix: getRandomInteger(70, 80) };
   return obj;
 };

@@ -1,10 +1,10 @@
-// Module ID: 12345
-// Function ID: 96161
+// Module ID: 12321
+// Function ID: 95970
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [27, 4129, 1348, 1838, 3947, 1849, 10470, 4315, 4321, 1212, 7738, 7740, 689, 4317, 12346, 6834, 4347, 4316, 2]
+// Dependencies: [27, 4130, 1348, 1838, 3948, 1850, 10404, 4316, 4322, 1212, 7684, 7686, 689, 4318, 12322, 5834, 4348, 4317, 2]
 // Exports: default
 
-// Module 12345 (createMediaPostPreviewEmbedContent)
+// Module 12321 (createMediaPostPreviewEmbedContent)
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
   if (arg3 === undefined) {
     flag = false;
   }
-  let obj = require(4315) /* getMediaPostEmbedChannelPath */;
+  let obj = require(4316) /* getMediaPostEmbedChannelPath */;
   const mediaPostEmbedChannelId = obj.getMediaPostEmbedChannelId(url);
   if (null == mediaPostEmbedChannelId) {
     return null;
@@ -46,10 +46,10 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
       let canViewChannelResult = null != channel;
       guildId = guildId.getGuildId();
       if (canViewChannelResult) {
-        let obj1 = require(4321) /* canViewChannel */;
+        let obj1 = require(4322) /* canViewChannel */;
         canViewChannelResult = obj1.canViewChannel(channel);
       }
-      let obj2 = require(4315) /* getMediaPostEmbedChannelPath */;
+      let obj2 = require(4316) /* getMediaPostEmbedChannelPath */;
       obj = { mediaPostEmbedData: media, guild, parentChannel: channel, postThread: channel1, user, selectedGuildId: guildId, canAccess: canViewChannelResult };
       const mediaPostEmbedCommonData = obj2.getMediaPostEmbedCommonData(obj);
       if (null == mediaPostEmbedCommonData) {
@@ -58,14 +58,14 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
         if (null != mediaPostEmbedCommonData.authorName) {
           if (null != mediaPostEmbedCommonData.channelName) {
             if (null != user) {
-              const userAuthorWithProcessedColor = require(7738) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, mediaPostEmbedCommonData.postThread);
+              const userAuthorWithProcessedColor = require(7684) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, mediaPostEmbedCommonData.postThread);
               const intl6 = require(1212) /* getSystemLocale */.intl;
               obj = { username: mediaPostEmbedCommonData.authorName };
               obj1 = { userId: user.id, message, author: userAuthorWithProcessedColor, roleStyle, messageChannelId: mediaPostEmbedCommonData.threadId };
-              obj.usernameOnClick = importDefault(7740)(obj1);
+              obj.usernameOnClick = importDefault(7686)(obj1);
               obj.channelName = mediaPostEmbedCommonData.channelName;
               let formatToPartsResult = intl6.formatToParts(require(1212) /* getSystemLocale */.t.mCytFr, obj);
-              const obj14 = require(7738) /* getMessageAuthorWithProcessedColor */;
+              const obj14 = require(7684) /* getMessageAuthorWithProcessedColor */;
             }
             if (false === mediaPostEmbedCommonData.canAccess) {
               let tmp15 = callback(importDefault(689).unsafe_rawColors.TEAL_430);
@@ -74,7 +74,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
             }
             let isAnimatedImageUrlResult = null != mediaPostEmbedCommonData.coverImage;
             if (isAnimatedImageUrlResult) {
-              let obj5 = require(4317) /* urlMatchesFileExtension */;
+              let obj5 = require(4318) /* urlMatchesFileExtension */;
               isAnimatedImageUrlResult = obj5.isAnimatedImageUrl(mediaPostEmbedCommonData.coverImage);
             }
             if (tmp22) {
@@ -84,7 +84,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
             if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
               obj2 = {};
               const merged = Object.assign(mediaPostEmbedCommonData);
-              obj2["blurredCoverImage"] = closure_3.resolveAssetSource(importDefault(12346)).uri;
+              obj2["blurredCoverImage"] = closure_3.resolveAssetSource(importDefault(12322)).uri;
               obj2["footer"] = formatToPartsResult;
               obj2["ctaButtonColor"] = tmp15;
               return obj2;
@@ -96,16 +96,16 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
               if (!value) {
                 value = store.get("obscure_blur_effect_self_harm_content_enabled");
               }
-              const isPendingScanVersionResult = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.isPendingScanVersion(mediaPostEmbedCommonData.contentScanVersion);
+              const isPendingScanVersionResult = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.isPendingScanVersion(mediaPostEmbedCommonData.contentScanVersion);
               let result = value;
               if (value) {
-                result = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.shouldAgeVerifyForExplicitMedia();
-                const obj8 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
+                result = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.shouldAgeVerifyForExplicitMedia();
+                const obj8 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
               }
               let isVerifiedTeenResult = value;
               if (value) {
-                isVerifiedTeenResult = require(4347) /* isReactiveCheckEnabled */.isVerifiedTeen();
-                const obj9 = require(4347) /* isReactiveCheckEnabled */;
+                isVerifiedTeenResult = require(4348) /* isReactiveCheckEnabled */.isVerifiedTeen();
+                const obj9 = require(4348) /* isReactiveCheckEnabled */;
               }
               if (mediaPostEmbedCommonData.shouldContainMediaWithBackground) {
                 if (null != mediaPostEmbedCommonData.coverImage) {
@@ -130,9 +130,9 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                   obj3["obscureHideControls"] = isVerifiedTeenResult;
                   obj3["obscureIsOpaque"] = value;
                   obj3["ctaButtonColor"] = tmp15;
-                  obj3["backgroundImage"] = require(4316) /* MAX_THUMBNAIL_COUNT */.getBackgroundImageUrl(mediaPostEmbedCommonData.coverImage);
+                  obj3["backgroundImage"] = require(4317) /* MAX_THUMBNAIL_COUNT */.getBackgroundImageUrl(mediaPostEmbedCommonData.coverImage);
                   let obj4 = obj3;
-                  const obj12 = require(4316) /* MAX_THUMBNAIL_COUNT */;
+                  const obj12 = require(4317) /* MAX_THUMBNAIL_COUNT */;
                 }
                 return obj4;
               }
@@ -157,7 +157,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
               obj4["obscureHideControls"] = isVerifiedTeenResult;
               obj4["obscureIsOpaque"] = value;
               obj4["ctaButtonColor"] = tmp15;
-              const obj7 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
+              const obj7 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
             }
             tmp22 = null != mediaPostEmbedCommonData.coverImage && !mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage && isAnimatedImageUrlResult && flag;
           }

@@ -1,10 +1,10 @@
-// Module ID: 16606
-// Function ID: 129483
+// Module ID: 16617
+// Function ID: 129651
 // Name: _getCurrentTask
-// Dependencies: [5, 653, 4942, 480, 4030, 2]
+// Dependencies: [5, 653, 4943, 480, 4031, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 16606 (_getCurrentTask)
+// Module 16617 (_getCurrentTask)
 import set from "set";
 import { Endpoints } from "ME";
 

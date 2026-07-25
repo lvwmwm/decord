@@ -1,10 +1,10 @@
-// Module ID: 12334
-// Function ID: 96120
+// Module ID: 12310
+// Function ID: 95929
 // Name: getRequestToStreamText
-// Dependencies: [1849, 653, 1212, 2652, 4319, 2]
+// Dependencies: [1850, 653, 1212, 2653, 4320, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText
 
-// Module 12334 (getRequestToStreamText)
+// Module 12310 (getRequestToStreamText)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ActivityActionTypes } from "ME";
 
@@ -12,12 +12,12 @@ const require = arg1;
 function getRequestToStreamText(author, guild_id, id) {
   if (author.author.id === id) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(importDefault(2652)["8B3U5O"]);
+    let stringResult = intl2.string(importDefault(2653)["8B3U5O"]);
   } else {
     const intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { username: require(4319) /* getNickname */.getName(guild_id.guild_id, guild_id.id, author.author) };
-    stringResult = intl.formatToPlainString(importDefault(2652)["d/qbC0"], obj);
-    const obj2 = require(4319) /* getNickname */;
+    const obj = { username: require(4320) /* getNickname */.getName(guild_id.guild_id, guild_id.id, author.author) };
+    stringResult = intl.formatToPlainString(importDefault(2653)["d/qbC0"], obj);
+    const obj2 = require(4320) /* getNickname */;
   }
   return stringResult;
 }
@@ -84,7 +84,7 @@ export const getHeaderText = function getHeaderText(name) {
     return stringResult;
   } else if (ActivityActionTypes.STREAM_REQUEST === arg1) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(importDefault(2652).DKHhec);
+    return intl2.string(importDefault(2653).DKHhec);
   } else {
     const JOIN_REQUEST = ActivityActionTypes.JOIN_REQUEST;
     const intl = require(1212) /* getSystemLocale */.intl;

@@ -1,5 +1,5 @@
 // Module ID: 900
-// Function ID: 9883
+// Function ID: 9889
 // Name: normalizeArray
 // Dependencies: []
 

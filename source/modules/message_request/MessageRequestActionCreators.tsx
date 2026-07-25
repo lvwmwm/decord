@@ -1,10 +1,10 @@
-// Module ID: 10170
-// Function ID: 78657
+// Module ID: 10102
+// Function ID: 78287
 // Name: _acceptMessageRequest
-// Dependencies: [5, 653, 507, 10171, 686, 5588, 2]
+// Dependencies: [5, 653, 507, 10103, 686, 5588, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10170 (_acceptMessageRequest)
+// Module 10102 (_acceptMessageRequest)
 import dispatchLogout from "dispatchLogout";
 import { Endpoints } from "ME";
 
@@ -22,7 +22,7 @@ export const acceptMessageRequest = function acceptMessageRequest(arg0) {
 export const clearMessageRequestState = function clearMessageRequestState(id) {
   const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id) };
-  obj = { consent_status: require(10171) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.UNSPECIFIED };
+  obj = { consent_status: require(10103) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.UNSPECIFIED };
   obj.body = obj;
   obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
   return HTTP.put(obj);
@@ -30,7 +30,7 @@ export const clearMessageRequestState = function clearMessageRequestState(id) {
 export const markAsMessageRequest = function markAsMessageRequest(id) {
   const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id) };
-  obj = { consent_status: require(10171) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.PENDING };
+  obj = { consent_status: require(10103) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.PENDING };
   obj.body = obj;
   obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
   return HTTP.put(obj);

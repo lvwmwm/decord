@@ -1,10 +1,10 @@
-// Module ID: 13615
-// Function ID: 104612
+// Module ID: 13626
+// Function ID: 104739
 // Name: ProfilePreviewButton
-// Dependencies: [31, 27, 33, 4130, 689, 5462, 8310, 8537, 4660, 1212, 4126, 9142, 8545, 8304, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5462, 8045, 8297, 4661, 1212, 4127, 9034, 8305, 8039, 2]
 // Exports: default
 
-// Module 13615 (ProfilePreviewButton)
+// Module 13626 (ProfilePreviewButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -42,8 +42,8 @@ function EditButton(disabled) {
   }
   let obj = { accessibilityRole: "button", accessibilityLabel, onPress, disabled: flag, style: _createForOfIteratorHelperLoose().editButton };
   obj = { size: "xs", color: importDefault(689).colors.WHITE };
-  obj.children = callback(require(9142) /* PencilIcon */.PencilIcon, obj);
-  return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
+  obj.children = callback(require(9034) /* PencilIcon */.PencilIcon, obj);
+  return callback(require(4661) /* PressableBase */.PressableOpacity, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 _createForOfIteratorHelperLoose = { container: { position: "relative" } };
@@ -78,7 +78,7 @@ export default function UserProfileEditBannerButton(arg0) {
   }
   let obj = { style: _createForOfIteratorHelperLoose().container };
   const tmp = _createForOfIteratorHelperLoose();
-  const items = [callback(importDefault(8304), { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: importDefault(8545)(), bannerSafeArea }), , ];
+  const items = [callback(importDefault(8039), { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: importDefault(8305)(), bannerSafeArea }), , ];
   if (showProfilePreviewButton) {
     obj = { userId: user.id };
     showProfilePreviewButton = callback(ProfilePreviewButton, obj);

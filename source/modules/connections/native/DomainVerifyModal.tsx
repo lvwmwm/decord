@@ -1,10 +1,10 @@
-// Module ID: 9038
-// Function ID: 71065
+// Module ID: 8926
+// Function ID: 70544
 // Name: DomainScreen
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 1456, 507, 5121, 4126, 1212, 9039, 9044, 4543, 4337, 5087, 5517, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 1456, 507, 5121, 4127, 1212, 8927, 8932, 4544, 4338, 5087, 5517, 2]
 // Exports: default
 
-// Module 9038 (DomainScreen)
+// Module 8926 (DomainScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -232,28 +232,28 @@ function HTTPProofScreen(proof) {
   obj = { variant: "text-md/normal" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.p4ql7y);
-  const items = [callback2(require(4126) /* Text */.Text, obj), , , , ];
+  const items = [callback2(require(4127) /* Text */.Text, obj), , , , ];
   const obj1 = { style: tmp.dns };
   const obj2 = { variant: "text-md/normal" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.GL3q7k);
-  const items1 = [callback2(require(4126) /* Text */.Text, obj2), , , ];
+  const items1 = [callback2(require(4127) /* Text */.Text, obj2), , , ];
   const obj3 = { variant: "text-md/normal", selectable: true, style: tmp.code };
-  let obj6 = require(9044) /* EXAMPLE_DOMAIN */;
+  let obj6 = require(8932) /* EXAMPLE_DOMAIN */;
   obj3.children = obj6.getHttpName(domain);
-  items1[1] = callback2(require(4126) /* Text */.Text, obj3);
+  items1[1] = callback2(require(4127) /* Text */.Text, obj3);
   const obj4 = { variant: "text-md/normal" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl3.string(require(1212) /* getSystemLocale */.t.PVLriT);
-  items1[2] = callback2(require(4126) /* Text */.Text, obj4);
+  items1[2] = callback2(require(4127) /* Text */.Text, obj4);
   const obj5 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: proof.proof };
-  items1[3] = callback2(require(4126) /* Text */.Text, obj5);
+  items1[3] = callback2(require(4127) /* Text */.Text, obj5);
   obj1.children = items1;
   items[1] = callback3(View, obj1);
   let tmp6 = null != first;
   if (tmp6) {
     obj6 = { variant: "text-md/normal", color: "text-feedback-critical", style: tmp.error, children: first };
-    tmp6 = callback2(require(4126) /* Text */.Text, obj6);
+    tmp6 = callback2(require(4127) /* Text */.Text, obj6);
   }
   items[2] = tmp6;
   const obj7 = { style: tmp.button };
@@ -305,7 +305,7 @@ function HTTPProofScreen(proof) {
       outer1_4(false);
     });
   };
-  obj7.children = callback2(require(4543) /* Button */.Button, obj8);
+  obj7.children = callback2(require(4544) /* Button */.Button, obj8);
   items[3] = callback2(View, obj7);
   const obj9 = { style: tmp.button };
   const obj10 = { variant: "secondary" };
@@ -314,7 +314,7 @@ function HTTPProofScreen(proof) {
   obj10.onPress = function onPress() {
 
   };
-  obj9.children = callback2(require(4543) /* Button */.Button, obj10);
+  obj9.children = callback2(require(4544) /* Button */.Button, obj10);
   items[4] = callback2(View, obj9);
   obj.children = items;
   return callback3(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

@@ -1,5 +1,5 @@
 // Module ID: 1340
-// Function ID: 15743
+// Function ID: 15749
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1341, 1342, 1343, 677, 1339, 682, 1344, 566, 686, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, removeCandidateContent, useIsAnyContentShown, useIsContentShown
@@ -320,8 +320,8 @@ export const isContentShown = function isContentShown(DOUBLE_TAP_TO_REACT_EXPAND
   const currentlyShown = store.getState().currentlyShown;
   return currentlyShown.has(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
 };
-export const useIsContentShown = function useIsContentShown(FAVORITES_SERVER_ONBOARDING_MENU_ITEM) {
-  let closure_0 = FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+export const useIsContentShown = function useIsContentShown(USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
+  let closure_0 = USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS;
   return store((currentlyShown) => {
     currentlyShown = currentlyShown.currentlyShown;
     return currentlyShown.has(closure_0);

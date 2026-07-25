@@ -1,10 +1,10 @@
-// Module ID: 8900
-// Function ID: 70131
+// Module ID: 8788
+// Function ID: 69610
 // Name: showAudioOutputSelector
-// Dependencies: [27, 8901, 477, 4098, 8902, 1934, 2]
+// Dependencies: [27, 8789, 477, 4099, 8790, 1935, 2]
 // Exports: showAudioOutputSelector
 
-// Module 8900 (showAudioOutputSelector)
+// Module 8788 (showAudioOutputSelector)
 import { NativeModules } from "get ActivityIndicator";
 import { VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY as closure_4 } from "VOICE_PANEL_SETTINGS_KEY";
 
@@ -14,8 +14,8 @@ export const showAudioOutputSelector = function showAudioOutputSelector(channelI
   let obj = require(477) /* set */;
   if (obj.isAndroid()) {
     obj = { channelId, isConnectedToVoiceChannel: closure_1 };
-    importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(8902, dependencyMap.paths), closure_4, obj);
-    const obj2 = importDefault(4098);
+    importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(8790, dependencyMap.paths), closure_4, obj);
+    const obj2 = importDefault(4099);
   } else {
     const AudioRoutePicker = NativeModules.AudioRoutePicker;
     if (null != AudioRoutePicker) {

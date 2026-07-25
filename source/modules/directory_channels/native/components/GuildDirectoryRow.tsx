@@ -1,8 +1,8 @@
-// Module ID: 10104
-// Function ID: 77949
-// Dependencies: [5, 57, 31, 27, 1348, 1838, 653, 33, 4130, 689, 566, 5737, 5048, 5713, 1282, 1392, 1212, 5167, 5513, 1387, 4126, 10075, 4543, 2]
+// Module ID: 10033
+// Function ID: 77568
+// Dependencies: [5, 57, 31, 27, 1348, 1838, 653, 33, 4131, 689, 566, 6633, 5049, 10034, 1282, 1392, 1212, 5166, 5513, 1387, 4127, 10004, 4544, 2]
 
-// Module 10104
+// Module 10033
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -80,7 +80,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   const items1 = [callback2(importDefault(5513), obj4), ];
   const obj5 = { style: tmp.guildInfoContainer };
   const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: entry.name };
-  const items2 = [callback2(entry(4126).Text, obj6), ];
+  const items2 = [callback2(entry(4127).Text, obj6), ];
   const obj7 = { style: tmp.memberInfo };
   let tmp18 = null;
   if (null != approximatePresenceCount) {
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const intl3 = entry(1212).intl;
     const obj11 = { membersOnline: approximatePresenceCount };
     obj10.children = intl3.format(entry(1212).t["LC+S+m"], obj11);
-    items3[1] = callback2(entry(4126).Text, obj10);
+    items3[1] = callback2(entry(4127).Text, obj10);
     obj8.children = items3;
     tmp18 = callback3(closure_11, obj8);
   }
@@ -105,7 +105,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const intl4 = entry(1212).intl;
     const obj15 = { count: approximateMemberCount };
     obj14.children = intl4.format(entry(1212).t.zRl6XR, obj15);
-    items5[1] = callback2(entry(4126).Text, obj14);
+    items5[1] = callback2(entry(4127).Text, obj14);
     obj12.children = items5;
     tmp25 = callback3(closure_11, obj12);
   }
@@ -117,7 +117,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   obj3.children = items1;
   const items6 = [callback3(View, obj3), ];
   const tmp12 = importDefault(5513);
-  items6[1] = callback2(View, { children: callback2(importDefault(10075), { entry }) });
+  items6[1] = callback2(View, { children: callback2(importDefault(10004), { entry }) });
   obj2.children = items6;
   const items7 = [callback3(View, obj2), , , ];
   let tmp32 = null != description;
@@ -126,7 +126,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   }
   if (tmp32) {
     const obj17 = { lineClamp: 3, style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: description };
-    tmp32 = callback2(entry(4126).Text, obj17);
+    tmp32 = callback2(entry(4127).Text, obj17);
   }
   items7[1] = tmp32;
   items7[2] = callback2(View, { style: tmp.flex });
@@ -142,10 +142,10 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   }
   obj19.variant = str2;
   obj19.text = stringResult;
-  items7[3] = callback2(entry(4543).Button, obj19);
+  items7[3] = callback2(entry(4544).Button, obj19);
   obj1.children = items7;
   obj.children = callback3(View, obj1);
-  return callback2(entry(5167).Card, obj);
+  return callback2(entry(5166).Card, obj);
 });
 let result = require("result").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryRow.tsx");
 

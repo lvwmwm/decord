@@ -1,10 +1,10 @@
-// Module ID: 12337
-// Function ID: 96130
+// Module ID: 12313
+// Function ID: 95939
 // Name: isMostRecentDeadEndInvite
-// Dependencies: [653, 10933, 2]
+// Dependencies: [653, 10883, 2]
 // Exports: isMostRecentDeadEndInvite
 
-// Module 12337 (isMostRecentDeadEndInvite)
+// Module 12313 (isMostRecentDeadEndInvite)
 import { ActivityActionTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/isMostRecentDeadEndInvite.tsx");

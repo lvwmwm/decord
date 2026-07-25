@@ -1,10 +1,10 @@
-// Module ID: 11866
-// Function ID: 92009
+// Module ID: 11842
+// Function ID: 91814
 // Name: useHandleClaim
-// Dependencies: [5, 31, 6773, 4098, 9804, 3831, 1212, 2]
+// Dependencies: [5, 31, 5769, 4099, 9728, 3832, 1212, 2]
 // Exports: useHandleClaim
 
-// Module 11866 (useHandleClaim)
+// Module 11842 (useHandleClaim)
 import dispatcher from "dispatcher";
 import result from "result";
 

@@ -1,13 +1,24 @@
 // Module ID: 3333
-// Function ID: 26148
-// Dependencies: [3334, 3335, 3336, 3337, 3338]
+// Function ID: 26155
+// Dependencies: [1932, 1933]
 
 // Module 3333
 import result from "result";
-import result1 from "result1";
-import result2 from "result2";
-import result3 from "result3";
 
+obj = { ordinalNumber: require("result")(obj), era: result.default({ matchPatterns: obj1, defaultMatchWidth: "wide", parsePatterns: { any: items }, defaultParseWidth: "any" }), quarter: result.default(obj2), month: result.default({ matchPatterns: obj4, defaultMatchWidth: "wide", parsePatterns: { narrow: items2, any: items3 }, defaultParseWidth: "any" }), day: result.default({ matchPatterns: obj5, defaultMatchWidth: "wide", parsePatterns: { narrow: items4, any: items5 }, defaultParseWidth: "any" }), dayPeriod: result.default({ matchPatterns: obj6, defaultMatchWidth: "wide", parsePatterns: { any: obj7 }, defaultParseWidth: "any" }) };
+obj = {
+  matchPattern: /^(\d+)(-?(е|я|й|ое|ье|ая|ья|ый|ой|ий|ый))?/i,
+  parsePattern: /\d+/i,
+  valueCallback(replaced) {
+    return parseInt(replaced, 10);
+  }
+};
+items = [/^д/i, /^н/i];
+const items1 = [/1/i, /2/i, /3/i, /4/i];
+items2 = [/^я/i, /^ф/i, /^м/i, /^а/i, /^м/i, /^и/i, /^и/i, /^а/i, /^с/i, /^о/i, /^н/i, /^я/i];
+items3 = [/^я/i, /^ф/i, /^мар/i, /^ап/i, /^ма[йя]/i, /^июн/i, /^июл/i, /^ав/i, /^с/i, /^о/i, /^н/i, /^д/i];
+items4 = [/^в/i, /^п/i, /^в/i, /^с/i, /^ч/i, /^п/i, /^с/i];
+items5 = [/^в[ос]/i, /^п[он]/i, /^в/i, /^ср/i, /^ч/i, /^п[ят]/i, /^с[уб]/i];
 
-export default { code: "sv", formatDistance: result.default, formatLong: result1.default, formatRelative: result2.default, localize: result3.default, match: require("module_3338"), options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export default obj;
 export default exports.default;

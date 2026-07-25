@@ -1,10 +1,10 @@
-// Module ID: 15537
-// Function ID: 119567
+// Module ID: 15547
+// Function ID: 119695
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [12697, 653, 1851, 664, 624, 6686, 6678, 2]
+// Dependencies: [12708, 653, 1852, 664, 624, 6188, 6180, 2]
 // Exports: useShouldShowExpiringTrialOfferCard
 
-// Module 15537 (useShouldShowExpiringTrialOfferCard)
+// Module 15547 (useShouldShowExpiringTrialOfferCard)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { NoticeTypes } from "ME";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";
@@ -17,9 +17,9 @@ export const useShouldShowExpiringTrialOfferCard = function useShouldShowExpirin
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_3.getNoticeType());
   const obj = require(624) /* defaultAreStatesEqual */;
-  const premiumTrialOffer = require(6686) /* useGetTrialOffer */.usePremiumTrialOffer();
+  const premiumTrialOffer = require(6188) /* useGetTrialOffer */.usePremiumTrialOffer();
   let num = 0;
-  const obj2 = require(6686) /* useGetTrialOffer */;
+  const obj2 = require(6188) /* useGetTrialOffer */;
   if (null != premiumTrialOffer) {
     num = 0;
     if (null != premiumTrialOffer.expires_at) {
@@ -28,7 +28,7 @@ export const useShouldShowExpiringTrialOfferCard = function useShouldShowExpirin
     }
   }
   let tmp6 = null != premiumTrialOffer;
-  const tmp3 = importDefault(6678);
+  const tmp3 = importDefault(6180);
   if (tmp6) {
     tmp6 = null != stateFromStores;
   }

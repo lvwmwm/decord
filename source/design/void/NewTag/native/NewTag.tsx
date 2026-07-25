@@ -1,10 +1,10 @@
-// Module ID: 13058
-// Function ID: 100907
+// Module ID: 13069
+// Function ID: 101034
 // Name: NewTag
-// Dependencies: [31, 27, 653, 33, 4130, 689, 4554, 4126, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 4555, 4127, 1212, 2]
 // Exports: default
 
-// Module 13058 (NewTag)
+// Module 13069 (NewTag)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HorizontalGradient } from "ME";
@@ -66,10 +66,10 @@ export default function NewTag(color) {
     obj2["style"] = items2;
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj2["children"] = intl2.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    obj1.children = tmp8(require(4126) /* Text */.Text, obj2);
+    obj1.children = tmp8(require(4127) /* Text */.Text, obj2);
     obj.children = tmp8(closure_3, obj1);
-    let tmp8Result = tmp8(importDefault(4554), obj);
-    const tmp18 = importDefault(4554);
+    let tmp8Result = tmp8(importDefault(4555), obj);
+    const tmp18 = importDefault(4555);
   } else {
     const obj3 = {};
     const items3 = [tmp7.tagContainer, containerStyle];
@@ -80,7 +80,7 @@ export default function NewTag(color) {
     obj4["style"] = items4;
     const intl = require(1212) /* getSystemLocale */.intl;
     obj4["children"] = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    obj3.children = tmp8(require(4126) /* Text */.Text, obj4);
+    obj3.children = tmp8(require(4127) /* Text */.Text, obj4);
     tmp8Result = tmp8(closure_3, obj3);
   }
   return tmp8Result;

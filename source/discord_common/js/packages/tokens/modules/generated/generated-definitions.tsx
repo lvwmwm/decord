@@ -1281,18 +1281,168 @@ set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
+      return 40;
+    } else {
+      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
+      let iter = tmp2();
+      if (!iter.done) {
+        const value = iter.value;
+        while ("mobile-visual-refresh" !== value) {
+          if ("mobile-visual-refresh-floating" === value) {
+            let num = 54;
+            return 54;
+          } else {
+            let iter2 = tmp2();
+            iter = iter2;
+          }
+        }
+        return 32;
+      }
+      return 40;
+    }
+  }
+};
+set = {
+  resolve(enabledExperiments) {
+    enabledExperiments = enabledExperiments.enabledExperiments;
+    if (0 === enabledExperiments.length) {
+      return 8;
+    } else {
+      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
+      let iter = tmp2();
+      if (!iter.done) {
+        while ("mobile-visual-refresh-floating" !== iter.value) {
+          let iter2 = tmp2();
+          iter = iter2;
+        }
+        return 0;
+      }
+      return 8;
+    }
+  }
+};
+set = {
+  resolve(enabledExperiments) {
+    enabledExperiments = enabledExperiments.enabledExperiments;
+    if (0 === enabledExperiments.length) {
+      return 9;
+    } else {
+      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
+      let iter = tmp2();
+      if (!iter.done) {
+        while ("mobile-visual-refresh-floating" !== iter.value) {
+          let iter2 = tmp2();
+          iter = iter2;
+        }
+        return 0;
+      }
+      return 9;
+    }
+  }
+};
+set = {
+  resolve(enabledExperiments) {
+    enabledExperiments = enabledExperiments.enabledExperiments;
+    if (0 === enabledExperiments.length) {
+      return 12;
+    } else {
+      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
+      let iter = tmp2();
+      if (!iter.done) {
+        while ("mobile-visual-refresh-floating" !== iter.value) {
+          let iter2 = tmp2();
+          iter = iter2;
+        }
+        return 16;
+      }
+      return 12;
+    }
+  }
+};
+set = {
+  resolve(enabledExperiments) {
+    enabledExperiments = enabledExperiments.enabledExperiments;
+    if (0 === enabledExperiments.length) {
       return 10;
     } else {
       const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
       let iter = tmp2();
       if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+        const value = iter.value;
+        while ("mobile-visual-refresh" !== value) {
+          if ("mobile-visual-refresh-floating" === value) {
+            return 0;
+          } else {
+            let iter2 = tmp2();
+            iter = iter2;
+          }
         }
         return 6;
       }
       return 10;
+    }
+  }
+};
+set = {
+  resolve(enabledExperiments) {
+    enabledExperiments = enabledExperiments.enabledExperiments;
+    if (0 === enabledExperiments.length) {
+      return 32;
+    } else {
+      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
+      let iter = tmp2();
+      if (!iter.done) {
+        while ("mobile-visual-refresh-floating" !== iter.value) {
+          let iter2 = tmp2();
+          iter = iter2;
+        }
+        return 16;
+      }
+      return 32;
+    }
+  }
+};
+set = {
+  resolve(enabledExperiments) {
+    enabledExperiments = enabledExperiments.enabledExperiments;
+    if (0 === enabledExperiments.length) {
+      return 12;
+    } else {
+      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
+      let iter = tmp2();
+      if (!iter.done) {
+        const value = iter.value;
+        while ("mobile-visual-refresh-floating" !== value) {
+          if ("mobile-visual-refresh-legacy-send-button" === value) {
+            let num = 12;
+            return 12;
+          } else {
+            let iter2 = tmp2();
+            iter = iter2;
+          }
+        }
+        return 10;
+      }
+      return 12;
+    }
+  }
+};
+set = {
+  resolve(enabledExperiments) {
+    enabledExperiments = enabledExperiments.enabledExperiments;
+    if (0 === enabledExperiments.length) {
+      return 8;
+    } else {
+      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
+      let iter = tmp2();
+      if (!iter.done) {
+        while ("mobile-visual-refresh-floating" !== iter.value) {
+          let iter2 = tmp2();
+          iter = iter2;
+        }
+        return 0;
+      }
+      return 8;
     }
   }
 };
@@ -1331,25 +1481,6 @@ set = {
         return 4;
       }
       return 16;
-    }
-  }
-};
-set = {
-  resolve(enabledExperiments) {
-    enabledExperiments = enabledExperiments.enabledExperiments;
-    if (0 === enabledExperiments.length) {
-      return 0;
-    } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
-        }
-        return 64;
-      }
-      return 0;
     }
   }
 };
@@ -3137,10 +3268,16 @@ export const _private = {
       VOICE_MESSAGE_DURATION_LINE_HEIGHT_ANDROID: set,
       VOICE_MESSAGE_DURATION_LINE_HEIGHT_IOS: set,
       VOICE_MESSAGE_DURATION_TEXT_STYLE: set,
+      VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT: set,
+      VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT: set,
+      VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_BOTTOM: set,
+      VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_HORIZONTAL: set,
       VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL: set,
+      VOICE_MESSAGE_RECORDING_PILL_BORDER_RADIUS: set,
+      VOICE_MESSAGE_RECORDING_PILL_PADDING_HORIZONTAL: set,
+      VOICE_MESSAGE_RECORDING_WAVEFORM_MARGIN_LEFT: set,
       VOICE_PANEL_CONTROLS_BORDER_RADIUS: set,
       VOICE_PANEL_CONTROLS_PADDING: set,
-      VOICE_PANEL_DISCONNECT_BUTTON_MIN_WIDTH: set,
       VOICE_PANEL_GUTTER: set,
       VOICE_PANEL_PADDING: set,
       VOICE_TILE_BORDER_RADIUS: set,

@@ -1,10 +1,10 @@
-// Module ID: 10941
-// Function ID: 84980
+// Module ID: 10891
+// Function ID: 84570
 // Name: getSupportsRemoteJoin
-// Dependencies: [653, 5689, 2]
+// Dependencies: [653, 5973, 2]
 // Exports: getSupportsRemoteJoin
 
-// Module 10941 (getSupportsRemoteJoin)
+// Module 10891 (getSupportsRemoteJoin)
 import { ActivityFlags } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/getSupportsRemoteJoin.tsx");
@@ -12,7 +12,7 @@ const result = require("set").fileFinishedImporting("modules/activities/utils/ge
 export const getSupportsRemoteJoin = function getSupportsRemoteJoin(applicationActivity) {
   let tmp = null != applicationActivity;
   if (tmp) {
-    tmp = importDefault(5689)(applicationActivity, ActivityFlags.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN);
+    tmp = importDefault(5973)(applicationActivity, ActivityFlags.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN);
   }
   return tmp;
 };

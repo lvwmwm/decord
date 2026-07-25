@@ -1,10 +1,10 @@
-// Module ID: 14541
-// Function ID: 111001
+// Module ID: 14552
+// Function ID: 111128
 // Name: SkeletonLoading
-// Dependencies: [31, 27, 6774, 655, 653, 33, 8704, 4130, 689, 14031, 14533, 1456, 8707, 566, 4066, 11872, 3834, 3974, 14023, 14025, 5462, 5482, 14534, 675, 3976, 14536, 14537, 11875, 4554, 4126, 4543, 1212, 10946, 4981, 4660, 5512, 5449, 14538, 7527, 2]
+// Dependencies: [31, 27, 5770, 655, 653, 33, 8592, 4131, 689, 14042, 14544, 1456, 8595, 566, 4067, 11848, 3835, 3975, 14034, 14036, 5462, 5482, 14545, 675, 3977, 14547, 14548, 11851, 4555, 4127, 4544, 1212, 10897, 4982, 4661, 5512, 5449, 14549, 6619, 2]
 // Exports: default
 
-// Module 14541 (SkeletonLoading)
+// Module 14552 (SkeletonLoading)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "onChange";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -63,10 +63,10 @@ export default function _default(heroBlock) {
   let stateFromStores;
   let c5;
   let c6;
-  let obj = heroBlock(14533);
+  let obj = heroBlock(14544);
   let obj1 = heroBlock(1456);
   const dependencyMap = obj1.useNavigation();
-  let obj2 = heroBlock(8707);
+  let obj2 = heroBlock(8595);
   const React = obj2.useCollectiblesAnalyticsContext();
   let heroBannerUrl = heroBlock.mobileHeroUrl;
   if (null == heroBannerUrl) {
@@ -76,20 +76,20 @@ export default function _default(heroBlock) {
   let obj3 = heroBlock(566);
   const items = [c6];
   stateFromStores = obj3.useStateFromStores(items, () => _undefined2.getCategory(heroBlock.categorySkuId));
-  let obj4 = heroBlock(11872);
+  let obj4 = heroBlock(11848);
   const tmp4 = _createForOfIteratorHelperLoose();
-  let obj5 = heroBlock(3834);
+  let obj5 = heroBlock(3835);
   const token = obj5.useToken(preferVCPrice(689).colors.BACKGROUND_BASE_LOW);
-  let obj6 = heroBlock(3974);
-  let obj7 = heroBlock(3974);
-  const tmp3 = preferVCPrice(4066)();
-  let obj8 = heroBlock(3834);
+  let obj6 = heroBlock(3975);
+  let obj7 = heroBlock(3975);
+  const tmp3 = preferVCPrice(4067)();
+  let obj8 = heroBlock(3835);
   const token1 = obj8.useToken(preferVCPrice(689).colors.BACKGROUND_BASE_LOWEST);
-  const tmp8 = preferVCPrice(14023)();
+  const tmp8 = preferVCPrice(14034)();
   c5 = tmp8;
   const items1 = [heroBlock.rankedSkuIds, tmp8];
   const memo = React.useMemo(() => _undefined(heroBlock.rankedSkuIds), items1);
-  let obj9 = heroBlock(14025);
+  let obj9 = heroBlock(14036);
   const filteredAndSortedProducts = obj9.useFilteredAndSortedProducts({ products: memo, bypassAndroidUnsyncedFilter: tmp2 });
   c6 = tmp10;
   const hexToRgbaStringResult = obj6.hexToRgbaString(obj7.hexWithOpacity(token, 0));
@@ -116,7 +116,7 @@ export default function _default(heroBlock) {
           obj4 = { colors: ["rgba(39, 30, 173, 0.3)", "transparent"] };
           ({ START: obj17.start, END: obj17.end } = closure_10);
           obj4.style = tmp4.orbsBackgroundGradient;
-          tmp35 = callback(preferVCPrice(4554), obj4);
+          tmp35 = callback(preferVCPrice(4555), obj4);
         }
         const items3 = [tmp35, , ];
         obj5 = {};
@@ -130,7 +130,7 @@ export default function _default(heroBlock) {
         obj7.colors = items5;
         ({ START: obj20.start, END: obj20.end } = closure_10);
         obj7.style = tmp4.fadeOutGradient;
-        items3[2] = callback(preferVCPrice(4554), obj7);
+        items3[2] = callback(preferVCPrice(4555), obj7);
         obj3.children = items3;
         tmp33Result = closure_13(closure_12, obj3);
         const tmp33 = closure_13;
@@ -145,7 +145,7 @@ export default function _default(heroBlock) {
         let tmp68 = null != tmp14;
         if (tmp68) {
           const obj11 = { variant: "display-md", color: "mobile-text-heading-primary", style: tmp4.orbsTitle, children: tmp14 };
-          tmp68 = callback(heroBlock(4126).Text, obj11);
+          tmp68 = callback(heroBlock(4127).Text, obj11);
         }
         const items7 = [tmp68, ];
         let tmp72 = null != tmp15;
@@ -154,7 +154,7 @@ export default function _default(heroBlock) {
         }
         if (tmp72) {
           const obj12 = { variant: "text-md/medium", children: tmp15 };
-          tmp72 = callback(heroBlock(4126).Text, obj12);
+          tmp72 = callback(heroBlock(4127).Text, obj12);
         }
         items7[1] = tmp72;
         obj10.children = items7;
@@ -167,7 +167,7 @@ export default function _default(heroBlock) {
           obj = { mergeExistingRoutes: true, fromContent: heroBlock(navigation[33]).QuestContent.ORBS_SHOP_HERO_CTA };
           obj.openQuestHome(obj);
         };
-        items8[1] = callback(heroBlock(4543).Button, obj13);
+        items8[1] = callback(heroBlock(4544).Button, obj13);
         obj9.children = items8;
         let tmp48Result = tmp65(c5, obj9);
         const tmp66 = c5;
@@ -227,7 +227,7 @@ export default function _default(heroBlock) {
         items9[1] = callback(c5, obj21);
         obj17.children = items9;
         obj14.children = closure_13(c5, obj17);
-        tmp48Result = callback(heroBlock(4660).PressableOpacity, obj14, stateFromStores.storeListingId);
+        tmp48Result = callback(heroBlock(4661).PressableOpacity, obj14, stateFromStores.storeListingId);
         const tmp48 = callback;
         const tmp52 = closure_13;
         const tmp53 = c5;
@@ -247,8 +247,8 @@ export default function _default(heroBlock) {
         const intl5 = heroBlock(1212).intl;
         const obj25 = { category: stateFromStores.name };
         obj24.accessibilityLabel = intl5.formatToPlainString(heroBlock(1212).t.FNtLb3, obj25);
-        let tmp84Result = tmp84(preferVCPrice(14538), obj24);
-        const tmp94 = preferVCPrice(14538);
+        let tmp84Result = tmp84(preferVCPrice(14549), obj24);
+        const tmp94 = preferVCPrice(14549);
       } else {
         const obj26 = {};
         if (0 === filteredAndSortedProducts.length) {
@@ -267,7 +267,7 @@ export default function _default(heroBlock) {
           obj29.renderItem = tmp13;
           obj29.decelerationRate = "fast";
           stateFromStores = preferVCPrice;
-          obj29.snapToInterval = heroBlock(8704).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(689).space.PX_12;
+          obj29.snapToInterval = heroBlock(8592).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(689).space.PX_12;
           obj29.showsHorizontalScrollIndicator = false;
           obj29.ListHeaderComponent = function ListHeaderComponent() {
             let obj = {};
@@ -287,7 +287,7 @@ export default function _default(heroBlock) {
             obj.style = obj;
             return outer1_11(c5, obj);
           };
-          tmp90 = callback(heroBlock(7527).FlashList, obj29);
+          tmp90 = callback(heroBlock(6619).FlashList, obj29);
         }
         obj26.children = tmp90;
         tmp84Result = tmp84(closure_12, obj26);
@@ -298,14 +298,14 @@ export default function _default(heroBlock) {
       items6[2] = callback(c5, obj22);
       obj1.children = items6;
       obj.children = closure_13(c5, obj1);
-      obj.children = callback(preferVCPrice(11875), obj);
+      obj.children = callback(preferVCPrice(11851), obj);
       return callback(heroBlock(5462).AnalyticsLocationProvider, obj);
     } else {
-      obj10 = heroBlock(3976);
+      obj10 = heroBlock(3977);
       if (obj10.isThemeDark(tmp3)) {
-        let tmp18Result = tmp18(14536);
+        let tmp18Result = tmp18(14547);
       } else {
-        tmp18Result = tmp18(14537);
+        tmp18Result = tmp18(14548);
       }
     }
   }

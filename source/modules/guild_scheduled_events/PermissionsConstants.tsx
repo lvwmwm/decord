@@ -1,9 +1,9 @@
-// Module ID: 8445
-// Function ID: 67091
+// Module ID: 8203
+// Function ID: 65742
 // Name: VIEW_CHANNEL
 // Dependencies: [653, 483, 1356, 2]
 
-// Module 8445 (VIEW_CHANNEL)
+// Module 8203 (VIEW_CHANNEL)
 import { Permissions } from "ME";
 import importAllResult from "fromHexReverseArray";
 import importAllResult1 from "fromHexReverseArray";

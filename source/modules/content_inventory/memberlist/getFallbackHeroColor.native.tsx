@@ -1,10 +1,10 @@
-// Module ID: 7905
-// Function ID: 62667
+// Module ID: 7852
+// Function ID: 62639
 // Name: getFallbackHeroColor
 // Dependencies: [689, 2]
 // Exports: getFallbackHeroColor
 
-// Module 7905 (getFallbackHeroColor)
+// Module 7852 (getFallbackHeroColor)
 const result = require("set").fileFinishedImporting("modules/content_inventory/memberlist/getFallbackHeroColor.native.tsx");
 
 export const getFallbackHeroColor = function getFallbackHeroColor(stateFromStores1, saturation) {

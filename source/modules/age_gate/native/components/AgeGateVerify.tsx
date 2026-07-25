@@ -1,10 +1,10 @@
-// Module ID: 16033
-// Function ID: 123928
+// Module ID: 16044
+// Function ID: 124096
 // Name: AgeGateVerify
-// Dependencies: [31, 27, 33, 4130, 689, 4345, 4347, 5121, 5807, 4126, 4543, 7581, 7583, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4346, 4348, 5121, 6727, 4127, 4544, 6690, 6692, 2]
 // Exports: default
 
-// Module 16033 (AgeGateVerify)
+// Module 16044 (AgeGateVerify)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,18 +28,18 @@ export default function AgeGateVerify(source) {
   let verifyTitle;
   source = source.source;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4345) /* shouldAgeVerifyForAgeGate */;
+  let obj = require(4346) /* shouldAgeVerifyForAgeGate */;
   const ageGateVerifyContent = obj.useAgeGateVerifyContent(source);
   const verifyAgreementButtonText = ageGateVerifyContent.verifyAgreementButtonText;
   ({ verifyGateDescription, verifyTitle } = ageGateVerifyContent);
-  let obj1 = require(4347) /* isReactiveCheckEnabled */;
+  let obj1 = require(4348) /* isReactiveCheckEnabled */;
   const maybePerformReactiveCheckForSource = obj1.useMaybePerformReactiveCheckForSource(source);
   obj = { top: true, style: tmp.container };
-  const items = [callback(require(5807) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, {}), , , ];
+  const items = [callback(require(6727) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, {}), , , ];
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: verifyTitle };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: verifyGateDescription };
-  items[2] = callback(require(4126) /* Text */.Text, obj1);
+  items[2] = callback(require(4127) /* Text */.Text, obj1);
   let tmp5 = null != verifyAgreementButtonText;
   if (tmp5) {
     const obj2 = { style: tmp.buttonWrapper };
@@ -52,7 +52,7 @@ export default function AgeGateVerify(source) {
         },
       grow: true
     };
-    obj2.children = callback(require(4543) /* Button */.Button, obj3);
+    obj2.children = callback(require(4544) /* Button */.Button, obj3);
     tmp5 = callback(View, obj2);
   }
   items[3] = tmp5;

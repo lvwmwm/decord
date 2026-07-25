@@ -1,9 +1,9 @@
-// Module ID: 10449
-// Function ID: 80438
+// Module ID: 10383
+// Function ID: 80107
 // Name: IGNORE_CONFIRMATION_ACTION_SHEET_KEY
 // Dependencies: [2]
 
-// Module 10449 (IGNORE_CONFIRMATION_ACTION_SHEET_KEY)
+// Module 10383 (IGNORE_CONFIRMATION_ACTION_SHEET_KEY)
 const result = require("set").fileFinishedImporting("modules/relationships/native/RestrictionConfirmationConstants.tsx");
 
 export const IGNORE_CONFIRMATION_ACTION_SHEET_KEY = "IgnoreConfirmationActionSheet";

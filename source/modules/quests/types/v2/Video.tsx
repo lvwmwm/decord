@@ -1,10 +1,10 @@
-// Module ID: 6952
-// Function ID: 55571
+// Module ID: 5943
+// Function ID: 52877
 // Name: videoAssetFromServer
 // Dependencies: [2]
 // Exports: desktopVideoAssetsFromServer, desktopVideoMessagesFromServer, mobileVideoAssetsFromServer, mobileVideoMessagesFromServer
 
-// Module 6952 (videoAssetFromServer)
+// Module 5943 (videoAssetFromServer)
 function videoAssetFromServer(video) {
   return { url: video.url, width: video.width, height: video.height, thumbnail: video.thumbnail, caption: video.caption, transcript: video.transcript };
 }

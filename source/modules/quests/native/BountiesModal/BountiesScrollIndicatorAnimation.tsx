@@ -1,10 +1,10 @@
-// Module ID: 13987
-// Function ID: 107018
+// Module ID: 13998
+// Function ID: 107145
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [57, 31, 27, 33, 4130, 3834, 689, 3842, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 3835, 689, 3843, 2]
 // Exports: default
 
-// Module 13987 (BountiesScrollIndicatorAnimation)
+// Module 13998 (BountiesScrollIndicatorAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -19,7 +19,7 @@ export default function BountiesScrollIndicatorAnimation(startAnimation) {
   let tmp4;
   let tmp5;
   const visible = startAnimation.visible;
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const token = obj.useToken(importDefault(689).colors.TEXT_DEFAULT);
   const tmp = callback2();
   [tmp4, tmp5] = callback(React.useState(0), 2);
@@ -30,7 +30,7 @@ export default function BountiesScrollIndicatorAnimation(startAnimation) {
       tmp5((arg0) => arg0 + 1);
     }
   }
-  obj = { style: tmp.container, children: jsx(require(3842) /* ManaContext */.BountiesScrollIndicatorRive, obj, tmp4) };
+  obj = { style: tmp.container, children: jsx(require(3843) /* ManaContext */.BountiesScrollIndicatorRive, obj, tmp4) };
   obj = { stateMachine: "State Machine 1", fit: "contain", dataBinding: { color: token, startAnimation: !startAnimation.isFadingInContent } };
   return <View stateMachine="State Machine 1" fit="contain" dataBinding={{ color: token, startAnimation: !arg0.isFadingInContent }} />;
 };

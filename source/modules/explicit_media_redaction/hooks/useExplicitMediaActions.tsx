@@ -1,10 +1,10 @@
-// Module ID: 8190
-// Function ID: 64658
+// Module ID: 9827
+// Function ID: 76212
 // Name: useExplicitMediaActions
-// Dependencies: [5, 57, 31, 4029, 2]
+// Dependencies: [5, 57, 31, 4030, 2]
 // Exports: useExplicitMediaActions
 
-// Module 8190 (useExplicitMediaActions)
+// Module 9827 (useExplicitMediaActions)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -16,21 +16,10 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
   onError = onError.onError;
   const onSuccess = onError.onSuccess;
   const report = onError.report;
-  const tmp = callback(first.useState(false), 2);
-  first = tmp[0];
-  callback = tmp[1];
+  const tmp2 = callback(first.useState(false), 2);
+  first = tmp2[0];
+  callback = tmp2[1];
+  // CreateGeneratorClosureLongIndex (0x67)
   const items = [first, onError, onSuccess, report];
-  return {
-    reportFalsePositive: first.useCallback(report(async () => {
-      if (!outer1_4) {
-        outer1_3(true);
-        yield outer1_2();
-        if (null != outer1_1) {
-          outer1_1();
-        }
-        outer1_3(false);
-      }
-    }), items),
-    isReportFalsePositiveLoading: first
-  };
+  return { reportFalsePositive: first.useCallback(report(tmp), items), isReportFalsePositiveLoading: first };
 };

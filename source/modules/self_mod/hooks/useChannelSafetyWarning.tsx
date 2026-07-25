@@ -1,10 +1,10 @@
-// Module ID: 10435
-// Function ID: 80371
+// Module ID: 10369
+// Function ID: 80040
 // Name: useChannelSafetyWarning
-// Dependencies: [9139, 566, 2]
+// Dependencies: [9031, 566, 2]
 // Exports: useChannelSafetyWarning
 
-// Module 10435 (useChannelSafetyWarning)
+// Module 10369 (useChannelSafetyWarning)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

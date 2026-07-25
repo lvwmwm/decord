@@ -1,9 +1,9 @@
-// Module ID: 1910
-// Function ID: 21529
+// Module ID: 1911
+// Function ID: 21540
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 1388, 1839, 1391, 1911, 483, 1912, 1914, 1841, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1388, 1839, 1391, 1912, 483, 1913, 1915, 1842, 2]
 
-// Module 1910 (_createForOfIteratorHelperLoose)
+// Module 1911 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import isGuildOwner from "isGuildOwner";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -117,8 +117,8 @@ function syncRoles(id, op, setPartition) {
     tmp = 0 === op.deletes.length;
   }
   if (!tmp) {
-    setPartition.setPartition(id, importAll(1914).fromSyncOperation(id, op, setPartition.getPartition(id)));
-    const obj = importAll(1914);
+    setPartition.setPartition(id, importAll(1915).fromSyncOperation(id, op, setPartition.getPartition(id)));
+    const obj = importAll(1915);
   }
 }
 function checkGuildRolesExist(cache_loaded, id, partitionLength) {
@@ -245,12 +245,12 @@ tmp2 = new tmp2({
         }
       }
       if ("partial" === partial_updates.data_mode) {
-        const obj2 = importAll(1912);
+        const obj2 = importAll(1913);
         partial_updates = partial_updates.partial_updates;
         let filterRoleDeletesResult = obj2.filterRoleDeletes(partial_updates.id, nullablePartition, partial_updates.partial_updates.roles, partial_updates.deleted_role_ids);
       } else {
-        filterRoleDeletesResult = importAll(1914).fromServerArray(partial_updates.id, partial_updates.roles);
-        const obj = importAll(1914);
+        filterRoleDeletesResult = importAll(1915).fromServerArray(partial_updates.id, partial_updates.roles);
+        const obj = importAll(1915);
       }
       getNullablePartition.setPartition(partial_updates.id, filterRoleDeletesResult);
     }
@@ -266,7 +266,7 @@ tmp2 = new tmp2({
         let partitionKey = value.partitionKey;
         let tmp3 = importAll;
         let tmp4 = dependencyMap;
-        let obj = importAll(1914);
+        let obj = importAll(1915);
         let setPartitionResult = clear.setPartition(partitionKey, obj.fromSerializedPartition(partitionKey, value.values));
         let iter2 = tmp2();
         iter = iter2;
@@ -335,7 +335,7 @@ tmp2 = new tmp2({
         let id = value.id;
         let tmp3 = importAll;
         let tmp4 = dependencyMap;
-        let obj = importAll(1914);
+        let obj = importAll(1915);
         let setPartitionResult = clear.setPartition(id, obj.fromSerializedPartition(id, value.roles));
         let tmp6 = checkGuildRolesExist;
         let tmp7 = checkGuildRolesExist("cache_loaded", id, clear);
@@ -357,7 +357,7 @@ tmp2 = new tmp2({
           let id = value.id;
           let tmp = importAll;
           let tmp2 = dependencyMap;
-          let obj = importAll(1914);
+          let obj = importAll(1915);
           let setPartitionResult = clear.setPartition(id, obj.fromSerializedPartition(id, value.roles));
           let tmp4 = checkGuildRolesExist;
           let tmp5 = checkGuildRolesExist("cache_loaded_lazy", id, clear);
@@ -377,7 +377,7 @@ tmp2 = new tmp2({
   GUILD_UPDATE(guild, setPartition) {
     guild = guild.guild;
     const id = guild.id;
-    setPartition.setPartition(id, importAll(1914).fromServerArray(id, guild.roles));
+    setPartition.setPartition(id, importAll(1915).fromServerArray(id, guild.roles));
   },
   GUILD_DELETE(guild, removePartition) {
     if (!guild.guild.unavailable) {
@@ -385,10 +385,10 @@ tmp2 = new tmp2({
     }
   },
   GUILD_ROLE_CREATE(guildId, setRecord) {
-    setRecord.setRecord(guildId.guildId, guildId.role.id, importAll(1914).fromServer(guildId.guildId, guildId.role));
+    setRecord.setRecord(guildId.guildId, guildId.role.id, importAll(1915).fromServer(guildId.guildId, guildId.role));
   },
   GUILD_ROLE_UPDATE(guildId, setRecord) {
-    setRecord.setRecord(guildId.guildId, guildId.role.id, importAll(1914).fromServer(guildId.guildId, guildId.role));
+    setRecord.setRecord(guildId.guildId, guildId.role.id, importAll(1915).fromServer(guildId.guildId, guildId.role));
   },
   GUILD_ROLE_DELETE(guildId, removeRecord) {
     removeRecord.removeRecord(guildId.guildId, guildId.roleId);

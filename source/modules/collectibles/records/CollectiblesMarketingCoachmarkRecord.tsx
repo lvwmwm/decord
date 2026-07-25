@@ -1,9 +1,9 @@
-// Module ID: 6800
-// Function ID: 53707
+// Module ID: 5796
+// Function ID: 50981
 // Name: CollectiblesMarketingCoachmarkRecord
-// Dependencies: [6, 7, 6798, 2]
+// Dependencies: [6, 7, 5794, 2]
 
-// Module 6800 (CollectiblesMarketingCoachmarkRecord)
+// Module 5796 (CollectiblesMarketingCoachmarkRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

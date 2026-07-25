@@ -1,10 +1,10 @@
-// Module ID: 16092
-// Function ID: 124581
+// Module ID: 16103
+// Function ID: 124749
 // Name: NewMemberActionsCompleted
-// Dependencies: [31, 27, 33, 4130, 689, 3991, 4131, 4337, 11413, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3992, 4132, 4338, 11376, 4127, 1212, 2]
 // Exports: default
 
-// Module 16092 (NewMemberActionsCompleted)
+// Module 16103 (NewMemberActionsCompleted)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,20 +28,20 @@ export default function NewMemberActionsCompleted(arg0) {
   let numActions;
   ({ initialPercent, numActions } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = sharedValue(3991);
+  let obj = sharedValue(3992);
   sharedValue = obj.useSharedValue(initialPercent);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj1 = sharedValue(3991);
+  let obj1 = sharedValue(3992);
   const fn = function b() {
     const obj = {};
     const obj2 = sharedValue(outer1_2[5]);
     obj.width = obj2.withDelay(500, sharedValue(outer1_2[6]).withTiming(`${100 * sharedValue.get()}%`, { duration: 700 }));
     return obj;
   };
-  obj = { withDelay: sharedValue(3991).withDelay, withTiming: sharedValue(4131).withTiming, barWidth: sharedValue };
+  obj = { withDelay: sharedValue(3992).withDelay, withTiming: sharedValue(4132).withTiming, barWidth: sharedValue };
   fn.__closure = obj;
   fn.__workletHash = 7643178959760;
   fn.__initData = closure_8;
@@ -53,9 +53,9 @@ export default function NewMemberActionsCompleted(arg0) {
   obj1 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light" };
   const intl = sharedValue(1212).intl;
   obj1.children = intl.format(sharedValue(1212).t.pGj5u2, { count: numActions });
-  const items1 = [callback(sharedValue(4126).Text, obj1), ];
+  const items1 = [callback(sharedValue(4127).Text, obj1), ];
   const items2 = [tmp.progressForeground, animatedStyle];
-  items1[1] = callback(View, { style: tmp.progressBackground, children: callback(importDefault(3991).View, { style: items2 }) });
+  items1[1] = callback(View, { style: tmp.progressBackground, children: callback(importDefault(3992).View, { style: items2 }) });
   obj.children = items1;
   return callback2(View, obj);
 };

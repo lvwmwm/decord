@@ -1,9 +1,9 @@
-// Module ID: 16020
-// Function ID: 123678
+// Module ID: 16031
+// Function ID: 123846
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 10250, 1849, 6769, 1212, 2198, 1870, 10252, 686, 6828, 16015, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 10183, 1850, 5765, 1212, 2199, 1871, 10185, 686, 5828, 16026, 5078, 2]
 
-// Module 16020 (_isNativeReflectConstruct)
+// Module 16031 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
@@ -34,14 +34,14 @@ function dispatchWarningIfNeeded(rule) {
     const intl = require(1212) /* getSystemLocale */.intl;
     const _Date = Date;
     const date = new Date(startAtMs);
-    const stringResult = intl.string(importDefault(2198)["0JlDg0"]);
-    const items = [require(1870) /* _createForOfIteratorHelperLoose */.JS_DAY_TO_DAY_OF_WEEK[date.getDay(date)]];
-    const obj2 = require(10252) /* _createForOfIteratorHelperLoose */;
-    const formatDaysResult = require(10252) /* _createForOfIteratorHelperLoose */.formatDays(items);
+    const stringResult = intl.string(importDefault(2199)["0JlDg0"]);
+    const items = [require(1871) /* _createForOfIteratorHelperLoose */.JS_DAY_TO_DAY_OF_WEEK[date.getDay(date)]];
+    const obj2 = require(10185) /* _createForOfIteratorHelperLoose */;
+    const formatDaysResult = require(10185) /* _createForOfIteratorHelperLoose */.formatDays(items);
     const _HermesInternal = HermesInternal;
-    const obj3 = require(10252) /* _createForOfIteratorHelperLoose */;
-    const trimmed = "" + formatDaysResult + " " + require(10252) /* _createForOfIteratorHelperLoose */.getScheduleRuleDateRange(rule.rule).trim();
-    const str2 = "" + formatDaysResult + " " + require(10252) /* _createForOfIteratorHelperLoose */.getScheduleRuleDateRange(rule.rule);
+    const obj3 = require(10185) /* _createForOfIteratorHelperLoose */;
+    const trimmed = "" + formatDaysResult + " " + require(10185) /* _createForOfIteratorHelperLoose */.getScheduleRuleDateRange(rule.rule).trim();
+    const str2 = "" + formatDaysResult + " " + require(10185) /* _createForOfIteratorHelperLoose */.getScheduleRuleDateRange(rule.rule);
     const obj = { type: "RESTRICTED_HOURS_WARNING", title: stringResult, subtitle: trimmed };
     importDefault(686).dispatch(obj);
     const obj4 = importDefault(686);
@@ -54,7 +54,7 @@ function scheduleUpcomingWarning() {
     timeout = null;
   }
   const date = new Date();
-  let obj = require(6828) /* apexExperiment */;
+  let obj = require(5828) /* apexExperiment */;
   let tmp5 = null;
   if (obj.getIsFamilyCenterV3Enabled({ location: "RestrictedHoursManager" })) {
     tmp5 = null;
@@ -105,7 +105,7 @@ function checkAndUpdateModal() {
     let obj = importDefault(686);
     obj = { type: "RESTRICTED_HOURS_STATE_CHANGE", isInRestrictedHours: c11 };
     obj.dispatch(obj);
-    const obj3 = require(16015) /* closeRestrictedHoursModal */;
+    const obj3 = require(16026) /* closeRestrictedHoursModal */;
     if (c11) {
       const result = obj3.openRestrictedHoursModal();
     } else {

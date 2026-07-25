@@ -1,10 +1,10 @@
-// Module ID: 16489
-// Function ID: 128472
+// Module ID: 16500
+// Function ID: 128640
 // Name: FormTrialIntervalPicker
-// Dependencies: [31, 33, 12955, 1212, 14170, 4098, 8426, 1934, 2]
+// Dependencies: [31, 33, 12966, 1212, 14181, 4099, 8184, 1935, 2]
 // Exports: default
 
-// Module 16489 (FormTrialIntervalPicker)
+// Module 16500 (FormTrialIntervalPicker)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -21,8 +21,8 @@ export default function FormTrialIntervalPicker(interval) {
     let intl = interval(1212).intl;
     let stringResult = intl.string(interval(1212).t.WZG1BU);
   } else {
-    stringResult = interval(14170).formatPlanIntervalDuration(interval);
-    const obj2 = interval(14170);
+    stringResult = interval(14181).formatPlanIntervalDuration(interval);
+    const obj2 = interval(14181);
   }
   obj.label = stringResult;
   obj.onPress = function onPress() {
@@ -46,5 +46,5 @@ export default function FormTrialIntervalPicker(interval) {
     obj.openLazy(interval(outer1_2[7])(outer1_2[6], outer1_2.paths), "GuildRoleSubscriptionTrialIntervalSelect", obj);
   };
   obj.disabled = interval.disabled;
-  return jsx(importDefault(12955), {});
+  return jsx(importDefault(12966), {});
 };

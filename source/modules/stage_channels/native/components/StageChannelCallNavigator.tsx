@@ -1,13 +1,13 @@
-// Module ID: 10651
-// Function ID: 83038
+// Module ID: 10615
+// Function ID: 82725
 // Name: ModeratorViewOverlay
-// Dependencies: [57, 31, 27, 482, 33, 10652, 3991, 4542, 689, 10653, 10711, 10655, 10244, 10243, 9910, 10052, 4323, 10712, 10772, 3842, 10559, 10780, 10781, 10658, 10786, 10794, 10798, 10829, 10830, 4130, 10831, 10674, 2]
+// Dependencies: [57, 31, 27, 482, 33, 10616, 3992, 4543, 689, 10617, 10675, 10619, 10177, 10176, 9837, 9981, 4324, 10676, 10744, 3843, 10446, 10752, 10753, 10622, 10758, 10766, 10770, 10801, 10802, 4131, 10803, 10638, 2]
 // Exports: default
 
-// Module 10651 (ModeratorViewOverlay)
+// Module 10615 (ModeratorViewOverlay)
 import _slicedToArray from "_slicedToArray";
 import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet";
-import get_ActivityIndicator from "module_10829";
+import get_ActivityIndicator from "module_10801";
 import { ThemeTypes } from "sum";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -72,7 +72,7 @@ function JoinStageOverlay(channel) {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(3991);
+  let obj = first(3992);
   const fn = function s() {
     const obj = {};
     let num = 0;
@@ -82,7 +82,7 @@ function JoinStageOverlay(channel) {
     obj.opacity = first(outer1_2[7]).withSpring(num, outer1_11);
     return obj;
   };
-  obj = { withSpring: first(4542).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
+  obj = { withSpring: first(4543).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
   fn.__closure = obj;
   fn.__workletHash = 1929951426580;
   fn.__initData = closure_14;
@@ -101,16 +101,16 @@ function JoinStageOverlay(channel) {
   items[1] = obj1;
   items[2] = animatedStyle;
   obj.style = items;
-  obj.children = callback2(importDefault(10711), { channel: channel.channel });
-  return callback2(importDefault(3991).View, obj);
+  obj.children = callback2(importDefault(10675), { channel: channel.channel });
+  return callback2(importDefault(3992).View, obj);
 }
 function StagePromptWrapper(channel) {
   const obj = { children: callback2(StagePromptInner, { channel: channel.channel }) };
-  return callback2(require(10831) /* RootThemeContextProvider */.DisableCustomTheme, obj);
+  return callback2(require(10803) /* RootThemeContextProvider */.DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
   const tmp = _createForOfIteratorHelperLoose();
-  return callback2(require(10674) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: _createForOfIteratorHelperLoose().startStagePrompt });
+  return callback2(require(10638) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: _createForOfIteratorHelperLoose().startStagePrompt });
 }
 ({ StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);

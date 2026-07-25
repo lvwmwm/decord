@@ -1,10 +1,10 @@
-// Module ID: 6933
-// Function ID: 55318
+// Module ID: 5924
+// Function ID: 52624
 // Name: trackAppDirectoryProfileEmbed
-// Dependencies: [1906, 3947, 653, 675, 2]
+// Dependencies: [1907, 3948, 653, 675, 2]
 // Exports: trackAppDirectoryProfileEmbed
 
-// Module 6933 (trackAppDirectoryProfileEmbed)
+// Module 5924 (trackAppDirectoryProfileEmbed)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";

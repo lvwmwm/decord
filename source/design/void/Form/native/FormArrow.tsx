@@ -1,7 +1,7 @@
 // Module ID: 5179
-// Function ID: 45015
+// Function ID: 45020
 // Name: FormArrow
-// Dependencies: [31, 27, 33, 4130, 689, 4126, 1273, 5173, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4127, 1273, 5173, 2]
 // Exports: default
 
 // Module 5179 (FormArrow)
@@ -28,7 +28,7 @@ export default function FormArrow(arg0) {
   if (null != label) {
     let obj = { style: tmp.wrapper };
     obj = { maxFontSizeMultiplier: 1.5, variant: "text-md/medium", color: "text-muted", children: label };
-    const items = [callback(require(4126) /* Text */.Text, obj), ];
+    const items = [callback(require(4127) /* Text */.Text, obj), ];
     const obj1 = {};
     const items1 = [tmp.icon, style];
     obj1.style = items1;

@@ -1,7 +1,7 @@
 // Module ID: 5499
-// Function ID: 46909
+// Function ID: 46914
 // Name: ActionSheetCloseButton
-// Dependencies: [31, 33, 4660, 1212, 5119, 689, 2]
+// Dependencies: [31, 33, 4661, 1212, 5119, 689, 2]
 // Exports: ActionSheetCloseButton
 
 // Module 5499 (ActionSheetCloseButton)
@@ -31,5 +31,5 @@ export const ActionSheetCloseButton = function ActionSheetCloseButton(arg0) {
   }
   obj.color = ICON_STRONG;
   obj.children = jsx(require(5119) /* XSmallIcon */.XSmallIcon, {});
-  return jsx(require(4660) /* PressableBase */.PressableOpacity, {});
+  return jsx(require(4661) /* PressableBase */.PressableOpacity, {});
 };

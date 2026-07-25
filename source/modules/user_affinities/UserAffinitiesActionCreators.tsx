@@ -1,10 +1,10 @@
-// Module ID: 8860
-// Function ID: 69780
+// Module ID: 8748
+// Function ID: 69259
 // Name: fetchUserAffinitiesV2
-// Dependencies: [5590, 6901, 653, 686, 507, 2]
+// Dependencies: [5590, 5892, 653, 686, 507, 2]
 // Exports: fetchUserAffinitiesV2
 
-// Module 8860 (fetchUserAffinitiesV2)
+// Module 8748 (fetchUserAffinitiesV2)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";

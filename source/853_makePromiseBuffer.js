@@ -1,5 +1,5 @@
 // Module ID: 853
-// Function ID: 9581
+// Function ID: 9587
 // Name: makePromiseBuffer
 // Dependencies: [849]
 

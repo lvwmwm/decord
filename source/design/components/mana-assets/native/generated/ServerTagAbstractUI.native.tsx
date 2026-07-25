@@ -1,10 +1,10 @@
-// Module ID: 6498
-// Function ID: 50712
+// Module ID: 7418
+// Function ID: 60362
 // Name: ServerTagAbstractUI
-// Dependencies: [33, 5085, 6499, 2]
+// Dependencies: [33, 5085, 7419, 2]
 // Exports: ServerTagAbstractUI
 
-// Module 6498 (ServerTagAbstractUI)
+// Module 7418 (ServerTagAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerTagAbstractUI.native.tsx");
@@ -27,7 +27,7 @@ export const ServerTagAbstractUI = function ServerTagAbstractUI(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6499) };
+  obj = { uri: importDefault(7419) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

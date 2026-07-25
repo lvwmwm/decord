@@ -1,10 +1,10 @@
-// Module ID: 15585
-// Function ID: 120176
+// Module ID: 15595
+// Function ID: 120304
 // Name: _isNativeReflectConstruct
-// Dependencies: [830, 6, 7, 15, 17, 18, 31, 1348, 15544, 33, 4130, 689, 1212, 7685, 7653, 7654, 7636, 3842, 566, 44, 2]
+// Dependencies: [830, 6, 7, 15, 17, 18, 31, 1348, 15554, 33, 4131, 689, 1212, 7627, 7595, 7596, 7575, 3843, 566, 44, 2]
 // Exports: default
 
-// Module 15585 (_isNativeReflectConstruct)
+// Module 15595 (_isNativeReflectConstruct)
 import _toArray from "_toArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

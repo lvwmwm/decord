@@ -1,10 +1,10 @@
-// Module ID: 15564
-// Function ID: 119969
+// Module ID: 15574
+// Function ID: 120097
 // Name: getHasAutomodAccess
-// Dependencies: [1838, 3758, 653, 566, 2]
+// Dependencies: [1838, 3759, 653, 566, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUserProfileRuleEnabled
 
-// Module 15564 (getHasAutomodAccess)
+// Module 15574 (getHasAutomodAccess)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

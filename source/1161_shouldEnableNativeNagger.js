@@ -1,5 +1,5 @@
 // Module ID: 1161
-// Function ID: 13206
+// Function ID: 13212
 // Name: shouldEnableNativeNagger
 // Dependencies: [27, 978]
 // Exports: shouldEnableNativeNagger

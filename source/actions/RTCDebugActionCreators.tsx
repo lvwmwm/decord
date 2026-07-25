@@ -1,10 +1,10 @@
-// Module ID: 10796
-// Function ID: 83861
+// Module ID: 10768
+// Function ID: 83603
 // Name: open
-// Dependencies: [10795, 686, 8886, 3741, 2]
+// Dependencies: [10767, 686, 8774, 3742, 2]
 // Exports: chooseReplayPath, close, open, openReplay, setSection, setShouldRecordNextConnection, setSimulcastDebugOverride
 
-// Module 10796 (open)
+// Module 10768 (open)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("trackVoiceAndVideoDebuggingSettingsUpdated").fileFinishedImporting("actions/RTCDebugActionCreators.tsx");
@@ -27,7 +27,7 @@ export const setSection = function setSection(section) {
   obj.dispatch(obj);
 };
 export const setShouldRecordNextConnection = function setShouldRecordNextConnection(value) {
-  importDefault(8886)("connection_replay_log_enabled", value, _isNativeReflectConstruct.shouldRecordNextConnection());
+  importDefault(8774)("connection_replay_log_enabled", value, _isNativeReflectConstruct.shouldRecordNextConnection());
   let obj = importDefault(686);
   obj = { type: "RTC_DEBUG_SET_RECORDING_FLAG", value };
   obj.dispatch(obj);
@@ -38,7 +38,7 @@ export const setSimulcastDebugOverride = function setSimulcastDebugOverride(user
   obj.dispatch(obj);
 };
 export const chooseReplayPath = function chooseReplayPath() {
-  const fileManager = importDefault(3741).fileManager;
+  const fileManager = importDefault(3742).fileManager;
   const items = [{ name: "All Files", extensions: ["*"] }];
   fileManager.showOpenDialog({ filters: items }).then((arg0) => {
     let str = "";

@@ -1,10 +1,10 @@
-// Module ID: 9671
-// Function ID: 75238
+// Module ID: 9593
+// Function ID: 74828
 // Name: CATEGORY_ICON_SIZE
-// Dependencies: [57, 31, 27, 1838, 9639, 653, 1314, 33, 4130, 689, 3803, 4466, 4799, 675, 4660, 1273, 1392, 5513, 9651, 4099, 4100, 9455, 9456, 9280, 1212, 9672, 2]
+// Dependencies: [57, 31, 27, 1838, 9561, 653, 1314, 33, 4131, 689, 3804, 4467, 4800, 675, 4661, 1273, 1392, 5513, 9573, 4100, 4101, 9375, 9376, 9173, 1212, 9594, 2]
 // Exports: default
 
-// Module 9671 (CATEGORY_ICON_SIZE)
+// Module 9593 (CATEGORY_ICON_SIZE)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -202,10 +202,10 @@ export default function _default(categories) {
   }, items7);
   const callback5 = first.useCallback((arg0, index) => outer1_14(outer1_17, { category: categories[index], index, isActive: index === categoryIndex, onPressCategory: callback2 }), items8);
   let obj = { portalHostName: "expression-footer", style: categories.style };
-  const tmp17 = categoryIndex(9455)();
+  const tmp17 = categoryIndex(9375)();
   const tmp18 = closure_15;
   obj = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp17, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
-  const items9 = [callback(categoryIndex(9280), obj), ];
+  const items9 = [callback(categoryIndex(9173), obj), ];
   let tmp20 = null != first && first1;
   if (tmp20) {
     obj = { onPress: callback3, accessibilityRole: "button" };
@@ -215,12 +215,12 @@ export default function _default(categories) {
     const items10 = [, ];
     ({ item: arr11[0], fadedItem: arr11[1] } = tmp);
     obj1.style = items10;
-    const obj2 = { style: tmp.guildIcon, source: categoryIndex(9672) };
+    const obj2 = { style: tmp.guildIcon, source: categoryIndex(9594) };
     obj1.children = callback(categories(1273).Icon, obj2);
     obj.children = callback(closure_5, obj1);
-    tmp20 = callback(categories(4660).PressableOpacity, obj);
+    tmp20 = callback(categories(4661).PressableOpacity, obj);
   }
   items9[1] = tmp20;
   obj.children = items9;
-  return tmp18(categoryIndex(9456), obj);
+  return tmp18(categoryIndex(9376), obj);
 };

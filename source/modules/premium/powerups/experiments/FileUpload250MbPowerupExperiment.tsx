@@ -1,10 +1,10 @@
-// Module ID: 4058
-// Function ID: 33826
+// Module ID: 4059
+// Function ID: 33837
 // Name: items
-// Dependencies: [4042, 2]
+// Dependencies: [4043, 2]
 // Exports: getFileUpload250MbPowerupEnabled, getFileUpload250MbPowerupRollbackEnabled, useFileUpload250MbPowerupEnabled, useFileUpload250MbPowerupRollbackEnabled
 
-// Module 4058 (items)
+// Module 4059 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-03_file_upload_250_mb_powerup", label: "File Upload 250MB Powerup", defaultConfig: { enabled: false, rollbackEnabled: false } };

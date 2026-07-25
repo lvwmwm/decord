@@ -1,10 +1,10 @@
-// Module ID: 5729
-// Function ID: 49250
+// Module ID: 9600
+// Function ID: 74899
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getGameMentionsExperiment, useGameMentionsExperiment
 
-// Module 5729 (apexExperiment)
+// Module 9600 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-07-game-mentions-v2-mobile", kind: "user", defaultConfig: { enabled: false, showNewTag: false, combineMentionAutocomplete: false }, variations: { [0]: { enabled: false, showNewTag: false, combineMentionAutocomplete: false }, [1]: { enabled: true, showNewTag: true, combineMentionAutocomplete: false }, [2]: { enabled: true, showNewTag: false, combineMentionAutocomplete: false }, [3]: { enabled: true, showNewTag: false, combineMentionAutocomplete: true } } };

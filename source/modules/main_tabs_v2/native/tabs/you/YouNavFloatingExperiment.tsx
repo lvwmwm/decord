@@ -1,10 +1,10 @@
-// Module ID: 15520
-// Function ID: 119462
+// Module ID: 15530
+// Function ID: 119590
 // Name: isYouNavFloating
 // Dependencies: [1428, 2]
 // Exports: isYouNavFloating
 
-// Module 15520 (isYouNavFloating)
+// Module 15530 (isYouNavFloating)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-04-you-nav-floating", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

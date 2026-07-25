@@ -1,9 +1,9 @@
-// Module ID: 4954
-// Function ID: 42538
+// Module ID: 4955
+// Function ID: 42550
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1917, 1910, 1838, 1849, 4146, 4314, 3763, 1356, 22, 4955, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1918, 1911, 1838, 1850, 4147, 4315, 3764, 1356, 22, 4956, 566, 686, 2]
 
-// Module 4954 (_isNativeReflectConstruct)
+// Module 4955 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser";
@@ -107,11 +107,11 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function isSpeaker(id, id2) {
   voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(id2, id);
-  const audienceRequestToSpeakState = require(4314) /* getAudienceRequestToSpeakState */.getAudienceRequestToSpeakState(voiceStateForChannel);
-  return audienceRequestToSpeakState === require(4314) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
+  const audienceRequestToSpeakState = require(4315) /* getAudienceRequestToSpeakState */.getAudienceRequestToSpeakState(voiceStateForChannel);
+  return audienceRequestToSpeakState === require(4315) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
 }
 function isModerator(id, id2, channel) {
-  let obj = importAll(3763);
+  let obj = importAll(3764);
   obj = { permission: require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, user: id, context: id2, overwrites: channel.permissionOverwrites, roles: unsafeMutableRoles.getUnsafeMutableRoles(id2.id) };
   return obj.can(obj);
 }

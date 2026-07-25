@@ -1,7 +1,7 @@
 // Module ID: 3525
-// Function ID: 27191
+// Function ID: 27181
 // Name: _typeof
-// Dependencies: [3517, 3518, 3515]
+// Dependencies: [3518, 3519, 3516]
 
 // Module 3525 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const StandAloneMonthParser = ((Parser) => {
-  class StandAloneMonthParser {
+export const MonthParser = ((Parser) => {
+  class MonthParser {
     constructor() {
-      if (this instanceof StandAloneMonthParser) {
+      if (this instanceof MonthParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -157,12 +157,12 @@ export const StandAloneMonthParser = ((Parser) => {
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
         tmp16 = outer1_6(applyResult);
-        str2 = "priority";
-        num2 = 110;
-        tmp17 = outer1_8(applyResult, "priority", 110);
+        str2 = "incompatibleTokens";
+        tmp17 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "L", "w", "I", "D", "i", "e", "c", "t", "T"]);
         tmp18 = outer1_6(applyResult);
-        str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "M", "w", "I", "D", "i", "e", "c", "t", "T"]);
+        str3 = "priority";
+        num2 = 110;
+        tmp19 = outer1_8(applyResult, "priority", 110);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +177,9 @@ export const StandAloneMonthParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class StandAloneMonthParser {
+    class MonthParser {
       constructor() {
-        if (this instanceof StandAloneMonthParser) {
+        if (this instanceof MonthParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -200,12 +200,12 @@ export const StandAloneMonthParser = ((Parser) => {
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
-          str2 = "priority";
-          num2 = 110;
-          tmp17 = outer1_8(applyResult, "priority", 110);
+          str2 = "incompatibleTokens";
+          tmp17 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "L", "w", "I", "D", "i", "e", "c", "t", "T"]);
           tmp18 = outer1_6(applyResult);
-          str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "M", "w", "I", "D", "i", "e", "c", "t", "T"]);
+          str3 = "priority";
+          num2 = 110;
+          tmp19 = outer1_8(applyResult, "priority", 110);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +224,12 @@ export const StandAloneMonthParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: StandAloneMonthParser, writable: true, configurable: true };
-  StandAloneMonthParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: MonthParser, writable: true, configurable: true };
+  MonthParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class StandAloneMonthParser {
+    class MonthParser {
       constructor() {
-        if (this instanceof StandAloneMonthParser) {
+        if (this instanceof MonthParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -250,12 +250,12 @@ export const StandAloneMonthParser = ((Parser) => {
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
-          str2 = "priority";
-          num2 = 110;
-          tmp17 = outer1_8(applyResult, "priority", 110);
+          str2 = "incompatibleTokens";
+          tmp17 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "L", "w", "I", "D", "i", "e", "c", "t", "T"]);
           tmp18 = outer1_6(applyResult);
-          str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "Q", "M", "w", "I", "D", "i", "e", "c", "t", "T"]);
+          str3 = "priority";
+          num2 = 110;
+          tmp19 = outer1_8(applyResult, "priority", 110);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,28 +269,28 @@ export const StandAloneMonthParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(StandAloneMonthParser, Parser);
+    _setPrototypeOf(MonthParser, Parser);
   }
-  let closure_0 = _createSuper(StandAloneMonthParser);
+  let closure_0 = _createSuper(MonthParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
       function valueCallback(arg0) {
         return arg0 - 1;
       }
-      if ("L" === arg1) {
-        return callback(StandAloneMonthParser[0]).mapValue(callback(StandAloneMonthParser[0]).parseNumericPattern(callback(StandAloneMonthParser[1]).numericPatterns.month, arg0), valueCallback);
-      } else if ("LL" === arg1) {
-        return callback(StandAloneMonthParser[0]).mapValue(callback(StandAloneMonthParser[0]).parseNDigits(2, arg0), valueCallback);
-      } else if ("Lo" === arg1) {
+      if ("M" === arg1) {
+        return callback(MonthParser[0]).mapValue(callback(MonthParser[0]).parseNumericPattern(callback(MonthParser[1]).numericPatterns.month, arg0), valueCallback);
+      } else if ("MM" === arg1) {
+        return callback(MonthParser[0]).mapValue(callback(MonthParser[0]).parseNDigits(2, arg0), valueCallback);
+      } else if ("Mo" === arg1) {
         const obj = { unit: "month" };
-        return callback(StandAloneMonthParser[0]).mapValue(ordinalNumber.ordinalNumber(arg0, obj), valueCallback);
-      } else if ("LLL" === arg1) {
-        return ordinalNumber.month(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.month(arg0, { width: "narrow", context: "standalone" });
-      } else if ("LLLLL" === arg1) {
-        return ordinalNumber.month(arg0, { width: "narrow", context: "standalone" });
+        return callback(MonthParser[0]).mapValue(ordinalNumber.ordinalNumber(arg0, obj), valueCallback);
+      } else if ("MMM" === arg1) {
+        return ordinalNumber.month(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.month(arg0, { width: "narrow", context: "formatting" });
+      } else if ("MMMMM" === arg1) {
+        return ordinalNumber.month(arg0, { width: "narrow", context: "formatting" });
       } else {
-        return ordinalNumber.month(arg0, { width: "wide", context: "standalone" }) || ordinalNumber.month(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.month(arg0, { width: "narrow", context: "standalone" });
+        return ordinalNumber.month(arg0, { width: "wide", context: "formatting" }) || ordinalNumber.month(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.month(arg0, { width: "narrow", context: "formatting" });
       }
     }
   };
@@ -314,6 +314,6 @@ export const StandAloneMonthParser = ((Parser) => {
       return setUTCMonth;
     }
   };
-  _defineProperties(StandAloneMonthParser.prototype, items);
-  return StandAloneMonthParser;
+  _defineProperties(MonthParser.prototype, items);
+  return MonthParser;
 })(require("_defineProperties").Parser);

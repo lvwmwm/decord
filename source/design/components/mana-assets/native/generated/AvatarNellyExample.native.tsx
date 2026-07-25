@@ -1,10 +1,10 @@
-// Module ID: 5884
-// Function ID: 49791
+// Module ID: 6804
+// Function ID: 59441
 // Name: AvatarNellyExample
-// Dependencies: [33, 5085, 5885, 2]
+// Dependencies: [33, 5085, 6805, 2]
 // Exports: AvatarNellyExample
 
-// Module 5884 (AvatarNellyExample)
+// Module 6804 (AvatarNellyExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarNellyExample.native.tsx");
@@ -27,7 +27,7 @@ export const AvatarNellyExample = function AvatarNellyExample(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5885) };
+  obj = { uri: importDefault(6805) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

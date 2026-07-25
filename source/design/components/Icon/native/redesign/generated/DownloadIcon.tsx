@@ -1,10 +1,10 @@
-// Module ID: 4080
-// Function ID: 33895
+// Module ID: 4081
+// Function ID: 33906
 // Name: DownloadIcon
-// Dependencies: [31, 33, 689, 3833, 4081, 2]
+// Dependencies: [31, 33, 689, 3834, 4082, 2]
 // Exports: DownloadIcon
 
-// Module 4080 (DownloadIcon)
+// Module 4081 (DownloadIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const DownloadIcon = function DownloadIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4081) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4082) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4081) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4082) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

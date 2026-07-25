@@ -1,10 +1,10 @@
-// Module ID: 11461
-// Function ID: 89182
+// Module ID: 11424
+// Function ID: 88841
 // Name: UnknownGameIcon
-// Dependencies: [31, 33, 689, 3833, 7902, 2]
+// Dependencies: [31, 33, 689, 3834, 7849, 2]
 // Exports: UnknownGameIcon
 
-// Module 11461 (UnknownGameIcon)
+// Module 11424 (UnknownGameIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const UnknownGameIcon = function UnknownGameIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(7902) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(7849) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7902) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(7849) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

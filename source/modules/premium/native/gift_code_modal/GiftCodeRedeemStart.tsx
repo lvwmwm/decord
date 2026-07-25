@@ -1,10 +1,10 @@
-// Module ID: 8243
-// Function ID: 65053
+// Module ID: 7976
+// Function ID: 63559
 // Name: getGiftCodeHeaderText
-// Dependencies: [31, 27, 8237, 1849, 4175, 653, 8244, 33, 4366, 5609, 1212, 4329, 1876, 4130, 689, 1456, 566, 3969, 8245, 8246, 5468, 8250, 6786, 8251, 5465, 8252, 5462, 5482, 675, 7539, 5733, 5121, 4126, 8253, 8254, 8255, 5472, 8259, 1273, 8278, 8789, 9837, 12284, 4543, 8242, 4337, 8689, 8241, 2]
+// Dependencies: [31, 27, 7970, 1850, 4176, 653, 7977, 33, 4367, 5609, 1212, 4330, 1877, 4131, 689, 1456, 566, 3970, 7978, 7979, 5468, 7983, 5782, 7984, 5465, 7985, 5462, 5482, 675, 6631, 7986, 5121, 4127, 7988, 7989, 7990, 5472, 7994, 1273, 8013, 8677, 9761, 12260, 4544, 7975, 4338, 8577, 7974, 2]
 // Exports: default
 
-// Module 8243 (getGiftCodeHeaderText)
+// Module 7976 (getGiftCodeHeaderText)
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "QUICK_SWITCHER";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -37,8 +37,8 @@ function getGiftCodeHeaderText(isSubscription) {
       if (null != sku) {
         name = sku.name;
       }
-      let subscriptionGiftStartHeaderText = sender(4366).getSubscriptionGiftStartHeaderText(subscriptionPlan, sender, name);
-      const obj24 = sender(4366);
+      let subscriptionGiftStartHeaderText = sender(4367).getSubscriptionGiftStartHeaderText(subscriptionPlan, sender, name);
+      const obj24 = sender(4367);
     }
     return subscriptionGiftStartHeaderText;
   }
@@ -48,19 +48,19 @@ function getGiftCodeHeaderText(isSubscription) {
     subscriptionGiftStartHeaderText = intl.string(tmp2(1212).t["Bn1J+a"]);
   } else {
     obj = { type: itemType, isBundle, sender };
-    const match = tmp2(4329).match(obj);
+    const match = tmp2(4330).match(obj);
     obj = { isBundle: true };
-    const P = tmp2(4329).P;
-    obj.sender = P.not(tmp2(4329).P.nullish);
-    const str = tmp2(4329);
-    const obj1 = { isBundle: true, sender: tmp2(4329).P.nullish };
+    const P = tmp2(4330).P;
+    obj.sender = P.not(tmp2(4330).P.nullish);
+    const str = tmp2(4330);
+    const obj1 = { isBundle: true, sender: tmp2(4330).P.nullish };
     const withResult = match.with(obj, () => {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.JUV1tL, { sender });
     });
-    const obj2 = { type: tmp2(1876).CollectiblesItemType.AVATAR_DECORATION };
-    const P2 = tmp2(4329).P;
-    obj2.sender = P2.not(tmp2(4329).P.nullish);
+    const obj2 = { type: tmp2(1877).CollectiblesItemType.AVATAR_DECORATION };
+    const P2 = tmp2(4330).P;
+    obj2.sender = P2.not(tmp2(4330).P.nullish);
     const withResult1 = match.with(obj, () => {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.JUV1tL, { sender });
@@ -68,9 +68,9 @@ function getGiftCodeHeaderText(isSubscription) {
       const intl = sender(outer1_2[10]).intl;
       return intl.string(sender(outer1_2[10]).t.iJ8823);
     });
-    const obj3 = { type: tmp2(1876).CollectiblesItemType.PROFILE_EFFECT };
-    const P3 = tmp2(4329).P;
-    obj3.sender = P3.not(tmp2(4329).P.nullish);
+    const obj3 = { type: tmp2(1877).CollectiblesItemType.PROFILE_EFFECT };
+    const P3 = tmp2(4330).P;
+    obj3.sender = P3.not(tmp2(4330).P.nullish);
     const withResult2 = match.with(obj, () => {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.JUV1tL, { sender });
@@ -81,9 +81,9 @@ function getGiftCodeHeaderText(isSubscription) {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.SKduyh, { sender });
     });
-    const obj4 = { type: tmp2(1876).CollectiblesItemType.NAMEPLATE };
-    const P4 = tmp2(4329).P;
-    obj4.sender = P4.not(tmp2(4329).P.nullish);
+    const obj4 = { type: tmp2(1877).CollectiblesItemType.NAMEPLATE };
+    const P4 = tmp2(4330).P;
+    obj4.sender = P4.not(tmp2(4330).P.nullish);
     const withResult3 = match.with(obj, () => {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.JUV1tL, { sender });
@@ -97,9 +97,9 @@ function getGiftCodeHeaderText(isSubscription) {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t["1w42T2"], { sender });
     });
-    const obj5 = { type: tmp2(1876).CollectiblesItemType.PROFILE_FRAME };
-    const P5 = tmp2(4329).P;
-    obj5.sender = P5.not(tmp2(4329).P.nullish);
+    const obj5 = { type: tmp2(1877).CollectiblesItemType.PROFILE_FRAME };
+    const P5 = tmp2(4330).P;
+    obj5.sender = P5.not(tmp2(4330).P.nullish);
     const withResult4 = match.with(obj, () => {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.JUV1tL, { sender });
@@ -116,7 +116,7 @@ function getGiftCodeHeaderText(isSubscription) {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.vFiQlU, { sender });
     });
-    const obj6 = { type: tmp2(1876).CollectiblesItemType.AVATAR_DECORATION, sender: tmp2(4329).P.nullish };
+    const obj6 = { type: tmp2(1877).CollectiblesItemType.AVATAR_DECORATION, sender: tmp2(4330).P.nullish };
     const withResult5 = match.with(obj, () => {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.JUV1tL, { sender });
@@ -136,7 +136,7 @@ function getGiftCodeHeaderText(isSubscription) {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t["UH/EQL"], { sender });
     });
-    const obj7 = { type: tmp2(1876).CollectiblesItemType.PROFILE_EFFECT, sender: tmp2(4329).P.nullish };
+    const obj7 = { type: tmp2(1877).CollectiblesItemType.PROFILE_EFFECT, sender: tmp2(4330).P.nullish };
     const withResult6 = match.with(obj, () => {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.JUV1tL, { sender });
@@ -159,7 +159,7 @@ function getGiftCodeHeaderText(isSubscription) {
       const intl = sender(outer1_2[10]).intl;
       return intl.string(sender(outer1_2[10]).t["2ZO6CC"]);
     });
-    const obj8 = { type: tmp2(1876).CollectiblesItemType.NAMEPLATE, sender: tmp2(4329).P.nullish };
+    const obj8 = { type: tmp2(1877).CollectiblesItemType.NAMEPLATE, sender: tmp2(4330).P.nullish };
     const withResult7 = match.with(obj, () => {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.JUV1tL, { sender });
@@ -185,7 +185,7 @@ function getGiftCodeHeaderText(isSubscription) {
       const intl = sender(outer1_2[10]).intl;
       return intl.string(sender(outer1_2[10]).t["2NxdjX"]);
     });
-    const obj9 = { type: tmp2(1876).CollectiblesItemType.PROFILE_FRAME, sender: tmp2(4329).P.nullish };
+    const obj9 = { type: tmp2(1877).CollectiblesItemType.PROFILE_FRAME, sender: tmp2(4330).P.nullish };
     const withResult8 = match.with(obj, () => {
       const intl = sender(outer1_2[10]).intl;
       return intl.formatToPlainString(sender(outer1_2[10]).t.JUV1tL, { sender });

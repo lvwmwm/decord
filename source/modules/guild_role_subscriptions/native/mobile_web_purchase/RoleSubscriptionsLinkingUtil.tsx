@@ -1,9 +1,9 @@
-// Module ID: 5691
-// Function ID: 49000
+// Module ID: 11748
+// Function ID: 91248
 // Name: performRoleSubscriptionUpsellRedirect
-// Dependencies: [5, 653, 1355, 5692, 1934, 3, 2]
+// Dependencies: [5, 653, 1355, 11749, 1935, 3, 2]
 
-// Module 5691 (performRoleSubscriptionUpsellRedirect)
+// Module 11748 (performRoleSubscriptionUpsellRedirect)
 import timestamp from "timestamp";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
@@ -14,23 +14,28 @@ const require = arg1;
 function performRoleSubscriptionUpsellRedirect(guildId) {
   return _performRoleSubscriptionUpsellRedirect(...arguments);
 }
-async function _performRoleSubscriptionUpsellRedirect(arg0, arg1) {
-  const CHANNELResult = outer2_5.CHANNEL(arg0, outer2_6.ROLE_SUBSCRIPTIONS);
-  yield yield outer2_0(outer2_2[4])(outer2_2[3], outer2_2.paths).default.redirectWithHandoffToken(CHANNELResult, { forceExternalBrowser: true });
-  return true;
+function _performRoleSubscriptionUpsellRedirect() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
-async function _performRoleSubscriptionTeamCreationRedirect() {
-  yield outer2_11(outer2_4.DEVELOPER_PORTAL_TEAMS);
+function _performRoleSubscriptionTeamCreationRedirect() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
-async function _performRoleSubscriptionEditPayoutRedirect(arg0, arg1) {
-  yield outer2_11(outer2_4.DEVELOPER_PORTAL_EDIT_PAYOUTS(arg0));
+function _performRoleSubscriptionEditPayoutRedirect() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
 function performDeveloperPortalRedirectWithTokenHandoff() {
   return _performDeveloperPortalRedirectWithTokenHandoff(...arguments);
 }
-async function _performDeveloperPortalRedirectWithTokenHandoff(arg0, arg1) {
-  yield yield outer2_0(outer2_2[4])(outer2_2[3], outer2_2.paths).default.redirectDeveloperPortalWithHandoffToken(arg0);
-  return true;
+function _performDeveloperPortalRedirectWithTokenHandoff() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
 ({ RelativeMarketingURLs: closure_4, Routes: closure_5 } = ME);
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/mobile_web_purchase/RoleSubscriptionsLinkingUtil.tsx");

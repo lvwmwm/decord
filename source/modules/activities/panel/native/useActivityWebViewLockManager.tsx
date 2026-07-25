@@ -1,10 +1,10 @@
-// Module ID: 15742
-// Function ID: 121344
+// Module ID: 15753
+// Function ID: 121513
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 3991, 4476, 2]
+// Dependencies: [57, 31, 3992, 4477, 2]
 // Exports: default, useLockedWebView
 
-// Module 15742 (_createForOfIteratorHelperLoose)
+// Module 15753 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -88,7 +88,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let result = require("module_3991").fileFinishedImporting("modules/activities/panel/native/useActivityWebViewLockManager.tsx");
+let result = require("module_3992").fileFinishedImporting("modules/activities/panel/native/useActivityWebViewLockManager.tsx");
 
 export default function useActivityWebViewLockManager() {
   return React.useState(() => {

@@ -1,25 +1,23 @@
 // Module ID: 4760
-// Function ID: 41328
+// Function ID: 41337
 // Name: getStringFromDataView
-// Dependencies: [4745]
+// Dependencies: [4746]
 
 // Module 4760 (getStringFromDataView)
 const require = arg1;
 const dependencyMap = arg6;
-let c2 = 0;
-let c3 = "<?xpacket begin";
+let c2 = 6;
+let closure_3 = ["GIF87a", "GIF89a"];
 arg5.default = {
-  isXMLFile(dataView) {
-    let tmp2 = !tmp;
+  isGifFile(dataView) {
+    let hasItem = !tmp;
     if (!!dataView) {
-      tmp2 = require(4745) /* getStringFromDataView */.getStringFromDataView(dataView, c2, length.length) === length;
-      const obj = require(4745) /* getStringFromDataView */;
+      hasItem = closure_3.includes(require(4746) /* getStringFromDataView */.getStringFromDataView(dataView, 0, c2));
+      const obj = require(4746) /* getStringFromDataView */;
     }
-    return tmp2;
+    return hasItem;
   },
-  findOffsets(byteLength) {
-    const xmpChunks = [];
-    xmpChunks.push({ dataOffset: c2, length: byteLength.byteLength });
-    return { xmpChunks };
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
   }
 };

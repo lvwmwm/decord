@@ -1,10 +1,10 @@
-// Module ID: 10299
-// Function ID: 79533
+// Module ID: 10232
+// Function ID: 79186
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 664, 6679, 3712, 4587, 2]
+// Dependencies: [57, 31, 664, 6181, 3713, 4588, 2]
 // Exports: default
 
-// Module 10299 (_createForOfIteratorHelperLoose)
+// Module 10232 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -101,7 +101,7 @@ let result = require("set").fileFinishedImporting("modules/markup/useFormattedTi
 
 export default function useFormattedTimestamp(format) {
   const _require = format;
-  const forceUpdate = _require(6679).useForceUpdate();
+  const forceUpdate = _require(6181).useForceUpdate();
   const items = [forceUpdate, , ];
   ({ format: arr[1], parsed: arr[2] } = format);
   const effect = React.useEffect(() => {
@@ -131,7 +131,7 @@ export default function useFormattedTimestamp(format) {
     }
   }, items);
   if ("R" === format.format) {
-    const TIMESTAMP_FORMATS = _require(4587).TIMESTAMP_FORMATS;
+    const TIMESTAMP_FORMATS = _require(4588).TIMESTAMP_FORMATS;
     let formatted = TIMESTAMP_FORMATS.R(format.parsed);
   } else {
     formatted = format.formatted;

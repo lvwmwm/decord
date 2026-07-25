@@ -1,10 +1,10 @@
-// Module ID: 9805
-// Function ID: 76190
+// Module ID: 9729
+// Function ID: 75785
 // Name: CancelButton
-// Dependencies: [57, 830, 31, 27, 4122, 8244, 653, 33, 4130, 689, 1876, 9804, 5094, 5119, 1212, 3991, 4542, 4131, 4099, 6784, 9806, 3834, 4554, 8708, 9808, 566, 9809, 9810, 8764, 8347, 8781, 8251, 5121, 9818, 8259, 8270, 8278, 8789, 9837, 4126, 6786, 4543, 2]
+// Dependencies: [57, 830, 31, 27, 4123, 7977, 653, 33, 4131, 689, 1877, 9728, 5094, 5119, 1212, 3992, 4543, 4132, 4100, 5780, 9730, 3835, 4555, 8596, 9732, 566, 9733, 9734, 8652, 8105, 8669, 7984, 5121, 9742, 7994, 8005, 8013, 8677, 9761, 4127, 5782, 4544, 2]
 // Exports: default
 
-// Module 9805 (CancelButton)
+// Module 9729 (CancelButton)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ItemsSortingHat from "ItemsSortingHat";
@@ -121,22 +121,22 @@ let closure_17 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   obj.body = { flexGrow: 1, flexDirection: "column", justifyContent: "center" };
   const obj2 = { flexDirection: "row", justifyContent: "center", alignItems: "center" };
   let num = 0;
-  if (arg0 === require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
     num = 1;
   }
   obj2.flex = num;
   let str = 0;
-  if (arg0 === require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
     str = "20%";
   }
   obj2.marginTop = str;
   let PX_32;
-  if (arg0 === require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
+  if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
     PX_32 = importDefault(689).space.PX_32;
   }
   obj2.marginHorizontal = PX_32;
   if (flag) {
-    if (arg0 === require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+    if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
       const obj3 = { shadowColor: importDefault(689).unsafe_rawColors.PRIMARY_630, shadowOffset: { width: 0, height: 0 }, shadowOpacity: 1, shadowRadius: 60, elevation: 24 };
       let obj8 = obj3;
     }
@@ -145,7 +145,7 @@ let closure_17 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
     obj.previewBundle = { flex: 1, justifyContent: "flex-start", alignItems: "center", minHeight: 250 };
     const obj4 = { paddingTop: importDefault(689).space.PX_24, minHeight: null, flexDirection: "column", alignItems: "center", justifyContent: "flex-start" };
     let str2;
-    if (arg0 === require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+    if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
       str2 = "32%";
     }
     obj4.minHeight = str2;
@@ -198,15 +198,15 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   }
   let _require;
   let callback;
-  let obj = _require(8708);
+  let obj = _require(8596);
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(9806)(product.styles).backgroundColors;
+  const backgroundColors = callback(9730)(product.styles).backgroundColors;
   let tertiary;
   if (null != backgroundColors) {
     tertiary = backgroundColors.tertiary;
   }
   const tmp3 = callback3(product.type, null != tertiary);
-  let obj2 = _require(3834);
+  let obj2 = _require(3835);
   let token = obj2.useToken(callback(689).colors.INTERACTIVE_TEXT_ACTIVE);
   _require = React.useRef(closure_21);
   callback = React.useCallback(() => {
@@ -239,15 +239,15 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       outer1_0.current = [];
     };
   }, items);
-  let obj3 = _require(9808);
+  let obj3 = _require(9732);
   const avatarDecorationPreviewSizes = obj3.useAvatarDecorationPreviewSizes();
   ({ avatarSize, avatarDecorationSize } = avatarDecorationPreviewSizes);
   let obj4 = _require(566);
   let items1 = [_isNativeReflectConstruct];
   const stateFromStores = obj4.useStateFromStores(items1, () => outer1_9.useReducedMotion);
-  let tmp9 = product.type === _require(1876).CollectiblesItemType.PROFILE_EFFECT;
+  let tmp9 = product.type === _require(1877).CollectiblesItemType.PROFILE_EFFECT;
   if (!tmp9) {
-    tmp9 = product.type === _require(1876).CollectiblesItemType.PROFILE_FRAME;
+    tmp9 = product.type === _require(1877).CollectiblesItemType.PROFILE_FRAME;
   }
   ({ previewViewStyle, textViewStyle, curtainViewStyle } = (function useAnimationStyles(stateFromStores, isProfilePreview) {
     let closure_1 = isProfilePreview;
@@ -321,26 +321,26 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     obj.curtainViewStyle = obj8.useAnimatedStyle(fn3);
     return obj;
   })(stateFromStores, tmp9));
-  let obj5 = _require(9809);
+  let obj5 = _require(9733);
   const category = obj5.useFetchCollectiblesProductCategory(product.skuId).category;
   if (null != category) {
     const mobileBgUrl = category.mobileBgUrl;
   }
-  let obj6 = _require(9810);
+  let obj6 = _require(9734);
   handleUseNow = obj6.useHandleUseNow({ product, onSuccess });
   const isApplying = handleUseNow.isApplying;
   ({ handleUseNow, canUseNow, handleEditProfile } = handleUseNow);
   const avatarSource = currentUser.getAvatarSource(undefined, false, avatarSize);
-  let obj7 = _require(8764);
+  let obj7 = _require(8652);
   const effect1 = React.useEffect(() => {
     ref(outer1_2[29]).lockOrientation(outer1_10.PORTRAIT);
     return () => {
       const result = callback(outer2_2[29]).restoreDefaultOrientation();
     };
   }, []);
-  let obj8 = _require(8781);
+  let obj8 = _require(8669);
   const previewCollectibleProduct = obj8.usePreviewCollectibleProduct(product, true);
-  let obj9 = _require(8251);
+  let obj9 = _require(7984);
   const shopProductItems = obj9.useShopProductItems(product);
   obj = { style: tmp3.root, id: product.skuId };
   if (useCategoryImage) {
@@ -366,7 +366,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     obj5 = { style: tmp3.headerLeading };
     if (showOrbBalancePill) {
       obj6 = { initialRenderedBalance: prop, balance: obj7.useFetchVirtualCurrencyBalance().balance };
-      showOrbBalancePill = callback2(_require(9818).BalanceWidgetPill, obj6);
+      showOrbBalancePill = callback2(_require(9742).BalanceWidgetPill, obj6);
     }
     obj5.children = showOrbBalancePill;
     const items4 = [callback2(closure_8, obj5), ];
@@ -393,7 +393,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const items6 = [tmp3.preview, previewViewStyle];
     obj10.style = items6;
     const type = product.type;
-    if (_require(1876).CollectiblesItemType.BUNDLE === type) {
+    if (_require(1877).CollectiblesItemType.BUNDLE === type) {
       const obj11 = { style: tmp3.previewBundle };
       const obj12 = {};
       ({ firstAvatarDecoration: obj27.deco, firstProfileEffect: obj27.pfx, firstNameplate: obj27.nameplate } = shopProductItems);
@@ -402,26 +402,26 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       obj12.size = "large";
       obj12.targetSize = closure_15;
       obj12.exposureLocation = "ProductPurchaseSuccessModal";
-      obj11.children = callback2(callback(8259), obj12);
+      obj11.children = callback2(callback(7994), obj12);
       let tmp43 = callback2(closure_8, obj11);
-    } else if (_require(1876).CollectiblesItemType.AVATAR_DECORATION === type) {
+    } else if (_require(1877).CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj13 = { item: callback(product.items, 1)[0], size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-      tmp43 = callback2(callback(8270), obj13);
-    } else if (_require(1876).CollectiblesItemType.PROFILE_EFFECT === type) {
+      tmp43 = callback2(callback(8005), obj13);
+    } else if (_require(1877).CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj14 = { user: currentUser, profileEffect: product.items[0] };
-      tmp43 = callback2(callback(8278), obj14);
-    } else if (_require(1876).CollectiblesItemType.PROFILE_FRAME === type) {
+      tmp43 = callback2(callback(8013), obj14);
+    } else if (_require(1877).CollectiblesItemType.PROFILE_FRAME === type) {
       const obj15 = { user: currentUser, profileFrame: product.items[0] };
-      tmp43 = callback2(callback(8789), obj15);
+      tmp43 = callback2(callback(8677), obj15);
     } else {
       tmp43 = null;
-      if (_require(1876).CollectiblesItemType.NAMEPLATE === type) {
+      if (_require(1877).CollectiblesItemType.NAMEPLATE === type) {
         const obj16 = { user: currentUser, nameplate: product.items[0], animate: true };
-        tmp43 = callback2(_require(9837).NameplatePreview, obj16);
+        tmp43 = callback2(_require(9761).NameplatePreview, obj16);
       }
     }
     obj10.children = tmp43;
-    const items7 = [callback2(callback(3991).View, obj10), ];
+    const items7 = [callback2(callback(3992).View, obj10), ];
     const obj17 = {};
     const items8 = [tmp3.messages, textViewStyle];
     obj17.style = items8;
@@ -433,9 +433,9 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       const intl3 = _require(1212).intl;
       const obj20 = { itemName: product.name };
       obj19.children = intl3.format(_require(1212).t.YNaxMp, obj20);
-      const items9 = [callback2(_require(4126).Text, obj19), ];
+      const items9 = [callback2(_require(4127).Text, obj19), ];
       const obj21 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp3.title };
-      let result = _require(6786).isPremiumCollectiblesProduct(product);
+      let result = _require(5782).isPremiumCollectiblesProduct(product);
       const intl4 = _require(1212).intl;
       const format = intl4.format;
       const t = _require(1212).t;
@@ -447,16 +447,16 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
         formatResult = format(t["4kp0AB"], obj23);
       }
       obj21.children = formatResult;
-      items9[1] = callback2(_require(4126).Text, obj21);
+      items9[1] = callback2(_require(4127).Text, obj21);
       obj18.children = items9;
       renderMessagesResult = closure_13(closure_14, obj18);
-      const obj41 = _require(6786);
+      const obj41 = _require(5782);
       const tmp84 = closure_13;
       const tmp85 = closure_14;
       const tmp89 = callback2;
     }
     obj17.children = renderMessagesResult;
-    items7[1] = callback2(callback(3991).View, obj17);
+    items7[1] = callback2(callback(3992).View, obj17);
     obj8.children = items7;
     items5[1] = closure_13(closure_7, obj8);
     const obj24 = { style: tmp3.footer };
@@ -475,7 +475,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       obj27.size = "lg";
       obj27.grow = true;
     }
-    obj25.children = callback2(_require(4543).Button, obj27);
+    obj25.children = callback2(_require(4544).Button, obj27);
     obj24.children = callback2(closure_8, obj25);
     items5[2] = callback2(closure_8, obj24);
     obj2.children = items5;
@@ -484,7 +484,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const items10 = [tmp3.curtain, curtainViewStyle];
     obj28.style = items10;
     obj28.pointerEvents = "none";
-    items2[2] = callback2(callback(3991).View, obj28);
+    items2[2] = callback2(callback(3992).View, obj28);
     obj.children = items2;
     return tmp18(tmp19, obj);
   }

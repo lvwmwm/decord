@@ -1,10 +1,10 @@
-// Module ID: 11324
-// Function ID: 88128
+// Module ID: 11286
+// Function ID: 87784
 // Name: AppLauncherTextInputOption
-// Dependencies: [57, 31, 27, 1852, 33, 4130, 689, 10911, 1881, 9368, 11321, 8226, 1273, 11325, 477, 11326, 1820, 9362, 2]
+// Dependencies: [57, 31, 27, 1853, 33, 4131, 689, 10861, 1882, 9274, 11283, 7955, 1273, 11287, 477, 11288, 1820, 9268, 2]
 // Exports: default
 
-// Module 11324 (AppLauncherTextInputOption)
+// Module 11286 (AppLauncherTextInputOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -53,10 +53,10 @@ export default function AppLauncherTextInputOption(guildId) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = onChangeText(10911);
+  let obj = onChangeText(10861);
   let closure_5 = React.useRef({ start: 0, end: 0 });
   const ref = React.useRef(null);
-  let tmp5 = option.type === onChangeText(1881).ApplicationCommandOptionType.STRING;
+  let tmp5 = option.type === onChangeText(1882).ApplicationCommandOptionType.STRING;
   let callback = tmp5;
   const items = [onChangeText];
   callback = React.useCallback((arg0) => {
@@ -107,17 +107,17 @@ export default function AppLauncherTextInputOption(guildId) {
       const obj = onChangeText(outer1_2[9]);
     }
   }, items2);
-  let obj1 = onChangeText(11321);
+  let obj1 = onChangeText(11283);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (null != current) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === onChangeText(8226).AppLauncherEntrypoint.VOICE) {
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(7955).AppLauncherEntrypoint.VOICE) {
     let TextInput = onChangeText(1273).TextInput;
   } else {
-    TextInput = guildId(11325);
+    TextInput = guildId(11287);
   }
   obj = {};
   const items3 = [tmp.container, , ];
@@ -129,7 +129,7 @@ export default function AppLauncherTextInputOption(guildId) {
   obj.style = items3;
   obj = { ref, autoFocus: false, value: first, style: tmp.stringOptionInput };
   let maxLength;
-  if (option.type === onChangeText(1881).ApplicationCommandOptionType.STRING) {
+  if (option.type === onChangeText(1882).ApplicationCommandOptionType.STRING) {
     maxLength = option.maxLength;
   }
   obj.maxLength = maxLength;
@@ -143,7 +143,7 @@ export default function AppLauncherTextInputOption(guildId) {
   obj.textAlignVertical = "center";
   obj.returnKeyType = "done";
   obj.multiline = true;
-  if (option.type === onChangeText(1881).ApplicationCommandOptionType.INTEGER) {
+  if (option.type === onChangeText(1882).ApplicationCommandOptionType.INTEGER) {
     let str2 = "numbers-and-punctuation";
     if (obj5.isAndroid()) {
       str2 = "numeric";
@@ -166,7 +166,7 @@ export default function AppLauncherTextInputOption(guildId) {
           const result1 = onChangeText(outer1_2[17]).openEmojiPickerActionSheet(obj);
         }
     };
-    tmp5 = callback(guildId(11326), obj1);
+    tmp5 = callback(guildId(11288), obj1);
   }
   items4[1] = tmp5;
   obj.children = items4;

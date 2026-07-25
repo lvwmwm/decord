@@ -1,9 +1,9 @@
-// Module ID: 5783
-// Function ID: 49486
+// Module ID: 6686
+// Function ID: 59018
 // Name: useKeyboardBlurring
-// Dependencies: [31, 27, 1452, 653, 33, 5784, 4559, 4528, 5785, 3842, 3836, 2]
+// Dependencies: [31, 27, 1452, 653, 33, 6687, 4560, 4529, 6688, 3843, 3837, 2]
 
-// Module 5783 (useKeyboardBlurring)
+// Module 6686 (useKeyboardBlurring)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
@@ -38,13 +38,13 @@ function useKeyboardBlurring(ref) {
 const forwardRefResult = importAllResult.forwardRef((keyboardAppearance, photosButtonExternalRef) => {
   const ref = importAllResult.useRef(null);
   useKeyboardBlurring(ref);
-  const tmp3 = importDefault(5785)(keyboardAppearance);
-  require(3842) /* ManaContext */;
+  const tmp3 = importDefault(6688)(keyboardAppearance);
+  require(3843) /* ManaContext */;
   if (null != keyboardAppearance.keyboardAppearance) {
     let obj = {};
-    let merged = Object.assign(require(3836) /* getNodeText */.mergeProps(keyboardAppearance, tmp3, tmp4));
-    const obj3 = require(3836) /* getNodeText */;
-    obj["ref"] = require(3836) /* getNodeText */.mergeRefs(ref, photosButtonExternalRef);
+    let merged = Object.assign(require(3837) /* getNodeText */.mergeProps(keyboardAppearance, tmp3, tmp4));
+    const obj3 = require(3837) /* getNodeText */;
+    obj["ref"] = require(3837) /* getNodeText */.mergeRefs(ref, photosButtonExternalRef);
     const tmp17 = callback(closure_5, obj);
     let panGestureWrapperResult = tmp17;
     if (!keyboardAppearance.multiline) {
@@ -98,7 +98,7 @@ const forwardRefResult = importAllResult.forwardRef((keyboardAppearance, photosB
     }
     return panGestureWrapperResult;
   } else {
-    obj = require(3836) /* getNodeText */;
+    obj = require(3837) /* getNodeText */;
     keyboardAppearance.keyboardAppearance = obj.isThemeDark(tmp6) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   }
 });

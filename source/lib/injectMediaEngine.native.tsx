@@ -1,8 +1,8 @@
-// Module ID: 4178
-// Function ID: 35840
-// Dependencies: [4179, 4180, 2]
+// Module ID: 4179
+// Function ID: 35851
+// Dependencies: [4180, 4181, 2]
 
-// Module 4178
+// Module 4179
 import assertInjected from "assertInjected";
 
 assertInjected.inject({
@@ -17,7 +17,7 @@ assertInjected.inject({
 
   },
   getVoiceEngine() {
-    return require(4180) /* base64Decode */.default;
+    return require(4181) /* base64Decode */.default;
   },
   getOpenH264LibraryPath() {
 

@@ -1,10 +1,10 @@
-// Module ID: 14468
-// Function ID: 110498
+// Module ID: 14479
+// Function ID: 110625
 // Name: UserSettingsDesignSystemText
-// Dependencies: [31, 27, 33, 3834, 689, 4541, 5501, 4127, 5165, 4126, 2]
+// Dependencies: [31, 27, 33, 3835, 689, 4542, 5501, 4128, 5164, 4127, 2]
 // Exports: default
 
-// Module 14468 (UserSettingsDesignSystemText)
+// Module 14479 (UserSettingsDesignSystemText)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,12 +13,12 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemText.tsx");
 
 export default function UserSettingsDesignSystemText() {
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   obj = {};
   const token = obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_PADDING);
   obj = { spacing: importDefault(689).space.PX_24, style: { paddingHorizontal: token } };
   const obj1 = { title: "Text Variants", hasIcons: false };
-  const TEXT_VARIANT = require(4127) /* TEXT_VARIANT */.TEXT_VARIANT;
+  const TEXT_VARIANT = require(4128) /* TEXT_VARIANT */.TEXT_VARIANT;
   obj1.children = TEXT_VARIANT.map((variant) => {
     let tmp = null;
     if ("code" !== variant) {
@@ -30,6 +30,6 @@ export default function UserSettingsDesignSystemText() {
     return tmp;
   });
   obj.children = jsx(require(5501) /* TableRowGroupTitle */.TableRowGroup, { title: "Text Variants", hasIcons: false });
-  obj.children = jsx(require(4541) /* Stack */.Stack, { spacing: importDefault(689).space.PX_24, style: { paddingHorizontal: token } });
+  obj.children = jsx(require(4542) /* Stack */.Stack, { spacing: importDefault(689).space.PX_24, style: { paddingHorizontal: token } });
   return <ScrollView spacing={importDefault(689).space.PX_24} style={{ paddingHorizontal: token }} />;
 };

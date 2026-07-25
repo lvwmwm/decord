@@ -1,10 +1,10 @@
-// Module ID: 12594
-// Function ID: 97404
+// Module ID: 12605
+// Function ID: 97531
 // Name: getThemedImageSource
-// Dependencies: [31, 27, 1278, 653, 33, 4130, 689, 4973, 3976, 12595, 12596, 12597, 12598, 12599, 12600, 12601, 12602, 1273, 4022, 566, 5513, 2]
+// Dependencies: [31, 27, 1278, 653, 33, 4131, 689, 4974, 3977, 12606, 12607, 12608, 12609, 12610, 12611, 12612, 12613, 1273, 4023, 566, 5513, 2]
 // Exports: default
 
-// Module 12594 (getThemedImageSource)
+// Module 12605 (getThemedImageSource)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,13 +26,13 @@ function getThemedImageSource(arg0, arg1, arg2) {
 }
 function getTierIcon(arg0, arg1) {
   if (BoostedGuildTiers.NONE === arg1) {
-    return getThemedImageSource(arg0, importDefault(12595), importDefault(12596));
+    return getThemedImageSource(arg0, importDefault(12606), importDefault(12607));
   } else if (BoostedGuildTiers.TIER_1 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12597), importDefault(12598));
+    return getThemedImageSource(arg0, importDefault(12608), importDefault(12609));
   } else if (BoostedGuildTiers.TIER_2 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12599), importDefault(12600));
+    return getThemedImageSource(arg0, importDefault(12610), importDefault(12611));
   } else if (BoostedGuildTiers.TIER_3 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12601), importDefault(12602));
+    return getThemedImageSource(arg0, importDefault(12612), importDefault(12613));
   }
 }
 function PremiumGuildTierPill(tier) {
@@ -41,7 +41,7 @@ function PremiumGuildTierPill(tier) {
   let obj = { style: tmp.tierPill };
   obj = { style: tmp.tierPillImage, source: getTierIcon(tier.theme, tier) };
   const items = [callback(closure_4, obj), ];
-  obj = { style: tmp.tierPillText, children: require(4022) /* _createForOfIteratorHelperLoose */.getTierName(tier) };
+  obj = { style: tmp.tierPillText, children: require(4023) /* _createForOfIteratorHelperLoose */.getTierName(tier) };
   items[1] = callback(require(1273) /* Button */.LegacyText, obj);
   obj.children = items;
   return callback2(closure_3, obj);

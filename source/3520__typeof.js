@@ -1,10 +1,11 @@
 // Module ID: 3520
-// Function ID: 27092
+// Function ID: 27081
 // Name: _typeof
-// Dependencies: [3446, 3517, 3515]
+// Dependencies: [3452, 3213, 3518, 3516]
 
 // Module 3520 (_typeof)
-import startOfUTCISOWeek from "startOfUTCISOWeek";
+import getUTCWeekYear from "getUTCWeekYear";
+import startOfUTCWeek from "startOfUTCWeek";
 
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
@@ -80,19 +81,19 @@ function _createSuper(arg0) {
   })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = outer1_8(closure_0);
+    const obj = outer1_9(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, outer1_8(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_9(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      outer1_7(self);
+      outer1_8(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== outer1_3(constructResult)) {
+      if ("object" !== outer1_4(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -134,18 +135,11 @@ function _defineProperty(arg0, arg1, value) {
   }
   return arg0;
 }
-if (!startOfUTCISOWeek) {
-  let obj = { default: startOfUTCISOWeek };
-  let tmp3 = obj;
-} else {
-  tmp3 = startOfUTCISOWeek;
-}
-let closure_2 = tmp3;
 
-export const ISOWeekYearParser = ((Parser) => {
-  class ISOWeekYearParser {
+export const LocalWeekYearParser = ((Parser) => {
+  class LocalWeekYearParser {
     constructor() {
-      if (this instanceof ISOWeekYearParser) {
+      if (this instanceof LocalWeekYearParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -157,21 +151,21 @@ export const ISOWeekYearParser = ((Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = outer1_9;
-        tmp12 = outer1_7;
+        tmp11 = outer1_10;
+        tmp12 = outer1_8;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = outer1_7(applyResult);
+        tmp16 = outer1_8(applyResult);
         str2 = "priority";
         num2 = 130;
-        tmp17 = outer1_9(applyResult, "priority", 130);
-        tmp18 = outer1_7(applyResult);
+        tmp17 = outer1_10(applyResult, "priority", 130);
+        tmp18 = outer1_8(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_9(applyResult, "incompatibleTokens", ["G", "y", "Y", "u", "Q", "q", "M", "L", "w", "d", "D", "e", "c", "t", "T"]);
+        tmp19 = outer1_10(applyResult, "incompatibleTokens", ["y", "R", "u", "Q", "q", "M", "L", "I", "d", "D", "i", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -186,9 +180,9 @@ export const ISOWeekYearParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class ISOWeekYearParser {
+    class LocalWeekYearParser {
       constructor() {
-        if (this instanceof ISOWeekYearParser) {
+        if (this instanceof LocalWeekYearParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -200,21 +194,21 @@ export const ISOWeekYearParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_9;
-          tmp12 = outer1_7;
+          tmp11 = outer1_10;
+          tmp12 = outer1_8;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_7(applyResult);
+          tmp16 = outer1_8(applyResult);
           str2 = "priority";
           num2 = 130;
-          tmp17 = outer1_9(applyResult, "priority", 130);
-          tmp18 = outer1_7(applyResult);
+          tmp17 = outer1_10(applyResult, "priority", 130);
+          tmp18 = outer1_8(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["G", "y", "Y", "u", "Q", "q", "M", "L", "w", "d", "D", "e", "c", "t", "T"]);
+          tmp19 = outer1_10(applyResult, "incompatibleTokens", ["y", "R", "u", "Q", "q", "M", "L", "I", "d", "D", "i", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -233,12 +227,12 @@ export const ISOWeekYearParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: ISOWeekYearParser, writable: true, configurable: true };
-  ISOWeekYearParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: LocalWeekYearParser, writable: true, configurable: true };
+  LocalWeekYearParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class ISOWeekYearParser {
+    class LocalWeekYearParser {
       constructor() {
-        if (this instanceof ISOWeekYearParser) {
+        if (this instanceof LocalWeekYearParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -250,21 +244,21 @@ export const ISOWeekYearParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_9;
-          tmp12 = outer1_7;
+          tmp11 = outer1_10;
+          tmp12 = outer1_8;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_7(applyResult);
+          tmp16 = outer1_8(applyResult);
           str2 = "priority";
           num2 = 130;
-          tmp17 = outer1_9(applyResult, "priority", 130);
-          tmp18 = outer1_7(applyResult);
+          tmp17 = outer1_10(applyResult, "priority", 130);
+          tmp18 = outer1_8(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["G", "y", "Y", "u", "Q", "q", "M", "L", "w", "d", "D", "e", "c", "t", "T"]);
+          tmp19 = outer1_10(applyResult, "incompatibleTokens", ["y", "R", "u", "Q", "q", "M", "L", "I", "d", "D", "i", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -278,31 +272,58 @@ export const ISOWeekYearParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(ISOWeekYearParser, Parser);
+    _setPrototypeOf(LocalWeekYearParser, Parser);
   }
-  let closure_0 = _createSuper(ISOWeekYearParser);
+  let closure_0 = _createSuper(LocalWeekYearParser);
   obj = {
     key: "parse",
-    value: function parse(arg0, arg1) {
-      if ("R" === arg1) {
-        let parseNDigitsSignedResult = callback(ISOWeekYearParser[1]).parseNDigitsSigned(4, arg0);
-      } else {
-        parseNDigitsSignedResult = callback(ISOWeekYearParser[1]).parseNDigitsSigned(arg1.length, arg0);
+    value: function parse(arg0, arg1, ordinalNumber) {
+      const callback = arg1;
+      function valueCallback(year) {
+        return { year, isTwoDigitYear: "YY" === closure_0 };
       }
-      return parseNDigitsSignedResult;
+      if ("Y" === arg1) {
+        return callback(LocalWeekYearParser[2]).mapValue(callback(LocalWeekYearParser[2]).parseNDigits(4, arg0), valueCallback);
+      } else if ("Yo" === arg1) {
+        const obj = { unit: "year" };
+        return callback(LocalWeekYearParser[2]).mapValue(ordinalNumber.ordinalNumber(arg0, obj), valueCallback);
+      } else {
+        return callback(LocalWeekYearParser[2]).mapValue(callback(LocalWeekYearParser[2]).parseNDigits(arg1.length, arg0), valueCallback);
+      }
     }
   };
-  let items = [obj, ];
+  let items = [obj, , ];
   obj = {
-    key: "set",
-    value: function set(arg0, arg1, arg2) {
-      const date = new Date(0);
-      date.setUTCFullYear(arg2, 0, 4);
-      date.setUTCHours(0, 0, 0, 0);
-      return outer1_2.default(date);
+    key: "validate",
+    value: function validate(arg0, isTwoDigitYear) {
+      isTwoDigitYear = isTwoDigitYear.isTwoDigitYear;
+      if (!isTwoDigitYear) {
+        isTwoDigitYear = isTwoDigitYear.year > 0;
+      }
+      return isTwoDigitYear;
     }
   };
   items[1] = obj;
-  _defineProperties(ISOWeekYearParser.prototype, items);
-  return ISOWeekYearParser;
+  items[2] = {
+    key: "set",
+    value: function set(setUTCFullYear, era, isTwoDigitYear, firstWeekContainsDate) {
+      if (isTwoDigitYear.isTwoDigitYear) {
+        setUTCFullYear.setUTCFullYear(callback(LocalWeekYearParser[2]).normalizeTwoDigitYear(isTwoDigitYear.year, tmp), 0, firstWeekContainsDate.firstWeekContainsDate);
+        setUTCFullYear.setUTCHours(0, 0, 0, 0);
+        return outer1_3.default(setUTCFullYear, firstWeekContainsDate);
+      } else {
+        if ("era" in era) {
+          if (1 !== era.era) {
+            let year = 1 - isTwoDigitYear.year;
+          }
+          setUTCFullYear.setUTCFullYear(year, 0, firstWeekContainsDate.firstWeekContainsDate);
+          setUTCFullYear.setUTCHours(0, 0, 0, 0);
+          return outer1_3.default(setUTCFullYear, firstWeekContainsDate);
+        }
+        year = isTwoDigitYear.year;
+      }
+    }
+  };
+  _defineProperties(LocalWeekYearParser.prototype, items);
+  return LocalWeekYearParser;
 })(require("_defineProperties").Parser);

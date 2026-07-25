@@ -1,9 +1,9 @@
-// Module ID: 7567
-// Function ID: 60343
+// Module ID: 6663
+// Function ID: 58933
 // Name: getSystemLocale
 // Dependencies: [1212, 2]
 
-// Module 7567 (getSystemLocale)
+// Module 6663 (getSystemLocale)
 const result = require("set").fileFinishedImporting("modules/text_in_voice/GuildTiVPlatformUtils.native.tsx");
 
 export default {

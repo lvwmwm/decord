@@ -1,10 +1,10 @@
-// Module ID: 12363
-// Function ID: 96208
+// Module ID: 12339
+// Function ID: 96017
 // Name: parents
-// Dependencies: [57, 31, 33, 6771, 3830, 1212, 7568, 12362, 12254, 2]
+// Dependencies: [57, 31, 33, 5767, 3831, 1212, 6664, 12338, 12230, 2]
 // Exports: default
 
-// Module 12363 (parents)
+// Module 12339 (parents)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";
@@ -49,11 +49,11 @@ export default function _default(parents) {
     }
     obj.parent3 = username3;
     obj.disabledTitle = intl.formatToPlainString(parents(1212).t.BlAMme, obj);
-    obj.icon = jsx(parents(12254).ShareIcon, {});
+    obj.icon = jsx(parents(12230).ShareIcon, {});
     const intl2 = parents(1212).intl;
     obj.description = intl2.string(parents(1212).t["5l/hlt"]);
     obj.disabled = tmp[0];
     obj.onPress = tmp2;
-    return tmp7(importDefault(12362), obj);
+    return tmp7(importDefault(12338), obj);
   }
 };

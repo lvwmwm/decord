@@ -1,7 +1,7 @@
 // Module ID: 5619
-// Function ID: 47948
+// Function ID: 47953
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5620, 482, 5616, 3791, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5620, 482, 5616, 3792, 566, 686, 2]
 
 // Module 5619 (_isNativeReflectConstruct)
 import sum from "sum";

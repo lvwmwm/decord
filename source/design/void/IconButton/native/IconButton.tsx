@@ -1,9 +1,9 @@
-// Module ID: 12449
-// Function ID: 96584
+// Module ID: 12430
+// Function ID: 96435
 // Name: SquareIconButton
-// Dependencies: [31, 33, 4130, 689, 4973, 4660, 1273, 2]
+// Dependencies: [31, 33, 4131, 689, 4974, 4661, 1273, 2]
 
-// Module 12449 (SquareIconButton)
+// Module 12430 (SquareIconButton)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

@@ -1,10 +1,10 @@
-// Module ID: 9715
-// Function ID: 75564
+// Module ID: 9639
+// Function ID: 75159
 // Name: items
-// Dependencies: [57, 31, 27, 8312, 7129, 1851, 653, 33, 4130, 689, 666, 1456, 1557, 1450, 8848, 4528, 5093, 566, 9716, 8815, 8309, 9714, 9718, 9721, 9179, 3991, 1273, 4131, 9727, 5482, 9728, 9762, 7530, 1212, 5119, 5085, 9791, 4554, 5084, 4126, 2]
+// Dependencies: [57, 31, 27, 8047, 6207, 1852, 653, 33, 4131, 689, 666, 1456, 1557, 1450, 8736, 4529, 5093, 566, 9640, 8703, 8044, 9638, 9642, 9645, 9071, 3992, 1273, 4132, 9651, 5482, 9652, 9686, 6622, 1212, 5119, 5085, 9715, 4555, 5084, 4127, 2]
 // Exports: default
 
-// Module 9715 (items)
+// Module 9639 (items)
 import _slicedToArray from "_slicedToArray";
 import PremiumGiftWishlistBanner from "PremiumGiftWishlistBanner";
 import get_ActivityIndicator from "withTiming";

@@ -1,9 +1,9 @@
-// Module ID: 16084
-// Function ID: 124431
+// Module ID: 16095
+// Function ID: 124599
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5597, 4202, 16085, 9536, 5596, 3803, 587, 22, 16086, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5597, 4203, 16096, 9457, 5596, 3804, 587, 22, 16097, 5078, 2]
 
-// Module 16084 (_isNativeReflectConstruct)
+// Module 16095 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import set from "set";
@@ -110,7 +110,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function optOutEligibilityCheck(hotspot) {
   const _require = hotspot;
-  const InAppFeedbackStates = _require(3803).InAppFeedbackStates;
+  const InAppFeedbackStates = _require(3804).InAppFeedbackStates;
   const tmp = InAppFeedbackStates.getSetting()[hotspot.feedbackType];
   let optOutExpiryTime;
   if (null != tmp) {
@@ -131,7 +131,7 @@ function optOutEligibilityCheck(hotspot) {
     tmp7 = !tmp3;
   }
   if (tmp7) {
-    const InAppFeedbackStates2 = _require(3803).InAppFeedbackStates;
+    const InAppFeedbackStates2 = _require(3804).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       let obj = {};
       const merged = Object.assign(arg0);
@@ -153,7 +153,7 @@ function triggerRateEligibilityCheck(chance) {
 }
 function recencyEligibilityCheck(cooldown, value) {
   const _require = value;
-  const InAppFeedbackStates = _require(3803).InAppFeedbackStates;
+  const InAppFeedbackStates = _require(3804).InAppFeedbackStates;
   const tmp = InAppFeedbackStates.getSetting()[value.feedbackType];
   let lastImpressionTime;
   if (null != tmp) {
@@ -184,7 +184,7 @@ function recencyEligibilityCheck(cooldown, value) {
     }
     tmp5 = tmp9;
     if (!isNaNResult) {
-      const InAppFeedbackStates2 = _require(3803).InAppFeedbackStates;
+      const InAppFeedbackStates2 = _require(3804).InAppFeedbackStates;
       InAppFeedbackStates2.updateSetting((arg0) => {
         let obj = {};
         const merged = Object.assign(arg0);
@@ -266,7 +266,7 @@ obj5["storageKey"] = "searchResultsFeedback";
 obj5["feedbackType"] = FeedbackType.SEARCH_RESULTS;
 let items1 = [
   function searchResultsEligibilityCheck() {
-    return require(16086) /* useIsSearchResultsFeedbackExperimentEnabled */.getIsSearchResultsFeedbackExperimentEnabled({ location: "FeedbackManager" });
+    return require(16097) /* useIsSearchResultsFeedbackExperimentEnabled */.getIsSearchResultsFeedbackExperimentEnabled({ location: "FeedbackManager" });
   }
 ];
 obj5["eligibilityChecks"] = items1;

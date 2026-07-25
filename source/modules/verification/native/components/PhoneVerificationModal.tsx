@@ -1,10 +1,10 @@
-// Module ID: 9272
-// Function ID: 72426
+// Module ID: 9164
+// Function ID: 71911
 // Name: PhoneVerificationModal
-// Dependencies: [5, 31, 653, 9273, 33, 5087, 9274, 9275, 4337, 480, 9298, 9269, 5517, 1212, 2]
+// Dependencies: [5, 31, 653, 9165, 33, 5087, 9166, 9167, 4338, 480, 9191, 9161, 5517, 1212, 2]
 // Exports: default
 
-// Module 9272 (PhoneVerificationModal)
+// Module 9164 (PhoneVerificationModal)
 import HeaderBackImage from "HeaderBackImage";
 import "result";
 import { VerificationModalScenes } from "ME";

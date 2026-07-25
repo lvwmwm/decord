@@ -1,9 +1,9 @@
-// Module ID: 15192
-// Function ID: 115700
+// Module ID: 15202
+// Function ID: 115828
 // Name: ForYouFooter
-// Dependencies: [5, 57, 31, 27, 4122, 4167, 1348, 1838, 1849, 15186, 653, 5591, 33, 4130, 4126, 689, 4562, 15191, 1212, 1360, 7818, 7002, 9886, 9672, 7675, 566, 7870, 1273, 11688, 15193, 1456, 4111, 12909, 6882, 675, 8002, 15194, 9533, 3831, 9556, 1934, 4098, 15196, 4089, 15188, 5495, 15197, 15198, 21, 4660, 15199, 6883, 12175, 1457, 3803, 3808, 15209, 15210, 15211, 15212, 15213, 15219, 787, 15220, 15221, 1327, 15190, 7527, 15222, 2]
+// Dependencies: [5, 57, 31, 27, 4123, 4168, 1348, 1838, 1850, 15196, 653, 5591, 33, 4131, 4127, 689, 4563, 15201, 1212, 1360, 7765, 6020, 9810, 9594, 7617, 566, 7817, 1273, 11657, 15203, 1456, 4112, 12920, 5873, 675, 7949, 15204, 9454, 3832, 9477, 1935, 4099, 15206, 4090, 15198, 5495, 15207, 15208, 21, 4661, 15209, 5874, 12151, 1457, 3804, 3809, 15219, 15220, 15221, 15222, 15223, 15229, 787, 15230, 15231, 1327, 15200, 6619, 15232, 2]
 
-// Module 15192 (ForYouFooter)
+// Module 15202 (ForYouFooter)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader";
 import importAllResult from "parseQuery";
@@ -36,17 +36,17 @@ const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15191) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15201) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
 function getMessagePreviewIcon(iconType) {
   if (constants2.ATTACHMENT === iconType) {
-    return importDefault(9886);
+    return importDefault(9810);
   } else if (constants2.STICKER === iconType) {
-    return importDefault(9672);
+    return importDefault(9594);
   } else if (constants2.VOICE_MESSAGE === iconType) {
-    return importDefault(7675);
+    return importDefault(7617);
   } else {
     return null;
   }
@@ -57,7 +57,7 @@ function Callout(arg0) {
   let item;
   ({ item, acked, compactMode } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(4562);
+  let obj = importAll(4563);
   obj = { style: tmp.calloutContainer, pointerEvents: "none" };
   obj = { style: tmp.messagePreviewBarV2 };
   const parser = obj.getParser(callback3());
@@ -70,7 +70,7 @@ function Callout(arg0) {
   }
   obj1.lineClamp = num;
   obj1.children = parser(item.callout);
-  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  items[1] = callback(require(4127) /* Text */.Text, obj1);
   obj.children = items;
   return closure_22(closure_7, obj);
 }
@@ -83,7 +83,7 @@ function ForYouMessagePreviewV2(item) {
   item = item.item;
   ({ acked, compactMode, roleStyle } = item);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = message_channel_id(4562);
+  let obj = message_channel_id(4563);
   const item2 = { item }.item;
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(callback4(), closure_28, roleStyle);
   const intl = item(1212).intl;
@@ -140,10 +140,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp25 = guild_id(7818)(first);
+    const tmp25 = guild_id(7765)(first);
     let result = stringResult;
     if (null != tmp25) {
-      let obj3 = item(7002);
+      let obj3 = item(6020);
       result = obj3.formatPollResultNotificationCenterText(tmp25);
     }
   } else if (stickers.length > 0) {
@@ -258,7 +258,7 @@ function ForYouMessagePreviewV2(item) {
     id = message10.author.id;
   }
   obj3.authorId = id;
-  const items5 = [item(7870).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj3, {}), ];
+  const items5 = [item(7817).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj3, {}), ];
   let tmp38 = null != iconType;
   if (tmp38) {
     const obj4 = { style: tmp.messagePreviewIconV2Container };
@@ -268,7 +268,7 @@ function ForYouMessagePreviewV2(item) {
   }
   items5[1] = tmp38;
   obj2.children = items5;
-  items3[1] = tmp35(item(4126).Text, obj2);
+  items3[1] = tmp35(item(4127).Text, obj2);
   obj.children = items3;
   return tmp33(tmp34, obj);
 }
@@ -281,7 +281,7 @@ function ApplicationName(applicationId) {
     let tmp5 = callback(closure_7, {});
   } else {
     obj = { application: stateFromStores, textVariant: applicationId.textVariant, iconSize: 16 };
-    tmp5 = callback(importDefault(11688), obj, stateFromStores.id);
+    tmp5 = callback(importDefault(11657), obj, stateFromStores.id);
   }
   return tmp5;
 }

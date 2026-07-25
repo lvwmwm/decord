@@ -1,10 +1,10 @@
-// Module ID: 4472
-// Function ID: 39517
+// Module ID: 4473
+// Function ID: 39528
 // Name: useAlertStore
-// Dependencies: [57, 621, 682, 4473, 4474, 2]
+// Dependencies: [57, 621, 682, 4474, 4475, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 4472 (useAlertStore)
+// Module 4473 (useAlertStore)
 import _slicedToArray from "_slicedToArray";
 import keys from "keys";
 
@@ -38,7 +38,7 @@ export const dismissAlerts = function dismissAlerts() {
     });
   });
   if (tmp3) {
-    arr4(4473)();
+    arr4(4474)();
   }
 };
 export const dismissAlert = function dismissAlert(c6) {
@@ -65,7 +65,7 @@ export const dismissAlert = function dismissAlert(c6) {
       }
     });
     if (tmp2) {
-      found(4473)();
+      found(4474)();
     }
     const obj = _require(682);
   }
@@ -76,7 +76,7 @@ export const openAlert = function openAlert(VOICE_PANEL_SPOILER_KEY, arg1, onClo
   const dependencyMap = onCloseCallback;
   let _slicedToArray = arg3;
   if (0 === keys.getState().alerts.length) {
-    importDefault(4474)();
+    importDefault(4475)();
   }
   _require(682).batchUpdates(() => {
     outer1_4.setState((alerts) => {

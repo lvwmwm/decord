@@ -1,10 +1,10 @@
-// Module ID: 13423
-// Function ID: 103051
+// Module ID: 13434
+// Function ID: 103178
 // Name: setFontSize
-// Dependencies: [4122, 653, 3806, 662, 686, 675, 8042, 2]
+// Dependencies: [4123, 653, 3807, 662, 686, 675, 6152, 2]
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 13423 (setFontSize)
+// Module 13434 (setFontSize)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
@@ -84,7 +84,7 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(prefersR
   const useReducedMotion2 = _isNativeReflectConstruct.useReducedMotion;
   if (!useReducedMotion) {
     if (useReducedMotion2) {
-      let obj2 = importDefault(8042);
+      let obj2 = importDefault(6152);
       obj = {};
       const obj1 = { value: false, reasonKey: constants.REDUCED_MOTION };
       obj.gifAutoPlay = obj1;
@@ -99,8 +99,8 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(prefersR
     useReducedMotion = !useReducedMotion2;
   }
   if (useReducedMotion) {
-    const result1 = importDefault(8042).clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
-    const obj8 = importDefault(8042);
+    const result1 = importDefault(6152).clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
+    const obj8 = importDefault(6152);
   }
 };
 export const setSyncForcedColors = function setSyncForcedColors(syncForcedColors) {

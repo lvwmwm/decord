@@ -1,10 +1,10 @@
-// Module ID: 8889
-// Function ID: 70055
+// Module ID: 8777
+// Function ID: 69534
 // Name: isCustomBackgroundOption
-// Dependencies: [1348, 4202, 7940, 653, 1392, 4324, 675, 2]
+// Dependencies: [1348, 4203, 7887, 653, 1392, 4325, 675, 2]
 // Exports: getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 8889 (isCustomBackgroundOption)
+// Module 8777 (isCustomBackgroundOption)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import VideoFilterType from "VideoFilterType";
@@ -116,7 +116,7 @@ export const trackBackgroundOptionUpdated = function trackBackgroundOptionUpdate
   const guildId = store.getGuildId();
   const channelId = store.getChannelId();
   channel = channel.getChannel(channelId);
-  let obj = require(4324) /* _createForOfIteratorHelperLoose */;
+  let obj = require(4325) /* _createForOfIteratorHelperLoose */;
   const voiceStateMetadata = obj.getVoiceStateMetadata(guildId, channelId, true);
   obj = { location, effect_type: getEffectAnalyticsType(lastUsedVideoBackgroundOption), effect_detail: getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption), effect_state: Enabled, channel_id: channelId };
   let type;

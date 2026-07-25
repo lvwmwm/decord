@@ -1,10 +1,10 @@
-// Module ID: 15867
-// Function ID: 122519
+// Module ID: 15878
+// Function ID: 122688
 // Name: n
 // Dependencies: [2]
 // Exports: default
 
-// Module 15867 (n)
+// Module 15878 (n)
 const fn = function n(arg0, arg1) {
   return Math.random() * (arg1 - arg0) + arg0;
 };

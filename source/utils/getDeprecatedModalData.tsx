@@ -1,10 +1,10 @@
-// Module ID: 4339
-// Function ID: 38305
+// Module ID: 4340
+// Function ID: 38316
 // Name: getDeprecatedModalData
-// Dependencies: [4122, 653, 2]
+// Dependencies: [4123, 653, 2]
 // Exports: default
 
-// Module 4339 (getDeprecatedModalData)
+// Module 4340 (getDeprecatedModalData)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ModalAnimation } from "ME";
 

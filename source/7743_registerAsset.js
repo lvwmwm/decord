@@ -1,11 +1,11 @@
 // Module ID: 7743
-// Function ID: 61527
+// Function ID: 61697
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 7743 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a9da9676c404d3305c620820281d0a06", name: "PencilIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/auto_moderation", width: 12, height: 12, scales: [2, 3], hash: "78a34aca822219efd275dbb2e470061d", name: "ic_closed_lock", type: "png" };
 
 export default registerAsset.registerAsset(obj);

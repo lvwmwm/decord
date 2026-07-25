@@ -1,10 +1,10 @@
-// Module ID: 9168
-// Function ID: 71708
+// Module ID: 9060
+// Function ID: 71193
 // Name: createChannelState
 // Dependencies: [621, 682, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive
 
-// Module 9168 (createChannelState)
+// Module 9060 (createChannelState)
 import keys from "keys";
 
 function createChannelState() {

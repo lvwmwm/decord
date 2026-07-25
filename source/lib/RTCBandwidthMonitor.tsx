@@ -1,10 +1,10 @@
-// Module ID: 6706
-// Function ID: 51945
+// Module ID: 5702
+// Function ID: 49258
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [6, 7, 22, 2]
 // Exports: getRTCTotalBytes
 
-// Module 6706 (_createForOfIteratorHelperLoose)
+// Module 5702 (_createForOfIteratorHelperLoose)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

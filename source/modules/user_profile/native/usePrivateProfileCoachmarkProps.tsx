@@ -1,10 +1,10 @@
-// Module ID: 15146
-// Function ID: 115278
+// Module ID: 15156
+// Function ID: 115406
 // Name: PrivateProfileCoachmarkImage
-// Dependencies: [31, 27, 653, 1345, 33, 4130, 6426, 1282, 1212, 7705, 3803, 1334, 5796, 2]
+// Dependencies: [31, 27, 653, 1345, 33, 4131, 7346, 1282, 1212, 7649, 3804, 1334, 6554, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 15146 (PrivateProfileCoachmarkImage)
+// Module 15156 (PrivateProfileCoachmarkImage)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";
@@ -14,7 +14,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;
 function PrivateProfileCoachmarkImage() {
-  return <View style={callback().imageContainer}>{jsx(require(6426) /* PrivateProfileAbstractUI */.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
+  return <View style={callback().imageContainer}>{jsx(require(7346) /* PrivateProfileAbstractUI */.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
 }
 let closure_7 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 const result = require("ME").fileFinishedImporting("modules/user_profile/native/usePrivateProfileCoachmarkProps.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 4034
-// Function ID: 33584
+// Module ID: 4035
+// Function ID: 33595
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3800, 664, 1212, 3799, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3801, 664, 1212, 3800, 2]
 
-// Module 4034 (_isNativeReflectConstruct)
+// Module 4035 (_isNativeReflectConstruct)
 import set from "set";
 import getSystemLocale from "getSystemLocale";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

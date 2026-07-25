@@ -1,10 +1,10 @@
-// Module ID: 1860
-// Function ID: 20515
+// Module ID: 1861
+// Function ID: 20526
 // Name: wrapHue
-// Dependencies: [57, 1861, 1862, 666, 665, 1863, 2]
+// Dependencies: [57, 1862, 1863, 666, 665, 1864, 2]
 // Exports: applyFlywheelViewingFallback, buildGummyColors, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, parseServerDisplayNameStyles, rebuildGummySourceColor
 
-// Module 1860 (wrapHue)
+// Module 1861 (wrapHue)
 import _slicedToArray from "_slicedToArray";
 import items3 from "items3";
 
@@ -38,11 +38,11 @@ let items = [{ hueShift: -18, saturation: 0.54, lightness: 0.72 }, { hueShift: -
 let result = require("DisplayNameEffect").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesUtils.tsx");
 
 export const getEffectColorCount = function getEffectColorCount(effectId) {
-  if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.GRADIENT === effectId) {
+  if (require(1863) /* DisplayNameEffect */.DisplayNameEffect.GRADIENT === effectId) {
     return 2;
-  } else if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.GUMMY === effectId) {
+  } else if (require(1863) /* DisplayNameEffect */.DisplayNameEffect.GUMMY === effectId) {
     return 4;
-  } else if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.PRISM === effectId) {
+  } else if (require(1863) /* DisplayNameEffect */.DisplayNameEffect.PRISM === effectId) {
     return 5;
   } else {
     return 1;
@@ -113,12 +113,12 @@ export const applyFlywheelViewingFallback = function applyFlywheelViewingFallbac
   if (!isDisplayNameStylesFlywheelViewersEnabled) {
     if (null != fontId) {
       if (closure_7.includes(fontId.fontId)) {
-        fontId = require(1863) /* DisplayNameFont */.DisplayNameFont.DEFAULT;
+        fontId = require(1864) /* DisplayNameFont */.DisplayNameFont.DEFAULT;
       } else {
         fontId = fontId.fontId;
       }
       if (closure_6.includes(fontId.effectId)) {
-        let effectId = require(1862) /* DisplayNameEffect */.DisplayNameEffect.SOLID;
+        let effectId = require(1863) /* DisplayNameEffect */.DisplayNameEffect.SOLID;
       } else {
         effectId = fontId.effectId;
       }

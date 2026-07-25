@@ -1,10 +1,10 @@
-// Module ID: 8954
-// Function ID: 70556
+// Module ID: 8842
+// Function ID: 70035
 // Name: SecureFramesUserVerificationBottomSheet
-// Dependencies: [57, 31, 27, 4202, 1849, 8938, 653, 33, 4130, 689, 8942, 8955, 8917, 8944, 566, 8947, 7976, 4319, 8936, 8946, 8735, 8956, 4098, 3831, 4091, 1212, 5187, 5186, 5499, 4126, 8948, 4541, 4543, 2]
+// Dependencies: [57, 31, 27, 4203, 1850, 8826, 653, 33, 4131, 689, 8830, 8843, 8805, 8832, 566, 8835, 5656, 4320, 8824, 8834, 8623, 8844, 4099, 3832, 4092, 1212, 5187, 5186, 5499, 4127, 8836, 4542, 4544, 2]
 // Exports: default
 
-// Module 8954 (SecureFramesUserVerificationBottomSheet)
+// Module 8842 (SecureFramesUserVerificationBottomSheet)
 import _slicedToArray from "_slicedToArray";
 import Stack from "Stack";
 import get_ActivityIndicator from "RedesignBottomSheetTitleHeaderBase";

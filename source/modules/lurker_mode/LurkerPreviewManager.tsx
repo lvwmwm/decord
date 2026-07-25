@@ -1,9 +1,9 @@
-// Module ID: 5715
-// Function ID: 49126
+// Module ID: 11465
+// Function ID: 89256
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 15, 17, 18, 4202, 3947, 3759, 5698, 686, 5697, 4530, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 4203, 3948, 3760, 6634, 686, 11466, 4531, 2]
 
-// Module 5715 (_createForOfIteratorHelperLoose)
+// Module 11465 (_createForOfIteratorHelperLoose)
 import _inherits from "_inherits";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

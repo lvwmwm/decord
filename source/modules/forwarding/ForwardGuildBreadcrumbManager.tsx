@@ -1,9 +1,9 @@
-// Module ID: 16565
-// Function ID: 129189
+// Module ID: 16576
+// Function ID: 129357
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 653, 16566, 16151, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 653, 16577, 16162, 5078, 2]
 
-// Module 16565 (_isNativeReflectConstruct)
+// Module 16576 (_isNativeReflectConstruct)
 import setupLoadFromMessageManagerHandlers from "setupLoadFromMessageManagerHandlers";
 import _fetchBasicGuild from "_fetchBasicGuild";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -31,8 +31,8 @@ function fetchForwardReferencedGuilds(message_reference) {
   if (type === MessageReferenceTypes.FORWARD) {
     const guild_id = message_reference.message_reference.guild_id;
     if (null != guild_id) {
-      const basicGuild = require(16566) /* _fetchBasicGuild */.fetchBasicGuild(guild_id);
-      const obj = require(16566) /* _fetchBasicGuild */;
+      const basicGuild = require(16577) /* _fetchBasicGuild */.fetchBasicGuild(guild_id);
+      const obj = require(16577) /* _fetchBasicGuild */;
     }
   }
 }

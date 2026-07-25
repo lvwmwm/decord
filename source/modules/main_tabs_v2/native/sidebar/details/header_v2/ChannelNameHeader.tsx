@@ -1,9 +1,9 @@
-// Module ID: 15469
-// Function ID: 118873
+// Module ID: 15479
+// Function ID: 119001
 // Name: DirectMessageIcon
-// Dependencies: [31, 27, 1348, 1838, 3758, 4217, 1849, 653, 33, 4130, 689, 566, 1273, 4320, 1456, 4138, 4660, 4126, 1212, 4312, 9134, 4593, 8558, 5462, 8537, 2]
+// Dependencies: [31, 27, 1348, 1838, 3759, 4218, 1850, 653, 33, 4131, 689, 566, 1273, 4321, 1456, 4139, 4661, 4127, 1212, 4313, 9026, 4594, 8318, 5462, 8297, 2]
 
-// Module 15469 (DirectMessageIcon)
+// Module 15479 (DirectMessageIcon)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -104,15 +104,15 @@ function ChannelSubtitle(channel) {
     return privateChannelUserTagsString;
   }, items1);
   if (!channel.isPrivate()) {
-    stateFromStores = channel(4312).channelTypeString(channel);
-    const obj2 = channel(4312);
+    stateFromStores = channel(4313).channelTypeString(channel);
+    const obj2 = channel(4313);
   }
   let tmp4 = null;
   if (null != stateFromStores) {
     tmp4 = null;
     if ("" !== stateFromStores) {
       obj = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: stateFromStores };
-      tmp4 = callback(channel(4126).Text, obj);
+      tmp4 = callback(channel(4127).Text, obj);
     }
   }
   return tmp4;
@@ -227,7 +227,7 @@ function DMChannelNameHeader(channel) {
   let obj = { style: items1, onPress: callback };
   items1 = [callback2().container, channel.containerStyle];
   obj.children = callback(ChannelNameHeaderContent, { channel });
-  return callback(channel(4660).PressableOpacity, obj);
+  return callback(channel(4661).PressableOpacity, obj);
 }
 function DefaultChannelNameHeader(arg0) {
   let channel;

@@ -1,9 +1,9 @@
-// Module ID: 15799
-// Function ID: 121866
+// Module ID: 15810
+// Function ID: 122035
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 1849, 15794, 33, 4130, 689, 4585, 1212, 9439, 566, 3776, 8044, 9397, 15800, 4549, 22, 5513, 1273, 15806, 9640, 4094, 9396, 7677, 4126, 2]
+// Dependencies: [31, 27, 1850, 15805, 33, 4131, 689, 4586, 1212, 9359, 566, 3777, 6155, 9315, 15811, 4550, 22, 5513, 1273, 15817, 9562, 4095, 9314, 7619, 4127, 2]
 
-// Module 15799 (_createForOfIteratorHelperLoose)
+// Module 15810 (_createForOfIteratorHelperLoose)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -99,18 +99,18 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getSectionLabel(category) {
   const type = category.category.categoryInfo.type;
-  if (require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD === type) {
+  if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD === type) {
     return category.category.categoryInfo.guild.name;
-  } else if (require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS === type) {
+  } else if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     return intl3.string(require(1212) /* getSystemLocale */.t.Rtvk9X);
-  } else if (require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FAVORITES === type) {
+  } else if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FAVORITES === type) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     return intl2.string(require(1212) /* getSystemLocale */.t.y3LQCG);
-  } else if (require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
+  } else if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t["+cGVV6"]);
-  } else if (require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.SEARCH === type) {
+  } else if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.SEARCH === type) {
     return null;
   }
 }
@@ -127,7 +127,7 @@ function SoundPickerButtonRow(section) {
   } else {
     let result = !tmp3;
     if (result) {
-      let obj = section(8044);
+      let obj = section(6155);
       result = obj.isSoundboardSectionNitroLocked(channel.guild_id, section.category.categoryInfo);
     }
     c3 = result;
@@ -135,7 +135,7 @@ function SoundPickerButtonRow(section) {
     const items = [tmp.row];
     obj.style = items;
     if (result) {
-      result = callback(section(9397).PremiumUpsellGradientBackground, {});
+      result = callback(section(9315).PremiumUpsellGradientBackground, {});
     }
     const items1 = [
       result,
@@ -269,7 +269,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     START = END;
   }
   _isNativeReflectConstruct = callback2();
-  let obj = channel(4549);
+  let obj = channel(4550);
   let items = [];
   const fontScale = obj.useFontScale();
   const tmp5 = calculateCategory(categories);
@@ -291,7 +291,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
       let value = iter3.value;
       let tmp8 = importDefault;
       let tmp9 = dependencyMap;
-      let arr3 = importDefault(9439)(value.items, tmp4);
+      let arr3 = importDefault(9359)(value.items, tmp4);
       let tmp10 = closure_9;
       obj = { category: value, height: arr3.length * closure_9 + (18 * fontScale + 8), soundsByRow: arr3 };
       arr = items1.push(obj);
@@ -386,7 +386,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     optimizeListItemRender: true,
     inActionSheet: true
   };
-  return callback(importDefault(7677), obj);
+  return callback(importDefault(7619), obj);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/soundboard/native/SoundboardSoundPickerList.tsx");
 

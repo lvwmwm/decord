@@ -1,9 +1,9 @@
-// Module ID: 15477
-// Function ID: 118951
+// Module ID: 15487
+// Function ID: 119079
 // Name: Loading
-// Dependencies: [31, 27, 1907, 1838, 3948, 653, 33, 4130, 689, 5584, 9183, 566, 5450, 3950, 9188, 1198, 3981, 1557, 5585, 15478, 2]
+// Dependencies: [31, 27, 1908, 1838, 3949, 653, 33, 4131, 689, 5584, 9075, 566, 5450, 3951, 9080, 1198, 3982, 1557, 5585, 15488, 2]
 
-// Module 15477 (Loading)
+// Module 15487 (Loading)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ function Loading() {
 }
 function MemberVerificationRouteView(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(9183), {});
+  return jsx(importDefault(9075), {});
 }
 function ExistingJoinRequestHandler(guildId) {
   guildId = guildId.guildId;

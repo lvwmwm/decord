@@ -1,10 +1,10 @@
-// Module ID: 15810
-// Function ID: 121951
+// Module ID: 15821
+// Function ID: 122120
 // Name: isVoicePanelParticipantFocusable
-// Dependencies: [1347, 4143, 4149, 4177, 4148, 10052, 1327, 566, 2]
+// Dependencies: [1347, 4144, 4150, 4178, 4149, 9981, 1327, 566, 2]
 // Exports: default
 
-// Module 15810 (isVoicePanelParticipantFocusable)
+// Module 15821 (isVoicePanelParticipantFocusable)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -49,7 +49,7 @@ function isVoicePanelParticipantFocusable(guildId, channelId, embeddedActivityPa
       if (callback2(participant)) {
         let result = null != obj3.getActiveStreamForUser(participant.user.id, guildId);
       } else if (callback3(participant)) {
-        let tmp4Result = tmp4(10052);
+        let tmp4Result = tmp4(9981);
         result = tmp4Result.canRenderParticipantVideo(participant, tmp);
       } else {
         tmp4Result = tmp4(1327);

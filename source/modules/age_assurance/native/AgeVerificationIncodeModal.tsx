@@ -1,10 +1,10 @@
-// Module ID: 7585
-// Function ID: 60434
+// Module ID: 6694
+// Function ID: 59091
 // Name: getScreens
-// Dependencies: [31, 33, 4130, 689, 4337, 1212, 5788, 7586, 7591, 5517, 2]
+// Dependencies: [31, 33, 4131, 689, 4338, 1212, 6695, 6696, 6701, 5517, 2]
 // Exports: default
 
-// Module 7585 (getScreens)
+// Module 6694 (getScreens)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -16,7 +16,7 @@ function getScreens(headerStyle, headerTitle) {
   const dependencyMap = arg4;
   function handleClose() {
     dependencyMap();
-    let arr = callback2(4337);
+    let arr = callback2(4338);
     arr = arr.pop();
   }
   const uRL = new URL(arg2);
@@ -29,11 +29,11 @@ function getScreens(headerStyle, headerTitle) {
     const obj = { onPress: handleClose };
     const intl = callback(1212).intl;
     obj.text = intl.string(callback(1212).t.cpT0Cq);
-    return handleClose(callback(5788).HeaderActionButton, obj);
+    return handleClose(callback(6695).HeaderActionButton, obj);
   };
   obj.render = function render(arg0, arg1) {
     let closure_0 = arg1;
-    return handleClose(callback2(7586), {
+    return handleClose(callback2(6696), {
       onClose: handleClose,
       trustedOrigin: origin,
       onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
@@ -49,10 +49,10 @@ function getScreens(headerStyle, headerTitle) {
       const obj = { onPress: handleClose };
       const intl = callback(1212).intl;
       obj.text = intl.string(callback(1212).t.cpT0Cq);
-      return handleClose(callback(5788).HeaderActionButton, obj);
+      return handleClose(callback(6695).HeaderActionButton, obj);
     },
     render(injectedJavaScriptBeforeContentLoaded) {
-      return handleClose(callback2(7591), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
+      return handleClose(callback2(6701), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
     }
   };
   obj[constants.VERIFY_AGE] = obj;

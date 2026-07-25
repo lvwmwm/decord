@@ -1,10 +1,10 @@
-// Module ID: 14737
-// Function ID: 112293
+// Module ID: 14748
+// Function ID: 112421
 // Name: FramePreviewOverrideSection
-// Dependencies: [57, 31, 27, 6774, 6790, 8287, 33, 4130, 689, 8704, 4126, 4544, 624, 7948, 14738, 1273, 9804, 2]
+// Dependencies: [57, 31, 27, 5770, 5786, 8022, 33, 4131, 689, 8592, 4127, 4545, 624, 7896, 14749, 1273, 9728, 2]
 // Exports: default
 
-// Module 14737 (FramePreviewOverrideSection)
+// Module 14748 (FramePreviewOverrideSection)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -34,15 +34,15 @@ function FramePreviewOverrideSection() {
     let obj = { style: tmp.section };
     obj = { style: tmp.sectionHeader };
     obj = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Frame Preview Override" };
-    obj.children = callback3(_require(4126).Text, obj);
+    obj.children = callback3(_require(4127).Text, obj);
     const items = [callback3(closure_6, obj), , , , ];
     const obj1 = { variant: "text-sm/normal", style: tmp.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
-    items[1] = callback3(_require(4126).Text, obj1);
+    items[1] = callback3(_require(4127).Text, obj1);
     const obj2 = { variant: "text-xs/normal" };
     const items1 = [tmp.statusText, statusError];
     obj2.style = items1;
     obj2.children = "Loading\u2026";
-    items[2] = callback3(_require(4126).Text, obj2);
+    items[2] = callback3(_require(4127).Text, obj2);
     const obj3 = {
       pillStyle: tmp.secondaryButton,
       text: "Load from device",
@@ -50,11 +50,11 @@ function FramePreviewOverrideSection() {
           callback();
         }
     };
-    items[3] = callback3(_require(4544).BaseTextButton, obj3);
+    items[3] = callback3(_require(4545).BaseTextButton, obj3);
     let tmp24 = null != tmp2;
     if (tmp24) {
       const obj4 = { pillStyle: tmp.secondaryButton, text: "Clear override", onPress: tmp5 };
-      tmp24 = callback3(_require(4544).BaseTextButton, obj4);
+      tmp24 = callback3(_require(4545).BaseTextButton, obj4);
     }
     items[4] = tmp24;
     obj.children = items;
@@ -140,7 +140,7 @@ function UnpurchasedCollectiblesShopCardV2(arg0) {
   const obj = {};
   const tmp = callback(React.useState(0), 2);
   const merged = Object.assign(arg0);
-  return callback3(importDefault(8704), obj, tmp2);
+  return callback3(importDefault(8592), obj, tmp2);
 }
 let obj16 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderWidth: 2, borderStyle: "dashed", borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED, padding: require("_createForOfIteratorHelperLoose").space.PX_32, alignItems: "center", justifyContent: "center", minHeight: 120 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/tooling/CollectiblesTool.tsx");

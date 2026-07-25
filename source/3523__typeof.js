@@ -1,7 +1,7 @@
 // Module ID: 3523
-// Function ID: 27150
+// Function ID: 27141
 // Name: _typeof
-// Dependencies: [3517, 3515]
+// Dependencies: [3518, 3516]
 
 // Module 3523 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const StandAloneQuarterParser = ((Parser) => {
-  class StandAloneQuarterParser {
+export const QuarterParser = ((Parser) => {
+  class QuarterParser {
     constructor() {
-      if (this instanceof StandAloneQuarterParser) {
+      if (this instanceof QuarterParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -162,7 +162,7 @@ export const StandAloneQuarterParser = ((Parser) => {
         tmp17 = outer1_8(applyResult, "priority", 120);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "Q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +177,9 @@ export const StandAloneQuarterParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class StandAloneQuarterParser {
+    class QuarterParser {
       constructor() {
-        if (this instanceof StandAloneQuarterParser) {
+        if (this instanceof QuarterParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -205,7 +205,7 @@ export const StandAloneQuarterParser = ((Parser) => {
           tmp17 = outer1_8(applyResult, "priority", 120);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "Q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +224,12 @@ export const StandAloneQuarterParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: StandAloneQuarterParser, writable: true, configurable: true };
-  StandAloneQuarterParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: QuarterParser, writable: true, configurable: true };
+  QuarterParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class StandAloneQuarterParser {
+    class QuarterParser {
       constructor() {
-        if (this instanceof StandAloneQuarterParser) {
+        if (this instanceof QuarterParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -255,7 +255,7 @@ export const StandAloneQuarterParser = ((Parser) => {
           tmp17 = outer1_8(applyResult, "priority", 120);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "Q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,27 +269,27 @@ export const StandAloneQuarterParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(StandAloneQuarterParser, Parser);
+    _setPrototypeOf(QuarterParser, Parser);
   }
-  let closure_0 = _createSuper(StandAloneQuarterParser);
+  let closure_0 = _createSuper(QuarterParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
-      if ("q" !== arg1) {
-        if ("qq" !== arg1) {
-          if ("qo" === arg1) {
+      if ("Q" !== arg1) {
+        if ("QQ" !== arg1) {
+          if ("Qo" === arg1) {
             const obj = { unit: "quarter" };
             return ordinalNumber.ordinalNumber(arg0, obj);
-          } else if ("qqq" === arg1) {
-            return ordinalNumber.quarter(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "standalone" });
-          } else if ("qqqqq" === arg1) {
-            return ordinalNumber.quarter(arg0, { width: "narrow", context: "standalone" });
+          } else if ("QQQ" === arg1) {
+            return ordinalNumber.quarter(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "formatting" });
+          } else if ("QQQQQ" === arg1) {
+            return ordinalNumber.quarter(arg0, { width: "narrow", context: "formatting" });
           } else {
-            return ordinalNumber.quarter(arg0, { width: "wide", context: "standalone" }) || ordinalNumber.quarter(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "standalone" });
+            return ordinalNumber.quarter(arg0, { width: "wide", context: "formatting" }) || ordinalNumber.quarter(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "formatting" });
           }
         }
       }
-      return callback(StandAloneQuarterParser[0]).parseNDigits(arg1.length, arg0);
+      return callback(QuarterParser[0]).parseNDigits(arg1.length, arg0);
     }
   };
   let items = [obj, , ];
@@ -312,6 +312,6 @@ export const StandAloneQuarterParser = ((Parser) => {
       return setUTCMonth;
     }
   };
-  _defineProperties(StandAloneQuarterParser.prototype, items);
-  return StandAloneQuarterParser;
+  _defineProperties(QuarterParser.prototype, items);
+  return QuarterParser;
 })(require("_defineProperties").Parser);

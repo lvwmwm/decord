@@ -1,9 +1,9 @@
-// Module ID: 8010
-// Function ID: 63467
+// Module ID: 5672
+// Function ID: 48700
 // Name: Future
 // Dependencies: [7, 6, 2]
 
-// Module 8010 (Future)
+// Module 5672 (Future)
 import _classCallCheck from "_classCallCheck";
 import importDefaultResult from "_defineProperties";
 

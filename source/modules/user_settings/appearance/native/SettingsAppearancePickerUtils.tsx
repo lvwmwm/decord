@@ -1,10 +1,10 @@
-// Module ID: 14238
-// Function ID: 109345
+// Module ID: 14249
+// Function ID: 109472
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 482, 4063, 3944, 3975, 3974, 689, 1315, 3834, 1212, 2]
+// Dependencies: [31, 482, 4064, 3945, 3976, 3975, 689, 1315, 3835, 1212, 2]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 14238 (_createForOfIteratorHelperLoose)
+// Module 14249 (_createForOfIteratorHelperLoose)
 import result from "result";
 import { ThemeTypes } from "sum";
 
@@ -90,7 +90,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getMaxColors() {
   let iter3;
-  const tmp = _createForOfIteratorHelperLoose(require(4063) /* getCustomThemesName */.getAllMobileThemes());
+  const tmp = _createForOfIteratorHelperLoose(require(4064) /* getCustomThemesName */.getAllMobileThemes());
   const iter = tmp();
   let iter2 = iter;
   let num = 0;
@@ -101,20 +101,20 @@ function getMaxColors() {
       let type = value.type;
       let tmp2 = require;
       let tmp3 = dependencyMap;
-      if (require(3944) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
+      if (require(3945) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
         let _Math3 = Math;
         let bound = Math.max(1, num);
       } else {
         let tmp7 = require;
         let tmp8 = dependencyMap;
-        if (require(3944) /* ClientThemeType */.ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
+        if (require(3945) /* ClientThemeType */.ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
           let _Math2 = Math;
           bound = Math.max(value.colors.length, num);
         } else {
           let tmp4 = require;
           let tmp5 = dependencyMap;
           bound = num;
-          if (require(3944) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
+          if (require(3945) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
             let _Math = Math;
             bound = Math.max(value.customThemeSettings.colors.length, num);
           }
@@ -132,23 +132,23 @@ function mix(arg0, PRIMARY_800) {
   let b;
   let g;
   let r;
-  let tmp2 = importDefault(3975);
+  let tmp2 = importDefault(3976);
   if ("light" !== arg0) {
     tmp2 = new tmp2(0, 0, 0, arg2);
   } else {
     tmp2 = new tmp2(255, 255, 255, arg3);
   }
-  const obj = require(3974) /* hexToRgb */;
-  ({ r, g, b } = require(3974) /* hexToRgb */.hexToRgb(PRIMARY_800));
+  const obj = require(3975) /* hexToRgb */;
+  ({ r, g, b } = require(3975) /* hexToRgb */.hexToRgb(PRIMARY_800));
   let num8 = 0.2;
   if ("light" !== arg0) {
     num8 = 0.3;
   }
-  const hexToRgbResult = require(3974) /* hexToRgb */.hexToRgb(PRIMARY_800);
-  let tmp10 = importDefault(3975);
+  const hexToRgbResult = require(3975) /* hexToRgb */.hexToRgb(PRIMARY_800);
+  let tmp10 = importDefault(3976);
   tmp10 = new tmp10(r, g, b, num8);
-  const obj2 = require(3974) /* hexToRgb */;
-  return require(3974) /* hexToRgb */.mixColors(tmp2, tmp10).toHexString();
+  const obj2 = require(3975) /* hexToRgb */;
+  return require(3975) /* hexToRgb */.mixColors(tmp2, tmp10).toHexString();
 }
 function padWithLast(mapped, maxColors) {
   let num = maxColors;
@@ -262,19 +262,19 @@ export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThe
       let type = value.type;
       let tmp4 = require;
       let tmp5 = dependencyMap;
-      if (require(3944) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
+      if (require(3945) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
         let tmp14 = convertStandardThemeToAnimatedTheme;
         let arr = items1.push(convertStandardThemeToAnimatedTheme(value, items, BACKGROUND_SURFACE_HIGH));
       } else {
         let tmp6 = require;
         let tmp7 = dependencyMap;
-        if (require(3944) /* ClientThemeType */.ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
+        if (require(3945) /* ClientThemeType */.ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
           let tmp12 = convertBackgroundGradientToAnimatedTheme;
           arr = items1.push(convertBackgroundGradientToAnimatedTheme(value, num, num2));
         } else {
           let tmp8 = require;
           let tmp9 = dependencyMap;
-          if (require(3944) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
+          if (require(3945) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
             let tmp10 = convertCustomBackgroundGradientToAnimatedTheme;
             let arr1 = items1.push(convertCustomBackgroundGradientToAnimatedTheme(value, num, num2));
           }
@@ -292,7 +292,7 @@ export const useLaunchWelcomeSystemTheme = function useLaunchWelcomeSystemTheme(
   } else {
     DARKER = ThemeTypes.DARKER;
   }
-  token = token(3834).useToken(importDefault(689).colors.BACKGROUND_BASE_LOW, DARKER);
+  token = token(3835).useToken(importDefault(689).colors.BACKGROUND_BASE_LOW, DARKER);
   let items = [token];
   return React.useMemo(() => {
     let obj = { theme: "system", name: null, midpointPercentage: 50, angle: 0 };

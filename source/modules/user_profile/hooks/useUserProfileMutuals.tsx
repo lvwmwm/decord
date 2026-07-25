@@ -1,10 +1,10 @@
-// Module ID: 11663
-// Function ID: 90568
+// Module ID: 11632
+// Function ID: 90312
 // Name: useUserProfileMutuals
-// Dependencies: [57, 31, 6901, 4970, 6855, 566, 22, 8510, 2]
+// Dependencies: [57, 31, 5892, 4971, 5630, 566, 22, 8270, 2]
 // Exports: default
 
-// Module 11663 (useUserProfileMutuals)
+// Module 11632 (useUserProfileMutuals)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -72,9 +72,9 @@ export default function useUserProfileMutuals(arg0) {
     }
     return tmp4;
   }, items4);
-  let tmp9 = importDefault(8510)(first);
-  let tmp10 = importDefault(8510)(tmp7);
-  let tmp11 = importDefault(8510)(tmp8);
+  let tmp9 = importDefault(8270)(first);
+  let tmp10 = importDefault(8270)(tmp7);
+  let tmp11 = importDefault(8270)(tmp8);
   obj = {};
   if (null != first) {
     tmp9 = first;

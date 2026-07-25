@@ -1,10 +1,10 @@
-// Module ID: 11914
-// Function ID: 92222
+// Module ID: 11890
+// Function ID: 92027
 // Name: getStyleConfig
-// Dependencies: [31, 27, 1921, 1917, 1838, 5510, 653, 1455, 33, 4130, 3834, 689, 4126, 1212, 11915, 566, 4939, 21, 9776, 5513, 11916, 1273, 8380, 5462, 8310, 11917, 8537, 4098, 3982, 1198, 5582, 3989, 1555, 11918, 4543, 5509, 2]
+// Dependencies: [31, 27, 1922, 1918, 1838, 5510, 653, 1455, 33, 4131, 3835, 689, 4127, 1212, 11891, 566, 4940, 21, 9700, 5513, 11892, 1273, 8138, 5462, 8045, 11893, 8297, 4099, 3983, 1198, 5582, 3990, 1555, 11894, 4544, 5509, 2]
 // Exports: default
 
-// Module 11914 (getStyleConfig)
+// Module 11890 (getStyleConfig)
 import getHighestActiveScreenIndex from "getHighestActiveScreenIndex";
 import { View } from "showActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ import closure_7 from "_createForOfIteratorHelperLoose";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import { Routes } from "ME";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import jsxProd from "module_11918";
+import jsxProd from "module_11894";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_11;
@@ -33,7 +33,7 @@ function getStyleConfig(arg0) {
 function Heading(themeType) {
   const tmp = getStyleConfig(themeType.themeType);
   let headingVariant = tmp.headingVariant;
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const token = obj.useToken(importDefault(689).modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
   obj = { accessibilityRole: "header", variant: null, color: "user-profile-about-me-heading-text" };
   if (null != token) {
@@ -42,7 +42,7 @@ function Heading(themeType) {
   obj.variant = headingVariant;
   obj.style = { marginBottom: tmp.headingSpacing };
   obj.children = themeType.children;
-  return closure_11(require(4126) /* Text */.Text, obj);
+  return closure_11(require(4127) /* Text */.Text, obj);
 }
 function TextWithIcon(arg0) {
   let accessibilityLabel;
@@ -53,7 +53,7 @@ function TextWithIcon(arg0) {
   const tmp2 = getStyleConfig(themeType);
   const obj = { style: items, accessible: true, accessibilityLabel };
   items = [callback3().textWithIcon, { columnGap: tmp2.columnGap }];
-  const items1 = [icon, callback(require(4126) /* Text */.Text, { variant: tmp2.textVariant, color: "text-default", children })];
+  const items1 = [icon, callback(require(4127) /* Text */.Text, { variant: tmp2.textVariant, color: "text-default", children })];
   obj.children = items1;
   return callback2(View, obj);
 }
@@ -79,7 +79,7 @@ function Bio(arg0) {
       obj.children = intl.string(require(1212) /* getSystemLocale */.t.ZzAR2Y);
       const items = [callback(Heading, obj), ];
       obj = { bio: previewBio, userId, textVariant: getStyleConfig(themeType).textVariant, lineClamp };
-      items[1] = callback(importDefault(11915), obj);
+      items[1] = callback(importDefault(11891), obj);
       obj.children = items;
       tmp2 = callback2(View, obj);
     }
@@ -116,10 +116,10 @@ function MemberJoinDates(userId) {
     }
     return member;
   });
-  let obj3 = userId(4939);
+  let obj3 = userId(4940);
   let obj4 = importDefault(21);
   const createdAtDate = obj3.getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
-  let obj5 = userId(4939);
+  let obj5 = userId(4940);
   let joinedAt;
   if (null != stateFromStores2) {
     joinedAt = stateFromStores2.joinedAt;
@@ -132,7 +132,7 @@ function MemberJoinDates(userId) {
   const items3 = [callback(Heading, obj), ];
   obj1 = { style: items4 };
   items4 = [tmp.memberJoinDates, { columnGap }];
-  obj2 = { themeType, icon: callback(userId(9776).ClydeIcon, { size: "xs" }) };
+  obj2 = { themeType, icon: callback(userId(9700).ClydeIcon, { size: "xs" }) };
   const intl2 = userId(1212).intl;
   obj2.accessibilityLabel = intl2.formatToPlainString(userId(1212).t["9t7w53"], { date: createdAtDate });
   obj2.children = createdAtDate;
@@ -141,7 +141,7 @@ function MemberJoinDates(userId) {
   if (tmp13) {
     obj3 = {};
     obj4 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DIVIDER_DOT };
-    const items6 = [callback(userId(4126).Text, obj4), ];
+    const items6 = [callback(userId(4127).Text, obj4), ];
     obj5 = { themeType };
     const obj6 = { guild: stateFromStores1, size: userId(5513).GuildIconSizes.XXSMALL };
     obj5.icon = callback(importDefault(5513), obj6);
@@ -162,7 +162,7 @@ function MemberJoinDates(userId) {
 }
 function FriendsSinceDate(themeType) {
   themeType = themeType.themeType;
-  let obj = require(11916) /* useFriendsSinceDate */;
+  let obj = require(11892) /* useFriendsSinceDate */;
   const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
   let tmp2 = null;
   if (null != friendsSinceDate) {
@@ -172,7 +172,7 @@ function FriendsSinceDate(themeType) {
     obj.children = intl.string(require(1212) /* getSystemLocale */.t.wlTO8v);
     const items = [callback(Heading, obj), ];
     const obj1 = { variant: getStyleConfig(themeType).textVariant, color: "text-default", children: friendsSinceDate };
-    items[1] = callback(require(4126) /* Text */.Text, obj1);
+    items[1] = callback(require(4127) /* Text */.Text, obj1);
     obj.children = items;
     tmp2 = callback2(View, obj);
   }
@@ -230,7 +230,7 @@ function PolicyLink(children) {
       obj = { href: url };
       return obj.handleClick(obj);
     },
-    children: callback(url(4126).Text, { variant: getStyleConfig(children.themeType).textVariant, color: "text-link", children: children.label })
+    children: callback(url(4127).Text, { variant: getStyleConfig(children.themeType).textVariant, color: "text-link", children: children.label })
   };
   return callback(url(1273).PressableOpacity, obj);
 }

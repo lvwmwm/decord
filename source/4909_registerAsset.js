@@ -1,11 +1,11 @@
 // Module ID: 4909
-// Function ID: 42259
+// Function ID: 42270
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 4909 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "4a45d5464752b264a97efb61145f651f", name: "img_account_sync_ebay_white", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "c8b1b3c79df9edf9120c2a71e2b3bfd3", name: "img_account_sync_ebay_light_and_dark", type: "png" };
 
 export default registerAsset.registerAsset(obj);

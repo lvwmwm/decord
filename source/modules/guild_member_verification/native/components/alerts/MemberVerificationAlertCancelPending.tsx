@@ -1,10 +1,10 @@
-// Module ID: 9195
-// Function ID: 71990
+// Module ID: 9087
+// Function ID: 71475
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [31, 33, 9196, 9192, 1212, 4543, 2]
+// Dependencies: [31, 33, 9088, 9084, 1212, 4544, 2]
 // Exports: default
 
-// Module 9195 (MemberVerificationAlertCancelPending)
+// Module 9087 (MemberVerificationAlertCancelPending)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -48,14 +48,14 @@ export default function MemberVerificationAlertCancelPending(guildId) {
   }
   obj1.text = confirmText;
   obj1.onPress = callback;
-  const items1 = [callback(guildId(4543).Button, obj1), ];
+  const items1 = [callback(guildId(4544).Button, obj1), ];
   const obj2 = {};
   const intl4 = guildId(1212).intl;
   obj2.text = intl4.string(guildId(1212).t.bANR0R);
   obj2.variant = "secondary";
   obj2.onPress = onClose;
-  items1[1] = callback(guildId(4543).Button, obj2);
+  items1[1] = callback(guildId(4544).Button, obj2);
   obj.children = items1;
   obj["buttons"] = closure_6(closure_5, obj);
-  return callback(onClose(9192), obj);
+  return callback(onClose(9084), obj);
 };

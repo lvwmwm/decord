@@ -1,10 +1,10 @@
-// Module ID: 15599
-// Function ID: 120269
+// Module ID: 15609
+// Function ID: 120397
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [57, 31, 27, 1838, 4566, 33, 4130, 689, 566, 8233, 8015, 8228, 5160, 8871, 9921, 1212, 4126, 15600, 5772, 9280, 2]
+// Dependencies: [57, 31, 27, 1838, 4567, 33, 4131, 689, 566, 7962, 5680, 7957, 5159, 8759, 9849, 1212, 4127, 15610, 9171, 9173, 2]
 // Exports: default
 
-// Module 15599 (ContextMenuCommandRootScreen)
+// Module 15609 (ContextMenuCommandRootScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -21,7 +21,7 @@ const require = arg1;
 ({ CONTEXT_MENU_COMMANDS_QUERY_LIMIT: closure_8, BuiltInSectionId: closure_9 } = TRUE_OPTION_NAME);
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = { flex: 1, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
 _createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
 _createForOfIteratorHelperLoose.sectionHeader = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);

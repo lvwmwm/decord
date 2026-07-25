@@ -1,10 +1,10 @@
-// Module ID: 14578
-// Function ID: 111196
+// Module ID: 14589
+// Function ID: 111323
 // Name: getSocialPermissions
-// Dependencies: [57, 31, 27, 7751, 653, 33, 4130, 689, 1212, 1920, 14579, 11736, 14582, 5678, 10127, 13769, 13601, 14583, 4126, 2]
+// Dependencies: [57, 31, 27, 7697, 653, 33, 4131, 689, 1212, 1921, 14590, 11706, 14593, 5855, 10059, 13780, 13612, 14594, 4127, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 14578 (getSocialPermissions)
+// Module 14589 (getSocialPermissions)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -38,7 +38,7 @@ function getSocialPermissions(allServersSelected) {
   if (!allServersSelected.allServersSelected) {
     const items5 = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
-    arraySpreadResult = HermesBuiltin.arraySpread(require(14579) /* MobileSetting */.GUILD_SPECIFIC_SETTINGS, arraySpreadResult);
+    arraySpreadResult = HermesBuiltin.arraySpread(require(14590) /* MobileSetting */.GUILD_SPECIFIC_SETTINGS, arraySpreadResult);
     tmp = items5;
   }
   obj.settings = tmp;
@@ -58,7 +58,7 @@ function getSocialPermissions(allServersSelected) {
   obj1.settings = items8;
   const intl5 = require(1212) /* getSystemLocale */.intl;
   const obj2 = {};
-  let obj5 = importDefault(1920);
+  let obj5 = importDefault(1921);
   obj2.helpArticle = obj5.getArticleURL(HelpdeskArticles.STEALTH_REMEDIATION_FEATURE_GUIDE);
   obj1.subLabel = intl5.format(require(1212) /* getSystemLocale */.t["0aNQo9"], obj2);
   items2[6] = obj1;
@@ -68,7 +68,7 @@ function getSocialPermissions(allServersSelected) {
   const items9 = [MobileSetting.SYNC_CONTACTS, MobileSetting.SYNC_CONTACTS_NAME, MobileSetting.STAFF_ONLY_FIND_YOUR_FRIENDS_DELETION];
   obj3.settings = items9;
   const intl7 = require(1212) /* getSystemLocale */.intl;
-  const obj4 = { onClick: require(11736) /* isContactSyncAvailable */.handleOpenLearnMoreLink };
+  const obj4 = { onClick: require(11706) /* isContactSyncAvailable */.handleOpenLearnMoreLink };
   obj3.subLabel = intl7.format(require(1212) /* getSystemLocale */.t["TWz/S+"], obj4);
   items2[7] = obj3;
   obj5 = {};
@@ -184,7 +184,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
   let showLoadingIndicator;
   let slayerSdkApplications;
   const tmp = _createForOfIteratorHelperLoose();
-  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(14583)());
+  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(14594)());
   if (showLoadingIndicator) {
     let obj = { style: tmp.loadingIndicator };
     let tmp7 = callback2(closure_5, obj);
@@ -193,18 +193,18 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     let obj1 = { variant: "text-md/semibold", color: "text-strong" };
     let intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t["+0U77d"]);
-    let items = [callback2(require(4126) /* Text */.Text, obj1), ];
+    let items = [callback2(require(4127) /* Text */.Text, obj1), ];
     let obj2 = { variant: "text-sm/normal", color: "text-muted" };
     let intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj3 = { helpdeskArticle: importDefault(1920).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
+    const obj3 = { helpdeskArticle: importDefault(1921).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
     obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.V8wClM, obj3);
-    items[1] = callback2(require(4126) /* Text */.Text, obj2);
+    items[1] = callback2(require(4127) /* Text */.Text, obj2);
     obj.children = items;
     tmp7 = callback3(closure_6, obj);
-    const obj6 = importDefault(1920);
+    const obj6 = importDefault(1921);
   } else {
     obj = { node: tmp3 };
-    tmp7 = callback2(importDefault(13601), obj);
+    tmp7 = callback2(importDefault(13612), obj);
   }
   return tmp7;
 };

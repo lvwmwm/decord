@@ -1,9 +1,9 @@
-// Module ID: 15881
-// Function ID: 122592
+// Module ID: 15892
+// Function ID: 122761
 // Name: StreamIcon
-// Dependencies: [31, 27, 4122, 1347, 4149, 4202, 10047, 10045, 10050, 653, 4148, 33, 3991, 1273, 4130, 689, 1324, 10046, 15837, 15882, 10820, 15883, 15835, 10746, 8905, 5515, 7577, 1212, 8906, 4542, 15833, 4309, 4194, 10554, 15764, 15884, 15885, 566, 15867, 7678, 15886, 3842, 4528, 5462, 8537, 8917, 4361, 8561, 4126, 8620, 8970, 15810, 2]
+// Dependencies: [31, 27, 4123, 1347, 4150, 4203, 9976, 9974, 9979, 653, 4149, 33, 3992, 1273, 4131, 689, 1324, 9975, 15848, 15893, 10792, 15894, 15846, 10710, 8793, 5515, 6673, 1212, 8794, 4543, 15844, 4310, 4195, 10546, 15775, 15895, 15896, 566, 15878, 7620, 15897, 3843, 4529, 5462, 8297, 8805, 4362, 8321, 4127, 8384, 8858, 15821, 2]
 
-// Module 15881 (StreamIcon)
+// Module 15892 (StreamIcon)
 import importAllResult from "isVoiceChannelFull";
 import get_ActivityIndicator from "getSystemLocale";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -16,9 +16,9 @@ import { VOICE_PANEL_CARD_INNER_PADDING as closure_12 } from "CARD_SIZE";
 import { ThemeTypes } from "ME";
 import ParticipantTypes from "ParticipantTypes";
 import jsxProd from "_isNativeReflectConstruct";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult1 from "module_3991";
+import importDefaultResult1 from "module_3992";
 
 let Platform;
 let Pressable;
@@ -32,8 +32,8 @@ let closure_9;
 const require = arg1;
 function StreamIcon(voicePlatform) {
   voicePlatform = voicePlatform.voicePlatform;
-  const controlsSpecs = importAllResult.useContext(importDefault(10046)).controlsSpecs;
-  let obj = controlsSpecs(3991);
+  const controlsSpecs = importAllResult.useContext(importDefault(9975)).controlsSpecs;
+  let obj = controlsSpecs(3992);
   const fn = function o() {
     const tmp = controlsSpecs.get().mode === outer1_11.HIDDEN;
     const obj = {};
@@ -54,13 +54,13 @@ function StreamIcon(voicePlatform) {
   fn.__workletHash = 3270040588948;
   fn.__initData = closure_22;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let tmp3 = importDefault(15837);
+  let tmp3 = importDefault(15848);
   if (voicePlatform === constants2.XBOX) {
-    tmp3 = importDefault(15882);
+    tmp3 = importDefault(15893);
   } else if (voicePlatform === constants2.MOBILE) {
-    tmp3 = importDefault(10820);
+    tmp3 = importDefault(10792);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp3 = importDefault(15883);
+    tmp3 = importDefault(15894);
   }
   obj = { source: tmp3 };
   const items = [callback2(importDefault(1324)("VoicePanelCardFloatingControls")).iconWithoutBackground, animatedStyle];
@@ -71,30 +71,30 @@ function AnimatedLabelIcon(icon) {
   icon = icon.icon;
   const tmp = callback2(importDefault(1324)("VoicePanelCardFloatingControls"));
   const type = icon.type;
-  if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
+  if (require(15846) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
     let obj = { voicePlatform: icon.voicePlatform };
     return callback(StreamIcon, obj);
-  } else if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (require(15846) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     obj = { style: tmp.speakerMuteIcon, hitSlop: 12, onPress: icon.onPress };
     const obj1 = { style: tmp.iconWithoutBackground };
-    obj.children = callback(require(10746) /* VoiceXIcon */.VoiceXIcon, obj1);
+    obj.children = callback(require(10710) /* VoiceXIcon */.VoiceXIcon, obj1);
     return callback(Pressable, obj);
-  } else if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (require(15846) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     const obj2 = { style: tmp.iconContainer, onPress: icon.onPress };
     const obj3 = { style: tmp.icon, state: icon.videoIconState };
-    obj2.children = callback(require(8905) /* VideoDisabledSvgIcon */.VideoIcon, obj3);
+    obj2.children = callback(require(8793) /* VideoDisabledSvgIcon */.VideoIcon, obj3);
     return callback(Pressable, obj2);
-  } else if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (require(15846) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     const obj4 = { style: tmp.iconContainer };
     const obj5 = { onPress: icon.onPress, hitSlop: 12 };
     const obj6 = { style: tmp.icon, state: icon.muteDeafenIconState, alwaysWhite: true };
-    obj5.children = callback(require(8905) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj6);
+    obj5.children = callback(require(8793) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj6);
     obj4.children = callback(Pressable, obj5);
     return callback(importDefault(5515), obj4);
-  } else if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+  } else if (require(15846) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     obj = { style: tmp.iconContainer, onPress: icon.onPress };
     const obj7 = { size: "xs", color: importDefault(689).colors.TEXT_FEEDBACK_WARNING };
-    obj.children = callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, obj7);
+    obj.children = callback(require(6673) /* CircleErrorIcon */.CircleErrorIcon, obj7);
     return callback(Pressable, obj);
   }
 }
@@ -107,8 +107,8 @@ function getAccessibilityLabel(arr, username) {
     const found = arr.find((type) => type.type === outer1_0(outer1_2[22]).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON);
     if (null != found) {
       const muteDeafenIconState = found.muteDeafenIconState;
-      if (require(8906) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED !== muteDeafenIconState) {
-        if (require(8906) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED_SERVER !== muteDeafenIconState) {
+      if (require(8794) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED !== muteDeafenIconState) {
+        if (require(8794) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED_SERVER !== muteDeafenIconState) {
           const intl = require(1212) /* getSystemLocale */.intl;
           obj = { username };
           return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.Hd1oVG, obj);
@@ -126,8 +126,8 @@ function getAccessibilityLabel(arr, username) {
 ({ MODE_CHANGE_PHYSICS: closure_9, VoicePanelModes: closure_10 } = VoicePanelModes);
 ({ ParticipantTypes: closure_14, VoicePlatforms: closure_15 } = ParticipantTypes);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = jsxProd);
-let closure_19 = require("module_3991").createAnimatedComponent(require("Button").Icon);
-let closure_20 = require("module_3991").createAnimatedComponent(Pressable);
+let closure_19 = require("module_3992").createAnimatedComponent(require("Button").Icon);
+let closure_20 = require("module_3992").createAnimatedComponent(Pressable);
 let closure_21 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = { labelPositionContainer: { position: "absolute", left: 8, right: 8, bottom: 8, justifyContent: "center", alignItems: "center", marginHorizontal: 8 } };
   obj = { display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", borderRadius: null, overflow: "hidden", paddingHorizontal: 8, backgroundColor: null, height: 28, gap: 4 };
@@ -159,7 +159,7 @@ let closure_24 = importAllResult.memo((participant) => {
   let layout;
   participant = participant.participant;
   ({ controlsHidden, isSelf, layout } = participant);
-  guildId = importAllResult.useContext(guildId(10046)).guildId;
+  guildId = importAllResult.useContext(guildId(9975)).guildId;
   const items = [guildId, participant];
   const callback = importAllResult.useCallback(() => {
     let obj = participant(outer1_2[30]);
@@ -213,12 +213,12 @@ let closure_24 = importAllResult.memo((participant) => {
     return obj.useAnimatedStyle(fn);
   })(controlsHidden);
   let tmp3 = closure_16;
-  obj.icon = guildId(15884);
+  obj.icon = guildId(15895);
   obj.onPress = callback;
   obj.style = tmp;
   obj.layout = layout;
-  const tmp4 = guildId(15764);
-  const result = participant(15833).isStableActivityParticipant(participant);
+  const tmp4 = guildId(15775);
+  const result = participant(15844).isStableActivityParticipant(participant);
   const intl = participant(1212).intl;
   const string = intl.string;
   const t = participant(1212).t;
@@ -394,7 +394,7 @@ let closure_34 = importAllResult.memo((controlsHidden) => {
 });
 let closure_35 = importAllResult.memo((controlsHidden) => {
   const obj = { theme: ThemeTypes.LIGHT, children: callback(closure_34, { controlsHidden: controlsHidden.controlsHidden }) };
-  return callback(require(3842) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(3843) /* ManaContext */.ThemeContextProvider, obj);
 });
 let closure_36 = { code: "function VoicePanelCardFloatingControlsTsx10(){const{hasHiddenVisibleIcon,focused,connected,mode,VoicePanelModes,controlsHidden}=this.__closure;const showIcon=hasHiddenVisibleIcon&&focused.get()==null;return!connected.get()||mode.get()===VoicePanelModes.PIP||!showIcon&&controlsHidden.get();}" };
 let closure_37 = { code: "function VoicePanelCardFloatingControlsTsx11(){const{isPillHidden}=this.__closure;return isPillHidden.get();}" };

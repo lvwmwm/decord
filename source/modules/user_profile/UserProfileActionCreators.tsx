@@ -1,10 +1,10 @@
-// Module ID: 7936
-// Function ID: 62897
+// Module ID: 7883
+// Function ID: 62871
 // Name: trackTryOutFeature
-// Dependencies: [5, 1849, 653, 1851, 1207, 3976, 1212, 675, 7937, 6923, 686, 7938, 507, 7941, 4029, 2]
+// Dependencies: [5, 1850, 653, 1852, 1207, 3977, 1212, 675, 7884, 5914, 686, 7885, 507, 7888, 4030, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 7936 (trackTryOutFeature)
+// Module 7883 (trackTryOutFeature)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -71,7 +71,7 @@ export const notifyUnsavedUserProfileChangesInModal = function notifyUnsavedUser
   ComponentDispatch.dispatch(constants.SHAKE_PROFILE_MODAL);
   const ComponentDispatch2 = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
   ComponentDispatch2.dispatch(constants.EMPHASIZE_NOTICE);
-  const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   const intl = require(1212) /* getSystemLocale */.intl;
   const intl2 = require(1212) /* getSystemLocale */.intl;
   AccessibilityAnnouncer.announce("" + intl.string(require(1212) /* getSystemLocale */.t.GP7JLE) + " " + intl2.string(require(1212) /* getSystemLocale */.t.gKoO1D));

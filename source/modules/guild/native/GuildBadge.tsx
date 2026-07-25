@@ -1,9 +1,9 @@
-// Module ID: 9207
-// Function ID: 72070
+// Module ID: 9099
+// Function ID: 71555
 // Name: checkGuildForFeature
-// Dependencies: [31, 653, 33, 5705, 5706, 9208, 9209, 1387, 1273, 2]
+// Dependencies: [31, 653, 33, 8398, 8399, 9100, 9101, 1387, 1273, 2]
 
-// Module 9207 (checkGuildForFeature)
+// Module 9099 (checkGuildForFeature)
 import "result";
 import { GuildFeatures } from "ME";
 import { jsx } from "jsxProd";

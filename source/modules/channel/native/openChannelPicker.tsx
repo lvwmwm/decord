@@ -1,10 +1,10 @@
-// Module ID: 10403
-// Function ID: 80224
+// Module ID: 10336
+// Function ID: 79877
 // Name: openChannelPicker
-// Dependencies: [1907, 1838, 4098, 10404, 1934, 1212, 2]
+// Dependencies: [1908, 1838, 4099, 10337, 1935, 1212, 2]
 // Exports: default
 
-// Module 10403 (openChannelPicker)
+// Module 10336 (openChannelPicker)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -33,7 +33,7 @@ export default function openChannelPicker(onClose) {
   }
   obj = {};
   obj = {};
-  const obj2 = importDefault(4098);
+  const obj2 = importDefault(4099);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.r2ptsz);
   obj.onClose = onClose.onClose;
@@ -43,5 +43,5 @@ export default function openChannelPicker(onClose) {
   obj.channels = found.map((channel) => channel.channel);
   obj.selectedChannel = selectedChannel;
   const merged1 = Object.assign(merged);
-  obj2.openLazy(require(1934) /* maybeLoadBundle */(10404, dependencyMap.paths), "ChannelPicker", obj);
+  obj2.openLazy(require(1935) /* maybeLoadBundle */(10337, dependencyMap.paths), "ChannelPicker", obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 4313
-// Function ID: 37811
+// Module ID: 4314
+// Function ID: 37822
 // Name: hasStream
 // Dependencies: [2]
 // Exports: hasStream
 
-// Module 4313 (hasStream)
+// Module 4314 (hasStream)
 const result = require("set").fileFinishedImporting("modules/guild_sidebar/ChannelListUtils.tsx");
 
 export const hasStream = function hasStream(voiceStates) {

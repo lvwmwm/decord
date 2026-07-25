@@ -1,16 +1,16 @@
-// Module ID: 6822
-// Function ID: 53818
+// Module ID: 5818
+// Function ID: 51092
 // Name: constructGoLiveSource
-// Dependencies: [4185, 4227, 6823, 6636, 3800, 2]
+// Dependencies: [4186, 4228, 5819, 5820, 3801, 2]
 // Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl, useFetchFractionalPremiumInfo
 
-// Module 6822 (constructGoLiveSource)
+// Module 5818 (constructGoLiveSource)
 import { ApplicationStreamPresets } from "makeButton";
 
 const result = require("ShopVariantsReturnStyle").fileFinishedImporting("modules/collectibles/utils/CollectiblesUtils.tsx");
 
 export const constructGoLiveSource = function constructGoLiveSource(resolution, frameRate, desktopSource) {
-  obj = { qualityOptions: obj, context: require(4227) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM };
+  obj = { qualityOptions: obj, context: require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM };
   obj = { preset: ApplicationStreamPresets.PRESET_CUSTOM, resolution, frameRate };
   if (null != desktopSource) {
     if (null != desktopSource.desktopSource) {
@@ -52,8 +52,8 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     if (null !== noCache.paymentGateway) {
       obj.payment_gateway = noCache.paymentGateway;
     }
-    if (noCache.variantsReturnStyle === require(6823) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = require(6823) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP;
+    if (noCache.variantsReturnStyle === require(5819) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP) {
+      obj.variants_return_style = require(5819) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;
@@ -71,8 +71,8 @@ export const getOptimizedProfileEffectThumbnailUrl = function getOptimizedProfil
   }
 };
 export const useFetchFractionalPremiumInfo = function useFetchFractionalPremiumInfo() {
-  const tmp = importDefault(6636)({ forceFetch: true });
-  let obj = require(3800) /* resetCache */;
+  const tmp = importDefault(5820)({ forceFetch: true });
+  let obj = require(3801) /* resetCache */;
   obj = { isLoading: !tmp.fetched, isFractionalPremiumActive: tmp.isFractionalPremiumActive, expiresAt: obj.dateFormat(tmp.endsAt, "L") };
   return obj;
 };

@@ -1,9 +1,9 @@
-// Module ID: 5034
-// Function ID: 43338
+// Module ID: 5035
+// Function ID: 43350
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1316, 5035, 662, 664, 4214, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1316, 5036, 662, 664, 4215, 22, 566, 686, 2]
 
-// Module 5034 (_isNativeReflectConstruct)
+// Module 5035 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import MAX_FAVORITES from "MAX_FAVORITES";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

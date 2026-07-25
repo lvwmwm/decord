@@ -1,10 +1,10 @@
-// Module ID: 15639
-// Function ID: 120528
+// Module ID: 15649
+// Function ID: 120656
 // Name: BurstReactionAnimationContainer
-// Dependencies: [31, 27, 1348, 4202, 33, 566, 10572, 3981, 10662, 15640, 477, 13555, 1212, 15642, 13550, 13420, 2, 15643, 15644, 15645, 15646, 15654, 15655, 15682]
+// Dependencies: [31, 27, 1348, 4203, 33, 566, 10459, 3982, 10626, 15650, 477, 13566, 1212, 15652, 13561, 13431, 2, 15653, 15654, 15655, 15656, 15664, 15666, 15693]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 15639 (BurstReactionAnimationContainer)
+// Module 15649 (BurstReactionAnimationContainer)
 import result from "result";
 import { NativeModules } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,10 +25,10 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct, closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(outer1_6.getChannelId()));
-  const hasPipParticipant = require(10572) /* usePipVideoOrStream */.useHasPipParticipant({ isActivityViewFocused: false });
-  const obj2 = require(10572) /* usePipVideoOrStream */;
-  const isModalOpen = require(3981) /* _createForOfIteratorHelperLoose */.useIsModalOpen();
-  require(10662) /* isVoicePanelEnabled */;
+  const hasPipParticipant = require(10459) /* usePipVideoOrStream */.useHasPipParticipant({ isActivityViewFocused: false });
+  const obj2 = require(10459) /* usePipVideoOrStream */;
+  const isModalOpen = require(3982) /* _createForOfIteratorHelperLoose */.useIsModalOpen();
+  require(10626) /* isVoicePanelEnabled */;
   let tmp6 = null;
   if (null != stateFromStores) {
     tmp6 = null;
@@ -38,7 +38,7 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
         tmp6 = null;
         if (!tmp5) {
           obj = { channel: stateFromStores };
-          tmp6 = jsx(importDefault(15640), { channel: stateFromStores });
+          tmp6 = jsx(importDefault(15650), { channel: stateFromStores });
         }
       }
     }
@@ -63,7 +63,7 @@ export const useAppKeyCommands = function useAppKeyCommands() {
     const items = [obj];
     return items;
   }, []);
-  const keyCommands = require(13550) /* _createForOfIteratorHelperLoose */.useKeyCommands(memo);
+  const keyCommands = require(13561) /* _createForOfIteratorHelperLoose */.useKeyCommands(memo);
 };
 export const useScreenReaderEnabled = function useScreenReaderEnabled() {
   const effect = React.useEffect(() => {

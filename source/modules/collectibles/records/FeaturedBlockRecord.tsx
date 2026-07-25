@@ -1,9 +1,9 @@
-// Module ID: 6806
-// Function ID: 53732
+// Module ID: 5802
+// Function ID: 51006
 // Name: FeaturedBlockRecord
-// Dependencies: [6, 7, 6807, 6805, 6808, 2]
+// Dependencies: [6, 7, 5803, 5801, 5804, 2]
 
-// Module 6806 (FeaturedBlockRecord)
+// Module 5802 (FeaturedBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { FeaturedCategorySubblockRecord as closure_4 } from "FeaturedCategorySubblockRecord";

@@ -1,8 +1,8 @@
-// Module ID: 12394
-// Function ID: 96368
-// Dependencies: [31, 1849, 3782, 6637, 1851, 33, 4130, 689, 566, 1390, 7420, 2]
+// Module ID: 12371
+// Function ID: 96179
+// Dependencies: [31, 1850, 3783, 5821, 1852, 33, 4131, 689, 566, 1390, 6501, 2]
 
-// Module 12394
+// Module 12371
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -41,7 +41,7 @@ const memoResult = require("result").memo(function BuyNitroAccountCredit() {
     return null != result && result;
   });
   obj = { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 };
-  return jsx(importDefault(7420), { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 });
+  return jsx(importDefault(6501), { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 });
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroAccountCredit.tsx");
 

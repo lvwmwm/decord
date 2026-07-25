@@ -1,10 +1,10 @@
-// Module ID: 1911
-// Function ID: 21565
+// Module ID: 1912
+// Function ID: 21576
 // Name: GuildRoleRecordTypeTag
 // Dependencies: [1388, 483, 22, 2]
 // Exports: hasAnyPermission, hasPermission, isEveryoneRole, isRoleEqual
 
-// Module 1911 (GuildRoleRecordTypeTag)
+// Module 1912 (GuildRoleRecordTypeTag)
 import { TypeTag } from "constructInPlace";
 
 const result = require("apply").fileFinishedImporting("records/GuildRoleRecord.tsx");

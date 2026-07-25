@@ -1,10 +1,10 @@
-// Module ID: 11070
-// Function ID: 86171
+// Module ID: 11026
+// Function ID: 85791
 // Name: useEmitAppealIngestionEvent
-// Dependencies: [31, 11053, 7589, 653, 566, 11058, 11060, 675, 2]
+// Dependencies: [31, 11009, 6699, 653, 566, 11014, 11016, 675, 2]
 // Exports: useEmitAppealIngestionEvent
 
-// Module 11070 (useEmitAppealIngestionEvent)
+// Module 11026 (useEmitAppealIngestionEvent)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SafetyHubAnalyticsActionSource as closure_5 } from "SafetyHubLinks";

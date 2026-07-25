@@ -1,10 +1,10 @@
-// Module ID: 14404
-// Function ID: 110101
+// Module ID: 14415
+// Function ID: 110228
 // Name: Row
-// Dependencies: [31, 1838, 4970, 4325, 653, 33, 5079, 5073, 566, 5513, 5502, 7636, 2]
+// Dependencies: [31, 1838, 4971, 4326, 653, 33, 5079, 5074, 566, 5513, 5502, 7575, 2]
 // Exports: default
 
-// Module 14404 (Row)
+// Module 14415 (Row)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -62,7 +62,7 @@ export default function UserSettingsHighlightNotifications() {
   let tmp2 = null;
   if (0 !== stateFromStoresArray.length) {
     obj = { children: tmp };
-    tmp2 = jsx(stateFromStoresArray(7636).Form, { children: tmp });
+    tmp2 = jsx(stateFromStoresArray(7575).Form, { children: tmp });
   }
   return tmp2;
 };

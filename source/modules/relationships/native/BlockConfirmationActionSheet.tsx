@@ -1,9 +1,9 @@
-// Module ID: 10450
-// Function ID: 80439
+// Module ID: 10384
+// Function ID: 80108
 // Name: BlockedInformationTable
-// Dependencies: [57, 31, 27, 1348, 3767, 1849, 8963, 10449, 653, 33, 4130, 689, 8539, 1212, 4088, 5501, 5165, 1273, 1557, 5462, 5482, 566, 7976, 5187, 675, 5189, 8541, 4126, 4319, 8542, 4098, 10451, 1934, 480, 4543, 8962, 7568, 1920, 3827, 2]
+// Dependencies: [57, 31, 27, 1348, 3768, 1850, 8851, 10383, 653, 33, 4131, 689, 8299, 1212, 4089, 5501, 5164, 1273, 1557, 5462, 5482, 566, 5656, 5187, 675, 5189, 8301, 4127, 4320, 8302, 4099, 10385, 1935, 480, 4544, 8850, 6664, 1921, 3828, 2]
 
-// Module 10450 (BlockedInformationTable)
+// Module 10384 (BlockedInformationTable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "IgnoredInformationTable";
 import { View } from "Text";
@@ -220,7 +220,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     const obj5 = { guildId: undefined, user: stateFromStores, animate: false, size: userId(1273).AvatarSizes.XLARGE, style: tmp.avatar };
     const items8 = [callback2(userId(1273).Avatar, obj5), ];
     const obj6 = { style: tmp.avatarIconContainer };
-    const obj7 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8541) };
+    const obj7 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8301) };
     obj6.children = callback2(userId(1273).Icon, obj7);
     items8[1] = callback2(closure_5, obj6);
     obj4.children = items8;
@@ -228,14 +228,14 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     const obj8 = { style: tmp.headerText, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header" };
     const intl = userId(1212).intl;
     const obj9 = {};
-    let obj14 = channelId(4319);
+    let obj14 = channelId(4320);
     obj9.username = obj14.getName(stateFromStores2, channelId, stateFromStores);
     obj8.children = intl.format(userId(1212).t.CIbzHR, obj9);
-    items9[1] = callback2(userId(4126).Text, obj8);
+    items9[1] = callback2(userId(4127).Text, obj8);
     const obj10 = { style: tmp.headerText, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header" };
     const intl2 = userId(1212).intl;
     obj10.children = intl2.string(userId(1212).t.S70jou);
-    items9[2] = callback2(userId(4126).Text, obj10);
+    items9[2] = callback2(userId(4127).Text, obj10);
     obj3.children = items9;
     const items10 = [callback3(closure_5, obj3), , , ];
     const obj11 = { style: tmp.tableContainer, children: callback2(BlockedInformationTable, {}) };
@@ -248,7 +248,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
       obj13.title = intl3.string(userId(1212).t["+BJTcB"]);
       obj13.hasIcons = true;
       obj14 = {};
-      const obj15 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8542) };
+      const obj15 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8302) };
       obj14.icon = callback2(userId(1273).Icon, obj15);
       const intl4 = userId(1212).intl;
       obj14.label = intl4.string(userId(1212).t.hC8tcc);
@@ -265,7 +265,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
         obj3.openLazy(userId(outer1_2[32])(outer1_2[31], outer1_2.paths), outer1_10, obj, "replaceTopSheet");
       };
       obj14.arrow = true;
-      obj13.children = callback2(userId(5165).TableRow, obj14);
+      obj13.children = callback2(userId(5164).TableRow, obj14);
       obj12.children = callback2(userId(5501).TableRowGroup, obj13);
       tmp31 = callback2(closure_5, obj12);
     }
@@ -294,7 +294,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     };
     obj17.disabled = first;
     obj17.loading = first;
-    const items11 = [callback2(userId(4543).Button, obj17), ];
+    const items11 = [callback2(userId(4544).Button, obj17), ];
     const obj18 = { style: tmp.footerText, variant: "text-sm/normal", color: "text-default" };
     const intl8 = userId(1212).intl;
     const obj19 = {
@@ -307,7 +307,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
         }
     };
     obj18.children = intl8.format(userId(1212).t.CpTgBn, obj19);
-    items11[1] = callback2(userId(4126).Text, obj18);
+    items11[1] = callback2(userId(4127).Text, obj18);
     obj16.children = items11;
     items10[3] = callback3(closure_5, obj16);
     obj2.children = items10;

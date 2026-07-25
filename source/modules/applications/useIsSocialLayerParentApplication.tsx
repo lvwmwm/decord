@@ -1,16 +1,16 @@
-// Module ID: 8999
-// Function ID: 70855
+// Module ID: 8887
+// Function ID: 70334
 // Name: getIsSocialLayerParentApplication
-// Dependencies: [31, 653, 7371, 2]
+// Dependencies: [31, 653, 5664, 2]
 // Exports: default
 
-// Module 8999 (getIsSocialLayerParentApplication)
+// Module 8887 (getIsSocialLayerParentApplication)
 import result from "result";
 import { ApplicationFlags } from "ME";
 
 const require = arg1;
 function getIsSocialLayerParentApplication(application) {
-  return require(7371) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARENT);
+  return require(5664) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARENT);
 }
 const result = require("getApplicationFlags").fileFinishedImporting("modules/applications/useIsSocialLayerParentApplication.tsx");
 

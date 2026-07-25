@@ -1,10 +1,10 @@
-// Module ID: 4366
-// Function ID: 38709
+// Module ID: 4367
+// Function ID: 38720
 // Name: unambiguousRegex
-// Dependencies: [5, 57, 4367, 1849, 653, 1851, 4118, 4368, 4369, 675, 3799, 4462, 1212, 4329, 1327, 566, 3776, 2]
+// Dependencies: [5, 57, 4368, 1850, 653, 1852, 4119, 4369, 4370, 675, 3800, 4463, 1212, 4330, 1327, 566, 3777, 2]
 // Exports: findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getGiftCodeURL, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 4366 (unambiguousRegex)
+// Module 4367 (unambiguousRegex)
 import closure_3 from "GuildFeatures";
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -29,8 +29,8 @@ function unambiguousRegex(arg0, arg1) {
   return mapped.join("-?");
 }
 function getGiftExperience(arg0) {
-  if (!require(4368) /* isTablet */.isMobile) {
-    if (!require(4368) /* isTablet */.isTablet) {
+  if (!require(4369) /* isTablet */.isMobile) {
+    if (!require(4369) /* isTablet */.isTablet) {
       if (null == arg0) {
         if (!arg1) {
           let DEFAULT = obj.CUSTOM_STYLE;
@@ -68,9 +68,9 @@ async function _resolveGiftCode(arg0, arg1) {
 }
 function getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan) {
   const _require = getOrFetchSubscriptionPlan;
-  const match = _require(4329).match(getOrFetchSubscriptionPlan);
+  const match = _require(4330).match(getOrFetchSubscriptionPlan);
   let obj = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
-  const str = _require(4329);
+  const str = _require(4330);
   obj = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };
   const withResult = match.with(obj, () => {
     const intl = getOrFetchSubscriptionPlan(outer1_2[12]).intl;
@@ -147,7 +147,7 @@ function getGiftCodeRedeemError(code, currentUser) {
   } else if (constants2.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE === code) {
     const intl6 = require(1212) /* getSystemLocale */.intl;
     const obj = {};
-    const obj2 = require(3776) /* _createForOfIteratorHelperLoose */;
+    const obj2 = require(3777) /* _createForOfIteratorHelperLoose */;
     const intl7 = require(1212) /* getSystemLocale */.intl;
     const string = intl7.string;
     const t = require(1212) /* getSystemLocale */.t;
@@ -177,11 +177,11 @@ function getGiftCodeRedeemError(code, currentUser) {
 }
 ({ Endpoints: closure_7, AnalyticEvents: closure_8, AbortCodes: closure_9, GiftCodeModalStates: closure_10, MessageEmbedTypes: closure_11, MessageTypes: closure_12 } = ME);
 ({ PremiumTypes: closure_13, SubscriptionIntervalTypes: closure_14 } = GuildFeatures);
-let items = [require("set").escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...items1.map((arg0) => importDefault(4118).escape(arg0))];
+let items = [require("set").escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...items1.map((arg0) => importDefault(4119).escape(arg0))];
 items1 = ["discordapp.com/gifts", "discord.com/gifts"];
 let regExp = new RegExp("(?: |^|https?://)(?:" + items.join("|") + ")/([a-z0-9-]+)", "gi");
 const items2 = ["discord.com/billing/promotions", "promos.discord.gg"];
-const items3 = [...items2.map((arg0) => importDefault(4118).escape(arg0))];
+const items3 = [...items2.map((arg0) => importDefault(4119).escape(arg0))];
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const items4 = [require("ME"), require("ME"), require("GuildFeatures"), "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"];
 const regExp2 = new RegExp("^(WUMP-?)?(" + items4.join("|") + ")$");
@@ -298,7 +298,7 @@ export const resolveGiftCode = function resolveGiftCode() {
 export const trackGiftCodeCopy = function trackGiftCodeCopy(giftCode, sku) {
   let obj = importDefault(675);
   obj = {};
-  const merged = Object.assign(importDefault(4462)(sku, false, false));
+  const merged = Object.assign(importDefault(4463)(sku, false, false));
   const merged1 = Object.assign(giftCode.analyticsData);
   obj.track(constants.GIFT_CODE_COPIED, obj);
 };

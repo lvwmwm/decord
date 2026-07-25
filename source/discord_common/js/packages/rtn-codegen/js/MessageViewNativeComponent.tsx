@@ -1,9 +1,9 @@
-// Module ID: 9330
-// Function ID: 72822
+// Module ID: 9223
+// Function ID: 72311
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 9330 (__INTERNAL_VIEW_CONFIG)
+// Module 9223 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "DCDMessageView", validAttributes: { row: true } };

@@ -1,14 +1,14 @@
-// Module ID: 4066
-// Function ID: 33872
+// Module ID: 4067
+// Function ID: 33883
 // Name: useTheme
-// Dependencies: [653, 3976, 2]
+// Dependencies: [653, 3977, 2]
 // Exports: useThemeIndex
 
-// Module 4066 (useTheme)
+// Module 4067 (useTheme)
 import { ThemeTypes } from "ME";
 
 function useTheme() {
-  return require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme;
+  return require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme;
 }
 function getThemeIndex(arg0) {
   if (ThemeTypes.DARK === arg0) {

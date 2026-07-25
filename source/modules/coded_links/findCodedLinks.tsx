@@ -1,10 +1,10 @@
-// Module ID: 4114
-// Function ID: 34026
+// Module ID: 4115
+// Function ID: 34037
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4115, 653, 655, 4118, 1445, 4119, 4120, 7765, 4563, 4046, 7872, 4116, 6977, 8993, 8354, 6931, 4988, 2]
+// Dependencies: [4116, 653, 655, 4119, 1445, 4120, 4121, 7711, 4564, 4047, 7819, 4117, 5968, 8881, 8112, 5922, 4989, 2]
 // Exports: findCodedLink, isSuspiciousCodedLink, remainingPathFromDiscordHostMatch
 
-// Module 4114 (_createForOfIteratorHelperLoose)
+// Module 4115 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PRIMARY_DOMAIN } from "ME";
 import { CollectibleShopTab } from "items";
@@ -179,9 +179,9 @@ function findCodedLinks(sanitizeUrlResult) {
     let obj = { allowLinks: true };
     let items = [];
     let combined = items;
-    const _default = combined(4120).default;
-    const parseToASTResult = combined(4120).default.parseToAST(str, true, obj);
-    combined(7765).walkAst(parseToASTResult, (type) => {
+    const _default = combined(4121).default;
+    const parseToASTResult = combined(4121).default.parseToAST(str, true, obj);
+    combined(7711).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK;
       if (tmp) {
         tmp = "string" === typeof type.target;
@@ -201,7 +201,7 @@ function findCodedLinks(sanitizeUrlResult) {
       match = [];
     }
     combined = items.concat(match);
-    const obj2 = combined(7765);
+    const obj2 = combined(7711);
     return (function coerceLinksToCodedLinks(combined) {
       let done;
       if (null != combined) {
@@ -612,7 +612,7 @@ export const isSuspiciousCodedLink = function isSuspiciousCodedLink(arr) {
         let hasItem;
         if (null != tmp2.pathname) {
           const formatted = str.toUpperCase();
-          hasItem = formatted.includes(require(4119) /* CodedLinkType */.CodedLinkType.INVITE);
+          hasItem = formatted.includes(require(4120) /* CodedLinkType */.CodedLinkType.INVITE);
         }
         return null != hasItem && hasItem;
       }

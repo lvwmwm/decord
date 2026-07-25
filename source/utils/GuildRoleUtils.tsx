@@ -1,10 +1,10 @@
-// Module ID: 1912
-// Function ID: 21571
+// Module ID: 1913
+// Function ID: 21582
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [21, 665, 1913, 1914, 2]
+// Dependencies: [21, 665, 1914, 1915, 2]
 // Exports: doesRoleSortHigher, filterRoleDeletes, inviteRoleToDisplayData, sortGuildRoleRecords, sortInviteRoles
 
-// Module 1912 (_createForOfIteratorHelperLoose)
+// Module 1913 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;
@@ -135,8 +135,8 @@ export const inviteRoleToDisplayData = function inviteRoleToDisplayData(id, id) 
   obj.colorString = int2hexResult;
   let result = null;
   if (null != id.colors) {
-    result = require(1913) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
-    const obj3 = require(1913) /* extractColorStringsFromServerColors */;
+    result = require(1914) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
+    const obj3 = require(1914) /* extractColorStringsFromServerColors */;
   }
   obj.colorStrings = result;
   const icon = id.icon;
@@ -189,7 +189,7 @@ export const filterRoleDeletes = function filterRoleDeletes(id, nullablePartitio
         value = iter3.value;
         let tmp7 = importAll;
         let tmp8 = dependencyMap;
-        obj = importAll(1914);
+        obj = importAll(1915);
         obj[value.id] = obj.fromServer(id, value);
         let iter4 = tmp6();
         iter3 = iter4;

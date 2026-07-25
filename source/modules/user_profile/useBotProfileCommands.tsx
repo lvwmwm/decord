@@ -1,17 +1,17 @@
-// Module ID: 11917
-// Function ID: 92251
+// Module ID: 11893
+// Function ID: 92056
 // Name: useBotProfileCommands
-// Dependencies: [31, 8233, 1881, 2]
+// Dependencies: [31, 7962, 1882, 2]
 // Exports: default
 
-// Module 11917 (useBotProfileCommands)
+// Module 11893 (useBotProfileCommands)
 import result from "result";
 
 const require = arg1;
 const result = require("PermissionOverwriteType").fileFinishedImporting("modules/user_profile/useBotProfileCommands.tsx");
 
 export default function useBotProfileCommands(channel) {
-  let obj = importAll(8233);
+  let obj = importAll(7962);
   const accessibleCommandsForApplication = obj.useAccessibleCommandsForApplication(channel, arg1, arg2);
   const commands = accessibleCommandsForApplication.commands;
   obj = {

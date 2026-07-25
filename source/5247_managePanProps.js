@@ -1,5 +1,5 @@
 // Module ID: 5247
-// Function ID: 45290
+// Function ID: 45295
 // Name: managePanProps
 // Dependencies: [65, 5236, 5234]
 // Exports: managePanProps

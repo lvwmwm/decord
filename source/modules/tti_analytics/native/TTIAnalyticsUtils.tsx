@@ -1,10 +1,10 @@
-// Module ID: 6707
-// Function ID: 51956
+// Module ID: 5703
+// Function ID: 49269
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6708, 4044, 1278, 1194, 1348, 683, 653, 6911, 1355, 33, 4110, 6912, 491, 1554, 3982, 3981, 20, 1184, 675, 6913, 3988, 6915, 14, 664, 6916, 4471, 4561, 1934, 2]
+// Dependencies: [5, 5704, 4045, 1278, 1194, 1348, 683, 653, 5902, 1355, 33, 4111, 5903, 491, 1554, 3983, 3982, 20, 1184, 675, 5904, 3989, 5906, 14, 664, 5907, 4472, 4562, 1935, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 6707 (_createForOfIteratorHelperLoose)
+// Module 5703 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -101,30 +101,30 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getDeviceMetadata() {
   if (null == obj) {
-    obj = { device_model: require(4110) /* getSystemVersion */.getDeviceModel() };
-    const obj2 = require(4110) /* getSystemVersion */;
-    obj.device_brand = require(4110) /* getSystemVersion */.getDeviceBrand();
-    const obj3 = require(4110) /* getSystemVersion */;
-    obj.device_product = require(4110) /* getSystemVersion */.getDeviceProduct();
-    const obj4 = require(4110) /* getSystemVersion */;
-    obj.device_manufacturer = require(4110) /* getSystemVersion */.getDeviceManufacturer();
-    const obj5 = require(4110) /* getSystemVersion */;
-    obj.smallest_screen_width_dp = require(4110) /* getSystemVersion */.getSmallestScreenWidthDp();
-    obj.device_performance_class = importDefault(6912)();
-    const obj6 = require(4110) /* getSystemVersion */;
-    obj.soc_name = require(4110) /* getSystemVersion */.getSocName();
-    const obj7 = require(4110) /* getSystemVersion */;
-    obj.ram_size = require(4110) /* getSystemVersion */.getRamSize();
-    const obj8 = require(4110) /* getSystemVersion */;
-    obj.max_cpu_freq = require(4110) /* getSystemVersion */.getMaxCpuFreq();
-    const obj9 = require(4110) /* getSystemVersion */;
+    obj = { device_model: require(4111) /* getSystemVersion */.getDeviceModel() };
+    const obj2 = require(4111) /* getSystemVersion */;
+    obj.device_brand = require(4111) /* getSystemVersion */.getDeviceBrand();
+    const obj3 = require(4111) /* getSystemVersion */;
+    obj.device_product = require(4111) /* getSystemVersion */.getDeviceProduct();
+    const obj4 = require(4111) /* getSystemVersion */;
+    obj.device_manufacturer = require(4111) /* getSystemVersion */.getDeviceManufacturer();
+    const obj5 = require(4111) /* getSystemVersion */;
+    obj.smallest_screen_width_dp = require(4111) /* getSystemVersion */.getSmallestScreenWidthDp();
+    obj.device_performance_class = importDefault(5903)();
+    const obj6 = require(4111) /* getSystemVersion */;
+    obj.soc_name = require(4111) /* getSystemVersion */.getSocName();
+    const obj7 = require(4111) /* getSystemVersion */;
+    obj.ram_size = require(4111) /* getSystemVersion */.getRamSize();
+    const obj8 = require(4111) /* getSystemVersion */;
+    obj.max_cpu_freq = require(4111) /* getSystemVersion */.getMaxCpuFreq();
+    const obj9 = require(4111) /* getSystemVersion */;
   }
   return obj;
 }
 function getRedesignScreenName() {
   let name;
   let params;
-  const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
   let currentRoute;
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -178,9 +178,9 @@ function getRedesignScreenName() {
       const _HermesInternal = HermesInternal;
       return "redesign-" + name;
     }
-    obj4 = require(3981) /* _createForOfIteratorHelperLoose */;
+    obj4 = require(3982) /* _createForOfIteratorHelperLoose */;
   }
-  const obj = require(3982) /* getRootNavigationRef */;
+  const obj = require(3983) /* getRootNavigationRef */;
 }
 function sharedProperties(screen_name, has_cached_data) {
   const obj = { load_id: v1, duration_ms_since_app_opened: Date.now() - arg2, screen_name, has_cached_data };
@@ -479,7 +479,7 @@ export const trackAppUIViewed = function trackAppUIViewed(ModalScreen, arg1, has
   if (hasCacheResult === undefined) {
     hasCacheResult = closure_4.hasCache();
   }
-  const AppStartInfo = require(6913) /* AppStartInfo */.AppStartInfo;
+  const AppStartInfo = require(5904) /* AppStartInfo */.AppStartInfo;
   if (!AppStartInfo.getAppUIViewed()) {
     (function trackAppUIViewedAsync(ModalScreen, arg1, hasCacheResult) {
       return outer1_27(...arguments);

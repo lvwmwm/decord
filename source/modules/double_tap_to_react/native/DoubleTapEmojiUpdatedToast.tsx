@@ -1,10 +1,10 @@
-// Module ID: 9375
-// Function ID: 73186
+// Module ID: 9281
+// Function ID: 72711
 // Name: ToastEmoji
-// Dependencies: [31, 4122, 1852, 33, 4130, 689, 477, 566, 1392, 5151, 4126, 1212, 4528, 3843, 3831, 2]
+// Dependencies: [31, 4123, 1853, 33, 4131, 689, 477, 566, 1392, 5150, 4127, 1212, 4529, 3844, 3832, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9375 (ToastEmoji)
+// Module 9281 (ToastEmoji)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { EMOJI_URL_BASE_SIZE } from "set";
@@ -60,7 +60,7 @@ function ToastText(emoji) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { emojiName: emoji.emoji.name };
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.nKY0Fl, obj);
-  return jsx(require(4126) /* Text */.Text, { emojiName: emoji.emoji.name });
+  return jsx(require(4127) /* Text */.Text, { emojiName: emoji.emoji.name });
 }
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
@@ -87,9 +87,9 @@ const result = set.fileFinishedImporting("modules/double_tap_to_react/native/Dou
 export { ToastEmoji };
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
-  let obj = emoji(4528);
+  let obj = emoji(4529);
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = emoji(3843).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = emoji(3844).AccessibilityAnnouncer;
     const intl = emoji(1212).intl;
     obj = { emojiName: emoji.name };
     AccessibilityAnnouncer.announce(intl.formatToPlainString(emoji(1212).t.nKY0Fl, obj));
@@ -104,7 +104,7 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
         },
       toastDurationMs: 3000
     };
-    importDefault(3831).open(obj);
-    const obj2 = importDefault(3831);
+    importDefault(3832).open(obj);
+    const obj2 = importDefault(3832);
   }
 };

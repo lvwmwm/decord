@@ -1,10 +1,10 @@
-// Module ID: 15012
-// Function ID: 114380
+// Module ID: 15022
+// Function ID: 114507
 // Name: renderCategoryItem
-// Dependencies: [31, 27, 6763, 5076, 4325, 10289, 33, 4130, 477, 4126, 4660, 689, 8570, 10011, 9137, 1324, 566, 4320, 5072, 1212, 5496, 10012, 5776, 2]
+// Dependencies: [31, 27, 5756, 5077, 4326, 10222, 33, 4131, 477, 4127, 4661, 689, 8330, 9940, 9029, 1324, 566, 4321, 5073, 1212, 5496, 9941, 6679, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory
 
-// Module 15012 (renderCategoryItem)
+// Module 15022 (renderCategoryItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -66,7 +66,7 @@ function renderCategoryItem(arg0) {
     obj.color = str;
     obj.style = styles.categoryText;
     obj.children = name;
-    tmp3Result = callback(require(4126) /* Text */.Text, obj);
+    tmp3Result = callback(require(4127) /* Text */.Text, obj);
     const tmp3 = callback;
   }
   let tmp6 = null;
@@ -102,7 +102,7 @@ function renderCategoryItem(arg0) {
     }
     return tmp18;
   }
-  tmp18 = callback(require(4660) /* PressableBase */.PressableHighlight, { accessibilityRole: "header", accessibilityState, onPress, onLongPress, style: items, children: tmp9Result });
+  tmp18 = callback(require(4661) /* PressableBase */.PressableHighlight, { accessibilityRole: "header", accessibilityState, onPress, onLongPress, style: items, children: tmp9Result });
 }
 function renderCollapsibleCategoryItem(collapsed) {
   collapsed = collapsed.collapsed;
@@ -113,7 +113,7 @@ function renderCollapsibleCategoryItem(collapsed) {
   const colors = importDefault(689).colors;
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["icon"] = callback(require(8570) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? _createForOfIteratorHelperLoose : obj1 });
+  obj["icon"] = callback(require(8330) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? _createForOfIteratorHelperLoose : obj1 });
   obj = { expanded: !collapsed };
   obj["accessibilityState"] = obj;
   obj["isRefreshEnabled"] = collapsed.isRefreshEnabled;
@@ -196,7 +196,7 @@ export const CategoryChannel = function CategoryChannel(channel) {
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ collapsed: outer1_6.isCollapsed(channel.id), muted: outer1_7.isChannelMuted(channel.getGuildId(), channel.id) }));
   const collapsed = stateFromStoresObject.collapsed;
   const tmp2 = styles(tmp);
-  obj = { name: importDefault(4320)(channel), muted: stateFromStoresObject.muted, collapsed, onPress, onLongPress, withMarginTop: channel.withMarginTop, styles: tmp2, isRefreshEnabled: tmp };
+  obj = { name: importDefault(4321)(channel), muted: stateFromStoresObject.muted, collapsed, onPress, onLongPress, withMarginTop: channel.withMarginTop, styles: tmp2, isRefreshEnabled: tmp };
   ({ onPress, onLongPress } = useCategoryPressEvents(channel.id, collapsed));
   return renderCollapsibleCategoryItem(obj);
 };

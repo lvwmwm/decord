@@ -1,7 +1,7 @@
 // Module ID: 5612
-// Function ID: 47818
+// Function ID: 47823
 // Name: STOREFRONT_MARKETING_GUILD_ID
-// Dependencies: [1856, 2]
+// Dependencies: [1857, 2]
 // Exports: getChannelsGameShopPrefix, isGameShopPath
 
 // Module 5612 (STOREFRONT_MARKETING_GUILD_ID)

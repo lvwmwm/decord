@@ -1,10 +1,10 @@
-// Module ID: 7626
-// Function ID: 60726
+// Module ID: 6723
+// Function ID: 59304
 // Name: _requestGoogleWalletVerification
-// Dependencies: [5, 653, 507, 7627, 2]
+// Dependencies: [5, 653, 507, 6724, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 7626 (_requestGoogleWalletVerification)
+// Module 6723 (_requestGoogleWalletVerification)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

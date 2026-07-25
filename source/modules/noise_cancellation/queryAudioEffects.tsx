@@ -1,10 +1,10 @@
-// Module ID: 12881
-// Function ID: 100092
+// Module ID: 12892
+// Function ID: 100219
 // Name: _queryAudioEffects
 // Dependencies: [5, 653, 4, 478, 686, 675, 2]
 // Exports: default
 
-// Module 12881 (_queryAudioEffects)
+// Module 12892 (_queryAudioEffects)
 import expandLocation from "expandLocation";
 import { AnalyticEvents } from "ME";
 

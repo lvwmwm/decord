@@ -1,10 +1,10 @@
-// Module ID: 7425
-// Function ID: 59684
+// Module ID: 6506
+// Function ID: 58139
 // Name: usePromotionMarketingComponent
-// Dependencies: [57, 31, 6688, 7129, 7426, 566, 7131, 2]
+// Dependencies: [57, 31, 6157, 6207, 6507, 566, 6209, 2]
 // Exports: usePromotionMarketingComponent
 
-// Module 7425 (usePromotionMarketingComponent)
+// Module 6506 (usePromotionMarketingComponent)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

@@ -1,9 +1,9 @@
-// Module ID: 9806
-// Function ID: 76209
+// Module ID: 9730
+// Function ID: 75804
 // Name: importDefaultResult1
-// Dependencies: [6784, 689, 9807, 2]
+// Dependencies: [5780, 689, 9731, 2]
 
-// Module 9806 (importDefaultResult1)
+// Module 9730 (importDefaultResult1)
 import importDefaultResult from "tinycolor";
 import saturateResult from "_createForOfIteratorHelperLoose";
 import importDefaultResult1 from "tinycolor";

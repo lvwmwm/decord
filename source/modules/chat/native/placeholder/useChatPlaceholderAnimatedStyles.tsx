@@ -1,10 +1,10 @@
-// Module ID: 11698
-// Function ID: 90737
+// Module ID: 11667
+// Function ID: 90481
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [4122, 1273, 566, 3991, 4131, 4134, 2]
+// Dependencies: [4123, 1273, 566, 3992, 4132, 4135, 2]
 // Exports: default
 
-// Module 11698 (useChatPlaceholderAnimatedStyles)
+// Module 11667 (useChatPlaceholderAnimatedStyles)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

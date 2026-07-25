@@ -1,10 +1,10 @@
-// Module ID: 7104
-// Function ID: 57141
+// Module ID: 6122
+// Function ID: 54953
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1348, 3767, 1849, 5043, 653, 4320, 2]
+// Dependencies: [1348, 3768, 1850, 5044, 653, 4321, 2]
 // Exports: default
 
-// Module 7104 (createAutocompleterResultForChannelId)
+// Module 6122 (createAutocompleterResultForChannelId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -31,7 +31,7 @@ export default function createAutocompleterResultForChannelId(channelId, arg1, c
   if (null == channel) {
     return null;
   } else {
-    const channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, obj1, tmp);
+    const channelName = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, obj1, tmp);
     const type = channel.type;
     if (ChannelTypes.DM === type) {
       const user = obj1.getUser(channel.getRecipientId());
@@ -54,6 +54,6 @@ export default function createAutocompleterResultForChannelId(channelId, arg1, c
       const obj2 = { type: AutocompleterResultTypes.VOICE_CHANNEL, record: channel, score: 0, comparator: channelName };
       return obj2;
     }
-    const obj8 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+    const obj8 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
   }
 };

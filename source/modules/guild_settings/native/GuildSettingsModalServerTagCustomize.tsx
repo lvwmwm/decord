@@ -1,10 +1,10 @@
-// Module ID: 16324
-// Function ID: 127031
+// Module ID: 16335
+// Function ID: 127199
 // Name: PX_16
-// Dependencies: [57, 31, 27, 8461, 8483, 7721, 33, 689, 4130, 8485, 1450, 8462, 566, 8463, 8482, 4098, 16325, 1934, 5583, 11911, 7636, 4541, 7574, 1212, 4086, 4126, 16326, 16330, 2]
+// Dependencies: [57, 31, 27, 8219, 8243, 7665, 33, 689, 4131, 8245, 1450, 8220, 566, 8221, 8242, 4099, 16336, 1935, 5583, 11887, 7575, 4542, 6670, 1212, 4087, 4127, 16337, 16341, 2]
 // Exports: default
 
-// Module 16324 (PX_16)
+// Module 16335 (PX_16)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "GuildSettingsServerTagColorGrid";

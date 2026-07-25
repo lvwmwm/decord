@@ -1,10 +1,10 @@
-// Module ID: 15362
-// Function ID: 117122
+// Module ID: 15372
+// Function ID: 117250
 // Name: ThreadChannelStarterMessage
-// Dependencies: [31, 6829, 4349, 33, 7710, 566, 4660, 1198, 9329, 2]
+// Dependencies: [31, 5829, 4350, 33, 7654, 566, 4661, 1198, 9222, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 15362 (ThreadChannelStarterMessage)
+// Module 15372 (ThreadChannelStarterMessage)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ReferencedMessageState } from "_isNativeReflectConstruct";
@@ -38,8 +38,8 @@ export const ThreadChannelStarterMessage = function ThreadChannelStarterMessage(
         }
     };
     obj = { rowGenerator: closure_7, message: stateFromStores.message };
-    obj.children = jsx(importDefault(9329), { rowGenerator: closure_7, message: stateFromStores.message });
-    tmp3 = jsx(require(4660) /* PressableBase */.PressableOpacity, { rowGenerator: closure_7, message: stateFromStores.message });
+    obj.children = jsx(importDefault(9222), { rowGenerator: closure_7, message: stateFromStores.message });
+    tmp3 = jsx(require(4661) /* PressableBase */.PressableOpacity, { rowGenerator: closure_7, message: stateFromStores.message });
   }
   return tmp3;
 };
@@ -53,7 +53,7 @@ export const ThreadCreationStarterMessage = function ThreadCreationStarterMessag
   let tmp2 = null;
   if (null != stateFromStores) {
     obj = { rowGenerator: closure_7, message: stateFromStores };
-    tmp2 = jsx(importDefault(9329), { rowGenerator: closure_7, message: stateFromStores });
+    tmp2 = jsx(importDefault(9222), { rowGenerator: closure_7, message: stateFromStores });
   }
   return tmp2;
 };

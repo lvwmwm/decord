@@ -1,9 +1,9 @@
-// Module ID: 14461
-// Function ID: 110460
+// Module ID: 14472
+// Function ID: 110587
 // Name: pressable
-// Dependencies: [13380, 33, 12965, 566, 3712, 13796, 4080, 13562, 10127, 2]
+// Dependencies: [13391, 33, 12976, 566, 3713, 13807, 4081, 13573, 10059, 2]
 
-// Module 14461 (pressable)
+// Module 14472 (pressable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -17,9 +17,9 @@ createToggle = {
   IconComponent: function InstallNativeUpdateIcon() {
     const items = [_isNativeReflectConstruct];
     if (obj.useStateFromStores(items, () => null !== outer1_4.latestFetchedBuild().newBuild)) {
-      let RefreshIcon = tmp2(4080).DownloadIcon;
+      let RefreshIcon = tmp2(4081).DownloadIcon;
     } else {
-      RefreshIcon = tmp2(13562).RefreshIcon;
+      RefreshIcon = tmp2(13573).RefreshIcon;
     }
     return <RefreshIcon />;
   },
@@ -43,21 +43,21 @@ createToggle = {
       str = "Never refreshed";
       if (null != stateFromStores1) {
         const _HermesInternal = HermesInternal;
-        str = "Last refreshed " + importDefault(3712)(stateFromStores1).fromNow();
-        const obj3 = importDefault(3712)(stateFromStores1);
+        str = "Last refreshed " + importDefault(3713)(stateFromStores1).fromNow();
+        const obj3 = importDefault(3713)(stateFromStores1);
       }
     }
     return str;
   },
   usePredicate: function useHasInternalBuildUpdateSetting() {
-    const obj = require(13796) /* useStaffOrDeveloperSettingPredicate */;
-    return _isNativeReflectConstruct.hasUpdatesConfigured && require(13796) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = require(13807) /* useStaffOrDeveloperSettingPredicate */;
+    return _isNativeReflectConstruct.hasUpdatesConfigured && require(13807) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
   },
   onPress: function handleInstallNativeUpdateSettingPress() {
     const newBuild = _isNativeReflectConstruct.latestFetchedBuild().newBuild;
     if (null !== newBuild) {
-      importAll(12965).openBuildInstaller(newBuild);
-      const obj = importAll(12965);
+      importAll(12976).openBuildInstaller(newBuild);
+      const obj = importAll(12976);
     } else {
       _isNativeReflectConstruct.checkForNewerBuild();
     }

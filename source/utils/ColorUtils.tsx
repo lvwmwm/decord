@@ -1,10 +1,10 @@
-// Module ID: 3974
-// Function ID: 32912
+// Module ID: 3975
+// Function ID: 32923
 // Name: hexToRgb
-// Dependencies: [57, 666, 1212, 3, 3975, 2]
+// Dependencies: [57, 666, 1212, 3, 3976, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgbArray, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 3974 (hexToRgb)
+// Module 3975 (hexToRgb)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -179,7 +179,7 @@ function rawHslToRgb(hue, saturation, lightness) {
   let sum = lightness;
   const result = hue / 360;
   if (0 === saturation) {
-    let tmp12 = importDefault(3975);
+    let tmp12 = importDefault(3976);
     const _Math = Math;
     const rounded = Math.round(255 * sum);
     const _Math2 = Math;
@@ -459,7 +459,7 @@ export const mixColors = function mixColors(alpha, red) {
   const sum1 = (1 - alpha) * red.green + alpha * alpha.green;
   const sum2 = (1 - alpha) * red.blue + alpha * alpha.blue;
   const sum3 = alpha.alpha + red.alpha * (1 - alpha.alpha);
-  let tmp5 = importDefault(3975);
+  let tmp5 = importDefault(3976);
   tmp5 = new tmp5(sum, sum1, sum2, sum3);
   return tmp5;
 };

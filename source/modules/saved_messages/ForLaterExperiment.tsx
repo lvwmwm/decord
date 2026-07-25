@@ -1,9 +1,9 @@
-// Module ID: 9571
-// Function ID: 74485
+// Module ID: 9492
+// Function ID: 74072
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 9571 (apexExperiment)
+// Module 9492 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-message-bookmarks", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true }, [2]: { enabled: true } } };

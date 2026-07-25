@@ -1,10 +1,10 @@
-// Module ID: 6270
-// Function ID: 50370
+// Module ID: 7190
+// Function ID: 60020
 // Name: InkQuill3dIllustration
-// Dependencies: [33, 5085, 6271, 2]
+// Dependencies: [33, 5085, 7191, 2]
 // Exports: InkQuill3dIllustration
 
-// Module 6270 (InkQuill3dIllustration)
+// Module 7190 (InkQuill3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/InkQuill3dIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const InkQuill3dIllustration = function InkQuill3dIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6271) };
+  obj = { uri: importDefault(7191) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

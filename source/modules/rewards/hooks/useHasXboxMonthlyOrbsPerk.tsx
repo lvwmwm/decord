@@ -1,10 +1,10 @@
-// Module ID: 12706
-// Function ID: 98815
+// Module ID: 12717
+// Function ID: 98942
 // Name: hasCrepeMonthlyOrbsPerk
-// Dependencies: [1849, 1851, 3776, 1865, 1867, 566, 2]
+// Dependencies: [1850, 1852, 3777, 1866, 1868, 566, 2]
 // Exports: useHasXboxMonthlyOrbsPerk
 
-// Module 12706 (hasCrepeMonthlyOrbsPerk)
+// Module 12717 (hasCrepeMonthlyOrbsPerk)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumTypes } from "GuildFeatures";
 
@@ -16,14 +16,14 @@ function hasCrepeMonthlyOrbsPerk(currentUser) {
       if (null != currentUser) {
         perks = currentUser.perks;
       }
-      const perkSource = require(1865) /* parseServerPerkConfigKind */.getPerkSource(perks, require(1867) /* _callSuper */.Perk.MONTHLY_ORBS);
+      const perkSource = require(1866) /* parseServerPerkConfigKind */.getPerkSource(perks, require(1868) /* _callSuper */.Perk.MONTHLY_ORBS);
       let hasItem = null != perkSource;
       if (hasItem) {
-        hasItem = perkSource.includes(require(1867) /* _callSuper */.PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+        hasItem = perkSource.includes(require(1868) /* _callSuper */.PerkSource.SOURCE_THIRDPARTY_CROISSANT);
       }
       return hasItem;
     }
-    obj2 = require(3776) /* _createForOfIteratorHelperLoose */;
+    obj2 = require(3777) /* _createForOfIteratorHelperLoose */;
   }
   return false;
 }

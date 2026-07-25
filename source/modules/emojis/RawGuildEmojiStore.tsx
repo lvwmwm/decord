@@ -1,9 +1,9 @@
-// Module ID: 4993
-// Function ID: 43175
+// Module ID: 4994
+// Function ID: 43187
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 3774, 1841, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 3775, 1842, 2]
 
-// Module 4993 (_isNativeReflectConstruct)
+// Module 4994 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import TypeTag from "TypeTag";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -124,7 +124,7 @@ function fromServer(arg0, arg1) {
       obj["version"] = value.version;
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      obj["type"] = require(3774) /* EmojiTypes */.EmojiTypes.GUILD;
+      obj["type"] = require(3775) /* EmojiTypes */.EmojiTypes.GUILD;
       obj[value.id] = obj;
       let iter2 = tmp();
       iter = iter2;

@@ -1,10 +1,10 @@
-// Module ID: 10895
-// Function ID: 84756
+// Module ID: 10845
+// Function ID: 84346
 // Name: useMemberListAction
-// Dependencies: [57, 31, 27, 1348, 3758, 3767, 1849, 8865, 653, 33, 4130, 1324, 624, 8457, 8871, 3981, 10896, 10897, 1212, 10226, 10225, 3946, 1334, 10899, 10904, 5791, 10905, 1820, 8526, 7639, 5165, 2]
+// Dependencies: [57, 31, 27, 1348, 3759, 3768, 1850, 8753, 653, 33, 4131, 1324, 624, 8215, 8759, 3982, 10846, 10847, 1212, 10159, 10158, 3947, 1334, 10849, 10854, 8943, 10855, 1820, 8286, 7578, 5164, 2]
 // Exports: default
 
-// Module 10895 (useMemberListAction)
+// Module 10845 (useMemberListAction)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "dismissGlobalKeyboard";
@@ -66,8 +66,8 @@ export default function useMemberListAction(channel) {
   });
   let canResult = c7.can(first.MANAGE_ROLES, channel);
   if (canResult) {
-    canResult = channel(8457).isPrivateGuildChannel(channel);
-    let obj2 = channel(8457);
+    canResult = channel(8215).isPrivateGuildChannel(channel);
+    let obj2 = channel(8215);
   }
   React = canResult;
   let tmp7 = null != channel && !flag;
@@ -99,7 +99,7 @@ export default function useMemberListAction(channel) {
   if (null != channel) {
     id = channel.id;
   }
-  const tmp20 = importDefault(8871)();
+  const tmp20 = importDefault(8759)();
   c9 = tmp20;
   const tmp21 = stateFromStores(React.useState(undefined), 2);
   first = tmp21[0];
@@ -152,12 +152,12 @@ export default function useMemberListAction(channel) {
             obj.label = intl3.string(channel(_undefined2[18]).t["LR+Ptf"]);
             obj.handlePress = function handlePress() {
               if (null != store.getChannel(outer1_8)) {
-                let obj = channel(3946);
+                let obj = channel(3947);
                 if (obj.UNSAFE_isDismissibleContentDismissed(channel(1334).DismissibleContent.GDM_INVITE_REMINDER)) {
                   outer1_13();
                 } else {
                   obj = { onClick: outer1_13 };
-                  sum(10899)(obj);
+                  sum(10849)(obj);
                 }
               }
             };
@@ -170,8 +170,8 @@ export default function useMemberListAction(channel) {
             obj.handlePress = function handlePress() {
               const channel = store.getChannel(outer1_8);
               if (null != channel) {
-                const result = channel(10905).openChannelMembersActionSheet(channel.id, channel.guild_id);
-                const obj = channel(10905);
+                const result = channel(10855).openChannelMembersActionSheet(channel.id, channel.guild_id);
+                const obj = channel(10855);
               }
             };
             tmp7 = obj;
@@ -186,8 +186,8 @@ export default function useMemberListAction(channel) {
                 let obj = channel(1820);
                 const result = obj.dismissGlobalKeyboard();
                 obj = { source: callback.CHAT_SIDEBAR };
-                const result1 = channel(8526).showInstantInviteActionSheet(channel, obj);
-                const obj2 = channel(8526);
+                const result1 = channel(8286).showInstantInviteActionSheet(channel, obj);
+                const obj2 = channel(8286);
               }
             };
             tmp7 = obj;

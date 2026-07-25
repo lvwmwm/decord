@@ -1,10 +1,10 @@
-// Module ID: 13669
-// Function ID: 104943
+// Module ID: 13680
+// Function ID: 105070
 // Name: EditGuildProfileBanner
-// Dependencies: [29, 31, 27, 1917, 6855, 5510, 653, 1851, 33, 3776, 5462, 5482, 13615, 4098, 13616, 1934, 7935, 1212, 7933, 8028, 8282, 13626, 5784, 5160, 689, 9862, 13664, 566, 7974, 8283, 8298, 7943, 13020, 13670, 8280, 8284, 4126, 3842, 13671, 11936, 11925, 8557, 13635, 3969, 13636, 13641, 13643, 13644, 13648, 13652, 13662, 8183, 8059, 2]
+// Dependencies: [29, 31, 27, 1918, 5630, 5510, 653, 1852, 33, 3777, 5462, 5482, 13626, 4099, 13627, 1935, 7882, 1212, 7880, 6137, 8017, 13637, 6687, 5159, 689, 9786, 13675, 566, 7922, 8018, 8033, 7890, 13031, 13681, 8015, 8019, 4127, 3843, 13682, 11912, 11901, 8317, 13646, 3970, 13647, 13652, 13654, 13655, 13659, 13663, 13673, 9253, 9254, 2]
 // Exports: default
 
-// Module 13669 (EditGuildProfileBanner)
+// Module 13680 (EditGuildProfileBanner)
 import _activityFromSetting from "_activityFromSetting";
 import getImageFormat from "getImageFormat";
 import get_ActivityIndicator from "initialize";
@@ -38,7 +38,7 @@ function EditGuildProfileBanner(user) {
   user = user.user;
   ({ guildId: importDefault, guildMemberProfile: dependencyMap, pendingBanner } = user);
   ({ displayProfile, guildMember, pendingAvatarSrc, pendingThemeColors, disabled } = user);
-  let obj = importDefault(3776);
+  let obj = importDefault(3777);
   let result = obj.canUsePremiumGuildMemberProfile(user);
   const analyticsLocations = importDefault(5462)(importDefault(5482).EDIT_BANNER).analyticsLocations;
   obj = { value: analyticsLocations };
@@ -84,7 +84,7 @@ function EditGuildProfileBanner(user) {
   let intl = user(1212).intl;
   obj.editButtonAccessibilityLabel = intl.string(user(1212).t["95hPAe"]);
   obj.editDisabled = disabled;
-  obj.children = tmp4(importDefault(13615), obj);
+  obj.children = tmp4(importDefault(13626), obj);
   return tmp3(user(5462).AnalyticsLocationProvider, obj);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];

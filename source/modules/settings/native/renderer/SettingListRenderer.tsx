@@ -1,9 +1,9 @@
-// Module ID: 13602
-// Function ID: 104470
+// Module ID: 13613
+// Function ID: 104597
 // Name: SearchListSectionLabel
-// Dependencies: [31, 27, 13603, 13604, 10128, 33, 4130, 689, 5501, 4126, 13605, 1557, 13606, 14627, 7527, 14628, 14631, 14632, 1820, 2]
+// Dependencies: [31, 27, 13614, 13615, 10060, 33, 4131, 689, 5501, 4127, 13616, 1557, 13617, 14638, 6619, 14639, 14642, 14643, 1820, 2]
 
-// Module 13602 (SearchListSectionLabel)
+// Module 13613 (SearchListSectionLabel)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import zustandStore from "zustandStore";
@@ -29,7 +29,7 @@ function SearchListSectionSubLabel(subLabel) {
   let obj = { style: callback().subLabel };
   if ("string" === typeof subLabel) {
     obj = { variant: "text-xs/normal", color: "text-muted", children: subLabel };
-    let tmp4 = jsx(require(4126) /* Text */.Text, { variant: "text-xs/normal", color: "text-muted", children: subLabel });
+    let tmp4 = jsx(require(4127) /* Text */.Text, { variant: "text-xs/normal", color: "text-muted", children: subLabel });
   } else {
     const _Array = Array;
     tmp4 = subLabel;
@@ -62,11 +62,11 @@ function renderItem(item) {
     obj = { subLabel: item.label };
     return <SearchListSectionSubLabel subLabel={item.label} />;
   } else if (ListItemType.SETTING_SEARCH_RESULT === type) {
-    return require(13605) /* formatSettingsRowTrailing */.renderSettingSearchResultItem(item);
+    return require(13616) /* formatSettingsRowTrailing */.renderSettingSearchResultItem(item);
   } else if (ListItemType.SECTION_ROW === type) {
-    return require(13605) /* formatSettingsRowTrailing */.renderSettingItem(item);
+    return require(13616) /* formatSettingsRowTrailing */.renderSettingItem(item);
   } else if (ListItemType.SECTION_ROW_PLACEHOLDER === type) {
-    obj = require(13605) /* formatSettingsRowTrailing */;
+    obj = require(13616) /* formatSettingsRowTrailing */;
     return obj.renderSettingSearchResultPlaceholderItem(item);
   }
 }
@@ -107,7 +107,7 @@ const memoResult = importAllResult.memo((node) => {
   const items = [field, node];
   const memo = importAllResult.useMemo(() => node(outer1_2[12]).toSettingListItems(node, field), items);
   const ref = importAllResult.useRef(null);
-  let obj = node(14627);
+  let obj = node(14638);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   obj = { style: tmp.container };
   obj = { ref, ListHeaderComponent: node.ListHeaderComponent };
@@ -120,7 +120,7 @@ const memoResult = importAllResult.memo((node) => {
   obj.renderItem = renderItem;
   obj.data = memo;
   obj.getItemType = getItemType;
-  obj.children = jsx(node(7527).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent });
+  obj.children = jsx(node(6619).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent });
   return <View ref={ref} ListHeaderComponent={node.ListHeaderComponent} />;
 });
 const memoResult1 = importAllResult.memo((node) => {

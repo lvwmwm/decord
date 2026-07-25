@@ -1,9 +1,9 @@
-// Module ID: 5686
-// Function ID: 48931
+// Module ID: 6017
+// Function ID: 53755
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1849, 21, 4351, 1327, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1850, 21, 4352, 1327, 566, 686, 2]
 
-// Module 5686 (_isNativeReflectConstruct)
+// Module 6017 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -50,7 +50,7 @@ function isValidMessage(message) {
 function set(arg0, message) {
   let messageRecord = null;
   if (null != message) {
-    let obj = require(4351) /* createMinimalMessageRecord */;
+    let obj = require(4352) /* createMinimalMessageRecord */;
     messageRecord = obj.createMessageRecord(message);
   }
   obj = { loaded: true, message: messageRecord };
@@ -157,9 +157,9 @@ tmp2 = new tmp2(require("dispatcher"), {
         if (tmp9) {
           const obj = {};
           const merged = Object.assign(tmp5);
-          obj["message"] = require(4351) /* createMinimalMessageRecord */.updateMessageRecord(tmp7, message.message);
+          obj["message"] = require(4352) /* createMinimalMessageRecord */.updateMessageRecord(tmp7, message.message);
           closure_10[channel_id] = obj;
-          const obj2 = require(4351) /* createMinimalMessageRecord */;
+          const obj2 = require(4352) /* createMinimalMessageRecord */;
         }
         tmp9 = null != tmp5 && null != tmp7;
       }

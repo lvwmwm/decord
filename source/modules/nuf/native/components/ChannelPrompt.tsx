@@ -1,10 +1,10 @@
-// Module ID: 11807
-// Function ID: 91663
+// Module ID: 11783
+// Function ID: 91468
 // Name: ChannelPrompt
-// Dependencies: [5, 57, 31, 27, 1907, 1838, 33, 4130, 5084, 566, 1456, 5087, 1212, 4140, 4029, 5121, 5513, 1392, 4126, 9039, 4543, 9043, 2]
+// Dependencies: [5, 57, 31, 27, 1908, 1838, 33, 4131, 5084, 566, 1456, 5087, 1212, 4141, 4030, 5121, 5513, 1392, 4127, 8927, 4544, 8931, 2]
 // Exports: default
 
-// Module 11807 (ChannelPrompt)
+// Module 11783 (ChannelPrompt)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

@@ -1,10 +1,10 @@
-// Module ID: 8854
-// Function ID: 69696
+// Module ID: 8742
+// Function ID: 69175
 // Name: SelectedUserField
-// Dependencies: [31, 27, 33, 4130, 689, 5780, 1212, 3969, 5786, 1273, 4126, 5776, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 6683, 1212, 3970, 8232, 1273, 4127, 6679, 2]
 // Exports: default
 
-// Module 8854 (SelectedUserField)
+// Module 8742 (SelectedUserField)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -54,7 +54,7 @@ export default function SelectedUserField(onPress) {
   obj1.accessibilityRole = "button";
   if (null != selectedUser) {
     const intl = require(1212) /* getSystemLocale */.intl;
-    let obj4 = importDefault(3969);
+    let obj4 = importDefault(3970);
     const _HermesInternal = HermesInternal;
     let combined = "" + intl.string(require(1212) /* getSystemLocale */.t.xFn72s) + ", " + obj4.getName(selectedUser);
     const stringResult = intl.string(require(1212) /* getSystemLocale */.t.xFn72s);
@@ -67,21 +67,21 @@ export default function SelectedUserField(onPress) {
   }
   obj1.accessibilityLabel = combined;
   const obj2 = { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" };
-  const items1 = [callback(require(5786) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, obj2), ];
+  const items1 = [callback(require(8232) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, obj2), ];
   if (null != selectedUser) {
     const obj3 = { style: tmp.userPill };
     obj4 = { user: selectedUser, guildId: undefined, size: require(1273) /* Button */.AvatarSizes.XSMALL_20 };
     const items2 = [callback(require(1273) /* Button */.Avatar, obj4), ];
-    const obj5 = { variant: "text-md/medium", style: tmp.userPillText, children: importDefault(3969).getName(selectedUser) };
-    items2[1] = callback(require(4126) /* Text */.Text, obj5);
+    const obj5 = { variant: "text-md/medium", style: tmp.userPillText, children: importDefault(3970).getName(selectedUser) };
+    items2[1] = callback(require(4127) /* Text */.Text, obj5);
     obj3.children = items2;
     let tmp15 = callback2(closure_4, obj3);
-    const obj11 = importDefault(3969);
+    const obj11 = importDefault(3970);
   } else {
     const obj6 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj6.children = intl2.string(require(1212) /* getSystemLocale */.t.R0vK0N);
-    tmp15 = callback(require(4126) /* Text */.Text, obj6);
+    tmp15 = callback(require(4127) /* Text */.Text, obj6);
   }
   items1[1] = tmp15;
   obj1.children = items1;
@@ -96,16 +96,16 @@ export default function SelectedUserField(onPress) {
       accessibilityRole: "button"
     };
     const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj8 = { text: importDefault(3969).getName(selectedUser) };
+    const obj8 = { text: importDefault(3970).getName(selectedUser) };
     obj7.accessibilityLabel = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["0Vb9FQ"], obj8);
     const obj9 = { size: "xs" };
-    obj7.children = callback(require(5776) /* CircleXIcon */.CircleXIcon, obj9);
+    obj7.children = callback(require(6679) /* CircleXIcon */.CircleXIcon, obj9);
     tmp22 = callback(closure_3, obj7);
-    const obj14 = importDefault(3969);
+    const obj14 = importDefault(3970);
   }
   items3[1] = tmp22;
   obj.children = items3;
   obj.children = callback2(closure_4, obj);
-  obj.children = callback(require(5780) /* useInputStyles */.InputFieldContainer, obj);
+  obj.children = callback(require(6683) /* useInputStyles */.InputFieldContainer, obj);
   return callback(closure_4, obj);
 };

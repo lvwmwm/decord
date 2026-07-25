@@ -1,10 +1,10 @@
-// Module ID: 9052
-// Function ID: 71144
+// Module ID: 8940
+// Function ID: 70623
 // Name: ApplicationEducationEntry
-// Dependencies: [31, 27, 653, 33, 4130, 689, 8999, 8354, 1212, 3832, 9053, 8979, 5791, 4126, 9055, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 8887, 8112, 1212, 3833, 8941, 8867, 8943, 4127, 8945, 2]
 // Exports: default
 
-// Module 9052 (ApplicationEducationEntry)
+// Module 8940 (ApplicationEducationEntry)
 import "result";
 import { View } from "get ActivityIndicator";
 import { MAX_FRIENDS } from "ME";
@@ -26,7 +26,7 @@ function ApplicationEducationEntry(children) {
   }
   const items = [iconComponentResult, ];
   obj = { variant: "text-md/normal", style: tmp.entryText, children: children.text };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return closure_6(View, obj);
 }
@@ -42,8 +42,8 @@ export default function ApplicationEducation(arg0) {
   let application;
   ({ application, accountScopes } = arg0);
   const items = [];
-  const tmp2 = importDefault(8999)(application);
-  if (accountScopes.includes(require(8354) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
+  const tmp2 = importDefault(8887)(application);
+  if (accountScopes.includes(require(8112) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
     const intl5 = require(1212) /* getSystemLocale */.intl;
     if (tmp2) {
       let obj = { applicationName: application.name };
@@ -51,7 +51,7 @@ export default function ApplicationEducation(arg0) {
     } else {
       formatToPlainStringResult = intl5.string(tmp26(1212).t.ex4sMU);
     }
-    obj = { iconComponent: require(3832) /* FriendsIcon */.FriendsIcon };
+    obj = { iconComponent: require(3833) /* FriendsIcon */.FriendsIcon };
     const intl6 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString2 = intl6.formatToPlainString;
     const t4 = require(1212) /* getSystemLocale */.t;
@@ -63,7 +63,7 @@ export default function ApplicationEducation(arg0) {
       formatToPlainString2Result = formatToPlainString2(t4.WNKzo9, obj2);
     }
     obj.text = formatToPlainString2Result;
-    const obj3 = { iconComponent: require(9053) /* ChatSmileIcon */.ChatSmileIcon };
+    const obj3 = { iconComponent: require(8941) /* ChatSmileIcon */.ChatSmileIcon };
     const intl7 = require(1212) /* getSystemLocale */.intl;
     const string3 = intl7.string;
     const t5 = require(1212) /* getSystemLocale */.t;
@@ -73,7 +73,7 @@ export default function ApplicationEducation(arg0) {
       string3Result = string3(t5.j7peBh);
     }
     obj3.text = string3Result;
-    const obj4 = { iconComponent: require(8979) /* GameControllerIcon */.GameControllerIcon };
+    const obj4 = { iconComponent: require(8867) /* GameControllerIcon */.GameControllerIcon };
     const intl8 = require(1212) /* getSystemLocale */.intl;
     const string4 = intl8.string;
     const t6 = require(1212) /* getSystemLocale */.t;
@@ -83,7 +83,7 @@ export default function ApplicationEducation(arg0) {
       string4Result = string4(t6["feD3+i"]);
     }
     obj4.text = string4Result;
-    let obj5 = { iconComponent: require(5791) /* SettingsIcon */.SettingsIcon };
+    let obj5 = { iconComponent: require(8943) /* SettingsIcon */.SettingsIcon };
     const intl9 = require(1212) /* getSystemLocale */.intl;
     const string5 = intl9.string;
     let mSqazC = require(1212) /* getSystemLocale */.t;
@@ -96,7 +96,7 @@ export default function ApplicationEducation(arg0) {
     obj5.text = string5Result;
     obj5 = items.push(obj, obj3, obj4, obj5);
   } else {
-    if (accountScopes.includes(require(8354) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
+    if (accountScopes.includes(require(8112) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
       const intl = require(1212) /* getSystemLocale */.intl;
       if (tmp2) {
         obj = { applicationName: application.name };
@@ -104,7 +104,7 @@ export default function ApplicationEducation(arg0) {
       } else {
         formatToPlainStringResult1 = intl.string(tmp5(1212).t.ex4sMU);
       }
-      const obj6 = { iconComponent: require(3832) /* FriendsIcon */.FriendsIcon };
+      const obj6 = { iconComponent: require(3833) /* FriendsIcon */.FriendsIcon };
       const intl2 = require(1212) /* getSystemLocale */.intl;
       const formatToPlainString = intl2.formatToPlainString;
       const t = require(1212) /* getSystemLocale */.t;
@@ -116,7 +116,7 @@ export default function ApplicationEducation(arg0) {
         formatToPlainStringResult2 = formatToPlainString(t.WNKzo9, obj8);
       }
       obj6.text = formatToPlainStringResult2;
-      const obj9 = { iconComponent: require(8979) /* GameControllerIcon */.GameControllerIcon };
+      const obj9 = { iconComponent: require(8867) /* GameControllerIcon */.GameControllerIcon };
       const intl3 = require(1212) /* getSystemLocale */.intl;
       const string = intl3.string;
       const t2 = require(1212) /* getSystemLocale */.t;
@@ -126,7 +126,7 @@ export default function ApplicationEducation(arg0) {
         stringResult = string(t2["feD3+i"]);
       }
       obj9.text = stringResult;
-      const obj10 = { iconComponent: require(5791) /* SettingsIcon */.SettingsIcon };
+      const obj10 = { iconComponent: require(8943) /* SettingsIcon */.SettingsIcon };
       const intl4 = require(1212) /* getSystemLocale */.intl;
       const string2 = intl4.string;
       const t3 = require(1212) /* getSystemLocale */.t;
@@ -147,12 +147,12 @@ export default function ApplicationEducation(arg0) {
         tmp59 = null;
         if (arr2.length > 0) {
           const obj13 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-          tmp59 = callback(require(4126) /* Text */.Text, obj13);
+          tmp59 = callback(require(4127) /* Text */.Text, obj13);
         }
       }
       const items1 = [tmp59, items.map((iconComponent) => outer1_5(outer1_9, { iconComponent: iconComponent.iconComponent, text: iconComponent.text }, arg1))];
       obj12.children = items1;
-      const items2 = [closure_6(View, obj12), callback(require(9055) /* AuthorizeFormSeparator */.AuthorizeFormSeparator, {})];
+      const items2 = [closure_6(View, obj12), callback(require(8945) /* AuthorizeFormSeparator */.AuthorizeFormSeparator, {})];
       obj11.children = items2;
       tmp66Result = tmp66(closure_7, obj11);
       const tmp67 = closure_7;

@@ -1,10 +1,10 @@
-// Module ID: 7708
-// Function ID: 61346
+// Module ID: 7652
+// Function ID: 61292
 // Name: TextElement
-// Dependencies: [31, 27, 33, 4130, 4562, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 4563, 4127, 2]
 // Exports: default
 
-// Module 7708 (TextElement)
+// Module 7652 (TextElement)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ export default function TextElement(element) {
   const data = element.element.data;
   ({ header, body } = data);
   const tmp = callback2();
-  let obj = importAll(4562);
+  let obj = importAll(4563);
   let tmp2 = null;
   if (data.is_localized) {
     if (null != header) {
@@ -31,13 +31,13 @@ export default function TextElement(element) {
       let tmp6 = null != header;
       if (tmp6) {
         obj = { style: tmp.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: header };
-        tmp6 = callback(require(4126) /* Text */.Text, obj);
+        tmp6 = callback(require(4127) /* Text */.Text, obj);
       }
       const items = [tmp6, ];
       let tmp10 = null != body;
       if (tmp10) {
         const obj1 = { style: tmp.body, variant: "text-md/medium", children: ref.current(body) };
-        tmp10 = callback(require(4126) /* Text */.Text, obj1);
+        tmp10 = callback(require(4127) /* Text */.Text, obj1);
       }
       items[1] = tmp10;
       obj.children = items;

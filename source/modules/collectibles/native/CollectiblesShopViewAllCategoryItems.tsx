@@ -1,8 +1,8 @@
-// Module ID: 14561
-// Function ID: 111098
-// Dependencies: [31, 27, 655, 653, 33, 4130, 689, 9806, 5462, 5482, 1557, 14025, 3991, 4542, 675, 6824, 8707, 8808, 14562, 14563, 14540, 1212, 2]
+// Module ID: 14572
+// Function ID: 111225
+// Dependencies: [31, 27, 655, 653, 33, 4131, 689, 9730, 5462, 5482, 1557, 14036, 3992, 4543, 675, 5823, 8595, 8696, 14573, 14574, 14551, 1212, 2]
 
-// Module 14561
+// Module 14572
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";

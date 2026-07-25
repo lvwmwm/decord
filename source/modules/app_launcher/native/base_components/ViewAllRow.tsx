@@ -1,10 +1,10 @@
-// Module ID: 11243
-// Function ID: 87569
+// Module ID: 11204
+// Function ID: 87214
 // Name: ViewAllRow
-// Dependencies: [31, 27, 33, 4130, 5165, 1212, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 5164, 1212, 4127, 2]
 // Exports: default
 
-// Module 11243 (ViewAllRow)
+// Module 11204 (ViewAllRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -28,9 +28,9 @@ export default function ViewAllRow(title) {
   const obj1 = { color: "text-brand", variant: "text-md/semibold" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.format(require(1212) /* getSystemLocale */.t.gVw57p, {});
-  obj.children = jsx(require(4126) /* Text */.Text, { color: "text-brand", variant: "text-md/semibold" });
+  obj.children = jsx(require(4127) /* Text */.Text, { color: "text-brand", variant: "text-md/semibold" });
   obj.label = <View style={callback().expandCTALabelContainer} />;
   obj.onPress = title.onPress;
   obj.end = true;
-  return jsx(require(5165) /* TableRowInner */.TableRow, { style: callback().expandCTALabelContainer });
+  return jsx(require(5164) /* TableRowInner */.TableRow, { style: callback().expandCTALabelContainer });
 };

@@ -1,7 +1,7 @@
 // Module ID: 3539
-// Function ID: 27408
+// Function ID: 27400
 // Name: _typeof
-// Dependencies: [3517, 3515]
+// Dependencies: [3518, 3516]
 
 // Module 3539 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const AMPMMidnightParser = ((Parser) => {
-  class AMPMMidnightParser {
+export const AMPMParser = ((Parser) => {
+  class AMPMParser {
     constructor() {
-      if (this instanceof AMPMMidnightParser) {
+      if (this instanceof AMPMParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -162,7 +162,7 @@ export const AMPMMidnightParser = ((Parser) => {
         tmp17 = outer1_8(applyResult, "priority", 80);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["a", "B", "H", "k", "t", "T"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["b", "B", "H", "k", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +177,9 @@ export const AMPMMidnightParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class AMPMMidnightParser {
+    class AMPMParser {
       constructor() {
-        if (this instanceof AMPMMidnightParser) {
+        if (this instanceof AMPMParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -205,7 +205,7 @@ export const AMPMMidnightParser = ((Parser) => {
           tmp17 = outer1_8(applyResult, "priority", 80);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["a", "B", "H", "k", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["b", "B", "H", "k", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +224,12 @@ export const AMPMMidnightParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: AMPMMidnightParser, writable: true, configurable: true };
-  AMPMMidnightParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: AMPMParser, writable: true, configurable: true };
+  AMPMParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class AMPMMidnightParser {
+    class AMPMParser {
       constructor() {
-        if (this instanceof AMPMMidnightParser) {
+        if (this instanceof AMPMParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -255,7 +255,7 @@ export const AMPMMidnightParser = ((Parser) => {
           tmp17 = outer1_8(applyResult, "priority", 80);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["a", "B", "H", "k", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["b", "B", "H", "k", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,16 +269,16 @@ export const AMPMMidnightParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(AMPMMidnightParser, Parser);
+    _setPrototypeOf(AMPMParser, Parser);
   }
-  let closure_0 = _createSuper(AMPMMidnightParser);
+  let closure_0 = _createSuper(AMPMParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, dayPeriod) {
-      if ("b" !== arg1) {
-        if ("bb" !== arg1) {
-          if ("bbb" !== arg1) {
-            if ("bbbbb" === arg1) {
+      if ("a" !== arg1) {
+        if ("aa" !== arg1) {
+          if ("aaa" !== arg1) {
+            if ("aaaaa" === arg1) {
               return dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
             } else {
               return dayPeriod.dayPeriod(arg0, { width: "wide", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
@@ -293,11 +293,11 @@ export const AMPMMidnightParser = ((Parser) => {
   obj = {
     key: "set",
     value: function set(setUTCHours) {
-      setUTCHours.setUTCHours(callback(AMPMMidnightParser[0]).dayPeriodEnumToHours(arg2), 0, 0, 0);
+      setUTCHours.setUTCHours(callback(AMPMParser[0]).dayPeriodEnumToHours(arg2), 0, 0, 0);
       return setUTCHours;
     }
   };
   items[1] = obj;
-  _defineProperties(AMPMMidnightParser.prototype, items);
-  return AMPMMidnightParser;
+  _defineProperties(AMPMParser.prototype, items);
+  return AMPMParser;
 })(require("_defineProperties").Parser);

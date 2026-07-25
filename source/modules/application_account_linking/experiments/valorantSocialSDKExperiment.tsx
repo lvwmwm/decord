@@ -1,10 +1,10 @@
-// Module ID: 4158
-// Function ID: 35143
+// Module ID: 4159
+// Function ID: 35154
 // Name: getIsValorantSocialSDKEnabled
 // Dependencies: [1428, 2]
 // Exports: getIsValorantSocialSDKEnabled
 
-// Module 4158 (getIsValorantSocialSDKEnabled)
+// Module 4159 (getIsValorantSocialSDKEnabled)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";

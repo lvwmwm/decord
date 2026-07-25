@@ -1,17 +1,17 @@
-// Module ID: 9679
-// Function ID: 75323
+// Module ID: 9603
+// Function ID: 74918
 // Name: DismissibleActionSheet
-// Dependencies: [31, 4559, 4098, 2]
+// Dependencies: [31, 4560, 4099, 2]
 // Exports: DismissibleActionSheet
 
-// Module 9679 (DismissibleActionSheet)
+// Module 9603 (DismissibleActionSheet)
 import result from "result";
 
 const result = require("showActionSheet").fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");
 
 export const DismissibleActionSheet = function DismissibleActionSheet(arg0) {
   const importDefault = arg0;
-  importDefault(4559)(() => {
+  importDefault(4560)(() => {
     let obj = lib(outer1_1[2]);
     obj = {};
     const merged = Object.assign(lib);

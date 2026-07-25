@@ -1,10 +1,10 @@
-// Module ID: 12533
-// Function ID: 97059
+// Module ID: 12514
+// Function ID: 96910
 // Name: getViewerProductId
-// Dependencies: [31, 6663, 5619, 1851, 6648, 5622, 477, 5616, 3791, 566, 2]
+// Dependencies: [31, 6164, 5619, 1852, 6195, 5622, 477, 5616, 3792, 566, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12533 (getViewerProductId)
+// Module 12514 (getViewerProductId)
 import result from "result";
 import { useNativeCheckoutStore } from "context";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -17,7 +17,7 @@ function getViewerProductId(subscription) {
   if (null == subscription) {
     return null;
   } else {
-    return require(6648) /* _createForOfIteratorHelperLoose */.getProductIdFromSubscription(tmp, false);
+    return require(6195) /* _createForOfIteratorHelperLoose */.getProductIdFromSubscription(tmp, false);
   }
 }
 ({ PremiumTypes: closure_5, SubscriptionIntervalTypes: closure_6 } = GuildFeatures);
@@ -99,7 +99,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
     if (null == checkoutContext) {
       let tmp20 = closure_7;
     } else {
-      const availablePlanForItems = checkoutContext.getAvailablePlanForItems(_require(6648).getSubscriptionItemsForProduct(plan.productId));
+      const availablePlanForItems = checkoutContext.getAvailablePlanForItems(_require(6195).getSubscriptionItemsForProduct(plan.productId));
       if (null != availablePlanForItems) {
         const addOnPrice = availablePlanForItems.getAddOnPrice();
         if (null != addOnPrice) {
@@ -114,7 +114,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
         }
         tmp20 = closure_7;
       }
-      const obj15 = _require(6648);
+      const obj15 = _require(6195);
     }
     tmp20 = closure_7;
   } else {

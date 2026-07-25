@@ -1,9 +1,9 @@
-// Module ID: 15359
-// Function ID: 117095
+// Module ID: 15369
+// Function ID: 117223
 // Name: CreateThreadViewInner
-// Dependencies: [5, 57, 31, 27, 4468, 6927, 653, 33, 4130, 689, 8022, 7018, 5462, 5482, 1557, 5160, 4662, 4631, 15360, 5502, 1212, 15362, 11402, 11128, 11701, 10427, 1457, 675, 4324, 1198, 9586, 15361, 3989, 2]
+// Dependencies: [5, 57, 31, 27, 4469, 5918, 653, 33, 4131, 689, 6131, 6036, 5462, 5482, 1557, 5159, 4663, 4632, 15370, 5502, 1212, 15372, 11365, 11088, 11670, 10361, 1457, 675, 4325, 1198, 9507, 15371, 3990, 2]
 
-// Module 15359 (CreateThreadViewInner)
+// Module 15369 (CreateThreadViewInner)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "formSubmitError";
@@ -26,7 +26,7 @@ function CreateThreadViewInner(screenIndex) {
   let threadSettingsDraft = screenIndex.threadSettingsDraft;
   let parentChannel = screenIndex.parentChannel;
   const tmp = callback4();
-  let obj = threadSettingsDraft(8022);
+  let obj = threadSettingsDraft(6131);
   const privateThreadMode = obj.usePrivateThreadMode(parentChannel);
   let items = [parentChannel.id];
   const effect = importAllResult.useEffect(() => () => {
@@ -109,9 +109,9 @@ function CreateThreadViewInner(screenIndex) {
   const ref = importAllResult.useRef(null);
   const ref1 = importAllResult.useRef(null);
   obj = { value: tmp6(parentChannel(5482).CREATE_THREAD).analyticsLocations };
-  let items1 = [callback2(parentChannel(4662), { absolute: true }), ];
+  let items1 = [callback2(parentChannel(4663), { absolute: true }), ];
   let obj1 = { style: items2 };
-  items2 = [tmp.container, { marginBottom: parentChannel(5160)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - tmp7.bottom }];
+  items2 = [tmp.container, { marginBottom: parentChannel(5159)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - tmp7.bottom }];
   const items3 = [callback2(closure_6, { style: tmp.expander }), , , , ];
   let obj3 = { style: tmp.containerContent };
   const obj4 = { style: tmp.options };
@@ -122,20 +122,20 @@ function CreateThreadViewInner(screenIndex) {
   const tmp12 = callback3;
   const tmp13 = callback3;
   const tmp14 = closure_6;
-  const items4 = [callback2(closure_6, { style: tmp.threadIconContainer, children: callback2(threadSettingsDraft(4631).ThreadIcon, { size: "lg" }) }), callback2(parentChannel(15360), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp4[0], optional: tmp11 }), ];
+  const items4 = [callback2(closure_6, { style: tmp.threadIconContainer, children: callback2(threadSettingsDraft(4632).ThreadIcon, { size: "lg" }) }), callback2(parentChannel(15370), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp4[0], optional: tmp11 }), ];
   let tmp21 = null;
   if (!isForumLikeChannelResult) {
     tmp21 = null;
     if (null == threadSettingsDraft.parentMessageId) {
       tmp21 = null;
-      if (privateThreadMode !== threadSettingsDraft(8022).PrivateThreadMode.Disabled) {
+      if (privateThreadMode !== threadSettingsDraft(6131).PrivateThreadMode.Disabled) {
         const obj7 = { style: tmp.optionPrivateThread };
-        const obj8 = { start: true, end: true, disabled: privateThreadMode !== threadSettingsDraft(8022).PrivateThreadMode.Enabled };
+        const obj8 = { start: true, end: true, disabled: privateThreadMode !== threadSettingsDraft(6131).PrivateThreadMode.Enabled };
         const intl = threadSettingsDraft(1212).intl;
         obj8.label = intl.string(threadSettingsDraft(1212).t.F1zyvU);
         const intl2 = threadSettingsDraft(1212).intl;
         obj8.subLabel = intl2.string(threadSettingsDraft(1212).t.Wy5RIQ);
-        obj8.value = threadSettingsDraft(8022).getIsPrivate(threadSettingsDraft, privateThreadMode);
+        obj8.value = threadSettingsDraft(6131).getIsPrivate(threadSettingsDraft, privateThreadMode);
         obj8.onValueChange = function onValueChange(isPrivate) {
           const parentChannelId = threadSettingsDraft.parentChannelId;
           if (null != parentChannelId) {
@@ -146,7 +146,7 @@ function CreateThreadViewInner(screenIndex) {
         };
         obj7.children = callback2(threadSettingsDraft(5502).TableSwitchRow, obj8);
         tmp21 = callback2(closure_6, obj7);
-        const obj19 = threadSettingsDraft(8022);
+        const obj19 = threadSettingsDraft(6131);
       }
     }
   }
@@ -159,7 +159,7 @@ function CreateThreadViewInner(screenIndex) {
     const obj10 = { style: tmp.border };
     const items6 = [callback2(closure_6, obj10), ];
     const obj11 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items6[1] = callback2(threadSettingsDraft(15362).ThreadCreationStarterMessage, obj11);
+    items6[1] = callback2(threadSettingsDraft(15372).ThreadCreationStarterMessage, obj11);
     obj9.children = items6;
     tmp24 = callback3(closure_6, obj9);
   }
@@ -171,12 +171,12 @@ function CreateThreadViewInner(screenIndex) {
   if (parentChannel.rateLimitPerUser > 0) {
     const obj12 = { style: tmp.typingWrapper };
     const obj13 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
-    obj12.children = callback2(parentChannel(11402), obj13);
+    obj12.children = callback2(parentChannel(11365), obj13);
     tmp32 = callback2(closure_6, obj12);
   }
   items3[2] = tmp32;
-  items3[3] = callback2(parentChannel(11128), { ref, channel: parentChannel, onJumpToPresent: closure_12, screenIndex: screenIndex.screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: tmp5 });
-  items3[4] = callback2(parentChannel(11701), { channelId: parentChannel.id });
+  items3[3] = callback2(parentChannel(11088), { ref, channel: parentChannel, onJumpToPresent: closure_12, screenIndex: screenIndex.screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: tmp5 });
+  items3[4] = callback2(parentChannel(11670), { channelId: parentChannel.id });
   obj1.children = items3;
   items1[1] = tmp13(tmp14, obj1);
   obj.children = items1;
@@ -207,7 +207,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let channelId;
   let screenIndex;
   ({ channelId, screenIndex } = arg0);
-  const tmp = importDefault(10427)(channelId);
+  const tmp = importDefault(10361)(channelId);
   let tmp2 = null;
   if (null != tmp) {
     const obj = { parentChannel: tmp.parentChannel, screenIndex, threadSettingsDraft: tmp.threadSettingsDraft };

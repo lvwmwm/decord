@@ -1,10 +1,10 @@
-// Module ID: 4584
-// Function ID: 40199
+// Module ID: 4585
+// Function ID: 40211
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4349, 4579, 4585, 671, 2]
+// Dependencies: [4350, 4580, 4586, 671, 2]
 // Exports: default
 
-// Module 4584 (_createForOfIteratorHelperLoose)
+// Module 4585 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
 
@@ -105,7 +105,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
     if (null == guild_id2) {
       guild_id2 = DEFAULT_SOUND_GUILD_ID;
     }
-    return require(4585) /* SoundButtonOverlay */.soundboardSoundFromAPI(tmp, guild_id2);
+    return require(4586) /* SoundButtonOverlay */.soundboardSoundFromAPI(tmp, guild_id2);
   } else {
     message = message.getMessage(arg0, arg1);
     if (null != message) {
@@ -162,7 +162,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
         if (null == guild_id) {
           guild_id = DEFAULT_SOUND_GUILD_ID;
         }
-        return require(4585) /* SoundButtonOverlay */.soundboardSoundFromAPI(tmp5Result, guild_id);
+        return require(4586) /* SoundButtonOverlay */.soundboardSoundFromAPI(tmp5Result, guild_id);
       }
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 12161
-// Function ID: 95272
+// Module ID: 12137
+// Function ID: 95081
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 57, 31, 27, 653, 33, 4130, 689, 12159, 8713, 8752, 675, 8724, 3831, 1212, 8714, 8709, 2]
+// Dependencies: [5, 57, 31, 27, 653, 33, 4131, 689, 12135, 8601, 8640, 675, 8612, 3832, 1212, 8602, 8597, 2]
 // Exports: default
 
-// Module 12161 (AddToWishlistItemCard)
+// Module 12137 (AddToWishlistItemCard)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

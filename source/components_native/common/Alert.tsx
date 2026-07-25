@@ -1,9 +1,9 @@
-// Module ID: 4561
-// Function ID: 39957
+// Module ID: 4562
+// Function ID: 39969
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 4130, 689, 1273, 4562, 4015, 4539, 4126, 1212, 4543, 4660, 4662, 3842, 1450, 4663, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 4131, 689, 1273, 4563, 4016, 4540, 4127, 1212, 4544, 4661, 4663, 3843, 1450, 4664, 2]
 
-// Module 4561 (_isNativeReflectConstruct)
+// Module 4562 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import closure_5 from "jsxProd";
 import getSystemLocale from "getSystemLocale";
@@ -369,7 +369,7 @@ const obj4 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm
 tmp4.defaultProps = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
 const memoResult = importAllResult.memo((arg0) => {
   const size = importDefault(1450)();
-  let obj = require(4663) /* getIsScreenLandscape */;
+  let obj = require(4664) /* getIsScreenLandscape */;
   const isScreenLandscape = obj.useIsScreenLandscape();
   obj = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };
   const merged = Object.assign(arg0);

@@ -1,8 +1,8 @@
-// Module ID: 15868
-// Function ID: 122521
-// Dependencies: [31, 27, 33, 4130, 689, 10046, 4323, 5515, 4126, 1212, 2]
+// Module ID: 15879
+// Function ID: 122690
+// Dependencies: [31, 27, 33, 4131, 689, 9975, 4324, 5515, 4127, 1212, 2]
 
-// Module 15868
+// Module 15879
 import importAllResult from "result";
 import { Pressable } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,7 +22,7 @@ obj.buttonText = { color: require("_createForOfIteratorHelperLoose").unsafe_rawC
 let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
 const obj2 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_860 };
 const memoResult = importAllResult.memo(function VoicePanelNoVideoParticipantsCard() {
-  const channelId = importAllResult.useContext(importDefault(10046)).channelId;
+  const channelId = importAllResult.useContext(importDefault(9975)).channelId;
   const tmp = callback3();
   const items = [channelId];
   const callback = importAllResult.useCallback(() => {
@@ -32,14 +32,14 @@ const memoResult = importAllResult.memo(function VoicePanelNoVideoParticipantsCa
   obj = { style: tmp.label, variant: "text-md/semibold", color: "text-overlay-light" };
   const intl = channelId(1212).intl;
   obj.children = intl.string(channelId(1212).t["8eBJ73"]);
-  const items1 = [callback(channelId(4126).Text, obj), ];
+  const items1 = [callback(channelId(4127).Text, obj), ];
   obj = { style: tmp.button, onPress: callback, accessibilityRole: "button" };
   const intl2 = channelId(1212).intl;
   obj.accessibilityLabel = intl2.string(channelId(1212).t.kLQySL);
   const obj1 = { variant: "text-sm/semibold", style: tmp.buttonText };
   const intl3 = channelId(1212).intl;
   obj1.children = intl3.string(channelId(1212).t.kLQySL);
-  obj.children = callback(channelId(4126).Text, obj1);
+  obj.children = callback(channelId(4127).Text, obj1);
   items1[1] = callback(Pressable, obj);
   obj.children = items1;
   return callback2(importDefault(5515), obj);

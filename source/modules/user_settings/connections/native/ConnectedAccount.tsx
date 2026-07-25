@@ -1,9 +1,9 @@
-// Module ID: 13917
-// Function ID: 106465
+// Module ID: 13928
+// Function ID: 106592
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 57, 31, 27, 4812, 1838, 653, 4940, 33, 4130, 1273, 689, 5052, 4938, 566, 4543, 1212, 4126, 5513, 4814, 5502, 13918, 8258, 4470, 4561, 9009, 13919, 13922, 4939, 10033, 3827, 1920, 4660, 9704, 13924, 2748, 1392, 3976, 4541, 7696, 5165, 5501, 3842, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 57, 31, 27, 4813, 1838, 653, 4941, 33, 4131, 1273, 689, 5053, 4939, 566, 4544, 1212, 4127, 5513, 4815, 5502, 13929, 7993, 4471, 4562, 8897, 13930, 13933, 4940, 9962, 3828, 1921, 4661, 9628, 13935, 2749, 1392, 3977, 4542, 7640, 5164, 5501, 3843, 2]
 
-// Module 13917 (_isNativeReflectConstruct)
+// Module 13928 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -40,7 +40,7 @@ function _isNativeReflectConstruct() {
 }
 function Integration(integration) {
   integration = integration.integration;
-  let obj = integration(4130);
+  let obj = integration(4131);
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
   const tmp2 = callback3(importAllResult.useState(), 2);
   const importDefault = tmp2[1];
@@ -57,7 +57,7 @@ function Integration(integration) {
       obj = { style: legacyClassComponentStyles.integrationErrorText, variant: "text-sm/medium", color: "text-feedback-critical" };
       const intl2 = integration(1212).intl;
       obj.children = intl2.string(integration(1212).t.fEptJP);
-      tmp15 = callback4(integration(4126).Text, obj);
+      tmp15 = callback4(integration(4127).Text, obj);
     }
     obj = { style: legacyClassComponentStyles.integrationContainer };
     obj1 = { style: legacyClassComponentStyles.integrationContainerInternal };
@@ -65,7 +65,7 @@ function Integration(integration) {
     const items4 = [callback4(importDefault(5513), obj2), , ];
     const obj3 = { style: legacyClassComponentStyles.integrationTextRowContainer };
     const obj4 = { lineClamp: 1, variant: "text-sm/medium", children: integration.guild.name };
-    const items5 = [callback4(integration(4126).Text, obj4), ];
+    const items5 = [callback4(integration(4127).Text, obj4), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted" };
     const tmp19 = closure_20;
     const tmp20 = View;
@@ -75,7 +75,7 @@ function Integration(integration) {
     const tmp28 = closure_20;
     const tmp29 = View;
     const tmp31 = callback4;
-    const value = importDefault(4814).get(integration.type);
+    const value = importDefault(4815).get(integration.type);
     let platformUserUrl;
     if (null != value) {
       if (null != value.getPlatformUserUrl) {
@@ -83,7 +83,7 @@ function Integration(integration) {
       }
     }
     obj5.children = platformUserUrl;
-    items5[1] = tmp31(integration(4126).Text, obj5);
+    items5[1] = tmp31(integration(4127).Text, obj5);
     obj3.children = items5;
     items4[1] = tmp28(tmp29, obj3);
     items4[2] = tmp5;
@@ -113,7 +113,7 @@ function Integration(integration) {
       stringResult = string(RXvQQu.XpeFYr);
     }
     obj7.text = stringResult;
-    obj7 = callback4(integration(4543).Button, obj7);
+    obj7 = callback4(integration(4544).Button, obj7);
     obj6.children = obj7;
     callback4(View, obj6);
     const tmp6 = callback4;

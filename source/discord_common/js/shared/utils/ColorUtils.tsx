@@ -150,13 +150,13 @@ export const int2hsl = function int2hsl(accent_color, arg1) {
   }
   return combined;
 };
-export const hex2rgb = function hex2rgb(PRIMARY_200, self) {
+export const hex2rgb = function hex2rgb(token, self) {
   let alphaResult = self;
   if (self === undefined) {
     alphaResult = null;
   }
-  if (obj.valid(PRIMARY_200)) {
-    const obj2 = importDefault(666)(PRIMARY_200);
+  if (obj.valid(token)) {
+    const obj2 = importDefault(666)(token);
     if (null == alphaResult) {
       alphaResult = obj2.alpha();
     }

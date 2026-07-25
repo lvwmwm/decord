@@ -1,10 +1,10 @@
-// Module ID: 3800
-// Function ID: 31098
+// Module ID: 3801
+// Function ID: 31109
 // Name: resetCache
-// Dependencies: [1921, 3, 3801, 3803, 1282, 3817, 1212, 686, 3819, 3712, 2]
+// Dependencies: [1922, 3, 3802, 3804, 1282, 3818, 1212, 686, 3820, 3713, 2]
 // Exports: accessibilityLabelCalendarFormat, calendarFormat, calendarFormatCompact, diffAsUnits, differenceInDays, formatDateForDatetimeLocal, getDaysRemainingInMonth, getMonthlyProgressPercentage, isSameDay, isSameHourMoment, isWithinInterval, unitsAsStrings
 
-// Module 3800 (resetCache)
+// Module 3801 (resetCache)
 import importDefaultResult1 from "explicitContentFromProto";
 import importDefaultResult from "_isNativeReflectConstruct";
 import importDefaultResult2 from "dispatcher";
@@ -15,12 +15,12 @@ function resetCache() {
   let closure_5 = Object.create(null);
 }
 function syncHourCycleToIntlConfig() {
-  const TimestampHourCycle = require(3803) /* explicitContentFromProto */.TimestampHourCycle;
+  const TimestampHourCycle = require(3804) /* explicitContentFromProto */.TimestampHourCycle;
   const setting = TimestampHourCycle.getSetting();
   let result = setting !== require(1282) /* _callSuper */.TimestampHourCycle.AUTO;
   if (result) {
-    result = require(3817) /* __DiscordCreateDateFormatter */.supportsSystemDateFormatter();
-    const obj = require(3817) /* __DiscordCreateDateFormatter */;
+    result = require(3818) /* __DiscordCreateDateFormatter */.supportsSystemDateFormatter();
+    const obj = require(3818) /* __DiscordCreateDateFormatter */;
   }
   const values = Object.values(require(1212) /* getSystemLocale */.intl.formatConfig.time);
   for (let num2 = 0; num2 < values.length; num2 = num2 + 1) {
@@ -79,13 +79,13 @@ function differenceInCalendarDays(arg0, arg1) {
 function dateFormat(date, LL, setting) {
   const obj = toMoment(date);
   if (null == setting) {
-    const TimestampHourCycle = require(3803) /* explicitContentFromProto */.TimestampHourCycle;
+    const TimestampHourCycle = require(3804) /* explicitContentFromProto */.TimestampHourCycle;
     setting = TimestampHourCycle.getSetting();
   }
   const combined = "" + toMoment(date).locale() + ":" + LL + ":" + setting;
   let tmp6 = table[combined];
   if (null == tmp6) {
-    const tmp10 = importDefault(3819)(LL);
+    const tmp10 = importDefault(3820)(LL);
     table[combined] = tmp10;
     tmp6 = tmp10;
   }
@@ -97,13 +97,13 @@ function dateStringToMoment(arg0) {
     const error = new Error("Date string exceeds maximum length");
     throw error;
   } else {
-    return importDefault(3712)(arg0);
+    return importDefault(3713)(arg0);
   }
 }
 function toMoment(timestamp) {
   let tmp = timestamp;
   if (!obj.isMoment(timestamp)) {
-    tmp = importDefault(3712)(timestamp);
+    tmp = importDefault(3713)(timestamp);
   }
   return tmp;
 }
@@ -160,9 +160,9 @@ export const calendarFormat = function calendarFormat(timestamp, arg1, setting) 
   if (arg1 === undefined) {
     flag = false;
   }
-  const obj = importDefault(3712);
-  const obj3 = importDefault(3712)();
-  const localeDataResult = importDefault(3712).localeData();
+  const obj = importDefault(3713);
+  const obj3 = importDefault(3713)();
+  const localeDataResult = importDefault(3713).localeData();
   const tmp2 = differenceInCalendarDays(toDate(timestamp), obj3.toDate());
   if (tmp2 < -1) {
     return dateFormat(timestamp, "L LT", setting);
@@ -187,9 +187,9 @@ export const calendarFormat = function calendarFormat(timestamp, arg1, setting) 
   const tmp = toDate(timestamp);
 };
 export const calendarFormatCompact = function calendarFormatCompact(timestamp) {
-  const obj = importDefault(3712);
-  const obj3 = importDefault(3712)();
-  const localeDataResult = importDefault(3712).localeData();
+  const obj = importDefault(3713);
+  const obj3 = importDefault(3713)();
+  const localeDataResult = importDefault(3713).localeData();
   const tmp2 = differenceInCalendarDays(toDate(timestamp), obj3.toDate());
   if (0 === tmp2) {
     return tmp3(timestamp, "LT", arg1);
@@ -204,7 +204,7 @@ export const calendarFormatCompact = function calendarFormatCompact(timestamp) {
 };
 export { dateStringToMoment };
 export const accessibilityLabelCalendarFormat = function accessibilityLabelCalendarFormat(timestamp) {
-  const obj = importDefault(3712);
+  const obj = importDefault(3713);
   const date = new Date();
   const tmp2 = differenceInCalendarDays(timestamp, date);
   let str = "sameElse";
@@ -225,8 +225,8 @@ export const accessibilityLabelCalendarFormat = function accessibilityLabelCalen
   }
   let str5 = "LLL";
   if ("sameElse" !== str) {
-    str5 = localeDataResult.calendar(str, importDefault(3712)(timestamp), importDefault(3712)(date));
-    const tmp6 = importDefault(3712)(timestamp);
+    str5 = localeDataResult.calendar(str, importDefault(3713)(timestamp), importDefault(3713)(date));
+    const tmp6 = importDefault(3713)(timestamp);
   }
   return dateFormat(timestamp, str5);
 };

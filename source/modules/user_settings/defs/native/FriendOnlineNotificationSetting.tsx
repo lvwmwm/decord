@@ -1,9 +1,9 @@
-// Module ID: 14383
-// Function ID: 110011
+// Module ID: 14394
+// Function ID: 110138
 // Name: toggle
-// Dependencies: [7751, 14384, 10127, 1212, 3803, 14385, 2]
+// Dependencies: [7697, 14395, 10059, 1212, 3804, 14396, 2]
 
-// Module 14383 (toggle)
+// Module 14394 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -19,7 +19,7 @@ const toggle = createToggle.createToggle({
   useValue: require("explicitContentFromProto").EnableFriendOnlineNotifications.useSetting,
   onValueChange: require("onFriendOnlineNotificationSettingsChanged").onFriendOnlineNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14384) /* apexExperiment */.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
+    return require(14395) /* apexExperiment */.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
 });
 const obj = {
@@ -35,7 +35,7 @@ const obj = {
   useValue: require("explicitContentFromProto").EnableFriendOnlineNotifications.useSetting,
   onValueChange: require("onFriendOnlineNotificationSettingsChanged").onFriendOnlineNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14384) /* apexExperiment */.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
+    return require(14395) /* apexExperiment */.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
 };
 const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/FriendOnlineNotificationSetting.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15300
-// Function ID: 116715
+// Module ID: 15310
+// Function ID: 116843
 // Name: PostCallDisconnectNudge
-// Dependencies: [57, 31, 1906, 4146, 11478, 11479, 33, 15299, 1212, 14363, 11480, 566, 5802, 1334, 11481, 4098, 15300, 1934, 2]
+// Dependencies: [57, 31, 1907, 4147, 11441, 11442, 33, 15309, 1212, 14374, 11443, 566, 8379, 1334, 11444, 4099, 15310, 1935, 2]
 // Exports: default, usePostCallDisconnectNudge
 
-// Module 15300 (PostCallDisconnectNudge)
+// Module 15310 (PostCallDisconnectNudge)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,13 +33,13 @@ export default function PostCallDisconnectNudge(arg0) {
   obj.surface = constants2.CALL_DISCONNECT_BOTTOM_SHEET;
   obj.markAsDismissed = markAsDismissed;
   obj.onHide = onHide;
-  return jsx(importDefault(15299), {});
+  return jsx(importDefault(15309), {});
 };
 export const POST_CALL_DISCONNECT_NUDGE_KEY = "post-call-disconnect-nudge-key";
 export const usePostCallDisconnectNudge = function usePostCallDisconnectNudge() {
-  let obj = stateFromStores1(14363);
-  const canSeePushNotificationNudge = stateFromStores(11480).useCanSeePushNotificationNudge();
-  let obj2 = stateFromStores(11480);
+  let obj = stateFromStores1(14374);
+  const canSeePushNotificationNudge = stateFromStores(11443).useCanSeePushNotificationNudge();
+  let obj2 = stateFromStores(11443);
   const items = [closure_6];
   stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_6.getCurrentClientVoiceChannelId(null));
   const obj3 = stateFromStores(566);
@@ -72,7 +72,7 @@ export const usePostCallDisconnectNudge = function usePostCallDisconnectNudge() 
       }
     }
   }
-  const tmp9 = callback(stateFromStores(5802).useSelectedTimeRecurringDismissibleContent(prop, closure_11), 2);
+  const tmp9 = callback(stateFromStores(8379).useSelectedTimeRecurringDismissibleContent(prop, closure_11), 2);
   first = tmp9[0];
   _isNativeReflectConstruct = tmp11;
   const items3 = [first, tmp9[1]];

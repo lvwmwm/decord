@@ -1,10 +1,10 @@
-// Module ID: 15468
-// Function ID: 118870
+// Module ID: 15478
+// Function ID: 118998
 // Name: MoreButton
-// Dependencies: [31, 33, 9137, 9161, 9158, 1212, 8512, 2]
+// Dependencies: [31, 33, 9029, 9053, 9050, 1212, 8272, 2]
 // Exports: default
 
-// Module 15468 (MoreButton)
+// Module 15478 (MoreButton)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -21,11 +21,11 @@ export default function MoreButton(channel) {
       obj = {};
       const intl = channel(1212).intl;
       obj.accessibilityLabel = intl.string(channel(1212).t["UKOtz+"]);
-      obj.source = importDefault(8512);
+      obj.source = importDefault(8272);
       obj.onPress = tmp;
-      obj.children = jsx(channel(9158).HeaderIconButton, {});
-      tmp2 = jsx(importDefault(9161), {});
-      const tmp6 = importDefault(9161);
+      obj.children = jsx(channel(9050).HeaderIconButton, {});
+      tmp2 = jsx(importDefault(9053), {});
+      const tmp6 = importDefault(9053);
     } else {
       tmp2 = null;
     }

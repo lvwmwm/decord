@@ -1,10 +1,10 @@
-// Module ID: 3979
-// Function ID: 33008
+// Module ID: 3980
+// Function ID: 33019
 // Name: items
 // Dependencies: [666, 2]
 // Exports: generateRandomColorOptions
 
-// Module 3979 (items)
+// Module 3980 (items)
 let items = ["#94E0CF", "#9AF0B1", "#9A90FF", "#9A53FF", "#FDA6E4", "#FFE6C0", "#EFB4AA", "#56B69F", "#29C566", "#5348CA", "#6D24D4", "#CA48C8", "#F0AE29", "#DF4232"];
 let closure_3 = [0, 45, 90, 135, 180, 225, 270, 315];
 let closure_4 = [20, 40, 60, 80];

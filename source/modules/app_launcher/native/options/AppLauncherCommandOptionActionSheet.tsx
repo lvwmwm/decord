@@ -1,10 +1,10 @@
-// Module ID: 11318
-// Function ID: 88093
+// Module ID: 11280
+// Function ID: 87749
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [31, 27, 1455, 33, 4130, 689, 5187, 5186, 5499, 4098, 1273, 2]
+// Dependencies: [31, 27, 1455, 33, 4131, 689, 5187, 5186, 5499, 4099, 1273, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11318 (AppLauncherCommandOptionActionSheet)
+// Module 11280 (AppLauncherCommandOptionActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";

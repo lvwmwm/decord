@@ -1,5 +1,5 @@
 // Module ID: 5216
-// Function ID: 45161
+// Function ID: 45166
 // Name: useScrollEventsHandlersDefault
 // Dependencies: [5197, 1582, 5190, 5217]
 

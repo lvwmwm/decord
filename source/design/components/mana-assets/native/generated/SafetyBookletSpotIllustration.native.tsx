@@ -1,10 +1,10 @@
-// Module ID: 6450
-// Function ID: 50640
+// Module ID: 7370
+// Function ID: 60290
 // Name: SafetyBookletSpotIllustration
-// Dependencies: [33, 5085, 6451, 2]
+// Dependencies: [33, 5085, 7371, 2]
 // Exports: SafetyBookletSpotIllustration
 
-// Module 6450 (SafetyBookletSpotIllustration)
+// Module 7370 (SafetyBookletSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SafetyBookletSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const SafetyBookletSpotIllustration = function SafetyBookletSpotIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6451) };
+  obj = { uri: importDefault(7371) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

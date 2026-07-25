@@ -1,10 +1,10 @@
-// Module ID: 7435
-// Function ID: 59795
+// Module ID: 6517
+// Function ID: 58257
 // Name: useBuyNitroListData
-// Dependencies: [31, 653, 5462, 675, 7436, 2]
+// Dependencies: [31, 653, 5462, 675, 6518, 2]
 // Exports: default
 
-// Module 7435 (useBuyNitroListData)
+// Module 6517 (useBuyNitroListData)
 import result from "result";
 import { AnalyticEvents } from "ME";
 

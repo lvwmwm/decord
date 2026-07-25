@@ -1,10 +1,10 @@
-// Module ID: 14256
-// Function ID: 109443
+// Module ID: 14267
+// Function ID: 109570
 // Name: useMessagePreviewSetting
-// Dependencies: [1316, 4142, 3803, 566, 9172, 3808, 14257, 2]
+// Dependencies: [1316, 4143, 3804, 566, 9064, 3809, 14268, 2]
 // Exports: default
 
-// Module 14256 (useMessagePreviewSetting)
+// Module 14267 (useMessagePreviewSetting)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -55,13 +55,13 @@ export default function useMessagePreview(guild_id) {
     return hasUnreadResult;
   });
   if (!disabled) {
-    disabled = importDefault(9172)(guild_id);
+    disabled = importDefault(9064)(guild_id);
   }
   if (!disabled) {
-    disabled = tmp === _require(3808).MessagePreviewTypes.NONE;
+    disabled = tmp === _require(3809).MessagePreviewTypes.NONE;
   }
   if (!disabled) {
-    let tmp7 = tmp === _require(3808).MessagePreviewTypes.UNREADS;
+    let tmp7 = tmp === _require(3809).MessagePreviewTypes.UNREADS;
     if (tmp7) {
       if (null != unread) {
         stateFromStores = unread;
@@ -70,6 +70,6 @@ export default function useMessagePreview(guild_id) {
     }
     disabled = tmp7;
   }
-  return importDefault(14257)(guild_id, disabled);
+  return importDefault(14268)(guild_id, disabled);
 };
 export { useMessagePreviewSetting };

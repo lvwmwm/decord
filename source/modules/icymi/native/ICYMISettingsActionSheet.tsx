@@ -1,10 +1,10 @@
-// Module ID: 15228
-// Function ID: 115897
+// Module ID: 15238
+// Function ID: 116025
 // Name: ICYMISettingsActionSheet
-// Dependencies: [5, 31, 27, 4142, 8362, 8350, 653, 33, 4130, 689, 566, 8366, 5498, 5501, 1212, 5502, 8365, 5165, 7086, 669, 21, 5069, 4098, 8364, 4337, 15229, 1934, 15238, 2]
+// Dependencies: [5, 31, 27, 4143, 8120, 8108, 653, 33, 4131, 689, 566, 8124, 5498, 5501, 1212, 5502, 8123, 5164, 6104, 669, 21, 5070, 4099, 8122, 4338, 15239, 1935, 15248, 2]
 // Exports: default
 
-// Module 15228 (ICYMISettingsActionSheet)
+// Module 15238 (ICYMISettingsActionSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import "result";
 import { View } from "ICYMI_CUSTOM_SCORES_MODAL_KEY";
@@ -33,7 +33,7 @@ export default function ICYMISettingsActionSheet() {
   let obj = stateFromStoresObject(566);
   const items = [closure_6];
   stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_6.getState());
-  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8366).ICYMIStaffDebuggingUtilityExperiment;
+  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8124).ICYMIStaffDebuggingUtilityExperiment;
   obj = { showGradient: true, startExpanded: true };
   obj = {};
   const intl = stateFromStoresObject(1212).intl;
@@ -82,11 +82,11 @@ export default function ICYMISettingsActionSheet() {
           outer1_1(outer1_2[22]).hideActionSheet();
         }
     };
-    items1[1] = callback2(stateFromStoresObject(5165).TableRow, obj3);
+    items1[1] = callback2(stateFromStoresObject(5164).TableRow, obj3);
     let obj4 = { label: "Regenerate feed and clear read states" };
     // CreateGeneratorClosureLongIndex (0x67)
     obj4.onPress = callback("Regenerate feed and clear read states");
-    items1[2] = callback2(stateFromStoresObject(5165).TableRow, obj4);
+    items1[2] = callback2(stateFromStoresObject(5164).TableRow, obj4);
     obj1.children = items1;
     tmp5Result = closure_12(closure_11, obj1);
     const tmp5 = closure_12;
@@ -108,7 +108,7 @@ export default function ICYMISettingsActionSheet() {
     const tmp3 = stateFromStoresObject(outer1_2[26])(outer1_2[25], outer1_2.paths);
     outer1_1(outer1_2[22]).hideActionSheet();
   };
-  items2[1] = callback2(stateFromStoresObject(5165).TableRow, obj5);
+  items2[1] = callback2(stateFromStoresObject(5164).TableRow, obj5);
   obj.children = items2;
   const items3 = [closure_12(stateFromStoresObject(5501).TableRowGroup, obj), ];
   const tmp2 = _createForOfIteratorHelperLoose();

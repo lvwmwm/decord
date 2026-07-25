@@ -1,10 +1,10 @@
-// Module ID: 11163
-// Function ID: 86907
+// Module ID: 11123
+// Function ID: 86545
 // Name: ForumPostMediaAndroid
-// Dependencies: [57, 31, 27, 1278, 1277, 33, 4130, 689, 5085, 4533, 11164, 6834, 11165, 477, 5674, 4660, 7581, 7583, 11166, 3976, 3803, 10368, 1449, 2]
+// Dependencies: [57, 31, 27, 1278, 1277, 33, 4131, 689, 5085, 4534, 11124, 5834, 11125, 477, 5851, 4661, 6690, 6692, 11126, 3977, 3804, 10301, 1449, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail
 
-// Module 11163 (ForumPostMediaAndroid)
+// Module 11123 (ForumPostMediaAndroid)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -83,13 +83,13 @@ function ForumPostMedia(obscureReason) {
   const _require = obscureReason;
   const tmp = _createForOfIteratorHelperLoose();
   const ref = React.useRef(null);
-  let obj = _require(6834);
+  let obj = _require(5834);
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     obj = {};
     const merged = Object.assign(obscureReason);
-    let tmp6Result = callback2(ref(11165), obj);
-    const tmp19 = ref(11165);
+    let tmp6Result = callback2(ref(11125), obj);
+    const tmp19 = ref(11125);
   } else {
     let obj1 = _require(477);
     if (obj1.isAndroid()) {
@@ -103,7 +103,7 @@ function ForumPostMedia(obscureReason) {
     }
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = _require(5674).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = _require(5851).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       if (shouldAgeVerifyForReason) {
         const obj2 = {};
@@ -120,7 +120,7 @@ function ForumPostMedia(obscureReason) {
                 },
           children: tmp6Result
         };
-        obj2.children = callback2(_require(4660).PressableOpacity, obj3);
+        obj2.children = callback2(_require(4661).PressableOpacity, obj3);
         let tmp27 = callback2(closure_5, obj2);
       }
       return tmp27;
@@ -143,7 +143,7 @@ function ForumPostMedia(obscureReason) {
         },
       children: tmp6Result
     };
-    obj4.children = callback2(_require(4660).PressableOpacity, obj5);
+    obj4.children = callback2(_require(4661).PressableOpacity, obj5);
     tmp27 = callback2(closure_5, obj4);
   } else {
     const obj6 = {};
@@ -158,7 +158,7 @@ function useSharedMediaProps(arg0) {
   let channel;
   let media;
   ({ channel, media } = arg0);
-  let obj = require(11166) /* getForumPostShouldObscure */;
+  let obj = require(11126) /* getForumPostShouldObscure */;
   const tmp = callback(obj.useShouldObscure({ media, channel }), 2);
   obj = { shouldObscure: tmp[0], obscureReason: tmp[1] };
   let str = "light";
@@ -166,7 +166,7 @@ function useSharedMediaProps(arg0) {
     str = "dark";
   }
   obj.blurTheme = str;
-  const GifAutoPlay = require(3803) /* explicitContentFromProto */.GifAutoPlay;
+  const GifAutoPlay = require(3804) /* explicitContentFromProto */.GifAutoPlay;
   let tmp2 = "png";
   if (GifAutoPlay.useSetting()) {
     tmp2 = null;

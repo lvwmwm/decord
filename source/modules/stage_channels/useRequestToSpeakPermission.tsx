@@ -1,10 +1,10 @@
-// Module ID: 10687
-// Function ID: 83383
+// Module ID: 10651
+// Function ID: 83070
 // Name: useRequestToSpeakPermission
-// Dependencies: [57, 31, 1348, 653, 566, 3763, 7562, 2]
+// Dependencies: [57, 31, 1348, 653, 566, 3764, 6658, 2]
 // Exports: useRequestToSpeakPermission
 
-// Module 10687 (useRequestToSpeakPermission)
+// Module 10651 (useRequestToSpeakPermission)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ export const useRequestToSpeakPermission = function useRequestToSpeakPermission(
   const items1 = [id];
   const stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getChannel(closure_0), items1);
   let obj = _require(566);
-  const canEveryoneRoleResult = stateFromStores(3763).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
+  const canEveryoneRoleResult = stateFromStores(3764).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
   const tmp3 = callback(React.useState(canEveryoneRoleResult), 2);
   const first = tmp3[0];
   const dependencyMap = tmp5;

@@ -1,9 +1,9 @@
-// Module ID: 3858
-// Function ID: 32073
+// Module ID: 3859
+// Function ID: 32084
 // Name: BoostThisServerRive
-// Dependencies: [29, 31, 33, 3859, 3909, 3910, 2]
+// Dependencies: [29, 31, 33, 3860, 3910, 3911, 2]
 
-// Module 3858 (BoostThisServerRive)
+// Module 3859 (BoostThisServerRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -18,7 +18,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   },
   "Boost Crystal": function BoostCrystalBindings(arg0) {
@@ -26,7 +26,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   },
   "Boost Saved": function BoostSavedBindings(arg0) {
@@ -34,7 +34,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(3860) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   }
 };
@@ -74,7 +74,7 @@ const forwardRefResult = importAllResult.forwardRef(function BoostThisServerRive
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3910) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  return jsx(require(3911) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BoostThisServerRive.tsx");
 

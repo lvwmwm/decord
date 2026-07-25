@@ -1,10 +1,10 @@
-// Module ID: 5632
-// Function ID: 48060
+// Module ID: 7716
+// Function ID: 61620
 // Name: isCreatorMonetizationEnabledGuild
 // Dependencies: [1838, 653, 566, 2]
 // Exports: default
 
-// Module 5632 (isCreatorMonetizationEnabledGuild)
+// Module 7716 (isCreatorMonetizationEnabledGuild)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 

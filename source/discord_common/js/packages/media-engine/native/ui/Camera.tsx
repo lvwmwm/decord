@@ -1,9 +1,9 @@
-// Module ID: 4233
-// Function ID: 37118
+// Module ID: 4234
+// Function ID: 37129
 // Name: Camera
-// Dependencies: [31, 33, 4230, 2]
+// Dependencies: [31, 33, 4231, 2]
 
-// Module 4233 (Camera)
+// Module 4234 (Camera)
 import "result";
 import { jsx } from "jsxProd";
 

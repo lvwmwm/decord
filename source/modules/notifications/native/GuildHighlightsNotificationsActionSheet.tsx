@@ -1,10 +1,10 @@
-// Module ID: 9535
-// Function ID: 74220
+// Module ID: 9456
+// Function ID: 73807
 // Name: GuildPill
-// Dependencies: [57, 31, 27, 1838, 4325, 653, 9536, 33, 4130, 689, 5513, 4126, 9537, 624, 1212, 9538, 1557, 5187, 5189, 1920, 3991, 5167, 7636, 5079, 5073, 4098, 2]
+// Dependencies: [57, 31, 27, 1838, 4326, 653, 9457, 33, 4131, 689, 5513, 4127, 9458, 624, 1212, 9459, 1557, 5187, 5189, 1921, 3992, 5166, 7575, 5079, 5074, 4099, 2]
 // Exports: default
 
-// Module 9535 (GuildPill)
+// Module 9456 (GuildPill)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -33,7 +33,7 @@ function GuildPill(guild) {
     name = guild.name;
   }
   obj.children = name;
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return closure_12(View, obj);
 }

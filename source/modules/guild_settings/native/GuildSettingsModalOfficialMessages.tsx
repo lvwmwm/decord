@@ -1,10 +1,10 @@
-// Module ID: 16532
-// Function ID: 128752
+// Module ID: 16543
+// Function ID: 128920
 // Name: MessagePreview
-// Dependencies: [57, 31, 27, 4122, 1838, 8483, 5126, 4123, 482, 33, 4130, 689, 1212, 14206, 10385, 14208, 4130, 1456, 566, 8482, 5087, 5788, 4098, 14867, 1934, 8404, 3991, 5165, 13620, 665, 4126, 8799, 3800, 5648, 666, 1273, 14221, 2]
+// Dependencies: [57, 31, 27, 4123, 1838, 8243, 5126, 4124, 482, 33, 4131, 689, 1212, 14217, 10318, 14219, 4131, 1456, 566, 8242, 5087, 6695, 4099, 14878, 1935, 8162, 3992, 5164, 13631, 665, 4127, 8687, 3801, 5994, 666, 1273, 14232, 2]
 // Exports: default
 
-// Module 16532 (MessagePreview)
+// Module 16543 (MessagePreview)
 import _slicedToArray from "_slicedToArray";
 import SegmentedControl from "SegmentedControl";
 import get_ActivityIndicator from "TableRowInner";
@@ -40,7 +40,7 @@ function MessagePreview(theme) {
   if (_isNativeReflectConstruct.desaturateUserColors) {
     num = _isNativeReflectConstruct.saturation;
   }
-  let obj = require(5648) /* isGuildOfficialMessagesEnabled */;
+  let obj = require(5994) /* isGuildOfficialMessagesEnabled */;
   const accessibleGuildOfficialTextColor = obj.getAccessibleGuildOfficialTextColor(selectedColor, semanticColor, num);
   let obj2 = importDefault(666)(selectedColor);
   const hexResult = accessibleGuildOfficialTextColor.hex();
@@ -50,30 +50,30 @@ function MessagePreview(theme) {
   ({ borderStrong: arr[1], bgBaseLow: arr[2] } = animatedStyles);
   obj = { style: items1 };
   items1 = [tmp.chatContainerInner, { backgroundColor: obj2.alpha(closure_10).hex() }];
-  const obj1 = { source: importDefault(14221) };
+  const obj1 = { source: importDefault(14232) };
   const items2 = [callback(require(1273) /* Button */.Avatar, obj1), ];
   obj2 = { style: tmp.chatContent };
   const obj3 = { style: tmp.chatHeader };
   const obj4 = { animated: true, style: animatedStyles.textStrong, variant: "text-md/semibold", lineClamp: 1 };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl.string(require(1212) /* getSystemLocale */.t.cqpybK);
-  const items3 = [callback(require(4126) /* Text */.Text, obj4), ];
+  const items3 = [callback(require(4127) /* Text */.Text, obj4), ];
   const obj5 = { animated: true, variant: "text-xs/medium" };
   const items4 = [tmp.chatTimestamp, animatedStyles.textMuted];
   obj5.style = items4;
   obj5.children = memo;
-  items3[1] = callback(require(4126) /* Text */.Text, obj5);
+  items3[1] = callback(require(4127) /* Text */.Text, obj5);
   obj3.children = items3;
   const items5 = [callback2(View, obj3), ];
   const obj6 = { animated: true, variant: "text-md/normal", style: { color: hexResult } };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj6.children = intl2.string(require(1212) /* getSystemLocale */.t.Mi9Kbe);
-  items5[1] = callback(require(4126) /* Text */.Text, obj6);
+  items5[1] = callback(require(4127) /* Text */.Text, obj6);
   obj2.children = items5;
   items2[1] = callback2(View, obj2);
   obj.children = items2;
   obj.children = callback2(View, obj);
-  return callback(importDefault(3991).View, obj);
+  return callback(importDefault(3992).View, obj);
 }
 const View = get_ActivityIndicator.View;
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_9, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: closure_10 } = MESSAGE_GROUP_SPACING);

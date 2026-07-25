@@ -1,10 +1,10 @@
-// Module ID: 14410
-// Function ID: 110131
+// Module ID: 14421
+// Function ID: 110258
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [57, 31, 27, 1849, 33, 4130, 7445, 5501, 1212, 14411, 7443, 566, 1872, 2]
+// Dependencies: [57, 31, 27, 1850, 33, 4131, 6527, 5501, 1212, 14422, 6525, 566, 1873, 2]
 // Exports: default
 
-// Module 14410 (BackwardsCompatibleAppIconRows)
+// Module 14421 (BackwardsCompatibleAppIconRows)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -27,7 +27,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
     let dependencyMap;
     function onLongPress(result, arg1) {
       let tmp = null;
-      if (result === merged(7445).FreemiumAppIconIds.DEFAULT) {
+      if (result === merged(6527).FreemiumAppIconIds.DEFAULT) {
         tmp = dependencyMap(true);
       }
       return tmp;
@@ -48,7 +48,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj["icon"] = id;
       obj["showEasterEgg"] = callback;
       obj["onLongPress"] = onLongPress;
-      return outer1_7(callback(14411), obj);
+      return outer1_7(callback(14422), obj);
     });
     obj.children = callback(merged(5501).TableRowGroup, obj);
     return callback(View, obj);
@@ -62,13 +62,13 @@ export default function AppIconRows(onSelect) {
   let currentAppIcon;
   let limitedTimeAppIcons;
   onSelect = onSelect.onSelect;
-  let obj = require(7443) /* fetchCurrentAppIcon */;
+  let obj = require(6525) /* fetchCurrentAppIcon */;
   const appIcons = obj.useAppIcons();
   ({ limitedTimeAppIcons, currentAppIcon } = appIcons);
   let obj1 = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getCurrentUser());
-  let obj2 = require(1872) /* isPremiumAtLeast */;
+  let obj2 = require(1873) /* isPremiumAtLeast */;
   const isPremiumResult = obj2.isPremium(stateFromStores);
   const tmp5 = limitedTimeAppIcons.length > 0 && limitedTimeAppIcons.filter((isHidden) => !isHidden.isHidden).length > 0;
   obj = {};

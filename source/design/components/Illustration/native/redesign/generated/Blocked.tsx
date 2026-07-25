@@ -1,17 +1,17 @@
-// Module ID: 13756
-// Function ID: 105497
+// Module ID: 13767
+// Function ID: 105624
 // Name: getBlockedSource
-// Dependencies: [31, 27, 33, 7405, 13757, 13758, 13759, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 13768, 13769, 13770, 3977, 2]
 // Exports: Blocked
 
-// Module 13756 (getBlockedSource)
+// Module 13767 (getBlockedSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getBlockedSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getBlockedSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useBlockedSource() {
-  return getBlockedSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getBlockedSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Blocked.tsx");
 

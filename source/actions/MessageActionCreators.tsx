@@ -1,9 +1,9 @@
-// Module ID: 6691
-// Function ID: 51619
+// Module ID: 5685
+// Function ID: 48929
 // Name: trackInvite
-// Dependencies: [57, 5, 6, 7, 4808, 6692, 6693, 6694, 6919, 6921, 6829, 5035, 4149, 1194, 1348, 6922, 1838, 4115, 4349, 3758, 4217, 4142, 6927, 1849, 653, 6929, 5720, 4123, 27, 3, 4114, 6930, 4119, 6933, 6934, 4324, 6939, 4981, 6958, 6976, 675, 4116, 6977, 6980, 4366, 6982, 1212, 1920, 4666, 686, 6994, 4329, 6995, 6834, 507, 4351, 5604, 14, 6720, 4803, 21, 1882, 1901, 6709, 4806, 6996, 6997, 7000, 7001, 3776, 6924, 1360, 5648, 7002, 7071, 7075, 7078, 7084, 7085, 7107, 664, 7108, 1881, 7006, 3976, 7109, 4470, 2]
+// Dependencies: [57, 5, 6, 7, 4809, 5686, 5687, 5690, 5910, 5912, 5829, 5036, 4150, 1194, 1348, 5913, 1838, 4116, 4350, 3759, 4218, 4143, 5918, 1850, 653, 5920, 5688, 4124, 27, 3, 4115, 5921, 4120, 5924, 5925, 4325, 5930, 4982, 5949, 5967, 675, 4117, 5968, 5971, 4367, 5974, 1212, 1921, 4667, 686, 5986, 4330, 5987, 5834, 507, 4352, 5604, 14, 5716, 4804, 21, 1883, 1902, 5705, 4807, 5988, 5989, 5992, 5993, 3777, 5915, 1360, 5994, 6020, 6089, 6093, 6096, 6102, 6103, 6125, 664, 6126, 1882, 6024, 3977, 6127, 4471, 2]
 
-// Module 6691 (trackInvite)
+// Module 5685 (trackInvite)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -69,11 +69,11 @@ function trackInvite(channelId) {
   }
   id = id.getId();
   invite = invite.getInvite(inviteKey);
-  let obj = require(4116) /* readSnowflake */;
+  let obj = require(4117) /* readSnowflake */;
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   let result1 = null != invite;
   if (result1) {
-    let obj1 = require(6977) /* isGroupDMInvite */;
+    let obj1 = require(5968) /* isGroupDMInvite */;
     result1 = obj1.isEmbeddedApplicationInvite(invite);
   }
   let id1;
@@ -84,7 +84,7 @@ function trackInvite(channelId) {
     }
   }
   if (tmp8) {
-    let obj2 = require(6934) /* trackAppEmbedViewed */;
+    let obj2 = require(5925) /* trackAppEmbedViewed */;
     const result2 = obj2.trackAppEmbedLinkSent(id1, LinkType.ACTIVITY_INVITE, id);
   }
   let channel = store.getChannel(channelId.channelId);
@@ -125,14 +125,14 @@ function trackInvite(channelId) {
             STREAM = GDM_INVITE;
             if (lastActiveStream.channelId === channel.id) {
               obj.destination_user_id = lastActiveStream.ownerId;
-              const streamerApplication = require(6980) /* _findPlayingActivity */.getStreamerApplication(lastActiveStream, closure_24);
+              const streamerApplication = require(5971) /* _findPlayingActivity */.getStreamerApplication(lastActiveStream, closure_24);
               let id3 = null;
               if (null != streamerApplication) {
                 id3 = streamerApplication.id;
               }
               obj.application_id = id3;
               STREAM = constants3.STREAM;
-              const obj9 = require(6980) /* _findPlayingActivity */;
+              const obj9 = require(5971) /* _findPlayingActivity */;
             }
           }
         }
@@ -158,16 +158,16 @@ function trackInvite(channelId) {
     obj["message_id"] = messageId;
     obj["send_type"] = constants4.DIRECT_MESSAGE;
     obj["invite_guild_scheduled_event_id"] = result.guildScheduledEventId;
-    const inviteInstanceId = require(4116) /* readSnowflake */.getInviteInstanceId(result.baseCode, messageId);
+    const inviteInstanceId = require(4117) /* readSnowflake */.getInviteInstanceId(result.baseCode, messageId);
     let tmp48 = null;
     if (null != inviteInstanceId) {
       tmp48 = inviteInstanceId;
     }
     obj["invite_instance_id"] = tmp48;
     const merged1 = Object.assign(overrideProperties);
-    const obj11 = require(4116) /* readSnowflake */;
-    importDefault(4324).trackWithMetadata(constants.INVITE_SENT, obj);
-    const obj12 = importDefault(4324);
+    const obj11 = require(4117) /* readSnowflake */;
+    importDefault(4325).trackWithMetadata(constants.INVITE_SENT, obj);
+    const obj12 = importDefault(4325);
   } else {
     obj1 = {};
     if (null != invite) {
@@ -185,16 +185,16 @@ function trackInvite(channelId) {
           obj2["message_id"] = messageId;
           obj2["send_type"] = constants4.DIRECT_MESSAGE;
           obj2["invite_guild_scheduled_event_id"] = result.guildScheduledEventId;
-          const inviteInstanceId1 = require(4116) /* readSnowflake */.getInviteInstanceId(result.baseCode, messageId);
+          const inviteInstanceId1 = require(4117) /* readSnowflake */.getInviteInstanceId(result.baseCode, messageId);
           let tmp21 = null;
           if (null != inviteInstanceId1) {
             tmp21 = inviteInstanceId1;
           }
           obj2["invite_instance_id"] = tmp21;
           const merged3 = Object.assign(overrideProperties);
-          const obj6 = require(4116) /* readSnowflake */;
-          importDefault(4324).trackWithMetadata(constants.INVITE_SENT, obj2);
-          const obj7 = importDefault(4324);
+          const obj6 = require(4117) /* readSnowflake */;
+          importDefault(4325).trackWithMetadata(constants.INVITE_SENT, obj2);
+          const obj7 = importDefault(4325);
         }
       }
     }
@@ -235,7 +235,7 @@ let obj = {
 obj = {
   messageName: "INVALID_MESSAGE_SEND_NO_MUTUAL_GUILDS",
   messageGetter(rawRecipients) {
-    let obj = importDefault(1920);
+    let obj = importDefault(1921);
     const articleURL = obj.getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED);
     rawRecipients = rawRecipients.rawRecipients;
     if (null == rawRecipients) {
@@ -259,7 +259,7 @@ obj = {
   messageName: "INVALID_MESSAGE_SEND_USER",
   messageGetter() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { helpUrl: importDefault(1920).getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED) };
+    const obj = { helpUrl: importDefault(1921).getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED) };
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.SkGL7l, obj);
   }
 };
@@ -348,7 +348,7 @@ let closure_55 = {
     messageName: "TOTAL_ATTACHMENT_SIZE_TOO_LARGE",
     messageGetter() {
       const intl = require(1212) /* getSystemLocale */.intl;
-      const obj = { maxSizeMb: require(4666) /* items */.MAX_TOTAL_ATTACHMENT_SIZE_MB };
+      const obj = { maxSizeMb: require(4667) /* items */.MAX_TOTAL_ATTACHMENT_SIZE_MB };
       return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.DYFPg2, obj);
     }
   },
@@ -384,18 +384,18 @@ let obj14 = {
   },
   sendBotMessage(id, intl, messageName, nonce) {
     if (null != messageName) {
-      let obj = importDefault(4324);
+      let obj = importDefault(4325);
       obj = { message_author: "Clyde", message_name: messageName };
       obj.trackWithMetadata(constants.AUTOMATED_MESSAGE_RECEIVED, obj);
     }
     obj = { messageId: nonce, channelId: id, content: intl, loggingName: messageName };
-    obj14.receiveMessage(id, require(6994) /* userRecordToServer */.createBotMessage(obj));
+    obj14.receiveMessage(id, require(5986) /* userRecordToServer */.createBotMessage(obj));
   },
   sendNitroSystemMessage(channelId, content, nonce) {
     obj = { channelId, nonce, type: constants6.NITRO_NOTIFICATION, content, flags: closure_35.EPHEMERAL, author: obj };
     obj = { id: closure_42, username: "Nitro Notification", discriminator: closure_43, avatar: "nitro", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6994)(obj));
+    const merged = Object.assign(importDefault(5986)(obj));
     obj["state"] = constants9.SENT;
     obj["channel_id"] = channelId;
     obj14.receiveMessage(channelId, obj, true);
@@ -404,7 +404,7 @@ let obj14 = {
     obj = { channelId, type: constants6.GIFTING_PROMPT, content: "", flags: closure_35.EPHEMERAL, author: obj, giftingPrompt };
     obj = { id: closure_42, username: "Gifting Prompt", discriminator: closure_43, avatar: "gifting_prompt", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6994)(obj));
+    const merged = Object.assign(importDefault(5986)(obj));
     obj["state"] = constants9.SENT;
     obj14.receiveMessage(channelId, obj, true);
   },
@@ -412,7 +412,7 @@ let obj14 = {
     obj = { channelId, type: constants6.GUILD_BOOST_UPSELL, content: "", flags: closure_35.EPHEMERAL, author: obj, boostingPrompt };
     obj = { id: closure_42, username: "Guild Boost Upsell", discriminator: closure_43, avatar: "guild_boost_upsell", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6994)(obj));
+    const merged = Object.assign(importDefault(5986)(obj));
     obj["state"] = constants9.SENT;
     obj14.receiveMessage(channelId, obj, true);
   },
@@ -428,9 +428,9 @@ let obj14 = {
         obj14.sendBotMessage(closure_0, obj.messageGetter(channel), obj.messageName);
       } else {
         const intl = require(1212) /* getSystemLocale */.intl;
-        obj = { helpUrl: importDefault(1920).getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED) };
+        obj = { helpUrl: importDefault(1921).getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED) };
         const _HermesInternal = HermesInternal;
-        const obj3 = importDefault(1920);
+        const obj3 = importDefault(1921);
         obj14.sendBotMessage(closure_0, intl.formatToPlainString(require(1212) /* getSystemLocale */.t.SkGL7l, obj), "SEND_FAILED (" + num + ")");
         const formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.SkGL7l, obj);
       }
@@ -442,9 +442,9 @@ let obj14 = {
     const channel = store.getChannel(channelId);
     if (null != channel) {
       let obj = { isDM: channel.isDM(), isGDM: channel.isGroupDM() };
-      const match = require(4329) /* n */.match(obj);
+      const match = require(4330) /* n */.match(obj);
       obj = { isDM: true };
-      const str2 = require(4329) /* n */;
+      const str2 = require(4330) /* n */;
       const withResult = match.with(obj, () => {
         const obj = {};
         const intl = outer1_0(outer1_3[46]).intl;
@@ -503,11 +503,11 @@ let obj14 = {
         obj.messageName = "BOT_GUILD_EXPLICIT_CONTENT";
         return obj;
       });
-      const nonce = require(6995) /* snowflakeSequence */.createNonce();
+      const nonce = require(5987) /* snowflakeSequence */.createNonce();
       obj14.sendBotMessage(channelId, message, messageName, nonce);
-      const obj9 = require(6995) /* snowflakeSequence */;
-      let obj1 = { action: require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.TrackMediaRedactionActionType.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT, messageId: nonce, channelId, context: EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED };
-      const result = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.trackMediaRedactionAction(obj1);
+      const obj9 = require(5987) /* snowflakeSequence */;
+      let obj1 = { action: require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.TrackMediaRedactionActionType.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT, messageId: nonce, channelId, context: EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED };
+      const result = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.trackMediaRedactionAction(obj1);
       let tmp = null != attachments1;
       if (tmp) {
         tmp = attachments1.length > 0;
@@ -517,7 +517,7 @@ let obj14 = {
         const obj2 = { type: "MESSAGE_EXPLICIT_CONTENT_FP_CREATE", messageId: nonce, channelId, attachments: attachments1 };
         obj1.dispatch(obj2);
       }
-      const obj10 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
+      const obj10 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
     }
   },
   truncateMessages(channelId, truncateBottom, truncateTop) {
@@ -547,7 +547,7 @@ let obj14 = {
     }
   },
   trackJump(channelId, id, Present, extraProperties) {
-    let obj = importDefault(4324);
+    let obj = importDefault(4325);
     obj = { context: Present, channel_id: channelId, message_id: id };
     const merged = Object.assign(extraProperties);
     obj.trackWithMetadata(constants.JUMP, obj);
@@ -786,9 +786,9 @@ let obj14 = {
     return callback(async () => {
       let c0;
       const basicChannel = outer2_19.getBasicChannel(outer1_0);
-      let obj = callback2(4803);
+      let obj = callback2(4804);
       const orCreate = obj.getOrCreate(outer1_0);
-      const databaseResult = callback2(1882).database();
+      const databaseResult = callback2(1883).database();
       c0 = databaseResult;
       if (null != databaseResult) {
         if (null != basicChannel) {
@@ -800,7 +800,7 @@ let obj14 = {
                   const obj4 = callback2(14);
                 }
               }
-              const tmp13 = yield callback(1901).tryLoadAsync(() => callback(table[63]).load(c0, outer2_0, outer2_4));
+              const tmp13 = yield callback(1902).tryLoadAsync(() => callback(table[63]).load(c0, outer2_0, outer2_4));
               if (null != tmp13) {
                 const _HermesInternal = HermesInternal;
                 outer2_51.log("fetched " + tmp13.messages.length + " messages from local database (channel_id: " + outer1_0 + ", remote_fetch_completed: " + outer1_5.completed + ")");
@@ -811,7 +811,7 @@ let obj14 = {
                     if (tmp28) {
                       tmp28 = tmp13.connectionId === outer2_8.lastTimeConnectedChanged();
                     }
-                    const obj8 = callback2(6720);
+                    const obj8 = callback2(5716);
                     const result = obj8.recordChannelFetchedLocal(outer1_0, outer1_1, outer1_2, outer1_3, outer1_4, tmp13.messages);
                     obj = { type: "LOCAL_MESSAGES_LOADED", guildId: basicChannel.guild_id, channelId: outer1_0 };
                     ({ users: obj10.users, members: obj10.members, messages: obj10.messages } = tmp13);
@@ -825,12 +825,12 @@ let obj14 = {
                 callback2(14).addLocalMessages(outer1_0, -3);
                 const obj6 = callback2(14);
               }
-              const obj5 = callback(1901);
+              const obj5 = callback(1902);
             }
           }
         }
       }
-      const obj2 = callback2(1882);
+      const obj2 = callback2(1883);
       callback2(14).addLocalMessages(outer1_0, -1);
     })();
   },
@@ -1020,14 +1020,14 @@ let obj14 = {
         } else {
           let nonce = outer1_3.nonce;
           if (null == nonce) {
-            let obj = callback(6995);
+            let obj = callback(5987);
             nonce = obj.createNonce();
           }
           obj = {};
           const merged = Object.assign(outer1_3);
           obj["nonce"] = nonce;
           outer1_3 = obj;
-          const backgroundifyResult = callback2(6997).backgroundify(function _trySend() {
+          const backgroundifyResult = callback2(5989).backgroundify(function _trySend() {
             return outer3_56._sendMessage(outer2_0, outer2_1, outer2_3);
           }, undefined);
           c0 = backgroundifyResult;
@@ -1123,7 +1123,7 @@ let obj14 = {
     return obj;
   },
   sendInvite(id, code, _location, closure_1, content) {
-    const tmp = importDefault(7000)(code);
+    const tmp = importDefault(5992)(code);
     let combined = tmp;
     if (null != content) {
       const _HermesInternal = HermesInternal;
@@ -1215,7 +1215,7 @@ let obj14 = {
   },
   validateMessage(invalidEmojis, currentUser, outer1_0) {
     if (invalidEmojis.some((animated) => animated.animated)) {
-      let obj = importDefault(3776);
+      let obj = importDefault(3777);
       if (!obj.canUseAnimatedEmojis(currentUser)) {
         const intl = require(1212) /* getSystemLocale */.intl;
         let stringResult = intl.string(require(1212) /* getSystemLocale */.t["V5/GgC"]);
@@ -2136,11 +2136,11 @@ let obj14 = {
   dismissAutomatedMessage(message) {
     const self = this;
     if (null != message.loggingName) {
-      let obj = importDefault(4324);
+      let obj = importDefault(4325);
       obj = { message_name: message.loggingName, message_author: message.author.username };
       obj.trackWithMetadata(constants.AUTOMATED_MESSAGE_DISMISSED, obj);
     }
-    const result = require(7109) /* dismissGiftIntent */.logGiftIntentMessageDismissed(message.channel_id, message.id);
+    const result = require(6127) /* dismissGiftIntent */.logGiftIntentMessageDismissed(message.channel_id, message.id);
     self.deleteMessage(message.channel_id, message.id, true);
   },
   revealMessage(id, messageId) {

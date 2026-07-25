@@ -1,10 +1,10 @@
-// Module ID: 11375
-// Function ID: 88457
+// Module ID: 11337
+// Function ID: 88113
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [31, 33, 3996, 1324, 3991, 1555, 4131, 4134, 10227, 2]
+// Dependencies: [31, 33, 3997, 1324, 3992, 1555, 4132, 4135, 10160, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11375 (MediaKeyboardButtonIcon)
+// Module 11337 (MediaKeyboardButtonIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,12 +20,12 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     let _require;
     let chatInputFloating;
     const merged = Object.assign(arg0, undefined);
-    const tmp7 = chatInputFloating(3996)();
+    const tmp7 = chatInputFloating(3997)();
     _require = tmp7;
     let obj = _require(1324);
     obj = { location: "MediaKeyboardButtonIcon" };
     chatInputFloating = obj.useMobileVisualRefreshConfig(obj).chatInputFloating;
-    let obj2 = _require(3991);
+    let obj2 = _require(3992);
     const fn = function s() {
       let tmp = _undefined === _undefined(outer1_2[5]).KeyboardTypes.MEDIA;
       if (!tmp) {
@@ -46,7 +46,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
       obj.transform = items;
       return obj;
     };
-    obj = { keyboard: tmp7, KeyboardTypes: _require(1555).KeyboardTypes, chatInputFloating, withTiming: _require(4131).withTiming, timingStandard: _require(4134).timingStandard };
+    obj = { keyboard: tmp7, KeyboardTypes: _require(1555).KeyboardTypes, chatInputFloating, withTiming: _require(4132).withTiming, timingStandard: _require(4135).timingStandard };
     fn.__closure = obj;
     fn.__workletHash = 12686941860647;
     fn.__initData = closure_4;
@@ -54,7 +54,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     const obj1 = { style: animatedStyle };
     obj2 = {};
     const merged1 = Object.assign(merged);
-    obj1.children = jsx(_require(10227).PlusLargeIcon, {});
-    return jsx(chatInputFloating(3991).View, { style: animatedStyle });
+    obj1.children = jsx(_require(10160).PlusLargeIcon, {});
+    return jsx(chatInputFloating(3992).View, { style: animatedStyle });
   }
 };

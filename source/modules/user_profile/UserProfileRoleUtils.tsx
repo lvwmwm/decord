@@ -1,7 +1,7 @@
 // Module ID: 5508
-// Function ID: 46943
+// Function ID: 46948
 // Name: sortRolesByVerification
-// Dependencies: [1912, 2]
+// Dependencies: [1913, 2]
 // Exports: sortRolesByVerification
 
 // Module 5508 (sortRolesByVerification)
@@ -20,8 +20,8 @@ export const sortRolesByVerification = function sortRolesByVerification(tags, ta
   }
   if (undefined === guild_connections) {
     if (tmp2) {
-      let num2 = require(1912) /* _createForOfIteratorHelperLoose */.compareGuildRoles(tags, tags2);
-      const obj = require(1912) /* _createForOfIteratorHelperLoose */;
+      let num2 = require(1913) /* _createForOfIteratorHelperLoose */.compareGuildRoles(tags, tags2);
+      const obj = require(1913) /* _createForOfIteratorHelperLoose */;
     } else {
       num2 = -1;
     }

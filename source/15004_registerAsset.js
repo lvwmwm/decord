@@ -1,11 +1,11 @@
 // Module ID: 15004
-// Function ID: 114322
+// Function ID: 114384
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 15004 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native", width: 21, height: 18, scales: [1, 2, 3], hash: "f19353ccef9be27782bf69aac76f0908", name: "ic_invite", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 64, height: 64, scales: [1, 2, 3], hash: "2d232c4ffc7aee7f8419734bdb63af83", name: "screenshare", type: "png" };
 
 export default registerAsset.registerAsset(obj);

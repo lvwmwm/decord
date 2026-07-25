@@ -1,10 +1,10 @@
-// Module ID: 11425
-// Function ID: 88831
+// Module ID: 11388
+// Function ID: 88490
 // Name: InvitesDisabledAlertModal
-// Dependencies: [31, 33, 4475, 1212, 4475, 2]
+// Dependencies: [31, 33, 4476, 1212, 4476, 2]
 // Exports: default
 
-// Module 11425 (InvitesDisabledAlertModal)
+// Module 11388 (InvitesDisabledAlertModal)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -21,7 +21,7 @@ export default function InvitesDisabledAlertModal() {
   obj = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t.BddRzS);
-  obj.children = jsx(require(4475) /* getAlertModalItemKey */.AlertActionButton, {}, "okay");
-  obj.actions = jsx(require(4475) /* getAlertModalItemKey */.AlertActions, {});
-  return jsx(require(4475) /* getAlertModalItemKey */.AlertModal, {});
+  obj.children = jsx(require(4476) /* getAlertModalItemKey */.AlertActionButton, {}, "okay");
+  obj.actions = jsx(require(4476) /* getAlertModalItemKey */.AlertActions, {});
+  return jsx(require(4476) /* getAlertModalItemKey */.AlertModal, {});
 };

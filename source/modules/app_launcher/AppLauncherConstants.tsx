@@ -1,9 +1,9 @@
-// Module ID: 11287
-// Function ID: 87840
+// Module ID: 11249
+// Function ID: 87496
 // Name: CommandListSortOrder
 // Dependencies: [2]
 
-// Module 11287 (CommandListSortOrder)
+// Module 11249 (CommandListSortOrder)
 const result = require("set").fileFinishedImporting("modules/app_launcher/AppLauncherConstants.tsx");
 
 export const CommandListSortOrder = { POPULAR: 0, [0]: "POPULAR", ALPHABETICAL: 1, [1]: "ALPHABETICAL" };

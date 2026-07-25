@@ -1,10 +1,10 @@
-// Module ID: 15535
-// Function ID: 119534
+// Module ID: 15545
+// Function ID: 119662
 // Name: YouAvatar
-// Dependencies: [57, 31, 27, 1340, 4810, 6855, 8308, 5510, 1345, 33, 15528, 15147, 477, 8307, 8282, 12013, 12014, 8310, 8560, 1334, 5802, 11943, 4543, 9142, 689, 1212, 15536, 1457, 7974, 8283, 8298, 566, 1324, 8280, 8284, 12241, 15537, 12127, 12133, 12134, 11929, 15538, 12137, 14714, 11945, 11914, 7191, 12143, 15540, 12000, 12148, 12155, 8404, 3991, 5449, 11925, 8557, 8494, 11676, 8797, 2]
+// Dependencies: [57, 31, 27, 1340, 4811, 5630, 8043, 5510, 1345, 33, 15538, 15157, 477, 8042, 8017, 11989, 11990, 8045, 8320, 1334, 8379, 11919, 4544, 9034, 689, 1212, 15546, 1457, 7922, 8018, 8033, 566, 1324, 8015, 8019, 12217, 15547, 12103, 12109, 12110, 11905, 15548, 12113, 14725, 11921, 11890, 7582, 12119, 15550, 11976, 12124, 12131, 8162, 3992, 5449, 11901, 8317, 8254, 11645, 8685, 2]
 // Exports: default
 
-// Module 15535 (YouAvatar)
+// Module 15545 (YouAvatar)
 import getStatusLabel from "getStatusLabel";
 import initialize from "initialize";
 import get_ActivityIndicator from "Link";
@@ -36,7 +36,7 @@ function YouAvatar(arg0) {
   obj["importantForAccessibility"] = "no-hide-descendants";
   obj["accessibilityElementsHidden"] = isAndroidResult;
   obj["accessible"] = !isAndroidResult && undefined;
-  return closure_13(importDefault(8307), obj);
+  return closure_13(importDefault(8042), obj);
 }
 function YouScreenWidgetsBoardContainer(containerBackground) {
   let activeSection;
@@ -45,7 +45,7 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
   let userId;
   containerBackground = containerBackground.containerBackground;
   ({ userId, activeSection, isRefreshEnabled, containerBorderColor } = containerBackground);
-  const tmp = importDefault(8282)();
+  const tmp = importDefault(8017)();
   const items = [tmp.card, ];
   if (isRefreshEnabled) {
     let obj = { backgroundColor: containerBackground, borderColor: containerBorderColor, borderWidth: 1 };
@@ -57,9 +57,9 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
     tmp2 = items;
   }
   obj = { style: tmp.profileContent };
-  const items1 = [callback2(importDefault(12013), {}), ];
+  const items1 = [callback2(importDefault(11989), {}), ];
   const obj1 = { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp2 };
-  items1[1] = callback2(importDefault(12014), obj1);
+  items1[1] = callback2(importDefault(11990), obj1);
   obj.children = items1;
   return callback3(closure_6, obj);
 }
@@ -67,13 +67,13 @@ function EditSection(navigateToProfileCustomization) {
   navigateToProfileCustomization = navigateToProfileCustomization.navigateToProfileCustomization;
   let dependencyMap;
   let callback;
-  let obj = navigateToProfileCustomization(8310);
+  let obj = navigateToProfileCustomization(8045);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const ref = React.useRef(null);
-  let obj1 = navigateToProfileCustomization(8560);
+  let obj1 = navigateToProfileCustomization(8320);
   const isDisplayNameStylesFlywheelSettersEnabled = obj1.useIsDisplayNameStylesFlywheelSettersEnabled("YouScreenUserProfileContent");
-  const tmp = trackUserProfileAction(8282)();
-  navigateToProfileCustomization(5802);
+  const tmp = trackUserProfileAction(8017)();
+  navigateToProfileCustomization(8379);
   if (isDisplayNameStylesFlywheelSettersEnabled) {
     if (!tmp4) {
       let items = [navigateToProfileCustomization(1334).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK];
@@ -95,15 +95,15 @@ function EditSection(navigateToProfileCustomization) {
     obj = { style: tmp.primaryButtons };
     obj1 = { ref, variant: "primary" };
     const obj2 = { size: "sm", color: trackUserProfileAction(689).colors.WHITE };
-    obj1.icon = callback2(navigateToProfileCustomization(9142).PencilIcon, obj2);
+    obj1.icon = callback2(navigateToProfileCustomization(9034).PencilIcon, obj2);
     const intl = navigateToProfileCustomization(1212).intl;
     obj1.text = intl.string(navigateToProfileCustomization(1212).t.AAjhgi);
     obj1.onPress = callback;
     obj1.grow = true;
-    obj.secondaryButton = callback2(navigateToProfileCustomization(4543).Button, obj1);
-    const items2 = [callback2(trackUserProfileAction(11943), obj), ];
+    obj.secondaryButton = callback2(navigateToProfileCustomization(4544).Button, obj1);
+    const items2 = [callback2(trackUserProfileAction(11919), obj), ];
     const obj3 = { targetRef: ref, visible: tmp14, markAsDismissed: tmp10[1] };
-    items2[1] = callback2(trackUserProfileAction(15536), obj3);
+    items2[1] = callback2(trackUserProfileAction(15546), obj3);
     obj.children = items2;
     return callback3(closure_15, obj);
   }

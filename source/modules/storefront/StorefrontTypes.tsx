@@ -1,5 +1,5 @@
 // Module ID: 5615
-// Function ID: 47874
+// Function ID: 47879
 // Name: StorefrontPromotionRewardType
 // Dependencies: [2]
 

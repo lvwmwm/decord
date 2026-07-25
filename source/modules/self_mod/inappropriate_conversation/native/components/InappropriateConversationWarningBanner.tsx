@@ -1,9 +1,9 @@
-// Module ID: 10455
-// Function ID: 80495
+// Module ID: 10389
+// Function ID: 80164
 // Name: InappropriateConversationWarningBanner
-// Dependencies: [31, 3767, 9139, 33, 10163, 566, 10164, 4471, 10176, 1934, 10165, 10440, 1212, 2]
+// Dependencies: [31, 3768, 9031, 33, 10095, 566, 10096, 4472, 10108, 1935, 10097, 10374, 1212, 2]
 
-// Module 10455 (InappropriateConversationWarningBanner)
+// Module 10389 (InappropriateConversationWarningBanner)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";

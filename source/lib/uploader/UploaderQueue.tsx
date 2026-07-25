@@ -1,9 +1,9 @@
-// Module ID: 7081
-// Function ID: 56701
+// Module ID: 6099
+// Function ID: 54513
 // Name: UploaderQueue
 // Dependencies: [5, 6, 7, 3, 2]
 
-// Module 7081 (UploaderQueue)
+// Module 6099 (UploaderQueue)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";

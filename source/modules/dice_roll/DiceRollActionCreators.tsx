@@ -1,5 +1,5 @@
 // Module ID: 5627
-// Function ID: 48034
+// Function ID: 48039
 // Name: startDiceRoll
 // Dependencies: [686, 2]
 // Exports: startDiceRoll

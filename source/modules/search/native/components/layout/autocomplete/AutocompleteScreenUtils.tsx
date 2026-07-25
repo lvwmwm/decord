@@ -1,10 +1,10 @@
-// Module ID: 15464
-// Function ID: 118835
+// Module ID: 15474
+// Function ID: 118963
 // Name: getSearchQueryChannelIds
-// Dependencies: [1917, 3767, 1849, 10109, 9141, 653, 1212, 9912, 4074, 9064, 9689, 9691, 7496, 4644, 7491, 7488, 10997, 9068, 15465, 10110, 3969, 2]
+// Dependencies: [1918, 3768, 1850, 10041, 9033, 653, 1212, 9839, 4075, 8954, 9613, 9615, 6580, 4645, 6575, 6572, 10952, 8958, 15475, 10042, 3970, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15464 (getSearchQueryChannelIds)
+// Module 15474 (getSearchQueryChannelIds)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -33,39 +33,39 @@ export const getSearchQueryUserIds = function getSearchQueryUserIds(items) {
 export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
   const intl = require(1212) /* getSystemLocale */.intl;
   if (intl.string(require(1212) /* getSystemLocale */.t.nrpA5E) === text) {
-    return importDefault(9912);
+    return importDefault(9839);
   } else {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     if (intl3.string(require(1212) /* getSystemLocale */.t.ZNR2fi) === text) {
-      return require(4074) /* LinkIcon */.LinkIcon;
+      return require(4075) /* LinkIcon */.LinkIcon;
     } else {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       if (intl4.string(require(1212) /* getSystemLocale */.t["20uQR3"]) === text) {
-        return require(9064) /* EmbedIcon */.EmbedIcon;
+        return require(8954) /* EmbedIcon */.EmbedIcon;
       } else {
         const intl5 = require(1212) /* getSystemLocale */.intl;
         if (intl5.string(require(1212) /* getSystemLocale */.t.L4lxyE) === text) {
-          return require(9689) /* PollsIcon */.PollsIcon;
+          return require(9613) /* PollsIcon */.PollsIcon;
         } else {
           const intl6 = require(1212) /* getSystemLocale */.intl;
           if (intl6.string(require(1212) /* getSystemLocale */.t["AV/v6i"]) === text) {
-            return require(9691) /* AttachmentIcon */.AttachmentIcon;
+            return require(9615) /* AttachmentIcon */.AttachmentIcon;
           } else {
             const intl7 = require(1212) /* getSystemLocale */.intl;
             if (intl7.string(require(1212) /* getSystemLocale */.t.XM9XGP) === text) {
-              return require(7496) /* VideoIcon */.VideoIcon;
+              return require(6580) /* VideoIcon */.VideoIcon;
             } else {
               const intl8 = require(1212) /* getSystemLocale */.intl;
               if (intl8.string(require(1212) /* getSystemLocale */.t.TNLcpx) === text) {
-                return require(4644) /* ImageIcon */.ImageIcon;
+                return require(4645) /* ImageIcon */.ImageIcon;
               } else {
                 const intl9 = require(1212) /* getSystemLocale */.intl;
                 if (intl9.string(require(1212) /* getSystemLocale */.t.F8Wf0e) === text) {
-                  return require(7491) /* SoundboardIcon */.SoundboardIcon;
+                  return require(6575) /* SoundboardIcon */.SoundboardIcon;
                 } else {
                   const intl2 = require(1212) /* getSystemLocale */.intl;
                   if (intl2.string(require(1212) /* getSystemLocale */.t.PJgX2h) === text) {
-                    return require(7488) /* StickerIcon */.StickerIcon;
+                    return require(6572) /* StickerIcon */.StickerIcon;
                   }
                 }
               }
@@ -79,21 +79,21 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = require(1212) /* getSystemLocale */.intl;
   if (intl.string(require(1212) /* getSystemLocale */.t.tPZo4p) === text) {
-    return require(10997) /* UserIcon */.UserIcon;
+    return require(10952) /* UserIcon */.UserIcon;
   } else {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     if (intl3.string(require(1212) /* getSystemLocale */.t.JL7sRS) === text) {
-      return require(9068) /* RobotIcon */.RobotIcon;
+      return require(8958) /* RobotIcon */.RobotIcon;
     } else {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       if (intl2.string(require(1212) /* getSystemLocale */.t.WjkIKU) === text) {
-        return require(15465) /* WebhookIcon */.WebhookIcon;
+        return require(15475) /* WebhookIcon */.WebhookIcon;
       }
     }
   }
 };
 export const toSearchListUserItem = function toSearchListUserItem(items, user, callback2) {
-  let obj = require(10110) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10042) /* _createForOfIteratorHelperLoose */;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(items);
   if (null == user) {
     return null;
@@ -106,8 +106,8 @@ export const toSearchListUserItem = function toSearchListUserItem(items, user, c
       nickname = nick.getNick(guildIdFromSearchContext, user.id);
     }
     if (null == nickname) {
-      nickname = importDefault(3969).getName(user);
-      const obj2 = importDefault(3969);
+      nickname = importDefault(3970).getName(user);
+      const obj2 = importDefault(3970);
     }
     obj = { type: SearchListItemTypes.DM };
     obj = { type: RelationshipTypes.NONE, user, nickname, onPress: callback2 };
@@ -133,8 +133,8 @@ export const toSearchListChannelItem = function toSearchListChannelItem(channel,
       obj = { type: RelationshipTypes.NONE, user };
       let nickname = store.getNickname(user.id);
       if (null == nickname) {
-        nickname = importDefault(3969).getName(user);
-        const obj6 = importDefault(3969);
+        nickname = importDefault(3970).getName(user);
+        const obj6 = importDefault(3970);
       }
       obj.nickname = nickname;
       obj.onPress = function onPress() {

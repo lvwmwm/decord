@@ -1,29 +1,15 @@
-// Module ID: 5127
-// Function ID: 44446
-// Name: createCardBackgroundToken
-// Dependencies: [4130, 689, 2]
-// Exports: createCardShadowToken, getCardSecondaryBg
+// Module ID: 5167
+// Function ID: 44992
+// Name: createCardShadowToken
+// Dependencies: [4131, 689, 2]
+// Exports: createCardShadowToken
 
-// Module 5127 (createCardBackgroundToken)
-const require = arg1;
-function createCardBackgroundToken(TABLEROW_BACKGROUND_DEFAULT, CARD_GRADIENT_BG) {
-  const _require = TABLEROW_BACKGROUND_DEFAULT;
-  let closure_1 = CARD_GRADIENT_BG;
-  return _require(4130).experimental_createToken((primaryColor) => null != primaryColor.primaryColor ? closure_1 : closure_0);
-}
-const cardBackgroundToken = createCardBackgroundToken(require("_createForOfIteratorHelperLoose").colors.TABLEROW_BACKGROUND_DEFAULT, require("_createForOfIteratorHelperLoose").colors.CARD_GRADIENT_BG);
-const cardBackgroundToken1 = createCardBackgroundToken(require("_createForOfIteratorHelperLoose").colors.TABLEROW_BACKGROUND_PRESSED, require("_createForOfIteratorHelperLoose").colors.CARD_GRADIENT_PRESSED_BG);
+// Module 5167 (createCardShadowToken)
 const result = require("set").fileFinishedImporting("design/components/Card/native/CardTokens.native.tsx");
 
-export const CARD_PRIMARY_BG = cardBackgroundToken;
-export const getCardSecondaryBg = function getCardSecondaryBg(arg0) {
-  const colors = importDefault(689).colors;
-  return createCardBackgroundToken(arg0 ? colors.BACKGROUND_MOD_MUTED : colors.CARD_SECONDARY_BG, importDefault(689).colors.CARD_GRADIENT_BG);
-};
-export const CARD_PRIMARY_PRESSED_BG = cardBackgroundToken1;
 export const createCardShadowToken = function createCardShadowToken(arg0) {
   const _require = arg0;
-  return _require(4130).experimental_createToken((gradient) => {
+  return _require(4131).experimental_createToken((gradient) => {
     if (null == gradient.gradient) {
       if ("none" !== closure_0) {
         if ("border" === closure_0) {

@@ -1,10 +1,10 @@
-// Module ID: 10875
-// Function ID: 84359
+// Module ID: 10825
+// Function ID: 83949
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: [3758, 653, 624, 3803, 2]
+// Dependencies: [3759, 653, 624, 3804, 2]
 // Exports: useShouldDisplaySpoilerObscurity
 
-// Module 10875 (computeGlobalSpoilerDisplay)
+// Module 10825 (computeGlobalSpoilerDisplay)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -29,6 +29,6 @@ export const useShouldDisplaySpoilerObscurity = function useShouldDisplaySpoiler
   const _require = channel;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(624).useStateFromStores(items, () => outer1_2.can(outer1_3.MANAGE_MESSAGES, closure_0));
-  const RenderSpoilers = _require(3803).RenderSpoilers;
+  const RenderSpoilers = _require(3804).RenderSpoilers;
   return !computeGlobalSpoilerDisplay(RenderSpoilers.useSetting(), stateFromStores);
 };

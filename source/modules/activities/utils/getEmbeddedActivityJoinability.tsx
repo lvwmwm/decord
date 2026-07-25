@@ -1,10 +1,10 @@
-// Module ID: 10549
-// Function ID: 82314
+// Module ID: 10541
+// Function ID: 81531
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [1348, 1838, 3758, 1849, 4146, 653, 10547, 4312, 10546, 566, 2]
+// Dependencies: [1348, 1838, 3759, 1850, 4147, 653, 10542, 4313, 10470, 566, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 10549 (getEmbeddedActivityJoinability)
+// Module 10541 (getEmbeddedActivityJoinability)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";
@@ -86,8 +86,8 @@ function getEmbeddedActivityJoinability(arg0) {
                   return obj.IS_AFK_CHANNEL;
                 } else {
                   const currentClientVoiceChannelId = VoiceStateStore.getCurrentClientVoiceChannelId(channel.getGuildId());
-                  const obj2 = require(4312) /* _createForOfIteratorHelperLoose */;
-                  const isChannelFullResult = require(4312) /* _createForOfIteratorHelperLoose */.isChannelFull(channel, VoiceStateStore, GuildStore);
+                  const obj2 = require(4313) /* _createForOfIteratorHelperLoose */;
+                  const isChannelFullResult = require(4313) /* _createForOfIteratorHelperLoose */.isChannelFull(channel, VoiceStateStore, GuildStore);
                   if (PermissionStore.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
                     if (channel.isVocal()) {
                       if (currentClientVoiceChannelId !== tmp10) {
@@ -111,7 +111,7 @@ function getEmbeddedActivityJoinability(arg0) {
       } else {
         return obj.ACTIVITY_NOT_SUPPORTED_ON_OS;
       }
-      tmp7 = importDefault(10547);
+      tmp7 = importDefault(10542);
     } else {
       return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS;
     }

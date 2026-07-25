@@ -1,10 +1,10 @@
-// Module ID: 4179
-// Function ID: 35846
+// Module ID: 4180
+// Function ID: 35857
 // Name: assertInjected
 // Dependencies: [2]
 // Exports: getOpenH264LibraryPath, getVoiceEngine, inject, setProcessPriority, supported, supportsFeature
 
-// Module 4179 (assertInjected)
+// Module 4180 (assertInjected)
 function assertInjected() {
   if (null == closure_0) {
     const _Error = Error;

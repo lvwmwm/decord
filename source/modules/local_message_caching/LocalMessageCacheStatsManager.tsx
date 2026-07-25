@@ -1,9 +1,9 @@
-// Module ID: 16626
-// Function ID: 129642
+// Module ID: 16637
+// Function ID: 129810
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 653, 6720, 675, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 653, 5716, 675, 5078, 2]
 
-// Module 16626 (_isNativeReflectConstruct)
+// Module 16637 (_isNativeReflectConstruct)
 import expandLocation from "expandLocation";
 import makeLogKey from "makeLogKey";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -55,10 +55,10 @@ function makeLogLine(channelId) {
 function handleAppStateUpdate(state) {
   if (state.state === constants2.BACKGROUND) {
     const _Array = Array;
-    const fetchLogs = importDefault(6720).fetchLogs;
+    const fetchLogs = importDefault(5716).fetchLogs;
     const mapped = Array.from(fetchLogs.values()).map(makeLogLine);
     let obj = importDefault(675);
-    obj = { num_channels_fetch_started: importDefault(6720).channelsFetchStarted.size, num_channels_local_cached: importDefault(6720).channelsFetchedWithLocalMessages.size, num_channels_fetched_network: importDefault(6720).channelsFetchedNetwork.size };
+    obj = { num_channels_fetch_started: importDefault(5716).channelsFetchStarted.size, num_channels_local_cached: importDefault(5716).channelsFetchedWithLocalMessages.size, num_channels_fetched_network: importDefault(5716).channelsFetchedNetwork.size };
     const sum = c9 + 1;
     c9 = sum;
     obj.num_times_backgrounded = sum;

@@ -1,9 +1,9 @@
-// Module ID: 14437
-// Function ID: 110331
+// Module ID: 14448
+// Function ID: 110458
 // Name: getClientInfoString
-// Dependencies: [10469, 33, 1554, 4098, 10966, 5490, 3830, 5498, 5186, 1212, 5500, 3994, 4078, 4110, 10127, 9193, 3803, 2]
+// Dependencies: [10403, 33, 1554, 4099, 10917, 5490, 3831, 5498, 5186, 1212, 5500, 3995, 4079, 4111, 10059, 9085, 3804, 2]
 
-// Module 14437 (getClientInfoString)
+// Module 14448 (getClientInfoString)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
 import createToggle from "createToggle";
@@ -26,7 +26,7 @@ function getClientInfo() {
   const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
   let tmp;
   if (null != overrides) {
-    tmp = overrides[require(undefined, 10966) /* setBuildOverrideForBranch */.DEVICE_FIELD];
+    tmp = overrides[require(undefined, 10917) /* setBuildOverrideForBranch */.DEVICE_FIELD];
   }
   let str2 = "N/A";
   let str3 = "N/A";
@@ -50,7 +50,7 @@ function getClientInfo() {
 function copyToast(arg0) {
   require(5490) /* _copy */.copy(arg0);
   const obj = require(5490) /* _copy */;
-  const result = require(3830) /* presentAddedFriendToast */.presentCopiedToClipboard();
+  const result = require(3831) /* presentAddedFriendToast */.presentCopiedToClipboard();
 }
 function ClientClientInfoActionSheet() {
   let obj = {};
@@ -100,7 +100,7 @@ function ClientClientInfoActionSheet() {
     outer1_9(outer1_8().buildOverride);
   };
   items[4] = callback(require(5500) /* ActionSheetRowIcon */.ActionSheetRow, obj5);
-  let obj8 = require(3994) /* isFabric */;
+  let obj8 = require(3995) /* isFabric */;
   let tmp3 = null;
   if (obj8.isFabric()) {
     const obj6 = {
@@ -117,7 +117,7 @@ function ClientClientInfoActionSheet() {
   if (obj11.isFabric()) {
     const obj7 = { label: "Bridgeless mode" };
     let str2 = "Disabled";
-    if (require(3994) /* isFabric */.isBridgeless) {
+    if (require(3995) /* isFabric */.isBridgeless) {
       str2 = "Enabled";
     }
     obj7.subLabel = str2;
@@ -135,7 +135,7 @@ function ClientClientInfoActionSheet() {
   obj.children = items;
   const items1 = [closure_5(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj), ];
   obj8 = { hasIcons: true };
-  const obj9 = { icon: callback(require(4078) /* CopyIcon */.CopyIcon, {}) };
+  const obj9 = { icon: callback(require(4079) /* CopyIcon */.CopyIcon, {}) };
   const intl7 = require(1212) /* getSystemLocale */.intl;
   obj9.label = intl7.string(require(1212) /* getSystemLocale */.t["7dqZ6H"]);
   obj9.onPress = function onPress() {
@@ -166,7 +166,7 @@ const pressable = createToggle.createPressable({
   parent: null,
   IconComponent: require("ClipboardListIcon").ClipboardListIcon,
   onPress: function handleClientInfoPress() {
-    let obj = importDefault(4098);
+    let obj = importDefault(4099);
     obj = { default: ClientClientInfoActionSheet };
     obj.openLazy(Promise.resolve(obj), "ClientClientInfoActionSheet");
   },
@@ -181,7 +181,7 @@ let obj = {
   parent: null,
   IconComponent: require("ClipboardListIcon").ClipboardListIcon,
   onPress: function handleClientInfoPress() {
-    let obj = importDefault(4098);
+    let obj = importDefault(4099);
     obj = { default: ClientClientInfoActionSheet };
     obj.openLazy(Promise.resolve(obj), "ClientClientInfoActionSheet");
   },

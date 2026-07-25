@@ -1,9 +1,9 @@
-// Module ID: 14405
-// Function ID: 110109
+// Module ID: 14416
+// Function ID: 110236
 // Name: route
-// Dependencies: [57, 31, 653, 1345, 33, 14406, 1334, 5802, 10127, 1212, 14407, 7443, 14409, 2]
+// Dependencies: [57, 31, 653, 1345, 33, 14417, 1334, 8379, 10059, 1212, 14418, 6525, 14420, 2]
 
-// Module 14405 (route)
+// Module 14416 (route)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -20,11 +20,11 @@ createToggle = {
   IconComponent: require("SettingsItemAppIcon"),
   useTrailing: function useAppIconSettingTrailing() {
     const obj = { dismissibleContent: require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, newPremiumStyle: true };
-    return jsx(importDefault(14406), { dismissibleContent: require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, newPremiumStyle: true });
+    return jsx(importDefault(14417), { dismissibleContent: require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, newPremiumStyle: true });
   },
   usePreNavigationAction: function useAppIconSettingPreNavigationAction() {
     const items = [first(1334).DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE];
-    const tmp = callback(first(5802).useSelectedDismissibleContent(items), 2);
+    const tmp = callback(first(8379).useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     const importDefault = tmp3;
     const items1 = [first, tmp[1]];
@@ -36,14 +36,14 @@ createToggle = {
     }, items1);
   },
   usePredicate() {
-    return require(7443) /* fetchCurrentAppIcon */.isAppIconsSupported();
+    return require(6525) /* fetchCurrentAppIcon */.isAppIconsSupported();
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.APP_ICONS,
   getComponent() {
-    return require(14409).default;
+    return require(14420).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

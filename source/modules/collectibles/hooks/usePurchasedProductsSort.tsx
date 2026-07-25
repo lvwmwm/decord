@@ -1,16 +1,16 @@
-// Module ID: 14028
-// Function ID: 107319
+// Module ID: 14039
+// Function ID: 107446
 // Name: productPurchaseStatus
-// Dependencies: [31, 6790, 1876, 6785, 624, 2]
+// Dependencies: [31, 5786, 1877, 5781, 624, 2]
 // Exports: usePurchasedProductsSort
 
-// Module 14028 (productPurchaseStatus)
+// Module 14039 (productPurchaseStatus)
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 function productPurchaseStatus(type, arr) {
   const _require = arr;
-  if (type.type === _require(1876).CollectiblesItemType.BUNDLE) {
+  if (type.type === _require(1877).CollectiblesItemType.BUNDLE) {
     const items = type.items;
     if (items.some((skuId) => arr.includes(skuId.skuId))) {
       return constants.PARTIAL_OWNED_BUNDLE;

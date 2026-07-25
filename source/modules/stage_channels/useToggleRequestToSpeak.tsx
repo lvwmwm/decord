@@ -1,10 +1,10 @@
-// Module ID: 10701
-// Function ID: 83412
+// Module ID: 10665
+// Function ID: 83099
 // Name: useToggleRequestToSpeak
-// Dependencies: [57, 31, 1194, 566, 4314, 4955, 7581, 7583, 7562, 2]
+// Dependencies: [57, 31, 1194, 566, 4315, 4956, 6690, 6692, 6658, 2]
 // Exports: default
 
-// Module 10701 (useToggleRequestToSpeak)
+// Module 10665 (useToggleRequestToSpeak)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -16,11 +16,11 @@ export default function useToggleRequestToSpeak(id) {
   const _require = id;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getId());
-  const tmp2 = importDefault(4314)(stateFromStores, id.id);
+  const tmp2 = importDefault(4315)(stateFromStores, id.id);
   importDefault = tmp2;
-  let tmp3 = tmp2 === _require(4314).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+  let tmp3 = tmp2 === _require(4315).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   if (!tmp3) {
-    tmp3 = tmp2 === _require(4314).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+    tmp3 = tmp2 === _require(4315).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
   }
   const dependencyMap = tmp3;
   const tmp6 = first(React.useState(tmp3), 2);

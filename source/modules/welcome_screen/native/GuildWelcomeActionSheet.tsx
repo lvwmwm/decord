@@ -1,10 +1,10 @@
-// Module ID: 11716
-// Function ID: 90906
+// Module ID: 11686
+// Function ID: 90656
 // Name: WelcomeChannelRow
-// Dependencies: [31, 27, 4991, 1348, 1838, 3758, 11713, 11717, 653, 1852, 482, 33, 4130, 689, 5052, 566, 4320, 1198, 4098, 5085, 1392, 3771, 4126, 1273, 10976, 7636, 686, 11715, 675, 5498, 11718, 1212, 2]
+// Dependencies: [31, 27, 4992, 1348, 1838, 3759, 11683, 11687, 653, 1853, 482, 33, 4131, 689, 5053, 566, 4321, 1198, 4099, 5085, 1392, 3772, 4127, 1273, 10927, 7575, 686, 11685, 675, 5498, 11688, 1212, 2]
 // Exports: default
 
-// Module 11716 (WelcomeChannelRow)
+// Module 11686 (WelcomeChannelRow)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "_fetchWelcomeScreen";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -269,8 +269,8 @@ export default function GuildWelcomeActionSheet(guildId) {
     if (null != welcomeScreen) {
       obj = { startExpanded: true };
       obj = { contentContainerStyle: tmp.container };
-      obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(11718).Sizes.MEDIUM, textScale: 2 };
-      const items9 = [callback(onHide(11718), obj1), , , , ];
+      obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(11688).Sizes.MEDIUM, textScale: 2 };
+      const items9 = [callback(onHide(11688), obj1), , , , ];
       const obj2 = { style: tmp.header, variant: "heading-xl/extrabold", color: "text-default" };
       const intl = guildId(1212).intl;
       const obj3 = {
@@ -281,14 +281,14 @@ export default function GuildWelcomeActionSheet(guildId) {
             }
       };
       obj2.children = intl.format(guildId(1212).t["0aydCN"], obj3);
-      items9[1] = callback(guildId(4126).Text, obj2);
+      items9[1] = callback(guildId(4127).Text, obj2);
       const obj4 = { style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: welcomeScreen.description };
-      items9[2] = callback(guildId(4126).Text, obj4);
+      items9[2] = callback(guildId(4127).Text, obj4);
       const obj5 = { style: tmp.channelsTitle, variant: "eyebrow", color: "text-default" };
       const intl2 = guildId(1212).intl;
-      const tmp18 = onHide(11718);
+      const tmp18 = onHide(11688);
       obj5.children = intl2.string(guildId(1212).t["haj5+i"]).toUpperCase();
-      items9[3] = callback(guildId(4126).Text, obj5);
+      items9[3] = callback(guildId(4127).Text, obj5);
       let welcome_channels = welcomeScreen.welcome_channels;
       items9[4] = welcome_channels.map((welcomeChannel) => {
         let closure_0 = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 8702
-// Function ID: 68762
+// Module ID: 8590
+// Function ID: 68237
 // Name: _navigateToGameAnnouncement
-// Dependencies: [5, 1838, 653, 44, 5736, 7540, 1198, 2]
+// Dependencies: [5, 1838, 653, 44, 6632, 6636, 1198, 2]
 // Exports: default
 
-// Module 8702 (_navigateToGameAnnouncement)
+// Module 8590 (_navigateToGameAnnouncement)
 import generateAcceptInviteOptions from "generateAcceptInviteOptions";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";

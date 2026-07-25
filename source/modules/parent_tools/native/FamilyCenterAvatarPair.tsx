@@ -1,10 +1,10 @@
-// Module ID: 13876
-// Function ID: 106204
+// Module ID: 13887
+// Function ID: 106331
 // Name: FamilyCenterAvatarPair
-// Dependencies: [31, 27, 1849, 33, 4130, 689, 624, 1273, 2]
+// Dependencies: [31, 27, 1850, 33, 4131, 689, 624, 1273, 2]
 // Exports: default
 
-// Module 13876 (FamilyCenterAvatarPair)
+// Module 13887 (FamilyCenterAvatarPair)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

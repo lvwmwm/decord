@@ -1,9 +1,9 @@
-// Module ID: 6861
-// Function ID: 54316
+// Module ID: 5636
+// Function ID: 48224
 // Name: items
-// Dependencies: [4167, 6856, 1212, 2]
+// Dependencies: [4168, 5631, 1212, 2]
 
-// Module 6861 (items)
+// Module 5636 (items)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -11,23 +11,23 @@ const items = [require("WidgetType").WidgetType.PERSONAL, require("WidgetType").
 const items1 = [require("WidgetType").WidgetType.FAVORITE_GAMES];
 const items2 = [require("WidgetType").WidgetType.CURRENT_GAMES, require("WidgetType").WidgetType.FAVORITE_GAMES];
 const obj = {
-  [arg1(6856).WidgetType.FAVORITE_GAMES]: () => {
+  [arg1(5631).WidgetType.FAVORITE_GAMES]: () => {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t.sUQar8);
   },
-  [arg1(6856).WidgetType.CURRENT_GAMES]: () => {
+  [arg1(5631).WidgetType.CURRENT_GAMES]: () => {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t.SqNnus);
   },
-  [arg1(6856).WidgetType.WANT_TO_PLAY_GAMES]: () => {
+  [arg1(5631).WidgetType.WANT_TO_PLAY_GAMES]: () => {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t.bWSQwW);
   },
-  [arg1(6856).WidgetType.PLAYED_GAMES]: () => {
+  [arg1(5631).WidgetType.PLAYED_GAMES]: () => {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t.scOKET);
   },
-  [arg1(6856).WidgetType.APPLICATION]: (applicationId) => {
+  [arg1(5631).WidgetType.APPLICATION]: (applicationId) => {
     application = application.getApplication(applicationId.applicationId);
     let name;
     if (null != application) {
@@ -39,7 +39,7 @@ const obj = {
     }
     return str;
   },
-  [arg1(6856).WidgetType.PERSONAL]: () => {
+  [arg1(5631).WidgetType.PERSONAL]: () => {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(require(1212) /* getSystemLocale */.t.AVkYMx);
   }

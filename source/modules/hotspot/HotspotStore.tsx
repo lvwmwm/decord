@@ -1,7 +1,7 @@
 // Module ID: 5597
-// Function ID: 47569
+// Function ID: 47574
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 660, 4677, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 660, 4678, 566, 686, 2]
 
 // Module 5597 (_isNativeReflectConstruct)
 import ProcessArgs from "ProcessArgs";

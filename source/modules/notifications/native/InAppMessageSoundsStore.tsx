@@ -1,10 +1,10 @@
-// Module ID: 10275
-// Function ID: 79327
+// Module ID: 10208
+// Function ID: 78980
 // Name: isInAppMessageSoundsEnabled
-// Dependencies: [587, 677, 3743, 2]
+// Dependencies: [587, 677, 3744, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10275 (isInAppMessageSoundsEnabled)
+// Module 10208 (isInAppMessageSoundsEnabled)
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
 let closure_2 = useStoreWithEqualityFn.createWithEqualityFn(() => {
@@ -25,5 +25,5 @@ export const setInAppMessageSoundsEnabled = function setInAppMessageSoundsEnable
   store.setState({ isEnabled });
 };
 export const useInAppMessageSoundsEnabled = function useInAppMessageSoundsEnabled() {
-  return store((isEnabled) => isEnabled.isEnabled, require(3743) /* isIterable */.shallow);
+  return store((isEnabled) => isEnabled.isEnabled, require(3744) /* isIterable */.shallow);
 };

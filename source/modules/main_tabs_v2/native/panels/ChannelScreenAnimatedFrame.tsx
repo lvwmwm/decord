@@ -1,10 +1,10 @@
-// Module ID: 14841
-// Function ID: 113164
+// Module ID: 14852
+// Function ID: 113292
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [31, 27, 9159, 653, 33, 4130, 689, 4066, 1324, 3991, 4131, 1273, 14839, 8868, 5121, 2]
+// Dependencies: [31, 27, 9051, 653, 33, 4131, 689, 4067, 1324, 3992, 4132, 1273, 14850, 8756, 5121, 2]
 // Exports: default
 
-// Module 14841 (ChannelScreenAnimatedFrame)
+// Module 14852 (ChannelScreenAnimatedFrame)
 import "result";
 import { View } from "get ActivityIndicator";
 import MIN_HEADER_HEIGHT from "MIN_HEADER_HEIGHT";

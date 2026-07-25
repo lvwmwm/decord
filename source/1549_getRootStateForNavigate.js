@@ -1,5 +1,5 @@
 // Module ID: 1549
-// Function ID: 17578
+// Function ID: 17585
 // Name: getRootStateForNavigate
 // Dependencies: [31, 1459, 1534]
 // Exports: default

@@ -1,9 +1,9 @@
-// Module ID: 5663
-// Function ID: 48648
+// Module ID: 6005
+// Function ID: 53558
 // Name: GuildMemberSubscriptions
-// Dependencies: [6, 7, 664, 4015, 21, 3, 22, 2]
+// Dependencies: [6, 7, 664, 4016, 21, 3, 22, 2]
 
-// Module 5663 (GuildMemberSubscriptions)
+// Module 6005 (GuildMemberSubscriptions)
 import apply from "apply";
 import set from "set";
 

@@ -1,10 +1,10 @@
-// Module ID: 12197
-// Function ID: 95492
+// Module ID: 12173
+// Function ID: 95301
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [31, 27, 1838, 1849, 653, 33, 4130, 689, 5513, 566, 1212, 686, 3830, 5498, 5186, 12198, 4126, 2]
+// Dependencies: [31, 27, 1838, 1850, 653, 33, 4131, 689, 5513, 566, 1212, 686, 3831, 5498, 5186, 12174, 4127, 2]
 // Exports: default
 
-// Module 12197 (InstantInviteQRCodeActionSheet)
+// Module 12173 (InstantInviteQRCodeActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -98,7 +98,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
         outer3_1(outer3_2[11]).unsubscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
       };
     }, items);
-  })(require(3830) /* presentAddedFriendToast */.presentFriendRequestAcceptedToast);
+  })(require(3831) /* presentAddedFriendToast */.presentFriendRequestAcceptedToast);
   obj = {};
   obj = { title: stringResult };
   obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
@@ -110,7 +110,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
     plainText = tmp7.plainText;
   }
   obj3.accessibilityLabel = plainText;
-  let items = [callback(importDefault(12198), obj3), ];
+  let items = [callback(importDefault(12174), obj3), ];
   let tmp22 = null != tmp8;
   if (tmp22) {
     let obj4 = { style: tmp.iconContainer };
@@ -124,7 +124,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
   let tmp25 = null != tmp7;
   if (tmp25) {
     const obj6 = { variant: "text-md/normal", children: tmp7.visible };
-    tmp25 = callback(require(4126) /* Text */.Text, obj6);
+    tmp25 = callback(require(4127) /* Text */.Text, obj6);
   }
   items1[1] = tmp25;
   obj1.children = items1;

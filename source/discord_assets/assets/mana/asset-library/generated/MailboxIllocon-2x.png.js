@@ -1,9 +1,9 @@
-// Module ID: 6289
-// Function ID: 50399
+// Module ID: 7209
+// Function ID: 60049
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6289 (metadata)
+// Module 7209 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MailboxIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/e44f68a9e9cbd4728513e0a18abd3bb4d19f42fb835a4bd8359fac09b137bd8e.png";

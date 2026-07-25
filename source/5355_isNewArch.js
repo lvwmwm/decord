@@ -1,5 +1,5 @@
 // Module ID: 5355
-// Function ID: 45964
+// Function ID: 45969
 // Name: isNewArch
 // Dependencies: [27]
 // Exports: isNewArch

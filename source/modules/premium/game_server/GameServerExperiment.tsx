@@ -1,10 +1,10 @@
-// Module ID: 4041
-// Function ID: 33649
+// Module ID: 4042
+// Function ID: 33660
 // Name: items
-// Dependencies: [4042, 2]
+// Dependencies: [4043, 2]
 // Exports: getGameServerEnabled, useGameServerEnabled
 
-// Module 4041 (items)
+// Module 4042 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2025-08_portkey_enabled", label: "GameServer Enabled", defaultConfig: { enabled: false } };

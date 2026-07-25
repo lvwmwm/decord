@@ -1,9 +1,9 @@
-// Module ID: 6896
-// Function ID: 54914
+// Module ID: 5887
+// Function ID: 52220
 // Name: KvCacheVersion
-// Dependencies: [5, 6, 7, 476, 3, 1882, 2]
+// Dependencies: [5, 6, 7, 476, 3, 1883, 2]
 
-// Module 6896 (KvCacheVersion)
+// Module 5887 (KvCacheVersion)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
 import _defineProperties from "_defineProperties";
@@ -105,13 +105,13 @@ let tmp5 = (() => {
     key: "handleWrite",
     value(arg0) {
       this.hasSuccessfullyConnected = true;
-      let obj = callback(1882);
+      let obj = callback(1883);
       obj.cacheTransaction(arg0).put(outer1_5, "\u{1F44B}");
       const cacheTransactionResult = obj.cacheTransaction(arg0);
-      const obj3 = callback(1882);
-      callback(1882).cacheTransaction(arg0).put(outer1_9, outer1_8);
-      const cacheTransactionResult1 = callback(1882).cacheTransaction(arg0);
-      const result = callback(1882).forceResyncVersionTransaction(arg0);
+      const obj3 = callback(1883);
+      callback(1883).cacheTransaction(arg0).put(outer1_9, outer1_8);
+      const cacheTransactionResult1 = callback(1883).cacheTransaction(arg0);
+      const result = callback(1883).forceResyncVersionTransaction(arg0);
       obj = { version: outer1_6 };
       result.put(outer1_7, obj);
     }

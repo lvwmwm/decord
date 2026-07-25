@@ -1,7 +1,7 @@
 // Module ID: 5080
-// Function ID: 44215
+// Function ID: 44223
 // Name: updateGuildSelfMember
-// Dependencies: [1909, 653, 5064, 686, 507, 2]
+// Dependencies: [1910, 653, 5065, 686, 507, 2]
 // Exports: updateGuildSelfMember
 
 // Module 5080 (updateGuildSelfMember)
@@ -18,7 +18,7 @@ export const updateGuildSelfMember = function updateGuildSelfMember(outer1_0, me
   }
   if (fullServerPreview.isFullServerPreview(outer1_0)) {
     let obj = { memberOptions };
-    const result = require(5064) /* _createForOfIteratorHelperLoose */.updateImpersonatedData(outer1_0, obj);
+    const result = require(5065) /* _createForOfIteratorHelperLoose */.updateImpersonatedData(outer1_0, obj);
   } else {
     obj = importDefault(686);
     obj = { type: "GUILD_MEMBER_UPDATE_LOCAL", guildId: outer1_0 };

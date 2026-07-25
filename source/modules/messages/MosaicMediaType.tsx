@@ -1,10 +1,10 @@
-// Module ID: 9931
-// Function ID: 76816
+// Module ID: 9859
+// Function ID: 76429
 // Name: isVisualMedia
-// Dependencies: [653, 4317, 1360, 9932, 2]
+// Dependencies: [653, 4318, 1360, 9860, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 9931 (isVisualMedia)
+// Module 9859 (isVisualMedia)
 import { MessageAttachmentFlags } from "ME";
 
 const re3 = /\.(mp3|m4a|ogg|opus|wav|flac)$/i;
@@ -53,10 +53,10 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
                 }
               }
               str3 = str5;
-              obj3 = require(4317) /* urlMatchesFileExtension */;
+              obj3 = require(4318) /* urlMatchesFileExtension */;
             }
             let str = str3;
-            obj2 = require(4317) /* urlMatchesFileExtension */;
+            obj2 = require(4318) /* urlMatchesFileExtension */;
           }
           return str;
         }
@@ -74,7 +74,7 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
     if (obj.isPlaintextPreviewableFile(filename)) {
       str2 = "PLAINTEXT_PREVIEW";
     }
-    obj = require(9932) /* set */;
+    obj = require(9860) /* set */;
   }
   str = str2;
 };
@@ -93,9 +93,9 @@ export const getMosaicMediaTypeForUnfurledMediaItem = function getMosaicMediaTyp
             if (obj2.isVideoContentType(contentType)) {
               return "VIDEO";
             }
-            obj2 = require(4317) /* urlMatchesFileExtension */;
+            obj2 = require(4318) /* urlMatchesFileExtension */;
           }
-          obj = require(4317) /* urlMatchesFileExtension */;
+          obj = require(4318) /* urlMatchesFileExtension */;
         }
       }
     }

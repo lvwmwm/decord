@@ -1,10 +1,10 @@
-// Module ID: 1903
-// Function ID: 21366
+// Module ID: 1904
+// Function ID: 21377
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 483, 2]
 // Exports: deserializeChannel, deserializeChannelEntries
 
-// Module 1903 (_createForOfIteratorHelperLoose)
+// Module 1904 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 
 function _createForOfIteratorHelperLoose(iterable) {

@@ -1,9 +1,9 @@
-// Module ID: 7020
-// Function ID: 56339
+// Module ID: 6038
+// Function ID: 54151
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 7021, 653, 477, 1881, 4324, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 6039, 653, 477, 1882, 4325, 566, 686, 2]
 
-// Module 7020 (_isNativeReflectConstruct)
+// Module 6038 (_isNativeReflectConstruct)
 import ME from "ME";
 import closure_3 from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -234,7 +234,7 @@ set = {
         if (null != activeOption) {
           type = activeOption.type;
         }
-        tmp8 = type === _require(1881).ApplicationCommandOptionType.INTEGER;
+        tmp8 = type === _require(1882).ApplicationCommandOptionType.INTEGER;
       }
       _require = tmp8;
       let mapped;
@@ -272,7 +272,7 @@ set = {
         num2 = time - value.getTime();
       }
       let obj = { duration_ms: num2, error: false, num_options: mapped.length };
-      _require(4324).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+      _require(4325).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
       map2.delete(nonce);
       const optionNameToAutocompleteQueries2 = tmp31.optionNameToAutocompleteQueries;
       const value1 = optionNameToAutocompleteQueries2.get(value.name);
@@ -308,7 +308,7 @@ set = {
           num = time - value.getTime();
         }
         const obj = { duration_ms: num, error: true };
-        require(4324) /* _createForOfIteratorHelperLoose */.trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+        require(4325) /* _createForOfIteratorHelperLoose */.trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
         map2.delete(nonce);
         getOrCreateChannelState(value.channelId).lastErrored = true;
         return true;

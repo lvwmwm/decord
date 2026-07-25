@@ -1,10 +1,10 @@
-// Module ID: 12013
-// Function ID: 92873
+// Module ID: 11989
+// Function ID: 92678
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [31, 27, 1345, 33, 4130, 689, 8282, 1324, 9678, 1334, 4086, 4126, 1212, 4660, 5119, 2]
+// Dependencies: [31, 27, 1345, 33, 4131, 689, 8017, 1324, 9602, 1334, 4087, 4127, 1212, 4661, 5119, 2]
 // Exports: default
 
-// Module 12013 (UserProfileWidgetsBoardEditNotice)
+// Module 11989 (UserProfileWidgetsBoardEditNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -26,7 +26,7 @@ const result = require("ContentDismissActionType").fileFinishedImporting("module
 
 export default function UserProfileWidgetsBoardEditNotice() {
   const _require = _createForOfIteratorHelperLoose();
-  importDefault = importDefault(8282)();
+  importDefault = importDefault(8017)();
   const dependencyMap = importDefault(1324)("UserProfileWidgetsBoardEditNotice");
   let obj = {};
   let items = [_require(1334).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
@@ -41,7 +41,7 @@ export default function UserProfileWidgetsBoardEditNotice() {
       obj.style = items;
       obj = { style: markAsDismissed.icon };
       const obj1 = { size: "xs", color: lib(689).colors.TEXT_MUTED };
-      obj.children = outer1_5(callback(4086).CircleInformationIcon, obj1);
+      obj.children = outer1_5(callback(4087).CircleInformationIcon, obj1);
       const items1 = [outer1_5(outer1_3, obj), , ];
       const obj2 = { style: markAsDismissed.text };
       let str = "text-sm/semibold";
@@ -56,7 +56,7 @@ export default function UserProfileWidgetsBoardEditNotice() {
       obj2.color = str2;
       const intl = callback(1212).intl;
       obj2.children = intl.string(callback(1212).t.kv8ULD);
-      items1[1] = outer1_5(callback(4126).Text, obj2);
+      items1[1] = outer1_5(callback(4127).Text, obj2);
       obj = { accessibilityRole: "button" };
       const intl2 = callback(1212).intl;
       obj.accessibilityLabel = intl2.string(callback(1212).t.WAI6xu);
@@ -66,7 +66,7 @@ export default function UserProfileWidgetsBoardEditNotice() {
       obj.style = markAsDismissed.closeButton;
       const obj3 = { size: "sm" };
       obj.children = outer1_5(callback(5119).XSmallIcon, obj3);
-      items1[2] = outer1_5(callback(4660).PressableOpacity, obj);
+      items1[2] = outer1_5(callback(4661).PressableOpacity, obj);
       obj.children = items1;
       tmp = outer1_6(outer1_3, obj);
       const tmp11 = outer1_5;
@@ -75,5 +75,5 @@ export default function UserProfileWidgetsBoardEditNotice() {
     }
     return tmp;
   };
-  return callback(importDefault(9678), obj);
+  return callback(importDefault(9602), obj);
 };

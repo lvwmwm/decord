@@ -1,9 +1,9 @@
-// Module ID: 13483
-// Function ID: 103642
+// Module ID: 13494
+// Function ID: 103769
 // Name: handler
-// Dependencies: [1921, 653, 8354, 2]
+// Dependencies: [1922, 653, 8112, 2]
 
-// Module 13483 (handler)
+// Module 13494 (handler)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let obj = {};

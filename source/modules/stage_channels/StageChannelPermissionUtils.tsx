@@ -1,10 +1,10 @@
-// Module ID: 4948
-// Function ID: 42427
+// Module ID: 4949
+// Function ID: 42439
 // Name: createOrUpdateModeratorOverwrite
-// Dependencies: [3759, 1391, 1194, 1348, 1838, 3758, 1353, 653, 483, 3763, 1356, 566, 2]
+// Dependencies: [3760, 1391, 1194, 1348, 1838, 3759, 1353, 653, 483, 3764, 1356, 566, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 4948 (createOrUpdateModeratorOverwrite)
+// Module 4949 (createOrUpdateModeratorOverwrite)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isGuildOwner } from "isGuildOwner";
 import closure_5 from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ function createOrUpdateModeratorOverwrite(id, type, deny) {
     deny = deny.deny;
   }
   if (null == deny) {
-    deny = importAll(3763).NONE;
+    deny = importAll(3764).NONE;
   }
   obj.deny = importAll(483).remove(deny, require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   const obj2 = importAll(483);
@@ -33,7 +33,7 @@ function createOrUpdateModeratorOverwrite(id, type, deny) {
     allow = deny.allow;
   }
   if (null == allow) {
-    allow = importAll(3763).NONE;
+    allow = importAll(3764).NONE;
   }
   obj.allow = importAll(483).combine(require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
   return obj;
@@ -60,7 +60,7 @@ export const removeModeratorOverwrite = function removeModeratorOverwrite(id, ME
     deny = tmp.deny;
   }
   if (null == deny) {
-    deny = importAll(3763).NONE;
+    deny = importAll(3764).NONE;
   }
   obj.deny = deny;
   let allow;
@@ -68,7 +68,7 @@ export const removeModeratorOverwrite = function removeModeratorOverwrite(id, ME
     allow = tmp.allow;
   }
   if (null == allow) {
-    allow = importAll(3763).NONE;
+    allow = importAll(3764).NONE;
   }
   obj.allow = importAll(483).remove(allow, require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   return obj;
@@ -77,9 +77,9 @@ export const isEmptyOverwrite = function isEmptyOverwrite(arg0) {
   let allow;
   let deny;
   ({ allow, deny } = arg0);
-  let equalsResult = importAll(483).equals(allow, importAll(3763).NONE);
+  let equalsResult = importAll(483).equals(allow, importAll(3764).NONE);
   if (equalsResult) {
-    equalsResult = importAll(483).equals(deny, importAll(3763).NONE);
+    equalsResult = importAll(483).equals(deny, importAll(3764).NONE);
     const obj2 = importAll(483);
   }
   return equalsResult;

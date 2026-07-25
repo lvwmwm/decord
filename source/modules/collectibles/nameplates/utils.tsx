@@ -1,10 +1,10 @@
-// Module ID: 1873
-// Function ID: 20869
+// Module ID: 1874
+// Function ID: 20880
 // Name: getNameplateData
-// Dependencies: [1874, 482, 1877, 1879, 1212, 2]
+// Dependencies: [1875, 482, 1878, 1880, 1212, 2]
 // Exports: getBackgroundGradientColors, getNameplateDataFromProductRecord, getNameplateSampleUsers, parseFirstFrame
 
-// Module 1873 (getNameplateData)
+// Module 1874 (getNameplateData)
 import { isNameplateRecord } from "_isNativeReflectConstruct";
 import { ThemeTypes } from "sum";
 
@@ -19,9 +19,9 @@ function getNameplateData(nameplate) {
   return tmp;
 }
 function isValidPalette(name) {
-  let tmp = name.name !== require(1877) /* NAMEPLATE_PALETTES */.INVALID_PALETTE_KEY;
+  let tmp = name.name !== require(1878) /* NAMEPLATE_PALETTES */.INVALID_PALETTE_KEY;
   if (tmp) {
-    let tmp4 = name.name !== require(1877) /* NAMEPLATE_PALETTES */.CUSTOM_PALETTE_KEY;
+    let tmp4 = name.name !== require(1878) /* NAMEPLATE_PALETTES */.CUSTOM_PALETTE_KEY;
     if (!tmp4) {
       let tmp6 = isValidHex(name.darkBackground);
       if (tmp6) {
@@ -37,9 +37,9 @@ function isValidHex(arg0) {
   return /^#([0-9a-fA-F]{6})$/.test(arg0);
 }
 function getNameplatePalette(palette) {
-  let INVALID_NAMEPLATE_PALETTE = require(1877) /* NAMEPLATE_PALETTES */.NAMEPLATE_PALETTES[palette];
+  let INVALID_NAMEPLATE_PALETTE = require(1878) /* NAMEPLATE_PALETTES */.NAMEPLATE_PALETTES[palette];
   if (null == INVALID_NAMEPLATE_PALETTE) {
-    INVALID_NAMEPLATE_PALETTE = require(1877) /* NAMEPLATE_PALETTES */.INVALID_NAMEPLATE_PALETTE;
+    INVALID_NAMEPLATE_PALETTE = require(1878) /* NAMEPLATE_PALETTES */.INVALID_NAMEPLATE_PALETTE;
   }
   return INVALID_NAMEPLATE_PALETTE;
 }
@@ -72,12 +72,12 @@ export const getBackgroundGradientColors = function getBackgroundGradientColors(
 export { isValidPalette };
 export { getNameplatePalette };
 export const parseFirstFrame = function parseFirstFrame(arg0) {
-  const size = importDefault(1879).decode(arg0);
-  const obj = importDefault(1879);
+  const size = importDefault(1880).decode(arg0);
+  const obj = importDefault(1880);
   const element = <canvas />;
   ({ width: obj3.width, height: obj3.height } = size);
   const context = element.getContext("2d");
-  const uint8ClampedArray = new Uint8ClampedArray(importDefault(1879).toRGBA8(size)[0]);
+  const uint8ClampedArray = new Uint8ClampedArray(importDefault(1880).toRGBA8(size)[0]);
   const imageData = new globalThis.ImageData(uint8ClampedArray, size.width, size.height);
   context.putImageData(imageData, 0, 0);
   return element.toDataURL("image/png");

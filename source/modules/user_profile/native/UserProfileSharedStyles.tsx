@@ -1,10 +1,10 @@
-// Module ID: 8282
-// Function ID: 65280
+// Module ID: 8017
+// Function ID: 63835
 // Name: useSharedStyles
-// Dependencies: [5510, 4130, 689, 1324, 2]
+// Dependencies: [5510, 4131, 689, 1324, 2]
 // Exports: default
 
-// Module 8282 (useSharedStyles)
+// Module 8017 (useSharedStyles)
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

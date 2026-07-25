@@ -1,9 +1,9 @@
-// Module ID: 4298
-// Function ID: 37555
+// Module ID: 4299
+// Function ID: 37566
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4191, 4227, 4297, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4192, 4228, 4298, 2]
 
-// Module 4298 (_isNativeReflectConstruct)
+// Module 4299 (_isNativeReflectConstruct)
 import getMediaEngineImpl from "getMediaEngineImpl";
 import TypedEventEmitter from "TypedEventEmitter";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

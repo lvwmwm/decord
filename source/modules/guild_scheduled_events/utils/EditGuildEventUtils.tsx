@@ -1,10 +1,10 @@
-// Module ID: 8389
-// Function ID: 66406
+// Module ID: 8147
+// Function ID: 65057
 // Name: recurrenceRuleToServer
-// Dependencies: [1194, 1354, 8390, 8393, 2]
+// Dependencies: [1194, 1354, 8148, 8151, 2]
 // Exports: convertToFakeGuildEvent, getInitialGuildEventData, isEditingEvent
 
-// Module 8389 (recurrenceRuleToServer)
+// Module 8147 (recurrenceRuleToServer)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
 
@@ -161,9 +161,9 @@ export const getInitialGuildEventData = function getInitialGuildEventData(initia
     scheduled_start_time = initialGuildEvent.scheduled_start_time;
   }
   if (null == scheduled_start_time) {
-    const initialEventStartDate = require(8390) /* getNextBucketedTime */.getInitialEventStartDate();
+    const initialEventStartDate = require(8148) /* getNextBucketedTime */.getInitialEventStartDate();
     scheduled_start_time = initialEventStartDate.toISOString();
-    const obj2 = require(8390) /* getNextBucketedTime */;
+    const obj2 = require(8148) /* getNextBucketedTime */;
   }
   obj.scheduledStartTime = scheduled_start_time;
   let entity_type;
@@ -222,12 +222,12 @@ export const getInitialGuildEventData = function getInitialGuildEventData(initia
       entity_type1 = initialGuildEvent.entity_type;
     }
     if (entity_type1 === constants.EXTERNAL) {
-      const locationFromEvent = require(8393) /* _getLocationFromEvent */.getLocationFromEvent(initialGuildEvent);
+      const locationFromEvent = require(8151) /* _getLocationFromEvent */.getLocationFromEvent(initialGuildEvent);
       if (null != locationFromEvent) {
         obj = { location: locationFromEvent };
         obj.entityMetadata = obj;
       }
-      const obj4 = require(8393) /* _getLocationFromEvent */;
+      const obj4 = require(8151) /* _getLocationFromEvent */;
     }
     return obj;
   }

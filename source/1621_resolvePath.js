@@ -1,5 +1,5 @@
 // Module ID: 1621
-// Function ID: 18026
+// Function ID: 18033
 // Name: resolvePath
 // Dependencies: [1622, 1625, 1633, 1586]
 

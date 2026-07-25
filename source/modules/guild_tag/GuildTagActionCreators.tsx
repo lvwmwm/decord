@@ -1,10 +1,10 @@
-// Module ID: 12973
-// Function ID: 100610
+// Module ID: 12984
+// Function ID: 100737
 // Name: _adoptGuildIdentity
-// Dependencies: [5, 1849, 653, 507, 686, 2]
+// Dependencies: [5, 1850, 653, 507, 686, 2]
 // Exports: adoptGuildIdentity
 
-// Module 12973 (_adoptGuildIdentity)
+// Module 12984 (_adoptGuildIdentity)
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

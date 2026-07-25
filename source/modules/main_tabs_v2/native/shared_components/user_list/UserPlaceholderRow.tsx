@@ -1,9 +1,9 @@
-// Module ID: 8536
-// Function ID: 68027
+// Module ID: 8296
+// Function ID: 66681
 // Name: placeholderRowWidth
-// Dependencies: [31, 27, 4122, 33, 4130, 689, 3991, 566, 4131, 4134, 2]
+// Dependencies: [31, 27, 4123, 33, 4131, 689, 3992, 566, 4132, 4135, 2]
 
-// Module 8536 (placeholderRowWidth)
+// Module 8296 (placeholderRowWidth)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ const memoResult = importAllResult.memo(function UserPlaceholderRow(animate) {
   let sharedValue;
   flag = undefined;
   const tmp3 = callback3(height);
-  let obj = sharedValue(3991);
+  let obj = sharedValue(3992);
   sharedValue = obj.useSharedValue(1);
   let obj1 = sharedValue(566);
   const items = [_isNativeReflectConstruct];
@@ -67,7 +67,7 @@ const memoResult = importAllResult.memo(function UserPlaceholderRow(animate) {
       const result1 = set(1);
     }
   }, items1);
-  let obj2 = sharedValue(3991);
+  let obj2 = sharedValue(3992);
   const fn = function v() {
     return { opacity: sharedValue.get() };
   };
@@ -88,7 +88,7 @@ const memoResult = importAllResult.memo(function UserPlaceholderRow(animate) {
   obj1.children = callback(View, obj2);
   items3[1] = callback(View, obj1);
   obj.children = items3;
-  return callback2(flag(3991).View, obj);
+  return callback2(flag(3992).View, obj);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserPlaceholderRow.tsx");
 

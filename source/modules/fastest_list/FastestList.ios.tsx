@@ -1,10 +1,11 @@
-// Module ID: 9295
-// Function ID: 72559
+// Module ID: 9188
+// Function ID: 72046
 // Name: getBatchesToRender
-// Dependencies: [31, 33, 9290, 9285, 7677, 9288, 2]
+// Dependencies: [31, 27, 33, 9183, 9178, 7619, 9181, 2]
 
-// Module 9295 (getBatchesToRender)
+// Module 9188 (getBatchesToRender)
 import importAllResult from "result";
+import { RefreshControl } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -17,12 +18,14 @@ function getBatchesToRender(renderAhead) {
     }
   }
 }
-const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
+function noop() {
+
+}
+const forwardRefResult = importAllResult.forwardRef((inActionSheet, ref) => {
   let accessibilityLabel;
   let enabled;
   let estimatedListSize;
   let horizontal;
-  let inActionSheet;
   let insetEnd;
   let insetStart;
   let itemSize;
@@ -50,66 +53,68 @@ const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
   let showsHorizontalScrollIndicator;
   let showsVerticalScrollIndicator;
   let style;
-  ({ enabled, horizontal } = keyExtractor);
-  ({ accessibilityLabel, estimatedListSize } = keyExtractor);
+  ({ enabled, horizontal } = inActionSheet);
+  ({ accessibilityLabel, estimatedListSize } = inActionSheet);
   if (horizontal === undefined) {
     horizontal = false;
   }
-  keyExtractor = keyExtractor.keyExtractor;
-  ({ listFooterAlwaysMounted, inActionSheet, insetStart, insetEnd, itemSize, keyboardDismissMode, keyboardShouldPersistTaps, listFooterSize } = keyExtractor);
+  inActionSheet = inActionSheet.inActionSheet;
+  const keyExtractor = inActionSheet.keyExtractor;
+  ({ listFooterAlwaysMounted, insetStart, insetEnd, itemSize, keyboardDismissMode, keyboardShouldPersistTaps, listFooterSize } = inActionSheet);
   if (listFooterAlwaysMounted === undefined) {
     listFooterAlwaysMounted = false;
   }
-  ({ listHeaderAlwaysMounted, listHeaderSize } = keyExtractor);
+  ({ listHeaderAlwaysMounted, listHeaderSize } = inActionSheet);
   if (listHeaderAlwaysMounted === undefined) {
     listHeaderAlwaysMounted = false;
   }
-  ({ renderAhead, onLayout } = keyExtractor);
+  const preventNativeModalDismiss = inActionSheet.preventNativeModalDismiss;
+  ({ renderAhead, onLayout } = inActionSheet);
   if (renderAhead === undefined) {
     renderAhead = "nominal";
   }
-  const scrollIndicatorInsetEnd = keyExtractor.scrollIndicatorInsetEnd;
-  const scrollIndicatorInsetStart = keyExtractor.scrollIndicatorInsetStart;
-  ({ sectionHeaderIsSticky, renderItem, renderListFooter, renderListHeader, renderSectionHeader, renderSectionFooter, scrollEventThrottle, sectionHeaderSize } = keyExtractor);
+  const scrollIndicatorInsetEnd = inActionSheet.scrollIndicatorInsetEnd;
+  const scrollIndicatorInsetStart = inActionSheet.scrollIndicatorInsetStart;
+  ({ sectionHeaderIsSticky, renderItem, renderListFooter, renderListHeader, renderSectionHeader, renderSectionFooter, scrollEventThrottle, sectionHeaderSize } = inActionSheet);
   if (sectionHeaderIsSticky === undefined) {
     sectionHeaderIsSticky = true;
   }
-  let obj = { accessibilityLabel: 0, enabled: 0, estimatedListSize: 0, horizontal: 0, inActionSheet: 0, insetStart: 0, insetEnd: 0, itemSize: 0, keyboardDismissMode: 0, keyboardShouldPersistTaps: 0, keyExtractor: 0, listFooterSize: 0, listFooterAlwaysMounted: 0, listHeaderSize: 0, listHeaderAlwaysMounted: 0, onLayout: 0, renderAhead: 0, renderItem: 0, renderListFooter: 0, renderListHeader: 0, renderSectionHeader: 0, renderSectionFooter: 0, scrollEventThrottle: 0, scrollIndicatorInsetEnd: 0, scrollIndicatorInsetStart: 0, sectionHeaderSize: 0, sectionHeaderIsSticky: 0, sectionFooterSize: 0, sections: 0, showsHorizontalScrollIndicator: 0, showsVerticalScrollIndicator: 0, style: 0 };
-  ({ sectionFooterSize, sections, showsHorizontalScrollIndicator, showsVerticalScrollIndicator, style } = keyExtractor);
+  let obj = { accessibilityLabel: 0, enabled: 0, estimatedListSize: 0, horizontal: 0, inActionSheet: 0, insetStart: 0, insetEnd: 0, itemSize: 0, keyboardDismissMode: 0, keyboardShouldPersistTaps: 0, keyExtractor: 0, listFooterSize: 0, listFooterAlwaysMounted: 0, listHeaderSize: 0, listHeaderAlwaysMounted: 0, onLayout: 0, preventNativeModalDismiss: 0, renderAhead: 0, renderItem: 0, renderListFooter: 0, renderListHeader: 0, renderSectionHeader: 0, renderSectionFooter: 0, scrollEventThrottle: 0, scrollIndicatorInsetEnd: 0, scrollIndicatorInsetStart: 0, sectionHeaderSize: 0, sectionHeaderIsSticky: 0, sectionFooterSize: 0, sections: 0, showsHorizontalScrollIndicator: 0, showsVerticalScrollIndicator: 0, style: 0 };
+  ({ sectionFooterSize, sections, showsHorizontalScrollIndicator, showsVerticalScrollIndicator, style } = inActionSheet);
   Object.setPrototypeOf(null);
-  const merged = Object.assign(keyExtractor, obj);
-  ({ onScroll, onScrollBeginDrag, onScrollEndDrag } = keyExtractor(scrollIndicatorInsetEnd[2])(merged, horizontal));
+  const merged = Object.assign(inActionSheet, obj);
+  ({ onScroll, onScrollBeginDrag, onScrollEndDrag } = inActionSheet(keyExtractor[3])(merged, horizontal));
   obj = { estimatedListSize, horizontal };
   const items = [keyExtractor];
-  const tmp3 = keyExtractor(scrollIndicatorInsetEnd[2])(merged, horizontal);
+  const tmp3 = inActionSheet(keyExtractor[3])(merged, horizontal);
   const items1 = [horizontal, scrollIndicatorInsetEnd, scrollIndicatorInsetStart];
-  const callback = scrollIndicatorInsetStart.useCallback((arg0, arg1, arg2) => {
-    if (horizontal(scrollIndicatorInsetEnd[4]).FastListItemTypes.ITEM === arg0) {
+  const callback = preventNativeModalDismiss.useCallback((arg0, arg1, arg2) => {
+    if (horizontal(keyExtractor[5]).FastListItemTypes.ITEM === arg0) {
       let tmp18Result;
       if (null != keyExtractor) {
         let num6 = -1;
         if (null != arg2) {
           num6 = arg2;
         }
-        tmp18Result = keyExtractor(keyExtractor(scrollIndicatorInsetEnd[5]).ITEM, arg1, num6);
+        tmp18Result = keyExtractor(inActionSheet(keyExtractor[6]).ITEM, arg1, num6);
         const tmp18 = keyExtractor;
       }
       return tmp18Result;
-    } else if (horizontal(scrollIndicatorInsetEnd[4]).FastListItemTypes.SECTION === arg0) {
+    } else if (horizontal(keyExtractor[5]).FastListItemTypes.SECTION === arg0) {
       let tmp11;
       if (null != keyExtractor) {
-        tmp11 = keyExtractor(keyExtractor(scrollIndicatorInsetEnd[5]).SECTION_HEADER, arg1, -1);
+        tmp11 = keyExtractor(inActionSheet(keyExtractor[6]).SECTION_HEADER, arg1, -1);
       }
       return tmp11;
-    } else if (horizontal(scrollIndicatorInsetEnd[4]).FastListItemTypes.SECTION_FOOTER === arg0) {
+    } else if (horizontal(keyExtractor[5]).FastListItemTypes.SECTION_FOOTER === arg0) {
       let tmp5;
       if (null != keyExtractor) {
-        tmp5 = keyExtractor(keyExtractor(scrollIndicatorInsetEnd[5]).SECTION_FOOTER, arg1, -1);
+        tmp5 = keyExtractor(inActionSheet(keyExtractor[6]).SECTION_FOOTER, arg1, -1);
       }
       return tmp5;
     }
   }, items);
-  const memo = scrollIndicatorInsetStart.useMemo(() => {
+  const memo = preventNativeModalDismiss.useMemo(() => {
     const obj = {};
     if (horizontal) {
       obj.left = tmp2;
@@ -119,13 +124,24 @@ const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
       obj.bottom = scrollIndicatorInsetEnd;
     }
   }, items1);
+  const items2 = [preventNativeModalDismiss, inActionSheet];
+  const memo1 = preventNativeModalDismiss.useMemo(() => {
+    let tmp;
+    if (true === preventNativeModalDismiss) {
+      if (true === inActionSheet) {
+        const obj = { refreshing: false, onRefresh: outer1_6, tintColor: "transparent" };
+        tmp = scrollIndicatorInsetStart(scrollIndicatorInsetEnd, obj);
+      }
+    }
+    return tmp;
+  }, items2);
   if ("animatedCallbacks" === merged.scrollReporting) {
-    let AnimatedFastList = horizontal(scrollIndicatorInsetEnd[4]).AnimatedFastList;
+    let AnimatedFastList = horizontal(keyExtractor[5]).AnimatedFastList;
   } else {
-    AnimatedFastList = keyExtractor(scrollIndicatorInsetEnd[4]);
+    AnimatedFastList = inActionSheet(keyExtractor[5]);
   }
-  obj = { accessibilityLabel, automaticallyAdjustsScrollIndicatorInsets: null == memo, batchesToRender: getBatchesToRender(renderAhead) };
-  obj.chunkBase = keyExtractor(scrollIndicatorInsetEnd[3])(obj);
+  obj = { accessibilityLabel, automaticallyAdjustsScrollIndicatorInsets: null == memo, batchesToRender: getBatchesToRender(renderAhead), refreshControl: memo1 };
+  obj.chunkBase = inActionSheet(keyExtractor[4])(obj);
   let str = "disabled";
   if (sectionHeaderIsSticky) {
     str = "default";
@@ -142,11 +158,11 @@ const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
   obj.keyboardDismissMode = keyboardDismissMode;
   obj.keyboardShouldPersistTaps = keyboardShouldPersistTaps;
   obj.onLayout = onLayout;
-  let tmp12;
+  let tmp13;
   if ("animatedScrollPosition" !== merged.scrollReporting) {
-    tmp12 = onScroll;
+    tmp13 = onScroll;
   }
-  obj.onScroll = tmp12;
+  obj.onScroll = tmp13;
   obj.onScrollBeginDrag = onScrollBeginDrag;
   obj.onScrollEndDrag = onScrollEndDrag;
   obj.optimizeListItemRender = true;
@@ -173,8 +189,8 @@ const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
   }
   obj.stickyHeaderFooter = listHeaderAlwaysMounted;
   obj.style = style;
-  return <AnimatedFastList accessibilityLabel={accessibilityLabel} automaticallyAdjustsScrollIndicatorInsets={null == memo} batchesToRender={getBatchesToRender(renderAhead)} />;
+  return scrollIndicatorInsetStart(AnimatedFastList, obj);
 });
-const result = require("useFastestListPropsScrollReporting").fileFinishedImporting("modules/fastest_list/FastestList.ios.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/fastest_list/FastestList.ios.tsx");
 
 export default forwardRefResult;

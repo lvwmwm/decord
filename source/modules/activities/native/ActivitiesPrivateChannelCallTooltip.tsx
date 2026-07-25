@@ -1,10 +1,10 @@
-// Module ID: 11836
-// Function ID: 91867
+// Module ID: 11812
+// Function ID: 91672
 // Name: items
-// Dependencies: [31, 27, 4122, 4155, 33, 4130, 566, 3991, 4131, 1273, 1212, 4543, 2]
+// Dependencies: [31, 27, 4123, 4156, 33, 4131, 566, 3992, 4132, 1273, 1212, 4544, 2]
 // Exports: default
 
-// Module 11836 (items)
+// Module 11812 (items)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,7 +30,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   if (obj.useStateFromStores(items, () => outer1_4.useReducedMotion)) {
     num = 0;
   }
-  let obj1 = num(3991);
+  let obj1 = num(3992);
   class T {
     constructor() {
       obj = {};
@@ -49,7 +49,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
       return obj;
     }
   }
-  obj = { withRepeat: num(3991).withRepeat, withSequence: num(3991).withSequence, withTiming: num(4131).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
+  obj = { withRepeat: num(3992).withRepeat, withSequence: num(3992).withSequence, withTiming: num(4132).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
   T.__closure = obj;
   T.__workletHash = 4621705591670;
   T.__initData = closure_9;
@@ -67,8 +67,8 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   const intl3 = num(1212).intl;
   obj4.text = intl3.string(num(1212).t["NX+WJN"]);
   obj4.onPress = onClosePress.onClosePress;
-  obj3.children = jsx(num(4543).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
+  obj3.children = jsx(num(4544).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
   obj1.children = <View style={tmp.closeButtonWrapper} />;
   obj.children = jsx(num(1273).Tooltip, { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2 });
-  return jsx(importDefault(3991).View, { style: items1 });
+  return jsx(importDefault(3992).View, { style: items1 });
 };

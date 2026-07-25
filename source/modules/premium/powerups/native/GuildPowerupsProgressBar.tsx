@@ -1,10 +1,10 @@
-// Module ID: 15091
-// Function ID: 114886
+// Module ID: 15101
+// Function ID: 115013
 // Name: GuildPowerupsProgressBar
-// Dependencies: [31, 27, 15092, 1838, 33, 689, 3991, 4554, 4130, 624, 15093, 15094, 4131, 11542, 5482, 1212, 2230, 8416, 4126, 5512, 2]
+// Dependencies: [31, 27, 15102, 1838, 33, 689, 3992, 4555, 4131, 624, 15103, 15104, 4132, 11508, 5482, 1212, 2231, 8174, 4127, 5512, 2]
 // Exports: default
 
-// Module 15091 (GuildPowerupsProgressBar)
+// Module 15101 (GuildPowerupsProgressBar)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -12,7 +12,7 @@ import closure_6 from "_createForOfIteratorHelperLoose";
 import jsxProd from "jsxProd";
 import LinearGradient from "LinearGradient";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let closure_7;
 let closure_8;

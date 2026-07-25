@@ -1,5 +1,5 @@
 // Module ID: 1736
-// Function ID: 19458
+// Function ID: 19465
 // Name: getComponentOrScrollable
 // Dependencies: [57, 31, 1585, 1690, 1619, 1610, 1613, 1612]
 

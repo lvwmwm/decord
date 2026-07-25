@@ -1,10 +1,10 @@
-// Module ID: 15269
-// Function ID: 116368
+// Module ID: 15279
+// Function ID: 116496
 // Name: MessageRowContent
-// Dependencies: [31, 27, 1348, 1917, 1838, 3767, 4325, 1849, 15264, 653, 33, 689, 15226, 477, 15227, 8320, 7086, 566, 15270, 15271, 4126, 1212, 1273, 4319, 5048, 8364, 8365, 9137, 9565, 15265, 15267, 21, 4660, 8494, 15273, 2]
+// Dependencies: [31, 27, 1348, 1918, 1838, 3768, 4326, 1850, 15274, 653, 33, 689, 15236, 477, 15237, 8055, 6104, 566, 15280, 15281, 4127, 1212, 1273, 4320, 5049, 8122, 8123, 9029, 9486, 15275, 15277, 21, 4661, 8254, 15283, 2]
 // Exports: default
 
-// Module 15269 (MessageRowContent)
+// Module 15279 (MessageRowContent)
 import importAllResult from "DISCORD_EPOCH";
 import { View } from "openChannelLongPressActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -39,7 +39,7 @@ class MessageRowContent {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    tmp = f116376();
+    tmp = f116504();
     context = defineProperty.useContext(require("useICYMIContextConstructor").ICYMIContext);
     obj = require("_createForOfIteratorHelperLoose");
     result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, require("MessageEmbedTypes").GRAVITY_VALID_EMBED_TYPES);
@@ -166,7 +166,7 @@ function ReplyMessageContent(message) {
   message = message.message;
   ({ channel, guild } = message);
   const tmp = callback3();
-  const context = importAllResult.useContext(message(15227).ICYMIContext);
+  const context = importAllResult.useContext(message(15237).ICYMIContext);
   let obj = message(566);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getUser(message.author.id));
@@ -180,7 +180,7 @@ function ReplyMessageContent(message) {
   if (null == colorString) {
     colorString = closure_12;
   }
-  const width = importAllResult.useContext(message(15227).ICYMIContext).width;
+  const width = importAllResult.useContext(message(15237).ICYMIContext).width;
   let tmp6 = null;
   if (null != stateFromStores) {
     obj = { style: tmp.replyPreview };
@@ -189,7 +189,7 @@ function ReplyMessageContent(message) {
     obj.style = obj1;
     const intl = message(1212).intl;
     obj.children = intl.string(message(1212).t.mPPcez);
-    const items2 = [callback(message(4126).Text, obj), ];
+    const items2 = [callback(message(4127).Text, obj), ];
     const obj2 = { style: tmp.replyInner };
     const obj3 = { animate: false, guildId: guild.id, user: stateFromStores, size: message(1273).AvatarSizes.SMALL };
     const items3 = [callback(message(1273).Avatar, obj3), ];
@@ -199,22 +199,22 @@ function ReplyMessageContent(message) {
     const obj6 = { variant: "text-md/semibold", style: null, lineClamp: 1 };
     const obj7 = { color: colorString };
     obj6.style = obj7;
-    obj6.children = message(4319).getName(guild.id, channel.id, stateFromStores);
-    const items4 = [callback(message(4126).Text, obj6), ];
+    obj6.children = message(4320).getName(guild.id, channel.id, stateFromStores);
+    const items4 = [callback(message(4127).Text, obj6), ];
     const obj8 = {};
     const obj9 = { width: width - 2 * PX_12 - 30 - PX_8 - 2 };
     ({ margin: obj14.margin, inset: obj14.inset } = context);
     obj8.value = obj9;
     const obj10 = { message, channel, guild, nested: true };
     obj8.children = callback(MessageRowContent, obj10);
-    items4[1] = callback(message(15227).ICYMIContext.Provider, obj8);
+    items4[1] = callback(message(15237).ICYMIContext.Provider, obj8);
     obj4.children = items4;
     items3[1] = callback2(View, obj4);
     obj2.children = items3;
     items2[1] = callback2(View, obj2);
     obj.children = items2;
     tmp6 = callback2(View, obj);
-    const obj12 = message(4319);
+    const obj12 = message(4320);
   }
   return tmp6;
 }
@@ -360,7 +360,7 @@ export default function MessageRowWrapper(arg0) {
   let messageContext;
   let visible;
   ({ message, messageContext, visible } = arg0);
-  let obj = gravityMessage(8364);
+  let obj = gravityMessage(8122);
   gravityMessage = obj.useGravityMessage(message);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = gravityMessage(566).useStateFromStores(items, () => outer1_5.getChannel(gravityMessage.getChannelId()));

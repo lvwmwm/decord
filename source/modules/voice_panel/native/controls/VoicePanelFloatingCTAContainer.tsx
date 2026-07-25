@@ -1,10 +1,10 @@
-// Module ID: 15902
-// Function ID: 122861
+// Module ID: 15913
+// Function ID: 123030
 // Name: FloatingCTA
-// Dependencies: [57, 31, 1348, 10047, 10050, 482, 33, 1324, 689, 4130, 4541, 7639, 3842, 10046, 15790, 5803, 624, 15786, 3991, 11407, 4476, 9923, 4542, 7678, 9678, 2]
+// Dependencies: [57, 31, 1348, 9976, 9979, 482, 33, 1324, 689, 4131, 4542, 7578, 3843, 9975, 15801, 8380, 624, 15797, 3992, 11370, 4477, 9851, 4543, 7620, 9602, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 15902 (FloatingCTA)
+// Module 15913 (FloatingCTA)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,8 +23,8 @@ function FloatingCTA(trailing) {
   obj = {};
   obj = { experimental_withBlurBackground: true, arrow: null == trailing, trailing };
   const merged1 = Object.assign(merged);
-  obj.children = jsx(require(7639) /* RowButtonWrapper */.RowButton, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
-  return jsx(require(4541) /* Stack */.Stack, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
+  obj.children = jsx(require(7578) /* RowButtonWrapper */.RowButton, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
+  return jsx(require(4542) /* Stack */.Stack, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
 }
 class VoicePanelFloatingCTAContainer {
   constructor(arg0) {
@@ -59,7 +59,7 @@ class VoicePanelFloatingCTAContainer {
     useMemo = memo;
     obj3 = require("useFloatingCTAProps");
     floatingCTAProps = obj3.useFloatingCTAProps(stateFromStores);
-    obj4 = require("module_3991");
+    obj4 = require("module_3992");
     class A {
       constructor() {
         obj = require("getControlsDefaultWidth");
@@ -80,7 +80,7 @@ class VoicePanelFloatingCTAContainer {
             const obj = wrapperSpecs(controlsSpecs[18]);
           }
         };
-        obj1 = { state, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3991").runOnJS, cleanUp };
+        obj1 = { state, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3992").runOnJS, cleanUp };
         fn.__closure = obj1;
         fn.__workletHash = 7334460639890;
         fn.__initData = outer1_13;
@@ -112,7 +112,7 @@ class VoicePanelFloatingCTAContainer {
         return obj;
       }
     }
-    obj = { getControlsDefaultWidth: require("getControlsDefaultWidth").getControlsDefaultWidth, windowDimensions, safeArea, state, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, controlsSpecs, roundToNearestPixel: require("t"), withSpring: require("withSpring").withSpring, OPACITY_CHANGE_PHYSICS: useMemo, runOnJS: require("module_3991").runOnJS, cleanUp, wrapperSpecs, UI_SHOW_HIDE_PHYSICS: windowDimensions, gestureState, CALL_TILE_GUTTER: channelId, accessoryHeights };
+    obj = { getControlsDefaultWidth: require("getControlsDefaultWidth").getControlsDefaultWidth, windowDimensions, safeArea, state, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, controlsSpecs, roundToNearestPixel: require("t"), withSpring: require("withSpring").withSpring, OPACITY_CHANGE_PHYSICS: useMemo, runOnJS: require("module_3992").runOnJS, cleanUp, wrapperSpecs, UI_SHOW_HIDE_PHYSICS: windowDimensions, gestureState, CALL_TILE_GUTTER: channelId, accessoryHeights };
     A.__closure = obj;
     A.__workletHash = 3338259366067;
     A.__initData = c12;
@@ -122,7 +122,7 @@ class VoicePanelFloatingCTAContainer {
     items2 = [, ];
     items2[0] = tmp.container;
     items2[1] = animatedStyle;
-    tmp10 = require("module_7678");
+    tmp10 = require("module_7620");
     if (null != memo) {
       tmp17 = c9;
       tmp18 = accessoryHeights;
@@ -174,5 +174,5 @@ export const renderVoicePanelFloatingCTA = function renderVoicePanelFloatingCTA(
   obj["state"] = arg2;
   obj["cleanUp"] = arg3;
   obj.children = <VoicePanelFloatingCTAContainer />;
-  return jsx(require(3842) /* ManaContext */.ThemeContextProvider, {}, arg0);
+  return jsx(require(3843) /* ManaContext */.ThemeContextProvider, {}, arg0);
 };

@@ -1,10 +1,10 @@
-// Module ID: 14875
-// Function ID: 113497
+// Module ID: 14886
+// Function ID: 113625
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [31, 27, 33, 4130, 689, 4973, 3950, 14876, 14877, 14878, 11416, 5085, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4974, 3951, 14887, 14888, 14889, 11379, 5085, 2]
 // Exports: default
 
-// Module 14875 (GuildsBarGuildJoinRequestBadge)
+// Module 14886 (GuildsBarGuildJoinRequestBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,16 +22,16 @@ const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/nati
 export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
   joinRequestState = joinRequestState.joinRequestState;
   const tmp = _createForOfIteratorHelperLoose();
-  if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp6 = importDefault(14876);
-  } else if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp6 = importDefault(14877);
-  } else if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp6 = importDefault(14878);
+  if (require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
+    let tmp6 = importDefault(14887);
+  } else if (require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp6 = importDefault(14888);
+  } else if (require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp6 = importDefault(14889);
   } else {
     tmp6 = null;
-    if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp6 = importDefault(11416);
+    if (require(3951) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp6 = importDefault(11379);
     }
   }
   let tmp15 = null;

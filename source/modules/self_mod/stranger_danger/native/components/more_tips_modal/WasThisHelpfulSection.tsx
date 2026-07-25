@@ -1,10 +1,10 @@
-// Module ID: 10444
-// Function ID: 80411
+// Module ID: 10378
+// Function ID: 80080
 // Name: WasThisHelpfulSection
-// Dependencies: [31, 27, 9139, 10166, 33, 4130, 689, 624, 10164, 3831, 1212, 8216, 8217, 10163, 4126, 1273, 10445, 10446, 2]
+// Dependencies: [31, 27, 9031, 10098, 33, 4131, 689, 624, 10096, 3832, 1212, 8961, 8960, 10095, 4127, 1273, 10379, 10380, 2]
 // Exports: default
 
-// Module 10444 (WasThisHelpfulSection)
+// Module 10378 (WasThisHelpfulSection)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

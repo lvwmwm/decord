@@ -1,10 +1,10 @@
-// Module ID: 8627
-// Function ID: 68399
+// Module ID: 8391
+// Function ID: 67112
 // Name: ServerPreviewPill
-// Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4127, 1212, 2]
 // Exports: default
 
-// Module 8627 (ServerPreviewPill)
+// Module 8391 (ServerPreviewPill)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -25,6 +25,6 @@ export default function ServerPreviewPill() {
   obj = { variant: "text-xs/bold", style: tmp.text };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.KNhFgD);
-  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text });
+  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text });
   return <View variant="text-xs/bold" style={tmp.text} />;
 };

@@ -1,10 +1,10 @@
-// Module ID: 11654
-// Function ID: 90506
+// Module ID: 11623
+// Function ID: 90250
 // Name: useIsRelationshipTypeSpamReportable
-// Dependencies: [3767, 653, 566, 2]
+// Dependencies: [3768, 653, 566, 2]
 // Exports: useIsRelationshipTypeSpamReportable
 
-// Module 11654 (useIsRelationshipTypeSpamReportable)
+// Module 11623 (useIsRelationshipTypeSpamReportable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { RelationshipTypes } from "ME";
 

@@ -1,10 +1,10 @@
-// Module ID: 16071
-// Function ID: 124374
+// Module ID: 16082
+// Function ID: 124542
 // Name: StreamFeedbackActionSheet
-// Dependencies: [31, 1194, 653, 9536, 33, 6980, 566, 1212, 2428, 9539, 16072, 675, 15940, 16073, 4098, 16074, 1934, 3830, 2]
+// Dependencies: [31, 1194, 653, 9457, 33, 5971, 566, 1212, 2429, 9460, 16083, 675, 15951, 16084, 4099, 16085, 1935, 3831, 2]
 // Exports: default
 
-// Module 16071 (StreamFeedbackActionSheet)
+// Module 16082 (StreamFeedbackActionSheet)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
@@ -21,7 +21,7 @@ const result = require("ME").fileFinishedImporting("components_native/calls/stre
 export default function StreamFeedbackActionSheet(stream) {
   stream = stream.stream;
   const analyticsData = stream.analyticsData;
-  let obj = stream(6980);
+  let obj = stream(5971);
   const dependencyMap = obj.useGetStreamApplication(stream);
   let obj1 = stream(566);
   const items = [_isNativeReflectConstruct];
@@ -33,25 +33,25 @@ export default function StreamFeedbackActionSheet(stream) {
   let stringResult2 = intl3.string(stream(1212).t.CqjnLN);
   obj = { value: stateFromStores ? tmp5.STREAMING : tmp5.STREAM_WATCHING };
   const intl4 = stream(1212).intl;
-  let tmp6 = analyticsData(2428);
+  let tmp6 = analyticsData(2429);
   obj.label = intl4.string(stateFromStores ? tmp6["0ZBLiZ"] : tmp6.TVTIT1);
   const intl5 = stream(1212).intl;
   obj.problemsHeader = intl5.string(stream(1212).t["6Y1t5P"]);
   const stringResult1 = intl2.string(stream(1212).t["0uxA2V"]);
-  obj.problemOptions = stream(9539).getStreamFeedbackOptions({ isStreamer: stateFromStores });
+  obj.problemOptions = stream(9460).getStreamFeedbackOptions({ isStreamer: stateFromStores });
   obj = { value: constants.FREEFORM };
   const intl6 = stream(1212).intl;
   obj.label = intl6.string(stream(1212).t.emlT91);
   obj.freeformConfig = obj;
   obj1 = { headerLabel: stringResult, showHeaderCloseButton: true };
-  let obj4 = stream(9539);
+  let obj4 = stream(9460);
   const tmp7 = jsx;
   if (stateFromStores) {
     stringResult2 = stringResult1;
   }
   obj1.ratingBody = stringResult2;
   const intl7 = stream(1212).intl;
-  obj1.categoriesHeader = intl7.string(analyticsData(2428).tq8598);
+  obj1.categoriesHeader = intl7.string(analyticsData(2429).tq8598);
   const items1 = [obj];
   obj1.optionsTree = items1;
   obj1.trackOpen = function trackOpen() {
@@ -130,5 +130,5 @@ export default function StreamFeedbackActionSheet(stream) {
       const obj4 = stream(user[17]);
     }
   };
-  return tmp7(analyticsData(16072), obj1);
+  return tmp7(analyticsData(16083), obj1);
 };

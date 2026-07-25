@@ -1,10 +1,10 @@
-// Module ID: 15737
-// Function ID: 121328
+// Module ID: 15748
+// Function ID: 121497
 // Name: useIsActivityPanelFullscreen
-// Dependencies: [1347, 10256, 566, 3748, 10467, 2]
+// Dependencies: [1347, 5660, 566, 3749, 10401, 2]
 // Exports: useIsActivityPanelFullscreen
 
-// Module 15737 (useIsActivityPanelFullscreen)
+// Module 15748 (useIsActivityPanelFullscreen)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { ActivityPanelModes } from "ActivityPanelModes";
 

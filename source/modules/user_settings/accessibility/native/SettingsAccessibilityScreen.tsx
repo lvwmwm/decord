@@ -1,10 +1,10 @@
-// Module ID: 14267
-// Function ID: 109538
+// Module ID: 14278
+// Function ID: 109665
 // Name: getAccessibilitySettingScreen
-// Dependencies: [31, 3804, 7751, 653, 33, 1212, 1920, 2556, 5796, 5582, 14268, 1456, 624, 10127, 13601, 2]
+// Dependencies: [31, 3805, 7697, 653, 33, 1212, 1921, 2557, 6554, 5582, 14279, 1456, 624, 10059, 13612, 2]
 // Exports: default
 
-// Module 14267 (getAccessibilitySettingScreen)
+// Module 14278 (getAccessibilitySettingScreen)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MobileSetting } from "MobileSetting";
@@ -24,7 +24,7 @@ function getAccessibilitySettingScreen(arg0) {
   items = [MobileSetting.ROLE_COLORS];
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = {};
-  let obj2 = importDefault(1920);
+  let obj2 = importDefault(1921);
   obj.learnMoreLink = obj2.getArticleURL(constants.ROLE_STYLES);
   obj.subLabel = intl.format(require(1212) /* getSystemLocale */.t["ksVr5/"], obj);
   const items1 = [obj, , , , , , , , , , , ];
@@ -49,7 +49,7 @@ function getAccessibilitySettingScreen(arg0) {
       });
     }
   };
-  obj1.subLabel = intl3.format(importDefault(2556).L8U56h, obj2);
+  obj1.subLabel = intl3.format(importDefault(2557).L8U56h, obj2);
   items1[2] = obj1;
   const obj3 = { settings: items4 };
   items4 = [MobileSetting.CONTRAST_MODE];
@@ -89,14 +89,14 @@ function getAccessibilitySettingScreen(arg0) {
   const items9 = [MobileSetting.ENABLE_REDUCED_MOTION, MobileSetting.SYNC_REDUCED_MOTION_WITH_DEVICE];
   obj9.settings = items9;
   const intl11 = require(1212) /* getSystemLocale */.intl;
-  const obj10 = { helpdeskArticle: importDefault(1920).getArticleURL(constants.REDUCED_MOTION) };
+  const obj10 = { helpdeskArticle: importDefault(1921).getArticleURL(constants.REDUCED_MOTION) };
   obj9.subLabel = intl11.format(require(1212) /* getSystemLocale */.t["2l9U2j"], obj10);
   items1[8] = obj9;
   const obj11 = { settings: items10 };
   items10 = [MobileSetting.AUTOPLAY_GIF];
   let tmp = null != gifAutoPlayOverrideReason;
   if (tmp) {
-    tmp = importDefault(14268)(gifAutoPlayOverrideReason);
+    tmp = importDefault(14279)(gifAutoPlayOverrideReason);
   }
   obj11.subLabel = tmp;
   items1[9] = obj11;
@@ -104,7 +104,7 @@ function getAccessibilitySettingScreen(arg0) {
   items11 = [MobileSetting.ANIMATE_EMOJI];
   let tmp4 = null != animateEmojiOverrideReason;
   if (tmp4) {
-    tmp4 = importDefault(14268)(animateEmojiOverrideReason);
+    tmp4 = importDefault(14279)(animateEmojiOverrideReason);
   }
   obj12.subLabel = tmp4;
   items1[10] = obj12;
@@ -112,7 +112,7 @@ function getAccessibilitySettingScreen(arg0) {
   items12 = [MobileSetting.ANIMATE_STICKERS];
   let tmp7 = null != animateStickersOverrideReason;
   if (tmp7) {
-    tmp7 = importDefault(14268)(animateStickersOverrideReason);
+    tmp7 = importDefault(14279)(animateStickersOverrideReason);
   }
   obj13.subLabel = tmp7;
   items1[11] = obj13;

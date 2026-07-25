@@ -1,10 +1,10 @@
-// Module ID: 4358
-// Function ID: 38664
+// Module ID: 4359
+// Function ID: 38675
 // Name: toContentScanMetadata
-// Dependencies: [653, 1360, 1881, 4317, 1443, 2]
+// Dependencies: [653, 1360, 1882, 4318, 1443, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toUnfurledMediaItem
 
-// Module 4358 (toContentScanMetadata)
+// Module 4359 (toContentScanMetadata)
 import { MessageAttachmentFlags } from "ME";
 
 function toContentScanMetadata(content_scan_metadata) {
@@ -30,7 +30,7 @@ function messageAttachmentToUnfurledMediaItem(flags) {
   if (obj2.hasFlag(num3, MessageAttachmentFlags.IS_ANIMATED)) {
     num4 = obj.IS_ANIMATED | 0;
   }
-  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: require(1881) /* PermissionOverwriteType */.UnfurledMediaLoadingState.LOADED_SUCCESS };
+  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: require(1882) /* PermissionOverwriteType */.UnfurledMediaLoadingState.LOADED_SUCCESS };
   let tmp3;
   if (null != flags.content_scan_version) {
     obj = { version: flags.content_scan_version, flags: num2 };
@@ -48,7 +48,7 @@ function getMessageAttachmentMediaItemType(filename) {
       str2 = "VIDEO";
     }
     str = str2;
-    obj2 = require(4317) /* urlMatchesFileExtension */;
+    obj2 = require(4318) /* urlMatchesFileExtension */;
   }
   return str;
 }
@@ -91,7 +91,7 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(conten
       }
     }
     str = str3;
-    obj2 = require(4317) /* urlMatchesFileExtension */;
+    obj2 = require(4318) /* urlMatchesFileExtension */;
   }
   return str;
 };

@@ -1,10 +1,10 @@
-// Module ID: 9472
-// Function ID: 73674
+// Module ID: 9393
+// Function ID: 73261
 // Name: MessagePreviewReactions
-// Dependencies: [31, 6830, 8375, 33, 566, 5462, 5482, 9464, 2]
+// Dependencies: [31, 5830, 8133, 33, 566, 5462, 5482, 9384, 2]
 // Exports: default
 
-// Module 9472 (MessagePreviewReactions)
+// Module 9393 (MessagePreviewReactions)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -34,9 +34,9 @@ export default function MessagePreviewReactions(emoji) {
   let obj = { value: importDefault(5462)(importDefault(5482).MESSAGE_PREVIEW_REACTIONS).analyticsLocations };
   if (arr.length > 0) {
     obj = { channelId, messageId, emoji: emoji.emoji, reactions: arr };
-    let tmp6 = jsx(require(9464) /* useReactors */.MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: arr });
+    let tmp6 = jsx(require(9384) /* useReactors */.MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: arr });
   } else {
-    tmp6 = jsx(require(9464) /* useReactors */.MessageReactionsEmpty, {});
+    tmp6 = jsx(require(9384) /* useReactors */.MessageReactionsEmpty, {});
   }
   obj.children = tmp6;
   return jsx(require(5462) /* mergeLocations */.AnalyticsLocationProvider, { value: importDefault(5462)(importDefault(5482).MESSAGE_PREVIEW_REACTIONS).analyticsLocations });

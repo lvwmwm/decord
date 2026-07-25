@@ -1,10 +1,10 @@
-// Module ID: 10530
-// Function ID: 82132
+// Module ID: 10558
+// Function ID: 82261
 // Name: recurseReplaceContentTree
-// Dependencies: [5, 4167, 4153, 1352, 1857, 1348, 1838, 4177, 4349, 4217, 1849, 4146, 4033, 653, 1443, 4118, 664, 22, 6691, 4120, 4360, 10531, 4319, 1445, 8354, 507, 10525, 10510, 10532, 2]
+// Dependencies: [5, 4168, 4154, 1352, 1858, 1348, 1838, 4178, 4350, 4218, 1850, 4147, 4034, 653, 1443, 4119, 664, 22, 5685, 4121, 4361, 10559, 4320, 1445, 8112, 507, 10553, 5661, 10560, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 10530 (recurseReplaceContentTree)
+// Module 10558 (recurseReplaceContentTree)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
@@ -68,7 +68,7 @@ function validateOrigin(arg0) {
   return items.indexOf(arg0) > -1;
 }
 function transformInternalTextMessage(message) {
-  let obj = importDefault(4120);
+  let obj = importDefault(4121);
   obj = { channelId: message.channel_id };
   const mapped = obj.parseToAST(message.content, true, obj).map(recurseReplaceContentTree);
   let tmp2;
@@ -79,8 +79,8 @@ function transformInternalTextMessage(message) {
   }
   let userAuthor;
   if (null != message.author) {
-    userAuthor = require(4360) /* useNullableMessageAuthor */.getUserAuthor(tmp2, channel);
-    const obj3 = require(4360) /* useNullableMessageAuthor */;
+    userAuthor = require(4361) /* useNullableMessageAuthor */.getUserAuthor(tmp2, channel);
+    const obj3 = require(4361) /* useNullableMessageAuthor */;
   }
   obj = { id: message.id, blocked: message.blocked, bot: message.bot, content: message.content };
   let tmp9;
@@ -105,7 +105,7 @@ function transformInternalTextMessage(message) {
   ({ embeds: obj4.embeds, attachments: obj4.attachments } = message);
   let tmp12;
   if (null != tmp2) {
-    tmp12 = importDefault(10531)(tmp2);
+    tmp12 = importDefault(10559)(tmp2);
   }
   obj.author = tmp12;
   ({ pinned: obj4.pinned, type: obj4.type } = message);
@@ -126,10 +126,10 @@ function transformVoiceState(closure_2, id, userId) {
     const error = new Error("Invalid user id: " + userId);
     throw error;
   } else {
-    let obj = { nick: importDefault(4319).getName(closure_2, id, user), mute: store.isLocalMute(user.id), volume: store.getLocalVolume(user.id), pan: store.getLocalPan(user.id) };
+    let obj = { nick: importDefault(4320).getName(closure_2, id, user), mute: store.isLocalMute(user.id), volume: store.getLocalVolume(user.id), pan: store.getLocalPan(user.id) };
     obj = { mute, deaf, self_mute: selfMute, self_deaf: selfDeaf, suppress };
     obj.voice_state = obj;
-    obj.user = importDefault(10531)(user);
+    obj.user = importDefault(10559)(user);
     return obj;
   }
 }
@@ -235,7 +235,7 @@ export const transformChannel = function transformChannel(channel, arg1) {
 export { transformInternalTextMessage };
 export { transformVoiceState };
 export const transformBaseRelationship = function transformBaseRelationship(relationshipType, user) {
-  let obj = { type: relationshipType, user: importDefault(10531)(user) };
+  let obj = { type: relationshipType, user: importDefault(10559)(user) };
   obj = { status: store2.getStatus(user.id, null), activity: null };
   obj.presence = obj;
   return obj;
@@ -299,7 +299,7 @@ export const hasMessageReadPermission = function hasMessageReadPermission(channe
   }
   let tmp2 = application_id === id;
   if (!tmp2) {
-    tmp2 = scopes.indexOf(require(8354) /* set */.OAuth2Scopes.MESSAGES_READ) > -1;
+    tmp2 = scopes.indexOf(require(8112) /* set */.OAuth2Scopes.MESSAGES_READ) > -1;
   }
   return tmp2;
 };
@@ -364,7 +364,7 @@ export const getVoiceSettingsWithShortcut = function getVoiceSettingsWithShortcu
 };
 export const validatePostMessageTransport = function validatePostMessageTransport(transport) {
   if (transport !== constants.POST_MESSAGE) {
-    let tmp3 = importDefault(10525);
+    let tmp3 = importDefault(10553);
     const obj = { errorCode: constants4.INVALID_COMMAND };
     const _HermesInternal = HermesInternal;
     const prototype = tmp3.prototype;
@@ -374,7 +374,7 @@ export const validatePostMessageTransport = function validatePostMessageTranspor
 };
 export const validateApplication = function validateApplication(application) {
   if (null == application.id) {
-    let tmp3 = importDefault(10525);
+    let tmp3 = importDefault(10553);
     const obj = { errorCode: constants4.INVALID_COMMAND };
     const prototype = tmp3.prototype;
     tmp3 = new tmp3(obj, "Invalid application");

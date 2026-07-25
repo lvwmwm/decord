@@ -1,10 +1,10 @@
-// Module ID: 13635
-// Function ID: 104739
+// Module ID: 13646
+// Function ID: 104866
 // Name: UserProfileEditFormTextField
-// Dependencies: [31, 33, 7645, 7574, 2]
+// Dependencies: [31, 33, 7585, 6670, 2]
 // Exports: default
 
-// Module 13635 (UserProfileEditFormTextField)
+// Module 13646 (UserProfileEditFormTextField)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -36,12 +36,12 @@ export default function UserProfileEditFormTextField(inputRef) {
   if (numberOfLines > 1) {
     obj = { ref: inputRef };
     const merged2 = Object.assign(obj);
-    let tmp10 = jsx(require(7645) /* TextArea */.TextArea, { ref: inputRef });
+    let tmp10 = jsx(require(7585) /* TextArea */.TextArea, { ref: inputRef });
   } else {
     const obj1 = { ref: inputRef };
     const merged3 = Object.assign(obj);
     obj1["isClearable"] = true;
-    tmp10 = jsx(require(7574) /* TextInput */.TextInput, { ref: inputRef });
+    tmp10 = jsx(require(6670) /* TextInput */.TextInput, { ref: inputRef });
   }
   return tmp10;
 };

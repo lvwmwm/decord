@@ -1,10 +1,10 @@
-// Module ID: 10720
-// Function ID: 83514
+// Module ID: 10684
+// Function ID: 83201
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4185, 10721, 10722, 2]
+// Dependencies: [4186, 10685, 10686, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 10720 (_createForOfIteratorHelperLoose)
+// Module 10684 (_createForOfIteratorHelperLoose)
 import makeButton from "makeButton";
 
 let closure_2;
@@ -90,7 +90,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getApplicationStreamPresetValues() {
-  let obj = importDefault(10721);
+  let obj = importDefault(10685);
   obj = { [closure_3.PRESET_DOCUMENTS]: items };
   obj = { resolution: closure_4.RESOLUTION_SOURCE, fps: closure_2.FPS_15 };
   items = [obj, { resolution: closure_4.RESOLUTION_SOURCE, fps: closure_2.FPS_5 }];
@@ -116,7 +116,7 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier) {
     let iter2 = iter3;
     if (!iter3.done) {
       const value = iter2.value;
-      while (!importDefault(10722)(arg0, value.resolution, value.fps, user, guildPremiumTier)) {
+      while (!importDefault(10686)(arg0, value.resolution, value.fps, user, guildPremiumTier)) {
         let iter = tmp8();
         iter2 = iter;
       }

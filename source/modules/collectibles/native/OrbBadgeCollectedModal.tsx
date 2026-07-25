@@ -1,10 +1,10 @@
-// Module ID: 11862
-// Function ID: 91978
+// Module ID: 11838
+// Function ID: 91783
 // Name: screens
-// Dependencies: [31, 27, 4122, 33, 4130, 689, 5087, 4337, 8763, 9818, 566, 5085, 10958, 8346, 10959, 5121, 8757, 4126, 1212, 4543, 7936, 8760, 5517, 2]
+// Dependencies: [31, 27, 4123, 33, 4131, 689, 5087, 4338, 8651, 9742, 566, 5085, 10909, 8080, 10910, 5121, 8645, 4127, 1212, 4544, 7883, 8648, 5517, 2]
 // Exports: default
 
-// Module 11862 (screens)
+// Module 11838 (screens)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -57,24 +57,24 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   }, items2);
   if (stateFromStores) {
     obj = {};
-    const obj1 = { uri: onPressViewBadge(10958) };
+    const obj1 = { uri: onPressViewBadge(10909) };
     obj.source = obj1;
     obj.style = tmp.background;
     let tmp7Result = tmp7(onPressViewBadge(5085), obj);
     const tmp14 = onPressViewBadge(5085);
   } else {
     const obj2 = { source: null, poster: null, style: null, resizeMode: "contain", muted: true, pauseWhileAppInactive: true, paused: false };
-    const obj3 = { uri: onPressViewBadge(10959) };
+    const obj3 = { uri: onPressViewBadge(10910) };
     obj2.source = obj3;
-    obj2.poster = onPressViewBadge(10958);
+    obj2.poster = onPressViewBadge(10909);
     obj2.style = tmp.background;
-    tmp7Result = tmp7(modalKey(8346).VideoComponent, obj2);
+    tmp7Result = tmp7(modalKey(8080).VideoComponent, obj2);
   }
   const items3 = [tmp7Result, ];
   const obj4 = { style: tmp.main, top: true, bottom: true, left: true, right: true };
   const obj5 = { style: tmp.body };
   const obj6 = {};
-  const obj7 = { uri: onPressViewBadge(8757) };
+  const obj7 = { uri: onPressViewBadge(8645) };
   obj6.source = obj7;
   obj6.style = tmp.orbBadge;
   const items4 = [callback(onPressViewBadge(5085), obj6), ];
@@ -83,22 +83,22 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   const obj10 = { variant: "heading-xl/bold", color: "text-overlay-light", style: tmp.text };
   const intl = modalKey(1212).intl;
   obj10.children = intl.string(modalKey(1212).t.Bal8Cv);
-  const items5 = [callback(modalKey(4126).Text, obj10), ];
+  const items5 = [callback(modalKey(4127).Text, obj10), ];
   const obj11 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.text };
   const intl2 = modalKey(1212).intl;
   obj11.children = intl2.string(modalKey(1212).t.B25MUf);
-  items5[1] = callback(modalKey(4126).Text, obj11);
+  items5[1] = callback(modalKey(4127).Text, obj11);
   obj9.children = items5;
   const items6 = [callback2(View, obj9), ];
   const obj12 = { style: tmp.buttonsContainer };
   const obj13 = { onPress: callback, variant: "primary", size: "lg" };
   const intl3 = modalKey(1212).intl;
   obj13.text = intl3.string(modalKey(1212).t.uYLGci);
-  const items7 = [callback(modalKey(4543).Button, obj13), ];
+  const items7 = [callback(modalKey(4544).Button, obj13), ];
   const obj14 = { onPress: callback1, variant: "secondary", size: "lg" };
   const intl4 = modalKey(1212).intl;
   obj14.text = intl4.string(modalKey(1212).t["6gF4aS"]);
-  items7[1] = callback(modalKey(4543).Button, obj14);
+  items7[1] = callback(modalKey(4544).Button, obj14);
   obj12.children = items7;
   items6[1] = callback2(View, obj12);
   obj8.children = items6;

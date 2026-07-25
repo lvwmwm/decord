@@ -1,5 +1,5 @@
 // Module ID: 1094
-// Function ID: 12551
+// Function ID: 12557
 // Name: isValidProfile
 // Dependencies: [65, 794, 978, 1095]
 // Exports: addProfilesToEnvelope, createHermesProfilingEvent, enrichCombinedProfileWithEventContext, findProfiledTransactionsFromEnvelope

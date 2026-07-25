@@ -1,10 +1,10 @@
-// Module ID: 15670
-// Function ID: 120801
+// Module ID: 15681
+// Function ID: 120970
 // Name: ConnectionIcon
-// Dependencies: [31, 27, 4167, 4812, 1345, 33, 4130, 689, 3842, 1557, 566, 4814, 5465, 5462, 5482, 15671, 4098, 15673, 1934, 5186, 5187, 4541, 15659, 4126, 1212, 2748, 8749, 4543, 10189, 3840, 1392, 4545, 5472, 5468, 2]
+// Dependencies: [31, 27, 4168, 4813, 1345, 33, 4131, 689, 3843, 1557, 566, 4815, 5465, 5462, 5482, 15682, 4099, 15684, 1935, 5186, 5187, 4542, 15670, 4127, 1212, 2749, 8637, 4544, 10121, 3841, 1392, 4546, 5472, 5468, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 15670 (ConnectionIcon)
+// Module 15681 (ConnectionIcon)
 import getIconSize from "getIconSize";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -21,18 +21,18 @@ function ConnectionIcon(arg0) {
   let theme;
   ({ platform, theme } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3840) /* isThemeLight */;
+  let obj = require(3841) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(theme);
   const icon = platform.icon;
   obj = { style: tmp.iconContainer };
   const source = require(1392) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
   obj = {};
   const obj2 = require(1392) /* getAvatarURL */;
-  obj.size = require(4545) /* getIconSize */.IconSizes.CUSTOM;
+  obj.size = require(4546) /* getIconSize */.IconSizes.CUSTOM;
   obj.source = source;
   obj.disableColor = true;
   obj.style = tmp.connectionIcon;
-  obj.children = callback(importDefault(4545), obj);
+  obj.children = callback(importDefault(4546), obj);
   return callback(View, obj);
 }
 function ApplicationIcon(application) {

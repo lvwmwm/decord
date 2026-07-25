@@ -1,17 +1,17 @@
-// Module ID: 12516
-// Function ID: 96941
+// Module ID: 12497
+// Function ID: 96792
 // Name: getGuildSubscriptionNoGuildsSource
-// Dependencies: [31, 27, 33, 7405, 12517, 12518, 12519, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 12498, 12499, 12500, 3977, 2]
 // Exports: GuildSubscriptionNoGuilds
 
-// Module 12516 (getGuildSubscriptionNoGuildsSource)
+// Module 12497 (getGuildSubscriptionNoGuildsSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getGuildSubscriptionNoGuildsSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getGuildSubscriptionNoGuildsSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useGuildSubscriptionNoGuildsSource() {
-  return getGuildSubscriptionNoGuildsSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getGuildSubscriptionNoGuildsSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionNoGuilds.tsx");
 

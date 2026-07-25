@@ -1,10 +1,10 @@
-// Module ID: 13825
-// Function ID: 105953
+// Module ID: 13836
+// Function ID: 106080
 // Name: useSelectedMyFamilyTab
-// Dependencies: [6769, 6770, 653, 624, 6771, 675, 2]
+// Dependencies: [5765, 5766, 653, 624, 5767, 675, 2]
 // Exports: default
 
-// Module 13825 (useSelectedMyFamilyTab)
+// Module 13836 (useSelectedMyFamilyTab)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import items from "items";
 import { AnalyticEvents } from "ME";

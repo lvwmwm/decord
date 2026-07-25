@@ -1,21 +1,21 @@
-// Module ID: 15739
-// Function ID: 121333
+// Module ID: 15750
+// Function ID: 121502
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [3991, 15694, 15740, 9459, 15641, 15741, 10051, 2]
+// Dependencies: [3992, 15705, 15751, 9379, 15651, 15752, 9980, 2]
 // Exports: default
 
-// Module 15739 (usePIPAvoidanceSpecs)
+// Module 15750 (usePIPAvoidanceSpecs)
 let closure_3 = { code: "function usePIPAvoidanceSpecsTsx1(){const{keyboardHeight,safeArea,screenName}=this.__closure;return{keyboardHeight:keyboardHeight.get(),safeAreaBottom:safeArea.bottom,screenName:screenName.get()};}" };
 let closure_4 = { code: "function usePIPAvoidanceSpecsTsx2(props,previous){const{cheapWorkletShallowEqual,getPIPBottomOffsetForPIPMode,getAdjustedBottomOffsets,updateSharedValueIfChanged,pipAvoidanceSpecs}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{keyboardHeight:keyboardHeight,safeAreaBottom:safeAreaBottom,screenName:screenName}=props;const screenBottomOffset=getPIPBottomOffsetForPIPMode(screenName);const{bottomOffset:bottomOffset}=getAdjustedBottomOffsets({screenBottomOffset:screenBottomOffset,safeAreaBottom:safeAreaBottom,keyboardHeight:keyboardHeight});updateSharedValueIfChanged(pipAvoidanceSpecs,{top:0,bottom:bottomOffset});}" };
 const result = require("useScreenNameSharedValue").fileFinishedImporting("modules/activities/panel/native/pip/usePIPAvoidanceSpecs.tsx");
 
 export default function usePIPAvoidanceSpecs(safeArea) {
   const _require = safeArea;
-  let obj = _require(3991);
+  let obj = _require(3992);
   const sharedValue = obj.useSharedValue({ top: 0, bottom: 0 });
-  const tmp2 = sharedValue(15694)();
+  const tmp2 = sharedValue(15705)();
   const dependencyMap = tmp2;
-  const tmp3 = sharedValue(15740)();
+  const tmp3 = sharedValue(15751)();
   let closure_3 = tmp3;
   const fn = function f() {
     return { keyboardHeight: tmp2.get(), safeAreaBottom: safeArea.bottom, screenName: tmp3.get() };
@@ -41,10 +41,10 @@ export default function usePIPAvoidanceSpecs(safeArea) {
       const tmp4 = sharedValue(sharedValue[4])(screenName);
     }
   };
-  obj = { cheapWorkletShallowEqual: _require(9459).cheapWorkletShallowEqual, getPIPBottomOffsetForPIPMode: sharedValue(15641), getAdjustedBottomOffsets: sharedValue(15741), updateSharedValueIfChanged: sharedValue(10051), pipAvoidanceSpecs: sharedValue };
+  obj = { cheapWorkletShallowEqual: _require(9379).cheapWorkletShallowEqual, getPIPBottomOffsetForPIPMode: sharedValue(15651), getAdjustedBottomOffsets: sharedValue(15752), updateSharedValueIfChanged: sharedValue(9980), pipAvoidanceSpecs: sharedValue };
   fn2.__closure = obj;
   fn2.__workletHash = 643938425459;
   fn2.__initData = closure_4;
-  const animatedReaction = _require(3991).useAnimatedReaction(fn, fn2);
+  const animatedReaction = _require(3992).useAnimatedReaction(fn, fn2);
   return sharedValue;
 };

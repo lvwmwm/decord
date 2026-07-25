@@ -1,9 +1,9 @@
-// Module ID: 14568
-// Function ID: 111137
+// Module ID: 14579
+// Function ID: 111264
 // Name: toggle
-// Dependencies: [8937, 7751, 566, 8939, 10127, 1212, 2]
+// Dependencies: [8825, 7697, 566, 8827, 10059, 1212, 2]
 
-// Module 14568 (toggle)
+// Module 14579 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -23,7 +23,7 @@ createToggle = {
     return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getPersistentCodesEnabled());
   },
   onValueChange: function handleSecureFramesPersistentCodesToggle(arg0) {
-    const result = importDefault(8939).updatePersistentCodesEnabled(arg0);
+    const result = importDefault(8827).updatePersistentCodesEnabled(arg0);
   }
 };
 createToggle = createToggle.createToggle(createToggle);

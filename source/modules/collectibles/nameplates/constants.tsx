@@ -1,9 +1,9 @@
-// Module ID: 1877
-// Function ID: 20895
+// Module ID: 1878
+// Function ID: 20906
 // Name: NAMEPLATE_PALETTES
-// Dependencies: [1878, 2]
+// Dependencies: [1879, 2]
 
-// Module 1877 (NAMEPLATE_PALETTES)
+// Module 1878 (NAMEPLATE_PALETTES)
 let obj = {};
 obj = { darkBackground: "#900007", lightBackground: "#E7040F", name: require("PaletteKeys").PaletteKeys.Crimson };
 obj[require("PaletteKeys").PaletteKeys.Crimson] = obj;

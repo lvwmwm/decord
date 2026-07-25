@@ -1,10 +1,10 @@
-// Module ID: 1870
-// Function ID: 20835
+// Module ID: 1871
+// Function ID: 20846
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 1858, 1867, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1859, 1868, 2]
 // Exports: ensureRestrictedScheduleRecord
 
-// Module 1870 (_createForOfIteratorHelperLoose)
+// Module 1871 (_createForOfIteratorHelperLoose)
 import _callSuper from "_callSuper";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -116,7 +116,7 @@ function timeOfDayToMinutes(hours) {
   return 60 * hours.hours + hours.minutes;
 }
 const frozen = Object.freeze({ [0]: require("_callSuper").DayOfWeek.SUNDAY, [1]: require("_callSuper").DayOfWeek.MONDAY, [2]: require("_callSuper").DayOfWeek.TUESDAY, [3]: require("_callSuper").DayOfWeek.WEDNESDAY, [4]: require("_callSuper").DayOfWeek.THURSDAY, [5]: require("_callSuper").DayOfWeek.FRIDAY, [6]: require("_callSuper").DayOfWeek.SATURDAY });
-let closure_8 = Object.freeze({ [arg1(1867).DayOfWeek.DAY_OF_WEEK_UNSPECIFIED]: 0, [arg1(1867).DayOfWeek.MONDAY]: 1, [arg1(1867).DayOfWeek.TUESDAY]: 2, [arg1(1867).DayOfWeek.WEDNESDAY]: 3, [arg1(1867).DayOfWeek.THURSDAY]: 4, [arg1(1867).DayOfWeek.FRIDAY]: 5, [arg1(1867).DayOfWeek.SATURDAY]: 6, [arg1(1867).DayOfWeek.SUNDAY]: 0 });
+let closure_8 = Object.freeze({ [arg1(1868).DayOfWeek.DAY_OF_WEEK_UNSPECIFIED]: 0, [arg1(1868).DayOfWeek.MONDAY]: 1, [arg1(1868).DayOfWeek.TUESDAY]: 2, [arg1(1868).DayOfWeek.WEDNESDAY]: 3, [arg1(1868).DayOfWeek.THURSDAY]: 4, [arg1(1868).DayOfWeek.FRIDAY]: 5, [arg1(1868).DayOfWeek.SATURDAY]: 6, [arg1(1868).DayOfWeek.SUNDAY]: 0 });
 const tmp4 = ((importDefaultResult) => {
   class ScheduleRuleRecord {
     constructor(arg0) {

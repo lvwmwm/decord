@@ -1,10 +1,10 @@
-// Module ID: 15018
-// Function ID: 114443
+// Module ID: 15028
+// Function ID: 114570
 // Name: SubscriptionGatedChannelIcon
-// Dependencies: [31, 33, 1273, 9392, 2]
+// Dependencies: [31, 33, 1273, 9298, 2]
 // Exports: default
 
-// Module 15018 (SubscriptionGatedChannelIcon)
+// Module 15028 (SubscriptionGatedChannelIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -15,9 +15,9 @@ export default function SubscriptionGatedChannelIcon(arg0) {
   let isInMainTabsExperiment;
   let locked;
   ({ locked, isInMainTabsExperiment } = arg0);
-  const obj = { source: importDefault(9392) };
+  const obj = { source: importDefault(9298) };
   const Sizes = require(1273) /* Button */.Icon.Sizes;
   obj.size = isInMainTabsExperiment ? Sizes.EXTRA_SMALL_10 : Sizes.SMALL;
   obj.disableColor = false !== locked;
-  return jsx(require(1273) /* Button */.Icon, { source: importDefault(9392) });
+  return jsx(require(1273) /* Button */.Icon, { source: importDefault(9298) });
 };

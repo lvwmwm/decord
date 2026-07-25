@@ -1,10 +1,10 @@
-// Module ID: 16418
-// Function ID: 128063
+// Module ID: 16429
+// Function ID: 128231
 // Name: ChannelSetupScreen
-// Dependencies: [31, 27, 8483, 1348, 1907, 3767, 1849, 7811, 653, 33, 3834, 689, 16407, 566, 4320, 1212, 16408, 4098, 8426, 1934, 8482, 16405, 4126, 4541, 5501, 5165, 2]
+// Dependencies: [31, 27, 8243, 1348, 1908, 3768, 1850, 7758, 653, 33, 3835, 689, 16418, 566, 4321, 1212, 16419, 4099, 8184, 1935, 8242, 16416, 4127, 4542, 5501, 5164, 2]
 // Exports: default
 
-// Module 16418 (ChannelSetupScreen)
+// Module 16429 (ChannelSetupScreen)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 5041
-// Function ID: 43568
+// Module ID: 5042
+// Function ID: 43580
 // Name: getThreadLastActivityTime
-// Dependencies: [4142, 664, 21, 2]
+// Dependencies: [4143, 664, 21, 2]
 // Exports: default
 
-// Module 5041 (getThreadLastActivityTime)
+// Module 5042 (getThreadLastActivityTime)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 function getThreadLastActivityTime(threadMetadata) {

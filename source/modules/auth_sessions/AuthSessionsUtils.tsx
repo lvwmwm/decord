@@ -1,10 +1,10 @@
-// Module ID: 13689
-// Function ID: 105069
+// Module ID: 13700
+// Function ID: 105196
 // Name: useAuthSessions
-// Dependencies: [31, 1194, 13690, 566, 1212, 3712, 2]
+// Dependencies: [31, 1194, 13701, 566, 1212, 3713, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 13689 (useAuthSessions)
+// Module 13700 (useAuthSessions)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -42,8 +42,8 @@ export const formatDate = function formatDate(arg0) {
     const intl = require(1212) /* getSystemLocale */.intl;
     let stringResult = intl.string(require(1212) /* getSystemLocale */.t.TXCmfL);
   } else {
-    stringResult = importDefault(3712)(arg0).fromNow();
-    const obj = importDefault(3712)(arg0);
+    stringResult = importDefault(3713)(arg0).fromNow();
+    const obj = importDefault(3713)(arg0);
   }
   return stringResult;
 };

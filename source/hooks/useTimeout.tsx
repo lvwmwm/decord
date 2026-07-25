@@ -1,10 +1,10 @@
-// Module ID: 7197
-// Function ID: 57973
+// Module ID: 6610
+// Function ID: 58520
 // Name: useTimeout
 // Dependencies: [31, 2]
 // Exports: default
 
-// Module 7197 (useTimeout)
+// Module 6610 (useTimeout)
 import result from "result";
 
 ({ useEffect: closure_0, useRef: closure_1 } = result);

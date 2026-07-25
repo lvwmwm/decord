@@ -1,10 +1,10 @@
-// Module ID: 12338
-// Function ID: 96133
+// Module ID: 12314
+// Function ID: 95942
 // Name: getJoinFromSupportedPlatformsIconKeys
 // Dependencies: [31, 653, 2]
 // Exports: useJoinFromSupportedPlatformsIconKeys
 
-// Module 12338 (getJoinFromSupportedPlatformsIconKeys)
+// Module 12314 (getJoinFromSupportedPlatformsIconKeys)
 import result from "result";
 import { ActivityGamePlatforms } from "ME";
 

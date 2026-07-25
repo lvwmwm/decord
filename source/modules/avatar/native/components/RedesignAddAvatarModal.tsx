@@ -1,10 +1,10 @@
-// Module ID: 16179
-// Function ID: 125369
+// Module ID: 16190
+// Function ID: 125537
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 57, 31, 27, 7930, 653, 33, 4130, 689, 1557, 566, 7943, 16164, 7971, 4674, 7933, 7935, 4126, 1212, 16173, 4543, 16161, 2]
+// Dependencies: [5, 57, 31, 27, 7877, 653, 33, 4131, 689, 1557, 566, 7890, 16175, 7919, 4675, 7880, 7882, 4127, 1212, 16184, 4544, 16172, 2]
 // Exports: default
 
-// Module 16179 (RedesignAddAvatarModal)
+// Module 16190 (RedesignAddAvatarModal)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

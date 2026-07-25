@@ -1,10 +1,10 @@
-// Module ID: 13134
-// Function ID: 101146
+// Module ID: 13145
+// Function ID: 101273
 // Name: GhostInput
-// Dependencies: [31, 33, 4130, 4126, 689, 5780, 5774, 7575, 5783, 2]
+// Dependencies: [31, 33, 4131, 4127, 689, 6683, 6677, 6671, 6686, 2]
 // Exports: GhostInput
 
-// Module 13134 (GhostInput)
+// Module 13145 (GhostInput)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -21,7 +21,7 @@ let closure_4 = _createForOfIteratorHelperLoose.createStyles(() => {
   }
   let obj = {};
   obj = {};
-  obj = { md: require(4126) /* Text */.TextStyleSheet["text-md/semibold"], lg: require(4126) /* Text */.TextStyleSheet["text-lg/semibold"] };
+  obj = { md: require(4127) /* Text */.TextStyleSheet["text-md/semibold"], lg: require(4127) /* Text */.TextStyleSheet["text-lg/semibold"] };
   const merged = Object.assign(obj[str]);
   if ("error" === str2) {
     let TEXT_DEFAULT = importDefault(689).colors.TEXT_FEEDBACK_CRITICAL;
@@ -37,13 +37,13 @@ let closure_4 = _createForOfIteratorHelperLoose.createStyles(() => {
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/TextInput/native/GhostInput.native.tsx");
 
 export const GhostInput = function GhostInput(size) {
-  let obj = require(5780) /* useInputStyles */;
+  let obj = require(6683) /* useInputStyles */;
   obj = { size: size.size };
   const inputStyles = obj.useInputStyles(obj);
   const tmp2 = callback(size.size, size.status);
   const isCentered = size.isCentered;
   const autoFocus = size.autoFocus;
-  const textField = require(5774) /* useTextFieldState */.useTextField(size, undefined);
+  const textField = require(6677) /* useTextFieldState */.useTextField(size, undefined);
   obj = {};
   const merged = Object.assign(size);
   const items = [size.containerStyle, ];
@@ -61,6 +61,6 @@ export const GhostInput = function GhostInput(size) {
   obj1["placeholderTextColor"] = inputStyles.placeholderText.color;
   obj1["spellCheck"] = false;
   obj1["autoFocus"] = undefined === autoFocus || autoFocus;
-  obj["children"] = jsx(require(5783) /* useKeyboardBlurring */.NativeTextInput, {});
-  return jsx(require(7575) /* Input */.Input, {});
+  obj["children"] = jsx(require(6686) /* useKeyboardBlurring */.NativeTextInput, {});
+  return jsx(require(6671) /* Input */.Input, {});
 };

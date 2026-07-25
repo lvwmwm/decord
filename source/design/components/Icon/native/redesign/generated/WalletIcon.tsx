@@ -1,10 +1,10 @@
-// Module ID: 7605
-// Function ID: 60612
+// Module ID: 6715
+// Function ID: 59283
 // Name: WalletIcon
-// Dependencies: [31, 33, 689, 3833, 7606, 2]
+// Dependencies: [31, 33, 689, 3834, 6716, 2]
 // Exports: WalletIcon
 
-// Module 7605 (WalletIcon)
+// Module 6715 (WalletIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const WalletIcon = function WalletIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(7606) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(6716) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7606) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(6716) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

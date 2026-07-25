@@ -1,10 +1,10 @@
-// Module ID: 9939
-// Function ID: 76837
+// Module ID: 9867
+// Function ID: 76452
 // Name: FailedGroupDMRow
-// Dependencies: [31, 27, 1348, 1838, 4217, 3767, 1849, 482, 33, 4130, 689, 4320, 9134, 1273, 4126, 566, 3969, 9940, 4475, 4475, 1212, 2]
+// Dependencies: [31, 27, 1348, 1838, 4218, 3768, 1850, 482, 33, 4131, 689, 4321, 9026, 1273, 4127, 566, 3970, 9868, 4476, 4476, 1212, 2]
 // Exports: default
 
-// Module 9939 (FailedGroupDMRow)
+// Module 9867 (FailedGroupDMRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,12 +25,12 @@ function FailedGroupDMRow(channel) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.row };
   obj = {};
-  const tmp2 = importDefault(4320)(channel);
+  const tmp2 = importDefault(4321)(channel);
   obj.size = require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj.channel = channel;
-  const items = [callback(importDefault(9134), obj), ];
+  const items = [callback(importDefault(9026), obj), ];
   obj = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp2 };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }
@@ -61,11 +61,11 @@ function FailedUserRow(user) {
     const items2 = [closure_10(user(1273).Avatar, obj), ];
     obj1 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail" };
     if (null == stateFromStores) {
-      stateFromStores = importDefault(3969).getName(user);
-      const obj6 = importDefault(3969);
+      stateFromStores = importDefault(3970).getName(user);
+      const obj6 = importDefault(3970);
     }
     obj1.children = stateFromStores;
-    items2[1] = closure_10(user(4126).Text, obj1);
+    items2[1] = closure_10(user(4127).Text, obj1);
     obj.children = items2;
     tmp7Result = closure_11(View, obj);
     const tmp16 = closure_10;
@@ -88,10 +88,10 @@ function FailedChannelRow(channel) {
     return outer1_5.getGuild(guild_id);
   });
   obj = { style: tmp.row };
-  obj = { "aria-label": "", guild: stateFromStores, channel, size: channel(9940).GuildIconWithChannelTypeSizes.SMALL_32 };
-  const items1 = [callback(channel(9940).GuildIconWithChannelType, obj), ];
-  const obj1 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4320)(channel) };
-  items1[1] = callback(channel(4126).Text, obj1);
+  obj = { "aria-label": "", guild: stateFromStores, channel, size: channel(9868).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const items1 = [callback(channel(9868).GuildIconWithChannelType, obj), ];
+  const obj1 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4321)(channel) };
+  items1[1] = callback(channel(4127).Text, obj1);
   obj.children = items1;
   return callback2(View, obj);
 }
@@ -160,20 +160,20 @@ export default function DestinationFailedAlertModal(arg0) {
     const obj2 = { variant: "primary", onPress: onRetry };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj2.text = intl2.string(require(1212) /* getSystemLocale */.t["5911Lb"]);
-    const items = [callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj2, "confirm"), ];
+    const items = [callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj2, "confirm"), ];
     const obj3 = { variant: "secondary" };
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.WAI6xu);
-    items[1] = callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj3, "cancel");
+    items[1] = callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj3, "cancel");
     obj1.children = items;
     let tmp7 = callback2(closure_12, obj1);
   } else {
     const obj4 = { variant: "primary" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj4.text = intl.string(require(1212) /* getSystemLocale */.t.BddRzS);
-    tmp7 = callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj4, "confirm");
+    tmp7 = callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj4, "confirm");
   }
   obj.children = tmp7;
-  obj.actions = callback(require(4475) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4475) /* getAlertModalItemKey */.AlertModal, obj);
+  obj.actions = callback(require(4476) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4476) /* getAlertModalItemKey */.AlertModal, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 16138
-// Function ID: 125005
+// Module ID: 16149
+// Function ID: 125173
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 16139, 675, 6707, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 653, 16150, 675, 5703, 5078, 2]
 
-// Module 16138 (_isNativeReflectConstruct)
+// Module 16149 (_isNativeReflectConstruct)
 import enforcing from "enforcing";
 import expandLocation from "expandLocation";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

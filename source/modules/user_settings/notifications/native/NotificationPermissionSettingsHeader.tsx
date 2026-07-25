@@ -1,10 +1,10 @@
-// Module ID: 14365
-// Function ID: 109947
+// Module ID: 14376
+// Function ID: 110074
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [31, 27, 653, 11479, 33, 4130, 689, 11480, 675, 5167, 10232, 4126, 1212, 4543, 2]
+// Dependencies: [31, 27, 653, 11442, 33, 4131, 689, 11443, 675, 5166, 10165, 4127, 1212, 4544, 2]
 // Exports: default
 
-// Module 14365 (NotificationPermissionSettingsHeader)
+// Module 14376 (NotificationPermissionSettingsHeader)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -37,7 +37,7 @@ const result = require("ME").fileFinishedImporting("modules/user_settings/notifi
 
 export default function NotificationPermissionSettingsHeader() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = canSeePushNotificationNudge(11480);
+  let obj = canSeePushNotificationNudge(11443);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = React.useEffect(() => {
@@ -54,16 +54,16 @@ export default function NotificationPermissionSettingsHeader() {
     const obj1 = { style: tmp.cardContent };
     const obj2 = { style: tmp.iconCircle };
     const obj3 = { size: "md", color: importDefault(689).colors.ICON_STRONG };
-    obj2.children = callback(canSeePushNotificationNudge(10232).BellSlashIcon, obj3);
+    obj2.children = callback(canSeePushNotificationNudge(10165).BellSlashIcon, obj3);
     const items1 = [callback(View, obj2), , , ];
     const obj4 = { variant: "heading-lg/bold", color: "text-default" };
     const intl = canSeePushNotificationNudge(1212).intl;
     obj4.children = intl.string(canSeePushNotificationNudge(1212).t.MUwOvc);
-    items1[1] = callback(canSeePushNotificationNudge(4126).Text, obj4);
+    items1[1] = callback(canSeePushNotificationNudge(4127).Text, obj4);
     const obj5 = { variant: "text-sm/medium", style: tmp.body, color: "text-muted" };
     const intl2 = canSeePushNotificationNudge(1212).intl;
     obj5.children = intl2.string(canSeePushNotificationNudge(1212).t.G4uKoe);
-    items1[2] = callback(canSeePushNotificationNudge(4126).Text, obj5);
+    items1[2] = callback(canSeePushNotificationNudge(4127).Text, obj5);
     const obj6 = {};
     const obj7 = { alignSelf: "stretch" };
     obj6.style = obj7;
@@ -71,11 +71,11 @@ export default function NotificationPermissionSettingsHeader() {
     const intl3 = canSeePushNotificationNudge(1212).intl;
     obj8.text = intl3.string(canSeePushNotificationNudge(1212).t["5xWOXv"]);
     obj8.onPress = tmp4;
-    obj6.children = callback(canSeePushNotificationNudge(4543).Button, obj8);
+    obj6.children = callback(canSeePushNotificationNudge(4544).Button, obj8);
     items1[3] = callback(View, obj6);
     obj1.children = items1;
     obj.children = callback2(View, obj1);
-    obj.children = callback(canSeePushNotificationNudge(5167).Card, obj);
+    obj.children = callback(canSeePushNotificationNudge(5166).Card, obj);
     tmp5 = callback(View, obj);
   }
   return tmp5;

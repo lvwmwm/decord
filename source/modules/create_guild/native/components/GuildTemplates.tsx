@@ -1,10 +1,10 @@
-// Module ID: 11766
-// Function ID: 91397
+// Module ID: 11736
+// Function ID: 91147
 // Name: GuildTemplatesHeader
-// Dependencies: [57, 31, 27, 11763, 9263, 653, 33, 4130, 5084, 689, 4126, 1212, 1456, 1557, 4543, 11739, 675, 10086, 11767, 5121, 5501, 2]
+// Dependencies: [57, 31, 27, 11733, 9155, 653, 33, 4131, 5084, 689, 4127, 1212, 1456, 1557, 4544, 11709, 675, 10015, 11737, 5121, 5501, 2]
 // Exports: default
 
-// Module 11766 (GuildTemplatesHeader)
+// Module 11736 (GuildTemplatesHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -32,11 +32,11 @@ function GuildTemplatesHeader() {
   obj = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["5HZu07"]);
-  const items = [callback3(require(4126) /* Text */.Text, obj), ];
+  const items = [callback3(require(4127) /* Text */.Text, obj), ];
   obj = { style: tmp.headerDescription, variant: "text-sm/medium", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.string(require(1212) /* getSystemLocale */.t["/k/L/j"]);
-  items[1] = callback3(require(4126) /* Text */.Text, obj);
+  items[1] = callback3(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return callback4(closure_5, obj);
 }
@@ -65,7 +65,7 @@ function GuildTemplatesJoinFooter(trigger) {
   const obj1 = { style: tmp.footerTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
   const intl3 = trigger(1212).intl;
   obj1.children = intl3.string(trigger(1212).t["N+Mi/U"]);
-  const items2 = [callback3(trigger(4126).Text, obj1), ];
+  const items2 = [callback3(trigger(4127).Text, obj1), ];
   const obj2 = {
     variant: "primary",
     grow: true,
@@ -85,7 +85,7 @@ function GuildTemplatesJoinFooter(trigger) {
       arr = arr.push(outer1_9.JOIN_SERVER, {});
     }
   };
-  items2[1] = callback3(trigger(4543).Button, obj2);
+  items2[1] = callback3(trigger(4544).Button, obj2);
   obj.children = items2;
   obj.children = callback4(closure_5, obj);
   return callback3(closure_5, obj);
@@ -94,13 +94,13 @@ function GuildTemplatesItem(guildTemplate) {
   guildTemplate = guildTemplate.guildTemplate;
   const onGuildTemplatePress = guildTemplate.onGuildTemplatePress;
   const obj = {
-    Icon: guildTemplate(11767).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id],
+    Icon: guildTemplate(11737).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id],
     message: guildTemplate.label,
     onPress() {
       return onGuildTemplatePress(guildTemplate);
     }
   };
-  return callback3(onGuildTemplatePress(10086), obj);
+  return callback3(onGuildTemplatePress(10015), obj);
 }
 ({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ getGuildTemplatesMap: closure_7, GuildTemplateId: closure_8 } = GuildTemplateId);

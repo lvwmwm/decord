@@ -1,10 +1,10 @@
-// Module ID: 16025
-// Function ID: 123854
+// Module ID: 16036
+// Function ID: 124022
 // Name: handleInviteAccepted
-// Dependencies: [1348, 3767, 7540, 3831, 1212, 10361, 686, 10913, 2]
+// Dependencies: [1348, 3768, 6636, 3832, 1212, 10294, 686, 10863, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 16025 (handleInviteAccepted)
+// Module 16036 (handleInviteAccepted)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -17,8 +17,8 @@ let result = require("generateAcceptInviteOptions").fileFinishedImporting("modul
 export const DEFAULT_EXPIRATION_DAYS = 7;
 export const DEFAULT_EXPIRATION_USES = 5;
 export const revokeAllFriendInvites = function revokeAllFriendInvites() {
-  let obj = importDefault(7540);
-  importDefault(7540).revokeFriendInvites().then(() => {
+  let obj = importDefault(6636);
+  importDefault(6636).revokeFriendInvites().then(() => {
     let obj = outer1_1(outer1_2[3]);
     obj = { key: "TOAST_FRIEND_INVITES_REVOKED" };
     const intl = outer1_0(outer1_2[4]).intl;
@@ -36,11 +36,11 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
     }
     if (null != dMFromUserId) {
       let obj = { forceTransition: true };
-      importDefault(7540).transitionToInvite(invite, obj);
+      importDefault(6636).transitionToInvite(invite, obj);
       handleInviteAccepted();
-      const obj3 = importDefault(7540);
+      const obj3 = importDefault(6636);
     } else {
-      obj = importDefault(7540);
+      obj = importDefault(6636);
       obj = {
         inviteKey: invite.code,
         context,

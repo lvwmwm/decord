@@ -1,9 +1,9 @@
-// Module ID: 7006
-// Function ID: 56083
+// Module ID: 6024
+// Function ID: 53895
 // Name: patchThread
-// Dependencies: [5, 1352, 1194, 1348, 3758, 7007, 3760, 7017, 653, 1355, 507, 686, 4470, 1212, 4324, 7018, 7019, 7022, 7023, 1327, 1359, 2]
+// Dependencies: [5, 1352, 1194, 1348, 3759, 6025, 3761, 6035, 653, 1355, 507, 686, 4471, 1212, 4325, 6036, 6037, 6040, 6041, 1327, 1359, 2]
 
-// Module 7006 (patchThread)
+// Module 6024 (patchThread)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { createChannelRecordFromServer as closure_4 } from "_callSuper";
 import closure_5 from "_isNativeReflectConstruct";
@@ -213,15 +213,15 @@ export default {
     })();
   },
   openThreadCreationForMobile(channel, id, SUMMARY_ACTION_SHEET) {
-    let obj = require(4324) /* _createForOfIteratorHelperLoose */;
+    let obj = require(4325) /* _createForOfIteratorHelperLoose */;
     obj = { location: SUMMARY_ACTION_SHEET, channel_id: channel.id, guild_id: channel.guild_id };
     obj.trackWithMetadata(constants.THREAD_CREATION_STARTED, obj);
     obj = { parentMessageId: id, isPrivate: false, location: SUMMARY_ACTION_SHEET };
-    importDefault(7018).changeThreadSettings(channel.id, obj);
+    importDefault(6036).changeThreadSettings(channel.id, obj);
     if (null == id) {
       const obj1 = { channelId: channel.id, command: null, section: null };
-      require(7019) /* updateOptionStates */.setActiveCommand(obj1);
-      const obj5 = require(7019) /* updateOptionStates */;
+      require(6037) /* updateOptionStates */.setActiveCommand(obj1);
+      const obj5 = require(6037) /* updateOptionStates */;
     }
   },
   setNotificationSettings(channel, muteSettings) {

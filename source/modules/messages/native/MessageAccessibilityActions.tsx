@@ -1,17 +1,17 @@
-// Module ID: 7744
-// Function ID: 61528
+// Module ID: 7690
+// Function ID: 61496
 // Name: getQuickReactionLabel
-// Dependencies: [4946, 3758, 653, 3803, 7745, 1212, 7752, 2]
+// Dependencies: [4947, 3759, 653, 3804, 7691, 1212, 7698, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 7744 (getQuickReactionLabel)
+// Module 7690 (getQuickReactionLabel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
 
 const require = arg1;
 function getQuickReactionLabel() {
-  const DoubleTapReactionEmoji = require(3803) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+  const DoubleTapReactionEmoji = require(3804) /* explicitContentFromProto */.DoubleTapReactionEmoji;
   const setting = DoubleTapReactionEmoji.getSetting();
   let disableDoubleTap;
   if (null != setting) {
@@ -21,7 +21,7 @@ function getQuickReactionLabel() {
     return null;
   } else {
     if (null != setting) {
-      let obj = require(7745) /* getFallbackDoubleTapDisambiguatedEmoji */;
+      let obj = require(7691) /* getFallbackDoubleTapDisambiguatedEmoji */;
       const result = obj.disambiguatedEmojiFromSettingsValue(setting);
       if (null != result) {
         const intl2 = require(1212) /* getSystemLocale */.intl;

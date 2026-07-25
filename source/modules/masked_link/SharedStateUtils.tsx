@@ -1,10 +1,10 @@
-// Module ID: 12249
-// Function ID: 95712
+// Module ID: 12225
+// Function ID: 95521
 // Name: useUrlParts
-// Dependencies: [57, 31, 8383, 2]
+// Dependencies: [57, 31, 8141, 2]
 // Exports: useModalState
 
-// Module 12249 (useUrlParts)
+// Module 12225 (useUrlParts)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

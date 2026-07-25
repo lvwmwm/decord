@@ -1,10 +1,10 @@
-// Module ID: 12758
-// Function ID: 99299
+// Module ID: 12769
+// Function ID: 99426
 // Name: NUFActionSheetTemplate
-// Dependencies: [31, 27, 33, 4130, 689, 4126, 4543, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4127, 4544, 2]
 // Exports: default
 
-// Module 12758 (NUFActionSheetTemplate)
+// Module 12769 (NUFActionSheetTemplate)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,11 +36,11 @@ export default function NUFActionSheetTemplate(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
-  const items = [callback(require(4126) /* Text */.Text, obj), , , ];
+  const items = [callback(require(4127) /* Text */.Text, obj), , , ];
   obj = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: description };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   items[2] = callback(closure_3, { source: imageSrc, style: tmp.image });
-  items[3] = callback(require(4543) /* Button */.Button, { text: CTALabel, size: "md", onPress: onCTAPress, grow: true });
+  items[3] = callback(require(4544) /* Button */.Button, { text: CTALabel, size: "md", onPress: onCTAPress, grow: true });
   obj.children = items;
   return callback2(closure_2, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10326
-// Function ID: 79701
+// Module ID: 10259
+// Function ID: 79354
 // Name: NotificationSettingsMockMessage
-// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 566, 3969, 3991, 4131, 4134, 4126, 1212, 1273, 10327, 2]
+// Dependencies: [31, 27, 1850, 653, 33, 4131, 689, 566, 3970, 3992, 4132, 4135, 4127, 1212, 1273, 10260, 2]
 // Exports: default
 
-// Module 10326 (NotificationSettingsMockMessage)
+// Module 10259 (NotificationSettingsMockMessage)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,27 +32,27 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  let obj1 = sharedValue(3969);
+  let obj1 = sharedValue(3970);
   const name = obj1.getName(stateFromStores);
   let str = "Roka";
   if (null != name) {
     str = name;
   }
   require = tmp4;
-  let obj2 = require(3991);
+  let obj2 = require(3992);
   let num = 0;
   if (notificationSetting.notificationSetting === UserNotificationSettings.NO_MESSAGES) {
     num = 0.8;
   }
   sharedValue = obj2.useSharedValue(num);
-  let obj3 = require(3991);
+  let obj3 = require(3992);
   const fn = function _() {
     const obj = {};
     const value = sharedValue.get();
     obj.opacity = tmp4(outer1_2[10]).withTiming(value, tmp4(outer1_2[11]).timingStandard);
     return obj;
   };
-  obj = { withTiming: require(4131) /* withTiming */.withTiming, opacity: sharedValue, timingStandard: require(4134) /* timingNone */.timingStandard };
+  obj = { withTiming: require(4132) /* withTiming */.withTiming, opacity: sharedValue, timingStandard: require(4135) /* timingNone */.timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 6531430956793;
   fn.__initData = closure_10;
@@ -61,18 +61,18 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
     obj = { variant: "text-sm/medium", color: "text-default" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(require(1212) /* getSystemLocale */.t.WYyzI5);
-    let tmp10 = callback(require(4126) /* Text */.Text, obj);
+    let tmp10 = callback(require(4127) /* Text */.Text, obj);
   } else {
     obj1 = {};
     obj2 = { variant: "text-sm/medium", color: "text-default" };
     obj3 = { variant: "text-sm/normal", color: "text-link" };
     const items1 = ["@", str, " "];
     obj3.children = items1;
-    const items2 = [callback2(require(4126) /* Text */.Text, obj3), ];
+    const items2 = [callback2(require(4127) /* Text */.Text, obj3), ];
     const intl3 = require(1212) /* getSystemLocale */.intl;
     items2[1] = intl3.string(require(1212) /* getSystemLocale */.t.WYyzI5);
     obj2.children = items2;
-    obj1.children = callback2(require(4126) /* Text */.Text, obj2);
+    obj1.children = callback2(require(4127) /* Text */.Text, obj2);
     tmp10 = callback(View, obj1);
   }
   const items3 = [sharedValue, notificationSetting.notificationSetting === UserNotificationSettings.NO_MESSAGES];
@@ -86,20 +86,20 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   const obj4 = { style: tmp.card };
   const obj5 = { style: tmp.cardContent };
   const obj6 = {};
-  const obj7 = { source: sharedValue(10327), size: require(1273) /* Button */.AvatarSizes.LARGE_48 };
+  const obj7 = { source: sharedValue(10260), size: require(1273) /* Button */.AvatarSizes.LARGE_48 };
   obj6.children = callback(require(1273) /* Button */.Avatar, obj7);
   const items4 = [callback(View, obj6), ];
   const obj8 = { style: tmp.cardMessage };
   const obj9 = { variant: "text-sm/semibold" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj9.children = intl2.string(require(1212) /* getSystemLocale */.t.qSq0tD);
-  const items5 = [callback(require(4126) /* Text */.Text, obj9), tmp10];
+  const items5 = [callback(require(4127) /* Text */.Text, obj9), tmp10];
   obj8.children = items5;
   items4[1] = callback2(View, obj8);
   obj5.children = items4;
   const items6 = [callback2(View, obj5), ];
   const items7 = [animatedStyle, tmp.overlay];
-  items6[1] = callback(sharedValue(3991).View, { style: items7 });
+  items6[1] = callback(sharedValue(3992).View, { style: items7 });
   obj4.children = items6;
   return callback2(View, obj4);
 };

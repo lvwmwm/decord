@@ -1,10 +1,10 @@
-// Module ID: 13702
-// Function ID: 105172
+// Module ID: 13713
+// Function ID: 105299
 // Name: trackSafetySettingsNoticeAnalytics
 // Dependencies: [653, 675, 2]
 // Exports: trackSafetySettingsNoticeAnalytics
 
-// Module 13702 (trackSafetySettingsNoticeAnalytics)
+// Module 13713 (trackSafetySettingsNoticeAnalytics)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/safety_common/SafetySettingsUtils.tsx");

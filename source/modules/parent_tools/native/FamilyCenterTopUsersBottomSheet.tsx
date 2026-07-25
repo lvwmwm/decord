@@ -1,10 +1,10 @@
-// Module ID: 13851
-// Function ID: 106073
+// Module ID: 13862
+// Function ID: 106200
 // Name: UserRow
-// Dependencies: [31, 1849, 33, 4130, 6827, 5165, 3969, 1273, 5498, 4126, 1212, 2198, 5501, 2]
+// Dependencies: [31, 1850, 33, 4131, 5827, 5164, 3970, 1273, 5498, 4127, 1212, 2199, 5501, 2]
 // Exports: default
 
-// Module 13851 (UserRow)
+// Module 13862 (UserRow)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -19,12 +19,12 @@ function UserRow(userActivity) {
   if (null == user) {
     return null;
   } else {
-    let obj = require(6827) /* getActivityTypeTextConfigs */;
+    let obj = require(5827) /* getActivityTypeTextConfigs */;
     const topUserOrGuildDescription = obj.getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
-    obj = { label: importDefault(3969).getName(user), subLabel: topUserOrGuildDescription };
+    obj = { label: importDefault(3970).getName(user), subLabel: topUserOrGuildDescription };
     obj = { size: require(1273) /* Button */.AvatarSizes.SMALL, user, guildId: undefined };
     obj.icon = callback(require(1273) /* Button */.Avatar, obj);
-    return callback(require(5165) /* TableRowInner */.TableRow, obj);
+    return callback(require(5164) /* TableRowInner */.TableRow, obj);
   }
 }
 ({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
@@ -36,8 +36,8 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   let obj = {};
   obj = { variant: "text-md/bold", style: callback3().header };
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(importDefault(2198).BxbvS7);
-  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  obj.children = intl.string(importDefault(2199).BxbvS7);
+  const items = [callback(require(4127) /* Text */.Text, obj), ];
   obj = { hasIcons: true, children: topUserActivities.map((userActivity) => outer1_4(outer1_7, { userActivity }, userActivity.user_id)) };
   items[1] = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
   obj.children = items;

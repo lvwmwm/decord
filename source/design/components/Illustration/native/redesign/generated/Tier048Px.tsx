@@ -1,17 +1,17 @@
-// Module ID: 12491
-// Function ID: 96893
+// Module ID: 12472
+// Function ID: 96744
 // Name: getTier048PxSource
-// Dependencies: [31, 27, 33, 7405, 12492, 12493, 12494, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 12473, 12474, 12475, 3977, 2]
 // Exports: Tier048Px
 
-// Module 12491 (getTier048PxSource)
+// Module 12472 (getTier048PxSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getTier048PxSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getTier048PxSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useTier048PxSource() {
-  return getTier048PxSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getTier048PxSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Tier048Px.tsx");
 

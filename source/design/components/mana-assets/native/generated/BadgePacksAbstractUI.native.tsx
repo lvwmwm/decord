@@ -1,10 +1,10 @@
-// Module ID: 5892
-// Function ID: 49803
+// Module ID: 6812
+// Function ID: 59453
 // Name: BadgePacksAbstractUI
-// Dependencies: [33, 5085, 5893, 2]
+// Dependencies: [33, 5085, 6813, 2]
 // Exports: BadgePacksAbstractUI
 
-// Module 5892 (BadgePacksAbstractUI)
+// Module 6812 (BadgePacksAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BadgePacksAbstractUI.native.tsx");
@@ -27,7 +27,7 @@ export const BadgePacksAbstractUI = function BadgePacksAbstractUI(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5893) };
+  obj = { uri: importDefault(6813) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

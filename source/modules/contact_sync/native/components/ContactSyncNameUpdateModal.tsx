@@ -1,10 +1,10 @@
-// Module ID: 13799
-// Function ID: 105763
+// Module ID: 13810
+// Function ID: 105890
 // Name: onClose
-// Dependencies: [5, 57, 31, 27, 11734, 33, 4337, 4130, 689, 5084, 11736, 11740, 3831, 1212, 9212, 11753, 5087, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 11704, 33, 4338, 4131, 689, 5084, 11706, 11710, 3832, 1212, 9104, 11723, 5087, 5517, 2]
 // Exports: default
 
-// Module 13799 (onClose)
+// Module 13810 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -16,7 +16,7 @@ import HeaderBackImage from "HeaderBackImage";
 
 const require = arg1;
 function onClose() {
-  let arr = importDefault(4337);
+  let arr = importDefault(4338);
   arr = arr.pop();
 }
 function ContactSyncNameInputScreen() {

@@ -1,9 +1,9 @@
-// Module ID: 10889
-// Function ID: 84551
+// Module ID: 10839
+// Function ID: 84141
 // Name: ChannelLatestMessageLoadingStatsManager
-// Dependencies: [6, 7, 653, 6700, 2]
+// Dependencies: [6, 7, 653, 5696, 2]
 
-// Module 10889 (ChannelLatestMessageLoadingStatsManager)
+// Module 10839 (ChannelLatestMessageLoadingStatsManager)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { AnalyticEvents } from "ME";

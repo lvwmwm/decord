@@ -1,10 +1,10 @@
-// Module ID: 3807
-// Function ID: 31384
+// Module ID: 3808
+// Function ID: 31395
 // Name: makeUpdateSettingFunction
 // Dependencies: [1279, 1316, 662, 1331, 566, 686, 2]
 // Exports: defineProtoSetting, wrapSettingWithExperimentDefaults, wrapSettingWithOverride, wrapSettingWithSelectiveSyncing
 
-// Module 3807 (makeUpdateSettingFunction)
+// Module 3808 (makeUpdateSettingFunction)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { UserSettingsDelay } from "MAX_FAVORITES";

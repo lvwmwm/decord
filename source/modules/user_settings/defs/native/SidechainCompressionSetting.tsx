@@ -1,9 +1,9 @@
-// Module ID: 14197
-// Function ID: 109184
+// Module ID: 14208
+// Function ID: 109311
 // Name: toggle
-// Dependencies: [4177, 7751, 4191, 566, 10127, 1212, 8882, 2]
+// Dependencies: [4178, 7697, 4192, 566, 10059, 1212, 8770, 2]
 
-// Module 14197 (toggle)
+// Module 14208 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Features } from "DesktopSources";
 import createToggle from "createToggle";
@@ -23,7 +23,7 @@ createToggle = {
     return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getSidechainCompression());
   },
   onValueChange(sidechainCompression) {
-    return importDefault(8882).setSidechainCompression(sidechainCompression);
+    return importDefault(8770).setSidechainCompression(sidechainCompression);
   },
   useDescription() {
     const intl = require(1212) /* getSystemLocale */.intl;

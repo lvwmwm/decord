@@ -1,10 +1,10 @@
-// Module ID: 6717
-// Function ID: 52232
+// Module ID: 5713
+// Function ID: 49545
 // Name: isLimitedChannel
-// Dependencies: [1348, 4051, 653, 2]
+// Dependencies: [1348, 4052, 653, 2]
 // Exports: isLimitedChannelId
 
-// Module 6717 (isLimitedChannel)
+// Module 5713 (isLimitedChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import { ChannelTypes } from "ME";

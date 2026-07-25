@@ -1,9 +1,9 @@
-// Module ID: 15634
-// Function ID: 120479
+// Module ID: 15644
+// Function ID: 120607
 // Name: LeftAlignedHeaderTitle
-// Dependencies: [57, 31, 27, 1921, 13603, 653, 33, 9149, 4130, 689, 4126, 1457, 12397, 15635, 5793, 624, 5462, 5482, 13606, 6707, 14624, 5517, 13136, 3834, 4660, 1212, 15177, 15636, 13607, 15637, 44, 2]
+// Dependencies: [57, 31, 27, 1922, 13614, 653, 33, 9041, 4131, 689, 4127, 1457, 12374, 15645, 6449, 624, 5462, 5482, 13617, 5703, 14635, 5517, 13147, 3835, 4661, 1212, 15187, 15646, 13618, 15647, 44, 2]
 
-// Module 15634 (LeftAlignedHeaderTitle)
+// Module 15644 (LeftAlignedHeaderTitle)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import { View } from "useAutoSettingsSearchSessionAnalytics";
@@ -21,7 +21,7 @@ let closure_9;
 let require = arg1;
 function LeftAlignedHeaderTitle(title) {
   const obj = { lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: callback4().headerContainer, children: title.title };
-  return callback2(require(4126) /* Text */.Heading, obj);
+  return callback2(require(4127) /* Text */.Heading, obj);
 }
 ({ AnalyticsPages: closure_8, UserSettingsSections: closure_9 } = ME);
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);

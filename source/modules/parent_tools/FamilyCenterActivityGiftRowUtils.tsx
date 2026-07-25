@@ -1,13 +1,13 @@
-// Module ID: 13858
-// Function ID: 106110
+// Module ID: 13869
+// Function ID: 106237
 // Name: formatGiftDate
-// Dependencies: [1212, 3355, 5616, 2198, 2]
+// Dependencies: [1212, 3356, 5616, 2199, 2]
 // Exports: getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 13858 (formatGiftDate)
+// Module 13869 (formatGiftDate)
 function formatGiftDate(offeredAt) {
   const dateTimeFormat = new Intl.DateTimeFormat(require(1212) /* getSystemLocale */.intl.currentLocale, { month: "short", day: "numeric" });
-  return dateTimeFormat.format(require(3355).parseISO(offeredAt));
+  return dateTimeFormat.format(require(3356).parseISO(offeredAt));
 }
 const result = require("formatSingleCurrencyPrice").fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
 
@@ -30,12 +30,12 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
     if (null != gifterName) {
       const intl = require(1212) /* getSystemLocale */.intl;
       obj = { price: formatPriceResult, username: gifterName };
-      let formatToPlainStringResult = intl.formatToPlainString(importDefault(2198)["o44n/1"], obj);
+      let formatToPlainStringResult = intl.formatToPlainString(importDefault(2199)["o44n/1"], obj);
     }
     const items = [formatToPlainStringResult, ];
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const tmp11 = importDefault(2198);
+    const tmp11 = importDefault(2199);
     if (claimed.claimed) {
       obj = {};
       if (null != claimedAt) {

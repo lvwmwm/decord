@@ -1,10 +1,10 @@
-// Module ID: 6172
-// Function ID: 50223
+// Module ID: 7092
+// Function ID: 59873
 // Name: GemLevel1SpotIllustration
-// Dependencies: [33, 5085, 6173, 2]
+// Dependencies: [33, 5085, 7093, 2]
 // Exports: GemLevel1SpotIllustration
 
-// Module 6172 (GemLevel1SpotIllustration)
+// Module 7092 (GemLevel1SpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel1SpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const GemLevel1SpotIllustration = function GemLevel1SpotIllustration(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6173) };
+  obj = { uri: importDefault(7093) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

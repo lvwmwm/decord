@@ -1,10 +1,10 @@
-// Module ID: 11148
-// Function ID: 86760
+// Module ID: 11108
+// Function ID: 86398
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [7, 6, 31, 5039, 1352, 1907, 1917, 1910, 3767, 1849, 4567, 22, 1327, 4320, 4974, 1881, 6923, 2]
+// Dependencies: [7, 6, 31, 5040, 1352, 1908, 1918, 1911, 3768, 1850, 4568, 22, 1327, 4321, 4975, 1882, 5914, 2]
 // Exports: parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 11148 (_createForOfIteratorHelperLoose)
+// Module 11108 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import result from "result";
 import closure_5 from "_isNativeReflectConstruct";
@@ -134,14 +134,14 @@ function getChannels(getGuildId, arr) {
     }
     tmp2 = null == arr || arr.includes(getGuildId.type);
     return guildId(22)(items).map((id) => {
-      const obj = { id: id.id, text: arr(4320).computeChannelName(id, outer1_11, outer1_10) };
+      const obj = { id: id.id, text: arr(4321).computeChannelName(id, outer1_11, outer1_10) };
       return obj;
     });
   } else {
     const dependencyMap = textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId);
     const tmp9 = guildId(22);
-    const tmp9Result = guildId(22)(_require(4974).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
-    const combined = guildId(22)(_require(4974).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).flatMap((arg0) => outer1_7.getChannels(guildId)[arg0].map((channel) => channel.channel)).concat(closure_5.computeAllActiveJoinedThreads(guildId));
+    const tmp9Result = guildId(22)(_require(4975).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+    const combined = guildId(22)(_require(4975).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).flatMap((arg0) => outer1_7.getChannels(guildId)[arg0].map((channel) => channel.channel)).concat(closure_5.computeAllActiveJoinedThreads(guildId));
     const found = combined.filter((type) => {
       let hasItem = null == arr;
       if (!hasItem) {
@@ -152,8 +152,8 @@ function getChannels(getGuildId, arr) {
     return found.map((id) => {
       const obj = { id: id.id };
       if (!outer1_6(id.type)) {
-        let channelName = arr(4320).computeChannelName(id, outer1_11, outer1_10);
-        const obj2 = arr(4320);
+        let channelName = arr(4321).computeChannelName(id, outer1_11, outer1_10);
+        const obj2 = arr(4321);
       } else {
         channelName = undefined;
         if (null != dependencyMap[id.id]) {
@@ -299,7 +299,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
     return {};
   } else {
     let obj = {};
-    const parserState = require(6923) /* _createForOfIteratorHelperLoose */.createParserState(channel);
+    const parserState = require(5914) /* _createForOfIteratorHelperLoose */.createParserState(channel);
     const tmp8 = _createForOfIteratorHelperLoose(activeCommand.options);
     let iter2 = tmp8();
     if (!iter2.done) {
@@ -310,13 +310,13 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
           if ("text" === tmp[0].type) {
             let tmp9 = require;
             let tmp10 = dependencyMap;
-            if (value.type === require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.STRING) {
+            if (value.type === require(1882) /* PermissionOverwriteType */.ApplicationCommandOptionType.STRING) {
               if (null == value.choices) {
                 if (!value.autocomplete) {
                   obj = { type: "text" };
                   let tmp2 = importDefault;
                   let tmp3 = dependencyMap;
-                  let obj2 = importDefault(6923);
+                  let obj2 = importDefault(5914);
                   obj.text = obj2.parse(channel, tmp[0].text, parserState).content;
                   let items = [obj];
                   obj[value.name] = items;

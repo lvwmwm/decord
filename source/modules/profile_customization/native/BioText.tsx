@@ -1,10 +1,10 @@
-// Module ID: 11915
-// Function ID: 92241
+// Module ID: 11891
+// Function ID: 92046
 // Name: LinkButton
-// Dependencies: [31, 27, 653, 1905, 33, 4130, 3827, 675, 4126, 9051, 477, 1904, 1212, 2]
+// Dependencies: [31, 27, 653, 1906, 33, 4131, 3828, 675, 4127, 8939, 477, 1905, 1212, 2]
 // Exports: default
 
-// Module 11915 (LinkButton)
+// Module 11891 (LinkButton)
 import result from "result";
 import { Pressable } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -29,7 +29,7 @@ function LinkButton(arg0) {
       outer1_1(outer1_2[7]).track(outer1_5.CHANGE_LOG_CTA_CLICKED, obj);
     },
     style: tmp.link,
-    children: callback(require(4126) /* Text */.Text, obj)
+    children: callback(require(4127) /* Text */.Text, obj)
   };
   obj = { variant: "text-md/normal", color: "text-link", lineClamp, style: tmp.link };
   const items = ["\n", text];

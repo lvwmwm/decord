@@ -1,10 +1,10 @@
-// Module ID: 5652
-// Function ID: 48348
+// Module ID: 5997
+// Function ID: 53356
 // Name: useIsRemote
-// Dependencies: [4144, 566, 2]
+// Dependencies: [4145, 566, 2]
 // Exports: default
 
-// Module 5652 (useIsRemote)
+// Module 5997 (useIsRemote)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

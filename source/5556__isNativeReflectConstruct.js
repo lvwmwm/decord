@@ -1,5 +1,5 @@
 // Module ID: 5556
-// Function ID: 47192
+// Function ID: 47197
 // Name: _isNativeReflectConstruct
 // Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 33, 5557, 5558, 5522, 5554, 5559, 5567, 5568, 5569]
 // Exports: getIsModalPresentation

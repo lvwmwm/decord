@@ -1,10 +1,10 @@
-// Module ID: 5982
-// Function ID: 49938
+// Module ID: 6902
+// Function ID: 59588
 // Name: DeprecatedPaintPaletteSpotIllustration
-// Dependencies: [33, 5085, 5983, 2]
+// Dependencies: [33, 5085, 6903, 2]
 // Exports: DeprecatedPaintPaletteSpotIllustration
 
-// Module 5982 (DeprecatedPaintPaletteSpotIllustration)
+// Module 6902 (DeprecatedPaintPaletteSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DeprecatedPaintPaletteSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const DeprecatedPaintPaletteSpotIllustration = function DeprecatedPaintPa
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5983) };
+  obj = { uri: importDefault(6903) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

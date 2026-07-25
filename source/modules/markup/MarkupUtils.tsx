@@ -1,9 +1,9 @@
-// Module ID: 4120
-// Function ID: 34098
+// Module ID: 4121
+// Function ID: 34109
 // Name: combineAndInjectMentionRule
-// Dependencies: [4121, 4564, 22, 4565, 7763, 2]
+// Dependencies: [4122, 4565, 22, 4566, 7709, 2]
 
-// Module 4120 (combineAndInjectMentionRule)
+// Module 4121 (combineAndInjectMentionRule)
 import importDefaultResult from "apply";
 import importDefaultResult1 from "apply";
 import importDefaultResult2 from "apply";
@@ -34,20 +34,20 @@ import importDefaultResult26 from "apply";
 
 function combineAndInjectMentionRule(RULES, items, arg2) {
   items = [RULES, ];
-  const tmp = importDefault(4564);
+  const tmp = importDefault(4565);
   items[HermesBuiltin.arraySpread(items, 1)] = {};
   return tmp(items);
 }
 let closure_3 = ["url", "autolink", "link", "mailto", "tel"];
 let obj = { enableBuildOverrides: false, enableEmojiClick: true };
 let closure_5 = require("apply").once(() => {
-  const items = [importDefault(4121)({ enableBuildOverrides: true })];
-  return combineAndInjectMentionRule(importDefault(4565).RULES, items);
+  const items = [importDefault(4122)({ enableBuildOverrides: true })];
+  return combineAndInjectMentionRule(importDefault(4566).RULES, items);
 });
 let closure_6 = require("apply").once(() => {
   const obj = importDefault(22);
-  const items = [importDefault(4121)(obj)];
-  return obj.omit(combineAndInjectMentionRule(importDefault(4565).RULES, items), "paragraph", "newline");
+  const items = [importDefault(4122)(obj)];
+  return obj.omit(combineAndInjectMentionRule(importDefault(4566).RULES, items), "paragraph", "newline");
 });
 let closure_7 = require("apply").once(() => {
   let obj = {};
@@ -55,70 +55,70 @@ let closure_7 = require("apply").once(() => {
   obj["emojiTooltipPosition"] = "bottom";
   obj["shouldCloseDefaultModals"] = true;
   obj["shouldStopPropagation"] = true;
-  const items = [importDefault(4121)(obj), ];
+  const items = [importDefault(4122)(obj), ];
   obj = {};
-  obj = { react: importDefault(4565).RULES.text.react };
+  obj = { react: importDefault(4566).RULES.text.react };
   obj.codeBlock = obj;
   items[1] = obj;
-  return combineAndInjectMentionRule(importDefault(4565).CHANNEL_TOPIC_RULES, items, { shouldStopPropagation: true });
+  return combineAndInjectMentionRule(importDefault(4566).CHANNEL_TOPIC_RULES, items, { shouldStopPropagation: true });
 });
 let closure_8 = require("apply").once(() => {
   const obj = {};
   const merged = Object.assign(obj);
   obj["enableEmojiClick"] = false;
-  const items = [importDefault(4121)(obj)];
-  return combineAndInjectMentionRule(importDefault(4565).VOICE_CHANNEL_STATUS_RULES, items);
+  const items = [importDefault(4122)(obj)];
+  return combineAndInjectMentionRule(importDefault(4566).VOICE_CHANNEL_STATUS_RULES, items);
 });
 let closure_9 = require("apply").once(() => {
-  const items = [importDefault(4121)(obj)];
-  return combineAndInjectMentionRule(importDefault(4565).EMBED_TITLE_RULES, items);
+  const items = [importDefault(4122)(obj)];
+  return combineAndInjectMentionRule(importDefault(4566).EMBED_TITLE_RULES, items);
 });
 let closure_10 = require("apply").once(() => {
   const obj = importDefault(22);
-  const items = [importDefault(4121)(obj)];
-  return obj.omit(combineAndInjectMentionRule(importDefault(4565).EMBED_TITLE_RULES, items), closure_3);
+  const items = [importDefault(4122)(obj)];
+  return obj.omit(combineAndInjectMentionRule(importDefault(4566).EMBED_TITLE_RULES, items), closure_3);
 });
 let closure_11 = require("apply").once(() => {
-  const items = [importDefault(4121)(obj)];
-  return combineAndInjectMentionRule(importDefault(4565).INLINE_REPLY_RULES, items);
+  const items = [importDefault(4122)(obj)];
+  return combineAndInjectMentionRule(importDefault(4566).INLINE_REPLY_RULES, items);
 });
 let closure_12 = require("apply").once(() => {
-  const items = [importDefault(4121)(obj)];
-  return combineAndInjectMentionRule(importDefault(4565).GUILD_VERIFICATION_FORM_RULES, items);
+  const items = [importDefault(4122)(obj)];
+  return combineAndInjectMentionRule(importDefault(4566).GUILD_VERIFICATION_FORM_RULES, items);
 });
 let closure_13 = require("apply").once(() => {
   const obj = {};
   const merged = Object.assign(obj);
   obj["shouldStopPropagation"] = true;
-  const items = [importDefault(4121)(obj)];
-  return combineAndInjectMentionRule(importDefault(4565).GUILD_EVENT_RULES, items, obj);
+  const items = [importDefault(4122)(obj)];
+  return combineAndInjectMentionRule(importDefault(4566).GUILD_EVENT_RULES, items, obj);
 });
 let closure_14 = require("apply").once(() => {
-  const items = [importDefault(4121)(obj)];
-  return combineAndInjectMentionRule(importDefault(4565).AUTO_MODERATION_SYSTEM_MESSAGE_RULES, items);
+  const items = [importDefault(4122)(obj)];
+  return combineAndInjectMentionRule(importDefault(4566).AUTO_MODERATION_SYSTEM_MESSAGE_RULES, items);
 });
 let closure_15 = require("apply").once(() => {
-  const items = [importDefault(4121)(obj)];
-  const items1 = [combineAndInjectMentionRule(importDefault(4565).RULES, items), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "list", "heading", "subtext", ...closure_3];
+  const items = [importDefault(4122)(obj)];
+  const items1 = [combineAndInjectMentionRule(importDefault(4566).RULES, items), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "list", "heading", "subtext", ...closure_3];
   return importDefault(22).omit.apply(items1);
 });
 obj = { text: require("parseLink").RULES.text };
-let closure_16 = require("apply").once(() => importAll(7763).reactParserFor(callback()));
-let closure_17 = require("apply").once(() => importAll(7763).reactParserFor(callback3()));
-let closure_18 = require("apply").once(() => importAll(7763).reactParserFor(callback4()));
-let closure_19 = require("apply").once(() => importAll(7763).reactParserFor(callback5()));
-let closure_20 = require("apply").once(() => importAll(7763).reactParserFor(callback6()));
-let closure_21 = require("apply").once(() => importAll(7763).reactParserFor(callback7()));
-let closure_22 = require("apply").once(() => importAll(7763).reactParserFor(callback8()));
-let closure_23 = require("apply").once(() => importAll(7763).reactParserFor(callback9()));
-let closure_24 = require("apply").once(() => importAll(7763).reactParserFor(callback10()));
-let closure_25 = require("apply").once(() => importAll(7763).reactParserFor(callback2()));
-let closure_26 = require("apply").once(() => importAll(7763).astParserFor(callback()));
-let closure_27 = require("apply").once(() => importAll(7763).astParserFor(callback3()));
-let closure_28 = require("apply").once(() => importAll(7763).astParserFor(callback5()));
-let closure_29 = require("apply").once(() => importAll(7763).astParserFor(callback6()));
-let closure_30 = require("apply").once(() => importAll(7763).astParserFor(callback7()));
-let closure_31 = require("apply").once(() => importAll(7763).astParserFor(callback10()));
+let closure_16 = require("apply").once(() => importAll(7709).reactParserFor(callback()));
+let closure_17 = require("apply").once(() => importAll(7709).reactParserFor(callback3()));
+let closure_18 = require("apply").once(() => importAll(7709).reactParserFor(callback4()));
+let closure_19 = require("apply").once(() => importAll(7709).reactParserFor(callback5()));
+let closure_20 = require("apply").once(() => importAll(7709).reactParserFor(callback6()));
+let closure_21 = require("apply").once(() => importAll(7709).reactParserFor(callback7()));
+let closure_22 = require("apply").once(() => importAll(7709).reactParserFor(callback8()));
+let closure_23 = require("apply").once(() => importAll(7709).reactParserFor(callback9()));
+let closure_24 = require("apply").once(() => importAll(7709).reactParserFor(callback10()));
+let closure_25 = require("apply").once(() => importAll(7709).reactParserFor(callback2()));
+let closure_26 = require("apply").once(() => importAll(7709).astParserFor(callback()));
+let closure_27 = require("apply").once(() => importAll(7709).astParserFor(callback3()));
+let closure_28 = require("apply").once(() => importAll(7709).astParserFor(callback5()));
+let closure_29 = require("apply").once(() => importAll(7709).astParserFor(callback6()));
+let closure_30 = require("apply").once(() => importAll(7709).astParserFor(callback7()));
+let closure_31 = require("apply").once(() => importAll(7709).astParserFor(callback10()));
 obj = { combineAndInjectMentionRule, createReactRules: require("MarkupText"), defaultReactRuleOptions: obj };
 Object.defineProperty(obj, "defaultRules", { get: () => callback(), set: undefined });
 Object.defineProperty(obj, "guildEventRules", { get: () => callback9(), set: undefined });

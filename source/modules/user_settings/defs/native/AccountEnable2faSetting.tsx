@@ -1,9 +1,9 @@
-// Module ID: 13734
-// Function ID: 105370
+// Module ID: 13745
+// Function ID: 105497
 // Name: pressable
-// Dependencies: [1849, 7751, 13699, 13735, 4470, 1212, 10127, 2]
+// Dependencies: [1850, 7697, 13710, 13746, 4471, 1212, 10059, 2]
 
-// Module 13734 (pressable)
+// Module 13745 (pressable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -22,11 +22,11 @@ createToggle = {
     }
     if (null != verified) {
       if (verified) {
-        importDefault(13735).open();
-        const obj3 = importDefault(13735);
+        importDefault(13746).open();
+        const obj3 = importDefault(13746);
       }
     }
-    let obj = importDefault(4470);
+    let obj = importDefault(4471);
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t.v740sh);
@@ -36,7 +36,7 @@ createToggle = {
   },
   withArrow: true,
   usePredicate: function useHasAccountEnable2FASetting() {
-    return !require(13699) /* useIs2FAEnabled */.useIsTOTPEnabled();
+    return !require(13710) /* useIs2FAEnabled */.useIsTOTPEnabled();
   }
 };
 createToggle = createToggle.createPressable(createToggle);

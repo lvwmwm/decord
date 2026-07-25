@@ -1,10 +1,10 @@
-// Module ID: 8007
-// Function ID: 63329
+// Module ID: 5669
+// Function ID: 48562
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 5, 31, 8008, 1921, 1194, 1348, 1917, 1838, 1849, 8009, 4566, 653, 3, 8010, 8011, 6753, 6754, 5048, 44, 8012, 675, 1881, 8015, 566, 686, 8016, 8017, 1331, 8220, 6755, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 5, 31, 5670, 1922, 1194, 1348, 1918, 1838, 1850, 5671, 4567, 653, 3, 5672, 5673, 5674, 5675, 5049, 44, 5677, 675, 1882, 5680, 566, 686, 5681, 5682, 1331, 7963, 5676, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, useDiscoveryState, useGuildIndexState
 
-// Module 8007 (_isNativeReflectConstruct)
+// Module 5669 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import asyncGeneratorStep from "asyncGeneratorStep";
 import result from "result";
@@ -264,7 +264,7 @@ function handleFetchSuccess(arg0) {
             let obj1 = {};
             let tmp7 = id;
             let tmp8 = dependencyMap;
-            let obj2 = id(6753);
+            let obj2 = id(5674);
             let tmp9 = toApplication;
             let tmp10 = obj1;
             let merged = Object.assign(obj2.getApplicationCommandSection(toApplication(value), false));
@@ -272,7 +272,7 @@ function handleFetchSuccess(arg0) {
             if (null != value.permissions) {
               let tmp13 = id;
               let tmp14 = dependencyMap;
-              let obj3 = id(6754);
+              let obj3 = id(5675);
               let tmp15 = toServerPermissions;
               keyPermissionsResult = obj3.keyPermissions(toServerPermissions(value.permissions, id));
             }
@@ -301,13 +301,13 @@ function handleFetchSuccess(arg0) {
       tmp17 = set.size > 0;
     }
     if (tmp17) {
-      let obj4 = importDefault(5048);
+      let obj4 = importDefault(5049);
       const items = [];
       HermesBuiltin.arraySpread(set, 0);
       const membersById = obj4.requestMembersById(target.guildId, items);
     }
     const application_commands = index.application_commands;
-    const tmp27 = _createForOfIteratorHelperLoose(id(6753).buildApplicationCommands(application_commands.map((description_default) => {
+    const tmp27 = _createForOfIteratorHelperLoose(id(5674).buildApplicationCommands(application_commands.map((description_default) => {
       let name_default;
       const obj = {};
       const merged = Object.assign(description_default);
@@ -490,7 +490,7 @@ function useUserIndexState(arg0, allowFetch) {
         tmp = callback;
       }
       if (tmp) {
-        let obj = callback(8011);
+        let obj = callback(5673);
         obj = { type: "user" };
         const applicationCommandIndex = obj.requestApplicationCommandIndex(obj);
       }
@@ -583,7 +583,7 @@ function queryIndex(allowApplicationCommands) {
   let userState;
   ({ permissionContext, contextState, userState, applicationStates, text, builtIns } = allowApplicationCommands);
   if (builtIns === undefined) {
-    builtIns = NONE(8015).BuiltInCommandFilter.ALLOW;
+    builtIns = NONE(5680).BuiltInCommandFilter.ALLOW;
   }
   let flag = allowApplicationCommands.allowApplicationCommands;
   if (flag === undefined) {
@@ -595,7 +595,7 @@ function queryIndex(allowApplicationCommands) {
   }
   NONE = allowApplicationCommands.scoreMethod;
   if (NONE === undefined) {
-    NONE = NONE(8015).ScoreMethod.NONE;
+    NONE = NONE(5680).ScoreMethod.NONE;
   }
   let sortOptions = allowApplicationCommands.sortOptions;
   if (sortOptions === undefined) {
@@ -614,9 +614,9 @@ function queryIndex(allowApplicationCommands) {
   if (null != formatted) {
     parts = formatted.split(" ");
   }
-  if (builtIns !== NONE(8015).BuiltInCommandFilter.DENY) {
-    let obj = NONE(8017);
-    let builtInCommands = obj.getBuiltInCommands(permissionContext.commandTypes, true, builtIns === NONE(8015).BuiltInCommandFilter.ONLY_TEXT);
+  if (builtIns !== NONE(5680).BuiltInCommandFilter.DENY) {
+    let obj = NONE(5682);
+    let builtInCommands = obj.getBuiltInCommands(permissionContext.commandTypes, true, builtIns === NONE(5680).BuiltInCommandFilter.ONLY_TEXT);
   } else {
     builtInCommands = [];
   }
@@ -846,7 +846,7 @@ function queryIndex(allowApplicationCommands) {
     return outer1_62(section.section.name, section2.section.name);
   });
   if (builtInCommands.length > 0) {
-    const tmp66 = queryIndexSection(NONE(8017).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
+    const tmp66 = queryIndexSection(NONE(5682).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
     if (null != tmp66) {
       items.push(tmp66);
     }
@@ -861,7 +861,7 @@ function queryIndex(allowApplicationCommands) {
       return obj;
     });
   });
-  if (NONE === NONE(8015).ScoreMethod.COMMAND_ONLY) {
+  if (NONE === NONE(5680).ScoreMethod.COMMAND_ONLY) {
     const context = permissionContext.context;
     let guild_id;
     if (null != permissionContext) {
@@ -957,7 +957,7 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
   }
   let allowedForUser = null;
   if (null != guild_id) {
-    let obj = importAll(8220);
+    let obj = importAll(7963);
     allowedForUser = obj.computeAllowedForUser(descriptor.permissions, context.guild_id, userId, roleIds, isImpersonating);
   }
   let guild_id1;
@@ -966,7 +966,7 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
   }
   let allowedForChannel = null;
   if (null != guild_id1) {
-    let obj1 = importAll(8220);
+    let obj1 = importAll(7963);
     allowedForChannel = obj1.computeAllowedForChannel(descriptor.permissions, context, context.guild_id);
   }
   const items = [];
@@ -977,7 +977,7 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
       let value = iter.value;
       let tmp14 = importAll;
       let tmp15 = dependencyMap;
-      let obj3 = importAll(8220);
+      let obj3 = importAll(7963);
       obj = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: descriptor.botId, isGuildInstalled };
       let tmp16 = arg3;
       if (!arg3) {
@@ -987,7 +987,7 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
       let tmp18 = require;
       let tmp19 = dependencyMap;
       let hasAccessResult = obj3.hasAccess(value, permissionContext, obj);
-      if (hasAccessResult === require(8220) /* _createForOfIteratorHelperLoose */.HasAccessResult.ALLOWED) {
+      if (hasAccessResult === require(7963) /* _createForOfIteratorHelperLoose */.HasAccessResult.ALLOWED) {
         let arr = items.push(value);
       }
       iter2 = tmp13();
@@ -995,13 +995,13 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
     } while (!iter2.done);
   }
   let arr2 = items;
-  if (scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.NONE) {
+  if (scoreMethod !== require(5680) /* ScoreMethod */.ScoreMethod.NONE) {
     arr2 = items;
     if (null != query) {
       arr2 = items;
       if (null != splitQuery) {
         const items1 = [];
-        if (scoreMethod === require(8015) /* ScoreMethod */.ScoreMethod.APPLICATION_ONLY) {
+        if (scoreMethod === require(5680) /* ScoreMethod */.ScoreMethod.APPLICATION_ONLY) {
           const name = descriptor.name;
           const toLocaleLowerCaseResult = name.toLocaleLowerCase();
           if (toLocaleLowerCaseResult.startsWith(query)) {
@@ -1034,11 +1034,11 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
             value = iter3.value;
             let tmp33 = require;
             let tmp34 = dependencyMap;
-            let tmp35 = scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY;
+            let tmp35 = scoreMethod !== require(5680) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY;
             if (tmp35) {
               let tmp36 = require;
               let tmp37 = dependencyMap;
-              tmp35 = scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION;
+              tmp35 = scoreMethod !== require(5680) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION;
             }
             let tmp38;
             if (!tmp35) {
@@ -1077,9 +1077,9 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
     }
   }
   if (0 !== arr2.length) {
-    let tmp53 = scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.NONE;
+    let tmp53 = scoreMethod !== require(5680) /* ScoreMethod */.ScoreMethod.NONE;
     if (tmp53) {
-      tmp53 = scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.APPLICATION_ONLY;
+      tmp53 = scoreMethod !== require(5680) /* ScoreMethod */.ScoreMethod.APPLICATION_ONLY;
     }
     if (!tmp53) {
       const sorted = arr2.sort((displayName, displayName2) => outer1_62(displayName.displayName, displayName2.displayName));
@@ -1194,7 +1194,7 @@ function toServerPermissions(permissions, id) {
   let length2;
   const items = [];
   if (null != permissions.user) {
-    let obj = { type: require(6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER, id, permission: permissions.user };
+    let obj = { type: require(5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER, id, permission: permissions.user };
     items.push(obj);
   }
   if (null != permissions.channels) {
@@ -1208,7 +1208,7 @@ function toServerPermissions(permissions, id) {
         obj = {};
         let tmp7 = require;
         let tmp8 = dependencyMap;
-        obj.type = require(6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL;
+        obj.type = require(5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL;
         obj.id = tmp6[0];
         obj.permission = tmp6[1];
         let arr = items.push(obj);
@@ -1228,7 +1228,7 @@ function toServerPermissions(permissions, id) {
         obj = {};
         let tmp12 = require;
         let tmp13 = dependencyMap;
-        obj.type = require(6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE;
+        obj.type = require(5676) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE;
         obj.id = tmp11[0];
         obj.permission = tmp11[1];
         let arr1 = items.push(obj);
@@ -1813,8 +1813,8 @@ export const useGuildIndexState = function useGuildIndexState(arg0, arg1) {
         obj.track(outer1_22.APPLICATION_COMMAND_CACHE_FETCH, obj);
         if (outer1_55(stateFromStoresObject)) {
           obj = { type: "guild", guildId: callback };
-          const applicationCommandIndex = callback(8011).requestApplicationCommandIndex(obj);
-          const obj3 = callback(8011);
+          const applicationCommandIndex = callback(5673).requestApplicationCommandIndex(obj);
+          const obj3 = callback(5673);
         }
       }
       dependencyMap(false);
@@ -1879,9 +1879,9 @@ export const appLauncherOnlyCompareNames = function appLauncherOnlyCompareNames(
 };
 export const getSection = function getSection(arg0, applicationId) {
   if (applicationId === constants.BUILT_IN) {
-    let obj = { descriptor: require(8017) /* getOptionValue */.BUILT_IN_SECTIONS[constants.BUILT_IN] };
-    const items = [require(1881) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
-    obj.sectionCommands = require(8017) /* getOptionValue */.getBuiltInCommands(items, true, false);
+    let obj = { descriptor: require(5682) /* getOptionValue */.BUILT_IN_SECTIONS[constants.BUILT_IN] };
+    const items = [require(1882) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
+    obj.sectionCommands = require(5682) /* getOptionValue */.getBuiltInCommands(items, true, false);
     obj.isGuildInstalled = true;
     obj.isUserInstalled = true;
     return obj;

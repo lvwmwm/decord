@@ -1,5 +1,5 @@
 // Module ID: 1328
-// Function ID: 15570
+// Function ID: 15576
 // Name: getToken
 // Dependencies: [684, 1329, 2]
 // Exports: getArtForPath, isAuthenticated

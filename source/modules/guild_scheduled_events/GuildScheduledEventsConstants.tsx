@@ -1,5 +1,5 @@
 // Module ID: 1354
-// Function ID: 16276
+// Function ID: 16283
 // Name: GUILD_EVENT_MAX_NAME_LENGTH
 // Dependencies: [653, 664, 2]
 

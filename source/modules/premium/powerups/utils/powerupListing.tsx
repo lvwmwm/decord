@@ -1,10 +1,10 @@
-// Module ID: 11578
-// Function ID: 90151
+// Module ID: 11544
+// Function ID: 89868
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4017, 4018, 4021, 566, 2]
+// Dependencies: [57, 31, 4018, 4019, 4022, 566, 2]
 // Exports: useBuildGuildPowerupsSections
 
-// Module 11578 (_createForOfIteratorHelperLoose)
+// Module 11544 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

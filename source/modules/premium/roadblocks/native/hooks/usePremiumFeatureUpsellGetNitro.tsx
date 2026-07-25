@@ -1,10 +1,10 @@
-// Module ID: 8045
-// Function ID: 63794
+// Module ID: 6156
+// Function ID: 55139
 // Name: usePremiumFeatureUpsellGetNitro
-// Dependencies: [57, 31, 3782, 6688, 1851, 653, 5462, 6661, 4451, 7374, 3830, 1212, 3989, 2]
+// Dependencies: [57, 31, 3783, 6157, 1852, 653, 5462, 6162, 4452, 6447, 3831, 1212, 3990, 2]
 // Exports: default
 
-// Module 8045 (usePremiumFeatureUpsellGetNitro)
+// Module 6156 (usePremiumFeatureUpsellGetNitro)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,7 +46,7 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
           obj.analyticsLocation = obj;
           obj.analyticsLocations = analyticsLocations;
           obj.premiumType = callback ? outer1_8.TIER_0 : outer1_8.TIER_2;
-          callback2(6661)(obj, dependencyMap);
+          callback2(6162)(obj, dependencyMap);
         }
       }
     }
@@ -56,15 +56,15 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
         if (result) {
           let resolved = Promise.resolve();
         } else {
-          obj = callback(4451);
+          obj = callback(4452);
           resolved = obj.fetchSubscriptions();
         }
         const items = [resolved, ];
         if (isFetchingOfferResult) {
           let resolved1 = Promise.resolve();
         } else {
-          resolved1 = callback(7374).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
-          const obj2 = callback(7374);
+          resolved1 = callback(6447).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
+          const obj2 = callback(6447);
         }
         items[1] = resolved1;
         const allPromises = Promise.all(items);
@@ -77,19 +77,19 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
           outer1_7();
         }).catch(() => {
           const intl = callback(1212).intl;
-          callback2(3830).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
+          callback2(3831).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
         }).finally(() => outer1_4(false));
         const catchPromise = Promise.all(items).then(() => {
           outer1_6.current = outer1_6.current + 1;
           outer1_7();
         }).catch(() => {
           const intl = callback(1212).intl;
-          callback2(3830).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
+          callback2(3831).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
         });
       }
     }
     callback2();
-    const bestActiveInput = callback(3989).getBestActiveInput();
+    const bestActiveInput = callback(3990).getBestActiveInput();
     if (null != bestActiveInput) {
       bestActiveInput.closeCustomKeyboard();
     }

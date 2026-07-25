@@ -1,5 +1,5 @@
 // Module ID: 876
-// Function ID: 9742
+// Function ID: 9748
 // Name: isURLObjectRelative
 // Dependencies: [77, 816]
 // Exports: getHttpSpanDetailsFromUrlObject, getSanitizedUrlString, parseStringToURLObject, parseUrl, stripDataUrlContent, stripUrlQueryAndFragment

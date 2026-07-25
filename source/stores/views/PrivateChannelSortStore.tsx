@@ -1,7 +1,7 @@
 // Module ID: 5601
-// Function ID: 47593
+// Function ID: 47598
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5602, 5603, 1352, 1348, 1838, 4142, 4325, 1849, 21, 3754, 3712, 5604, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5602, 5603, 1352, 1348, 1838, 4143, 4326, 1850, 21, 3755, 3713, 5604, 566, 686, 2]
 
 // Module 5601 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,7 +41,7 @@ function makeSortedChannel(channel, id) {
     const isMessageRequestTimestamp = channel.isMessageRequestTimestamp;
     let tmp2 = id;
     if (null != isMessageRequestTimestamp) {
-      let obj = importDefault(3712)(isMessageRequestTimestamp);
+      let obj = importDefault(3713)(isMessageRequestTimestamp);
       const valueOfResult = obj.valueOf();
       let fromTimestampResult = importDefault(21).fromTimestamp(valueOfResult);
       const obj2 = importDefault(21);
@@ -92,7 +92,7 @@ const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap(function
 let closure_18 = [];
 let closure_19 = [];
 let closure_20 = [];
-const f47603 = () => {
+const f47608 = () => {
   let values = secondaryIndexMap.values(constants.FAVORITE);
   values = secondaryIndexMap.values(constants.DEFAULT);
   let tmp = values === values;

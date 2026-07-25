@@ -1,10 +1,10 @@
-// Module ID: 15009
-// Function ID: 114343
+// Module ID: 15019
+// Function ID: 114470
 // Name: MessagesEmptyState
-// Dependencies: [57, 31, 27, 33, 4130, 1450, 1456, 8604, 480, 4663, 14049, 15006, 4126, 1212, 4543, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 1450, 1456, 8364, 480, 4664, 14060, 15016, 4127, 1212, 4544, 2]
 // Exports: default
 
-// Module 15009 (MessagesEmptyState)
+// Module 15019 (MessagesEmptyState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -38,14 +38,14 @@ export default function MessagesEmptyState() {
     navigation.navigate("friends", { screen: "add-friends", params: { sourcePage: "Messages Empty State", presentation: "card" } });
   }, items);
   obj = { type: _require(480).ImpressionTypes.VIEW, name: _require(480).ImpressionNames.MESSAGES_EMPTY_NUX };
-  navigation(8604)(obj);
+  navigation(8364)(obj);
   if (first > 0) {
     width = first;
   }
   const result = 0.9 * width;
-  let obj2 = _require(4663);
+  let obj2 = _require(4664);
   const isScreenLandscape = obj2.useIsScreenLandscape();
-  _require(14049);
+  _require(14060);
   obj = { alwaysBounceVertical: false, bounces: false };
   const items1 = [tmp.scrollViewContentContainer, ];
   let tmp15;
@@ -58,7 +58,7 @@ export default function MessagesEmptyState() {
   obj2 = { style: tmp.container, onLayout: callback };
   const obj3 = { style: tmp.innerContainer };
   const obj4 = { style: tmp.imageContainer };
-  const obj5 = { resizeMode: "contain", source: navigation(15006) };
+  const obj5 = { resizeMode: "contain", source: navigation(15016) };
   const obj6 = {};
   let num = 350;
   if (result < 622) {
@@ -73,11 +73,11 @@ export default function MessagesEmptyState() {
   const obj8 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: tmp.title };
   const intl = _require(1212).intl;
   obj8.children = intl.string(_require(1212).t["8JZof8"]);
-  const items3 = [callback2(_require(4126).Heading, obj8), ];
+  const items3 = [callback2(_require(4127).Heading, obj8), ];
   const obj9 = { color: "text-default", variant: "text-md/medium", style: tmp.body };
   const intl2 = _require(1212).intl;
   obj9.children = intl2.string(_require(1212).t["qm+H7x"]);
-  items3[1] = callback2(_require(4126).Text, obj9);
+  items3[1] = callback2(_require(4127).Text, obj9);
   obj7.children = items3;
   items2[1] = callback3(closure_5, obj7);
   obj3.children = items2;
@@ -88,7 +88,7 @@ export default function MessagesEmptyState() {
   obj11.text = intl3.string(_require(1212).t.zIJnA6);
   obj11.onPress = callback1;
   obj11.size = "lg";
-  obj10.children = callback2(_require(4543).Button, obj11);
+  obj10.children = callback2(_require(4544).Button, obj11);
   items4[1] = callback2(closure_5, obj10);
   obj2.children = items4;
   obj.children = callback3(closure_5, obj2);

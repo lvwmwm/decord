@@ -1,9 +1,9 @@
-// Module ID: 4952
-// Function ID: 42504
+// Module ID: 4953
+// Function ID: 42516
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 4177, 4202, 1906, 653, 4191, 3763, 4953, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 4178, 4203, 1907, 653, 4192, 3764, 4954, 566, 686, 2]
 
-// Module 4952 (_isNativeReflectConstruct)
+// Module 4953 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import dispatcher from "dispatcher";
@@ -457,7 +457,7 @@ tmp4 = new tmp4(require("dispatcher"), {
     if ((speakingFlags & constants.PRIORITY) === constants.PRIORITY) {
       channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
       if (null != channel) {
-        let obj = importAll(3763);
+        let obj = importAll(3764);
         obj = { permission: Permissions.PRIORITY_SPEAKER, user: userId, context: channel };
         if (obj.can(obj)) {
           store.setCanHavePriority(userId, true);

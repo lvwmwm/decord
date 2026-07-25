@@ -1,10 +1,10 @@
-// Module ID: 11403
-// Function ID: 88665
+// Module ID: 11366
+// Function ID: 88324
 // Name: JumpToPresentButton
-// Dependencies: [31, 27, 9349, 4808, 4349, 33, 4130, 689, 477, 3834, 1324, 566, 10662, 1212, 11404, 11405, 7533, 11406, 2]
+// Dependencies: [31, 27, 9242, 4809, 4350, 33, 4131, 689, 477, 3835, 1324, 566, 10626, 1212, 11367, 11368, 6625, 11369, 2]
 // Exports: default
 
-// Module 11403 (JumpToPresentButton)
+// Module 11366 (JumpToPresentButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import getChatInputContainerHeight from "getChatInputContainerHeight";
@@ -24,7 +24,7 @@ let obj1 = { bottom: "100%", marginBottom: require("_createForOfIteratorHelperLo
 _createForOfIteratorHelperLoose.containerIOS = obj1;
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_10 = set.isIOS() ? (() => null) : ((arg0) => {
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   obj = {};
   const token = obj.useToken(importDefault(689).modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING);
   obj.bottom = callback2(arg0) + token;
@@ -54,11 +54,11 @@ export default function JumpToPresentButton(channelId) {
     }
     return tmp2;
   });
-  let obj1 = channelId(10662);
+  let obj1 = channelId(10626);
   const isVoicePanelMounted = obj1.useIsVoicePanelMounted(channelId);
   const tmp3 = screenIndex(1324)("JumpToPresentButton");
-  const isVoicePanelOpen = channelId(10662).useIsVoicePanelOpen(channelId);
-  const obj3 = channelId(10662);
+  const isVoicePanelOpen = channelId(10626).useIsVoicePanelOpen(channelId);
+  const obj3 = channelId(10626);
   const items1 = [closure_7];
   const stateFromStores = channelId(566).useStateFromStores(items1, () => null != outer1_7.getMessages(channelId).jumpReturnTargetId);
   if (!tmp4) {
@@ -81,17 +81,17 @@ export default function JumpToPresentButton(channelId) {
   if (tmp4) {
     if (tmp3) {
       obj = { accessibilityLabel: stringResult };
-      stringResult = screenIndex(11405);
+      stringResult = screenIndex(11368);
       obj.icon = stringResult;
       obj.onPress = onJumpToPresent;
-      let tmp12Result = tmp12(screenIndex(11404), obj);
-      const tmp21 = screenIndex(11404);
+      let tmp12Result = tmp12(screenIndex(11367), obj);
+      const tmp21 = screenIndex(11367);
     } else {
-      obj1 = { accessibilityLabel: stringResult, onPress: onJumpToPresent, icon: screenIndex(11405), variant: "primary-overlay" };
-      tmp12Result = tmp12(channelId(7533).IconButton, obj1);
+      obj1 = { accessibilityLabel: stringResult, onPress: onJumpToPresent, icon: screenIndex(11368), variant: "primary-overlay" };
+      tmp12Result = tmp12(channelId(6625).IconButton, obj1);
     }
   } else {
-    obj.children = tmp12(channelId(11406).MemoedVoicePanelDismissChatButton, {});
+    obj.children = tmp12(channelId(11369).MemoedVoicePanelDismissChatButton, {});
     return tmp10(tmp11, obj);
   }
 };

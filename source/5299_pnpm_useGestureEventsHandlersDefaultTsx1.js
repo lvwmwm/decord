@@ -1,5 +1,5 @@
 // Module ID: 5299
-// Function ID: 45769
+// Function ID: 45774
 // Name: pnpm_useGestureEventsHandlersDefaultTsx1
 // Dependencies: [27, 5190, 5197, 1582, 5300, 5301]
 // Exports: useGestureEventsHandlersDefault

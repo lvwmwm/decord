@@ -1,10 +1,10 @@
-// Module ID: 10660
-// Function ID: 83095
+// Module ID: 10624
+// Function ID: 82782
 // Name: useGlobalStatusIndicatorState
-// Dependencies: [1348, 4202, 10661, 653, 10572, 8973, 566, 10659, 10657, 3981, 4341, 10662, 10663, 2]
+// Dependencies: [1348, 4203, 10625, 653, 10459, 8861, 566, 10623, 10621, 3982, 4342, 10626, 10627, 2]
 // Exports: useGlobalStatusIndicatorState
 
-// Module 10660 (useGlobalStatusIndicatorState)
+// Module 10624 (useGlobalStatusIndicatorState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { RTC_PANEL_HEIGHT } from "RTC_PANEL_HEIGHT";
@@ -21,12 +21,12 @@ export const useGlobalStatusIndicatorState = function useGlobalStatusIndicatorSt
   }
   let stateFromStores;
   let importDefault;
-  let obj = stateFromStores(10572);
+  let obj = stateFromStores(10459);
   hasPipParticipant = obj.useHasPipParticipant({ isActivityViewFocused: false });
-  const tmp2 = importDefault(8973)();
+  const tmp2 = importDefault(8861)();
   const items = [closure_4];
   stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_4.getChannelId());
-  const tmp4 = importDefault(10659)();
+  const tmp4 = importDefault(10623)();
   importDefault = tmp4;
   const obj2 = stateFromStores(566);
   const items1 = [_isNativeReflectConstruct];
@@ -43,25 +43,25 @@ export const useGlobalStatusIndicatorState = function useGlobalStatusIndicatorSt
     return isGuildStageVoiceResult;
   }, items2);
   const obj3 = stateFromStores(566);
-  let num = stateFromStores(10657).useGetStageRTCPanelHeight(stateFromStores);
-  stateFromStores(3981);
+  let num = stateFromStores(10621).useGetStageRTCPanelHeight(stateFromStores);
+  stateFromStores(3982);
   let tmp9 = null != tmp2;
   if (tmp9) {
     let channelId = tmp2.channelId;
     if (null == channelId) {
       channelId = EMPTY_STRING_SNOWFLAKE_ID;
     }
-    tmp9 = stateFromStores(4341).getVoiceChannelKey(channelId) !== tmp8;
-    const obj5 = stateFromStores(4341);
+    tmp9 = stateFromStores(4342).getVoiceChannelKey(channelId) !== tmp8;
+    const obj5 = stateFromStores(4342);
   }
   obj = {};
-  const obj4 = stateFromStores(10657);
-  obj.voicePanelEnabled = stateFromStores(10662).useIsVoicePanelShowing();
+  const obj4 = stateFromStores(10621);
+  obj.voicePanelEnabled = stateFromStores(10626).useIsVoicePanelShowing();
   obj.isRemoteVisible = tmp9;
   obj.isVoiceChannelSelected = null != stateFromStores;
   obj.hasPipParticipant = hasPipParticipant;
   obj.showWhenParticipantOnScreen = flag;
-  obj.isConnectedToStageChannel = null != importDefault(10663)();
+  obj.isConnectedToStageChannel = null != importDefault(10627)();
   obj.isInvitedToSpeak = tmp4;
   ({ voicePanelEnabled, hasPipParticipant } = obj);
   if (!voicePanelEnabled) {

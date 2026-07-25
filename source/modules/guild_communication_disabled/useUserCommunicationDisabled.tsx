@@ -1,10 +1,10 @@
-// Module ID: 7753
-// Function ID: 61565
+// Module ID: 7699
+// Function ID: 61533
 // Name: getUserGuildMember
-// Dependencies: [1917, 1849, 566, 3747, 2]
+// Dependencies: [1918, 1850, 566, 3748, 2]
 // Exports: useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 7753 (getUserGuildMember)
+// Module 7699 (getUserGuildMember)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 
@@ -28,7 +28,7 @@ function isCommunicationDisabled(communicationDisabledUntil) {
   if (null != prop) {
     tmp2 = prop;
   }
-  const items = [tmp2, require(3747) /* isCommunicationDisabled */.isMemberCommunicationDisabled(communicationDisabledUntil)];
+  const items = [tmp2, require(3748) /* isCommunicationDisabled */.isMemberCommunicationDisabled(communicationDisabledUntil)];
   return items;
 }
 function useUserCommunicationDisabled(arg0, arg1) {

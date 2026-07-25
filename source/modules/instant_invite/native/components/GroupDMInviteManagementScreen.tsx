@@ -1,9 +1,9 @@
-// Module ID: 10197
-// Function ID: 78779
+// Module ID: 10129
+// Function ID: 78409
 // Name: GroupDMInviteManagement
-// Dependencies: [5, 57, 31, 27, 7544, 7686, 653, 33, 4130, 4559, 507, 22, 689, 10198, 5583, 1273, 10216, 10217, 1212, 5087, 480, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 6640, 7628, 653, 33, 4131, 4560, 507, 22, 689, 10130, 5583, 1273, 10148, 10149, 1212, 5087, 480, 5517, 2]
 
-// Module 10197 (GroupDMInviteManagement)
+// Module 10129 (GroupDMInviteManagement)
 import closure_3 from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -27,7 +27,7 @@ function GroupDMInviteManagement(channelId) {
   const dependencyMap = tmp2[1];
   const tmp3 = callback(importAllResult.useState(true), 2);
   let closure_3 = tmp3[1];
-  first(4559)(() => {
+  first(4560)(() => {
     function _fetchInvites() {
       // CreateGeneratorClosureLongIndex (0x67)
       const obj = callback(tmp);
@@ -64,12 +64,12 @@ function GroupDMInviteManagement(channelId) {
   if (tmp3[0]) {
     let tmp12 = jsx(channelId(5583).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
-    let obj = { lightSource: first(10216), darkSource: first(10217) };
+    let obj = { lightSource: first(10148), darkSource: first(10149) };
     const intl = channelId(1212).intl;
     obj.title = intl.string(channelId(1212).t["+nLJkZ"]);
     const intl2 = channelId(1212).intl;
     obj.body = intl2.string(channelId(1212).t.F53CAc);
-    tmp12 = jsx(channelId(1273).EmptyState, { lightSource: first(10216), darkSource: first(10217) });
+    tmp12 = jsx(channelId(1273).EmptyState, { lightSource: first(10148), darkSource: first(10149) });
   } else {
     obj = { style: tmp.list, data: memo, keyExtractor: callback, renderItem: tmp9, initialNumToRender: 10, windowSize: tmp5[0] };
     tmp12 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp9} initialNumToRender={10} windowSize={tmp5[0]} />;

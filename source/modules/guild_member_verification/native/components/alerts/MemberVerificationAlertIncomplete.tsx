@@ -1,10 +1,10 @@
-// Module ID: 9202
-// Function ID: 72056
+// Module ID: 9094
+// Function ID: 71541
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [31, 3948, 33, 624, 9181, 9188, 1212, 9192, 9203, 4543, 2]
+// Dependencies: [31, 3949, 33, 624, 9073, 9080, 1212, 9084, 9095, 4544, 2]
 // Exports: default
 
-// Module 9202 (MemberVerificationAlertIncomplete)
+// Module 9094 (MemberVerificationAlertIncomplete)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -61,21 +61,21 @@ export default function MemberVerificationAlertIncomplete(guildId) {
   }
   const obj1 = {};
   const merged1 = Object.assign(merged);
-  obj1["icon"] = guildId(9203).ListViewIcon;
+  obj1["icon"] = guildId(9095).ListViewIcon;
   obj1["header"] = formatToPlainStringResult;
   const obj2 = {};
   const obj3 = { variant: "secondary" };
   const intl3 = guildId(1212).intl;
   obj3.text = intl3.string(guildId(1212).t.h3aGmv);
   obj3.onPress = callback;
-  const items4 = [callback(guildId(4543).Button, obj3), ];
+  const items4 = [callback(guildId(4544).Button, obj3), ];
   const obj4 = {};
   const intl4 = guildId(1212).intl;
   obj4.text = intl4.string(guildId(1212).t.OQFlFD);
   obj4.variant = "destructive";
   obj4.onPress = callback1;
-  items4[1] = callback(guildId(4543).Button, obj4);
+  items4[1] = callback(guildId(4544).Button, obj4);
   obj2.children = items4;
   obj1["buttons"] = callback2(closure_6, obj2);
-  return callback(onClose(9192), obj1);
+  return callback(onClose(9084), obj1);
 };

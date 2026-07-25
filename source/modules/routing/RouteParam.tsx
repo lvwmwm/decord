@@ -1,9 +1,9 @@
-// Module ID: 3966
-// Function ID: 32829
+// Module ID: 3967
+// Function ID: 32840
 // Name: paramPattern
-// Dependencies: [654, 1355, 484, 3967, 2]
+// Dependencies: [654, 1355, 484, 3968, 2]
 
-// Module 3966 (paramPattern)
+// Module 3967 (paramPattern)
 import { PSEUDO_GUILD_IDS } from "APP_WITH_INVITE_AND_GUILD_ONBOARDING";
 import { StaticChannelRoutes } from "set";
 
@@ -20,7 +20,7 @@ function paramPattern(arg0, arg1, controlsSpecs) {
   if (flag) {
     str = "?";
   }
-  const unescapedPathParam = new require(484) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(3967)(arg0) + "(" + arg1 + ")" + str);
+  const unescapedPathParam = new require(484) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(3968)(arg0) + "(" + arg1 + ")" + str);
   return unescapedPathParam;
 }
 const result = require("getAuthenticationPath").fileFinishedImporting("modules/routing/RouteParam.tsx");
@@ -39,7 +39,7 @@ export const RouteParam = {
     if (flag === undefined) {
       flag = false;
     }
-    const mapped = PSEUDO_GUILD_IDS.map(importDefault(3967));
+    const mapped = PSEUDO_GUILD_IDS.map(importDefault(3968));
     obj = { optional: flag };
     return paramPattern(str, "" + mapped.join("|") + "|\\d+", obj);
   },
@@ -57,7 +57,7 @@ export const RouteParam = {
       flag = false;
     }
     const items = [...StaticChannelRoutes];
-    const mapped = items.map(importDefault(3967));
+    const mapped = items.map(importDefault(3968));
     obj = { optional: flag };
     return paramPattern(str, "" + mapped.join("|") + "|\\d+", obj);
   }

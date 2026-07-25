@@ -1,9 +1,9 @@
-// Module ID: 15162
-// Function ID: 115431
+// Module ID: 15172
+// Function ID: 115559
 // Name: YouBarAvatarLarge
-// Dependencies: [5, 57, 31, 27, 4810, 1849, 14047, 653, 33, 4130, 689, 566, 1273, 4476, 3991, 9126, 7961, 4542, 3834, 7960, 7927, 4099, 5796, 1934, 5217, 2]
+// Dependencies: [5, 57, 31, 27, 4811, 1850, 14058, 653, 33, 4131, 689, 566, 1273, 4477, 3992, 9018, 7909, 4543, 3835, 7908, 7874, 4100, 6554, 1935, 5217, 2]
 
-// Module 15162 (YouBarAvatarLarge)
+// Module 15172 (YouBarAvatarLarge)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";

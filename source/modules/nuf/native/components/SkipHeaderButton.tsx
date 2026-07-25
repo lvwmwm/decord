@@ -1,10 +1,10 @@
-// Module ID: 11752
-// Function ID: 91263
+// Module ID: 11722
+// Function ID: 91013
 // Name: SkipHeaderButton
-// Dependencies: [31, 33, 4130, 689, 1212, 9158, 2]
+// Dependencies: [31, 33, 4131, 689, 1212, 9050, 2]
 // Exports: default
 
-// Module 11752 (SkipHeaderButton)
+// Module 11722 (SkipHeaderButton)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -35,5 +35,5 @@ export default function SkipHeaderButton(label) {
   obj["labelStyle"] = items;
   obj["label"] = label;
   obj["accessibilityLabel"] = label;
-  return jsx(require(9158) /* GenericHeaderTitle */.HeaderTextButton, {});
+  return jsx(require(9050) /* GenericHeaderTitle */.HeaderTextButton, {});
 };

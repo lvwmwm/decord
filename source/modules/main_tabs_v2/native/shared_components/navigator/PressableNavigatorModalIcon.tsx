@@ -1,10 +1,10 @@
-// Module ID: 9165
-// Function ID: 71686
+// Module ID: 9057
+// Function ID: 71171
 // Name: PressableNavigatorModalIcon
-// Dependencies: [33, 9161, 9158, 9162, 9166, 1212, 2]
+// Dependencies: [33, 9053, 9050, 9054, 9058, 1212, 2]
 // Exports: default
 
-// Module 9165 (PressableNavigatorModalIcon)
+// Module 9057 (PressableNavigatorModalIcon)
 import { jsx } from "jsxProd";
 
 const result = require("GenericHeaderTitle").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorModalIcon.tsx");
@@ -21,9 +21,9 @@ export default function PressableNavigatorModalIcon(onPress) {
   let obj = { isModal: true };
   obj = {};
   if ("back" === str) {
-    let tmp6 = 9162;
+    let tmp6 = 9054;
   } else {
-    tmp6 = 9166;
+    tmp6 = 9058;
   }
   obj.source = importDefault(tmp6);
   obj.onPress = goBack;
@@ -36,6 +36,6 @@ export default function PressableNavigatorModalIcon(onPress) {
     stringResult = string(t.cpT0Cq);
   }
   obj.accessibilityLabel = stringResult;
-  obj.children = jsx(require(9158) /* GenericHeaderTitle */.HeaderIconButton, {});
-  return jsx(importDefault(9161), {});
+  obj.children = jsx(require(9050) /* GenericHeaderTitle */.HeaderIconButton, {});
+  return jsx(importDefault(9053), {});
 };

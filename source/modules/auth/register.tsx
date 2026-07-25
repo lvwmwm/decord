@@ -1,10 +1,10 @@
-// Module ID: 14789
-// Function ID: 112784
+// Module ID: 14800
+// Function ID: 112912
 // Name: _scorePassword
-// Dependencies: [5, 14790, 1194, 653, 1197, 3712, 675, 4942, 480, 4030, 9482, 686, 14791, 14792, 2]
+// Dependencies: [5, 14801, 1194, 653, 1197, 3713, 675, 4943, 480, 4031, 9403, 686, 14802, 14803, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 14789 (_scorePassword)
+// Module 14800 (_scorePassword)
 import closure_4 from "t";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -57,11 +57,11 @@ function registerFull(giftCodeSKUId) {
   let obj = importDefault(686);
   obj.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    importDefault(14791)(birthday, constants2.REGISTER);
+    importDefault(14802)(birthday, constants2.REGISTER);
     obj = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     importDefault(675).track(constants.AGE_GATE_ACTION, obj);
     const obj9 = importDefault(675);
-    const diffResult = importDefault(3712)().diff(birthday, "years");
+    const diffResult = importDefault(3713)().diff(birthday, "years");
     if (diffResult >= 13) {
       if (diffResult < 13) {
         let str3 = "23+";
@@ -79,9 +79,9 @@ function registerFull(giftCodeSKUId) {
       obj = { age_bucket: str };
       obj1.track(constants.USER_AGE_SUBMITTED, obj);
     }
-    const obj11 = importDefault(3712)();
+    const obj11 = importDefault(3713)();
   }
-  let obj3 = importDefault(4942);
+  let obj3 = importDefault(4943);
   obj1 = { url: constants3.REGISTER };
   let obj2 = { fingerprint: fingerprint.getFingerprint(), email, username, global_name: globalName, password, invite, consent, phone_token: phoneToken };
   let formatResult;

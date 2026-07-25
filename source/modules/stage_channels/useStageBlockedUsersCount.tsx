@@ -1,10 +1,10 @@
-// Module ID: 7676
-// Function ID: 60931
+// Module ID: 7618
+// Function ID: 60855
 // Name: useStageBlockedUsersCount
-// Dependencies: [4951, 566, 4957, 2]
+// Dependencies: [4952, 566, 4958, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount, useStageBlockedUsers, useStageBlockedUsersCount, useStageIgnoredUsers, useStageIgnoredUsersCount
 
-// Module 7676 (useStageBlockedUsersCount)
+// Module 7618 (useStageBlockedUsersCount)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -35,7 +35,7 @@ export const useStageIgnoredUsersCount = function useStageIgnoredUsersCount(id1)
   }, items1);
 };
 export const getStageBlockedUsersCount = function getStageBlockedUsersCount(id) {
-  const participantCount = store.getParticipantCount(id, require(4957) /* sortKey */.StageChannelParticipantNamedIndex.BLOCKED);
+  const participantCount = store.getParticipantCount(id, require(4958) /* sortKey */.StageChannelParticipantNamedIndex.BLOCKED);
   let num = 0;
   if (null != participantCount) {
     num = participantCount;
@@ -43,7 +43,7 @@ export const getStageBlockedUsersCount = function getStageBlockedUsersCount(id) 
   return num;
 };
 export const getStageIgnoredUsersCount = function getStageIgnoredUsersCount(id) {
-  const participantCount = store.getParticipantCount(id, require(4957) /* sortKey */.StageChannelParticipantNamedIndex.IGNORED);
+  const participantCount = store.getParticipantCount(id, require(4958) /* sortKey */.StageChannelParticipantNamedIndex.IGNORED);
   let num = 0;
   if (null != participantCount) {
     num = participantCount;

@@ -1,9 +1,9 @@
-// Module ID: 4215
-// Function ID: 36639
+// Module ID: 4216
+// Function ID: 36650
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 4216, 4194, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 4217, 4195, 566, 686, 2]
 
-// Module 4215 (_isNativeReflectConstruct)
+// Module 4216 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import isStreamKey from "isStreamKey";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -488,7 +488,7 @@ tmp2 = new tmp2(require("dispatcher"), {
       if (null == mediaEngineConnectionId) {
         return false;
       } else {
-        resetAccumulatedStats(mediaEngineConnectionId, require(4194) /* isStreamKey */.decodeStreamKey(streamKey).ownerId);
+        resetAccumulatedStats(mediaEngineConnectionId, require(4195) /* isStreamKey */.decodeStreamKey(streamKey).ownerId);
       }
     }
   },

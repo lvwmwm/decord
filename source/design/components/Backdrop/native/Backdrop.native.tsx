@@ -1,10 +1,10 @@
-// Module ID: 4531
-// Function ID: 39807
+// Module ID: 4532
+// Function ID: 39818
 // Name: getBlurAmount
-// Dependencies: [31, 27, 33, 4130, 689, 1212, 3842, 1557, 3974, 3991, 4532, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1212, 3843, 1557, 3975, 3992, 4533, 2]
 // Exports: Backdrop
 
-// Module 4531 (getBlurAmount)
+// Module 4532 (getBlurAmount)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -59,7 +59,7 @@ export const Backdrop = function Backdrop(animatedProps) {
   }
   backgroundColor = undefined;
   const tmp3 = _createForOfIteratorHelperLoose();
-  let obj = backgroundColor(3842);
+  let obj = backgroundColor(3843);
   backgroundColor = tmp3.backdrop.backgroundColor;
   const items = [backgroundColor];
   obj = { onPress: onDismiss, "aria-hidden": true };
@@ -87,9 +87,9 @@ export const Backdrop = function Backdrop(animatedProps) {
     const merged = Object.assign(obj);
     obj3["style"] = tmp3.fill;
     const obj4 = { blurAmount: getBlurAmount(str), style: tmp3.fill, blurTheme: obj.useThemeContext().theme, blurTintRgba: memo, android_fallbackColor: tmp3.backdrop.backgroundColor };
-    obj3["children"] = callback(importDefault(4532), obj4);
+    obj3["children"] = callback(importDefault(4533), obj4);
     let obj5 = obj3;
-    const tmp20 = importDefault(4532);
+    const tmp20 = importDefault(4533);
   } else {
     obj5 = {};
     const merged1 = Object.assign(obj);
@@ -98,5 +98,5 @@ export const Backdrop = function Backdrop(animatedProps) {
   }
   items3[1] = callback(Pressable, obj5);
   obj.children = items3;
-  return closure_6(importDefault(3991).View, obj);
+  return closure_6(importDefault(3992).View, obj);
 };

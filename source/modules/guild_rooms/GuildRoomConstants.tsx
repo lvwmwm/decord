@@ -1,10 +1,10 @@
-// Module ID: 16101
-// Function ID: 124734
+// Module ID: 16112
+// Function ID: 124902
 // Name: getName
-// Dependencies: [16102, 16103, 1212, 2132, 16104, 2]
+// Dependencies: [16113, 16114, 1212, 2133, 16115, 2]
 // Exports: getSeatName
 
-// Module 16101 (getName)
+// Module 16112 (getName)
 const require = arg1;
 let obj = {};
 obj = {
@@ -12,7 +12,7 @@ obj = {
   aspectRatio: 1.375514403292181,
   getName() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2132)["4KcB5R"]);
+    return intl.string(importDefault(2133)["4KcB5R"]);
   }
 };
 obj = { name: "PC_SEAT_1", position: require("GUILD_ROOM_BACKGROUND_POSITIONS").GUILD_ROOM_BACKGROUND_POSITIONS[require("GuildRoomBackgrounds").GuildRoomBackgrounds.DEFAULT][0] };
@@ -69,7 +69,7 @@ export const getSeatName = function getSeatName(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
   let name;
-  const seats = obj[_require(undefined, 16102).GuildRoomBackgrounds.DEFAULT].seats;
+  const seats = obj[_require(undefined, 16113).GuildRoomBackgrounds.DEFAULT].seats;
   const found = seats.find((position) => {
     let tmp = position.position.x === closure_0;
     if (tmp) {

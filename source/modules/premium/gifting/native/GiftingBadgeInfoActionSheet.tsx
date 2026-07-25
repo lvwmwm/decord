@@ -1,10 +1,10 @@
-// Module ID: 9719
-// Function ID: 75605
+// Module ID: 9643
+// Function ID: 75200
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [31, 27, 4122, 8312, 653, 33, 4130, 689, 1557, 566, 8309, 675, 5187, 4126, 1212, 2294, 9720, 2]
+// Dependencies: [31, 27, 4123, 8047, 653, 33, 4131, 689, 1557, 566, 8044, 675, 5187, 4127, 1212, 2295, 9644, 2]
 // Exports: default
 
-// Module 9719 (GiftingBadgeInfoActionSheet)
+// Module 9643 (GiftingBadgeInfoActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -57,12 +57,12 @@ export default function GiftingBadgeInfoActionSheet() {
   let obj2 = { style: tmp.headerContainer };
   let obj3 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header" };
   let intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(importDefault(2294)["0MB2C6"]);
-  const items3 = [callback(require(4126) /* Text */.Text, obj3), ];
+  obj3.children = intl.string(importDefault(2295)["0MB2C6"]);
+  const items3 = [callback(require(4127) /* Text */.Text, obj3), ];
   const obj4 = { style: tmp.description, variant: "text-md/medium", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj4.children = intl2.string(importDefault(2294).k9sNVH);
-  items3[1] = callback(require(4126) /* Text */.Text, obj4);
+  obj4.children = intl2.string(importDefault(2295).k9sNVH);
+  items3[1] = callback(require(4127) /* Text */.Text, obj4);
   obj2.children = items3;
   const items4 = [callback2(View, obj2), ];
   const obj5 = { style: tmp.tierCards };

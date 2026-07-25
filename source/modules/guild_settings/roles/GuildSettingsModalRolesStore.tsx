@@ -1,9 +1,9 @@
-// Module ID: 16346
-// Function ID: 127327
+// Module ID: 16357
+// Function ID: 127495
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1910, 1838, 653, 11485, 3976, 1212, 483, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1911, 1838, 653, 11448, 3977, 1212, 483, 566, 686, 2]
 
-// Module 16346 (_isNativeReflectConstruct)
+// Module 16357 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -168,15 +168,15 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (null == _null) {
       return false;
     } else {
-      const moveItemFromToResult = importDefault(11485).moveItemFromTo(_null, from, to);
+      const moveItemFromToResult = importDefault(11448).moveItemFromTo(_null, from, to);
       _null = moveItemFromToResult;
       if (moveItemFromToResult[from] !== _null[from]) {
-        const AccessibilityAnnouncer2 = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+        const AccessibilityAnnouncer2 = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
         const intl2 = require(1212) /* getSystemLocale */.intl;
         const obj = { from: from + 1, to: to + 1 };
         AccessibilityAnnouncer2.announce(intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["+tmElp"], obj));
       } else {
-        const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+        const AccessibilityAnnouncer = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
         const intl = require(1212) /* getSystemLocale */.intl;
         AccessibilityAnnouncer.announce(intl.string(require(1212) /* getSystemLocale */.t.WaxXjc));
       }

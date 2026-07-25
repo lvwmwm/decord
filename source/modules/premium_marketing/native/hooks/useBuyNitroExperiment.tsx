@@ -1,10 +1,10 @@
-// Module ID: 7376
-// Function ID: 59511
+// Module ID: 6452
+// Function ID: 57930
 // Name: useBuyNitroExperiment
-// Dependencies: [57, 31, 6660, 5450, 7377, 2]
+// Dependencies: [57, 31, 6171, 5450, 6453, 2]
 // Exports: useBuyNitroExperiment
 
-// Module 7376 (useBuyNitroExperiment)
+// Module 6452 (useBuyNitroExperiment)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { usePremiumPlanPurchasedStore as closure_5 } from "usePremiumPlanPurchasedStore";

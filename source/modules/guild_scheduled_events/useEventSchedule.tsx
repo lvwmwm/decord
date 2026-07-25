@@ -1,10 +1,10 @@
-// Module ID: 8396
-// Function ID: 66738
+// Module ID: 8154
+// Function ID: 65389
 // Name: _getEventSchedule
-// Dependencies: [6758, 8390, 8395, 566, 2]
+// Dependencies: [5751, 8148, 8153, 566, 2]
 // Exports: default, getEventSchedule, useEventScheduleById
 
-// Module 8396 (_getEventSchedule)
+// Module 8154 (_getEventSchedule)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -14,9 +14,9 @@ function _getEventSchedule(stateFromStores, eventException, nextRecurrenceIdInEv
   if (null != stateFromStores.recurrence_rule) {
     if (null != nextRecurrenceIdInEvent) {
       let toDateResult;
-      let obj = require(8390) /* getNextBucketedTime */;
+      let obj = require(8148) /* getNextBucketedTime */;
       const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(nextRecurrenceIdInEvent, stateFromStores);
-      const scheduleForRecurrenceWithException = require(8390) /* getNextBucketedTime */.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, eventException);
+      const scheduleForRecurrenceWithException = require(8148) /* getNextBucketedTime */.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, eventException);
       ({ startDate, endDate } = scheduleForRecurrenceWithException);
       obj = { startTime: startDate.toDate() };
       if (null != endDate) {
@@ -39,10 +39,10 @@ const result = require("_getEventException").fileFinishedImporting("modules/guil
 
 export default function useEventSchedule(id, nextRecurrenceIdInEvent) {
   if (null == nextRecurrenceIdInEvent) {
-    nextRecurrenceIdInEvent = require(8390) /* getNextBucketedTime */.getNextRecurrenceIdInEvent(id);
-    const obj = require(8390) /* getNextBucketedTime */;
+    nextRecurrenceIdInEvent = require(8148) /* getNextBucketedTime */.getNextRecurrenceIdInEvent(id);
+    const obj = require(8148) /* getNextBucketedTime */;
   }
-  return _getEventSchedule(id, importDefault(8395)(nextRecurrenceIdInEvent, id.id), nextRecurrenceIdInEvent);
+  return _getEventSchedule(id, importDefault(8153)(nextRecurrenceIdInEvent, id.id), nextRecurrenceIdInEvent);
 };
 export const useEventScheduleById = function useEventScheduleById(guildEventId, recurrenceId) {
   let nextRecurrenceIdInEvent = recurrenceId;
@@ -50,10 +50,10 @@ export const useEventScheduleById = function useEventScheduleById(guildEventId, 
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(566).useStateFromStores(items, () => outer1_3.getGuildScheduledEvent(closure_0));
   if (null == recurrenceId) {
-    nextRecurrenceIdInEvent = _require(8390).getNextRecurrenceIdInEvent(stateFromStores);
-    const obj2 = _require(8390);
+    nextRecurrenceIdInEvent = _require(8148).getNextRecurrenceIdInEvent(stateFromStores);
+    const obj2 = _require(8148);
   }
-  importDefault(8395);
+  importDefault(8153);
   if (null != stateFromStores) {
     const id = stateFromStores.id;
   }
@@ -64,5 +64,5 @@ export const useEventScheduleById = function useEventScheduleById(guildEventId, 
   return tmp7;
 };
 export const getEventSchedule = function getEventSchedule(guildEvent, recurrenceId) {
-  return _getEventSchedule(guildEvent, require(8395) /* _getEventException */.getEventException(recurrenceId, guildEvent.id), recurrenceId);
+  return _getEventSchedule(guildEvent, require(8153) /* _getEventException */.getEventException(recurrenceId, guildEvent.id), recurrenceId);
 };

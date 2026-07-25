@@ -1,14 +1,14 @@
-// Module ID: 12246
-// Function ID: 95705
-// Dependencies: [4098, 12247, 1934, 2]
+// Module ID: 12222
+// Function ID: 95514
+// Dependencies: [4099, 12223, 1935, 2]
 
-// Module 12246
+// Module 12222
 const result = require("maybeLoadBundle").fileFinishedImporting("modules/blocked_domains/BlockedDomainModalActionCreators.native.tsx");
 
 export default {
   show(url) {
-    let obj = importDefault(4098);
+    let obj = importDefault(4099);
     obj = { url };
-    obj.openLazy(require(1934) /* maybeLoadBundle */(12247, dependencyMap.paths), "blocked-domain", obj);
+    obj.openLazy(require(1935) /* maybeLoadBundle */(12223, dependencyMap.paths), "blocked-domain", obj);
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 8491
-// Function ID: 67618
+// Module ID: 8251
+// Function ID: 66272
 // Name: EditGuildEventDetails
-// Dependencies: [57, 31, 6758, 1354, 33, 4130, 1212, 3712, 8390, 1456, 4126, 4543, 1820, 8389, 3843, 8413, 8480, 8415, 2]
+// Dependencies: [57, 31, 5751, 1354, 33, 4131, 1212, 3713, 8148, 1456, 4127, 4544, 1820, 8147, 3844, 8171, 8240, 8173, 2]
 // Exports: default
 
-// Module 8491 (EditGuildEventDetails)
+// Module 8251 (EditGuildEventDetails)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { isGuildScheduledEventActive as closure_6 } from "_isNativeReflectConstruct";

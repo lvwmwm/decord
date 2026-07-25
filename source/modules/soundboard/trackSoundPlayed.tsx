@@ -1,10 +1,10 @@
-// Module ID: 5767
-// Function ID: 49424
+// Module ID: 10717
+// Function ID: 83350
 // Name: trackSoundPlayed
-// Dependencies: [4150, 1348, 4202, 1906, 4579, 653, 1851, 675, 2]
+// Dependencies: [4151, 1348, 4203, 1907, 4580, 653, 1852, 675, 2]
 // Exports: default
 
-// Module 5767 (trackSoundPlayed)
+// Module 10717 (trackSoundPlayed)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

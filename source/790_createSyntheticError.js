@@ -1,5 +1,5 @@
 // Module ID: 790
-// Function ID: 8935
+// Function ID: 8941
 // Name: createSyntheticError
 // Dependencies: []
 

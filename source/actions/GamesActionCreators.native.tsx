@@ -1,10 +1,10 @@
-// Module ID: 10944
-// Function ID: 84989
+// Module ID: 10894
+// Function ID: 84579
 // Name: fetchJoinSecret
-// Dependencies: [5, 653, 4155, 668, 5689, 3827, 686, 507, 10511, 10512, 10551, 2]
+// Dependencies: [5, 653, 4156, 668, 5973, 3828, 686, 507, 10442, 5665, 10543, 2]
 
-// Module 10944 (fetchJoinSecret)
-import module_3827 from "module_3827";
+// Module 10894 (fetchJoinSecret)
+import module_3828 from "module_3828";
 import ME from "ME";
 import { ActivityIntent } from "items3";
 
@@ -45,7 +45,7 @@ function fetchJoinSecret(application) {
 }
 function joinWithSecret(str) {
   const combined = "" + str.replace(/\/+$/, "") + constants.GAME_INVITE_FRAGMENT + arg1;
-  importDefault(3827).openURL(combined, constants2.SAFARI);
+  importDefault(3828).openURL(combined, constants2.SAFARI);
 }
 ({ Endpoints: closure_4, DiscordConnectDeeplinks: closure_5, WebBrowserType: closure_6, ActivityFlags: closure_7 } = ME);
 const result = require("items3").fileFinishedImporting("actions/GamesActionCreators.native.tsx");

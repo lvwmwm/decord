@@ -1,16 +1,16 @@
-// Module ID: 11677
-// Function ID: 90643
+// Module ID: 11646
+// Function ID: 90387
 // Name: useAnimatedTextStyle
-// Dependencies: [31, 27, 33, 3991, 4130, 689, 4542, 4126, 477, 1212, 2]
+// Dependencies: [31, 27, 33, 3992, 4131, 689, 4543, 4127, 477, 1212, 2]
 // Exports: TabItem
 
-// Module 11677 (useAnimatedTextStyle)
+// Module 11646 (useAnimatedTextStyle)
 import result from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let closure_4;
 let closure_5;
@@ -55,13 +55,13 @@ function TabItemCount(arg0) {
   let pressed;
   let variant;
   ({ count, index, activeIndex, pressed, variant } = arg0);
-  let obj = sharedValue(3991);
+  let obj = sharedValue(3992);
   sharedValue = obj.useSharedValue(0);
   let items = [sharedValue];
   const layoutEffect = React.useLayoutEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj1 = sharedValue(3991);
+  let obj1 = sharedValue(3992);
   class T {
     constructor() {
       obj = {};
@@ -80,7 +80,7 @@ function TabItemCount(arg0) {
       return obj;
     }
   }
-  obj = { withSpring: sharedValue(4542).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG: closure_8, interpolate: sharedValue(3991).interpolate };
+  obj = { withSpring: sharedValue(4543).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG: closure_8, interpolate: sharedValue(3992).interpolate };
   T.__closure = obj;
   T.__workletHash = 16666672974627;
   T.__initData = closure_13;
@@ -89,11 +89,11 @@ function TabItemCount(arg0) {
   obj = { style: items1 };
   items1 = [tmp.count, animatedStyle];
   obj1 = { animated: true, variant: "text-sm/medium", style: useAnimatedTextStyle({ index, activeIndex, pressed, variant }), lineClamp: 1, children: count };
-  obj.children = callback(sharedValue(4126).Text, obj1);
-  return callback(importDefault(3991).View, obj);
+  obj.children = callback(sharedValue(4127).Text, obj1);
+  return callback(importDefault(3992).View, obj);
 }
 ({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = require("module_3991").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_6 = require("module_3992").createAnimatedComponent(require("get ActivityIndicator").Pressable);
 let closure_7 = { mass: 0.3, damping: 13, stiffness: 250, overshootClamping: true };
 let closure_8 = { mass: 2, damping: 30, stiffness: 300, overshootClamping: true };
 let obj = { item: { flexShrink: 0, flexBasis: 0, paddingBottom: 14, flexDirection: "row", justifyContent: "center" } };

@@ -1,10 +1,10 @@
-// Module ID: 9324
-// Function ID: 72768
+// Module ID: 9217
+// Function ID: 72257
 // Name: ConversationNavigatorHeader
-// Dependencies: [31, 27, 1348, 33, 4130, 689, 566, 4320, 9158, 2]
+// Dependencies: [31, 27, 1348, 33, 4131, 689, 566, 4321, 9050, 2]
 // Exports: default
 
-// Module 9324 (ConversationNavigatorHeader)
+// Module 9217 (ConversationNavigatorHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -35,7 +35,7 @@ export default function ConversationNavigatorHeader(channelId) {
   const items = [_isNativeReflectConstruct];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(channelId), items1);
-  const tmp3 = importDefault(4320)(stateFromStores, true);
+  const tmp3 = importDefault(4321)(stateFromStores, true);
   obj = { style: callback(flag).container };
   obj = { title: channelId.title };
   let tmp6;
@@ -45,6 +45,6 @@ export default function ConversationNavigatorHeader(channelId) {
   obj.subtitle = tmp6;
   obj.variant = "heading-lg/semibold";
   obj.subtitleColor = "text-muted";
-  obj.children = jsx(channelId(9158).GenericHeaderTitle, { title: channelId.title });
+  obj.children = jsx(channelId(9050).GenericHeaderTitle, { title: channelId.title });
   return <View title={arg0.title} />;
 };

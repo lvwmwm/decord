@@ -1,9 +1,9 @@
-// Module ID: 9225
-// Function ID: 72174
+// Module ID: 9117
+// Function ID: 71659
 // Name: UserRequiredActions
 // Dependencies: [653, 1212, 22, 2]
 
-// Module 9225 (UserRequiredActions)
+// Module 9117 (UserRequiredActions)
 import ME from "ME";
 
 let EMAIL;

@@ -1,0 +1,27 @@
+// Module ID: 6315
+// Function ID: 56767
+// Name: instrumentUnhandledRejection
+// Dependencies: [6309, 6312]
+
+// Module 6315 (instrumentUnhandledRejection)
+const require = arg1;
+const dependencyMap = arg6;
+function instrumentUnhandledRejection() {
+  const onunhandledrejection = require(6312) /* getGlobalSingleton */.GLOBAL_OBJ.onunhandledrejection;
+  require(6312) /* getGlobalSingleton */.GLOBAL_OBJ.onunhandledrejection = function(arg0) {
+    outer1_0(outer1_1[0]).triggerHandlers("unhandledrejection", arg0);
+    let applyResult = !onunhandledrejection;
+    if (!applyResult) {
+      const self = this;
+      applyResult = onunhandledrejection(...arguments);
+    }
+    return applyResult;
+  };
+  require(6312) /* getGlobalSingleton */.GLOBAL_OBJ.onunhandledrejection.__SENTRY_INSTRUMENTED__ = true;
+}
+let c2 = null;
+arg5.addGlobalUnhandledRejectionInstrumentationHandler = function addGlobalUnhandledRejectionInstrumentationHandler(arg0) {
+  require(6309) /* addHandler */.addHandler("unhandledrejection", arg0);
+  const obj = require(6309) /* addHandler */;
+  require(6309) /* addHandler */.maybeInstrument("unhandledrejection", instrumentUnhandledRejection);
+};

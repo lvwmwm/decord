@@ -1,10 +1,10 @@
-// Module ID: 9382
-// Function ID: 73222
+// Module ID: 9288
+// Function ID: 72747
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [31, 4991, 1348, 1906, 653, 1852, 1314, 9370, 9371, 4324, 3775, 2]
+// Dependencies: [31, 4992, 1348, 1907, 653, 1853, 1314, 9276, 9277, 4325, 3776, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 9382 (trackOnEmojiPickerOpened)
+// Module 9288 (trackOnEmojiPickerOpened)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -60,7 +60,7 @@ function trackOnEmojiPickerOpened(arg0) {
   }
   const disambiguatedEmojiContext = store.getDisambiguatedEmojiContext(guildId1);
   const customEmoji = disambiguatedEmojiContext.getCustomEmoji();
-  let obj2 = require(9370) /* getTopAndNewlyAddedEmojis */;
+  let obj2 = require(9276) /* getTopAndNewlyAddedEmojis */;
   let obj = {};
   let guildId2;
   if (null != channel) {
@@ -70,9 +70,9 @@ function trackOnEmojiPickerOpened(arg0) {
   obj.pickerIntention = intention;
   const topAndNewlyAddedEmojis = obj2.getTopAndNewlyAddedEmojis(obj);
   ({ topEmojis, newlyAddedEmojis } = topAndNewlyAddedEmojis);
-  const emojiHotrail = require(9371) /* getEmojiHotrail */.getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
+  const emojiHotrail = require(9277) /* getEmojiHotrail */.getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
   ({ visibleTopEmojis, visibleNewlyAddedEmojis } = emojiHotrail);
-  const obj5 = require(9371) /* getEmojiHotrail */;
+  const obj5 = require(9277) /* getEmojiHotrail */;
   if (intention === EmojiIntention.REACTION) {
     let EXPRESSION_PICKER_OPENED = AnalyticEvents.REACTION_PICKER_OPENED;
   } else {
@@ -90,7 +90,7 @@ function trackOnEmojiPickerOpened(arg0) {
       }
       return animated;
     }).length,
-    num_custom_expressions_favorites: prop.filter(importDefault(3775).isCustomEmoji).length,
+    num_custom_expressions_favorites: prop.filter(importDefault(3776).isCustomEmoji).length,
     num_standard_expressions_favorites: prop.filter((id) => null == id.id).length,
     num_expressions_frecent: substr1.length,
     num_animated_expressions_frecent: substr1.filter((animated) => {
@@ -100,7 +100,7 @@ function trackOnEmojiPickerOpened(arg0) {
       }
       return animated;
     }).length,
-    num_custom_expressions_frecent: substr1.filter(importDefault(3775).isCustomEmoji).length,
+    num_custom_expressions_frecent: substr1.filter(importDefault(3776).isCustomEmoji).length,
     num_standard_expressions_frecent: substr1.filter((id) => null == id.id).length,
     num_current_guild_expressions: guildEmoji.length,
     num_custom_expressions_total: customEmoji.size,
@@ -121,7 +121,7 @@ function trackOnEmojiPickerOpened(arg0) {
     tmp18 = obj2;
   }
   const merged1 = Object.assign(tmp18);
-  importDefault(4324).trackWithMetadata(EXPRESSION_PICKER_OPENED, obj);
+  importDefault(4325).trackWithMetadata(EXPRESSION_PICKER_OPENED, obj);
 }
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/emoji_picker/analytics/trackOnEmojiPickerOpened.tsx");
 

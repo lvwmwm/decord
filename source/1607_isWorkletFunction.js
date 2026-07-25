@@ -1,5 +1,5 @@
 // Module ID: 1607
-// Function ID: 17837
+// Function ID: 17844
 // Name: isWorkletFunction
 // Dependencies: []
 

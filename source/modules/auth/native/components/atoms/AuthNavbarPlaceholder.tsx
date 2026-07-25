@@ -1,10 +1,10 @@
-// Module ID: 9261
-// Function ID: 72353
+// Module ID: 9153
+// Function ID: 71838
 // Name: AuthNavbarPlaceholder
-// Dependencies: [31, 33, 4130, 689, 5087, 2]
+// Dependencies: [31, 33, 4131, 689, 5087, 2]
 // Exports: default
 
-// Module 9261 (AuthNavbarPlaceholder)
+// Module 9153 (AuthNavbarPlaceholder)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

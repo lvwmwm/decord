@@ -1,10 +1,10 @@
-// Module ID: 15706
-// Function ID: 121132
+// Module ID: 15717
+// Function ID: 121301
 // Name: items
 // Dependencies: [689, 1273, 5513, 5472, 2]
 // Exports: default
 
-// Module 15706 (items)
+// Module 15717 (items)
 let obj = { layout: { margin: { marginLeft: 8, marginRight: 8, marginVertical: 0 } } };
 obj = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, padding: { paddingVertical: 4, paddingLeft: 8, paddingRight: 8 } };
 obj.container = obj;

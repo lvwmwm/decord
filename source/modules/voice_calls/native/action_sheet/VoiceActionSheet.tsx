@@ -1,10 +1,10 @@
-// Module ID: 12745
-// Function ID: 99243
+// Module ID: 12756
+// Function ID: 99370
 // Name: VoiceActionSheet
-// Dependencies: [31, 27, 4203, 33, 4130, 5462, 5482, 566, 3981, 4341, 12746, 12747, 5498, 12757, 12760, 12761, 4533, 12764, 2]
+// Dependencies: [31, 27, 4204, 33, 4131, 5462, 5482, 566, 3982, 4342, 12757, 12758, 5498, 12768, 12771, 12772, 4534, 12775, 2]
 // Exports: default
 
-// Module 12745 (VoiceActionSheet)
+// Module 12756 (VoiceActionSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,27 +41,27 @@ export default function VoiceActionSheet(channel) {
       outer2_1(outer2_2[10]).terminate();
     };
   }, items1);
-  let obj1 = importDefault(12747);
+  let obj1 = importDefault(12758);
   if (obj1.requiresVoiceChannelsOnboard()) {
     obj = {};
     obj = { channel };
-    obj.children = callback(importDefault(12757), obj);
+    obj.children = callback(importDefault(12768), obj);
     let tmp11 = callback(channel(5498).ActionSheet, obj);
   } else if (stateFromStores) {
     obj1 = {};
     const obj2 = { channel };
-    const items2 = [callback(importDefault(12760), obj2), ];
+    const items2 = [callback(importDefault(12771), obj2), ];
     let obj3 = { channel };
-    items2[1] = callback(importDefault(12761), obj3);
+    items2[1] = callback(importDefault(12772), obj3);
     obj1.children = items2;
     tmp11 = callback2(channel(5498).ActionSheet, obj1);
   } else {
     const obj4 = { scrollable: true, startExpanded: true };
     const obj5 = { style: tmp.container };
     const obj6 = { blurTheme: "dark", style: tmp.visualEffectView };
-    const items3 = [callback(importDefault(4533), obj6), ];
+    const items3 = [callback(importDefault(4534), obj6), ];
     const obj7 = { channel };
-    items3[1] = callback(importDefault(12764), obj7);
+    items3[1] = callback(importDefault(12775), obj7);
     obj5.children = items3;
     obj4.children = callback2(View, obj5);
     tmp11 = callback(channel(5498).ActionSheet, obj4);

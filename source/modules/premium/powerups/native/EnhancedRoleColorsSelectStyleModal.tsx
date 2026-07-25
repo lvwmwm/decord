@@ -1,10 +1,10 @@
-// Module ID: 16370
-// Function ID: 127710
+// Module ID: 16381
+// Function ID: 127878
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [27, 16352, 16354, 16351, 482, 33, 4130, 689, 4066, 4571, 16371, 1212, 7710, 5187, 5186, 4098, 9329, 1913, 7739, 16372, 4126, 2230, 3994, 2]
+// Dependencies: [27, 16363, 16365, 16362, 482, 33, 4131, 689, 4067, 4572, 16382, 1212, 7654, 5187, 5186, 4099, 9222, 1914, 7685, 16383, 4127, 2231, 3995, 2]
 // Exports: default
 
-// Module 16370 (EnhancedRoleColorsSelectStyleModal)
+// Module 16381 (EnhancedRoleColorsSelectStyleModal)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { RoleColorsStyle } from "_isNativeReflectConstruct";
 import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS";
@@ -63,14 +63,14 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
   let role;
   ({ roleStyle: require, onStyleChanged: importDefault } = arg0);
   ({ guildId, role } = arg0);
-  let tmp = callback3(importDefault(4066)());
+  let tmp = callback3(importDefault(4067)());
   const dependencyMap = tmp;
-  let obj = require(4571) /* useHasEnhancedRoleColors */;
+  let obj = require(4572) /* useHasEnhancedRoleColors */;
   const hasEnhancedRoleColorsForRole = obj.useHasEnhancedRoleColorsForRole(guildId, role);
-  let obj1 = require(16371) /* useGuildSettingsRoleExampleMessage */;
+  let obj1 = require(16382) /* useGuildSettingsRoleExampleMessage */;
   let intl = require(1212) /* getSystemLocale */.intl;
   let closure_4 = obj1.useGuildSettingsRoleExampleMessage(intl.string(require(1212) /* getSystemLocale */.t.Mi9Kbe));
-  let tmp3 = importDefault(7710);
+  let tmp3 = importDefault(7654);
   tmp3 = new tmp3();
   const RoleColorsStyle = tmp3;
   obj = {};
@@ -104,7 +104,7 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
         obj.disabled = tmp;
         obj.onPress = function onPress() {
           outer1_1(id.id);
-          outer2_1(4098).hideActionSheet();
+          outer2_1(4099).hideActionSheet();
         };
         obj = {
           style: tmp.message,
@@ -113,11 +113,11 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
           rowGenerator: tmp3,
           modifyRow(message) {
             message.message.roleColor = undefined;
-            const result = outer2_0(1913).extractColorStringsFromServerColors(id.colors);
-            const obj = outer2_0(1913);
-            message.message.roleColors = outer2_0(7739).processColorStrings(result);
+            const result = outer2_0(1914).extractColorStringsFromServerColors(id.colors);
+            const obj = outer2_0(1914);
+            message.message.roleColors = outer2_0(7685).processColorStrings(result);
             message.message.shouldShowRoleOnName = true;
-            message.message.avatarURL = outer2_1(16372);
+            message.message.avatarURL = outer2_1(16383);
           }
         };
         const items1 = [outer1_9(outer1_1(tmp[16]), obj), ];
@@ -142,19 +142,19 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
     ({ primary_color: arr2[0], secondary_color: arr2[1], tertiary_color: arr2[2] } = HOLOGRAPHIC_ROLE_COLORS);
     obj6.gradientColors = items1;
     obj6.variant = "text-sm/semibold";
-    obj6.experimental_useNativeText = !require(3994) /* isFabric */.isFabric();
+    obj6.experimental_useNativeText = !require(3995) /* isFabric */.isFabric();
     const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj6.children = intl4.string(importDefault(2230)["+/IHLl"]);
-    obj5.magical = callback(require(4126) /* Text */.Text, obj6);
-    obj4.children = intl3.format(importDefault(2230).VpEDJc, obj5);
-    const items2 = [callback(require(4126) /* Text */.Text, obj4), ];
+    obj6.children = intl4.string(importDefault(2231)["+/IHLl"]);
+    obj5.magical = callback(require(4127) /* Text */.Text, obj6);
+    obj4.children = intl3.format(importDefault(2231).VpEDJc, obj5);
+    const items2 = [callback(require(4127) /* Text */.Text, obj4), ];
     const obj7 = { style: tmp.upsellText, variant: "text-sm/normal" };
     const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj7.children = intl5.string(importDefault(2230).FJZeZF);
-    items2[1] = callback(require(4126) /* Text */.Text, obj7);
+    obj7.children = intl5.string(importDefault(2231).FJZeZF);
+    items2[1] = callback(require(4127) /* Text */.Text, obj7);
     obj3.children = items2;
     tmp8 = callback2(closure_4, obj3);
-    const obj11 = require(3994) /* isFabric */;
+    const obj11 = require(3995) /* isFabric */;
   }
   items[1] = tmp8;
   obj1.children = items;

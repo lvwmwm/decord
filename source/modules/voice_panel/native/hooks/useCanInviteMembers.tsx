@@ -1,10 +1,10 @@
-// Module ID: 15831
-// Function ID: 122188
+// Module ID: 15842
+// Function ID: 122357
 // Name: useCanInviteMembers
-// Dependencies: [1348, 3758, 482, 624, 2]
+// Dependencies: [1348, 3759, 482, 624, 2]
 // Exports: useCanInviteMembers
 
-// Module 15831 (useCanInviteMembers)
+// Module 15842 (useCanInviteMembers)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { Permissions } from "sum";

@@ -1,10 +1,10 @@
-// Module ID: 5697
-// Function ID: 49055
+// Module ID: 11466
+// Function ID: 89282
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 4202, 3759, 653, 686, 507, 5698, 1327, 5699, 5715, 2]
+// Dependencies: [5, 4203, 3760, 653, 686, 507, 6634, 1327, 11467, 11465, 2]
 // Exports: stopLurking
 
-// Module 5697 (_createForOfIteratorHelperLoose)
+// Module 11466 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -94,113 +94,26 @@ function _arrayLikeToArray(arg0, arg1) {
 function stopLurkingAll(items) {
   return _stopLurkingAll(...arguments);
 }
-async function _stopLurkingAll(arg0, arg1) {
-  let closure_0 = arg0;
-  let map;
-  const found = outer2_5.lurkingGuildIds().filter((arg0) => !ignoredGuildIds.includes(arg0));
-  if (0 !== found.length) {
-    const _Map = Map;
-    map = new Map(found.map((arg0) => {
-      const items = [arg0, outer3_5.getLurkingSourceForGuild(arg0)];
-      return items;
-    }));
-    let obj = outer2_1(outer2_2[4]);
-    obj = { type: "GUILD_STOP_LURKING", ignoredGuildIds: arg0 };
-    obj.dispatch(obj);
-    yield Promise.all(found.map((() => {
-      let closure_0 = outer3_3(async (arg0) => {
-        const value = outer2_1.get(arg0);
-        const HTTP = outer5_0(outer5_2[5]).HTTP;
-        yield HTTP.del({ url: outer5_6.GUILD_LEAVE(arg0), body: { lurking: true }, oldFormErrors: true, rejectWithError: true });
-      });
-      return function() {
-        return callback(...arguments);
-      };
-    })()));
-  }
+function _stopLurkingAll() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
 function stopLurkingForGuild(closure_0) {
   return _stopLurkingForGuild(...arguments);
 }
-async function _stopLurkingForGuild(arg0, arg1) {
-  if (lurkingGuildIdsResult.includes(arg0)) {
-    const lurkingSourceForGuild = outer2_5.getLurkingSourceForGuild(tmp);
-    let obj1 = outer2_1(outer2_2[4]);
-    let obj = { type: "GUILD_STOP_LURKING_FOR_GUILD", lurkingGuildId: tmp };
-    obj1.dispatch(obj);
-    const HTTP = outer2_0(outer2_2[5]).HTTP;
-    obj = { url: outer2_6.GUILD_LEAVE(tmp) };
-    obj1 = { lurking: true };
-    obj.body = obj1;
-    obj.oldFormErrors = true;
-    obj.rejectWithError = true;
-    yield HTTP.del(obj);
-  }
+function _stopLurkingForGuild() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
-async function _stopLurking() {
-  let iter = (function*() {
-    let tmp = arg0;
-    if (tmp === undefined) {
-      tmp = null;
-    }
-    let found;
-    yield undefined;
-    const lurkingGuildIdsResult = outer2_5.lurkingGuildIds();
-    if (0 !== lurkingGuildIdsResult.length) {
-      if (!obj2.getMobileLurkerServerPreview("LurkerActionCreators.stopLurking").stickyLurk) {
-        const items = [tmp, outer2_4.getGuildId()];
-        found = items.filter(outer2_0(outer2_2[7]).isNotNullish);
-        if (obj.getMobileLurkerServerPreview("LurkerActionCreators.stopLurking").enabled) {
-          const found1 = lurkingGuildIdsResult.filter((arg0) => !found.includes(arg0));
-          if (found1.length > 0) {
-            function* _loop(value) {
-              if (obj) {
-                return obj.resume();
-              } else {
-                let closure_0 = value;
-                obj = {
-                  onLeave() {
-                      outer5_11(closure_0);
-                    }
-                };
-                const result = outer4_0(outer4_2[8]).openLurkerLeavePrompt(value, obj);
-              }
-            }
-            const tmp10 = outer2_7(found1);
-            let iter = tmp10();
-            if (!iter.done) {
-              const _Symbol = Symbol;
-              const _loopResult = _loop(iter.value);
-              HermesBuiltin.ensureObject("iterator is not an object");
-              while (true) {
-                let iter2 = tmp16(undefined);
-                let tmp17 = iter2;
-                let str6 = "iterator.next() did not return an object";
-                let ensureObjectResult1 = HermesBuiltin.ensureObject("iterator.next() did not return an object");
-                if (!iter2.done) {
-                  break;
-                } else {
-                  do {
-                    let value = iter3.value;
-                    iter4 = tmp10();
-                    iter = iter4;
-                  } while (iter4.done);
-                }
-              }
-              const tmp13 = _loop(iter.value)[Symbol.iterator]();
-            }
-          }
-        }
-        return yield outer2_9(found);
-      }
-      obj2 = outer2_0(outer2_2[6]);
-    }
-  })();
-  iter.next();
-  return iter;
+function _stopLurking() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
 require("_createForOfIteratorHelperLoose").initialize();
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/lurker_mode/LurkerActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/lurker_mode/LurkerActionCreators.tsx");
 
 export { stopLurkingAll };
 export { stopLurkingForGuild };

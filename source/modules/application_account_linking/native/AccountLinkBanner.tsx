@@ -1,10 +1,10 @@
-// Module ID: 15069
-// Function ID: 114791
+// Module ID: 15079
+// Function ID: 114918
 // Name: AccountLinkLargeBanner
-// Dependencies: [31, 27, 1849, 1345, 33, 689, 5472, 15070, 9921, 4547, 4130, 624, 5462, 5482, 5167, 4660, 5119, 1273, 4126, 1212, 4543, 8689, 2]
+// Dependencies: [31, 27, 1850, 1345, 33, 689, 5472, 15080, 9849, 4548, 4131, 624, 5462, 5482, 5166, 4661, 5119, 1273, 4127, 1212, 4544, 8577, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 15069 (AccountLinkLargeBanner)
+// Module 15079 (AccountLinkLargeBanner)
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -182,20 +182,20 @@ obj3.ctaContainer = { marginTop: PX_122, width: "100%" };
 let closure_22 = _createForOfIteratorHelperLoose.createStyles(obj3);
 let obj4 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
 const memoResult = importAllResult.memo((arg0) => {
-  let obj = importDefault(15070);
+  let obj = importDefault(15080);
   const config = obj.useConfig({ location: "AccountLinkBanner" });
   const bannerSize = config.bannerSize;
   let tmp3Result = null;
   if (config.enabled) {
     obj = {};
-    let tmp7 = bannerSize === require(15070) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE;
+    let tmp7 = bannerSize === require(15080) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE;
     if (tmp7) {
       obj = {};
       const merged = Object.assign(arg0);
       tmp7 = callback(AccountLinkLargeBanner, obj);
     }
     const items = [tmp7, ];
-    let tmp15 = bannerSize === require(15070) /* apexExperiment */.MobileAccountLinkingBannerSize.MEDIUM;
+    let tmp15 = bannerSize === require(15080) /* apexExperiment */.MobileAccountLinkingBannerSize.MEDIUM;
     if (tmp15) {
       const obj1 = {};
       const merged1 = Object.assign(arg0);
@@ -215,22 +215,22 @@ export default memoResult;
 export const ACCOUNT_LINK_BANNER_MARGIN_TOP = PX_8;
 export const ACCOUNT_LINK_BANNER_MARGIN_BOTTOM = PX_82;
 export const getScaledAccountLinkBannerHeight = function getScaledAccountLinkBannerHeight(fontScale) {
-  const config = importDefault(15070).getConfig({ location: "getScaledAccountLinkBannerHeight" });
+  const config = importDefault(15080).getConfig({ location: "getScaledAccountLinkBannerHeight" });
   const bannerSize = config.bannerSize;
   if (!config.enabled) {
     return 0;
-  } else if (bannerSize === require(15070) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE) {
+  } else if (bannerSize === require(15080) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE) {
     const sum = PX_8 + PX_12 + closure_16 + PX_16;
-    const sum1 = sum + require(9921) /* scaleLineHeight */.scaleTextLineHeight(c17, fontScale) + PX_4;
-    const obj2 = require(9921) /* scaleLineHeight */;
-    const sum2 = sum1 + 2 * require(9921) /* scaleLineHeight */.scaleTextLineHeight(c18, fontScale) + PX_162;
-    let num = sum2 + require(4547) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT + PX_12 + PX_82;
-    const obj3 = require(9921) /* scaleLineHeight */;
+    const sum1 = sum + require(9849) /* scaleLineHeight */.scaleTextLineHeight(c17, fontScale) + PX_4;
+    const obj2 = require(9849) /* scaleLineHeight */;
+    const sum2 = sum1 + 2 * require(9849) /* scaleLineHeight */.scaleTextLineHeight(c18, fontScale) + PX_162;
+    let num = sum2 + require(4548) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT + PX_12 + PX_82;
+    const obj3 = require(9849) /* scaleLineHeight */;
   } else {
     num = 0;
-    if (bannerSize === require(15070) /* apexExperiment */.MobileAccountLinkingBannerSize.MEDIUM) {
+    if (bannerSize === require(15080) /* apexExperiment */.MobileAccountLinkingBannerSize.MEDIUM) {
       const sum3 = PX_8 + PX_12 + 48 + PX_122;
-      num = sum3 + require(4547) /* getButtonPadding */.SMALL_BUTTON_HEIGHT + PX_12 + PX_82;
+      num = sum3 + require(4548) /* getButtonPadding */.SMALL_BUTTON_HEIGHT + PX_12 + PX_82;
     }
   }
 };

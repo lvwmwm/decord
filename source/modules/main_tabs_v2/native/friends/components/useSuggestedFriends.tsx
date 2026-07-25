@@ -1,10 +1,10 @@
-// Module ID: 14961
-// Function ID: 114002
+// Module ID: 14971
+// Function ID: 114129
 // Name: useSuggestedFriends
-// Dependencies: [57, 31, 6904, 11755, 624, 22, 3969, 2]
+// Dependencies: [57, 31, 5895, 11725, 624, 22, 3970, 2]
 // Exports: default
 
-// Module 14961 (useSuggestedFriends)
+// Module 14971 (useSuggestedFriends)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,9 +46,9 @@ export default function useSuggestedFriends(arg0) {
       });
       let obj = first(stateFromStoresArray[5]);
       return first(stateFromStoresArray[5]).unionBy(found, mapped, (user) => user.user.id).sort((user, user2) => {
-        const name = first(3969).getName(user.user);
-        const obj = first(3969);
-        return name.localeCompare(first(3969).getName(user2.user));
+        const name = first(3970).getName(user.user);
+        const obj = first(3970);
+        return name.localeCompare(first(3970).getName(user2.user));
       });
     } else {
       return [];

@@ -1,10 +1,10 @@
-// Module ID: 12373
-// Function ID: 96258
+// Module ID: 12349
+// Function ID: 96067
 // Name: InAppReportsBottomButton
-// Dependencies: [31, 27, 482, 33, 4130, 689, 1212, 2298, 4126, 4543, 1273, 2]
+// Dependencies: [31, 27, 482, 33, 4131, 689, 1212, 2299, 4127, 4544, 1273, 2]
 // Exports: default
 
-// Module 12373 (InAppReportsBottomButton)
+// Module 12349 (InAppReportsBottomButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,7 +40,7 @@ export default function InAppReportsBottomButton(button) {
       const intl2 = button(1212).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        let stringResult = string(importDefault(2298).ZUyreS);
+        let stringResult = string(importDefault(2299).ZUyreS);
       } else {
         stringResult = string(tmp6(1212).t["G+vU89"]);
         const intl3 = tmp6(1212).intl;
@@ -60,7 +60,7 @@ export default function InAppReportsBottomButton(button) {
       const intl4 = button(1212).intl;
       const string2 = intl4.string;
       if (isModeratorReport) {
-        let string2Result = string2(importDefault(2298).psKFdJ);
+        let string2Result = string2(importDefault(2299).psKFdJ);
       } else {
         string2Result = string2(button(1212).t.h6D8Vy);
       }
@@ -71,7 +71,7 @@ export default function InAppReportsBottomButton(button) {
       let tmp20 = null;
       if (null != tmp2) {
         const obj1 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp2 };
-        tmp20 = callback(button(4126).Text, obj1);
+        tmp20 = callback(button(4127).Text, obj1);
       }
       const items1 = [tmp20, , ];
       const obj2 = {
@@ -82,7 +82,7 @@ export default function InAppReportsBottomButton(button) {
         text: stringResult1,
         variant: str2
       };
-      items1[1] = callback(button(4543).Button, obj2);
+      items1[1] = callback(button(4544).Button, obj2);
       let tmp27 = null;
       if (hasError) {
         const obj3 = { style: tmp.errorText, children: string2Result };

@@ -1,10 +1,10 @@
-// Module ID: 12116
-// Function ID: 94927
+// Module ID: 12092
+// Function ID: 94732
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [31, 27, 33, 4130, 689, 12026, 12113, 4126, 12114, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 12002, 12089, 4127, 12090, 2]
 // Exports: default
 
-// Module 12116 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 12092 (UserProfileApplicationWidgetBottomStatsLayout)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

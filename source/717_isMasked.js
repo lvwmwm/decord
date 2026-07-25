@@ -1,5 +1,5 @@
 // Module ID: 717
-// Function ID: 8741
+// Function ID: 8747
 // Name: isMasked
 // Dependencies: [718]
 

@@ -1,9 +1,9 @@
-// Module ID: 5076
-// Function ID: 44157
+// Module ID: 5077
+// Function ID: 44169
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1316, 1348, 4469, 1907, 653, 1282, 1327, 5077, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1316, 1348, 4470, 1908, 653, 1282, 1327, 1841, 566, 686, 2]
 
-// Module 5076 (_isNativeReflectConstruct)
+// Module 5077 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import set from "set";
@@ -386,7 +386,7 @@ tmp2 = new tmp2(require("dispatcher"), {
         }
       });
     }
-    obj = require(5077) /* isFavoritesGuildId */;
+    obj = require(1841) /* isFavoritesGuildId */;
   },
   CATEGORY_EXPAND_ALL: function handleCategoryExpandAll(guildId) {
     guildId = guildId.guildId;
@@ -397,7 +397,7 @@ tmp2 = new tmp2(require("dispatcher"), {
         delete tmp2[tmp];
       });
     }
-    obj = require(5077) /* isFavoritesGuildId */;
+    obj = require(1841) /* isFavoritesGuildId */;
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     return deleteCategory(channel.channel.id);

@@ -1,10 +1,10 @@
-// Module ID: 5641
-// Function ID: 48243
+// Module ID: 12556
+// Function ID: 97245
 // Name: canSeeGuildRoleSubscriptionSettingsContent
-// Dependencies: [1391, 3758, 1849, 653, 566, 5642, 5634, 2]
+// Dependencies: [1391, 3759, 1850, 653, 566, 12557, 12550, 2]
 // Exports: canSeeGuildRoleSubscriptionSettings, getGuildRoleSubscriptionSettingsVisibility, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 5641 (canSeeGuildRoleSubscriptionSettingsContent)
+// Module 12556 (canSeeGuildRoleSubscriptionSettingsContent)
 import { isGuildOwner } from "isGuildOwner";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -70,8 +70,8 @@ function useGuildRoleSubscriptionSettingsVisibility(stateFromStores) {
     return tmp2;
   });
   const tmp = useCanManageGuildRoleSubscriptions(stateFromStores);
-  const isUserInCreatorMonetizationEligibleCountry = _require(5642).useIsUserInCreatorMonetizationEligibleCountry();
-  _require(5634);
+  const isUserInCreatorMonetizationEligibleCountry = _require(12557).useIsUserInCreatorMonetizationEligibleCountry();
+  _require(12550);
   if (null != stateFromStores) {
     const id = stateFromStores.id;
   }
@@ -111,7 +111,7 @@ export const getGuildRoleSubscriptionSettingsVisibility = function getGuildRoleS
   if (null == guild) {
     return obj.NONE;
   } else {
-    obj = { guild, isOwner: isGuildOwner(guild, currentUser.getCurrentUser()), canManageGuildRoleSubscriptions: canManageGuildRoleSubscriptions(guild), isUserInCreatorMonetizationEligibleCountry: require(5642) /* getCreatorMonetizationEligibleCountry */.isUserInCreatorMonetizationEligibleCountry() };
+    obj = { guild, isOwner: isGuildOwner(guild, currentUser.getCurrentUser()), canManageGuildRoleSubscriptions: canManageGuildRoleSubscriptions(guild), isUserInCreatorMonetizationEligibleCountry: require(12557) /* getCreatorMonetizationEligibleCountry */.isUserInCreatorMonetizationEligibleCountry() };
     const features = guild.features;
     obj.shouldRestrictUpdatingRoleSubscriptionSettings = features.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
     return computeGuildRoleSubscriptionSettingsVisibility(obj);

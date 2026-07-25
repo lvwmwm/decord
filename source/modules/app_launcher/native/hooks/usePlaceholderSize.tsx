@@ -1,10 +1,10 @@
-// Module ID: 11204
-// Function ID: 87157
+// Module ID: 11165
+// Function ID: 86802
 // Name: usePlaceholderWidth
 // Dependencies: [31, 2]
 // Exports: usePlaceholderWidth
 
-// Module 11204 (usePlaceholderWidth)
+// Module 11165 (usePlaceholderWidth)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/hooks/usePlaceholderSize.tsx");

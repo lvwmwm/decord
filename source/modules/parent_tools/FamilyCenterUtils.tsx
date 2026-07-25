@@ -1,10 +1,10 @@
-// Module ID: 6827
-// Function ID: 53828
+// Module ID: 5827
+// Function ID: 51178
 // Name: getActivityTypeTextConfigs
-// Dependencies: [6769, 6770, 1212, 2198, 3712, 6771, 2]
+// Dependencies: [5765, 5766, 1212, 2199, 3713, 5767, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 6827 (getActivityTypeTextConfigs)
+// Module 5827 (getActivityTypeTextConfigs)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import items from "items";
 
@@ -34,37 +34,37 @@ let result = require("getSystemLocale").fileFinishedImporting("modules/parent_to
 export const getEmptyActivityFormatter = function getEmptyActivityFormatter() {
   const obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj.today = intl.string(importDefault(2198).VjIAQQ);
+  obj.today = intl.string(importDefault(2199).VjIAQQ);
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.yesterday = intl2.string(importDefault(2198)["2a8xHY"]);
-  obj.days = importDefault(2198).Xt6oND;
+  obj.yesterday = intl2.string(importDefault(2199)["2a8xHY"]);
+  obj.days = importDefault(2199).Xt6oND;
   return obj;
 };
 export const getActivityWindowTimestampFormatter = function getActivityWindowTimestampFormatter(arg0) {
   const obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  const tmp4 = importDefault(2198);
+  const tmp4 = importDefault(2199);
   if (arg0) {
     obj.today = string(tmp4["2AtcIs"]);
     const intl3 = tmp(1212).intl;
-    obj.yesterday = intl3.string(tmp3(2198).stOECr);
-    obj.days = tmp3(2198).n8n5Ba;
+    obj.yesterday = intl3.string(tmp3(2199).stOECr);
+    obj.days = tmp3(2199).n8n5Ba;
     let tmp5 = obj;
   } else {
     obj.today = string(tmp4.g1ZX6m);
     const intl2 = tmp(1212).intl;
-    obj.yesterday = intl2.string(tmp3(2198).s3qSVt);
-    obj.days = tmp3(2198).f1UJiC;
+    obj.yesterday = intl2.string(tmp3(2199).s3qSVt);
+    obj.days = tmp3(2199).f1UJiC;
     tmp5 = obj;
   }
   return tmp5;
 };
 export const formatUserActivityTimestamp = function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
-  let obj = importDefault(3712)();
-  const diffResult = obj.diff(importDefault(3712)(time), "s");
+  let obj = importDefault(3713)();
+  const diffResult = obj.diff(importDefault(3713)(time), "s");
   const tmp2 = timestampFormatter();
-  importDefault(3712)(time).format("LL");
+  importDefault(3713)(time).format("LL");
   if (diffResult < 86400) {
     let yesterday = tmp2.today;
   } else if (diffResult < 172800) {
@@ -84,10 +84,10 @@ export const formatUserActivityTimestamp = function formatUserActivityTimestamp(
   return yesterday;
 };
 export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
-  let obj = importDefault(3712)();
-  const diffResult = obj.diff(importDefault(3712)(arg0), "s");
+  let obj = importDefault(3713)();
+  const diffResult = obj.diff(importDefault(3713)(arg0), "s");
   const tmp2 = SENT_TIMESTAMP_FORMATTER();
-  importDefault(3712)(arg0);
+  importDefault(3713)(arg0);
   if (diffResult < 60) {
     let yesterday = tmp2.seconds;
   } else if (diffResult < 3600) {
@@ -185,7 +185,7 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
   if (authStore.getAreLinkedUsersProcessed()) {
     return authStore.getLinkedUsers();
   } else {
-    const linkedUsers = importDefault(6771).fetchLinkedUsers();
+    const linkedUsers = importDefault(5767).fetchLinkedUsers();
   }
 };
 export { hasActiveParentLinks };
@@ -197,7 +197,7 @@ export const getTopUserOrGuildDescription = function getTopUserOrGuildDescriptio
     if (0 === dms_sent) {
       const intl3 = require(1212) /* getSystemLocale */.intl;
       let obj = { callCount: call_count };
-      let formatToPlainStringResult = intl3.formatToPlainString(importDefault(2198)["L/Cj7S"], obj);
+      let formatToPlainStringResult = intl3.formatToPlainString(importDefault(2199)["L/Cj7S"], obj);
     }
     return formatToPlainStringResult;
   }
@@ -205,10 +205,10 @@ export const getTopUserOrGuildDescription = function getTopUserOrGuildDescriptio
     if (0 === call_count) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj = { messageCount: dms_sent };
-      formatToPlainStringResult = intl2.formatToPlainString(importDefault(2198)["6X1F0i"], obj);
+      formatToPlainStringResult = intl2.formatToPlainString(importDefault(2199)["6X1F0i"], obj);
     }
   }
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { messageCount: dms_sent, callCount: call_count };
-  formatToPlainStringResult = intl.formatToPlainString(importDefault(2198).IYqGMG, obj);
+  formatToPlainStringResult = intl.formatToPlainString(importDefault(2199).IYqGMG, obj);
 };

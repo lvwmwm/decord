@@ -1,10 +1,10 @@
-// Module ID: 8286
-// Function ID: 65295
+// Module ID: 8021
+// Function ID: 63850
 // Name: useFramePreviewOverrideFrame
-// Dependencies: [31, 6781, 8287, 1876, 2]
+// Dependencies: [31, 5777, 8022, 1877, 2]
 // Exports: default
 
-// Module 8286 (useFramePreviewOverrideFrame)
+// Module 8021 (useFramePreviewOverrideFrame)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { useFramePreviewOverrideStore as closure_4 } from "_createForOfIteratorHelperLoose";

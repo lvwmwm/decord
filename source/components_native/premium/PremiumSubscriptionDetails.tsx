@@ -1,10 +1,10 @@
-// Module ID: 7378
-// Function ID: 59517
+// Module ID: 6454
+// Function ID: 57936
 // Name: getHeaderBackground
-// Dependencies: [57, 5, 31, 27, 1849, 5619, 653, 1851, 33, 689, 4130, 3776, 7165, 7379, 7380, 7162, 7163, 7164, 7166, 7381, 7382, 7383, 7114, 7384, 7385, 7386, 7387, 7388, 7167, 7389, 7390, 7391, 7392, 7393, 7394, 7395, 7170, 7396, 7397, 7398, 7172, 7399, 7400, 7401, 7156, 7203, 7402, 7403, 6647, 6658, 491, 4451, 1456, 566, 44, 5462, 5616, 477, 1273, 4543, 1212, 4126, 7414, 5482, 7415, 7416, 2]
+// Dependencies: [57, 5, 31, 27, 1850, 5619, 653, 1852, 33, 689, 4131, 3777, 6249, 6455, 6456, 6246, 6247, 6248, 6250, 6457, 6458, 6459, 6191, 6460, 6461, 6462, 6463, 6464, 6251, 6465, 6466, 6467, 6468, 6469, 6470, 6471, 6254, 6472, 6473, 6474, 6256, 6475, 6476, 6477, 6238, 6275, 6478, 6479, 6489, 6274, 491, 4452, 1456, 566, 44, 5462, 5616, 477, 1273, 4544, 1212, 4127, 6490, 5482, 6491, 6492, 2]
 // Exports: default
 
-// Module 7378 (getHeaderBackground)
+// Module 6454 (getHeaderBackground)
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import registerAsset from "registerAsset";
@@ -66,29 +66,29 @@ async function _handleCancelSubscription(arg0, arg1, arg2, arg3) {
 function onCancelClick(subscription, analyticsLocations) {
   const _require = subscription;
   const importDefault = analyticsLocations;
-  let obj = _require(7156);
+  let obj = _require(6238);
   const result = obj.trackPremiumSubscriptionCancellationStarted(subscription, analyticsLocations);
   if (obj2.isBoostOnlySubscription(subscription)) {
     let tmp4Result = handleCancelSubscription(subscription, analyticsLocations);
   } else {
     obj = {
       subscription,
-      mode: _require(7403).WhatYouLoseMode.CANCEL,
+      mode: _require(6479).WhatYouLoseMode.CANCEL,
       onContinue(arg0) {
           return outer1_32(closure_0, closure_1, arg0);
         }
     };
-    tmp4Result = importDefault(7402)(obj);
-    const tmp4 = importDefault(7402);
+    tmp4Result = importDefault(6478)(obj);
+    const tmp4 = importDefault(6478);
   }
   return tmp4Result;
 }
 function handleManageSubscription(subscription, set, analyticsLocations) {
   if (subscription.status === constants3.ACCOUNT_HOLD) {
-    closure_8.openURL(require(3776) /* _createForOfIteratorHelperLoose */.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
-    const obj4 = require(3776) /* _createForOfIteratorHelperLoose */;
+    closure_8.openURL(require(3777) /* _createForOfIteratorHelperLoose */.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
+    const obj4 = require(3777) /* _createForOfIteratorHelperLoose */;
   } else {
-    let obj = require(6647) /* launchPremiumPlanSelect */;
+    let obj = require(6489) /* launchPremiumPlanSelect */;
     obj = { navigation: set };
     obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_PREMIUM };
     obj.analyticsLocation = obj;
@@ -467,7 +467,7 @@ obj16[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
 obj16[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
 obj16[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
 obj11[require("_createForOfIteratorHelperLoose").Branding.PREMIUM_GUILD] = obj16;
-let closure_22 = { [arg1(3776).Branding.BUNDLE]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageBundle, [_createForOfIteratorHelperLoose.ERROR]: obj.imageBundle, [_createForOfIteratorHelperLoose.RESUB]: obj.imageBundle }, [arg1(3776).Branding.TIER_0]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageTier0, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumNonActive }, [arg1(3776).Branding.TIER_1]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageTier1, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumNonActive }, [arg1(3776).Branding.TIER_2]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageTier2, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumNonActive }, [arg1(3776).Branding.PREMIUM_GUILD]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imagePremiumGuild, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumGuildNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumGuildNonActive } };
+let closure_22 = { [arg1(3777).Branding.BUNDLE]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageBundle, [_createForOfIteratorHelperLoose.ERROR]: obj.imageBundle, [_createForOfIteratorHelperLoose.RESUB]: obj.imageBundle }, [arg1(3777).Branding.TIER_0]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageTier0, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumNonActive }, [arg1(3777).Branding.TIER_1]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageTier1, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumNonActive }, [arg1(3777).Branding.TIER_2]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageTier2, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumNonActive }, [arg1(3777).Branding.PREMIUM_GUILD]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imagePremiumGuild, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumGuildNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumGuildNonActive } };
 const obj22 = {};
 const obj23 = {};
 obj23[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
@@ -494,7 +494,7 @@ obj27[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
 obj27[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
 obj27[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
 obj22[require("_createForOfIteratorHelperLoose").Branding.PREMIUM_GUILD] = obj27;
-const obj28 = { [arg1(3776).Branding.BUNDLE]: obj.logoPremiumBundle, [arg1(3776).Branding.TIER_0]: obj.logoPremiumTier0, [arg1(3776).Branding.TIER_1]: obj.logoPremiumTier1, [arg1(3776).Branding.TIER_2]: obj.logoPremiumTier2, [arg1(3776).Branding.PREMIUM_GUILD]: obj.logoPremiumGuild };
+const obj28 = { [arg1(3777).Branding.BUNDLE]: obj.logoPremiumBundle, [arg1(3777).Branding.TIER_0]: obj.logoPremiumTier0, [arg1(3777).Branding.TIER_1]: obj.logoPremiumTier1, [arg1(3777).Branding.TIER_2]: obj.logoPremiumTier2, [arg1(3777).Branding.PREMIUM_GUILD]: obj.logoPremiumGuild };
 let closure_25 = { [_createForOfIteratorHelperLoose.ACTIVE]: obj.price, [_createForOfIteratorHelperLoose.ERROR]: obj.price, [_createForOfIteratorHelperLoose.RESUB]: obj.priceDark };
 let result = require("result").fileFinishedImporting("components_native/premium/PremiumSubscriptionDetails.tsx");
 
@@ -504,7 +504,7 @@ export default function PremiumSubscriptionDetails(subscription) {
   subscription = subscription.subscription;
   ({ style, onClickManagePremiumGuild } = subscription);
   const tmp = callback5();
-  let obj = require(7414) /* createSubscriptionInvoicePreview */;
+  let obj = require(6490) /* createSubscriptionInvoicePreview */;
   obj = { subscriptionId: subscription.id, renewal: true, analyticsLocations: importDefault(5462)().analyticsLocations, analyticsLocation: importDefault(5482).PREMIUM_SUBSCRIPTION_DETAILS };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
   let tmp4Result = null;
@@ -513,20 +513,20 @@ export default function PremiumSubscriptionDetails(subscription) {
     const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t.ITurwY);
-    const items = [callback3(require(4126) /* Text */.Text, obj1), , , , ];
+    const items = [callback3(require(4127) /* Text */.Text, obj1), , , , ];
     let tmp9 = null != subscription.renewalMutations;
     if (tmp9) {
       tmp9 = subscription.status !== constants3.CANCELED;
     }
     if (tmp9) {
       const obj2 = { subscription, renewalMutations: subscription.renewalMutations };
-      tmp9 = callback3(importDefault(7415), obj2);
+      tmp9 = callback3(importDefault(6491), obj2);
     }
     items[1] = tmp9;
     let tmp15 = subscription.status === constants3.ACCOUNT_HOLD;
     if (tmp15) {
       const obj3 = { subscription };
-      tmp15 = callback3(importDefault(7416), obj3);
+      tmp15 = callback3(importDefault(6492), obj3);
     }
     items[2] = tmp15;
     const obj4 = { subscription, renewalInvoicePreview: first, onClickManagePremiumGuild };
@@ -534,7 +534,7 @@ export default function PremiumSubscriptionDetails(subscription) {
     const obj5 = { style: tmp.desktopSubtext, variant: "text-sm/medium" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj5.children = intl2.string(require(1212) /* getSystemLocale */.t["MTG+3O"]);
-    items[4] = callback3(require(4126) /* Text */.Text, obj5);
+    items[4] = callback3(require(4127) /* Text */.Text, obj5);
     obj.children = items;
     tmp4Result = closure_17(closure_9, obj);
     const tmp4 = closure_17;

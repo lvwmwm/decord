@@ -1,10 +1,10 @@
-// Module ID: 14778
-// Function ID: 112676
+// Module ID: 14789
+// Function ID: 112804
 // Name: useRegistrationUIStore
 // Dependencies: [621, 682, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 14778 (useRegistrationUIStore)
+// Module 14789 (useRegistrationUIStore)
 import keys from "keys";
 
 let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: undefined }));

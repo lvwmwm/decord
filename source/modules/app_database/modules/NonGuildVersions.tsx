@@ -1,9 +1,9 @@
-// Module ID: 6898
-// Function ID: 54939
+// Module ID: 5889
+// Function ID: 52245
 // Name: NonGuildVersions
-// Dependencies: [5, 6, 7, 3947, 3, 6891, 22, 1882, 664, 2]
+// Dependencies: [5, 6, 7, 3948, 3, 5882, 22, 1883, 664, 2]
 
-// Module 6898 (NonGuildVersions)
+// Module 5889 (NonGuildVersions)
 import isCacheEnabled from "isCacheEnabled";
 import apply from "apply";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,7 +25,7 @@ let tmp4 = (() => {
               return self.handleConnectionOpen(arg0, arg1);
             }
       };
-      obj = f54946(outer1_2[5]);
+      obj = f52252(outer1_2[5]);
       if (obj.isCacheEnabled()) {
         tmp2 = outer1_6;
         tmp3 = NonGuildVersions;

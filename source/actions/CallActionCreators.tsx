@@ -1,8 +1,8 @@
-// Module ID: 8961
-// Function ID: 70591
-// Dependencies: [1348, 3767, 1849, 653, 4944, 507, 675, 4470, 1212, 8962, 8959, 686, 2]
+// Module ID: 8849
+// Function ID: 70070
+// Dependencies: [1348, 3768, 1850, 653, 4945, 507, 675, 4471, 1212, 8850, 8847, 686, 2]
 
-// Module 8961
+// Module 8849
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -25,7 +25,7 @@ export default {
     const blocked = arg3;
     const user = arg4;
     function doCall(arg0) {
-      const voiceChannel = callback(4944).selectVoiceChannel(callback, dependencyMap);
+      const voiceChannel = callback(4945).selectVoiceChannel(callback, dependencyMap);
       if (arg0) {
         self.ring(callback);
       }
@@ -68,7 +68,7 @@ export default {
             obj = { userId: outer1_4, context: { location: "Call" } };
             obj.addRelationship(obj);
           };
-          callback(4470).show(obj);
+          callback(4471).show(obj);
         });
       }
     } else {
@@ -78,7 +78,7 @@ export default {
   ring(channelId, items, gdm_invite) {
     channel = channel.getChannel(channelId);
     if (null != channel) {
-      let obj = require(8959) /* useCanRingToGuildVoiceChannel */;
+      let obj = require(8847) /* useCanRingToGuildVoiceChannel */;
       const CALLABLE = constants.CALLABLE;
       const result = obj.canRingUsersInChannel(channel);
       if (result) {

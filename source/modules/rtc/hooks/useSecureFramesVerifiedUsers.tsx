@@ -1,10 +1,10 @@
-// Module ID: 14565
-// Function ID: 111115
+// Module ID: 14576
+// Function ID: 111242
 // Name: useSecureFramesVerifiedUserIds
-// Dependencies: [8920, 566, 2]
+// Dependencies: [8808, 566, 2]
 // Exports: useSecureFramesVerifiedUserIds
 
-// Module 14565 (useSecureFramesVerifiedUserIds)
+// Module 14576 (useSecureFramesVerifiedUserIds)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

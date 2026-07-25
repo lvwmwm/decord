@@ -1,10 +1,10 @@
-// Module ID: 11798
-// Function ID: 91604
+// Module ID: 11774
+// Function ID: 91409
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 57, 31, 27, 11780, 33, 4130, 689, 7636, 5513, 1387, 4126, 1212, 1557, 4543, 1273, 1456, 5788, 5786, 11793, 4029, 11788, 2]
+// Dependencies: [5, 57, 31, 27, 11756, 33, 4131, 689, 7575, 5513, 1387, 4127, 1212, 1557, 4544, 1273, 1456, 6695, 8232, 11769, 4030, 11764, 2]
 // Exports: default
 
-// Module 11798 (HubEmailConnectionGuildSelectRow)
+// Module 11774 (HubEmailConnectionGuildSelectRow)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -42,7 +42,7 @@ function HubEmailConnectionGuildSelectHeader() {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.mOMeiR);
-  obj.children = callback(require(4126) /* Text */.Text, obj);
+  obj.children = callback(require(4127) /* Text */.Text, obj);
   return callback(closure_6, obj);
 }
 function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
@@ -60,7 +60,7 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl.string(require(1212) /* getSystemLocale */.t.G3Zk7V);
   obj1.onPress = onFooterButtonPressed.onFooterButtonPressed;
-  const items1 = [callback(require(4543) /* Button */.Button, obj1), ];
+  const items1 = [callback(require(4544) /* Button */.Button, obj1), ];
   let tmp7Result = null != errors;
   if (tmp7Result) {
     const obj2 = { style: tmp.error };

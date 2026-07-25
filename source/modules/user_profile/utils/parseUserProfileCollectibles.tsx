@@ -1,10 +1,10 @@
-// Module ID: 6877
-// Function ID: 54394
+// Module ID: 5652
+// Function ID: 48302
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1876, 2]
+// Dependencies: [1877, 2]
 // Exports: default
 
-// Module 6877 (_createForOfIteratorHelperLoose)
+// Module 5652 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;
@@ -118,7 +118,7 @@ export default function parseUserProfileCollectibles(collectibles) {
         let arr = items.push(obj);
         let tmp6 = require;
         let tmp7 = dependencyMap;
-        if (value.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
+        if (value.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
           obj = { skuId: value.sku_id };
           let rounded;
           if (null != value.expires_at) {
@@ -138,11 +138,11 @@ export default function parseUserProfileCollectibles(collectibles) {
           let tmp25 = dependencyMap;
           tmp11 = tmp17;
           tmp12 = tmp18;
-          if (value.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME) {
+          if (value.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME) {
             let obj1 = { skuId: value.sku_id };
             let tmp26 = require;
             let tmp27 = dependencyMap;
-            obj1.type = require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
+            obj1.type = require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
             let date2;
             if (null != value.expires_at) {
               let _Date2 = Date;

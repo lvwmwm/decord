@@ -1,10 +1,10 @@
-// Module ID: 10561
-// Function ID: 82407
+// Module ID: 10448
+// Function ID: 81018
 // Name: getEmbeddedActivityParticipantId
-// Dependencies: [6, 7, 1347, 4149, 1194, 4809, 1348, 4177, 4952, 1849, 10562, 4146, 4148, 653, 4191, 4960, 3754, 10563, 22, 10564, 10565, 4319, 9126, 4194, 2]
+// Dependencies: [6, 7, 1347, 4150, 1194, 4810, 1348, 4178, 4953, 1850, 10449, 4147, 4149, 653, 4192, 4961, 3755, 10450, 22, 10451, 10452, 4320, 9018, 4195, 2]
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual
 
-// Module 10561 (getEmbeddedActivityParticipantId)
+// Module 10448 (getEmbeddedActivityParticipantId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -60,7 +60,7 @@ function sortKey(type) {
             str = "\u0003";
           }
           const _HermesInternal = HermesInternal;
-          return "" + str + importDefault(4960)(type.userNick, type.user);
+          return "" + str + importDefault(4961)(type.userNick, type.user);
         }
       }
     }
@@ -69,7 +69,7 @@ function sortKey(type) {
       str4 = "\u0002";
     }
     const _HermesInternal2 = HermesInternal;
-    return "" + str4 + importDefault(4960)(type.userNick, type.user) + "\u0003";
+    return "" + str4 + importDefault(4961)(type.userNick, type.user) + "\u0003";
   }
 }
 ({ isStreamParticipant: closure_15, ParticipantTypes: closure_16 } = ParticipantTypes);

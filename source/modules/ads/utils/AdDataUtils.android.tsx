@@ -1,10 +1,10 @@
-// Module ID: 6970
-// Function ID: 55743
+// Module ID: 5961
+// Function ID: 53049
 // Name: getAdUser
-// Dependencies: [57, 31, 6971, 6972, 6973, 2]
+// Dependencies: [57, 31, 5962, 5963, 5964, 2]
 // Exports: getAdUser, useAdUser
 
-// Module 6970 (getAdUser)
+// Module 5961 (getAdUser)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,8 +18,8 @@ export const getAdUser = function getAdUser(questContentName) {
   if (null == adUser) {
     if (!_isNativeReflectConstruct.hasFetchFailed) {
       if (!_isNativeReflectConstruct.isFetching) {
-        adUser = require(6973) /* _fetchAdUser */.fetchAdUser(questContentName);
-        const obj = require(6973) /* _fetchAdUser */;
+        adUser = require(5964) /* _fetchAdUser */.fetchAdUser(questContentName);
+        const obj = require(5964) /* _fetchAdUser */;
       }
       let resolved = new Promise((arg0) => {
         let closure_0 = arg0;

@@ -1,10 +1,10 @@
-// Module ID: 14972
-// Function ID: 114123
+// Module ID: 14982
+// Function ID: 114250
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1907, 482, 566, 3763, 2]
+// Dependencies: [1908, 482, 566, 3764, 2]
 // Exports: useFirstGloballyViewbleGuildChannelId
 
-// Module 14972 (_createForOfIteratorHelperLoose)
+// Module 14982 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "sum";
 

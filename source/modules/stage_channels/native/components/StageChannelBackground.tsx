@@ -1,10 +1,10 @@
-// Module ID: 10800
-// Function ID: 83880
+// Module ID: 10772
+// Function ID: 83622
 // Name: StageChannelBackground
-// Dependencies: [31, 27, 33, 4130, 689, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 2]
 // Exports: default
 
-// Module 10800 (StageChannelBackground)
+// Module 10772 (StageChannelBackground)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

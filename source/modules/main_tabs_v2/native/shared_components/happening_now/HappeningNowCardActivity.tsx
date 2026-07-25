@@ -1,9 +1,9 @@
-// Module ID: 14983
-// Function ID: 114198
+// Module ID: 14993
+// Function ID: 114325
 // Name: IconOrPreview
-// Dependencies: [31, 27, 1353, 1849, 14233, 653, 482, 33, 14984, 14985, 4130, 689, 5462, 566, 5468, 675, 10844, 1934, 8537, 14979, 4319, 14986, 14234, 14980, 1273, 14989, 9119, 14990, 9114, 11949, 8665, 4654, 8979, 1212, 3974, 10815, 5085, 14981, 14992, 10818, 7909, 14994, 7971, 2]
+// Dependencies: [31, 27, 1353, 1850, 14244, 653, 482, 33, 14994, 14995, 4131, 689, 5462, 566, 5468, 675, 10816, 1935, 8297, 14989, 4320, 14996, 14245, 14990, 1273, 14999, 9011, 15000, 9006, 11925, 8441, 4655, 8867, 1212, 3975, 10787, 5085, 14991, 15002, 10790, 7856, 15004, 7919, 2]
 
-// Module 14983 (IconOrPreview)
+// Module 14993 (IconOrPreview)
 import importAllResult from "StageIcon";
 import get_ActivityIndicator from "SpotifyNeutralIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -134,10 +134,10 @@ function IconOrPreview(arg0) {
     }
   })({ userId, activity, game, stream });
   ({ r, g, b } = tmp2.accentColor);
-  let obj = require(3974) /* hexToRgb */;
+  let obj = require(3975) /* hexToRgb */;
   const rgbToHexResult = obj.rgbToHex(r, g, b);
   const importDefault = rgbToHexResult;
-  let obj1 = require(3974) /* hexToRgb */;
+  let obj1 = require(3975) /* hexToRgb */;
   const hexWithOpacityResult = obj1.hexWithOpacity(rgbToHexResult, 0.2);
   const dependencyMap = hexWithOpacityResult;
   let items = [rgbToHexResult, tmp.cardImageAssetContainer];
@@ -157,10 +157,10 @@ function IconOrPreview(arg0) {
     const intl5 = require(1212) /* getSystemLocale */.intl;
     obj.ctaText = intl5.string(require(1212) /* getSystemLocale */.t["7Xq/nV"]);
     obj.disabled = true;
-    obj.children = callback(importDefault(10815), obj);
+    obj.children = callback(importDefault(10787), obj);
     return callback(closure_4, obj);
   } else {
-    if (importDefault(9119)(activity)) {
+    if (importDefault(9011)(activity)) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       let stringResult = intl4.string(require(1212) /* getSystemLocale */.t.rmnkz4);
     } else {
@@ -171,7 +171,7 @@ function IconOrPreview(arg0) {
       if (type === constants.LISTENING) {
         const intl3 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl3.string(require(1212) /* getSystemLocale */.t.kUEnxN);
-      } else if (importDefault(11949)(activity)) {
+      } else if (importDefault(11925)(activity)) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl2.string(require(1212) /* getSystemLocale */.t.T0uYK9);
       } else {
@@ -197,7 +197,7 @@ function StageStreamAvatars(stage) {
   let audienceCount;
   let audienceFriends;
   stage = stage.stage;
-  let obj = require(14981) /* useLiveStageData */;
+  let obj = require(14991) /* useLiveStageData */;
   const liveStageData = obj.useLiveStageData(stage);
   obj = { style: callback3().avatarStackContainer };
   ({ audienceCount, audienceFriends } = liveStageData);
@@ -209,7 +209,7 @@ function StageStreamAvatars(stage) {
   obj.userCount = audienceCount + 1;
   obj.isStage = true;
   obj.avatarSize = require(1273) /* Button */.AvatarSizes.SIZE_16;
-  obj.children = callback(require(14992) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
+  obj.children = callback(require(15002) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
   return callback(closure_4, obj);
 }
 ({ PixelRatio, View: closure_4 } = get_ActivityIndicator);

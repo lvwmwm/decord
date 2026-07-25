@@ -1,10 +1,10 @@
-// Module ID: 8379
-// Function ID: 66287
+// Module ID: 8137
+// Function ID: 64938
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getMobileMediaViewerShareExperimentEnabled
 
-// Module 8379 (apexExperiment)
+// Module 8137 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-mobile-media-viewer-share", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

@@ -1,10 +1,10 @@
-// Module ID: 15472
-// Function ID: 118913
+// Module ID: 15482
+// Function ID: 119041
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 4143, 1351, 4808, 6758, 1353, 1348, 1917, 1838, 4177, 4222, 4202, 1906, 3947, 4810, 4325, 1849, 653, 1355, 1851, 33, 4324, 7016, 15473, 6700, 5077, 675, 1327, 15474, 10223, 1872, 10224, 566, 15475, 15476, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 4144, 1351, 4809, 5751, 1353, 1348, 1918, 1838, 4178, 4223, 4203, 1907, 3948, 4811, 4326, 1850, 653, 1355, 1852, 33, 4325, 6034, 15483, 5696, 1841, 675, 1327, 15484, 10152, 1873, 10156, 566, 15485, 15486, 2]
 // Exports: default
 
-// Module 15472 (_isNativeReflectConstruct)
+// Module 15482 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -301,10 +301,10 @@ let closure_30 = ((PureComponent) => {
   obj = {
     key: "trackFavoritesGuildViewed",
     value() {
-      const FavoritesGuildExperiment = AutoAnalytics(outer1_2[34]).FavoritesGuildExperiment;
-      const obj = outer1_1(outer1_2[35]);
+      const obj = AutoAnalytics(outer1_2[34]);
+      const obj2 = outer1_1(outer1_2[35]);
       const isPremiumExactlyResult = outer1_1(outer1_2[35]).isPremiumExactly(outer1_23.getCurrentUser(), outer1_28.TIER_2);
-      const result = AutoAnalytics(outer1_2[36]).trackFavoritesGuildViewed("manual_browsing", outer1_9.getFavoritesCount(), FavoritesGuildExperiment.getConfig({ location: "AutoAnalytics" }).enabled, isPremiumExactlyResult);
+      const result = AutoAnalytics(outer1_2[36]).trackFavoritesGuildViewed("manual_browsing", outer1_9.getFavoritesCount(), obj.getFavoritesAccess().isExperimentEnabled, isPremiumExactlyResult);
     }
   };
   items[2] = obj;

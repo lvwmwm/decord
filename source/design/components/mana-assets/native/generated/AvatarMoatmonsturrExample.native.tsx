@@ -1,10 +1,10 @@
-// Module ID: 5882
-// Function ID: 49788
+// Module ID: 6802
+// Function ID: 59438
 // Name: AvatarMoatmonsturrExample
-// Dependencies: [33, 5085, 5883, 2]
+// Dependencies: [33, 5085, 6803, 2]
 // Exports: AvatarMoatmonsturrExample
 
-// Module 5882 (AvatarMoatmonsturrExample)
+// Module 6802 (AvatarMoatmonsturrExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarMoatmonsturrExample.native.tsx");
@@ -27,7 +27,7 @@ export const AvatarMoatmonsturrExample = function AvatarMoatmonsturrExample(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5883) };
+  obj = { uri: importDefault(6803) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,10 +1,10 @@
-// Module ID: 8233
-// Function ID: 64896
+// Module ID: 7962
+// Function ID: 63388
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 1838, 8007, 4566, 653, 6753, 8015, 566, 8017, 1327, 1881, 8012, 8220, 6755, 2]
+// Dependencies: [57, 31, 1838, 5669, 4567, 653, 5674, 5680, 566, 5682, 1327, 1882, 5677, 7963, 5676, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useDiscovery, useQuery
 
-// Module 8233 (_createForOfIteratorHelperLoose)
+// Module 7962 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -119,7 +119,7 @@ function findCommandInSection(found, commandKey) {
       }
       let command;
       if (null != rootCommand) {
-        let obj = _require(6753);
+        let obj = _require(5674);
         obj = { rootCommand, command: rootCommand };
         const application = found.descriptor.application;
         let id;
@@ -241,7 +241,7 @@ function createPlaceholderCommands(arg0, type) {
   return items;
 }
 function createPlaceholderCommand(arg0, type) {
-  const obj = { type, inputType: require(6755) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, id: "placeholder-" + arg0, untranslatedName: "", displayName: "", untranslatedDescription: "", displayDescription: "", applicationId: "" };
+  const obj = { type, inputType: require(5676) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, id: "placeholder-" + arg0, untranslatedName: "", displayName: "", untranslatedDescription: "", displayDescription: "", applicationId: "" };
   obj.section = obj;
   return obj;
 }
@@ -351,7 +351,7 @@ export const getCachedApplicationSection = function getCachedApplicationSection(
 export const getCachedResults = function getCachedResults(arg0, arg1, text) {
   let obj = { commandTypes: items, text };
   items = [arg1];
-  obj = { scoreMethod: require(8015) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
+  obj = { scoreMethod: require(5680) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
   const query = authStore.query(arg0, obj, obj);
   obj = { commands: query.commands, sections: query.descriptors };
   return obj;
@@ -513,7 +513,7 @@ export const executeQuery = function executeQuery(arg0, arg1, placeholderCount) 
   if (loading) {
     tmp11 = descriptors;
     if (0 === descriptors.length) {
-      const items1 = [require(8017) /* getOptionValue */.BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN]];
+      const items1 = [require(5682) /* getOptionValue */.BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN]];
       tmp11 = items1;
     }
   }

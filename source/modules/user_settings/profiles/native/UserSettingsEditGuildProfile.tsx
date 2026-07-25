@@ -1,10 +1,10 @@
-// Module ID: 13663
-// Function ID: 104896
+// Module ID: 13674
+// Function ID: 105023
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [31, 27, 7930, 1849, 33, 4130, 689, 5462, 5482, 566, 13664, 9817, 7975, 13666, 5165, 5513, 9147, 4098, 13668, 1934, 13669, 2]
+// Dependencies: [31, 27, 7877, 1850, 33, 4131, 689, 5462, 5482, 566, 13675, 9741, 7923, 13677, 5164, 5513, 9039, 4099, 13679, 1935, 13680, 2]
 // Exports: default
 
-// Module 13663 (UserSettingsEditGuildProfile)
+// Module 13674 (UserSettingsEditGuildProfile)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

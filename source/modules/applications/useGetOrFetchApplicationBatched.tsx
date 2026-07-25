@@ -1,10 +1,10 @@
-// Module ID: 10016
-// Function ID: 77411
+// Module ID: 9945
+// Function ID: 77030
 // Name: useRequestApplication
-// Dependencies: [6, 7, 31, 4167, 4015, 22, 5463, 566, 2]
+// Dependencies: [6, 7, 31, 4168, 4016, 22, 5463, 566, 2]
 // Exports: useGetOrFetchApplicationBatched
 
-// Module 10016 (useRequestApplication)
+// Module 9945 (useRequestApplication)
 import fetchApplication from "fetchApplication";
 import initialize from "initialize";
 import result from "result";

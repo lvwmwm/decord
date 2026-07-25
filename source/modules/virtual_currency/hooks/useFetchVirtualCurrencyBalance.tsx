@@ -1,10 +1,10 @@
-// Module ID: 8764
-// Function ID: 69227
+// Module ID: 8652
+// Function ID: 68704
 // Name: useFetchVirtualCurrencyBalance
-// Dependencies: [31, 8765, 566, 8766, 2]
+// Dependencies: [31, 8653, 566, 8654, 2]
 // Exports: useFetchVirtualCurrencyBalance
 
-// Module 8764 (useFetchVirtualCurrencyBalance)
+// Module 8652 (useFetchVirtualCurrencyBalance)
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

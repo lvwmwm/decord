@@ -1,10 +1,10 @@
-// Module ID: 13025
-// Function ID: 100741
+// Module ID: 13036
+// Function ID: 100868
 // Name: GuildActionSheetDirectory
-// Dependencies: [31, 27, 33, 4130, 689, 1557, 5187, 5189, 13026, 12969, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1557, 5187, 5189, 13037, 12980, 2]
 // Exports: default
 
-// Module 13025 (GuildActionSheetDirectory)
+// Module 13036 (GuildActionSheetDirectory)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,9 +31,9 @@ export default function GuildActionSheetDirectory(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { scrollable: true, startExpanded: expanded };
   obj = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: importDefault(1557)().bottom } };
-  const items = [callback(importDefault(13026), { guild }), ];
+  const items = [callback(importDefault(13037), { guild }), ];
   obj = { style: tmp.actions };
-  const items1 = [callback(require(12969) /* HideMutedChannelsOption */.GuildActionSheetDirectoryActions, { guild }), callback(require(12969) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild })];
+  const items1 = [callback(require(12980) /* HideMutedChannelsOption */.GuildActionSheetDirectoryActions, { guild }), callback(require(12980) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild })];
   obj.children = items1;
   items[1] = callback2(View, obj);
   obj.children = items;

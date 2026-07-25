@@ -1,10 +1,10 @@
-// Module ID: 14687
-// Function ID: 111869
+// Module ID: 14698
+// Function ID: 111996
 // Name: SelectScreen
-// Dependencies: [31, 27, 14684, 33, 4130, 5084, 7639, 9233, 1456, 5121, 4126, 1212, 2]
+// Dependencies: [31, 27, 14695, 33, 4131, 5084, 7578, 9125, 1456, 5121, 4127, 1212, 2]
 // Exports: default
 
-// Module 14687 (SelectScreen)
+// Module 14698 (SelectScreen)
 import "result";
 import { View } from "get ActivityIndicator";
 import { SELECT_NAMES } from "get webauthn";
@@ -32,7 +32,7 @@ const result = require("get webauthn").fileFinishedImporting("modules/mfa/native
 
 export default function SelectScreen(mfaChallenge) {
   const _require = mfaChallenge;
-  const tmp = importDefault(9233)();
+  const tmp = importDefault(9125)();
   const tmp2 = callback3(tmp);
   let obj = _require(1456);
   importDefault = obj.useNavigation();
@@ -41,11 +41,11 @@ export default function SelectScreen(mfaChallenge) {
   const obj1 = { variant: "heading-xl/extrabold" };
   const intl = _require(1212).intl;
   obj1.children = intl.string(_require(1212).t.S9b9bX);
-  const items = [callback(_require(4126).Text, obj1), ];
+  const items = [callback(_require(4127).Text, obj1), ];
   const obj2 = { variant: "text-sm/medium" };
   const intl2 = _require(1212).intl;
   obj2.children = intl2.string(_require(1212).t.Jz1lXO);
-  items[1] = callback(_require(4126).Text, obj2);
+  items[1] = callback(_require(4127).Text, obj2);
   obj.children = items;
   const items1 = [callback2(View, obj), ];
   const methods = mfaChallenge.mfaChallenge.methods;

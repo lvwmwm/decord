@@ -1,19 +1,19 @@
-// Module ID: 13783
-// Function ID: 105660
+// Module ID: 13794
+// Function ID: 105787
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: [7751, 13774, 6834, 5676, 1212, 13775, 10127, 13777, 2]
+// Dependencies: [7697, 13785, 5834, 5853, 1212, 13786, 10059, 13788, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 13783 (useObscuredContentNonFriendsDmSettingValue)
+// Module 13794 (useObscuredContentNonFriendsDmSettingValue)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
 function useObscuredContentNonFriendsDmSettingValue() {
-  const obj = require(13774) /* useExplicitContentSettingOrDefault */;
-  return require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
+  const obj = require(13785) /* useExplicitContentSettingOrDefault */;
+  return require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
 }
 function onObscuredContentNonFriendsDmOnPress() {
-  let obj = require(5676) /* resolveExplicitContentSettingWithDefaults */;
+  let obj = require(5853) /* resolveExplicitContentSettingWithDefaults */;
   const intl = require(1212) /* getSystemLocale */.intl;
   const stringResult = intl.string(require(1212) /* getSystemLocale */.t.GYpoAq);
   obj = {
@@ -26,7 +26,7 @@ function onObscuredContentNonFriendsDmOnPress() {
     },
     currentValue: obj.getExplicitContentSettingOrDefault().explicitContentNonFriendDm
   };
-  const result = require(13775) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+  const result = require(13786) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
 }
 function getTitle() {
   const intl = require(1212) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 7416
-// Function ID: 59640
+// Module ID: 6492
+// Function ID: 58061
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1273, 7417, 4126, 1212, 3776, 4543, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1273, 6493, 4127, 1212, 3777, 4544, 2]
 // Exports: default
 
-// Module 7416 (SubscriptionAccountHoldNotice)
+// Module 6492 (SubscriptionAccountHoldNotice)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { SubscriptionStatusTypes } from "ME";
@@ -34,13 +34,13 @@ export default function SubscriptionAccountHoldNotice(subscription) {
   if (subscription.status === SubscriptionStatusTypes.ACCOUNT_HOLD) {
     let obj = { style: tmp.container };
     obj = { style: tmp.textContainer };
-    obj = { size: subscription(1273).IconSizes.MEDIUM, style: tmp.icon, source: importDefault(7417) };
+    obj = { size: subscription(1273).IconSizes.MEDIUM, style: tmp.icon, source: importDefault(6493) };
     const items = [callback(subscription(1273).Icon, obj), ];
     const obj1 = { style: tmp.text, variant: "text-sm/medium" };
     const intl = subscription(1212).intl;
-    const obj2 = { endDate: subscription.currentPeriodEnd, planDescription: subscription(3776).getDisplayName(subscription.planId) };
+    const obj2 = { endDate: subscription.currentPeriodEnd, planDescription: subscription(3777).getDisplayName(subscription.planId) };
     obj1.children = intl.format(subscription(1212).t["7I21Iz"], obj2);
-    items[1] = callback(subscription(4126).Text, obj1);
+    items[1] = callback(subscription(4127).Text, obj1);
     obj.children = items;
     const items1 = [callback2(closure_4, obj), ];
     const obj3 = { size: "sm" };
@@ -49,10 +49,10 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     obj3.onPress = function onPress() {
       return outer1_3.openURL(subscription(outer1_2[10]).getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
     };
-    items1[1] = callback(subscription(4543).Button, obj3);
+    items1[1] = callback(subscription(4544).Button, obj3);
     obj.children = items1;
     tmp2 = callback2(closure_4, obj);
-    const obj6 = subscription(3776);
+    const obj6 = subscription(3777);
   }
   return tmp2;
 };

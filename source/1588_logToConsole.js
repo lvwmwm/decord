@@ -1,5 +1,5 @@
 // Module ID: 1588
-// Function ID: 17716
+// Function ID: 17723
 // Name: logToConsole
 // Dependencies: [1587]
 

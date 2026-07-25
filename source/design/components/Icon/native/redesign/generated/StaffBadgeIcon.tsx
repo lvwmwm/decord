@@ -1,10 +1,10 @@
-// Module ID: 14454
-// Function ID: 110442
+// Module ID: 14465
+// Function ID: 110569
 // Name: StaffBadgeIcon
-// Dependencies: [31, 33, 689, 3833, 14455, 2]
+// Dependencies: [31, 33, 689, 3834, 14466, 2]
 // Exports: StaffBadgeIcon
 
-// Module 14454 (StaffBadgeIcon)
+// Module 14465 (StaffBadgeIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const StaffBadgeIcon = function StaffBadgeIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14455) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14466) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14455) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(14466) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 5161
-// Function ID: 44962
+// Module ID: 5160
+// Function ID: 44964
 // Name: getKeyboardDuration
 // Dependencies: [1453, 477, 1454, 2]
 // Exports: getKeyboardDuration
 
-// Module 5161 (getKeyboardDuration)
+// Module 5160 (getKeyboardDuration)
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/keyboard/native/useKeyboardDuration.tsx");
 
 export const getKeyboardDuration = function getKeyboardDuration() {

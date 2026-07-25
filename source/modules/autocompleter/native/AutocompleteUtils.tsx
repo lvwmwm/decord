@@ -1,10 +1,10 @@
-// Module ID: 9593
-// Function ID: 74697
+// Module ID: 9514
+// Function ID: 74284
 // Name: getMentionTextWithUser
-// Dependencies: [31, 27, 1352, 1907, 3767, 1849, 653, 9594, 4567, 33, 4130, 689, 4320, 4974, 3969, 7191, 2]
+// Dependencies: [31, 27, 1352, 1908, 3768, 1850, 653, 9515, 4568, 33, 4131, 689, 4321, 4975, 3970, 7582, 2]
 // Exports: getAutocompleteResultText, getItemLayout, getItemSeparator, getPrefix, getQuery, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9593 (getMentionTextWithUser)
+// Module 9514 (getMentionTextWithUser)
 import "result";
 import { isGuildSelectableChannelType as closure_3 } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,14 +31,14 @@ function getMentionTextWithUser(messageChannel, user) {
     let combined = "" + tmp + user.tag;
   } else {
     const _HermesInternal = HermesInternal;
-    combined = "" + tmp + importDefault(3969).getUserTag(user);
-    const obj2 = importDefault(3969);
+    combined = "" + tmp + importDefault(3970).getUserTag(user);
+    const obj2 = importDefault(3970);
   }
   return combined;
 }
 function AutocompleteFormDivider() {
   const tmp = _createForOfIteratorHelperLoose();
-  return jsx(importDefault(7191), { style: _createForOfIteratorHelperLoose().itemDivider });
+  return jsx(importDefault(7582), { style: _createForOfIteratorHelperLoose().itemDivider });
 }
 ({ AutoCompleteResultTypes: closure_7, WHITESPACE_RE: closure_8 } = ME);
 ({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_9, AUTOCOMPLETE_ROW_HEIGHT: closure_10 } = AUTOCOMPLETE_ROW_HEIGHT);
@@ -78,9 +78,9 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
   } else if (constants.CHANNEL === type) {
     channel = type.channel;
     if (channel.isThread()) {
-      const obj3 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+      const obj3 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
       const _HermesInternal6 = HermesInternal;
-      return "#\"" + obj3.escapeChannelName(require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5)) + "\"";
+      return "#\"" + obj3.escapeChannelName(require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5)) + "\"";
     } else {
       channel2 = type.channel;
       const guildId = channel2.getGuildId();
@@ -92,15 +92,15 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
             name = tmp20.name;
           }
           if (null == name) {
-            name = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5);
-            const obj2 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+            name = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5);
+            const obj2 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
           }
           const _HermesInternal5 = HermesInternal;
           return "" + closure_11 + name;
         }
       }
       const _HermesInternal4 = HermesInternal;
-      return "" + closure_11 + require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5);
+      return "" + closure_11 + require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5);
     }
   } else if (constants.GAME_MENTION === type) {
     const _HermesInternal3 = HermesInternal;

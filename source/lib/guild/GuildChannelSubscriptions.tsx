@@ -1,9 +1,9 @@
-// Module ID: 5664
-// Function ID: 48663
+// Module ID: 6006
+// Function ID: 53573
 // Name: serializeChannelRanges
 // Dependencies: [6, 7, 1362, 22, 2]
 
-// Module 5664 (serializeChannelRanges)
+// Module 6006 (serializeChannelRanges)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

@@ -1,8 +1,8 @@
-// Module ID: 14104
-// Function ID: 108409
-// Dependencies: [57, 31, 27, 33, 4130, 689, 14072, 9494, 14102, 14068, 9804, 3991, 4542, 6962, 8376, 9504, 8347, 14045, 14077, 5121, 4541, 4126, 1212, 14095, 7678, 14096, 4543, 4660, 9981, 5085, 12254, 2]
+// Module ID: 14115
+// Function ID: 108536
+// Dependencies: [57, 31, 27, 33, 4131, 689, 14083, 9415, 14113, 14079, 9728, 3992, 4543, 5953, 8134, 9425, 8105, 14056, 14088, 5121, 4542, 4127, 1212, 14106, 7620, 14107, 4544, 4661, 9909, 5085, 12230, 2]
 
-// Module 14104
+// Module 14115
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import get_ActivityIndicator from "PressableBase";
@@ -41,14 +41,14 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   let sourceQuestContent;
   ({ onClose, sourceQuestContent } = onRestartVideo);
   const tmp = callback4();
-  let obj = quest(14072);
+  let obj = quest(14083);
   quest = obj.useVideoQuestModalContext().quest;
   let items = [quest];
   const memo = importAllResult.useMemo(() => quest(isShareableQuestResult[7]).getQuestAsset(quest, quest(isShareableQuestResult[7]).QuestAssetType.VIDEO_PLAYER_THUMBNAIL, undefined, true), items);
-  let obj1 = quest(14102);
+  let obj1 = quest(14113);
   const videoQuestClickCtaAndMaybeCloseModal = obj1.useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
-  let obj2 = quest(14068);
-  obj = { quest, onSuccess: sharedValue(9804).close, sourceQuestContent };
+  let obj2 = quest(14079);
+  obj = { quest, onSuccess: sharedValue(9728).close, sourceQuestContent };
   const questRewardClaimHandler = obj2.useQuestRewardClaimHandler(obj);
   const isClaiming = questRewardClaimHandler.isClaiming;
   const userStatus = quest.userStatus;
@@ -57,9 +57,9 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   if (null != userStatus) {
     claimedAt = userStatus.claimedAt;
   }
-  let obj4 = quest(3991);
+  let obj4 = quest(3992);
   sharedValue = obj4.useSharedValue(0);
-  let obj5 = quest(3991);
+  let obj5 = quest(3992);
   const fn = function _() {
     let obj = {};
     const obj2 = quest(isShareableQuestResult[11]);
@@ -73,7 +73,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
     obj.transform = items;
     return obj;
   };
-  obj = { withDelay: quest(3991).withDelay, ANIMATION_DELAY: 125, withSpring: quest(4542).withSpring, isComponentMounted: sharedValue, ANIMATED_CONTENT_SPRING_CONFIG: closure_10, interpolate: quest(3991).interpolate, ANIMATED_CONTENT_OFFSET_Y: 75 };
+  obj = { withDelay: quest(3992).withDelay, ANIMATION_DELAY: 125, withSpring: quest(4543).withSpring, isComponentMounted: sharedValue, ANIMATED_CONTENT_SPRING_CONFIG: closure_10, interpolate: quest(3992).interpolate, ANIMATED_CONTENT_OFFSET_Y: 75 };
   fn.__closure = obj;
   fn.__workletHash = 2704439293952;
   fn.__initData = closure_12;
@@ -82,7 +82,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   const effect = importAllResult.useEffect(() => {
     const result = sharedValue.set(1);
   }, items1);
-  let obj7 = quest(6962);
+  let obj7 = quest(5953);
   let isShareableQuestResult = obj7.isShareableQuest(quest.config);
   const dependencyMap = isShareableQuestResult;
   const items2 = [isShareableQuestResult, quest.id];
@@ -97,7 +97,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   const layoutEffect = importAllResult.useLayoutEffect(() => {
     quest(isShareableQuestResult[16]).lockOrientation("PORTRAIT", true);
   }, []);
-  const windowDimensions = importAllResult.useContext(quest(14045).QuestDockGestureContext).windowDimensions;
+  const windowDimensions = importAllResult.useContext(quest(14056).QuestDockGestureContext).windowDimensions;
   let str = "md";
   if (windowDimensions.get().height >= 760) {
     let str2 = "lg";
@@ -113,7 +113,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
     callback(nativeEvent.nativeEvent.layout.height);
   }, []);
   if (null == first) {
-    first = quest(14077).QUEST_PROGRESS_DIAMETER_BY_SIZE[str];
+    first = quest(14088).QUEST_PROGRESS_DIAMETER_BY_SIZE[str];
   }
   const sum = first + 2 * sharedValue(689).space.PX_16;
   obj1 = { bottom: true, style: tmp.wrapper };
@@ -122,11 +122,11 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   const intl = quest(1212).intl;
   obj4 = { questName: quest.config.messages.questName };
   obj3.children = intl.formatToPlainString(quest(1212).t.EAYZAr, obj4);
-  const items3 = [callback2(quest(4126).Heading, obj3), ];
+  const items3 = [callback2(quest(4127).Heading, obj3), ];
   obj5 = { onClose, style: tmp.closeButton };
-  items3[1] = callback2(sharedValue(14095), obj5);
+  items3[1] = callback2(sharedValue(14106), obj5);
   obj2.children = items3;
-  const items4 = [callback3(quest(4541).Stack, obj2), ];
+  const items4 = [callback3(quest(4542).Stack, obj2), ];
   let obj6 = { style: tmp.scroll, contentContainerStyle: tmp.scrollContent, showsVerticalScrollIndicator: false, alwaysBounceVertical: false };
   obj7 = { style: items5 };
   items5 = [tmp.contentRewardsAnimatedWrapper, { minHeight: sum }, animatedStyle];
@@ -145,11 +145,11 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
         const obj9 = { grow: true, variant: "secondary", loading: isClaiming, disabled: isClaiming, onPress: claim };
         const intl3 = quest(1212).intl;
         obj9.text = intl3.string(quest(1212).t.cfY4PE);
-        tmp31 = callback2(quest(4543).Button, obj9);
+        tmp31 = callback2(quest(4544).Button, obj9);
       }
       items7[1] = tmp31;
       obj8.children = items7;
-      obj7.children = tmp20(quest(4541).Stack, obj8);
+      obj7.children = tmp20(quest(4542).Stack, obj8);
       const items8 = [tmp21(tmp23, obj7), ];
       const obj10 = {};
       const items9 = [, ];
@@ -158,20 +158,20 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
       const obj11 = { direction: "horizontal", justify: "space-between", style: tmp.contentEndCardHeader };
       const obj12 = { spacing: sharedValue(689).space.PX_4, style: tmp.contentEndCardHeaderCopy };
       const obj13 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: quest.config.messages.gameTitle };
-      const items10 = [callback2(quest(4126).Heading, obj13), ];
+      const items10 = [callback2(quest(4127).Heading, obj13), ];
       const obj14 = { variant: "text-sm/medium", color: "text-subtle", children: quest.config.messages.gamePublisher };
-      items10[1] = callback2(quest(4126).Text, obj14);
+      items10[1] = callback2(quest(4127).Text, obj14);
       obj12.children = items10;
-      const items11 = [callback3(quest(4541).Stack, obj12), ];
+      const items11 = [callback3(quest(4542).Stack, obj12), ];
       const obj15 = { accessibilityRole: "button" };
       const intl4 = quest(1212).intl;
       obj15.accessibilityLabel = intl4.string(quest(1212).t.YsCuyF);
       obj15.onPress = onRestartVideo.onRestartVideo;
       const obj16 = { color: sharedValue(689).colors.INTERACTIVE_TEXT_DEFAULT };
-      obj15.children = callback2(quest(9981).RetryIcon, obj16);
-      items11[1] = callback2(quest(4660).PressableOpacity, obj15);
+      obj15.children = callback2(quest(9909).RetryIcon, obj16);
+      items11[1] = callback2(quest(4661).PressableOpacity, obj15);
       obj11.children = items11;
-      const items12 = [callback3(quest(4541).Stack, obj11), , ];
+      const items12 = [callback3(quest(4542).Stack, obj11), , ];
       let tmp41 = null != memo;
       if (tmp41) {
         const obj17 = { accessibilityRole: "button" };
@@ -184,24 +184,24 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
         obj19.source = obj20;
         obj19.resizeMode = "cover";
         obj17.children = callback2(sharedValue(5085), obj19);
-        tmp41 = callback2(quest(4660).PressableOpacity, obj17);
+        tmp41 = callback2(quest(4661).PressableOpacity, obj17);
       }
       items12[1] = tmp41;
       const obj21 = { direction: "horizontal", spacing: sharedValue(689).space.PX_16, align: "center" };
-      const obj22 = { grow: true, variant: "expressive", onPress: videoQuestClickCtaAndMaybeCloseModal, text: quest(9504).getExternalCtaLabel(quest) };
-      const items13 = [callback2(quest(4543).Button, obj22), ];
+      const obj22 = { grow: true, variant: "expressive", onPress: videoQuestClickCtaAndMaybeCloseModal, text: quest(9425).getExternalCtaLabel(quest) };
+      const items13 = [callback2(quest(4544).Button, obj22), ];
       if (isShareableQuestResult) {
         const obj23 = { accessibilityRole: "button" };
         const intl6 = quest(1212).intl;
         obj23.accessibilityLabel = intl6.string(quest(1212).t.Ej3B3Y);
         obj23.onPress = callback;
         const obj24 = { color: sharedValue(689).colors.INTERACTIVE_TEXT_DEFAULT };
-        obj23.children = callback2(quest(12254).ShareIcon, obj24);
-        isShareableQuestResult = callback2(quest(4660).PressableOpacity, obj23);
+        obj23.children = callback2(quest(12230).ShareIcon, obj24);
+        isShareableQuestResult = callback2(quest(4661).PressableOpacity, obj23);
       }
       items13[1] = isShareableQuestResult;
       obj21.children = items13;
-      items12[2] = callback3(quest(4541).Stack, obj21);
+      items12[2] = callback3(quest(4542).Stack, obj21);
       obj10.children = items12;
       items8[1] = callback3(closure_7, obj10);
       obj6.children = items8;
@@ -212,7 +212,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   }
   const obj25 = { style: tmp.contentRewards, onLayout: callback1 };
   const obj26 = { withQuestName: false, withRewardAvailableCopy: false, size: str, withRewardTileAnimation: true };
-  const items14 = [callback2(sharedValue(14096), obj26), ];
+  const items14 = [callback2(sharedValue(14107), obj26), ];
   let obj27 = { color: "text-strong", style: tmp.contentRewardsCopy, variant: "heading-lg/semibold" };
   const intl2 = quest(1212).intl;
   const string = intl2.string;
@@ -224,7 +224,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
     stringResult = string(EMp8_M.qyKLdg);
   }
   obj27.children = stringResult;
-  obj27 = callback2(quest(4126).Heading, obj27);
+  obj27 = callback2(quest(4127).Heading, obj27);
   items14[1] = obj27;
   obj25.children = items14;
   callback3(closure_7, obj25);

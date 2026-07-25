@@ -1,10 +1,10 @@
-// Module ID: 3820
-// Function ID: 31738
+// Module ID: 3821
+// Function ID: 31749
 // Name: makeIntlFormatter
-// Dependencies: [1921, 3817, 1212, 2]
+// Dependencies: [1922, 3818, 1212, 2]
 // Exports: makeFormatter
 
-// Module 3820 (makeIntlFormatter)
+// Module 3821 (makeIntlFormatter)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

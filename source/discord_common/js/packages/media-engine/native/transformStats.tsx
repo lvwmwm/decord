@@ -1,10 +1,10 @@
-// Module ID: 4274
-// Function ID: 37407
+// Module ID: 4275
+// Function ID: 37418
 // Name: convertAudioLevel
-// Dependencies: [4275, 2]
+// Dependencies: [4276, 2]
 // Exports: default
 
-// Module 4274 (convertAudioLevel)
+// Module 4275 (convertAudioLevel)
 function convertAudioLevel(arg0) {
   return arg0 / 32768;
 }
@@ -239,9 +239,9 @@ function transformOutboundVideoStats(video, id) {
     const reduced = substreams1.reduce((arg0, rtpStats) => arg0 + outer1_4(rtpStats.rtpStats), 0);
     let obj = { type: "video", ssrc: found.ssrc };
     const reduced1 = substreams2.reduce((arg0, rtpStats) => arg0 + outer1_5(rtpStats.rtpStats), 0);
-    obj.sinkWant = require(4275) /* formatSinkWantStat */.formatSinkWantStat(id, found.ssrc, true);
-    const obj2 = require(4275) /* formatSinkWantStat */;
-    obj.sinkWantAsInt = require(4275) /* formatSinkWantStat */.formatSinkWantAsInt(id, found.ssrc);
+    obj.sinkWant = require(4276) /* formatSinkWantStat */.formatSinkWantStat(id, found.ssrc, true);
+    const obj2 = require(4276) /* formatSinkWantStat */;
+    obj.sinkWantAsInt = require(4276) /* formatSinkWantStat */.formatSinkWantAsInt(id, found.ssrc);
     obj = {};
     ({ codecPayloadType: obj4.id, codecName: obj4.name } = video);
     obj.codec = obj;
@@ -444,13 +444,13 @@ function transformInboundVideoStats(height, id, id) {
   let obj = { type: "video", ssrc: height.ssrc };
   const tmp = sumBytes(height.rtpStats);
   const tmp2 = sumPackets(height.rtpStats);
-  obj.sinkWant = require(4275) /* formatSinkWantStat */.formatSinkWantStat(id, height.ssrc, true);
-  const obj2 = require(4275) /* formatSinkWantStat */;
-  obj.sinkWantAsInt = require(4275) /* formatSinkWantStat */.formatSinkWantAsInt(id, height.ssrc);
-  const obj3 = require(4275) /* formatSinkWantStat */;
-  obj.sinkWantLocal = require(4275) /* formatSinkWantStat */.formatSinkWantStat(id, height.ssrc, true);
-  const obj4 = require(4275) /* formatSinkWantStat */;
-  obj.sinkWantLocalAsInt = require(4275) /* formatSinkWantStat */.formatSinkWantAsInt(id, height.ssrc);
+  obj.sinkWant = require(4276) /* formatSinkWantStat */.formatSinkWantStat(id, height.ssrc, true);
+  const obj2 = require(4276) /* formatSinkWantStat */;
+  obj.sinkWantAsInt = require(4276) /* formatSinkWantStat */.formatSinkWantAsInt(id, height.ssrc);
+  const obj3 = require(4276) /* formatSinkWantStat */;
+  obj.sinkWantLocal = require(4276) /* formatSinkWantStat */.formatSinkWantStat(id, height.ssrc, true);
+  const obj4 = require(4276) /* formatSinkWantStat */;
+  obj.sinkWantLocalAsInt = require(4276) /* formatSinkWantStat */.formatSinkWantAsInt(id, height.ssrc);
   obj.codec = { id: height.codecPayloadType, name: height.codecName };
   obj.bytesReceived = tmp;
   obj.packetsReceived = tmp2;
@@ -513,9 +513,9 @@ export default function transformStats(mediaEngineConnectionId, arg1, id) {
       }
       convertAudioLevel = num + audio.bytesSent;
       let obj = { type: "audio", ssrc: audio.ssrc };
-      let obj1 = _require(4275);
+      let obj1 = _require(4276);
       obj.sinkWant = obj1.formatSinkWantStat(id, audio.ssrc, false);
-      let obj2 = _require(4275);
+      let obj2 = _require(4276);
       obj.sinkWantAsInt = obj2.formatSinkWantAsInt(id, audio.ssrc);
       obj = {};
       ({ codecPayloadType: obj4.id, codecName: obj4.name } = audio);
@@ -599,9 +599,9 @@ export default function transformStats(mediaEngineConnectionId, arg1, id) {
         closure_2 = num + audio.bytesReceived;
         arr = obj[id];
         obj = { type: "audio", ssrc: audio.ssrc };
-        let obj2 = id(4275);
+        let obj2 = id(4276);
         obj.sinkWant = obj2.formatSinkWantStat(id, audio.ssrc, false);
-        obj.sinkWantAsInt = id(4275).formatSinkWantAsInt(id, audio.ssrc);
+        obj.sinkWantAsInt = id(4276).formatSinkWantAsInt(id, audio.ssrc);
         obj = {};
         ({ codecPayloadType: obj4.id, codecName: obj4.name } = audio);
         obj.codec = obj;
@@ -625,7 +625,7 @@ export default function transformStats(mediaEngineConnectionId, arg1, id) {
         }
         const merged = Object.assign(obj2);
         obj = arr.push(obj);
-        const obj3 = id(4275);
+        const obj3 = id(4276);
       }
     });
   }

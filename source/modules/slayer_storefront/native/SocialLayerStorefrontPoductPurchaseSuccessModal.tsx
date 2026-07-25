@@ -1,10 +1,10 @@
-// Module ID: 9784
-// Function ID: 76054
+// Module ID: 9708
+// Function ID: 75649
 // Name: PurchaseSuccessModalBase
-// Dependencies: [830, 31, 27, 4122, 4175, 5612, 653, 33, 4130, 689, 3991, 4542, 4131, 4099, 1450, 566, 5609, 8347, 4554, 5121, 5094, 5119, 1212, 8256, 4126, 4543, 5468, 5465, 8252, 5482, 675, 4559, 9768, 3104, 8689, 3969, 2]
+// Dependencies: [830, 31, 27, 4123, 4176, 5612, 653, 33, 4131, 689, 3992, 4543, 4132, 4100, 1450, 566, 5609, 8105, 4555, 5121, 5094, 5119, 1212, 7991, 4127, 4544, 5468, 5465, 7985, 5482, 675, 4560, 9692, 3105, 8577, 3970, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 9784 (PurchaseSuccessModalBase)
+// Module 9708 (PurchaseSuccessModalBase)
 import _toArray from "_toArray";
 import useMountLayoutEffect from "useMountLayoutEffect";
 import get_ActivityIndicator from "useStartAuthorize";

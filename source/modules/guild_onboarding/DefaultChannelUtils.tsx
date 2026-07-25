@@ -1,10 +1,10 @@
-// Module ID: 5060
-// Function ID: 43852
+// Module ID: 5061
+// Function ID: 43864
 // Name: getDefaultPermissionsForChannel
-// Dependencies: [1908, 1348, 653, 483, 566, 3763, 2]
+// Dependencies: [1909, 1348, 653, 483, 566, 3764, 2]
 // Exports: canChannelBeDefault, useCanChannelBeDefault
 
-// Module 5060 (getDefaultPermissionsForChannel)
+// Module 5061 (getDefaultPermissionsForChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -43,8 +43,8 @@ export const useCanChannelBeDefault = function useCanChannelBeDefault(arg0, arg1
 export const canChannelBeDefault = function canChannelBeDefault(guild_id, id) {
   let isChannelGatedResult = channelGated.isChannelGated(guild_id, id);
   if (!isChannelGatedResult) {
-    isChannelGatedResult = importAll(3763).canEveryoneRole(tmp, store.getChannel(id));
-    const obj = importAll(3763);
+    isChannelGatedResult = importAll(3764).canEveryoneRole(tmp, store.getChannel(id));
+    const obj = importAll(3764);
   }
   return isChannelGatedResult;
 };

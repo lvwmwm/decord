@@ -1,10 +1,10 @@
-// Module ID: 15918
-// Function ID: 122957
+// Module ID: 15929
+// Function ID: 123125
 // Name: DisconnectCancelButton
-// Dependencies: [57, 31, 1347, 4149, 4342, 10047, 33, 4130, 689, 10046, 10561, 3991, 10554, 4323, 4309, 4944, 10683, 15919, 9170, 15909, 1212, 2]
+// Dependencies: [57, 31, 1347, 4150, 4343, 9976, 33, 4131, 689, 9975, 10448, 3992, 10546, 4324, 4310, 4945, 10647, 15930, 9062, 15920, 1212, 2]
 // Exports: default
 
-// Module 15918 (DisconnectCancelButton)
+// Module 15929 (DisconnectCancelButton)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -17,7 +17,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 let require = arg1;
 let closure_10 = { USER: 0, [0]: "USER", STREAM: 1, [1]: "STREAM", ACTIVITY: 2, [2]: "ACTIVITY" };
 _createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { minWidth: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_PANEL_DISCONNECT_BUTTON_MIN_WIDTH, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
 _createForOfIteratorHelperLoose.disconnectCancelBG = _createForOfIteratorHelperLoose;
 _createForOfIteratorHelperLoose.icon = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
@@ -64,7 +64,7 @@ export default function DisconnectCancelButton(props) {
     }
   }, []);
   let obj = require(focused[11]);
-  class A {
+  class T {
     constructor() {
       tmp = null;
       if (mode.get() === outer1_8.PANEL) {
@@ -84,20 +84,27 @@ export default function DisconnectCancelButton(props) {
     }
   }
   obj = { mode, VoicePanelModes, focused };
-  A.__closure = obj;
-  A.__workletHash = 1109426015268;
-  A.__initData = closure_12;
-  const fn = function v(arg0, arg1) {
-    if (arg0 !== arg1) {
-      tmp(focused[11]).runOnJS(callback)(arg0);
-      const obj = tmp(focused[11]);
+  T.__closure = obj;
+  T.__workletHash = 1109426015268;
+  T.__initData = closure_12;
+  class A {
+    constructor(arg0, arg1) {
+      if (props !== arg1) {
+        tmp = outer1_0;
+        tmp2 = focused;
+        num = 11;
+        obj = outer1_0(focused[11]);
+        tmp3 = _isNativeReflectConstruct;
+        tmp4 = obj.runOnJS(_isNativeReflectConstruct)(props);
+      }
+      return;
     }
-  };
+  }
   obj = { runOnJS: require(focused[11]).runOnJS, handleFocusChange: callback };
-  fn.__closure = obj;
-  fn.__workletHash = 16719769067952;
-  fn.__initData = closure_13;
-  const animatedReaction = obj.useAnimatedReaction(A, fn);
+  A.__closure = obj;
+  A.__workletHash = 16719769067952;
+  A.__initData = closure_13;
+  const animatedReaction = obj.useAnimatedReaction(T, A);
   const items = [channelId, first, focused];
   const callback1 = first.useCallback(() => {
     const value = focused.get();

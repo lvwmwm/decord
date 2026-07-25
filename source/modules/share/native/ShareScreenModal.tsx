@@ -1,10 +1,10 @@
-// Module ID: 12958
-// Function ID: 100460
+// Module ID: 12969
+// Function ID: 100587
 // Name: onClose
-// Dependencies: [5, 57, 31, 1348, 12910, 33, 3, 4337, 8377, 566, 4140, 669, 12959, 2]
+// Dependencies: [5, 57, 31, 1348, 12921, 33, 3, 4338, 8135, 566, 4141, 669, 12970, 2]
 // Exports: default
 
-// Module 12958 (onClose)
+// Module 12969 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -15,7 +15,7 @@ import importDefaultResult from "_isNativeReflectConstruct";
 
 let require = arg1;
 function onClose() {
-  importDefault(4337).popWithKey(SHARE_SCREEN_MODAL_KEY);
+  importDefault(4338).popWithKey(SHARE_SCREEN_MODAL_KEY);
 }
 importDefaultResult = new importDefaultResult("ShareScreenModal");
 const result = require("result").fileFinishedImporting("modules/share/native/ShareScreenModal.tsx");

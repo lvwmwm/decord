@@ -1,10 +1,10 @@
-// Module ID: 12374
-// Function ID: 96261
+// Module ID: 12350
+// Function ID: 96070
 // Name: EndStageActionSheet
-// Dependencies: [31, 27, 4947, 653, 33, 4130, 689, 4098, 8875, 7634, 1273, 1212, 4126, 4543, 7562, 2]
+// Dependencies: [31, 27, 4948, 653, 33, 4131, 689, 4099, 8763, 7573, 1273, 1212, 4127, 4544, 6658, 2]
 // Exports: default
 
-// Module 12374 (EndStageActionSheet)
+// Module 12350 (EndStageActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH";
@@ -41,13 +41,13 @@ export default function EndStageActionSheet(channel) {
   const obj1 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default" };
   const intl2 = channel(1212).intl;
   obj1.children = intl2.string(channel(1212).t.mT7jwN);
-  items[1] = callback(channel(4126).Text, obj1);
+  items[1] = callback(channel(4127).Text, obj1);
   const obj2 = { style: tmp.cancelButton };
   const obj3 = { variant: "secondary" };
   const intl3 = channel(1212).intl;
   obj3.text = intl3.string(channel(1212).t.xTwqz2);
   obj3.onPress = handleClose;
-  obj2.children = callback(channel(4543).Button, obj3);
+  obj2.children = callback(channel(4544).Button, obj3);
   items[2] = callback(View, obj2);
   const obj4 = { style: tmp.confirmButton };
   const obj5 = { variant: "destructive" };
@@ -57,9 +57,9 @@ export default function EndStageActionSheet(channel) {
     channel(outer1_2[14]).endStage(channel);
     handleClose();
   };
-  obj4.children = callback(channel(4543).Button, obj5);
+  obj4.children = callback(channel(4544).Button, obj5);
   items[3] = callback(View, obj4);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(handleClose(7634), obj);
+  return callback(handleClose(7573), obj);
 };

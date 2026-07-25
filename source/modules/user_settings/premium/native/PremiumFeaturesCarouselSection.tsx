@@ -1,10 +1,10 @@
-// Module ID: 12458
-// Function ID: 96653
+// Module ID: 12439
+// Function ID: 96504
 // Name: PremiumFeaturesCardBackground
-// Dependencies: [57, 31, 27, 653, 6671, 1851, 33, 689, 4130, 4554, 668, 4126, 5085, 1212, 7439, 7442, 7476, 7479, 4528, 1553, 9728, 1273, 5462, 1450, 675, 2]
+// Dependencies: [57, 31, 27, 653, 6173, 1852, 33, 689, 4131, 4555, 668, 4127, 5085, 1212, 6521, 6524, 6560, 6563, 4529, 1553, 9652, 1273, 5462, 1450, 675, 2]
 // Exports: default
 
-// Module 12458 (PremiumFeaturesCardBackground)
+// Module 12439 (PremiumFeaturesCardBackground)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -48,7 +48,7 @@ function CarouselCard(arg0) {
   const tmp = callback4();
   let obj = { style };
   obj = { variant: "heading-md/extrabold", color: "text-overlay-light", style: tmp.cardTitle, children: title };
-  const items = [callback2(require(4126) /* Text */.Text, obj), ];
+  const items = [callback2(require(4127) /* Text */.Text, obj), ];
   const items1 = [tmp.image, imageStyle];
   items[1] = callback2(importDefault(5085), { source: imageSrc, style: items1, resizeMode: "contain" });
   obj.children = items;
@@ -59,7 +59,7 @@ function PremiumFeaturesCarousel(arg0) {
   let width;
   ({ width, onEndReached } = arg0);
   let tmp = _createForOfIteratorHelperLoose();
-  let obj = onEndReached(4528);
+  let obj = onEndReached(4529);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const tmp3 = arr(sum.useState(0), 2);
   let first = tmp3[0];
@@ -73,7 +73,7 @@ function PremiumFeaturesCarousel(arg0) {
       let obj = {};
       const intl = onEndReached(1212).intl;
       obj.title = intl.string(onEndReached(1212).t["3cyhe3"]);
-      obj.imageSrc = first(7439);
+      obj.imageSrc = first(6521);
       obj.imageStyle = tmp.emojiImage;
       const items = [outer2_9.TIER_0, outer2_9.TIER_2];
       obj.premiumTypes = new Set(items);
@@ -81,7 +81,7 @@ function PremiumFeaturesCarousel(arg0) {
       obj = {};
       const intl2 = onEndReached(1212).intl;
       obj.title = intl2.string(onEndReached(1212).t["8AhJqy"]);
-      obj.imageSrc = first(7442);
+      obj.imageSrc = first(6524);
       const items2 = [outer2_9.TIER_0, outer2_9.TIER_2];
       const set = new Set(items);
       obj.premiumTypes = new Set(items2);
@@ -89,7 +89,7 @@ function PremiumFeaturesCarousel(arg0) {
       obj = {};
       const intl3 = onEndReached(1212).intl;
       obj.title = intl3.string(onEndReached(1212).t["t/Mvdj"]);
-      obj.imageSrc = first(7476);
+      obj.imageSrc = first(6560);
       const items3 = [outer2_9.TIER_2];
       const set1 = new Set(items2);
       obj.premiumTypes = new Set(items3);
@@ -97,7 +97,7 @@ function PremiumFeaturesCarousel(arg0) {
       const obj1 = {};
       const intl4 = onEndReached(1212).intl;
       obj1.title = intl4.string(onEndReached(1212).t["n+DGY/"]);
-      obj1.imageSrc = first(7479);
+      obj1.imageSrc = first(6563);
       const items4 = [outer2_9.TIER_2];
       const set2 = new Set(items3);
       obj1.premiumTypes = new Set(items4);
@@ -146,7 +146,7 @@ function PremiumFeaturesCarousel(arg0) {
         modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
         onSnapToItem: tmp5
       };
-      let tmp16 = callback2(first(9728), obj);
+      let tmp16 = callback2(first(9652), obj);
     }
     let items2 = [tmp16, ];
     let obj1 = { containerStyle: tmp.indicators, numberOfItems: arr.length, currentIndex: first };
@@ -206,7 +206,7 @@ export default function PremiumFeaturesCarouselSection(style) {
   obj = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header" };
   const intl = analyticsLocations(1212).intl;
   obj.children = intl.string(analyticsLocations(1212).t.RGadQR);
-  const items2 = [callback2(analyticsLocations(4126).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
+  const items2 = [callback2(analyticsLocations(4127).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
   obj.children = items2;
   return callback3(closure_6, obj);
 };

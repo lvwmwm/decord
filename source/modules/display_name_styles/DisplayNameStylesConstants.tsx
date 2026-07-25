@@ -1,10 +1,10 @@
-// Module ID: 1861
-// Function ID: 20528
+// Module ID: 1862
+// Function ID: 20539
 // Name: items3
-// Dependencies: [1862, 1863, 2]
+// Dependencies: [1863, 1864, 2]
 // Exports: getColorPresetsForEffect
 
-// Module 1861 (items3)
+// Module 1862 (items3)
 let items = [require("DisplayNameEffect").DisplayNameEffect.SOLID, require("DisplayNameEffect").DisplayNameEffect.GRADIENT, require("DisplayNameEffect").DisplayNameEffect.NEON, require("DisplayNameEffect").DisplayNameEffect.TOON, require("DisplayNameEffect").DisplayNameEffect.POP];
 const items1 = [require("DisplayNameFont").DisplayNameFont.PLAYPEN_SANS, require("DisplayNameFont").DisplayNameFont.ORBITRON, require("DisplayNameFont").DisplayNameFont.NEW_ROCKER, require("DisplayNameFont").DisplayNameFont.KALAM];
 const items2 = [require("DisplayNameEffect").DisplayNameEffect.GUMMY, require("DisplayNameEffect").DisplayNameEffect.PRISM];
@@ -26,13 +26,13 @@ export const DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS = 0.72;
 export const MIN_PRISM_GRADIENT_WIDTH = 38;
 export const DISPLAY_NAME_STYLES_PRISM_PRESETS = items6;
 export const getColorPresetsForEffect = function getColorPresetsForEffect(arg0) {
-  if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.GUMMY === arg0) {
+  if (require(1863) /* DisplayNameEffect */.DisplayNameEffect.GUMMY === arg0) {
     return items5;
-  } else if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.PRISM === arg0) {
+  } else if (require(1863) /* DisplayNameEffect */.DisplayNameEffect.PRISM === arg0) {
     return items6;
   } else {
-    if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.GRADIENT !== arg0) {
-      if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.GLOW !== arg0) {
+    if (require(1863) /* DisplayNameEffect */.DisplayNameEffect.GRADIENT !== arg0) {
+      if (require(1863) /* DisplayNameEffect */.DisplayNameEffect.GLOW !== arg0) {
         return items3.map((arg0) => {
           const items = [arg0];
           return items;

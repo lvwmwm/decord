@@ -1,9 +1,9 @@
-// Module ID: 4112
-// Function ID: 34023
+// Module ID: 4113
+// Function ID: 34034
 // Name: currentUpdateConfig
-// Dependencies: [3712, 477, 1443, 1554, 2]
+// Dependencies: [3713, 477, 1443, 1554, 2]
 
-// Module 4112 (currentUpdateConfig)
+// Module 4113 (currentUpdateConfig)
 import importDefaultResult from "t";
 import durationResult from "module_6";
 

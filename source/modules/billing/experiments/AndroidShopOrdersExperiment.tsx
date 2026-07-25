@@ -1,10 +1,10 @@
-// Module ID: 8779
-// Function ID: 69343
+// Module ID: 8667
+// Function ID: 68820
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: useAndroidShopOrdersEnabled
 
-// Module 8779 (apexExperiment)
+// Module 8667 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-android-shop-orders", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

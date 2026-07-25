@@ -1,5 +1,5 @@
 // Module ID: 1539
-// Function ID: 17536
+// Function ID: 17543
 // Name: useDocumentTitle
 // Dependencies: []
 

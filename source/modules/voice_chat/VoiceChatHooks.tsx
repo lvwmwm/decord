@@ -1,10 +1,10 @@
-// Module ID: 10244
-// Function ID: 79021
+// Module ID: 10177
+// Function ID: 78656
 // Name: useIsConnectedToVoiceChannelForId
-// Dependencies: [1194, 4146, 566, 2]
+// Dependencies: [1194, 4147, 566, 2]
 // Exports: useIsConnectedToVoiceChannel
 
-// Module 10244 (useIsConnectedToVoiceChannelForId)
+// Module 10177 (useIsConnectedToVoiceChannelForId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

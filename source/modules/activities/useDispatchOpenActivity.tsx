@@ -1,10 +1,10 @@
-// Module ID: 10634
-// Function ID: 82910
+// Module ID: 10598
+// Function ID: 82597
 // Name: useDispatchOpenActivity
 // Dependencies: [31, 686, 2]
 // Exports: default
 
-// Module 10634 (useDispatchOpenActivity)
+// Module 10598 (useDispatchOpenActivity)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("modules/activities/useDispatchOpenActivity.tsx");

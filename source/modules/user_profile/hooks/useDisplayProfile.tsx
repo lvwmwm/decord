@@ -1,10 +1,10 @@
-// Module ID: 7974
-// Function ID: 63091
+// Module ID: 7922
+// Function ID: 63066
 // Name: useDisplayProfile
-// Dependencies: [31, 1849, 6855, 566, 7975, 1916, 7978, 2]
+// Dependencies: [31, 1850, 5630, 566, 7923, 1917, 7925, 2]
 // Exports: useDisplayProfileWithFetchEffect
 
-// Module 7974 (useDisplayProfile)
+// Module 7922 (useDisplayProfile)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -49,7 +49,7 @@ function getDisplayProfile(id, arg1) {
   }
 }
 let closure_6 = areArraysShallowlyEqual.cachedFunction((arg0, arg1) => {
-  let tmp = importDefault(7978);
+  let tmp = importDefault(7925);
   tmp = new tmp(arg0, arg1);
   return tmp;
 });

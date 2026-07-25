@@ -1,10 +1,10 @@
-// Module ID: 8520
-// Function ID: 67848
+// Module ID: 8280
+// Function ID: 66502
 // Name: useStagePrivacyLevelSettings
-// Dependencies: [3758, 653, 1354, 482, 566, 3763, 483, 1212, 1920, 2]
+// Dependencies: [3759, 653, 1354, 482, 566, 3764, 483, 1212, 1921, 2]
 // Exports: default
 
-// Module 8520 (useStagePrivacyLevelSettings)
+// Module 8280 (useStagePrivacyLevelSettings)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { HelpdeskArticles } from "ME";
 import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -18,7 +18,7 @@ export default function useStagePrivacyLevelSettings(channel, privacy_level) {
   let obj = _require(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.can(outer1_7.CREATE_INSTANT_INVITE, closure_0));
-  const obj2 = importAll(3763);
+  const obj2 = importAll(3764);
   const canEveryoneRoleResult = obj2.canEveryoneRole(importAll(483).combine(Permissions.VIEW_CHANNEL, Permissions.CONNECT), channel);
   obj = {};
   privacy_level = undefined;
@@ -33,9 +33,9 @@ export default function useStagePrivacyLevelSettings(channel, privacy_level) {
       let formatResult = null;
       if (arg2 === constants.PUBLIC) {
         const intl3 = _require(1212).intl;
-        obj = { articleURL: importDefault(1920).getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
+        obj = { articleURL: importDefault(1921).getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
         formatResult = intl3.format(_require(1212).t["ew/Jq4"], obj);
-        const obj6 = importDefault(1920);
+        const obj6 = importDefault(1921);
       }
       let stringResult1 = formatResult;
     } else {

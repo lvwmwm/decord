@@ -1,10 +1,10 @@
-// Module ID: 5854
-// Function ID: 49746
+// Module ID: 6774
+// Function ID: 59396
 // Name: AnimatedAvatarsAbstractUI
-// Dependencies: [33, 5085, 5855, 2]
+// Dependencies: [33, 5085, 6775, 2]
 // Exports: AnimatedAvatarsAbstractUI
 
-// Module 5854 (AnimatedAvatarsAbstractUI)
+// Module 6774 (AnimatedAvatarsAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AnimatedAvatarsAbstractUI.native.tsx");
@@ -27,7 +27,7 @@ export const AnimatedAvatarsAbstractUI = function AnimatedAvatarsAbstractUI(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5855) };
+  obj = { uri: importDefault(6775) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

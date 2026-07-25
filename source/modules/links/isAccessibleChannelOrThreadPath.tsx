@@ -1,7 +1,7 @@
 // Module ID: 5628
-// Function ID: 48036
+// Function ID: 48041
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1908, 5054, 1348, 1910, 1838, 653, 1355, 5629, 5631, 5640, 5609, 5643, 5645, 5605, 5646, 5647, 4041, 5648, 5607, 1327, 5690, 4140, 4321, 2]
+// Dependencies: [5, 1909, 5055, 1348, 1911, 1838, 653, 1355, 5629, 12548, 12555, 5609, 12558, 12560, 5605, 6010, 5763, 4042, 5994, 5607, 1327, 10352, 4141, 4322, 2]
 // Exports: default
 
 // Module 5628 (_isAccessibleChannelOrThreadPath)

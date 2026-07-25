@@ -1,10 +1,10 @@
-// Module ID: 15116
-// Function ID: 115048
+// Module ID: 15126
+// Function ID: 115176
 // Name: GenericUpsellActionSheet
-// Dependencies: [31, 27, 1345, 33, 4130, 689, 7186, 5187, 5085, 5446, 4126, 1273, 4543, 2]
+// Dependencies: [31, 27, 1345, 33, 4131, 689, 7892, 5187, 5085, 5446, 4127, 1273, 4544, 2]
 // Exports: default
 
-// Module 15116 (GenericUpsellActionSheet)
+// Module 15126 (GenericUpsellActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -34,7 +34,7 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = markAsDismissed(7186);
+  let obj = markAsDismissed(7892);
   bottomSheetRef = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
   obj = {
@@ -51,11 +51,11 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
   obj.header = callback2(View, obj);
   const obj2 = { style: tmp.content };
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/medium", color: "mobile-text-heading-primary", children: header };
-  const items1 = [callback(markAsDismissed(4126).Text, obj3), callback(markAsDismissed(1273).Spacer, { size: 12 }), , ];
+  const items1 = [callback(markAsDismissed(4127).Text, obj3), callback(markAsDismissed(1273).Spacer, { size: 12 }), , ];
   const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: body };
-  items1[2] = callback(markAsDismissed(4126).Text, obj4);
+  items1[2] = callback(markAsDismissed(4127).Text, obj4);
   const obj5 = { variant: "primary", grow: true, onPress: onCTAPress, text: cta };
-  items1[3] = callback(markAsDismissed(4543).Button, obj5);
+  items1[3] = callback(markAsDismissed(4544).Button, obj5);
   obj2.children = items1;
   obj.children = callback2(View, obj2);
   return callback(markAsDismissed(5187).BottomSheet, obj);

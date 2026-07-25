@@ -1,10 +1,10 @@
-// Module ID: 8948
-// Function ID: 70531
+// Module ID: 8836
+// Function ID: 70010
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [27, 33, 4130, 8949, 1273, 1212, 2]
+// Dependencies: [27, 33, 4131, 8837, 1273, 1212, 2]
 // Exports: default
 
-// Module 8948 (SecureFramesExistingVerificationsHelpMessage)
+// Module 8836 (SecureFramesExistingVerificationsHelpMessage)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -17,7 +17,7 @@ export default function SecureFramesExistingVerificationsHelpMessage(arg0) {
   let userId;
   let userKey;
   ({ style, userId, userKey } = arg0);
-  let obj = require(8949) /* useSecureFramesUserVerifiedKeysCount */;
+  let obj = require(8837) /* useSecureFramesUserVerifiedKeysCount */;
   const secureFramesUserVerifiedKeysCount = obj.useSecureFramesUserVerifiedKeysCount({ userId, keyToOmit: userKey });
   let tmp3 = null;
   if (0 !== secureFramesUserVerifiedKeysCount) {

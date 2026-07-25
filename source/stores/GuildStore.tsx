@@ -1,7 +1,7 @@
 // Module ID: 1838
-// Function ID: 20068
+// Function ID: 20075
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 1388, 1839, 1391, 1194, 653, 1386, 1390, 21, 1387, 1841, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1388, 1839, 1391, 1194, 1386, 1390, 1841, 21, 1387, 1842, 2]
 
 // Module 1838 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -12,7 +12,6 @@ import _inherits from "_inherits";
 import constructInPlace from "constructInPlace";
 import isGuildOwner from "isGuildOwner";
 import closure_14 from "_isNativeReflectConstruct";
-import { FAVORITES } from "ME";
 import { FAVORITES_GUILD_RECORD } from "date";
 import { LibdiscoreBatchStoreRefactorExperiment } from "_callSuper";
 
@@ -145,7 +144,7 @@ let tmp4 = ((LibdiscoreStore) => {
       items1 = [...items];
       obj = outer1_7(apply);
       tmp2 = outer1_6;
-      if (outer1_19()) {
+      if (outer1_18()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = outer1_7;
@@ -155,14 +154,14 @@ let tmp4 = ((LibdiscoreStore) => {
       }
       tmp2Result = tmp2(self, constructResult);
       apply = tmp2Result;
-      tmp2Result.database = tmp2Result.addKVDatabase("guilds", outer1_20);
-      tmp2Result.getGuild = (arg0) => {
-        if (null != arg0) {
-          if (arg0 === outer2_15) {
-            let value = outer2_16;
+      tmp2Result.database = tmp2Result.addKVDatabase("guilds", outer1_19);
+      tmp2Result.getGuild = (guildId) => {
+        if (null != guildId) {
+          if (obj.isFavoritesGuildId(guildId)) {
+            let value = outer2_15;
           } else {
             const database = tmp2Result.database;
-            value = database.get(arg0);
+            value = database.get(guildId);
           }
           return value;
         }

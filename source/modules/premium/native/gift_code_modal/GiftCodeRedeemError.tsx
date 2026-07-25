@@ -1,10 +1,10 @@
-// Module ID: 12289
-// Function ID: 95973
+// Module ID: 12265
+// Function ID: 95782
 // Name: GiftCodeRedeemError
-// Dependencies: [31, 27, 33, 4130, 689, 1457, 5121, 12290, 12291, 4126, 1212, 4543, 4337, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1457, 5121, 12266, 12267, 4127, 1212, 4544, 4338, 2]
 // Exports: default
 
-// Module 12289 (GiftCodeRedeemError)
+// Module 12265 (GiftCodeRedeemError)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,17 +36,17 @@ export default function GiftCodeRedeemError(children) {
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false };
   const obj1 = {};
   if (theme.dark) {
-    let tmp7Result = tmp7(12290);
+    let tmp7Result = tmp7(12266);
   } else {
-    tmp7Result = tmp7(12291);
+    tmp7Result = tmp7(12267);
   }
   obj1.source = tmp7Result;
   const items = [callback(closure_3, obj1), , ];
   const obj2 = { variant: "heading-xl/bold", style: tmp.header };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl.formatToMarkdownString(require(1212) /* getSystemLocale */.t.JUvC0s, {});
-  items[1] = callback(require(4126) /* Text */.Text, obj2);
-  items[2] = callback(require(4126) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
+  items[1] = callback(require(4127) /* Text */.Text, obj2);
+  items[2] = callback(require(4127) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
   obj.children = items;
   const items1 = [closure_7(closure_5, obj), ];
   const obj4 = { style: tmp.footer };
@@ -57,7 +57,7 @@ export default function GiftCodeRedeemError(children) {
   obj5.onPress = function onPress() {
     return outer1_1(outer1_2[12]).pop();
   };
-  obj4.children = callback(require(4543) /* Button */.Button, obj5);
+  obj4.children = callback(require(4544) /* Button */.Button, obj5);
   items1[1] = callback(closure_4, obj4);
   obj.children = items1;
   return closure_7(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

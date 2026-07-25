@@ -1,9 +1,9 @@
-// Module ID: 4995
-// Function ID: 43214
+// Module ID: 4996
+// Function ID: 43226
 // Name: EmojiCategoryTypes
 // Dependencies: [2]
 
-// Module 4995 (EmojiCategoryTypes)
+// Module 4996 (EmojiCategoryTypes)
 const result = require("set").fileFinishedImporting("modules/emoji_picker/EmojiPickerConstants.tsx");
 
 export const EmojiCategoryTypes = { GUILD: "GUILD", UNICODE: "UNICODE", RECENT: "RECENT", CUSTOM: "CUSTOM", SEARCH_RESULTS: "SEARCH_RESULTS", FAVORITES: "FAVORITES", TOP_GUILD_EMOJI: "TOP_GUILD_EMOJI", PREMIUM_UPSELL: "PREMIUM_UPSELL", SOUNDMOJI: "SOUNDMOJI", KAOMOJI: "KAOMOJI" };

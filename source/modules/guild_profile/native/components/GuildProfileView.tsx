@@ -1,10 +1,10 @@
-// Module ID: 8624
-// Function ID: 68386
+// Module ID: 8388
+// Function ID: 67099
 // Name: getBackgroundForProfile
-// Dependencies: [31, 27, 1838, 653, 33, 3840, 3842, 4130, 689, 566, 1387, 1450, 1392, 8625, 4066, 3834, 8626, 4554, 5167, 4126, 1212, 8627, 8628, 8630, 11910, 2]
+// Dependencies: [31, 27, 1838, 653, 33, 3841, 3843, 4131, 689, 566, 1387, 1450, 1392, 8389, 4067, 3835, 8390, 4555, 5166, 4127, 1212, 8391, 8392, 8406, 11886, 2]
 // Exports: default
 
-// Module 8624 (getBackgroundForProfile)
+// Module 8388 (getBackgroundForProfile)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -20,8 +20,8 @@ let closure_9;
 const require = arg1;
 function getBackgroundForProfile(closure_2, token) {
   const items = [token, ];
-  const obj = require(3840) /* isThemeLight */;
-  const obj2 = require(3842) /* ManaContext */;
+  const obj = require(3841) /* isThemeLight */;
+  const obj2 = require(3843) /* ManaContext */;
   if (isThemeDarkResult) {
     let brightenColorResult = obj2.brightenColor(token, 0.8);
   } else {
@@ -47,7 +47,7 @@ function GuildProfileBackground(guildProfile) {
     if (null != guildProfile.customBanner) {
       obj = {};
       ({ id: obj3.id, customBanner: obj3.splash } = guildProfile);
-      obj.size = importDefault(8625)() * importDefault(1450)().width;
+      obj.size = importDefault(8389)() * importDefault(1450)().width;
       obj = { style: tmp2.imageBanner };
       obj.source = importDefault(1392).getGuildDiscoverySplashSource(obj);
       return callback(closure_5, obj);
@@ -57,27 +57,27 @@ function GuildProfileBackground(guildProfile) {
 }
 function GuildProfileGradient(guildProfile) {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const token = obj.useToken(importDefault(689).colors.BACKGROUND_BASE_LOWEST);
-  const tmp2 = importDefault(4066)();
-  const profilePrimaryColor = require(8626) /* useProfilePrimaryColor */.useProfilePrimaryColor(guildProfile.guildProfile, token);
+  const tmp2 = importDefault(4067)();
+  const profilePrimaryColor = require(8390) /* useProfilePrimaryColor */.useProfilePrimaryColor(guildProfile.guildProfile, token);
   obj = { style: tmp.colorBanner, start: frozen.START, end: frozen.END };
-  const obj2 = require(8626) /* useProfilePrimaryColor */;
+  const obj2 = require(8390) /* useProfilePrimaryColor */;
   obj.colors = getBackgroundForProfile(tmp2, profilePrimaryColor);
-  return callback(importDefault(4554), obj);
+  return callback(importDefault(4555), obj);
 }
 function JoinForFullAccessCard() {
   let obj = { variant: "secondary", border: "none", style: _createForOfIteratorHelperLoose().joinForFullAccessCard };
   obj = { variant: "text-md/semibold", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.us0bE8);
-  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  const items = [callback(require(4127) /* Text */.Text, obj), ];
   obj = { variant: "text-sm/normal", color: "text-muted" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.string(require(1212) /* getSystemLocale */.t.fTtTTp);
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
-  return callback2(require(5167) /* getCardBackgroundToken */.Card, obj);
+  return callback2(require(5166) /* getCardBackgroundToken */.Card, obj);
 }
 ({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
@@ -127,10 +127,10 @@ export default function GuildProfileView(guildProfile) {
   const items1 = [callback(GuildProfileBackground, { guildProfile }), , , ];
   let tmp5 = flag;
   if (flag) {
-    tmp5 = callback(importDefault(8627), {});
+    tmp5 = callback(importDefault(8391), {});
   }
   items1[1] = tmp5;
-  items1[2] = callback(importDefault(8628), { profile: guildProfile, guildIconSource: memo });
+  items1[2] = callback(importDefault(8392), { profile: guildProfile, guildIconSource: memo });
   obj = { style: tmp.body };
   let tmp11 = null != guildProfile.description;
   if (tmp11) {
@@ -138,7 +138,7 @@ export default function GuildProfileView(guildProfile) {
   }
   if (tmp11) {
     obj = { variant: "text-md/medium", color: "text-subtle", children: guildProfile.description };
-    tmp11 = callback(guildProfile(4126).Text, obj);
+    tmp11 = callback(guildProfile(4127).Text, obj);
   }
   const items2 = [tmp11, ];
   if (flag) {
@@ -146,9 +146,9 @@ export default function GuildProfileView(guildProfile) {
   } else {
     const obj1 = {};
     const obj2 = { profile: guildProfile };
-    const items3 = [callback(importDefault(8630), obj2), ];
+    const items3 = [callback(importDefault(8406), obj2), ];
     const obj3 = { profile: guildProfile };
-    items3[1] = callback(importDefault(11910), obj3);
+    items3[1] = callback(importDefault(11886), obj3);
     obj1.children = items3;
     tmp21 = callback2(closure_10, obj1);
   }

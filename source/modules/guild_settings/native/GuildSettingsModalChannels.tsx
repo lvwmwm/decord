@@ -1,10 +1,10 @@
-// Module ID: 16339
-// Function ID: 127144
+// Module ID: 16350
+// Function ID: 127312
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1348, 1838, 3758, 3767, 1849, 16255, 653, 33, 4130, 5052, 689, 1212, 3976, 665, 7636, 1273, 16340, 3842, 566, 4593, 4320, 4660, 1557, 4543, 5495, 8456, 8773, 16341, 16342, 16253, 10976, 14236, 3763, 5048, 4470, 5788, 16343, 5448, 7685, 1456, 44, 4549, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1348, 1838, 3759, 3768, 1850, 16266, 653, 33, 4131, 5053, 689, 1212, 3977, 665, 7575, 1273, 16351, 3843, 566, 4594, 4321, 4661, 1557, 4544, 5495, 8214, 8661, 16352, 16353, 16264, 10927, 14247, 3764, 5049, 4471, 6695, 16354, 5448, 7627, 1456, 44, 4550, 2]
 // Exports: default
 
-// Module 16339 (_callSuper)
+// Module 16350 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -67,9 +67,9 @@ function ChannelItem(arg0) {
   ({ channelIconStyle, channel } = arg0);
   ({ sortingEnabled, onPress: importDefault, sortHandlers } = arg0);
   ({ style, actionIconStyle } = arg0);
-  let obj = channel(4130);
+  let obj = channel(4131);
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
-  let obj1 = channel(3976);
+  let obj1 = channel(3977);
   let obj2 = channel(566);
   const items = [closure_14];
   const items1 = [channel];
@@ -83,15 +83,15 @@ function ChannelItem(arg0) {
     }
     return result;
   }, items1);
-  let obj3 = channel(4593);
+  let obj3 = channel(4594);
   const channelIcon = obj3.getChannelIcon(channel);
-  let obj4 = channel(4593);
+  let obj4 = channel(4594);
   const channelIconComponent = obj4.getChannelIconComponent(channel);
   obj = { accessibilityRole: "button" };
-  const obj7 = channel(3976);
+  const obj7 = channel(3977);
   const tmp5 = callback4;
   const tmp6 = closure_11;
-  const isThemeDarkResult = channel(3976).isThemeDark(obj1.useThemeContext().theme);
+  const isThemeDarkResult = channel(3977).isThemeDark(obj1.useThemeContext().theme);
   const hex2rgb = channel(665).hex2rgb;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   if (isThemeDarkResult) {
@@ -122,7 +122,7 @@ function ChannelItem(arg0) {
     let tmp19 = callback4(channelIconComponent, obj3);
   } else {
     obj4 = { size: channel(1273).Icon.Sizes.SMALL_20, source: channelIcon, style: channelIconStyle };
-    tmp19 = callback4(channel(7636).FormRow.Icon, obj4);
+    tmp19 = callback4(channel(7575).FormRow.Icon, obj4);
   }
   obj2.leading = tmp19;
   obj2.style = legacyClassComponentStyles.formRowStyle;
@@ -130,7 +130,7 @@ function ChannelItem(arg0) {
   const tmp13 = closure_10;
   const tmp15 = callback4;
   const tmp8 = channel(665);
-  obj2.label = channel(4320).computeChannelName(channel, closure_16, closure_15);
+  obj2.label = channel(4321).computeChannelName(channel, closure_16, closure_15);
   let fn;
   if (!sortingEnabled) {
     fn = () => callback(channel.id);
@@ -140,8 +140,8 @@ function ChannelItem(arg0) {
   if (stateFromStores) {
     tmp21 = null;
     if (sortingEnabled) {
-      const obj5 = { source: importDefault(16340), style: actionIconStyle };
-      tmp21 = callback4(channel(7636).FormRow.Icon, obj5);
+      const obj5 = { source: importDefault(16351), style: actionIconStyle };
+      tmp21 = callback4(channel(7575).FormRow.Icon, obj5);
     }
   }
   obj2.trailing = tmp21;
@@ -150,7 +150,7 @@ function ChannelItem(arg0) {
     num6 = 1;
   }
   obj2.numberOfLines = num6;
-  obj.children = tmp15(channel(7636).FormRow, obj2);
+  obj.children = tmp15(channel(7575).FormRow, obj2);
   obj["children"] = tmp12(tmp13, obj);
   return tmp5(tmp6, obj);
 }
@@ -165,7 +165,7 @@ function isValidDrop(parentId, channel) {
 }
 function CreateButton(guild) {
   guild = guild.guild;
-  let obj = guild(4130);
+  let obj = guild(4131);
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
   bottom = bottom(1557)().bottom;
   let items = [bottom];
@@ -204,8 +204,8 @@ function CreateButton(guild) {
       const result = obj.showSimpleActionSheet(obj);
     };
     let obj1 = { color: "white" };
-    obj.icon = callback4(guild(8773).PlusSmallIcon, obj1);
-    obj.children = callback4(guild(4543).Button, obj);
+    obj.icon = callback4(guild(8661).PlusSmallIcon, obj1);
+    obj.children = callback4(guild(4544).Button, obj);
     tmp3 = callback4(closure_10, obj);
   }
   return tmp3;
@@ -850,7 +850,7 @@ export default function GuildSettingsModalChannelsConnected(arg0) {
     }
     return tmp;
   }, items6);
-  require(4549) /* getFontScale */;
+  require(4550) /* getFontScale */;
   let tmp12 = null;
   if (null != stateFromStores4) {
     tmp12 = null;

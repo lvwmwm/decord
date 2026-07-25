@@ -1,5 +1,5 @@
 // Module ID: 1080
-// Function ID: 12433
+// Function ID: 12439
 // Name: OpenFeatureIntegrationHook
 // Dependencies: [6, 7, 794]
 

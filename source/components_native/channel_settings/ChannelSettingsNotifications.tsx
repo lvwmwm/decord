@@ -1,10 +1,10 @@
-// Module ID: 10309
-// Function ID: 79585
+// Module ID: 10242
+// Function ID: 79238
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 4051, 3767, 4325, 1849, 653, 33, 1212, 4130, 689, 5079, 4098, 10310, 1934, 5073, 4324, 4320, 5501, 5165, 10314, 5502, 7654, 7653, 4126, 7636, 4541, 3842, 566, 10315, 10316, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 4052, 3768, 4326, 1850, 653, 33, 1212, 4131, 689, 5079, 4099, 10243, 1935, 5074, 4325, 4321, 5501, 5164, 10247, 5502, 7596, 7595, 4127, 7575, 4542, 3843, 566, 10248, 10249, 2]
 // Exports: default
 
-// Module 10309 (_isNativeReflectConstruct)
+// Module 10242 (_isNativeReflectConstruct)
 import closure_3 from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -483,7 +483,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
   let obj = _require(566);
   const items = [closure_11];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_11.getChannel(channelId.channelId));
-  _require(10315);
+  _require(10248);
   if (null == stateFromStores) {
     return null;
   } else {
@@ -494,7 +494,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
     }
     obj = { channel: stateFromStores };
     merged1 = Object.assign(merged1);
-    tmp11 = callback3(importDefault(10316), obj);
-    const tmp15 = importDefault(10316);
+    tmp11 = callback3(importDefault(10249), obj);
+    const tmp15 = importDefault(10249);
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 11991
-// Function ID: 92703
+// Module ID: 11967
+// Function ID: 92508
 // Name: isUserProfileVoiceActivityForChannel
-// Dependencies: [4217, 4146, 6981, 9105, 566, 2]
+// Dependencies: [4218, 4147, 5972, 8997, 566, 2]
 // Exports: default
 
-// Module 11991 (isUserProfileVoiceActivityForChannel)
+// Module 11967 (isUserProfileVoiceActivityForChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -14,7 +14,7 @@ function isUserProfileVoiceActivityForChannel(voiceStateForSession) {
   let voiceChannelId;
   voiceStateForSession = voiceStateForSession.voiceStateForSession;
   ({ activity, voiceChannelId } = voiceStateForSession);
-  let tmp = importDefault(6981)(activity);
+  let tmp = importDefault(5972)(activity);
   if (tmp) {
     let channelId;
     if (null != voiceStateForSession) {
@@ -29,7 +29,7 @@ const result = require("isEmbeddedActivity").fileFinishedImporting("modules/user
 export default function useUserProfileVoiceActivity(guildId) {
   const userId = guildId.userId;
   let id;
-  const tmp = id(9105)({ userId, guildId: guildId.guildId });
+  const tmp = id(8997)({ userId, guildId: guildId.guildId });
   const voiceChannel = tmp.voiceChannel;
   id = undefined;
   if (null != voiceChannel) {

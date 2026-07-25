@@ -1,10 +1,10 @@
-// Module ID: 5793
-// Function ID: 49519
+// Module ID: 6449
+// Function ID: 57904
 // Name: getSanitizedRestrictedGuilds
-// Dependencies: [4469, 1838, 653, 3803, 4324, 5794, 1212, 1207, 2]
+// Dependencies: [4470, 1838, 653, 3804, 4325, 6450, 1212, 1207, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 5793 (getSanitizedRestrictedGuilds)
+// Module 6449 (getSanitizedRestrictedGuilds)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
@@ -19,7 +19,7 @@ let obj = { UNDECIDED: 0, [0]: "UNDECIDED", OPTIN: 1, [1]: "OPTIN", OPTOUT: 2, [
 const result = require("ME").fileFinishedImporting("utils/UserSettingsUtils.tsx");
 
 export const getSanitizedRestrictedGuilds = function getSanitizedRestrictedGuilds() {
-  const RestrictedGuildIds = require(3803) /* explicitContentFromProto */.RestrictedGuildIds;
+  const RestrictedGuildIds = require(3804) /* explicitContentFromProto */.RestrictedGuildIds;
   const setting = RestrictedGuildIds.getSetting();
   let found = setting;
   if (0 === _isNativeReflectConstruct.totalUnavailableGuilds) {
@@ -28,7 +28,7 @@ export const getSanitizedRestrictedGuilds = function getSanitizedRestrictedGuild
   return new Set(found);
 };
 export const getSanitizedMessageRequestRestrictedGuilds = function getSanitizedMessageRequestRestrictedGuilds() {
-  const MessageRequestRestrictedGuildIds = require(3803) /* explicitContentFromProto */.MessageRequestRestrictedGuildIds;
+  const MessageRequestRestrictedGuildIds = require(3804) /* explicitContentFromProto */.MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.getSetting();
   let found = setting;
   if (0 === _isNativeReflectConstruct.totalUnavailableGuilds) {
@@ -37,7 +37,7 @@ export const getSanitizedMessageRequestRestrictedGuilds = function getSanitizedM
   return new Set(found);
 };
 export const getSanitizedActivityRestrictedGuilds = function getSanitizedActivityRestrictedGuilds() {
-  const ActivityRestrictedGuilds = require(3803) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+  const ActivityRestrictedGuilds = require(3804) /* explicitContentFromProto */.ActivityRestrictedGuilds;
   const setting = ActivityRestrictedGuilds.getSetting();
   let found = setting;
   if (0 === _isNativeReflectConstruct.totalUnavailableGuilds) {
@@ -46,7 +46,7 @@ export const getSanitizedActivityRestrictedGuilds = function getSanitizedActivit
   return new Set(found);
 };
 export const getSanitizedActivityJoiningRestrictedGuilds = function getSanitizedActivityJoiningRestrictedGuilds() {
-  const ActivityJoiningRestrictedGuilds = require(3803) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+  const ActivityJoiningRestrictedGuilds = require(3804) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
   const setting = ActivityJoiningRestrictedGuilds.getSetting();
   let found = setting;
   if (0 === _isNativeReflectConstruct.totalUnavailableGuilds) {
@@ -70,8 +70,8 @@ export const trackUserSettingsPaneViewed = function trackUserSettingsPaneViewed(
   let source;
   let subsection;
   ({ destinationPane, originPane, source, subsection, locationStack, applicationId } = arg0);
-  let obj = importDefault(4324);
-  obj = { settings_type: "user", origin_pane: originPane, destination_pane: destinationPane, location_stack: locationStack, source, subsection, application_id: applicationId, search_session_id: importDefault(5794).getSearchSessionId() };
+  let obj = importDefault(4325);
+  obj = { settings_type: "user", origin_pane: originPane, destination_pane: destinationPane, location_stack: locationStack, source, subsection, application_id: applicationId, search_session_id: importDefault(6450).getSearchSessionId() };
   obj.trackWithMetadata(constants.SETTINGS_PANE_VIEWED, obj);
 };
 export const NonSpamRetrainingOptInOptions = obj;

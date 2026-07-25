@@ -1,9 +1,9 @@
-// Module ID: 14305
-// Function ID: 109781
+// Module ID: 14316
+// Function ID: 109908
 // Name: handleLanguageChange
-// Dependencies: [5, 31, 27, 1922, 1921, 33, 4130, 689, 8042, 566, 5121, 7654, 1212, 7653, 14306, 2]
+// Dependencies: [5, 31, 27, 1923, 1922, 33, 4131, 689, 6152, 566, 5121, 7596, 1212, 7595, 14317, 2]
 
-// Module 14305 (handleLanguageChange)
+// Module 14316 (handleLanguageChange)
 import jsxProd from "jsxProd";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { setAppLocale } from "_setAppLocale";
@@ -50,7 +50,7 @@ const memoResult = require("result").memo(function UserSettingsLocale() {
     obj.icon = outer1_8(outer1_4, obj);
     return outer1_8(tmp(outer1_2[13]).TableRadioRow, obj, name);
   });
-  obj.children = jsx(require(7654) /* context */.TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true });
+  obj.children = jsx(require(7596) /* context */.TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true });
   obj.children = jsx(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
   return <closure_5 bottom />;
 });

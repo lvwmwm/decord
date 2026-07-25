@@ -1,10 +1,10 @@
-// Module ID: 8978
-// Function ID: 70692
+// Module ID: 8866
+// Function ID: 70171
 // Name: XboxLinkLanding
-// Dependencies: [31, 8977, 653, 33, 4130, 1212, 4658, 7480, 4646, 8979, 1456, 1920, 8980, 8981, 2]
+// Dependencies: [31, 8865, 653, 33, 4131, 1212, 4659, 6564, 4647, 8867, 1456, 1921, 8868, 8869, 2]
 // Exports: default
 
-// Module 8978 (XboxLinkLanding)
+// Module 8866 (XboxLinkLanding)
 import result from "result";
 import { XboxLinkModalScenes } from "XboxLinkModalScenes";
 import ME from "ME";
@@ -22,9 +22,9 @@ export default function XboxLinkLanding() {
   let obj = navigation(1456);
   navigation = obj.useNavigation();
   const tmp = callback();
-  const articleURL = importDefault(1920).getArticleURL(constants.XBOX_CONNECTION);
+  const articleURL = importDefault(1921).getArticleURL(constants.XBOX_CONNECTION);
   let intl = navigation(1212).intl;
-  const obj2 = importDefault(1920);
+  const obj2 = importDefault(1921);
   let items = [navigation];
   const memo = React.useMemo(() => {
     let obj = {};
@@ -61,5 +61,5 @@ export default function XboxLinkLanding() {
   obj.body = intl.format(navigation(1212).t.CIc3IN, { helpdeskArticleUrl: articleURL });
   obj.onNext = callback;
   obj.valueProps = memo;
-  return jsx(navigation(8981).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image });
+  return jsx(navigation(8869).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image });
 };

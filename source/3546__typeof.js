@@ -1,7 +1,7 @@
 // Module ID: 3546
-// Function ID: 27546
+// Function ID: 27537
 // Name: _typeof
-// Dependencies: [3517, 3518, 3515]
+// Dependencies: [3518, 3519, 3516]
 
 // Module 3546 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const SecondParser = ((Parser) => {
-  class SecondParser {
+export const MinuteParser = ((Parser) => {
+  class MinuteParser {
     constructor() {
-      if (this instanceof SecondParser) {
+      if (this instanceof MinuteParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -158,8 +158,8 @@ export const SecondParser = ((Parser) => {
         applyResult = call.apply(TypeError, items.concat(array));
         tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 50;
-        tmp17 = outer1_8(applyResult, "priority", 50);
+        num2 = 60;
+        tmp17 = outer1_8(applyResult, "priority", 60);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
         tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
@@ -177,9 +177,9 @@ export const SecondParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class SecondParser {
+    class MinuteParser {
       constructor() {
-        if (this instanceof SecondParser) {
+        if (this instanceof MinuteParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -201,8 +201,8 @@ export const SecondParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 50;
-          tmp17 = outer1_8(applyResult, "priority", 50);
+          num2 = 60;
+          tmp17 = outer1_8(applyResult, "priority", 60);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
           tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
@@ -224,12 +224,12 @@ export const SecondParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: SecondParser, writable: true, configurable: true };
-  SecondParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: MinuteParser, writable: true, configurable: true };
+  MinuteParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class SecondParser {
+    class MinuteParser {
       constructor() {
-        if (this instanceof SecondParser) {
+        if (this instanceof MinuteParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -251,8 +251,8 @@ export const SecondParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 50;
-          tmp17 = outer1_8(applyResult, "priority", 50);
+          num2 = 60;
+          tmp17 = outer1_8(applyResult, "priority", 60);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
           tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
@@ -269,19 +269,19 @@ export const SecondParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(SecondParser, Parser);
+    _setPrototypeOf(MinuteParser, Parser);
   }
-  let closure_0 = _createSuper(SecondParser);
+  let closure_0 = _createSuper(MinuteParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
-      if ("s" === arg1) {
-        return callback(SecondParser[0]).parseNumericPattern(callback(SecondParser[1]).numericPatterns.second, arg0);
-      } else if ("so" === arg1) {
-        const obj = { unit: "second" };
+      if ("m" === arg1) {
+        return callback(MinuteParser[0]).parseNumericPattern(callback(MinuteParser[1]).numericPatterns.minute, arg0);
+      } else if ("mo" === arg1) {
+        const obj = { unit: "minute" };
         return ordinalNumber.ordinalNumber(arg0, obj);
       } else {
-        return callback(SecondParser[0]).parseNDigits(arg1.length, arg0);
+        return callback(MinuteParser[0]).parseNDigits(arg1.length, arg0);
       }
     }
   };
@@ -299,11 +299,11 @@ export const SecondParser = ((Parser) => {
   items[1] = obj;
   items[2] = {
     key: "set",
-    value: function set(setUTCSeconds) {
-      setUTCSeconds.setUTCSeconds(arg2, 0);
-      return setUTCSeconds;
+    value: function set(setUTCMinutes) {
+      setUTCMinutes.setUTCMinutes(arg2, 0, 0);
+      return setUTCMinutes;
     }
   };
-  _defineProperties(SecondParser.prototype, items);
-  return SecondParser;
+  _defineProperties(MinuteParser.prototype, items);
+  return MinuteParser;
 })(require("_defineProperties").Parser);

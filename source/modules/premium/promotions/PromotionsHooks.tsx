@@ -1,10 +1,10 @@
-// Module ID: 12451
-// Function ID: 96600
+// Module ID: 12432
+// Function ID: 96451
 // Name: useEligibleActiveOutboundPromotions
-// Dependencies: [31, 1849, 7129, 1851, 566, 7428, 3776, 686, 7426, 2]
+// Dependencies: [31, 1850, 6207, 1852, 566, 6509, 3777, 686, 6507, 2]
 // Exports: useBogoPromotion, useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
 
-// Module 12451 (useEligibleActiveOutboundPromotions)
+// Module 12432 (useEligibleActiveOutboundPromotions)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

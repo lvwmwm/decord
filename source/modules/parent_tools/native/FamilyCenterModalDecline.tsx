@@ -1,10 +1,10 @@
-// Module ID: 13880
-// Function ID: 106225
+// Module ID: 13891
+// Function ID: 106352
 // Name: FamilyCenterModalDeclineScreen
-// Dependencies: [31, 27, 33, 4130, 689, 7123, 4337, 3830, 1212, 11088, 44, 7613, 7614, 13876, 7696, 4126, 2198, 13846, 11098, 4965, 4543, 5087, 11100, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 6201, 4338, 3831, 1212, 11047, 44, 6725, 6726, 13887, 7640, 4127, 2199, 13857, 11057, 4966, 4544, 5087, 11059, 2]
 // Exports: default
 
-// Module 13880 (FamilyCenterModalDeclineScreen)
+// Module 13891 (FamilyCenterModalDeclineScreen)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ function FamilyCenterModalDeclineScreen(otherUser) {
     const intl = otherUser(outer1_2[8]).intl;
     otherUser(outer1_2[7]).presentFailedToast(intl.string(otherUser(outer1_2[8]).t.R0RpRX));
   }, []);
-  let obj = otherUser(11088);
+  let obj = otherUser(11047);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   const isDeclineLoading = familyCenterActions.isDeclineLoading;
@@ -32,51 +32,51 @@ function FamilyCenterModalDeclineScreen(otherUser) {
   const callback2 = React.useCallback(() => {
     declineLinkRequest(otherUser.id);
   }, items);
-  declineLinkRequest(44)(!declineLinkRequest(7123)(), "FamilyCenterDeclineLinkModal should only be rendered for teens.");
+  declineLinkRequest(44)(!declineLinkRequest(6201)(), "FamilyCenterDeclineLinkModal should only be rendered for teens.");
   obj = {};
   obj = {};
   const obj1 = { style: tmp.header };
   const obj2 = { otherUser };
-  const tmp2 = declineLinkRequest(7123)();
-  obj2.iconSrc = declineLinkRequest(7696);
-  const items1 = [callback(declineLinkRequest(13876), obj2), , ];
+  const tmp2 = declineLinkRequest(6201)();
+  obj2.iconSrc = declineLinkRequest(7640);
+  const items1 = [callback(declineLinkRequest(13887), obj2), , ];
   const obj3 = { style: tmp.headerText, variant: "text-lg/bold" };
   let intl = otherUser(1212).intl;
-  obj3.children = intl.string(declineLinkRequest(2198).teIRCR);
-  items1[1] = callback(otherUser(4126).Text, obj3);
-  items1[2] = callback(declineLinkRequest(13846), { user: otherUser });
+  obj3.children = intl.string(declineLinkRequest(2199).teIRCR);
+  items1[1] = callback(otherUser(4127).Text, obj3);
+  items1[2] = callback(declineLinkRequest(13857), { user: otherUser });
   obj1.children = items1;
   const items2 = [callback2(View, obj1), ];
   const obj4 = { style: tmp.body };
   const obj5 = { style: tmp.noticeHeader, variant: "eyebrow", color: "mobile-text-heading-primary" };
   const intl2 = otherUser(1212).intl;
-  obj5.children = intl2.string(declineLinkRequest(2198).cXgKMD);
-  const items3 = [callback(otherUser(4126).Text, obj5), ];
+  obj5.children = intl2.string(declineLinkRequest(2199).cXgKMD);
+  const items3 = [callback(otherUser(4127).Text, obj5), ];
   const obj6 = { variant: "text-sm/normal", color: "text-default" };
   const intl3 = otherUser(1212).intl;
-  obj6.children = intl3.string(declineLinkRequest(2198).LcM8BS);
-  items3[1] = callback(otherUser(4126).Text, obj6);
+  obj6.children = intl3.string(declineLinkRequest(2199).LcM8BS);
+  items3[1] = callback(otherUser(4127).Text, obj6);
   obj4.children = items3;
   items2[1] = callback2(View, obj4);
   obj.children = items2;
-  const items4 = [callback2(otherUser(7614).ModalContent, obj), ];
+  const items4 = [callback2(otherUser(6726).ModalContent, obj), ];
   const obj7 = {};
   const obj8 = {};
   const obj9 = { variant: "destructive", disabled: isDeclineLoading, loading: isDeclineLoading };
   const intl4 = otherUser(1212).intl;
-  obj9.text = intl4.string(declineLinkRequest(2198).dKxFcn);
+  obj9.text = intl4.string(declineLinkRequest(2199).dKxFcn);
   obj9.onPress = callback2;
-  const items5 = [callback(otherUser(4543).Button, obj9), ];
+  const items5 = [callback(otherUser(4544).Button, obj9), ];
   const obj10 = { variant: "tertiary" };
   const intl5 = otherUser(1212).intl;
   obj10.text = intl5.string(otherUser(1212).t["ETE/oC"]);
-  obj10.onPress = declineLinkRequest(4337).pop;
-  items5[1] = callback(otherUser(4543).Button, obj10);
+  obj10.onPress = declineLinkRequest(4338).pop;
+  items5[1] = callback(otherUser(4544).Button, obj10);
   obj8.children = items5;
-  obj7.children = callback2(otherUser(4965).ButtonGroup, obj8);
-  items4[1] = callback(otherUser(11098).ModalFooter, obj7);
+  obj7.children = callback2(otherUser(4966).ButtonGroup, obj8);
+  items4[1] = callback(otherUser(11057).ModalFooter, obj7);
   obj.children = items4;
-  return callback2(otherUser(7613).ModalScreen, obj);
+  return callback2(otherUser(6725).ModalScreen, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -113,5 +113,5 @@ export default function FamilyCenterModalDecline(otherUser) {
   let obj = { initialRouteName: "DECLINE", screens: memo };
   const intl = otherUser(1212).intl;
   obj.headerBackTitle = intl.string(otherUser(1212).t["13/7kX"]);
-  return callback(otherUser(11100).Modal, obj);
+  return callback(otherUser(11059).Modal, obj);
 };

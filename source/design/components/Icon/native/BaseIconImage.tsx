@@ -1,10 +1,10 @@
-// Module ID: 3833
-// Function ID: 31994
+// Module ID: 3834
+// Function ID: 32005
 // Name: BaseIconImage
-// Dependencies: [31, 27, 33, 3834, 2]
+// Dependencies: [31, 27, 33, 3835, 2]
 // Exports: BaseIconImage
 
-// Module 3833 (BaseIconImage)
+// Module 3834 (BaseIconImage)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -24,7 +24,7 @@ export const BaseIconImage = function BaseIconImage(source) {
   }
   const color = source.color;
   ({ resizeMode, style, accessible, accessibilityLabel } = source);
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const token = obj.useToken(color);
   if (null != token) {
     obj = { tintColor: token };

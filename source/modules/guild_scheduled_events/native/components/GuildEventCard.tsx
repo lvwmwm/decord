@@ -1,9 +1,9 @@
-// Module ID: 8507
-// Function ID: 67744
+// Module ID: 8267
+// Function ID: 66398
 // Name: GuildEventCardControls
-// Dependencies: [31, 27, 4202, 6758, 1354, 33, 4130, 689, 8405, 4965, 566, 8389, 5167, 7580, 8508, 2]
+// Dependencies: [31, 27, 4203, 5751, 1354, 33, 4131, 689, 8163, 4966, 566, 8147, 5166, 6689, 8268, 2]
 
-// Module 8507 (GuildEventCardControls)
+// Module 8267 (GuildEventCardControls)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isGuildScheduledEventActive as closure_5 } from "_isNativeReflectConstruct";
@@ -19,19 +19,19 @@ function GuildEventCardControls(onCloseAction) {
   let event;
   let isConnected;
   ({ event, isConnected } = onCloseAction);
-  let obj = require(8405) /* useEventRsvpState */;
+  let obj = require(8163) /* useEventRsvpState */;
   const primaryActionButtonType = obj.usePrimaryActionButtonType(event, isConnected);
   obj = { direction: "horizontal", style: styles().actionContainer };
-  const items = [callback2(require(8405) /* useEventRsvpState */.GuildEventCardPrimaryAction, { event, onCloseAction: onCloseAction.onCloseAction, isConnected }), , ];
-  let tmp4 = primaryActionButtonType === require(8405) /* useEventRsvpState */.PrimaryActionType.START;
+  const items = [callback2(require(8163) /* useEventRsvpState */.GuildEventCardPrimaryAction, { event, onCloseAction: onCloseAction.onCloseAction, isConnected }), , ];
+  let tmp4 = primaryActionButtonType === require(8163) /* useEventRsvpState */.PrimaryActionType.START;
   if (tmp4) {
     obj = { event };
-    tmp4 = callback2(require(8405) /* useEventRsvpState */.GuildEventCardRSVPAction, obj);
+    tmp4 = callback2(require(8163) /* useEventRsvpState */.GuildEventCardRSVPAction, obj);
   }
   items[1] = tmp4;
-  items[2] = callback2(require(8405) /* useEventRsvpState */.GuildEventShareAction, { event });
+  items[2] = callback2(require(8163) /* useEventRsvpState */.GuildEventShareAction, { event });
   obj.children = items;
-  return closure_8(require(4965) /* ButtonGroup */.ButtonGroup, obj);
+  return closure_8(require(4966) /* ButtonGroup */.ButtonGroup, obj);
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = {};

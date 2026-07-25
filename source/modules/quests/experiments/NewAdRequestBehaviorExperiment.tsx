@@ -1,9 +1,9 @@
-// Module ID: 6956
-// Function ID: 55584
+// Module ID: 5947
+// Function ID: 52890
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 6956 (apexExperiment)
+// Module 5947 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2025-10-ad-request-behavior-experiment", kind: "user", defaultConfig: { enableNewRequestBehavior: false }, variations: { [1]: { enableNewRequestBehavior: false }, [2]: { enableNewRequestBehavior: true }, [3]: { enableNewRequestBehavior: false }, [4]: { enableNewRequestBehavior: true }, [5]: { enableNewRequestBehavior: true }, [6]: { enableNewRequestBehavior: true } } };

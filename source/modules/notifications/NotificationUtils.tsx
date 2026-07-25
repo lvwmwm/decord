@@ -1,10 +1,10 @@
-// Module ID: 10315
-// Function ID: 79640
+// Module ID: 10248
+// Function ID: 79293
 // Name: getMuteTimeOptions
-// Dependencies: [4325, 653, 662, 1212, 21, 1360, 3761, 566, 2]
+// Dependencies: [4326, 653, 662, 1212, 21, 1360, 3762, 566, 2]
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem, useShouldUseNewNotificationSystem
 
-// Module 10315 (getMuteTimeOptions)
+// Module 10248 (getMuteTimeOptions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserNotificationSettings } from "ME";
 import MAX_FAVORITES from "MAX_FAVORITES";

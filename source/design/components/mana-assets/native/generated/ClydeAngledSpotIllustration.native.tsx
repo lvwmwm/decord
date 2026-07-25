@@ -1,10 +1,10 @@
-// Module ID: 5948
-// Function ID: 49887
+// Module ID: 6868
+// Function ID: 59537
 // Name: ClydeAngledSpotIllustration
-// Dependencies: [33, 5085, 5949, 2]
+// Dependencies: [33, 5085, 6869, 2]
 // Exports: ClydeAngledSpotIllustration
 
-// Module 5948 (ClydeAngledSpotIllustration)
+// Module 6868 (ClydeAngledSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ClydeAngledSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const ClydeAngledSpotIllustration = function ClydeAngledSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5949) };
+  obj = { uri: importDefault(6869) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

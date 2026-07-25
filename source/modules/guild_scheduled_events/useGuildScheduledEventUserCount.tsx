@@ -1,10 +1,10 @@
-// Module ID: 8400
-// Function ID: 66763
+// Module ID: 8158
+// Function ID: 65414
 // Name: useGuildScheduledEventUserCount
-// Dependencies: [31, 6758, 566, 8401, 2]
+// Dependencies: [31, 5751, 566, 8159, 2]
 // Exports: default
 
-// Module 8400 (useGuildScheduledEventUserCount)
+// Module 8158 (useGuildScheduledEventUserCount)
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

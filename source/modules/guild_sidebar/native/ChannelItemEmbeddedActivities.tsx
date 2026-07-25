@@ -1,10 +1,10 @@
-// Module ID: 15102
-// Function ID: 114939
+// Module ID: 15112
+// Function ID: 115066
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [31, 27, 33, 4130, 689, 5472, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5472, 4127, 2]
 // Exports: default
 
-// Module 15102 (ChannelItemEmbeddedActivities)
+// Module 15112 (ChannelItemEmbeddedActivities)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -60,7 +60,7 @@ export default function ChannelItemEmbeddedActivities(muted) {
       const obj5 = { style: tmp3.overflow, variant: "text-xs/bold" };
       const _HermesInternal = HermesInternal;
       obj5.children = "+" + diff;
-      obj3.children = callback(require(4126) /* Text */.Text, obj5);
+      obj3.children = callback(require(4127) /* Text */.Text, obj5);
       tmp7 = callback(View, obj3);
     }
     items[1] = tmp7;

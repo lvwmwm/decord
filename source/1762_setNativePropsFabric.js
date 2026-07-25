@@ -1,5 +1,5 @@
 // Module ID: 1762
-// Function ID: 19673
+// Function ID: 19680
 // Name: setNativePropsFabric
 // Dependencies: [1586, 1625, 1585]
 

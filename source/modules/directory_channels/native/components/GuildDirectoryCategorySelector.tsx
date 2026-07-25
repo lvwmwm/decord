@@ -1,10 +1,10 @@
-// Module ID: 11820
-// Function ID: 91715
+// Module ID: 11796
+// Function ID: 91520
 // Name: GuildDirectoryCategorySelector
-// Dependencies: [57, 31, 27, 10074, 10067, 33, 4130, 689, 1212, 3834, 666, 566, 8404, 10078, 11676, 11821, 2]
+// Dependencies: [57, 31, 27, 10003, 9996, 33, 4131, 689, 1212, 3835, 666, 566, 8162, 10007, 11645, 11797, 2]
 // Exports: default
 
-// Module 11820 (GuildDirectoryCategorySelector)
+// Module 11796 (GuildDirectoryCategorySelector)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

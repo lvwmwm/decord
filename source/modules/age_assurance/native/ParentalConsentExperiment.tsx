@@ -1,10 +1,10 @@
-// Module ID: 16188
-// Function ID: 125478
+// Module ID: 16199
+// Function ID: 125646
 // Name: isParentalConsentCheckEnabled
 // Dependencies: [1428, 2]
 // Exports: isParentalConsentCheckEnabled
 
-// Module 16188 (isParentalConsentCheckEnabled)
+// Module 16199 (isParentalConsentCheckEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-01-age-and-parental-consent-check", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

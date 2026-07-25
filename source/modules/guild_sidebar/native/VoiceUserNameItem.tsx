@@ -1,10 +1,10 @@
-// Module ID: 15024
-// Function ID: 114472
+// Module ID: 15034
+// Function ID: 114599
 // Name: VoiceUserNameItem
-// Dependencies: [57, 31, 27, 33, 4130, 4361, 8561, 4126, 3969, 1212, 15025, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 4362, 8321, 4127, 3970, 1212, 15035, 2]
 // Exports: default
 
-// Module 15024 (VoiceUserNameItem)
+// Module 15034 (VoiceUserNameItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -35,12 +35,12 @@ export default function VoiceUserNameItem(arg0) {
   ({ guildId, color, variant } = arg0);
   const tmp = callback4();
   let obj = { userId: user.id, guildId };
-  let obj1 = _require(8561);
-  const displayNameStylesFont = obj1.useDisplayNameStylesFont({ displayNameStyles: importDefault(4361)(obj) });
+  let obj1 = _require(8321);
+  const displayNameStylesFont = obj1.useDisplayNameStylesFont({ displayNameStyles: importDefault(4362)(obj) });
   const tmp4 = callback(React.useState(0), 2);
   const first = tmp4[0];
   _require = tmp4[1];
-  const tmp2 = importDefault(4361)(obj);
+  const tmp2 = importDefault(4362)(obj);
   [tmp7, importDefault] = callback(React.useState(0), 2);
   const tmp6 = callback(React.useState(0), 2);
   [tmp9, dependencyMap] = callback(React.useState(true), 2);
@@ -76,8 +76,8 @@ export default function VoiceUserNameItem(arg0) {
     nick = member.nick;
   }
   if (null == nick) {
-    nick = importDefault(3969).getName(user);
-    const obj6 = importDefault(3969);
+    nick = importDefault(3970).getName(user);
+    const obj6 = importDefault(3970);
   }
   const items1 = [nick, ];
   if (isGuest) {
@@ -85,11 +85,11 @@ export default function VoiceUserNameItem(arg0) {
     const intl = _require(1212).intl;
     const items2 = ["\u00A0", intl.string(_require(1212).t["pFO/Ph"])];
     obj2.children = items2;
-    isGuest = callback2(_require(4126).Text, obj2);
+    isGuest = callback2(_require(4127).Text, obj2);
   }
   items1[1] = isGuest;
   obj.children = items1;
-  const items3 = [callback2(_require(4126).Text, obj), ];
+  const items3 = [callback2(_require(4127).Text, obj), ];
   if (!tmp9) {
     tmp9 = 0 !== first && 0 !== tmp7 && 0 !== tmp11 && first >= tmp7 + tmp11;
     const tmp25 = 0 !== first && 0 !== tmp7 && 0 !== tmp11 && first >= tmp7 + tmp11;
@@ -97,7 +97,7 @@ export default function VoiceUserNameItem(arg0) {
   if (tmp9) {
     const obj3 = { onLayout: callback2, style: tmp.tag };
     const obj4 = { userId: user.id };
-    obj3.children = callback3(importDefault(15025), obj4);
+    obj3.children = callback3(importDefault(15035), obj4);
     tmp9 = callback3(View, obj3);
   }
   items3[1] = tmp9;

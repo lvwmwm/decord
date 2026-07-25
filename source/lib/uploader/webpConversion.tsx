@@ -1,10 +1,10 @@
-// Module ID: 4713
-// Function ID: 40995
+// Module ID: 4714
+// Function ID: 41007
 // Name: _shouldConvertToWebP
-// Dependencies: [5, 3, 4714, 1193, 2]
+// Dependencies: [5, 3, 4715, 1193, 2]
 // Exports: maybeConvertToWebP
 
-// Module 4713 (_shouldConvertToWebP)
+// Module 4714 (_shouldConvertToWebP)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import importDefaultResult from "createBuffer";
 

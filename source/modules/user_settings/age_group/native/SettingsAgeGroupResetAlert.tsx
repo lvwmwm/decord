@@ -1,10 +1,10 @@
-// Module ID: 13728
-// Function ID: 105336
+// Module ID: 13739
+// Function ID: 105463
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 33, 1456, 12744, 4472, 3830, 1212, 4475, 2716, 4475, 2]
+// Dependencies: [5, 33, 1456, 12755, 4473, 3831, 1212, 4476, 2717, 4476, 2]
 // Exports: default
 
-// Module 13728 (SettingsAgeGroupResetAlert)
+// Module 13739 (SettingsAgeGroupResetAlert)
 import presentAddedFriendToast from "presentAddedFriendToast";
 import jsxProd from "jsxProd";
 
@@ -24,9 +24,9 @@ export default function SettingsAgeGroupResetAlert() {
   _require = obj.useNavigation();
   obj = {};
   const intl = _require(1212).intl;
-  obj.title = intl.string(_handleConfirm(2716)["bD//cU"]);
+  obj.title = intl.string(_handleConfirm(2717)["bD//cU"]);
   const intl2 = _require(1212).intl;
-  obj.content = intl2.string(_handleConfirm(2716).FbTAmI);
+  obj.content = intl2.string(_handleConfirm(2717).FbTAmI);
   obj = {};
   const obj1 = {
     variant: "destructive",
@@ -35,14 +35,14 @@ export default function SettingsAgeGroupResetAlert() {
     }
   };
   const intl3 = _require(1212).intl;
-  obj1.text = intl3.string(_handleConfirm(2716).V822Mp);
-  const items = [callback(_require(4475).AlertActionButton, obj1, "confirm"), ];
+  obj1.text = intl3.string(_handleConfirm(2717).V822Mp);
+  const items = [callback(_require(4476).AlertActionButton, obj1, "confirm"), ];
   const obj2 = { variant: "secondary" };
   const intl4 = _require(1212).intl;
   obj2.text = intl4.string(_require(1212).t["ETE/oC"]);
-  items[1] = callback(_require(4475).AlertActionButton, obj2, "cancel");
+  items[1] = callback(_require(4476).AlertActionButton, obj2, "cancel");
   obj.children = items;
-  obj.actions = callback2(_require(4475).AlertActions, obj);
-  return callback(_require(4475).AlertModal, obj);
+  obj.actions = callback2(_require(4476).AlertActions, obj);
+  return callback(_require(4476).AlertModal, obj);
 };
 export const SETTINGS_AGE_GROUP_RESET_ALERT_ID = "settings-age-group-reset";

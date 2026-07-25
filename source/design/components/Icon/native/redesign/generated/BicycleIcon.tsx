@@ -1,10 +1,10 @@
-// Module ID: 9449
-// Function ID: 73523
+// Module ID: 9369
+// Function ID: 73109
 // Name: BicycleIcon
-// Dependencies: [31, 33, 689, 3833, 9450, 2]
+// Dependencies: [31, 33, 689, 3834, 9370, 2]
 // Exports: BicycleIcon
 
-// Module 9449 (BicycleIcon)
+// Module 9369 (BicycleIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const BicycleIcon = function BicycleIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9450) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9370) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9450) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9370) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 11173
-// Function ID: 86949
+// Module ID: 11133
+// Function ID: 86587
 // Name: ForumPostTypingUsers
-// Dependencies: [31, 27, 33, 4130, 689, 9173, 11174, 11175, 3991, 1273, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 9065, 11134, 11135, 3992, 1273, 4127, 2]
 // Exports: default
 
-// Module 11173 (ForumPostTypingUsers)
+// Module 11133 (ForumPostTypingUsers)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

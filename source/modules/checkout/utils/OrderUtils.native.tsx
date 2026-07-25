@@ -1,10 +1,10 @@
-// Module ID: 7202
-// Function ID: 57994
+// Module ID: 6615
+// Function ID: 58541
 // Name: _discardDraftOrder
-// Dependencies: [5, 4113, 6668, 2]
+// Dependencies: [5, 4114, 6169, 2]
 // Exports: discardDraftOrder
 
-// Module 7202 (_discardDraftOrder)
+// Module 6615 (_discardDraftOrder)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { OrderStatus } from "CustomCheckoutFlow";
 

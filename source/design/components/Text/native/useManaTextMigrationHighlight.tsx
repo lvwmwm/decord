@@ -1,10 +1,10 @@
-// Module ID: 4128
-// Function ID: 34330
+// Module ID: 4129
+// Function ID: 34341
 // Name: useManaTextMigrationHighlight
-// Dependencies: [27, 4129, 1278, 4130, 689, 566, 3976, 2]
+// Dependencies: [27, 4130, 1278, 4131, 689, 566, 3977, 2]
 // Exports: useManaTextMigrationHighlight, withManaTextMigrationHighlight
 
-// Module 4128 (useManaTextMigrationHighlight)
+// Module 4129 (useManaTextMigrationHighlight)
 import { StyleSheet } from "get ActivityIndicator";
 import importDefaultResult from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

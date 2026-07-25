@@ -1,9 +1,9 @@
-// Module ID: 10448
-// Function ID: 80425
+// Module ID: 10382
+// Function ID: 80094
 // Name: StrangerDangerWarningBanner
-// Dependencies: [31, 3767, 9139, 10166, 653, 10449, 33, 4130, 689, 566, 10163, 10164, 4337, 4098, 10450, 1934, 480, 10440, 1212, 10443, 4126, 10452, 2]
+// Dependencies: [31, 3768, 9031, 10098, 653, 10383, 33, 4131, 689, 566, 10095, 10096, 4338, 4099, 10384, 1935, 480, 10374, 1212, 10377, 4127, 10386, 2]
 
-// Module 10448 (StrangerDangerWarningBanner)
+// Module 10382 (StrangerDangerWarningBanner)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";
@@ -61,7 +61,7 @@ class StrangerDangerWarningBanner {
         obj.trackCtaEvent(obj);
       };
     }, items4);
-    f80430 = callback1;
+    f80099 = callback1;
     items5 = [, , , , ];
     items5[0] = callback1;
     items5[1] = callback;
@@ -92,7 +92,7 @@ class StrangerDangerWarningBanner {
     }, items5);
     defineProperty = callback2;
     tmp6 = jsx;
-    obj = { channelId, warningId, senderId, warningType: f80430.STRANGER_DANGER };
+    obj = { channelId, warningId, senderId, warningType: f80099.STRANGER_DANGER };
     tmp7 = require("SafetyWarningBanner");
     intl = require("getSystemLocale").intl;
     obj.header = intl.string(require("getSystemLocale").t.iOkDpM);

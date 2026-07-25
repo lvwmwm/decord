@@ -1,9 +1,9 @@
-// Module ID: 13477
-// Function ID: 103613
+// Module ID: 13488
+// Function ID: 103740
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1858, 1857, 13478, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1859, 1858, 13489, 2]
 
-// Module 13477 (_isNativeReflectConstruct)
+// Module 13488 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import transformStoreAssetFromServer from "transformStoreAssetFromServer";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

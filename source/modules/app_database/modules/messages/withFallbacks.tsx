@@ -1,10 +1,10 @@
-// Module ID: 6718
-// Function ID: 52235
+// Module ID: 5714
+// Function ID: 49548
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 1348, 4970, 653, 6712, 6716, 6717, 2]
+// Dependencies: [57, 1348, 4971, 653, 5708, 5712, 5713, 2]
 // Exports: withFallbacks
 
-// Module 6718 (_createForOfIteratorHelperLoose)
+// Module 5714 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -130,7 +130,7 @@ export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
   if (extendedMemoryLru.totalLength >= arg1) {
     return extendedMemoryLru;
   } else {
-    const ExtendedMemoryLru = require(6712) /* _createForOfIteratorHelperLoose */.ExtendedMemoryLru;
+    const ExtendedMemoryLru = require(5708) /* _createForOfIteratorHelperLoose */.ExtendedMemoryLru;
     const prototype = ExtendedMemoryLru.prototype;
     extendedMemoryLru = new ExtendedMemoryLru(extendedMemoryLru.primaryCapacity, extendedMemoryLru.extendedCapacity);
     const diff = arg1 - extendedMemoryLru.totalLength;
@@ -160,13 +160,13 @@ export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
                 if (isReadableChannelResult) {
                   let tmp9 = require;
                   let tmp10 = dependencyMap;
-                  let obj = require(6716) /* isReadableChannel */;
+                  let obj = require(5712) /* isReadableChannel */;
                   isReadableChannelResult = obj.isReadableChannel(tmp6);
                 }
                 if (isReadableChannelResult) {
                   let tmp11 = require;
                   let tmp12 = dependencyMap;
-                  let obj2 = require(6717) /* isLimitedChannel */;
+                  let obj2 = require(5713) /* isLimitedChannel */;
                   isReadableChannelResult = !obj2.isLimitedChannel(tmp6);
                 }
                 if (isReadableChannelResult) {

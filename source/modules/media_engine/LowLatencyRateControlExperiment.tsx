@@ -1,10 +1,10 @@
-// Module ID: 12824
-// Function ID: 99802
+// Module ID: 12835
+// Function ID: 99929
 // Name: getLowLatencyRateControlExperimentConfig
 // Dependencies: [1325, 2]
 // Exports: getLowLatencyRateControlExperimentConfig
 
-// Module 12824 (getLowLatencyRateControlExperimentConfig)
+// Module 12835 (getLowLatencyRateControlExperimentConfig)
 let obj = { kind: "user", name: "2025-10-low-latency-rate-control", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 let closure_0 = require("getUnitId")(obj);
 const result = require("set").fileFinishedImporting("modules/media_engine/LowLatencyRateControlExperiment.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12190
-// Function ID: 95448
+// Module ID: 12166
+// Function ID: 95257
 // Name: onCopy
-// Dependencies: [31, 27, 8527, 33, 4130, 689, 566, 1273, 12191, 1212, 9041, 4660, 5791, 4126, 8528, 4543, 2]
+// Dependencies: [31, 27, 8287, 33, 4131, 689, 566, 1273, 12167, 1212, 8929, 4661, 8943, 4127, 8288, 4544, 2]
 // Exports: default
 
-// Module 12190 (onCopy)
+// Module 12166 (onCopy)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ export default function _default(link) {
   const items = [_isNativeReflectConstruct];
   _require = obj.useStateFromStores(items, () => outer1_4.getInviteSettings());
   obj = { style: tmp.container };
-  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: importDefault(12191) };
+  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: importDefault(12167) };
   let intl = _require(1212).intl;
   obj.title = intl.string(_require(1212).t.tQc0l8);
   const intl2 = _require(1212).intl;
@@ -47,15 +47,15 @@ export default function _default(link) {
   obj2.value = str;
   obj2.style = tmp.inviteInput;
   obj2.clearButtonVisibility = _require(1273).ClearButtonVisibility.NEVER;
-  const items2 = [callback(importDefault(9041), obj2), ];
+  const items2 = [callback(importDefault(8929), obj2), ];
   const obj3 = {};
   const intl3 = _require(1212).intl;
   obj3.accessibilityLabel = intl3.string(_require(1212).t["3D5yo/"]);
   obj3.accessibilityRole = "button";
   obj3.onPress = onPressSettings;
   obj3.style = tmp.settingsButton;
-  obj3.children = callback(_require(5791).SettingsIcon, {});
-  items2[1] = callback(_require(4660).PressableOpacity, obj3);
+  obj3.children = callback(_require(8943).SettingsIcon, {});
+  items2[1] = callback(_require(4661).PressableOpacity, obj3);
   obj1.children = items2;
   items1[1] = closure_6(View, obj1);
   const obj4 = {
@@ -93,12 +93,12 @@ export default function _default(link) {
       }
     })()
   };
-  items1[2] = callback(_require(4126).Text, obj4);
+  items1[2] = callback(_require(4127).Text, obj4);
   const obj5 = {};
   const intl4 = _require(1212).intl;
   obj5.text = intl4.string(_require(1212).t.Ej3B3Y);
   obj5.onPress = onShare;
-  items1[3] = callback(_require(4543).Button, obj5);
+  items1[3] = callback(_require(4544).Button, obj5);
   obj.children = items1;
   return closure_6(View, obj);
 };

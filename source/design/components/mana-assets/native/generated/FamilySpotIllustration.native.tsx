@@ -1,10 +1,10 @@
-// Module ID: 6054
-// Function ID: 50046
+// Module ID: 6974
+// Function ID: 59696
 // Name: FamilySpotIllustration
-// Dependencies: [33, 5085, 6055, 2]
+// Dependencies: [33, 5085, 6975, 2]
 // Exports: FamilySpotIllustration
 
-// Module 6054 (FamilySpotIllustration)
+// Module 6974 (FamilySpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FamilySpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const FamilySpotIllustration = function FamilySpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6055) };
+  obj = { uri: importDefault(6975) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

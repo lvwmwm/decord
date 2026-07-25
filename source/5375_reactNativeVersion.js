@@ -1,5 +1,5 @@
 // Module ID: 5375
-// Function ID: 46051
+// Function ID: 46056
 // Name: reactNativeVersion
 // Dependencies: [27]
 // Exports: isRN083OrAbove

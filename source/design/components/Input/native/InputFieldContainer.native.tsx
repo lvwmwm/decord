@@ -1,10 +1,10 @@
-// Module ID: 5780
-// Function ID: 49476
+// Module ID: 6683
+// Function ID: 59008
 // Name: useInputStyles
-// Dependencies: [31, 27, 33, 689, 3834, 4130, 5781, 4126, 3991, 4542, 2]
+// Dependencies: [31, 27, 33, 689, 3835, 4131, 6684, 4127, 3992, 4543, 2]
 // Exports: InputFieldContainer
 
-// Module 5780 (useInputStyles)
+// Module 6683 (useInputStyles)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,14 +41,14 @@ function useInputStyles(size) {
   } else if ("lg" === str) {
     INPUT_FIELD_RADIUS_LG = importDefault(689).modules.mobile.INPUT_FIELD_RADIUS_LG;
   }
-  let token = require(3834) /* map */.useToken(INPUT_FIELD_RADIUS_LG);
-  const obj = require(3834) /* map */;
+  let token = require(3835) /* map */.useToken(INPUT_FIELD_RADIUS_LG);
+  const obj = require(3835) /* map */;
   const tmp = require;
   if (flag) {
     token = tmpResult.useToken(importDefault(689).modules.mobile.INPUT_FIELD_ROUND_RADIUS);
   }
   const tmp10 = require;
-  tmpResult = require(3834) /* map */;
+  tmpResult = require(3835) /* map */;
   if ("sm" === str) {
     let INPUT_FIELD_TEXT_STYLE_LG = importDefault(689).modules.mobile.INPUT_FIELD_TEXT_STYLE_SM;
   } else if ("md" === str) {
@@ -56,9 +56,9 @@ function useInputStyles(size) {
   } else if ("lg" === str) {
     INPUT_FIELD_TEXT_STYLE_LG = importDefault(689).modules.mobile.INPUT_FIELD_TEXT_STYLE_LG;
   }
-  const token1 = require(3834) /* map */.useToken(INPUT_FIELD_TEXT_STYLE_LG);
-  const obj3 = require(3834) /* map */;
-  return callback3(str, flag2, flag3, token, token1, tmp10(3834).useToken(importDefault(689).modules.mobile.INPUT_FIELD_PADDING_VERTICAL_SM_IOS));
+  const token1 = require(3835) /* map */.useToken(INPUT_FIELD_TEXT_STYLE_LG);
+  const obj3 = require(3835) /* map */;
+  return callback3(str, flag2, flag3, token, token1, tmp10(3835).useToken(importDefault(689).modules.mobile.INPUT_FIELD_PADDING_VERTICAL_SM_IOS));
 }
 ({ Platform, StyleSheet: closure_3, View: closure_4 } = get_ActivityIndicator);
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
@@ -84,7 +84,7 @@ let closure_8 = _createForOfIteratorHelperLoose.createStyles(() => {
   if (str2 === undefined) {
     str2 = "text-md/medium";
   }
-  let obj = { sm: require(5781) /* InputHeights */.InputHeights.SM, md: require(5781) /* InputHeights */.InputHeights.MD, lg: require(5781) /* InputHeights */.InputHeights.LG };
+  let obj = { sm: require(6684) /* InputHeights */.InputHeights.SM, md: require(6684) /* InputHeights */.InputHeights.MD, lg: require(6684) /* InputHeights */.InputHeights.LG };
   obj = { sm: importDefault(689).space.PX_8, md: importDefault(689).space.PX_12, lg: importDefault(689).space.PX_16 };
   obj = { sm: importDefault(689).space.PX_4, md: importDefault(689).space.PX_8, lg: importDefault(689).space.PX_8 };
   const obj1 = { sm: { paddingHorizontal: importDefault(689).space.PX_8, paddingVertical: importDefault(689).space.PX_4 } };
@@ -121,7 +121,7 @@ let closure_8 = _createForOfIteratorHelperLoose.createStyles(() => {
   obj5.radius = obj9;
   obj5.padding = obj1[str];
   const obj10 = {};
-  const merged = Object.assign(require(4126) /* Text */.TextStyleSheet[str2]);
+  const merged = Object.assign(require(4127) /* Text */.TextStyleSheet[str2]);
   obj10["lineHeight"] = undefined;
   const colors = importDefault(689).colors;
   obj10["color"] = flag ? colors.TEXT_MUTED : colors.TEXT_DEFAULT;

@@ -1,20 +1,11 @@
 // Module ID: 15986
-// Function ID: 123454
+// Function ID: 123599
 // Dependencies: []
 
 // Module 15986
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "tr",
+  locale: "ja",
   pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
-      if (1 == arg0) {
-        str = "one";
-      }
-      str2 = str;
-    }
-    return str2;
+    return "other";
   }
 });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "tr-CY", parentLocale: "tr" });

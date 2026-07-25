@@ -1,9 +1,9 @@
-// Module ID: 8401
-// Function ID: 66767
+// Module ID: 8159
+// Function ID: 65418
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 5, 3947, 6758, 8388, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5, 3948, 5751, 8146, 5078, 2]
 
-// Module 8401 (_createForOfIteratorHelperLoose)
+// Module 8159 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -106,10 +106,17 @@ function _isNativeReflectConstruct() {
 function _getGuildEventsForCurrentUser2() {
   return _getGuildEventsForCurrentUser(...arguments);
 }
-function _getGuildEventsForCurrentUser() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  return obj(...arguments);
+async function _getGuildEventsForCurrentUser(arg0, arg1) {
+  if (0 !== outer2_9.getGuildScheduledEventsForGuild(arg0).length) {
+    if (!outer2_11.has(tmp)) {
+      if (!outer2_12.has(tmp)) {
+        outer2_11.add(tmp);
+        yield outer2_0(outer2_1[8]).getGuildEventsForCurrentUser(tmp);
+        outer2_12.add(tmp);
+        const obj = outer2_0(outer2_1[8]);
+      }
+    }
+  }
 }
 let closure_10 = {};
 let set = new Set();

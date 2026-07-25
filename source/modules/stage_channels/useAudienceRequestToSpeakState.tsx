@@ -1,10 +1,10 @@
-// Module ID: 4314
-// Function ID: 37813
+// Module ID: 4315
+// Function ID: 37824
 // Name: getAudienceRequestToSpeakState
-// Dependencies: [4146, 566, 2]
+// Dependencies: [4147, 566, 2]
 // Exports: default
 
-// Module 4314 (getAudienceRequestToSpeakState)
+// Module 4315 (getAudienceRequestToSpeakState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

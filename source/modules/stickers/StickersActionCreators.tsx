@@ -1,10 +1,10 @@
-// Module ID: 9637
-// Function ID: 75008
+// Module ID: 9558
+// Function ID: 74595
 // Name: _fetchStickerPack
-// Dependencies: [5, 4808, 1921, 4469, 1849, 5035, 653, 662, 4369, 507, 686, 4466, 7941, 1331, 22, 4470, 1212, 2]
+// Dependencies: [5, 4809, 1922, 4470, 1850, 5036, 653, 662, 4370, 507, 686, 4467, 7888, 1331, 22, 4471, 1212, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 9637 (_fetchStickerPack)
+// Module 9558 (_fetchStickerPack)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

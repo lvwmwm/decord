@@ -1,10 +1,10 @@
-// Module ID: 16488
-// Function ID: 128470
+// Module ID: 16499
+// Function ID: 128638
 // Name: EmojiAlias
-// Dependencies: [31, 27, 33, 4130, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 4127, 2]
 // Exports: default
 
-// Module 16488 (EmojiAlias)
+// Module 16499 (EmojiAlias)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,11 +25,11 @@ export default function EmojiAlias(arg0) {
   let obj = { style: items };
   items = [tmp.emojiAlias, style];
   obj = { style: tmp.emojiColon, "aria-hidden": true, variant: "text-md/medium", color: "text-muted", children: ":" };
-  const items1 = [callback(require(4126) /* Text */.Text, obj), , ];
+  const items1 = [callback(require(4127) /* Text */.Text, obj), , ];
   obj = { lineClamp: 1, variant: "text-md/bold", color: "interactive-text-active", children: name };
-  items1[1] = callback(require(4126) /* Text */.Text, obj);
+  items1[1] = callback(require(4127) /* Text */.Text, obj);
   const obj1 = { style: tmp.emojiColon, "aria-hidden": true, variant: "text-md/medium", color: "text-muted", children: ":" };
-  items1[2] = callback(require(4126) /* Text */.Text, obj1);
+  items1[2] = callback(require(4127) /* Text */.Text, obj1);
   obj.children = items1;
   return callback2(View, obj);
 };

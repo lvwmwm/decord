@@ -1,20 +1,20 @@
-// Module ID: 15862
-// Function ID: 122442
+// Module ID: 15873
+// Function ID: 122611
 // Name: getScaleChangeWithOverscroll
-// Dependencies: [57, 31, 27, 10047, 10045, 15817, 10048, 33, 3991, 10614, 4130, 10046, 4542, 9459, 4099, 5217, 10604, 15821, 10607, 10605, 15811, 10051, 15733, 10263, 3834, 689, 4131, 7678, 10611, 2]
+// Dependencies: [57, 31, 27, 9976, 9974, 15828, 9977, 33, 3992, 10502, 4131, 9975, 4543, 9379, 4100, 5217, 10492, 15832, 10495, 10493, 15822, 9980, 15744, 10196, 3835, 689, 4132, 7620, 10499, 2]
 
-// Module 15862 (getScaleChangeWithOverscroll)
+// Module 15873 (getScaleChangeWithOverscroll)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
-import { PixelRatio } from "module_7678";
+import { PixelRatio } from "module_7620";
 import VoicePanelModes from "VoicePanelModes";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 import { VoicePanelPIPModes } from "VoicePanelPIPModes";
 import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE";
 import jsxProd from "jsxProd";
-import module_10614 from "module_10614";
+import module_10502 from "module_10502";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let closure_11;
 let closure_12;
@@ -1029,8 +1029,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(id) {
           tmp6 = sharedCoords;
           num2 = 8;
           obj2 = id(sharedCoords[8]);
-          tmp7 = f122492;
-          tmp8 = obj2.runOnJS(f122492)();
+          tmp7 = f122661;
+          tmp8 = obj2.runOnJS(f122661)();
         }
       }
       return;

@@ -1,10 +1,10 @@
-// Module ID: 3763
-// Function ID: 28821
+// Module ID: 3764
+// Function ID: 28832
 // Name: calculateElevatedPermissions
-// Dependencies: [1909, 3759, 3760, 1352, 1391, 1911, 1194, 1348, 1917, 1910, 1838, 1849, 653, 483, 22, 3764, 3747, 21, 1912, 1881, 2]
+// Dependencies: [1910, 3760, 3761, 1352, 1391, 1912, 1194, 1348, 1918, 1911, 1838, 1850, 653, 483, 22, 3765, 3748, 21, 1913, 1882, 2]
 // Exports: areChannelsLocked, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher
 
-// Module 3763 (calculateElevatedPermissions)
+// Module 3764 (calculateElevatedPermissions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -110,7 +110,7 @@ function applyOverwrites(id, member, closure_23, overwrites) {
     const obj6 = importAll(483);
     const hasItem = importAll(483).has(addResult4, Permissions.ADMINISTRATOR);
     const obj9 = importAll(483);
-    let result = require(3764) /* getAutomodQuarantinedProfileFlags */.hasAutomodQuarantinedProfile(member);
+    let result = require(3765) /* getAutomodQuarantinedProfileFlags */.hasAutomodQuarantinedProfile(member);
     if (result) {
       result = !hasItem;
     }
@@ -119,14 +119,14 @@ function applyOverwrites(id, member, closure_23, overwrites) {
       found = importAll(483).filter(addResult4, closure_29);
       const arr = importAll(483);
     }
-    const obj10 = require(3764) /* getAutomodQuarantinedProfileFlags */;
-    const obj11 = require(3747) /* isCommunicationDisabled */;
+    const obj10 = require(3765) /* getAutomodQuarantinedProfileFlags */;
+    const obj11 = require(3748) /* isCommunicationDisabled */;
     found1 = found;
     if (tmp38) {
       found1 = importAll(483).filter(found, closure_28);
       const arr2 = importAll(483);
     }
-    tmp38 = require(3747) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member) && !hasItem;
+    tmp38 = require(3748) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member) && !hasItem;
   }
   return found1;
 }
@@ -332,7 +332,7 @@ function applyThreadPermissions(context, permissionsForRoles, hasJoinedResult, c
   return combineResult;
 }
 function makeEveryoneOverwrite(guild_id) {
-  return { id: guild_id, type: require(1881) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, allow: closure_23, deny: closure_23 };
+  return { id: guild_id, type: require(1882) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, allow: closure_23, deny: closure_23 };
 }
 function can(VIEW_CHANNEL, channel, arg2, arg3, arg4) {
   let context;
@@ -504,8 +504,8 @@ export const isRoleHigher = function isRoleHigher(guild, id, highestRole, role) 
     if (tmp5) {
       let doesRoleSortHigherResult = null == role;
       if (!doesRoleSortHigherResult) {
-        doesRoleSortHigherResult = require(1912) /* _createForOfIteratorHelperLoose */.doesRoleSortHigher(highestRole, role);
-        const obj = require(1912) /* _createForOfIteratorHelperLoose */;
+        doesRoleSortHigherResult = require(1913) /* _createForOfIteratorHelperLoose */.doesRoleSortHigher(highestRole, role);
+        const obj = require(1913) /* _createForOfIteratorHelperLoose */;
       }
       tmp5 = doesRoleSortHigherResult;
     }

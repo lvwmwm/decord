@@ -1,10 +1,10 @@
-// Module ID: 9889
-// Function ID: 76498
+// Module ID: 9813
+// Function ID: 76093
 // Name: ForumPostTagsActionSheet
-// Dependencies: [57, 31, 27, 5685, 33, 4130, 1212, 5654, 5498, 5186, 9890, 4543, 9175, 4098, 2]
+// Dependencies: [57, 31, 27, 6016, 33, 4131, 1212, 5999, 5498, 5186, 9814, 4544, 9067, 4099, 2]
 // Exports: default
 
-// Module 9889 (ForumPostTagsActionSheet)
+// Module 9813 (ForumPostTagsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -51,7 +51,7 @@ export default function ForumPostTagsActionSheet(thread) {
     }
   }
   const tmp3 = callback3();
-  let obj = thread(5654);
+  let obj = thread(5999);
   let appliedTags = obj.useAppliedTags(thread);
   if (null != tags) {
     appliedTags = tags;
@@ -60,7 +60,7 @@ export default function ForumPostTagsActionSheet(thread) {
   first = tmp7[0];
   closure_5 = tmp7[1];
   closure_6 = first.size >= closure_6;
-  let obj1 = thread(5654);
+  let obj1 = thread(5999);
   const visibleForumTags = obj1.useVisibleForumTags(thread.parentChannel);
   obj = {
     onDismiss() {
@@ -112,7 +112,7 @@ export default function ForumPostTagsActionSheet(thread) {
     }
     flag(outer1_2[13]).hideActionSheet();
   };
-  obj2.children = toggleTag(thread(4543).Button, obj3);
+  obj2.children = toggleTag(thread(4544).Button, obj3);
   items[1] = toggleTag(closure_5, obj2);
   obj.children = items;
   return callback2(thread(5498).ActionSheet, obj);

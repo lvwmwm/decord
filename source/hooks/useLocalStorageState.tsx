@@ -1,10 +1,10 @@
-// Module ID: 10702
-// Function ID: 83417
+// Module ID: 10666
+// Function ID: 83104
 // Name: useLocalStorageState
-// Dependencies: [57, 31, 587, 4559, 2]
+// Dependencies: [57, 31, 587, 4560, 2]
 // Exports: useLocalStorageState
 
-// Module 10702 (useLocalStorageState)
+// Module 10666 (useLocalStorageState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -23,7 +23,7 @@ export const useLocalStorageState = function useLocalStorageState(arg0, arg1) {
     return value;
   }), 2);
   const dependencyMap = tmp[1];
-  importDefault(4559)(() => {
+  importDefault(4560)(() => {
     const Storage = callback(587).Storage;
     if (null == Storage.get(callback)) {
       const Storage2 = callback(587).Storage;

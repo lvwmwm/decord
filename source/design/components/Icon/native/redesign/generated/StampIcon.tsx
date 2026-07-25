@@ -1,10 +1,10 @@
-// Module ID: 9991
-// Function ID: 77163
+// Module ID: 9919
+// Function ID: 76778
 // Name: StampIcon
-// Dependencies: [31, 33, 689, 3833, 9992, 2]
+// Dependencies: [31, 33, 689, 3834, 9920, 2]
 // Exports: StampIcon
 
-// Module 9991 (StampIcon)
+// Module 9919 (StampIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const StampIcon = function StampIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9992) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9920) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9992) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9920) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

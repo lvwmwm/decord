@@ -1,9 +1,9 @@
-// Module ID: 11526
-// Function ID: 89713
+// Module ID: 11492
+// Function ID: 89430
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1917, 1849, 3747, 686, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1918, 1850, 3748, 686, 5078, 2]
 
-// Module 11526 (_isNativeReflectConstruct)
+// Module 11492 (_isNativeReflectConstruct)
 import closure_3 from "_isNativeReflectConstruct";
 import isCommunicationDisabled from "isCommunicationDisabled";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -83,7 +83,7 @@ function clearGuildMemberTimeout(outer1_2, outer1_1) {
         const obj4 = importDefault(686);
         const tmp10 = null != isPending && isPending;
       }
-      obj6 = require(3747) /* isCommunicationDisabled */;
+      obj6 = require(3748) /* isCommunicationDisabled */;
     }
   }
 }

@@ -1,10 +1,10 @@
-// Module ID: 8673
-// Function ID: 68599
+// Module ID: 8449
+// Function ID: 67332
 // Name: GameGenres
-// Dependencies: [57, 653, 3952, 1212, 4369, 477, 3712, 2]
+// Dependencies: [57, 653, 3953, 1212, 4370, 477, 3713, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 8673 (GameGenres)
+// Module 8449 (GameGenres)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 
@@ -28,7 +28,7 @@ const items = [["YYYY-MM-DD", "MMMM DD, Y"], ["YYYY-MM", "MMMM Y"], ["MM-DD", "M
 let result = require("matchPath").fileFinishedImporting("utils/SKUUtils.tsx");
 
 export const getSKUIdFromURL = function getSKUIdFromURL(pathname) {
-  let obj = require(3952) /* matchPath */;
+  let obj = require(3953) /* matchPath */;
   obj = { path: closure_6.APPLICATION_STORE_LISTING_SKU(":skuId", ":slug") };
   const matchPathResult = obj.matchPath(pathname, obj);
   let skuId = null;
@@ -257,7 +257,7 @@ export const getGenreText = function getGenreText(arg0) {
   }
 };
 export const canUserInstall = function canUserInstall(type) {
-  const obj = require(4369) /* _httpGetWithCountryCodeQuery */;
+  const obj = require(4370) /* _httpGetWithCountryCodeQuery */;
   const result = obj.nativePlatformTypeToSKUOperatingSystem(require(477) /* set */.getPlatform());
   let hasItem = type.type === constants.DURABLE_PRIMARY;
   if (hasItem) {
@@ -283,7 +283,7 @@ export const getReadablePreorderReleaseDate = function getReadablePreorderReleas
     let num = 0;
     if (0 < items.length) {
       [tmp4, tmp5] = callback(items[num], 2);
-      const obj = importDefault(3712)(preorderApproximateReleaseDate, tmp4, true);
+      const obj = importDefault(3713)(preorderApproximateReleaseDate, tmp4, true);
       while (!obj.isValid()) {
         num = num + 1;
         let tmp8 = items;

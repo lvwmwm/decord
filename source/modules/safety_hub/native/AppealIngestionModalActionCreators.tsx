@@ -1,8 +1,8 @@
-// Module ID: 11067
-// Function ID: 86134
-// Dependencies: [686, 4337, 11068, 1934, 2]
+// Module ID: 11023
+// Function ID: 85754
+// Dependencies: [686, 4338, 11024, 1935, 2]
 
-// Module 11067
+// Module 11023
 const result = require("getHeader").fileFinishedImporting("modules/safety_hub/native/AppealIngestionModalActionCreators.tsx");
 
 export default {
@@ -10,11 +10,11 @@ export default {
     let obj = importDefault(686);
     obj = { type: "SAFETY_HUB_APPEAL_OPEN", classificationId: classificationId.classificationId };
     obj.dispatch(obj);
-    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(11068, dependencyMap.paths), classificationId, "APPEAL_INGESTION_MODAL_KEY");
+    importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(11024, dependencyMap.paths), classificationId, "APPEAL_INGESTION_MODAL_KEY");
   },
   close() {
-    importDefault(4337).popWithKey("APPEAL_INGESTION_MODAL_KEY");
-    const obj = importDefault(4337);
+    importDefault(4338).popWithKey("APPEAL_INGESTION_MODAL_KEY");
+    const obj = importDefault(4338);
     importDefault(686).dispatch({ type: "SAFETY_HUB_APPEAL_CLOSE" });
   }
 };

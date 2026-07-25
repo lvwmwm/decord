@@ -1,10 +1,10 @@
-// Module ID: 11207
-// Function ID: 87165
+// Module ID: 11168
+// Function ID: 86810
 // Name: getStaffReleasePhase
-// Dependencies: [5, 1347, 4155, 653, 8227, 477, 10643, 11208, 11209, 1881, 7371, 10628, 10627, 5468, 3748, 5462, 10511, 10512, 4140, 10856, 10551, 2]
+// Dependencies: [5, 1347, 4156, 653, 7956, 477, 10607, 11169, 11170, 1882, 5664, 10540, 10539, 5468, 3749, 5462, 10442, 5665, 4141, 10580, 10543, 2]
 // Exports: default
 
-// Module 11207 (getStaffReleasePhase)
+// Module 11168 (getStaffReleasePhase)
 import set from "set";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { STAFF_RELEASE_PHASES } from "items3";
@@ -13,11 +13,11 @@ import { ApplicationFlags } from "ME";
 const require = arg1;
 function getStaffReleasePhase(application, activity) {
   if (!obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED_RELEASED)) {
-    const obj2 = require(7371) /* getApplicationFlags */;
+    const obj2 = require(5664) /* getApplicationFlags */;
   }
-  obj = require(7371) /* getApplicationFlags */;
+  obj = require(5664) /* getApplicationFlags */;
   const obj3 = require(477) /* set */;
-  const str = activity.client_platform_config[importDefault(8227)(undefined, obj3.getOS(obj3))].release_phase;
+  const str = activity.client_platform_config[importDefault(7956)(undefined, obj3.getOS(obj3))].release_phase;
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     replaced = str.replace("_", " ").replace(/(^\w|\s\w)/g, (str) => str.toUpperCase());
@@ -38,15 +38,15 @@ function useActivityAction(applicationId) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  let tmp2 = importDefault(10628)();
+  let tmp2 = importDefault(10540)();
   obj = { fetchesApplication };
-  const tmp3 = importDefault(10627)(obj);
+  const tmp3 = importDefault(10539)(obj);
   getOrFetchApplication = getOrFetchApplication(5468).useGetOrFetchApplication(applicationId.applicationId, fetchesApplication);
-  importDefault(11209)(channel);
+  importDefault(11170)(channel);
   if (null == getOrFetchApplication) {
     return START;
   } else {
-    const getEmbeddedActivityLocationChannelId = getOrFetchApplication(3748).getEmbeddedActivityLocationChannelId;
+    const getEmbeddedActivityLocationChannelId = getOrFetchApplication(3749).getEmbeddedActivityLocationChannelId;
     if (null != tmp2) {
       const _location = tmp2.location;
     }
@@ -66,7 +66,7 @@ function useActivityAction(applicationId) {
     if (null != tmp6) {
       JOIN = obj.JOIN;
     }
-    const tmp9 = getOrFetchApplication(3748);
+    const tmp9 = getOrFetchApplication(3749);
   }
 }
 function useOnActivityItemSelected(arg0) {
@@ -105,8 +105,8 @@ function useOnActivityItemSelected(arg0) {
   obj = { context, applicationId: str, fetchesApplication };
   const tmp2 = useActivityAction(obj);
   analyticsLocations = context(5462)().analyticsLocations;
-  closure_14 = context(10628)();
-  closure_15 = require(10511) /* canLaunchFrame */.canLaunchFrame(application);
+  closure_14 = context(10540)();
+  closure_15 = require(10442) /* canLaunchFrame */.canLaunchFrame(application);
   if (null == application) {
     return () => {
       if (null != callback) {
@@ -137,7 +137,7 @@ function useOnActivityItemSelected(arg0) {
       }) : undefined;
     }
   }
-  const obj2 = require(10511) /* canLaunchFrame */;
+  const obj2 = require(10442) /* canLaunchFrame */;
 }
 let obj = { START: 0, [0]: "START", JOIN: 1, [1]: "JOIN", LEAVE: 2, [2]: "LEAVE" };
 const result = require("items3").fileFinishedImporting("modules/activities/utils/useActivityShelfItem.tsx");
@@ -166,7 +166,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   const activity = activityItem.activity;
   ({ launchingComponentId, commandOrigin, source } = backgroundResolution);
   let obj = application(477);
-  const tmp2 = activity.client_platform_config[importDefault(8227)(undefined, obj.getOS(obj))];
+  const tmp2 = activity.client_platform_config[importDefault(7956)(undefined, obj.getOS(obj))];
   const timestamp = Date.now();
   let tmp4 = null != tmp2.label_until;
   if (tmp4) {
@@ -182,27 +182,27 @@ export default function useActivityShelfItem(backgroundResolution) {
   }
   obj = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   let tmp6 = null;
-  const tmp = importDefault(8227);
+  const tmp = importDefault(7956);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp6 = importDefault(11208)(application.id, activity.activity_preview_video_asset_id);
+    tmp6 = importDefault(11169)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
-  const tmp5 = importDefault(10643)(obj);
+  const tmp5 = importDefault(10607)(obj);
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  const tmp9 = importDefault(11209);
+  const tmp9 = importDefault(11170);
   obj = { context, applicationId: application.id };
-  const found = importDefault(11209)(channel).find((embeddedActivity) => application.id === embeddedActivity.embeddedActivity.applicationId);
+  const found = importDefault(11170)(channel).find((embeddedActivity) => application.id === embeddedActivity.embeddedActivity.applicationId);
   const obj1 = { application: activityItem.application, context, locationObject, embeddedActivitiesManager, onActivityItemSelectedProp: onActivityItemSelected, launchingComponentId, commandOrigin, source };
-  const tmp9Result = importDefault(11209)(channel);
+  const tmp9Result = importDefault(11170)(channel);
   const tmp12 = useActivityAction(obj);
   const obj2 = { imageBackground: tmp5, videoUrl: tmp6, joinableEmbeddedApp: found, activityAction: tmp12, onActivityItemSelected: useOnActivityItemSelected(obj1) };
   const tmp13 = useOnActivityItemSelected(obj1);
   if (tmp4) {
     let NONE = tmp2.label_type;
   } else {
-    NONE = application(1881).EmbeddedActivityLabelTypes.NONE;
+    NONE = application(1882).EmbeddedActivityLabelTypes.NONE;
   }
   obj2.labelType = NONE;
   obj2.staffReleasePhase = getStaffReleasePhase(application, activityItem.activity);

@@ -1,10 +1,10 @@
-// Module ID: 12659
-// Function ID: 98190
+// Module ID: 12670
+// Function ID: 98317
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1882, 6891, 6895, 1902, 6896, 1898, 22, 44, 2]
+// Dependencies: [1352, 1883, 5882, 5886, 1903, 5887, 1899, 22, 44, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 12659 (_createForOfIteratorHelperLoose)
+// Module 12670 (_createForOfIteratorHelperLoose)
 import { createChannelRecordFromServer as closure_3 } from "_callSuper";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -415,31 +415,31 @@ export const hydrateReadySupplementalPayload = function hydrateReadySupplemental
   return obj;
 };
 export const preloadReadyPayloadData = function preloadReadyPayloadData() {
-  const databaseResult = importDefault(1882).database();
-  const obj = importDefault(1882);
+  const databaseResult = importDefault(1883).database();
+  const obj = importDefault(1883);
   if (obj2.isCacheEnabled()) {
-    let committedVersions = importDefault(6895).getCommittedVersions();
-    const obj3 = importDefault(6895);
+    let committedVersions = importDefault(5886).getCommittedVersions();
+    const obj3 = importDefault(5886);
   } else {
     committedVersions = Promise.resolve({});
   }
-  obj2 = require(6891) /* isCacheEnabled */;
+  obj2 = require(5882) /* isCacheEnabled */;
   if (obj4.isCacheEnabled()) {
-    let guildIds = importDefault(1902).getGuildIds();
-    const obj5 = importDefault(1902);
+    let guildIds = importDefault(1903).getGuildIds();
+    const obj5 = importDefault(1903);
   } else {
     const _Set = Set;
     const set = new Set();
     guildIds = Promise.resolve(set);
   }
   if (null != databaseResult) {
-    let okAsyncResult = importDefault(6896).okAsync(databaseResult);
-    const obj6 = importDefault(6896);
+    let okAsyncResult = importDefault(5887).okAsync(databaseResult);
+    const obj6 = importDefault(5887);
   } else {
     okAsyncResult = Promise.resolve(false);
   }
   const items = [committedVersions, guildIds, okAsyncResult];
-  obj4 = require(6891) /* isCacheEnabled */;
+  obj4 = require(5882) /* isCacheEnabled */;
   return Promise.all(items).then((arg0) => {
     let tmp;
     let tmp2;
@@ -457,15 +457,15 @@ export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPriori
   let obj = { users: 0, private_channels: 0, merged_members: 0, guilds: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(outer2_0, obj);
-  let tmp3 = null != importDefault(1882).database();
+  let tmp3 = null != importDefault(1883).database();
   if (tmp3) {
     tmp3 = false === outer2_1.databaseOk;
   }
   if (tmp3) {
-    const result = importDefault(1898).replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok");
-    const obj3 = importDefault(1898);
+    const result = importDefault(1899).replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok");
+    const obj3 = importDefault(1899);
   }
-  const obj2 = importDefault(1882);
+  const obj2 = importDefault(1883);
   let closure_5 = importDefault(22).keyBy(users, (id) => id.id);
   if (null != private_channels) {
     const item = private_channels.forEach((recipient_ids) => {

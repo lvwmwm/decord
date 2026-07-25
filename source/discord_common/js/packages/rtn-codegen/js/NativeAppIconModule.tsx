@@ -1,9 +1,9 @@
-// Module ID: 7471
-// Function ID: 59879
+// Module ID: 6553
+// Function ID: 58341
 // Name: enforcing
 // Dependencies: [27, 2]
 
-// Module 7471 (enforcing)
+// Module 6553 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAppIconModule");

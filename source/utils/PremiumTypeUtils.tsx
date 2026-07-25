@@ -1,10 +1,10 @@
-// Module ID: 1872
-// Function ID: 20864
+// Module ID: 1873
+// Function ID: 20875
 // Name: isPremiumAtLeast
-// Dependencies: [1851, 2]
+// Dependencies: [1852, 2]
 // Exports: isPremium, isPremiumAtMost, isPremiumExactly
 
-// Module 1872 (isPremiumAtLeast)
+// Module 1873 (isPremiumAtLeast)
 import { PremiumTypeOrder } from "GuildFeatures";
 
 function isPremiumAtLeast(premiumType, TIER_2) {

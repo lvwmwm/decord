@@ -1,10 +1,10 @@
-// Module ID: 9915
-// Function ID: 76705
+// Module ID: 9843
+// Function ID: 76318
 // Name: SearchableDestinationList
-// Dependencies: [57, 31, 27, 653, 8857, 33, 4130, 689, 9916, 5582, 7088, 7093, 6903, 1327, 8871, 9921, 9923, 8864, 9924, 1212, 4662, 5772, 2]
+// Dependencies: [57, 31, 27, 653, 8745, 33, 4131, 689, 9844, 5582, 6106, 6111, 5894, 1327, 8759, 9849, 9851, 8752, 9852, 1212, 4663, 9171, 2]
 // Exports: default
 
-// Module 9915 (SearchableDestinationList)
+// Module 9843 (SearchableDestinationList)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -29,41 +29,44 @@ _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_
 let obj1 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/share/native/SearchableDestinationList.tsx");
 
-export default function SearchableDestinationList(originDestination) {
+export default function SearchableDestinationList(getRowIsUnavailable) {
   let c13;
+  let channelFilter;
   let defaultNoResultsFound;
   let disableGradient;
   let disableSelection;
   let disableStickySections;
   let disabledDestinations;
   let initialSelectedDestinations;
+  let originDestination;
   let tmp13;
-  ({ initialSelectedDestinations, disabledDestinations } = originDestination);
-  const getRowIsUnavailable = originDestination.getRowIsUnavailable;
-  const onSelectedDestinationChange = originDestination.onSelectedDestinationChange;
-  const onSearchTextChange = originDestination.onSearchTextChange;
-  let NONE = originDestination.rowMode;
+  ({ initialSelectedDestinations, disabledDestinations } = getRowIsUnavailable);
+  getRowIsUnavailable = getRowIsUnavailable.getRowIsUnavailable;
+  const onSelectedDestinationChange = getRowIsUnavailable.onSelectedDestinationChange;
+  const onSearchTextChange = getRowIsUnavailable.onSearchTextChange;
+  let NONE = getRowIsUnavailable.rowMode;
+  ({ originDestination, channelFilter } = getRowIsUnavailable);
   if (NONE === undefined) {
     NONE = first.NONE;
   }
-  let PX_8 = originDestination.insetStart;
+  let PX_8 = getRowIsUnavailable.insetStart;
   if (PX_8 === undefined) {
     PX_8 = getRowIsUnavailable(onSelectedDestinationChange[7]).space.PX_8;
   }
-  let PX_12 = originDestination.insetEnd;
+  let PX_12 = getRowIsUnavailable.insetEnd;
   if (PX_12 === undefined) {
     PX_12 = getRowIsUnavailable(onSelectedDestinationChange[7]).space.PX_12;
   }
-  let flag = originDestination.autoFocusSearch;
+  let flag = getRowIsUnavailable.autoFocusSearch;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = originDestination.hideSearchOnDefaultNoResults;
+  let flag2 = getRowIsUnavailable.hideSearchOnDefaultNoResults;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  ({ defaultNoResultsFound, disableSelection } = originDestination);
-  const disableLongPress = originDestination.disableLongPress;
+  ({ defaultNoResultsFound, disableSelection } = getRowIsUnavailable);
+  const disableLongPress = getRowIsUnavailable.disableLongPress;
   let ref;
   first = undefined;
   let callback;
@@ -82,7 +85,7 @@ export default function SearchableDestinationList(originDestination) {
   let ref1;
   let c23;
   let scaledTextLineHeight;
-  ({ disableGradient, disableStickySections } = originDestination);
+  ({ disableGradient, disableStickySections } = getRowIsUnavailable);
   const tmp6 = _createForOfIteratorHelperLoose();
   ref = NONE.useRef(null);
   if (null == initialSelectedDestinations) {
@@ -92,7 +95,7 @@ export default function SearchableDestinationList(originDestination) {
   first = tmp9[0];
   callback = tmp9[1];
   let obj = disabledDestinations(onSelectedDestinationChange[8]);
-  const shareSearchResults = obj.useShareSearchResults({ selectedDestinations: first, originDestination: originDestination.originDestination, includeMissingDMs: true });
+  const shareSearchResults = obj.useShareSearchResults({ selectedDestinations: first, originDestination, channelFilter, includeMissingDMs: true });
   results = shareSearchResults.results;
   updateSearchText = shareSearchResults.updateSearchText;
   _createForOfIteratorHelperLoose = NONE.useRef("");

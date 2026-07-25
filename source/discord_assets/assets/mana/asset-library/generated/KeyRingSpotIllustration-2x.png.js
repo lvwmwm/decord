@@ -1,9 +1,9 @@
-// Module ID: 6273
-// Function ID: 50375
+// Module ID: 7193
+// Function ID: 60025
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6273 (metadata)
+// Module 7193 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/KeyRingSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/5c1637faa05e71c8293ed8bde9cc5ebee2e41d54f6ebad1763565319856bdab3.png";

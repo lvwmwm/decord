@@ -1,11 +1,11 @@
 // Module ID: 11020
-// Function ID: 85751
+// Function ID: 85732
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 11020 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native", width: 78, height: 15, scales: [2, 3], hash: "6686c0dca54e6176e93ab454fcbd7545", name: "img_transfer_arrow", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/safety_hub/images", width: 350, height: 350, scales: [1], hash: "401f8c2bcc4aaf9b9964b431f7df8a68", name: "video_dark", type: "png" };
 
 export default registerAsset.registerAsset(obj);

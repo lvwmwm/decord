@@ -1,10 +1,10 @@
-// Module ID: 13063
-// Function ID: 100937
+// Module ID: 13074
+// Function ID: 101064
 // Name: LocalImageThumbnail
-// Dependencies: [31, 27, 33, 477, 13064, 2]
+// Dependencies: [31, 27, 33, 477, 13075, 2]
 // Exports: default
 
-// Module 13063 (LocalImageThumbnail)
+// Module 13074 (LocalImageThumbnail)
 import "result";
 import { Image as _default } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 16541
-// Function ID: 128871
+// Module ID: 16552
+// Function ID: 129039
 // Name: InviteSelectActionSheet
-// Dependencies: [31, 33, 4130, 689, 5187, 5186, 7654, 4098, 7653, 2]
+// Dependencies: [31, 33, 4131, 689, 5187, 5186, 7596, 4099, 7595, 2]
 // Exports: default
 
-// Module 16541 (InviteSelectActionSheet)
+// Module 16552 (InviteSelectActionSheet)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -33,7 +33,7 @@ export default function InviteSelectActionSheet(arg0) {
     hasIcons: false,
     children: options.map((value) => outer1_3(outer1_0(outer1_2[8]).TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value))
   };
-  obj.children = jsx(require(7654) /* context */.TableRadioGroup, {
+  obj.children = jsx(require(7596) /* context */.TableRadioGroup, {
     value,
     onChange(arg0) {
       callback(arg0);

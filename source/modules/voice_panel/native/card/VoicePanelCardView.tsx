@@ -1,9 +1,9 @@
-// Module ID: 15860
-// Function ID: 122369
+// Module ID: 15871
+// Function ID: 122538
 // Name: getCardKey
-// Dependencies: [57, 31, 27, 4143, 10047, 10045, 15817, 10050, 4148, 33, 15861, 3991, 9459, 1324, 10046, 3834, 689, 10053, 9923, 4542, 15821, 5122, 7678, 4489, 15812, 566, 22, 3843, 1212, 4476, 2]
+// Dependencies: [57, 31, 27, 4144, 9976, 9974, 15828, 9979, 4149, 33, 15872, 3992, 9379, 1324, 9975, 3835, 689, 9982, 9851, 4543, 15832, 5122, 7620, 4490, 15823, 566, 22, 3844, 1212, 4477, 2]
 
-// Module 15860 (getCardKey)
+// Module 15871 (getCardKey)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "AccessibilityAnnouncer";
@@ -26,7 +26,7 @@ function getCardKey(type) {
   return "" + type.type + "-" + type.id;
 }
 function renderCard(arg0, item, transitionState, cleanUp) {
-  return jsx(importDefault(15861), { item, transitionState, cleanUp }, arg0);
+  return jsx(importDefault(15872), { item, transitionState, cleanUp }, arg0);
 }
 function CardContentFreezer(children) {
   children = children.children;
@@ -73,8 +73,8 @@ function CardContentFreezer(children) {
       let height;
       let paddingTop;
       const bound = Math.max(safeArea.get().bottom, outer2_12);
-      const tmp2 = tmp(10053);
-      ({ height, paddingTop } = tmp(10053)(safeArea.get(), token));
+      const tmp2 = tmp(9982);
+      ({ height, paddingTop } = tmp(9982)(safeArea.get(), token));
       let num = 1;
       let num2 = 0;
       let num3 = 1;
@@ -134,9 +134,9 @@ function CardContentFreezer(children) {
         }
         const tmp4 = paddingTop;
       }
-      obj = { position: "relative", width: windowDimensions.get().width, height: tmp(9923)(num2) };
+      obj = { position: "relative", width: windowDimensions.get().width, height: tmp(9851)(num2) };
       obj = {};
-      const tmp2Result = tmp(10053)(safeArea.get(), token);
+      const tmp2Result = tmp(9982)(safeArea.get(), token);
       const sum1 = num4 + wrapperOffset.get().y;
       if (!wrapperOffset.get().gestureActive) {
         if (mode.get() !== outer2_9.PIP) {
@@ -144,7 +144,7 @@ function CardContentFreezer(children) {
         }
         obj.translateY = obj4.withSpring(sum1, tmp38);
         const items = [obj, ];
-        const obj1 = { scale: children(4542).withSpring(num3, outer2_15) };
+        const obj1 = { scale: children(4543).withSpring(num3, outer2_15) };
         items[1] = obj1;
         obj.transform = items;
         if (closure_0) {

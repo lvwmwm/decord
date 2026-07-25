@@ -1,9 +1,9 @@
-// Module ID: 7531
-// Function ID: 60027
+// Module ID: 6623
+// Function ID: 58582
 // Name: StatusBarManager
 // Dependencies: [6, 7, 27, 22, 1569, 2]
 
-// Module 7531 (StatusBarManager)
+// Module 6623 (StatusBarManager)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { StatusBar } from "get ActivityIndicator";

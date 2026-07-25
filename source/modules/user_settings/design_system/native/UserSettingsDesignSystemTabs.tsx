@@ -1,10 +1,10 @@
-// Module ID: 14491
-// Function ID: 110673
+// Module ID: 14502
+// Function ID: 110800
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 3834, 3974, 8404, 4541, 11676, 11821, 8797, 4543, 5502, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 3835, 3975, 8162, 4542, 11645, 11797, 8685, 4544, 5502, 2]
 // Exports: default
 
-// Module 14491 (UserSettingsDesignSystemTabs)
+// Module 14502 (UserSettingsDesignSystemTabs)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -39,7 +39,7 @@ export default function UserSettingsDesignSystemTabs() {
   const first2 = tmp9[0];
   let tmp6 = callback(React.useState(false), 2);
   const tmp11 = _createForOfIteratorHelperLoose();
-  let obj = _require(8404);
+  let obj = _require(8162);
   const segmentedControlState = obj.useSegmentedControlState({
     items: (function useTabItems(first, arg1) {
       let closure_0 = first;
@@ -92,24 +92,24 @@ export default function UserSettingsDesignSystemTabs() {
   callback = React.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj1 = _require(3834);
+  let obj1 = _require(3835);
   const token = obj1.useToken(first(689).colors.BACKGROUND_BASE_LOW);
   let items = [token, ];
-  let obj2 = _require(3974);
+  let obj2 = _require(3975);
   items[1] = obj2.hexWithOpacity(token, 0);
   obj = {};
   obj = { style: tmp11.container, onLayout: callback };
   obj1 = { spacing: 24 };
   obj2 = {};
-  let items1 = [callback3(_require(11676).Tabs, { state: segmentedControlState, grow: first1 }), ];
+  let items1 = [callback3(_require(11645).Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp20 = first2;
   if (first2) {
     const obj3 = { state: segmentedControlState, colors: items };
-    tmp20 = callback3(first(11821), obj3);
+    tmp20 = callback3(first(11797), obj3);
   }
   items1[1] = tmp20;
   obj2.children = items1;
-  const items2 = [callback2(closure_5, obj2), callback3(_require(8797).SegmentedControlPages, { state: segmentedControlState }), , ];
+  const items2 = [callback2(closure_5, obj2), callback3(_require(8685).SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj4 = { spacing: 8, direction: "horizontal" };
   const obj5 = {
     text: "Add Tab",
@@ -120,7 +120,7 @@ export default function UserSettingsDesignSystemTabs() {
       return callback2(first + 1);
     }
   };
-  const items3 = [callback3(_require(4543).Button, obj5), ];
+  const items3 = [callback3(_require(4544).Button, obj5), ];
   const obj6 = {
     text: "Remove Tab",
     variant: "destructive",
@@ -130,9 +130,9 @@ export default function UserSettingsDesignSystemTabs() {
       return callback2(first - 1);
     }
   };
-  items3[1] = callback3(_require(4543).Button, obj6);
+  items3[1] = callback3(_require(4544).Button, obj6);
   obj4.children = items3;
-  items2[2] = callback2(_require(4541).Stack, obj4);
+  items2[2] = callback2(_require(4542).Stack, obj4);
   const obj7 = {};
   const obj8 = { start: true, label: "Enable Grow", value: first1, onValueChange: tmp4[1] };
   const items4 = [callback3(_require(5502).TableSwitchRow, obj8), callback3(_require(5502).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), ];
@@ -141,7 +141,7 @@ export default function UserSettingsDesignSystemTabs() {
   obj7.children = items4;
   items2[3] = callback2(closure_5, obj7);
   obj1.children = items2;
-  obj.children = callback2(_require(4541).Stack, obj1);
+  obj.children = callback2(_require(4542).Stack, obj1);
   obj.children = callback3(closure_5, obj);
   return callback3(closure_6, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8508
-// Function ID: 67750
+// Module ID: 8268
+// Function ID: 66404
 // Name: GuildEventRecurrences
-// Dependencies: [31, 27, 33, 4130, 689, 8509, 4126, 1212, 21, 8511, 4543, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 8269, 4127, 1212, 21, 8271, 4544, 2]
 // Exports: default
 
-// Module 8508 (GuildEventRecurrences)
+// Module 8268 (GuildEventRecurrences)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,12 +37,12 @@ export default function GuildEventRecurrences(guildEventId) {
   ({ guildId, recurrenceRule, hideViewMoreButton } = guildEventId);
   ref = ref.useRef(null);
   const tmp2 = _createForOfIteratorHelperLoose();
-  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: closure_4 } = importDefault(8509)(guildEventId, guildId, recurrenceRule));
+  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: closure_4 } = importDefault(8269)(guildEventId, guildId, recurrenceRule));
   let obj = { style: tmp2.container };
   obj = { variant: "heading-md/semibold" };
   const intl = guildEventId(1212).intl;
   obj.children = intl.string(guildEventId(1212).t["D/jjoa"]);
-  const items = [callback(guildEventId(4126).Text, obj), , ];
+  const items = [callback(guildEventId(4127).Text, obj), , ];
   obj = {
     style: tmp2.scrollView,
     ref,
@@ -70,7 +70,7 @@ export default function GuildEventRecurrences(guildEventId) {
       }
     };
     obj1.size = "sm";
-    canViewMoreRecurrences = callback(guildEventId(4543).Button, obj1);
+    canViewMoreRecurrences = callback(guildEventId(4544).Button, obj1);
   }
   items[2] = canViewMoreRecurrences;
   obj.children = items;

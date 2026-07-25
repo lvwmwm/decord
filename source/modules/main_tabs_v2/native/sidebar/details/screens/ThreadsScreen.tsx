@@ -1,9 +1,9 @@
-// Module ID: 15442
-// Function ID: 117814
+// Module ID: 15452
+// Function ID: 117942
 // Name: ThreadsScreen
-// Dependencies: [31, 27, 1348, 653, 1211, 33, 4130, 689, 5650, 5160, 9843, 4138, 15443, 15423, 624, 1457, 2]
+// Dependencies: [31, 27, 1348, 653, 1211, 33, 4131, 689, 5996, 5159, 9767, 4139, 15453, 15433, 624, 1457, 2]
 
-// Module 15442 (ThreadsScreen)
+// Module 15452 (ThreadsScreen)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,7 +18,7 @@ function ThreadsScreen(channel) {
   let style;
   channel = channel.channel;
   ({ style, renderScrollComponent } = channel);
-  let obj = channel(5650);
+  let obj = channel(5996);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const callback = importAllResult.useCallback(() => {
@@ -45,8 +45,8 @@ function ThreadsScreen(channel) {
   }
   obj.onCreateThreadPress = tmp9;
   obj.onThreadPress = callback1;
-  const tmp8 = importDefault(15443);
-  obj.contentContainerStyle = { paddingBottom: importDefault(5160)({ includeKeyboardHeight: true }).insets.bottom + importDefault(689).space.PX_16, paddingHorizontal: 16 };
+  const tmp8 = importDefault(15453);
+  obj.contentContainerStyle = { paddingBottom: importDefault(5159)({ includeKeyboardHeight: true }).insets.bottom + importDefault(689).space.PX_16, paddingHorizontal: 16 };
   obj.renderScrollComponent = renderScrollComponent;
   obj.children = tmp7(tmp8, obj);
   return tmp5(tmp6, obj);
@@ -58,7 +58,7 @@ let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((searchContext) => {
   searchContext = searchContext.searchContext;
   let channelId;
-  let obj = channelId(15423);
+  let obj = channelId(15433);
   const renderScrollComponent = obj.useRenderScrollComponent();
   if (searchContext.type === SearchTypes.CHANNEL) {
     channelId = searchContext.channelId;

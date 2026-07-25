@@ -1,10 +1,10 @@
-// Module ID: 15013
-// Function ID: 114395
+// Module ID: 15023
+// Function ID: 114522
 // Name: ThreadChannel
-// Dependencies: [31, 27, 3760, 1348, 3758, 4142, 1906, 1849, 4146, 4203, 10289, 653, 4326, 1211, 33, 4130, 689, 8063, 4549, 566, 11421, 4138, 10369, 15014, 15016, 8494, 15019, 1273, 15021, 15027, 4312, 2]
+// Dependencies: [31, 27, 3761, 1348, 3759, 4143, 1907, 1850, 4147, 4204, 10222, 653, 4327, 1211, 33, 4131, 689, 8463, 4550, 566, 11384, 4139, 10302, 15024, 15026, 8254, 15029, 1273, 15031, 15037, 4313, 2]
 // Exports: default
 
-// Module 15013 (ThreadChannel)
+// Module 15023 (ThreadChannel)
 import importAllResult from "set";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -236,8 +236,8 @@ let closure_21 = importAllResult.memo((arg0) => {
   let obj = { width: 12, height: 16 };
   obj = { position: "absolute", left: 23, top: getScaledChannelRowHeight(fontScale) / 2 - 16 + 2 };
   obj.style = obj;
-  obj.children = callback(require(8063) /* inlineStyles */.Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" });
-  return callback(importDefault(8063), obj);
+  obj.children = callback(require(8463) /* inlineStyles */.Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" });
+  return callback(importDefault(8463), obj);
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/items/ThreadChannel.tsx");
 

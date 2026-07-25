@@ -1,10 +1,10 @@
-// Module ID: 11193
-// Function ID: 87060
+// Module ID: 11154
+// Function ID: 86705
 // Name: result
-// Dependencies: [57, 1348, 4051, 1849, 11194, 11195, 4566, 664, 566, 21, 1334, 5802, 3946, 2]
+// Dependencies: [57, 1348, 4052, 1850, 11155, 11156, 4567, 664, 566, 21, 1334, 8379, 3947, 2]
 // Exports: default
 
-// Module 11193 (result)
+// Module 11154 (result)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -63,7 +63,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   if (!{ isInCooldown }.isInCooldown) {
     items1.push(channelId(1334).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
   }
-  let obj2 = channelId(5802);
+  let obj2 = channelId(8379);
   obj = { willShowGlobalSearchOnboarding: callback(obj2.useSelectedDismissibleContent(items1), 1)[0] === channelId(1334).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING };
   const tmp5 = (function useIsInSmallContext(guildId) {
     guildId = guildId.guildId;
@@ -113,13 +113,13 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   }
   const obj6 = channelId(566);
   const tmp21 = applicationId === BuiltInSectionId.BUILT_IN;
-  const result = channelId(3946).useIsDismissibleContentDismissed_UNSAFE(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
-  const obj9 = channelId(3946);
-  let result1 = channelId(3946).useIsDismissibleContentDismissed_UNSAFE(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-  const obj10 = channelId(3946);
+  const result = channelId(3947).useIsDismissibleContentDismissed_UNSAFE(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+  const obj9 = channelId(3947);
+  let result1 = channelId(3947).useIsDismissibleContentDismissed_UNSAFE(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+  const obj10 = channelId(3947);
   const obj3 = { canShowOnboarding: false, canShowBotsBanner: false, canShowAppsOrActivitiesBanner: false, willShowGlobalSearchOnboarding: false, fromTriggeredOnboarding: false };
   let tmp25 = null != stateFromStores1;
-  const result2 = channelId(3946).useIsDismissibleContentDismissed_UNSAFE(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+  const result2 = channelId(3947).useIsDismissibleContentDismissed_UNSAFE(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp25) {
     tmp25 = stateFromStores1.channelId === channelId;
   }

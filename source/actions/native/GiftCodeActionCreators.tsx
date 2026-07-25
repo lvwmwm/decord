@@ -1,10 +1,10 @@
-// Module ID: 8241
-// Function ID: 65036
+// Module ID: 7974
+// Function ID: 63542
 // Name: redeemGiftCode
-// Dependencies: [5, 653, 6656, 7227, 686, 507, 675, 4029, 4337, 8242, 1934, 2]
+// Dependencies: [5, 653, 6234, 6299, 686, 507, 675, 4030, 4338, 7975, 1935, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 8241 (redeemGiftCode)
+// Module 7974 (redeemGiftCode)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -71,9 +71,9 @@ async function _redeemGiftCode(arg0, arg1) {
   return iter;
 }
 function openGiftCodeRedeemModal(code) {
-  let obj = importDefault(4337);
+  let obj = importDefault(4338);
   obj = { code };
-  obj.pushLazy(require(1934) /* maybeLoadBundle */(8242, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(require(1935) /* maybeLoadBundle */(7975, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
 ({ Endpoints: closure_4, AnalyticEvents: closure_5 } = ME);
 let closure_6 = Object.freeze({});

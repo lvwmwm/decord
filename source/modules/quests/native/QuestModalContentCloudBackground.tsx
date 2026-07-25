@@ -1,10 +1,10 @@
-// Module ID: 14073
-// Function ID: 107671
+// Module ID: 14084
+// Function ID: 107798
 // Name: items
-// Dependencies: [31, 27, 33, 4130, 3840, 4066, 4554, 5085, 14074, 14075, 2]
+// Dependencies: [31, 27, 33, 4131, 3841, 4067, 4555, 5085, 14085, 14086, 2]
 // Exports: default
 
-// Module 14073 (items)
+// Module 14084 (items)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -88,14 +88,14 @@ export default function QuestModalContentCloudBackground(align) {
     str2 = resizeMode;
   }
   const tmp = callback("bottom" === str);
-  let obj = require(3840) /* isThemeLight */;
-  let obj1 = require(4066) /* useTheme */;
+  let obj = require(3841) /* isThemeLight */;
+  let obj1 = require(4067) /* useTheme */;
   const isThemeDarkResult = obj.isThemeDark(obj1.useTheme());
   obj = { style: items };
   items = [tmp.wrapper, style];
   if (isThemeDarkResult) {
     obj = { colors: "top" === str ? items : closure_9, style: tmp.gradient };
-    tmp5(importDefault(4554), obj);
+    tmp5(importDefault(4555), obj);
   } else {
     obj1 = { style: tmp.solidBackground };
     const items1 = [tmp5(closure_3, obj1), ];
@@ -103,9 +103,9 @@ export default function QuestModalContentCloudBackground(align) {
     const items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
     obj2.style = items2;
     if (isThemeDarkResult) {
-      let tmp16 = 14074;
+      let tmp16 = 14085;
     } else {
-      tmp16 = 14075;
+      tmp16 = 14086;
     }
     obj2.source = importDefault(tmp16);
     obj2.resizeMode = str2;

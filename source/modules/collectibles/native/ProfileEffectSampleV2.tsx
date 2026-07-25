@@ -1,10 +1,10 @@
-// Module ID: 8260
-// Function ID: 65175
+// Module ID: 7995
+// Function ID: 63730
 // Name: ProfileEffectSample
-// Dependencies: [27, 8244, 33, 4130, 689, 5085, 8261, 8262, 2]
+// Dependencies: [27, 7977, 33, 4131, 689, 5085, 7996, 7997, 2]
 // Exports: default
 
-// Module 8260 (ProfileEffectSample)
+// Module 7995 (ProfileEffectSample)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -37,7 +37,7 @@ export default function ProfileEffectSample(hideBackground) {
   obj.style = items;
   obj = { style: items1 };
   items1 = [tmp.sampleProfileImage];
-  obj = { uri: importDefault(8261) };
+  obj = { uri: importDefault(7996) };
   obj.source = obj;
   obj.accessible = false;
   obj.resizeMode = "cover";
@@ -49,7 +49,7 @@ export default function ProfileEffectSample(hideBackground) {
   }
   items2[1] = tmp5;
   const obj2 = { skuId: hideBackground.item.skuId, bannerAdjustment: 0, useThumbnail: true };
-  items2[2] = callback(importDefault(8262), obj2);
+  items2[2] = callback(importDefault(7997), obj2);
   obj.children = items2;
   return closure_4(View, obj);
 };

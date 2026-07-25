@@ -1,9 +1,9 @@
-// Module ID: 6963
-// Function ID: 55672
+// Module ID: 5954
+// Function ID: 52978
 // Name: keys
 // Dependencies: [621, 2]
 
-// Module 6963 (keys)
+// Module 5954 (keys)
 import keys from "keys";
 
 const obj = keys.create((arg0) => {

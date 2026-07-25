@@ -1,7 +1,7 @@
 // Module ID: 3548
-// Function ID: 27586
+// Function ID: 27577
 // Name: _typeof
-// Dependencies: [3517, 3518, 3515]
+// Dependencies: [3518, 3516]
 
 // Module 3548 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const ISOTimezoneWithZParser = ((Parser) => {
-  class ISOTimezoneWithZParser {
+export const FractionOfSecondParser = ((Parser) => {
+  class FractionOfSecondParser {
     constructor() {
-      if (this instanceof ISOTimezoneWithZParser) {
+      if (this instanceof FractionOfSecondParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -158,11 +158,11 @@ export const ISOTimezoneWithZParser = ((Parser) => {
         applyResult = call.apply(TypeError, items.concat(array));
         tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 10;
-        tmp17 = outer1_8(applyResult, "priority", 10);
+        num2 = 30;
+        tmp17 = outer1_8(applyResult, "priority", 30);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "x"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +177,9 @@ export const ISOTimezoneWithZParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class ISOTimezoneWithZParser {
+    class FractionOfSecondParser {
       constructor() {
-        if (this instanceof ISOTimezoneWithZParser) {
+        if (this instanceof FractionOfSecondParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -201,11 +201,11 @@ export const ISOTimezoneWithZParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 10;
-          tmp17 = outer1_8(applyResult, "priority", 10);
+          num2 = 30;
+          tmp17 = outer1_8(applyResult, "priority", 30);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "x"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +224,12 @@ export const ISOTimezoneWithZParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: ISOTimezoneWithZParser, writable: true, configurable: true };
-  ISOTimezoneWithZParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: FractionOfSecondParser, writable: true, configurable: true };
+  FractionOfSecondParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class ISOTimezoneWithZParser {
+    class FractionOfSecondParser {
       constructor() {
-        if (this instanceof ISOTimezoneWithZParser) {
+        if (this instanceof FractionOfSecondParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -251,11 +251,11 @@ export const ISOTimezoneWithZParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 10;
-          tmp17 = outer1_8(applyResult, "priority", 10);
+          num2 = 30;
+          tmp17 = outer1_8(applyResult, "priority", 30);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T", "x"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,38 +269,27 @@ export const ISOTimezoneWithZParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(ISOTimezoneWithZParser, Parser);
+    _setPrototypeOf(FractionOfSecondParser, Parser);
   }
-  let closure_0 = _createSuper(ISOTimezoneWithZParser);
+  let closure_0 = _createSuper(FractionOfSecondParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1) {
-      if ("X" === arg1) {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.basicOptionalMinutes, arg0);
-      } else if ("XX" === arg1) {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.basic, arg0);
-      } else if ("XXXX" === arg1) {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.basicOptionalSeconds, arg0);
-      } else if ("XXXXX" === arg1) {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.extendedOptionalSeconds, arg0);
-      } else {
-        return callback(ISOTimezoneWithZParser[0]).parseTimezonePattern(callback(ISOTimezoneWithZParser[1]).timezonePatterns.extended, arg0);
-      }
+      const callback = arg1;
+      return callback(FractionOfSecondParser[0]).mapValue(callback(FractionOfSecondParser[0]).parseNDigits(arg1.length, arg0), function valueCallback(arg0) {
+        return Math.floor(arg0 * Math.pow(10, 3 - length.length));
+      });
     }
   };
   let items = [obj, ];
   obj = {
     key: "set",
-    value: function set(getTime, timestampIsSet) {
-      let date = getTime;
-      if (!timestampIsSet.timestampIsSet) {
-        const _Date = Date;
-        date = new Date(getTime.getTime() - arg2);
-      }
-      return date;
+    value: function set(setUTCMilliseconds) {
+      setUTCMilliseconds.setUTCMilliseconds(arg2);
+      return setUTCMilliseconds;
     }
   };
   items[1] = obj;
-  _defineProperties(ISOTimezoneWithZParser.prototype, items);
-  return ISOTimezoneWithZParser;
+  _defineProperties(FractionOfSecondParser.prototype, items);
+  return FractionOfSecondParser;
 })(require("_defineProperties").Parser);

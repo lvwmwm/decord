@@ -1,9 +1,9 @@
-// Module ID: 11492
-// Function ID: 89528
+// Module ID: 11455
+// Function ID: 89187
 // Name: ChatInputCharCounter
-// Dependencies: [57, 31, 1849, 653, 1851, 33, 4130, 566, 3776, 8021, 8028, 3831, 1212, 4660, 4126, 7486, 2]
+// Dependencies: [57, 31, 1850, 653, 1852, 33, 4131, 566, 3777, 6130, 6137, 3832, 1212, 4661, 4127, 6570, 2]
 
-// Module 11492 (ChatInputCharCounter)
+// Module 11455 (ChatInputCharCounter)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,7 +25,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const tmp3 = callback(importAllResult.useState(0), 2);
   const first = tmp3[0];
   const dependencyMap = tmp3[1];
-  const tmp5 = stateFromStores(8021)();
+  const tmp5 = stateFromStores(6130)();
   callback = tmp5;
   const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
     onMessageLengthChanged(length) {
@@ -39,11 +39,11 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     obj = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xs/medium" };
     const _HermesInternal = HermesInternal;
     obj.children = "-" + first;
-    const items2 = [callback2(analyticsLocations(4126).Text, obj), ];
+    const items2 = [callback2(analyticsLocations(4127).Text, obj), ];
     let obj1 = { size: "sm" };
-    items2[1] = callback2(analyticsLocations(7486).NitroWheelIcon, obj1);
+    items2[1] = callback2(analyticsLocations(6570).NitroWheelIcon, obj1);
     obj.children = items2;
-    tmp8 = callback3(analyticsLocations(4660).PressableOpacity, obj);
+    tmp8 = callback3(analyticsLocations(4661).PressableOpacity, obj);
   }
   return tmp8;
 });

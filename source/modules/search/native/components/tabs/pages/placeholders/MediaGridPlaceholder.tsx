@@ -1,10 +1,10 @@
-// Module ID: 15388
-// Function ID: 117448
+// Module ID: 15398
+// Function ID: 117576
 // Name: SEARCH_LIST_SECTION_TOP_PADDING
-// Dependencies: [31, 27, 9141, 33, 4130, 689, 15387, 3991, 15389, 22, 4126, 1212, 11426, 15390, 2]
+// Dependencies: [31, 27, 9033, 33, 4131, 689, 15397, 3992, 15399, 22, 4127, 1212, 11389, 15400, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 15388 (SEARCH_LIST_SECTION_TOP_PADDING)
+// Module 15398 (SEARCH_LIST_SECTION_TOP_PADDING)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
@@ -31,12 +31,12 @@ export default function MediaGridPlaceholderItem(arg0) {
   let containerStyle;
   let size;
   ({ size, containerStyle } = arg0);
-  let obj = require(15387) /* useFullscreenPlaceholderCount */;
+  let obj = require(15397) /* useFullscreenPlaceholderCount */;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   obj = { style: items, pointerEvents: "none" };
   items = [containerStyle, placeholderAnimatedStyle];
-  obj.children = callback(importDefault(15389), { height: size, width: size, style: containerStyle });
-  return callback(importDefault(3991).View, obj);
+  obj.children = callback(importDefault(15399), { height: size, width: size, style: containerStyle });
+  return callback(importDefault(3992).View, obj);
 };
 export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(visible) {
   let numRows;
@@ -48,7 +48,7 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
   memo = memo.useMemo(() => outer1_0(tmp[9]).range(0, numRows * outer1_5), items);
   const items1 = [memo];
   const memo1 = memo.useMemo(() => outer1_0(tmp[9]).chunk(memo, outer1_5), items1);
-  let obj = require(15387) /* useFullscreenPlaceholderCount */;
+  let obj = require(15397) /* useFullscreenPlaceholderCount */;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(visible.visible);
   obj = { style: items2, pointerEvents: "none" };
   items2 = [, , ];
@@ -59,13 +59,13 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
   const obj2 = { style: tmp.sectionText, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl.string(require(1212) /* getSystemLocale */.t.LBYpDH);
-  obj1.children = callback(require(4126) /* Text */.Text, obj2);
+  obj1.children = callback(require(4127) /* Text */.Text, obj2);
   const items3 = [callback(memo1, obj1), ];
   const obj3 = { style: tmp.sectionItem };
   const obj4 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.sectionText };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.LFTAUp);
-  obj3.children = callback(require(4126) /* Text */.Text, obj4);
+  obj3.children = callback(require(4127) /* Text */.Text, obj4);
   items3[1] = callback(memo1, obj3);
   obj.children = items3;
   const items4 = [
@@ -77,9 +77,9 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
         style: tmp.row,
         children: arr.map((arg0, arg1) => {
           let obj = { height: closure_0, width: closure_0 };
-          const tmp = numRows(15389);
+          const tmp = numRows(15399);
           obj = { itemIndex: closure_0 * outer2_5 + arg1, numItems: outer1_3.length, numColumns: outer2_5, spacing: outer2_6 };
-          obj.style = outer2_0(11426).getMediaGridItemStyles(obj);
+          obj.style = outer2_0(11389).getMediaGridItemStyles(obj);
           return outer2_7(tmp, obj, arg1);
         })
       };
@@ -94,5 +94,5 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
     })
   ];
   obj.children = items4;
-  return callback2(numRows(3991).View, obj);
+  return callback2(numRows(3992).View, obj);
 };

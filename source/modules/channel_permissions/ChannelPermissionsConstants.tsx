@@ -1,10 +1,10 @@
-// Module ID: 7565
-// Function ID: 60339
+// Module ID: 6661
+// Function ID: 58929
 // Name: RowType
-// Dependencies: [653, 1212, 7566, 1920, 7567, 2]
+// Dependencies: [653, 1212, 6662, 1921, 6663, 2]
 // Exports: getChannelPermissionSpecMap
 
-// Module 7565 (RowType)
+// Module 6661 (RowType)
 import ME from "ME";
 
 let closure_3;
@@ -148,7 +148,7 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
       if (null != createPostsDisabled) {
         if (createPostsDisabled.createPostsDisabled) {
           if (!type.isMediaChannel()) {
-            let obj10 = importDefault(7566);
+            let obj10 = importDefault(6662);
             let LG9VAi = obj10.getForumChannelPermissionText();
           }
           WQ6zpT = LG9VAi;
@@ -164,11 +164,11 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
         if (constants.GUILD_ANNOUNCEMENT === type) {
           const intl11 = require(1212) /* getSystemLocale */.intl;
           const obj5 = {};
-          let obj9 = importDefault(1920);
+          let obj9 = importDefault(1921);
           obj5.articleURL = obj9.getArticleURL(constants3.ANNOUNCEMENT_CHANNELS);
           WQ6zpT = intl11.format(require(1212) /* getSystemLocale */.t.WFwfSD, obj5);
         } else if (constants.GUILD_VOICE === type) {
-          let obj7 = importDefault(7567);
+          let obj7 = importDefault(6663);
           let sendMessagesDisabled;
           if (null != createPostsDisabled) {
             sendMessagesDisabled = createPostsDisabled.sendMessagesDisabled;
@@ -314,7 +314,7 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
       const intl20 = require(1212) /* getSystemLocale */.intl;
       const obj13 = {};
       str = importDefault;
-      let obj19 = importDefault(1920);
+      let obj19 = importDefault(1921);
       str = constants3;
       obj13.articleURL = obj19.getArticleURL(constants3.ANNOUNCEMENT_CHANNELS);
       SeA_G9 = intl20.format(require(1212) /* getSystemLocale */.t.XRxOo0, obj13);
@@ -395,7 +395,7 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
     if (constants.GUILD_VOICE === type) {
       str = importDefault;
       str = dependencyMap;
-      let obj24 = importDefault(7567);
+      let obj24 = importDefault(6663);
       str = null;
       str = undefined;
       if (null != createPostsDisabled) {
@@ -682,7 +682,7 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
     const intl37 = require(1212) /* getSystemLocale */.intl;
     const obj28 = {};
     str = importDefault;
-    let obj40 = importDefault(1920);
+    let obj40 = importDefault(1921);
     str = constants3;
     obj28.helpCenterArticle = obj40.getArticleURL(constants3.SOUNDBOARD);
     str = intl37.format(require(1212) /* getSystemLocale */.t["0kBp/0"], obj28);
@@ -698,7 +698,7 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
           const intl35 = require(1212) /* getSystemLocale */.intl;
           const obj29 = {};
           str = importDefault;
-          let obj36 = importDefault(1920);
+          let obj36 = importDefault(1921);
           str = constants3;
           obj29.helpCenterArticle = obj36.getArticleURL(constants3.SOUNDBOARD);
           str = intl35.format(require(1212) /* getSystemLocale */.t.GEi6Ym, obj29);
@@ -710,7 +710,7 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
     const intl36 = require(1212) /* getSystemLocale */.intl;
     const obj30 = {};
     str = importDefault;
-    let obj38 = importDefault(1920);
+    let obj38 = importDefault(1921);
     str = constants3;
     obj30.helpCenterArticle = obj38.getArticleURL(constants3.SOUNDBOARD);
     str = intl36.format(require(1212) /* getSystemLocale */.t["6eYqU1"], obj30);

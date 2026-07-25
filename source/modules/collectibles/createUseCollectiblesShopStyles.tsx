@@ -1,10 +1,10 @@
-// Module ID: 9807
-// Function ID: 76210
+// Module ID: 9731
+// Function ID: 75805
 // Name: getMidpointColor
-// Dependencies: [57, 4122, 7980, 6784, 624, 2]
+// Dependencies: [57, 4123, 7927, 5780, 624, 2]
 // Exports: default
 
-// Module 9807 (getMidpointColor)
+// Module 9731 (getMidpointColor)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -19,9 +19,9 @@ function getMidpointColor(toRgb, toRgb2) {
   ({ r: arr[0], g: arr[1], b: arr[2] } = toRgbResult);
   const items1 = [, , ];
   ({ r: arr2[0], g: arr2[1], b: arr2[2] } = toRgbResult1);
-  const obj = require(7980) /* getProfileTheme */;
-  [tmp4, tmp5, tmp6] = callback(require(7980) /* getProfileTheme */.getValueInColorGradientByPercentage(items, items1, 50), 3);
-  return importDefault(6784)({ r, g, b });
+  const obj = require(7927) /* getProfileTheme */;
+  [tmp4, tmp5, tmp6] = callback(require(7927) /* getProfileTheme */.getValueInColorGradientByPercentage(items, items1, 50), 3);
+  return importDefault(5780)({ r, g, b });
 }
 function getBackgroundColors(dark) {
   if (0 !== arg1.length) {
@@ -65,7 +65,7 @@ function desaturate(toHsl) {
   let l;
   let s;
   ({ h, s, l } = toHsl.toHsl());
-  return importDefault(6784)({ h, s: s * arg1, l });
+  return importDefault(5780)({ h, s: s * arg1, l });
 }
 const result = require("getProfileTheme").fileFinishedImporting("modules/collectibles/createUseCollectiblesShopStyles.tsx");
 

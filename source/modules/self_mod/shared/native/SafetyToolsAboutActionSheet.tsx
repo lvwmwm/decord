@@ -1,10 +1,10 @@
-// Module ID: 10187
-// Function ID: 78723
+// Module ID: 10119
+// Function ID: 78353
 // Name: SafetyToolsAboutScreen
-// Dependencies: [57, 31, 27, 10166, 653, 33, 4130, 689, 10160, 4098, 10163, 10164, 10188, 1212, 3830, 10173, 4126, 1920, 4543, 2]
+// Dependencies: [57, 31, 27, 10098, 653, 33, 4131, 689, 10092, 4099, 10095, 10096, 10120, 1212, 3831, 10105, 4127, 1921, 4544, 2]
 // Exports: default
 
-// Module 10187 (SafetyToolsAboutScreen)
+// Module 10119 (SafetyToolsAboutScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 12172
-// Function ID: 95356
+// Module ID: 12148
+// Function ID: 95165
 // Name: UserProfileMutuals
-// Dependencies: [31, 27, 8308, 5510, 33, 4130, 8310, 11663, 11941, 4098, 11670, 1934, 8537, 5737, 4660, 11976, 1273, 4126, 11671, 11678, 5513, 11665, 2]
+// Dependencies: [31, 27, 8043, 5510, 33, 4131, 8045, 11632, 11917, 4099, 11639, 1935, 8297, 6633, 4661, 11952, 1273, 4127, 11640, 11647, 5513, 11634, 2]
 // Exports: default
 
-// Module 12172 (UserProfileMutuals)
+// Module 12148 (UserProfileMutuals)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -40,28 +40,28 @@ export default function UserProfileMutuals(user) {
         const obj = {};
         const merged = Object.assign(outer1_3);
         obj["userId"] = arg0;
-        guildId(8537)(obj);
+        guildId(8297)(obj);
       },
       onPressMutualGuild(arg0) {
         outer1_4({ action: "PRESS_MUTUAL_GUILD" });
-        user(5737).transitionToGuild(arg0);
-        const obj = user(5737);
-        guildId(4098).hideActionSheet();
-        const obj2 = guildId(4098);
-        guildId(4098).hideActionSheet();
+        user(6633).transitionToGuild(arg0);
+        const obj = user(6633);
+        guildId(4099).hideActionSheet();
+        const obj2 = guildId(4099);
+        guildId(4099).hideActionSheet();
       }
     };
     guildId(tmp[9]).openLazy(user(tmp[11])(tmp[10], tmp.paths), "UserProfileMutualsActionSheet", obj, "stack");
   }
   let tmp = callback();
   const dependencyMap = tmp;
-  let obj = user(8310);
+  let obj = user(8045);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c3, trackUserProfileAction: c4 } = userProfileAnalyticsContext);
-  const tmp3 = guildId(11663)(user);
+  const tmp3 = guildId(11632)(user);
   const mutualFriends = tmp3.mutualFriends;
   const mutualGuilds = tmp3.mutualGuilds;
-  if (guildId(11941)(user)) {
+  if (guildId(11917)(user)) {
     let tmp4 = null != mutualFriends;
     if (tmp4) {
       tmp4 = mutualFriends.length > 0;
@@ -116,7 +116,7 @@ export default function UserProfileMutuals(user) {
     }
     if (tmp4) {
       obj = { variant: "text-sm/medium", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: mutualFriends };
-      tmp4 = mutualGuilds(user(4126).Text, obj);
+      tmp4 = mutualGuilds(user(4127).Text, obj);
     }
     items[1] = tmp4;
     items[2] = (() => {

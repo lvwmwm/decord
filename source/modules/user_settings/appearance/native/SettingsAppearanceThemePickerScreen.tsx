@@ -1,10 +1,10 @@
-// Module ID: 14205
-// Function ID: 109231
+// Module ID: 14216
+// Function ID: 109358
 // Name: getThemeOverride
-// Dependencies: [57, 31, 27, 3942, 1322, 1279, 1278, 1280, 1281, 482, 33, 4130, 689, 477, 4130, 1212, 14206, 10385, 14208, 1450, 624, 4063, 1324, 1282, 3944, 3840, 5450, 14122, 1457, 5462, 5482, 5094, 8404, 3991, 3974, 3941, 4131, 4134, 3842, 9165, 4126, 4660, 5093, 14123, 14210, 8799, 14216, 14228, 14237, 5121, 7530, 2]
+// Dependencies: [57, 31, 27, 3943, 1322, 1279, 1278, 1280, 1281, 482, 33, 4131, 689, 477, 4131, 1212, 14217, 10318, 14219, 1450, 624, 4064, 1324, 1282, 3945, 3841, 5450, 14133, 1457, 5462, 5482, 5094, 8162, 3992, 3975, 3942, 4132, 4135, 3843, 9057, 4127, 4661, 5093, 14134, 14221, 8687, 14227, 14239, 14248, 5121, 6622, 2]
 // Exports: default
 
-// Module 14205 (getThemeOverride)
+// Module 14216 (getThemeOverride)
 import _slicedToArray from "_slicedToArray";
 import Background from "Background";
 import { View } from "getThemeNameForAnalytics";
@@ -15,7 +15,7 @@ import closure_9 from "_isNativeReflectConstruct";
 import closure_10 from "_isNativeReflectConstruct";
 import SystemThemeState from "SystemThemeState";
 import { ThemeTypes } from "sum";
-import jsxProd from "module_3991";
+import jsxProd from "module_3992";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import set from "set";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -114,21 +114,21 @@ function getSegmentedControlItems() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.K2sFfo);
   obj.id = ThemeTypes.LIGHT;
-  obj.icon = callback(require(14206) /* ThemeLightIcon */.ThemeLightIcon, {});
+  obj.icon = callback(require(14217) /* ThemeLightIcon */.ThemeLightIcon, {});
   obj.page = null;
   const items = [obj, , ];
   obj = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl2.string(require(1212) /* getSystemLocale */.t.b8Cei3);
   obj.id = ThemeTypes.DARKER;
-  obj.icon = callback(require(10385) /* ThemeDarkIcon */.ThemeDarkIcon, {});
+  obj.icon = callback(require(10318) /* ThemeDarkIcon */.ThemeDarkIcon, {});
   obj.page = null;
   items[1] = obj;
   obj = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl3.string(require(1212) /* getSystemLocale */.t.pQwSpQ);
   obj.id = ThemeTypes.MIDNIGHT;
-  obj.icon = callback(require(14208) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
+  obj.icon = callback(require(14219) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
   obj.page = null;
   items[2] = obj;
   return items;

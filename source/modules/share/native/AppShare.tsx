@@ -1,10 +1,10 @@
-// Module ID: 16665
-// Function ID: 129896
+// Module ID: 16676
+// Function ID: 130064
 // Name: AppShare
-// Dependencies: [57, 31, 27, 6696, 13381, 1194, 653, 11483, 33, 566, 5588, 477, 13420, 11486, 6707, 675, 4559, 13529, 12959, 1553, 8377, 5583, 15639, 15682, 4475, 2]
+// Dependencies: [57, 31, 27, 5692, 13392, 1194, 653, 11446, 33, 566, 5588, 477, 13431, 11449, 5703, 675, 4560, 13540, 12970, 1553, 8135, 5583, 15649, 15693, 4476, 2]
 // Exports: default
 
-// Module 16665 (AppShare)
+// Module 16676 (AppShare)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -54,7 +54,7 @@ export default function AppShare(attachments) {
     obj.has_attachment = attachments.attachments.length > 0;
     obj.track(outer1_8.EXTERNAL_SHARE_OPENED, obj);
   }, items);
-  importDefault(4559)(() => {
+  importDefault(4560)(() => {
     let mimeTypes;
     let numAttachments;
     attachments = attachments.attachments;
@@ -85,9 +85,9 @@ export default function AppShare(attachments) {
   let obj = { appEntryKey: "share" };
   if (tmp) {
     obj = { appEntryKey: "share", sharedContent: attachments };
-    const tmp12 = importDefault(12959);
+    const tmp12 = importDefault(12970);
     if (obj3.isMetaQuest()) {
-      let exitApp = importDefault(8377).close;
+      let exitApp = importDefault(8135).close;
     } else {
       exitApp = exitApp.exitApp;
     }
@@ -97,9 +97,9 @@ export default function AppShare(attachments) {
   } else {
     let items1 = [tmp7(_require(5583).SceneLoadingIndicator, {}), , , ];
     obj = { appEntryKey: "share" };
-    items1[1] = callback(_require(15639).ActionSheetContainer, obj);
-    items1[2] = callback(importDefault(15682), {});
-    items1[3] = callback(_require(4475).AlertModalContainer, {});
+    items1[1] = callback(_require(15649).ActionSheetContainer, obj);
+    items1[2] = callback(importDefault(15693), {});
+    items1[3] = callback(_require(4476).AlertModalContainer, {});
     obj.children = items1;
     return closure_11(tmp6, obj);
   }

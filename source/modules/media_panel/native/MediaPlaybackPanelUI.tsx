@@ -1,14 +1,14 @@
-// Module ID: 15946
-// Function ID: 123139
+// Module ID: 15957
+// Function ID: 123307
 // Name: MediaPlaybackPanelUI
-// Dependencies: [57, 31, 10649, 13512, 10048, 10047, 33, 4130, 689, 1557, 1450, 15945, 3991, 9459, 10051, 15748, 4131, 4134, 4542, 15750, 5449, 5217, 15947, 2]
+// Dependencies: [57, 31, 10613, 13523, 9977, 9976, 33, 4131, 689, 1557, 1450, 15956, 3992, 9379, 9980, 15759, 4132, 4135, 4543, 15761, 5449, 5217, 15958, 2]
 // Exports: default
 
-// Module 15946 (MediaPlaybackPanelUI)
+// Module 15957 (MediaPlaybackPanelUI)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { useContext } from "result";
-import module_10649 from "module_10649";
+import module_10613 from "module_10613";
 import MediaPlaybackPanelModes from "MediaPlaybackPanelModes";
 import { IS_IOS } from "MIN_PAN_GESTURE_MOVE";
 import { BORDER_RADIUS_PHYSICS } from "VoicePanelModes";
@@ -37,7 +37,7 @@ let closure_19 = { code: "function MediaPlaybackPanelUITsx7(){const{windowDimens
 let closure_20 = { code: "function MediaPlaybackPanelUITsx8(){const{styles}=this.__closure;const topBorderRadius=0;const top=0;return{flexDirection:'column',backgroundColor:styles.content.backgroundColor,borderTopStartRadius:topBorderRadius,borderTopEndRadius:topBorderRadius,top:top,overflow:'hidden'};}" };
 let obj1 = {};
 let obj2 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-let result = require("module_10649").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelUI.tsx");
+let result = require("module_10613").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelUI.tsx");
 
 export default function MediaPlaybackPanelUI() {
   let pipState;
@@ -50,8 +50,8 @@ export default function MediaPlaybackPanelUI() {
   const require = tmp;
   let tmp2 = importDefault(1450)();
   importDefault = tmp2;
-  ({ wrapperDimensions, wrapperOffset } = useContext(importDefault(15945)));
-  let obj = require(3991);
+  ({ wrapperDimensions, wrapperOffset } = useContext(importDefault(15956)));
+  let obj = require(3992);
   let fn = function p() {
     const obj = { position: "absolute", top: 0, left: 0, width: null, height: null, overflow: "hidden" };
     ({ width: obj.width, height: obj.height } = closure_1);
@@ -61,7 +61,7 @@ export default function MediaPlaybackPanelUI() {
   fn.__workletHash = 5768037716653;
   fn.__initData = closure_19;
   let animatedStyle = obj.useAnimatedStyle(fn);
-  let tmp3 = useContext(importDefault(15945));
+  let tmp3 = useContext(importDefault(15956));
   [tmp6, tmp7] = callback((function useWrapperStyles(wrapperDimensions, wrapperOffset) {
     let tmp = wrapperDimensions;
     let tmp2 = wrapperOffset;
@@ -317,7 +317,7 @@ export default function MediaPlaybackPanelUI() {
     }
     maskEmptyElevation = tmp.maskEmptyElevation;
   })(wrapperDimensions, wrapperOffset), 2);
-  let obj1 = require(3991);
+  let obj1 = require(3992);
   let fn2 = function b() {
     const obj = { flexDirection: "column", backgroundColor: tmp.content.backgroundColor, borderTopStartRadius: 0, borderTopEndRadius: 0, top: 0, overflow: "hidden" };
     return obj;
@@ -326,7 +326,7 @@ export default function MediaPlaybackPanelUI() {
   fn2.__workletHash = 8557652955267;
   fn2.__initData = closure_20;
   let animatedStyle1 = obj1.useAnimatedStyle(fn2);
-  let context = React.useContext(importDefault(15945));
+  let context = React.useContext(importDefault(15956));
   ({ wrapperOffset: wrapperOffset2, pipState } = context);
   obj = { panGestureEnabled: true };
   let tmp5 = callback((function useWrapperStyles(wrapperDimensions, wrapperOffset) {
@@ -584,22 +584,22 @@ export default function MediaPlaybackPanelUI() {
     }
     maskEmptyElevation = tmp.maskEmptyElevation;
   })(wrapperDimensions, wrapperOffset), 2);
-  obj.mode = require(15750) /* MorphablePanelModes */.MorphablePanelModes.PIP;
+  obj.mode = require(15761) /* MorphablePanelModes */.MorphablePanelModes.PIP;
   obj.pipState = pipState;
   obj.wrapperOffset = wrapperOffset2;
-  let tmp10 = importDefault(15750);
+  let tmp10 = importDefault(15761);
   obj = {};
   obj1 = { style: animatedStyle, pointerEvents: "box-none" };
   let obj2 = { style: tmp6 };
   const obj3 = { style: tmp7 };
-  let obj4 = { gesture: importDefault(15750)(obj) };
+  let obj4 = { gesture: importDefault(15761)(obj) };
   let obj5 = { style: items };
   items = [tmp.content, animatedStyle1];
-  obj5.children = jsx(importDefault(15947), {});
-  obj4.children = jsx(importDefault(3991).View, { style: items });
-  obj3.children = jsx(require(5217) /* Directions */.GestureDetector, { gesture: importDefault(15750)(obj) });
-  obj2.children = jsx(importDefault(3991).View, { style: tmp7 });
-  obj1.children = jsx(importDefault(3991).View, { style: tmp6 });
-  obj.children = jsx(importDefault(3991).View, { style: animatedStyle, pointerEvents: "box-none" });
+  obj5.children = jsx(importDefault(15958), {});
+  obj4.children = jsx(importDefault(3992).View, { style: items });
+  obj3.children = jsx(require(5217) /* Directions */.GestureDetector, { gesture: importDefault(15761)(obj) });
+  obj2.children = jsx(importDefault(3992).View, { style: tmp7 });
+  obj1.children = jsx(importDefault(3992).View, { style: tmp6 });
+  obj.children = jsx(importDefault(3992).View, { style: animatedStyle, pointerEvents: "box-none" });
   return jsx(require(5449) /* Layer */.LayerScope, {});
 };

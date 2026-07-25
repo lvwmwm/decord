@@ -1,9 +1,9 @@
-// Module ID: 12794
-// Function ID: 99571
+// Module ID: 12805
+// Function ID: 99698
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12794 (apexExperiment)
+// Module 12805 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-server-ladder", kind: "user", defaultConfig: { bitrate: 9000000, enabled: false }, variations: { [1]: { bitrate: 3500000, enabled: true } } };

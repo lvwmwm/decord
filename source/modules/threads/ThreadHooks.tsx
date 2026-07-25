@@ -1,10 +1,10 @@
-// Module ID: 5650
-// Function ID: 48306
+// Module ID: 5996
+// Function ID: 53316
 // Name: useCanStartPublicThread
-// Dependencies: [57, 4043, 1352, 1194, 1348, 3758, 5039, 653, 566, 483, 5651, 21, 22, 5652, 5653, 4345, 2]
+// Dependencies: [57, 4044, 1352, 1194, 1348, 3759, 5040, 653, 566, 483, 5870, 21, 22, 5997, 5998, 4346, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useIsNonModInLockedThread
 
-// Module 5650 (useCanStartPublicThread)
+// Module 5996 (useCanStartPublicThread)
 import _slicedToArray from "_slicedToArray";
 import { THREADED_CHANNEL_TYPES } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -48,7 +48,7 @@ function canStartThread(closure_8, type, hasFlag) {
       if (null != hasFlag) {
         if (hasFlag.hasFlag(constants2.HAS_THREAD)) {
           return false;
-        } else if (importDefault(5651)(hasFlag)) {
+        } else if (importDefault(5870)(hasFlag)) {
           return false;
         }
       }
@@ -360,15 +360,15 @@ export const useCanRemoveThreadMember = function useCanRemoveThreadMember(channe
 export { useHasPermissionToJoinThreadVoice };
 export const useCanJoinThreadVoice = function useCanJoinThreadVoice(channel) {
   const obj = { guildId: channel.guild_id, location: "e791ea_1" };
-  const tmp = importDefault(5652)();
+  const tmp = importDefault(5997)();
   let enabled = importDefaultResultResult.useExperiment(obj, { autoTrackExposure: false }).enabled;
   const tmp2 = useHasPermissionToJoinThreadVoice(channel);
-  const isGameInvitesPost = require(5653) /* _createForOfIteratorHelperLoose */.useIsGameInvitesPost(channel);
-  const obj2 = require(5653) /* _createForOfIteratorHelperLoose */;
-  let shouldAgeVerifyForAgeGate = require(4345) /* shouldAgeVerifyForAgeGate */.useShouldAgeVerifyForAgeGate();
+  const isGameInvitesPost = require(5998) /* _createForOfIteratorHelperLoose */.useIsGameInvitesPost(channel);
+  const obj2 = require(5998) /* _createForOfIteratorHelperLoose */;
+  let shouldAgeVerifyForAgeGate = require(4346) /* shouldAgeVerifyForAgeGate */.useShouldAgeVerifyForAgeGate();
   if (shouldAgeVerifyForAgeGate) {
-    shouldAgeVerifyForAgeGate = require(4345) /* shouldAgeVerifyForAgeGate */.shouldShowAgeGateForChannelId(channel.id);
-    const obj4 = require(4345) /* shouldAgeVerifyForAgeGate */;
+    shouldAgeVerifyForAgeGate = require(4346) /* shouldAgeVerifyForAgeGate */.shouldShowAgeGateForChannelId(channel.id);
+    const obj4 = require(4346) /* shouldAgeVerifyForAgeGate */;
   }
   let tmp7 = !tmp && channel.isVocalThread();
   if (tmp7) {

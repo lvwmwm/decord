@@ -1,10 +1,10 @@
-// Module ID: 8530
-// Function ID: 67982
+// Module ID: 8290
+// Function ID: 66636
 // Name: getDefaultInviteExpiration
-// Dependencies: [1838, 653, 8528, 4042, 624, 2]
+// Dependencies: [1838, 653, 8288, 4043, 624, 2]
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 8530 (getDefaultInviteExpiration)
+// Module 8290 (getDefaultInviteExpiration)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
 import createExperiment from "createExperiment";
@@ -20,7 +20,7 @@ function getDefaultInviteExpiration(arg0) {
   if (null != guild) {
     const features = guild.features;
     if (features.has(constants.HUB)) {
-      return importDefault(8528).INVITE_OPTIONS_FOREVER.value;
+      return importDefault(8288).INVITE_OPTIONS_FOREVER.value;
     }
   }
   if (null != experimentConfig) {
@@ -129,5 +129,5 @@ export const useMaxAgeOptions = function useMaxAgeOptions(arg0) {
   }
   const items = [defaultMaxAge1];
   obj.includeExperimentalValues = items;
-  return importDefault(8528).getMaxAgeOptions(obj);
+  return importDefault(8288).getMaxAgeOptions(obj);
 };

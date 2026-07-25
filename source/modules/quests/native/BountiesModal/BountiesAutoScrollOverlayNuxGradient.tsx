@@ -1,10 +1,10 @@
-// Module ID: 13997
-// Function ID: 107061
+// Module ID: 14008
+// Function ID: 107188
 // Name: BountiesAutoScrollOverlayNuxGradient
-// Dependencies: [31, 27, 33, 689, 3991, 4131, 4134, 4554, 2]
+// Dependencies: [31, 27, 33, 689, 3992, 4132, 4135, 4555, 2]
 // Exports: default
 
-// Module 13997 (BountiesAutoScrollOverlayNuxGradient)
+// Module 14008 (BountiesAutoScrollOverlayNuxGradient)
 import result from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ let result = require("jsxProd").fileFinishedImporting("modules/quests/native/Bou
 
 export default function BountiesAutoScrollOverlayNuxGradient(active) {
   active = active.active;
-  let obj = active(3991);
+  let obj = active(3992);
   const sharedValue = obj.useSharedValue(0);
   const items = [active, sharedValue];
   const effect = React.useEffect(() => {
@@ -29,7 +29,7 @@ export default function BountiesAutoScrollOverlayNuxGradient(active) {
     }
     const result = sharedValue.set(active(outer1_2[5]).withTiming(num, active(outer1_2[6]).timingSlow));
   }, items);
-  let obj1 = active(3991);
+  let obj1 = active(3992);
   const fn = function _() {
     return { opacity: sharedValue.get() };
   };
@@ -45,9 +45,9 @@ export default function BountiesAutoScrollOverlayNuxGradient(active) {
   obj.locations = [0, 1];
   obj.start = { x: 0.5, y: 1 };
   obj.end = { x: 0.5, y: 0 };
-  const items3 = [callback(sharedValue(4554), obj), ];
+  const items3 = [callback(sharedValue(4555), obj), ];
   obj1 = { style: StyleSheet.absoluteFillObject, colors: ["rgba(0,0,0,0.4)", "rgba(0,0,0,0)"], locations: [0, 0.5], start: { x: 0.5, y: 1 }, end: { x: 0.5, y: 0 } };
-  items3[1] = callback(sharedValue(4554), obj1);
+  items3[1] = callback(sharedValue(4555), obj1);
   obj.children = items3;
-  return callback2(sharedValue(3991).View, obj);
+  return callback2(sharedValue(3992).View, obj);
 };

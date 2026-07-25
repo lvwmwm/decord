@@ -1,10 +1,10 @@
-// Module ID: 16378
-// Function ID: 127764
+// Module ID: 16389
+// Function ID: 127932
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 5149, 16352, 653, 4940, 33, 4130, 689, 4939, 22, 7577, 4126, 1212, 4541, 4660, 1920, 7654, 7653, 16379, 4543, 11283, 4098, 16380, 1934, 16381, 16383, 566, 7636, 16366, 2]
+// Dependencies: [31, 27, 5148, 16363, 653, 4941, 33, 4131, 689, 4940, 22, 6673, 4127, 1212, 4542, 4661, 1921, 7596, 7595, 16390, 4544, 11245, 4099, 16391, 1935, 16392, 16394, 566, 7575, 16377, 2]
 // Exports: default
 
-// Module 16378 (_createForOfIteratorHelperLoose)
+// Module 16389 (_createForOfIteratorHelperLoose)
 import result from "result";
 import { View } from "initialize";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -100,7 +100,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function convertConfigArrayWithOperator(roleConnectionConfigurations, OR) {
-  if (OR === require(4939) /* officialApplicationIds */.ConnectionConfigurationRuleOperator.AND) {
+  if (OR === require(4940) /* officialApplicationIds */.ConnectionConfigurationRuleOperator.AND) {
     if (0 === roleConnectionConfigurations.length) {
       let items = [];
     } else {
@@ -125,11 +125,11 @@ function HeaderSection(arg0) {
   if (hasMembers) {
     obj = { style: tmp.warningContainer };
     obj = { color: importDefault(689).colors.STATUS_WARNING, size: "sm" };
-    const items = [callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, obj), ];
+    const items = [callback(require(6673) /* CircleErrorIcon */.CircleErrorIcon, obj), ];
     const obj1 = { variant: "text-xs/medium", style: tmp.warningText };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t["2aFeef"]);
-    items[1] = callback(require(4126) /* Text */.Text, obj1);
+    items[1] = callback(require(4127) /* Text */.Text, obj1);
     obj.children = items;
     tmp4 = callback2(View, obj);
   }
@@ -139,26 +139,26 @@ function HeaderSection(arg0) {
   const obj4 = { variant: "text-md/semibold" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.nMir27);
-  const items2 = [callback(require(4126) /* Text */.Text, obj4), ];
+  const items2 = [callback(require(4127) /* Text */.Text, obj4), ];
   let tmp15;
   if (hasConnections) {
     const obj5 = { hitSlop: 8, onPress: clearConnections, disabled: locked };
     const obj6 = { variant: "text-sm/medium", color: "text-feedback-critical" };
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj6.children = intl3.string(require(1212) /* getSystemLocale */.t.ntW1cc);
-    obj5.children = callback(require(4126) /* Text */.Text, obj6);
-    tmp15 = callback(require(4660) /* PressableBase */.PressableOpacity, obj5);
+    obj5.children = callback(require(4127) /* Text */.Text, obj6);
+    tmp15 = callback(require(4661) /* PressableBase */.PressableOpacity, obj5);
   }
   items2[1] = tmp15;
   obj3.children = items2;
   const items3 = [callback2(View, obj3), ];
   const obj7 = { variant: "text-sm/medium" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
-  const obj8 = { helpdeskArticleUrl: importDefault(1920).getArticleURL(HelpdeskArticles.CONNECTION_DETAILS_ADMIN) };
+  const obj8 = { helpdeskArticleUrl: importDefault(1921).getArticleURL(HelpdeskArticles.CONNECTION_DETAILS_ADMIN) };
   obj7.children = intl4.format(require(1212) /* getSystemLocale */.t.q5f7tK, obj8);
-  items3[1] = callback(require(4126) /* Text */.Text, obj7);
+  items3[1] = callback(require(4127) /* Text */.Text, obj7);
   obj2.children = items3;
-  items1[1] = callback2(require(4541) /* Stack */.Stack, obj2);
+  items1[1] = callback2(require(4542) /* Stack */.Stack, obj2);
   obj.children = items1;
   return callback2(closure_12, obj);
 }
@@ -175,7 +175,7 @@ function AndOrRadios(setPendingRoleConfigurations) {
     callback(roleConnectionConfigurations, arg0);
   };
   obj.hasIcons = false;
-  obj = { value: roleConnectionConfigurations(4939).ConnectionConfigurationRuleOperator.OR };
+  obj = { value: roleConnectionConfigurations(4940).ConnectionConfigurationRuleOperator.OR };
   const intl2 = roleConnectionConfigurations(1212).intl;
   obj.label = intl2.string(roleConnectionConfigurations(1212).t.W3iY58);
   let tmp3 = locked;
@@ -183,14 +183,14 @@ function AndOrRadios(setPendingRoleConfigurations) {
     tmp3 = arr.length < 2;
   }
   obj.disabled = tmp3;
-  const items = [callback(roleConnectionConfigurations(7653).TableRadioRow, obj), ];
-  obj = { value: roleConnectionConfigurations(4939).ConnectionConfigurationRuleOperator.AND };
+  const items = [callback(roleConnectionConfigurations(7595).TableRadioRow, obj), ];
+  obj = { value: roleConnectionConfigurations(4940).ConnectionConfigurationRuleOperator.AND };
   const intl3 = roleConnectionConfigurations(1212).intl;
   obj.label = intl3.string(roleConnectionConfigurations(1212).t.gHXS9A);
   obj.disabled = locked;
-  items[1] = callback(roleConnectionConfigurations(7653).TableRadioRow, obj);
+  items[1] = callback(roleConnectionConfigurations(7595).TableRadioRow, obj);
   obj.children = items;
-  return closure_11(roleConnectionConfigurations(7654).TableRadioGroup, obj);
+  return closure_11(roleConnectionConfigurations(7596).TableRadioGroup, obj);
 }
 function renderRoleConnectionConfigurations(memo, arg1, locked, arg3, integrations) {
   let iter2;
@@ -289,7 +289,7 @@ function renderRoleConnectionConfigurations(memo, arg1, locked, arg3, integratio
   const obj1 = { spacing: importDefault(689).space.PX_24 };
   arr = Array.from(map.values());
   obj1.children = arr.map((configurationItems) => outer1_10(callback(locked[19]), { configurationItems, onConfigurationChange: handleConfigurationChange, locked, integrations: result }, configurationItems[0].configuration.connectionType + ":" + configurationItems[0].index));
-  return callback(_require(4541).Stack, obj1);
+  return callback(_require(4542).Stack, obj1);
 }
 function AddConnectionButton(locked) {
   let View;
@@ -303,7 +303,7 @@ function AddConnectionButton(locked) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.text = intl.string(require(1212) /* getSystemLocale */.t["OSvW5+"]);
   obj.variant = "secondary";
-  obj.icon = callback(require(11283) /* CirclePlusIcon */.CirclePlusIcon, { size: "sm" });
+  obj.icon = callback(require(11245) /* CirclePlusIcon */.CirclePlusIcon, { size: "sm" });
   obj.disabled = locked.locked;
   obj.onPress = function onPress() {
     let obj = outer1_1(outer1_2[22]);
@@ -329,7 +329,7 @@ function AddConnectionButton(locked) {
     };
     obj.openLazy(outer1_0(outer1_2[24])(outer1_2[23], outer1_2.paths), combined, obj);
   };
-  return callback(require(4543) /* Button */.Button, obj);
+  return callback(require(4544) /* Button */.Button, obj);
 }
 ({ GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE: closure_8, GUILD_ROLE_CONNECTION_APPLICATION_IDENTITY_CONNECTION_TYPE: closure_9 } = OperatorTypes);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);

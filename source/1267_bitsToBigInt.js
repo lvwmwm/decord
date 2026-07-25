@@ -1,5 +1,5 @@
 // Module ID: 1267
-// Function ID: 14306
+// Function ID: 14312
 // Name: bitsToBigInt
 // Dependencies: [6, 7, 99, 100]
 // Exports: hash

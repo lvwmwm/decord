@@ -1,10 +1,10 @@
-// Module ID: 11510
-// Function ID: 89652
+// Module ID: 11476
+// Function ID: 89369
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 566, 11505, 3831, 1212, 9212, 4098, 5187, 5186, 5499, 7636, 4543, 2]
+// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 566, 11471, 3832, 1212, 9104, 4099, 5187, 5186, 5499, 7575, 4544, 2]
 // Exports: default
 
-// Module 11510 (SpamMessageRequestHamActionSheet)
+// Module 11476 (SpamMessageRequestHamActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -42,7 +42,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(recipientId.getRecipientId()));
-  let obj1 = require(11505) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(11471) /* _createForOfIteratorHelperLoose */;
   obj = {
     user: stateFromStores,
     onError() {
@@ -84,7 +84,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   obj4.onValueChange = function onValueChange(arg0) {
     return callback3(arg0);
   };
-  const items2 = [callback(require(7636) /* Form */.FormSwitchRow, obj4), ];
+  const items2 = [callback(require(7575) /* Form */.FormSwitchRow, obj4), ];
   const obj5 = { style: tmp.buttonContainer };
   const obj6 = {
     size: "md",
@@ -107,7 +107,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
     isAcceptLoading = isOptimisticAccepted;
   }
   obj6.loading = isAcceptLoading;
-  obj5.children = callback(require(4543) /* Button */.Button, obj6);
+  obj5.children = callback(require(4544) /* Button */.Button, obj6);
   items2[1] = callback(View, obj5);
   obj3.children = items2;
   items1[1] = closure_8(View, obj3);

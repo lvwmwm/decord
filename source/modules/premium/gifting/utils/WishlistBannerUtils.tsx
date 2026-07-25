@@ -1,10 +1,10 @@
-// Module ID: 9767
-// Function ID: 75908
+// Module ID: 9691
+// Function ID: 75503
 // Name: getBannerMode
-// Dependencies: [31, 1212, 8717, 5609, 2]
+// Dependencies: [31, 1212, 8605, 5609, 2]
 // Exports: useWishlistBannerConfig
 
-// Module 9767 (getBannerMode)
+// Module 9691 (getBannerMode)
 import { useMemo } from "result";
 import { intl } from "getSystemLocale";
 import { intl as intl2 } from "getSystemLocale";

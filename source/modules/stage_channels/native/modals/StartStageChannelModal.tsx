@@ -1,9 +1,9 @@
-// Module ID: 8517
-// Function ID: 67816
+// Module ID: 8277
+// Function ID: 66470
 // Name: closeModal
-// Dependencies: [5, 57, 31, 27, 1353, 4947, 653, 1354, 33, 4130, 689, 4337, 4660, 1212, 1273, 7729, 7571, 5513, 566, 5596, 7636, 4126, 8518, 8519, 8520, 4559, 675, 1820, 7562, 5599, 4029, 8521, 8522, 7580, 4543, 5121, 5585, 2]
+// Dependencies: [5, 57, 31, 27, 1353, 4948, 653, 1354, 33, 4131, 689, 4338, 4661, 1212, 1273, 7675, 6667, 5513, 566, 5596, 7575, 4127, 8278, 8279, 8280, 4560, 675, 1820, 6658, 5599, 4030, 8281, 8282, 6689, 4544, 5121, 5585, 2]
 
-// Module 8517 (closeModal)
+// Module 8277 (closeModal)
 import closure_4 from "MAX_STAGE_TOPIC_LENGTH";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "FormHeader";
@@ -23,7 +23,7 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function closeModal() {
-  importDefault(4337).popWithKey(closure_11);
+  importDefault(4338).popWithKey(closure_11);
 }
 function NavigationBar(guild) {
   let tmp2 = null;
@@ -36,9 +36,9 @@ function NavigationBar(guild) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
     obj.onPress = closeModal;
-    obj = { source: importDefault(7729) };
+    obj = { source: importDefault(7675) };
     obj.children = callback2(require(1273) /* Button */.Icon, obj);
-    obj.children = callback2(require(4660) /* PressableBase */.PressableOpacity, obj);
+    obj.children = callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
     tmp2 = callback2(closure_7, obj);
   }
   return tmp2;
@@ -46,7 +46,7 @@ function NavigationBar(guild) {
 function HeaderIcon(guild) {
   guild = guild.guild;
   if (null == guild) {
-    let tmp7 = callback2(importDefault(7571), {});
+    let tmp7 = callback2(importDefault(6667), {});
   } else {
     const obj = { style: tmp.guildIcon, size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE, guild };
     tmp7 = callback2(importDefault(5513), obj);

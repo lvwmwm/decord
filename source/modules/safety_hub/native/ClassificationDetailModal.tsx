@@ -1,10 +1,10 @@
-// Module ID: 11050
-// Function ID: 85931
+// Module ID: 11006
+// Function ID: 85551
 // Name: ClassificationDetailModal
-// Dependencies: [31, 653, 11051, 33, 4130, 689, 4337, 5087, 11052, 5796, 11082, 11059, 1457, 5517, 1212, 2]
+// Dependencies: [31, 653, 11007, 33, 4131, 689, 4338, 5087, 11008, 6554, 11038, 11015, 1457, 5517, 1212, 2]
 // Exports: default
 
-// Module 11050 (ClassificationDetailModal)
+// Module 11006 (ClassificationDetailModal)
 import result from "result";
 import { UserSettingsSections } from "ME";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
@@ -30,7 +30,7 @@ export default function ClassificationDetailModal(classificationId) {
   let safetyHubInitialized;
   const tmp = _createForOfIteratorHelperLoose();
   dependencyMap = tmp;
-  let obj = classificationId(11082);
+  let obj = classificationId(11038);
   safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -46,7 +46,7 @@ export default function ClassificationDetailModal(classificationId) {
     let closure_1 = flag;
     let closure_2 = source;
     function closeModal() {
-      return source(4337).pop();
+      return source(4338).pop();
     }
     let obj = {};
     obj = {
@@ -56,13 +56,13 @@ export default function ClassificationDetailModal(classificationId) {
       },
       headerLeft: classificationId(table[7]).getHeaderCloseButton(closeModal),
       render() {
-        return outer3_7(source(11052), {
+        return outer3_7(source(11008), {
           classificationId: closure_0,
           source: closure_2,
           onClose() {
             outer1_3();
             if (outer1_1) {
-              let obj = classificationId(5796);
+              let obj = classificationId(6554);
               obj = { screen: outer4_5.ACCOUNT };
               obj = { initialTab: outer4_6.STANDING };
               obj.params = obj;
@@ -71,7 +71,7 @@ export default function ClassificationDetailModal(classificationId) {
           },
           onError() {
             outer1_3();
-            let obj = classificationId(5796);
+            let obj = classificationId(6554);
             obj = { screen: outer4_5.ACCOUNT, params: obj };
             obj = { initialTab: outer4_6.STANDING };
             obj.openUserSettings(obj);

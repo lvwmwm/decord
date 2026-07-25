@@ -1,10 +1,10 @@
-// Module ID: 5135
-// Function ID: 44520
+// Module ID: 5134
+// Function ID: 44522
 // Name: getWindowId
 // Dependencies: [22, 2]
 // Exports: getMainWindowId, setupWindowId
 
-// Module 5135 (getWindowId)
+// Module 5134 (getWindowId)
 function getWindowId(defaultView) {
   return defaultView.__DISCORD_WINDOW_ID;
 }

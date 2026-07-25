@@ -1,17 +1,17 @@
-// Module ID: 12603
-// Function ID: 97418
+// Module ID: 12614
+// Function ID: 97545
 // Name: getGuildSubscriptionRemovalSource
-// Dependencies: [31, 27, 33, 7405, 12604, 12605, 12606, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 12615, 12616, 12617, 3977, 2]
 // Exports: GuildSubscriptionRemoval
 
-// Module 12603 (getGuildSubscriptionRemovalSource)
+// Module 12614 (getGuildSubscriptionRemovalSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getGuildSubscriptionRemovalSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getGuildSubscriptionRemovalSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useGuildSubscriptionRemovalSource() {
-  return getGuildSubscriptionRemovalSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getGuildSubscriptionRemovalSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionRemoval.tsx");
 

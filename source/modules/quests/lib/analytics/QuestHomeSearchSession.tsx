@@ -1,10 +1,10 @@
-// Module ID: 6975
-// Function ID: 55777
+// Module ID: 5966
+// Function ID: 53083
 // Name: getOrCreateQuestHomeSearchSession
-// Dependencies: [491, 6705, 2]
+// Dependencies: [491, 5701, 2]
 // Exports: clearQuestHomeSearchSession, getCurrentQuestHomeSearchSession, getOrCreateQuestHomeSearchSession
 
-// Module 6975 (getOrCreateQuestHomeSearchSession)
+// Module 5966 (getOrCreateQuestHomeSearchSession)
 let c2 = null;
 const result = require("set").fileFinishedImporting("modules/quests/lib/analytics/QuestHomeSearchSession.tsx");
 
@@ -12,7 +12,7 @@ export const getOrCreateQuestHomeSearchSession = function getOrCreateQuestHomeSe
   const timestamp = Date.now();
   if (null == obj) {
     obj = {};
-    obj = { uuid: require(491) /* v1 */.v4(), createdAtTimestamp: timestamp, lastUsedTimestamp: timestamp, version: require(6705) /* result */.CLIENT_SESSION_STORAGE_VERSION };
+    obj = { uuid: require(491) /* v1 */.v4(), createdAtTimestamp: timestamp, lastUsedTimestamp: timestamp, version: require(5701) /* result */.CLIENT_SESSION_STORAGE_VERSION };
     obj.searchSession = obj;
     obj.isNew = true;
     const obj4 = require(491) /* v1 */;

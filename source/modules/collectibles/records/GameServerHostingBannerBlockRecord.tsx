@@ -1,9 +1,9 @@
-// Module ID: 6812
-// Function ID: 53754
+// Module ID: 5808
+// Function ID: 51028
 // Name: GameServerHostingBannerBlockRecord
-// Dependencies: [6, 7, 6805, 2]
+// Dependencies: [6, 7, 5801, 2]
 
-// Module 6812 (GameServerHostingBannerBlockRecord)
+// Module 5808 (GameServerHostingBannerBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

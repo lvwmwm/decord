@@ -1,10 +1,10 @@
-// Module ID: 4967
-// Function ID: 42683
+// Module ID: 4968
+// Function ID: 42695
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [57, 31, 1278, 4968, 653, 33, 4969, 5087, 4966, 5788, 3976, 5789, 5790, 5791, 1212, 5793, 5796, 1273, 5798, 12592, 5450, 4540, 5517, 2]
+// Dependencies: [57, 31, 1278, 4969, 653, 33, 4970, 5087, 4967, 6695, 3977, 12568, 12569, 8943, 1212, 6449, 6554, 1273, 12570, 12603, 5450, 4541, 5517, 2]
 // Exports: default
 
-// Module 4967 (PremiumGuildSubscribeModal)
+// Module 4968 (PremiumGuildSubscribeModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -120,7 +120,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
   first = tmp2[0];
   let _isNativeReflectConstruct = tmp2[1];
   let items = [first];
-  importDefault(4540)(first.useCallback(() => {
+  importDefault(4541)(first.useCallback(() => {
     let flag = first === outer1_6.GUILD_SELECT;
     if (flag) {
       outer1_0(outer1_2[8]).closeApplyBoostModal();

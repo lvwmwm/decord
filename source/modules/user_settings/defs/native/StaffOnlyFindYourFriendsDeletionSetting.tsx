@@ -1,9 +1,9 @@
-// Module ID: 13795
-// Function ID: 105727
+// Module ID: 13806
+// Function ID: 105854
 // Name: setFindYourFriendsDeletionIsLoading
-// Dependencies: [5, 27, 7751, 33, 677, 682, 3743, 11736, 562, 3831, 10127, 13796, 2]
+// Dependencies: [5, 27, 7697, 33, 677, 682, 3744, 11706, 562, 3832, 10059, 13807, 2]
 
-// Module 13795 (setFindYourFriendsDeletionIsLoading)
+// Module 13806 (setFindYourFriendsDeletionIsLoading)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,7 +16,7 @@ function setFindYourFriendsDeletionIsLoading(arg0) {
   _require(682).batchUpdates(() => outer1_6.setState({ isLoading: closure_0 }));
 }
 function useFindYourFriendsDeletionIsLoading() {
-  return callback2((isLoading) => isLoading.isLoading, require(3743) /* isIterable */.shallow);
+  return callback2((isLoading) => isLoading.isLoading, require(3744) /* isIterable */.shallow);
 }
 function _onFindYourFriendsDeletionPress() {
   // CreateGeneratorClosureLongIndex (0x67)

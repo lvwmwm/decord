@@ -1,10 +1,10 @@
-// Module ID: 10149
-// Function ID: 78484
+// Module ID: 10081
+// Function ID: 78114
 // Name: openLoadingIndicatorDebugBody
-// Dependencies: [57, 31, 27, 4122, 4808, 4349, 1906, 1849, 6651, 653, 33, 4130, 689, 4471, 4561, 1934, 566, 4126, 10150, 3991, 4131, 1212, 4660, 2]
+// Dependencies: [57, 31, 27, 4123, 4809, 4350, 1907, 1850, 6271, 653, 33, 4131, 689, 4472, 4562, 1935, 566, 4127, 10082, 3992, 4132, 1212, 4661, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 10149 (openLoadingIndicatorDebugBody)
+// Module 10081 (openLoadingIndicatorDebugBody)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -45,8 +45,8 @@ function openLoadingIndicatorDebugBody() {
         },
       isDismissable: true
     };
-    importDefault(4471).openLazy(obj);
-    const obj2 = importDefault(4471);
+    importDefault(4472).openLazy(obj);
+    const obj2 = importDefault(4472);
   }
 }
 ({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
@@ -119,7 +119,7 @@ let closure_17 = importAllResult.memo(() => {
   }
   items1[6] = renderField("should show chat indicator", messagesCached);
   obj.children = items1;
-  return closure_14(require(4126) /* Text */.Text, obj);
+  return closure_14(require(4127) /* Text */.Text, obj);
 });
 let closure_18 = { code: "function ChatLoadingIndicatorTsx1(){const{useReducedMotion,withRepeat,withSequence,withTiming,Easing}=this.__closure;if(useReducedMotion){return{transform:[]};}return{transform:[{scale:withRepeat(withSequence(withTiming(1,{duration:0}),withTiming(0.5,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)}),withTiming(1,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)})),-1)}]};}" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/chat/native/ChatLoadingIndicator.tsx");
@@ -190,7 +190,7 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     }
     return isStaffResult;
   });
-  let obj2 = stateFromStores(3991);
+  let obj2 = stateFromStores(3992);
   const fn = function t() {
     let obj = {};
     if (stateFromStores) {
@@ -219,24 +219,24 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     }
     return tmp7;
   };
-  obj = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(3991).withRepeat, withSequence: stateFromStores(3991).withSequence, withTiming: stateFromStores(4131).withTiming, Easing: stateFromStores(3991).Easing };
+  obj = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(3992).withRepeat, withSequence: stateFromStores(3992).withSequence, withTiming: stateFromStores(4132).withTiming, Easing: stateFromStores(3992).Easing };
   fn.__closure = obj;
   fn.__workletHash = 17454673879926;
   fn.__initData = closure_18;
   obj = { style: tmp.container };
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items2 = [tmp.pulse, animatedStyle];
-  const items3 = [callback2(importDefault(3991).View, { style: items2 }), ];
+  const items3 = [callback2(importDefault(3992).View, { style: items2 }), ];
   obj1 = { variant: "text-xs/medium", color: "text-muted" };
   const intl = stateFromStores(1212).intl;
   obj1.children = intl.string(stateFromStores(1212).t.JwIJMV);
-  items3[1] = callback2(stateFromStores(4126).Text, obj1);
+  items3[1] = callback2(stateFromStores(4127).Text, obj1);
   obj.children = items3;
   const tmp5 = callback3(View, obj);
   let tmp6 = tmp5;
   if (stateFromStores1) {
     obj2 = { onPress: openLoadingIndicatorDebugBody, children: tmp5 };
-    tmp6 = callback2(stateFromStores(4660).PressableOpacity, obj2);
+    tmp6 = callback2(stateFromStores(4661).PressableOpacity, obj2);
   }
   return tmp6;
 };

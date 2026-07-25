@@ -1,8 +1,8 @@
-// Module ID: 15768
-// Function ID: 121561
-// Dependencies: [31, 10508, 33, 566, 15769, 15771, 2]
+// Module ID: 15779
+// Function ID: 121730
+// Dependencies: [31, 5658, 33, 566, 15780, 15782, 2]
 
-// Module 15768
+// Module 15779
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
@@ -13,9 +13,9 @@ const memoResult = require("result").memo(function FramePanelContainer() {
   const items = [_isNativeReflectConstruct];
   let tmp = null;
   if (obj.useStateFromStores(items, () => null != outer1_3.getConnectedFrame())) {
-    obj = { children: jsx(importDefault(15771), {}) };
-    tmp = jsx(importDefault(15769), { children: jsx(importDefault(15771), {}) });
-    const tmp5 = importDefault(15769);
+    obj = { children: jsx(importDefault(15782), {}) };
+    tmp = jsx(importDefault(15780), { children: jsx(importDefault(15782), {}) });
+    const tmp5 = importDefault(15780);
   }
   return tmp;
 });

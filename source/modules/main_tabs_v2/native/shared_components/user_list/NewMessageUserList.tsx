@@ -1,10 +1,10 @@
-// Module ID: 11439
-// Function ID: 88990
+// Module ID: 11402
+// Function ID: 88649
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 1348, 3767, 1849, 8857, 33, 4130, 689, 5045, 3969, 4320, 22, 8859, 1212, 4126, 8862, 8864, 9924, 11440, 2]
+// Dependencies: [57, 31, 27, 1348, 3768, 1850, 8745, 33, 4131, 689, 5046, 3970, 4321, 22, 8747, 1212, 4127, 8750, 8752, 9852, 11403, 2]
 // Exports: default
 
-// Module 11439 (_createForOfIteratorHelperLoose)
+// Module 11402 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -111,13 +111,13 @@ function matchGroupDMRecipients(trimmed, recipients) {
         let tmp22 = importDefault;
         let tmp23 = dependencyMap;
         let toLocaleLowerCaseResult = username.toLocaleLowerCase();
-        if (importDefault(5045)(trimmed, toLocaleLowerCaseResult)) {
+        if (importDefault(5046)(trimmed, toLocaleLowerCaseResult)) {
           let num3 = 1;
           return 1;
         } else {
           let tmp4 = importDefault;
           let tmp5 = dependencyMap;
-          let obj = importDefault(3969);
+          let obj = importDefault(3970);
           let globalName = obj.getGlobalName(user);
           let toLocaleLowerCaseResult1;
           if (null != globalName) {
@@ -126,7 +126,7 @@ function matchGroupDMRecipients(trimmed, recipients) {
           if (null != toLocaleLowerCaseResult1) {
             let tmp7 = importDefault;
             let tmp8 = dependencyMap;
-            if (importDefault(5045)(trimmed, toLocaleLowerCaseResult1)) {
+            if (importDefault(5046)(trimmed, toLocaleLowerCaseResult1)) {
               break;
             }
           }
@@ -147,7 +147,7 @@ function matchGroupDMRecipients(trimmed, recipients) {
             let tmp18 = nickname;
             let tmp19 = toLocaleLowerCaseResult1;
             let tmp20 = toLocaleLowerCaseResult2;
-            if (importDefault(5045)(trimmed, toLocaleLowerCaseResult2)) {
+            if (importDefault(5046)(trimmed, toLocaleLowerCaseResult2)) {
               let num = 1;
               return 1;
             }
@@ -165,12 +165,12 @@ function matchGroupDM(recipients, trimmed) {
   if ("" === trimmed) {
     return 0;
   } else {
-    const channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(recipients, closure_8, closure_7);
+    const channelName = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(recipients, closure_8, closure_7);
     const toLocaleLowerCaseResult = channelName.toLocaleLowerCase();
     let num2 = 3;
     if (!toLocaleLowerCaseResult.startsWith(trimmed)) {
       let num4 = 2;
-      if (!importDefault(5045)(trimmed, toLocaleLowerCaseResult)) {
+      if (!importDefault(5046)(trimmed, toLocaleLowerCaseResult)) {
         num4 = matchGroupDMRecipients(trimmed, recipients);
       }
       num2 = num4;

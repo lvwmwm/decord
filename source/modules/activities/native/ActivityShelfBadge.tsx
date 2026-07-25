@@ -1,10 +1,10 @@
-// Module ID: 11235
-// Function ID: 87547
+// Module ID: 11196
+// Function ID: 87192
 // Name: ActivityShelfBadge
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1273, 1881, 4126, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1273, 1882, 4127, 1212, 2]
 // Exports: default
 
-// Module 11235 (ActivityShelfBadge)
+// Module 11196 (ActivityShelfBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -33,7 +33,7 @@ export default function ActivityShelfBadge(arg0) {
   if (null == replacementStyles) {
     replacementStyles = tmp.badge;
   }
-  if (labelType === require(1881) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW) {
+  if (labelType === require(1882) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW) {
     let obj = {};
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
@@ -41,11 +41,11 @@ export default function ActivityShelfBadge(arg0) {
     obj = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
+    obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
     let tmp6 = <View variant="text-xs/semibold" style={tmp.badgeText} color="text-overlay-light" />;
   } else {
     tmp6 = null;
-    if (labelType === require(1881) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.UPDATED) {
+    if (labelType === require(1882) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.UPDATED) {
       obj = {};
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
@@ -53,7 +53,7 @@ export default function ActivityShelfBadge(arg0) {
       const obj1 = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" };
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj1.children = intl2.string(require(1212) /* getSystemLocale */.t["/qdhkk"]);
-      obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
+      obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
       tmp6 = <View />;
     }
   }

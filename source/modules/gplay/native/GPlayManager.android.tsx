@@ -1,10 +1,10 @@
-// Module ID: 7159
-// Function ID: 57795
+// Module ID: 6241
+// Function ID: 56182
 // Name: handleConnectionStateUpdated
-// Dependencies: [29, 5, 31, 27, 6659, 6660, 1194, 3782, 5619, 7119, 5620, 653, 4113, 1851, 33, 3, 686, 7160, 1193, 5622, 3712, 6668, 3791, 4451, 675, 4471, 1212, 7161, 1934, 4337, 6649, 2]
+// Dependencies: [29, 5, 31, 27, 6242, 6171, 1194, 3783, 5619, 6197, 5620, 653, 4114, 1852, 33, 3, 686, 6243, 1193, 5622, 3713, 6169, 3792, 4452, 675, 4472, 1212, 6245, 1935, 4338, 6269, 2]
 
-// Module 7159 (handleConnectionStateUpdated)
-import module_4337 from "module_4337";
+// Module 6241 (handleConnectionStateUpdated)
+import module_4338 from "module_4338";
 import closure_5 from "usePremiumPlanPurchasedStore";
 import "set";
 import get_ActivityIndicator from "getHeaderBackground";
@@ -33,9 +33,9 @@ function handleConnectionStateUpdated(connectionState) {
   connectionState = connectionState.connectionState;
   importDefault(686).dispatch({ type: "GPLAY_UPDATE_CONNECTION_STATE", connectionState });
   if (connectionState === constants.CONNECTED) {
-    const userCountry = require(7160) /* _createForOfIteratorHelperLoose */.loadUserCountry();
+    const userCountry = require(6243) /* _createForOfIteratorHelperLoose */.loadUserCountry();
     userCountry.finally(() => outer1_0(outer1_2[17]).loadSkus());
-    const obj2 = require(7160) /* _createForOfIteratorHelperLoose */;
+    const obj2 = require(6243) /* _createForOfIteratorHelperLoose */;
   }
 }
 function handlePurchaseStateUpdated(arg0) {

@@ -1,8 +1,8 @@
-// Module ID: 4576
-// Function ID: 40120
-// Dependencies: [3829, 2]
+// Module ID: 4577
+// Function ID: 40132
+// Dependencies: [3830, 2]
 
-// Module 4576
+// Module 4577
 const re0 = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
 let obj = {};
 obj = {

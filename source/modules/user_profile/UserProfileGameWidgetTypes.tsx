@@ -1,10 +1,10 @@
-// Module ID: 6857
-// Function ID: 54222
+// Module ID: 5632
+// Function ID: 48130
 // Name: items
-// Dependencies: [6, 7, 6856, 6858, 6859, 2]
+// Dependencies: [6, 7, 5631, 5633, 5634, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 6857 (items)
+// Module 5632 (items)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

@@ -1,9 +1,9 @@
-// Module ID: 1902
-// Function ID: 21355
+// Module ID: 1903
+// Function ID: 21366
 // Name: ChannelReader
-// Dependencies: [5, 6, 7, 3, 1882, 2]
+// Dependencies: [5, 6, 7, 3, 1883, 2]
 
-// Module 1902 (ChannelReader)
+// Module 1903 (ChannelReader)
 import set from "set";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
@@ -21,8 +21,8 @@ const tmp4 = (() => {
     key: "getSync",
     value(arg0, arg1) {
       const nowResult = performance.now();
-      const obj = callback(1882);
-      const manySyncUnsafe = callback(1882).channels(arg0).getManySyncUnsafe(arg1);
+      const obj = callback(1883);
+      const manySyncUnsafe = callback(1883).channels(arg0).getManySyncUnsafe(arg1);
       const diff = performance.now() - nowResult;
       outer1_5.log("synchronously loaded in " + diff + "ms (guild: " + arg1 + ", channels: " + manySyncUnsafe.length + ")");
       const items = [manySyncUnsafe, diff];

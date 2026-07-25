@@ -1,10 +1,10 @@
-// Module ID: 4026
-// Function ID: 33512
+// Module ID: 4027
+// Function ID: 33523
 // Name: _fetchAppliedGuildBoostsForGuild
-// Dependencies: [5, 4027, 4028, 3782, 653, 507, 686, 4029, 2]
+// Dependencies: [5, 4028, 4029, 3783, 653, 507, 686, 4030, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 4026 (_fetchAppliedGuildBoostsForGuild)
+// Module 4027 (_fetchAppliedGuildBoostsForGuild)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

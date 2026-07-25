@@ -1,10 +1,10 @@
-// Module ID: 14026
-// Function ID: 107307
+// Module ID: 14037
+// Function ID: 107434
 // Name: useBadBundleFilter
-// Dependencies: [31, 1849, 6790, 624, 3776, 8754, 6786, 6785, 2]
+// Dependencies: [31, 1850, 5786, 624, 3777, 8642, 5782, 5781, 2]
 // Exports: useBadBundleFilter
 
-// Module 14026 (useBadBundleFilter)
+// Module 14037 (useBadBundleFilter)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 
@@ -15,7 +15,7 @@ export const useBadBundleFilter = function useBadBundleFilter() {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_4.getCurrentUser());
   let obj = require(624) /* defaultAreStatesEqual */;
-  const canUseShopDiscountsResult = importDefault(3776).canUseShopDiscounts(stateFromStores);
+  const canUseShopDiscountsResult = importDefault(3777).canUseShopDiscounts(stateFromStores);
   require = canUseShopDiscountsResult;
   const items1 = [canUseShopDiscountsResult];
   return useCallback((arr) => {

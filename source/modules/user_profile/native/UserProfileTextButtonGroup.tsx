@@ -1,10 +1,10 @@
-// Module ID: 11943
-// Function ID: 92430
+// Module ID: 11919
+// Function ID: 92235
 // Name: UserProfileTextButtonGroup
-// Dependencies: [31, 27, 5510, 33, 4130, 1450, 2]
+// Dependencies: [31, 27, 5510, 33, 4131, 1450, 2]
 // Exports: default
 
-// Module 11943 (UserProfileTextButtonGroup)
+// Module 11919 (UserProfileTextButtonGroup)
 import "result";
 import { View } from "get ActivityIndicator";
 import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";

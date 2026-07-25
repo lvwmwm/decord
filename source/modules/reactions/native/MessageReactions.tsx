@@ -1,10 +1,10 @@
-// Module ID: 9463
-// Function ID: 73559
+// Module ID: 9383
+// Function ID: 73145
 // Name: MessageReactions
-// Dependencies: [31, 4349, 33, 566, 5462, 5482, 9464, 2]
+// Dependencies: [31, 4350, 33, 566, 5462, 5482, 9384, 2]
 // Exports: default
 
-// Module 9463 (MessageReactions)
+// Module 9383 (MessageReactions)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -75,9 +75,9 @@ export default function MessageReactions(emoji) {
   if (items.length > 0) {
     obj = { channelId, messageId, emoji: emoji.emoji, reactions: items, isSelectedBurst };
     let merged1 = Object.assign(merged);
-    let tmp11 = jsx(items(9464).MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: items, isSelectedBurst });
+    let tmp11 = jsx(items(9384).MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: items, isSelectedBurst });
   } else {
-    tmp11 = jsx(items(9464).MessageReactionsEmpty, {});
+    tmp11 = jsx(items(9384).MessageReactionsEmpty, {});
   }
   obj.children = tmp11;
   return jsx(items(5462).AnalyticsLocationProvider, { value: importDefault(5462)(importDefault(5482).MESSAGE_REACTIONS).analyticsLocations });

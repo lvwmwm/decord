@@ -1,10 +1,10 @@
-// Module ID: 4184
-// Function ID: 36019
+// Module ID: 4185
+// Function ID: 36030
 // Name: result
 // Dependencies: [664, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE
 
-// Module 4184 (result)
+// Module 4185 (result)
 import importDefaultResult from "timestamp";
 
 const obj = {};

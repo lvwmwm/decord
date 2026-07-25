@@ -1,10 +1,10 @@
-// Module ID: 15749
-// Function ID: 121412
+// Module ID: 15760
+// Function ID: 121581
 // Name: OrientationLockState
-// Dependencies: [4155, 10256, 9923, 2]
+// Dependencies: [4156, 5660, 9851, 2]
 // Exports: default
 
-// Module 15749 (OrientationLockState)
+// Module 15760 (OrientationLockState)
 import { OrientationLockState } from "items3";
 import { LANDSCAPE_ACTIVITY_ASPECT_RATIO } from "ActivityPanelModes";
 
@@ -18,7 +18,7 @@ const fn = function t(isLandscape) {
   }
   if (pipOrientationLockState === OrientationLockState.PORTRAIT) {
     const result = pipWidth * LANDSCAPE_ACTIVITY_ASPECT_RATIO;
-    let num4 = -1 * importDefault(9923)(result / 2);
+    let num4 = -1 * importDefault(9851)(result / 2);
     let flag = false;
     let flag2 = true;
     let num3 = 0;
@@ -26,7 +26,7 @@ const fn = function t(isLandscape) {
     pipHeight = result;
   } else {
     result1 = pipHeight * LANDSCAPE_ACTIVITY_ASPECT_RATIO;
-    num3 = -1 * importDefault(9923)(result1 / 2);
+    num3 = -1 * importDefault(9851)(result1 / 2);
     flag = true;
     flag2 = false;
     num4 = 0;

@@ -1,10 +1,10 @@
-// Module ID: 10911
-// Function ID: 84814
+// Module ID: 10861
+// Function ID: 84404
 // Name: useAppLauncherChatInputRefDummy
-// Dependencies: [31, 3991, 8226, 10912, 2]
+// Dependencies: [31, 3992, 7955, 10862, 2]
 // Exports: useAppLauncherContext, useRequiredAppLauncherContext
 
-// Module 10911 (useAppLauncherChatInputRefDummy)
+// Module 10861 (useAppLauncherChatInputRefDummy)
 import importAllResult from "result";
 
 const require = arg1;
@@ -55,12 +55,12 @@ export const useRequiredAppLauncherContext = function useRequiredAppLauncherCont
 export const useAppLauncherContext = function useAppLauncherContext() {
   const _require = sharedValue.useRef(sharedValue1.DISMISSED);
   const dependencyMap = sharedValue.useRef(undefined);
-  sharedValue = _require(3991).useSharedValue(-1);
-  const obj = _require(3991);
-  sharedValue1 = _require(3991).useSharedValue(0);
-  const TEXT = _require(8226).AppLauncherEntrypoint.TEXT;
-  const obj2 = _require(3991);
-  const defaultAppLauncherWidth = _require(10912).useDefaultAppLauncherWidth(TEXT);
+  sharedValue = _require(3992).useSharedValue(-1);
+  const obj = _require(3992);
+  sharedValue1 = _require(3992).useSharedValue(0);
+  const TEXT = _require(7955).AppLauncherEntrypoint.TEXT;
+  const obj2 = _require(3992);
+  const defaultAppLauncherWidth = _require(10862).useDefaultAppLauncherWidth(TEXT);
   const tmp4 = defaultAppLauncherWidth({ noop: false });
   let closure_6 = tmp4;
   const items = [defaultAppLauncherWidth, TEXT, tmp4, sharedValue, sharedValue1];

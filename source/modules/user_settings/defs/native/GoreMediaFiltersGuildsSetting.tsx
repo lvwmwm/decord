@@ -1,9 +1,9 @@
-// Module ID: 13787
-// Function ID: 105687
+// Module ID: 13798
+// Function ID: 105814
 // Name: getTitle
-// Dependencies: [7751, 7705, 13778, 13774, 6834, 5678, 13775, 1212, 1282, 10127, 2]
+// Dependencies: [7697, 7649, 13789, 13785, 5834, 5855, 13786, 1212, 1282, 10059, 2]
 
-// Module 13787 (getTitle)
+// Module 13798 (getTitle)
 import createToggle from "createToggle";
 
 function getTitle() {
@@ -14,11 +14,11 @@ const pressable = createToggle.createPressable({
   useTitle: getTitle,
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentGuildsSettingValue() {
-    const obj = require(13774) /* useExplicitContentSettingOrDefault */;
-    return require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
+    const obj = require(13785) /* useExplicitContentSettingOrDefault */;
+    return require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
   },
   onPress: function onGoreContentGuildsOnPress() {
-    let obj = require(5678) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5855) /* resolveGoreSettingWithDefaults */;
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t["16/3Bi"]);
@@ -31,11 +31,11 @@ const pressable = createToggle.createPressable({
     const items = [require(1282) /* _callSuper */.ExplicitContentRedaction.BLOCK];
     obj.excluded = items;
     obj.currentValue = obj.getGoreContentSettingOrDefault().goreContentGuilds;
-    const result = require(13775) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13786) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useIsDisabled() {
-    let userIsTeen = require(7705) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(7705) /* useUserIsTeen */;
+    let userIsTeen = require(7649) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(7649) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }
@@ -55,11 +55,11 @@ let obj = {
   useTitle: getTitle,
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentGuildsSettingValue() {
-    const obj = require(13774) /* useExplicitContentSettingOrDefault */;
-    return require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
+    const obj = require(13785) /* useExplicitContentSettingOrDefault */;
+    return require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
   },
   onPress: function onGoreContentGuildsOnPress() {
-    let obj = require(5678) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5855) /* resolveGoreSettingWithDefaults */;
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t["16/3Bi"]);
@@ -72,11 +72,11 @@ let obj = {
     const items = [require(1282) /* _callSuper */.ExplicitContentRedaction.BLOCK];
     obj.excluded = items;
     obj.currentValue = obj.getGoreContentSettingOrDefault().goreContentGuilds;
-    const result = require(13775) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13786) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useIsDisabled() {
-    let userIsTeen = require(7705) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(7705) /* useUserIsTeen */;
+    let userIsTeen = require(7649) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(7649) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }

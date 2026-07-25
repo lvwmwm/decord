@@ -1,10 +1,10 @@
-// Module ID: 13456
-// Function ID: 103399
+// Module ID: 13467
+// Function ID: 103526
 // Name: createRPCCommand
-// Dependencies: [13457, 13458, 2]
+// Dependencies: [13468, 13469, 2]
 // Exports: createRPCCommand
 
-// Module 13456 (createRPCCommand)
+// Module 13467 (createRPCCommand)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rpc-schema/rpc-schema.tsx");
 
 export const createRPCCommand = function createRPCCommand(AUTHENTICATE, scope) {
@@ -12,7 +12,7 @@ export const createRPCCommand = function createRPCCommand(AUTHENTICATE, scope) {
   request = undefined;
   let dependencyMap;
   let obj = { scope: scope.scope, handler: scope.handler };
-  const tmp2 = request(13457).RPCCommandSchemas[AUTHENTICATE];
+  const tmp2 = request(13468).RPCCommandSchemas[AUTHENTICATE];
   if (null != tmp2) {
     request = tmp2.request;
   }

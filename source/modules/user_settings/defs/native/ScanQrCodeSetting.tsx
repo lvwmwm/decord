@@ -1,11 +1,11 @@
-// Module ID: 13933
-// Function ID: 106559
+// Module ID: 13944
+// Function ID: 106686
 // Name: pressable
-// Dependencies: [5, 4344, 22, 1553, 4675, 4337, 12927, 1934, 10127, 1212, 13836, 2]
+// Dependencies: [5, 4345, 22, 1553, 4676, 4338, 12938, 1935, 10059, 1212, 13847, 2]
 
-// Module 13933 (pressable)
+// Module 13944 (pressable)
 import { NativePermissionTypes } from "NativePermissionStatus";
-import importDefaultResult from "module_4337";
+import importDefaultResult from "module_4338";
 import createToggle from "createToggle";
 import debounceResult from "apply";
 

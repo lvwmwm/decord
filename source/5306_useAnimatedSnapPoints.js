@@ -1,5 +1,5 @@
 // Module ID: 5306
-// Function ID: 45808
+// Function ID: 45813
 // Name: useAnimatedSnapPoints
 // Dependencies: [1582, 5193, 5206]
 

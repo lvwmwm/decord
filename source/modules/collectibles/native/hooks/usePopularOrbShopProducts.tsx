@@ -1,10 +1,10 @@
-// Module ID: 14017
-// Function ID: 107202
+// Module ID: 14028
+// Function ID: 107329
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 14018, 1849, 6774, 6776, 655, 664, 6785, 566, 3776, 14019, 658, 14020, 14021, 659, 11877, 14022, 8725, 14023, 14025, 2]
+// Dependencies: [5, 57, 31, 14029, 1850, 5770, 5772, 655, 664, 5781, 566, 3777, 14030, 658, 14031, 14032, 659, 11853, 14033, 8613, 14034, 14036, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 14017 (_createForOfIteratorHelperLoose)
+// Module 14028 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -96,7 +96,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function withStorefrontPrices(product, arr, hasShopDiscount) {
   const _require = product;
-  let obj = _require(6785);
+  let obj = _require(5781);
   obj = { product, hasShopDiscount };
   if (null != obj.getProductOrbPrice(obj)) {
     return product;
@@ -180,13 +180,13 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
   const stateFromStores = enabled(566).useStateFromStores(items, () => POPULARITY.getCurrentUser());
   const obj2 = enabled(566);
   const tmp8 = first;
-  const canUseShopDiscountsResult = first(3776).canUseShopDiscounts(stateFromStores);
-  if (enabled(14019).BountiesShopCarouselExperimentVariation.POPULARITY === variation) {
+  const canUseShopDiscountsResult = first(3777).canUseShopDiscounts(stateFromStores);
+  if (enabled(14030).BountiesShopCarouselExperimentVariation.POPULARITY === variation) {
     POPULARITY = enabled(658).CollectibleSearchSortType.POPULARITY;
-  } else if (enabled(14019).BountiesShopCarouselExperimentVariation.RECENCY === variation) {
+  } else if (enabled(14030).BountiesShopCarouselExperimentVariation.RECENCY === variation) {
     POPULARITY = enabled(658).CollectibleSearchSortType.RECENCY;
   } else {
-    const BASE = enabled(14019).BountiesShopCarouselExperimentVariation.BASE;
+    const BASE = enabled(14030).BountiesShopCarouselExperimentVariation.BASE;
     POPULARITY = enabled(658).CollectibleSearchSortType.POPULARITY;
   }
   const items1 = [enabled, POPULARITY];
@@ -222,25 +222,25 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
     }
     callback2(false);
   }, items2);
-  let tmp5Result = tmp5(11877);
+  let tmp5Result = tmp5(11853);
   let fetchCollectiblesProducts = tmp5Result.useFetchCollectiblesProducts(first);
   const items3 = [first];
   const effect2 = obj.useEffect(() => {
     if (0 !== first.length) {
-      let obj = enabled(14022);
+      let obj = enabled(14033);
       obj = { skuIds: first };
       const result = obj.maybeFetchProductsBySkuIds(obj);
     }
   }, items3);
-  tmp5Result = tmp5(8725);
+  tmp5Result = tmp5(8613);
   const getOrFetchStorefrontPricesForSkuIds = tmp5Result.useGetOrFetchStorefrontPricesForSkuIds({ skuIds: first });
-  const obj3 = first(3776);
+  const obj3 = first(3777);
   const items4 = [canUseShopDiscountsResult];
   const stateFromStoresArray = enabled(566).useStateFromStoresArray(items4, () => first.map((arg0) => canUseShopDiscountsResult.getProductsForSku(arg0)));
   const tmp5Result1 = enabled(566);
   const items5 = [canUseShopDiscountsResult];
   const stateFromStoresArray1 = enabled(566).useStateFromStoresArray(items5, () => first.map((arg0) => canUseShopDiscountsResult.getFetchStateForSku(arg0)));
-  const tmp23 = tmp8(14023)();
+  const tmp23 = tmp8(14034)();
   const constants = tmp23;
   const items6 = [tmp23, first, stateFromStoresArray, canUseShopDiscountsResult];
   const memo = obj.useMemo(() => tmp23(first).map((arg0, arg1) => outer2_15(arg0, outer1_8[arg1], outer1_6)), items6);
@@ -270,7 +270,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
   }), items8);
   const tmp5Result2 = enabled(566);
   obj = { products: memo2, screen: constants.ORBS };
-  const filteredAndSortedProducts = enabled(14025).useFilteredAndSortedProducts(obj);
+  const filteredAndSortedProducts = enabled(14036).useFilteredAndSortedProducts(obj);
   const items9 = [filteredAndSortedProducts];
   const memo3 = obj.useMemo(() => filteredAndSortedProducts.slice(0, 10), items9);
   if (!fetchCollectiblesProducts) {

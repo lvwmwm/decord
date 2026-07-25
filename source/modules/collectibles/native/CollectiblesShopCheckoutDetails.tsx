@@ -1,10 +1,10 @@
-// Module ID: 11840
-// Function ID: 91878
+// Module ID: 11816
+// Function ID: 91683
 // Name: ProfileEffectAssetPreview
-// Dependencies: [31, 27, 655, 8244, 33, 4130, 689, 8269, 5085, 11841, 8285, 8738, 8251, 8277, 8259, 1873, 8273, 1876, 656, 8758, 8757, 8270, 1212, 4126, 6785, 8760, 11842, 8708, 3776, 8770, 2]
+// Dependencies: [31, 27, 655, 7977, 33, 4131, 689, 8004, 5085, 11817, 8020, 8626, 7984, 8012, 7994, 1874, 8008, 1877, 656, 8646, 8645, 8005, 1212, 4127, 5781, 8648, 11818, 8596, 3777, 8658, 2]
 // Exports: default
 
-// Module 11840 (ProfileEffectAssetPreview)
+// Module 11816 (ProfileEffectAssetPreview)
 import result from "result";
 import { View } from "useCurrentUser";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
@@ -20,12 +20,12 @@ let closure_8;
 let require = arg1;
 function ProfileEffectAssetPreview(item) {
   const tmp = callback4();
-  const tmp2 = importDefault(8269)(item.item.skuId);
+  const tmp2 = importDefault(8004)(item.item.skuId);
   let tmp3 = null;
   if (null != tmp2) {
     let obj = { style: tmp.profileEffectContainer };
     obj = {};
-    obj = { uri: importDefault(11841) };
+    obj = { uri: importDefault(11817) };
     obj.source = obj;
     obj.alt = tmp2.accessibilityLabel;
     obj.style = tmp.profileEffect;
@@ -48,12 +48,12 @@ function ProfileFrameAssetPreview(arg0) {
   let item;
   let width;
   ({ item, width, height } = arg0);
-  const tmp = importDefault(8285)(item.skuId, "CollectiblesShopCheckoutDetails");
+  const tmp = importDefault(8020)(item.skuId, "CollectiblesShopCheckoutDetails");
   let tmp2 = null;
   if (null != tmp) {
     const obj = { profileFrame: tmp, previewWidth: width, previewHeight: height, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-    tmp2 = callback(importDefault(8738), obj);
-    const tmp6 = importDefault(8738);
+    tmp2 = callback(importDefault(8626), obj);
+    const tmp6 = importDefault(8626);
   }
   return tmp2;
 }
@@ -69,10 +69,10 @@ function BundleAssetPreview(height) {
   let c5;
   const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = width(8251);
+  let obj = width(7984);
   const shopProductItems = obj.useShopProductItems(product);
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
-  let obj1 = width(8277);
+  let obj1 = width(8012);
   const bundleWidth = BUNDLE_PREVIEW_CONFIG.small.bundleWidth;
   rounded = bundleWidth;
   if (!obj1.useCollectiblesMobileFlexibleBundlesExperiment("CollectiblesShopCheckoutDetails").enabled) {
@@ -100,21 +100,21 @@ function BundleAssetPreview(height) {
   obj = { style: memo1 };
   const memo2 = bundleWidth.useMemo(() => ({ width, height }), items2);
   obj1 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2, exposureLocation: "CollectiblesShopCheckoutDetails" };
-  obj.children = callback(height(8259), obj1);
+  obj.children = callback(height(7994), obj1);
   obj.children = callback(rounded, obj);
   return callback(rounded, obj);
 }
 function NameplateAssetPreview(item) {
-  let obj = require(1873) /* getNameplateData */;
+  let obj = require(1874) /* getNameplateData */;
   const nameplateData = obj.getNameplateData(item.item);
   obj = { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true, style: _createForOfIteratorHelperLoose().nameplate };
-  return callback(importDefault(8273), obj);
+  return callback(importDefault(8008), obj);
 }
 function CollectibleProductPreview(arg0) {
   let product;
   let recipientUser;
   ({ product, recipientUser } = arg0);
-  if (product.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
+  if (product.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
     let num = 42;
   } else {
     num = 55;
@@ -137,29 +137,29 @@ function CollectibleProductPreviewContent(userAvatarSource) {
   ({ product, width, height } = userAvatarSource);
   const ALL = require(656) /* set */.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(product.skuId)) {
-    let obj = { skuId: product.skuId, width: require(8758) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: require(8758) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-    return callback(require(8758) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj);
+    let obj = { skuId: product.skuId, width: require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
+    return callback(require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     obj = {};
-    const obj1 = { uri: importDefault(8757) };
+    const obj1 = { uri: importDefault(8645) };
     obj.source = obj1;
     obj.style = tmp.externalProductImage;
     return callback(importDefault(5085), obj);
   } else {
     const type = product.type;
-    if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+    if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj2 = { item: product.items[0], size: width, avatarSource: userAvatarSource.userAvatarSource, animate: false };
-      return callback(importDefault(8270), obj2);
-    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+      return callback(importDefault(8005), obj2);
+    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj3 = { item: product.items[0] };
       return callback(ProfileEffectAssetPreview, obj3);
-    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
       const obj4 = { item: product.items[0] };
       return callback(NameplateAssetPreview, obj4);
-    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
+    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
       const obj5 = { item: product.items[0], width, height };
       return callback(ProfileFrameAssetPreview, obj5);
-    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE === type) {
+    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE === type) {
       obj = { product, width, height };
       return callback(BundleAssetPreview, obj);
     } else {
@@ -207,7 +207,7 @@ function ProductDetails(product) {
   if (null == memo) {
     let obj = { style: tmp.productDetails };
     obj = { variant: "text-md/semibold", children: product.name };
-    obj.children = callback(require(4126) /* Text */.Text, obj);
+    obj.children = callback(require(4127) /* Text */.Text, obj);
     let tmp8 = callback(View, obj);
   } else {
     obj = { style: tmp.productDetails };
@@ -215,9 +215,9 @@ function ProductDetails(product) {
     const items1 = [callback(CollectibleProductPreview, obj1), ];
     const obj2 = { style: tmp.productDetailsTextContainer };
     const obj3 = { variant: "text-md/semibold", children: product.name };
-    const items2 = [callback(require(4126) /* Text */.Text, obj3), ];
+    const items2 = [callback(require(4127) /* Text */.Text, obj3), ];
     const obj4 = { variant: "text-sm/medium", children: memo };
-    items2[1] = callback(require(4126) /* Text */.Text, obj4);
+    items2[1] = callback(require(4127) /* Text */.Text, obj4);
     obj2.children = items2;
     items1[1] = callback2(View, obj2);
     obj.children = items1;
@@ -316,9 +316,9 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
   }
   let dependencyMap;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8708) /* useCurrentUser */;
+  let obj = require(8596) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = flag2(3776);
+  let obj1 = flag2(3777);
   const canUseShopDiscountsResult = obj1.canUseShopDiscounts(currentUser);
   dependencyMap = canUseShopDiscountsResult;
   const items = [product, flag2, canUseShopDiscountsResult];
@@ -373,7 +373,7 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
     const obj3 = { variant: "text-xs/semibold", color: "text-feedback-critical" };
     let intl = require(1212) /* getSystemLocale */.intl;
     obj3.children = intl.string(require(1212) /* getSystemLocale */.t["3YfczA"]);
-    obj2.children = callback(require(4126) /* Text */.Text, obj3);
+    obj2.children = callback(require(4127) /* Text */.Text, obj3);
     flag3 = callback(View, obj2);
   }
   items3[1] = flag3;

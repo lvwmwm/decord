@@ -1,10 +1,10 @@
-// Module ID: 11777
-// Function ID: 91482
+// Module ID: 11747
+// Function ID: 91232
 // Name: AcceptInviteContainer
-// Dependencies: [5, 31, 1917, 1838, 4115, 3746, 33, 4130, 689, 1456, 566, 5087, 1360, 5053, 1934, 6977, 8409, 5691, 7540, 9384, 11778, 5121, 3842, 2]
+// Dependencies: [5, 31, 1918, 1838, 4116, 3747, 33, 4131, 689, 1456, 566, 5087, 1360, 5054, 1935, 5968, 8167, 11748, 6636, 9290, 11754, 5121, 3843, 2]
 // Exports: default
 
-// Module 11777 (AcceptInviteContainer)
+// Module 11747 (AcceptInviteContainer)
 import GuildMemberFlags from "GuildMemberFlags";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

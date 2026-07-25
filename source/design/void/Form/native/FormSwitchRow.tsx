@@ -1,10 +1,10 @@
-// Module ID: 7651
-// Function ID: 60843
+// Module ID: 7593
+// Function ID: 60767
 // Name: FormSwitchRow
-// Dependencies: [57, 31, 27, 33, 4130, 477, 5158, 5177, 7649, 5164, 5502, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 477, 5157, 5177, 7591, 5163, 5502, 2]
 // Exports: default
 
-// Module 7651 (FormSwitchRow)
+// Module 7593 (FormSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -106,7 +106,7 @@ let closure_8 = _createForOfIteratorHelperLoose.createStyles({ trailing: { flex:
 const result = require("get ActivityIndicator").fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
 
 export default function FormSwitchRowContainer(DEPRECATED_style) {
-  if (React.useContext(require(5164) /* context */.RedesignCompatContext)) {
+  if (React.useContext(require(5163) /* context */.RedesignCompatContext)) {
     let obj = { style: DEPRECATED_style.DEPRECATED_style };
     obj = {};
     ({ value: obj3.value, onValueChange: obj3.onValueChange } = DEPRECATED_style);

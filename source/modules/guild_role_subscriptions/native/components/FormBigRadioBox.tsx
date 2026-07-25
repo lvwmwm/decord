@@ -1,10 +1,10 @@
-// Module ID: 16468
-// Function ID: 128288
+// Module ID: 16479
+// Function ID: 128456
 // Name: FormBigRadioBox
-// Dependencies: [31, 27, 33, 4130, 689, 3848, 8518, 1273, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3849, 8278, 1273, 4127, 2]
 // Exports: default
 
-// Module 16468 (FormBigRadioBox)
+// Module 16479 (FormBigRadioBox)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -45,7 +45,7 @@ export default function FormBigRadioBox(arg0) {
     disabled = false;
   }
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3848) /* useCheckboxA11yNative */;
+  let obj = require(3849) /* useCheckboxA11yNative */;
   obj = { selected, disabled };
   const radioA11yNative = obj.useRadioA11yNative(obj);
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
@@ -82,9 +82,9 @@ export default function FormBigRadioBox(arg0) {
   obj2.children = callback(require(1273) /* Button */.Icon, { source: icon });
   items1[1] = callback(View, obj2);
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title };
-  items1[2] = callback(require(4126) /* Text */.Text, obj3);
+  items1[2] = callback(require(4127) /* Text */.Text, obj3);
   const obj4 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
-  items1[3] = callback(require(4126) /* Text */.Text, obj4);
+  items1[3] = callback(require(4127) /* Text */.Text, obj4);
   obj.children = items1;
-  return closure_5(importDefault(8518), obj);
+  return closure_5(importDefault(8278), obj);
 };

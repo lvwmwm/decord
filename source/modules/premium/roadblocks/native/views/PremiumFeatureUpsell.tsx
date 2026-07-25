@@ -1,10 +1,10 @@
-// Module ID: 9416
-// Function ID: 73372
+// Module ID: 9336
+// Function ID: 72958
 // Name: getPremiumUpsellType
-// Dependencies: [31, 27, 1851, 653, 6671, 33, 8038, 3776, 1212, 4130, 689, 8028, 8044, 8036, 8045, 1273, 9417, 9418, 4126, 4554, 668, 4542, 4546, 5462, 9419, 8321, 3991, 675, 8614, 2]
+// Dependencies: [31, 27, 1852, 653, 6173, 33, 6147, 3777, 1212, 4131, 689, 6137, 6155, 6145, 6156, 1273, 9337, 9338, 4127, 4555, 668, 4543, 4547, 5462, 9339, 8056, 3992, 675, 8374, 2]
 // Exports: default
 
-// Module 9416 (getPremiumUpsellType)
+// Module 9336 (getPremiumUpsellType)
 import result from "result";
 import get_ActivityIndicator from "expandLocation";
 import GuildFeatures from "GuildFeatures";
@@ -24,15 +24,15 @@ let closure_8;
 let closure_9;
 const require = arg1;
 function getPremiumUpsellType(arg0) {
-  if (require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === arg0) {
+  if (require(6147) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === arg0) {
     return constants.SOUNDBOARD_EVERYWHERE_INLINE_UPSELL;
-  } else if (require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.EMOJIS_EVERYWHERE === arg0) {
+  } else if (require(6147) /* EntitlementFeatureNames */.EntitlementFeatureNames.EMOJIS_EVERYWHERE === arg0) {
     return constants.EMOJI_EVERYWHERE_INLINE_UPSELL;
-  } else if (require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === arg0) {
+  } else if (require(6147) /* EntitlementFeatureNames */.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === arg0) {
     return constants.LARGER_FILE_UPLOAD_INLINE_UPSELL;
-  } else if (require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.APP_ICONS === arg0) {
+  } else if (require(6147) /* EntitlementFeatureNames */.EntitlementFeatureNames.APP_ICONS === arg0) {
     return constants.APP_ICON_INLINE_UPSELL;
-  } else if (require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.STREAM_HIGH_QUALITY === arg0) {
+  } else if (require(6147) /* EntitlementFeatureNames */.EntitlementFeatureNames.STREAM_HIGH_QUALITY === arg0) {
     return constants.STREAM_QUALITY_UPSELL;
   }
 }
@@ -45,42 +45,42 @@ function PremiumFeatureUpsellPill(featureName) {
   let useTier0UpsellContent;
   let dependencyMap;
   let loading;
-  let obj = featureName(8028);
-  let obj1 = featureName(8044);
+  let obj = featureName(6137);
+  let obj1 = featureName(6155);
   const premiumUpsellConfig = obj.usePremiumUpsellConfig(obj1.getUpsellType(featureName));
   useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
   const tmp2 = callback2(useTier0UpsellContent);
   dependencyMap = tmp2;
   const tmp4 = useTier0UpsellContent ? closure_7.TIER_0 : closure_7.TIER_2;
   const fn = () => useTier0UpsellContent(_undefined[13])(featureName);
-  let obj2 = featureName(3776);
+  let obj2 = featureName(3777);
   const premiumTypeDisplayName = obj2.getPremiumTypeDisplayName(tmp4);
-  if (featureName(8038).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
+  if (featureName(6147).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
     const intl4 = featureName(1212).intl;
     obj = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     let formatResult = intl4.format(featureName(1212).t["tw/SSq"], obj);
-  } else if (featureName(8038).EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
+  } else if (featureName(6147).EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
     const intl3 = featureName(1212).intl;
     obj = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     formatResult = intl3.format(featureName(1212).t.gMVjeS, obj);
-  } else if (featureName(8038).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
+  } else if (featureName(6147).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
     const intl2 = featureName(1212).intl;
     obj1 = {};
-    let obj5 = featureName(3776);
+    let obj5 = featureName(3777);
     obj1.maxFileSize = obj5.getMaxFileSizeForPremiumType(tmp4);
     obj1.nitroTierName = premiumTypeDisplayName;
     obj1.onClick = fn;
     formatResult = intl2.format(featureName(1212).t.zzyLEK, obj1);
-  } else if (featureName(8038).EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
+  } else if (featureName(6147).EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
     const intl = featureName(1212).intl;
     obj2 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     formatResult = intl.format(featureName(1212).t.lyxfbj, obj2);
-  } else if (featureName(8038).EntitlementFeatureNames.APP_ICONS === featureName) {
+  } else if (featureName(6147).EntitlementFeatureNames.APP_ICONS === featureName) {
     const intl6 = featureName(1212).intl;
     const obj3 = { onClick: fn };
     formatResult = intl6.format(featureName(1212).t.x2dQxN, obj3);
   }
-  const tmp17 = useTier0UpsellContent(8045)(useTier0UpsellContent, premiumUpsellConfig.onViewAllPerks, constants2.PREMIUM_UPSELL_FILE_UPLOAD);
+  const tmp17 = useTier0UpsellContent(6156)(useTier0UpsellContent, premiumUpsellConfig.onViewAllPerks, constants2.PREMIUM_UPSELL_FILE_UPLOAD);
   loading = tmp17.loading;
   const obj4 = {};
   let items = [tmp2.container, , ];
@@ -93,16 +93,16 @@ function PremiumFeatureUpsellPill(featureName) {
   obj5 = { style: tmp2.labelContainer };
   const obj6 = {};
   if (useTier0UpsellContent) {
-    let tmp25 = 9417;
+    let tmp25 = 9337;
   } else {
-    tmp25 = 9418;
+    tmp25 = 9338;
   }
   obj6.source = useTier0UpsellContent(tmp25);
   obj6.style = tmp2.nitroWheel;
   obj6.disableColor = true;
   const items1 = [callback(featureName(1273).Icon, obj6), ];
   const obj7 = { style: tmp2.text, variant: "text-sm/medium", children: formatResult };
-  items1[1] = callback(featureName(4126).Text, obj7);
+  items1[1] = callback(featureName(4127).Text, obj7);
   obj5.children = items1;
   const items2 = [closure_13(closure_5, obj5), ];
   const obj8 = { disabled: loading, shrink: true, style: tmp2.button, size: featureName(1273).ButtonSizes.XSMALL, onPress: tmp17.onPress };
@@ -178,7 +178,7 @@ let closure_17 = (() => {
     obj.opacity = outer1_0(outer1_2[21]).withSpring(value, outer1_0(outer1_2[22]).springStandard, "respect-motion-settings", fn);
     return obj;
   }
-  animationEnterExit.__closure = { withSpring: require(4542) /* withSpring */.withSpring, springStandard: require(4546) /* SUBTLE_SPRING */.springStandard };
+  animationEnterExit.__closure = { withSpring: require(4543) /* withSpring */.withSpring, springStandard: require(4547) /* SUBTLE_SPRING */.springStandard };
   animationEnterExit.__workletHash = 15470414797897;
   animationEnterExit.__initData = closure_15;
   return animationEnterExit;

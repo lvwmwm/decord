@@ -1,9 +1,9 @@
-// Module ID: 13674
-// Function ID: 104981
+// Module ID: 13685
+// Function ID: 105108
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1881, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1882, 566, 686, 2]
 
-// Module 13674 (_isNativeReflectConstruct)
+// Module 13685 (_isNativeReflectConstruct)
 import initialize from "initialize";
 import dispatcher from "dispatcher";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -95,7 +95,7 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   AUTHENTICATOR_CREATE: function handleAuthenticatorCreate(credential) {
     credential = credential.credential;
-    if (credential.type === credential(1881).AuthenticatorType.WEBAUTHN) {
+    if (credential.type === credential(1882).AuthenticatorType.WEBAUTHN) {
       const tmp2 = undefined === items.find((id) => id.id === credential.id);
       if (tmp2) {
         items = [];
@@ -112,7 +112,7 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   AUTHENTICATOR_UPDATE: function handleAuthenticatorUpdate(credential) {
     credential = credential.credential;
-    if (credential.type !== credential(1881).AuthenticatorType.WEBAUTHN) {
+    if (credential.type !== credential(1882).AuthenticatorType.WEBAUTHN) {
       const type = credential.type;
       return false;
     } else {
@@ -127,7 +127,7 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   AUTHENTICATOR_DELETE: function handleAuthenticatorDelete(credential) {
     credential = credential.credential;
-    if (credential.type !== credential(1881).AuthenticatorType.WEBAUTHN) {
+    if (credential.type !== credential(1882).AuthenticatorType.WEBAUTHN) {
       const type = credential.type;
       return false;
     } else {

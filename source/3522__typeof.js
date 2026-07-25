@@ -1,7 +1,7 @@
 // Module ID: 3522
-// Function ID: 27130
+// Function ID: 27122
 // Name: _typeof
-// Dependencies: [3517, 3515]
+// Dependencies: [3518, 3516]
 
 // Module 3522 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const QuarterParser = ((Parser) => {
-  class QuarterParser {
+export const ExtendedYearParser = ((Parser) => {
+  class ExtendedYearParser {
     constructor() {
-      if (this instanceof QuarterParser) {
+      if (this instanceof ExtendedYearParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -158,11 +158,11 @@ export const QuarterParser = ((Parser) => {
         applyResult = call.apply(TypeError, items.concat(array));
         tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 120;
-        tmp17 = outer1_8(applyResult, "priority", 120);
+        num2 = 130;
+        tmp17 = outer1_8(applyResult, "priority", 130);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["G", "y", "Y", "R", "w", "I", "i", "e", "c", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +177,9 @@ export const QuarterParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class QuarterParser {
+    class ExtendedYearParser {
       constructor() {
-        if (this instanceof QuarterParser) {
+        if (this instanceof ExtendedYearParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -201,11 +201,11 @@ export const QuarterParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 120;
-          tmp17 = outer1_8(applyResult, "priority", 120);
+          num2 = 130;
+          tmp17 = outer1_8(applyResult, "priority", 130);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["G", "y", "Y", "R", "w", "I", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +224,12 @@ export const QuarterParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: QuarterParser, writable: true, configurable: true };
-  QuarterParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: ExtendedYearParser, writable: true, configurable: true };
+  ExtendedYearParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class QuarterParser {
+    class ExtendedYearParser {
       constructor() {
-        if (this instanceof QuarterParser) {
+        if (this instanceof ExtendedYearParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -251,11 +251,11 @@ export const QuarterParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 120;
-          tmp17 = outer1_8(applyResult, "priority", 120);
+          num2 = 130;
+          tmp17 = outer1_8(applyResult, "priority", 130);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["G", "y", "Y", "R", "w", "I", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,49 +269,30 @@ export const QuarterParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(QuarterParser, Parser);
+    _setPrototypeOf(ExtendedYearParser, Parser);
   }
-  let closure_0 = _createSuper(QuarterParser);
+  let closure_0 = _createSuper(ExtendedYearParser);
   obj = {
     key: "parse",
-    value: function parse(arg0, arg1, ordinalNumber) {
-      if ("Q" !== arg1) {
-        if ("QQ" !== arg1) {
-          if ("Qo" === arg1) {
-            const obj = { unit: "quarter" };
-            return ordinalNumber.ordinalNumber(arg0, obj);
-          } else if ("QQQ" === arg1) {
-            return ordinalNumber.quarter(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "formatting" });
-          } else if ("QQQQQ" === arg1) {
-            return ordinalNumber.quarter(arg0, { width: "narrow", context: "formatting" });
-          } else {
-            return ordinalNumber.quarter(arg0, { width: "wide", context: "formatting" }) || ordinalNumber.quarter(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "formatting" });
-          }
-        }
+    value: function parse(arg0, arg1) {
+      if ("u" === arg1) {
+        let parseNDigitsSignedResult = callback(ExtendedYearParser[0]).parseNDigitsSigned(4, arg0);
+      } else {
+        parseNDigitsSignedResult = callback(ExtendedYearParser[0]).parseNDigitsSigned(arg1.length, arg0);
       }
-      return callback(QuarterParser[0]).parseNDigits(arg1.length, arg0);
+      return parseNDigitsSignedResult;
     }
   };
-  let items = [obj, , ];
+  let items = [obj, ];
   obj = {
-    key: "validate",
-    value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 1;
-      if (tmp) {
-        tmp = arg1 <= 4;
-      }
-      return tmp;
+    key: "set",
+    value: function set(setUTCFullYear) {
+      setUTCFullYear.setUTCFullYear(arg2, 0, 1);
+      setUTCFullYear.setUTCHours(0, 0, 0, 0);
+      return setUTCFullYear;
     }
   };
   items[1] = obj;
-  items[2] = {
-    key: "set",
-    value: function set(setUTCMonth) {
-      setUTCMonth.setUTCMonth(3 * (arg2 - 1), 1);
-      setUTCMonth.setUTCHours(0, 0, 0, 0);
-      return setUTCMonth;
-    }
-  };
-  _defineProperties(QuarterParser.prototype, items);
-  return QuarterParser;
+  _defineProperties(ExtendedYearParser.prototype, items);
+  return ExtendedYearParser;
 })(require("_defineProperties").Parser);

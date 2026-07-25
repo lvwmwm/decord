@@ -1,10 +1,10 @@
-// Module ID: 7628
-// Function ID: 60744
+// Module ID: 7568
+// Function ID: 60668
 // Name: useIsGoogleWalletEnabled
 // Dependencies: [1428, 2]
 // Exports: isGoogleWalletEnabled, useIsGoogleWalletEnabled
 
-// Module 7628 (useIsGoogleWalletEnabled)
+// Module 7568 (useIsGoogleWalletEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-03-age-verification-google-wallet", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

@@ -1,11 +1,11 @@
-// Module ID: 15847
-// Function ID: 122289
+// Module ID: 15858
+// Function ID: 122458
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 31, 27, 15848, 4144, 15849, 8876, 1348, 4145, 653, 33, 15851, 15824, 8875, 9095, 8973, 624, 9093, 8972, 15855, 477, 8900, 8877, 1212, 8897, 8899, 15856, 8974, 3946, 1334, 5515, 15764, 13097, 2]
+// Dependencies: [29, 31, 27, 15859, 4145, 15860, 8764, 1348, 4146, 653, 33, 15862, 15835, 8763, 8987, 8861, 624, 8985, 8860, 15866, 477, 8788, 8765, 1212, 8785, 8787, 15867, 8862, 3947, 1334, 5515, 15775, 13108, 2]
 
-// Module 15847 (_createForOfIteratorHelperLoose)
+// Module 15858 (_createForOfIteratorHelperLoose)
 import DismissibleContent from "DismissibleContent";
-import importAllResult from "module_15764";
+import importAllResult from "module_15775";
 import { NativeModules } from "onConnectToConsole";
 import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -106,7 +106,7 @@ let closure_18 = importAllResult.memo((arg0) => {
   let canShowTooltip;
   let targetRef;
   ({ targetRef, canShowTooltip } = arg0);
-  importDefault(15851)(targetRef, canShowTooltip);
+  importDefault(15862)(targetRef, canShowTooltip);
   return null;
 });
 const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConnectedToVoiceChannel) {

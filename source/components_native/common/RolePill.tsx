@@ -1,10 +1,10 @@
-// Module ID: 10214
-// Function ID: 78858
+// Module ID: 10146
+// Function ID: 78488
 // Name: RolePill
-// Dependencies: [31, 27, 653, 33, 4130, 689, 3803, 5486, 5490, 3830, 4660, 5506, 4126, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 3804, 5486, 5490, 3831, 4661, 5506, 4127, 2]
 // Exports: default
 
-// Module 10214 (RolePill)
+// Module 10146 (RolePill)
 import "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -36,7 +36,7 @@ export default function RolePill(role) {
   let guildId;
   role = role.role;
   ({ guildId, color } = role);
-  const DeveloperMode = role(3803).DeveloperMode;
+  const DeveloperMode = role(3804).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   let obj = role(5486);
   obj = { guildId, roleId: role.id, size: 12 };
@@ -111,8 +111,8 @@ export default function RolePill(role) {
   }
   items1[1] = tmp19;
   const obj7 = { variant: "text-xs/semibold", color: "interactive-text-active", children: name };
-  items1[2] = callback(role(4126).Text, obj7);
+  items1[2] = callback(role(4127).Text, obj7);
   obj1.children = items1;
   obj.children = closure_7(View, obj1);
-  return callback(role(4660).PressableHighlight, obj);
+  return callback(role(4661).PressableHighlight, obj);
 };

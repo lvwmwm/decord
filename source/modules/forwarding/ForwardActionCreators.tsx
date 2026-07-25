@@ -1,8 +1,8 @@
-// Module ID: 7085
-// Function ID: 56763
-// Dependencies: [57, 5, 1348, 3758, 653, 4123, 7086, 6923, 671, 6924, 1360, 6691, 7087, 4370, 2]
+// Module ID: 6103
+// Function ID: 54575
+// Dependencies: [57, 5, 1348, 3759, 653, 4124, 6104, 5914, 671, 5915, 1360, 5685, 6105, 4371, 2]
 
-// Module 7085
+// Module 6103
 import _slicedToArray from "_slicedToArray";
 import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ let obj = {
       const channel1 = outer2_5.getChannel(outer1_0.channel_id);
       if (null != outer1_2) {
         if (outer1_2.isICYMIGameContentForwarding) {
-          let guild_id = callback(7086).GAME_CONTENT_GUILD_ID;
+          let guild_id = callback(6104).GAME_CONTENT_GUILD_ID;
         }
         if (null == channel1) {
           if (null == guild_id) {
@@ -34,7 +34,7 @@ let obj = {
           const error1 = new Error("Unable to find destination channel for message");
           throw error1;
         } else {
-          const parsed = callback2(6923).parse(channel, "");
+          const parsed = callback2(5914).parse(channel, "");
           let obj = { guild_id };
           ({ channel_id: obj10.channel_id, id: obj10.message_id } = outer1_0);
           obj.type = callback(671).MessageReferenceTypes.FORWARD;
@@ -67,9 +67,9 @@ let obj = {
               num3 = obj1.addFlag(0, outer2_7.SUPPRESS_NOTIFICATIONS);
               tmp16 = tmp21;
             }
-            tmp20 = outer2_3(callback2(6924)(withMessage), 2);
+            tmp20 = outer2_3(callback2(5915)(withMessage), 2);
           }
-          const obj3 = callback2(6691);
+          const obj3 = callback2(5685);
           obj = {};
           obj.messageReference = obj;
           obj.location = outer2_8.FORWARDING;
@@ -78,16 +78,16 @@ let obj = {
           yield obj3.sendMessage(channel.id, parsed, false, obj);
           let result = null == tmp16 || "" === tmp16;
           if (!result) {
-            result = callback(7087).isRatelimitedInChannel(channel, outer2_6);
-            const obj5 = callback(7087);
+            result = callback(6105).isRatelimitedInChannel(channel, outer2_6);
+            const obj5 = callback(6105);
           }
           if (!result) {
-            const obj6 = callback2(6691);
+            const obj6 = callback2(5685);
             const id = channel.id;
             obj1 = { location: outer2_8.FORWARDING, flags: num3 };
-            return yield obj6.sendMessage(id, callback2(6923).parse(channel, tmp16), false, obj1);
+            return yield obj6.sendMessage(id, callback2(5914).parse(channel, tmp16), false, obj1);
           }
-          const obj9 = callback2(6923);
+          const obj9 = callback2(5914);
         }
       }
       if (null != channel1) {
@@ -98,7 +98,7 @@ let obj = {
   sendForwards(outer2_8, found, arg2) {
     let closure_0 = outer2_8;
     const importDefault = arg2;
-    return importDefault(4370)(found.map((alsoForwardToChannelId) => outer1_9.sendForward(closure_0, alsoForwardToChannelId, closure_1)));
+    return importDefault(4371)(found.map((alsoForwardToChannelId) => outer1_9.sendForward(closure_0, alsoForwardToChannelId, closure_1)));
   }
 };
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forwarding/ForwardActionCreators.tsx");

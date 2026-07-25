@@ -1,10 +1,10 @@
-// Module ID: 9810
-// Function ID: 76224
+// Module ID: 9734
+// Function ID: 75819
 // Name: useHandleUseNow
-// Dependencies: [31, 8811, 4098, 4337, 3982, 3831, 1212, 9811, 9814, 2]
+// Dependencies: [31, 8699, 4099, 4338, 3983, 3832, 1212, 9735, 9738, 2]
 // Exports: useHandleUseNow
 
-// Module 9810 (useHandleUseNow)
+// Module 9734 (useHandleUseNow)
 import result from "result";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 
@@ -43,10 +43,10 @@ export const useHandleUseNow = function useHandleUseNow(onSuccess) {
     obj.content = intl.string(onSuccess(outer1_2[6]).t.CKsXk3);
     obj.open(obj);
   }, []);
-  let obj = onSuccess(9811);
+  let obj = onSuccess(9735);
   handleUseNow = obj.useHandleUseNow({ product, onSuccess: callback, onError: callback1 });
   ({ handleUseNow, isApplying, canUseNow } = handleUseNow);
-  const tmp4 = importDefault(9814)({ analyticsLocations });
+  const tmp4 = importDefault(9738)({ analyticsLocations });
   importDefault = tmp4;
   obj = {
     handleUseNow,

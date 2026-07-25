@@ -1,10 +1,10 @@
-// Module ID: 13977
-// Function ID: 106931
+// Module ID: 13988
+// Function ID: 107058
 // Name: BountyVideoEndMode
-// Dependencies: [57, 31, 4976, 10868, 2]
+// Dependencies: [57, 31, 4977, 10818, 2]
 // Exports: useBountiesModalTiming
 
-// Module 13977 (BountyVideoEndMode)
+// Module 13988 (BountyVideoEndMode)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";

@@ -1,10 +1,10 @@
-// Module ID: 12674
-// Function ID: 98329
+// Module ID: 12685
+// Function ID: 98456
 // Name: _showAndroidRatingRequest
-// Dependencies: [5, 27, 3, 12675, 477, 2]
+// Dependencies: [5, 27, 3, 12686, 477, 2]
 // Exports: default
 
-// Module 12674 (_showAndroidRatingRequest)
+// Module 12685 (_showAndroidRatingRequest)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 import importDefaultResult from "enforcing";

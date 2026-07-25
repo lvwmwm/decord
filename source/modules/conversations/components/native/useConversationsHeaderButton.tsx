@@ -1,10 +1,10 @@
-// Module ID: 9306
-// Function ID: 72615
+// Module ID: 9199
+// Function ID: 72104
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 31, 6830, 6832, 9307, 669, 9308, 9309, 566, 9320, 9311, 9322, 1212, 2]
+// Dependencies: [5, 31, 5830, 5832, 9200, 669, 9201, 9202, 566, 9213, 9204, 9215, 1212, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 9306 (useConversationsHeaderButton)
+// Module 9199 (useConversationsHeaderButton)
 import set from "set";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

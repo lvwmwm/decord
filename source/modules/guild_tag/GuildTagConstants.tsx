@@ -1,10 +1,10 @@
-// Module ID: 7721
-// Function ID: 61439
+// Module ID: 7665
+// Function ID: 61385
 // Name: items
-// Dependencies: [653, 4021, 2]
+// Dependencies: [653, 4022, 2]
 // Exports: getRandomGuildTagBadgeKind, getRandomGuildTagBadgePreset
 
-// Module 7721 (items)
+// Module 7665 (items)
 import { GuildFeatures } from "ME";
 
 let GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES;

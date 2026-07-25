@@ -1,10 +1,10 @@
-// Module ID: 13695
-// Function ID: 105111
+// Module ID: 13706
+// Function ID: 105238
 // Name: WebAuthnNameStep
-// Dependencies: [5, 57, 31, 27, 13675, 33, 4130, 1456, 5592, 3831, 1212, 9704, 4091, 7636, 1273, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 13686, 33, 4131, 1456, 5592, 3832, 1212, 9628, 4092, 7575, 1273, 4544, 2]
 // Exports: default
 
-// Module 13695 (WebAuthnNameStep)
+// Module 13706 (WebAuthnNameStep)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -59,7 +59,7 @@ export default function WebAuthnNameStep(arg0) {
   obj.showBorder = true;
   obj.required = true;
   obj.large = true;
-  const items = [callback2(require(7636) /* Form */.FormInput, obj), callback2(require(7636) /* Form */.FormDivider, {}), ];
+  const items = [callback2(require(7575) /* Form */.FormInput, obj), callback2(require(7575) /* Form */.FormDivider, {}), ];
   const obj1 = { style: tmp.margin };
   const obj2 = {
     onPress() {
@@ -70,8 +70,8 @@ export default function WebAuthnNameStep(arg0) {
   obj2.text = intl3.string(require(1212) /* getSystemLocale */.t["5dyZ1S"]);
   obj2.disabled = "" === first;
   obj2.size = "lg";
-  obj1.children = callback2(require(4543) /* Button */.Button, obj2);
+  obj1.children = callback2(require(4544) /* Button */.Button, obj2);
   items[2] = callback2(_onPress, obj1);
   obj.children = items;
-  return callback3(require(7636) /* Form */.Form, obj);
+  return callback3(require(7575) /* Form */.Form, obj);
 };

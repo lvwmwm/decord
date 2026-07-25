@@ -1,26 +1,26 @@
-// Module ID: 7961
-// Function ID: 63022
+// Module ID: 7909
+// Function ID: 62999
 // Name: SolidCutout
-// Dependencies: [31, 27, 33, 3834, 7962, 7963, 3991, 2]
+// Dependencies: [31, 27, 33, 7910, 7912, 3992, 2]
 // Exports: default
 
-// Module 7961 (SolidCutout)
-import result from "result";
+// Module 7909 (SolidCutout)
+import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import animatedComponent from "__INTERNAL_VIEW_CONFIG";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let StyleSheet;
+let closure_3;
 let closure_4;
 let closure_5;
-let closure_6;
 const require = arg1;
 function SolidCutout(arg0) {
   let backgroundColor;
   let cutout;
   ({ backgroundColor, cutout } = arg0);
-  const style = [closure_9.solidCutout];
+  const style = [closure_8.solidCutout];
   if (cutout.shape === obj.Circle) {
     obj = { backgroundColor, borderRadius: cutout.size / 2 };
     ({ size: obj.height, size: obj.width, x: obj.left, y: obj.top } = cutout);
@@ -39,26 +39,18 @@ function SolidCutout(arg0) {
       style.push(obj);
     }
   }
-  return callback(closure_4, { style });
+  return callback(closure_3, { style });
 }
 function SolidCutoutOverlay(arg0) {
   let cutouts;
   let require;
   ({ backgroundColor: require, cutouts } = arg0);
-  return callback(closure_4, { pointerEvents: "none", style: closure_9.solidCutoutContainer, children: cutouts.map((cutout) => outer1_5(outer1_10, { backgroundColor: closure_0, cutout }, arg1)) });
+  return callback(closure_3, { pointerEvents: "none", style: closure_8.solidCutoutContainer, children: cutouts.map((cutout) => outer1_4(outer1_9, { backgroundColor: closure_0, cutout }, arg1)) });
 }
-function TokenSolidCutoutOverlay(arg0) {
-  let backgroundColor;
-  let cutouts;
-  ({ backgroundColor, cutouts } = arg0);
-  let obj = require(3834) /* map */;
-  obj = { backgroundColor: obj.useToken(backgroundColor), cutouts };
-  return callback(SolidCutoutOverlay, obj);
-}
-({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ StyleSheet, View: closure_3 } = get_ActivityIndicator);
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 let obj = { Circle: "circle", RoundedRect: "rounded-rect" };
-let closure_8 = [];
+let closure_7 = [];
 obj = {};
 obj = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -75,30 +67,31 @@ export default function ClipView(cutouts) {
   ({ children, style } = cutouts);
   Object.setPrototypeOf(null);
   const merged = Object.assign(cutouts, obj);
-  const context = React.useContext(require(7962) /* context */.CutoutBackgroundContext);
+  const cutoutBackgroundColor = require(7910) /* useCutoutBackgroundColor */.useCutoutBackgroundColor();
   let tmp4 = cutouts;
   let tmp5 = null;
-  if (null != context) {
+  if (null != cutoutBackgroundColor) {
     let tmp7 = null != cutouts;
     if (tmp7) {
       tmp7 = cutouts.length > 0;
     }
-    if (!tmp7) {
-      tmp5 = null;
-      tmp4 = tmp6;
-    } else {
-      obj = { backgroundColor: context, cutouts };
-      callback("string" === typeof context ? SolidCutoutOverlay : TokenSolidCutoutOverlay, obj);
+    let tmp8 = null;
+    if (tmp7) {
+      obj = { backgroundColor: cutoutBackgroundColor, cutouts };
+      tmp8 = callback(SolidCutoutOverlay, obj);
     }
-    tmp6 = closure_8;
+    tmp5 = tmp8;
+    tmp4 = closure_7;
+    const tmp6 = closure_7;
   }
   obj = {};
+  const obj2 = require(7910) /* useCutoutBackgroundColor */;
   const merged1 = Object.assign(merged);
   obj["cutouts"] = tmp4;
   obj["style"] = style;
   const items = [children, tmp5];
   obj["children"] = items;
-  return callback2(importDefault(7963), obj);
+  return callback2(importDefault(7912), obj);
 };
 export const ClipViewAnimated = animatedComponent;
 export const CutoutShape = obj;

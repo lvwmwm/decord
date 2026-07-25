@@ -1,13 +1,13 @@
-// Module ID: 16497
-// Function ID: 128536
+// Module ID: 16508
+// Function ID: 128704
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 1348, 5070, 3758, 653, 4326, 33, 4130, 689, 5052, 4320, 4098, 15016, 5085, 16434, 566, 5498, 4126, 1212, 5772, 4660, 4337, 8452, 1934, 8454, 8456, 1273, 12591, 5189, 2]
+// Dependencies: [57, 31, 27, 1348, 5071, 3759, 653, 4327, 33, 4131, 689, 5053, 4321, 4099, 15026, 5085, 16445, 566, 5498, 4127, 1212, 9171, 4661, 4338, 8210, 1935, 8212, 8214, 1273, 12602, 5189, 2]
 // Exports: default
 
-// Module 16497 (_createForOfIteratorHelperLoose)
+// Module 16508 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
-import { View } from "module_8456";
+import { View } from "module_8214";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
@@ -105,7 +105,7 @@ function ChannelRow(channel) {
   const onChannelSelected = channel.onChannelSelected;
   let selected = channel.selected;
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = onChannelSelected(4320)(channel);
+  const tmp2 = onChannelSelected(4321)(channel);
   const items = [onChannelSelected, channel];
   let obj = {};
   const callback = React.useCallback(() => {
@@ -122,9 +122,9 @@ function ChannelRow(channel) {
   obj.selected = selected;
   obj.disableHighlightOnPress = true;
   obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-  const items1 = [callback(onChannelSelected(15016), obj), ];
+  const items1 = [callback(onChannelSelected(15026), obj), ];
   if (selected) {
-    obj = { style: tmp.selectedIcon, source: onChannelSelected(16434) };
+    obj = { style: tmp.selectedIcon, source: onChannelSelected(16445) };
     selected = callback(onChannelSelected(5085), obj);
     const tmp12 = onChannelSelected(5085);
   }
@@ -222,7 +222,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     title = intl.string(guildId(1212).t.PDn2fR);
   }
   obj2.children = title;
-  obj1.children = callback(guildId(4126).Text, obj2);
+  obj1.children = callback(guildId(4127).Text, obj2);
   const items2 = [callback(View, obj1), , ];
   const obj3 = { style: tmp.searchContainer };
   const obj4 = { size: "md" };
@@ -237,7 +237,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     return expandActionSheetResult;
   };
-  obj3.children = callback(guildId(5772).SearchField, obj4);
+  obj3.children = callback(guildId(9171).SearchField, obj4);
   items2[1] = callback(View, obj3);
   let tmp15Result = !hideCreateChannel;
   if (tmp15Result) {
@@ -265,14 +265,14 @@ export default function ChannelSelectorActionSheet(guildId) {
       str = str2.toString();
     }
     obj6.color = str;
-    obj6.source = importDefault(12591);
+    obj6.source = importDefault(12602);
     const items3 = [callback(guildId(1273).Icon, obj6), ];
     const obj7 = { style: tmp.createChannelLabel, variant: "text-md/medium", color: "text-link" };
     const intl3 = guildId(1212).intl;
     obj7.children = intl3.string(guildId(1212).t.d7AN7W);
-    items3[1] = callback(guildId(4126).Text, obj7);
+    items3[1] = callback(guildId(4127).Text, obj7);
     obj5.children = items3;
-    tmp15Result = closure_13(guildId(4660).PressableOpacity, obj5);
+    tmp15Result = closure_13(guildId(4661).PressableOpacity, obj5);
     const tmp15 = closure_13;
     const tmp18 = callback;
   }

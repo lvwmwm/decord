@@ -1,10 +1,10 @@
-// Module ID: 4316
-// Function ID: 37822
+// Module ID: 4317
+// Function ID: 37833
 // Name: MAX_THUMBNAIL_COUNT
-// Dependencies: [4317, 2]
+// Dependencies: [4318, 2]
 // Exports: getBackgroundImageUrl, getEmbedPreviewImageUrl, getThumbnailImage
 
-// Module 4316 (MAX_THUMBNAIL_COUNT)
+// Module 4317 (MAX_THUMBNAIL_COUNT)
 const result = require("set").fileFinishedImporting("modules/media_channel/MediaPostThumbnailUtils.tsx");
 
 export const MAX_THUMBNAIL_COUNT = 4;
@@ -34,7 +34,7 @@ export const getBackgroundImageUrl = function getBackgroundImageUrl(coverImage) 
     let combined = "" + coverImage + "?format=webp";
   } else {
     combined = coverImage;
-    const obj2 = require(4317) /* urlMatchesFileExtension */;
+    const obj2 = require(4318) /* urlMatchesFileExtension */;
   }
   return combined;
 };
@@ -53,7 +53,7 @@ export const getThumbnailImage = function getThumbnailImage(thumbnail) {
           combined = "" + proxy_url + "?format=webp";
         }
         tmp = combined;
-        obj = require(4317) /* urlMatchesFileExtension */;
+        obj = require(4318) /* urlMatchesFileExtension */;
       }
     }
     return tmp;

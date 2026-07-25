@@ -1,9 +1,9 @@
-// Module ID: 6727
-// Function ID: 52381
+// Module ID: 5723
+// Function ID: 49694
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 1917, 1849, 664, 6728, 6751, 6756, 6730, 22, 6732, 2]
+// Dependencies: [57, 6, 7, 1918, 1850, 664, 5724, 5747, 5749, 5726, 22, 5728, 2]
 
-// Module 6727 (_createForOfIteratorHelperLoose)
+// Module 5723 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import getGuildMemberSecondaryIndexes from "getGuildMemberSecondaryIndexes";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

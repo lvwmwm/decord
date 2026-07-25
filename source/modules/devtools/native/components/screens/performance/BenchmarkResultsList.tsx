@@ -1,10 +1,10 @@
-// Module ID: 14751
-// Function ID: 112435
+// Module ID: 14762
+// Function ID: 112563
 // Name: BenchmarkResultsList
-// Dependencies: [31, 33, 5501, 5165, 14747, 2]
+// Dependencies: [31, 33, 5501, 5164, 14758, 2]
 // Exports: default
 
-// Module 14751 (BenchmarkResultsList)
+// Module 14762 (BenchmarkResultsList)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -46,7 +46,7 @@ export default function BenchmarkResultsList(results) {
 
     ];
     obj = { label: "Clear results", variant: "danger", arrow: true, onPress: tmp };
-    items[1] = callback(require(5165) /* TableRowInner */.TableRow, obj);
+    items[1] = callback(require(5164) /* TableRowInner */.TableRow, obj);
     obj.children = items;
     tmp2 = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
   }

@@ -1,9 +1,9 @@
-// Module ID: 6881
-// Function ID: 54547
+// Module ID: 5872
+// Function ID: 51853
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4044, 6758, 3768, 3767, 1849, 653, 6882, 4351, 6883, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4045, 5751, 3769, 3768, 1850, 653, 5873, 4352, 5874, 21, 566, 686, 2]
 
-// Module 6881 (_isNativeReflectConstruct)
+// Module 5872 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import initialize from "initialize";
@@ -55,9 +55,9 @@ function handleResetRemoteState() {
   handleReset({ keepLocalItems: true });
 }
 function toNotificationCenterItem(item) {
-  let tmp = item.item_enum === require(6882) /* NotificationCenterScenes */.ItemEnum.FIRST_MESSAGE;
+  let tmp = item.item_enum === require(5873) /* NotificationCenterScenes */.ItemEnum.FIRST_MESSAGE;
   if (tmp) {
-    tmp = item.type === require(6882) /* NotificationCenterScenes */.NotificationCenterItems.LIFECYCLE_ITEM;
+    tmp = item.type === require(5873) /* NotificationCenterScenes */.NotificationCenterItems.LIFECYCLE_ITEM;
   }
   if (tmp) {
     item.deeplink = "https://discord.com/feature/composeMessage";
@@ -67,8 +67,8 @@ function toNotificationCenterItem(item) {
   obj["kind"] = "notification-center-item";
   let messageRecord;
   if (null != item.message) {
-    messageRecord = require(4351) /* createMinimalMessageRecord */.createMessageRecord(item.message);
-    const obj2 = require(4351) /* createMinimalMessageRecord */;
+    messageRecord = require(4352) /* createMinimalMessageRecord */.createMessageRecord(item.message);
+    const obj2 = require(4352) /* createMinimalMessageRecord */;
   }
   obj["message"] = messageRecord;
   let id;
@@ -534,7 +534,7 @@ obj = {
       if (tmp7) {
         const items = [];
         const arraySpreadResult = HermesBuiltin.arraySpread(obj.notifCenterLocalItems, 0);
-        obj = id(6883);
+        obj = id(5874);
         items[arraySpreadResult] = obj.incomingGameFriendRequestLocalItem(user, since, applicationId);
         const sum = arraySpreadResult + 1;
         obj.notifCenterLocalItems = items;
@@ -597,7 +597,7 @@ obj = {
     newBuild = newBuild.newBuild;
     let _require;
     if (null !== newBuild) {
-      const obj = _require(6883);
+      const obj = _require(5874);
       const result = obj.mobileNativeUpdateAvailableLocalItem(newBuild);
       _require = result;
       const prop = obj.notifCenterLocalItems;

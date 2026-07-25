@@ -1,10 +1,10 @@
-// Module ID: 8006
-// Function ID: 63300
+// Module ID: 7953
+// Function ID: 63257
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 5, 8007, 4153, 8225, 653, 4566, 4123, 1212, 7371, 8227, 477, 1881, 6755, 8228, 6923, 6691, 4470, 1392, 8226, 8234, 6753, 8235, 2]
+// Dependencies: [29, 5, 5669, 4154, 7954, 653, 4567, 4124, 1212, 5664, 7956, 477, 1882, 5676, 7957, 5914, 5685, 4471, 1392, 7955, 7967, 5674, 7968, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication
 
-// Module 8006 (_createForOfIteratorHelperLoose)
+// Module 7953 (_createForOfIteratorHelperLoose)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import ME from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -100,8 +100,8 @@ function isRealApplication(application) {
 function isEmbeddedApp(application) {
   let hasApplicationFlagResult = isRealApplication(application);
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-    const obj = require(7371) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(5664) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+    const obj = require(5664) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 }
@@ -110,8 +110,8 @@ function getShelfBadgeTypeIfActive(application) {
   let tmp2;
   if (null != tmp) {
     const obj = require(477) /* set */;
-    tmp2 = tmp.client_platform_config[importDefault(8227)(undefined, obj.getOS(obj))];
-    const tmp5 = importDefault(8227);
+    tmp2 = tmp.client_platform_config[importDefault(7956)(undefined, obj.getOS(obj))];
+    const tmp5 = importDefault(7956);
   }
   const timestamp = Date.now();
   let label_until;
@@ -137,7 +137,7 @@ function getShelfBadgeTypeIfActive(application) {
       }
     }
   }
-  label_type = require(1881) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NONE;
+  label_type = require(1882) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NONE;
 }
 function getEmbeddedActivityConfig(embeddedActivityConfig) {
   let tmp = null;
@@ -173,25 +173,25 @@ export { isEmbeddedApp };
 export const isPartnerApplication = function isPartnerApplication(application) {
   let hasApplicationFlagResult = isRealApplication(application);
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARTNER);
-    const obj = require(7371) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(5664) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARTNER);
+    const obj = require(5664) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 };
 export const isPromotedApplication = function isPromotedApplication(FAKE_BUILT_IN_APP2) {
   let hasApplicationFlagResult = isRealApplication(FAKE_BUILT_IN_APP2);
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
-    const obj = require(7371) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(5664) /* getApplicationFlags */.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
+    const obj = require(5664) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 };
 export { getShelfBadgeTypeIfActive };
 export const getShelfBadgeNameIfActive = function getShelfBadgeNameIfActive(application) {
   const tmp = getShelfBadgeTypeIfActive(application);
-  if (require(1881) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW === tmp) {
+  if (require(1882) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW === tmp) {
     return "New";
-  } else if (require(1881) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.UPDATED === tmp) {
+  } else if (require(1882) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.UPDATED === tmp) {
     return "Updated";
   } else {
     return "";
@@ -286,7 +286,7 @@ export const isApplicationAdSupported = function isApplicationAdSupported(applic
   return null != tmp && tmp.displays_advertisements;
 };
 export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
-  return entrypoint === require(8226) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
+  return entrypoint === require(7955) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
 };
 export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
@@ -349,9 +349,9 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
   }
   let result = null != guildState;
   if (result) {
-    result = require(6753) /* _createForOfIteratorHelperLoose */.hasCommandIndexForApp(id.id, guildState);
-    const obj = require(6753) /* _createForOfIteratorHelperLoose */;
+    result = require(5674) /* _createForOfIteratorHelperLoose */.hasCommandIndexForApp(id.id, guildState);
+    const obj = require(5674) /* _createForOfIteratorHelperLoose */;
   }
-  const obj2 = require(8235) /* canInstallApplication */;
-  return require(8235) /* canInstallApplication */.isAppUserInstallable(id) || result;
+  const obj2 = require(7968) /* canInstallApplication */;
+  return require(7968) /* canInstallApplication */.isAppUserInstallable(id) || result;
 };

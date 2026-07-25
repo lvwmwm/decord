@@ -1,10 +1,10 @@
-// Module ID: 5659
-// Function ID: 48522
+// Module ID: 5846
+// Function ID: 51484
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4044, 5660, 1348, 1838, 3758, 1906, 3947, 1849, 653, 1355, 482, 5661, 1207, 21, 4368, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4045, 5847, 1348, 1838, 3759, 1907, 3948, 1850, 653, 1355, 482, 5758, 1207, 21, 4369, 566, 686, 2]
 // Exports: isViewChannelSidebar
 
-// Module 5659 (_isNativeReflectConstruct)
+// Module 5846 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import sum from "sum";
@@ -85,7 +85,7 @@ function handlePermissionsChange() {
       let tmp19 = dependencyMap[tmp6];
       let tmp20 = require;
       let tmp21 = dependencyMap;
-      if (tmp19.type === require(5661) /* SidebarType */.SidebarType.VIEW_THREAD) {
+      if (tmp19.type === require(5758) /* SidebarType */.SidebarType.VIEW_THREAD) {
         let tmp9 = channel;
         channel = channel.getChannel(tmp19.channelId);
         let canResult = null != channel;
@@ -376,7 +376,7 @@ tmp4 = new tmp4(require("dispatcher"), {
     } else {
       let obj = { type: sidebarType, channelId, details };
       let tmp4 = obj;
-      if (sidebarType === require(5661) /* SidebarType */.SidebarType.VIEW_MOD_REPORT) {
+      if (sidebarType === require(5758) /* SidebarType */.SidebarType.VIEW_MOD_REPORT) {
         obj = {};
         const merged = Object.assign(obj);
         obj["baseChannelId"] = baseChannelId;
@@ -409,7 +409,7 @@ tmp4 = new tmp4(require("dispatcher"), {
     ({ parentMessageId, location: _location } = parentChannelId);
     const tmp = parseChannelId(parentChannelId);
     if (null != tmp) {
-      const obj = { type: require(5661) /* SidebarType */.SidebarType.CREATE_THREAD, parentChannelId, parentMessageId, location: _location };
+      const obj = { type: require(5758) /* SidebarType */.SidebarType.CREATE_THREAD, parentChannelId, parentMessageId, location: _location };
       closure_25[tmp] = obj;
     }
   },
@@ -446,7 +446,7 @@ tmp4 = new tmp4(require("dispatcher"), {
           if (tmp13) {
             let tmp11 = require;
             let tmp12 = dependencyMap;
-            tmp13 = tmp17.type === require(5661) /* SidebarType */.SidebarType.VIEW_CHANNEL;
+            tmp13 = tmp17.type === require(5758) /* SidebarType */.SidebarType.VIEW_CHANNEL;
           }
           if (tmp13) {
             tmp13 = tmp17.channelId === channel.id;
@@ -485,14 +485,14 @@ tmp4 = new tmp4(require("dispatcher"), {
     } else {
       let tmp5 = null != tmp12;
       if (tmp5) {
-        tmp5 = tmp12.type === require(5661) /* SidebarType */.SidebarType.CREATE_THREAD;
+        tmp5 = tmp12.type === require(5758) /* SidebarType */.SidebarType.CREATE_THREAD;
       }
       if (tmp5) {
         let obj = importDefault(21);
         tmp5 = tmp12.parentMessageId === obj.castChannelIdAsMessageId(channel.id);
       }
       if (tmp5) {
-        obj = { type: require(5661) /* SidebarType */.SidebarType.VIEW_THREAD, channelId: channel.id };
+        obj = { type: require(5758) /* SidebarType */.SidebarType.VIEW_THREAD, channelId: channel.id };
         dependencyMap[channel.parent_id] = obj;
       }
     }
@@ -500,7 +500,7 @@ tmp4 = new tmp4(require("dispatcher"), {
   THREAD_DELETE: function handleThreadDelete(channel) {
     channel = channel.channel;
     if (null != dependencyMap[channel.parent_id]) {
-      if (tmp3.type === require(5661) /* SidebarType */.SidebarType.VIEW_THREAD) {
+      if (tmp3.type === require(5758) /* SidebarType */.SidebarType.VIEW_THREAD) {
         if (tmp3.channelId === channel.id) {
           const parent_id = channel.parent_id;
           delete tmp2[tmp];
@@ -515,6 +515,6 @@ let result = set.fileFinishedImporting("stores/ChannelSectionStore.tsx");
 export default tmp4;
 export const MESSAGE_REQUESTS_BASE_CHANNEL_ID = "message_requests";
 export const isViewChannelSidebar = function isViewChannelSidebar(type) {
-  const items = [require(5661) /* SidebarType */.SidebarType.VIEW_CHANNEL, require(5661) /* SidebarType */.SidebarType.VIEW_THREAD, require(5661) /* SidebarType */.SidebarType.VIEW_MESSAGE_REQUEST, require(5661) /* SidebarType */.SidebarType.VIEW_MOD_REPORT];
+  const items = [require(5758) /* SidebarType */.SidebarType.VIEW_CHANNEL, require(5758) /* SidebarType */.SidebarType.VIEW_THREAD, require(5758) /* SidebarType */.SidebarType.VIEW_MESSAGE_REQUEST, require(5758) /* SidebarType */.SidebarType.VIEW_MOD_REPORT];
   return items.includes(type.type);
 };

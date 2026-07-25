@@ -1,7 +1,7 @@
 // Module ID: 5470
-// Function ID: 46753
+// Function ID: 46758
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 5066, 653, 4015, 686, 507, 2]
+// Dependencies: [5, 5067, 653, 4016, 686, 507, 2]
 
 // Module 5470 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

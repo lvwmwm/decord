@@ -1,16 +1,16 @@
-// Module ID: 12962
-// Function ID: 100512
+// Module ID: 12973
+// Function ID: 100639
 // Name: ShareAttachments
-// Dependencies: [31, 27, 33, 3991, 4554, 1273, 4130, 689, 4131, 3974, 1212, 9868, 4674, 2]
+// Dependencies: [31, 27, 33, 3992, 4555, 1273, 4131, 689, 4132, 3975, 1212, 9792, 4675, 2]
 // Exports: default
 
-// Module 12962 (ShareAttachments)
+// Module 12973 (ShareAttachments)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import LinearGradient from "LinearGradient";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let closure_5;
 let closure_6;

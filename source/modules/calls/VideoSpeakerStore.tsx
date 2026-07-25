@@ -1,9 +1,9 @@
-// Module ID: 10573
-// Function ID: 82563
+// Module ID: 10460
+// Function ID: 81174
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4149, 1194, 4177, 4952, 4143, 4148, 4194, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4150, 1194, 4178, 4953, 4144, 4149, 4195, 22, 566, 686, 2]
 
-// Module 10573 (_isNativeReflectConstruct)
+// Module 10460 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import set from "set";
@@ -153,7 +153,7 @@ function updateSpeaker() {
     if (null != lastActiveStream) {
       tmp21 = tmp20;
       if (null == tmp20) {
-        let obj = require(4194) /* isStreamKey */;
+        let obj = require(4195) /* isStreamKey */;
         const participant1 = store.getParticipant(closure_2, obj.encodeStreamKey(lastActiveStream));
         let id;
         if (null != participant1) {

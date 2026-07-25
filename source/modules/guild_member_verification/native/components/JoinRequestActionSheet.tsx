@@ -1,9 +1,9 @@
-// Module ID: 15353
-// Function ID: 117052
+// Module ID: 15363
+// Function ID: 117180
 // Name: JoinRequestActionSheet
-// Dependencies: [31, 27, 4122, 1857, 1849, 653, 33, 4130, 566, 7974, 7186, 3991, 8280, 4066, 5484, 3834, 689, 665, 7980, 7107, 1904, 7975, 5187, 1273, 8547, 1212, 3842, 5189, 15354, 5446, 2]
+// Dependencies: [31, 27, 4123, 1858, 1850, 653, 33, 4131, 566, 7922, 7892, 3992, 8015, 4067, 5484, 3835, 689, 665, 7927, 6125, 1905, 7923, 5187, 1273, 8307, 1212, 3843, 5189, 15364, 5446, 2]
 
-// Module 15353 (JoinRequestActionSheet)
+// Module 15363 (JoinRequestActionSheet)
 import importAllResult from "result";
 import { View } from "BottomSheetModal";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -52,7 +52,7 @@ class JoinRequestActionSheet {
     bottomSheetRef = obj2.useBottomSheetRef();
     ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
     ref = guildId.useRef(null);
-    obj3 = require("module_3991");
+    obj3 = require("module_3992");
     sharedValue = require("result");
     c5 = sharedValue;
     items2 = [];

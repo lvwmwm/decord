@@ -1,10 +1,10 @@
-// Module ID: 10751
-// Function ID: 83627
+// Module ID: 10723
+// Function ID: 83369
 // Name: VoiceProcessingOptions
-// Dependencies: [31, 27, 4177, 33, 4130, 689, 566, 10752, 10753, 8882, 7654, 1212, 7653, 4126, 10756, 10738, 5502, 2]
+// Dependencies: [31, 27, 4178, 33, 4131, 689, 566, 10724, 10725, 8770, 7596, 1212, 7595, 4127, 10728, 10702, 5502, 2]
 // Exports: default
 
-// Module 10751 (VoiceProcessingOptions)
+// Module 10723 (VoiceProcessingOptions)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -170,9 +170,9 @@ export default function UserSettingsVoiceProcessing() {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.label = intl2.string(require(1212) /* getSystemLocale */.t.iWTwu6);
   obj1.value = echoCancellation;
-  obj1.onValueChange = require(10752) /* getSelectedNoiseSuppressionOption */.handleEchoCancellationChange;
+  obj1.onValueChange = require(10724) /* getSelectedNoiseSuppressionOption */.handleEchoCancellationChange;
   obj.children = callback(require(5502) /* TableSwitchRow */.TableSwitchRow, obj1);
-  const items1 = [callback(require(10738) /* UserSettingsVoice */.UserSettingsTableRowGroup, obj), callback(VoiceProcessingOptions, {}), ];
+  const items1 = [callback(require(10702) /* UserSettingsVoice */.UserSettingsTableRowGroup, obj), callback(VoiceProcessingOptions, {}), ];
   const obj2 = { hasIcons: false };
   const obj3 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
@@ -180,7 +180,7 @@ export default function UserSettingsVoiceProcessing() {
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj3.subLabel = intl4.string(require(1212) /* getSystemLocale */.t["6EjbvA"]);
   obj3.value = automaticGainControl;
-  obj3.onValueChange = require(10752) /* getSelectedNoiseSuppressionOption */.handleAutomaticGainControlChange;
+  obj3.onValueChange = require(10724) /* getSelectedNoiseSuppressionOption */.handleAutomaticGainControlChange;
   const items2 = [callback(require(5502) /* TableSwitchRow */.TableSwitchRow, obj3), ];
   if (advancedVoiceActivitySupported) {
     const obj4 = {};
@@ -198,7 +198,7 @@ export default function UserSettingsVoiceProcessing() {
   }
   items2[1] = advancedVoiceActivitySupported;
   obj2.children = items2;
-  items1[2] = closure_6(require(10738) /* UserSettingsVoice */.UserSettingsTableRowGroup, obj2);
+  items1[2] = closure_6(require(10702) /* UserSettingsVoice */.UserSettingsTableRowGroup, obj2);
   obj.children = items1;
   return closure_6(closure_7, obj);
 };

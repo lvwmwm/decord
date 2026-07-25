@@ -1,10 +1,10 @@
-// Module ID: 10264
-// Function ID: 79255
+// Module ID: 10197
+// Function ID: 78908
 // Name: isMessageContentPreviewable
-// Dependencies: [1194, 3767, 1849, 653, 663, 566, 7757, 4360, 1212, 4317, 5679, 22, 7762, 7840, 2]
+// Dependencies: [1194, 3768, 1850, 653, 663, 566, 7703, 4361, 1212, 4318, 5856, 22, 7708, 7787, 2]
 // Exports: useFormattedMessagePreview
 
-// Module 10264 (isMessageContentPreviewable)
+// Module 10197 (isMessageContentPreviewable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -289,7 +289,7 @@ function formatMessagePreview(type, isBlocked) {
     } else if (type.type === require(663) /* set */.MessageTypes.USER_JOIN) {
       let obj14 = { type: "text" };
       let intl7 = require(1212) /* getSystemLocale */.intl;
-      obj13 = importDefault(7762);
+      obj13 = importDefault(7708);
       let obj15 = { username: authorNick };
       const systemMessageUserJoin = obj13.getSystemMessageUserJoin(type.id);
       obj15.usernameHook = require(22) /* apply */.identity;
@@ -332,9 +332,9 @@ function formatMessagePreview(type, isBlocked) {
       obj.text = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.ro3RM0, obj26);
       tmp16 = obj;
     } else if (type.type === require(663) /* set */.MessageTypes.VOICE_SESSION) {
-      const obj27 = { type: "text", text: require(7840) /* getSortedVoiceSessionParticipants */.getVoiceSessionMessageContent(type) };
+      const obj27 = { type: "text", text: require(7787) /* getSortedVoiceSessionParticipants */.getVoiceSessionMessageContent(type) };
       tmp16 = obj27;
-      const obj32 = require(7840) /* getSortedVoiceSessionParticipants */;
+      const obj32 = require(7787) /* getSortedVoiceSessionParticipants */;
     }
   }
 }
@@ -350,10 +350,10 @@ export const useFormattedMessagePreview = function useFormattedMessagePreview(me
   const items1 = [message.author.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isBlocked: outer1_4.isBlocked(message.author.id), isIgnored: outer1_4.isIgnored(message.author.id) }), items1);
   ({ isBlocked, isIgnored } = stateFromStoresObject);
-  const tmp2 = importDefault(7757)(channel.id, message.id);
+  const tmp2 = importDefault(7703)(channel.id, message.id);
   const items2 = [_isNativeReflectConstruct];
   const stateFromStores = _require(566).useStateFromStores(items2, () => outer1_3.getId());
-  const nick = importDefault(4360)(message).nick;
+  const nick = importDefault(4361)(message).nick;
   let stringResult = nick;
   if (message.type !== _require(663).MessageTypes.USER_JOIN) {
     stringResult = nick;
@@ -372,7 +372,7 @@ export const useFormattedMessagePreview = function useFormattedMessagePreview(me
     return user;
   });
   const obj3 = _require(566);
-  obj = { message, channel, currentUserId: stateFromStores, authorNick: stringResult, otherUser: stateFromStores1, otherUserNick: _require(4360).useNullableUserAuthor(stateFromStores1, channel).nick, isBlocked, isIgnored, isCallActive: tmp2 };
+  obj = { message, channel, currentUserId: stateFromStores, authorNick: stringResult, otherUser: stateFromStores1, otherUserNick: _require(4361).useNullableUserAuthor(stateFromStores1, channel).nick, isBlocked, isIgnored, isCallActive: tmp2 };
   return formatMessagePreview(message, obj);
 };
 export { formatMessagePreview };

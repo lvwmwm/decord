@@ -1,10 +1,10 @@
-// Module ID: 8529
-// Function ID: 67942
+// Module ID: 8289
+// Function ID: 66596
 // Name: makeOption
-// Dependencies: [1348, 1907, 3758, 653, 1212, 8407, 566, 2]
+// Dependencies: [1348, 1908, 3759, 653, 1212, 8165, 566, 2]
 // Exports: getInviteChannelId, shouldRenderInvite, useShouldShowInviteInActionBar
 
-// Module 8529 (makeOption)
+// Module 8289 (makeOption)
 import closure_2 from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -110,8 +110,8 @@ export const shouldRenderInvite = function shouldRenderInvite(channels, guild) {
   }
   let tmp2 = null == vanityURLCode;
   if (!tmp2) {
-    tmp2 = !require(8407) /* canViewInviteModal */.canViewInviteModal(closure_6, guild);
-    const obj = require(8407) /* canViewInviteModal */;
+    tmp2 = !require(8165) /* canViewInviteModal */.canViewInviteModal(closure_6, guild);
+    const obj = require(8165) /* canViewInviteModal */;
   }
   let tmp6 = !tmp2;
   if (tmp2) {
@@ -140,8 +140,8 @@ export const useShouldShowInviteInActionBar = function useShouldShowInviteInActi
   }
   let tmp3 = null == vanityURLCode;
   if (!tmp3) {
-    tmp3 = !_require(8407).canViewInviteModal(closure_6, id);
-    const obj2 = _require(8407);
+    tmp3 = !_require(8165).canViewInviteModal(closure_6, id);
+    const obj2 = _require(8165);
   }
   let tmp7 = !tmp3;
   if (tmp3) {

@@ -1,9 +1,9 @@
-// Module ID: 4975
-// Function ID: 42957
+// Module ID: 4976
+// Function ID: 42969
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1858, 653, 4976, 662, 4985, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1859, 653, 4977, 662, 4986, 2]
 
-// Module 4975 (_isNativeReflectConstruct)
+// Module 4976 (_isNativeReflectConstruct)
 import ME from "ME";
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

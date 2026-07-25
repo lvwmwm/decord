@@ -1,10 +1,10 @@
-// Module ID: 14067
-// Function ID: 107611
+// Module ID: 14078
+// Function ID: 107738
 // Name: QuestBottomSheetHeader
-// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 10493, 6964, 14040, 566, 9499, 6962, 1212, 14066, 4979, 14041, 4528, 4539, 4126, 4660, 9007, 2]
+// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 10427, 5955, 14051, 566, 9420, 5953, 1212, 14077, 4980, 14052, 4529, 4540, 4127, 4661, 8895, 2]
 // Exports: default
 
-// Module 14067 (QuestBottomSheetHeader)
+// Module 14078 (QuestBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -37,7 +37,7 @@ export default function QuestBottomSheetHeader(step) {
   let isScreenReaderEnabled;
   let ref;
   let tmp = _createForOfIteratorHelperLoose();
-  let obj = isScreenReaderEnabled(14041);
+  let obj = isScreenReaderEnabled(14052);
   const tmp3 = (function useHeaderCopy(quest) {
     quest = quest.quest;
     const step = quest.step;
@@ -135,7 +135,7 @@ export default function QuestBottomSheetHeader(step) {
       }
     }, items2);
   })({ quest, step: step.step, location: step.location });
-  let obj1 = isScreenReaderEnabled(4528);
+  let obj1 = isScreenReaderEnabled(4529);
   isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
   ref = React.useRef(null);
   let items = [isScreenReaderEnabled];
@@ -169,7 +169,7 @@ export default function QuestBottomSheetHeader(step) {
     items2[1] = titleWithActionSheet;
     obj.style = items2;
     obj.children = tmp3;
-    tmp10Result = callback(isScreenReaderEnabled(4126).Text, obj);
+    tmp10Result = callback(isScreenReaderEnabled(4127).Text, obj);
     const tmp10 = callback;
   }
   const items3 = [tmp10Result, ];
@@ -180,8 +180,8 @@ export default function QuestBottomSheetHeader(step) {
     obj1.onPress = actionSheetPressHandler;
     obj1.style = tmp.actionSheetButton;
     let obj2 = { color: ref(689).colors.INTERACTIVE_TEXT_DEFAULT };
-    obj1.children = callback(isScreenReaderEnabled(9007).MoreHorizontalIcon, obj2);
-    withActionSheet = callback(isScreenReaderEnabled(4660).PressableOpacity, obj1);
+    obj1.children = callback(isScreenReaderEnabled(8895).MoreHorizontalIcon, obj2);
+    withActionSheet = callback(isScreenReaderEnabled(4661).PressableOpacity, obj1);
   }
   items3[1] = withActionSheet;
   obj.children = items3;

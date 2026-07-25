@@ -1,10 +1,10 @@
-// Module ID: 15437
-// Function ID: 117788
+// Module ID: 15447
+// Function ID: 117916
 // Name: SearchIndexingScreen
-// Dependencies: [31, 33, 10108, 10110, 15380, 2]
+// Dependencies: [31, 33, 10040, 10042, 15390, 2]
 // Exports: default
 
-// Module 15437 (SearchIndexingScreen)
+// Module 15447 (SearchIndexingScreen)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -19,6 +19,6 @@ export default function SearchIndexingScreen(searchContext) {
     obj = { searchContext };
     obj.trackSearchIndexing(obj);
   }, items);
-  const text = searchContext(10110).getIndexingErrorText(searchContext);
-  return jsx(importDefault(15380), { text });
+  const text = searchContext(10042).getIndexingErrorText(searchContext);
+  return jsx(importDefault(15390), { text });
 };

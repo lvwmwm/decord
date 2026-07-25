@@ -1,8 +1,8 @@
-// Module ID: 12267
-// Function ID: 95779
-// Dependencies: [31, 33, 4130, 689, 1557, 3803, 4660, 10885, 4126, 1212, 2]
+// Module ID: 12243
+// Function ID: 95588
+// Dependencies: [31, 33, 4131, 689, 1557, 3804, 4661, 10835, 4127, 1212, 2]
 
-// Module 12267
+// Module 12243
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importAllResult from "result";
@@ -21,7 +21,7 @@ const memoResult = require("result").memo(function MediaModalOverlayAltTextButto
   if (null != description) {
     str = description;
   }
-  const ViewImageDescriptions = str(3803).ViewImageDescriptions;
+  const ViewImageDescriptions = str(3804).ViewImageDescriptions;
   let tmp2 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp2 = null;
@@ -39,8 +39,8 @@ const memoResult = require("result").memo(function MediaModalOverlayAltTextButto
       obj = { variant: "text-xs/semibold", color: "text-overlay-light" };
       const intl = str(1212).intl;
       obj.children = intl.string(str(1212).t.Q5VqrN);
-      obj.children = jsx(str(4126).Text, { variant: "text-xs/semibold", color: "text-overlay-light" });
-      tmp2 = jsx(str(4660).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light" });
+      obj.children = jsx(str(4127).Text, { variant: "text-xs/semibold", color: "text-overlay-light" });
+      tmp2 = jsx(str(4661).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light" });
     }
   }
   return tmp2;

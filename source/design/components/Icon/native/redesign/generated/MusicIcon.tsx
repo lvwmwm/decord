@@ -1,10 +1,10 @@
-// Module ID: 9114
-// Function ID: 71412
+// Module ID: 9006
+// Function ID: 70897
 // Name: MusicIcon
-// Dependencies: [31, 33, 689, 3833, 9115, 2]
+// Dependencies: [31, 33, 689, 3834, 9007, 2]
 // Exports: MusicIcon
 
-// Module 9114 (MusicIcon)
+// Module 9006 (MusicIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const MusicIcon = function MusicIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9115) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9007) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9115) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9007) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

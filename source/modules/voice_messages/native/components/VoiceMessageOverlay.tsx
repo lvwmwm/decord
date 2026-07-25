@@ -1,9 +1,9 @@
-// Module ID: 11704
-// Function ID: 90751
+// Module ID: 11673
+// Function ID: 90495
 // Name: useDerivedColors
-// Dependencies: [57, 31, 27, 4122, 1348, 11130, 11131, 653, 1277, 11132, 33, 3991, 1273, 4660, 4126, 22, 8063, 4130, 689, 4973, 566, 3834, 1324, 5122, 1212, 4131, 4066, 3976, 4628, 10372, 11705, 5160, 1557, 4528, 4539, 1207, 11045, 1450, 10632, 11391, 4090, 11706, 4077, 10765, 2]
+// Dependencies: [57, 31, 27, 4123, 1348, 11090, 11091, 653, 1277, 11092, 33, 3992, 1273, 4661, 4127, 22, 8463, 4131, 689, 4974, 566, 3835, 1324, 5122, 1212, 4132, 4067, 3977, 4629, 10305, 11674, 5159, 1557, 4529, 4540, 1207, 11001, 1450, 10596, 11675, 11676, 4091, 11353, 4078, 10737, 2]
 
-// Module 11704 (useDerivedColors)
+// Module 11673 (useDerivedColors)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useSafeAreaInsetsKeyboardAware";
 import get_ActivityIndicator from "AccessibilityAnnouncer";
@@ -15,9 +15,9 @@ import { ComponentActionsKeyed } from "ME";
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import TextAreaCta from "TextAreaCta";
 import jsxProd from "SCREEN_READER_ENABLED_GETTER";
-import importDefaultResult from "module_3991";
-import importDefaultResult1 from "module_3991";
-import importDefaultResult2 from "module_3991";
+import importDefaultResult from "module_3992";
+import importDefaultResult1 from "module_3992";
+import importDefaultResult2 from "module_3992";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importDefaultResult3 from "useIsMobileVisualRefreshExperimentEnabled";
 
@@ -36,18 +36,18 @@ function useDerivedColors(voiceMessageAnimationState, BRAND_600, RED_500, BRAND_
   const dependencyMap = RED_500;
   let _slicedToArray = BRAND_6002;
   let closure_4 = BRAND_6003;
-  let obj = _require(3991);
-  const fn = function u() {
+  let obj = _require(3992);
+  const fn = function _() {
     let obj = voiceMessageAnimationState(RED_500[25]);
     obj = { easing: voiceMessageAnimationState(RED_500[11]).Easing.linear, duration: 150 };
     return obj.withTiming(voiceMessageAnimationState.get()[1], obj);
   };
-  obj = { voiceMessageAnimationState, withTiming: _require(4131).withTiming, Easing: _require(3991).Easing };
+  obj = { voiceMessageAnimationState, withTiming: _require(4132).withTiming, Easing: _require(3992).Easing };
   fn.__closure = obj;
   fn.__workletHash = 7432526131204;
   fn.__initData = closure_34;
   const derivedValue = obj.useDerivedValue(fn);
-  const fn2 = function _() {
+  const fn2 = function u() {
     const tmp = BRAND_6002(voiceMessageAnimationState.get(), 2);
     if (tmp[0] + tmp[1] === 2) {
       const items = [closure_1, closure_1, BRAND_6002, closure_4];
@@ -57,11 +57,11 @@ function useDerivedColors(voiceMessageAnimationState, BRAND_600, RED_500, BRAND_
     }
     return voiceMessageAnimationState(RED_500[11]).interpolateColor(derivedValue.get(), outer1_25, items1);
   };
-  obj = { voiceMessageAnimationState, sendingColor: BRAND_600, lockingColor: BRAND_6002, lockedColor: BRAND_6003, cancelingColor: RED_500, interpolateColor: _require(3991).interpolateColor, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: items };
+  obj = { voiceMessageAnimationState, sendingColor: BRAND_600, lockingColor: BRAND_6002, lockedColor: BRAND_6003, cancelingColor: RED_500, interpolateColor: _require(3992).interpolateColor, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: items };
   fn2.__closure = obj;
   fn2.__workletHash = 8474040050475;
   fn2.__initData = closure_35;
-  return _require(3991).useDerivedValue(fn2);
+  return _require(3992).useDerivedValue(fn2);
 }
 function LockPill(safeAreaBottom) {
   let chevonStyle;
@@ -76,7 +76,7 @@ function LockPill(safeAreaBottom) {
   let tmp3 = callback(importAllResult.useState(false), 2);
   callback = tmp4;
   let obj1 = safeAreaBottom(voiceMessageAnimationState[11]);
-  let fn = function u() {
+  let fn = function _() {
     let tmp = voiceMessageAnimationState.get()[1] === outer1_11.LOCKED;
     if (!tmp) {
       tmp = voiceMessageAnimationState.get()[1] === outer1_11.LOCKING;
@@ -176,7 +176,7 @@ function LockPill(safeAreaBottom) {
     fn4.__initData = outer1_39;
     obj1.lockContainerStyle = safeAreaBottom(voiceMessageAnimationState[11]).useAnimatedStyle(fn4);
     const obj14 = safeAreaBottom(voiceMessageAnimationState[11]);
-    const fn5 = function u() {
+    const fn5 = function _() {
       const obj = { width: safeAreaBottom(voiceMessageAnimationState[11]).interpolate(derivedValue.get(), outer2_25, [24, 24, 32, 32]) };
       const obj2 = safeAreaBottom(voiceMessageAnimationState[11]);
       obj.height = safeAreaBottom(voiceMessageAnimationState[11]).interpolate(derivedValue.get(), outer2_25, [24, 24, 32, 32]);
@@ -191,7 +191,7 @@ function LockPill(safeAreaBottom) {
     fn5.__initData = outer1_40;
     obj1.lockIconStyle = safeAreaBottom(voiceMessageAnimationState[11]).useAnimatedStyle(fn5);
     const obj16 = safeAreaBottom(voiceMessageAnimationState[11]);
-    const fn6 = function _() {
+    const fn6 = function u() {
       const obj = { opacity: safeAreaBottom(voiceMessageAnimationState[11]).interpolate(derivedValue.get(), outer2_25, [1, 1, 0, 0]) };
       return obj;
     };
@@ -286,7 +286,7 @@ function LockPill(safeAreaBottom) {
     fn4.__initData = outer1_39;
     obj1.lockContainerStyle = safeAreaBottom(voiceMessageAnimationState[11]).useAnimatedStyle(fn4);
     const obj14 = safeAreaBottom(voiceMessageAnimationState[11]);
-    const fn5 = function u() {
+    const fn5 = function _() {
       const obj = { width: safeAreaBottom(voiceMessageAnimationState[11]).interpolate(derivedValue.get(), outer2_25, [24, 24, 32, 32]) };
       const obj2 = safeAreaBottom(voiceMessageAnimationState[11]);
       obj.height = safeAreaBottom(voiceMessageAnimationState[11]).interpolate(derivedValue.get(), outer2_25, [24, 24, 32, 32]);
@@ -301,7 +301,7 @@ function LockPill(safeAreaBottom) {
     fn5.__initData = outer1_40;
     obj1.lockIconStyle = safeAreaBottom(voiceMessageAnimationState[11]).useAnimatedStyle(fn5);
     const obj16 = safeAreaBottom(voiceMessageAnimationState[11]);
-    const fn6 = function _() {
+    const fn6 = function u() {
       const obj = { opacity: safeAreaBottom(voiceMessageAnimationState[11]).interpolate(derivedValue.get(), outer2_25, [1, 1, 0, 0]) };
       return obj;
     };
@@ -337,29 +337,29 @@ function LockPill(safeAreaBottom) {
 ({ View: closure_5, StyleSheet: closure_6, AppState: closure_7 } = get_ActivityIndicator);
 ({ CHAT_INPUT_HEIGHT: closure_14, CHAT_INPUT_HORIZONTAL_PADDING: closure_15 } = TextAreaCta);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = jsxProd);
-let closure_19 = require("module_3991").createAnimatedComponent(require("Button").Icon);
-let closure_20 = require("module_3991").createAnimatedComponent(require("PressableBase").PressableOpacity);
-let closure_21 = require("module_3991").createAnimatedComponent(require("Text").Text);
-let closure_22 = require("useIsMobileVisualRefreshExperimentEnabled").memoize(() => importDefault(3991).createAnimatedComponent(require(8063) /* inlineStyles */.Ellipse));
+let closure_19 = require("module_3992").createAnimatedComponent(require("Button").Icon);
+let closure_20 = require("module_3992").createAnimatedComponent(require("PressableBase").PressableOpacity);
+let closure_21 = require("module_3992").createAnimatedComponent(require("Text").Text);
+let closure_22 = require("useIsMobileVisualRefreshExperimentEnabled").memoize(() => importDefault(3992).createAnimatedComponent(require(8463) /* inlineStyles */.Ellipse));
 let closure_23 = _createForOfIteratorHelperLoose.createStyles((width) => {
   let obj = {};
   obj = { alignItems: "center" };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   obj["overflow"] = "hidden";
   obj.container = obj;
-  obj = { flexDirection: "row", alignItems: "flex-end", paddingTop: 8, paddingHorizontal: closure_15, paddingBottom: 9 };
+  obj = { flexDirection: "row", alignItems: "flex-end", paddingTop: 8, paddingHorizontal: importDefault(689).modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_HORIZONTAL, paddingBottom: importDefault(689).modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_BOTTOM };
   obj.innerContainer = obj;
   obj.contentContainer = { position: "absolute", bottom: 0, width: "100%", alignItems: "center", overflow: "hidden" };
   obj.trashContainer = { width, height: width, borderRadius: importDefault(689).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
   const obj1 = { width, height: width, borderRadius: importDefault(689).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
   obj.sendContainer = { width, height: width, borderRadius: importDefault(689).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
-  const obj3 = { flex: 1, height: width, marginRight: 8, alignItems: "flex-end" };
-  obj.voiceChatContainer = obj3;
-  const obj4 = { height: 68, width, borderRadius: importDefault(689).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(689).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(4973) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
+  const obj2 = { width, height: width, borderRadius: importDefault(689).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
+  obj.voiceChatContainer = { flex: 1, height: importDefault(689).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: importDefault(689).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" };
+  const obj4 = { height: 68, width, borderRadius: importDefault(689).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(689).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(4974) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
   obj.lockContainer = obj4;
   obj.lockParentContainer = { position: "absolute", right: closure_15, width };
-  const obj5 = { height: 16, width: 16, marginTop: 8, tintColor: importDefault(689).colors.ICON_SUBTLE };
-  obj.chevon = obj5;
+  const obj6 = { height: 16, width: 16, marginTop: 8, tintColor: importDefault(689).colors.ICON_SUBTLE };
+  obj.chevon = obj6;
   return obj;
 });
 const PLUM_13 = require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLUM_13;
@@ -402,7 +402,7 @@ const memoResult = importAllResult.memo((opacity) => {
   const tmp5 = useDerivedColors(opacity.voiceMessageAnimationState, token, height(offsetThreshold[18]).unsafe_rawColors.RED_400, token, token);
   let closure_6 = tmp5;
   const obj3 = radius(offsetThreshold[21]);
-  const fn2 = function _() {
+  const fn2 = function u() {
     return derivedValue.get() * offsetThreshold;
   };
   fn2.__closure = { derivedCurrWaveHeight: derivedValue, offsetThreshold };
@@ -453,7 +453,7 @@ let closure_33 = importAllResult.memo((initialAnimation) => {
   callback = tmp5;
   let tmp6 = useVoiceMessagesUIStore((savedVoiceMessageUploadData) => null != savedVoiceMessageUploadData.savedVoiceMessageUploadData);
   let obj = initialAnimation(1324);
-  let obj1 = initialAnimation(3991);
+  let obj1 = initialAnimation(3992);
   const fn = function c() {
     if (null != tmp.get()) {
       const obj = initialAnimation(initialAnimation[11]);
@@ -461,7 +461,7 @@ let closure_33 = importAllResult.memo((initialAnimation) => {
       return initialAnimation.get();
     }
   };
-  obj = { voiceMessageAnimationState: tmp, runOnJS: initialAnimation(3991).runOnJS, setVoiceMessageState: tmp5 };
+  obj = { voiceMessageAnimationState: tmp, runOnJS: initialAnimation(3992).runOnJS, setVoiceMessageState: tmp5 };
   fn.__closure = obj;
   fn.__workletHash = 8577984959763;
   fn.__initData = closure_31;
@@ -524,7 +524,7 @@ let closure_33 = importAllResult.memo((initialAnimation) => {
   const effect = stringResult5.useEffect(() => {
     ref.current = stringResult5;
   }, items);
-  initialAnimation(3991);
+  initialAnimation(3992);
   const fn2 = function y() {
     const value = initialAnimation.get();
     const bound = Math.min(value, recordingAnimation.get());
@@ -574,9 +574,10 @@ let closure_53 = importAllResult.memo((channelId) => {
   let voiceMessageAnimationState;
   channelId = channelId.channelId;
   ({ voiceMessageAnimationState, exiting } = channelId);
-  let obj = channelId(3834);
-  const tmp2 = callback5(obj.useToken(exiting(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
-  const insets = exiting(5160)({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets;
+  let obj = channelId(3835);
+  const token = obj.useToken(exiting(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const tmp2 = callback5(token);
+  const insets = exiting(5159)({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets;
   const tmp3 = exiting(1557)();
   const dependencyMap = tmp3;
   const diff = insets.bottom - tmp3.bottom;
@@ -632,14 +633,14 @@ let closure_53 = importAllResult.memo((channelId) => {
   }, []);
   let items = [channelId];
   let effect1 = initialAnimation.useEffect(() => {
-    let closure_0 = tmp12.addEventListener("change", (arg0) => {
+    let closure_0 = tmp16.addEventListener("change", (arg0) => {
       let tmp = "inactive" !== arg0;
       if (tmp) {
         tmp = "background" !== arg0;
       }
       if (!tmp) {
         const ComponentDispatch = channelId(1207).ComponentDispatch;
-        const obj = { isCancelling: true, cancelReason: channelId(11045).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND };
+        const obj = { isCancelling: true, cancelReason: channelId(11001).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND };
         ComponentDispatch.dispatchKeyed(outer2_12.VOICE_MESSAGE_SEND, closure_0, obj);
       }
     });
@@ -647,57 +648,70 @@ let closure_53 = importAllResult.memo((channelId) => {
       closure_0.remove();
     };
   }, items);
+  let obj1 = channelId(1324);
   let result = 5 * exiting(1450)().width / 2;
-  const tmp12 = useDerivedColors(voiceMessageAnimationState, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.BRAND_600);
-  let closure_7 = tmp12;
-  let obj1 = channelId(3991);
-  class L {
+  let obj2 = channelId(3835);
+  const token1 = obj2.useToken(exiting(689).colors.ICON_DEFAULT);
+  let obj3 = channelId(3835);
+  let string = obj3.useToken(exiting(689).modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT);
+  let obj4 = channelId(3835);
+  let token2 = obj4.useToken(exiting(689).modules.mobile.CHAT_INPUT_ACTION_ICON_PIXEL_SIZE);
+  let obj5 = channelId(3835);
+  let token3 = obj5.useToken(exiting(689).colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND);
+  let obj6 = channelId(3835);
+  let intl = obj6.useToken(exiting(689).colors.CONTROL_PRIMARY_BORDER_DEFAULT);
+  let obj7 = channelId(3835);
+  const token4 = obj7.useToken(exiting(689).colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT);
+  const tmp16 = useDerivedColors(voiceMessageAnimationState, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.BRAND_600);
+  let closure_7 = tmp16;
+  let obj8 = channelId(3992);
+  class R {
     constructor() {
       obj = { marginLeft: 16 * (1 - initialAnimation.get()), marginRight: 8 - 16 * (1 - initialAnimation.get()), backgroundColor: closure_7.get() };
       return obj;
     }
   }
-  L.__closure = { INITIAL_SHIFT: 8, initialAnimation, trashContainerBgColor: tmp12 };
-  L.__workletHash = 16442762939311;
-  L.__initData = closure_45;
-  const animatedStyle = obj1.useAnimatedStyle(L);
-  const tmp14 = useDerivedColors(voiceMessageAnimationState, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.RED_500, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.WHITE);
-  let _isNativeReflectConstruct = tmp14;
-  let obj2 = channelId(3991);
-  const fn = function x() {
-    return { tintColor: tmp14.get() };
-  };
-  fn.__closure = { trashIconColor: tmp14 };
-  fn.__workletHash = 4758994609248;
-  fn.__initData = closure_46;
-  const animatedStyle1 = obj2.useAnimatedStyle(fn);
-  const tmp16 = useDerivedColors(voiceMessageAnimationState, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.RED_500, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.WHITE);
-  let closure_9 = tmp16;
-  let obj3 = channelId(3991);
+  R.__closure = { INITIAL_SHIFT: 8, initialAnimation, trashContainerBgColor: tmp16 };
+  R.__workletHash = 16442762939311;
+  R.__initData = closure_45;
+  const animatedStyle = obj8.useAnimatedStyle(R);
+  const tmp18 = useDerivedColors(voiceMessageAnimationState, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.RED_500, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.WHITE);
+  let _isNativeReflectConstruct = tmp18;
+  let obj9 = channelId(3992);
   class G {
     constructor() {
-      obj = { opacity: 0.5 + 0.5 * recordingAnimation.get(), backgroundColor: closure_9.get() };
+      obj = { tintColor: _isNativeReflectConstruct.get() };
       return obj;
     }
   }
-  G.__closure = { recordingAnimation, sendContainerBgColor: tmp16 };
-  G.__workletHash = 2463646995928;
-  G.__initData = closure_47;
-  const animatedStyle2 = obj3.useAnimatedStyle(G);
-  const tmp18 = useDerivedColors(voiceMessageAnimationState, PLUM_13, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.WHITE, PLUM_13);
-  useVoiceMessagesUIStore = tmp18;
-  let obj4 = channelId(3991);
+  G.__closure = { trashIconColor: tmp18 };
+  G.__workletHash = 4758994609248;
+  G.__initData = closure_46;
+  const animatedStyle1 = obj9.useAnimatedStyle(G);
+  const tmp20 = useDerivedColors(voiceMessageAnimationState, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.RED_500, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.WHITE);
+  let closure_9 = tmp20;
+  let obj10 = channelId(3992);
+  const fn = function x() {
+    return { opacity: 0.5 + 0.5 * recordingAnimation.get(), backgroundColor: tmp20.get() };
+  };
+  fn.__closure = { recordingAnimation, sendContainerBgColor: tmp20 };
+  fn.__workletHash = 2463646995928;
+  fn.__initData = closure_47;
+  const animatedStyle2 = obj10.useAnimatedStyle(fn);
+  const tmp22 = useDerivedColors(voiceMessageAnimationState, PLUM_13, exiting(689).unsafe_rawColors.WHITE, exiting(689).unsafe_rawColors.WHITE, PLUM_13);
+  useVoiceMessagesUIStore = tmp22;
+  let obj11 = channelId(3992);
   class B {
     constructor() {
-      obj = { tintColor: closure_10.get() };
+      obj = { tintColor: useEffect.get() };
       return obj;
     }
   }
-  B.__closure = { sendIconColor: tmp18 };
+  B.__closure = { sendIconColor: tmp22 };
   B.__workletHash = 13732877930795;
   B.__initData = closure_48;
-  const animatedStyle3 = obj4.useAnimatedStyle(B);
-  let obj5 = channelId(3991);
+  const animatedStyle3 = obj11.useAnimatedStyle(B);
+  let obj12 = channelId(3992);
   class U {
     constructor() {
       obj = { opacity: initialAnimation.get() };
@@ -707,8 +721,8 @@ let closure_53 = importAllResult.memo((channelId) => {
   U.__closure = { initialAnimation };
   U.__workletHash = 11009128299499;
   U.__initData = closure_49;
-  const animatedStyle4 = obj5.useAnimatedStyle(U);
-  let obj6 = channelId(3991);
+  const animatedStyle4 = obj12.useAnimatedStyle(U);
+  let obj13 = channelId(3992);
   class F {
     constructor() {
       num = 12;
@@ -716,86 +730,152 @@ let closure_53 = importAllResult.memo((channelId) => {
         num = 24;
       }
       obj = { opacity: initialAnimation.get() };
-      obj.bottom = bottom - num * (1 - initialAnimation.get());
+      obj.bottom = _slicedToArray - num * (1 - initialAnimation.get());
       return obj;
     }
   }
   F.__closure = { exiting, INITIAL_SHIFT: 8, initialAnimation, keyboardHeight: diff };
   F.__workletHash = 4588671012938;
   F.__initData = closure_50;
-  const animatedStyle5 = obj6.useAnimatedStyle(F);
-  let obj7 = channelId(10632);
-  const wakeLock = obj7.useWakeLock("VoiceMessageOverlay");
-  let obj8 = channelId(3991);
-  function ce() {
-    return tmp3.bottom + outer1_14 * (1.6 + 0.3 * recordingAnimation.get());
+  const animatedStyle5 = obj13.useAnimatedStyle(F);
+  let obj14 = channelId(10596);
+  const wakeLock = obj14.useWakeLock("VoiceMessageOverlay");
+  let obj15 = channelId(3992);
+  class Ie {
+    constructor() {
+      return closure_2.bottom + outer1_14 * (1.6 + 0.3 * recordingAnimation.get());
+    }
   }
   obj = { insetsNoKeyboard: tmp3, CHAT_INPUT_HEIGHT: closure_14, recordingAnimation };
-  ce.__closure = obj;
-  ce.__workletHash = 14315468936108;
-  ce.__initData = closure_51;
-  const derivedValue = obj8.useDerivedValue(ce);
-  let obj10 = channelId(3991);
-  function ue() {
+  Ie.__closure = obj;
+  Ie.__workletHash = 14315468936108;
+  Ie.__initData = closure_51;
+  const derivedValue = obj15.useDerivedValue(Ie);
+  let obj17 = channelId(3992);
+  function me() {
     return tmp3.bottom + 1.6 * outer1_14;
   }
   obj = { insetsNoKeyboard: tmp3, CHAT_INPUT_HEIGHT: closure_14 };
-  ue.__closure = obj;
-  ue.__workletHash = 5416150236821;
-  ue.__initData = closure_52;
+  me.__closure = obj;
+  me.__workletHash = 5416150236821;
+  me.__initData = closure_52;
   obj1 = {};
-  const derivedValue1 = obj10.useDerivedValue(ue);
+  const derivedValue1 = obj17.useDerivedValue(me);
   obj2 = { style: items1, pointerEvents: "none" };
   items1 = [tmp2.container, animatedStyle5];
   obj3 = { height: derivedValue, offsetThreshold: 60, opacity: 0.24, radius: result, voiceMessageAnimationState };
   let items2 = [callback2(closure_30, obj3), callback2(closure_30, { height: derivedValue1, offsetThreshold: 30, radius: result, voiceMessageAnimationState })];
   obj2.children = items2;
-  const items3 = [callback3(exiting(3991).View, obj2), , ];
+  const items3 = [callback3(exiting(3992).View, obj2), , ];
   obj4 = { style: items4 };
   items4 = [tmp2.contentContainer, { bottom }, animatedStyle4];
   const items5 = [callback2(closure_33, { initialAnimation, recordingAnimation, exiting }), ];
   obj5 = { style: tmp2.innerContainer };
-  obj6 = { style: items6, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, accessibilityRole: "button" };
-  items6 = [tmp2.trashContainer, animatedStyle];
-  const intl = channelId(1212).intl;
-  obj6.accessibilityLabel = intl.string(channelId(1212).t.RdK9sV);
-  obj6.onPressIn = function onPressIn() {
-    return channelId(tmp3[39]).triggerHaptic();
-  };
-  obj6.onPress = function onPress() {
-    const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
-    ComponentDispatch.dispatchKeyed(outer1_12.VOICE_MESSAGE_SEND, channelId, { isCancelling: true });
-  };
-  obj7 = { style: animatedStyle1, source: exiting(4090), size: channelId(1273).Icon.Sizes.MEDIUM };
-  obj6.children = callback2(closure_19, obj7);
-  const items7 = [callback2(closure_20, obj6), , ];
-  obj8 = { style: tmp2.voiceChatContainer, children: callback2(exiting(11706), { isRecording: tmp5, initialAnimation, backgroundColor: useDerivedColors(voiceMessageAnimationState, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.RED_500, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.BRAND_600) }) };
-  items7[1] = callback2(exiting(3991).View, obj8);
-  const obj9 = { ref, style: items8, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, accessibilityRole: "button" };
-  items8 = [tmp2.sendContainer, animatedStyle2];
-  const intl2 = channelId(1212).intl;
-  obj9.accessibilityLabel = intl2.string(channelId(1212).t["+8GStU"]);
-  obj9.onPress = function onPress() {
-    const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
-    ComponentDispatch.dispatchKeyed(outer1_12.VOICE_MESSAGE_SEND, channelId, { isCancelling: false });
-  };
-  obj10 = { style: animatedStyle3 };
-  if (tmp5) {
-    let tmp35 = 4077;
+  if (obj1.useMobileVisualRefreshConfig({ location: "VoiceMessageOverlay" }).chatInputFloating) {
+    obj6 = { style: tmp2.voiceChatContainer };
+    obj7 = { isRecording: tmp5, initialAnimation };
+    obj8 = {};
+    const tmp53 = callback2;
+    const tmp54 = exiting;
+    const tmp56 = callback2;
+    const tmp57 = exiting(11675);
+    obj8.icon = exiting(4091);
+    obj8.tintColor = token1;
+    obj8.boxSize = token;
+    obj8.iconSize = token2;
+    const intl4 = channelId(1212).intl;
+    obj8.accessibilityLabel = intl4.string(channelId(1212).t.RdK9sV);
+    obj8.onPressIn = function onPressIn() {
+      return channelId(tmp3[42]).triggerHaptic();
+    };
+    obj8.onPress = function onPress() {
+      const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
+      ComponentDispatch.dispatchKeyed(outer1_12.VOICE_MESSAGE_SEND, channelId, { isCancelling: true });
+    };
+    obj7.leftAccessory = callback2(exiting(11676), obj8);
+    obj9 = { ref };
+    const tmp59 = exiting(11676);
+    const tmp61 = callback2;
+    if (tmp5) {
+      let tmp64 = 4078;
+    } else {
+      tmp64 = 10737;
+    }
+    obj9.icon = tmp54(tmp64);
+    obj9.tintColor = token4;
+    obj9.backgroundColor = token3;
+    obj9.borderColor = intl;
+    obj9.boxSize = string;
+    obj9.iconSize = token2;
+    token3 = channelId;
+    intl = channelId(1212).intl;
+    string = intl.string;
+    token2 = string(channelId(1212).t["+8GStU"]);
+    obj9.accessibilityLabel = token2;
+    obj9.onPress = function onPress() {
+      const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
+      ComponentDispatch.dispatchKeyed(outer1_12.VOICE_MESSAGE_SEND, channelId, { isCancelling: false });
+    };
+    obj9 = tmp61(exiting(11676), obj9);
+    obj7.rightAccessory = obj9;
+    obj7 = tmp56(tmp57, obj7);
+    obj6.children = obj7;
+    tmp53(exiting(3992).View, obj6);
+    const tmp62 = exiting(11676);
   } else {
-    tmp35 = 10765;
+    obj10 = {};
+    obj11 = {};
+    const items6 = [tmp2.trashContainer, animatedStyle];
+    obj11.style = items6;
+    obj11.androidRippleConfig = ANDROID_FOREGROUND_RIPPLE;
+    obj11.accessibilityRole = "button";
+    const intl2 = channelId(1212).intl;
+    obj11.accessibilityLabel = intl2.string(channelId(1212).t.RdK9sV);
+    obj11.onPressIn = function onPressIn() {
+      return channelId(tmp3[42]).triggerHaptic();
+    };
+    obj11.onPress = function onPress() {
+      const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
+      ComponentDispatch.dispatchKeyed(outer1_12.VOICE_MESSAGE_SEND, channelId, { isCancelling: true });
+    };
+    obj12 = { style: animatedStyle1, source: exiting(4091), size: channelId(1273).Icon.Sizes.MEDIUM };
+    obj11.children = callback2(closure_19, obj12);
+    const items7 = [callback2(closure_20, obj11), , ];
+    obj13 = { style: tmp2.voiceChatContainer };
+    obj14 = { isRecording: tmp5, initialAnimation, backgroundColor: tmp15 };
+    obj13.children = callback2(exiting(11675), obj14);
+    items7[1] = callback2(exiting(3992).View, obj13);
+    obj15 = { ref };
+    const items8 = [tmp2.sendContainer, animatedStyle2];
+    obj15.style = items8;
+    obj15.androidRippleConfig = ANDROID_FOREGROUND_RIPPLE;
+    obj15.accessibilityRole = "button";
+    const intl3 = channelId(1212).intl;
+    obj15.accessibilityLabel = intl3.string(channelId(1212).t["+8GStU"]);
+    obj15.onPress = function onPress() {
+      const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
+      ComponentDispatch.dispatchKeyed(outer1_12.VOICE_MESSAGE_SEND, channelId, { isCancelling: false });
+    };
+    const obj16 = { style: animatedStyle3 };
+    if (tmp5) {
+      let tmp50 = 4078;
+    } else {
+      tmp50 = 10737;
+    }
+    obj16.source = exiting(tmp50);
+    obj16.size = channelId(1273).Icon.Sizes.MEDIUM;
+    obj15.children = callback2(closure_19, obj16);
+    items7[2] = callback2(closure_20, obj15);
+    obj10.children = items7;
+    obj5.children = callback3(closure_18, obj10);
+    items5[1] = tmp32(tmp33, obj5);
+    obj4.children = items5;
+    items3[1] = callback3(exiting(3992).View, obj4);
+    obj17 = { safeAreaBottom: bottom, initialAnimation, voiceMessageAnimationState };
+    items3[2] = callback2(LockPill, obj17);
+    obj1.children = items3;
+    return callback3(closure_18, obj1);
   }
-  obj10.source = exiting(tmp35);
-  obj10.size = channelId(1273).Icon.Sizes.MEDIUM;
-  obj9.children = callback2(closure_19, obj10);
-  items7[2] = callback2(closure_20, obj9);
-  obj5.children = items7;
-  items5[1] = callback3(recordingAnimation, obj5);
-  obj4.children = items5;
-  items3[1] = callback3(exiting(3991).View, obj4);
-  items3[2] = callback2(LockPill, { safeAreaBottom: bottom, initialAnimation, voiceMessageAnimationState });
-  obj1.children = items3;
-  return callback3(closure_18, obj1);
 });
 const memoResult1 = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;

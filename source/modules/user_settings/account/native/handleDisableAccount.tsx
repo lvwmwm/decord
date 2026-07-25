@@ -1,10 +1,10 @@
-// Module ID: 13765
-// Function ID: 105536
+// Module ID: 13776
+// Function ID: 105663
 // Name: handleDisableAccount
-// Dependencies: [1838, 1849, 1212, 9266, 13750, 4470, 2]
+// Dependencies: [1838, 1850, 1212, 9158, 13761, 4471, 2]
 // Exports: default
 
-// Module 13765 (handleDisableAccount)
+// Module 13776 (handleDisableAccount)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -28,7 +28,7 @@ export default function handleDisableAccount() {
     let intl = require(1212) /* getSystemLocale */.intl;
     let intl2 = require(1212) /* getSystemLocale */.intl;
     const stringResult = intl.string(require(1212) /* getSystemLocale */.t.vJiTOL);
-    let obj = importDefault(4470);
+    let obj = importDefault(4471);
     obj = { title: stringResult, body: intl2.string(require(1212) /* getSystemLocale */.t.UyVVan) };
     obj.show(obj);
     const stringResult1 = intl2.string(require(1212) /* getSystemLocale */.t.UyVVan);
@@ -66,6 +66,6 @@ export default function handleDisableAccount() {
         return obj;
       })();
     }
-    importDefault(13750)(tmp);
+    importDefault(13761)(tmp);
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 15877
-// Function ID: 122578
+// Module ID: 15888
+// Function ID: 122747
 // Name: ParticipantsSummary
-// Dependencies: [57, 31, 27, 33, 4130, 689, 3974, 15878, 10026, 1273, 4552, 4126, 3991, 4558, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 3975, 15889, 9955, 1273, 4553, 4127, 3992, 4559, 2]
 // Exports: default
 
-// Module 15877 (ParticipantsSummary)
+// Module 15888 (ParticipantsSummary)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -19,13 +19,13 @@ function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   ({ applicationId, channelId } = arg0);
-  const obj = { users: importDefault(15878)(applicationId, channelId), max: 5 };
-  const tmp = importDefault(15878)(applicationId, channelId);
+  const obj = { users: importDefault(15889)(applicationId, channelId), max: 5 };
+  const tmp = importDefault(15889)(applicationId, channelId);
   obj.avatarSize = require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj.withPlusCount = true;
   obj.style = { marginBottom: 8 };
   obj.cutout = { inset: -8 };
-  return callback2(importDefault(10026), obj);
+  return callback2(importDefault(9955), obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 _createForOfIteratorHelperLoose = { ongoingActivityContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.4)", alignItems: "center", justifyContent: "center" } };
@@ -49,18 +49,18 @@ export default function ActivityShelfItemSummary(submitting) {
     flag = false;
   }
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4552) /* PillWrapper */;
+  let obj = require(4553) /* PillWrapper */;
   obj = { style: tmp.ongoingActivityContainer };
   obj = { style: tmp.overlayActivityName };
   const obj1 = { variant: "text-md/semibold", style: flag ? tmp.loadingTextColor : tmp.overlayActivityNameText, lineClamp: 2, children: applicationName };
-  const items = [callback2(require(4126) /* Text */.Text, obj1), ];
+  const items = [callback2(require(4127) /* Text */.Text, obj1), ];
   const obj2 = { style: items1 };
   items1 = [tmp.ellipsis, callback(obj.useLoadingStyles(flag, "md"), 2)[1]];
   if (flag) {
-    flag = callback2(require(4558) /* EllipsisCircle */.Ellipsis, { variant: "active", size: "md" });
+    flag = callback2(require(4559) /* EllipsisCircle */.Ellipsis, { variant: "active", size: "md" });
   }
   obj2.children = flag;
-  items[1] = callback2(importDefault(3991).View, obj2);
+  items[1] = callback2(importDefault(3992).View, obj2);
   obj.children = items;
   const items2 = [closure_6(View, obj), callback2(ParticipantsSummary, { channelId, applicationId })];
   obj.children = items2;

@@ -1,10 +1,10 @@
-// Module ID: 3790
-// Function ID: 29542
+// Module ID: 3791
+// Function ID: 29553
 // Name: TOTAL_PREMIUM_GROUP_MEMBER_SEATS
-// Dependencies: [653, 664, 1920, 1212, 2780, 2]
+// Dependencies: [653, 664, 1921, 1212, 2781, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
-// Module 3790 (TOTAL_PREMIUM_GROUP_MEMBER_SEATS)
+// Module 3791 (TOTAL_PREMIUM_GROUP_MEMBER_SEATS)
 import ME from "ME";
 import importDefaultResult from "wrapURL";
 
@@ -23,7 +23,7 @@ export const HELP_CENTER_LINK = articleURL;
 export const CANNOT_INVITE_STATUSES = items;
 export const getPremiumGroupProductName = function getPremiumGroupProductName() {
   const intl = require(1212) /* getSystemLocale */.intl;
-  return intl.string(importDefault(2780).aFBQ3d);
+  return intl.string(importDefault(2781).aFBQ3d);
 };
 export const getPremiumGroupCountryName = function getPremiumGroupCountryName() {
   const intl = require(1212) /* getSystemLocale */.intl;

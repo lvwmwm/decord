@@ -1,9 +1,9 @@
-// Module ID: 3850
-// Function ID: 32055
+// Module ID: 3851
+// Function ID: 32066
 // Name: LOW_SATURATION_THRESHOLD
 // Dependencies: [2]
 
-// Module 3850 (LOW_SATURATION_THRESHOLD)
+// Module 3851 (LOW_SATURATION_THRESHOLD)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityPreferencesContext/AccessibilityConstants.tsx");
 
 export const LOW_SATURATION_THRESHOLD = 0.4;

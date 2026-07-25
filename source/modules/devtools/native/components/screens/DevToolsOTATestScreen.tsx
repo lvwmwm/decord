@@ -1,10 +1,10 @@
-// Module ID: 14676
-// Function ID: 111750
+// Module ID: 14687
+// Function ID: 111877
 // Name: OtaVerificationActionSheet
-// Dependencies: [5, 57, 31, 27, 482, 33, 4130, 689, 5187, 5186, 4126, 10968, 4098, 4541, 5501, 5165, 14442, 5490, 9320, 4080, 14677, 2]
+// Dependencies: [5, 57, 31, 27, 482, 33, 4131, 689, 5187, 5186, 4127, 10919, 4099, 4542, 5501, 5164, 14453, 5490, 9213, 4081, 14688, 2]
 // Exports: default
 
-// Module 14676 (OtaVerificationActionSheet)
+// Module 14687 (OtaVerificationActionSheet)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -23,7 +23,7 @@ function OtaVerificationActionSheet(result) {
   const require = tmp;
   let obj = { header: callback2(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: "OTA Verification Result" }) };
   obj = { style: tmp.verificationLine };
-  const items = [callback2(require(4126) /* Text */.Text, { variant: "heading-md/bold", children: "Has OTA Applied" }), ];
+  const items = [callback2(require(4127) /* Text */.Text, { variant: "heading-md/bold", children: "Has OTA Applied" }), ];
   obj = { variant: "text-md/normal" };
   let str = "No";
   let str2 = "No";
@@ -31,11 +31,11 @@ function OtaVerificationActionSheet(result) {
     str2 = "Yes";
   }
   obj.children = str2;
-  items[1] = callback2(require(4126) /* Text */.Text, obj);
+  items[1] = callback2(require(4127) /* Text */.Text, obj);
   obj.children = items;
   const items1 = [callback3(closure_7, obj), , , , ];
   const obj1 = { style: tmp.verificationLine };
-  const items2 = [callback2(require(4126) /* Text */.Text, { variant: "heading-md/bold", children: "Has Local Copy" }), ];
+  const items2 = [callback2(require(4127) /* Text */.Text, { variant: "heading-md/bold", children: "Has Local Copy" }), ];
   const obj2 = { variant: "text-md/normal" };
   let str3 = "--";
   if (null != result.hasLocalCopy) {
@@ -46,23 +46,23 @@ function OtaVerificationActionSheet(result) {
     str3 = str4;
   }
   obj2.children = str3;
-  items2[1] = callback2(require(4126) /* Text */.Text, obj2);
+  items2[1] = callback2(require(4127) /* Text */.Text, obj2);
   obj1.children = items2;
   items1[1] = callback3(closure_7, obj1);
   const obj3 = { style: tmp.verificationLine };
-  const items3 = [callback2(require(4126) /* Text */.Text, { variant: "heading-md/bold", children: "OTA is Valid" }), ];
+  const items3 = [callback2(require(4127) /* Text */.Text, { variant: "heading-md/bold", children: "OTA is Valid" }), ];
   const obj4 = { variant: "text-md/normal" };
   if (result.isValid) {
     str = "Yes";
   }
   obj4.children = str;
-  items3[1] = callback2(require(4126) /* Text */.Text, obj4);
+  items3[1] = callback2(require(4127) /* Text */.Text, obj4);
   obj3.children = items3;
   items1[2] = callback3(closure_7, obj3);
   let tmp21Result = null;
   if (null !== result.totalFileCount) {
     const obj5 = { style: tmp.verificationLine };
-    const items4 = [callback2(require(4126) /* Text */.Text, { variant: "heading-md/bold", children: "File Counts" }), ];
+    const items4 = [callback2(require(4127) /* Text */.Text, { variant: "heading-md/bold", children: "File Counts" }), ];
     const obj6 = { variant: "text-md/normal" };
     const items5 = [result.totalFileCount, " files. ", , , , ];
     const successes = result.successes;
@@ -80,7 +80,7 @@ function OtaVerificationActionSheet(result) {
     items5[4] = length1;
     items5[5] = " failures.";
     obj6.children = items5;
-    items4[1] = callback3(require(4126) /* Text */.Text, obj6);
+    items4[1] = callback3(require(4127) /* Text */.Text, obj6);
     obj5.children = items4;
     tmp21Result = callback3(closure_7, obj5);
     const tmp21 = callback3;
@@ -91,7 +91,7 @@ function OtaVerificationActionSheet(result) {
   let tmp15 = null;
   if (result.failures.length > 0) {
     const obj7 = { style: tmp.verificationLine };
-    const items6 = [callback2(require(4126) /* Text */.Text, { variant: "heading-md/bold", children: "Failures" }), ];
+    const items6 = [callback2(require(4127) /* Text */.Text, { variant: "heading-md/bold", children: "Failures" }), ];
     const failures1 = result.failures;
     items6[1] = failures1.map((children) => outer1_8(tmp(outer1_2[10]).Text, { variant: "text-md/normal", style: tmp.verificationFailure, children }, children));
     obj7.children = items6;
@@ -153,10 +153,10 @@ export default function DevToolsOTATestScreen() {
   let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer };
   obj = { spacing: 16 };
   obj = { title: "OTA Status", hasIcons: true };
-  const obj1 = { label: "Status", subLabel: tmp8[0], icon: callback2(first(14442).WrenchIcon, {}) };
+  const obj1 = { label: "Status", subLabel: tmp8[0], icon: callback2(first(14453).WrenchIcon, {}) };
   const items = [
-    callback2(first(5165).TableRow, obj1),
-    callback2(first(5165).TableRow, {
+    callback2(first(5164).TableRow, obj1),
+    callback2(first(5164).TableRow, {
       label: "Root Path (tap to copy)",
       subLabel: first,
       onPress: function copyRootPath() {
@@ -177,9 +177,9 @@ export default function DevToolsOTATestScreen() {
     str = source;
   }
   obj4.subLabel = str;
-  obj4.icon = callback2(first(14442).WrenchIcon, {});
-  const items2 = [callback2(first(5165).TableRow, obj4), ];
-  const obj5 = { icon: callback2(first(9320).PaperIcon, {}) };
+  obj4.icon = callback2(first(14453).WrenchIcon, {});
+  const items2 = [callback2(first(5164).TableRow, obj4), ];
+  const obj5 = { icon: callback2(first(9213).PaperIcon, {}) };
   let str2 = "{}";
   if (null != tmp5) {
     let metadata = tmp5.metadata;
@@ -189,45 +189,45 @@ export default function DevToolsOTATestScreen() {
     str2 = JSON.stringify(metadata, null, 2);
   }
   obj5.label = str2;
-  items2[1] = callback2(first(5165).TableRow, obj5);
+  items2[1] = callback2(first(5164).TableRow, obj5);
   obj3.children = items2;
   items1[1] = callback3(first(5501).TableRowGroup, obj3);
   const obj6 = { title: "Build Override Cookie", hasIcons: true };
-  const obj7 = { icon: callback2(first(14442).WrenchIcon, {}), label: "Is cookie set?" };
+  const obj7 = { icon: callback2(first(14453).WrenchIcon, {}), label: "Is cookie set?" };
   let str3 = "Yes";
   if (null == tmp7) {
     str3 = "No";
   }
   obj7.subLabel = str3;
-  const items3 = [callback2(first(5165).TableRow, obj7), ];
+  const items3 = [callback2(first(5164).TableRow, obj7), ];
   let tmp22 = null != tmp7;
   if (tmp22) {
-    const obj8 = { icon: callback2(first(14442).WrenchIcon, {}) };
+    const obj8 = { icon: callback2(first(14453).WrenchIcon, {}) };
     const _JSON = JSON;
     obj8.label = JSON.stringify(tmp7, null, 2);
-    tmp22 = callback2(first(5165).TableRow, obj8);
+    tmp22 = callback2(first(5164).TableRow, obj8);
   }
   items3[1] = tmp22;
   obj6.children = items3;
   items1[2] = callback3(first(5501).TableRowGroup, obj6);
   const obj9 = { title: "Actions", hasIcons: true };
-  const obj10 = { label: "Check for Update & Reload", icon: callback2(first(4080).DownloadIcon, {}), onPress: importDefault(10968).checkForUpdateAndReload };
-  const items4 = [callback2(first(5165).TableRow, obj10), ];
+  const obj10 = { label: "Check for Update & Reload", icon: callback2(first(4081).DownloadIcon, {}), onPress: importDefault(10919).checkForUpdateAndReload };
+  const items4 = [callback2(first(5164).TableRow, obj10), ];
   const obj11 = { label: "Verify OTA Files" };
   let str4 = "Verify content hashes for all app files";
   if (tmp10) {
     str4 = "Verification in progress";
   }
   obj11.subLabel = str4;
-  obj11.icon = callback2(first(14677).ClipboardCheckIcon, {});
+  obj11.icon = callback2(first(14688).ClipboardCheckIcon, {});
   obj11.onPress = function verifyFiles() {
     return _verifyFiles(...arguments);
   };
   obj11.disabled = tmp10;
-  items4[1] = callback2(first(5165).TableRow, obj11);
+  items4[1] = callback2(first(5164).TableRow, obj11);
   obj9.children = items4;
   items1[3] = callback3(first(5501).TableRowGroup, obj9);
   obj.children = items1;
-  obj.children = callback3(first(4541).Stack, obj);
+  obj.children = callback3(first(4542).Stack, obj);
   return callback2(_verifyFiles, obj);
 };

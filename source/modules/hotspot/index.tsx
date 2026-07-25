@@ -1,5 +1,5 @@
 // Module ID: 5596
-// Function ID: 47568
+// Function ID: 47573
 // Name: HotspotStore
 // Dependencies: [5597, 2, 5598, 5599]
 

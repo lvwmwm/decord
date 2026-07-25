@@ -1,10 +1,10 @@
-// Module ID: 9339
-// Function ID: 72870
+// Module ID: 9232
+// Function ID: 72359
 // Name: updateContextMenuState
-// Dependencies: [31, 621, 682, 3991, 4099, 2]
+// Dependencies: [31, 621, 682, 3992, 4100, 2]
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, useActiveContextMenu, useContextMenuState
 
-// Module 9339 (updateContextMenuState)
+// Module 9232 (updateContextMenuState)
 import result from "result";
 import keys from "keys";
 
@@ -46,7 +46,7 @@ let tmp3 = (() => {
     }
     const result3 = activeIndex.set(-1);
   }
-  let obj = { INDEX_BOUNDS_WIDTH_OFFSET: 2, INDEX_BOUNDS_HEIGHT_OFFSET: 3, INDEX_BOUNDS_PAGE_Y_OFFSET: 1, INDEX_BOUNDS_PAGE_X_OFFSET: 0, INDEX_BOUNDS_OFFSET: 4, runOnJS: require(3991).runOnJS, triggerHapticFeedback: require(4099) /* getAndroidLightImpactEffect */.triggerHapticFeedback, HapticFeedbackTypes: require(4099) /* getAndroidLightImpactEffect */.HapticFeedbackTypes };
+  let obj = { INDEX_BOUNDS_WIDTH_OFFSET: 2, INDEX_BOUNDS_HEIGHT_OFFSET: 3, INDEX_BOUNDS_PAGE_Y_OFFSET: 1, INDEX_BOUNDS_PAGE_X_OFFSET: 0, INDEX_BOUNDS_OFFSET: 4, runOnJS: require(3992).runOnJS, triggerHapticFeedback: require(4100) /* getAndroidLightImpactEffect */.triggerHapticFeedback, HapticFeedbackTypes: require(4100) /* getAndroidLightImpactEffect */.HapticFeedbackTypes };
   updateContextMenuState.__closure = obj;
   updateContextMenuState.__workletHash = 10158111154044;
   updateContextMenuState.__initData = closure_4;

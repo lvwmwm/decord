@@ -1,10 +1,10 @@
-// Module ID: 11595
-// Function ID: 90225
+// Module ID: 11561
+// Function ID: 89942
 // Name: useGuildPowerupOnActivate
-// Dependencies: [31, 1838, 4023, 4018, 11596, 566, 11597, 5462, 11598, 4022, 4098, 11579, 4966, 6641, 4337, 6649, 2]
+// Dependencies: [31, 1838, 4024, 4019, 11562, 566, 11563, 5462, 11564, 4023, 4099, 11545, 4967, 11565, 4338, 6269, 2]
 // Exports: default
 
-// Module 11595 (useGuildPowerupOnActivate)
+// Module 11561 (useGuildPowerupOnActivate)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

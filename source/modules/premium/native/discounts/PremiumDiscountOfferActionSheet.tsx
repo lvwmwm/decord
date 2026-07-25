@@ -1,10 +1,10 @@
-// Module ID: 15664
-// Function ID: 120771
+// Module ID: 15675
+// Function ID: 120939
 // Name: markAsDismissed
-// Dependencies: [31, 1851, 653, 1345, 33, 5462, 5482, 675, 7374, 8183, 6661, 5187, 15665, 2]
+// Dependencies: [31, 1852, 653, 1345, 33, 5462, 5482, 675, 6447, 9253, 6162, 5187, 15676, 2]
 // Exports: default
 
-// Module 15664 (markAsDismissed)
+// Module 15675 (markAsDismissed)
 import result from "result";
 import GuildFeatures from "GuildFeatures";
 import ME from "ME";
@@ -29,14 +29,23 @@ export default function _default(markAsDismissed) {
   analyticsLocations = userDiscountOffer(analyticsLocations[5])(userDiscountOffer(analyticsLocations[6]).PREMIUM_DISCOUNT_OFFER_ACTION_SHEET).analyticsLocations;
   const items = [userDiscountOffer];
   memo = memo.useMemo(() => {
-    const first = userDiscountOffer.discount.planIds[0];
-    let tmp2 = null;
+    let first;
+    if (null != userDiscountOffer) {
+      const discount = userDiscountOffer.discount;
+      if (null != discount) {
+        const planIds = discount.planIds;
+        if (null != planIds) {
+          first = planIds[0];
+        }
+      }
+    }
+    let tmp3 = null;
     if (null != first) {
-      tmp2 = outer1_5[first];
+      tmp3 = outer1_5[first];
     }
     let premiumType;
-    if (null != tmp2) {
-      premiumType = tmp2.premiumType;
+    if (null != tmp3) {
+      premiumType = tmp3.premiumType;
     }
     if (null == premiumType) {
       premiumType = outer1_4.TIER_2;
@@ -44,32 +53,44 @@ export default function _default(markAsDismissed) {
     return premiumType;
   }, items);
   const effect = memo.useEffect(() => {
-    let obj = userDiscountOffer(analyticsLocations[7]);
-    obj = { location: analyticsLocations, discount_offer_id: userDiscountOffer.id };
-    obj.track(outer1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_VIEWED, obj);
-    markAsDismissed(analyticsLocations[8]).acknowledgeUserOffer(undefined, userDiscountOffer);
+    if (null != userDiscountOffer) {
+      let obj = userDiscountOffer(analyticsLocations[7]);
+      obj = { location: analyticsLocations, discount_offer_id: userDiscountOffer.id };
+      obj.track(outer1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_VIEWED, obj);
+      markAsDismissed(analyticsLocations[8]).acknowledgeUserOffer(undefined, userDiscountOffer);
+      const obj3 = markAsDismissed(analyticsLocations[8]);
+    }
   }, []);
-  const items1 = [analyticsLocations, markAsDismissed, userDiscountOffer];
-  const items2 = [analyticsLocations, markAsDismissed, userDiscountOffer, memo];
+  const items1 = [userDiscountOffer, markAsDismissed];
+  const effect1 = memo.useEffect(() => {
+    if (null == userDiscountOffer) {
+      markAsDismissed(outer1_7.AUTO_DISMISS);
+    }
+  }, items1);
+  const items2 = [analyticsLocations, markAsDismissed, userDiscountOffer];
+  const items3 = [analyticsLocations, markAsDismissed, userDiscountOffer, memo];
   const callback = memo.useCallback(() => {
     let obj = userDiscountOffer(analyticsLocations[7]);
-    obj = { location: analyticsLocations, discount_offer_id: userDiscountOffer.id };
+    obj = { location: analyticsLocations };
+    let id;
+    if (null != userDiscountOffer) {
+      id = userDiscountOffer.id;
+    }
+    obj.discount_offer_id = id;
     obj.track(outer1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_DISMISSED, obj);
     markAsDismissed(outer1_7.USER_DISMISS);
-  }, items1);
-  const callback1 = memo.useCallback(() => {
-    let obj = userDiscountOffer(analyticsLocations[7]);
-    obj = { location: analyticsLocations, discount_offer_id: userDiscountOffer.id };
-    obj.track(outer1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_CTA_CLICKED, obj);
-    markAsDismissed(outer1_7.TAKE_ACTION);
-    obj = { analyticsLocations };
-    userDiscountOffer(analyticsLocations[9])(obj);
-    userDiscountOffer(analyticsLocations[10])({ analyticsLocation: outer1_9, analyticsLocations, premiumType: memo });
   }, items2);
-  let obj = { startExpanded: true, onDismiss: callback, children: jsx(userDiscountOffer(analyticsLocations[12]), { discountOffer: userDiscountOffer, onConfirm: callback1 }) };
-  let id;
+  let tmp8Result = null;
   if (null != userDiscountOffer) {
-    id = userDiscountOffer.id;
+    let obj = { startExpanded: true, onDismiss: callback };
+    obj = { discountOffer: userDiscountOffer, onConfirm: tmp6 };
+    obj.children = jsx(userDiscountOffer(analyticsLocations[12]), { discountOffer: userDiscountOffer, onConfirm: tmp6 });
+    let id;
+    if (null != userDiscountOffer) {
+      id = userDiscountOffer.id;
+    }
+    tmp8Result = jsx(markAsDismissed(analyticsLocations[11]).BottomSheet, { discountOffer: userDiscountOffer, onConfirm: tmp6 }, id);
+    const tmp8 = jsx;
   }
-  return jsx(markAsDismissed(analyticsLocations[11]).BottomSheet, { startExpanded: true, onDismiss: callback, children: jsx(userDiscountOffer(analyticsLocations[12]), { discountOffer: userDiscountOffer, onConfirm: callback1 }) }, id);
+  return tmp8Result;
 };

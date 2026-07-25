@@ -1,8 +1,8 @@
-// Module ID: 15422
-// Function ID: 117659
-// Dependencies: [31, 27, 9141, 33, 4130, 4126, 2]
+// Module ID: 15432
+// Function ID: 117787
+// Dependencies: [31, 27, 9033, 33, 4131, 4127, 2]
 
-// Module 15422
+// Module 15432
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -20,7 +20,7 @@ const memoResult = require("result").memo((arg0) => {
   ({ title, trailing } = arg0);
   let obj = { style: callback3().section };
   obj = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: title };
-  const items = [callback(require(4126) /* Text */.Text, obj), trailing];
+  const items = [callback(require(4127) /* Text */.Text, obj), trailing];
   obj.children = items;
   return callback2(View, obj);
 });

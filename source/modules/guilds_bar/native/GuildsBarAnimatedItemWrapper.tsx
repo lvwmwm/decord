@@ -1,10 +1,10 @@
-// Module ID: 14870
-// Function ID: 113460
+// Module ID: 14881
+// Function ID: 113588
 // Name: UnreadIndicator
-// Dependencies: [31, 4551, 14860, 33, 4130, 689, 3834, 4476, 4542, 3991, 7678, 14871, 14849, 3987, 1212, 3843, 5515, 7961, 2]
+// Dependencies: [31, 4552, 14871, 33, 4131, 689, 3835, 4477, 4543, 3992, 7620, 14882, 14860, 3988, 1212, 3844, 5515, 7909, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 14870 (UnreadIndicator)
+// Module 14881 (UnreadIndicator)
 import result from "result";
 import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
@@ -36,7 +36,7 @@ class UnreadIndicator {
     obj = require("map");
     token = obj.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE);
     c4 = token;
-    tmp4 = f113467(c6());
+    tmp4 = f113595(c6());
     GUILD_BAR_ITEM_SIZE = tmp4;
     tmp5 = MOUNTED === require("_createForOfIteratorHelperLoose").TransitionStates.MOUNTED;
     c6 = tmp5;
@@ -88,7 +88,7 @@ class UnreadIndicator {
     obj.guildItemSize = token;
     fn.__closure = obj;
     fn.__workletHash = 404454683979;
-    fn.__initData = f113468;
+    fn.__initData = f113596;
     items1 = [, , , ];
     items1[0] = tmp5;
     items1[1] = sharedId;
@@ -122,15 +122,15 @@ class UnreadIndicator {
     obj1.transitionState = MOUNTED;
     obj1.TransitionStates = require("_createForOfIteratorHelperLoose").TransitionStates;
     obj1.cleanUp = cleanUp;
-    obj1.runOnJS = require("module_3991").runOnJS;
+    obj1.runOnJS = require("module_3992").runOnJS;
     fn2.__closure = obj1;
     fn2.__workletHash = 10632665703864;
-    fn2.__initData = f113468;
+    fn2.__initData = f113596;
     items2 = [, ];
     items2[0] = MOUNTED;
     items2[1] = cleanUp;
     callback1 = cleanUp.useCallback(fn2, items2);
-    return c7(require("module_7678"), { collapsable: false, entering: callback, layout: callback1, style: memo, pointerEvents: "none" });
+    return c7(require("module_7620"), { collapsable: false, entering: callback, layout: callback1, style: memo, pointerEvents: "none" });
   }
 }
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
@@ -146,7 +146,7 @@ let closure_11 = _createForOfIteratorHelperLoose.createStyles(() => {
     num = 56;
   }
   let obj = { draggedElement: { opacity: 0 }, selectedBackgroundOverlay: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }, container: { position: "relative", overflow: "visible" } };
-  obj = { position: "absolute", top: num / 2, left: -4, height: 8, width: 8, borderRadius: importDefault(689).radii.xs, backgroundColor: importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE };
+  obj = { position: "absolute", top: num / 2, left: -4, height: 8, width: 8, borderRadius: importDefault(689).radii.xs, backgroundColor: importDefault(689).colors.TEXT_STRONG };
   obj.unreadIndicator = obj;
   obj = { position: "absolute", left: num + 16, top: 0, right: 8, height: num, transformOrigin: "0% 50%", display: "flex", flexDirection: "row", alignItems: "center" };
   obj.expandedChildrenWrapper = obj;
@@ -484,7 +484,7 @@ export const useGuildsBarAnimatedWrapperStyles = function useGuildsBarAnimatedWr
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const token = require(3834) /* map */.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const token = require(3835) /* map */.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
   return callback4(flag, flag2, token, callback());
 };
 export { UnreadIndicator };

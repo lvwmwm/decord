@@ -1,10 +1,10 @@
-// Module ID: 9562
-// Function ID: 74339
+// Module ID: 9483
+// Function ID: 73926
 // Name: _handleContentLinking
-// Dependencies: [5, 7541, 653, 4337, 5626, 1198, 9563, 2]
+// Dependencies: [5, 6637, 653, 4338, 5626, 1198, 9484, 2]
 // Exports: default
 
-// Module 9562 (_handleContentLinking)
+// Module 9483 (_handleContentLinking)
 import shouldNavigate from "shouldNavigate";
 import { Routes } from "ME";
 

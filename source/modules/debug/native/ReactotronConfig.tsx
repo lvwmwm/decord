@@ -1,9 +1,9 @@
-// Module ID: 13387
-// Function ID: 102745
+// Module ID: 13398
+// Function ID: 102872
 // Name: getPluginOptions
-// Dependencies: [13388, 2]
+// Dependencies: [13399, 2]
 
-// Module 13387 (getPluginOptions)
+// Module 13398 (getPluginOptions)
 import importDefaultResult from "getPluginOptions";
 
 const reactNative = require("getPluginOptions").configure({}).useReactNative();

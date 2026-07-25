@@ -1,10 +1,10 @@
-// Module ID: 13959
-// Function ID: 106785
+// Module ID: 13970
+// Function ID: 106912
 // Name: BountiesScrollPromptFooter
-// Dependencies: [31, 27, 4122, 33, 4130, 689, 13960, 4134, 566, 1557, 3991, 3842, 2]
+// Dependencies: [31, 27, 4123, 33, 4131, 689, 13971, 4135, 566, 1557, 3992, 3843, 2]
 // Exports: default
 
-// Module 13959 (BountiesScrollPromptFooter)
+// Module 13970 (BountiesScrollPromptFooter)
 import result from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,8 +34,8 @@ export default function BountiesScrollPromptFooter(zIndex) {
   const opacityStyle = zIndex.opacityStyle;
   ({ visible, children, onContentLayout } = zIndex);
   let tmp = callback2();
-  let obj = zIndex(13960);
-  obj = { visible, entranceTiming: zIndex(4134).timingStandard, exitTiming: zIndex(4134).timingStandard };
+  let obj = zIndex(13971);
+  obj = { visible, entranceTiming: zIndex(4135).timingStandard, exitTiming: zIndex(4135).timingStandard };
   const visibilityTransition = obj.useVisibilityTransition(obj);
   let shouldRender = visibilityTransition.shouldRender;
   const items = [zIndex];
@@ -67,16 +67,16 @@ export default function BountiesScrollPromptFooter(zIndex) {
       str2 = "halt";
     }
     obj2.withReducedMotion = str2;
-    obj1.children = callback(zIndex(3842).BountiesScrollGradientRive, obj2);
-    const items4 = [callback(importDefault(3991).View, obj1), ];
+    obj1.children = callback(zIndex(3843).BountiesScrollGradientRive, obj2);
+    const items4 = [callback(importDefault(3992).View, obj1), ];
     const obj3 = {};
     const items5 = [tmp.content, tmp6, opacityStyle];
     obj3.style = items5;
     obj3.onLayout = onContentLayout;
     obj3.children = children;
-    items4[1] = callback(importDefault(3991).View, obj3);
+    items4[1] = callback(importDefault(3992).View, obj3);
     obj.children = items4;
-    shouldRender = closure_7(importDefault(3991).View, obj);
+    shouldRender = closure_7(importDefault(3992).View, obj);
     const tmp7 = closure_7;
   }
   return shouldRender;

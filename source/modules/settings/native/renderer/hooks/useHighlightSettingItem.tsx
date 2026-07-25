@@ -1,10 +1,10 @@
-// Module ID: 14625
-// Function ID: 111444
+// Module ID: 14636
+// Function ID: 111571
 // Name: useHighlightSettingItem
-// Dependencies: [13603, 2]
+// Dependencies: [13614, 2]
 // Exports: useHighlightSettingItem
 
-// Module 14625 (useHighlightSettingItem)
+// Module 14636 (useHighlightSettingItem)
 import zustandStore from "zustandStore";
 
 const result = require("set").fileFinishedImporting("modules/settings/native/renderer/hooks/useHighlightSettingItem.tsx");

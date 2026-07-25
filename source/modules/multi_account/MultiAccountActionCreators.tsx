@@ -1,10 +1,10 @@
-// Module ID: 11486
-// Function ID: 89404
+// Module ID: 11449
+// Function ID: 89063
 // Name: validateMultiAccountTokens
-// Dependencies: [5, 1194, 11482, 653, 3, 684, 686, 507, 675, 5588, 2]
+// Dependencies: [5, 1194, 11445, 653, 3, 684, 686, 507, 675, 5588, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 11486 (validateMultiAccountTokens)
+// Module 11449 (validateMultiAccountTokens)
 import fromEntries from "fromEntries";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";

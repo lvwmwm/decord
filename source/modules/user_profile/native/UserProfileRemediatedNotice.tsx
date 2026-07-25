@@ -1,10 +1,10 @@
-// Module ID: 12177
-// Function ID: 95393
+// Module ID: 12153
+// Function ID: 95202
 // Name: RemediatedUserNotice
-// Dependencies: [31, 27, 3767, 653, 33, 4130, 689, 8282, 624, 4126, 1212, 8962, 2]
+// Dependencies: [31, 27, 3768, 653, 33, 4131, 689, 8017, 624, 4127, 1212, 8850, 2]
 // Exports: default
 
-// Module 12177 (RemediatedUserNotice)
+// Module 12153 (RemediatedUserNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ export default function RemediatedUserNotice(user) {
       obj = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1 };
       const intl = user(1212).intl;
       obj.children = intl.string(user(1212).t["oC/fU6"]);
-      isBlocked = callback(user(4126).Text, obj);
+      isBlocked = callback(user(4127).Text, obj);
     }
     const items2 = [isBlocked, ];
     if (isIgnored) {
@@ -48,7 +48,7 @@ export default function RemediatedUserNotice(user) {
       const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1 };
       const intl2 = user(1212).intl;
       obj2.children = intl2.string(user(1212).t.HXz5An);
-      const items3 = [callback(user(4126).Text, obj2), callback(user(4126).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const items3 = [callback(user(4127).Text, obj2), callback(user(4127).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = user(1212).intl;
       const obj3 = {
         unignoreHook(children) {

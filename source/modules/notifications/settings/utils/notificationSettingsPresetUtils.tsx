@@ -1,10 +1,10 @@
-// Module ID: 4328
-// Function ID: 38003
+// Module ID: 4329
+// Function ID: 38014
 // Name: Presets
-// Dependencies: [653, 4326, 4329, 1212, 2]
+// Dependencies: [653, 4327, 4330, 1212, 2]
 // Exports: arePresetSettingsUnset, presetFromSettings, presetName
 
-// Module 4328 (Presets)
+// Module 4329 (Presets)
 import { UserNotificationSettings } from "ME";
 import { UnreadSetting } from "ReadStateTypes";
 
@@ -14,9 +14,9 @@ const result = require("n").fileFinishedImporting("modules/notifications/setting
 export const Presets = obj;
 export const presetFromSettings = function presetFromSettings(unreadSetting, messageNotifications) {
   const items = [messageNotifications, unreadSetting];
-  const match = require(4329) /* n */.match(items);
+  const match = require(4330) /* n */.match(items);
   const items1 = [UserNotificationSettings.ALL_MESSAGES, UnreadSetting.ALL_MESSAGES];
-  const str = require(4329) /* n */;
+  const str = require(4330) /* n */;
   const items2 = [UserNotificationSettings.ONLY_MENTIONS, UnreadSetting.UNSET];
   const withResult = match.with(items1, () => outer1_4.ALL_MESSAGES);
   const items3 = [UserNotificationSettings.ONLY_MENTIONS, UnreadSetting.ONLY_MENTIONS];
@@ -28,8 +28,8 @@ export const presetFromSettings = function presetFromSettings(unreadSetting, mes
   return match.with(items1, () => outer1_4.ALL_MESSAGES).with(items2, () => outer1_4.MENTIONS).with(items3, () => outer1_4.MENTIONS).with(items4, () => outer1_4.NOTHING).with(items5, () => outer1_4.NOTHING).otherwise(() => outer1_4.CUSTOM);
 };
 export const presetName = function presetName(arg0) {
-  const match = require(4329) /* n */.match(arg0);
-  const str = require(4329) /* n */;
+  const match = require(4330) /* n */.match(arg0);
+  const str = require(4330) /* n */;
   const withResult = match.with(obj.ALL_MESSAGES, () => {
     const intl = outer1_0(outer1_1[3]).intl;
     return intl.string(outer1_0(outer1_1[3]).t.hZrr6k);

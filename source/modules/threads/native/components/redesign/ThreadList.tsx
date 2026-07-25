@@ -1,10 +1,10 @@
-// Module ID: 15443
-// Function ID: 117822
+// Module ID: 15453
+// Function ID: 117950
 // Name: ThreadListSection
-// Dependencies: [31, 27, 33, 4130, 4126, 15444, 3991, 4476, 4542, 4546, 11823, 1357, 1359, 1212, 5165, 7639, 11372, 15446, 15447, 7527, 2]
+// Dependencies: [31, 27, 33, 4131, 4127, 15454, 3992, 4477, 4543, 4547, 11799, 1357, 1359, 1212, 5164, 7578, 11334, 15456, 15457, 6619, 2]
 // Exports: default
 
-// Module 15443 (ThreadListSection)
+// Module 15453 (ThreadListSection)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,7 +16,7 @@ let closure_5;
 const require = arg1;
 function ThreadListSection(title) {
   const obj = { style: callback().section, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: title.title.toUpperCase() };
-  return jsx(require(4126) /* Text */.Text, { style: callback().section, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: title.title.toUpperCase() });
+  return jsx(require(4127) /* Text */.Text, { style: callback().section, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: title.title.toUpperCase() });
 }
 function renderItem(item) {
   item = item.item;
@@ -27,7 +27,7 @@ function renderItem(item) {
   } else if ("thread" === type) {
     obj = {};
     ({ threadId: obj.threadId, onPress: obj.onPress, start: obj.start, end: obj.end } = item);
-    return jsx(importDefault(15444), {});
+    return jsx(importDefault(15454), {});
   }
 }
 function keyExtractor(type) {

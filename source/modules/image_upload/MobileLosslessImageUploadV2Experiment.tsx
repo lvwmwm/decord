@@ -1,10 +1,10 @@
-// Module ID: 4700
-// Function ID: 40937
+// Module ID: 4701
+// Function ID: 40949
 // Name: useMobileLosslessImageUploadV2Experiment
 // Dependencies: [1428, 2]
 // Exports: useMobileLosslessImageUploadV2Experiment
 
-// Module 4700 (useMobileLosslessImageUploadV2Experiment)
+// Module 4701 (useMobileLosslessImageUploadV2Experiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2025-12-mobile-lossless-image-upload-v2", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };

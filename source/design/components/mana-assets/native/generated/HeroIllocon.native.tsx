@@ -1,10 +1,10 @@
-// Module ID: 6264
-// Function ID: 50361
+// Module ID: 7184
+// Function ID: 60011
 // Name: HeroIllocon
-// Dependencies: [33, 5085, 6265, 2]
+// Dependencies: [33, 5085, 7185, 2]
 // Exports: HeroIllocon
 
-// Module 6264 (HeroIllocon)
+// Module 7184 (HeroIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HeroIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const HeroIllocon = function HeroIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6265) };
+  obj = { uri: importDefault(7185) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];

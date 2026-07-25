@@ -1,7 +1,7 @@
 // Module ID: 5502
-// Function ID: 46920
+// Function ID: 46925
 // Name: TableSwitchRow
-// Dependencies: [57, 31, 27, 33, 4130, 477, 3836, 5165, 4126, 5503, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 477, 3837, 5164, 4127, 5503, 2]
 // Exports: TableSwitchRow
 
 // Module 5502 (TableSwitchRow)
@@ -44,9 +44,9 @@ export const TableSwitchRow = function TableSwitchRow(value) {
   }
   let obj1 = require(477) /* set */;
   const tmp3 = callback3();
-  let obj2 = require(3836) /* getNodeText */;
+  let obj2 = require(3837) /* getNodeText */;
   const nodeText = obj2.getNodeText(label);
-  let obj3 = require(3836) /* getNodeText */;
+  let obj3 = require(3837) /* getNodeText */;
   const nodeText1 = obj3.getNodeText(subLabel);
   const tmp7 = callback(React.useState(value), 2);
   callback = tmp7[1];
@@ -70,7 +70,7 @@ export const TableSwitchRow = function TableSwitchRow(value) {
       }
       obj1.color = str;
       obj1.children = label;
-      tmp12Result = callback2(require(4126) /* Text */.Text, obj1);
+      tmp12Result = callback2(require(4127) /* Text */.Text, obj1);
       const tmp12 = callback2;
     }
     const items1 = [tmp12Result, trailing];
@@ -107,5 +107,5 @@ export const TableSwitchRow = function TableSwitchRow(value) {
   };
   obj3 = { "aria-hidden": true, value, onValueChange: handleOnPress, disabled };
   obj["trailing"] = callback2(require(5503) /* FormSwitch */.FormSwitch, obj3);
-  return callback2(require(5165) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5164) /* TableRowInner */.TableRow, obj);
 };

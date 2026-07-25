@@ -1,9 +1,9 @@
-// Module ID: 3975
-// Function ID: 32967
+// Module ID: 3976
+// Function ID: 32978
 // Name: hslToRgb
 // Dependencies: [57, 6, 7, 2]
 
-// Module 3975 (hslToRgb)
+// Module 3976 (hslToRgb)
 import _slicedToArray from "_slicedToArray";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";

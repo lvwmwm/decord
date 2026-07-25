@@ -1,10 +1,10 @@
-// Module ID: 10936
-// Function ID: 84969
+// Module ID: 10886
+// Function ID: 84559
 // Name: isPartyFull
 // Dependencies: [2]
 // Exports: isPartyFull
 
-// Module 10936 (isPartyFull)
+// Module 10886 (isPartyFull)
 const result = require("set").fileFinishedImporting("modules/activities/utils/isPartyFull.tsx");
 
 export const isPartyFull = function isPartyFull(partySize) {

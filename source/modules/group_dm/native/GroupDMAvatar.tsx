@@ -1,10 +1,10 @@
-// Module ID: 9134
-// Function ID: 71460
+// Module ID: 9026
+// Function ID: 70945
 // Name: FacepileGroupDMAvatar
-// Dependencies: [31, 27, 1849, 33, 1273, 4130, 7961, 566, 1327, 2]
+// Dependencies: [31, 27, 1850, 33, 1273, 4131, 7909, 566, 1327, 2]
 // Exports: default
 
-// Module 9134 (FacepileGroupDMAvatar)
+// Module 9026 (FacepileGroupDMAvatar)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

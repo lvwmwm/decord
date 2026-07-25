@@ -1,9 +1,9 @@
-// Module ID: 5658
-// Function ID: 48469
+// Module ID: 6003
+// Function ID: 53477
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 4044, 4149, 1194, 1348, 4051, 1917, 1910, 1838, 4217, 4810, 1849, 653, 1212, 3763, 1193, 22, 483, 566, 686, 2]
+// Dependencies: [15, 17, 18, 6, 7, 4045, 4150, 1194, 1348, 4052, 1918, 1911, 1838, 4218, 4811, 1850, 653, 1212, 3764, 1193, 22, 483, 566, 686, 2]
 
-// Module 5658 (_isNativeReflectConstruct)
+// Module 6003 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getSystemLocale from "getSystemLocale";
 import calculateElevatedPermissions from "calculateElevatedPermissions";

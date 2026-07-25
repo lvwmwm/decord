@@ -1,10 +1,10 @@
-// Module ID: 14186
-// Function ID: 109119
+// Module ID: 14197
+// Function ID: 109246
 // Name: KrispLogo
-// Dependencies: [31, 27, 4177, 7751, 653, 33, 1920, 4130, 4066, 3976, 10757, 10758, 1212, 5217, 10756, 4126, 10753, 10127, 13601, 2]
+// Dependencies: [31, 27, 4178, 7697, 653, 33, 1921, 4131, 4067, 3977, 10729, 10730, 1212, 5217, 10728, 4127, 10725, 10059, 13612, 2]
 // Exports: default
 
-// Module 14186 (KrispLogo)
+// Module 14197 (KrispLogo)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -22,11 +22,11 @@ let closure_9;
 const require = arg1;
 function KrispLogo() {
   const tmp = callback3();
-  let obj = require(3976) /* AccessibilityAnnouncer */;
+  let obj = require(3977) /* AccessibilityAnnouncer */;
   if (obj.isThemeLight(tmp2)) {
-    let tmp3Result = tmp3(10757);
+    let tmp3Result = tmp3(10729);
   } else {
-    tmp3Result = tmp3(10758);
+    tmp3Result = tmp3(10730);
   }
   obj = { style: tmp.krisp };
   obj = { style: tmp.logo, source: tmp3Result };
@@ -36,17 +36,17 @@ function KrispLogo() {
   const obj1 = { accessibilityRole: "link" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
-  obj1.onPress = require(10756) /* handleKrispLinkPressed */.handleKrispLinkPressed;
+  obj1.onPress = require(10728) /* handleKrispLinkPressed */.handleKrispLinkPressed;
   const obj2 = { variant: "text-sm/medium", color: "text-link" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl3.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
-  obj1.children = callback(require(4126) /* Text */.Text, obj2);
+  obj1.children = callback(require(4127) /* Text */.Text, obj2);
   items[1] = callback(require(5217) /* Directions */.Pressable, obj1);
   obj.children = items;
   return callback2(closure_4, obj);
 }
 function SystemProcessingSubLabel() {
-  let obj = require(10753) /* getNoiseCancellationDeferredToSystem */;
+  let obj = require(10725) /* getNoiseCancellationDeferredToSystem */;
   let tmp = null;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     obj = { variant: "text-sm/medium" };
@@ -58,7 +58,7 @@ function SystemProcessingSubLabel() {
         }
     };
     obj.children = intl.format(require(1212) /* getSystemLocale */.t.EUNgko, obj);
-    tmp = callback(require(4126) /* Text */.Text, obj);
+    tmp = callback(require(4127) /* Text */.Text, obj);
   }
   return tmp;
 }
@@ -134,5 +134,5 @@ export default function SettingsVoiceScreen() {
     obj.sections = items1;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13601), { node });
+  return callback(importDefault(13612), { node });
 };

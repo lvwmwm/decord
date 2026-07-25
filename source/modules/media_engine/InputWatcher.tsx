@@ -1,9 +1,9 @@
-// Module ID: 12886
-// Function ID: 100108
+// Module ID: 12897
+// Function ID: 100235
 // Name: logger
-// Dependencies: [57, 5, 6, 7, 4195, 4, 4015, 478, 12825, 3741, 5142, 686, 4227, 2]
+// Dependencies: [57, 5, 6, 7, 4196, 4, 4016, 478, 12836, 3742, 5141, 686, 4228, 2]
 
-// Module 12886 (logger)
+// Module 12897 (logger)
 import _slicedToArray from "_slicedToArray";
 import log from "log";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

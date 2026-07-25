@@ -1,10 +1,10 @@
-// Module ID: 12607
-// Function ID: 97428
+// Module ID: 12618
+// Function ID: 97555
 // Name: PremiumPaymentGuildAnimation
-// Dependencies: [57, 31, 27, 1838, 6671, 33, 4130, 689, 12608, 12609, 566, 4066, 4561, 1212, 4471, 4966, 4554, 668, 3976, 12610, 12611, 4126, 2]
+// Dependencies: [57, 31, 27, 1838, 6173, 33, 4131, 689, 12619, 12620, 566, 4067, 4562, 1212, 4472, 4967, 4555, 668, 3977, 12621, 12622, 4127, 2]
 // Exports: default
 
-// Module 12607 (PremiumPaymentGuildAnimation)
+// Module 12618 (PremiumPaymentGuildAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -70,13 +70,13 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const tmp6 = callback(React.useState(false), 2);
   dependencyMap = tmp6[1];
   obj = { style: tmp.wrapper };
-  const tmp7 = importDefault(4066)();
+  const tmp7 = importDefault(4067)();
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.confirmText = intl.string(require(1212) /* getSystemLocale */.t.YKxJCI);
   obj.onConfirm = function onConfirm() {
-    callback(4471).close();
-    const obj = callback(4471);
-    outer1_0(4966).closeApplyBoostModal();
+    callback(4472).close();
+    const obj = callback(4472);
+    outer1_0(4967).closeApplyBoostModal();
   };
   obj = {
     nextScene: tmp5[0],
@@ -93,22 +93,22 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const obj1 = {};
   const obj2 = { style: tmp.activated };
   const tmp11 = callback2;
-  const tmp9 = importDefault(4561);
+  const tmp9 = importDefault(4562);
   obj2.start = require(668) /* keys */.HorizontalGradient.START;
   obj2.end = require(668) /* keys */.HorizontalGradient.END;
   obj2.colors = Gradients.PREMIUM_GUILD;
   const obj3 = { style: tmp.activatedBackground };
   const obj4 = { style: tmp.activatedImage };
-  let obj7 = require(3976) /* AccessibilityAnnouncer */;
+  let obj7 = require(3977) /* AccessibilityAnnouncer */;
   if (obj7.isThemeLight(tmp7)) {
-    let tmp16Result = tmp16(12610);
+    let tmp16Result = tmp16(12621);
   } else {
-    tmp16Result = tmp16(12611);
+    tmp16Result = tmp16(12622);
   }
   obj4.source = tmp16Result;
   obj3.children = callback2(closure_6, obj4);
   obj2.children = callback2(closure_5, obj3);
-  const items2 = [tmp11(importDefault(4554), obj2), ];
+  const items2 = [tmp11(importDefault(4555), obj2), ];
   const obj5 = { style: tmp.successInfo };
   const obj6 = { style: tmp.text, variant: "text-sm/medium" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -120,12 +120,12 @@ export default function SubscribeModalSuccessAlert(arg0) {
     stringResult = string(t.d81BkZ);
   }
   obj6.children = stringResult;
-  const items3 = [callback2(require(4126) /* Text */.Text, obj6), ];
+  const items3 = [callback2(require(4127) /* Text */.Text, obj6), ];
   obj7 = { style: tmp.text, variant: "text-sm/medium" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   const obj8 = { guildName: stateFromStores.name, guildSubscriptionQuantity: num };
   obj7.children = intl3.format(require(1212) /* getSystemLocale */.t.r0IGsP, obj8);
-  items3[1] = callback2(require(4126) /* Text */.Text, obj7);
+  items3[1] = callback2(require(4127) /* Text */.Text, obj7);
   obj5.children = items3;
   items2[1] = closure_10(closure_5, obj5);
   obj1.children = items2;

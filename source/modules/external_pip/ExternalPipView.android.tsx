@@ -1,13 +1,13 @@
-// Module ID: 15729
-// Function ID: 121241
+// Module ID: 15740
+// Function ID: 121410
 // Name: requestFreezeLock
-// Dependencies: [57, 31, 8337, 33, 15730, 10263, 15732, 2]
+// Dependencies: [57, 31, 8072, 33, 15741, 10196, 15743, 2]
 // Exports: default
 
-// Module 15729 (requestFreezeLock)
+// Module 15740 (requestFreezeLock)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
-import module_8337 from "module_8337";
+import module_8072 from "module_8072";
 import { jsx } from "jsxProd";
 
 function requestFreezeLock(lockEnabled) {
@@ -27,9 +27,9 @@ function FreezeAfterLayoutPipView() {
       outer2_6(false);
     }
   }, []);
-  return jsx(importDefault(15732), { onLayout });
+  return jsx(importDefault(15743), { onLayout });
 }
-const result = require("module_8337").fileFinishedImporting("modules/external_pip/ExternalPipView.android.tsx");
+const result = require("module_8072").fileFinishedImporting("modules/external_pip/ExternalPipView.android.tsx");
 
 export default function ExternalPipView() {
   const obj = {};

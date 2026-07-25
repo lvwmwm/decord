@@ -1,10 +1,10 @@
-// Module ID: 3819
-// Function ID: 31722
+// Module ID: 3820
+// Function ID: 31733
 // Name: makeLongFormatter
-// Dependencies: [3803, 1282, 3817, 3820, 3712, 2]
+// Dependencies: [3804, 1282, 3818, 3821, 3713, 2]
 // Exports: default
 
-// Module 3819 (makeLongFormatter)
+// Module 3820 (makeLongFormatter)
 function makeLongFormatter(arg0) {
   let str = "full";
   let str2 = "short";
@@ -33,7 +33,7 @@ function makeLongFormatter(arg0) {
     }
   }
   const obj = { dateStyle: str, timeStyle: str2 };
-  const TimestampHourCycle = require(3803) /* explicitContentFromProto */.TimestampHourCycle;
+  const TimestampHourCycle = require(3804) /* explicitContentFromProto */.TimestampHourCycle;
   const setting = TimestampHourCycle.getSetting();
   if (setting !== require(1282) /* _callSuper */.TimestampHourCycle.AUTO) {
     if (obj3.supportsSystemDateFormatter()) {
@@ -43,15 +43,15 @@ function makeLongFormatter(arg0) {
         obj.hourCycle = "h23";
       }
     }
-    obj3 = require(3817) /* __DiscordCreateDateFormatter */;
+    obj3 = require(3818) /* __DiscordCreateDateFormatter */;
   }
-  return require(3820) /* makeIntlFormatter */.makeFormatter(obj);
+  return require(3821) /* makeIntlFormatter */.makeFormatter(obj);
 }
 function convertMomentValue(day, months) {
   let closure_0 = day;
   let format = months;
   if ("function" === typeof months) {
-    const dependencyMap = months.bind(format(3712).localeData());
+    const dependencyMap = months.bind(format(3713).localeData());
     return (arg0, arg1) => {
       let closure_0 = arg0;
       return callback({ [closure_0]: () => closure_0 }, arg1);
@@ -98,7 +98,7 @@ function getLocaleData() {
   let weekdays;
   let weekdaysMin;
   let weekdaysShort;
-  let obj = importDefault(3712);
+  let obj = importDefault(3713);
   const _config = obj.localeData()._config;
   ({ meridiem, months, monthsShort, weekdays, weekdaysShort, weekdaysMin } = _config);
   if (undefined === meridiem) {

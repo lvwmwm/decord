@@ -1,10 +1,10 @@
-// Module ID: 9840
-// Function ID: 76351
+// Module ID: 9764
+// Function ID: 75946
 // Name: GiftingBadgeProgressBar
-// Dependencies: [31, 27, 8312, 33, 4130, 689, 9720, 4126, 1212, 2294, 2]
+// Dependencies: [31, 27, 8047, 33, 4131, 689, 9644, 4127, 1212, 2295, 2]
 // Exports: default
 
-// Module 9840 (GiftingBadgeProgressBar)
+// Module 9764 (GiftingBadgeProgressBar)
 import "result";
 import { View } from "get ActivityIndicator";
 import { getSingleRequirementThreshold as closure_4 } from "_isNativeReflectConstruct";
@@ -70,14 +70,14 @@ export default function GiftingBadgeProgress(title) {
   let tmp8 = null != simple_icon_url;
   if (tmp8) {
     obj = { icon: currentTier.simple_icon_url, size: iconSize };
-    tmp8 = callback2(importDefault(9720), obj);
+    tmp8 = callback2(importDefault(9644), obj);
   }
   const items = [tmp8, , ];
   obj = { style: tmp.content };
   let tmp14 = null != title;
   if (tmp14) {
     const obj1 = { variant: "text-md/semibold", children: title };
-    tmp14 = callback2(require(4126) /* Text */.Text, obj1);
+    tmp14 = callback2(require(4127) /* Text */.Text, obj1);
   }
   const items1 = [tmp14, , ];
   const obj2 = { percent: num2 };
@@ -88,8 +88,8 @@ export default function GiftingBadgeProgress(title) {
     const obj4 = { variant: "text-xs/normal", color: "text-muted" };
     const intl = require(1212) /* getSystemLocale */.intl;
     const obj5 = { count: progress, threshold: tmp2 };
-    obj4.children = intl.format(importDefault(2294).iIpfQe, obj5);
-    tmp20 = callback2(require(4126) /* Text */.Text, obj4);
+    obj4.children = intl.format(importDefault(2295).iIpfQe, obj5);
+    tmp20 = callback2(require(4127) /* Text */.Text, obj4);
   }
   obj3.children = tmp20;
   items1[2] = callback2(View, obj3);
@@ -102,7 +102,7 @@ export default function GiftingBadgeProgress(title) {
   let tmp26 = null != simple_icon_url1;
   if (tmp26) {
     const obj6 = { icon: nextTier.simple_icon_url, size: iconSize };
-    tmp26 = callback2(importDefault(9720), obj6);
+    tmp26 = callback2(importDefault(9644), obj6);
   }
   items[2] = tmp26;
   obj.children = items;

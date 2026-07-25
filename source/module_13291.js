@@ -1,17 +1,9 @@
 // Module ID: 13291
-// Function ID: 101999
-// Dependencies: [13287]
+// Function ID: 102103
+// Dependencies: [13292, 13360]
 
 // Module 13291
+import module_13292 from "module_13292";
 
-export default !require("module_13287")(() => {
-  const fn = () => {
 
-  };
-  const bindResult = fn.bind();
-  let hasOwnPropertyResult = "function" !== typeof bindResult;
-  if (!hasOwnPropertyResult) {
-    hasOwnPropertyResult = bindResult.hasOwnProperty("prototype");
-  }
-  return hasOwnPropertyResult;
-});
+export default require("check").Object.assign;

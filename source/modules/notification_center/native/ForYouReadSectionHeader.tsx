@@ -1,10 +1,10 @@
-// Module ID: 15209
-// Function ID: 115791
+// Module ID: 15219
+// Function ID: 115919
 // Name: ForYouReadSectionHeader
-// Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4127, 1212, 2]
 // Exports: ForYouReadSectionHeader
 
-// Module 15209 (ForYouReadSectionHeader)
+// Module 15219 (ForYouReadSectionHeader)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -26,6 +26,6 @@ export const ForYouReadSectionHeader = function ForYouReadSectionHeader() {
   obj = { style: tmp.textHeader, variant: "text-sm/semibold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.hftC1K);
-  obj.children = jsx(require(4126) /* Text */.Text, { style: tmp.textHeader, variant: "text-sm/semibold" });
+  obj.children = jsx(require(4127) /* Text */.Text, { style: tmp.textHeader, variant: "text-sm/semibold" });
   return <View style={tmp.textHeader} variant="text-sm/semibold" />;
 };

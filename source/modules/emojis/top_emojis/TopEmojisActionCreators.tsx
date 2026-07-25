@@ -1,17 +1,17 @@
-// Module ID: 9369
-// Function ID: 73155
+// Module ID: 9275
+// Function ID: 72680
 // Name: fetchTopEmojis
-// Dependencies: [653, 3965, 686, 507, 2]
+// Dependencies: [653, 3966, 686, 507, 2]
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen
 
-// Module 9369 (fetchTopEmojis)
+// Module 9275 (fetchTopEmojis)
 import { Endpoints } from "ME";
 
 const result = require("dispatcher").fileFinishedImporting("modules/emojis/top_emojis/TopEmojisActionCreators.tsx");
 
 export const fetchTopEmojis = function fetchTopEmojis(guildId) {
   const _require = guildId;
-  let obj = _require(3965);
+  let obj = _require(3966);
   if (!obj.isPseudoGuildId(guildId)) {
     obj = { type: "TOP_EMOJIS_FETCH", guildId };
     importDefault(686).dispatch(obj);

@@ -1,9 +1,9 @@
-// Module ID: 6792
-// Function ID: 53667
+// Module ID: 5788
+// Function ID: 50941
 // Name: CollectiblesCategoriesRecord
-// Dependencies: [6, 7, 6793, 6775, 2]
+// Dependencies: [6, 7, 5789, 5771, 2]
 
-// Module 6792 (CollectiblesCategoriesRecord)
+// Module 5788 (CollectiblesCategoriesRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import StorefrontCollectionRecord from "StorefrontCollectionRecord";

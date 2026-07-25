@@ -1,10 +1,10 @@
-// Module ID: 6658
-// Function ID: 51131
+// Module ID: 6274
+// Function ID: 56357
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 5, 31, 5621, 6659, 6660, 1849, 3782, 5619, 653, 482, 33, 3, 1193, 587, 675, 507, 3791, 4451, 477, 7203, 5638, 7204, 686, 22, 5622, 6656, 7227, 1212, 7156, 4471, 7161, 1934, 4337, 6649, 7121, 4029, 7229, 3798, 4942, 480, 7365, 7366, 1361, 7157, 7367, 491, 7194, 2]
+// Dependencies: [29, 5, 31, 5621, 6242, 6171, 1850, 3783, 5619, 653, 482, 33, 3, 1193, 587, 675, 507, 3792, 4452, 477, 6275, 6244, 6276, 686, 22, 5622, 6234, 6299, 1212, 6238, 4472, 6245, 1935, 4338, 6269, 6199, 4030, 6304, 3799, 4943, 480, 6440, 6441, 1361, 6239, 6442, 491, 6445, 2]
 // Exports: cancelGenericSubscription, createGenericSubscription, migrateToACOM, mobilePurchaseSKU, modifyGenericSubscription, resubscribeGenericSubscription
 
-// Module 6658 (_createForOfIteratorHelperLoose)
+// Module 6274 (_createForOfIteratorHelperLoose)
 import getBaseAnalyticsFields from "getBaseAnalyticsFields";
 import closure_8 from "usePremiumPlanPurchasedStore";
 import "getHeaderBackground";
@@ -16,7 +16,7 @@ import closure_14 from "_isNativeReflectConstruct";
 import closure_15 from "_isNativeReflectConstruct";
 import ME from "ME";
 import { PaymentGateways } from "sum";
-import { jsx } from "module_4337";
+import { jsx } from "module_4338";
 import importDefaultResult from "_isNativeReflectConstruct";
 import set from "result";
 
@@ -194,28 +194,28 @@ function handlePurchaseException(code, purchase_type) {
     flag = true;
   }
   if (!set.has(code.code)) {
-    let obj = require(7121) /* isSpendingLimitError */;
+    let obj = require(6199) /* isSpendingLimitError */;
     let billingError = code;
-    if (!(code instanceof require(4029) /* V6OrEarlierAPIError */.BillingError)) {
-      const BillingError = require(4029) /* V6OrEarlierAPIError */.BillingError;
+    if (!(code instanceof require(4030) /* V6OrEarlierAPIError */.BillingError)) {
+      const BillingError = require(4030) /* V6OrEarlierAPIError */.BillingError;
       const prototype = BillingError.prototype;
       billingError = new BillingError(code);
     }
     if (obj.isSpendingLimitError(billingError)) {
-      const result = require(7121) /* isSpendingLimitError */.showSpendingLimitReachedAlert();
-      const obj10 = require(7121) /* isSpendingLimitError */;
+      const result = require(6199) /* isSpendingLimitError */.showSpendingLimitReachedAlert();
+      const obj10 = require(6199) /* isSpendingLimitError */;
     } else {
       const message = code.message;
       const _JSON = JSON;
       const json = JSON.stringify(code);
-      let obj1 = importAll(7229);
+      let obj1 = importAll(6304);
       const underlyingIOSError = obj1.getUnderlyingIOSError(code);
       if (null != underlyingIOSError) {
         obj = {};
         const intl2 = require(1212) /* getSystemLocale */.intl;
         obj.title = intl2.string(require(1212) /* getSystemLocale */.t.POsVOt);
         obj.body = underlyingIOSError;
-        importDefault(4471).show(obj);
+        importDefault(4472).show(obj);
         throw code;
       } else {
         const intl3 = require(1212) /* getSystemLocale */.intl;
@@ -239,14 +239,14 @@ function handlePurchaseException(code, purchase_type) {
           }
         }
         let billingError2 = code;
-        if (!(code instanceof require(4029) /* V6OrEarlierAPIError */.BillingError)) {
-          const BillingError2 = require(4029) /* V6OrEarlierAPIError */.BillingError;
+        if (!(code instanceof require(4030) /* V6OrEarlierAPIError */.BillingError)) {
+          const BillingError2 = require(4030) /* V6OrEarlierAPIError */.BillingError;
           const prototype2 = BillingError2.prototype;
           billingError2 = new BillingError2(code);
         }
         let tmp26 = message2 === stringResult && flag;
         if (tmp26) {
-          tmp26 = billingError2.code !== require(3798) /* _isNativeReflectConstruct */.ErrorCodes.UNKNOWN;
+          tmp26 = billingError2.code !== require(3799) /* _isNativeReflectConstruct */.ErrorCodes.UNKNOWN;
         }
         if (tmp26) {
           tmp26 = -1 !== billingError2.code;
@@ -257,7 +257,7 @@ function handlePurchaseException(code, purchase_type) {
         if (tmp26) {
           message2 = billingError2.message;
         }
-        let obj2 = importDefault(4471);
+        let obj2 = importDefault(4472);
         obj = {};
         const intl = require(1212) /* getSystemLocale */.intl;
         obj.title = intl.string(require(1212) /* getSystemLocale */.t.zrhHH3);
@@ -268,11 +268,11 @@ function handlePurchaseException(code, purchase_type) {
         obj1 = {};
         obj2 = { source: BILLING, purchase_type };
         obj1.tags = obj2;
-        const result1 = require(3791) /* _createGatewayCheckoutContext */.captureBillingException(code, obj1);
+        const result1 = require(3792) /* _createGatewayCheckoutContext */.captureBillingException(code, obj1);
         if (flag) {
           throw code;
         }
-        const obj5 = require(3791) /* _createGatewayCheckoutContext */;
+        const obj5 = require(3792) /* _createGatewayCheckoutContext */;
       }
     }
   }
@@ -280,13 +280,13 @@ function handlePurchaseException(code, purchase_type) {
 function canMakeIAPRequest() {
   let tmp = !busy.isBusy();
   if (tmp) {
-    let flag = !require(6656) /* items */.getIsPaymentsBlocked();
+    let flag = !require(6234) /* items */.getIsPaymentsBlocked();
     if (!flag) {
-      importDefault(7227)();
+      importDefault(6299)();
       flag = false;
     }
     tmp = flag;
-    const obj = require(6656) /* items */;
+    const obj = require(6234) /* items */;
   }
   return tmp;
 }
@@ -424,18 +424,18 @@ async function _updateAppleSubscription(arg0, arg1) {
   yield obj.patch(obj);
 }
 function determineProductId(arg0) {
-  if (require(7365) /* APBRequestOperations */.APBRequestOperations.CREATE !== arg0) {
-    if (require(7365) /* APBRequestOperations */.APBRequestOperations.CANCEL !== arg0) {
-      if (require(7365) /* APBRequestOperations */.APBRequestOperations.RESUBSCRIBE !== arg0) {
-        if (require(7365) /* APBRequestOperations */.APBRequestOperations.REACTIVATE !== arg0) {
-          if (require(7365) /* APBRequestOperations */.APBRequestOperations.CHARGE === arg0) {
+  if (require(6440) /* APBRequestOperations */.APBRequestOperations.CREATE !== arg0) {
+    if (require(6440) /* APBRequestOperations */.APBRequestOperations.CANCEL !== arg0) {
+      if (require(6440) /* APBRequestOperations */.APBRequestOperations.RESUBSCRIBE !== arg0) {
+        if (require(6440) /* APBRequestOperations */.APBRequestOperations.REACTIVATE !== arg0) {
+          if (require(6440) /* APBRequestOperations */.APBRequestOperations.CHARGE === arg0) {
             return require(5622) /* SubscriptionPlans */.ProductIds.GENERIC_CONSUMABLE;
           } else {
-            if (require(7366) /* ACRequestOperations */.ACRequestOperations.CREATE !== arg0) {
-              if (require(7366) /* ACRequestOperations */.ACRequestOperations.CANCEL !== arg0) {
-                if (require(7366) /* ACRequestOperations */.ACRequestOperations.REACTIVATE !== arg0) {
-                  if (require(7366) /* ACRequestOperations */.ACRequestOperations.MODIFY !== arg0) {
-                    if (require(7366) /* ACRequestOperations */.ACRequestOperations.CHARGE === arg0) {
+            if (require(6441) /* ACRequestOperations */.ACRequestOperations.CREATE !== arg0) {
+              if (require(6441) /* ACRequestOperations */.ACRequestOperations.CANCEL !== arg0) {
+                if (require(6441) /* ACRequestOperations */.ACRequestOperations.REACTIVATE !== arg0) {
+                  if (require(6441) /* ACRequestOperations */.ACRequestOperations.MODIFY !== arg0) {
+                    if (require(6441) /* ACRequestOperations */.ACRequestOperations.CHARGE === arg0) {
                       return require(5622) /* SubscriptionPlans */.ProductIds.GENERIC_CONSUMABLE;
                     } else {
                       const _Error = Error;
@@ -1196,7 +1196,7 @@ let obj = {
     })();
   }
 };
-let items = [require("module_7204").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
+let items = [require("module_6276").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
 obj = { NONE: "none", CANNOT_MAKE_REQUEST: "cannot_make_request", INVALID_CURRENCY: "invalid_currency", PURCHASE_INCOMPLETE: "purchase_incomplete", USER_CANCELLED: "user_cancelled", POST_PURCHASE_FAILED: "post_purchase_failed" };
 let result = set.fileFinishedImporting("actions/native/BillingActionCreators.tsx");

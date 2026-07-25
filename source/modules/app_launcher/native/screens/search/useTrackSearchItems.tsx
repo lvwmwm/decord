@@ -1,10 +1,10 @@
-// Module ID: 11255
-// Function ID: 87654
+// Module ID: 11216
+// Function ID: 87299
 // Name: useTrackSearchItems
-// Dependencies: [31, 10911, 8604, 480, 6755, 2]
+// Dependencies: [31, 10861, 8364, 480, 5676, 2]
 // Exports: useTrackSearchItems
 
-// Module 11255 (useTrackSearchItems)
+// Module 11216 (useTrackSearchItems)
 import result from "result";
 
 const require = arg1;
@@ -14,7 +14,7 @@ export const useTrackSearchItems = function useTrackSearchItems(getApplicationId
   const _require = getApplicationIdFromApplicationItem;
   const dependencyMap = getImpressionPropsFromApplicationItem;
   const React = first;
-  let obj = _require(10911);
+  let obj = _require(10861);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   let closure_4 = React.useRef({});
   let closure_5 = React.useRef(first);
@@ -34,9 +34,9 @@ export const useTrackSearchItems = function useTrackSearchItems(getApplicationId
             if (null == outer1_4.current[tmp2]) {
               outer1_4.current[tmp2] = true;
               ({ applicationId, commandId } = outer1_1(isViewable.item));
-              let obj = callback(8604);
+              let obj = callback(8364);
               obj = { type: callback(480).ImpressionTypes.VIEW, name: callback(480).ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM };
-              obj = { location: callback(6755).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME_SEARCH, application_id: applicationId, command_id: commandId, search_results_position: isViewable.index, query: outer1_2, source: outer1_3 };
+              obj = { location: callback(5676).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME_SEARCH, application_id: applicationId, command_id: commandId, search_results_position: isViewable.index, query: outer1_2, source: outer1_3 };
               obj.properties = obj;
               obj.trackImpression(obj, false);
               const tmp7 = outer1_1(isViewable.item);

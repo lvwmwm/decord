@@ -1,9 +1,9 @@
-// Module ID: 12626
-// Function ID: 97643
+// Module ID: 12637
+// Function ID: 97770
 // Name: BasicWorkScheduler
-// Dependencies: [6, 7, 12624, 3, 12627, 44, 2]
+// Dependencies: [6, 7, 12635, 3, 12638, 44, 2]
 
-// Module 12626 (BasicWorkScheduler)
+// Module 12637 (BasicWorkScheduler)
 import set from "set";
 import _defineProperties from "_defineProperties";
 import WorkIdleDeadline from "WorkIdleDeadline";

@@ -1,10 +1,10 @@
-// Module ID: 7377
-// Function ID: 59515
+// Module ID: 6453
+// Function ID: 57934
 // Name: getMobileNitroMarketingRedesignExperiment
 // Dependencies: [1428, 2]
 // Exports: getMobileNitroMarketingRedesignExperiment
 
-// Module 7377 (getMobileNitroMarketingRedesignExperiment)
+// Module 6453 (getMobileNitroMarketingRedesignExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-07-nitro-visual-ux", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

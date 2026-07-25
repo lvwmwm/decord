@@ -1,10 +1,10 @@
-// Module ID: 7110
-// Function ID: 57177
+// Module ID: 6128
+// Function ID: 54989
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isFriendshipAnniversaryBackendPersistenceEnabled
 
-// Module 7110 (apexExperiment)
+// Module 6128 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-06-friendship-anniversary-backend-persistence", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };

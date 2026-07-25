@@ -1,9 +1,9 @@
-// Module ID: 10715
-// Function ID: 83478
+// Module ID: 10679
+// Function ID: 83165
 // Name: items
-// Dependencies: [31, 33, 9823, 10716, 2]
+// Dependencies: [31, 33, 9747, 10680, 2]
 
-// Module 10715 (items)
+// Module 10679 (items)
 import { jsx } from "jsxProd";
 import importAllResult from "result";
 
@@ -11,9 +11,9 @@ const require = arg1;
 let closure_3 = ["IconAnimation_Camera_v03"];
 const items = [{ name: "mute", start: 0, duration: 70 }, { name: "unmute", start: 100, duration: 70 }];
 const forwardRefResult = require("result").forwardRef((arg0, ref) => {
-  const obj = { dotLottie: require(10716) /* registerAsset */, ref, layers: closure_3, markers: items };
+  const obj = { dotLottie: require(10680) /* registerAsset */, ref, layers: closure_3, markers: items };
   const merged = Object.assign(arg0);
-  return jsx(require(9823) /* LottieIcon */.LottieIcon, { dotLottie: require(10716) /* registerAsset */, ref, layers: closure_3, markers: items });
+  return jsx(require(9747) /* LottieIcon */.LottieIcon, { dotLottie: require(10680) /* registerAsset */, ref, layers: closure_3, markers: items });
 });
 const result = require("LottieIcon").fileFinishedImporting("design/components/LottieIcon/native/generated/CameraLottie.tsx");
 

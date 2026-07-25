@@ -1,10 +1,10 @@
-// Module ID: 12750
-// Function ID: 99278
+// Module ID: 12761
+// Function ID: 99405
 // Name: NUFChannelIllustration
-// Dependencies: [57, 31, 27, 33, 4130, 689, 1212, 12751, 12752, 3991, 4131, 12753, 12754, 12755, 12756, 5167, 4638, 4126, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 1212, 12762, 12763, 3992, 4132, 12764, 12765, 12766, 12767, 5166, 4639, 4127, 2]
 // Exports: default
 
-// Module 12750 (NUFChannelIllustration)
+// Module 12761 (NUFChannelIllustration)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -43,9 +43,9 @@ export default function NUFChannelIllustration() {
   const tmp2 = sharedValue(sharedValue1.useState([]), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
-  let obj = require(3991);
+  let obj = require(3992);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = require(3991);
+  let obj1 = require(3992);
   sharedValue1 = obj1.useSharedValue(0);
   const effect = sharedValue1.useEffect(() => {
     const timeout = setTimeout(() => outer1_2((arg0) => {
@@ -54,7 +54,7 @@ export default function NUFChannelIllustration() {
       const obj = {};
       const intl2 = callback(1212).intl;
       obj.name = intl2.string(callback(1212).t["9m/HsX"]);
-      obj.avatar = first(12751);
+      obj.avatar = first(12762);
       obj.message = intl.string(callback(1212).t["5alrl0"]);
       items[tmp] = obj;
       return items;
@@ -65,7 +65,7 @@ export default function NUFChannelIllustration() {
       const obj = {};
       const intl2 = callback(1212).intl;
       obj.name = intl2.string(callback(1212).t["AW1kM+"]);
-      obj.avatar = first(12752);
+      obj.avatar = first(12763);
       obj.message = intl.string(callback(1212).t["5Oo+vS"]);
       items[tmp] = obj;
       return items;
@@ -78,7 +78,7 @@ export default function NUFChannelIllustration() {
   let items = [sharedValue1, first];
   const effect1 = sharedValue1.useEffect(() => {
     if (first.length >= 2) {
-      let obj = tmp(4131);
+      let obj = tmp(4132);
       obj = { duration: 250 };
       const result = sharedValue1.set(obj.withTiming(1, obj));
     }
@@ -86,48 +86,48 @@ export default function NUFChannelIllustration() {
   let items1 = [sharedValue, first];
   const effect2 = sharedValue1.useEffect(() => {
     const result = sharedValue.set(0);
-    const result1 = sharedValue.set(tmp(4131).withTiming(1, { duration: 200 }));
+    const result1 = sharedValue.set(tmp(4132).withTiming(1, { duration: 200 }));
   }, items1);
-  let obj2 = require(3991);
+  let obj2 = require(3992);
   const fn = function b() {
     let obj = {};
-    obj = { translateY: tmp(3991).interpolate(sharedValue.get(), [0, 1], [50, 0]) };
+    obj = { translateY: tmp(3992).interpolate(sharedValue.get(), [0, 1], [50, 0]) };
     const items = [obj];
     obj.transform = items;
     return obj;
   };
-  obj = { interpolate: require(3991).interpolate, messageListAnimation: sharedValue };
+  obj = { interpolate: require(3992).interpolate, messageListAnimation: sharedValue };
   fn.__closure = obj;
   fn.__workletHash = 1240710065054;
   fn.__initData = closure_10;
   obj = { style: tmp.container };
   obj1 = {};
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  obj1.source = first(12753);
+  obj1.source = first(12764);
   const items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   obj1.style = items2;
   const items3 = [callback(closure_6, obj1), , , , , ];
-  obj2 = { source: first(12754), style: items4 };
+  obj2 = { source: first(12765), style: items4 };
   items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   items3[1] = callback(closure_6, obj2);
   const items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
-  items3[2] = callback(closure_6, { source: first(12755), style: items5 });
-  const obj3 = { source: first(12755), style: items5 };
+  items3[2] = callback(closure_6, { source: first(12766), style: items5 });
+  const obj3 = { source: first(12766), style: items5 };
   const items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
-  items3[3] = callback(closure_6, { source: first(12756), style: items6 });
+  items3[3] = callback(closure_6, { source: first(12767), style: items6 });
   items3[4] = callback(closure_5, { style: tmp.cardBackground });
   const obj6 = { style: tmp.card, shadow: "low", border: "subtle" };
   const obj7 = { style: tmp.header };
-  const items7 = [callback(require(4638) /* TextIcon */.TextIcon, { size: "sm" }), ];
+  const items7 = [callback(require(4639) /* TextIcon */.TextIcon, { size: "sm" }), ];
   const obj8 = { variant: "text-md/bold", allowFontScaling: false };
   let intl = require(1212) /* getSystemLocale */.intl;
   const items8 = [" ", intl.string(require(1212) /* getSystemLocale */.t.aLOLry)];
   obj8.children = items8;
-  items7[1] = callback2(require(4126) /* Text */.Text, obj8);
+  items7[1] = callback2(require(4127) /* Text */.Text, obj8);
   obj7.children = items7;
   const items9 = [callback2(closure_5, obj7), ];
   const obj9 = { style: tmp.content };
@@ -139,19 +139,19 @@ export default function NUFChannelIllustration() {
       const items = [outer1_7(outer1_6, obj), ];
       obj = { style: tmp.messageContent };
       const obj1 = { variant: "text-md/semibold", allowFontScaling: false, children: avatar.name };
-      const items1 = [outer1_7(tmp(4126).Text, obj1), ];
+      const items1 = [outer1_7(tmp(4127).Text, obj1), ];
       const obj2 = { variant: "text-md/medium", allowFontScaling: false, children: avatar.message };
-      items1[1] = outer1_7(tmp(4126).Text, obj2);
+      items1[1] = outer1_7(tmp(4127).Text, obj2);
       obj.children = items1;
       items[1] = outer1_8(outer1_5, obj);
       obj.children = items;
       return outer1_8(outer1_5, obj, avatar.message);
     })
   };
-  obj9.children = callback(first(3991).View, obj10);
+  obj9.children = callback(first(3992).View, obj10);
   items9[1] = callback(closure_5, obj9);
   obj6.children = items9;
-  items3[5] = callback2(require(5167) /* getCardBackgroundToken */.Card, obj6);
+  items3[5] = callback2(require(5166) /* getCardBackgroundToken */.Card, obj6);
   obj.children = items3;
   return callback2(closure_5, obj);
 };

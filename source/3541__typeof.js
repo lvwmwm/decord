@@ -1,7 +1,7 @@
 // Module ID: 3541
-// Function ID: 27446
+// Function ID: 27438
 // Name: _typeof
-// Dependencies: [3517, 3518, 3515]
+// Dependencies: [3518, 3516]
 
 // Module 3541 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const Hour1to12Parser = ((Parser) => {
-  class Hour1to12Parser {
+export const DayPeriodParser = ((Parser) => {
+  class DayPeriodParser {
     constructor() {
-      if (this instanceof Hour1to12Parser) {
+      if (this instanceof DayPeriodParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -158,11 +158,11 @@ export const Hour1to12Parser = ((Parser) => {
         applyResult = call.apply(TypeError, items.concat(array));
         tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 70;
-        tmp17 = outer1_8(applyResult, "priority", 70);
+        num2 = 80;
+        tmp17 = outer1_8(applyResult, "priority", 80);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["H", "K", "k", "t", "T"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["a", "b", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +177,9 @@ export const Hour1to12Parser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class Hour1to12Parser {
+    class DayPeriodParser {
       constructor() {
-        if (this instanceof Hour1to12Parser) {
+        if (this instanceof DayPeriodParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -201,11 +201,11 @@ export const Hour1to12Parser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 70;
-          tmp17 = outer1_8(applyResult, "priority", 70);
+          num2 = 80;
+          tmp17 = outer1_8(applyResult, "priority", 80);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["H", "K", "k", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["a", "b", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +224,12 @@ export const Hour1to12Parser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: Hour1to12Parser, writable: true, configurable: true };
-  Hour1to12Parser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: DayPeriodParser, writable: true, configurable: true };
+  DayPeriodParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class Hour1to12Parser {
+    class DayPeriodParser {
       constructor() {
-        if (this instanceof Hour1to12Parser) {
+        if (this instanceof DayPeriodParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -251,11 +251,11 @@ export const Hour1to12Parser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 70;
-          tmp17 = outer1_8(applyResult, "priority", 70);
+          num2 = 80;
+          tmp17 = outer1_8(applyResult, "priority", 80);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["H", "K", "k", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["a", "b", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,52 +269,35 @@ export const Hour1to12Parser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(Hour1to12Parser, Parser);
+    _setPrototypeOf(DayPeriodParser, Parser);
   }
-  let closure_0 = _createSuper(Hour1to12Parser);
+  let closure_0 = _createSuper(DayPeriodParser);
   obj = {
     key: "parse",
-    value: function parse(arg0, arg1, ordinalNumber) {
-      if ("h" === arg1) {
-        return callback(Hour1to12Parser[0]).parseNumericPattern(callback(Hour1to12Parser[1]).numericPatterns.hour12h, arg0);
-      } else if ("ho" === arg1) {
-        const obj = { unit: "hour" };
-        return ordinalNumber.ordinalNumber(arg0, obj);
-      } else {
-        return callback(Hour1to12Parser[0]).parseNDigits(arg1.length, arg0);
+    value: function parse(arg0, arg1, dayPeriod) {
+      if ("B" !== arg1) {
+        if ("BB" !== arg1) {
+          if ("BBB" !== arg1) {
+            if ("BBBBB" === arg1) {
+              return dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
+            } else {
+              return dayPeriod.dayPeriod(arg0, { width: "wide", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
+            }
+          }
+        }
       }
+      return dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
     }
   };
-  let items = [obj, , ];
+  let items = [obj, ];
   obj = {
-    key: "validate",
-    value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 1;
-      if (tmp) {
-        tmp = arg1 <= 12;
-      }
-      return tmp;
+    key: "set",
+    value: function set(setUTCHours) {
+      setUTCHours.setUTCHours(callback(DayPeriodParser[0]).dayPeriodEnumToHours(arg2), 0, 0, 0);
+      return setUTCHours;
     }
   };
   items[1] = obj;
-  items[2] = {
-    key: "set",
-    value: function set(getUTCHours) {
-      const tmp = getUTCHours.getUTCHours() >= 12;
-      if (tmp) {
-        if (arg2 < 12) {
-          getUTCHours.setUTCHours(arg2 + 12, 0, 0, 0);
-        }
-        return getUTCHours;
-      }
-      if (!tmp) {
-        if (12 === arg2) {
-          getUTCHours.setUTCHours(0, 0, 0, 0);
-        }
-      }
-      getUTCHours.setUTCHours(arg2, 0, 0, 0);
-    }
-  };
-  _defineProperties(Hour1to12Parser.prototype, items);
-  return Hour1to12Parser;
+  _defineProperties(DayPeriodParser.prototype, items);
+  return DayPeriodParser;
 })(require("_defineProperties").Parser);

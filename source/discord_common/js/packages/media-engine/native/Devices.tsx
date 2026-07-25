@@ -1,10 +1,10 @@
-// Module ID: 4234
-// Function ID: 37120
+// Module ID: 4235
+// Function ID: 37131
 // Name: sanitizeDevices
-// Dependencies: [4229, 646, 4179, 2]
+// Dependencies: [4230, 646, 4180, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices
 
-// Module 4234 (sanitizeDevices)
+// Module 4235 (sanitizeDevices)
 import AudioSubsystems from "AudioSubsystems";
 
 let closure_3;

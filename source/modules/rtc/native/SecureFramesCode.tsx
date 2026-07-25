@@ -1,10 +1,10 @@
-// Module ID: 8950
-// Function ID: 70538
+// Module ID: 8838
+// Function ID: 70017
 // Name: SecureFramesCodeGrid
-// Dependencies: [31, 27, 482, 33, 4130, 689, 4126, 2]
+// Dependencies: [31, 27, 482, 33, 4131, 689, 4127, 2]
 // Exports: default
 
-// Module 8950 (SecureFramesCodeGrid)
+// Module 8838 (SecureFramesCodeGrid)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -81,7 +81,7 @@ export default function SecureFramesCode(chunks) {
   let obj = {};
   obj = { style: tmp.codeHeader };
   obj = { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: title };
-  const items = [callback(require(4126) /* Text */.Text, obj), trailing];
+  const items = [callback(require(4127) /* Text */.Text, obj), trailing];
   obj.children = items;
   const items1 = [callback2(closure_4, obj), ];
   const obj1 = { style: tmp.code };

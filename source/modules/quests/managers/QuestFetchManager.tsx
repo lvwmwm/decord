@@ -1,9 +1,9 @@
-// Module ID: 16555
-// Function ID: 129085
+// Module ID: 16566
+// Function ID: 129253
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 6941, 664, 10494, 16556, 9480, 1184, 477, 9492, 6956, 4979, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5932, 664, 10428, 16567, 9401, 1184, 477, 9413, 5947, 4980, 5078, 2]
 
-// Module 16555 (_isNativeReflectConstruct)
+// Module 16566 (_isNativeReflectConstruct)
 import set from "set";
 import getIsEligibleForQuests from "getIsEligibleForQuests";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";

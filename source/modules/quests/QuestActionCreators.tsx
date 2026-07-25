@@ -1,10 +1,10 @@
-// Module ID: 9480
-// Function ID: 73708
+// Module ID: 9401
+// Function ID: 73295
 // Name: _manuallyStartConsoleQuest
-// Dependencies: [5, 9481, 4971, 4222, 4970, 6941, 6943, 4976, 653, 507, 686, 4030, 4979, 1212, 6948, 1184, 4942, 480, 9482, 9485, 9486, 9487, 6969, 6958, 9488, 6939, 9489, 6697, 6961, 9490, 3965, 9491, 675, 6918, 9493, 9494, 664, 9508, 2]
+// Dependencies: [5, 9402, 4972, 4223, 4971, 5932, 5934, 4977, 653, 507, 686, 4031, 4980, 1212, 5939, 1184, 4943, 480, 9403, 9406, 9407, 9408, 5960, 5949, 9409, 5930, 9410, 5693, 5952, 9411, 3966, 9412, 675, 5909, 9414, 9415, 664, 9429, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 9480 (_manuallyStartConsoleQuest)
+// Module 9401 (_manuallyStartConsoleQuest)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { getVisibleGuildIdsMethod } from "SidebarVisibilityMethodStore";
 import closure_5 from "_isNativeReflectConstruct";

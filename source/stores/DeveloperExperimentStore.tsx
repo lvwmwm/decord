@@ -1,9 +1,9 @@
-// Module ID: 6960
-// Function ID: 55638
+// Module ID: 5951
+// Function ID: 52944
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 1849, 4045, 1856, 1855, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1838, 1850, 4046, 1857, 1856, 566, 686, 2]
 
-// Module 6960 (_isNativeReflectConstruct)
+// Module 5951 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ExperimentBuckets from "ExperimentBuckets";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -25,7 +25,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function init() {
-  let closure_10 = require(1855) /* getEnv */.isStaffEnv(currentUser.getCurrentUser());
+  let closure_10 = require(1856) /* getEnv */.isStaffEnv(currentUser.getCurrentUser());
 }
 let tmp2 = "production" === Environments.DEVELOPMENT;
 if (!tmp2) {

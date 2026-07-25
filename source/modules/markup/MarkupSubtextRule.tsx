@@ -1,8 +1,8 @@
-// Module ID: 4591
-// Function ID: 40235
-// Dependencies: [3829, 2]
+// Module ID: 4592
+// Function ID: 40247
+// Dependencies: [3830, 2]
 
-// Module 4591
+// Module 4592
 const re2 = /\n$/;
 const re3 = /^ *-# +((?!(-#)+)[^\n]+?) *(?:\n|$)/;
 let obj = {
@@ -15,10 +15,10 @@ let obj = {
       }
       return tmp2;
     }
-    tmp2 = require(3829) /* t */.anyScopeRegex(closure_3)(arg0, arg1, str);
+    tmp2 = require(3830) /* t */.anyScopeRegex(closure_3)(arg0, arg1, str);
   },
   parse(arg0, arg1, inline) {
-    const obj = { content: require(3829) /* t */.parseInline(arg1, arg0[1].trim(), inline) };
+    const obj = { content: require(3830) /* t */.parseInline(arg1, arg0[1].trim(), inline) };
     return obj;
   }
 };

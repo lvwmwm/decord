@@ -1,10 +1,10 @@
-// Module ID: 13661
-// Function ID: 104887
+// Module ID: 13672
+// Function ID: 105014
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [31, 653, 33, 4130, 1557, 1456, 6685, 5462, 5482, 7375, 8183, 8059, 13662, 1212, 4126, 2]
+// Dependencies: [31, 653, 33, 4131, 1557, 1456, 6187, 5462, 5482, 6448, 9253, 9254, 13673, 1212, 4127, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 13661 (UserProfilePremiumUpsellCard)
+// Module 13672 (UserProfilePremiumUpsellCard)
 import result from "result";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -28,8 +28,8 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   let obj = navigation(1456);
   navigation = obj.useNavigation();
   const tmp = callback(analyticsLocations(1557)().bottom);
-  let nitroTrialCtaOverride = navigation(6685).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
-  const obj2 = navigation(6685);
+  let nitroTrialCtaOverride = navigation(6187).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
+  const obj2 = navigation(6187);
   const tmp5 = analyticsLocations(5482);
   const items = [isTryItOut ? tmp5.USER_SETTINGS_TRY_OUT_PREMIUM : tmp5.USER_SETTINGS_USER_PROFILE];
   analyticsLocations = analyticsLocations(5462)(items).analyticsLocations;
@@ -73,6 +73,6 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
     stringResult1 = string(t.Tii53U);
   }
   obj.children = stringResult1;
-  obj.children = jsx(navigation(4126).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5 });
-  return tmp8(analyticsLocations(13662), obj);
+  obj.children = jsx(navigation(4127).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5 });
+  return tmp8(analyticsLocations(13673), obj);
 };

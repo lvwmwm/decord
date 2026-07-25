@@ -1,10 +1,10 @@
-// Module ID: 11041
-// Function ID: 85875
+// Module ID: 10997
+// Function ID: 85495
 // Name: ChatBlockedAlert
-// Dependencies: [57, 29, 31, 27, 1194, 1917, 1838, 11034, 653, 3746, 33, 4130, 689, 4561, 1212, 1273, 11042, 4126, 11043, 5796, 624, 3764, 4559, 675, 2]
+// Dependencies: [57, 29, 31, 27, 1194, 1918, 1838, 10990, 653, 3747, 33, 4131, 689, 4562, 1212, 1273, 10998, 4127, 10999, 6554, 624, 3765, 4560, 675, 2]
 // Exports: default
 
-// Module 11041 (ChatBlockedAlert)
+// Module 10997 (ChatBlockedAlert)
 import _slicedToArray from "_slicedToArray";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import "result";
@@ -44,15 +44,15 @@ function ChatBlockedAlert(arg0) {
   obj["confirmText"] = buttonCta;
   obj["onConfirm"] = onConfirm;
   obj = { style: tmp2.body };
-  obj = { source: importDefault(11042), size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp2.mainIcon };
+  obj = { source: importDefault(10998), size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp2.mainIcon };
   const items = [callback3(require(1273) /* Button */.Icon, obj), , ];
   const obj1 = { style: tmp2.title, accessibilityRole: "header", variant: "heading-md/medium", color: "mobile-text-heading-primary", children: title };
-  items[1] = callback3(require(4126) /* Text */.Text, obj1);
+  items[1] = callback3(require(4127) /* Text */.Text, obj1);
   const obj2 = { style: tmp2.description, variant: "text-sm/medium", color: "text-default", children: description };
-  items[2] = callback3(require(4126) /* Text */.Text, obj2);
+  items[2] = callback3(require(4127) /* Text */.Text, obj2);
   obj.children = items;
   obj["children"] = callback4(View, obj);
-  return callback3(importDefault(4561), obj);
+  return callback3(importDefault(4562), obj);
 }
 function PerServerProfileAlert(arg0) {
   let automodReason;
@@ -66,7 +66,7 @@ function PerServerProfileAlert(arg0) {
     const intl = _require(1212).intl;
     stringResult = intl.string(_require(1212).t.TBeZmG);
   }
-  let obj = _require(11043);
+  let obj = _require(10999);
   const tmp7 = callback(obj.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   _require = tmp7[0];
   if (!tmp7[1]) {
@@ -149,7 +149,7 @@ export default function AutomodUserProfileQuarantineAlert(guildId) {
       return guildId(outer1_2[21]).getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(4559)(() => {
+  stateFromStores(4560)(() => {
     let obj = stateFromStores(outer1_2[23]);
     obj = { type: outer1_12, guild_id: guildId, other_user_id: stateFromStores };
     obj.track(outer1_13.OPEN_MODAL, obj);

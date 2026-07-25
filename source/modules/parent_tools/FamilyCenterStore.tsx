@@ -1,9 +1,9 @@
-// Module ID: 6769
-// Function ID: 53052
+// Module ID: 5765
+// Function ID: 50326
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 3811, 1196, 1849, 6770, 1387, 21, 6771, 6827, 6828, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 3812, 1196, 1850, 5766, 1387, 21, 5767, 5827, 5828, 2]
 
-// Module 6769 (_isNativeReflectConstruct)
+// Module 5765 (_isNativeReflectConstruct)
 import getCountryCodeByCountryName from "getCountryCodeByCountryName";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
@@ -286,8 +286,8 @@ function handleCurrentUserUpdate(user) {
     if (linked_users.some((arg0) => undefined === table[arg0.user_id])) {
       const _Object = Object;
       if (user.linked_users.length > Object.keys(closure_17).length) {
-        const linkedUsers = importDefault(6771).fetchLinkedUsers();
-        const obj = importDefault(6771);
+        const linkedUsers = importDefault(5767).fetchLinkedUsers();
+        const obj = importDefault(5767);
       }
     }
     processLinkedUsers(user.linked_users);

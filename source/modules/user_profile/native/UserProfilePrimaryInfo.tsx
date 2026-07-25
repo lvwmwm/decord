@@ -1,10 +1,10 @@
-// Module ID: 8557
-// Function ID: 68140
+// Module ID: 8317
+// Function ID: 66794
 // Name: getStyleConfig
-// Dependencies: [31, 27, 8308, 5510, 653, 7721, 33, 4130, 689, 8558, 8559, 8568, 4660, 8570, 4126, 8572, 6970, 3982, 8606, 1212, 8618, 8309, 5796, 3831, 8298, 675, 6968, 4979, 477, 8619, 1450, 7934, 8620, 3969, 2]
+// Dependencies: [31, 27, 8043, 5510, 653, 7665, 33, 4131, 689, 8318, 8319, 8328, 4661, 8330, 4127, 8332, 5961, 3983, 8366, 1212, 8378, 8044, 6554, 3832, 8033, 675, 5959, 4980, 477, 8383, 1450, 7881, 8384, 3970, 2]
 // Exports: default
 
-// Module 8557 (getStyleConfig)
+// Module 8317 (getStyleConfig)
 import getUserPrimaryGuild from "getUserPrimaryGuild";
 import get_ActivityIndicator from "QuestsVisibleMessagesChangedSource";
 import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY";
@@ -443,7 +443,7 @@ function GuildTag(arg0) {
     showToastOnPress = false;
   }
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(7934) /* getUserPrimaryGuild */;
+  let obj = require(7881) /* getUserPrimaryGuild */;
   let primaryGuild;
   if (null != user) {
     primaryGuild = user.primaryGuild;
@@ -468,7 +468,7 @@ function GuildTag(arg0) {
       obj1.textStyle = obj2;
       obj1.badgeSize = guildTagBadgeSize;
       obj1.textVariant = tmp4.guildTagTextVariant;
-      obj.children = callback(importDefault(8620), obj1);
+      obj.children = callback(importDefault(8384), obj1);
       tmp6 = callback(closure_5, obj);
     }
   }
@@ -516,9 +516,9 @@ export default function UserProfilePrimaryInfo(arg0) {
   ({ guildId, pronouns, style, badges, badgeContainerBackground, onPressDisplayName, displayNameAccessibilityHint, displayNameAccessibilityRole, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint, showChevron, pendingDisplayNameStyles } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { backgroundColor: badgeContainerBackground };
-  let obj1 = importDefault(3969);
+  let obj1 = importDefault(3970);
   let name = obj1.useName(user);
-  let obj2 = importDefault(3969);
+  let obj2 = importDefault(3970);
   obj = { style: items };
   items = [tmp.container, style];
   obj = { user, guildId };

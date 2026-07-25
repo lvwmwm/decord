@@ -1,8 +1,8 @@
-// Module ID: 14189
-// Function ID: 109136
-// Dependencies: [27, 4177, 7751, 33, 4130, 566, 10743, 8882, 10127, 1212, 2]
+// Module ID: 14200
+// Function ID: 109263
+// Dependencies: [27, 4178, 7697, 33, 4131, 566, 10707, 8770, 10059, 1212, 2]
 
-// Module 14189
+// Module 14200
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ let obj = {
     const items = [_isNativeReflectConstruct];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: outer1_4.getMode(), vadThreshold: outer1_4.getModeOptions().threshold, vadAutoThreshold: outer1_4.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(10743), obj) };
+    obj = { style: callback().slider, children: jsx(importDefault(10707), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,
@@ -59,7 +59,7 @@ const createStaticResult = createToggle.createStatic({
     const items = [_isNativeReflectConstruct];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: outer1_4.getMode(), vadThreshold: outer1_4.getModeOptions().threshold, vadAutoThreshold: outer1_4.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(10743), obj) };
+    obj = { style: callback().slider, children: jsx(importDefault(10707), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,

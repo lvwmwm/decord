@@ -1,10 +1,10 @@
-// Module ID: 10172
-// Function ID: 78668
+// Module ID: 10104
+// Function ID: 78298
 // Name: SafetyToolsCrisisTextLineActionSheet
-// Dependencies: [31, 27, 10166, 33, 4130, 689, 10173, 1212, 4126, 4543, 3827, 10163, 2]
+// Dependencies: [31, 27, 10098, 33, 4131, 689, 10105, 1212, 4127, 4544, 3828, 10095, 2]
 // Exports: default
 
-// Module 10172 (SafetyToolsCrisisTextLineActionSheet)
+// Module 10104 (SafetyToolsCrisisTextLineActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
@@ -44,7 +44,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
   obj = { variant: "text-md/medium", color: "text-default", style: tmp.description };
   const intl2 = trackAnalyticsEvent(1212).intl;
   obj.children = intl2.string(trackAnalyticsEvent(1212).t.uicS5l);
-  const items = [callback(trackAnalyticsEvent(4126).Text, obj), , ];
+  const items = [callback(trackAnalyticsEvent(4127).Text, obj), , ];
   const obj1 = { variant: "secondary", size: "lg", text: null, grow: true };
   const intl3 = trackAnalyticsEvent(1212).intl;
   obj1.text = intl3.string(trackAnalyticsEvent(1212).t.lkUb4S);
@@ -52,7 +52,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
     outer1_1(outer1_2[10]).openURL(outer1_4);
     trackAnalyticsEvent(trackAnalyticsEvent(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL_SMS);
   };
-  items[1] = callback(trackAnalyticsEvent(4543).Button, obj1);
+  items[1] = callback(trackAnalyticsEvent(4544).Button, obj1);
   const obj2 = { variant: "secondary", size: "lg", text: null, grow: true };
   const intl4 = trackAnalyticsEvent(1212).intl;
   obj2.text = intl4.string(trackAnalyticsEvent(1212).t.ogLlvy);
@@ -60,8 +60,8 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
     outer1_1(outer1_2[10]).openURL(outer1_5);
     trackAnalyticsEvent(trackAnalyticsEvent(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL_WEB);
   };
-  items[2] = callback(trackAnalyticsEvent(4543).Button, obj2);
+  items[2] = callback(trackAnalyticsEvent(4544).Button, obj2);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(importDefault(10173), obj);
+  return callback(importDefault(10105), obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10071
-// Function ID: 77734
+// Module ID: 10000
+// Function ID: 77353
 // Name: GuildDirectoryAddModal
-// Dependencies: [31, 10072, 33, 4130, 5084, 480, 5087, 10070, 10073, 10081, 10085, 10095, 5121, 5450, 5517, 1212, 2]
+// Dependencies: [31, 10001, 33, 4131, 5084, 480, 5087, 9999, 10002, 10010, 10014, 10024, 5121, 5450, 5517, 1212, 2]
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 10071 (GuildDirectoryAddModal)
+// Module 10000 (GuildDirectoryAddModal)
 import "result";
 import { GuildDirectoryCreate } from "GuildDirectoryCreate";
 import { jsx } from "jsxProd";

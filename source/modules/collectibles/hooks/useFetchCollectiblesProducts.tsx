@@ -1,10 +1,10 @@
-// Module ID: 11877
-// Function ID: 92049
+// Module ID: 11853
+// Function ID: 91854
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4175, 6774, 653, 624, 1876, 6773, 2]
+// Dependencies: [57, 31, 4176, 5770, 653, 624, 1877, 5769, 2]
 // Exports: useFetchCollectiblesProducts
 
-// Module 11877 (_createForOfIteratorHelperLoose)
+// Module 11853 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -132,7 +132,7 @@ export const useFetchCollectiblesProducts = function useFetchCollectiblesProduct
           }
           let tmp14 = lib;
           let tmp15 = dependencyMap;
-          tmp12 = type === lib(1876).CollectiblesItemType.BUNDLE;
+          tmp12 = type === lib(1877).CollectiblesItemType.BUNDLE;
         }
         if (tmp12) {
           tmp12 = 0 === tmp8.items.length;
@@ -160,7 +160,7 @@ export const useFetchCollectiblesProducts = function useFetchCollectiblesProduct
         if (!tmp16) {
           let tmp21 = lib;
           let tmp22 = dependencyMap;
-          let obj = lib(6773);
+          let obj = lib(5769);
           obj = {};
           let tmp23 = dependencyMap;
           obj.includeBundles = dependencyMap;

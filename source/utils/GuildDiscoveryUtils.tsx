@@ -1,10 +1,10 @@
-// Module ID: 5736
-// Function ID: 49314
+// Module ID: 6632
+// Function ID: 58660
 // Name: _startLurking
-// Dependencies: [5, 3759, 4051, 1838, 653, 1198, 5737, 5626, 5048, 5698, 5700, 675, 507, 1440, 2]
+// Dependencies: [5, 3760, 4052, 1838, 653, 1198, 6633, 5626, 5049, 6634, 6635, 675, 507, 1440, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 5736 (_startLurking)
+// Module 6632 (_startLurking)
 import shouldNavigate from "shouldNavigate";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

@@ -1,13 +1,13 @@
-// Module ID: 15950
-// Function ID: 123198
+// Module ID: 15961
+// Function ID: 123366
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 15951, 16001, 27, 16021, 1922, 1906, 6651, 6696, 16022, 653, 14, 3, 16631, 6724, 16632, 10968, 566, 682, 1186, 16634, 13170, 477, 20, 16635, 10519, 686, 16636, 3994, 6707, 1184, 16637, 16638, 10667, 587, 675, 479, 1898, 8010, 1933, 1250, 16639, 1934, 8347, 16641, 13376, 6914, 16659, 16660, 16661, 16662, 9910, 6720, 6708, 3983, 1278, 4122, 1324, 13424, 15686, 15687, 684, 13165, 6695, 13429, 13442, 6878, 16664, 5217, 6697, 6708, 2]
+// Dependencies: [57, 5, 15962, 16012, 27, 16032, 1923, 1907, 6271, 5692, 16033, 653, 14, 3, 16642, 5720, 16643, 10919, 566, 682, 1186, 16645, 13181, 477, 20, 16646, 10547, 686, 16647, 3995, 5703, 1184, 16648, 16649, 10631, 587, 675, 479, 1899, 5672, 1934, 1250, 16650, 1935, 8105, 16652, 13387, 5905, 16670, 16671, 16672, 16673, 9837, 5716, 5704, 3984, 1278, 4123, 1324, 13435, 15697, 15698, 684, 13176, 5691, 13440, 13453, 5868, 16675, 5217, 5693, 5704, 2]
 // Exports: init, initHeadlessTask
 
-// Module 15950 (_createForOfIteratorHelperLoose)
+// Module 15961 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "timestamp";
-import module_15951 from "module_15951";
+import module_15962 from "module_15962";
 import isAnalyticsEndpoint from "isAnalyticsEndpoint";
 import get_ActivityIndicator from "dispatcher";
 import timestamp from "timestamp";
@@ -126,7 +126,7 @@ function _getInitialURLs() {
   return obj(...arguments);
 }
 function handleURL(defaultResult1, defaultResult2) {
-  importDefault(6724)("handleURL", () => outer1_0(outer1_3[16])).default(defaultResult1, defaultResult2);
+  importDefault(5720)("handleURL", () => outer1_0(outer1_3[16])).default(defaultResult1, defaultResult2);
 }
 function sharedInit() {
   function handleNotification(defaultResult1) {
@@ -305,7 +305,7 @@ function _loadStorage() {
   return obj(...arguments);
 }
 function loadKvStorage() {
-  importDefault(1898).initialize();
+  importDefault(1899).initialize();
   const resolved = Promise.resolve();
 }
 function initializeIntl() {
@@ -367,7 +367,7 @@ const promise = new Promise((arg0) => {
   let closure_23 = arg0;
 });
 loadIndex.recordEnd();
-result = require("module_15951").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
+result = require("module_15962").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
 
 export const applicationReady = future;
 export const init = function init() {

@@ -1,7 +1,7 @@
 // Module ID: 3382
-// Function ID: 26531
+// Function ID: 26535
 // Name: _typeof
-// Dependencies: [3209, 3210]
+// Dependencies: [3210, 3211]
 // Exports: default
 
 // Module 3382 (_typeof)
@@ -34,7 +34,7 @@ function _typeof(arg0) {
   };
 }
 
-export default function min(arg0) {
+export default function max(arg0) {
   requiredArgs.default(1, arguments);
   if (!arg0) {
     if ("object" === _typeof(arg0)) {
@@ -54,11 +54,12 @@ export default function min(arg0) {
     const defaultResult = outer1_0.default(defaultResult1);
     let isNaNResult = undefined === closure_0;
     if (!isNaNResult) {
-      isNaNResult = closure_0 > defaultResult;
+      isNaNResult = closure_0 < defaultResult;
     }
     if (!isNaNResult) {
       const _isNaN = isNaN;
-      isNaNResult = isNaN(defaultResult.getDate());
+      const _Number = Number;
+      isNaNResult = isNaN(Number(defaultResult));
     }
     if (isNaNResult) {
       closure_0 = defaultResult;

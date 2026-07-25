@@ -1,10 +1,10 @@
-// Module ID: 15397
-// Function ID: 117527
+// Module ID: 15407
+// Function ID: 117655
 // Name: ChannelSubtitle
-// Dependencies: [31, 33, 10290, 4126, 15096, 10287, 2]
+// Dependencies: [31, 33, 10223, 4127, 15106, 10220, 2]
 // Exports: renderChannelSubtitle
 
-// Module 15397 (ChannelSubtitle)
+// Module 15407 (ChannelSubtitle)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -19,7 +19,7 @@ function ChannelSubtitle(arg0) {
   let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, layout, subtitle } = arg0);
-  let obj = require(15096) /* getChannelSubtitleData */;
+  let obj = require(15106) /* getChannelSubtitleData */;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
@@ -37,8 +37,8 @@ function ChannelSubtitle(arg0) {
     obj.layout = layout;
     obj.color = "text-muted";
     obj.disableAnimatedEmoji = !("voice" === channelSubtitleData.type && connected);
-    obj["children"] = require(10287) /* getRules */.renderMessagePreviewMarkup(obj);
-    return jsx(require(4126) /* Text */.Text, { content: channelSubtitleData.subtitle });
+    obj["children"] = require(10220) /* getRules */.renderMessagePreviewMarkup(obj);
+    return jsx(require(4127) /* Text */.Text, { content: channelSubtitleData.subtitle });
   }
 }
 const result = require("getLayoutStyles").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelSubtitle.tsx");
@@ -50,12 +50,12 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
   if (null == subtitle) {
     return null;
   } else {
-    let obj = { variant: require(10290) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
+    let obj = { variant: require(10223) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
     if ("string" === typeof subtitle) {
       obj = {};
       const merged = Object.assign(obj);
       obj["children"] = subtitle;
-      let tmp7 = jsx(require(4126) /* Text */.Text, {});
+      let tmp7 = jsx(require(4127) /* Text */.Text, {});
     } else {
       obj = { channelId: tmp2, guildId: tmp3, layout, subtitle, muted: tmp, connected: tmp4 };
       obj.textProps = obj;

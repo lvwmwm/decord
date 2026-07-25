@@ -1,10 +1,10 @@
-// Module ID: 11944
-// Function ID: 92432
+// Module ID: 11920
+// Function ID: 92237
 // Name: AddAppButton
-// Dependencies: [5, 57, 31, 8007, 653, 1455, 33, 11297, 10861, 4098, 5490, 11281, 3830, 1443, 7620, 8773, 1212, 4543, 689, 5463, 4140, 3989, 1555, 675, 2]
+// Dependencies: [5, 57, 31, 5669, 653, 1455, 33, 11259, 10937, 4099, 5490, 11243, 3831, 1443, 7562, 8661, 1212, 4544, 689, 5463, 4141, 3990, 1555, 675, 2]
 // Exports: default
 
-// Module 11944 (AddAppButton)
+// Module 11920 (AddAppButton)
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -31,7 +31,7 @@ function AddAppButton(application) {
   if (null != customInstallUrl) {
     let obj = guildId(1443);
     if (!obj.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(7620).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(7562).LinkExternalSmallIcon;
     }
     const items1 = [application];
     const memo = React.useMemo(() => {
@@ -59,9 +59,9 @@ function AddAppButton(application) {
     obj.onAccessibilityAction = callback1;
     obj = { size: "sm", color: guildId(689).colors.WHITE };
     obj.icon = <PlusSmallIcon size="sm" color={guildId(689).colors.WHITE} />;
-    return jsx(application(4543).Button, { size: "sm", color: guildId(689).colors.WHITE });
+    return jsx(application(4544).Button, { size: "sm", color: guildId(689).colors.WHITE });
   }
-  PlusSmallIcon = application(8773).PlusSmallIcon;
+  PlusSmallIcon = application(8661).PlusSmallIcon;
 }
 function OpenAppButton(profileApplication) {
   profileApplication = profileApplication.profileApplication;
@@ -88,7 +88,7 @@ export default function AddOrOpenAppButton(arg0) {
   let guildId;
   ({ application, channel } = arg0);
   ({ botUserId, guildId } = arg0);
-  if (importDefault(11297)(channel)) {
+  if (importDefault(11259)(channel)) {
     if (null != channel) {
       const obj = { profileApplication: application, botUserId, channel };
       let tmp2 = <OpenAppButton profileApplication={application} botUserId={botUserId} channel={channel} />;

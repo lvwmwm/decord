@@ -1,10 +1,10 @@
-// Module ID: 10806
-// Function ID: 83925
+// Module ID: 10778
+// Function ID: 83667
 // Name: _isGuestOrLurkerInGuild
-// Dependencies: [1917, 1838, 653, 566, 2]
+// Dependencies: [1918, 1838, 653, 566, 2]
 // Exports: default, isGuestOrLurkerInGuild
 
-// Module 10806 (_isGuestOrLurkerInGuild)
+// Module 10778 (_isGuestOrLurkerInGuild)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";

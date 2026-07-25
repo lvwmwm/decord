@@ -1,10 +1,10 @@
-// Module ID: 8643
-// Function ID: 68526
+// Module ID: 8419
+// Function ID: 67259
 // Name: isGameProfileObscured
-// Dependencies: [1849, 8223, 566, 2]
+// Dependencies: [1850, 7966, 566, 2]
 // Exports: default
 
-// Module 8643 (isGameProfileObscured)
+// Module 8419 (isGameProfileObscured)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -14,8 +14,8 @@ function isGameProfileObscured(game, nsfwAllowed) {
     result = false === nsfwAllowed;
   }
   if (result) {
-    result = require(8223) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(game.contentClassification);
-    const obj = require(8223) /* isAgeRestrictedContentClassification */;
+    result = require(7966) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(game.contentClassification);
+    const obj = require(7966) /* isAgeRestrictedContentClassification */;
   }
   return result;
 }

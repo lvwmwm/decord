@@ -1,10 +1,10 @@
-// Module ID: 11061
-// Function ID: 86081
+// Module ID: 11017
+// Function ID: 85701
 // Name: ClassificationEvidence
-// Dependencies: [31, 27, 33, 4130, 1273, 689, 4126, 1212, 11062, 2]
+// Dependencies: [31, 27, 33, 4131, 1273, 689, 4127, 1212, 11018, 2]
 // Exports: default
 
-// Module 11061 (ClassificationEvidence)
+// Module 11017 (ClassificationEvidence)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,13 +33,13 @@ export default function ClassificationEvidence(flaggedContent) {
     obj = { variant: "eyebrow", color: "text-default" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(require(1212) /* getSystemLocale */.t.s64CMg);
-    const items = [callback(require(4126) /* Text */.Text, obj), ];
+    const items = [callback(require(4127) /* Text */.Text, obj), ];
     obj = {};
     const items1 = [, ];
     ({ flaggedContent: arr3[0], cardShadow: arr3[1] } = tmp);
     obj.style = items1;
     const obj1 = { flaggedContent };
-    obj.children = callback(importDefault(11062), obj1);
+    obj.children = callback(importDefault(11018), obj1);
     items[1] = callback(View, obj);
     obj.children = items;
     tmp2 = callback2(View, obj);

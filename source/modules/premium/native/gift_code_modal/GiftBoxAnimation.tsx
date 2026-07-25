@@ -1,10 +1,10 @@
-// Module ID: 12284
-// Function ID: 95947
+// Module ID: 12260
+// Function ID: 95756
 // Name: GiftBoxAnimation
-// Dependencies: [31, 4122, 1851, 33, 566, 4329, 12285, 12286, 12287, 8826, 8835, 8832, 8829, 8838, 8841, 8844, 8847, 5453, 2]
+// Dependencies: [31, 4123, 1852, 33, 566, 4330, 12261, 12262, 12263, 8714, 8723, 8720, 8717, 8726, 8729, 8732, 8735, 5453, 2]
 // Exports: default
 
-// Module 12284 (GiftBoxAnimation)
+// Module 12260 (GiftBoxAnimation)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumGiftStyles } from "GuildFeatures";
@@ -20,8 +20,8 @@ export default function GiftBoxAnimation(giftStyle) {
   if (null == giftStyle) {
     return null;
   } else {
-    const match = require(4329) /* n */.match(giftStyle);
-    const str = require(4329) /* n */;
+    const match = require(4330) /* n */.match(giftStyle);
+    const str = require(4330) /* n */;
     const withResult = match.with(PremiumGiftStyles.SNOWGLOBE, () => outer1_0(outer1_2[6]));
     const withResult1 = match.with(PremiumGiftStyles.SNOWGLOBE, () => outer1_0(outer1_2[6])).with(PremiumGiftStyles.BOX, () => outer1_0(outer1_2[7]));
     const withResult2 = match.with(PremiumGiftStyles.SNOWGLOBE, () => outer1_0(outer1_2[6])).with(PremiumGiftStyles.BOX, () => outer1_0(outer1_2[7])).with(PremiumGiftStyles.CUP, () => outer1_0(outer1_2[8]));

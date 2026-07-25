@@ -1,10 +1,10 @@
-// Module ID: 11118
-// Function ID: 86417
+// Module ID: 11078
+// Function ID: 86056
 // Name: sharedClientThemeToThemeSettings
-// Dependencies: [57, 31, 27, 3782, 653, 1851, 33, 4130, 689, 675, 11119, 3972, 5187, 5186, 1212, 2396, 4126, 8042, 4543, 566, 3776, 6661, 5482, 1273, 3973, 2]
+// Dependencies: [57, 31, 27, 3783, 653, 1852, 33, 4131, 689, 675, 11079, 3973, 5187, 5186, 1212, 2397, 4127, 6152, 4544, 566, 3777, 6162, 5482, 1273, 3974, 2]
 // Exports: default
 
-// Module 11118 (sharedClientThemeToThemeSettings)
+// Module 11078 (sharedClientThemeToThemeSettings)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "result";
 import result from "result";
@@ -60,13 +60,13 @@ function PrimaryActionButton(onPressApply) {
     obj.text = intl.string(require(1212) /* getSystemLocale */.t["1Qm822"]);
     obj.onPress = onPressApply.onPressApply;
     obj.variant = "primary";
-    tmp6 = callback4(require(4543) /* Button */.Button, obj);
+    tmp6 = callback4(require(4544) /* Button */.Button, obj);
   }
   return tmp6;
 }
 function getBaseThemeFromSharedClientTheme(sharedClientTheme) {
   if (undefined !== sharedClientTheme) {
-    return require(3973) /* getThemeForColor */.getBaseTheme(sharedClientTheme.base_theme);
+    return require(3974) /* getThemeForColor */.getBaseTheme(sharedClientTheme.base_theme);
   }
 }
 ({ useEffect: closure_5, useLayoutEffect: closure_6, useRef: closure_7 } = result);

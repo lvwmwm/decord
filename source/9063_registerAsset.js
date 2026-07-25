@@ -1,11 +1,11 @@
 // Module ID: 9063
-// Function ID: 71198
+// Function ID: 71213
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9063 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1d8ebef8a3957ec5bd51e54121ce2c75", name: "GlobeEarthIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b5ac530e11705d268a2dd9d0cf020b0a", name: "PhoneHangUpIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

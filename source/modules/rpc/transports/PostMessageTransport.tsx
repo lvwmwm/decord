@@ -1,9 +1,9 @@
-// Module ID: 10523
-// Function ID: 81456
+// Module ID: 10551
+// Function ID: 81585
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 57, 6, 7, 15, 17, 18, 1347, 4033, 653, 664, 10524, 675, 3748, 10525, 10527, 1934, 10528, 1207, 631, 2]
+// Dependencies: [5, 57, 6, 7, 15, 17, 18, 1347, 4034, 653, 664, 10552, 675, 3749, 10553, 10555, 1935, 10556, 1207, 631, 2]
 
-// Module 10523 (_isNativeReflectConstruct)
+// Module 10551 (_isNativeReflectConstruct)
 import _getPrototypeOf from "_getPrototypeOf";
 import _slicedToArray from "_slicedToArray";
 import _inherits from "_inherits";
@@ -35,7 +35,7 @@ let closure_16 = 10 * require("set").Millis.SECOND;
 const map = new Map();
 let set = new Set();
 function postClose(origin, arg1, postMessageToRPCClient) {
-  const items = [importDefault(10524).CLOSE, arg1];
+  const items = [importDefault(10552).CLOSE, arg1];
   postMessageToRPCClient(items, origin);
 }
 let result = set.fileFinishedImporting("modules/rpc/transports/PostMessageTransport.tsx");

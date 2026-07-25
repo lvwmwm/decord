@@ -1,10 +1,10 @@
-// Module ID: 10360
-// Function ID: 79938
+// Module ID: 10293
+// Function ID: 79591
 // Name: getLogMetadata
-// Dependencies: [1554, 4110, 2]
+// Dependencies: [1554, 4111, 2]
 // Exports: default
 
-// Module 10360 (getLogMetadata)
+// Module 10293 (getLogMetadata)
 const result = require("set").fileFinishedImporting("modules/debug/getLogMetadata.native.tsx");
 
 export default function getLogMetadata() {
@@ -28,8 +28,8 @@ export default function getLogMetadata() {
   obj.JSBuildNumber = importAll(1554).getBuildNumberLabel();
   obj.DeviceVendorID = DeviceVendorID;
   const obj4 = importAll(1554);
-  obj.DeviceInfo = require(4110) /* getSystemVersion */.getDeviceInfo();
-  const obj5 = require(4110) /* getSystemVersion */;
-  obj.systemVersion = require(4110) /* getSystemVersion */.getSystemVersion();
+  obj.DeviceInfo = require(4111) /* getSystemVersion */.getDeviceInfo();
+  const obj5 = require(4111) /* getSystemVersion */;
+  obj.systemVersion = require(4111) /* getSystemVersion */.getSystemVersion();
   return obj;
 };

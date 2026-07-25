@@ -1,9 +1,9 @@
-// Module ID: 12614
-// Function ID: 97454
+// Module ID: 12625
+// Function ID: 97581
 // Name: importDefaultResult1
-// Dependencies: [1194, 3, 12615, 12654, 12657, 9492, 675, 652, 477, 3741, 1430, 686, 2]
+// Dependencies: [1194, 3, 12626, 12665, 12668, 9413, 675, 652, 477, 3742, 1430, 686, 2]
 
-// Module 12614 (importDefaultResult1)
+// Module 12625 (importDefaultResult1)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importDefaultResult from "_isNativeReflectConstruct";
 import importDefaultResult1 from "_isNativeReflectConstruct";
@@ -24,11 +24,11 @@ importDefaultResult1.handleIdentify = () => {
   if (null == token) {
     return null;
   } else {
-    const state = importDefault(9492).getState();
+    const state = importDefault(9413).getState();
     const installationForTracking = authStore.getInstallationForTracking();
     obj = { token };
     obj = {};
-    const obj4 = importDefault(9492);
+    const obj4 = importDefault(9413);
     const merged = Object.assign(importDefault(675).getSuperProperties());
     obj["client_app_state"] = state;
     obj["is_fast_connect"] = false;

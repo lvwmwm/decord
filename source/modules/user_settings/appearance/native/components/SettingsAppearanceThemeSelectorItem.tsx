@@ -1,10 +1,10 @@
-// Module ID: 14212
-// Function ID: 109287
+// Module ID: 14223
+// Function ID: 109414
 // Name: GradientThemeBackground
-// Dependencies: [31, 27, 1278, 14211, 482, 33, 4130, 689, 3975, 3840, 4662, 1273, 14213, 624, 3834, 14214, 3944, 3848, 4660, 1212, 2]
+// Dependencies: [31, 27, 1278, 14222, 482, 33, 4131, 689, 3976, 3841, 4663, 1273, 14224, 624, 3835, 14225, 3945, 3849, 4661, 1212, 2]
 // Exports: default
 
-// Module 14212 (GradientThemeBackground)
+// Module 14223 (GradientThemeBackground)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   ({ item, isThemeLocked } = arg0);
-  let obj = require(3840) /* isThemeLight */;
+  let obj = require(3841) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(item.theme);
   const tmp2 = callback2(isThemeDarkResult);
   obj = {};
@@ -41,9 +41,9 @@ function GradientThemeBackground(arg0) {
   obj1.gradientOverride = item;
   obj1.mix = true;
   obj1.mixColorOverride = isThemeDarkResult ? importDefaultResult1 : importDefaultResult2;
-  const items1 = [callback(importDefault(4662), obj1), ];
+  const items1 = [callback(importDefault(4663), obj1), ];
   if (isThemeLocked) {
-    const obj3 = { source: importDefault(14213), style: tmp2.lock };
+    const obj3 = { source: importDefault(14224), style: tmp2.lock };
     isThemeLocked = callback(require(1273) /* Button */.Icon, obj3);
   }
   items1[1] = isThemeLocked;
@@ -59,11 +59,11 @@ function DefaultThemeBackground(item) {
   } else {
     theme = item.theme;
   }
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const token = obj.useToken(importDefault(689).colors.BACKGROUND_BASE_LOWER, theme);
-  let obj1 = require(3834) /* map */;
+  let obj1 = require(3835) /* map */;
   const token1 = obj1.useToken(importDefault(689).colors.BORDER_STRONG, theme);
-  let obj2 = require(3834) /* map */;
+  let obj2 = require(3835) /* map */;
   obj = {};
   obj = { width: "100%", height: "100%", backgroundColor: token, borderColor: token1, borderWidth: 1 };
   const token2 = obj2.useToken(importDefault(689).colors.ICON_STRONG, theme);
@@ -73,7 +73,7 @@ function DefaultThemeBackground(item) {
   if ("system" === item.theme) {
     obj1 = { style: { alignSelf: "center", justifyContent: "center", flex: 1 } };
     obj2 = { fill: token2 };
-    obj1.children = callback(importDefault(14214), obj2);
+    obj1.children = callback(importDefault(14225), obj2);
     tmp9 = callback(View, obj1);
   }
   obj.children = tmp9;
@@ -83,7 +83,7 @@ function CustomThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   ({ item, isThemeLocked } = arg0);
-  let obj = require(3840) /* isThemeLight */;
+  let obj = require(3841) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(item.theme);
   const tmp2 = callback2(isThemeDarkResult);
   obj = {};
@@ -101,9 +101,9 @@ function CustomThemeBackground(arg0) {
   obj1.mix = true;
   obj1.mixColorOverride = isThemeDarkResult ? importDefaultResult1 : importDefaultResult2;
   obj1.customTheme = item;
-  const items1 = [callback(require(4662) /* getThemeMixColor */.CustomThemedGradient, obj1), ];
+  const items1 = [callback(require(4663) /* getThemeMixColor */.CustomThemedGradient, obj1), ];
   if (isThemeLocked) {
-    const obj3 = { source: importDefault(14213), style: tmp2.lock };
+    const obj3 = { source: importDefault(14224), style: tmp2.lock };
     isThemeLocked = callback(require(1273) /* Button */.Icon, obj3);
   }
   items1[1] = isThemeLocked;
@@ -148,19 +148,19 @@ export default function ThemeSelectorItem(onPress) {
   ({ themePreset, isPreview, isSelected, isNew } = onPress);
   const tmp = _createForOfIteratorHelperLoose();
   if (isPreview) {
-    isPreview = themePreset.type !== require(3944) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME;
+    isPreview = themePreset.type !== require(3945) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME;
   }
-  if (themePreset.type === require(3944) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME) {
+  if (themePreset.type === require(3945) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME) {
     let obj = { item: themePreset };
     let tmp8 = callback(DefaultThemeBackground, obj);
-  } else if (themePreset.type === require(3944) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
+  } else if (themePreset.type === require(3945) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
     obj = { item: themePreset, isThemeLocked: isPreview };
     tmp8 = callback(CustomThemeBackground, obj);
   } else {
     obj = { isThemeLocked: isPreview, item: themePreset };
     tmp8 = callback(GradientThemeBackground, obj);
   }
-  let obj3 = require(3848) /* useCheckboxA11yNative */;
+  let obj3 = require(3849) /* useCheckboxA11yNative */;
   const obj1 = { selected: isSelected, disabled: isPreview };
   const radioA11yNative = obj3.useRadioA11yNative(obj1);
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
@@ -183,5 +183,5 @@ export default function ThemeSelectorItem(onPress) {
   items[1] = isNew;
   obj3.children = items;
   obj2.children = closure_7(View, obj3);
-  return callback(require(4660) /* PressableBase */.PressableOpacity, obj2);
+  return callback(require(4661) /* PressableBase */.PressableOpacity, obj2);
 };

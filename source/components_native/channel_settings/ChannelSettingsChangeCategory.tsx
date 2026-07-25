@@ -1,10 +1,10 @@
-// Module ID: 15584
-// Function ID: 120148
+// Module ID: 15594
+// Function ID: 120276
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 830, 6, 7, 15, 17, 18, 31, 1348, 5070, 1838, 3758, 3767, 1849, 653, 33, 4130, 689, 5071, 11485, 3763, 5048, 4470, 1212, 4320, 5165, 5501, 7636, 4541, 4126, 3842, 566, 1456, 44, 2]
+// Dependencies: [57, 830, 6, 7, 15, 17, 18, 31, 1348, 5071, 1838, 3759, 3768, 1850, 653, 33, 4131, 689, 5072, 11448, 3764, 5049, 4471, 1212, 4321, 5164, 5501, 7575, 4542, 4127, 3843, 566, 1456, 44, 2]
 // Exports: default
 
-// Module 15584 (_isNativeReflectConstruct)
+// Module 15594 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import _inherits from "_inherits";

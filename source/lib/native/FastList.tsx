@@ -1,12 +1,12 @@
-// Module ID: 7677
-// Function ID: 60942
+// Module ID: 7619
+// Function ID: 60866
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 15, 17, 18, 57, 6, 7, 31, 27, 33, 22, 620, 5515, 4126, 477, 3991, 7678, 7679, 5189, 7680, 5217, 3994, 2]
+// Dependencies: [29, 15, 17, 18, 57, 6, 7, 31, 27, 33, 22, 620, 5515, 4127, 477, 3992, 7620, 7621, 5189, 7622, 5217, 3995, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7677 (_isNativeReflectConstruct)
+// Module 7619 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import module_3991 from "module_3991";
+import module_3992 from "module_3992";
 import createFakeSharedValue from "createFakeSharedValue";
 import BottomSheetModal from "BottomSheetModal";
 import _slicedToArray from "_slicedToArray";
@@ -15,7 +15,7 @@ import result from "result";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let StyleSheet;
 let closure_12;
@@ -3012,7 +3012,7 @@ let tmp7 = ((PureComponent) => {
 })(importAllResult.PureComponent);
 obj = { batchesToRender: 12, contentInset: { top: 0, right: 0, left: 0, bottom: 0 }, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false };
 tmp7.defaultProps = obj;
-const animatedComponent = require("module_3991").createAnimatedComponent(tmp7);
+const animatedComponent = require("module_3992").createAnimatedComponent(tmp7);
 let result = require("_getPrototypeOf").fileFinishedImporting("lib/native/FastList.tsx");
 
 export default tmp7;

@@ -1,10 +1,10 @@
-// Module ID: 13911
-// Function ID: 106420
+// Module ID: 13922
+// Function ID: 106547
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [653, 4815, 33, 4130, 1273, 4066, 1557, 6735, 5468, 5187, 5186, 1212, 5189, 5165, 4098, 9009, 1392, 3976, 5465, 5462, 5482, 2]
+// Dependencies: [653, 4816, 33, 4131, 1273, 4067, 1557, 5731, 5468, 5187, 5186, 1212, 5189, 5164, 4099, 8897, 1392, 3977, 5465, 5462, 5482, 2]
 // Exports: default
 
-// Module 13911 (AddApplicationIdentityTableRow)
+// Module 13922 (AddApplicationIdentityTableRow)
 import { AnalyticsLocations } from "ME";
 import { getMigratedApplicationIdentityConnectionsScreenApplications as closure_4 } from "items1";
 import jsxProd from "jsxProd";
@@ -41,9 +41,9 @@ function AddApplicationIdentityTableRow(application) {
     tmp6 = callback2(startAuthorization(1273).Icon, obj);
   }
   obj.icon = tmp6;
-  obj.trailing = callback2(startAuthorization(5165).TableRow.Arrow, {});
+  obj.trailing = callback2(startAuthorization(5164).TableRow.Arrow, {});
   obj.disabled = !tmp.canStartAuthorization;
-  return callback2(startAuthorization(5165).TableRow, obj, application.id);
+  return callback2(startAuthorization(5164).TableRow, obj, application.id);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = { list: { paddingHorizontal: 16 } };

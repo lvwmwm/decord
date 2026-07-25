@@ -1,9 +1,9 @@
-// Module ID: 7703
-// Function ID: 61321
+// Module ID: 7647
+// Function ID: 61267
 // Name: items
-// Dependencies: [5676, 1282, 1212, 7690, 2]
+// Dependencies: [5853, 1282, 1212, 7634, 2]
 
-// Module 7703 (items)
+// Module 7647 (items)
 let obj = {
   getTitle() {
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -24,8 +24,8 @@ obj.onApply = function onApply() {
   let explicitContentFriendDm;
   let explicitContentGuilds;
   let explicitContentNonFriendDm;
-  let obj = require(5676) /* resolveExplicitContentSettingWithDefaults */;
-  const explicitContentSettingOrDefault = require(5676) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
+  let obj = require(5853) /* resolveExplicitContentSettingWithDefaults */;
+  const explicitContentSettingOrDefault = require(5853) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
   obj = {};
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
   if (explicitContentGuilds === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW) {
@@ -43,7 +43,7 @@ obj.predicate = function predicate() {
   let explicitContentFriendDm;
   let explicitContentGuilds;
   let explicitContentNonFriendDm;
-  const explicitContentSettingOrDefault = require(5676) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
+  const explicitContentSettingOrDefault = require(5853) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
   let tmp2 = explicitContentGuilds === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW;
   if (!tmp2) {

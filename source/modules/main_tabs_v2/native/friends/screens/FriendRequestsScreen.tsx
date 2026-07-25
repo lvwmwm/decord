@@ -1,10 +1,10 @@
-// Module ID: 15512
-// Function ID: 119343
+// Module ID: 15522
+// Function ID: 119471
 // Name: compareUserItems
-// Dependencies: [57, 31, 27, 6881, 3767, 1849, 8857, 653, 9100, 33, 4130, 689, 15513, 1934, 4472, 624, 6882, 3803, 15188, 6883, 21, 5462, 5482, 675, 12012, 5468, 15514, 636, 8537, 1212, 1456, 5501, 5165, 4126, 8404, 4662, 8799, 4660, 9924, 5807, 8864, 2]
+// Dependencies: [57, 31, 27, 5872, 3768, 1850, 8745, 653, 8992, 33, 4131, 689, 15523, 1935, 4473, 624, 5873, 3804, 15198, 5874, 21, 5462, 5482, 675, 11988, 5468, 15524, 636, 8297, 1212, 1456, 5501, 5164, 4127, 8162, 4663, 8687, 4661, 9852, 6727, 8752, 2]
 // Exports: default
 
-// Module 15512 (compareUserItems)
+// Module 15522 (compareUserItems)
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
 import { View } from "isUndefinedOrNull";
@@ -58,9 +58,9 @@ export default function FriendRequestsScreen() {
     const stateFromStoresArray = analyticsLocations(tmp7[15]).useStateFromStoresArray(items, () => {
       const localItems = pendingOutgoingIds.localItems;
       return localItems.filter((type) => {
-        let tmp = type.type === analyticsLocations(6882).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
+        let tmp = type.type === analyticsLocations(5873).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
         if (!tmp) {
-          tmp = type.type === analyticsLocations(6882).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
+          tmp = type.type === analyticsLocations(5873).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
         }
         return tmp;
       });
@@ -73,10 +73,10 @@ export default function FriendRequestsScreen() {
         const mapped = stateFromStoresArray.map((local_id) => local_id.local_id);
         const _Boolean = Boolean;
         const found = mapped.filter(Boolean);
-        const result = analyticsLocations(15188).markNotificationCenterLocalItemsAcked(found);
-        const obj = analyticsLocations(15188);
-        const result1 = analyticsLocations(15188).bulkMarkNotificationCenterItemsAcked(stateFromStoresArray.filter((addResult) => !analyticsLocations(table[19]).isRemoteAcked(addResult, outer1_1)));
-        const obj2 = analyticsLocations(15188);
+        const result = analyticsLocations(15198).markNotificationCenterLocalItemsAcked(found);
+        const obj = analyticsLocations(15198);
+        const result1 = analyticsLocations(15198).bulkMarkNotificationCenterItemsAcked(stateFromStoresArray.filter((addResult) => !analyticsLocations(table[19]).isRemoteAcked(addResult, outer1_1)));
+        const obj2 = analyticsLocations(15198);
       }
     }, items1);
   })();
@@ -93,9 +93,9 @@ export default function FriendRequestsScreen() {
   }), 2);
   first = tmp5[0];
   const dependencyMap = tmp7;
-  let obj1 = analyticsLocations(12012);
+  let obj1 = analyticsLocations(11988);
   gameRelationshipsByType = obj1.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj2 = analyticsLocations(12012);
+  let obj2 = analyticsLocations(11988);
   gameRelationshipsByType1 = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   let items1 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -207,9 +207,9 @@ export default function FriendRequestsScreen() {
               const intl = analyticsLocations(1212).intl;
               obj.label = intl.string(analyticsLocations(1212).t.fUQoqD);
               obj = { variant: "text-sm/medium", color: "text-muted", children: outer1_11.length };
-              obj.trailing = outgoingData(analyticsLocations(4126).Text, obj);
+              obj.trailing = outgoingData(analyticsLocations(4127).Text, obj);
               obj.arrow = true;
-              tmp2 = outgoingData(analyticsLocations(5165).TableRow, obj);
+              tmp2 = outgoingData(analyticsLocations(5164).TableRow, obj);
             }
             const items = [tmp2, ];
             let tmp7 = null;
@@ -222,9 +222,9 @@ export default function FriendRequestsScreen() {
               const intl2 = analyticsLocations(1212).intl;
               obj1.label = intl2.string(analyticsLocations(1212).t.en1Gkz);
               const obj2 = { variant: "text-sm/medium", color: "text-muted", children: outer1_12.length };
-              obj1.trailing = outgoingData(analyticsLocations(4126).Text, obj2);
+              obj1.trailing = outgoingData(analyticsLocations(4127).Text, obj2);
               obj1.arrow = true;
-              tmp7 = outgoingData(analyticsLocations(5165).TableRow, obj1);
+              tmp7 = outgoingData(analyticsLocations(5164).TableRow, obj1);
             }
             items[1] = tmp7;
             obj.children = items;
@@ -254,7 +254,7 @@ export default function FriendRequestsScreen() {
   if (tmp24) {
     tmp24 = incoming.length >= incomingData;
   }
-  let obj5 = analyticsLocations(8404);
+  let obj5 = analyticsLocations(8162);
   obj = {
     pageWidth: 0,
     defaultIndex: first1,
@@ -281,9 +281,9 @@ export default function FriendRequestsScreen() {
   obj.items = items8;
   const segmentedControlState = obj5.useSegmentedControlState(obj);
   obj2 = { value: analyticsLocations };
-  const items9 = [outgoingData(first(4662), { absolute: true }), ];
+  const items9 = [outgoingData(first(4663), { absolute: true }), ];
   obj3 = { style: tmp.container };
-  obj4 = { style: tmp.tabs, children: outgoingData(analyticsLocations(8799).SegmentedControl, { state: segmentedControlState }) };
+  obj4 = { style: tmp.tabs, children: outgoingData(analyticsLocations(8687).SegmentedControl, { state: segmentedControlState }) };
   const items10 = [outgoingData(pendingIncomingIds, obj4), , ];
   if (tmp24) {
     obj5 = { style: tmp.clearAllContainer };
@@ -300,8 +300,8 @@ export default function FriendRequestsScreen() {
     const obj7 = { variant: "text-sm/semibold", color: "text-brand" };
     const intl3 = analyticsLocations(1212).intl;
     obj7.children = intl3.string(analyticsLocations(1212).t.O8k7O4);
-    obj6.children = outgoingData(analyticsLocations(4126).Text, obj7);
-    obj5.children = outgoingData(analyticsLocations(4660).PressableOpacity, obj6);
+    obj6.children = outgoingData(analyticsLocations(4127).Text, obj7);
+    obj5.children = outgoingData(analyticsLocations(4661).PressableOpacity, obj6);
     tmp26 = outgoingData(pendingIncomingIds, obj5);
   }
   items10[1] = tmp26;
@@ -316,13 +316,13 @@ export default function FriendRequestsScreen() {
       stringResult = intl4.string(analyticsLocations(1212).t["yvzX/Z"]);
     }
     obj9.title = stringResult;
-    obj9.illustration = analyticsLocations(5807).WumpusCouchSpotIllustration;
+    obj9.illustration = analyticsLocations(6727).WumpusCouchSpotIllustration;
     obj9.disableBackgroundOverlay = true;
-    obj9 = tmp34(first(9924), obj9);
+    obj9 = tmp34(first(9852), obj9);
     obj8.children = obj9;
     tmp34(pendingIncomingIds, obj8);
     const tmp38 = pendingIncomingIds;
-    const tmp41 = first(9924);
+    const tmp41 = first(9852);
   } else {
     const obj10 = {};
     if (first1 === closure_16.Incoming) {
@@ -331,7 +331,7 @@ export default function FriendRequestsScreen() {
     obj10.sections = outgoingSection;
     obj10.getItemProps = callback2;
     obj10.getSectionProps = callback1;
-    items10[2] = tmp34(analyticsLocations(8864).UsersFastList, obj10);
+    items10[2] = tmp34(analyticsLocations(8752).UsersFastList, obj10);
     obj3.children = items10;
     items9[1] = tmp28(pendingIncomingIds, obj3);
     obj2.children = items9;

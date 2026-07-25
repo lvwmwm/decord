@@ -1,10 +1,10 @@
-// Module ID: 8428
-// Function ID: 66994
+// Module ID: 8186
+// Function ID: 65645
 // Name: useChannelsUserCanStartStageIn
-// Dependencies: [1907, 3758, 1356, 566, 2]
+// Dependencies: [1908, 3759, 1356, 566, 2]
 // Exports: useChannelsUserCanStartStageIn
 
-// Module 8428 (useChannelsUserCanStartStageIn)
+// Module 8186 (useChannelsUserCanStartStageIn)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

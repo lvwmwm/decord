@@ -1,10 +1,10 @@
-// Module ID: 12236
-// Function ID: 95661
+// Module ID: 12212
+// Function ID: 95470
 // Name: fetchCustomActivityLink
-// Dependencies: [5, 12237, 653, 12239, 507, 686, 2]
+// Dependencies: [5, 12213, 653, 12215, 507, 686, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
 
-// Module 12236 (fetchCustomActivityLink)
+// Module 12212 (fetchCustomActivityLink)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";
@@ -36,7 +36,7 @@ let set = new Set();
 const result = set.fileFinishedImporting("modules/activities/utils/CustomActivityLinkUtils.tsx");
 
 export { fetchCustomActivityLink };
-export const getCustomActivityLinkParams = function getCustomActivityLinkParams(code, value, searchParams2) {
+export const getCustomActivityLinkParams = function getCustomActivityLinkParams(closure_0, value, searchParams2) {
   return _getCustomActivityLinkParams(...arguments);
 };
 export const getQuickLinkImage = function getQuickLinkImage(assetPath) {

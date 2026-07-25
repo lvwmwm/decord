@@ -1,9 +1,9 @@
-// Module ID: 4038
-// Function ID: 33608
+// Module ID: 4039
+// Function ID: 33619
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4039, 4040, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4040, 4041, 566, 686, 2]
 
-// Module 4038 (_isNativeReflectConstruct)
+// Module 4039 (_isNativeReflectConstruct)
 import gameServerResponseToInstance from "gameServerResponseToInstance";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -48,7 +48,7 @@ function handleGameServerInstanceCreated(arg0) {
   const merged1 = Object.assign(tmp);
   obj = {};
   const merged2 = Object.assign(tmp.instances);
-  obj[gameServer.id] = importDefault(4040)(gameServer);
+  obj[gameServer.id] = importDefault(4041)(gameServer);
   obj["instances"] = obj;
   obj[guildId] = obj;
 }

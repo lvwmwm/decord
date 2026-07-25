@@ -1,10 +1,10 @@
-// Module ID: 10784
-// Function ID: 83741
+// Module ID: 10756
+// Function ID: 83483
 // Name: SingleStream
-// Dependencies: [31, 10240, 33, 10593, 10603, 4323, 2]
+// Dependencies: [31, 10173, 33, 10481, 10491, 4324, 2]
 // Exports: default
 
-// Module 10784 (SingleStream)
+// Module 10756 (SingleStream)
 import "result";
 import resetFocusTimer from "resetFocusTimer";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ export default function SingleStream(channel) {
   channel = channel.channel;
   const obj = {
     gestureEnabled: true,
-    resizeMode: channel(10603).ResizeMode.CONTAIN,
+    resizeMode: channel(10491).ResizeMode.CONTAIN,
     onSingleTap() {
       outer1_3();
     },
@@ -30,9 +30,9 @@ export default function SingleStream(channel) {
     participant: channel.participant,
     style: { flex: 1 }
   };
-  return jsx(importDefault(10593), {
+  return jsx(importDefault(10481), {
     gestureEnabled: true,
-    resizeMode: channel(10603).ResizeMode.CONTAIN,
+    resizeMode: channel(10491).ResizeMode.CONTAIN,
     onSingleTap() {
       outer1_3();
     },

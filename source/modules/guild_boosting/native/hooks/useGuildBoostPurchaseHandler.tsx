@@ -1,10 +1,10 @@
-// Module ID: 11598
-// Function ID: 90248
+// Module ID: 11564
+// Function ID: 89965
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 31, 653, 3, 6644, 7156, 6643, 675, 4471, 1212, 4966, 2]
+// Dependencies: [5, 31, 653, 3, 6497, 6238, 6496, 675, 4472, 1212, 4967, 2]
 // Exports: default
 
-// Module 11598 (useGuildBoostPurchaseHandler)
+// Module 11564 (useGuildBoostPurchaseHandler)
 import getBaseAnalyticsFields from "getBaseAnalyticsFields";
 import result from "result";
 import { AnalyticEvents } from "ME";
@@ -16,7 +16,7 @@ let result = require("ME").fileFinishedImporting("modules/guild_boosting/native/
 
 export default function useGuildBoostPurchaseHandler(arg0) {
   const _require = arg0;
-  let obj = _require(6644);
+  let obj = _require(6497);
   const result = obj.isMobileWebRedirectCheckoutEnabled();
   const items = [arg0];
   obj = {

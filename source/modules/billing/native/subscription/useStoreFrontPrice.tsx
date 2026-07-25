@@ -1,10 +1,10 @@
-// Module ID: 7434
-// Function ID: 59792
+// Module ID: 6516
+// Function ID: 58254
 // Name: useStoreFrontPrice
-// Dependencies: [31, 653, 3776, 2]
+// Dependencies: [31, 653, 3777, 2]
 // Exports: default
 
-// Module 7434 (useStoreFrontPrice)
+// Module 6516 (useStoreFrontPrice)
 import result from "result";
 import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME";
 

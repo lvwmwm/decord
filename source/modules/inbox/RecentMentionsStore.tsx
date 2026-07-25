@@ -1,9 +1,9 @@
-// Module ID: 6879
-// Function ID: 54490
+// Module ID: 5869
+// Function ID: 51794
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3768, 1194, 1348, 4349, 4142, 3767, 3947, 4325, 1849, 653, 587, 4351, 4345, 4365, 22, 4206, 5651, 6880, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3769, 1194, 1348, 4350, 4143, 3768, 3948, 4326, 1850, 653, 587, 4352, 4346, 4366, 22, 4207, 5870, 5871, 566, 686, 2]
 
-// Module 6879 (_isNativeReflectConstruct)
+// Module 5869 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import Storage from "Storage";
@@ -64,8 +64,8 @@ function findOrCreateMessageRecord(channel_id) {
   } else {
     message = message.getMessage(channel_id.channel_id, channel_id.id);
     if (null == message) {
-      message = require(4351) /* createMinimalMessageRecord */.createMessageRecord(channel_id);
-      const obj = require(4351) /* createMinimalMessageRecord */;
+      message = require(4352) /* createMinimalMessageRecord */.createMessageRecord(channel_id);
+      const obj = require(4352) /* createMinimalMessageRecord */;
     }
     return message;
   }
@@ -78,7 +78,7 @@ function hasMentionNotificationEnabled(channel_id) {
       if (closure_15.isGuildOrCategoryOrChannelMuted(basicChannel.guild_id, basicChannel.id)) {
         return false;
       } else {
-        let obj = require(4345) /* shouldAgeVerifyForAgeGate */;
+        let obj = require(4346) /* shouldAgeVerifyForAgeGate */;
         if (obj.shouldShowAgeGateForChannelId(basicChannel.id)) {
           return false;
         } else {
@@ -92,7 +92,7 @@ function hasMentionNotificationEnabled(channel_id) {
             let tmp15 = null != currentUser;
             if (tmp15) {
               obj = { message: channel_id, userId: currentUser.id, suppressEveryone: result1, suppressRoles: result2 };
-              tmp15 = importDefault(4365)(obj);
+              tmp15 = importDefault(4366)(obj);
             }
             return tmp15;
           } else {
@@ -110,7 +110,7 @@ function parseMessage(message, channelId) {
   if (channelId === undefined) {
     channel_id = null;
   }
-  if (importDefault(5651)(message)) {
+  if (importDefault(5870)(message)) {
     const SELF_MENTIONABLE_SYSTEM = constants2.SELF_MENTIONABLE_SYSTEM;
     if (!SELF_MENTIONABLE_SYSTEM.has(message.type)) {
       return null;
@@ -130,19 +130,19 @@ function parseMessage(message, channelId) {
       }
       id = id.getId();
       if (!blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message)) {
-        if (!importDefault(6880)(message, id)) {
+        if (!importDefault(5871)(message, id)) {
           const tmp12 = findOrCreateMessageRecord(message);
           let obj = { message: tmp12, userId: id, suppressEveryone: !closure_28.everyoneFilter, suppressRoles: !closure_28.roleFilter };
           let tmp19 = null;
-          if (importDefault(4365)(obj)) {
+          if (importDefault(4366)(obj)) {
             let tmp24Result = c31;
             if (c31) {
               tmp24Result = closure_12.ackMessageId(channel.id) !== tmp12.id;
             }
             if (tmp24Result) {
               obj = { message: tmp12, userId: id, suppressEveryone: closure_15.isSuppressEveryoneEnabled(channel.getGuildId()), suppressRoles: closure_15.isSuppressRolesEnabled(channel.getGuildId()) };
-              tmp24Result = importDefault(4365)(obj);
-              const tmp24 = importDefault(4365);
+              tmp24Result = importDefault(4366)(obj);
+              const tmp24 = importDefault(4366);
             }
             tmp19 = tmp12;
             if (tmp24Result) {
@@ -415,7 +415,7 @@ obj = {
     });
     let c26 = false;
     const arr2 = importDefault(22);
-    let closure_30 = require(4206) /* sleep */.now();
+    let closure_30 = require(4207) /* sleep */.now();
     let c29 = true;
   },
   LOAD_RECENT_MENTIONS_FAILURE: function handleLoadMentionsFailure() {
@@ -492,7 +492,7 @@ obj = {
           updateChannelMentionCount(obj);
         }
       }
-      obj2 = require(4365) /* isMentioned */;
+      obj2 = require(4366) /* isMentioned */;
     }
     return false;
   },
@@ -503,8 +503,8 @@ obj = {
         const findIndexResult = importDefault(22).findIndex(substr, (id) => id.id === id);
         substr = substr.slice();
         if (null != substr[findIndexResult]) {
-          substr[findIndexResult] = id(4351).updateMessageRecord(tmp7, message.message);
-          const obj2 = id(4351);
+          substr[findIndexResult] = id(4352).updateMessageRecord(tmp7, message.message);
+          const obj2 = id(4352);
         }
       }
     }

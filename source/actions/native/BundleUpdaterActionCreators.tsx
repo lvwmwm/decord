@@ -1,8 +1,8 @@
-// Module ID: 16635
-// Function ID: 129746
-// Dependencies: [27, 4470, 1212, 2]
+// Module ID: 16646
+// Function ID: 129914
+// Dependencies: [27, 4471, 1212, 2]
 
-// Module 16635
+// Module 16646
 import { NativeModules } from "get ActivityIndicator";
 
 let c4 = false;
@@ -11,7 +11,7 @@ const result = require("getSystemLocale").fileFinishedImporting("actions/native/
 export default {
   prepareUpdate(versionRequired) {
     if (versionRequired) {
-      let obj = importDefault(4470);
+      let obj = importDefault(4471);
       obj = {};
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.title = intl.string(require(1212) /* getSystemLocale */.t.GQZdmI);

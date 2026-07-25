@@ -1,10 +1,10 @@
-// Module ID: 14725
-// Function ID: 112220
+// Module ID: 14736
+// Function ID: 112348
 // Name: fuzzySearchToggle
-// Dependencies: [57, 31, 27, 5090, 4129, 33, 5045, 4130, 689, 5165, 3831, 5503, 566, 5501, 14709, 5160, 14726, 4541, 14727, 5772, 2]
+// Dependencies: [57, 31, 27, 5090, 4130, 33, 5046, 4131, 689, 5164, 3832, 5503, 566, 5501, 14720, 5159, 14737, 4542, 14738, 9171, 2]
 // Exports: default
 
-// Module 14725 (fuzzySearchToggle)
+// Module 14736 (fuzzySearchToggle)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -21,14 +21,14 @@ function fuzzySearchToggle(str, str2, str3) {
   let tmp = 0 === str.length;
   if (!tmp) {
     const formatted = str.toLowerCase();
-    let tmp9Result = importDefault(5045)(formatted, str2.toLowerCase());
+    let tmp9Result = importDefault(5046)(formatted, str2.toLowerCase());
     if (!tmp9Result) {
       const formatted1 = str.toLowerCase();
-      tmp9Result = importDefault(5045)(formatted1, str3.toLowerCase());
-      const tmp9 = importDefault(5045);
+      tmp9Result = importDefault(5046)(formatted1, str3.toLowerCase());
+      const tmp9 = importDefault(5046);
     }
     tmp = tmp9Result;
-    const tmp4 = importDefault(5045);
+    const tmp4 = importDefault(5046);
   }
   return tmp;
 }
@@ -50,7 +50,7 @@ function ToggleTableRow(toggleName) {
     },
     trailing: callback2(toggleName(5503).FormSwitch, { value, onValueChange })
   };
-  return callback2(toggleName(5165).TableRow, obj, toggleName);
+  return callback2(toggleName(5164).TableRow, obj, toggleName);
 }
 function DevTogglesForCategory(category) {
   const arr = (function useFilteredDevTogglesForCategory(category, query) {
@@ -100,7 +100,7 @@ export default function DevToolsTogglesScreen() {
   const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = callback(React.useState(""), 2);
   const first = tmp2[0];
-  let obj = first(14726);
+  let obj = first(14737);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
   let obj1 = first(566);
   const items = [_isNativeReflectConstruct];
@@ -113,7 +113,7 @@ export default function DevToolsTogglesScreen() {
   }), items1, first(566).statesWillNeverBeEqual);
   obj = { style: tmp.wrap };
   const items2 = [tmp.container, ];
-  obj = { paddingBottom: importDefault(689).space.PX_16 + importDefault(5160)({ includeKeyboardHeight: true }).insets.bottom };
+  obj = { paddingBottom: importDefault(689).space.PX_16 + importDefault(5159)({ includeKeyboardHeight: true }).insets.bottom };
   items2[1] = obj;
   obj.contentContainerStyle = items2;
   obj1 = { spacing: 16 };
@@ -128,11 +128,11 @@ export default function DevToolsTogglesScreen() {
     },
     arrow: true
   };
-  const items3 = [callback2(first(5165).TableRow, obj3), ];
+  const items3 = [callback2(first(5164).TableRow, obj3), ];
   const obj4 = {};
   const obj5 = { size: "md", placeholder: "Search design toggles", onChange: tmp2[1] };
-  obj4.label = callback2(first(5772).SearchField, obj5);
-  items3[1] = callback2(first(5165).TableRow, obj4);
+  obj4.label = callback2(first(9171).SearchField, obj5);
+  items3[1] = callback2(first(5164).TableRow, obj4);
   obj2.children = items3;
   const items4 = [callback3(first(5501).TableRowGroup, obj2), , ];
   let tmp8 = null;
@@ -166,6 +166,6 @@ export default function DevToolsTogglesScreen() {
     return outer1_9(outer1_14, { category: parseInt(tmp), title: tmp2, query: first }, tmp);
   });
   obj1.children = items4;
-  obj.children = callback3(first(4541).Stack, obj1);
+  obj.children = callback3(first(4542).Stack, obj1);
   return callback2(ScrollView, obj);
 };

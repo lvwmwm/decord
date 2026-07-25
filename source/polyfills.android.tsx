@@ -1,11 +1,11 @@
-// Module ID: 13182
-// Function ID: 101496
+// Module ID: 13193
+// Function ID: 101623
 // Name: toLocaleLowerCase
-// Dependencies: [13183, 13279, 2]
+// Dependencies: [13194, 13290, 2]
 
-// Module 13182 (toLocaleLowerCase)
+// Module 13193 (toLocaleLowerCase)
 import mergeUnicodeLanguageId from "mergeUnicodeLanguageId";
-import module_13279 from "module_13279";
+import module_13290 from "module_13290";
 
 String.prototype.toLocaleLowerCase = function toLocaleLowerCase() {
   let str = "";

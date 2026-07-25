@@ -1,10 +1,10 @@
-// Module ID: 16430
-// Function ID: 128166
+// Module ID: 16441
+// Function ID: 128334
 // Name: useIsMFAEnabled
-// Dependencies: [8483, 1849, 653, 624, 2]
+// Dependencies: [8243, 1850, 653, 624, 2]
 // Exports: useIsMFAEnabled
 
-// Module 16430 (useIsMFAEnabled)
+// Module 16441 (useIsMFAEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { MFALevels } from "ME";

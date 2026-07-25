@@ -1,7 +1,7 @@
 // Module ID: 12066
-// Function ID: 93868
+// Function ID: 93924
 // Name: cached
-// Dependencies: [12039]
+// Dependencies: [12015]
 
 // Module 12066 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "caratteri", verb: "avere" }, file: { unit: "byte", verb: "avere" }, array: { unit: "elementi", verb: "avere" }, set: { unit: "elementi", verb: "avere" } };
-      let closure_1 = { regex: "input", email: "indirizzo email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data e ora ISO", date: "data ISO", time: "ora ISO", duration: "durata ISO", ipv4: "indirizzo IPv4", ipv6: "indirizzo IPv6", cidrv4: "intervallo IPv4", cidrv6: "intervallo IPv6", base64: "stringa codificata in base64", base64url: "URL codificata in base64", json_string: "stringa JSON", e164: "numero E.164", jwt: "JWT", template_literal: "input" };
-      let closure_2 = { nan: "NaN", number: "numero", array: "vettore" };
+      let closure_0 = { string: { unit: "belgi", verb: "bo\u2018lishi kerak" }, file: { unit: "bayt", verb: "bo\u2018lishi kerak" }, array: { unit: "element", verb: "bo\u2018lishi kerak" }, set: { unit: "element", verb: "bo\u2018lishi kerak" } };
+      let closure_1 = { regex: "kirish", email: "elektron pochta manzili", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO sana va vaqti", date: "ISO sana", time: "ISO vaqt", duration: "ISO davomiylik", ipv4: "IPv4 manzil", ipv6: "IPv6 manzil", mac: "MAC manzil", cidrv4: "IPv4 diapazon", cidrv6: "IPv6 diapazon", base64: "base64 kodlangan satr", base64url: "base64url kodlangan satr", json_string: "JSON satr", e164: "E.164 raqam", jwt: "JWT", template_literal: "kirish" };
+      let closure_2 = { nan: "NaN", number: "raqam", array: "massiv" };
       return (code) => {
         let minimum;
         let origin;
@@ -76,123 +76,113 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp53 = parsedTypeResult;
+          let tmp48 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp53 = tmp52;
+            tmp48 = tmp47;
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "Input non valido: atteso instanceof " + code.expected + ", ricevuto " + tmp53;
+            let combined = "Noto\u2018g\u2018ri kirish: kutilgan instanceof " + code.expected + ", qabul qilingan " + tmp48;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "Input non valido: atteso " + expected + ", ricevuto " + tmp53;
+            combined = "Noto\u2018g\u2018ri kirish: kutilgan " + expected + ", qabul qilingan " + tmp48;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Input non valido: atteso " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Noto\u2018g\u2018ri kirish: kutilgan " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "Opzione non valida: atteso uno tra " + closure_2.joinValues(code.values, "|");
+            combined1 = "Noto\u2018g\u2018ri variant: quyidagilardan biri kutilgan " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str31 = "<";
+          let str34 = "<";
           if (code.inclusive) {
-            str31 = "<=";
+            str34 = "<=";
           }
-          const tmp28 = getSizing(code.origin);
+          const tmp26 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str32 = "valore";
-          if (tmp28) {
-            if (tmp30) {
-              str32 = origin2;
-            }
-            let str = code.maximum.toString();
-            const unit = tmp28.unit;
-            let str37 = "elementi";
-            if (null != unit) {
-              str37 = unit;
+          let str35 = "qiymat";
+          if (tmp26) {
+            if (tmp28) {
+              str35 = origin2;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Troppo grande: " + str32 + " deve avere " + str31 + str + " " + str37;
-            const str36 = code.maximum;
+            let combined2 = "Juda katta: kutilgan " + str35 + " " + str34 + code.maximum.toString() + " " + tmp26.unit + " " + tmp26.verb;
+            const str39 = code.maximum;
           } else {
-            let tmp31 = str32;
-            if (tmp30) {
-              tmp31 = origin2;
+            let tmp29 = str35;
+            if (tmp28) {
+              tmp29 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Troppo grande: " + tmp31 + " deve essere " + str31 + code.maximum.toString();
-            const str33 = code.maximum;
+            combined2 = "Juda katta: kutilgan " + tmp29 + " " + str34 + code.maximum.toString();
+            const str36 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str25 = ">";
+          let str26 = ">";
           if (code.inclusive) {
-            str25 = ">=";
+            str26 = ">=";
           }
-          const tmp17 = getSizing(code.origin);
+          const tmp15 = getSizing(code.origin);
           ({ origin, minimum } = code);
-          const str1 = minimum.toString();
-          if (tmp17) {
+          let str = minimum.toString();
+          if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Troppo piccolo: " + origin + " deve avere " + str25 + str1 + " " + tmp17.unit;
+            let combined3 = "Juda kichik: kutilgan " + origin + " " + str26 + str + " " + tmp15.unit + " " + tmp15.verb;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Troppo piccolo: " + origin + " deve essere " + str25 + str1;
+            combined3 = "Juda kichik: kutilgan " + origin + " " + str26 + str;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Stringa non valida: deve iniziare con \"" + code.prefix + "\"";
+            let combined4 = "Noto\u2018g\u2018ri satr: \"" + code.prefix + "\" bilan boshlanishi kerak";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Stringa non valida: deve terminare con \"" + code.suffix + "\"";
+            combined4 = "Noto\u2018g\u2018ri satr: \"" + code.suffix + "\" bilan tugashi kerak";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Stringa non valida: deve includere \"" + code.includes + "\"";
+            combined4 = "Noto\u2018g\u2018ri satr: \"" + code.includes + "\" ni o\u2018z ichiga olishi kerak";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Stringa non valida: deve corrispondere al pattern " + code.pattern;
+            combined4 = "Noto\u2018g\u2018ri satr: " + code.pattern + " shabloniga mos kelishi kerak";
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "Invalid " + format;
+            combined4 = "Noto\u2018g\u2018ri " + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "Numero non valido: deve essere un multiplo di " + code.divisor;
+          return "Noto\u2018g\u2018ri raqam: " + code.divisor + " ning karralisi bo\u2018lishi kerak";
         } else if ("unrecognized_keys" === code) {
-          let str8 = "e";
+          let str9 = "";
           if (code.keys.length > 1) {
-            str8 = "i";
-          }
-          let str9 = "a";
-          if (code.keys.length > 1) {
-            str9 = "e";
+            str9 = "lar";
           }
           const _HermesInternal3 = HermesInternal;
-          return "Chiav" + str8 + " non riconosciut" + str9 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "Noma\u2019lum kalit" + str9 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Chiave non valida in " + code.origin;
+            return "" + code.origin + " dagi kalit noto\u2018g\u2018ri";
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "Valore non valido in " + code.origin;
+                return "" + code.origin + " da noto\u2018g\u2018ri qiymat";
               }
             }
-            return "Input non valido";
+            return "Noto\u2018g\u2018ri kirish";
           }
         }
       };

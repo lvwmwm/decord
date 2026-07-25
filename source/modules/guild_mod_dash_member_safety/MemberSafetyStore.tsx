@@ -1,9 +1,9 @@
-// Module ID: 6726
-// Function ID: 52315
+// Module ID: 5722
+// Function ID: 49628
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1917, 1838, 1849, 6727, 653, 1327, 21, 6733, 6734, 6729, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1918, 1838, 1850, 5723, 653, 1327, 21, 5729, 5730, 5725, 566, 686, 2]
 
-// Module 6726 (_isNativeReflectConstruct)
+// Module 5722 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import pendingMemberRequestKey from "pendingMemberRequestKey";
@@ -485,7 +485,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     let guildId;
     let memberSupplementals;
     ({ guildId, memberSupplementals } = arg0);
-    const result = require(6733) /* getMemberSupplementalByGuildId */.syncMemberSupplemental(guildId, memberSupplementals);
+    const result = require(5729) /* getMemberSupplementalByGuildId */.syncMemberSupplemental(guildId, memberSupplementals);
     if (result) {
       const result1 = getMemberSafetyPageStore(guildId).updateMembersByMemberIds(memberSupplementals.map((userId) => userId.userId));
       const obj2 = getMemberSafetyPageStore(guildId);
@@ -512,9 +512,9 @@ tmp2 = new tmp2(require("dispatcher"), {
       return memberIds;
     }, { memberIds: [], memberSupplementals: [] });
     let memberIds = reduced.memberIds;
-    let obj1 = require(6733) /* getMemberSupplementalByGuildId */;
+    let obj1 = require(5729) /* getMemberSupplementalByGuildId */;
     let result = obj1.syncMemberSupplemental(guildId, reduced.memberSupplementals);
-    let obj2 = require(6734) /* pendingMemberRequestKey */;
+    let obj2 = require(5730) /* pendingMemberRequestKey */;
     const result1 = obj2.registerFetchedSupplementals(guildId, memberIds);
     let first;
     let tmp6;
@@ -545,8 +545,8 @@ tmp2 = new tmp2(require("dispatcher"), {
       id = EMPTY_STRING_SNOWFLAKE_ID;
     }
     obj1.userId = id;
-    obj.before = require(6729) /* result */.createMemberSearchCursor(obj1);
-    const obj6 = require(6729) /* result */;
+    obj.before = require(5725) /* result */.createMemberSearchCursor(obj1);
+    const obj6 = require(5725) /* result */;
     obj2 = {};
     let joined_at1;
     if (null != tmp6) {
@@ -567,7 +567,7 @@ tmp2 = new tmp2(require("dispatcher"), {
       id1 = EMPTY_STRING_SNOWFLAKE_ID;
     }
     obj2.userId = id1;
-    obj.after = require(6729) /* result */.createMemberSearchCursor(obj2);
+    obj.after = require(5725) /* result */.createMemberSearchCursor(obj2);
     obj.elasticSearchCursor = obj;
     if (!result) {
       result = result2;

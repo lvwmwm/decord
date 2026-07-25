@@ -1,10 +1,10 @@
-// Module ID: 13755
-// Function ID: 105492
+// Module ID: 13766
+// Function ID: 105619
 // Name: BlockedUsersList
-// Dependencies: [31, 27, 3767, 33, 4130, 689, 5462, 5482, 1273, 13756, 1212, 5121, 4126, 5501, 13760, 566, 2]
+// Dependencies: [31, 27, 3768, 33, 4131, 689, 5462, 5482, 1273, 13767, 1212, 5121, 4127, 5501, 13771, 566, 2]
 // Exports: default
 
-// Module 13755 (BlockedUsersList)
+// Module 13766 (BlockedUsersList)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ function BlockedUsersList(userIds) {
   const tmp = _createForOfIteratorHelperLoose();
   importDefault(5462);
   if (0 === userIds.length) {
-    let obj = { Illustration: require(13756) /* getBlockedSource */.Blocked };
+    let obj = { Illustration: require(13767) /* getBlockedSource */.Blocked };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.body = intl.string(require(1212) /* getSystemLocale */.t.nnsFif);
     let tmp7 = callback(require(1273) /* Button */.EmptyState, obj);
@@ -31,7 +31,7 @@ function BlockedUsersList(userIds) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj3 = { numberOfBlockedUsers: userIds.length };
     obj2.children = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["c+JVEB"], obj3);
-    const items = [callback(require(4126) /* Text */.Text, obj2), ];
+    const items = [callback(require(4127) /* Text */.Text, obj2), ];
     const obj4 = { hasIcons: true, children: userIds.map((userId) => outer1_5(outer1_1(outer1_2[14]), { userId }, userId)) };
     const intl3 = require(1212) /* getSystemLocale */.intl;
     items[1] = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj4, intl3.string(require(1212) /* getSystemLocale */.t.PFOUKW));

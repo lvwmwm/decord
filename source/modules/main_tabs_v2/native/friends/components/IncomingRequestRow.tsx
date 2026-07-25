@@ -1,10 +1,10 @@
-// Module ID: 15504
-// Function ID: 119285
+// Module ID: 15514
+// Function ID: 119413
 // Name: IncomingRequestRow
-// Dependencies: [31, 4122, 4167, 8857, 653, 33, 3991, 624, 1212, 3969, 14959, 11688, 8873, 15216, 15505, 2]
+// Dependencies: [31, 4123, 4168, 8745, 653, 33, 3992, 624, 1212, 3970, 14969, 11657, 8761, 15226, 15515, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 15504 (IncomingRequestRow)
+// Module 15514 (IncomingRequestRow)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -114,7 +114,7 @@ function IncomingGameFriendRequestRow(arg0) {
   obj.user = 0;
   obj.application = 0;
   const merged = Object.assign(arg0, obj);
-  obj = importDefault(3969);
+  obj = importDefault(3970);
   const userTag = obj.useUserTag(user);
   obj = { user, applicationId: application.id };
   const intl = application(1212).intl;
@@ -143,7 +143,7 @@ export const IncomingFriendRequestRow = function IncomingFriendRequestRow(user) 
   let obj = Object.create(null);
   obj.user = 0;
   const merged = Object.assign(user, obj);
-  obj = importDefault(3969);
+  obj = importDefault(3970);
   const userTag = obj.useUserTag(user);
   obj = { user };
   const intl = require(1212) /* getSystemLocale */.intl;

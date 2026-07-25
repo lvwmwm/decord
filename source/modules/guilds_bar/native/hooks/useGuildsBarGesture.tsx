@@ -1,10 +1,10 @@
-// Module ID: 14858
-// Function ID: 113291
+// Module ID: 14869
+// Function ID: 113419
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 31, 27, 1838, 4970, 14859, 14860, 3991, 574, 4099, 3976, 22, 1184, 1212, 7677, 14849, 3834, 689, 3743, 9923, 682, 5048, 8042, 9339, 477, 1557, 4528, 14861, 14862, 14048, 5217, 2]
+// Dependencies: [5, 31, 27, 1838, 4971, 14870, 14871, 3992, 574, 4100, 3977, 22, 1184, 1212, 7619, 14860, 3835, 689, 3744, 9851, 682, 5049, 6152, 9232, 477, 1557, 4529, 14872, 14873, 14059, 5217, 2]
 // Exports: default
 
-// Module 14858 (_createForOfIteratorHelperLoose)
+// Module 14869 (_createForOfIteratorHelperLoose)
 import withEqualityFn from "withEqualityFn";
 import set from "set";
 import { Dimensions } from "getGuildsBarGuildMenuItems";
@@ -13,9 +13,9 @@ import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildsNodeType } from "_isNativeReflectConstruct";
 import importDefaultResult from "withEqualityFn";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
-import module_3991 from "module_3991";
-import module_3991 from "module_3991";
-import module_3991 from "module_3991";
+import module_3992 from "module_3992";
+import module_3992 from "module_3992";
+import module_3992 from "module_3992";
 import apply from "convertThemeToProto";
 import apply from "convertThemeToProto";
 import importDefaultResult1 from "debounce";
@@ -162,12 +162,12 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
   if ("drag-start" === type) {
     const tmp34 = getGuildOrFolderLabel(type.node);
     if (null != tmp34) {
-      const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
       const intl4 = require(1212) /* getSystemLocale */.intl;
       let obj = { itemName: tmp34 };
       AccessibilityAnnouncer.announce(intl4.formatToPlainString(require(1212) /* getSystemLocale */.t["vHD/Je"], obj));
     }
-    lib(require(4099) /* getAndroidLightImpactEffect */.HapticFeedbackTypes.DRAG_AND_DROP_START);
+    lib(require(4100) /* getAndroidLightImpactEffect */.HapticFeedbackTypes.DRAG_AND_DROP_START);
     lib.flush();
   } else if ("drag-move" === type) {
     type = undefined;
@@ -200,7 +200,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
       str3 = str2;
     }
     if (tmp7 !== tmp13) {
-      lib(require(4099) /* getAndroidLightImpactEffect */.HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
+      lib(require(4100) /* getAndroidLightImpactEffect */.HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
       ({ dragNode, overNode, overState } = type);
       if ("convert-before" !== overState) {
         if ("convert-after" !== overState) {
@@ -234,10 +234,10 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
     }
     tmp13 = getDropIndex(type.dragNode, type.overNode, type.overState);
   } else if ("drag-drop" === type) {
-    lib(require(4099) /* getAndroidLightImpactEffect */.HapticFeedbackTypes.DRAG_AND_DROP_END);
+    lib(require(4100) /* getAndroidLightImpactEffect */.HapticFeedbackTypes.DRAG_AND_DROP_END);
     lib.flush();
     lib2.flush();
-    const AccessibilityAnnouncer2 = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const AccessibilityAnnouncer2 = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     const intl5 = require(1212) /* getSystemLocale */.intl;
     AccessibilityAnnouncer2.announce(intl5.string(require(1212) /* getSystemLocale */.t.lMkmz7));
   }
@@ -293,8 +293,8 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
         element = store.getFastListGuildFolders()[item.section - constants.GUILDS];
         if (tmp6 != element) {
           const type = item.type;
-          if (require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.SECTION !== type) {
-            if (require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM === type) {
+          if (require(7619) /* _isNativeReflectConstruct */.FastListItemTypes.SECTION !== type) {
+            if (require(7619) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM === type) {
               if (element.type !== GuildsNodeType.ROOT) {
                 let tmp17 = element;
                 if (element.type !== GuildsNodeType.FOLDER) {
@@ -318,11 +318,11 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
 ({ FastListRenderSections: closure_10, useGuildWrapperSize: closure_11 } = GUILD_ITEM_SIZE);
 let obj = {};
 obj.pan = require("module_4294967295");
-obj.itemMeasurements = module_3991.makeMutable([]);
+obj.itemMeasurements = module_3992.makeMutable([]);
 obj.activeIndex = require("module_4294967295");
 let closure_14 = require("debounce")(require("getAndroidLightImpactEffect").triggerHapticFeedback, 16);
 let closure_15 = require("debounce")((intl) => {
-  const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(3977) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(intl);
 }, 500);
 let closure_16 = apply.throttle((data) => {

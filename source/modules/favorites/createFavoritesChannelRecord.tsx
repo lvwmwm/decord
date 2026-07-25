@@ -1,10 +1,10 @@
-// Module ID: 3757
-// Function ID: 28685
+// Module ID: 3758
+// Function ID: 28696
 // Name: createFavoritesChannelRecord
 // Dependencies: [653, 2]
 // Exports: createFavoritesChannelRecord
 
-// Module 3757 (createFavoritesChannelRecord)
+// Module 3758 (createFavoritesChannelRecord)
 import { ChannelTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/favorites/createFavoritesChannelRecord.tsx");

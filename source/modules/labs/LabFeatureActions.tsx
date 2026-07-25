@@ -1,10 +1,10 @@
-// Module ID: 14418
-// Function ID: 110169
+// Module ID: 14429
+// Function ID: 110296
 // Name: toggleLabFeature
-// Dependencies: [8367, 686, 2]
+// Dependencies: [8125, 686, 2]
 // Exports: toggleLabFeature
 
-// Module 14418 (toggleLabFeature)
+// Module 14429 (toggleLabFeature)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let closure_3 = {};

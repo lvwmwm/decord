@@ -1,10 +1,10 @@
-// Module ID: 8614
-// Function ID: 68318
+// Module ID: 8374
+// Function ID: 66972
 // Name: AnimatedRenderItem
-// Dependencies: [31, 33, 3991, 4476, 2]
+// Dependencies: [31, 33, 3992, 4477, 2]
 // Exports: default
 
-// Module 8614 (AnimatedRenderItem)
+// Module 8374 (AnimatedRenderItem)
 import result from "result";
 import jsxProd from "jsxProd";
 import { createElement } from "result";
@@ -141,7 +141,7 @@ function renderAnimatedItem(arg0, arg1, arg2, arg3) {
 let closure_6 = { code: "function AnimatedEnterExitItemTsx1(){const{useReducedMotion,shouldAnimate,state,TransitionStates,exiting,visible,runOnJS,cleanUp,entering}=this.__closure;var _shouldAnimate;if(useReducedMotion)return{};if(((_shouldAnimate=shouldAnimate)===null||_shouldAnimate===void 0?void 0:_shouldAnimate.get())===false)return{};if(state===TransitionStates.YEETED&&exiting!=null){return exiting(visible.get(),function(finished){if(finished){runOnJS(cleanUp)();}});}if(entering!=null){return entering(visible.get());}return{};}" };
 let closure_7 = { code: "function AnimatedEnterExitItemTsx2(){const{state,TransitionStates,visible,hasExiting,useReducedMotion}=this.__closure;return state===TransitionStates.YEETED&&visible.get()===0&&(!hasExiting||useReducedMotion);}" };
 let closure_8 = { code: "function AnimatedEnterExitItemTsx3(hasExited,previous){const{runOnJS,cleanUp}=this.__closure;if(!hasExited||hasExited===previous)return;runOnJS(cleanUp)();}" };
-let result = require("module_3991").fileFinishedImporting("design/components/AnimatedEnterExitItem/native/AnimatedEnterExitItem.tsx");
+let result = require("module_3992").fileFinishedImporting("design/components/AnimatedEnterExitItem/native/AnimatedEnterExitItem.tsx");
 
 export default function AnimatedEnterExitItem(useReducedMotion) {
   useReducedMotion = useReducedMotion.useReducedMotion;

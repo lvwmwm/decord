@@ -143,13 +143,13 @@ obj = {
   internal: obj
 };
 obj = {
-  isSemanticColor(BACKGROUND_BASE_LOW) {
-    let tmp = "object" === typeof BACKGROUND_BASE_LOW;
+  isSemanticColor(backgroundColor) {
+    let tmp = "object" === typeof backgroundColor;
     if (tmp) {
-      tmp = null !== BACKGROUND_BASE_LOW;
+      tmp = null !== backgroundColor;
     }
     if (tmp) {
-      tmp = closure_7 in BACKGROUND_BASE_LOW;
+      tmp = closure_7 in backgroundColor;
     }
     return tmp;
   },

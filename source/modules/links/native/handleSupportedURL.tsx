@@ -1,10 +1,10 @@
-// Module ID: 12909
-// Function ID: 100195
+// Module ID: 12920
+// Function ID: 100322
 // Name: handleSupportedURL
-// Dependencies: [29, 5, 7541, 6758, 6660, 12400, 1194, 653, 1355, 4195, 4344, 10650, 6770, 4113, 12910, 11051, 7751, 11732, 4337, 3982, 12911, 8537, 5796, 8693, 10971, 1820, 8239, 675, 8241, 5627, 9562, 11085, 12918, 11764, 10027, 1934, 10862, 10861, 12920, 12922, 1553, 4675, 12927, 3827, 12929, 1838, 5737, 8388, 8397, 5692, 4336, 9079, 3981, 4988, 1198, 686, 4938, 1443, 8482, 12932, 12947, 477, 12958, 8526, 12965, 4451, 12966, 6773, 5482, 8940, 6958, 4981, 10946, 9713, 13038, 4966, 10513, 8642, 8636, 4096, 2]
+// Dependencies: [29, 5, 6637, 5751, 6171, 12377, 1194, 653, 1355, 4196, 4345, 10614, 5766, 4114, 12921, 11007, 7697, 11702, 4338, 3983, 12922, 8297, 6554, 8581, 10922, 1820, 7972, 675, 7974, 5627, 9483, 11044, 12929, 11734, 9956, 1935, 10938, 10937, 12931, 12933, 1553, 4676, 12938, 3828, 12940, 1838, 6633, 8146, 8155, 11749, 4337, 8971, 3982, 4989, 1198, 686, 4939, 1443, 8242, 12943, 12958, 477, 12969, 8286, 12976, 4452, 12977, 5769, 5482, 8828, 5949, 4982, 10897, 9637, 13049, 4967, 5666, 8418, 8412, 4097, 2]
 // Exports: default
 
-// Module 12909 (handleSupportedURL)
+// Module 12920 (handleSupportedURL)
 import startDiceRoll from "startDiceRoll";
 import zustandStore from "zustandStore";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -824,8 +824,8 @@ export default function handleSupportedURL(payload) {
     }
   })(payload);
   if (tmp) {
-    let result = require(4096) /* removeInAppBrowserCloseSubscription */.browserManagerCloseBrowser();
-    let obj = require(4096) /* removeInAppBrowserCloseSubscription */;
+    let result = require(4097) /* removeInAppBrowserCloseSubscription */.browserManagerCloseBrowser();
+    let obj = require(4097) /* removeInAppBrowserCloseSubscription */;
   }
   return null != tmp && tmp;
 };

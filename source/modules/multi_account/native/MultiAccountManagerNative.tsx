@@ -1,9 +1,9 @@
-// Module ID: 16154
-// Function ID: 125200
+// Module ID: 16165
+// Function ID: 125368
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 7, 6, 11483, 653, 3, 664, 4337, 16155, 1934, 3982, 1207, 25, 11486, 1198, 3987, 3981, 3831, 1212, 16156, 16157, 2]
+// Dependencies: [15, 17, 18, 7, 6, 11446, 653, 3, 664, 4338, 16166, 1935, 3983, 1207, 25, 11449, 1198, 3988, 3982, 3832, 1212, 16167, 16168, 2]
 
-// Module 16154 (_isNativeReflectConstruct)
+// Module 16165 (_isNativeReflectConstruct)
 import validateMultiAccountTokens from "validateMultiAccountTokens";
 import MobileHomeDrawerExperiment from "MobileHomeDrawerExperiment";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

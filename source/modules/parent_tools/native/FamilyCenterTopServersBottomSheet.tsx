@@ -1,10 +1,10 @@
-// Module ID: 13852
-// Function ID: 106077
+// Module ID: 13863
+// Function ID: 106204
 // Name: GuildRow
-// Dependencies: [6769, 33, 4130, 689, 566, 6827, 5165, 5513, 5498, 4126, 1212, 2198, 5501, 2]
+// Dependencies: [5765, 33, 4131, 689, 566, 5827, 5164, 5513, 5498, 4127, 1212, 2199, 5501, 2]
 // Exports: default
 
-// Module 13852 (GuildRow)
+// Module 13863 (GuildRow)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -20,11 +20,11 @@ function GuildRow(guildActivity) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const topUserOrGuildDescription = guildActivity(6827).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
+    const topUserOrGuildDescription = guildActivity(5827).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     obj = { label: stateFromStores.name, subLabel: topUserOrGuildDescription };
     obj = { guild: stateFromStores, style: tmp.guildIcon };
     obj.icon = callback(importDefault(5513), obj);
-    return callback(guildActivity(5165).TableRow, obj);
+    return callback(guildActivity(5164).TableRow, obj);
   }
   tmp = _createForOfIteratorHelperLoose();
 }
@@ -40,8 +40,8 @@ export default function FamilyCenterTopGuildsBottomSheet(topGuildActivities) {
   let obj = {};
   obj = { variant: "text-md/bold", style: _createForOfIteratorHelperLoose().header };
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(importDefault(2198).Lq9Set);
-  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  obj.children = intl.string(importDefault(2199).Lq9Set);
+  const items = [callback(require(4127) /* Text */.Text, obj), ];
   obj = { hasIcons: true, children: topGuildActivities.map((guildActivity) => outer1_4(outer1_7, { guildActivity }, guildActivity.guild_id)) };
   items[1] = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
   obj.children = items;

@@ -1,9 +1,9 @@
-// Module ID: 9967
-// Function ID: 77005
+// Module ID: 9895
+// Function ID: 76620
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 3759, 6829, 1194, 1348, 4468, 4946, 4349, 4467, 7989, 653, 44, 4470, 1212, 5048, 9968, 7988, 4324, 22, 566, 686, 7005, 9973, 3976, 7993, 6691, 8026, 4029, 2]
+// Dependencies: [5, 3760, 5829, 1194, 1348, 4469, 4947, 4350, 4468, 7936, 653, 44, 4471, 1212, 5049, 9896, 7935, 4325, 22, 566, 686, 6023, 9901, 3977, 7940, 5685, 6135, 4030, 2]
 
-// Module 9967 (_createForOfIteratorHelperLoose)
+// Module 9895 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -121,7 +121,7 @@ function showLurkingAlert(guildId) {
   let title;
   guildId = guildId.guildId;
   ({ title, body } = guildId);
-  let obj = importDefault(4470);
+  let obj = importDefault(4471);
   obj = { title, body };
   const intl = guildId(1212).intl;
   obj.confirmText = intl.string(guildId(1212).t["9VLmlZ"]);
@@ -156,7 +156,7 @@ function handleShowVotesForAnswer(messageId) {
               const _String = String;
               answerId = String(message.poll.answers[0].answer_id);
             }
-            obj = importAll(9968);
+            obj = importAll(9896);
             obj = { message, initialAnswerId: answerId };
             obj.showVotesForAnswer(obj);
           }

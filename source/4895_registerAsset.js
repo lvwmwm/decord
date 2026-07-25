@@ -1,11 +1,11 @@
 // Module ID: 4895
-// Function ID: 42245
+// Function ID: 42256
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 4895 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "8ce2f7584220a9c90fe76fd89217537a", name: "img_account_sync_riot_light_and_dark", type: "svg" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "a3f3002b04ef160e95cf684a02c6531a", name: "img_account_sync_riot_white", type: "png" };
 
 export default registerAsset.registerAsset(obj);

@@ -1,10 +1,10 @@
-// Module ID: 10253
-// Function ID: 79176
+// Module ID: 10186
+// Function ID: 78811
 // Name: canViewPotentiallyNSFWChannel
-// Dependencies: [1348, 1849, 4345, 2]
+// Dependencies: [1348, 1850, 4346, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 10253 (canViewPotentiallyNSFWChannel)
+// Module 10186 (canViewPotentiallyNSFWChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 
@@ -16,8 +16,8 @@ export const canViewPotentiallyNSFWChannel = function canViewPotentiallyNSFWChan
   const channel = store.getChannel(channel_id);
   let tmp3 = null != currentUser && null != channel;
   if (tmp3) {
-    tmp3 = !require(4345) /* shouldAgeVerifyForAgeGate */.isChannelContentGated(channel);
-    const obj = require(4345) /* shouldAgeVerifyForAgeGate */;
+    tmp3 = !require(4346) /* shouldAgeVerifyForAgeGate */.isChannelContentGated(channel);
+    const obj = require(4346) /* shouldAgeVerifyForAgeGate */;
   }
   return tmp3;
 };

@@ -1,9 +1,9 @@
-// Module ID: 7158
-// Function ID: 57786
+// Module ID: 6240
+// Function ID: 56173
 // Name: CommonTriggerPointConfiguration
-// Dependencies: [6, 7, 1188, 4045, 2]
+// Dependencies: [6, 7, 1188, 4046, 2]
 
-// Module 7158 (CommonTriggerPointConfiguration)
+// Module 6240 (CommonTriggerPointConfiguration)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

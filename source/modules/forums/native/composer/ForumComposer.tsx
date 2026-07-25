@@ -1,10 +1,10 @@
-// Module ID: 9585
-// Function ID: 74588
+// Module ID: 9506
+// Function ID: 74175
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 1278, 4468, 1917, 3758, 1906, 6927, 4467, 1849, 653, 1355, 1345, 1314, 1211, 482, 33, 4130, 689, 5462, 566, 3976, 3996, 8021, 4320, 9173, 6923, 5654, 3969, 5160, 3991, 7018, 4138, 6691, 22, 9175, 7685, 9586, 9587, 4471, 1212, 9588, 9590, 477, 9591, 9592, 9595, 1334, 9596, 1934, 9597, 9598, 7636, 1273, 8023, 1555, 1454, 9043, 8537, 9601, 4126, 9602, 9673, 9678, 9679, 7512, 9680, 9682, 5788, 9887, 4644, 9686, 7008, 4098, 9889, 7437, 4543, 4629, 2]
+// Dependencies: [5, 57, 31, 27, 1278, 4469, 1918, 3759, 1907, 5918, 4468, 1850, 653, 1355, 1345, 1314, 1211, 482, 33, 4131, 689, 5462, 566, 3977, 3997, 6130, 4321, 9065, 5914, 5999, 3970, 5159, 3992, 6036, 4139, 5685, 22, 9067, 7627, 9507, 9508, 4472, 1212, 9509, 9511, 477, 9512, 9513, 9516, 1334, 9517, 1935, 9518, 9519, 7575, 1273, 6132, 1555, 1454, 8931, 8297, 9522, 4127, 9523, 9595, 9602, 9603, 6596, 9604, 9606, 6695, 9811, 4645, 9610, 6026, 4099, 9813, 6519, 4544, 4630, 2]
 // Exports: default
 
-// Module 9585 (_createForOfIteratorHelperLoose)
+// Module 9506 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import KeyboardTypes from "KeyboardTypes";
 import useSafeAreaInsetsKeyboardAware from "useSafeAreaInsetsKeyboardAware";
@@ -127,7 +127,7 @@ function Tags(tags) {
     let obj = { style: tmp.tags };
     obj = { size: "sm", style: tmp.tagIcon };
     let items = [
-      callback(require(7512) /* TagIcon */.TagIcon, obj),
+      callback(require(6596) /* TagIcon */.TagIcon, obj),
       tags.map((id) => {
           let obj = {};
           let tmp2 = 0 !== arg1;
@@ -185,7 +185,7 @@ function ActionBar(channel) {
     }
     return canResult;
   });
-  const tmp3 = importDefault(3996)();
+  const tmp3 = importDefault(3997)();
   c7 = tmp3;
   const isMediaChannelResult = channel.isMediaChannel();
   const tmp5 = tmp3 === channel(1555).KeyboardTypes.MEDIA;
@@ -208,10 +208,10 @@ function ActionBar(channel) {
     tmp8 = length > 0;
   }
   obj = { onLayout, style: items2 };
-  items2 = [tmp.actionsContainer, { marginBottom: importDefault(5160)({ includeKeyboardHeight: true }).insets.bottom }];
+  items2 = [tmp.actionsContainer, { marginBottom: importDefault(5159)({ includeKeyboardHeight: true }).insets.bottom }];
   if (tmp6) {
     obj = { attachments: stateFromStores, channelId: channel.id, highlightThumbnails: true };
-    tmp6 = callback(importDefault(9682), obj);
+    tmp6 = callback(importDefault(9606), obj);
   }
   const items3 = [tmp6, ];
   obj1 = { style: tmp.actions };
@@ -224,7 +224,7 @@ function ActionBar(channel) {
       const items5 = [, ];
       ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
       obj2.style = items5;
-      obj2.IconComponent = channel(7512).TagIcon;
+      obj2.IconComponent = channel(6596).TagIcon;
       obj2.onPress = function onPress() {
         isEdit.dismiss();
         let obj = outer1_1(outer1_2[75]);
@@ -244,19 +244,19 @@ function ActionBar(channel) {
         obj.openLazy(channel(outer1_2[51])(outer1_2[76], outer1_2.paths), "ForumPostTagsActionSheet", obj);
       };
       obj2.foregroundRipple = true;
-      tmp8 = callback(channel(5788).HeaderActionButton, obj2);
+      tmp8 = callback(channel(6695).HeaderActionButton, obj2);
     }
     items4[1] = tmp8;
-    let tmp28 = lastInput === channel(9590).PostComposerInputs.CONTENT;
+    let tmp28 = lastInput === channel(9511).PostComposerInputs.CONTENT;
     if (tmp28) {
       const obj3 = {};
       const intl3 = channel(1212).intl;
       obj3.accessibilityLabel = intl3.string(channel(1212).t.iZ7Mz9);
       obj3.style = tmp.actionButton;
-      obj3.IconComponent = channel(7437).ReactionIcon;
+      obj3.IconComponent = channel(6519).ReactionIcon;
       obj3.onPress = onShowExpressionPicker;
       obj3.foregroundRipple = true;
-      tmp28 = callback(channel(5788).HeaderActionButton, obj3);
+      tmp28 = callback(channel(6695).HeaderActionButton, obj3);
     }
     items4[2] = tmp28;
     const obj4 = { style: tmp.postButtonWrapper };
@@ -276,13 +276,13 @@ function ActionBar(channel) {
     }
     obj5.disabled = submitting;
     const obj6 = { size: "sm", color: importDefault(689).colors.WHITE };
-    obj5.icon = callback(channel(4629).ChatIcon, obj6);
+    obj5.icon = callback(channel(4630).ChatIcon, obj6);
     obj5.onPress = function onPress() {
       if (canPost) {
         callback({});
       }
     };
-    obj4.children = callback(channel(4543).Button, obj5);
+    obj4.children = callback(channel(4544).Button, obj5);
     items4[3] = callback(maybeFocus, obj4);
     obj1.children = items4;
     items3[1] = tmp15(tmp16, obj1);
@@ -296,9 +296,9 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     obj7.style = items6;
     if (tmp5) {
-      let ImageIcon = tmp20(9887).KeyboardIcon;
+      let ImageIcon = tmp20(9811).KeyboardIcon;
     } else {
-      ImageIcon = tmp20(4644).ImageIcon;
+      ImageIcon = tmp20(4645).ImageIcon;
     }
     obj7.IconComponent = ImageIcon;
     obj7.onPress = function onPress() {
@@ -312,7 +312,7 @@ function ActionBar(channel) {
       const result1 = channel(outer1_2[74]).trackForumChannelMediaUploaderClicked({ isMobile: true });
     };
     obj7.foregroundRipple = true;
-    callback(channel(5788).HeaderActionButton, obj7);
+    callback(channel(6695).HeaderActionButton, obj7);
     const tmp17 = callback;
   }
 }

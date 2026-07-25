@@ -1,9 +1,9 @@
-// Module ID: 16598
-// Function ID: 129409
+// Module ID: 16609
+// Function ID: 129577
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1188, 1844, 1841, 620, 1428, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1188, 1845, 1842, 620, 1428, 5078, 2]
 
-// Module 16598 (_isNativeReflectConstruct)
+// Module 16609 (_isNativeReflectConstruct)
 import isBlockedDomain from "isBlockedDomain";
 import _callSuper from "_callSuper";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -103,11 +103,11 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function experimentStoreUpdateHandler() {
   let done;
-  let obj = require(1844) /* isBlockedDomain */;
+  let obj = require(1845) /* isBlockedDomain */;
   if (obj.isLibdiscoreInitialized()) {
     if (!obj2.isExperimentSyncDisabled()) {
       obj = {};
-      const tmp6 = _createForOfIteratorHelperLoose(require(1841) /* _callSuper */.ALL_LIBDISCORE_EXPERIMENTS);
+      const tmp6 = _createForOfIteratorHelperLoose(require(1842) /* _callSuper */.ALL_LIBDISCORE_EXPERIMENTS);
       let iter = tmp6();
       if (!iter.done) {
         do {
@@ -123,17 +123,17 @@ function experimentStoreUpdateHandler() {
         tmp9 = importDefault(620)(obj, obj);
       }
       if (!tmp9) {
-        const experimentCacher = require(1844) /* isBlockedDomain */.getExperimentCacher();
+        const experimentCacher = require(1845) /* isBlockedDomain */.getExperimentCacher();
         const _JSON = JSON;
         experimentCacher.flushToCache(JSON.stringify(obj));
-        const obj4 = require(1844) /* isBlockedDomain */;
+        const obj4 = require(1845) /* isBlockedDomain */;
       }
     }
-    obj2 = require(1841) /* _callSuper */;
+    obj2 = require(1842) /* _callSuper */;
   }
 }
 function initializeAllExperiments() {
-  const prop = require(1841) /* _callSuper */.ALL_LIBDISCORE_EXPERIMENTS;
+  const prop = require(1842) /* _callSuper */.ALL_LIBDISCORE_EXPERIMENTS;
   const item = prop.forEach((setExperiment) => {
     setExperiment.setExperiment((function createApexExperimentWrapper(id) {
       let obj = outer2_0(outer2_2[9]);

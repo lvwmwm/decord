@@ -1,10 +1,10 @@
-// Module ID: 4697
-// Function ID: 40918
+// Module ID: 4698
+// Function ID: 40930
 // Name: calculateTargetDimensions
 // Dependencies: [6, 7, 1280, 3, 2]
 // Exports: calculateOptimalBitrate, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC
 
-// Module 4697 (calculateTargetDimensions)
+// Module 4698 (calculateTargetDimensions)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { VideoCompressionQuality } from "_isNativeReflectConstruct";

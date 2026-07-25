@@ -1,10 +1,10 @@
-// Module ID: 6669
-// Function ID: 51421
+// Module ID: 6170
+// Function ID: 55470
 // Name: SyncedLoadingAlertModal
-// Dependencies: [5, 57, 31, 33, 4475, 1212, 4472, 2]
+// Dependencies: [5, 57, 31, 33, 4476, 1212, 4473, 2]
 // Exports: showCheckoutOrderErrorModal
 
-// Module 6669 (SyncedLoadingAlertModal)
+// Module 6170 (SyncedLoadingAlertModal)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -36,16 +36,16 @@ function SyncedLoadingAlertModal(onConfirm) {
     }),
     loading: first
   };
-  const items = [callback3(onConfirm(4475).AlertActionButton, obj), ];
+  const items = [callback3(onConfirm(4476).AlertActionButton, obj), ];
   const obj1 = { variant: "secondary" };
   const intl = onConfirm(1212).intl;
   obj1.text = intl.string(onConfirm(1212).t["ETE/oC"]);
   obj1.onPress = onCancel;
   obj1.loading = first;
-  items[1] = callback3(onConfirm(4475).AlertActionButton, obj1);
+  items[1] = callback3(onConfirm(4476).AlertActionButton, obj1);
   obj.children = items;
   obj.actions = callback4(closure_6, obj);
-  return callback3(onConfirm(4475).AlertModal, obj);
+  return callback3(onConfirm(4476).AlertModal, obj);
 }
 function showRetryConfirmModal(dismissable) {
   let key;
@@ -57,7 +57,7 @@ function showRetryConfirmModal(dismissable) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj = { dismissable: dismissable.dismissable };
-  require(4472) /* useAlertStore */.openAlert(key, callback3(SyncedLoadingAlertModal, obj), onCloseCallback, obj);
+  require(4473) /* useAlertStore */.openAlert(key, callback3(SyncedLoadingAlertModal, obj), onCloseCallback, obj);
 }
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
 const result = require("result").fileFinishedImporting("modules/checkout/native/showCheckoutOrderErrorModal.tsx");

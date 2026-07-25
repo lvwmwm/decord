@@ -1,10 +1,10 @@
-// Module ID: 15220
-// Function ID: 115841
+// Module ID: 15230
+// Function ID: 115969
 // Name: ForYouUnreadClearedState
-// Dependencies: [31, 27, 33, 4130, 689, 1273, 9704, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1273, 9628, 4127, 1212, 2]
 // Exports: ForYouUnreadClearedState
 
-// Module 15220 (ForYouUnreadClearedState)
+// Module 15230 (ForYouUnreadClearedState)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,17 +28,17 @@ export const ForYouUnreadClearedState = function ForYouUnreadClearedState() {
   let obj = { style: tmp.container };
   obj = { style: tmp.imageContainer };
   const items = [callback(View, obj), , ];
-  obj = { source: importDefault(9704), style: tmp.icon, color: tmp.icon.color };
+  obj = { source: importDefault(9628), style: tmp.icon, color: tmp.icon.color };
   items[1] = callback(require(1273) /* Button */.Icon, obj);
   const obj1 = {};
   const obj2 = { color: "mobile-text-heading-primary", variant: "text-md/semibold", style: tmp.headerText };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl.string(require(1212) /* getSystemLocale */.t.DonStq);
-  const items1 = [callback(require(4126) /* Text */.Text, obj2), ];
+  const items1 = [callback(require(4127) /* Text */.Text, obj2), ];
   const obj3 = { color: "text-default", variant: "text-md/medium" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.jXFsai);
-  items1[1] = callback(require(4126) /* Text */.Text, obj3);
+  items1[1] = callback(require(4127) /* Text */.Text, obj3);
   obj1.children = items1;
   items[2] = callback2(View, obj1);
   obj.children = items;

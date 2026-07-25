@@ -1,10 +1,10 @@
-// Module ID: 7722
-// Function ID: 61443
+// Module ID: 7666
+// Function ID: 61389
 // Name: getEmbedThemeColors
-// Dependencies: [31, 4130, 3976, 689, 3974, 2]
+// Dependencies: [31, 4131, 3977, 689, 3975, 2]
 // Exports: useEmbedThemeColors
 
-// Module 7722 (getEmbedThemeColors)
+// Module 7666 (getEmbedThemeColors)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,38 +24,38 @@ function getEmbedThemeColors(arg0) {
   return { colors, baseColors };
 }
 const result = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const obj = require(3977) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
+  return require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
 const result1 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
     let PRIMARY_600 = importDefault(689).unsafe_rawColors.PRIMARY_600;
   } else {
-    PRIMARY_600 = require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.PRIMARY_500, 0.3);
-    const obj2 = require(3974) /* hexToRgb */;
+    PRIMARY_600 = require(3975) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.PRIMARY_500, 0.3);
+    const obj2 = require(3975) /* hexToRgb */;
   }
   return PRIMARY_600;
 });
 const result2 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const obj = require(3977) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
+  return require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
 const result3 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const obj = require(3977) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
+  return require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
 const result4 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const obj = require(3977) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_100;
+  return require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_100;
 });
 const result5 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(3976) /* AccessibilityAnnouncer */;
-  const isThemeDarkResult = require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme);
-  const hexWithOpacity = require(3974) /* hexToRgb */.hexWithOpacity;
+  const obj = require(3977) /* AccessibilityAnnouncer */;
+  const isThemeDarkResult = require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme.theme);
+  const hexWithOpacity = require(3975) /* hexToRgb */.hexWithOpacity;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   if (isThemeDarkResult) {
     let hexWithOpacityResult = hexWithOpacity(unsafe_rawColors.WHITE, 0.06);
@@ -65,9 +65,9 @@ const result5 = _createForOfIteratorHelperLoose.experimental_createToken((theme)
   return hexWithOpacityResult;
 });
 const result6 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const obj = require(3977) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_600 : unsafe_rawColors.PRIMARY_100;
+  return require(3977) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_600 : unsafe_rawColors.PRIMARY_100;
 });
 const result7 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let str = "#666b73";
@@ -80,8 +80,8 @@ const result8 = _createForOfIteratorHelperLoose.experimental_createToken((theme)
   if (obj.isThemeDark(theme.theme)) {
     let PRIMARY_600 = importDefault(689).unsafe_rawColors.PRIMARY_600;
   } else {
-    PRIMARY_600 = require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.PRIMARY_200, 0.3);
-    const obj2 = require(3974) /* hexToRgb */;
+    PRIMARY_600 = require(3975) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.PRIMARY_200, 0.3);
+    const obj2 = require(3975) /* hexToRgb */;
   }
   return PRIMARY_600;
 });

@@ -1,16 +1,16 @@
-// Module ID: 8998
-// Function ID: 70852
+// Module ID: 8886
+// Function ID: 70331
 // Name: getApplicationDetailsText
-// Dependencies: [653, 8999, 1212, 8223, 2]
+// Dependencies: [653, 8887, 1212, 7966, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 8998 (getApplicationDetailsText)
+// Module 8886 (getApplicationDetailsText)
 import { MarketingURLs } from "ME";
 
 let result = require("getSystemLocale").fileFinishedImporting("modules/oauth2/Utils.tsx");
 
 export const getApplicationDetailsText = function getApplicationDetailsText(application) {
-  let obj = require(8999) /* getIsSocialLayerParentApplication */;
+  let obj = require(8887) /* getIsSocialLayerParentApplication */;
   const isSocialLayerParentApplication = obj.getIsSocialLayerParentApplication(application);
   if (null != application.privacy_policy_url) {
     if (null != application.terms_of_service_url) {
@@ -46,8 +46,8 @@ export const getApplicationDetailsText = function getApplicationDetailsText(appl
 export const isContentClassificationRestricted = function isContentClassificationRestricted(content_classification, nsfwAllowed) {
   let result = null != content_classification;
   if (result) {
-    result = require(8223) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(content_classification);
-    const obj = require(8223) /* isAgeRestrictedContentClassification */;
+    result = require(7966) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(content_classification);
+    const obj = require(7966) /* isAgeRestrictedContentClassification */;
   }
   if (result) {
     result = false === nsfwAllowed;

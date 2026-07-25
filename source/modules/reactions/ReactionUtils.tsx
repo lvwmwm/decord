@@ -1,10 +1,10 @@
-// Module ID: 3769
-// Function ID: 28950
+// Module ID: 3770
+// Function ID: 28961
 // Name: getReactionEmojiName
-// Dependencies: [1194, 653, 3770, 3771, 1212, 3803, 675, 2]
+// Dependencies: [1194, 653, 3771, 3772, 1212, 3804, 675, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, isCustomReactionEmojiId, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 3769 (getReactionEmojiName)
+// Module 3770 (getReactionEmojiName)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags";
@@ -14,8 +14,8 @@ let closure_5;
 const require = arg1;
 function getReactionEmojiName(emoji) {
   if (null == emoji.id) {
-    let result = importDefault(3771).convertSurrogateToName(emoji.name);
-    const obj = importDefault(3771);
+    let result = importDefault(3772).convertSurrogateToName(emoji.name);
+    const obj = importDefault(3772);
   } else {
     const _HermesInternal = HermesInternal;
     result = ":" + emoji.name + ":";
@@ -114,7 +114,7 @@ export const shouldApplyReaction = function shouldApplyReaction(optimistic) {
   return !optimistic;
 };
 export const updateReactionNotificationsSetting = function updateReactionNotificationsSetting(NumberResult, setting) {
-  const ReactionNotifications = require(3803) /* explicitContentFromProto */.ReactionNotifications;
+  const ReactionNotifications = require(3804) /* explicitContentFromProto */.ReactionNotifications;
   ReactionNotifications.updateSetting(NumberResult);
   let obj = importDefault(675);
   obj = { update_type: constants3.ACCOUNT, reaction_notifications: NumberResult, reaction_notifications_old: setting };

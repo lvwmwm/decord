@@ -1,13 +1,13 @@
-// Module ID: 9138
-// Function ID: 71487
+// Module ID: 9030
+// Function ID: 70972
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [57, 5, 31, 9139, 5724, 1353, 5040, 1352, 5076, 1348, 6759, 1838, 3758, 3767, 1906, 4325, 1849, 653, 1345, 9140, 33, 7557, 1934, 4341, 4130, 689, 1273, 1212, 7607, 8537, 4072, 4140, 4320, 4470, 9142, 9143, 4074, 4337, 10197, 2944, 9048, 1198, 10218, 10225, 8526, 9989, 5072, 3982, 5119, 10227, 10229, 7631, 10180, 10230, 10170, 8777, 5069, 10232, 10234, 5079, 5073, 10235, 7685, 4631, 10130, 10237, 4654, 4629, 4098, 10238, 11837, 4323, 7558, 9453, 7689, 9254, 5048, 5791, 4078, 8456, 7609, 5490, 3830, 5462, 5482, 10220, 566, 1356, 6767, 11838, 1334, 5802, 9172, 3803, 5513, 11839, 10377, 5498, 1553, 10378, 5500, 2]
+// Dependencies: [57, 5, 31, 9031, 7669, 1353, 5041, 1352, 5077, 1348, 5752, 1838, 3759, 3768, 1907, 4326, 1850, 653, 1345, 9032, 33, 6653, 1935, 4342, 4131, 689, 1273, 1212, 6717, 8297, 4073, 4141, 4321, 4471, 9034, 9035, 4075, 4338, 10129, 2945, 8936, 1198, 10150, 10158, 8286, 9917, 5073, 3983, 5119, 10160, 10162, 7570, 10112, 10163, 10102, 8665, 5070, 10165, 10167, 5079, 5074, 10168, 7627, 4632, 10062, 10170, 4655, 4630, 4099, 10171, 11813, 4324, 6654, 9373, 7633, 9146, 5049, 8943, 4079, 8214, 6719, 5490, 3831, 5462, 5482, 10152, 566, 1356, 5761, 11814, 1334, 8379, 9064, 3804, 5513, 11815, 10310, 5498, 1553, 10311, 5500, 2]
 // Exports: default
 
-// Module 9138 (handleVoiceOrStageChannelConnectPress)
+// Module 9030 (handleVoiceOrStageChannelConnectPress)
 import BellSlashIcon from "BellSlashIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_4140 from "module_4140";
+import module_4141 from "module_4141";
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
@@ -193,7 +193,7 @@ function ChannelLongPressActionSheetConnected(channel) {
               let canMarkAsTier2InappropriateConversation;
               let canModerateStage;
               let canPin;
-              let module_4140;
+              let module_4141;
               let closure_7;
               let developerMode;
               let favorites;
@@ -216,7 +216,7 @@ function ChannelLongPressActionSheetConnected(channel) {
               ({ isLiveStageChannel, isOptedIn } = channel);
               const isPinned = channel.isPinned;
               const pinDCShowNewBadge = channel.pinDCShowNewBadge;
-              ({ pinDCMarkAsDismissed: module_4140, isMessagesFavorited } = channel);
+              ({ pinDCMarkAsDismissed: module_4141, isMessagesFavorited } = channel);
               ({ analyticsLocations: closure_7, isFavoritesGuild } = channel);
               let guildId;
               const items = [];

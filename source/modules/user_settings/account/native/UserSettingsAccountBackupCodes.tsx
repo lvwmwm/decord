@@ -1,10 +1,10 @@
-// Module ID: 13697
-// Function ID: 105121
+// Module ID: 13708
+// Function ID: 105248
 // Name: CodeRow
-// Dependencies: [31, 27, 12722, 33, 4130, 689, 5490, 3830, 5165, 5154, 1212, 3834, 566, 13698, 4541, 4126, 5501, 2]
+// Dependencies: [31, 27, 12733, 33, 4131, 689, 5490, 3831, 5164, 5153, 1212, 3835, 566, 13709, 4542, 4127, 5501, 2]
 // Exports: default
 
-// Module 13697 (CodeRow)
+// Module 13708 (CodeRow)
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,10 +33,10 @@ function CodeRow(code) {
   let tmp4 = null;
   if (showCheckMark) {
     obj = { color: importDefault(689).colors.TEXT_BRAND };
-    tmp4 = callback(code(5154).CheckmarkSmallIcon, obj);
+    tmp4 = callback(code(5153).CheckmarkSmallIcon, obj);
   }
   obj.trailing = tmp4;
-  return callback(code(5165).TableRow, obj);
+  return callback(code(5164).TableRow, obj);
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -54,7 +54,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     headerLabel = intl.format(stateFromStores(1212).t.OhmvYt, {});
   }
   stateFromStores = undefined;
-  let obj = stateFromStores(3834);
+  let obj = stateFromStores(3835);
   const token = obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_PADDING);
   let obj1 = stateFromStores(566);
   const items = [_isNativeReflectConstruct];
@@ -109,16 +109,16 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     const obj6 = { variant: "text-md/semibold", style: tmp4.generateCode };
     const intl4 = stateFromStores(1212).intl;
     obj6.children = intl4.string(stateFromStores(1212).t.RIThUu);
-    obj5.label = callback(stateFromStores(4126).Text, obj6);
+    obj5.label = callback(stateFromStores(4127).Text, obj6);
     obj5.onPress = function onPress() {
       const verificationKey = outer1_5.getVerificationKey();
       const result = outer1_1(outer1_2[13]).confirmViewBackupCodes(verificationKey, true);
     };
-    obj4.children = callback(stateFromStores(5165).TableRow, obj5);
+    obj4.children = callback(stateFromStores(5164).TableRow, obj5);
     tmp19 = callback(stateFromStores(5501).TableRowGroup, obj4);
   }
   items2[3] = tmp19;
   obj.children = items2;
-  obj.children = closure_7(stateFromStores(4541).Stack, obj);
+  obj.children = closure_7(stateFromStores(4542).Stack, obj);
   return callback(ScrollView, obj);
 };

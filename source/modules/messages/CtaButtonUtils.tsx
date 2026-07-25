@@ -1,10 +1,10 @@
-// Module ID: 11083
-// Function ID: 86219
+// Module ID: 11039
+// Function ID: 85839
 // Name: CtaButtonType
-// Dependencies: [4348, 11084, 4347, 566, 2]
+// Dependencies: [4349, 11040, 4348, 566, 2]
 // Exports: getCtaButtonType, useCtaButtonType
 
-// Module 11083 (CtaButtonType)
+// Module 11039 (CtaButtonType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -13,7 +13,7 @@ let result = require("isReactiveCheckEnabled").fileFinishedImporting("modules/me
 
 export const CtaButtonType = obj;
 export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
-  const obj = require(11084) /* shouldRenderReportFalsePositiveButton */;
+  const obj = require(11040) /* shouldRenderReportFalsePositiveButton */;
   if (obj.shouldRenderReportFalsePositiveButton(id)) {
     let CONNECT_TO_TEEN = obj.MARK_AS_FALSE_POSITIVE;
   } else {
@@ -23,22 +23,22 @@ export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
       if (obj3.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id)) {
         CONNECT_TO_TEEN = obj.CONNECT_TO_TEEN;
       }
-      obj3 = require(4347) /* isReactiveCheckEnabled */;
+      obj3 = require(4348) /* isReactiveCheckEnabled */;
     }
-    obj2 = require(4347) /* isReactiveCheckEnabled */;
+    obj2 = require(4348) /* isReactiveCheckEnabled */;
   }
   return CONNECT_TO_TEEN;
 };
 export const useCtaButtonType = function useCtaButtonType(id, channel_id) {
-  const obj = require(11084) /* shouldRenderReportFalsePositiveButton */;
+  const obj = require(11040) /* shouldRenderReportFalsePositiveButton */;
   const shouldRenderReportFalsePositiveButton = obj.useShouldRenderReportFalsePositiveButton(id);
-  const result = require(4347) /* isReactiveCheckEnabled */.isAgeVerificationMessageWithRetryCta(channel_id, id);
-  const obj2 = require(4347) /* isReactiveCheckEnabled */;
+  const result = require(4348) /* isReactiveCheckEnabled */.isAgeVerificationMessageWithRetryCta(channel_id, id);
+  const obj2 = require(4348) /* isReactiveCheckEnabled */;
   const items = [_isNativeReflectConstruct];
   let result1 = null != require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getPendingConnection());
   if (result1) {
-    result1 = require(4347) /* isReactiveCheckEnabled */.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id);
-    const obj4 = require(4347) /* isReactiveCheckEnabled */;
+    result1 = require(4348) /* isReactiveCheckEnabled */.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id);
+    const obj4 = require(4348) /* isReactiveCheckEnabled */;
   }
   if (shouldRenderReportFalsePositiveButton) {
     let CONNECT_TO_TEEN = obj.MARK_AS_FALSE_POSITIVE;

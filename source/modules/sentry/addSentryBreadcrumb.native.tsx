@@ -1,5 +1,5 @@
 // Module ID: 786
-// Function ID: 8907
+// Function ID: 8913
 // Name: addSentryBreadcrumb
 // Dependencies: [787, 2]
 // Exports: default

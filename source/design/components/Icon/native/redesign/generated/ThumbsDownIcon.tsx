@@ -1,10 +1,10 @@
-// Module ID: 9336
-// Function ID: 72837
+// Module ID: 9229
+// Function ID: 72326
 // Name: ThumbsDownIcon
-// Dependencies: [31, 33, 689, 3833, 9337, 2]
+// Dependencies: [31, 33, 689, 3834, 9230, 2]
 // Exports: ThumbsDownIcon
 
-// Module 9336 (ThumbsDownIcon)
+// Module 9229 (ThumbsDownIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ThumbsDownIcon = function ThumbsDownIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9337) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9230) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9337) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9230) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,12 +1,12 @@
-// Module ID: 10218
-// Function ID: 78865
+// Module ID: 10150
+// Function ID: 78495
 // Name: _addChannelToFavorites
-// Dependencies: [5, 1351, 3831, 1212, 9431, 10219, 1934, 2944, 9433, 2]
+// Dependencies: [57, 5, 3832, 1212, 9351, 10151, 1935, 10157, 2945, 9353, 2]
 // Exports: default
 
-// Module 10218 (_addChannelToFavorites)
+// Module 10150 (_addChannelToFavorites)
+import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 function _addChannelToFavorites() {
@@ -30,8 +30,8 @@ export default function buildFavoritesSectionButtons(channelId) {
       if (tmp2) {
         let obj = {};
         const intl2 = channelId(1212).intl;
-        obj.label = intl2.string(importDefault(2944).TN4nAX);
-        obj.IconComponent = channelId(9431).StarIcon;
+        obj.label = intl2.string(importDefault(2945).TN4nAX);
+        obj.IconComponent = channelId(9351).StarIcon;
         obj.isDestructive = true;
         obj.onPress = function onPress() {
           return (function removeChannelFromFavorites(channelId) {
@@ -44,8 +44,8 @@ export default function buildFavoritesSectionButtons(channelId) {
         if (!tmp3) {
           obj = {};
           const intl = channelId(1212).intl;
-          obj.label = intl.string(importDefault(2944).G9fGlP);
-          obj.IconComponent = channelId(9433).StarOutlineIcon;
+          obj.label = intl.string(importDefault(2945).G9fGlP);
+          obj.IconComponent = channelId(9353).StarOutlineIcon;
           obj.onPress = function onPress() {
             return (function addChannelToFavorites(channelId) {
               return outer2_5(...arguments);

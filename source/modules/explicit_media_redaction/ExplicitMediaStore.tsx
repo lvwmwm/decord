@@ -1,9 +1,9 @@
-// Module ID: 5671
-// Function ID: 48745
+// Module ID: 5835
+// Function ID: 51377
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 664, 21, 5672, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 664, 21, 5836, 566, 686, 2]
 
-// Module 5671 (_isNativeReflectConstruct)
+// Module 5835 (_isNativeReflectConstruct)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import apexExperiment from "apexExperiment";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,10 +1,10 @@
-// Module ID: 14525
-// Function ID: 110910
+// Module ID: 14536
+// Function ID: 111037
 // Name: useMaybeFetchCollectiblesShopHome
-// Dependencies: [57, 31, 4044, 6774, 6820, 655, 566, 6823, 6773, 14526, 2]
+// Dependencies: [57, 31, 4045, 5770, 5816, 655, 566, 5819, 5769, 14537, 2]
 // Exports: useMaybeFetchCollectiblesShopHome
 
-// Module 14525 (useMaybeFetchCollectiblesShopHome)
+// Module 14536 (useMaybeFetchCollectiblesShopHome)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -83,7 +83,7 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   const tmp12 = callback2(() => {
     const obj = {};
     const merged = Object.assign(dependencyMap);
-    obj["variantsReturnStyle"] = HOME(6823).ShopVariantsReturnStyle.VARIANTS_GROUP;
+    obj["variantsReturnStyle"] = HOME(5819).ShopVariantsReturnStyle.VARIANTS_GROUP;
     obj["includeBundles"] = true;
     obj["includeDynamicBlocks"] = true;
     obj["shopHomeConfig"] = c11;
@@ -92,14 +92,14 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   }, items3);
   c12 = tmp12;
   const items4 = [tmp3[3], tmp12];
-  const tmp13 = callback2(() => !HOME(6773).areRequestOptionsEqual(c7, c12), items4);
+  const tmp13 = callback2(() => !HOME(5769).areRequestOptionsEqual(c7, c12), items4);
   c13 = tmp13;
   const obj3 = _require(566);
   let tmp14 = null != tmp9;
   if (tmp14) {
     tmp14 = tmp9;
   }
-  hasExpiredShopBlocks = _require(14526).useHasExpiredShopBlocks(first, tmp14, flag);
+  hasExpiredShopBlocks = _require(14537).useHasExpiredShopBlocks(first, tmp14, flag);
   const items5 = [tmp3[1], hasExpiredShopBlocks];
   const tmp16 = callback2(() => {
     let tmp = !hasExpiredShopBlocks;
@@ -124,8 +124,8 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
             tmp8 = c10;
           }
           if (tmp8) {
-            const collectiblesShopHome = HOME(6773).fetchCollectiblesShopHome(HOME, c12, _slicedToArray);
-            const obj = HOME(6773);
+            const collectiblesShopHome = HOME(5769).fetchCollectiblesShopHome(HOME, c12, _slicedToArray);
+            const obj = HOME(5769);
           }
         }
         tmp7 = null != c8 && Date.now() - c6 < c10;
@@ -138,7 +138,7 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
     fetchShopHomeError: tmp8,
     shopBlocks: first,
     refreshShopHome: stateFromStores1(() => {
-      const collectiblesShopHome = HOME(6773).fetchCollectiblesShopHome(HOME, c12, _slicedToArray);
+      const collectiblesShopHome = HOME(5769).fetchCollectiblesShopHome(HOME, c12, _slicedToArray);
     }, items7)
   };
   return obj;

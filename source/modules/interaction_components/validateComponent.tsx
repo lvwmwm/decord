@@ -1,10 +1,10 @@
-// Module ID: 7888
-// Function ID: 62568
+// Module ID: 7835
+// Function ID: 62540
 // Name: validateSelect
-// Dependencies: [1881, 4353, 1212, 44, 2]
+// Dependencies: [1882, 4354, 1212, 44, 2]
 // Exports: default
 
-// Module 7888 (validateSelect)
+// Module 7835 (validateSelect)
 function validateSelect(type, type2, modal) {
   let length;
   let maxValues;
@@ -14,7 +14,7 @@ function validateSelect(type, type2, modal) {
   ({ minValues, maxValues } = type);
   if (null == type2) {
     {
-      let obj = require(4353) /* _createForOfIteratorHelperLoose */;
+      let obj = require(4354) /* _createForOfIteratorHelperLoose */;
       obj = { minValues, required: tmp };
       let stringResult = null;
       if (!obj.canSelectBeEmpty(obj, modal)) {
@@ -24,7 +24,7 @@ function validateSelect(type, type2, modal) {
       const tmp5 = stringResult;
     }
     return tmp5;
-  } else if (values.type === require(1881) /* PermissionOverwriteType */.ComponentType.STRING_SELECT) {
+  } else if (values.type === require(1882) /* PermissionOverwriteType */.ComponentType.STRING_SELECT) {
     ({ values, length } = values);
   } else {
     length = values.selectedOptions.length;
@@ -44,15 +44,15 @@ export default function validateComponent(type, type2, modal) {
     importDefault(44)(type2.type === type.type, "component type matches state");
   }
   type = type.type;
-  if (require(1881) /* PermissionOverwriteType */.ComponentType.BUTTON === type) {
+  if (require(1882) /* PermissionOverwriteType */.ComponentType.BUTTON === type) {
     return null;
   } else {
-    if (require(1881) /* PermissionOverwriteType */.ComponentType.STRING_SELECT !== type) {
-      if (require(1881) /* PermissionOverwriteType */.ComponentType.USER_SELECT !== type) {
-        if (require(1881) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT !== type) {
-          if (require(1881) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT !== type) {
-            if (require(1881) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT !== type) {
-              if (require(1881) /* PermissionOverwriteType */.ComponentType.TEXT_INPUT === type) {
+    if (require(1882) /* PermissionOverwriteType */.ComponentType.STRING_SELECT !== type) {
+      if (require(1882) /* PermissionOverwriteType */.ComponentType.USER_SELECT !== type) {
+        if (require(1882) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT !== type) {
+          if (require(1882) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT !== type) {
+            if (require(1882) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT !== type) {
+              if (require(1882) /* PermissionOverwriteType */.ComponentType.TEXT_INPUT === type) {
                 ({ minLength, maxLength, required } = type);
                 if (null != type2) {
                   if (0 !== type2.value.length) {
@@ -72,7 +72,7 @@ export default function validateComponent(type, type2, modal) {
                   stringResult = intl9.string(require(1212) /* getSystemLocale */.t.eJEUvD);
                 }
                 formatToPlainStringResult = stringResult;
-              } else if (require(1881) /* PermissionOverwriteType */.ComponentType.FILE_UPLOAD === type) {
+              } else if (require(1882) /* PermissionOverwriteType */.ComponentType.FILE_UPLOAD === type) {
                 ({ minValues: minValues2, maxValues: maxValues2 } = type);
                 let length;
                 if (null != type2) {
@@ -102,7 +102,7 @@ export default function validateComponent(type, type2, modal) {
                   }
                 }
                 return formatToPlainStringResult1;
-              } else if (require(1881) /* PermissionOverwriteType */.ComponentType.RADIO_GROUP === type) {
+              } else if (require(1882) /* PermissionOverwriteType */.ComponentType.RADIO_GROUP === type) {
                 if (null == type2) {
                   let stringResult2 = null;
                   if (tmp18) {
@@ -113,7 +113,7 @@ export default function validateComponent(type, type2, modal) {
                   stringResult2 = null;
                 }
                 return stringResult2;
-              } else if (require(1881) /* PermissionOverwriteType */.ComponentType.CHECKBOX_GROUP === type) {
+              } else if (require(1882) /* PermissionOverwriteType */.ComponentType.CHECKBOX_GROUP === type) {
                 ({ minValues, maxValues } = type);
                 let length1;
                 if (null != type2) {
@@ -143,7 +143,7 @@ export default function validateComponent(type, type2, modal) {
                   }
                 }
                 return formatToPlainStringResult2;
-              } else if (require(1881) /* PermissionOverwriteType */.ComponentType.CHECKBOX === type) {
+              } else if (require(1882) /* PermissionOverwriteType */.ComponentType.CHECKBOX === type) {
                 return null;
               } else {
                 importDefault(44)(false, "missing validator for this component");

@@ -1,10 +1,10 @@
-// Module ID: 9070
-// Function ID: 71208
+// Module ID: 8962
+// Function ID: 70693
 // Name: Header
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1392, 1273, 4126, 8568, 1360, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1392, 1273, 4127, 8328, 1360, 1212, 2]
 // Exports: default
 
-// Module 9070 (Header)
+// Module 8962 (Header)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserFlags } from "ME";
@@ -55,7 +55,7 @@ export default function Header(accountScopes) {
   const items2 = [callback2(View, obj1), , ];
   const obj8 = { style: tmp.applicationNameWrapper };
   const obj9 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: application.name };
-  const items3 = [callback(require(4126) /* Text */.Text, obj9), ];
+  const items3 = [callback(require(4127) /* Text */.Text, obj9), ];
   let tmp9Result = null;
   if (null != bot) {
     const obj10 = { style: tmp.botTag };
@@ -65,8 +65,8 @@ export default function Header(accountScopes) {
       const obj15 = require(1360) /* hasFlag */;
     }
     obj10.verified = hasFlagResult;
-    tmp9Result = callback(importDefault(8568), obj10);
-    const tmp12 = importDefault(8568);
+    tmp9Result = callback(importDefault(8328), obj10);
+    const tmp12 = importDefault(8328);
     const tmp9 = callback;
   }
   items3[1] = tmp9Result;
@@ -81,7 +81,7 @@ export default function Header(accountScopes) {
     stringResult = intl.string(require(1212) /* getSystemLocale */.t["X+Fdpo"]);
   }
   obj11.children = stringResult;
-  items2[2] = callback(require(4126) /* Text */.Text, obj11);
+  items2[2] = callback(require(4127) /* Text */.Text, obj11);
   obj.children = items2;
   return callback2(View, obj);
 };

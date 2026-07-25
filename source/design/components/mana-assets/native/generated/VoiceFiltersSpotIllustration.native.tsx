@@ -1,10 +1,10 @@
-// Module ID: 6610
-// Function ID: 50880
+// Module ID: 7530
+// Function ID: 60530
 // Name: VoiceFiltersSpotIllustration
-// Dependencies: [33, 5085, 6611, 2]
+// Dependencies: [33, 5085, 7531, 2]
 // Exports: VoiceFiltersSpotIllustration
 
-// Module 6610 (VoiceFiltersSpotIllustration)
+// Module 7530 (VoiceFiltersSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/VoiceFiltersSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const VoiceFiltersSpotIllustration = function VoiceFiltersSpotIllustratio
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6611) };
+  obj = { uri: importDefault(7531) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

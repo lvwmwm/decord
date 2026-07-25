@@ -1,7 +1,7 @@
 // Module ID: 5481
-// Function ID: 46798
+// Function ID: 46803
 // Name: useProviderConnection
-// Dependencies: [5, 31, 4812, 566, 4938, 2]
+// Dependencies: [5, 31, 4813, 566, 4939, 2]
 // Exports: useProviderConnection
 
 // Module 5481 (useProviderConnection)

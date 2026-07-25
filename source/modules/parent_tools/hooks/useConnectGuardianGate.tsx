@@ -1,10 +1,10 @@
-// Module ID: 16183
-// Function ID: 125403
+// Module ID: 16194
+// Function ID: 125571
 // Name: useConnectGuardianGate
-// Dependencies: [57, 31, 6769, 566, 6771, 4559, 2]
+// Dependencies: [57, 31, 5765, 566, 5767, 4560, 2]
 // Exports: useConnectGuardianGate
 
-// Module 16183 (useConnectGuardianGate)
+// Module 16194 (useConnectGuardianGate)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -62,7 +62,7 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
       }
     });
   }, []);
-  importDefault(4559)(callback);
+  importDefault(4560)(callback);
   if (tmp3) {
     obj = { state: "error" };
     let obj2 = obj;

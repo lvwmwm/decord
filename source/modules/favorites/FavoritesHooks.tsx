@@ -1,10 +1,10 @@
-// Module ID: 10220
-// Function ID: 78916
+// Module ID: 10152
+// Function ID: 78546
 // Name: computeFavoritesAccess
-// Dependencies: [3947, 1849, 1351, 10221, 1386, 1851, 10222, 10223, 566, 1872, 21, 1282, 5077, 2]
+// Dependencies: [3948, 1850, 1351, 10153, 1386, 1852, 10154, 10155, 566, 1873, 21, 1282, 1841, 2]
 // Exports: getFavoritesAccess, useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavoritesAwareChannel, useFavoritesCategories
 
-// Module 10220 (computeFavoritesAccess)
+// Module 10152 (computeFavoritesAccess)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -27,21 +27,21 @@ function computeFavoritesAccess(hasHigherPrivileges) {
     tmp = tmp2;
   }
   if (!tmp) {
-    const obj = { hasAccess: tmp, isExperimentEnabled, hasHigherPrivileges: hasHigherPrivileges.hasHigherPrivileges, favoriteLimit: 0 };
+    const obj = { hasAccess: tmp, isExperimentEnabled, isFreemium, hasHigherPrivileges: hasHigherPrivileges.hasHigherPrivileges, favoriteLimit: 0 };
     return obj;
   } else if (isPremiumTier2) {
     let num = MAX_FAVORITE_CHANNELS;
   } else {
     num = 0;
     if (isFreemium) {
-      num = require(10222) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
+      num = require(10154) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
     }
   }
 }
 function useFavoritesAccess(FavoritesGuildChannelList) {
   let enabled;
   let hasHigherPrivileges;
-  let obj = require(10223) /* apexExperiment */;
+  let obj = require(10155) /* useFavoritesGuildConfig */;
   obj = { location: FavoritesGuildChannelList };
   const favoritesGuildConfig = obj.useFavoritesGuildConfig(obj);
   const isFreemium = favoritesGuildConfig.isFreemium;
@@ -54,7 +54,7 @@ function useFavoritesAccess(FavoritesGuildChannelList) {
   obj = { isExperimentEnabled: enabled, hasHigherPrivileges, isFreemium: tmp2 };
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_4.getCurrentUser());
   const obj3 = require(566) /* initialize */;
-  obj.isPremiumTier2 = importDefault(1872).isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
+  obj.isPremiumTier2 = importDefault(1873).isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
   return computeFavoritesAccess(obj);
 }
 function useFavorites() {
@@ -112,13 +112,13 @@ function useIsFavoritesGuildSelected() {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getGuildId());
   const obj = require(566) /* initialize */;
-  return require(5077) /* isFavoritesGuildId */.isFavoritesGuildId(stateFromStores);
+  return require(1841) /* isFavoritesGuildId */.isFavoritesGuildId(stateFromStores);
 }
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/favorites/FavoritesHooks.tsx");
 
 export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
-  let obj = require(10223) /* apexExperiment */;
+  let obj = require(10155) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   const isFreemium = favoritesGuildConfig.isFreemium;
   obj = { isExperimentEnabled: favoritesGuildConfig.enabled, hasHigherPrivileges: favoritesGuildConfig.hasHigherPrivileges };
@@ -127,7 +127,7 @@ export const getFavoritesAccess = function getFavoritesAccess() {
     tmp3 = isFreemium;
   }
   obj.isFreemium = tmp3;
-  obj.isPremiumTier2 = importDefault(1872).isPremiumExactly(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
+  obj.isPremiumTier2 = importDefault(1873).isPremiumExactly(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
   return computeFavoritesAccess(obj);
 };
 export { useFavorites };

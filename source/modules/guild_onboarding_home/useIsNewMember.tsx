@@ -1,7 +1,7 @@
 // Module ID: 5606
-// Function ID: 47681
+// Function ID: 47686
 // Name: _getIsNewMember
-// Dependencies: [1909, 1917, 3746, 1360, 664, 566, 2]
+// Dependencies: [1910, 1918, 3747, 1360, 664, 566, 2]
 // Exports: default, getIsNewMember
 
 // Module 5606 (_getIsNewMember)

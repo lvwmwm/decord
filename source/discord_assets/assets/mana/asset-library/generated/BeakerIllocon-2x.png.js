@@ -1,9 +1,9 @@
-// Module ID: 5897
-// Function ID: 49811
+// Module ID: 6817
+// Function ID: 59461
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5897 (metadata)
+// Module 6817 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BeakerIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/f3a1d49b074518c3d32caf9064c9548778010f233bce65ca5d88f5216955d8a4.png";

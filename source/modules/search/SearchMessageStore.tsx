@@ -1,9 +1,9 @@
-// Module ID: 5660
-// Function ID: 48556
+// Module ID: 5847
+// Function ID: 51518
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 1194, 3767, 4029, 4351, 3769, 566, 686, 2]
+// Dependencies: [15, 17, 18, 6, 7, 1194, 3768, 4030, 4352, 3770, 566, 686, 2]
 
-// Module 5660 (_isNativeReflectConstruct)
+// Module 5847 (_isNativeReflectConstruct)
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -69,7 +69,7 @@ function handleReaction(optimistic) {
   } else {
     return false;
   }
-  obj = _require(3769);
+  obj = _require(3770);
 }
 let closure_9 = (() => {
   class SearchState {
@@ -350,7 +350,7 @@ tmp5 = new tmp5(require("dispatcher"), {
       if (null == value) {
         return false;
       } else {
-        const result = map1.set(id, require(4351) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
+        const result = map1.set(id, require(4352) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
       }
     }
   },

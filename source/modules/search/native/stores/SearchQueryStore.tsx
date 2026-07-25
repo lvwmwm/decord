@@ -1,9 +1,9 @@
-// Module ID: 10109
-// Function ID: 77986
+// Module ID: 10041
+// Function ID: 77616
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 7, 6, 1348, 3767, 1849, 9141, 9169, 653, 4320, 1212, 10110, 10122, 1916, 566, 686, 2]
+// Dependencies: [15, 17, 18, 7, 6, 1348, 3768, 1850, 9033, 9061, 653, 4321, 1212, 10042, 10054, 1917, 566, 686, 2]
 
-// Module 10109 (_isNativeReflectConstruct)
+// Module 10041 (_isNativeReflectConstruct)
 import closure_3 from "areArraysShallowlyEqual";
 import dispatcher from "dispatcher";
 import set from "set";
@@ -32,7 +32,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getState(searchContext) {
-  let value = map.get(require(10110) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext));
+  let value = map.get(require(10042) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext));
   if (null == value) {
     value = callback3(searchContext);
   }
@@ -373,7 +373,7 @@ tmp7.displayName = "NativeSearchQueryStore";
 areArraysShallowlyEqual = {
   SEARCH_QUERY_NATIVE_UPDATE: function handleSearchQueryNativeUpdate(searchContext) {
     searchContext = searchContext.searchContext;
-    const searchContextId = require(10110) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
+    const searchContextId = require(10042) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
     let value = map.get(searchContextId);
     if (null == value) {
       const prototype = importDefaultResultResult.prototype;

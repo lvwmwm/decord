@@ -1,9 +1,9 @@
-// Module ID: 5649
-// Function ID: 48305
+// Module ID: 5995
+// Function ID: 53315
 // Name: items
-// Dependencies: [4042, 2]
+// Dependencies: [4043, 2]
 
-// Module 5649 (items)
+// Module 5995 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-03_guild_official_messages", label: "Guild Official Messages", defaultConfig: { enabled: false } };

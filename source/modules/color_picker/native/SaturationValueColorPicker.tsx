@@ -1,10 +1,10 @@
-// Module ID: 13623
-// Function ID: 104659
+// Module ID: 13634
+// Function ID: 104786
 // Name: ColorBox
-// Dependencies: [57, 31, 27, 33, 4130, 689, 3991, 13621, 4554, 5217, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 13632, 4555, 5217, 2]
 // Exports: default
 
-// Module 13623 (ColorBox)
+// Module 13634 (ColorBox)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -22,7 +22,7 @@ function ColorBox(hue) {
   const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = callback(React.useState("rgb(0,0,0)"), 2);
   const importDefault = tmp3;
-  let obj = hue(3991);
+  let obj = hue(3992);
   class S {
     constructor() {
       obj = hue(outer1_2[7]);
@@ -31,7 +31,7 @@ function ColorBox(hue) {
       return obj.hslToRgbWorklet(obj);
     }
   }
-  obj = { hslToRgbWorklet: hue(13621).hslToRgbWorklet, hue };
+  obj = { hslToRgbWorklet: hue(13632).hslToRgbWorklet, hue };
   S.__closure = obj;
   S.__workletHash = 8814597686728;
   S.__initData = closure_9;
@@ -43,7 +43,7 @@ function ColorBox(hue) {
       const runOnJSResult = hue(outer1_2[6]).runOnJS(closure_1);
     }
   };
-  obj = { runOnJS: hue(3991).runOnJS, setColor: tmp3 };
+  obj = { runOnJS: hue(3992).runOnJS, setColor: tmp3 };
   fn.__closure = obj;
   fn.__workletHash = 14688428173537;
   fn.__initData = closure_10;
@@ -53,9 +53,9 @@ function ColorBox(hue) {
   items1 = ["rgb(255,255,255)", tmp2[0]];
   const obj2 = { colors: ["rgba(0, 0, 0, 0)", "#000"] };
   const items2 = [tmp.colorBoxInner, colorBoxInnerStyle];
-  const tmp5 = importDefault(4554);
+  const tmp5 = importDefault(4555);
   obj2.children = callback2(View, { style: items2 });
-  obj1.children = callback2(importDefault(4554), obj2);
+  obj1.children = callback2(importDefault(4555), obj2);
   return callback2(tmp5, obj1);
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -96,7 +96,7 @@ export default function SaturationValueColorPicker(hue) {
   const first2 = tmp6[0];
   _createForOfIteratorHelperLoose = tmp6[1];
   let obj = { onPanUpdate, onPanFinalize };
-  let obj1 = hue(3991);
+  let obj1 = hue(3992);
   class B {
     constructor() {
       obj = hue(value[7]);
@@ -116,7 +116,7 @@ export default function SaturationValueColorPicker(hue) {
       return obj2;
     }
   }
-  obj = { hsvToRgbWorklet: hue(13621).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth: first, colorBoxHeight: first1 };
+  obj = { hsvToRgbWorklet: hue(13632).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth: first, colorBoxHeight: first1 };
   B.__closure = obj;
   B.__workletHash = 6880706874032;
   B.__initData = closure_13;
@@ -187,7 +187,7 @@ export default function SaturationValueColorPicker(hue) {
   obj1.children = callback2(first1, obj2);
   const items2 = [callback2(hue(5217).GestureDetector, obj1), ];
   const items3 = [tmp.selector, animatedStyle, selectorStyle];
-  items2[1] = callback2(saturation(3991).View, { onLayout: callback1, pointerEvents: "box-none", style: items3 });
+  items2[1] = callback2(saturation(3992).View, { onLayout: callback1, pointerEvents: "box-none", style: items3 });
   obj.children = items2;
   return first2(first1, obj);
 };

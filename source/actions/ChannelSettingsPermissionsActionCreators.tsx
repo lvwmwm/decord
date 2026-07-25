@@ -1,10 +1,10 @@
-// Module ID: 8458
-// Function ID: 67231
+// Module ID: 8216
+// Function ID: 65882
 // Name: _updatePermission
-// Dependencies: [5, 8459, 686, 4140, 2]
+// Dependencies: [5, 8217, 686, 4141, 2]
 // Exports: init, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 8458 (_updatePermission)
+// Module 8216 (_updatePermission)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -33,18 +33,18 @@ function saveAndClearPermissionUpdates(id, items, arg2, arg3) {
         if (null == arr) {
           return chain();
         } else {
-          const result = chain(4140).updatePermissionOverwrite(callback, arr);
+          const result = chain(4141).updatePermissionOverwrite(callback, arr);
           result.then(chain, chain);
-          const obj2 = chain(4140);
+          const obj2 = chain(4141);
         }
       } else {
         arr = outer1_2.pop();
         if (null == arr) {
           return chain();
         } else {
-          const result1 = chain(4140).clearPermissionOverwrite(callback, arr);
+          const result1 = chain(4141).clearPermissionOverwrite(callback, arr);
           result1.then(chain, chain);
-          const obj = chain(4140);
+          const obj = chain(4141);
         }
       }
     }

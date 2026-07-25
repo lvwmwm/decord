@@ -1,9 +1,9 @@
-// Module ID: 10475
-// Function ID: 80768
+// Module ID: 10409
+// Function ID: 80437
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1838, 4202, 3767, 1906, 1849, 4951, 1353, 4947, 653, 3763, 9120, 4957, 4320, 4950, 636, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1838, 4203, 3768, 1907, 1850, 4952, 1353, 4948, 653, 3764, 9012, 4958, 4321, 4951, 636, 566, 686, 2]
 
-// Module 10475 (_isNativeReflectConstruct)
+// Module 10409 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import calculateElevatedPermissions from "calculateElevatedPermissions";
@@ -216,9 +216,9 @@ tmp3 = new tmp3(require("dispatcher"), {
     voiceStates = voiceStates.voiceStates;
     let _require;
     if (null != c22) {
-      const result = _require(9120).unpackStageChannelParty(c22);
+      const result = _require(9012).unpackStageChannelParty(c22);
       _require = result;
-      const obj = _require(9120);
+      const obj = _require(9012);
       if (tmp5) {
         handleUpdateActivity();
       }

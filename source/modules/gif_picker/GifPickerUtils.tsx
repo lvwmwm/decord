@@ -1,10 +1,10 @@
-// Module ID: 9624
-// Function ID: 74902
+// Module ID: 9545
+// Function ID: 74489
 // Name: getSearchPlaceholder
 // Dependencies: [1212, 2]
 // Exports: getSearchPlaceholder
 
-// Module 9624 (getSearchPlaceholder)
+// Module 9545 (getSearchPlaceholder)
 const result = require("set").fileFinishedImporting("modules/gif_picker/GifPickerUtils.tsx");
 
 export const getSearchPlaceholder = function getSearchPlaceholder(arg0) {

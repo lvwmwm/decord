@@ -1,9 +1,9 @@
-// Module ID: 9340
-// Function ID: 72884
+// Module ID: 9233
+// Function ID: 72373
 // Name: CONTEXT_MENU_LONG_PRESS_DURATION_MS
-// Dependencies: [477, 4099, 2]
+// Dependencies: [477, 4100, 2]
 
-// Module 9340 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
+// Module 9233 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
 import set from "set";
 import { HapticFeedbackTypes } from "getAndroidLightImpactEffect";
 import set from "set";

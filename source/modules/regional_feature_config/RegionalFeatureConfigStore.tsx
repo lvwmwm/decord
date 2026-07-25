@@ -1,9 +1,9 @@
-// Module ID: 3810
-// Function ID: 31420
+// Module ID: 3811
+// Function ID: 31431
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3811, 3815, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3812, 3816, 566, 686, 2]
 
-// Module 3810 (_isNativeReflectConstruct)
+// Module 3811 (_isNativeReflectConstruct)
 import SettingsConfig from "SettingsConfig";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -122,7 +122,7 @@ tmp3 = new tmp3(require("dispatcher"), {
     setUserCountryCode(countryCode.countryCode);
     let fromConnectionOpenResult = null;
     if (null != countryCode.regionalFeatureConfig) {
-      const RegionalFeatureConfig = require(3815) /* SettingsConfig */.RegionalFeatureConfig;
+      const RegionalFeatureConfig = require(3816) /* SettingsConfig */.RegionalFeatureConfig;
       fromConnectionOpenResult = RegionalFeatureConfig.fromConnectionOpen(countryCode.regionalFeatureConfig);
     }
     let c9 = fromConnectionOpenResult;

@@ -1,10 +1,10 @@
-// Module ID: 9045
-// Function ID: 71107
+// Module ID: 8933
+// Function ID: 70586
 // Name: FederatedSocialModal
-// Dependencies: [5, 57, 31, 653, 33, 4130, 4814, 1212, 4938, 3827, 9046, 5121, 4126, 9039, 1273, 4543, 5087, 5517, 2]
+// Dependencies: [5, 57, 31, 653, 33, 4131, 4815, 1212, 4939, 3828, 8934, 5121, 4127, 8927, 1273, 4544, 5087, 5517, 2]
 // Exports: default
 
-// Module 9045 (FederatedSocialModal)
+// Module 8933 (FederatedSocialModal)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -21,7 +21,7 @@ const result = require("result").fileFinishedImporting("modules/connections/nati
 
 export default function FederatedSocialModal(platformType) {
   const _require = platformType;
-  let screens = importDefault(4814);
+  let screens = importDefault(4815);
   let value = screens.get(platformType.platformType);
   let name;
   if (null != value) {

@@ -1,10 +1,10 @@
-// Module ID: 8754
-// Function ID: 69181
+// Module ID: 8642
+// Function ID: 68658
 // Name: getProductPurchaseState
-// Dependencies: [6790, 8755, 1876, 566, 2]
+// Dependencies: [5786, 8643, 1877, 566, 2]
 // Exports: useProductPurchaseState
 
-// Module 8754 (getProductPurchaseState)
+// Module 8642 (getProductPurchaseState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -15,12 +15,12 @@ function getProductPurchaseState(outer2_5, skuId) {
   if (null == items) {
     items = [];
   }
-  const tmp2Result = importDefault(8755)(items.map((skuId) => outer2_5.getPurchase(skuId.skuId)));
+  const tmp2Result = importDefault(8643)(items.map((skuId) => outer2_5.getPurchase(skuId.skuId)));
   let type;
   if (null != skuId) {
     type = skuId.type;
   }
-  if (_require(1876).CollectiblesItemType.BUNDLE === type) {
+  if (_require(1877).CollectiblesItemType.BUNDLE === type) {
     let obj = {};
     if (!tmp) {
       tmp = items.length > 0 && tmp2Result.length === items.length;
@@ -30,7 +30,7 @@ function getProductPurchaseState(outer2_5, skuId) {
     obj.isPartiallyOwnedBundle = tmp2Result.length > 0 && tmp2Result.length < items.length;
     obj.isPartiallyOwnedVariantsGroup = false;
     return obj;
-  } else if (_require(1876).CollectiblesItemType.VARIANTS_GROUP === type) {
+  } else if (_require(1877).CollectiblesItemType.VARIANTS_GROUP === type) {
     const variants = skuId.variants;
     let everyResult;
     if (null != variants) {
@@ -50,7 +50,7 @@ function getProductPurchaseState(outer2_5, skuId) {
     obj = { isPurchased: tmp, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: false };
     return obj;
   }
-  const tmp2 = importDefault(8755);
+  const tmp2 = importDefault(8643);
 }
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");
 

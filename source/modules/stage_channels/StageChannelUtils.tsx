@@ -1,10 +1,10 @@
-// Module ID: 7564
-// Function ID: 60329
+// Module ID: 6660
+// Function ID: 58919
 // Name: fillChunk
-// Dependencies: [4202, 1353, 4947, 653, 7565, 22, 4319, 1212, 3763, 2]
+// Dependencies: [4203, 1353, 4948, 653, 6661, 22, 4320, 1212, 3764, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 7564 (fillChunk)
+// Module 6660 (fillChunk)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH";
@@ -45,7 +45,7 @@ export const fillChunk = function fillChunk(arg0, arg1, arg2) {
 export const summarizeUsernamesParticipating = function summarizeUsernamesParticipating(arg0, arg1, arg2, arg3) {
   let length = arg3;
   const first = arg1[0];
-  let obj = importDefault(4319);
+  let obj = importDefault(4320);
   const name = obj.getName(arg0, arg2, first);
   if (null == arg3) {
     length = arg1.length;
@@ -122,7 +122,7 @@ export const getStageChannelMetadata = function getStageChannelMetadata(channel_
   }
   obj.topic = topic;
   obj.media_session_id = mediaSessionId.getMediaSessionId();
-  obj.request_to_speak_state = importAll(3763).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, channel_id) ? closure_6.EVERYONE : closure_6.NO_ONE;
+  obj.request_to_speak_state = importAll(3764).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, channel_id) ? closure_6.EVERYONE : closure_6.NO_ONE;
   let id;
   if (null != stageInstanceByChannel) {
     id = stageInstanceByChannel.id;

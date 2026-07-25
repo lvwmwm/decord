@@ -1,22 +1,22 @@
-// Module ID: 14271
-// Function ID: 109566
+// Module ID: 14282
+// Function ID: 109693
 // Name: useTitle
-// Dependencies: [653, 10127, 1212, 2556, 14272, 2]
+// Dependencies: [653, 10059, 1212, 2557, 14283, 2]
 
-// Module 14271 (useTitle)
+// Module 14282 (useTitle)
 import createToggle from "createToggle";
 
 const obj = {
   useTitle() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2556).ZPMAlX);
+    return intl.string(importDefault(2557).ZPMAlX);
   },
   parent: null,
   unsearchable: true,
   screen: {
     route: require("ME").UserSettingsSections.DISPLAY_NAME_STYLES,
     getComponent() {
-      return require(14272) /* ApplyButton */.default;
+      return require(14283) /* ApplyButton */.default;
     }
   },
   usePredicate() {

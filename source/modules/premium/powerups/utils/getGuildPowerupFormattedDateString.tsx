@@ -1,10 +1,10 @@
-// Module ID: 11562
-// Function ID: 90079
+// Module ID: 11528
+// Function ID: 89796
 // Name: getGuildPowerupFormattedDateString
-// Dependencies: [1921, 2]
+// Dependencies: [1922, 2]
 // Exports: default
 
-// Module 11562 (getGuildPowerupFormattedDateString)
+// Module 11528 (getGuildPowerupFormattedDateString)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/getGuildPowerupFormattedDateString.tsx");

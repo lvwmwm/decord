@@ -1,10 +1,10 @@
-// Module ID: 13599
-// Function ID: 104444
+// Module ID: 13610
+// Function ID: 104571
 // Name: DevToolsPersistedStoresActionSheet
-// Dependencies: [57, 31, 27, 567, 1194, 33, 4130, 689, 5165, 1882, 3831, 566, 1898, 1457, 5160, 8871, 8872, 8866, 5772, 4098, 4126, 9280, 5498, 5186, 5500, 2]
+// Dependencies: [57, 31, 27, 567, 1194, 33, 4131, 689, 5164, 1883, 3832, 566, 1899, 1457, 5159, 8759, 8760, 8754, 9171, 4099, 4127, 9173, 5498, 5186, 5500, 2]
 // Exports: default
 
-// Module 13599 (DevToolsPersistedStoresActionSheet)
+// Module 13610 (DevToolsPersistedStoresActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -63,7 +63,7 @@ let closure_10 = importAllResult.memo(() => {
       }
     }
   };
-  return jsx(require(5165) /* TableRowInner */.TableRow, {
+  return jsx(require(5164) /* TableRowInner */.TableRow, {
     label: "Disable Database",
     start: true,
     onPress() {
@@ -78,7 +78,7 @@ let closure_10 = importAllResult.memo(() => {
 });
 let closure_11 = importAllResult.memo(() => {
   let obj = require(566) /* initialize */;
-  const items = [importDefault(1898), _isNativeReflectConstruct];
+  const items = [importDefault(1899), _isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_1(outer1_2[12]).database(outer1_7.getId()));
   obj = { label: null, start: true, end: true };
   let str = "No active database.";
@@ -92,9 +92,9 @@ let closure_11 = importAllResult.memo(() => {
     combined = "Handle: " + stateFromStores.handle;
   }
   obj.subLabel = combined;
-  return jsx(require(5165) /* TableRowInner */.TableRow, { label: null, start: true, end: true });
+  return jsx(require(5164) /* TableRowInner */.TableRow, { label: null, start: true, end: true });
 });
-let closure_12 = importAllResult.memo(() => jsx(require(5165) /* TableRowInner */.TableRow, {
+let closure_12 = importAllResult.memo(() => jsx(require(5164) /* TableRowInner */.TableRow, {
   label: "Disable + Remove Database",
   onPress() {
     const result = outer1_1(outer1_2[12]).replaceDisableAllDatabases("via UserSettingsDatabaseControls");
@@ -112,7 +112,7 @@ let closure_13 = importAllResult.memo(() => {
       navigation.navigate("cacheStats");
     }
   };
-  return jsx(_require(5165).TableRow, {
+  return jsx(_require(5164).TableRow, {
     label: "View Cache Stats",
     end: true,
     onPress() {

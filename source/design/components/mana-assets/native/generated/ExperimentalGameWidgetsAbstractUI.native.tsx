@@ -1,10 +1,10 @@
-// Module ID: 6044
-// Function ID: 50031
+// Module ID: 6964
+// Function ID: 59681
 // Name: ExperimentalGameWidgetsAbstractUI
-// Dependencies: [33, 5085, 6045, 2]
+// Dependencies: [33, 5085, 6965, 2]
 // Exports: ExperimentalGameWidgetsAbstractUI
 
-// Module 6044 (ExperimentalGameWidgetsAbstractUI)
+// Module 6964 (ExperimentalGameWidgetsAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGameWidgetsAbstractUI.native.tsx");
@@ -27,7 +27,7 @@ export const ExperimentalGameWidgetsAbstractUI = function ExperimentalGameWidget
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6045) };
+  obj = { uri: importDefault(6965) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,9 +1,9 @@
-// Module ID: 13519
-// Function ID: 103970
+// Module ID: 13530
+// Function ID: 104097
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8365, 664, 686, 8366, 4530, 2]
+// Dependencies: [6, 7, 15, 17, 18, 8123, 664, 686, 8124, 4531, 2]
 
-// Module 13519 (_isNativeReflectConstruct)
+// Module 13530 (_isNativeReflectConstruct)
 import set from "set";
 import dispatcher from "dispatcher";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -26,7 +26,7 @@ function fetchDehydratedData() {
   if (arg0 === undefined) {
     flag = false;
   }
-  let obj = importDefault(8365);
+  let obj = importDefault(8123);
   obj = { isInitialLoad: flag };
   const dehydrated = obj.fetchDehydrated(obj);
   if (null != timeout) {

@@ -1,7 +1,7 @@
 // Module ID: 3543
-// Function ID: 27486
+// Function ID: 27477
 // Name: _typeof
-// Dependencies: [3517, 3518, 3515]
+// Dependencies: [3518, 3519, 3516]
 
 // Module 3543 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const Hour0To11Parser = ((Parser) => {
-  class Hour0To11Parser {
+export const Hour0to23Parser = ((Parser) => {
+  class Hour0to23Parser {
     constructor() {
-      if (this instanceof Hour0To11Parser) {
+      if (this instanceof Hour0to23Parser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -162,7 +162,7 @@ export const Hour0To11Parser = ((Parser) => {
         tmp17 = outer1_8(applyResult, "priority", 70);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["h", "H", "k", "t", "T"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["a", "b", "h", "K", "k", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +177,9 @@ export const Hour0To11Parser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class Hour0To11Parser {
+    class Hour0to23Parser {
       constructor() {
-        if (this instanceof Hour0To11Parser) {
+        if (this instanceof Hour0to23Parser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -205,7 +205,7 @@ export const Hour0To11Parser = ((Parser) => {
           tmp17 = outer1_8(applyResult, "priority", 70);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["h", "H", "k", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["a", "b", "h", "K", "k", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +224,12 @@ export const Hour0To11Parser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: Hour0To11Parser, writable: true, configurable: true };
-  Hour0To11Parser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: Hour0to23Parser, writable: true, configurable: true };
+  Hour0to23Parser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class Hour0To11Parser {
+    class Hour0to23Parser {
       constructor() {
-        if (this instanceof Hour0To11Parser) {
+        if (this instanceof Hour0to23Parser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -255,7 +255,7 @@ export const Hour0To11Parser = ((Parser) => {
           tmp17 = outer1_8(applyResult, "priority", 70);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["h", "H", "k", "t", "T"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["a", "b", "h", "K", "k", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,19 +269,19 @@ export const Hour0To11Parser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(Hour0To11Parser, Parser);
+    _setPrototypeOf(Hour0to23Parser, Parser);
   }
-  let closure_0 = _createSuper(Hour0To11Parser);
+  let closure_0 = _createSuper(Hour0to23Parser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
-      if ("K" === arg1) {
-        return callback(Hour0To11Parser[0]).parseNumericPattern(callback(Hour0To11Parser[1]).numericPatterns.hour11h, arg0);
-      } else if ("Ko" === arg1) {
+      if ("H" === arg1) {
+        return callback(Hour0to23Parser[0]).parseNumericPattern(callback(Hour0to23Parser[1]).numericPatterns.hour23h, arg0);
+      } else if ("Ho" === arg1) {
         const obj = { unit: "hour" };
         return ordinalNumber.ordinalNumber(arg0, obj);
       } else {
-        return callback(Hour0To11Parser[0]).parseNDigits(arg1.length, arg0);
+        return callback(Hour0to23Parser[0]).parseNDigits(arg1.length, arg0);
       }
     }
   };
@@ -291,7 +291,7 @@ export const Hour0To11Parser = ((Parser) => {
     value: function validate(arg0, arg1) {
       let tmp = arg1 >= 0;
       if (tmp) {
-        tmp = arg1 <= 11;
+        tmp = arg1 <= 23;
       }
       return tmp;
     }
@@ -299,16 +299,11 @@ export const Hour0To11Parser = ((Parser) => {
   items[1] = obj;
   items[2] = {
     key: "set",
-    value: function set(getUTCHours) {
-      if (getUTCHours.getUTCHours() >= 12) {
-        if (arg2 < 12) {
-          getUTCHours.setUTCHours(arg2 + 12, 0, 0, 0);
-        }
-        return getUTCHours;
-      }
-      getUTCHours.setUTCHours(arg2, 0, 0, 0);
+    value: function set(setUTCHours) {
+      setUTCHours.setUTCHours(arg2, 0, 0, 0);
+      return setUTCHours;
     }
   };
-  _defineProperties(Hour0To11Parser.prototype, items);
-  return Hour0To11Parser;
+  _defineProperties(Hour0to23Parser.prototype, items);
+  return Hour0to23Parser;
 })(require("_defineProperties").Parser);

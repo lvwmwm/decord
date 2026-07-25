@@ -1,16 +1,16 @@
-// Module ID: 14425
-// Function ID: 110239
+// Module ID: 14436
+// Function ID: 110366
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 1905, 33, 4130, 689, 3842, 8318, 675, 14426, 5085, 8346, 1212, 4660, 8518, 9646, 1273, 7859, 1450, 7860, 1457, 5087, 3712, 7861, 4126, 4337, 5517, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 1906, 33, 4131, 689, 3843, 8053, 675, 14437, 5085, 8080, 1212, 4661, 8278, 9568, 1273, 7806, 1450, 7807, 1457, 5087, 3713, 7808, 4127, 4338, 5517, 2]
 // Exports: default
 
-// Module 14425 (_callSuper)
+// Module 14436 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
-import module_14426 from "module_14426";
+import module_14437 from "module_14437";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getSystemLocale from "getSystemLocale";
-import importAllResult from "module_4337";
+import importAllResult from "module_4338";
 import { View } from "HeaderBackImage";
 import { AnalyticEvents } from "ME";
 import { CHANGELOG_MODAL_KEY } from "CHANGELOG_MODAL_KEY";
@@ -32,7 +32,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return module_14426(arg0, constructResult);
+  return module_14437(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -158,19 +158,19 @@ class ChangeLogScreen {
       tmp15Result = tmp15(tmp16, tmp20);
     } else {
       tmp12 = jsx;
-      tmp13 = f110254;
+      tmp13 = f110381;
       obj5 = {};
       obj5.onClose = fn;
       obj5.height = height;
       obj5.width = width;
       obj5.changeLog = changelog;
-      tmp14 = jsx(f110254, obj5);
+      tmp14 = jsx(f110381, obj5);
     }
     return tmp14;
   }
 }
 function hideChangeLog() {
-  importDefault(4337).popWithKey(CHANGELOG_MODAL_KEY);
+  importDefault(4338).popWithKey(CHANGELOG_MODAL_KEY);
 }
 ({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
 let c14 = 0.5625;

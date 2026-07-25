@@ -1,10 +1,10 @@
-// Module ID: 14872
-// Function ID: 113478
+// Module ID: 14883
+// Function ID: 113606
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [57, 31, 33, 4130, 14873, 1273, 3834, 689, 14874, 14875, 14879, 2]
+// Dependencies: [57, 31, 33, 4131, 14884, 1273, 3835, 689, 14885, 14886, 14890, 2]
 // Exports: default
 
-// Module 14872 (useGuildsBarBottomRightBadge)
+// Module 14883 (useGuildsBarBottomRightBadge)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";

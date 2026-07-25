@@ -1,10 +1,10 @@
-// Module ID: 8315
-// Function ID: 65477
+// Module ID: 8050
+// Function ID: 64032
 // Name: urlUserId
-// Dependencies: [5, 1849, 653, 686, 507, 6836, 6841, 1184, 2]
+// Dependencies: [5, 1850, 653, 686, 507, 5839, 5844, 1184, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8315 (urlUserId)
+// Module 8050 (urlUserId)
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

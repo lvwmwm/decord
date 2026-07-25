@@ -1,9 +1,9 @@
-// Module ID: 4297
-// Function ID: 37544
+// Module ID: 4298
+// Function ID: 37555
 // Name: TypedEventEmitter
 // Dependencies: [6, 7, 631, 2]
 
-// Module 4297 (TypedEventEmitter)
+// Module 4298 (TypedEventEmitter)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

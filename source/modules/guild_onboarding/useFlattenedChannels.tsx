@@ -1,10 +1,10 @@
-// Module ID: 5068
-// Function ID: 44007
+// Module ID: 5069
+// Function ID: 44019
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1348, 22, 1327, 566, 2]
 // Exports: useFlattenedChannels
 
-// Module 5068 (_createForOfIteratorHelperLoose)
+// Module 5069 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

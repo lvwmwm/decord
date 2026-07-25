@@ -1,10 +1,10 @@
-// Module ID: 8513
-// Function ID: 67773
+// Module ID: 8273
+// Function ID: 66427
 // Name: NavigationBar
-// Dependencies: [5, 57, 31, 27, 1348, 1838, 1354, 8398, 33, 4130, 689, 4337, 4660, 1212, 1273, 7729, 4126, 8507, 566, 8446, 8514, 5121, 7580, 8517, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 1348, 1838, 1354, 8156, 33, 4131, 689, 4338, 4661, 1212, 1273, 7675, 4127, 8267, 566, 8204, 8274, 5121, 6689, 8277, 4544, 2]
 // Exports: default
 
-// Module 8513 (NavigationBar)
+// Module 8273 (NavigationBar)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -30,9 +30,9 @@ function NavigationBar(onClose) {
   obj.onPress = function onPress() {
     return onClose();
   };
-  obj = { source: importDefault(7729) };
+  obj = { source: importDefault(7675) };
   obj.children = callback(onClose(1273).Icon, obj);
-  obj.children = callback(onClose(4660).PressableOpacity, obj);
+  obj.children = callback(onClose(4661).PressableOpacity, obj);
   return callback(View, obj);
 }
 function StartEventHeader(event) {
@@ -41,9 +41,9 @@ function StartEventHeader(event) {
   obj = { style: tmp.headerPrivacyLevel, variant: "heading-lg/bold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["q+fFJv"]);
-  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  const items = [callback(require(4127) /* Text */.Text, obj), ];
   obj = { style: tmp.headerTitle, variant: "text-md/medium", color: "text-default", children: event.event.name };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }

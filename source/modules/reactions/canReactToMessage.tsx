@@ -1,10 +1,10 @@
-// Module ID: 7747
-// Function ID: 61541
+// Module ID: 7693
+// Function ID: 61509
 // Name: canReactToMessageInternal
-// Dependencies: [1917, 4946, 3758, 1849, 653, 1360, 3747, 566, 2]
+// Dependencies: [1918, 4947, 3759, 1850, 653, 1360, 3748, 566, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 7747 (canReactToMessageInternal)
+// Module 7693 (canReactToMessageInternal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -56,8 +56,8 @@ function canReactToMessageInternal(state, getGuildId, items) {
     const obj5 = require(1360) /* hasFlag */;
   }
   if (canResult) {
-    canResult = !require(3747) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member);
-    const obj6 = require(3747) /* isCommunicationDisabled */;
+    canResult = !require(3748) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member);
+    const obj6 = require(3748) /* isCommunicationDisabled */;
   }
   return canResult;
 }

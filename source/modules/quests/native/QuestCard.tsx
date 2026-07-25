@@ -1,9 +1,9 @@
-// Module ID: 14039
-// Function ID: 107396
+// Module ID: 14050
+// Function ID: 107523
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 57, 31, 27, 1849, 6941, 4976, 482, 33, 689, 4130, 3945, 3974, 4979, 6947, 10952, 10493, 1450, 9494, 14040, 7527, 6836, 6841, 6968, 566, 9499, 6964, 6939, 9504, 4066, 8250, 3834, 10497, 9485, 9486, 9487, 6969, 10501, 4098, 14066, 1934, 10953, 6784, 1212, 10946, 10504, 14070, 9480, 9501, 9502, 4549, 9921, 8642, 3994, 477, 8749, 4126, 14071, 5167, 14109, 5085, 4554, 668, 14097, 4541, 5705, 14077, 10949, 14110, 4543, 14113, 7533, 9982, 14098, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 5932, 4977, 482, 33, 689, 4131, 3946, 3975, 4980, 5938, 10903, 10427, 1450, 9415, 14051, 6619, 5839, 5844, 5959, 566, 9420, 5955, 5930, 9425, 4067, 7983, 3835, 10431, 9406, 9407, 9408, 5960, 10435, 4099, 14077, 1935, 10904, 5780, 1212, 10897, 10438, 14081, 9401, 9422, 9423, 4550, 9849, 8418, 3995, 477, 8637, 4127, 14082, 5166, 14120, 5085, 4555, 668, 14108, 4542, 8398, 14088, 10900, 14121, 4544, 14124, 6625, 9910, 14109, 2]
 
-// Module 14039 (ESTIMATED_CARD_HEIGHT)
+// Module 14050 (ESTIMATED_CARD_HEIGHT)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import VideoQuestModalSteps from "VideoQuestModalSteps";
 import importAllResult from "map";
@@ -30,30 +30,30 @@ const require = arg1;
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
 let result = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   theme = theme.theme;
-  const obj = require(3945);
+  const obj = require(3946);
   const internal = importDefault(689).internal;
   const colors = importDefault(689).colors;
-  const semanticColor = internal.resolveSemanticColor(theme, require(3945).isThemeDark(theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
-  const isThemeDarkResult = require(3945).isThemeDark(theme);
-  return require(3974) /* hexToRgb */.hexOpacityToRgba(semanticColor, 0);
+  const semanticColor = internal.resolveSemanticColor(theme, require(3946).isThemeDark(theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
+  const isThemeDarkResult = require(3946).isThemeDark(theme);
+  return require(3975) /* hexToRgb */.hexOpacityToRgba(semanticColor, 0);
 });
 let result1 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   theme = theme.theme;
-  const isThemeDarkResult = require(3945).isThemeDark(theme);
+  const isThemeDarkResult = require(3946).isThemeDark(theme);
   const internal = importDefault(689).internal;
   const colors = importDefault(689).colors;
   const semanticColor = internal.resolveSemanticColor(theme, isThemeDarkResult ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
-  const obj = require(3945);
+  const obj = require(3946);
   let num = 0.5;
   if (isThemeDarkResult) {
     num = 0.8;
   }
-  return require(3974) /* hexToRgb */.hexOpacityToRgba(semanticColor, num);
+  return require(3975) /* hexToRgb */.hexOpacityToRgba(semanticColor, num);
 });
 let result2 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(3945);
+  const obj = require(3946);
   const colors = importDefault(689).colors;
-  return require(3945).isThemeDark(theme.theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK;
+  return require(3946).isThemeDark(theme.theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK;
 });
 const PX_16 = require("_createForOfIteratorHelperLoose").space.PX_16;
 let obj = {};

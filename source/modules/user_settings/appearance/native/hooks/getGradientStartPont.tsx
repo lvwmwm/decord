@@ -1,10 +1,10 @@
-// Module ID: 14239
-// Function ID: 109360
+// Module ID: 14250
+// Function ID: 109487
 // Name: getHorizontalOrVerticalStartPoint
 // Dependencies: [2]
 // Exports: default
 
-// Module 14239 (getHorizontalOrVerticalStartPoint)
+// Module 14250 (getHorizontalOrVerticalStartPoint)
 let closure_0 = { code: "function getHorizontalOrVerticalStartPoint_getGradientStartPontTsx1(angle,width,height){switch(angle){case 0:return[-width/2,0];case 90:return[0,-height/2];case 180:return[width/2,0];default:return[0,height/2];}}" };
 const tmp2 = (() => {
   function getHorizontalOrVerticalStartPoint(arg0, arg1, arg2) {

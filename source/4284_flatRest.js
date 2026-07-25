@@ -1,11 +1,17 @@
 // Module ID: 4284
-// Function ID: 37515
+// Function ID: 37524
 // Name: flatRest
-// Dependencies: [4285, 4289, 4291]
+// Dependencies: [4285, 4295]
 
 // Module 4284 (flatRest)
+import flatRest from "flatRest";
 
-export default function flatRest(arg0) {
-  const tmp = require(4285) /* shortOut */;
-  return tmp(require(4289) /* overRest */(arg0, undefined, require(4291) /* flatten */), "" + arg0);
-};
+
+export default flatRest((arg0, arg1) => {
+  if (null == arg0) {
+    let obj = {};
+  } else {
+    obj = require(4295) /* basePick */(arg0, arg1);
+  }
+  return obj;
+});

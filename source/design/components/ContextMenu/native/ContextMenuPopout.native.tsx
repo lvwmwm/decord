@@ -1,10 +1,10 @@
-// Module ID: 13132
-// Function ID: 101126
+// Module ID: 13143
+// Function ID: 101253
 // Name: ContextMenuDivider
-// Dependencies: [57, 31, 27, 33, 4130, 689, 9340, 3991, 4476, 5160, 1450, 477, 4542, 9339, 5217, 4126, 13130, 4528, 4531, 1212, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 9233, 3992, 4477, 5159, 1450, 477, 4543, 9232, 5217, 4127, 13141, 4529, 4532, 1212, 2]
 // Exports: ContextMenuPopout
 
-// Module 13132 (ContextMenuDivider)
+// Module 13143 (ContextMenuDivider)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -78,14 +78,14 @@ function renderMenuItems(items) {
 }
 function ContextMenuBackdrop(onDismiss) {
   const visible = onDismiss.visible;
-  let obj = visible(3991);
+  let obj = visible(3992);
   const fn = function n() {
     const obj = {};
     const value = visible.get();
     obj.opacity = visible(outer1_2[12]).withSpring(value, visible(outer1_2[6]).CONTEXT_MENU_SPRING);
     return obj;
   };
-  obj = { withSpring: visible(4542).withSpring, visible, CONTEXT_MENU_SPRING: visible(9340).CONTEXT_MENU_SPRING };
+  obj = { withSpring: visible(4543).withSpring, visible, CONTEXT_MENU_SPRING: visible(9233).CONTEXT_MENU_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 6862317967896;
   fn.__initData = closure_15;
@@ -103,7 +103,7 @@ function ContextMenuBackdrop(onDismiss) {
     stringResult = string(t.xs0juG);
   }
   obj.accessibilityLabel = stringResult;
-  return tmp3(visible(4531).Backdrop, obj);
+  return tmp3(visible(4532).Backdrop, obj);
 }
 const View = get_ActivityIndicator.View;
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);

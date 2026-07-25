@@ -1,9 +1,9 @@
-// Module ID: 15303
-// Function ID: 116727
+// Module ID: 15313
+// Function ID: 116855
 // Name: useIsCompletelyCovered
-// Dependencies: [57, 31, 27, 9159, 653, 482, 33, 4130, 15304, 3991, 4559, 4066, 1324, 8347, 15305, 4476, 3992, 4489, 15306, 1457, 14838, 3989, 14842, 5217, 3977, 14837, 3984, 686, 3990, 3842, 2]
+// Dependencies: [57, 31, 27, 9051, 653, 482, 33, 4131, 15314, 3992, 4560, 4067, 1324, 8105, 15315, 4477, 3993, 4490, 15316, 1457, 14849, 3990, 14853, 5217, 3978, 14848, 3985, 686, 3991, 3843, 2]
 
-// Module 15303 (useIsCompletelyCovered)
+// Module 15313 (useIsCompletelyCovered)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "dispatcher";
@@ -26,8 +26,8 @@ function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translat
   const _require = index;
   const importDefault = highestFullyRenderedScreenIndex;
   const dependencyMap = translateX;
-  const enabled = importDefault(15304).useConfig({ location: "MainTabsChannelScreenStack" }).enabled;
-  const obj = importDefault(15304);
+  const enabled = importDefault(15314).useConfig({ location: "MainTabsChannelScreenStack" }).enabled;
+  const obj = importDefault(15314);
   const fn = function c() {
     return translateX.get() > 0;
   };
@@ -49,14 +49,14 @@ function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translat
   fn2.__closure = { highestFullyRenderedScreenIndex, index };
   fn2.__workletHash = 10137919010401;
   fn2.__initData = closure_16;
-  const animatedReaction = _require(3991).useAnimatedReaction(fn, fn2);
-  const obj2 = _require(3991);
-  const unmountEffect = _require(4559).useUnmountEffect(() => {
+  const animatedReaction = _require(3992).useAnimatedReaction(fn, fn2);
+  const obj2 = _require(3992);
+  const unmountEffect = _require(4560).useUnmountEffect(() => {
     if (highestFullyRenderedScreenIndex.get() >= closure_0) {
       const result = highestFullyRenderedScreenIndex.set(closure_0 - 1);
     }
   });
-  const obj3 = _require(4559);
+  const obj3 = _require(4560);
   const fn3 = function u() {
     let tmp = enabled;
     if (enabled) {
@@ -67,7 +67,7 @@ function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translat
   fn3.__closure = { enabled, highestFullyRenderedScreenIndex, index };
   fn3.__workletHash = 1648562234730;
   fn3.__initData = closure_17;
-  return _require(3991).useDerivedValue(fn3);
+  return _require(3992).useDerivedValue(fn3);
 }
 function getKey(index) {
   return String(index.index);
@@ -98,12 +98,12 @@ let closure_18 = importAllResult.memo(function FirstChannelScreen(cleanup) {
   ({ frame, index, isDragging, translateX, containerWidth, isActive, maxWidth, transitionState } = cleanup);
   cleanup = cleanup.cleanup;
   ({ guildId, channelId, showCreateThread, freeze, focusChatPressableComponent, parentFreezeValue, highestFullyRenderedScreenIndex } = cleanup);
-  const tmp = cleanup(4066)();
+  const tmp = cleanup(4067)();
   let obj = transitionState(1324);
-  let obj1 = transitionState(8347);
+  let obj1 = transitionState(8105);
   const orientation = obj1.useOrientation();
   const tmp2 = callback2();
-  let obj2 = transitionState(15305);
+  let obj2 = transitionState(15315);
   const items = [cleanup, transitionState];
   const mainTabsChannelScreenStyles = obj2.useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translateX), parentFreezeValue);
   const effect = importAllResult.useEffect(() => {
@@ -138,11 +138,11 @@ let closure_18 = importAllResult.memo(function FirstChannelScreen(cleanup) {
   obj2.pointerEvents = str;
   obj2.accessibilityElementsHidden = !isActive || undefined;
   obj2.importantForAccessibility = "no-hide-descendants";
-  obj2.children = callback(cleanup(15306), { guildId, channelId, showCreateThread, isNavigationScreen: null == containerWidth, frame, screenIndex: index });
+  obj2.children = callback(cleanup(15316), { guildId, channelId, showCreateThread, isNavigationScreen: null == containerWidth, frame, screenIndex: index });
   obj1.children = callback(closure_7, obj2);
-  const items2 = [callback(transitionState(4489).Freeze, obj1), focusChatPressableComponent];
+  const items2 = [callback(transitionState(4490).Freeze, obj1), focusChatPressableComponent];
   obj.children = items2;
-  return tmp7(cleanup(3992), obj);
+  return tmp7(cleanup(3993), obj);
 });
 let closure_19 = { code: "function MainTabsChannelScreenStackTsx4(){const{translateX}=this.__closure;return translateX.get()===0;}" };
 let closure_20 = { code: "function MainTabsChannelScreenStackTsx5(isFullyOpen,prev){const{index,mainTabsDisallowGesture}=this.__closure;if(isFullyOpen===prev)return;if(index!==1)return;mainTabsDisallowGesture.set(isFullyOpen);}" };

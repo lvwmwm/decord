@@ -1,10 +1,10 @@
-// Module ID: 8311
-// Function ID: 65416
+// Module ID: 8046
+// Function ID: 63971
 // Name: getProfileProperties
-// Dependencies: [8312, 5066, 6901, 4149, 1917, 4217, 3767, 1849, 6855, 8308, 653, 482, 1392, 7974, 675, 4324, 8316, 2]
+// Dependencies: [8047, 5067, 5892, 4150, 1918, 4218, 3768, 1850, 5630, 8043, 653, 482, 1392, 7922, 675, 4325, 8051, 2]
 // Exports: maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8311 (getProfileProperties)
+// Module 8046 (getProfileProperties)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
@@ -161,7 +161,7 @@ function getTrackUserProfileProperties(voiceChannelId) {
     if (showGuildProfile) {
       tmp3 = guildId;
     }
-    const displayProfile = require(7974) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
+    const displayProfile = require(7922) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
     let member = null;
     if (showGuildProfile) {
       member = null;
@@ -291,9 +291,9 @@ function trackUserProfileAction(voiceChannelId) {
   ({ guildId, channelId, messageId, roleId, widgetType, analyticsLocations, action, section, applicationId } = voiceChannelId);
   let obj = importDefault(675);
   obj = {};
-  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
-  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
+  const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged2 = Object.assign(getTrackUserProfileProperties(voiceChannelId));
   const merged3 = Object.assign(getTrackUserRelationshipProperties(voiceChannelId));
   const merged4 = Object.assign(getTrackUserProfileApplicationProperties(applicationId));
@@ -321,7 +321,7 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
   let timeToInteractiveMs;
   let timeToLoadMs;
   let viewStartedAt;
-  let obj = require(8316) /* isUserProfilePerformanceAnalyticsEnabled */;
+  let obj = require(8051) /* isUserProfilePerformanceAnalyticsEnabled */;
   if (obj.isUserProfilePerformanceAnalyticsEnabled("UserProfileAnalyticsUtils")) {
     ({ timeToInteractiveMs, timeToLoadMs, timeToFetchMs } = voiceChannelId);
     let num2 = 0;
@@ -347,9 +347,9 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
     if (!tmp2) {
       obj = {};
       const obj2 = importDefault(675);
-      const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-      const obj4 = require(4324) /* _createForOfIteratorHelperLoose */;
-      const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
+      const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+      const obj4 = require(4325) /* _createForOfIteratorHelperLoose */;
+      const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
       const merged2 = Object.assign(getTrackUserProfileProperties(voiceChannelId));
       const merged3 = Object.assign(getTrackUserRelationshipProperties(voiceChannelId));
       obj["location_stack"] = analyticsLocations;
@@ -360,7 +360,7 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
       obj["time_to_load_ms"] = timeToLoadMs;
       obj["time_to_fetch_ms"] = timeToFetchMs;
       obj2.track(constants3.USER_PROFILE_UI_VIEWED, obj);
-      const obj5 = require(4324) /* _createForOfIteratorHelperLoose */;
+      const obj5 = require(4325) /* _createForOfIteratorHelperLoose */;
     }
   }
 };
@@ -377,9 +377,9 @@ export const trackUserProfileActivityJoined = function trackUserProfileActivityJ
   ({ guildId, channelId, analyticsLocations, activityType, activityName, activityPlatform, activitySessionId, applicationId } = voiceChannelId);
   let obj = importDefault(675);
   obj = {};
-  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
-  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
+  const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged2 = Object.assign(getTrackUserProfileProperties(voiceChannelId));
   const merged3 = Object.assign(getTrackUserRelationshipProperties(voiceChannelId));
   obj["location_stack"] = analyticsLocations;
@@ -409,9 +409,9 @@ export const trackUserProfileActivityAction = function trackUserProfileActivityA
   ({ guildId, channelId, analyticsLocations, action, display, stream, voiceChannelId } = voiceChannelId);
   let obj = importDefault(675);
   obj = {};
-  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
-  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
+  const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged2 = Object.assign(getTrackUserProfileProperties(voiceChannelId));
   const merged3 = Object.assign(getTrackUserRelationshipProperties(voiceChannelId));
   obj["location_stack"] = analyticsLocations;
@@ -491,9 +491,9 @@ export const trackUserProfileBadgeAction = function trackUserProfileBadgeAction(
   }
   let obj = importDefault(675);
   obj = {};
-  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
-  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
+  const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged2 = Object.assign(getTrackUserProfileProperties(voiceChannelId));
   const merged3 = Object.assign(getTrackUserRelationshipProperties(voiceChannelId));
   obj["location_stack"] = analyticsLocations;
@@ -582,9 +582,9 @@ export const trackUserProfileEditAction = function trackUserProfileEditAction(vo
   trackUserProfileAction(obj);
   obj = {};
   const obj2 = importDefault(675);
-  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  const obj4 = require(4324) /* _createForOfIteratorHelperLoose */;
-  const merged2 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const obj4 = require(4325) /* _createForOfIteratorHelperLoose */;
+  const merged2 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged3 = Object.assign(getTrackUserProfileProperties(voiceChannelId));
   const merged4 = Object.assign(getTrackUserProfileApplicationProperties(applicationId));
   obj["location_stack"] = analyticsLocations;
@@ -612,9 +612,9 @@ export const trackUserProfileEditSaved = function trackUserProfileEditSaved(voic
   trackUserProfileAction(obj);
   obj = {};
   const obj2 = importDefault(675);
-  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  const obj4 = require(4324) /* _createForOfIteratorHelperLoose */;
-  const merged2 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const obj4 = require(4325) /* _createForOfIteratorHelperLoose */;
+  const merged2 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged3 = Object.assign(getTrackUserProfileProperties(voiceChannelId));
   obj["location_stack"] = analyticsLocations;
   obj["widget_edited"] = widgetEdited;
@@ -640,9 +640,9 @@ export const trackUserProfileWishlistAction = function trackUserProfileWishlistA
   trackUserProfileAction(obj);
   obj = {};
   const obj2 = importDefault(675);
-  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  const obj4 = require(4324) /* _createForOfIteratorHelperLoose */;
-  const merged2 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
+  const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const obj4 = require(4325) /* _createForOfIteratorHelperLoose */;
+  const merged2 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadataFromId(channelId));
   const merged3 = Object.assign(getTrackUserProfileProperties(voiceChannelId));
   obj["location_stack"] = analyticsLocations;
   obj["action_type"] = action;

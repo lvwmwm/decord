@@ -1,7 +1,7 @@
 // Module ID: 5174
-// Function ID: 45006
+// Function ID: 45011
 // Name: TableRowTrailingText
-// Dependencies: [31, 33, 4126, 2]
+// Dependencies: [31, 33, 4127, 2]
 // Exports: TableRowTrailingText
 
 // Module 5174 (TableRowTrailingText)
@@ -13,5 +13,5 @@ const result = require("Text").fileFinishedImporting("design/components/TableRow
 
 export const TableRowTrailingText = function TableRowTrailingText(text) {
   const obj = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: text.text };
-  return jsx(require(4126) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: text.text });
+  return jsx(require(4127) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: text.text });
 };

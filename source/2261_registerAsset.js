@@ -1,11 +1,11 @@
 // Module ID: 2261
-// Function ID: 22841
+// Function ID: 22851
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 2261 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/premium/powerups", scales: [1], hash: "b24e9223725c6bf5ddf729ce5a676b3b", name: "GuildPowerups.compiled.messages", type: "jsona" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Bvd2VydXBz", scales: [1], hash: "37a55f1b7839666cf25019e9eda7e487", name: "zh-TW.messages.37a55f1b7839666cf25019e9eda7e487.compiled.messages", type: "jsona" };
 
 export default registerAsset.registerAsset(obj);

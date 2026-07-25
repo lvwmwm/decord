@@ -1,10 +1,10 @@
-// Module ID: 16494
-// Function ID: 128492
+// Module ID: 16505
+// Function ID: 128660
 // Name: resetImperatively
-// Dependencies: [677, 682, 3743, 2]
+// Dependencies: [677, 682, 3744, 2]
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 16494 (resetImperatively)
+// Module 16505 (resetImperatively)
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
 let closure_2 = Object.freeze({ name: "", emojiId: undefined, emojiName: undefined, description: undefined, refId: undefined });
@@ -67,33 +67,33 @@ export const useDescriptionState = function useDescriptionState() {
     const items = [, ];
     ({ description: arr[0], setDescription: arr[1] } = arg0);
     return items;
-  }, require(3743) /* isIterable */.shallow);
+  }, require(3744) /* isIterable */.shallow);
 };
 export const useEmojiIdState = function useEmojiIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiId: arr[0], setEmojiId: arr[1] } = arg0);
     return items;
-  }, require(3743) /* isIterable */.shallow);
+  }, require(3744) /* isIterable */.shallow);
 };
 export const useEmojiNameState = function useEmojiNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiName: arr[0], setEmojiName: arr[1] } = arg0);
     return items;
-  }, require(3743) /* isIterable */.shallow);
+  }, require(3744) /* isIterable */.shallow);
 };
 export const useNameState = function useNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ name: arr[0], setName: arr[1] } = arg0);
     return items;
-  }, require(3743) /* isIterable */.shallow);
+  }, require(3744) /* isIterable */.shallow);
 };
 export const useRefIdState = function useRefIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ refId: arr[0], setRefId: arr[1] } = arg0);
     return items;
-  }, require(3743) /* isIterable */.shallow);
+  }, require(3744) /* isIterable */.shallow);
 };

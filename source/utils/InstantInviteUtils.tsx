@@ -1,10 +1,10 @@
-// Module ID: 8528
-// Function ID: 67916
+// Module ID: 8288
+// Function ID: 66570
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1347, 1348, 1917, 4142, 3767, 1849, 5601, 653, 6978, 4974, 8529, 1212, 2]
+// Dependencies: [1347, 1348, 1918, 4143, 3768, 1850, 5601, 653, 5969, 4975, 8289, 1212, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8528 (_createForOfIteratorHelperLoose)
+// Module 8288 (_createForOfIteratorHelperLoose)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -222,7 +222,7 @@ function addDmUsers(arg0) {
   }
 }
 let obj = { GROUP_DM: "GROUP_DM", DM: "DM", FRIEND: "FRIEND", CHANNEL: "CHANNEL" };
-let closure_13 = { [arg1(8529).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [arg1(8529).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [arg1(8529).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [arg1(8529).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [arg1(8529).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [arg1(8529).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [arg1(8529).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [arg1(8529).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [arg1(8529).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [arg1(8529).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
+let closure_13 = { [arg1(8289).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [arg1(8289).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [arg1(8289).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [arg1(8289).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [arg1(8289).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [arg1(8289).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [arg1(8289).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [arg1(8289).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [arg1(8289).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [arg1(8289).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
 let items = [require("makeOption").INVITE_OPTIONS_14_DAYS, require("makeOption").INVITE_OPTIONS_30_DAYS, require("makeOption").INVITE_OPTIONS_60_DAYS];
 obj = {
   getMaxAgeOptionByValue(maxAge) {
@@ -232,7 +232,7 @@ obj = {
   },
   getMaxAgeOptions(arg0) {
     const _require = arg0;
-    const MAX_AGE_OPTIONS = _require(8529).MAX_AGE_OPTIONS;
+    const MAX_AGE_OPTIONS = _require(8289).MAX_AGE_OPTIONS;
     return MAX_AGE_OPTIONS.filter((value) => {
       let tmp = !outer1_14.includes(value);
       if (!tmp) {

@@ -1,5 +1,5 @@
 // Module ID: 930
-// Function ID: 10112
+// Function ID: 10118
 // Name: createConsolaReporter
 // Dependencies: [29, 825, 928, 856]
 // Exports: createConsolaReporter

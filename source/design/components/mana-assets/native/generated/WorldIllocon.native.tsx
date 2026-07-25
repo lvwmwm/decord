@@ -1,10 +1,10 @@
-// Module ID: 6628
-// Function ID: 50907
+// Module ID: 7548
+// Function ID: 60557
 // Name: WorldIllocon
-// Dependencies: [33, 5085, 6629, 2]
+// Dependencies: [33, 5085, 7549, 2]
 // Exports: WorldIllocon
 
-// Module 6628 (WorldIllocon)
+// Module 7548 (WorldIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WorldIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const WorldIllocon = function WorldIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6629) };
+  obj = { uri: importDefault(7549) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];

@@ -1,9 +1,9 @@
-// Module ID: 16586
-// Function ID: 129317
+// Module ID: 16597
+// Function ID: 129485
 // Name: AVErrorScreenshareOSErrorDefinition
-// Dependencies: [477, 8896, 16575, 4194, 2]
+// Dependencies: [477, 8784, 16586, 4195, 2]
 
-// Module 16586 (AVErrorScreenshareOSErrorDefinition)
+// Module 16597 (AVErrorScreenshareOSErrorDefinition)
 import module_4294963475 from "module_4294963475";
 
 const result = require("getCommonErrorContext").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorScreenshareOSError.tsx");

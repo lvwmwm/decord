@@ -1,9 +1,9 @@
-// Module ID: 9491
-// Function ID: 73876
+// Module ID: 9412
+// Function ID: 73463
 // Name: QuestBarRenderDelayTracker
-// Dependencies: [6, 7, 653, 6836, 6841, 675, 9492, 2]
+// Dependencies: [6, 7, 653, 5839, 5844, 675, 9413, 2]
 
-// Module 9491 (QuestBarRenderDelayTracker)
+// Module 9412 (QuestBarRenderDelayTracker)
 import canUIRequestGatewaySocket from "canUIRequestGatewaySocket";
 import set from "set";
 import { AnalyticEvents } from "ME";

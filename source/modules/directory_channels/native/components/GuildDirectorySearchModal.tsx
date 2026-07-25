@@ -1,10 +1,10 @@
-// Module ID: 10063
-// Function ID: 77673
+// Module ID: 9992
+// Function ID: 77292
 // Name: GuildDirectorySearchModal
-// Dependencies: [31, 33, 10064, 5517, 5450, 2]
+// Dependencies: [31, 33, 9993, 5517, 5450, 2]
 // Exports: default
 
-// Module 10063 (GuildDirectorySearchModal)
+// Module 9992 (GuildDirectorySearchModal)
 import "result";
 import { jsx } from "jsxProd";
 

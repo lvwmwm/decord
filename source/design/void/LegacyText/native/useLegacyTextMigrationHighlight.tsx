@@ -1,10 +1,10 @@
-// Module ID: 7669
-// Function ID: 60912
+// Module ID: 7611
+// Function ID: 60836
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [4129, 4130, 689, 566, 2]
+// Dependencies: [4130, 4131, 689, 566, 2]
 // Exports: useLegacyTextMigrationHighlight
 
-// Module 7669 (useLegacyTextMigrationHighlight)
+// Module 7611 (useLegacyTextMigrationHighlight)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

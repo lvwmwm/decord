@@ -1,10 +1,10 @@
-// Module ID: 4526
-// Function ID: 39769
+// Module ID: 4527
+// Function ID: 39780
 // Name: useAccessibilityViewIsModalToggle
-// Dependencies: [31, 4527, 2]
+// Dependencies: [31, 4528, 2]
 // Exports: default
 
-// Module 4526 (useAccessibilityViewIsModalToggle)
+// Module 4527 (useAccessibilityViewIsModalToggle)
 import result from "result";
 
 let result = require("set").fileFinishedImporting("design/components/AccessibilityView/useAccessibilityViewIsModalToggle.native.tsx");

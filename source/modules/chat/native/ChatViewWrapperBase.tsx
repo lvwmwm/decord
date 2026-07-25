@@ -1,10 +1,10 @@
-// Module ID: 10430
-// Function ID: 80353
+// Module ID: 10364
+// Function ID: 80022
 // Name: ChatViewWrapperBase
-// Dependencies: [31, 33, 10428, 5449, 10429, 2]
+// Dependencies: [31, 33, 10362, 5449, 10363, 2]
 // Exports: default
 
-// Module 10430 (ChatViewWrapperBase)
+// Module 10364 (ChatViewWrapperBase)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -17,6 +17,6 @@ export default function ChatViewWrapperBase(arg0) {
   let stickyHeader;
   let style;
   ({ channelId, children, stickyHeader, style } = arg0);
-  const obj = { children: jsx(require(10429) /* StickyWrapper */.StickyWrapper, { header: stickyHeader, style, pointerEvents: importDefault(10428)(channelId), children }) };
-  return jsx(require(5449) /* Layer */.LayerScope, { children: jsx(require(10429) /* StickyWrapper */.StickyWrapper, { header: stickyHeader, style, pointerEvents: importDefault(10428)(channelId), children }) });
+  const obj = { children: jsx(require(10363) /* StickyWrapper */.StickyWrapper, { header: stickyHeader, style, pointerEvents: importDefault(10362)(channelId), children }) };
+  return jsx(require(5449) /* Layer */.LayerScope, { children: jsx(require(10363) /* StickyWrapper */.StickyWrapper, { header: stickyHeader, style, pointerEvents: importDefault(10362)(channelId), children }) });
 };

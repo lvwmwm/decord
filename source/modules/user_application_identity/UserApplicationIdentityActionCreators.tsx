@@ -1,9 +1,9 @@
-// Module ID: 12122
-// Function ID: 94981
+// Module ID: 12098
+// Function ID: 94786
 // Name: fetchStore
-// Dependencies: [5, 12121, 653, 686, 507, 1184, 566, 2]
+// Dependencies: [5, 12097, 653, 686, 507, 1184, 566, 2]
 
-// Module 12122 (fetchStore)
+// Module 12098 (fetchStore)
 import isNonEmptyString from "isNonEmptyString";
 import importDefaultResult from "_isNativeReflectConstruct";
 import ME from "ME";

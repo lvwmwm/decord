@@ -1,10 +1,10 @@
-// Module ID: 15531
-// Function ID: 119518
+// Module ID: 15541
+// Function ID: 119646
 // Name: MobileShopButtonCoachmark
-// Dependencies: [31, 27, 1345, 33, 4130, 689, 15520, 1212, 8608, 2]
+// Dependencies: [31, 27, 1345, 33, 4131, 689, 15530, 1212, 8368, 2]
 // Exports: default
 
-// Module 15531 (MobileShopButtonCoachmark)
+// Module 15541 (MobileShopButtonCoachmark)
 import result from "result";
 import { Image } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

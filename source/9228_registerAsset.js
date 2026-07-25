@@ -1,11 +1,11 @@
 // Module ID: 9228
-// Function ID: 72193
+// Function ID: 72325
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9228 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native", width: 189, height: 225, scales: [2, 3], hash: "a6de2d9a12ce42b0ce36333de4aed4c3", name: "img_verify_email_sent", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8d9a4a6e9caf6cfaa5505c9d5954c20b", name: "ThumbsUpIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

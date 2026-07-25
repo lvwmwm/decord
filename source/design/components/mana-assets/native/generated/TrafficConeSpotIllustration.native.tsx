@@ -1,10 +1,10 @@
-// Module ID: 6596
-// Function ID: 50859
+// Module ID: 7516
+// Function ID: 60509
 // Name: TrafficConeSpotIllustration
-// Dependencies: [33, 5085, 6597, 2]
+// Dependencies: [33, 5085, 7517, 2]
 // Exports: TrafficConeSpotIllustration
 
-// Module 6596 (TrafficConeSpotIllustration)
+// Module 7516 (TrafficConeSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TrafficConeSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const TrafficConeSpotIllustration = function TrafficConeSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6597) };
+  obj = { uri: importDefault(7517) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

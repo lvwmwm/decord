@@ -1,10 +1,10 @@
-// Module ID: 11945
-// Function ID: 92443
+// Module ID: 11921
+// Function ID: 92248
 // Name: ActivityCardText
-// Dependencies: [57, 31, 27, 4167, 4149, 1348, 1838, 3758, 4217, 4810, 4146, 6855, 5510, 653, 33, 4130, 689, 477, 4126, 8380, 11946, 3842, 9119, 1212, 10927, 5085, 1392, 8359, 11461, 3976, 9112, 6981, 11951, 11963, 5462, 5482, 11969, 8631, 8642, 11970, 566, 4660, 5509, 1273, 11956, 11971, 11973, 11949, 11981, 11950, 11984, 7969, 11986, 10776, 4227, 6966, 10741, 11987, 4944, 4309, 4098, 10745, 11974, 4320, 11988, 9122, 8494, 4337, 4341, 5737, 10513, 11989, 11991, 11992, 2]
+// Dependencies: [57, 31, 27, 4168, 4150, 1348, 1838, 3759, 4218, 4811, 4147, 5630, 5510, 653, 33, 4131, 689, 477, 4127, 8138, 11922, 3843, 9011, 1212, 10877, 5085, 1392, 8117, 11424, 3977, 9004, 5972, 11927, 11939, 5462, 5482, 11945, 8407, 8418, 11946, 566, 4661, 5509, 1273, 11932, 11947, 11949, 11925, 11957, 11926, 11960, 7917, 11962, 10748, 4228, 5957, 10705, 11963, 4945, 4310, 4099, 10709, 11950, 4321, 11964, 9014, 8254, 4338, 4342, 6633, 5666, 11965, 11967, 11968, 2]
 // Exports: default
 
-// Module 11945 (ActivityCardText)
+// Module 11921 (ActivityCardText)
 import VoicePanelStreamPreview from "VoicePanelStreamPreview";
 import isEmbeddedActivity from "isEmbeddedActivity";
 import get_ActivityIndicator from "isCrunchyrollActivity";
@@ -50,7 +50,7 @@ function ActivityCardText(children) {
       obj = {};
       const merged1 = Object.assign(merged);
       obj["children"] = trimmed;
-      tmp4 = callback(require(4126) /* Text */.Text, obj);
+      tmp4 = callback(require(4127) /* Text */.Text, obj);
     }
   }
   return tmp4;

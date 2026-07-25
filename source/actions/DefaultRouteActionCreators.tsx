@@ -1,18 +1,18 @@
-// Module ID: 10839
-// Function ID: 84120
+// Module ID: 10811
+// Function ID: 83862
 // Name: isLurkingGuildRoute
-// Dependencies: [3759, 653, 3952, 3965, 686, 2]
+// Dependencies: [3760, 653, 3953, 3966, 686, 2]
 // Exports: saveLastNonVoiceRoute, saveLastRoute
 
-// Module 10839 (isLurkingGuildRoute)
+// Module 10811 (isLurkingGuildRoute)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Routes } from "ME";
 
 const require = arg1;
 function isLurkingGuildRoute(Routes) {
-  let obj = require(3952) /* matchPath */;
+  let obj = require(3953) /* matchPath */;
   obj = {};
-  const RouteParam = require(3965) /* isPseudoGuildId */.RouteParam;
+  const RouteParam = require(3966) /* isPseudoGuildId */.RouteParam;
   obj.path = Routes.CHANNEL(RouteParam.guildId());
   const matchPathResult = obj.matchPath(Routes, obj);
   let guildId;

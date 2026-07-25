@@ -1,10 +1,10 @@
 // Module ID: 3536
-// Function ID: 27365
+// Function ID: 27355
 // Name: _typeof
-// Dependencies: [3537, 3517, 3515]
+// Dependencies: [3534, 3518, 3516]
 
 // Module 3536 (_typeof)
-import setUTCISODay from "setUTCISODay";
+import setUTCDay from "setUTCDay";
 
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
@@ -134,18 +134,18 @@ function _defineProperty(arg0, arg1, value) {
   }
   return arg0;
 }
-if (!setUTCISODay) {
-  let obj = { default: setUTCISODay };
+if (!setUTCDay) {
+  let obj = { default: setUTCDay };
   let tmp3 = obj;
 } else {
-  tmp3 = setUTCISODay;
+  tmp3 = setUTCDay;
 }
 let closure_2 = tmp3;
 
-export const ISODayParser = ((Parser) => {
-  class ISODayParser {
+export const StandAloneLocalDayParser = ((Parser) => {
+  class StandAloneLocalDayParser {
     constructor() {
-      if (this instanceof ISODayParser) {
+      if (this instanceof StandAloneLocalDayParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -171,7 +171,7 @@ export const ISODayParser = ((Parser) => {
         tmp17 = outer1_9(applyResult, "priority", 90);
         tmp18 = outer1_7(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_9(applyResult, "incompatibleTokens", ["y", "Y", "u", "q", "Q", "M", "L", "w", "d", "D", "E", "e", "c", "t", "T"]);
+        tmp19 = outer1_9(applyResult, "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "E", "i", "e", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -186,9 +186,9 @@ export const ISODayParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class ISODayParser {
+    class StandAloneLocalDayParser {
       constructor() {
-        if (this instanceof ISODayParser) {
+        if (this instanceof StandAloneLocalDayParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -214,7 +214,7 @@ export const ISODayParser = ((Parser) => {
           tmp17 = outer1_9(applyResult, "priority", 90);
           tmp18 = outer1_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["y", "Y", "u", "q", "Q", "M", "L", "w", "d", "D", "E", "e", "c", "t", "T"]);
+          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "E", "i", "e", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -233,12 +233,12 @@ export const ISODayParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: ISODayParser, writable: true, configurable: true };
-  ISODayParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: StandAloneLocalDayParser, writable: true, configurable: true };
+  StandAloneLocalDayParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class ISODayParser {
+    class StandAloneLocalDayParser {
       constructor() {
-        if (this instanceof ISODayParser) {
+        if (this instanceof StandAloneLocalDayParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -264,7 +264,7 @@ export const ISODayParser = ((Parser) => {
           tmp17 = outer1_9(applyResult, "priority", 90);
           tmp18 = outer1_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["y", "Y", "u", "q", "Q", "M", "L", "w", "d", "D", "E", "e", "c", "t", "T"]);
+          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "E", "i", "e", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -278,45 +278,42 @@ export const ISODayParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(ISODayParser, Parser);
+    _setPrototypeOf(StandAloneLocalDayParser, Parser);
   }
-  let closure_0 = _createSuper(ISODayParser);
+  let closure_0 = _createSuper(StandAloneLocalDayParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
+      const callback = arg3;
       function valueCallback(arg0) {
-        let num = 7;
-        if (0 !== arg0) {
-          num = arg0;
-        }
-        return num;
+        return (arg0 + weekStartsOn.weekStartsOn + 6) % 7 + 7 * Math.floor((arg0 - 1) / 7);
       }
-      if ("i" !== arg1) {
-        if ("ii" !== arg1) {
-          if ("io" === arg1) {
+      if ("c" !== arg1) {
+        if ("cc" !== arg1) {
+          if ("co" === arg1) {
             const obj = { unit: "day" };
-            return ordinalNumber.ordinalNumber(arg0, obj);
-          } else if ("iii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.day(arg0, { width: "short", context: "formatting" }) || ordinalNumber.day(arg0, { width: "narrow", context: "formatting" }), valueCallback);
-          } else if ("iiiii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { width: "narrow", context: "formatting" }), valueCallback);
-          } else if ("iiiiii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { width: "short", context: "formatting" }) || ordinalNumber.day(arg0, { width: "narrow", context: "formatting" }), valueCallback);
+            return callback(StandAloneLocalDayParser[1]).mapValue(ordinalNumber.ordinalNumber(arg0, obj), valueCallback);
+          } else if ("ccc" === arg1) {
+            return ordinalNumber.day(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.day(arg0, { width: "short", context: "standalone" }) || ordinalNumber.day(arg0, { width: "narrow", context: "standalone" });
+          } else if ("ccccc" === arg1) {
+            return ordinalNumber.day(arg0, { width: "narrow", context: "standalone" });
+          } else if ("cccccc" === arg1) {
+            return ordinalNumber.day(arg0, { width: "short", context: "standalone" }) || ordinalNumber.day(arg0, { width: "narrow", context: "standalone" });
           } else {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { width: "wide", context: "formatting" }) || ordinalNumber.day(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.day(arg0, { width: "short", context: "formatting" }) || ordinalNumber.day(arg0, { width: "narrow", context: "formatting" }), valueCallback);
+            return ordinalNumber.day(arg0, { width: "wide", context: "standalone" }) || ordinalNumber.day(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.day(arg0, { width: "short", context: "standalone" }) || ordinalNumber.day(arg0, { width: "narrow", context: "standalone" });
           }
         }
       }
-      return callback(ISODayParser[1]).parseNDigits(arg1.length, arg0);
+      return callback(StandAloneLocalDayParser[1]).mapValue(callback(StandAloneLocalDayParser[1]).parseNDigits(arg1.length, arg0), valueCallback);
     }
   };
   let items = [obj, , ];
   obj = {
     key: "validate",
     value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 1;
+      let tmp = arg1 >= 0;
       if (tmp) {
-        tmp = arg1 <= 7;
+        tmp = arg1 <= 6;
       }
       return tmp;
     }
@@ -324,12 +321,12 @@ export const ISODayParser = ((Parser) => {
   items[1] = obj;
   items[2] = {
     key: "set",
-    value: function set(defaultResult1, arg1, defaultResult2) {
-      const defaultResult = outer1_2.default(defaultResult1, defaultResult2);
+    value: function set(defaultResult1, arg1, defaultResult2, date) {
+      const defaultResult = outer1_2.default(defaultResult1, defaultResult2, date);
       defaultResult.setUTCHours(0, 0, 0, 0);
       return defaultResult;
     }
   };
-  _defineProperties(ISODayParser.prototype, items);
-  return ISODayParser;
+  _defineProperties(StandAloneLocalDayParser.prototype, items);
+  return StandAloneLocalDayParser;
 })(require("_defineProperties").Parser);

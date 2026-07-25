@@ -1,14 +1,14 @@
-// Module ID: 16210
-// Function ID: 125688
+// Module ID: 16221
+// Function ID: 125856
 // Name: showNotification
-// Dependencies: [653, 14399, 1392, 1212, 16211, 4140, 2]
+// Dependencies: [653, 14410, 1392, 1212, 16222, 4141, 2]
 // Exports: showAcceptedNotification, showPendingNotification
 
-// Module 16210 (showNotification)
+// Module 16221 (showNotification)
 import { FriendsSections } from "ME";
 
 function showNotification(id, arg1, onClick) {
-  let obj = importDefault(14399);
+  let obj = importDefault(14410);
   obj = { omitViewTracking: true, omitClickTracking: true, tag: id.id, onClick, isUserAvatar: true };
   obj.showNotification(importDefault(1392).getUserAvatarURL(id), id.username, arg1, {}, obj);
 }

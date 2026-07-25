@@ -1,9 +1,9 @@
-// Module ID: 9164
-// Function ID: 71684
+// Module ID: 9056
+// Function ID: 71169
 // Name: DEFAULT_BADGE_SIZE
-// Dependencies: [31, 27, 33, 4130, 689, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 2]
 
-// Module 9164 (DEFAULT_BADGE_SIZE)
+// Module 9056 (DEFAULT_BADGE_SIZE)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

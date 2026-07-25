@@ -1,10 +1,10 @@
-// Module ID: 15507
-// Function ID: 119318
+// Module ID: 15517
+// Function ID: 119446
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [31, 27, 33, 4130, 689, 11749, 4126, 1212, 11736, 4543, 11732, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 11719, 4127, 1212, 11706, 4544, 11702, 2]
 // Exports: default
 
-// Module 15507 (AddFriendsContactSyncEmptyState)
+// Module 15517 (AddFriendsContactSyncEmptyState)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,18 +35,18 @@ const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/na
 export default function AddFriendsContactSyncEmptyState() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.content };
-  obj = { resizeMode: "contain", style: tmp.headerImage, source: importDefault(11749) };
+  obj = { resizeMode: "contain", style: tmp.headerImage, source: importDefault(11719) };
   const items = [callback(closure_4, obj), , , ];
   obj = { style: tmp.title, variant: "heading-lg/bold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["/G+nci"]);
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   const obj1 = { style: tmp.subtitle };
   const obj2 = { style: tmp.subtitleText, variant: "text-sm/medium" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  const obj3 = { learnMoreHook: require(11736) /* isContactSyncAvailable */.handleOpenLearnMoreLink };
+  const obj3 = { learnMoreHook: require(11706) /* isContactSyncAvailable */.handleOpenLearnMoreLink };
   obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.OXdOPf, obj3);
-  obj1.children = callback(require(4126) /* Text */.Text, obj2);
+  obj1.children = callback(require(4127) /* Text */.Text, obj2);
   items[2] = callback(closure_3, obj1);
   const obj4 = { style: tmp.trailing };
   const obj5 = { variant: "primary", size: "lg" };
@@ -55,7 +55,7 @@ export default function AddFriendsContactSyncEmptyState() {
   obj5.onPress = function onPress() {
     outer1_0(outer1_2[10]).openContactSyncModal({}, "Add Friends Contact Sync Empty State");
   };
-  obj4.children = callback(require(4543) /* Button */.Button, obj5);
+  obj4.children = callback(require(4544) /* Button */.Button, obj5);
   items[3] = callback(closure_3, obj4);
   obj.children = items;
   return callback2(closure_3, obj);

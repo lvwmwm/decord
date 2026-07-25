@@ -1,10 +1,10 @@
-// Module ID: 7190
-// Function ID: 57916
+// Module ID: 7588
+// Function ID: 60748
 // Name: hasTrailingError
-// Dependencies: [31, 27, 1277, 33, 4130, 689, 5164, 5158, 7191, 5501, 7192, 477, 2]
+// Dependencies: [31, 27, 1277, 33, 4131, 689, 5163, 5157, 7582, 5501, 7589, 477, 2]
 // Exports: default
 
-// Module 7190 (hasTrailingError)
+// Module 7588 (hasTrailingError)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { TitleStyleType } from "semanticColor";
@@ -20,7 +20,7 @@ const require = arg1;
 function hasTrailingError(found) {
   const element = found[found.length - 1];
   if (React.isValidElement(element)) {
-    if (element.type !== importDefault(7191)) {
+    if (element.type !== importDefault(7582)) {
       if (null != element.props) {
         const props = element.props;
         return "error" in props && null != props.error;
@@ -72,7 +72,7 @@ export default function FormSection(arg0) {
   ({ error, hint, hasIcons } = arg0);
   ({ titleViewStyle, titleTextStyle, sectionBodyStyle, wrapperStyle } = arg0);
   let tmp2 = _createForOfIteratorHelperLoose();
-  if (React.useContext(require(5164) /* context */.RedesignCompatContext)) {
+  if (React.useContext(require(5163) /* context */.RedesignCompatContext)) {
     const Children = React.Children;
     const toArrayResult = Children.toArray(children);
     let tmp23 = null != toArrayResult.find((type) => {
@@ -136,8 +136,8 @@ export default function FormSection(arg0) {
       obj.thinTitle = thinTitle;
       obj.uppercaseTitle = uppercaseTitle;
       obj.inset = inset;
-      tmp4 = callback(importDefault(7192), obj);
-      const tmp9 = importDefault(7192);
+      tmp4 = callback(importDefault(7589), obj);
+      const tmp9 = importDefault(7589);
     }
     const emptySectionHeader = tmp2.emptySectionHeader;
     let titledSectionNoBorderOrMargin = emptySectionHeader;

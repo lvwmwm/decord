@@ -1,9 +1,9 @@
-// Module ID: 10440
-// Function ID: 80393
+// Module ID: 10374
+// Function ID: 80062
 // Name: SafetyWarningBanner
-// Dependencies: [31, 27, 33, 4130, 689, 6836, 6841, 10163, 1212, 1273, 10441, 10442, 4126, 4543, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5839, 5844, 10095, 1212, 1273, 10375, 10376, 4127, 4544, 2]
 
-// Module 10440 (SafetyWarningBanner)
+// Module 10374 (SafetyWarningBanner)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

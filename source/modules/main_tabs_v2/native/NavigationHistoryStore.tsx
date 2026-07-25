@@ -1,10 +1,10 @@
-// Module ID: 5722
-// Function ID: 49181
+// Module ID: 10192
+// Function ID: 78857
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 3982, 3981, 3984, 2]
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 3983, 3982, 3985, 2]
 // Exports: getIdFromHistoryItem, getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 5722 (_createForOfIteratorHelperLoose)
+// Module 10192 (_createForOfIteratorHelperLoose)
 import dispatcher from "dispatcher";
 import getRootNavigationRef from "getRootNavigationRef";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -213,14 +213,14 @@ export const getIdFromHistoryItem = function getIdFromHistoryItem(str) {
   return str.replace(regExp, "");
 };
 export const handleHistoryStoreNavigationChange = function handleHistoryStoreNavigationChange() {
-  const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     const currentRoute = rootNavigationRef.getCurrentRoute();
     if (null != currentRoute) {
       if (null != currentRoute.params) {
-        const coerceChannelRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceChannelRoute(currentRoute);
+        const coerceChannelRouteResult = require(3982) /* _createForOfIteratorHelperLoose */.coerceChannelRoute(currentRoute);
         if (null == coerceChannelRouteResult) {
-          const coerceGuildsRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(currentRoute);
+          const coerceGuildsRouteResult = require(3982) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(currentRoute);
           if (null != coerceGuildsRouteResult) {
             if (obj5.getChatLayout().isChatLockedOpen) {
               const params = coerceGuildsRouteResult.params;
@@ -242,14 +242,14 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
               const _HermesInternal2 = HermesInternal;
               cleanDuplicatesAndAppend("" + "guild-" + guildId);
             }
-            obj5 = require(3984) /* useChatLayout */;
+            obj5 = require(3985) /* useChatLayout */;
           }
-          const obj3 = require(3981) /* _createForOfIteratorHelperLoose */;
+          const obj3 = require(3982) /* _createForOfIteratorHelperLoose */;
         } else {
           const _HermesInternal = HermesInternal;
           cleanDuplicatesAndAppend("" + "channel-" + coerceChannelRouteResult.params.channelId);
         }
-        const obj4 = require(3981) /* _createForOfIteratorHelperLoose */;
+        const obj4 = require(3982) /* _createForOfIteratorHelperLoose */;
       }
     }
   }

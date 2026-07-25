@@ -1,10 +1,10 @@
-// Module ID: 8569
-// Function ID: 68192
+// Module ID: 8329
+// Function ID: 66846
 // Name: CheckmarkSmallBoldIcon
-// Dependencies: [31, 33, 689, 3833, 5504, 2]
+// Dependencies: [31, 33, 689, 3834, 5504, 2]
 // Exports: CheckmarkSmallBoldIcon
 
-// Module 8569 (CheckmarkSmallBoldIcon)
+// Module 8329 (CheckmarkSmallBoldIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -22,5 +22,5 @@ export const CheckmarkSmallBoldIcon = function CheckmarkSmallBoldIcon(color) {
   const merged = Object.assign(color, obj);
   obj = { source: require(5504) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(5504) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(5504) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

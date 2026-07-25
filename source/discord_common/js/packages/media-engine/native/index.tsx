@@ -1,9 +1,9 @@
-// Module ID: 4228
-// Function ID: 36902
+// Module ID: 4229
+// Function ID: 36913
 // Name: _isNativeReflectConstruct
-// Dependencies: [153, 57, 5, 6, 7, 15, 17, 18, 4191, 4229, 4230, 4233, 4, 4227, 4234, 4179, 4235, 646, 4237, 4297, 2]
+// Dependencies: [153, 57, 5, 6, 7, 15, 17, 18, 4192, 4230, 4231, 4234, 4, 4228, 4235, 4180, 4236, 646, 4238, 4298, 2]
 
-// Module 4228 (_isNativeReflectConstruct)
+// Module 4229 (_isNativeReflectConstruct)
 import "_readOnlyError";
 import _slicedToArray from "_slicedToArray";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

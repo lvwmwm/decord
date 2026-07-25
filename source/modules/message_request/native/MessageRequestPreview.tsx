@@ -1,8 +1,8 @@
-// Module ID: 15609
-// Function ID: 120345
-// Dependencies: [31, 27, 3767, 653, 33, 4130, 5052, 689, 11655, 566, 675, 1212, 7870, 4466, 1273, 2]
+// Module ID: 15619
+// Function ID: 120473
+// Dependencies: [31, 27, 3768, 653, 33, 4131, 5053, 689, 11624, 566, 675, 1212, 7817, 4467, 1273, 2]
 
-// Module 15609
+// Module 15619
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   let loaded;
   channel = channel.channel;
   const tmp = callback();
-  let obj = channel(11655);
+  let obj = channel(11624);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7870)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(7817)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -127,7 +127,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
         }
         stringResult = stringResult1;
         flag = false;
-        obj3 = channel(4466);
+        obj3 = channel(4467);
       } else {
         const intl = channel(1212).intl;
         stringResult = intl.string(channel(1212).t["0KfDxM"]);

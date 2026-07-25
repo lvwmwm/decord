@@ -1,9 +1,9 @@
-// Module ID: 7574
-// Function ID: 60373
+// Module ID: 6670
+// Function ID: 58963
 // Name: TextInput
-// Dependencies: [31, 33, 7575, 5773, 477, 2]
+// Dependencies: [31, 33, 6671, 6676, 477, 2]
 
-// Module 7574 (TextInput)
+// Module 6670 (TextInput)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 
@@ -47,8 +47,8 @@ const forwardRefResult = importAllResult.forwardRef((errorMessage, ref) => {
     tmp9 = id;
   }
   obj["accessibilityLabelledBy"] = tmp9;
-  obj["children"] = jsx(require(5773) /* TextField */.TextField, { ref });
-  return jsx(require(7575) /* Input */.Input, { ref });
+  obj["children"] = jsx(require(6676) /* TextField */.TextField, { ref });
+  return jsx(require(6671) /* Input */.Input, { ref });
 });
 const result = require("Input").fileFinishedImporting("design/components/TextInput/native/TextInput.native.tsx");
 

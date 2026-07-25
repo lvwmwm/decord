@@ -1,10 +1,10 @@
-// Module ID: 3972
-// Function ID: 32893
+// Module ID: 3973
+// Function ID: 32904
 // Name: setSystemTheme
 // Dependencies: [1280, 1281, 686, 1315, 2]
 // Exports: clearSyncedClientThemes, clearThemeOverride, refreshTheme, setSameAsDeviceThemeEnabled, setSystemThemeIfNeeded, setThemeOverride, setUseSystemTheme, updateSyncedClientTheme, updateThemePreferences
 
-// Module 3972 (setSystemTheme)
+// Module 3973 (setSystemTheme)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SystemThemeState } from "SystemThemeState";
 

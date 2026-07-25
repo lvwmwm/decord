@@ -1,9 +1,9 @@
-// Module ID: 1857
-// Function ID: 20447
+// Module ID: 1858
+// Function ID: 20458
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1858, 653, 1851, 1859, 1860, 1864, 1865, 1870, 1871, 483, 21, 1392, 1360, 1872, 1867, 1828, 1873, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1859, 653, 1852, 1860, 1861, 1865, 1866, 1871, 1872, 483, 21, 1392, 1360, 1873, 1868, 1828, 1874, 2]
 
-// Module 1857 (_isNativeReflectConstruct)
+// Module 1858 (_isNativeReflectConstruct)
 import closure_4 from "ME";
 import closure_5 from "GuildFeatures";
 import DISCORD_EPOCH from "DISCORD_EPOCH";

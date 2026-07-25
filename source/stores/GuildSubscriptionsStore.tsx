@@ -1,9 +1,9 @@
-// Module ID: 5657
-// Function ID: 48427
+// Module ID: 6002
+// Function ID: 53435
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 4044, 3759, 4811, 1194, 5658, 5659, 1348, 4469, 1917, 1838, 4202, 3767, 1906, 3947, 653, 5662, 686, 22, 5077, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 4045, 3760, 4812, 1194, 6003, 5846, 1348, 4470, 1918, 1838, 4203, 3768, 1907, 3948, 653, 6004, 686, 22, 1841, 566, 2]
 
-// Module 5657 (_isNativeReflectConstruct)
+// Module 6002 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -29,7 +29,6 @@ import importDefaultResult from "validateGuildId";
 
 let ChannelSections;
 let closure_24;
-let closure_25;
 const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -144,9 +143,9 @@ function prune(arg0, arg1) {
       tmp = tmp9;
     }
     if (!tmp) {
-      outer1_26.clearWithoutFlushing(arg0, closure_0);
+      outer1_25.clearWithoutFlushing(arg0, closure_0);
       if (closure_1) {
-        obj[arg0] = outer1_26.get(arg0);
+        obj[arg0] = outer1_25.get(arg0);
       }
     }
   });
@@ -192,14 +191,14 @@ function handleConnectionOpenOrResumed(type) {
   dependencyMap = closure_11.mostRecentLurkedGuildId();
   const item = importDefaultResult.forEach((guildId) => {
     if (null == outer1_19.getGuild(guildId)) {
-      outer1_26.clearWithoutFlushing(guildId, true);
+      outer1_25.clearWithoutFlushing(guildId, true);
     } else {
       let hasItem = set.has(guildId);
       if (hasItem) {
         hasItem = guildId !== closure_2;
       }
       if (!hasItem) {
-        obj[guildId] = outer1_26.get(guildId);
+        obj[guildId] = outer1_25.get(guildId);
       }
     }
   });
@@ -253,7 +252,7 @@ function handleSpotifyUpdate() {
   }
   return false;
 }
-({ ChannelSections, ChannelTypes: closure_24, FAVORITES: closure_25 } = ME);
+({ ChannelSections, ChannelTypes: closure_24 } = ME);
 importDefaultResult = new importDefaultResult((subscriptions) => {
   for (const key10004 in arg0) {
     let tmp6 = key10004;
@@ -282,7 +281,7 @@ let tmp5 = ((Store) => {
       tmp = outer1_4(this, GuildSubscriptionsStore);
       obj = outer1_7(GuildSubscriptionsStore);
       tmp2 = outer1_6;
-      if (outer1_27()) {
+      if (outer1_26()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
         tmp7 = outer1_7;
@@ -302,42 +301,42 @@ let tmp5 = ((Store) => {
     value() {
       this.waitFor(outer1_13, outer1_15, outer1_16, outer1_10, outer1_17, outer1_18, outer1_19, outer1_11, outer1_20, outer1_21, outer1_22, outer1_23, outer1_12);
       const items = [outer1_12];
-      this.syncWith(items, outer1_33);
+      this.syncWith(items, outer1_32);
       const items1 = [outer1_15];
-      this.syncWith(items1, outer1_32);
+      this.syncWith(items1, outer1_31);
     }
   };
   let items = [obj, , , , , ];
   obj = {
     key: "getSubscribedThreadIds",
     value() {
-      return outer1_26.getSubscribedThreadIds();
+      return outer1_25.getSubscribedThreadIds();
     }
   };
   items[1] = obj;
   obj = {
     key: "isSubscribedToThreads",
     value(arg0) {
-      return outer1_26.isSubscribedToThreads(arg0);
+      return outer1_25.isSubscribedToThreads(arg0);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "isSubscribedToAnyMember",
     value(arg0) {
-      return outer1_26.isSubscribedToAnyMember(arg0);
+      return outer1_25.isSubscribedToAnyMember(arg0);
     }
   };
   items[4] = {
     key: "isSubscribedToMemberUpdates",
     value(arg0) {
-      return outer1_26.isSubscribedToMemberUpdates(arg0);
+      return outer1_25.isSubscribedToMemberUpdates(arg0);
     }
   };
   items[5] = {
     key: "isSubscribedToAnyGuildChannel",
     value(arg0) {
-      const channels = outer1_26.get(arg0).channels;
+      const channels = outer1_25.get(arg0).channels;
       let tmp = null != channels;
       if (tmp) {
         const _Object = Object;
@@ -381,7 +380,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     ({ guildId: require, userIds } = arg0);
     const item = userIds.forEach((arg0) => {
       if (arg0 !== outer1_13.getId()) {
-        outer1_26.subscribeUser(closure_0, arg0);
+        outer1_25.subscribeUser(closure_0, arg0);
       }
     });
     return false;
@@ -391,7 +390,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     let userIds;
     ({ guildId: require, userIds } = arg0);
     const item = userIds.forEach((arg0) => {
-      outer1_26.unsubscribeUser(closure_0, arg0);
+      outer1_25.unsubscribeUser(closure_0, arg0);
     });
     return false;
   },
@@ -413,11 +412,12 @@ tmp5 = new tmp5(require("dispatcher"), {
       flag = false;
       if (null != parent_id) {
         guildId = parent_id.getGuildId();
-        let tmp2 = guildId !== guildId;
-        if (tmp2) {
-          tmp2 = guildId === closure_25;
+        let isFavoritesGuildIdResult = guildId !== guildId;
+        if (isFavoritesGuildIdResult) {
+          isFavoritesGuildIdResult = require(1841) /* isFavoritesGuildId */.isFavoritesGuildId(guildId);
+          const obj = require(1841) /* isFavoritesGuildId */;
         }
-        if (tmp2) {
+        if (isFavoritesGuildIdResult) {
           importDefaultResult.subscribeToGuild(guildId);
         }
         if (null != parent_id) {
@@ -426,9 +426,9 @@ tmp5 = new tmp5(require("dispatcher"), {
               parent_id = parent_id.parent_id;
               let subscribeChannelResult = importDefaultResult.subscribeChannel(guildId, parent_id, ranges);
             } else {
-              const tmp8 = !parent_id.isActiveThread();
-              subscribeChannelResult = !tmp8;
-              if (!tmp8) {
+              const tmp9 = !parent_id.isActiveThread();
+              subscribeChannelResult = !tmp9;
+              if (!tmp9) {
                 subscribeChannelResult = importDefaultResult.subscribeThreadMemberList(guildId, channelId, store2.getChannelId());
               }
             }

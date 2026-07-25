@@ -1,10 +1,10 @@
-// Module ID: 9518
-// Function ID: 74070
+// Module ID: 9439
+// Function ID: 73657
 // Name: isNewMessageGroup
-// Dependencies: [653, 664, 5651, 21, 3800, 2]
+// Dependencies: [653, 664, 5870, 21, 3801, 2]
 // Exports: isNewGroupItem
 
-// Module 9518 (isNewMessageGroup)
+// Module 9439 (isNewMessageGroup)
 import ME from "ME";
 
 let closure_3;
@@ -18,14 +18,14 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
     if (content.blocked !== type.blocked || content.ignored !== type.ignored) {
       tmp2 = tmp3;
     } else if (type.type > constants.DEFAULT) {
-      let tmp35 = !importDefault(5651)(content);
+      let tmp35 = !importDefault(5870)(content);
       if (!tmp35) {
         type = type.type;
         tmp35 = type === constants.REPLY;
       }
       let tmp32 = tmp35;
     } else {
-      const tmp40 = !importDefault(5651)(content);
+      const tmp40 = !importDefault(5870)(content);
       tmp32 = !tmp40;
       if (tmp40) {
         let tmp5 = content.author.id !== type.author.id;
@@ -41,9 +41,9 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
               }
               let tmp15 = !tmp12;
               if (tmp12) {
-                let tmp18 = !require(3800) /* resetCache */.isSameDay(content.timestamp, type.timestamp);
+                let tmp18 = !require(3801) /* resetCache */.isSameDay(content.timestamp, type.timestamp);
                 if (!tmp18) {
-                  let tmp22 = !require(3800) /* resetCache */.isWithinInterval(content.timestamp, type.timestamp, closure_6);
+                  let tmp22 = !require(3801) /* resetCache */.isWithinInterval(content.timestamp, type.timestamp, closure_6);
                   if (!tmp22) {
                     let hasFlagResult1 = !type.hasFlag(constants3.SUPPRESS_NOTIFICATIONS);
                     if (!hasFlagResult1) {
@@ -65,10 +65,10 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
                     tmp22 = tmp26;
                   }
                   tmp18 = tmp22;
-                  const obj3 = require(3800) /* resetCache */;
+                  const obj3 = require(3801) /* resetCache */;
                 }
                 tmp15 = tmp18;
-                const obj2 = require(3800) /* resetCache */;
+                const obj2 = require(3801) /* resetCache */;
               }
               tmp11 = tmp15;
             }

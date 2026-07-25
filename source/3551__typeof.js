@@ -1,7 +1,7 @@
 // Module ID: 3551
-// Function ID: 27643
+// Function ID: 27635
 // Name: _typeof
-// Dependencies: [3517, 3515]
+// Dependencies: [3518, 3516]
 
 // Module 3551 (_typeof)
 function _typeof(arg0) {
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const TimestampMillisecondsParser = ((Parser) => {
-  class TimestampMillisecondsParser {
+export const TimestampSecondsParser = ((Parser) => {
+  class TimestampSecondsParser {
     constructor() {
-      if (this instanceof TimestampMillisecondsParser) {
+      if (this instanceof TimestampSecondsParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -158,8 +158,8 @@ export const TimestampMillisecondsParser = ((Parser) => {
         applyResult = call.apply(TypeError, items.concat(array));
         tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 20;
-        tmp17 = outer1_8(applyResult, "priority", 20);
+        num2 = 40;
+        tmp17 = outer1_8(applyResult, "priority", 40);
         tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
         str4 = "*";
@@ -178,9 +178,9 @@ export const TimestampMillisecondsParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class TimestampMillisecondsParser {
+    class TimestampSecondsParser {
       constructor() {
-        if (this instanceof TimestampMillisecondsParser) {
+        if (this instanceof TimestampSecondsParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -202,8 +202,8 @@ export const TimestampMillisecondsParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 20;
-          tmp17 = outer1_8(applyResult, "priority", 20);
+          num2 = 40;
+          tmp17 = outer1_8(applyResult, "priority", 40);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
           str4 = "*";
@@ -226,12 +226,12 @@ export const TimestampMillisecondsParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: TimestampMillisecondsParser, writable: true, configurable: true };
-  TimestampMillisecondsParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: TimestampSecondsParser, writable: true, configurable: true };
+  TimestampSecondsParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class TimestampMillisecondsParser {
+    class TimestampSecondsParser {
       constructor() {
-        if (this instanceof TimestampMillisecondsParser) {
+        if (this instanceof TimestampSecondsParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -253,8 +253,8 @@ export const TimestampMillisecondsParser = ((Parser) => {
           applyResult = call.apply(TypeError, items.concat(array));
           tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 20;
-          tmp17 = outer1_8(applyResult, "priority", 20);
+          num2 = 40;
+          tmp17 = outer1_8(applyResult, "priority", 40);
           tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
           str4 = "*";
@@ -272,24 +272,24 @@ export const TimestampMillisecondsParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(TimestampMillisecondsParser, Parser);
+    _setPrototypeOf(TimestampSecondsParser, Parser);
   }
-  let closure_0 = _createSuper(TimestampMillisecondsParser);
+  let closure_0 = _createSuper(TimestampSecondsParser);
   obj = {
     key: "parse",
     value: function parse(arg0) {
-      return callback(TimestampMillisecondsParser[0]).parseAnyDigitsSigned(arg0);
+      return callback(TimestampSecondsParser[0]).parseAnyDigitsSigned(arg0);
     }
   };
   let items = [obj, ];
   obj = {
     key: "set",
     value: function set(arg0, arg1, arg2) {
-      const items = [new Date(arg2), { timestampIsSet: true }];
+      const items = [new Date(1000 * arg2), { timestampIsSet: true }];
       return items;
     }
   };
   items[1] = obj;
-  _defineProperties(TimestampMillisecondsParser.prototype, items);
-  return TimestampMillisecondsParser;
+  _defineProperties(TimestampSecondsParser.prototype, items);
+  return TimestampSecondsParser;
 })(require("_defineProperties").Parser);

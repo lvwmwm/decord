@@ -1,10 +1,10 @@
-// Module ID: 8310
-// Function ID: 65405
+// Module ID: 8045
+// Function ID: 63960
 // Name: UserProfileAnalyticsProvider
-// Dependencies: [31, 33, 5462, 8311, 491, 2]
+// Dependencies: [31, 33, 5462, 8046, 491, 2]
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext
 
-// Module 8310 (UserProfileAnalyticsProvider)
+// Module 8045 (UserProfileAnalyticsProvider)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 

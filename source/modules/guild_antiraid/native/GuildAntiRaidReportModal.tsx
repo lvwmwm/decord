@@ -1,10 +1,10 @@
-// Module ID: 13023
-// Function ID: 100725
+// Module ID: 13034
+// Function ID: 100852
 // Name: ReportModal
-// Dependencies: [57, 31, 27, 13024, 33, 4130, 689, 1557, 4126, 3827, 1212, 5501, 9132, 4543, 5087, 11003, 5517, 2]
+// Dependencies: [57, 31, 27, 13035, 33, 4131, 689, 1557, 4127, 3828, 1212, 5501, 9024, 4544, 5087, 10958, 5517, 2]
 // Exports: default
 
-// Module 13023 (ReportModal)
+// Module 13034 (ReportModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -36,7 +36,7 @@ function ReportModal(onSubmit) {
   obj = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.Hg8Ee7, { onClick: callback });
-  const items1 = [callback2(require(4126) /* Text */.Text, obj), , ];
+  const items1 = [callback2(require(4127) /* Text */.Text, obj), , ];
   obj = { style: tmp.formBody };
   const obj1 = {
     hasIcons: false,
@@ -62,7 +62,7 @@ function ReportModal(onSubmit) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.text = intl2.string(require(1212) /* getSystemLocale */.t.geKm7t);
   obj4.onPress = onSubmit.onSubmit;
-  obj2.children = callback2(require(4543) /* Button */.Button, obj4);
+  obj2.children = callback2(require(4544) /* Button */.Button, obj4);
   items1[2] = callback2(View, obj2);
   obj.children = items1;
   return callback3(View, obj);

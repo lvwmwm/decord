@@ -1,10 +1,10 @@
-// Module ID: 13772
-// Function ID: 105571
+// Module ID: 13783
+// Function ID: 105698
 // Name: AgeConfirmationNotice
-// Dependencies: [31, 27, 7563, 33, 5678, 13702, 3827, 1920, 7581, 7583, 689, 1273, 4543, 1212, 4126, 2]
+// Dependencies: [31, 27, 6659, 33, 5855, 13713, 3828, 1921, 6690, 6692, 689, 1273, 4544, 1212, 4127, 2]
 // Exports: default
 
-// Module 13772 (AgeConfirmationNotice)
+// Module 13783 (AgeConfirmationNotice)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import SafetyToastType from "SafetyToastType";
@@ -17,7 +17,7 @@ const require = arg1;
 let result = require("SafetyToastType").fileFinishedImporting("modules/user_settings/content_and_social/native/AgeConfirmationNotice.tsx");
 
 export default function AgeConfirmationNotice() {
-  let obj = sensitiveContentFilterHelpArticle(5678);
+  let obj = sensitiveContentFilterHelpArticle(5855);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = React.useEffect(() => {
     const result = sensitiveContentFilterHelpArticle(outer1_2[5]).trackSafetySettingsNoticeAnalytics(outer1_6.AGE_CONFIRMATION_NOTICE, outer1_5.VIEWED);
@@ -44,7 +44,7 @@ export default function AgeConfirmationNotice() {
   const intl = sensitiveContentFilterHelpArticle(1212).intl;
   obj2.text = intl.string(sensitiveContentFilterHelpArticle(1212).t.FDSSia);
   obj2.onPress = callback;
-  obj1.button = jsx(sensitiveContentFilterHelpArticle(4543).Button, { variant: "secondary", size: "sm" });
+  obj1.button = jsx(sensitiveContentFilterHelpArticle(4544).Button, { variant: "secondary", size: "sm" });
   const intl2 = sensitiveContentFilterHelpArticle(1212).intl;
   obj1.children = intl2.format(sensitiveContentFilterHelpArticle(1212).t.mFgsfg, {
     hook(children) {

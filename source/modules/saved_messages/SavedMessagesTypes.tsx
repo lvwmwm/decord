@@ -1,10 +1,10 @@
-// Module ID: 9569
-// Function ID: 74477
+// Module ID: 9490
+// Function ID: 74064
 // Name: savedMessageDataToClient
-// Dependencies: [4351, 2]
+// Dependencies: [4352, 2]
 // Exports: savedMessageCreateObjectToClient, savedMessageDeleteObjectToClient
 
-// Module 9569 (savedMessageDataToClient)
+// Module 9490 (savedMessageDataToClient)
 function savedMessageDataToClient(save_data) {
   const obj = { channelId: save_data.channel_id, messageId: save_data.message_id, savedAt: new Date(save_data.saved_at) };
   ({ author_summary: obj.authorSummary, channel_summary: obj.channelSummary, message_summary: obj.messageSummary } = save_data);
@@ -35,8 +35,8 @@ export const savedMessageCreateObjectToClient = function savedMessageCreateObjec
   const obj = {};
   let messageRecord = null;
   if (null != body.message) {
-    messageRecord = require(4351) /* createMinimalMessageRecord */.createMessageRecord(body.message);
-    const obj2 = require(4351) /* createMinimalMessageRecord */;
+    messageRecord = require(4352) /* createMinimalMessageRecord */.createMessageRecord(body.message);
+    const obj2 = require(4352) /* createMinimalMessageRecord */;
   }
   obj.message = messageRecord;
   obj.saveData = savedMessageDataToClient(body.save_data);

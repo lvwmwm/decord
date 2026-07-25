@@ -1,9 +1,9 @@
-// Module ID: 6794
-// Function ID: 53677
+// Module ID: 5790
+// Function ID: 50951
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1858, 6784, 665, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1859, 5780, 665, 2]
 
-// Module 6794 (_isNativeReflectConstruct)
+// Module 5790 (_isNativeReflectConstruct)
 import tinycolor from "tinycolor";
 import pad2 from "pad2";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

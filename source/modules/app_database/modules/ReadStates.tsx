@@ -1,9 +1,9 @@
-// Module ID: 6722
-// Function ID: 52275
+// Module ID: 5718
+// Function ID: 49588
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 1348, 4142, 3, 1882, 22, 21, 2]
+// Dependencies: [5, 6, 7, 1348, 4143, 3, 1883, 22, 21, 2]
 
-// Module 6722 (_createForOfIteratorHelperLoose)
+// Module 5718 (_createForOfIteratorHelperLoose)
 import timestamp from "timestamp";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import apply from "apply";

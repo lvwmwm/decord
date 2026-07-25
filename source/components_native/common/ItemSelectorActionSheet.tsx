@@ -1,10 +1,10 @@
-// Module ID: 8426
-// Function ID: 66988
+// Module ID: 8184
+// Function ID: 65639
 // Name: ItemSelectorActionSheet
-// Dependencies: [31, 33, 3834, 689, 1557, 5187, 5186, 5499, 5189, 7654, 7653, 2]
+// Dependencies: [31, 33, 3835, 689, 1557, 5187, 5186, 5499, 5189, 7596, 7595, 2]
 // Exports: default
 
-// Module 8426 (ItemSelectorActionSheet)
+// Module 8184 (ItemSelectorActionSheet)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -25,7 +25,7 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(3834);
+  let obj = items(3835);
   const token = obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_PADDING);
   const findIndexResult = items.findIndex((value) => value.value === closure_1);
   obj = { scrollable: true };
@@ -55,7 +55,7 @@ export default function ItemSelectorActionSheet(arg0) {
     }
   };
   obj4.children = items.map((label, value) => outer1_3(items(outer1_2[10]).TableRadioRow, { label: label.label, value }, value));
-  items[1] = callback(items(7654).TableRadioGroup, obj4);
+  items[1] = callback(items(7596).TableRadioGroup, obj4);
   obj2.children = items;
   obj.children = closure_4(items(5189).BottomSheetScrollView, obj2);
   return callback(items(5187).BottomSheet, obj);

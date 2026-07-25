@@ -1,8 +1,8 @@
-// Module ID: 14035
-// Function ID: 107390
-// Dependencies: [31, 27, 4122, 33, 566, 8346, 4554, 2]
+// Module ID: 14046
+// Function ID: 107517
+// Dependencies: [31, 27, 4123, 33, 566, 8080, 4555, 2]
 
-// Module 14035
+// Module 14046
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ const memoResult = require("result").memo(function BountiesBannerBackground(arg0
   obj = { style };
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
   obj = { source: { uri }, style: closure_3.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
-  const items1 = [callback(require(8346) /* _isNativeReflectConstruct */.VideoComponent, obj), callback(importDefault(4554), { colors: closure_9, locations: closure_8, style: closure_3.absoluteFillObject }), children];
+  const items1 = [callback(require(8080) /* _isNativeReflectConstruct */.VideoComponent, obj), callback(importDefault(4555), { colors: closure_9, locations: closure_8, style: closure_3.absoluteFillObject }), children];
   obj.children = items1;
   return callback2(closure_4, obj);
 });

@@ -1,10 +1,10 @@
-// Module ID: 7860
-// Function ID: 62002
+// Module ID: 7807
+// Function ID: 61974
 // Name: useChangelog
-// Dependencies: [31, 1921, 4141, 1905, 624, 7861, 2]
+// Dependencies: [31, 1922, 4142, 1906, 624, 7808, 2]
 // Exports: useCurrentChangelog
 
-// Module 7860 (useChangelog)
+// Module 7807 (useChangelog)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

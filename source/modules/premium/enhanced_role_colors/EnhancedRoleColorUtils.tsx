@@ -1,10 +1,10 @@
-// Module ID: 1913
-// Function ID: 21581
+// Module ID: 1914
+// Function ID: 21592
 // Name: extractColorStringsFromServerColors
 // Dependencies: [653, 665, 2]
 // Exports: extractColorStringsFromServerColors, getAuthorHasGradientRole, getIsDefaultErc
 
-// Module 1913 (extractColorStringsFromServerColors)
+// Module 1914 (extractColorStringsFromServerColors)
 import { DEFAULT_ROLE_COLOR_HEX } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/premium/enhanced_role_colors/EnhancedRoleColorUtils.tsx");

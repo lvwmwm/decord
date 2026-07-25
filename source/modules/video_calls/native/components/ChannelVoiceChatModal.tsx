@@ -1,10 +1,10 @@
-// Module ID: 10238
-// Function ID: 78980
+// Module ID: 10171
+// Function ID: 78615
 // Name: ChannelVoiceChatModal
-// Dependencies: [31, 33, 4320, 4323, 9148, 4654, 4011, 10239, 2]
+// Dependencies: [31, 33, 4321, 4324, 9040, 4655, 4012, 10172, 2]
 // Exports: default
 
-// Module 10238 (ChannelVoiceChatModal)
+// Module 10171 (ChannelVoiceChatModal)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -13,7 +13,7 @@ const result = require("computeDefaultGroupDmNameFromUserIds").fileFinishedImpor
 
 export default function ChannelVoiceChatModal(channel) {
   channel = channel.channel;
-  const tmp = importDefault(4320)(channel);
+  const tmp = importDefault(4321)(channel);
   const items = [channel.id];
   const effect = React.useEffect(() => {
     outer1_1(outer1_2[3]).updateChatOpen(channel.id, true);
@@ -27,7 +27,7 @@ export default function ChannelVoiceChatModal(channel) {
     str = tmp;
   }
   obj.title = str;
-  obj.titleIcon = jsx(channel(4654).StageIcon, { size: "sm" });
+  obj.titleIcon = jsx(channel(4655).StageIcon, { size: "sm" });
   obj.render = function render() {
     let obj = {};
     const guild_id = channel.guild_id;
@@ -40,5 +40,5 @@ export default function ChannelVoiceChatModal(channel) {
     obj.children = outer1_4(outer1_1(outer1_2[7]), obj);
     return outer1_4(outer1_1(outer1_2[6]).Provider, obj);
   };
-  return jsx(importDefault(9148), { screenKey: "StageVoiceChat" });
+  return jsx(importDefault(9040), { screenKey: "StageVoiceChat" });
 };

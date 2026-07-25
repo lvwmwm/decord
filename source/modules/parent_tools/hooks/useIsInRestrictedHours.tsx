@@ -1,10 +1,10 @@
-// Module ID: 16019
-// Function ID: 123676
+// Module ID: 16030
+// Function ID: 123844
 // Name: useIsInRestrictedHours
-// Dependencies: [1849, 6769, 566, 16020, 2]
+// Dependencies: [1850, 5765, 566, 16031, 2]
 // Exports: default
 
-// Module 16019 (useIsInRestrictedHours)
+// Module 16030 (useIsInRestrictedHours)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 
@@ -13,5 +13,5 @@ const result = require("initialize").fileFinishedImporting("modules/parent_tools
 
 export default function useIsInRestrictedHours() {
   const items = [_isNativeReflectConstruct, closure_3];
-  return require(566) /* initialize */.useStateFromStores(items, require(16020) /* _isNativeReflectConstruct */.getCurrentRestrictedHoursState);
+  return require(566) /* initialize */.useStateFromStores(items, require(16031) /* _isNativeReflectConstruct */.getCurrentRestrictedHoursState);
 };

@@ -1,10 +1,10 @@
-// Module ID: 4636
-// Function ID: 40322
+// Module ID: 4637
+// Function ID: 40334
 // Name: TextLockIcon
-// Dependencies: [31, 33, 689, 3833, 4618, 2]
+// Dependencies: [31, 33, 689, 3834, 4619, 2]
 // Exports: TextLockIcon
 
-// Module 4636 (TextLockIcon)
+// Module 4637 (TextLockIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TextLockIcon = function TextLockIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4618) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4619) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4618) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4619) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

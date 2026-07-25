@@ -1,10 +1,10 @@
-// Module ID: 4130
-// Function ID: 34351
+// Module ID: 4131
+// Function ID: 34362
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 27, 4122, 3942, 3842, 477, 689, 3835, 3991, 4131, 4134, 4063, 1324, 2]
+// Dependencies: [57, 27, 4123, 3943, 3843, 477, 689, 3836, 3992, 4132, 4135, 4064, 1324, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, useLegacyClassComponentStyles
 
-// Module 4130 (_createForOfIteratorHelperLoose)
+// Module 4131 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -156,7 +156,7 @@ function parseThemedStyles(arg0, enabledExperiments) {
       if (internal.isSemanticColor(obj2)) {
         let tmp26 = require;
         let tmp27 = dependencyMap;
-        let obj3 = require(3835) /* getSemanticColorContextFromThemeContext */;
+        let obj3 = require(3836) /* getSemanticColorContextFromThemeContext */;
         let tmp29 = importDefault;
         let semanticColorContextFromThemeContext = obj3.getSemanticColorContextFromThemeContext(enabledExperiments);
         let internal4 = importDefault(689).internal;
@@ -217,7 +217,7 @@ function parseThemedStyles(arg0, enabledExperiments) {
   }
   return obj;
 }
-let set = new Set(["backgroundColor", "borderBottomColor", "borderColor", "borderEndColor", "borderLeftColor", "borderRightColor", "borderStartColor", "borderTopColor", "color", "shadowColor", "shadowOffset", "shadowOpacity", "shadowRadius", "elevation", "textDecorationColor", "textShadowColor", "tintColor"]);
+let set = new Set(["backgroundColor", "borderBottomColor", "borderColor", "borderEndColor", "borderLeftColor", "borderRightColor", "borderStartColor", "borderTopColor", "color", "outlineColor", "shadowColor", "shadowOffset", "shadowOpacity", "shadowRadius", "elevation", "textDecorationColor", "textShadowColor", "tintColor"]);
 let closure_7 = Symbol.for("dynamicToken");
 let closure_8 = ["light", "darker", "midnight"];
 let closure_9 = { code: "function createStylesTsx1(){const{resolvedStyles,withTiming,interpolateColor,themeIndex,stops,timingStandard}=this.__closure;const result={};for(const propertyName in resolvedStyles){const value=resolvedStyles[propertyName];if(Array.isArray(value)){result[propertyName]=withTiming(interpolateColor(themeIndex.get(),stops,value),timingStandard);}else{result[propertyName]=value;}}return result;}" };
@@ -315,7 +315,7 @@ export const createLegacyClassComponentStyles = function createLegacyClassCompon
   };
 };
 export const useLegacyClassComponentStyles = function useLegacyClassComponentStyles(_createForOfIteratorHelperLoose) {
-  return _createForOfIteratorHelperLoose(require(3842) /* ManaContext */.useThemeContext());
+  return _createForOfIteratorHelperLoose(require(3843) /* ManaContext */.useThemeContext());
 };
 export const createStyleProperties = function createStyleProperties(_createForOfIteratorHelperLoose) {
   let closure_0 = _createForOfIteratorHelperLoose;

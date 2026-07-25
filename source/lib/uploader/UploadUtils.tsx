@@ -1,10 +1,10 @@
-// Module ID: 4672
-// Function ID: 40621
+// Module ID: 4673
+// Function ID: 40633
 // Name: DefaultHttpClient
-// Dependencies: [6, 7, 4665, 507, 4673, 1844, 2]
+// Dependencies: [6, 7, 4666, 507, 4674, 1845, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 4672 (DefaultHttpClient)
+// Module 4673 (DefaultHttpClient)
 import set from "set";
 import _defineProperties from "_defineProperties";
 
@@ -109,7 +109,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("lib/u
 
 export const doesImageMatchUpload = function doesImageMatchUpload(image, closure_0) {
   if (closure_0.id !== image.uri) {
-    if (closure_0.item.platform === require(4665) /* _isNativeReflectConstruct */.UploadPlatform.REACT_NATIVE) {
+    if (closure_0.item.platform === require(4666) /* _isNativeReflectConstruct */.UploadPlatform.REACT_NATIVE) {
       const item = closure_0.item;
       const filename = image.filename;
       if (item.originalUri === image.uri) {
@@ -142,17 +142,17 @@ export const calculateProgress = function calculateProgress(loaded, currentSize)
 };
 export const DefaultHttpClient = tmp2;
 export const canUploadNatively = function canUploadNatively(item) {
-  let fileIsInAppDirResult = item.platform === require(4665) /* _isNativeReflectConstruct */.UploadPlatform.REACT_NATIVE;
+  let fileIsInAppDirResult = item.platform === require(4666) /* _isNativeReflectConstruct */.UploadPlatform.REACT_NATIVE;
   if (fileIsInAppDirResult) {
     fileIsInAppDirResult = null != item.uri;
   }
   if (fileIsInAppDirResult) {
-    fileIsInAppDirResult = require(4673) /* _getAttachmentFile */.fileIsInAppDir(item.uri);
-    const obj = require(4673) /* _getAttachmentFile */;
+    fileIsInAppDirResult = require(4674) /* _getAttachmentFile */.fileIsInAppDir(item.uri);
+    const obj = require(4674) /* _getAttachmentFile */;
   }
   if (fileIsInAppDirResult) {
-    fileIsInAppDirResult = require(1844) /* isBlockedDomain */.isLibdiscoreInitialized();
-    const obj2 = require(1844) /* isBlockedDomain */;
+    fileIsInAppDirResult = require(1845) /* isBlockedDomain */.isLibdiscoreInitialized();
+    const obj2 = require(1845) /* isBlockedDomain */;
   }
   return fileIsInAppDirResult;
 };

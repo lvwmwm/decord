@@ -1,9 +1,9 @@
-// Module ID: 14464
-// Function ID: 110484
+// Module ID: 14475
+// Function ID: 110611
 // Name: toggle
-// Dependencies: [683, 685, 10363, 566, 477, 10127, 1212, 14442, 14457, 2]
+// Dependencies: [683, 685, 10296, 566, 477, 10059, 1212, 14453, 14468, 2]
 
-// Module 14464 (toggle)
+// Module 14475 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -21,13 +21,13 @@ createToggle = {
     if (arg0) {
       obj.bugReporterEnabled = true;
       const result = setDeveloperOptionSettings(obj);
-      importDefault(10363).initialize();
-      const obj3 = importDefault(10363);
+      importDefault(10296).initialize();
+      const obj3 = importDefault(10296);
     } else {
       obj.bugReporterEnabled = false;
       const result1 = setDeveloperOptionSettings(obj);
-      importDefault(10363).terminate(true);
-      const obj2 = importDefault(10363);
+      importDefault(10296).terminate(true);
+      const obj2 = importDefault(10296);
     }
   },
   useValue: function useCreateBugReportSettingToggleValue() {

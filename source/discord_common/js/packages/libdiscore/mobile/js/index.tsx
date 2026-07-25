@@ -1,10 +1,10 @@
-// Module ID: 1845
-// Function ID: 20248
+// Module ID: 1846
+// Function ID: 20259
 // Name: LIBDISCORE_JSI
-// Dependencies: [6, 7, 27, 1846, 2]
+// Dependencies: [6, 7, 27, 1847, 2]
 // Exports: consumeLogs, crash, generateLaunchSignature, getFluxApi, getHttpClientAPI, registerDevLogListener, rustMultiply
 
-// Module 1845 (LIBDISCORE_JSI)
+// Module 1846 (LIBDISCORE_JSI)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { NativeModules } from "get ActivityIndicator";

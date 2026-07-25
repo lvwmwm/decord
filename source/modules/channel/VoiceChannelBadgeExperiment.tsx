@@ -1,10 +1,10 @@
-// Module ID: 7998
-// Function ID: 63276
+// Module ID: 7945
+// Function ID: 63233
 // Name: items
-// Dependencies: [4045, 4042, 2]
+// Dependencies: [4046, 4043, 2]
 // Exports: getVoiceChannelBadgeExperiment, useVoiceChannelBadgeExperiment
 
-// Module 7998 (items)
+// Module 7945 (items)
 import createExperiment from "createExperiment";
 
 let obj = { id: "2026-03_voice_badge", kind: "guild", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, label: "Display Voice Channel Badge", defaultConfig: { enabled: false } };

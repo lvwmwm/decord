@@ -1,9 +1,9 @@
-// Module ID: 4032
-// Function ID: 33578
+// Module ID: 4033
+// Function ID: 33589
 // Name: NativeDispatchError
-// Dependencies: [6, 7, 4033, 1212, 4025, 2]
+// Dependencies: [6, 7, 4034, 1212, 4026, 2]
 
-// Module 4032 (NativeDispatchError)
+// Module 4033 (NativeDispatchError)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { DispatchErrorCodes } from "RPC_SCOPE_CONFIG";

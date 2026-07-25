@@ -1,11 +1,11 @@
 // Module ID: 12762
-// Function ID: 99310
+// Function ID: 99417
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12762 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 230, height: 110, scales: [2, 3], hash: "13bbd5c08cf3fa23ae993ffb532d6b29", name: "empty_voice_channel", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/nuf_channels/native/images", width: 120, height: 120, scales: [1], hash: "94bb0fdcfba6a856a1567cdd4f281049", name: "mallow", type: "png" };
 
 export default registerAsset.registerAsset(obj);

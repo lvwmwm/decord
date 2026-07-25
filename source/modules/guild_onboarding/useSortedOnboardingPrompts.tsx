@@ -1,10 +1,10 @@
-// Module ID: 10006
-// Function ID: 77240
+// Module ID: 9935
+// Function ID: 76859
 // Name: useSortedOnboardingPrompts
-// Dependencies: [31, 5058, 624, 2]
+// Dependencies: [31, 5059, 624, 2]
 // Exports: default
 
-// Module 10006 (useSortedOnboardingPrompts)
+// Module 9935 (useSortedOnboardingPrompts)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

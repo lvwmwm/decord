@@ -1,10 +1,10 @@
-// Module ID: 14119
-// Function ID: 108511
+// Module ID: 14130
+// Function ID: 108638
 // Name: QuestEmbedPreview
-// Dependencies: [31, 3768, 1849, 653, 33, 7710, 566, 4119, 9504, 14118, 1212, 9329, 2]
+// Dependencies: [31, 3769, 1850, 653, 33, 7654, 566, 4120, 9425, 14129, 1212, 9222, 2]
 // Exports: QuestEmbedPreview
 
-// Module 14119 (QuestEmbedPreview)
+// Module 14130 (QuestEmbedPreview)
 import result from "result";
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -58,9 +58,9 @@ export const QuestEmbedPreview = function QuestEmbedPreview(questId) {
     const intl = questId(1212).intl;
     obj.title = intl.string(questId(1212).t["habP/M"]);
     obj = { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" };
-    obj.children = jsx(stateFromStores(9329), { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" });
-    tmp4 = jsx(stateFromStores(14118), { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" });
-    const tmp8 = stateFromStores(14118);
+    obj.children = jsx(stateFromStores(9222), { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" });
+    tmp4 = jsx(stateFromStores(14129), { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" });
+    const tmp8 = stateFromStores(14129);
   }
   return tmp4;
 };

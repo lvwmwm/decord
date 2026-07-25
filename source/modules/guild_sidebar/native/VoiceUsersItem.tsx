@@ -1,10 +1,10 @@
-// Module ID: 15026
-// Function ID: 114480
+// Module ID: 15036
+// Function ID: 114607
 // Name: VoiceUsersItem
-// Dependencies: [31, 27, 33, 4130, 2]
+// Dependencies: [31, 27, 33, 4131, 2]
 // Exports: default
 
-// Module 15026 (VoiceUsersItem)
+// Module 15036 (VoiceUsersItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

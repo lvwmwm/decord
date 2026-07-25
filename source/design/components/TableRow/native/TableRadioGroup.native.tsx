@@ -1,10 +1,10 @@
-// Module ID: 7654
-// Function ID: 60855
+// Module ID: 7596
+// Function ID: 60779
 // Name: context
-// Dependencies: [57, 31, 653, 33, 5164, 5501, 7653, 2]
+// Dependencies: [57, 31, 653, 33, 5163, 5501, 7595, 2]
 // Exports: TableRadioGroup
 
-// Module 7654 (context)
+// Module 7596 (context)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -65,7 +65,7 @@ export const TableRadioGroup = function TableRadioGroup(arg0) {
       return outer1_3;
     }
   }), items);
-  jsx = importAllResult.useContext(onChange(5164).RedesignCompatContext);
+  jsx = importAllResult.useContext(onChange(5163).RedesignCompatContext);
   const items1 = [undefined !== value, onChange];
   callback = importAllResult.useCallback((arg0) => {
     if (!closure_1) {

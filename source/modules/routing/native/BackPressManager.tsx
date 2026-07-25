@@ -1,9 +1,9 @@
-// Module ID: 13426
-// Function ID: 103085
+// Module ID: 13437
+// Function ID: 103212
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 9339, 3996, 1555, 1454, 477, 4530, 2]
+// Dependencies: [6, 7, 15, 17, 18, 27, 9232, 3997, 1555, 1454, 477, 4531, 2]
 
-// Module 13426 (_isNativeReflectConstruct)
+// Module 13437 (_isNativeReflectConstruct)
 import updateContextMenuState from "updateContextMenuState";
 import getKeyboardContextForType from "getKeyboardContextForType";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -22,9 +22,9 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleBackPress() {
-  let obj = require(9339) /* updateContextMenuState */;
+  let obj = require(9232) /* updateContextMenuState */;
   obj.hideContextMenu();
-  const keyboardType = require(3996) /* getKeyboardContextForType */.getKeyboardType();
+  const keyboardType = require(3997) /* getKeyboardContextForType */.getKeyboardType();
   let flag = keyboardType !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM;
   if (flag) {
     obj = { type: require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM };

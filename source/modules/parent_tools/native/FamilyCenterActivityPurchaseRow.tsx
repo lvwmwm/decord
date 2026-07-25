@@ -1,10 +1,10 @@
-// Module ID: 13855
-// Function ID: 106094
+// Module ID: 13866
+// Function ID: 106221
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [31, 27, 33, 4130, 689, 7946, 13856, 5616, 13857, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 7894, 13867, 5616, 13868, 4127, 2]
 // Exports: default
 
-// Module 13855 (FamilyCenterActivityPurchaseRow)
+// Module 13866 (FamilyCenterActivityPurchaseRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,8 +32,8 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
   ({ skuId, subscriptionPlanId } = arg0);
   ({ total, currency } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  const product = importDefault(7946)(skuId).product;
-  let obj = require(13856) /* getCollectibleTypeName */;
+  const product = importDefault(7894)(skuId).product;
+  let obj = require(13867) /* getCollectibleTypeName */;
   let tmp2 = null;
   if (null != product) {
     tmp2 = product;
@@ -69,12 +69,12 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj.product = tmp12;
     obj.isSubscription = isSubscription;
     obj.subscriptionPlanId = subscriptionPlanId;
-    const items = [tmp8(importDefault(13857), obj), ];
+    const items = [tmp8(importDefault(13868), obj), ];
     const obj1 = { style: tmp.textContainer };
     const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: combined };
-    const items1 = [callback(require(4126) /* Text */.Text, obj2), ];
+    const items1 = [callback(require(4127) /* Text */.Text, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: formatPriceResult };
-    items1[1] = callback(require(4126) /* Text */.Text, obj3);
+    items1[1] = callback(require(4127) /* Text */.Text, obj3);
     obj1.children = items1;
     items[1] = callback2(View, obj1);
     obj.children = items;

@@ -1,10 +1,10 @@
-// Module ID: 9226
-// Function ID: 72181
+// Module ID: 9118
+// Function ID: 71666
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 57, 31, 27, 1849, 33, 4130, 1456, 566, 9227, 668, 4030, 3831, 1212, 9228, 4126, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 33, 4131, 1456, 566, 9119, 668, 4031, 3832, 1212, 9120, 4127, 4544, 2]
 // Exports: default
 
-// Module 9226 (ConfirmEmailChangeStart)
+// Module 9118 (ConfirmEmailChangeStart)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -43,12 +43,12 @@ export default function ConfirmEmailChangeStart() {
     obj = { oldEmail: stateFromStores.email };
     obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
     obj1 = { style: tmp.container };
-    const obj2 = { style: tmp.image, source: navigation(9228) };
+    const obj2 = { style: tmp.image, source: navigation(9120) };
     const items1 = [callback2(closure_7, obj2), , , ];
     const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.dQ71Wa);
-    items1[1] = callback2(require(4126) /* Text */.Text, obj3);
+    items1[1] = callback2(require(4127) /* Text */.Text, obj3);
     items1[2] = intl.format(require(1212) /* getSystemLocale */.t.oMFSgi, obj).map((children) => {
       const obj = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children };
       return outer1_10(tmp(table[15]).Text, obj, arg1);
@@ -60,7 +60,7 @@ export default function ConfirmEmailChangeStart() {
     obj5.onPress = tmp5;
     obj5.loading = tmp4[0];
     obj5.grow = true;
-    obj4.children = callback2(require(4543) /* Button */.Button, obj5);
+    obj4.children = callback2(require(4544) /* Button */.Button, obj5);
     items1[3] = callback2(closure_6, obj4);
     obj1.children = items1;
     obj.children = callback3(closure_6, obj1);

@@ -1,7 +1,7 @@
 // Module ID: 5472
-// Function ID: 46777
+// Function ID: 46782
 // Name: GameIcon
-// Dependencies: [31, 27, 1851, 33, 4130, 689, 5473, 5474, 5475, 5476, 2]
+// Dependencies: [31, 27, 1852, 33, 4131, 689, 5473, 5474, 5475, 5476, 2]
 
 // Module 5472 (GameIcon)
 import "result";

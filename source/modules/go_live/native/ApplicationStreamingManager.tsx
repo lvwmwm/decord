@@ -1,9 +1,9 @@
-// Module ID: 16594
-// Function ID: 129362
+// Module ID: 16605
+// Function ID: 129530
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 4220, 4185, 4191, 33, 3, 4471, 16595, 1934, 10725, 8882, 16597, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 4221, 4186, 4192, 33, 3, 4472, 16606, 1935, 10689, 8770, 16608, 2]
 
-// Module 16594 (_isNativeReflectConstruct)
+// Module 16605 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import makeButton from "makeButton";
 import getInputDeviceName from "getInputDeviceName";

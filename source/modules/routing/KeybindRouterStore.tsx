@@ -1,9 +1,9 @@
-// Module ID: 10841
-// Function ID: 84144
+// Module ID: 10813
+// Function ID: 83886
 // Name: getMatchData
-// Dependencies: [653, 3952, 3965, 677, 682, 2]
+// Dependencies: [653, 3953, 3966, 677, 682, 2]
 
-// Module 10841 (getMatchData)
+// Module 10813 (getMatchData)
 import ME from "ME";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
@@ -12,15 +12,15 @@ let closure_3;
 function getMatchData(pathname) {
   let channelId;
   let guildId;
-  let obj = require(3952) /* matchPath */;
+  let obj = require(3953) /* matchPath */;
   let str = "";
   let str2 = "";
   if (null != pathname) {
     str2 = pathname;
   }
   obj = {};
-  const RouteParam = require(3965) /* isPseudoGuildId */.RouteParam;
-  const RouteParam2 = require(3965) /* isPseudoGuildId */.RouteParam;
+  const RouteParam = require(3966) /* isPseudoGuildId */.RouteParam;
+  const RouteParam2 = require(3966) /* isPseudoGuildId */.RouteParam;
   obj.path = closure_2.CHANNEL(RouteParam.guildId(), RouteParam2.channelId({ optional: true }), ":messageId?");
   const matchPathResult = obj.matchPath(str2, obj);
   if (null != matchPathResult) {
@@ -42,9 +42,9 @@ function getMatchData(pathname) {
       str = pathname;
     }
     const obj1 = {};
-    const RouteParam3 = require(3965) /* isPseudoGuildId */.RouteParam;
+    const RouteParam3 = require(3966) /* isPseudoGuildId */.RouteParam;
     obj1.path = closure_2.GUILD_BOOSTING_MARKETING(RouteParam3.guildId());
-    const matchPathResult1 = require(3952) /* matchPath */.matchPath(str, obj1);
+    const matchPathResult1 = require(3953) /* matchPath */.matchPath(str, obj1);
     if (null != matchPathResult1) {
       const obj2 = { guildId: matchPathResult1.params.guildId, channelId: null };
       let obj3 = obj2;

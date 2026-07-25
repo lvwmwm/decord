@@ -1,9 +1,9 @@
-// Module ID: 14575
-// Function ID: 111180
+// Module ID: 14586
+// Function ID: 111307
 // Name: route
-// Dependencies: [31, 653, 13809, 13812, 10127, 1212, 8970, 14576, 2]
+// Dependencies: [31, 653, 13820, 13823, 10059, 1212, 8858, 14587, 2]
 
-// Module 14575 (route)
+// Module 14586 (route)
 import result from "result";
 import createToggle from "createToggle";
 
@@ -28,7 +28,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.DATA_AND_PRIVACY,
   getComponent() {
-    return require(14576) /* getTermsOfServicePrivacyPolicySettings */.default;
+    return require(14587) /* getTermsOfServicePrivacyPolicySettings */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

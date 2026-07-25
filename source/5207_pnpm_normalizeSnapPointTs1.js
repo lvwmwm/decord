@@ -1,5 +1,5 @@
 // Module ID: 5207
-// Function ID: 45137
+// Function ID: 45142
 // Name: pnpm_normalizeSnapPointTs1
 // Dependencies: []
 

@@ -1,10 +1,10 @@
-// Module ID: 15458
-// Function ID: 118784
+// Module ID: 15468
+// Function ID: 118912
 // Name: SearchTabsGradient
-// Dependencies: [31, 33, 3834, 689, 3974, 11821, 2]
+// Dependencies: [31, 33, 3835, 689, 3975, 11797, 2]
 // Exports: default
 
-// Module 15458 (SearchTabsGradient)
+// Module 15468 (SearchTabsGradient)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -20,5 +20,5 @@ export default function SearchTabsGradient(state) {
       return items;
     }, items);
   })();
-  return jsx(importDefault(11821), { state: state.state, colors });
+  return jsx(importDefault(11797), { state: state.state, colors });
 };

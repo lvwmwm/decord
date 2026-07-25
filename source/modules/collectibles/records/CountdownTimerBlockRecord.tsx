@@ -1,9 +1,9 @@
-// Module ID: 6804
-// Function ID: 53727
+// Module ID: 5800
+// Function ID: 51001
 // Name: CountdownTimerBlockRecord
-// Dependencies: [6, 7, 6805, 2]
+// Dependencies: [6, 7, 5801, 2]
 
-// Module 6804 (CountdownTimerBlockRecord)
+// Module 5800 (CountdownTimerBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

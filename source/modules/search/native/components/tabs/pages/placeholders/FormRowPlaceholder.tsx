@@ -1,10 +1,10 @@
-// Module ID: 15414
-// Function ID: 117616
+// Module ID: 15424
+// Function ID: 117744
 // Name: FormRowPlaceholderItem
-// Dependencies: [31, 27, 9141, 33, 4130, 689, 15387, 3991, 2]
+// Dependencies: [31, 27, 9033, 33, 4131, 689, 15397, 3992, 2]
 // Exports: default
 
-// Module 15414 (FormRowPlaceholderItem)
+// Module 15424 (FormRowPlaceholderItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedI
 
 export default function FormRowPlaceholderItem(style) {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(15387) /* useFullscreenPlaceholderCount */;
+  let obj = require(15397) /* useFullscreenPlaceholderCount */;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   obj = { style: items, pointerEvents: "none" };
   items = [placeholderAnimatedStyle, tmp.itemContainer, style.style];
@@ -39,5 +39,5 @@ export default function FormRowPlaceholderItem(style) {
   obj1.children = items2;
   items1[1] = callback2(View, obj1);
   obj.children = items1;
-  return callback2(importDefault(3991).View, obj);
+  return callback2(importDefault(3992).View, obj);
 };

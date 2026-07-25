@@ -1,12 +1,12 @@
-// Module ID: 9696
-// Function ID: 75458
+// Module ID: 9620
+// Function ID: 75053
 // Name: NativeModules
-// Dependencies: [57, 31, 27, 1451, 1552, 5188, 4344, 33, 4130, 689, 3991, 9697, 9700, 1453, 1557, 1450, 5084, 5189, 9459, 4687, 22, 9701, 9707, 9709, 9710, 4683, 7677, 1212, 2]
+// Dependencies: [57, 31, 27, 1451, 1552, 5188, 4345, 33, 4131, 689, 3992, 9621, 9624, 1453, 1557, 1450, 5084, 5189, 9379, 4688, 22, 9625, 9631, 9633, 9329, 9634, 4684, 7619, 1212, 2]
 
-// Module 9696 (NativeModules)
+// Module 9620 (NativeModules)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
-import get_ActivityIndicator from "getSystemLocale";
+import get_ActivityIndicator from "_isNativeReflectConstruct";
 import closure_6 from "_createForOfIteratorHelperLoose";
 import { InAppCameraUsedCameraPreviewTypes as closure_7 } from "DRAG_HANDLE";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_8 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -177,13 +177,13 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
     const draftType = tmp2;
     let obj = channel(onPressCamera[10]);
     const sharedValue = obj.useSharedValue(false);
-    const fn = function s() {
+    const fn = function i() {
       return animatedIndex.get();
     };
     fn.__closure = { animatedIndex };
     fn.__workletHash = 8982138292467;
     fn.__initData = ref;
-    const fn2 = function i(arg0) {
+    const fn2 = function s(arg0) {
       let tmp = arg0 > 0.1;
       if (tmp) {
         tmp = !sharedValue.get();
@@ -306,26 +306,28 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
   const items9 = [onManageLimited];
   const callback5 = onPressItem.useCallback(() => flag2(draftType(onPressCamera[23]), { onPress: onManageLimited, onHeightChange: closure_31 }), items9);
   const tmp17 = disableWhenReachedLimit();
+  const modalDismissGuardRefreshControl = channel(onPressCamera[24]).useModalDismissGuardRefreshControl();
+  const obj8 = channel(onPressCamera[24]);
   obj = { photoPermissionStatus: first };
-  let tmp31 = null != assets;
-  if (tmp31) {
-    tmp31 = 0 === assets.edges.length;
+  let tmp32 = null != assets;
+  if (tmp32) {
+    tmp32 = 0 === assets.edges.length;
   }
-  obj.photosEmpty = tmp31;
+  obj.photosEmpty = tmp32;
   obj.showCameraButton = flag;
   obj.onPressCamera = function onPressCamera() {
     return onPressCamera(onManageLimited.TAKE_A_PHOTO_BUTTON);
   };
   obj.onManageLimited = onManageLimited;
-  obj.onPressPrivacySettings = draftType(onPressCamera[25]);
-  let mediaEmptyStateComponentOrNull = channel(onPressCamera[24]).getMediaEmptyStateComponentOrNull(obj);
+  obj.onPressPrivacySettings = draftType(onPressCamera[26]);
+  let mediaEmptyStateComponentOrNull = channel(onPressCamera[25]).getMediaEmptyStateComponentOrNull(obj);
   if (null == mediaEmptyStateComponentOrNull) {
     obj1 = {};
-    let tmp33;
+    let tmp34;
     if (tmp28) {
-      tmp33 = callback5;
+      tmp34 = callback5;
     }
-    obj1.renderHeader = tmp33;
+    obj1.renderHeader = tmp34;
     let num4 = 0;
     if (tmp28) {
       num4 = tmp29[0];
@@ -338,6 +340,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
     obj1.sections = items11;
     obj1.itemSize = memo1;
     obj1.inActionSheet = true;
+    obj1.refreshControl = modalDismissGuardRefreshControl;
     obj1.preserveScrollMomentum = true;
     obj1.automaticallyAdjustsScrollIndicatorInsets = false;
     obj1.keyboardDismissMode = "none";
@@ -345,20 +348,20 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
     obj1.onScroll = callback;
     obj1.endReachedThreshold = 400;
     obj1.accessibilityRole = "list";
-    const intl = channel(onPressCamera[27]).intl;
-    obj1.accessibilityLabel = intl.string(channel(onPressCamera[27]).t.XONG6A);
+    const intl = channel(onPressCamera[28]).intl;
+    obj1.accessibilityLabel = intl.string(channel(onPressCamera[28]).t.XONG6A);
     obj1.showsVerticalScrollIndicator = false;
     obj1.footerSize = channel(onPressCamera[22]).FOOTER_HEIGHT;
     obj1.renderFooter = callback4;
     obj1.chunkBase = maximum;
     let prop;
     if (!tmp16) {
-      prop = channel(onPressCamera[26]).MINIMUM_BATCHES_TO_RENDER;
+      prop = channel(onPressCamera[27]).MINIMUM_BATCHES_TO_RENDER;
     }
     obj1.batchesToRender = prop;
-    mediaEmptyStateComponentOrNull = flag2(draftType(onPressCamera[26]), obj1);
-    const tmp39 = flag2;
-    const tmp42 = draftType(onPressCamera[26]);
+    mediaEmptyStateComponentOrNull = flag2(draftType(onPressCamera[27]), obj1);
+    const tmp40 = flag2;
+    const tmp43 = draftType(onPressCamera[27]);
   }
   return mediaEmptyStateComponentOrNull;
 });

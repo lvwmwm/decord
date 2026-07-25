@@ -1,17 +1,17 @@
-// Module ID: 9525
-// Function ID: 74160
+// Module ID: 9446
+// Function ID: 73747
 // Name: handleAcceptEventInstantInvite
-// Dependencies: [6758, 9384, 6977, 7540, 8409, 2]
+// Dependencies: [5751, 9290, 5968, 6636, 8167, 2]
 // Exports: default
 
-// Module 9525 (handleAcceptEventInstantInvite)
+// Module 9446 (handleAcceptEventInstantInvite)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 let result = require("isGroupDMInvite").fileFinishedImporting("modules/guild_scheduled_events/native/handleAcceptEventInstantInvite.tsx");
 
 export default function handleAcceptEventInstantInvite(code) {
-  let obj = guildScheduledEvent(9384);
+  let obj = guildScheduledEvent(9290);
   if (!obj.handleNSFWGuildInvite(code)) {
     if (obj2.isGuildScheduledEventInviteEmbed(code)) {
       if (null != code.code) {
@@ -28,11 +28,11 @@ export default function handleAcceptEventInstantInvite(code) {
           obj.callback = function callback() {
             const result = guildScheduledEvent(outer1_2[4]).transitionToEventDetailsFromInvite(guildScheduledEvent);
           };
-          importDefault(7540).acceptInvite(obj);
-          const obj3 = importDefault(7540);
+          importDefault(6636).acceptInvite(obj);
+          const obj3 = importDefault(6636);
         }
       }
     }
-    obj2 = guildScheduledEvent(6977);
+    obj2 = guildScheduledEvent(5968);
   }
 };

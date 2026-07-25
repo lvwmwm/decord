@@ -1,0 +1,20 @@
+// Module ID: 6279
+// Function ID: 56532
+// Dependencies: [6280, 6281, 6282]
+
+// Module 6279
+for (const key10015 in require("enhancedFetch")) {
+  let tmp2 = key10015;
+  arg5[key10015] = require("enhancedFetch")[key10015];
+  continue;
+}
+for (const key10020 in require("fillProductsWithAdditionalData")) {
+  let tmp3 = key10020;
+  arg5[key10020] = require("fillProductsWithAdditionalData")[key10020];
+  continue;
+}
+for (const key10025 in require("RNIapIos")) {
+  let tmp4 = key10025;
+  arg5[key10025] = require("RNIapIos")[key10025];
+  continue;
+}

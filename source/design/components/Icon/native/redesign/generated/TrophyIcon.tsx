@@ -1,10 +1,10 @@
-// Module ID: 7508
-// Function ID: 59929
+// Module ID: 6592
+// Function ID: 58411
 // Name: TrophyIcon
-// Dependencies: [31, 33, 689, 3833, 7509, 2]
+// Dependencies: [31, 33, 689, 3834, 6593, 2]
 // Exports: TrophyIcon
 
-// Module 7508 (TrophyIcon)
+// Module 6592 (TrophyIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TrophyIcon = function TrophyIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(7509) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(6593) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7509) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(6593) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

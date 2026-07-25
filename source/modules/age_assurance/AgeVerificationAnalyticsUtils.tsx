@@ -1,10 +1,10 @@
-// Module ID: 7583
-// Function ID: 60418
+// Module ID: 6692
+// Function ID: 59075
 // Name: AgeVerificationModalEntryPoint
 // Dependencies: [1348, 653, 675, 2]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 7583 (AgeVerificationModalEntryPoint)
+// Module 6692 (AgeVerificationModalEntryPoint)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 

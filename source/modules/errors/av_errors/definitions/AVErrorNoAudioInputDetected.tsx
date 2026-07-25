@@ -1,9 +1,9 @@
-// Module ID: 16574
-// Function ID: 129272
+// Module ID: 16585
+// Function ID: 129440
 // Name: AVErrorNoAudioInputDetectedDefinition
-// Dependencies: [1348, 4177, 4202, 653, 8896, 16575, 2]
+// Dependencies: [1348, 4178, 4203, 653, 8784, 16586, 2]
 
-// Module 16574 (AVErrorNoAudioInputDetectedDefinition)
+// Module 16585 (AVErrorNoAudioInputDetectedDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -39,8 +39,8 @@ export const AVErrorNoAudioInputDetectedDefinition = {
                 if (false === store.getInputDetected()) {
                   if (!isGuildStageVoiceResult) {
                     if (!store.isSelfMute()) {
-                      const obj = { type: require(8896) /* validateUniqueErrorCodes */.AVError.NO_AUDIO_INPUT_DETECTED };
-                      const merged = Object.assign(require(16575) /* getCommonErrorContext */.getVoiceChannelErrorContext());
+                      const obj = { type: require(8784) /* validateUniqueErrorCodes */.AVError.NO_AUDIO_INPUT_DETECTED };
+                      const merged = Object.assign(require(16586) /* getCommonErrorContext */.getVoiceChannelErrorContext());
                       const items = [obj];
                       return items;
                     }

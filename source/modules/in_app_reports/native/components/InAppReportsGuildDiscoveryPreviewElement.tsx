@@ -1,10 +1,10 @@
-// Module ID: 12358
-// Function ID: 96190
+// Module ID: 12334
+// Function ID: 95999
 // Name: GuildDiscoveryPreviewElement
-// Dependencies: [31, 27, 4122, 33, 4130, 689, 566, 3974, 4126, 1212, 5513, 1387, 2]
+// Dependencies: [31, 27, 4123, 33, 4131, 689, 566, 3975, 4127, 1212, 5513, 1387, 2]
 // Exports: default
 
-// Module 12358 (GuildDiscoveryPreviewElement)
+// Module 12334 (GuildDiscoveryPreviewElement)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,12 +34,12 @@ export default function GuildDiscoveryPreviewElement(guild) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
-  let obj1 = require(3974) /* hexToRgb */;
+  let obj1 = require(3975) /* hexToRgb */;
   obj = { style: tmp.container };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.nTe4HC);
-  const items1 = [callback(require(4126) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4127) /* Text */.Text, obj), ];
   obj1 = { style: items2 };
   items2 = [tmp.itemContainer, { borderColor: obj1.hexWithOpacity(tmp.borderColor.color, 0.08) }];
   const obj2 = { style: tmp.guildInfo };
@@ -50,7 +50,7 @@ export default function GuildDiscoveryPreviewElement(guild) {
   obj3.animate = !stateFromStores;
   const items3 = [callback(tmp4, obj3), ];
   const obj4 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name };
-  items3[1] = callback(require(4126) /* Text */.Text, obj4);
+  items3[1] = callback(require(4127) /* Text */.Text, obj4);
   obj2.children = items3;
   obj1.children = callback2(View, obj2);
   items1[1] = callback(View, obj1);

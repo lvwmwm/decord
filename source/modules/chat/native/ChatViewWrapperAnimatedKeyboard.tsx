@@ -1,14 +1,14 @@
-// Module ID: 10421
-// Function ID: 80301
+// Module ID: 10355
+// Function ID: 79970
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [31, 27, 33, 3991, 4134, 10422, 4131, 5163, 10426, 10428, 5449, 10429, 2]
+// Dependencies: [31, 27, 33, 3992, 4135, 10356, 4132, 5162, 10360, 10362, 5449, 10363, 2]
 // Exports: default
 
-// Module 10421 (ChatViewWrapperAnimatedKeyboard)
+// Module 10355 (ChatViewWrapperAnimatedKeyboard)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import { Easing } from "module_3991";
+import { Easing } from "module_3992";
 
 let closure_5;
 let closure_6;
@@ -20,12 +20,12 @@ let closure_9 = { code: "function ChatViewWrapperAnimatedKeyboardTsx2(height,hei
 let closure_10 = { code: "function ChatViewWrapperAnimatedKeyboardTsx3(){const{animatedAdjustedMargin,withTiming,animatedHeight,INSET_ANIMATION_CONFIG2,animatedAdjustedMarginPending}=this.__closure;return{flex:1,marginTop:animatedAdjustedMargin.get(),transform:[{translateY:withTiming(-animatedHeight.get(),INSET_ANIMATION_CONFIG2,'respect-motion-settings',function(finished){if(!finished){return;}if(animatedAdjustedMarginPending.get()!==-1){animatedAdjustedMargin.set(animatedAdjustedMarginPending.get());animatedAdjustedMarginPending.set(-1);}})}]};}" };
 let closure_11 = { code: "function ChatViewWrapperAnimatedKeyboardTsx4(finished){const{animatedAdjustedMarginPending,animatedAdjustedMargin}=this.__closure;if(!finished){return;}if(animatedAdjustedMarginPending.get()!==-1){animatedAdjustedMargin.set(animatedAdjustedMarginPending.get());animatedAdjustedMarginPending.set(-1);}}" };
 let closure_12 = importAllResult.memo((channelId) => {
-  const tmp = importDefault(5163)();
+  const tmp = importDefault(5162)();
   const require = tmp;
   const items = [tmp];
   let obj = {};
   const items1 = [
-    importDefault(10426)(channelId.channelId),
+    importDefault(10360)(channelId.channelId),
     importAllResult.useMemo(() => {
       const obj = { position: "absolute", bottom: -closure_0, height: closure_0, right: 0, left: 0 };
       return obj;
@@ -44,7 +44,7 @@ export default function ChatViewWrapperAnimatedKeyboard(arg0) {
   let style;
   ({ channelId, style } = arg0);
   ({ children, stickyHeader } = arg0);
-  let tmp = importDefault(10428)(channelId);
+  let tmp = importDefault(10362)(channelId);
   let obj = {};
   obj = { header: stickyHeader, style, pointerEvents: tmp };
   obj = {
@@ -106,7 +106,7 @@ export default function ChatViewWrapperAnimatedKeyboard(arg0) {
   };
   let items = [callback(View, { style, children }), callback(closure_12, { channelId })];
   obj.children = items;
-  obj.children = callback2(importDefault(3991).View, obj);
-  obj.children = callback(require(10429) /* StickyWrapper */.StickyWrapper, obj);
+  obj.children = callback2(importDefault(3992).View, obj);
+  obj.children = callback(require(10363) /* StickyWrapper */.StickyWrapper, obj);
   return callback(require(5449) /* Layer */.LayerScope, obj);
 };

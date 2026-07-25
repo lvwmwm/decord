@@ -1,10 +1,10 @@
-// Module ID: 6632
-// Function ID: 50913
+// Module ID: 7552
+// Function ID: 60563
 // Name: WumpusGearSpotIllustration
-// Dependencies: [33, 5085, 6633, 2]
+// Dependencies: [33, 5085, 7553, 2]
 // Exports: WumpusGearSpotIllustration
 
-// Module 6632 (WumpusGearSpotIllustration)
+// Module 7552 (WumpusGearSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WumpusGearSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const WumpusGearSpotIllustration = function WumpusGearSpotIllustration(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6633) };
+  obj = { uri: importDefault(7553) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

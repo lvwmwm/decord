@@ -1,10 +1,10 @@
-// Module ID: 10629
-// Function ID: 82883
+// Module ID: 10593
+// Function ID: 82570
 // Name: getIsTabletActivitySurface
-// Dependencies: [4110, 1553, 686, 2]
+// Dependencies: [4111, 1553, 686, 2]
 // Exports: setOrientationLockState
 
-// Module 10629 (getIsTabletActivitySurface)
+// Module 10593 (getIsTabletActivitySurface)
 import getSystemVersion from "getSystemVersion";
 import isMetaQuest from "isMetaQuest";
 

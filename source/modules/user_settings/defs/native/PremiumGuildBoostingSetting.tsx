@@ -1,9 +1,9 @@
-// Module ID: 13945
-// Function ID: 106596
+// Module ID: 13956
+// Function ID: 106723
 // Name: route
-// Dependencies: [653, 10127, 1212, 7477, 12483, 2]
+// Dependencies: [653, 10059, 1212, 6561, 12464, 2]
 
-// Module 13945 (route)
+// Module 13956 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.GUILD_BOOSTING,
   getComponent() {
-    return require(12483) /* _isNativeReflectConstruct */.default;
+    return require(12464) /* _isNativeReflectConstruct */.default;
   }
 };
 const route = createToggle.createRoute(obj);

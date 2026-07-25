@@ -1,10 +1,10 @@
-// Module ID: 4319
-// Function ID: 37842
+// Module ID: 4320
+// Function ID: 37853
 // Name: getNickname
-// Dependencies: [1348, 1917, 3767, 1212, 3969, 566, 2]
+// Dependencies: [1348, 1918, 3768, 1212, 3970, 566, 2]
 // Exports: useName
 
-// Module 4319 (getNickname)
+// Module 4320 (getNickname)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -34,8 +34,8 @@ function getName(id, closure_0, user) {
   } else {
     stringResult = getNickname(id, closure_0, user);
     if (null == stringResult) {
-      stringResult = importDefault(3969).getName(user);
-      const obj = importDefault(3969);
+      stringResult = importDefault(3970).getName(user);
+      const obj = importDefault(3970);
     }
   }
   return stringResult;

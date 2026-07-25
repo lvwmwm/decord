@@ -1,10 +1,10 @@
-// Module ID: 14293
-// Function ID: 109734
+// Module ID: 14304
+// Function ID: 109861
 // Name: useEnableSwitchIconsSettingValue
-// Dependencies: [4122, 7751, 566, 1324, 10127, 1212, 13423, 2]
+// Dependencies: [4123, 7697, 566, 1324, 10059, 1212, 13434, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14293 (useEnableSwitchIconsSettingValue)
+// Module 14304 (useEnableSwitchIconsSettingValue)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 

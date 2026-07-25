@@ -1,9 +1,9 @@
-// Module ID: 14368
-// Function ID: 109958
+// Module ID: 14379
+// Function ID: 110085
 // Name: _handleEnableSystemNotification
-// Dependencies: [5, 27, 7751, 653, 4344, 11479, 11487, 675, 10667, 10127, 1212, 2]
+// Dependencies: [5, 27, 7697, 653, 4345, 11442, 11450, 675, 10631, 10059, 1212, 2]
 
-// Module 14368 (_handleEnableSystemNotification)
+// Module 14379 (_handleEnableSystemNotification)
 import closure_3 from "EventActionType";
 import { NativeModules } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";

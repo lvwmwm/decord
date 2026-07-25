@@ -1,24 +1,24 @@
-// Module ID: 15033
-// Function ID: 114517
+// Module ID: 15043
+// Function ID: 114644
 // Name: ChannelListStickyHeader
-// Dependencies: [31, 27, 3759, 653, 33, 3991, 4130, 689, 1324, 12966, 15032, 5169, 5077, 3834, 566, 5698, 1212, 4126, 5701, 1273, 5512, 11424, 11501, 15034, 2]
+// Dependencies: [31, 27, 3760, 653, 33, 3992, 4131, 689, 1324, 12977, 15042, 5169, 1841, 3835, 566, 6634, 1212, 4127, 8396, 1273, 5512, 11387, 11464, 15044, 2]
 // Exports: default
 
-// Module 15033 (ChannelListStickyHeader)
+// Module 15043 (ChannelListStickyHeader)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { JoinGuildSources } from "ME";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let closure_7;
 let closure_8;
 const require = arg1;
 const View = get_ActivityIndicator.View;
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = require("module_3991").createAnimatedComponent(get_ActivityIndicator.Pressable);
+let closure_9 = require("module_3992").createAnimatedComponent(get_ActivityIndicator.Pressable);
 let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let flag = arg1;
   if (arg1 === undefined) {
@@ -86,41 +86,40 @@ export default function ChannelListStickyHeader(guild) {
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[9])(guild);
   }, items);
-  const tmp5 = importDefault(15032)(guild);
+  const tmp5 = importDefault(15042)(guild);
   let obj = guild(5169);
   const iOSPressEffects = obj.useIOSPressEffects(4);
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
-  let obj1 = guild(5077);
+  let obj1 = guild(1841);
   const favoritesAwareGuildName = obj1.getFavoritesAwareGuildName(guild);
-  let obj2 = guild(3834);
+  let obj2 = guild(3835);
   const token = obj2.useToken(importDefault(689).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
-  let obj3 = guild(3834);
+  let obj3 = guild(3835);
   const token1 = obj3.useToken(importDefault(689).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   let obj4 = guild(566);
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores = obj4.useStateFromStores(items1, () => outer1_5.isLurking(guild.id));
-  let obj5 = guild(5698);
+  let obj5 = guild(6634);
   let enabled = stateFromStores;
   if (stateFromStores) {
     enabled = obj5.useMobileLurkerServerPreview("ChannelListStickyHeader").enabled;
   }
-  obj = { style: tmp2.container };
   obj = { style: pressableStyles };
+  let tmp13;
+  if (flag2) {
+    tmp13 = callback;
+  }
+  obj.onPress = tmp13;
   let tmp14;
   if (flag2) {
-    tmp14 = callback;
+    tmp14 = onPressIn;
   }
-  obj.onPress = tmp14;
+  obj.onPressIn = tmp14;
   let tmp15;
   if (flag2) {
-    tmp15 = onPressIn;
+    tmp15 = onPressOut;
   }
-  obj.onPressIn = tmp15;
-  let tmp16;
-  if (flag2) {
-    tmp16 = onPressOut;
-  }
-  obj.onPressOut = tmp16;
+  obj.onPressOut = tmp15;
   obj.accessible = true;
   let str = "header";
   if (flag2) {
@@ -133,71 +132,72 @@ export default function ChannelListStickyHeader(guild) {
     stringResult = intl.string(guild(1212).t["Gpyp/e"]);
   }
   obj.accessibilityHint = stringResult;
-  obj1 = { style: tmp2.header };
-  obj2 = { ref, collapsable: false, style: tmp2.flex, children: callback(guild(4126).Text, obj3) };
-  obj3 = { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName };
-  const items2 = [callback(View, obj2), , ];
-  obj4 = { guild, size: guild(1273).Icon.Sizes.REFRESH_SMALL_16, style: tmp2.guildBadge };
-  items2[1] = callback(importDefault(5701), obj4);
-  let tmp23 = null;
+  obj = { style: tmp2.header };
+  obj1 = { ref, collapsable: false, style: tmp2.flex, children: callback(guild(4127).Text, obj2) };
+  obj2 = { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName };
+  const items2 = [callback(View, obj1), , ];
+  obj3 = { guild, size: guild(1273).Icon.Sizes.REFRESH_SMALL_16, style: tmp2.guildBadge };
+  items2[1] = callback(importDefault(8396), obj3);
+  let tmp22 = null;
   if (flag2) {
-    obj5 = { size: "xxs", color: importDefault(689).colors.TEXT_SUBTLE, style: tmp2.chevron };
-    tmp23 = callback(guild(5512).ChevronSmallRightIcon, obj5);
+    obj4 = { size: "xxs", color: importDefault(689).colors.TEXT_SUBTLE, style: tmp2.chevron };
+    tmp22 = callback(guild(5512).ChevronSmallRightIcon, obj4);
   }
-  items2[2] = tmp23;
-  obj1.children = items2;
-  const items3 = [callback2(View, obj1), ];
-  let tmp28 = null;
+  items2[2] = tmp22;
+  obj.children = items2;
+  const items3 = [callback2(View, obj), ];
+  let tmp27 = null;
   if (null != tmp5) {
-    tmp28 = null;
+    tmp27 = null;
     if (tmp5 > 0) {
-      const obj6 = { style: tmp2.subheader };
-      const obj7 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1 };
+      obj5 = { style: tmp2.subheader };
+      const obj6 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1 };
       const intl2 = guild(1212).intl;
-      const obj8 = { count: tmp5 };
-      obj7.children = intl2.format(guild(1212).t.zRl6XR, obj8);
-      const items4 = [callback(guild(4126).Text, obj7), , ];
-      const obj9 = { style: tmp2.ellipse };
-      items4[1] = callback(View, obj9);
-      const obj10 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1 };
+      const obj7 = { count: tmp5 };
+      obj6.children = intl2.format(guild(1212).t.zRl6XR, obj7);
+      const items4 = [callback(guild(4127).Text, obj6), , ];
+      const obj8 = { style: tmp2.ellipse };
+      items4[1] = callback(View, obj8);
+      const obj9 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1 };
       const intl3 = guild(1212).intl;
-      obj10.children = intl3.string(guild(1212).t["1g9A/f"]);
-      items4[2] = callback(guild(4126).Text, obj10);
-      obj6.children = items4;
-      tmp28 = callback2(View, obj6);
+      obj9.children = intl3.string(guild(1212).t["1g9A/f"]);
+      items4[2] = callback(guild(4127).Text, obj9);
+      obj5.children = items4;
+      tmp27 = callback2(View, obj5);
     }
   }
-  items3[1] = tmp28;
+  items3[1] = tmp27;
   obj.children = items3;
+  const obj10 = { style: tmp2.container };
   const items5 = [callback2(closure_9, obj), , , , ];
-  let tmp34 = null;
+  let tmp35 = null;
   if (flag) {
-    tmp34 = null;
+    tmp35 = null;
     if (!enabled) {
       const obj11 = { guild, useButtonComponent: true, useEventsButton: true };
-      tmp34 = callback(importDefault(11424), obj11);
+      tmp35 = callback(importDefault(11387), obj11);
     }
   }
-  items5[1] = tmp34;
+  items5[1] = tmp35;
   if (enabled) {
     const obj12 = { style: tmp2.joinButton };
     const obj13 = { guildId: guild.id, joinSource: JoinGuildSources.CHANNEL_LIST_STICKY_HEADER_LURKER };
-    obj12.children = callback(importDefault(11501), obj13);
+    obj12.children = callback(importDefault(11464), obj13);
     enabled = callback(View, obj12);
   }
   items5[2] = enabled;
-  let tmp43 = null;
+  let tmp44 = null;
   if (tmp) {
     const obj14 = { style: tmp2.divider };
-    tmp43 = callback(View, obj14);
+    tmp44 = callback(View, obj14);
   }
-  items5[3] = tmp43;
-  let tmp46 = null;
+  items5[3] = tmp44;
+  let tmp47 = null;
   if (flag3) {
     const obj15 = { targetRef: ref, guild };
-    tmp46 = callback(importDefault(15034), obj15);
+    tmp47 = callback(importDefault(15044), obj15);
   }
-  items5[4] = tmp46;
-  obj.children = items5;
-  return callback2(View, obj);
+  items5[4] = tmp47;
+  obj10.children = items5;
+  return callback2(View, obj10);
 };

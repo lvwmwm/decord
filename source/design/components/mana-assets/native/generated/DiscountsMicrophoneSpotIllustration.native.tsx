@@ -1,10 +1,10 @@
-// Module ID: 6014
-// Function ID: 49986
+// Module ID: 6934
+// Function ID: 59636
 // Name: DiscountsMicrophoneSpotIllustration
-// Dependencies: [33, 5085, 6015, 2]
+// Dependencies: [33, 5085, 6935, 2]
 // Exports: DiscountsMicrophoneSpotIllustration
 
-// Module 6014 (DiscountsMicrophoneSpotIllustration)
+// Module 6934 (DiscountsMicrophoneSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DiscountsMicrophoneSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const DiscountsMicrophoneSpotIllustration = function DiscountsMicrophoneS
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6015) };
+  obj = { uri: importDefault(6935) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

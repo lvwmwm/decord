@@ -1,10 +1,10 @@
-// Module ID: 14010
-// Function ID: 107132
+// Module ID: 14021
+// Function ID: 107259
 // Name: BountiesModalEndCard
-// Dependencies: [27, 33, 4130, 3991, 4131, 4134, 4554, 13992, 2]
+// Dependencies: [27, 33, 4131, 3992, 4132, 4135, 4555, 14003, 2]
 // Exports: default
 
-// Module 14010 (BountiesModalEndCard)
+// Module 14021 (BountiesModalEndCard)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -35,7 +35,7 @@ export default function BountiesModalEndCard(visible) {
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   const tmp = callback3();
-  visible(3991);
+  visible(3992);
   const fn = function y() {
     const obj = {};
     let num = 0;
@@ -45,7 +45,7 @@ export default function BountiesModalEndCard(visible) {
     obj.opacity = visible(outer1_2[4]).withTiming(num, visible(outer1_2[5]).timingStandard);
     return obj;
   };
-  let obj = { withTiming: visible(4131).withTiming, visible, timingStandard: visible(4134).timingStandard };
+  let obj = { withTiming: visible(4132).withTiming, visible, timingStandard: visible(4135).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 15062259404736;
   fn.__initData = closure_8;
@@ -57,11 +57,11 @@ export default function BountiesModalEndCard(visible) {
     obj = { style: tmp.backdropTint };
     const items1 = [callback(closure_4, obj), , ];
     const obj1 = { colors: ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"], locations: [0, 0.841], style: tmp.backdropGradient };
-    items1[1] = callback(importDefault(4554), obj1);
+    items1[1] = callback(importDefault(4555), obj1);
     const obj2 = { bounty, sourceQuestContent };
-    items1[2] = callback(importDefault(13992), obj2);
+    items1[2] = callback(importDefault(14003), obj2);
     obj.children = items1;
-    visible = callback2(importDefault(3991).View, obj);
+    visible = callback2(importDefault(3992).View, obj);
   }
   return visible;
 };

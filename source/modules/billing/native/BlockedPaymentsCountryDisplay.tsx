@@ -1,10 +1,10 @@
-// Module ID: 7187
-// Function ID: 57912
+// Module ID: 6301
+// Function ID: 56713
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [31, 27, 653, 33, 4130, 689, 4066, 1273, 1212, 1920, 3976, 7188, 7189, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 4067, 1273, 1212, 1921, 3977, 6302, 6303, 2]
 // Exports: default
 
-// Module 7187 (BlockedPaymentsCountryDisplay)
+// Module 6301 (BlockedPaymentsCountryDisplay)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -35,20 +35,20 @@ export default function BlockedPaymentsCountryDisplay() {
   obj = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const obj1 = {};
-  const tmp2 = importDefault(4066)();
+  const tmp2 = importDefault(4067)();
   const tmp3 = closure_7;
   const tmp4 = closure_3;
   const tmp5 = callback;
-  obj1.helpdeskArticle = importDefault(1920).getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS);
+  obj1.helpdeskArticle = importDefault(1921).getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS);
   obj.children = intl2.format(require(1212) /* getSystemLocale */.t.IHxEJU, obj1);
   items[1] = callback(require(1273) /* Button */.LegacyText, obj);
   const obj2 = { style: tmp.image };
-  const obj5 = importDefault(1920);
+  const obj5 = importDefault(1921);
   const tmp6 = closure_4;
   if (obj7.isThemeDark(tmp2)) {
-    let tmp7Result = tmp7(7188);
+    let tmp7Result = tmp7(6302);
   } else {
-    tmp7Result = tmp7(7189);
+    tmp7Result = tmp7(6303);
   }
   obj2.source = tmp7Result;
   items[2] = tmp5(tmp6, obj2);

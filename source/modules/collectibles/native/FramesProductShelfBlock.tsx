@@ -1,10 +1,10 @@
-// Module ID: 14551
-// Function ID: 111038
+// Module ID: 14562
+// Function ID: 111165
 // Name: ListEdgeSpacer
-// Dependencies: [31, 27, 33, 4130, 689, 14533, 5462, 5482, 14023, 14025, 8707, 8704, 8782, 4126, 5449, 7527, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 14544, 5462, 5482, 14034, 14036, 8595, 8592, 8670, 4127, 5449, 6619, 2]
 // Exports: default
 
-// Module 14551 (ListEdgeSpacer)
+// Module 14562 (ListEdgeSpacer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,12 +40,12 @@ export default function _default(block) {
   block = block.block;
   const preferVCPrice = block.preferVCPrice;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = block(14533);
-  const tmp3 = preferVCPrice(14023)();
+  let obj = block(14544);
+  const tmp3 = preferVCPrice(14034)();
   const dependencyMap = tmp3;
   const items = [block.rankedSkuIds, tmp3];
   const memo = React.useMemo(() => tmp3(block.rankedSkuIds), items);
-  let obj1 = block(14025);
+  let obj1 = block(14036);
   const filteredAndSortedProducts = obj1.useFilteredAndSortedProducts({ products: memo });
   const items1 = [preferVCPrice];
   const callback = React.useCallback((arg0) => {
@@ -70,14 +70,14 @@ export default function _default(block) {
     }
     const items2 = [tmp10, , ];
     const obj3 = { style: tmp.header };
-    const items3 = [callback(preferVCPrice(8782), { location: "FramesProductShelfBlock", tooltipPosition: "bottom" }), ];
+    const items3 = [callback(preferVCPrice(8670), { location: "FramesProductShelfBlock", tooltipPosition: "bottom" }), ];
     const obj4 = { variant: "text-sm/semibold", color: "text-overlay-light", children: block.title };
-    items3[1] = callback(block(4126).Text, obj4);
+    items3[1] = callback(block(4127).Text, obj4);
     obj3.children = items3;
     items2[1] = callback2(closure_5, obj3);
     const obj5 = {};
-    const obj6 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: block.title, data: filteredAndSortedProducts, keyExtractor: tmp6, onScroll: obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll, renderItem: callback, decelerationRate: "fast", snapToInterval: block(8704).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(689).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListEdgeSpacer, ListFooterComponent: ListEdgeSpacer, ItemSeparatorComponent: ListItemSeparator };
-    obj5.children = callback(block(7527).FlashList, obj6);
+    const obj6 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: block.title, data: filteredAndSortedProducts, keyExtractor: tmp6, onScroll: obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll, renderItem: callback, decelerationRate: "fast", snapToInterval: block(8592).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(689).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListEdgeSpacer, ListFooterComponent: ListEdgeSpacer, ItemSeparatorComponent: ListItemSeparator };
+    obj5.children = callback(block(6619).FlashList, obj6);
     items2[2] = callback(block(5449).LayerScope, obj5);
     obj.children = items2;
     obj.children = callback2(closure_5, obj);

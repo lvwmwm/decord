@@ -1,14 +1,14 @@
-// Module ID: 12480
-// Function ID: 96811
+// Module ID: 12461
+// Function ID: 96662
 // Name: ManagePlanHeader
-// Dependencies: [5, 57, 31, 27, 3777, 1849, 3778, 3781, 3782, 6637, 6651, 5619, 653, 5126, 4113, 1851, 33, 3, 4130, 689, 1456, 4660, 5091, 4126, 1212, 5127, 4973, 1324, 5462, 7414, 5482, 566, 3842, 3976, 668, 4451, 5450, 7156, 6642, 675, 3776, 44, 5616, 12481, 12482, 7389, 7399, 7172, 4543, 7378, 7419, 7418, 4648, 8060, 12402, 1920, 5167, 4554, 1273, 7487, 1557, 7422, 6636, 4559, 5638, 7835, 12444, 12425, 1390, 4532, 7375, 5793, 7420, 12459, 2]
+// Dependencies: [5, 57, 31, 27, 3778, 1850, 3779, 3782, 3783, 5821, 6271, 5619, 653, 5126, 4114, 1852, 33, 3, 4131, 689, 1456, 4661, 5091, 4127, 1212, 4974, 1324, 5462, 6490, 5482, 566, 3843, 3977, 668, 4452, 5450, 6238, 6495, 675, 3777, 44, 5616, 12462, 12463, 6465, 6475, 6256, 4544, 6454, 6500, 6494, 4649, 9255, 12379, 1921, 5166, 4555, 1273, 6571, 1557, 6503, 5820, 4560, 6244, 7782, 12425, 12402, 1390, 4533, 6448, 6449, 6501, 12440, 2]
 // Exports: default
 
-// Module 12480 (ManagePlanHeader)
+// Module 12461 (ManagePlanHeader)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import LinearGradient from "LinearGradient";
-import initialize from "initialize";
-import get_ActivityIndicator from "useIsMobileVisualRefreshExperimentEnabled";
+import Button from "Button";
+import ManaContext from "ManaContext";
+import get_ActivityIndicator from "mergeLocations";
 import { isNoneSubscription } from "_isNativeReflectConstruct";
 import closure_12 from "_isNativeReflectConstruct";
 import closure_13 from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ import ME from "ME";
 import { getTableDividerWidth } from "TABLE_ROW_HEIGHT";
 import { CustomCheckoutFlow } from "CustomCheckoutFlow";
 import GuildFeatures from "GuildFeatures";
-import jsxProd from "AccessibilityAnnouncer";
+import jsxProd from "keys";
 import importDefaultResult from "get ActivityIndicator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -55,11 +55,11 @@ function ManagePlanHeader() {
     },
     children: callback3(_require(5091).ArrowLargeLeftIcon, { size: "md" })
   };
-  const items = [callback3(_require(4660).PressableOpacity, obj), , ];
+  const items = [callback3(_require(4661).PressableOpacity, obj), , ];
   const obj1 = { variant: "redesign/heading-18/bold", accessibilityRole: "header" };
   const intl = _require(1212).intl;
   obj1.children = intl.string(_require(1212).t["1bX7Tx"]);
-  items[1] = callback3(_require(4126).Text, obj1);
+  items[1] = callback3(_require(4127).Text, obj1);
   items[2] = callback3(closure_8, { style: tmp.backButtonWrapper });
   obj.children = items;
   return callback4(closure_8, obj);
@@ -78,15 +78,15 @@ function SubscriptionAndBillingInfo(subscription) {
   let stateFromStores3;
   let c7;
   c8 = undefined;
-  let tmp2 = callback6(analyticsLocations(stateFromStores2[27])("PremiumManagePlan"));
-  analyticsLocations = analyticsLocations(stateFromStores2[28])().analyticsLocations;
-  let obj = subscription(stateFromStores2[29]);
-  obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations, analyticsLocation: analyticsLocations(stateFromStores2[30]).PREMIUM_SUBSCRIPTION_DETAILS };
+  let tmp2 = callback6(analyticsLocations(stateFromStores2[26])("PremiumManagePlan"));
+  analyticsLocations = analyticsLocations(stateFromStores2[27])().analyticsLocations;
+  let obj = subscription(stateFromStores2[28]);
+  obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations, analyticsLocation: analyticsLocations(stateFromStores2[29]).PREMIUM_SUBSCRIPTION_DETAILS };
   const first = first2(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
-  let obj2 = subscription(stateFromStores2[29]);
+  let obj2 = subscription(stateFromStores2[28]);
   obj = { subscriptionId: subscription.id, preventFetch: subscription.status !== constants2.PAST_DUE };
   const first1 = first2(obj2.useGetSubscriptionInvoice(obj), 1)[0];
-  let obj4 = subscription(stateFromStores2[31]);
+  let obj4 = subscription(stateFromStores2[30]);
   let items = [closure_18];
   const stateFromStores = obj4.useStateFromStores(items, () => {
     if (subscription.isOnPlatformMatchingExternalPaymentGateway) {
@@ -102,41 +102,41 @@ function SubscriptionAndBillingInfo(subscription) {
       return null;
     }
   });
-  let obj5 = subscription(stateFromStores2[31]);
+  let obj5 = subscription(stateFromStores2[30]);
   const items1 = [closure_15];
   const stateFromStores1 = obj5.useStateFromStores(items1, () => outer1_15.getPremiumTypeSubscription());
-  let obj6 = subscription(stateFromStores2[31]);
+  let obj6 = subscription(stateFromStores2[30]);
   const items2 = [closure_13];
   stateFromStores2 = obj6.useStateFromStores(items2, () => outer1_13.isSubscriptionFetching);
   let tmp8 = null !== stateFromStores1 && stateFromStores1.hasActiveTrial;
   let obj7 = subscription(stateFromStores2[20]);
   callback = obj7.useNavigation();
-  let obj8 = subscription(stateFromStores2[32]);
-  let obj9 = subscription(stateFromStores2[33]);
+  let obj8 = subscription(stateFromStores2[31]);
+  let obj9 = subscription(stateFromStores2[32]);
   const isThemeLightResult = obj9.isThemeLight(obj8.useThemeContext().theme);
   const tmp10 = first2(React.useState(null), 2);
   first2 = tmp10[0];
   React = tmp10[1];
-  let obj10 = subscription(stateFromStores2[31]);
+  let obj10 = subscription(stateFromStores2[30]);
   const items3 = [closure_17];
   stateFromStores3 = obj10.useStateFromStores(items3, () => outer1_17.getState());
   const items4 = [first2, stateFromStores2, stateFromStores3];
   const effect = React.useEffect(() => {
     let tmp = "opening_mobile_web" === first2;
     if (tmp) {
-      tmp = stateFromStores3 !== subscription(stateFromStores2[34]).AppStates.ACTIVE;
+      tmp = stateFromStores3 !== subscription(stateFromStores2[33]).AppStates.ACTIVE;
     }
     if (tmp) {
       validElement("in_mobile_web");
     }
     let tmp7 = "in_mobile_web" === first2;
     if (tmp7) {
-      tmp7 = stateFromStores3 === subscription(stateFromStores2[34]).AppStates.ACTIVE;
+      tmp7 = stateFromStores3 === subscription(stateFromStores2[33]).AppStates.ACTIVE;
     }
     if (tmp7) {
-      const subscriptions = subscription(stateFromStores2[35]).fetchSubscriptions();
+      const subscriptions = subscription(stateFromStores2[34]).fetchSubscriptions();
       validElement("start_fetching_update");
-      const obj = subscription(stateFromStores2[35]);
+      const obj = subscription(stateFromStores2[34]);
     }
     if (tmp16) {
       validElement("fetching_update");
@@ -145,7 +145,7 @@ function SubscriptionAndBillingInfo(subscription) {
       validElement(null);
     }
   }, items4);
-  const tmp14 = analyticsLocations(stateFromStores2[36])(() => subscription(stateFromStores2[37]).getNewAnalyticsLoadId());
+  const tmp14 = analyticsLocations(stateFromStores2[35])(() => subscription(stateFromStores2[36]).getNewAnalyticsLoadId());
   c7 = tmp14;
   const items5 = [subscription, first2, analyticsLocations, tmp14];
   const memo = React.useMemo(() => {
@@ -157,16 +157,16 @@ function SubscriptionAndBillingInfo(subscription) {
           shouldAllowExternalManagement: true,
           onSuccessCallback(result_count) {
                 outer2_31.log("Successfully opened mobile web Nitro Management page");
-                let obj = analyticsLocations(stateFromStores2[39]);
+                let obj = analyticsLocations(stateFromStores2[38]);
                 obj = { load_id: outer1_7 };
-                const items = [...outer1_1, analyticsLocations(stateFromStores2[30]).MOBILE_APP_MANAGE_PREMIUM_SUBSCRIPTION_CTA];
+                const items = [...outer1_1, analyticsLocations(stateFromStores2[29]).MOBILE_APP_MANAGE_PREMIUM_SUBSCRIPTION_CTA];
                 obj.location_stack = items;
                 obj.custom_checkout_flow = outer2_24.MOBILE_WEB_REDIRECT_CHECKOUT;
                 obj.track(outer2_19.MOBILE_OPEN_STANDALONE_MANAGE_SUBSCRIPTION_PAGE, obj);
                 outer1_5("opening_mobile_web");
               }
         };
-        const externalManagementMessage = subscription(stateFromStores2[38]).getExternalManagementMessage(subscription, obj);
+        const externalManagementMessage = subscription(stateFromStores2[37]).getExternalManagementMessage(subscription, obj);
         let tmp6 = null;
         if (null != externalManagementMessage) {
           let tmp2 = externalManagementMessage;
@@ -187,22 +187,22 @@ function SubscriptionAndBillingInfo(subscription) {
   } else {
     let planIdFromInvoice = analyticsLocations;
     planIdFromInvoice = stateFromStores2;
-    planIdFromInvoice = analyticsLocations(stateFromStores2[40]).getPlanIdFromInvoice(subscription, first);
-    const obj58 = analyticsLocations(stateFromStores2[40]);
-    planIdFromInvoice = analyticsLocations(stateFromStores2[40]).getStatusFromInvoice(subscription, first);
+    planIdFromInvoice = analyticsLocations(stateFromStores2[39]).getPlanIdFromInvoice(subscription, first);
+    const obj58 = analyticsLocations(stateFromStores2[39]);
+    planIdFromInvoice = analyticsLocations(stateFromStores2[39]).getStatusFromInvoice(subscription, first);
     planIdFromInvoice = table;
     planIdFromInvoice = table[planIdFromInvoice];
-    planIdFromInvoice = analyticsLocations(stateFromStores2[41])(null != planIdFromInvoice, "missing subscription planInfo");
-    const obj59 = analyticsLocations(stateFromStores2[40]);
+    planIdFromInvoice = analyticsLocations(stateFromStores2[40])(null != planIdFromInvoice, "missing subscription planInfo");
+    const obj59 = analyticsLocations(stateFromStores2[39]);
     const obj1 = { subscription, planId: planIdFromInvoice };
     let formatRateResult = null;
     if (null != stateFromStores) {
-      let obj11 = subscription(stateFromStores2[42]);
+      let obj11 = subscription(stateFromStores2[41]);
       formatRateResult = obj11.formatRate(stateFromStores.priceString, planIdFromInvoice.interval, planIdFromInvoice.intervalCount);
     }
     obj1.price = formatRateResult;
     obj1.includePremiumGuilds = true;
-    const planDescription = analyticsLocations(stateFromStores2[40]).getPlanDescription(obj1);
+    const planDescription = analyticsLocations(stateFromStores2[39]).getPlanDescription(obj1);
     if (planIdFromInvoice !== constants2.CANCELED) {
       planIdFromInvoice = constants2;
       if (planIdFromInvoice !== constants2.PAUSE_PENDING) {
@@ -213,19 +213,19 @@ function SubscriptionAndBillingInfo(subscription) {
             const date = new Date(subscription.currentPeriodEnd);
             let result = date;
             if (!subscription.isPurchasedExternally) {
-              let obj26 = subscription(stateFromStores2[40]);
+              let obj26 = subscription(stateFromStores2[39]);
               result = obj26.extendDateWithUnconsumedFractionalPremium(date, fractionalPremiumInfo.unactivatedUnits);
             }
             obj2 = { style: tmp2.container };
             const obj3 = { style: tmp2.mutationWarningContainer };
             obj4 = { size: "md" };
-            const items6 = [callback3(subscription(stateFromStores2[52]).AnnouncementsWarningIcon, obj4), ];
+            const items6 = [callback3(subscription(stateFromStores2[51]).AnnouncementsWarningIcon, obj4), ];
             obj5 = { style: tmp2.mutationText, variant: "heading-sm/medium", color: "text-default" };
             const intl6 = subscription(stateFromStores2[24]).intl;
             obj6 = {};
             if (!subscription.hasExternalPlanChange) {
               if (!isNoneSubscription(subscription.renewalMutations.planId)) {
-                let obj32 = analyticsLocations(stateFromStores2[40]);
+                let obj32 = analyticsLocations(stateFromStores2[39]);
                 let displayName = obj32.getDisplayName(subscription.renewalMutations.planId);
               }
               obj6.planName = displayName;
@@ -235,7 +235,7 @@ function SubscriptionAndBillingInfo(subscription) {
               obj3.children = items6;
               const items7 = [tmp70(tmp71, obj3), , ];
               obj7 = { premiumType: closure_27.TIER_2, hideButton: true, isPremiumGroup, premiumGroupRole };
-              items7[1] = callback3(analyticsLocations(stateFromStores2[53]), obj7);
+              items7[1] = callback3(analyticsLocations(stateFromStores2[52]), obj7);
               obj8 = { style: tmp2.extraInfoContainer };
               obj9 = { variant: "eyebrow", color: "text-default", accessibilityRole: "header" };
               const intl7 = subscription(stateFromStores2[24]).intl;
@@ -247,7 +247,7 @@ function SubscriptionAndBillingInfo(subscription) {
               obj11.children = intl8.string(subscription(stateFromStores2[24]).t["MTG+3O"]);
               const items9 = [callback3(subscription(stateFromStores2[23]).Text, obj11), , ];
               const obj12 = { variant: "text-sm/medium", color: "text-default" };
-              let obj40 = subscription(stateFromStores2[50]);
+              let obj40 = subscription(stateFromStores2[49]);
               obj12.children = obj40.getBillingInformationStringNative(subscription, first, first1);
               items9[1] = callback3(subscription(stateFromStores2[23]).Text, obj12);
               items9[2] = null != memo && memo;
@@ -258,7 +258,7 @@ function SubscriptionAndBillingInfo(subscription) {
               obj2.children = items7;
               return tmp68(tmp69, obj2);
             }
-            let obj33 = subscription(stateFromStores2[40]);
+            let obj33 = subscription(stateFromStores2[39]);
             displayName = obj33.getExternalPlanDisplayName(subscription.renewalMutations);
             tmp68 = callback4;
             tmp69 = c8;
@@ -273,12 +273,12 @@ function SubscriptionAndBillingInfo(subscription) {
             planIdFromInvoice = callback4;
             planIdFromInvoice = c8;
             if (tmp8) {
-              const obj15 = { style: tmp2.pillPosition, children: callback3(subscription(stateFromStores2[54]).PremiumReferralTrialPill, {}) };
+              const obj15 = { style: tmp2.pillPosition, children: callback3(subscription(stateFromStores2[53]).PremiumReferralTrialPill, {}) };
               tmp8 = callback3(c8, obj15);
             }
             const items10 = [tmp8, ];
             const obj16 = { premiumType: closure_27.TIER_2, forFractionalPremium: fractionalPremiumInfo.fractionalState !== constants3.NONE, hideButton: true, isPremiumGroup, premiumGroupRole };
-            items10[1] = callback3(analyticsLocations(stateFromStores2[53]), obj16);
+            items10[1] = callback3(analyticsLocations(stateFromStores2[52]), obj16);
             obj14.children = items10;
             const items11 = [planIdFromInvoice(planIdFromInvoice, obj14), ];
             const obj17 = { style: tmp2.extraInfoContainer };
@@ -295,10 +295,10 @@ function SubscriptionAndBillingInfo(subscription) {
               const intl2 = subscription(stateFromStores2[24]).intl;
               const obj21 = {
                 onSwitchPlans() {
-                              return subscription(stateFromStores2[49]).handleManageSubscription(subscription, _isNativeReflectConstruct, analyticsLocations);
+                              return subscription(stateFromStores2[48]).handleManageSubscription(subscription, _isNativeReflectConstruct, analyticsLocations);
                             },
                 onCancel() {
-                              return subscription(stateFromStores2[49]).onCancelClick(subscription, analyticsLocations);
+                              return subscription(stateFromStores2[48]).onCancelClick(subscription, analyticsLocations);
                             }
               };
               stringResult = intl2.format(subscription(stateFromStores2[24]).t.fvk30i, obj21);
@@ -306,7 +306,7 @@ function SubscriptionAndBillingInfo(subscription) {
             obj20.children = stringResult;
             const items13 = [callback3(subscription(stateFromStores2[23]).Text, obj20), , ];
             const obj22 = { subscription };
-            items13[1] = callback3(subscription(stateFromStores2[51]).GoogleManagementLink, obj22);
+            items13[1] = callback3(subscription(stateFromStores2[50]).GoogleManagementLink, obj22);
             items13[2] = null != memo && memo;
             obj19.children = items13;
             items12[1] = callback4(c8, obj19);
@@ -324,7 +324,7 @@ function SubscriptionAndBillingInfo(subscription) {
             obj26.children = intl5.string(subscription(stateFromStores2[24]).t.KXQjfc);
             const items15 = [callback3(subscription(stateFromStores2[23]).Text, obj26), ];
             const obj27 = { variant: "text-sm/medium", color: "text-default" };
-            obj25 = subscription(stateFromStores2[50]);
+            obj25 = subscription(stateFromStores2[49]);
             obj27.children = obj25.getBillingInformationStringNative(subscription, first, first1, false, fractionalPremiumInfo);
             items15[1] = callback3(subscription(stateFromStores2[23]).Text, obj27);
             obj24.children = items15;
@@ -344,9 +344,9 @@ function SubscriptionAndBillingInfo(subscription) {
     planIdFromInvoice = c7;
     planIdFromInvoice = analyticsLocations;
     if (isThemeLightResult) {
-      planIdFromInvoice = planIdFromInvoice[43];
+      planIdFromInvoice = planIdFromInvoice[42];
     } else {
-      planIdFromInvoice = planIdFromInvoice[44];
+      planIdFromInvoice = planIdFromInvoice[43];
     }
     obj30.source = planIdFromInvoice(planIdFromInvoice);
     obj30.style = tmp2.headerBackground;
@@ -358,7 +358,7 @@ function SubscriptionAndBillingInfo(subscription) {
     planIdFromInvoice = callback4;
     planIdFromInvoice = c8;
     planIdFromInvoice = analyticsLocations;
-    obj32.source = analyticsLocations(stateFromStores2[45]);
+    obj32.source = analyticsLocations(stateFromStores2[44]);
     obj32.style = tmp2.wumpusImg;
     const items16 = [callback3(stateFromStores3, obj32), ];
     obj33 = {};
@@ -366,9 +366,9 @@ function SubscriptionAndBillingInfo(subscription) {
     planIdFromInvoice = callback3;
     planIdFromInvoice = stateFromStores3;
     if (isThemeLightResult) {
-      planIdFromInvoice = planIdFromInvoice[46];
+      planIdFromInvoice = planIdFromInvoice[45];
     } else {
-      planIdFromInvoice = planIdFromInvoice[47];
+      planIdFromInvoice = planIdFromInvoice[46];
     }
     obj33.source = planIdFromInvoice(planIdFromInvoice);
     obj33.style = tmp2.logoStyle;
@@ -398,7 +398,7 @@ function SubscriptionAndBillingInfo(subscription) {
       obj36.onPress = callback(planIdFromInvoice);
       obj36.loading = tmp17;
       obj36.disabled = tmp17;
-      obj35.children = callback3(subscription(stateFromStores2[48]).Button, obj36);
+      obj35.children = callback3(subscription(stateFromStores2[47]).Button, obj36);
       isOnPlatformMatchingExternalPaymentGateway = callback3(c8, obj35);
     }
     items18[1] = isOnPlatformMatchingExternalPaymentGateway;
@@ -424,17 +424,17 @@ function SubscriptionAndBillingInfo(subscription) {
     const items21 = [callback3(subscription(stateFromStores2[23]).Text, obj40), , , ];
     planIdFromInvoice = callback3;
     const obj41 = { variant: "text-sm/medium", color: "text-default" };
-    const obj60 = analyticsLocations(stateFromStores2[40]);
+    const obj60 = analyticsLocations(stateFromStores2[39]);
     const tmp95 = callback4;
     const tmp96 = c8;
     const tmp97 = callback4;
     const tmp98 = c8;
     const tmp99 = callback4;
-    obj41.children = subscription(stateFromStores2[50]).getBillingInformationStringNative(subscription, first, first1);
+    obj41.children = subscription(stateFromStores2[49]).getBillingInformationStringNative(subscription, first, first1);
     items21[1] = callback3(subscription(stateFromStores2[23]).Text, obj41);
     planIdFromInvoice = callback3;
     const obj42 = { subscription };
-    items21[2] = callback3(subscription(stateFromStores2[51]).GoogleManagementLink, obj42);
+    items21[2] = callback3(subscription(stateFromStores2[50]).GoogleManagementLink, obj42);
     items21[3] = null != memo && memo;
     obj39.children = items21;
     items20[1] = planIdFromInvoice(planIdFromInvoice, obj39);
@@ -456,21 +456,21 @@ function FractionalPremiumCredits(durationText) {
   let obj = { style: tmp.container };
   if (showPremiumFeaturesCard) {
     obj = { premiumType: closure_27.TIER_2, forFractionalPremium: true, hideButton: true };
-    showPremiumFeaturesCard = callback3(importDefault(8060), obj);
+    showPremiumFeaturesCard = callback3(importDefault(9255), obj);
   }
   const items = [showPremiumFeaturesCard, ];
   obj = { style: tmp.extraInfoContainer };
   const obj1 = { variant: "eyebrow", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t.Obre8v);
-  const items1 = [callback3(require(4126) /* Text */.Text, obj1), , ];
+  const items1 = [callback3(require(4127) /* Text */.Text, obj1), , ];
   const obj2 = { variant: "text-md/semibold", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const obj3 = {};
-  let obj6 = importDefault(1920);
+  let obj6 = importDefault(1921);
   obj3.helpCenterLink = obj6.getArticleURL(constants.FRACTIONAL_PREMIUM_ABOUT);
   obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.AYGoBn, obj3);
-  items1[1] = callback3(require(4126) /* Text */.Text, obj2);
+  items1[1] = callback3(require(4127) /* Text */.Text, obj2);
   const obj4 = {};
   const obj5 = { style: tmp.fpRowStart, start: true, end: false, variant: "primary" };
   obj6 = { style: tmp.fpRowIcon };
@@ -482,26 +482,26 @@ function FractionalPremiumCredits(durationText) {
   const items2 = [importDefault(689).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(689).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj7.colors = items2;
   const obj9 = {};
-  const obj10 = { color: importDefault(689).unsafe_rawColors.WHITE, source: importDefault(7487), size: require(1273) /* Button */.IconSizes.LARGE };
+  const obj10 = { color: importDefault(689).unsafe_rawColors.WHITE, source: importDefault(6571), size: require(1273) /* Button */.IconSizes.LARGE };
   obj9.children = callback3(require(1273) /* Button */.Icon, obj10);
   obj7.children = callback3(closure_8, obj9);
-  obj6.children = callback3(importDefault(4554), obj7);
+  obj6.children = callback3(importDefault(4555), obj7);
   const items3 = [callback3(closure_8, obj6), ];
   const obj11 = { style: tmp.fpRowContent };
   const obj12 = { variant: "text-sm/semibold", style: tmp.fpUnitsTitle };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj12.children = intl3.string(require(1212) /* getSystemLocale */.t.DFMPWS);
-  const items4 = [callback3(require(4126) /* Text */.Text, obj12), ];
+  const items4 = [callback3(require(4127) /* Text */.Text, obj12), ];
   if (hasUnactivatedUnits) {
     if (fractionalPremiumInfo.fractionalState === constants3.NONE) {
       const obj13 = { variant: "text-sm/medium", children: unactivatedHoursString };
-      let tmp16 = callback3(require(4126) /* Text */.Text, obj13);
+      let tmp16 = callback3(require(4127) /* Text */.Text, obj13);
     }
     items4[1] = tmp16;
     obj11.children = items4;
     items3[1] = closure_30(closure_8, obj11);
     obj5.children = items3;
-    const items5 = [tmp10(require(5167) /* getCardBackgroundToken */.Card, obj5), , ];
+    const items5 = [tmp10(require(5166) /* getCardBackgroundToken */.Card, obj5), , ];
     const obj14 = { style: tmp.dividerContainer };
     const obj15 = { style: tmp.divider };
     obj14.children = callback3(closure_8, obj15);
@@ -514,14 +514,14 @@ function FractionalPremiumCredits(durationText) {
         const obj19 = { variant: "text-md/semibold" };
         const intl6 = require(1212) /* getSystemLocale */.intl;
         obj19.children = intl6.string(require(1212) /* getSystemLocale */.t["hT6i/0"]);
-        const items6 = [callback3(require(4126) /* Text */.Text, obj19), ];
+        const items6 = [callback3(require(4127) /* Text */.Text, obj19), ];
         let tmp40 = undefined !== activationDate;
         if (tmp40) {
           const obj20 = { variant: "text-xs/medium", color: "text-subtle" };
           const intl7 = require(1212) /* getSystemLocale */.intl;
           const obj21 = { activateDate: activationDate };
           obj20.children = intl7.format(require(1212) /* getSystemLocale */.t["0Vwb/l"], obj21);
-          tmp40 = callback3(require(4126) /* Text */.Text, obj20);
+          tmp40 = callback3(require(4127) /* Text */.Text, obj20);
         }
         items6[1] = tmp40;
         obj18.children = items6;
@@ -534,7 +534,7 @@ function FractionalPremiumCredits(durationText) {
         if (fractionalPremiumInfo.fractionalState === constants3.NONE) {
           const obj22 = { style: tmp.fpUnactivatedHoursPill };
           const obj23 = { variant: "text-sm/medium", style: tmp.fpTimeRemainingText, children: unactivatedHoursString };
-          obj22.children = callback3(require(4126) /* Text */.Text, obj23);
+          obj22.children = callback3(require(4127) /* Text */.Text, obj23);
           let tmp50 = callback3(closure_8, obj22);
         }
         items7[1] = tmp50;
@@ -550,19 +550,19 @@ function FractionalPremiumCredits(durationText) {
       }
       const obj24 = { style: tmp.fpTimeRemainingPill };
       const obj25 = { variant: "text-sm/medium", style: tmp.fpTimeRemainingText, children: durationText.durationText };
-      obj24.children = callback3(require(4126) /* Text */.Text, obj25);
+      obj24.children = callback3(require(4127) /* Text */.Text, obj25);
       tmp50 = callback3(closure_8, obj24);
     }
     const obj26 = { variant: "text-md/semibold", style: tmp.fpTimeRemaining };
     const intl5 = require(1212) /* getSystemLocale */.intl;
     obj26.children = intl5.string(require(1212) /* getSystemLocale */.t["3G0CTC"]);
-    tmp35Result = callback3(require(4126) /* Text */.Text, obj26);
+    tmp35Result = callback3(require(4127) /* Text */.Text, obj26);
     tmp24 = callback3;
   }
   const obj27 = { variant: "text-sm/medium", style: tmp.fpUnitsStatusText };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj27.children = intl4.string(require(1212) /* getSystemLocale */.t["B66Z+f"]);
-  tmp16 = callback3(require(4126) /* Text */.Text, obj27);
+  tmp16 = callback3(require(4127) /* Text */.Text, obj27);
 }
 ({ Image: closure_6, ImageBackground: closure_7, View: closure_8, ScrollView: closure_9, ActivityIndicator: closure_10 } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_19, HelpdeskArticles: closure_20, SubscriptionStatusTypes: closure_21, UserSettingsSections: closure_22 } = ME);
@@ -621,18 +621,18 @@ let closure_34 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   const obj9 = { marginEnd: importDefault(689).modules.mobile.TABLE_ROW_PADDING };
   obj.fpRowEnd = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWEST };
   const obj11 = {};
-  let CARD_PRIMARY_BG;
+  let prop;
   if (!arg0) {
-    CARD_PRIMARY_BG = require(5127) /* createCardBackgroundToken */.CARD_PRIMARY_BG;
+    prop = importDefault(689).colors.TABLEROW_BACKGROUND_DEFAULT;
   }
-  obj11.backgroundColor = CARD_PRIMARY_BG;
+  obj11.backgroundColor = prop;
   obj11.height = tmp;
   obj.dividerContainer = obj11;
   const obj12 = { height: tmp };
   if (arg0) {
     let DIVIDER_BACKGROUND = importDefault(689).colors.BORDER_SUBTLE;
   } else {
-    DIVIDER_BACKGROUND = require(4973) /* result */.DIVIDER_BACKGROUND;
+    DIVIDER_BACKGROUND = require(4974) /* result */.DIVIDER_BACKGROUND;
   }
   obj12.backgroundColor = DIVIDER_BACKGROUND;
   obj.divider = obj12;
@@ -647,7 +647,7 @@ export default function PremiumManagePlan() {
   const tmp = _createForOfIteratorHelperLoose();
   const rect = importDefault(1557)();
   const top = rect.top;
-  let obj = navigation(7422);
+  let obj = navigation(6503);
   const youBarSettingsOutsideSafeAreaTop = obj.useYouBarSettingsOutsideSafeAreaTop();
   let obj1 = navigation(1456);
   navigation = obj1.useNavigation();
@@ -668,29 +668,29 @@ export default function PremiumManagePlan() {
   let obj4 = navigation(566);
   const items3 = [closure_12];
   const stateFromStores1 = obj4.useStateFromStores(items3, () => outer1_12.getCurrentUser());
-  const tmp9 = importDefault(6636)({ forceFetch: true });
-  importDefault(4559)(() => {
+  const tmp9 = importDefault(5820)({ forceFetch: true });
+  importDefault(4560)(() => {
     let isSubscriptionFetching = outer1_15.hasFetchedSubscriptions();
     if (!isSubscriptionFetching) {
       isSubscriptionFetching = outer1_13.isSubscriptionFetching;
     }
     if (!isSubscriptionFetching) {
-      const subscriptions = navigation(outer1_2[35]).fetchSubscriptions();
-      const obj = navigation(outer1_2[35]);
+      const subscriptions = navigation(outer1_2[34]).fetchSubscriptions();
+      const obj = navigation(outer1_2[34]);
     }
     let result = outer1_14.isLoadedForPremiumSKUs();
     if (!result) {
       result = outer1_14.isFetchingForPremiumSKUs();
     }
     if (!result) {
-      const premiumSubscriptionPlans = navigation(outer1_2[64]).fetchPremiumSubscriptionPlans();
-      const obj2 = navigation(outer1_2[64]);
+      const premiumSubscriptionPlans = navigation(outer1_2[63]).fetchPremiumSubscriptionPlans();
+      const obj2 = navigation(outer1_2[63]);
     }
   });
-  let obj6 = navigation(7835);
+  let obj6 = navigation(7782);
   let isInReverseTrial = obj6.useIsInReverseTrial();
-  const tmp12 = importDefault(12444);
-  let obj7 = navigation(3776);
+  const tmp12 = importDefault(12425);
+  let obj7 = navigation(3777);
   const unactivatedFractionalPremiumDurationString = obj7.getUnactivatedFractionalPremiumDurationString(tmp9);
   if (null !== first) {
     if (!first.isPurchasedExternally) {
@@ -708,10 +708,10 @@ export default function PremiumManagePlan() {
   if (!tmp15) {
     tmp15 = tmp14;
   }
-  let obj8 = navigation(3842);
+  let obj8 = navigation(3843);
   importDefault = React.useRef(false);
   const callback = React.useCallback((nativeEvent) => {
-    let obj = navigation(outer1_2[67]);
+    let obj = navigation(outer1_2[66]);
     obj = { nativeEvent: nativeEvent.nativeEvent, trackedType: "your_nitro_plan", hasTrackedScrolledToBottom: closure_1 };
     return obj.trackIfScrolledToBottom(obj);
   }, []);
@@ -749,7 +749,7 @@ export default function PremiumManagePlan() {
   const items5 = [tmp.topBlur, ];
   obj1 = {};
   let num = 0;
-  const tmp12Result = importDefault(12444)(tmp9.endsAt, navigation(12444).CountDownMessageTypes.SHORT_TIME);
+  const tmp12Result = importDefault(12425)(tmp9.endsAt, navigation(12425).CountDownMessageTypes.SHORT_TIME);
   const tmp23 = callback4;
   const tmp24 = closure_8;
   const tmp25 = callback3;
@@ -760,7 +760,7 @@ export default function PremiumManagePlan() {
   items5[1] = obj1;
   obj.style = items5;
   obj.blurTheme = obj8.useThemeContext().theme;
-  const items6 = [tmp25(importDefault(4532), obj), ];
+  const items6 = [tmp25(importDefault(4533), obj), ];
   obj2 = {};
   const items7 = [tmp.container, ];
   obj3 = {};
@@ -785,7 +785,7 @@ export default function PremiumManagePlan() {
   const items9 = [tmp31, , , , , , ];
   if (isInReverseTrial) {
     obj6 = { premiumType: closure_27.TIER_2, forFractionalPremium: true, hideButton: true };
-    isInReverseTrial = callback3(importDefault(8060), obj6);
+    isInReverseTrial = callback3(importDefault(9255), obj6);
   }
   items9[1] = isInReverseTrial;
   let tmp38 = result;
@@ -794,7 +794,7 @@ export default function PremiumManagePlan() {
   }
   if (tmp38) {
     obj7 = { premiumType: closure_27.TIER_2, hideButton: true, hidePrice: true, isPremiumGroup: true, premiumGroupRole };
-    tmp38 = callback3(importDefault(8060), obj7);
+    tmp38 = callback3(importDefault(9255), obj7);
   }
   items9[2] = tmp38;
   if (tmp15) {
@@ -809,10 +809,10 @@ export default function PremiumManagePlan() {
       onClickManagePremiumGuild() {
           const routes = navigation.getState().routes;
           const found = routes.find((name) => name.name === outer2_22.GUILD_BOOSTING);
-          let obj = callback(outer1_2[70]);
+          let obj = callback(outer1_2[69]);
           obj.setSection(outer1_22.GUILD_BOOSTING);
           obj = { destinationPane: outer1_22.GUILD_BOOSTING };
-          const result = navigation(outer1_2[71]).trackUserSettingsPaneViewed(obj);
+          const result = navigation(outer1_2[70]).trackUserSettingsPaneViewed(obj);
           if (null != found) {
             navigation.navigate(found);
           } else {
@@ -821,16 +821,16 @@ export default function PremiumManagePlan() {
         },
       subscription: first
     };
-    const items10 = [callback3(importDefault(7378), obj10), ];
+    const items10 = [callback3(importDefault(6454), obj10), ];
     const obj11 = { style: tmp.billingInfo, subscription: first };
-    items10[1] = callback3(importDefault(7418), obj11);
+    items10[1] = callback3(importDefault(6494), obj11);
     obj9.children = items10;
     tmp20 = callback4(closure_8, obj9);
   }
   items9[4] = tmp20;
   const obj12 = { style: tmp.accountCredit, creditListContainerStyle: tmp.accountCreditList, currentSubscription: first, entitlements: stateFromStores2 };
   let tmp54 = null != result;
-  const tmp26 = importDefault(4532);
+  const tmp26 = importDefault(4533);
   const tmp27 = callback4;
   const tmp28 = closure_9;
   const tmp29 = callback4;
@@ -840,15 +840,15 @@ export default function PremiumManagePlan() {
     tmp54 = result;
   }
   obj12.hasPremiumGroup = tmp54;
-  items9[5] = tmp52(importDefault(7420), obj12);
+  items9[5] = tmp52(importDefault(6501), obj12);
   const obj13 = { style: tmp.featuresTable, variant: "nitro_home" };
-  const tmp53 = importDefault(7420);
+  const tmp53 = importDefault(6501);
   const intl = navigation(1212).intl;
   obj13.titleOverride = intl.string(navigation(1212).t.QXx2gs);
   obj13.isFractionalOnly = tmp9.fractionalState === constants3.FP_ONLY;
   obj13.isPremiumGroup = result;
   obj13.premiumGroupRole = premiumGroupRole;
-  items9[6] = callback3(importDefault(12459), obj13);
+  items9[6] = callback3(importDefault(12440), obj13);
   obj4.children = items9;
   items8[1] = tmp29(tmp30, obj4);
   obj2.children = items8;

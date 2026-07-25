@@ -1,9 +1,9 @@
-// Module ID: 6787
-// Function ID: 53607
+// Module ID: 5783
+// Function ID: 50881
 // Name: AssetDisplayConfigRecord
 // Dependencies: [6, 7, 2]
 
-// Module 6787 (AssetDisplayConfigRecord)
+// Module 5783 (AssetDisplayConfigRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

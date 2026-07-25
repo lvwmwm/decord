@@ -1,10 +1,10 @@
-// Module ID: 15077
-// Function ID: 114824
+// Module ID: 15087
+// Function ID: 114951
 // Name: GuildRoleSubscriptionsRow
-// Dependencies: [31, 653, 1355, 10289, 33, 4130, 689, 1198, 4098, 15078, 1934, 11452, 1212, 10145, 2]
+// Dependencies: [31, 653, 1355, 10222, 33, 4131, 689, 1198, 4099, 15088, 1935, 11415, 1212, 10077, 2]
 // Exports: default
 
-// Module 15077 (GuildRoleSubscriptionsRow)
+// Module 15087 (GuildRoleSubscriptionsRow)
 import result from "result";
 import { Routes } from "ME";
 import { StaticChannelRoute } from "set";
@@ -36,7 +36,7 @@ export default function GuildRoleSubscriptionsRow(selected) {
     };
     obj.openLazy(id(outer1_2[10])(outer1_2[9], outer1_2.paths), "role-subscriptions-channel-action-sheet", obj);
   }, items1);
-  const ChannelModes = id(11452).ChannelModes;
+  const ChannelModes = id(11415).ChannelModes;
   const tmp4 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
   let obj = { onPress: callback, onLongPress: callback1, style: _createForOfIteratorHelperLoose().container, accessible: true };
   const tmp = _createForOfIteratorHelperLoose();
@@ -48,8 +48,8 @@ export default function GuildRoleSubscriptionsRow(selected) {
   const intl2 = id(1212).intl;
   obj.name = intl2.string(id(1212).t["KzCF/6"]);
   obj.mode = tmp4;
-  obj.name = jsx(id(11452).BaseChannelName, {});
-  obj = { disableColor: true, mode: tmp4, source: importDefault(10145) };
-  obj.icon = jsx(id(11452).BaseChannelIcon, { disableColor: true, mode: tmp4, source: importDefault(10145) });
-  return jsx(importDefault(11452), { disableColor: true, mode: tmp4, source: importDefault(10145) });
+  obj.name = jsx(id(11415).BaseChannelName, {});
+  obj = { disableColor: true, mode: tmp4, source: importDefault(10077) };
+  obj.icon = jsx(id(11415).BaseChannelIcon, { disableColor: true, mode: tmp4, source: importDefault(10077) });
+  return jsx(importDefault(11415), { disableColor: true, mode: tmp4, source: importDefault(10077) });
 };

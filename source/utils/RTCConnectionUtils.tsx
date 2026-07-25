@@ -1,8 +1,8 @@
-// Module ID: 10797
-// Function ID: 83870
+// Module ID: 10769
+// Function ID: 83612
 // Dependencies: [653, 1212, 2]
 
-// Module 10797
+// Module 10769
 import ME from "ME";
 
 let closure_2;
@@ -27,7 +27,7 @@ export default {
     } else if (constants.AWAITING_ENDPOINT === arg0) {
       ERROR = constants2.CONNECTING;
       const intl8 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl8.string(require(1212) /* getSystemLocale */.t.xEbu0Q);
+      stringResult = intl8.string(require(1212) /* getSystemLocale */.t.uQle7a);
     } else if (constants.RTC_CONNECTED === arg0) {
       const intl7 = require(1212) /* getSystemLocale */.intl;
       const string = intl7.string;

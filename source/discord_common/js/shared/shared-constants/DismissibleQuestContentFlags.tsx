@@ -1,9 +1,9 @@
-// Module ID: 4984
-// Function ID: 42975
+// Module ID: 4985
+// Function ID: 42987
 // Name: DismissibleQuestContentFlags
 // Dependencies: [2]
 
-// Module 4984 (DismissibleQuestContentFlags)
+// Module 4985 (DismissibleQuestContentFlags)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/DismissibleQuestContentFlags.tsx");
 
 export const DismissibleQuestContentFlags = { GIFT_INVENTORY_SETTINGS_BADGE: 1, QUEST_BAR: 2, QUEST_BAR_V2: 2, QUEST_BAR_MOBILE: 2, ACTIVITY_PANEL: 4, QUEST_LIVE_STREAM: 8 };

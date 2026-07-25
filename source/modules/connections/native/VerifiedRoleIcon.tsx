@@ -1,7 +1,7 @@
 // Module ID: 5506
-// Function ID: 46939
+// Function ID: 46944
 // Name: VerifiedRoleIcon
-// Dependencies: [31, 27, 653, 33, 689, 4130, 5507, 5486, 4074, 2]
+// Dependencies: [31, 27, 653, 33, 689, 4131, 5507, 5486, 4075, 2]
 // Exports: default
 
 // Module 5506 (VerifiedRoleIcon)
@@ -74,7 +74,7 @@ export default function VerifiedRoleIcon(arg0) {
     obj3.style = obj4;
     obj3.size = "custom";
     obj3.color = higherContrastColor;
-    roleIcon = jsx(require(4074) /* LinkIcon */.LinkIcon, {});
+    roleIcon = jsx(require(4075) /* LinkIcon */.LinkIcon, {});
   }
   obj1.children = roleIcon;
   return <View style={items1} />;

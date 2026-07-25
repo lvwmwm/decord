@@ -1,17 +1,17 @@
-// Module ID: 16293
-// Function ID: 126834
+// Module ID: 16304
+// Function ID: 127002
 // Name: getEmptyServerSettingsAuditLogSource
-// Dependencies: [31, 27, 33, 7405, 16294, 16295, 16296, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 16305, 16306, 16307, 3977, 2]
 // Exports: EmptyServerSettingsAuditLog
 
-// Module 16293 (getEmptyServerSettingsAuditLogSource)
+// Module 16304 (getEmptyServerSettingsAuditLogSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getEmptyServerSettingsAuditLogSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getEmptyServerSettingsAuditLogSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useEmptyServerSettingsAuditLogSource() {
-  return getEmptyServerSettingsAuditLogSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getEmptyServerSettingsAuditLogSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsAuditLog.tsx");
 

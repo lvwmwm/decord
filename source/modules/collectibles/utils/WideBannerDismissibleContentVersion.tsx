@@ -1,10 +1,10 @@
-// Module ID: 13047
-// Function ID: 100858
+// Module ID: 13058
+// Function ID: 100985
 // Name: getWideBannerDismissibleContentVersion
-// Dependencies: [6820, 655, 6805, 2]
+// Dependencies: [5816, 655, 5801, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 13047 (getWideBannerDismissibleContentVersion)
+// Module 13058 (getWideBannerDismissibleContentVersion)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { CollectibleShopTab } from "items";
 

@@ -1,10 +1,10 @@
-// Module ID: 9460
-// Function ID: 73549
+// Module ID: 9380
+// Function ID: 73135
 // Name: EmojiPickerCategoriesBackspaceItem
-// Dependencies: [31, 27, 653, 33, 4015, 1212, 9461, 2]
+// Dependencies: [31, 27, 653, 33, 4016, 1212, 9381, 2]
 // Exports: default
 
-// Module 9460 (EmojiPickerCategoriesBackspaceItem)
+// Module 9380 (EmojiPickerCategoriesBackspaceItem)
 import result from "result";
 import { Pressable } from "get ActivityIndicator";
 import { NODE_MARGIN } from "ME";
@@ -19,9 +19,9 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   onBackspace = onBackspace.onBackspace;
   let React;
   ({ style, iconStyle } = onBackspace);
-  const interval = new onBackspace(4015).Interval();
+  const interval = new onBackspace(4016).Interval();
   const dependencyMap = React.useRef(interval);
-  const delayedCall = new onBackspace(4015).DelayedCall(500, () => {
+  const delayedCall = new onBackspace(4016).DelayedCall(500, () => {
     const current = result.current;
     current.cancel();
     const current2 = ref.current;
@@ -58,6 +58,6 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   obj.onPressOut = callback1;
   obj.onLongPress = callback;
   const items2 = [iconStyle, { opacity: 0.5 }];
-  obj.children = jsx(onBackspace(9461).BackspaceIcon, { style: items2 });
+  obj.children = jsx(onBackspace(9381).BackspaceIcon, { style: items2 });
   return <Pressable top={NODE_MARGIN} bottom={NODE_MARGIN} right={NODE_MARGIN} left={NODE_MARGIN} />;
 };

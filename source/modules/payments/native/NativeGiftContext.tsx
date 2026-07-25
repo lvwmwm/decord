@@ -1,10 +1,10 @@
-// Module ID: 8848
-// Function ID: 69640
+// Module ID: 8736
+// Function ID: 69119
 // Name: importDefaultResult1
-// Dependencies: [5, 57, 31, 8312, 7129, 8238, 1849, 653, 5620, 1851, 33, 3, 6667, 6668, 3791, 8849, 8820, 1212, 8850, 3776, 5622, 8779, 7118, 566, 8851, 8815, 8315, 8309, 4471, 675, 5482, 7109, 686, 477, 7156, 2]
+// Dependencies: [5, 57, 31, 8047, 6207, 7971, 1850, 653, 5620, 1852, 33, 3, 6168, 6169, 3792, 8737, 8708, 1212, 8738, 3777, 5622, 8667, 6196, 566, 8739, 8703, 8050, 8044, 4472, 675, 5482, 6127, 686, 477, 6238, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 8848 (importDefaultResult1)
+// Module 8736 (importDefaultResult1)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importDefaultResult from "_slicedToArray";
 import dismissGiftIntent from "dismissGiftIntent";

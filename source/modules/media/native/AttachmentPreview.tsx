@@ -1,10 +1,10 @@
-// Module ID: 9868
-// Function ID: 76469
+// Module ID: 9792
+// Function ID: 76064
 // Name: AttachmentIcon
-// Dependencies: [31, 27, 33, 4130, 689, 9869, 9870, 9871, 9872, 9873, 9874, 9875, 9876, 9877, 9878, 9879, 9880, 9881, 9882, 4670, 4126, 477, 5085, 1273, 9883, 8346, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 9793, 9794, 9795, 9796, 9797, 9798, 9799, 9800, 9801, 9802, 9803, 9804, 9805, 9806, 4671, 4127, 477, 5085, 1273, 9807, 8080, 2]
 // Exports: default
 
-// Module 9868 (AttachmentIcon)
+// Module 9792 (AttachmentIcon)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -55,7 +55,7 @@ function FilenameText(fileName) {
   }
   if (tmp5) {
     obj = { style: tmp.attachmentFileName, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: fileName };
-    tmp5 = callback(require(4126) /* Text */.Text, obj);
+    tmp5 = callback(require(4127) /* Text */.Text, obj);
   }
   const items = [tmp5, ];
   const obj1 = { style: tmp.attachmentFileName, lineClamp: 1, variant: "text-xs/medium", color: "text-muted" };
@@ -68,7 +68,7 @@ function FilenameText(fileName) {
     }
   }
   obj1.children = str2;
-  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  items[1] = callback(require(4127) /* Text */.Text, obj1);
   obj.children = items;
   return closure_7(closure_5, obj);
 }
@@ -198,7 +198,7 @@ export default function AttachmentPreview(height) {
           obj1.style = obj2;
           obj3 = { uri };
           obj1.source = obj3;
-          obj.children = callback(require(8346) /* _isNativeReflectConstruct */.VideoComponent, obj1);
+          obj.children = callback(require(8080) /* _isNativeReflectConstruct */.VideoComponent, obj1);
           tmp10 = callback(closure_5, obj);
         }
       }
@@ -210,7 +210,7 @@ export default function AttachmentPreview(height) {
       const obj5 = { uri, width, height: num, borderRadius, style, fileName };
       const items = [callback(closure_10, obj5), ];
       const obj6 = { style: tmp5.videoIcon };
-      tmp5 = callback(require(9883) /* CirclePlayIcon */.CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
+      tmp5 = callback(require(9807) /* CirclePlayIcon */.CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
       obj6.children = tmp5;
       items[1] = callback(closure_5, obj6);
       obj4.children = items;

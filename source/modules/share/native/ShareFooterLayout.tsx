@@ -1,10 +1,10 @@
-// Module ID: 9927
-// Function ID: 76800
+// Module ID: 9855
+// Function ID: 76413
 // Name: ShareFooterLayout
-// Dependencies: [31, 27, 33, 4130, 689, 5160, 3991, 4542, 4546, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5159, 3992, 4543, 4547, 4127, 2]
 // Exports: default
 
-// Module 9927 (ShareFooterLayout)
+// Module 9855 (ShareFooterLayout)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,14 +36,14 @@ export default function ShareFooterLayout(arg0) {
   ({ preview, warningText } = arg0);
   ({ chatInput, sendButton, avoidKeyboard } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  const sum = tmp.footer.paddingVertical + importDefault(5160)({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
+  const sum = tmp.footer.paddingVertical + importDefault(5159)({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
   const require = sum;
-  let obj = require(3991);
+  let obj = require(3992);
   const fn = function f() {
     const obj = { paddingBottom: sum(outer1_2[7]).withSpring(closure_0, sum(outer1_2[8]).ON_PRESS_SPRING, "respect-motion-settings") };
     return obj;
   };
-  obj = { withSpring: require(4542) /* withSpring */.withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: require(4546) /* SUBTLE_SPRING */.ON_PRESS_SPRING };
+  obj = { withSpring: require(4543) /* withSpring */.withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: require(4547) /* SUBTLE_SPRING */.ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 2871405301293;
   fn.__initData = closure_8;
@@ -66,11 +66,11 @@ export default function ShareFooterLayout(arg0) {
   let tmp12 = null != warningText;
   if (tmp12) {
     const obj5 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
-    tmp12 = callback(require(4126) /* Text */.Text, obj5);
+    tmp12 = callback(require(4127) /* Text */.Text, obj5);
   }
   items4[1] = tmp12;
   obj3.children = items4;
   items2[1] = callback2(View, obj3);
   obj.children = items2;
-  return callback2(importDefault(3991).View, obj);
+  return callback2(importDefault(3992).View, obj);
 };

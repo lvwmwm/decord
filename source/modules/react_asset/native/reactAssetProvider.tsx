@@ -1,10 +1,10 @@
-// Module ID: 16641
-// Function ID: 129822
+// Module ID: 16652
+// Function ID: 129990
 // Name: NativeReactAssetModule
-// Dependencies: [27, 477, 16642, 16643, 2]
+// Dependencies: [27, 477, 16653, 16654, 2]
 // Exports: default
 
-// Module 16641 (NativeReactAssetModule)
+// Module 16652 (NativeReactAssetModule)
 import get_ActivityIndicator from "get ActivityIndicator";
 import set from "set";
 import set from "enforcing";

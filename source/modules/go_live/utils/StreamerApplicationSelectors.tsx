@@ -1,10 +1,10 @@
-// Module ID: 6980
-// Function ID: 55796
+// Module ID: 5971
+// Function ID: 53102
 // Name: _findPlayingActivity
-// Dependencies: [4217, 653, 6981, 620, 566, 2]
+// Dependencies: [4218, 653, 5972, 620, 566, 2]
 // Exports: useGetStreamApplication
 
-// Module 6980 (_findPlayingActivity)
+// Module 5971 (_findPlayingActivity)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ActivityTypes } from "ME";
 
@@ -12,7 +12,7 @@ const require = arg1;
 function _findPlayingActivity(type) {
   let tmp = type.type === ActivityTypes.PLAYING;
   if (tmp) {
-    tmp = !importDefault(6981)(type);
+    tmp = !importDefault(5972)(type);
   }
   return tmp;
 }

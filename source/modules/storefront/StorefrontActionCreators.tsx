@@ -1,10 +1,10 @@
-// Module ID: 8726
-// Function ID: 68999
+// Module ID: 8614
+// Function ID: 68474
 // Name: shouldFetchStorefrontPromotions
-// Dependencies: [5, 3778, 5614, 7368, 8727, 8728, 653, 664, 686, 507, 5613, 2]
+// Dependencies: [5, 3779, 5614, 6443, 8615, 8616, 653, 664, 686, 507, 5613, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8726 (shouldFetchStorefrontPromotions)
+// Module 8614 (shouldFetchStorefrontPromotions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import "_isNativeReflectConstruct";

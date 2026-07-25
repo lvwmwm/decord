@@ -1,9 +1,9 @@
-// Module ID: 16310
-// Function ID: 126944
+// Module ID: 16321
+// Function ID: 127112
 // Name: BoostedGuildTiers
-// Dependencies: [31, 27, 1838, 3758, 1849, 653, 3806, 33, 1212, 16311, 7477, 12508, 4130, 689, 1557, 566, 8446, 16313, 5583, 4022, 4126, 4025, 4543, 16314, 7636, 4541, 5501, 5165, 4652, 9651, 1273, 3969, 5171, 16320, 2]
+// Dependencies: [31, 27, 1838, 3759, 1850, 653, 3807, 33, 1212, 16322, 6561, 12489, 4131, 689, 1557, 566, 8204, 16324, 5583, 4023, 4127, 4026, 4544, 16325, 7575, 4542, 5501, 5164, 4653, 9573, 1273, 3970, 5171, 16331, 2]
 
-// Module 16310 (BoostedGuildTiers)
+// Module 16321 (BoostedGuildTiers)
 import get_ActivityIndicator from "TableRowInner";
 import closure_5 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

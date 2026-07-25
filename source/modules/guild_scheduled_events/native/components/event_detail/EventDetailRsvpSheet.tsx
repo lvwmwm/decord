@@ -1,9 +1,9 @@
-// Module ID: 12232
-// Function ID: 95641
+// Module ID: 12208
+// Function ID: 95450
 // Name: EmptyDisplay
-// Dependencies: [31, 27, 4217, 1849, 482, 33, 4130, 689, 5052, 7571, 12233, 4126, 1212, 7636, 5085, 5462, 566, 1273, 9465, 3969, 8537, 12234, 5189, 5584, 2]
+// Dependencies: [31, 27, 4218, 1850, 482, 33, 4131, 689, 5053, 6667, 12209, 4127, 1212, 7575, 5085, 5462, 566, 1273, 9386, 3970, 8297, 12210, 5189, 5584, 2]
 
-// Module 12232 (EmptyDisplay)
+// Module 12208 (EmptyDisplay)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,8 +23,8 @@ function EmptyDisplay(arg0) {
   let obj = {};
   const items = [callback3().emptyDisplayContainer, style];
   obj.style = items;
-  obj = { icon: importDefault(12233) };
-  const items1 = [callback(importDefault(7571), obj), children];
+  obj = { icon: importDefault(12209) };
+  const items1 = [callback(importDefault(6667), obj), children];
   obj.children = items1;
   return callback2(View, obj);
 }
@@ -33,7 +33,7 @@ function FetchErrorDisplay(style) {
   obj = { style: callback3().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.obChXk);
-  obj.children = callback(require(4126) /* Text */.Text, obj);
+  obj.children = callback(require(4127) /* Text */.Text, obj);
   return callback(EmptyDisplay, obj);
 }
 function NoUsersDisplay(style) {
@@ -41,19 +41,19 @@ function NoUsersDisplay(style) {
   obj = { style: callback3().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.hW0mBR);
-  obj.children = callback(require(4126) /* Text */.Text, obj);
+  obj.children = callback(require(4127) /* Text */.Text, obj);
   return callback(EmptyDisplay, obj);
 }
 function RemainingUsersRow(remainingUsersGroup) {
   const tmp = callback3();
   let obj = { DEPRECATED_style: tmp.userListRow };
   obj = { style: tmp.remainingUsersIconContainer };
-  obj = { source: importDefault(12233), style: tmp.remainingUsersIcon };
+  obj = { source: importDefault(12209), style: tmp.remainingUsersIcon };
   obj.children = callback(importDefault(5085), obj);
   obj.leading = callback(View, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.BdQTfR, { userRemainCount: remainingUsersGroup.remainingUsersGroup.count });
-  return callback(require(7636) /* Form */.FormRow, obj, "userRemaining");
+  return callback(require(7575) /* Form */.FormRow, obj, "userRemaining");
 }
 function keyExtractor(count) {
   if (obj.isRemainingUsersGroup(count)) {
@@ -250,16 +250,16 @@ const memoResult = importAllResult.memo((eventUser) => {
     nick = member.nick;
   }
   if (null == nick) {
-    nick = analyticsLocations(3969).getName(eventUser.user);
-    const obj6 = analyticsLocations(3969);
+    nick = analyticsLocations(3970).getName(eventUser.user);
+    const obj6 = analyticsLocations(3970);
   }
   obj1.nick = nick;
   ({ userName: obj5.usernameStyle, userName: obj5.nicknameStyle } = tmp);
-  obj.label = callback(analyticsLocations(9465), obj1);
+  obj.label = callback(analyticsLocations(9386), obj1);
   obj.onPress = function onPress() {
     analyticsLocations(outer1_2[20])({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
   };
-  return callback(eventUser(7636).FormRow, obj, eventUser.user_id);
+  return callback(eventUser(7575).FormRow, obj, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
 let obj2 = { marginBottom: 8 };

@@ -1,10 +1,10 @@
-// Module ID: 13780
-// Function ID: 105634
+// Module ID: 13791
+// Function ID: 105761
 // Name: defineParentalControlledSetting
-// Dependencies: [6772, 6771, 566, 2]
+// Dependencies: [5768, 5767, 566, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 13780 (defineParentalControlledSetting)
+// Module 13791 (defineParentalControlledSetting)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

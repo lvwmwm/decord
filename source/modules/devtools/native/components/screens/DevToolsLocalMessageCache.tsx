@@ -1,10 +1,10 @@
-// Module ID: 13570
-// Function ID: 104351
+// Module ID: 13581
+// Function ID: 104478
 // Name: CacheLogEntry
-// Dependencies: [27, 1348, 33, 4130, 689, 5165, 4541, 5501, 6720, 4126, 2]
+// Dependencies: [27, 1348, 33, 4131, 689, 5164, 4542, 5501, 5716, 4127, 2]
 // Exports: default
 
-// Module 13570 (CacheLogEntry)
+// Module 13581 (CacheLogEntry)
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -60,7 +60,7 @@ function CacheLogEntry(entry) {
   obj.label = "" + name;
   const items = [combined, combined1, str3, str7, str11];
   obj.subLabel = items.join("\n");
-  return closure_5(require(5165) /* TableRowInner */.TableRow, obj);
+  return closure_5(require(5164) /* TableRowInner */.TableRow, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = {};
@@ -76,22 +76,22 @@ export default function DevToolsLocalMessageCache() {
   let obj = { style: tmp.container, contentContainerStyle: tmp.contentContainer };
   obj = { spacing: 8 };
   obj = { title: "Local Message Cache Stats", hasIcons: false };
-  const obj1 = { label: "Channels Fetched", subLabel: importDefault(6720).channelsFetchStarted.size };
-  const items = [callback(require(5165) /* TableRowInner */.TableRow, obj1), , , ];
-  const obj2 = { label: "Cache Hits", subLabel: importDefault(6720).channelsFetchedWithLocalMessages.size };
-  items[1] = callback(require(5165) /* TableRowInner */.TableRow, obj2);
-  const obj3 = { label: "Cache Misses", subLabel: importDefault(6720).channelsFetchedNetwork.size - importDefault(6720).channelsFetchedWithLocalMessages.size };
-  items[2] = callback(require(5165) /* TableRowInner */.TableRow, obj3);
-  const obj4 = { label: "Incomplete Fetches", subLabel: importDefault(6720).channelsFetchStarted.size - importDefault(6720).channelsFetchedNetwork.size };
-  items[3] = callback(require(5165) /* TableRowInner */.TableRow, obj4);
+  const obj1 = { label: "Channels Fetched", subLabel: importDefault(5716).channelsFetchStarted.size };
+  const items = [callback(require(5164) /* TableRowInner */.TableRow, obj1), , , ];
+  const obj2 = { label: "Cache Hits", subLabel: importDefault(5716).channelsFetchedWithLocalMessages.size };
+  items[1] = callback(require(5164) /* TableRowInner */.TableRow, obj2);
+  const obj3 = { label: "Cache Misses", subLabel: importDefault(5716).channelsFetchedNetwork.size - importDefault(5716).channelsFetchedWithLocalMessages.size };
+  items[2] = callback(require(5164) /* TableRowInner */.TableRow, obj3);
+  const obj4 = { label: "Incomplete Fetches", subLabel: importDefault(5716).channelsFetchStarted.size - importDefault(5716).channelsFetchedNetwork.size };
+  items[3] = callback(require(5164) /* TableRowInner */.TableRow, obj4);
   obj.children = items;
-  const items1 = [callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj), callback(require(4126) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
+  const items1 = [callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj), callback(require(4127) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
   const obj5 = { title: "Fetch Log (Reversed)", hasIcons: false };
-  const fetchLogs = importDefault(6720).fetchLogs;
+  const fetchLogs = importDefault(5716).fetchLogs;
   const reversed = Array.from(fetchLogs.values()).reverse();
   obj5.children = reversed.map((entry) => outer1_5(outer1_8, { entry }, arg1));
   items1[2] = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj5);
   obj.children = items1;
-  obj.children = callback2(require(4541) /* Stack */.Stack, obj);
+  obj.children = callback2(require(4542) /* Stack */.Stack, obj);
   return callback(ScrollView, obj);
 };

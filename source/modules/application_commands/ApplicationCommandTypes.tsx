@@ -1,9 +1,9 @@
-// Module ID: 6755
-// Function ID: 52621
+// Module ID: 5676
+// Function ID: 48764
 // Name: ApplicationCommandSectionType
 // Dependencies: [2]
 
-// Module 6755 (ApplicationCommandSectionType)
+// Module 5676 (ApplicationCommandSectionType)
 const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandTypes.tsx");
 
 export const ApplicationCommandSectionType = { BUILT_IN: 0, [0]: "BUILT_IN", APPLICATION: 1, [1]: "APPLICATION" };

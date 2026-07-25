@@ -1,10 +1,10 @@
-// Module ID: 15482
-// Function ID: 118996
+// Module ID: 15492
+// Function ID: 119124
 // Name: FriendsScreen
-// Dependencies: [31, 27, 6900, 3767, 33, 4130, 689, 1456, 5462, 5482, 1557, 566, 15483, 1820, 8537, 15484, 15487, 15218, 4076, 1212, 5165, 9924, 5807, 4543, 8858, 10057, 2]
+// Dependencies: [31, 27, 5891, 3768, 33, 4131, 689, 1456, 5462, 5482, 1557, 566, 15493, 1820, 8297, 15494, 15497, 15228, 4077, 1212, 5164, 9852, 6727, 4544, 8746, 9986, 2]
 // Exports: default
 
-// Module 15482 (FriendsScreen)
+// Module 15492 (FriendsScreen)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

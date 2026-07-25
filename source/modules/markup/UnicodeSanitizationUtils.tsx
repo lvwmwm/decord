@@ -1,10 +1,10 @@
-// Module ID: 4569
-// Function ID: 40065
+// Module ID: 4570
+// Function ID: 40077
 // Name: makeMatcher
 // Dependencies: [1443, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 4569 (makeMatcher)
+// Module 4570 (makeMatcher)
 function makeMatcher(join) {
   const regExp = new RegExp(join.join("|"), "gu");
   return regExp;

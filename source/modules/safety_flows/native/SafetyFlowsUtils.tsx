@@ -1,21 +1,21 @@
-// Module ID: 16610
-// Function ID: 129528
+// Module ID: 16621
+// Function ID: 129696
 // Name: getScreensForTaskType
-// Dependencies: [5, 31, 1849, 16604, 16606, 4337, 16605, 3831, 10361, 1212, 2460, 1456, 16609, 2]
+// Dependencies: [5, 31, 1850, 16615, 16617, 4338, 16616, 3832, 10294, 1212, 2461, 1456, 16620, 2]
 // Exports: useOnTaskComplete
 
-// Module 16610 (getScreensForTaskType)
-import module_4337 from "module_4337";
+// Module 16621 (getScreensForTaskType)
+import module_4338 from "module_4338";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 function getScreensForTaskType(task_type) {
-  const tmp = require(16604) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+  const tmp = require(16615) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
   let tmp2 = null;
   if (null != tmp) {
     let tmp5 = tmp;
-    if (task_type === require(16604) /* TaskType */.TaskType.EMAIL_VERIFICATION) {
+    if (task_type === require(16615) /* TaskType */.TaskType.EMAIL_VERIFICATION) {
       currentUser = currentUser.getCurrentUser();
       let email;
       if (null != currentUser) {
@@ -23,7 +23,7 @@ function getScreensForTaskType(task_type) {
       }
       tmp5 = tmp;
       if (null != email) {
-        const items = [require(16604) /* TaskType */.SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [require(16615) /* TaskType */.SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }
@@ -41,18 +41,18 @@ function _fetchAndUpdateTask() {
 }
 function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
-    let obj = importDefault(4337);
-    obj.popWithKey(require(16605) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
-    obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: importDefault(10361) };
+    let obj = importDefault(4338);
+    obj.popWithKey(require(16616) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
+    obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: importDefault(10294) };
     const intl = require(1212) /* getSystemLocale */.intl;
-    obj.content = intl.string(importDefault(2460)["/fHz9S"]);
-    importDefault(3831).open(obj);
+    obj.content = intl.string(importDefault(2461)["/fHz9S"]);
+    importDefault(3832).open(obj);
   } else {
     const tmp2 = getScreensForTaskType(task_type.task_type);
     if (null != tmp2) {
       arr.push(tmp2[0]);
     } else {
-      arr.push(require(16604) /* TaskType */.SafetyFlowScreens.UPDATE_APP);
+      arr.push(require(16615) /* TaskType */.SafetyFlowScreens.UPDATE_APP);
     }
   }
 }

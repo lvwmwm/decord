@@ -1,5 +1,5 @@
 // Module ID: 5580
-// Function ID: 47397
+// Function ID: 47402
 // Name: designConfig
 // Dependencies: [2]
 // Exports: setDesignConfig

@@ -1,10 +1,10 @@
-// Module ID: 3906
-// Function ID: 32311
+// Module ID: 3907
+// Function ID: 32322
 // Name: context
 // Dependencies: [31, 33, 2]
 // Exports: ManaContextProvider, useManaContext
 
-// Module 3906 (context)
+// Module 3907 (context)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 

@@ -1,9 +1,9 @@
-// Module ID: 11696
-// Function ID: 90720
+// Module ID: 11665
+// Function ID: 90464
 // Name: customKeyboardWillHide
-// Dependencies: [31, 27, 4122, 3996, 1823, 5784, 1555, 4559, 3997, 3989, 4000, 11186, 2]
+// Dependencies: [31, 27, 4123, 3997, 1823, 6687, 1555, 4560, 3998, 3990, 4001, 11147, 2]
 
-// Module 11696 (customKeyboardWillHide)
+// Module 11665 (customKeyboardWillHide)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,28 +32,28 @@ function withChatViewHandle(current) {
 const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRef) {
   messagesRef = messagesRef.messagesRef;
   const id = importAllResult.useId();
-  let tmp2 = id(3996)();
+  let tmp2 = id(3997)();
   const dependencyMap = tmp2;
-  let tmp4 = id(5784)({ includeCustomKeyboard: false });
+  let tmp4 = id(6687)({ includeCustomKeyboard: false });
   const tmp3 = id(1823)();
-  const keyboardContextForType = messagesRef(3996).useKeyboardContextForType(messagesRef(1555).KeyboardTypes.SYSTEM);
-  id(4559)(() => () => {
-    const PortalKeyboardUIStore = messagesRef(3997).PortalKeyboardUIStore;
+  const keyboardContextForType = messagesRef(3997).useKeyboardContextForType(messagesRef(1555).KeyboardTypes.SYSTEM);
+  id(4560)(() => () => {
+    const PortalKeyboardUIStore = messagesRef(3998).PortalKeyboardUIStore;
     const field = PortalKeyboardUIStore.getField("keyboard");
     let tmp2 = null != field;
     if (tmp2) {
       tmp2 = field.handlerId === outer1_1;
     }
     if (tmp2) {
-      messagesRef(3989).dismissKeyboard();
-      const obj = messagesRef(3989);
-      messagesRef(3997).closePortalKeyboard();
-      const obj2 = messagesRef(3997);
+      messagesRef(3990).dismissKeyboard();
+      const obj = messagesRef(3990);
+      messagesRef(3998).closePortalKeyboard();
+      const obj2 = messagesRef(3998);
     }
   });
-  let PortalKeyboardUIStore = messagesRef(3997).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = messagesRef(3998).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = messagesRef(3997).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = messagesRef(3998).PortalKeyboardUIStore;
   const field1 = PortalKeyboardUIStore2.useField("state");
   let closure_7 = importAllResult.useRef(false);
   const items = [messagesRef.channelId, id, field, field1, tmp2, messagesRef, keyboardContextForType, tmp3, tmp4];
@@ -63,10 +63,10 @@ const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRe
         if (null != field) {
           if (field1 === messagesRef(tmp2[10]).PortalKeyboardState.REQUEST_OPEN) {
             outer1_8(timeout, (viewHandle) => {
-              let obj = messagesRef(3997);
+              let obj = messagesRef(3998);
               const result = obj.handlePortalKeyboardOpen(outer1_1);
               outer1_7.current = true;
-              obj = { viewHandle, height: messagesRef(11186).getKeyboardActionSheetHeight().minimum };
+              obj = { viewHandle, height: messagesRef(11147).getKeyboardActionSheetHeight().minimum };
               const DCDChatManager = keyboardContextForType.DCDChatManager;
               const result1 = DCDChatManager.customKeyboardWillShow(obj.viewHandle, obj.height, 0.25, 7);
             });

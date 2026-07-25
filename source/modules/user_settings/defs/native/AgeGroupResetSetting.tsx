@@ -1,24 +1,24 @@
-// Module ID: 13727
-// Function ID: 105332
+// Module ID: 13738
+// Function ID: 105459
 // Name: pressable
-// Dependencies: [7751, 33, 10127, 1212, 2716, 13728, 4472, 4347, 2]
+// Dependencies: [7697, 33, 10059, 1212, 2717, 13739, 4473, 4348, 2]
 
-// Module 13727 (pressable)
+// Module 13738 (pressable)
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
   useTitle() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2716)["bD//cU"]);
+    return intl.string(importDefault(2717)["bD//cU"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2716).Gn0SAj);
+    return intl.string(importDefault(2717).Gn0SAj);
   },
   onPress() {
-    require(4472) /* useAlertStore */.openAlert(require(13728) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13728) /* SettingsAgeGroupResetAlert */.default, {}));
+    require(4473) /* useAlertStore */.openAlert(require(13739) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13739) /* SettingsAgeGroupResetAlert */.default, {}));
   },
   withArrow: true,
   usePredicate: require("isReactiveCheckEnabled").useShowAssignedAgeGroupSettings
@@ -26,15 +26,15 @@ const pressable = createToggle.createPressable({
 const obj = {
   useTitle() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2716)["bD//cU"]);
+    return intl.string(importDefault(2717)["bD//cU"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2716).Gn0SAj);
+    return intl.string(importDefault(2717).Gn0SAj);
   },
   onPress() {
-    require(4472) /* useAlertStore */.openAlert(require(13728) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13728) /* SettingsAgeGroupResetAlert */.default, {}));
+    require(4473) /* useAlertStore */.openAlert(require(13739) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13739) /* SettingsAgeGroupResetAlert */.default, {}));
   },
   withArrow: true,
   usePredicate: require("isReactiveCheckEnabled").useShowAssignedAgeGroupSettings

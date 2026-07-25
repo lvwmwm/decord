@@ -1,10 +1,10 @@
-// Module ID: 10611
-// Function ID: 82794
+// Module ID: 10499
+// Function ID: 81409
 // Name: result
-// Dependencies: [31, 27, 33, 477, 3834, 689, 5584, 2]
+// Dependencies: [31, 27, 33, 477, 3835, 689, 5584, 2]
 // Exports: default
 
-// Module 10611 (result)
+// Module 10499 (result)
 import "result";
 import { jsx } from "jsxProd";
 import set from "set";
@@ -18,7 +18,7 @@ if (!set.isAndroid()) {
 const result1 = set.fileFinishedImporting("components_native/common/MessageLoadingSpinner.tsx");
 
 export default function MessageLoadingSpinner(color) {
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   let token = obj.useToken(importDefault(689).colors.BACKGROUND_BRAND);
   color = color.color;
   if (null != color) {

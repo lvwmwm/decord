@@ -1,10 +1,10 @@
-// Module ID: 14180
-// Function ID: 109075
+// Module ID: 14191
+// Function ID: 109202
 // Name: useEmojiByIdOrName
-// Dependencies: [4991, 566, 2]
+// Dependencies: [4992, 566, 2]
 // Exports: default, useEmojiByIdOrName
 
-// Module 14180 (useEmojiByIdOrName)
+// Module 14191 (useEmojiByIdOrName)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

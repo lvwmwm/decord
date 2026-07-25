@@ -1,8 +1,8 @@
-// Module ID: 6862
-// Function ID: 54323
-// Dependencies: [5, 1849, 653, 686, 507, 1184, 2]
+// Module ID: 5637
+// Function ID: 48231
+// Dependencies: [5, 1850, 653, 686, 507, 1184, 2]
 
-// Module 6862
+// Module 5637
 import isNonEmptyString from "isNonEmptyString";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

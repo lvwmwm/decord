@@ -1,10 +1,10 @@
-// Module ID: 5932
-// Function ID: 49863
+// Module ID: 6852
+// Function ID: 59513
 // Name: CandyIllocon
-// Dependencies: [33, 5085, 5933, 2]
+// Dependencies: [33, 5085, 6853, 2]
 // Exports: CandyIllocon
 
-// Module 5932 (CandyIllocon)
+// Module 6852 (CandyIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CandyIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const CandyIllocon = function CandyIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5933) };
+  obj = { uri: importDefault(6853) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];

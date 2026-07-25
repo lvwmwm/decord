@@ -1,10 +1,10 @@
-// Module ID: 12317
-// Function ID: 96022
+// Module ID: 12293
+// Function ID: 95831
 // Name: createEmbeddedActivityInviteEmbed
-// Dependencies: [57, 27, 1347, 7910, 4167, 1194, 1348, 4115, 3767, 1849, 9515, 6978, 686, 7909, 7722, 4593, 1212, 4320, 12318, 2]
+// Dependencies: [57, 27, 1347, 7857, 4168, 1194, 1348, 4116, 3768, 1850, 9436, 5969, 686, 7856, 7666, 4594, 1212, 4321, 12294, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 12317 (createEmbeddedActivityInviteEmbed)
+// Module 12293 (createEmbeddedActivityInviteEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "get ActivityIndicator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -39,10 +39,10 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
         }
         id = target_application.id;
         if (applicationAssetFetchState.getApplicationAssetFetchState(id) === FetchState.NOT_FETCHED) {
-          let obj2 = id(7909);
+          let obj2 = id(7856);
           const assetIds = obj2.fetchAssetIds(id, closure_16);
         }
-        const tmp13 = importDefault(7722)(inviteCode.theme);
+        const tmp13 = importDefault(7666)(inviteCode.theme);
         const baseColors = tmp13.baseColors;
         const guild = invite.guild;
         let name;
@@ -64,7 +64,7 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
         }
         let simpleChannelIcon = null;
         if (null != channel) {
-          let obj3 = id(4593);
+          let obj3 = id(4594);
           simpleChannelIcon = obj3.getSimpleChannelIcon(channel);
         }
         if (null != simpleChannelIcon) {
@@ -87,9 +87,9 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
         if (null != channel) {
           if (null != name) {
             const intl2 = id(1212).intl;
-            obj = { channelName: id(4320).computeChannelName(channel, closure_13, closure_12), guildName: name };
+            obj = { channelName: id(4321).computeChannelName(channel, closure_13, closure_12), guildName: name };
             let formatToPartsResult = intl2.formatToParts(id(1212).t.omZR7L, obj);
-            const obj7 = id(4320);
+            const obj7 = id(4321);
           }
           let tmp37 = null != id;
           if (tmp37) {
@@ -107,8 +107,8 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
           if (null != id) {
             if (null != id2) {
               const obj1 = { channelId: id, guildId: id2, applicationId: id };
-              let embeddedActivityParticipantAvatarUris = id(12318).getEmbeddedActivityParticipantAvatarUris(obj1);
-              const obj8 = id(12318);
+              let embeddedActivityParticipantAvatarUris = id(12294).getEmbeddedActivityParticipantAvatarUris(obj1);
+              const obj8 = id(12294);
             }
             const string2 = id(1212).intl.string;
             if (0 === embeddedActivityParticipantAvatarUris.length) {
@@ -121,15 +121,15 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
                 stringResult = intl3.string(id(1212).t.KC26NR);
               }
             }
-            let assetIds1 = id(7909).getAssetIds(id, closure_16);
+            let assetIds1 = id(7856).getAssetIds(id, closure_16);
             if (null == assetIds1) {
               assetIds1 = [];
             }
             const first = callback(assetIds1, 1)[0];
             let assetImage;
             if (null != first) {
-              assetImage = id(7909).getAssetImage(id, first, 1024);
-              const obj11 = id(7909);
+              assetImage = id(7856).getAssetImage(id, first, 1024);
+              const obj11 = id(7856);
             }
             obj2 = {};
             const merged = Object.assign(baseColors);

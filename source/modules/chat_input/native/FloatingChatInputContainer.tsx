@@ -1,14 +1,14 @@
-// Module ID: 11133
-// Function ID: 86570
+// Module ID: 11093
+// Function ID: 86208
 // Name: FloatingChatInputContainer
-// Dependencies: [57, 31, 33, 3991, 3834, 689, 1571, 3996, 1555, 4131, 4134, 2]
+// Dependencies: [57, 31, 33, 3992, 3835, 689, 1571, 3997, 1555, 4132, 4135, 2]
 // Exports: default
 
-// Module 11133 (FloatingChatInputContainer)
+// Module 11093 (FloatingChatInputContainer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";
-import { Easing } from "module_3991";
+import { Easing } from "module_3992";
 
 const require = arg1;
 let closure_6 = Easing.bezier(0.2, 0, 0, 1);
@@ -89,5 +89,5 @@ export default function FloatingChatInputContainer(arg0) {
       return FloatingChatInputContainerTsx1;
     })());
   })();
-  return jsx(importDefault(3991).View, { style, onLayout, children });
+  return jsx(importDefault(3992).View, { style, onLayout, children });
 };

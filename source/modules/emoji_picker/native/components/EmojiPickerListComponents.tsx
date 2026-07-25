@@ -1,9 +1,9 @@
-// Module ID: 9399
-// Function ID: 73285
+// Module ID: 9317
+// Function ID: 72865
 // Name: LABEL_TOP_PADDING
-// Dependencies: [31, 27, 9365, 33, 4130, 689, 1273, 7926, 4126, 1212, 9397, 2]
+// Dependencies: [31, 27, 9271, 33, 4131, 689, 1273, 7873, 4127, 1212, 9315, 2]
 
-// Module 9399 (LABEL_TOP_PADDING)
+// Module 9317 (LABEL_TOP_PADDING)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import IMAGE_SIZE from "IMAGE_SIZE";
@@ -28,12 +28,12 @@ let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
   const tmp = callback3();
   let obj = { style: tmp.nsfwContainer };
-  obj = { source: importDefault(7926), size: require(1273) /* Button */.Icon.Sizes.SMALL };
+  obj = { source: importDefault(7873), size: require(1273) /* Button */.Icon.Sizes.SMALL };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.SLzV5z);
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 });
@@ -44,13 +44,13 @@ const memoResult1 = importAllResult.memo((useTier0UpsellContent) => {
   let obj = { style: callback3().section };
   if (isSectionNitroLocked) {
     obj = { useTier0UpsellContent: useTier0UpsellContent.useTier0UpsellContent };
-    isSectionNitroLocked = callback(require(9397) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, obj);
+    isSectionNitroLocked = callback(require(9315) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, obj);
   }
   const items = [isSectionNitroLocked, ];
   let tmp6 = null;
   if ("" !== label) {
     obj = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
-    tmp6 = callback(require(4126) /* Text */.Text, obj);
+    tmp6 = callback(require(4127) /* Text */.Text, obj);
   }
   items[1] = tmp6;
   obj.children = items;

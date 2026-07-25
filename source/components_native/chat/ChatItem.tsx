@@ -1,10 +1,10 @@
-// Module ID: 9329
-// Function ID: 72813
+// Module ID: 9222
+// Function ID: 72302
 // Name: DCDChatItem
-// Dependencies: [57, 31, 27, 4122, 653, 7711, 33, 3994, 9330, 9331, 9332, 663, 5651, 4130, 689, 477, 7899, 3834, 666, 4554, 2]
+// Dependencies: [57, 31, 27, 4123, 653, 7655, 33, 3995, 9223, 9224, 9225, 663, 5870, 4131, 689, 477, 7846, 3835, 666, 4555, 2]
 // Exports: default
 
-// Module 9329 (DCDChatItem)
+// Module 9222 (DCDChatItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -39,7 +39,7 @@ function DCDChatItem(message) {
       const obj1 = {};
       const merged2 = Object.assign(merged);
       tmp5Result = callback(_default, obj1);
-    } else if (importDefault(5651)(message)) {
+    } else if (importDefault(5870)(message)) {
       const obj2 = {};
       const merged3 = Object.assign(merged);
       tmp5Result = tmp5(_default2, obj2);

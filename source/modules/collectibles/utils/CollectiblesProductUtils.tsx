@@ -1,10 +1,10 @@
-// Module ID: 6785
-// Function ID: 53534
+// Module ID: 5781
+// Function ID: 50808
 // Name: getProductOrbPrice
-// Dependencies: [57, 6780, 653, 1876, 2]
+// Dependencies: [57, 5776, 653, 1877, 2]
 // Exports: getProductSkuIds, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 6785 (getProductOrbPrice)
+// Module 5781 (getProductOrbPrice)
 import _slicedToArray from "_slicedToArray";
 import { isProfileEffectRecord } from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -63,7 +63,7 @@ function getHasNonOrbPrice(product) {
   return null != getProductFiatPrice({ product, hasShopDiscount: false });
 }
 function getIsVariantProduct(product) {
-  let tmp = product.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
+  let tmp = product.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
   if (tmp) {
     tmp = null != product.variants;
   }
@@ -75,7 +75,7 @@ function getIsVariantProduct(product) {
 function getProductType(product) {
   if (null == product) {
     return null;
-  } else if (product.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP) {
+  } else if (product.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP) {
     if (null != product.variants) {
       if (0 !== product.variants.length) {
         const first = product.variants[0];
@@ -112,7 +112,7 @@ export const isOrbsExclusiveProduct = function isOrbsExclusiveProduct(product) {
 export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
   let tmp = null != selectedProduct;
   if (tmp) {
-    let someResult = getProductType(selectedProduct) === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
+    let someResult = getProductType(selectedProduct) === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
     if (someResult) {
       const items = selectedProduct.items;
       someResult = items.some((effects) => {

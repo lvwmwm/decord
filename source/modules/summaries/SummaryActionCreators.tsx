@@ -1,10 +1,10 @@
-// Module ID: 9563
-// Function ID: 74347
+// Module ID: 9484
+// Function ID: 73934
 // Name: fetchSummary
-// Dependencies: [5, 31, 4808, 1348, 9520, 653, 664, 686, 507, 4029, 22, 9522, 624, 2]
+// Dependencies: [5, 31, 4809, 1348, 9441, 653, 664, 686, 507, 4030, 22, 9443, 624, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries
 
-// Module 9563 (fetchSummary)
+// Module 9484 (fetchSummary)
 import ME from "ME";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

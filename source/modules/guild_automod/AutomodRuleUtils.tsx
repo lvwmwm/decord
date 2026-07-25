@@ -1,10 +1,10 @@
-// Module ID: 16277
-// Function ID: 126684
+// Module ID: 16288
+// Function ID: 126852
 // Name: getNewAutomodRuleMockId
-// Dependencies: [1194, 16278, 11034, 16280, 16281, 1212, 7108, 6753, 2]
+// Dependencies: [1194, 16289, 10990, 16291, 16292, 1212, 6126, 5674, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, isRuleDefaultKeywordListFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, triggerTypeToName, validateRuleBeforeSaveOrThrow
 
-// Module 16277 (getNewAutomodRuleMockId)
+// Module 16288 (getNewAutomodRuleMockId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { getRuleCountByTriggerType } from "useSyncAutomodRules";
 import AutomodEventType from "AutomodEventType";
@@ -68,7 +68,7 @@ function isBackendPersistedRule(id) {
   if (null != id) {
     str = id;
   }
-  return require(6753) /* _createForOfIteratorHelperLoose */.isSnowflake(str);
+  return require(5674) /* _createForOfIteratorHelperLoose */.isSnowflake(str);
 }
 ({ AutomodTriggerType: closure_4, MAX_KEYWORDS_PER_KEYWORD_FILTER: closure_5, MAX_REGEX_PATTERNS_PER_KEYWORD_FILTER: closure_6, MAX_CHARACTERS_PER_KEYWORD: closure_7, MIN_CHARACTERS_PER_KEYWORD: closure_8, MIN_REGEX_PATTERN_LENGTH: closure_9, MAX_REGEX_PATTERN_LENGTH: closure_10, AutomodActionType: closure_11, AutomodEventType: closure_12 } = AutomodEventType);
 const result = require("AutomodEventType").fileFinishedImporting("modules/guild_automod/AutomodRuleUtils.tsx");
@@ -111,9 +111,9 @@ export const isRuleUserProfileFilter = function isRuleUserProfileFilter(triggerT
   return triggerType === constants.USER_PROFILE;
 };
 export const createDefaultRule = function createDefaultRule(guildId, triggerType) {
-  let obj = require(16280) /* AutomodTriggerType */.triggerConfigs[triggerType];
+  let obj = require(16291) /* AutomodTriggerType */.triggerConfigs[triggerType];
   obj = {};
-  const defaultTriggerMetadataForTriggerType = require(16280) /* AutomodTriggerType */.getDefaultTriggerMetadataForTriggerType(triggerType, guildId);
+  const defaultTriggerMetadataForTriggerType = require(16291) /* AutomodTriggerType */.getDefaultTriggerMetadataForTriggerType(triggerType, guildId);
   obj.id = getNewAutomodRuleMockId(guildId, triggerType);
   obj.name = obj.getDefaultRuleName();
   obj.guildId = guildId;
@@ -122,10 +122,10 @@ export const createDefaultRule = function createDefaultRule(guildId, triggerType
   obj.triggerMetadata = defaultTriggerMetadataForTriggerType;
   obj.enabled = true;
   obj.creatorId = id.getId();
-  const obj2 = require(16280) /* AutomodTriggerType */;
-  obj.actions = require(16281) /* getDefaultActions */.getRuleDefaultActionsFromConfig(obj);
+  const obj2 = require(16291) /* AutomodTriggerType */;
+  obj.actions = require(16292) /* getDefaultActions */.getRuleDefaultActionsFromConfig(obj);
   obj.position = 0;
-  const obj4 = require(16281) /* getDefaultActions */;
+  const obj4 = require(16292) /* getDefaultActions */;
   obj.exemptChannels = new Set();
   const set = new Set();
   obj.exemptRoles = new Set();

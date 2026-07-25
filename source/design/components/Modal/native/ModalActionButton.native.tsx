@@ -1,10 +1,10 @@
-// Module ID: 9937
-// Function ID: 76832
+// Module ID: 9865
+// Function ID: 76447
 // Name: ModalActionButton
-// Dependencies: [31, 27, 33, 4130, 4543, 2]
+// Dependencies: [31, 27, 33, 4131, 4544, 2]
 // Exports: ModalActionButton
 
-// Module 9937 (ModalActionButton)
+// Module 9865 (ModalActionButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,7 +34,7 @@ export const ModalActionButton = function ModalActionButton(variant) {
   const merged1 = Object.assign(merged);
   obj1["variant"] = variant;
   obj1["size"] = "lg";
-  items[1] = callback(require(4543) /* Button */.Button, obj1);
+  items[1] = callback(require(4544) /* Button */.Button, obj1);
   obj.children = items;
   return closure_5(closure_4, obj);
 };

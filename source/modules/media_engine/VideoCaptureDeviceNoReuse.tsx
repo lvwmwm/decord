@@ -1,9 +1,9 @@
-// Module ID: 12888
-// Function ID: 100119
+// Module ID: 12899
+// Function ID: 100246
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12888 (apexExperiment)
+// Module 12899 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-video-capture-device-no-reuse", kind: "user", defaultConfig: { overrideDeviceReuse: false }, variations: { [1]: { overrideDeviceReuse: true } } };

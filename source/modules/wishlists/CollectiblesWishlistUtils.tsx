@@ -1,10 +1,10 @@
-// Module ID: 8709
-// Function ID: 68814
+// Module ID: 8597
+// Function ID: 68289
 // Name: getProductNameAndTypeFromSku
-// Dependencies: [1876, 1212, 6786, 8710, 2]
+// Dependencies: [1877, 1212, 5782, 8598, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 8709 (getProductNameAndTypeFromSku)
+// Module 8597 (getProductNameAndTypeFromSku)
 const result = require("getPriceForCollectiblesProduct").fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 
 export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSku(sku) {
@@ -18,17 +18,17 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
       type = collectibles.type;
     }
   }
-  if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+  if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     let obj = { product: name };
     let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.lvBzLi, obj);
-  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj = { product: name };
     formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.eR7moP, obj);
   } else {
     formatToPlainStringResult = name;
-    if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+    if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
       const intl3 = require(1212) /* getSystemLocale */.intl;
       obj = { product: name };
       formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.YFOwHj, obj);
@@ -37,14 +37,14 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
   return formatToPlainStringResult;
 };
 export const isWishlistableCollectiblesProduct = function isWishlistableCollectiblesProduct(selectedProduct) {
-  let tmp = !require(6786) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesProduct(selectedProduct);
+  let tmp = !require(5782) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesProduct(selectedProduct);
   if (tmp) {
-    let tmp4 = selectedProduct.type !== require(1876) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
+    let tmp4 = selectedProduct.type !== require(1877) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
     if (tmp4) {
-      let tmp7 = selectedProduct.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
+      let tmp7 = selectedProduct.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
       if (tmp7) {
-        tmp7 = !require(8710) /* apexExperiment */.getIsProfileFrameGiftingEnabled("isWishlistableCollectiblesProduct");
-        const obj2 = require(8710) /* apexExperiment */;
+        tmp7 = !require(8598) /* apexExperiment */.getIsProfileFrameGiftingEnabled("isWishlistableCollectiblesProduct");
+        const obj2 = require(8598) /* apexExperiment */;
       }
       tmp4 = !tmp7;
     }

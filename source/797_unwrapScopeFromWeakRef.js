@@ -1,5 +1,5 @@
 // Module ID: 797
-// Function ID: 8984
+// Function ID: 8990
 // Name: unwrapScopeFromWeakRef
 // Dependencies: [798, 799]
 

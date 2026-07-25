@@ -1,10 +1,10 @@
-// Module ID: 4969
-// Function ID: 42696
+// Module ID: 4970
+// Function ID: 42708
 // Name: SubscribeModalGuildSelect
-// Dependencies: [57, 31, 27, 1838, 4970, 4968, 33, 4130, 689, 4973, 1456, 566, 4974, 5121, 5771, 1212, 4966, 4660, 5513, 1273, 2]
+// Dependencies: [57, 31, 27, 1838, 4971, 4969, 33, 4131, 689, 4974, 1456, 566, 4975, 5121, 10038, 1212, 4967, 4661, 5513, 1273, 2]
 // Exports: default
 
-// Module 4969 (SubscribeModalGuildSelect)
+// Module 4970 (SubscribeModalGuildSelect)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -105,8 +105,8 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   const intl = guildBoostSlots(1212).intl;
   obj.placeholder = intl.string(guildBoostSlots(1212).t.vf3ZTa);
   obj.onChange = tmp2[1];
-  obj.onClose = importAll(4966).closeApplyBoostModal;
-  const items3 = [callback2(importDefault(5771), obj), ];
+  obj.onClose = importAll(4967).closeApplyBoostModal;
+  const items3 = [callback2(importDefault(10038), obj), ];
   obj1 = { style: tmp.guildList, keyboardShouldPersistTaps: "always" };
   const obj2 = {
     bottom: true,

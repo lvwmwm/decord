@@ -1,10 +1,10 @@
-// Module ID: 4685
-// Function ID: 40823
+// Module ID: 4686
+// Function ID: 40835
 // Name: PermissionsAlertModal
-// Dependencies: [31, 33, 4475, 4475, 1212, 2]
+// Dependencies: [31, 33, 4476, 4476, 1212, 2]
 // Exports: default
 
-// Module 4685 (PermissionsAlertModal)
+// Module 4686 (PermissionsAlertModal)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -24,12 +24,12 @@ export default function PermissionsAlertModal(arg0) {
   obj = { onPress: onConfirm };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.text = intl.string(require(1212) /* getSystemLocale */.t.jVcuVY);
-  const items = [callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const items = [callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.text = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  items[1] = callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj1, "close");
+  items[1] = callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj1, "close");
   obj.children = items;
-  obj.actions = callback2(require(4475) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4475) /* getAlertModalItemKey */.AlertModal, obj);
+  obj.actions = callback2(require(4476) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4476) /* getAlertModalItemKey */.AlertModal, obj);
 };

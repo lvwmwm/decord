@@ -1,9 +1,9 @@
-// Module ID: 12656
-// Function ID: 97892
+// Module ID: 12667
+// Function ID: 98019
 // Name: StateManager
 // Dependencies: [6, 7, 636, 2]
 
-// Module 12656 (StateManager)
+// Module 12667 (StateManager)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

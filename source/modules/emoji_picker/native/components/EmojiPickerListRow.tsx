@@ -1,9 +1,9 @@
-// Module ID: 9400
-// Function ID: 73288
+// Module ID: 9318
+// Function ID: 72868
 // Name: getEmojiItemUrl
-// Dependencies: [31, 27, 1278, 9365, 1314, 33, 4130, 689, 477, 666, 1392, 4652, 4660, 5085, 3976, 5152, 5153, 1273, 9401, 2]
+// Dependencies: [31, 27, 1278, 9271, 1314, 33, 4131, 689, 477, 666, 1392, 4653, 4661, 5085, 3977, 5151, 5152, 1273, 9319, 2]
 
-// Module 9400 (getEmojiItemUrl)
+// Module 9318 (getEmojiItemUrl)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ function getEmojiItemUrl(emoji, animateEmoji) {
 }
 function EmojiItemLockedOverlay() {
   const tmp = callback2();
-  obj = { style: tmp.lockContainer, children: callback(require(4652) /* LockIcon */.LockIcon, obj) };
+  obj = { style: tmp.lockContainer, children: callback(require(4653) /* LockIcon */.LockIcon, obj) };
   obj = { style: tmp.lock };
   return callback(View, obj);
 }
@@ -77,16 +77,16 @@ function EmojiItem(emoji) {
     const tmp10 = importDefault(5085);
     const tmp7 = callback;
     if (obj4.isThemeDark(theme.theme)) {
-      let tmp13Result = tmp13(5152);
+      let tmp13Result = tmp13(5151);
     } else {
-      tmp13Result = tmp13(5153);
+      tmp13Result = tmp13(5152);
     }
     obj.placeholder = tmp13Result;
     obj = { uri: tmp2 };
     obj.source = obj;
     obj.usesSmallCache = true;
     tmp7(tmp10, obj);
-    obj4 = emoji(3976);
+    obj4 = emoji(3977);
   } else {
     const obj1 = { allowFontScaling: false, style: tmp.surrogates, children: emoji.surrogates };
     const items1 = [callback(emoji(1273).LegacyText, obj1), ];
@@ -95,7 +95,7 @@ function EmojiItem(emoji) {
     }
     items1[1] = disabled;
     obj.children = items1;
-    return closure_8(emoji(4660).PressableOpacity, obj);
+    return closure_8(emoji(4661).PressableOpacity, obj);
   }
 }
 const View = get_ActivityIndicator.View;
@@ -189,7 +189,7 @@ let closure_10 = importAllResult.memo((emojis) => {
     }
   };
   obj = { rowContentWidth: containerWidth, rowContentPaddingVertical: PADDING_VERTICAL, itemSize: IMAGE_SIZE, items, isSectionNitroLocked };
-  return callback(importDefault(9401), obj);
+  return callback(importDefault(9319), obj);
 });
 let closure_11 = importAllResult.memo((arg0) => {
   let animateEmoji;

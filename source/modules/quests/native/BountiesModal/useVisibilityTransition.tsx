@@ -1,17 +1,17 @@
-// Module ID: 13960
-// Function ID: 106791
+// Module ID: 13971
+// Function ID: 106918
 // Name: useVisibilityTransition
-// Dependencies: [57, 31, 3991, 4131, 2]
+// Dependencies: [57, 31, 3992, 4132, 2]
 // Exports: useVisibilityTransition
 
-// Module 13960 (useVisibilityTransition)
+// Module 13971 (useVisibilityTransition)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
 const require = arg1;
 let closure_4 = { code: "function useVisibilityTransitionTsx1(){const{withTiming,visibility,visible,entranceTiming,exitTiming,runOnJS,animationCallbackJSThread}=this.__closure;return{opacity:withTiming(visibility,visible?entranceTiming:exitTiming,'respect-motion-settings',function(){'worklet';runOnJS(animationCallbackJSThread)();})};}" };
 let closure_5 = { code: "function useVisibilityTransitionTsx2(){const{runOnJS,animationCallbackJSThread}=this.__closure;runOnJS(animationCallbackJSThread)();}" };
-const result = require("module_3991").fileFinishedImporting("modules/quests/native/BountiesModal/useVisibilityTransition.tsx");
+const result = require("module_3992").fileFinishedImporting("modules/quests/native/BountiesModal/useVisibilityTransition.tsx");
 
 export const useVisibilityTransition = function useVisibilityTransition(visible) {
   visible = visible.visible;

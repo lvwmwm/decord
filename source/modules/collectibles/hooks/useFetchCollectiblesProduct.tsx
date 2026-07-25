@@ -1,10 +1,10 @@
-// Module ID: 8250
-// Function ID: 65122
+// Module ID: 7983
+// Function ID: 63628
 // Name: useFetchCollectiblesProduct
-// Dependencies: [57, 31, 4175, 6774, 653, 624, 1876, 6773, 2]
+// Dependencies: [57, 31, 4176, 5770, 653, 624, 1877, 5769, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 8250 (useFetchCollectiblesProduct)
+// Module 7983 (useFetchCollectiblesProduct)
 import _slicedToArray from "_slicedToArray";
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -47,7 +47,7 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
     if (null != first) {
       type = first.type;
     }
-    tmp8 = type === _require(1876).CollectiblesItemType.BUNDLE;
+    tmp8 = type === _require(1877).CollectiblesItemType.BUNDLE;
   }
   if (tmp8) {
     tmp8 = 0 === first.items.length;

@@ -1,17 +1,17 @@
-// Module ID: 14082
-// Function ID: 107775
+// Module ID: 14093
+// Function ID: 107902
 // Name: getSafeAreaInsetOrPadding
-// Dependencies: [57, 31, 27, 6651, 6943, 4976, 653, 33, 689, 8192, 4130, 666, 14072, 10493, 9494, 3743, 3991, 4542, 4546, 4131, 4134, 14080, 6964, 8342, 14083, 1554, 477, 1207, 10503, 9480, 566, 1184, 1557, 1212, 14091, 4660, 13968, 13970, 13972, 13973, 9981, 8330, 8332, 13974, 13975, 2]
+// Dependencies: [57, 31, 27, 6271, 5934, 4977, 653, 33, 689, 8081, 4131, 666, 14083, 10427, 9415, 3744, 3992, 4543, 4547, 4132, 4135, 14091, 5955, 14094, 1554, 477, 1207, 10437, 9401, 566, 1184, 1557, 1212, 14102, 4661, 13979, 13981, 13983, 13984, 9909, 8065, 8067, 13985, 13986, 2]
 
-// Module 14082 (getSafeAreaInsetOrPadding)
+// Module 14093 (getSafeAreaInsetOrPadding)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "isNonEmptyString";
-import get_ActivityIndicator from "reportDevtoolsEvent";
+import importAllResult from "useSafeAreaInsets";
+import get_ActivityIndicator from "sendVideoProgress";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _toPropertyKey from "_toPropertyKey";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import ME from "ME";
-import jsxProd from "getSystemLocale";
+import jsxProd from "VideoQuestCaptions";
 import closure_16 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importDefaultResult from "t";
@@ -177,17 +177,16 @@ const memoResult = importAllResult.memo((onLoad) => {
   let url1;
   let videoTitle;
   let str;
-  let rnvHttpEngine;
-  let closure_46;
+  let closure_45;
   callback2 = undefined;
   let callback4;
   let callback6;
   let callback7;
-  let c51;
+  let c50;
   let ref2;
   let ref3;
   toggleBuffering = undefined;
-  let top1 = callback3();
+  let left1 = callback3();
   ref = externallyPaused.useRef(null);
   let obj = onLoad(onToggleFullscreen[12]);
   const videoQuestModalContext = obj.useVideoQuestModalContext();
@@ -280,7 +279,7 @@ const memoResult = importAllResult.memo((onLoad) => {
   let obj3 = onLoad(onToggleFullscreen[16]);
   class K {
     constructor() {
-      tmp = f107786();
+      tmp = f107913();
       obj = {};
       obj2 = onLoad(onToggleFullscreen[17]);
       num = 0;
@@ -375,30 +374,20 @@ const memoResult = importAllResult.memo((onLoad) => {
   if (null != url3) {
     str = "hls";
   }
-  let obj10 = onLoad(onToggleFullscreen[23]);
-  rnvHttpEngine = obj10.useRnvHttpEngine();
-  const items3 = [id, gameTitle, targetSeconds, url1, videoTitle, str, rnvHttpEngine];
+  const items3 = [id, gameTitle, targetSeconds, url1, videoTitle, str];
   const effect = externallyPaused.useEffect(() => {
     if (null != ref.current) {
       if (null != url1) {
         if (0 !== url1.length) {
-          let obj = onLoad(onToggleFullscreen[24]);
+          let obj = onLoad(onToggleFullscreen[23]);
           obj = { location: memo1.VIDEO_MODAL_MOBILE };
           if (obj.getVideoQoEMetricsConfig(obj).externalAnalyticsEnabled) {
-            const constants = onLoad(onToggleFullscreen[25]).getConstants();
-            let tmp10;
-            if (null != rnvHttpEngine) {
-              const muxExperimentDimension = onLoad(onToggleFullscreen[23]).getMuxExperimentDimension();
-              if (null != muxExperimentDimension) {
-                tmp10 = muxExperimentDimension;
-              }
-              const obj4 = onLoad(onToggleFullscreen[23]);
-            }
+            const constants = onLoad(onToggleFullscreen[24]).getConstants();
             obj = { videoRef: ref.current, feature: "quests" };
-            ({ Version: obj5.appVersion, ReleaseChannel: obj5.releaseChannel } = constants);
-            const obj1 = { contentId: url1, videoStreamType: "quests", contentType: "quests", durationMs: 1000 * targetSeconds, title: videoTitle, questId: id, gameName: gameTitle, experimentName: tmp10 };
+            ({ Version: obj4.appVersion, ReleaseChannel: obj4.releaseChannel } = constants);
+            const obj1 = { contentId: url1, videoStreamType: "quests", contentType: "quests", durationMs: 1000 * targetSeconds, title: videoTitle, questId: id, gameName: gameTitle };
             obj.contentMetadata = obj1;
-            const MobileMuxWrapper = onLoad(onToggleFullscreen[24]).MobileMuxWrapper;
+            const MobileMuxWrapper = onLoad(onToggleFullscreen[23]).MobileMuxWrapper;
             const prototype = MobileMuxWrapper.prototype;
             const mobileMuxWrapper = new MobileMuxWrapper(obj);
             ref1.current = mobileMuxWrapper;
@@ -418,8 +407,8 @@ const memoResult = importAllResult.memo((onLoad) => {
       }
     }
   }, items3);
-  const tmp40 = orientation(externallyPaused.useState(false), 2);
-  closure_46 = tmp40[1];
+  const tmp39 = orientation(externallyPaused.useState(false), 2);
+  closure_45 = tmp39[1];
   const items4 = [handleReadyForDisplayAnalytics];
   const items5 = [tmp17.maxTimestampSec];
   const callback1 = externallyPaused.useCallback(() => {
@@ -444,7 +433,7 @@ const memoResult = importAllResult.memo((onLoad) => {
         current.seek(bound);
       }
       closure_23.current = bound;
-      obj = onLoad(onToggleFullscreen[26]);
+      obj = onLoad(onToggleFullscreen[25]);
     }
   }, items5);
   const items6 = [null != completedAt, tmp17.timestampSec, handleLoadAnalytics, onLoad, callback2];
@@ -570,15 +559,15 @@ const memoResult = importAllResult.memo((onLoad) => {
   }, items10);
   const items11 = [callback6, callback7];
   const effect1 = externallyPaused.useEffect(() => {
-    let ComponentDispatch = onLoad(onToggleFullscreen[27]).ComponentDispatch;
+    let ComponentDispatch = onLoad(onToggleFullscreen[26]).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(lib.QUEST_GAME_LINK_OPENED, callback6);
-    let ComponentDispatch2 = onLoad(onToggleFullscreen[27]).ComponentDispatch;
+    let ComponentDispatch2 = onLoad(onToggleFullscreen[26]).ComponentDispatch;
     const subscription1 = ComponentDispatch2.subscribe(lib.QUEST_APP_STORE_OVERLAY_FINISHED, callback7);
     return () => {
-      const ComponentDispatch = onLoad(onToggleFullscreen[27]).ComponentDispatch;
-      ComponentDispatch.unsubscribe(constants.QUEST_GAME_LINK_OPENED, outer1_49);
-      const ComponentDispatch2 = onLoad(onToggleFullscreen[27]).ComponentDispatch;
-      ComponentDispatch2.unsubscribe(constants.QUEST_APP_STORE_OVERLAY_FINISHED, outer1_50);
+      const ComponentDispatch = onLoad(onToggleFullscreen[26]).ComponentDispatch;
+      ComponentDispatch.unsubscribe(constants.QUEST_GAME_LINK_OPENED, outer1_48);
+      const ComponentDispatch2 = onLoad(onToggleFullscreen[26]).ComponentDispatch;
+      ComponentDispatch2.unsubscribe(constants.QUEST_APP_STORE_OVERLAY_FINISHED, outer1_49);
     };
   }, items11);
   const items12 = [onToggleFullscreen, orientation];
@@ -596,7 +585,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     callback4({ shouldRestartVideo: false });
   }, items13);
-  let tmp52 = first1 === obj12.ERRORED;
+  let tmp51 = first1 === obj12.ERRORED;
   const callback10 = externallyPaused.useCallback((currentTime) => {
     let current = closure_22.current;
     const arr = current.shift();
@@ -622,14 +611,14 @@ const memoResult = importAllResult.memo((onLoad) => {
       }
     }
   }, items14);
-  if (!tmp52) {
-    tmp52 = !callback2(tmp17.timestampSec, tmp17.maxTimestampSec, tmp17.duration, tmp6);
+  if (!tmp51) {
+    tmp51 = !callback2(tmp17.timestampSec, tmp17.maxTimestampSec, tmp17.duration, tmp6);
   }
-  c51 = tmp52;
-  const items15 = [callback2, first, sharedValue1, tmp52];
+  c50 = tmp51;
+  const items15 = [callback2, first, sharedValue1, tmp51];
   const items16 = [callback2, first, sharedValue1, first1];
   const callback11 = externallyPaused.useCallback(() => {
-    if (!c51) {
+    if (!c50) {
       let current = ref2.current;
       if (null == current) {
         current = sharedValue1.get() * first;
@@ -663,17 +652,17 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     closure_21.current = seekableDuration.currentTime;
     if (seekableDuration.currentTime >= ref2.current) {
-      onLoad(onToggleFullscreen[28]).sendVideoProgress(quest, seekableDuration.currentTime);
+      onLoad(onToggleFullscreen[27]).sendVideoProgress(quest, seekableDuration.currentTime);
       handleProgressAnalytics(num, seekableDuration.seekableDuration, seekableDuration.currentTime);
       const _Math = Math;
       const sum = seekableDuration.currentTime + 6;
       ref2.current = sum + 2 * Math.random();
-      const obj2 = onLoad(onToggleFullscreen[28]);
+      const obj2 = onLoad(onToggleFullscreen[27]);
     }
     if (seekableDuration.currentTime >= ref3.current) {
-      const result = onLoad(onToggleFullscreen[29]).updateOptimisticProgress(quest.id, questTaskDetails.taskType, seekableDuration.currentTime);
+      const result = onLoad(onToggleFullscreen[28]).updateOptimisticProgress(quest.id, questTaskDetails.taskType, seekableDuration.currentTime);
       ref3.current = seekableDuration.currentTime + 1;
-      const obj = onLoad(onToggleFullscreen[29]);
+      const obj = onLoad(onToggleFullscreen[28]);
     }
     _undefined2(quest.id, seekableDuration.currentTime, seekableDuration.seekableDuration);
     const result1 = sharedValue1.set(num);
@@ -684,7 +673,7 @@ const memoResult = importAllResult.memo((onLoad) => {
   }, items17);
   const items19 = [handleLoadStartAnalytics];
   const callback13 = externallyPaused.useCallback(() => {
-    onLoad(onToggleFullscreen[28]).sendVideoProgress(quest, first);
+    onLoad(onToggleFullscreen[27]).sendVideoProgress(quest, first);
     handleEndAnalytics();
     callback(closure_22.ENDED);
     const current = ref1.current;
@@ -760,9 +749,9 @@ const memoResult = importAllResult.memo((onLoad) => {
       }
     }
   }, []);
-  let obj11 = onLoad(onToggleFullscreen[30]);
+  let obj10 = onLoad(onToggleFullscreen[29]);
   const items21 = [c8];
-  const tmp66 = obj11.useStateFromStores(items21, () => _undefined.getState()) === first.ACTIVE;
+  const tmp65 = obj10.useStateFromStores(items21, () => _undefined.getState()) === first.ACTIVE;
   const items22 = [memo1, memo];
   const memo2 = externallyPaused.useMemo(() => {
     let tmp = null;
@@ -796,17 +785,17 @@ const memoResult = importAllResult.memo((onLoad) => {
         }
       };
     }
-    obj = onLoad(onToggleFullscreen[26]);
+    obj = onLoad(onToggleFullscreen[25]);
   }, []);
-  let tmp69 = !tmp66;
-  if (tmp66) {
-    tmp69 = first1 === obj12.PAUSED;
+  let tmp68 = !tmp65;
+  if (tmp65) {
+    tmp68 = first1 === obj12.PAUSED;
   }
-  if (!tmp69) {
-    tmp69 = first1 === obj12.LOADING;
+  if (!tmp68) {
+    tmp68 = first1 === obj12.LOADING;
   }
-  if (!tmp69) {
-    tmp69 = externallyPaused;
+  if (!tmp68) {
+    tmp68 = externallyPaused;
   }
   const callbackResult1 = callback(callback11);
   ({ isBuffering, toggleBuffering } = (function useBufferingState(handleBufferAnalytics) {
@@ -841,7 +830,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       }
     } else {
       if (first1 !== closure_22.LOADING) {
-        const obj = onLoad(onToggleFullscreen[26]);
+        const obj = onLoad(onToggleFullscreen[25]);
       }
       toggleBuffering(true);
     }
@@ -857,36 +846,36 @@ const memoResult = importAllResult.memo((onLoad) => {
       toggleBuffering(false);
     }
   }, items25);
-  const tmp76 = onEnd(onToggleFullscreen[32])();
+  const tmp75 = onEnd(onToggleFullscreen[31])();
   if (null == memo2) {
     return null;
   } else {
-    let tmp77 = isFullscreen;
+    let tmp76 = isFullscreen;
     if (isFullscreen) {
-      tmp77 = null != tmp76;
+      tmp76 = null != tmp75;
     }
-    if (tmp77) {
-      obj2 = { paddingRight: sharedValue(tmp76, "right"), paddingLeft: sharedValue(tmp76, "left") };
-      tmp77 = obj2;
+    if (tmp76) {
+      obj2 = { paddingRight: sharedValue(tmp75, "right"), paddingLeft: sharedValue(tmp75, "left") };
+      tmp76 = obj2;
     }
     obj3 = {};
-    const items26 = [top1.container, style];
+    const items26 = [left1.container, style];
     obj3.style = items26;
     obj3.accessible = false;
-    let obj4 = {};
-    const items27 = [top1.videoContainer];
+    const obj4 = {};
+    const items27 = [left1.videoContainer];
     obj4.style = items27;
     obj4.onPress = callback9;
     obj4.accessible = !tmp25Result;
-    const intl = onLoad(onToggleFullscreen[33]).intl;
-    const t = onLoad(onToggleFullscreen[33]).t;
-    obj4.accessibilityLabel = intl.string(tmp69 ? t.R3aFPe : t.fTMEUi);
-    let tmp88 = first1 !== obj12.ERRORED;
-    if (tmp88) {
-      obj5 = { mixWithOthers: "inherit", httpEngine: rnvHttpEngine, ref, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: top1.video, paused: tmp69, source: memo2, onBuffer: callback18, onPlaybackStalled: callback19, onPlaybackResume: callback20, onLoad: callback3, onSeek: callback10, onProgress: callback12, onLoadStart: callback14, onEnd: callback13, onError: callback15, onReadyForDisplay: callback1, onVideoTracks: callback16, onLayout: callback17, resizeMode: "contain" };
-      tmp88 = targetSeconds(first1, obj5);
+    const intl = onLoad(onToggleFullscreen[32]).intl;
+    const t = onLoad(onToggleFullscreen[32]).t;
+    obj4.accessibilityLabel = intl.string(tmp68 ? t.R3aFPe : t.fTMEUi);
+    let tmp87 = first1 !== obj12.ERRORED;
+    if (tmp87) {
+      obj5 = { mixWithOthers: "inherit", ref, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: left1.video, paused: tmp68, source: memo2, onBuffer: callback18, onPlaybackStalled: callback19, onPlaybackResume: callback20, onLoad: callback3, onSeek: callback10, onProgress: callback12, onLoadStart: callback14, onEnd: callback13, onError: callback15, onReadyForDisplay: callback1, onVideoTracks: callback16, onLayout: callback17, resizeMode: "contain" };
+      tmp87 = targetSeconds(first1, obj5);
     }
-    const items28 = [tmp88, , , , , ];
+    const items28 = [tmp87, , , , , ];
     obj6 = { quest, currentTime: tmp17.timestampSec, visible: flag };
     const obj7 = {};
     let top;
@@ -926,184 +915,184 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     obj7.right = num8;
     obj6.style = obj7;
-    items28[1] = targetSeconds(onLoad(onToggleFullscreen[34]).VideoQuestCaptions, obj6);
+    items28[1] = targetSeconds(onLoad(onToggleFullscreen[33]).VideoQuestCaptions, obj6);
     if (!isBuffering) {
       items28[2] = isBuffering;
-      top1 = !tmp40[0];
-      if (top1) {
-        top1 = targetSeconds;
-        top1 = ref;
-        const obj8 = { style: top1.loadingContainer };
-        top1 = questTaskDetails;
+      left1 = !tmp39[0];
+      if (left1) {
+        left1 = targetSeconds;
+        left1 = ref;
+        const obj8 = { style: left1.loadingContainer };
+        left1 = questTaskDetails;
         obj9 = { animating: true };
         obj8.children = targetSeconds(questTaskDetails, obj9);
-        top1 = targetSeconds(ref, obj8);
+        left1 = targetSeconds(ref, obj8);
       }
-      items28[3] = top1;
-      top1 = onEnd;
-      top1 = onToggleFullscreen;
-      top1 = c14;
+      items28[3] = left1;
+      left1 = onEnd;
+      left1 = onToggleFullscreen;
+      left1 = c14;
       obj10 = {};
-      const items29 = [top1.controls, animatedStyle];
+      const items29 = [left1.controls, animatedStyle];
       obj10.style = items29;
       obj10.accessible = false;
-      top1 = "landscape" === orientation;
-      if (top1) {
-        obj11 = {};
+      left1 = "landscape" === orientation;
+      if (left1) {
+        const obj11 = {};
         const items30 = [, , ];
-        ({ controlsTopBottom: arr32[0], controlsTop: arr32[1] } = top1);
-        items30[2] = tmp77;
+        ({ controlsTopBottom: arr32[0], controlsTop: arr32[1] } = left1);
+        items30[2] = tmp76;
         obj11.style = items30;
         if (!hasCaptionAsset) {
           const items31 = [hasCaptionAsset, ];
           if (flag2) {
-            top1 = targetSeconds;
-            top1 = onLoad;
-            top1 = onToggleFullscreen;
+            left1 = targetSeconds;
+            left1 = onLoad;
+            left1 = onToggleFullscreen;
             obj12 = { accessibilityRole: "button" };
-            const intl3 = onLoad(onToggleFullscreen[33]).intl;
-            obj12.accessibilityLabel = intl3.string(onLoad(onToggleFullscreen[33]).t.KCzjTi);
+            const intl3 = onLoad(onToggleFullscreen[32]).intl;
+            obj12.accessibilityLabel = intl3.string(onLoad(onToggleFullscreen[32]).t.KCzjTi);
             obj12.onPress = handleOpenTranscript;
-            obj12.style = top1.controlButton;
-            const obj13 = { color: top1.iconDisabled.color };
-            obj12.children = targetSeconds(onLoad(onToggleFullscreen[37]).TranscriptOutlineIcon, obj13);
-            flag2 = targetSeconds(onLoad(onToggleFullscreen[35]).PressableOpacity, obj12);
+            obj12.style = left1.controlButton;
+            const obj13 = { color: left1.iconDisabled.color };
+            obj12.children = targetSeconds(onLoad(onToggleFullscreen[36]).TranscriptOutlineIcon, obj13);
+            flag2 = targetSeconds(onLoad(onToggleFullscreen[34]).PressableOpacity, obj12);
           }
           items31[1] = flag2;
           obj11.children = items31;
-          top1 = top1(top1, obj11);
+          left1 = left1(left1, obj11);
         } else {
-          top1 = targetSeconds;
-          top1 = onLoad;
-          top1 = onToggleFullscreen;
+          left1 = targetSeconds;
+          left1 = onLoad;
+          left1 = onToggleFullscreen;
           const obj14 = { accessibilityRole: "button" };
-          const intl2 = onLoad(onToggleFullscreen[33]).intl;
-          obj14.accessibilityLabel = intl2.string(onLoad(onToggleFullscreen[33]).t.bDSZO1);
+          const intl2 = onLoad(onToggleFullscreen[32]).intl;
+          obj14.accessibilityLabel = intl2.string(onLoad(onToggleFullscreen[32]).t.bDSZO1);
           obj14.onPress = handleToggleCaptions;
-          obj14.style = top1.controlButton;
+          obj14.style = left1.controlButton;
           let obj15 = {};
           if (flag) {
-            let color = top1.icon.color;
+            let color = left1.icon.color;
           } else {
-            color = top1.iconDisabled.color;
+            color = left1.iconDisabled.color;
           }
           obj15.color = color;
-          obj15 = top1(onLoad(onToggleFullscreen[36]).ClosedCaptionsOutlineIcon, obj15);
+          obj15 = left1(onLoad(onToggleFullscreen[35]).ClosedCaptionsOutlineIcon, obj15);
           obj14.children = obj15;
-          top1 = top1(onLoad(onToggleFullscreen[35]).PressableOpacity, obj14);
+          left1 = left1(onLoad(onToggleFullscreen[34]).PressableOpacity, obj14);
         }
       }
-      const items32 = [top1, , ];
-      const obj16 = { style: top1.controlsMiddle };
-      top1 = onLoad;
-      top1 = onToggleFullscreen;
-      top1 = c14;
-      top1 = ref;
-      top1 = targetSeconds;
+      const items32 = [left1, , ];
+      const obj16 = { style: left1.controlsMiddle };
+      left1 = onLoad;
+      left1 = onToggleFullscreen;
+      left1 = c14;
+      left1 = ref;
+      left1 = targetSeconds;
       const obj17 = {};
-      top1 = obj12;
+      left1 = obj12;
       obj17.disabled = first1 === obj12.ERRORED;
       obj17.accessibilityRole = "button";
-      const intl4 = onLoad(onToggleFullscreen[33]).intl;
-      obj17.accessibilityLabel = intl4.string(onLoad(onToggleFullscreen[33]).t.r9s3Uv);
+      const intl4 = onLoad(onToggleFullscreen[32]).intl;
+      obj17.accessibilityLabel = intl4.string(onLoad(onToggleFullscreen[32]).t.r9s3Uv);
       obj17.onPress = callbackResult;
-      const obj18 = { color: top1.icon.color, width: 16, height: 16 };
-      obj17.children = targetSeconds(onLoad(onToggleFullscreen[39]).SkipBackwardIcon, obj18);
-      const items33 = [targetSeconds(onLoad(onToggleFullscreen[38]).VideoQuestPlayerControlButton, obj17), , ];
+      const obj18 = { color: left1.icon.color, width: 16, height: 16 };
+      obj17.children = targetSeconds(onLoad(onToggleFullscreen[38]).SkipBackwardIcon, obj18);
+      const items33 = [targetSeconds(onLoad(onToggleFullscreen[37]).VideoQuestPlayerControlButton, obj17), , ];
       const obj19 = { accessibilityRole: "button" };
       if (!first2) {
-        top1 = obj12;
+        left1 = obj12;
         if (first1 !== obj12.ERRORED) {
-          top1 = onLoad;
-          top1 = onToggleFullscreen;
-          const t2 = onLoad(onToggleFullscreen[33]).t;
-          let K0e7M9 = tmp69 ? t2.R3aFPe : t2.fTMEUi;
+          left1 = onLoad;
+          left1 = onToggleFullscreen;
+          const t2 = onLoad(onToggleFullscreen[32]).t;
+          let K0e7M9 = tmp68 ? t2.R3aFPe : t2.fTMEUi;
         }
-        obj19.accessibilityLabel = top1(K0e7M9);
+        obj19.accessibilityLabel = left1(K0e7M9);
         obj19.onPress = callback5;
         if (!first2) {
-          top1 = obj12;
+          left1 = obj12;
           if (first1 !== obj12.ERRORED) {
-            top1 = onLoad;
-            top1 = onToggleFullscreen;
-            top1 = targetSeconds;
-            if (tmp69) {
-              let PauseIcon = top1(top1[41]).PlayIcon;
+            left1 = onLoad;
+            left1 = onToggleFullscreen;
+            left1 = targetSeconds;
+            if (tmp68) {
+              let PauseIcon = left1(left1[40]).PlayIcon;
             } else {
-              PauseIcon = top1(top1[42]).PauseIcon;
+              PauseIcon = left1(left1[41]).PauseIcon;
             }
             const obj20 = { size: "lg" };
-            top1 = top1(PauseIcon, obj20);
+            left1 = left1(PauseIcon, obj20);
           }
-          obj19.children = top1;
-          items33[1] = top1(onLoad(onToggleFullscreen[38]).VideoQuestPlayerControlButton, obj19);
-          top1 = targetSeconds;
-          top1 = onLoad;
-          top1 = onToggleFullscreen;
-          const obj21 = { disabled: tmp52, accessibilityRole: "button" };
-          const intl5 = onLoad(onToggleFullscreen[33]).intl;
-          obj21.accessibilityLabel = intl5.string(onLoad(onToggleFullscreen[33]).t.zWDcNP);
+          obj19.children = left1;
+          items33[1] = left1(onLoad(onToggleFullscreen[37]).VideoQuestPlayerControlButton, obj19);
+          left1 = targetSeconds;
+          left1 = onLoad;
+          left1 = onToggleFullscreen;
+          const obj21 = { disabled: tmp51, accessibilityRole: "button" };
+          const intl5 = onLoad(onToggleFullscreen[32]).intl;
+          obj21.accessibilityLabel = intl5.string(onLoad(onToggleFullscreen[32]).t.zWDcNP);
           obj21.onPress = callbackResult1;
-          const obj22 = { color: top1.icon.color, width: 16, height: 16 };
-          obj21.children = targetSeconds(onLoad(onToggleFullscreen[43]).SkipForwardIcon, obj22);
-          items33[2] = targetSeconds(onLoad(onToggleFullscreen[38]).VideoQuestPlayerControlButton, obj21);
+          const obj22 = { color: left1.icon.color, width: 16, height: 16 };
+          obj21.children = targetSeconds(onLoad(onToggleFullscreen[42]).SkipForwardIcon, obj22);
+          items33[2] = targetSeconds(onLoad(onToggleFullscreen[37]).VideoQuestPlayerControlButton, obj21);
           obj16.children = items33;
-          items32[1] = top1(top1, obj16);
-          if (top1) {
-            top1 = targetSeconds;
-            top1 = ref;
+          items32[1] = left1(left1, obj16);
+          if (left1) {
+            left1 = targetSeconds;
+            left1 = ref;
             const obj23 = {};
             const items34 = [, , ];
-            ({ controlsTopBottom: arr36[0], controlsBottom: arr36[1] } = top1);
-            items34[2] = tmp77;
+            ({ controlsTopBottom: arr36[0], controlsBottom: arr36[1] } = left1);
+            items34[2] = tmp76;
             obj23.style = items34;
-            top1 = onLoad;
-            top1 = onToggleFullscreen;
+            left1 = onLoad;
+            left1 = onToggleFullscreen;
             const obj24 = { accessibilityRole: "button" };
-            const intl6 = onLoad(onToggleFullscreen[33]).intl;
-            obj24.accessibilityLabel = intl6.string(onLoad(onToggleFullscreen[33]).t.vKZT5t);
+            const intl6 = onLoad(onToggleFullscreen[32]).intl;
+            obj24.accessibilityLabel = intl6.string(onLoad(onToggleFullscreen[32]).t.vKZT5t);
             obj24.onPress = callback8;
-            obj24.style = top1.controlButton;
-            obj24.children = targetSeconds(onLoad(onToggleFullscreen[44]).FullscreenEnterIcon, {});
-            obj23.children = targetSeconds(onLoad(onToggleFullscreen[35]).PressableOpacity, obj24);
-            top1 = targetSeconds(ref, obj23);
+            obj24.style = left1.controlButton;
+            obj24.children = targetSeconds(onLoad(onToggleFullscreen[43]).FullscreenEnterIcon, {});
+            obj23.children = targetSeconds(onLoad(onToggleFullscreen[34]).PressableOpacity, obj24);
+            left1 = targetSeconds(ref, obj23);
           }
-          items32[2] = top1;
+          items32[2] = left1;
           obj10.children = items32;
-          items28[4] = top1(onEnd(onToggleFullscreen[16]).View, obj10);
-          if (top1) {
-            top1 = targetSeconds;
-            top1 = ref;
-            const obj25 = { style: top1.progressContainer };
-            top1 = onEnd;
-            top1 = onToggleFullscreen;
+          items28[4] = left1(onEnd(onToggleFullscreen[16]).View, obj10);
+          if (left1) {
+            left1 = targetSeconds;
+            left1 = ref;
+            const obj25 = { style: left1.progressContainer };
+            left1 = onEnd;
+            left1 = onToggleFullscreen;
             const obj26 = {};
-            const items35 = [top1.progress, animatedStyle1];
+            const items35 = [left1.progress, animatedStyle1];
             obj26.style = items35;
             obj25.children = targetSeconds(onEnd(onToggleFullscreen[16]).View, obj26);
-            top1 = targetSeconds(ref, obj25);
+            left1 = targetSeconds(ref, obj25);
           }
-          items28[5] = top1;
+          items28[5] = left1;
           obj4.children = items28;
-          obj3.children = tmp81(tmp82, obj4);
-          return tmp79(tmp80, obj3);
+          obj3.children = tmp80(tmp81, obj4);
+          return tmp78(tmp79, obj3);
         }
-        top1 = targetSeconds;
-        top1 = onLoad;
-        top1 = onToggleFullscreen;
+        left1 = targetSeconds;
+        left1 = onLoad;
+        left1 = onToggleFullscreen;
         const obj27 = { size: "lg" };
-        top1 = targetSeconds(onLoad(onToggleFullscreen[40]).RetryIcon, obj27);
+        left1 = targetSeconds(onLoad(onToggleFullscreen[39]).RetryIcon, obj27);
       }
-      top1 = onLoad;
-      top1 = onToggleFullscreen;
-      K0e7M9 = onLoad(onToggleFullscreen[33]).t.K0e7M9;
+      left1 = onLoad;
+      left1 = onToggleFullscreen;
+      K0e7M9 = onLoad(onToggleFullscreen[32]).t.K0e7M9;
     } else {
       const obj28 = { animating: true };
-      let items36 = [top1.bufferingSpinner, ];
+      let items36 = [left1.bufferingSpinner, ];
       if (!isFullscreen) {
         if ("landscape" !== orientation) {
           let obj29 = {};
-          top1 = undefined;
+          let top1;
           if (null != contentInsets) {
             top1 = contentInsets.top;
           }
@@ -1112,31 +1101,31 @@ const memoResult = importAllResult.memo((onLoad) => {
             num9 = top1;
           }
           obj29.top = num9;
-          top1 = undefined;
+          left1 = undefined;
           if (null != contentInsets) {
-            top1 = contentInsets.left;
+            left1 = contentInsets.left;
           }
           let num10 = 0;
-          if (null != top1) {
-            num10 = top1;
+          if (null != left1) {
+            num10 = left1;
           }
           obj29.left = num10;
         }
         items36[1] = obj29;
         obj28.style = items36;
-        top1 = onEnd;
-        top1 = onToggleFullscreen;
+        left1 = onEnd;
+        left1 = onToggleFullscreen;
         items36 = onEnd(onToggleFullscreen[8]).unsafe_rawColors.WHITE;
         obj28.color = items36;
-        top1 = tmp98(tmp99, obj28);
+        left1 = tmp97(tmp98, obj28);
       }
-      obj29 = top1.bufferingSpinnerCentered;
+      obj29 = left1.bufferingSpinnerCentered;
     }
-    tmp79 = targetSeconds;
-    tmp80 = ref;
-    tmp81 = c14;
-    tmp82 = quest;
-    const tmp91 = targetSeconds;
+    tmp78 = targetSeconds;
+    tmp79 = ref;
+    tmp80 = c14;
+    tmp81 = quest;
+    const tmp90 = targetSeconds;
   }
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");

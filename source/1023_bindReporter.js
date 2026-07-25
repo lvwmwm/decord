@@ -1,5 +1,5 @@
 // Module ID: 1023
-// Function ID: 11075
+// Function ID: 11081
 // Name: bindReporter
 // Dependencies: []
 

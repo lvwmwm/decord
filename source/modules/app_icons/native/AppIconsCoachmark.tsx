@@ -1,10 +1,10 @@
-// Module ID: 15656
-// Function ID: 120718
+// Module ID: 15667
+// Function ID: 120886
 // Name: AppIconsCoachmarkActionSheet
-// Dependencies: [31, 27, 1849, 1345, 33, 4130, 689, 566, 3776, 4098, 5187, 15657, 1273, 9418, 4126, 1212, 4543, 7443, 2]
+// Dependencies: [31, 27, 1850, 1345, 33, 4131, 689, 566, 3777, 4099, 5187, 15668, 1273, 9338, 4127, 1212, 4544, 6525, 2]
 // Exports: default
 
-// Module 15656 (AppIconsCoachmarkActionSheet)
+// Module 15667 (AppIconsCoachmarkActionSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   let obj = markAsDismissed(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
-  let obj1 = importDefault(3776);
+  let obj1 = importDefault(3777);
   const items1 = [markAsDismissed];
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[9]).hideActionSheet();
@@ -53,15 +53,15 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     contentStyles: tmp.container
   };
   obj = { style: tmp.info };
-  obj1 = { source: importDefault(15657), style: tmp.image };
+  obj1 = { source: importDefault(15668), style: tmp.image };
   const items2 = [callback(closure_4, obj1), , ];
   const obj2 = { style: tmp.titleContainer };
-  const obj3 = { source: importDefault(9418), size: markAsDismissed(1273).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
+  const obj3 = { source: importDefault(9338), size: markAsDismissed(1273).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
   const items3 = [callback(markAsDismissed(1273).Icon, obj3), ];
   const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = markAsDismissed(1212).intl;
   obj4.children = intl.string(markAsDismissed(1212).t.EfA4Cq);
-  items3[1] = callback(markAsDismissed(4126).Text, obj4);
+  items3[1] = callback(markAsDismissed(4127).Text, obj4);
   obj2.children = items3;
   items2[1] = callback2(closure_5, obj2);
   const obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle };
@@ -74,7 +74,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     stringResult = string(t.D0XzaS);
   }
   obj5.children = stringResult;
-  items2[2] = callback(markAsDismissed(4126).Text, obj5);
+  items2[2] = callback(markAsDismissed(4127).Text, obj5);
   obj.children = items2;
   const items4 = [callback2(closure_5, obj), ];
   const obj6 = { style: tmp.footer };
@@ -89,12 +89,12 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     const obj = outer1_1(outer1_2[9]);
     const result = markAsDismissed(outer1_2[17]).navigateToAppIconSettings();
   };
-  const items5 = [callback(markAsDismissed(4543).Button, obj7), ];
+  const items5 = [callback(markAsDismissed(4544).Button, obj7), ];
   const obj8 = { variant: "secondary" };
   const intl4 = markAsDismissed(1212).intl;
   obj8.text = intl4.string(markAsDismissed(1212).t.iSrIIZ);
   obj8.onPress = callback;
-  items5[1] = callback(markAsDismissed(4543).Button, obj8);
+  items5[1] = callback(markAsDismissed(4544).Button, obj8);
   obj6.children = items5;
   items4[1] = callback2(closure_5, obj6);
   obj.children = items4;

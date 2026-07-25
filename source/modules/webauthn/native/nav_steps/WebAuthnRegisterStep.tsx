@@ -1,10 +1,10 @@
-// Module ID: 13692
-// Function ID: 105100
+// Module ID: 13703
+// Function ID: 105227
 // Name: AndroidPasskeyRadioGroup
-// Dependencies: [57, 31, 27, 13675, 33, 4130, 689, 9237, 1212, 1273, 1456, 477, 5121, 13693, 4126, 4965, 4543, 2]
+// Dependencies: [57, 31, 27, 13686, 33, 4131, 689, 9129, 1212, 1273, 1456, 477, 5121, 13704, 4127, 4966, 4544, 2]
 // Exports: default
 
-// Module 13692 (AndroidPasskeyRadioGroup)
+// Module 13703 (AndroidPasskeyRadioGroup)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -82,7 +82,7 @@ export default function WebAuthnRegisterStep() {
   let closure_6 = callback.useMemo(() => ({ onRegisterSuccess: callback, setError: closure_2, setRegistering: closure_1 }), items2);
   obj = { bottom: true, left: true, right: true, style: tmp2.flexContainer };
   obj = { style: tmp2.centerFlex };
-  const items3 = [callback(navigation(13693).KeyImage, {}), , ];
+  const items3 = [callback(navigation(13704).KeyImage, {}), , ];
   obj1 = { style: tmp2.margin, variant: "text-md/normal" };
   const intl = navigation(1212).intl;
   const string = intl.string;
@@ -93,16 +93,16 @@ export default function WebAuthnRegisterStep() {
     stringResult = string(t.Lh5vTW);
   }
   obj1.children = stringResult;
-  items3[1] = callback(navigation(4126).Text, obj1);
+  items3[1] = callback(navigation(4127).Text, obj1);
   let tmp17 = null != tmp7;
   if (tmp17) {
     const obj2 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp7 };
-    tmp17 = callback(navigation(4126).Text, obj2);
+    tmp17 = callback(navigation(4127).Text, obj2);
   }
   items3[2] = tmp17;
   obj.children = items3;
   const items4 = [closure_8(closure_5, obj), , ];
-  let shouldDisplayAndroidFidoSelector = importDefault(9237).shouldDisplayAndroidFidoSelector;
+  let shouldDisplayAndroidFidoSelector = importDefault(9129).shouldDisplayAndroidFidoSelector;
   if (shouldDisplayAndroidFidoSelector) {
     const obj3 = { authenticatorSelection: first1, registering: first, onChange: tmp10[1] };
     shouldDisplayAndroidFidoSelector = callback(AndroidPasskeyRadioGroup, obj3);
@@ -125,8 +125,8 @@ export default function WebAuthnRegisterStep() {
     return callback(closure_6);
   };
   obj5.size = "lg";
-  obj4.children = callback(navigation(4543).Button, obj5);
-  items4[2] = callback(navigation(4965).ButtonGroup, obj4);
+  obj4.children = callback(navigation(4544).Button, obj5);
+  items4[2] = callback(navigation(4966).ButtonGroup, obj4);
   obj.children = items4;
   return closure_8(navigation(5121).SafeAreaPaddingView, obj);
 };

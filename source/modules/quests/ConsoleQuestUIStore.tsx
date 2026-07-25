@@ -1,9 +1,9 @@
-// Module ID: 6942
-// Function ID: 55501
+// Module ID: 5933
+// Function ID: 52807
 // Name: useConsoleQuestUIStore
 // Dependencies: [621, 2]
 
-// Module 6942 (useConsoleQuestUIStore)
+// Module 5933 (useConsoleQuestUIStore)
 import keys from "keys";
 
 let closure_0 = [];

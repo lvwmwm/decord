@@ -1,10 +1,10 @@
-// Module ID: 4801
-// Function ID: 41732
+// Module ID: 4802
+// Function ID: 41744
 // Name: removePunctuation
 // Dependencies: [2]
 // Exports: getQueriesFromUserInput
 
-// Module 4801 (removePunctuation)
+// Module 4802 (removePunctuation)
 function removePunctuation(str) {
   return str.replace(closure_0, "").replace(closure_1, " ");
 }

@@ -1,10 +1,10 @@
-// Module ID: 11545
-// Function ID: 89946
+// Module ID: 11511
+// Function ID: 89663
 // Name: fetchGameServerCatalog
-// Dependencies: [1921, 1849, 4019, 653, 686, 11546, 4369, 507, 11548, 4040, 675, 11549, 2]
+// Dependencies: [1922, 1850, 4020, 653, 686, 11512, 4370, 507, 11514, 4041, 675, 11515, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, wakeGameServer
 
-// Module 11545 (fetchGameServerCatalog)
+// Module 11511 (fetchGameServerCatalog)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { GAME_SERVER_COLLECTION_ID } from "NewGamesCoachmarkContent";
@@ -44,7 +44,7 @@ export const fetchGameServerCatalog = function fetchGameServerCatalog(closure_0)
     obj = { locale: _isNativeReflectConstruct.locale, guild_id: closure_0, include_unpublished_products: null != isStaffResult && isStaffResult, include_unpublished_collection: null != isStaffResult && isStaffResult };
     obj.query = obj;
     obj.oldFormErrors = true;
-    const obj2 = _require(4369);
+    const obj2 = _require(4370);
     obj.rejectWithError = _require(507).rejectWithMigratedError();
     obj.retries = 2;
     let result = obj2.httpGetWithCountryCodeQuery(obj);
@@ -69,7 +69,7 @@ export const fetchGameServerGlobalCatalog = function fetchGameServerGlobalCatalo
   }
   obj = { url: closure_7.STOREFRONT_COLLECTION_WITH_PRODUCTS(GAME_SERVER_COLLECTION_ID), query: obj, oldFormErrors: true };
   obj = { locale: _isNativeReflectConstruct.locale, include_unpublished_products: tmp2, include_unpublished_collection: tmp2 };
-  const obj2 = require(4369) /* _httpGetWithCountryCodeQuery */;
+  const obj2 = require(4370) /* _httpGetWithCountryCodeQuery */;
   obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
   obj.retries = 2;
   let result = obj2.httpGetWithCountryCodeQuery(obj);
@@ -124,7 +124,7 @@ export const fetchGameServerInstances = function fetchGameServerInstances(arg0, 
 export const fetchGameServerInstructions = function fetchGameServerInstructions(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
-  let obj = _require(4369);
+  let obj = _require(4370);
   obj = { url: closure_7.STOREFRONT_PRODUCT_BY_SKU_ID(arg1), query: obj, rejectWithError: true, retries: 3 };
   obj = { locale: _isNativeReflectConstruct.locale };
   const result = obj.httpGetWithCountryCodeQuery(obj);

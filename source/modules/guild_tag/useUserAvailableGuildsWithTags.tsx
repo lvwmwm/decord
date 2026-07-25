@@ -1,10 +1,10 @@
-// Module ID: 13658
-// Function ID: 104871
+// Module ID: 13669
+// Function ID: 104998
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [1917, 1838, 566, 7934, 2]
+// Dependencies: [1918, 1838, 566, 7881, 2]
 // Exports: useUserAvailableGuildsWithTags
 
-// Module 13658 (useUserAvailableGuildsWithTags)
+// Module 13669 (useUserAvailableGuildsWithTags)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

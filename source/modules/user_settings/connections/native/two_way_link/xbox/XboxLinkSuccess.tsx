@@ -1,10 +1,10 @@
-// Module ID: 9071
-// Function ID: 71210
+// Module ID: 8963
+// Function ID: 70695
 // Name: XboxLinkDiscordSuccess
-// Dependencies: [57, 31, 27, 8977, 8989, 33, 4130, 689, 8982, 477, 1456, 9072, 4126, 1212, 9073, 9074, 1273, 9075, 5121, 4543, 2]
+// Dependencies: [57, 31, 27, 8865, 8877, 33, 4131, 689, 8870, 477, 1456, 8964, 4127, 1212, 8965, 8966, 1273, 8967, 5121, 4544, 2]
 // Exports: default
 
-// Module 9071 (XboxLinkDiscordSuccess)
+// Module 8963 (XboxLinkDiscordSuccess)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

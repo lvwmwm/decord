@@ -1,15 +1,8 @@
 // Module ID: 4410
-// Function ID: 38878
+// Function ID: 38888
 // Name: mod
-// Dependencies: [543]
+// Dependencies: [4411]
 
 // Module 4410 (mod)
 
-export default function mod(arg0, arg1) {
-  const result = arg0 % arg1;
-  let sum = result;
-  if (result < 0) {
-    sum = result + arg1;
-  }
-  return require(543)(sum);
-};
+export { default } from "mod";

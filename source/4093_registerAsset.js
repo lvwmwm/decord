@@ -1,11 +1,11 @@
 // Module ID: 4093
-// Function ID: 33914
+// Function ID: 33924
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 4093 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dd2bf1474590dee83bbb5fea2b4f182c", name: "CircleCheckIcon-primary", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "80a1b67e775ddb8de80fde27e63a5302", name: "CircleCheckIcon-secondary", type: "png" };
 
 export default registerAsset.registerAsset(obj);

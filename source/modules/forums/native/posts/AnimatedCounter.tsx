@@ -1,9 +1,9 @@
-// Module ID: 10381
-// Function ID: 80071
+// Module ID: 10314
+// Function ID: 79724
 // Name: getStartPosition
-// Dependencies: [57, 31, 27, 33, 4130, 44, 3991, 4476, 4542, 4126, 4546, 10382, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 44, 3992, 4477, 4543, 4127, 4547, 10315, 2]
 
-// Module 10381 (getStartPosition)
+// Module 10314 (getStartPosition)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -187,7 +187,7 @@ function BasicCounter(arg0) {
   let textVariant;
   ({ count, textStyle, textColor, textVariant, formatter } = arg0);
   const obj = { variant: textVariant, color: textColor, style: textStyle, children: formatter(count) };
-  return callback(require(4126) /* Text */.Text, obj);
+  return callback(require(4127) /* Text */.Text, obj);
 }
 ({ StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -216,7 +216,7 @@ const memoResult = importAllResult.memo((textColor) => {
   }
   let defaultFormatter = textColor.formatter;
   if (defaultFormatter === undefined) {
-    defaultFormatter = require(10382) /* defaultFormatter */.defaultFormatter;
+    defaultFormatter = require(10315) /* defaultFormatter */.defaultFormatter;
   }
   if (animate) {
     let obj = { count, formatter: defaultFormatter, springConfig: textColor.springConfig, textColor: str, textVariant: str2, textStyle };

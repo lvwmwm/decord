@@ -1,10 +1,10 @@
-// Module ID: 4320
-// Function ID: 37847
+// Module ID: 4321
+// Function ID: 37858
 // Name: computeDefaultGroupDmNameFromUserIds
-// Dependencies: [57, 4044, 3767, 1849, 653, 1327, 3969, 1212, 566, 2]
+// Dependencies: [57, 4045, 3768, 1850, 653, 1327, 3970, 1212, 566, 2]
 // Exports: computeGroupDmName, default, unescapeChannelName, useComputedGroupDmName
 
-// Module 4320 (computeDefaultGroupDmNameFromUserIds)
+// Module 4321 (computeDefaultGroupDmNameFromUserIds)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -28,9 +28,9 @@ function computeDefaultGroupDmNameFromUserIds(recipients, getUser, closure_7) {
     let joined = mapped1.join(", ");
   } else {
     const intl = _require(1212).intl;
-    let obj = { name: importDefault(3969).getName(getUser.getCurrentUser()) };
+    let obj = { name: importDefault(3970).getName(getUser.getCurrentUser()) };
     joined = intl.formatToPlainString(_require(1212).t["9Uk8PF"], obj);
-    const obj2 = importDefault(3969);
+    const obj2 = importDefault(3970);
   }
   return joined;
 }
@@ -77,8 +77,8 @@ function computeChannelName(channel, closure_14, closure_7, arg3, arg4) {
           }
           let nickname = closure_7.getNickname(first.id);
           if (null == nickname) {
-            nickname = importDefault(3969).getName(first);
-            const obj = importDefault(3969);
+            nickname = importDefault(3970).getName(first);
+            const obj = importDefault(3970);
           }
           let str7 = "???";
           if (null != nickname) {

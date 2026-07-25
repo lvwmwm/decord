@@ -1,25 +1,29 @@
 // Module ID: 15989
-// Function ID: 123460
+// Function ID: 123605
 // Dependencies: []
 
 // Module 15989
-let obj = {
-  locale: "zh",
+globalThis.IntlMessageFormat.__addLocaleData({
+  locale: "nl",
   pluralRuleFunction(arg0, arg1) {
-    return "other";
+    String(arg0);
+    let str = "other";
+    if (!arg1) {
+      let str2 = "other";
+      if (1 == arg0) {
+        str2 = "other";
+        if (tmp2) {
+          str2 = "one";
+        }
+      }
+      str = str2;
+    }
+    return str;
   }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "zh-Hans", parentLocale: "zh" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "zh-Hans-HK", parentLocale: "zh-Hans" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "zh-Hans-MO", parentLocale: "zh-Hans" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "zh-Hans-SG", parentLocale: "zh-Hans" });
-obj = {
-  locale: "zh-Hant",
-  pluralRuleFunction(arg0, arg1) {
-    return "other";
-  }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "zh-Hant-HK", parentLocale: "zh-Hant" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "zh-Hant-MO", parentLocale: "zh-Hant-HK" });
+});
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-AW", parentLocale: "nl" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-BE", parentLocale: "nl" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-BQ", parentLocale: "nl" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-CW", parentLocale: "nl" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-SR", parentLocale: "nl" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-SX", parentLocale: "nl" });

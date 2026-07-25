@@ -1,10 +1,10 @@
-// Module ID: 5862
-// Function ID: 49758
+// Module ID: 6782
+// Function ID: 59408
 // Name: AppsButtonSpotIllustration
-// Dependencies: [33, 5085, 5863, 2]
+// Dependencies: [33, 5085, 6783, 2]
 // Exports: AppsButtonSpotIllustration
 
-// Module 5862 (AppsButtonSpotIllustration)
+// Module 6782 (AppsButtonSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AppsButtonSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const AppsButtonSpotIllustration = function AppsButtonSpotIllustration(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5863) };
+  obj = { uri: importDefault(6783) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

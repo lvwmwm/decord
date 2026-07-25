@@ -1,10 +1,10 @@
-// Module ID: 8263
-// Function ID: 65203
+// Module ID: 7998
+// Function ID: 63758
 // Name: randomizeProfileEffect
 // Dependencies: [57, 31, 22, 2]
 // Exports: sortEffectLayers, usePotentiallyRandomizedProfileEffect
 
-// Module 8263 (randomizeProfileEffect)
+// Module 7998 (randomizeProfileEffect)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

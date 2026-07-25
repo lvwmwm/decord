@@ -1,10 +1,10 @@
-// Module ID: 5744
-// Function ID: 49392
+// Module ID: 10509
+// Function ID: 81466
 // Name: getUniqueListFromMetadata
-// Dependencies: [1849, 5743, 5745, 5746, 5747, 5748, 5749, 5750, 5751, 5752, 5753, 5754, 5755, 5756, 5757, 5758, 5759, 5760, 5761, 5762, 5763, 5764, 5765, 5766, 22, 1426, 1392, 3771, 3775, 1212, 2]
+// Dependencies: [1850, 10510, 10511, 10512, 10513, 10514, 10515, 10516, 10517, 10518, 10519, 10520, 10521, 10522, 10523, 10524, 10525, 10526, 10527, 10528, 10529, 10530, 10531, 10532, 22, 1426, 1392, 3772, 3776, 1212, 2]
 // Exports: getEffectAnnouncement, getEffectUrl, sampleAnimationId
 
-// Module 5744 (getUniqueListFromMetadata)
+// Module 10509 (getUniqueListFromMetadata)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType";
 import importDefaultResult from "items";
@@ -90,13 +90,13 @@ export const getEffectUrl = function getEffectUrl(emoji) {
     obj.size = tmp;
     return importDefault(1392).getEmojiURL(obj);
   } else {
-    obj = importDefault(3771);
+    obj = importDefault(3772);
     const result = obj.convertSurrogateToName(emoji.name, false);
-    const byName = importDefault(3771).getByName(result);
+    const byName = importDefault(3772).getByName(result);
     let str = "";
     if (null != byName) {
-      str = importDefault(3775).getURL(byName.surrogates);
-      const obj3 = importDefault(3775);
+      str = importDefault(3776).getURL(byName.surrogates);
+      const obj3 = importDefault(3776);
     }
     return str;
   }

@@ -1,10 +1,10 @@
-// Module ID: 12001
-// Function ID: 92767
+// Module ID: 11977
+// Function ID: 92572
 // Name: _fetchNote
-// Dependencies: [5, 31, 12002, 653, 566, 686, 507, 2]
+// Dependencies: [5, 31, 11978, 653, 566, 686, 507, 2]
 // Exports: default
 
-// Module 12001 (_fetchNote)
+// Module 11977 (_fetchNote)
 import dispatcher from "dispatcher";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

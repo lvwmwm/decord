@@ -1,10 +1,10 @@
-// Module ID: 7430
-// Function ID: 59737
+// Module ID: 6511
+// Function ID: 58192
 // Name: useIsBuyNitroPurchaseBlocked
 // Dependencies: [5619, 621, 566, 2]
 // Exports: useIsBuyNitroPurchaseBlocked
 
-// Module 7430 (useIsBuyNitroPurchaseBlocked)
+// Module 6511 (useIsBuyNitroPurchaseBlocked)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import keys from "keys";
 

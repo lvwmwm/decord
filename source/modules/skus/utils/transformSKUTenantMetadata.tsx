@@ -1,10 +1,10 @@
-// Module ID: 4172
-// Function ID: 35402
+// Module ID: 4173
+// Function ID: 35413
 // Name: transformCollectiblesItemAssetsFromServer
-// Dependencies: [1876, 2]
+// Dependencies: [1877, 2]
 // Exports: default
 
-// Module 4172 (transformCollectiblesItemAssetsFromServer)
+// Module 4173 (transformCollectiblesItemAssetsFromServer)
 function transformCollectiblesItemAssetsFromServer(assets) {
   if (null != assets) {
     const obj = {};
@@ -39,19 +39,19 @@ function transformCollectiblesItemFromServer(item) {
   let effects;
   if (null != item) {
     const type = item.type;
-    if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+    if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
       let obj = {};
       ({ id: obj4.id, type: obj4.type, asset: obj4.asset } = item);
       obj.assets = transformCollectiblesItemAssetsFromServer(item.assets);
       obj.label = item.label;
       return obj;
-    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
       obj = {};
       ({ id: obj3.id, type: obj3.type, asset: obj3.asset } = item);
       obj.assets = transformCollectiblesItemAssetsFromServer(item.assets);
       ({ label: obj3.label, palette: obj3.palette } = item);
       return obj;
-    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj1 = {};
       ({ id: obj2.id, type: obj2.type, title: obj2.title, description: obj2.description, accessibilityLabel: obj2.accessibilityLabel, animationType: obj2.animationType, staticFrameSrc: obj2.staticFrameSrc, thumbnailPreviewSrc: obj2.thumbnailPreviewSrc, reducedMotionSrc: obj2.reducedMotionSrc, effects } = item);
       let mapped;
@@ -60,7 +60,7 @@ function transformCollectiblesItemFromServer(item) {
       }
       obj1.effects = mapped;
       return obj1;
-    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
+    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
       obj = {};
       ({ id: obj.id, type: obj.type, label: obj.label, layers: obj.layers, inner_width: obj.innerWidth, overflow_top: obj.overflowTop, overflow_bottom: obj.overflowBottom, overflow_horizontal: obj.overflowHorizontal } = item);
       return obj;

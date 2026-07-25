@@ -1,10 +1,10 @@
-// Module ID: 6926
-// Function ID: 55271
+// Module ID: 5917
+// Function ID: 52577
 // Name: toRichValue
 // Dependencies: [2]
 // Exports: createEmptyState, createState, voidToOptionValue
 
-// Module 6926 (toRichValue)
+// Module 5917 (toRichValue)
 function toRichValue(content) {
   if ("" !== content) {
     const parts = content.split("\n");

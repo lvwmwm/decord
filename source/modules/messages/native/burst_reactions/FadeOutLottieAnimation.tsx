@@ -1,10 +1,10 @@
-// Module ID: 7068
-// Function ID: 56522
+// Module ID: 6086
+// Function ID: 54334
 // Name: FadeOutLottieAnimation
-// Dependencies: [57, 31, 4122, 33, 4130, 566, 3991, 4131, 5453, 2]
+// Dependencies: [57, 31, 4123, 33, 4131, 566, 3992, 4132, 5453, 2]
 // Exports: default
 
-// Module 7068 (FadeOutLottieAnimation)
+// Module 6086 (FadeOutLottieAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -35,7 +35,7 @@ export default function FadeOutLottieAnimation(onComplete) {
   const effect = React.useEffect(() => {
     dependencyMap(false);
   }, []);
-  onComplete(3991);
+  onComplete(3992);
   class T {
     constructor() {
       obj = {};
@@ -87,7 +87,7 @@ export default function FadeOutLottieAnimation(onComplete) {
       return;
     }
   }
-  obj = { isAnimationComplete: first, isFadeOut: first1, withTiming: onComplete(4131).withTiming, runOnJS: onComplete(3991).runOnJS, setIsFadeOut: tmp8 };
+  obj = { isAnimationComplete: first, isFadeOut: first1, withTiming: onComplete(4132).withTiming, runOnJS: onComplete(3992).runOnJS, setIsFadeOut: tmp8 };
   T.__closure = obj;
   T.__workletHash = 1137618554665;
   T.__initData = closure_8;
@@ -106,7 +106,7 @@ export default function FadeOutLottieAnimation(onComplete) {
     };
     const merged1 = Object.assign(merged);
     obj1.children = jsx(first(5453), { style: tmp3.content });
-    let tmp14Result = tmp14(first(3991).View, obj1);
+    let tmp14Result = tmp14(first(3992).View, obj1);
     const tmp17 = first(5453);
   } else {
     tmp14Result = null;

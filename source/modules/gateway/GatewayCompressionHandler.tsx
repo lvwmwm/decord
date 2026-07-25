@@ -1,15 +1,15 @@
-// Module ID: 12631
-// Function ID: 97703
+// Module ID: 12642
+// Function ID: 97830
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [15, 17, 18, 6, 7, 27, 12632, 12634, 3, 477, 12633, 4677, 2]
+// Dependencies: [15, 17, 18, 6, 7, 27, 12643, 12645, 3, 477, 12644, 4678, 2]
 // Exports: getCompressionHandler
 
-// Module 12631 (_createForOfIteratorHelperLoose)
+// Module 12642 (_createForOfIteratorHelperLoose)
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
 import supportsZstd from "supportsZstd";
-import module_12634 from "module_12634";
+import module_12645 from "module_12645";
 import { NativeModules } from "get ActivityIndicator";
 
 const require = arg1;
@@ -635,7 +635,7 @@ items.push(tmp7);
 let result = require("_inherits").fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
 
 export const getCompressionHandler = function getCompressionHandler(outer1_15) {
-  const ProcessArgs = require(4677) /* ProcessArgs */.ProcessArgs;
+  const ProcessArgs = require(4678) /* ProcessArgs */.ProcessArgs;
   if (ProcessArgs.isDiscordGatewayPlaintextSet()) {
     const prototype3 = tmp7.prototype;
     const tmp19 = new tmp7(outer1_15);

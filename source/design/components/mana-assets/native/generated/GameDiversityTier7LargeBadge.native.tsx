@@ -1,10 +1,10 @@
-// Module ID: 6142
-// Function ID: 50178
+// Module ID: 7062
+// Function ID: 59828
 // Name: GameDiversityTier7LargeBadge
-// Dependencies: [33, 5085, 6143, 2]
+// Dependencies: [33, 5085, 7063, 2]
 // Exports: GameDiversityTier7LargeBadge
 
-// Module 6142 (GameDiversityTier7LargeBadge)
+// Module 7062 (GameDiversityTier7LargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier7LargeBadge.native.tsx");
@@ -27,7 +27,7 @@ export const GameDiversityTier7LargeBadge = function GameDiversityTier7LargeBadg
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6143) };
+  obj = { uri: importDefault(7063) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

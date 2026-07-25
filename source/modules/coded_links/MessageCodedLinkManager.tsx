@@ -1,9 +1,9 @@
-// Module ID: 16143
-// Function ID: 125053
+// Module ID: 16154
+// Function ID: 125221
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 5, 6693, 4115, 4114, 4119, 16144, 7540, 5718, 11221, 16151, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 5, 5687, 4116, 4115, 4120, 16155, 6636, 7630, 11182, 16162, 5078, 2]
 
-// Module 16143 (_isNativeReflectConstruct)
+// Module 16154 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
@@ -25,7 +25,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function resolveMessageCodedLinks(content) {
-  const arr = importDefault(4114)(content.content);
+  const arr = importDefault(4115)(content.content);
   let tmp = null != arr;
   if (tmp) {
     tmp = 0 !== arr.length;

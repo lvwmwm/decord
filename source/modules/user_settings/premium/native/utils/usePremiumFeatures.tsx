@@ -1,10 +1,10 @@
-// Module ID: 8061
-// Function ID: 63869
+// Module ID: 9256
+// Function ID: 72562
 // Name: usePremiumFeatures
-// Dependencies: [31, 1851, 3790, 1867, 3832, 1212, 2780, 7440, 3776, 7437, 7483, 7486, 7480, 7477, 7474, 689, 2]
+// Dependencies: [31, 1852, 3791, 1868, 3833, 1212, 2781, 6522, 3777, 6519, 6567, 6570, 6564, 6561, 6558, 689, 2]
 // Exports: default
 
-// Module 8061 (usePremiumFeatures)
+// Module 9256 (usePremiumFeatures)
 import result from "result";
 import GuildFeatures from "GuildFeatures";
 import { TOTAL_PREMIUM_GROUP_USERS } from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";

@@ -1,10 +1,10 @@
-// Module ID: 5129
-// Function ID: 44479
+// Module ID: 5128
+// Function ID: 44481
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4991, 3771, 5130, 1327, 5131, 2]
+// Dependencies: [4992, 3772, 5129, 1327, 5130, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 5129 (_createForOfIteratorHelperLoose)
+// Module 5128 (_createForOfIteratorHelperLoose)
 import { EmojiDisambiguations } from "_isNativeReflectConstruct";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -107,15 +107,15 @@ function getEmoji(guildId) {
   } else {
     byName = null;
     if (byId != emojiName) {
-      byName = importDefault(3771).getByName(emojiName);
-      const obj2 = importDefault(3771);
+      byName = importDefault(3772).getByName(emojiName);
+      const obj2 = importDefault(3772);
     }
   }
 }
 function buildGuildProfileTraitsFromServer(guildId) {
   let iter3;
   let position;
-  const array = new Array(require(5130) /* MAX_TRAITS */.MAX_TRAITS);
+  const array = new Array(require(5129) /* MAX_TRAITS */.MAX_TRAITS);
   const fillResult = array.fill(closure_4);
   const tmp2 = _createForOfIteratorHelperLoose(arg1);
   const iter = tmp2();
@@ -127,7 +127,7 @@ function buildGuildProfileTraitsFromServer(guildId) {
       if (!tmp3) {
         let tmp4 = require;
         let tmp5 = dependencyMap;
-        tmp3 = value.position >= require(5130) /* MAX_TRAITS */.MAX_TRAITS;
+        tmp3 = value.position >= require(5129) /* MAX_TRAITS */.MAX_TRAITS;
       }
       if (!tmp3) {
         let obj = { label: value.label };
@@ -323,7 +323,7 @@ export const buildGuildProfileFromInvite = function buildGuildProfileFromInvite(
         num2 = approximate_member_count;
       }
       obj.memberCount = num2;
-      obj.visibility = require(5131) /* GuildProfileVisibility */.GuildProfileVisibility.NOT_SPECIFIED;
+      obj.visibility = require(5130) /* GuildProfileVisibility */.GuildProfileVisibility.NOT_SPECIFIED;
       obj.traits = [];
       obj.gameApplicationIds = [];
       obj.gameActivity = {};

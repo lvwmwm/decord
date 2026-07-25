@@ -1,9 +1,9 @@
-// Module ID: 6811
-// Function ID: 53750
+// Module ID: 5807
+// Function ID: 51024
 // Name: FramesProductShelfBlockRecord
-// Dependencies: [6, 7, 6805, 2]
+// Dependencies: [6, 7, 5801, 2]
 
-// Module 6811 (FramesProductShelfBlockRecord)
+// Module 5807 (FramesProductShelfBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

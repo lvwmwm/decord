@@ -1,10 +1,10 @@
-// Module ID: 5077
-// Function ID: 44186
+// Module ID: 1841
+// Function ID: 20208
 // Name: isFavoritesGuildId
 // Dependencies: [1386, 653, 1212, 2]
 // Exports: canFavoriteChannelType, getFavoritesAwareGuildName
 
-// Module 5077 (isFavoritesGuildId)
+// Module 1841 (isFavoritesGuildId)
 import { FAVORITES_RAW_GUILD_ID } from "date";
 import { FAVORITES } from "ME";
 

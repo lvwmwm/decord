@@ -1,22 +1,22 @@
-// Module ID: 15521
-// Function ID: 119464
+// Module ID: 15531
+// Function ID: 119592
 // Name: YouSettingsCoachmark
-// Dependencies: [15522, 8608, 2]
+// Dependencies: [15532, 8368, 2]
 // Exports: default, useYouSettingsCoachmark
 
-// Module 15521 (YouSettingsCoachmark)
+// Module 15531 (YouSettingsCoachmark)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouSettingsCoachmark.tsx");
 
 export default function YouSettingsCoachmark(buttonRef) {
   let obj = Object.create(null);
   obj.buttonRef = 0;
   const merged = Object.assign(buttonRef, obj);
-  obj = require(8608) /* useCoachmark */;
+  obj = require(8368) /* useCoachmark */;
   const coachmark = obj.useCoachmark(buttonRef.buttonRef, merged);
   return null;
 };
 export const useYouSettingsCoachmark = function useYouSettingsCoachmark(disabled) {
-  const referralProgramCoachmark = require(15522) /* ReferralProgramCoachmarkImg */.useReferralProgramCoachmark({ disabled: disabled.disabled });
+  const referralProgramCoachmark = require(15532) /* ReferralProgramCoachmarkImg */.useReferralProgramCoachmark({ disabled: disabled.disabled });
   let tmp2 = null;
   if (null != referralProgramCoachmark) {
     tmp2 = referralProgramCoachmark;

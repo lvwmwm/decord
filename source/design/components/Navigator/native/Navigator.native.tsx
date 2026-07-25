@@ -1,7 +1,7 @@
 // Module ID: 5517
-// Function ID: 46996
+// Function ID: 47001
 // Name: NavigationStack
-// Dependencies: [57, 31, 27, 33, 4130, 689, 5518, 5087, 3834, 5519, 1557, 477, 1212, 22, 5579, 1457, 4066, 5586, 1185, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 5518, 5087, 3835, 5519, 1557, 477, 1212, 22, 5579, 1457, 4067, 5586, 1185, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
 // Module 5517 (NavigationStack)
@@ -234,7 +234,7 @@ function WrappedNavigationStack(arg0) {
     return tmp;
   }), 1)[0];
   const obj2 = require(1457) /* Link */;
-  const tmp5 = navigationContainerRef(4066)();
+  const tmp5 = navigationContainerRef(4067)();
   navigationTheme = require(5586) /* useNavigationTheme */.useNavigationTheme(tmp5);
   obj = { ref: navigationContainerRef, theme: navigationTheme };
   if (null == initialRouteState) {

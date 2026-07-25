@@ -1,10 +1,10 @@
-// Module ID: 11616
-// Function ID: 90308
+// Module ID: 11583
+// Function ID: 90031
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [1838, 653, 566, 1212, 2230, 2]
+// Dependencies: [1838, 653, 566, 1212, 2231, 2]
 // Exports: default
 
-// Module 11616 (useGuildPowerupTier3OverrideConfig)
+// Module 11583 (useGuildPowerupTier3OverrideConfig)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 
@@ -26,7 +26,7 @@ export default function useGuildPowerupTier3OverrideConfig(arg0) {
   })) {
     obj = { shouldShow: true };
     const intl = _require(1212).intl;
-    obj.text = intl.string(importDefault(2230).l9n4QZ);
+    obj.text = intl.string(importDefault(2231).l9n4QZ);
   } else {
     obj = { shouldShow: false, text: "" };
   }

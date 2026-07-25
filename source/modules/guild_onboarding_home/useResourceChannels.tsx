@@ -1,10 +1,10 @@
-// Module ID: 15333
-// Function ID: 116891
+// Module ID: 15343
+// Function ID: 117019
 // Name: useResourceChannels
-// Dependencies: [1348, 4333, 624, 2]
+// Dependencies: [1348, 4334, 624, 2]
 // Exports: default
 
-// Module 15333 (useResourceChannels)
+// Module 15343 (useResourceChannels)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

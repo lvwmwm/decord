@@ -1,10 +1,10 @@
-// Module ID: 7191
-// Function ID: 57921
+// Module ID: 7582
+// Function ID: 60724
 // Name: Divider
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1324, 3842, 5484, 3974, 5164, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1324, 3843, 5484, 3975, 5163, 2]
 // Exports: default
 
-// Module 7191 (Divider)
+// Module 7582 (Divider)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -40,18 +40,18 @@ export default function Divider(outer) {
     flag2 = false;
   }
   const tmp = callback(importDefault(1324)("FormDivider"));
-  let obj = require(3842) /* ManaContext */;
+  let obj = require(3843) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   const theme = themeContext.theme;
   const profileThemeValues = require(5484) /* useProfileThemeValues */.useProfileThemeValues(theme);
   let tmp5 = null;
   if (tmp4) {
-    obj = { backgroundColor: require(3974) /* hexToRgb */.hexOpacityToRgba(_createForOfIteratorHelperLoose[theme], profileThemeValues.dividerOpacity) };
+    obj = { backgroundColor: require(3975) /* hexToRgb */.hexOpacityToRgba(_createForOfIteratorHelperLoose[theme], profileThemeValues.dividerOpacity) };
     tmp5 = obj;
-    const obj4 = require(3974) /* hexToRgb */;
+    const obj4 = require(3975) /* hexToRgb */;
   }
   let tmp10Result = null;
-  if (!React.useContext(require(5164) /* context */.RedesignCompatContext)) {
+  if (!React.useContext(require(5163) /* context */.RedesignCompatContext)) {
     obj = {};
     const items = [flag ? tmp.dividerOuter : tmp.divider, , , ];
     if (flag2) {

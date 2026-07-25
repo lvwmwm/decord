@@ -1,10 +1,10 @@
-// Module ID: 16301
-// Function ID: 126900
+// Module ID: 16312
+// Function ID: 127068
 // Name: num2
-// Dependencies: [57, 31, 27, 1838, 33, 4130, 689, 477, 566, 8446, 9427, 3775, 16302, 4528, 4126, 1273, 5165, 3831, 1212, 1392, 4319, 3969, 4660, 16304, 2]
+// Dependencies: [57, 31, 27, 1838, 33, 4131, 689, 477, 566, 8204, 9347, 3776, 16313, 4529, 4127, 1273, 5164, 3832, 1212, 1392, 4320, 3970, 4661, 16315, 2]
 // Exports: EmojiRow
 
-// Module 16301 (num2)
+// Module 16312 (num2)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

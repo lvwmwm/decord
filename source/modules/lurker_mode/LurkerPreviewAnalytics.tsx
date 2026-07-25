@@ -1,10 +1,10 @@
-// Module ID: 5700
-// Function ID: 49090
+// Module ID: 6635
+// Function ID: 58688
 // Name: getNumLurkedGuilds
-// Dependencies: [3759, 653, 675, 2]
+// Dependencies: [3760, 653, 675, 2]
 // Exports: trackGuildIconClicked, trackJoinClicked, trackLeavePromptLeaveClicked, trackLongPressLeaveClicked, trackLurkStarted
 
-// Module 5700 (getNumLurkedGuilds)
+// Module 6635 (getNumLurkedGuilds)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 

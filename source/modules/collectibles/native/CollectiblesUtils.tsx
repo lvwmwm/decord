@@ -1,10 +1,10 @@
-// Module ID: 8760
-// Function ID: 69209
+// Module ID: 8648
+// Function ID: 68686
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [653, 5616, 3789, 5619, 6786, 3776, 6785, 8761, 8762, 2]
+// Dependencies: [653, 5616, 3790, 5619, 5782, 3777, 5781, 8649, 8650, 2]
 // Exports: createOrbProfileBadge, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct
 
-// Module 8760 (_createForOfIteratorHelperLoose)
+// Module 8648 (_createForOfIteratorHelperLoose)
 import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -87,7 +87,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function extractPriceByPurchaseTypes(googleSkuIds) {
-  let obj = require(3789) /* isPremiumGiftingSupported */;
+  let obj = require(3790) /* isPremiumGiftingSupported */;
   if (obj.isGooglePlayBillingSupported()) {
     if (arg1 !== closure_3.MOBILE) {
       if (arg1 !== closure_3.MOBILE_PREMIUM_TIER_2) {
@@ -110,7 +110,7 @@ function extractPriceByPurchaseTypes(googleSkuIds) {
     }
     return tmp10;
   } else {
-    return require(6786) /* getPriceForCollectiblesProduct */.extractPriceByPurchaseTypes(googleSkuIds, arg1);
+    return require(5782) /* getPriceForCollectiblesProduct */.extractPriceByPurchaseTypes(googleSkuIds, arg1);
   }
 }
 function isGPlaySynced(variants) {
@@ -133,7 +133,7 @@ function isGPlaySynced(variants) {
     const obj3 = importDefault(5619);
     return null != product && null != importDefault(5619).getProduct(tmp9);
   }
-  obj = require(6785) /* getProductOrbPrice */;
+  obj = require(5781) /* getProductOrbPrice */;
 }
 function hasAtLeastOneGPlaySynced(value) {
   const products = value.products;
@@ -159,7 +159,7 @@ export const getCollectibleGoogleSkuId = function getCollectibleGoogleSkuId(clos
   if (null == stateFromStores) {
     return null;
   } else {
-    const obj = importDefault(3776);
+    const obj = importDefault(3777);
     const googleSkuIds = closure_0.googleSkuIds;
     let tmp5;
     if (null != googleSkuIds) {
@@ -210,5 +210,5 @@ export const filterHiddenCategories = function filterHiddenCategories(result) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  return { id: require(8761) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8761) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8762), description: "", isPreviewMode: true };
+  return { id: require(8649) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8649) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8650), description: "", isPreviewMode: true };
 };

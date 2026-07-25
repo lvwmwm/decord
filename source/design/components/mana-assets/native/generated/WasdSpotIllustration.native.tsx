@@ -1,10 +1,10 @@
-// Module ID: 6612
-// Function ID: 50883
+// Module ID: 7532
+// Function ID: 60533
 // Name: WasdSpotIllustration
-// Dependencies: [33, 5085, 6613, 2]
+// Dependencies: [33, 5085, 7533, 2]
 // Exports: WasdSpotIllustration
 
-// Module 6612 (WasdSpotIllustration)
+// Module 7532 (WasdSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WasdSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const WasdSpotIllustration = function WasdSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6613) };
+  obj = { uri: importDefault(7533) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

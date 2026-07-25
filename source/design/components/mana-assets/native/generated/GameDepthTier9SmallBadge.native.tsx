@@ -1,10 +1,10 @@
-// Module ID: 6112
-// Function ID: 50133
+// Module ID: 7032
+// Function ID: 59783
 // Name: GameDepthTier9SmallBadge
-// Dependencies: [33, 5085, 6113, 2]
+// Dependencies: [33, 5085, 7033, 2]
 // Exports: GameDepthTier9SmallBadge
 
-// Module 6112 (GameDepthTier9SmallBadge)
+// Module 7032 (GameDepthTier9SmallBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GameDepthTier9SmallBadge.native.tsx");
@@ -27,7 +27,7 @@ export const GameDepthTier9SmallBadge = function GameDepthTier9SmallBadge(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6113) };
+  obj = { uri: importDefault(7033) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,10 +1,10 @@
-// Module ID: 11183
-// Function ID: 86985
+// Module ID: 11144
+// Function ID: 86630
 // Name: openCustomKeyboard
-// Dependencies: [1454, 5582, 3997, 11141, 2]
+// Dependencies: [1454, 5582, 3998, 11101, 2]
 // Exports: default
 
-// Module 11183 (openCustomKeyboard)
+// Module 11144 (openCustomKeyboard)
 const result = require("closePortalKeyboard").fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");
 
 export default function openCustomKeyboard(secondaryTextFieldRef) {

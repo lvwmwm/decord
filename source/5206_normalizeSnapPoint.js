@@ -1,5 +1,5 @@
 // Module ID: 5206
-// Function ID: 45136
+// Function ID: 45141
 // Name: normalizeSnapPoint
 // Dependencies: [5207, 5208, 5209, 5210, 5211, 5212, 5213]
 

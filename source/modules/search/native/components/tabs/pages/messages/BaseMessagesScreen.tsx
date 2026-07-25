@@ -1,10 +1,10 @@
-// Module ID: 15434
-// Function ID: 117764
+// Module ID: 15444
+// Function ID: 117892
 // Name: BaseMessagesScreen
-// Dependencies: [31, 5660, 10109, 9169, 33, 10108, 566, 10110, 15425, 15435, 11426, 15436, 15437, 15380, 15391, 2]
+// Dependencies: [31, 5847, 10041, 9061, 33, 10040, 566, 10042, 15435, 15445, 11389, 15446, 15447, 15390, 15401, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 15434 (BaseMessagesScreen)
+// Module 15444 (BaseMessagesScreen)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -117,7 +117,7 @@ export const trackMessageItemPress = function trackMessageItemPress(messageId) {
   messageId = messageId.messageId;
   ({ searchContext, channelId, index } = messageId);
   message = message.getMessage(messageId);
-  let obj = importDefault(10108);
+  let obj = importDefault(10040);
   obj = { searchContext, channelId, messageId };
   let id;
   if (null != message) {

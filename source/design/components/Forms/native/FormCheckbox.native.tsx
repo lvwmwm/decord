@@ -1,15 +1,15 @@
-// Module ID: 7638
-// Function ID: 60779
+// Module ID: 7577
+// Function ID: 60693
 // Name: FormCheckbox
-// Dependencies: [31, 33, 4130, 689, 3991, 4545, 1324, 3849, 5504, 4542, 4546, 2]
+// Dependencies: [31, 33, 4131, 689, 3992, 4546, 1324, 3850, 5504, 4543, 4547, 2]
 // Exports: FormCheckbox
 
-// Module 7638 (FormCheckbox)
+// Module 7577 (FormCheckbox)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import getIconSize from "getIconSize";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 const require = arg1;
 _createForOfIteratorHelperLoose = {};
@@ -62,7 +62,7 @@ export const FormCheckbox = function FormCheckbox(checked) {
   let obj = { style: items };
   items = [tmp2.checkbox, tmp3];
   obj = { source: importDefault(5504) };
-  const Sizes = importDefault(4545).Sizes;
+  const Sizes = importDefault(4546).Sizes;
   obj.size = tmp ? Sizes.SMALL_20 : Sizes.SMALL;
   const items1 = [
     tmp2.checkmark,
@@ -97,9 +97,9 @@ export const FormCheckbox = function FormCheckbox(checked) {
       fn.__workletHash = 13939484082835;
       fn.__initData = outer1_8;
       return obj.useAnimatedStyle(fn);
-    })(React.useContext(require(3849) /* context */.AccessibilityPreferencesContext).reducedMotion.enabled, checked)
+    })(React.useContext(require(3850) /* context */.AccessibilityPreferencesContext).reducedMotion.enabled, checked)
   ];
   obj.style = items1;
   obj.children = <getIconSize source={importDefault(5504)} />;
-  return jsx(importDefault(3991).View, { source: importDefault(5504) });
+  return jsx(importDefault(3992).View, { source: importDefault(5504) });
 };

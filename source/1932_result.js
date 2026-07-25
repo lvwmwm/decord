@@ -1,38 +1,80 @@
 // Module ID: 1932
-// Function ID: 21803
+// Function ID: 21811
 // Name: result
 // Dependencies: []
 // Exports: default
 
 // Module 1932 (result)
 
-export default function buildMatchPatternFn(arg0) {
+export default function buildMatchFn(arg0) {
   let closure_0 = arg0;
   return (str) => {
     if (arguments.length > 1) {
       if (undefined !== arguments[1]) {
         let obj = arguments[1];
       }
-      const match = str.match(closure_0.matchPattern);
+      const width = obj.width;
+      let tmp2 = width;
+      if (width) {
+        tmp2 = closure_0.matchPatterns[width];
+      }
+      if (!tmp2) {
+        tmp2 = closure_0.matchPatterns[closure_0.defaultMatchWidth];
+      }
+      const match = str.match(tmp2);
       if (match) {
-        const match1 = str.match(closure_0.parsePattern);
-        if (match1) {
-          if (closure_0.valueCallback) {
-            let first = closure_0.valueCallback(match1[0]);
-          } else {
-            first = match1[0];
-          }
-          obj = {};
-          let valueCallbackResult = first;
-          if (obj.valueCallback) {
-            valueCallbackResult = obj.valueCallback(first);
-          }
-          obj.value = valueCallbackResult;
-          obj.rest = str.slice(match[0].length);
-          return obj;
-        } else {
-          return null;
+        const first = match[0];
+        let arr2 = width;
+        if (width) {
+          arr2 = closure_0.parsePatterns[width];
         }
+        if (!arr2) {
+          arr2 = closure_0.parsePatterns[closure_0.defaultParseWidth];
+        }
+        const _Array = Array;
+        if (Array.isArray(arr2)) {
+          let num2 = 0;
+          let tmp15;
+          if (0 < arr2.length) {
+            tmp15 = num2;
+            while (!obj3.test(first)) {
+              num2 = num2 + 1;
+              if (num2 >= arr2.length) {
+                break;
+              }
+            }
+            obj3 = arr2[num2];
+          }
+          let tmp12 = tmp15;
+        } else {
+          const keys = Object.keys();
+          if (keys !== undefined) {
+            while (keys[tmp] !== undefined) {
+              let tmp20 = tmp14;
+              if (!arr2.hasOwnProperty(tmp14)) {
+                continue;
+              } else {
+                let obj2 = arr2[tmp14];
+                tmp12 = tmp14;
+                if (obj2.test(first)) {
+                  break;
+                }
+              }
+              continue;
+            }
+          }
+        }
+        let valueCallbackResult = tmp12;
+        if (closure_0.valueCallback) {
+          valueCallbackResult = closure_0.valueCallback(tmp12);
+        }
+        obj = {};
+        if (obj.valueCallback) {
+          valueCallbackResult = obj.valueCallback(valueCallbackResult);
+        }
+        obj.value = valueCallbackResult;
+        obj.rest = str.slice(first.length);
+        return obj;
       } else {
         return null;
       }

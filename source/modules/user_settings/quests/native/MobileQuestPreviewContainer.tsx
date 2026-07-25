@@ -1,10 +1,10 @@
-// Module ID: 14118
-// Function ID: 108509
+// Module ID: 14129
+// Function ID: 108636
 // Name: MobileQuestPreviewContainer
-// Dependencies: [27, 33, 4130, 689, 4126, 2]
+// Dependencies: [27, 33, 4131, 689, 4127, 2]
 // Exports: default
 
-// Module 14118 (MobileQuestPreviewContainer)
+// Module 14129 (MobileQuestPreviewContainer)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -27,7 +27,7 @@ export default function MobileQuestPreviewContainer(title) {
   let tmp4 = null != title;
   if (tmp4) {
     obj = { variant: "text-lg/semibold", color: "text-default", style: tmp.title, children: title };
-    tmp4 = callback(require(4126) /* Text */.Text, obj);
+    tmp4 = callback(require(4127) /* Text */.Text, obj);
   }
   const items = [tmp4, title.children];
   obj.children = items;

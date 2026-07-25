@@ -1,9 +1,9 @@
-// Module ID: 3758
-// Function ID: 28687
+// Module ID: 3759
+// Function ID: 28698
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1909, 3759, 1353, 3760, 1352, 1391, 1857, 1348, 1917, 1838, 1849, 653, 3762, 3763, 22, 3765, 1387, 483, 3766, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1910, 3760, 1353, 3761, 1352, 1391, 1858, 1348, 1918, 1838, 1850, 653, 3763, 3764, 22, 3766, 1387, 483, 3767, 566, 686, 2]
 
-// Module 3758 (_isNativeReflectConstruct)
+// Module 3759 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -122,13 +122,13 @@ function _getGuildPermissions(guildId) {
   } else {
     const currentUser = authStore.getCurrentUser();
     if (null == currentUser) {
-      return importAll(3763).NONE;
+      return importAll(3764).NONE;
     } else {
       guild = guild.getGuild(guildId);
       if (null == guild) {
-        let NONE = importAll(3763).NONE;
+        let NONE = importAll(3764).NONE;
       } else {
-        let obj = importAll(3763);
+        let obj = importAll(3764);
         obj = { user: currentUser, context: guild, checkElevated: flag };
         NONE = obj.computePermissions(obj);
         table[guildId] = NONE;
@@ -143,11 +143,11 @@ function getUncachedChannelPermissions(id, flag) {
   }
   const currentUser = authStore.getCurrentUser();
   if (null == currentUser) {
-    return importAll(3763).NONE;
+    return importAll(3764).NONE;
   } else {
     const channel = store.getChannel(id);
     if (null == channel) {
-      return importAll(3763).NONE;
+      return importAll(3764).NONE;
     } else {
       const guildId = channel.getGuildId();
       let tmp7 = null != guildId;
@@ -175,8 +175,8 @@ function getUncachedChannelPermissions(id, flag) {
         }
       }
       obj = { user: currentUser, context: channel, checkElevated: flag };
-      permissions = importAll(3763).computePermissions(obj);
-      const obj2 = importAll(3763);
+      permissions = importAll(3764).computePermissions(obj);
+      const obj2 = importAll(3764);
     }
   }
 }
@@ -254,7 +254,7 @@ function handleStageInstancesChanged(instance) {
     return false;
   } else {
     const currentUser = authStore.getCurrentUser();
-    let obj = importAll(3763);
+    let obj = importAll(3764);
     obj = { user: currentUser, context: channel };
     const permissions = obj.computePermissions(obj);
     if (permissions === dependencyMap[channel.id]) {
@@ -276,14 +276,14 @@ function handleImpersonateUpdate(guildId) {
   updateGuildVersion(guildId);
 }
 function _computePermissions(channel, overwrites, roles, excludeGuildPermissions) {
-  let NONE = importAll(3763).NONE;
+  let NONE = importAll(3764).NONE;
   if (channel instanceof closure_13) {
     if (set.has(channel.type)) {
       channel = store.getChannel(channel.parent_id);
       if (null == channel) {
-        let NONE2 = importAll(3763).NONE;
+        let NONE2 = importAll(3764).NONE;
       } else {
-        const obj4 = importAll(3763);
+        const obj4 = importAll(3764);
         const tmp16 = _computePermissions(channel, overwrites, roles, excludeGuildPermissions);
         NONE2 = obj4.applyThreadPermissions(channel, tmp16, closure_12.hasJoined(channel.id), closure_19.isCurrentUserGuest(channel.guild_id));
         const hasJoinedResult = closure_12.hasJoined(channel.id);
@@ -302,7 +302,7 @@ function _computePermissions(channel, overwrites, roles, excludeGuildPermissions
     return NONE;
   }
   obj = { user: authStore.getCurrentUser(), context: channel, overwrites, roles, checkElevated: true, excludeGuildPermissions };
-  NONE = importAll(3763).computePermissions(obj);
+  NONE = importAll(3764).computePermissions(obj);
 }
 function resetState() {
   let closure_25 = {};
@@ -585,7 +585,7 @@ tmp4 = new tmp4(require("dispatcher"), {
       if (!channel.isPrivate()) {
         const currentUser = authStore.getCurrentUser();
         const obj = { user: currentUser, context: channel };
-        const permissions = importAll(3763).computePermissions(obj);
+        const permissions = importAll(3764).computePermissions(obj);
         if (dependencyMap[channel.id] === permissions) {
           return false;
         } else {
@@ -593,7 +593,7 @@ tmp4 = new tmp4(require("dispatcher"), {
           closure_27 = closure_27 + 1;
           updateGuildVersion(channel.getGuildId());
         }
-        const obj2 = importAll(3763);
+        const obj2 = importAll(3764);
       }
     }
     return false;
@@ -624,7 +624,7 @@ tmp4 = new tmp4(require("dispatcher"), {
             let tmp7 = importAll;
             let tmp8 = dependencyMap;
             let currentUser = authStore.getCurrentUser();
-            let obj2 = importAll(3763);
+            let obj2 = importAll(3764);
             let obj = { user: currentUser, context: channel };
             let permissions = obj2.computePermissions(obj);
             let tmp10 = dependencyMap;
@@ -674,7 +674,7 @@ tmp4 = new tmp4(require("dispatcher"), {
     return flag;
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(guildId) {
-    const tmp = !require(3765) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(guildId);
+    const tmp = !require(3766) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(guildId);
     let flag = !tmp;
     if (!tmp) {
       updateGuildVersion(guildId.guildId);

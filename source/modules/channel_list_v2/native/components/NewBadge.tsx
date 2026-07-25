@@ -1,10 +1,10 @@
-// Module ID: 11423
-// Function ID: 88817
+// Module ID: 11386
+// Function ID: 88476
 // Name: NewBadge
-// Dependencies: [31, 27, 33, 4130, 477, 689, 3976, 8869, 4066, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 477, 689, 3977, 8757, 4067, 4127, 1212, 2]
 // Exports: default
 
-// Module 11423 (NewBadge)
+// Module 11386 (NewBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -35,8 +35,8 @@ let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
 const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
 export default function NewBadge() {
-  const tmp = importDefault(8869)();
-  const tmp2 = importDefault(4066)();
+  const tmp = importDefault(8757)();
+  const tmp2 = importDefault(4067)();
   const tmp3 = callback(tmp, tmp2);
   let obj = { style: tmp3.base };
   obj = { variant: "text-xxs/bold", style: tmp3.text };
@@ -48,6 +48,6 @@ export default function NewBadge() {
   obj.color = str;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xxs/bold", style: tmp3.text });
+  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-xxs/bold", style: tmp3.text });
   return <View variant="text-xxs/bold" style={tmp3.text} />;
 };

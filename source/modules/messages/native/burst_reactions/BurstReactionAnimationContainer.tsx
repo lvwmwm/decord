@@ -1,10 +1,10 @@
-// Module ID: 15643
-// Function ID: 120555
+// Module ID: 15653
+// Function ID: 120683
 // Name: BurstReactionAnimationContainerInner
-// Dependencies: [57, 31, 27, 1345, 33, 4130, 689, 7025, 4099, 4100, 686, 3991, 4131, 9678, 1334, 1273, 7067, 4126, 1212, 3842, 2]
+// Dependencies: [57, 31, 27, 1345, 33, 4131, 689, 6043, 4100, 4101, 686, 3992, 4132, 9602, 1334, 1273, 6085, 4127, 1212, 3843, 2]
 // Exports: default
 
-// Module 15643 (BurstReactionAnimationContainerInner)
+// Module 15653 (BurstReactionAnimationContainerInner)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -46,21 +46,21 @@ function BurstReactionAnimationContainerInner() {
       outer1_2({ channelId: channelId.channelId, emoji: channelId.emoji, messageId: channelId.messageId });
       outer1_4(true);
       outer1_5.current = true;
-      const result = handleEffectReceived(4099).triggerHapticFeedback(first(4100).IMPACT_HEAVY);
+      const result = handleEffectReceived(4100).triggerHapticFeedback(first(4101).IMPACT_HEAVY);
     }
     const subscription = first(686).subscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     return () => {
       first(686).unsubscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     };
   }, []);
-  let obj = _require(3991);
+  let obj = _require(3992);
   let fn = function y() {
     if (null == first) {
       let obj = { opacity: 0 };
       let tmp6 = obj;
     } else {
       obj = {};
-      const tmp10 = callback(4131);
+      const tmp10 = callback(4132);
       const withTiming = tmp10.withTiming;
       const obj1 = { duration: 300 };
       if (first1) {
@@ -73,7 +73,7 @@ function BurstReactionAnimationContainerInner() {
             const obj = callback(table[11]);
           }
         };
-        obj = { runOnJS: tmp8(3991).runOnJS, handleComponentFinish };
+        obj = { runOnJS: tmp8(3992).runOnJS, handleComponentFinish };
         fn.__closure = obj;
         fn.__workletHash = 9326347209552;
         fn.__initData = outer1_13;
@@ -84,7 +84,7 @@ function BurstReactionAnimationContainerInner() {
     }
     return tmp6;
   };
-  obj = { animationData: first, showAnimation: first1, withTiming: _require(4131).withTiming, runOnJS: _require(3991).runOnJS, handleComponentFinish };
+  obj = { animationData: first, showAnimation: first1, withTiming: _require(4132).withTiming, runOnJS: _require(3992).runOnJS, handleComponentFinish };
   fn.__closure = obj;
   fn.__workletHash = 12044515783370;
   fn.__initData = closure_12;
@@ -99,7 +99,7 @@ function BurstReactionAnimationContainerInner() {
       obj = { style: items };
       items = [markAsDismissed.fill, closure_6];
       obj = {
-        activeOpacity: callback(7025).BACKDROP_OPACITY,
+        activeOpacity: callback(6043).BACKDROP_OPACITY,
         onPress() {
           outer1_8(() => outer1_0(handleComponentFinish.UNKNOWN));
         },
@@ -114,7 +114,7 @@ function BurstReactionAnimationContainerInner() {
         obj3.onComplete = function onComplete() {
           outer1_8();
         };
-        tmp7 = handleAnimationFinish(first(7067), obj3);
+        tmp7 = handleAnimationFinish(first(6085), obj3);
       }
       obj2.children = tmp7;
       items1[1] = handleAnimationFinish(closure_6, obj2);
@@ -124,7 +124,7 @@ function BurstReactionAnimationContainerInner() {
         const obj5 = { style: markAsDismissed.dismissTextContainer, variant: "text-sm/medium" };
         const intl = callback(1212).intl;
         obj5.children = intl.string(callback(1212).t.QpPMih);
-        const items2 = [handleAnimationFinish(callback(4126).Text, obj5), ];
+        const items2 = [handleAnimationFinish(callback(4127).Text, obj5), ];
         const obj6 = { style: markAsDismissed.dismissTextBackground };
         items2[1] = handleAnimationFinish(closure_6, obj6);
         obj4.children = items2;
@@ -133,11 +133,11 @@ function BurstReactionAnimationContainerInner() {
       items1[2] = tmp12;
       obj.children = items1;
       obj.children = outer1_10(closure_5, obj);
-      obj.children = handleAnimationFinish(first(3991).View, obj);
+      obj.children = handleAnimationFinish(first(3992).View, obj);
       return handleAnimationFinish(callback(1273).OverlayView, obj);
     };
-    tmp = handleAnimationFinish(first(9678), obj);
-    let tmp10 = first(9678);
+    tmp = handleAnimationFinish(first(9602), obj);
+    let tmp10 = first(9602);
   }
   return tmp;
 }
@@ -165,5 +165,5 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/mes
 
 export default function BurstReactionAnimationContainer() {
   const obj = { theme: importDefault(689).themes.DARKER, children: callback(BurstReactionAnimationContainerInner, {}) };
-  return callback(require(3842) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(3843) /* ManaContext */.ThemeContextProvider, obj);
 };

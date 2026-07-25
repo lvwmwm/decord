@@ -1,9 +1,9 @@
-// Module ID: 16192
-// Function ID: 125496
+// Module ID: 16203
+// Function ID: 125664
 // Name: NativePlayAgeSignalsModule
 // Dependencies: [27, 2]
 
-// Module 16192 (NativePlayAgeSignalsModule)
+// Module 16203 (NativePlayAgeSignalsModule)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const value = TurboModuleRegistry.get("NativePlayAgeSignalsModule");

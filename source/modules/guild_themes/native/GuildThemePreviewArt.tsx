@@ -1,10 +1,10 @@
-// Module ID: 15042
-// Function ID: 114556
+// Module ID: 15052
+// Function ID: 114683
 // Name: PreviewOverlay
-// Dependencies: [31, 27, 33, 4130, 689, 3978, 15043, 4066, 4554, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3979, 15053, 4067, 4555, 2]
 // Exports: default
 
-// Module 15042 (PreviewOverlay)
+// Module 15052 (PreviewOverlay)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -12,7 +12,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;
 function PreviewOverlay() {
-  return <View pointerEvents="none" style={_createForOfIteratorHelperLoose().previewOverlay}>{jsx(importDefault(15043), {})}</View>;
+  return <View pointerEvents="none" style={_createForOfIteratorHelperLoose().previewOverlay}>{jsx(importDefault(15053), {})}</View>;
 }
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { position: "relative", width: 256, aspectRatio: 1.5705521472392638, overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
@@ -23,7 +23,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_themes/na
 
 export default function GuildThemePreviewArt(themeSettings) {
   themeSettings = themeSettings.themeSettings;
-  const tmp2 = importDefault(4066)();
+  const tmp2 = importDefault(4067)();
   importDefault = tmp2;
   let items = [themeSettings, tmp2];
   const memo = React.useMemo(() => (function getGradientConfig(themeSettings, closure_1) {
@@ -74,8 +74,8 @@ export default function GuildThemePreviewArt(themeSettings) {
     obj.angle = memo.angle;
     obj.style = items1;
     obj.children = <PreviewOverlay />;
-    tmp10 = jsx(importDefault(4554), {});
-    const tmp7 = importDefault(4554);
+    tmp10 = jsx(importDefault(4555), {});
+    const tmp7 = importDefault(4555);
   }
   return tmp10;
 };

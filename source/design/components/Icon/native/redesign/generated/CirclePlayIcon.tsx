@@ -1,10 +1,10 @@
-// Module ID: 9883
-// Function ID: 76490
+// Module ID: 9807
+// Function ID: 76085
 // Name: CirclePlayIcon
-// Dependencies: [31, 27, 33, 689, 3833, 9884, 9885, 2]
+// Dependencies: [31, 27, 33, 689, 3834, 9808, 9809, 2]
 // Exports: CirclePlayIcon
 
-// Module 9883 (CirclePlayIcon)
+// Module 9807 (CirclePlayIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,15 +30,15 @@ export const CirclePlayIcon = function CirclePlayIcon(color) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
-  obj = { source: require(9884) /* registerAsset */, color: secondaryColor, style };
+  obj = { source: require(9808) /* registerAsset */, color: secondaryColor, style };
   const merged1 = Object.assign(merged);
-  const items = [callback(require(3833) /* BaseIconImage */.BaseIconImage, obj), ];
-  const obj1 = { source: require(9885) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT };
+  const items = [callback(require(3834) /* BaseIconImage */.BaseIconImage, obj), ];
+  const obj1 = { source: require(9809) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
   const items2 = [...items1.flat(), { position: "absolute", top: 0 }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
-  items[1] = callback(require(3833) /* BaseIconImage */.BaseIconImage, obj1);
+  items[1] = callback(require(3834) /* BaseIconImage */.BaseIconImage, obj1);
   obj.children = items;
   return callback2(View, obj);
 };

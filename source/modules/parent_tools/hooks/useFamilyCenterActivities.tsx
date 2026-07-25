@@ -1,10 +1,10 @@
-// Module ID: 13848
-// Function ID: 106054
+// Module ID: 13859
+// Function ID: 106181
 // Name: useActionTotalsForDisplayType
-// Dependencies: [6769, 6770, 624, 6827, 5616, 2]
+// Dependencies: [5765, 5766, 624, 5827, 5616, 2]
 // Exports: useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
 
-// Module 13848 (useActionTotalsForDisplayType)
+// Module 13859 (useActionTotalsForDisplayType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { TeenActionDisplayType } from "items";
 
@@ -36,7 +36,7 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     num = tmp;
   }
   if (displayType === TeenActionDisplayType.TOTAL_VOICE_MINUTES) {
-    return require(6827) /* getActivityTypeTextConfigs */.formatTotalTime(num);
+    return require(5827) /* getActivityTypeTextConfigs */.formatTotalTime(num);
   } else if (displayType === TeenActionDisplayType.PURCHASES) {
     const totalSpendAmount = store.getTotalSpendAmount();
     const totalSpendCurrency = store.getTotalSpendCurrency();

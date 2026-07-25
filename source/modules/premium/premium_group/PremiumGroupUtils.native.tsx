@@ -1,10 +1,10 @@
-// Module ID: 7825
-// Function ID: 61787
+// Module ID: 7772
+// Function ID: 61759
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1849, 3790, 3969, 1212, 2780, 2, 7826]
+// Dependencies: [1850, 3791, 3970, 1212, 2781, 2, 7773]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 7825 (getPremiumGroupInviteEmbedText)
+// Module 7772 (getPremiumGroupInviteEmbedText)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import TOTAL_PREMIUM_GROUP_MEMBER_SEATS from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 
@@ -50,28 +50,28 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
       let obj = {};
       const intl4 = require(1212) /* getSystemLocale */.intl;
       obj = { receiverName: tmp7, premiumGroupProductName: tmp };
-      obj.message = intl4.format(importDefault(2780).MkcFjx, obj);
+      obj.message = intl4.format(importDefault(2781).MkcFjx, obj);
       const intl5 = require(1212) /* getSystemLocale */.intl;
       const obj1 = { premiumGroupProductName: tmp };
-      obj.header = intl5.formatToPlainString(importDefault(2780)["5uwv8J"], obj1);
+      obj.header = intl5.formatToPlainString(importDefault(2781)["5uwv8J"], obj1);
       const intl6 = require(1212) /* getSystemLocale */.intl;
       const obj2 = { receiverName: tmp7 };
-      obj.body = intl6.formatToPlainString(importDefault(2780)["AmE0B/"], obj2);
+      obj.body = intl6.formatToPlainString(importDefault(2781)["AmE0B/"], obj2);
       tmp8 = obj;
     }
     return tmp8;
   } else {
-    obj = require(3969) /* conceal */;
+    obj = require(3970) /* conceal */;
     let nameFromUserResult = obj.nameFromUser(sender);
     const obj3 = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     const obj4 = { senderName: nameFromUserResult, premiumGroupProductName: tmp, helpCenterLink: closure_5 };
-    obj3.message = intl.format(importDefault(2780)["51Kv/4"], obj4);
+    obj3.message = intl.format(importDefault(2781)["51Kv/4"], obj4);
     const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj3.header = intl2.string(importDefault(2780).ssge1y);
+    obj3.header = intl2.string(importDefault(2781).ssge1y);
     const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj5 = { senderName: nameFromUserResult, premiumGroupProductName: tmp };
-    obj3.body = intl3.formatToPlainString(importDefault(2780).tej76V, obj5);
+    obj3.body = intl3.formatToPlainString(importDefault(2781).tej76V, obj5);
     return obj3;
   }
 };

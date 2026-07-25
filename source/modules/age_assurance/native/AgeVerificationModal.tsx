@@ -1,10 +1,10 @@
-// Module ID: 7602
-// Function ID: 60584
+// Module ID: 6712
+// Function ID: 59243
 // Name: AgeVerifyScreen
-// Dependencies: [31, 7582, 33, 7588, 3981, 4347, 7592, 4130, 689, 4337, 5788, 1212, 5517, 2]
+// Dependencies: [31, 6691, 33, 6698, 3982, 4348, 6702, 4131, 689, 4338, 6695, 1212, 5517, 2]
 // Exports: default
 
-// Module 7602 (AgeVerifyScreen)
+// Module 6712 (AgeVerifyScreen)
 import result from "result";
 import { AGE_VERIFICATION_MODAL_KEY as closure_4 } from "set";
 import { jsx } from "jsxProd";
@@ -59,7 +59,7 @@ function getScreens(headerStyle, arg1, arg2, arg3, headerTitle) {
   let closure_2 = arg3;
   function handleClose() {
     dependencyMap();
-    let arr = callback2(4337);
+    let arr = callback2(4338);
     arr = arr.pop();
   }
   return {
@@ -70,7 +70,7 @@ function getScreens(headerStyle, arg1, arg2, arg3, headerTitle) {
         const obj = { onPress: handleClose };
         const intl = callback(1212).intl;
         obj.text = intl.string(callback(1212).t.cpT0Cq);
-        return outer1_5(callback(5788).HeaderActionButton, obj);
+        return outer1_5(callback(6695).HeaderActionButton, obj);
       },
       render() {
         return outer1_5(outer1_8, { webviewUrl: closure_0, onComplete: closure_1, onClose: handleClose });

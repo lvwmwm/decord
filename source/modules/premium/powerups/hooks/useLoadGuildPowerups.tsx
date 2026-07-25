@@ -1,10 +1,10 @@
-// Module ID: 11544
-// Function ID: 89942
+// Module ID: 11510
+// Function ID: 89659
 // Name: useLoadGuildPowerups
-// Dependencies: [31, 4041, 11545, 11550, 2]
+// Dependencies: [31, 4042, 11511, 11516, 2]
 // Exports: default
 
-// Module 11544 (useLoadGuildPowerups)
+// Module 11510 (useLoadGuildPowerups)
 import result from "result";
 
 const require = arg1;

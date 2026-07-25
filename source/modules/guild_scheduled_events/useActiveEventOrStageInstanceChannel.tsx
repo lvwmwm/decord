@@ -1,10 +1,10 @@
-// Module ID: 15062
-// Function ID: 114716
+// Module ID: 15072
+// Function ID: 114843
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [1348, 8499, 15061, 2]
+// Dependencies: [1348, 8259, 15071, 2]
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 15062 (useActiveEventOrStageInstanceChannel)
+// Module 15072 (useActiveEventOrStageInstanceChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -12,8 +12,8 @@ const result = require("useAllVisibleChannels").fileFinishedImporting("modules/g
 
 export const useActiveEventOrStageInstanceChannel = function useActiveEventOrStageInstanceChannel(id) {
   id = undefined;
-  const firstActiveEventChannel = require(8499) /* useGuildUpcomingEvents */.useFirstActiveEventChannel(id);
-  const first = importDefault(15061)(id)[0];
+  const firstActiveEventChannel = require(8259) /* useGuildUpcomingEvents */.useFirstActiveEventChannel(id);
+  const first = importDefault(15071)(id)[0];
   if (null != first) {
     id = first.id;
   }

@@ -1,8 +1,8 @@
-// Module ID: 9695
-// Function ID: 75452
-// Dependencies: [31, 27, 33, 4130, 689, 477, 3941, 666, 3834, 1557, 1324, 4554, 4660, 4126, 2]
+// Module ID: 9619
+// Function ID: 75047
+// Dependencies: [31, 27, 33, 4131, 689, 477, 3942, 666, 3835, 1557, 1324, 4555, 4661, 4127, 2]
 
-// Module 9695
+// Module 9619
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -66,16 +66,16 @@ const memoResult = importAllResult.memo(function MediaKeyboardBottomSheetActions
   let dependencyMap;
   let importAllResult;
   let closure_4;
-  let obj = onHeightChange(3941);
-  const gradientValue = obj.useGradientValue(onHeightChange(3941).GradientPercentage.END);
+  let obj = onHeightChange(3942);
+  const gradientValue = obj.useGradientValue(onHeightChange(3942).GradientPercentage.END);
   let hexResult = null;
   if (null != gradientValue) {
     let obj1 = importDefault(666)(gradientValue);
     hexResult = obj1.alpha(0.95).hex();
     let alphaResult = obj1.alpha(0.95);
   }
-  const token = onHeightChange(3834).useToken(importDefault(689).colors.CARD_BACKGROUND_DEFAULT);
-  let obj4 = onHeightChange(3834);
+  const token = onHeightChange(3835).useToken(importDefault(689).colors.CARD_BACKGROUND_DEFAULT);
+  let obj4 = onHeightChange(3835);
   const obj5 = importDefault(666)(token);
   let hexResult1 = importDefault(666)(token).alpha(0.95).hex();
   const alphaResult1 = importDefault(666)(token).alpha(0.95);
@@ -86,13 +86,13 @@ const memoResult = importAllResult.memo(function MediaKeyboardBottomSheetActions
   }
   const tmp7Result = closure_8(importDefault(1557)().bottom, hexResult1, hexResult, enabled);
   importDefault = tmp7Result;
-  obj8 = onHeightChange(3834);
+  obj8 = onHeightChange(3835);
   const tmp7 = closure_8;
-  dependencyMap = onHeightChange(3834).useToken(importDefault(689).modules.mobile.MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE);
-  const obj9 = onHeightChange(3834);
-  importAllResult = onHeightChange(3834).useToken(importDefault(689).modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE);
-  const obj10 = onHeightChange(3834);
-  closure_4 = onHeightChange(3834).useToken(importDefault(689).modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
+  dependencyMap = onHeightChange(3835).useToken(importDefault(689).modules.mobile.MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE);
+  const obj9 = onHeightChange(3835);
+  importAllResult = onHeightChange(3835).useToken(importDefault(689).modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE);
+  const obj10 = onHeightChange(3835);
+  closure_4 = onHeightChange(3835).useToken(importDefault(689).modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
   let items = [tmp7Result.gradient.color];
   const memo = importAllResult.useMemo(() => {
     const obj = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 } };
@@ -113,12 +113,12 @@ const memoResult = importAllResult.memo(function MediaKeyboardBottomSheetActions
     }, items1)
   };
   obj = { style: tmp7Result.gradient };
-  const obj11 = onHeightChange(3834);
+  const obj11 = onHeightChange(3835);
   const merged = Object.assign(memo);
   obj["pointerEvents"] = "none";
-  const items2 = [callback(importDefault(4554), obj), ];
+  const items2 = [callback(importDefault(4555), obj), ];
   obj1 = { style: tmp7Result.container };
-  const tmp10 = importDefault(4554);
+  const tmp10 = importDefault(4555);
   obj1.children = callback(closure_5, {
     style: tmp7Result.buttonsContainer,
     children: overflowButtons.map((accessibilityLabel) => {
@@ -138,9 +138,9 @@ const memoResult = importAllResult.memo(function MediaKeyboardBottomSheetActions
       }
       obj1.color = str;
       obj1.children = accessibilityLabel.text;
-      items[1] = outer1_6(onHeightChange(4126).Text, obj1);
+      items[1] = outer1_6(onHeightChange(4127).Text, obj1);
       obj.children = items;
-      return outer1_7(onHeightChange(4660).PressableOpacity, obj, arg1);
+      return outer1_7(onHeightChange(4661).PressableOpacity, obj, arg1);
     })
   });
   items2[1] = callback(closure_5, obj1);

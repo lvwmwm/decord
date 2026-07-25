@@ -1,10 +1,10 @@
-// Module ID: 5702
-// Function ID: 49100
+// Module ID: 8397
+// Function ID: 67131
 // Name: resolveImageSource
-// Dependencies: [5703, 5705, 5706, 5707, 5708, 5709, 5710, 5711, 5712, 3976, 5704, 2]
+// Dependencies: [8395, 8398, 8399, 8400, 8401, 8402, 8403, 8404, 8405, 3977, 8394, 2]
 // Exports: getGuildBadgeImageSource
 
-// Module 5702 (resolveImageSource)
+// Module 8397 (resolveImageSource)
 const require = arg1;
 function resolveImageSource(premiumImageSource, guildTraits, closure_2) {
   if (guildTraits.premium) {
@@ -39,9 +39,9 @@ const result = require("registerAsset").fileFinishedImporting("modules/guild_bad
 export const badgeVariants = obj;
 export { resolveImageSource };
 export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild, closure_2) {
-  const obj = require(5704) /* isPremiumGuild */;
+  const obj = require(8394) /* isPremiumGuild */;
   const guildTraits = obj.getGuildTraits(guild);
-  const obj2 = require(5703) /* BadgeCategory */;
+  const obj2 = require(8395) /* BadgeCategory */;
   const tmp2 = obj[obj2.getBadgeCategory(obj2, guildTraits)];
   let tmp3 = null;
   if (null != tmp2) {

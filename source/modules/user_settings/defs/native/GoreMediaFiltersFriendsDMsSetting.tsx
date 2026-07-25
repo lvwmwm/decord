@@ -1,9 +1,9 @@
-// Module ID: 13785
-// Function ID: 105675
+// Module ID: 13796
+// Function ID: 105802
 // Name: getTitle
-// Dependencies: [7751, 13774, 6834, 5678, 13775, 1212, 10127, 13777, 2]
+// Dependencies: [7697, 13785, 5834, 5855, 13786, 1212, 10059, 13788, 2]
 
-// Module 13785 (getTitle)
+// Module 13796 (getTitle)
 import createToggle from "createToggle";
 
 function getTitle() {
@@ -14,11 +14,11 @@ const pressable = createToggle.createPressable({
   useTitle: getTitle,
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const obj = require(13774) /* useExplicitContentSettingOrDefault */;
-    return require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
+    const obj = require(13785) /* useExplicitContentSettingOrDefault */;
+    return require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
   },
   onPress: function onGoreContentFriendsDmOnPress() {
-    let obj = require(5678) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5855) /* resolveGoreSettingWithDefaults */;
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t["16/3Bi"]);
@@ -29,7 +29,7 @@ const pressable = createToggle.createPressable({
       return obj.updateGoreContentSetting(obj);
     };
     obj.currentValue = obj.getGoreContentSettingOrDefault().goreContentFriendDm;
-    const result = require(13775) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13786) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms() {
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -46,11 +46,11 @@ let obj = {
   useTitle: getTitle,
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const obj = require(13774) /* useExplicitContentSettingOrDefault */;
-    return require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
+    const obj = require(13785) /* useExplicitContentSettingOrDefault */;
+    return require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
   },
   onPress: function onGoreContentFriendsDmOnPress() {
-    let obj = require(5678) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5855) /* resolveGoreSettingWithDefaults */;
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t["16/3Bi"]);
@@ -61,7 +61,7 @@ let obj = {
       return obj.updateGoreContentSetting(obj);
     };
     obj.currentValue = obj.getGoreContentSettingOrDefault().goreContentFriendDm;
-    const result = require(13775) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13786) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms() {
     const intl = require(1212) /* getSystemLocale */.intl;

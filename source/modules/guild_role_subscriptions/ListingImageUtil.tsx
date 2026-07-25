@@ -1,10 +1,10 @@
-// Module ID: 16464
-// Function ID: 128278
+// Module ID: 16475
+// Function ID: 128446
 // Name: getSource
-// Dependencies: [4369, 2]
+// Dependencies: [4370, 2]
 // Exports: getSource
 
-// Module 16464 (getSource)
+// Module 16475 (getSource)
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/ListingImageUtil.tsx");
 
 export const getSource = function getSource(image_asset) {
@@ -12,7 +12,7 @@ export const getSource = function getSource(image_asset) {
     let obj = { uri: "" };
     return obj;
   } else {
-    obj = require(4369) /* _httpGetWithCountryCodeQuery */;
+    obj = require(4370) /* _httpGetWithCountryCodeQuery */;
     const assetURL = obj.getAssetURL(image_asset.application_id, image_asset.image_asset);
     obj = {};
     let str = "";

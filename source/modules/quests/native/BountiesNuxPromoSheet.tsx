@@ -1,10 +1,10 @@
-// Module ID: 14014
-// Function ID: 107141
+// Module ID: 14025
+// Function ID: 107268
 // Name: BountiesNuxPromoSheet
-// Dependencies: [31, 27, 33, 4130, 689, 4098, 14013, 7515, 1212, 5912, 4543, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4099, 14024, 6599, 1212, 6832, 4544, 2]
 // Exports: default
 
-// Module 14014 (BountiesNuxPromoSheet)
+// Module 14025 (BountiesNuxPromoSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -26,12 +26,12 @@ export default function BountiesNuxPromoSheet() {
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.DDpHZG);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl2.string(require(1212) /* getSystemLocale */.t["LY+igv"]);
-  obj = { style: _createForOfIteratorHelperLoose().illustrationContainer, children: jsx(require(5912) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 }) };
-  obj.illustration = <View style={_createForOfIteratorHelperLoose().illustrationContainer}>{jsx(require(5912) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
+  obj = { style: _createForOfIteratorHelperLoose().illustrationContainer, children: jsx(require(6832) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 }) };
+  obj.illustration = <View style={_createForOfIteratorHelperLoose().illustrationContainer}>{jsx(require(6832) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
   obj = { grow: true, size: "lg", variant: "primary" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj.onPress = callback;
-  obj.actions = jsx(require(4543) /* Button */.Button, { grow: true, size: "lg", variant: "primary" });
-  return jsx(require(7515) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary" });
+  obj.actions = jsx(require(4544) /* Button */.Button, { grow: true, size: "lg", variant: "primary" });
+  return jsx(require(6599) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary" });
 };

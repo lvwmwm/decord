@@ -1,10 +1,10 @@
-// Module ID: 14924
-// Function ID: 113765
+// Module ID: 14935
+// Function ID: 113893
 // Name: GuildsBarFooterWrapper
-// Dependencies: [14860, 33, 4130, 689, 3834, 3987, 5515, 2]
+// Dependencies: [14871, 33, 4131, 689, 3835, 3988, 5515, 2]
 // Exports: default
 
-// Module 14924 (GuildsBarFooterWrapper)
+// Module 14935 (GuildsBarFooterWrapper)
 import { GUILD_ITEM_HIT_SLOP } from "GUILD_ITEM_SIZE";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -16,9 +16,9 @@ let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFooterWrapper.tsx");
 
 export default function GuildsBarFooterWrapper(children) {
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const token = obj.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const MobileHomeDrawerExperiment = require(3987) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = require(3988) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
   obj = {};
   const items = [callback().footerWrapper, ];
   let tmp5 = null;

@@ -1,10 +1,10 @@
-// Module ID: 13046
-// Function ID: 100856
+// Module ID: 13057
+// Function ID: 100983
 // Name: getNewestBadgeableVersion
 // Dependencies: [2]
 // Exports: getNewestBadgeableVersion
 
-// Module 13046 (getNewestBadgeableVersion)
+// Module 13057 (getNewestBadgeableVersion)
 const result = require("set").fileFinishedImporting("modules/app_launcher/utils/AppLauncherBadgeUtils.tsx");
 
 export const getNewestBadgeableVersion = function getNewestBadgeableVersion(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 8667
-// Function ID: 68577
+// Module ID: 8443
+// Function ID: 67310
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [31, 27, 33, 4130, 689, 8639, 3827, 1557, 5498, 5189, 4126, 1212, 4543, 4098, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 8415, 3828, 1557, 5498, 5189, 4127, 1212, 4544, 4099, 2]
 // Exports: default
 
-// Module 8667 (GameProfileStoreLinksActionSheet)
+// Module 8443 (GameProfileStoreLinksActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   let websiteButtons;
   ({ websiteButtons, trackAction: require } = gameName);
   const tmp = _createForOfIteratorHelperLoose();
-  importDefault = importDefault(8639)(importDefault(3827).openURL);
+  importDefault = importDefault(8415)(importDefault(3828).openURL);
   let obj = {};
   obj = {};
   obj = { paddingBottom: importDefault(1557)().bottom + importDefault(689).space.PX_16 };
@@ -37,14 +37,14 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   const obj2 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.headerText };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl.string(require(1212) /* getSystemLocale */.t["/4gj6r"]);
-  const items = [callback(require(4126) /* Text */.Text, obj2), ];
+  const items = [callback(require(4127) /* Text */.Text, obj2), ];
   const obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.headerText };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl2.format(require(1212) /* getSystemLocale */.t["0acM2Y"], { gameName: gameName.gameName });
-  items[1] = callback(require(4126) /* Text */.Text, obj3);
+  items[1] = callback(require(4127) /* Text */.Text, obj3);
   obj1.children = items;
   const items1 = [callback2(View, obj1), ];
-  const tmp2 = importDefault(8639);
+  const tmp2 = importDefault(8415);
   items1[1] = callback(View, {
     style: tmp.buttons,
     children: websiteButtons.map((url) => {

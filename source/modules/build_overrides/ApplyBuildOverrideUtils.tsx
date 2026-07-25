@@ -1,10 +1,10 @@
-// Module ID: 10967
-// Function ID: 85228
+// Module ID: 10918
+// Function ID: 84820
 // Name: _applyStaffBuildOverride
-// Dependencies: [5, 1194, 10968, 507, 4046, 2]
+// Dependencies: [5, 1194, 10919, 507, 4047, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 10967 (_applyStaffBuildOverride)
+// Module 10918 (_applyStaffBuildOverride)
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -45,7 +45,7 @@ export const clearBuildOverride = function clearBuildOverride() {
 };
 export const getPublicBuildOverrideLink = function getPublicBuildOverrideLink(body) {
   const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  let obj = { url: require(4046) /* getAPIEndpoint */.getAPIEndpoint("/__development/create_build_override_link"), body };
+  let obj = { url: require(4047) /* getAPIEndpoint */.getAPIEndpoint("/__development/create_build_override_link"), body };
   obj = {};
   token = token.getToken();
   let str = "";
@@ -56,7 +56,7 @@ export const getPublicBuildOverrideLink = function getPublicBuildOverrideLink(bo
   obj.headers = obj;
   obj.oldFormErrors = true;
   obj.rejectWithError = false;
-  const obj2 = require(4046) /* getAPIEndpoint */;
+  const obj2 = require(4047) /* getAPIEndpoint */;
   return HTTP.post(obj).then((body) => ({ url: body.body.url, error: false }), (status) => {
     if (400 === status.status) {
       let obj = { url: false, error: status.body };

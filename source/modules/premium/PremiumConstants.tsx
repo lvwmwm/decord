@@ -1,9 +1,9 @@
-// Module ID: 1851
-// Function ID: 20435
+// Module ID: 1852
+// Function ID: 20446
 // Name: GuildFeatures
-// Dependencies: [653, 1852, 1212, 1853, 656, 2, 1854]
+// Dependencies: [653, 1853, 1212, 1854, 656, 2, 1855]
 
-// Module 1851 (GuildFeatures)
+// Module 1852 (GuildFeatures)
 import ME from "ME";
 import set from "getSystemLocale";
 

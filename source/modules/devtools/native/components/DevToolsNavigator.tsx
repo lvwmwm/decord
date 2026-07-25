@@ -1,10 +1,10 @@
-// Module ID: 13556
-// Function ID: 104247
+// Module ID: 13567
+// Function ID: 104374
 // Name: navigateToDevTools
-// Dependencies: [31, 27, 33, 9149, 5517, 9158, 13557, 9066, 4126, 689, 13559, 4098, 4337, 2]
+// Dependencies: [31, 27, 33, 9041, 5517, 9050, 13568, 8956, 4127, 689, 13570, 4099, 4338, 2]
 // Exports: navigateToDevTools
 
-// Module 13556 (navigateToDevTools)
+// Module 13567 (navigateToDevTools)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -43,7 +43,7 @@ let closure_7 = require("result").memo((screenKey) => {
   };
   obj = {
     name: "home",
-    component: importDefault(13557),
+    component: importDefault(13568),
     options() {
       return {
         headerTitle() {
@@ -61,8 +61,8 @@ let closure_7 = require("result").memo((screenKey) => {
     }
   };
   let items = [callback(createNativeStackNavigator.Screen, obj), ];
-  let merged = Object.assign(_require(13559).DevToolsScreens);
-  let merged1 = Object.assign(_require(13559).PerformanceTestingScreens);
+  let merged = Object.assign(_require(13570).DevToolsScreens);
+  let merged1 = Object.assign(_require(13570).PerformanceTestingScreens);
   const entries = Object.entries({});
   items[1] = entries.map((arg0) => {
     let tmp;
@@ -85,7 +85,7 @@ export const navigateToDevTools = function navigateToDevTools(arg0) {
   if (arg0 === undefined) {
     obj = {};
   }
-  importDefault(4098).hideActionSheet();
-  const obj2 = importDefault(4098);
-  importDefault(4337).pushLazy(() => Promise.resolve(outer1_7), { screenKey: obj.screenKey }, "DevToolsNavigator");
+  importDefault(4099).hideActionSheet();
+  const obj2 = importDefault(4099);
+  importDefault(4338).pushLazy(() => Promise.resolve(outer1_7), { screenKey: obj.screenKey }, "DevToolsNavigator");
 };

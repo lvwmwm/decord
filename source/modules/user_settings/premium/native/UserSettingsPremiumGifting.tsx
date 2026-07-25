@@ -1,9 +1,9 @@
-// Module ID: 12538
-// Function ID: 97081
+// Module ID: 12519
+// Function ID: 96932
 // Name: GiftingSectionTitle
-// Dependencies: [57, 31, 27, 8312, 6637, 653, 1851, 33, 4130, 689, 1324, 5501, 4126, 6652, 1456, 1557, 566, 22, 4366, 6656, 12451, 8815, 8309, 12404, 686, 6638, 6658, 8315, 7375, 5793, 8059, 12539, 1212, 12540, 12546, 12550, 12553, 12555, 7187, 9270, 2294, 12556, 5584, 2]
+// Dependencies: [57, 31, 27, 8047, 5821, 653, 1852, 33, 4131, 689, 1324, 5501, 4127, 6272, 1456, 1557, 566, 22, 4367, 6234, 12432, 8703, 8044, 12381, 686, 5822, 6274, 8050, 6448, 6449, 9254, 12520, 1212, 12521, 12527, 12531, 12534, 12536, 6301, 9162, 2295, 12537, 5584, 2]
 
-// Module 12538 (GiftingSectionTitle)
+// Module 12519 (GiftingSectionTitle)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "urlUserId";
@@ -32,7 +32,7 @@ function GiftingSectionTitle(title) {
     let tmp2Result = tmp2(tmp3(5501).TableRowGroupTitle, obj);
   } else {
     obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: title };
-    tmp2Result = tmp2(tmp3(4126).Text, obj);
+    tmp2Result = tmp2(tmp3(4127).Text, obj);
   }
   return tmp2Result;
 }
@@ -93,7 +93,7 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
   _require = tmp2;
   const tmp3 = importDefault(1324)("UserSettingsPremiumGifting");
   importDefault = tmp3;
-  importDefault(6652)();
+  importDefault(6272)();
   let obj1 = _require(1456);
   dependencyMap = obj1.useNavigation();
   let obj2 = _require(566);
@@ -101,26 +101,26 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
   stateFromStoresArray = obj2.useStateFromStoresArray(items, () => giftable.getGiftable());
   let items1 = [stateFromStoresArray];
   importAllResult = importAllResult.useMemo(() => _undefined2(arr[17]).groupBy(stateFromStoresArray, (skuId) => callback(table[18]).makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle)), items1);
-  let obj3 = _require(6656);
+  let obj3 = _require(6234);
   const isPaymentsBlocked = obj3.useIsPaymentsBlocked();
-  let obj4 = _require(12451);
+  let obj4 = _require(12432);
   const outboundPromotions = obj4.useOutboundPromotions();
   ({ activeOutboundPromotions: c5, claimedEndedOutboundPromotions: c6, claimedOutboundPromotionCodeMap: c7 } = outboundPromotions);
-  const GiftingBadgeExperiment = _require(8815).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = _require(8703).GiftingBadgeExperiment;
   enabled = GiftingBadgeExperiment.useConfig({ location: "gift_inventory" }).enabled;
   let obj5 = _require(566);
   let items2 = [enabled];
   const stateFromStores = obj5.useStateFromStores(items2, () => enabled.getBadgeById(_undefined(arr[22]).BadgeId.GIFTING));
   const tmp9 = stateFromStoresArray(importAllResult.useState(false), 2);
   closure_9 = tmp9[1];
-  let obj6 = _require(12404);
+  let obj6 = _require(12381);
   const subscriptionPlansLoaded = obj6.useSubscriptionPlansLoaded();
   const effect = importAllResult.useEffect(() => {
     _undefined2(arr[24]).wait(() => {
-      const giftableEntitlements = callback(6638).fetchGiftableEntitlements();
+      const giftableEntitlements = callback(5822).fetchGiftableEntitlements();
       giftableEntitlements.then(() => outer2_9(true));
-      const obj = callback(6638);
-      callback2(6658).init();
+      const obj = callback(5822);
+      callback2(6274).init();
     });
   }, []);
   let items3 = [enabled];
@@ -138,12 +138,12 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
     obj1.contentInset = obj2;
     obj1.contentContainerStyle = obj;
     obj1.style = tmp2.scrollView;
-    obj1.children = callback(importDefault(7187), {});
+    obj1.children = callback(importDefault(6301), {});
     obj.children = callback(c7, obj1);
     let tmp13Result = callback(c6, obj);
   } else {
     obj3 = { style: tmp2.giftingSettingsContainer };
-    let items4 = [callback(importDefault(9270), {}), ];
+    let items4 = [callback(importDefault(9162), {}), ];
     obj4 = { ref, style: tmp2.scrollView, contentContainerStyle: obj };
     if (enabled) {
       enabled = null != stateFromStores;
@@ -160,11 +160,11 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
       obj6.style = items5;
       let obj7 = {};
       let intl = _require(1212).intl;
-      obj7.title = intl.string(importDefault(2294).sFokBp);
+      obj7.title = intl.string(importDefault(2295).sFokBp);
       obj6.children = callback(GiftingSectionTitle, obj7);
       let items6 = [callback(c6, obj6), ];
       let obj8 = { analyticsLocation };
-      items6[1] = callback(importDefault(12556), obj8);
+      items6[1] = callback(importDefault(12537), obj8);
       obj5.children = items6;
       enabled = callback2(closure_16, obj5);
       let tmp20 = callback2;
@@ -229,9 +229,9 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
                 outer1_14(_undefined4, obj5),
                 _undefined4.map((code) => {
                     const outboundPromotion = code.promotion;
-                    return outer2_14(callback2(12540), { outboundPromotion, code: code.code }, outboundPromotion.id);
+                    return outer2_14(callback2(12521), { outboundPromotion, code: code.code }, outboundPromotion.id);
                   }),
-                _undefined3.map((id) => outer2_14(callback2(12540), { outboundPromotion: id, code: outer1_7[id.id] }, id.id))
+                _undefined3.map((id) => outer2_14(callback2(12521), { outboundPromotion: id, code: outer1_7[id.id] }, id.id))
               ];
               obj4.children = items4;
               tmp44Result = outer1_15(outer1_16, obj4);
@@ -262,10 +262,10 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
                     let giftStyle;
                     let skuId;
                     let subscriptionPlanId;
-                    let obj = callback(4366);
+                    let obj = callback(4367);
                     ({ skuId, subscriptionPlanId, giftStyle } = obj.parseComboId(arg0));
                     obj = { skuId, subscriptionPlanId, entitlements: outer1_4[arg0], giftStyle, isRefreshEnabled: outer1_1 };
-                    return outer2_14(callback2(12546), obj, arg0);
+                    return outer2_14(callback2(12527), obj, arg0);
                   })
               ];
               obj7.children = items7;
@@ -309,23 +309,23 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
                     }
           };
           obj13.children = intl3.format(_require(1212).t.thORji, obj14);
-          const items10 = [callback(_require(4126).Text, obj13), ];
+          const items10 = [callback(_require(4127).Text, obj13), ];
           const obj15 = { style: tmp2.buttonWrapper };
           const obj16 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "active", planId: closure_13.PREMIUM_YEAR_TIER_2, analyticsLocation };
-          const items11 = [callback(importDefault(12553), obj16), ];
+          const items11 = [callback(importDefault(12534), obj16), ];
           const obj17 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "secondary", planId: closure_13.PREMIUM_MONTH_TIER_2, analyticsLocation };
-          items11[1] = callback(importDefault(12553), obj17);
+          items11[1] = callback(importDefault(12534), obj17);
           obj15.children = items11;
           items10[1] = callback2(c6, obj15);
           obj12.children = items10;
-          items9[1] = callback2(importDefault(12550), obj12);
+          items9[1] = callback2(importDefault(12531), obj12);
           const obj18 = { style: tmp2.warningMargins };
-          items9[2] = callback(importDefault(12555), obj18);
+          items9[2] = callback(importDefault(12536), obj18);
           const obj19 = {};
           const obj20 = { premiumType: closure_12.TIER_0, style: tmp2.tierCard };
           const tmp38 = callback2;
           const tmp39 = c6;
-          let tmp47 = importDefault(12550);
+          let tmp47 = importDefault(12531);
           const obj21 = { style: tmp2.cardText, variant: "text-sm/medium", color: "text-default" };
           let intl4 = _require(1212).intl;
           const obj22 = {
@@ -339,23 +339,23 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
                     }
           };
           obj21.children = intl4.format(_require(1212).t.NmpnsP, obj22);
-          const items12 = [callback(_require(4126).Text, obj21), ];
+          const items12 = [callback(_require(4127).Text, obj21), ];
           const obj23 = { style: tmp2.buttonWrapper };
           const obj24 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "active", planId: closure_13.PREMIUM_YEAR_TIER_0, analyticsLocation };
-          const items13 = [callback(importDefault(12553), obj24), ];
+          const items13 = [callback(importDefault(12534), obj24), ];
           const obj25 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "secondary", planId: closure_13.PREMIUM_MONTH_TIER_0, analyticsLocation };
-          items13[1] = callback(importDefault(12553), obj25);
+          items13[1] = callback(importDefault(12534), obj25);
           obj23.children = items13;
           items12[1] = callback2(c6, obj23);
           obj20.children = items12;
-          const items14 = [callback2(importDefault(12550), obj20), ];
+          const items14 = [callback2(importDefault(12531), obj20), ];
           const obj26 = { style: tmp2.warningMargins };
-          items14[1] = callback(importDefault(12555), obj26);
+          items14[1] = callback(importDefault(12536), obj26);
           obj19.children = items14;
           items9[3] = callback2(closure_16, obj19);
           obj10.children = items9;
           tmp38Result = tmp38(tmp39, obj10);
-          const tmp56 = importDefault(12550);
+          const tmp56 = importDefault(12531);
         }
         items7[2] = tmp38Result;
         obj4.children = items7;

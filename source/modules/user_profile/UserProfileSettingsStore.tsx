@@ -1,9 +1,9 @@
-// Module ID: 7930
-// Function ID: 62805
+// Module ID: 7877
+// Function ID: 62777
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 1386, 7931, 654, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 653, 1386, 7878, 654, 566, 686, 2]
 
-// Module 7930 (_isNativeReflectConstruct)
+// Module 7877 (_isNativeReflectConstruct)
 import date from "date";
 import ANALYTICS_NAME from "ANALYTICS_NAME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -84,7 +84,7 @@ let tmp4 = ((Store) => {
       return outer1_15;
     }
   };
-  let items = [obj, , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "getFormState",
     value() {
@@ -128,6 +128,13 @@ let tmp4 = ((Store) => {
     }
   };
   items[5] = {
+    key: "hasTryItOutChanges",
+    value() {
+      const values = Object.values(outer1_14);
+      return values.some((arg0) => undefined !== arg0);
+    }
+  };
+  items[6] = {
     key: "hasUnsavedChanges",
     value() {
       let values = Object.values(outer1_13);
@@ -137,7 +144,7 @@ let tmp4 = ((Store) => {
       });
     }
   };
-  items[6] = {
+  items[7] = {
     key: "showNotice",
     value() {
       const self = this;
@@ -152,7 +159,7 @@ let tmp4 = ((Store) => {
       return someResult;
     }
   };
-  items[7] = {
+  items[8] = {
     key: "canSubmit",
     value() {
       const self = this;
@@ -296,17 +303,20 @@ obj = {
     const merged = Object.assign(obj);
     obj["tryItOutDisplayNameStyles"] = displayNameStyles.displayNameStyles;
   },
-  USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PRESET: function handleSetTryItOutPreset(arg0) {
-    let avatarDecoration;
+  USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PRESET: function handleSetTryItOutPreset(avatarDecoration) {
     let banner;
     let displayNameStyles;
     let themeColors;
+    let tryItOutAvatarDecoration = avatarDecoration.avatarDecoration;
     const obj = {};
-    ({ banner, themeColors, avatarDecoration, displayNameStyles } = arg0);
+    ({ banner, themeColors, displayNameStyles } = avatarDecoration);
     const merged = Object.assign(obj);
     obj["tryItOutBanner"] = banner;
     obj["tryItOutThemeColors"] = themeColors;
-    obj["tryItOutAvatarDecoration"] = avatarDecoration;
+    if (undefined === tryItOutAvatarDecoration) {
+      tryItOutAvatarDecoration = obj.tryItOutAvatarDecoration;
+    }
+    obj["tryItOutAvatarDecoration"] = tryItOutAvatarDecoration;
     obj["tryItOutDisplayNameStyles"] = displayNameStyles;
   },
   USER_PROFILE_SETTINGS_CLEAR_ERRORS: function handleResetErrors() {

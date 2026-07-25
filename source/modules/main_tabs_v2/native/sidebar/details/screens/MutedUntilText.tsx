@@ -1,10 +1,10 @@
-// Module ID: 10314
-// Function ID: 79637
+// Module ID: 10247
+// Function ID: 79290
 // Name: MutedUntilText
-// Dependencies: [31, 33, 4130, 1212, 4126, 2]
+// Dependencies: [31, 33, 4131, 1212, 4127, 2]
 // Exports: default
 
-// Module 10314 (MutedUntilText)
+// Module 10247 (MutedUntilText)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -43,7 +43,7 @@ export default function MutedUntilText(arg0) {
         return outer1_2(outer1_0(outer1_1[4]).Text, obj, "muted");
       };
       obj.children = intl5.format(N2NXMd, obj);
-      return jsx(require(4126) /* Text */.Text, {});
+      return jsx(require(4127) /* Text */.Text, {});
     }
   }
   if (obj.SERVER === type) {
@@ -62,6 +62,6 @@ export default function MutedUntilText(arg0) {
     return null;
   }
   obj = { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult };
-  return jsx(require(4126) /* Text */.Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult });
+  return jsx(require(4127) /* Text */.Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult });
 };
 export const MuteSettingType = obj;

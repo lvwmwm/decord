@@ -1,10 +1,10 @@
-// Module ID: 12227
-// Function ID: 95608
+// Module ID: 12203
+// Function ID: 95417
 // Name: useThrottledActionHandler
-// Dependencies: [31, 33, 4543, 2]
+// Dependencies: [31, 33, 4544, 2]
 // Exports: default
 
-// Module 12227 (useThrottledActionHandler)
+// Module 12203 (useThrottledActionHandler)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -54,6 +54,6 @@ export default function ThrottledButton(throttleMs) {
   obj["onPress"] = tmp3(onPress);
   obj["onPressIn"] = tmp3(onPressIn);
   obj["onPressOut"] = tmp3(onPressOut);
-  return jsx(require(4543) /* Button */.Button, {});
+  return jsx(require(4544) /* Button */.Button, {});
 };
 export { useThrottledActionHandler };

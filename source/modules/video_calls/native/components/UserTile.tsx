@@ -1,10 +1,10 @@
-// Module ID: 10619
-// Function ID: 82819
+// Module ID: 10507
+// Function ID: 81434
 // Name: UserTile
-// Dependencies: [57, 31, 27, 10620, 1194, 1348, 4177, 653, 4148, 4191, 33, 4130, 689, 3974, 566, 7971, 1273, 8524, 4126, 1212, 10603, 10606, 7670, 10621, 10622, 10623, 10563, 10052, 10624, 10245, 10591, 5217, 10625, 2]
+// Dependencies: [57, 31, 27, 10508, 1194, 1348, 4178, 653, 4149, 4192, 33, 4131, 689, 3975, 566, 7919, 1273, 8284, 4127, 1212, 10491, 10494, 7612, 10533, 10534, 10535, 10450, 9981, 10536, 10178, 10479, 5217, 10537, 2]
 // Exports: default
 
-// Module 10619 (UserTile)
+// Module 10507 (UserTile)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Directions";
 import { View } from "participantHasVideo";
@@ -145,11 +145,11 @@ let closure_19 = importAllResult.memo((userId) => {
   }, items1), 3);
   let tmp3 = tmp2[1];
   if (tmp2[0]) {
-    let tmp4 = importDefault(7670);
+    let tmp4 = importDefault(7612);
   } else if (deafened) {
-    tmp4 = importDefault(10621);
+    tmp4 = importDefault(10533);
   } else if (muted) {
-    tmp4 = importDefault(10622);
+    tmp4 = importDefault(10534);
   }
   if (tmp3) {
     tmp3 = !tmp2[2];
@@ -161,7 +161,7 @@ let closure_19 = importAllResult.memo((userId) => {
       obj = {};
       const items2 = [tmp.statusWrapper, style];
       obj.style = items2;
-      const obj1 = { source: importDefault(10623), size: userId(1273).Icon.Sizes.SMALL, disableColor: true };
+      const obj1 = { source: importDefault(10535), size: userId(1273).Icon.Sizes.SMALL, disableColor: true };
       obj.children = callback2(userId(1273).Icon, obj1);
       tmp15 = callback2(View, obj);
     }
@@ -177,7 +177,7 @@ let closure_19 = importAllResult.memo((userId) => {
       }
       items4[2] = tmp24;
       obj2.style = items4;
-      const obj4 = { source: tmp4, size: userId(1273).Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.WHITE, disableColor: tmp4 === importDefault(7670) };
+      const obj4 = { source: tmp4, size: userId(1273).Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.WHITE, disableColor: tmp4 === importDefault(7612) };
       obj2.children = callback2(userId(1273).Icon, obj4);
       tmp22Result = callback2(View, obj2);
       const tmp22 = callback2;

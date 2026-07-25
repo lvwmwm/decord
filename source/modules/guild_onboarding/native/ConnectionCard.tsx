@@ -1,7 +1,7 @@
 // Module ID: 5460
-// Function ID: 46664
+// Function ID: 46669
 // Name: ConnectionCard
-// Dependencies: [31, 5059, 33, 5461, 5478, 2]
+// Dependencies: [31, 5060, 33, 5461, 5478, 2]
 // Exports: default
 
 // Module 5460 (ConnectionCard)

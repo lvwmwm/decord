@@ -1,9 +1,9 @@
-// Module ID: 13176
-// Function ID: 101482
+// Module ID: 13187
+// Function ID: 101609
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 13168, 13174, 2]
+// Dependencies: [7, 6, 15, 17, 18, 13179, 13185, 2]
 
-// Module 13176 (_isNativeReflectConstruct)
+// Module 13187 (_isNativeReflectConstruct)
 import set from "set";
 import BaseTelemetryChannel from "BaseTelemetryChannel";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

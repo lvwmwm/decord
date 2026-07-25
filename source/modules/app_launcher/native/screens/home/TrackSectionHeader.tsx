@@ -1,10 +1,10 @@
-// Module ID: 11245
-// Function ID: 87574
+// Module ID: 11206
+// Function ID: 87219
 // Name: TrackSectionHeader
-// Dependencies: [8225, 8604, 480, 2]
+// Dependencies: [7954, 8364, 480, 2]
 // Exports: default
 
-// Module 11245 (TrackSectionHeader)
+// Module 11206 (TrackSectionHeader)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -22,6 +22,6 @@ export default function TrackSectionHeader(viewed) {
   obj.properties = obj;
   obj = { disableTrack: !viewed };
   const items = [viewed];
-  importDefault(8604)(obj, obj, items);
+  importDefault(8364)(obj, obj, items);
   return children;
 };

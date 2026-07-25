@@ -1,10 +1,10 @@
-// Module ID: 15756
-// Function ID: 121460
+// Module ID: 15767
+// Function ID: 121629
 // Name: Loading
-// Dependencies: [57, 31, 27, 11770, 10097, 653, 6978, 482, 33, 4130, 689, 8536, 5462, 5482, 4098, 8537, 8528, 10484, 566, 10096, 5187, 5186, 1212, 1273, 12186, 5772, 15757, 2]
+// Dependencies: [57, 31, 27, 11740, 10026, 653, 5969, 482, 33, 4131, 689, 8296, 5462, 5482, 4099, 8297, 8288, 10418, 566, 10025, 5187, 5186, 1212, 1273, 12162, 9171, 15768, 2]
 // Exports: default
 
-// Module 15756 (Loading)
+// Module 15767 (Loading)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "set";
@@ -33,7 +33,7 @@ function Loading() {
     let tmp3 = importDefault;
     let tmp4 = dependencyMap;
     let obj = { row: num };
-    let arr = items.push(callback3(importDefault(8536), obj, num));
+    let arr = items.push(callback3(importDefault(8296), obj, num));
     num = num + 1;
   } while (num < 10);
   obj = {};
@@ -87,10 +87,10 @@ export default function ActivityInviteSheet(activity) {
   }, items);
   const items2 = [activity];
   const callback1 = React.useCallback((userId) => {
-    let obj = analyticsLocations(4098);
+    let obj = analyticsLocations(4099);
     obj.hideActionSheet();
     obj = { userId, sourceAnalyticsLocations: analyticsLocations };
-    analyticsLocations(8537)(obj);
+    analyticsLocations(8297)(obj);
   }, items1);
   callback2 = React.useCallback((item) => {
     const activity = item;
@@ -107,16 +107,16 @@ export default function ActivityInviteSheet(activity) {
       }
       if (null != id) {
         outer1_6(id, tmp.item.id, outer1_10.SENDING);
-        if (tmp.type === activity(8528).RowTypes.CHANNEL) {
+        if (tmp.type === activity(8288).RowTypes.CHANNEL) {
           let obj = { channelId: item.item.id, type: outer1_9.JOIN, activity, location: analyticsLocations(5482).ACTIVITY_INVITE_SHEET };
-          const obj3 = analyticsLocations(10484);
-          const sendActivityInviteResult = analyticsLocations(10484).sendActivityInvite(obj);
-          analyticsLocations(10484).sendActivityInvite(obj).then(markInviteSent).catch((arg0) => {
+          const obj3 = analyticsLocations(10418);
+          const sendActivityInviteResult = analyticsLocations(10418).sendActivityInvite(obj);
+          analyticsLocations(10418).sendActivityInvite(obj).then(markInviteSent).catch((arg0) => {
             outer1_2(String(arg0));
           });
-          const nextPromise = analyticsLocations(10484).sendActivityInvite(obj).then(markInviteSent);
-        } else if (tmp.type === activity(8528).RowTypes.DM) {
-          obj = analyticsLocations(10484);
+          const nextPromise = analyticsLocations(10418).sendActivityInvite(obj).then(markInviteSent);
+        } else if (tmp.type === activity(8288).RowTypes.DM) {
+          obj = analyticsLocations(10418);
           obj = { userId: tmp.item.id, type: outer1_9.JOIN, activity, location: analyticsLocations(5482).ACTIVITY_INVITE_SHEET };
           const result = obj.sendActivityInviteUser(obj);
           result.then(markInviteSent).catch((arg0) => outer1_2(String(arg0)));
@@ -132,7 +132,7 @@ export default function ActivityInviteSheet(activity) {
   [tmp10, result] = callback(React.useState(false), 2);
   const effect = React.useEffect(() => {
     callback(true);
-    let obj = activity(10096);
+    let obj = activity(10025);
     obj = { omitUserIds: new Set(), inviteTargetType: outer1_11.EMBEDDED_APPLICATION };
     const inviteSuggestions = obj.loadInviteSuggestions(obj);
     const set = new Set();
@@ -155,7 +155,7 @@ export default function ActivityInviteSheet(activity) {
   obj1.title = intl.string(activity(1212).t["OzOM/q"]);
   obj.header = callback3(activity(5186).BottomSheetTitleHeader, obj1);
   if (null != first) {
-    const obj2 = { style: tmp.emptyState, Illustration: activity(12186).AppCrash, title: first };
+    const obj2 = { style: tmp.emptyState, Illustration: activity(12162).AppCrash, title: first };
     let tmp17Result = callback3(activity(1273).EmptyState, obj2);
   } else if (tmp12) {
     tmp17Result = callback3(Loading, {});
@@ -163,10 +163,10 @@ export default function ActivityInviteSheet(activity) {
     let obj3 = {};
     const obj4 = {};
     const obj5 = { style: tmp.searchAndShareContainer };
-    const obj6 = { size: "md", isRound: true, onChange: activity(10096).searchInviteSuggestions };
+    const obj6 = { size: "md", isRound: true, onChange: activity(10025).searchInviteSuggestions };
     const intl2 = activity(1212).intl;
     obj6.placeholder = intl2.string(activity(1212).t.iI1gMg);
-    obj5.children = callback3(activity(5772).SearchField, obj6);
+    obj5.children = callback3(activity(9171).SearchField, obj6);
     obj4.children = callback3(View, obj5);
     const items4 = [callback3(View, obj4), ];
     if (tmp13) {
@@ -176,7 +176,7 @@ export default function ActivityInviteSheet(activity) {
       let tmp24Result = tmp24(activity(1273).EmptyState, obj7);
     } else {
       const obj8 = { data: stateFromStores, error: first, getSendState: callback, onInviteSent: callback2, onPressAvatar: callback1 };
-      tmp24Result = tmp24(analyticsLocations(15757), obj8);
+      tmp24Result = tmp24(analyticsLocations(15768), obj8);
     }
     items4[1] = tmp24Result;
     obj3.children = items4;

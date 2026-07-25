@@ -1,10 +1,10 @@
-// Module ID: 10987
-// Function ID: 85400
+// Module ID: 10942
+// Function ID: 85016
 // Name: GiftIntentType
-// Dependencies: [1851, 653, 2]
+// Dependencies: [1852, 653, 2]
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 10987 (GiftIntentType)
+// Module 10942 (GiftIntentType)
 import { GiftIntentType } from "GuildFeatures";
 import { AnalyticsLocations } from "ME";
 

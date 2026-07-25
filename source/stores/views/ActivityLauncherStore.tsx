@@ -1,9 +1,9 @@
-// Module ID: 10472
-// Function ID: 80709
+// Module ID: 10406
+// Function ID: 80378
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 10473, 4810, 653, 4015, 686, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 10407, 4811, 653, 4016, 686, 566, 2]
 
-// Module 10472 (_isNativeReflectConstruct)
+// Module 10406 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -32,7 +32,7 @@ function startActivityLaunchTimeout(applicationId, JOIN, c14) {
     dependencyMap2[applicationId].stop();
     let obj = dependencyMap2[applicationId];
   }
-  const timeout = new _require(4015).Timeout();
+  const timeout = new _require(4016).Timeout();
   timeout.start(c14, () => {
     let obj = JOIN(outer1_2[9]);
     obj = { type: "ACTIVITY_LAUNCH_FAIL", applicationId: closure_0, activityType: JOIN };

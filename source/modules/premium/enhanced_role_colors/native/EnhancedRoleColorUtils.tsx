@@ -1,10 +1,10 @@
-// Module ID: 7739
-// Function ID: 61513
+// Module ID: 7685
+// Function ID: 61481
 // Name: processColorStringsInternal
-// Dependencies: [57, 31, 27, 1278, 482, 666, 1327, 4571, 2]
+// Dependencies: [57, 31, 27, 1278, 482, 666, 1327, 4572, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 7739 (processColorStringsInternal)
+// Module 7685 (processColorStringsInternal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { processColor } from "get ActivityIndicator";
@@ -70,10 +70,10 @@ export const useProcessColorStringsArray = function useProcessColorStringsArray(
   return React.useMemo(() => outer1_10(closure_0), items);
 };
 export const isNativeMessageEligibleForEnhancedRoleColors = function isNativeMessageEligibleForEnhancedRoleColors(guildId, id) {
-  return require(4571) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColors(guildId, id);
+  return require(4572) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColors(guildId, id);
 };
 export const useIsRoleStyleAndRoleColorsEligibleForERC = function useIsRoleStyleAndRoleColorsEligibleForERC(guildId, id, stateFromStores, processColorStringsArray) {
-  let tmp = importDefault(4571)(guildId, id);
+  let tmp = importDefault(4572)(guildId, id);
   if (tmp) {
     tmp = "username" === stateFromStores;
   }

@@ -1,10 +1,10 @@
-// Module ID: 11797
-// Function ID: 91594
+// Module ID: 11773
+// Function ID: 91399
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 57, 31, 27, 11780, 653, 33, 4130, 689, 1456, 5160, 11793, 4029, 11788, 1273, 1212, 4126, 9039, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 11756, 653, 33, 4131, 689, 1456, 5159, 11769, 4030, 11764, 1273, 1212, 4127, 8927, 4544, 2]
 // Exports: default
 
-// Module 11797 (HubEmailConnectionSubmitSchool)
+// Module 11773 (HubEmailConnectionSubmitSchool)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -62,7 +62,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   obj = {};
   obj = { ref };
   const items = [tmp.scrollViewContainer, ];
-  const obj1 = { paddingBottom: importDefault(5160)().insets.bottom + importDefault(689).space.PX_16 };
+  const obj1 = { paddingBottom: importDefault(5159)().insets.bottom + importDefault(689).space.PX_16 };
   items[1] = obj1;
   obj.contentContainerStyle = items;
   obj2 = { style: tmp.container };
@@ -73,7 +73,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl2.string(require(1212) /* getSystemLocale */.t["/4y6ox"]);
-  items1[1] = callback2(require(4126) /* Text */.Text, obj4);
+  items1[1] = callback2(require(4127) /* Text */.Text, obj4);
   const obj5 = {};
   const tmp10 = first;
   const tmp3 = callback(ref.useState(null), 2);
@@ -107,7 +107,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       }
     }, 100);
   };
-  items1[2] = callback2(importDefault(9039), obj5);
+  items1[2] = callback2(importDefault(8927), obj5);
   obj2.children = items1;
   const items2 = [closure_10(tmp10, obj2), callback2(first, { style: tmp.redesignGrowSpacing }), ];
   const obj7 = { style: tmp.redesignSubmit };
@@ -117,9 +117,9 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   obj8.onPress = function submitWaitlist() {
     return _submitWaitlist(...arguments);
   };
-  obj7.children = callback2(require(4543) /* Button */.Button, obj8);
+  obj7.children = callback2(require(4544) /* Button */.Button, obj8);
   items2[2] = callback2(first, obj7);
   obj.children = items2;
   obj.children = closure_10(tmp9, obj);
-  return callback2(require(11788) /* getScreens */.HubEmailConnectionScreen, obj);
+  return callback2(require(11764) /* getScreens */.HubEmailConnectionScreen, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8676
-// Function ID: 68637
+// Module ID: 8452
+// Function ID: 67370
 // Name: WebsiteGameStoreLinkButton
-// Dependencies: [31, 27, 33, 4130, 689, 8639, 3827, 4543, 1212, 4098, 8667, 8642, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 8415, 3828, 4544, 1212, 4099, 8443, 8418, 2]
 // Exports: default
 
-// Module 8676 (WebsiteGameStoreLinkButton)
+// Module 8452 (WebsiteGameStoreLinkButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,14 +16,14 @@ const require = arg1;
 function WebsiteGameStoreLinkButton(data) {
   data = data.data;
   const trackAction = data.trackAction;
-  const dependencyMap = trackAction(8639)(trackAction(3827).openURL);
+  const dependencyMap = trackAction(8415)(trackAction(3828).openURL);
   const obj = { variant: "secondary", size: "md" };
   ({ title: obj.text, icon: obj.icon } = data);
   obj.onPress = function onPress() {
     trackAction(data.action);
     callback(data.url);
   };
-  return callback(data(4543).Button, obj);
+  return callback(data(4544).Button, obj);
 }
 ({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 _createForOfIteratorHelperLoose = {};

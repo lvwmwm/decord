@@ -1,10 +1,10 @@
-// Module ID: 9925
-// Function ID: 76785
+// Module ID: 9853
+// Function ID: 76398
 // Name: ForwardMessageFooter
-// Dependencies: [57, 31, 4468, 33, 9905, 7087, 566, 7018, 9926, 1212, 9927, 9928, 4543, 9935, 2]
+// Dependencies: [57, 31, 4469, 33, 9831, 6105, 566, 6036, 9854, 1212, 9855, 9856, 4544, 9863, 2]
 // Exports: ForwardMessageFooter
 
-// Module 9925 (ForwardMessageFooter)
+// Module 9853 (ForwardMessageFooter)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

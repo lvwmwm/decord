@@ -1,10 +1,10 @@
-// Module ID: 9857
-// Function ID: 76417
+// Module ID: 9781
+// Function ID: 76012
 // Name: useSetMediaPostThumbnail
-// Dependencies: [31, 4468, 4467, 624, 4665, 8025, 4098, 2]
+// Dependencies: [31, 4469, 4468, 624, 4666, 6134, 4099, 2]
 // Exports: default
 
-// Module 9857 (useSetMediaPostThumbnail)
+// Module 9781 (useSetMediaPostThumbnail)
 import result from "result";
 import { DraftType } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

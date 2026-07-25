@@ -1,9 +1,9 @@
-// Module ID: 4714
-// Function ID: 41020
+// Module ID: 4715
+// Function ID: 41032
 // Name: DiscordImageFactory
-// Dependencies: [6, 7, 4715, 4742, 2]
+// Dependencies: [6, 7, 4716, 4743, 2]
 
-// Module 4714 (DiscordImageFactory)
+// Module 4715 (DiscordImageFactory)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

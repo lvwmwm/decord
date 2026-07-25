@@ -1,10 +1,10 @@
-// Module ID: 7063
-// Function ID: 56508
+// Module ID: 6081
+// Function ID: 54320
 // Name: replaceAnimationColors
-// Dependencies: [3974, 22, 2]
+// Dependencies: [3975, 22, 2]
 // Exports: replaceAnimationColors
 
-// Module 7063 (replaceAnimationColors)
+// Module 6081 (replaceAnimationColors)
 import apply from "apply";
 
 const memoizeResult = apply.memoize((str) => {
@@ -27,8 +27,8 @@ const result = require("set").fileFinishedImporting("modules/messages/BurstReact
 export const replaceAnimationColors = function replaceAnimationColors(json, arg1) {
   const items = [, , ];
   ({ r: arr[0], g: arr[1], b: arr[2] } = arg1);
-  const complimentaryPaletteForColor = require(3974) /* hexToRgb */.getComplimentaryPaletteForColor(items, 2);
-  const obj = require(3974) /* hexToRgb */;
+  const complimentaryPaletteForColor = require(3975) /* hexToRgb */.getComplimentaryPaletteForColor(items, 2);
+  const obj = require(3975) /* hexToRgb */;
   return json.replace(/(\[1,0,0,)/g, "[" + complimentaryPaletteForColor[0][0] / 255 + "," + complimentaryPaletteForColor[0][1] / 255 + "," + complimentaryPaletteForColor[0][2] / 255 + ",").replace(/\[0,0,1,/g, "[" + complimentaryPaletteForColor[1][0] / 255 + "," + complimentaryPaletteForColor[1][1] / 255 + "," + complimentaryPaletteForColor[1][2] / 255 + ",");
 };
 export const getBurstAnimationHash = memoizeResult;

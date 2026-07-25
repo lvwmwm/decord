@@ -1,10 +1,10 @@
-// Module ID: 3965
-// Function ID: 32825
+// Module ID: 3966
+// Function ID: 32836
 // Name: isPseudoGuildId
-// Dependencies: [654, 1355, 2, 3966]
+// Dependencies: [654, 1355, 2, 3967]
 // Exports: isValidChannelId, isValidGuildId
 
-// Module 3965 (isPseudoGuildId)
+// Module 3966 (isPseudoGuildId)
 import { PSEUDO_GUILD_IDS } from "APP_WITH_INVITE_AND_GUILD_ONBOARDING";
 import { isStaticChannelRoute } from "set";
 

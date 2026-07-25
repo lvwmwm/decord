@@ -1381,27 +1381,27 @@ obj = {
   GUILD_EVENT_IMAGE(id, image, png) {
     return "/guild-events/" + id + "/images/" + image + "." + png;
   },
-  GUILD_EVENTS_FOR_GUILD(id) {
-    return "/guilds/" + id + "/scheduled-events";
+  GUILD_EVENTS_FOR_GUILD(outer1_0) {
+    return "/guilds/" + outer1_0 + "/scheduled-events";
   },
-  GUILD_EVENT_USER_COUNTS(arg0, arg1) {
-    return "/guilds/" + arg0 + "/scheduled-events/" + arg1 + "/users/counts";
+  GUILD_EVENT_USER_COUNTS(outer1_0, outer1_1) {
+    return "/guilds/" + outer1_0 + "/scheduled-events/" + outer1_1 + "/users/counts";
   },
-  GUILD_EVENT_USERS(arg0, arg1, arg2) {
+  GUILD_EVENT_USERS(outer1_2, outer1_0, outer1_1) {
     let str = "";
-    if (null != arg2) {
+    if (null != outer1_1) {
       const _HermesInternal = HermesInternal;
-      str = "/" + arg2;
+      str = "/" + outer1_1;
     }
-    return "/guilds/" + arg0 + "/scheduled-events/" + arg1 + str + "/users";
+    return "/guilds/" + outer1_2 + "/scheduled-events/" + outer1_0 + str + "/users";
   },
-  USER_GUILD_EVENT(arg0, arg1, arg2) {
+  USER_GUILD_EVENT(outer1_2, outer1_0, outer1_1) {
     let str = "";
-    if (null != arg2) {
+    if (null != outer1_1) {
       const _HermesInternal = HermesInternal;
-      str = "/" + arg2;
+      str = "/" + outer1_1;
     }
-    return "/guilds/" + arg0 + "/scheduled-events/" + arg1 + str + "/users/@me";
+    return "/guilds/" + outer1_2 + "/scheduled-events/" + outer1_0 + str + "/users/@me";
   },
   USER_GUILD_EVENTS: "/users/@me/scheduled-events",
   GUILD_EVENT_EXCEPTIONS(guild_id, id) {
@@ -1991,8 +1991,8 @@ obj = {
   },
   HAVEN_GET_ASSETS: "/haven/assets",
   VIBEGRATIONS_PROJECTS: "/vibegrations/projects",
-  VIBEGRATIONS_PROJECT(arg0) {
-    return "/vibegrations/projects/" + arg0;
+  VIBEGRATIONS_PROJECT(projectId) {
+    return "/vibegrations/projects/" + projectId;
   },
   VIBEGRATIONS_PROJECT_WS_TICKET(arg0) {
     return "/vibegrations/projects/" + arg0 + "/ws-ticket";

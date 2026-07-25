@@ -1,9 +1,9 @@
-// Module ID: 12729
-// Function ID: 99072
+// Module ID: 12740
+// Function ID: 99199
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1352, 1348, 4142, 1906, 5601, 1916, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1352, 1348, 4143, 1907, 5601, 1917, 566, 686, 2]
 
-// Module 12729 (_isNativeReflectConstruct)
+// Module 12740 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -111,7 +111,7 @@ function rebuildUnreads() {
   if (found.length > 20) {
     found.length = 20;
   }
-  let flag = !require(1916) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
+  let flag = !require(1917) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
   if (flag) {
     const _Set = Set;
     const set = new Set(found);

@@ -1,10 +1,10 @@
-// Module ID: 16519
-// Function ID: 128672
+// Module ID: 16530
+// Function ID: 128840
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [31, 27, 1345, 33, 4130, 689, 1557, 5187, 5189, 4126, 1212, 1273, 4544, 2]
+// Dependencies: [31, 27, 1345, 33, 4131, 689, 1557, 5187, 5189, 4127, 1212, 1273, 4545, 2]
 // Exports: default
 
-// Module 16519 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 16530 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -37,11 +37,11 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
   const intl = markAsDismissed(1212).intl;
   obj1.children = intl.string(markAsDismissed(1212).t.Y0PTc0);
-  const items = [callback(markAsDismissed(4126).Text, obj1), callback(markAsDismissed(1273).Spacer, { size: 12 }), , , ];
+  const items = [callback(markAsDismissed(4127).Text, obj1), callback(markAsDismissed(1273).Spacer, { size: 12 }), , , ];
   const obj2 = { variant: "text-sm/normal", color: "text-default" };
   const intl2 = markAsDismissed(1212).intl;
   obj2.children = intl2.string(markAsDismissed(1212).t["YSI/1/"]);
-  items[2] = callback(markAsDismissed(4126).Text, obj2);
+  items[2] = callback(markAsDismissed(4127).Text, obj2);
   items[3] = callback(markAsDismissed(1273).Spacer, { size: 48 });
   const obj3 = {};
   const intl3 = markAsDismissed(1212).intl;
@@ -51,7 +51,7 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
     return markAsDismissed(outer1_4.UNKNOWN);
   };
   obj3.grow = true;
-  items[4] = callback(markAsDismissed(4544).BaseTextButton, obj3);
+  items[4] = callback(markAsDismissed(4545).BaseTextButton, obj3);
   obj.children = items;
   obj.children = callback2(markAsDismissed(5189).BottomSheetScrollView, obj);
   obj.children = callback(View, obj);

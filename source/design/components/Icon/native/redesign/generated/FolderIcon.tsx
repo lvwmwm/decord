@@ -1,10 +1,10 @@
-// Module ID: 4632
-// Function ID: 40314
+// Module ID: 4633
+// Function ID: 40326
 // Name: FolderIcon
-// Dependencies: [31, 33, 689, 3833, 4596, 2]
+// Dependencies: [31, 33, 689, 3834, 4597, 2]
 // Exports: FolderIcon
 
-// Module 4632 (FolderIcon)
+// Module 4633 (FolderIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const FolderIcon = function FolderIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4596) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4597) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4596) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4597) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

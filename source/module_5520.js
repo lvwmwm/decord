@@ -1,6 +1,6 @@
 // Module ID: 5520
-// Function ID: 47019
-// Dependencies: [29, 31, 33, 4487, 1457, 5521]
+// Function ID: 47024
+// Dependencies: [29, 31, 33, 4488, 1457, 5521]
 
 // Module 5520
 import _objectWithoutProperties from "_objectWithoutProperties";
@@ -22,18 +22,18 @@ export default Link.createNavigatorFactory(function StackNavigator(arg0) {
   ({ id, initialRouteName, children, screenListeners, screenOptions } = arg0);
   let tmp = callback(arg0, closure_3);
   const mode = tmp.mode;
-  navigation(4487)(null != mode, "Stack Navigator: 'mode=\"" + mode + "\"' is deprecated. Use 'presentation: \"" + mode + "\"' in 'screenOptions' instead.\n\nSee https://reactnavigation.org/docs/stack-navigator#presentation for more details.");
+  navigation(4488)(null != mode, "Stack Navigator: 'mode=\"" + mode + "\"' is deprecated. Use 'presentation: \"" + mode + "\"' in 'screenOptions' instead.\n\nSee https://reactnavigation.org/docs/stack-navigator#presentation for more details.");
   const headerMode = tmp.headerMode;
-  navigation(4487)("none" === headerMode, "Stack Navigator: 'headerMode=\"none\"' is deprecated. Use 'headerShown: false' in 'screenOptions' instead.\n\nSee https://reactnavigation.org/docs/stack-navigator/#headershown for more details.");
+  navigation(4488)("none" === headerMode, "Stack Navigator: 'headerMode=\"none\"' is deprecated. Use 'headerShown: false' in 'screenOptions' instead.\n\nSee https://reactnavigation.org/docs/stack-navigator/#headershown for more details.");
   let tmp7 = null != headerMode;
-  const tmp2 = navigation(4487);
+  const tmp2 = navigation(4488);
   const tmp3 = null != mode;
   if (tmp7) {
     tmp7 = "none" !== headerMode;
   }
-  navigation(4487)(tmp7, "Stack Navigator: 'headerMode' is moved to 'options'. Moved it to 'screenOptions' to keep current behavior.\n\nSee https://reactnavigation.org/docs/stack-navigator/#headermode for more details.");
+  navigation(4488)(tmp7, "Stack Navigator: 'headerMode' is moved to 'options'. Moved it to 'screenOptions' to keep current behavior.\n\nSee https://reactnavigation.org/docs/stack-navigator/#headermode for more details.");
   const keyboardHandlingEnabled = tmp.keyboardHandlingEnabled;
-  navigation(4487)(undefined !== keyboardHandlingEnabled, "Stack Navigator: 'keyboardHandlingEnabled' is moved to 'options'. Moved it to 'screenOptions' to keep current behavior.\n\nSee https://reactnavigation.org/docs/stack-navigator/#keyboardhandlingenabled for more details.");
+  navigation(4488)(undefined !== keyboardHandlingEnabled, "Stack Navigator: 'keyboardHandlingEnabled' is moved to 'options'. Moved it to 'screenOptions' to keep current behavior.\n\nSee https://reactnavigation.org/docs/stack-navigator/#keyboardhandlingenabled for more details.");
   let obj = { presentation: mode, headerShown: tmp10 };
   let tmp11;
   if (headerMode) {
@@ -44,7 +44,7 @@ export default Link.createNavigatorFactory(function StackNavigator(arg0) {
   obj.headerMode = tmp11;
   obj.keyboardHandlingEnabled = keyboardHandlingEnabled;
   tmp10 = !headerMode || "none" !== headerMode;
-  const tmp6 = navigation(4487);
+  const tmp6 = navigation(4488);
   const navigationBuilder = state(1457).useNavigationBuilder(state(1457).StackRouter, { id, initialRouteName, children, screenListeners, screenOptions, defaultScreenOptions: obj });
   state = navigationBuilder.state;
   navigation = navigationBuilder.navigation;

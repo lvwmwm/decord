@@ -1,10 +1,10 @@
-// Module ID: 4577
-// Function ID: 40123
+// Module ID: 4578
+// Function ID: 40135
 // Name: getSoundmojiFromMessage
-// Dependencies: [4578, 4349, 653, 4582, 4583, 4584, 4586, 1392, 2]
+// Dependencies: [4579, 4350, 653, 4583, 4584, 4585, 4587, 1392, 2]
 // Exports: default
 
-// Module 4577 (getSoundmojiFromMessage)
+// Module 4578 (getSoundmojiFromMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { MessageStates } from "ME";
@@ -13,10 +13,10 @@ const require = arg1;
 function getSoundmojiFromMessage(guildId, channelId, messageId, soundId, soundboardSounds) {
   if (obj.getSoundmojiRenderingExperiment({ location: "getSoundmojiASTFromString" })) {
     soundById = soundById.getSoundById(soundId);
-    const tmp6 = importDefault(4583)(soundById, guildId, channelId);
+    const tmp6 = importDefault(4584)(soundById, guildId, channelId);
     if (null != messageId) {
       if (null != channelId) {
-        const tmp15 = importDefault(4584)(channelId, messageId, soundId, soundboardSounds);
+        const tmp15 = importDefault(4585)(channelId, messageId, soundId, soundboardSounds);
         if (tmp6) {
           if (null == tmp15) {
             message = message.getMessage(channelId, messageId);
@@ -46,7 +46,7 @@ const result = require("ME").fileFinishedImporting("modules/premium/sounds/sound
 export default function getSoundmojiASTFromString(soundId, guildId) {
   const tmp3 = getSoundmojiFromMessage(guildId.guildId, guildId.channelId, guildId.messageId, soundId[2], guildId.soundboardSounds);
   if (null == tmp3) {
-    let obj = { type: "text", content: importDefault(4586)(tmp, tmp2) };
+    let obj = { type: "text", content: importDefault(4587)(tmp, tmp2) };
     return obj;
   } else {
     let name;

@@ -1,17 +1,17 @@
-// Module ID: 15217
-// Function ID: 115822
+// Module ID: 15227
+// Function ID: 115950
 // Name: ContactSuggestionActions
-// Dependencies: [31, 27, 33, 3991, 4130, 689, 14959, 4131, 4542, 1273, 15218, 4543, 1212, 2]
+// Dependencies: [31, 27, 33, 3992, 4131, 689, 14969, 4132, 4543, 1273, 15228, 4544, 1212, 2]
 // Exports: ContactSuggestionActions
 
-// Module 15217 (ContactSuggestionActions)
+// Module 15227 (ContactSuggestionActions)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import { Easing } from "module_3991";
-import { Easing as Easing2 } from "module_3991";
-import { Easing as Easing3 } from "module_3991";
-import { Easing as Easing4 } from "module_3991";
+import { Easing } from "module_3992";
+import { Easing as Easing2 } from "module_3992";
+import { Easing as Easing3 } from "module_3992";
+import { Easing as Easing4 } from "module_3992";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_5;
@@ -19,13 +19,13 @@ let closure_6;
 const require = arg1;
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = { duration: 200 };
-obj.easing = Easing.in(require("module_3991").Easing.quad);
+obj.easing = Easing.in(require("module_3992").Easing.quad);
 obj = { duration: 250 };
-obj.easing = Easing2.in(require("module_3991").Easing.quad);
+obj.easing = Easing2.in(require("module_3992").Easing.quad);
 obj = { duration: 250 };
-obj.easing = Easing3.in(require("module_3991").Easing.quad);
+obj.easing = Easing3.in(require("module_3992").Easing.quad);
 let obj1 = { duration: 250 };
-obj1.easing = Easing4.out(require("module_3991").Easing.quad);
+obj1.easing = Easing4.out(require("module_3992").Easing.quad);
 let closure_11 = { mass: 1, stiffness: 172, damping: 17.3 };
 let obj2 = {};
 let obj3 = { position: "absolute", top: 4, zIndex: 2, color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, opacity: 0 };

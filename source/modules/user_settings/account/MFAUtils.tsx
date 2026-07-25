@@ -1,10 +1,10 @@
-// Module ID: 13748
-// Function ID: 105434
+// Module ID: 13759
+// Function ID: 105561
 // Name: getSMSBackupDisabledMessage
-// Dependencies: [1838, 3758, 1849, 653, 1212, 624, 9239, 2]
+// Dependencies: [1838, 3759, 1850, 653, 1212, 624, 9131, 2]
 // Exports: getSMSBackupDisabledMessage, use2FARemoveDisableReason, useIsMFAEnabled, useMFAAvailability
 
-// Module 13748 (getSMSBackupDisabledMessage)
+// Module 13759 (getSMSBackupDisabledMessage)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -75,7 +75,7 @@ export const useMFAAvailability = function useMFAAvailability() {
     }
     return verified;
   });
-  if (require(9239) /* encodeTotpSecret */.hasCrypto) {
+  if (require(9131) /* encodeTotpSecret */.hasCrypto) {
     if (false === stateFromStores) {
       let AVAILABLE = obj.UNAVAILABLE_UNVERIFIED;
     } else {

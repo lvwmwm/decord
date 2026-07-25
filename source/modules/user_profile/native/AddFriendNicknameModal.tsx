@@ -1,10 +1,10 @@
-// Module ID: 12171
-// Function ID: 95346
+// Module ID: 12147
+// Function ID: 95155
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 57, 31, 27, 3767, 1849, 33, 4130, 689, 566, 1212, 4337, 8962, 5585, 4561, 4126, 5773, 3969, 2]
+// Dependencies: [5, 57, 31, 27, 3768, 1850, 33, 4131, 689, 566, 1212, 4338, 8850, 5585, 4562, 4127, 6676, 3970, 2]
 // Exports: default
 
-// Module 12171 (AddFriendNicknameModal)
+// Module 12147 (AddFriendNicknameModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -85,16 +85,16 @@ export default function AddFriendNicknameModal(arg0) {
   obj1.cancelText = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
   obj1.onCancel = callback1;
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  const items3 = [callback2(require(4126) /* Text */.Text, obj2), , ];
+  const items3 = [callback2(require(4127) /* Text */.Text, obj2), , ];
   const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl5.string(require(1212) /* getSystemLocale */.t["NdQ+lP"]);
-  items3[1] = callback2(require(4126) /* Text */.Text, obj3);
+  items3[1] = callback2(require(4127) /* Text */.Text, obj3);
   const obj4 = { onChange: callback, autoFocus: true, placeholder: null, defaultValue: null, maxLength: 32, isClearable: true };
-  const tmp15 = showUserProfile(4561);
-  obj4.placeholder = showUserProfile(3969).getName(stateFromStores1);
+  const tmp15 = showUserProfile(4562);
+  obj4.placeholder = showUserProfile(3970).getName(stateFromStores1);
   obj4.defaultValue = stateFromStores;
-  items3[2] = callback2(require(5773) /* TextField */.TextField, obj4);
+  items3[2] = callback2(require(6676) /* TextField */.TextField, obj4);
   obj1.children = items3;
   obj.children = callback3(tmp15, obj1);
   obj.children = callback2(tmp14, obj);

@@ -1,10 +1,10 @@
-// Module ID: 14229
-// Function ID: 109315
+// Module ID: 14240
+// Function ID: 109442
 // Name: ChannelRowItem
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1273, 9134, 4126, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1273, 9026, 4127, 2]
 // Exports: default
 
-// Module 14229 (ChannelRowItem)
+// Module 14240 (ChannelRowItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import { StatusTypes } from "ME";
@@ -77,7 +77,7 @@ export default function ChannelRowItem(isUnread) {
     const items2 = [avatar1, avatar2];
     obj3.sources = items2;
     obj3.size = require(1273) /* Button */.AvatarSizes.LARGE_48;
-    let tmp12 = callback(require(9134) /* FacepileGroupDMAvatar */.FacepileGroupDMAvatar, obj3);
+    let tmp12 = callback(require(9026) /* FacepileGroupDMAvatar */.FacepileGroupDMAvatar, obj3);
   } else {
     const obj4 = { status, source: avatar1 };
     obj4.cutout = obj4;
@@ -89,9 +89,9 @@ export default function ChannelRowItem(isUnread) {
   const obj5 = { style: tmp2.channelItemContent };
   const obj6 = { style: tmp2.channelItemTop };
   const obj7 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title };
-  const items3 = [callback(require(4126) /* Text */.Text, obj7), ];
+  const items3 = [callback(require(4127) /* Text */.Text, obj7), ];
   const obj8 = { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp };
-  items3[1] = callback(require(4126) /* Text */.Text, obj8);
+  items3[1] = callback(require(4127) /* Text */.Text, obj8);
   obj6.children = items3;
   const items4 = [closure_5(View, obj6), ];
   if (null == preview) {
@@ -102,7 +102,7 @@ export default function ChannelRowItem(isUnread) {
     return closure_5(tmp4, obj);
   } else {
     const obj9 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/message-preview/medium", lineClamp: 1, children: preview };
-    callback(require(4126) /* Text */.Text, obj9);
+    callback(require(4127) /* Text */.Text, obj9);
     const tmp19 = callback;
   }
 };

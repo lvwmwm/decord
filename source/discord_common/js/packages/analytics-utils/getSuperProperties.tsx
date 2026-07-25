@@ -201,9 +201,9 @@ while (true) {
   obj = {};
   let _window = window;
   let _parseInt = parseInt;
-  let str11 = "6065";
+  let str11 = "6075";
   let num4 = 10;
-  let parsed = parseInt("6065", 10);
+  let parsed = parseInt("6075", 10);
   let _isNaN = isNaN;
   if (isNaN(parsed)) {
     break;

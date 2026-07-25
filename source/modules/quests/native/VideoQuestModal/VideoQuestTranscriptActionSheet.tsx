@@ -1,10 +1,10 @@
-// Module ID: 14101
-// Function ID: 108394
+// Module ID: 14112
+// Function ID: 108521
 // Name: VideoQuestTranscriptActionSheet
-// Dependencies: [31, 27, 6943, 33, 4130, 689, 1557, 9494, 9480, 5498, 5186, 1212, 5189, 4541, 4126, 2]
+// Dependencies: [31, 27, 5934, 33, 4131, 689, 1557, 9415, 9401, 5498, 5186, 1212, 5189, 4542, 4127, 2]
 // Exports: default
 
-// Module 14101 (VideoQuestTranscriptActionSheet)
+// Module 14112 (VideoQuestTranscriptActionSheet)
 import result from "result";
 import { ActivityIndicator } from "get ActivityIndicator";
 import _toPropertyKey from "_toPropertyKey";
@@ -100,7 +100,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
     })
   ];
   obj1.children = items2;
-  obj.children = closure_8(quest(4541).Stack, obj1);
+  obj.children = closure_8(quest(4542).Stack, obj1);
   obj.children = callback2(quest(5189).BottomSheetScrollView, obj);
   return callback2(quest(5498).ActionSheet, obj);
 };

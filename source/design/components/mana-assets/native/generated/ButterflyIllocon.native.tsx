@@ -1,10 +1,10 @@
-// Module ID: 5926
-// Function ID: 49854
+// Module ID: 6846
+// Function ID: 59504
 // Name: ButterflyIllocon
-// Dependencies: [33, 5085, 5927, 2]
+// Dependencies: [33, 5085, 6847, 2]
 // Exports: ButterflyIllocon
 
-// Module 5926 (ButterflyIllocon)
+// Module 6846 (ButterflyIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ButterflyIllocon.native.tsx");
@@ -19,7 +19,7 @@ export const ButterflyIllocon = function ButterflyIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5927) };
+  obj = { uri: importDefault(6847) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];

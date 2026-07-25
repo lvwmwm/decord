@@ -1,8 +1,8 @@
-// Module ID: 13452
-// Function ID: 103378
-// Dependencies: [4033, 653, 10528, 10525, 686, 2]
+// Module ID: 13463
+// Function ID: 103505
+// Dependencies: [4034, 653, 10556, 10553, 686, 2]
 
-// Module 13452
+// Module 13463
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 
@@ -14,7 +14,7 @@ export default {
   [ME.RPCCommands.SET_CONFIG]: {
     scope: RPC_SCOPE_CONFIG.RPC_AUTHENTICATED_SCOPE,
     validation(boolean) {
-      let obj = importDefault(10528)(boolean);
+      let obj = importDefault(10556)(boolean);
       obj = { use_interactive_pip: boolean.boolean() };
       return obj.required().keys(obj);
     },
@@ -22,14 +22,14 @@ export default {
       socket = socket.socket;
       const use_interactive_pip = socket.args.use_interactive_pip;
       if (socket.transport !== TransportTypes.POST_MESSAGE) {
-        let tmp16 = importDefault(10525);
+        let tmp16 = importDefault(10553);
         let obj = { errorCode: RPCErrors.INVALID_COMMAND };
         const _HermesInternal = HermesInternal;
         const prototype2 = tmp16.prototype;
         tmp16 = new tmp16(obj, "command not available from \"" + socket.transport + " transport");
         throw tmp16;
       } else if (null == socket.application.id) {
-        let tmp7 = importDefault(10525);
+        let tmp7 = importDefault(10553);
         obj = { errorCode: RPCErrors.INVALID_COMMAND };
         const prototype = tmp7.prototype;
         tmp7 = new tmp7(obj, "invalid application");

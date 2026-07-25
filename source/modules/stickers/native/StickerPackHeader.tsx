@@ -1,8 +1,8 @@
-// Module ID: 9645
-// Function ID: 75087
-// Dependencies: [31, 27, 9604, 33, 4130, 689, 4126, 4466, 1273, 9646, 9647, 1212, 9648, 4660, 2]
+// Module ID: 9567
+// Function ID: 74677
+// Dependencies: [31, 27, 9525, 33, 4131, 689, 4127, 4467, 1273, 9568, 9569, 1212, 9570, 4661, 2]
 
-// Module 9645
+// Module 9567
 import { View } from "get ActivityIndicator";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";
 import jsxProd from "jsxProd";
@@ -49,18 +49,18 @@ const memoResult = importAllResult.memo((withDescription) => {
   obj = { style: tmp.header };
   obj = { style: tmp.headline };
   const obj1 = { style: tmp.label, lineClamp: 1, variant: "text-md/bold", color: "mobile-text-heading-primary", children: stickerPack.name };
-  const items = [callback(require(4126) /* Text */.Text, obj1), , ];
-  let obj4 = require(4466) /* getStickerPackPreviewSticker */;
+  const items = [callback(require(4127) /* Text */.Text, obj1), , ];
+  let obj4 = require(4467) /* getStickerPackPreviewSticker */;
   let result = obj4.isStickerPackAnimated(stickerPack);
   if (result) {
     const obj2 = { style: tmp.iconContainer };
-    const obj3 = { source: importDefault(9646), style: tmp.animatedIcon, size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
+    const obj3 = { source: importDefault(9568), style: tmp.animatedIcon, size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
     obj2.children = callback(require(1273) /* Button */.Icon, obj3);
     result = callback(View, obj2);
   }
   items[1] = result;
   obj4 = { style: tmp.iconContainer };
-  const obj5 = { source: importDefault(9647), style: tmp.premiumIcon, size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
+  const obj5 = { source: importDefault(9569), style: tmp.premiumIcon, size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
   obj4.children = callback(require(1273) /* Button */.Icon, obj5);
   items[2] = callback(View, obj4);
   obj.children = items;
@@ -71,20 +71,20 @@ const memoResult = importAllResult.memo((withDescription) => {
   }
   if (flag) {
     const obj6 = { variant: "text-sm/medium", children: stickerPack.description };
-    flag = callback(require(4126) /* Text */.Text, obj6);
+    flag = callback(require(4127) /* Text */.Text, obj6);
   }
   items1[1] = flag;
   const obj7 = { lineClamp: 1, variant: "text-xs/medium", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj7.children = intl.format(require(1212) /* getSystemLocale */.t["0S3JpO"], { numStickers: stickerPack.stickers.length });
-  items1[2] = callback(require(4126) /* Text */.Text, obj7);
+  items1[2] = callback(require(4127) /* Text */.Text, obj7);
   obj.children = items1;
   const tmp2Result = closure_5(closure_6, obj);
   const obj9 = {};
   if (withBanner) {
     const obj10 = { stickerPack };
     ({ bannerContainer: obj14.containerStyle, banner: obj14.style } = tmp);
-    withBanner = callback(importDefault(9648), obj10);
+    withBanner = callback(importDefault(9570), obj10);
   }
   const items2 = [withBanner, ];
   if (null != onPress) {
@@ -94,7 +94,7 @@ const memoResult = importAllResult.memo((withDescription) => {
     obj11.onPress = onPress;
     obj11.accessibilityRole = "header";
     obj11.children = tmp2Result;
-    let tmp24 = callback(require(4660) /* PressableBase */.PressableOpacity, obj11);
+    let tmp24 = callback(require(4661) /* PressableBase */.PressableOpacity, obj11);
   } else {
     const obj12 = {};
     const items4 = [tmp.section, style];

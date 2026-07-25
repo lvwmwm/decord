@@ -1,5 +1,5 @@
 // Module ID: 5212
-// Function ID: 45149
+// Function ID: 45154
 // Name: isFabricInstalled
 // Dependencies: []
 

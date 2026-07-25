@@ -1,10 +1,10 @@
-// Module ID: 11327
-// Function ID: 88143
+// Module ID: 11289
+// Function ID: 87799
 // Name: AttachmentPreviewAppLauncher
-// Dependencies: [31, 27, 4468, 4467, 33, 4130, 689, 9868, 10303, 1881, 11310, 566, 8025, 11328, 1212, 4665, 9858, 2]
+// Dependencies: [31, 27, 4469, 4468, 33, 4131, 689, 9792, 10236, 1882, 11272, 566, 6134, 11290, 1212, 4666, 9782, 2]
 // Exports: default
 
-// Module 11327 (AttachmentPreviewAppLauncher)
+// Module 11289 (AttachmentPreviewAppLauncher)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { DraftType } from "_isNativeReflectConstruct";
@@ -22,8 +22,8 @@ function AttachmentPreviewAppLauncher(arg0) {
   ({ uri, isImage, isVideo } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   ({ width, height } = tmp.selectedImage);
-  const obj = { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: jsx(require(10303) /* FileIcon */.FileIcon, { size: "sm" }) };
-  return jsx(importDefault(9868), { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: jsx(require(10303) /* FileIcon */.FileIcon, { size: "sm" }) });
+  const obj = { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: jsx(require(10236) /* FileIcon */.FileIcon, { size: "sm" }) };
+  return jsx(importDefault(9792), { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: jsx(require(10236) /* FileIcon */.FileIcon, { size: "sm" }) });
 }
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { justifyContent: "center", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };

@@ -1,9 +1,9 @@
-// Module ID: 15199
-// Function ID: 115776
+// Module ID: 15209
+// Function ID: 115904
 // Name: ForYouItemImage
-// Dependencies: [31, 27, 1391, 1838, 1849, 15200, 33, 4130, 689, 6882, 12215, 15201, 15202, 15203, 15204, 5085, 15205, 1273, 15206, 15207, 5462, 566, 4660, 8537, 7970, 15208, 4126, 2]
+// Dependencies: [31, 27, 1391, 1838, 1850, 15210, 33, 4131, 689, 5873, 12191, 15211, 15212, 15213, 15214, 5085, 15215, 1273, 15216, 15217, 5462, 566, 4661, 8297, 7918, 15218, 4127, 2]
 
-// Module 15199 (ForYouItemImage)
+// Module 15209 (ForYouItemImage)
 import importAllResult from "result";
 import { View } from "set";
 import { getGuildAcronym } from "isGuildOwner";

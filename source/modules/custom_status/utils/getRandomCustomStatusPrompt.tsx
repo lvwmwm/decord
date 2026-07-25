@@ -1,10 +1,10 @@
-// Module ID: 11929
-// Function ID: 92383
+// Module ID: 11905
+// Function ID: 92188
 // Name: getRandomCustomStatusPrompt
-// Dependencies: [11928, 1212, 2]
+// Dependencies: [11904, 1212, 2]
 // Exports: default
 
-// Module 11929 (getRandomCustomStatusPrompt)
+// Module 11905 (getRandomCustomStatusPrompt)
 import StatusTypes from "StatusTypes";
 
 let closure_2;

@@ -1,10 +1,10 @@
-// Module ID: 10990
-// Function ID: 85420
+// Module ID: 10945
+// Function ID: 85036
 // Name: MessageGameIconActionSheet
-// Dependencies: [31, 27, 4167, 653, 33, 4130, 477, 689, 566, 5187, 1273, 4126, 1212, 1920, 2]
+// Dependencies: [31, 27, 4168, 653, 33, 4131, 477, 689, 566, 5187, 1273, 4127, 1212, 1921, 2]
 // Exports: default
 
-// Module 10990 (MessageGameIconActionSheet)
+// Module 10945 (MessageGameIconActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -61,23 +61,23 @@ export default function MessageGameIconActionSheet(applicationId) {
     const items1 = [callback(applicationId(1273).Icon, obj2), ];
     const obj4 = { style: tmp.gameDescriptionWrapper };
     const obj5 = { style: tmp.timestamp, variant: "text-xs/medium", color: "text-muted", children: applicationId.messageTimestamp };
-    const items2 = [callback(applicationId(4126).Text, obj5), ];
+    const items2 = [callback(applicationId(4127).Text, obj5), ];
     const obj6 = { variant: "text-sm/medium" };
     const intl = applicationId(1212).intl;
     const obj7 = { applicationName: stateFromStores.name };
     const items3 = [intl.format(applicationId(1212).t.J3s8JP, obj7), " ", ];
     const intl2 = applicationId(1212).intl;
-    const obj8 = { helpdeskArticle: importDefault(1920).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
+    const obj8 = { helpdeskArticle: importDefault(1921).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
     items3[2] = intl2.format(applicationId(1212).t.BPDKoA, obj8);
     obj6.children = items3;
-    items2[1] = callback2(applicationId(4126).Text, obj6);
+    items2[1] = callback2(applicationId(4127).Text, obj6);
     obj4.children = items2;
     items1[1] = callback2(View, obj4);
     obj1.children = items1;
     obj.children = callback2(View, obj1);
     obj.children = callback(View, obj);
     tmp3Result = tmp3(applicationId(5187).BottomSheet, obj);
-    const obj13 = importDefault(1920);
+    const obj13 = importDefault(1921);
     const tmp7 = callback2;
   }
   return tmp3Result;

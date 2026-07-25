@@ -1,10 +1,10 @@
-// Module ID: 3775
-// Function ID: 29026
+// Module ID: 3776
+// Function ID: 29037
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 1352, 3758, 1849, 653, 1852, 3774, 3776, 4996, 3751, 7024, 1447, 1392, 2]
+// Dependencies: [5, 1352, 3759, 1850, 653, 1853, 3775, 3777, 4997, 3752, 6042, 1447, 1392, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
-// Module 3775 (_createForOfIteratorHelperLoose)
+// Module 3776 (_createForOfIteratorHelperLoose)
 import closure_3 from "set";
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -102,7 +102,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function isCustomEmoji(emoji) {
-  let tmp = emoji.type === require(3774) /* EmojiTypes */.EmojiTypes.GUILD;
+  let tmp = emoji.type === require(3775) /* EmojiTypes */.EmojiTypes.GUILD;
   if (!tmp) {
     tmp = null != emoji.guildId;
   }
@@ -182,14 +182,14 @@ function getEmojiUnavailableReason(intention) {
               }
             }
           }
-          obj = importDefault(3776);
+          obj = importDefault(3777);
           let tmp28;
           if (null != guildId) {
             tmp28 = guildId;
           }
           if (obj2.isUnusableRoleSubscriptionEmoji(emoji, tmp28)) {
-            require(3751) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldHideGuildPurchaseEntryPoints(emoji.guildId) ? EmojiDisabledReasons.ROLE_SUBSCRIPTION_UNAVAILABLE : EmojiDisabledReasons.ROLE_SUBSCRIPTION_LOCKED;
-            const obj5 = require(3751) /* isRestrictedFromShowingGuildPurchaseEntryPoints */;
+            require(3752) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldHideGuildPurchaseEntryPoints(emoji.guildId) ? EmojiDisabledReasons.ROLE_SUBSCRIPTION_UNAVAILABLE : EmojiDisabledReasons.ROLE_SUBSCRIPTION_LOCKED;
+            const obj5 = require(3752) /* isRestrictedFromShowingGuildPurchaseEntryPoints */;
           } else {
             let PREMIUM_LOCKED = null;
             if (emoji.animated) {
@@ -199,13 +199,13 @@ function getEmojiUnavailableReason(intention) {
                 if (!obj4.isPurchasableRoleSubscriptionEmoji(emoji)) {
                   PREMIUM_LOCKED = EmojiDisabledReasons.PREMIUM_LOCKED;
                 }
-                obj4 = require(4996) /* isPurchasableRoleSubscriptionEmoji */;
+                obj4 = require(4997) /* isPurchasableRoleSubscriptionEmoji */;
               }
-              obj3 = importDefault(3776);
+              obj3 = importDefault(3777);
             }
             return PREMIUM_LOCKED;
           }
-          obj2 = require(4996) /* isPurchasableRoleSubscriptionEmoji */;
+          obj2 = require(4997) /* isPurchasableRoleSubscriptionEmoji */;
         }
       }
     }
@@ -438,7 +438,7 @@ export const getEmojiUrl = function getEmojiUrl(arg0, arg1) {
     let emojiURL = importDefault(1392).getEmojiURL(obj);
     const obj2 = importDefault(1392);
   } else {
-    obj = importDefault(7024);
+    obj = importDefault(6042);
     emojiURL = obj.getURL(tmp);
   }
   return emojiURL;

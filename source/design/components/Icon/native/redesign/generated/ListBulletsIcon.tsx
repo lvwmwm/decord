@@ -1,10 +1,10 @@
-// Module ID: 16285
-// Function ID: 126793
+// Module ID: 16296
+// Function ID: 126961
 // Name: ListBulletsIcon
-// Dependencies: [31, 33, 689, 3833, 16286, 2]
+// Dependencies: [31, 33, 689, 3834, 16297, 2]
 // Exports: ListBulletsIcon
 
-// Module 16285 (ListBulletsIcon)
+// Module 16296 (ListBulletsIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ListBulletsIcon = function ListBulletsIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(16286) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(16297) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(16286) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(16297) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

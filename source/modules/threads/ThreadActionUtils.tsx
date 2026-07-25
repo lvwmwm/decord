@@ -1,10 +1,10 @@
-// Module ID: 3765
-// Function ID: 28852
+// Module ID: 3766
+// Function ID: 28863
 // Name: doesThreadMembersActionAffectMe
 // Dependencies: [1194, 2]
 // Exports: doesThreadMembersActionAffectMe
 
-// Module 3765 (doesThreadMembersActionAffectMe)
+// Module 3766 (doesThreadMembersActionAffectMe)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("set").fileFinishedImporting("modules/threads/ThreadActionUtils.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8300
-// Function ID: 65364
+// Module ID: 8035
+// Function ID: 63919
 // Name: ProfileFrameLayer
-// Dependencies: [31, 27, 8287, 8301, 5510, 33, 4130, 8302, 5085, 8299, 8303, 2]
+// Dependencies: [31, 27, 8022, 8036, 5510, 33, 4131, 8037, 5085, 8034, 8038, 2]
 // Exports: default
 
-// Module 8300 (ProfileFrameLayer)
+// Module 8035 (ProfileFrameLayer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { useFramePreviewOverrideStore as closure_4 } from "_createForOfIteratorHelperLoose";
@@ -194,8 +194,8 @@ export default function ProfileFrame(arg0) {
   if (null != tmp) {
     let obj = { override: tmp };
     const merged = Object.assign(arg0);
-    let tmp7 = jsx(importDefault(8303), { override: tmp });
-    const tmp11 = importDefault(8303);
+    let tmp7 = jsx(importDefault(8038), { override: tmp });
+    const tmp11 = importDefault(8038);
   } else {
     obj = {};
     const merged1 = Object.assign(arg0);

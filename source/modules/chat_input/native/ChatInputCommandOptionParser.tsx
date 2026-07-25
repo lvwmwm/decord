@@ -1,10 +1,10 @@
-// Module ID: 11146
-// Function ID: 86709
+// Module ID: 11106
+// Function ID: 86347
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4122, 4991, 1910, 3758, 653, 4567, 1852, 11147, 3775, 11148, 5728, 9593, 689, 4320, 2]
+// Dependencies: [4123, 4992, 1911, 3759, 653, 4568, 1853, 11107, 3776, 11108, 9599, 9514, 689, 4321, 2]
 // Exports: getChannelHighlightNodes, getEmojiHighlightNodes, getGameHighlightNodes, getGameMentionInputNodes, getMatchedOptions, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getUsernameHighlightNodes, serializeComposerGameMentions
 
-// Module 11146 (_createForOfIteratorHelperLoose)
+// Module 11106 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -219,7 +219,7 @@ export const getMatchedOptionsWithValue = (arg0, activeCommand) => {
                   obj = {};
                   let tmp7 = _require;
                   let tmp8 = dependencyMap;
-                  obj.type = _require(11147).ChatInputParseResultDataType.COMMAND_OPTION;
+                  obj.type = _require(11107).ChatInputParseResultDataType.COMMAND_OPTION;
                   obj.option = options[num];
                   obj.data = obj;
                   let addResult = set.add(num);
@@ -289,7 +289,7 @@ export const getMatchedOptions = (arg0, activeCommand) => {
                   obj = {};
                   let tmp4 = require;
                   let tmp5 = dependencyMap;
-                  obj.type = require(11147) /* ChatInputParser */.ChatInputParseResultDataType.COMMAND_OPTION;
+                  obj.type = require(11107) /* ChatInputParser */.ChatInputParseResultDataType.COMMAND_OPTION;
                   obj.option = options[num];
                   obj.data = obj;
                   let arr = items.push(obj);
@@ -346,7 +346,7 @@ export const getEmojiHighlightNodes = function getEmojiHighlightNodes(channel, a
         if (null != byId) {
           let tmp6 = importDefault;
           let tmp7 = dependencyMap;
-          let obj = importDefault(3775);
+          let obj = importDefault(3776);
           obj = { emoji: byId, channel };
           let tmp8 = EmojiIntention;
           obj.intention = EmojiIntention.CHAT;
@@ -385,7 +385,7 @@ export const getUsernameHighlightNodes = function getUsernameHighlightNodes(chan
     }
   }
   const items = [];
-  const dependencyMap = _require(11148).getUsers(channel);
+  const dependencyMap = _require(11108).getUsers(channel);
   processRegex(closure_14, (arg0) => arg0);
   processRegex(closure_15, (arg0) => arg0.split("#")[0]);
   return items;
@@ -420,7 +420,7 @@ export const getGameHighlightNodes = function getGameHighlightNodes(mentionGames
 };
 export const getGameMentionInputNodes = function getGameMentionInputNodes(arr) {
   const _require = arr;
-  const gameMentionsAutocompleteConfig = _require(5728).getGameMentionsAutocompleteConfig("game mention input highlight");
+  const gameMentionsAutocompleteConfig = _require(9599).getGameMentionsAutocompleteConfig("game mention input highlight");
   if (gameMentionsAutocompleteConfig.enabled) {
     if (!gameMentionsAutocompleteConfig.combineMentionAutocomplete) {
       let closure_1 = closure_8;
@@ -521,7 +521,7 @@ export const getChannelHighlightNodes = function getChannelHighlightNodes(channe
   let _loop3Result;
   const _require = arg1;
   let items = [];
-  const dependencyMap = _require(11148).getChannels(channel);
+  const dependencyMap = _require(11108).getChannels(channel);
   let c3 = 0;
   function _loop3() {
     const index = lib.indexOf("#", _isNativeReflectConstruct);

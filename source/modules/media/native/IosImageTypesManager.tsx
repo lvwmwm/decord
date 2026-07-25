@@ -1,9 +1,9 @@
-// Module ID: 4696
-// Function ID: 40901
+// Module ID: 4697
+// Function ID: 40913
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 27, 3, 4530, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 27, 3, 4531, 2]
 
-// Module 4696 (_isNativeReflectConstruct)
+// Module 4697 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import getActivityIndicator from "get ActivityIndicator";
 import timestamp from "timestamp";

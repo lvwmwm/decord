@@ -1,5 +1,5 @@
 // Module ID: 5536
-// Function ID: 47104
+// Function ID: 47109
 // Name: HeaderTitle
 // Dependencies: [29, 31, 27, 33, 1457]
 // Exports: default

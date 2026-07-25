@@ -1,10 +1,10 @@
-// Module ID: 14243
-// Function ID: 109391
+// Module ID: 14254
+// Function ID: 109518
 // Name: useSyncedModeThemeName
-// Dependencies: [1278, 3943, 1324, 566, 3973, 1212, 2396, 2]
+// Dependencies: [1278, 3944, 1324, 566, 3974, 1212, 2397, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 14243 (useSyncedModeThemeName)
+// Module 14254 (useSyncedModeThemeName)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "items1";
 

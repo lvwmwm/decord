@@ -1,10 +1,10 @@
-// Module ID: 12268
-// Function ID: 95783
+// Module ID: 12244
+// Function ID: 95592
 // Name: clamp
-// Dependencies: [57, 31, 27, 33, 4130, 689, 3991, 10887, 4131, 1273, 12269, 5217, 3992, 5121, 5446, 12270, 12260, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 10837, 4132, 1273, 12245, 5217, 3993, 5121, 5446, 12246, 12236, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 12268 (clamp)
+// Module 12244 (clamp)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

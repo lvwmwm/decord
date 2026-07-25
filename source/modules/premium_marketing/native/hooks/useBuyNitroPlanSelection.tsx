@@ -1,10 +1,10 @@
-// Module ID: 7431
-// Function ID: 59745
+// Module ID: 6512
+// Function ID: 58200
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 1851, 6648, 6685, 7194, 477, 7126, 7128, 7185, 7432, 2]
+// Dependencies: [57, 31, 1852, 6195, 6187, 6445, 477, 6204, 6206, 6513, 6514, 2]
 // Exports: useBuyNitroPlanSelection
 
-// Module 7431 (_createForOfIteratorHelperLoose)
+// Module 6512 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import GuildFeatures from "GuildFeatures";

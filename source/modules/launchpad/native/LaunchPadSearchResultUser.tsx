@@ -1,9 +1,9 @@
-// Module ID: 15723
-// Function ID: 121209
+// Module ID: 15734
+// Function ID: 121378
 // Name: user
-// Dependencies: [31, 4122, 1921, 1348, 4217, 11135, 4325, 653, 4326, 33, 4130, 689, 15706, 4140, 4549, 566, 21, 6883, 15707, 4660, 15708, 15710, 1273, 7969, 15711, 3969, 10286, 3808, 15713, 14919, 14256, 2]
+// Dependencies: [31, 4123, 1922, 1348, 4218, 11095, 4326, 653, 4327, 33, 4131, 689, 15717, 4141, 4550, 566, 21, 5874, 15718, 4661, 15719, 15721, 1273, 7917, 15722, 3970, 10219, 3809, 15724, 14930, 14267, 2]
 
-// Module 15723 (user)
+// Module 15734 (user)
 import importAllResult from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -46,13 +46,13 @@ function UserResult(user) {
     flag2 = false;
   }
   const tmp = callback2();
-  const tmp2 = importDefault(15706)();
+  const tmp2 = importDefault(15717)();
   let items = [user.id];
   const callback = importAllResult.useCallback(() => {
     const items = [user.id];
     outer1_1(outer1_2[13]).openPrivateChannel({ recipientIds: items });
   }, items);
-  let obj = user(4549);
+  let obj = user(4550);
   const fontScale = obj.useFontScale();
   let obj1 = user(566);
   const items1 = [closure_5];
@@ -72,7 +72,7 @@ function UserResult(user) {
   }
   let relativeTimestamp = null;
   if (null != extractTimestampResult) {
-    let obj5 = user(6883);
+    let obj5 = user(5874);
     relativeTimestamp = obj5.getRelativeTimestamp(extractTimestampResult);
   }
   let str = "text-muted";
@@ -85,10 +85,10 @@ function UserResult(user) {
   obj = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items4 };
   items4 = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
   obj = {};
-  const tmp14 = importDefault(15707);
+  const tmp14 = importDefault(15718);
   const tmp15 = callback;
   obj1 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
-  const items5 = [callback(importDefault(15710), obj1), , ];
+  const items5 = [callback(importDefault(15721), obj1), , ];
   obj2 = { user, guildId: undefined, isMobileOnline, isVROnline };
   let tmp20 = null;
   if (!user.isSystemUser()) {
@@ -98,7 +98,7 @@ function UserResult(user) {
     }
   }
   obj2.status = tmp20;
-  obj2.streaming = importDefault(7969)(activities);
+  obj2.streaming = importDefault(7917)(activities);
   obj2.style = tmp2.icon.margin;
   obj2.size = tmp2.icon.avatarSize;
   let tmp22 = !stateFromStores1;
@@ -114,20 +114,20 @@ function UserResult(user) {
   obj2.autoStatusCutout = true;
   items5[1] = callback(user(1273).Avatar, obj2);
   obj3 = {};
-  const tmp16 = importDefault(15708);
+  const tmp16 = importDefault(15719);
   const tmp17 = closure_14;
   const tmp18 = closure_13;
   const tmp19 = callback;
   if (null == comparator) {
-    comparator = importDefault(3969).getUserTag(user);
-    const obj12 = importDefault(3969);
+    comparator = importDefault(3970).getUserTag(user);
+    const obj12 = importDefault(3970);
   }
   obj3.name = comparator;
   let tmp27;
   if (null != lastMessage) {
     if (null != channel) {
-      obj4 = { channel, message: lastMessage, color: str, muted: flag, layout: user(3808).ChannelListLayoutTypes.COMPACT };
-      tmp27 = callback(user(10286).ChannelRowPreview, obj4);
+      obj4 = { channel, message: lastMessage, color: str, muted: flag, layout: user(3809).ChannelListLayoutTypes.COMPACT };
+      tmp27 = callback(user(10219).ChannelRowPreview, obj4);
     }
   }
   obj3.subtitle = tmp27;
@@ -137,11 +137,11 @@ function UserResult(user) {
   obj3.lastMessageTimestampString = relativeTimestamp;
   obj3.mentionCount = num;
   obj5 = { mentionCount: num, locale: stateFromStores };
-  obj3.mentionBadge = importDefault(15713)(obj5);
-  items5[2] = importDefault(15711)(obj3);
+  obj3.mentionBadge = importDefault(15724)(obj5);
+  items5[2] = importDefault(15722)(obj3);
   obj.children = items5;
   obj.children = tmp16(tmp17(tmp18, obj), { fontScale });
-  return tmp14(tmp15(user(4660).PressableHighlight, obj));
+  return tmp14(tmp15(user(4661).PressableHighlight, obj));
 }
 function UserResultWithChannel(arg0) {
   let channel;
@@ -152,16 +152,16 @@ function UserResultWithChannel(arg0) {
   let obj = require(566) /* initialize */;
   const items = [closure_9];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_9.isChannelMuted(undefined, channel.id));
-  const baseChannelUnreadBadgeState = require(14919) /* useBaseChannelUnreadBadgeState */.useBaseChannelUnreadBadgeState(channel, stateFromStores);
+  const baseChannelUnreadBadgeState = require(14930) /* useBaseChannelUnreadBadgeState */.useBaseChannelUnreadBadgeState(channel, stateFromStores);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
-  const obj2 = require(14919) /* useBaseChannelUnreadBadgeState */;
+  const obj2 = require(14930) /* useBaseChannelUnreadBadgeState */;
   const items1 = [closure_8];
   const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_8.isTyping(channel.id, id.id));
   obj = {};
   const obj3 = require(566) /* initialize */;
   const merged = Object.assign(arg0);
   obj["channel"] = channel;
-  obj["lastMessage"] = channel(14256)(channel, { unread });
+  obj["lastMessage"] = channel(14267)(channel, { unread });
   obj["unread"] = unread;
   obj["mentionCount"] = mentionCount;
   obj["muted"] = stateFromStores;

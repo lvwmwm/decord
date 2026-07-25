@@ -1,10 +1,10 @@
-// Module ID: 8572
-// Function ID: 68197
+// Module ID: 8332
+// Function ID: 66851
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: [31, 1849, 1851, 8573, 653, 5510, 8574, 6876, 566, 5796, 4098, 8575, 1934, 8575, 675, 2]
+// Dependencies: [31, 1850, 1852, 8333, 653, 5510, 8334, 5651, 566, 6554, 4099, 8335, 1935, 8335, 675, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 8572 (useTieredTenureBadgeClickHandler)
+// Module 8332 (useTieredTenureBadgeClickHandler)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumTypes } from "GuildFeatures";
@@ -22,13 +22,13 @@ export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeCli
   const _require = id;
   let closure_1 = userId;
   const dependencyMap = themeType;
-  const isPremiumSubscriber = _require(8574).useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  const isPremiumSubscriber = _require(8334).useIsPremiumSubscriber(PremiumTypes.TIER_2);
   let tmp2 = "string" === typeof id;
   if (tmp2) {
-    tmp2 = null != _require(6876).getTieredTenureBadge(id);
-    const obj2 = _require(6876);
+    tmp2 = null != _require(5651).getTieredTenureBadge(id);
+    const obj2 = _require(5651);
   }
-  let obj = _require(8574);
+  let obj = _require(8334);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(566).useStateFromStores(items, () => tmp2.getCurrentUser());
   let tmp7 = id === DEFAULT_PREMIUM_BADGE_ID;

@@ -1,34 +1,37 @@
-// Module ID: 4335
-// Function ID: 38287
+// Module ID: 4336
+// Function ID: 38298
 // Name: guildHasOnboardingHome
-// Dependencies: [653, 2]
+// Dependencies: [653, 1841, 2]
 // Exports: default
 
-// Module 4335 (guildHasOnboardingHome)
+// Module 4336 (guildHasOnboardingHome)
 import ME from "ME";
 
-({ GuildFeatures: closure_0, FAVORITES: closure_1, ME: closure_2 } = ME);
+let closure_2;
+let closure_3;
+({ GuildFeatures: closure_2, ME: closure_3 } = ME);
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/guildHasOnboardingHome.tsx");
 
 export default function guildHasOnboardingHome(id) {
-  let tmp = null == id;
-  if (!tmp) {
-    tmp = id.id === closure_2;
+  let isFavoritesGuildIdResult = null == id;
+  if (!isFavoritesGuildIdResult) {
+    isFavoritesGuildIdResult = id.id === closure_3;
   }
-  if (!tmp) {
-    tmp = id.id === closure_1;
+  if (!isFavoritesGuildIdResult) {
+    isFavoritesGuildIdResult = require(1841) /* isFavoritesGuildId */.isFavoritesGuildId(id.id);
+    const obj = require(1841) /* isFavoritesGuildId */;
   }
-  if (!tmp) {
+  if (!isFavoritesGuildIdResult) {
     const features = id.features;
-    tmp = !features.has(closure_0.COMMUNITY);
+    isFavoritesGuildIdResult = !features.has(constants.COMMUNITY);
   }
-  if (!tmp) {
+  if (!isFavoritesGuildIdResult) {
     const features2 = id.features;
-    tmp = !features2.has(closure_0.GUILD_SERVER_GUIDE);
+    isFavoritesGuildIdResult = !features2.has(constants.GUILD_SERVER_GUIDE);
   }
-  if (!tmp) {
+  if (!isFavoritesGuildIdResult) {
     const features3 = id.features;
-    tmp = !features3.has(closure_0.GUILD_ONBOARDING);
+    isFavoritesGuildIdResult = !features3.has(constants.GUILD_ONBOARDING);
   }
-  return !tmp;
+  return !isFavoritesGuildIdResult;
 };

@@ -1,10 +1,10 @@
-// Module ID: 11988
-// Function ID: 92675
+// Module ID: 11964
+// Function ID: 92480
 // Name: AnimatedContainer
-// Dependencies: [31, 27, 4122, 33, 4130, 689, 4973, 1324, 3976, 5122, 624, 3991, 4131, 4542, 4126, 5085, 2]
+// Dependencies: [31, 27, 4123, 33, 4131, 689, 4974, 1324, 3977, 5122, 624, 3992, 4132, 4543, 4127, 5085, 2]
 // Exports: default
 
-// Module 11988 (AnimatedContainer)
+// Module 11964 (AnimatedContainer)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -136,7 +136,7 @@ function AnimatedContainer(scale) {
 function GroupMemberCount(count) {
   const tmp = callback3(importDefault(1324)("GroupAvatar"));
   let obj = { style: tmp.avatarWrapper };
-  obj = { style: tmp.overflowCount, children: callback2(require(4126) /* Text */.Text, { variant: "text-sm/semibold", children: items }) };
+  obj = { style: tmp.overflowCount, children: callback2(require(4127) /* Text */.Text, { variant: "text-sm/semibold", children: items }) };
   items = ["+", count.count];
   obj.children = callback(View, obj);
   return callback(View, obj);
@@ -236,7 +236,7 @@ let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   obj7.shadowColor = BLACK1;
   let DARK_03_LIGHT_02;
   if (!arg0) {
-    DARK_03_LIGHT_02 = require(4973) /* result */.DARK_03_LIGHT_02;
+    DARK_03_LIGHT_02 = require(4974) /* result */.DARK_03_LIGHT_02;
   }
   obj7.shadowOpacity = DARK_03_LIGHT_02;
   let obj8;

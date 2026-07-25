@@ -1,10 +1,10 @@
-// Module ID: 6697
-// Function ID: 51872
+// Module ID: 5693
+// Function ID: 49185
 // Name: stopAnalyticsHeartbeat
-// Dependencies: [5, 4808, 1194, 4943, 4202, 653, 664, 3, 6698, 6699, 1184, 6700, 6703, 675, 6704, 587, 6705, 645, 686, 566, 491, 2]
+// Dependencies: [5, 4809, 1194, 4944, 4203, 653, 664, 3, 5694, 5695, 1184, 5696, 5699, 675, 5700, 587, 5701, 645, 686, 566, 491, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
 
-// Module 6697 (stopAnalyticsHeartbeat)
+// Module 5693 (stopAnalyticsHeartbeat)
 import closure_3 from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importDefaultResult from "_isNativeReflectConstruct";
@@ -155,9 +155,9 @@ function validateClientSession(Storage) {
   let tmp = null;
   if (null != Storage) {
     let tmp4 = Storage;
-    if (Storage.version !== require(6705) /* result */.CLIENT_SESSION_STORAGE_VERSION) {
+    if (Storage.version !== require(5701) /* result */.CLIENT_SESSION_STORAGE_VERSION) {
       const _HermesInternal = HermesInternal;
-      importDefaultResult2.warn("Throwing away client session with invalid version: " + Storage.version + ", expected " + require(6705) /* result */.CLIENT_SESSION_STORAGE_VERSION);
+      importDefaultResult2.warn("Throwing away client session with invalid version: " + Storage.version + ", expected " + require(5701) /* result */.CLIENT_SESSION_STORAGE_VERSION);
       tmp4 = null;
     }
     tmp = tmp4;
@@ -203,7 +203,7 @@ function handleWindowFocus(focused) {
   }
 }
 function handleLocationChange() {
-  const isActiveUserRouteResult = require(6699) /* isActiveUserRoute */.isActiveUserRoute();
+  const isActiveUserRouteResult = require(5695) /* isActiveUserRoute */.isActiveUserRoute();
   if (isActiveUserRoute !== isActiveUserRouteResult) {
     isActiveUserRoute = isActiveUserRouteResult;
     scheduleHeartbeatTracking();
@@ -217,9 +217,9 @@ function handleAppStateUpdate(state) {
 }
 function handleFluxInitialized() {
   const state = importDefaultResult1.getState();
-  let closure_22 = require(6698) /* isForegrounded */.isForegrounded();
-  const obj = require(6698) /* isForegrounded */;
-  let closure_23 = require(6699) /* isActiveUserRoute */.isActiveUserRoute();
+  let closure_22 = require(5694) /* isForegrounded */.isForegrounded();
+  const obj = require(5694) /* isForegrounded */;
+  let closure_23 = require(5695) /* isActiveUserRoute */.isActiveUserRoute();
   handleAuthenticationChange();
 }
 function getSession() {
@@ -356,7 +356,7 @@ export const initSessionHeartbeatScheduler = function initSessionHeartbeatSchedu
   const obj3 = importDefault(686);
   const subscription2 = importDefault(686).subscribe("CONNECTION_OPEN", forceDispatchSessionIdUpdate);
   const obj4 = importDefault(686);
-  const result = require(6699) /* isActiveUserRoute */.subscribeToLocationChanges(handleLocationChange);
+  const result = require(5695) /* isActiveUserRoute */.subscribeToLocationChanges(handleLocationChange);
   scheduleHeartbeatTracking();
   scheduleHeartbeatSkippedTracking();
   const initialized = importDefault(566).initialized;
@@ -376,7 +376,7 @@ export const getActiveSessionUnsafe = function getActiveSessionUnsafe() {
     if (!obj.isSessionExpired(session)) {
       tmp6 = session;
     }
-    obj = require(6705) /* result */;
+    obj = require(5701) /* result */;
   }
   return tmp6;
 };

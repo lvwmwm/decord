@@ -1,21 +1,21 @@
-// Module ID: 14873
-// Function ID: 113484
+// Module ID: 14884
+// Function ID: 113612
 // Name: useHasExpired
-// Dependencies: [57, 31, 27, 33, 3991, 8063, 4130, 689, 1273, 5715, 3834, 4131, 2]
+// Dependencies: [57, 31, 27, 33, 3992, 8463, 4131, 689, 1273, 11465, 3835, 4132, 2]
 // Exports: useHasExpired
 
-// Module 14873 (useHasExpired)
+// Module 14884 (useHasExpired)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 const require = arg1;
 let closure_7 = 2 * Math.PI * 6;
-let obj = { duration: 1000, easing: require("module_3991").Easing.linear };
-let closure_9 = require("module_3991").createAnimatedComponent(require("inlineStyles").Circle);
+let obj = { duration: 1000, easing: require("module_3992").Easing.linear };
+let closure_9 = require("module_3992").createAnimatedComponent(require("inlineStyles").Circle);
 obj = {};
 let obj1 = { borderRadius: 20, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, position: "absolute", bottom: -require("Button").BADGE_PADDING, right: -require("Button").BADGE_PADDING, padding: require("Button").BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };
 obj.outerRing = obj1;

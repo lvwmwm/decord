@@ -1,10 +1,10 @@
-// Module ID: 13650
-// Function ID: 104823
+// Module ID: 13661
+// Function ID: 104950
 // Name: useProfileFrameSections
-// Dependencies: [57, 31, 6774, 6790, 624, 8744, 6786, 1212, 2]
+// Dependencies: [57, 31, 5770, 5786, 624, 8632, 5782, 1212, 2]
 // Exports: default
 
-// Module 13650 (useProfileFrameSections)
+// Module 13661 (useProfileFrameSections)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

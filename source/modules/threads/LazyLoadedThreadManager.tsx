@@ -1,9 +1,9 @@
-// Module ID: 5690
-// Function ID: 48984
+// Module ID: 10352
+// Function ID: 79951
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4808, 1352, 1348, 1906, 653, 1355, 686, 5604, 3952, 3965, 507, 2]
+// Dependencies: [4809, 1352, 1348, 1907, 653, 1355, 686, 5604, 3953, 3966, 507, 2]
 
-// Module 5690 (_createForOfIteratorHelperLoose)
+// Module 10352 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import closure_6 from "_isNativeReflectConstruct";
@@ -134,11 +134,11 @@ function loadThread(channelId) {
         }
         return resolved;
       } else {
-        let obj = _require(3952);
+        let obj = _require(3953);
         const _location = location;
         obj = {};
-        const RouteParam = _require(3965).RouteParam;
-        const RouteParam2 = _require(3965).RouteParam;
+        const RouteParam = _require(3966).RouteParam;
+        const RouteParam2 = _require(3966).RouteParam;
         obj.path = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         obj.exact = true;
         let closure_1 = obj.matchPath(location.pathname, obj);

@@ -1,10 +1,10 @@
-// Module ID: 6640
-// Function ID: 50997
+// Module ID: 11616
+// Function ID: 90212
 // Name: _handleBoostPress
-// Dependencies: [5, 31, 27, 4023, 653, 4968, 1851, 33, 6641, 4337, 4966, 12560, 1456, 5462, 624, 1867, 11598, 4543, 1212, 4652, 2]
+// Dependencies: [5, 31, 27, 4024, 653, 4969, 1852, 33, 11565, 4338, 4967, 11617, 1456, 5462, 624, 1868, 11564, 4544, 1212, 4653, 2]
 // Exports: default
 
-// Module 6640 (_handleBoostPress)
+// Module 11616 (_handleBoostPress)
 import PremiumGuildSubscribeModalScenes from "PremiumGuildSubscribeModalScenes";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -19,19 +19,10 @@ let closure_7;
 let closure_8;
 let closure_9;
 const require = arg1;
-async function _handleBoostPress(arg0, arg1, arg2, arg3) {
-  let obj = outer2_0(outer2_2[8]);
-  obj = {
-    source: obj,
-    analyticsLocations: arg0,
-    guildId: arg1,
-    onBack() {
-      return outer3_1(outer3_2[9]).pop();
-    }
-  };
-  obj = { page: outer2_9.PREMIUM_GUILD_USER_MODAL, section: arg2, object: outer2_7.BUTTON_CTA, objectType: outer2_8.BUY };
-  yield obj.launchGuildBoostFlowOrAlert(obj);
-  outer2_0(outer2_2[10]).closeApplyBoostModal();
+function _handleBoostPress() {
+  // CreateGeneratorClosureLongIndex (0x67)
+  const obj = callback(tmp);
+  return obj(...arguments);
 }
 ({ AnalyticsObjects: closure_7, AnalyticsObjectTypes: closure_8, AnalyticsPages: closure_9, NOOP: closure_10 } = ME);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_boosting/native/GuildBoostingSubscribeButton.tsx");

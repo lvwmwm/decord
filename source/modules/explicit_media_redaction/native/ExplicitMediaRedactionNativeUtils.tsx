@@ -1,10 +1,10 @@
-// Module ID: 13775
-// Function ID: 105589
+// Module ID: 13786
+// Function ID: 105716
 // Name: handleSensitiveMediaFilterPress
-// Dependencies: [1849, 6835, 9141, 1282, 1212, 6834, 7581, 7583, 4098, 13776, 1934, 5670, 5675, 2]
+// Dependencies: [1850, 5837, 9033, 1282, 1212, 5834, 6690, 6692, 4099, 13787, 1935, 5849, 5852, 2]
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 13775 (handleSensitiveMediaFilterPress)
+// Module 13786 (handleSensitiveMediaFilterPress)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { EXPLICIT_MEDIA_SETTINGS_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY";
 import { SearchMediaTypes } from "SearchAutocompleteSelectAnalyticsActions";
@@ -74,41 +74,41 @@ export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilt
     };
     items.push(obj);
   }
-  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13776, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
+  importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(13787, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
 };
 export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMedia(media, found) {
   if (null == found) {
     return false;
   } else {
-    const enabledHarmTypesForMessage = require(5670) /* _createForOfIteratorHelperLoose */.getEnabledHarmTypesForMessage(found);
+    const enabledHarmTypesForMessage = require(5849) /* _createForOfIteratorHelperLoose */.getEnabledHarmTypesForMessage(found);
     if (0 === enabledHarmTypesForMessage) {
       return false;
     } else {
       if (media.type === SearchMediaTypes.ATTACHMENT) {
-        let obj = { type: require(5675) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment, media: media.attachment };
+        let obj = { type: require(5852) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment, media: media.attachment };
         let tmp2 = obj;
       } else if (media.type === SearchMediaTypes.EMBED) {
-        obj = { type: require(5675) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed, media: media.embed };
+        obj = { type: require(5852) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed, media: media.embed };
         tmp2 = obj;
       } else {
         tmp2 = null;
         if (media.type === SearchMediaTypes.COMPONENT) {
-          obj = { type: require(5675) /* ContentHarmTypeChannel */.ObscuredMediaTypes.GenericMedia, media: media.unfurledMediaItem };
+          obj = { type: require(5852) /* ContentHarmTypeChannel */.ObscuredMediaTypes.GenericMedia, media: media.unfurledMediaItem };
           tmp2 = obj;
         }
       }
       let tmp7 = null != tmp2;
       if (tmp7) {
-        let result = require(5670) /* _createForOfIteratorHelperLoose */.isMediaObscuredForHarmTypes(tmp2, enabledHarmTypesForMessage);
+        let result = require(5849) /* _createForOfIteratorHelperLoose */.isMediaObscuredForHarmTypes(tmp2, enabledHarmTypesForMessage);
         if (result) {
-          result = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.shouldAgeVerifyForExplicitMedia();
-          const obj4 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
+          result = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.shouldAgeVerifyForExplicitMedia();
+          const obj4 = require(5834) /* timeoutAttachmentsAndEmbedsForMessage */;
         }
         tmp7 = result;
-        const obj3 = require(5670) /* _createForOfIteratorHelperLoose */;
+        const obj3 = require(5849) /* _createForOfIteratorHelperLoose */;
       }
       return tmp7;
     }
-    const obj5 = require(5670) /* _createForOfIteratorHelperLoose */;
+    const obj5 = require(5849) /* _createForOfIteratorHelperLoose */;
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 8494
-// Function ID: 67649
+// Module ID: 8254
+// Function ID: 66303
 // Name: getStatusLabel
-// Dependencies: [1352, 3767, 1849, 653, 1212, 4320, 4623, 3969, 7906, 2]
+// Dependencies: [1352, 3768, 1850, 653, 1212, 4321, 4624, 3970, 7853, 2]
 // Exports: default, getChannelA11yHint
 
-// Module 8494 (getStatusLabel)
+// Module 8254 (getStatusLabel)
 import { THREAD_CHANNEL_TYPES } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -14,13 +14,13 @@ let closure_6;
 let closure_7;
 function getStatusLabel(status) {
   if (constants2.ONLINE === status) {
-    return require(3969) /* conceal */.humanizeStatus(constants2.ONLINE);
+    return require(3970) /* conceal */.humanizeStatus(constants2.ONLINE);
   } else if (constants2.IDLE === status) {
-    return require(3969) /* conceal */.humanizeStatus(constants2.IDLE);
+    return require(3970) /* conceal */.humanizeStatus(constants2.IDLE);
   } else if (constants2.DND === status) {
-    return require(3969) /* conceal */.humanizeStatus(constants2.DND);
+    return require(3970) /* conceal */.humanizeStatus(constants2.DND);
   } else if (constants2.INVISIBLE === status) {
-    return require(3969) /* conceal */.humanizeStatus(constants2.INVISIBLE);
+    return require(3970) /* conceal */.humanizeStatus(constants2.INVISIBLE);
   } else {
     return "";
   }
@@ -54,9 +54,9 @@ export default function getChannelA11yLabel(mentionCount) {
     flag = false;
   }
   const voiceChannelStartTime = mentionCount.voiceChannelStartTime;
-  let obj = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+  let obj = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
   const channelName = obj.computeChannelName(channel, closure_5, _isNativeReflectConstruct);
-  if (importDefault(4623)(channel)) {
+  if (importDefault(4624)(channel)) {
     const intl = require(1212) /* getSystemLocale */.intl;
     const stringResult = intl.string(require(1212) /* getSystemLocale */.t["4qvAtn"]);
   }
@@ -138,7 +138,7 @@ export default function getChannelA11yLabel(mentionCount) {
       if (null != voiceChannelStartTime) {
         const intl7 = require(1212) /* getSystemLocale */.intl;
         const obj5 = {};
-        let obj6 = require(7906) /* calculateTimestampDurations */;
+        let obj6 = require(7853) /* calculateTimestampDurations */;
         obj6 = { start: voiceChannelStartTime };
         const _Date = Date;
         obj5.duration = obj6.formatActiveA11yTimestamp(obj6, Date.now());

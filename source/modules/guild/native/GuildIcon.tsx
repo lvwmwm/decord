@@ -1,7 +1,7 @@
 // Module ID: 5513
-// Function ID: 46955
+// Function ID: 46960
 // Name: makeSizeStyle
-// Dependencies: [57, 31, 5514, 1391, 653, 33, 4130, 689, 1832, 5122, 5085, 5515, 290, 2]
+// Dependencies: [57, 31, 5514, 1391, 653, 33, 4131, 689, 1832, 5122, 5085, 5515, 290, 2]
 
 // Module 5513 (makeSizeStyle)
 import _slicedToArray from "_slicedToArray";

@@ -1,10 +1,10 @@
-// Module ID: 15757
-// Function ID: 121473
+// Module ID: 15768
+// Function ID: 121642
 // Name: keyExtractor
-// Dependencies: [31, 653, 33, 4130, 5052, 689, 1273, 1212, 4660, 4098, 3982, 4126, 15758, 5160, 5189, 2]
+// Dependencies: [31, 653, 33, 4131, 5053, 689, 1273, 1212, 4661, 4099, 3983, 4127, 15769, 5159, 5189, 2]
 // Exports: default
 
-// Module 15757 (keyExtractor)
+// Module 15768 (keyExtractor)
 import result from "result";
 import { Fonts } from "ME";
 import jsxProd from "jsxProd";
@@ -51,8 +51,8 @@ function FriendsEmptyComponent() {
   obj1.style = items1;
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl4.string(require(1212) /* getSystemLocale */.t.a7FVbE);
-  obj.children = callback(require(4126) /* Text */.Text, obj1);
-  items[1] = callback(require(4660) /* PressableBase */.PressableOpacity, obj);
+  obj.children = callback(require(4127) /* Text */.Text, obj1);
+  items[1] = callback(require(4661) /* PressableBase */.PressableOpacity, obj);
   obj.children = items;
   return callback2(closure_5, obj);
 }

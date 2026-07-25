@@ -1,10 +1,10 @@
-// Module ID: 6779
-// Function ID: 53407
+// Module ID: 5775
+// Function ID: 50681
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 102, 18, 1875, 1876, 2]
+// Dependencies: [6, 7, 15, 17, 102, 18, 1876, 1877, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 6779 (_isNativeReflectConstruct)
+// Module 5775 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import CollectiblesItemType from "CollectiblesItemType";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

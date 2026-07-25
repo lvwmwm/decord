@@ -1,10 +1,10 @@
-// Module ID: 8409
-// Function ID: 66888
+// Module ID: 8167
+// Function ID: 65539
 // Name: openCreateOrEditGuildEventModal
-// Dependencies: [5, 31, 1348, 1907, 1838, 3758, 6758, 1354, 8398, 653, 33, 4337, 44, 8410, 1934, 4098, 8443, 8497, 8513, 8523, 4472, 8388, 3831, 1212, 8524, 8504, 8394, 8525, 8406, 5490, 3830, 8526, 7540, 8397, 8395, 8390, 12225, 7689, 3803, 5489, 1450, 12226, 5495, 2]
+// Dependencies: [5, 31, 1348, 1908, 1838, 3759, 5751, 1354, 8156, 653, 33, 4338, 44, 8168, 1935, 4099, 8201, 8257, 8273, 8283, 4473, 8146, 3832, 1212, 8284, 8264, 8152, 8285, 8164, 5490, 3831, 8286, 6636, 8155, 8153, 8148, 12201, 7633, 3804, 5489, 1450, 12202, 5495, 2]
 // Exports: closeGuildEventListActionSheet, openGuildEventListActionSheet, openShareEvent, showGuildEventModeratorActionSheet, transitionToEventDetailsFromInvite
 
-// Module 8409 (openCreateOrEditGuildEventModal)
+// Module 8167 (openCreateOrEditGuildEventModal)
 import closure_3 from "_isNativeReflectConstruct";
 import showInstantInviteActionSheet from "showInstantInviteActionSheet";
 import closure_5 from "_isNativeReflectConstruct";
@@ -40,31 +40,31 @@ function openCreateOrEditGuildEventModal(guild, arg1) {
   }
   if (null != recurrenceId) {
     importDefault(44)(null != guildEvent, "recurrence editing requires a guild event");
-    let obj = importDefault(4337);
+    let obj = importDefault(4338);
     obj = { guildEvent, recurrenceId, onCloseModal: handleClose };
-    obj.pushLazy(require(1934) /* maybeLoadBundle */(8410, dependencyMap.paths), obj, closure_13);
+    obj.pushLazy(require(1935) /* maybeLoadBundle */(8168, dependencyMap.paths), obj, closure_13);
   } else {
-    importDefault(4098).hideAllActionSheets();
-    const obj3 = importDefault(4098);
+    importDefault(4099).hideAllActionSheets();
+    const obj3 = importDefault(4099);
     obj = { guild, targetChannel: tmp, initialGuildEvent: guildEvent, onCloseModal: handleClose };
-    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(8443, dependencyMap.paths), obj, closure_13);
-    const obj4 = importDefault(4337);
+    importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(8201, dependencyMap.paths), obj, closure_13);
+    const obj4 = importDefault(4338);
   }
 }
 function openStartGuildEventModal(event, recurrenceId, onCloseActionSheet) {
-  let obj = importDefault(4098);
+  let obj = importDefault(4099);
   obj.hideAllActionSheets();
   obj = { event, recurrenceId, onCloseActionSheet };
-  importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(8513, dependencyMap.paths), obj, closure_15);
+  importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(8273, dependencyMap.paths), obj, closure_15);
 }
 function openDeleteGuildEventActionSheet(eventId, guildId, recurrenceId) {
-  let obj = require(4472) /* useAlertStore */;
+  let obj = require(4473) /* useAlertStore */;
   obj = { eventId, guildId, recurrenceId };
   obj.openAlert("DeleteEventAlert", jsx(React.lazy(() => outer1_0(outer1_2[14])(outer1_2[19], outer1_2.paths)), { eventId, guildId, recurrenceId }));
 }
 function updateRsvp(arg0, arg1, arg2, arg3) {
   let closure_0 = arg3;
-  importDefault(8388).updateRsvp(arg0, arg1, arg2, arg3, (arg0) => {
+  importDefault(8146).updateRsvp(arg0, arg1, arg2, arg3, (arg0) => {
     let tmp2 = tmp;
     if (null == arg0) {
       tmp2 = callback === outer1_12.INTERESTED;
@@ -101,7 +101,7 @@ function handleGuildScheduledEventRsvp(id, closure_1, guild_id) {
   const _require = id;
   closure_1 = guild_id;
   const dependencyMap = arg3;
-  let obj = _require(8394);
+  let obj = _require(8152);
   obj = {
     eventId: id,
     recurrenceId: closure_1,
@@ -130,12 +130,12 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export { openCreateOrEditGuildEventModal };
 export const openGuildEventListActionSheet = function openGuildEventListActionSheet(outer1_0) {
-  let obj = importDefault(4098);
+  let obj = importDefault(4099);
   obj = { guild: outer1_0 };
-  obj.openLazy(require(1934) /* maybeLoadBundle */(8497, dependencyMap.paths), closure_14, obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(8257, dependencyMap.paths), closure_14, obj);
 };
 export const closeGuildEventListActionSheet = function closeGuildEventListActionSheet() {
-  importDefault(4098).hideActionSheet(closure_14);
+  importDefault(4099).hideActionSheet(closure_14);
 };
 export { openStartGuildEventModal };
 export { openDeleteGuildEventActionSheet };
@@ -147,7 +147,7 @@ export const openShareEvent = function openShareEvent(event, arg1) {
     channel = defaultChannel.getDefaultChannel(event.guild_id);
   }
   if (null != channel) {
-    let obj = require(8406) /* canEveryoneRoleViewEvent */;
+    let obj = require(8164) /* canEveryoneRoleViewEvent */;
     const result = obj.isGuildEventInvitable(event);
     if (result) {
       const guild = store.getGuild(event.guild_id);
@@ -158,15 +158,15 @@ export const openShareEvent = function openShareEvent(event, arg1) {
       if (null != vanityURLCode) {
         if ("" !== guild.vanityURLCode) {
           if (!closure_8.can(constants2.CREATE_INSTANT_INVITE, channel)) {
-            const obj4 = require(8526) /* showInstantInviteActionSheet */;
+            const obj4 = require(8286) /* showInstantInviteActionSheet */;
             obj = { guildScheduledEventId: event.id, stackingBehavior: "stack" };
             const result1 = obj4.showVanityUrlInviteActionSheet(guild, channel, constants.GUILD_SCHEDULED_EVENT, obj);
           }
         }
       }
       obj = { createInvite: result, guildScheduledEventId: event.id, stackingBehavior: "stack", source: constants.GUILD_SCHEDULED_EVENT };
-      const result2 = require(8526) /* showInstantInviteActionSheet */.showInstantInviteActionSheet(channel, obj);
-      const obj6 = require(8526) /* showInstantInviteActionSheet */;
+      const result2 = require(8286) /* showInstantInviteActionSheet */.showInstantInviteActionSheet(channel, obj);
+      const obj6 = require(8286) /* showInstantInviteActionSheet */;
     } else {
       let tmp6 = null != arg1;
       if (tmp6) {
@@ -175,17 +175,17 @@ export const openShareEvent = function openShareEvent(event, arg1) {
       if (tmp6) {
         let obj1 = require(5490) /* _copy */;
         obj1.copy(arg1);
-        require(3830) /* presentAddedFriendToast */.presentLinkCopied();
-        const obj3 = require(3830) /* presentAddedFriendToast */;
+        require(3831) /* presentAddedFriendToast */.presentLinkCopied();
+        const obj3 = require(3831) /* presentAddedFriendToast */;
       }
     }
   } else {
     obj1 = { key: "ERROR_OCCURRED_TRY_AGAIN" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.content = intl.string(require(1212) /* getSystemLocale */.t.fEptJP);
-    obj1.icon = importDefault(8524);
-    importDefault(3831).open(obj1);
-    const obj8 = importDefault(3831);
+    obj1.icon = importDefault(8284);
+    importDefault(3832).open(obj1);
+    const obj8 = importDefault(3832);
   }
 };
 export const transitionToEventDetailsFromInvite = function transitionToEventDetailsFromInvite() {

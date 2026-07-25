@@ -1,9 +1,9 @@
-// Module ID: 15840
-// Function ID: 122241
+// Module ID: 15851
+// Function ID: 122410
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 1347, 4143, 10568, 1194, 1348, 4177, 3758, 1849, 4203, 653, 4148, 8938, 33, 4130, 689, 566, 15841, 4320, 8955, 8917, 5515, 4126, 8970, 1212, 4652, 12, 3831, 15838, 8376, 5165, 5170, 14442, 7687, 5171, 686, 5502, 3803, 8882, 4323, 7685, 10737, 4098, 15842, 1934, 8940, 8958, 15843, 15831, 15789, 10465, 8904, 15844, 5791, 15845, 8909, 15846, 7496, 10717, 10225, 10226, 2]
+// Dependencies: [31, 1347, 4144, 10455, 1194, 1348, 4178, 3759, 1850, 4204, 653, 4149, 8826, 33, 4131, 689, 566, 15852, 4321, 8843, 8805, 5515, 4127, 8858, 1212, 4653, 12, 3832, 15849, 8134, 5164, 5170, 14453, 7631, 5171, 686, 5502, 3804, 8770, 4324, 7627, 10701, 4099, 15853, 1935, 8828, 8846, 15854, 15842, 15800, 10399, 8792, 15855, 8943, 15856, 8797, 15857, 6580, 10681, 10158, 10159, 2]
 
-// Module 15840 (_createForOfIteratorHelperLoose)
+// Module 15851 (_createForOfIteratorHelperLoose)
 import importAllResult from "TableRowIcon";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -209,12 +209,12 @@ function ShareActivityLogsButton() {
     }
   }, []);
   let obj = { onPress: callback };
-  obj = { IconComponent: require(14442) /* WrenchIcon */.WrenchIcon, source: importDefault(7687) };
+  obj = { IconComponent: require(14453) /* WrenchIcon */.WrenchIcon, source: importDefault(7631) };
   obj.icon = callback(require(5170) /* TableRowIcon */.TableRowIcon, obj);
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.iQzQs3);
   obj.trailing = callback(require(5171) /* TableRowArrow */.TableRowArrow, {});
-  return callback(require(5165) /* TableRowInner */.TableRow, obj);
+  return callback(require(5164) /* TableRowInner */.TableRow, obj);
 }
 function ActivityDebugToggle() {
   let obj = require(566) /* initialize */;
@@ -226,7 +226,7 @@ function ActivityDebugToggle() {
     obj.dispatch(obj);
   }, []);
   obj = {};
-  obj = { IconComponent: require(14442) /* WrenchIcon */.WrenchIcon, source: importDefault(7687) };
+  obj = { IconComponent: require(14453) /* WrenchIcon */.WrenchIcon, source: importDefault(7631) };
   obj.icon = callback(require(5170) /* TableRowIcon */.TableRowIcon, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityHint = intl.string(require(1212) /* getSystemLocale */.t["qv5/SP"]);

@@ -1,8 +1,8 @@
-// Module ID: 10237
-// Function ID: 78977
-// Dependencies: [4325, 686, 5075, 2]
+// Module ID: 10170
+// Function ID: 78612
+// Dependencies: [4326, 686, 5076, 2]
 
-// Module 10237
+// Module 10170
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/ChannelCollapseActionCreators.tsx");
@@ -14,7 +14,7 @@ export default {
     obj.dispatch(obj);
   },
   toggleCollapseGuild(id) {
-    let obj = importDefault(5075);
+    let obj = importDefault(5076);
     obj = { hide_muted_channels: !guildCollapsed.isGuildCollapsed(id) };
     const result = obj.saveUserGuildSettings(id, obj);
     obj = { type: "GUILD_TOGGLE_COLLAPSE_MUTED", guildId: id };

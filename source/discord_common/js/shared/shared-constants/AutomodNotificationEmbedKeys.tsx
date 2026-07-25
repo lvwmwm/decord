@@ -1,9 +1,9 @@
-// Module ID: 6748
-// Function ID: 52551
+// Module ID: 5744
+// Function ID: 49864
 // Name: AutomodNotificationEmbedKeys
 // Dependencies: [2]
 
-// Module 6748 (AutomodNotificationEmbedKeys)
+// Module 5744 (AutomodNotificationEmbedKeys)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodNotificationEmbedKeys.tsx");
 
 export const AutomodNotificationEmbedKeys = { JOIN_ATTEMPTS: "join_attempts", RAID_DATETIME: "raid_datetime", DMS_SENT: "dms_sent", RAID_TYPE: "raid_type", RESOLVED_REASON: "resolved_reason", NOTIFICATION_TYPE: "notification_type", ACTION_BY_USER_ID: "action_by_user_id", DECISION_ID: "decision_id", SUSPICIOUS_MENTION_ACTIVITY_UNTIL: "suspicious_mention_activity_until" };

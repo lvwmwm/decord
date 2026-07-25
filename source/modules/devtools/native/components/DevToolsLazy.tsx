@@ -1,10 +1,10 @@
-// Module ID: 13554
-// Function ID: 104237
+// Module ID: 13565
+// Function ID: 104364
 // Name: NativeModules
-// Dependencies: [5, 31, 27, 6960, 6959, 33, 477, 13555, 13556, 1934, 566, 13550, 14756, 2]
+// Dependencies: [5, 31, 27, 5951, 5950, 33, 477, 13566, 13567, 1935, 566, 13561, 14767, 2]
 // Exports: default
 
-// Module 13554 (NativeModules)
+// Module 13565 (NativeModules)
 import jsxProd from "jsxProd";
 import result from "result";
 import { NativeModules } from "get ActivityIndicator";
@@ -47,10 +47,10 @@ export default function DevToolsLazy() {
     }
   });
   const obj2 = stateFromStores(566);
-  const keyCommands = stateFromStores(13550).useKeyCommands(stateFromStores ? items : []);
+  const keyCommands = stateFromStores(13561).useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(stateFromStores(14756).default, {});
+      return jsx(stateFromStores(14767).default, {});
     }
   }
   return null;

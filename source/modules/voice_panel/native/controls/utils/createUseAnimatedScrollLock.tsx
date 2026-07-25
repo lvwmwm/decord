@@ -1,12 +1,12 @@
-// Module ID: 11252
-// Function ID: 87605
+// Module ID: 11213
+// Function ID: 87250
 // Name: context
-// Dependencies: [31, 477, 3991, 2]
+// Dependencies: [31, 477, 3992, 2]
 // Exports: createUseAnimatedScrollLock
 
-// Module 11252 (context)
+// Module 11213 (context)
 import set from "set";
-import set from "module_3991";
+import set from "module_3992";
 
 const require = arg1;
 set = set.isAndroid();

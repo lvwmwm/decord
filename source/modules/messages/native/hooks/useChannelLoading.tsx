@@ -1,10 +1,10 @@
-// Module ID: 10888
-// Function ID: 84545
+// Module ID: 10838
+// Function ID: 84135
 // Name: useChannelLoading
-// Dependencies: [57, 31, 10889, 9348, 4560, 2]
+// Dependencies: [57, 31, 10839, 9241, 4561, 2]
 // Exports: default
 
-// Module 10888 (useChannelLoading)
+// Module 10838 (useChannelLoading)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -28,7 +28,7 @@ export default function useChannelLoading(arg0) {
     tmp = new tmp("Messages");
     return tmp;
   }), 1)[0];
-  importDefault(4560)(() => {
+  importDefault(4561)(() => {
     startOrCancelLatestMessagesLoad(false);
     return () => {
       outer1_4.cancel();

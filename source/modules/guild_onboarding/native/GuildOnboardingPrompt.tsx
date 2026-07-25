@@ -1,7 +1,7 @@
 // Module ID: 5123
-// Function ID: 44410
+// Function ID: 44418
 // Name: PromptHeader
-// Dependencies: [57, 31, 27, 4991, 5082, 1838, 5058, 5055, 1852, 33, 4130, 5084, 689, 1456, 566, 1557, 3834, 666, 5121, 5124, 4126, 1212, 4543, 5128, 4554, 668, 5065, 5146, 5147, 5151, 1392, 4098, 5156, 1934, 4660, 5452, 2]
+// Dependencies: [57, 31, 27, 4992, 5082, 1838, 5059, 5056, 1853, 33, 4131, 5084, 689, 1456, 566, 1557, 3835, 666, 5121, 5124, 4127, 1212, 4544, 5127, 4555, 668, 5066, 5145, 5146, 5150, 1392, 4099, 5155, 1935, 4661, 5452, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
 // Module 5123 (PromptHeader)
@@ -36,7 +36,7 @@ function PromptHeader(currentPrompt) {
   obj = { style: tmp.countText, variant: "text-sm/medium", color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.isV0NW, { currentQuestion: currentPromptIndex + 1, questionCount: numberOfPrompts });
-  const items = [callback2(require(4126) /* Text */.Text, obj), ];
+  const items = [callback2(require(4127) /* Text */.Text, obj), ];
   let tmp5 = null;
   if (null != currentPrompt) {
     tmp5 = null;
@@ -47,7 +47,7 @@ function PromptHeader(currentPrompt) {
       const obj4 = { variant: "text-sm/medium", color: "text-brand" };
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.Ur8Vrt);
-      items1[1] = callback2(require(4126) /* Text */.Text, obj4);
+      items1[1] = callback2(require(4127) /* Text */.Text, obj4);
       obj2.children = items1;
       tmp5 = callback3(closure_17, obj2);
     }
@@ -56,7 +56,7 @@ function PromptHeader(currentPrompt) {
   obj.children = items;
   const items2 = [callback3(closure_6, obj), ];
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: currentPrompt.title };
-  items2[1] = callback2(require(4126) /* Text */.Text, obj5);
+  items2[1] = callback2(require(4127) /* Text */.Text, obj5);
   obj.children = items2;
   return callback3(closure_17, obj);
 }
@@ -185,7 +185,7 @@ function PromptFooter(lastPrompt) {
 }
 function formattedNameHighlight(children) {
   const obj = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children };
-  return callback2(require(4126) /* Text */.Text, obj, arg1);
+  return callback2(require(4127) /* Text */.Text, obj, arg1);
 }
 function DropdownOption(option) {
   option = option.option;
@@ -231,8 +231,8 @@ function DropdownOption(option) {
     str = name;
   }
   obj1.name = str;
-  obj.children = callback2(importDefault(5151), obj1);
-  const items1 = [callback2(closure_6, obj), callback2(option(4126).Text, { variant: "text-md/semibold", children: option.title })];
+  obj.children = callback2(importDefault(5150), obj1);
+  const items1 = [callback2(closure_6, obj), callback2(option(4127).Text, { variant: "text-md/semibold", children: option.title })];
   obj.children = items1;
   return closure_16(closure_6, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 16016
-// Function ID: 123653
+// Module ID: 16027
+// Function ID: 123821
 // Name: RestrictedHoursLogoutBlockingLayer
-// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 5584, 1557, 16017, 566, 3991, 4131, 1212, 2198, 7613, 16018, 3842, 4126, 5517, 16019, 5588, 16015, 4540, 11100, 2]
+// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 5584, 1557, 16028, 566, 3992, 4132, 1212, 2199, 6725, 16029, 3843, 4127, 5517, 16030, 5588, 16026, 4541, 11059, 2]
 // Exports: default
 
-// Module 16016 (RestrictedHoursLogoutBlockingLayer)
+// Module 16027 (RestrictedHoursLogoutBlockingLayer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -196,7 +196,7 @@ let closure_14 = { code: "function RestrictedHoursModalTsx3(){const{contentOpaci
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/parent_tools/native/RestrictedHoursModal.tsx");
 
 export default function RestrictedHoursModal() {
-  const tmp = importDefault(16019)();
+  const tmp = importDefault(16030)();
   const require = tmp;
   importDefault = React.useRef(false);
   const dependencyMap = React.useRef(true);
@@ -215,11 +215,11 @@ export default function RestrictedHoursModal() {
       current = ref.current;
     }
     if (!current) {
-      const result = tmp(16015).closeRestrictedHoursModal();
-      const obj = tmp(16015);
+      const result = tmp(16026).closeRestrictedHoursModal();
+      const obj = tmp(16026);
     }
   }, items);
-  importDefault(4540)(() => true);
+  importDefault(4541)(() => true);
   const tmp4 = (function useScreens(result, arg1) {
     let closure_1 = arg1;
     const items = [result, arg1];
@@ -247,7 +247,7 @@ export default function RestrictedHoursModal() {
       const logoutResult = ref(5588).logout("restricted_hours");
     }
   }, []), tmp3[0]);
-  return callback2(require(11100) /* Modal */.Modal, {
+  return callback2(require(11059) /* Modal */.Modal, {
     screens: (function useScreens(result, arg1) {
       let closure_1 = arg1;
       const items = [result, arg1];

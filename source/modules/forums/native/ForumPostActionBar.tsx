@@ -1,10 +1,10 @@
-// Module ID: 10458
-// Function ID: 80532
+// Module ID: 10392
+// Function ID: 80201
 // Name: ForumPostActionBar
-// Dependencies: [57, 31, 27, 3759, 3760, 1348, 653, 33, 4130, 689, 566, 5681, 1450, 9348, 8868, 10459, 4660, 1212, 4082, 4126, 10234, 4074, 2]
+// Dependencies: [57, 31, 27, 3760, 3761, 1348, 653, 33, 4131, 689, 566, 6012, 1450, 9241, 8756, 10393, 4661, 1212, 4083, 4127, 10167, 4075, 2]
 // Exports: default
 
-// Module 10458 (ForumPostActionBar)
+// Module 10392 (ForumPostActionBar)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -36,13 +36,13 @@ export default function ForumPostActionBar(channel) {
   channel = channel.channel;
   let stateFromStores1;
   let items9 = function handleFollow() {
-    const result = channel(9348).handleToggleFollowForumPost(channel, stateFromStores1);
+    const result = channel(9241).handleToggleFollowForumPost(channel, stateFromStores1);
   };
   const tmp = _createForOfIteratorHelperLoose();
   let obj = channel(566);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getChannel(channel.parent_id));
-  let obj1 = channel(5681);
+  let obj1 = channel(6012);
   const firstMessage = obj1.useFirstForumPostMessage(channel).firstMessage;
   let obj2 = channel(566);
   const items1 = [closure_7];
@@ -64,7 +64,7 @@ export default function ForumPostActionBar(channel) {
   const callback = React.useCallback((nativeEvent) => {
     callback(width - nativeEvent.nativeEvent.layout.width - 40);
   }, items3);
-  let obj4 = channel(8868);
+  let obj4 = channel(8756);
   obj = {};
   const items4 = [tmp.actionBarContainer, obj4.useGradientTop()];
   obj.style = items4;
@@ -72,7 +72,7 @@ export default function ForumPostActionBar(channel) {
   if (tmp9) {
     obj = { style: tmp.reactionRow };
     obj1 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: tmp5[0] };
-    obj.children = callback(channel(10459).ForumPostActionBarReactions, obj1);
+    obj.children = callback(channel(10393).ForumPostActionBarReactions, obj1);
     tmp9 = callback(View, obj);
   }
   const items5 = [tmp9, ];
@@ -90,14 +90,14 @@ export default function ForumPostActionBar(channel) {
     obj3.onPress = function onPress() {
       const guildId = channel.getGuildId();
       if (null != guildId) {
-        let obj = channel(9348);
+        let obj = channel(9241);
         obj = { section: outer1_9.CHANNEL_HEADER };
         const result = obj.handleCopyLinkForumPost(guildId, channel.id, obj);
       }
     };
     obj4 = { size: "xs" };
-    obj3.children = callback(channel(4074).LinkIcon, obj4);
-    items7[1] = callback(channel(4660).PressableOpacity, obj3);
+    obj3.children = callback(channel(4075).LinkIcon, obj4);
+    items7[1] = callback(channel(4661).PressableOpacity, obj3);
     obj2.children = items7;
     items5[1] = tmp14(tmp15, obj2);
     obj.children = items5;
@@ -113,8 +113,8 @@ export default function ForumPostActionBar(channel) {
       obj5.style = tmp.actionButton;
       obj5.onPress = items9;
       intl = callback;
-      items9 = [callback(tmp20(4082).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
-      Text = tmp20(4126).Text;
+      items9 = [callback(tmp20(4083).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
+      Text = tmp20(4127).Text;
       const obj6 = { style: null, variant: "text-sm/semibold", color: "text-brand" };
       const items10 = [tmp.buttonText];
       obj6.style = items10;
@@ -130,15 +130,15 @@ export default function ForumPostActionBar(channel) {
       obj5.style = tmp.actionButton;
       obj5.onPress = items9;
       const obj7 = { size: "xs" };
-      const items11 = [callback(tmp20(10234).BellIcon, obj7), ];
+      const items11 = [callback(tmp20(10167).BellIcon, obj7), ];
       const obj8 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "interactive-text-default" };
       const intl2 = tmp20(tmp21[num3]).intl;
       obj8.children = intl2.string(tmp20(tmp21[num3]).t["0rQinA"]);
-      items11[1] = callback(tmp20(4126).Text, obj8);
+      items11[1] = callback(tmp20(4127).Text, obj8);
       obj5.children = items11;
       tmp23 = obj5;
     }
-    closure_11(channel(4660).PressableOpacity, tmp23);
+    closure_11(channel(4661).PressableOpacity, tmp23);
     const tmp17 = closure_11;
   }
 };

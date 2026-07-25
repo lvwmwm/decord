@@ -1,17 +1,17 @@
-// Module ID: 14915
-// Function ID: 113715
+// Module ID: 14926
+// Function ID: 113843
 // Name: toNeighbor
-// Dependencies: [4970, 4972, 2]
+// Dependencies: [4971, 4973, 2]
 // Exports: default
 
-// Module 14915 (toNeighbor)
+// Module 14926 (toNeighbor)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 function toNeighbor(node) {
   let tmp = null;
   if (null != node) {
-    const obj = { node, isFolder: node.type === require(4972) /* randomFolderId */.GuildsNodeType.FOLDER };
+    const obj = { node, isFolder: node.type === require(4973) /* randomFolderId */.GuildsNodeType.FOLDER };
     tmp = obj;
   }
   return tmp;
@@ -22,7 +22,7 @@ export default function getGuildBarNeighbors(arg0) {
   guildsTree = guildsTree.getGuildsTree();
   const node = guildsTree.getNode(arg0);
   if (null != node) {
-    if (node.type === require(4972) /* randomFolderId */.GuildsNodeType.GUILD) {
+    if (node.type === require(4973) /* randomFolderId */.GuildsNodeType.GUILD) {
       if (null != node.parentId) {
         let root = guildsTree.getNode(node.parentId);
       } else {
@@ -38,7 +38,7 @@ export default function getGuildBarNeighbors(arg0) {
         } else {
           const obj = {};
           let tmp4 = null;
-          if (root.type === require(4972) /* randomFolderId */.GuildsNodeType.FOLDER) {
+          if (root.type === require(4973) /* randomFolderId */.GuildsNodeType.FOLDER) {
             tmp4 = root;
           }
           obj.containingFolder = tmp4;

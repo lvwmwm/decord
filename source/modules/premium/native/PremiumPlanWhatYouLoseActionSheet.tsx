@@ -1,10 +1,10 @@
-// Module ID: 7403
-// Function ID: 59568
+// Module ID: 6479
+// Function ID: 57987
 // Name: WhatYouLoseItem
-// Dependencies: [31, 27, 1851, 33, 4130, 689, 5085, 4126, 3776, 5462, 7404, 44, 7409, 1212, 7410, 7411, 7412, 7413, 4098, 5187, 6670, 4543, 7156, 2]
+// Dependencies: [31, 27, 1852, 33, 4131, 689, 5085, 4127, 3777, 5462, 6480, 44, 6485, 1212, 6486, 6151, 6487, 6488, 4099, 5187, 6172, 4544, 6238, 2]
 // Exports: default
 
-// Module 7403 (WhatYouLoseItem)
+// Module 6479 (WhatYouLoseItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -22,7 +22,7 @@ function WhatYouLoseItem(arg0) {
   let obj = { style: tmp.item };
   const items = [callback(importDefault(5085), { source: imageSource }), ];
   obj = { variant: "text-md/medium", style: tmp.itemLabel, children: text };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }

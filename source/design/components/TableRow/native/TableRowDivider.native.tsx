@@ -1,7 +1,7 @@
 // Module ID: 5125
-// Function ID: 44441
+// Function ID: 44449
 // Name: TableRowDivider
-// Dependencies: [31, 27, 5126, 33, 4130, 5127, 689, 4973, 1324, 3834, 2]
+// Dependencies: [31, 27, 5126, 33, 4131, 689, 4974, 1324, 3835, 2]
 // Exports: TableRowDivider
 
 // Module 5125 (TableRowDivider)
@@ -20,11 +20,11 @@ let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2) 
   }
   let obj = {};
   obj = {};
-  let CARD_PRIMARY_BG;
+  let prop;
   if (!arg1) {
-    CARD_PRIMARY_BG = require(5127) /* createCardBackgroundToken */.CARD_PRIMARY_BG;
+    prop = importDefault(689).colors.TABLEROW_BACKGROUND_DEFAULT;
   }
-  obj.backgroundColor = CARD_PRIMARY_BG;
+  obj.backgroundColor = prop;
   obj.height = tmp;
   obj.paddingStart = num;
   obj.marginTop = -tmp;
@@ -33,7 +33,7 @@ let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2) 
   if (arg1) {
     let DIVIDER_BACKGROUND = importDefault(689).colors.BORDER_SUBTLE;
   } else {
-    DIVIDER_BACKGROUND = require(4973) /* result */.DIVIDER_BACKGROUND;
+    DIVIDER_BACKGROUND = require(4974) /* result */.DIVIDER_BACKGROUND;
   }
   obj.backgroundColor = DIVIDER_BACKGROUND;
   obj.divider = obj;
@@ -46,7 +46,7 @@ export const TableRowDivider = function TableRowDivider(adjustSpacingForIcon) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const tmp2 = callback(flag, importDefault(1324)("TableRowDivider"), obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_DIVIDER_PADDING));
   obj = { style: tmp2.container, children: <View {...obj} /> };
   obj = { style: tmp2.divider };

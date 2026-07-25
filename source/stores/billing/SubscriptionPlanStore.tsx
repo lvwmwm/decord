@@ -1,9 +1,9 @@
-// Module ID: 3781
-// Function ID: 29354
+// Module ID: 3782
+// Function ID: 29365
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3777, 653, 1851, 1916, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3778, 653, 1852, 1917, 21, 566, 686, 2]
 
-// Module 3781 (_isNativeReflectConstruct)
+// Module 3782 (_isNativeReflectConstruct)
 import closure_3 from "ME";
 import closure_4 from "GuildFeatures";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -150,15 +150,15 @@ function addSubscriptionPlanFromServer(subscription_plan) {
   addSubscriptionPlan(_isNativeReflectConstruct.createFromServer(subscription_plan));
 }
 function reset() {
-  require(1916) /* areArraysShallowlyEqual */.clearObject(closure_15);
-  const obj = require(1916) /* areArraysShallowlyEqual */;
-  require(1916) /* areArraysShallowlyEqual */.clearObject(closure_16);
+  require(1917) /* areArraysShallowlyEqual */.clearObject(closure_15);
+  const obj = require(1917) /* areArraysShallowlyEqual */;
+  require(1917) /* areArraysShallowlyEqual */.clearObject(closure_16);
   set.clear();
   set1.clear();
-  const obj2 = require(1916) /* areArraysShallowlyEqual */;
-  require(1916) /* areArraysShallowlyEqual */.clearObject(closure_19);
-  const obj3 = require(1916) /* areArraysShallowlyEqual */;
-  require(1916) /* areArraysShallowlyEqual */.clearObject(closure_20);
+  const obj2 = require(1917) /* areArraysShallowlyEqual */;
+  require(1917) /* areArraysShallowlyEqual */.clearObject(closure_19);
+  const obj3 = require(1917) /* areArraysShallowlyEqual */;
+  require(1917) /* areArraysShallowlyEqual */.clearObject(closure_20);
   initializeNonePlans();
 }
 ({ CurrencyCodes: closure_9, PriceSetAssignmentPurchaseTypes: closure_10 } = ME);

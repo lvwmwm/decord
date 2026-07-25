@@ -1,10 +1,10 @@
-// Module ID: 16613
-// Function ID: 129546
+// Module ID: 16624
+// Function ID: 129714
 // Name: SafetyFlowTaskScreen
-// Dependencies: [31, 33, 4130, 7613, 7614, 4541, 4126, 11098, 16611, 9937, 2]
+// Dependencies: [31, 33, 4131, 6725, 6726, 4542, 4127, 11057, 16622, 9865, 2]
 // Exports: default
 
-// Module 16613 (SafetyFlowTaskScreen)
+// Module 16624 (SafetyFlowTaskScreen)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -47,34 +47,34 @@ export default function SafetyFlowTaskScreen(action) {
   }
   const items = [tmp4, , ];
   const obj1 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.header, children: action.title };
-  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  items[1] = callback(require(4127) /* Text */.Text, obj1);
   let tmp5 = null != subtitle;
   if (tmp5) {
     const obj2 = { variant: "text-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
-    tmp5 = callback(require(4126) /* Text */.Text, obj2);
+    tmp5 = callback(require(4127) /* Text */.Text, obj2);
   }
   items[2] = tmp5;
   obj.children = items;
-  const items1 = [closure_4(require(4541) /* Stack */.Stack, obj), children];
+  const items1 = [closure_4(require(4542) /* Stack */.Stack, obj), children];
   obj.children = items1;
-  const items2 = [closure_4(require(7614) /* ModalContent */.ModalContent, obj), ];
+  const items2 = [closure_4(require(6726) /* ModalContent */.ModalContent, obj), ];
   if (undefined === footer) {
     const obj3 = {};
     if (withLogout) {
-      withLogout = callback(importDefault(16611), {});
+      withLogout = callback(importDefault(16622), {});
     }
     const items3 = [withLogout, ];
     let tmp12 = null != action;
     if (tmp12) {
       const obj4 = { variant: "primary", text: action, onPress: onAction, loading: submitting };
-      tmp12 = callback(require(9937) /* ModalActionButton */.ModalActionButton, obj4);
+      tmp12 = callback(require(9865) /* ModalActionButton */.ModalActionButton, obj4);
     }
     items3[1] = tmp12;
     obj3.children = items3;
-    footer = closure_4(require(11098) /* ModalFooter */.ModalFooter, obj3);
+    footer = closure_4(require(11057) /* ModalFooter */.ModalFooter, obj3);
     const tmp16 = closure_4;
   }
   items2[1] = footer;
   obj.children = items2;
-  return closure_4(require(7613) /* ModalScreen */.ModalScreen, obj);
+  return closure_4(require(6725) /* ModalScreen */.ModalScreen, obj);
 };

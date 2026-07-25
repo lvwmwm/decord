@@ -1,10 +1,10 @@
-// Module ID: 8017
-// Function ID: 63521
+// Module ID: 5682
+// Function ID: 48798
 // Name: getOptionValue
-// Dependencies: [5, 1348, 3758, 1849, 4566, 653, 8018, 1919, 4123, 6755, 1212, 8019, 1881, 3803, 8020, 8021, 5650, 8022, 669, 8024, 6691, 6923, 5048, 3969, 664, 8218, 3712, 4140, 44, 5627, 8219, 2]
+// Dependencies: [5, 1348, 3759, 1850, 4567, 653, 5683, 1920, 4124, 5676, 1212, 5684, 1882, 3804, 6129, 6130, 5996, 6131, 669, 6133, 5685, 5914, 5049, 3970, 664, 10963, 3713, 4141, 44, 5627, 12545, 2]
 // Exports: getBuiltInCommands
 
-// Module 8017 (getOptionValue)
+// Module 5682 (getOptionValue)
 import importDefaultResult from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -224,7 +224,7 @@ obj7.predicate = function predicate(channel) {
   channel = channel.channel;
   let setting = null != channel && !channel.isPrivate();
   if (setting) {
-    const EnableTTSCommand = require(3803) /* explicitContentFromProto */.EnableTTSCommand;
+    const EnableTTSCommand = require(3804) /* explicitContentFromProto */.EnableTTSCommand;
     setting = EnableTTSCommand.getSetting();
   }
   if (setting) {
@@ -390,7 +390,7 @@ obj13.execute = function execute(arr) {
       if (null != tmp3) {
         str3 = tmp3;
       }
-      const obj = importDefault(8020);
+      const obj = importDefault(6129);
       const id = guild.id;
       const id2 = channel.id;
       if (!str3) {
@@ -450,7 +450,7 @@ Object.defineProperty(obj17, "displayDescription", {
   },
   set: undefined
 });
-Object.defineProperty(obj17, "maxLength", { get: () => require(8021) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj17, "maxLength", { get: () => require(6130) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
 obj17.required = true;
 items8[1] = obj17;
 obj15.options = items8;
@@ -458,8 +458,8 @@ obj15.predicate = function predicate(channel) {
   channel = channel.channel;
   let canStartPublicThread = null != channel;
   if (canStartPublicThread) {
-    canStartPublicThread = require(5650) /* useCanStartPublicThread */.computeCanStartPublicThread(channel);
-    const obj = require(5650) /* useCanStartPublicThread */;
+    canStartPublicThread = require(5996) /* useCanStartPublicThread */.computeCanStartPublicThread(channel);
+    const obj = require(5996) /* useCanStartPublicThread */;
   }
   return canStartPublicThread;
 };
@@ -993,7 +993,7 @@ Object.defineProperty(obj31, "displayDescription", {
   set: undefined
 });
 obj31.required = true;
-Object.defineProperty(obj31, "maxLength", { get: () => require(8021) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj31, "maxLength", { get: () => require(6130) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
 items12[1] = obj31;
 obj29.options = items12;
 obj29.execute = function execute(arr, channel) {

@@ -1,18 +1,18 @@
-// Module ID: 9323
-// Function ID: 72766
+// Module ID: 9216
+// Function ID: 72255
 // Name: closeConversationsAndJumpToMessage
-// Dependencies: [3982, 4138, 2]
+// Dependencies: [3983, 4139, 2]
 // Exports: closeConversationsAndJumpToMessage
 
-// Module 9323 (closeConversationsAndJumpToMessage)
+// Module 9216 (closeConversationsAndJumpToMessage)
 const result = require("set").fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorUtils.tsx");
 
 export const closeConversationsAndJumpToMessage = function closeConversationsAndJumpToMessage(channelId, startMessageId) {
-  const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     rootNavigationRef.goBack();
   }
-  const obj = require(3982) /* getRootNavigationRef */;
-  require(4138) /* transitionToChannel */.transitionToMessage(channelId, startMessageId, { navigationReplace: true });
+  const obj = require(3983) /* getRootNavigationRef */;
+  require(4139) /* transitionToChannel */.transitionToMessage(channelId, startMessageId, { navigationReplace: true });
 };
 export const ConversationNavigatorScreens = { LIST: "conversation_list", FOCUS: "conversation_focus" };

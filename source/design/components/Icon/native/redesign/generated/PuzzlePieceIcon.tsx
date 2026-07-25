@@ -1,10 +1,10 @@
-// Module ID: 13908
-// Function ID: 106412
+// Module ID: 13919
+// Function ID: 106539
 // Name: PuzzlePieceIcon
-// Dependencies: [31, 33, 689, 3833, 13909, 2]
+// Dependencies: [31, 33, 689, 3834, 13920, 2]
 // Exports: PuzzlePieceIcon
 
-// Module 13908 (PuzzlePieceIcon)
+// Module 13919 (PuzzlePieceIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const PuzzlePieceIcon = function PuzzlePieceIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13909) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13920) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13909) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(13920) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,19 +1,20 @@
-// Module ID: 10512
-// Function ID: 81336
+// Module ID: 5665
+// Function ID: 48476
 // Name: _launchFrameOnNative
-// Dependencies: [5, 4146, 10513, 10514, 2]
+// Dependencies: [5, 4147, 5666, 5667, 2]
 
-// Module 10512 (_launchFrameOnNative)
+// Module 5665 (_launchFrameOnNative)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import merged from "_launchFrame";
 
-function _launchFrameOnNative() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+async function _launchFrameOnNative(arg0, arg1) {
+  yield outer2_1(outer2_2[3]).launchFrame(arg0);
+  if (outer2_4.isCurrentClientInVoiceChannel()) {
+    outer2_0(outer2_2[2])();
+  }
 }
-let obj = {};
+const obj = {};
 obj["launchFrame"] = function launchFrameOnNative() {
   return _launchFrameOnNative(...arguments);
 };

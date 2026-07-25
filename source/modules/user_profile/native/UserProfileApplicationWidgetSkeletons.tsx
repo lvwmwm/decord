@@ -1,10 +1,10 @@
-// Module ID: 12114
-// Function ID: 94922
+// Module ID: 12090
+// Function ID: 94727
 // Name: ImageSkeleton
-// Dependencies: [31, 27, 33, 4130, 689, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4127, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 12114 (ImageSkeleton)
+// Module 12090 (ImageSkeleton)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -29,7 +29,7 @@ export const TextSkeleton = function TextSkeleton(widthChars) {
   if (num === undefined) {
     num = 15;
   }
-  const tmp2 = require(4126) /* Text */.TextStyleSheet[widthChars.variant];
+  const tmp2 = require(4127) /* Text */.TextStyleSheet[widthChars.variant];
   const style = [_createForOfIteratorHelperLoose().skeleton, ];
   const obj = { width: 0.46 * tmp2.fontSize * num, height: 0.8 * tmp2.lineHeight };
   style[1] = obj;

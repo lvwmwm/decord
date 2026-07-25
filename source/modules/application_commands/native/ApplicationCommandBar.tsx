@@ -1,10 +1,10 @@
-// Module ID: 11475
-// Function ID: 89269
+// Module ID: 11438
+// Function ID: 88928
 // Name: ApplicationCommandOptionItem
-// Dependencies: [57, 31, 27, 1917, 33, 4130, 689, 4973, 4660, 1212, 1273, 566, 11366, 5085, 4126, 7636, 8328, 11476, 2]
+// Dependencies: [57, 31, 27, 1918, 33, 4131, 689, 4974, 4661, 1212, 1273, 566, 11328, 5085, 4127, 7575, 8063, 11439, 2]
 // Exports: default
 
-// Module 11475 (ApplicationCommandOptionItem)
+// Module 11438 (ApplicationCommandOptionItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -98,7 +98,7 @@ function ApplicationCommandOptionItem(arg0) {
   obj1.numberOfLines = 1;
   obj1.children = option.displayName;
   obj["children"] = closure_8(require(1273) /* Button */.LegacyText, obj1);
-  return closure_8(require(4660) /* PressableBase */.PressableOpacity, obj);
+  return closure_8(require(4661) /* PressableBase */.PressableOpacity, obj);
 }
 ({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
@@ -330,7 +330,7 @@ export default function _default(command) {
   }
   const items5 = [tmp20, , , ];
   const obj2 = { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
-  items5[1] = callback2(command(4126).Text, obj2);
+  items5[1] = callback2(command(4127).Text, obj2);
   let options = command.options;
   let mapped;
   if (null != options) {
@@ -373,7 +373,7 @@ export default function _default(command) {
     const obj5 = { style: tmp.applicationOptionalOptionsIndicator, lineClamp: 1, variant: "eyebrow", color: "text-muted" };
     const intl = command(1212).intl;
     obj5.children = intl.string(command(1212).t.U19GM3);
-    items7[1] = callback2(command(4126).Text, obj5);
+    items7[1] = callback2(command(4127).Text, obj5);
     const options1 = command.options;
     let mapped1;
     if (null != options1) {
@@ -406,10 +406,10 @@ export default function _default(command) {
   }
   items5[3] = tmp26Result;
   obj.children = items5;
-  const items8 = [closure_10(closure_6, obj), callback2(command(7636).FormDivider, { style: tmp.applicationDescriptionDivider }), , ];
+  const items8 = [closure_10(closure_6, obj), callback2(command(7575).FormDivider, { style: tmp.applicationDescriptionDivider }), , ];
   const obj7 = { command, option: currentOption, optionState: tmp15 };
   items8[2] = callback2(closure_12, obj7);
-  items8[3] = callback2(command(7636).FormDivider, { style: tmp.applicationDescriptionDivider });
+  items8[3] = callback2(command(7575).FormDivider, { style: tmp.applicationDescriptionDivider });
   obj.children = items8;
   return closure_10(onPressOption, obj);
 };

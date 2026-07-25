@@ -1,10 +1,10 @@
-// Module ID: 15906
-// Function ID: 122883
+// Module ID: 15917
+// Function ID: 123052
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4177, 10045, 653, 33, 15907, 15910, 15916, 15918, 15920, 15922, 15924, 15927, 15830, 1553, 10046, 15766, 566, 3991, 11407, 8321, 2]
+// Dependencies: [31, 4178, 9974, 653, 33, 15918, 15921, 15927, 15929, 15931, 15933, 15935, 15938, 15841, 1553, 9975, 15777, 566, 3992, 11370, 8056, 2]
 // Exports: default
 
-// Module 15906 (_createForOfIteratorHelperLoose)
+// Module 15917 (_createForOfIteratorHelperLoose)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import VoicePanelControlsModes from "VoicePanelControlsModes";
@@ -97,55 +97,55 @@ function _arrayLikeToArray(arg0, arg1) {
 let closure_9 = {
   mic(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(require(15907) /* useMuteHandlers */.MicButton, {}, arg0);
+    return jsx(require(15918) /* useMuteHandlers */.MicButton, {}, arg0);
   },
   ptt(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(require(15907) /* useMuteHandlers */.PTTButton, {}, arg0);
+    return jsx(require(15918) /* useMuteHandlers */.PTTButton, {}, arg0);
   },
   micConnected(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(require(15907) /* useMuteHandlers */.MicButton, {}, arg0);
+    return jsx(require(15918) /* useMuteHandlers */.MicButton, {}, arg0);
   },
   connect(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15910), {}, arg0);
+    return jsx(importDefault(15921), {}, arg0);
   },
   chat(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15916), {}, arg0);
+    return jsx(importDefault(15927), {}, arg0);
   },
   disconnectCancel(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15918), {}, arg0);
+    return jsx(importDefault(15929), {}, arg0);
   },
   video(arg0, arg1, arg2, arg3) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15920), {}, arg0);
+    return jsx(importDefault(15931), {}, arg0);
   },
   soundboard(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15922), {}, arg0);
+    return jsx(importDefault(15933), {}, arg0);
   },
   screenshare(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15924), {}, arg0);
+    return jsx(importDefault(15935), {}, arg0);
   },
   drawerToggle(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15927), {}, arg0);
+    return jsx(importDefault(15938), {}, arg0);
   }
 };
 let closure_10 = { code: "function useControlsButtonsTsx1(){const{getControlsDefaultWidth,windowDimensions,safeArea}=this.__closure;return getControlsDefaultWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right);}" };
 const result = require("VoicePanelControlsModes").fileFinishedImporting("modules/voice_panel/native/controls/useControlsButtons.tsx");
 
 export default function useControlsButtons() {
-  const context = treatment.useContext(safeArea(10046));
+  const context = treatment.useContext(safeArea(9975));
   const windowDimensions = context.windowDimensions;
   safeArea = context.safeArea;
-  const tmp2 = safeArea(15766)(context.channelId);
+  const tmp2 = safeArea(15777)(context.channelId);
   const dependencyMap = tmp2;
-  let obj = safeArea(15830);
+  let obj = safeArea(15841);
   treatment = obj.useConfig({ location: "VoicePanelControlButtons" }).treatment;
   let items = [stateFromStores];
   stateFromStores = windowDimensions(566).useStateFromStores(items, () => stateFromStores.getMode() === outer1_7.PUSH_TO_TALK);
@@ -153,12 +153,12 @@ export default function useControlsButtons() {
   const fn = function n() {
     return windowDimensions(tmp2[19]).getControlsDefaultWidth(windowDimensions.get().width, safeArea.get().left, safeArea.get().right);
   };
-  obj = { getControlsDefaultWidth: windowDimensions(11407).getControlsDefaultWidth, windowDimensions, safeArea };
+  obj = { getControlsDefaultWidth: windowDimensions(11370).getControlsDefaultWidth, windowDimensions, safeArea };
   fn.__closure = obj;
   fn.__workletHash = 16456936876254;
   fn.__initData = closure_10;
-  const derivedValue = windowDimensions(3991).useDerivedValue(fn);
-  const tmp5 = safeArea(8321)(derivedValue);
+  const derivedValue = windowDimensions(3992).useDerivedValue(fn);
+  const tmp5 = safeArea(8056)(derivedValue);
   let closure_5 = tmp5;
   const items1 = [tmp2, stateFromStores, tmp5, treatment];
   return treatment.useMemo(() => {

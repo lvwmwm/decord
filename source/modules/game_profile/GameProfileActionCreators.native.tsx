@@ -1,9 +1,9 @@
-// Module ID: 8636
-// Function ID: 68435
+// Module ID: 8412
+// Function ID: 67168
 // Name: clearGameProfilePendingReturn
-// Dependencies: [44, 4098, 8637, 1934, 686, 2]
+// Dependencies: [44, 4099, 8413, 1935, 686, 2]
 
-// Module 8636 (clearGameProfilePendingReturn)
+// Module 8412 (clearGameProfilePendingReturn)
 function clearGameProfilePendingReturn(id) {
   let obj = importDefault(686);
   obj = { type: "GAME_PROFILE_CLEAR_PENDING_RETURN", gameId: id };
@@ -21,8 +21,8 @@ export default {
     ({ source, sourceUserId } = arg0);
     importDefault(44)(gameProfileModalChecks.shouldOpenGameProfile, "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?");
     importDefault(44)(gameProfileModalChecks.gameId === gameId, "Passed an unexpected [gameId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?");
-    const obj = importDefault(4098);
-    obj.openLazy(require(1934) /* maybeLoadBundle */(8637, dependencyMap.paths), "game-profile-" + gameId, { gameId, source, sourceUserId });
+    const obj = importDefault(4099);
+    obj.openLazy(require(1935) /* maybeLoadBundle */(8413, dependencyMap.paths), "game-profile-" + gameId, { gameId, source, sourceUserId });
   },
   returnToGameProfile(gameId) {
     let initialScrollOffset;
@@ -30,8 +30,8 @@ export default {
     gameId = gameId.gameId;
     ({ source, initialScrollOffset } = gameId);
     clearGameProfilePendingReturn(gameId);
-    const obj = importDefault(4098);
-    obj.openLazy(require(1934) /* maybeLoadBundle */(8637, dependencyMap.paths), "game-profile-" + gameId, { gameId, source, initialScrollOffset });
+    const obj = importDefault(4099);
+    obj.openLazy(require(1935) /* maybeLoadBundle */(8413, dependencyMap.paths), "game-profile-" + gameId, { gameId, source, initialScrollOffset });
   },
   setGameProfilePendingReturn(arg0) {
     let channelId;

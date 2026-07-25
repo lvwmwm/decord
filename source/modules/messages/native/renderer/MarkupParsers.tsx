@@ -1,10 +1,10 @@
-// Module ID: 7858
-// Function ID: 61980
+// Module ID: 7805
+// Function ID: 61952
 // Name: importDefaultResult1
-// Dependencies: [653, 664, 1362, 4120, 7859, 7870, 2]
+// Dependencies: [653, 664, 1362, 4121, 7806, 7817, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 7858 (importDefaultResult1)
+// Module 7805 (importDefaultResult1)
 import { MessageTypes } from "ME";
 import importDefaultResult from "priv";
 import importDefaultResult1 from "priv";
@@ -25,7 +25,7 @@ export const parseEmbedTitleMarkup = function parseEmbedTitleMarkup(rawName, clo
   const combined = "" + rawName + "-" + closure_0;
   let value = importDefaultResult.get(combined);
   if (null == value) {
-    let obj = importDefault(4120);
+    let obj = importDefault(4121);
     obj = { channelId: closure_0 };
     const parseEmbedTitleToASTResult = obj.parseEmbedTitleToAST(rawName, true, obj);
     const result = importDefaultResult.set(combined, parseEmbedTitleToASTResult);
@@ -37,7 +37,7 @@ export const parseEmbedTitleMarkupWithoutLinks = function parseEmbedTitleMarkupW
   const combined = "" + arg0 + "-" + channelId + "-nolinks";
   let value = importDefaultResult1.get(combined);
   if (null == value) {
-    let obj = importDefault(4120);
+    let obj = importDefault(4121);
     obj = { channelId };
     const result = obj.parseEmbedTitleWithoutLinksToAST(arg0, true, obj);
     const result1 = importDefaultResult1.set(combined, result);
@@ -81,7 +81,7 @@ export const parseEmbedDescriptionMarkup = function parseEmbedDescriptionMarkup(
   obj.allowHeading = tmp7;
   obj.allowList = showListsAndHeaders;
   obj.previewLinkTarget = showMaskedLinks;
-  const parseToASTResult = importDefault(4120).parseToAST(tmp4, true, obj);
+  const parseToASTResult = importDefault(4121).parseToAST(tmp4, true, obj);
   const result = importDefaultResult2.set(combined, parseToASTResult);
   return parseToASTResult;
 };
@@ -110,7 +110,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   }
   if (message.type !== MessageTypes.CHANGELOG) {
     let obj = {};
-    let obj1 = require(7870) /* getInitialParserStateFromMessage */;
+    let obj1 = require(7817) /* getInitialParserStateFromMessage */;
     obj = { contentMessage: message2, hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowGameMentions: true };
     let tmp5 = flag2;
     if (!flag2) {
@@ -129,10 +129,10 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
     result = importDefaultResult3.set(message, obj);
   }
   obj = { content: null, isInlineReplyPreview: false, hasSpoilerEmbeds: false, hasBailedAst: false };
-  const obj5 = importDefault(4120);
+  const obj5 = importDefault(4121);
   obj1 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag };
   flag = flag2;
-  const obj6 = require(7859) /* LHeading */;
+  const obj6 = require(7806) /* LHeading */;
   if (!flag2) {
     flag = flag3;
   }
@@ -143,7 +143,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   obj1.allowList = flag2;
   obj1.allowLinks = flag4;
   obj1.previewLinkTarget = flag4;
-  obj.content = obj5.astParserFor(require(7859) /* LHeading */.changelogRules(message.changelogId, true))(message.content, false, obj1);
+  obj.content = obj5.astParserFor(require(7806) /* LHeading */.changelogRules(message.changelogId, true))(message.content, false, obj1);
   flag4 = importDefaultResult3;
   const result1 = importDefaultResult3.set(message, obj);
 };

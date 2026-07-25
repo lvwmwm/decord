@@ -1,10 +1,10 @@
-// Module ID: 13782
-// Function ID: 105653
+// Module ID: 13793
+// Function ID: 105780
 // Name: isSetAndNotDefault
-// Dependencies: [1282, 13779, 5678, 5676, 2]
+// Dependencies: [1282, 13790, 5855, 5853, 2]
 // Exports: updateExplicitContentSetting, updateGoreContentSetting
 
-// Module 13782 (isSetAndNotDefault)
+// Module 13793 (isSetAndNotDefault)
 function isSetAndNotDefault(goreContentFriendDm) {
   let tmp = null != goreContentFriendDm;
   if (tmp) {
@@ -15,7 +15,7 @@ function isSetAndNotDefault(goreContentFriendDm) {
 function getGoreContentSettingOrDefault(arg0) {
   let goreContentFriendDm;
   let goreContentNonFriendDm;
-  const ParentalControlledGoreContent = require(13779) /* result */.ParentalControlledGoreContent;
+  const ParentalControlledGoreContent = require(13790) /* result */.ParentalControlledGoreContent;
   let controlledSetting = ParentalControlledGoreContent.getControlledSetting(arg0);
   if (null == controlledSetting) {
     controlledSetting = {};
@@ -24,13 +24,13 @@ function getGoreContentSettingOrDefault(arg0) {
   let obj = {};
   if (!isSetAndNotDefault(goreContentNonFriendDm)) {
     obj = { isDm: true };
-    goreContentNonFriendDm = require(5678) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaultsForTeen(obj);
-    const obj3 = require(5678) /* resolveGoreSettingWithDefaults */;
+    goreContentNonFriendDm = require(5855) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaultsForTeen(obj);
+    const obj3 = require(5855) /* resolveGoreSettingWithDefaults */;
   }
   obj.goreContentNonFriendDm = goreContentNonFriendDm;
   if (!isSetAndNotDefault(goreContentFriendDm)) {
-    goreContentFriendDm = require(5678) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
-    const obj5 = require(5678) /* resolveGoreSettingWithDefaults */;
+    goreContentFriendDm = require(5855) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
+    const obj5 = require(5855) /* resolveGoreSettingWithDefaults */;
   }
   obj.goreContentFriendDm = goreContentFriendDm;
   obj.goreContentGuilds = require(1282) /* _callSuper */.ExplicitContentRedaction.BLUR;
@@ -46,9 +46,9 @@ function resolveExplicitContentSettingWithDefaultsForTeen(teenId) {
   if (isSetAndNotDefault(setting)) {
     return setting;
   } else {
-    const ParentalControlledLegacyExplicitContent = require(13779) /* result */.ParentalControlledLegacyExplicitContent;
+    const ParentalControlledLegacyExplicitContent = require(13790) /* result */.ParentalControlledLegacyExplicitContent;
     const controlledSetting = ParentalControlledLegacyExplicitContent.getControlledSetting(teenId.teenId);
-    const tmp6 = require(5676) /* resolveExplicitContentSettingWithDefaults */;
+    const tmp6 = require(5853) /* resolveExplicitContentSettingWithDefaults */;
     if (isFriend) {
       let tmp7 = tmp6.TEEN_EXPLICIT_CONTENT_FILTER_TO_EXPLICIT_CONTENT_REDACTION_FRIEND_DM[controlledSetting];
     } else {
@@ -58,7 +58,7 @@ function resolveExplicitContentSettingWithDefaultsForTeen(teenId) {
   }
 }
 function getExplicitContentSettingOrDefault(teenId) {
-  const ParentalControlledExplicitContent = require(13779) /* result */.ParentalControlledExplicitContent;
+  const ParentalControlledExplicitContent = require(13790) /* result */.ParentalControlledExplicitContent;
   const controlledSetting = ParentalControlledExplicitContent.getControlledSetting(teenId);
   let obj = {};
   obj = { teenId };
@@ -84,7 +84,7 @@ let result = require("resolveGoreSettingWithDefaults").fileFinishedImporting("mo
 export { isSetAndNotDefault };
 export { getGoreContentSettingOrDefault };
 export const updateGoreContentSetting = function updateGoreContentSetting(selectedTeenId) {
-  const ParentalControlledGoreContent = require(13779) /* result */.ParentalControlledGoreContent;
+  const ParentalControlledGoreContent = require(13790) /* result */.ParentalControlledGoreContent;
   const merged = Object.assign(getGoreContentSettingOrDefault(selectedTeenId));
   const merged1 = Object.assign(arg1);
   const result = ParentalControlledGoreContent.updateControlledSetting(selectedTeenId, {});
@@ -92,7 +92,7 @@ export const updateGoreContentSetting = function updateGoreContentSetting(select
 export { resolveExplicitContentSettingWithDefaultsForTeen };
 export { getExplicitContentSettingOrDefault };
 export const updateExplicitContentSetting = function updateExplicitContentSetting(selectedTeenId) {
-  const ParentalControlledExplicitContent = require(13779) /* result */.ParentalControlledExplicitContent;
+  const ParentalControlledExplicitContent = require(13790) /* result */.ParentalControlledExplicitContent;
   const merged = Object.assign(getExplicitContentSettingOrDefault(selectedTeenId));
   const merged1 = Object.assign(arg1);
   const result = ParentalControlledExplicitContent.updateControlledSetting(selectedTeenId, {});

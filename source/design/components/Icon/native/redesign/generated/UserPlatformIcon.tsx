@@ -1,10 +1,10 @@
-// Module ID: 4070
-// Function ID: 33880
+// Module ID: 4071
+// Function ID: 33891
 // Name: UserPlatformIcon
-// Dependencies: [31, 33, 689, 3833, 4071, 2]
+// Dependencies: [31, 33, 689, 3834, 4072, 2]
 // Exports: UserPlatformIcon
 
-// Module 4070 (UserPlatformIcon)
+// Module 4071 (UserPlatformIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const UserPlatformIcon = function UserPlatformIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4071) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4072) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4071) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4072) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

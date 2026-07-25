@@ -1,10 +1,10 @@
-// Module ID: 9830
-// Function ID: 76313
+// Module ID: 9754
+// Function ID: 75908
 // Name: balance
-// Dependencies: [31, 27, 653, 1345, 33, 9831, 9832, 9833, 1212, 3821, 1920, 3849, 3834, 689, 675, 3946, 1334, 3842, 5187, 5085, 8346, 5446, 9834, 8749, 4126, 4543, 4130, 477, 2]
+// Dependencies: [31, 27, 653, 1345, 33, 9755, 9756, 9757, 1212, 3822, 1921, 3850, 3835, 689, 675, 3947, 1334, 3843, 5187, 5085, 8080, 5446, 9758, 8637, 4127, 4544, 4131, 477, 2]
 // Exports: default
 
-// Module 9830 (balance)
+// Module 9754 (balance)
 import result from "result";
 import get_ActivityIndicator from "set";
 import ME from "ME";

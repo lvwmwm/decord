@@ -1,7 +1,7 @@
 // Module ID: 5623
-// Function ID: 48002
+// Function ID: 48007
 // Name: getOrbPriceFromPrices
-// Dependencies: [653, 655, 5624, 1212, 5625, 3798, 2]
+// Dependencies: [653, 655, 5624, 1212, 5625, 3799, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
 // Module 5623 (getOrbPriceFromPrices)
@@ -68,13 +68,13 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
       if (code instanceof require(5625) /* _callSuper */.OrderProcessingPendingError) {
         const intl5 = require(1212) /* getSystemLocale */.intl;
         let stringResult = intl5.string(require(1212) /* getSystemLocale */.t["2BmwgV"]);
-      } else if (code.code === require(3798) /* _isNativeReflectConstruct */.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+      } else if (code.code === require(3799) /* _isNativeReflectConstruct */.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
         const intl4 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl4.string(require(1212) /* getSystemLocale */.t.keFvXM);
-      } else if (code.code === require(3798) /* _isNativeReflectConstruct */.ErrorCodes.ALREADY_PURCHASED) {
+      } else if (code.code === require(3799) /* _isNativeReflectConstruct */.ErrorCodes.ALREADY_PURCHASED) {
         const intl3 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl3.string(require(1212) /* getSystemLocale */.t.m371Mx);
-      } else if (code.code === require(3798) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+      } else if (code.code === require(3799) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl2.string(require(1212) /* getSystemLocale */.t.ZHgEG7);
       } else {

@@ -1,10 +1,10 @@
-// Module ID: 4056
-// Function ID: 33820
+// Module ID: 4057
+// Function ID: 33831
 // Name: useGuildPowerupBoostLevelProgress
-// Dependencies: [1838, 653, 4037, 566, 2]
+// Dependencies: [1838, 653, 4038, 566, 2]
 // Exports: default, getGuildPowerupBoostLevelProgress
 
-// Module 4056 (useGuildPowerupBoostLevelProgress)
+// Module 4057 (useGuildPowerupBoostLevelProgress)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
 
@@ -17,7 +17,7 @@ const result = require("useGuildAppliedBoostCount").fileFinishedImporting("modul
 
 export default function useGuildPowerupBoostLevelProgress(arg0) {
   const _require = arg0;
-  const tmp = importDefault(4037)(arg0);
+  const tmp = importDefault(4038)(arg0);
   const items = [_createForOfIteratorHelperLoose];
   const stateFromStores = _require(566).useStateFromStores(items, () => {
     const guild = outer1_3.getGuild(closure_0);
@@ -48,7 +48,7 @@ export default function useGuildPowerupBoostLevelProgress(arg0) {
 };
 export const getGuildPowerupBoostLevelProgress = function getGuildPowerupBoostLevelProgress(id) {
   let premiumTier;
-  const guildPowerupsBoostCount = require(4037) /* useGuildAppliedBoostCount */.getGuildPowerupsBoostCount(id);
+  const guildPowerupsBoostCount = require(4038) /* useGuildAppliedBoostCount */.getGuildPowerupsBoostCount(id);
   guild = guild.getGuild(id);
   if (null != guild) {
     premiumTier = guild.premiumTier;

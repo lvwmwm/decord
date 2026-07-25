@@ -1,9 +1,9 @@
-// Module ID: 11195
-// Function ID: 87084
+// Module ID: 11156
+// Function ID: 86729
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1849, 21, 11193, 6755, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1850, 21, 11154, 5676, 566, 686, 2]
 
-// Module 11195 (_isNativeReflectConstruct)
+// Module 11156 (_isNativeReflectConstruct)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import result from "result";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -73,7 +73,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     let commandOrigin;
     context = context.context;
     ({ command, commandOrigin } = context);
-    let tmp = commandOrigin !== require(6755) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
+    let tmp = commandOrigin !== require(5676) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
     if (tmp) {
       tmp = null != context.channel;
     }
@@ -105,7 +105,7 @@ tmp2 = new tmp2(require("dispatcher"), {
             const extractTimestampResult = obj.extractTimestamp(message.id);
             const _Date = Date;
             const timestamp = Date.now();
-            if (timestamp <= extractTimestampResult + require(11193) /* result */.RECENT_MESSAGE_MS) {
+            if (timestamp <= extractTimestampResult + require(11154) /* result */.RECENT_MESSAGE_MS) {
               obj = { timeMs: extractTimestampResult, guildId, channelId };
             }
           }

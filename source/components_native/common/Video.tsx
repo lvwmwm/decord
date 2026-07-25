@@ -1,10 +1,10 @@
-// Module ID: 8346
-// Function ID: 65780
+// Module ID: 8080
+// Function ID: 64332
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 31, 27, 33, 4130, 689, 8192, 8318, 5582, 1212, 3842, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 31, 27, 33, 4131, 689, 8081, 8053, 5582, 1212, 3843, 2]
 // Exports: createVideoControls
 
-// Module 8346 (_isNativeReflectConstruct)
+// Module 8080 (_isNativeReflectConstruct)
 import result from "result";
 import getActivityIndicator from "get ActivityIndicator";
 import ManaContext from "ManaContext";

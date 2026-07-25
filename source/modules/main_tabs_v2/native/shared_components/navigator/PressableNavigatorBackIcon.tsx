@@ -1,9 +1,9 @@
-// Module ID: 9160
-// Function ID: 71672
+// Module ID: 9052
+// Function ID: 71157
 // Name: PressableNavigatorBackIcon
-// Dependencies: [31, 27, 1348, 6878, 1906, 33, 4130, 1273, 689, 1324, 566, 3941, 9161, 4660, 1212, 9162, 9163, 2]
+// Dependencies: [31, 27, 1348, 5868, 1907, 33, 4131, 1273, 689, 1324, 566, 3942, 9053, 4661, 1212, 9054, 9055, 2]
 
-// Module 9160 (PressableNavigatorBackIcon)
+// Module 9052 (PressableNavigatorBackIcon)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

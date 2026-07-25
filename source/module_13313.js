@@ -1,13 +1,31 @@
 // Module ID: 13313
-// Function ID: 102040
-// Dependencies: [13294, 13314]
+// Function ID: 102146
+// Dependencies: [13298, 13294, 13314]
 
 // Module 13313
+let tmp2 = !tmp;
+if (!!Object.getOwnPropertySymbols) {
+  tmp2 = !require("module_13298")(() => {
+    const SymbolResult = Symbol("symbol detection");
+    let tmp2 = !require(13294) /* check */.String(SymbolResult);
+    if (!tmp2) {
+      const _Object = Object;
+      const _Symbol = Symbol;
+      tmp2 = !(Object(SymbolResult) instanceof Symbol);
+    }
+    if (!tmp2) {
+      const _Symbol2 = Symbol;
+      let tmp3 = !Symbol.sham;
+      if (tmp3) {
+        tmp3 = require(13314);
+      }
+      if (tmp3) {
+        tmp3 = require(13314) < 41;
+      }
+      tmp2 = tmp3;
+    }
+    return tmp2;
+  });
+}
 
-export default (arg0, arg1) => {
-  let tmp2;
-  if (!require(13294)(arg0[arg1])) {
-    tmp2 = require(13314) /* all */(tmp);
-  }
-  return tmp2;
-};
+export default tmp2;

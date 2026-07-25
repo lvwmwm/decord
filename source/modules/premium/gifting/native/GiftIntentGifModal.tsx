@@ -1,10 +1,10 @@
-// Module ID: 10988
-// Function ID: 85404
+// Module ID: 10943
+// Function ID: 85020
 // Name: _sendGiftIntentGif
-// Dependencies: [57, 5, 31, 27, 1348, 653, 4123, 33, 4130, 689, 6691, 6923, 675, 5482, 5160, 566, 7645, 1212, 10989, 9610, 4543, 4337, 5450, 5087, 5517, 2]
+// Dependencies: [57, 5, 31, 27, 1348, 653, 4124, 33, 4131, 689, 5685, 5914, 675, 5482, 5159, 566, 7585, 1212, 10944, 9531, 4544, 4338, 5450, 5087, 5517, 2]
 // Exports: default
 
-// Module 10988 (_sendGiftIntentGif)
+// Module 10943 (_sendGiftIntentGif)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 import result from "result";

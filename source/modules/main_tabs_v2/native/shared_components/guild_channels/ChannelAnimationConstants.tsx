@@ -1,21 +1,21 @@
-// Module ID: 11978
-// Function ID: 92628
+// Module ID: 11954
+// Function ID: 92433
 // Name: n
-// Dependencies: [4542, 2]
+// Dependencies: [4543, 2]
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 11978 (n)
+// Module 11954 (n)
 let obj = { damping: 35, stiffness: 275, mass: 1, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 const fn = function n() {
   let obj = { initialValues: { transform: items, opacity: 0 } };
   items = [{ scale: 0 }];
   obj = {};
   obj = {};
-  obj.scale = require(4542) /* withSpring */.withSpring(1, obj);
+  obj.scale = require(4543) /* withSpring */.withSpring(1, obj);
   const items1 = [obj];
   obj.transform = items1;
-  const obj4 = require(4542) /* withSpring */;
-  obj.opacity = require(4542) /* withSpring */.withSpring(1, obj);
+  const obj4 = require(4543) /* withSpring */;
+  obj.opacity = require(4543) /* withSpring */.withSpring(1, obj);
   obj.animations = obj;
   return obj;
 };
@@ -28,11 +28,11 @@ const fn2 = function t() {
   items = [{ scale: 1 }];
   obj = {};
   obj = {};
-  obj.scale = require(4542) /* withSpring */.withSpring(0, obj);
+  obj.scale = require(4543) /* withSpring */.withSpring(0, obj);
   const items1 = [obj];
   obj.transform = items1;
-  const obj4 = require(4542) /* withSpring */;
-  obj.opacity = require(4542) /* withSpring */.withSpring(0, obj);
+  const obj4 = require(4543) /* withSpring */;
+  obj.opacity = require(4543) /* withSpring */.withSpring(0, obj);
   obj.animations = obj;
   return obj;
 };

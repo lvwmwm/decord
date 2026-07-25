@@ -1,9 +1,9 @@
-// Module ID: 14922
-// Function ID: 113757
+// Module ID: 14933
+// Function ID: 113885
 // Name: GUILD_ITEM_BADGE_SIZE
-// Dependencies: [31, 14860, 33, 4130, 689, 14874, 1324, 14870, 1392, 5513, 4470, 1212, 8482, 14923, 14891, 5085, 2]
+// Dependencies: [31, 14871, 33, 4131, 689, 14885, 1324, 14881, 1392, 5513, 4471, 1212, 8242, 14934, 14902, 5085, 2]
 
-// Module 14922 (GUILD_ITEM_BADGE_SIZE)
+// Module 14933 (GUILD_ITEM_BADGE_SIZE)
 import importAllResult from "result";
 import { GUILD_ITEM_BADGE_SIZE } from "GUILD_ITEM_SIZE";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ let items = [require("computeGuildsBarCutout")({ position: "bottom-right" })];
 const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(restrictedGuild) {
   restrictedGuild = restrictedGuild.restrictedGuild;
   const tmp2 = callback();
-  let obj = restrictedGuild(14870);
+  let obj = restrictedGuild(14881);
   let animatableSourceWithFallback = null;
   const tmp = importDefault(1324)("GuildsBarGeoRestrictedGuild");
   if (null != restrictedGuild.icon) {
@@ -60,9 +60,9 @@ const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(res
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const tmp8 = jsx;
   obj = { style: tmp2.geoRestrictedBadge };
-  obj.externalChildren = jsx(importDefault(14923), { style: tmp2.geoRestrictedBadge });
+  obj.externalChildren = jsx(importDefault(14934), { style: tmp2.geoRestrictedBadge });
   obj1 = { guildId: restrictedGuild.id };
-  obj.expandedChildren = jsx(importDefault(14891), { guildId: restrictedGuild.id });
+  obj.expandedChildren = jsx(importDefault(14902), { guildId: restrictedGuild.id });
   if (null != animatableSourceWithFallback) {
     const obj2 = { source: animatableSourceWithFallback, style: tmp2.guildIcon, fadeDuration: 0 };
     let tmp15 = jsx(importDefault(5085), { source: animatableSourceWithFallback, style: tmp2.guildIcon, fadeDuration: 0 });
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(res
     const tmp13 = importDefault(5513);
   }
   obj.children = tmp15;
-  return tmp8(importDefault(14870), obj);
+  return tmp8(importDefault(14881), obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx");
 

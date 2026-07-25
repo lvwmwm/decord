@@ -1,10 +1,10 @@
-// Module ID: 16429
-// Function ID: 128159
+// Module ID: 16440
+// Function ID: 128327
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 31, 653, 16430, 16431, 1212, 1920, 3821, 16432, 2]
+// Dependencies: [5, 31, 653, 16441, 16442, 1212, 1921, 3822, 16443, 2]
 // Exports: default
 
-// Module 16429 (useCreatorMonetizationEligibilityItems)
+// Module 16440 (useCreatorMonetizationEligibilityItems)
 import getSystemLocale from "getSystemLocale";
 import result from "result";
 import { HelpdeskArticles } from "ME";

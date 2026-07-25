@@ -1,10 +1,10 @@
-// Module ID: 15668
-// Function ID: 120791
+// Module ID: 15679
+// Function ID: 120960
 // Name: HasBadgeCoachmark
-// Dependencies: [31, 27, 8312, 1345, 33, 4130, 689, 4098, 3982, 5187, 9720, 4126, 1212, 2294, 4543, 9713, 5482, 15669, 8812, 566, 8309, 2]
+// Dependencies: [31, 27, 8047, 1345, 33, 4131, 689, 4099, 3983, 5187, 9644, 4127, 1212, 2295, 4544, 9637, 5482, 15680, 8700, 566, 8044, 2]
 // Exports: default
 
-// Module 15668 (HasBadgeCoachmark)
+// Module 15679 (HasBadgeCoachmark)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -43,7 +43,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   let tmp9 = null != currentTier.simple_icon_url;
   if (tmp9) {
     const obj1 = { icon: currentTier.simple_icon_url, size: 120 };
-    tmp9 = callback(importDefault(9720), obj1);
+    tmp9 = callback(importDefault(9644), obj1);
   }
   obj.children = tmp9;
   const items2 = [callback(closure_5, obj), , ];
@@ -57,8 +57,8 @@ function HasBadgeCoachmark(markAsDismissed) {
     str = name;
   }
   obj4.tierName = str;
-  obj3.children = intl.format(importDefault(2294)["a+jfuy"], obj4);
-  const items3 = [callback(markAsDismissed(4126).Text, obj3), ];
+  obj3.children = intl.format(importDefault(2295)["a+jfuy"], obj4);
+  const items3 = [callback(markAsDismissed(4127).Text, obj3), ];
   const obj5 = { style: tmp.text, variant: "text-sm/medium", color: "text-default" };
   const intl2 = markAsDismissed(1212).intl;
   const obj6 = {};
@@ -67,8 +67,8 @@ function HasBadgeCoachmark(markAsDismissed) {
     num3 = giftCount;
   }
   obj6.giftCount = num3;
-  obj5.children = intl2.formatToPlainString(importDefault(2294).QxRA6w, obj6);
-  items3[1] = callback(markAsDismissed(4126).Text, obj5);
+  obj5.children = intl2.formatToPlainString(importDefault(2295).QxRA6w, obj6);
+  items3[1] = callback(markAsDismissed(4127).Text, obj5);
   obj2.children = items3;
   items2[1] = closure_9(closure_5, obj2);
   const obj7 = { style: tmp.footer };
@@ -76,7 +76,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   const intl3 = markAsDismissed(1212).intl;
   obj8.text = intl3.string(markAsDismissed(1212).t.RzWDqY);
   obj8.onPress = callback;
-  obj7.children = callback(markAsDismissed(4543).Button, obj8);
+  obj7.children = callback(markAsDismissed(4544).Button, obj8);
   items2[2] = callback(closure_5, obj7);
   obj.children = items2;
   obj.children = closure_9(closure_5, obj);
@@ -103,7 +103,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   obj = { style: tmp.container };
   obj = { style: tmp.graphicContainer };
   const obj1 = {};
-  const obj2 = { uri: importDefault(15669) };
+  const obj2 = { uri: importDefault(15680) };
   obj1.source = obj2;
   obj1.style = tmp.newBadgeImage;
   obj.children = callback(closure_4, obj1);
@@ -111,22 +111,22 @@ function NewBadgeCoachmark(markAsDismissed) {
   const obj3 = { style: tmp.textContainer };
   const obj4 = { style: tmp.text, variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
   const intl = markAsDismissed(1212).intl;
-  obj4.children = intl.string(importDefault(2294).Q2RQka);
-  const items3 = [callback(markAsDismissed(4126).Text, obj4), ];
+  obj4.children = intl.string(importDefault(2295).Q2RQka);
+  const items3 = [callback(markAsDismissed(4127).Text, obj4), ];
   const obj5 = { style: tmp.text, variant: "text-sm/medium", color: "text-muted" };
   const intl2 = markAsDismissed(1212).intl;
-  obj5.children = intl2.string(importDefault(2294)["3EQnkg"]);
-  items3[1] = callback(markAsDismissed(4126).Text, obj5);
+  obj5.children = intl2.string(importDefault(2295)["3EQnkg"]);
+  items3[1] = callback(markAsDismissed(4127).Text, obj5);
   obj3.children = items3;
   items2[1] = callback2(closure_5, obj3);
   const obj6 = { style: tmp.footer };
   const obj7 = { grow: true };
   const intl3 = markAsDismissed(1212).intl;
-  obj7.text = intl3.string(importDefault(2294).DZnomS);
+  obj7.text = intl3.string(importDefault(2295).DZnomS);
   const obj8 = { size: "sm", color: importDefault(689).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  obj7.icon = callback(markAsDismissed(8812).GiftIcon, obj8);
+  obj7.icon = callback(markAsDismissed(8700).GiftIcon, obj8);
   obj7.onPress = callback;
-  obj6.children = callback(markAsDismissed(4543).Button, obj7);
+  obj6.children = callback(markAsDismissed(4544).Button, obj7);
   items2[2] = callback(closure_5, obj6);
   obj.children = items2;
   obj.children = callback2(closure_5, obj);

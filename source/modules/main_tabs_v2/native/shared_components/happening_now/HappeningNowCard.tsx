@@ -1,10 +1,10 @@
-// Module ID: 14234
-// Function ID: 109328
+// Module ID: 14245
+// Function ID: 109455
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
-// Dependencies: [31, 27, 14233, 33, 4130, 689, 7423, 1324, 3977, 5167, 4126, 2]
+// Dependencies: [31, 27, 14244, 33, 4131, 689, 6504, 1324, 3978, 5166, 4127, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14234 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+// Module 14245 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
 import "result";
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
@@ -103,9 +103,9 @@ export default function HappeningNowCard(IconComponent) {
   if (tmp4) {
     tmp4 = panelVariant;
   }
-  const tmp3Result = closure_21(width, tmp4, importDefault(7423)(), tmp2);
+  const tmp3Result = closure_21(width, tmp4, importDefault(6504)(), tmp2);
   IconComponent = IconComponent.IconComponent;
-  const tmp = importDefault(7423)();
+  const tmp = importDefault(6504)();
   const tmp3 = closure_21;
   ({ accessibilityLabel, accessibilityHint } = IconComponent);
   let obj = { variant: "secondary", style: items, onPress: IconComponent.onPress, border: "faint" };
@@ -141,7 +141,7 @@ export default function HappeningNowCard(IconComponent) {
   }
   items1[1] = tmp9Result;
   obj.children = items1;
-  return closure_19(require(5167) /* getCardBackgroundToken */.Card, obj);
+  return closure_19(require(5166) /* getCardBackgroundToken */.Card, obj);
 };
 export const HappeningNowCardHeader = function HappeningNowCardHeader(displayNameFont) {
   let children;
@@ -172,7 +172,7 @@ export const HappeningNowCardHeader = function HappeningNowCardHeader(displayNam
   obj.style = items;
   const merged1 = Object.assign(merged);
   obj["children"] = children;
-  return closure_18(require(4126) /* Text */.Text, obj);
+  return closure_18(require(4127) /* Text */.Text, obj);
 };
 export const HappeningNowCardSubtitle = function HappeningNowCardSubtitle(variant) {
   variant = variant.variant;
@@ -199,5 +199,5 @@ export const HappeningNowCardSubtitle = function HappeningNowCardSubtitle(varian
   obj.maxFontSizeMultiplier = 2;
   const merged1 = Object.assign(merged);
   obj["children"] = variant.children;
-  return closure_18(require(4126) /* Text */.Text, obj);
+  return closure_18(require(4127) /* Text */.Text, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7122
-// Function ID: 57237
+// Module ID: 6200
+// Function ID: 55610
 // Name: useUserIdsForLinkStatus
-// Dependencies: [31, 1849, 6769, 6770, 624, 7123, 7124, 6827, 2]
+// Dependencies: [31, 1850, 5765, 5766, 624, 6201, 6202, 5827, 2]
 // Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUsers, useActivityWindowTimeStamp, useHasActiveLinks, useHasActiveParentLinks, useHasMaxConnections, useLinkTimestampText, usePendingRequestCount, useRequiresParentalConsent, useUserQRLinkUrl
 
-// Module 7122 (useUserIdsForLinkStatus)
+// Module 6200 (useUserIdsForLinkStatus)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -113,7 +113,7 @@ export const useUserQRLinkUrl = function useUserQRLinkUrl() {
   return tmp3;
 };
 export const useHasMaxConnections = function useHasMaxConnections() {
-  return useActiveLinkUserIds().length >= (importDefault(7123)() ? closure_8 : closure_9);
+  return useActiveLinkUserIds().length >= (importDefault(6201)() ? closure_8 : closure_9);
 };
 export const usePendingRequestCount = function usePendingRequestCount() {
   const items = [_isNativeReflectConstruct];
@@ -156,8 +156,8 @@ export const useAcceptedRequestsCount = function useAcceptedRequestsCount() {
 };
 export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(activityWindowTimestampFormatter) {
   const _require = activityWindowTimestampFormatter;
-  let closure_1 = _require(7124).useSelectedTeenId();
-  const obj = _require(7124);
+  let closure_1 = _require(6202).useSelectedTeenId();
+  const obj = _require(6202);
   const items = [closure_5];
   const stateFromStores = _require(624).useStateFromStores(items, () => {
     let rangeStartTimestamp = null;
@@ -170,8 +170,8 @@ export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(ac
   if (null != stateFromStores) {
     const _Date = Date;
     const date = new Date(stateFromStores);
-    result = _require(6827).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
-    const obj3 = _require(6827);
+    result = _require(5827).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
+    const obj3 = _require(5827);
   }
   return result;
 };
@@ -183,7 +183,7 @@ export const useLinkTimestampText = function useLinkTimestampText(id, status) {
     return null;
   } else {
     const _Date = Date;
-    _require(6827).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
-    const obj2 = _require(6827);
+    _require(5827).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
+    const obj2 = _require(5827);
   }
 };

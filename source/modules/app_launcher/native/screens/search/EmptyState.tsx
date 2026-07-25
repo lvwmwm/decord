@@ -1,10 +1,10 @@
-// Module ID: 11258
-// Function ID: 87672
+// Module ID: 11219
+// Function ID: 87317
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4130, 11201, 8226, 1212, 3843, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 11162, 7955, 1212, 3844, 4127, 2]
 // Exports: default
 
-// Module 11258 (EmptyState)
+// Module 11219 (EmptyState)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,8 +20,8 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = callback();
-  let obj = flag(11201);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(8226).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
+  let obj = flag(11162);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(7955).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
   const items = [flag];
   const effect = React.useEffect(() => {
     const intl = flag(outer1_1[6]).intl;
@@ -47,7 +47,7 @@ export default function EmptyState(showsGenericMessage) {
     stringResult = string(t.LSNOYf);
   }
   obj1.children = stringResult;
-  obj.children = jsx(flag(4126).Text, { style: tmp.text, variant: "text-sm/medium", color: "text-default" });
+  obj.children = jsx(flag(4127).Text, { style: tmp.text, variant: "text-sm/medium", color: "text-default" });
   obj.children = <View style={tmp.textContainer} />;
   return <View style={tmp.textContainer} />;
 };

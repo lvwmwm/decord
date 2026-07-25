@@ -1,10 +1,10 @@
-// Module ID: 16479
-// Function ID: 128379
+// Module ID: 16490
+// Function ID: 128547
 // Name: useArchiveOrDelete
-// Dependencies: [5, 57, 31, 14151, 14166, 1212, 4471, 1273, 44, 3830, 2]
+// Dependencies: [5, 57, 31, 14162, 14177, 1212, 4472, 1273, 44, 3831, 2]
 // Exports: default
 
-// Module 16479 (useArchiveOrDelete)
+// Module 16490 (useArchiveOrDelete)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -30,18 +30,18 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId)
     const obj = callback(tmp);
     return obj(...arguments);
   }
-  let obj = _require(14151);
+  let obj = _require(14162);
   const subscriptionListing = obj.useSubscriptionListing(editStateId);
-  const removeEditStateId = importAll(14166).useEditStateIds(groupListingId, guildId).removeEditStateId;
-  const obj2 = importAll(14166);
-  const deleteSubscriptionListing = _require(14151).useDeleteSubscriptionListing();
+  const removeEditStateId = importAll(14177).useEditStateIds(groupListingId, guildId).removeEditStateId;
+  const obj2 = importAll(14177);
+  const deleteSubscriptionListing = _require(14162).useDeleteSubscriptionListing();
   ({ error, deleteSubscriptionListing: closure_8, submitting } = deleteSubscriptionListing);
-  const obj3 = _require(14151);
-  const archiveSubscriptionListing = _require(14151).useArchiveSubscriptionListing();
+  const obj3 = _require(14162);
+  const archiveSubscriptionListing = _require(14162).useArchiveSubscriptionListing();
   ({ error: error2, archiveSubscriptionListing: closure_9 } = archiveSubscriptionListing);
   let closure_10 = removeEditStateId(null);
-  const obj4 = _require(14151);
-  const first = callback(importAll(14166).useName(editStateId), 1)[0];
+  const obj4 = _require(14162);
+  const first = callback(importAll(14177).useName(editStateId), 1)[0];
   let archived;
   if (null != subscriptionListing) {
     archived = subscriptionListing.archived;
@@ -74,8 +74,8 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId)
         if (null != tmp) {
           ref.current = tmp;
           const intl = guildId(1212).intl;
-          editStateId(3830).presentFailedToast(intl.string(guildId(1212).t.R0RpRX));
-          const obj = editStateId(3830);
+          editStateId(3831).presentFailedToast(intl.string(guildId(1212).t.R0RpRX));
+          const obj = editStateId(3831);
         }
       }, items);
       obj = {

@@ -1,9 +1,9 @@
-// Module ID: 13808
-// Function ID: 105839
+// Module ID: 13819
+// Function ID: 105966
 // Name: toggle
-// Dependencies: [5590, 7751, 653, 13778, 4470, 1212, 4561, 13809, 13810, 566, 10127, 2]
+// Dependencies: [5590, 7697, 653, 13789, 4471, 1212, 4562, 13820, 13821, 566, 10059, 2]
 
-// Module 13808 (toggle)
+// Module 13819 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Consents } from "ME";
 import createToggle from "createToggle";
@@ -22,11 +22,11 @@ createToggle = {
   onValueChange: function handleUsageStatisticsChange(arg0) {
     if (arg0) {
       let items = [Consents.USAGE_STATISTICS];
-      const obj3 = require(13809) /* handleRequestSuccess */;
-      require(13809) /* handleRequestSuccess */.setConsents(items, []).catch((message) => outer1_0(outer1_2[8]).showDataPrivacyRateLimitAlert(message.message));
-      const setConsentsResult = require(13809) /* handleRequestSuccess */.setConsents(items, []);
+      const obj3 = require(13820) /* handleRequestSuccess */;
+      require(13820) /* handleRequestSuccess */.setConsents(items, []).catch((message) => outer1_0(outer1_2[8]).showDataPrivacyRateLimitAlert(message.message));
+      const setConsentsResult = require(13820) /* handleRequestSuccess */.setConsents(items, []);
     } else {
-      let obj = importDefault(4470);
+      let obj = importDefault(4471);
       obj = {};
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.title = intl.string(require(1212) /* getSystemLocale */.t.OdPCbN);
@@ -36,7 +36,7 @@ createToggle = {
       obj.confirmText = intl3.string(require(1212) /* getSystemLocale */.t["D3+rU4"]);
       const intl4 = require(1212) /* getSystemLocale */.intl;
       obj.cancelText = intl4.string(require(1212) /* getSystemLocale */.t.kYpG0u);
-      obj.confirmColor = importDefault(4561).Colors.RED;
+      obj.confirmColor = importDefault(4562).Colors.RED;
       obj.onConfirm = function onConfirm() {
         const items = [outer1_4.USAGE_STATISTICS];
         return outer1_0(outer1_2[7]).setConsents([], items);
@@ -45,7 +45,7 @@ createToggle = {
     }
   },
   useIsDisabled() {
-    return require(13778) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(13789) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

@@ -1,10 +1,10 @@
-// Module ID: 11259
-// Function ID: 87675
+// Module ID: 11220
+// Function ID: 87320
 // Name: AppInThisServer
-// Dependencies: [31, 27, 33, 4130, 689, 11237, 1327, 4126, 1212, 4660, 1324, 11201, 8416, 8226, 11206, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 11198, 1327, 4127, 1212, 4661, 1324, 11162, 8174, 7955, 11167, 2]
 // Exports: default
 
-// Module 11259 (AppInThisServer)
+// Module 11220 (AppInThisServer)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function AppInThisServer(onAppSelected) {
   onAppSelected = onAppSelected.onAppSelected;
   const tmp2 = _createForOfIteratorHelperLoose();
   const application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11201);
+  let obj = onAppSelected(11162);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
@@ -46,13 +46,13 @@ function AppInThisServer(onAppSelected) {
   let tmp5 = null;
   if (null != appLauncherIconSource) {
     obj = { iconSource: appLauncherIconSource, wrapperStyle: tmp2.iconContainer, iconSize: 36 };
-    tmp5 = callback(application(11206), obj);
+    tmp5 = callback(application(11167), obj);
   }
   const items1 = [tmp5, ];
   const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-  items1[1] = callback(onAppSelected(4126).Text, obj1);
+  items1[1] = callback(onAppSelected(4127).Text, obj1);
   obj.children = items1;
-  return closure_6(onAppSelected(8416).PressableScale, obj, application.id);
+  return closure_6(onAppSelected(8174).PressableScale, obj, application.id);
 }
 ({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
@@ -98,7 +98,7 @@ export default function InThisServerSection(arg0) {
     obj = { variant: "text-lg/bold", color: "mobile-text-heading-primary" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.children = intl.string(require(1212) /* getSystemLocale */.t.oJyzCu);
-    const items1 = [callback(require(4126) /* Text */.Text, obj), ];
+    const items1 = [callback(require(4127) /* Text */.Text, obj), ];
     let tmp10 = null != dependencyMap;
     if (tmp10) {
       const obj1 = {
@@ -115,8 +115,8 @@ export default function InThisServerSection(arg0) {
       const obj2 = { variant: "text-sm/medium", color: "text-brand" };
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["/qG8v7"]);
-      obj1.children = callback(require(4126) /* Text */.Text, obj2);
-      tmp10 = callback(require(4660) /* PressableBase */.PressableOpacity, obj1);
+      obj1.children = callback(require(4127) /* Text */.Text, obj2);
+      tmp10 = callback(require(4661) /* PressableBase */.PressableOpacity, obj1);
     }
     items1[1] = tmp10;
     obj.children = items1;

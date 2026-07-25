@@ -1,10 +1,10 @@
-// Module ID: 8221
-// Function ID: 64788
+// Module ID: 7964
+// Function ID: 63433
 // Name: isApplicationAgeRestricted
-// Dependencies: [4167, 8222, 8223, 2]
+// Dependencies: [4168, 7965, 7966, 2]
 // Exports: default
 
-// Module 8221 (isApplicationAgeRestricted)
+// Module 7964 (isApplicationAgeRestricted)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -17,9 +17,9 @@ export default function isApplicationAgeRestricted(applicationId) {
     if (null != application) {
       prop = application.contentClassification;
     }
-    return require(8223) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(prop);
+    return require(7966) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(prop);
   } else {
     return false;
   }
-  obj = importDefault(8222);
+  obj = importDefault(7965);
 };

@@ -1,17 +1,17 @@
-// Module ID: 13760
-// Function ID: 105507
+// Module ID: 13771
+// Function ID: 105634
 // Name: handleUnblockUser
-// Dependencies: [31, 1849, 33, 8962, 5462, 5165, 1273, 1212, 8537, 4543, 566, 2]
+// Dependencies: [31, 1850, 33, 8850, 5462, 5164, 1273, 1212, 8297, 4544, 566, 2]
 // Exports: default
 
-// Module 13760 (handleUnblockUser)
+// Module 13771 (handleUnblockUser)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function handleUnblockUser(id) {
-  importDefault(8962).unblockUser(id, { location: "blocked-users-list-mobile-v2" });
+  importDefault(8850).unblockUser(id, { location: "blocked-users-list-mobile-v2" });
 }
 function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
@@ -60,8 +60,8 @@ function BlockedUserRow(userRecord) {
   obj1.onPress = function onPress() {
     outer1_5(userRecord.id);
   };
-  obj.trailing = jsx(userRecord(4543).Button, { size: "sm", variant: "secondary" });
-  return jsx(userRecord(5165).TableRow, { name: "unblock" });
+  obj.trailing = jsx(userRecord(4544).Button, { size: "sm", variant: "secondary" });
+  return jsx(userRecord(5164).TableRow, { name: "unblock" });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
 

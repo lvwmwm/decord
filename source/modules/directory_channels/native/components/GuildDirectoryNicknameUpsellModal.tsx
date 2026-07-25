@@ -1,10 +1,10 @@
-// Module ID: 11721
-// Function ID: 90943
+// Module ID: 11691
+// Function ID: 90693
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 57, 31, 27, 1838, 11710, 33, 4130, 5084, 689, 566, 5160, 5080, 4029, 5513, 4126, 1212, 9039, 1273, 4543, 11711, 11720, 5087, 5517, 5450, 2]
+// Dependencies: [5, 57, 31, 27, 1838, 11680, 33, 4131, 5084, 689, 566, 5159, 5080, 4030, 5513, 4127, 1212, 8927, 1273, 4544, 11681, 11690, 5087, 5517, 5450, 2]
 // Exports: default
 
-// Module 11721 (GuildDirectoryNicknameUpsell)
+// Module 11691 (GuildDirectoryNicknameUpsell)
 import GuildPrompts from "GuildPrompts";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -34,7 +34,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   let obj = require(566) /* initialize */;
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(closure_0));
-  const insets = importDefault(5160)().insets;
+  const insets = importDefault(5159)().insets;
   const tmp3 = ref(_handleSubmit.useState(null), 2);
   const first = tmp3[0];
   dependencyMap = tmp3[1];
@@ -58,11 +58,11 @@ function GuildDirectoryNicknameUpsell(arg0) {
   }
   obj4.guildName = name;
   obj3.children = intl.format(require(1212) /* getSystemLocale */.t["d+6kzl"], obj4);
-  const items3 = [callback(require(4126) /* Text */.Text, obj3), ];
+  const items3 = [callback(require(4127) /* Text */.Text, obj3), ];
   const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl2.string(require(1212) /* getSystemLocale */.t.b3L8yx);
-  items3[1] = callback(require(4126) /* Text */.Text, obj5);
+  items3[1] = callback(require(4127) /* Text */.Text, obj5);
   obj2.children = items3;
   items2[1] = closure_11(closure_6, obj2);
   const obj6 = {};
@@ -102,7 +102,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
       }
     }, 100);
   };
-  items2[2] = tmp14(importDefault(9039), obj6);
+  items2[2] = tmp14(importDefault(8927), obj6);
   items2[3] = callback(closure_6, { style: tmp.redesignGrowSpacing });
   const obj8 = { style: tmp.redesignButtonContainer };
   const obj9 = { size: "lg" };
@@ -111,7 +111,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   obj9.onPress = function handleSubmit() {
     return _handleSubmit(...arguments);
   };
-  obj8.children = callback(require(4543) /* Button */.Button, obj9);
+  obj8.children = callback(require(4544) /* Button */.Button, obj9);
   items2[4] = callback(closure_6, obj8);
   obj.children = items2;
   return tmp7(tmp8, obj);

@@ -1,9 +1,9 @@
-// Module ID: 7094
-// Function ID: 56890
+// Module ID: 6112
+// Function ID: 54702
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 7095, 7096, 1907, 3767, 1849, 5043, 4974, 22, 5046, 7097, 1331, 5047, 7099, 1832, 4114, 4119, 3829, 1443, 2]
+// Dependencies: [6, 7, 6113, 6114, 1908, 3768, 1850, 5044, 4975, 22, 5047, 6115, 1331, 5048, 6117, 1832, 4115, 4120, 3830, 1443, 2]
 
-// Module 7094 (_createForOfIteratorHelperLoose)
+// Module 6112 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import HeaderRecord from "HeaderRecord";
 import closure_5 from "_isNativeReflectConstruct";
@@ -94,8 +94,8 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getAutocompleterBoosterMap(USER, frecencyBoosters) {
   if (frecencyBoosters.frecencyBoosters) {
-    let boosterMap = require(4974) /* _createForOfIteratorHelperLoose */.getBoosterMap(USER);
-    const obj2 = require(4974) /* _createForOfIteratorHelperLoose */;
+    let boosterMap = require(4975) /* _createForOfIteratorHelperLoose */.getBoosterMap(USER);
+    const obj2 = require(4975) /* _createForOfIteratorHelperLoose */;
   } else {
     boosterMap = {};
   }

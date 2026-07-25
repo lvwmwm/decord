@@ -1,9 +1,9 @@
-// Module ID: 6927
-// Function ID: 55277
+// Module ID: 5918
+// Function ID: 52583
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 3758, 6928, 4015, 686, 664, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 3759, 5919, 4016, 686, 664, 566, 2]
 
-// Module 6927 (_isNativeReflectConstruct)
+// Module 5918 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import canBypassSlowmodeHelper from "canBypassSlowmodeHelper";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -110,14 +110,14 @@ function setCooldown(channel, SendMessage, cooldownMs) {
     const id = channel.id;
     delete tmp2[tmp];
   }
-  let obj = _require(6928);
+  let obj = _require(5919);
   if (!obj.canBypassSlowmode(channel, SendMessage)) {
     if (cooldownMs > 0) {
       const _Date = Date;
       const sum = cooldownMs + Date.now();
       dependencyMap = sum;
       obj = { rateLimitPerUser: channel.rateLimitPerUser, cooldownMs, cooldownEndTimestamp: sum };
-      const Timeout = _require(4015).Timeout;
+      const Timeout = _require(4016).Timeout;
       const prototype = Timeout.prototype;
       const timeout = new Timeout();
       obj.timer = timeout;

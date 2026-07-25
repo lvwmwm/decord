@@ -1,13 +1,13 @@
-// Module ID: 4525
-// Function ID: 39767
+// Module ID: 4526
+// Function ID: 39778
 // Name: AccessibilityView
-// Dependencies: [31, 27, 33, 4526, 3991, 2]
+// Dependencies: [31, 27, 33, 4527, 3992, 2]
 
-// Module 4525 (AccessibilityView)
+// Module 4526 (AccessibilityView)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 const forwardRefResult = require("result").forwardRef((accessibilityViewIsModal, ref) => {
   let nativeID;
@@ -28,7 +28,7 @@ const forwardRefResult = require("result").forwardRef((accessibilityViewIsModal,
     }
   }
   obj = { accessibilityViewIsModal: flag, nativeID };
-  importDefault(4526)(obj);
+  importDefault(4527)(obj);
   obj = { ref, nativeID };
   let collapsable = null == nativeID;
   if (collapsable) {
@@ -40,7 +40,7 @@ const forwardRefResult = require("result").forwardRef((accessibilityViewIsModal,
   const merged1 = Object.assign(merged);
   return <View ref={arg1} nativeID={nativeID} />;
 });
-const animatedComponent = require("module_3991").createAnimatedComponent(forwardRefResult);
+const animatedComponent = require("module_3992").createAnimatedComponent(forwardRefResult);
 const result = require("jsxProd").fileFinishedImporting("design/components/AccessibilityView/AccessibilityView.native.tsx");
 
 export const AccessibilityView = forwardRefResult;

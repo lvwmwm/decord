@@ -1,23 +1,23 @@
-// Module ID: 14055
-// Function ID: 107546
+// Module ID: 14066
+// Function ID: 107673
 // Name: CloseButton
-// Dependencies: [33, 5788, 7696, 14054, 1212, 5087, 14056, 5517, 2]
+// Dependencies: [33, 6695, 7640, 14065, 1212, 5087, 14067, 5517, 2]
 // Exports: default
 
-// Module 14055 (CloseButton)
+// Module 14066 (CloseButton)
 import { jsx } from "jsxProd";
 
 function CloseButton() {
   const obj = {
-    source: importDefault(7696),
+    source: importDefault(7640),
     onPress() {
       return outer1_1(outer1_2[3]).hideModal();
     }
   };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  return jsx(require(5788) /* HeaderActionButton */.HeaderActionButton, {
-    source: importDefault(7696),
+  return jsx(require(6695) /* HeaderActionButton */.HeaderActionButton, {
+    source: importDefault(7640),
     onPress() {
       return outer1_1(outer1_2[3]).hideModal();
     }

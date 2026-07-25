@@ -1,10 +1,10 @@
-// Module ID: 9205
-// Function ID: 72064
+// Module ID: 9097
+// Function ID: 71549
 // Name: AVATAR_SIZE
-// Dependencies: [31, 27, 9184, 33, 4130, 689, 1392, 9206, 1557, 3991, 4554, 5513, 9207, 4126, 1212, 2]
+// Dependencies: [31, 27, 9076, 33, 4131, 689, 1392, 9098, 1557, 3992, 4555, 5513, 9099, 4127, 1212, 2]
 // Exports: default
 
-// Module 9205 (AVATAR_SIZE)
+// Module 9097 (AVATAR_SIZE)
 import "result";
 import { View } from "get ActivityIndicator";
 import BANNER_RATIO_HEIGHT_16_9 from "BANNER_RATIO_HEIGHT_16_9";

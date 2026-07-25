@@ -1,10 +1,10 @@
-// Module ID: 8283
-// Function ID: 65283
+// Module ID: 8018
+// Function ID: 63838
 // Name: _activityFromSetting
-// Dependencies: [31, 4991, 653, 3771, 3803, 566, 2]
+// Dependencies: [31, 4992, 653, 3772, 3804, 566, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 8283 (_activityFromSetting)
+// Module 8018 (_activityFromSetting)
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ActivityTypes } from "ME";
@@ -19,15 +19,15 @@ function _activityFromSetting(emojiName) {
     if (null != emojiName.emojiName) {
       tmp = null;
       if ("" !== emojiName.emojiName) {
-        const obj6 = importDefault(3771);
-        const byName = obj6.getByName(importDefault(3771).convertSurrogateToName(emojiName.emojiName, false));
+        const obj6 = importDefault(3772);
+        const byName = obj6.getByName(importDefault(3772).convertSurrogateToName(emojiName.emojiName, false));
         let tmp2 = null;
         if (null != byName) {
           obj = { id: null, name: byName.surrogates, animated: false };
           tmp2 = obj;
         }
         tmp = tmp2;
-        const obj7 = importDefault(3771);
+        const obj7 = importDefault(3772);
       }
     }
   }

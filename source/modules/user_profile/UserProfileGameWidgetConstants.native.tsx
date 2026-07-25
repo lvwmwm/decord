@@ -1,10 +1,10 @@
-// Module ID: 12015
-// Function ID: 92906
+// Module ID: 11991
+// Function ID: 92711
 // Name: widgetGameTagMetadata
-// Dependencies: [12016, 12017, 9334, 9336, 3832, 2]
+// Dependencies: [11992, 11993, 9227, 9229, 3833, 2]
 // Exports: getWidgetGameTagMetadata
 
-// Module 12015 (widgetGameTagMetadata)
+// Module 11991 (widgetGameTagMetadata)
 import WidgetGameTagIconRole from "WidgetGameTagIconRole";
 
 const obj = {};

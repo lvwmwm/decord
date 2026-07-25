@@ -1,10 +1,10 @@
-// Module ID: 9368
-// Function ID: 73153
+// Module ID: 9274
+// Function ID: 72678
 // Name: maybeFetchTopEmojisByGuild
-// Dependencies: [1849, 4991, 4994, 9369, 2]
+// Dependencies: [1850, 4992, 4995, 9275, 2]
 // Exports: maybeFetchTopEmojisByGuild
 
-// Module 9368 (maybeFetchTopEmojisByGuild)
+// Module 9274 (maybeFetchTopEmojisByGuild)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -23,8 +23,8 @@ export const maybeFetchTopEmojisByGuild = function maybeFetchTopEmojisByGuild(gu
         }
       }
       if (!isFetching.getIsFetching(guildId)) {
-        const topEmojis = require(9369) /* fetchTopEmojis */.fetchTopEmojis(guildId);
-        const obj = require(9369) /* fetchTopEmojis */;
+        const topEmojis = require(9275) /* fetchTopEmojis */.fetchTopEmojis(guildId);
+        const obj = require(9275) /* fetchTopEmojis */;
       }
     }
   }

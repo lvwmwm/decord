@@ -1,10 +1,10 @@
-// Module ID: 14475
-// Function ID: 110584
+// Module ID: 14486
+// Function ID: 110711
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 33, 1273, 4126, 4543, 4130, 689, 4541, 7636, 2]
+// Dependencies: [31, 27, 33, 1273, 4127, 4544, 4131, 689, 4542, 7575, 2]
 // Exports: default
 
-// Module 14475 (_createForOfIteratorHelperLoose)
+// Module 14486 (_createForOfIteratorHelperLoose)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -126,10 +126,10 @@ function ComparisonRow(entry) {
   }
   items1[2] = str2;
   obj.children = items1;
-  const items2 = [callback(require(4126) /* Text */.Text, obj), ];
+  const items2 = [callback(require(4127) /* Text */.Text, obj), ];
   const obj1 = { style: tmp.comparisonButtons };
   const obj2 = { style: tmp.comparisonSide };
-  const items3 = [callback2(require(4126) /* Text */.Text, { variant: "text-xxs/medium", color: "text-muted", children: "legacy" }), ];
+  const items3 = [callback2(require(4127) /* Text */.Text, { variant: "text-xxs/medium", color: "text-muted", children: "legacy" }), ];
   const obj3 = { look: entry.look, color: entry.color, size: require(1273) /* Button */.ButtonSizes.MEDIUM, shrink: true, text: combined };
   let darkText = null;
   if (hasItem) {
@@ -147,7 +147,7 @@ function ComparisonRow(entry) {
   const items4 = [callback(closure_3, obj2), ];
   if (null != redesignVariant) {
     const obj4 = { style: tmp.comparisonSide };
-    const items5 = [callback2(require(4126) /* Text */.Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
+    const items5 = [callback2(require(4127) /* Text */.Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
     const obj5 = {
       variant: redesignVariant,
       size: "md",
@@ -156,11 +156,11 @@ function ComparisonRow(entry) {
 
         }
     };
-    items5[1] = callback2(require(4543) /* Button */.Button, obj5);
+    items5[1] = callback2(require(4544) /* Button */.Button, obj5);
     obj4.children = items5;
     let tmp23 = callback(closure_3, obj4);
   } else {
-    const obj6 = { style: tmp.comparisonSide, children: callback2(require(4126) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" }) };
+    const obj6 = { style: tmp.comparisonSide, children: callback2(require(4127) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" }) };
     tmp23 = callback2(closure_3, obj6);
   }
   items4[1] = tmp23;
@@ -197,7 +197,7 @@ function ComboRow(combo) {
   obj.color = str2;
   const items1 = [combined, " (", combo.count, ")"];
   obj.children = items1;
-  const items2 = [closure_4(require(4126) /* Text */.Text, obj), ];
+  const items2 = [closure_4(require(4127) /* Text */.Text, obj), ];
   obj = { look: combo.look, color: combo.color, size: combo.size, shrink: combo.shrink, text: combined };
   let darkText = null;
   if (hasItem) {
@@ -375,9 +375,9 @@ export default function UserSettingsDesignSystemLegacyButton() {
   }
   const obj1 = { style: tmp.container };
   const obj2 = { spacing: 4, style: tmp.header };
-  const items1 = [callback2(require(4126) /* Text */.Text, { variant: "heading-xl/bold", children: "Migration Mapping" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Legacy (uikit-native) \u2192 Mana side-by-side" })];
+  const items1 = [callback2(require(4127) /* Text */.Text, { variant: "heading-xl/bold", children: "Migration Mapping" }), callback2(require(4127) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Legacy (uikit-native) \u2192 Mana side-by-side" })];
   obj2.children = items1;
-  const items2 = [callback(require(4541) /* Stack */.Stack, obj2), , , ];
+  const items2 = [callback(require(4542) /* Stack */.Stack, obj2), , , ];
   const entries = Object.entries(obj);
   items2[1] = entries.map((arg0) => {
     let arr;
@@ -387,9 +387,9 @@ export default function UserSettingsDesignSystemLegacyButton() {
     return outer1_5(outer1_0(outer1_1[9]).FormSection, obj, "cmp-" + tmp);
   });
   const obj3 = { spacing: 4, style: tmp.header };
-  const items3 = [callback2(require(4126) /* Text */.Text, { variant: "heading-xl/bold", children: "Legacy Button Audit" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
+  const items3 = [callback2(require(4127) /* Text */.Text, { variant: "heading-xl/bold", children: "Legacy Button Audit" }), callback2(require(4127) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
   obj3.children = items3;
-  items2[2] = callback(require(4541) /* Stack */.Stack, obj3);
+  items2[2] = callback(require(4542) /* Stack */.Stack, obj3);
   const entries1 = Object.entries(obj);
   items2[3] = entries1.map((arg0) => {
     let arr;

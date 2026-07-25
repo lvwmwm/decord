@@ -1,10 +1,10 @@
-// Module ID: 11568
-// Function ID: 90113
+// Module ID: 11534
+// Function ID: 89830
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [31, 4038, 4017, 566, 11569, 6786, 2]
+// Dependencies: [31, 4039, 4018, 566, 11535, 5782, 2]
 // Exports: default
 
-// Module 11568 (useFeaturedExpiringPowerup)
+// Module 11534 (useFeaturedExpiringPowerup)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

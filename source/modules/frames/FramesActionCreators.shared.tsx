@@ -1,25 +1,60 @@
-// Module ID: 10514
-// Function ID: 81343
+// Module ID: 5667
+// Function ID: 48483
 // Name: _launchFrame
-// Dependencies: [5, 10508, 686, 10515, 10866, 10516, 10553, 10544, 2]
+// Dependencies: [5, 5658, 686, 5668, 12546, 10570, 10545, 10576, 2]
 // Exports: launchFrame, refreshProxyTicket, stopFrame, updateFrameLayoutMode, updateFramePanelMode
 
-// Module 10514 (_launchFrame)
+// Module 5667 (_launchFrame)
 import leaveCurrentFrame from "leaveCurrentFrame";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
-function _launchFrame() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+async function _launchFrame(arg0, arg1) {
+  let iter = (function*(arg0) {
+    let applicationId;
+    let channelId;
+    ({ applicationId, channelId } = arg0);
+    yield undefined;
+    outer2_1(outer2_2[2]).dispatch({ type: "FRAME_LAUNCH_START", applicationId });
+    const obj = outer2_1(outer2_2[2]);
+    const obj2 = outer2_0(outer2_2[3]);
+    const tmp3 = yield outer2_0(outer2_2[3]).createProxyTicket(applicationId, channelId);
+    const result = outer2_0(outer2_2[4]).leaveCurrentEmbeddedActivity();
+    const obj3 = outer2_0(outer2_2[4]);
+    outer2_0(outer2_2[5]).leaveCurrentFrame();
+    const obj4 = outer2_0(outer2_2[5]);
+    outer2_1(outer2_2[2]).dispatch({ type: "FRAME_LAUNCH", applicationId, proxyTicket: tmp3, channelId });
+  })();
+  iter.next();
+  return iter;
 }
-function _refreshProxyTicket() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+async function _refreshProxyTicket(arg0, arg1) {
+  let iter = (function*(applicationId) {
+    applicationId = applicationId.applicationId;
+    yield undefined;
+    let obj = outer2_1(outer2_2[2]);
+    obj = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, refreshing: true };
+    obj.dispatch(obj);
+    const connectedFrame = outer2_4.getConnectedFrame();
+    applicationId = undefined;
+    if (null != connectedFrame) {
+      applicationId = tmp4.applicationId;
+    }
+    if (applicationId === applicationId) {
+      const channelId = connectedFrame.channelId;
+    }
+    const obj3 = outer2_0(outer2_2[3]);
+    const tmp7 = yield outer2_0(outer2_2[3]).createProxyTicket(applicationId, channelId);
+    outer2_1(outer2_2[2]).dispatch({ type: "FRAME_UPDATE_PROXY_TICKET", applicationId, proxyTicket: tmp7 });
+    const obj4 = outer2_1(outer2_2[2]);
+    obj = { type: "FRAME_SET_PROXY_TICKET_REFRESHING", applicationId, refreshing: false };
+    outer2_1(outer2_2[2]).dispatch(obj);
+    return true;
+  })();
+  iter.next();
+  return iter;
 }
-const result = require("dispatcher").fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
+let result = require("dispatcher").fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 
 export const launchFrame = function launchFrame(arg0) {
   return _launchFrame(...arguments);

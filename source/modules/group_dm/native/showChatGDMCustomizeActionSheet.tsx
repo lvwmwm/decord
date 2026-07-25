@@ -1,15 +1,15 @@
-// Module ID: 9143
-// Function ID: 71577
+// Module ID: 9035
+// Function ID: 71062
 // Name: showChatGDMCustomizeActionSheet
-// Dependencies: [4098, 4337, 9144, 1934, 2]
+// Dependencies: [4099, 4338, 9036, 1935, 2]
 // Exports: default
 
-// Module 9143 (showChatGDMCustomizeActionSheet)
+// Module 9035 (showChatGDMCustomizeActionSheet)
 const result = require("ChatGDMCustomizeActionSheet").fileFinishedImporting("modules/group_dm/native/showChatGDMCustomizeActionSheet.tsx");
 
 export default function showChatGDMCustomizeActionSheet(merged) {
-  let obj = importDefault(4098);
+  let obj = importDefault(4099);
   obj.hideActionSheet();
   obj = { presentation: "modal" };
-  importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(9144, dependencyMap.paths), merged, "customize-group-dm", obj);
+  importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(9036, dependencyMap.paths), merged, "customize-group-dm", obj);
 };

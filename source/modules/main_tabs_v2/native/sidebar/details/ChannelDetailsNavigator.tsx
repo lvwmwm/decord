@@ -1,9 +1,9 @@
-// Module ID: 15541
-// Function ID: 119595
+// Module ID: 15551
+// Function ID: 119723
 // Name: ConnectedCreateThreadHeaderButton
-// Dependencies: [31, 27, 1348, 9140, 653, 15385, 33, 9149, 624, 5650, 9843, 9158, 1212, 11831, 675, 15542, 5517, 5093, 3982, 1557, 15590, 477, 15591, 15592, 15593, 15594, 15442, 2]
+// Dependencies: [31, 27, 1348, 9032, 653, 15395, 33, 9041, 624, 5996, 9767, 9050, 1212, 11807, 675, 15552, 5517, 5093, 3983, 1557, 15600, 477, 15601, 15602, 15603, 15604, 15452, 2]
 
-// Module 15541 (ConnectedCreateThreadHeaderButton)
+// Module 15551 (ConnectedCreateThreadHeaderButton)
 import importAllResult from "result";
 import { View } from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,7 +30,7 @@ function ConnectedCreateThreadHeaderButton(channelId) {
 }
 function CreateThreadHeaderButton(channel) {
   channel = channel.channel;
-  let obj = channel(5650);
+  let obj = channel(5996);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp3 = null;
@@ -39,19 +39,19 @@ function CreateThreadHeaderButton(channel) {
     const intl = channel(1212).intl;
     obj.accessibilityLabel = intl.string(channel(1212).t.rBIGBL);
     obj.onPress = tmp2;
-    obj.source = importDefault(11831);
-    tmp3 = callback(channel(9158).HeaderIconButton, obj);
+    obj.source = importDefault(11807);
+    tmp3 = callback(channel(9050).HeaderIconButton, obj);
   }
   return tmp3;
 }
 function getHeaderLeft(navigation) {
   navigation = navigation.navigation;
   if (navigation.initialRouteName === navigation.routeName) {
-    let renderModalCloseImage = require(9158) /* GenericHeaderTitle */.getRenderModalCloseImage(navigation);
-    const obj2 = require(9158) /* GenericHeaderTitle */;
+    let renderModalCloseImage = require(9050) /* GenericHeaderTitle */.getRenderModalCloseImage(navigation);
+    const obj2 = require(9050) /* GenericHeaderTitle */;
   } else {
-    renderModalCloseImage = require(9158) /* GenericHeaderTitle */.getRenderModalBackImage(navigation);
-    const obj = require(9158) /* GenericHeaderTitle */;
+    renderModalCloseImage = require(9050) /* GenericHeaderTitle */.getRenderModalBackImage(navigation);
+    const obj = require(9050) /* GenericHeaderTitle */;
   }
   return renderModalCloseImage;
 }

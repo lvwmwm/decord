@@ -1,10 +1,10 @@
-// Module ID: 16526
-// Function ID: 128724
+// Module ID: 16537
+// Function ID: 128892
 // Name: SectionSeparator
-// Dependencies: [31, 27, 33, 4130, 689, 1273, 15018, 4126, 14176, 1557, 5187, 16527, 5189, 1212, 16528, 9441, 16529, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1273, 15028, 4127, 14187, 1557, 5187, 16538, 5189, 1212, 16539, 9361, 16540, 2]
 // Exports: default
 
-// Module 16526 (SectionSeparator)
+// Module 16537 (SectionSeparator)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,14 +27,14 @@ function BenefitRow(description) {
   description = description.description;
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.benefitRowContainer };
-  obj = { children: callback(importDefault(15018), {}) };
+  obj = { children: callback(importDefault(15028), {}) };
   const items = [callback(View, obj), ];
   obj = { style: tmp.benefitTextContainer };
   const items1 = [description.title, ];
   let tmp6 = null;
   if (null != description) {
     const obj1 = { style: tmp.benefitDescription, variant: "text-sm/normal", color: "interactive-text-default", children: description };
-    tmp6 = callback(require(4126) /* Text */.Text, obj1);
+    tmp6 = callback(require(4127) /* Text */.Text, obj1);
   }
   items1[1] = tmp6;
   obj.children = items1;
@@ -47,7 +47,7 @@ function BenefitSection(arg0) {
   let sectionTitle;
   const obj = {};
   ({ sectionTitle, children } = arg0);
-  const items = [callback(require(14176) /* SectionTitle */.SectionTitle, { children: sectionTitle }), callback(require(1273) /* Button */.Spacer, { size: 14 }), children];
+  const items = [callback(require(14187) /* SectionTitle */.SectionTitle, { children: sectionTitle }), callback(require(1273) /* Button */.Spacer, { size: 14 }), children];
   obj.children = items;
   return callback2(closure_5, obj);
 }
@@ -88,23 +88,23 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   let obj = { scrollable: true, startExpanded: true };
   obj = { style: tmp.container };
   obj = { template, handleSelectTemplateInPreview, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: true };
-  let items = [callback(require(16527) /* GuildRoleSubscriptionTierTemplateBasicInfo */.GuildRoleSubscriptionTierTemplateBasicInfo, obj), callback(View, { style: tmp.separator }), ];
+  let items = [callback(require(16538) /* GuildRoleSubscriptionTierTemplateBasicInfo */.GuildRoleSubscriptionTierTemplateBasicInfo, obj), callback(View, { style: tmp.separator }), ];
   const obj2 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj3 };
   const obj4 = { variant: "text-sm/bold", color: "text-default", style: { textTransform: "uppercase" } };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj4.children = intl.string(require(1212) /* getSystemLocale */.t.CjC5XZ);
-  const items1 = [callback(require(4126) /* Text */.Text, obj4), callback(require(1273) /* Button */.Spacer, { size: 4 }), , , , , , , , , ];
+  const items1 = [callback(require(4127) /* Text */.Text, obj4), callback(require(1273) /* Button */.Spacer, { size: 4 }), , , , , , , , , ];
   const obj5 = { variant: "text-sm/normal", color: "text-muted" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl2.string(require(1212) /* getSystemLocale */.t.bCb3c8);
-  items1[2] = callback(require(4126) /* Text */.Text, obj5);
+  items1[2] = callback(require(4127) /* Text */.Text, obj5);
   items1[3] = callback(require(1273) /* Button */.Spacer, { size: 24 });
   const obj6 = { variant: "text-xs/bold", color: "text-default", style: { textTransform: "uppercase" } };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.children = intl3.string(require(1212) /* getSystemLocale */.t.ZKyfEo);
-  items1[4] = callback(require(4126) /* Text */.Text, obj6);
+  items1[4] = callback(require(4127) /* Text */.Text, obj6);
   items1[5] = callback(require(1273) /* Button */.Spacer, { size: 8 });
-  items1[6] = callback(require(16528) /* GuildRoleSubscriptionRolePreview */.GuildRoleSubscriptionRolePreview, { roleColor: role_color, roleImage: image, roleName: name, guildId });
+  items1[6] = callback(require(16539) /* GuildRoleSubscriptionRolePreview */.GuildRoleSubscriptionRolePreview, { roleColor: role_color, roleImage: image, roleName: name, guildId });
   items1[7] = callback(SectionSeparator, {});
   const obj7 = {};
   const intl4 = require(1212) /* getSystemLocale */.intl;
@@ -122,7 +122,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
       return outer1_4(outer1_9, { title: outer1_6(outer1_3, obj), description: description.description }, description.id);
     })
   };
-  obj7.children = callback(require(9441) /* GappedList */.GappedList, obj8);
+  obj7.children = callback(require(9361) /* GappedList */.GappedList, obj8);
   items1[8] = callback(BenefitSection, obj7);
   items1[9] = callback(SectionSeparator, {});
   const obj9 = {};
@@ -136,7 +136,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
       return outer1_4(outer1_9, obj, arg1);
     })
   };
-  obj9.children = callback(require(9441) /* GappedList */.GappedList, obj10);
+  obj9.children = callback(require(9361) /* GappedList */.GappedList, obj10);
   items1[10] = callback(BenefitSection, obj9);
   obj2.children = items1;
   items[2] = callback2(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj2);

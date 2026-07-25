@@ -1,10 +1,10 @@
-// Module ID: 13742
-// Function ID: 105400
+// Module ID: 13753
+// Function ID: 105527
 // Name: TwoFASetupScan
-// Dependencies: [57, 31, 33, 4130, 689, 5490, 13740, 13736, 5121, 1273, 1212, 4126, 4660, 2]
+// Dependencies: [57, 31, 33, 4131, 689, 5490, 13751, 13747, 5121, 1273, 1212, 4127, 4661, 2]
 // Exports: default
 
-// Module 13742 (TwoFASetupScan)
+// Module 13753 (TwoFASetupScan)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import jsxProd from "jsxProd";
@@ -30,7 +30,7 @@ export default function TwoFASetupScan(totpSecret) {
     dependencyMap(true);
     totpSecret(5490).copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
   }, items);
-  let obj = totpSecret(13740);
+  let obj = totpSecret(13751);
   const twoFASetupStyles = obj.useTwoFASetupStyles();
   obj = {};
   obj = { bottom: true, style: tmp.container };
@@ -46,7 +46,7 @@ export default function TwoFASetupScan(totpSecret) {
   const intl2 = totpSecret(1212).intl;
   obj2.children = intl2.string(totpSecret(1212).t["UQR+Qy"]);
   items2[1] = callback2(totpSecret(1273).LegacyText, obj2);
-  items2[2] = callback2(totpSecret(4126).Text, { variant: "text-md/bold", style: { textAlign: "center" }, children: totpSecret });
+  items2[2] = callback2(totpSecret(4127).Text, { variant: "text-md/bold", style: { textAlign: "center" }, children: totpSecret });
   const obj3 = { accessibilityRole: "button", onPress: callback };
   const obj4 = { style: tmp.copy };
   const intl3 = totpSecret(1212).intl;
@@ -59,8 +59,8 @@ export default function TwoFASetupScan(totpSecret) {
   }
   obj4.children = stringResult;
   obj3.children = callback2(totpSecret(1273).LegacyText, obj4);
-  items2[3] = callback2(totpSecret(4660).PressableOpacity, obj3);
+  items2[3] = callback2(totpSecret(4661).PressableOpacity, obj3);
   obj.children = items2;
   obj.children = closure_5(totpSecret(5121).SafeAreaPaddingView, obj);
-  return callback2(totpSecret(13736).TwoFASetupModalScreen, obj);
+  return callback2(totpSecret(13747).TwoFASetupModalScreen, obj);
 };

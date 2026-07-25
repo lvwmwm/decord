@@ -1,10 +1,10 @@
-// Module ID: 8674
-// Function ID: 68608
+// Module ID: 8450
+// Function ID: 67341
 // Name: GameProfileRankPill
-// Dependencies: [31, 27, 33, 4130, 689, 7508, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 6592, 4127, 1212, 2]
 // Exports: default
 
-// Module 8674 (GameProfileRankPill)
+// Module 8450 (GameProfileRankPill)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function GameProfileRankPill(arg0) {
   let obj = { style: tmp.container };
   obj = { style: tmp.gameRankPill };
   obj = { size: "xxs", color: importDefault(689).colors.BLACK };
-  const items = [callback(require(7508) /* TrophyIcon */.TrophyIcon, obj), ];
+  const items = [callback(require(6592) /* TrophyIcon */.TrophyIcon, obj), ];
   const obj1 = { variant: "text-xs/bold", color: "text-overlay-dark" };
   const intl = require(1212) /* getSystemLocale */.intl;
   const formatToPlainString = intl.formatToPlainString;
@@ -45,7 +45,7 @@ export default function GameProfileRankPill(arg0) {
     str = formatToPlainString(t.ehZXlZ, obj3);
   }
   obj1.children = str.toUpperCase();
-  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  items[1] = callback(require(4127) /* Text */.Text, obj1);
   obj.children = items;
   obj.children = closure_5(View, obj);
   return callback(View, obj);

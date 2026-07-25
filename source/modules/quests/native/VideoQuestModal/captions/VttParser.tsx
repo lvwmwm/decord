@@ -1,10 +1,10 @@
-// Module ID: 14093
-// Function ID: 108344
+// Module ID: 14104
+// Function ID: 108471
 // Name: _isNativeReflectConstruct
 // Dependencies: [7, 6, 15, 17, 18, 162, 2]
 // Exports: parseVtt
 
-// Module 14093 (_isNativeReflectConstruct)
+// Module 14104 (_isNativeReflectConstruct)
 import _defineProperties from "_defineProperties";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

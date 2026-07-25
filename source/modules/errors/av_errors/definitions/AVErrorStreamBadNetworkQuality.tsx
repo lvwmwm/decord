@@ -1,9 +1,9 @@
-// Module ID: 16582
-// Function ID: 129300
+// Module ID: 16593
+// Function ID: 129468
 // Name: AVErrorStreamBadNetworkQualityDefinition
-// Dependencies: [4216, 653, 8896, 16575, 1327, 2]
+// Dependencies: [4217, 653, 8784, 16586, 1327, 2]
 
-// Module 16582 (AVErrorStreamBadNetworkQualityDefinition)
+// Module 16593 (AVErrorStreamBadNetworkQualityDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { RTCConnectionQuality } from "ME";
 

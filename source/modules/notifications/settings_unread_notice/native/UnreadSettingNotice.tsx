@@ -1,10 +1,10 @@
-// Module ID: 10460
-// Function ID: 80546
+// Module ID: 10394
+// Function ID: 80215
 // Name: UnreadSettingNoticeConnected
-// Dependencies: [31, 27, 662, 33, 4130, 689, 10461, 4126, 1212, 4660, 10462, 2]
+// Dependencies: [31, 27, 662, 33, 4131, 689, 10395, 4127, 1212, 4661, 10396, 2]
 // Exports: default
 
-// Module 10460 (UnreadSettingNoticeConnected)
+// Module 10394 (UnreadSettingNoticeConnected)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ChannelNotificationSettingsFlags as closure_4 } from "MAX_FAVORITES";
@@ -30,12 +30,12 @@ export default function UnreadSettingNoticeConnected(channel) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.content };
   obj = { id: channel.channel.id };
-  const items = [callback(importDefault(10461), obj), , ];
+  const items = [callback(importDefault(10395), obj), , ];
   obj = { style: tmp.informations };
   const obj1 = { variant: "text-md/semibold" };
   const intl = _require(1212).intl;
   obj1.children = intl.string(_require(1212).t.i4xQ5o);
-  obj.children = callback(_require(4126).Text, obj1);
+  obj.children = callback(_require(4127).Text, obj1);
   items[1] = callback(View, obj);
   const obj2 = { style: tmp.actions };
   const obj3 = {
@@ -49,8 +49,8 @@ export default function UnreadSettingNoticeConnected(channel) {
   const obj4 = { variant: "text-xs/medium", color: "text-link" };
   const intl2 = _require(1212).intl;
   obj4.children = intl2.string(_require(1212).t.KyUKhT);
-  obj3.children = callback(_require(4126).Text, obj4);
-  obj2.children = callback(_require(4660).PressableOpacity, obj3);
+  obj3.children = callback(_require(4127).Text, obj4);
+  obj2.children = callback(_require(4661).PressableOpacity, obj3);
   items[2] = callback(View, obj2);
   obj.children = items;
   return callback2(View, obj);

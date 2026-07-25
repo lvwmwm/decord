@@ -1,9 +1,9 @@
-// Module ID: 9656
-// Function ID: 75123
+// Module ID: 9578
+// Function ID: 74713
 // Name: StandardStickerDetail
-// Dependencies: [5, 57, 31, 27, 1838, 1849, 5035, 9604, 653, 5188, 33, 4130, 477, 689, 9636, 9431, 9433, 4098, 4126, 1212, 9637, 3831, 566, 1450, 675, 9650, 4543, 9655, 9638, 9643, 3776, 5489, 3803, 4466, 9657, 1934, 4324, 5048, 9658, 5796, 9651, 9007, 8605, 9659, 7636, 9437, 5187, 2]
+// Dependencies: [5, 57, 31, 27, 1838, 1850, 5036, 9525, 653, 5188, 33, 4131, 477, 689, 9557, 9351, 9353, 4099, 4127, 1212, 9558, 3832, 566, 1450, 675, 9572, 4544, 9577, 9560, 9565, 3777, 5489, 3804, 4467, 9579, 1935, 4325, 5049, 9580, 6554, 9573, 8895, 8365, 9581, 7575, 9357, 5187, 2]
 
-// Module 9656 (StandardStickerDetail)
+// Module 9578 (StandardStickerDetail)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "items";
@@ -48,7 +48,7 @@ function StandardStickerDetail(chatInputRef) {
   const items1 = [closure_11];
   let closure_6 = channel(566).useStateFromStores(items1, () => outer1_11.isPremiumPack(pack_id));
   let obj2 = channel(566);
-  const fetchStickerPack = channel(9636).useFetchStickerPack(pack_id);
+  const fetchStickerPack = channel(9557).useFetchStickerPack(pack_id);
   const diff = chatInputRef(1450)().width - 2 * closure_12;
   let closure_8 = Math.floor(Math.min(ACTION_SHEET_MAX_WIDTH, diff - closure_13) / (closure_14 + closure_13));
   const items2 = [channel.guild_id];
@@ -111,18 +111,18 @@ function StandardStickerDetail(chatInputRef) {
         const intl2 = channel(description[19]).intl;
         obj6.text = intl2.string(channel(description[19]).t.GPy3Ar);
         obj6.onPress = function onPress() {
-          let obj = channel(9655);
+          let obj = channel(9577);
           const result = obj.hideStickerDetailActionSheet();
           if (null != closure_0) {
             if (outer1_6) {
               if (null != outer1_1) {
-                const result1 = channel(9638).openStickerPickerToPackId(outer1_1, outer1_3);
-                const obj3 = channel(9638);
+                const result1 = channel(9560).openStickerPickerToPackId(outer1_1, outer1_3);
+                const obj3 = channel(9560);
               }
             }
           }
-          obj = { analyticsLocation: outer1_9, analyticsPopoutType: channel(9643).AnalyticsPopoutType.STICKER_PACK_UPSELL, stickerPack: closure_0 };
-          chatInputRef(9643)(obj);
+          obj = { analyticsLocation: outer1_9, analyticsPopoutType: channel(9565).AnalyticsPopoutType.STICKER_PACK_UPSELL, stickerPack: closure_0 };
+          chatInputRef(9565)(obj);
         };
         tmp10 = outer1_21(channel(description[26]).Button, obj6);
       }
@@ -277,10 +277,10 @@ function GuildStickerDetail(sticker) {
   first1 = tmp7[0];
   closure_8 = tmp7[1];
   const currentUser = authStore.getCurrentUser();
-  obj1 = channel(3776);
+  obj1 = channel(3777);
   let result = obj1.canUseCustomStickersEverywhere(currentUser);
   tidaWebformEnabled = channel(5489).useExperiment({ location: "StickerDetailActionSheet" }, { autoTrackExposure: false }).tidaWebformEnabled;
-  const DeveloperMode = sticker(3803).DeveloperMode;
+  const DeveloperMode = sticker(3804).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   let obj3 = channel(5489);
   ({ isFavorite: c9, handleFavorite: c10 } = (function useStickerFavorite(id) {
@@ -324,7 +324,7 @@ function GuildStickerDetail(sticker) {
             stringResult = string(t.mE2e8A);
           }
           obj.children = stringResult;
-          return outer3_21(sticker(4126).Text, obj);
+          return outer3_21(sticker(4127).Text, obj);
         }
         let obj = channel(hasItem[17]);
         obj.hideActionSheet();
@@ -401,7 +401,7 @@ function GuildStickerDetail(sticker) {
             stringResult = string(t.mE2e8A);
           }
           obj.children = stringResult;
-          return outer3_21(sticker(4126).Text, obj);
+          return outer3_21(sticker(4127).Text, obj);
         }
         let obj = channel(hasItem[17]);
         obj.hideActionSheet();
@@ -434,7 +434,7 @@ function GuildStickerDetail(sticker) {
     };
     return obj;
   })(sticker.id);
-  stickerAssetUrl = sticker(4466).getStickerAssetUrl(sticker);
+  stickerAssetUrl = sticker(4467).getStickerAssetUrl(sticker);
   let items1 = [stickerAssetUrl];
   closure_13 = stateFromStores.useCallback(() => {
     if (null != stickerAssetUrl) {
@@ -456,8 +456,8 @@ function GuildStickerDetail(sticker) {
     return obj;
   }, items2);
   obj = { guild_id: channel.getGuildId() };
-  let obj4 = sticker(4466);
-  let merged = Object.assign(sticker(4324).collectChannelAnalyticsMetadata(channel));
+  let obj4 = sticker(4467);
+  let merged = Object.assign(sticker(4325).collectChannelAnalyticsMetadata(channel));
   let items3 = [sticker.id, first1];
   const effect = stateFromStores.useEffect(() => {
     function _fetchDiscoverableGuild() {
@@ -706,7 +706,7 @@ export default importAllResult.memo(function StickerDetailActionSheet(chatInputR
   let channel;
   let renderableSticker;
   ({ renderableSticker, channel } = chatInputRef);
-  let obj = require(9636) /* _createForOfIteratorHelperLoose */;
+  let obj = require(9557) /* _createForOfIteratorHelperLoose */;
   const tmp2 = callback(obj.useStickerForRenderableSticker(renderableSticker, true), 2);
   const first = tmp2[0];
   let tmp4 = callback2(closure_7, { size: "large" });
@@ -726,13 +726,13 @@ export default importAllResult.memo(function StickerDetailActionSheet(chatInputR
       const obj2 = { sticker: first, channel, chatInputRef: chatInputRef.chatInputRef };
       tmp4 = callback2(StandardStickerDetail, obj2);
     } else {
-      obj1 = require(4466) /* getStickerPackPreviewSticker */;
+      obj1 = require(4467) /* getStickerPackPreviewSticker */;
       if (obj1.isGuildSticker(first)) {
         const obj3 = { sticker: first, channel };
         tmp4 = callback2(GuildStickerDetail, obj3);
       }
     }
     tmp5 = tmp4;
-    obj8 = require(4466) /* getStickerPackPreviewSticker */;
+    obj8 = require(4467) /* getStickerPackPreviewSticker */;
   }
 });

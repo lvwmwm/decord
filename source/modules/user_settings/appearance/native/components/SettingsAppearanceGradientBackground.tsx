@@ -1,22 +1,22 @@
-// Module ID: 14237
-// Function ID: 109335
-// Dependencies: [31, 27, 14211, 33, 3991, 4554, 14238, 4131, 4134, 689, 1324, 14239, 2]
+// Module ID: 14248
+// Function ID: 109462
+// Dependencies: [31, 27, 14222, 33, 3992, 4555, 14249, 4132, 4135, 689, 1324, 14250, 2]
 
-// Module 14237
+// Module 14248
 import importAllResult from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import THEME_ITEM_WIDTH from "THEME_ITEM_WIDTH";
 import { jsx } from "jsxProd";
-import module_3991 from "module_3991";
-import importDefaultResult from "module_3991";
+import module_3992 from "module_3992";
+import importDefaultResult from "module_3992";
 
 const require = arg1;
 let num = 0;
-let processColorResult = module_3991.processColor("rgba(0, 0, 0, 0)");
+let processColorResult = module_3992.processColor("rgba(0, 0, 0, 0)");
 if (null != processColorResult) {
   num = processColorResult;
 }
-let closure_7 = require("module_3991").createAnimatedComponent(require("LinearGradient").LinearGradientNativeComponent);
+let closure_7 = require("module_3992").createAnimatedComponent(require("LinearGradient").LinearGradientNativeComponent);
 let items = [num, num];
 let closure_8 = { colors: items, locations: [], startPoint: { x: 0, y: 0 }, endPoint: { x: 0, y: 0 } };
 let closure_9 = { code: "function SettingsAppearanceGradientBackgroundTsx1(){const{gradientSize,animatedLinearGradientLoadingProps,themeState,interpolate,tweener,getGradientStartPoint,processColor,interpolateColor}=this.__closure;const{width:width,height:height}=gradientSize.get();if(width===0||height===0){return animatedLinearGradientLoadingProps;}const{themePrev:{colors:colorsPrev,angle:anglePrev},themeCurrent:{colors:colorsCurrent,angle:angleCurrent}}=themeState.get();const angle=90-interpolate(tweener.get(),[0,1],[anglePrev,angleCurrent]);const originPoint=getGradientStartPoint(angle,width,height);return{colors:colorsPrev.map(function(_,i){var _processColor;return(_processColor=processColor(interpolateColor(tweener.get(),[0,1],[colorsPrev[i].hex,colorsCurrent[i].hex])))!==null&&_processColor!==void 0?_processColor:0;}),locations:colorsPrev.map(function(_,i){return interpolate(tweener.get(),[0,1],[colorsPrev[i].stop/100,colorsCurrent[i].stop/100]);}),startPoint:{x:(width/2+originPoint[0])/width,y:(height/2-originPoint[1])/height},endPoint:{x:(width/2-originPoint[0])/width,y:(height/2+originPoint[1])/height}};}" };

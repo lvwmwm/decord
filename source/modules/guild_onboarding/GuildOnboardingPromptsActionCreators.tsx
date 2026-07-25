@@ -1,10 +1,10 @@
-// Module ID: 5057
-// Function ID: 43765
+// Module ID: 5058
+// Function ID: 43777
 // Name: fetchOnboardingPrompts
-// Dependencies: [5, 1194, 1917, 1838, 5058, 5059, 653, 3746, 675, 4324, 686, 507, 1360, 2]
+// Dependencies: [5, 1194, 1918, 1838, 5059, 5060, 653, 3747, 675, 4325, 686, 507, 1360, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 5057 (fetchOnboardingPrompts)
+// Module 5058 (fetchOnboardingPrompts)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -98,14 +98,14 @@ function startOnboarding(guildId) {
 function _trackOnboardingDirectJoin(guildId) {
   let obj = importDefault(675);
   obj = {};
-  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
   obj["step"] = c13;
   obj["required"] = true;
   obj.track(constants.GUILD_ONBOARDING_STEP_VIEWED, obj);
-  const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
+  const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
   obj = {};
   const obj4 = importDefault(675);
-  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const merged1 = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
   obj["step"] = c13;
   obj["skipped"] = false;
   obj["is_final_step"] = true;
@@ -119,7 +119,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export const loadOnboardingPrompts = function loadOnboardingPrompts(guildId) {
   let obj = importDefault(675);
   obj = {};
-  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
   obj["has_new_prompts"] = false;
   obj["number_of_prompts"] = 0;
   obj.track(constants.GUILD_ONBOARDING_LOADED, obj);

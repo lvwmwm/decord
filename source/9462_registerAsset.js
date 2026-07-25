@@ -1,11 +1,11 @@
 // Module ID: 9462
-// Function ID: 73558
+// Function ID: 73859
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9462 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e482df76bca128861506eefe107fb633", name: "BackspaceIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/stream_feedback", width: 72, height: 72, scales: [1, 2, 3], hash: "4c77a93db477bc03f2ffe1ca6854a9fa", name: "feedback-modal-sad", type: "png" };
 
 export default registerAsset.registerAsset(obj);

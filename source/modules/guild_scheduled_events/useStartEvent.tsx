@@ -1,10 +1,10 @@
-// Module ID: 8514
-// Function ID: 67789
+// Module ID: 8274
+// Function ID: 66443
 // Name: useStartEvent
-// Dependencies: [5, 57, 31, 8515, 8516, 4029, 2]
+// Dependencies: [5, 57, 31, 8275, 8276, 4030, 2]
 // Exports: default
 
-// Module 8514 (useStartEvent)
+// Module 8274 (useStartEvent)
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

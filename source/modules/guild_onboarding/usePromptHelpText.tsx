@@ -1,10 +1,10 @@
-// Module ID: 5146
-// Function ID: 44865
+// Module ID: 5145
+// Function ID: 44867
 // Name: formatRoleString
-// Dependencies: [1348, 1910, 3758, 3767, 1849, 653, 1212, 566, 4320, 2]
+// Dependencies: [1348, 1911, 3759, 3768, 1850, 653, 1212, 566, 4321, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText
 
-// Module 5146 (formatRoleString)
+// Module 5145 (formatRoleString)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";

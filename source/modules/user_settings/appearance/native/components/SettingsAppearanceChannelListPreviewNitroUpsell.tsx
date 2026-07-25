@@ -1,9 +1,9 @@
-// Module ID: 14240
-// Function ID: 109366
+// Module ID: 14251
+// Function ID: 109493
 // Name: SettingsAppearanceChannelListPreviewNitroUpsellComponent
-// Dependencies: [31, 27, 4122, 653, 33, 3991, 4554, 4542, 4546, 4130, 689, 5462, 5482, 8183, 8059, 4543, 1212, 1273, 566, 8614, 2]
+// Dependencies: [31, 27, 4123, 653, 33, 3992, 4555, 4543, 4547, 4131, 689, 5462, 5482, 9253, 9254, 4544, 1212, 1273, 566, 8374, 2]
 
-// Module 14240 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
+// Module 14251 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -11,7 +11,7 @@ import ME from "ME";
 import jsxProd from "jsxProd";
 import LinearGradient from "LinearGradient";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let closure_10;
 let closure_11;
@@ -22,7 +22,7 @@ const require = arg1;
 function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   theme = theme.theme;
   const tmp = callback3();
-  let obj = theme(3991);
+  let obj = theme(3992);
   const fn = function l() {
     let num = 1;
     if (theme.theme === outer1_9.LIGHT) {
@@ -33,7 +33,7 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
     obj["opacity"] = theme(outer1_2[7]).withSpring(num, theme(outer1_2[8]).springStandard);
     return obj;
   };
-  obj = { theme, ThemeTypes: closure_9, StyleSheet, withSpring: theme(4542).withSpring, springStandard: theme(4546).springStandard };
+  obj = { theme, ThemeTypes: closure_9, StyleSheet, withSpring: theme(4543).withSpring, springStandard: theme(4547).springStandard };
   fn.__closure = obj;
   fn.__workletHash = 16911565077998;
   fn.__initData = closure_20;
@@ -56,7 +56,7 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   obj2.variant = "active";
   obj2.onPress = callback;
   obj2.size = "md";
-  items1[1] = callback(theme(4543).Button, obj2);
+  items1[1] = callback(theme(4544).Button, obj2);
   obj.children = items1;
   return callback2(View, obj);
 }
@@ -71,7 +71,7 @@ let closure_15 = (() => {
     const obj = { opacity: outer1_0(outer1_2[7]).withSpring(value, outer1_0(outer1_2[8]).springStandard) };
     return obj;
   }
-  animationEntering.__closure = { withSpring: require(4542) /* withSpring */.withSpring, springStandard: require(4546) /* SUBTLE_SPRING */.springStandard };
+  animationEntering.__closure = { withSpring: require(4543) /* withSpring */.withSpring, springStandard: require(4547) /* SUBTLE_SPRING */.springStandard };
   animationEntering.__workletHash = 2168112734281;
   animationEntering.__initData = closure_14;
   return animationEntering;
@@ -93,7 +93,7 @@ let closure_18 = (() => {
     obj.opacity = outer1_0(outer1_2[7]).withSpring(value, outer1_0(outer1_2[8]).springStandard, "respect-motion-settings", fn);
     return obj;
   }
-  animationExiting.__closure = { withSpring: require(4542) /* withSpring */.withSpring, springStandard: require(4546) /* SUBTLE_SPRING */.springStandard };
+  animationExiting.__closure = { withSpring: require(4543) /* withSpring */.withSpring, springStandard: require(4547) /* SUBTLE_SPRING */.springStandard };
   animationExiting.__workletHash = 12271101023923;
   animationExiting.__initData = closure_16;
   return animationExiting;
@@ -137,7 +137,7 @@ const memoResult = importAllResult.memo(function SettingsAppearanceChannelListPr
   obj.entering = closure_15;
   obj.exiting = closure_18;
   obj.renderItem = callback;
-  return closure_10(importDefault(8614), obj);
+  return closure_10(importDefault(8374), obj);
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelListPreviewNitroUpsell.tsx");
 

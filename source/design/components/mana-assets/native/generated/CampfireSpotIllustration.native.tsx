@@ -1,10 +1,10 @@
-// Module ID: 5930
-// Function ID: 49860
+// Module ID: 6850
+// Function ID: 59510
 // Name: CampfireSpotIllustration
-// Dependencies: [33, 5085, 5931, 2]
+// Dependencies: [33, 5085, 6851, 2]
 // Exports: CampfireSpotIllustration
 
-// Module 5930 (CampfireSpotIllustration)
+// Module 6850 (CampfireSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CampfireSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const CampfireSpotIllustration = function CampfireSpotIllustration(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5931) };
+  obj = { uri: importDefault(6851) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

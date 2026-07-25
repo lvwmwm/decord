@@ -1,9 +1,9 @@
-// Module ID: 16602
-// Function ID: 129467
+// Module ID: 16613
+// Function ID: 129635
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 16603, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 16614, 5078, 2]
 
-// Module 16602 (_isNativeReflectConstruct)
+// Module 16613 (_isNativeReflectConstruct)
 import set from "set";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -22,13 +22,13 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleConnectionOpenSupplemental() {
-  require(16603) /* _openSafetyFlow */.openSafetyFlow();
+  require(16614) /* _openSafetyFlow */.openSafetyFlow();
 }
 function handleSafetyFlowsModalOpen() {
-  require(16603) /* _openSafetyFlow */.openSafetyFlow();
+  require(16614) /* _openSafetyFlow */.openSafetyFlow();
 }
 function handleUserRequiredActionUpdate(requiredAction) {
-  require(16603) /* _openSafetyFlow */.openSafetyFlow({ requiredAction: requiredAction.requiredAction });
+  require(16614) /* _openSafetyFlow */.openSafetyFlow({ requiredAction: requiredAction.requiredAction });
 }
 tmp2 = new tmp2();
 let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/safety_flows/SafetyFlowsManager.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15730
-// Function ID: 121259
+// Module ID: 15741
+// Function ID: 121428
 // Name: useExternalPIPEnabler
-// Dependencies: [4143, 1194, 4202, 566, 15731, 2]
+// Dependencies: [4144, 1194, 4203, 566, 15742, 2]
 // Exports: default
 
-// Module 15730 (useExternalPIPEnabler)
+// Module 15741 (useExternalPIPEnabler)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

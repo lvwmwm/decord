@@ -1,9 +1,11 @@
 // Module ID: 3521
-// Function ID: 27111
+// Function ID: 27103
 // Name: _typeof
-// Dependencies: [3517, 3515]
+// Dependencies: [3447, 3518, 3516]
 
 // Module 3521 (_typeof)
+import startOfUTCISOWeek from "startOfUTCISOWeek";
+
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
     let _Symbol = Symbol;
@@ -78,19 +80,19 @@ function _createSuper(arg0) {
   })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = outer1_7(closure_0);
+    const obj = outer1_8(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_8(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      outer1_6(self);
+      outer1_7(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== outer1_2(constructResult)) {
+      if ("object" !== outer1_3(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -132,11 +134,18 @@ function _defineProperty(arg0, arg1, value) {
   }
   return arg0;
 }
+if (!startOfUTCISOWeek) {
+  let obj = { default: startOfUTCISOWeek };
+  let tmp3 = obj;
+} else {
+  tmp3 = startOfUTCISOWeek;
+}
+let closure_2 = tmp3;
 
-export const ExtendedYearParser = ((Parser) => {
-  class ExtendedYearParser {
+export const ISOWeekYearParser = ((Parser) => {
+  class ISOWeekYearParser {
     constructor() {
-      if (this instanceof ExtendedYearParser) {
+      if (this instanceof ISOWeekYearParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -148,21 +157,21 @@ export const ExtendedYearParser = ((Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = outer1_8;
-        tmp12 = outer1_6;
+        tmp11 = outer1_9;
+        tmp12 = outer1_7;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = outer1_6(applyResult);
+        tmp16 = outer1_7(applyResult);
         str2 = "priority";
         num2 = 130;
-        tmp17 = outer1_8(applyResult, "priority", 130);
-        tmp18 = outer1_6(applyResult);
+        tmp17 = outer1_9(applyResult, "priority", 130);
+        tmp18 = outer1_7(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["G", "y", "Y", "R", "w", "I", "i", "e", "c", "t", "T"]);
+        tmp19 = outer1_9(applyResult, "incompatibleTokens", ["G", "y", "Y", "u", "Q", "q", "M", "L", "w", "d", "D", "e", "c", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -177,9 +186,9 @@ export const ExtendedYearParser = ((Parser) => {
     }
   }
   if ("function" !== typeof Parser) {
-    class ExtendedYearParser {
+    class ISOWeekYearParser {
       constructor() {
-        if (this instanceof ExtendedYearParser) {
+        if (this instanceof ISOWeekYearParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -191,21 +200,21 @@ export const ExtendedYearParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_8;
-          tmp12 = outer1_6;
+          tmp11 = outer1_9;
+          tmp12 = outer1_7;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_6(applyResult);
+          tmp16 = outer1_7(applyResult);
           str2 = "priority";
           num2 = 130;
-          tmp17 = outer1_8(applyResult, "priority", 130);
-          tmp18 = outer1_6(applyResult);
+          tmp17 = outer1_9(applyResult, "priority", 130);
+          tmp18 = outer1_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["G", "y", "Y", "R", "w", "I", "i", "e", "c", "t", "T"]);
+          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["G", "y", "Y", "u", "Q", "q", "M", "L", "w", "d", "D", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -224,12 +233,12 @@ export const ExtendedYearParser = ((Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { value: ExtendedYearParser, writable: true, configurable: true };
-  ExtendedYearParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: ISOWeekYearParser, writable: true, configurable: true };
+  ISOWeekYearParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class ExtendedYearParser {
+    class ISOWeekYearParser {
       constructor() {
-        if (this instanceof ExtendedYearParser) {
+        if (this instanceof ISOWeekYearParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -241,21 +250,21 @@ export const ExtendedYearParser = ((Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = outer1_8;
-          tmp12 = outer1_6;
+          tmp11 = outer1_9;
+          tmp12 = outer1_7;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_6(applyResult);
+          tmp16 = outer1_7(applyResult);
           str2 = "priority";
           num2 = 130;
-          tmp17 = outer1_8(applyResult, "priority", 130);
-          tmp18 = outer1_6(applyResult);
+          tmp17 = outer1_9(applyResult, "priority", 130);
+          tmp18 = outer1_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["G", "y", "Y", "R", "w", "I", "i", "e", "c", "t", "T"]);
+          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["G", "y", "Y", "u", "Q", "q", "M", "L", "w", "d", "D", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -269,16 +278,16 @@ export const ExtendedYearParser = ((Parser) => {
         }
       }
     }
-    _setPrototypeOf(ExtendedYearParser, Parser);
+    _setPrototypeOf(ISOWeekYearParser, Parser);
   }
-  let closure_0 = _createSuper(ExtendedYearParser);
+  let closure_0 = _createSuper(ISOWeekYearParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1) {
-      if ("u" === arg1) {
-        let parseNDigitsSignedResult = callback(ExtendedYearParser[0]).parseNDigitsSigned(4, arg0);
+      if ("R" === arg1) {
+        let parseNDigitsSignedResult = callback(ISOWeekYearParser[1]).parseNDigitsSigned(4, arg0);
       } else {
-        parseNDigitsSignedResult = callback(ExtendedYearParser[0]).parseNDigitsSigned(arg1.length, arg0);
+        parseNDigitsSignedResult = callback(ISOWeekYearParser[1]).parseNDigitsSigned(arg1.length, arg0);
       }
       return parseNDigitsSignedResult;
     }
@@ -286,13 +295,14 @@ export const ExtendedYearParser = ((Parser) => {
   let items = [obj, ];
   obj = {
     key: "set",
-    value: function set(setUTCFullYear) {
-      setUTCFullYear.setUTCFullYear(arg2, 0, 1);
-      setUTCFullYear.setUTCHours(0, 0, 0, 0);
-      return setUTCFullYear;
+    value: function set(arg0, arg1, arg2) {
+      const date = new Date(0);
+      date.setUTCFullYear(arg2, 0, 4);
+      date.setUTCHours(0, 0, 0, 0);
+      return outer1_2.default(date);
     }
   };
   items[1] = obj;
-  _defineProperties(ExtendedYearParser.prototype, items);
-  return ExtendedYearParser;
+  _defineProperties(ISOWeekYearParser.prototype, items);
+  return ISOWeekYearParser;
 })(require("_defineProperties").Parser);

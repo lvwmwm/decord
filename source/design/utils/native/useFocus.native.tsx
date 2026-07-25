@@ -1,10 +1,10 @@
-// Module ID: 3839
-// Function ID: 32010
+// Module ID: 3840
+// Function ID: 32021
 // Name: useFocus
 // Dependencies: [57, 31, 2]
 // Exports: useFocus
 
-// Module 3839 (useFocus)
+// Module 3840 (useFocus)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

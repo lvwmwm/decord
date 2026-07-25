@@ -1,10 +1,10 @@
-// Module ID: 12573
-// Function ID: 97268
+// Module ID: 12584
+// Function ID: 97395
 // Name: TierFeatures
-// Dependencies: [57, 31, 27, 653, 1851, 33, 7437, 1212, 7488, 11592, 4658, 4654, 9630, 7500, 7440, 4074, 12574, 4130, 689, 12568, 4973, 3991, 4131, 4126, 4066, 3976, 4554, 4660, 4022, 12575, 12577, 3974, 1273, 12579, 12580, 5162, 11624, 2]
+// Dependencies: [57, 31, 27, 653, 1852, 33, 6519, 1212, 6572, 11558, 4659, 4655, 9551, 6584, 6522, 4075, 12585, 4131, 689, 12579, 4974, 3992, 4132, 4127, 4067, 3977, 4555, 4661, 4023, 12586, 12588, 3975, 1273, 12590, 12591, 5161, 11591, 2]
 // Exports: default
 
-// Module 12573 (TierFeatures)
+// Module 12584 (TierFeatures)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "hexToRgb";
 import { View } from "PressableBase";
@@ -318,7 +318,7 @@ let obj14 = {
   IconComponent: require("ScreenArrowIcon").ScreenArrowIcon,
   getCopy() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { resolution: require(12574) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
+    const obj = { resolution: require(12585) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.Jbg8oY, obj);
   }
 };
@@ -505,7 +505,7 @@ items3[2] = {
   IconComponent: require("ScreenArrowIcon").ScreenArrowIcon,
   getCopy() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { resolution: require(12574) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
+    const obj = { resolution: require(12585) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.Jbg8oY, obj);
   }
 };
@@ -548,7 +548,7 @@ let obj26 = {
   IconComponent: require("ScreenArrowIcon").ScreenArrowIcon,
   getCopy() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { resolution: require(12574) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
+    const obj = { resolution: require(12585) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.Jbg8oY, obj);
   }
 };
@@ -693,10 +693,10 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       return num;
     });
   }, items);
-  let obj = features(3976);
-  const tmp2 = importDefault(4066)();
+  let obj = features(3977);
+  const tmp2 = importDefault(4067)();
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  const tmp7 = obj.isThemeDark(importDefault(4066)()) ? unsafe_rawColors.WHITE : unsafe_rawColors.GUILD_BOOSTING_PINK;
+  const tmp7 = obj.isThemeDark(importDefault(4067)()) ? unsafe_rawColors.WHITE : unsafe_rawColors.GUILD_BOOSTING_PINK;
   const intl = features(1212).intl;
   const string = intl.string;
   const t = features(1212).t;
@@ -707,7 +707,7 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
   }
   obj = { style: tmp.cardWrapper, ref };
   obj = { angle: 45, angleCenter: { x: 0.5, y: 0.5 } };
-  const isThemeDarkResult = obj.isThemeDark(importDefault(4066)());
+  const isThemeDarkResult = obj.isThemeDark(importDefault(4067)());
   const tmp10 = View;
   const tmp11 = callback2;
   const tmp9 = callback3;
@@ -720,13 +720,13 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
   const obj2 = { onPress: onCardPress.onCardPress, style: tmp.cardContent, accessibilityRole: "button", accessibilityState: { expanded: isExpanded }, accessibilityLabel: stringResult };
   const obj3 = { style: tmp.cardHeading };
   const obj4 = { color: "text-overlay-light", style: tmp.cardTierName, variant: "heading-xxl/extrabold" };
-  let obj7 = features(4022);
+  let obj7 = features(4023);
   obj4.children = obj7.getTierName(tier, { useLevels: false });
-  const items2 = [callback2(features(4126).Text, obj4), ];
+  const items2 = [callback2(features(4127).Text, obj4), ];
   const obj5 = { color: "text-overlay-light", style: tmp.cardTierBoostcount, variant: "text-md/medium" };
   const intl2 = features(1212).intl;
   obj5.children = intl2.format(features(1212).t.gDsyB9, { numSubscriptions: table[tier] });
-  items2[1] = callback2(features(4126).Text, obj5);
+  items2[1] = callback2(features(4127).Text, obj5);
   obj3.children = items2;
   const items3 = [callback3(View, obj3), , ];
   obj7 = { style: tmp.cardFeaturesWrapper };
@@ -735,15 +735,15 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
   items3[1] = callback3(View, obj7);
   const obj9 = { style: tmp.cardFooter };
   const obj10 = { color: "text-overlay-light", variant: "text-md/semibold", children: stringResult };
-  const items5 = [callback2(features(4126).Text, obj10), ];
+  const items5 = [callback2(features(4127).Text, obj10), ];
   if (isExpanded) {
-    let ChevronLargeDownIcon = tmp19(12575).ChevronLargeUpIcon;
+    let ChevronLargeDownIcon = tmp19(12586).ChevronLargeUpIcon;
   } else {
-    ChevronLargeDownIcon = tmp19(12577).ChevronLargeDownIcon;
+    ChevronLargeDownIcon = tmp19(12588).ChevronLargeDownIcon;
   }
   const obj6 = { numSubscriptions: table[tier] };
   const obj8 = { features: memo, isVisible: !isExpanded };
-  const tmp12 = importDefault(4554);
+  const tmp12 = importDefault(4555);
   const tmp13 = callback2;
   const tmp14 = View;
   const tmp15 = callback3;
@@ -754,7 +754,7 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
   obj9.children = items5;
   items3[2] = tmp16(tmp17, obj9);
   obj2.children = items3;
-  obj1.children = tmp15(features(4660).PressableHighlight, obj2);
+  obj1.children = tmp15(features(4661).PressableHighlight, obj2);
   obj.children = tmp13(tmp14, obj1);
   const items6 = [tmp11(tmp12, obj), , ];
   let tmp21 = tmp5;
@@ -770,12 +770,12 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
     if (tmp34) {
       const obj12 = {};
       const obj13 = {};
-      let obj19 = features(3974);
+      let obj19 = features(3975);
       const items7 = [obj19.hexWithOpacity(tmp7, 0), , ];
-      let obj20 = features(3974);
+      let obj20 = features(3975);
       items7[1] = obj20.hexWithOpacity(tmp7, 1);
-      const tmp40 = importDefault(4554);
-      items7[2] = features(3974).hexWithOpacity(tmp7, 0);
+      const tmp40 = importDefault(4555);
+      items7[2] = features(3975).hexWithOpacity(tmp7, 0);
       obj13.colors = items7;
       obj13.start = { x: 0, y: 0 };
       obj13.end = { x: 1, y: 0 };
@@ -785,13 +785,13 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       obj13.style = items8;
       const items9 = [callback2(tmp40, obj13), , , , , ];
       const obj14 = {};
-      const obj22 = features(3974);
-      const tmp43 = importDefault(4554);
-      const items10 = [features(3974).hexWithOpacity(tmp7, 0), , ];
-      const obj24 = features(3974);
-      items10[1] = features(3974).hexWithOpacity(tmp7, 1);
-      const obj25 = features(3974);
-      items10[2] = features(3974).hexWithOpacity(tmp7, 0);
+      const obj22 = features(3975);
+      const tmp43 = importDefault(4555);
+      const items10 = [features(3975).hexWithOpacity(tmp7, 0), , ];
+      const obj24 = features(3975);
+      items10[1] = features(3975).hexWithOpacity(tmp7, 1);
+      const obj25 = features(3975);
+      items10[2] = features(3975).hexWithOpacity(tmp7, 0);
       obj14.colors = items10;
       obj14.start = { x: 0, y: 0 };
       obj14.end = { x: 1, y: 0 };
@@ -800,29 +800,29 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       ({ gradientHighlight: arr13[0], gradientHighlightBottom: arr13[1] } = tmp);
       obj14.style = items11;
       items9[1] = callback2(tmp43, obj14);
-      const obj15 = { source: importDefault(12579) };
+      const obj15 = { source: importDefault(12590) };
       const items12 = [, , ];
       ({ sparkleStar: arr14[0], sparkleStarPointed: arr14[1], sparkleStarPointed1: arr14[2] } = tmp);
       obj15.style = items12;
       items9[2] = callback2(features(1273).Icon, obj15);
-      const obj16 = { source: importDefault(12579) };
+      const obj16 = { source: importDefault(12590) };
       const items13 = [, , ];
       ({ sparkleStar: arr15[0], sparkleStarPointed: arr15[1], sparkleStarPointed2: arr15[2] } = tmp);
       obj16.style = items13;
       items9[3] = callback2(features(1273).Icon, obj16);
-      const obj17 = { source: importDefault(12579) };
+      const obj17 = { source: importDefault(12590) };
       const items14 = [, , ];
       ({ sparkleStar: arr16[0], sparkleStarPointed: arr16[1], sparkleStarPointed3: arr16[2] } = tmp);
       obj17.style = items14;
       items9[4] = callback2(features(1273).Icon, obj17);
-      const obj18 = { source: importDefault(12580) };
+      const obj18 = { source: importDefault(12591) };
       const items15 = [, , ];
       ({ sparkleStar: arr17[0], sparkleStarElongated: arr17[1], sparkleStarElongated1: arr17[2] } = tmp);
       obj18.style = items15;
       items9[5] = callback2(features(1273).Icon, obj18);
       obj12.children = items9;
       tmp34 = callback3(closure_11, obj12);
-      const obj26 = features(3974);
+      const obj26 = features(3975);
     }
     items6[2] = tmp34;
     obj.children = items6;
@@ -843,11 +843,11 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       string2Result = string2(_9NBo7c["9JbE3J"]);
     }
     obj20.children = string2Result;
-    obj20 = callback2(features(4126).Text, obj20);
+    obj20 = callback2(features(4127).Text, obj20);
     obj19.children = obj20;
-    callback2(importDefault(4554), obj19);
+    callback2(importDefault(4555), obj19);
     const tmp23 = callback2;
-    const tmp26 = importDefault(4554);
+    const tmp26 = importDefault(4555);
     const tmp27 = callback2;
   }
 });
@@ -890,5 +890,5 @@ export default function GuildBoostingMarketingTierCards(guild) {
       return outer1_9(outer1_15, { features: features.features, guild, isExpanded: closure_2, onCardPress: handleCardPress, tier }, tier);
     })
   };
-  return callback2(guild(11624).MarketingCardsScroller, obj);
+  return callback2(guild(11591).MarketingCardsScroller, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10663
-// Function ID: 83112
+// Module ID: 10627
+// Function ID: 82799
 // Name: useMyCurrentStageChannel
-// Dependencies: [1348, 1906, 566, 2]
+// Dependencies: [1348, 1907, 566, 2]
 // Exports: default
 
-// Module 10663 (useMyCurrentStageChannel)
+// Module 10627 (useMyCurrentStageChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

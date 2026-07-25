@@ -1,10 +1,10 @@
-// Module ID: 11910
-// Function ID: 92198
+// Module ID: 11886
+// Function ID: 92003
 // Name: TraitEmoji
-// Dependencies: [31, 27, 33, 4130, 689, 1392, 3775, 5151, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1392, 3776, 5150, 4127, 2]
 // Exports: default
 
-// Module 11910 (TraitEmoji)
+// Module 11886 (TraitEmoji)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,9 +26,9 @@ function TraitEmoji(emoji) {
       obj.size = 16;
       emojiURL = obj.getEmojiURL(obj);
     }
-    const obj3 = importDefault(3775);
-    obj = { src: emojiURL, name: importDefault(3775).isCustomEmoji(emoji) ? emoji.name : emoji.surrogates, fastImageStyle: tmp.emojiImage };
-    return callback(importDefault(5151), obj);
+    const obj3 = importDefault(3776);
+    obj = { src: emojiURL, name: importDefault(3776).isCustomEmoji(emoji) ? emoji.name : emoji.surrogates, fastImageStyle: tmp.emojiImage };
+    return callback(importDefault(5150), obj);
   }
 }
 function GuildProfileTraitView(trait) {
@@ -37,7 +37,7 @@ function GuildProfileTraitView(trait) {
   obj = { emoji: trait.emoji };
   const items = [callback(TraitEmoji, obj), ];
   obj = { variant: "text-sm/medium", color: "text-default", children: trait.label };
-  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }

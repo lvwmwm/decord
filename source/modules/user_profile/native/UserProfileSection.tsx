@@ -1,10 +1,10 @@
-// Module ID: 10040
-// Function ID: 77549
+// Module ID: 9969
+// Function ID: 77168
 // Name: UserProfileSection
-// Dependencies: [31, 27, 33, 4130, 689, 3842, 5484, 3974, 7191, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3843, 5484, 3975, 7582, 4127, 2]
 // Exports: default
 
-// Module 10040 (UserProfileSection)
+// Module 9969 (UserProfileSection)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function UserProfileSection(title) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(title, obj);
   const tmp3 = _createForOfIteratorHelperLoose();
-  let obj1 = require(3842) /* ManaContext */;
+  let obj1 = require(3843) /* ManaContext */;
   const themeContext = obj1.useThemeContext();
   const theme = themeContext.theme;
   let obj2 = require(5484) /* useProfileThemeValues */;
@@ -41,8 +41,8 @@ export default function UserProfileSection(title) {
   const merged1 = Object.assign(tmp3.contentContainer);
   if (null != themeContext.primaryColor) {
     if (null != profileThemeValues) {
-      let obj4 = require(3974) /* hexToRgb */;
-      let borderColor = obj4.hexOpacityToRgba(require(7191) /* Divider */.DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      let obj4 = require(3975) /* hexToRgb */;
+      let borderColor = obj4.hexOpacityToRgba(require(7582) /* Divider */.DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     obj["borderColor"] = borderColor;
     obj = {};
@@ -54,7 +54,7 @@ export default function UserProfileSection(title) {
       obj1 = { style: tmp3.titleContainer };
       obj2 = { style: tmp3.title };
       const obj3 = { variant: "eyebrow", accessibilityRole: "header", children: title };
-      const items1 = [callback(require(4126) /* Text */.Text, obj3), headerIcon];
+      const items1 = [callback(require(4127) /* Text */.Text, obj3), headerIcon];
       obj2.children = items1;
       const items2 = [callback2(View, obj2), trailingIcon];
       obj1.children = items2;

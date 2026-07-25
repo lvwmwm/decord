@@ -1,10 +1,10 @@
-// Module ID: 10210
-// Function ID: 78839
+// Module ID: 10142
+// Function ID: 78469
 // Name: useInviteActions
-// Dependencies: [5, 1348, 1849, 653, 1212, 10203, 10211, 8376, 7000, 5490, 3830, 8526, 7540, 3831, 2]
+// Dependencies: [5, 1348, 1850, 653, 1212, 10135, 10143, 8134, 5992, 5490, 3831, 8286, 6636, 3832, 2]
 // Exports: useInviteActions
 
-// Module 10210 (useInviteActions)
+// Module 10142 (useInviteActions)
 import getMore from "get more";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -27,14 +27,14 @@ export const useInviteActions = function useInviteActions(invite) {
   let obj = {};
   let intl = invite(1212).intl;
   obj.label = intl.string(invite(1212).t.RDE0Sc);
-  obj.iconSource = onInviteRevoked(10203).share;
+  obj.iconSource = onInviteRevoked(10135).share;
   obj.action = function action() {
-    onInviteRevoked(10211)(() => {
-      let obj = invite(8376);
+    onInviteRevoked(10143)(() => {
+      let obj = invite(8134);
       obj = {};
       let tmp;
       if (!outer1_3) {
-        tmp = onInviteRevoked(7000)(outer1_0.code);
+        tmp = onInviteRevoked(5992)(outer1_0.code);
       }
       obj.url = tmp;
       let formatToPlainStringResult;
@@ -51,7 +51,7 @@ export const useInviteActions = function useInviteActions(invite) {
           str = username;
         }
         obj.username = str;
-        obj.link = onInviteRevoked(7000)(outer1_0.code);
+        obj.link = onInviteRevoked(5992)(outer1_0.code);
         formatToPlainStringResult = intl.formatToPlainString(invite(1212).t["+zWvOQ"], obj);
       }
       obj.message = formatToPlainStringResult;
@@ -66,7 +66,7 @@ export const useInviteActions = function useInviteActions(invite) {
   obj = {};
   const intl2 = invite(1212).intl;
   obj.label = intl2.string(invite(1212).t.OpuAlK);
-  obj.iconSource = onInviteRevoked(10203).copy;
+  obj.iconSource = onInviteRevoked(10135).copy;
   obj.action = function action() {
     if (c3) {
       let tmpResult = tmp(tmp2[11]);
@@ -82,7 +82,7 @@ export const useInviteActions = function useInviteActions(invite) {
   const obj1 = {};
   const intl3 = invite(1212).intl;
   obj1.label = intl3.string(invite(1212).t.v6Yazx);
-  obj1.iconSource = onInviteRevoked(10203).revoke;
+  obj1.iconSource = onInviteRevoked(10135).revoke;
   obj1.variant = "destructive";
   // CreateGeneratorClosureLongIndex (0x67)
   dependencyMap = callback(tmp);

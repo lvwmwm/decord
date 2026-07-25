@@ -1,7 +1,7 @@
 // Module ID: 5468
-// Function ID: 46736
+// Function ID: 46741
 // Name: useGetOrFetchApplications
-// Dependencies: [31, 4167, 620, 5463, 22, 1327, 566, 2]
+// Dependencies: [31, 4168, 620, 5463, 22, 1327, 566, 2]
 // Exports: useGetOrFetchApplication
 
 // Module 5468 (useGetOrFetchApplications)

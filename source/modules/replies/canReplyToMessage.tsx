@@ -1,10 +1,10 @@
-// Module ID: 7752
-// Function ID: 61559
+// Module ID: 7698
+// Function ID: 61527
 // Name: hasReplyPermission
-// Dependencies: [57, 3758, 1849, 653, 482, 663, 5650, 7753, 566, 2]
+// Dependencies: [57, 3759, 1850, 653, 482, 663, 5996, 7699, 566, 2]
 // Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 7752 (hasReplyPermission)
+// Module 7698 (hasReplyPermission)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -53,8 +53,8 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export const useCanReplyToMessage = function useCanReplyToMessage(stateFromStores, message) {
   const _require = stateFromStores;
   const dependencyMap = message;
-  const canUnarchiveThread = _require(5650).useCanUnarchiveThread(stateFromStores);
-  const obj = _require(5650);
+  const canUnarchiveThread = _require(5996).useCanUnarchiveThread(stateFromStores);
+  const obj = _require(5996);
   let guildId;
   if (null != stateFromStores) {
     guildId = stateFromStores.getGuildId();
@@ -63,8 +63,8 @@ export const useCanReplyToMessage = function useCanReplyToMessage(stateFromStore
   if (null != guildId) {
     tmp3 = guildId;
   }
-  const tmp4 = callback(_require(7753).useCurrentUserCommunicationDisabled(tmp3), 2)[1];
-  const obj2 = _require(7753);
+  const tmp4 = callback(_require(7699).useCurrentUserCommunicationDisabled(tmp3), 2)[1];
+  const obj2 = _require(7699);
   const items = [_isNativeReflectConstruct];
   stateFromStores = _require(566).useStateFromStores(items, () => {
     let tmp = null != closure_0;
@@ -83,8 +83,8 @@ export const useCanReplyToMessage = function useCanReplyToMessage(stateFromStore
   return tmp6;
 };
 export const canReplyToMessage = function canReplyToMessage(channel, message) {
-  const obj = require(5650) /* useCanStartPublicThread */;
-  const canUnarchiveThreadResult = require(5650) /* useCanStartPublicThread */.canUnarchiveThread(channel);
+  const obj = require(5996) /* useCanStartPublicThread */;
+  const canUnarchiveThreadResult = require(5996) /* useCanStartPublicThread */.canUnarchiveThread(channel);
   currentUser = currentUser.getCurrentUser();
   const tmp2 = hasReplyPermission(channel, message, _isNativeReflectConstruct);
   let id;
@@ -96,5 +96,5 @@ export const canReplyToMessage = function canReplyToMessage(channel, message) {
   if (null != guildId) {
     tmp6 = guildId;
   }
-  return _canReplyToMessage(channel, message, tmp2, callback(require(7753) /* getUserGuildMember */.userCommunicationDisabled(id, tmp6), 2)[1], canUnarchiveThreadResult);
+  return _canReplyToMessage(channel, message, tmp2, callback(require(7699) /* getUserGuildMember */.userCommunicationDisabled(id, tmp6), 2)[1], canUnarchiveThreadResult);
 };

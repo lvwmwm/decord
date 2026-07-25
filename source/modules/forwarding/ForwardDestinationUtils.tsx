@@ -1,10 +1,10 @@
-// Module ID: 7087
-// Function ID: 56771
+// Module ID: 6105
+// Function ID: 54583
 // Name: messageHasCheckpoint
-// Dependencies: [31, 5035, 1352, 1348, 3758, 3767, 1849, 653, 7088, 1327, 566, 669, 4466, 1881, 4345, 1212, 4464, 3969, 4320, 2]
+// Dependencies: [31, 5036, 1352, 1348, 3759, 3768, 1850, 653, 6106, 1327, 566, 669, 4467, 1882, 4346, 1212, 4465, 3970, 4321, 2]
 // Exports: getDestinationIsUnavailable, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 7087 (messageHasCheckpoint)
+// Module 6105 (messageHasCheckpoint)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
@@ -23,7 +23,7 @@ const require = arg1;
 function messageHasCheckpoint(message) {
   let tmp = message.components.length > 0;
   if (tmp) {
-    tmp = message.components[0].type === require(1881) /* PermissionOverwriteType */.ComponentType.CHECKPOINT_CARD;
+    tmp = message.components[0].type === require(1882) /* PermissionOverwriteType */.ComponentType.CHECKPOINT_CARD;
   }
   return tmp;
 }
@@ -46,7 +46,7 @@ function isRatelimitedInChannel(channel, outer2_6) {
 const result = require("_callSuper").fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
-  const mapped = selectedDestinations.map(found(7088).getChannelIdFromDestinationId);
+  const mapped = selectedDestinations.map(found(6106).getChannelIdFromDestinationId);
   found = mapped.find(found(1327).isNotNullish);
   const items = [closure_8];
   const items1 = [found];
@@ -77,10 +77,10 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
       tmp4 = messageHasCheckpoint(stateFromStores.messageSnapshots[0].message);
     }
     if (null != stateFromStores1) {
-      let obj = _require(4345);
+      let obj = _require(4346);
       if (obj.isChannelOrGuildNSFW(stateFromStores1)) {
         if (tmp) {
-          let obj1 = _require(4345);
+          let obj1 = _require(4346);
         }
         obj = {};
         const intl = _require(1212).intl;
@@ -101,7 +101,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
             const messageSnapshots = stateFromStores.messageSnapshots;
           }
           if (stateFromStores.embeds.length > 0) {
-            let obj4 = _require(4464);
+            let obj4 = _require(4465);
             if (!obj4.canEmbedLinks(type, closure_9)) {
               if (!obj6.shouldStripEmbeds(stateFromStores)) {
                 obj1 = {};
@@ -109,7 +109,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
                 obj1.label = intl3.string(_require(1212).t.Wr4RIX);
                 return obj1;
               }
-              obj6 = _require(4464);
+              obj6 = _require(4465);
             }
           } else {
             const messageSnapshots2 = stateFromStores.messageSnapshots;
@@ -121,11 +121,11 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
               obj2.label = intl4.string(_require(1212).t.Wr4RIX);
               return obj2;
             }
-            obj8 = _require(4464);
+            obj8 = _require(4465);
           }
           const items = [];
           const messageSnapshots3 = stateFromStores.messageSnapshots;
-          let arraySpreadResult = HermesBuiltin.arraySpread(_require(4466).getMessageStickers(stateFromStores), 0);
+          let arraySpreadResult = HermesBuiltin.arraySpread(_require(4467).getMessageStickers(stateFromStores), 0);
           arraySpreadResult = HermesBuiltin.arraySpread(messageSnapshots3.flatMap((message) => type(outer1_2[12]).getMessageStickers(message.message)), arraySpreadResult);
           if (items.length > 0) {
             if (!closure_9.can(constants2.USE_EXTERNAL_STICKERS, type)) {
@@ -159,7 +159,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           } else {
             const messageSnapshots4 = stateFromStores.messageSnapshots;
           }
-          const obj10 = _require(4466);
+          const obj10 = _require(4467);
         }
       }
     }

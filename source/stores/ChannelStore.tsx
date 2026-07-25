@@ -1,7 +1,7 @@
 // Module ID: 1348
-// Function ID: 15948
+// Function ID: 15954
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 5, 6, 7, 1349, 1351, 1352, 1194, 1838, 1849, 653, 3, 1327, 1882, 1901, 1902, 686, 1903, 20, 21, 1904, 22, 566, 2]
+// Dependencies: [15, 17, 18, 57, 5, 6, 7, 1349, 1351, 1352, 1194, 1838, 1850, 653, 3, 1327, 1883, 1902, 1903, 686, 1904, 20, 21, 1905, 22, 566, 2]
 
 // Module 1348 (_isNativeReflectConstruct)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
@@ -123,13 +123,13 @@ function ensureGuildLoaded(guild_id, Basic, getBasicChannel) {
     if ("null" !== guild_id) {
       if (!set.has(guild_id)) {
         if (Basic !== closure_40.Basic) {
-          const databaseResult = importDefault(1882).database();
+          const databaseResult = importDefault(1883).database();
           importDefault = databaseResult;
           if (null != databaseResult) {
             const _HermesInternal4 = HermesInternal;
             importDefaultResult.verbose("hydrating guild (guild: " + guild_id + ", trace: " + getBasicChannel + ")");
             const _HermesInternal5 = HermesInternal;
-            const result = _require(1901).tryLoadOrResetCacheGateway("ensureGuildLoaded(" + guild_id + ")", () => databaseResult(outer1_2[18]).getSync(closure_1, closure_0), "ensureGuildLoaded");
+            const result = _require(1902).tryLoadOrResetCacheGateway("ensureGuildLoaded(" + guild_id + ")", () => databaseResult(outer1_2[18]).getSync(closure_1, closure_0), "ensureGuildLoaded");
             if (null == result) {
               set.add(guild_id);
               store.restored(guild_id);
@@ -138,7 +138,7 @@ function ensureGuildLoaded(guild_id, Basic, getBasicChannel) {
             } else {
               const tmp42 = callback2(result, 2);
               const first = tmp42[0];
-              importDefault(1903)(first);
+              importDefault(1904)(first);
               if (Basic !== closure_40.Basic) {
                 closure_39 = closure_39 + 1;
               }
@@ -166,9 +166,9 @@ function ensureGuildLoaded(guild_id, Basic, getBasicChannel) {
               importDefaultResult.verbose("hydration complete (guild: " + guild_id + ", channels: " + first.length + ", guilds_loaded: " + closure_39 + ")");
               const obj2 = importDefault(20);
             }
-            const obj3 = _require(1901);
+            const obj3 = _require(1902);
           }
-          const obj = importDefault(1882);
+          const obj = importDefault(1883);
         }
       }
     }
@@ -929,7 +929,7 @@ tmp7 = new tmp7(require("dispatcher"), {
           let tmp3 = setChannel;
           let tmp4 = require;
           let tmp5 = dependencyMap;
-          let obj = require(1903) /* _createForOfIteratorHelperLoose */;
+          let obj = require(1904) /* _createForOfIteratorHelperLoose */;
           let tmp6 = callback6;
           let tmp7 = setChannel(obj.deserializeChannel(callback6(iter.value)));
           let iter2 = tmp2();
@@ -1093,7 +1093,7 @@ tmp7 = new tmp7(require("dispatcher"), {
         let fileOnlyResult = importDefaultResult.fileOnly("Lazy loaded guild channels for " + guildId);
         let tmp4 = importDefault;
         let tmp5 = dependencyMap;
-        let tmp6 = importDefault(1903)(channels);
+        let tmp6 = importDefault(1904)(channels);
         let tmp7 = set;
         let addResult = set.add(guildId);
         let tmp9 = store;
@@ -1148,7 +1148,7 @@ tmp7 = new tmp7(require("dispatcher"), {
         let tmp2 = setChannel;
         let tmp3 = require;
         let tmp4 = dependencyMap;
-        let obj = require(1903) /* _createForOfIteratorHelperLoose */;
+        let obj = require(1904) /* _createForOfIteratorHelperLoose */;
         let tmp5 = callback6;
         let tmp6 = setChannel(obj.deserializeChannel(callback6(iter.value)));
         let iter2 = tmp();

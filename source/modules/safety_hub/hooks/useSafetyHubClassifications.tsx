@@ -1,10 +1,10 @@
-// Module ID: 11058
-// Function ID: 86026
+// Module ID: 11014
+// Function ID: 85646
 // Name: useSafetyHubClassifications
-// Dependencies: [31, 11053, 7589, 566, 21, 7588, 7590, 11059, 2]
+// Dependencies: [31, 11009, 6699, 566, 21, 6698, 6700, 11015, 2]
 // Exports: useActiveSafetyHubClassifications, useExpiredSafetyHubClassifications, useSafetyHubAppealSignal, useSafetyHubClassification
 
-// Module 11058 (useSafetyHubClassifications)
+// Module 11014 (useSafetyHubClassifications)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ViolationType } from "SafetyHubLinks";
@@ -42,7 +42,7 @@ export const useSafetyHubClassification = function useSafetyHubClassification(cl
     if (null != guild_metadata) {
       member_type = guild_metadata.member_type;
     }
-    if (member_type === _require(7590).MemberType.OWNER) {
+    if (member_type === _require(6700).MemberType.OWNER) {
       let GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;

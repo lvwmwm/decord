@@ -1,10 +1,10 @@
-// Module ID: 7966
-// Function ID: 63040
+// Module ID: 7914
+// Function ID: 63015
 // Name: EditCollectiblesPickerList
-// Dependencies: [57, 31, 27, 33, 4130, 7954, 4126, 22, 7527, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 7902, 4127, 22, 6619, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 7966 (EditCollectiblesPickerList)
+// Module 7914 (EditCollectiblesPickerList)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -20,7 +20,7 @@ obj = { paddingHorizontal: require("useCollectibleListLayout").GUTTER_SIZE, padd
 obj.header = obj;
 let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_8 = importAllResult.memo((header) => {
-  obj = { style: callback().header, children: jsx(require(4126) /* Text */.Heading, obj) };
+  obj = { style: callback().header, children: jsx(require(4127) /* Text */.Heading, obj) };
   obj = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: header.header };
   return <closure_5 variant="heading-sm/medium" color="mobile-text-heading-primary">{arg0.header}</closure_5>;
 });

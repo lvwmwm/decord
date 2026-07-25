@@ -1,10 +1,10 @@
-// Module ID: 11984
-// Function ID: 92663
+// Module ID: 11960
+// Function ID: 92468
 // Name: getCurrentActivityGamePlatform
-// Dependencies: [653, 478, 1553, 5689, 2]
+// Dependencies: [653, 478, 1553, 5973, 2]
 // Exports: default
 
-// Module 11984 (getCurrentActivityGamePlatform)
+// Module 11960 (getCurrentActivityGamePlatform)
 import ME from "ME";
 
 let closure_3;
@@ -27,7 +27,7 @@ function getCurrentActivityGamePlatform() {
 function isActivityJoinable(type) {
   let tmp = null == type;
   if (!tmp) {
-    tmp = !importDefault(5689)(type, constants.JOIN);
+    tmp = !importDefault(5973)(type, constants.JOIN);
   }
   if (!tmp) {
     tmp = type.type !== constants3.PLAYING;

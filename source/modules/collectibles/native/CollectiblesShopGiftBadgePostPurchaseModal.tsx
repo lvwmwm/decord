@@ -1,10 +1,10 @@
-// Module ID: 11857
-// Function ID: 91935
+// Module ID: 11833
+// Function ID: 91740
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [31, 27, 33, 4130, 689, 1557, 4337, 6773, 5482, 7613, 1212, 5119, 4126, 2294, 9838, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1557, 4338, 5769, 5482, 6725, 1212, 5119, 4127, 2295, 9762, 2]
 // Exports: default
 
-// Module 11857 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 11833 (CollectiblesShopGiftBadgePostPurchaseModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -51,10 +51,10 @@ export default function CollectiblesShopGiftBadgePostPurchaseModal(currentProgre
   let items = [callback(closure_4, obj), ];
   const obj2 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.string(importDefault(2294).roVAey);
-  items[1] = callback(require(4126) /* Text */.Text, obj2);
+  obj2.children = intl2.string(importDefault(2295).roVAey);
+  items[1] = callback(require(4127) /* Text */.Text, obj2);
   obj.children = items;
-  const items1 = [callback2(closure_5, obj), callback(importDefault(9838), { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
+  const items1 = [callback2(closure_5, obj), callback(importDefault(9762), { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
   obj.children = items1;
-  return callback2(require(7613) /* ModalScreen */.ModalScreen, obj);
+  return callback2(require(6725) /* ModalScreen */.ModalScreen, obj);
 };

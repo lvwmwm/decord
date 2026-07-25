@@ -1,10 +1,10 @@
-// Module ID: 10795
-// Function ID: 83814
+// Module ID: 10767
+// Function ID: 83556
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 6, 7, 4177, 1849, 653, 4191, 10796, 4227, 686, 566, 2]
+// Dependencies: [15, 17, 18, 57, 6, 7, 4178, 1850, 653, 4192, 10768, 4228, 686, 566, 2]
 // Exports: keySection, parseSection
 
-// Module 10795 (_isNativeReflectConstruct)
+// Module 10767 (_isNativeReflectConstruct)
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -556,7 +556,7 @@ obj = {
     section = section.section;
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY: function handleOpenReplay() {
-    importAll(10796).chooseReplayPath();
+    importAll(10768).chooseReplayPath();
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: function handleOpenReplayAtPath(path) {
     path = path.path;
@@ -567,7 +567,7 @@ obj = {
       if (0 !== path.length) {
         replayConnection = mediaEngine.createReplayConnection(MediaEngineContextTypes.DEFAULT, path);
         if (null != replayConnection) {
-          replayConnection.on(replayConnection(4227).BaseConnectionEvent.Video, (userId) => {
+          replayConnection.on(replayConnection(4228).BaseConnectionEvent.Video, (userId) => {
             let obj = outer1_1(outer1_3[12]);
             obj = { type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT", mediaEngineConnectionId: replayConnection.mediaEngineConnectionId, userId };
             let num = 0;

@@ -1,9 +1,9 @@
-// Module ID: 4165
-// Function ID: 35240
+// Module ID: 4166
+// Function ID: 35251
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4166, 1194, 653, 587, 4174, 1360, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4167, 1194, 653, 587, 4175, 1360, 22, 566, 686, 2]
 
-// Module 4165 (_isNativeReflectConstruct)
+// Module 4166 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -135,7 +135,7 @@ function setLibraryApplications(libraryApplications) {
       let fromServer = closure_9.createFromServer(iter.value);
       let tmp4 = require;
       let tmp5 = dependencyMap;
-      let obj = require(4174) /* convertToTransitionState */;
+      let obj = require(4175) /* convertToTransitionState */;
       let tmp6 = closure_14;
       closure_14[obj.getComboId(fromServer.id, fromServer.branchId)] = fromServer;
       let iter2 = tmp();
@@ -146,12 +146,12 @@ function setLibraryApplications(libraryApplications) {
 }
 function handleLibraryApplicationUpdate(libraryApplication) {
   const fromServer = closure_9.createFromServer(libraryApplication.libraryApplication);
-  const comboId = require(4174) /* convertToTransitionState */.getComboId(fromServer.id, fromServer.branchId);
+  const comboId = require(4175) /* convertToTransitionState */.getComboId(fromServer.id, fromServer.branchId);
   closure_14[comboId] = fromServer;
   set.delete(comboId);
 }
 function _getLibraryApplication(applicationId, branchId) {
-  const comboId = require(4174) /* convertToTransitionState */.getComboId(applicationId, branchId);
+  const comboId = require(4175) /* convertToTransitionState */.getComboId(applicationId, branchId);
   let tmp2 = table[comboId];
   if (null == tmp2) {
     tmp2 = table2[comboId];
@@ -402,7 +402,7 @@ tmp3 = new tmp3(require("dispatcher"), {
     let applicationId;
     let branchId;
     ({ applicationId, branchId } = flags);
-    const comboId = require(4174) /* convertToTransitionState */.getComboId(applicationId, branchId);
+    const comboId = require(4175) /* convertToTransitionState */.getComboId(applicationId, branchId);
     const obj2 = _getLibraryApplication(applicationId, branchId);
     let hasFlagResult = null != obj2 && !obj2.isHidden();
     if (hasFlagResult) {
@@ -421,7 +421,7 @@ tmp3 = new tmp3(require("dispatcher"), {
     let branchId;
     let launchOptionId;
     ({ applicationId, branchId, launchOptionId } = arg0);
-    closure_18[require(4174) /* convertToTransitionState */.getComboId(applicationId, branchId)] = launchOptionId;
+    closure_18[require(4175) /* convertToTransitionState */.getComboId(applicationId, branchId)] = launchOptionId;
     saveActiveLaunchOptionIds();
   },
   LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: function handleActiveBranchUpdate(arg0) {
@@ -444,7 +444,7 @@ tmp3 = new tmp3(require("dispatcher"), {
         let value = iter.value;
         let tmp2 = require;
         let tmp3 = dependencyMap;
-        let obj = require(4174) /* convertToTransitionState */;
+        let obj = require(4175) /* convertToTransitionState */;
         let tmp4 = closure_15;
         closure_15[obj.getComboId(value.id, value.branchId)] = value;
         let iter2 = tmp();

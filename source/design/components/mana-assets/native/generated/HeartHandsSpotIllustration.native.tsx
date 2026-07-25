@@ -1,10 +1,10 @@
-// Module ID: 6256
-// Function ID: 50349
+// Module ID: 7176
+// Function ID: 59999
 // Name: HeartHandsSpotIllustration
-// Dependencies: [33, 5085, 6257, 2]
+// Dependencies: [33, 5085, 7177, 2]
 // Exports: HeartHandsSpotIllustration
 
-// Module 6256 (HeartHandsSpotIllustration)
+// Module 7176 (HeartHandsSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HeartHandsSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const HeartHandsSpotIllustration = function HeartHandsSpotIllustration(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6257) };
+  obj = { uri: importDefault(7177) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,8 +1,8 @@
-// Module ID: 9635
-// Function ID: 74949
-// Dependencies: [57, 31, 27, 1849, 5035, 3806, 653, 33, 4130, 689, 675, 9636, 9638, 566, 5462, 5482, 9608, 682, 9642, 5732, 4466, 9643, 8028, 5489, 9655, 5772, 1212, 9665, 9666, 9671, 2]
+// Module ID: 9556
+// Function ID: 74536
+// Dependencies: [57, 31, 27, 1850, 5036, 3807, 653, 33, 4131, 689, 675, 9557, 9560, 566, 5462, 5482, 9529, 682, 9564, 9559, 4467, 9565, 6137, 5489, 9577, 9171, 1212, 9587, 9588, 9593, 2]
 
-// Module 9635
+// Module 9556
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "EmptyStateSticker";
@@ -44,9 +44,9 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
   const onPressSticker = channel.onPressSticker;
   ({ bottomSheetRef, bottomSheetIndex, paddingTop, stickerFormats, inPortalKeyboard } = channel);
   let tmp = callback2();
-  let obj = channel(9636);
+  let obj = channel(9557);
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  let obj1 = channel(9638);
+  let obj1 = channel(9560);
   const stickerCategories = obj1.useStickerCategories(channel);
   let obj2 = channel(566);
   const items = [closure_8];
@@ -57,7 +57,7 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
   let tmp7 = null;
   const tmp8 = analyticsLocations(importAllResult.useState(null), 2);
   const tmp6 = onPressSticker(5462);
-  ({ safeAreaStyle, safeAreaBottomKeyboardAware } = onPressSticker(9608)({ hasCategories: true }));
+  ({ safeAreaStyle, safeAreaBottomKeyboardAware } = onPressSticker(9529)({ hasCategories: true }));
   const items1 = [, ];
   ({ id: arr3[0], guild_id: arr3[1] } = channel);
   const callback = importAllResult.useCallback((arg0) => {
@@ -145,14 +145,14 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
     obj2.onChange = callback;
     obj2.onFocus = callback2;
     obj2.isRound = true;
-    obj1.children = callback(channel(5772).SearchField, obj2);
+    obj1.children = callback(channel(9171).SearchField, obj2);
     tmp7 = callback(closure_5, obj1);
   }
   const items5 = [tmp7, , ];
   if (stateFromStores) {
     if (0 === stickerCategories.length) {
       obj3 = { style: tmp.emptyState };
-      tmp = callback(onPressSticker(9665), {});
+      tmp = callback(onPressSticker(9587), {});
       obj3.children = tmp;
       let tmp20Result = callback(closure_5, obj3);
     } else {
@@ -168,15 +168,15 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
       obj4.stickerFormats = stickerFormats;
       obj4.searchResults = tmp8[0];
       obj4.inPortalKeyboard = inPortalKeyboard;
-      tmp20Result = callback(onPressSticker(9666), obj4);
+      tmp20Result = callback(onPressSticker(9588), obj4);
       const tmp20 = callback;
-      const tmp23 = onPressSticker(9666);
+      const tmp23 = onPressSticker(9588);
     }
   } else {
     const obj5 = { animating: true, size: "large", style: tmp.loadingIndicator };
     items5[1] = callback(closure_6, obj5);
     const obj6 = { categories: stickerCategories, categoryIndex: tmp4[0], style: safeAreaStyle };
-    items5[2] = callback(onPressSticker(9671), obj6);
+    items5[2] = callback(onPressSticker(9593), obj6);
     obj.children = items5;
     obj.children = closure_15(closure_5, obj);
     return callback(channel(5462).AnalyticsLocationProvider, obj);

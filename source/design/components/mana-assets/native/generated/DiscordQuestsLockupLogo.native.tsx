@@ -1,10 +1,10 @@
-// Module ID: 6006
-// Function ID: 49974
+// Module ID: 6926
+// Function ID: 59624
 // Name: DiscordQuestsLockupLogo
-// Dependencies: [27, 33, 689, 3834, 6007, 2]
+// Dependencies: [27, 33, 689, 3835, 6927, 2]
 // Exports: DiscordQuestsLockupLogo
 
-// Module 6006 (DiscordQuestsLockupLogo)
+// Module 6926 (DiscordQuestsLockupLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -31,7 +31,7 @@ export const DiscordQuestsLockupLogo = function DiscordQuestsLockupLogo(color) {
   if (num4 === undefined) {
     num4 = 1;
   }
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
     obj = { tintColor: token };
@@ -46,12 +46,12 @@ export const DiscordQuestsLockupLogo = function DiscordQuestsLockupLogo(color) {
       tmp5 = obj;
     }
   }
-  const obj1 = { fadeDuration: 0, source: { uri: importDefault(6007) } };
+  const obj1 = { fadeDuration: 0, source: { uri: importDefault(6927) } };
   const obj3 = { width: num2 * num4, height: num3 * num4 };
   const items = [obj3, tmp5];
   obj1.style = items;
   obj1.accessible = accessible;
   obj1.accessibilityLabel = accessibilityLabel;
   obj1.resizeMode = resizeMode;
-  return <Image fadeDuration={0} source={{ uri: importDefault(6007) }} />;
+  return <Image fadeDuration={0} source={{ uri: importDefault(6927) }} />;
 };

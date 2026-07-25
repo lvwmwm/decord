@@ -1,10 +1,10 @@
-// Module ID: 6646
-// Function ID: 51047
+// Module ID: 6499
+// Function ID: 58100
 // Name: LinkButton
-// Dependencies: [31, 33, 4130, 4660, 4126, 2]
+// Dependencies: [31, 33, 4131, 4661, 4127, 2]
 // Exports: LinkButton
 
-// Module 6646 (LinkButton)
+// Module 6499 (LinkButton)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -48,7 +48,7 @@ export const LinkButton = function LinkButton(textColor) {
   obj.disabled = disabled;
   obj.onPress = onPress;
   obj = { style: textStyle, variant, color: str, children: text };
-  const items1 = [callback(require(4126) /* Text */.Text, obj), textColor.iconRight];
+  const items1 = [callback(require(4127) /* Text */.Text, obj), textColor.iconRight];
   obj.children = items1;
-  return closure_3(require(4660) /* PressableBase */.PressableOpacity, obj);
+  return closure_3(require(4661) /* PressableBase */.PressableOpacity, obj);
 };

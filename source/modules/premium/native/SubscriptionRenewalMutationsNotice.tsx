@@ -1,10 +1,10 @@
-// Module ID: 7415
-// Function ID: 59638
+// Module ID: 6491
+// Function ID: 58059
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [31, 27, 3777, 33, 4130, 689, 4973, 1273, 1212, 3776, 2]
+// Dependencies: [31, 27, 3778, 33, 4131, 689, 4974, 1273, 1212, 3777, 2]
 // Exports: default
 
-// Module 7415 (SubscriptionRenewalMutationsNotice)
+// Module 6491 (SubscriptionRenewalMutationsNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import { isNoneSubscription } from "_isNativeReflectConstruct";
@@ -38,8 +38,8 @@ export default function SubscriptionRenewalMutationsNotice(arg0) {
   const obj1 = {};
   if (!subscription.hasExternalPlanChange) {
     if (!isNoneSubscription(renewalMutations.planId)) {
-      let displayName = importDefault(3776).getDisplayName(renewalMutations.planId);
-      const obj5 = importDefault(3776);
+      let displayName = importDefault(3777).getDisplayName(renewalMutations.planId);
+      const obj5 = importDefault(3777);
     }
     obj1.planName = displayName;
     obj1.date = subscription.currentPeriodEnd;
@@ -48,5 +48,5 @@ export default function SubscriptionRenewalMutationsNotice(arg0) {
     obj.children = items;
     return closure_6(View, obj);
   }
-  displayName = require(3776) /* _createForOfIteratorHelperLoose */.getExternalPlanDisplayName(renewalMutations);
+  displayName = require(3777) /* _createForOfIteratorHelperLoose */.getExternalPlanDisplayName(renewalMutations);
 };

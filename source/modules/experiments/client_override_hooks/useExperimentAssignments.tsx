@@ -1,10 +1,10 @@
-// Module ID: 10982
-// Function ID: 85345
+// Module ID: 10933
+// Function ID: 84937
 // Name: getExperimentServerAssignment
-// Dependencies: [57, 4044, 1188, 566, 4052, 2]
+// Dependencies: [57, 4045, 1188, 566, 4053, 2]
 // Exports: useExperimentAssignment, useExperimentServerAssignment
 
-// Module 10982 (getExperimentServerAssignment)
+// Module 10933 (getExperimentServerAssignment)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ function getExperimentServerAssignment(arg0, id) {
   const first = tmp4[0];
   if (null == name) {
     return null;
-  } else if (name.system === require(4052) /* trackExposureToExperiment */.ExperimentSystem.LEGACY) {
+  } else if (name.system === require(4053) /* trackExposureToExperiment */.ExperimentSystem.LEGACY) {
     name = name.name;
     let loadedUserExperiment = first.getLoadedUserExperiment(name);
   } else {

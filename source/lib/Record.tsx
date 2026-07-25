@@ -1,9 +1,9 @@
-// Module ID: 1858
-// Function ID: 20499
+// Module ID: 1859
+// Function ID: 20510
 // Name: Record
 // Dependencies: [6, 7, 2]
 
-// Module 1858 (Record)
+// Module 1859 (Record)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

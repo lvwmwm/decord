@@ -1,10 +1,10 @@
-// Module ID: 4161
-// Function ID: 35148
+// Module ID: 4162
+// Function ID: 35159
 // Name: isImageProxyURL
 // Dependencies: [1443, 1426, 2]
 // Exports: getSizedImageProxyURL
 
-// Module 4161 (isImageProxyURL)
+// Module 4162 (isImageProxyURL)
 import set from "set";
 
 function isImageProxyURL(hostname) {

@@ -1,10 +1,10 @@
-// Module ID: 6560
-// Function ID: 50805
+// Module ID: 7480
+// Function ID: 60455
 // Name: StreamingTier5SmallBadge
-// Dependencies: [33, 5085, 6561, 2]
+// Dependencies: [33, 5085, 7481, 2]
 // Exports: StreamingTier5SmallBadge
 
-// Module 6560 (StreamingTier5SmallBadge)
+// Module 7480 (StreamingTier5SmallBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier5SmallBadge.native.tsx");
@@ -27,7 +27,7 @@ export const StreamingTier5SmallBadge = function StreamingTier5SmallBadge(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6561) };
+  obj = { uri: importDefault(7481) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

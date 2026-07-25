@@ -1,10 +1,10 @@
-// Module ID: 9305
-// Function ID: 72609
+// Module ID: 9198
+// Function ID: 72098
 // Name: MultipleChoiceField
-// Dependencies: [31, 27, 482, 33, 4130, 5052, 689, 4126, 7654, 7653, 2]
+// Dependencies: [31, 27, 482, 33, 4131, 5053, 689, 4127, 7596, 7595, 2]
 // Exports: default
 
-// Module 9305 (MultipleChoiceField)
+// Module 9198 (MultipleChoiceField)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 5654
-// Function ID: 48368
+// Module ID: 5999
+// Function ID: 53376
 // Name: useAvailableTags
-// Dependencies: [31, 1348, 3758, 482, 566, 1327, 5655, 2]
+// Dependencies: [31, 1348, 3759, 482, 566, 1327, 6000, 2]
 // Exports: useSomeAppliedTags, useVisibleAppliedForumTags
 
-// Module 5654 (useAvailableTags)
+// Module 5999 (useAvailableTags)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 12170
-// Function ID: 95338
+// Module ID: 12146
+// Function ID: 95147
 // Name: useCanDM
-// Dependencies: [6900, 3759, 1194, 1917, 3767, 3803, 566, 2]
+// Dependencies: [5891, 3760, 1194, 1918, 3768, 3804, 566, 2]
 // Exports: canDm, default
 
-// Module 12170 (useCanDM)
+// Module 12146 (useCanDM)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -28,7 +28,7 @@ export default function useCanDM(arg0, arg1) {
     }
     return isLurkingResult;
   });
-  const RestrictedGuildIds = _require(3803).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(3804).RestrictedGuildIds;
   closure_4 = RestrictedGuildIds.useSetting();
   const obj2 = _require(566);
   const items2 = [closure_6, closure_5, _isNativeReflectConstruct];
@@ -62,7 +62,7 @@ export const canDm = function canDm(arg0, arg1) {
   if (isLurkingResult) {
     isLurkingResult = lurking.isLurking(arg1);
   }
-  const RestrictedGuildIds = _require(3803).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(3804).RestrictedGuildIds;
   _require = RestrictedGuildIds.getSetting();
   let isFriendResult = friend.isFriend(arg0);
   let tmp5 = !tmp;
@@ -79,7 +79,7 @@ export const canDm = function canDm(arg0, arg1) {
   if (!tmp5) {
     let setting = gameFriendsForUser.getGameFriendsForUser(arg0).length > 0;
     if (setting) {
-      const AllowGameFriendDmsInDiscord = _require(3803).AllowGameFriendDmsInDiscord;
+      const AllowGameFriendDmsInDiscord = _require(3804).AllowGameFriendDmsInDiscord;
       setting = AllowGameFriendDmsInDiscord.getSetting();
     }
     tmp5 = setting;

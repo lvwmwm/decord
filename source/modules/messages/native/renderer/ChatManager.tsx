@@ -1,9 +1,9 @@
-// Module ID: 9346
-// Function ID: 72939
+// Module ID: 9239
+// Function ID: 72428
 // Name: ChatManager
-// Dependencies: [6, 7, 7711, 9347, 636, 2]
+// Dependencies: [6, 7, 7655, 9240, 636, 2]
 
-// Module 9346 (ChatManager)
+// Module 9239 (ChatManager)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import Changeset from "Changeset";

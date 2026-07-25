@@ -1,9 +1,9 @@
-// Module ID: 6868
-// Function ID: 54371
+// Module ID: 5643
+// Function ID: 48279
 // Name: AgeRestrictionStatus
 // Dependencies: [2]
 
-// Module 6868 (AgeRestrictionStatus)
+// Module 5643 (AgeRestrictionStatus)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeRestrictionStatus.tsx");
 
 export const AgeRestrictionStatus = { EVERYONE: 0, [0]: "EVERYONE", ADULT: 1, [1]: "ADULT" };

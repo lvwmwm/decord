@@ -1,10 +1,10 @@
-// Module ID: 4155
-// Function ID: 35137
+// Module ID: 4156
+// Function ID: 35148
 // Name: items3
-// Dependencies: [653, 1881, 2]
+// Dependencies: [653, 1882, 2]
 // Exports: getAppIntentScheme
 
-// Module 4155 (items3)
+// Module 4156 (items3)
 import { ChannelTypes } from "ME";
 import set from "set";
 
@@ -18,7 +18,7 @@ obj = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_r
 ({ UNLOCKED: obj3.default_orientation_lock_state, UNLOCKED: obj3.tablet_default_orientation_lock_state } = obj);
 const items3 = [require("PermissionOverwriteType").EmbeddedActivitySupportedPlatforms.WEB];
 obj.supported_platforms = items3;
-obj.client_platform_config = { [require(1881).EmbeddedActivitySupportedPlatforms.WEB]: obj, [require(1881).EmbeddedActivitySupportedPlatforms.IOS]: obj, [require(1881).EmbeddedActivitySupportedPlatforms.ANDROID]: obj };
+obj.client_platform_config = { [require(1882).EmbeddedActivitySupportedPlatforms.WEB]: obj, [require(1882).EmbeddedActivitySupportedPlatforms.IOS]: obj, [require(1882).EmbeddedActivitySupportedPlatforms.ANDROID]: obj };
 obj.has_csp_exception = false;
 obj.displays_advertisements = false;
 obj.blocked_locales = [];

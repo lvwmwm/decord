@@ -1,8 +1,8 @@
-// Module ID: 11703
-// Function ID: 90748
-// Dependencies: [31, 27, 33, 10422, 10426, 3991, 2]
+// Module ID: 11672
+// Function ID: 90492
+// Dependencies: [31, 27, 33, 10356, 10360, 3992, 2]
 
-// Module 11703
+// Module 11672
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
@@ -13,9 +13,9 @@ let require = arg1;
 ({ StyleSheet: closure_3, View: closure_4 } = get_ActivityIndicator);
 let closure_6 = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx1(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };
 const memoResult = require("result").memo(function ChannelSafeAreaBottom(channelId) {
-  const tmp = importDefault(10422)();
+  const tmp = importDefault(10356)();
   const require = tmp;
-  let obj = require(3991);
+  let obj = require(3992);
   const fn = function n() {
     return { height: tmp.get() };
   };
@@ -24,9 +24,9 @@ const memoResult = require("result").memo(function ChannelSafeAreaBottom(channel
   fn.__initData = closure_6;
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: animatedStyle };
-  const items = [absoluteFill.absoluteFill, importDefault(10426)(channelId.channelId)];
+  const items = [absoluteFill.absoluteFill, importDefault(10360)(channelId.channelId)];
   obj.children = <closure_4 style={items} />;
-  return jsx(importDefault(3991).View, { style: animatedStyle });
+  return jsx(importDefault(3992).View, { style: animatedStyle });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/channel/ChannelSafeAreaBottomAnimated.android.tsx");
 

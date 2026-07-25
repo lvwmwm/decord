@@ -1,10 +1,10 @@
-// Module ID: 9504
-// Function ID: 73971
+// Module ID: 9425
+// Function ID: 73558
 // Name: getQuestUrl
-// Dependencies: [4976, 1212, 9485, 9486, 9487, 6969, 6958, 5490, 2]
+// Dependencies: [4977, 1212, 9406, 9407, 9408, 5960, 5949, 5490, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getSortMethodText
 
-// Module 9504 (getQuestUrl)
+// Module 9425 (getQuestUrl)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 
 let closure_2;
@@ -152,14 +152,14 @@ export const getCtaLink = function getCtaLink(config) {
 };
 export const copyShareLink = function copyShareLink(id, ctaContent) {
   ctaContent = ctaContent.ctaContent;
-  let obj = require(9485) /* apexExperiment */;
-  if (obj.shouldMigrateToAdAnalyticsInterface(require(9485) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
-    let tmpResult = tmp(9486);
-    obj = { type: tmp(9487).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(6969).AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent };
+  let obj = require(9406) /* apexExperiment */;
+  if (obj.shouldMigrateToAdAnalyticsInterface(require(9406) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
+    let tmpResult = tmp(9407);
+    obj = { type: tmp(9408).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5960).AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent };
     ({ content: obj5.surfaceId, sourceQuestContent: obj5.sourceQuestContent, position: obj5.questContentPosition, impressionId: obj5.impressionId } = ctaContent);
     tmpResult.captureAdUserAction(obj);
   } else {
-    tmpResult = tmp(6958);
+    tmpResult = tmp(5949);
     obj = { questId: id, questContent: ctaContent.content, questContentCTA: ctaContent };
     ({ position: obj3.questContentPosition, impressionId: obj3.impressionId, sourceQuestContent: obj3.sourceQuestContent } = ctaContent);
     const result = tmpResult.trackQuestContentClicked(obj);

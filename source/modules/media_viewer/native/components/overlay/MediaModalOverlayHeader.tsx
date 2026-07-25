@@ -1,10 +1,10 @@
-// Module ID: 12262
-// Function ID: 95768
+// Module ID: 12238
+// Function ID: 95577
 // Name: MediaModalOverlayHeader
-// Dependencies: [31, 27, 33, 4130, 5084, 12259, 8349, 9573, 3991, 5121, 12263, 1212, 5119, 1273, 689, 4126, 12264, 9338, 477, 12265, 9007, 2]
+// Dependencies: [31, 27, 33, 4131, 5084, 12235, 8107, 9494, 3992, 5121, 12239, 1212, 5119, 1273, 689, 4127, 12240, 9231, 477, 12241, 8895, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 12262 (MediaModalOverlayHeader)
+// Module 12238 (MediaModalOverlayHeader)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -42,9 +42,9 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   ({ source, contextName, contextIcon } = arg0);
   ({ onClose, disableDownload, disableMediaOverlayButton, shareable, animationDriver, channelId } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(12259) /* useOverlayLayoutDriver */;
+  let obj = require(12235) /* useOverlayLayoutDriver */;
   const headerLayoutAnimation = obj.useHeaderLayoutAnimation(animationDriver);
-  let obj1 = require(8349) /* useMediaShareActions */;
+  let obj1 = require(8107) /* useMediaShareActions */;
   const mediaShareActions = obj1.useMediaShareActions({ source, disableDownload, shareable });
   obj = {};
   obj = {};
@@ -56,12 +56,12 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   const obj2 = { style: tmp.navbarInner, pointerEvents: "box-none" };
   const obj3 = { style: tmp.navbarLeft };
   const obj4 = {};
-  let tmp4 = importDefault(9573)(channelId);
+  let tmp4 = importDefault(9494)(channelId);
   let intl = require(1212) /* getSystemLocale */.intl;
   obj4.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj4.icon = callback(require(5119) /* XSmallIcon */.XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj4.onPress = onClose;
-  const items1 = [callback(importDefault(12263), obj4), ];
+  const items1 = [callback(importDefault(12239), obj4), ];
   let tmp11Result = null != contextName;
   if (tmp11Result) {
     const obj5 = { style: tmp.navbarName };
@@ -74,7 +74,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
     const items2 = [tmp14, ];
     const obj8 = { style: tmp.navbarNameShrinkWrapper };
     const obj9 = { accessibilityRole: "header", variant: "heading-md/medium", lineClamp: 1, ellipsizeMode: "tail", color: "text-overlay-light", children: contextName };
-    obj8.children = callback(require(4126) /* Text */.Text, obj9);
+    obj8.children = callback(require(4127) /* Text */.Text, obj9);
     items2[1] = callback(closure_4, obj8);
     obj6.children = items2;
     obj5.children = closure_6(closure_4, obj6);
@@ -89,7 +89,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   if (tmp24Result) {
     const obj10 = { style: tmp.navbarRight };
     const obj11 = { source };
-    const items4 = [callback(importDefault(12264), obj11), ];
+    const items4 = [callback(importDefault(12240), obj11), ];
     let tmp29 = null;
     if (!disableMediaOverlayButton) {
       const obj12 = {
@@ -114,7 +114,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
               return tmp3(tmp4, obj);
             }
       };
-      tmp29 = callback(require(9338) /* ContextMenu */.ContextMenu, obj12);
+      tmp29 = callback(require(9231) /* ContextMenu */.ContextMenu, obj12);
     }
     items4[1] = tmp29;
     obj10.children = items4;
@@ -126,5 +126,5 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   obj2.children = items3;
   obj1.children = closure_6(closure_4, obj2);
   obj.children = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
-  return callback(importDefault(3991).View, obj);
+  return callback(importDefault(3992).View, obj);
 };

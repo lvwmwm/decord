@@ -1,9 +1,9 @@
-// Module ID: 6830
-// Function ID: 53914
+// Module ID: 5830
+// Function ID: 51264
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 3767, 1906, 1849, 6831, 6832, 1362, 21, 4351, 6833, 1327, 3769, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 3768, 1907, 1850, 5831, 5832, 1362, 21, 4352, 5833, 1327, 3770, 566, 686, 2]
 
-// Module 6830 (_isNativeReflectConstruct)
+// Module 5830 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import mapConversationModeration from "mapConversationModeration";
@@ -211,7 +211,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
           do {
             let tmp5 = require;
             let tmp6 = dependencyMap;
-            let obj = require(4351) /* createMinimalMessageRecord */;
+            let obj = require(4352) /* createMinimalMessageRecord */;
             let messageRecord = obj.createMessageRecord(iter.value);
             let arr = items1.push(messageRecord);
             let messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
@@ -241,7 +241,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
               obj = { conversationId: null, moderationLabel: null };
               let tmp13 = require;
               let tmp14 = dependencyMap;
-              let obj4 = require(4351) /* createMinimalMessageRecord */;
+              let obj4 = require(4352) /* createMinimalMessageRecord */;
               obj.message = obj4.createMessageRecord(value);
               let result1 = messageMetadataByMessageId4.set(value.id, obj);
             }
@@ -311,7 +311,7 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      obj = require(3769) /* getReactionEmojiName */;
+      obj = require(3770) /* getReactionEmojiName */;
     }
   }
 }
@@ -701,7 +701,7 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(6833).mapConversation);
+      const mapped = rawConversations.map(set(5833).mapConversation);
       const found = mapped.filter(set(1327).isNotNullish);
       const peekResult = importDefaultResult.peek(channelId);
       if (isJump) {
@@ -1290,9 +1290,9 @@ obj = {
           }
           let flag = null != message;
           if (flag) {
-            replaceHydratedMessage(peekResult, value, id, require(4351) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message));
+            replaceHydratedMessage(peekResult, value, id, require(4352) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message));
             flag = true;
-            const obj = require(4351) /* createMinimalMessageRecord */;
+            const obj = require(4352) /* createMinimalMessageRecord */;
           }
           return flag;
         }

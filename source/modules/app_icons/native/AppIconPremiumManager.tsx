@@ -1,9 +1,9 @@
-// Module ID: 16036
-// Function ID: 123959
+// Module ID: 16047
+// Function ID: 124127
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 1849, 7444, 653, 3, 7445, 477, 7443, 3776, 675, 5078, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 1850, 6526, 653, 3, 6527, 477, 6525, 3777, 675, 5078, 2]
 
-// Module 16036 (_isNativeReflectConstruct)
+// Module 16047 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getDefaultIcon from "getDefaultIcon";

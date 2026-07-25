@@ -1,10 +1,10 @@
-// Module ID: 9573
-// Function ID: 74488
+// Module ID: 9494
+// Function ID: 74075
 // Name: useShouldHideMediaOptions
 // Dependencies: [1348, 1355, 624, 2]
 // Exports: default
 
-// Module 9573 (useShouldHideMediaOptions)
+// Module 9494 (useShouldHideMediaOptions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelFlags } from "set";
 

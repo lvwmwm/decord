@@ -1,10 +1,10 @@
-// Module ID: 8349
-// Function ID: 65851
+// Module ID: 8107
+// Function ID: 64502
 // Name: useMediaShareActions
-// Dependencies: [31, 8350, 1348, 4349, 8375, 653, 6835, 33, 624, 6834, 7898, 4098, 8320, 4317, 8376, 8322, 8380, 3827, 9904, 4138, 3984, 9900, 1934, 9570, 4080, 1212, 9912, 12254, 10189, 9958, 4639, 5498, 5500, 2]
+// Dependencies: [31, 8108, 1348, 4350, 8133, 653, 5837, 33, 624, 5834, 7845, 4099, 8055, 4318, 8134, 8057, 8138, 3828, 9830, 4139, 3985, 9824, 1935, 9491, 4081, 1212, 9839, 12230, 10121, 9886, 4640, 5498, 5500, 2]
 // Exports: default
 
-// Module 8349 (useMediaShareActions)
+// Module 8107 (useMediaShareActions)
 import ActionSheet from "ActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

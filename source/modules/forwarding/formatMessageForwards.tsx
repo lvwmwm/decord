@@ -1,10 +1,10 @@
-// Module ID: 7732
-// Function ID: 61479
+// Module ID: 7678
+// Function ID: 61447
 // Name: createGuildBreadcrumb
-// Dependencies: [6, 7, 7733, 1348, 1838, 3758, 3767, 1849, 1392, 1212, 3800, 4320, 5679, 2]
+// Dependencies: [6, 7, 7679, 1348, 1838, 3759, 3768, 1850, 1392, 1212, 3801, 4321, 5856, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 7732 (createGuildBreadcrumb)
+// Module 7678 (createGuildBreadcrumb)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -142,7 +142,7 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export const MessageForward = tmp2;
 export const maybeCreateSingleForwardForMessage = function maybeCreateSingleForwardForMessage(message) {
-  if (importDefault(5679)(message)) {
+  if (importDefault(5856)(message)) {
     const first = message.messageSnapshots[0];
     if (null != first) {
       const prototype = tmp2.prototype;

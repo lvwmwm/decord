@@ -1,10 +1,10 @@
-// Module ID: 14155
-// Function ID: 108837
+// Module ID: 14166
+// Function ID: 108964
 // Name: HeaderStatus
-// Dependencies: [5, 57, 31, 27, 653, 1355, 33, 4130, 689, 1212, 4126, 4660, 5513, 1273, 8427, 14156, 4471, 14157, 1934, 7433, 5462, 4451, 14159, 7417, 3830, 7636, 9441, 14160, 3827, 3776, 1198, 9391, 14162, 1456, 2]
+// Dependencies: [5, 57, 31, 27, 653, 1355, 33, 4131, 689, 1212, 4127, 4661, 5513, 1273, 8185, 14167, 4472, 14168, 1935, 6515, 5462, 4452, 14170, 6493, 3831, 7575, 9361, 14171, 3828, 3777, 1198, 9297, 14173, 1456, 2]
 // Exports: default
 
-// Module 14155 (HeaderStatus)
+// Module 14166 (HeaderStatus)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import ShinyButton from "ShinyButton";
@@ -58,7 +58,7 @@ function HeaderStatus(arg0) {
     }
     obj.color = str3;
     obj.children = str;
-    obj.children = closure_11(require(4126) /* Text */.Text, obj);
+    obj.children = closure_11(require(4127) /* Text */.Text, obj);
     tmp9Result = closure_11(View, obj);
     const tmp10 = View;
     const tmp11 = closure_11;
@@ -83,7 +83,7 @@ function Header(arg0) {
   const items1 = [callback2(importDefault(5513), { guild }), , ];
   obj = { style: tmp.headerTitlesContainer };
   const obj1 = { ellipsizeMode: "tail", lineClamp: 2, variant: "text-md/semibold", color: "interactive-text-active", children: listing.name };
-  const items2 = [callback2(require(4126) /* Text */.Text, obj1), callback2(require(1273) /* Button */.Spacer, { size: 2 }), ];
+  const items2 = [callback2(require(4127) /* Text */.Text, obj1), callback2(require(1273) /* Button */.Spacer, { size: 2 }), ];
   const obj2 = { variant: "text-sm/medium", color: "interactive-text-default" };
   let name;
   if (null != guild) {
@@ -94,7 +94,7 @@ function Header(arg0) {
     name = intl.string(require(1212) /* getSystemLocale */.t["He+cmd"]);
   }
   obj2.children = name;
-  items2[2] = callback2(require(4126) /* Text */.Text, obj2);
+  items2[2] = callback2(require(4127) /* Text */.Text, obj2);
   obj.children = items2;
   items1[1] = closure_12(View, obj);
   const obj3 = {};
@@ -105,16 +105,16 @@ function Header(arg0) {
   items3[1] = expanded;
   obj3.style = items3;
   obj3.size = require(1273) /* Button */.Icon.Sizes.MEDIUM;
-  obj3.source = importDefault(8427);
+  obj3.source = importDefault(8185);
   items1[2] = callback2(require(1273) /* Button */.Icon, obj3);
   obj.children = items1;
   items[1] = closure_12(View, obj);
   obj.children = items;
-  return closure_12(require(4660) /* PressableBase */.PressableHighlight, obj);
+  return closure_12(require(4661) /* PressableBase */.PressableHighlight, obj);
 }
 function Separator() {
   const tmp = _createForOfIteratorHelperLoose();
-  return callback2(importDefault(14156), { style: _createForOfIteratorHelperLoose().separator, withoutMargins: true });
+  return callback2(importDefault(14167), { style: _createForOfIteratorHelperLoose().separator, withoutMargins: true });
 }
 function CardBody(isTrial) {
   let isCancelled;
@@ -138,7 +138,7 @@ function CardBody(isTrial) {
   ({ isCancelled, isPastDue, memberSince, nextRenewalDate, nextRenewalLabel, onCancelSubscription, subscriptionPrice } = isTrial);
   const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = subscription(7433);
+  let obj = subscription(6515);
   resubscribeSubscription = obj.useResubscribeSubscription(subscription.id);
   resubscribeSubscription = resubscribeSubscription.resubscribeSubscription;
   const tmp3 = callback(analyticsLocations.useState(false), 2);
@@ -157,7 +157,7 @@ function CardBody(isTrial) {
     let obj4 = { variant: "text-sm/medium", color: "interactive-text-active" };
     let intl = isTrial(1212).intl;
     obj4.children = intl.string(isTrial(1212).t.eaqlau);
-    items[2] = callback2(isTrial(4126).Text, obj4);
+    items[2] = callback2(isTrial(4127).Text, obj4);
     obj1.children = items;
     const items1 = [callback3(_handleResubscribe, obj1), ];
     const obj5 = { size: 12 };
@@ -171,28 +171,28 @@ function CardBody(isTrial) {
   obj6.title = intl2.string(isTrial(1212).t.dltUMH);
   let tmp20;
   if (isTrial) {
-    tmp20 = subscription(7417);
+    tmp20 = subscription(6493);
   }
   obj6.icon = tmp20;
   let prop;
   if (isTrial) {
-    prop = isTrial(3830).presentGuildRoleSubscriptionTrialTierMonthCost;
+    prop = isTrial(3831).presentGuildRoleSubscriptionTrialTierMonthCost;
   }
   obj6.onPressIcon = prop;
   obj6.children = subscriptionPrice;
-  items2[1] = callback2(subscription(14159), obj6);
+  items2[1] = callback2(subscription(14170), obj6);
   items2[2] = callback2(isTrial(1273).Spacer, { size: 16 });
   const obj7 = { style: tmp.cardRow };
-  const items3 = [callback2(subscription(14159), { title: nextRenewalLabel, children: nextRenewalDate }), callback2(isTrial(1273).Spacer, { size: 8 }), ];
+  const items3 = [callback2(subscription(14170), { title: nextRenewalLabel, children: nextRenewalDate }), callback2(isTrial(1273).Spacer, { size: 8 }), ];
   const obj8 = {};
   const tmp18 = callback2;
-  const tmp19 = subscription(14159);
+  const tmp19 = subscription(14170);
   const tmp5 = callback3;
   const tmp6 = _handleResubscribe;
   const intl3 = isTrial(1212).intl;
   obj8.title = intl3.string(isTrial(1212).t.AOcwWB);
   obj8.children = memberSince;
-  items3[2] = callback2(subscription(14159), obj8);
+  items3[2] = callback2(subscription(14170), obj8);
   obj7.children = items3;
   items2[3] = callback3(_handleResubscribe, obj7);
   const obj9 = { inset: true, titleViewStyle: tmp.manageSection };
@@ -205,7 +205,7 @@ function CardBody(isTrial) {
     }
   };
   const obj12 = {};
-  const tmp26 = subscription(14159);
+  const tmp26 = subscription(14170);
   const tmp27 = callback2;
   const tmp28 = callback2;
   const tmp29 = _handleResubscribe;
@@ -230,15 +230,15 @@ function CardBody(isTrial) {
       }
     }
   };
-  const items4 = [callback2(subscription(14160), obj12), , ];
+  const items4 = [callback2(subscription(14171), obj12), , ];
   const obj13 = {};
-  const tmp31 = subscription(14160);
+  const tmp31 = subscription(14171);
   const intl6 = isTrial(1212).intl;
   obj13.text = intl6.string(isTrial(1212).t.FRbWR8);
   obj13.onPress = function handleChangeTier() {
     isTrial(tmp[30]).transitionTo(outer1_8.CHANNEL(guildId, outer1_10.ROLE_SUBSCRIPTIONS));
   };
-  items4[1] = callback2(subscription(14160), obj13);
+  items4[1] = callback2(subscription(14171), obj13);
   if (isCancelled) {
     const obj14 = { style: tmp.resubscribeButtonContainer };
     const obj15 = {};
@@ -251,24 +251,24 @@ function CardBody(isTrial) {
       first = !resubscribeSubscription.nativePaymentsConnected;
     }
     obj15.loading = first;
-    obj14.children = callback2(subscription(9391), obj15);
+    obj14.children = callback2(subscription(9297), obj15);
     let tmp33Result = tmp33(_handleResubscribe, obj14);
     const tmp39 = _handleResubscribe;
     const tmp40 = callback2;
-    const tmp43 = subscription(9391);
+    const tmp43 = subscription(9297);
   } else {
     const obj16 = {};
     const intl7 = isTrial(1212).intl;
     obj16.text = intl7.string(isTrial(1212).t.Dx0lF7);
     obj16.onPress = onCancelSubscription;
-    tmp33Result = tmp33(subscription(14160), obj16);
-    const tmp36 = subscription(14160);
+    tmp33Result = tmp33(subscription(14171), obj16);
+    const tmp36 = subscription(14171);
   }
   items4[2] = tmp33Result;
   obj11.children = items4;
-  obj10.children = tmp30(isTrial(9441).GappedList, obj11);
+  obj10.children = tmp30(isTrial(9361).GappedList, obj11);
   obj9.children = tmp28(tmp29, obj10);
-  items2[4] = tmp27(isTrial(7636).FormSection, obj9);
+  items2[4] = tmp27(isTrial(7575).FormSection, obj9);
   obj.children = items2;
   return tmp5(tmp6, obj);
 }
@@ -313,7 +313,7 @@ export default function ManageSubscriptionCard(subscription) {
   let listing;
   let subscriptionInfo;
   subscription = subscription.subscription;
-  const tmp2 = importDefault(14162)(subscription);
+  const tmp2 = importDefault(14173)(subscription);
   ({ listing, guild, expanded, subscriptionInfo } = tmp2);
   ({ groupListing, handleToggleExpanded } = tmp2);
   let obj = subscription(1456);

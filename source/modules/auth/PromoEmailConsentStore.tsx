@@ -1,5 +1,5 @@
 // Module ID: 5589
-// Function ID: 47489
+// Function ID: 47494
 // Name: setPromoEmailConsentState
 // Dependencies: [621, 682, 2]
 // Exports: setPromoEmailConsentChecked, setPromoEmailConsentState

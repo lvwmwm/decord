@@ -1,10 +1,10 @@
-// Module ID: 14113
-// Function ID: 108470
+// Module ID: 14124
+// Function ID: 108597
 // Name: QuestEnrollmentBlockedBottomSheet
-// Dependencies: [31, 27, 6941, 33, 4130, 689, 566, 10956, 4979, 6678, 5187, 4126, 1212, 2]
+// Dependencies: [31, 27, 5932, 33, 4131, 689, 566, 10907, 4980, 6180, 5187, 4127, 1212, 2]
 // Exports: default
 
-// Module 14113 (QuestEnrollmentBlockedBottomSheet)
+// Module 14124 (QuestEnrollmentBlockedBottomSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -22,9 +22,9 @@ function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
     const _Date = Date;
     date = new Date();
   }
-  const tmp2Result = importDefault(6678)(date);
+  const tmp2Result = importDefault(6180)(date);
   ({ minutes, seconds } = tmp2Result);
-  const tmp2 = importDefault(6678);
+  const tmp2 = importDefault(6180);
   const padStartResult = String(tmp2Result.hours).padStart(2, "0");
   const StringResult = String(tmp2Result.hours);
   const padStartResult1 = String(minutes).padStart(2, "0");
@@ -37,7 +37,7 @@ function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
     const obj1 = { variant: "heading-xl/bold" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t["XEHDT/"]);
-    obj.children = jsx(require(4126) /* Text */.Text, { variant: "heading-xl/bold" });
+    obj.children = jsx(require(4127) /* Text */.Text, { variant: "heading-xl/bold" });
     obj.header = <View style={tmp.heading} />;
     const obj2 = { style: tmp.container };
     const obj3 = { variant: "text-md/normal" };
@@ -46,7 +46,7 @@ function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
     const _HermesInternal = HermesInternal;
     obj4.countdownString = "" + padStartResult + ":" + padStartResult1 + ":" + padStartResult2;
     obj3.children = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["+5XVH+"], obj4);
-    obj2.children = jsx(require(4126) /* Text */.Text, { variant: "text-md/normal" });
+    obj2.children = jsx(require(4127) /* Text */.Text, { variant: "text-md/normal" });
     obj.children = <View style={tmp.container} />;
     tmp11 = jsx(require(5187) /* Background */.BottomSheet, { style: tmp.heading });
   }

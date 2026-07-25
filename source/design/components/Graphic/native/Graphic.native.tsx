@@ -1,10 +1,10 @@
-// Module ID: 7517
-// Function ID: 59948
+// Module ID: 6601
+// Function ID: 58430
 // Name: ImageGraphic
-// Dependencies: [31, 27, 33, 4130, 5085, 3842, 3940, 2]
+// Dependencies: [31, 27, 33, 4131, 5085, 3843, 3941, 2]
 // Exports: Graphic
 
-// Module 7517 (ImageGraphic)
+// Module 6601 (ImageGraphic)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

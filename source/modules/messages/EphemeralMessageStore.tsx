@@ -1,9 +1,9 @@
-// Module ID: 4350
-// Function ID: 38574
+// Module ID: 4351
+// Function ID: 38585
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 653, 1360, 4351, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 653, 1360, 4352, 566, 686, 2]
 
-// Module 4350 (_isNativeReflectConstruct)
+// Module 4351 (_isNativeReflectConstruct)
 import ME from "ME";
 import hasFlag from "hasFlag";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -180,7 +180,7 @@ tmp3 = new tmp3(require("dispatcher"), {
         const result = map.set(channelId, map);
         value = map;
       }
-      const result1 = value.set(message.id, require(4351) /* createMinimalMessageRecord */.createMessageRecord(message));
+      const result1 = value.set(message.id, require(4352) /* createMinimalMessageRecord */.createMessageRecord(message));
       if (value.size > 50) {
         const iter2 = value.keys().next();
         while (true !== iter2.done) {
@@ -211,7 +211,7 @@ tmp3 = new tmp3(require("dispatcher"), {
           if (null == value) {
             return false;
           } else {
-            const result = value.set(id, require(4351) /* createMinimalMessageRecord */.updateMessageRecord(value, message));
+            const result = value.set(id, require(4352) /* createMinimalMessageRecord */.updateMessageRecord(value, message));
           }
         }
       }

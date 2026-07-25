@@ -1,10 +1,10 @@
-// Module ID: 7924
-// Function ID: 62780
+// Module ID: 7871
+// Function ID: 62752
 // Name: createMessageFailedEmbed
-// Dependencies: [7711, 653, 7724, 7925, 1212, 7926, 4670, 2]
+// Dependencies: [7655, 653, 7670, 7872, 1212, 7873, 4671, 2]
 // Exports: createAutomodBlockedMessageEmbed, default
 
-// Module 7924 (createMessageFailedEmbed)
+// Module 7871 (createMessageFailedEmbed)
 import { MessageFailureState } from "Changeset";
 import { MessageEmbedTypes } from "ME";
 
@@ -22,9 +22,9 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       obj.failureState = MessageFailureState.UNSPECIFIED;
       obj.disableBackgroundColor = true;
       obj.bodyTextColor = colors.failedMessageBodyTextColor;
-      colors = require(7724) /* frozen */.getAssetUriForEmbed;
-      obj.iconURL = colors(importDefault(7926));
-      const tmp16 = require(7724) /* frozen */;
+      colors = require(7670) /* frozen */.getAssetUriForEmbed;
+      obj.iconURL = colors(importDefault(7873));
+      const tmp16 = require(7670) /* frozen */;
     } else {
       obj = { type: MessageEmbedTypes.TEXT };
       const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -34,8 +34,8 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       let str = "";
       if (0 !== uploaderFile.currentSize) {
         const _HermesInternal = HermesInternal;
-        str = " (" + require(4670) /* _createForOfIteratorHelperLoose */.sizeString(uploaderFile.currentSize) + ")";
-        const obj4 = require(4670) /* _createForOfIteratorHelperLoose */;
+        str = " (" + require(4671) /* _createForOfIteratorHelperLoose */.sizeString(uploaderFile.currentSize) + ")";
+        const obj4 = require(4671) /* _createForOfIteratorHelperLoose */;
       }
       obj.attachmentsSize = "" + str;
       obj.bodyTextColor = colors.embedBodyTextColor;
@@ -51,6 +51,6 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
   }
 };
 export const createAutomodBlockedMessageEmbed = function createAutomodBlockedMessageEmbed(errorMessage) {
-  const obj = { type: MessageEmbedTypes.TEXT, messageSendError: errorMessage.errorMessage, failureState: MessageFailureState.AUTO_MODERATION_BLOCKED_MESSAGE, disableBackgroundColor: true, bodyTextColor: errorMessage.colors.automodBlockedBodyTextColor, iconURL: require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7925)) };
+  const obj = { type: MessageEmbedTypes.TEXT, messageSendError: errorMessage.errorMessage, failureState: MessageFailureState.AUTO_MODERATION_BLOCKED_MESSAGE, disableBackgroundColor: true, bodyTextColor: errorMessage.colors.automodBlockedBodyTextColor, iconURL: require(7670) /* frozen */.getAssetUriForEmbed(importDefault(7872)) };
   return obj;
 };

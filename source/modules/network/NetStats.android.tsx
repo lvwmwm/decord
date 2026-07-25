@@ -1,10 +1,10 @@
-// Module ID: 6695
-// Function ID: 51831
+// Module ID: 5691
+// Function ID: 49144
 // Name: receiveNetworkInfoformation
-// Dependencies: [5, 6, 7, 27, 4808, 6696, 1838, 653, 3, 1432, 1431, 6706, 664, 587, 686, 3988, 6697, 6707, 14, 2]
+// Dependencies: [5, 6, 7, 27, 4809, 5692, 1838, 653, 3, 1432, 1431, 5702, 664, 587, 686, 3989, 5693, 5703, 14, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 6695 (receiveNetworkInfoformation)
+// Module 5691 (receiveNetworkInfoformation)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
@@ -65,26 +65,26 @@ let tmp7 = (() => {
       if (outer1_16) {
         tmp2 = globalThis;
         _setTimeout = setTimeout;
-        tmp3 = f51848;
-        tmp4 = f51845;
+        tmp3 = f49161;
+        tmp4 = f49158;
         num2 = 12;
         num3 = 1;
-        num = setTimeout(() => self.track(), f51848(f51845[12]).Millis.MINUTE);
+        num = setTimeout(() => self.track(), f49161(f49158[12]).Millis.MINUTE);
       }
       self.trackTimeout = num;
       num4 = 0;
       if (outer1_16) {
         tmp5 = globalThis;
         _setInterval = setInterval;
-        tmp6 = f51848;
-        tmp7 = f51845;
+        tmp6 = f49161;
+        tmp7 = f49158;
         num5 = 12;
         num6 = 5;
-        num4 = setInterval(() => self.writeExistingEventStorage(), 5 * f51848(f51845[12]).Millis.SECOND);
+        num4 = setInterval(() => self.writeExistingEventStorage(), 5 * f49161(f49158[12]).Millis.SECOND);
       }
       self.flushStorageInterval = num4;
       self.didEverTrack = false;
-      Storage = f51853(f51845[13]).Storage;
+      Storage = f49166(f49158[13]).Storage;
       value = Storage.get("previousNetStatsEvents");
       if (null == value) {
         value = [];
@@ -112,10 +112,10 @@ let tmp7 = (() => {
       if (outer1_7.isConnected()) {
         trackExistingEventsResult = self.trackExistingEvents();
       } else {
-        tmp8 = f51848;
-        tmp9 = f51845;
+        tmp8 = f49161;
+        tmp9 = f49158;
         num7 = 14;
-        obj = f51848(f51845[14]);
+        obj = f49161(f49158[14]);
         str = "CONNECTION_OPEN";
         subscription = obj.subscribe("CONNECTION_OPEN", self.trackExistingEvents);
       }
@@ -202,21 +202,21 @@ let tmp7 = (() => {
   const obj1 = { key: "getQueuedEvent" };
   let closure_0 = EventTracker(async () => {
     outer2_22();
-    let obj = callback2(3988);
+    let obj = callback2(3989);
     const tmp2 = yield obj.getAppFirstVisibleTimestamp();
-    const tmp3 = yield callback(6697).getSession();
+    const tmp3 = yield callback(5693).getSession();
     obj = { type: outer2_10.APP_NETWORK_USAGE };
     obj = {};
-    const obj2 = callback(6697);
-    const merged = Object.assign(callback(6707).getDeviceMetadata());
+    const obj2 = callback(5693);
+    const merged = Object.assign(callback(5703).getDeviceMetadata());
     obj["client_track_timestamp"] = Date.now();
     let uuid;
     if (null != tmp3) {
       uuid = tmp3.uuid;
     }
     obj["client_heartbeat_session_id"] = uuid;
-    const obj5 = callback(6707);
-    obj["load_id"] = callback(6707).currentLoadId();
+    const obj5 = callback(5703);
+    obj["load_id"] = callback(5703).currentLoadId();
     obj["num_guilds"] = outer2_9.getGuildCount();
     obj["was_authenticated"] = callback2(14).wasAuthenticated;
     obj["did_background_app"] = callback2(14).didBackgroundApp;
@@ -275,8 +275,8 @@ let tmp7 = (() => {
     obj["download_bytes_received"] = outer2_12.downloadBytesReceived;
     obj["download_num_requests"] = outer2_12.downloadNumRequests;
     obj["media_player_bytes_received"] = outer2_12.mediaPlayerBytesReceived;
-    const obj6 = callback(6707);
-    obj["rtc_bytes"] = callback(6706).getRTCTotalBytes();
+    const obj6 = callback(5703);
+    obj["rtc_bytes"] = callback(5702).getRTCTotalBytes();
     obj["num_message_sends"] = outer2_17;
     let tmp13;
     if (0 !== outer2_17) {

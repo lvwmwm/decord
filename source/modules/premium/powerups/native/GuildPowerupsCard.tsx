@@ -1,10 +1,10 @@
-// Module ID: 11628
-// Function ID: 90410
+// Module ID: 11595
+// Function ID: 90133
 // Name: importDefaultResult1
-// Dependencies: [31, 27, 33, 4130, 666, 689, 5167, 2]
+// Dependencies: [31, 27, 33, 4131, 666, 689, 5166, 2]
 // Exports: default
 
-// Module 11628 (importDefaultResult1)
+// Module 11595 (importDefaultResult1)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -64,6 +64,6 @@ export default function GuildPowerupsCard(status) {
   items[3] = style;
   obj["style"] = items;
   obj["children"] = children;
-  obj.children = jsx(require(5167) /* getCardBackgroundToken */.Card, { border: "faint", radius: 16, shadow: "none" });
+  obj.children = jsx(require(5166) /* getCardBackgroundToken */.Card, { border: "faint", radius: 16, shadow: "none" });
   return <View border="faint" radius={16} shadow="none" />;
 };

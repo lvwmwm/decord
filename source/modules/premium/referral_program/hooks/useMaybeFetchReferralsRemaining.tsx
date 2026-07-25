@@ -1,10 +1,10 @@
-// Module ID: 7832
-// Function ID: 61820
+// Module ID: 7779
+// Function ID: 61792
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [31, 1849, 6689, 1851, 566, 7833, 7834, 6636, 1872, 2]
+// Dependencies: [31, 1850, 6158, 1852, 566, 7780, 7781, 5820, 1873, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 7832 (useMaybeFetchReferralsRemaining)
+// Module 7779 (useMaybeFetchReferralsRemaining)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -24,18 +24,18 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
   const items = [_isNativeReflectConstruct];
   const stateFromStores = flag(566).useStateFromStores(items, () => outer1_4.getCurrentUser());
   const obj = flag(566);
-  const hasDiscountApplied = flag(7833).useHasDiscountApplied();
-  const obj2 = flag(7833);
-  const hasActiveTrial = flag(7834).useHasActiveTrial();
-  const tmp4 = fetched(6636)();
+  const hasDiscountApplied = flag(7780).useHasDiscountApplied();
+  const obj2 = flag(7780);
+  const hasActiveTrial = flag(7781).useHasActiveTrial();
+  const tmp4 = fetched(5820)();
   let verified;
   if (null != stateFromStores) {
     verified = stateFromStores.verified;
   }
   fetched = true === verified;
   if (fetched) {
-    fetched = flag(1872).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
-    const obj4 = flag(1872);
+    fetched = flag(1873).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
+    const obj4 = flag(1873);
   }
   if (fetched) {
     fetched = tmp4.fetched;

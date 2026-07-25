@@ -1,10 +1,10 @@
-// Module ID: 9841
-// Function ID: 76354
+// Module ID: 9765
+// Function ID: 75949
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [31, 27, 8312, 33, 4130, 689, 9720, 4126, 1212, 2294, 2]
+// Dependencies: [31, 27, 8047, 33, 4131, 689, 9644, 4127, 1212, 2295, 2]
 // Exports: default
 
-// Module 9841 (GiftingBadgeLevelUpProgress)
+// Module 9765 (GiftingBadgeLevelUpProgress)
 import "result";
 import { View } from "get ActivityIndicator";
 import { getSingleRequirementThreshold as closure_4 } from "_isNativeReflectConstruct";
@@ -51,7 +51,7 @@ export default function GiftingBadgeLevelUpProgress(style) {
   let tmp7 = null != simple_icon_url;
   if (tmp7) {
     obj = { icon: currentTier.simple_icon_url, size: 24 };
-    tmp7 = callback2(importDefault(9720), obj);
+    tmp7 = callback2(importDefault(9644), obj);
   }
   const items1 = [tmp7, , ];
   const obj1 = { style: tmp.progressBarTrack };
@@ -65,7 +65,7 @@ export default function GiftingBadgeLevelUpProgress(style) {
   let tmp11 = null != newTier.simple_icon_url;
   if (tmp11) {
     const obj4 = { icon: newTier.simple_icon_url, size: 24 };
-    tmp11 = callback2(importDefault(9720), obj4);
+    tmp11 = callback2(importDefault(9644), obj4);
   }
   items1[2] = tmp11;
   obj.children = items1;
@@ -73,8 +73,8 @@ export default function GiftingBadgeLevelUpProgress(style) {
   const obj5 = { style: tmp.labels };
   const obj6 = { variant: "text-xs/normal", color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj6.children = intl.format(importDefault(2294).iIpfQe, { count: progress, threshold: tmp2 });
-  obj5.children = callback2(require(4126) /* Text */.Text, obj6);
+  obj6.children = intl.format(importDefault(2295).iIpfQe, { count: progress, threshold: tmp2 });
+  obj5.children = callback2(require(4127) /* Text */.Text, obj6);
   items3[1] = callback2(View, obj5);
   obj.children = items3;
   return closure_6(View, obj);

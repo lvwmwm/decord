@@ -1,9 +1,9 @@
-// Module ID: 16599
-// Function ID: 129425
+// Module ID: 16610
+// Function ID: 129593
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 1838, 3758, 3767, 1906, 1849, 653, 16600, 16601, 4320, 11979, 1392, 1327, 3969, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 1838, 3759, 3768, 1907, 1850, 653, 16611, 16612, 4321, 11955, 1392, 1327, 3970, 5078, 2]
 
-// Module 16599 (_isNativeReflectConstruct)
+// Module 16610 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
@@ -114,13 +114,13 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function indexingEnabled() {
-  let obj = importDefault(16600);
-  obj = { autoTrackExposure: true, disable: !importDefault(16601).hasSearch() };
+  let obj = importDefault(16611);
+  obj = { autoTrackExposure: true, disable: !importDefault(16612).hasSearch() };
   return obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).searchEnabled;
 }
 function clearEnabled() {
-  let obj = importDefault(16600);
-  obj = { autoTrackExposure: true, disable: !importDefault(16601).hasSearch() };
+  let obj = importDefault(16611);
+  obj = { autoTrackExposure: true, disable: !importDefault(16612).hasSearch() };
   return obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).clearEnabled;
 }
 function handleRelativeURL(channelIconURL) {
@@ -141,9 +141,9 @@ function makeSearchItem(value, guild, flag) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+  let obj = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
   const channelName = obj.computeChannelName(value, closure_14, closure_12, true);
-  const channelName1 = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(value, closure_14, closure_12, false);
+  const channelName1 = require(4321) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(value, closure_14, closure_12, false);
   const items = [];
   const items1 = [channelName, channelName1];
   const items2 = [];
@@ -153,9 +153,9 @@ function makeSearchItem(value, guild, flag) {
   }
   const channel = authStore.getChannel(value.parent_id);
   if (null != channel) {
-    const obj3 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+    const obj3 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
     const channelName2 = obj3.computeChannelName(channel, closure_14, closure_12, true);
-    const obj4 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+    const obj4 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
     const channelName3 = obj4.computeChannelName(channel, closure_14, closure_12, false);
     items2.push(channelName2);
     items2.push(channelName3);
@@ -180,8 +180,8 @@ function makeSearchItem(value, guild, flag) {
   }
   const CHANNELResult = closure_19.CHANNEL(id, value.id);
   obj = { id: CHANNELResult, relatedUniqueIdentifier: CHANNELResult, type: "url", title: sum, displayName: sum };
-  const obj2 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
-  obj.thumbnailURL = handleRelativeURL(require(11979) /* getChannelIconURL */.getChannelIconURL(value, 128, false));
+  const obj2 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
+  obj.thumbnailURL = handleRelativeURL(require(11955) /* getChannelIconURL */.getChannelIconURL(value, 128, false));
   if (value.type === constants.DM) {
     let OTHER_CHANNEL = constants4.DM;
   } else {
@@ -265,7 +265,7 @@ function getChannelKeywords(channel) {
     const mapped = recipients.map(getUser.getUser);
     const first = callback3(mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish), 1)[0];
     if (null != first) {
-      const globalName = importDefault(3969).getGlobalName(first);
+      const globalName = importDefault(3970).getGlobalName(first);
       if (null != globalName) {
         items.push(globalName);
       }
@@ -275,19 +275,19 @@ function getChannelKeywords(channel) {
       if (null != nickname) {
         items.push(nickname);
       }
-      const obj2 = importDefault(3969);
-      const name = importDefault(3969).getName(first);
+      const obj2 = importDefault(3970);
+      const name = importDefault(3970).getName(first);
       if (null != name) {
         items.push(name);
       }
-      const obj = importDefault(3969);
+      const obj = importDefault(3970);
     }
   }
   return items;
 }
 function setChannelActivity(channelId) {
-  let obj = importDefault(16600);
-  obj = { autoTrackExposure: true, disable: !importDefault(16601).hasUserActivity() };
+  let obj = importDefault(16611);
+  obj = { autoTrackExposure: true, disable: !importDefault(16612).hasUserActivity() };
   if (obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).activityEnabled) {
     let channel;
     if (null != channelId) {
@@ -295,7 +295,7 @@ function setChannelActivity(channelId) {
     }
     if (null != channel) {
       const guild = store.getGuild(channel.guild_id);
-      const obj5 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+      const obj5 = require(4321) /* computeDefaultGroupDmNameFromUserIds */;
       const channelName = obj5.computeChannelName(channel, closure_14, closure_12, true);
       let str2 = "";
       if (null != guild) {
@@ -320,11 +320,11 @@ function setChannelActivity(channelId) {
       obj.keywords = items1;
       obj.displayName = sum;
       obj.type = "com.discord.view-channel";
-      importDefault(16601).setActivity(obj);
-      const obj7 = importDefault(16601);
+      importDefault(16612).setActivity(obj);
+      const obj7 = importDefault(16612);
     } else {
-      importDefault(16601).resignActivity();
-      const obj4 = importDefault(16601);
+      importDefault(16612).resignActivity();
+      const obj4 = importDefault(16612);
     }
   }
 }
@@ -390,12 +390,12 @@ function indexChannelUpdates(items) {
       } while (!iter3.done);
     }
     if (items.length > 0) {
-      importDefault(16601).indexDomains(items);
-      const obj3 = importDefault(16601);
+      importDefault(16612).indexDomains(items);
+      const obj3 = importDefault(16612);
     }
     if (items1.length > 0) {
-      importDefault(16601).deleteSearchItems(items1);
-      const obj4 = importDefault(16601);
+      importDefault(16612).deleteSearchItems(items1);
+      const obj4 = importDefault(16612);
     }
   }
 }

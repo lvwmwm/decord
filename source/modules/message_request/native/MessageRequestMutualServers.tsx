@@ -1,10 +1,10 @@
-// Module ID: 15610
-// Function ID: 120349
+// Module ID: 15620
+// Function ID: 120477
 // Name: MessageRequestMutualServers
-// Dependencies: [31, 27, 33, 4130, 5513, 15611, 1212, 11678, 4126, 4660, 2]
+// Dependencies: [31, 27, 33, 4131, 5513, 15621, 1212, 11647, 4127, 4661, 2]
 // Exports: default
 
-// Module 15610 (MessageRequestMutualServers)
+// Module 15620 (MessageRequestMutualServers)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = callback2();
-  let obj = iconSize(15611);
+  let obj = iconSize(15621);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -49,7 +49,7 @@ export default function MessageRequestMutualServers(textVariant) {
   let tmp11 = length > 0;
   if (tmp11) {
     const obj1 = { size: iconSize, names: substr.map((name) => name.name), children: substr.map((guild) => outer1_4(outer1_1(outer1_2[4]), { guild, size: iconSize }, guild.id)) };
-    tmp11 = callback(iconSize(11678).GuildIconPile, obj1);
+    tmp11 = callback(iconSize(11647).GuildIconPile, obj1);
   }
   const items1 = [tmp11, ];
   const obj2 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label };
@@ -59,7 +59,7 @@ export default function MessageRequestMutualServers(textVariant) {
     combined = "" + formatResult + " \u00B7 " + suffix;
   }
   obj2.children = combined;
-  items1[1] = callback(iconSize(4126).Text, obj2);
+  items1[1] = callback(iconSize(4127).Text, obj2);
   obj.children = items1;
   const tmp9Result = closure_5(View, obj);
   let tmp19 = tmp9Result;
@@ -67,7 +67,7 @@ export default function MessageRequestMutualServers(textVariant) {
     tmp19 = tmp9Result;
     if (length > 0) {
       const obj3 = { accessibilityRole: "button", onPress, children: tmp9Result };
-      tmp19 = callback(iconSize(4660).PressableOpacity, obj3);
+      tmp19 = callback(iconSize(4661).PressableOpacity, obj3);
     }
   }
   return tmp19;

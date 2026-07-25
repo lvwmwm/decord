@@ -1,5 +1,5 @@
 // Module ID: 5367
-// Function ID: 46018
+// Function ID: 46023
 // Name: RenderTimeTracker
 // Dependencies: [5368, 5369, 5373, 5374]
 

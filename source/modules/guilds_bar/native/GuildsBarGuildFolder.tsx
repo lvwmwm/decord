@@ -1,9 +1,9 @@
-// Module ID: 14869
-// Function ID: 113427
+// Module ID: 14880
+// Function ID: 113555
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 6878, 1838, 3947, 4970, 14859, 14865, 14860, 33, 4130, 689, 3834, 566, 5513, 1324, 4542, 3974, 665, 7678, 3991, 4476, 4596, 7897, 5085, 14870, 14872, 11679, 14880, 4099, 5048, 5515, 14862, 14881, 2]
+// Dependencies: [31, 5868, 1838, 3948, 4971, 14870, 14876, 14871, 33, 4131, 689, 3835, 566, 5513, 1324, 4543, 3975, 665, 7620, 3992, 4477, 4597, 7844, 5085, 14881, 14883, 11648, 14891, 4100, 5049, 5515, 14873, 14892, 2]
 
-// Module 14869 (_createForOfIteratorHelperLoose)
+// Module 14880 (_createForOfIteratorHelperLoose)
 import importAllResult from "getGuildFolderMenuItems";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -107,7 +107,7 @@ function MiniGuildIcon(arg0) {
   let require;
   let selected;
   ({ guildId: require, position, selected } = arg0);
-  let obj = require(3834) /* map */;
+  let obj = require(3835) /* map */;
   const tmp3 = callback3(false, obj.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE));
   const items = [closure_5];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.getGuild(closure_0));

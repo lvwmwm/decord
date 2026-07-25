@@ -1,10 +1,10 @@
-// Module ID: 13736
-// Function ID: 105377
+// Module ID: 13747
+// Function ID: 105504
 // Name: getPageMarker
-// Dependencies: [31, 27, 13737, 33, 4130, 689, 1456, 13735, 5121, 4543, 1212, 13738, 5087, 13739, 13742, 13743, 13745, 5450, 9239, 5517, 2]
+// Dependencies: [31, 27, 13748, 33, 4131, 689, 1456, 13746, 5121, 4544, 1212, 13749, 5087, 13750, 13753, 13754, 13756, 5450, 9131, 5517, 2]
 // Exports: TwoFASetupModalScreen, default
 
-// Module 13736 (getPageMarker)
+// Module 13747 (getPageMarker)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { TwoFAModalSetupSections } from "frozen";
@@ -15,7 +15,7 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function getPageMarker(arg0) {
-  return callback(require(13738) /* PageMarker */.PageMarker, { currentPage: table[arg0], numMarkers: Object.keys(table).length - 1 });
+  return callback(require(13749) /* PageMarker */.PageMarker, { currentPage: table[arg0], numMarkers: Object.keys(table).length - 1 });
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -103,7 +103,7 @@ export const TwoFASetupModalScreen = function TwoFASetupModalScreen(children) {
       stringResult = intl.string(navigation(1212).t.XiOHRX);
     }
     obj1.text = stringResult;
-    obj1 = closure_6(navigation(4543).Button, obj1);
+    obj1 = closure_6(navigation(4544).Button, obj1);
     obj.children = obj1;
     closure_6(navigation(5121).SafeAreaPaddingView, obj);
     const tmp6 = closure_6;

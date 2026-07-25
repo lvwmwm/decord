@@ -1,10 +1,10 @@
-// Module ID: 15157
-// Function ID: 115403
+// Module ID: 15167
+// Function ID: 115531
 // Name: items
-// Dependencies: [31, 33, 664, 1212, 10260, 5498, 5501, 5165, 2]
+// Dependencies: [31, 33, 664, 1212, 10193, 5498, 5501, 5164, 2]
 // Exports: default
 
-// Module 15157 (items)
+// Module 15167 (items)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -75,7 +75,7 @@ const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native
 
 export default function FocusModeOptionsActionSheet(onSelect) {
   onSelect = onSelect.onSelect;
-  let obj = onSelect(10260);
+  let obj = onSelect(10193);
   const focusModeEnabled = obj.useFocusModeEnabled();
   obj = {};
   obj = {};
@@ -95,7 +95,7 @@ export default function FocusModeOptionsActionSheet(onSelect) {
     obj1.trailing = null;
     const intl4 = onSelect(1212).intl;
     obj1.label = intl4.string(onSelect(1212).t.rk35Gm);
-    tmp4 = callback(onSelect(5165).TableRow, obj1);
+    tmp4 = callback(onSelect(5164).TableRow, obj1);
   }
   const items = [tmp4, ];
   items[1] = items.map((duration) => {

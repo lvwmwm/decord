@@ -1,10 +1,10 @@
-// Module ID: 14941
-// Function ID: 113891
+// Module ID: 14952
+// Function ID: 114020
 // Name: useMessagesSpecs
-// Dependencies: [31, 653, 4549, 1557, 1324, 14942, 14945, 14957, 689, 2]
+// Dependencies: [31, 653, 4550, 1557, 1324, 14953, 14956, 14967, 689, 2]
 // Exports: default
 
-// Module 14941 (useMessagesSpecs)
+// Module 14952 (useMessagesSpecs)
 import result from "result";
 import { DM_WIDTH } from "ME";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("getFontScale").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
 
 export default function useMessagesSpecs() {
-  fontScale = fontScale(4549).useFontScale();
+  fontScale = fontScale(4550).useFontScale();
   top = top(1557)().top;
   const tmp2 = top(1324)("MessagesHeader");
   const dependencyMap = tmp2;

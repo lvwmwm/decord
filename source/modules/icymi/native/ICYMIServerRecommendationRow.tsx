@@ -1,10 +1,10 @@
-// Module ID: 15291
-// Function ID: 116642
+// Module ID: 15301
+// Function ID: 116770
 // Name: CutoutGuildBanner
-// Dependencies: [57, 5, 31, 27, 4122, 1838, 8350, 653, 33, 15226, 689, 566, 1392, 1387, 7961, 5085, 5513, 8365, 3831, 1212, 5048, 4126, 4543, 15265, 9280, 2]
+// Dependencies: [57, 5, 31, 27, 4123, 1838, 8108, 653, 33, 15236, 689, 566, 1392, 1387, 7909, 5085, 5513, 8123, 3832, 1212, 5049, 4127, 4544, 15275, 9173, 2]
 // Exports: ICYMIServerRecommendationRow
 
-// Module 15291 (CutoutGuildBanner)
+// Module 15301 (CutoutGuildBanner)
 import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import result from "result";
@@ -47,7 +47,7 @@ function CutoutGuildBanner(guild) {
   obj = { style: tmp.bannerImage };
   const memo = React.useMemo(() => guild(outer1_2[13]).fromClientDiscoverableGuild(guild), items1);
   obj = {};
-  obj1 = { shape: guild(7961).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  obj1 = { shape: guild(7909).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   const items2 = [obj1];
   obj.cutouts = items2;
   if (null != guild.banner) {
@@ -61,11 +61,11 @@ function CutoutGuildBanner(guild) {
     tmp15 = callback3(View, obj3);
   }
   obj.children = tmp15;
-  const items4 = [callback3(importDefault(7961), obj), ];
+  const items4 = [callback3(importDefault(7909), obj), ];
   const obj4 = { style: tmp.guildIcon, guild: memo };
   const tmp10 = View;
   const tmp11 = callback3;
-  const tmp12 = importDefault(7961);
+  const tmp12 = importDefault(7909);
   const tmp9 = closure_15;
   obj4.size = guild(5513).GuildIconSizes.LARGE;
   obj4.animate = !stateFromStores;
@@ -90,9 +90,9 @@ function FeaturedServer(guild) {
   const items2 = [callback3(CutoutGuildBanner, { guild }), , ];
   obj = { style: tmp.featuredServerInnerContainer };
   const obj1 = { maxFontSizeMultiplier: 1, lineClamp: 1, style: tmp.featuredServerTitle, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guild.name };
-  const items3 = [callback3(guild(4126).Text, obj1), ];
+  const items3 = [callback3(guild(4127).Text, obj1), ];
   const obj2 = { maxFontSizeMultiplier: 1, lineClamp: 3, variant: "text-xs/normal", color: "text-default", children: guild.description };
-  items3[1] = callback3(guild(4126).Text, obj2);
+  items3[1] = callback3(guild(4127).Text, obj2);
   obj.children = items3;
   items2[1] = callback4(View, obj);
   const obj3 = { style: tmp.buttonContainer };
@@ -109,7 +109,7 @@ function FeaturedServer(guild) {
   obj4.size = "sm";
   obj4.onPress = callback;
   obj4.grow = true;
-  obj3.children = callback3(guild(4543).Button, obj4);
+  obj3.children = callback3(guild(4544).Button, obj4);
   items2[2] = callback3(View, obj3);
   obj.children = items2;
   return callback4(View, obj);
@@ -129,8 +129,8 @@ function RecommendedGuildsRow(discoverableGuilds) {
     obj.horizontal = true;
     obj.listId = "recommended-servers-list";
     obj.showsHorizontalScrollIndicator = false;
-    tmp2 = callback3(importDefault(9280), obj);
-    const tmp6 = importDefault(9280);
+    tmp2 = callback3(importDefault(9173), obj);
+    const tmp6 = importDefault(9173);
   }
   return tmp2;
 }
@@ -171,15 +171,15 @@ export const ICYMIServerRecommendationRow = function ICYMIServerRecommendationRo
     const obj1 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.children = intl.string(require(1212) /* getSystemLocale */.t.lv1tce);
-    const items1 = [callback3(require(4126) /* Text */.Text, obj1), , ];
+    const items1 = [callback3(require(4127) /* Text */.Text, obj1), , ];
     const obj2 = { style: tmp.subtitle, variant: "heading-sm/normal", color: "text-muted" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.x4OezN);
-    items1[1] = callback3(require(4126) /* Text */.Text, obj2);
+    items1[1] = callback3(require(4127) /* Text */.Text, obj2);
     const obj3 = { discoverableGuilds: stateFromStoresArray };
     items1[2] = callback3(RecommendedGuildsRow, obj3);
     obj.children = items1;
-    const items2 = [callback4(View, obj), callback3(require(15265) /* Separator */.Separator, {})];
+    const items2 = [callback4(View, obj), callback3(require(15275) /* Separator */.Separator, {})];
     obj.children = items2;
     tmp2 = callback4(closure_16, obj);
   }

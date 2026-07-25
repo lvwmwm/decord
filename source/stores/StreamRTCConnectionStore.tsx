@@ -1,9 +1,9 @@
-// Module ID: 4216
-// Function ID: 36664
+// Module ID: 4217
+// Function ID: 36675
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4150, 1194, 4177, 4217, 4202, 653, 4195, 44, 4219, 22, 4194, 6980, 686, 4227, 477, 12781, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4151, 1194, 4178, 4218, 4203, 653, 4196, 44, 4220, 22, 4195, 5971, 686, 4228, 477, 12792, 566, 2]
 
-// Module 4216 (_isNativeReflectConstruct)
+// Module 4217 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import isStreamKey from "isStreamKey";
@@ -335,7 +335,7 @@ if (importDefaultResult.isSupported()) {
         let wants;
         guildId = guildId.guildId;
         ({ context, wants, userId, channelId } = guildId);
-        let obj = require(4194) /* isStreamKey */;
+        let obj = require(4195) /* isStreamKey */;
         obj = {};
         if (null == guildId) {
           let GUILD = StreamTypes.CALL;
@@ -347,7 +347,7 @@ if (importDefaultResult.isSupported()) {
         obj.channelId = channelId;
         obj.ownerId = userId;
         const encodeStreamKeyResult = obj.encodeStreamKey(obj);
-        let tmp4 = context === require(4227) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM;
+        let tmp4 = context === require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM;
         if (tmp4) {
           tmp4 = null != dependencyMap4[encodeStreamKeyResult];
         }
@@ -386,7 +386,7 @@ if (importDefaultResult.isSupported()) {
         appContext = appContext.appContext;
         ({ pid, nativePickerStyleUsed: importDefault, goLiveModalDurationMs } = appContext);
         ({ streamType, guildId, channelId, sourceId, sourcePid, analyticsLocations } = appContext);
-        let obj = appContext(4194);
+        let obj = appContext(4195);
         obj = { streamType, guildId, channelId, ownerId: id.getId() };
         const encodeStreamKeyResult = obj.encodeStreamKey(obj);
         closure_16[encodeStreamKeyResult] = { appContext, analyticsLocations };
@@ -448,7 +448,7 @@ if (importDefaultResult.isSupported()) {
         ({ streamKey, rtcServerId, viewerIds } = arg0);
         let obj = dependencyMap4[streamKey];
         ({ rtcChannelId, region } = arg0);
-        let obj1 = require(4194) /* isStreamKey */;
+        let obj1 = require(4195) /* isStreamKey */;
         let tmp4 = null == obj;
         if (tmp4) {
           tmp4 = null != rtcServerId;
@@ -462,10 +462,10 @@ if (importDefaultResult.isSupported()) {
             tmp8 = null == dependencyMap3[streamKey];
           }
           if (tmp8) {
-            dependencyMap2[streamKey] = require(6980) /* _findPlayingActivity */.getStreamerApplication(decodeStreamKeyResult, closure_12);
-            const obj3 = require(6980) /* _findPlayingActivity */;
+            dependencyMap2[streamKey] = require(5971) /* _findPlayingActivity */.getStreamerApplication(decodeStreamKeyResult, closure_12);
+            const obj3 = require(5971) /* _findPlayingActivity */;
           }
-          const StreamRTCAnalyticsContext = require(4219) /* _isNativeReflectConstruct */.StreamRTCAnalyticsContext;
+          const StreamRTCAnalyticsContext = require(4220) /* _isNativeReflectConstruct */.StreamRTCAnalyticsContext;
           obj = { streamRegion: region, streamApplication: dependencyMap2[streamKey], streamSourceType: parseSourceType(dependencyMap3[streamKey]) };
           let appContext;
           if (null != dependencyMap[streamKey]) {
@@ -486,7 +486,7 @@ if (importDefaultResult.isSupported()) {
           const prototype = StreamRTCAnalyticsContext.prototype;
           const streamRTCAnalyticsContext = new StreamRTCAnalyticsContext(obj);
           importDefault(44)(null != closure_3, "Creating RTCConnection without session.");
-          let tmp35 = importDefault(4219);
+          let tmp35 = importDefault(4220);
           obj = { sessionId: closure_3, streamKey, serverId: rtcServerId, channelId: rtcChannelId, initialLayout: PORTRAIT, analyticsContext: streamRTCAnalyticsContext, parentMediaSessionId: mediaSessionId.getMediaSessionId() };
           const prototype2 = tmp35.prototype;
           tmp35 = new tmp35(obj);

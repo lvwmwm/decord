@@ -1,10 +1,10 @@
-// Module ID: 5866
-// Function ID: 49764
+// Module ID: 6786
+// Function ID: 59414
 // Name: AvatarClydeExample
-// Dependencies: [33, 5085, 5867, 2]
+// Dependencies: [33, 5085, 6787, 2]
 // Exports: AvatarClydeExample
 
-// Module 5866 (AvatarClydeExample)
+// Module 6786 (AvatarClydeExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarClydeExample.native.tsx");
@@ -27,7 +27,7 @@ export const AvatarClydeExample = function AvatarClydeExample(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(5867) };
+  obj = { uri: importDefault(6787) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

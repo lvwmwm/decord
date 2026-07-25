@@ -1,10 +1,10 @@
-// Module ID: 7977
-// Function ID: 63119
+// Module ID: 7924
+// Function ID: 63076
 // Name: preloadUserBannerImage
-// Dependencies: [1392, 3803, 2]
+// Dependencies: [1392, 3804, 2]
 // Exports: default
 
-// Module 7977 (preloadUserBannerImage)
+// Module 7924 (preloadUserBannerImage)
 const result = require("set").fileFinishedImporting("modules/user_profile/preloadUserBannerImage.tsx");
 
 export default function preloadUserBannerImage(user, guildId) {
@@ -29,7 +29,7 @@ export default function preloadUserBannerImage(user, guildId) {
         if (tmp3) {
           let obj = require(1392) /* getAvatarURL */;
           obj = { id, guildId, banner: user.guild_member_profile.banner };
-          const GifAutoPlay = require(3803) /* explicitContentFromProto */.GifAutoPlay;
+          const GifAutoPlay = require(3804) /* explicitContentFromProto */.GifAutoPlay;
           obj.canAnimate = GifAutoPlay.getSetting();
           obj.size = 600;
           guildMemberBannerURL = obj.getGuildMemberBannerURL(obj);
@@ -43,7 +43,7 @@ export default function preloadUserBannerImage(user, guildId) {
         }
         if (null != banner1) {
           obj = { id, banner: user.user_profile.banner };
-          const GifAutoPlay2 = require(3803) /* explicitContentFromProto */.GifAutoPlay;
+          const GifAutoPlay2 = require(3804) /* explicitContentFromProto */.GifAutoPlay;
           obj.canAnimate = GifAutoPlay2.getSetting();
           obj.size = 600;
           guildMemberBannerURL = require(1392) /* getAvatarURL */.getUserBannerURL(obj);

@@ -1,10 +1,10 @@
-// Module ID: 5687
-// Function ID: 48951
+// Module ID: 6018
+// Function ID: 53775
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 22, 5688, 620, 1184, 2]
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 22, 6019, 620, 1184, 2]
 // Exports: default, useSubscribeGuildMembers
 
-// Module 5687 (_isNativeReflectConstruct)
+// Module 6018 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import result from "result";
 import jsxProd from "jsxProd";

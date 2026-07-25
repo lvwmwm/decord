@@ -1,10 +1,10 @@
-// Module ID: 7371
-// Function ID: 59457
+// Module ID: 5664
+// Function ID: 48473
 // Name: getApplicationFlags
-// Dependencies: [4153, 483, 2]
+// Dependencies: [4154, 483, 2]
 // Exports: hasApplicationFlag
 
-// Module 7371 (getApplicationFlags)
+// Module 5664 (getApplicationFlags)
 import _callSuper from "_callSuper";
 
 function getApplicationFlags(application) {

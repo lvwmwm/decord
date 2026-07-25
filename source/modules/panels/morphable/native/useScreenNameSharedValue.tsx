@@ -1,18 +1,18 @@
-// Module ID: 15740
-// Function ID: 121337
+// Module ID: 15751
+// Function ID: 121506
 // Name: useScreenNameSharedValue
-// Dependencies: [31, 3982, 3991, 2]
+// Dependencies: [31, 3983, 3992, 2]
 // Exports: default
 
-// Module 15740 (useScreenNameSharedValue)
+// Module 15751 (useScreenNameSharedValue)
 import result from "result";
 
 const require = arg1;
-let result = require("module_3991").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
+let result = require("module_3992").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
 
 export default function useScreenNameSharedValue() {
-  let rootNavigationRef = sharedValue(3982).getRootNavigationRef();
-  let obj = sharedValue(3982);
+  let rootNavigationRef = sharedValue(3983).getRootNavigationRef();
+  let obj = sharedValue(3983);
   let isReadyResult;
   if (null != rootNavigationRef) {
     isReadyResult = rootNavigationRef.isReady();
@@ -29,7 +29,7 @@ export default function useScreenNameSharedValue() {
       str = name;
     }
   }
-  sharedValue = sharedValue(3991).useSharedValue(str);
+  sharedValue = sharedValue(3992).useSharedValue(str);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     function handleStateChange() {

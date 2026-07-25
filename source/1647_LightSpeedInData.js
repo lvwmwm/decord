@@ -1,5 +1,5 @@
 // Module ID: 1647
-// Function ID: 18345
+// Function ID: 18352
 // Name: LightSpeedInData
 // Dependencies: [1640]
 

@@ -1,10 +1,10 @@
-// Module ID: 11823
-// Function ID: 91769
+// Module ID: 11799
+// Function ID: 91574
 // Name: useActiveThreadIds
-// Dependencies: [57, 31, 11824, 1348, 3758, 4142, 5040, 7007, 3760, 482, 7022, 566, 22, 1327, 21, 7006, 9175, 2]
+// Dependencies: [57, 31, 11800, 1348, 3759, 4143, 5041, 6025, 3761, 482, 6040, 566, 22, 1327, 21, 6024, 9067, 2]
 // Exports: useActiveGuildThreads, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 11823 (useActiveThreadIds)
+// Module 11799 (useActiveThreadIds)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { useShouldShowResolvedFlagsForChannel as closure_5 } from "useReportToModChannelFiltersStore";
@@ -109,7 +109,7 @@ export const useArchivedThreads = function useArchivedThreads(channel, LATEST_AC
       tmp = tmp2;
     }
     if (!tmp) {
-      let obj = LATEST_ACTIVITY(7006);
+      let obj = LATEST_ACTIVITY(6024);
       obj = {};
       ({ guild_id: obj2.guildId, id: obj2.channelId } = closure_0);
       obj.sortOrder = LATEST_ACTIVITY;
@@ -131,7 +131,7 @@ export const useArchivedThreads = function useArchivedThreads(channel, LATEST_AC
   }, items2);
   const items3 = [channel.id, showResolvedFlags];
   const effect2 = result.useEffect(() => {
-    LATEST_ACTIVITY(9175).resort(user.id);
+    LATEST_ACTIVITY(9067).resort(user.id);
   }, items3);
   obj = {};
   const items4 = [closure_10, nextOffset, isInitialLoad];

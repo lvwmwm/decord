@@ -1,5 +1,5 @@
 // Module ID: 1019
-// Function ID: 11065
+// Function ID: 11071
 // Name: getNavigationEntry
 // Dependencies: [1015]
 

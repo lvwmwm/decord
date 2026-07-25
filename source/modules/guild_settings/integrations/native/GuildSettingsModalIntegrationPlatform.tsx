@@ -1,10 +1,10 @@
-// Module ID: 16336
-// Function ID: 127114
+// Module ID: 16347
+// Function ID: 127282
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 8483, 653, 33, 4130, 689, 8482, 4471, 1212, 4561, 16297, 16337, 4814, 1392, 3976, 5501, 5165, 5502, 3834, 1456, 566, 4066, 5087, 5788, 5796, 1920, 7636, 4541, 4126, 5448, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 8243, 653, 33, 4131, 689, 8242, 4472, 1212, 4562, 16308, 16348, 4815, 1392, 3977, 5501, 5164, 5502, 3835, 1456, 566, 4067, 5087, 6695, 6554, 1921, 7575, 4542, 4127, 5448, 2]
 // Exports: default
 
-// Module 16336 (_isNativeReflectConstruct)
+// Module 16347 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -237,7 +237,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     obj = { screen: outer1_15.CONNECTIONS, isRootScreen: true };
     obj.openUserSettings(obj);
   }
-  let obj = platformType(3834);
+  let obj = platformType(3835);
   const token = obj.useToken(closeGuildSettings(689).modules.mobile.TABLE_ROW_PADDING);
   let tmp2 = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp2;
@@ -248,7 +248,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => ({ guild: outer1_11.getGuild(), submitting: outer1_11.isSubmitting(), hasChanges: outer1_11.hasChanges() }));
   const submitting = stateFromStoresObject.submitting;
   ({ hasChanges: closure_5, guild } = stateFromStoresObject);
-  let getPlatformUserUrl = closeGuildSettings(4066)();
+  let getPlatformUserUrl = closeGuildSettings(4067)();
   let obj4 = platformType(566);
   const items1 = [closure_11];
   const stateFromStores = obj4.useStateFromStores(items1, () => outer1_11.getProps().integrations);
@@ -264,7 +264,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
       fn = () => null;
     }
     obj.headerLeft = fn;
-    let obj5 = closeGuildSettings(4814);
+    let obj5 = closeGuildSettings(4815);
     const value = obj5.get(platformType);
     let name;
     if (null != value) {
@@ -289,14 +289,14 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     navigation.setOptions(obj);
     if (constants2.YOUTUBE === platformType) {
       let intl = platformType(1212).intl;
-      obj = { connectAction: onConectTap, helpdeskArticle: closeGuildSettings(1920).getArticleURL(constants.YOUTUBE_INTEGRATION) };
+      obj = { connectAction: onConectTap, helpdeskArticle: closeGuildSettings(1921).getArticleURL(constants.YOUTUBE_INTEGRATION) };
       let formatResult = intl.format(platformType(1212).t["4OSAQ9"], obj);
-      const obj8 = closeGuildSettings(1920);
+      const obj8 = closeGuildSettings(1921);
     } else if (constants2.TWITCH === platformType) {
       const intl2 = platformType(1212).intl;
-      obj1 = { connectAction: onConectTap, helpdeskArticle: closeGuildSettings(1920).getArticleURL(constants.TWITCH_INTEGRATION) };
+      obj1 = { connectAction: onConectTap, helpdeskArticle: closeGuildSettings(1921).getArticleURL(constants.TWITCH_INTEGRATION) };
       formatResult = intl2.format(platformType(1212).t.ro1jEN, obj1);
-      const obj16 = closeGuildSettings(1920);
+      const obj16 = closeGuildSettings(1921);
     }
     const obj2 = {};
     obj3 = { style: tmp2.form, contentContainerStyle: platformType.contentContainerStyle };
@@ -321,10 +321,10 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     }
     const items2 = [mapped, ];
     const obj6 = { variant: "text-sm/medium", color: "text-muted", children: formatResult };
-    items2[1] = callback3(platformType(4126).Text, obj6);
+    items2[1] = callback3(platformType(4127).Text, obj6);
     obj4.children = items2;
-    obj3.children = closure_17(platformType(4541).Stack, obj4);
-    const items3 = [callback3(platformType(7636).Form, obj3), callback3(platformType(5448).NavScrim, {})];
+    obj3.children = closure_17(platformType(4542).Stack, obj4);
+    const items3 = [callback3(platformType(7575).Form, obj3), callback3(platformType(5448).NavScrim, {})];
     obj2.children = items3;
     return closure_17(closure_18, obj2);
   }

@@ -1,9 +1,9 @@
-// Module ID: 12708
-// Function ID: 98843
+// Module ID: 12719
+// Function ID: 98970
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3767, 4146, 12709, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3768, 4147, 12720, 566, 686, 2]
 
-// Module 12708 (_isNativeReflectConstruct)
+// Module 12719 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -62,8 +62,8 @@ function processUserInChannel(channelId, id) {
             delete tmp3[tmp2];
           }
           if (flag4) {
-            const result = importDefault(12709).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
-            const obj3 = importDefault(12709);
+            const result = importDefault(12720).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
+            const obj3 = importDefault(12720);
           }
           return flag3;
         }

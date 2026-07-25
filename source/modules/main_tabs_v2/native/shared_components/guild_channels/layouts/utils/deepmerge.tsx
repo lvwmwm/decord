@@ -1,9 +1,9 @@
-// Module ID: 10292
-// Function ID: 79504
+// Module ID: 10225
+// Function ID: 79157
 // Name: isObject
 // Dependencies: [2]
 
-// Module 10292 (isObject)
+// Module 10225 (isObject)
 function isObject(arg0) {
   if ("object" === typeof arg0) {
     if (null !== arg0) {

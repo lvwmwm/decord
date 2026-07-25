@@ -1,10 +1,10 @@
-// Module ID: 7892
-// Function ID: 62599
+// Module ID: 7839
+// Function ID: 62571
 // Name: getInitialStringSelectOptions
-// Dependencies: [7886, 1881, 2]
+// Dependencies: [7833, 1882, 2]
 // Exports: getInitialStringSelectOptions
 
-// Module 7892 (getInitialStringSelectOptions)
+// Module 7839 (getInitialStringSelectOptions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -16,7 +16,7 @@ export const getInitialStringSelectOptions = function getInitialStringSelectOpti
   if (null != interactionComponentState) {
     type = interactionComponentState.type;
   }
-  if (type === require(1881) /* PermissionOverwriteType */.ComponentType.STRING_SELECT) {
+  if (type === require(1882) /* PermissionOverwriteType */.ComponentType.STRING_SELECT) {
     let mapped = interactionComponentState.values;
   } else {
     const options = selectionActionComponent.options;

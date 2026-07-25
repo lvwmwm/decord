@@ -1,9 +1,9 @@
-// Module ID: 4152
-// Function ID: 35083
+// Module ID: 4153
+// Function ID: 35094
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1858, 4153, 1881, 4160, 1392, 1327, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1859, 4154, 1882, 4161, 1392, 1327, 2]
 
-// Module 4152 (_isNativeReflectConstruct)
+// Module 4153 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
 import PermissionOverwriteType from "PermissionOverwriteType";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

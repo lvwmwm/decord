@@ -1,10 +1,10 @@
-// Module ID: 15335
-// Function ID: 116899
+// Module ID: 15345
+// Function ID: 117027
 // Name: replaceUsernameVariable
-// Dependencies: [31, 27, 1838, 1849, 4333, 33, 4130, 689, 624, 7974, 8280, 5687, 7975, 3969, 3842, 665, 7967, 1273, 11936, 4126, 4319, 8467, 2]
+// Dependencies: [31, 27, 1838, 1850, 4334, 33, 4131, 689, 624, 7922, 8015, 6018, 7923, 3970, 3843, 665, 7915, 1273, 11912, 4127, 4320, 8225, 2]
 // Exports: default
 
-// Module 15335 (replaceUsernameVariable)
+// Module 15345 (replaceUsernameVariable)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -27,19 +27,19 @@ function replaceUsernameVariable(message, str) {
       let tmp2 = require;
       let tmp3 = dependencyMap;
       let obj = { variant: "text-sm/normal", style: message.message, children: parts[num] };
-      let arr = items.push(callback(require(4126) /* Text */.Text, obj, num));
+      let arr = items.push(callback(require(4127) /* Text */.Text, obj, num));
       let tmp5 = callback;
       obj = { variant: "text-sm/bold", style: message.message };
       let _HermesInternal = HermesInternal;
       obj.children = "@" + arg2;
       let _HermesInternal2 = HermesInternal;
-      arr = items.push(callback(require(4126) /* Text */.Text, obj, "" + num + "-user"));
+      arr = items.push(callback(require(4127) /* Text */.Text, obj, "" + num + "-user"));
       num = num + 1;
       diff = parts.length - 1;
     } while (num < diff);
   }
   obj = { variant: "text-sm/normal", style: message.message, children: parts[parts.length - 1] };
-  items.push(callback(require(4126) /* Text */.Text, obj, parts.length));
+  items.push(callback(require(4127) /* Text */.Text, obj, parts.length));
   return items;
 }
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

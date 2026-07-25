@@ -1,10 +1,10 @@
-// Module ID: 10224
-// Function ID: 78948
+// Module ID: 10156
+// Function ID: 78578
 // Name: setNextFavoritesGuildViewSource
-// Dependencies: [3947, 653, 5077, 675, 2]
+// Dependencies: [3948, 653, 1841, 675, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddModalOpened, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildUpsellModalOpened, trackFavoritesGuildViewed, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 10224 (setNextFavoritesGuildViewSource)
+// Module 10156 (setNextFavoritesGuildViewSource)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 
@@ -49,8 +49,8 @@ export const trackFavoritesGuildAddModalOpened = function trackFavoritesGuildAdd
   obj = { source };
   obj.track(AnalyticEvents.FAVORITES_GUILD_ADD_MODAL_OPENED, obj);
 };
-export const trackFavoritesGuildViewed = function trackFavoritesGuildViewed(manual_browsing, favoritesCount, enabled, isPremiumExactlyResult) {
+export const trackFavoritesGuildViewed = function trackFavoritesGuildViewed(manual_browsing, favoritesCount, isExperimentEnabled, isPremiumExactlyResult) {
   let obj = importDefault(675);
-  obj = { source: manual_browsing, total_favorites: favoritesCount, is_xp_enabled: enabled, is_premium_tier_2: isPremiumExactlyResult };
+  obj = { source: manual_browsing, total_favorites: favoritesCount, is_xp_enabled: isExperimentEnabled, is_premium_tier_2: isPremiumExactlyResult };
   obj.track(AnalyticEvents.FAVORITES_GUILD_VIEWED, obj);
 };

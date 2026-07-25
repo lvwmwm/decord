@@ -1,10 +1,10 @@
-// Module ID: 7557
-// Function ID: 60258
+// Module ID: 6653
+// Function ID: 58848
 // Name: connectToStage
-// Dependencies: [5, 4149, 1348, 1838, 3758, 1906, 1356, 7558, 5697, 5048, 12375, 12376, 4944, 4194, 4309, 12378, 2]
+// Dependencies: [5, 4150, 1348, 1838, 3759, 1907, 1356, 6654, 11466, 5049, 12351, 12352, 4945, 4195, 4310, 12354, 2]
 // Exports: connectOrLurkStage, showUserProfile
 
-// Module 7557 (connectToStage)
+// Module 6653 (connectToStage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -41,9 +41,9 @@ function connectToStage(channel, flag) {
       return false;
     }
   }
-  let obj = importDefault(12376);
+  let obj = importDefault(12352);
   obj.initialize();
-  const voiceChannel = importDefault(4944).selectVoiceChannel(channel.id);
+  const voiceChannel = importDefault(4945).selectVoiceChannel(channel.id);
   if (store.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
@@ -51,12 +51,12 @@ function connectToStage(channel, flag) {
     const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !outer1_5.isStreamMarkedFull(outer1_0(outer1_3[13]).encodeStreamKey(currentUserActiveStream)));
     if (null != found) {
       obj = { noFocus: true };
-      require(4309) /* isVoiceChannelFull */.watchStream(found, obj);
-      const obj3 = require(4309) /* isVoiceChannelFull */;
+      require(4310) /* isVoiceChannelFull */.watchStream(found, obj);
+      const obj3 = require(4310) /* isVoiceChannelFull */;
     }
     return true;
   }
-  let obj2 = importDefault(4944);
+  let obj2 = importDefault(4945);
 }
 function connectAndOpen(channel, flag) {
   let flag2 = arg2;
@@ -74,14 +74,14 @@ function connectAndOpen(channel, flag) {
   const voiceChannelId = store.getVoiceChannelId();
   let result = !flag3 && voiceChannelId !== channel.id;
   if (result) {
-    result = _require(12378).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12378);
+    result = _require(12354).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12354);
   }
   if (result) {
-    result = flag2(7558).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(6654).showChannelChangeConfirmationAlert(channel, () => {
       outer1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(7558);
+    const obj2 = flag2(6654);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
@@ -90,7 +90,7 @@ function connectAndOpen(channel, flag) {
   }
 }
 function navigateToStage(arg0, arg1) {
-  importAll(7558).navigateToStage(arg0, arg1);
+  importAll(6654).navigateToStage(arg0, arg1);
 }
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageChannelModalActionCreators.tsx");
 
@@ -137,5 +137,5 @@ export { connectToStage };
 export { connectAndOpen };
 export { navigateToStage };
 export const showUserProfile = function showUserProfile(arg0) {
-  const result = importAll(7558).showPlatformUserProfile(arg0);
+  const result = importAll(6654).showPlatformUserProfile(arg0);
 };

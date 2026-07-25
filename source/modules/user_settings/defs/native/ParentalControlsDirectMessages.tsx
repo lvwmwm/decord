@@ -1,9 +1,9 @@
-// Module ID: 14603
-// Function ID: 111332
+// Module ID: 14614
+// Function ID: 111459
 // Name: toggle
-// Dependencies: [6769, 7751, 13778, 13779, 10127, 1212, 2]
+// Dependencies: [5765, 7697, 13789, 13790, 10059, 1212, 2]
 
-// Module 14603 (toggle)
+// Module 14614 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -19,12 +19,12 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue() {
-    return !require(13778) /* useParentalControlledExplicitContentSettings */.useDefaultGuildsRestricted();
+    return !require(13789) /* useParentalControlledExplicitContentSettings */.useDefaultGuildsRestricted();
   },
   onValueChange: function onAllowDirectMessagesFromServerMembersValueChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      const ParentalControlledDefaultGuildsRestrictedV2 = require(13779) /* result */.ParentalControlledDefaultGuildsRestrictedV2;
+      const ParentalControlledDefaultGuildsRestrictedV2 = require(13790) /* result */.ParentalControlledDefaultGuildsRestrictedV2;
       const result = ParentalControlledDefaultGuildsRestrictedV2.updateControlledSetting(selectedTeenId, !arg0);
     }
   },

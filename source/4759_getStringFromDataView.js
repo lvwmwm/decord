@@ -1,23 +1,117 @@
 // Module ID: 4759
-// Function ID: 41325
+// Function ID: 41334
 // Name: getStringFromDataView
-// Dependencies: [4745]
+// Dependencies: [4746, 4749]
 
 // Module 4759 (getStringFromDataView)
 const require = arg1;
+const module = arg2;
 const dependencyMap = arg6;
-let c2 = 6;
-let closure_3 = ["GIF87a", "GIF89a"];
 arg5.default = {
-  isGifFile(dataView) {
-    let hasItem = !tmp;
+  isWebpFile(dataView) {
+    let tmp2 = !tmp;
     if (!!dataView) {
-      hasItem = closure_3.includes(require(4745) /* getStringFromDataView */.getStringFromDataView(dataView, 0, c2));
-      const obj = require(4745) /* getStringFromDataView */;
+      tmp2 = require(4746) /* getStringFromDataView */.getStringFromDataView(dataView, 0, 4) === "RIFF";
+      const obj = require(4746) /* getStringFromDataView */;
     }
-    return hasItem;
+    if (tmp2) {
+      tmp2 = require(4746) /* getStringFromDataView */.getStringFromDataView(dataView, 8, 4) === "WEBP";
+      const obj2 = require(4746) /* getStringFromDataView */;
+    }
+    return tmp2;
   },
-  findOffsets() {
-    return { gifHeaderOffset: 0 };
+  findOffsets(byteLength) {
+    let num = 12;
+    let flag = false;
+    let tmp5;
+    let tmp6;
+    let tmp7;
+    let tmp8;
+    let flag2 = false;
+    if (20 < byteLength.byteLength) {
+      while (true) {
+        let tmp9 = require;
+        let tmp10 = dependencyMap;
+        let obj = require(4746) /* getStringFromDataView */;
+        let stringFromDataView = obj.getStringFromDataView(byteLength, num, 4);
+        let uint32 = byteLength.getUint32(num + 4, true);
+        let tmp13 = module;
+        let tmp14 = num;
+        if (module(4749).USE_EXIF) {
+          if ("EXIF" === stringFromDataView) {
+            let tmp23 = require;
+            let tmp24 = dependencyMap;
+            let obj4 = require(4746) /* getStringFromDataView */;
+            let sum = num + 8;
+            let sum1 = sum;
+            if (obj4.getStringFromDataView(byteLength, sum, 6) === "Exif\0\0") {
+              sum1 = sum + 6;
+            }
+            let tmp19 = sum1;
+            let tmp20 = tmp2;
+            let tmp21 = tmp3;
+            let sum3 = tmp4;
+            flag = true;
+            let tmp27 = flag;
+            let sum2 = uint32;
+            if (uint32 % 2 !== 0) {
+              sum2 = uint32 + 1;
+            }
+            num = num + (8 + sum2);
+            let tmp = tmp19;
+            tmp2 = tmp20;
+            tmp3 = tmp21;
+            tmp4 = sum3;
+            tmp5 = tmp19;
+            tmp6 = tmp20;
+            tmp7 = tmp21;
+            tmp8 = sum3;
+            flag2 = flag;
+            if (num + 8 >= byteLength.byteLength) {
+              break;
+            }
+          }
+        }
+        let tmp15 = module;
+        let tmp16 = dependencyMap;
+        if (module(4749).USE_XMP) {
+          if ("XMP " === stringFromDataView) {
+            obj = { dataOffset: num + 8, length: uint32 };
+            let items = [obj];
+            tmp19 = tmp;
+            tmp20 = items;
+            tmp21 = tmp3;
+            sum3 = tmp4;
+            flag = true;
+          }
+        }
+        let tmp17 = module;
+        let tmp18 = dependencyMap;
+        if (module(4749).USE_ICC) {
+          if ("ICCP" === stringFromDataView) {
+            obj = { offset: num + 8, length: uint32, chunkNumber: 1, chunksTotal: 1 };
+            let items1 = [obj];
+            tmp19 = tmp;
+            tmp20 = tmp2;
+            tmp21 = items1;
+            sum3 = tmp4;
+            flag = true;
+          }
+        }
+        tmp19 = tmp;
+        tmp20 = tmp2;
+        tmp21 = tmp3;
+        sum3 = tmp4;
+        if ("VP8X" === stringFromDataView) {
+          sum3 = num + 8;
+          tmp19 = tmp;
+          tmp20 = tmp2;
+          tmp21 = tmp3;
+          flag = true;
+        }
+      }
+    }
+    const obj1 = { hasAppMarkers: flag2, tiffHeaderOffset: tmp5, xmpChunks: tmp6, iccChunks: tmp7, vp8xChunkOffset: tmp8 };
+    return obj1;
   }
 };

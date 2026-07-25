@@ -1,16 +1,16 @@
-// Module ID: 11394
-// Function ID: 88617
+// Module ID: 11356
+// Function ID: 88273
 // Name: useChatInputFloatingWidth
-// Dependencies: [31, 11132, 3991, 4131, 2]
+// Dependencies: [31, 11092, 3992, 4132, 2]
 // Exports: default
 
-// Module 11394 (useChatInputFloatingWidth)
+// Module 11356 (useChatInputFloatingWidth)
 import result from "result";
 import { CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG as closure_3 } from "TextAreaCta";
 
 const require = arg1;
 let closure_4 = { code: "function useChatInputFloatingWidthTsx1(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
-let result = require("module_3991").fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");
+let result = require("module_3992").fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");
 
 export default function useChatInputFloatingWidth(expanded) {
   expanded = expanded.expanded;

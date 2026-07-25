@@ -1,9 +1,9 @@
-// Module ID: 1895
-// Function ID: 21224
+// Module ID: 1896
+// Function ID: 21235
 // Name: GuildEntityDao
-// Dependencies: [6, 7, 1887, 1889, 2]
+// Dependencies: [6, 7, 1888, 1890, 2]
 
-// Module 1895 (GuildEntityDao)
+// Module 1896 (GuildEntityDao)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

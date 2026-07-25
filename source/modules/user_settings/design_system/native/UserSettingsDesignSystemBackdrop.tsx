@@ -1,10 +1,10 @@
-// Module ID: 14507
-// Function ID: 110755
+// Module ID: 14518
+// Function ID: 110882
 // Name: BackdropCard
-// Dependencies: [57, 31, 27, 33, 4130, 5167, 4541, 4126, 4543, 3991, 4542, 4546, 4524, 4531, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 5166, 4542, 4127, 4544, 3992, 4543, 4547, 4525, 4532, 2]
 // Exports: default
 
-// Module 14507 (BackdropCard)
+// Module 14518 (BackdropCard)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -27,10 +27,10 @@ function BackdropCard(arg0) {
   ({ buttonLabel, title, description } = arg0);
   let obj = {};
   obj = { spacing: 12 };
-  const items = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: title }), , ];
+  const items = [callback2(require(4127) /* Text */.Text, { variant: "heading-lg/bold", children: title }), , ];
   obj = { variant: "text-md/normal", color: "text-subtle", children: description };
-  items[1] = callback2(require(4126) /* Text */.Text, obj);
-  items[2] = callback2(require(4543) /* Button */.Button, {
+  items[1] = callback2(require(4127) /* Text */.Text, obj);
+  items[2] = callback2(require(4544) /* Button */.Button, {
     text: buttonLabel,
     onPress() {
       callback2(closure_0);
@@ -38,8 +38,8 @@ function BackdropCard(arg0) {
     }
   });
   obj.children = items;
-  obj.children = callback3(require(4541) /* Stack */.Stack, obj);
-  return callback2(require(5167) /* getCardBackgroundToken */.Card, obj);
+  obj.children = callback3(require(4542) /* Stack */.Stack, obj);
+  return callback2(require(5166) /* getCardBackgroundToken */.Card, obj);
 }
 ({ ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -65,7 +65,7 @@ export default function UserSettingsDesignSystemBackdrop() {
   let first = tmp2[0];
   const dependencyMap = tmp4;
   [tmp6, tmp7] = callback(React.useState("none"), 2);
-  let obj = first(3991);
+  let obj = first(3992);
   const fn = function n() {
     const obj = {};
     let num = 0;
@@ -75,7 +75,7 @@ export default function UserSettingsDesignSystemBackdrop() {
     obj.opacity = first(tmp4[10]).withSpring(num, first(tmp4[11]).SUBTLE_SPRING, "animate-always");
     return obj;
   };
-  obj = { withSpring: first(4542).withSpring, showBackdrop: first, SUBTLE_SPRING: first(4546).SUBTLE_SPRING };
+  obj = { withSpring: first(4543).withSpring, showBackdrop: first, SUBTLE_SPRING: first(4547).SUBTLE_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 1929832617927;
   fn.__initData = closure_9;
@@ -89,21 +89,21 @@ export default function UserSettingsDesignSystemBackdrop() {
   const obj4 = { title: "Strong Blur", description: "You can use a strong blur for places where you want to completly lift the user out of the context, like for modals", buttonLabel: "Show Strong Blur Backdrop", blur: "strong", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 };
   items[2] = callback2(BackdropCard, obj4);
   obj1.children = items;
-  const items1 = [callback3(first(4541).Stack, obj1), ];
+  const items1 = [callback3(first(4542).Stack, obj1), ];
   if (first) {
     const obj5 = { onDismiss: handleClose };
     const obj6 = { style: animatedStyle, blur: tmp6, onDismiss: handleClose };
-    const items2 = [callback2(first(4531).Backdrop, obj6), ];
+    const items2 = [callback2(first(4532).Backdrop, obj6), ];
     const obj7 = { style: tmp.backdropContent, pointerEvents: "box-none" };
     const obj8 = {};
     const obj9 = { variant: "text-md/normal" };
     const items3 = ["blur style: ", tmp6];
     obj9.children = items3;
-    obj8.children = callback3(first(4126).Text, obj9);
-    obj7.children = callback2(first(5167).Card, obj8);
+    obj8.children = callback3(first(4127).Text, obj9);
+    obj7.children = callback2(first(5166).Card, obj8);
     items2[1] = callback2(closure_5, obj7);
     obj5.children = items2;
-    first = callback3(first(4524).Dialog, obj5);
+    first = callback3(first(4525).Dialog, obj5);
   }
   items1[1] = first;
   obj.children = items1;

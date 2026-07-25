@@ -1,10 +1,10 @@
-// Module ID: 10027
-// Function ID: 77470
+// Module ID: 9956
+// Function ID: 77089
 // Name: OAuth2AuthorizeModal
-// Dependencies: [31, 27, 33, 4130, 689, 8991, 1557, 3991, 4542, 4660, 1212, 10028, 5119, 4126, 5121, 10030, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 8879, 1557, 3992, 4543, 4661, 1212, 9957, 5119, 4127, 5121, 9959, 2]
 // Exports: default
 
-// Module 10027 (OAuth2AuthorizeModal)
+// Module 9956 (OAuth2AuthorizeModal)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,11 +30,11 @@ let result = require("jsxProd").fileFinishedImporting("modules/oauth2/native/OAu
 
 export default function OAuth2AuthorizeModal(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = sharedValue(8991)(arg0);
+  const tmp2 = sharedValue(8879)(arg0);
   const require = tmp2;
-  let obj = require(3991);
+  let obj = require(3992);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = require(3991);
+  let obj1 = require(3992);
   const fn = function b() {
     const obj = {};
     const value = sharedValue.get();
@@ -80,21 +80,21 @@ export default function OAuth2AuthorizeModal(arg0) {
   };
   if (null != tmp2.backStep) {
     const obj3 = { color: sharedValue(689).colors.INTERACTIVE_TEXT_DEFAULT };
-    let tmp18 = callback(require(10028) /* ArrowSmallLeftIcon */.ArrowSmallLeftIcon, obj3);
+    let tmp18 = callback(require(9957) /* ArrowSmallLeftIcon */.ArrowSmallLeftIcon, obj3);
   } else {
     const obj4 = { color: sharedValue(689).colors.INTERACTIVE_TEXT_DEFAULT };
     tmp18 = callback(require(5119) /* XSmallIcon */.XSmallIcon, obj4);
   }
   obj2.children = tmp18;
-  const items2 = [callback(require(4660) /* PressableBase */.PressableOpacity, obj2), , ];
+  const items2 = [callback(require(4661) /* PressableBase */.PressableOpacity, obj2), , ];
   const obj5 = { style: tmp.title };
   const obj6 = { variant: "redesign/heading-18/bold", accessibilityRole: "header" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.children = intl3.string(require(1212) /* getSystemLocale */.t["y+/PE9"]);
-  obj5.children = callback(require(4126) /* Text */.Text, obj6);
+  obj5.children = callback(require(4127) /* Text */.Text, obj6);
   items2[1] = callback(View, obj5);
   const items3 = [tmp.titleContainerBorder, animatedStyle];
-  items2[2] = callback(sharedValue(3991).View, { style: items3 });
+  items2[2] = callback(sharedValue(3992).View, { style: items3 });
   obj.children = items2;
   const items4 = [closure_6(View, obj), ];
   const obj7 = { bottom: true, style: tmp.contentContainer };
@@ -102,7 +102,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   const merged = Object.assign(tmp2);
   obj8["onScroll"] = callback;
   obj8["centerContent"] = true;
-  obj7.children = callback(sharedValue(10030), obj8);
+  obj7.children = callback(sharedValue(9959), obj8);
   items4[1] = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj7);
   obj.children = items4;
   return closure_6(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 9701
-// Function ID: 75506
+// Module ID: 9625
+// Function ID: 75101
 // Name: isSpecialMediaGridNode
-// Dependencies: [31, 27, 4467, 9702, 33, 3991, 4130, 689, 3974, 1273, 9646, 4126, 566, 4672, 9703, 1212, 4704, 4674, 8306, 9704, 4131, 1450, 9705, 4644, 9691, 2]
+// Dependencies: [31, 27, 4468, 9626, 33, 3992, 4131, 689, 3975, 1273, 9568, 4127, 566, 4673, 9627, 1212, 4705, 4675, 8041, 9628, 4132, 1450, 9629, 4645, 9615, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isViewAllPhotosNode
 
-// Module 9701 (isSpecialMediaGridNode)
+// Module 9625 (isSpecialMediaGridNode)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -15,7 +15,7 @@ import hexToRgb from "hexToRgb";
 import hexToRgb from "hexToRgb";
 import hexToRgb from "hexToRgb";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_3991";
+import importDefaultResult from "module_3992";
 
 let Pressable;
 let closure_10;
@@ -93,10 +93,10 @@ function NewCaption(arg0) {
   const tmp = callback3();
   let obj = { style: items };
   items = [tmp.labelContainer, style];
-  obj = { source: importDefault(9646), style: tmp.icon };
+  obj = { source: importDefault(9568), style: tmp.icon };
   const items1 = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label };
-  items1[1] = callback(require(4126) /* Text */.Text, obj);
+  items1[1] = callback(require(4127) /* Text */.Text, obj);
   obj.children = items1;
   return callback2(closure_4, obj);
 }
@@ -321,7 +321,7 @@ function MediaKeyboardSpecialButton(arg0) {
 ({ View: closure_4, Pressable } = get_ActivityIndicator);
 ({ ALAssetsType: closure_7, DeviceMediaType: closure_8 } = frozen);
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = require("module_3991").createAnimatedComponent(Pressable);
+let closure_11 = require("module_3992").createAnimatedComponent(Pressable);
 let obj = { container: { flexDirection: "row", paddingHorizontal: 12, alignItems: "center" } };
 obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.image = obj;
@@ -372,13 +372,13 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ handleCameraPress, handleAttachPress, handleViewAllPhotosPress } = arg0);
   let closure_11 = (importDefault(1450)().width - (24 + 4 * (numPerRow - 1))) / numPerRow;
   let obj = {};
-  obj = { text: require(1212) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(9705) /* CameraIcon */.CameraIcon };
+  obj = { text: require(1212) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(9629) /* CameraIcon */.CameraIcon };
   obj.camera = obj;
-  obj = { text: require(1212) /* getSystemLocale */.t.Zmm6dN, onPress: handleViewAllPhotosPress, Icon: require(4644) /* ImageIcon */.ImageIcon };
+  obj = { text: require(1212) /* getSystemLocale */.t.Zmm6dN, onPress: handleViewAllPhotosPress, Icon: require(4645) /* ImageIcon */.ImageIcon };
   obj.allphotos = obj;
   const tmp = obj();
-  obj.attach = { text: require(1212) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9691) /* AttachmentIcon */.AttachmentIcon };
-  let obj1 = { text: require(1212) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9691) /* AttachmentIcon */.AttachmentIcon };
+  obj.attach = { text: require(1212) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9615) /* AttachmentIcon */.AttachmentIcon };
+  let obj1 = { text: require(1212) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9615) /* AttachmentIcon */.AttachmentIcon };
   return callback(closure_4, {
     style: tmp.container,
     children: items.map((item) => {

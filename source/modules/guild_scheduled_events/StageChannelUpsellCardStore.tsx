@@ -1,10 +1,10 @@
-// Module ID: 8450
-// Function ID: 67131
+// Module ID: 8208
+// Function ID: 65782
 // Name: useStageChannelUpsellCardStore
-// Dependencies: [1354, 677, 587, 682, 3743, 2]
+// Dependencies: [1354, 677, 587, 682, 3744, 2]
 // Exports: useStageChannelUpsellCardStore
 
-// Module 8450 (useStageChannelUpsellCardStore)
+// Module 8208 (useStageChannelUpsellCardStore)
 import { GUILD_EVENT_STAGE_UPSELL_CARD_KEY as closure_2 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
@@ -27,5 +27,5 @@ export const useStageChannelUpsellCardStore = function useStageChannelUpsellCard
     const items = [, ];
     ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
     return items;
-  }, require(3743) /* isIterable */.shallow);
+  }, require(3744) /* isIterable */.shallow);
 };

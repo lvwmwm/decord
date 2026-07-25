@@ -1,10 +1,10 @@
-// Module ID: 12129
-// Function ID: 95065
+// Module ID: 12105
+// Function ID: 94870
 // Name: useUserProfileWidgets
-// Dependencies: [1194, 6855, 6860, 566, 2]
+// Dependencies: [1194, 5630, 5635, 566, 2]
 // Exports: default
 
-// Module 12129 (useUserProfileWidgets)
+// Module 12105 (useUserProfileWidgets)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

@@ -1,10 +1,10 @@
-// Module ID: 5064
-// Function ID: 43894
+// Module ID: 5065
+// Function ID: 43906
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1348, 1907, 1917, 1910, 3758, 1906, 4325, 1909, 653, 1355, 675, 4324, 1915, 686, 1198, 2]
+// Dependencies: [1348, 1908, 1918, 1911, 3759, 1907, 4326, 1910, 653, 1355, 675, 4325, 1916, 686, 1198, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 5064 (_createForOfIteratorHelperLoose)
+// Module 5065 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -106,10 +106,10 @@ function updateImpersonating(guildId, type) {
     obj = {};
     const _Object = Object;
     obj.num_roles = Object.keys(data.roles).length;
-    const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-    obj["is_viewing_as_member"] = data.type === require(1915) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+    const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+    obj["is_viewing_as_member"] = data.type === require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
     obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-    const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
+    const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
     obj = { type: "IMPERSONATE_UPDATE", guildId };
     const obj1 = {};
     const merged1 = Object.assign(data);
@@ -136,7 +136,7 @@ function updateImpersonatedChannels(guildId, items1, items2) {
   const set = new Set(optedInChannels.getOptedInChannels(guildId));
   const item = items1.forEach((arg0) => set.add(arg0));
   const item1 = items2.forEach((arg0) => set.delete(arg0));
-  updateImpersonating(guildId, { type: set(1915).ImpersonateType.NEW_MEMBER, optInChannels: set });
+  updateImpersonating(guildId, { type: set(1916).ImpersonateType.NEW_MEMBER, optInChannels: set });
 }
 ({ Permissions: closure_11, Routes: closure_12, AnalyticEvents: closure_13 } = ME);
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/impersonate/ImpersonateActionCreators.tsx");
@@ -144,10 +144,10 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 export const startImpersonating = function startImpersonating(guildId, data) {
   let obj = importDefault(675);
   obj = { num_roles: Object.keys(data.roles).length };
-  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  obj["is_viewing_as_member"] = data.type === require(1915) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+  const merged = Object.assign(require(4325) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  obj["is_viewing_as_member"] = data.type === require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
   obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-  const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
+  const obj3 = require(4325) /* _createForOfIteratorHelperLoose */;
   obj = { type: "IMPERSONATE_UPDATE", guildId, data };
   importDefault(686).dispatch(obj);
   puntFromSelectedChannelIfInaccessible(guildId);
@@ -198,10 +198,10 @@ export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId,
       done = iter2.done;
     } while (!done);
   }
-  obj = { type: require(1915) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
+  obj = { type: require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
   updateImpersonating(guildId, obj);
 };
 export const updateImpersonatedData = function updateImpersonatedData(id, arg1) {
   const merged = Object.assign(arg1);
-  updateImpersonating(id, { type: require(1915) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
+  updateImpersonating(id, { type: require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
 };

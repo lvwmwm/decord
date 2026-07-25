@@ -1,10 +1,10 @@
-// Module ID: 15828
-// Function ID: 122152
+// Module ID: 15839
+// Function ID: 122321
 // Name: VoiceControlsToggleActionSheet
-// Dependencies: [57, 31, 27, 4122, 1345, 33, 4130, 689, 4663, 566, 5187, 8346, 4126, 1212, 4543, 2]
+// Dependencies: [57, 31, 27, 4123, 1345, 33, 4131, 689, 4664, 566, 5187, 8080, 4127, 1212, 4544, 2]
 // Exports: default
 
-// Module 15828 (VoiceControlsToggleActionSheet)
+// Module 15839 (VoiceControlsToggleActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

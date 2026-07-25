@@ -1,9 +1,9 @@
-// Module ID: 6810
-// Function ID: 53746
+// Module ID: 5806
+// Function ID: 51020
 // Name: FramesBannerBlockRecord
-// Dependencies: [6, 7, 6805, 2]
+// Dependencies: [6, 7, 5801, 2]
 
-// Module 6810 (FramesBannerBlockRecord)
+// Module 5806 (FramesBannerBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

@@ -1,10 +1,10 @@
-// Module ID: 6930
-// Function ID: 55309
+// Module ID: 5921
+// Function ID: 52615
 // Name: set
-// Dependencies: [4119, 1327, 6931, 6932, 2]
+// Dependencies: [4120, 1327, 5922, 5923, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 6930 (set)
+// Module 5921 (set)
 import set from "makeStorefrontSKUCodedLink";
 
 const items = [require("CodedLinkType").CodedLinkType.APP_DIRECTORY_PROFILE, require("CodedLinkType").CodedLinkType.ACTIVITY_BOOKMARK, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, require("CodedLinkType").CodedLinkType.APP_OAUTH2_LINK];
@@ -22,11 +22,11 @@ export const isApplicationCodedLinkMobileSupported = function isApplicationCoded
   return require(1327) /* isDiscordFrontendDevelopment */.isInSet(type, set1);
 };
 export const getApplicationCodedLinkData = function getApplicationCodedLinkData(type, code, url) {
-  if (require(4119) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-    if (require(4119) /* CodedLinkType */.CodedLinkType.APP_OAUTH2_LINK !== type) {
-      if (require(4119) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-        if (require(4119) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          const result = require(6931) /* makeStorefrontSKUCodedLink */.parseStorefrontSkuCodedLink(code);
+  if (require(4120) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
+    if (require(4120) /* CodedLinkType */.CodedLinkType.APP_OAUTH2_LINK !== type) {
+      if (require(4120) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+        if (require(4120) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
+          const result = require(5922) /* makeStorefrontSKUCodedLink */.parseStorefrontSkuCodedLink(code);
           let tmp9 = null;
           if (null != result) {
             let obj = { type };
@@ -34,8 +34,8 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
             tmp9 = obj;
           }
           return tmp9;
-        } else if (require(4119) /* CodedLinkType */.CodedLinkType.ACTIVITY_BOOKMARK === type) {
-          obj = { type, applicationId: code, params: require(6932) /* extractActivityBookmarkParams */.extractActivityBookmarkParams(url) };
+        } else if (require(4120) /* CodedLinkType */.CodedLinkType.ACTIVITY_BOOKMARK === type) {
+          obj = { type, applicationId: code, params: require(5923) /* extractActivityBookmarkParams */.extractActivityBookmarkParams(url) };
           return obj;
         }
       }

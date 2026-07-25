@@ -1,9 +1,9 @@
-// Module ID: 5720
-// Function ID: 49178
+// Module ID: 5688
+// Function ID: 49127
 // Name: GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD
 // Dependencies: [2]
 
-// Module 5720 (GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD)
+// Module 5688 (GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD)
 const result = require("set").fileFinishedImporting("modules/guild_templates/GuildTemplatesConstants.tsx");
 
 export const GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD = 50;

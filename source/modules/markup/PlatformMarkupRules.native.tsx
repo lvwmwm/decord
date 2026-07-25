@@ -1,9 +1,9 @@
-// Module ID: 4592
-// Function ID: 40238
+// Module ID: 4593
+// Function ID: 40250
 // Name: decorateWithIcon
-// Dependencies: [27, 4593, 3771, 3829, 4572, 1392, 4573, 4576, 2]
+// Dependencies: [27, 4594, 3772, 3830, 4573, 1392, 4574, 4577, 2]
 
-// Module 4592 (decorateWithIcon)
+// Module 4593 (decorateWithIcon)
 import { Image } from "get ActivityIndicator";
 
 function decorateWithIcon(content) {
@@ -55,7 +55,7 @@ obj = {
           const json = JSON.stringify(match[0]);
           tmp3 = null;
         }
-        obj = importDefault(3771);
+        obj = importDefault(3772);
       }
       return tmp3;
     }
@@ -77,7 +77,7 @@ obj.text = {
       let obj = { content: arg0[0] };
       return obj;
     } else {
-      obj = importDefault(3771);
+      obj = importDefault(3772);
       const result = obj.maybeTranslateSurrogatesToInlineEmoji(arg0[0]);
       if (null == result) {
         obj = { content: arg0[0] };
@@ -94,7 +94,7 @@ obj.text = {
 };
 obj.emoji = {
   parse(content) {
-    let obj = importDefault(3771);
+    let obj = importDefault(3772);
     obj = { type: "emoji", content: content[0], surrogate: obj.convertNameToSurrogate(content[1]) };
     return obj;
   }
@@ -130,7 +130,7 @@ obj.customEmoji = {
 };
 obj.channelMention = {
   parse(arg0, arg1, arg2) {
-    const channelMention = importDefault(4573).channelMention;
+    const channelMention = importDefault(4574).channelMention;
     const parsed = channelMention.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -141,7 +141,7 @@ obj.channelMention = {
 };
 obj.channelOrMessageUrl = {
   parse(arg0, arg1, arg2) {
-    const channelOrMessageUrl = importDefault(4573).channelOrMessageUrl;
+    const channelOrMessageUrl = importDefault(4574).channelOrMessageUrl;
     const parsed = channelOrMessageUrl.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -152,7 +152,7 @@ obj.channelOrMessageUrl = {
 };
 obj.mediaPostLink = {
   parse(arg0, arg1, arg2) {
-    const mediaPostLink = importDefault(4573).mediaPostLink;
+    const mediaPostLink = importDefault(4574).mediaPostLink;
     const parsed = mediaPostLink.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -163,7 +163,7 @@ obj.mediaPostLink = {
 };
 obj.attachmentLink = {
   parse(arg0, arg1, arg2) {
-    const attachmentLink = importDefault(4576).attachmentLink;
+    const attachmentLink = importDefault(4577).attachmentLink;
     return attachmentLink.parse(arg0, arg1, arg2);
   }
 };

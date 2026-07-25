@@ -1,10 +1,10 @@
-// Module ID: 4649
-// Function ID: 40348
+// Module ID: 4650
+// Function ID: 40360
 // Name: AnnouncementsSpoilerIcon
-// Dependencies: [31, 33, 689, 3833, 4611, 2]
+// Dependencies: [31, 33, 689, 3834, 4612, 2]
 // Exports: AnnouncementsSpoilerIcon
 
-// Module 4649 (AnnouncementsSpoilerIcon)
+// Module 4650 (AnnouncementsSpoilerIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const AnnouncementsSpoilerIcon = function AnnouncementsSpoilerIcon(color)
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(4611) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(4612) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(4611) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(4612) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

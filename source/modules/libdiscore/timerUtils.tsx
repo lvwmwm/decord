@@ -1,10 +1,10 @@
-// Module ID: 16661
-// Function ID: 129886
+// Module ID: 16672
+// Function ID: 130054
 // Name: flushDelayLogs
-// Dependencies: [653, 3, 675, 574, 1848, 2]
+// Dependencies: [653, 3, 675, 574, 1849, 2]
 // Exports: setupLibdiscoreTimersMonitor
 
-// Module 16661 (flushDelayLogs)
+// Module 16672 (flushDelayLogs)
 import { AnalyticEvents } from "ME";
 import importDefaultResult from "debounce";
 
@@ -34,5 +34,5 @@ let closure_6 = require("debounce")(flushDelayLogs, 5000);
 let result = require("expandLocation").fileFinishedImporting("modules/libdiscore/timerUtils.tsx");
 
 export const setupLibdiscoreTimersMonitor = function setupLibdiscoreTimersMonitor() {
-  const result = importAll(1848).setTimersMonitorCallback(onTimersDelayCallback);
+  const result = importAll(1849).setTimersMonitorCallback(onTimersDelayCallback);
 };

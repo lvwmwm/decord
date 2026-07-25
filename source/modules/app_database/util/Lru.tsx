@@ -1,9 +1,9 @@
-// Module ID: 6713
-// Function ID: 52205
+// Module ID: 5709
+// Function ID: 49518
 // Name: Lru
 // Dependencies: [6, 7, 2]
 
-// Module 6713 (Lru)
+// Module 5709 (Lru)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

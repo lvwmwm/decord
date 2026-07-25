@@ -1,10 +1,10 @@
-// Module ID: 11615
-// Function ID: 90305
+// Module ID: 11582
+// Function ID: 90028
 // Name: Tier3OverrideNotice
-// Dependencies: [27, 33, 4130, 689, 4126, 11616, 11617, 1212, 2230, 11620, 2]
+// Dependencies: [27, 33, 4131, 689, 4127, 11583, 11584, 1212, 2231, 11587, 2]
 // Exports: default
 
-// Module 11615 (Tier3OverrideNotice)
+// Module 11582 (Tier3OverrideNotice)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -12,7 +12,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 let closure_4;
 let closure_5;
 function Tier3OverrideNotice(children) {
-  return callback(View, { style: callback2().staffContainer, children: callback(require(4126) /* Text */.Text, { variant: "text-sm/medium", children: children.text }) });
+  return callback(View, { style: callback2().staffContainer, children: callback(require(4127) /* Text */.Text, { variant: "text-sm/medium", children: children.text }) });
 }
 ({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 let obj = {};
@@ -25,14 +25,14 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp2 = importDefault(11616)(guildId);
-  const tmp3 = importDefault(11617)(guildId);
+  const tmp2 = importDefault(11583)(guildId);
+  const tmp3 = importDefault(11584)(guildId);
   if (tmp2.shouldShow) {
     let obj = { style: tmp.container };
     obj = { variant: "eyebrow", color: "text-subtle" };
     const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(importDefault(2230)["3FRirU"]);
-    const items = [callback(require(4126) /* Text */.Text, obj), , ];
+    obj.children = intl.string(importDefault(2231)["3FRirU"]);
+    const items = [callback(require(4127) /* Text */.Text, obj), , ];
     let shouldShow = tmp2.shouldShow;
     if (shouldShow) {
       obj = { text: tmp2.text };
@@ -43,7 +43,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     if (shouldShow2) {
       const obj1 = { guildId };
       ({ expiringPowerupNames: obj4.powerupNames, warnings: obj4.warnings } = tmp3);
-      shouldShow2 = callback(importDefault(11620), obj1);
+      shouldShow2 = callback(importDefault(11587), obj1);
     }
     items[2] = shouldShow2;
     obj.children = items;

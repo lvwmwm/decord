@@ -1,10 +1,10 @@
-// Module ID: 6242
-// Function ID: 50328
+// Module ID: 7162
+// Function ID: 59978
 // Name: GroupGamingSpotIllustration
-// Dependencies: [33, 5085, 6243, 2]
+// Dependencies: [33, 5085, 7163, 2]
 // Exports: GroupGamingSpotIllustration
 
-// Module 6242 (GroupGamingSpotIllustration)
+// Module 7162 (GroupGamingSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GroupGamingSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const GroupGamingSpotIllustration = function GroupGamingSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6243) };
+  obj = { uri: importDefault(7163) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

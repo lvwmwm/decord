@@ -1,9 +1,9 @@
-// Module ID: 12694
-// Function ID: 98630
+// Module ID: 12705
+// Function ID: 98757
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1917, 1838, 3767, 1849, 653, 4351, 1360, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1918, 1838, 3768, 1850, 653, 4352, 1360, 566, 686, 2]
 
-// Module 12694 (_isNativeReflectConstruct)
+// Module 12705 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import set from "set";
@@ -489,8 +489,8 @@ tmp2 = new tmp2(require("dispatcher"), {
             let tmp5 = null != tmp4;
             if (tmp5) {
               if (null == tmp4.messages[message.id]) {
-                prependRecord(guildId, require(4351) /* createMinimalMessageRecord */.createMessageRecord(message));
-                const obj = require(4351) /* createMinimalMessageRecord */;
+                prependRecord(guildId, require(4352) /* createMinimalMessageRecord */.createMessageRecord(message));
+                const obj = require(4352) /* createMinimalMessageRecord */;
               }
               tmp5 = tmp6;
             }
@@ -520,8 +520,8 @@ tmp2 = new tmp2(require("dispatcher"), {
         return false;
       } else if (null == message.author) {
         if (null != tmp22) {
-          updateMessage(guildId, id(4351).updateMessageRecord(tmp22, message));
-          const obj3 = id(4351);
+          updateMessage(guildId, id(4352).updateMessageRecord(tmp22, message));
+          const obj3 = id(4352);
         }
         return null != tmp22;
       } else {
@@ -533,8 +533,8 @@ tmp2 = new tmp2(require("dispatcher"), {
         const hasFlagResult = id(1360).hasFlag(num, MessageFlags.IS_GUILD_OFFICIAL);
         if (hasFlagResult) {
           if (null == tmp22) {
-            prependRecord(guildId, id(4351).createMessageRecord(message));
-            const obj2 = id(4351);
+            prependRecord(guildId, id(4352).createMessageRecord(message));
+            const obj2 = id(4352);
           }
         }
         if (!hasFlagResult) {
@@ -552,8 +552,8 @@ tmp2 = new tmp2(require("dispatcher"), {
         }
         if (hasFlagResult) {
           if (null != tmp22) {
-            updateMessage(guildId, id(4351).updateMessageRecord(tmp22, message));
-            let obj = id(4351);
+            updateMessage(guildId, id(4352).updateMessageRecord(tmp22, message));
+            let obj = id(4352);
           }
         }
         return false;

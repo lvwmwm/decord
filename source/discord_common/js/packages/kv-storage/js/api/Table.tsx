@@ -1,9 +1,9 @@
-// Module ID: 1887
-// Function ID: 21039
+// Module ID: 1888
+// Function ID: 21050
 // Name: prefixCell
-// Dependencies: [5, 6, 7, 1888, 1889, 2]
+// Dependencies: [5, 6, 7, 1889, 1890, 2]
 
-// Module 1887 (prefixCell)
+// Module 1888 (prefixCell)
 import set from "set";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
@@ -12,10 +12,10 @@ const require = arg1;
 function prefixCell(key, prefix) {
   let tmp = key;
   if (0 !== prefix.length) {
-    const obj = { key: require(1888) /* combineKey */.combineKey(prefix, key.key) };
+    const obj = { key: require(1889) /* combineKey */.combineKey(prefix, key.key) };
     ({ data: obj.data, generation: obj.generation } = key);
     tmp = obj;
-    const obj2 = require(1888) /* combineKey */;
+    const obj2 = require(1889) /* combineKey */;
   }
   return tmp;
 }

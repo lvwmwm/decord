@@ -1,9 +1,9 @@
-// Module ID: 13383
-// Function ID: 102642
+// Module ID: 13394
+// Function ID: 102769
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1881, 44, 7890, 664, 6691, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1882, 44, 7837, 664, 5685, 566, 686, 2]
 
-// Module 13383 (_isNativeReflectConstruct)
+// Module 13394 (_isNativeReflectConstruct)
 import invariant from "invariant";
 import _fetchMessageInteractionData from "_fetchMessageInteractionData";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -69,21 +69,21 @@ obj = {
   },
   INTERACTION_MODAL_CREATE: function handleInteractionModalCreate(nonce) {
     if (nonce.nonce === c12) {
-      importDefault(6691).deleteMessage(c11, c10, true);
+      importDefault(5685).deleteMessage(c11, c10, true);
       c10 = null;
       c11 = null;
       c12 = null;
-      const obj = importDefault(6691);
+      const obj = importDefault(5685);
     }
     return false;
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleInteractionIframeModalCreate(nonce) {
     if (nonce.nonce === c12) {
-      importDefault(6691).deleteMessage(c11, c10, true);
+      importDefault(5685).deleteMessage(c11, c10, true);
       c10 = null;
       c11 = null;
       c12 = null;
-      const obj = importDefault(6691);
+      const obj = importDefault(5685);
     }
     return false;
   },
@@ -94,11 +94,11 @@ obj = {
     ({ data, preflight } = nonce);
     let startTimeout;
     const interactionType = data.interactionType;
-    if (nonce(1881).InteractionTypes.APPLICATION_COMMAND === interactionType) {
+    if (nonce(1882).InteractionTypes.APPLICATION_COMMAND === interactionType) {
       const messageId = nonce.messageId;
       const channelId = data.channelId;
       return false;
-    } else if (nonce(1881).InteractionTypes.MODAL_SUBMIT === interactionType) {
+    } else if (nonce(1882).InteractionTypes.MODAL_SUBMIT === interactionType) {
       let tmp6 = null == nonce;
       if (!tmp6) {
         tmp6 = IN_FLIGHT === obj.ERRORED;

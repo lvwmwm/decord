@@ -1,10 +1,10 @@
-// Module ID: 4449
-// Function ID: 38957
+// Module ID: 4450
+// Function ID: 38968
 // Name: getChromeVersion
-// Dependencies: [4450, 2]
+// Dependencies: [4451, 2]
 // Exports: canUseWebp, isFirefox, supportsHEVCAlpha
 
-// Module 4449 (getChromeVersion)
+// Module 4450 (getChromeVersion)
 import { name } from "capitalize";
 
 function getChromeVersion() {

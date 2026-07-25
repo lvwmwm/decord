@@ -1,9 +1,9 @@
-// Module ID: 14079
-// Function ID: 107718
+// Module ID: 14090
+// Function ID: 107845
 // Name: PlayerState
-// Dependencies: [57, 31, 6943, 4976, 33, 14072, 10493, 9494, 3743, 13967, 14080, 6964, 8342, 14083, 1554, 10503, 9480, 14091, 2]
+// Dependencies: [57, 31, 5934, 4977, 33, 14083, 10427, 9415, 3744, 13978, 14091, 5955, 14094, 1554, 10437, 9401, 14102, 2]
 
-// Module 14079 (PlayerState)
+// Module 14090 (PlayerState)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _toPropertyKey from "_toPropertyKey";
@@ -148,22 +148,20 @@ const memoResult = importAllResult.memo((onLoad) => {
   if (null != url3) {
     str = "hls";
   }
-  const obj4 = onLoad(onToggleFullscreen[11]);
   const items2 = [id, gameTitle, targetSeconds, url1, videoTitle, str];
-  const rnvHttpEngine = onLoad(onToggleFullscreen[12]).useRnvHttpEngine();
   const effect = contentInsets.useEffect(() => {
     if (null != url1) {
       if (0 !== url1.length) {
         if (null != ref.current) {
-          let obj = onLoad(onToggleFullscreen[13]);
+          let obj = onLoad(onToggleFullscreen[12]);
           obj = { location: quest.VIDEO_MODAL_MOBILE };
           if (obj.getVideoQoEMetricsConfig(obj).externalAnalyticsEnabled) {
-            const constants = onLoad(onToggleFullscreen[14]).getConstants();
+            const constants = onLoad(onToggleFullscreen[13]).getConstants();
             obj = { videoRef: ref.current, feature: "quests" };
             ({ Version: obj4.appVersion, ReleaseChannel: obj4.releaseChannel } = constants);
             const obj1 = { contentId: url1, videoStreamType: "quests", contentType: "quests", durationMs: 1000 * targetSeconds, title: videoTitle, questId: id, gameName: gameTitle };
             obj.contentMetadata = obj1;
-            const MobileMuxWrapper = onLoad(onToggleFullscreen[13]).MobileMuxWrapper;
+            const MobileMuxWrapper = onLoad(onToggleFullscreen[12]).MobileMuxWrapper;
             const prototype = MobileMuxWrapper.prototype;
             const mobileMuxWrapper = new MobileMuxWrapper(obj);
             closure_27.current = mobileMuxWrapper;
@@ -256,17 +254,17 @@ const memoResult = importAllResult.memo((onLoad) => {
   const callback4 = contentInsets.useCallback((currentTime) => {
     closure_16.current = currentTime.currentTime;
     if (currentTime.currentTime >= ref.current) {
-      onLoad(onToggleFullscreen[15]).sendVideoProgress(quest, currentTime.currentTime);
+      onLoad(onToggleFullscreen[14]).sendVideoProgress(quest, currentTime.currentTime);
       handleProgressAnalytics(currentTime.progress, currentTime.seekableDuration, currentTime.currentTime);
       const _Math = Math;
       const sum = currentTime.currentTime + 6;
       ref.current = sum + 2 * Math.random();
-      const obj2 = onLoad(onToggleFullscreen[15]);
+      const obj2 = onLoad(onToggleFullscreen[14]);
     }
     if (currentTime.currentTime >= ref2.current) {
-      const result = onLoad(onToggleFullscreen[16]).updateOptimisticProgress(quest.id, questTaskDetails.taskType, currentTime.currentTime);
+      const result = onLoad(onToggleFullscreen[15]).updateOptimisticProgress(quest.id, questTaskDetails.taskType, currentTime.currentTime);
       ref2.current = currentTime.currentTime + 1;
-      const obj = onLoad(onToggleFullscreen[16]);
+      const obj = onLoad(onToggleFullscreen[15]);
     }
     _undefined(quest.id, currentTime.currentTime, currentTime.seekableDuration);
     const current = closure_27.current;
@@ -276,7 +274,7 @@ const memoResult = importAllResult.memo((onLoad) => {
   }, items6);
   const items8 = [handleLoadStartAnalytics];
   const callback5 = contentInsets.useCallback(() => {
-    onLoad(onToggleFullscreen[15]).sendVideoProgress(quest, first);
+    onLoad(onToggleFullscreen[14]).sendVideoProgress(quest, first);
     handleEndAnalytics();
     const current = closure_27.current;
     if (null != current) {
@@ -418,7 +416,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     obj.right = num4;
     obj.style = obj;
-    return questTaskDetails(onLoad(onToggleFullscreen[17]).VideoQuestCaptions, obj);
+    return questTaskDetails(onLoad(onToggleFullscreen[16]).VideoQuestCaptions, obj);
   }, items13);
   const memo2 = contentInsets.useMemo(() => {
     let tmp = null;
@@ -440,31 +438,31 @@ const memoResult = importAllResult.memo((onLoad) => {
   if (null == memo2) {
     return null;
   } else {
-    obj = { source: memo2, httpEngine: rnvHttpEngine, initialProgress: tmp15, contentDuration: targetSeconds, allowUnrestrictedSeeking: tmp4, disableResumeOnLoad: tmp4, style, isFullscreen, externallyPaused, contentInsets, renderCaptions: callback13, onLoadStart: callback6, onLoad: callback2, onReadyForDisplay: callback1, onSeek: callback3, onBuffer: callback12, onError: callback7, onEnd: callback5, onPlayerStateChange: callback, onResumePlayback: callback10, onPausePlayback: callback11, onProgress: callback4, onVideoTracks: callback8, onVideoLayout: callback9, videoRef: ref };
+    obj = { source: memo2, initialProgress: tmp15, contentDuration: targetSeconds, allowUnrestrictedSeeking: tmp4, disableResumeOnLoad: tmp4, style, isFullscreen, externallyPaused, contentInsets, renderCaptions: callback13, onLoadStart: callback6, onLoad: callback2, onReadyForDisplay: callback1, onSeek: callback3, onBuffer: callback12, onError: callback7, onEnd: callback5, onPlayerStateChange: callback, onResumePlayback: callback10, onPausePlayback: callback11, onProgress: callback4, onVideoTracks: callback8, onVideoLayout: callback9, videoRef: ref };
     let str2 = "top-left";
     if ("landscape" === orientation) {
       str2 = "center";
     }
     obj.bufferingSpinnerPlacement = str2;
     obj.captionsEnabled = flag;
-    let tmp43 = tmp45;
+    let tmp42 = tmp44;
     if ("landscape" === orientation) {
-      tmp43 = hasCaptionAsset;
+      tmp42 = hasCaptionAsset;
     }
-    obj.showCaptionsButton = tmp43;
-    let tmp44 = tmp45;
+    obj.showCaptionsButton = tmp42;
+    let tmp43 = tmp44;
     if ("landscape" === orientation) {
-      tmp44 = flag2;
+      tmp43 = flag2;
     }
-    obj.showTranscriptButton = tmp44;
+    obj.showTranscriptButton = tmp43;
     obj.showFullscreenButton = "landscape" === orientation;
     obj.showProgress = "landscape" === orientation;
     obj.onToggleCaptions = handleToggleCaptions;
     obj.onOpenTranscript = handleOpenTranscript;
-    obj.onToggleFullscreen = tmp42;
+    obj.onToggleFullscreen = tmp41;
     return questTaskDetails(onLoad(onToggleFullscreen[9]).AdVideoPlayer, obj);
   }
-  const obj5 = onLoad(onToggleFullscreen[12]);
+  const obj4 = onLoad(onToggleFullscreen[11]);
 });
 let result = require("_toPropertyKey").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayerRefactor.tsx");
 

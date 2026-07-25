@@ -1,9 +1,9 @@
-// Module ID: 7650
-// Function ID: 60840
+// Module ID: 7592
+// Function ID: 60764
 // Name: FormTextColors
-// Dependencies: [31, 33, 4130, 4973, 689, 1273, 2]
+// Dependencies: [31, 33, 4131, 4974, 689, 1273, 2]
 
-// Module 7650 (FormTextColors)
+// Module 7592 (FormTextColors)
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importAllResult from "result";
@@ -11,7 +11,7 @@ import importAllResult from "result";
 const require = arg1;
 let closure_3 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { color: require(4973) /* result */.DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+  obj = { color: require(4974) /* result */.DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
   obj.primary = obj;
   obj = {};
   let num = 16;

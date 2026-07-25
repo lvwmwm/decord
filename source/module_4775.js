@@ -1,14 +1,13 @@
 // Module ID: 4775
-// Function ID: 41489
+// Function ID: 41499
 // Dependencies: []
 
 // Module 4775
-let obj = { 5: "PentaxModelID", 555: "LevelInfo" };
-obj = {
-  name: "PentaxVersion",
-  description(join) {
-    return join.join(".");
+arg5.default = {
+  [4]: {
+    name: "ShotInfo",
+    description(arg0) {
+      return arg0;
+    }
   }
 };
-obj[0] = obj;
-arg5.default = obj;

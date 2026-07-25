@@ -1,10 +1,10 @@
-// Module ID: 9223
-// Function ID: 72161
+// Module ID: 9115
+// Function ID: 71646
 // Name: ChangeEmailWarning
-// Dependencies: [31, 27, 1849, 9221, 653, 33, 4130, 689, 1456, 566, 675, 668, 5807, 4126, 1212, 4543, 9217, 2]
+// Dependencies: [31, 27, 1850, 9113, 653, 33, 4131, 689, 1456, 566, 675, 668, 6727, 4127, 1212, 4544, 9109, 2]
 // Exports: default
 
-// Module 9223 (ChangeEmailWarning)
+// Module 9115 (ChangeEmailWarning)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,11 +45,11 @@ export default function ChangeEmailWarning(changeEmailReason) {
   if (null != stateFromStores) {
     obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
     obj = { style: tmp.container };
-    const items2 = [callback(changeEmailReason(5807).TrafficConeSpotIllustration, {}), , , ];
+    const items2 = [callback(changeEmailReason(6727).TrafficConeSpotIllustration, {}), , , ];
     obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
     const intl = changeEmailReason(1212).intl;
     obj1.children = intl.string(changeEmailReason(1212).t.hhR7gX);
-    items2[1] = callback(changeEmailReason(4126).Text, obj1);
+    items2[1] = callback(changeEmailReason(4127).Text, obj1);
     const obj2 = { style: tmp.body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary" };
     const intl2 = changeEmailReason(1212).intl;
     const obj3 = { hcArticle: closure_7 };
@@ -57,20 +57,20 @@ export default function ChangeEmailWarning(changeEmailReason) {
     const intl3 = changeEmailReason(1212).intl;
     items3[2] = intl3.string(changeEmailReason(1212).t["3LW10C"]);
     obj2.children = items3;
-    items2[2] = callback2(changeEmailReason(4126).Text, obj2);
+    items2[2] = callback2(changeEmailReason(4127).Text, obj2);
     const obj4 = { style: tmp.buttonContainer };
     const obj5 = { size: "md", variant: "tertiary", text: null, onPress: null, shrink: true };
     const intl4 = changeEmailReason(1212).intl;
     obj5.text = intl4.string(changeEmailReason(1212).t.rwTBFs);
     obj5.onPress = tmp4;
-    const items4 = [callback(changeEmailReason(4543).Button, obj5), ];
+    const items4 = [callback(changeEmailReason(4544).Button, obj5), ];
     const obj6 = { size: "md", variant: "primary", text: null, onPress: null, shrink: true };
     const intl5 = changeEmailReason(1212).intl;
     obj6.text = intl5.string(changeEmailReason(1212).t["ETE/oC"]);
     obj6.onPress = function onPress() {
       return navigation(outer1_2[16]).close();
     };
-    items4[1] = callback(changeEmailReason(4543).Button, obj6);
+    items4[1] = callback(changeEmailReason(4544).Button, obj6);
     obj4.children = items4;
     items2[3] = callback2(closure_4, obj4);
     obj.children = items2;

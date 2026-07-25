@@ -1,10 +1,10 @@
-// Module ID: 10414
-// Function ID: 80265
+// Module ID: 10347
+// Function ID: 79918
 // Name: setPushToTalkState
-// Dependencies: [4177, 4191, 686, 2]
+// Dependencies: [4178, 4192, 686, 2]
 // Exports: setPushToTalkState
 
-// Module 10414 (setPushToTalkState)
+// Module 10347 (setPushToTalkState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MediaEngineContextTypes } from "DesktopSources";
 

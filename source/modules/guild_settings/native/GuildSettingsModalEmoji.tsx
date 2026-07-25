@@ -1,10 +1,10 @@
-// Module ID: 16298
-// Function ID: 126856
+// Module ID: 16309
+// Function ID: 127024
 // Name: computeSectionItem
-// Dependencies: [57, 31, 27, 1838, 16299, 33, 22, 9427, 4130, 689, 1212, 4996, 4022, 566, 8446, 4126, 16301, 16305, 1273, 16306, 5584, 5448, 1456, 5087, 2]
+// Dependencies: [57, 31, 27, 1838, 16310, 33, 22, 9347, 4131, 689, 1212, 4997, 4023, 566, 8204, 4127, 16312, 16316, 1273, 16317, 5584, 5448, 1456, 5087, 2]
 // Exports: default
 
-// Module 16298 (computeSectionItem)
+// Module 16309 (computeSectionItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -213,8 +213,8 @@ let closure_14 = require("useNavigation").memoize((arr, stateFromStores) => {
   const found = arr.filter((roles) => !stateFromStores(outer1_2[11]).isRoleSubscriptionEmoji(roles, stateFromStores.id));
   const mapped = found.map(computeEmojiItem);
   const reversed = mapped.reverse();
-  const maxEmojiSlots = _require(4022).getMaxEmojiSlots(stateFromStores);
-  const obj2 = _require(4022);
+  const maxEmojiSlots = _require(4023).getMaxEmojiSlots(stateFromStores);
+  const obj2 = _require(4023);
   const tmp3 = callback(importDefault(22).partition(reversed, (emoji) => !emoji.emoji.animated), 2);
   const first = tmp3[0];
   const intl = _require(1212).intl;

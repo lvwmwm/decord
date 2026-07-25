@@ -1,10 +1,10 @@
-// Module ID: 13912
-// Function ID: 106429
+// Module ID: 13923
+// Function ID: 106556
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [31, 27, 5066, 1194, 4812, 1921, 653, 33, 4130, 689, 4066, 566, 12145, 5470, 4938, 4098, 13911, 1934, 9009, 13913, 7636, 13916, 4541, 13917, 2]
+// Dependencies: [31, 27, 5067, 1194, 4813, 1922, 653, 33, 4131, 689, 4067, 566, 12121, 5470, 4939, 4099, 13922, 1935, 8897, 13924, 7575, 13927, 4542, 13928, 2]
 // Exports: UserSettingsConnections
 
-// Module 13912 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 13923 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import result from "result";
 import { ActivityIndicator } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   let fetching;
   selectedPlatformType = selectedPlatformType.selectedPlatformType;
   const tmp = _createForOfIteratorHelperLoose();
-  importDefault = importDefault(4066)();
+  importDefault = importDefault(4067)();
   let obj = selectedPlatformType(566);
   const items = [closure_9];
   const dependencyMap = obj.useStateFromStores(items, () => outer1_9.locale);
@@ -45,7 +45,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   const authorizedAppsFetchState = stateFromStoresObject1.authorizedAppsFetchState;
   const authorizedApps = stateFromStoresObject1.authorizedApps;
   const obj3 = selectedPlatformType(566);
-  const tmp4Result = importDefault(12145)(id.getId(), { includeHidden: true });
+  const tmp4Result = importDefault(12121)(id.getId(), { includeHidden: true });
   const prop = tmp4Result.filteredAppIdentities;
   const items3 = [authorizedAppsFetchState];
   const effect = authorizedAppsFetchState.useEffect(() => {
@@ -73,7 +73,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (!tmp4Result.isLoading) {
       if (0 === accounts.length) {
         if (0 === prop.length) {
-          let tmp13 = callback(importDefault(13913), {});
+          let tmp13 = callback(importDefault(13924), {});
         }
       }
       obj = { style: tmp.form };
@@ -86,9 +86,9 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
 
       ];
       obj = { spacing: 16, children: accounts.map((account) => outer1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id)) };
-      items5[1] = callback(selectedPlatformType(4541).Stack, obj);
+      items5[1] = callback(selectedPlatformType(4542).Stack, obj);
       obj.children = items5;
-      tmp13 = callback2(selectedPlatformType(7636).Form, obj);
+      tmp13 = callback2(selectedPlatformType(7575).Form, obj);
     }
     return tmp13;
   }

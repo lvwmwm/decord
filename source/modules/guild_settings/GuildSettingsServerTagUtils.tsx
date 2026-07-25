@@ -1,10 +1,10 @@
-// Module ID: 8485
-// Function ID: 67593
+// Module ID: 8245
+// Function ID: 66247
 // Name: canUseMobileServerTagSettings
-// Dependencies: [1838, 3758, 653, 8486, 7934, 2]
+// Dependencies: [1838, 3759, 653, 8246, 7881, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 8485 (canUseMobileServerTagSettings)
+// Module 8245 (canUseMobileServerTagSettings)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
@@ -19,7 +19,7 @@ export const canUseMobileServerTagSettings = function canUseMobileServerTagSetti
     enabled = _isNativeReflectConstruct.can(Permissions.MANAGE_GUILD, guild);
   }
   if (enabled) {
-    let obj = importDefault(8486);
+    let obj = importDefault(8246);
     obj = { location: "GuildSettingsServerTag" };
     enabled = obj.getConfig(obj).enabled;
   }
@@ -29,17 +29,17 @@ export const canViewMobileServerTag = function canViewMobileServerTag(id) {
   const guild = store.getGuild(id);
   let enabled = null != guild;
   if (enabled) {
-    let obj = require(7934) /* getUserPrimaryGuild */;
+    let obj = require(7881) /* getUserPrimaryGuild */;
     enabled = obj.guildSupportsTags(guild);
   }
   if (enabled) {
-    enabled = require(7934) /* getUserPrimaryGuild */.guildHasTag(guild);
-    const obj2 = require(7934) /* getUserPrimaryGuild */;
+    enabled = require(7881) /* getUserPrimaryGuild */.guildHasTag(guild);
+    const obj2 = require(7881) /* getUserPrimaryGuild */;
   }
   if (enabled) {
     obj = { location: "GuildSettingsServerTag" };
-    enabled = importDefault(8486).getConfig(obj).enabled;
-    const obj3 = importDefault(8486);
+    enabled = importDefault(8246).getConfig(obj).enabled;
+    const obj3 = importDefault(8246);
   }
   return enabled;
 };

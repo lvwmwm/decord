@@ -1,9 +1,9 @@
-// Module ID: 8724
-// Function ID: 68969
+// Module ID: 8612
+// Function ID: 68444
 // Name: extraWishlistParams
-// Dependencies: [5, 6855, 1849, 3778, 5610, 8719, 653, 478, 1327, 686, 5613, 507, 8717, 1184, 4029, 675, 7976, 2]
+// Dependencies: [5, 5630, 1850, 3779, 5610, 8607, 653, 478, 1327, 686, 5613, 507, 8605, 1184, 4030, 675, 5656, 2]
 
-// Module 8724 (extraWishlistParams)
+// Module 8612 (extraWishlistParams)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

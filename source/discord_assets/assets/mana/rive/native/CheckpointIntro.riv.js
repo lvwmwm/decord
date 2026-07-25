@@ -1,9 +1,9 @@
-// Module ID: 3922
-// Function ID: 32392
+// Module ID: 3923
+// Function ID: 32403
 // Name: metadata
 // Dependencies: [2]
 
-// Module 3922 (metadata)
+// Module 3923 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/CheckpointIntro.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/e0cd8a4e248b2ae735ec79c112f0d040560e50258af89293c3d60ce5a159f163.riv";

@@ -1,10 +1,10 @@
-// Module ID: 7414
-// Function ID: 59594
+// Module ID: 6490
+// Function ID: 58015
 // Name: createSubscriptionInvoicePreview
-// Dependencies: [29, 57, 5, 31, 3785, 653, 3776, 507, 686, 4029, 44, 4369, 2]
+// Dependencies: [29, 57, 5, 31, 3786, 653, 3777, 507, 686, 4030, 44, 4370, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 7414 (createSubscriptionInvoicePreview)
+// Module 6490 (createSubscriptionInvoicePreview)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";

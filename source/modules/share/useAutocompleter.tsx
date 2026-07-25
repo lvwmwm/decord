@@ -1,10 +1,10 @@
-// Module ID: 9920
-// Function ID: 76766
+// Module ID: 9848
+// Function ID: 76379
 // Name: useAutocompleter
-// Dependencies: [57, 31, 5450, 7093, 2]
+// Dependencies: [57, 31, 5450, 6111, 2]
 // Exports: default
 
-// Module 9920 (useAutocompleter)
+// Module 9848 (useAutocompleter)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

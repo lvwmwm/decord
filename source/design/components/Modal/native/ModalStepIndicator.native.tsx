@@ -1,10 +1,10 @@
-// Module ID: 13139
-// Function ID: 101162
+// Module ID: 13150
+// Function ID: 101289
 // Name: StepPill
-// Dependencies: [31, 27, 33, 4130, 689, 3991, 3834, 4542, 1212, 1936, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3992, 3835, 4543, 1212, 1937, 2]
 // Exports: ModalStepIndicator
 
-// Module 13139 (StepPill)
+// Module 13150 (StepPill)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -103,12 +103,12 @@ export const ModalStepIndicator = function ModalStepIndicator(arg0) {
       return <View style={tmp.container}>{items}</View>;
     } else {
       const intl = require(1212) /* getSystemLocale */.intl;
-      const obj1 = { accessible: true, accessibilityRole: "progressbar", accessibilityLabel: intl.string(importDefault(1936).KUwsC0), accessibilityValue: null, importantForAccessibility: "yes" };
+      const obj1 = { accessible: true, accessibilityRole: "progressbar", accessibilityLabel: intl.string(importDefault(1937).KUwsC0), accessibilityValue: null, importantForAccessibility: "yes" };
       const obj2 = { min: 1, max: totalSteps, now: currentStep + 1 };
       obj1.accessibilityValue = obj2;
       obj1.style = tmp.container;
       obj1.children = items;
-      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(importDefault(1936).KUwsC0)} accessibilityValue={null} importantForAccessibility="yes" />;
+      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(importDefault(1937).KUwsC0)} accessibilityValue={null} importantForAccessibility="yes" />;
     }
   }
 };

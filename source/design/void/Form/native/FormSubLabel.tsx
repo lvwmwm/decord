@@ -1,7 +1,7 @@
 // Module ID: 5178
-// Function ID: 45013
+// Function ID: 45018
 // Name: FormSubLabel
-// Dependencies: [31, 33, 4126, 2]
+// Dependencies: [31, 33, 4127, 2]
 // Exports: default
 
 // Module 5178 (FormSubLabel)
@@ -22,5 +22,5 @@ export default function FormSubLabel(color) {
     str = "text-subtle";
   }
   const obj = { color: str, variant: "text-xs/normal", lineClamp: numberOfLines, style, accessible, children: text };
-  return jsx(require(4126) /* Text */.Text, { color: str, variant: "text-xs/normal", lineClamp: numberOfLines, style, accessible, children: text });
+  return jsx(require(4127) /* Text */.Text, { color: str, variant: "text-xs/normal", lineClamp: numberOfLines, style, accessible, children: text });
 };

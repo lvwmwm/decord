@@ -1,10 +1,10 @@
-// Module ID: 13951
-// Function ID: 106632
+// Module ID: 13962
+// Function ID: 106759
 // Name: QuestHomeHeaderTitle
-// Dependencies: [31, 27, 4976, 653, 655, 33, 4130, 689, 13948, 4126, 1212, 8764, 4098, 9830, 1934, 675, 5482, 6773, 9818, 13952, 7534, 13953, 1456, 12241, 2]
+// Dependencies: [31, 27, 4977, 653, 655, 33, 4131, 689, 13959, 4127, 1212, 8652, 4099, 9754, 1935, 675, 5482, 5769, 9742, 13963, 6626, 13964, 1456, 12217, 2]
 // Exports: default
 
-// Module 13951 (QuestHomeHeaderTitle)
+// Module 13962 (QuestHomeHeaderTitle)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { QuestHomeSortMethods } from "QuestsExperimentLocations";
@@ -19,11 +19,11 @@ const require = arg1;
 function QuestHomeHeaderTitle() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.headerTitleContainer };
-  const items = [callback(require(13948) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(13959) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.JALI2K);
-  items[1] = callback(require(4126) /* Text */.Heading, obj);
+  items[1] = callback(require(4127) /* Text */.Heading, obj);
   obj.children = items;
   return callback2(View, obj);
 }
@@ -32,13 +32,13 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let obj = Object.create(null);
   obj.isVirtualCurrencyEnabled = 0;
   const merged = Object.assign(isVirtualCurrencyEnabled, obj);
-  obj = balance(8764);
+  obj = balance(8652);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   obj = { style: _createForOfIteratorHelperLoose().headerRightContainer };
   if (isVirtualCurrencyEnabled) {
     let obj1 = { balance, onPress: tmp4 };
-    isVirtualCurrencyEnabled = callback(balance(9818).BalanceWidgetPillButton, obj1);
+    isVirtualCurrencyEnabled = callback(balance(9742).BalanceWidgetPillButton, obj1);
   }
   let items = [isVirtualCurrencyEnabled, ];
   const merged1 = Object.assign(merged);

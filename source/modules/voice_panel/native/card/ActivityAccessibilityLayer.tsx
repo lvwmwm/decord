@@ -1,10 +1,10 @@
-// Module ID: 15873
-// Function ID: 122562
+// Module ID: 15884
+// Function ID: 122731
 // Name: FocusedActivityAccessibilityLayer
-// Dependencies: [57, 31, 27, 10047, 33, 4130, 4539, 1212, 4525, 4528, 2]
+// Dependencies: [57, 31, 27, 9976, 33, 4131, 4540, 1212, 4526, 4529, 2]
 // Exports: default
 
-// Module 15873 (FocusedActivityAccessibilityLayer)
+// Module 15884 (FocusedActivityAccessibilityLayer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -92,7 +92,7 @@ export default function ActivityAccessibilityLayer(isActivityFocused) {
   let obj = Object.create(null);
   obj.isActivityFocused = 0;
   const merged = Object.assign(isActivityFocused, obj);
-  obj = require(4528) /* SCREEN_READER_ENABLED_GETTER */;
+  obj = require(4529) /* SCREEN_READER_ENABLED_GETTER */;
   if (IS_IOS) {
     if (obj.useIsScreenReaderEnabled()) {
       if (isActivityFocused.isActivityFocused) {

@@ -1,7 +1,7 @@
 // Module ID: 12053
-// Function ID: 93718
+// Function ID: 93788
 // Name: cached
-// Dependencies: [12039]
+// Dependencies: [12015]
 
 // Module 12053 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "Zeichen", verb: "zu haben" }, file: { unit: "Bytes", verb: "zu haben" }, array: { unit: "Elemente", verb: "zu haben" }, set: { unit: "Elemente", verb: "zu haben" } };
-      let closure_1 = { regex: "Eingabe", email: "E-Mail-Adresse", url: "URL", emoji: "Emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO-Datum und -Uhrzeit", date: "ISO-Datum", time: "ISO-Uhrzeit", duration: "ISO-Dauer", ipv4: "IPv4-Adresse", ipv6: "IPv6-Adresse", cidrv4: "IPv4-Bereich", cidrv6: "IPv6-Bereich", base64: "Base64-codierter String", base64url: "Base64-URL-codierter String", json_string: "JSON-String", e164: "E.164-Nummer", jwt: "JWT", template_literal: "Eingabe" };
-      let closure_2 = { nan: "NaN", number: "Zahl", array: "Array" };
+      let closure_0 = { string: { unit: "harf", verb: "olmal\u0131d\u0131r" }, file: { unit: "bayt", verb: "olmal\u0131d\u0131r" }, array: { unit: "unsur", verb: "olmal\u0131d\u0131r" }, set: { unit: "unsur", verb: "olmal\u0131d\u0131r" } };
+      let closure_1 = { regex: "giren", email: "epostag\u00E2h", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO heng\u00E2m\u0131", date: "ISO tarihi", time: "ISO zaman\u0131", duration: "ISO m\u00FCddeti", ipv4: "IPv4 ni\u015F\u00E2n\u0131", ipv6: "IPv6 ni\u015F\u00E2n\u0131", cidrv4: "IPv4 menzili", cidrv6: "IPv6 menzili", base64: "base64-\u015Fifreli metin", base64url: "base64url-\u015Fifreli metin", json_string: "JSON metin", e164: "E.164 say\u0131s\u0131", jwt: "JWT", template_literal: "giren" };
+      let closure_2 = { nan: "NaN", number: "numara", array: "saf", null: "gayb" };
       return (code) => {
         let minimum;
         let origin;
@@ -82,113 +82,112 @@ if (self2) {
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "Ung\u00FCltige Eingabe: erwartet instanceof " + code.expected + ", erhalten " + tmp51;
+            let combined = "F\u00E2sit giren: umulan instanceof " + code.expected + ", al\u0131nan " + tmp51;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "Ung\u00FCltige Eingabe: erwartet " + expected + ", erhalten " + tmp51;
+            combined = "F\u00E2sit giren: umulan " + expected + ", al\u0131nan " + tmp51;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Ung\u00FCltige Eingabe: erwartet " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "F\u00E2sit giren: umulan " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "Ung\u00FCltige Option: erwartet eine von " + closure_2.joinValues(code.values, "|");
+            combined1 = "F\u00E2sit tercih: m\u00FBteberler " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str33 = "<";
+          let str35 = "<";
           if (code.inclusive) {
-            str33 = "<=";
+            str35 = "<=";
           }
           const tmp26 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str34 = "Wert";
+          let str36 = "value";
           if (tmp26) {
             if (tmp28) {
-              str34 = origin2;
+              str36 = origin2;
             }
             let str = code.maximum.toString();
             const unit = tmp26.unit;
-            let str40 = "Elemente";
+            let str42 = "elements";
             if (null != unit) {
-              str40 = unit;
+              str42 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Zu gro\u00DF: erwartet, dass " + str34 + " " + str33 + str + " " + str40 + " hat";
-            const str39 = code.maximum;
+            let combined2 = "Fazla b\u00FCy\u00FCk: " + str36 + ", " + str35 + str + " " + str42 + " sahip olmal\u0131yd\u0131.";
+            const str41 = code.maximum;
           } else {
-            let tmp29 = str34;
+            let tmp29 = str36;
             if (tmp28) {
               tmp29 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Zu gro\u00DF: erwartet, dass " + tmp29 + " " + str33 + code.maximum.toString() + " ist";
-            const str35 = code.maximum;
+            combined2 = "Fazla b\u00FCy\u00FCk: " + tmp29 + ", " + str35 + code.maximum.toString() + " olmal\u0131yd\u0131.";
+            const str37 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str24 = ">";
+          let str27 = ">";
           if (code.inclusive) {
-            str24 = ">=";
+            str27 = ">=";
           }
           const tmp15 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
           if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Zu klein: erwartet, dass " + origin + " " + str24 + str1 + " " + tmp15.unit + " hat";
+            let combined3 = "Fazla k\u00FC\u00E7\u00FCk: " + origin + ", " + str27 + str1 + " " + tmp15.unit + " sahip olmal\u0131yd\u0131.";
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Zu klein: erwartet, dass " + origin + " " + str24 + str1 + " ist";
+            combined3 = "Fazla k\u00FC\u00E7\u00FCk: " + origin + ", " + str27 + str1 + " olmal\u0131yd\u0131.";
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Ung\u00FCltiger String: muss mit \"" + code.prefix + "\" beginnen";
+            let combined4 = "F\u00E2sit metin: \"" + code.prefix + "\" ile ba\u015Flamal\u0131.";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Ung\u00FCltiger String: muss mit \"" + code.suffix + "\" enden";
+            combined4 = "F\u00E2sit metin: \"" + code.suffix + "\" ile bitmeli.";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Ung\u00FCltiger String: muss \"" + code.includes + "\" enthalten";
+            combined4 = "F\u00E2sit metin: \"" + code.includes + "\" ihtiv\u00E2 etmeli.";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Ung\u00FCltiger String: muss dem Muster " + code.pattern + " entsprechen";
+            combined4 = "F\u00E2sit metin: " + code.pattern + " nak\u015F\u0131na uymal\u0131.";
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "Ung\u00FCltig: " + format;
+            combined4 = "F\u00E2sit " + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "Ung\u00FCltige Zahl: muss ein Vielfaches von " + code.divisor + " sein";
+          return "F\u00E2sit say\u0131: " + code.divisor + " kat\u0131 olmal\u0131yd\u0131.";
         } else if ("unrecognized_keys" === code) {
-          let str7 = "Unbekannter Schl\u00FCssel";
+          let str10 = "";
           if (code.keys.length > 1) {
-            str7 = "Unbekannte Schl\u00FCssel";
+            str10 = "s";
           }
           const _HermesInternal3 = HermesInternal;
-          return "" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "Tan\u0131nmayan anahtar " + str10 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Ung\u00FCltiger Schl\u00FCssel in " + code.origin;
+            return "" + code.origin + " i\u00E7in tan\u0131nmayan anahtar var.";
+          } else if ("invalid_union" === code) {
+            return "Giren tan\u0131namad\u0131.";
+          } else if ("invalid_element" === code) {
+            const _HermesInternal = HermesInternal;
+            return "" + code.origin + " i\u00E7in tan\u0131nmayan k\u0131ymet var.";
           } else {
-            if ("invalid_union" !== code) {
-              if ("invalid_element" === code) {
-                const _HermesInternal = HermesInternal;
-                return "Ung\u00FCltiger Wert in " + code.origin;
-              }
-            }
-            return "Ung\u00FCltige Eingabe";
+            return "K\u0131ymet tan\u0131namad\u0131.";
           }
         }
       };

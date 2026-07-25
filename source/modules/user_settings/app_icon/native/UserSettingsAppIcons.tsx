@@ -1,8 +1,8 @@
-// Module ID: 14409
-// Function ID: 110123
-// Dependencies: [5, 31, 27, 1849, 653, 7444, 33, 4130, 566, 7443, 1872, 5462, 7445, 8028, 7636, 14410, 8605, 8183, 8059, 1212, 2]
+// Module ID: 14420
+// Function ID: 110250
+// Dependencies: [5, 31, 27, 1850, 653, 6526, 33, 4131, 566, 6525, 1873, 5462, 6527, 6137, 7575, 14421, 8365, 9253, 9254, 1212, 2]
 
-// Module 14409
+// Module 14420
 import getDefaultIcon from "getDefaultIcon";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,9 +30,9 @@ const memoResult = require("result").memo(() => {
   let obj = stateFromStores(566);
   const items = [_onSelect];
   stateFromStores = obj.useStateFromStores(items, () => _onSelect.getCurrentUser());
-  let obj1 = stateFromStores(7443);
+  let obj1 = stateFromStores(6525);
   const importDefault = obj1.useCurrentAppIcon();
-  let obj2 = stateFromStores(1872);
+  let obj2 = stateFromStores(1873);
   const isPremiumResult = obj2.isPremium(stateFromStores);
   const dependencyMap = isPremiumResult;
   const analyticsLocations = importDefault(5462)().analyticsLocations;
@@ -41,14 +41,14 @@ const memoResult = require("result").memo(() => {
   obj1 = {};
   obj2 = {
     accessibilityRole: "radiogroup",
-    children: callback(importDefault(14410), {
+    children: callback(importDefault(14421), {
       onSelect(arg0) {
         return _onSelect(...arguments);
       }
     })
   };
   obj1.children = callback(obj, obj2);
-  const items1 = [callback(stateFromStores(7636).Form, obj1), ];
+  const items1 = [callback(stateFromStores(7575).Form, obj1), ];
   let tmp6 = !isPremiumResult;
   if (tmp6) {
     const obj4 = { style: tmp.upsellButtonContainer };
@@ -60,9 +60,9 @@ const memoResult = require("result").memo(() => {
     };
     const intl = stateFromStores(1212).intl;
     obj5.text = intl.string(stateFromStores(1212).t.M0rDSO);
-    obj4.children = callback(importDefault(8605), obj5);
+    obj4.children = callback(importDefault(8365), obj5);
     tmp6 = callback(obj, obj4);
-    const tmp11 = importDefault(8605);
+    const tmp11 = importDefault(8365);
   }
   items1[1] = tmp6;
   obj.children = items1;

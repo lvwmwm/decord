@@ -1,10 +1,10 @@
-// Module ID: 11833
-// Function ID: 91861
+// Module ID: 11809
+// Function ID: 91666
 // Name: getSelectedSpecialNavigationPath
-// Dependencies: [653, 3958, 2]
+// Dependencies: [653, 3959, 2]
 // Exports: useSelectedSpecialNavigationPath
 
-// Module 11833 (getSelectedSpecialNavigationPath)
+// Module 11809 (getSelectedSpecialNavigationPath)
 import { Routes } from "ME";
 
 function getSelectedSpecialNavigationPath(pathname) {
@@ -18,5 +18,5 @@ const result = require("set").fileFinishedImporting("modules/navbars/native/Navi
 export const SpecialNavigationPath = obj;
 export { getSelectedSpecialNavigationPath };
 export const useSelectedSpecialNavigationPath = function useSelectedSpecialNavigationPath() {
-  return getSelectedSpecialNavigationPath(require(3958) /* _extends */.useLocation());
+  return getSelectedSpecialNavigationPath(require(3959) /* _extends */.useLocation());
 };

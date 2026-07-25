@@ -1,11 +1,11 @@
-// Module ID: 7223
-// Function ID: 58232
+// Module ID: 6295
+// Function ID: 56680
 // Name: productSK2ToIAPProduct
-// Dependencies: [5, 6, 7, 27, 3811, 5617, 7204, 2]
+// Dependencies: [5, 6, 7, 27, 3812, 5617, 6276, 2]
 
-// Module 7223 (productSK2ToIAPProduct)
+// Module 6295 (productSK2ToIAPProduct)
 import CurrencyCodes from "CurrencyCodes";
-import module_7204 from "module_7204";
+import module_6276 from "module_6276";
 import set from "set";
 import { convertToAlpha2 } from "getCountryCodeByCountryName";
 

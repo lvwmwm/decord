@@ -1,5 +1,5 @@
 // Module ID: 5078
-// Function ID: 44190
+// Function ID: 44198
 // Name: AutomaticLifecycleManager
 // Dependencies: [6, 7, 686, 2]
 

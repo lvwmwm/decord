@@ -1,10 +1,10 @@
-// Module ID: 9924
-// Function ID: 76783
+// Module ID: 9852
+// Function ID: 76396
 // Name: NoResults
-// Dependencies: [31, 27, 33, 4130, 4126, 2]
+// Dependencies: [31, 27, 33, 4131, 4127, 2]
 // Exports: default
 
-// Module 9924 (NoResults)
+// Module 9852 (NoResults)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -56,11 +56,11 @@ export default function NoResults(illustration) {
   const items2 = [tmp6, ];
   const obj1 = { style: tmp.textContainer };
   const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title };
-  const items3 = [callback(require(4126) /* Text */.Text, obj2), ];
+  const items3 = [callback(require(4127) /* Text */.Text, obj2), ];
   let tmp11 = null;
   if (null != subtitle) {
     const obj3 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp.text, children: subtitle };
-    tmp11 = callback(require(4126) /* Text */.Text, obj3);
+    tmp11 = callback(require(4127) /* Text */.Text, obj3);
   }
   items3[1] = tmp11;
   obj1.children = items3;

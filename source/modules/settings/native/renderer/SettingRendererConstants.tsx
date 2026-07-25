@@ -1,9 +1,9 @@
-// Module ID: 10128
-// Function ID: 78389
+// Module ID: 10060
+// Function ID: 78019
 // Name: GUILD_SELECT_ALL_SERVERS_OPTION_ID
 // Dependencies: [2]
 
-// Module 10128 (GUILD_SELECT_ALL_SERVERS_OPTION_ID)
+// Module 10060 (GUILD_SELECT_ALL_SERVERS_OPTION_ID)
 import set from "set";
 
 const obj = { ROUTE: "route", PRESSABLE: "pressable", TOGGLE: "toggle", STATIC: "static", RADIO: "radio", VOLUME_SLIDER: "volume_slider", SLIDER: "slider", GUILD_SELECTOR: "guild_selector", LIST: "list", SEGMENTED_CONTROL: "segmented_control" };

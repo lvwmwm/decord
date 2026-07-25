@@ -1,9 +1,9 @@
-// Module ID: 15056
-// Function ID: 114635
+// Module ID: 15066
+// Function ID: 114762
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4122, 1348, 6878, 4142, 4325, 10289, 4326, 33, 4130, 6760, 4549, 7677, 14049, 574, 620, 566, 3991, 15030, 7423, 4099, 4100, 15057, 2]
+// Dependencies: [57, 31, 27, 4123, 1348, 5868, 4143, 4326, 10222, 4327, 33, 4131, 5753, 4550, 7619, 14060, 574, 620, 566, 3992, 15040, 6504, 4100, 4101, 15067, 2]
 
-// Module 15056 (_createForOfIteratorHelperLoose)
+// Module 15066 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -100,8 +100,8 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function shouldSkipSection(section) {
-  if (require(6760) /* _superPropGet */.SECTION_INDEX_CHANNEL_NOTICES !== section) {
-    if (require(6760) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS !== section) {
+  if (require(5753) /* _superPropGet */.SECTION_INDEX_CHANNEL_NOTICES !== section) {
+    if (require(5753) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS !== section) {
       return false;
     }
   }
@@ -183,7 +183,7 @@ function findNearestUnreadItem(containerSize, id) {
     return closure_17;
   } else {
     const scrollPosValue = containerSize.scrollPosValue;
-    const result = getScaledChannelRowHeight(require(4549) /* getFontScale */.getFontScale()) / 2;
+    const result = getScaledChannelRowHeight(require(4550) /* getFontScale */.getFontScale()) / 2;
     let value = scrollPosValue.get();
     const item = containerSize.getSectionItemFromPosition(arg2 + value + result).item;
     let layoutStart;
@@ -216,7 +216,7 @@ function findNearestUnreadItem(containerSize, id) {
         } else {
           let tmp64 = require;
           let tmp65 = dependencyMap;
-          if (value.type === require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
+          if (value.type === require(7619) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
             tmp13 = tmp12;
             if (value.layoutStart > diff) {
               break;
@@ -227,7 +227,7 @@ function findNearestUnreadItem(containerSize, id) {
               let tmp17 = require;
               let tmp18 = dependencyMap;
               tmp14 = value;
-              if (value.type === require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
+              if (value.type === require(7619) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
                 let tmp19 = shouldSkipSection;
                 tmp14 = tmp12;
                 if (!shouldSkipSection(value.section)) {

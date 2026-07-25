@@ -1,7 +1,7 @@
 // Module ID: 5584
-// Function ID: 47413
+// Function ID: 47418
 // Name: ActivityIndicator
-// Dependencies: [27, 33, 3834, 689, 2]
+// Dependencies: [27, 33, 3835, 689, 2]
 // Exports: ActivityIndicator
 
 // Module 5584 (ActivityIndicator)
@@ -23,7 +23,7 @@ export const ActivityIndicator = function ActivityIndicator(size) {
   obj.size = 0;
   obj.animating = 0;
   const merged = Object.assign(size, obj);
-  obj = require(3834) /* map */;
+  obj = require(3835) /* map */;
   let token = obj.useToken(importDefault(689).colors.BACKGROUND_BRAND);
   const color = merged.color;
   if (null != color) {

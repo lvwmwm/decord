@@ -1,10 +1,10 @@
-// Module ID: 15470
-// Function ID: 118892
+// Module ID: 15480
+// Function ID: 119020
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [31, 27, 653, 33, 4130, 689, 5468, 4126, 1212, 1920, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 5468, 4127, 1212, 1921, 2]
 // Exports: default
 
-// Module 15470 (ChannelDetailsLinkedLobby)
+// Module 15480 (ChannelDetailsLinkedLobby)
 import "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -39,7 +39,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     const items = [divider.container, channel.containerStyle];
     obj.style = items;
     let tmp5 = callback;
-    let Text = require(4126) /* Text */.Text;
+    let Text = require(4127) /* Text */.Text;
     obj = { variant: "text-sm/normal", color: "text-default" };
     let obj1 = {};
     if (null != getOrFetchApplication) {
@@ -53,13 +53,13 @@ export default function ChannelDetailsLinkedLobby(channel) {
     const items1 = [formatResult, "  \u2022  ", ];
     const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj3 = {};
-    getOrFetchApplication = importDefault(1920).getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
+    getOrFetchApplication = importDefault(1921).getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
     obj3.helpdeskArticle = getOrFetchApplication;
     items1[2] = intl3.format(require(1212) /* getSystemLocale */.t.BPDKoA, obj3);
     obj1.children = items1;
     obj1 = tmp3(closure_5, obj1);
     obj.children = obj1;
-    const obj6 = importDefault(1920);
+    const obj6 = importDefault(1921);
     const tmp4 = View;
     const tmp8 = closure_5;
     obj = [, ];

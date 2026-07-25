@@ -1,10 +1,10 @@
-// Module ID: 5073
-// Function ID: 44096
+// Module ID: 5074
+// Function ID: 44108
 // Name: differ
-// Dependencies: [5074, 1348, 4349, 4325, 653, 3770, 4326, 662, 1360, 4324, 675, 2]
+// Dependencies: [5075, 1348, 4350, 4326, 653, 3771, 4327, 662, 1360, 4325, 675, 2]
 // Exports: getManyCurrentChannelSettings, getManyCurrentGuildSettings, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 5073 (differ)
+// Module 5074 (differ)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -231,7 +231,7 @@ export const trackGuildNotificationSettingsUpdate = function trackGuildNotificat
   obj["guild_scheduled_events_muted_old"] = tmp3("guild_scheduled_events_muted");
   obj["guild_message_notification_settings_old"] = tmp3("guild_message_notification_settings");
   obj["is_opt_in_only_change"] = 0 === removeFlagsResult;
-  importDefault(4324).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
+  importDefault(4325).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
 };
 export { muteConfigToTimestamp };
 export const trackChannelNotificationSettingsUpdate = function trackChannelNotificationSettingsUpdate(updateType) {
@@ -331,7 +331,7 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
   obj["is_opt_in_only_change"] = 0 === removeFlagsResult;
   obj["last_message_type"] = tmp11;
   obj["application_id"] = applicationId;
-  importDefault(4324).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
+  importDefault(4325).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
 };
 export { getCurrentGuildSettings };
 export const getManyCurrentGuildSettings = function getManyCurrentGuildSettings(arr) {

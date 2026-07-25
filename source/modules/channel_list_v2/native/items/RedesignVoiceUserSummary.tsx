@@ -1,10 +1,10 @@
-// Module ID: 15028
-// Function ID: 114485
+// Module ID: 15038
+// Function ID: 114612
 // Name: RedesignVoiceUserSummary
-// Dependencies: [31, 1906, 33, 15029, 566, 4312, 15027, 2]
+// Dependencies: [31, 1907, 33, 15039, 566, 4313, 15037, 2]
 // Exports: default
 
-// Module 15028 (RedesignVoiceUserSummary)
+// Module 15038 (RedesignVoiceUserSummary)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 8246
-// Function ID: 65092
+// Module ID: 7979
+// Function ID: 63598
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 3781, 653, 1851, 44, 8247, 3776, 5638, 566, 8249, 3712, 2]
+// Dependencies: [57, 31, 3782, 653, 1852, 44, 7980, 3777, 6244, 566, 7982, 3713, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionSKUs, subscriptionCanDowngrade, useGetOrFetchSubscriptionPlan
 
-// Module 8246 (_createForOfIteratorHelperLoose)
+// Module 7979 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -112,7 +112,7 @@ function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, 
   }
   let obj = { oldPlanId: currentSubscriptionPlanIdForGroup, newPlanId };
   if (null == currentSubscriptionPlanIdForGroup) {
-    const CheckoutError2 = require(8247) /* _isNativeReflectConstruct */.CheckoutError;
+    const CheckoutError2 = require(7980) /* _isNativeReflectConstruct */.CheckoutError;
     obj = { message: "Current subscription has no plan in group" };
     obj.extraSentryInformation = obj;
     const prototype2 = CheckoutError2.prototype;
@@ -121,7 +121,7 @@ function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, 
   } else {
     if (currentSubscriptionPlanIdForGroup === closure_8.PREMIUM_YEAR_TIER_1) {
       if (newPlanId === closure_8.PREMIUM_MONTH_TIER_2) {
-        const CheckoutError = require(8247) /* _isNativeReflectConstruct */.CheckoutError;
+        const CheckoutError = require(7980) /* _isNativeReflectConstruct */.CheckoutError;
         obj = { message: "Unexpected plan switch" };
         obj.extraSentryInformation = obj;
         const prototype = CheckoutError.prototype;
@@ -152,12 +152,12 @@ export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(su
     importDefault(44)(null != table[subscriptionPlanId], "Missing hardcoded subscriptionPlan: " + subscriptionPlanId);
     const tmp10 = importDefault(44);
     const tmp11 = null != table[subscriptionPlanId];
-    const result = require(3776) /* _createForOfIteratorHelperLoose */.castPremiumSubscriptionAsSkuId(tmp7.skuId);
+    const result = require(3777) /* _createForOfIteratorHelperLoose */.castPremiumSubscriptionAsSkuId(tmp7.skuId);
     if (!_isNativeReflectConstruct.isFetchingForSKU(result)) {
-      const subscriptionPlansForSKU = require(5638) /* fetchSubscriptionPlansForSKU */.fetchSubscriptionPlansForSKU(result, closure_1);
-      const obj = require(5638) /* fetchSubscriptionPlansForSKU */;
+      const subscriptionPlansForSKU = require(6244) /* fetchSubscriptionPlansForSKU */.fetchSubscriptionPlansForSKU(result, closure_1);
+      const obj = require(6244) /* fetchSubscriptionPlansForSKU */;
     }
-    const obj2 = require(3776) /* _createForOfIteratorHelperLoose */;
+    const obj2 = require(3777) /* _createForOfIteratorHelperLoose */;
   }
   return value;
 };
@@ -200,15 +200,15 @@ export const useGetOrFetchSubscriptionPlan = function useGetOrFetchSubscriptionP
 };
 export const getSubscriptionPauseDurations = function getSubscriptionPauseDurations(status) {
   let iter2;
-  const keys = Object.keys(require(8249) /* PauseDuration */.PauseDuration);
+  const keys = Object.keys(require(7982) /* PauseDuration */.PauseDuration);
   const found = keys.filter((arg0) => isNaN(Number(arg0)));
   if (status.status !== constants.PAUSED) {
     let obj = { durations: found, currentDaysPaused: 0 };
     return obj;
   } else if (null != status.pauseEndsAt) {
-    const tmp4 = importDefault(3712)(status.currentPeriodStart);
+    const tmp4 = importDefault(3713)(status.currentPeriodStart);
     const _Math = Math;
-    const rounded = Math.round(importDefault(3712)(status.pauseEndsAt).diff(tmp4, "days", true));
+    const rounded = Math.round(importDefault(3713)(status.pauseEndsAt).diff(tmp4, "days", true));
     const items = [];
     const tmp7 = _createForOfIteratorHelperLoose(found);
     let iter = tmp7();
@@ -217,7 +217,7 @@ export const getSubscriptionPauseDurations = function getSubscriptionPauseDurati
         let value = iter.value;
         let tmp8 = require;
         let tmp9 = dependencyMap;
-        if (require(8249) /* PauseDuration */.PauseDuration[value] > rounded) {
+        if (require(7982) /* PauseDuration */.PauseDuration[value] > rounded) {
           let arr = items.push(value);
         }
         iter2 = tmp7();
@@ -234,11 +234,11 @@ export const getSubscriptionPauseDurations = function getSubscriptionPauseDurati
 export const didBeginPurchaseFlowOnFractionalPremium = function didBeginPurchaseFlowOnFractionalPremium(isSameOrAfter) {
   let isMomentResult = null != isSameOrAfter;
   if (isMomentResult) {
-    isMomentResult = importDefault(3712).isMoment(isSameOrAfter);
-    const obj = importDefault(3712);
+    isMomentResult = importDefault(3713).isMoment(isSameOrAfter);
+    const obj = importDefault(3713);
   }
   if (isMomentResult) {
-    isMomentResult = isSameOrAfter.isSameOrAfter(importDefault(3712)());
+    isMomentResult = isSameOrAfter.isSameOrAfter(importDefault(3713)());
   }
   return isMomentResult;
 };

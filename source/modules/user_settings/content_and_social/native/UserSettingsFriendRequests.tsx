@@ -1,10 +1,10 @@
-// Module ID: 15511
-// Function ID: 119337
+// Module ID: 15521
+// Function ID: 119465
 // Name: UserSettingsFriendRequests
-// Dependencies: [31, 27, 653, 33, 3803, 5793, 5501, 1212, 5502, 1360, 2]
+// Dependencies: [31, 27, 653, 33, 3804, 6449, 5501, 1212, 5502, 1360, 2]
 // Exports: default
 
-// Module 15511 (UserSettingsFriendRequests)
+// Module 15521 (UserSettingsFriendRequests)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -20,7 +20,7 @@ const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/user_settings/content_and_social/native/UserSettingsFriendRequests.tsx");
 
 export default function UserSettingsFriendRequests() {
-  let FriendSourceFlagsSetting = setting(3803).FriendSourceFlagsSetting;
+  let FriendSourceFlagsSetting = setting(3804).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = React.useMemo(() => setting(outer1_2[5]).computeFlags(setting), items);

@@ -1,10 +1,10 @@
-// Module ID: 10285
-// Function ID: 79458
+// Module ID: 10218
+// Function ID: 79111
 // Name: useTruncatedGradientColors
-// Dependencies: [31, 4130, 3834, 689, 666, 2]
+// Dependencies: [31, 4131, 3835, 689, 666, 2]
 // Exports: default
 
-// Module 10285 (useTruncatedGradientColors)
+// Module 10218 (useTruncatedGradientColors)
 import { useMemo } from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -12,7 +12,7 @@ let closure_4 = _createForOfIteratorHelperLoose.createStyles({ gradient: { heigh
 const result = require("map").fileFinishedImporting("modules/in_app_notifications/native/hooks/useTruncatedGradientColors.tsx");
 
 export default function useTruncatedGradientColors() {
-  let obj = token(3834);
+  let obj = token(3835);
   token = obj.useToken(importDefault(689).colors.MOBILE_ALERT_BACKGROUND_DEFAULT);
   obj = {
     gradientColors: useMemo(() => {

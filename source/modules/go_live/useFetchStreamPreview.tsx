@@ -1,10 +1,10 @@
-// Module ID: 10818
-// Function ID: 83991
+// Module ID: 10790
+// Function ID: 83733
 // Name: useFetchStreamPreview
-// Dependencies: [31, 4311, 1348, 3758, 1906, 482, 566, 4309, 2]
+// Dependencies: [31, 4312, 1348, 3759, 1907, 482, 566, 4310, 2]
 // Exports: default
 
-// Module 10818 (useFetchStreamPreview)
+// Module 10790 (useFetchStreamPreview)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

@@ -1,7 +1,7 @@
 // Module ID: 5082
-// Function ID: 44235
+// Function ID: 44243
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 22, 3950, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 22, 3951, 566, 686, 2]
 
 // Module 5082 (_isNativeReflectConstruct)
 import isTermsFormField from "isTermsFormField";

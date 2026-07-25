@@ -1,10 +1,10 @@
-// Module ID: 6590
-// Function ID: 50850
+// Module ID: 7510
+// Function ID: 60500
 // Name: TeaKettleSpotIllustration
-// Dependencies: [33, 5085, 6591, 2]
+// Dependencies: [33, 5085, 7511, 2]
 // Exports: TeaKettleSpotIllustration
 
-// Module 6590 (TeaKettleSpotIllustration)
+// Module 7510 (TeaKettleSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TeaKettleSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const TeaKettleSpotIllustration = function TeaKettleSpotIllustration(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6591) };
+  obj = { uri: importDefault(7511) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

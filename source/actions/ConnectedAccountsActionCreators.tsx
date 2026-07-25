@@ -1,9 +1,9 @@
-// Module ID: 4938
-// Function ID: 42288
+// Module ID: 4939
+// Function ID: 42300
 // Name: callback
-// Dependencies: [5, 4812, 653, 3, 507, 686, 675, 4939, 4942, 480, 2]
+// Dependencies: [5, 4813, 653, 3, 507, 686, 675, 4940, 4943, 480, 2]
 
-// Module 4938 (callback)
+// Module 4939 (callback)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -103,7 +103,7 @@ export default {
   },
   callback,
   connect(arg0, arg1, name, location, friend_sync) {
-    let obj = importDefault(4942);
+    let obj = importDefault(4943);
     obj = { url: closure_6.CONNECTION(arg0, arg1) };
     obj = { name };
     friend_sync = undefined;
@@ -147,7 +147,7 @@ export default {
     return this.update(type, id, { show_activity });
   },
   update(arg0, arg1, body) {
-    let obj = importDefault(4942);
+    let obj = importDefault(4943);
     obj = { url: closure_6.CONNECTION(arg0, arg1), body, oldFormErrors: true };
     obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_CONNECTIONS_UPDATE };
     const merged = Object.assign(body);

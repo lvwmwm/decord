@@ -1,14 +1,7 @@
 // Module ID: 13331
-// Function ID: 102077
-// Dependencies: [13332]
+// Function ID: 102182
+// Dependencies: []
 
 // Module 13331
 
-export default (arg0) => {
-  let num = 0;
-  const tmp = require(13332)(arg0);
-  if (tmp > 0) {
-    num = min(tmp, 9007199254740991);
-  }
-  return num;
-};
+export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });

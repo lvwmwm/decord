@@ -1,24 +1,24 @@
-// Module ID: 13726
-// Function ID: 105328
+// Module ID: 13737
+// Function ID: 105455
 // Name: pressable
-// Dependencies: [7751, 7581, 7583, 10127, 1212, 2716, 4347, 2]
+// Dependencies: [7697, 6690, 6692, 10059, 1212, 2717, 4348, 2]
 
-// Module 13726 (pressable)
+// Module 13737 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
   useTitle() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2716).SH6Tcv);
+    return intl.string(importDefault(2717).SH6Tcv);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2716).rJiO86);
+    return intl.string(importDefault(2717).rJiO86);
   },
   onPress: function onAgeGroupConfirmPress() {
-    let obj = importDefault(7581);
-    obj = { entryPoint: require(7583) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = importDefault(6690);
+    obj = { entryPoint: require(6692) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,
@@ -27,16 +27,16 @@ const pressable = createToggle.createPressable({
 let obj = {
   useTitle() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2716).SH6Tcv);
+    return intl.string(importDefault(2717).SH6Tcv);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
     const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2716).rJiO86);
+    return intl.string(importDefault(2717).rJiO86);
   },
   onPress: function onAgeGroupConfirmPress() {
-    let obj = importDefault(7581);
-    obj = { entryPoint: require(7583) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = importDefault(6690);
+    obj = { entryPoint: require(6692) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,

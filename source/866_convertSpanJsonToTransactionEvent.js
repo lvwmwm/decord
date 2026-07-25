@@ -1,5 +1,5 @@
 // Module ID: 866
-// Function ID: 9658
+// Function ID: 9664
 // Name: convertSpanJsonToTransactionEvent
 // Dependencies: [77, 816]
 // Exports: convertSpanJsonToTransactionEvent, convertTransactionEventToSpanJson

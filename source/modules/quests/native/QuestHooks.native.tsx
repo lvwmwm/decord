@@ -1,10 +1,10 @@
-// Module ID: 14040
-// Function ID: 107428
+// Module ID: 14051
+// Function ID: 107555
 // Name: useIsMobileQuestDockRenderedBase
-// Dependencies: [5, 31, 3823, 4167, 6941, 4976, 9484, 482, 14041, 6956, 566, 4979, 6939, 14064, 10259, 3981, 7423, 10493, 10494, 9494, 6964, 10511, 6962, 10547, 5463, 10512, 10867, 2]
+// Dependencies: [5, 31, 3824, 4168, 5932, 4977, 9405, 482, 14052, 5947, 566, 4980, 5930, 14075, 10191, 3982, 6504, 10427, 10428, 9415, 5955, 10442, 5953, 10542, 5463, 5665, 10817, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 14040 (useIsMobileQuestDockRenderedBase)
+// Module 14051 (useIsMobileQuestDockRenderedBase)
 import closure_3 from "QuestsExperimentLocations";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,7 +18,7 @@ let closure_8;
 let closure_9;
 const require = arg1;
 function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
-  const tmp = importDefault(7423)();
+  const tmp = importDefault(6504)();
   const items = [closure_7];
   let userStatus;
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => null != outer1_7.getQuestPreviewOverride(outer1_0(outer1_2[11]).QuestContent.QUEST_BAR_MOBILE), []);
@@ -27,8 +27,8 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }
   let isDismissedResult = null != userStatus;
   if (isDismissedResult) {
-    isDismissedResult = require(6939) /* _createForOfIteratorHelperLoose */.isDismissed(mobileQuestDock.userStatus, require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE);
-    const obj2 = require(6939) /* _createForOfIteratorHelperLoose */;
+    isDismissedResult = require(5930) /* _createForOfIteratorHelperLoose */.isDismissed(mobileQuestDock.userStatus, require(4980) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE);
+    const obj2 = require(5930) /* _createForOfIteratorHelperLoose */;
   }
   let claimedAt;
   if (null != mobileQuestDock) {
@@ -39,8 +39,8 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }
   const obj = require(566) /* initialize */;
   const tmp8 = null != claimedAt;
-  const isQuestExpired = require(10493) /* _createForOfIteratorHelperLoose */.useIsQuestExpired(mobileQuestDock);
-  require(10494) /* getIsEligibleForQuests */;
+  const isQuestExpired = require(10427) /* _createForOfIteratorHelperLoose */.useIsQuestExpired(mobileQuestDock);
+  require(10428) /* getIsEligibleForQuests */;
   let tmp12 = null != mobileQuestDock;
   if (stateFromStores) {
     if (tmp12) {
@@ -68,7 +68,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   return tmp13;
 }
 function useIsMobileQuestDockRendered() {
-  const obj = importDefault(6956);
+  const obj = importDefault(5947);
   const items = [closure_7];
   let stateFromStores = stateFromStores2(566).useStateFromStores(items, () => outer1_7.getQuestPreviewOverride(stateFromStores2(outer1_2[11]).QuestContent.QUEST_BAR_MOBILE), []);
   const obj2 = stateFromStores2(566);
@@ -133,7 +133,7 @@ export const useMobileQuestDockHeight = function useMobileQuestDockHeight() {
   return num;
 };
 export const useMobileQuestDock = function useMobileQuestDock() {
-  const obj = importDefault(6956);
+  const obj = importDefault(5947);
   const items = [closure_7];
   let stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_7.getQuestPreviewOverride(outer1_0(outer1_2[11]).QuestContent.QUEST_BAR_MOBILE), []);
   const obj2 = require(566) /* initialize */;
@@ -152,7 +152,7 @@ export const useMobileQuestDock = function useMobileQuestDock() {
   const obj3 = require(566) /* initialize */;
   if (null == stateFromStores) {
     if (obj.useConfig({ location: "QuestMobileDock" }).enableNewRequestBehavior) {
-      stateFromStores1 = tmp3(require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.MOBILE_HOME_DOCK_AREA);
+      stateFromStores1 = tmp3(require(4980) /* QuestsVisibleMessagesChangedSource */.AdPlacement.MOBILE_HOME_DOCK_AREA);
     }
     stateFromStores = stateFromStores1;
   }
@@ -161,12 +161,12 @@ export const useMobileQuestDock = function useMobileQuestDock() {
 export const useIsMobileQuestDockVisibleToUser = function useIsMobileQuestDockVisibleToUser(arg0, arg1) {
   let tmp = arg1;
   const _require = arg0;
-  const isChannelFocused = _require(10259).useIsChannelFocused();
-  const obj = _require(10259);
-  const currentNavigationRouteName = _require(3981).useCurrentNavigationRouteName();
-  const obj2 = _require(3981);
-  let tmp4 = null != _require(3981).coerceGuildsRoute({ name: currentNavigationRouteName });
-  const obj3 = _require(3981);
+  const isChannelFocused = _require(10191).useIsChannelFocused();
+  const obj = _require(10191);
+  const currentNavigationRouteName = _require(3982).useCurrentNavigationRouteName();
+  const obj2 = _require(3982);
+  let tmp4 = null != _require(3982).coerceGuildsRoute({ name: currentNavigationRouteName });
+  const obj3 = _require(3982);
   const items = [closure_7];
   let stateFromStores = _require(566).useStateFromStores(items, () => {
     let isClaimingRewardResult = null != id;

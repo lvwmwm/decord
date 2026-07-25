@@ -1,10 +1,10 @@
-// Module ID: 13830
-// Function ID: 105968
+// Module ID: 13841
+// Function ID: 106095
 // Name: FamilyCenterTeenQRCodeButtonInner
-// Dependencies: [31, 27, 1849, 6769, 6770, 653, 4344, 33, 4130, 689, 7122, 3830, 1212, 11088, 624, 13831, 675, 13832, 4098, 13833, 1934, 4541, 4543, 12254, 2198, 13836, 4337, 1443, 11085, 1553, 4675, 12927, 2]
+// Dependencies: [31, 27, 1850, 5765, 5766, 653, 4345, 33, 4131, 689, 6200, 3831, 1212, 11047, 624, 13842, 675, 13843, 4099, 13844, 1935, 4542, 4544, 12230, 2199, 13847, 4338, 1443, 11044, 1553, 4676, 12938, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 13830 (FamilyCenterTeenQRCodeButtonInner)
+// Module 13841 (FamilyCenterTeenQRCodeButtonInner)
 import DCDQRScanner from "DCDQRScanner";
 import { View } from "isOriginalContentTypeDifferent";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -157,13 +157,13 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
     }
     return tmp2;
   }
-  let obj = handleQrCodeScanSucess(7122);
+  let obj = handleQrCodeScanSucess(6200);
   if (obj.useHasMaxConnections()) {
     return null;
   } else {
     obj = {};
     const intl = handleQrCodeScanSucess(1212).intl;
-    obj.text = intl.string(importDefault(2198).z4a9HP);
+    obj.text = intl.string(importDefault(2199).z4a9HP);
     obj.onPress = function onPress() {
       let obj = outer1_1(outer1_2[16]);
       obj = { action: outer1_9.ScanQRCodeButton };

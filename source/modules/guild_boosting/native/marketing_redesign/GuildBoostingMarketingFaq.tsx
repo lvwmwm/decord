@@ -1,10 +1,10 @@
-// Module ID: 12590
-// Function ID: 97350
+// Module ID: 12601
+// Function ID: 97477
 // Name: items1
-// Dependencies: [57, 31, 27, 653, 33, 4130, 6639, 689, 1212, 1920, 4126, 4660, 1273, 12591, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 12571, 689, 1212, 1921, 4127, 4661, 1273, 12602, 2]
 // Exports: default
 
-// Module 12590 (items1)
+// Module 12601 (items1)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -52,7 +52,7 @@ let items1 = [
     },
     getAnswer() {
       const intl = require(1212) /* getSystemLocale */.intl;
-      const obj = { helpCenterUrl: importDefault(1920).getArticleURL(HelpdeskArticles.GUILD_BOOSTING_FAQ) };
+      const obj = { helpCenterUrl: importDefault(1921).getArticleURL(HelpdeskArticles.GUILD_BOOSTING_FAQ) };
       return intl.format(require(1212) /* getSystemLocale */.t["8zlqlD"], obj);
     }
   },
@@ -152,7 +152,7 @@ export default function GuildBoostingMarketingFaq() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.HPJ6Nj);
   let items = [
-    callback2(require(4126) /* Text */.Text, obj),
+    callback2(require(4127) /* Text */.Text, obj),
     callback2(View, {
       style: tmp.list,
       children: items1.map((getQuestion) => {
@@ -188,8 +188,8 @@ export default function GuildBoostingMarketingFaq() {
         obj1.style = tmp.question;
         obj1.variant = "text-md/normal";
         obj1.children = getQuestion.getQuestion();
-        const items1 = [outer1_7(tmp(4126).Text, obj1), ];
-        const obj2 = { source: callback(12591) };
+        const items1 = [outer1_7(tmp(4127).Text, obj1), ];
+        const obj2 = { source: callback(12602) };
         const items2 = [tmp.questionIcon, ];
         let questionIconExpanded = tmp;
         if (tmp) {
@@ -199,10 +199,10 @@ export default function GuildBoostingMarketingFaq() {
         obj2.style = items2;
         items1[1] = outer1_7(tmp(1273).Icon, obj2);
         obj.children = items1;
-        const items3 = [outer1_8(tmp(4660).PressableOpacity, obj), ];
+        const items3 = [outer1_8(tmp(4661).PressableOpacity, obj), ];
         if (tmp) {
           const obj3 = { style: tmp.answer, color: "interactive-text-active", variant: "text-sm/normal", children: getQuestion.getAnswer() };
-          tmp = outer1_7(tmp(4126).Text, obj3);
+          tmp = outer1_7(tmp(4127).Text, obj3);
         }
         items3[1] = tmp;
         obj.children = items3;

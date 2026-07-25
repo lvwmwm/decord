@@ -1,10 +1,10 @@
-// Module ID: 9668
-// Function ID: 75225
+// Module ID: 9590
+// Function ID: 74815
 // Name: useStickerPickerListData
-// Dependencies: [31, 9639, 9604, 1314, 9638, 22, 1212, 4799, 9384, 2]
+// Dependencies: [31, 9561, 9525, 1314, 9560, 22, 1212, 4800, 9290, 2]
 // Exports: default
 
-// Module 9668 (useStickerPickerListData)
+// Module 9590 (useStickerPickerListData)
 import result from "result";
 import { useStickerPickerStore } from "useStickerPickerStore";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";

@@ -1,17 +1,17 @@
-// Module ID: 11672
-// Function ID: 90612
+// Module ID: 11641
+// Function ID: 90356
 // Name: getNoMutualFriendsSource
-// Dependencies: [31, 27, 33, 7405, 11673, 11674, 11675, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 11642, 11643, 11644, 3977, 2]
 // Exports: NoMutualFriends
 
-// Module 11672 (getNoMutualFriendsSource)
+// Module 11641 (getNoMutualFriendsSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getNoMutualFriendsSource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getNoMutualFriendsSource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useNoMutualFriendsSource() {
-  return getNoMutualFriendsSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getNoMutualFriendsSource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoMutualFriends.tsx");
 

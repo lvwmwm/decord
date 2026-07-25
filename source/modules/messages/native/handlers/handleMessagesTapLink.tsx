@@ -1,10 +1,10 @@
-// Module ID: 9519
-// Function ID: 74073
+// Module ID: 9440
+// Function ID: 73660
 // Name: handleMessagesTapURLLink
-// Dependencies: [8007, 4167, 7716, 9520, 1857, 1348, 4115, 4349, 1849, 653, 1455, 1355, 5591, 1211, 9524, 4111, 6977, 9525, 8642, 8636, 8380, 9526, 8537, 4098, 8621, 1934, 4944, 4309, 9528, 9143, 9529, 6691, 5482, 8004, 1555, 9530, 4360, 1198, 7768, 9533, 9556, 2]
+// Dependencies: [5669, 4168, 7660, 9441, 1858, 1348, 4116, 4350, 1850, 653, 1455, 1355, 5591, 1211, 9445, 4112, 5968, 9446, 8418, 8412, 8138, 9447, 8297, 4099, 8385, 1935, 4945, 4310, 9449, 9035, 9450, 5685, 5482, 7951, 1555, 9451, 4361, 1198, 7714, 9454, 9477, 2]
 // Exports: handleMessagesTapLink
 
-// Module 9519 (handleMessagesTapURLLink)
+// Module 9440 (handleMessagesTapURLLink)
 import { getSection } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -32,10 +32,10 @@ function handleMessagesTapURLLink(data, channelId) {
     const node = data.node;
     let flag2 = false;
     if (null != node) {
-      let obj = require(9524) /* isLinkTrusted */;
+      let obj = require(9445) /* isLinkTrusted */;
       flag2 = false;
       if (obj.isLinkTrusted(node)) {
-        const payload = importDefault(4111)(tmp).payload;
+        const payload = importDefault(4112)(tmp).payload;
         flag2 = false;
         if (payload.type === constants2.INVITE) {
           flag2 = false;
@@ -43,11 +43,11 @@ function handleMessagesTapURLLink(data, channelId) {
             invite = invite.getInvite(payload.inviteCode);
             let num3 = null == invite;
             if (!num3) {
-              let obj1 = require(6977) /* isGroupDMInvite */;
+              let obj1 = require(5968) /* isGroupDMInvite */;
               num3 = !obj1.isGuildScheduledEventInviteEmbed(invite);
             }
             if (!num3) {
-              importDefault(9525)(invite);
+              importDefault(9446)(invite);
               num3 = 0;
             }
             flag2 = !num3;
@@ -56,7 +56,7 @@ function handleMessagesTapURLLink(data, channelId) {
       }
     }
     if (!flag2) {
-      const payload2 = importDefault(4111)(data.url).payload;
+      const payload2 = importDefault(4112)(data.url).payload;
       let flag3 = false;
       if (payload2.type === constants2.GAME_PROFILE) {
         const gameId = payload2.gameId;
@@ -71,12 +71,12 @@ function handleMessagesTapURLLink(data, channelId) {
             tmp17 = id;
           }
         }
-        obj = { gameId, source: require(8642) /* GameProfileEmbedAction */.GameProfileSources.Deeplink, sourceUserId: tmp17 };
+        obj = { gameId, source: require(8418) /* GameProfileEmbedAction */.GameProfileSources.Deeplink, sourceUserId: tmp17 };
         obj = { shouldOpenGameProfile: true, gameId };
         obj.gameProfileModalChecks = obj;
-        require(8636) /* clearGameProfilePendingReturn */.default.openGameProfileModal(obj);
+        require(8412) /* clearGameProfilePendingReturn */.default.openGameProfileModal(obj);
         flag3 = true;
-        const _default = require(8636) /* clearGameProfilePendingReturn */.default;
+        const _default = require(8412) /* clearGameProfilePendingReturn */.default;
       }
       flag2 = flag3;
     }
@@ -85,15 +85,15 @@ function handleMessagesTapURLLink(data, channelId) {
       obj1 = { href: data.url };
       let isLinkTrustedResult = null != data.node;
       if (isLinkTrustedResult) {
-        isLinkTrustedResult = require(9524) /* isLinkTrusted */.isLinkTrusted(data.node);
-        const obj7 = require(9524) /* isLinkTrusted */;
+        isLinkTrustedResult = require(9445) /* isLinkTrusted */.isLinkTrusted(data.node);
+        const obj7 = require(9445) /* isLinkTrusted */;
       }
       obj1.trusted = isLinkTrustedResult;
       obj1.messageId = data.messageId;
       obj1.channelId = channelId;
-      require(8380) /* isLinkTrusted */.handleClick(obj1);
+      require(8138) /* isLinkTrusted */.handleClick(obj1);
       flag = true;
-      const obj5 = require(8380) /* isLinkTrusted */;
+      const obj5 = require(8138) /* isLinkTrusted */;
     }
   }
   return flag;
@@ -123,7 +123,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           openLazyResult = dependencyMap;
           let obj = {};
           ({ userId: obj30.userId, messageChannelId: obj30.channelId, messageId: obj30.messageId } = data);
-          openLazyResult = importDefault(8537)(obj);
+          openLazyResult = importDefault(8297)(obj);
         } else if ("bindGuildMenu" === action) {
           if (null != data.messageReference) {
             let guild_id = data.messageReference.guild_id;
@@ -133,10 +133,10 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
               openLazyResult = require;
               openLazyResult = globalThis;
               const _HermesInternal = HermesInternal;
-              openLazyResult = require(1934) /* maybeLoadBundle */(8621, dependencyMap.paths);
+              openLazyResult = require(1935) /* maybeLoadBundle */(8385, dependencyMap.paths);
               obj = { guildId: guild_id };
-              openLazyResult = importDefault(4098).openLazy(openLazyResult, "GuildProfileActionSheet:" + guild_id, obj);
-              const obj28 = importDefault(4098);
+              openLazyResult = importDefault(4099).openLazy(openLazyResult, "GuildProfileActionSheet:" + guild_id, obj);
+              const obj28 = importDefault(4099);
             }
           }
         } else if ("bindJoinStream" === action) {
@@ -144,19 +144,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
           if (null != stream) {
             openLazyResult = importDefault;
             openLazyResult = dependencyMap;
-            openLazyResult = importDefault(4944).selectVoiceChannel(stream.channelId);
+            openLazyResult = importDefault(4945).selectVoiceChannel(stream.channelId);
             openLazyResult = require;
-            const obj26 = importDefault(4944);
-            openLazyResult = require(4309) /* isVoiceChannelFull */.watchStreamAndTransitionToStream(stream);
-            const obj27 = require(4309) /* isVoiceChannelFull */;
+            const obj26 = importDefault(4945);
+            openLazyResult = require(4310) /* isVoiceChannelFull */.watchStreamAndTransitionToStream(stream);
+            const obj27 = require(4310) /* isVoiceChannelFull */;
           }
         } else if ("bindOpenPins" === action) {
           openLazyResult = importDefault;
           openLazyResult = dependencyMap;
-          openLazyResult = importDefault(9528)(data.messageChannelId, "pinned-message-system-message");
+          openLazyResult = importDefault(9449)(data.messageChannelId, "pinned-message-system-message");
         } else if ("bindOpenGdmCustomizeActionSheet" === action) {
           let obj1 = { channelId: data.messageChannelId };
-          openLazyResult = importDefault(9143)(obj1);
+          openLazyResult = importDefault(9035)(obj1);
         } else if ("bindDismissMessage" === action) {
           const message3 = data.message;
           let id1;
@@ -171,19 +171,19 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
               if (null != message4) {
                 id2 = message4.id;
               }
-              const result = require(9529) /* removeAutomodMessageNotice */.removeAutomodMessageNotice(id2);
-              const obj24 = require(9529) /* removeAutomodMessageNotice */;
+              const result = require(9450) /* removeAutomodMessageNotice */.removeAutomodMessageNotice(id2);
+              const obj24 = require(9450) /* removeAutomodMessageNotice */;
             }
           }
-          const result1 = importDefault(6691).dismissAutomatedMessage(data.message);
-          const obj23 = importDefault(6691);
+          const result1 = importDefault(5685).dismissAutomatedMessage(data.message);
+          const obj23 = importDefault(5685);
         } else if ("bindTapUsername" === action) {
           let obj2 = {};
           ({ userId: obj22.userId, messageChannelId: obj22.channelId, messageId: obj22.messageId } = data);
           const items = [importDefault(5482).USERNAME];
           obj2.sourceAnalyticsLocations = items;
-          importDefault(8537)(obj2);
-          const tmp86 = importDefault(8537);
+          importDefault(8297)(obj2);
+          const tmp86 = importDefault(8297);
         } else if ("bindTapCommandName" === action) {
           let interaction;
           if (null != message) {
@@ -248,8 +248,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                     openLazyResult = dependencyMap;
                     const obj8 = {};
                     openLazyResult = require;
-                    openLazyResult = importDefault(9530);
-                    obj8.author = require(4360) /* useNullableMessageAuthor */.getUserAuthor(message.interaction.user, messageChannel);
+                    openLazyResult = importDefault(9451);
+                    obj8.author = require(4361) /* useNullableMessageAuthor */.getUserAuthor(message.interaction.user, messageChannel);
                     obj8.channelId = data.messageChannelId;
                     obj8.chatInputRef = chatInputRef;
                     obj8.messageId = data.messageId;
@@ -270,10 +270,10 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                     obj8.guildId = tmp71;
                     obj8.messageType = data.messageType;
                     openLazyResult(obj8);
-                    const obj35 = require(4360) /* useNullableMessageAuthor */;
+                    const obj35 = require(4361) /* useNullableMessageAuthor */;
                   }
                 }
-                obj33 = require(8004) /* canViewInteractionInfo */;
+                obj33 = require(7951) /* canViewInteractionInfo */;
               }
             }
           }
@@ -316,7 +316,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
             openLazyResult(guild_id, channel.id, constants3.EMBED);
           }
         } else if ("bindJumpToMessage" === action) {
-          obj7 = importDefault(6691);
+          obj7 = importDefault(5685);
           const obj13 = {};
           ({ targetChannelId: obj9.channelId, targetMessageId: obj9.messageId } = data);
           obj13.flash = true;
@@ -325,7 +325,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
         } else if ("bindOpenRoleSubscriptionOverview" === action) {
           obj5 = require(1198) /* shouldNavigate */;
           obj5.transitionTo(closure_14.CHANNEL(data.guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
-          obj6 = require(7768) /* identityHook */;
+          obj6 = require(7714) /* identityHook */;
           const result2 = obj6.trackRoleSubscriptionPurchaseMessageTierClick(data.guildId, data.channelId, data.messageId, data.roleSubscriptionListingId);
         } else if ("bindUserSurvey" === action) {
           const channel1 = store.getChannel(data.message.channel_id);
@@ -337,7 +337,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
             const notificationType2 = data.notificationType;
             openLazyResult = NotificationTypes;
             if (NotificationTypes.TRENDING_CONTENT_PUSH === notificationType2) {
-              obj3 = require(9533) /* openGuildHighlightNotificationForPush */;
+              obj3 = require(9454) /* openGuildHighlightNotificationForPush */;
               ({ message: message2, notificationType } = data);
               const MESSAGE_EMBED = constants.MESSAGE_EMBED;
               const obj14 = {};
@@ -355,13 +355,13 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
             } else {
               openLazyResult = NotificationTypes;
               if (NotificationTypes.TOP_MESSAGE_PUSH === notificationType2) {
-                obj2 = require(9533) /* openGuildHighlightNotificationForPush */;
+                obj2 = require(9454) /* openGuildHighlightNotificationForPush */;
                 const result4 = obj2.openGuildHighlightNotificationForPush(guild_id1, data.message, data.notificationType, constants.MESSAGE_EMBED);
               } else {
                 openLazyResult = require;
                 openLazyResult = dependencyMap;
                 openLazyResult = importDefault;
-                openLazyResult = require(1934) /* maybeLoadBundle */(9556, dependencyMap.paths);
+                openLazyResult = require(1935) /* maybeLoadBundle */(9477, dependencyMap.paths);
                 obj15 = {};
                 openLazyResult = constants;
                 obj15.location = constants.MESSAGE_EMBED;
@@ -371,8 +371,8 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
                   TOP_MESSAGE_PUSH = NotificationTypes.TOP_MESSAGE_PUSH;
                 }
                 obj15.notificationType = TOP_MESSAGE_PUSH;
-                importDefault(4098).openLazy(openLazyResult, "NotificationSurvey", obj15);
-                const obj31 = importDefault(4098);
+                importDefault(4099).openLazy(openLazyResult, "NotificationSurvey", obj15);
+                const obj31 = importDefault(4099);
               }
             }
           }
@@ -396,6 +396,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
     }
     tmp5 = handleMessagesTapURLLink;
   } else {
-    obj = require(9526) /* isAlertOrActionSheetOpen */;
+    obj = require(9447) /* isAlertOrActionSheetOpen */;
   }
 };

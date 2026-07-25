@@ -1,10 +1,10 @@
-// Module ID: 7569
-// Function ID: 60356
+// Module ID: 6665
+// Function ID: 58946
 // Name: getSafetyToastTypeContent
-// Dependencies: [1348, 1849, 7563, 4319, 3969, 1212, 2298, 2]
+// Dependencies: [1348, 1850, 6659, 4320, 3970, 1212, 2299, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 7569 (getSafetyToastTypeContent)
+// Module 6665 (getSafetyToastTypeContent)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SafetyToastType } from "SafetyToastType";
@@ -15,7 +15,7 @@ const result = require("SafetyToastType").fileFinishedImporting("modules/safety_
 export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOCK_SUCCESS, id, channelId) {
   user = user.getUser(id);
   channel = channel.getChannel(channelId);
-  let obj = importDefault(4319);
+  let obj = importDefault(4320);
   let guild_id;
   if (null != channel) {
     guild_id = channel.guild_id;
@@ -26,7 +26,7 @@ export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOC
   }
   let name = obj.getName(guild_id, id, user);
   if (null == name) {
-    let obj1 = importDefault(3969);
+    let obj1 = importDefault(3970);
     name = obj1.getGlobalName(user);
   }
   if (SafetyToastType.IGNORE_SUCCESS === BLOCK_SUCCESS) {
@@ -68,7 +68,7 @@ export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOC
     return intl5.string(require(1212) /* getSystemLocale */.t.zBpoc7);
   } else if (SafetyToastType.REPORT_TO_MOD_SUCCESS === BLOCK_SUCCESS) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(importDefault(2298).iBypeZ);
+    return intl4.string(importDefault(2299).iBypeZ);
   } else if (SafetyToastType.SAFETY_FEEDBACK_SUCCESS === BLOCK_SUCCESS) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     return intl3.string(require(1212) /* getSystemLocale */.t.TcFR5k);

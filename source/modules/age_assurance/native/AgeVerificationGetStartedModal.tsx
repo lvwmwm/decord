@@ -1,10 +1,10 @@
-// Module ID: 7616
-// Function ID: 60640
+// Module ID: 7558
+// Function ID: 60582
 // Name: getInitialRouteName
-// Dependencies: [31, 33, 4130, 689, 4337, 5087, 7617, 7622, 7623, 7630, 491, 7583, 5517, 1212, 2]
+// Dependencies: [31, 33, 4131, 689, 4338, 5087, 7559, 7564, 7565, 7556, 491, 6692, 5517, 1212, 2]
 // Exports: default
 
-// Module 7616 (getInitialRouteName)
+// Module 7558 (getInitialRouteName)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

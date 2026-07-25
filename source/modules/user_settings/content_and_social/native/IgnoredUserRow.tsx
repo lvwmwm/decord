@@ -1,17 +1,17 @@
-// Module ID: 13763
-// Function ID: 105525
+// Module ID: 13774
+// Function ID: 105652
 // Name: handleUnignoreUser
-// Dependencies: [31, 1849, 33, 8962, 5462, 5165, 1273, 1212, 8537, 4543, 566, 2]
+// Dependencies: [31, 1850, 33, 8850, 5462, 5164, 1273, 1212, 8297, 4544, 566, 2]
 // Exports: default
 
-// Module 13763 (handleUnignoreUser)
+// Module 13774 (handleUnignoreUser)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function handleUnignoreUser(id) {
-  importDefault(8962).unignoreUser(id, "ignored-users-list-mobile");
+  importDefault(8850).unignoreUser(id, "ignored-users-list-mobile");
 }
 function IgnoredUserRow(userRecord) {
   userRecord = userRecord.userRecord;
@@ -60,8 +60,8 @@ function IgnoredUserRow(userRecord) {
   obj1.onPress = function onPress() {
     outer1_5(userRecord.id);
   };
-  obj.trailing = jsx(userRecord(4543).Button, { size: "sm", variant: "secondary" });
-  return jsx(userRecord(5165).TableRow, { name: "unignore" });
+  obj.trailing = jsx(userRecord(4544).Button, { size: "sm", variant: "secondary" });
+  return jsx(userRecord(5164).TableRow, { name: "unignore" });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUserRow.tsx");
 

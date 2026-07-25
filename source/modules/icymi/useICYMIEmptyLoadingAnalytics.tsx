@@ -1,10 +1,10 @@
-// Module ID: 15262
-// Function ID: 116304
+// Module ID: 15272
+// Function ID: 116432
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: [31, 8374, 2]
+// Dependencies: [31, 8132, 2]
 // Exports: useICYMIEmptyLoadingAnalytics
 
-// Module 15262 (useICYMIEmptyLoadingAnalytics)
+// Module 15272 (useICYMIEmptyLoadingAnalytics)
 import result from "result";
 
 const require = arg1;

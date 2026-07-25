@@ -1,10 +1,10 @@
-// Module ID: 11742
-// Function ID: 91236
+// Module ID: 11712
+// Function ID: 90986
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [653, 33, 5501, 1212, 1920, 5502, 2]
+// Dependencies: [653, 33, 5501, 1212, 1921, 5502, 2]
 // Exports: default
 
-// Module 11742 (RedesignContactSyncDiscoverabilityFooter)
+// Module 11712 (RedesignContactSyncDiscoverabilityFooter)
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";
 
@@ -16,7 +16,7 @@ export default function RedesignContactSyncDiscoverabilityFooter(arg0) {
   ({ discoverabilityEnabled, onValueChanged } = arg0);
   let obj = { hasIcons: false };
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { helpdeskUrl: importDefault(1920).getArticleURL(HelpdeskArticles.CONTACT_SYNC) };
+  obj = { helpdeskUrl: importDefault(1921).getArticleURL(HelpdeskArticles.CONTACT_SYNC) };
   obj.helperText = intl.format(require(1212) /* getSystemLocale */.t.zopgpe, obj);
   obj = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 6714
-// Function ID: 52221
+// Module ID: 5710
+// Function ID: 49534
 // Name: Chained
 // Dependencies: [6, 7, 2]
 // Exports: chain
 
-// Module 6714 (Chained)
+// Module 5710 (Chained)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

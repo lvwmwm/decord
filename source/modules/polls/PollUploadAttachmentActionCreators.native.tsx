@@ -1,10 +1,10 @@
-// Module ID: 11353
-// Function ID: 88340
+// Module ID: 11315
+// Function ID: 87996
 // Name: _handlePollGifAttachmentAdd
-// Dependencies: [5, 4468, 7070, 11354, 8289, 4674, 4665, 8025, 2]
+// Dependencies: [5, 4469, 6088, 11316, 8024, 4675, 4666, 6134, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 11353 (_handlePollGifAttachmentAdd)
+// Module 11315 (_handlePollGifAttachmentAdd)
 import openImagePickerUnhandled from "openImagePickerUnhandled";
 import { DraftType } from "_isNativeReflectConstruct";
 import { POLL_ATTACHMENT_FOLDER } from "POLL_ATTACHMENT_FOLDER";

@@ -1,17 +1,17 @@
-// Module ID: 16389
-// Function ID: 127918
+// Module ID: 16400
+// Function ID: 128086
 // Name: getInviteEmptySource
-// Dependencies: [31, 27, 33, 7405, 10217, 16390, 10216, 3976, 2]
+// Dependencies: [31, 27, 33, 6481, 10149, 16401, 10148, 3977, 2]
 // Exports: InviteEmpty
 
-// Module 16389 (getInviteEmptySource)
+// Module 16400 (getInviteEmptySource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getInviteEmptySource(theme) {
-  let obj = require(7405) /* getIllustrationSource */;
+  let obj = require(6481) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);
@@ -26,7 +26,7 @@ function getInviteEmptySource(theme) {
   return obj.getIllustrationSource(theme, obj);
 }
 function useInviteEmptySource() {
-  return getInviteEmptySource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
+  return getInviteEmptySource(require(3977) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/InviteEmpty.tsx");
 

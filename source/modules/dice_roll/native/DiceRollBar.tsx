@@ -1,10 +1,10 @@
-// Module ID: 11456
-// Function ID: 89098
+// Module ID: 11419
+// Function ID: 88757
 // Name: DiceRollBar
-// Dependencies: [31, 27, 4122, 11129, 33, 4130, 689, 566, 3991, 4131, 1273, 11457, 8746, 4126, 2]
+// Dependencies: [31, 27, 4123, 11089, 33, 4131, 689, 566, 3992, 4132, 1273, 11420, 8634, 4127, 2]
 // Exports: default
 
-// Module 11456 (DiceRollBar)
+// Module 11419 (DiceRollBar)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

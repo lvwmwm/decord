@@ -1,5 +1,5 @@
 // Module ID: 5399
-// Function ID: 46267
+// Function ID: 46272
 // Name: binarySearchVisibleIndex
 // Dependencies: []
 

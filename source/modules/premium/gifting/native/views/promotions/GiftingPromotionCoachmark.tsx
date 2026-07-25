@@ -1,10 +1,10 @@
-// Module ID: 15658
-// Function ID: 120725
+// Module ID: 15669
+// Function ID: 120893
 // Name: GiftingPromotionCoachmarkActionSheet
-// Dependencies: [31, 27, 4122, 653, 1345, 33, 4130, 689, 566, 9722, 5462, 5482, 4098, 9713, 5187, 477, 7964, 5085, 4126, 4543, 1212, 2]
+// Dependencies: [31, 27, 4123, 653, 1345, 33, 4131, 689, 566, 9646, 5462, 5482, 4099, 9637, 5187, 477, 6154, 5085, 4127, 4544, 1212, 2]
 // Exports: default
 
-// Module 15658 (GiftingPromotionCoachmarkActionSheet)
+// Module 15669 (GiftingPromotionCoachmarkActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -42,7 +42,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let obj = markAsDismissed(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
-  let obj1 = markAsDismissed(9722);
+  let obj1 = markAsDismissed(9646);
   let asset;
   if (null != coachmarkComponent) {
     asset = coachmarkComponent.asset;
@@ -63,16 +63,16 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       const items2 = [tmp14, , ];
       obj1 = { style: tmp.textContainer };
       const obj2 = { style: tmp.text, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: coachmarkComponent.header };
-      const items3 = [callback(markAsDismissed(4126).Text, obj2), ];
+      const items3 = [callback(markAsDismissed(4127).Text, obj2), ];
       const obj3 = { style: tmp.text, variant: "text-md/normal", color: "text-default", children: coachmarkComponent.body };
-      items3[1] = callback(markAsDismissed(4126).Text, obj3);
+      items3[1] = callback(markAsDismissed(4127).Text, obj3);
       obj1.children = items3;
       items2[1] = callback2(View, obj1);
       let obj4 = { grow: true };
       const intl = markAsDismissed(1212).intl;
       obj4.text = intl.string(markAsDismissed(1212).t.RzWDqY);
       obj4.onPress = tmp6;
-      items2[2] = callback(markAsDismissed(4543).Button, obj4);
+      items2[2] = callback(markAsDismissed(4544).Button, obj4);
       obj.children = items2;
       obj.children = tmp12(tmp13, obj);
       tmp8Result = tmp8(tmp11, obj);
@@ -85,7 +85,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
           ({ imageShared: arr3[0], imageWrapperAndroid: arr3[1] } = tmp);
           obj5.style = items4;
           const obj6 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared };
-          obj5.children = callback(analyticsLocations(7964), obj6);
+          obj5.children = callback(analyticsLocations(6154), obj6);
           let tmp21 = callback(View, obj5);
         }
       }

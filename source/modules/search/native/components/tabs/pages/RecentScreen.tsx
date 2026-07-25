@@ -1,9 +1,9 @@
-// Module ID: 15382
-// Function ID: 117333
+// Module ID: 15392
+// Function ID: 117461
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 31, 5660, 11436, 15383, 10109, 9141, 11427, 653, 33, 4660, 11434, 1212, 4126, 8859, 15384, 4140, 10108, 10110, 566, 1457, 15386, 11426, 13775, 7581, 7583, 15387, 15388, 15391, 2]
+// Dependencies: [57, 5, 31, 5847, 11399, 15393, 10041, 9033, 11390, 653, 33, 4661, 11397, 1212, 4127, 8747, 15394, 4141, 10040, 10042, 566, 1457, 15396, 11389, 13786, 6690, 6692, 15397, 15398, 15401, 2]
 
-// Module 15382 (_createForOfIteratorHelperLoose)
+// Module 15392 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importAllResult from "result";
@@ -114,8 +114,8 @@ function ClearAllHistory(searchContext) {
   obj = { variant: "text-sm/semibold", color: "text-brand" };
   const intl2 = searchContext(1212).intl;
   obj.children = intl2.string(searchContext(1212).t.LFTAUp);
-  obj.children = jsx(searchContext(4126).Text, { variant: "text-sm/semibold", color: "text-brand" });
-  return jsx(searchContext(4660).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand" });
+  obj.children = jsx(searchContext(4127).Text, { variant: "text-sm/semibold", color: "text-brand" });
+  return jsx(searchContext(4661).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand" });
 }
 function ViewAll(onJumpToMedia) {
   let obj = { onPress: onJumpToMedia.onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130 };
@@ -124,8 +124,8 @@ function ViewAll(onJumpToMedia) {
   obj = { variant: "text-sm/semibold", color: "text-brand" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.string(require(1212) /* getSystemLocale */.t.Ofpgwh);
-  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-sm/semibold", color: "text-brand" });
-  return jsx(require(4660) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand" });
+  obj.children = jsx(require(4127) /* Text */.Text, { variant: "text-sm/semibold", color: "text-brand" });
+  return jsx(require(4661) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand" });
 }
 ({ EMPTY_SEARCH_QUERY_STRING: closure_10, MESSAGE_PLACEHOLDER_ITEM_SIZE: closure_11, SearchListItemTypes: closure_12, SearchTabs: closure_13 } = SearchAutocompleteSelectAnalyticsActions);
 let closure_17 = importAllResult.memo((searchContext) => {

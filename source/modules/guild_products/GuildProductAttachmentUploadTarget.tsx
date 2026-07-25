@@ -1,9 +1,9 @@
-// Module ID: 4707
-// Function ID: 40961
+// Module ID: 4708
+// Function ID: 40973
 // Name: GuildProductAttachmentUploadTarget
-// Dependencies: [6, 7, 4708, 653, 2]
+// Dependencies: [6, 7, 4709, 653, 2]
 
-// Module 4707 (GuildProductAttachmentUploadTarget)
+// Module 4708 (GuildProductAttachmentUploadTarget)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import GUILD_PRODUCT_EDIT_MODAL_KEY from "GUILD_PRODUCT_EDIT_MODAL_KEY";

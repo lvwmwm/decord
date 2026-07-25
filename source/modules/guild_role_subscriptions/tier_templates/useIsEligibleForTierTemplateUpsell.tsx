@@ -1,10 +1,10 @@
-// Module ID: 15124
-// Function ID: 115080
+// Module ID: 15134
+// Function ID: 115208
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [1838, 653, 566, 12952, 5641, 2]
+// Dependencies: [1838, 653, 566, 12963, 12556, 2]
 // Exports: default
 
-// Module 15124 (useIsEligibleForTierTemplateUpsell)
+// Module 15134 (useIsEligibleForTierTemplateUpsell)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 
@@ -17,7 +17,7 @@ export default function useIsEligibleForTierTemplateUpsell(guildId) {
   const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getGuild(closure_0));
   const obj = _require(566);
   let hasItem;
-  const guildEligibleForTierTemplates = _require(12952).useGuildEligibleForTierTemplates(guildId);
+  const guildEligibleForTierTemplates = _require(12963).useGuildEligibleForTierTemplates(guildId);
   if (null != stateFromStores) {
     const features = stateFromStores.features;
     hasItem = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
@@ -31,7 +31,7 @@ export default function useIsEligibleForTierTemplateUpsell(guildId) {
     }
     result = false === hasItem1;
   }
-  const obj2 = _require(12952);
+  const obj2 = _require(12963);
   if (result) {
     result = obj3.canManageGuildRoleSubscriptions(stateFromStores);
   }

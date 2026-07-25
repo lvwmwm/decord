@@ -1,9 +1,9 @@
-// Module ID: 4992
-// Function ID: 43153
+// Module ID: 4993
+// Function ID: 43165
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1391, 1911, 1917, 1910, 1838, 1849, 653, 3749, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1391, 1912, 1918, 1911, 1838, 1850, 653, 3750, 566, 686, 2]
 
-// Module 4992 (_isNativeReflectConstruct)
+// Module 4993 (_isNativeReflectConstruct)
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "set";
@@ -142,12 +142,12 @@ function computeRolesForGuild(guildId) {
             let value = iter.value;
             let tmp12 = require;
             let tmp13 = dependencyMap;
-            let obj2 = require(3749) /* isSubscriptionRole */;
+            let obj2 = require(3750) /* isSubscriptionRole */;
             if (obj2.isSubscriptionRole(value)) {
               let addResult = set.add(value.id);
               let tmp15 = require;
               let tmp16 = dependencyMap;
-              let obj3 = require(3749) /* isSubscriptionRole */;
+              let obj3 = require(3750) /* isSubscriptionRole */;
               if (obj3.isSubscriptionRoleAvailableForPurchase(value)) {
                 let addResult1 = set1.add(value.id);
                 if (_Set.has(value.id)) {

@@ -1,10 +1,10 @@
-// Module ID: 6202
-// Function ID: 50268
+// Module ID: 7122
+// Function ID: 59918
 // Name: GiftCardRight3dIllustration
-// Dependencies: [33, 5085, 6203, 2]
+// Dependencies: [33, 5085, 7123, 2]
 // Exports: GiftCardRight3dIllustration
 
-// Module 6202 (GiftCardRight3dIllustration)
+// Module 7122 (GiftCardRight3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardRight3dIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const GiftCardRight3dIllustration = function GiftCardRight3dIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6203) };
+  obj = { uri: importDefault(7123) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

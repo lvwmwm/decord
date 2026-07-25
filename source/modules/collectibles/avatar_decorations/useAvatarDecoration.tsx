@@ -1,10 +1,10 @@
-// Module ID: 9126
-// Function ID: 71438
+// Module ID: 9018
+// Function ID: 70923
 // Name: getAvatarDecoration
-// Dependencies: [57, 1917, 624, 2]
+// Dependencies: [57, 1918, 624, 2]
 // Exports: useAvatarDecoration
 
-// Module 9126 (getAvatarDecoration)
+// Module 9018 (getAvatarDecoration)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

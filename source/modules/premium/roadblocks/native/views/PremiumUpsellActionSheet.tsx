@@ -1,10 +1,10 @@
-// Module ID: 8037
-// Function ID: 63737
+// Module ID: 6146
+// Function ID: 55076
 // Name: getPageContent
-// Dependencies: [57, 31, 27, 4122, 1278, 1280, 3947, 1849, 1851, 653, 4185, 33, 4130, 689, 3834, 3776, 8038, 4711, 4670, 1212, 3827, 1920, 8039, 8040, 8041, 7411, 668, 566, 8042, 5502, 4126, 477, 8043, 5085, 8028, 8044, 5462, 675, 8045, 3989, 4098, 8036, 5498, 4554, 8046, 4543, 7487, 2]
+// Dependencies: [57, 31, 27, 4123, 1278, 1280, 3948, 1850, 1852, 653, 4186, 33, 4131, 689, 3835, 3777, 6147, 4712, 4671, 1212, 3828, 1921, 6148, 6149, 6150, 6151, 668, 566, 6152, 5502, 4127, 477, 6153, 5085, 6137, 6155, 5462, 675, 6156, 3990, 4099, 6145, 5498, 4555, 12541, 4544, 6571, 2]
 // Exports: default
 
-// Module 8037 (getPageContent)
+// Module 6146 (getPageContent)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "initialize";
@@ -32,7 +32,7 @@ let closure_21;
 const require = arg1;
 function getPageContent(featureName, isKestrelTreatment) {
   let tmp = null;
-  if (featureName === require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
+  if (featureName === require(6147) /* EntitlementFeatureNames */.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
     const obj = { isKestrelTreatment };
     tmp = callback2(AlwaysCompressImagesSwitch, obj);
   }
@@ -61,7 +61,7 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       const obj1 = { style: tmp.compressionHint, variant: "text-xs/normal" };
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj1.children = intl2.string(require(1212) /* getSystemLocale */.t["wC0+Ph"]);
-      obj.subLabel = callback2(require(4126) /* Text */.Text, obj1);
+      obj.subLabel = callback2(require(4127) /* Text */.Text, obj1);
       obj.children = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
       tmp4 = callback2(View, obj);
     }
@@ -78,7 +78,7 @@ function PremiumUpsellImage(arg0) {
     if (!useReducedMotion) {
       if (null != image.uri) {
         obj = { url: image.uri, style, autoplay: true };
-        let tmp5 = callback2(require(8043) /* useAPNGPlayerControls */.APNGPlayer, obj);
+        let tmp5 = callback2(require(6153) /* useAPNGPlayerControls */.APNGPlayer, obj);
       }
       return tmp5;
     }

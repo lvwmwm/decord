@@ -1,10 +1,10 @@
-// Module ID: 14853
-// Function ID: 113269
+// Module ID: 14864
+// Function ID: 113397
 // Name: useDrawerOpen
-// Dependencies: [57, 31, 1457, 3981, 2]
+// Dependencies: [57, 31, 1457, 3982, 2]
 // Exports: useDrawerOpen
 
-// Module 14853 (useDrawerOpen)
+// Module 14864 (useDrawerOpen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

@@ -1,9 +1,9 @@
-// Module ID: 14086
-// Function ID: 107836
+// Module ID: 14097
+// Function ID: 107963
 // Name: MuxIntegration
 // Dependencies: [6, 7, 2]
 
-// Module 14086 (MuxIntegration)
+// Module 14097 (MuxIntegration)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 
@@ -60,7 +60,7 @@ const tmp2 = (() => {
   obj = {
     key: "getAppVersion",
     value() {
-      return "6065";
+      return "6075";
     }
   };
   items[1] = obj;

@@ -1,10 +1,10 @@
-// Module ID: 14081
-// Function ID: 107761
+// Module ID: 14092
+// Function ID: 107888
 // Name: useVideoSegmentAnalytics
-// Dependencies: [57, 31, 6944, 2]
+// Dependencies: [57, 31, 5935, 2]
 // Exports: default
 
-// Module 14081 (useVideoSegmentAnalytics)
+// Module 14092 (useVideoSegmentAnalytics)
 import _slicedToArray from "_slicedToArray";
 import closure_3 from "result";
 import result from "result";

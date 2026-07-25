@@ -1,10 +1,10 @@
-// Module ID: 9389
-// Function ID: 73256
+// Module ID: 9295
+// Function ID: 72781
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [31, 1838, 1355, 33, 8029, 1212, 1450, 566, 5048, 4561, 9390, 8047, 2]
+// Dependencies: [31, 1838, 1355, 33, 6138, 1212, 1450, 566, 5049, 4562, 9296, 9299, 2]
 // Exports: default
 
-// Module 9389 (RoleSubscriptionEmojiUpsellAlert)
+// Module 9295 (RoleSubscriptionEmojiUpsellAlert)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { StaticChannelRoute } from "set";

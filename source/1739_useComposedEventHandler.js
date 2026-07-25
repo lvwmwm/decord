@@ -1,5 +1,5 @@
 // Module ID: 1739
-// Function ID: 19494
+// Function ID: 19501
 // Name: useComposedEventHandler
 // Dependencies: [1687, 1727, 1729]
 

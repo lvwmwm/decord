@@ -1,10 +1,10 @@
-// Module ID: 9633
-// Function ID: 74946
+// Module ID: 9554
+// Function ID: 74533
 // Name: AnalyticsIcon
-// Dependencies: [31, 33, 689, 3833, 9634, 2]
+// Dependencies: [31, 33, 689, 3834, 9555, 2]
 // Exports: AnalyticsIcon
 
-// Module 9633 (AnalyticsIcon)
+// Module 9554 (AnalyticsIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const AnalyticsIcon = function AnalyticsIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9634) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9555) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9634) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(9555) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 15150
-// Function ID: 115316
+// Module ID: 15160
+// Function ID: 115444
 // Name: ThemeGrayIcon
-// Dependencies: [31, 33, 689, 3833, 15151, 2]
+// Dependencies: [31, 33, 689, 3834, 15161, 2]
 // Exports: ThemeGrayIcon
 
-// Module 15150 (ThemeGrayIcon)
+// Module 15160 (ThemeGrayIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ThemeGrayIcon = function ThemeGrayIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(15151) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(15161) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(15151) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(15161) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

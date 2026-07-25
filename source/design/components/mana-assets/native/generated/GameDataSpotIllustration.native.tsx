@@ -1,10 +1,10 @@
-// Module ID: 6072
-// Function ID: 50073
+// Module ID: 6992
+// Function ID: 59723
 // Name: GameDataSpotIllustration
-// Dependencies: [33, 5085, 6073, 2]
+// Dependencies: [33, 5085, 6993, 2]
 // Exports: GameDataSpotIllustration
 
-// Module 6072 (GameDataSpotIllustration)
+// Module 6992 (GameDataSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GameDataSpotIllustration.native.tsx");
@@ -27,7 +27,7 @@ export const GameDataSpotIllustration = function GameDataSpotIllustration(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6073) };
+  obj = { uri: importDefault(6993) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

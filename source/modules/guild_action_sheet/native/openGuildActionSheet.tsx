@@ -1,10 +1,10 @@
-// Module ID: 12966
-// Function ID: 100538
+// Module ID: 12977
+// Function ID: 100665
 // Name: openGuildActionSheet
-// Dependencies: [653, 5077, 675, 9384, 4098, 12967, 1934, 13025, 13031, 2]
+// Dependencies: [653, 1841, 675, 9290, 4099, 12978, 1935, 13036, 13042, 2]
 // Exports: default
 
-// Module 12966 (openGuildActionSheet)
+// Module 12977 (openGuildActionSheet)
 import ME from "ME";
 
 let closure_3;
@@ -17,33 +17,33 @@ export default function openGuildActionSheet(id) {
   if (arg1 === undefined) {
     flag = true;
   }
-  let obj = require(5077) /* isFavoritesGuildId */;
+  let obj = require(1841) /* isFavoritesGuildId */;
   if (!obj.isFavoritesGuildId(id.id)) {
     let obj1 = importDefault(675);
     obj = { type: "Guild Profile", guild_id: id.id };
     obj1.track(constants.OPEN_POPOUT, obj);
     if (obj4.shouldNSFWGateGuild(id.id)) {
       obj = { guild: id };
-      importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(12967, dependencyMap.paths), "NsfwGateGuildSettingsActionSheet", obj);
-      const obj7 = importDefault(4098);
+      importDefault(4099).openLazy(require(1935) /* maybeLoadBundle */(12978, dependencyMap.paths), "NsfwGateGuildSettingsActionSheet", obj);
+      const obj7 = importDefault(4099);
     } else {
       const features = id.features;
       const hasItem = features.has(constants2.HUB);
-      const openLazy = importDefault(4098).openLazy;
-      const tmp12 = require(1934) /* maybeLoadBundle */;
+      const openLazy = importDefault(4099).openLazy;
+      const tmp12 = require(1935) /* maybeLoadBundle */;
       if (hasItem) {
         const _HermesInternal2 = HermesInternal;
-        let tmp12Result = tmp12(13025, tmp9.paths);
+        let tmp12Result = tmp12(13036, tmp9.paths);
         obj1 = { guild: id, expanded: flag };
         openLazy(tmp12Result, "GuildActionSheet:" + id.id, obj1);
       } else {
         const _HermesInternal = HermesInternal;
-        tmp12Result = tmp12(13031, tmp9.paths);
+        tmp12Result = tmp12(13042, tmp9.paths);
         const obj2 = { guild: id, expanded: flag };
         openLazy(tmp12Result, "GuildActionSheet:" + id.id, obj2);
       }
-      const tmp10 = importDefault(4098);
+      const tmp10 = importDefault(4099);
     }
-    obj4 = require(9384) /* isNSFWInvite */;
+    obj4 = require(9290) /* isNSFWInvite */;
   }
 };
