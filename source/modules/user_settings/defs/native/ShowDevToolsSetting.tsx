@@ -1,9 +1,9 @@
-// Module ID: 14467
-// Function ID: 110572
+// Module ID: 14468
+// Function ID: 110577
 // Name: pressable
-// Dependencies: [13570, 10059, 14465, 13567, 13807, 2]
+// Dependencies: [13571, 10059, 14466, 13568, 13808, 2]
 
-// Module 14467 (pressable)
+// Module 14468 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -15,7 +15,7 @@ const pressable = createToggle.createPressable({
   onPress: require("navigateToDevTools").navigateToDevTools,
   usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
   useSearchTerms: function getAdditionalSearchTerms() {
-    const items = [...Object.values(require(13570) /* DevToolsScreens */.DevToolsScreens), ...Object.values(require(13570) /* DevToolsScreens */.PerformanceTestingScreens)];
+    const items = [...Object.values(require(13571) /* DevToolsScreens */.DevToolsScreens), ...Object.values(require(13571) /* DevToolsScreens */.PerformanceTestingScreens)];
     return items.map((headerTitle) => headerTitle.headerTitle);
   },
   withArrow: true
@@ -29,7 +29,7 @@ const obj = {
   onPress: require("navigateToDevTools").navigateToDevTools,
   usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
   useSearchTerms: function getAdditionalSearchTerms() {
-    const items = [...Object.values(require(13570) /* DevToolsScreens */.DevToolsScreens), ...Object.values(require(13570) /* DevToolsScreens */.PerformanceTestingScreens)];
+    const items = [...Object.values(require(13571) /* DevToolsScreens */.DevToolsScreens), ...Object.values(require(13571) /* DevToolsScreens */.PerformanceTestingScreens)];
     return items.map((headerTitle) => headerTitle.headerTitle);
   },
   withArrow: true

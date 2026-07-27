@@ -1,5 +1,5 @@
 // Module ID: 7558
-// Function ID: 60582
+// Function ID: 60583
 // Name: getInitialRouteName
 // Dependencies: [31, 33, 4131, 689, 4338, 5087, 7559, 7564, 7565, 7556, 491, 6692, 5517, 1212, 2]
 // Exports: default

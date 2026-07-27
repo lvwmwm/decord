@@ -1,10 +1,10 @@
-// Module ID: 10603
-// Function ID: 82656
+// Module ID: 10604
+// Function ID: 82661
 // Name: safeAreaInitJs
 // Dependencies: [5, 27, 477, 1247, 1184, 2]
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 10603 (safeAreaInitJs)
+// Module 10604 (safeAreaInitJs)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 

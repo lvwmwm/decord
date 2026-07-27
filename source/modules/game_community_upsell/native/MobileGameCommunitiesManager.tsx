@@ -1,9 +1,9 @@
-// Module ID: 16248
-// Function ID: 126111
+// Module ID: 16260
+// Function ID: 126158
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 12696, 14650, 14651, 15147, 12699, 12697, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 12697, 14651, 14652, 15160, 12700, 12698, 5078, 2]
 
-// Module 16248 (_createForOfIteratorHelperLoose)
+// Module 16260 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import DETECTABLE_GAME_TO_APPLICATION_ID_MAP from "DETECTABLE_GAME_TO_APPLICATION_ID_MAP";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

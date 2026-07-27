@@ -1,10 +1,10 @@
-// Module ID: 11467
-// Function ID: 89308
+// Module ID: 11468
+// Function ID: 89313
 // Name: LurkerLeavePromptModal
-// Dependencies: [31, 27, 1348, 1838, 3760, 653, 33, 4473, 5513, 4131, 6635, 4476, 1212, 8396, 1273, 10034, 1282, 11465, 5049, 2]
+// Dependencies: [31, 27, 1348, 1838, 3760, 653, 33, 4473, 5513, 4131, 6635, 4476, 1212, 8396, 1273, 10034, 1282, 11466, 5049, 2]
 // Exports: openLurkerLeavePrompt
 
-// Module 11467 (LurkerLeavePromptModal)
+// Module 11468 (LurkerLeavePromptModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -94,8 +94,8 @@ export const openLurkerLeavePrompt = function openLurkerLeavePrompt(guildId, onL
                 }
               }
               const obj3 = guildId(6635);
-              obj3.trackJoinClicked(guildId, outer1_9.LEAVE_PROMPT_LURKER, onLeave(11465).hasNavigatedAway(guildId));
-              const obj4 = onLeave(11465);
+              obj3.trackJoinClicked(guildId, outer1_9.LEAVE_PROMPT_LURKER, onLeave(11466).hasNavigatedAway(guildId));
+              const obj4 = onLeave(11466);
               onLeave(5049).joinGuild(guildId, { source: outer1_9.LEAVE_PROMPT_LURKER });
             }
       };

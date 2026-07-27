@@ -1,15 +1,9 @@
 // Module ID: 13345
-// Function ID: 102210
-// Dependencies: [13343]
+// Function ID: 102213
+// Dependencies: []
 
 // Module 13345
 
-export default (arg0, arg1) => {
-  const tmp = require(13343)(arg0);
-  if (tmp < 0) {
-    let tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
-  }
-  return tmp3;
-};
+export default Math.trunc || (function trunc(arg0) {
+  return +arg0 > 0 ? floor : ceil(+arg0);
+});

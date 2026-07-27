@@ -1,5 +1,5 @@
 // Module ID: 7815
-// Function ID: 62036
+// Function ID: 62037
 // Name: InstagramNeutralIcon
 // Dependencies: [31, 33, 689, 3834, 7816, 2]
 // Exports: InstagramNeutralIcon

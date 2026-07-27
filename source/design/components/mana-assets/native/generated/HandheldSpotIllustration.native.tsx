@@ -1,5 +1,5 @@
 // Module ID: 7166
-// Function ID: 59984
+// Function ID: 59985
 // Name: HandheldSpotIllustration
 // Dependencies: [33, 5085, 7167, 2]
 // Exports: HandheldSpotIllustration

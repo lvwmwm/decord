@@ -1,18 +1,18 @@
-// Module ID: 14080
-// Function ID: 107769
+// Module ID: 14081
+// Function ID: 107774
 // Name: useDismissSheetOrCollapseDock
-// Dependencies: [5, 31, 4977, 14059, 14077, 4099, 10431, 14081, 9406, 9407, 9408, 5960, 5959, 4980, 5949, 2]
+// Dependencies: [5, 31, 4977, 14060, 14078, 4099, 10432, 14082, 9406, 9407, 9408, 5960, 5959, 4980, 5949, 2]
 // Exports: useMobileActivityPressHandler, useWatchTaskPressHandler
 
-// Module 14080 (useDismissSheetOrCollapseDock)
+// Module 14081 (useDismissSheetOrCollapseDock)
 import showActionSheet from "showActionSheet";
 import result from "result";
 import { QuestDockMode } from "QuestsExperimentLocations";
 
 const require = arg1;
 function useDismissSheetOrCollapseDock() {
-  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(14059).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = React.useContext(setRestingQuestDockMode(14077).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(14060).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = React.useContext(setRestingQuestDockMode(14078).QuestBottomSheetContext).isInQuestBottomSheet;
   const items = [isInQuestBottomSheet, setRestingQuestDockMode];
   return React.useCallback(() => {
     if (isInQuestBottomSheet) {
@@ -30,7 +30,7 @@ export const useWatchTaskPressHandler = function useWatchTaskPressHandler(questI
   const sourceQuestContent = questId.sourceQuestContent;
   let tmp = useDismissSheetOrCollapseDock();
   const dependencyMap = tmp;
-  const questImpression = questId(10431).useQuestImpression();
+  const questImpression = questId(10432).useQuestImpression();
   const items = [questId, tmp, questImpression, sourceQuestContent];
   return React.useCallback(() => {
     tmp = tmp();

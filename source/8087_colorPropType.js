@@ -1,5 +1,5 @@
 // Module ID: 8087
-// Function ID: 64418
+// Function ID: 64419
 // Name: colorPropType
 // Dependencies: [8088]
 

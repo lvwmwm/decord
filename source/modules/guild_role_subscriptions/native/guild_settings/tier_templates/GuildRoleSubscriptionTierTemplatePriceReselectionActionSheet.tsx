@@ -1,10 +1,10 @@
-// Module ID: 16541
-// Function ID: 128907
+// Module ID: 16553
+// Function ID: 128954
 // Name: PriceOptionRow
-// Dependencies: [57, 31, 27, 1852, 482, 33, 4131, 689, 3849, 8278, 5085, 16445, 15347, 4127, 1212, 5616, 14181, 1557, 5187, 5189, 1273, 4545, 4099, 2]
+// Dependencies: [57, 31, 27, 1852, 482, 33, 4131, 689, 3849, 8278, 5085, 16457, 15360, 4127, 1212, 5616, 14182, 1557, 5187, 5189, 1273, 4545, 4099, 2]
 // Exports: default
 
-// Module 16541 (PriceOptionRow)
+// Module 16553 (PriceOptionRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -46,9 +46,9 @@ function PriceOptionRow(selected) {
   const tmp6 = callback2;
   const tmp7 = importDefault;
   if (selected) {
-    let tmp10 = 16445;
+    let tmp10 = 16457;
   } else {
-    tmp10 = 15347;
+    tmp10 = 15360;
   }
   obj.source = tmp7(tmp10);
   const items1 = [tmp6(importDefault(5085), obj), ];
@@ -58,7 +58,7 @@ function PriceOptionRow(selected) {
   const tmp8 = importDefault(5085);
   obj2.price = require(5616) /* formatSingleCurrencyPrice */.formatPrice(price, CurrencyCodes.USD);
   const obj6 = require(5616) /* formatSingleCurrencyPrice */;
-  obj2.interval = require(14181) /* getBenefitKey */.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
+  obj2.interval = require(14182) /* getBenefitKey */.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
   obj1.children = intl.format(require(1212) /* getSystemLocale */.t.CgmBaG, obj2);
   items1[1] = callback2(require(4127) /* Text */.Text, obj1);
   obj.children = items1;

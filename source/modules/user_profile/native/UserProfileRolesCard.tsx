@@ -1,5 +1,5 @@
 // Module ID: 5485
-// Function ID: 46835
+// Function ID: 46836
 // Name: RoleDot
 // Dependencies: [31, 27, 1918, 1911, 653, 33, 4131, 689, 5486, 3804, 5489, 5490, 3831, 1212, 5487, 5495, 5506, 4127, 4661, 566, 5508, 5509, 2]
 // Exports: default

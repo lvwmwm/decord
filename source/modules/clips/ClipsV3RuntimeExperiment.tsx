@@ -1,5 +1,5 @@
 // Module ID: 4670
-// Function ID: 40555
+// Function ID: 40556
 // Name: isClipsV3Enabled
 // Dependencies: [1428, 2]
 // Exports: getClipsRuntime, isClipsV3MLEnabled, setActiveClipsRuntime, useIsClipsV3Enabled, useIsClipsV3MLEnabled

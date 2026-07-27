@@ -1,5 +1,5 @@
 // Module ID: 8376
-// Function ID: 66994
+// Function ID: 66995
 // Name: renderTooltipItem
 // Dependencies: [57, 31, 27, 33, 3992, 8377, 3850, 8373, 8374, 2]
 // Exports: AnimatedCoachmark

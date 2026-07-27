@@ -1,10 +1,10 @@
-// Module ID: 10832
-// Function ID: 84062
+// Module ID: 10833
+// Function ID: 84067
 // Name: isSocialLayerApplication
 // Dependencies: [653, 5664, 8882, 2]
 // Exports: isSocialLayerSDKAuthorization
 
-// Module 10832 (isSocialLayerApplication)
+// Module 10833 (isSocialLayerApplication)
 import { ApplicationFlags } from "ME";
 
 function isSocialLayerApplication(application) {

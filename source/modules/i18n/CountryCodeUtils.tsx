@@ -1,5 +1,5 @@
 // Module ID: 3812
-// Function ID: 31446
+// Function ID: 31447
 // Name: getCountryCodeByCountryName
 // Dependencies: [3813, 44, 1212, 3814, 3815, 2]
 // Exports: convertToAlpha2, getCountryCodeByAlpha2, getDefaultCountryCode, getI18NCountryName, getI18NCountryNameSafe

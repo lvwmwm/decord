@@ -1,10 +1,10 @@
-// Module ID: 14245
-// Function ID: 109455
+// Module ID: 14246
+// Function ID: 109460
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
-// Dependencies: [31, 27, 14244, 33, 4131, 689, 6504, 1324, 3978, 5166, 4127, 2]
+// Dependencies: [31, 27, 14245, 33, 4131, 689, 6504, 1324, 3978, 5166, 4127, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14245 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+// Module 14246 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
 import "result";
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";

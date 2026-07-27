@@ -1,5 +1,5 @@
 // Module ID: 8482
-// Function ID: 67561
+// Function ID: 67562
 // Name: parsePercentageRGBColor
 // Dependencies: []
 

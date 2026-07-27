@@ -1,5 +1,5 @@
 // Module ID: 6028
-// Function ID: 54033
+// Function ID: 54034
 // Name: getForumChannelSessionId
 // Dependencies: [5041, 3761, 6029, 6014, 1348, 4469, 3759, 4468, 6001, 653, 1355, 1211, 6030, 1357, 6031, 21, 6032, 2]
 // Exports: collectForumPostAnalyticsMetadata, convertSortOrderToReadableString, getForumPostDraftAppliedTagIds, getForumPostDraftNumAttachments, getNumActiveThreads

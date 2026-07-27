@@ -1,5 +1,5 @@
 // Module ID: 8576
-// Function ID: 68144
+// Function ID: 68145
 // Name: GameProfileLinkAccount
 // Dependencies: [31, 27, 1850, 33, 4131, 689, 5465, 566, 8418, 4127, 1212, 5085, 1273, 4544, 8577, 2]
 // Exports: default

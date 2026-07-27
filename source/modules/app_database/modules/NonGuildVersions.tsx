@@ -1,5 +1,5 @@
 // Module ID: 5889
-// Function ID: 52245
+// Function ID: 52246
 // Name: NonGuildVersions
 // Dependencies: [5, 6, 7, 3948, 3, 5882, 22, 1883, 664, 2]
 
@@ -25,7 +25,7 @@ let tmp4 = (() => {
               return self.handleConnectionOpen(arg0, arg1);
             }
       };
-      obj = f52252(outer1_2[5]);
+      obj = f52253(outer1_2[5]);
       if (obj.isCacheEnabled()) {
         tmp2 = outer1_6;
         tmp3 = NonGuildVersions;

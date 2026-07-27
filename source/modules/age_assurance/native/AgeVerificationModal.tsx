@@ -1,5 +1,5 @@
 // Module ID: 6712
-// Function ID: 59243
+// Function ID: 59244
 // Name: AgeVerifyScreen
 // Dependencies: [31, 6691, 33, 6698, 3982, 4348, 6702, 4131, 689, 4338, 6695, 1212, 5517, 2]
 // Exports: default

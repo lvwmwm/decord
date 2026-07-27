@@ -1,5 +1,5 @@
 // Module ID: 6687
-// Function ID: 59030
+// Function ID: 59031
 // Name: getKeyboardIsOpen
 // Dependencies: [1452, 1453, 1454, 1555, 2]
 // Exports: default, subscribeToKeyboardIsOpen

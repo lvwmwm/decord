@@ -1,10 +1,10 @@
-// Module ID: 13026
-// Function ID: 100828
+// Module ID: 13027
+// Function ID: 100833
 // Name: items
-// Dependencies: [31, 33, 12987, 8463, 2]
+// Dependencies: [31, 33, 12988, 8463, 2]
 // Exports: GuildBadgeCaterpillar
 
-// Module 13026 (items)
+// Module 13027 (items)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -37,7 +37,7 @@ export const GuildBadgeCaterpillar = function GuildBadgeCaterpillar(width) {
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
-  let obj1 = require(12987) /* getTransformedBadgeColors */;
+  let obj1 = require(12988) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_4, primaryTintColor, primaryTintLuminances: closure_5, primaryLuminanceWeights: items, secondaryBaseColors: table, secondaryTintColor, secondaryTintLuminances: closure_8, secondaryLuminanceWeights: items1 };
   const transformedBadgeColors = obj1.getTransformedBadgeColors(obj);
   ({ primaryColorsTransformed, secondaryColorsTransformed } = transformedBadgeColors);

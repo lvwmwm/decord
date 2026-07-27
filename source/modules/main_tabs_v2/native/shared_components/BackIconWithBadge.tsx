@@ -1,10 +1,10 @@
-// Module ID: 15187
-// Function ID: 115664
+// Module ID: 15200
+// Function ID: 115713
 // Name: IconWithBadge
-// Dependencies: [31, 27, 5868, 33, 4131, 689, 566, 15178, 1273, 7909, 478, 5091, 5119, 4085, 2]
+// Dependencies: [31, 27, 5868, 33, 4131, 689, 566, 15191, 1273, 7909, 478, 5091, 5119, 4085, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 15187 (IconWithBadge)
+// Module 15200 (IconWithBadge)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,7 +31,7 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(15178)().value;
+    num2 = memo(15191)().value;
   }
   const sum = num + num2;
   _require = sum;

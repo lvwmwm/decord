@@ -1,10 +1,10 @@
-// Module ID: 16586
-// Function ID: 129443
+// Module ID: 16598
+// Function ID: 129490
 // Name: getCommonErrorContext
 // Dependencies: [4178, 4203, 1907, 4217, 4228, 4195, 2]
 // Exports: getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 16586 (getCommonErrorContext)
+// Module 16598 (getCommonErrorContext)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

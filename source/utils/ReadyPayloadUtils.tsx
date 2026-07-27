@@ -1,10 +1,10 @@
-// Module ID: 12670
-// Function ID: 98317
+// Module ID: 12671
+// Function ID: 98322
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1352, 1883, 5882, 5886, 1903, 5887, 1899, 22, 44, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 12670 (_createForOfIteratorHelperLoose)
+// Module 12671 (_createForOfIteratorHelperLoose)
 import { createChannelRecordFromServer as closure_3 } from "_callSuper";
 
 function _createForOfIteratorHelperLoose(iterable) {

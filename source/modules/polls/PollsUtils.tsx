@@ -1,5 +1,5 @@
 // Module ID: 6020
-// Function ID: 53806
+// Function ID: 53807
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1348, 6021, 4350, 3759, 3768, 6088, 653, 491, 566, 5604, 664, 1833, 4361, 1212, 6023, 22, 4320, 2]
 // Exports: createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel

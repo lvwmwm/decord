@@ -1,5 +1,5 @@
 // Module ID: 8824
-// Function ID: 69863
+// Function ID: 69864
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 5, 1194, 4178, 4203, 4217, 1850, 8825, 8826, 653, 1921, 8827, 8834, 8809, 8828, 1212, 3970, 3713, 664, 44, 206, 507, 1184, 4471, 4320, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, validateSecureFramesKeyConsistent

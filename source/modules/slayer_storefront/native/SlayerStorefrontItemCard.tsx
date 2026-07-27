@@ -1,5 +1,5 @@
 // Module ID: 7991
-// Function ID: 63706
+// Function ID: 63707
 // Name: SlayerStorefrontItemCard
 // Dependencies: [31, 27, 33, 4131, 689, 5609, 7992, 5780, 5085, 4555, 2]
 // Exports: default

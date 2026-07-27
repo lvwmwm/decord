@@ -1,10 +1,10 @@
-// Module ID: 14121
-// Function ID: 108582
+// Module ID: 14122
+// Function ID: 108587
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [31, 27, 33, 4131, 689, 4067, 3841, 3835, 3975, 10427, 9423, 1212, 6570, 4127, 4661, 14122, 4555, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4067, 3841, 3835, 3975, 10428, 9423, 1212, 6570, 4127, 4661, 14123, 4555, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 14121 (QuestOrbMultiplierPerkPill)
+// Module 14122 (QuestOrbMultiplierPerkPill)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -52,8 +52,8 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
   items[1] = obj6.hexOpacityToRgba(token1, 0.5);
   let obj7 = require(3835) /* map */;
   const token3 = obj7.useToken(orbMultiplierEligibility(689).colors.BACKGROUND_BRAND);
-  const questOrbRewardMultiplier = require(10427) /* _createForOfIteratorHelperLoose */.useQuestOrbRewardMultiplier(questId.questId);
-  const obj9 = require(10427) /* _createForOfIteratorHelperLoose */;
+  const questOrbRewardMultiplier = require(10428) /* _createForOfIteratorHelperLoose */.useQuestOrbRewardMultiplier(questId.questId);
+  const obj9 = require(10428) /* _createForOfIteratorHelperLoose */;
   const result = require(9423) /* items */.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
   const tmp10 = orbMultiplierEligibility === require(9423) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
   let closure_6 = tmp10;

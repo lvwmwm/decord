@@ -1,10 +1,10 @@
-// Module ID: 10265
-// Function ID: 79375
+// Module ID: 10266
+// Function ID: 79380
 // Name: NotificationSettingsMockChannels
-// Dependencies: [31, 27, 4327, 33, 4131, 689, 1212, 10266, 4639, 4127, 1273, 2]
+// Dependencies: [31, 27, 4327, 33, 4131, 689, 1212, 10267, 4639, 4127, 1273, 2]
 // Exports: default
 
-// Module 10265 (NotificationSettingsMockChannels)
+// Module 10266 (NotificationSettingsMockChannels)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";

@@ -1,5 +1,5 @@
 // Module ID: 8669
-// Function ID: 68825
+// Function ID: 68826
 // Name: usePreviewCollectibleProduct
 // Dependencies: [57, 31, 5775, 1875, 5776, 5777, 7984, 1877, 7880, 2]
 // Exports: usePreviewCollectibleProduct

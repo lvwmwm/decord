@@ -1,5 +1,5 @@
 // Module ID: 4314
-// Function ID: 37822
+// Function ID: 37823
 // Name: hasStream
 // Dependencies: [2]
 // Exports: hasStream

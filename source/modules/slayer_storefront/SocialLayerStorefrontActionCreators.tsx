@@ -1,5 +1,5 @@
 // Module ID: 6631
-// Function ID: 58617
+// Function ID: 58618
 // Name: _fetchSocialLayerStorefront
 // Dependencies: [5, 6443, 5611, 653, 664, 686, 5609, 6444, 507, 1832, 561, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState

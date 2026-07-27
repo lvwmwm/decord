@@ -1,9 +1,9 @@
-// Module ID: 15847
-// Function ID: 122390
+// Module ID: 15859
+// Function ID: 122437
 // Name: ChannelButtonIcons
-// Dependencies: [31, 27, 4168, 1353, 1348, 4149, 33, 4131, 8858, 1212, 4545, 5173, 566, 4321, 8805, 8174, 689, 9975, 4320, 15848, 4542, 6557, 15771, 15845, 4602, 8056, 669, 15844, 15849, 2]
+// Dependencies: [31, 27, 4168, 1353, 1348, 4149, 33, 4131, 8858, 1212, 4545, 5173, 566, 4321, 8805, 8174, 689, 9975, 4320, 15860, 4542, 6557, 15783, 15857, 4602, 8056, 669, 15856, 15861, 2]
 
-// Module 15847 (ChannelButtonIcons)
+// Module 15859 (ChannelButtonIcons)
 import importAllResult from "result";
 import { View } from "isStableStreamParticipant";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -70,7 +70,7 @@ function StreamButton(arg0) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.I0mOAs, { username: name });
   obj.text = name;
-  obj.icon = importDefault(15848);
+  obj.icon = importDefault(15860);
   obj.iconPosition = "start";
   obj.onPress = onPress;
   return callback(require(8174) /* TwinButtons */.HeaderButton, obj);
@@ -97,7 +97,7 @@ function ActivityButton(participant) {
   obj.iconPosition = "start";
   obj.onPress = participant.onPress;
   obj.shrink = true;
-  const items1 = [callback(participant(8174).HeaderButton, obj), callback(importDefault(15771), { applicationId: participant.applicationId })];
+  const items1 = [callback(participant(8174).HeaderButton, obj), callback(importDefault(15783), { applicationId: participant.applicationId })];
   obj.children = items1;
   return closure_10(participant(4542).Stack, obj);
 }
@@ -108,7 +108,7 @@ function UserButton(participant) {
   let obj = importDefault(4320);
   const name = obj.useName(guildId, context.channelId, participant.user);
   const tmp = callback3();
-  const voicePanelHeaderUserStateIcons = require(15845) /* _createForOfIteratorHelperLoose */.useVoicePanelHeaderUserStateIcons(participant, guildId, tmp.userIcons);
+  const voicePanelHeaderUserStateIcons = require(15857) /* _createForOfIteratorHelperLoose */.useVoicePanelHeaderUserStateIcons(participant, guildId, tmp.userIcons);
   obj = { accessibilityRole: "button" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityHint = intl.string(require(1212) /* getSystemLocale */.t["Y2b7+e"]);
@@ -168,7 +168,7 @@ const memoResult = importAllResult.memo(function VoicePanelTitleButton() {
     }
     return id;
   });
-  const tmp3 = channelId(15844)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(15856)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = importAllResult.useCallback(() => {
     const result = guildId(outer1_2[28]).openVoicePanelSettingsActionSheet(guildId, channelId);

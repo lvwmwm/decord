@@ -1,10 +1,10 @@
-// Module ID: 11890
-// Function ID: 92027
+// Module ID: 11891
+// Function ID: 92032
 // Name: getStyleConfig
-// Dependencies: [31, 27, 1922, 1918, 1838, 5510, 653, 1455, 33, 4131, 3835, 689, 4127, 1212, 11891, 566, 4940, 21, 9700, 5513, 11892, 1273, 8138, 5462, 8045, 11893, 8297, 4099, 3983, 1198, 5582, 3990, 1555, 11894, 4544, 5509, 2]
+// Dependencies: [31, 27, 1922, 1918, 1838, 5510, 653, 1455, 33, 4131, 3835, 689, 4127, 1212, 11892, 566, 4940, 21, 9700, 5513, 11893, 1273, 8138, 5462, 8045, 11894, 8297, 4099, 3983, 1198, 5582, 3990, 1555, 11895, 4544, 5509, 2]
 // Exports: default
 
-// Module 11890 (getStyleConfig)
+// Module 11891 (getStyleConfig)
 import getHighestActiveScreenIndex from "getHighestActiveScreenIndex";
 import { View } from "showActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ import closure_7 from "_createForOfIteratorHelperLoose";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import { Routes } from "ME";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import jsxProd from "module_11894";
+import jsxProd from "module_11895";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_11;
@@ -79,7 +79,7 @@ function Bio(arg0) {
       obj.children = intl.string(require(1212) /* getSystemLocale */.t.ZzAR2Y);
       const items = [callback(Heading, obj), ];
       obj = { bio: previewBio, userId, textVariant: getStyleConfig(themeType).textVariant, lineClamp };
-      items[1] = callback(importDefault(11891), obj);
+      items[1] = callback(importDefault(11892), obj);
       obj.children = items;
       tmp2 = callback2(View, obj);
     }
@@ -162,7 +162,7 @@ function MemberJoinDates(userId) {
 }
 function FriendsSinceDate(themeType) {
   themeType = themeType.themeType;
-  let obj = require(11892) /* useFriendsSinceDate */;
+  let obj = require(11893) /* useFriendsSinceDate */;
   const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
   let tmp2 = null;
   if (null != friendsSinceDate) {

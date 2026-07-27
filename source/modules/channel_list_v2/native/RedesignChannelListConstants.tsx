@@ -1,10 +1,10 @@
-// Module ID: 10222
-// Function ID: 79144
+// Module ID: 10223
+// Function ID: 79149
 // Name: hairlineWidth
 // Dependencies: [27, 478, 9849, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 10222 (hairlineWidth)
+// Module 10223 (hairlineWidth)
 import isWindows from "isWindows";
 
 let num = 20;

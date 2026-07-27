@@ -1,5 +1,5 @@
 // Module ID: 9433
-// Function ID: 73624
+// Function ID: 73625
 // Name: items
 // Dependencies: [4043, 2]
 // Exports: getVoiceChannelListInviteExperiment, useVoiceChannelListInviteExperiment

@@ -1,5 +1,5 @@
 // Module ID: 4473
-// Function ID: 39528
+// Function ID: 39529
 // Name: useAlertStore
 // Dependencies: [57, 621, 682, 4474, 4475, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert

@@ -1,5 +1,5 @@
 // Module ID: 3942
-// Function ID: 32479
+// Function ID: 32480
 // Name: colorToHex
 // Dependencies: [57, 31, 1278, 3943, 1322, 689, 666, 3975, 3976, 3945, 3977, 3978, 4067, 4064, 2]
 // Exports: getEmbedBackground, getEmbedScrollGradientBackground, getGradientThemeMetadata, useGradientValue

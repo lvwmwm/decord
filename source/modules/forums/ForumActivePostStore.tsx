@@ -1,5 +1,5 @@
 // Module ID: 6013
-// Function ID: 53656
+// Function ID: 53657
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 5041, 6014, 1194, 1348, 4143, 1907, 1357, 1359, 22, 6015, 21, 1390, 566, 686, 2]
 // Exports: computeThreadIdsSnapshot

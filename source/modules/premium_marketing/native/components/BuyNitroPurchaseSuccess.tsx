@@ -1,5 +1,5 @@
 // Module ID: 6607
-// Function ID: 58473
+// Function ID: 58474
 // Name: getActivatedBody
 // Dependencies: [31, 6171, 1852, 33, 1212, 4473, 4476, 2]
 // Exports: presentBuyNitroPurchaseSuccess

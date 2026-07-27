@@ -1,9 +1,9 @@
-// Module ID: 13943
-// Function ID: 106680
+// Module ID: 13944
+// Function ID: 106685
 // Name: toggle
-// Dependencies: [31, 7697, 653, 13789, 3804, 6449, 1360, 10059, 1212, 2]
+// Dependencies: [31, 7697, 653, 13790, 3804, 6449, 1360, 10059, 1212, 2]
 
-// Module 13943 (toggle)
+// Module 13944 (toggle)
 import result from "result";
 import { FriendSourceFlags } from "ME";
 import createToggle from "createToggle";
@@ -34,7 +34,7 @@ createToggle = {
     FriendSourceFlagsSetting2.updateSetting(addFlagResult);
   },
   useIsDisabled() {
-    return require(13789) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(13790) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

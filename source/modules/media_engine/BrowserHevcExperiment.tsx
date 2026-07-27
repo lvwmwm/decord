@@ -1,9 +1,9 @@
-// Module ID: 12882
-// Function ID: 100097
+// Module ID: 12883
+// Function ID: 100102
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12882 (apexExperiment)
+// Module 12883 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2025-08-browser-hevc", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

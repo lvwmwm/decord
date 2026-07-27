@@ -1,5 +1,5 @@
 // Module ID: 7748
-// Function ID: 61705
+// Function ID: 61706
 // Name: createStageStartSystemMessage
 // Dependencies: [7684, 1212, 7686, 7687, 2]
 // Exports: createStageStartSystemMessage

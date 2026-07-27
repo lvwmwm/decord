@@ -1,5 +1,5 @@
 // Module ID: 9498
-// Function ID: 74085
+// Function ID: 74086
 // Name: useIsReportToModEnabled
 // Dependencies: [31, 1838, 4350, 566, 5763, 5762, 6000, 5685, 5656, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId

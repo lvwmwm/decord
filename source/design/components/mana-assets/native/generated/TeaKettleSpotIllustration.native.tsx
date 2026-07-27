@@ -1,5 +1,5 @@
 // Module ID: 7510
-// Function ID: 60500
+// Function ID: 60501
 // Name: TeaKettleSpotIllustration
 // Dependencies: [33, 5085, 7511, 2]
 // Exports: TeaKettleSpotIllustration

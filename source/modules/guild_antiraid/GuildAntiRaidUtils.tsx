@@ -1,5 +1,5 @@
 // Module ID: 7738
-// Function ID: 61679
+// Function ID: 61680
 // Name: hasDetectedRaid
 // Dependencies: [7739, 3713, 7740, 1212, 2]
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown

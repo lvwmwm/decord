@@ -1,5 +1,5 @@
 // Module ID: 7762
-// Function ID: 61734
+// Function ID: 61735
 // Name: createGuildReportRaidSystemMessage
 // Dependencies: [1348, 1838, 7677, 7684, 7755, 7686, 7756, 7687, 1212, 1395, 1392, 2]
 // Exports: createGuildReportRaidSystemMessage

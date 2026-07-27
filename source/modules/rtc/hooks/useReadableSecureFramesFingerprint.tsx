@@ -1,5 +1,5 @@
 // Module ID: 8831
-// Function ID: 69974
+// Function ID: 69975
 // Name: useReadableSecureFramesFingerprint
 // Dependencies: [31, 206, 8809, 2]
 // Exports: useReadableSecureFramesFingerprint

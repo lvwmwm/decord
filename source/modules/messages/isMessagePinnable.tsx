@@ -1,5 +1,5 @@
 // Module ID: 9496
-// Function ID: 74081
+// Function ID: 74082
 // Name: isMessagePinnable
 // Dependencies: [3759, 653, 5870, 5996, 2]
 // Exports: default

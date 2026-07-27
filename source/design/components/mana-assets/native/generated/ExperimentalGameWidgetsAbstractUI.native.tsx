@@ -1,5 +1,5 @@
 // Module ID: 6964
-// Function ID: 59681
+// Function ID: 59682
 // Name: ExperimentalGameWidgetsAbstractUI
 // Dependencies: [33, 5085, 6965, 2]
 // Exports: ExperimentalGameWidgetsAbstractUI

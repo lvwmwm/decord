@@ -1,12 +1,12 @@
-// Module ID: 11909
-// Function ID: 92200
+// Module ID: 11910
+// Function ID: 92205
 // Name: removeCustomStatus
-// Dependencies: [11907, 2]
+// Dependencies: [11908, 2]
 // Exports: default
 
-// Module 11909 (removeCustomStatus)
+// Module 11910 (removeCustomStatus)
 const result = require("set").fileFinishedImporting("modules/custom_status/utils/removeCustomStatus.tsx");
 
 export default function removeCustomStatus() {
-  importDefault(11907)({ text: "", emojiInfo: null, clearAfter: null });
+  importDefault(11908)({ text: "", emojiInfo: null, clearAfter: null });
 };

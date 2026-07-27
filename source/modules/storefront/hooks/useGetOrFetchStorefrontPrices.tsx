@@ -1,5 +1,5 @@
 // Module ID: 8613
-// Function ID: 68469
+// Function ID: 68470
 // Name: useGetOrFetchStorefrontPricesForApplicationId
 // Dependencies: [31, 8614, 2]
 // Exports: useGetOrFetchStorefrontPricesForApplicationId, useGetOrFetchStorefrontPricesForSkuIds

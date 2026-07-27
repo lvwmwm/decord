@@ -1,10 +1,10 @@
-// Module ID: 12265
-// Function ID: 95782
+// Module ID: 12266
+// Function ID: 95787
 // Name: GiftCodeRedeemError
-// Dependencies: [31, 27, 33, 4131, 689, 1457, 5121, 12266, 12267, 4127, 1212, 4544, 4338, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1457, 5121, 12267, 12268, 4127, 1212, 4544, 4338, 2]
 // Exports: default
 
-// Module 12265 (GiftCodeRedeemError)
+// Module 12266 (GiftCodeRedeemError)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,9 +36,9 @@ export default function GiftCodeRedeemError(children) {
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false };
   const obj1 = {};
   if (theme.dark) {
-    let tmp7Result = tmp7(12266);
+    let tmp7Result = tmp7(12267);
   } else {
-    tmp7Result = tmp7(12267);
+    tmp7Result = tmp7(12268);
   }
   obj1.source = tmp7Result;
   const items = [callback(closure_3, obj1), , ];

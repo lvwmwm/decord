@@ -1,10 +1,10 @@
-// Module ID: 11355
-// Function ID: 88265
+// Module ID: 11356
+// Function ID: 88270
 // Name: useVoiceMessageTooltip
-// Dependencies: [31, 1452, 11090, 1212, 6687, 8369, 2]
+// Dependencies: [31, 1452, 11091, 1212, 6687, 8369, 2]
 // Exports: default
 
-// Module 11355 (useVoiceMessageTooltip)
+// Module 11356 (useVoiceMessageTooltip)
 import result from "result";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";

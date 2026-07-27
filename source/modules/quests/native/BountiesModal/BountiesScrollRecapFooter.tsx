@@ -1,10 +1,10 @@
-// Module ID: 14007
-// Function ID: 107183
+// Module ID: 14008
+// Function ID: 107188
 // Name: BountiesScrollRecapFooter
 // Dependencies: [31, 27, 4123, 33, 4131, 689, 477, 1212, 4127, 8637, 566, 3843, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 14007 (BountiesScrollRecapFooter)
+// Module 14008 (BountiesScrollRecapFooter)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

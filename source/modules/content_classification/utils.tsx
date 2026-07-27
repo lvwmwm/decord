@@ -1,5 +1,5 @@
 // Module ID: 7966
-// Function ID: 63436
+// Function ID: 63437
 // Name: isAgeRestrictedContentClassification
 // Dependencies: [5641, 5643, 2]
 // Exports: isAgeRestrictedContentClassification

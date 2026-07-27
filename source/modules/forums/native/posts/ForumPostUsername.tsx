@@ -1,10 +1,10 @@
-// Module ID: 11119
-// Function ID: 86520
+// Module ID: 11120
+// Function ID: 86525
 // Name: ForumPostUsername
-// Dependencies: [31, 27, 4123, 11115, 33, 4131, 9065, 1358, 10826, 11120, 566, 7685, 1273, 4127, 2]
+// Dependencies: [31, 27, 4123, 11116, 33, 4131, 9065, 1358, 10827, 11121, 566, 7685, 1273, 4127, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 11119 (ForumPostUsername)
+// Module 11120 (ForumPostUsername)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ function ForumPostUsername(arg0) {
   if (useForumChannelStore({ thread }.thread.parent_id).layoutType === require(1358) /* set */.ForumLayout.GRID) {
     num = 72;
   }
-  const diff = importDefault(10826)() - require(11120) /* GIFIcon */.GRID_HORIZONTAL_PADDING - num;
+  const diff = importDefault(10827)() - require(11121) /* GIFIcon */.GRID_HORIZONTAL_PADDING - num;
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.roleStyle);

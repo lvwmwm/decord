@@ -1,9 +1,9 @@
-// Module ID: 11687
-// Function ID: 90679
+// Module ID: 11688
+// Function ID: 90684
 // Name: WELCOME_SCREEN_TYPE
 // Dependencies: [2]
 
-// Module 11687 (WELCOME_SCREEN_TYPE)
+// Module 11688 (WELCOME_SCREEN_TYPE)
 const result = require("set").fileFinishedImporting("modules/welcome_screen/WelcomeScreenConstants.tsx");
 
 export const WELCOME_SCREEN_TYPE = "Guild Welcome Screen";

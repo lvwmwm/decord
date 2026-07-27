@@ -1,10 +1,10 @@
-// Module ID: 15821
-// Function ID: 122120
+// Module ID: 15833
+// Function ID: 122167
 // Name: isVoicePanelParticipantFocusable
 // Dependencies: [1347, 4144, 4150, 4178, 4149, 9981, 1327, 566, 2]
 // Exports: default
 
-// Module 15821 (isVoicePanelParticipantFocusable)
+// Module 15833 (isVoicePanelParticipantFocusable)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

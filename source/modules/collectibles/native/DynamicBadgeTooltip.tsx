@@ -1,5 +1,5 @@
 // Module ID: 8671
-// Function ID: 68840
+// Function ID: 68841
 // Name: DynamicBadgeTooltip
 // Dependencies: [57, 31, 33, 1212, 8369, 4661, 2]
 // Exports: DynamicBadgeTooltip

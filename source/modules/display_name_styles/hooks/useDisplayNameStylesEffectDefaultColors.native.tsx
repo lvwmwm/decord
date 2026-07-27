@@ -1,5 +1,5 @@
 // Module ID: 8324
-// Function ID: 66832
+// Function ID: 66833
 // Name: useDisplayNameStylesEffectDefaultColors
 // Dependencies: [31, 1862, 665, 3835, 689, 1863, 2]
 // Exports: default

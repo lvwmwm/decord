@@ -1,5 +1,5 @@
 // Module ID: 9437
-// Function ID: 73653
+// Function ID: 73654
 // Name: getChannelAndRecipientsFromInvite
 // Dependencies: [1352, 2]
 // Exports: default

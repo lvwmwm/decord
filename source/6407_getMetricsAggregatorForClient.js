@@ -1,5 +1,5 @@
 // Module ID: 6407
-// Function ID: 57603
+// Function ID: 57604
 // Name: getMetricsAggregatorForClient
 // Dependencies: [6307, 6310, 6312, 6338, 6316, 6339, 6311, 6408, 6325, 6345, 6346]
 

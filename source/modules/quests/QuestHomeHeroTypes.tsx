@@ -1,5 +1,5 @@
 // Module ID: 9429
-// Function ID: 73572
+// Function ID: 73573
 // Name: questHomeHeroFromServer
 // Dependencies: [9415, 9430, 2]
 // Exports: questHomeHeroFromServer

@@ -1,10 +1,10 @@
-// Module ID: 14292
-// Function ID: 109782
+// Module ID: 14293
+// Function ID: 109787
 // Name: EffectTile
-// Dependencies: [57, 31, 27, 1862, 33, 4131, 689, 7892, 14287, 14288, 4100, 4099, 5187, 5186, 1212, 2557, 4544, 4542, 8323, 8318, 8319, 4127, 2]
+// Dependencies: [57, 31, 27, 1862, 33, 4131, 689, 7892, 14288, 14289, 4100, 4099, 5187, 5186, 1212, 2557, 4544, 4542, 8323, 8318, 8319, 4127, 2]
 // Exports: default
 
-// Module 14292 (EffectTile)
+// Module 14293 (EffectTile)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -97,9 +97,9 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   ({ selectedEffectId, onSelectEffect } = userId);
   const tmp = _createForOfIteratorHelperLoose();
   let obj = userId(7892);
-  let obj1 = userId(14287);
+  let obj1 = userId(14288);
   const visibleEffectOrder = obj1.useVisibleEffectOrder();
-  let obj2 = userId(14288);
+  let obj2 = userId(14289);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: dependencyMap, dismissEffectDot: _slicedToArray } = displayNameStylesNewEffects);
   const tmp3 = callback(first.useState(selectedEffectId), 2);

@@ -1,5 +1,5 @@
 // Module ID: 9413
-// Function ID: 73472
+// Function ID: 73473
 // Name: canUIRequestGatewaySocket
 // Dependencies: [6271, 566, 2]
 

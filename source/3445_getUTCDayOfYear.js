@@ -1,5 +1,5 @@
 // Module ID: 3445
-// Function ID: 26768
+// Function ID: 26769
 // Name: getUTCDayOfYear
 // Dependencies: [3210, 3211]
 // Exports: default

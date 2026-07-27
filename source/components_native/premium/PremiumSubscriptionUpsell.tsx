@@ -1,10 +1,10 @@
-// Module ID: 12503
-// Function ID: 96820
+// Module ID: 12504
+// Function ID: 96825
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [31, 27, 1922, 1850, 653, 6173, 1852, 33, 4131, 689, 4083, 1212, 1827, 566, 3777, 4555, 668, 4127, 12504, 12505, 9265, 4544, 2]
+// Dependencies: [31, 27, 1922, 1850, 653, 6173, 1852, 33, 4131, 689, 4083, 1212, 1827, 566, 3777, 4555, 668, 4127, 12505, 12506, 9265, 4544, 2]
 // Exports: default
 
-// Module 12503 (PremiumSubscriptionUpsell)
+// Module 12504 (PremiumSubscriptionUpsell)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -81,9 +81,9 @@ export default function PremiumSubscriptionUpsell(arg0) {
     }
     const items3 = [tmp14, , ];
     const obj6 = { style: tmp.upsellFeatures };
-    const obj7 = { style: tmp.upsellFeatureSubLogo, source: importDefault(12504) };
+    const obj7 = { style: tmp.upsellFeatureSubLogo, source: importDefault(12505) };
     const items4 = [callback(closure_4, obj7), , ];
-    const obj8 = { style: tmp.upsellFeatureLogoTier2, source: importDefault(12505) };
+    const obj8 = { style: tmp.upsellFeatureLogoTier2, source: importDefault(12506) };
     items4[1] = callback(closure_4, obj8);
     const obj9 = { style: tmp.upsellFeatureList };
     const obj10 = {};

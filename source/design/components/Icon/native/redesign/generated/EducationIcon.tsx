@@ -1,5 +1,5 @@
 // Module ID: 10116
-// Function ID: 78345
+// Function ID: 78346
 // Name: EducationIcon
 // Dependencies: [31, 33, 689, 3834, 10115, 2]
 // Exports: EducationIcon

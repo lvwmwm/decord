@@ -1,5 +1,5 @@
 // Module ID: 7214
-// Function ID: 60056
+// Function ID: 60057
 // Name: MicrophoneAndKeyboardSpotIllustration
 // Dependencies: [33, 5085, 7215, 2]
 // Exports: MicrophoneAndKeyboardSpotIllustration

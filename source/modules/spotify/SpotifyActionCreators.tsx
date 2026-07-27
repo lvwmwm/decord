@@ -1,10 +1,10 @@
-// Module ID: 10880
-// Function ID: 84513
+// Module ID: 10881
+// Function ID: 84518
 // Name: apiRequest
-// Dependencies: [10879, 8113, 653, 4016, 507, 686, 664, 477, 8416, 2]
+// Dependencies: [10880, 8113, 653, 4016, 507, 686, 664, 477, 8416, 2]
 // Exports: fetchIsSpotifyProtocolRegistered, getDevices, getProfile, pause, play, setActiveDevice
 
-// Module 10880 (apiRequest)
+// Module 10881 (apiRequest)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import spotifyUtmParams from "spotifyUtmParams";
 import ME from "ME";

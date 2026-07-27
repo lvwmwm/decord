@@ -1,7 +1,7 @@
 // Module ID: 1336
 // Function ID: 15672
 // Name: addVersionedDismissedContent
-// Dependencies: [57, 5, 1316, 1337, 1338, 1340, 1345, 653, 1335, 1346, 21, 1331, 3969, 566, 1334, 686, 13059, 675, 1339, 2]
+// Dependencies: [57, 5, 1316, 1337, 1338, 1340, 1345, 653, 1335, 1346, 21, 1331, 3969, 566, 1334, 686, 13060, 675, 1339, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
 // Module 1336 (addVersionedDismissedContent)
@@ -65,7 +65,7 @@ function markDismissibleContentAsDismissedPreProcessing(closure_0, forceTrack) {
   if (null != guildId) {
     tmp4 = guildId;
   }
-  require(13059) /* handleDCShownToUser */.handleDCDismissed(closure_0, tmp4);
+  require(13060) /* handleDCShownToUser */.handleDCDismissed(closure_0, tmp4);
 }
 function markDismissibleContentAsDismissedPostProcessing(content, groupName) {
   const obj = { content };

@@ -1,5 +1,5 @@
 // Module ID: 9564
-// Function ID: 74655
+// Function ID: 74656
 // Name: searchAllStickers
 // Dependencies: [4975, 9559, 2]
 // Exports: searchAllStickers, searchSendableStickers, searchUnsendableStickers

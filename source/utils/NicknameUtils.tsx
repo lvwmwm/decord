@@ -1,5 +1,5 @@
 // Module ID: 4320
-// Function ID: 37853
+// Function ID: 37854
 // Name: getNickname
 // Dependencies: [1348, 1918, 3768, 1212, 3970, 566, 2]
 // Exports: useName

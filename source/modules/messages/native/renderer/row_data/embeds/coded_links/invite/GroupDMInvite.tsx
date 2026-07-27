@@ -1,10 +1,10 @@
-// Module ID: 12289
-// Function ID: 95819
+// Module ID: 12290
+// Function ID: 95824
 // Name: createGroupDMInvite
-// Dependencies: [1348, 3768, 1850, 5969, 7666, 9437, 1212, 11955, 1395, 4321, 2]
+// Dependencies: [1348, 3768, 1850, 5969, 7666, 9437, 1212, 11956, 1395, 4321, 2]
 // Exports: createGroupDMInvite
 
-// Module 12289 (createGroupDMInvite)
+// Module 12290 (createGroupDMInvite)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -56,8 +56,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   }
   let channelIconSource = null;
   if (null != channel) {
-    channelIconSource = require(11955) /* getChannelIconURL */.getChannelIconSource(channel);
-    const obj2 = require(11955) /* getChannelIconURL */;
+    channelIconSource = require(11956) /* getChannelIconURL */.getChannelIconSource(channel);
+    const obj2 = require(11956) /* getChannelIconURL */;
   }
   let uri = null;
   if (null != channelIconSource) {

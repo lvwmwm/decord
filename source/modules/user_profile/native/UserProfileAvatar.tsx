@@ -1,5 +1,5 @@
 // Module ID: 8042
-// Function ID: 63952
+// Function ID: 63953
 // Name: OpenableUserProfileAvatar
 // Dependencies: [31, 27, 8043, 5510, 33, 8017, 7915, 8045, 8052, 1212, 2]
 // Exports: OpenableUserProfileAvatar

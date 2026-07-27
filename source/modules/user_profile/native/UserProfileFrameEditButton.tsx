@@ -1,10 +1,10 @@
-// Module ID: 13659
-// Function ID: 104936
+// Module ID: 13660
+// Function ID: 104941
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [57, 31, 27, 5510, 1345, 482, 33, 689, 4131, 8632, 8379, 1334, 7882, 7983, 1877, 4099, 13660, 1935, 1212, 13651, 5584, 1273, 8626, 7904, 2]
+// Dependencies: [57, 31, 27, 5510, 1345, 482, 33, 689, 4131, 8632, 8379, 1334, 7882, 7983, 1877, 4099, 13661, 1935, 1212, 13652, 5584, 1273, 8626, 7904, 2]
 // Exports: default
 
-// Module 13659 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 13660 (COLLECTIBLES_PREVIEW_SIZE)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -145,7 +145,7 @@ export default function UserProfileFrameEditButton(arg0) {
       }
       obj2.leading = tmp35;
     }
-    return jsx(user(13651).UserProfileEditFormButton, obj2);
+    return jsx(user(13652).UserProfileEditFormButton, obj2);
   } else {
     return null;
   }

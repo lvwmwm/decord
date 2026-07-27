@@ -1,10 +1,10 @@
-// Module ID: 10298
-// Function ID: 79626
+// Module ID: 10299
+// Function ID: 79631
 // Name: AlertNotification
-// Dependencies: [31, 27, 33, 5513, 7909, 689, 4131, 10202, 1212, 4139, 10272, 7570, 10217, 2]
+// Dependencies: [31, 27, 33, 5513, 7909, 689, 4131, 10203, 1212, 4139, 10273, 7570, 10218, 2]
 // Exports: default
 
-// Module 10298 (AlertNotification)
+// Module 10299 (AlertNotification)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ export default function AlertNotification(notification) {
   const channel = notification.channel;
   const guild = notification.guild;
   const tmp = callback3();
-  let obj = channel(10202);
+  let obj = channel(10203);
   const incidentData = obj.useGuildIncidentsState(notification.key).incidentData;
   let raidDetectedAt;
   if (null != incidentData) {
@@ -67,8 +67,8 @@ export default function AlertNotification(notification) {
   obj.icon = callback2(closure_6, obj);
   obj.header = memo;
   const obj4 = { text: stringResult };
-  obj.children = callback(channel(10217).SystemMessageText, obj4);
+  obj.children = callback(channel(10218).SystemMessageText, obj4);
   obj.onPress = callback;
   obj.notification = notification;
-  return callback(channel(10272).NotificationPressable, obj);
+  return callback(channel(10273).NotificationPressable, obj);
 };

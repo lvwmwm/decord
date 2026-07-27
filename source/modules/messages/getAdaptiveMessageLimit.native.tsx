@@ -1,5 +1,5 @@
 // Module ID: 9838
-// Function ID: 76307
+// Function ID: 76308
 // Name: getMessageLimit
 // Dependencies: [653, 2]
 // Exports: getMessageLimit, useMessageLimit

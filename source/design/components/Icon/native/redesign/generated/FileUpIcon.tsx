@@ -1,10 +1,10 @@
-// Module ID: 13608
-// Function ID: 104568
+// Module ID: 13609
+// Function ID: 104573
 // Name: FileUpIcon
-// Dependencies: [31, 33, 689, 3834, 13609, 2]
+// Dependencies: [31, 33, 689, 3834, 13610, 2]
 // Exports: FileUpIcon
 
-// Module 13608 (FileUpIcon)
+// Module 13609 (FileUpIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const FileUpIcon = function FileUpIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13609) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13610) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(13609) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(13610) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

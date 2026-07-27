@@ -1,10 +1,10 @@
-// Module ID: 10157
-// Function ID: 78588
+// Module ID: 10158
+// Function ID: 78593
 // Name: computeIsFavoritesGuildEnabled
 // Dependencies: [1351, 10152, 566, 2]
 // Exports: getIsFavoritesGuildEnabled, useIsFavoritesGuildEnabled
 
-// Module 10157 (computeIsFavoritesGuildEnabled)
+// Module 10158 (computeIsFavoritesGuildEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

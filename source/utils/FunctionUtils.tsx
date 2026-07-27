@@ -1,5 +1,5 @@
 // Module ID: 1917
-// Function ID: 21609
+// Function ID: 21610
 // Name: areArraysShallowlyEqual
 // Dependencies: [2]
 // Exports: cachedFunction, clearObject, isPlainObjectEmpty

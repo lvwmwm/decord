@@ -1,10 +1,10 @@
-// Module ID: 11482
-// Function ID: 89401
+// Module ID: 11483
+// Function ID: 89406
 // Name: ChatWarningIcon
 // Dependencies: [31, 33, 689, 3834, 7741, 2]
 // Exports: ChatWarningIcon
 
-// Module 11482 (ChatWarningIcon)
+// Module 11483 (ChatWarningIcon)
 import "result";
 import { jsx } from "jsxProd";
 

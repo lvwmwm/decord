@@ -1,5 +1,5 @@
 // Module ID: 6878
-// Function ID: 59552
+// Function ID: 59553
 // Name: ClydeShieldSpotIllustration
 // Dependencies: [33, 5085, 6879, 2]
 // Exports: ClydeShieldSpotIllustration

@@ -1,5 +1,5 @@
 // Module ID: 8433
-// Function ID: 67296
+// Function ID: 67297
 // Name: BattlenetNeutralIcon
 // Dependencies: [31, 33, 689, 3834, 8434, 2]
 // Exports: BattlenetNeutralIcon

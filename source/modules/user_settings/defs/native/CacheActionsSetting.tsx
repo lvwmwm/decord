@@ -1,9 +1,9 @@
-// Module ID: 14460
-// Function ID: 110544
+// Module ID: 14461
+// Function ID: 110549
 // Name: handleCacheActionPress
-// Dependencies: [5, 4809, 33, 4099, 3832, 4087, 1212, 566, 3804, 5498, 5186, 5500, 13608, 14461, 14462, 10059, 2]
+// Dependencies: [5, 4809, 33, 4099, 3832, 4087, 1212, 566, 3804, 5498, 5186, 5500, 13609, 14462, 14463, 10059, 2]
 
-// Module 14460 (handleCacheActionPress)
+// Module 14461 (handleCacheActionPress)
 import CircleInformationIcon from "CircleInformationIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -31,14 +31,14 @@ function CacheActionsActionSheet() {
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.ZVZVwR);
   obj.header = callback2(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true };
-  const obj1 = { icon: callback2(require(13608) /* FileUpIcon */.FileUpIcon, {}) };
+  const obj1 = { icon: callback2(require(13609) /* FileUpIcon */.FileUpIcon, {}) };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const stringResult = intl2.string(require(1212) /* getSystemLocale */.t["/GUaXh"]);
   obj1.label = stringResult;
   // CreateGeneratorClosureLongIndex (0x67)
   obj1.onPress = callback(stringResult);
   const items = [callback2(require(5500) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
-  const obj2 = { variant: "danger", icon: callback2(require(14462) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" }) };
+  const obj2 = { variant: "danger", icon: callback2(require(14463) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" }) };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.tgwiMO);
   obj2.onPress = function onPress() {

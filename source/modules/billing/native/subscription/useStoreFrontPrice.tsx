@@ -1,5 +1,5 @@
 // Module ID: 6516
-// Function ID: 58254
+// Function ID: 58255
 // Name: useStoreFrontPrice
 // Dependencies: [31, 653, 3777, 2]
 // Exports: default

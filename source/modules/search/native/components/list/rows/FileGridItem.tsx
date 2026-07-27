@@ -1,9 +1,9 @@
-// Module ID: 15428
-// Function ID: 117771
+// Module ID: 15441
+// Function ID: 117820
 // Name: getAttachmentIcon
-// Dependencies: [31, 27, 1348, 9033, 33, 4131, 4318, 4645, 6580, 10236, 566, 7934, 15416, 15418, 4671, 2]
+// Dependencies: [31, 27, 1348, 9033, 33, 4131, 4318, 4645, 6580, 10237, 566, 7934, 15429, 15431, 4671, 2]
 
-// Module 15428 (getAttachmentIcon)
+// Module 15441 (getAttachmentIcon)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,7 +25,7 @@ function getAttachmentIcon(filename) {
     if (obj2.isVideoFile(filename)) {
       tmp3Result = tmp3(tmp4(6580).VideoIcon, { size: "lg", color: "interactive-text-default" });
     } else {
-      tmp3Result = tmp3(tmp4(10236).FileIcon, { size: "lg", color: "interactive-text-default" });
+      tmp3Result = tmp3(tmp4(10237).FileIcon, { size: "lg", color: "interactive-text-default" });
     }
     obj2 = require(4318) /* urlMatchesFileExtension */;
   }

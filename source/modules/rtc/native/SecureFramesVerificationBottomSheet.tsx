@@ -1,5 +1,5 @@
 // Module ID: 8840
-// Function ID: 70027
+// Function ID: 70028
 // Name: SecureFramesVerificationBottomSheet
 // Dependencies: [31, 27, 8826, 33, 4131, 689, 8831, 4099, 5187, 5186, 5499, 4661, 1212, 4127, 4542, 4653, 8838, 8841, 2]
 // Exports: default

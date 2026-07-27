@@ -1,10 +1,10 @@
-// Module ID: 10914
-// Function ID: 84792
+// Module ID: 10915
+// Function ID: 84797
 // Name: QuestCollectibleRewardModalMessages
-// Dependencies: [1850, 4977, 33, 4131, 689, 566, 9420, 10427, 4127, 1212, 5938, 9728, 2]
+// Dependencies: [1850, 4977, 33, 4131, 689, 566, 9420, 10428, 4127, 1212, 5938, 9728, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 10914 (QuestCollectibleRewardModalMessages)
+// Module 10915 (QuestCollectibleRewardModalMessages)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ function QuestCollectibleRewardModalMessages(quest) {
   let obj1 = require(9420) /* getCollectiblesQuestReward */;
   const defaultRewardNameWithArticle = obj1.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
   obj = {};
-  const claimedCollectibleRewardMessage = require(10427) /* _createForOfIteratorHelperLoose */.useClaimedCollectibleRewardMessage(quest.config);
+  const claimedCollectibleRewardMessage = require(10428) /* _createForOfIteratorHelperLoose */.useClaimedCollectibleRewardMessage(quest.config);
   obj = { variant: "heading-xl/bold", style: tmp.title };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.YNaxMp, { itemName: defaultRewardNameWithArticle });

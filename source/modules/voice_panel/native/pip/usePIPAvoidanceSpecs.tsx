@@ -1,10 +1,10 @@
-// Module ID: 15830
-// Function ID: 122213
+// Module ID: 15842
+// Function ID: 122260
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [9976, 9974, 9977, 3992, 15705, 15751, 3835, 689, 9379, 15651, 15752, 9982, 9980, 2]
+// Dependencies: [9976, 9974, 9977, 3992, 15717, 15763, 3835, 689, 9379, 15663, 15764, 9982, 9980, 2]
 // Exports: default
 
-// Module 15830 (usePIPAvoidanceSpecs)
+// Module 15842 (usePIPAvoidanceSpecs)
 import { VoicePanelModes } from "VoicePanelModes";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE";

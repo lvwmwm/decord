@@ -1,10 +1,10 @@
-// Module ID: 15865
-// Function ID: 122522
+// Module ID: 15877
+// Function ID: 122569
 // Name: getConsoleInfo
 // Dependencies: [31, 653, 33, 4131, 689, 8985, 1212, 8860, 1327, 5515, 1273, 2]
 // Exports: default
 
-// Module 15865 (getConsoleInfo)
+// Module 15877 (getConsoleInfo)
 import result from "result";
 import { PlatformTypes } from "ME";
 import { jsx } from "jsxProd";

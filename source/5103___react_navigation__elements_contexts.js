@@ -1,5 +1,5 @@
 // Module ID: 5103
-// Function ID: 44368
+// Function ID: 44369
 // Name: __react_navigation__elements_contexts
 // Dependencies: [31]
 // Exports: default

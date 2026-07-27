@@ -1,5 +1,5 @@
 // Module ID: 9434
-// Function ID: 73627
+// Function ID: 73628
 // Name: resolveVoiceChannelListInviteEmbedData
 // Dependencies: [27, 4123, 9435, 1391, 1348, 1918, 1838, 3759, 3768, 1850, 4147, 4204, 9436, 653, 5969, 9437, 7666, 7670, 1392, 3970, 3942, 4321, 1212, 9438, 2]
 // Exports: canShowVoiceChannelListInviteEmbed, createVoiceChannelListInviteEmbed

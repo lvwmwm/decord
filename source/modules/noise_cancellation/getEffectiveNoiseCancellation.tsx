@@ -1,10 +1,10 @@
-// Module ID: 10726
-// Function ID: 83389
+// Module ID: 10727
+// Function ID: 83394
 // Name: set
-// Dependencies: [477, 10727, 2]
+// Dependencies: [477, 10728, 2]
 // Exports: default
 
-// Module 10726 (set)
+// Module 10727 (set)
 import set from "set";
 
 let set = new Set(["voice_isolation", "wide_spectrum"]);
@@ -29,8 +29,8 @@ export default function getEffectiveNoiseCancellation(arg0, arg1) {
         }
         if (!tmp5) {
           obj = { location: "setNoiseCancellation" };
-          tmp5 = !require(10727) /* getWindowsAudioEffectsExperimentConfig */.getWindowsAudioEffectsExperimentConfig(obj).preferSystemEffects;
-          const obj4 = require(10727) /* getWindowsAudioEffectsExperimentConfig */;
+          tmp5 = !require(10728) /* getWindowsAudioEffectsExperimentConfig */.getWindowsAudioEffectsExperimentConfig(obj).preferSystemEffects;
+          const obj4 = require(10728) /* getWindowsAudioEffectsExperimentConfig */;
         }
         if (tmp5) {
           tmp5 = arg0;

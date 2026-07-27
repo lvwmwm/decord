@@ -1,9 +1,9 @@
-// Module ID: 16578
-// Function ID: 129369
+// Module ID: 16590
+// Function ID: 129416
 // Name: _isNativeReflectConstruct
 // Dependencies: [5, 6, 7, 15, 17, 18, 1194, 5593, 5078, 2]
 
-// Module 16578 (_isNativeReflectConstruct)
+// Module 16590 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import SignalHelpers from "SignalHelpers";

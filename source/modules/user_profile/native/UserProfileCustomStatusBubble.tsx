@@ -1,9 +1,9 @@
-// Module ID: 11901
-// Function ID: 92111
+// Module ID: 11902
+// Function ID: 92116
 // Name: getClampedMaxLines
-// Dependencies: [57, 31, 27, 5510, 1853, 33, 4131, 689, 3804, 5085, 1392, 477, 4127, 5150, 8045, 8998, 9849, 4099, 11902, 5482, 1212, 4661, 11245, 2]
+// Dependencies: [57, 31, 27, 5510, 1853, 33, 4131, 689, 3804, 5085, 1392, 477, 4127, 5150, 8045, 8998, 9849, 4099, 11903, 5482, 1212, 4661, 11246, 2]
 
-// Module 11901 (getClampedMaxLines)
+// Module 11902 (getClampedMaxLines)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -433,7 +433,7 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
         tmp59 = obj10;
       }
       obj9.style = tmp59;
-      obj8.children = callback2(_require(11245).CirclePlusIcon, obj9);
+      obj8.children = callback2(_require(11246).CirclePlusIcon, obj9);
       const items8 = [callback2(trackUserProfileAction, obj8), , ];
       const obj11 = { style: tmp2.addStatusIconSpacer };
       items8[1] = callback2(trackUserProfileAction, obj11);

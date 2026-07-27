@@ -1,5 +1,5 @@
 // Module ID: 6713
-// Function ID: 59254
+// Function ID: 59255
 // Name: useIsExpressiveModalV2Enabled
 // Dependencies: [1428, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled

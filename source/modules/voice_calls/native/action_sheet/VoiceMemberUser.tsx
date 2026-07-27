@@ -1,9 +1,9 @@
-// Module ID: 12777
-// Function ID: 99483
+// Module ID: 12778
+// Function ID: 99488
 // Name: StreamingUserRow
-// Dependencies: [31, 27, 1278, 1194, 4810, 1348, 1918, 4178, 4218, 653, 33, 4131, 689, 10450, 566, 3977, 12778, 12779, 1273, 12780, 12781, 12782, 12783, 8284, 4127, 1212, 7575, 5971, 10786, 3982, 4342, 4099, 4661, 8849, 4320, 8847, 3970, 2]
+// Dependencies: [31, 27, 1278, 1194, 4810, 1348, 1918, 4178, 4218, 653, 33, 4131, 689, 10451, 566, 3977, 12779, 12780, 1273, 12781, 12782, 12783, 12784, 8284, 4127, 1212, 7575, 5971, 10787, 3982, 4342, 4099, 4661, 8849, 4320, 8847, 3970, 2]
 
-// Module 12777 (StreamingUserRow)
+// Module 12778 (StreamingUserRow)
 import importAllResult from "showActionSheet";
 import get_ActivityIndicator from "_findPlayingActivity";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -76,12 +76,12 @@ function StreamingUserRow(user) {
           const obj4 = user(outer1_2[30]);
         }
       };
-      obj3.children = closure_11(channel(10786), obj4);
+      obj3.children = closure_11(channel(10787), obj4);
       tmp24Result = closure_11(closure_3, obj3);
       const tmp24 = closure_11;
       const tmp25 = closure_3;
       const tmp26 = closure_11;
-      const tmp29 = channel(10786);
+      const tmp29 = channel(10787);
     }
     items1[1] = tmp24Result;
     obj.children = items1;
@@ -295,7 +295,7 @@ let closure_16 = importAllResult.memo((user) => {
   }
   obj1.guildId = guild_id;
   obj1.size = user(1273).AvatarSizes.REFRESH_MEDIUM_32;
-  obj1.speaking = channel(10450)(obj);
+  obj1.speaking = channel(10451)(obj);
   obj.leading = callback(user(1273).Avatar, obj1);
   let tmp20Result = null;
   if (flag) {
@@ -304,7 +304,7 @@ let closure_16 = importAllResult.memo((user) => {
       obj2 = { style: tmp3.row };
       let tmp22 = null;
       if (user.isSpectating) {
-        obj3 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12783), style: tmp14 };
+        obj3 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12784), style: tmp14 };
         tmp22 = callback(user(1273).Icon, obj3);
       }
       const items3 = [
@@ -329,7 +329,7 @@ let closure_16 = importAllResult.memo((user) => {
       ];
       let tmp27 = null;
       if (tmp9) {
-        obj4 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12780), style: tmp14 };
+        obj4 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12781), style: tmp14 };
         tmp27 = callback(user(1273).Icon, obj4);
       }
       items3[2] = tmp27;
@@ -345,10 +345,10 @@ let closure_16 = importAllResult.memo((user) => {
         tmp20Result = tmp20(tmp21, obj2);
       } else {
         if (localVideoDisabled) {
-          const obj6 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12781), style: tmp3.voiceStatusIconMargin, disableColor: true };
+          const obj6 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12782), style: tmp3.voiceStatusIconMargin, disableColor: true };
           let obj7 = obj6;
         } else {
-          obj7 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12782), style: tmp14 };
+          obj7 = { size: user(1273).Icon.Sizes.REFRESH_SMALL_16, source: channel(12783), style: tmp14 };
         }
         callback(user(1273).Icon, obj7);
         const tmp33 = callback;

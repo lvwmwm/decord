@@ -1,10 +1,10 @@
-// Module ID: 10724
-// Function ID: 83378
+// Module ID: 10725
+// Function ID: 83383
 // Name: getSelectedNoiseSuppressionOption
-// Dependencies: [4178, 653, 8770, 10725, 566, 2]
+// Dependencies: [4178, 653, 8770, 10726, 566, 2]
 // Exports: handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 10724 (getSelectedNoiseSuppressionOption)
+// Module 10725 (getSelectedNoiseSuppressionOption)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

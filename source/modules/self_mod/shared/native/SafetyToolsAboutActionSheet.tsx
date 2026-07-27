@@ -1,5 +1,5 @@
 // Module ID: 10119
-// Function ID: 78353
+// Function ID: 78354
 // Name: SafetyToolsAboutScreen
 // Dependencies: [57, 31, 27, 10098, 653, 33, 4131, 689, 10092, 4099, 10095, 10096, 10120, 1212, 3831, 10105, 4127, 1921, 4544, 2]
 // Exports: default

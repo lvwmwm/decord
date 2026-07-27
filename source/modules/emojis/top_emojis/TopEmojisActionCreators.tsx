@@ -1,5 +1,5 @@
 // Module ID: 9275
-// Function ID: 72680
+// Function ID: 72681
 // Name: fetchTopEmojis
 // Dependencies: [653, 3966, 686, 507, 2]
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen

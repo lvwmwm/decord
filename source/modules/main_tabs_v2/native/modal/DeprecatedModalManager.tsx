@@ -1,9 +1,9 @@
-// Module ID: 16251
-// Function ID: 126150
+// Module ID: 16263
+// Function ID: 126197
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 8243, 1194, 8287, 16252, 1342, 653, 3983, 3982, 4340, 9117, 16253, 16254, 16262, 16263, 16544, 16546, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 8243, 1194, 8287, 16264, 1342, 653, 3983, 3982, 4340, 9117, 16265, 16266, 16274, 16275, 16556, 16558, 5078, 2]
 
-// Module 16251 (_isNativeReflectConstruct)
+// Module 16263 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import isEligibleForSafetyFlowsExperiment from "isEligibleForSafetyFlowsExperiment";
@@ -182,13 +182,13 @@ let obj = {
     }
     if (result) {
       obj = { location: "modal-manager-verification" };
-      result = !require(16253) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment(obj);
-      const obj2 = require(16253) /* isEligibleForSafetyFlowsExperiment */;
+      result = !require(16265) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment(obj);
+      const obj2 = require(16265) /* isEligibleForSafetyFlowsExperiment */;
     }
     return result;
   },
   getComponent() {
-    return require(16254) /* PhoneThenEmailInterstitial */.default;
+    return require(16266) /* PhoneThenEmailInterstitial */.default;
   }
 };
 obj = {
@@ -203,7 +203,7 @@ obj = {
     return action === UserRequiredActions.AGREEMENTS;
   },
   getComponent() {
-    return require(16262) /* handleTouch */.default;
+    return require(16274) /* handleTouch */.default;
   }
 };
 tmp4 = new tmp4();

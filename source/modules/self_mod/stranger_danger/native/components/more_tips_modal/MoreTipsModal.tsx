@@ -1,10 +1,10 @@
-// Module ID: 10377
-// Function ID: 80069
+// Module ID: 10378
+// Function ID: 80074
 // Name: MoreTipsModalScreen
-// Dependencies: [31, 27, 9031, 653, 33, 4131, 689, 10118, 4127, 1212, 10378, 6695, 4338, 7640, 1273, 1557, 624, 10095, 5839, 5844, 5517, 2]
+// Dependencies: [31, 27, 9031, 653, 33, 4131, 689, 10118, 4127, 1212, 10379, 6695, 4338, 7640, 1273, 1557, 624, 10095, 5839, 5844, 5517, 2]
 // Exports: default
 
-// Module 10377 (MoreTipsModalScreen)
+// Module 10378 (MoreTipsModalScreen)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,7 +46,7 @@ function MoreTipsModalScreen(learnMore) {
   const items2 = [callback(require(4127) /* Text */.Text, obj3), actionItems];
   obj2.children = items2;
   items1[1] = callback2(closure_4, obj2);
-  items1[2] = callback(importDefault(10378), { channelId, warningId, senderId });
+  items1[2] = callback(importDefault(10379), { channelId, warningId, senderId });
   obj.children = items1;
   obj.children = callback2(closure_4, obj);
   return callback(closure_5, obj);

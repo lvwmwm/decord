@@ -1,5 +1,5 @@
 // Module ID: 8917
-// Function ID: 70524
+// Function ID: 70525
 // Name: CrunchyrollLinkModalScenes
 // Dependencies: [2]
 

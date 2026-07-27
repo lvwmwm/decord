@@ -1,10 +1,10 @@
-// Module ID: 11668
-// Function ID: 90485
+// Module ID: 11669
+// Function ID: 90490
 // Name: PX_24
 // Dependencies: [689, 1273, 2]
 // Exports: default
 
-// Module 11668 (PX_24)
+// Module 11669 (PX_24)
 const PX_24 = require("_createForOfIteratorHelperLoose").space.PX_24;
 const tmp2 = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL];
 let closure_1 = tmp2;

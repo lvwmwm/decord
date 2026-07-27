@@ -1,5 +1,5 @@
 // Module ID: 9587
-// Function ID: 74779
+// Function ID: 74780
 // Name: EmptyStateSticker
 // Dependencies: [57, 31, 27, 5036, 3807, 653, 1852, 33, 4131, 9557, 9573, 5462, 5482, 566, 675, 4127, 1212, 4661, 4100, 4101, 4544, 5085, 9309, 9581, 2]
 // Exports: default

@@ -1,9 +1,9 @@
-// Module ID: 14920
-// Function ID: 113809
+// Module ID: 14921
+// Function ID: 113814
 // Name: getMediaIcon
-// Dependencies: [31, 33, 4131, 689, 3835, 5515, 1273, 8265, 8264, 4655, 7624, 11858, 14921, 6580, 14922, 4659, 14923, 6556, 6557, 14918, 2]
+// Dependencies: [31, 33, 4131, 689, 3835, 5515, 1273, 8265, 8264, 4655, 7624, 11859, 14922, 6580, 14923, 4659, 14924, 6556, 6557, 14919, 2]
 
-// Module 14920 (getMediaIcon)
+// Module 14921 (getMediaIcon)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -17,13 +17,13 @@ function getMediaIcon(closure_3) {
     obj = { icon: require(4655) /* StageIcon */.StageIcon, source: importDefault(7624) };
     tmp6 = obj;
   } else if (tmp3) {
-    const obj1 = { icon: require(11858) /* ScreenIcon */.ScreenIcon, source: importDefault(14921) };
+    const obj1 = { icon: require(11859) /* ScreenIcon */.ScreenIcon, source: importDefault(14922) };
     tmp6 = obj1;
   } else if (tmp2) {
-    const obj2 = { icon: require(6580) /* VideoIcon */.VideoIcon, source: importDefault(14922) };
+    const obj2 = { icon: require(6580) /* VideoIcon */.VideoIcon, source: importDefault(14923) };
     tmp6 = obj2;
   } else if (tmp) {
-    const obj3 = { icon: require(4659) /* VoiceNormalIcon */.VoiceNormalIcon, source: importDefault(14923) };
+    const obj3 = { icon: require(4659) /* VoiceNormalIcon */.VoiceNormalIcon, source: importDefault(14924) };
     tmp6 = obj3;
   } else {
     tmp6 = null;
@@ -35,7 +35,7 @@ function getMediaIcon(closure_3) {
   return tmp6;
 }
 function useActivityIndicatorState(guildId) {
-  const tmp = importDefault(14918)(guildId);
+  const tmp = importDefault(14919)(guildId);
   const require = tmp;
   const tmp2 = getMediaIcon(tmp);
   importDefault = tmp2;

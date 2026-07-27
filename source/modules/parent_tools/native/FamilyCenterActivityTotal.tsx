@@ -1,10 +1,10 @@
-// Module ID: 13860
-// Function ID: 106190
+// Module ID: 13861
+// Function ID: 106195
 // Name: FamilyCenterActivityTotal
-// Dependencies: [31, 27, 33, 4131, 689, 13859, 5827, 4127, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 13860, 5827, 4127, 2]
 // Exports: default
 
-// Module 13860 (FamilyCenterActivityTotal)
+// Module 13861 (FamilyCenterActivityTotal)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,9 +23,9 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterActivityTotal(displayType) {
   displayType = displayType.displayType;
-  let obj = require(13859) /* useActionTotalsForDisplayType */;
+  let obj = require(13860) /* useActionTotalsForDisplayType */;
   const actionTotalsForDisplayType = obj.useActionTotalsForDisplayType(displayType);
-  let obj1 = require(13859) /* useActionTotalsForDisplayType */;
+  let obj1 = require(13860) /* useActionTotalsForDisplayType */;
   const formattedTotalForDisplayType = obj1.useFormattedTotalForDisplayType(displayType);
   let str = "text-muted";
   if (actionTotalsForDisplayType > 0) {

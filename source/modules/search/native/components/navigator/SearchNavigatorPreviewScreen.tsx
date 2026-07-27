@@ -1,10 +1,10 @@
-// Module ID: 15602
-// Function ID: 120350
+// Module ID: 15614
+// Function ID: 120397
 // Name: SearchNavigatorPreviewScreen
 // Dependencies: [31, 27, 653, 33, 4131, 1456, 1459, 10040, 9238, 2]
 // Exports: default
 
-// Module 15602 (SearchNavigatorPreviewScreen)
+// Module 15614 (SearchNavigatorPreviewScreen)
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
 import { SearchTypes } from "ME";

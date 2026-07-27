@@ -1,5 +1,5 @@
 // Module ID: 4318
-// Function ID: 37837
+// Function ID: 37838
 // Name: urlMatchesFileExtension
 // Dependencies: [57, 477, 4319, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl

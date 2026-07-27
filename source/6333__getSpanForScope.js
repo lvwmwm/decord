@@ -1,5 +1,5 @@
 // Module ID: 6333
-// Function ID: 56955
+// Function ID: 56956
 // Name: _getSpanForScope
 // Dependencies: [6317]
 

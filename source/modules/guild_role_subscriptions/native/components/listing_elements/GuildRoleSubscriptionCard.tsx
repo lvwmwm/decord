@@ -1,10 +1,10 @@
-// Module ID: 14187
-// Function ID: 109186
+// Module ID: 14188
+// Function ID: 109191
 // Name: SectionTitle
-// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 14177, 9361, 1212, 1273, 14188, 14189, 14192, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 14178, 9361, 1212, 1273, 14189, 14190, 14193, 2]
 // Exports: Content
 
-// Module 14187 (SectionTitle)
+// Module 14188 (SectionTitle)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -43,13 +43,13 @@ export const Content = function Content(arg0) {
   let guildId;
   let listingId;
   ({ listingId, guildId } = arg0);
-  let obj = importAll(14177);
+  let obj = importAll(14178);
   const first = callback(obj.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj1 = importAll(14177);
+  let obj1 = importAll(14178);
   const first1 = callback(obj1.useChannelBenefits(listingId), 1)[0];
-  let obj2 = importAll(14177);
+  let obj2 = importAll(14178);
   const first2 = callback(obj2.useIntangibleBenefits(listingId), 1)[0];
-  let obj3 = importAll(14177);
+  let obj3 = importAll(14178);
   const role = obj3.useRole(listingId, guildId);
   obj = {
     renderGap() {
@@ -60,7 +60,7 @@ export const Content = function Content(arg0) {
   obj1 = {};
   const intl = guildId(1212).intl;
   obj1.children = intl.string(guildId(1212).t["DJ+bGu"]);
-  const items = [callback2(SectionTitle, obj1), callback2(guildId(1273).Spacer, { size: 8 }), callback2(guildId(14188).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  const items = [callback2(SectionTitle, obj1), callback2(guildId(1273).Spacer, { size: 8 }), callback2(guildId(14189).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   obj.children = items;
   const items1 = [callback3(closure_7, obj), , , ];
   let tmp4 = null;
@@ -78,10 +78,10 @@ export const Content = function Content(arg0) {
     HermesBuiltin.arraySpread(first, 0);
     obj6.emojiIds = items3;
     obj6.guildId = guildId;
-    items2[2] = callback2(importDefault(14189), obj6);
+    items2[2] = callback2(importDefault(14190), obj6);
     obj2.children = items2;
     tmp4 = callback3(closure_7, obj2);
-    const tmp14 = importDefault(14189);
+    const tmp14 = importDefault(14190);
   }
   items1[1] = tmp4;
   let tmp18 = null;

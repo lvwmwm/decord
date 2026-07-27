@@ -1,7 +1,7 @@
 // Module ID: 6636
-// Function ID: 58695
+// Function ID: 58696
 // Name: generateAcceptInviteOptions
-// Dependencies: [5, 6637, 5751, 1352, 1194, 1348, 1908, 1918, 1838, 6639, 4116, 3759, 3768, 3948, 1850, 653, 1197, 1355, 4196, 5969, 4948, 1360, 6652, 5605, 1210, 1198, 4945, 1935, 6653, 8770, 4228, 4310, 12355, 5676, 4620, 9073, 7952, 5054, 8155, 686, 8580, 4346, 12356, 5049, 675, 507, 4031, 664, 4943, 480, 1361, 4117, 5051, 5587, 3800, 12358, 12359, 7973, 4451, 4369, 12360, 12361, 490, 12363, 2]
+// Dependencies: [5, 6637, 5751, 1352, 1194, 1348, 1908, 1918, 1838, 6639, 4116, 3759, 3768, 3948, 1850, 653, 1197, 1355, 4196, 5969, 4948, 1360, 6652, 5605, 1210, 1198, 4945, 1935, 6653, 8770, 4228, 4310, 12356, 5676, 4620, 9073, 7952, 5054, 8155, 686, 8580, 4346, 12357, 5049, 675, 507, 4031, 664, 4943, 480, 1361, 4117, 5051, 5587, 3800, 12359, 12360, 7973, 4451, 4369, 12361, 12362, 490, 12364, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
 // Module 6636 (generateAcceptInviteOptions)
@@ -147,12 +147,12 @@ function getTransition(channel, options, arg2) {
   if (null != guildScheduledEvent) {
     obj.guildScheduledEventId = guildScheduledEvent.id;
   }
-  return (CHANNELResult) => {
+  return (ME) => {
     if (null != _undefined) {
-      let transitionToResult = _undefined(CHANNELResult, obj);
+      let transitionToResult = _undefined(ME, obj);
     } else {
       obj = _undefined(outer1_3[25]);
-      transitionToResult = obj.transitionTo(CHANNELResult, obj);
+      transitionToResult = obj.transitionTo(ME, obj);
     }
     return transitionToResult;
   };
@@ -918,8 +918,8 @@ export default {
       const features = guild.features;
       if (null != features) {
         if (features.includes(constants3.HUB)) {
-          importDefault(12358).onOpenHubInvite(closure_0);
-          const obj6 = importDefault(12358);
+          importDefault(12359).onOpenHubInvite(closure_0);
+          const obj6 = importDefault(12359);
         }
       }
     }
@@ -937,10 +937,10 @@ export default {
       if (!hasFlagResult) {
         if (closure_0.new_member) {
           if (obj4.inviteGuildHasPendingMemberDisabledVerification(guild)) {
-            const result = require(12359) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
-            const obj5 = require(12359) /* inviteGuildHasPendingMemberDisabledVerification */;
+            const result = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
+            const obj5 = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */;
           }
-          obj4 = require(12359) /* inviteGuildHasPendingMemberDisabledVerification */;
+          obj4 = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */;
         }
       }
     }
@@ -1060,7 +1060,7 @@ export default {
           const _HermesInternal = HermesInternal;
           let combined = "discord://" + substr;
         }
-        importDefault(12363).launch(combined, (arg0) => {
+        importDefault(12364).launch(combined, (arg0) => {
           let obj = outer1_1(outer1_3[39]);
           obj = {};
           if (arg0) {
@@ -1074,20 +1074,20 @@ export default {
           }
           obj.dispatch(tmp2);
         });
-        const obj11 = importDefault(12363);
+        const obj11 = importDefault(12364);
       }
     }
     if (null != baseCode) {
-      let inviteDynamicLinkTemplate = _require(12360).getInviteDynamicLinkTemplate(baseCode);
-      const obj5 = _require(12360);
+      let inviteDynamicLinkTemplate = _require(12361).getInviteDynamicLinkTemplate(baseCode);
+      const obj5 = _require(12361);
     } else {
-      inviteDynamicLinkTemplate = _require(12360).getDefaultDynamicLinkTemplate();
-      const obj4 = _require(12360);
+      inviteDynamicLinkTemplate = _require(12361).getDefaultDynamicLinkTemplate();
+      const obj4 = _require(12361);
     }
-    const attemptId = _require(12361).generateAttemptId();
+    const attemptId = _require(12362).generateAttemptId();
     obj1 = {};
     let str7 = "friend_invite";
-    const obj6 = _require(12361);
+    const obj6 = _require(12362);
     if (2 !== arg4) {
       str7 = "invite";
     }
@@ -1104,8 +1104,8 @@ export default {
     obj1.channel = targetChannelId;
     obj1.message = targetMessageId;
     obj1.iosFallbackLink = "https://discord.com/api/download/mobile?invite_code=" + baseCode;
-    combined = importDefault(12361)(inviteDynamicLinkTemplate, obj1);
-    const tmp23 = importDefault(12361);
+    combined = importDefault(12362)(inviteDynamicLinkTemplate, obj1);
+    const tmp23 = importDefault(12362);
     const obj2 = {};
     const obj8 = importDefault(675);
     obj2.fingerprint = _require(490).maybeExtractId(fingerprint);

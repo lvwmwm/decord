@@ -1,5 +1,5 @@
 // Module ID: 8835
-// Function ID: 70003
+// Function ID: 70004
 // Name: useIsSecureFramesKeyInconsistent
 // Dependencies: [31, 4203, 4217, 566, 8824, 2]
 // Exports: useAlertIfSecureFramesKeyInconsistent

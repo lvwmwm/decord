@@ -1,5 +1,5 @@
 // Module ID: 7645
-// Function ID: 61252
+// Function ID: 61253
 // Name: SettingsUpsellsConfigRegistry
 // Dependencies: [31, 7634, 7646, 7647, 7648, 1327, 2]
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs

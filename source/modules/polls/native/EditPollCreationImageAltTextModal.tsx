@@ -1,10 +1,10 @@
-// Module ID: 11326
-// Function ID: 88068
+// Module ID: 11327
+// Function ID: 88073
 // Name: EditPollCreationImageAltTextModal
-// Dependencies: [57, 31, 27, 6088, 33, 4131, 689, 11323, 11325, 5121, 1212, 1273, 7640, 4127, 5585, 8281, 7575, 2]
+// Dependencies: [57, 31, 27, 6088, 33, 4131, 689, 11324, 11326, 5121, 1212, 1273, 7640, 4127, 5585, 8281, 7575, 2]
 // Exports: default
 
-// Module 11326 (EditPollCreationImageAltTextModal)
+// Module 11327 (EditPollCreationImageAltTextModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -42,7 +42,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   imageSize = imageSize.imageSize;
   let first;
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = first(11323)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
+  const tmp2 = first(11324)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
   const upload = tmp2.upload;
   let description;
   if (null != upload) {
@@ -63,7 +63,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   }, items);
   let obj = { top: true, style: tmp.container };
   obj = { style: tmp.header };
-  obj = { onPress: onSave(11325).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button" };
+  obj = { onPress: onSave(11326).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button" };
   const intl = onSave(1212).intl;
   obj.accessibilityLabel = intl.string(onSave(1212).t.cpT0Cq);
   const obj1 = { source: first(7640) };

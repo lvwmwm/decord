@@ -1,5 +1,5 @@
 // Module ID: 8763
-// Function ID: 69354
+// Function ID: 69355
 // Name: _handleToggleVideo
 // Dependencies: [57, 5, 31, 27, 4150, 1348, 4178, 1907, 4147, 8764, 8767, 4345, 8769, 4472, 1212, 4676, 8770, 8784, 1820, 4342, 4945, 22, 8785, 8786, 8787, 477, 566, 8788, 8768, 8987, 8765, 2]
 // Exports: getAudioDeviceToDisplayText, handleDisconnect, handleToggleSelfDeaf, handleToggleSelfMute, handleToggleVideo, showCameraDisabledAlert, showMinOSScreenshareRequirementAlert, showScreenshareDisabledAlert, showServerDeafenAlert, showServerMuteAlert, showSuppressedAlert, showTabletRequirementAlert, useImmediateMaskedSpeakerStates

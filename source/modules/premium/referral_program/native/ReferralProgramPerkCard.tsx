@@ -1,10 +1,10 @@
-// Module ID: 12407
-// Function ID: 96284
+// Module ID: 12408
+// Function ID: 96289
 // Name: ReferredFriendAvatar
-// Dependencies: [31, 27, 6158, 653, 33, 4131, 689, 1273, 4127, 12408, 1212, 1921, 566, 5462, 5482, 6159, 675, 4099, 12409, 1935, 12416, 4544, 2]
+// Dependencies: [31, 27, 6158, 653, 33, 4131, 689, 1273, 4127, 12409, 1212, 1921, 566, 5462, 5482, 6159, 675, 4099, 12410, 1935, 12417, 4544, 2]
 // Exports: ReferralProgramPerkCard
 
-// Module 12407 (ReferredFriendAvatar)
+// Module 12408 (ReferredFriendAvatar)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ function ProgressIndicator(referralSentUsers) {
   referralSentUsers = referralSentUsers.referralSentUsers;
   const items = [];
   let num = 0;
-  if (0 < require(12408) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT) {
+  if (0 < require(12409) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT) {
     do {
       if (null != referralSentUsers[num]) {
         let tmp5 = callback;
@@ -49,14 +49,14 @@ function ProgressIndicator(referralSentUsers) {
       num = num + 1;
       let tmp8 = require;
       let tmp9 = dependencyMap;
-    } while (num < require(12408) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT);
+    } while (num < require(12409) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT);
   }
   obj = { style: _createForOfIteratorHelperLoose().progressIndicatorContainer, children: items };
   return callback(View, obj);
 }
 function getBodyText(arg0, arg1, arg2) {
   if (arg0) {
-    if (arg1 !== tmp(12408).MAX_REFERRALS_SENT) {
+    if (arg1 !== tmp(12409).MAX_REFERRALS_SENT) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       let obj = { helpdeskArticle: importDefault(1921).getArticleURL(constants.REFERRAL_PROGRAM) };
       intl2.format(require(1212) /* getSystemLocale */.t["omMr+V"], obj);
@@ -101,7 +101,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = analyticsLocations(12408);
+  let obj = analyticsLocations(12409);
   const referralSentUsers = obj.useReferralProgramBannerDetails().referralSentUsers;
   let obj1 = analyticsLocations(566);
   const items = [_isNativeReflectConstruct];
@@ -110,7 +110,7 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => outer1_5.getHasEligibleFriends());
   analyticsLocations = importDefault(5462)(importDefault(5482).PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR).analyticsLocations;
-  let everyResult = stateFromStores.size === analyticsLocations(12408).MAX_REFERRALS_SENT;
+  let everyResult = stateFromStores.size === analyticsLocations(12409).MAX_REFERRALS_SENT;
   if (everyResult) {
     const items2 = [];
     HermesBuiltin.arraySpread(stateFromStores.values(), 0);
@@ -126,7 +126,7 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
     outer1_1(outer1_2[17]).openLazy(analyticsLocations(outer1_2[19])(outer1_2[18], outer1_2.paths), "referral-program-share-action-sheet");
   }, items3);
   obj = { nReferralsSent: stateFromStores.size };
-  const items4 = [callback(importDefault(12416), obj), callback(ProgressIndicator, { referralSentUsers }), , ];
+  const items4 = [callback(importDefault(12417), obj), callback(ProgressIndicator, { referralSentUsers }), , ];
   obj1 = { style: tmp.contentContainer };
   const obj2 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.heading };
   const intl = analyticsLocations(1212).intl;

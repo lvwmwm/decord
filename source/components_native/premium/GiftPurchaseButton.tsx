@@ -1,10 +1,10 @@
-// Module ID: 12534
-// Function ID: 97016
+// Module ID: 12535
+// Function ID: 97021
 // Name: GiftPurchaseButton
-// Dependencies: [5, 31, 27, 3783, 5619, 33, 4549, 4127, 566, 5622, 6275, 5462, 9641, 4472, 1212, 3777, 9637, 4545, 12535, 2]
+// Dependencies: [5, 31, 27, 3783, 5619, 33, 4549, 4127, 566, 5622, 6275, 5462, 9641, 4472, 1212, 3777, 9637, 4545, 12536, 2]
 // Exports: default
 
-// Module 12534 (GiftPurchaseButton)
+// Module 12535 (GiftPurchaseButton)
 import jsxProd from "jsxProd";
 import result from "result";
 import { View } from "get ActivityIndicator";

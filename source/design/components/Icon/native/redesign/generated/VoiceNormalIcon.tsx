@@ -1,5 +1,5 @@
 // Module ID: 4659
-// Function ID: 40378
+// Function ID: 40379
 // Name: VoiceNormalIcon
 // Dependencies: [31, 33, 689, 3834, 4603, 2]
 // Exports: VoiceNormalIcon

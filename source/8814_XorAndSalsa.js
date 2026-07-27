@@ -1,5 +1,5 @@
 // Module ID: 8814
-// Function ID: 69738
+// Function ID: 69739
 // Name: XorAndSalsa
 // Dependencies: [5, 8815, 8816, 8818, 8820]
 // Exports: scrypt, scryptAsync

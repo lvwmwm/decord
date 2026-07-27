@@ -1,9 +1,9 @@
-// Module ID: 15901
-// Function ID: 122888
+// Module ID: 15913
+// Function ID: 122935
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 1347, 4144, 10455, 4150, 1194, 1348, 1850, 9976, 15828, 653, 4156, 4149, 33, 4131, 689, 9975, 15822, 10503, 1207, 4477, 15832, 5515, 15827, 624, 1450, 3992, 10594, 7992, 10492, 9981, 1273, 8284, 9978, 7620, 15744, 10196, 10485, 10488, 2]
+// Dependencies: [57, 31, 27, 1347, 4144, 10456, 4150, 1194, 1348, 1850, 9976, 15840, 653, 4156, 4149, 33, 4131, 689, 9975, 15834, 10504, 1207, 4477, 15844, 5515, 15839, 624, 1450, 3992, 10595, 7992, 10493, 9981, 1273, 8284, 9978, 7620, 15756, 10197, 10486, 10489, 2]
 
-// Module 15901 (_createForOfIteratorHelperLoose)
+// Module 15913 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT";
 import get_ActivityIndicator from "useWindowDimensions";
@@ -112,7 +112,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function VideoStream(streamId) {
   streamId = streamId.streamId;
-  let obj = streamId(15822);
+  let obj = streamId(15834);
   setHasActiveVideoOutputSink = obj.useSetHasActiveVideoOutputSink(importAllResult.useContext(setHasActiveVideoOutputSink(9975)).streamOutputSinkStack);
   const items = [setHasActiveVideoOutputSink, streamId];
   const effect = importAllResult.useEffect(() => {
@@ -125,7 +125,7 @@ function VideoStream(streamId) {
   }, items);
   obj = {};
   const merged = Object.assign(streamId);
-  return callback(setHasActiveVideoOutputSink(10503), obj);
+  return callback(setHasActiveVideoOutputSink(10504), obj);
 }
 function markContentReady() {
   const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
@@ -362,7 +362,7 @@ function User(participantId) {
   const tmp10 = channelId(focused.useState(false), 2);
   const first = tmp10[0];
   closure_8 = tmp10[1];
-  let obj2 = participantId(10492);
+  let obj2 = participantId(10493);
   let id;
   if (null != stateFromStores) {
     user = stateFromStores.user;
@@ -560,7 +560,7 @@ function Stream(participantId) {
   participantId = participantId.participantId;
   ({ transitionState, transitionCleanUp } = participantId);
   let tmp = callback3();
-  let obj = participantId(15832);
+  let obj = participantId(15844);
   const mode = obj.usePIPState().mode;
   const context = streamId.useContext(mode(9975));
   ({ channelId: dependencyMap, layoutManager } = context);
@@ -591,7 +591,7 @@ function Stream(participantId) {
     return obj;
   });
   streamId = stateFromStoresObject.streamId;
-  let obj2 = participantId(10492);
+  let obj2 = participantId(10493);
   const surfaceDirectRendererExperiment = obj2.useSurfaceDirectRendererExperiment(stateFromStoresObject.userId, { location: "VoicePanelPIPContent.Stream" });
   let obj3 = participantId(624);
   const items1 = [closure_9];
@@ -663,10 +663,10 @@ function Stream(participantId) {
   }, items6);
   if (stateFromStores === constants.ENDED) {
     obj = { style: tmp.streamEmptyImage, resizeMode: "contain" };
-    let tmp14Result = callback(participantId(10485).StreamEnded, obj);
+    let tmp14Result = callback(participantId(10486).StreamEnded, obj);
   } else if (stateFromStores === constants.FAILED) {
     obj = { style: tmp.streamEmptyImage, resizeMode: "contain" };
-    tmp14Result = callback(participantId(10488).StreamFailed, obj);
+    tmp14Result = callback(participantId(10489).StreamFailed, obj);
   } else if (tmp12) {
     obj1 = { style: tmp2, participantId };
     obj2 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, style: tmp.video, onSize: callback, onLayout: callback1 };

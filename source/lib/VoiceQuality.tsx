@@ -1,9 +1,9 @@
-// Module ID: 12808
-// Function ID: 99712
+// Module ID: 12809
+// Function ID: 99717
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 5976, 4207, 22, 12809, 5982, 4228, 4298, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 5976, 4207, 22, 12810, 5982, 4228, 4298, 2]
 
-// Module 12808 (_isNativeReflectConstruct)
+// Module 12809 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import sleep from "sleep";

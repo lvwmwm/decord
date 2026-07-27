@@ -1,5 +1,5 @@
 // Module ID: 4234
-// Function ID: 37129
+// Function ID: 37130
 // Name: Camera
 // Dependencies: [31, 33, 4231, 2]
 

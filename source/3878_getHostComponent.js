@@ -1,5 +1,5 @@
 // Module ID: 3878
-// Function ID: 32156
+// Function ID: 32157
 // Name: getHostComponent
 // Dependencies: [27, 42]
 // Exports: callback, getHostComponent

@@ -1,10 +1,10 @@
-// Module ID: 10852
-// Function ID: 84369
+// Module ID: 10853
+// Function ID: 84374
 // Name: TimerIcon
-// Dependencies: [31, 33, 689, 3834, 10853, 2]
+// Dependencies: [31, 33, 689, 3834, 10854, 2]
 // Exports: TimerIcon
 
-// Module 10852 (TimerIcon)
+// Module 10853 (TimerIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TimerIcon = function TimerIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10853) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10854) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10853) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10854) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

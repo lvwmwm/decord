@@ -1,5 +1,5 @@
 // Module ID: 1848
-// Function ID: 20273
+// Function ID: 20274
 // Name: _initLibdiscore
 // Dependencies: [5, 27, 1849, 2]
 // Exports: initLibdiscore, isLibdiscoreInitialized

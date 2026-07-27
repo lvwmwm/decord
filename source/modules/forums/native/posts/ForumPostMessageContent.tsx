@@ -1,10 +1,10 @@
-// Module ID: 11138
-// Function ID: 86608
+// Module ID: 11139
+// Function ID: 86613
 // Name: ForumPostMessageContent
-// Dependencies: [31, 33, 4131, 11139, 4127, 2]
+// Dependencies: [31, 33, 4131, 11140, 4127, 2]
 // Exports: default
 
-// Module 11138 (ForumPostMessageContent)
+// Module 11139 (ForumPostMessageContent)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ export default function ForumPostMessageContent(senderModifier) {
     num = 2;
   }
   const tmp = callback();
-  ({ content, style, variant } = importDefault(11139)({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
+  ({ content, style, variant } = importDefault(11140)({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
   const obj = { variant };
   let str = "text-muted";
   if (hasUnreads) {

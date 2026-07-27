@@ -1,5 +1,5 @@
 // Module ID: 9537
-// Function ID: 74439
+// Function ID: 74440
 // Name: isKlipyProvider
 // Dependencies: [653, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite

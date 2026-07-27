@@ -1,5 +1,5 @@
 // Module ID: 8263
-// Function ID: 66390
+// Function ID: 66391
 // Name: GuildEventsNoContent
 // Dependencies: [31, 27, 3759, 653, 482, 33, 4131, 5053, 689, 566, 6667, 8264, 8265, 4127, 1212, 8242, 2]
 // Exports: default

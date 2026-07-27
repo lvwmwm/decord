@@ -1,5 +1,5 @@
 // Module ID: 8025
-// Function ID: 63888
+// Function ID: 63889
 // Name: isValidAnchor
 // Dependencies: [830, 8026, 8027, 8028, 2]
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename

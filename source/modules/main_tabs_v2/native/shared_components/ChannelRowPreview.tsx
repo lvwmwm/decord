@@ -1,9 +1,9 @@
-// Module ID: 10219
-// Function ID: 79114
+// Module ID: 10220
+// Function ID: 79119
 // Name: PreviewIcon
-// Dependencies: [31, 27, 3768, 33, 4645, 6580, 9006, 9615, 4075, 6572, 9015, 9062, 4550, 10220, 1324, 10197, 10223, 9849, 4127, 4067, 4131, 689, 3835, 3804, 7654, 9222, 7846, 7658, 566, 2]
+// Dependencies: [31, 27, 3768, 33, 4645, 6580, 9006, 9615, 4075, 6572, 9015, 9062, 4550, 10221, 1324, 10198, 10224, 9849, 4127, 4067, 4131, 689, 3835, 3804, 7654, 9222, 7846, 7658, 566, 2]
 
-// Module 10219 (PreviewIcon)
+// Module 10220 (PreviewIcon)
 import importAllResult from "result";
 import { View } from "processColorOrThrow";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -82,7 +82,7 @@ class ChannelRowPreview {
         if ("markup" === type) {
           obj = {};
           tmp7 = jsx;
-          tmp8 = f79120;
+          tmp8 = f79125;
           if ("markup" === formattedMessagePreview.type) {
             content = formattedMessagePreview.markup;
           } else {
@@ -251,7 +251,7 @@ let closure_8 = importAllResult.memo((arg0) => {
   ({ markup, channelId, guildId, muted, layout, color } = arg0);
   const fontScale = require(4550) /* getFontScale */.useFontScale();
   const obj = require(4550) /* getFontScale */;
-  return require(10220) /* getRules */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
+  return require(10221) /* getRules */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
 });
 const memoResult = importAllResult.memo((message) => {
   const _require = message;

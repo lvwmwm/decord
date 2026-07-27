@@ -1,5 +1,5 @@
 // Module ID: 1843
-// Function ID: 20248
+// Function ID: 20249
 // Name: ensureValidMode
 // Dependencies: [1844, 2]
 // Exports: ensureValidMode

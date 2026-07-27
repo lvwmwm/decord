@@ -1,17 +1,17 @@
-// Module ID: 14075
-// Function ID: 107698
+// Module ID: 14076
+// Function ID: 107703
 // Name: maybeRefreshAd
-// Dependencies: [31, 5932, 664, 10428, 9413, 9401, 5947, 566, 14076, 5930, 2]
+// Dependencies: [31, 5932, 664, 10429, 9413, 9401, 5947, 566, 14077, 5930, 2]
 // Exports: default
 
-// Module 14075 (maybeRefreshAd)
+// Module 14076 (maybeRefreshAd)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let closure_3;
 let closure_4;
 function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, callerSource) {
-  let obj = require(10428) /* getIsEligibleForQuests */;
+  let obj = require(10429) /* getIsEligibleForQuests */;
   let isEligibleForQuests = obj.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     let tmp3 = null != fetchedAt;

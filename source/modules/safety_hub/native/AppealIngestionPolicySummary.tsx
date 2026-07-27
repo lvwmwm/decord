@@ -1,10 +1,10 @@
-// Module ID: 11028
-// Function ID: 85798
+// Module ID: 11029
+// Function ID: 85803
 // Name: AppealIngestionPolicySummary
 // Dependencies: [31, 27, 33, 4131, 689, 6698, 3975, 4127, 1212, 2]
 // Exports: default
 
-// Module 11028 (AppealIngestionPolicySummary)
+// Module 11029 (AppealIngestionPolicySummary)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

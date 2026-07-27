@@ -1,10 +1,10 @@
-// Module ID: 16648
-// Function ID: 129920
+// Module ID: 16660
+// Function ID: 129967
 // Name: onStageConnectionError
-// Dependencies: [5, 6637, 5751, 1194, 1348, 1850, 5591, 653, 4196, 1354, 11446, 3, 3832, 1212, 9243, 3983, 1207, 6653, 4139, 6633, 8155, 3982, 15200, 5873, 8297, 5482, 4141, 8849, 675, 4325, 477, 10816, 21, 15198, 5703, 20, 5704, 4809, 12706, 11449, 566, 10805, 9837, 4112, 668, 9458, 8123, 6104, 686, 4338, 1198, 4337, 12920, 2]
+// Dependencies: [5, 6637, 5751, 1194, 1348, 1850, 5591, 653, 4196, 1354, 11447, 3, 3832, 1212, 9243, 3983, 1207, 6653, 4139, 6633, 8155, 3982, 15213, 5873, 8297, 5482, 4141, 8849, 675, 4325, 477, 10817, 21, 15211, 5703, 20, 5704, 4809, 12707, 11450, 566, 10806, 9837, 4112, 668, 9458, 8123, 6104, 686, 4338, 1198, 4337, 12921, 2]
 // Exports: default
 
-// Module 16648 (onStageConnectionError)
+// Module 16660 (onStageConnectionError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
@@ -96,7 +96,7 @@ function _maybeAckNotificationCenter() {
 }
 function receiveNotification_(type) {
   const _require = type;
-  let obj = _require(10805);
+  let obj = _require(10806);
   const result = obj.initializeRouteManagerIfNeeded();
   let importDefault = false;
   if ("MESSAGE_CREATE" === type.type) {
@@ -357,15 +357,15 @@ export default function receiveNotification(getData) {
         if (data.receiving_user_id !== store.getId()) {
           data(5704);
           data(4809);
-          data(12706);
+          data(12707);
           let then = closure_17;
-          const obj = data(11449);
-          then = data(11449).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION).then;
+          const obj = data(11450);
+          then = data(11450).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION).then;
           then(() => {
             const Emitter = outer1_1(outer1_3[40]).Emitter;
             Emitter.batched(() => outer2_34(outer1_0));
           });
-          const switchAccountResult = data(11449).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION);
+          const switchAccountResult = data(11450).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION);
         }
       }
     }

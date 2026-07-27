@@ -1,9 +1,9 @@
-// Module ID: 15477
-// Function ID: 118974
+// Module ID: 15490
+// Function ID: 119023
 // Name: navigateToChannelDetailsScreen
-// Dependencies: [31, 27, 3760, 3761, 1348, 4326, 9060, 9032, 653, 9061, 33, 4131, 11406, 689, 3835, 566, 1456, 6625, 1212, 10166, 7673, 10039, 10040, 4346, 8233, 9029, 7627, 8944, 15478, 4477, 3992, 4132, 15376, 4135, 10857, 4661, 5091, 2]
+// Dependencies: [31, 27, 3760, 3761, 1348, 4326, 9060, 9032, 653, 9061, 33, 4131, 11407, 689, 3835, 566, 1456, 6625, 1212, 10167, 7673, 10039, 10040, 4346, 8233, 9029, 7627, 8944, 15491, 4477, 3992, 4132, 15389, 4135, 10858, 4661, 5091, 2]
 
-// Module 15477 (navigateToChannelDetailsScreen)
+// Module 15490 (navigateToChannelDetailsScreen)
 import importAllResult from "withTiming";
 import { View } from "registerAsset";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -64,7 +64,7 @@ function MuteButton(channelId) {
   obj.variant = variant;
   obj.size = size;
   if (stateFromStores) {
-    let tmp8 = 10166;
+    let tmp8 = 10167;
   } else {
     tmp8 = 7673;
   }
@@ -296,7 +296,7 @@ let closure_21 = importAllResult.forwardRef((cleanUp, ref) => {
   const animatedStyle = obj.useAnimatedStyle(S);
   obj = { style: items };
   items = [callback4().searchHeader, animatedStyle];
-  obj.children = callback2(cleanUp(15376), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
+  obj.children = callback2(cleanUp(15389), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
   return callback2(cleanUp(3992).View, obj);
 });
 let closure_22 = { code: "function ChannelDetailsNavigationBarTsx3(){const{isActive,withTiming,timingFast,runOnJS,cleanUp,width}=this.__closure;return{pointerEvents:isActive?'auto':'none',opacity:withTiming(isActive?1:0,timingFast,'animate-always',function(finished){if(finished)runOnJS(cleanUp)();}),width:width};}" };

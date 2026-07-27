@@ -1,10 +1,10 @@
-// Module ID: 11269
-// Function ID: 87630
+// Module ID: 11270
+// Function ID: 87635
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4567, 5676, 7958, 1212, 11270, 2]
+// Dependencies: [4567, 5676, 7958, 1212, 11271, 2]
 // Exports: getValidationResults
 
-// Module 11269 (_createForOfIteratorHelperLoose)
+// Module 11270 (_createForOfIteratorHelperLoose)
 import { getValidationErrorText } from "TRUE_OPTION_NAME";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -137,7 +137,7 @@ function validateOptionContent(allowEmptyValues) {
     } else {
       first = content[0];
     }
-    const tmp8 = importDefault(11270);
+    const tmp8 = importDefault(11271);
     const tmp15 = tmp8[option.type](first, option, channelId, guildId, commandOrigin);
     if (!tmp16) {
       tmp15.error = getValidationErrorText(option);

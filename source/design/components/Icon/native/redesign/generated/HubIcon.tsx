@@ -1,5 +1,5 @@
 // Module ID: 4660
-// Function ID: 40380
+// Function ID: 40381
 // Name: HubIcon
 // Dependencies: [31, 33, 689, 3834, 4604, 2]
 // Exports: HubIcon

@@ -1,10 +1,10 @@
-// Module ID: 10840
-// Function ID: 84147
+// Module ID: 10841
+// Function ID: 84152
 // Name: useScrollHandlers
 // Dependencies: [31, 9242, 3, 4529, 9846, 682, 9397, 9399, 4980, 2]
 // Exports: default
 
-// Module 10840 (useScrollHandlers)
+// Module 10841 (useScrollHandlers)
 import result from "result";
 import getChatInputContainerHeight from "getChatInputContainerHeight";
 import importDefaultResult from "SCREEN_READER_ENABLED_GETTER";

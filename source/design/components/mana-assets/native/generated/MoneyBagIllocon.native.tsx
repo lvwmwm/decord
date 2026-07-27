@@ -1,5 +1,5 @@
 // Module ID: 7222
-// Function ID: 60068
+// Function ID: 60069
 // Name: MoneyBagIllocon
 // Dependencies: [33, 5085, 7223, 2]
 // Exports: MoneyBagIllocon

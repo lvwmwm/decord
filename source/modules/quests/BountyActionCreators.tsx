@@ -1,10 +1,10 @@
-// Module ID: 10822
-// Function ID: 83917
+// Module ID: 10823
+// Function ID: 83922
 // Name: fetchBountiesAndDispatch
-// Dependencies: [5, 4223, 5931, 653, 686, 5960, 10823, 5948, 4031, 5693, 5952, 507, 5930, 2]
+// Dependencies: [5, 4223, 5931, 653, 686, 5960, 10824, 5948, 4031, 5693, 5952, 507, 5930, 2]
 // Exports: claimBountyReward, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 10822 (fetchBountiesAndDispatch)
+// Module 10823 (fetchBountiesAndDispatch)
 import AdCreativeType from "AdCreativeType";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

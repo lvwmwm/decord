@@ -1,10 +1,10 @@
-// Module ID: 12577
-// Function ID: 97371
+// Module ID: 12578
+// Function ID: 97376
 // Name: GuildBoostingMarketingWave
 // Dependencies: [31, 33, 3835, 689, 8463, 2]
 // Exports: default
 
-// Module 12577 (GuildBoostingMarketingWave)
+// Module 12578 (GuildBoostingMarketingWave)
 import "result";
 import { jsx } from "jsxProd";
 

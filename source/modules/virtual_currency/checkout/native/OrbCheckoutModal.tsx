@@ -1,10 +1,10 @@
-// Module ID: 11834
-// Function ID: 91745
+// Module ID: 11835
+// Function ID: 91750
 // Name: OrbCheckoutModalContent
-// Dependencies: [31, 653, 482, 33, 11835, 7983, 4542, 11836, 9409, 6239, 675, 11837, 4338, 6725, 6726, 11057, 44, 491, 1212, 5087, 11059, 2]
+// Dependencies: [31, 653, 482, 33, 11836, 7983, 4542, 11837, 9409, 6239, 675, 11838, 4338, 6725, 6726, 11058, 44, 491, 1212, 5087, 11060, 2]
 // Exports: default
 
-// Module 11834 (OrbCheckoutModalContent)
+// Module 11835 (OrbCheckoutModalContent)
 import closure_3 from "result";
 import result from "result";
 import ME from "ME";
@@ -21,7 +21,7 @@ let closure_8;
 let closure_9;
 const require = arg1;
 function OrbCheckoutModalContent(orbBalance) {
-  let obj = require(11835) /* useOrbCheckoutModalContextProvider */;
+  let obj = require(11836) /* useOrbCheckoutModalContextProvider */;
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   const orbRedemptionError = orbCheckoutModalContext.orbRedemptionError;
   let obj1 = require(7983) /* useFetchCollectiblesProduct */;
@@ -30,7 +30,7 @@ function OrbCheckoutModalContent(orbBalance) {
   let tmp3 = null != orbRedemptionError;
   if (tmp3) {
     obj = { error: orbRedemptionError.message };
-    tmp3 = callback4(require(11836) /* OrbCheckoutErrorCard */.OrbCheckoutErrorCard, obj);
+    tmp3 = callback4(require(11837) /* OrbCheckoutErrorCard */.OrbCheckoutErrorCard, obj);
   }
   const items = [tmp3, , ];
   obj1 = {};
@@ -39,14 +39,14 @@ function OrbCheckoutModalContent(orbBalance) {
     tmp8 = product;
   }
   obj1.product = tmp8;
-  items[1] = callback4(require(11836) /* OrbCheckoutErrorCard */.OrbCheckoutOrderSummary, obj1);
-  items[2] = callback4(require(11836) /* OrbCheckoutErrorCard */.OrbCheckoutPaymentSourceDetails, { orbBalance: orbBalance.orbBalance });
+  items[1] = callback4(require(11837) /* OrbCheckoutErrorCard */.OrbCheckoutOrderSummary, obj1);
+  items[2] = callback4(require(11837) /* OrbCheckoutErrorCard */.OrbCheckoutPaymentSourceDetails, { orbBalance: orbBalance.orbBalance });
   obj.children = items;
   return closure_12(require(4542) /* Stack */.Stack, obj);
 }
 function OrbCheckoutModalFooter(onPress) {
   const obj = {};
-  const items = [callback4(require(11836) /* OrbCheckoutErrorCard */.OrbCheckoutLegalFinePrint, {}), callback4(require(11836) /* OrbCheckoutErrorCard */.OrbCheckoutPurchaseButton, { onPress: onPress.onPress })];
+  const items = [callback4(require(11837) /* OrbCheckoutErrorCard */.OrbCheckoutLegalFinePrint, {}), callback4(require(11837) /* OrbCheckoutErrorCard */.OrbCheckoutPurchaseButton, { onPress: onPress.onPress })];
   obj.children = items;
   return callback5(require(4542) /* Stack */.Stack, obj);
 }

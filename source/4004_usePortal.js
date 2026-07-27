@@ -1,5 +1,5 @@
 // Module ID: 4004
-// Function ID: 33269
+// Function ID: 33270
 // Name: usePortal
 // Dependencies: [31, 4005, 4006]
 // Exports: usePortal

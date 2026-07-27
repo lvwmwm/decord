@@ -1,5 +1,5 @@
 // Module ID: 5834
-// Function ID: 51352
+// Function ID: 51353
 // Name: timeoutAttachmentsAndEmbedsForMessage
 // Dependencies: [4130, 1348, 5835, 5837, 653, 1282, 1212, 675, 5838, 5839, 5844, 5845, 3810, 4957, 4348, 5851, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage, hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForReason

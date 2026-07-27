@@ -1,5 +1,5 @@
 // Module ID: 4428
-// Function ID: 38921
+// Function ID: 38922
 // Name: isPropertyDescriptor
 // Dependencies: [550, 518]
 

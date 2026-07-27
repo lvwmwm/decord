@@ -1,5 +1,5 @@
 // Module ID: 9960
-// Function ID: 77105
+// Function ID: 77106
 // Name: _putRoleConnectionsConfigurations
 // Dependencies: [5, 653, 507, 686, 5149, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations

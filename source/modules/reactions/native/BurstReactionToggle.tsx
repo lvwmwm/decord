@@ -1,5 +1,5 @@
 // Module ID: 9282
-// Function ID: 72719
+// Function ID: 72720
 // Name: BurstReactionToggle
 // Dependencies: [31, 27, 4123, 1345, 33, 3992, 566, 3835, 689, 4132, 4543, 4131, 9283, 1212, 6567, 2]
 // Exports: default

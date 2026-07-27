@@ -1,5 +1,5 @@
 // Module ID: 8758
-// Function ID: 69305
+// Function ID: 69306
 // Name: useActiveThemeType
 // Dependencies: [1280, 3943, 1322, 1281, 566, 3981, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive

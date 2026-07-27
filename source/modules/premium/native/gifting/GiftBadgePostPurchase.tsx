@@ -1,5 +1,5 @@
 // Module ID: 9762
-// Function ID: 75929
+// Function ID: 75930
 // Name: PostPurchaseFooter
 // Dependencies: [31, 27, 8047, 9763, 1345, 33, 4131, 689, 1557, 4338, 3983, 4544, 8700, 1212, 2295, 9764, 4127, 4100, 4101, 9644, 9765, 3947, 1334, 566, 8044, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 13782
-// Function ID: 105693
+// Module ID: 13783
+// Function ID: 105698
 // Name: SensitiveContentFiltersTeenNotice
-// Dependencies: [31, 6659, 33, 5855, 13712, 1212, 3828, 1921, 6690, 6692, 2]
+// Dependencies: [31, 6659, 33, 5855, 13713, 1212, 3828, 1921, 6690, 6692, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 13782 (SensitiveContentFiltersTeenNotice)
+// Module 13783 (SensitiveContentFiltersTeenNotice)
 import "result";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ export const SensitiveContentFiltersTeenNotice = function SensitiveContentFilter
     },
     noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
   };
-  return jsx(importDefault(13712), {
+  return jsx(importDefault(13713), {
     label: _require(1212).t.EUo0yj,
     labelHook() {
       const obj = outer1_1(outer1_2[6]);
@@ -42,7 +42,7 @@ export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveCo
     },
     noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
   };
-  return jsx(importDefault(13712), {
+  return jsx(importDefault(13713), {
     label: require(1212) /* getSystemLocale */.t.OX4ybh,
     labelHook() {
       let obj = outer1_1(outer1_2[8]);

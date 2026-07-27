@@ -1,7 +1,7 @@
 // Module ID: 1184
 // Function ID: 13491
 // Name: isNonEmptyString
-// Dependencies: [27, 3, 1185, 787, 13190, 786, 1554, 2]
+// Dependencies: [27, 3, 1185, 787, 13191, 786, 1554, 2]
 
 // Module 1184 (isNonEmptyString)
 import { NativeModules } from "get ActivityIndicator";
@@ -50,8 +50,8 @@ export default {
   },
   captureException(arg0, extra) {
     const _require = arg0;
-    const updatedOptions = _require(13190).getUpdatedOptions(extra);
-    const obj = _require(13190);
+    const updatedOptions = _require(13191).getUpdatedOptions(extra);
+    const obj = _require(13191);
     importAll(787).withScope((setTags) => {
       if (null != closure_1) {
         if (null != closure_1.tags) {
@@ -66,7 +66,7 @@ export default {
   },
   captureCrash(error, extra) {
     const _require = error;
-    const updatedOptions = _require(13190).getUpdatedOptions(extra);
+    const updatedOptions = _require(13191).getUpdatedOptions(extra);
     let tags;
     if (null != updatedOptions) {
       tags = updatedOptions.tags;
@@ -78,7 +78,7 @@ export default {
       }
     }
     const dependencyMap = Object.assign({ crash: "true" }, {});
-    let obj = _require(13190);
+    let obj = _require(13191);
     updatedOptions(787).withScope((setExtras) => {
       let tmp = null != updatedOptions;
       if (tmp) {
@@ -112,8 +112,8 @@ export default {
   },
   captureMessage(arg0, extra) {
     const _require = arg0;
-    const updatedOptions = _require(13190).getUpdatedOptions(extra);
-    const obj = _require(13190);
+    const updatedOptions = _require(13191).getUpdatedOptions(extra);
+    const obj = _require(13191);
     importAll(787).withScope((setExtras) => {
       let tmp = null != closure_1;
       if (tmp) {

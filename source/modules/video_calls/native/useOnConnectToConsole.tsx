@@ -1,5 +1,5 @@
 // Module ID: 8862
-// Function ID: 70147
+// Function ID: 70148
 // Name: onConnectToConsole
 // Dependencies: [31, 653, 3947, 1334, 8863, 8898, 8970, 2]
 // Exports: useOnConnectToConsole

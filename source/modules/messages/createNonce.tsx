@@ -1,5 +1,5 @@
 // Module ID: 5987
-// Function ID: 53260
+// Function ID: 53261
 // Name: snowflakeSequence
 // Dependencies: [21, 2]
 // Exports: createNonce

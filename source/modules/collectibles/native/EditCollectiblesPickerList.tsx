@@ -1,5 +1,5 @@
 // Module ID: 7914
-// Function ID: 63015
+// Function ID: 63016
 // Name: EditCollectiblesPickerList
 // Dependencies: [57, 31, 27, 33, 4131, 7902, 4127, 22, 6619, 2]
 // Exports: EditCollectiblesPickerList

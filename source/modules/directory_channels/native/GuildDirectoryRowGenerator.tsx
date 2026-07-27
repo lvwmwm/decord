@@ -1,10 +1,10 @@
-// Module ID: 11696
-// Function ID: 90749
+// Module ID: 11697
+// Function ID: 90754
 // Name: RowType
 // Dependencies: [9996, 9995, 1212, 2]
 // Exports: generateDirectoryRows
 
-// Module 11696 (RowType)
+// Module 11697 (RowType)
 import { DirectoryEntryCategories } from "DirectoryEntryTypes";
 import ArrayResult from "module_20";
 

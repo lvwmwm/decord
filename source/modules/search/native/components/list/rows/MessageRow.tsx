@@ -1,9 +1,9 @@
-// Module ID: 15420
-// Function ID: 117721
+// Module ID: 15433
+// Function ID: 117770
 // Name: GuildChannelMessageRowHeader
-// Dependencies: [31, 27, 4123, 1351, 1348, 1838, 4326, 653, 33, 4131, 689, 566, 4594, 4321, 1273, 4127, 10246, 9562, 8328, 3970, 5656, 15421, 14903, 15422, 4361, 7685, 7668, 15403, 1212, 10219, 3809, 2]
+// Dependencies: [31, 27, 4123, 1351, 1348, 1838, 4326, 653, 33, 4131, 689, 566, 4594, 4321, 1273, 4127, 10247, 9562, 8328, 3970, 5656, 15434, 14904, 15435, 4361, 7685, 7668, 15416, 1212, 10220, 3809, 2]
 
-// Module 15420 (GuildChannelMessageRowHeader)
+// Module 15433 (GuildChannelMessageRowHeader)
 import importAllResult from "set";
 import get_ActivityIndicator from "SearchListRow";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ function GuildChannelMessageRowHeader(channel) {
   const obj2 = { lineClamp: 1, variant: "text-sm/semibold", color: "interactive-text-default", children: importDefault(4321)(channel) };
   items1[1] = callback(channel(4127).Text, obj2);
   if (muted) {
-    const obj3 = { source: importDefault(10246), size: channel(1273).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    const obj3 = { source: importDefault(10247), size: channel(1273).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
     muted = callback(channel(1273).Icon, obj3);
   }
   items1[2] = muted;
@@ -89,7 +89,7 @@ function PrivateChannelMessageRowLabel(message) {
       const item = recipients.forEach((arg0) => message(outer2_2[20]).getUser(arg0));
     }
   }, items1);
-  let obj = message(15421);
+  let obj = message(15434);
   const searchMessageTimestamp = obj.useSearchMessageTimestamp(message, channel);
   obj = { style: tmp.labelContainer };
   obj = { style: tmp.authorRow };
@@ -97,7 +97,7 @@ function PrivateChannelMessageRowLabel(message) {
   const obj1 = { lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: memo };
   const items2 = [callback(message(4127).Text, obj1), , ];
   if (muted) {
-    const obj2 = { source: channel(10246), size: message(1273).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    const obj2 = { source: channel(10247), size: message(1273).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
     muted = callback(message(1273).Icon, obj2);
   }
   items2[1] = muted;
@@ -115,13 +115,13 @@ function PrivateChannelMessageRowLabel(message) {
   let tmp18 = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const obj5 = { size: "xs", style: tmp.suppressNotificationsIcon };
-    tmp18 = callback(message(14903).BellZIcon, obj5);
+    tmp18 = callback(message(14904).BellZIcon, obj5);
   }
   items3[2] = tmp18;
   let tmp22 = null;
   if (message.isPoll()) {
     const obj6 = { style: tmp.pollBadge };
-    tmp22 = callback(channel(15422), obj6);
+    tmp22 = callback(channel(15435), obj6);
   }
   items3[3] = tmp22;
   obj.children = items3;
@@ -148,7 +148,7 @@ function GuildChannelMessageRowLabel(arg0) {
     const processColorStringsArray = obj2.useProcessColorStringsArray(colorStrings);
     let obj3 = require(7685) /* processColorStringsInternal */;
     const isRoleStyleAndRoleColorsEligibleForERC = obj3.useIsRoleStyleAndRoleColorsEligibleForERC(channel.guild_id, message.author.id, stateFromStores, processColorStringsArray);
-    let obj4 = require(15421) /* useSearchMessageTimestamp */;
+    let obj4 = require(15434) /* useSearchMessageTimestamp */;
     const searchMessageTimestamp = obj4.useSearchMessageTimestamp(message, channel);
     obj = { style: tmp.labelContainer };
     const obj1 = { style: tmp.authorRow };
@@ -177,13 +177,13 @@ function GuildChannelMessageRowLabel(arg0) {
     let tmp32 = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
       const obj5 = { size: "xs", style: tmp.suppressNotificationsIcon };
-      tmp32 = callback(require(14903) /* BellZIcon */.BellZIcon, obj5);
+      tmp32 = callback(require(14904) /* BellZIcon */.BellZIcon, obj5);
     }
     items2[2] = tmp32;
     let tmp36 = null;
     if (message.isPoll()) {
       const obj6 = { style: tmp.pollBadge };
-      tmp36 = callback(importDefault(15422), obj6);
+      tmp36 = callback(importDefault(15435), obj6);
     }
     items2[3] = tmp36;
     obj.children = items2;

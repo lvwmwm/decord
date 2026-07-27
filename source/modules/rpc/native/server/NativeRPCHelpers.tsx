@@ -1,10 +1,10 @@
-// Module ID: 10557
-// Function ID: 82252
+// Module ID: 10558
+// Function ID: 82257
 // Name: validateSocketClient
-// Dependencies: [5, 4034, 653, 10558, 10553, 2]
+// Dependencies: [5, 4034, 653, 10559, 10554, 2]
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings
 
-// Module 10557 (validateSocketClient)
+// Module 10558 (validateSocketClient)
 import set from "set";
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import { RPCCloseCodes } from "ME";
@@ -20,5 +20,5 @@ const tmp2 = (() => {
 const result = require("ME").fileFinishedImporting("modules/rpc/native/server/NativeRPCHelpers.tsx");
 
 export const validateSocketClient = tmp2;
-export const getDeprecatedVoiceSettings = () => require(10558) /* recurseReplaceContentTree */.getDeprecatedVoiceSettingsWithShortcut(() => []);
-export const getVoiceSettings = (guildId) => require(10558) /* recurseReplaceContentTree */.getVoiceSettingsWithShortcut(guildId, () => "");
+export const getDeprecatedVoiceSettings = () => require(10559) /* recurseReplaceContentTree */.getDeprecatedVoiceSettingsWithShortcut(() => []);
+export const getVoiceSettings = (guildId) => require(10559) /* recurseReplaceContentTree */.getVoiceSettingsWithShortcut(guildId, () => "");

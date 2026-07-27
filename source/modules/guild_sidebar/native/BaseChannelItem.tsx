@@ -1,10 +1,10 @@
-// Module ID: 11415
-// Function ID: 88711
+// Module ID: 11416
+// Function ID: 88716
 // Name: BaseChannelSubtitle
-// Dependencies: [31, 27, 10222, 4327, 33, 4131, 689, 4127, 478, 1273, 10266, 8174, 11416, 2]
+// Dependencies: [31, 27, 10223, 4327, 33, 4131, 689, 4127, 478, 1273, 10267, 8174, 11417, 2]
 // Exports: BaseChannelIcon, BaseChannelName, default
 
-// Module 11415 (BaseChannelSubtitle)
+// Module 11416 (BaseChannelSubtitle)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { CHANNEL_TITLE_LINE_HEIGHT } from "hairlineWidth";
@@ -140,7 +140,7 @@ export default function BaseChannelItem(mode) {
     const items1 = [tmp6, !hideIcon && icon, name, channelInfo];
     obj.children = items1;
     if (flag) {
-      let AnimatedPressableHighlight = hideIcon(11416);
+      let AnimatedPressableHighlight = hideIcon(11417);
     } else {
       AnimatedPressableHighlight = mode(8174).AnimatedPressableHighlight;
     }
@@ -157,8 +157,8 @@ export default function BaseChannelItem(mode) {
       ALL_MESSAGES = UnreadSetting.ALL_MESSAGES;
     }
     obj1.resolvedUnreadSetting = ALL_MESSAGES;
-    closure_7(hideIcon(10266), obj1);
-    const tmp10 = hideIcon(10266);
+    closure_7(hideIcon(10267), obj1);
+    const tmp10 = hideIcon(10267);
     const tmp7 = closure_7;
   }
 };

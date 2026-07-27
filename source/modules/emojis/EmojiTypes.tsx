@@ -1,5 +1,5 @@
 // Module ID: 3775
-// Function ID: 29036
+// Function ID: 29037
 // Name: EmojiTypes
 // Dependencies: [2]
 

@@ -1,5 +1,5 @@
 // Module ID: 10013
-// Function ID: 77497
+// Function ID: 77498
 // Name: GuildDirectoryAddAlert
 // Dependencies: [31, 27, 33, 4131, 689, 4562, 1212, 5513, 4127, 2]
 // Exports: default

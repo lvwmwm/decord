@@ -1,9 +1,16 @@
 // Module ID: 13344
-// Function ID: 102208
-// Dependencies: []
+// Function ID: 102211
+// Dependencies: [13345]
 
 // Module 13344
 
-export default Math.trunc || (function trunc(arg0) {
-  return +arg0 > 0 ? floor : ceil(+arg0);
-});
+export default (arg0) => {
+  let num = 0;
+  {
+    num = 0;
+    if (0 !== tmp) {
+      num = require(13345)(tmp);
+    }
+  }
+  return num;
+};

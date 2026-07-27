@@ -1,5 +1,5 @@
 // Module ID: 8332
-// Function ID: 66851
+// Function ID: 66852
 // Name: useTieredTenureBadgeClickHandler
 // Dependencies: [31, 1850, 1852, 8333, 653, 5510, 8334, 5651, 566, 6554, 4099, 8335, 1935, 8335, 675, 2]
 // Exports: useTieredTenureBadgeClickHandler

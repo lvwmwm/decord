@@ -1,5 +1,5 @@
 // Module ID: 8395
-// Function ID: 67126
+// Function ID: 67127
 // Name: BadgeCategory
 // Dependencies: [8394, 2]
 // Exports: getBadgeCategory

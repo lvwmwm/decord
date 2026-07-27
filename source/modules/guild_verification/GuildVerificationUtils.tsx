@@ -1,10 +1,10 @@
-// Module ID: 12359
-// Function ID: 96110
+// Module ID: 12360
+// Function ID: 96115
 // Name: inviteGuildHasPendingMemberDisabledVerification
 // Dependencies: [3949, 653, 3951, 1198, 9073, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 12359 (inviteGuildHasPendingMemberDisabledVerification)
+// Module 12360 (inviteGuildHasPendingMemberDisabledVerification)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

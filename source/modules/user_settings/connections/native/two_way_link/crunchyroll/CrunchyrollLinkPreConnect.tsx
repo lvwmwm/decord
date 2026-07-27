@@ -1,5 +1,5 @@
 // Module ID: 8920
-// Function ID: 70530
+// Function ID: 70531
 // Name: CrunchyrollLinkPreConnect
 // Dependencies: [31, 8917, 653, 8111, 33, 4131, 1456, 8874, 8921, 1212, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 9767
-// Function ID: 75956
+// Function ID: 75957
 // Name: navigateToThreadCreation
 // Dependencies: [6024, 3982, 4139, 2]
 // Exports: navigateToThreadCreation

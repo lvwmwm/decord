@@ -1,9 +1,9 @@
-// Module ID: 16587
-// Function ID: 129447
+// Module ID: 16599
+// Function ID: 129494
 // Name: AVErrorNoInputDevicesDefinition
-// Dependencies: [1348, 4178, 4203, 8784, 16586, 2]
+// Dependencies: [1348, 4178, 4203, 8784, 16598, 2]
 
-// Module 16587 (AVErrorNoInputDevicesDefinition)
+// Module 16599 (AVErrorNoInputDevicesDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -31,7 +31,7 @@ export const AVErrorNoInputDevicesDefinition = {
         if (null != mediaSessionId.getMediaSessionId()) {
           if (!isGuildStageVoiceResult) {
             const obj = { type: require(8784) /* validateUniqueErrorCodes */.AVError.NO_INPUT_DEVICES };
-            const merged = Object.assign(require(16586) /* getCommonErrorContext */.getVoiceChannelErrorContext());
+            const merged = Object.assign(require(16598) /* getCommonErrorContext */.getVoiceChannelErrorContext());
             const items = [obj];
             return items;
           }

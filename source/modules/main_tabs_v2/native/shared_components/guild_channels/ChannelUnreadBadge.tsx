@@ -1,8 +1,8 @@
-// Module ID: 14959
-// Function ID: 114064
-// Dependencies: [31, 27, 10222, 4327, 33, 4131, 10223, 4550, 9056, 2]
+// Module ID: 14960
+// Function ID: 114069
+// Dependencies: [31, 27, 10223, 4327, 33, 4131, 10224, 4550, 9056, 2]
 
-// Module 14959
+// Module 14960
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -25,7 +25,7 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     flag = false;
   }
   const tmp = callback();
-  let obj = require(10223) /* getLayoutStyles */;
+  let obj = require(10224) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout, launchpad);
   require(4550) /* getFontScale */;
   let tmp6Result = null;
@@ -39,10 +39,10 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     items[1] = unreadBadgePanel;
     const unreadBadge = layoutStyles.unreadBadge;
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = require(10223) /* getLayoutStyles */.makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = require(10224) /* getLayoutStyles */.makeSizeStyle(layoutStyles.unreadBadge.size);
     obj.style = items;
     obj = { classic: flag };
-    const obj3 = require(10223) /* getLayoutStyles */;
+    const obj3 = require(10224) /* getLayoutStyles */;
     const tmp11 = jsx;
     const tmp6 = jsx;
     const tmp7 = View;

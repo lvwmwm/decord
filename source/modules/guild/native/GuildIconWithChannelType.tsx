@@ -1,5 +1,5 @@
 // Module ID: 9868
-// Function ID: 76463
+// Function ID: 76464
 // Name: GuildIconWithChannelTypeSizes
 // Dependencies: [31, 27, 33, 5513, 4131, 689, 4594, 9869, 7909, 1273, 2]
 // Exports: GuildIconWithChannelType

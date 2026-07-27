@@ -1,10 +1,10 @@
-// Module ID: 15455
-// Function ID: 117974
+// Module ID: 15468
+// Function ID: 118023
 // Name: MessageContent
 // Dependencies: [31, 27, 4123, 1918, 1850, 6014, 653, 482, 33, 4131, 689, 566, 6040, 4572, 5049, 4127, 1212, 3970, 6018, 4361, 21, 1273, 7817, 7685, 3995, 2]
 // Exports: ThreadSubtext
 
-// Module 15455 (MessageContent)
+// Module 15468 (MessageContent)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

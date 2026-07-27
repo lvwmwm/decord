@@ -1,10 +1,10 @@
-// Module ID: 11816
-// Function ID: 91683
+// Module ID: 11817
+// Function ID: 91688
 // Name: ProfileEffectAssetPreview
-// Dependencies: [31, 27, 655, 7977, 33, 4131, 689, 8004, 5085, 11817, 8020, 8626, 7984, 8012, 7994, 1874, 8008, 1877, 656, 8646, 8645, 8005, 1212, 4127, 5781, 8648, 11818, 8596, 3777, 8658, 2]
+// Dependencies: [31, 27, 655, 7977, 33, 4131, 689, 8004, 5085, 11818, 8020, 8626, 7984, 8012, 7994, 1874, 8008, 1877, 656, 8646, 8645, 8005, 1212, 4127, 5781, 8648, 11819, 8596, 3777, 8658, 2]
 // Exports: default
 
-// Module 11816 (ProfileEffectAssetPreview)
+// Module 11817 (ProfileEffectAssetPreview)
 import result from "result";
 import { View } from "useCurrentUser";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
@@ -25,7 +25,7 @@ function ProfileEffectAssetPreview(item) {
   if (null != tmp2) {
     let obj = { style: tmp.profileEffectContainer };
     obj = {};
-    obj = { uri: importDefault(11817) };
+    obj = { uri: importDefault(11818) };
     obj.source = obj;
     obj.alt = tmp2.accessibilityLabel;
     obj.style = tmp.profileEffect;

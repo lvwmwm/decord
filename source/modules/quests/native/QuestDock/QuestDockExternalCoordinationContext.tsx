@@ -1,10 +1,10 @@
-// Module ID: 14059
-// Function ID: 107632
+// Module ID: 14060
+// Function ID: 107637
 // Name: QuestDockMode
-// Dependencies: [31, 14053, 4977, 14055, 33, 664, 7621, 3992, 14054, 9401, 477, 2]
+// Dependencies: [31, 14054, 4977, 14056, 33, 664, 7621, 3992, 14055, 9401, 477, 2]
 // Exports: useExternalScrollEventHandler
 
-// Module 14059 (QuestDockMode)
+// Module 14060 (QuestDockMode)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { QuestDockMode } from "QuestsExperimentLocations";

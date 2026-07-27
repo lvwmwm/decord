@@ -1,5 +1,5 @@
 // Module ID: 7945
-// Function ID: 63233
+// Function ID: 63234
 // Name: items
 // Dependencies: [4046, 4043, 2]
 // Exports: getVoiceChannelBadgeExperiment, useVoiceChannelBadgeExperiment

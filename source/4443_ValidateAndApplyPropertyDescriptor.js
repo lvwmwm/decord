@@ -1,5 +1,5 @@
 // Module ID: 4443
-// Function ID: 38952
+// Function ID: 38953
 // Name: ValidateAndApplyPropertyDescriptor
 // Dependencies: [4444, 4377, 518, 4424, 4428, 4441, 4431, 4432, 4433, 4434, 4445, 4446]
 

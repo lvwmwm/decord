@@ -1,10 +1,10 @@
-// Module ID: 13660
-// Function ID: 104939
+// Module ID: 13661
+// Function ID: 104944
 // Name: EditProfileFrameInner
-// Dependencies: [57, 31, 27, 5786, 5777, 653, 33, 4131, 689, 7922, 7892, 5462, 5482, 675, 7880, 5187, 4127, 1212, 7893, 7896, 566, 13661, 7882, 7923, 13662, 7913, 7914, 7894, 8677, 4555, 2]
+// Dependencies: [57, 31, 27, 5786, 5777, 653, 33, 4131, 689, 7922, 7892, 5462, 5482, 675, 7880, 5187, 4127, 1212, 7893, 7896, 566, 13662, 7882, 7923, 13663, 7913, 7914, 7894, 8677, 4555, 2]
 // Exports: default
 
-// Module 13660 (EditProfileFrameInner)
+// Module 13661 (EditProfileFrameInner)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "useCollectiblesData";

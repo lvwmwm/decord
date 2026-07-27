@@ -1,10 +1,10 @@
-// Module ID: 10437
-// Function ID: 80939
+// Module ID: 10438
+// Function ID: 80944
 // Name: sendVideoProgress
-// Dependencies: [4223, 5932, 5934, 653, 5930, 9401, 5955, 1212, 5949, 3982, 2, 10438]
+// Dependencies: [4223, 5932, 5934, 653, 5930, 9401, 5955, 1212, 5949, 3982, 2, 10439]
 // Exports: computeMaxSeekableTime, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isVideoQuestProgressing
 
-// Module 10437 (sendVideoProgress)
+// Module 10438 (sendVideoProgress)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _toPropertyKey from "_toPropertyKey";

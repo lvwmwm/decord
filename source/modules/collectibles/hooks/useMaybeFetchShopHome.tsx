@@ -1,10 +1,10 @@
-// Module ID: 14536
-// Function ID: 111037
+// Module ID: 14537
+// Function ID: 111042
 // Name: useMaybeFetchCollectiblesShopHome
-// Dependencies: [57, 31, 4045, 5770, 5816, 655, 566, 5819, 5769, 14537, 2]
+// Dependencies: [57, 31, 4045, 5770, 5816, 655, 566, 5819, 5769, 14538, 2]
 // Exports: useMaybeFetchCollectiblesShopHome
 
-// Module 14536 (useMaybeFetchCollectiblesShopHome)
+// Module 14537 (useMaybeFetchCollectiblesShopHome)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -99,7 +99,7 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   if (tmp14) {
     tmp14 = tmp9;
   }
-  hasExpiredShopBlocks = _require(14537).useHasExpiredShopBlocks(first, tmp14, flag);
+  hasExpiredShopBlocks = _require(14538).useHasExpiredShopBlocks(first, tmp14, flag);
   const items5 = [tmp3[1], hasExpiredShopBlocks];
   const tmp16 = callback2(() => {
     let tmp = !hasExpiredShopBlocks;

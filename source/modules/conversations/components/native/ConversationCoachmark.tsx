@@ -1,5 +1,5 @@
 // Module ID: 10063
-// Function ID: 78023
+// Function ID: 78024
 // Name: NewBadge
 // Dependencies: [57, 31, 27, 1345, 33, 1334, 4131, 689, 4127, 1212, 8379, 8368, 2]
 // Exports: ConversationCoachmark

@@ -1,23 +1,23 @@
-// Module ID: 16263
-// Function ID: 126280
+// Module ID: 16275
+// Function ID: 126327
 // Name: close
-// Dependencies: [57, 31, 1838, 8243, 653, 33, 16264, 8242, 480, 1212, 5087, 16265, 16278, 16282, 16283, 16293, 16308, 16309, 16321, 16333, 16335, 15582, 15591, 16343, 16347, 16349, 15593, 16350, 16355, 16356, 16376, 16395, 16399, 16402, 10964, 10977, 10979, 16403, 16408, 16409, 16431, 16471, 16472, 16488, 16527, 16531, 16532, 16535, 16543, 1557, 5450, 566, 5517, 2]
+// Dependencies: [57, 31, 1838, 8243, 653, 33, 16276, 8242, 480, 1212, 5087, 16277, 16290, 16294, 16295, 16305, 16320, 16321, 16333, 16345, 16347, 15594, 15603, 16355, 16359, 16361, 15605, 16362, 16367, 16368, 16388, 16407, 16411, 16414, 10965, 10978, 10980, 16415, 16420, 16421, 16443, 16483, 16484, 16500, 16539, 16543, 16544, 16547, 16555, 1557, 5450, 566, 5517, 2]
 // Exports: default
 
-// Module 16263 (close)
+// Module 16275 (close)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_6 from "_isNativeReflectConstruct";
 import ME from "ME";
-import { jsx } from "module_16402";
+import { jsx } from "module_16414";
 
 let closure_7;
 let closure_8;
 const require = arg1;
 function close() {
-  importDefault(16264).terminate();
-  const obj = importDefault(16264);
+  importDefault(16276).terminate();
+  const obj = importDefault(16276);
   importDefault(8242).close();
 }
 ({ GuildSettingsSections: closure_7, WebhookTypes: closure_8 } = ME);

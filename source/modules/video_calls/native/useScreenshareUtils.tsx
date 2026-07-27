@@ -1,10 +1,10 @@
-// Module ID: 10682
-// Function ID: 83169
+// Module ID: 10683
+// Function ID: 83174
 // Name: handleCloseScreenshare
-// Dependencies: [31, 27, 4150, 653, 4111, 5990, 4180, 8763, 4310, 4195, 8770, 8784, 10683, 10678, 1553, 10694, 10695, 10696, 10697, 10689, 566, 5462, 1212, 2]
+// Dependencies: [31, 27, 4150, 653, 4111, 5990, 4180, 8763, 4310, 4195, 8770, 8784, 10684, 10679, 1553, 10695, 10696, 10697, 10698, 10690, 566, 5462, 1212, 2]
 // Exports: default, tryStartScreenShare
 
-// Module 10682 (handleCloseScreenshare)
+// Module 10683 (handleCloseScreenshare)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ApplicationStreamStates } from "ME";
@@ -109,18 +109,18 @@ function getStreamPressHandler(analyticsLocations) {
 function getShareIcon(arg0, arg1) {
   if (obj.isMetaQuest()) {
     if (arg0) {
-      let tmp5 = 10694;
+      let tmp5 = 10695;
     } else {
-      tmp5 = 10695;
+      tmp5 = 10696;
     }
     tmp(tmp5);
   } else {
     if (arg1) {
-      let tmp4 = 10696;
+      let tmp4 = 10697;
     } else if (arg0) {
-      tmp4 = 10697;
+      tmp4 = 10698;
     } else {
-      tmp4 = 10696;
+      tmp4 = 10697;
     }
     return tmp(tmp4);
   }
@@ -131,12 +131,12 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export default function useScreenshareUtils(arg0) {
   const _require = arg0;
-  let tmp = importDefault(10678)(arg0);
+  let tmp = importDefault(10679)(arg0);
   importDefault = tmp;
   const tmp2 = getOSRequirement();
   const dependencyMap = tmp2;
-  const showMobileGoLiveUpsell = importDefault(10689).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
-  let obj = importDefault(10689);
+  const showMobileGoLiveUpsell = importDefault(10690).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
+  let obj = importDefault(10690);
   const items = [stateFromStores];
   stateFromStores = _require(566).useStateFromStores(items, () => stateFromStores.getCurrentUserActiveStream());
   const analyticsLocations = importDefault(5462)().analyticsLocations;
@@ -176,8 +176,8 @@ export { getStreamPressHandler };
 export const tryStartScreenShare = function tryStartScreenShare(channel) {
   let videoPermission = getOSRequirement();
   if (videoPermission) {
-    videoPermission = require(10678) /* useHasVideoPermission */.getVideoPermission(channel);
-    const obj = require(10678) /* useHasVideoPermission */;
+    videoPermission = require(10679) /* useHasVideoPermission */.getVideoPermission(channel);
+    const obj = require(10679) /* useHasVideoPermission */;
   }
   if (videoPermission) {
     startStream();

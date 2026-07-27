@@ -1,5 +1,5 @@
 // Module ID: 8601
-// Function ID: 68309
+// Function ID: 68310
 // Name: resolveSize
 // Dependencies: [31, 27, 5774, 653, 33, 4131, 8602, 689, 8625, 7984, 7994, 1877, 8005, 7995, 8626, 8628, 7829, 7991, 3835, 3843, 1327, 2]
 // Exports: default
@@ -31,7 +31,7 @@ class CollectiblesPreview {
       size = require("SourceIcon").DEFAULT_ITEM_SIZE;
     }
     size2 = resolveSize(size);
-    tmp3 = f68316(size2.width, size2.height);
+    tmp3 = f68317(size2.width, size2.height);
     if ("bundle" === collectiblesItemData.type) {
       tmp35 = closure_0;
       tmp36 = closure_2;
@@ -67,8 +67,8 @@ class CollectiblesPreview {
         obj2.previewAssets = collectiblesItemData.previewAssets;
         flag2 = true;
         obj2.disableStaticBackground = true;
-        tmp50 = f68316;
-        obj2.targetSize = f68316;
+        tmp50 = f68317;
+        obj2.targetSize = f68317;
         obj1.children = jsx(require("getSizedAssetUri"), obj2);
         obj.children = jsx(View, obj1);
         return jsx(View, obj);
@@ -209,7 +209,7 @@ class SocialLayerStorefrontSKUPreview {
       DEFAULT_ITEM_SIZE = require("SourceIcon").DEFAULT_ITEM_SIZE;
     }
     size = resolveSize(DEFAULT_ITEM_SIZE);
-    tmp3 = f68316(size.width, size.height);
+    tmp3 = f68317(size.width, size.height);
     obj = require("apexExperiment");
     tmp4 = null;
     if (obj.useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "sku_preview" })) {
@@ -235,7 +235,7 @@ class PremiumSKUPreview {
       DEFAULT_ITEM_SIZE = require("SourceIcon").DEFAULT_ITEM_SIZE;
     }
     size = resolveSize(DEFAULT_ITEM_SIZE);
-    tmp3 = f68316(size.width, size.height);
+    tmp3 = f68317(size.width, size.height);
     obj = require("map");
     obj = { style: tmp3.premiumRiveContainer };
     token = obj.useToken(require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT);

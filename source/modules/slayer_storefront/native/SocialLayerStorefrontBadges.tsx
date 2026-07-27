@@ -1,5 +1,5 @@
 // Module ID: 9699
-// Function ID: 75592
+// Function ID: 75593
 // Name: ExclusiveBadge
 // Dependencies: [31, 27, 33, 4131, 689, 477, 9700, 4127, 1212, 2]
 // Exports: ExclusiveBadge

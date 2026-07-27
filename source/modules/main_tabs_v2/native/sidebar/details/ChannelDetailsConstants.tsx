@@ -1,5 +1,5 @@
 // Module ID: 9032
-// Function ID: 71058
+// Function ID: 71059
 // Name: ChannelDetailsNavigatorScreens
 // Dependencies: [9033, 2]
 

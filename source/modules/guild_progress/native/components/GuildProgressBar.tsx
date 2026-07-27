@@ -1,10 +1,10 @@
-// Module ID: 13046
-// Function ID: 100946
+// Module ID: 13047
+// Function ID: 100951
 // Name: GuildProgressBar
-// Dependencies: [31, 27, 33, 4131, 11503, 689, 3992, 4132, 4135, 2]
+// Dependencies: [31, 27, 33, 4131, 11504, 689, 3992, 4132, 4135, 2]
 // Exports: default
 
-// Module 13046 (GuildProgressBar)
+// Module 13047 (GuildProgressBar)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

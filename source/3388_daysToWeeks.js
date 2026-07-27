@@ -1,5 +1,5 @@
 // Module ID: 3388
-// Function ID: 26563
+// Function ID: 26564
 // Name: daysToWeeks
 // Dependencies: [3211, 3389]
 // Exports: default

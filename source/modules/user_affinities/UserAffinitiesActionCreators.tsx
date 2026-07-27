@@ -1,5 +1,5 @@
 // Module ID: 8748
-// Function ID: 69259
+// Function ID: 69260
 // Name: fetchUserAffinitiesV2
 // Dependencies: [5590, 5892, 653, 686, 507, 2]
 // Exports: fetchUserAffinitiesV2

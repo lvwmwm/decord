@@ -1,10 +1,10 @@
-// Module ID: 13025
-// Function ID: 100826
+// Module ID: 13026
+// Function ID: 100831
 // Name: items
-// Dependencies: [31, 33, 12987, 8463, 2]
+// Dependencies: [31, 33, 12988, 8463, 2]
 // Exports: GuildBadgeSnail
 
-// Module 13025 (items)
+// Module 13026 (items)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -37,7 +37,7 @@ export const GuildBadgeSnail = function GuildBadgeSnail(width) {
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
-  let obj1 = require(12987) /* getTransformedBadgeColors */;
+  let obj1 = require(12988) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_4, primaryTintColor, primaryTintLuminances: closure_5, primaryLuminanceWeights: items, secondaryBaseColors: dependencyMap, secondaryTintColor, secondaryTintLuminances: closure_8, secondaryLuminanceWeights: items1 };
   const transformedBadgeColors = obj1.getTransformedBadgeColors(obj);
   ({ primaryColorsTransformed, secondaryColorsTransformed } = transformedBadgeColors);

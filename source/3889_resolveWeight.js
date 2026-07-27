@@ -1,5 +1,5 @@
 // Module ID: 3889
-// Function ID: 32202
+// Function ID: 32203
 // Name: resolveWeight
 // Dependencies: [57, 5, 27, 3863]
 

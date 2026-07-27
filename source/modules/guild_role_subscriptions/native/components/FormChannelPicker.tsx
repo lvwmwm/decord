@@ -1,10 +1,10 @@
-// Module ID: 16507
-// Function ID: 128699
+// Module ID: 16519
+// Function ID: 128746
 // Name: FormChannelPicker
-// Dependencies: [31, 1348, 33, 4131, 12968, 566, 4321, 8278, 4099, 16508, 1935, 4594, 4639, 4127, 1212, 1273, 10674, 2]
+// Dependencies: [31, 1348, 33, 4131, 12969, 566, 4321, 8278, 4099, 16520, 1935, 4594, 4639, 4127, 1212, 1273, 10675, 2]
 // Exports: default
 
-// Module 16507 (FormChannelPicker)
+// Module 16519 (FormChannelPicker)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";

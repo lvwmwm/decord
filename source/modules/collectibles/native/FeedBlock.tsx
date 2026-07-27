@@ -1,10 +1,10 @@
-// Module ID: 14555
-// Function ID: 111148
+// Module ID: 14556
+// Function ID: 111153
 // Name: feedBlock
-// Dependencies: [31, 27, 4123, 1278, 5590, 655, 653, 33, 4131, 689, 566, 3977, 14034, 14556, 14036, 5769, 5482, 5462, 1212, 4127, 4661, 4099, 14557, 1935, 4087, 4544, 14549, 14558, 477, 6154, 14559, 5085, 14560, 14561, 2]
+// Dependencies: [31, 27, 4123, 1278, 5590, 655, 653, 33, 4131, 689, 566, 3977, 14035, 14557, 14037, 5769, 5482, 5462, 1212, 4127, 4661, 4099, 14558, 1935, 4087, 4544, 14550, 14559, 477, 6154, 14560, 5085, 14561, 14562, 2]
 // Exports: default
 
-// Module 14555 (feedBlock)
+// Module 14556 (feedBlock)
 import preload from "preload";
 import get_ActivityIndicator from "metadata";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -58,7 +58,7 @@ export default function _default(feedBlock) {
   let obj1 = feedBlock(566);
   let items1 = [closure_8];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_8.hasConsented(outer1_10.PERSONALIZATION));
-  const tmp3 = stateFromStores1(14034)();
+  const tmp3 = stateFromStores1(14035)();
   const dependencyMap = tmp3;
   const items2 = [feedBlock.sortedSkuIds, tmp3, stateFromStores1];
   const memo = React.useMemo(() => {
@@ -91,7 +91,7 @@ export default function _default(feedBlock) {
     return obj;
   }, items2);
   let isPersonalized = memo.isPersonalized;
-  let obj2 = feedBlock(14036);
+  let obj2 = feedBlock(14037);
   const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts({ products: memo.feedProducts, maxProducts: 36, screen });
   let obj3 = feedBlock(566);
   const items3 = [_isNativeReflectConstruct];
@@ -139,7 +139,7 @@ export default function _default(feedBlock) {
   obj1.children = items5;
   const items6 = [closure_12(closure_5, obj1), , ];
   const obj7 = { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground };
-  items6[1] = callback(stateFromStores1(14549), obj7);
+  items6[1] = callback(stateFromStores1(14550), obj7);
   const obj8 = { style: str.feedFooter };
   const obj9 = { variant: "heading-lg/bold", accessibilityRole: "header" };
   const intl4 = feedBlock(1212).intl;
@@ -154,7 +154,7 @@ export default function _default(feedBlock) {
   if (screen === constants.ORBS) {
     if (stateFromStores2) {
       const obj11 = {};
-      const obj12 = { uri: stateFromStores1(14558) };
+      const obj12 = { uri: stateFromStores1(14559) };
       obj11.source = obj12;
       obj11.style = str.feedFooterOrbImage;
       obj11.accessibilityElementsHidden = true;
@@ -165,14 +165,14 @@ export default function _default(feedBlock) {
       if (obj18.isAndroid()) {
         const obj13 = { url: null, autoplay: true, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
         let tmp30Result = tmp30(6154);
-        obj13.url = tmp30(14559);
+        obj13.url = tmp30(14560);
         obj13.style = `no-hide-descendants`.feedFooterOrbImage;
         tmp29Result = tmp29(tmp30Result, obj13);
       } else {
         const obj14 = { source: null, enableAnimation: true, resizeMode: "contain", style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
         const obj15 = {};
         tmp30Result = tmp30(5085);
-        obj15.uri = tmp30(14559);
+        obj15.uri = tmp30(14560);
         obj14.source = obj15;
         obj14.style = `no-hide-descendants`.feedFooterOrbImage;
         tmp29Result = tmp29(tmp30Result, obj14);
@@ -182,13 +182,13 @@ export default function _default(feedBlock) {
   } else {
     const obj16 = {};
     if (stateFromStores) {
-      obj16.source = tmp24(14560);
+      obj16.source = tmp24(14561);
       obj16.style = str.feedFooterImage;
       obj16.accessibilityElementsHidden = true;
       obj16.importantForAccessibility = "no-hide-descendants";
       let tmp26 = obj16;
     } else {
-      obj16.source = tmp24(14561);
+      obj16.source = tmp24(14562);
       obj16.style = str.feedFooterImage;
       obj16.accessibilityElementsHidden = true;
       obj16.importantForAccessibility = "no-hide-descendants";

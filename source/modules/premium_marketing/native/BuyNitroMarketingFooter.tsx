@@ -1,10 +1,10 @@
-// Module ID: 12372
-// Function ID: 96184
+// Module ID: 12373
+// Function ID: 96189
 // Name: BuyNitroMarketingFooter
 // Dependencies: [31, 27, 33, 4131, 689, 5217, 6603, 5482, 2]
 // Exports: default
 
-// Module 12372 (BuyNitroMarketingFooter)
+// Module 12373 (BuyNitroMarketingFooter)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

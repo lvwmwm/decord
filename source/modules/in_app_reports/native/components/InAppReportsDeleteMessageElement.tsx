@@ -1,10 +1,10 @@
-// Module ID: 12342
-// Function ID: 96034
+// Module ID: 12343
+// Function ID: 96039
 // Name: DeleteMessageElement
-// Dependencies: [57, 31, 4350, 653, 33, 566, 4325, 5685, 12338, 1212, 4090, 2]
+// Dependencies: [57, 31, 4350, 653, 33, 566, 4325, 5685, 12339, 1212, 4090, 2]
 // Exports: default
 
-// Module 12342 (DeleteMessageElement)
+// Module 12343 (DeleteMessageElement)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,5 +46,5 @@ export default function DeleteMessageElement(message) {
   obj.variant = "danger";
   obj.onPress = callback;
   obj.icon = jsx(message(4090).TrashIcon, { color: "text-feedback-critical" });
-  return jsx(reportId(12338), {});
+  return jsx(reportId(12339), {});
 };

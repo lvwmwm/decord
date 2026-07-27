@@ -1,10 +1,10 @@
-// Module ID: 16384
-// Function ID: 127889
+// Module ID: 16396
+// Function ID: 127936
 // Name: InRolePromptNotice
-// Dependencies: [31, 27, 653, 33, 4131, 689, 1360, 16385, 1273, 8284, 4127, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1360, 16397, 1273, 8284, 4127, 1212, 2]
 // Exports: default
 
-// Module 16384 (InRolePromptNotice)
+// Module 16396 (InRolePromptNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import { RoleFlags } from "ME";
@@ -31,7 +31,7 @@ export default function InRolePromptNotice(role) {
   if (!obj.hasFlag(role.flags, RoleFlags.IN_PROMPT)) {
     return null;
   } else {
-    let obj1 = require(16385) /* _createForOfIteratorHelperLoose */;
+    let obj1 = require(16397) /* _createForOfIteratorHelperLoose */;
     obj = { style: stringResult.promptRow };
     let Icon = require(1273) /* Button */.Icon;
     if (isRolePowerfulResult) {

@@ -1,5 +1,5 @@
 // Module ID: 3496
-// Function ID: 26927
+// Function ID: 26928
 // Name: lastDayOfMonth
 // Dependencies: [3210, 3211]
 // Exports: default

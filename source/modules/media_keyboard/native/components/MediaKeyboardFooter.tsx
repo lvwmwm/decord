@@ -1,5 +1,5 @@
 // Module ID: 9631
-// Function ID: 75131
+// Function ID: 75132
 // Name: FOOTER_HEIGHT
 // Dependencies: [31, 27, 33, 4131, 689, 9621, 4127, 1212, 4544, 9632, 2]
 

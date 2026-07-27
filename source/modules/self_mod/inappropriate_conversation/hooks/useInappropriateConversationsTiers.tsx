@@ -1,10 +1,10 @@
-// Module ID: 11815
-// Function ID: 91680
+// Module ID: 11816
+// Function ID: 91685
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1850, 9031, 10069, 566, 10370, 2]
+// Dependencies: [1850, 9031, 10069, 566, 10371, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 11815 (useInappropriateConversationsTiers)
+// Module 11816 (useInappropriateConversationsTiers)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";
 
@@ -17,7 +17,7 @@ export const useInappropriateConversationsTiers = function useInappropriateConve
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getCurrentUser());
   const obj2 = require(566) /* initialize */;
-  const inappropriateConversationBannerForChannel = require(10370) /* useInappropriateConversationBannerForChannel */.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
+  const inappropriateConversationBannerForChannel = require(10371) /* useInappropriateConversationBannerForChannel */.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
   let isStaffResult;
   if (null != stateFromStores) {
     isStaffResult = stateFromStores.isStaff();

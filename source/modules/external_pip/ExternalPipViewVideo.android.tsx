@@ -1,9 +1,9 @@
-// Module ID: 15743
-// Function ID: 121435
+// Module ID: 15755
+// Function ID: 121482
 // Name: ExternalPipViewVideoUnavailable
-// Dependencies: [57, 31, 27, 1348, 1850, 4149, 33, 4131, 689, 10485, 4087, 4127, 1212, 566, 1273, 10492, 3835, 15744, 10502, 15745, 10196, 2]
+// Dependencies: [57, 31, 27, 1348, 1850, 4149, 33, 4131, 689, 10486, 4087, 4127, 1212, 566, 1273, 10493, 3835, 15756, 10503, 15757, 10197, 2]
 
-// Module 15743 (ExternalPipViewVideoUnavailable)
+// Module 15755 (ExternalPipViewVideoUnavailable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -27,7 +27,7 @@ function ExternalPipViewVideoUnavailable(wasStream) {
   let obj = { style: tmp.unavailable };
   if (wasStream) {
     obj = { style: tmp.unavaiableImage };
-    let tmp4Result = tmp4(tmp5(10485).StreamEnded, obj);
+    let tmp4Result = tmp4(tmp5(10486).StreamEnded, obj);
   } else {
     tmp4Result = tmp4(tmp5(4087).CircleInformationIcon, {});
   }
@@ -67,7 +67,7 @@ function ExternalPipViewVideoStream(streamId) {
   let streamReadLongTime;
   let streamReadyCallback;
   streamId = streamId.streamId;
-  let obj = streamId(10492);
+  let obj = streamId(10493);
   const surfaceDirectRendererExperiment = obj.useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
   const tmp2 = (function useStreamReady(streamId) {
     let closure_0 = streamId;
@@ -129,7 +129,7 @@ function ExternalPipViewVideoStream(streamId) {
       obj.updateVideoSize(streamId, obj, 1);
     }
   }, items1);
-  const items2 = [callback(streamReady(10502), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
+  const items2 = [callback(streamReady(10503), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
   let tmp10 = null;
   if (null == streamReady) {
     tmp10 = null;
@@ -188,7 +188,7 @@ const memoResult = importAllResult.memo(function ExternalPipViewVideo(onLayout) 
   let selectedParticipantSpeaking;
   let selectedParticipantStreamId;
   let selectedParticipantUserId;
-  const tmp2 = importDefault(15745)();
+  const tmp2 = importDefault(15757)();
   ({ selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType } = tmp2);
   const items = [selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType];
   ({ channelId, selectedParticipantSpeaking } = tmp2);

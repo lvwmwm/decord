@@ -1,10 +1,10 @@
-// Module ID: 10904
-// Function ID: 84699
+// Module ID: 10905
+// Function ID: 84704
 // Name: formatWithOrWithoutMarkdown
-// Dependencies: [5, 57, 31, 1922, 1850, 4977, 653, 1852, 1212, 10427, 5953, 5955, 9420, 1921, 10905, 1873, 566, 10906, 8407, 8418, 4980, 9425, 1827, 10542, 10438, 10435, 5959, 5958, 2]
+// Dependencies: [5, 57, 31, 1922, 1850, 4977, 653, 1852, 1212, 10428, 5953, 5955, 9420, 1921, 10906, 1873, 566, 10907, 8407, 8418, 4980, 9425, 1827, 10543, 10439, 10436, 5959, 5958, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePremiumExtendableCopy, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription, useQuestInstructionTitle
 
-// Module 10904 (formatWithOrWithoutMarkdown)
+// Module 10905 (formatWithOrWithoutMarkdown)
 import closure_3 from "QuestsExperimentLocations";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -116,7 +116,7 @@ function getQuestInstructionsToWinRewardSponsored(withoutMarkdown) {
     obj.popoutTargetElementRef = tmp2;
     obj.onGameSheetOpened = tmp3;
     obj.onGameSheetClosed = tmp4;
-    obj.gameSheetHook = require(10905) /* createGameSheetHook */.createGameSheetHook(obj);
+    obj.gameSheetHook = require(10906) /* createGameSheetHook */.createGameSheetHook(obj);
     formatToPlainStringResult = (function _getQuestInstructionsToWinRewardArenaPackage(arg0) {
       let gameSheetHook;
       let quest;
@@ -136,7 +136,7 @@ function getQuestInstructionsToWinRewardSponsored(withoutMarkdown) {
       const intl = outer1_0(outer1_2[8]).intl;
       return intl.format(CDeHul, { rewardNameWithArticle, targetMinutes, gameSheetHook });
     })(obj);
-    const obj2 = require(10905) /* createGameSheetHook */;
+    const obj2 = require(10906) /* createGameSheetHook */;
   }
   return formatToPlainStringResult;
 }
@@ -503,10 +503,10 @@ function useQuestsInstructionsToWinReward(arg0) {
   let obj = require(566) /* initialize */;
   const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getCurrentUser());
-  const thirdPartyTaskDetails = require(10427) /* _createForOfIteratorHelperLoose */.useThirdPartyTaskDetails(quest);
-  const obj2 = require(10427) /* _createForOfIteratorHelperLoose */;
-  const inGameQuestConnectState = require(10906) /* useInGameQuestConnectState */.useInGameQuestConnectState(quest);
-  const obj3 = require(10906) /* useInGameQuestConnectState */;
+  const thirdPartyTaskDetails = require(10428) /* _createForOfIteratorHelperLoose */.useThirdPartyTaskDetails(quest);
+  const obj2 = require(10428) /* _createForOfIteratorHelperLoose */;
+  const inGameQuestConnectState = require(10907) /* useInGameQuestConnectState */.useInGameQuestConnectState(quest);
+  const obj3 = require(10907) /* useInGameQuestConnectState */;
   const result = require(5955) /* _createForOfIteratorHelperLoose */.hasAchievementInGameTask(quest);
   const obj5 = require(5955) /* _createForOfIteratorHelperLoose */;
   if (result) {
@@ -573,8 +573,8 @@ function canLaunchOnCurrentPlatform(quest, application) {
           supported_platforms = embeddedActivityConfig.supported_platforms;
         }
       }
-      tmp7Result = importDefault(10542)(supported_platforms);
-      const tmp7 = importDefault(10542);
+      tmp7Result = importDefault(10543)(supported_platforms);
+      const tmp7 = importDefault(10543);
     }
     tmp2 = tmp7Result;
   }
@@ -585,11 +585,11 @@ let closure_13 = { PLAY: 0, [0]: "PLAY", STREAM: 1, [1]: "STREAM", WATCH_VIDEO: 
 let result = require("result").fileFinishedImporting("modules/quests/hooks/QuestCopyHooks.tsx");
 
 export const useQuestInstructionTitle = function useQuestInstructionTitle(quest, arg1, questContent, sourceQuestContent) {
-  let obj = require(10427) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10428) /* _createForOfIteratorHelperLoose */;
   const targetMinutes = obj.useQuestTaskDetails(quest).targetMinutes;
-  let obj1 = require(10427) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(10428) /* _createForOfIteratorHelperLoose */;
   const thirdPartyTaskDetails = obj1.useThirdPartyTaskDetails(quest);
-  let obj2 = require(10427) /* _createForOfIteratorHelperLoose */;
+  let obj2 = require(10428) /* _createForOfIteratorHelperLoose */;
   obj = { quest, questContent, sourceQuestContent };
   const connectedConsoleLinkOnClick = obj2.useConnectedConsoleLinkOnClick(obj);
   let obj4 = require(5953) /* _createForOfIteratorHelperLoose */;
@@ -684,14 +684,14 @@ export const getQuestsInstructionsToWinReward = function getQuestsInstructionsTo
 };
 export { useQuestsInstructionsToWinReward };
 export const useQuestDescription = function useQuestDescription(quest, sourceQuestContent, QUEST_HOME_MOBILE, QuestHome) {
-  let obj = { quest, taskDetails: require(10427) /* _createForOfIteratorHelperLoose */.useQuestTaskDetails(quest), location: QUEST_HOME_MOBILE, sourceQuestContent, popoutTargetElementRef: arg4, gameProfileSource: QuestHome };
+  let obj = { quest, taskDetails: require(10428) /* _createForOfIteratorHelperLoose */.useQuestTaskDetails(quest), location: QUEST_HOME_MOBILE, sourceQuestContent, popoutTargetElementRef: arg4, gameProfileSource: QuestHome };
   let formatToPlainStringResult = useQuestsInstructionsToWinReward(obj);
   const userStatus = quest.userStatus;
   let claimedAt;
   if (null != userStatus) {
     claimedAt = userStatus.claimedAt;
   }
-  require(10427) /* _createForOfIteratorHelperLoose */;
+  require(10428) /* _createForOfIteratorHelperLoose */;
   const userStatus2 = quest.userStatus;
   if (null != userStatus2) {
     claimedAt = userStatus2.claimedAt;
@@ -715,11 +715,11 @@ export const useQuestBarSubtitle = function useQuestBarSubtitle(arg0) {
   let sourceQuestContent;
   ({ quest, hasAlreadyLinked, onClickGameTitle } = arg0);
   ({ isExpanded, sourceQuestContent, activeScreen, popoutTargetElementRef, onGameSheetOpened, onGameSheetClosed } = arg0);
-  let obj = require(10427) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10428) /* _createForOfIteratorHelperLoose */;
   const questFormattedDate = obj.useQuestFormattedDate(quest.config.rewardsConfig.rewardsExpireAt);
-  let obj1 = require(10427) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(10428) /* _createForOfIteratorHelperLoose */;
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
-  let obj2 = require(10427) /* _createForOfIteratorHelperLoose */;
+  let obj2 = require(10428) /* _createForOfIteratorHelperLoose */;
   const thirdPartyTaskDetails = obj2.useThirdPartyTaskDetails(quest);
   let obj3 = require(566) /* initialize */;
   const items = [closure_7];
@@ -734,7 +734,7 @@ export const useQuestBarSubtitle = function useQuestBarSubtitle(arg0) {
   if (null != userStatus2) {
     enrolledAt = userStatus2.enrolledAt;
   }
-  let obj4 = require(10427) /* _createForOfIteratorHelperLoose */;
+  let obj4 = require(10428) /* _createForOfIteratorHelperLoose */;
   obj = { quest, location: constants.QUESTS_BAR, taskDetails: questTaskDetails, sourceQuestContent, popoutTargetElementRef, onGameSheetOpened, onGameSheetClosed };
   const isQuestProgressing = obj4.useIsQuestProgressing(quest);
   obj.gameProfileSource = require(8418) /* GameProfileEmbedAction */.GameProfileSources.QuestBar;
@@ -819,10 +819,10 @@ export const useQuestBarTitle = function useQuestBarTitle(quest) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.locale);
-  const questTaskDetails = require(10427) /* _createForOfIteratorHelperLoose */.useQuestTaskDetails(quest);
-  const obj2 = require(10427) /* _createForOfIteratorHelperLoose */;
-  const obj3 = require(10427) /* _createForOfIteratorHelperLoose */;
-  const thirdPartyTaskDetails = require(10427) /* _createForOfIteratorHelperLoose */.useThirdPartyTaskDetails(quest);
+  const questTaskDetails = require(10428) /* _createForOfIteratorHelperLoose */.useQuestTaskDetails(quest);
+  const obj2 = require(10428) /* _createForOfIteratorHelperLoose */;
+  const obj3 = require(10428) /* _createForOfIteratorHelperLoose */;
+  const thirdPartyTaskDetails = require(10428) /* _createForOfIteratorHelperLoose */.useThirdPartyTaskDetails(quest);
   const userStatus = quest.userStatus;
   let completedAt;
   if (null != userStatus) {
@@ -880,7 +880,7 @@ export const useQuestBarTitle = function useQuestBarTitle(quest) {
     }
     return stringResult;
   }
-  const obj4 = require(10427) /* _createForOfIteratorHelperLoose */;
+  const obj4 = require(10428) /* _createForOfIteratorHelperLoose */;
 };
 export const usePrimaryCtaCopy = function usePrimaryCtaCopy(showPlayInstantlyLabel) {
   let application;
@@ -899,7 +899,7 @@ export const usePrimaryCtaCopy = function usePrimaryCtaCopy(showPlayInstantlyLab
     const items = [quest];
     return outer1_5.useMemo(() => outer2_23(closure_0), items);
   })(quest);
-  require(10427) /* _createForOfIteratorHelperLoose */;
+  require(10428) /* _createForOfIteratorHelperLoose */;
   if (constants3.PLAY === tmp) {
     if (canLaunchOnCurrentPlatform(quest, application)) {
       const features = quest.config.features;
@@ -922,7 +922,7 @@ export const usePrimaryCtaCopy = function usePrimaryCtaCopy(showPlayInstantlyLab
     const intl3 = require(1212) /* getSystemLocale */.intl;
     return intl3.string(require(1212) /* getSystemLocale */.t.l7E81v);
   } else if (constants3.WATCH_VIDEO === tmp) {
-    return require(10438) /* formatWatchRemainingDurationShort */.getVideoQuestWatchCtaText(tmp3);
+    return require(10439) /* formatWatchRemainingDurationShort */.getVideoQuestWatchCtaText(tmp3);
   } else if (constants3.IN_GAME === tmp) {
     if (obj.canLaunchActivity(quest)) {
       if (canLaunchOnCurrentPlatform(quest, application)) {

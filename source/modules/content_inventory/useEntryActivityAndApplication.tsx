@@ -1,10 +1,10 @@
-// Module ID: 11923
-// Function ID: 92293
+// Module ID: 11924
+// Function ID: 92298
 // Name: useEntryActivityAndApplication
-// Dependencies: [57, 1347, 11924, 566, 5468, 2]
+// Dependencies: [57, 1347, 11925, 566, 5468, 2]
 // Exports: default
 
-// Module 11923 (useEntryActivityAndApplication)
+// Module 11924 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

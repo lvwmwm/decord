@@ -1,10 +1,10 @@
-// Module ID: 14458
-// Function ID: 110513
+// Module ID: 14459
+// Function ID: 110518
 // Name: Code
-// Dependencies: [5, 57, 31, 27, 683, 653, 33, 4131, 689, 4127, 3989, 1557, 10291, 566, 14, 5703, 8134, 6619, 4542, 5501, 9024, 685, 5164, 12230, 2]
+// Dependencies: [5, 57, 31, 27, 683, 653, 33, 4131, 689, 4127, 3989, 1557, 10292, 566, 14, 5703, 8134, 6619, 4542, 5501, 9024, 685, 5164, 12231, 2]
 // Exports: default
 
-// Module 14458 (Code)
+// Module 14459 (Code)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -63,7 +63,7 @@ export default function UserSettingsStartupTimings() {
   callback = tmp4[1];
   useResult = useResult.use(lastTrackedAppUiViewed2Properties);
   let items = [useResult, first, first1];
-  const memo = useResult.useMemo(() => first(10291)(result, !first, first1).split("\n"), items);
+  const memo = useResult.useMemo(() => first(10292)(result, !first, first1).split("\n"), items);
   let obj = require(566) /* initialize */;
   let items1 = [_isNativeReflectConstruct];
   let closure_6 = obj.useStateFromStores(items1, () => alertStartupMetrics.alertStartupMetrics);
@@ -181,7 +181,7 @@ export default function UserSettingsStartupTimings() {
     obj16.children = items11;
     items[3] = callback2(callback2(5501).TableRowGroup, obj16);
     const obj19 = { title: "Share Timings", hasIcons: true };
-    const obj20 = { icon: callback(callback2(12230).ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress: closure_14 };
+    const obj20 = { icon: callback(callback2(12231).ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress: closure_14 };
     obj19.children = callback(callback2(5164).TableRow, obj20);
     items[4] = callback(callback2(5501).TableRowGroup, obj19);
     obj.children = items;

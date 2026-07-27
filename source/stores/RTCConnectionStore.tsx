@@ -1,7 +1,7 @@
 // Module ID: 4203
-// Function ID: 36136
+// Function ID: 36137
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4145, 1194, 4204, 653, 4192, 3, 4205, 4227, 686, 12816, 4016, 4207, 4945, 12817, 12819, 566, 675, 1935, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4145, 1194, 4204, 653, 4192, 3, 4205, 4227, 686, 12817, 4016, 4207, 4945, 12818, 12820, 566, 675, 1935, 2]
 
 // Module 4203 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -140,7 +140,7 @@ function createRTCConnection(guildId, channelId) {
         obj.dispatch(obj);
       });
     });
-    let tmp30 = importDefault(12816);
+    let tmp30 = importDefault(12817);
     const prototype3 = tmp30.prototype;
     tmp30 = new tmp30(store.getId(), channelId);
     let c22 = tmp30;
@@ -754,8 +754,8 @@ tmp5 = new tmp5(require("dispatcher"), {
       const enabled = context.settings.enabled;
       let result = null != enabled && enabled;
       if (result) {
-        result = require(12817) /* useIsSpatialAudioAvailable */.isSpatialAudioAvailable("RTCConnectionStore");
-        const obj = require(12817) /* useIsSpatialAudioAvailable */;
+        result = require(12818) /* useIsSpatialAudioAvailable */.isSpatialAudioAvailable("RTCConnectionStore");
+        const obj = require(12818) /* useIsSpatialAudioAvailable */;
       }
       if (null != closure_15) {
         const result1 = closure_15.setSpatialAudioEnabled(result);
@@ -1049,8 +1049,8 @@ let obj = {
       const enabled = context.settings.enabled;
       let result = null != enabled && enabled;
       if (result) {
-        result = require(12817) /* useIsSpatialAudioAvailable */.isSpatialAudioAvailable("RTCConnectionStore");
-        const obj = require(12817) /* useIsSpatialAudioAvailable */;
+        result = require(12818) /* useIsSpatialAudioAvailable */.isSpatialAudioAvailable("RTCConnectionStore");
+        const obj = require(12818) /* useIsSpatialAudioAvailable */;
       }
       if (null != closure_15) {
         const result1 = closure_15.setSpatialAudioEnabled(result);

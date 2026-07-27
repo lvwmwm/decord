@@ -1,10 +1,10 @@
-// Module ID: 11017
-// Function ID: 85701
+// Module ID: 11018
+// Function ID: 85706
 // Name: ClassificationEvidence
-// Dependencies: [31, 27, 33, 4131, 1273, 689, 4127, 1212, 11018, 2]
+// Dependencies: [31, 27, 33, 4131, 1273, 689, 4127, 1212, 11019, 2]
 // Exports: default
 
-// Module 11017 (ClassificationEvidence)
+// Module 11018 (ClassificationEvidence)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,7 +39,7 @@ export default function ClassificationEvidence(flaggedContent) {
     ({ flaggedContent: arr3[0], cardShadow: arr3[1] } = tmp);
     obj.style = items1;
     const obj1 = { flaggedContent };
-    obj.children = callback(importDefault(11018), obj1);
+    obj.children = callback(importDefault(11019), obj1);
     items[1] = callback(View, obj);
     obj.children = items;
     tmp2 = callback2(View, obj);

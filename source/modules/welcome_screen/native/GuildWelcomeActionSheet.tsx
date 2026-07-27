@@ -1,10 +1,10 @@
-// Module ID: 11686
-// Function ID: 90656
+// Module ID: 11687
+// Function ID: 90661
 // Name: WelcomeChannelRow
-// Dependencies: [31, 27, 4992, 1348, 1838, 3759, 11683, 11687, 653, 1853, 482, 33, 4131, 689, 5053, 566, 4321, 1198, 4099, 5085, 1392, 3772, 4127, 1273, 10927, 7575, 686, 11685, 675, 5498, 11688, 1212, 2]
+// Dependencies: [31, 27, 4992, 1348, 1838, 3759, 11684, 11688, 653, 1853, 482, 33, 4131, 689, 5053, 566, 4321, 1198, 4099, 5085, 1392, 3772, 4127, 1273, 10928, 7575, 686, 11686, 675, 5498, 11689, 1212, 2]
 // Exports: default
 
-// Module 11686 (WelcomeChannelRow)
+// Module 11687 (WelcomeChannelRow)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "_fetchWelcomeScreen";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -269,8 +269,8 @@ export default function GuildWelcomeActionSheet(guildId) {
     if (null != welcomeScreen) {
       obj = { startExpanded: true };
       obj = { contentContainerStyle: tmp.container };
-      obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(11688).Sizes.MEDIUM, textScale: 2 };
-      const items9 = [callback(onHide(11688), obj1), , , , ];
+      obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(11689).Sizes.MEDIUM, textScale: 2 };
+      const items9 = [callback(onHide(11689), obj1), , , , ];
       const obj2 = { style: tmp.header, variant: "heading-xl/extrabold", color: "text-default" };
       const intl = guildId(1212).intl;
       const obj3 = {
@@ -286,7 +286,7 @@ export default function GuildWelcomeActionSheet(guildId) {
       items9[2] = callback(guildId(4127).Text, obj4);
       const obj5 = { style: tmp.channelsTitle, variant: "eyebrow", color: "text-default" };
       const intl2 = guildId(1212).intl;
-      const tmp18 = onHide(11688);
+      const tmp18 = onHide(11689);
       obj5.children = intl2.string(guildId(1212).t["haj5+i"]).toUpperCase();
       items9[3] = callback(guildId(4127).Text, obj5);
       let welcome_channels = welcomeScreen.welcome_channels;

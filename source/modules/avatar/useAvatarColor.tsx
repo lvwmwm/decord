@@ -1,5 +1,5 @@
 // Module ID: 7850
-// Function ID: 62605
+// Function ID: 62606
 // Name: hasFetchedColors
 // Dependencies: [57, 5, 31, 4123, 621, 682, 1447, 3975, 566, 5780, 2]
 // Exports: default, maybeFetchColors, useHasFetchedColors

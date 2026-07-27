@@ -1,10 +1,10 @@
-// Module ID: 14972
-// Function ID: 114137
+// Module ID: 14973
+// Function ID: 114142
 // Name: useMessagesScrollToTop
-// Dependencies: [31, 4123, 3982, 10864, 1457, 2]
+// Dependencies: [31, 4123, 3982, 10865, 1457, 2]
 // Exports: default
 
-// Module 14972 (useMessagesScrollToTop)
+// Module 14973 (useMessagesScrollToTop)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

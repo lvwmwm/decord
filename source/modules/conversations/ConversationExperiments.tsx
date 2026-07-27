@@ -1,5 +1,5 @@
 // Module ID: 9200
-// Function ID: 72118
+// Function ID: 72119
 // Name: useGuildHasFeature
 // Dependencies: [1838, 653, 1428, 566, 2]
 // Exports: isTopicalNavEnabled, useIsTopicalNavEnabled

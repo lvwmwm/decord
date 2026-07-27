@@ -1,5 +1,5 @@
 // Module ID: 4255
-// Function ID: 37365
+// Function ID: 37366
 // Name: copySymbols
 // Dependencies: [4248, 772]
 

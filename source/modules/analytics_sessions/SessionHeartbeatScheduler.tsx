@@ -1,5 +1,5 @@
 // Module ID: 5693
-// Function ID: 49185
+// Function ID: 49186
 // Name: stopAnalyticsHeartbeat
 // Dependencies: [5, 4809, 1194, 4944, 4203, 653, 664, 3, 5694, 5695, 1184, 5696, 5699, 675, 5700, 587, 5701, 645, 686, 566, 491, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler

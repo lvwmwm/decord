@@ -1,9 +1,9 @@
-// Module ID: 15354
-// Function ID: 117089
+// Module ID: 15367
+// Function ID: 117138
 // Name: SUBMITTED
 // Dependencies: [3951, 2]
 
-// Module 15354 (SUBMITTED)
+// Module 15367 (SUBMITTED)
 const obj = { ALL_MEMBERS: "ALL_MEMBERS" };
 const SUBMITTED = require("isTermsFormField").GuildJoinRequestApplicationStatuses.SUBMITTED;
 obj.PENDING = SUBMITTED;

@@ -1,9 +1,9 @@
-// Module ID: 11985
-// Function ID: 92615
+// Module ID: 11986
+// Function ID: 92620
 // Name: CustomStatusBubble
-// Dependencies: [57, 31, 27, 8606, 1838, 3768, 1850, 7877, 5630, 8043, 5510, 653, 5188, 1345, 33, 8017, 566, 4099, 11911, 1935, 11905, 11901, 8045, 5462, 8850, 3970, 6625, 11986, 1212, 11649, 11987, 4071, 8033, 4320, 5490, 3831, 8317, 9738, 11919, 4544, 9034, 689, 5666, 11989, 11990, 8305, 8314, 1557, 11988, 12106, 12107, 6018, 11896, 7890, 8015, 8019, 1324, 8605, 7829, 12108, 12103, 12109, 12110, 12111, 12112, 11656, 12113, 11921, 12118, 11890, 5485, 11973, 12119, 11976, 12124, 12131, 8162, 8042, 8315, 12138, 3992, 12139, 12148, 12149, 12153, 12154, 5449, 11645, 8685, 12158, 2]
+// Dependencies: [57, 31, 27, 8606, 1838, 3768, 1850, 7877, 5630, 8043, 5510, 653, 5188, 1345, 33, 8017, 566, 4099, 11912, 1935, 11906, 11902, 8045, 5462, 8850, 3970, 6625, 11987, 1212, 11650, 11988, 4071, 8033, 4320, 5490, 3831, 8317, 9738, 11920, 4544, 9034, 689, 5666, 11990, 11991, 8305, 8314, 1557, 11989, 12107, 12108, 6018, 11897, 7890, 8015, 8019, 1324, 8605, 7829, 12109, 12104, 12110, 12111, 12112, 12113, 11657, 12114, 11922, 12119, 11891, 5485, 11974, 12120, 11977, 12125, 12132, 8162, 8042, 8315, 12139, 3992, 12140, 12149, 12150, 12154, 12155, 5449, 11646, 8685, 12159, 2]
 
-// Module 11985 (CustomStatusBubble)
+// Module 11986 (CustomStatusBubble)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importAllResult from "UserPlatformIcon";
 import get_ActivityIndicator from "UserCheckIcon";
@@ -260,7 +260,7 @@ function EditSection(guildId) {
     tmp11 = callback(guildId(4544).Button, obj2);
   }
   obj.secondaryButton = tmp11;
-  return tmp3(trackUserProfileAction(11919), obj);
+  return tmp3(trackUserProfileAction(11920), obj);
 }
 function UserProfileWidgetsBoardContainer(isCurrentUser) {
   let containerBackground;
@@ -272,9 +272,9 @@ function UserProfileWidgetsBoardContainer(isCurrentUser) {
   const items = [tmp.card, { backgroundColor: containerBackground }];
   const obj = { style: tmp.profileContent };
   if (isCurrentUser) {
-    isCurrentUser = callback(importDefault(11989), {});
+    isCurrentUser = callback(importDefault(11990), {});
   }
-  const items1 = [isCurrentUser, callback(importDefault(11990), { userId, isVisible, cardStyle: items })];
+  const items1 = [isCurrentUser, callback(importDefault(11991), { userId, isVisible, cardStyle: items })];
   obj.children = items1;
   return closure_20(closure_6, obj);
 }

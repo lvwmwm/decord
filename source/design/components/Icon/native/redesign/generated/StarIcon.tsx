@@ -1,5 +1,5 @@
 // Module ID: 9351
-// Function ID: 73048
+// Function ID: 73049
 // Name: StarIcon
 // Dependencies: [31, 33, 689, 3834, 9352, 2]
 // Exports: StarIcon

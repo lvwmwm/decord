@@ -1,9 +1,9 @@
-// Module ID: 14787
-// Function ID: 112752
+// Module ID: 14788
+// Function ID: 112757
 // Name: getInitialAuthScreen
-// Dependencies: [57, 31, 27, 653, 33, 14788, 5087, 14797, 5519, 9131, 4131, 689, 14838, 9125, 1571, 9150, 14839, 9148, 5517, 478, 1212, 14840, 5703, 14844, 2]
+// Dependencies: [57, 31, 27, 653, 33, 14789, 5087, 14798, 5519, 9131, 4131, 689, 14839, 9125, 1571, 9150, 14840, 9148, 5517, 478, 1212, 14841, 5703, 14845, 2]
 
-// Module 14787 (getInitialAuthScreen)
+// Module 14788 (getInitialAuthScreen)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -22,7 +22,7 @@ function getInitialAuthScreen() {
   return AuthStates.WELCOME;
 }
 function NavigatorWithCaptchaHook() {
-  let obj = _require(14838);
+  let obj = _require(14839);
   const isHCaptchaModalOpenTracking = obj.useIsHCaptchaModalOpenTracking();
   const tmp3 = callback3();
   let tmp4 = callback(importAllResult.useState(getInitialAuthScreen()), 2);
@@ -51,7 +51,7 @@ function NavigatorWithCaptchaHook() {
   const tmp11 = closure_10;
   const tmp12 = closure_9;
   const tmp2 = importDefault(9125)();
-  obj.backgroundImageSource = _require(14839);
+  obj.backgroundImageSource = _require(14840);
   obj.backgroundImageCover = true;
   const items = [callback2(importDefault(9150), obj), ];
   if (tmp2) {
@@ -206,7 +206,7 @@ const memoResult = importAllResult.memo(function Auth() {
     return () => outer2_1(outer2_2[21]).terminate();
   }, []);
   const layoutEffect = importAllResult.useLayoutEffect(() => callback(outer1_2[22]).trackAppUIViewed(), []);
-  importDefault(14844)();
+  importDefault(14845)();
   let closure_0 = importAllResult.useRef(undefined);
   return callback2(context.Provider, { value: importAllResult.useCallback(() => callback(outer1_2[7]).getTrackRegTransition(callback), [])(), children: callback2(NavigatorWithCaptchaHook, {}) });
 });

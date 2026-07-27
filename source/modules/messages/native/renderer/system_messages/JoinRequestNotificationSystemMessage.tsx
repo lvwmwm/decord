@@ -1,5 +1,5 @@
 // Module ID: 7768
-// Function ID: 61751
+// Function ID: 61752
 // Name: getMessageContent
 // Dependencies: [5686, 3949, 1838, 1850, 653, 1212, 21, 7687, 2]
 // Exports: createJoinRequestNotificationSystemMessage

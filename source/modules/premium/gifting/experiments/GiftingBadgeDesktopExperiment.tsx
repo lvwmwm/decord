@@ -1,9 +1,9 @@
-// Module ID: 12539
-// Function ID: 97052
+// Module ID: 12540
+// Function ID: 97057
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12539 (apexExperiment)
+// Module 12540 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-gifting-badge-desktop", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

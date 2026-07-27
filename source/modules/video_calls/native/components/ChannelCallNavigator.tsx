@@ -1,15 +1,15 @@
-// Module ID: 10612
-// Function ID: 82699
+// Module ID: 10613
+// Function ID: 82704
 // Name: getScreens
-// Dependencies: [5, 57, 31, 27, 10613, 10174, 653, 10614, 33, 4131, 1450, 10178, 3992, 10615, 10172, 10177, 4346, 4338, 9956, 1935, 1207, 10672, 9971, 3978, 10628, 477, 3843, 4012, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 10614, 10175, 653, 10615, 33, 4131, 1450, 10179, 3992, 10616, 10173, 10178, 4346, 4338, 9956, 1935, 1207, 10673, 9971, 3978, 10629, 477, 3843, 4012, 5517, 2]
 // Exports: default
 
-// Module 10612 (getScreens)
+// Module 10613 (getScreens)
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "context";
-import module_10613 from "module_10613";
+import module_10614 from "module_10614";
 import { ChannelCallScreens } from "BOX_MODE_ACTIONSHEET_WIDTH";
 import { ComponentActions } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_11 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
@@ -41,7 +41,7 @@ function CallWithVoiceChat(channel) {
   let tmp = _createForOfIteratorHelperLoose();
   const result = 2 * translateX(1450)().width;
   const require = result;
-  let obj = require(10178) /* context */;
+  let obj = require(10179) /* context */;
   const voiceChatNavigationContext = obj.useVoiceChatNavigationContext();
   translateX = undefined;
   if (null != voiceChatNavigationContext) {
@@ -138,7 +138,7 @@ function CallWithVoiceChat(channel) {
   let tmp15 = null;
   if (channel.isGuildStageVoice()) {
     obj5 = { channel };
-    tmp15 = callback2(translateX(10615), obj5);
+    tmp15 = callback2(translateX(10616), obj5);
   }
   const items1 = [tmp15, ];
   const items2 = [animatedStyle1, StyleSheet.absoluteFill];
@@ -149,7 +149,7 @@ function CallWithVoiceChat(channel) {
   let tmp21 = null;
   if (tmp9[0]) {
     const obj7 = { channel };
-    tmp21 = callback2(translateX(10172), obj7);
+    tmp21 = callback2(translateX(10173), obj7);
   }
   obj6.children = tmp21;
   items3[1] = callback2(closure_6, obj6);
@@ -158,7 +158,7 @@ function CallWithVoiceChat(channel) {
 }
 function MainCallScreen(channel) {
   channel = channel.channel;
-  let obj = isConnectedToVoiceChannel(10177);
+  let obj = isConnectedToVoiceChannel(10178);
   isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const id = React.useId();
   const items = [isConnectedToVoiceChannel, id];
@@ -197,7 +197,7 @@ function MainCallScreen(channel) {
       dismissOAuthModal();
     };
   }, []);
-  isConnectedToVoiceChannel(10672);
+  isConnectedToVoiceChannel(10673);
   if (isChannelContentGated) {
     obj = { onReturnToSafety: id(4338).pop };
     ({ guild_id: obj6.guildId, id: obj6.channelId } = channel);
@@ -214,7 +214,7 @@ function MainCallScreen(channel) {
     let tmp14 = null;
     if (channel.isGuildStageVoice()) {
       const obj2 = { channel };
-      tmp14 = callback2(id(10615), obj2);
+      tmp14 = callback2(id(10616), obj2);
     }
     obj1.children = tmp14;
     tmp12Result = callback2(closure_6, obj1);
@@ -225,7 +225,7 @@ function MainCallScreen(channel) {
   const obj3 = {};
   const tmp22 = id(3978)();
   const tmp23 = callback2;
-  const tmp24 = id(10628);
+  const tmp24 = id(10629);
   const obj8 = isConnectedToVoiceChannel(477);
   obj3.forceHide = isConnectedToVoiceChannel(477).isAndroid() || !isConnectedToVoiceChannel;
   obj3.showWhenParticipantOnScreen = !isConnectedToVoiceChannel;

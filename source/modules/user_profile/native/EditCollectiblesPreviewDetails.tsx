@@ -1,5 +1,5 @@
 // Module ID: 7913
-// Function ID: 63011
+// Function ID: 63012
 // Name: EditCollectiblesPreviewDescription
 // Dependencies: [31, 27, 1922, 33, 4131, 566, 3777, 5782, 3801, 4127, 1212, 7894, 2]
 // Exports: default

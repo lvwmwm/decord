@@ -1,5 +1,5 @@
 // Module ID: 3493
-// Function ID: 26918
+// Function ID: 26919
 // Name: getWeekYear
 // Dependencies: [3369, 3210, 3214, 3211, 3215]
 // Exports: default

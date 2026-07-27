@@ -1,5 +1,5 @@
 // Module ID: 8631
-// Function ID: 68611
+// Function ID: 68612
 // Name: useWishlistButtonState
 // Dependencies: [5, 57, 31, 5630, 5462, 1832, 566, 8605, 8612, 3977, 1212, 2]
 // Exports: useWishlistButtonState

@@ -1,5 +1,5 @@
 // Module ID: 9830
-// Function ID: 76228
+// Function ID: 76229
 // Name: FORWARD_MODAL_KEY
 // Dependencies: [31, 33, 9831, 9832, 9833, 1935, 4338, 9866, 4473, 2]
 // Exports: closeForwardModal, openForwardModal, showForwardFailedAlertModal

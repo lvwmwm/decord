@@ -1,10 +1,10 @@
-// Module ID: 15523
-// Function ID: 119511
+// Module ID: 15536
+// Function ID: 119560
 // Name: handleConfirm
 // Dependencies: [5, 31, 33, 8850, 4476, 1212, 4476, 2]
 // Exports: default
 
-// Module 15523 (handleConfirm)
+// Module 15536 (handleConfirm)
 import getSystemLocale from "getSystemLocale";
 import "result";
 import jsxProd from "jsxProd";

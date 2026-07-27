@@ -1,5 +1,5 @@
 // Module ID: 5784
-// Function ID: 50887
+// Function ID: 50888
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getIsCrepeEnabled, useIsCrepeEnabled

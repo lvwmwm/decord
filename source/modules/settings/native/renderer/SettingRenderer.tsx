@@ -1,10 +1,10 @@
-// Module ID: 13616
-// Function ID: 104616
+// Module ID: 13617
+// Function ID: 104621
 // Name: formatSettingsRowTrailing
-// Dependencies: [57, 29, 31, 27, 1922, 13614, 1838, 10060, 33, 4131, 689, 1273, 5164, 1456, 13617, 566, 1212, 9700, 5513, 14636, 14637, 5502, 3850, 7596, 7595, 5490, 3831, 10709, 4100, 4101, 5166, 4542, 4127, 1827, 477, 13153, 4661, 4544, 3835, 6451, 1820, 2]
+// Dependencies: [57, 29, 31, 27, 1922, 13615, 1838, 10060, 33, 4131, 689, 1273, 5164, 1456, 13618, 566, 1212, 9700, 5513, 14637, 14638, 5502, 3850, 7596, 7595, 5490, 3831, 10710, 4100, 4101, 5166, 4542, 4127, 1827, 477, 13154, 4661, 4544, 3835, 6451, 1820, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 13616 (formatSettingsRowTrailing)
+// Module 13617 (formatSettingsRowTrailing)
 import _slicedToArray from "_slicedToArray";
 import IMPACT_LIGHT from "IMPACT_LIGHT";
 import importAllResult from "Stack";
@@ -335,7 +335,7 @@ let closure_20 = importAllResult.memo((arg0) => {
   let withArrow;
   ({ useDescription, useIsDisabled, useTrailing, variant, start, end, IconComponent } = arg0);
   ({ setting, onPress, useTitle, withArrow } = arg0);
-  let obj = require(14636) /* useHighlightSettingItem */;
+  let obj = require(14637) /* useHighlightSettingItem */;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let description;
   const title = useTitle();
@@ -366,7 +366,7 @@ let closure_20 = importAllResult.memo((arg0) => {
   const items = [callback3(require(5164) /* TableRowInner */.TableRow, obj), ];
   if (highlightSettingItem) {
     const obj2 = { start, end };
-    highlightSettingItem = callback3(importDefault(14637), obj2);
+    highlightSettingItem = callback3(importDefault(14638), obj2);
   }
   items[1] = highlightSettingItem;
   obj.children = items;
@@ -386,7 +386,7 @@ let closure_21 = importAllResult.memo((arg0) => {
   let variant;
   ({ useDescription, useIsDisabled, variant, start, end, IconComponent } = arg0);
   ({ setting, onValueChange, useTitle, useValue, hasIcon } = arg0);
-  let obj = require(14636) /* useHighlightSettingItem */;
+  let obj = require(14637) /* useHighlightSettingItem */;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const title = useTitle();
   let description;
@@ -421,7 +421,7 @@ let closure_21 = importAllResult.memo((arg0) => {
   const items = [tmp14, ];
   if (highlightSettingItem) {
     const obj3 = { start, end };
-    highlightSettingItem = callback3(importDefault(14637), obj3);
+    highlightSettingItem = callback3(importDefault(14638), obj3);
   }
   items[1] = highlightSettingItem;
   obj1.children = items;
@@ -434,7 +434,7 @@ let closure_22 = importAllResult.memo((arg0) => {
   let useTitle;
   let useValue;
   ({ setting, useTitle, useValue, useOptions, onValueChange } = arg0);
-  let obj = require(14636) /* useHighlightSettingItem */;
+  let obj = require(14637) /* useHighlightSettingItem */;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const title = useTitle();
   const value = useValue();
@@ -465,7 +465,7 @@ let closure_22 = importAllResult.memo((arg0) => {
   const items = [callback3(require(7596) /* context */.TableRadioGroup, obj, combined), ];
   if (highlightSettingItem) {
     const obj1 = { start: true, end: true, style: tmp.radioSettingHighlight };
-    highlightSettingItem = callback3(importDefault(14637), obj1);
+    highlightSettingItem = callback3(importDefault(14638), obj1);
   }
   items[1] = highlightSettingItem;
   obj.children = items;
@@ -484,7 +484,7 @@ let closure_23 = importAllResult.memo((arg0) => {
   ({ variant, useTrailing, useIsDisabled, useDescription, start, end, IconComponent } = arg0);
   let trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(14636);
+  let obj = trailing(14637);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   trailing = undefined;
   const title = useTitle();
@@ -534,7 +534,7 @@ let closure_23 = importAllResult.memo((arg0) => {
   const items1 = [callback3(trailing(5164).TableRow, obj), ];
   if (highlightSettingItem) {
     const obj3 = { start, end };
-    highlightSettingItem = callback3(importDefault(14637), obj3);
+    highlightSettingItem = callback3(importDefault(14638), obj3);
   }
   items1[1] = highlightSettingItem;
   obj.children = items1;
@@ -550,7 +550,7 @@ let closure_24 = importAllResult.memo((arg0) => {
   let useValue;
   ({ useValue, start, end } = arg0);
   ({ setting, useTitle, onValueChange, maximum } = arg0);
-  let obj = require(14636) /* useHighlightSettingItem */;
+  let obj = require(14637) /* useHighlightSettingItem */;
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let value;
   const title = useTitle();
@@ -561,12 +561,12 @@ let closure_24 = importAllResult.memo((arg0) => {
   obj = { label: title, start, end };
   const obj1 = { style: callback5().slider };
   const obj2 = { value, maxVolume: maximum, onValueChange };
-  obj1.children = callback3(importDefault(10709), obj2);
+  obj1.children = callback3(importDefault(10710), obj2);
   obj.subLabel = callback3(View, obj1);
   const items = [callback3(require(5164) /* TableRowInner */.TableRow, obj), ];
   if (highlightSettingItem) {
     const obj3 = { start, end };
-    highlightSettingItem = callback3(importDefault(14637), obj3);
+    highlightSettingItem = callback3(importDefault(14638), obj3);
   }
   items[1] = highlightSettingItem;
   obj.children = items;

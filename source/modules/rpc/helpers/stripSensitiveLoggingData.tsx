@@ -1,10 +1,10 @@
-// Module ID: 10550
-// Function ID: 81583
+// Module ID: 10551
+// Function ID: 81588
 // Name: stripSensitiveLoggingData
 // Dependencies: [653, 2]
 // Exports: default
 
-// Module 10550 (stripSensitiveLoggingData)
+// Module 10551 (stripSensitiveLoggingData)
 import { RPCCommands } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/stripSensitiveLoggingData.tsx");

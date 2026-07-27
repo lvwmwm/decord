@@ -1,5 +1,5 @@
 // Module ID: 8925
-// Function ID: 70542
+// Function ID: 70543
 // Name: CrunchyrollLinkDiscordError
 // Dependencies: [31, 8917, 33, 1456, 8911, 8912, 1212, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 4787
-// Function ID: 41632
+// Function ID: 41633
 // Name: hasTagsData
 // Dependencies: [4746, 4788]
 

@@ -1,9 +1,9 @@
-// Module ID: 12253
-// Function ID: 95677
+// Module ID: 12254
+// Function ID: 95682
 // Name: MediaViewer
-// Dependencies: [57, 31, 27, 33, 477, 3992, 12254, 12255, 8056, 5217, 7619, 5462, 5482, 8075, 12259, 4132, 8061, 8105, 6622, 3993, 10453, 2]
+// Dependencies: [57, 31, 27, 33, 477, 3992, 12255, 12256, 8056, 5217, 7619, 5462, 5482, 8075, 12260, 4132, 8061, 8105, 6622, 3993, 10454, 2]
 
-// Module 12253 (MediaViewer)
+// Module 12254 (MediaViewer)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -47,7 +47,7 @@ function MediaViewer(arg0) {
   let obj = require(8075) /* MediaViewerDimensionsProvider */;
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  let tmp6 = height(12259)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  let tmp6 = height(12260)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   const dependencyMap = tmp6;
   let obj1 = require(3992);
   sharedValue = obj1.useSharedValue(0);
@@ -58,7 +58,7 @@ function MediaViewer(arg0) {
   let closure_6 = tmp10;
   const viewerProps = useViewerProps();
   ({ ref, onScroll, onContentSizeChange, useItemVisible } = viewerProps);
-  let obj4 = require(12254) /* useMediaViewerPanGestureConfig */;
+  let obj4 = require(12255) /* useMediaViewerPanGestureConfig */;
   const mediaViewerPanGestureConfig = obj4.useMediaViewerPanGestureConfig(tmp6, swipeVelocityThreshold, onClose);
   ({ dismiss, translatePos } = mediaViewerPanGestureConfig);
   const isClosing = mediaViewerPanGestureConfig.isClosing;
@@ -253,7 +253,7 @@ function MediaViewer(arg0) {
   obj6.pointerEvents = str;
   obj6.children = renderOverlay(dismiss, overlayEnabled);
   items5[3] = tmp26(height(3993), obj6);
-  items5[4] = translatePos(height(10453), {});
+  items5[4] = translatePos(height(10454), {});
   obj4.children = items5;
   const children = tmp24(tmp25, obj4);
   return translatePos(require(5462) /* mergeLocations */.AnalyticsLocationProvider, { value: tmp(value).analyticsLocations, children });

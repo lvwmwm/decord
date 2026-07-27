@@ -1,7 +1,7 @@
 // Module ID: 0
 // Function ID: 81
 // Name: registerHeadlessTask
-// Dependencies: [1, 25, 13193, 26, 14, 1184, 13387, 13388, 27, 13390, 15960, 16676, 16677, 16678, 16679, 16680, 16682, 16683, 16684, 16685, 16686, 16687, 16688, 16689, 2]
+// Dependencies: [1, 25, 13194, 26, 14, 1184, 13388, 13389, 27, 13391, 15972, 16688, 16689, 16690, 16691, 16692, 16694, 16695, 16696, 16697, 16698, 16699, 16700, 16701, 2]
 
 // Module 0 (registerHeadlessTask)
 import module_1 from "prepareIdentify";
@@ -26,29 +26,29 @@ sentryEnd.record();
 if (require("isTTITest").isTTITest) {
   require("resolveName").installSystrace();
 }
-AppRegistry.registerComponent("Discord", () => require(13390) /* App */.default);
+AppRegistry.registerComponent("Discord", () => require(13391) /* App */.default);
 const runnable = AppRegistry.getRunnable("Discord");
 AppRegistry.registerRunnable("Discord", (arg0) => {
   const _require = [...arguments];
-  return _require(15960).default("Main", () => {
+  return _require(15972).default("Main", () => {
     outer1_3(...closure_0);
   });
 });
-AppRegistry.registerComponent("Share", () => require(16676) /* AppShare */.default);
+AppRegistry.registerComponent("Share", () => require(16688) /* AppShare */.default);
 const runnable2 = AppRegistry.getRunnable("Share");
 AppRegistry.registerRunnable("Share", (arg0) => {
   const _require = [...arguments];
-  return _require(15960).default("Share", () => outer1_4(...closure_0));
+  return _require(15972).default("Share", () => outer1_4(...closure_0));
 });
-registerHeadlessTask("BackgroundSync", () => require(16678) /* resolved */);
-registerHeadlessTask("TTITestAction", () => require(16679) /* _createForOfIteratorHelperLoose */);
-registerHeadlessTask("Disconnect", () => require(16680) /* promise */);
-registerHeadlessTask("MarkAsRead", () => require(16682) /* promise */);
-registerHeadlessTask("MuteAction", () => require(16683) /* promise */);
-registerHeadlessTask("ToggleDeafen", () => require(16684) /* promise */);
-registerHeadlessTask("ToggleSelfMute", () => require(16685) /* promise */);
-registerHeadlessTask("DismissCallAction", () => require(16686) /* promise */);
-registerHeadlessTask("DirectReply", () => require(16687) /* promise */);
-registerHeadlessTask("SelectVoiceChannel", () => require(16688) /* promise */);
-registerHeadlessTask("GenerateInvite", () => require(16689) /* promise */);
+registerHeadlessTask("BackgroundSync", () => require(16690) /* resolved */);
+registerHeadlessTask("TTITestAction", () => require(16691) /* _createForOfIteratorHelperLoose */);
+registerHeadlessTask("Disconnect", () => require(16692) /* promise */);
+registerHeadlessTask("MarkAsRead", () => require(16694) /* promise */);
+registerHeadlessTask("MuteAction", () => require(16695) /* promise */);
+registerHeadlessTask("ToggleDeafen", () => require(16696) /* promise */);
+registerHeadlessTask("ToggleSelfMute", () => require(16697) /* promise */);
+registerHeadlessTask("DismissCallAction", () => require(16698) /* promise */);
+registerHeadlessTask("DirectReply", () => require(16699) /* promise */);
+registerHeadlessTask("SelectVoiceChannel", () => require(16700) /* promise */);
+registerHeadlessTask("GenerateInvite", () => require(16701) /* promise */);
 const result = require("toLocaleLowerCase").fileFinishedImporting("index.native.tsx");

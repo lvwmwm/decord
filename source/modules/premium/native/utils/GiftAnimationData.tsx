@@ -1,5 +1,5 @@
 // Module ID: 8711
-// Function ID: 69092
+// Function ID: 69093
 // Name: LottieType
 // Dependencies: [1852, 7798, 8712, 8713, 8714, 8715, 8716, 8717, 8718, 8719, 8720, 8721, 8722, 8723, 8724, 8725, 8726, 8727, 8728, 8729, 8730, 8731, 8732, 8733, 8734, 8735, 2]
 // Exports: getGiftAnimationData, getLottieType

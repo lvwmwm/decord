@@ -1,5 +1,5 @@
 // Module ID: 9311
-// Function ID: 72848
+// Function ID: 72849
 // Name: useEmojiPickerData
 // Dependencies: [31, 4992, 4996, 9271, 566, 9312, 9313, 9314, 9316, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 10644
-// Function ID: 83047
+// Module ID: 10645
+// Function ID: 83052
 // Name: MusicSlashIcon
-// Dependencies: [31, 33, 689, 3834, 10645, 2]
+// Dependencies: [31, 33, 689, 3834, 10646, 2]
 // Exports: MusicSlashIcon
 
-// Module 10644 (MusicSlashIcon)
+// Module 10645 (MusicSlashIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const MusicSlashIcon = function MusicSlashIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10645) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10646) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10645) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10646) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

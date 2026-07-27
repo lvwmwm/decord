@@ -1,10 +1,10 @@
-// Module ID: 11617
-// Function ID: 90224
+// Module ID: 11618
+// Function ID: 90229
 // Name: useFetchGuildBoostSlots
 // Dependencies: [5, 57, 31, 4024, 6271, 566, 668, 6274, 4027, 2]
 // Exports: default
 
-// Module 11617 (useFetchGuildBoostSlots)
+// Module 11618 (useFetchGuildBoostSlots)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

@@ -1,10 +1,10 @@
-// Module ID: 15093
-// Function ID: 114981
+// Module ID: 15105
+// Function ID: 115027
 // Name: HubItem
-// Dependencies: [31, 27, 1908, 1907, 653, 10222, 33, 4131, 689, 11415, 1273, 566, 15094, 15095, 13588, 1212, 4139, 11791, 9999, 4069, 8286, 2]
+// Dependencies: [31, 27, 1908, 1907, 653, 10223, 33, 4131, 689, 11416, 1273, 566, 15106, 15107, 13589, 1212, 4139, 11792, 9999, 4069, 8286, 2]
 // Exports: default
 
-// Module 15093 (HubItem)
+// Module 15105 (HubItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,20 +24,20 @@ function HubItem(arg0) {
   let unreadCount;
   ({ label, unreadCount } = arg0);
   ({ IconComponent, handleItemClick, active } = arg0);
-  const ChannelModes = require(11415) /* BaseChannelSubtitle */.ChannelModes;
+  const ChannelModes = require(11416) /* BaseChannelSubtitle */.ChannelModes;
   const tmp2 = active ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
   let obj = { style: _createForOfIteratorHelperLoose().container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: tmp2 };
   const tmp = _createForOfIteratorHelperLoose();
   const tmp3 = callback;
-  obj.name = callback(require(11415) /* BaseChannelSubtitle */.BaseChannelName, { name: label, mode: tmp2 });
-  obj.icon = callback(require(11415) /* BaseChannelSubtitle */.BaseChannelIcon, { mode: tmp2, IconComponent });
+  obj.name = callback(require(11416) /* BaseChannelSubtitle */.BaseChannelName, { name: label, mode: tmp2 });
+  obj.icon = callback(require(11416) /* BaseChannelSubtitle */.BaseChannelIcon, { mode: tmp2, IconComponent });
   let tmp5 = null;
   if (null != unreadCount) {
     obj = { value: unreadCount };
     tmp5 = callback(require(1273) /* Button */.Badge, obj);
   }
   obj.channelInfo = tmp5;
-  return tmp3(importDefault(11415), obj);
+  return tmp3(importDefault(11416), obj);
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -65,7 +65,7 @@ export default function HubSidebar(guild) {
     }
     return tmp;
   });
-  guild(15094);
+  guild(15106);
   let tmp7Result = null;
   if (null != stateFromStores) {
     obj = {};
@@ -75,8 +75,8 @@ export default function HubSidebar(guild) {
     }
     obj.style = row;
     obj = { guild };
-    const items4 = [callback(stateFromStores(15095), obj), , , ];
-    obj1 = { active: stateFromStores1, IconComponent: guild(13588).CompassIcon };
+    const items4 = [callback(stateFromStores(15107), obj), , , ];
+    obj1 = { active: stateFromStores1, IconComponent: guild(13589).CompassIcon };
     const intl = guild(1212).intl;
     obj1.label = intl.string(guild(1212).t.K50GHd);
     obj1.handleItemClick = function handleItemClick() {
@@ -84,7 +84,7 @@ export default function HubSidebar(guild) {
     };
     obj1.unreadCount = tmp5;
     items4[1] = callback(HubItem, obj1);
-    obj2 = { IconComponent: guild(11791).PlusMediumIcon };
+    obj2 = { IconComponent: guild(11792).PlusMediumIcon };
     const intl2 = guild(1212).intl;
     obj2.label = intl2.string(guild(1212).t.emRpdS);
     obj2.handleItemClick = function handleItemClick() {

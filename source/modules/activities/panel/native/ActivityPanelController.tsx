@@ -1,15 +1,15 @@
-// Module ID: 15747
-// Function ID: 121475
+// Module ID: 15759
+// Function ID: 121522
 // Name: BaseActivityPanelController
-// Dependencies: [57, 31, 4168, 8072, 10613, 1348, 1347, 4156, 5660, 33, 1917, 15748, 3992, 8105, 15749, 1557, 1450, 15750, 15753, 10593, 10626, 15754, 5093, 10595, 3990, 566, 3749, 10401, 4945, 4139, 15755, 5668, 2]
+// Dependencies: [57, 31, 4168, 8072, 10614, 1348, 1347, 4156, 5660, 33, 1917, 15760, 3992, 8105, 15761, 1557, 1450, 15762, 15765, 10594, 10627, 15766, 5093, 10596, 3990, 566, 3749, 10402, 4945, 4139, 15767, 5668, 2]
 // Exports: default
 
-// Module 15747 (BaseActivityPanelController)
+// Module 15759 (BaseActivityPanelController)
 import _slicedToArray from "_slicedToArray";
 import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import module_8072 from "module_8072";
-import module_10613 from "module_10613";
+import module_10614 from "module_10614";
 import closure_9 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import items3 from "items3";
@@ -54,7 +54,7 @@ class BaseActivityPanelController {
       defaultOrientationLockState = obj4.getDefaultOrientationLockState(currentApp);
     }
     c9 = defaultOrientationLockState;
-    tmp11 = f121493(tmp2, tmp.top, defaultOrientationLockState, isTabletActivitySurface);
+    tmp11 = f121540(tmp2, tmp.top, defaultOrientationLockState, isTabletActivitySurface);
     c10 = tmp11;
     useRef = c5.useRef(connectedActivityAppId);
     obj5 = require("isVoicePanelEnabled");
@@ -337,7 +337,7 @@ export default function ActivityPanelController(children) {
       }
     }
   }, items1);
-  obj = { context: connectedActivityInTextChannelId(15755), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: importAll(5668).updateActivityPanelMode, children: children.children };
-  return <BaseActivityPanelController context={connectedActivityInTextChannelId(15755)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={importAll(5668).updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
+  obj = { context: connectedActivityInTextChannelId(15767), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: importAll(5668).updateActivityPanelMode, children: children.children };
+  return <BaseActivityPanelController context={connectedActivityInTextChannelId(15767)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={importAll(5668).updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
 };
 export { BaseActivityPanelController };

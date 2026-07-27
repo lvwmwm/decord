@@ -1,9 +1,9 @@
-// Module ID: 12793
-// Function ID: 99549
+// Module ID: 12794
+// Function ID: 99554
 // Name: parsed
 // Dependencies: [646, 2]
 
-// Module 12793 (parsed)
+// Module 12794 (parsed)
 import { version } from "capitalize";
 
 let str = "0";

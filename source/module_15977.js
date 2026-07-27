@@ -1,28 +1,11 @@
 // Module ID: 15977
-// Function ID: 123579
-// Dependencies: []
+// Function ID: 123533
+// Dependencies: [553, 15978]
 
 // Module 15977
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "de",
-  pluralRuleFunction(arg0, arg1) {
-    String(arg0);
-    let str = "other";
-    if (!arg1) {
-      let str2 = "other";
-      if (1 == arg0) {
-        str2 = "other";
-        if (tmp2) {
-          str2 = "one";
-        }
-      }
-      str = str2;
-    }
-    return str;
-  }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-AT", parentLocale: "de" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-BE", parentLocale: "de" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-CH", parentLocale: "de" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-LI", parentLocale: "de" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-LU", parentLocale: "de" });
+import module_553 from "module_553";
+import { default as _default } from "MessageFormat";
+
+_default.default = _default;
+
+export default _default;

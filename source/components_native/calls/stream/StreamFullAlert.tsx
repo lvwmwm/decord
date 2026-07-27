@@ -1,10 +1,10 @@
-// Module ID: 16606
-// Function ID: 129542
+// Module ID: 16618
+// Function ID: 129589
 // Name: StreamFullAlert
-// Dependencies: [31, 27, 33, 8784, 1212, 4562, 4127, 16607, 2]
+// Dependencies: [31, 27, 33, 8784, 1212, 4562, 4127, 16619, 2]
 // Exports: default
 
-// Module 16606 (StreamFullAlert)
+// Module 16618 (StreamFullAlert)
 import "result";
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function StreamFullAlert(arg0) {
   const obj2 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult };
   items[1] = callback(require(4127) /* Text */.Text, obj2);
   const tmp4 = importDefault(4562);
-  items[2] = callback(Image, { source: importDefault(16607), style: closure_6.image });
+  items[2] = callback(Image, { source: importDefault(16619), style: closure_6.image });
   obj["children"] = items;
   return callback2(tmp4, obj);
 };

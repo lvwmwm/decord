@@ -1,5 +1,5 @@
 // Module ID: 7767
-// Function ID: 61749
+// Function ID: 61750
 // Name: createInGameMessageNuxSystemMessage
 // Dependencies: [4168, 653, 7677, 7684, 7686, 1921, 1212, 7687, 2]
 // Exports: createInGameMessageNuxSystemMessage

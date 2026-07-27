@@ -1,10 +1,10 @@
-// Module ID: 11588
-// Function ID: 90050
+// Module ID: 11589
+// Function ID: 90055
 // Name: useGuildPowerupsWarningConfig
-// Dependencies: [31, 11589, 4038, 566, 1212, 2231, 2]
+// Dependencies: [31, 11590, 4038, 566, 1212, 2231, 2]
 // Exports: default
 
-// Module 11588 (useGuildPowerupsWarningConfig)
+// Module 11589 (useGuildPowerupsWarningConfig)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

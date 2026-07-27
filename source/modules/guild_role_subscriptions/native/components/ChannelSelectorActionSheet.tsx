@@ -1,10 +1,10 @@
-// Module ID: 16508
-// Function ID: 128704
+// Module ID: 16520
+// Function ID: 128751
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 1348, 5071, 3759, 653, 4327, 33, 4131, 689, 5053, 4321, 4099, 15026, 5085, 16445, 566, 5498, 4127, 1212, 9171, 4661, 4338, 8210, 1935, 8212, 8214, 1273, 12602, 5189, 2]
+// Dependencies: [57, 31, 27, 1348, 5071, 3759, 653, 4327, 33, 4131, 689, 5053, 4321, 4099, 15027, 5085, 16457, 566, 5498, 4127, 1212, 9171, 4661, 4338, 8210, 1935, 8212, 8214, 1273, 12603, 5189, 2]
 // Exports: default
 
-// Module 16508 (_createForOfIteratorHelperLoose)
+// Module 16520 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "module_8214";
@@ -122,9 +122,9 @@ function ChannelRow(channel) {
   obj.selected = selected;
   obj.disableHighlightOnPress = true;
   obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-  const items1 = [callback(onChannelSelected(15026), obj), ];
+  const items1 = [callback(onChannelSelected(15027), obj), ];
   if (selected) {
-    obj = { style: tmp.selectedIcon, source: onChannelSelected(16445) };
+    obj = { style: tmp.selectedIcon, source: onChannelSelected(16457) };
     selected = callback(onChannelSelected(5085), obj);
     const tmp12 = onChannelSelected(5085);
   }
@@ -265,7 +265,7 @@ export default function ChannelSelectorActionSheet(guildId) {
       str = str2.toString();
     }
     obj6.color = str;
-    obj6.source = importDefault(12602);
+    obj6.source = importDefault(12603);
     const items3 = [callback(guildId(1273).Icon, obj6), ];
     const obj7 = { style: tmp.createChannelLabel, variant: "text-md/medium", color: "text-link" };
     const intl3 = guildId(1212).intl;

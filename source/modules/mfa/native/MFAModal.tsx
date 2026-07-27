@@ -1,10 +1,10 @@
-// Module ID: 14696
-// Function ID: 111976
+// Module ID: 14697
+// Function ID: 111981
 // Name: MFAModal
-// Dependencies: [5, 31, 27, 33, 9131, 4338, 1212, 14697, 6695, 7640, 5087, 14698, 14699, 14704, 14707, 14708, 14709, 5517, 4472, 2]
+// Dependencies: [5, 31, 27, 33, 9131, 4338, 1212, 14698, 6695, 7640, 5087, 14699, 14700, 14705, 14708, 14709, 14710, 5517, 4472, 2]
 // Exports: openMFAModal
 
-// Module 14696 (MFAModal)
+// Module 14697 (MFAModal)
 import module_4338 from "module_4338";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -28,7 +28,7 @@ class MFAModal {
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     c5 = undefined;
-    f111980 = undefined;
+    f111985 = undefined;
     c7 = undefined;
     items = [];
     items[0] = mfaChallenge;
@@ -54,7 +54,7 @@ class MFAModal {
         return callback(...arguments);
       };
     })(), items1);
-    f111980 = callback;
+    f111985 = callback;
     items2 = [, ];
     items2[0] = cancel;
     items2[1] = handleOnClose;
@@ -274,7 +274,7 @@ class MFAModal {
     }, items4);
     obj = { screens: memo2, initialRouteStack: memo1, onWillFocus: c5.dismiss };
     merged1 = Object.assign(merged);
-    return f111980(require("NavigationStack").Navigator, obj);
+    return f111985(require("NavigationStack").Navigator, obj);
   }
 }
 ({ Keyboard: closure_5, LogBox } = get_ActivityIndicator);

@@ -1,5 +1,5 @@
 // Module ID: 9256
-// Function ID: 72562
+// Function ID: 72563
 // Name: usePremiumFeatures
 // Dependencies: [31, 1852, 3791, 1868, 3833, 1212, 2781, 6522, 3777, 6519, 6567, 6570, 6564, 6561, 6558, 689, 2]
 // Exports: default

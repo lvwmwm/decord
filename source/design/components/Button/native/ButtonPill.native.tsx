@@ -1,5 +1,5 @@
 // Module ID: 4553
-// Function ID: 39919
+// Function ID: 39920
 // Name: PillWrapper
 // Dependencies: [57, 31, 27, 33, 4548, 4131, 689, 4549, 3843, 3835, 4554, 4555, 3992, 3977, 4559, 3850, 4543, 4547, 2]
 // Exports: ButtonPill
@@ -119,7 +119,7 @@ class BasicButtonPill {
       flag = false;
     }
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39928(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = f39929(str, DEFAULT_BUTTON_SIZE);
     obj = {};
     obj.variant = str;
     obj.size = DEFAULT_BUTTON_SIZE;
@@ -159,7 +159,7 @@ class LoadingButtonPill {
     useRef = undefined;
     c2 = undefined;
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39928(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = f39929(str, DEFAULT_BUTTON_SIZE);
     useRef = result.useRef(null);
     tmp4 = _slicedToArray(result.useState(flag), 2);
     first = tmp4[0];

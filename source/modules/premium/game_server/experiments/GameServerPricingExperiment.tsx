@@ -1,10 +1,10 @@
-// Module ID: 11537
-// Function ID: 89841
+// Module ID: 11538
+// Function ID: 89846
 // Name: items
 // Dependencies: [4043, 4042, 2]
 // Exports: useIsGameServerPricingEnabled
 
-// Module 11537 (items)
+// Module 11538 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-03_game_server_pricing", label: "Game Server Pricing", defaultConfig: { enabled: false } };

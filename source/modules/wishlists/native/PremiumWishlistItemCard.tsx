@@ -1,5 +1,5 @@
 // Module ID: 9712
-// Function ID: 75698
+// Function ID: 75699
 // Name: PremiumWishlistItemCard
 // Dependencies: [31, 33, 8601, 8602, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 12328
-// Function ID: 95985
+// Module ID: 12329
+// Function ID: 95990
 // Name: generateLoadingRowData
 // Dependencies: [7655, 4131, 689, 2]
 // Exports: generateLoadingRowData
 
-// Module 12328 (generateLoadingRowData)
+// Module 12329 (generateLoadingRowData)
 import Changeset from "Changeset";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

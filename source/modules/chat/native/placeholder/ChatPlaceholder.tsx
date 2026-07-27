@@ -1,8 +1,8 @@
-// Module ID: 11666
-// Function ID: 90475
-// Dependencies: [31, 27, 9242, 33, 4131, 689, 1557, 5159, 1450, 11667, 11668, 11669, 3992, 2]
+// Module ID: 11667
+// Function ID: 90480
+// Dependencies: [31, 27, 9242, 33, 4131, 689, 1557, 5159, 1450, 11668, 11669, 11670, 3992, 2]
 
-// Module 11666
+// Module 11667
 import importAllResult from "result";
 import { useChatInputContainerHeight as closure_3 } from "getChatInputContainerHeight";
 import { jsx } from "jsxProd";

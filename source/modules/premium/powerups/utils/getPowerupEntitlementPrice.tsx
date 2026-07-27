@@ -1,5 +1,5 @@
 // Module ID: 4040
-// Function ID: 33656
+// Function ID: 33657
 // Name: getPowerupEntitlementPrice
 // Dependencies: [2]
 // Exports: default

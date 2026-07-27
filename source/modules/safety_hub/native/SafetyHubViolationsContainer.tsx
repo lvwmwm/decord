@@ -1,10 +1,10 @@
-// Module ID: 13720
-// Function ID: 105330
+// Module ID: 13721
+// Function ID: 105335
 // Name: SafetyHubViolationsHeader
-// Dependencies: [57, 31, 27, 11009, 6699, 653, 33, 4131, 689, 8278, 7570, 4127, 1212, 12540, 8330, 6698, 21, 13721, 6700, 4338, 11006, 1935, 11016, 566, 675, 11014, 2]
+// Dependencies: [57, 31, 27, 11010, 6699, 653, 33, 4131, 689, 8278, 7570, 4127, 1212, 12541, 8330, 6698, 21, 13722, 6700, 4338, 11007, 1935, 11017, 566, 675, 11015, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 13720 (SafetyHubViolationsHeader)
+// Module 13721 (SafetyHubViolationsHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -67,7 +67,7 @@ function SafetyHubViolationsHeader(count) {
   obj1.children = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp15(12540).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp15(12541).ChevronSmallUpIcon;
   } else {
     ChevronSmallDownIcon = tmp15(8330).ChevronSmallDownIcon;
   }
@@ -218,7 +218,7 @@ class SafetyHubViolationsContainer {
     items = [];
     items[0] = c7;
     stateFromStores = obj2.useStateFromStores(items, () => memo.getIsDsaEligible());
-    f105341 = stateFromStores;
+    f105346 = stateFromStores;
     items1 = [, ];
     items1[0] = classifications;
     items1[1] = first1;
@@ -253,7 +253,7 @@ class SafetyHubViolationsContainer {
     obj1.opened = first;
     obj1.count = classifications.length;
     tmp9 = jsxs;
-    tmp10 = f105341;
+    tmp10 = f105346;
     items4 = [, ];
     items4[0] = jsx(SafetyHubViolationsHeader, obj1);
     if (first) {
@@ -264,9 +264,9 @@ class SafetyHubViolationsContainer {
       items5[0] = tmp.separator;
       obj3.style = items5;
       tmp11 = jsxs;
-      tmp12 = f105341;
+      tmp12 = f105346;
       items6 = [, , , , ];
-      items6[0] = jsx(f105341, obj3);
+      items6[0] = jsx(f105346, obj3);
       tmp14 = memo.length > 0 && memo.map((classification) => outer1_11(outer1_20, { classification }, classification.id));
       items6[1] = tmp14;
       tmp15 = memo.length < classifications.length;
@@ -275,15 +275,15 @@ class SafetyHubViolationsContainer {
         tmp17 = Fragment;
         obj4 = {};
         tmp18 = jsx;
-        tmp19 = f105341;
+        tmp19 = f105346;
         obj5 = {};
         items7 = [];
         items7[0] = tmp.separator;
         obj5.style = items7;
         items8 = [, ];
-        items8[0] = jsx(f105341, obj5);
+        items8[0] = jsx(f105346, obj5);
         tmp20 = jsx;
-        tmp21 = f105341;
+        tmp21 = f105346;
         obj6 = {};
         items9 = [];
         items9[0] = tmp.moreButtonContainer;
@@ -311,7 +311,7 @@ class SafetyHubViolationsContainer {
         obj8.children = intl.format(require("getSystemLocale").t["9Ml56H"], obj9);
         obj7.children = jsx(require("Text").Text, obj8);
         obj6.children = jsx(Pressable, obj7);
-        items8[1] = jsx(f105341, obj6);
+        items8[1] = jsx(f105346, obj6);
         obj4.children = items8;
         tmp15 = jsxs(Fragment, obj4);
       }
@@ -383,9 +383,9 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/s
 
 export default SafetyHubViolationsContainer;
 export const ConnectedSafetyHubViolationsContainer = function ConnectedSafetyHubViolationsContainer() {
-  let obj = require(11014) /* useSafetyHubClassifications */;
+  let obj = require(11015) /* useSafetyHubClassifications */;
   const activeSafetyHubClassifications = obj.useActiveSafetyHubClassifications();
-  let obj1 = require(11014) /* useSafetyHubClassifications */;
+  let obj1 = require(11015) /* useSafetyHubClassifications */;
   const expiredSafetyHubClassifications = obj1.useExpiredSafetyHubClassifications();
   if (0 !== activeSafetyHubClassifications.length) {
     obj = {};

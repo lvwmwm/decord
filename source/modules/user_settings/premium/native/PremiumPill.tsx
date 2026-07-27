@@ -1,5 +1,5 @@
 // Module ID: 6179
-// Function ID: 55505
+// Function ID: 55506
 // Name: PremiumPill
 // Dependencies: [31, 27, 33, 4131, 689, 4067, 6180, 6187, 1212, 4127, 2]
 // Exports: PremiumPill

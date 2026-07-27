@@ -1,5 +1,5 @@
 // Module ID: 5126
-// Function ID: 44452
+// Function ID: 44453
 // Name: TABLE_ROW_HEIGHT
 // Dependencies: [27, 2]
 // Exports: getTableDividerWidth

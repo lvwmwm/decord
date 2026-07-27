@@ -1,10 +1,10 @@
-// Module ID: 11933
-// Function ID: 92341
+// Module ID: 11934
+// Function ID: 92346
 // Name: ActiveTimestamp
-// Dependencies: [31, 27, 1922, 33, 4131, 689, 11931, 7853, 4127, 566, 8867, 10852, 11934, 1212, 11936, 11938, 11881, 9909, 6592, 664, 2]
+// Dependencies: [31, 27, 1922, 33, 4131, 689, 11932, 7853, 4127, 566, 8867, 10853, 11935, 1212, 11937, 11939, 11882, 9909, 6592, 664, 2]
 // Exports: CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 11933 (ActiveTimestamp)
+// Module 11934 (ActiveTimestamp)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -93,7 +93,7 @@ export const MarathonBadge = function MarathonBadge(entry) {
     const text = require(7853) /* calculateTimestampDurations */.getMarathonDescription(entry).text;
     let tmp10 = null;
     if (null != text) {
-      obj = { Icon: require(10852) /* TimerIcon */.TimerIcon, iconColor: tmp7, text };
+      obj = { Icon: require(10853) /* TimerIcon */.TimerIcon, iconColor: tmp7, text };
       tmp10 = callback(BaseBadge, obj);
     }
     return tmp10;
@@ -105,7 +105,7 @@ export const NewGameBadge = function NewGameBadge(entry) {
   let obj = require(7853) /* calculateTimestampDurations */;
   let tmp = null;
   if (obj.isEntryNew(entry.entry)) {
-    obj = { Icon: require(11934) /* NewUserIcon */.NewUserIcon };
+    obj = { Icon: require(11935) /* NewUserIcon */.NewUserIcon };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.text = intl.string(require(1212) /* getSystemLocale */.t.keY6mW);
     obj.iconColor = importDefault(689).colors.STATUS_POSITIVE;
@@ -120,7 +120,7 @@ export const StreakBadge = function StreakBadge(entry) {
   if (null != streakCount) {
     tmp2 = null;
     if (streakCount >= 2) {
-      obj = { Icon: require(11936) /* FlashIcon */.FlashIcon };
+      obj = { Icon: require(11937) /* FlashIcon */.FlashIcon };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj = { days: streakCount };
       obj.text = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["Klie/P"], obj);
@@ -136,8 +136,8 @@ export const TrendingBadge = function TrendingBadge(entry) {
   let tmp2 = null;
   if (null != trendingType) {
     tmp2 = null;
-    if (trendingType !== require(11938) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED) {
-      obj = { Icon: require(11881) /* FireIcon */.FireIcon };
+    if (trendingType !== require(11939) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED) {
+      obj = { Icon: require(11882) /* FireIcon */.FireIcon };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.text = intl.string(require(1212) /* getSystemLocale */.t.TsWCdW);
       obj.iconColor = importDefault(689).colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY;
@@ -183,7 +183,7 @@ export const CustomStatusTimestampBadge = function CustomStatusTimestampBadge(en
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.badgeContainer };
   obj = { style: tmp.icon, color: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
-  const items = [callback(require(10852) /* TimerIcon */.TimerIcon, obj), callback(ContentTimestamp, { entry: entry.entry })];
+  const items = [callback(require(10853) /* TimerIcon */.TimerIcon, obj), callback(ContentTimestamp, { entry: entry.entry })];
   obj.children = items;
   return callback2(View, obj);
 };

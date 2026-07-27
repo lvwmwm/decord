@@ -1,9 +1,9 @@
-// Module ID: 12730
-// Function ID: 99067
+// Module ID: 12731
+// Function ID: 99072
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4151, 1316, 1194, 4163, 4166, 4203, 1907, 653, 664, 587, 4175, 10418, 4016, 4301, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4151, 1316, 1194, 4163, 4166, 4203, 1907, 653, 664, 587, 4175, 10419, 4016, 4301, 566, 686, 2]
 
-// Module 12730 (_isNativeReflectConstruct)
+// Module 12731 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import convertToTransitionState from "convertToTransitionState";
@@ -158,7 +158,7 @@ function updateActivity(applicationId) {
   obj.voiceChannelId = voiceChannelId;
   obj.sessionId = sessionId;
   obj.mediaSessionId = mediaSessionId;
-  importDefault(10418).updateActivity(obj);
+  importDefault(10419).updateActivity(obj);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
     const Interval = _require(4016).Interval;

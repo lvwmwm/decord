@@ -1,8 +1,8 @@
-// Module ID: 15615
-// Function ID: 120449
-// Dependencies: [57, 31, 27, 33, 4131, 689, 8162, 1212, 15616, 15632, 8687, 8685, 9986, 2]
+// Module ID: 15627
+// Function ID: 120496
+// Dependencies: [57, 31, 27, 33, 4131, 689, 8162, 1212, 15628, 15644, 8687, 8685, 9986, 2]
 
-// Module 15615
+// Module 15627
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -37,13 +37,13 @@ const memoResult = importAllResult.memo((navigation) => {
   const intl = navigation(1212).intl;
   obj.label = intl.string(navigation(1212).t["7RFcXZ"]);
   obj.id = constants.REQUEST;
-  obj.page = callback2(importDefault(15616), { goToMessageRequestPreview: callback });
+  obj.page = callback2(importDefault(15628), { goToMessageRequestPreview: callback });
   const items1 = [obj, ];
   const obj1 = {};
   const intl2 = navigation(1212).intl;
   obj1.label = intl2.string(navigation(1212).t.ulKXHp);
   obj1.id = constants.SPAM;
-  obj1.page = callback2(importDefault(15632), { goToMessageRequestPreview: callback });
+  obj1.page = callback2(importDefault(15644), { goToMessageRequestPreview: callback });
   items1[1] = obj1;
   obj.items = items1;
   obj.pageWidth = tmp2[0];

@@ -1,9 +1,9 @@
-// Module ID: 15405
-// Function ID: 117615
+// Module ID: 15418
+// Function ID: 117664
 // Name: SearchHistoryRemoveIcon
-// Dependencies: [5, 31, 27, 1348, 4143, 1850, 9033, 33, 4131, 689, 11397, 4661, 5119, 15394, 10040, 15403, 4127, 8232, 624, 15404, 5656, 4141, 15402, 15406, 15414, 1212, 2]
+// Dependencies: [5, 31, 27, 1348, 4143, 1850, 9033, 33, 4131, 689, 11398, 4661, 5119, 15407, 10040, 15416, 4127, 8232, 624, 15417, 5656, 4141, 15415, 15419, 15427, 1212, 2]
 
-// Module 15405 (SearchHistoryRemoveIcon)
+// Module 15418 (SearchHistoryRemoveIcon)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -32,7 +32,7 @@ function SearchHistoryTextRow(searchContext) {
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = callback2();
   const dependencyMap = tmp;
-  let obj = searchContext(15394);
+  let obj = searchContext(15407);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -62,7 +62,7 @@ function SearchHistoryTextRow(searchContext) {
   obj.trailing = callback(SearchHistoryRemoveIcon, { searchContext, searchHistoryItem });
   obj.iconContainerStyle = tmp.textIconContainer;
   obj.icon = callback(View, { style: tmp.iconContainer, children: callback(searchContext(8232).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
-  return callback(searchContext(15403).SearchListRow, obj);
+  return callback(searchContext(15416).SearchListRow, obj);
 }
 function SearchHistoryGroupDMRow(searchContext) {
   searchContext = searchContext.searchContext;

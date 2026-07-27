@@ -1,10 +1,10 @@
-// Module ID: 12555
-// Function ID: 97243
+// Module ID: 12556
+// Function ID: 97248
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1850, 12556, 12557, 3752, 2]
+// Dependencies: [1850, 12557, 12558, 3752, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 12555 (canUserSeeMonetizationOnboarding)
+// Module 12556 (canUserSeeMonetizationOnboarding)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -16,11 +16,11 @@ export const canUserSeeMonetizationOnboarding = function canUserSeeMonetizationO
   if (null != currentUser) {
     id = currentUser.id;
   }
-  let obj = require(12556) /* canSeeGuildRoleSubscriptionSettingsContent */;
-  obj = { guild, isOwner: guild.ownerId === id, canManageGuildRoleSubscriptions: require(12556) /* canSeeGuildRoleSubscriptionSettingsContent */.canManageGuildRoleSubscriptions(guild) };
-  const obj3 = require(12556) /* canSeeGuildRoleSubscriptionSettingsContent */;
-  obj.isUserInCreatorMonetizationEligibleCountry = require(12557) /* getCreatorMonetizationEligibleCountry */.isUserInCreatorMonetizationEligibleCountry();
-  const obj4 = require(12557) /* getCreatorMonetizationEligibleCountry */;
+  let obj = require(12557) /* canSeeGuildRoleSubscriptionSettingsContent */;
+  obj = { guild, isOwner: guild.ownerId === id, canManageGuildRoleSubscriptions: require(12557) /* canSeeGuildRoleSubscriptionSettingsContent */.canManageGuildRoleSubscriptions(guild) };
+  const obj3 = require(12557) /* canSeeGuildRoleSubscriptionSettingsContent */;
+  obj.isUserInCreatorMonetizationEligibleCountry = require(12558) /* getCreatorMonetizationEligibleCountry */.isUserInCreatorMonetizationEligibleCountry();
+  const obj4 = require(12558) /* getCreatorMonetizationEligibleCountry */;
   obj.shouldRestrictUpdatingRoleSubscriptionSettings = require(3752) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
   return obj.canSeeGuildRoleSubscriptionSettings(obj);
 };

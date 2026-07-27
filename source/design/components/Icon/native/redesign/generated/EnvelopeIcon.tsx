@@ -1,5 +1,5 @@
 // Module ID: 9194
-// Function ID: 72091
+// Function ID: 72092
 // Name: EnvelopeIcon
 // Dependencies: [31, 33, 689, 3834, 9195, 2]
 // Exports: EnvelopeIcon

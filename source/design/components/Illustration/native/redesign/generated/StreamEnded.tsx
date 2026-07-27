@@ -1,10 +1,10 @@
-// Module ID: 10485
-// Function ID: 81341
+// Module ID: 10486
+// Function ID: 81346
 // Name: getStreamEndedSource
-// Dependencies: [31, 27, 33, 6481, 10486, 10487, 3977, 2]
+// Dependencies: [31, 27, 33, 6481, 10487, 10488, 3977, 2]
 // Exports: StreamEnded
 
-// Module 10485 (getStreamEndedSource)
+// Module 10486 (getStreamEndedSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

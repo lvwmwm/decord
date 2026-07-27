@@ -1,5 +1,5 @@
 // Module ID: 5488
-// Function ID: 46859
+// Function ID: 46860
 // Name: RoleIcon
 // Dependencies: [31, 27, 33, 1273, 2]
 // Exports: default

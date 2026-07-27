@@ -1,10 +1,10 @@
-// Module ID: 11139
-// Function ID: 86610
+// Module ID: 11140
+// Function ID: 86615
 // Name: useNativeForumPostContent
 // Dependencies: [653, 4131, 1212, 5870, 4467, 2]
 // Exports: default
 
-// Module 11139 (useNativeForumPostContent)
+// Module 11140 (useNativeForumPostContent)
 import { MessageFlags } from "ME";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

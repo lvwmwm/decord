@@ -1,5 +1,5 @@
 // Module ID: 3901
-// Function ID: 32268
+// Function ID: 32269
 // Name: useRiveTrigger
 // Dependencies: [57, 31, 3896]
 // Exports: useRiveTrigger

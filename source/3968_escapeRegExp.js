@@ -1,5 +1,5 @@
 // Module ID: 3968
-// Function ID: 32844
+// Function ID: 32845
 // Name: escapeRegExp
 // Dependencies: [739]
 

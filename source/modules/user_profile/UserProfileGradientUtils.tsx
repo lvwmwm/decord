@@ -1,5 +1,5 @@
 // Module ID: 7927
-// Function ID: 63111
+// Function ID: 63112
 // Name: getProfileTheme
 // Dependencies: [57, 653, 665, 3976, 22, 3977, 666, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getUserProfileGradientContainerColors

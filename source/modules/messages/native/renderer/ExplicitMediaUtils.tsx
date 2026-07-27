@@ -1,5 +1,5 @@
 // Module ID: 7845
-// Function ID: 62591
+// Function ID: 62592
 // Name: getContentScanVersionFromMedia
 // Dependencies: [653, 1360, 5849, 5852, 4348, 1212, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps

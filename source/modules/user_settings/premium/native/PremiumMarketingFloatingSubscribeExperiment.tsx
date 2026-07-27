@@ -1,9 +1,9 @@
-// Module ID: 12429
-// Function ID: 96434
+// Module ID: 12430
+// Function ID: 96439
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12429 (apexExperiment)
+// Module 12430 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-07-nitro-floating-subscribe", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };

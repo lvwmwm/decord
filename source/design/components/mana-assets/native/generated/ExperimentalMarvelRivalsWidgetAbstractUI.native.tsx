@@ -1,5 +1,5 @@
 // Module ID: 6968
-// Function ID: 59687
+// Function ID: 59688
 // Name: ExperimentalMarvelRivalsWidgetAbstractUI
 // Dependencies: [33, 5085, 6969, 2]
 // Exports: ExperimentalMarvelRivalsWidgetAbstractUI

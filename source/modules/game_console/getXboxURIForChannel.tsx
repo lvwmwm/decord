@@ -1,5 +1,5 @@
 // Module ID: 8983
-// Function ID: 70794
+// Function ID: 70795
 // Name: getXboxURIForChannel
 // Dependencies: [1838, 4178, 3768, 1850, 8877, 653, 4321, 1212, 507, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 14421
-// Function ID: 110258
+// Module ID: 14422
+// Function ID: 110263
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [57, 31, 27, 1850, 33, 4131, 6527, 5501, 1212, 14422, 6525, 566, 1873, 2]
+// Dependencies: [57, 31, 27, 1850, 33, 4131, 6527, 5501, 1212, 14423, 6525, 566, 1873, 2]
 // Exports: default
 
-// Module 14421 (BackwardsCompatibleAppIconRows)
+// Module 14422 (BackwardsCompatibleAppIconRows)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -48,7 +48,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj["icon"] = id;
       obj["showEasterEgg"] = callback;
       obj["onLongPress"] = onLongPress;
-      return outer1_7(callback(14422), obj);
+      return outer1_7(callback(14423), obj);
     });
     obj.children = callback(merged(5501).TableRowGroup, obj);
     return callback(View, obj);

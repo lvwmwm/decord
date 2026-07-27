@@ -1,5 +1,5 @@
 // Module ID: 7936
-// Function ID: 63182
+// Function ID: 63183
 // Name: useMessagePollInteractions
 // Dependencies: [677, 682, 620, 21, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions

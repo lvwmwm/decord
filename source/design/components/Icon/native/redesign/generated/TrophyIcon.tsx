@@ -1,5 +1,5 @@
 // Module ID: 6592
-// Function ID: 58411
+// Function ID: 58412
 // Name: TrophyIcon
 // Dependencies: [31, 33, 689, 3834, 6593, 2]
 // Exports: TrophyIcon

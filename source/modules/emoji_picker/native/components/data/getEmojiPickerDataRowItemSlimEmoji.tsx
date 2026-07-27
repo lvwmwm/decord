@@ -1,5 +1,5 @@
 // Module ID: 9316
-// Function ID: 72862
+// Function ID: 72863
 // Name: getEmojiPickerDataRowItemSlimEmoji
 // Dependencies: [9311, 3775, 2]
 // Exports: default

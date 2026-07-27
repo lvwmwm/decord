@@ -1,10 +1,10 @@
-// Module ID: 13634
-// Function ID: 104786
+// Module ID: 13635
+// Function ID: 104791
 // Name: ColorBox
-// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 13632, 4555, 5217, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 13633, 4555, 5217, 2]
 // Exports: default
 
-// Module 13634 (ColorBox)
+// Module 13635 (ColorBox)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -31,7 +31,7 @@ function ColorBox(hue) {
       return obj.hslToRgbWorklet(obj);
     }
   }
-  obj = { hslToRgbWorklet: hue(13632).hslToRgbWorklet, hue };
+  obj = { hslToRgbWorklet: hue(13633).hslToRgbWorklet, hue };
   S.__closure = obj;
   S.__workletHash = 8814597686728;
   S.__initData = closure_9;
@@ -116,7 +116,7 @@ export default function SaturationValueColorPicker(hue) {
       return obj2;
     }
   }
-  obj = { hsvToRgbWorklet: hue(13632).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth: first, colorBoxHeight: first1 };
+  obj = { hsvToRgbWorklet: hue(13633).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth: first, colorBoxHeight: first1 };
   B.__closure = obj;
   B.__workletHash = 6880706874032;
   B.__initData = closure_13;

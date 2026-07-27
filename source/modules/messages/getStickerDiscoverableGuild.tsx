@@ -1,5 +1,5 @@
 // Module ID: 9580
-// Function ID: 74752
+// Function ID: 74753
 // Name: getStickerDiscoverableGuild
 // Dependencies: [653, 507, 6632, 2]
 // Exports: default

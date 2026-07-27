@@ -1,9 +1,9 @@
-// Module ID: 13631
-// Function ID: 104774
+// Module ID: 13632
+// Function ID: 104779
 // Name: styles
 // Dependencies: [31, 27, 33, 4131, 689, 665, 4661, 3975, 1273, 9946, 2]
 
-// Module 13631 (styles)
+// Module 13632 (styles)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

@@ -1,5 +1,5 @@
 // Module ID: 6190
-// Function ID: 55548
+// Function ID: 55549
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isAndroidTwoWeekTrialsExperimentEnabled, isAndroidTwoWeekTrialsTrialCTAEnabled

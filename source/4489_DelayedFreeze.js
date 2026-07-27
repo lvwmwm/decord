@@ -1,5 +1,5 @@
 // Module ID: 4489
-// Function ID: 39631
+// Function ID: 39632
 // Name: DelayedFreeze
 // Dependencies: [57, 31, 33, 4490]
 // Exports: default

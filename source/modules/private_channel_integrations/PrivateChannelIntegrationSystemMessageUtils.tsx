@@ -1,5 +1,5 @@
 // Module ID: 7719
-// Function ID: 61628
+// Function ID: 61629
 // Name: getPrivateChannelIntegrationAddedSystemMessageContent
 // Dependencies: [653, 1212, 1921, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent

@@ -1,10 +1,10 @@
-// Module ID: 13939
-// Function ID: 106658
+// Module ID: 13940
+// Function ID: 106663
 // Name: ClipsSettingsScreen
-// Dependencies: [31, 7697, 33, 10059, 13612, 2]
+// Dependencies: [31, 7697, 33, 10059, 13613, 2]
 // Exports: default
 
-// Module 13939 (ClipsSettingsScreen)
+// Module 13940 (ClipsSettingsScreen)
 import result from "result";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -18,5 +18,5 @@ export default function ClipsSettingsScreen() {
     const sections = [{ settings: items }];
     return outer1_0(outer1_2[3]).createList({ sections });
   }, []);
-  return jsx(importDefault(13612), { node });
+  return jsx(importDefault(13613), { node });
 };

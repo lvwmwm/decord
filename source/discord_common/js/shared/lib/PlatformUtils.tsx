@@ -1,5 +1,5 @@
 // Module ID: 4369
-// Function ID: 38780
+// Function ID: 38781
 // Name: isTablet
 // Dependencies: [646, 2]
 

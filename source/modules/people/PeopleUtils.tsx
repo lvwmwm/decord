@@ -1,5 +1,5 @@
 // Module ID: 8988
-// Function ID: 70808
+// Function ID: 70809
 // Name: acceptFriendRequest
 // Dependencies: [3768, 653, 8989, 8850, 3810, 3817, 8990, 8991, 686, 2]
 

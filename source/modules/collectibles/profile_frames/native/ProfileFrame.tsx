@@ -1,5 +1,5 @@
 // Module ID: 8035
-// Function ID: 63919
+// Function ID: 63920
 // Name: ProfileFrameLayer
 // Dependencies: [31, 27, 8022, 8036, 5510, 33, 4131, 8037, 5085, 8034, 8038, 2]
 // Exports: default

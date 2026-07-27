@@ -1,5 +1,5 @@
 // Module ID: 7699
-// Function ID: 61533
+// Function ID: 61534
 // Name: getUserGuildMember
 // Dependencies: [1918, 1850, 566, 3748, 2]
 // Exports: useCurrentUserCommunicationDisabled, userCommunicationDisabled

@@ -1,10 +1,10 @@
-// Module ID: 10427
-// Function ID: 80658
+// Module ID: 10428
+// Function ID: 80663
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 1922, 1348, 4813, 1850, 5931, 5933, 5932, 4977, 653, 1852, 566, 10428, 9401, 477, 9413, 5947, 4980, 5930, 664, 5953, 5955, 5958, 9420, 22, 10429, 9423, 10431, 1921, 10435, 4984, 10437, 5959, 5468, 10439, 9425, 7983, 5960, 10440, 1212, 1827, 4330, 5949, 4067, 3977, 9415, 3777, 10441, 675, 1327, 10818, 10822, 3804, 9212, 9205, 2]
+// Dependencies: [5, 57, 31, 1922, 1348, 4813, 1850, 5931, 5933, 5932, 4977, 653, 1852, 566, 10429, 9401, 477, 9413, 5947, 4980, 5930, 664, 5953, 5955, 5958, 9420, 22, 10430, 9423, 10432, 1921, 10436, 4984, 10438, 5959, 5468, 10440, 9425, 7983, 5960, 10441, 1212, 1827, 4330, 5949, 4067, 3977, 9415, 3777, 10442, 675, 1327, 10819, 10823, 3804, 9212, 9205, 2]
 // Exports: useClaimedCollectibleRewardMessage, useClaimedQuests, useConnectedConsoleLinkOnClick, useCosponsoredLogotypeAsset, useExpiredQuestsMap, useFetchQuestHomeBounties, useFilteredQuests, useIsQuestEligibleForMembersListPopout, useLaunchInGameActivityQuest, useManuallyStartConsoleQuest, useNonNullableQuest, useOnOpenGameClick, useProgressState, useQuest, useQuestBarImpressionSurvey, useQuestBarOrDockModeChangeTracking, useQuestCollectibles, useQuestCompletionDetails, useQuestForMemberListSocialEntryPoint, useQuestFormattedDate, useQuestHomeBounties, useQuestHomeFilterOptions, useQuestHomeSortOptions, useQuestHomeSortingFilteringAnalytics, useQuestHowToHelpArticle, useQuestOrbRewardMultiplier, useQuestPreviewActions, useQuestWarningTips, useQuestsWithPreviewAccess, useShouldShowBonusOrbsUX, useShouldShowPreviewToolTab, useShouldShowQuestPreviewOverrides, useShouldShowQuestsActivityPanelItem
 
-// Module 10427 (_createForOfIteratorHelperLoose)
+// Module 10428 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
 import supportedConsoles from "supportedConsoles";
@@ -144,7 +144,7 @@ function useQuests(arg0) {
   isFetchingCurrentQuests = stateFromStoresObject.isFetchingCurrentQuests;
   lastFetchedCurrentQuests = stateFromStoresObject.lastFetchedCurrentQuests;
   let obj4 = obj(566);
-  isEligibleForQuests = obj(10428).getIsEligibleForQuests();
+  isEligibleForQuests = obj(10429).getIsEligibleForQuests();
   const items3 = [obj.fetchPolicy, isEligibleForQuests, hasFetched, isFetchingCurrentQuests, lastFetchedCurrentQuests, obj.callerSource];
   const effect = isEligibleForQuests.useEffect(() => {
     const fetchPolicy = obj.fetchPolicy;
@@ -1101,7 +1101,7 @@ export const useConnectedConsoleLinkOnClick = function useConnectedConsoleLinkOn
   quest = quest.quest;
   ({ questContent: importDefault, sourceQuestContent: dependencyMap } = quest);
   let _isNativeReflectConstruct = useWaitingForConsoleConnection({ quest });
-  let set = quest(10431).useGetQuestImpressionId();
+  let set = quest(10432).useGetQuestImpressionId();
   return () => {
     let obj = quest(outer1_2[31]);
     if (_isNativeReflectConstruct) {
@@ -1337,8 +1337,8 @@ export const useQuestWarningTips = function useQuestWarningTips(userStatus) {
   tmp7 = null != completedAt;
   let tmp12 = require(477) /* set */.isWeb() && tmp5;
   if (tmp12) {
-    tmp12 = !require(10435) /* supportedConsoles */.isQuestSupportedOnWeb(userStatus);
-    const obj2 = require(10435) /* supportedConsoles */;
+    tmp12 = !require(10436) /* supportedConsoles */.isQuestSupportedOnWeb(userStatus);
+    const obj2 = require(10436) /* supportedConsoles */;
   }
   const items = [];
   const obj = require(477) /* set */;
@@ -1504,7 +1504,7 @@ export const useLaunchInGameActivityQuest = function useLaunchInGameActivityQues
   let obj = require(5955) /* _createForOfIteratorHelperLoose */;
   obj = {};
   const activityApplicationId = obj.getActivityApplicationId(quest);
-  obj.launchInGameActivity = importDefault(10441)({ applicationId: activityApplicationId });
+  obj.launchInGameActivity = importDefault(10442)({ applicationId: activityApplicationId });
   return obj;
 };
 export { useIsPreviewerOnAnyQuest };

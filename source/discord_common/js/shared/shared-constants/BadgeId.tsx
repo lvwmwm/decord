@@ -1,5 +1,5 @@
 // Module ID: 8044
-// Function ID: 63959
+// Function ID: 63960
 // Name: BadgeId
 // Dependencies: [2]
 

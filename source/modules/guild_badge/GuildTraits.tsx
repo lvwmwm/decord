@@ -1,5 +1,5 @@
 // Module ID: 8394
-// Function ID: 67122
+// Function ID: 67123
 // Name: isPremiumGuild
 // Dependencies: [653, 1387, 2]
 // Exports: getGuildTraits, isDiscoverableGuild

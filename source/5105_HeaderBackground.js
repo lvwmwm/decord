@@ -1,5 +1,5 @@
 // Module ID: 5105
-// Function ID: 44372
+// Function ID: 44373
 // Name: HeaderBackground
 // Dependencies: [29, 31, 27, 33, 1457]
 // Exports: default

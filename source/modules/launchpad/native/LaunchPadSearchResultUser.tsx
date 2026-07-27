@@ -1,9 +1,9 @@
-// Module ID: 15734
-// Function ID: 121378
+// Module ID: 15746
+// Function ID: 121425
 // Name: user
-// Dependencies: [31, 4123, 1922, 1348, 4218, 11095, 4326, 653, 4327, 33, 4131, 689, 15717, 4141, 4550, 566, 21, 5874, 15718, 4661, 15719, 15721, 1273, 7917, 15722, 3970, 10219, 3809, 15724, 14930, 14267, 2]
+// Dependencies: [31, 4123, 1922, 1348, 4218, 11096, 4326, 653, 4327, 33, 4131, 689, 15729, 4141, 4550, 566, 21, 5874, 15730, 4661, 15731, 15733, 1273, 7917, 15734, 3970, 10220, 3809, 15736, 14931, 14268, 2]
 
-// Module 15734 (user)
+// Module 15746 (user)
 import importAllResult from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -46,7 +46,7 @@ function UserResult(user) {
     flag2 = false;
   }
   const tmp = callback2();
-  const tmp2 = importDefault(15717)();
+  const tmp2 = importDefault(15729)();
   let items = [user.id];
   const callback = importAllResult.useCallback(() => {
     const items = [user.id];
@@ -85,10 +85,10 @@ function UserResult(user) {
   obj = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items4 };
   items4 = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
   obj = {};
-  const tmp14 = importDefault(15718);
+  const tmp14 = importDefault(15730);
   const tmp15 = callback;
   obj1 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
-  const items5 = [callback(importDefault(15721), obj1), , ];
+  const items5 = [callback(importDefault(15733), obj1), , ];
   obj2 = { user, guildId: undefined, isMobileOnline, isVROnline };
   let tmp20 = null;
   if (!user.isSystemUser()) {
@@ -114,7 +114,7 @@ function UserResult(user) {
   obj2.autoStatusCutout = true;
   items5[1] = callback(user(1273).Avatar, obj2);
   obj3 = {};
-  const tmp16 = importDefault(15719);
+  const tmp16 = importDefault(15731);
   const tmp17 = closure_14;
   const tmp18 = closure_13;
   const tmp19 = callback;
@@ -127,7 +127,7 @@ function UserResult(user) {
   if (null != lastMessage) {
     if (null != channel) {
       obj4 = { channel, message: lastMessage, color: str, muted: flag, layout: user(3809).ChannelListLayoutTypes.COMPACT };
-      tmp27 = callback(user(10219).ChannelRowPreview, obj4);
+      tmp27 = callback(user(10220).ChannelRowPreview, obj4);
     }
   }
   obj3.subtitle = tmp27;
@@ -137,8 +137,8 @@ function UserResult(user) {
   obj3.lastMessageTimestampString = relativeTimestamp;
   obj3.mentionCount = num;
   obj5 = { mentionCount: num, locale: stateFromStores };
-  obj3.mentionBadge = importDefault(15724)(obj5);
-  items5[2] = importDefault(15722)(obj3);
+  obj3.mentionBadge = importDefault(15736)(obj5);
+  items5[2] = importDefault(15734)(obj3);
   obj.children = items5;
   obj.children = tmp16(tmp17(tmp18, obj), { fontScale });
   return tmp14(tmp15(user(4661).PressableHighlight, obj));
@@ -152,16 +152,16 @@ function UserResultWithChannel(arg0) {
   let obj = require(566) /* initialize */;
   const items = [closure_9];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_9.isChannelMuted(undefined, channel.id));
-  const baseChannelUnreadBadgeState = require(14930) /* useBaseChannelUnreadBadgeState */.useBaseChannelUnreadBadgeState(channel, stateFromStores);
+  const baseChannelUnreadBadgeState = require(14931) /* useBaseChannelUnreadBadgeState */.useBaseChannelUnreadBadgeState(channel, stateFromStores);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
-  const obj2 = require(14930) /* useBaseChannelUnreadBadgeState */;
+  const obj2 = require(14931) /* useBaseChannelUnreadBadgeState */;
   const items1 = [closure_8];
   const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_8.isTyping(channel.id, id.id));
   obj = {};
   const obj3 = require(566) /* initialize */;
   const merged = Object.assign(arg0);
   obj["channel"] = channel;
-  obj["lastMessage"] = channel(14267)(channel, { unread });
+  obj["lastMessage"] = channel(14268)(channel, { unread });
   obj["unread"] = unread;
   obj["mentionCount"] = mentionCount;
   obj["muted"] = stateFromStores;

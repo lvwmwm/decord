@@ -1,5 +1,5 @@
 // Module ID: 8453
-// Function ID: 67375
+// Function ID: 67376
 // Name: SteamReviewRow
 // Dependencies: [31, 27, 33, 4131, 689, 8415, 3828, 8454, 8455, 8418, 1212, 8427, 4127, 4165, 8456, 8462, 8423, 8424, 2]
 // Exports: default

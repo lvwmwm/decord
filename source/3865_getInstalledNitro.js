@@ -1,5 +1,5 @@
 // Module ID: 3865
-// Function ID: 32132
+// Function ID: 32133
 // Name: getInstalledNitro
 // Dependencies: [3866]
 

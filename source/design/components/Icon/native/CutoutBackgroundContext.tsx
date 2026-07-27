@@ -1,5 +1,5 @@
 // Module ID: 7910
-// Function ID: 63004
+// Function ID: 63005
 // Name: useCutoutBackgroundColor
 // Dependencies: [31, 33, 666, 7911, 689, 3835, 2]
 // Exports: CutoutBackgroundProvider

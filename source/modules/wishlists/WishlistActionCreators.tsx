@@ -1,5 +1,5 @@
 // Module ID: 8612
-// Function ID: 68444
+// Function ID: 68445
 // Name: extraWishlistParams
 // Dependencies: [5, 5630, 1850, 3779, 5610, 8607, 653, 478, 1327, 686, 5613, 507, 8605, 1184, 4030, 675, 5656, 2]
 

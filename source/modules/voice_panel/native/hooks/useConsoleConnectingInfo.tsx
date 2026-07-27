@@ -1,10 +1,10 @@
-// Module ID: 15909
-// Function ID: 123015
+// Module ID: 15921
+// Function ID: 123062
 // Name: useConsoleConnectingInfo
-// Dependencies: [4145, 4146, 8861, 624, 15910, 8985, 15911, 15912, 2]
+// Dependencies: [4145, 4146, 8861, 624, 15922, 8985, 15923, 15924, 2]
 // Exports: default
 
-// Module 15909 (useConsoleConnectingInfo)
+// Module 15921 (useConsoleConnectingInfo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -61,9 +61,9 @@ export default function useConsoleConnectingInfo(arg0) {
   }
   obj.isConnectingOrConnectedToConsole = channelId2 === arg0 || channelId === arg0;
   obj.icon = importDefault(8985)(str);
-  const tmp8 = importDefault(15910)(stateFromStores);
-  obj.text = require(15911) /* getConsoleConnectingText */.getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
-  obj.color = importDefault(15912)(str);
+  const tmp8 = importDefault(15922)(stateFromStores);
+  obj.text = require(15923) /* getConsoleConnectingText */.getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
+  obj.color = importDefault(15924)(str);
   obj.displayCancel = tmp8;
   return obj;
 };

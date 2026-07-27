@@ -1,10 +1,10 @@
-// Module ID: 13872
-// Function ID: 106261
+// Module ID: 13873
+// Function ID: 106266
 // Name: renderMonthlySpendLine
-// Dependencies: [5, 31, 27, 33, 4131, 689, 7570, 4127, 1212, 2199, 13873, 3832, 4092, 4338, 3831, 5616, 6725, 6726, 4542, 6670, 11057, 4966, 4544, 5087, 11059, 2]
+// Dependencies: [5, 31, 27, 33, 4131, 689, 7570, 4127, 1212, 2199, 13874, 3832, 4092, 4338, 3831, 5616, 6725, 6726, 4542, 6670, 11058, 4966, 4544, 5087, 11060, 2]
 // Exports: default
 
-// Module 13872 (renderMonthlySpendLine)
+// Module 13873 (renderMonthlySpendLine)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -63,7 +63,7 @@ function ChangeSpendingLimitScreen(teenId) {
     return obj(...arguments);
   }
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = _require(13873);
+  let obj = _require(13874);
   const changeSpendingLimitFormState = obj.useChangeSpendingLimitFormState(teenId.teenId);
   ({ amountInput, isOverspending, isSubmitting, renewalDate, monthlySpend, save: c0 } = changeSpendingLimitFormState);
   let formatPriceResult = null;
@@ -147,7 +147,7 @@ function ChangeSpendingLimitScreen(teenId) {
   items4[1] = callback(_require(4544).Button, obj12);
   obj9.children = items4;
   obj8.children = closure_7(_require(4966).ButtonGroup, obj9);
-  items3[1] = callback(_require(11057).ModalFooter, obj8);
+  items3[1] = callback(_require(11058).ModalFooter, obj8);
   obj.children = items3;
   return closure_7(_require(6725).ModalScreen, obj);
 }
@@ -193,5 +193,5 @@ export default function ChangeSpendingLimitModal(teenId) {
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo };
   let intl = teenId(1212).intl;
   obj.headerBackTitle = intl.string(teenId(1212).t["13/7kX"]);
-  return callback(teenId(11059).Modal, obj);
+  return callback(teenId(11060).Modal, obj);
 };

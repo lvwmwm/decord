@@ -1,10 +1,10 @@
-// Module ID: 12550
-// Function ID: 97086
+// Module ID: 12551
+// Function ID: 97091
 // Name: useCreatorMonetizationRestrictions
-// Dependencies: [31, 3753, 1838, 653, 12551, 12552, 566, 3752, 2]
+// Dependencies: [31, 3753, 1838, 653, 12552, 12553, 566, 3752, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 12550 (useCreatorMonetizationRestrictions)
+// Module 12551 (useCreatorMonetizationRestrictions)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
@@ -16,7 +16,7 @@ let closure_9;
 const require = arg1;
 function useCreatorMonetizationRestrictions(has) {
   const _require = has;
-  const tmp = importDefault(12551)();
+  const tmp = importDefault(12552)();
   importDefault = tmp;
   const items = [has, tmp];
   const effect = React.useEffect(() => {

@@ -1,10 +1,10 @@
-// Module ID: 15283
-// Function ID: 116573
+// Module ID: 15296
+// Function ID: 116622
 // Name: onAddReaction
-// Dependencies: [57, 31, 27, 6014, 1348, 4947, 3759, 653, 1853, 33, 3770, 6022, 4131, 689, 477, 3975, 566, 4141, 5685, 9268, 4661, 1212, 6519, 4127, 9388, 665, 1392, 9241, 9017, 10314, 9839, 9911, 15275, 4630, 6023, 9926, 9491, 8123, 9830, 9501, 3835, 4555, 666, 5512, 2]
+// Dependencies: [57, 31, 27, 6014, 1348, 4947, 3759, 653, 1853, 33, 3770, 6022, 4131, 689, 477, 3975, 566, 4141, 5685, 9268, 4661, 1212, 6519, 4127, 9388, 665, 1392, 9241, 9017, 10315, 9839, 9911, 15288, 4630, 6023, 9926, 9491, 8123, 9830, 9501, 3835, 4555, 666, 5512, 2]
 // Exports: default
 
-// Module 15283 (onAddReaction)
+// Module 15296 (onAddReaction)
 import _slicedToArray from "_slicedToArray";
 import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon";
 import get_ActivityIndicator from "_createForOfIteratorHelperLoose";

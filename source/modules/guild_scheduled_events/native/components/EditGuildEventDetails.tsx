@@ -1,5 +1,5 @@
 // Module ID: 8251
-// Function ID: 66272
+// Function ID: 66273
 // Name: EditGuildEventDetails
 // Dependencies: [57, 31, 5751, 1354, 33, 4131, 1212, 3713, 8148, 1456, 4127, 4544, 1820, 8147, 3844, 8171, 8240, 8173, 2]
 // Exports: default

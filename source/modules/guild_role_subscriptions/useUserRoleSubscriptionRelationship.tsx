@@ -1,10 +1,10 @@
-// Module ID: 14156
-// Function ID: 108846
+// Module ID: 14157
+// Function ID: 108851
 // Name: getUserRoleSubscriptionRelationship
-// Dependencies: [4993, 14155, 566, 2]
+// Dependencies: [4993, 14156, 566, 2]
 // Exports: default
 
-// Module 14156 (getUserRoleSubscriptionRelationship)
+// Module 14157 (getUserRoleSubscriptionRelationship)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserGuildRoleSubscriptionRelationship as closure_3 } from "MAX_SUBSCRIPTION_TIERS";
 

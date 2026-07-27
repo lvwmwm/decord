@@ -1,5 +1,5 @@
 // Module ID: 8769
-// Function ID: 69421
+// Function ID: 69422
 // Name: useChannelVideoLimit
 // Dependencies: [1838, 4204, 653, 566, 2]
 // Exports: default, getChannelVideoLimit

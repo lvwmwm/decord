@@ -1,5 +1,5 @@
 // Module ID: 3587
-// Function ID: 27775
+// Function ID: 27776
 // Name: lastDayOfYear
 // Dependencies: [3210, 3211]
 // Exports: default

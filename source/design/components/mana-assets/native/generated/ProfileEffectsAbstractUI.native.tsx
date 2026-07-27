@@ -1,5 +1,5 @@
 // Module ID: 7348
-// Function ID: 60257
+// Function ID: 60258
 // Name: ProfileEffectsAbstractUI
 // Dependencies: [33, 5085, 7349, 2]
 // Exports: ProfileEffectsAbstractUI

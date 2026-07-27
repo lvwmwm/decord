@@ -1,5 +1,5 @@
 // Module ID: 3793
-// Function ID: 29566
+// Function ID: 29567
 // Name: getBraintreeSDK
 // Dependencies: [3794, 653, 3795, 3798, 1935, 3798, 2]
 // Exports: collectDeviceData

@@ -1,9 +1,9 @@
-// Module ID: 13437
-// Function ID: 103212
+// Module ID: 13438
+// Function ID: 103217
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 27, 9232, 3997, 1555, 1454, 477, 4531, 2]
 
-// Module 13437 (_isNativeReflectConstruct)
+// Module 13438 (_isNativeReflectConstruct)
 import updateContextMenuState from "updateContextMenuState";
 import getKeyboardContextForType from "getKeyboardContextForType";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

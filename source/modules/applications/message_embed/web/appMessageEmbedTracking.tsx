@@ -1,5 +1,5 @@
 // Module ID: 5925
-// Function ID: 52626
+// Function ID: 52627
 // Name: trackAppEmbedViewed
 // Dependencies: [31, 653, 675, 5926, 5927, 2]
 // Exports: trackAppEmbedClick, trackAppEmbedLinkSent, useTrackAppEmbedViewed

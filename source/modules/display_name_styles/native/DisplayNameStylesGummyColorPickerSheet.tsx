@@ -1,10 +1,10 @@
-// Module ID: 14293
-// Function ID: 109789
+// Module ID: 14294
+// Function ID: 109794
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [57, 31, 27, 1862, 653, 33, 1861, 4131, 689, 8323, 1863, 620, 4100, 14294, 675, 4099, 5187, 5186, 4544, 1212, 13650, 9034, 2]
+// Dependencies: [57, 31, 27, 1862, 653, 33, 1861, 4131, 689, 8323, 1863, 620, 4100, 14295, 675, 4099, 5187, 5186, 4544, 1212, 13651, 9034, 2]
 // Exports: default
 
-// Module 14293 (DisplayNameStylesGummyColorPickerSheet)
+// Module 14294 (DisplayNameStylesGummyColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -151,7 +151,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
     let tmp19Result = tmp19(closure_5, obj6);
   } else {
     const obj7 = { colors: first1 };
-    tmp19Result = tmp19(onSelectColors(13650), obj7);
+    tmp19Result = tmp19(onSelectColors(13651), obj7);
   }
   const items4 = [tmp19Result, ];
   const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: callback2(closure_5, { style: tmp.customIconScrim, children: callback2(selectedColors(9034).PencilIcon, { color: "white", size: "sm" }) }) };

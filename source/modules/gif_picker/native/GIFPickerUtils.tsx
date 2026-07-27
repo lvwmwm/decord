@@ -1,5 +1,5 @@
 // Module ID: 9539
-// Function ID: 74464
+// Function ID: 74465
 // Name: transformFavoriteGifUrl
 // Dependencies: [31, 653, 1443, 9538, 9540, 1212, 2]
 // Exports: useFavoriteGIFsMobile

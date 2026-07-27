@@ -1,10 +1,10 @@
-// Module ID: 13050
-// Function ID: 100966
+// Module ID: 13051
+// Function ID: 100971
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 16, 15, 17, 18, 1852, 3, 13051, 6147, 9308, 13052, 1868, 13053, 1866, 2]
+// Dependencies: [7, 6, 16, 15, 17, 18, 1852, 3, 13052, 6147, 9308, 13053, 1868, 13054, 1866, 2]
 // Exports: canUserUse
 
-// Module 13050 (_isNativeReflectConstruct)
+// Module 13051 (_isNativeReflectConstruct)
 import timestamp from "timestamp";
 import closure_4 from "GuildFeatures";
 import _assertThisInitialized from "_assertThisInitialized";
@@ -184,17 +184,17 @@ export const canUserUse = function canUserUse(ANIMATED_AVATAR, isPremiumWithFrac
       perks = isPremiumWithFractionalPremiumOnly.perks;
     }
     if (null != perks) {
-      let obj = importDefault(13053);
+      let obj = importDefault(13054);
       obj = { location: "product_catalog_can_user_use" };
       const config = obj.getConfig(obj);
-      if (config !== require(13053) /* apexExperiment */.DenormalizedPerksReadConfig.CONTROL) {
+      if (config !== require(13054) /* apexExperiment */.DenormalizedPerksReadConfig.CONTROL) {
         let featureValue = ANIMATED_AVATAR.getFeatureValue(isPremiumWithFractionalPremiumOnly);
         let perks1;
         if (null != isPremiumWithFractionalPremiumOnly) {
           perks1 = isPremiumWithFractionalPremiumOnly.perks;
         }
         const obj3 = require(1866) /* parseServerPerkConfigKind */;
-        if (config === require(13053) /* apexExperiment */.DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
+        if (config === require(13054) /* apexExperiment */.DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
           featureValue = hasPerkResult;
         }
         return featureValue;

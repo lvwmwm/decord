@@ -1,5 +1,5 @@
 // Module ID: 9260
-// Function ID: 72573
+// Function ID: 72574
 // Name: PremiumFeaturesWumpus
 // Dependencies: [31, 1852, 33, 4131, 6504, 6191, 9261, 9262, 9263, 9264, 6193, 5085, 2]
 // Exports: default

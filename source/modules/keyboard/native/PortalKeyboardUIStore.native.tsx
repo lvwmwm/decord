@@ -1,5 +1,5 @@
 // Module ID: 3998
-// Function ID: 33157
+// Function ID: 33158
 // Name: closePortalKeyboard
 // Dependencies: [3999, 4001, 491, 2]
 // Exports: closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer

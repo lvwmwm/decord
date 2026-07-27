@@ -1,5 +1,5 @@
 // Module ID: 9696
-// Function ID: 75569
+// Function ID: 75570
 // Name: useFormattedSKUPrice
 // Dependencies: [31, 6243, 566, 5619, 2]
 // Exports: useFormattedSKUPrice

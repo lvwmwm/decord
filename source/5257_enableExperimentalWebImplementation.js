@@ -1,5 +1,5 @@
 // Module ID: 5257
-// Function ID: 45376
+// Function ID: 45377
 // Name: enableExperimentalWebImplementation
 // Dependencies: [27, 5221]
 // Exports: enableExperimentalWebImplementation, enableLegacyWebImplementation, isNewWebImplementationEnabled

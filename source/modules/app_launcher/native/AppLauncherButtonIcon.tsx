@@ -1,10 +1,10 @@
-// Module ID: 11341
-// Function ID: 88130
+// Module ID: 11342
+// Function ID: 88135
 // Name: AppLauncherButtonIcon
-// Dependencies: [31, 27, 33, 3997, 1555, 10160, 6556, 2]
+// Dependencies: [31, 27, 33, 3997, 1555, 10161, 6556, 2]
 // Exports: AppLauncherButtonIcon
 
-// Module 11341 (AppLauncherButtonIcon)
+// Module 11342 (AppLauncherButtonIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export const AppLauncherButtonIcon = function AppLauncherButtonIcon(style) {
     obj1.transform = items1;
     items[1] = obj1;
     obj["style"] = items;
-    let tmp12 = jsx(require(10160) /* PlusLargeIcon */.PlusLargeIcon, {});
+    let tmp12 = jsx(require(10161) /* PlusLargeIcon */.PlusLargeIcon, {});
   } else {
     const obj3 = { style };
     const merged2 = Object.assign(merged);

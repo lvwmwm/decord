@@ -1,5 +1,5 @@
 // Module ID: 4188
-// Function ID: 36053
+// Function ID: 36054
 // Name: getClipCropAspectRatio
 // Dependencies: [2]
 // Exports: getClipCropBounds

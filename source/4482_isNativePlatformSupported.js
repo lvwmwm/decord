@@ -1,5 +1,5 @@
 // Module ID: 4482
-// Function ID: 39604
+// Function ID: 39605
 // Name: isNativePlatformSupported
 // Dependencies: [27]
 // Exports: enableFreeze, enableScreens, freezeEnabled, screensEnabled

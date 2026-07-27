@@ -1,5 +1,5 @@
 // Module ID: 7751
-// Function ID: 61711
+// Function ID: 61712
 // Name: createStageSpeakerSystemMessage
 // Dependencies: [7684, 1212, 7686, 7687, 2]
 // Exports: createStageSpeakerSystemMessage

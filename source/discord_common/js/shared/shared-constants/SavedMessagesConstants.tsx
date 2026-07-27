@@ -1,5 +1,5 @@
 // Module ID: 9872
-// Function ID: 76486
+// Function ID: 76487
 // Name: SAVED_MESSAGES_MAX
 // Dependencies: [2]
 

@@ -1,10 +1,10 @@
-// Module ID: 12124
-// Function ID: 94989
+// Module ID: 12125
+// Function ID: 94994
 // Name: WishlistEmptyState
-// Dependencies: [5, 31, 27, 5770, 9711, 8606, 8609, 8611, 8607, 1850, 4176, 5630, 8043, 653, 655, 1852, 33, 3, 4131, 689, 12125, 3843, 3977, 8045, 4099, 5769, 5482, 4127, 1212, 4544, 11791, 4087, 12126, 5462, 6515, 566, 12127, 7829, 12108, 12128, 3983, 3832, 12129, 9637, 478, 6631, 5613, 9692, 8297, 3790, 8701, 11749, 3792, 8663, 12130, 1935, 6625, 9034, 9709, 2]
+// Dependencies: [5, 31, 27, 5770, 9711, 8606, 8609, 8611, 8607, 1850, 4176, 5630, 8043, 653, 655, 1852, 33, 3, 4131, 689, 12126, 3843, 3977, 8045, 4099, 5769, 5482, 4127, 1212, 4544, 11792, 4087, 12127, 5462, 6515, 566, 12128, 7829, 12109, 12129, 3983, 3832, 12130, 9637, 478, 6631, 5613, 9692, 8297, 3790, 8701, 11750, 3792, 8663, 12131, 1935, 6625, 9034, 9709, 2]
 // Exports: default
 
-// Module 12124 (WishlistEmptyState)
+// Module 12125 (WishlistEmptyState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import CircleInformationIcon from "CircleInformationIcon";
 import { View } from "Text";
@@ -41,7 +41,7 @@ class WishlistEmptyState {
     c0 = undefined;
     obj = require("useIsMobileWishlistSuggestionsEnabled");
     isMobileWishlistSuggestionsEnabled = obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
-    tmp2 = f94992(isMobileWishlistSuggestionsEnabled);
+    tmp2 = f94997(isMobileWishlistSuggestionsEnabled);
     obj2 = require("ManaContext");
     obj3 = require("AccessibilityAnnouncer");
     str = "mobile-text-heading-primary";

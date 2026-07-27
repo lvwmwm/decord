@@ -1,5 +1,5 @@
 // Module ID: 7715
-// Function ID: 61617
+// Function ID: 61618
 // Name: getJoinButtonLabels
 // Dependencies: [1212, 4800, 2]
 // Exports: getJoinButtonLabels, getRenewButtonLabels

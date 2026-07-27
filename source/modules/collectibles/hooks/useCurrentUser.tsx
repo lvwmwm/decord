@@ -1,5 +1,5 @@
 // Module ID: 8596
-// Function ID: 68284
+// Function ID: 68285
 // Name: useCurrentUser
 // Dependencies: [1850, 566, 44, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable

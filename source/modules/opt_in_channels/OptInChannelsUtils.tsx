@@ -1,5 +1,5 @@
 // Module ID: 9941
-// Function ID: 76928
+// Function ID: 76929
 // Name: setIndex
 // Dependencies: [31, 1348, 5071, 4143, 3768, 1850, 653, 1355, 5760, 4327, 5605, 5046, 4321, 5072, 5753, 9942, 5070, 1198, 3947, 1334, 566, 1212, 3713, 21, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery

@@ -1,5 +1,5 @@
 // Module ID: 8386
-// Function ID: 67095
+// Function ID: 67096
 // Name: BannerPalettePresets
 // Dependencies: [2]
 

@@ -1,10 +1,10 @@
-// Module ID: 12122
-// Function ID: 94980
+// Module ID: 12123
+// Function ID: 94985
 // Name: useUserProfileConnections
 // Dependencies: [31, 5630, 5731, 566, 4815, 2]
 // Exports: default
 
-// Module 12122 (useUserProfileConnections)
+// Module 12123 (useUserProfileConnections)
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

@@ -1,5 +1,5 @@
 // Module ID: 8408
-// Function ID: 67156
+// Function ID: 67157
 // Name: getRejectionReasons
 // Dependencies: [31, 4152, 653, 675, 1360, 8409, 7966, 8410, 44, 2]
 // Exports: default, gameIdIsAcceptable

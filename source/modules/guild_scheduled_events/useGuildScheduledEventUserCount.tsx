@@ -1,5 +1,5 @@
 // Module ID: 8158
-// Function ID: 65414
+// Function ID: 65415
 // Name: useGuildScheduledEventUserCount
 // Dependencies: [31, 5751, 566, 8159, 2]
 // Exports: default

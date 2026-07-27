@@ -1,9 +1,9 @@
-// Module ID: 11009
-// Function ID: 85585
+// Module ID: 11010
+// Function ID: 85590
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 6699, 6700, 11010, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 6699, 6700, 11011, 566, 686, 2]
 
-// Module 11009 (_isNativeReflectConstruct)
+// Module 11010 (_isNativeReflectConstruct)
 import ContentIdType from "ContentIdType";
 import createAggregator from "createAggregator";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -227,7 +227,7 @@ obj = {
     let isDsaEligible;
     let username;
     ({ classifications, accountStanding, isDsaEligible, isAppealEligible, username, appealEligibility } = arg0);
-    let closure_11 = importDefault(11010)(classifications, "id");
+    let closure_11 = importDefault(11011)(classifications, "id");
     let c14 = false;
     let c15 = true;
     let c16 = null;

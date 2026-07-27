@@ -1,9 +1,9 @@
-// Module ID: 15771
-// Function ID: 121657
+// Module ID: 15783
+// Function ID: 121704
 // Name: QuestActivityButtonInner
-// Dependencies: [31, 27, 4123, 5932, 15772, 4977, 33, 3992, 8463, 4131, 689, 10427, 566, 4338, 15773, 1935, 4099, 15774, 4132, 5453, 14089, 15775, 13960, 1212, 10439, 2]
+// Dependencies: [31, 27, 4123, 5932, 15784, 4977, 33, 3992, 8463, 4131, 689, 10428, 566, 4338, 15785, 1935, 4099, 15786, 4132, 5453, 14090, 15787, 13961, 1212, 10440, 2]
 
-// Module 15771 (QuestActivityButtonInner)
+// Module 15783 (QuestActivityButtonInner)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -27,7 +27,7 @@ function QuestActivityButtonInner(quest) {
   let sharedValue1;
   let ref;
   let c8;
-  let obj = quest(10427);
+  let obj = quest(10428);
   let obj1 = quest(566);
   let items = [sharedValue];
   const stateFromStores = obj1.useStateFromStores(items, () => sharedValue.useReducedMotion);
@@ -167,17 +167,17 @@ function QuestActivityButtonInner(quest) {
   ({ container: arr6[0], completionGlow: arr6[1] } = tmp13);
   items5[2] = animatedStyle;
   obj = { style: memo, pointerEvents: "none" };
-  obj1 = { ref, source: quest(14089), autoPlay: false, loop: false };
+  obj1 = { ref, source: quest(14090), autoPlay: false, loop: false };
   obj.children = callback(stateFromStores(5453), obj1);
   const items6 = [callback(c4, obj), , , ];
   obj2 = { style: tmp13.buttonWrapper };
   obj3 = {};
   const tmp19 = stateFromStores(5453);
-  obj3.icon = stateFromStores(13960);
+  obj3.icon = stateFromStores(13961);
   obj3.onPress = callback;
   const intl = quest(1212).intl;
   obj3.accessibilityLabel = intl.string(quest(1212).t.JALI2K);
-  obj2.children = callback(stateFromStores(15775), obj3);
+  obj2.children = callback(stateFromStores(15787), obj3);
   items6[1] = callback(c4, obj2);
   obj4 = { pointerEvents: "none", style: tmp13.canvas };
   obj5 = { height: c11, width: c11 };

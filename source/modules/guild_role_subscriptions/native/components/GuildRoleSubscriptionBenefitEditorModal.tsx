@@ -1,9 +1,9 @@
-// Module ID: 16506
-// Function ID: 128686
+// Module ID: 16518
+// Function ID: 128733
 // Name: DeleteButton
-// Dependencies: [5, 57, 31, 27, 3768, 1850, 16505, 14155, 653, 33, 4131, 689, 5053, 12968, 4661, 4090, 1273, 1212, 1557, 16507, 4321, 7575, 16509, 8281, 16510, 2]
+// Dependencies: [5, 57, 31, 27, 3768, 1850, 16517, 14156, 653, 33, 4131, 689, 5053, 12969, 4661, 4090, 1273, 1212, 1557, 16519, 4321, 7575, 16521, 8281, 16522, 2]
 
-// Module 16506 (DeleteButton)
+// Module 16518 (DeleteButton)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -27,7 +27,7 @@ const require = arg1;
 function DeleteButton(onDelete) {
   const tmp = callback4();
   let obj = { style: items, accessibilityRole: "button", onPress: onDelete.onDelete };
-  items = [importDefault(12968)().textInput, tmp.deleteButton];
+  items = [importDefault(12969)().textInput, tmp.deleteButton];
   obj = { style: tmp.deleteIcon, color: importDefault(689).unsafe_rawColors.RED_400, size: "custom" };
   const items1 = [callback2(require(4090) /* TrashIcon */.TrashIcon, obj), ];
   obj = { style: tmp.deleteLabel };
@@ -65,7 +65,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
     return obj(...arguments);
   }
   const tmp = callback4();
-  const tmp2 = first(12968)();
+  const tmp2 = first(12969)();
   const tmp3 = callback(resetImperatively.useNameState(), 2);
   first = tmp3[0];
   const dependencyMap = tmp4;
@@ -131,7 +131,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
               tmp4(benefitType(tmp4[20]).computeChannelName(id, first4, first3));
             }
       };
-      let tmp40 = callback2(first(16507), obj);
+      let tmp40 = callback2(first(16519), obj);
     } else {
       obj = { style: tmp2.textInput, showTopContainer: false, multiline: false, maxLength: closure_12, value: first };
       const intl9 = _require(1212).intl;
@@ -151,7 +151,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
         },
       listingId: benefitType.listingId
     };
-    const items = [callback2(first(16509), obj1), ];
+    const items = [callback2(first(16521), obj1), ];
     const obj2 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false };
     const items1 = [tmp.scrollContainer, ];
     const obj3 = { paddingBottom: first(1557)().bottom + 32 + 16 };
@@ -171,7 +171,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       callback(emojiId.emojiId);
       callback2(emojiId.emojiName);
     };
-    items2[3] = callback2(first(16510), obj6);
+    items2[3] = callback2(first(16522), obj6);
     const obj8 = { style: tmp2.header };
     const tmp41 = closure_14;
     const tmp42 = first2;

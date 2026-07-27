@@ -1,9 +1,9 @@
-// Module ID: 14155
-// Function ID: 108845
+// Module ID: 14156
+// Function ID: 108850
 // Name: MAX_SUBSCRIPTION_TIERS
 // Dependencies: [1852, 482, 2]
 
-// Module 14155 (MAX_SUBSCRIPTION_TIERS)
+// Module 14156 (MAX_SUBSCRIPTION_TIERS)
 import { SubscriptionIntervalTypes } from "GuildFeatures";
 
 let obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 1 };

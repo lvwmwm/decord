@@ -1,10 +1,10 @@
-// Module ID: 15252
-// Function ID: 116113
+// Module ID: 15265
+// Function ID: 116162
 // Name: ICYMIInfoScreen
-// Dependencies: [57, 5, 31, 27, 482, 33, 4131, 689, 5084, 1557, 4067, 1456, 8132, 15253, 4338, 9050, 9058, 1212, 5085, 15255, 15256, 15257, 15258, 4127, 8936, 11934, 4092, 4099, 15259, 1935, 4544, 2]
+// Dependencies: [57, 5, 31, 27, 482, 33, 4131, 689, 5084, 1557, 4067, 1456, 8132, 15266, 4338, 9050, 9058, 1212, 5085, 15268, 15269, 15270, 15271, 4127, 8936, 11935, 4092, 4099, 15272, 1935, 4544, 2]
 // Exports: default
 
-// Module 15252 (ICYMIInfoScreen)
+// Module 15265 (ICYMIInfoScreen)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
 import set from "set";
@@ -93,7 +93,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const tmp12 = closure_7;
   const tmp3 = navigation(4067)();
   const tmp9 = closure_11;
-  obj4.uri = navigation(15255);
+  obj4.uri = navigation(15268);
   obj3.source = obj4;
   obj3.style = tmp.bgImage;
   const items5 = [callback3(navigation(5085), obj3), ];
@@ -107,9 +107,9 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const obj9 = {};
   const obj6 = { marginTop: top + navigation(689).space.PX_12 };
   if (tmp3 === ThemeTypes.LIGHT) {
-    let tmp17 = navigation(15256);
+    let tmp17 = navigation(15269);
   } else {
-    tmp17 = navigation(15257);
+    tmp17 = navigation(15270);
   }
   obj9.uri = tmp17;
   obj8.source = obj9;
@@ -117,7 +117,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const items7 = [tmp10(navigation(5085), obj8), , , ];
   const obj10 = {};
   const tmp14 = navigation(5085);
-  obj10.source = navigation(15258);
+  obj10.source = navigation(15271);
   obj10.style = tmp.flashIcon;
   items7[1] = callback3(navigation(5085), obj10);
   const obj11 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
@@ -145,7 +145,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const obj16 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(8936).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
   const obj18 = { style: tmp.divider };
   const tmp22 = closure_6;
-  const items11 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(11934).NewUserIcon, { size: "sm", color: "interactive-text-active" }) }), ];
+  const items11 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(11935).NewUserIcon, { size: "sm", color: "interactive-text-active" }) }), ];
   const obj21 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText };
   const intl5 = extendedOnboarding(1212).intl;
   obj21.children = intl5.string(extendedOnboarding(1212).t.BnUXZi);
@@ -154,7 +154,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[2] = callback4(closure_6, obj19);
   items10[3] = callback3(closure_6, { style: tmp.divider });
   const obj23 = { style: tmp.infoRow };
-  const obj20 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(11934).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj20 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(11935).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
   const obj22 = { style: tmp.divider };
   const items12 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(4092).CircleCheckIcon, { size: "sm", color: "interactive-text-active" }) }), ];
   const obj25 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText };

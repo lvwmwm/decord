@@ -1,10 +1,10 @@
-// Module ID: 14290
-// Function ID: 109771
+// Module ID: 14291
+// Function ID: 109776
 // Name: markDisplayNameStyleFontSeen
 // Dependencies: [686, 2]
 // Exports: markDisplayNameStyleEffectSeen, markDisplayNameStyleFontSeen, markDisplayNameStyleNewEffectsBadgeDismissed, markDisplayNameStyleNewFontsBadgeDismissed
 
-// Module 14290 (markDisplayNameStyleFontSeen)
+// Module 14291 (markDisplayNameStyleFontSeen)
 const result = require("set").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesActionCreators.tsx");
 
 export const markDisplayNameStyleFontSeen = function markDisplayNameStyleFontSeen(fontId) {

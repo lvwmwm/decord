@@ -1,10 +1,10 @@
-// Module ID: 10215
-// Function ID: 79068
+// Module ID: 10216
+// Function ID: 79073
 // Name: useCanExpandInAppNotification
 // Dependencies: [1428, 2]
 // Exports: useCanExpandInAppNotification
 
-// Module 10215 (useCanExpandInAppNotification)
+// Module 10216 (useCanExpandInAppNotification)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-05-in-app-notification-expand", kind: "user", defaultConfig: { canExpand: false, canReact: false }, variations: { [1]: { canExpand: true, canReact: true }, [2]: { canExpand: true, canReact: false } } };

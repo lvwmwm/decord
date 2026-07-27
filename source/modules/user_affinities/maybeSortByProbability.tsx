@@ -1,5 +1,5 @@
 // Module ID: 7788
-// Function ID: 61856
+// Function ID: 61857
 // Name: maybeSortByProbability
 // Dependencies: [7789, 2]
 // Exports: maybeSortByProbability

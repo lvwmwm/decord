@@ -1,10 +1,10 @@
-// Module ID: 10651
-// Function ID: 83070
+// Module ID: 10652
+// Function ID: 83075
 // Name: useRequestToSpeakPermission
 // Dependencies: [57, 31, 1348, 653, 566, 3764, 6658, 2]
 // Exports: useRequestToSpeakPermission
 
-// Module 10651 (useRequestToSpeakPermission)
+// Module 10652 (useRequestToSpeakPermission)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

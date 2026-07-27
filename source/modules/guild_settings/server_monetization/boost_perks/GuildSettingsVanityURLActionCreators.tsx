@@ -1,5 +1,5 @@
 // Module ID: 8247
-// Function ID: 66252
+// Function ID: 66253
 // Name: fetchVanityUrl
 // Dependencies: [653, 507, 686, 2]
 // Exports: fetchVanityUrl, resetCode, saveCode, setCode

@@ -1,5 +1,5 @@
 // Module ID: 9296
-// Function ID: 72787
+// Function ID: 72788
 // Name: CreatorRevenueButton
 // Dependencies: [31, 33, 4131, 9297, 2]
 // Exports: CreatorRevenueButton

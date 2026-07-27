@@ -1,10 +1,10 @@
-// Module ID: 16624
-// Function ID: 129714
+// Module ID: 16636
+// Function ID: 129761
 // Name: SafetyFlowTaskScreen
-// Dependencies: [31, 33, 4131, 6725, 6726, 4542, 4127, 11057, 16622, 9865, 2]
+// Dependencies: [31, 33, 4131, 6725, 6726, 4542, 4127, 11058, 16634, 9865, 2]
 // Exports: default
 
-// Module 16624 (SafetyFlowTaskScreen)
+// Module 16636 (SafetyFlowTaskScreen)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -61,7 +61,7 @@ export default function SafetyFlowTaskScreen(action) {
   if (undefined === footer) {
     const obj3 = {};
     if (withLogout) {
-      withLogout = callback(importDefault(16622), {});
+      withLogout = callback(importDefault(16634), {});
     }
     const items3 = [withLogout, ];
     let tmp12 = null != action;
@@ -71,7 +71,7 @@ export default function SafetyFlowTaskScreen(action) {
     }
     items3[1] = tmp12;
     obj3.children = items3;
-    footer = closure_4(require(11057) /* ModalFooter */.ModalFooter, obj3);
+    footer = closure_4(require(11058) /* ModalFooter */.ModalFooter, obj3);
     const tmp16 = closure_4;
   }
   items2[1] = footer;

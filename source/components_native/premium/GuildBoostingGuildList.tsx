@@ -1,10 +1,10 @@
-// Module ID: 12502
-// Function ID: 96813
+// Module ID: 12503
+// Function ID: 96818
 // Name: GuildBoostingGuildListItem
-// Dependencies: [31, 27, 1838, 4971, 653, 33, 4131, 689, 4067, 566, 4038, 8278, 6633, 6448, 5513, 4127, 9584, 1212, 12471, 2]
+// Dependencies: [31, 27, 1838, 4971, 653, 33, 4131, 689, 4067, 566, 4038, 8278, 6633, 6448, 5513, 4127, 9584, 1212, 12472, 2]
 // Exports: default
 
-// Module 12502 (GuildBoostingGuildListItem)
+// Module 12503 (GuildBoostingGuildListItem)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -61,7 +61,7 @@ function GuildBoostingGuildListItem(guildId) {
     obj1.children = items2;
     items1[1] = callback2(closure_3, obj1);
     const obj7 = { guild: stateFromStores, theme: tmp2 };
-    items1[2] = callback(importDefault(12471), obj7);
+    items1[2] = callback(importDefault(12472), obj7);
     obj.children = items1;
     tmp6 = callback2(tmp10, obj);
     const tmp12 = importDefault(5513);

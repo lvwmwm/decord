@@ -1,10 +1,10 @@
-// Module ID: 15088
-// Function ID: 114956
+// Module ID: 15100
+// Function ID: 115002
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [31, 27, 1355, 33, 4131, 689, 5498, 5186, 1273, 10077, 1212, 7575, 15018, 10162, 2]
+// Dependencies: [31, 27, 1355, 33, 4131, 689, 5498, 5186, 1273, 10077, 1212, 7575, 15019, 10163, 2]
 // Exports: default
 
-// Module 15088 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 15100 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { StaticChannelRoute } from "set";
@@ -35,7 +35,7 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["KzCF/6"]);
   const items = [callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
   const obj2 = {};
-  const obj3 = { source: importDefault(15018) };
+  const obj3 = { source: importDefault(15019) };
   obj2.leading = callback(require(1273) /* Button */.Icon, obj3);
   const obj4 = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;

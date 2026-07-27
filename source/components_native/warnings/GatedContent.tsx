@@ -1,5 +1,5 @@
 // Module ID: 9972
-// Function ID: 77178
+// Function ID: 77179
 // Name: GatedContent
 // Dependencies: [31, 33, 4131, 689, 6692, 4542, 4127, 4966, 4544, 2]
 // Exports: default

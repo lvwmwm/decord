@@ -1,9 +1,9 @@
-// Module ID: 12711
-// Function ID: 98907
+// Module ID: 12712
+// Function ID: 98912
 // Name: NetworkTtlCache
 // Dependencies: [6, 7, 2]
 
-// Module 12711 (NetworkTtlCache)
+// Module 12712 (NetworkTtlCache)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

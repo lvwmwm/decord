@@ -1,5 +1,5 @@
 // Module ID: 8290
-// Function ID: 66636
+// Function ID: 66637
 // Name: getDefaultInviteExpiration
 // Dependencies: [1838, 653, 8288, 4043, 624, 2]
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions

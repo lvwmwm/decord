@@ -1,10 +1,10 @@
-// Module ID: 15104
-// Function ID: 115037
+// Module ID: 15116
+// Function ID: 115083
 // Name: updateGuildPremiumSubscriptionCount
 // Dependencies: [686, 2]
 // Exports: resetGuildPremiumSubscriptionCount, updateGuildPremiumSubscriptionCount
 
-// Module 15104 (updateGuildPremiumSubscriptionCount)
+// Module 15116 (updateGuildPremiumSubscriptionCount)
 const result = require("set").fileFinishedImporting("modules/guild_boosting/GuildBoostingProgressBarActionCreators.tsx");
 
 export const updateGuildPremiumSubscriptionCount = function updateGuildPremiumSubscriptionCount(guildId, arg1) {

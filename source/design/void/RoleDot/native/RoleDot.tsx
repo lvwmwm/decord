@@ -1,10 +1,10 @@
-// Module ID: 13098
-// Function ID: 101128
+// Module ID: 13099
+// Function ID: 101133
 // Name: RoleDot
 // Dependencies: [31, 27, 33, 4131, 689, 477, 4550, 4572, 4555, 1327, 2]
 // Exports: RoleDot
 
-// Module 13098 (RoleDot)
+// Module 13099 (RoleDot)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 10194
-// Function ID: 78882
+// Module ID: 10195
+// Function ID: 78887
 // Name: _setUserStatus
-// Dependencies: [5, 5075, 4811, 653, 3970, 1212, 10195, 1331, 1313, 3946, 675, 2]
+// Dependencies: [5, 5075, 4811, 653, 3970, 1212, 10196, 1331, 1313, 3946, 675, 2]
 // Exports: default
 
-// Module 10194 (_setUserStatus)
+// Module 10195 (_setUserStatus)
 import getSystemLocale from "getSystemLocale";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

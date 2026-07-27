@@ -1,10 +1,10 @@
-// Module ID: 10900
-// Function ID: 84641
+// Module ID: 10901
+// Function ID: 84646
 // Name: QuestRewardTile
 // Dependencies: [57, 31, 27, 4123, 33, 4131, 689, 477, 566, 9420, 9415, 8080, 5085, 2]
 // Exports: default
 
-// Module 10900 (QuestRewardTile)
+// Module 10901 (QuestRewardTile)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { useMemo } from "result";

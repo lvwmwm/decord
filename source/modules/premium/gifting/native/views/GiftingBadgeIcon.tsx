@@ -1,5 +1,5 @@
 // Module ID: 9644
-// Function ID: 75206
+// Function ID: 75207
 // Name: GiftingBadgeIcon
 // Dependencies: [31, 27, 33, 2]
 // Exports: default

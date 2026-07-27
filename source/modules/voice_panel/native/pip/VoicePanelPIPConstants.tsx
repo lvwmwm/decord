@@ -1,9 +1,9 @@
-// Module ID: 15828
-// Function ID: 122207
+// Module ID: 15840
+// Function ID: 122254
 // Name: VoicePanelPIPModes
 // Dependencies: [2]
 
-// Module 15828 (VoicePanelPIPModes)
+// Module 15840 (VoicePanelPIPModes)
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPConstants.tsx");
 
 export const VoicePanelPIPModes = { IN_APP: "IN_APP", IN_PANEL: "IN_PANEL" };

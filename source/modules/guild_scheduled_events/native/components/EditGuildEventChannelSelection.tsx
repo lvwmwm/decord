@@ -1,5 +1,5 @@
 // Module ID: 8206
-// Function ID: 65767
+// Function ID: 65768
 // Name: EditGuildEventChannelSelection
 // Dependencies: [31, 27, 3759, 3768, 1850, 5751, 653, 33, 4131, 689, 6683, 8202, 8186, 4321, 566, 4594, 8188, 8189, 1212, 4127, 4661, 1820, 8207, 8167, 4099, 8184, 1935, 1273, 8185, 2]
 // Exports: default

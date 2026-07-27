@@ -1,5 +1,5 @@
 // Module ID: 9714
-// Function ID: 75707
+// Function ID: 75708
 // Name: WishlistViewMoreCard
 // Dependencies: [31, 27, 33, 4131, 689, 1212, 9709, 4127, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 5650
-// Function ID: 48287
+// Function ID: 48288
 // Name: ApplicationWidget
 // Dependencies: [6, 7, 5631, 2]
 // Exports: isApplicationWidgetWithId

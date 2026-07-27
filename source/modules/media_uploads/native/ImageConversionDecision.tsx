@@ -1,5 +1,5 @@
 // Module ID: 4696
-// Function ID: 40908
+// Function ID: 40909
 // Name: isPhotoKitAsset
 // Dependencies: [477, 4697, 2]
 // Exports: shouldConvertToJPG, shouldForceConvertToJPG

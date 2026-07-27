@@ -1,5 +1,5 @@
 // Module ID: 5927
-// Function ID: 52634
+// Function ID: 52635
 // Name: useIntersectionObserver
 // Dependencies: [31, 5928, 5929, 2]
 // Exports: useIsVisible

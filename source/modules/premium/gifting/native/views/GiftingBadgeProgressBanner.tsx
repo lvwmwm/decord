@@ -1,5 +1,5 @@
 // Module ID: 9651
-// Function ID: 75229
+// Function ID: 75230
 // Name: GiftingBadgeProgressBanner
 // Dependencies: [31, 27, 33, 4131, 689, 5462, 8364, 480, 9644, 4127, 1212, 2295, 2]
 // Exports: default

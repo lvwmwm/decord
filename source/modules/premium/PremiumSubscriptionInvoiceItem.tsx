@@ -1,5 +1,5 @@
 // Module ID: 3787
-// Function ID: 29534
+// Function ID: 29535
 // Name: coalesceInvoiceItems
 // Dependencies: [22, 2]
 // Exports: coalesceInvoiceItems, createInvoiceItemFromServer

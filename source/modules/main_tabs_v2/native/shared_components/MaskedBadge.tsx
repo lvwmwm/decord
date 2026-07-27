@@ -1,5 +1,5 @@
 // Module ID: 9055
-// Function ID: 71166
+// Function ID: 71167
 // Name: MaskedBadge
 // Dependencies: [31, 33, 4131, 689, 1273, 9056, 2]
 // Exports: default

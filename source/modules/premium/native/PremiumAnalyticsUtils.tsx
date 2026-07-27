@@ -1,5 +1,5 @@
 // Module ID: 6238
-// Function ID: 56163
+// Function ID: 56164
 // Name: getBaseAnalyticsFields
 // Dependencies: [653, 491, 3777, 675, 2]
 // Exports: getBasePurchaseFlowAnalyticsFields, getNewAnalyticsLoadId, getPaymentFlowCompletedAnalyticsFields, getPaymentFlowStepAnalyticsFields, trackPremiumSubscriptionCancellationFlowStep, trackPremiumSubscriptionCancellationStarted

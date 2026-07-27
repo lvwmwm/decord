@@ -1,5 +1,5 @@
 // Module ID: 9350
-// Function ID: 73046
+// Function ID: 73047
 // Name: EmojiPopoutType
 // Dependencies: [5514, 1212, 2]
 // Exports: getEmojiPopoutData

@@ -1,10 +1,10 @@
-// Module ID: 12603
-// Function ID: 97501
+// Module ID: 12604
+// Function ID: 97506
 // Name: PendingCancellationWarning
-// Dependencies: [5, 31, 27, 11589, 1838, 4024, 3783, 653, 6173, 4019, 33, 4131, 3975, 689, 566, 4023, 9104, 4127, 1212, 12604, 12605, 4544, 12614, 4555, 668, 675, 11617, 44, 4027, 4472, 12618, 1935, 2]
+// Dependencies: [5, 31, 27, 11590, 1838, 4024, 3783, 653, 6173, 4019, 33, 4131, 3975, 689, 566, 4023, 9104, 4127, 1212, 12605, 12606, 4544, 12615, 4555, 668, 675, 11618, 44, 4027, 4472, 12619, 1935, 2]
 // Exports: default
 
-// Module 12603 (PendingCancellationWarning)
+// Module 12604 (PendingCancellationWarning)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import maybeLoadBundle from "maybeLoadBundle";
 import get_ActivityIndicator from "invariant";
@@ -65,13 +65,13 @@ function SubscribeConfirmation(arg0) {
   ({ guild, isModifyingSubscription } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { style: tmp.subscribeImage, source: importDefault(12604) };
+  obj = { style: tmp.subscribeImage, source: importDefault(12605) };
   const items = [callback(closure_6, obj), , , , , ];
   obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.yTlZV0);
   items[1] = callback(require(4127) /* Text */.Text, obj);
-  items[2] = callback(importDefault(12605), { style: tmp.guildPreview, guild });
+  items[2] = callback(importDefault(12606), { style: tmp.guildPreview, guild });
   const obj2 = { style: items1, variant: "text-sm/medium" };
   items1 = [, ];
   ({ blurb: arr2[0], warning: arr2[1] } = tmp);
@@ -99,7 +99,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
   const onPremiumGuildSubscribe = previousGuildSubscriptionSlots.onPremiumGuildSubscribe;
   ({ guild, isModifyingSubscription } = previousGuildSubscriptionSlots);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = prop(12614);
+  let obj = prop(12615);
   const guildSubscriptionRemovalSource = obj.useGuildSubscriptionRemovalSource();
   let obj1 = prop(566);
   const items = [closure_10];
@@ -137,7 +137,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj6.children = intl3.format(prop(1212).t["5zQYEz"], obj7);
     const items2 = [callback(prop(4127).Text, obj6), , , ];
     const obj8 = { style: tmp.guildPreview, guild: stateFromStores };
-    items2[1] = callback(onPremiumGuildSubscribe(12605), obj8);
+    items2[1] = callback(onPremiumGuildSubscribe(12606), obj8);
     const obj9 = { style: tmp.previewHeader, variant: "eyebrow", color: "text-default" };
     const intl4 = prop(1212).intl;
     const obj10 = { slotCount: prop.length };
@@ -151,7 +151,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj11.end = prop(668).HorizontalGradient.END;
     obj11.colors = Gradients.PREMIUM_GUILD;
     const obj12 = { guild };
-    obj11.children = callback(onPremiumGuildSubscribe(12605), obj12);
+    obj11.children = callback(onPremiumGuildSubscribe(12606), obj12);
     items2[3] = callback(onPremiumGuildSubscribe(4555), obj11);
     obj5.children = items2;
     items1[3] = callback2(closure_7, obj5);

@@ -1,10 +1,10 @@
-// Module ID: 10399
-// Function ID: 80238
+// Module ID: 10400
+// Function ID: 80243
 // Name: useShowChannelOptInNotice
 // Dependencies: [4326, 653, 1355, 5761, 566, 5605, 2]
 // Exports: default
 
-// Module 10399 (useShowChannelOptInNotice)
+// Module 10400 (useShowChannelOptInNotice)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { NULL_STRING_GUILD_ID } from "ME";
 import { ChannelFlags } from "set";

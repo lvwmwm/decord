@@ -1,5 +1,5 @@
 // Module ID: 5632
-// Function ID: 48130
+// Function ID: 48131
 // Name: items
 // Dependencies: [6, 7, 5631, 5633, 5634, 2]
 // Exports: isGameWidget, isGameWidgetType

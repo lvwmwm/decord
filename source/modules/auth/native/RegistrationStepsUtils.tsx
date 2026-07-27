@@ -1,10 +1,10 @@
-// Module ID: 14788
-// Function ID: 112766
+// Module ID: 14789
+// Function ID: 112771
 // Name: getRegistrationSteps
-// Dependencies: [5, 31, 13727, 5589, 14789, 14790, 653, 33, 480, 14791, 14797, 14798, 14810, 14811, 14817, 9123, 14819, 14820, 9170, 9167, 14824, 14825, 14829, 14830, 1832, 14800, 4030, 9128, 14837, 2]
+// Dependencies: [5, 31, 13728, 5589, 14790, 14791, 653, 33, 480, 14792, 14798, 14799, 14811, 14812, 14818, 9123, 14820, 14821, 9170, 9167, 14825, 14826, 14830, 14831, 1832, 14801, 4030, 9128, 14838, 2]
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, handleNextOrSubmitRegistration
 
-// Module 14788 (getRegistrationSteps)
+// Module 14789 (getRegistrationSteps)
 import closure_3 from "RegistrationTransitionActionTypes";
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

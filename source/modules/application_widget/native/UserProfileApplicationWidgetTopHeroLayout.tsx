@@ -1,10 +1,10 @@
-// Module ID: 12001
-// Function ID: 92748
+// Module ID: 12002
+// Function ID: 92753
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [57, 31, 27, 653, 5510, 33, 4131, 689, 12002, 12089, 12090, 5109, 4555, 2]
+// Dependencies: [57, 31, 27, 653, 5510, 33, 4131, 689, 12003, 12090, 12091, 5109, 4555, 2]
 // Exports: default
 
-// Module 12001 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 12002 (UserProfileApplicationWidgetTopHeroLayout)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -47,40 +47,40 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   const tmp2 = callback(React.useState(null), 2);
   const first = tmp2[0];
   const _require = tmp2[1];
-  let obj = _require(12002);
+  let obj = _require(12003);
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  let obj1 = _require(12002);
+  let obj1 = _require(12003);
   const textComponentValues1 = obj1.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  let obj2 = _require(12002);
+  let obj2 = _require(12003);
   const textComponentValues2 = obj2.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
-  let obj3 = _require(12002);
+  let obj3 = _require(12003);
   const hero_image = topConfig.components.hero_image;
   let image;
   const textComponentValues3 = obj3.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (null != hero_image) {
     image = hero_image.fields.image;
   }
-  const items = [_require(12002).ResolvedValueType.MEDIA];
+  const items = [_require(12003).ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   obj = { style: tmp.root };
   const items1 = [header.header, , ];
   obj = { style: tmp.contentRow };
   obj1 = { style: tmp.heroText };
   obj2 = { field: textComponentValues, variant: "text-lg/medium", color: "text-default" };
-  const items2 = [callback2(_require(12089).FieldText, obj2), , , ];
+  const items2 = [callback2(_require(12090).FieldText, obj2), , , ];
   obj3 = { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" };
-  items2[1] = callback2(_require(12089).FieldText, obj3);
+  items2[1] = callback2(_require(12090).FieldText, obj3);
   const obj4 = { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" };
-  items2[2] = callback2(_require(12089).FieldText, obj4);
+  items2[2] = callback2(_require(12090).FieldText, obj4);
   const obj5 = { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" };
-  items2[3] = callback2(_require(12089).FieldText, obj5);
+  items2[3] = callback2(_require(12090).FieldText, obj5);
   obj1.children = items2;
   const items3 = [callback3(closure_6, obj1), ];
   const obj6 = { style: tmp.heroImageColumn };
   let tmp13 = null == fieldValue || null == first;
   if (tmp13) {
     const obj7 = { style: tmp.heroImageSkeleton };
-    tmp13 = callback2(_require(12090).ImageSkeleton, obj7);
+    tmp13 = callback2(_require(12091).ImageSkeleton, obj7);
   }
   obj6.children = tmp13;
   items3[1] = callback2(closure_6, obj6);

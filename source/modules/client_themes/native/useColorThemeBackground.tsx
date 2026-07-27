@@ -1,5 +1,5 @@
 // Module ID: 3978
-// Function ID: 32994
+// Function ID: 32995
 // Name: getGuildThemeName
 // Dependencies: [31, 1278, 3943, 1212, 3945, 3979, 3981, 624, 4064, 2]
 // Exports: default

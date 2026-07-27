@@ -1,9 +1,9 @@
-// Module ID: 13566
-// Function ID: 104373
+// Module ID: 13567
+// Function ID: 104378
 // Name: enforcing
 // Dependencies: [27, 2]
 
-// Module 13566 (enforcing)
+// Module 13567 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("RTNKeyCommandsModule");

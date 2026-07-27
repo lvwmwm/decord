@@ -1,10 +1,10 @@
-// Module ID: 12403
-// Function ID: 96272
+// Module ID: 12404
+// Function ID: 96277
 // Name: TieredTenureBadgePerkCard
-// Dependencies: [31, 27, 1850, 653, 33, 4131, 8362, 12404, 566, 8336, 675, 4099, 8335, 1935, 8335, 1212, 12406, 4127, 8361, 12380, 5085, 2]
+// Dependencies: [31, 27, 1850, 653, 33, 4131, 8362, 12405, 566, 8336, 675, 4099, 8335, 1935, 8335, 1212, 12407, 4127, 8361, 12381, 5085, 2]
 // Exports: TieredTenureBadgePerkCard
 
-// Module 12403 (TieredTenureBadgePerkCard)
+// Module 12404 (TieredTenureBadgePerkCard)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
   tieredTenureBadgeData = obj.useTieredTenureBadgeData();
   let obj1 = tieredTenureBadgeData(8362);
   const premiumSince = obj1.usePremiumSince();
-  let obj2 = tieredTenureBadgeData(12404);
+  let obj2 = tieredTenureBadgeData(12405);
   const timeUntilNextBadge = obj2.useTimeUntilNextBadge();
   const tmp4 = callback3();
   let obj3 = tieredTenureBadgeData(566);
@@ -83,7 +83,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
             const date1 = new Date(premiumSince);
             obj.date = date1;
             formatResult = intl3.format(tieredTenureBadgeData(1212).t.vwLvec, obj);
-            tmp15 = stateFromStores(12406);
+            tmp15 = stateFromStores(12407);
           }
         }
       }
@@ -120,7 +120,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
     const obj8 = { style: tmp4.imageContainer };
     const obj9 = { resizeMode: "contain" };
     const items4 = [tmp4.image, ];
-    const tmp49 = stateFromStores(12380);
+    const tmp49 = stateFromStores(12381);
     const tmp51 = View;
     const tmp52 = stateFromStores(5085);
     items4[1] = tieredTenureBadgeData.status === tieredTenureBadgeData(8362).TieredTenureBadgeStatus.UPCOMING && tmp4.upcomingBadge;

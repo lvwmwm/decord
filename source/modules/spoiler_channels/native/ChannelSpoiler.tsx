@@ -1,5 +1,5 @@
 // Module ID: 9973
-// Function ID: 77183
+// Function ID: 77184
 // Name: ChannelSpoiler
 // Dependencies: [57, 31, 27, 4144, 1348, 1838, 9974, 33, 4131, 689, 566, 4321, 9975, 4324, 5049, 3983, 4594, 4127, 1212, 4542, 4121, 4661, 9972, 6692, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 7786
-// Function ID: 61838
+// Function ID: 61839
 // Name: getMessageContent
 // Dependencies: [1348, 7702, 7684, 7787, 1212, 7686, 7687, 2]
 // Exports: createVoiceSessionSystemMessage

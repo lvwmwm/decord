@@ -1,7 +1,7 @@
 // Module ID: 12042
-// Function ID: 93673
+// Function ID: 93667
 // Name: cached
-// Dependencies: [12015]
+// Dependencies: [12016]
 
 // Module 12042 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "caratteri", verb: "avere" }, file: { unit: "byte", verb: "avere" }, array: { unit: "elementi", verb: "avere" }, set: { unit: "elementi", verb: "avere" } };
-      let closure_1 = { regex: "input", email: "indirizzo email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data e ora ISO", date: "data ISO", time: "ora ISO", duration: "durata ISO", ipv4: "indirizzo IPv4", ipv6: "indirizzo IPv6", cidrv4: "intervallo IPv4", cidrv6: "intervallo IPv6", base64: "stringa codificata in base64", base64url: "URL codificata in base64", json_string: "stringa JSON", e164: "numero E.164", jwt: "JWT", template_literal: "input" };
-      let closure_2 = { nan: "NaN", number: "numero", array: "vettore" };
+      let closure_0 = { string: { unit: "stafi", verb: "a\u00F0 hafa" }, file: { unit: "b\u00E6ti", verb: "a\u00F0 hafa" }, array: { unit: "hluti", verb: "a\u00F0 hafa" }, set: { unit: "hluti", verb: "a\u00F0 hafa" } };
+      let closure_1 = { regex: "gildi", email: "netfang", url: "vefsl\u00F3\u00F0", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dagsetning og t\u00EDmi", date: "ISO dagsetning", time: "ISO t\u00EDmi", duration: "ISO t\u00EDmalengd", ipv4: "IPv4 address", ipv6: "IPv6 address", cidrv4: "IPv4 range", cidrv6: "IPv6 range", base64: "base64-encoded strengur", base64url: "base64url-encoded strengur", json_string: "JSON strengur", e164: "E.164 t\u00F6lugildi", jwt: "JWT", template_literal: "gildi" };
+      let closure_2 = { nan: "NaN", number: "n\u00FAmer", array: "fylki" };
       return (code) => {
         let minimum;
         let origin;
@@ -76,123 +76,119 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp53 = parsedTypeResult;
+          let tmp51 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp53 = tmp52;
+            tmp51 = tmp50;
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "Input non valido: atteso instanceof " + code.expected + ", ricevuto " + tmp53;
+            let combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp51 + " \u00FEar sem \u00E1 a\u00F0 vera instanceof " + code.expected;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "Input non valido: atteso " + expected + ", ricevuto " + tmp53;
+            combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp51 + " \u00FEar sem \u00E1 a\u00F0 vera " + expected;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Input non valido: atteso " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Rangt gildi: gert r\u00E1\u00F0 fyrir " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "Opzione non valida: atteso uno tra " + closure_2.joinValues(code.values, "|");
+            combined1 = "\u00D3gilt val: m\u00E1 vera eitt af eftirfarandi " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str31 = "<";
+          let str28 = "<";
           if (code.inclusive) {
-            str31 = "<=";
+            str28 = "<=";
           }
-          const tmp28 = getSizing(code.origin);
+          const tmp26 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str32 = "valore";
-          if (tmp28) {
-            if (tmp30) {
-              str32 = origin2;
+          let str29 = "gildi";
+          if (tmp26) {
+            if (tmp28) {
+              str29 = origin2;
             }
             let str = code.maximum.toString();
-            const unit = tmp28.unit;
-            let str37 = "elementi";
+            const unit = tmp26.unit;
+            let str34 = "hluti";
             if (null != unit) {
-              str37 = unit;
+              str34 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Troppo grande: " + str32 + " deve avere " + str31 + str + " " + str37;
-            const str36 = code.maximum;
+            let combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + str29 + " hafi " + str28 + str + " " + str34;
+            const str33 = code.maximum;
           } else {
-            let tmp31 = str32;
-            if (tmp30) {
-              tmp31 = origin2;
+            let tmp29 = str29;
+            if (tmp28) {
+              tmp29 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Troppo grande: " + tmp31 + " deve essere " + str31 + code.maximum.toString();
-            const str33 = code.maximum;
+            combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + tmp29 + " s\u00E9 " + str28 + code.maximum.toString();
+            const str30 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str25 = ">";
+          let str22 = ">";
           if (code.inclusive) {
-            str25 = ">=";
+            str22 = ">=";
           }
-          const tmp17 = getSizing(code.origin);
+          const tmp15 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
-          if (tmp17) {
+          if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Troppo piccolo: " + origin + " deve avere " + str25 + str1 + " " + tmp17.unit;
+            let combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " hafi " + str22 + str1 + " " + tmp15.unit;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Troppo piccolo: " + origin + " deve essere " + str25 + str1;
+            combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " s\u00E9 " + str22 + str1;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Stringa non valida: deve iniziare con \"" + code.prefix + "\"";
+            let combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 byrja \u00E1 \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Stringa non valida: deve terminare con \"" + code.suffix + "\"";
+            combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 enda \u00E1 \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Stringa non valida: deve includere \"" + code.includes + "\"";
+            combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 innihalda \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Stringa non valida: deve corrispondere al pattern " + code.pattern;
+            combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 fylgja mynstri " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "Invalid " + format;
+            combined4 = "Rangt " + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "Numero non valido: deve essere un multiplo di " + code.divisor;
+          return "R\u00F6ng tala: ver\u00F0ur a\u00F0 vera margfeldi af " + code.divisor;
         } else if ("unrecognized_keys" === code) {
-          let str8 = "e";
+          let str7 = "ur lykill";
           if (code.keys.length > 1) {
-            str8 = "i";
-          }
-          let str9 = "a";
-          if (code.keys.length > 1) {
-            str9 = "e";
+            str7 = "ir lyklar";
           }
           const _HermesInternal3 = HermesInternal;
-          return "Chiav" + str8 + " non riconosciut" + str9 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "\u00D3\u00FEekkt " + str7 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Chiave non valida in " + code.origin;
+            return "Rangur lykill \u00ED " + code.origin;
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "Valore non valido in " + code.origin;
+                return "Rangt gildi \u00ED " + code.origin;
               }
             }
-            return "Input non valido";
+            return "Rangt gildi";
           }
         }
       };

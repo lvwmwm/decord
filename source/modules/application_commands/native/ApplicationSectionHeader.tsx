@@ -1,10 +1,10 @@
-// Module ID: 11431
-// Function ID: 88889
+// Module ID: 11432
+// Function ID: 88894
 // Name: ApplicationSectionHeader
-// Dependencies: [31, 27, 1918, 33, 4131, 689, 566, 11328, 1212, 5085, 4127, 2]
+// Dependencies: [31, 27, 1918, 33, 4131, 689, 566, 11329, 1212, 5085, 4127, 2]
 // Exports: default
 
-// Module 11431 (ApplicationSectionHeader)
+// Module 11432 (ApplicationSectionHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ export default function ApplicationSectionHeader(section) {
       }
     }
   });
-  let obj1 = section(11328);
+  let obj1 = section(11329);
   const applicationCommandsIconSource = obj1.getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (null != stateFromStores) {

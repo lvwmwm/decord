@@ -1,5 +1,5 @@
 // Module ID: 9126
-// Function ID: 71737
+// Function ID: 71738
 // Name: PasswordResetMethods
 // Dependencies: [2]
 

@@ -1,5 +1,5 @@
 // Module ID: 10152
-// Function ID: 78546
+// Function ID: 78550
 // Name: computeFavoritesAccess
 // Dependencies: [3948, 1850, 1351, 10153, 1386, 1852, 10154, 10155, 566, 1873, 21, 1282, 1841, 2]
 // Exports: getFavoritesAccess, useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavoritesAwareChannel, useFavoritesCategories
@@ -41,8 +41,12 @@ function computeFavoritesAccess(hasHigherPrivileges) {
 function useFavoritesAccess(FavoritesGuildChannelList) {
   let enabled;
   let hasHigherPrivileges;
+  let str = FavoritesGuildChannelList;
+  if (FavoritesGuildChannelList === undefined) {
+    str = "useFavoritesAccess";
+  }
   let obj = require(10155) /* useFavoritesGuildConfig */;
-  obj = { location: FavoritesGuildChannelList };
+  obj = { location: str };
   const favoritesGuildConfig = obj.useFavoritesGuildConfig(obj);
   const isFreemium = favoritesGuildConfig.isFreemium;
   let tmp2 = undefined !== isFreemium;

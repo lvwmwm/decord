@@ -1,5 +1,5 @@
 // Module ID: 5073
-// Function ID: 44085
+// Function ID: 44086
 // Name: _persistOptInChannelUpdates2
 // Dependencies: [5, 1910, 1348, 4326, 653, 662, 5065, 1360, 5074, 5076, 686, 675, 4325, 22, 5079, 1331, 1282, 2]
 // Exports: bulkOptInChannels, clearGuildNotice, dimissFavoriteSuggestion, enableGuildNotice, setGuildOptIn, setIsFavorite, setMessagesFavorite, setOptInChannel, setRecentlyActiveCollapsed, updateOptInChannelsImmediate

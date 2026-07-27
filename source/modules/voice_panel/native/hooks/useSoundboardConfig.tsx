@@ -1,10 +1,10 @@
-// Module ID: 15934
-// Function ID: 123147
+// Module ID: 15946
+// Function ID: 123194
 // Name: useSoundboardConfig
-// Dependencies: [31, 1348, 15777, 3947, 1334, 15802, 10720, 2]
+// Dependencies: [31, 1348, 15789, 3947, 1334, 15814, 10721, 2]
 // Exports: default
 
-// Module 15934 (useSoundboardConfig)
+// Module 15946 (useSoundboardConfig)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -15,7 +15,7 @@ let result = require("useIsConnectedToVoiceChannel").fileFinishedImporting("modu
 export default function useSoundboardConfig(arg0, arg1) {
   const _require = arg0;
   const importDefault = arg1;
-  let tmp = importDefault(15777)(arg0);
+  let tmp = importDefault(15789)(arg0);
   let obj = _require(3947);
   obj = {};
   if (tmp) {

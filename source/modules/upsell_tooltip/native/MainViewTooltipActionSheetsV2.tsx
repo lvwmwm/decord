@@ -1,10 +1,10 @@
-// Module ID: 15666
-// Function ID: 120855
+// Module ID: 15678
+// Function ID: 120902
 // Name: getActionSheetType
-// Dependencies: [57, 31, 3824, 1316, 653, 1345, 33, 15667, 1935, 15669, 15670, 15671, 15672, 15674, 15675, 14717, 15677, 15679, 15681, 15685, 1334, 1335, 675, 1339, 9603, 3947, 1336, 15690, 566, 9602, 2]
+// Dependencies: [57, 31, 3824, 1316, 653, 1345, 33, 15679, 1935, 15681, 15682, 15683, 15684, 15686, 15687, 14718, 15689, 15691, 15693, 15697, 1334, 1335, 675, 1339, 9603, 3947, 1336, 15702, 566, 9602, 2]
 // Exports: default
 
-// Module 15666 (getActionSheetType)
+// Module 15678 (getActionSheetType)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "result";
 import result from "result";
@@ -80,35 +80,35 @@ function TrackedDismissibleActionSheet(actionSheetConfig) {
 let obj = {
   id: require("DismissibleContent").DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET,
   importer: function GooglePlayPriceChangeActionSheetImporter() {
-    return require(1935) /* maybeLoadBundle */(15672, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15684, dependencyMap.paths);
   }
 };
 let items = [obj, , , ];
 obj = {
   id: require("DismissibleContent").DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET,
   importer: function PremiumDiscountOfferActionSheetImporter() {
-    return require(1935) /* maybeLoadBundle */(15675, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15687, dependencyMap.paths);
   }
 };
 items[1] = obj;
 obj = {
   id: require("DismissibleContent").DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET,
   importer: function PremiumTrialOfferActionSheetImporter() {
-    return require(1935) /* maybeLoadBundle */(14717, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(14718, dependencyMap.paths);
   }
 };
 items[2] = obj;
 items[3] = {
   id: require("DismissibleContent").DismissibleContent.MOBILE_BOGO_PROMOTION_ACTION_SHEET,
   importer: function BogoPromotionActionSheetImporter() {
-    return require(1935) /* maybeLoadBundle */(15671, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15683, dependencyMap.paths);
   }
 };
 let items1 = [...items];
 let obj1 = {
   id: require("DismissibleContent").DismissibleContent.MOBILE_BOGO_PROMOTION_ACTION_SHEET,
   importer: function BogoPromotionActionSheetImporter() {
-    return require(1935) /* maybeLoadBundle */(15671, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15683, dependencyMap.paths);
   }
 };
 items1[tmp3] = { id: require("DismissibleContent").DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE, importer: ConnectionDeprecationActionSheetImporter };
@@ -132,70 +132,70 @@ const obj7 = { id: require("DismissibleContent").DismissibleContent.GIFTING_PROM
 items1[sum5] = {
   id: require("DismissibleContent").DismissibleContent.NEW_GIFTING_BADGES_COACHMARK,
   importer: function GiftingBadgesCoachmarkImporter() {
-    return require(1935) /* maybeLoadBundle */(15679, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15691, dependencyMap.paths);
   }
 };
 const sum6 = sum5 + 1;
 const obj8 = {
   id: require("DismissibleContent").DismissibleContent.NEW_GIFTING_BADGES_COACHMARK,
   importer: function GiftingBadgesCoachmarkImporter() {
-    return require(1935) /* maybeLoadBundle */(15679, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15691, dependencyMap.paths);
   }
 };
 items1[sum6] = {
   id: require("DismissibleContent").DismissibleContent.CUSTOM_APP_ICONS_COACHMARK,
   importer: function AppIconsCoachMarkImporter() {
-    return require(1935) /* maybeLoadBundle */(15667, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15679, dependencyMap.paths);
   }
 };
 const sum7 = sum6 + 1;
 const obj9 = {
   id: require("DismissibleContent").DismissibleContent.CUSTOM_APP_ICONS_COACHMARK,
   importer: function AppIconsCoachMarkImporter() {
-    return require(1935) /* maybeLoadBundle */(15667, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15679, dependencyMap.paths);
   }
 };
 items1[sum7] = {
   id: require("DismissibleContent").DismissibleContent.ROBLOX_CONNECTION_COACHMARK,
   importer: function RobloxConnectionCoachmarkImporter() {
-    return require(1935) /* maybeLoadBundle */(15670, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15682, dependencyMap.paths);
   }
 };
 const sum8 = sum7 + 1;
 const obj10 = {
   id: require("DismissibleContent").DismissibleContent.ROBLOX_CONNECTION_COACHMARK,
   importer: function RobloxConnectionCoachmarkImporter() {
-    return require(1935) /* maybeLoadBundle */(15670, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15682, dependencyMap.paths);
   }
 };
 items1[sum8] = {
   id: require("DismissibleContent").DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK,
   importer: function DisplayNameStylesFlywheelMobileActionSheetImporter() {
-    return require(1935) /* maybeLoadBundle */(15677, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15689, dependencyMap.paths);
   }
 };
 const obj11 = {
   id: require("DismissibleContent").DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK,
   importer: function DisplayNameStylesFlywheelMobileActionSheetImporter() {
-    return require(1935) /* maybeLoadBundle */(15677, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15689, dependencyMap.paths);
   }
 };
 items1[sum8 + 1] = {
   id: require("DismissibleContent").DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT,
   importer: function CollectiblesMobileAnnouncementActionSheetImporter() {
-    return require(1935) /* maybeLoadBundle */(15685, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15697, dependencyMap.paths);
   }
 };
 const obj12 = {
   id: require("DismissibleContent").DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT,
   importer: function CollectiblesMobileAnnouncementActionSheetImporter() {
-    return require(1935) /* maybeLoadBundle */(15685, dependencyMap.paths);
+    return require(1935) /* maybeLoadBundle */(15697, dependencyMap.paths);
   }
 };
 result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/upsell_tooltip/native/MainViewTooltipActionSheetsV2.tsx");
 
 export default function MainViewTooltipActionSheetsV2() {
-  let obj = mainViewTooltipActionSheetMap(15690);
+  let obj = mainViewTooltipActionSheetMap(15702);
   mainViewTooltipActionSheetMap = obj.useMainViewTooltipActionSheetMap();
   let tmp2 = callback(React.useState(null), 2);
   const first = tmp2[0];

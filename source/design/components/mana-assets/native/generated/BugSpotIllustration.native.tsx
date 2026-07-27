@@ -1,5 +1,5 @@
 // Module ID: 6838
-// Function ID: 59492
+// Function ID: 59493
 // Name: BugSpotIllustration
 // Dependencies: [33, 5085, 6839, 2]
 // Exports: BugSpotIllustration

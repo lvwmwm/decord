@@ -1,10 +1,10 @@
-// Module ID: 14707
-// Function ID: 112051
+// Module ID: 14708
+// Function ID: 112056
 // Name: isValidClipboardCode
-// Dependencies: [5, 57, 31, 33, 14705, 4127, 1212, 9125, 14700, 14706, 14703, 2]
+// Dependencies: [5, 57, 31, 33, 14706, 4127, 1212, 9125, 14701, 14707, 14704, 2]
 // Exports: default
 
-// Module 14707 (isValidClipboardCode)
+// Module 14708 (isValidClipboardCode)
 import Text from "Text";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -15,9 +15,9 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function isValidClipboardCode(arg0) {
-  let tmp = arg0.length >= require(14705) /* finishMFACheck */.BACKUP_CODE_MIN_LENGTH;
+  let tmp = arg0.length >= require(14706) /* finishMFACheck */.BACKUP_CODE_MIN_LENGTH;
   if (tmp) {
-    tmp = arg0.length <= require(14705) /* finishMFACheck */.BACKUP_CODE_MAX_LENGTH;
+    tmp = arg0.length <= require(14706) /* finishMFACheck */.BACKUP_CODE_MAX_LENGTH;
   }
   return tmp;
 }

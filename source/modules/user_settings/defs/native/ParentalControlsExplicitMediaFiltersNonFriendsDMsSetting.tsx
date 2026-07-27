@@ -1,16 +1,16 @@
-// Module ID: 14620
-// Function ID: 111490
+// Module ID: 14621
+// Function ID: 111495
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: [5765, 7697, 13789, 5834, 13793, 1212, 13786, 1282, 10059, 2]
+// Dependencies: [5765, 7697, 13790, 5834, 13794, 1212, 13787, 1282, 10059, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 14620 (useObscuredContentNonFriendsDmSettingValue)
+// Module 14621 (useObscuredContentNonFriendsDmSettingValue)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useObscuredContentNonFriendsDmSettingValue() {
-  const parentalControlledExplicitContentSettings = require(13789) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
+  const parentalControlledExplicitContentSettings = require(13790) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
   let prop;
   if (null != parentalControlledExplicitContentSettings) {
     prop = parentalControlledExplicitContentSettings.explicitContentNonFriendDm;
@@ -25,7 +25,7 @@ function useObscuredContentNonFriendsDmSettingValue() {
 function onObscuredContentNonFriendsDmOnPress() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(13793);
+    let obj = selectedTeenId(13794);
     const intl = selectedTeenId(1212).intl;
     const stringResult = intl.string(selectedTeenId(1212).t.GYpoAq);
     obj = { title: stringResult, subtitle: getTitle() };
@@ -37,8 +37,8 @@ function onObscuredContentNonFriendsDmOnPress() {
       const result = obj.updateExplicitContentSetting(selectedTeenId, obj);
     };
     obj.currentValue = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentNonFriendDm;
-    let result = selectedTeenId(13786).handleSensitiveMediaFilterPress(obj);
-    const obj2 = selectedTeenId(13786);
+    let result = selectedTeenId(13787).handleSensitiveMediaFilterPress(obj);
+    const obj2 = selectedTeenId(13787);
   }
 }
 function getTitle() {

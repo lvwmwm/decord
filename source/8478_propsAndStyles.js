@@ -1,5 +1,5 @@
 // Module ID: 8478
-// Function ID: 67547
+// Function ID: 67548
 // Name: propsAndStyles
 // Dependencies: [65, 8479, 8470, 8480, 8483, 8471, 8469]
 // Exports: extract, withoutXY

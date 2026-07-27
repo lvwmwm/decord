@@ -1,5 +1,5 @@
 // Module ID: 10094
-// Function ID: 78224
+// Function ID: 78225
 // Name: shouldShowTakeoverForWarnings
 // Dependencies: [1316, 1850, 9031, 10095, 2]
 // Exports: getInappropriateConversationTakeoverForChannel, getSafetyAlertsSettingOrDefault, shouldShowInappropriateConversationTakeoverForChannelRecord

@@ -1,5 +1,5 @@
 // Module ID: 5263
-// Function ID: 45398
+// Function ID: 45399
 // Name: useViewRefHandler
 // Dependencies: [31, 5243]
 // Exports: useViewRefHandler

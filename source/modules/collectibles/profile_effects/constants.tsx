@@ -1,5 +1,5 @@
 // Module ID: 7999
-// Function ID: 63765
+// Function ID: 63766
 // Name: PROFILE_EFFECT_INTRO_MINIMUM_DELAY
 // Dependencies: [2]
 

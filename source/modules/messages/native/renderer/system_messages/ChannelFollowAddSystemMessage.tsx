@@ -1,5 +1,5 @@
 // Module ID: 7729
-// Function ID: 61658
+// Function ID: 61659
 // Name: createChannelFollowAddSystemMessage
 // Dependencies: [7684, 1212, 7686, 7687, 2]
 // Exports: createChannelFollowAddSystemMessage

@@ -1,10 +1,10 @@
-// Module ID: 10975
-// Function ID: 85360
+// Module ID: 10976
+// Function ID: 85365
 // Name: TransferOwnership
-// Dependencies: [5, 57, 31, 27, 1850, 10974, 653, 33, 4131, 689, 3835, 1456, 566, 44, 8242, 10972, 3831, 4320, 5513, 4127, 10976, 1273, 1212, 3970, 5501, 9024, 4544, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 10975, 653, 33, 4131, 689, 3835, 1456, 566, 44, 8242, 10973, 3831, 4320, 5513, 4127, 10977, 1273, 1212, 3970, 5501, 9024, 4544, 2]
 // Exports: default
 
-// Module 10975 (TransferOwnership)
+// Module 10976 (TransferOwnership)
 import closure_3 from "TransferOwnershipModalScenes";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -107,7 +107,7 @@ export default function TransferOwnership(guild) {
   obj1 = { paddingTop: toUser(689).space.PX_16, paddingHorizontal: token };
   obj.style = obj1;
   obj2 = { style: tmp2.header };
-  obj3 = { source: toUser(10976), style: tmp2.arrow };
+  obj3 = { source: toUser(10977), style: tmp2.arrow };
   const items1 = [callback2(_handleTransfer, obj3), , , ];
   const obj4 = { style: tmp2.avatarsWrapper };
   const obj5 = { user: stateFromStores, guildId: guild.id, size: guild(1273).AvatarSizes.XXLARGE };

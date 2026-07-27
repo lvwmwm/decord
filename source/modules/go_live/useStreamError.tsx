@@ -1,10 +1,10 @@
-// Module ID: 10505
-// Function ID: 81428
+// Module ID: 10506
+// Function ID: 81433
 // Name: useStreamError
-// Dependencies: [10483, 8784, 566, 2]
+// Dependencies: [10484, 8784, 566, 2]
 // Exports: default
 
-// Module 10505 (useStreamError)
+// Module 10506 (useStreamError)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;

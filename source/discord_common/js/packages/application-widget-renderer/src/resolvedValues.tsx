@@ -1,16 +1,16 @@
-// Module ID: 12005
-// Function ID: 92767
+// Module ID: 12006
+// Function ID: 92772
 // Name: resolveFieldValue
-// Dependencies: [12006, 12007, 2]
+// Dependencies: [12007, 12008, 2]
 // Exports: bindResolveFieldValue
 
-// Module 12005 (resolveFieldValue)
+// Module 12006 (resolveFieldValue)
 function resolveFieldValue(image, items, applicationAssets) {
   const _require = image;
   applicationAssets = applicationAssets.applicationAssets;
   if (null == image) {
     return null;
-  } else if (image.value_type === _require(12007).ApplicationWidgetFieldValueType.DATA) {
+  } else if (image.value_type === _require(12008).ApplicationWidgetFieldValueType.DATA) {
     let iter = tmp[image.value];
     const presentation_type = image.presentation_type;
     if (null != iter) {
@@ -39,17 +39,17 @@ function resolveFieldValue(image, items, applicationAssets) {
       }
     }
     return tmp17;
-  } else if (image.value_type === _require(12007).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
+  } else if (image.value_type === _require(12008).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
     let tmp11 = null;
-    if (image.presentation_type === _require(12006).ApplicationWidgetFieldPresentationType.TEXT) {
+    if (image.presentation_type === _require(12007).ApplicationWidgetFieldPresentationType.TEXT) {
       tmp11 = null;
       if (items.includes(obj.STRING)) {
-        const obj1 = { type: obj.STRING, value: image.value, presentationType: _require(12006).ApplicationWidgetFieldPresentationType.TEXT };
+        const obj1 = { type: obj.STRING, value: image.value, presentationType: _require(12007).ApplicationWidgetFieldPresentationType.TEXT };
         tmp11 = obj1;
       }
     }
     return tmp11;
-  } else if (image.value_type === _require(12007).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
+  } else if (image.value_type === _require(12008).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
     if (items.includes(obj.MEDIA)) {
       const found = applicationAssets.find((key) => key.key === image.value);
       let tmp5 = null;
@@ -58,7 +58,7 @@ function resolveFieldValue(image, items, applicationAssets) {
         obj.type = obj.MEDIA;
         const obj2 = { url: tmp2(found), width: found.metadata.width, height: found.metadata.height };
         obj.media = obj2;
-        obj.presentationType = _require(12006).ApplicationWidgetFieldPresentationType.IMAGE;
+        obj.presentationType = _require(12007).ApplicationWidgetFieldPresentationType.IMAGE;
         tmp5 = obj;
       }
       return tmp5;
@@ -74,7 +74,7 @@ const items = [obj.STRING];
 const items1 = [obj.NUMBER];
 const items2 = [obj.MEDIA];
 const items3 = [obj.NUMBER];
-let closure_3 = { [require(12006).ApplicationWidgetFieldPresentationType.TEXT]: items, [require(12006).ApplicationWidgetFieldPresentationType.NUMBER]: items1, [require(12006).ApplicationWidgetFieldPresentationType.IMAGE]: items2, [require(12006).ApplicationWidgetFieldPresentationType.DURATION]: items3 };
+let closure_3 = { [require(12007).ApplicationWidgetFieldPresentationType.TEXT]: items, [require(12007).ApplicationWidgetFieldPresentationType.NUMBER]: items1, [require(12007).ApplicationWidgetFieldPresentationType.IMAGE]: items2, [require(12007).ApplicationWidgetFieldPresentationType.DURATION]: items3 };
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedValues.tsx");
 
 export const ResolvedValueType = obj;

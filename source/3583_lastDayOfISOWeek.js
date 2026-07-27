@@ -1,5 +1,5 @@
 // Module ID: 3583
-// Function ID: 27763
+// Function ID: 27764
 // Name: lastDayOfISOWeek
 // Dependencies: [3584, 3211]
 // Exports: default

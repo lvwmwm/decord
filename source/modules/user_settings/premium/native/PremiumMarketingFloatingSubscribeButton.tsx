@@ -1,10 +1,10 @@
-// Module ID: 12460
-// Function ID: 96656
+// Module ID: 12461
+// Function ID: 96661
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [31, 27, 4123, 653, 33, 4131, 689, 1557, 566, 12458, 5482, 666, 3992, 4132, 4555, 8365, 2]
+// Dependencies: [31, 27, 4123, 653, 33, 4131, 689, 1557, 566, 12459, 5482, 666, 3992, 4132, 4555, 8365, 2]
 // Exports: default
 
-// Module 12460 (PremiumMarketingFloatingSubscribeButton)
+// Module 12461 (PremiumMarketingFloatingSubscribeButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

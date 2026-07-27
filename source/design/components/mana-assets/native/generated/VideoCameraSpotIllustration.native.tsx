@@ -1,5 +1,5 @@
 // Module ID: 7528
-// Function ID: 60527
+// Function ID: 60528
 // Name: VideoCameraSpotIllustration
 // Dependencies: [33, 5085, 7529, 2]
 // Exports: VideoCameraSpotIllustration

@@ -1,5 +1,5 @@
 // Module ID: 8113
-// Function ID: 64667
+// Function ID: 64668
 // Name: spotifyUtmParams
 // Dependencies: [653, 4815, 477, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty

@@ -1,10 +1,10 @@
-// Module ID: 11316
-// Function ID: 88010
+// Module ID: 11317
+// Function ID: 88015
 // Name: _downloadPollGif
 // Dependencies: [5, 6088, 2]
 // Exports: downloadPollGif, getFileNameFromGifUrl, getFilePathForGif
 
-// Module 11316 (_downloadPollGif)
+// Module 11317 (_downloadPollGif)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { POLL_ATTACHMENT_FOLDER } from "POLL_ATTACHMENT_FOLDER";
 

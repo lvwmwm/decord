@@ -1,5 +1,5 @@
 // Module ID: 8061
-// Function ID: 64157
+// Function ID: 64158
 // Name: useVideoControls
 // Dependencies: [57, 31, 4123, 33, 621, 682, 8062, 4131, 566, 8054, 8063, 8055, 8064, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded

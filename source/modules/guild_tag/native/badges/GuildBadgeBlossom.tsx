@@ -1,10 +1,10 @@
-// Module ID: 13020
-// Function ID: 100816
+// Module ID: 13021
+// Function ID: 100821
 // Name: items
-// Dependencies: [31, 33, 12987, 8463, 2]
+// Dependencies: [31, 33, 12988, 8463, 2]
 // Exports: GuildBadgeBlossom
 
-// Module 13020 (items)
+// Module 13021 (items)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -29,7 +29,7 @@ export const GuildBadgeBlossom = function GuildBadgeBlossom(primaryTintColor) {
   let obj = { width: 0, height: 0, primaryTintColor: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryTintColor, obj);
-  let obj1 = require(12987) /* getTransformedBadgeColors */;
+  let obj1 = require(12988) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_4, primaryTintColor: primaryTintColor.primaryTintColor, primaryTintLuminances: closure_5, primaryLuminanceWeights: items };
   const primaryColorsTransformed = obj1.getTransformedBadgeColors(obj).primaryColorsTransformed;
   obj = {};

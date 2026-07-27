@@ -1,5 +1,5 @@
 // Module ID: 8049
-// Function ID: 64031
+// Function ID: 64032
 // Name: LEGACY_BADGE_ID_MAP
 // Dependencies: [2]
 

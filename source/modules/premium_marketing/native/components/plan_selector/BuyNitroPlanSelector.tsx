@@ -1,10 +1,10 @@
-// Module ID: 12366
-// Function ID: 96149
+// Module ID: 12367
+// Function ID: 96154
 // Name: BuyNitroPlanSelector
-// Dependencies: [31, 27, 5619, 4114, 482, 33, 4131, 689, 4974, 566, 6511, 12367, 12368, 6616, 1212, 12369, 7596, 7595, 12370, 5616, 477, 2]
+// Dependencies: [31, 27, 5619, 4114, 482, 33, 4131, 689, 4974, 566, 6511, 12368, 12369, 6616, 1212, 12370, 7596, 7595, 12371, 5616, 477, 2]
 // Exports: default
 
-// Module 12366 (BuyNitroPlanSelector)
+// Module 12367 (BuyNitroPlanSelector)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -43,9 +43,9 @@ export default function BuyNitroPlanSelector(planSelection) {
   });
   let obj1 = planSelection(6511);
   const isBuyNitroPurchaseBlocked = obj1.useIsBuyNitroPurchaseBlocked();
-  let obj2 = planSelection(12367);
+  let obj2 = planSelection(12368);
   _isNativeReflectConstruct = obj2.useBuyNitroPlanLabelRenderer();
-  let obj3 = planSelection(12368);
+  let obj3 = planSelection(12369);
   let closure_5 = obj3.useBuyNitroPlanSubLabelRenderer();
   obj = {};
   obj = { style: tmp.header };
@@ -54,7 +54,7 @@ export default function BuyNitroPlanSelector(planSelection) {
   obj1.title = intl.string(planSelection(1212).t.u95Dt4);
   const items1 = [callback(selection(6616), obj1), ];
   obj2 = { selectedTier: selection.tier, setSelectedTier: selection.setTier, disabled: isBuyNitroPurchaseBlocked };
-  items1[1] = callback(selection(12369), obj2);
+  items1[1] = callback(selection(12370), obj2);
   obj.children = items1;
   const items2 = [callback2(isBuyNitroPurchaseBlocked, obj), , ];
   let tmp7 = null != selection.productId;
@@ -82,7 +82,7 @@ export default function BuyNitroPlanSelector(planSelection) {
     const obj5 = {};
     const intl2 = planSelection(1212).intl;
     const obj6 = {};
-    const tmp17 = selection(12370);
+    const tmp17 = selection(12371);
     const obj7 = {};
     const result = stateFromStores.price * closure_5;
     const obj13 = planSelection(5616);

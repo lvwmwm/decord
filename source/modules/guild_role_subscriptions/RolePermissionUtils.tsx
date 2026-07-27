@@ -1,5 +1,5 @@
 // Module ID: 3751
-// Function ID: 28611
+// Function ID: 28612
 // Name: isChannelAccessDeniedBy
 // Dependencies: [1912, 653, 483, 2]
 // Exports: hasViewChannelPermission, isChannelAccessGrantedBy

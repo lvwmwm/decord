@@ -1,10 +1,10 @@
-// Module ID: 14999
-// Function ID: 114364
+// Module ID: 15000
+// Function ID: 114369
 // Name: HappeningNowVoiceCardSubtitle
-// Dependencies: [31, 27, 1348, 653, 33, 4131, 566, 4321, 14245, 8254, 1212, 7917, 9011, 2]
+// Dependencies: [31, 27, 1348, 653, 33, 4131, 566, 4321, 14246, 8254, 1212, 7917, 9011, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 14999 (HappeningNowVoiceCardSubtitle)
+// Module 15000 (HappeningNowVoiceCardSubtitle)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,7 +31,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
   }
   obj.accessibilityLabel = tmp6;
   obj.children = importDefault(4321)(stateFromStores);
-  obj.children = jsx(voiceState(14245).HappeningNowCardSubtitle, { lineClamp: 1 });
+  obj.children = jsx(voiceState(14246).HappeningNowCardSubtitle, { lineClamp: 1 });
   return <View lineClamp={1} />;
 };
 export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCardSubtitle(activity) {
@@ -46,7 +46,7 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
       let tmp3 = trimmed;
     }
     const obj = { lineClamp: 1, children: tmp3 };
-    return jsx(require(14245) /* HAPPENING_NOW_CARD_MARGIN_RIGHT */.HappeningNowCardSubtitle, { lineClamp: 1, children: tmp3 });
+    return jsx(require(14246) /* HAPPENING_NOW_CARD_MARGIN_RIGHT */.HappeningNowCardSubtitle, { lineClamp: 1, children: tmp3 });
   }
   if (null != activity.stream) {
     if (null != activity) {

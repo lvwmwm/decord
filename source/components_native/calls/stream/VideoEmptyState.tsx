@@ -1,10 +1,10 @@
-// Module ID: 10484
-// Function ID: 81336
+// Module ID: 10485
+// Function ID: 81341
 // Name: VideoEmptyState
-// Dependencies: [31, 27, 1348, 653, 33, 4131, 689, 10485, 1273, 1212, 10488, 8784, 566, 4560, 4310, 4195, 4127, 4545, 2]
+// Dependencies: [31, 27, 1348, 653, 33, 4131, 689, 10486, 1273, 1212, 10489, 8784, 566, 4560, 4310, 4195, 4127, 4545, 2]
 // Exports: default
 
-// Module 10484 (VideoEmptyState)
+// Module 10485 (VideoEmptyState)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -48,7 +48,7 @@ export default function VideoEmptyState(arg0) {
     let tmp17 = !removeSplashImage;
     if (tmp17) {
       obj = { style: tmp3.placeholderImage };
-      tmp17 = callback(stream(10485).StreamEnded, obj);
+      tmp17 = callback(stream(10486).StreamEnded, obj);
     }
     const items = [tmp17, ];
     const obj1 = { style: tmp3.placeholderText };
@@ -64,7 +64,7 @@ export default function VideoEmptyState(arg0) {
     let tmp8 = !removeSplashImage;
     if (tmp8) {
       const obj3 = { style: tmp3.placeholderImage };
-      tmp8 = callback(stream(10488).StreamFailed, obj3);
+      tmp8 = callback(stream(10489).StreamFailed, obj3);
     }
     const items1 = [tmp8, ];
     const obj4 = { style: tmp3.placeholderText };

@@ -1,5 +1,5 @@
 // Module ID: 8979
-// Function ID: 70767
+// Function ID: 70768
 // Name: TransferFooter
 // Dependencies: [5, 57, 31, 27, 4145, 653, 33, 4131, 689, 5121, 4544, 1212, 8980, 4127, 8981, 566, 8971, 44, 8978, 4099, 1207, 1273, 7993, 5187, 5186, 5189, 2]
 // Exports: default

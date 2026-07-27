@@ -1,5 +1,5 @@
 // Module ID: 8602
-// Function ID: 68318
+// Function ID: 68319
 // Name: SourceIcon
 // Dependencies: [31, 27, 33, 4131, 689, 3832, 8603, 3843, 8019, 3835, 8605, 1212, 1327, 8623, 2]
 // Exports: default

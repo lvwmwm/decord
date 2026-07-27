@@ -1,10 +1,10 @@
-// Module ID: 10251
-// Function ID: 79319
+// Module ID: 10252
+// Function ID: 79324
 // Name: resetGuildUnreadFlags
 // Dependencies: [662, 1360, 2]
 // Exports: withChannelUnreadFlags, withGuildUnreadFlags
 
-// Module 10251 (resetGuildUnreadFlags)
+// Module 10252 (resetGuildUnreadFlags)
 import MAX_FAVORITES from "MAX_FAVORITES";
 
 let closure_2;

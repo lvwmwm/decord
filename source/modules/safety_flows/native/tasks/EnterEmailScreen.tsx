@@ -1,10 +1,10 @@
-// Module ID: 16623
-// Function ID: 129711
+// Module ID: 16635
+// Function ID: 129758
 // Name: EnterEmailScreen
-// Dependencies: [57, 31, 33, 1456, 16624, 1212, 2461, 16615, 4542, 6670, 2]
+// Dependencies: [57, 31, 33, 1456, 16636, 1212, 2461, 16627, 4542, 6670, 2]
 // Exports: default
 
-// Module 16623 (EnterEmailScreen)
+// Module 16635 (EnterEmailScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";
@@ -29,5 +29,5 @@ export default function EnterEmailScreen() {
   };
   obj = { children: jsx(_require(6670).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
   obj.children = jsx(_require(4542).Stack, { children: jsx(_require(6670).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
-  return jsx(importDefault(16624), { children: jsx(_require(6670).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
+  return jsx(importDefault(16636), { children: jsx(_require(6670).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
 };

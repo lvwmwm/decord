@@ -1,5 +1,5 @@
 // Module ID: 8210
-// Function ID: 65789
+// Function ID: 65790
 // Name: ChannelTypeRow
 // Dependencies: [57, 31, 27, 1352, 1391, 1348, 1838, 3759, 3768, 1850, 653, 6661, 33, 4131, 689, 4639, 4646, 4659, 4655, 4652, 4645, 4637, 4644, 4656, 4654, 4651, 1212, 4127, 1921, 3849, 5164, 7597, 7575, 1273, 5159, 566, 44, 4321, 4949, 8211, 1456, 8212, 4325, 5087, 8214, 6695, 8215, 22, 4313, 4542, 6671, 6676, 5501, 8218, 5502, 4653, 8222, 480, 8238, 5450, 5517, 2]
 // Exports: default
@@ -141,7 +141,7 @@ class CreateChannel {
     useState = undefined;
     c12 = undefined;
     c13 = undefined;
-    f65795 = undefined;
+    f65796 = undefined;
     c15 = undefined;
     c16 = undefined;
     updateName = function updateName(arg0, arg1) {
@@ -182,7 +182,7 @@ class CreateChannel {
     c6 = canResult;
     canResult1 = c12.can(updateName.CONNECT, stateFromStores);
     c7 = canResult1;
-    currentUser = f65795.getCurrentUser();
+    currentUser = f65796.getCurrentUser();
     tmp9 = require("invariant")(null != currentUser, "CreateChannel: user cannot be undefined");
     tmp10 = require("computeDefaultGroupDmNameFromUserIds")(stateFromStores1);
     str = "";
@@ -215,7 +215,7 @@ class CreateChannel {
     c13 = first2;
     tmp23 = tmp21[1];
     tmp24 = tmp21[2];
-    f65795 = tmp24;
+    f65796 = tmp24;
     tmp25 = guildId(onChannelCreated.useState(false), 2);
     first3 = tmp25[0];
     c15 = first3;
@@ -349,12 +349,12 @@ class CreateChannel {
       intl3 = require("getSystemLocale").intl;
       obj4 = {};
       obj11 = require("computeDefaultGroupDmNameFromUserIds");
-      tmp42 = f65795;
+      tmp42 = f65796;
       tmp43 = c13;
       flag = true;
       tmp44 = obj11;
       tmp45 = stateFromStores1;
-      obj4.name = obj11.computeChannelName(stateFromStores1, f65795, c13, true);
+      obj4.name = obj11.computeChannelName(stateFromStores1, f65796, c13, true);
       stringResult1 = intl3.format(require("getSystemLocale").t.s2ZzZZ, obj4);
     }
     obj3.description = stringResult1;

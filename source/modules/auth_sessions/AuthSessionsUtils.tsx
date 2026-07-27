@@ -1,10 +1,10 @@
-// Module ID: 13700
-// Function ID: 105196
+// Module ID: 13701
+// Function ID: 105201
 // Name: useAuthSessions
-// Dependencies: [31, 1194, 13701, 566, 1212, 3713, 2]
+// Dependencies: [31, 1194, 13702, 566, 1212, 3713, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 13700 (useAuthSessions)
+// Module 13701 (useAuthSessions)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

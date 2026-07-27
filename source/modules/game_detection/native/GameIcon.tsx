@@ -1,5 +1,5 @@
 // Module ID: 5472
-// Function ID: 46782
+// Function ID: 46783
 // Name: GameIcon
 // Dependencies: [31, 27, 1852, 33, 4131, 689, 5473, 5474, 5475, 5476, 2]
 

@@ -1,5 +1,5 @@
 // Module ID: 8005
-// Function ID: 63788
+// Function ID: 63789
 // Name: AvatarDecorationSampleV2
 // Dependencies: [31, 27, 33, 4131, 689, 44, 1877, 8006, 7908, 2]
 // Exports: default

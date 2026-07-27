@@ -1,10 +1,10 @@
-// Module ID: 11497
-// Function ID: 89462
+// Module ID: 11498
+// Function ID: 89467
 // Name: ChatBeginningRowIcon
-// Dependencies: [57, 5, 31, 27, 4123, 1347, 6001, 8243, 5067, 5630, 1352, 1391, 1348, 1908, 1918, 1838, 3759, 3768, 4326, 1850, 653, 1355, 11498, 11472, 10383, 33, 4131, 689, 4630, 1212, 4632, 4637, 4639, 4529, 4127, 3828, 3835, 4661, 10855, 1273, 11499, 7627, 9034, 566, 3970, 7685, 3995, 4321, 8215, 5999, 9604, 4067, 4121, 11500, 11501, 44, 21, 11503, 3831, 8242, 4675, 11507, 6837, 8286, 7209, 1921, 11619, 11622, 7633, 4141, 4544, 11626, 4473, 11627, 5470, 10546, 675, 10166, 7673, 5079, 5074, 3832, 4099, 11629, 1935, 5462, 11630, 7923, 8297, 5490, 11631, 8046, 6633, 4338, 11647, 5513, 8850, 8988, 11649, 10384, 11656, 7578, 3982, 6636, 3947, 1334, 10849, 5604, 9026, 10158, 4075, 11660, 11664, 2]
+// Dependencies: [57, 5, 31, 27, 4123, 1347, 6001, 8243, 5067, 5630, 1352, 1391, 1348, 1908, 1918, 1838, 3759, 3768, 4326, 1850, 653, 1355, 11499, 11473, 10384, 33, 4131, 689, 4630, 1212, 4632, 4637, 4639, 4529, 4127, 3828, 3835, 4661, 10856, 1273, 11500, 7627, 9034, 566, 3970, 7685, 3995, 4321, 8215, 5999, 9604, 4067, 4121, 11501, 11502, 44, 21, 11504, 3831, 8242, 4675, 11508, 6837, 8286, 7209, 1921, 11620, 11623, 7633, 4141, 4544, 11627, 4473, 11628, 5470, 10547, 675, 10167, 7673, 5079, 5074, 3832, 4099, 11630, 1935, 5462, 11631, 7923, 8297, 5490, 11632, 8046, 6633, 4338, 11648, 5513, 8850, 8988, 11650, 10385, 11657, 7578, 3982, 6636, 3947, 1334, 10850, 5604, 9026, 10159, 4075, 11661, 11665, 2]
 // Exports: default
 
-// Module 11497 (ChatBeginningRowIcon)
+// Module 11498 (ChatBeginningRowIcon)
 import useIOSCompletionStates from "useIOSCompletionStates";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import TextLockIcon from "TextLockIcon";
@@ -163,7 +163,7 @@ function LinkManageButtons(arg0) {
     const items = [, ];
     ({ ctaButton: arr[0], subtitle: arr[1] } = tmp);
     obj.style = items;
-    const obj1 = { source: importDefault(11499), size: require(1273) /* Button */.IconSizes.REFRESH_SMALL_16, color: token };
+    const obj1 = { source: importDefault(11500), size: require(1273) /* Button */.IconSizes.REFRESH_SMALL_16, color: token };
     const items1 = [callback2(require(1273) /* Button */.Icon, obj1), ];
     const obj2 = { style: null, variant: "text-sm/medium", color: "text-link" };
     const items2 = [, ];
@@ -382,7 +382,7 @@ function ChatBeginningRowGuildNonDefaultChannel(channel) {
     tmp14 = null;
     if (canResult) {
       const obj4 = { channel, guild: channel.guild };
-      tmp14 = callback2(importDefault(11500), obj4);
+      tmp14 = callback2(importDefault(11501), obj4);
     }
   }
   items[2] = tmp14;
@@ -411,7 +411,7 @@ function ChatBeginningRowGuild(guild) {
 function DMSpamButton(channel) {
   channel = channel.channel;
   const user = channel.user;
-  let obj = channel(11622);
+  let obj = channel(11623);
   const dMMessageToReport = obj.useDMMessageToReport(channel, user.id, true === user.bot);
   const message = dMMessageToReport.message;
   if (!channel.showingSpamBanner) {
@@ -448,7 +448,7 @@ function ManageAppButton(application) {
       obj = { size: "sm", variant: "secondary" };
       const intl = application(1212).intl;
       obj.text = intl.string(application(1212).t["5S3sQF"]);
-      obj = { size: application(1273).Icon.Sizes.SMALL, source: importDefault(11626), style: tmp.appDMButtonIcon };
+      obj = { size: application(1273).Icon.Sizes.SMALL, source: importDefault(11627), style: tmp.appDMButtonIcon };
       obj.icon = callback2(application(1273).Icon, obj);
       obj.onPress = function onPress() {
         let obj = application(outer1_2[72]);
@@ -605,7 +605,7 @@ function ChatBeginningRowDM(channel) {
   if (null == id) {
     id = closure_29;
   }
-  const tmp2Result = user(11630)(id);
+  const tmp2Result = user(11631)(id);
   c4 = tmp2Result;
   let obj = channel(566);
   let items = [closure_12];
@@ -631,7 +631,7 @@ function ChatBeginningRowDM(channel) {
     return mutualGuilds;
   }, items2);
   let items3 = [user, channel];
-  const tmp2 = user(11630);
+  const tmp2 = user(11631);
   const effect = authorizedAppsFetchState.useEffect(() => {
     let getAvatarURL;
     let id;
@@ -708,7 +708,7 @@ function ChatBeginningRowDM(channel) {
     let tmp33 = null;
     if (user.isProvisional) {
       let obj9 = { style: tmp.provisionalAccountExplainer, userId: user.id, iconSize: 14 };
-      tmp33 = callback2(channel(11656).ChatProvisionalAccountExplainerCard, obj9);
+      tmp33 = callback2(channel(11657).ChatProvisionalAccountExplainerCard, obj9);
     }
     items5[4] = tmp33;
     items5[5] = (function renderMutualGuilds() {
@@ -977,7 +977,7 @@ function ChatBeginningRowGroupDM(channel) {
     const obj4 = {};
     let tmp22 = null;
     if (stateFromStores) {
-      const obj5 = { style: tmp.gdmInviteFriends, onPress: callback2, IconComponent: channel(10158).GroupPlusIcon, iconVariant: "default" };
+      const obj5 = { style: tmp.gdmInviteFriends, onPress: callback2, IconComponent: channel(10159).GroupPlusIcon, iconVariant: "default" };
       const intl2 = channel(1212).intl;
       obj5.title = intl2.string(channel(1212).t["LR+Ptf"]);
       tmp22 = callback2(ChatBeginningRowButton, obj5);
@@ -1006,7 +1006,7 @@ function ChatBeginningRowGroupDM(channel) {
     let tmp36 = null;
     if (channel.hasFlag(ChannelFlags.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) {
       const obj7 = { channelId: channel.id };
-      tmp36 = callback2(first(11660), obj7);
+      tmp36 = callback2(first(11661), obj7);
     }
     items6[2] = tmp36;
     obj4.children = items6;
@@ -1247,7 +1247,7 @@ export default function ChatBeginningRow(channelId) {
       tmp23 = callback2(closure_7, obj1, channelId);
     }
     obj.children = tmp23;
-    return callback2(importDefault(11664), obj);
+    return callback2(importDefault(11665), obj);
   } else if (THREAD_CHANNEL_TYPES.has(stateFromStores.type)) {
     obj2 = { channel: stateFromStores };
     let tmp7 = callback2(ChatBeginningRowThread, obj2);

@@ -1,5 +1,5 @@
 // Module ID: 9060
-// Function ID: 71193
+// Function ID: 71194
 // Name: createChannelState
 // Dependencies: [621, 682, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive

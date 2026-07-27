@@ -1,11 +1,11 @@
 // Module ID: 11790
-// Function ID: 91509
+// Function ID: 91513
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 11790 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/hub/native/images", width: 48, height: 48, scales: [2, 3], hash: "c0ad0e7adefed3e2ebad52c7f4beb394", name: "progress-setup", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons/empty_channel", width: 32, height: 32, scales: [2, 3], hash: "2a77a373d0891300f53f455e7a8b0efa", name: "personalize_32px", type: "png" };
 
 export default registerAsset.registerAsset(obj);

@@ -1,5 +1,5 @@
 // Module ID: 8218
-// Function ID: 65912
+// Function ID: 65913
 // Name: CreateChannelTypeDescription
 // Dependencies: [31, 27, 8219, 653, 33, 8220, 5131, 4127, 1212, 2]
 // Exports: default

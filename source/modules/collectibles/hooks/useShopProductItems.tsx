@@ -1,5 +1,5 @@
 // Module ID: 7984
-// Function ID: 63634
+// Function ID: 63635
 // Name: ItemsSortingHat
 // Dependencies: [6, 7, 31, 1877, 1212, 2]
 // Exports: getBundleItemNames, useShopProductItems

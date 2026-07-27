@@ -1,5 +1,5 @@
 // Module ID: 8336
-// Function ID: 66868
+// Function ID: 66869
 // Name: getMobileTenureBadgeImages
 // Dependencies: [1852, 8337, 8338, 8339, 8340, 8341, 8342, 8343, 8344, 8345, 8346, 8347, 8348, 8349, 8350, 8351, 8352, 8353, 8354, 8355, 8356, 8357, 8358, 8359, 8360, 2]
 // Exports: useMobileTenureBadgeImages

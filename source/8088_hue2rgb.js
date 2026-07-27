@@ -1,5 +1,5 @@
 // Module ID: 8088
-// Function ID: 64420
+// Function ID: 64421
 // Name: hue2rgb
 // Dependencies: []
 

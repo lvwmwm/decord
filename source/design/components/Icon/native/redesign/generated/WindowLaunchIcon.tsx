@@ -1,5 +1,5 @@
 // Module ID: 10121
-// Function ID: 78362
+// Function ID: 78363
 // Name: WindowLaunchIcon
 // Dependencies: [31, 33, 689, 3834, 10122, 2]
 // Exports: WindowLaunchIcon

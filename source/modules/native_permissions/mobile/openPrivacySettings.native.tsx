@@ -1,5 +1,5 @@
 // Module ID: 4684
-// Function ID: 40832
+// Function ID: 40833
 // Name: openPrivacySettings
 // Dependencies: [27, 477, 4685, 2]
 // Exports: default

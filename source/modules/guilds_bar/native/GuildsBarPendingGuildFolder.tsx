@@ -1,8 +1,8 @@
-// Module ID: 14894
-// Function ID: 113653
-// Dependencies: [31, 3948, 653, 33, 14881, 10921, 566, 14873, 3992, 4100, 5049, 1212, 14880, 11929, 2]
+// Module ID: 14895
+// Function ID: 113658
+// Dependencies: [31, 3948, 653, 33, 14882, 10922, 566, 14874, 3992, 4100, 5049, 1212, 14881, 11930, 2]
 
-// Module 14894
+// Module 14895
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -16,8 +16,8 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   let onAccessibilityAction;
   id = id.id;
   ({ expanded, childNodes } = id);
-  let obj = id(14881);
-  importDefault = importDefault(10921)();
+  let obj = id(14882);
+  importDefault = importDefault(10922)();
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   const items = [_isNativeReflectConstruct];
   const items1 = [id];
@@ -74,11 +74,11 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   let tmp8 = null;
   if (expanded) {
     obj = { folderId: id, totalItems: childNodes.length };
-    tmp8 = jsx(id(14880).GuildsBarGuildFolderBG, { folderId: id, totalItems: childNodes.length });
+    tmp8 = jsx(id(14881).GuildsBarGuildFolderBG, { folderId: id, totalItems: childNodes.length });
   }
   obj.externalChildren = tmp8;
-  obj.children = jsx(id(11929).HourglassIcon, {});
-  return tmp6(importDefault(14881), obj);
+  obj.children = jsx(id(11930).HourglassIcon, {});
+  return tmp6(importDefault(14882), obj);
 });
 let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 5777
-// Function ID: 50699
+// Function ID: 50700
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 102, 18, 1876, 1877, 2]
 // Exports: isProfileFrameRecord

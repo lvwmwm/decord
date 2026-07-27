@@ -1,5 +1,5 @@
 // Module ID: 8805
-// Function ID: 69668
+// Function ID: 69669
 // Name: useIsUserSecureFramesVerified
 // Dependencies: [1194, 4203, 8806, 8843, 566, 8846, 4195, 2]
 // Exports: useIsCallSecureFramesVerified, useIsStreamSecureFramesVerified, useIsUserSecureFramesVerified

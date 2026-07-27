@@ -1,10 +1,10 @@
-// Module ID: 13869
-// Function ID: 106237
+// Module ID: 13870
+// Function ID: 106242
 // Name: formatGiftDate
 // Dependencies: [1212, 3356, 5616, 2199, 2]
 // Exports: getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 13869 (formatGiftDate)
+// Module 13870 (formatGiftDate)
 function formatGiftDate(offeredAt) {
   const dateTimeFormat = new Intl.DateTimeFormat(require(1212) /* getSystemLocale */.intl.currentLocale, { month: "short", day: "numeric" });
   return dateTimeFormat.format(require(3356).parseISO(offeredAt));

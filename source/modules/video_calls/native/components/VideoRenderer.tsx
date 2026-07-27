@@ -1,9 +1,9 @@
-// Module ID: 10491
-// Function ID: 81357
+// Module ID: 10492
+// Function ID: 81362
 // Name: resetIOSScrollZoom
-// Dependencies: [57, 31, 27, 33, 4131, 10492, 10493, 10495, 1450, 477, 8105, 10499, 10500, 10502, 3992, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 10493, 10494, 10496, 1450, 477, 8105, 10500, 10501, 10503, 3992, 2]
 
-// Module 10491 (resetIOSScrollZoom)
+// Module 10492 (resetIOSScrollZoom)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -64,7 +64,7 @@ const memoResult = importAllResult.memo((gestureEnabled) => {
   let closure_13;
   let memo;
   const tmp2 = onReady();
-  let obj = resizeMode(10492);
+  let obj = resizeMode(10493);
   const surfaceDirectRendererExperiment = obj.useSurfaceDirectRendererExperiment(userId, { location: "VideoRenderer" });
   const tmp4 = first1(importAllResult.useState(0), 2);
   first = tmp4[0];
@@ -80,9 +80,9 @@ const memoResult = importAllResult.memo((gestureEnabled) => {
   callback = tmp13;
   [tmp15, c9] = first1(importAllResult.useState(true), 2);
   obj = { location: "VideoRenderer", videoSpinnerContext, userId, streamId, paused, loading: tmp15 };
-  first(10493)(obj);
+  first(10494)(obj);
   obj = { streamId, userId, videoSpinnerContext, paused, loading: tmp15, streamKey };
-  onReady = first(10495)(obj).onReady;
+  onReady = first(10496)(obj).onReady;
   ref = importAllResult.useRef(null);
   ref1 = importAllResult.useRef(null);
   closure_13 = importAllResult.useRef({ width: 0, height: 0 });
@@ -213,7 +213,7 @@ const memoResult = importAllResult.memo((gestureEnabled) => {
   }, items9);
   if (tmp15) {
     const obj1 = { animate: true, style: tmp2.spinner };
-    tmp32 = callback(first(10499), obj1);
+    tmp32 = callback(first(10500), obj1);
   }
   const tmp36 = store === resizeMode(8105).OrientationType.PORTRAIT;
   let obj5 = resizeMode(477);
@@ -226,10 +226,10 @@ const memoResult = importAllResult.memo((gestureEnabled) => {
     obj5 = { width: first, height: first1, alignItems: "center", justifyContent: "center" };
     obj4.style = obj5;
     const obj6 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onSize: callback, onReady: callback1, style: memo2 };
-    const items11 = [callback(first(10502), obj6), tmp32];
+    const items11 = [callback(first(10503), obj6), tmp32];
     obj4.children = items11;
     obj3.children = callback2(first2, obj4);
-    const items12 = [callback(first(10500), obj3), ];
+    const items12 = [callback(first(10501), obj3), ];
     const obj7 = { style: memo5 };
     let tmp64 = null;
     if (!tmp15) {
@@ -251,14 +251,14 @@ const memoResult = importAllResult.memo((gestureEnabled) => {
     let tmp44Result = callback2(tmp58, obj2);
     const tmp57 = callback2;
     const tmp60 = callback;
-    const tmp63 = first(10500);
+    const tmp63 = first(10501);
   } else if (flag) {
     const obj8 = { ref, onLayout: callback2, style: c6.absoluteFillObject, contentContainerStyle: memo4, bounces: false, pinchGestureEnabled: !tmp15, maximumZoomScale: 8, minimumZoomScale: 1, showsVerticalScrollIndicator: false, showsHorizontalScrollIndicator: false, scrollEventThrottle: 16 };
     const obj9 = { collapsable: false, style: memo4, onLayout: callback3 };
     const obj10 = { style: memo3 };
     const obj11 = {};
     const obj12 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onSize: callback, onReady: callback1, style: memo1 };
-    obj11.children = callback(first(10502), obj12);
+    obj11.children = callback(first(10503), obj12);
     const items13 = [callback(first(3992).View, obj11), ];
     let tmp51 = null;
     if (tmp36) {
@@ -290,7 +290,7 @@ const memoResult = importAllResult.memo((gestureEnabled) => {
     const items16 = [tmp2.center, c6.absoluteFillObject];
     obj14.style = items16;
     const obj15 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onSize: callback, onReady: callback1, style: memo1 };
-    const items17 = [callback(first(10502), obj15), tmp32];
+    const items17 = [callback(first(10503), obj15), tmp32];
     obj14.children = items17;
     tmp44Result = callback2(first2, obj14);
   }

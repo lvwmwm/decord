@@ -1,10 +1,10 @@
-// Module ID: 11857
-// Function ID: 91899
+// Module ID: 11858
+// Function ID: 91904
 // Name: GameUpdatePlatformIcon
-// Dependencies: [31, 33, 8115, 11858, 8441, 11860, 11862, 9140, 11864, 2]
+// Dependencies: [31, 33, 8115, 11859, 8441, 11861, 11863, 9140, 11865, 2]
 // Exports: GameUpdatePlatformIcon
 
-// Module 11857 (GameUpdatePlatformIcon)
+// Module 11858 (GameUpdatePlatformIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -21,22 +21,22 @@ export const GameUpdatePlatformIcon = function GameUpdatePlatformIcon(color) {
   color = color.color;
   if (require(8115) /* PlatformType */.PlatformType.DESKTOP === platform) {
     let obj = { size, color };
-    return jsx(require(11858) /* ScreenIcon */.ScreenIcon, { size, color });
+    return jsx(require(11859) /* ScreenIcon */.ScreenIcon, { size, color });
   } else if (require(8115) /* PlatformType */.PlatformType.XBOX === platform) {
     obj = { size, color };
     return jsx(require(8441) /* XboxNeutralIcon */.XboxNeutralIcon, { size, color });
   } else if (require(8115) /* PlatformType */.PlatformType.PLAYSTATION === platform) {
     const obj1 = { size, color };
-    return jsx(require(11860) /* PlaystationNeutralIcon */.PlaystationNeutralIcon, { size, color });
+    return jsx(require(11861) /* PlaystationNeutralIcon */.PlaystationNeutralIcon, { size, color });
   } else if (require(8115) /* PlatformType */.PlatformType.NINTENDO === platform) {
     const obj2 = { size, color };
-    return jsx(require(11862) /* NintendoSwitchNeutralIcon */.NintendoSwitchNeutralIcon, { size, color });
+    return jsx(require(11863) /* NintendoSwitchNeutralIcon */.NintendoSwitchNeutralIcon, { size, color });
   } else if (require(8115) /* PlatformType */.PlatformType.ANDROID === platform) {
     const obj3 = { size, color };
     return jsx(require(9140) /* MobilePhoneIcon */.MobilePhoneIcon, { size, color });
   } else if (require(8115) /* PlatformType */.PlatformType.IOS === platform) {
     obj = { size, color };
-    return jsx(require(11864) /* AppleNeutralIcon */.AppleNeutralIcon, { size, color });
+    return jsx(require(11865) /* AppleNeutralIcon */.AppleNeutralIcon, { size, color });
   } else {
     return null;
   }

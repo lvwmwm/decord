@@ -1,5 +1,5 @@
 // Module ID: 7088
-// Function ID: 59867
+// Function ID: 59868
 // Name: GemLeftUpwards3dIllustration
 // Dependencies: [33, 5085, 7089, 2]
 // Exports: GemLeftUpwards3dIllustration

@@ -1,10 +1,10 @@
-// Module ID: 11555
-// Function ID: 89926
+// Module ID: 11556
+// Function ID: 89931
 // Name: getIconForPerk
-// Dependencies: [4023, 6519, 6575, 9551, 11556, 11558, 6522, 8224, 9861, 9351, 4655, 6572, 2]
+// Dependencies: [4023, 6519, 6575, 9551, 11557, 11559, 6522, 8224, 9861, 9351, 4655, 6572, 2]
 // Exports: getIconForPerk
 
-// Module 11555 (getIconForPerk)
+// Module 11556 (getIconForPerk)
 const result = require("SoundboardIcon").fileFinishedImporting("modules/guild_boosting/native/GuildBoostingMarketingUtils.tsx");
 
 export const getIconForPerk = function getIconForPerk(perkIcon) {
@@ -15,9 +15,9 @@ export const getIconForPerk = function getIconForPerk(perkIcon) {
   } else if (require(4023) /* _createForOfIteratorHelperLoose */.PerkIcons.ANIMATED === perkIcon) {
     return require(9551) /* GifIcon */.GifIcon;
   } else if (require(4023) /* _createForOfIteratorHelperLoose */.PerkIcons.AUDIO === perkIcon) {
-    return require(11556) /* HeadphonesIcon */.HeadphonesIcon;
+    return require(11557) /* HeadphonesIcon */.HeadphonesIcon;
   } else if (require(4023) /* _createForOfIteratorHelperLoose */.PerkIcons.STREAM === perkIcon) {
-    return require(11558) /* ScreenArrowIcon */.ScreenArrowIcon;
+    return require(11559) /* ScreenArrowIcon */.ScreenArrowIcon;
   } else if (require(4023) /* _createForOfIteratorHelperLoose */.PerkIcons.UPLOAD === perkIcon) {
     return require(6522) /* UploadIcon */.UploadIcon;
   } else if (require(4023) /* _createForOfIteratorHelperLoose */.PerkIcons.CUSTOM_ROLE_ICON === perkIcon) {

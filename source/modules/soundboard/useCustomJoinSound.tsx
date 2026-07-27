@@ -1,10 +1,10 @@
-// Module ID: 10719
-// Function ID: 83354
+// Module ID: 10720
+// Function ID: 83359
 // Name: _getCustomJoinSound
 // Dependencies: [1316, 4580, 566, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 10719 (_getCustomJoinSound)
+// Module 10720 (_getCustomJoinSound)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID as closure_3 } from "MAX_LENGTH_SOUND_NAME";
 

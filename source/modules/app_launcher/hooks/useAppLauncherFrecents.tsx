@@ -1,10 +1,10 @@
-// Module ID: 11229
-// Function ID: 87347
+// Module ID: 11230
+// Function ID: 87352
 // Name: useFrecentApps
-// Dependencies: [31, 5067, 1850, 11230, 4156, 4567, 1882, 7962, 566, 5470, 8112, 11231, 7964, 7953, 11232, 2]
+// Dependencies: [31, 5067, 1850, 11231, 4156, 4567, 1882, 7962, 566, 5470, 8112, 11232, 7964, 7953, 11233, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 11229 (useFrecentApps)
+// Module 11230 (useFrecentApps)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";

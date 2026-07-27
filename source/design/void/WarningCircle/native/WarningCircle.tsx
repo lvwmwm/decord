@@ -1,10 +1,10 @@
-// Module ID: 13077
-// Function ID: 101071
+// Module ID: 13078
+// Function ID: 101076
 // Name: WarningCircle
 // Dependencies: [31, 33, 8463, 2]
 // Exports: default
 
-// Module 13077 (WarningCircle)
+// Module 13078 (WarningCircle)
 import "result";
 import { jsx } from "jsxProd";
 

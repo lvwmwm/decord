@@ -1,10 +1,10 @@
-// Module ID: 11124
-// Function ID: 86558
+// Module ID: 11125
+// Function ID: 86563
 // Name: Spoiler
 // Dependencies: [31, 33, 8463, 2]
 // Exports: default
 
-// Module 11124 (Spoiler)
+// Module 11125 (Spoiler)
 import "result";
 import jsxProd from "jsxProd";
 

@@ -1,10 +1,10 @@
-// Module ID: 13961
-// Function ID: 106742
+// Module ID: 13962
+// Function ID: 106747
 // Name: parseSortMethod
-// Dependencies: [57, 31, 10898, 4977, 33, 4131, 689, 1456, 3744, 6448, 13962, 13966, 2]
+// Dependencies: [57, 31, 10899, 4977, 33, 4131, 689, 1456, 3744, 6448, 13963, 13967, 2]
 // Exports: default
 
-// Module 13961 (parseSortMethod)
+// Module 13962 (parseSortMethod)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import zustandStore from "zustandStore";
@@ -72,7 +72,7 @@ export default function QuestHomeSetting() {
     outer2_5.resetState();
   }, []);
   const field = zustandStore.useField("scrollToQuestId");
-  importDefault(13962)({ setSelectedSortMethod: tmp2[1], setSelectedFilters: tmp7, selectedFilters: tmp6, selectedSortMethod: first });
+  importDefault(13963)({ setSelectedSortMethod: tmp2[1], setSelectedFilters: tmp7, selectedFilters: tmp6, selectedSortMethod: first });
   const tmp9 = (function useFinishedNavigating() {
     const navigation = tmp4(outer1_2[7]).useNavigation();
     const tmp2 = outer1_3(outer1_4.useState(false), 2);
@@ -81,7 +81,7 @@ export default function QuestHomeSetting() {
     const effect = outer1_4.useEffect(() => navigation.addListener("transitionEnd", () => outer1_1(true)), items);
     return tmp2[0];
   })();
-  return jsx(importDefault(13966), {
+  return jsx(importDefault(13967), {
     containerStyle: tmp.container,
     isNavigationComplete: (function useFinishedNavigating() {
       const navigation = tmp4(outer1_2[7]).useNavigation();

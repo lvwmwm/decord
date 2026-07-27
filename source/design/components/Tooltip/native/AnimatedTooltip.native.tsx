@@ -1,5 +1,5 @@
 // Module ID: 8370
-// Function ID: 66955
+// Function ID: 66956
 // Name: renderTooltipItem
 // Dependencies: [57, 31, 27, 33, 3992, 8371, 3850, 8373, 8374, 2]
 // Exports: AnimatedTooltip

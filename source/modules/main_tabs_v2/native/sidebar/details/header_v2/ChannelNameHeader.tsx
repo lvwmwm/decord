@@ -1,9 +1,9 @@
-// Module ID: 15479
-// Function ID: 119001
+// Module ID: 15492
+// Function ID: 119050
 // Name: DirectMessageIcon
 // Dependencies: [31, 27, 1348, 1838, 3759, 4218, 1850, 653, 33, 4131, 689, 566, 1273, 4321, 1456, 4139, 4661, 4127, 1212, 4313, 9026, 4594, 8318, 5462, 8297, 2]
 
-// Module 15479 (DirectMessageIcon)
+// Module 15492 (DirectMessageIcon)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

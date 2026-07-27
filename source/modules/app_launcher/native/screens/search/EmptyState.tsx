@@ -1,10 +1,10 @@
-// Module ID: 11219
-// Function ID: 87317
+// Module ID: 11220
+// Function ID: 87322
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4131, 11162, 7955, 1212, 3844, 4127, 2]
+// Dependencies: [31, 27, 33, 4131, 11163, 7955, 1212, 3844, 4127, 2]
 // Exports: default
 
-// Module 11219 (EmptyState)
+// Module 11220 (EmptyState)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = callback();
-  let obj = flag(11162);
+  let obj = flag(11163);
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(7955).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
   const items = [flag];
   const effect = React.useEffect(() => {

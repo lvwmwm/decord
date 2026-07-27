@@ -1,9 +1,9 @@
-// Module ID: 15840
-// Function ID: 122327
+// Module ID: 15852
+// Function ID: 122374
 // Name: MusicMuteButton
-// Dependencies: [57, 31, 27, 4144, 4045, 10639, 1194, 1348, 4178, 3768, 4953, 1850, 9976, 9979, 9974, 4149, 482, 33, 4131, 689, 3992, 4543, 7620, 4533, 5515, 9975, 10762, 566, 10641, 15775, 1212, 10645, 9007, 10646, 4529, 15777, 15841, 4321, 3835, 9982, 4132, 15842, 15800, 15843, 5093, 15844, 8770, 8843, 8805, 3843, 15312, 15845, 8331, 15847, 8858, 669, 15858, 10159, 15868, 15869, 2]
+// Dependencies: [57, 31, 27, 4144, 4045, 10640, 1194, 1348, 4178, 3768, 4953, 1850, 9976, 9979, 9974, 4149, 482, 33, 4131, 689, 3992, 4543, 7620, 4533, 5515, 9975, 10763, 566, 10642, 15787, 1212, 10646, 9007, 10647, 4529, 15789, 15853, 4321, 3835, 9982, 4132, 15854, 15812, 15855, 5093, 15856, 8770, 8843, 8805, 3843, 15325, 15857, 8331, 15859, 8858, 669, 15870, 10160, 15880, 15881, 2]
 
-// Module 15840 (MusicMuteButton)
+// Module 15852 (MusicMuteButton)
 import registerAsset from "registerAsset";
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "initialize";
@@ -33,7 +33,7 @@ const require = arg1;
 function MusicMuteButton(channelId) {
   channelId = channelId.channelId;
   let stateFromStores;
-  const tmp = importDefault(10762)(channelId);
+  const tmp = importDefault(10763)(channelId);
   if (null != tmp) {
     const speaker = tmp.speaker;
   }
@@ -55,7 +55,7 @@ function MusicMuteButton(channelId) {
       }
       obj.accessibilityLabel = stringResult;
       if (stateFromStores) {
-        let tmp13 = 10645;
+        let tmp13 = 10646;
       } else {
         tmp13 = 9007;
       }
@@ -63,10 +63,10 @@ function MusicMuteButton(channelId) {
       obj.onPress = function onPress() {
         return stateFromStores(outer1_2[33]).updateStageMusicMuted(!stateFromStores);
       };
-      closure_23(importDefault(15775), obj);
+      closure_23(importDefault(15787), obj);
       const tmp11 = importDefault;
       const tmp4 = closure_23;
-      const tmp7 = importDefault(15775);
+      const tmp7 = importDefault(15787);
     }
   }
   return tmp3;

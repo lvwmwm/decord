@@ -1,5 +1,5 @@
 // Module ID: 9561
-// Function ID: 74648
+// Function ID: 74649
 // Name: useStickerPickerStore
 // Dependencies: [621, 682, 2]
 

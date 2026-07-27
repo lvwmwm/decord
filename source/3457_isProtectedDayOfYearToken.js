@@ -1,5 +1,5 @@
 // Module ID: 3457
-// Function ID: 26809
+// Function ID: 26810
 // Name: isProtectedDayOfYearToken
 // Dependencies: []
 

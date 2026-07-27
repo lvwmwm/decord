@@ -1,10 +1,10 @@
-// Module ID: 15223
-// Function ID: 115927
+// Module ID: 15236
+// Function ID: 115976
 // Name: ForYouSuggestedFriendRow
-// Dependencies: [31, 27, 4123, 3768, 653, 33, 4131, 10223, 689, 477, 5462, 4550, 624, 8297, 1935, 3970, 14968, 1212, 3992, 15224, 4661, 15225, 1273, 4127, 15226, 15227, 675, 2]
+// Dependencies: [31, 27, 4123, 3768, 653, 33, 4131, 10224, 689, 477, 5462, 4550, 624, 8297, 1935, 3970, 14969, 1212, 3992, 15237, 4661, 15238, 1273, 4127, 15239, 15240, 675, 2]
 // Exports: default
 
-// Module 15223 (ForYouSuggestedFriendRow)
+// Module 15236 (ForYouSuggestedFriendRow)
 import result from "result";
 import { View } from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -22,9 +22,9 @@ const require = arg1;
 ({ AnalyticEvents: closure_7, RelationshipTypes: closure_8 } = ME);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
 let closure_12 = _createForOfIteratorHelperLoose.createStyles((layout) => {
-  let obj = require(10223) /* getLayoutStyles */;
+  let obj = require(10224) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
-  let obj1 = require(10223) /* getLayoutStyles */;
+  let obj1 = require(10224) /* getLayoutStyles */;
   const sizeStyle = obj1.makeSizeStyle(layoutStyles.icon.wrapper.size);
   obj = {};
   obj = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_MUTED };
@@ -59,11 +59,11 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
   let analyticsLocations;
   let sharedValue;
   let stateFromStores;
-  let obj = suggestedFriend(10223);
+  let obj = suggestedFriend(10224);
   const messagesTabLayout = obj.useMessagesTabLayout(panelVariant);
   const tmp2 = callback2(messagesTabLayout);
   analyticsLocations = importDefault(5462)().analyticsLocations;
-  let obj1 = suggestedFriend(10223);
+  let obj1 = suggestedFriend(10224);
   const layoutStyles = obj1.getLayoutStyles(messagesTabLayout);
   let obj2 = suggestedFriend(4550);
   const fontScale = obj2.useFontScale();
@@ -75,7 +75,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
     if (suggestedFriend.friendSuggestionName.length > 0) {
       let friendSuggestionName = suggestedFriend.friendSuggestionName;
     }
-    let obj5 = suggestedFriend(14968);
+    let obj5 = suggestedFriend(14969);
     const suggestedContactNameForSuggestion = obj5.getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
     let str2 = "";
     if (null != suggestedContactNameForSuggestion) {
@@ -99,7 +99,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
           const result = sharedValue.set(false);
         }
       }, items3);
-      let obj10 = suggestedFriend(15224);
+      let obj10 = suggestedFriend(15237);
       obj = { accessibilityRole: "button", underlayColor: tmp2.rowActive.backgroundColor, onPress: tmp6 };
       const items4 = [tmp2.pressable, ];
       obj1 = { borderRadius: layoutStyles.container.borderRadius };
@@ -115,7 +115,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       const items6 = [callback(suggestedFriend(4127).Text, obj6), ];
       const obj7 = {};
       obj8 = {};
-      const obj14 = suggestedFriend(15225);
+      const obj14 = suggestedFriend(15238);
       const tmp26 = closure_11;
       let num13 = 0;
       if (obj22.isAndroid()) {
@@ -139,7 +139,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       const intl2 = suggestedFriend(1212).intl;
       obj9.actionStatus = intl2.string(suggestedFriend(1212).t.Kzyxm9);
       obj9.animate = !stateFromStoresObject;
-      obj7.children = tmp28(suggestedFriend(15226).ActionStatusSubLabel, obj9);
+      obj7.children = tmp28(suggestedFriend(15239).ActionStatusSubLabel, obj9);
       items6[1] = callback(sharedValue, obj7);
       obj5.children = items6;
       items5[1] = closure_10(sharedValue, obj5);
@@ -161,7 +161,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
         callback2(suggestedFriend);
       };
       obj10.animate = !stateFromStoresObject;
-      items5[2] = tmp34(suggestedFriend(15227).ContactSuggestionActions, obj10);
+      items5[2] = tmp34(suggestedFriend(15240).ContactSuggestionActions, obj10);
       obj2.children = items5;
       const obj11 = { layout: messagesTabLayout, fontScale, panelVariant };
       obj.children = obj14.renderChannelWrapper(closure_10(tmp26, obj2), obj11);

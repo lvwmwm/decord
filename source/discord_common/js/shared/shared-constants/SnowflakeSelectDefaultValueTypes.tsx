@@ -1,5 +1,5 @@
 // Module ID: 7841
-// Function ID: 62584
+// Function ID: 62585
 // Name: SnowflakeSelectDefaultValueTypes
 // Dependencies: [2]
 

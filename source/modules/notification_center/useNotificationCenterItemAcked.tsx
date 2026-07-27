@@ -1,10 +1,10 @@
-// Module ID: 15203
-// Function ID: 115860
+// Module ID: 15216
+// Function ID: 115909
 // Name: useNotificationCenterItemAcked
-// Dependencies: [15196, 566, 5874, 2]
+// Dependencies: [15209, 566, 5874, 2]
 // Exports: useNotificationCenterItemAcked
 
-// Module 15203 (useNotificationCenterItemAcked)
+// Module 15216 (useNotificationCenterItemAcked)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,5 +1,5 @@
 // Module ID: 5920
-// Function ID: 52614
+// Function ID: 52615
 // Name: LinkType
 // Dependencies: [2]
 

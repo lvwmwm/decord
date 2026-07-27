@@ -1,5 +1,5 @@
 // Module ID: 6711
-// Function ID: 59240
+// Function ID: 59241
 // Name: useIsAgeVerificationIncodeEnabled
 // Dependencies: [1428, 2]
 // Exports: isAgeVerificationIncodeEnabled, useIsAgeVerificationIncodeEnabled

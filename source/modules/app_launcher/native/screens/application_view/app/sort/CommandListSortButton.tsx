@@ -1,10 +1,10 @@
-// Module ID: 11263
-// Function ID: 87550
+// Module ID: 11264
+// Function ID: 87555
 // Name: CommandListSortButton
-// Dependencies: [31, 27, 11249, 1277, 33, 4131, 689, 1212, 4661, 4099, 11264, 1935, 4127, 8330, 2]
+// Dependencies: [31, 27, 11250, 1277, 33, 4131, 689, 1212, 4661, 4099, 11265, 1935, 4127, 8330, 2]
 // Exports: default
 
-// Module 11263 (CommandListSortButton)
+// Module 11264 (CommandListSortButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import { CommandListSortOrder } from "CommandListSortOrder";

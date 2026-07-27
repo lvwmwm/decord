@@ -1,5 +1,5 @@
 // Module ID: 6602
-// Function ID: 58435
+// Function ID: 58436
 // Name: BuyNitroPlanPriceDetails
 // Dependencies: [31, 27, 5619, 1852, 482, 33, 4131, 689, 566, 5616, 4127, 1212, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 12118
-// Function ID: 94933
+// Module ID: 12119
+// Function ID: 94938
 // Name: UserProfileGameFriendsCard
-// Dependencies: [31, 33, 4131, 5468, 1212, 11657, 5509, 4127, 2]
+// Dependencies: [31, 33, 4131, 5468, 1212, 11658, 5509, 4127, 2]
 // Exports: default
 
-// Module 12118 (UserProfileGameFriendsCard)
+// Module 12119 (UserProfileGameFriendsCard)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -30,7 +30,7 @@ export default function UserProfileGameFriendsCard(arg0) {
       const intl2 = found(1212).intl;
       let obj = {
         applicationName() {
-              return lib(textmdnormal(11657), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
+              return lib(textmdnormal(11658), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
             }
       };
       let formatResult = intl2.format(found(1212).t.wQ6urw, obj);
@@ -38,10 +38,10 @@ export default function UserProfileGameFriendsCard(arg0) {
       const intl = found(1212).intl;
       obj = {
         applicationName() {
-              return lib(textmdnormal(11657), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
+              return lib(textmdnormal(11658), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
             },
         applicationName2() {
-              return lib(textmdnormal(11657), { application: found[1], textVariant: textmdnormal, iconSize: 16 }, found[1].id);
+              return lib(textmdnormal(11658), { application: found[1], textVariant: textmdnormal, iconSize: 16 }, found[1].id);
             }
       };
       formatResult = intl.format(found(1212).t.C98CSN, obj);
@@ -54,7 +54,7 @@ export default function UserProfileGameFriendsCard(arg0) {
               return lib.map((application) => callback2(callback(table[5]), { application, useComma: true, textVariant: outer1_1, iconSize: 16 }, application.id));
             },
         applicationNameLast() {
-              return lib(textmdnormal(11657), { application: dependencyMap, textVariant: textmdnormal, iconSize: 16 });
+              return lib(textmdnormal(11658), { application: dependencyMap, textVariant: textmdnormal, iconSize: 16 });
             }
       };
       formatResult = intl4.format(found(1212).t.UxpwAh, obj);

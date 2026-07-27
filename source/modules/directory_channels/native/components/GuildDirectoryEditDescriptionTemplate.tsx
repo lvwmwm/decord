@@ -1,5 +1,5 @@
 // Module ID: 10008
-// Function ID: 77456
+// Function ID: 77457
 // Name: GuildDirectoryEditDescriptionTemplate
 // Dependencies: [5, 57, 31, 27, 10003, 9996, 33, 4131, 566, 4031, 7585, 1212, 7596, 7595, 4544, 2]
 // Exports: default

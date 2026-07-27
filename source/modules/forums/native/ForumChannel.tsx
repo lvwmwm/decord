@@ -1,10 +1,10 @@
-// Module ID: 11798
-// Function ID: 91539
+// Module ID: 11799
+// Function ID: 91544
 // Name: forumKeyExtractor
-// Dependencies: [31, 27, 3760, 5041, 1348, 4469, 4947, 11115, 653, 1277, 482, 33, 4131, 689, 5053, 477, 8756, 4127, 1212, 9065, 6012, 566, 11799, 14, 4099, 11801, 1935, 1324, 4544, 11265, 4661, 8330, 11802, 6596, 9069, 11803, 4321, 11141, 11114, 11804, 6619, 6026, 4663, 3832, 6493, 5996, 5462, 5482, 4620, 10399, 9067, 6036, 9502, 9521, 4100, 4101, 9519, 9073, 5159, 10397, 8181, 11807, 11377, 2]
+// Dependencies: [31, 27, 3760, 5041, 1348, 4469, 4947, 11116, 653, 1277, 482, 33, 4131, 689, 5053, 477, 8756, 4127, 1212, 9065, 6012, 566, 11800, 14, 4099, 11802, 1935, 1324, 4544, 11266, 4661, 8330, 11803, 6596, 9069, 11804, 4321, 11142, 11115, 11805, 6619, 6026, 4663, 3832, 6493, 5996, 5462, 5482, 4620, 10400, 9067, 6036, 9502, 9521, 4100, 4101, 9519, 9073, 5159, 10398, 8181, 11808, 11378, 2]
 // Exports: default
 
-// Module 11798 (forumKeyExtractor)
+// Module 11799 (forumKeyExtractor)
 import ChevronSmallDownIcon from "ChevronSmallDownIcon";
 import { View } from "useIsMobileVisualRefreshExperimentEnabled";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -115,7 +115,7 @@ function SortAndViewOptions(channel) {
     obj.text = string3Result;
     obj.onPress = ArrowsUpDownIcon;
     obj.size = "sm";
-    ArrowsUpDownIcon = id(11265).ArrowsUpDownIcon;
+    ArrowsUpDownIcon = id(11266).ArrowsUpDownIcon;
     obj = {};
     str4 = "xxs";
     obj.size = "xxs";
@@ -138,7 +138,7 @@ function SortAndViewOptions(channel) {
     obj.onPress = ArrowsUpDownIcon;
     const obj1 = { style: tmp.optionsPill };
     const obj2 = { size: "xs", style: tmp.sortOptionsIcon };
-    const items1 = [callback(id(11265).ArrowsUpDownIcon, obj2), , ];
+    const items1 = [callback(id(11266).ArrowsUpDownIcon, obj2), , ];
     const obj3 = { variant: "text-sm/medium", color: "interactive-text-default", style: tmp.sortOptionsText };
     const intl2 = id(1212).intl;
     const string2 = intl2.string;

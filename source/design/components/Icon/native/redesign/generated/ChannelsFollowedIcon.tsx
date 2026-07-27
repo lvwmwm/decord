@@ -1,10 +1,10 @@
-// Module ID: 15580
-// Function ID: 120151
+// Module ID: 15592
+// Function ID: 120198
 // Name: ChannelsFollowedIcon
-// Dependencies: [31, 33, 689, 3834, 15581, 2]
+// Dependencies: [31, 33, 689, 3834, 15593, 2]
 // Exports: ChannelsFollowedIcon
 
-// Module 15580 (ChannelsFollowedIcon)
+// Module 15592 (ChannelsFollowedIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ChannelsFollowedIcon = function ChannelsFollowedIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(15581) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(15593) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(15581) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(15593) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

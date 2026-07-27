@@ -1,5 +1,5 @@
 // Module ID: 8051
-// Function ID: 64043
+// Function ID: 64044
 // Name: isUserProfilePerformanceAnalyticsEnabled
 // Dependencies: [1428, 2]
 // Exports: isUserProfilePerformanceAnalyticsEnabled

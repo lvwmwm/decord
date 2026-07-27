@@ -1,10 +1,10 @@
-// Module ID: 10803
-// Function ID: 83785
+// Module ID: 10804
+// Function ID: 83790
 // Name: RootThemeContextProvider
 // Dependencies: [31, 482, 33, 3843, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 10803 (RootThemeContextProvider)
+// Module 10804 (RootThemeContextProvider)
 import result from "result";
 import { ThemeTypes } from "sum";
 import { jsx } from "jsxProd";

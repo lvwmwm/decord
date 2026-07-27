@@ -1,10 +1,10 @@
-// Module ID: 13044
-// Function ID: 100937
+// Module ID: 13045
+// Function ID: 100942
 // Name: GuildActionSheetProgress
-// Dependencies: [31, 33, 4131, 689, 11503, 5166, 13045, 2]
+// Dependencies: [31, 33, 4131, 689, 11504, 5166, 13046, 2]
 // Exports: default
 
-// Module 13044 (GuildActionSheetProgress)
+// Module 13045 (GuildActionSheetProgress)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -23,7 +23,7 @@ export default function GuildActionSheetProgress(guild) {
   let dismissed;
   guild = guild.guild;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11503) /* useIOSCompletionStates */;
+  let obj = require(11504) /* useIOSCompletionStates */;
   const iOSCompletionStates = obj.useIOSCompletionStates(guild);
   ({ completed, dismissed } = iOSCompletionStates);
   let tmp3 = null;
@@ -34,7 +34,7 @@ export default function GuildActionSheetProgress(guild) {
       if (dismissed) {
         obj = { style: tmp.cardStyle };
         obj = { guild, titleStyle: tmp.title, longPressDisabled: true, resume: true };
-        obj.children = jsx(importDefault(13045), { guild, titleStyle: tmp.title, longPressDisabled: true, resume: true });
+        obj.children = jsx(importDefault(13046), { guild, titleStyle: tmp.title, longPressDisabled: true, resume: true });
         tmp3 = jsx(require(5166) /* getCardBackgroundToken */.Card, { guild, titleStyle: tmp.title, longPressDisabled: true, resume: true });
       }
     }

@@ -1,5 +1,5 @@
 // Module ID: 4962
-// Function ID: 42665
+// Function ID: 42666
 // Name: getHighestHoistedRole
 // Dependencies: [1918, 1838, 3764, 566, 2]
 // Exports: default

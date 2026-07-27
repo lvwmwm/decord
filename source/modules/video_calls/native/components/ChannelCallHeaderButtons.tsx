@@ -1,10 +1,10 @@
-// Module ID: 10763
-// Function ID: 83519
+// Module ID: 10764
+// Function ID: 83524
 // Name: CameraButton
-// Dependencies: [31, 4178, 33, 566, 10659, 1212, 10764, 8770, 10175, 10176, 10765, 4324, 2]
+// Dependencies: [31, 4178, 33, 566, 10660, 1212, 10765, 8770, 10176, 10177, 10766, 4324, 2]
 // Exports: CameraButton, GridButton
 
-// Module 10763 (CameraButton)
+// Module 10764 (CameraButton)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -24,7 +24,7 @@ export const CameraButton = function CameraButton() {
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["t9eQ/g"]);
-    obj.source = importDefault(10764);
+    obj.source = importDefault(10765);
     obj.onPress = function onPress() {
       const keys = Object.keys(closure_1);
       const found = keys.find((arg0) => arg0 !== outer1_0);
@@ -34,27 +34,27 @@ export const CameraButton = function CameraButton() {
       }
     };
     obj.disableBackground = true;
-    tmp2 = jsx(importDefault(10659), {});
-    const tmp6 = importDefault(10659);
+    tmp2 = jsx(importDefault(10660), {});
+    const tmp6 = importDefault(10660);
   }
   return tmp2;
 };
 export const GridButton = function GridButton(channel) {
   channel = channel.channel;
   let tmp2 = null;
-  if (null != importDefault(10176)(channel)) {
+  if (null != importDefault(10177)(channel)) {
     tmp2 = null;
     if (!tmp) {
       const obj = {};
       const intl = channel(1212).intl;
       obj.accessibilityLabel = intl.string(channel(1212).t.HK4JIu);
-      obj.source = importDefault(10765);
+      obj.source = importDefault(10766);
       obj.onPress = function onPress() {
         return outer1_1(outer1_2[11]).selectParticipant(channel.id, null);
       };
       obj.disableBackground = true;
-      tmp2 = jsx(importDefault(10659), {});
-      const tmp6 = importDefault(10659);
+      tmp2 = jsx(importDefault(10660), {});
+      const tmp6 = importDefault(10660);
     }
   }
   return tmp2;

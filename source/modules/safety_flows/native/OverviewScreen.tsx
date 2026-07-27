@@ -1,10 +1,10 @@
-// Module ID: 16619
-// Function ID: 129690
+// Module ID: 16631
+// Function ID: 129737
 // Name: OverviewScreen
-// Dependencies: [31, 33, 4131, 16620, 1456, 16621, 6725, 6726, 4542, 689, 4127, 1212, 2461, 5501, 7561, 16615, 11057, 16622, 9865, 2]
+// Dependencies: [31, 33, 4131, 16632, 1456, 16633, 6725, 6726, 4542, 689, 4127, 1212, 2461, 5501, 7561, 16627, 11058, 16634, 9865, 2]
 // Exports: default
 
-// Module 16619 (OverviewScreen)
+// Module 16631 (OverviewScreen)
 import result from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,7 +18,7 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 
 export default function OverviewScreen() {
   let tmp = callback3();
-  let obj = task(16620);
+  let obj = task(16632);
   task = obj.useSafetyFlowTask().task;
   let obj1 = task(1456);
   const navigation = obj1.useNavigation();
@@ -72,14 +72,14 @@ export default function OverviewScreen() {
   obj.children = callback2(task(4542).Stack, obj1);
   const items3 = [callback(task(6726).ModalContent, obj), ];
   const obj7 = {};
-  const items4 = [callback(navigation(16622), {}), ];
+  const items4 = [callback(navigation(16634), {}), ];
   const obj8 = { variant: "primary" };
   const intl4 = task(1212).intl;
   obj8.text = intl4.string(navigation(2461).Ks6opt);
   obj8.onPress = callback;
   items4[1] = callback(task(9865).ModalActionButton, obj8);
   obj7.children = items4;
-  items3[1] = callback2(task(11057).ModalFooter, obj7);
+  items3[1] = callback2(task(11058).ModalFooter, obj7);
   obj.children = items3;
   return callback2(task(6725).ModalScreen, obj);
 };

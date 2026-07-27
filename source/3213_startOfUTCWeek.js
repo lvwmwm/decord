@@ -1,5 +1,5 @@
 // Module ID: 3213
-// Function ID: 25842
+// Function ID: 25843
 // Name: startOfUTCWeek
 // Dependencies: [3210, 3211, 3214, 3215]
 // Exports: default

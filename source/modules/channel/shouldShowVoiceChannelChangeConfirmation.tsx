@@ -1,10 +1,10 @@
-// Module ID: 12354
-// Function ID: 96097
+// Module ID: 12355
+// Function ID: 96102
 // Name: shouldShowVoiceChannelChangeConfirmation
 // Dependencies: [4145, 1280, 1194, 1838, 4147, 2]
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
-// Module 12354 (shouldShowVoiceChannelChangeConfirmation)
+// Module 12355 (shouldShowVoiceChannelChangeConfirmation)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";

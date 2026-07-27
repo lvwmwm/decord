@@ -1,10 +1,10 @@
-// Module ID: 14510
-// Function ID: 110829
+// Module ID: 14511
+// Function ID: 110834
 // Name: Sample
-// Dependencies: [57, 31, 27, 33, 4131, 689, 5166, 4542, 6670, 4648, 13145, 5187, 5186, 7585, 4127, 4639, 6671, 9171, 6625, 8943, 6676, 4544, 4099, 9144, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 5166, 4542, 6670, 4648, 13146, 5187, 5186, 7585, 4127, 4639, 6671, 9171, 6625, 8943, 6676, 4544, 4099, 9144, 2]
 // Exports: default
 
-// Module 14510 (Sample)
+// Module 14511 (Sample)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -76,7 +76,7 @@ function GhostInputUsername(defaultValue) {
     }
     closure_0(str);
   };
-  return closure_6(_require(13145).GhostInput, obj);
+  return closure_6(_require(13146).GhostInput, obj);
 }
 function GhostInputActionSheet() {
   let obj = {};

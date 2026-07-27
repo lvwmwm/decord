@@ -1,5 +1,5 @@
 // Module ID: 4248
-// Function ID: 37351
+// Function ID: 37352
 // Name: copyObject
 // Dependencies: [781, 4249]
 

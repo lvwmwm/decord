@@ -1,5 +1,5 @@
 // Module ID: 9661
-// Function ID: 75264
+// Function ID: 75265
 // Name: usePropsErrorBoundary
 // Dependencies: [31]
 // Exports: usePropsErrorBoundary

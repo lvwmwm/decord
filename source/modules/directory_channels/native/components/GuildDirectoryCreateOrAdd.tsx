@@ -1,5 +1,5 @@
 // Module ID: 10002
-// Function ID: 77366
+// Function ID: 77367
 // Name: GuildDirectoryCreateOrAddHeader
 // Dependencies: [57, 31, 27, 10003, 10001, 33, 4131, 689, 566, 5164, 5513, 10004, 8162, 1212, 4127, 8687, 1557, 4544, 1456, 5122, 10009, 10000, 2]
 // Exports: default

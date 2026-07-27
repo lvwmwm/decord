@@ -1,9 +1,9 @@
-// Module ID: 16592
-// Function ID: 129465
+// Module ID: 16604
+// Function ID: 129512
 // Name: AVErrorStreamSendLowFPSDefinition
-// Dependencies: [4144, 4150, 4217, 653, 664, 4195, 16589, 8783, 8784, 16586, 2]
+// Dependencies: [4144, 4150, 4217, 653, 664, 4195, 16601, 8783, 8784, 16598, 2]
 
-// Module 16592 (AVErrorStreamSendLowFPSDefinition)
+// Module 16604 (AVErrorStreamSendLowFPSDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -43,7 +43,7 @@ export const AVErrorStreamSendLowFPSDefinition = {
                 if (null == participant) {
                   return null;
                 } else {
-                  const accumulatedStatsWithMinDatapoints = require(16589) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
+                  const accumulatedStatsWithMinDatapoints = require(16601) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
                   if (null == accumulatedStatsWithMinDatapoints) {
                     return null;
                   } else {
@@ -52,21 +52,21 @@ export const AVErrorStreamSendLowFPSDefinition = {
                     if (null != maxQuality) {
                       if (accumulatedStatsWithMinDatapoints.short.frameRate < obj2.getWarningFrameRate(maxQuality.maxFrameRate)) {
                         obj = { type: require(8784) /* validateUniqueErrorCodes */.AVError.STREAM_SEND_LOW_FPS };
-                        const obj5 = require(16586) /* getCommonErrorContext */;
+                        const obj5 = require(16598) /* getCommonErrorContext */;
                         const merged = Object.assign(obj5.getStreamErrorContext(require(4195) /* isStreamKey */.encodeStreamKey(currentUserActiveStream)));
                         const items = [obj];
                         let tmp12 = items;
                         const obj6 = require(4195) /* isStreamKey */;
                       } else {
                         tmp12 = null;
-                        const obj3 = require(16589) /* getReportInboundErrors */;
+                        const obj3 = require(16601) /* getReportInboundErrors */;
                       }
                       tmp17 = tmp12;
-                      obj2 = require(16589) /* getReportInboundErrors */;
+                      obj2 = require(16601) /* getReportInboundErrors */;
                     }
                     return tmp17;
                   }
-                  const obj9 = require(16589) /* getReportInboundErrors */;
+                  const obj9 = require(16601) /* getReportInboundErrors */;
                 }
               } else {
                 return null;

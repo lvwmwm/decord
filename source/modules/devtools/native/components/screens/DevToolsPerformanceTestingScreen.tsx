@@ -1,8 +1,8 @@
-// Module ID: 14754
-// Function ID: 112507
-// Dependencies: [31, 27, 33, 4131, 689, 1456, 1557, 5501, 13570, 5164, 13567, 2]
+// Module ID: 14755
+// Function ID: 112512
+// Dependencies: [31, 27, 33, 4131, 689, 1456, 1557, 5501, 13571, 5164, 13568, 2]
 
-// Module 14754
+// Module 14755
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -20,7 +20,7 @@ const memoResult = require("result").memo(function DevToolsPerformanceTestingScr
   obj = { paddingBottom: importDefault(1557)().bottom + importDefault(689).space.PX_16 };
   obj.contentContainerStyle = obj;
   const obj1 = { hasIcons: true };
-  const entries = Object.entries(_require(13570).PerformanceTestingScreens);
+  const entries = Object.entries(_require(13571).PerformanceTestingScreens);
   obj1.children = entries.map((arg0) => {
     let tmp;
     [tmp, ] = arg0;

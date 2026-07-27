@@ -1,5 +1,5 @@
 // Module ID: 8204
-// Function ID: 65743
+// Function ID: 65744
 // Name: canManageResource
 // Dependencies: [57, 31, 3759, 1850, 8203, 482, 483, 1387, 566, 2]
 // Exports: getManageResourcePermissions, useManageResourcePermissions

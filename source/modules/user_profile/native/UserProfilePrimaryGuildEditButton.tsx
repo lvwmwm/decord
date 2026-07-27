@@ -1,10 +1,10 @@
-// Module ID: 13668
-// Function ID: 104993
+// Module ID: 13669
+// Function ID: 104998
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [31, 1838, 7665, 33, 4131, 689, 566, 13669, 7880, 7881, 1212, 477, 4127, 13651, 4099, 13670, 1935, 5513, 8384, 2]
+// Dependencies: [31, 1838, 7665, 33, 4131, 689, 566, 13670, 7880, 7881, 1212, 477, 4127, 13652, 4099, 13671, 1935, 5513, 8384, 2]
 // Exports: default
 
-// Module 13668 (UserProfilePrimaryGuildEditButton)
+// Module 13669 (UserProfilePrimaryGuildEditButton)
 import "result";
 import closure_3 from "_createForOfIteratorHelperLoose";
 import { GuildTagBadgeSize } from "items";

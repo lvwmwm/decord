@@ -1,5 +1,5 @@
 // Module ID: 4462
-// Function ID: 39346
+// Function ID: 39347
 // Name: _callSuper
 // Dependencies: [5, 15, 17, 18, 6, 7, 653, 482, 4453, 4458, 507, 2]
 
@@ -171,10 +171,10 @@ let tmp4 = ((arg0) => {
     constructor(arg0, arg1) {
       tmp = outer1_7(this, StripePaymentConfirmationHandler);
       if (null == arg0) {
-        tmp7 = f39381;
-        tmp8 = f39375;
+        tmp7 = f39382;
+        tmp8 = f39376;
         num2 = 8;
-        obj2 = f39381(f39375[8]);
+        obj2 = f39382(f39376[8]);
         str2 = "Payment source cannot be null on a redirect.";
         throw obj2.dispatchConfirmationError("Payment source cannot be null on a redirect.");
       } else {
@@ -196,10 +196,10 @@ let tmp4 = ((arg0) => {
             tmp5 = outer1_12;
             tmp12.handlerRegistry = outer1_12[tmp12.paymentSourceType];
           } else {
-            tmp3 = f39381;
-            tmp4 = f39375;
+            tmp3 = f39382;
+            tmp4 = f39376;
             num = 8;
-            obj = f39381(f39375[8]);
+            obj = f39382(f39376[8]);
             str = "Invalid Payment Source Type - redirect or direct confirmation handlers not found.";
             throw obj.dispatchConfirmationError("Invalid Payment Source Type - redirect or direct confirmation handlers not found.");
           }

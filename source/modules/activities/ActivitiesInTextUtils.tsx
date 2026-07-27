@@ -1,5 +1,5 @@
 // Module ID: 7952
-// Function ID: 63248
+// Function ID: 63249
 // Name: isActivityInTextSupportedForChannel
 // Dependencies: [1348, 3759, 482, 669, 566, 2]
 // Exports: isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled

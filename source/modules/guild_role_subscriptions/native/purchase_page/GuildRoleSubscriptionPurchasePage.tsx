@@ -1,10 +1,10 @@
-// Module ID: 15319
-// Function ID: 116906
+// Module ID: 15332
+// Function ID: 116955
 // Name: Separator
-// Dependencies: [31, 27, 1278, 1348, 1838, 653, 33, 4131, 689, 4127, 1212, 1273, 10674, 14160, 14162, 14163, 624, 15320, 4321, 15322, 15323, 15324, 4594, 5085, 5513, 15325, 9361, 15327, 15328, 3828, 15329, 2]
+// Dependencies: [31, 27, 1278, 1348, 1838, 653, 33, 4131, 689, 4127, 1212, 1273, 10675, 14161, 14163, 14164, 624, 15333, 4321, 15335, 15336, 15337, 4594, 5085, 5513, 15338, 9361, 15340, 15341, 3828, 15342, 2]
 // Exports: default
 
-// Module 15319 (Separator)
+// Module 15332 (Separator)
 import "set";
 import get_ActivityIndicator from "registerAsset";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -54,7 +54,7 @@ function SocialBadge(onPress) {
   obj = { variant: "text-sm/medium", color: "text-default", children: text };
   items[1] = callback(require(4127) /* Text */.Text, obj);
   if (tmp2) {
-    const obj1 = { source: importDefault(10674), style: tmp.socialBadgeArrow };
+    const obj1 = { source: importDefault(10675), style: tmp.socialBadgeArrow };
     tmp2 = callback(require(1273) /* Button */.Icon, obj1);
   }
   items[2] = tmp2;

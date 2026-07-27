@@ -1,10 +1,10 @@
-// Module ID: 16343
-// Function ID: 127256
+// Module ID: 16355
+// Function ID: 127303
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1911, 8243, 33, 16344, 1212, 4131, 689, 7595, 4661, 5164, 16345, 5501, 5502, 8242, 4127, 4815, 1392, 3977, 7575, 4542, 3713, 7596, 16346, 5448, 3843, 566, 4067, 16308, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1911, 8243, 33, 16356, 1212, 4131, 689, 7595, 4661, 5164, 16357, 5501, 5502, 8242, 4127, 4815, 1392, 3977, 7575, 4542, 3713, 7596, 16358, 5448, 3843, 566, 4067, 16320, 2]
 // Exports: default
 
-// Module 16343 (_isNativeReflectConstruct)
+// Module 16355 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import PressableBase from "PressableBase";
@@ -52,7 +52,7 @@ function ForceSyncIcon(isSyncing) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["+Josox"]);
     obj.onPress = tmp;
-    obj = { source: importDefault(16345) };
+    obj = { source: importDefault(16357) };
     obj.children = callback3(require(5164) /* TableRowInner */.TableRow.Icon, obj);
     tmp2Result = tmp2(require(4661) /* PressableBase */.PressableOpacity, obj);
   }

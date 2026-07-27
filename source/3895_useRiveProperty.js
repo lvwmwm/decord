@@ -1,5 +1,5 @@
 // Module ID: 3895
-// Function ID: 32241
+// Function ID: 32242
 // Name: useRiveProperty
 // Dependencies: [57, 31, 3896]
 // Exports: useRiveProperty

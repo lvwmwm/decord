@@ -1,5 +1,5 @@
 // Module ID: 7158
-// Function ID: 59972
+// Function ID: 59973
 // Name: GiftingTier6SmallBadge
 // Dependencies: [33, 5085, 7159, 2]
 // Exports: GiftingTier6SmallBadge

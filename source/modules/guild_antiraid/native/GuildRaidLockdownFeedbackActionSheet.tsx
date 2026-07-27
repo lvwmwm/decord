@@ -1,10 +1,10 @@
-// Module ID: 10959
-// Function ID: 85172
+// Module ID: 10960
+// Function ID: 85177
 // Name: GuildRaidLockdownFeedbackActionSheet
 // Dependencies: [57, 31, 653, 33, 4131, 1212, 5746, 4099, 5498, 5186, 5585, 5501, 9024, 7585, 4544, 4325, 2]
 // Exports: default
 
-// Module 10959 (GuildRaidLockdownFeedbackActionSheet)
+// Module 10960 (GuildRaidLockdownFeedbackActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { AnalyticEvents } from "ME";
@@ -73,7 +73,7 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
       const obj = {
         onPress() {
           (function onCheckboxChange(closure_0) {
-            outer2_2(outer2_1.includes(closure_0) ? ((arr) => arr.filter(/* F85178 */ function() { ... })) : ((arg0) => {
+            outer2_2(outer2_1.includes(closure_0) ? ((arr) => arr.filter(/* F85183 */ function() { ... })) : ((arg0) => {
               const items = [...arg0, closure_0];
               return items;
             }));

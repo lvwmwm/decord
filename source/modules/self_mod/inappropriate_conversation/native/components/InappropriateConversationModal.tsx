@@ -1,10 +1,10 @@
-// Module ID: 14751
-// Function ID: 112455
+// Module ID: 14752
+// Function ID: 112460
 // Name: IntroScreen
-// Dependencies: [57, 31, 27, 1850, 10098, 33, 4131, 689, 566, 3970, 1456, 6727, 4127, 1212, 4544, 10095, 14752, 10118, 5087, 10092, 4338, 10096, 5517, 2]
+// Dependencies: [57, 31, 27, 1850, 10098, 33, 4131, 689, 566, 3970, 1456, 6727, 4127, 1212, 4544, 10095, 14753, 10118, 5087, 10092, 4338, 10096, 5517, 2]
 // Exports: default
 
-// Module 14751 (IntroScreen)
+// Module 14752 (IntroScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { useState } from "result";
@@ -88,7 +88,7 @@ function TakeActionScreen(arg0) {
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.S0XtKF);
   items[1] = callback2(require(4127) /* Text */.Text, obj1);
   obj.children = items;
-  const items1 = [callback3(closure_7, obj), callback2(importDefault(14752), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
+  const items1 = [callback3(closure_7, obj), callback2(importDefault(14753), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
   obj.children = items1;
   return callback3(closure_7, obj);
 }

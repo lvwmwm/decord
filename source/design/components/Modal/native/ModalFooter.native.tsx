@@ -1,10 +1,10 @@
-// Module ID: 11057
-// Function ID: 85968
+// Module ID: 11058
+// Function ID: 85973
 // Name: ModalFooter
 // Dependencies: [31, 27, 33, 4131, 2]
 // Exports: ModalFooter
 
-// Module 11057 (ModalFooter)
+// Module 11058 (ModalFooter)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

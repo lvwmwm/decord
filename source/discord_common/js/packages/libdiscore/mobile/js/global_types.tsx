@@ -1,5 +1,5 @@
 // Module ID: 1847
-// Function ID: 20272
+// Function ID: 20273
 // Name: typedGlobal
 // Dependencies: [2]
 

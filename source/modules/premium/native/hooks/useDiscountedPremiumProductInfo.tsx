@@ -1,5 +1,5 @@
 // Module ID: 6513
-// Function ID: 58223
+// Function ID: 58224
 // Name: useDiscountedPremiumProductInfo
 // Dependencies: [31, 5619, 482, 566, 5622, 5616, 2]
 // Exports: useDiscountedPremiumProductInfo

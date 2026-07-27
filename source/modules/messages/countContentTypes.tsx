@@ -1,5 +1,5 @@
 // Module ID: 9497
-// Function ID: 74083
+// Function ID: 74084
 // Name: countContentTypes
 // Dependencies: [2]
 // Exports: default

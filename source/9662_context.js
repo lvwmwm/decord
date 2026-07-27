@@ -1,5 +1,5 @@
 // Module ID: 9662
-// Function ID: 75267
+// Function ID: 75268
 // Name: context
 // Dependencies: [77, 31, 33, 1582]
 // Exports: GlobalStateProvider, useGlobalState

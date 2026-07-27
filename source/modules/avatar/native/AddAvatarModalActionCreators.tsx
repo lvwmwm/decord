@@ -1,10 +1,10 @@
-// Module ID: 16172
-// Function ID: 125433
+// Module ID: 16184
+// Function ID: 125480
 // Name: closeAddAvatarModal
-// Dependencies: [16173, 653, 675, 9158, 4471, 1212, 7880, 7882, 4338, 16174, 1935, 11730, 2]
+// Dependencies: [16185, 653, 675, 9158, 4471, 1212, 7880, 7882, 4338, 16186, 1935, 11731, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 16172 (closeAddAvatarModal)
+// Module 16184 (closeAddAvatarModal)
 import { ADD_AVATAR_MODAL_KEY } from "ADD_AVATAR_MODAL_KEY";
 import { AnalyticEvents } from "ME";
 
@@ -12,7 +12,7 @@ function closeAddAvatarModal(skip) {
   let obj = importDefault(4338);
   obj.popWithKey(ADD_AVATAR_MODAL_KEY);
   obj = { skip };
-  require(11730) /* _startContactSyncForDiscoverability */.nextOnboardingStep(obj);
+  require(11731) /* _startContactSyncForDiscoverability */.nextOnboardingStep(obj);
 }
 let result = require("expandLocation").fileFinishedImporting("modules/avatar/native/AddAvatarModalActionCreators.tsx");
 
@@ -61,5 +61,5 @@ export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
   importDefault(4471).show(obj);
 };
 export const openAddAvatarModal = function openAddAvatarModal() {
-  importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(16174, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(16186, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 };

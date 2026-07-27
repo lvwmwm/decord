@@ -1,10 +1,10 @@
-// Module ID: 10575
-// Function ID: 82448
+// Module ID: 10576
+// Function ID: 82453
 // Name: tryLaunchAsFrame
-// Dependencies: [4168, 10442, 5665, 2]
+// Dependencies: [4168, 10443, 5665, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 10575 (tryLaunchAsFrame)
+// Module 10576 (tryLaunchAsFrame)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -15,7 +15,7 @@ export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   application = application.getApplication(applicationId);
   let tmp2 = null == application;
   if (!tmp2) {
-    let obj = require(10442) /* canLaunchFrame */;
+    let obj = require(10443) /* canLaunchFrame */;
     tmp2 = !obj.canLaunchFrame(application);
   }
   let flag = !tmp2;

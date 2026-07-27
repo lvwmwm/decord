@@ -1,10 +1,10 @@
-// Module ID: 13670
-// Function ID: 105002
+// Module ID: 13671
+// Function ID: 105007
 // Name: UserPrimaryGuildListBottomSheet
 // Dependencies: [31, 27, 7665, 33, 4131, 477, 689, 7881, 5164, 4099, 1212, 5513, 8384, 7597, 22, 5187, 4127, 6619, 7575, 2]
 // Exports: default
 
-// Module 13670 (UserPrimaryGuildListBottomSheet)
+// Module 13671 (UserPrimaryGuildListBottomSheet)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { GuildTagBadgeSize } from "items";

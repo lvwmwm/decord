@@ -1,5 +1,5 @@
 // Module ID: 6635
-// Function ID: 58688
+// Function ID: 58689
 // Name: getNumLurkedGuilds
 // Dependencies: [3760, 653, 675, 2]
 // Exports: trackGuildIconClicked, trackJoinClicked, trackLeavePromptLeaveClicked, trackLongPressLeaveClicked, trackLurkStarted

@@ -1,5 +1,5 @@
 // Module ID: 8288
-// Function ID: 66570
+// Function ID: 66571
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1347, 1348, 1918, 4143, 3768, 1850, 5601, 653, 5969, 4975, 8289, 1212, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString

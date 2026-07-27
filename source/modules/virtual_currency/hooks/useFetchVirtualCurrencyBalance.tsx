@@ -1,5 +1,5 @@
 // Module ID: 8652
-// Function ID: 68704
+// Function ID: 68705
 // Name: useFetchVirtualCurrencyBalance
 // Dependencies: [31, 8653, 566, 8654, 2]
 // Exports: useFetchVirtualCurrencyBalance

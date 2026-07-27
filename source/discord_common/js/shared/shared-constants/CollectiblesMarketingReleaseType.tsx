@@ -1,5 +1,5 @@
 // Module ID: 5825
-// Function ID: 51176
+// Function ID: 51177
 // Name: CollectiblesMarketingReleaseType
 // Dependencies: [2]
 

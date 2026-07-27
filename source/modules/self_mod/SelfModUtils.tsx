@@ -1,5 +1,5 @@
 // Module ID: 5838
-// Function ID: 51397
+// Function ID: 51398
 // Name: isCurrentUserTeen
 // Dependencies: [1850, 2]
 // Exports: isCurrentUserTeen

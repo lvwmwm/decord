@@ -1,5 +1,5 @@
 // Module ID: 6452
-// Function ID: 57930
+// Function ID: 57931
 // Name: useBuyNitroExperiment
 // Dependencies: [57, 31, 6171, 5450, 6453, 2]
 // Exports: useBuyNitroExperiment

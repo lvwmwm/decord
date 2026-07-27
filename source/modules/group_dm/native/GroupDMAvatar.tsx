@@ -1,5 +1,5 @@
 // Module ID: 9026
-// Function ID: 70945
+// Function ID: 70946
 // Name: FacepileGroupDMAvatar
 // Dependencies: [31, 27, 1850, 33, 1273, 4131, 7909, 566, 1327, 2]
 // Exports: default

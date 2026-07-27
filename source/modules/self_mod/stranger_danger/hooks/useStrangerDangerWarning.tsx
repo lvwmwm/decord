@@ -1,10 +1,10 @@
-// Module ID: 10366
-// Function ID: 80029
+// Module ID: 10367
+// Function ID: 80034
 // Name: useStrangerDangerWarning
-// Dependencies: [1850, 9031, 566, 10367, 10368, 10369, 7649, 10072, 2]
+// Dependencies: [1850, 9031, 566, 10368, 10369, 10370, 7649, 10072, 2]
 // Exports: useStrangerDangerWarning
 
-// Module 10366 (useStrangerDangerWarning)
+// Module 10367 (useStrangerDangerWarning)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";
 
@@ -15,12 +15,12 @@ export const useStrangerDangerWarning = function useStrangerDangerWarning(id) {
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getCurrentUser());
   const obj = require(566) /* initialize */;
-  const isSpamMessageRequest = require(10367) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(id);
-  const obj3 = require(10367) /* useIsSpamMessageRequest */;
-  const isMessageRequest = require(10368) /* useIsMessageRequest */.useIsMessageRequest(id);
-  const obj4 = require(10368) /* useIsMessageRequest */;
-  const channelSafetyWarning = require(10369) /* useChannelSafetyWarning */.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
-  const obj5 = require(10369) /* useChannelSafetyWarning */;
+  const isSpamMessageRequest = require(10368) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(id);
+  const obj3 = require(10368) /* useIsSpamMessageRequest */;
+  const isMessageRequest = require(10369) /* useIsMessageRequest */.useIsMessageRequest(id);
+  const obj4 = require(10369) /* useIsMessageRequest */;
+  const channelSafetyWarning = require(10370) /* useChannelSafetyWarning */.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
+  const obj5 = require(10370) /* useChannelSafetyWarning */;
   const userIsTeen = require(7649) /* useUserIsTeen */.useUserIsTeen();
   if (null != stateFromStores) {
     const isStaffResult = stateFromStores.isStaff();

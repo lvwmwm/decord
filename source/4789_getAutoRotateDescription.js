@@ -1,5 +1,5 @@
 // Module ID: 4789
-// Function ID: 41663
+// Function ID: 41664
 // Name: getAutoRotateDescription
 // Dependencies: [4766, 4767, 4746]
 

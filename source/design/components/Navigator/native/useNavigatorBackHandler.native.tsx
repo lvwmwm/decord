@@ -1,5 +1,5 @@
 // Module ID: 9038
-// Function ID: 71071
+// Function ID: 71072
 // Name: useNavigatorBackHandler
 // Dependencies: [31, 1456, 477, 2]
 // Exports: default

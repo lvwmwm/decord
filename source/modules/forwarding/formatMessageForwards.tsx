@@ -1,5 +1,5 @@
 // Module ID: 7678
-// Function ID: 61447
+// Function ID: 61448
 // Name: createGuildBreadcrumb
 // Dependencies: [6, 7, 7679, 1348, 1838, 3759, 3768, 1850, 1392, 1212, 3801, 4321, 5856, 2]
 // Exports: maybeCreateSingleForwardForMessage

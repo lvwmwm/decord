@@ -1,9 +1,9 @@
-// Module ID: 13432
-// Function ID: 103163
+// Module ID: 13433
+// Function ID: 103168
 // Name: toggleFeature
-// Dependencies: [27, 4123, 13191, 13433, 9980, 675, 13434, 2]
+// Dependencies: [27, 4123, 13192, 13434, 9980, 675, 13435, 2]
 
-// Module 13432 (toggleFeature)
+// Module 13433 (toggleFeature)
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags";
@@ -17,11 +17,11 @@ function toggleFeature(PREFERS_COLOR_SCHEME_DARK, useReducedMotion) {
   } else {
     closure_8 = tmp & ~PREFERS_COLOR_SCHEME_DARK;
   }
-  const tmp2 = require(13433) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK];
+  const tmp2 = require(13434) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK];
   if (null != tmp2) {
     const obj = {};
     obj[tmp2] = useReducedMotion;
-    importDefault(9980)(require(13433) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, obj);
+    importDefault(9980)(require(13434) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, obj);
     const tmp5 = importDefault(9980);
   }
 }
@@ -61,7 +61,7 @@ export default {
     if (arg0) {
       str = "reduce";
     }
-    const result = require(13434) /* setFontSize */.systemPrefersReducedMotionChanged(str);
+    const result = require(13435) /* setFontSize */.systemPrefersReducedMotionChanged(str);
     toggleFeature(AccessibilityFeatureFlags.REDUCED_MOTION, _isNativeReflectConstruct.useReducedMotion);
   },
   handleReduceTransparencyChanged(useReducedMotion) {

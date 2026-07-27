@@ -1,5 +1,5 @@
 // Module ID: 8679
-// Function ID: 68889
+// Function ID: 68890
 // Name: NameplateUser
 // Dependencies: [31, 27, 4123, 33, 4131, 689, 7984, 1874, 1212, 4127, 4555, 8596, 7916, 7882, 566, 3970, 4362, 8318, 8319, 1273, 8680, 5164, 2]
 // Exports: default

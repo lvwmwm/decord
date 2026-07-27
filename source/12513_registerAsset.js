@@ -1,11 +1,11 @@
 // Module ID: 12513
-// Function ID: 96909
+// Function ID: 96913
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12513 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 64, height: 64, scales: [1], hash: "7820559d802b687a2589b1c9f32203ab", name: "img_wumpus_nitro_boost", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 64, height: 64, scales: [1], hash: "e56e37c53edc4951356b726ba43f79c4", name: "img_wumpus_nitro_classic_boost", type: "png" };
 
 export default registerAsset.registerAsset(obj);

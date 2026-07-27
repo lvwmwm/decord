@@ -1,5 +1,5 @@
 // Module ID: 4113
-// Function ID: 34034
+// Function ID: 34035
 // Name: currentUpdateConfig
 // Dependencies: [3713, 477, 1443, 1554, 2]
 

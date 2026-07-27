@@ -1,10 +1,10 @@
-// Module ID: 15034
-// Function ID: 114599
+// Module ID: 15035
+// Function ID: 114603
 // Name: VoiceUserNameItem
-// Dependencies: [57, 31, 27, 33, 4131, 4362, 8321, 4127, 3970, 1212, 15035, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 4362, 8321, 4127, 3970, 1212, 15036, 2]
 // Exports: default
 
-// Module 15034 (VoiceUserNameItem)
+// Module 15035 (VoiceUserNameItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -97,7 +97,7 @@ export default function VoiceUserNameItem(arg0) {
   if (tmp9) {
     const obj3 = { onLayout: callback2, style: tmp.tag };
     const obj4 = { userId: user.id };
-    obj3.children = callback3(importDefault(15035), obj4);
+    obj3.children = callback3(importDefault(15036), obj4);
     tmp9 = callback3(View, obj3);
   }
   items3[1] = tmp9;

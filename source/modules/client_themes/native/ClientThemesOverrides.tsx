@@ -1,5 +1,5 @@
 // Module ID: 8756
-// Function ID: 69295
+// Function ID: 69296
 // Name: useGradientBottom
 // Dependencies: [31, 4131, 3942, 8757, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop

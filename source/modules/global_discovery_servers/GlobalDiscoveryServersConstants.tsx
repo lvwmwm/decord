@@ -1,5 +1,5 @@
 // Module ID: 8244
-// Function ID: 66243
+// Function ID: 66244
 // Name: DEFAULT_DISCOVERY_CATEGORY_ID
 // Dependencies: [664, 1212, 2]
 // Exports: getLanguageOptions

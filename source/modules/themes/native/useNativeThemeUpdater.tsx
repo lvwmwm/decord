@@ -1,10 +1,10 @@
-// Module ID: 15696
-// Function ID: 121089
+// Module ID: 15708
+// Function ID: 121136
 // Name: useNativeThemeUpdater
-// Dependencies: [31, 1278, 1324, 15697, 15698, 2]
+// Dependencies: [31, 1278, 1324, 15709, 15710, 2]
 // Exports: default
 
-// Module 15696 (useNativeThemeUpdater)
+// Module 15708 (useNativeThemeUpdater)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

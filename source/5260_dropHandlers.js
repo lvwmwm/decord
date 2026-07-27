@@ -1,5 +1,5 @@
 // Module ID: 5260
-// Function ID: 45385
+// Function ID: 45386
 // Name: dropHandlers
 // Dependencies: [5226, 5220, 5242, 5240]
 

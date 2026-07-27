@@ -1,5 +1,5 @@
 // Module ID: 6161
-// Function ID: 55295
+// Function ID: 55296
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isPremiumOfferReminderExperimentEnabled

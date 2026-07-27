@@ -1,5 +1,5 @@
 // Module ID: 3840
-// Function ID: 32021
+// Function ID: 32022
 // Name: useFocus
 // Dependencies: [57, 31, 2]
 // Exports: useFocus

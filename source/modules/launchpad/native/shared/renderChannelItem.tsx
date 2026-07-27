@@ -1,10 +1,10 @@
-// Module ID: 15730
-// Function ID: 121337
+// Module ID: 15742
+// Function ID: 121384
 // Name: LaunchpadChannelIcon
-// Dependencies: [31, 27, 1838, 3768, 1850, 4327, 33, 8254, 4131, 689, 15717, 566, 5513, 11302, 5874, 15719, 9026, 15722, 4321, 2]
+// Dependencies: [31, 27, 1838, 3768, 1850, 4327, 33, 8254, 4131, 689, 15729, 566, 5513, 11303, 5874, 15731, 9026, 15734, 4321, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 15730 (LaunchpadChannelIcon)
+// Module 15742 (LaunchpadChannelIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -26,11 +26,11 @@ function LaunchpadChannelIcon(channel) {
   obj = {};
   obj = { style: tmp.guildBadgeIcon };
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
-  const tmp2 = importDefault(15717)();
-  obj.children = callback(importDefault(5513), { guild: stateFromStores, size: importDefault(15717)().icon.guildBadgeIconSize });
+  const tmp2 = importDefault(15729)();
+  obj.children = callback(importDefault(5513), { guild: stateFromStores, size: importDefault(15729)().icon.guildBadgeIconSize });
   const items1 = [callback(View, obj), ];
   const obj2 = { channel, size: "sm", wrapperSize: 32 };
-  items1[1] = callback(channel(11302).ChannelIcon, obj2);
+  items1[1] = callback(channel(11303).ChannelIcon, obj2);
   obj.children = items1;
   return callback2(closure_9, obj);
 }
@@ -94,7 +94,7 @@ export default function renderChannelItem(unread) {
       relativeTimestamp = obj.getRelativeTimestamp(latestMessageTimestamp);
     }
   }
-  const tmp5 = importDefault(15717)();
+  const tmp5 = importDefault(15729)();
   obj = {};
   const items = [unreadBadge, , , ];
   obj = {};
@@ -112,7 +112,7 @@ export default function renderChannelItem(unread) {
   items[1] = callback(View, obj);
   const obj4 = {};
   const tmp10 = View;
-  const tmp6 = importDefault(15719);
+  const tmp6 = importDefault(15731);
   const tmp7 = closure_10;
   const tmp8 = closure_9;
   const tmp9 = callback;
@@ -135,7 +135,7 @@ export default function renderChannelItem(unread) {
   obj4.mentionBadge = mentionBadge;
   obj4.isSubscriptionGated = isSubscriptionGated;
   obj4.needSubscriptionToAccess = flag4;
-  items[2] = importDefault(15722)(obj4);
+  items[2] = importDefault(15734)(obj4);
   let tmp22 = null;
   if (null != end) {
     const obj5 = {};

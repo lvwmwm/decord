@@ -1,11 +1,11 @@
 // Module ID: 13935
-// Function ID: 106651
+// Function ID: 106655
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 13935 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "24a38b74eed4b16cf7662ebd8e1be84d", name: "ic_message_retry", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/consoles", width: 85, height: 70, scales: [2, 3], hash: "f2b2ae790fb60abfa40be44fab4eb6fc", name: "ps_relink_upsell", type: "png" };
 
 export default registerAsset.registerAsset(obj);

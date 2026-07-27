@@ -1,5 +1,5 @@
 // Module ID: 8004
-// Function ID: 63784
+// Function ID: 63785
 // Name: useProfileEffect
 // Dependencies: [31, 5770, 5786, 5776, 566, 5769, 2]
 // Exports: default

@@ -1,20 +1,20 @@
 // Module ID: 13162
-// Function ID: 101426
+// Function ID: 101420
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 13163, 3956, 8086]
+// Dependencies: [65, 6, 7, 15, 17, 18, 31, 27, 33, 13163, 13164, 3956, 8086]
 
 // Module 13162 (_isNativeReflectConstruct)
+import _toConsumableArray from "_toConsumableArray";
+import result from "result";
 import getActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import "result";
+import closure_8 from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
-let closure_7;
-let closure_8;
+let Platform;
 let closure_9;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -25,178 +25,171 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-({ Animated: closure_7, Easing: closure_8, TouchableOpacity: closure_9 } = get_ActivityIndicator);
-const tmp4 = ((PureComponent) => {
-  class PaginationDot {
+({ Platform, View: closure_9 } = get_ActivityIndicator);
+const isRTL = get_ActivityIndicator.I18nManager.isRTL;
+let tmp3 = ((PureComponent) => {
+  class Pagination {
     constructor(arg0) {
       self = this;
-      tmp = outer1_2(this, PaginationDot);
+      tmp = outer1_3(this, Pagination);
       items = [];
       items[0] = PureComponent;
-      obj = outer1_5(PaginationDot);
-      tmp2 = outer1_4;
-      if (outer1_11()) {
+      obj = outer1_6(Pagination);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = outer1_5;
-        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
+      dotColor = PureComponent.dotColor;
       tmp2Result = tmp2(self, constructResult);
-      obj = {};
-      value = new outer1_7.Value(0);
-      obj.animColor = value;
-      value1 = new outer1_7.Value(0);
-      obj.animOpacity = value1;
-      value2 = new outer1_7.Value(0);
-      obj.animTransform = value2;
-      tmp2Result.state = obj;
+      if (dotColor) {
+        dotColor = !PureComponent.inactiveDotColor;
+      }
+      if (!dotColor) {
+        tmp7 = !PureComponent.dotColor && PureComponent.inactiveDotColor;
+        dotColor = tmp7;
+      }
+      if (dotColor) {
+        tmp8 = globalThis;
+        _console = console;
+        str = "react-native-snap-carousel | Pagination: You need to specify both `dotColor` and `inactiveDotColor`";
+        warnResult = console.warn("react-native-snap-carousel | Pagination: You need to specify both `dotColor` and `inactiveDotColor`");
+      }
+      tmp10 = PureComponent.dotElement && !PureComponent.inactiveDotElement;
+      if (!tmp10) {
+        tmp11 = !PureComponent.dotElement && PureComponent.inactiveDotElement;
+        tmp10 = tmp11;
+      }
+      if (tmp10) {
+        tmp12 = globalThis;
+        _console2 = console;
+        str2 = "react-native-snap-carousel | Pagination: You need to specify both `dotElement` and `inactiveDotElement`";
+        warnResult1 = console.warn("react-native-snap-carousel | Pagination: You need to specify both `dotElement` and `inactiveDotElement`");
+      }
+      tmp14 = PureComponent.tappableDots && undefined === PureComponent.carouselRef;
+      if (tmp14) {
+        tmp15 = globalThis;
+        _console3 = console;
+        str3 = "react-native-snap-carousel | Pagination: You must specify prop `carouselRef` when setting `tappableDots` to `true`";
+        warnResult2 = console.warn("react-native-snap-carousel | Pagination: You must specify prop `carouselRef` when setting `tappableDots` to `true`");
+      }
       return tmp2Result;
     }
   }
-  callback2(PaginationDot, PureComponent);
+  callback2(Pagination, PureComponent);
   let obj = {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      const self = this;
-      if (this.props.active) {
-        self._animate(1);
+    key: "_needsRTLAdaptations",
+    value: function _needsRTLAdaptations() {
+      let tmp = outer1_11;
+      if (outer1_11) {
+        tmp = !this.props.vertical;
       }
+      return tmp;
     }
   };
-  let items = [obj, , , , ];
+  let items = [obj, , , ];
   obj = {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(active) {
-      const self = this;
-      if (active.active !== this.props.active) {
-        let num = 0;
-        if (self.props.active) {
-          num = 1;
-        }
-        self._animate(num);
+    key: "_activeDotIndex",
+    get() {
+      let activeDotIndex;
+      let dotsLength;
+      ({ activeDotIndex, dotsLength } = this.props);
+      let diff = activeDotIndex;
+      if (this._needsRTLAdaptations()) {
+        diff = dotsLength - activeDotIndex - 1;
       }
+      return diff;
     }
   };
   items[1] = obj;
   obj = {
-    key: "_animate",
-    value: function _animate(arg0) {
-      let animColor;
-      let animOpacity;
-      let animTransform;
-      let animatedFriction;
-      let animatedTension;
-      let props;
-      let state;
-      const self = this;
-      let num = 0;
-      if (arguments.length > 0) {
-        num = 0;
-        if (undefined !== arguments[0]) {
-          num = arguments[0];
+    key: "dots",
+    get() {
+      let carouselRef;
+      let closure_1;
+      let _toConsumableArray;
+      let dotsLength;
+      let renderDots;
+      let tappableDots;
+      let self = this;
+      self = this;
+      ({ carouselRef, dotsLength, dotElement: closure_1, inactiveDotElement: _toConsumableArray, renderDots, tappableDots } = this.props);
+      if (renderDots) {
+        return renderDots(self._activeDotIndex, dotsLength, self);
+      } else {
+        const obj = { carouselRef };
+        if (tappableDots) {
+          tappableDots = undefined !== carouselRef;
         }
+        obj.tappable = tappableDots;
+        obj.activeOpacity = tmp;
+        obj.color = tmp2;
+        obj.containerStyle = tmp3;
+        obj.style = tmp4;
+        obj.inactiveColor = tmp5;
+        obj.inactiveOpacity = tmp6;
+        obj.inactiveScale = tmp7;
+        obj.inactiveStyle = tmp8;
+        obj.animatedDuration = tmp9;
+        obj.animatedFriction = tmp10;
+        obj.animatedTension = tmp11;
+        obj.delayPressInDot = tmp12;
+        let result = outer1_10(Pagination(outer1_1[9]), obj);
+        const _Array = Array;
+        const tmp13 = outer1_10;
+        const tmp16 = Pagination(outer1_1[9]);
+        const ArrayResult = Array(dotsLength);
+        return outer1_2(Array(dotsLength).keys()).map((index) => {
+          let tmp3 = tmp ? closure_1 : _toConsumableArray;
+          if (!tmp3) {
+            tmp3 = result;
+          }
+          return outer2_8.cloneElement(tmp3, { key: "pagination-dot-" + index, active: index === self._activeDotIndex, index });
+        });
       }
-      ({ state, props } = self);
-      let obj = { toValue: num, duration: props.animatedDuration, isInteraction: false, useNativeDriver: !self._shouldAnimateColor };
-      obj = { easing: outer1_8.linear };
-      ({ animColor, animOpacity, animTransform } = state);
-      ({ animatedFriction, animatedTension } = props);
-      const items = [outer1_7.timing(animOpacity, Object.assign(obj, obj)), outer1_7.spring(animTransform, Object.assign({ friction: animatedFriction, tension: animatedTension }, obj))];
-      if (self._shouldAnimateColor) {
-        const _Object = Object;
-        obj = { easing: outer1_8.linear };
-        items.push(outer1_7.timing(animColor, Object.assign(obj, obj)));
-      }
-      outer1_7.parallel(items).start();
     }
   };
   items[2] = obj;
   items[3] = {
-    key: "_shouldAnimateColor",
-    get() {
-      const props = this.props;
-      return props.color && props.inactiveColor;
-    }
-  };
-  items[4] = {
     key: "render",
     value: function render() {
-      let PaginationDot;
-      let active;
-      let activeOpacity;
-      let animColor;
-      let animOpacity;
-      let animTransform;
-      let closure_1;
-      let color;
+      let accessibilityLabel;
       let containerStyle;
-      let delayPressInDot;
-      let inactiveColor;
-      let inactiveScale;
-      let inactiveStyle;
-      let style;
-      let tappable;
-      ({ animColor, animOpacity, animTransform } = this.state);
-      const props = this.props;
-      ({ carouselRef: PaginationDot, containerStyle, index: closure_1, style, tappable } = props);
-      let obj = { opacity: animOpacity.interpolate({ inputRange: [0, 1], outputRange: items }) };
-      items = [props.inactiveOpacity, ];
-      let num = 1;
-      items[1] = 1;
-      ({ active, activeOpacity, color, inactiveColor, inactiveStyle, inactiveScale, delayPressInDot } = props);
-      obj = { scale: animTransform.interpolate({ inputRange: [0, 1], outputRange: items1 }) };
-      items1 = [inactiveScale, 1];
-      const items2 = [obj];
-      obj.transform = items2;
-      if (this._shouldAnimateColor) {
-        obj = {};
-        const obj1 = { inputRange: [0, 1] };
-        const items3 = [inactiveColor, color];
-        obj1.outputRange = items3;
-        obj.backgroundColor = animColor.interpolate(obj1);
-        let obj2 = obj;
-      } else {
-        obj2 = {};
-      }
-      const items4 = [PaginationDot(outer1_1[8]).sliderPaginationDotContainer, ];
-      if (!containerStyle) {
-        containerStyle = {};
-      }
-      items4[1] = containerStyle;
-      const items5 = [PaginationDot(outer1_1[8]).sliderPaginationDot, , , , ];
-      if (!style) {
-        style = {};
-      }
-      items5[1] = style;
-      items5[2] = !active && inactiveStyle || {};
-      items5[3] = obj;
-      items5[4] = obj2;
-      const obj3 = { accessible: false, style: items4 };
-      if (tappable) {
-        num = activeOpacity;
-      }
-      obj3.activeOpacity = num;
-      let fn;
-      if (tappable) {
-        fn = () => {
-          const current = ref.current;
-          let obj = current;
-          if (!current) {
-            obj = ref;
+      let dotsLength;
+      const self = this;
+      ({ dotsLength, containerStyle, accessibilityLabel } = this.props);
+      if (dotsLength) {
+        if (dotsLength >= 2) {
+          const items = [Pagination(outer1_1[10]).sliderPagination, , ];
+          let obj = {};
+          let str2 = "column";
+          if (!tmp) {
+            let str = "row";
+            if (self._needsRTLAdaptations()) {
+              str = "row-reverse";
+            }
+            str2 = str;
           }
-          obj._snapToItem(obj._getPositionIndex(closure_1));
-        };
+          obj.flexDirection = str2;
+          items[1] = obj;
+          if (!containerStyle) {
+            containerStyle = {};
+          }
+          items[2] = containerStyle;
+          obj = { pointerEvents: "box-none", style: items, accessible: accessibilityLabel, accessibilityLabel, children: self.dots };
+          return outer1_10(outer1_9, obj);
+        }
       }
-      obj3.onPress = fn;
-      obj3.delayPressIn = delayPressInDot;
-      obj3.children = outer1_10(outer1_7.View, { style: items5 });
-      return outer1_10(outer1_9, obj3);
+      return false;
     }
   };
-  return callback(PaginationDot, items);
+  return callback(Pagination, items);
 })(require("result").PureComponent);
-tmp4.propTypes = { inactiveOpacity: require("emptyFunction").number.isRequired, inactiveScale: require("emptyFunction").number.isRequired, active: require("emptyFunction").bool, activeOpacity: require("emptyFunction").number, carouselRef: require("emptyFunction").object, color: require("emptyFunction").string, containerStyle: require("get ColorPropType").ViewPropTypes.style, inactiveColor: require("emptyFunction").string, inactiveStyle: require("get ColorPropType").ViewPropTypes.style, index: require("emptyFunction").number, style: require("get ColorPropType").ViewPropTypes.style, tappable: require("emptyFunction").bool };
+tmp3.propTypes = { activeDotIndex: require("emptyFunction").number.isRequired, dotsLength: require("emptyFunction").number.isRequired, activeOpacity: require("emptyFunction").number, carouselRef: require("emptyFunction").object, containerStyle: require("get ColorPropType").ViewPropTypes.style, dotColor: require("emptyFunction").string, dotContainerStyle: require("get ColorPropType").ViewPropTypes.style, dotElement: require("emptyFunction").element, dotStyle: require("get ColorPropType").ViewPropTypes.style, inactiveDotColor: require("emptyFunction").string, inactiveDotElement: require("emptyFunction").element, inactiveDotOpacity: require("emptyFunction").number, inactiveDotScale: require("emptyFunction").number, inactiveDotStyle: require("get ColorPropType").ViewPropTypes.style, renderDots: require("emptyFunction").func, tappableDots: require("emptyFunction").bool, vertical: require("emptyFunction").bool, accessibilityLabel: require("emptyFunction").string, animatedDuration: require("emptyFunction").number, animatedFriction: require("emptyFunction").number, animatedTension: require("emptyFunction").number, delayPressInDot: require("emptyFunction").number };
+tmp3.defaultProps = { inactiveDotOpacity: 0.5, inactiveDotScale: 0.5, tappableDots: false, vertical: false, animatedDuration: 250, animatedFriction: 4, animatedTension: 50, delayPressInDot: 0 };
 
-export default tmp4;
+export default tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 12207
-// Function ID: 95438
+// Module ID: 12208
+// Function ID: 95443
 // Name: closeGuildEventInfoActionSheet
-// Dependencies: [31, 27, 4123, 1918, 1838, 4203, 1850, 1354, 8156, 482, 33, 4131, 689, 5053, 4099, 566, 8147, 8159, 8158, 8163, 10167, 4127, 1212, 1273, 3970, 6689, 4966, 8268, 2]
+// Dependencies: [31, 27, 4123, 1918, 1838, 4203, 1850, 1354, 8156, 482, 33, 4131, 689, 5053, 4099, 566, 8147, 8159, 8158, 8163, 10168, 4127, 1212, 1273, 3970, 6689, 4966, 8268, 2]
 // Exports: default
 
-// Module 12207 (closeGuildEventInfoActionSheet)
+// Module 12208 (closeGuildEventInfoActionSheet)
 import result from "result";
 import { View } from "GuildEventRecurrences";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -111,7 +111,7 @@ export default function EventDetailInfoSheet(guildEvent) {
   items8[3] = callback(guildEvent(8163).GuildEventSimpleLocation, { event: guildEvent });
   obj3 = { style: tmp.interestedContainer };
   obj4 = { size: "sm", style: tmp.interestedIcon };
-  const items9 = [callback(guildEvent(10167).BellIcon, obj4), ];
+  const items9 = [callback(guildEvent(10168).BellIcon, obj4), ];
   let obj5 = { variant: "text-sm/medium", color: "text-default" };
   const intl = guildEvent(1212).intl;
   obj5.children = intl.format(guildEvent(1212).t["+DLsD8"], { count: importDefault(8158)(guildEvent.guild_id, guildEvent.id, recurrenceId) });

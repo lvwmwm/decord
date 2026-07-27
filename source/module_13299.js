@@ -1,7 +1,7 @@
 // Module ID: 13299
-// Function ID: 102118
-// Dependencies: [13300, 13304]
+// Function ID: 102121
+// Dependencies: []
 
 // Module 13299
 
-export default (arg0) => require(13300)(require(13304)(arg0));
+export default (arg0) => arg0();

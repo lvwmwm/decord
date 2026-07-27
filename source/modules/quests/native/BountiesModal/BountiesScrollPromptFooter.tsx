@@ -1,10 +1,10 @@
-// Module ID: 13970
-// Function ID: 106912
+// Module ID: 13971
+// Function ID: 106917
 // Name: BountiesScrollPromptFooter
-// Dependencies: [31, 27, 4123, 33, 4131, 689, 13971, 4135, 566, 1557, 3992, 3843, 2]
+// Dependencies: [31, 27, 4123, 33, 4131, 689, 13972, 4135, 566, 1557, 3992, 3843, 2]
 // Exports: default
 
-// Module 13970 (BountiesScrollPromptFooter)
+// Module 13971 (BountiesScrollPromptFooter)
 import result from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ export default function BountiesScrollPromptFooter(zIndex) {
   const opacityStyle = zIndex.opacityStyle;
   ({ visible, children, onContentLayout } = zIndex);
   let tmp = callback2();
-  let obj = zIndex(13971);
+  let obj = zIndex(13972);
   obj = { visible, entranceTiming: zIndex(4135).timingStandard, exitTiming: zIndex(4135).timingStandard };
   const visibilityTransition = obj.useVisibilityTransition(obj);
   let shouldRender = visibilityTransition.shouldRender;

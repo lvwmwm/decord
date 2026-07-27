@@ -1,10 +1,10 @@
-// Module ID: 14161
-// Function ID: 108868
+// Module ID: 14162
+// Function ID: 108873
 // Name: useActiveGuildSubscriptions
-// Dependencies: [31, 3783, 14155, 14156, 566, 4452, 2]
+// Dependencies: [31, 3783, 14156, 14157, 566, 4452, 2]
 // Exports: default
 
-// Module 14161 (useActiveGuildSubscriptions)
+// Module 14162 (useActiveGuildSubscriptions)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserGuildRoleSubscriptionRelationship as closure_6 } from "MAX_SUBSCRIPTION_TIERS";
@@ -24,7 +24,7 @@ export default function useActiveGuildSubscriptions() {
   }
   let importDefault;
   let closure_2;
-  const tmp = importDefault(14156)() === constants.SUBSCRIBED;
+  const tmp = importDefault(14157)() === constants.SUBSCRIBED;
   importDefault = tmp;
   const items = [_isNativeReflectConstruct];
   let stateFromStores = flag(566).useStateFromStores(items, () => outer1_5.getActiveGuildSubscriptions());

@@ -1,9 +1,9 @@
-// Module ID: 10324
-// Function ID: 79788
+// Module ID: 10325
+// Function ID: 79793
 // Name: ChatInputReplyBarNoAuthor
-// Dependencies: [31, 27, 4123, 1850, 653, 33, 1273, 4131, 689, 1324, 3835, 4127, 1212, 4661, 8930, 566, 3849, 4362, 8321, 7685, 3995, 10325, 3942, 3992, 4132, 9501, 675, 9499, 1198, 4361, 10326, 2]
+// Dependencies: [31, 27, 4123, 1850, 653, 33, 1273, 4131, 689, 1324, 3835, 4127, 1212, 4661, 8930, 566, 3849, 4362, 8321, 7685, 3995, 10326, 3942, 3992, 4132, 9501, 675, 9499, 1198, 4361, 10327, 2]
 
-// Module 10324 (ChatInputReplyBarNoAuthor)
+// Module 10325 (ChatInputReplyBarNoAuthor)
 import importAllResult from "set";
 import get_ActivityIndicator from "getContextBarCancelReason";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -83,7 +83,7 @@ class ChatInputReplyBar {
     colorStrings = undefined;
     nick = undefined;
     guildId = undefined;
-    f79794 = undefined;
+    f79799 = undefined;
     c7 = undefined;
     useDisplayNameStylesFont = undefined;
     author = undefined;
@@ -138,14 +138,14 @@ class ChatInputReplyBar {
     ({ onToggleReplyMention, chatInputFloatingOverride } = global);
     obj = require("useIsMobileVisualRefreshExperimentEnabled");
     tmp = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating || chatInputFloatingOverride;
-    tmp2 = f79797();
+    tmp2 = f79802();
     obj2 = require("map");
     token = obj2.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
     obj3 = require("map");
     bound = require("result");
     obj4 = require("initialize");
     items = [];
-    items[0] = f79794;
+    items[0] = f79799;
     stateFromStores = obj4.useStateFromStores(items, () => roleStyle.roleStyle);
     c1 = stateFromStores;
     obj5 = require("useCheckboxA11yNative");
@@ -159,7 +159,7 @@ class ChatInputReplyBar {
     items1[0] = colorString;
     items1[1] = stateFromStores;
     ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-    f79794 = colorStrings.useMemo(() => {
+    f79799 = colorStrings.useMemo(() => {
       let tmp;
       if ("hidden" !== stateFromStores) {
         if (null != colorString) {

@@ -1,10 +1,10 @@
-// Module ID: 15284
-// Function ID: 116604
+// Module ID: 15297
+// Function ID: 116653
 // Name: ContentInventoryEntryRow
-// Dependencies: [31, 3768, 33, 566, 7848, 15285, 15294, 2]
+// Dependencies: [31, 3768, 33, 566, 7848, 15298, 15307, 2]
 // Exports: default
 
-// Module 15284 (ContentInventoryEntryRow)
+// Module 15297 (ContentInventoryEntryRow)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -34,13 +34,13 @@ export default function ContentInventoryEntryRow(content) {
             tmp11 = visible;
           }
           obj.visible = tmp11;
-          return jsx(importDefault(15294), { content, renderForScreenshot: flag });
+          return jsx(importDefault(15307), { content, renderForScreenshot: flag });
         } else {
           return null;
         }
       }
     }
     obj = { content, renderForScreenshot: flag };
-    return jsx(importDefault(15285), { content, renderForScreenshot: flag });
+    return jsx(importDefault(15298), { content, renderForScreenshot: flag });
   }
 };

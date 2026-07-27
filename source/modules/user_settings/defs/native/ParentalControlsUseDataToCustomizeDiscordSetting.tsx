@@ -1,9 +1,9 @@
-// Module ID: 14624
-// Function ID: 111509
+// Module ID: 14625
+// Function ID: 111514
 // Name: toggle
-// Dependencies: [5765, 7697, 653, 13789, 5767, 10059, 1212, 2]
+// Dependencies: [5765, 7697, 653, 13790, 5767, 10059, 1212, 2]
 
-// Module 14624 (toggle)
+// Module 14625 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Consents } from "ME";
 import createToggle from "createToggle";
@@ -16,7 +16,7 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToCustomizeDiscordSettingValue() {
-    return require(13789) /* useParentalControlledExplicitContentSettings */.useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented;
+    return require(13790) /* useParentalControlledExplicitContentSettings */.useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented;
   },
   onValueChange: function handlePersonalizationChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();

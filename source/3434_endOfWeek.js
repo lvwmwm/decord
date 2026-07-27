@@ -1,5 +1,5 @@
 // Module ID: 3434
-// Function ID: 26701
+// Function ID: 26702
 // Name: endOfWeek
 // Dependencies: [3210, 3214, 3211, 3215]
 // Exports: default

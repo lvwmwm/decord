@@ -1,5 +1,5 @@
 // Module ID: 8318
-// Function ID: 66812
+// Function ID: 66813
 // Name: calculateStrokeWidth
 // Dependencies: [31, 27, 1862, 33, 1863, 4131, 689, 478, 3995, 8319, 4362, 8320, 1861, 4363, 8321, 3835, 8322, 4127, 4136, 3838, 8325, 1327, 2]
 

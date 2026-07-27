@@ -1,10 +1,10 @@
-// Module ID: 15285
-// Function ID: 116607
+// Module ID: 15298
+// Function ID: 116656
 // Name: items
-// Dependencies: [31, 27, 1850, 33, 11933, 7853, 11938, 15236, 689, 566, 4362, 8321, 5468, 7851, 8407, 8418, 7848, 15286, 1935, 8123, 4338, 15290, 1212, 15292, 4127, 3970, 5874, 21, 666, 4661, 5085, 15293, 2]
+// Dependencies: [31, 27, 1850, 33, 11934, 7853, 11939, 15249, 689, 566, 4362, 8321, 5468, 7851, 8407, 8418, 7848, 15299, 1935, 8123, 4338, 15303, 1212, 15305, 4127, 3970, 5874, 21, 666, 4661, 5085, 15306, 2]
 // Exports: default
 
-// Module 15285 (items)
+// Module 15298 (items)
 import ContentInventoryReplyRow from "ContentInventoryReplyRow";
 import { View } from "DISCORD_EPOCH";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -36,7 +36,7 @@ obj = {
     const trendingType = require(7853) /* calculateTimestampDurations */.getTrendingType(entry);
     let tmp2 = null != trendingType;
     if (tmp2) {
-      tmp2 = trendingType !== require(11938) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
+      tmp2 = trendingType !== require(11939) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
     }
     return tmp2;
   }

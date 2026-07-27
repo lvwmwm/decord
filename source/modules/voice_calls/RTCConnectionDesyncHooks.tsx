@@ -1,10 +1,10 @@
-// Module ID: 15115
-// Function ID: 115085
+// Module ID: 15127
+// Function ID: 115131
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4144, 4148, 1194, 1348, 1918, 12743, 4203, 1850, 4147, 22, 566, 1327, 10448, 2]
+// Dependencies: [57, 31, 4144, 4148, 1194, 1348, 1918, 12744, 4203, 1850, 4147, 22, 566, 1327, 10449, 2]
 // Exports: useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible
 
-// Module 15115 (_createForOfIteratorHelperLoose)
+// Module 15127 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

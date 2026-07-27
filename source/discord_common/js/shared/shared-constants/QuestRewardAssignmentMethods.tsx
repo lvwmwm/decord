@@ -1,5 +1,5 @@
 // Module ID: 9426
-// Function ID: 73569
+// Function ID: 73570
 // Name: QuestRewardAssignmentMethods
 // Dependencies: [2]
 

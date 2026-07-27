@@ -1,10 +1,10 @@
-// Module ID: 13169
-// Function ID: 101493
+// Module ID: 13170
+// Function ID: 101498
 // Name: IntlLink
 // Dependencies: [31, 33, 4131, 689, 3850, 3828, 3830, 1273, 2]
 // Exports: IntlLink
 
-// Module 13169 (IntlLink)
+// Module 13170 (IntlLink)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

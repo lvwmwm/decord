@@ -1,9 +1,9 @@
-// Module ID: 12816
-// Function ID: 99878
+// Module ID: 12817
+// Function ID: 99883
 // Name: VoiceStateAnalytics
 // Dependencies: [6, 7, 4178, 4147, 4204, 4192, 22, 2]
 
-// Module 12816 (VoiceStateAnalytics)
+// Module 12817 (VoiceStateAnalytics)
 import apply from "apply";
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

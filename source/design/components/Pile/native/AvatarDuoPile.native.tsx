@@ -1,10 +1,10 @@
-// Module ID: 13152
-// Function ID: 101296
+// Module ID: 13153
+// Function ID: 101301
 // Name: AvatarDuoPile
-// Dependencies: [31, 33, 9869, 11648, 7909, 22, 11953, 2]
+// Dependencies: [31, 33, 9869, 11649, 7909, 22, 11954, 2]
 // Exports: AvatarDuoPile
 
-// Module 13152 (AvatarDuoPile)
+// Module 13153 (AvatarDuoPile)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -21,15 +21,15 @@ export const AvatarDuoPile = function AvatarDuoPile(size) {
   if ("aria-label" in merged) {
     aria_label = merged["aria-label"];
   } else {
-    aria_label = require(11648) /* getListSummaryLabel */.getListSummaryLabel(merged.names);
-    const obj2 = require(11648) /* getListSummaryLabel */;
+    aria_label = require(11649) /* getListSummaryLabel */.getListSummaryLabel(merged.names);
+    const obj2 = require(11649) /* getListSummaryLabel */;
   }
   obj["aria-label"] = aria_label;
   obj.shape = require(7909) /* SolidCutout */.CutoutShape.Circle;
   if (obj3.isArray(size)) {
     let mapped = size.map((arg0) => outer1_0(outer1_1[6]).AVATAR_SIZE_MAP[arg0]);
   } else {
-    mapped = require(11953) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
+    mapped = require(11954) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
   }
   obj.size = mapped;
   obj.children = size.children;

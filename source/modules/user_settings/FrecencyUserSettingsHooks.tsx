@@ -1,5 +1,5 @@
 // Module ID: 9541
-// Function ID: 74475
+// Function ID: 74476
 // Name: useFrecencySettings
 // Dependencies: [31, 1316, 1331, 566, 2]
 // Exports: useFrecencySettings

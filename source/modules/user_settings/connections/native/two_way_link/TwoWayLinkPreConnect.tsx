@@ -1,5 +1,5 @@
 // Module ID: 8874
-// Function ID: 70192
+// Function ID: 70193
 // Name: _authorizeLink
 // Dependencies: [57, 5, 31, 27, 653, 33, 3, 4131, 4939, 8875, 3828, 477, 8870, 4940, 44, 686, 4127, 1212, 5121, 4544, 2]
 // Exports: TwoWayLinkPreConnect

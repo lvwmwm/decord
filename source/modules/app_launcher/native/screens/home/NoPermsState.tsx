@@ -1,10 +1,10 @@
-// Module ID: 11223
-// Function ID: 87332
+// Module ID: 11224
+// Function ID: 87337
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4131, 689, 3977, 4067, 11224, 11225, 11162, 7955, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3977, 4067, 11225, 11226, 11163, 7955, 4127, 1212, 2]
 // Exports: default
 
-// Module 11223 (EmptyState)
+// Module 11224 (EmptyState)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,11 +29,11 @@ export default function EmptyState() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = require(3977) /* AccessibilityAnnouncer */;
   if (obj.isThemeLight(importDefault(4067)())) {
-    let tmp4 = 11224;
+    let tmp4 = 11225;
   } else {
-    tmp4 = 11225;
+    tmp4 = 11226;
   }
-  let obj1 = require(11162) /* handleApplicationSelected */;
+  let obj1 = require(11163) /* handleApplicationSelected */;
   const logAppLauncherEmptyStateView = obj1.useLogAppLauncherEmptyStateView(require(7955) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   obj = { style: tmp.container };
   obj = { style: tmp.image, resizeMode: "contain", source: importDefault(tmp4) };

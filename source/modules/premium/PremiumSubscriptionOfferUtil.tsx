@@ -1,5 +1,5 @@
 // Module ID: 7780
-// Function ID: 61796
+// Function ID: 61797
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 31, 3783, 1852, 6188, 7781, 6204, 566, 3713, 6205, 6447, 1882, 7782, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer

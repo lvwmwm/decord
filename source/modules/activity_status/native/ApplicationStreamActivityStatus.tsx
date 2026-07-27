@@ -1,5 +1,5 @@
 // Module ID: 8999
-// Function ID: 70884
+// Function ID: 70885
 // Name: ApplicationStreamActivityStatus
 // Dependencies: [31, 33, 1212, 9000, 9001, 9003, 2]
 // Exports: default

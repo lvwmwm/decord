@@ -1,5 +1,5 @@
 // Module ID: 4336
-// Function ID: 38298
+// Function ID: 38299
 // Name: guildHasOnboardingHome
 // Dependencies: [653, 1841, 2]
 // Exports: default

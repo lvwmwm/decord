@@ -1,10 +1,10 @@
-// Module ID: 14078
-// Function ID: 107738
+// Module ID: 14079
+// Function ID: 107743
 // Name: QuestBottomSheetHeader
-// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 10427, 5955, 14051, 566, 9420, 5953, 1212, 14077, 4980, 14052, 4529, 4540, 4127, 4661, 8895, 2]
+// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 10428, 5955, 14052, 566, 9420, 5953, 1212, 14078, 4980, 14053, 4529, 4540, 4127, 4661, 8895, 2]
 // Exports: default
 
-// Module 14078 (QuestBottomSheetHeader)
+// Module 14079 (QuestBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -37,7 +37,7 @@ export default function QuestBottomSheetHeader(step) {
   let isScreenReaderEnabled;
   let ref;
   let tmp = _createForOfIteratorHelperLoose();
-  let obj = isScreenReaderEnabled(14052);
+  let obj = isScreenReaderEnabled(14053);
   const tmp3 = (function useHeaderCopy(quest) {
     quest = quest.quest;
     const step = quest.step;

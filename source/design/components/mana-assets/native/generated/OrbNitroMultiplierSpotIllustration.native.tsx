@@ -1,5 +1,5 @@
 // Module ID: 7316
-// Function ID: 60209
+// Function ID: 60210
 // Name: OrbNitroMultiplierSpotIllustration
 // Dependencies: [33, 5085, 7317, 2]
 // Exports: OrbNitroMultiplierSpotIllustration

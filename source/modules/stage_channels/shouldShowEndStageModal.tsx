@@ -1,10 +1,10 @@
-// Module ID: 10649
-// Function ID: 83056
+// Module ID: 10650
+// Function ID: 83061
 // Name: shouldShowEndStageModal
 // Dependencies: [1194, 4952, 4955, 1353, 4958, 2]
 // Exports: default
 
-// Module 10649 (shouldShowEndStageModal)
+// Module 10650 (shouldShowEndStageModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

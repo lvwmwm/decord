@@ -1,5 +1,5 @@
 // Module ID: 7817
-// Function ID: 62039
+// Function ID: 62040
 // Name: getInitialParserStateFromMessage
 // Dependencies: [7818, 4121, 2]
 // Exports: default, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser

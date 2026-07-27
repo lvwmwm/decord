@@ -1,5 +1,5 @@
 // Module ID: 7737
-// Function ID: 61678
+// Function ID: 61679
 // Name: AutomodRaidAlertTypes
 // Dependencies: [2]
 

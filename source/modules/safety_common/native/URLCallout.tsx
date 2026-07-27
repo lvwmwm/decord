@@ -1,10 +1,10 @@
-// Module ID: 12224
-// Function ID: 95519
+// Module ID: 12225
+// Function ID: 95524
 // Name: URLCallout
-// Dependencies: [31, 27, 33, 4131, 689, 12225, 4127, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 12226, 4127, 2]
 // Exports: URLCallout
 
-// Module 12224 (URLCallout)
+// Module 12225 (URLCallout)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export const URLCallout = function URLCallout(url) {
   let protocol;
   let theRestOfTheUrl;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(12225) /* useUrlParts */;
+  let obj = require(12226) /* useUrlParts */;
   const urlParts = obj.useUrlParts(url.url);
   obj = { style: tmp.linkCalloutContainer };
   ({ protocol, hostname, theRestOfTheUrl } = urlParts);

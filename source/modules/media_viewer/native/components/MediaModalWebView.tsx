@@ -1,5 +1,5 @@
 // Module ID: 8078
-// Function ID: 64308
+// Function ID: 64309
 // Name: PlayerState
 // Dependencies: [31, 27, 33, 477, 4131, 3992, 4132, 3828, 6702, 2]
 

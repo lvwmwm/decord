@@ -1,5 +1,5 @@
 // Module ID: 8164
-// Function ID: 65529
+// Function ID: 65530
 // Name: canEveryoneRoleViewEvent
 // Dependencies: [1353, 1348, 1908, 1838, 3759, 5751, 1354, 653, 3764, 8165, 566, 2]
 // Exports: default

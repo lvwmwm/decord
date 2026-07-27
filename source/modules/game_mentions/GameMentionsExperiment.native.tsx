@@ -1,5 +1,5 @@
 // Module ID: 9600
-// Function ID: 74899
+// Function ID: 74900
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getGameMentionsExperiment, useGameMentionsExperiment

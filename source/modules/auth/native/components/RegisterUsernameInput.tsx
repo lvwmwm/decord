@@ -1,10 +1,10 @@
-// Module ID: 14815
-// Function ID: 113026
+// Module ID: 14816
+// Function ID: 113031
 // Name: UsernameStatusMessage
-// Dependencies: [29, 57, 31, 14789, 33, 4131, 3992, 13724, 4542, 6673, 689, 4127, 1212, 14807, 6670, 477, 2]
+// Dependencies: [29, 57, 31, 14790, 33, 4131, 3992, 13725, 4542, 6673, 689, 4127, 1212, 14808, 6670, 477, 2]
 // Exports: RegisterUsernameInput
 
-// Module 14815 (UsernameStatusMessage)
+// Module 14816 (UsernameStatusMessage)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -31,7 +31,7 @@ function UsernameStatusMessage(arg0) {
   if (null != usernameStatus) {
     type = usernameStatus.type;
   }
-  if (type === require(13724) /* NameValidationState */.NameValidationState.ERROR) {
+  if (type === require(13725) /* NameValidationState */.NameValidationState.ERROR) {
     let obj = { direction: "horizontal", spacing: 4, align: "flex-start" };
     obj = { size: "xs", color: importDefault(689).colors.TEXT_FEEDBACK_CRITICAL };
     const items = [callback3(require(6673) /* CircleErrorIcon */.CircleErrorIcon, obj), ];
@@ -49,7 +49,7 @@ function UsernameStatusMessage(arg0) {
       if (null != usernameStatus) {
         type1 = usernameStatus.type;
       }
-      if (type1 === require(13724) /* NameValidationState */.NameValidationState.AVAILABLE) {
+      if (type1 === require(13725) /* NameValidationState */.NameValidationState.AVAILABLE) {
         const obj2 = {};
         const merged2 = Object.assign(_createForOfIteratorHelperLoose);
         const merged3 = Object.assign(_createForOfIteratorHelperLoose);
@@ -107,7 +107,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     tmp3 = autoFocus;
   }
   obj.enabled = tmp3;
-  importDefault(14807)(obj);
+  importDefault(14808)(obj);
   const tmp5 = callback(React.useState(true), 2);
   importDefault = tmp6;
   const tmp7 = callback2((errors) => errors.errors);
@@ -139,7 +139,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
   const tmp11 = closure_10;
   const tmp12 = closure_11;
   const tmp13 = callback3;
-  const tmp2 = importDefault(14807);
+  const tmp2 = importDefault(14808);
   obj.secureTextEntry = setUsername(477).isAndroid();
   const obj4 = setUsername(477);
   let str = "default";
@@ -161,7 +161,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     type = usernameStatus.type;
   }
   let str2;
-  if (type === setUsername(13724).NameValidationState.ERROR) {
+  if (type === setUsername(13725).NameValidationState.ERROR) {
     str2 = "error";
   }
   obj.status = str2;

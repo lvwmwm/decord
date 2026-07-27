@@ -1,5 +1,5 @@
 // Module ID: 7793
-// Function ID: 61868
+// Function ID: 61869
 // Name: createGiftIntentEmbed
 // Dependencies: [7794, 1850, 1852, 4131, 689, 1212, 7798, 3970, 7670, 4068, 7799, 7800, 2]
 // Exports: createGiftIntentEmbed

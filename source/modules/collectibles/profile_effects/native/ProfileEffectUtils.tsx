@@ -1,5 +1,5 @@
 // Module ID: 8000
-// Function ID: 63766
+// Function ID: 63767
 // Name: shouldAnimate
 // Dependencies: [8001, 2]
 // Exports: calculateProfileEffectHeight, shouldAnimate

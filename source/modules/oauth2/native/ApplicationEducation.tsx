@@ -1,5 +1,5 @@
 // Module ID: 8940
-// Function ID: 70623
+// Function ID: 70624
 // Name: ApplicationEducationEntry
 // Dependencies: [31, 27, 653, 33, 4131, 689, 8887, 8112, 1212, 3833, 8941, 8867, 8943, 4127, 8945, 2]
 // Exports: default

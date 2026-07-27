@@ -1,5 +1,5 @@
 // Module ID: 9840
-// Function ID: 76312
+// Function ID: 76313
 // Name: ArrowAngleRightUpIcon
 // Dependencies: [31, 33, 689, 3834, 9841, 2]
 // Exports: ArrowAngleRightUpIcon

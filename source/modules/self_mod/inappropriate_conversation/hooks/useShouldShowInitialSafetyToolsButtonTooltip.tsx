@@ -1,5 +1,5 @@
 // Module ID: 10093
-// Function ID: 78221
+// Function ID: 78222
 // Name: useShouldShowInitialSafetyToolsButtonTooltip
 // Dependencies: [9031, 10068, 566, 2]
 // Exports: useShouldShowInitialSafetyToolsButtonTooltip

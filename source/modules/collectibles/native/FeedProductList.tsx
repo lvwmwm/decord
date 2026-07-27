@@ -1,10 +1,10 @@
-// Module ID: 14549
-// Function ID: 111112
+// Module ID: 14550
+// Function ID: 111117
 // Name: SkeletonGrid
-// Dependencies: [31, 27, 33, 4131, 8592, 14550, 14042, 14551, 2]
+// Dependencies: [31, 27, 33, 4131, 8592, 14551, 14043, 14552, 2]
 // Exports: default
 
-// Module 14549 (SkeletonGrid)
+// Module 14550 (SkeletonGrid)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -60,7 +60,7 @@ export default function FeedProductList(arg0) {
     let tmp7 = <SkeletonGrid loadingCardsNum={tmp} accessibilityLabel={accessibilityLabel} />;
   } else {
     obj = { products, preferVCPrice: tmp2, accessibilityLabel, disableBundleStaticBackground: tmp3 };
-    tmp7 = jsx(importDefault(14551), { products, preferVCPrice: tmp2, accessibilityLabel, disableBundleStaticBackground: tmp3 });
+    tmp7 = jsx(importDefault(14552), { products, preferVCPrice: tmp2, accessibilityLabel, disableBundleStaticBackground: tmp3 });
   }
   return tmp7;
 };

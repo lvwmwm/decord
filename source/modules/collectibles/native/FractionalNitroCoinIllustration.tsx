@@ -1,5 +1,5 @@
 // Module ID: 8646
-// Function ID: 68676
+// Function ID: 68677
 // Name: FRACTIONAL_NITRO_COIN_SIZE
 // Dependencies: [31, 655, 33, 6727, 2]
 // Exports: FractionalNitroCoinIllustration

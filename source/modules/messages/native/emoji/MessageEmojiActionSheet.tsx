@@ -1,5 +1,5 @@
 // Module ID: 9341
-// Function ID: 72977
+// Function ID: 72978
 // Name: MessageStandardEmojiActionSheet
 // Dependencies: [31, 27, 653, 33, 4131, 477, 491, 5187, 675, 9342, 9348, 9349, 2]
 // Exports: default

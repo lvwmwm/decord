@@ -1,5 +1,5 @@
 // Module ID: 8008
-// Function ID: 63796
+// Function ID: 63797
 // Name: NameplateInner
 // Dependencies: [31, 4123, 33, 4131, 566, 4067, 3992, 4132, 1874, 8009, 4555, 477, 6153, 5085, 2]
 // Exports: default

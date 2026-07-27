@@ -1,5 +1,5 @@
 // Module ID: 9545
-// Function ID: 74489
+// Function ID: 74490
 // Name: getSearchPlaceholder
 // Dependencies: [1212, 2]
 // Exports: getSearchPlaceholder

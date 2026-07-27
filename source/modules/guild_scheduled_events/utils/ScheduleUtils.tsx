@@ -1,5 +1,5 @@
 // Module ID: 8148
-// Function ID: 65067
+// Function ID: 65068
 // Name: getNextBucketedTime
 // Dependencies: [1850, 8149, 1354, 8150, 1212, 3713, 3801, 21, 664, 22, 2]
 // Exports: areSchedulesIdentical, generateNextRecurrences, getBaseScheduleForRecurrence, getEventTimeData, getInitialEventEndDate, getInitialEventStartDate, getNextRecurrenceIdInEvent, getRecurrenceOptions, getRecurrenceStatus, getScheduleForRecurrenceWithException, getScheduleFromEventData, hasScheduleChanges, hasValidSchedule, isValidRecurrence, recurrenceOptionToRecurrenceRule, recurrenceRuleToOption

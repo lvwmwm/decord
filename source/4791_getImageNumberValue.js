@@ -1,5 +1,5 @@
 // Module ID: 4791
-// Function ID: 41671
+// Function ID: 41672
 // Name: getImageNumberValue
 // Dependencies: [4751, 4766, 4767, 4763, 4746]
 

@@ -1,5 +1,5 @@
 // Module ID: 4964
-// Function ID: 42677
+// Function ID: 42678
 // Name: useStageParticipants
 // Dependencies: [57, 4952, 566, 4965, 4958, 2]
 // Exports: useActualStageSpeakerCount, useSortedRequestToSpeakParticipants, useStageParticipants, useStageParticipantsCount

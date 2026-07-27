@@ -1,5 +1,5 @@
 // Module ID: 6604
-// Function ID: 58448
+// Function ID: 58449
 // Name: BuyNitroPurchaseButtonCrossfadeLayer
 // Dependencies: [57, 31, 27, 33, 3992, 4132, 4135, 4544, 2]
 // Exports: default, useBuyNitroButtonCrossfade

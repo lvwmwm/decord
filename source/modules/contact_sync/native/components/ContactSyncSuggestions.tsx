@@ -1,10 +1,10 @@
-// Module ID: 11724
-// Function ID: 91019
+// Module ID: 11725
+// Function ID: 91024
 // Name: SuggestedFriendsSectionHeader
-// Dependencies: [57, 31, 27, 653, 11725, 33, 4131, 689, 5084, 4550, 4127, 3970, 1392, 9024, 1273, 1212, 3835, 3975, 21, 7575, 6619, 4555, 668, 4544, 675, 2]
+// Dependencies: [57, 31, 27, 653, 11726, 33, 4131, 689, 5084, 4550, 4127, 3970, 1392, 9024, 1273, 1212, 3835, 3975, 21, 7575, 6619, 4555, 668, 4544, 675, 2]
 // Exports: default
 
-// Module 11724 (SuggestedFriendsSectionHeader)
+// Module 11725 (SuggestedFriendsSectionHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

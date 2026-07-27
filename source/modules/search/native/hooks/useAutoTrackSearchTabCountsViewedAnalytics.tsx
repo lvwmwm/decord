@@ -1,10 +1,10 @@
-// Module ID: 15472
-// Function ID: 118936
+// Module ID: 15485
+// Function ID: 118985
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
 // Dependencies: [31, 9033, 10040, 2]
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
-// Module 15472 (useAutoTrackSearchTabCountsViewedAnalytics)
+// Module 15485 (useAutoTrackSearchTabCountsViewedAnalytics)
 import result from "result";
 import { SearchTabs } from "SearchAutocompleteSelectAnalyticsActions";
 

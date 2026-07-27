@@ -1,10 +1,10 @@
-// Module ID: 13710
-// Function ID: 105279
+// Module ID: 13711
+// Function ID: 105284
 // Name: useIs2FAEnabled
 // Dependencies: [1194, 1850, 624, 2]
 // Exports: useIs2FAEnabled, useIsTOTPEnabled, useIsUserVerified
 
-// Module 13710 (useIs2FAEnabled)
+// Module 13711 (useIs2FAEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

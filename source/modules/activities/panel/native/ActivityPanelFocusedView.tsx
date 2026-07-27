@@ -1,9 +1,9 @@
-// Module ID: 15763
-// Function ID: 121595
+// Module ID: 15775
+// Function ID: 121642
 // Name: useBaseActivityPanelFocusedView
-// Dependencies: [31, 27, 4123, 1348, 1347, 4156, 5660, 15758, 653, 9976, 33, 4131, 689, 1557, 566, 1450, 15753, 15705, 3992, 4477, 4132, 4543, 3843, 4526, 3749, 15755, 15764, 5668, 10594, 2]
+// Dependencies: [31, 27, 4123, 1348, 1347, 4156, 5660, 15770, 653, 9976, 33, 4131, 689, 1557, 566, 1450, 15765, 15717, 3992, 4477, 4132, 4543, 3843, 4526, 3749, 15767, 15776, 5668, 10595, 2]
 
-// Module 15763 (useBaseActivityPanelFocusedView)
+// Module 15775 (useBaseActivityPanelFocusedView)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

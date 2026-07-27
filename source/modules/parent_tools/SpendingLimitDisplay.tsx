@@ -1,10 +1,10 @@
-// Module ID: 13874
-// Function ID: 106282
+// Module ID: 13875
+// Function ID: 106287
 // Name: getSpendingLimitDisplayState
-// Dependencies: [1316, 5765, 1852, 566, 13792, 5616, 5617, 1212, 2199, 2]
+// Dependencies: [1316, 5765, 1852, 566, 13793, 5616, 5617, 1212, 2199, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 13874 (getSpendingLimitDisplayState)
+// Module 13875 (getSpendingLimitDisplayState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -69,7 +69,7 @@ export const useSpendingLimitFromUserSettings = function useSpendingLimitFromUse
       tmp2 = obj;
     }
     return tmp2;
-  }, undefined, require(13792) /* spendingLimitEqual */.spendingLimitEqual);
+  }, undefined, require(13793) /* spendingLimitEqual */.spendingLimitEqual);
 };
 export const CLOSE_TO_LIMIT_THRESHOLD_MAJOR_UNITS = 10;
 export { getSpendingLimitDisplayState };

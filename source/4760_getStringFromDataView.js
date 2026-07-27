@@ -1,5 +1,5 @@
 // Module ID: 4760
-// Function ID: 41337
+// Function ID: 41338
 // Name: getStringFromDataView
 // Dependencies: [4746]
 

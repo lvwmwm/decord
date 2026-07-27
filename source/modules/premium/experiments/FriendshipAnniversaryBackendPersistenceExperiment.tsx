@@ -1,5 +1,5 @@
 // Module ID: 6128
-// Function ID: 54989
+// Function ID: 54990
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isFriendshipAnniversaryBackendPersistenceEnabled

@@ -1,5 +1,5 @@
 // Module ID: 7962
-// Function ID: 63388
+// Function ID: 63389
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 31, 1838, 5669, 4567, 653, 5674, 5680, 566, 5682, 1327, 1882, 5677, 7963, 5676, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useDiscovery, useQuery

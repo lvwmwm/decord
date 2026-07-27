@@ -1,5 +1,5 @@
 // Module ID: 6127
-// Function ID: 54978
+// Function ID: 54979
 // Name: dismissGiftIntent
 // Dependencies: [5892, 1194, 4350, 1852, 653, 507, 686, 1184, 675, 6128, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown

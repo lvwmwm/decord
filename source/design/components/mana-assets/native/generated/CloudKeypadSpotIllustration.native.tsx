@@ -1,5 +1,5 @@
 // Module ID: 6864
-// Function ID: 59531
+// Function ID: 59532
 // Name: CloudKeypadSpotIllustration
 // Dependencies: [33, 5085, 6865, 2]
 // Exports: CloudKeypadSpotIllustration

@@ -1,5 +1,5 @@
 // Module ID: 9514
-// Function ID: 74284
+// Function ID: 74285
 // Name: getMentionTextWithUser
 // Dependencies: [31, 27, 1352, 1908, 3768, 1850, 653, 9515, 4568, 33, 4131, 689, 4321, 4975, 3970, 7582, 2]
 // Exports: getAutocompleteResultText, getItemLayout, getItemSeparator, getPrefix, getQuery, isUnbrokenRun, isWhitespaceSeparatingBoundary

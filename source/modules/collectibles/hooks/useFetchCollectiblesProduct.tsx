@@ -1,5 +1,5 @@
 // Module ID: 7983
-// Function ID: 63628
+// Function ID: 63629
 // Name: useFetchCollectiblesProduct
 // Dependencies: [57, 31, 4176, 5770, 653, 624, 1877, 5769, 2]
 // Exports: useFetchCollectiblesProduct

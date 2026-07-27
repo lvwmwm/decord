@@ -1,5 +1,5 @@
 // Module ID: 7706
-// Function ID: 61560
+// Function ID: 61561
 // Name: createChannelPinnedMessageSystemMessage
 // Dependencies: [7684, 7686, 1212, 7687, 7690, 2]
 // Exports: createChannelPinnedMessageSystemMessage

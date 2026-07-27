@@ -1,10 +1,10 @@
-// Module ID: 16518
-// Function ID: 128758
+// Module ID: 16530
+// Function ID: 128805
 // Name: PriceTier
-// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 5616, 1212, 14181, 14177, 5085, 16519, 16513, 16492, 14188, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 5616, 1212, 14182, 14178, 5085, 16531, 16525, 16504, 14189, 2]
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 16518 (PriceTier)
+// Module 16530 (PriceTier)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -31,7 +31,7 @@ function PriceTier(arg0) {
   const items = [callback2(require(4127) /* Text */.Text, obj), ];
   const obj1 = { style: tmp3.priceInterval, variant: "eyebrow", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj2 = { period: require(14181) /* getBenefitKey */.formatPlanInterval(merged) };
+  obj2 = { period: require(14182) /* getBenefitKey */.formatPlanInterval(merged) };
   obj1.children = intl.format(require(1212) /* getSystemLocale */.t.isLGyX, obj2);
   items[1] = callback2(require(4127) /* Text */.Text, obj1);
   obj.children = items;
@@ -40,11 +40,11 @@ function PriceTier(arg0) {
 function Header(onPress) {
   const listingId = onPress.listingId;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(14177);
-  let obj1 = importAll(14177);
-  let obj2 = importAll(14177);
+  let obj = importAll(14178);
+  let obj1 = importAll(14178);
+  let obj2 = importAll(14178);
   const first = callback(obj2.useImage(listingId), 1)[0];
-  let obj3 = importAll(14177);
+  let obj3 = importAll(14178);
   obj = { style: tmp.header };
   obj = { variant: "heading-md/semibold", color: "interactive-text-active", children: callback(obj1.useName(listingId), 1)[0] };
   const items = [callback2(require(4127) /* Text */.Text, obj), , , , ];
@@ -60,7 +60,7 @@ function Header(onPress) {
   obj3 = {};
   const merged = Object.assign(callback(obj.useSubscriptionPlan(listingId), 1)[0]);
   items[2] = callback2(PriceTier, obj3);
-  items[3] = callback2(require(16519) /* GuildPremiumRoleSubscribeButton */.GuildPremiumRoleSubscribeButton, { onPress: onPress.onSubscribePress });
+  items[3] = callback2(require(16531) /* GuildPremiumRoleSubscribeButton */.GuildPremiumRoleSubscribeButton, { onPress: onPress.onSubscribePress });
   items[4] = callback2(require(4127) /* Text */.Text, { variant: "text-sm/medium", children: callback(obj3.useDescription(listingId), 1)[0] });
   obj.children = items;
   return closure_7(View, obj);
@@ -205,11 +205,11 @@ export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptio
   let listingId;
   const tmp = _createForOfIteratorHelperLoose();
   ({ guildId, listingId } = arg0);
-  let obj = importAll(14177);
+  let obj = importAll(14178);
   const first = callback(obj.useChannelBenefits(listingId), 1)[0];
-  let obj1 = importAll(14177);
+  let obj1 = importAll(14178);
   const first1 = callback(obj1.useIntangibleBenefits(listingId), 1)[0];
-  let obj2 = importAll(14177);
+  let obj2 = importAll(14178);
   obj = { style: tmp.container };
   obj = {};
   const role = obj2.useRole(listingId, guildId);
@@ -218,7 +218,7 @@ export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptio
   obj1 = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.label = intl.string(require(1212) /* getSystemLocale */.t.FJZmYx);
-  obj1.children = callback2(require(14188) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { role });
+  obj1.children = callback2(require(14189) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { role });
   items[1] = callback2(LabeledSection, obj1);
   let tmp6 = first.length > 0;
   if (tmp6) {

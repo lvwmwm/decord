@@ -1,10 +1,10 @@
-// Module ID: 15722
-// Function ID: 121312
+// Module ID: 15734
+// Function ID: 121359
 // Name: ChannelContent
-// Dependencies: [31, 27, 10222, 4327, 33, 4131, 477, 15717, 4624, 15723, 4127, 4653, 7570, 15028, 2]
+// Dependencies: [31, 27, 10223, 4327, 33, 4131, 477, 15729, 4624, 15735, 4127, 4653, 7570, 15029, 2]
 // Exports: default
 
-// Module 15722 (ChannelContent)
+// Module 15734 (ChannelContent)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
@@ -82,13 +82,13 @@ function ChannelContent(arg0) {
   const tmp16 = closure_8;
   const tmp17 = View;
   const tmp18 = callback;
-  const tmp2 = importDefault(15717)();
+  const tmp2 = importDefault(15729)();
   if (null == resolvedUnreadSetting) {
     resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
   }
   obj4.resolvedUnreadSetting = resolvedUnreadSetting;
   obj4.connected = connected;
-  const items1 = [tmp18(importDefault(15723), obj4), , ];
+  const items1 = [tmp18(importDefault(15735), obj4), , ];
   let tmp21 = null;
   if (null != channelCategoryName) {
     const obj5 = { variant: "text-xs/bold", color: "text-muted" };
@@ -128,7 +128,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj11 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = callback(importDefault(15028), obj11);
+      isSubscriptionGated = callback(importDefault(15029), obj11);
     }
     items3[2] = isSubscriptionGated;
     obj7.children = items3;

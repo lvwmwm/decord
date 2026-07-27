@@ -1,5 +1,5 @@
 // Module ID: 4042
-// Function ID: 33660
+// Function ID: 33661
 // Name: items
 // Dependencies: [4043, 2]
 // Exports: getGameServerEnabled, useGameServerEnabled

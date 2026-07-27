@@ -1,9 +1,9 @@
-// Module ID: 12306
-// Function ID: 95883
+// Module ID: 12307
+// Function ID: 95888
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4154, 4815, 2]
 
-// Module 12306 (_isNativeReflectConstruct)
+// Module 12307 (_isNativeReflectConstruct)
 import getPlatformUserUrl from "getPlatformUserUrl";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,10 +1,10 @@
-// Module ID: 11433
-// Function ID: 88897
+// Module ID: 11434
+// Function ID: 88902
 // Name: ApplicationCommandsCategories
-// Dependencies: [31, 27, 1278, 1918, 11430, 33, 4131, 689, 566, 11328, 5085, 4661, 1212, 1324, 4100, 4101, 4534, 3977, 2]
+// Dependencies: [31, 27, 1278, 1918, 11431, 33, 4131, 689, 566, 11329, 5085, 4661, 1212, 1324, 4100, 4101, 4534, 3977, 2]
 // Exports: default
 
-// Module 11433 (ApplicationCommandsCategories)
+// Module 11434 (ApplicationCommandsCategories)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 15545
-// Function ID: 119662
+// Module ID: 15558
+// Function ID: 119711
 // Name: YouAvatar
-// Dependencies: [57, 31, 27, 1340, 4811, 5630, 8043, 5510, 1345, 33, 15538, 15157, 477, 8042, 8017, 11989, 11990, 8045, 8320, 1334, 8379, 11919, 4544, 9034, 689, 1212, 15546, 1457, 7922, 8018, 8033, 566, 1324, 8015, 8019, 12217, 15547, 12103, 12109, 12110, 11905, 15548, 12113, 14725, 11921, 11890, 7582, 12119, 15550, 11976, 12124, 12131, 8162, 3992, 5449, 11901, 8317, 8254, 11645, 8685, 2]
+// Dependencies: [57, 31, 27, 1340, 4811, 5630, 8043, 5510, 1345, 33, 15551, 15170, 477, 8042, 8017, 11990, 11991, 8045, 8320, 1334, 8379, 11920, 4544, 9034, 689, 1212, 15559, 1457, 7922, 8018, 8033, 566, 1324, 8015, 8019, 12218, 15560, 12104, 12110, 12111, 11906, 15561, 12114, 14726, 11922, 11891, 7582, 12120, 15563, 11977, 12125, 12132, 8162, 3992, 5449, 11902, 8317, 8254, 11646, 8685, 2]
 // Exports: default
 
-// Module 15545 (YouAvatar)
+// Module 15558 (YouAvatar)
 import getStatusLabel from "getStatusLabel";
 import initialize from "initialize";
 import get_ActivityIndicator from "Link";
@@ -57,9 +57,9 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
     tmp2 = items;
   }
   obj = { style: tmp.profileContent };
-  const items1 = [callback2(importDefault(11989), {}), ];
+  const items1 = [callback2(importDefault(11990), {}), ];
   const obj1 = { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp2 };
-  items1[1] = callback2(importDefault(11990), obj1);
+  items1[1] = callback2(importDefault(11991), obj1);
   obj.children = items1;
   return callback3(closure_6, obj);
 }
@@ -101,9 +101,9 @@ function EditSection(navigateToProfileCustomization) {
     obj1.onPress = callback;
     obj1.grow = true;
     obj.secondaryButton = callback2(navigateToProfileCustomization(4544).Button, obj1);
-    const items2 = [callback2(trackUserProfileAction(11919), obj), ];
+    const items2 = [callback2(trackUserProfileAction(11920), obj), ];
     const obj3 = { targetRef: ref, visible: tmp14, markAsDismissed: tmp10[1] };
-    items2[1] = callback2(trackUserProfileAction(15546), obj3);
+    items2[1] = callback2(trackUserProfileAction(15559), obj3);
     obj.children = items2;
     return callback3(closure_15, obj);
   }

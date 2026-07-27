@@ -1,10 +1,10 @@
-// Module ID: 13043
-// Function ID: 100929
+// Module ID: 13044
+// Function ID: 100934
 // Name: GuildActionSheetTabItems
-// Dependencies: [31, 1348, 1908, 1907, 653, 33, 13031, 4038, 566, 8289, 8286, 4966, 6625, 1212, 6561, 689, 4325, 4099, 4967, 10159, 7673, 5079, 8944, 8242, 2]
+// Dependencies: [31, 1348, 1908, 1907, 653, 33, 13032, 4038, 566, 8289, 8286, 4966, 6625, 1212, 6561, 689, 4325, 4099, 4967, 10160, 7673, 5079, 8944, 8242, 2]
 // Exports: default
 
-// Module 13043 (GuildActionSheetTabItems)
+// Module 13044 (GuildActionSheetTabItems)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -25,7 +25,7 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export default function GuildActionSheetTabItems(guild) {
   guild = guild.guild;
-  let obj = guild(13031);
+  let obj = guild(13032);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   const total = stateFromStores(4038)(guild.id).total;
   let obj1 = guild(566);
@@ -72,7 +72,7 @@ export default function GuildActionSheetTabItems(guild) {
     let obj3 = { variant: "secondary" };
     const intl3 = guild(1212).intl;
     obj3.label = intl3.string(guild(1212).t.VINpSK);
-    obj3.icon = stateFromStores(10159);
+    obj3.icon = stateFromStores(10160);
     obj3.grow = true;
     obj3.onPress = function onPress() {
       stateFromStores(outer1_3[17]).hideActionSheet();

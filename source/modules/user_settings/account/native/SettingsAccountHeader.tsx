@@ -1,9 +1,9 @@
-// Module ID: 13711
-// Function ID: 105286
+// Module ID: 13712
+// Function ID: 105291
 // Name: RestrictedAccountRedirect
-// Dependencies: [31, 27, 3768, 1850, 653, 6659, 33, 4131, 689, 13712, 1212, 6554, 566, 9162, 9109, 5164, 4544, 2]
+// Dependencies: [31, 27, 3768, 1850, 653, 6659, 33, 4131, 689, 13713, 1212, 6554, 566, 9162, 9109, 5164, 4544, 2]
 
-// Module 13711 (RestrictedAccountRedirect)
+// Module 13712 (RestrictedAccountRedirect)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,7 +26,7 @@ function RestrictedAccountRedirect() {
     },
     noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   };
-  return callback(importDefault(13712), obj);
+  return callback(importDefault(13713), obj);
 }
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let obj = {};

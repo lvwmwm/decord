@@ -1,5 +1,5 @@
 // Module ID: 9571
-// Function ID: 74683
+// Function ID: 74684
 // Name: generateListData
 // Dependencies: [31, 27, 33, 4131, 689, 4467, 1212, 4127, 4661, 2]
 // Exports: default, doesStickerPackHavePopoutInformation

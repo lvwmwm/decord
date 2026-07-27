@@ -1,10 +1,10 @@
-// Module ID: 15044
-// Function ID: 114649
+// Module ID: 15056
+// Function ID: 114695
 // Name: GuildHeaderCoachmarks
-// Dependencies: [57, 31, 3759, 653, 1345, 33, 566, 15045, 15046, 15048, 11541, 15055, 11532, 11533, 1334, 8379, 11529, 15056, 15057, 15059, 2]
+// Dependencies: [57, 31, 3759, 653, 1345, 33, 566, 15057, 15058, 15060, 11542, 15067, 11533, 11534, 1334, 8379, 11530, 15068, 15069, 15071, 2]
 // Exports: default
 
-// Module 15044 (GuildHeaderCoachmarks)
+// Module 15056 (GuildHeaderCoachmarks)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

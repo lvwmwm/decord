@@ -1,9 +1,9 @@
-// Module ID: 15860
-// Function ID: 122485
+// Module ID: 15872
+// Function ID: 122532
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 8764, 1348, 4203, 15861, 8765, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 27, 8764, 1348, 4203, 15873, 8765, 566, 686, 2]
 
-// Module 15860 (_isNativeReflectConstruct)
+// Module 15872 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -118,8 +118,8 @@ tmp2 = new tmp2(require("dispatcher"), {
               let defaultSpeakerForGuildCall = channel.isGuildVoice();
               if (defaultSpeakerForGuildCall) {
                 let obj = { location: "StageChannelAudioStore" };
-                defaultSpeakerForGuildCall = importDefault(15861).getConfig(obj).defaultSpeakerForGuildCall;
-                const obj2 = importDefault(15861);
+                defaultSpeakerForGuildCall = importDefault(15873).getConfig(obj).defaultSpeakerForGuildCall;
+                const obj2 = importDefault(15873);
               }
               isGuildStageVoiceResult = defaultSpeakerForGuildCall;
             }
@@ -127,8 +127,8 @@ tmp2 = new tmp2(require("dispatcher"), {
               let defaultSpeakerForDMCall = channel.isDM();
               if (defaultSpeakerForDMCall) {
                 obj = { location: "StageChannelAudioStore" };
-                defaultSpeakerForDMCall = importDefault(15861).getConfig(obj).defaultSpeakerForDMCall;
-                const obj4 = importDefault(15861);
+                defaultSpeakerForDMCall = importDefault(15873).getConfig(obj).defaultSpeakerForDMCall;
+                const obj4 = importDefault(15873);
               }
               isGuildStageVoiceResult = defaultSpeakerForDMCall;
             }

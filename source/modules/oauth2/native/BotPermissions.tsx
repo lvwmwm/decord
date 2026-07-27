@@ -1,5 +1,5 @@
 // Module ID: 8949
-// Function ID: 70662
+// Function ID: 70663
 // Name: BotPermissions
 // Dependencies: [57, 31, 27, 33, 4131, 689, 3764, 483, 8891, 8950, 4542, 5119, 4127, 1212, 2]
 // Exports: default

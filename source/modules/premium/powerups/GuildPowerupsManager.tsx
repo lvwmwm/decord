@@ -1,9 +1,9 @@
-// Module ID: 16105
-// Function ID: 124768
+// Module ID: 16117
+// Function ID: 124815
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 3759, 3948, 4018, 1841, 4042, 4059, 4061, 4062, 11537, 11541, 15055, 4369, 4060, 11530, 11516, 11608, 4027, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1838, 3759, 3948, 4018, 1841, 4042, 4059, 4061, 4062, 11538, 11542, 15067, 4369, 4060, 11531, 11517, 11609, 4027, 5078, 2]
 
-// Module 16105 (_isNativeReflectConstruct)
+// Module 16117 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getHasAllocateBoostPermission from "getHasAllocateBoostPermission";

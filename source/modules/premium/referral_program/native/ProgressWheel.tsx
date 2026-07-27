@@ -1,10 +1,10 @@
-// Module ID: 12416
-// Function ID: 96365
+// Module ID: 12417
+// Function ID: 96370
 // Name: ProgressWheel
-// Dependencies: [27, 33, 4131, 3835, 689, 12408, 5085, 12417, 8463, 12418, 2]
+// Dependencies: [27, 33, 4131, 3835, 689, 12409, 5085, 12418, 8463, 12419, 2]
 // Exports: default
 
-// Module 12416 (ProgressWheel)
+// Module 12417 (ProgressWheel)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,9 +24,9 @@ export default function ProgressWheel(nReferralsSent) {
   let obj1 = require(3835) /* map */;
   obj = { style: tmp.progressCircleContainer };
   const token1 = obj1.useToken(importDefault(689).colors.BACKGROUND_SURFACE_HIGH);
-  let tmp6 = nReferralsSent === require(12408) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT;
+  let tmp6 = nReferralsSent === require(12409) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT;
   if (tmp6) {
-    obj = { source: importDefault(12417), style: tmp.glowImage };
+    obj = { source: importDefault(12418), style: tmp.glowImage };
     tmp6 = callback(importDefault(5085), obj);
     const tmp10 = importDefault(5085);
   }
@@ -43,7 +43,7 @@ export default function ProgressWheel(nReferralsSent) {
   const tmp11 = importDefault(8463);
   const tmp4 = callback2;
   const tmp5 = View;
-  obj5.uri = importDefault(12418);
+  obj5.uri = importDefault(12419);
   obj4.source = obj5;
   obj4.style = tmp.progressCircleImage;
   items[2] = callback(importDefault(5085), obj4);

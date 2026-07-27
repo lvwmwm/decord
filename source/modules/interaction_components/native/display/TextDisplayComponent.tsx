@@ -1,8 +1,8 @@
-// Module ID: 14745
-// Function ID: 112405
-// Dependencies: [57, 31, 27, 4123, 1907, 7831, 33, 477, 3995, 14746, 7832, 44, 4121, 7817, 566, 3804, 9440, 10842, 2]
+// Module ID: 14746
+// Function ID: 112410
+// Dependencies: [57, 31, 27, 4123, 1907, 7831, 33, 477, 3995, 14747, 7832, 44, 4121, 7817, 566, 3804, 9440, 10843, 2]
 
-// Module 14745
+// Module 14746
 import _slicedToArray from "_slicedToArray";
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,13 +46,13 @@ if (!set.isAndroid()) {
     obj.onTapLink = function onTapLink(nativeEvent) {
       const result = channelId(outer1_2[16]).handleMessagesTapURLLink(nativeEvent.nativeEvent.data, channelId);
     };
-    obj.onLongPressLink = channelId(10842).contentHandlers.onLongPressLink;
-    obj.onTapAttachmentLink = channelId(10842).contentHandlers.onTapAttachmentLink;
-    obj.onLongPressAttachmentLink = channelId(10842).contentHandlers.onLongPressAttachmentLink;
-    obj.onTapMention = channelId(10842).contentHandlers.onTapMention;
-    obj.onTapTimestamp = channelId(10842).contentHandlers.onTapTimestamp;
-    obj.onTapInlineCode = channelId(10842).contentHandlers.onTapInlineCode;
-    obj.onTapEmoji = channelId(10842).contentHandlers.onTapEmoji;
+    obj.onLongPressLink = channelId(10843).contentHandlers.onLongPressLink;
+    obj.onTapAttachmentLink = channelId(10843).contentHandlers.onTapAttachmentLink;
+    obj.onLongPressAttachmentLink = channelId(10843).contentHandlers.onLongPressAttachmentLink;
+    obj.onTapMention = channelId(10843).contentHandlers.onTapMention;
+    obj.onTapTimestamp = channelId(10843).contentHandlers.onTapTimestamp;
+    obj.onTapInlineCode = channelId(10843).contentHandlers.onTapInlineCode;
+    obj.onTapEmoji = channelId(10843).contentHandlers.onTapEmoji;
     obj.style = { width: "100%" };
     return <closure_8 />;
   };

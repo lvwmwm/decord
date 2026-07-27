@@ -1,9 +1,9 @@
-// Module ID: 11214
-// Function ID: 87259
+// Module ID: 11215
+// Function ID: 87264
 // Name: getApplicationIdFromApplicationItem
-// Dependencies: [57, 31, 27, 5669, 11179, 1455, 33, 4131, 689, 11162, 11167, 5164, 7953, 11215, 7955, 11165, 1557, 8759, 7952, 11178, 5676, 5674, 11216, 11217, 1212, 3844, 11200, 11193, 11212, 4127, 11218, 8174, 11219, 2]
+// Dependencies: [57, 31, 27, 5669, 11180, 1455, 33, 4131, 689, 11163, 11168, 5164, 7953, 11216, 7955, 11166, 1557, 8759, 7952, 11179, 5676, 5674, 11217, 11218, 1212, 3844, 11201, 11194, 11213, 4127, 11219, 8174, 11220, 2]
 
-// Module 11214 (getApplicationIdFromApplicationItem)
+// Module 11215 (getApplicationIdFromApplicationItem)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "TwinButtons";
 import { View } from "AppRowLabel";
@@ -40,18 +40,18 @@ function CommandRow(arg0) {
   let onPress;
   ({ command, application } = arg0);
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  let obj = require(11162) /* handleApplicationSelected */;
+  let obj = require(11163) /* handleApplicationSelected */;
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp2 = null != appLauncherIconSource;
   if (tmp2) {
     obj = { iconSource: appLauncherIconSource };
-    tmp2 = callback2(importDefault(11167), obj);
+    tmp2 = callback2(importDefault(11168), obj);
   }
   obj = { icon: tmp2, label: command.displayName, subLabel: require(7953) /* _createForOfIteratorHelperLoose */.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress };
   const obj1 = { command, context, beforeExecuteCommand, onExecuteCommand };
   const obj4 = require(7953) /* _createForOfIteratorHelperLoose */;
   obj1.sectionName = require(7955) /* AppLauncherEntrypoint */.AppLauncherSectionName.SEARCH;
-  obj.trailing = callback2(importDefault(11215), obj1);
+  obj.trailing = callback2(importDefault(11216), obj1);
   return callback2(require(5164) /* TableRowInner */.TableRow, obj);
 }
 function PlaceholderCommandRow(isFirstRow) {
@@ -64,9 +64,9 @@ function PlaceholderCommandRow(isFirstRow) {
     flag2 = false;
   }
   const tmp = callback3();
-  let obj = require(11165) /* usePlaceholderWidth */;
+  let obj = require(11166) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  let obj1 = require(11165) /* usePlaceholderWidth */;
+  let obj1 = require(11166) /* usePlaceholderWidth */;
   const placeholderWidth1 = obj1.usePlaceholderWidth(30, 90);
   obj = {};
   obj = { style: tmp.loadingCommandAppIcon };

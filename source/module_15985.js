@@ -1,33 +1,50 @@
 // Module ID: 15985
-// Function ID: 123597
+// Function ID: 123618
 // Dependencies: []
 
 // Module 15985
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "it",
+arg5.default = {
+  locale: "en",
   pluralRuleFunction(arg0, arg1) {
-    String(arg0);
+    const parts = String(arg0).split(".");
+    let substr1 = Number(parts[0]) == arg0;
+    let substr = substr1;
+    if (substr1) {
+      const first = parts[0];
+      substr = first.slice(-1);
+    }
+    if (substr1) {
+      const first1 = parts[0];
+      substr1 = first1.slice(-2);
+    }
     if (arg1) {
-      if (11 != arg0) {
-        if (8 != arg0) {
-          if (80 != arg0) {
-            let str3 = "other";
+      if (1 != substr) {
+        if (2 != substr) {
+          let str7 = "other";
+          if (3 == substr) {
+            str7 = "other";
+            if (13 != substr1) {
+              str7 = "few";
+            }
           }
-          let str2 = str3;
+          let str5 = str7;
+        } else {
+          str5 = "two";
         }
+        let str4 = str5;
+      } else {
+        str4 = "one";
       }
-      str3 = "many";
+      let str3 = str4;
     } else {
-      str2 = "other";
+      str3 = "other";
       if (1 == arg0) {
-        str2 = "other";
+        str3 = "other";
         if (tmp2) {
-          str2 = "one";
+          str3 = "one";
         }
       }
     }
-    return str2;
+    return str3;
   }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "it-CH", parentLocale: "it" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "it-SM", parentLocale: "it" });
+};

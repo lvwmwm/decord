@@ -1,10 +1,10 @@
-// Module ID: 11127
-// Function ID: 86572
+// Module ID: 11128
+// Function ID: 86577
 // Name: ForumPostAppliedTagPills
 // Dependencies: [31, 27, 33, 4131, 689, 9604, 2]
 // Exports: ForumPostAppliedTagPills, ForumPostAppliedTags
 
-// Module 11127 (ForumPostAppliedTagPills)
+// Module 11128 (ForumPostAppliedTagPills)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

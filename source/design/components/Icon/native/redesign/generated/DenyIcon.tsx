@@ -1,10 +1,10 @@
-// Module ID: 10387
-// Function ID: 80160
+// Module ID: 10388
+// Function ID: 80165
 // Name: DenyIcon
 // Dependencies: [31, 33, 689, 3834, 8301, 2]
 // Exports: DenyIcon
 
-// Module 10387 (DenyIcon)
+// Module 10388 (DenyIcon)
 import "result";
 import { jsx } from "jsxProd";
 

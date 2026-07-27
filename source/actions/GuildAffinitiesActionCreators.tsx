@@ -1,5 +1,5 @@
 // Module ID: 8119
-// Function ID: 64709
+// Function ID: 64710
 // Name: fetchGuildAffinities
 // Dependencies: [653, 507, 686, 2]
 // Exports: fetchGuildAffinities

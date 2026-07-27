@@ -1,10 +1,10 @@
-// Module ID: 10908
-// Function ID: 84752
+// Module ID: 10909
+// Function ID: 84757
 // Name: CancelButton
-// Dependencies: [57, 5, 31, 27, 4123, 1850, 6271, 4977, 653, 655, 33, 4338, 10908, 1935, 4131, 689, 5094, 5119, 1212, 5085, 6153, 478, 10909, 8080, 10910, 10911, 10912, 10913, 566, 8651, 668, 9420, 8105, 5769, 5482, 10897, 4980, 10429, 5121, 4127, 8637, 4544, 2]
+// Dependencies: [57, 5, 31, 27, 4123, 1850, 6271, 4977, 653, 655, 33, 4338, 10909, 1935, 4131, 689, 5094, 5119, 1212, 5085, 6153, 478, 10910, 8080, 10911, 10912, 10913, 10914, 566, 8651, 668, 9420, 8105, 5769, 5482, 10898, 4980, 10430, 5121, 4127, 8637, 4544, 2]
 // Exports: default, openQuestOrbsRewardModal
 
-// Module 10908 (CancelButton)
+// Module 10909 (CancelButton)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importAllResult from "getCollectiblesQuestReward";
@@ -49,7 +49,7 @@ function StaticOrb() {
   obj = {};
   obj = {};
   const tmp = callback6();
-  obj.uri = importDefault(10911);
+  obj.uri = importDefault(10912);
   obj.source = obj;
   obj.style = tmp.animatedOrb;
   obj.fade = false;
@@ -213,7 +213,7 @@ let closure_23 = importAllResult.memo((style) => {
   let obj = {};
   ({ useReducedMotion, onStaticBgLoad, onAnimatedBgLoad, isAppActive } = style);
   obj = {};
-  obj = { uri: importDefault(10909) };
+  obj = { uri: importDefault(10910) };
   obj.source = obj;
   obj.style = style;
   obj.resizeMode = "cover";
@@ -222,7 +222,7 @@ let closure_23 = importAllResult.memo((style) => {
   let tmp3 = !useReducedMotion && isAppActive;
   if (tmp3) {
     const obj1 = { source: null, style: null, resizeMode: "cover", onLoad: null, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    const obj2 = { uri: importDefault(10910) };
+    const obj2 = { uri: importDefault(10911) };
     obj1.source = obj2;
     obj1.style = style;
     obj1.onLoad = onAnimatedBgLoad;
@@ -299,7 +299,7 @@ export default function QuestOrbsRewardModal(quest) {
     obj = { filter: outer1_12.VIRTUAL_CURRENCY, fromContent: balance(outer1_2[36]).QuestContent.REWARD_MODAL };
     balance(outer1_2[35]).openQuestHome(obj);
   }, []);
-  let obj5 = balance(10429);
+  let obj5 = balance(10430);
   variant = obj5.useMobileQuestOrbRewardModalCtaPriorityExperiment().variant;
   let num2 = 0;
   if (null != balance) {

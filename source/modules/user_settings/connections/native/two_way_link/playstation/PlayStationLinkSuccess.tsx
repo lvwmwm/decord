@@ -1,5 +1,5 @@
 // Module ID: 8908
-// Function ID: 70488
+// Function ID: 70489
 // Name: PlayStationLinkSuccess
 // Dependencies: [31, 27, 33, 4131, 8870, 8909, 4127, 1212, 5121, 4544, 2]
 // Exports: PlayStationLinkSuccess

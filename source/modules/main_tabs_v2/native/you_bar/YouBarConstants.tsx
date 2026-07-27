@@ -1,9 +1,9 @@
-// Module ID: 14058
-// Function ID: 107631
+// Module ID: 14059
+// Function ID: 107636
 // Name: CONNECTION_BANNER_HEIGHT
 // Dependencies: [27, 689, 1273, 2]
 
-// Module 14058 (CONNECTION_BANNER_HEIGHT)
+// Module 14059 (CONNECTION_BANNER_HEIGHT)
 import { PixelRatio } from "get ActivityIndicator";
 import roundToNearestPixelResult from "module_14";
 

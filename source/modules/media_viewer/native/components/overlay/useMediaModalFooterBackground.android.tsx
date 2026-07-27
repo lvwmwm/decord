@@ -1,10 +1,10 @@
-// Module ID: 12245
-// Function ID: 95623
+// Module ID: 12246
+// Function ID: 95628
 // Name: useMediaModalFooterBackground
 // Dependencies: [57, 666, 3835, 689, 2]
 // Exports: default
 
-// Module 12245 (useMediaModalFooterBackground)
+// Module 12246 (useMediaModalFooterBackground)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;

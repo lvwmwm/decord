@@ -1,10 +1,10 @@
-// Module ID: 10915
-// Function ID: 84797
+// Module ID: 10916
+// Function ID: 84802
 // Name: CloudIcon
-// Dependencies: [31, 33, 689, 3834, 10916, 2]
+// Dependencies: [31, 33, 689, 3834, 10917, 2]
 // Exports: CloudIcon
 
-// Module 10915 (CloudIcon)
+// Module 10916 (CloudIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const CloudIcon = function CloudIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10916) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10917) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10916) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10917) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

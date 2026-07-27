@@ -1,10 +1,10 @@
-// Module ID: 11775
-// Function ID: 91423
+// Module ID: 11776
+// Function ID: 91428
 // Name: presentResendToast
-// Dependencies: [57, 5, 31, 27, 1838, 33, 4131, 3832, 11776, 11777, 10863, 22, 11769, 1212, 4030, 6633, 11764, 11778, 4127, 9193, 2]
+// Dependencies: [57, 5, 31, 27, 1838, 33, 4131, 3832, 11777, 11778, 10864, 22, 11770, 1212, 4030, 6633, 11765, 11779, 4127, 9193, 2]
 // Exports: default
 
-// Module 11775 (presentResendToast)
+// Module 11776 (presentResendToast)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
 import result from "result";
@@ -20,7 +20,7 @@ let closure_9;
 const require = arg1;
 function presentResendToast(content) {
   let obj = importDefault(3832);
-  obj = { key: "HUB_EMAIL_RESET", content, icon: importDefault(11776) };
+  obj = { key: "HUB_EMAIL_RESET", content, icon: importDefault(11777) };
   obj.open(obj);
 }
 ({ View: closure_6, Image: closure_7 } = get_ActivityIndicator);

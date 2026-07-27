@@ -1,8 +1,8 @@
-// Module ID: 14730
-// Function ID: 112279
-// Dependencies: [31, 33, 9041, 5517, 9050, 10123, 14731, 2]
+// Module ID: 14731
+// Function ID: 112284
+// Dependencies: [31, 33, 9041, 5517, 9050, 10123, 14732, 2]
 
-// Module 14730
+// Module 14731
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import importAllResult from "result";
@@ -38,15 +38,15 @@ const memoResult = require("result").memo(function DevToolsGuildPowerupsModal() 
     options() {
       return { title: "Guild Powerups" };
     },
-    component: importDefault(14731)
+    component: importDefault(14732)
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
   obj.children = <Screen name="DevToolsGuildPowerups" options={function options() {
     return { title: "Guild Powerups" };
-  }} component={importDefault(14731)} />;
+  }} component={importDefault(14732)} />;
   return <Navigator name="DevToolsGuildPowerups" options={function options() {
     return { title: "Guild Powerups" };
-  }} component={importDefault(14731)} />;
+  }} component={importDefault(14732)} />;
 });
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildPowerupsModal.tsx");
 

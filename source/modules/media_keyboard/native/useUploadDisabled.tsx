@@ -1,10 +1,10 @@
-// Module ID: 11333
-// Function ID: 88104
+// Module ID: 11334
+// Function ID: 88109
 // Name: useUploadDisabled
 // Dependencies: [4469, 3759, 4468, 653, 566, 5604, 2]
 // Exports: default
 
-// Module 11333 (useUploadDisabled)
+// Module 11334 (useUploadDisabled)
 import { DraftType } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

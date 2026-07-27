@@ -1,9 +1,9 @@
-// Module ID: 16121
-// Function ID: 124968
+// Module ID: 16133
+// Function ID: 125015
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1188, 10210, 10211, 16122, 16125, 16126, 16127, 10212, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1188, 10211, 10212, 16134, 16137, 16138, 16139, 10213, 5078, 2]
 
-// Module 16121 (_isNativeReflectConstruct)
+// Module 16133 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import Soundpacks from "Soundpacks";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

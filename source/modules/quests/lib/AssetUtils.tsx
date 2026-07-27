@@ -1,5 +1,5 @@
 // Module ID: 9415
-// Function ID: 73485
+// Function ID: 73486
 // Name: resolveAsset
 // Dependencies: [4977, 653, 9416, 9417, 9418, 9419, 9420, 5937, 9427, 9428, 4984, 1443, 1825, 2]
 // Exports: getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl

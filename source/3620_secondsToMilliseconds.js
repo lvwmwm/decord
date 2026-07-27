@@ -1,5 +1,5 @@
 // Module ID: 3620
-// Function ID: 27869
+// Function ID: 27870
 // Name: secondsToMilliseconds
 // Dependencies: [3211, 3389]
 // Exports: default

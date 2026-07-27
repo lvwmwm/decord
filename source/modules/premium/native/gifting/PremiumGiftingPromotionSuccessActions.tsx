@@ -1,5 +1,5 @@
 // Module ID: 9727
-// Function ID: 75775
+// Function ID: 75776
 // Name: PremiumGiftingPromotionSuccessActions
 // Dependencies: [31, 27, 5775, 1875, 1850, 33, 4131, 689, 566, 8736, 1456, 8703, 7983, 9638, 9728, 8008, 1874, 1273, 9722, 4544, 1212, 2]
 // Exports: default

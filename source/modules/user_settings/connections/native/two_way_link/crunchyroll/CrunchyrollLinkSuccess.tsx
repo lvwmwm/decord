@@ -1,5 +1,5 @@
 // Module ID: 8923
-// Function ID: 70539
+// Function ID: 70540
 // Name: CrunchyrollLinkDiscordSuccess
 // Dependencies: [31, 27, 33, 4131, 8870, 8924, 4127, 1212, 5121, 4544, 2]
 // Exports: default

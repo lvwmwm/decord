@@ -1,5 +1,5 @@
 // Module ID: 6898
-// Function ID: 59582
+// Function ID: 59583
 // Name: CrownIllocon
 // Dependencies: [33, 5085, 6899, 2]
 // Exports: CrownIllocon

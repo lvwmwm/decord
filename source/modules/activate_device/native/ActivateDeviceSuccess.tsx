@@ -1,10 +1,10 @@
-// Module ID: 12955
-// Function ID: 100526
+// Module ID: 12956
+// Function ID: 100531
 // Name: ActivateDeviceSuccess
-// Dependencies: [31, 27, 33, 4131, 1212, 8882, 5085, 1392, 12954, 4127, 4544, 2]
+// Dependencies: [31, 27, 33, 4131, 1212, 8882, 5085, 1392, 12955, 4127, 4544, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 12955 (ActivateDeviceSuccess)
+// Module 12956 (ActivateDeviceSuccess)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -45,14 +45,14 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
     const tmp13 = importDefault(5085);
   }
   const items = [tmp9, , ];
-  obj = { style: importDefault(12954).innerContent };
-  const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: importDefault(12954).centerText };
+  obj = { style: importDefault(12955).innerContent };
+  const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: importDefault(12955).centerText };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl3.string(require(1212) /* getSystemLocale */.t.qDtJmD);
   const items1 = [callback(require(4127) /* Text */.Text, obj1), ];
   let tmp17 = null;
   if (null != stringResult) {
-    obj2 = { variant: "text-md/medium", color: "text-default", style: importDefault(12954).centerText, children: stringResult };
+    obj2 = { variant: "text-md/medium", color: "text-default", style: importDefault(12955).centerText, children: stringResult };
     tmp17 = callback(require(4127) /* Text */.Text, obj2);
   }
   items1[1] = tmp17;

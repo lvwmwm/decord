@@ -1,10 +1,10 @@
-// Module ID: 15120
-// Function ID: 115145
+// Module ID: 15132
+// Function ID: 115191
 // Name: isSectionFooterWithDivider
 // Dependencies: [5077, 3759, 5760, 653, 5753, 1841, 2]
 // Exports: getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 15120 (isSectionFooterWithDivider)
+// Module 15132 (isSectionFooterWithDivider)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { ChannelListGuildActionRow } from "ChannelListGuildActionRow";

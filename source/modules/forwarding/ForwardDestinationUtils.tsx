@@ -1,5 +1,5 @@
 // Module ID: 6105
-// Function ID: 54583
+// Function ID: 54584
 // Name: messageHasCheckpoint
 // Dependencies: [31, 5036, 1352, 1348, 3759, 3768, 1850, 653, 6106, 1327, 566, 669, 4467, 1882, 4346, 1212, 4465, 3970, 4321, 2]
 // Exports: getDestinationIsUnavailable, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames

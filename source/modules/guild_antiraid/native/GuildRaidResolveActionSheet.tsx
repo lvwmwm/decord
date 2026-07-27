@@ -1,10 +1,10 @@
-// Module ID: 10988
-// Function ID: 85418
+// Module ID: 10989
+// Function ID: 85423
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [57, 31, 27, 653, 6659, 33, 4131, 689, 1212, 5746, 4099, 5498, 5585, 4127, 7575, 1273, 4544, 4325, 10958, 6664, 2]
+// Dependencies: [57, 31, 27, 653, 6659, 33, 4131, 689, 1212, 5746, 4099, 5498, 5585, 4127, 7575, 1273, 4544, 4325, 10959, 6664, 2]
 // Exports: default
 
-// Module 10988 (GuildRaidResolveActionSheet)
+// Module 10989 (GuildRaidResolveActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -85,7 +85,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
       style: tmp.option,
       onPress() {
         (function onCheckboxChange(closure_0) {
-          outer2_4(outer2_3.includes(closure_0) ? ((arr) => arr.filter(/* F85426 */ function() { ... })) : ((arg0) => {
+          outer2_4(outer2_3.includes(closure_0) ? ((arr) => arr.filter(/* F85431 */ function() { ... })) : ((arg0) => {
             const items = [...arg0, closure_0];
             return items;
           }));

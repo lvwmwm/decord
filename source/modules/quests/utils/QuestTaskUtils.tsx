@@ -1,5 +1,5 @@
 // Module ID: 5955
-// Function ID: 52982
+// Function ID: 52983
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5932, 4984, 22, 664, 5930, 1327, 2]
 // Exports: formatWatchTaskRemainingTime, getActivityApplicationId, getAllApplicationIds, getConsoleApplicationId, getDesktopApplicationIds, getInGameApplicationId, getPlayActivityApplicationId, getQuestTaskDetails, getQuestTaskTypes, getStreamingApplicationId, getThirdPartyTaskDetails, hasAchievementActivityTask, hasAchievementInGameTask, hasSomeFirstPartyTasks, hasStreamOnDesktopTask, isDesktopOnlyPlayQuest, isVideoQuestForMobilePlatformOnly

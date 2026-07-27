@@ -1,9 +1,9 @@
-// Module ID: 12925
-// Function ID: 100388
+// Module ID: 12926
+// Function ID: 100393
 // Name: getDefaultTextState
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 1212, 4127, 6676, 12926, 8854, 8850, 3831, 675, 3844, 7585, 4544, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 1212, 4127, 6676, 12927, 8854, 8850, 3831, 675, 3844, 7585, 4544, 2]
 
-// Module 12925 (getDefaultTextState)
+// Module 12926 (getDefaultTextState)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -255,7 +255,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const tmp6 = first(importAllResult.useState(""), 2);
   first2 = tmp6[0];
   closure_8 = tmp6[1];
-  let obj1 = importDefault(12926);
+  let obj1 = importDefault(12927);
   const enabled = obj1.useConfig({ location: "AddFriendbyId" }).enabled;
   const items = [first1];
   const items1 = [first1];

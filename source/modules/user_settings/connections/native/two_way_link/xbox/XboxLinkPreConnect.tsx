@@ -1,5 +1,5 @@
 // Module ID: 8872
-// Function ID: 70186
+// Function ID: 70187
 // Name: XboxLinkPreConnect
 // Dependencies: [31, 8865, 653, 33, 4131, 1456, 8873, 8874, 1212, 2]
 // Exports: default

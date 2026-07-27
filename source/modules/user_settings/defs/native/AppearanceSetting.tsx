@@ -1,10 +1,10 @@
-// Module ID: 14211
-// Function ID: 109331
+// Module ID: 14212
+// Function ID: 109336
 // Name: useAppearanceSettingTrailing
-// Dependencies: [3943, 1281, 653, 4067, 1324, 566, 3974, 8758, 1212, 2397, 10059, 6587, 14212, 2]
+// Dependencies: [3943, 1281, 653, 4067, 1324, 566, 3974, 8758, 1212, 2397, 10059, 6587, 14213, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 14211 (useAppearanceSettingTrailing)
+// Module 14212 (useAppearanceSettingTrailing)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ActiveThemeType } from "SystemThemeState";
 import createToggle from "createToggle";
@@ -54,7 +54,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE,
   getComponent() {
-    return require(14212).default;
+    return require(14213).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

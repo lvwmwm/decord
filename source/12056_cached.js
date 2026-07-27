@@ -1,7 +1,7 @@
 // Module ID: 12056
-// Function ID: 93821
+// Function ID: 93815
 // Name: cached
-// Dependencies: [12015]
+// Dependencies: [12016]
 
 // Module 12056 (cached)
 const self = this;
@@ -63,12 +63,10 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "caracteres", verb: "ter" }, file: { unit: "bytes", verb: "ter" }, array: { unit: "itens", verb: "ter" }, set: { unit: "itens", verb: "ter" } };
-      let closure_1 = { regex: "padr\u00E3o", email: "endere\u00E7o de e-mail", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data e hora ISO", date: "data ISO", time: "hora ISO", duration: "dura\u00E7\u00E3o ISO", ipv4: "endere\u00E7o IPv4", ipv6: "endere\u00E7o IPv6", cidrv4: "faixa de IPv4", cidrv6: "faixa de IPv6", base64: "texto codificado em base64", base64url: "URL codificada em base64", json_string: "texto JSON", e164: "n\u00FAmero E.164", jwt: "JWT", template_literal: "entrada" };
-      let closure_2 = { nan: "NaN", number: "n\u00FAmero", null: "nulo" };
+      let closure_0 = { string: { unit: "znak\u00F3w", verb: "mie\u0107" }, file: { unit: "bajt\u00F3w", verb: "mie\u0107" }, array: { unit: "element\u00F3w", verb: "mie\u0107" }, set: { unit: "element\u00F3w", verb: "mie\u0107" } };
+      let closure_1 = { regex: "wyra\u017Cenie", email: "adres email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data i godzina w formacie ISO", date: "data w formacie ISO", time: "godzina w formacie ISO", duration: "czas trwania ISO", ipv4: "adres IPv4", ipv6: "adres IPv6", cidrv4: "zakres IPv4", cidrv6: "zakres IPv6", base64: "ci\u0105g znak\u00F3w zakodowany w formacie base64", base64url: "ci\u0105g znak\u00F3w zakodowany w formacie base64url", json_string: "ci\u0105g znak\u00F3w w formacie JSON", e164: "liczba E.164", jwt: "JWT", template_literal: "wej\u015Bcie" };
+      let closure_2 = { nan: "NaN", number: "liczba", array: "tablica" };
       return (code) => {
-        let minimum;
-        let origin;
         code = code.code;
         if ("invalid_type" === code) {
           let expected = closure_2[code.expected];
@@ -76,25 +74,25 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp53 = parsedTypeResult;
+          let tmp55 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp53 = tmp52;
+            tmp55 = tmp54;
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "Tipo inv\u00E1lido: esperado instanceof " + code.expected + ", recebido " + tmp53;
+            let combined = "Nieprawid\u0142owe dane wej\u015Bciowe: oczekiwano instanceof " + code.expected + ", otrzymano " + tmp55;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "Tipo inv\u00E1lido: esperado " + expected + ", recebido " + tmp53;
+            combined = "Nieprawid\u0142owe dane wej\u015Bciowe: oczekiwano " + expected + ", otrzymano " + tmp55;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Entrada inv\u00E1lida: esperado " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Nieprawid\u0142owe dane wej\u015Bciowe: oczekiwano " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "Op\u00E7\u00E3o inv\u00E1lida: esperada uma das " + closure_2.joinValues(code.values, "|");
+            combined1 = "Nieprawid\u0142owa opcja: oczekiwano jednej z warto\u015Bci " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
@@ -102,96 +100,108 @@ if (self2) {
           if (code.inclusive) {
             str32 = "<=";
           }
-          const tmp28 = getSizing(code.origin);
+          const tmp30 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str33 = "valor";
-          if (tmp28) {
-            if (tmp30) {
+          let str33 = "warto\u015B\u0107";
+          if (tmp30) {
+            if (tmp32) {
               str33 = origin2;
             }
             let str = code.maximum.toString();
-            const unit = tmp28.unit;
-            let str38 = "elementos";
-            if (null != unit) {
-              str38 = unit;
+            const unit2 = tmp30.unit;
+            let str38 = "element\u00F3w";
+            if (null != unit2) {
+              str38 = unit2;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Muito grande: esperado que " + str33 + " tivesse " + str32 + str + " " + str38;
+            let combined2 = "Za du\u017Ca warto\u015B\u0107: oczekiwano, \u017Ce " + str33 + " b\u0119dzie mie\u0107 " + str32 + str + " " + str38;
             const str37 = code.maximum;
           } else {
-            let tmp31 = str33;
-            if (tmp30) {
-              tmp31 = origin2;
+            let tmp33 = str33;
+            if (tmp32) {
+              tmp33 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Muito grande: esperado que " + tmp31 + " fosse " + str32 + code.maximum.toString();
+            combined2 = "Zbyt du\u017C(y/a/e): oczekiwano, \u017Ce " + tmp33 + " b\u0119dzie wynosi\u0107 " + str32 + code.maximum.toString();
             const str34 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str26 = ">";
+          let str22 = ">";
           if (code.inclusive) {
-            str26 = ">=";
+            str22 = ">=";
           }
-          const tmp17 = getSizing(code.origin);
-          ({ origin, minimum } = code);
-          const str1 = minimum.toString();
-          if (tmp17) {
+          const tmp15 = getSizing(code.origin);
+          const origin = code.origin;
+          let str23 = "warto\u015B\u0107";
+          if (tmp15) {
+            if (tmp17) {
+              str23 = origin;
+            }
+            const str1 = code.minimum.toString();
+            const unit = tmp15.unit;
+            let str28 = "element\u00F3w";
+            if (null != unit) {
+              str28 = unit;
+            }
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Muito pequeno: esperado que " + origin + " tivesse " + str26 + str1 + " " + tmp17.unit;
+            let combined3 = "Za ma\u0142a warto\u015B\u0107: oczekiwano, \u017Ce " + str23 + " b\u0119dzie mie\u0107 " + str22 + str1 + " " + str28;
+            const str27 = code.minimum;
           } else {
+            let tmp18 = str23;
+            if (tmp17) {
+              tmp18 = origin;
+            }
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Muito pequeno: esperado que " + origin + " fosse " + str26 + str1;
+            combined3 = "Zbyt ma\u0142(y/a/e): oczekiwano, \u017Ce " + tmp18 + " b\u0119dzie wynosi\u0107 " + str22 + code.minimum.toString();
+            const str24 = code.minimum;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Texto inv\u00E1lido: deve come\u00E7ar com \"" + code.prefix + "\"";
+            let combined4 = "Nieprawid\u0142owy ci\u0105g znak\u00F3w: musi zaczyna\u0107 si\u0119 od \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Texto inv\u00E1lido: deve terminar com \"" + code.suffix + "\"";
+            combined4 = "Nieprawid\u0142owy ci\u0105g znak\u00F3w: musi ko\u0144czy\u0107 si\u0119 na \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Texto inv\u00E1lido: deve incluir \"" + code.includes + "\"";
+            combined4 = "Nieprawid\u0142owy ci\u0105g znak\u00F3w: musi zawiera\u0107 \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Texto inv\u00E1lido: deve corresponder ao padr\u00E3o " + code.pattern;
+            combined4 = "Nieprawid\u0142owy ci\u0105g znak\u00F3w: musi odpowiada\u0107 wzorcowi " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "" + format + " inv\u00E1lido";
+            combined4 = "Nieprawid\u0142ow(y/a/e) " + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "N\u00FAmero inv\u00E1lido: deve ser m\u00FAltiplo de " + code.divisor;
+          return "Nieprawid\u0142owa liczba: musi by\u0107 wielokrotno\u015Bci\u0105 " + code.divisor;
         } else if ("unrecognized_keys" === code) {
-          let str8 = "";
-          let str9 = "";
+          let str7 = "";
           if (code.keys.length > 1) {
-            str9 = "s";
-          }
-          if (code.keys.length > 1) {
-            str8 = "s";
+            str7 = "s";
           }
           const _HermesInternal3 = HermesInternal;
-          return "Chave" + str9 + " desconhecida" + str8 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "Nierozpoznane klucze" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Chave inv\u00E1lida em " + code.origin;
-          } else if ("invalid_union" === code) {
-            return "Entrada inv\u00E1lida";
-          } else if ("invalid_element" === code) {
-            const _HermesInternal = HermesInternal;
-            return "Valor inv\u00E1lido em " + code.origin;
+            return "Nieprawid\u0142owy klucz w " + code.origin;
           } else {
-            return "Campo inv\u00E1lido";
+            if ("invalid_union" !== code) {
+              if ("invalid_element" === code) {
+                const _HermesInternal = HermesInternal;
+                return "Nieprawid\u0142owa warto\u015B\u0107 w " + code.origin;
+              }
+            }
+            return "Nieprawid\u0142owe dane wej\u015Bciowe";
           }
         }
       };

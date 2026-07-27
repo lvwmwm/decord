@@ -1,5 +1,5 @@
 // Module ID: 1852
-// Function ID: 20446
+// Function ID: 20447
 // Name: GuildFeatures
 // Dependencies: [653, 1853, 1212, 1854, 656, 2, 1855]
 

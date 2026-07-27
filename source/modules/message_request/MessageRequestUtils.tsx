@@ -1,10 +1,10 @@
-// Module ID: 12910
-// Function ID: 100294
+// Module ID: 12911
+// Function ID: 100299
 // Name: filterOutMessageRequestsAndSpam
 // Dependencies: [5602, 5603, 21, 2]
 // Exports: filterOutMessageRequestsAndSpam, filterOutMessageRequestsAndSpamById, isMessageRequestOrSpamRequest, shouldShowMessageRequests
 
-// Module 12910 (filterOutMessageRequestsAndSpam)
+// Module 12911 (filterOutMessageRequestsAndSpam)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

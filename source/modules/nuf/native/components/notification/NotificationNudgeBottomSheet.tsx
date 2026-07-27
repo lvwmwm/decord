@@ -1,10 +1,10 @@
-// Module ID: 15309
-// Function ID: 116837
+// Module ID: 15322
+// Function ID: 116886
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [31, 27, 11442, 653, 1345, 33, 4131, 689, 675, 4099, 11443, 5187, 6727, 4127, 4966, 4544, 1212, 2]
+// Dependencies: [31, 27, 11443, 653, 1345, 33, 4131, 689, 675, 4099, 11444, 5187, 6727, 4127, 4966, 4544, 1212, 2]
 // Exports: default
 
-// Module 15309 (NotificationNudgeBottomSheet)
+// Module 15322 (NotificationNudgeBottomSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import EventActionType from "EventActionType";

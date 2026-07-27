@@ -1,5 +1,5 @@
 // Module ID: 5638
-// Function ID: 48242
+// Function ID: 48243
 // Name: WidgetGameTag
 // Dependencies: [2]
 

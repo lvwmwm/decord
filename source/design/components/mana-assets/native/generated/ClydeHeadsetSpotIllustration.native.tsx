@@ -1,5 +1,5 @@
 // Module ID: 6874
-// Function ID: 59546
+// Function ID: 59547
 // Name: ClydeHeadsetSpotIllustration
 // Dependencies: [33, 5085, 6875, 2]
 // Exports: ClydeHeadsetSpotIllustration

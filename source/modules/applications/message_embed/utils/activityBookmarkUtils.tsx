@@ -1,5 +1,5 @@
 // Module ID: 5923
-// Function ID: 52622
+// Function ID: 52623
 // Name: extractActivityBookmarkParams
 // Dependencies: [1443, 2]
 // Exports: extractActivityBookmarkParams

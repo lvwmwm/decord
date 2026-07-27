@@ -1,5 +1,5 @@
 // Module ID: 3764
-// Function ID: 28832
+// Function ID: 28833
 // Name: calculateElevatedPermissions
 // Dependencies: [1910, 3760, 3761, 1352, 1391, 1912, 1194, 1348, 1918, 1911, 1838, 1850, 653, 483, 22, 3765, 3748, 21, 1913, 1882, 2]
 // Exports: areChannelsLocked, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher

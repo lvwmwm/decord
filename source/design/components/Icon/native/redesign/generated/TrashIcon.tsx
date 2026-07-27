@@ -1,5 +1,5 @@
 // Module ID: 4090
-// Function ID: 33919
+// Function ID: 33920
 // Name: TrashIcon
 // Dependencies: [31, 33, 689, 3834, 4091, 2]
 // Exports: TrashIcon

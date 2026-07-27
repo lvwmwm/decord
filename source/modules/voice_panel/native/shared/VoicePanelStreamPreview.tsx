@@ -1,10 +1,10 @@
-// Module ID: 11963
-// Function ID: 92476
+// Module ID: 11964
+// Function ID: 92481
 // Name: VoicePanelStreamPreview
-// Dependencies: [31, 27, 4150, 1194, 33, 3992, 4544, 4131, 689, 10790, 566, 4195, 4132, 7620, 4127, 1212, 2]
+// Dependencies: [31, 27, 4150, 1194, 33, 3992, 4544, 4131, 689, 10791, 566, 4195, 4132, 7620, 4127, 1212, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 11963 (VoicePanelStreamPreview)
+// Module 11964 (VoicePanelStreamPreview)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -54,7 +54,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   if (null != stream) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(10790)(guildId, channelId, ownerId).previewUrl;
+  const previewUrl = stream(10791)(guildId, channelId, ownerId).previewUrl;
   let obj = mode(566);
   const items = [_isNativeReflectConstruct, closure_5];
   const items1 = [stream];
@@ -118,7 +118,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   const items2 = [tmp11, ];
   const obj3 = { style: animatedStyle, layout };
   const tmp15 = callback;
-  const tmp2 = stream(10790);
+  const tmp2 = stream(10791);
   const tmp8 = closure_7;
   const tmp9 = closure_8;
   if (stateFromStores) {

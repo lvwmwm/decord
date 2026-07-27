@@ -1,5 +1,5 @@
 // Module ID: 5695
-// Function ID: 49219
+// Function ID: 49220
 // Name: isActiveUserRoute
 // Dependencies: [2]
 // Exports: isActiveUserRoute, subscribeToLocationChanges

@@ -1,5 +1,5 @@
 // Module ID: 5065
-// Function ID: 43906
+// Function ID: 43907
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1348, 1908, 1918, 1911, 3759, 1907, 4326, 1910, 653, 1355, 675, 4325, 1916, 686, 1198, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedData, updateImpersonatedRoles

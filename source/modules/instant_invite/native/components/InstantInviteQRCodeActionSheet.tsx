@@ -1,10 +1,10 @@
-// Module ID: 12173
-// Function ID: 95301
+// Module ID: 12174
+// Function ID: 95306
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [31, 27, 1838, 1850, 653, 33, 4131, 689, 5513, 566, 1212, 686, 3831, 5498, 5186, 12174, 4127, 2]
+// Dependencies: [31, 27, 1838, 1850, 653, 33, 4131, 689, 5513, 566, 1212, 686, 3831, 5498, 5186, 12175, 4127, 2]
 // Exports: default
 
-// Module 12173 (InstantInviteQRCodeActionSheet)
+// Module 12174 (InstantInviteQRCodeActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -110,7 +110,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
     plainText = tmp7.plainText;
   }
   obj3.accessibilityLabel = plainText;
-  let items = [callback(importDefault(12174), obj3), ];
+  let items = [callback(importDefault(12175), obj3), ];
   let tmp22 = null != tmp8;
   if (tmp22) {
     let obj4 = { style: tmp.iconContainer };

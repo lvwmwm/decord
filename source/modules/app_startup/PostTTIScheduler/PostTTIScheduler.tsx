@@ -1,5 +1,5 @@
 // Module ID: 5900
-// Function ID: 52374
+// Function ID: 52375
 // Name: promise
 // Dependencies: [2]
 // Exports: notifyAboutTTI, schedulePostTTIEvent

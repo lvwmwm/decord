@@ -1,9 +1,9 @@
-// Module ID: 11904
-// Function ID: 92150
+// Module ID: 11905
+// Function ID: 92155
 // Name: StatusTypes
 // Dependencies: [482, 3970, 1212, 2]
 
-// Module 11904 (StatusTypes)
+// Module 11905 (StatusTypes)
 import { StatusTypes } from "sum";
 
 const frozen = Object.freeze({ MINUTES_30: 1800000, HOURS_1: 3600000, HOURS_4: 14400000, TODAY: "TODAY", DONT_CLEAR: "DONT_CLEAR" });

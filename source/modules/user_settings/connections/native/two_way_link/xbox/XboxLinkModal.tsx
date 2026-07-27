@@ -1,5 +1,5 @@
 // Module ID: 8864
-// Function ID: 70154
+// Function ID: 70155
 // Name: CloseButton
 // Dependencies: [31, 8865, 653, 33, 6695, 7640, 8863, 1212, 8866, 8871, 8872, 8876, 8963, 8968, 8969, 8870, 8914, 5517, 2]
 // Exports: default

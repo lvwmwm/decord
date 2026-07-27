@@ -1,10 +1,10 @@
-// Module ID: 11451
-// Function ID: 89085
+// Module ID: 11452
+// Function ID: 89090
 // Name: useUserCountryCode
 // Dependencies: [31, 3811, 3814, 566, 10102, 7649, 2]
 // Exports: useIsTeenInStrictCountry
 
-// Module 11451 (useUserCountryCode)
+// Module 11452 (useUserCountryCode)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";

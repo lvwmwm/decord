@@ -1,10 +1,10 @@
-// Module ID: 11429
-// Function ID: 88858
+// Module ID: 11430
+// Function ID: 88863
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4567, 11430, 9515, 653, 33, 11431, 4131, 689, 4550, 11432, 7962, 1882, 5680, 3844, 1212, 4325, 22, 11433, 5676, 11434, 11435, 1273, 9592, 2]
+// Dependencies: [57, 31, 27, 4567, 11431, 9515, 653, 33, 11432, 4131, 689, 4550, 11433, 7962, 1882, 5680, 3844, 1212, 4325, 22, 11434, 5676, 11435, 11436, 1273, 9592, 2]
 // Exports: default
 
-// Module 11429 (_createForOfIteratorHelperLoose)
+// Module 11430 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -145,7 +145,7 @@ export default function ApplicationCommandDiscovery(channel) {
   const first = tmp4[0];
   let closure_7 = tmp6;
   let closure_8 = ref.useRef(false);
-  let obj1 = require(11432) /* useCommandDiscoveryManager */;
+  let obj1 = require(11433) /* useCommandDiscoveryManager */;
   const commandDiscoveryManager = obj1.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
   let obj2 = channel(7962);
   obj = { context: { channel, type: "channel" } };
@@ -195,9 +195,9 @@ export default function ApplicationCommandDiscovery(channel) {
         if (0 !== commandsByActiveSection.length) {
           num = commandsByActiveSection.reduce((arg0, data) => {
             if (0 === data.data.length) {
-              let sum = outer3_0(11431).APPLICATION_SECTION_HEADER_HEIGHT + 160;
+              let sum = outer3_0(11432).APPLICATION_SECTION_HEADER_HEIGHT + 160;
             } else {
-              sum = arg0 + (outer3_0(11431).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
+              sum = arg0 + (outer3_0(11432).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
             }
             return sum;
           }, 0);

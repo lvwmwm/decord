@@ -1,5 +1,5 @@
 // Module ID: 8450
-// Function ID: 67341
+// Function ID: 67342
 // Name: GameProfileRankPill
 // Dependencies: [31, 27, 33, 4131, 689, 6592, 4127, 1212, 2]
 // Exports: default

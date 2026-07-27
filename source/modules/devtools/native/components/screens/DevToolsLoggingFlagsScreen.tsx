@@ -1,10 +1,10 @@
-// Module ID: 13580
-// Function ID: 104472
+// Module ID: 13581
+// Function ID: 104477
 // Name: DevToolsLoggingFlagsScreen
 // Dependencies: [27, 683, 33, 4131, 689, 566, 5501, 5502, 685, 2]
 // Exports: default
 
-// Module 13580 (DevToolsLoggingFlagsScreen)
+// Module 13581 (DevToolsLoggingFlagsScreen)
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";

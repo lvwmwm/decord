@@ -1,10 +1,10 @@
-// Module ID: 10858
-// Function ID: 84389
+// Module ID: 10859
+// Function ID: 84394
 // Name: handleTapCommandMention
-// Dependencies: [31, 1348, 1455, 4567, 4568, 33, 5676, 3983, 4099, 1555, 4472, 1212, 1273, 10859, 3831, 5490, 3804, 6719, 5495, 10861, 4127, 3990, 10863, 9929, 2]
+// Dependencies: [31, 1348, 1455, 4567, 4568, 33, 5676, 3983, 4099, 1555, 4472, 1212, 1273, 10860, 3831, 5490, 3804, 6719, 5495, 10862, 4127, 3990, 10864, 9929, 2]
 // Exports: default
 
-// Module 10858 (handleTapCommandMention)
+// Module 10859 (handleTapCommandMention)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -116,7 +116,7 @@ function handleLongPressCommandMention(commandName, commandId) {
   let obj = {};
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t["42H+Nb"]);
-  obj.IconComponent = _require(10859).SlashBoxIcon;
+  obj.IconComponent = _require(10860).SlashBoxIcon;
   obj.onPress = function onPress() {
     commandName(outer1_2[14]).presentCommandCopied();
     const obj = commandName(outer1_2[14]);
@@ -148,7 +148,7 @@ export default function MarkupReactCommandRule(node) {
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != React.useContext(node(10861).AppLauncherContext);
+  let closure_1 = null != React.useContext(node(10862).AppLauncherContext);
   const dependencyMap = callback();
   let obj = {
     style,
@@ -182,7 +182,7 @@ export default function MarkupReactCommandRule(node) {
       obj.onSetCommand = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10863)();
+        callback(10864)();
         callback(4099).hideActionSheet();
         if (null != bestActiveInput) {
           bestActiveInput.openSystemKeyboard();
@@ -238,7 +238,7 @@ export default function MarkupReactCommandRule(node) {
       obj.onSetCommand = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10863)();
+        callback(10864)();
         callback(4099).hideActionSheet();
         if (null != bestActiveInput) {
           bestActiveInput.openSystemKeyboard();

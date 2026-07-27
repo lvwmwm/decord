@@ -1,8 +1,8 @@
-// Module ID: 15527
-// Function ID: 119541
-// Dependencies: [31, 27, 8699, 33, 4131, 689, 1557, 14857, 1450, 3985, 15528, 478, 2]
+// Module ID: 15540
+// Function ID: 119590
+// Dependencies: [31, 27, 8699, 33, 4131, 689, 1557, 14858, 1450, 3985, 15541, 478, 2]
 
-// Module 15527
+// Module 15540
 import { View } from "get ActivityIndicator";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = require("result").memo(function YouScreenContainer(route) {
   route = route.route;
   let tmp = callback();
-  let obj = require(14857) /* trackForScreen */;
+  let obj = require(14858) /* trackForScreen */;
   const trackTabPerformance = obj.useTrackTabPerformance(RootNavigatorScreen.YOU);
   if (null != route) {
     const params = route.params;
@@ -49,20 +49,20 @@ const memoResult = require("result").memo(function YouScreenContainer(route) {
       const obj2 = { maxWidth: 0.6 * importDefault(1450)().width };
       items1[1] = obj2;
       obj1.style = items1;
-      tmp = importDefault(15528);
+      tmp = importDefault(15541);
       obj3 = { initialTab };
       obj1.children = tmp14(tmp, obj3);
       let tmp14Result = tmp14(View, obj1);
     } else {
       const obj4 = { initialTab };
-      tmp14Result = tmp14(importDefault(15528), obj4);
+      tmp14Result = tmp14(importDefault(15541), obj4);
     }
     obj.children = tmp14Result;
     tmp3(View, obj);
     const tmp6 = View;
   } else {
     obj5 = { initialTab };
-    return tmp3(importDefault(15528), obj5);
+    return tmp3(importDefault(15541), obj5);
   }
 });
 const result = require("MODE_CHANGE_PHYSICS").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");

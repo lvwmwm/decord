@@ -1,5 +1,5 @@
 // Module ID: 8658
-// Function ID: 68780
+// Function ID: 68781
 // Name: getProductName
 // Dependencies: [1212, 5781, 1877, 2]
 // Exports: getProductNameAndTypeLabel, getPurchasedProductName

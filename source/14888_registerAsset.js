@@ -1,11 +1,11 @@
 // Module ID: 14888
-// Function ID: 113628
+// Function ID: 113632
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 14888 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/community", width: 16, height: 16, scales: [1, 2, 3], hash: "afad90ca336c33493e9ad9e6d7ce6ec1", name: "ic-application-submitted", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/community", width: 16, height: 16, scales: [1, 2, 3], hash: "d5f86d80f0a1d11d99b6b752d01d2cf8", name: "ic-application-rejected", type: "png" };
 
 export default registerAsset.registerAsset(obj);

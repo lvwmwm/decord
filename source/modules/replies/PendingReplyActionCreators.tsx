@@ -1,5 +1,5 @@
 // Module ID: 9501
-// Function ID: 74139
+// Function ID: 74140
 // Name: createPendingReply
 // Dependencies: [686, 2]
 // Exports: createPendingReply, createShallowPendingReply, deletePendingReply, setPendingReplyShouldMention

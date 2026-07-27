@@ -1,10 +1,10 @@
-// Module ID: 11036
-// Function ID: 85832
+// Module ID: 11037
+// Function ID: 85837
 // Name: AppealIngestionThanks
-// Dependencies: [31, 27, 33, 4131, 11024, 5121, 1273, 2]
+// Dependencies: [31, 27, 33, 4131, 11025, 5121, 1273, 2]
 // Exports: default
 
-// Module 11036 (AppealIngestionThanks)
+// Module 11037 (AppealIngestionThanks)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,5 +21,5 @@ export default function AppealIngestionThanks() {
   obj = { bottom: true, style: tmp.container, children: jsx(require(1273) /* Button */.LegacyText, { children: "TODO - Thanks" }) };
   obj.children = jsx(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, style: tmp.container, children: jsx(require(1273) /* Button */.LegacyText, { children: "TODO - Thanks" }) });
   obj.children = <View bottom style={tmp.container}>{jsx(require(1273) /* Button */.LegacyText, { children: "TODO - Thanks" })}</View>;
-  return jsx(require(11024) /* getHeader */.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: jsx(require(1273) /* Button */.LegacyText, { children: "TODO - Thanks" }) });
+  return jsx(require(11025) /* getHeader */.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: jsx(require(1273) /* Button */.LegacyText, { children: "TODO - Thanks" }) });
 };

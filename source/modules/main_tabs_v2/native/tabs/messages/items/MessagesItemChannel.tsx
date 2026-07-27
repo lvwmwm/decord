@@ -1,10 +1,10 @@
-// Module ID: 14956
-// Function ID: 114040
+// Module ID: 14957
+// Function ID: 114045
 // Name: getMessagesItemChannelSizes
-// Dependencies: [31, 1348, 33, 9849, 689, 14957, 566, 14966, 2]
+// Dependencies: [31, 1348, 33, 9849, 689, 14958, 566, 14967, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 14956 (getMessagesItemChannelSizes)
+// Module 14957 (getMessagesItemChannelSizes)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
@@ -23,10 +23,10 @@ const memoResult = require("result").memo(function MessagesItemChannel(row) {
   }
   if (true === isPrivateResult) {
     obj = { channel: stateFromStores, height: placeholderHeight };
-    let tmp5 = jsx(importDefault(14957), { channel: stateFromStores, height: placeholderHeight });
+    let tmp5 = jsx(importDefault(14958), { channel: stateFromStores, height: placeholderHeight });
   } else {
     obj = { height: placeholderHeight, row: row.row };
-    tmp5 = jsx(importDefault(14966), { height: placeholderHeight, row: row.row });
+    tmp5 = jsx(importDefault(14967), { height: placeholderHeight, row: row.row });
   }
   return tmp5;
 });
@@ -41,7 +41,7 @@ export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(
   const PX_32 = importDefault(689).space.PX_32;
   obj = { avatar: PX_32 };
   const sum = Math.max(PX_32, scaleTextLineHeightResult + scaleTextLineHeightResult1) + PX_16;
-  obj.height = sum + require(14957) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
+  obj.height = sum + require(14958) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
   obj.label = scaleTextLineHeightResult;
   obj.labelSecondary = scaleTextLineHeightResult1;
   obj.padding = PX_16;

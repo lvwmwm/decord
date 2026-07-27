@@ -1,9 +1,9 @@
-// Module ID: 11455
-// Function ID: 89187
+// Module ID: 11456
+// Function ID: 89192
 // Name: ChatInputCharCounter
 // Dependencies: [57, 31, 1850, 653, 1852, 33, 4131, 566, 3777, 6130, 6137, 3832, 1212, 4661, 4127, 6570, 2]
 
-// Module 11455 (ChatInputCharCounter)
+// Module 11456 (ChatInputCharCounter)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,5 +1,5 @@
 // Module ID: 8425
-// Function ID: 67282
+// Function ID: 67283
 // Name: useXboxGamePassStoreUrl
 // Dependencies: [653, 1832, 8417, 2]
 // Exports: default

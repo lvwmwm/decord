@@ -1,11 +1,11 @@
 // Module ID: 12172
-// Function ID: 95300
+// Function ID: 95304
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12172 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a9bda86a153eecbc9eb21d6f5b6433f7", name: "QrCodeIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons/settings", width: 24, height: 24, scales: [2, 3], hash: "4a465b7b889dd2efb6716569375c3825", name: "ic_qr_code_24px", type: "png" };
 
 export default registerAsset.registerAsset(obj);

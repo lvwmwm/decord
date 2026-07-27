@@ -1,5 +1,5 @@
 // Module ID: 3459
-// Function ID: 26816
+// Function ID: 26817
 // Name: cloneObject
 // Dependencies: [3460]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 8136
-// Function ID: 64934
+// Function ID: 64935
 // Name: resolveShareFileExtension
 // Dependencies: [653, 675, 8137, 5144, 2]
 // Exports: getMediaShareParams, trackAppClickInNativeShareSheet

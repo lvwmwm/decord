@@ -1,10 +1,10 @@
-// Module ID: 14893
-// Function ID: 113651
+// Module ID: 14894
+// Function ID: 113656
 // Name: HomeDrawerSharedItem
 // Dependencies: [31, 27, 33, 4131, 2]
 // Exports: HomeDrawerSharedItem
 
-// Module 14893 (HomeDrawerSharedItem)
+// Module 14894 (HomeDrawerSharedItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

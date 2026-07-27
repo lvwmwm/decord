@@ -1,10 +1,10 @@
-// Module ID: 15022
-// Function ID: 114507
+// Module ID: 15023
+// Function ID: 114511
 // Name: renderCategoryItem
-// Dependencies: [31, 27, 5756, 5077, 4326, 10222, 33, 4131, 477, 4127, 4661, 689, 8330, 9940, 9029, 1324, 566, 4321, 5073, 1212, 5496, 9941, 6679, 2]
+// Dependencies: [31, 27, 5756, 5077, 4326, 10223, 33, 4131, 477, 4127, 4661, 689, 8330, 9940, 9029, 1324, 566, 4321, 5073, 1212, 5496, 9941, 6679, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory
 
-// Module 15022 (renderCategoryItem)
+// Module 15023 (renderCategoryItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 11014
-// Function ID: 85646
+// Module ID: 11015
+// Function ID: 85651
 // Name: useSafetyHubClassifications
-// Dependencies: [31, 11009, 6699, 566, 21, 6698, 6700, 11015, 2]
+// Dependencies: [31, 11010, 6699, 566, 21, 6698, 6700, 11016, 2]
 // Exports: useActiveSafetyHubClassifications, useExpiredSafetyHubClassifications, useSafetyHubAppealSignal, useSafetyHubClassification
 
-// Module 11014 (useSafetyHubClassifications)
+// Module 11015 (useSafetyHubClassifications)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ViolationType } from "SafetyHubLinks";

@@ -1,13 +1,13 @@
-// Module ID: 16356
-// Function ID: 127448
+// Module ID: 16368
+// Function ID: 127495
 // Name: hasSearchQuery
-// Dependencies: [57, 31, 27, 1278, 1912, 1194, 4052, 1911, 1838, 3759, 5148, 16357, 16358, 653, 33, 4131, 689, 5053, 675, 16359, 566, 16264, 8242, 1456, 6504, 3764, 4325, 16360, 16369, 16370, 5501, 1212, 4661, 11265, 4127, 3977, 16371, 16372, 16373, 16374, 5085, 4544, 16375, 6695, 11807, 477, 16367, 5049, 5149, 9171, 7575, 1273, 8226, 15165, 5448, 2]
+// Dependencies: [57, 31, 27, 1278, 1912, 1194, 4052, 1911, 1838, 3759, 5148, 16369, 16370, 653, 33, 4131, 689, 5053, 675, 16371, 566, 16276, 8242, 1456, 6504, 3764, 4325, 16372, 16381, 16382, 5501, 1212, 4661, 11266, 4127, 3977, 16383, 16384, 16385, 16386, 5085, 4544, 16387, 6695, 11808, 477, 16379, 5049, 5149, 9171, 7575, 1273, 8226, 15178, 5448, 2]
 // Exports: default
 
-// Module 16356 (hasSearchQuery)
+// Module 16368 (hasSearchQuery)
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
-import get_ActivityIndicator from "module_16360";
+import get_ActivityIndicator from "module_16372";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";
 import closure_9 from "_isNativeReflectConstruct";
@@ -201,11 +201,11 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
           if (!tmp) {
             obj.scrollToEnd();
           }
-          guildId(16359).setRoleJustCreated(false);
+          guildId(16371).setRoleJustCreated(false);
         }, 1000);
         return () => {
           clearTimeout(closure_0);
-          guildId(16359).setRoleJustCreated(false);
+          guildId(16371).setRoleJustCreated(false);
         };
       }
     }, items);
@@ -233,8 +233,8 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         tmp = canAccessSettings;
       }
       if (!tmp) {
-        canAccessSettings(16264).terminate();
-        const obj = canAccessSettings(16264);
+        canAccessSettings(16276).terminate();
+        const obj = canAccessSettings(16276);
         canAccessSettings(8242).close();
         const obj2 = canAccessSettings(8242);
       }
@@ -570,7 +570,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
       };
     } else if (hasRoles) {
       fn2 = () => {
-        const obj = { onPress: outer1_23, source: callback(11807) };
+        const obj = { onPress: outer1_23, source: callback(11808) };
         const intl = guildId(1212).intl;
         obj.accessibilityLabel = intl.string(guildId(1212).t.JZZjQK);
         return hasRoles(guildId(6695).HeaderActionButton, obj);
@@ -689,7 +689,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   obj8.keyboardShouldPersistTaps = "handled";
   obj8.scrollEventThrottle = 16;
   obj8.scrollEnabled = true;
-  obj7.children = hasRoles(importDefault(15165), obj8);
+  obj7.children = hasRoles(importDefault(15178), obj8);
   items19[2] = hasRoles(guildEveryoneRole, obj7);
   items19[3] = hasRoles(guildId(5448).NavScrim, {});
   obj.children = items19;

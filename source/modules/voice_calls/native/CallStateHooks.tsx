@@ -1,10 +1,10 @@
-// Module ID: 12786
-// Function ID: 99520
+// Module ID: 12787
+// Function ID: 99525
 // Name: id
 // Dependencies: [4144, 1194, 4810, 4203, 653, 4149, 566, 8861, 2]
 // Exports: default
 
-// Module 12786 (id)
+// Module 12787 (id)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

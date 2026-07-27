@@ -1,8 +1,8 @@
-// Module ID: 10170
-// Function ID: 78612
+// Module ID: 10171
+// Function ID: 78617
 // Dependencies: [4326, 686, 5076, 2]
 
-// Module 10170
+// Module 10171
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/ChannelCollapseActionCreators.tsx");

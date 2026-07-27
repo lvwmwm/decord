@@ -1,5 +1,5 @@
 // Module ID: 5506
-// Function ID: 46944
+// Function ID: 46945
 // Name: VerifiedRoleIcon
 // Dependencies: [31, 27, 653, 33, 689, 4131, 5507, 5486, 4075, 2]
 // Exports: default

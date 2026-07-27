@@ -1,10 +1,10 @@
-// Module ID: 15677
-// Function ID: 120948
+// Module ID: 15689
+// Function ID: 120995
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [31, 27, 1850, 653, 1345, 33, 3850, 3977, 4067, 566, 3777, 1212, 2557, 6554, 5582, 3947, 1334, 5187, 5121, 5446, 6727, 477, 5085, 15678, 6153, 1273, 4127, 4544, 4131, 689, 2]
+// Dependencies: [31, 27, 1850, 653, 1345, 33, 3850, 3977, 4067, 566, 3777, 1212, 2557, 6554, 5582, 3947, 1334, 5187, 5121, 5446, 6727, 477, 5085, 15690, 6153, 1273, 4127, 4544, 4131, 689, 2]
 // Exports: default
 
-// Module 15677 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 15689 (DisplayNameStylesFlywheelMobileActionSheet)
 import result from "result";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -145,7 +145,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     obj9 = markAsDismissed(477);
     if (obj9.isIOS()) {
       const obj11 = {};
-      const obj12 = { uri: ref(15678) };
+      const obj12 = { uri: ref(15690) };
       obj11.source = obj12;
       obj11.style = tmp3.image;
       obj11.resizeMode = "contain";
@@ -154,7 +154,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       let tmp21Result = tmp21(ref(5085), obj11);
       const tmp28 = ref(5085);
     } else {
-      const obj13 = { url: ref(15678), style: tmp3.image, autoplay: true };
+      const obj13 = { url: ref(15690), style: tmp3.image, autoplay: true };
       tmp21Result = tmp21(markAsDismissed(6153).APNGPlayer, obj13);
     }
   }

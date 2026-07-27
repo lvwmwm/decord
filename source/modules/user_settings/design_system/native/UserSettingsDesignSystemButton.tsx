@@ -1,10 +1,10 @@
-// Module ID: 14481
-// Function ID: 110631
+// Module ID: 14482
+// Function ID: 110636
 // Name: ExampleButton
-// Dependencies: [57, 31, 27, 3944, 33, 14482, 4544, 14483, 6625, 8944, 12199, 13140, 10166, 7673, 8802, 4131, 689, 1456, 4099, 14484, 1935, 4542, 4127, 9628, 12190, 12195, 12197, 12196, 12194, 12193, 4966, 3843, 665, 4555, 5166, 4663, 8181, 2]
+// Dependencies: [57, 31, 27, 3944, 33, 14483, 4544, 14484, 6625, 8944, 12200, 13141, 10167, 7673, 8802, 4131, 689, 1456, 4099, 14485, 1935, 4542, 4127, 9628, 12191, 12196, 12198, 12197, 12195, 12194, 4966, 3843, 665, 4555, 5166, 4663, 8181, 2]
 // Exports: default
 
-// Module 14481 (ExampleButton)
+// Module 14482 (ExampleButton)
 import _slicedToArray from "_slicedToArray";
 import ManaContext from "ManaContext";
 import get_ActivityIndicator from "registerAsset";
@@ -30,7 +30,7 @@ function ExampleButton(arg0) {
   let text;
   let variant;
   ({ variant, text, grow } = arg0);
-  const tmp = importDefault(14482)();
+  const tmp = importDefault(14483)();
   const enableLoadingState = tmp.enableLoadingState;
   ({ buttonScale, buttonSize, iconPosition, showIcon, showDisabled } = tmp);
   importDefault = React.useRef(null);
@@ -69,7 +69,7 @@ function ExampleButton(arg0) {
   obj.size = buttonSize;
   let tmp6;
   if (showIcon) {
-    tmp6 = importDefault(14483);
+    tmp6 = importDefault(14484);
   }
   obj.icon = tmp6;
   obj.iconPosition = iconPosition;
@@ -89,7 +89,7 @@ function ExampleIconButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp = importDefault(14482)();
+  const tmp = importDefault(14483)();
   enableLoadingState = tmp.enableLoadingState;
   ({ buttonSize, showDisabled } = tmp);
   importDefault = React.useRef(null);
@@ -156,7 +156,7 @@ function ExampleImageButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp = importDefault(14482)();
+  const tmp = importDefault(14483)();
   enableLoadingState = tmp.enableLoadingState;
   ({ buttonSize, showDisabled } = tmp);
   importDefault = React.useRef(null);
@@ -197,15 +197,15 @@ function ExampleImageButton(arg0) {
     obj.image = image;
     tmp5 = obj;
   }
-  return closure_9(enableLoadingState(12199).ImageButton, tmp5);
+  return closure_9(enableLoadingState(12200).ImageButton, tmp5);
 }
 function ExampleToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13140);
+  let obj = first(13141);
   obj = {};
-  obj = { text: "Unfollow", icon: importDefault(10166) };
+  obj = { text: "Unfollow", icon: importDefault(10167) };
   obj.on = obj;
   obj.off = { text: "Follow", icon: importDefault(7673) };
   const toggleButtonProps = obj.useToggleButtonProps(obj, first);
@@ -222,7 +222,7 @@ function ExampleIconToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13140);
+  let obj = first(13141);
   obj = {};
   obj = { variant: "destructive", accessibilityLabel: "Mute", icon: importDefault(8802) };
   obj.on = obj;
@@ -395,7 +395,7 @@ export default function UserSettingsDesignSystemButton() {
     text: "Button with a entity variant icon",
     size: "md"
   };
-  const obj26 = { variant: "entity", source: importDefault(12190) };
+  const obj26 = { variant: "entity", source: importDefault(12191) };
   obj25.icon = callback2(require(4544) /* Button */.Button.Icon, obj26);
   obj24.children = callback2(require(4544) /* Button */.Button, obj25);
   items9[1] = callback2(closure_5, obj24);
@@ -550,17 +550,17 @@ export default function UserSettingsDesignSystemButton() {
       return outer1_9(outer1_5, obj, variant);
     })
   };
-  obj55.children = callback2(ExampleImageButton, { image: importDefault(12195), label: "Telegram" });
+  obj55.children = callback2(ExampleImageButton, { image: importDefault(12196), label: "Telegram" });
   const items22 = [callback2(closure_5, obj55), , ];
   const obj57 = { style: items23 };
   items23 = [tmp.buttonContainer];
-  const obj56 = { image: importDefault(12195), label: "Telegram" };
-  obj57.children = callback2(ExampleImageButton, { image: importDefault(12197), label: "WhatsApp" });
+  const obj56 = { image: importDefault(12196), label: "Telegram" };
+  obj57.children = callback2(ExampleImageButton, { image: importDefault(12198), label: "WhatsApp" });
   items22[1] = callback2(closure_5, obj57);
   const obj59 = { style: items24 };
   items24 = [tmp.buttonContainer];
-  const obj58 = { image: importDefault(12197), label: "WhatsApp" };
-  obj59.children = callback2(ExampleImageButton, { image: importDefault(12196), label: "Twitter" });
+  const obj58 = { image: importDefault(12198), label: "WhatsApp" };
+  obj59.children = callback2(ExampleImageButton, { image: importDefault(12197), label: "Twitter" });
   items22[2] = callback2(closure_5, obj59);
   obj54.children = items22;
   items20[1] = callback3(closure_5, obj54);
@@ -617,22 +617,22 @@ export default function UserSettingsDesignSystemButton() {
   const items28 = [callback2(require(4542) /* Stack */.Stack, obj71), , ];
   const obj72 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
   const obj73 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
-  const obj74 = { image: importDefault(12194), label: "Label", showLabel: true };
+  const obj74 = { image: importDefault(12195), label: "Label", showLabel: true };
   const items29 = [callback2(ExampleImageButton, obj74), , ];
-  const obj75 = { image: importDefault(12190), label: "Label", showLabel: true };
+  const obj75 = { image: importDefault(12191), label: "Label", showLabel: true };
   items29[1] = callback2(ExampleImageButton, obj75);
-  const obj76 = { image: importDefault(12193), label: "Label", showLabel: true };
+  const obj76 = { image: importDefault(12194), label: "Label", showLabel: true };
   items29[2] = callback2(ExampleImageButton, obj76);
   obj73.children = items29;
   obj72.children = callback3(require(4542) /* Stack */.Stack, obj73);
   items28[1] = callback2(closure_6, obj72);
   const obj77 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
   const obj78 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
-  const obj79 = { image: importDefault(12195), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj79 = { image: importDefault(12196), label: "Supercalifragilisticexpialidocious", showLabel: true };
   const items30 = [callback2(ExampleImageButton, obj79), , ];
-  const obj80 = { image: importDefault(12197), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj80 = { image: importDefault(12198), label: "Supercalifragilisticexpialidocious", showLabel: true };
   items30[1] = callback2(ExampleImageButton, obj80);
-  const obj81 = { image: importDefault(12196), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj81 = { image: importDefault(12197), label: "Supercalifragilisticexpialidocious", showLabel: true };
   items30[2] = callback2(ExampleImageButton, obj81);
   obj78.children = items30;
   obj77.children = callback3(require(4542) /* Stack */.Stack, obj78);
@@ -659,7 +659,7 @@ export default function UserSettingsDesignSystemButton() {
   let obj92 = require(665) /* pad2 */;
   obj87.secondaryColor = obj92.hex2int("#cc2300");
   const obj88 = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#ffae70", "#cc2300"] };
-  const obj60 = { image: importDefault(12196), label: "Twitter" };
+  const obj60 = { image: importDefault(12197), label: "Twitter" };
   const obj89 = {};
   const obj90 = { spacing: 16 };
   const items35 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];

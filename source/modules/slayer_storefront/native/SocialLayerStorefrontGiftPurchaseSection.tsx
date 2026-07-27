@@ -1,5 +1,5 @@
 // Module ID: 9706
-// Function ID: 75616
+// Function ID: 75617
 // Name: SocialLayerStorefrontGiftPurchaseSection
 // Dependencies: [57, 31, 27, 6164, 1850, 653, 1852, 33, 4131, 689, 5159, 5468, 566, 5450, 491, 4560, 675, 9707, 9697, 477, 686, 9692, 1212, 9702, 4127, 4544, 2]
 // Exports: default

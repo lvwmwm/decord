@@ -1,5 +1,5 @@
 // Module ID: 9090
-// Function ID: 71526
+// Function ID: 71527
 // Name: useCurrentUserGuildJoinRequest
 // Dependencies: [3949, 566, 2]
 // Exports: useCurrentUserGuildJoinRequest

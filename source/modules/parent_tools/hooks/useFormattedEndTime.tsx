@@ -1,10 +1,10 @@
-// Module ID: 16028
-// Function ID: 123840
+// Module ID: 16040
+// Function ID: 123887
 // Name: useFormattedEndTime
 // Dependencies: [1850, 1212, 566, 2]
 // Exports: default
 
-// Module 16028 (useFormattedEndTime)
+// Module 16040 (useFormattedEndTime)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

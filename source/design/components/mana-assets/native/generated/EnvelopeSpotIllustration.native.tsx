@@ -1,5 +1,5 @@
 // Module ID: 6958
-// Function ID: 59672
+// Function ID: 59673
 // Name: EnvelopeSpotIllustration
 // Dependencies: [33, 5085, 6959, 2]
 // Exports: EnvelopeSpotIllustration

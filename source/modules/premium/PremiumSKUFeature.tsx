@@ -1,9 +1,9 @@
-// Module ID: 13051
-// Function ID: 100974
+// Module ID: 13052
+// Function ID: 100979
 // Name: PremiumSKUFeature
 // Dependencies: [7, 6, 2]
 
-// Module 13051 (PremiumSKUFeature)
+// Module 13052 (PremiumSKUFeature)
 import _classCallCheck from "_classCallCheck";
 import importDefaultResult from "_defineProperties";
 

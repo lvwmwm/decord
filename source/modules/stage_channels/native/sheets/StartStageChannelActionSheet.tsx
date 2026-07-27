@@ -1,5 +1,5 @@
 // Module ID: 6657
-// Function ID: 58886
+// Function ID: 58887
 // Name: StartStageChannelEventActionSheet
 // Dependencies: [5, 57, 31, 27, 1353, 4948, 653, 1354, 33, 4131, 689, 566, 4956, 4560, 675, 1820, 6658, 4099, 4030, 6667, 4127, 1212, 5187, 5121, 6670, 6689, 4544, 2]
 // Exports: default

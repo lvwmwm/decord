@@ -1,5 +1,5 @@
 // Module ID: 8473
-// Function ID: 67434
+// Function ID: 67435
 // Name: peg$SyntaxError
 // Dependencies: []
 

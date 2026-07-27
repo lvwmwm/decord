@@ -1,5 +1,5 @@
 // Module ID: 7807
-// Function ID: 61974
+// Function ID: 61975
 // Name: useChangelog
 // Dependencies: [31, 1922, 4142, 1906, 624, 7808, 2]
 // Exports: useCurrentChangelog

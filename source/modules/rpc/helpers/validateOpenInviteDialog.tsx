@@ -1,10 +1,10 @@
-// Module ID: 13470
-// Function ID: 103556
+// Module ID: 13471
+// Function ID: 103561
 // Name: validateOpenInviteDialog
-// Dependencies: [5658, 1838, 3759, 653, 13459, 10553, 8165, 2]
+// Dependencies: [5658, 1838, 3759, 653, 13460, 10554, 8165, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 13470 (validateOpenInviteDialog)
+// Module 13471 (validateOpenInviteDialog)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";
@@ -19,9 +19,9 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog() {
     let obj = { frame: connectedFrame, channel: undefined, guild: undefined };
     return obj;
   } else {
-    const obj6 = importDefault(13459)();
+    const obj6 = importDefault(13460)();
     if (null == obj6) {
-      let tmp24 = importDefault(10553);
+      let tmp24 = importDefault(10554);
       obj = { errorCode: RPCErrors.INVALID_CHANNEL };
       const prototype3 = tmp24.prototype;
       tmp24 = new tmp24(obj, "Invalid channel");
@@ -29,7 +29,7 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog() {
     } else {
       guild = guild.getGuild(obj6.getGuildId());
       if (null == guild) {
-        let tmp14 = importDefault(10553);
+        let tmp14 = importDefault(10554);
         const obj1 = { errorCode: RPCErrors.INVALID_CHANNEL };
         const _HermesInternal2 = HermesInternal;
         const prototype2 = tmp14.prototype;
@@ -40,7 +40,7 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog() {
           const obj2 = { frame: undefined, channel: obj6, guild };
           return obj2;
         } else {
-          let tmp4 = importDefault(10553);
+          let tmp4 = importDefault(10554);
           obj = { errorCode: RPCErrors.INVALID_PERMISSIONS };
           const _HermesInternal = HermesInternal;
           const prototype = tmp4.prototype;

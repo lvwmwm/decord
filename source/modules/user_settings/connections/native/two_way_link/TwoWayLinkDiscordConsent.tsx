@@ -1,5 +1,5 @@
 // Module ID: 8878
-// Function ID: 70210
+// Function ID: 70211
 // Name: TwoWayLinkDiscordConsent
 // Dependencies: [5, 57, 31, 27, 33, 3, 4131, 8870, 4939, 8879, 44, 5585, 5121, 4544, 1212, 2]
 // Exports: TwoWayLinkDiscordConsent

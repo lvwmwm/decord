@@ -1,5 +1,5 @@
 // Module ID: 8762
-// Function ID: 69349
+// Function ID: 69350
 // Name: getPrivateChannelCall
 // Dependencies: [4147, 653, 4342, 7703, 1212, 8763, 2]
 // Exports: default

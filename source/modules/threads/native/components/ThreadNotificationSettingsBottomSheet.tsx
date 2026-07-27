@@ -1,10 +1,10 @@
-// Module ID: 10309
-// Function ID: 79706
+// Module ID: 10310
+// Function ID: 79711
 // Name: ThreadNotificationsBottomSheet
-// Dependencies: [1211, 33, 10190, 5498, 5186, 1212, 7596, 6024, 7595, 2]
+// Dependencies: [1211, 33, 10191, 5498, 5186, 1212, 7596, 6024, 7595, 2]
 // Exports: default
 
-// Module 10309 (ThreadNotificationsBottomSheet)
+// Module 10310 (ThreadNotificationsBottomSheet)
 import { getThreadNotificationOptions as closure_3 } from "AbortCodes";
 import { jsx } from "jsxProd";
 
@@ -12,7 +12,7 @@ const result = require("computeThreadNotificationSetting").fileFinishedImporting
 
 export default function ThreadNotificationsBottomSheet(channel) {
   channel = channel.channel;
-  let obj = channel(10190);
+  let obj = channel(10191);
   const threadNotificationSetting = obj.useThreadNotificationSetting(channel);
   obj = {};
   obj = {};

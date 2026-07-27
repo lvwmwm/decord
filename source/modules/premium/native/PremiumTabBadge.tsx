@@ -1,10 +1,10 @@
-// Module ID: 13946
-// Function ID: 106696
+// Module ID: 13947
+// Function ID: 106701
 // Name: ThemedTabBadge
-// Dependencies: [57, 31, 27, 3783, 1852, 6173, 33, 4131, 689, 3977, 4067, 4127, 8364, 480, 6510, 1273, 13947, 6188, 6204, 3777, 3947, 1334, 566, 8379, 7778, 7777, 6506, 1212, 4555, 668, 477, 2]
+// Dependencies: [57, 31, 27, 3783, 1852, 6173, 33, 4131, 689, 3977, 4067, 4127, 8364, 480, 6510, 1273, 13948, 6188, 6204, 3777, 3947, 1334, 566, 8379, 7778, 7777, 6506, 1212, 4555, 668, 477, 2]
 // Exports: default
 
-// Module 13946 (ThemedTabBadge)
+// Module 13947 (ThemedTabBadge)
 import _slicedToArray from "_slicedToArray";
 import "set";
 import { View } from "getSystemLocale";
@@ -48,7 +48,7 @@ function OfferBadge(componentId) {
   importDefault(8364)(obj, obj);
   if (acked) {
     const obj1 = { style: tmp.acked };
-    const obj2 = { source: importDefault(13947), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color, style: tmp.icon };
+    const obj2 = { source: importDefault(13948), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color, style: tmp.icon };
     const items = [callback2(require(1273) /* Button */.Icon, obj2), ];
     const obj3 = { variant: "eyebrow", color: "interactive-text-default", style: tmp.text, children: ackedBadgeCopy };
     items[1] = callback2(require(4127) /* Text */.Text, obj3);
@@ -194,7 +194,7 @@ export default function PremiumTabBadge() {
           const items3 = [, ];
           ({ premiumDiscountBadge: arr4[0], ackedBadge: arr4[1] } = string);
           obj4.style = items3;
-          obj5 = { source: importDefault(13947), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: string.icon.color, style: string.icon };
+          obj5 = { source: importDefault(13948), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: string.icon.color, style: string.icon };
           const items4 = [callback2(require(1273) /* Button */.Icon, obj5), ];
           obj6 = { variant: "eyebrow", color: "interactive-text-default", style: string.text };
           const intl5 = require(1212) /* getSystemLocale */.intl;

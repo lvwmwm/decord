@@ -1,10 +1,10 @@
-// Module ID: 10706
-// Function ID: 83264
+// Module ID: 10707
+// Function ID: 83269
 // Name: handleInputModePress
-// Dependencies: [31, 27, 4178, 653, 33, 4131, 5495, 1212, 8770, 566, 10702, 5164, 4127, 5502, 10707, 2]
+// Dependencies: [31, 27, 4178, 653, 33, 4131, 5495, 1212, 8770, 566, 10703, 5164, 4127, 5502, 10708, 2]
 // Exports: default
 
-// Module 10706 (handleInputModePress)
+// Module 10707 (handleInputModePress)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -97,7 +97,7 @@ export default function UserSettingsVoiceInputOptions() {
           return obj.setMode(inputMode, obj);
         }
     };
-    obj5.children = callback(importDefault(10707), obj6);
+    obj5.children = callback(importDefault(10708), obj6);
     obj4.subLabel = callback(View, obj5);
     items2[1] = callback(inputMode(5164).TableRow, obj4);
     obj2.children = items2;
@@ -105,6 +105,6 @@ export default function UserSettingsVoiceInputOptions() {
   }
   items1[1] = tmp9;
   obj.children = items1;
-  return callback2(inputMode(10702).UserSettingsTableRowGroup, obj);
+  return callback2(inputMode(10703).UserSettingsTableRowGroup, obj);
 };
 export { handleInputModePress };

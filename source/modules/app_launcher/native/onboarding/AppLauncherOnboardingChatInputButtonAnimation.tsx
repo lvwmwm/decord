@@ -1,10 +1,10 @@
-// Module ID: 11339
-// Function ID: 88121
+// Module ID: 11340
+// Function ID: 88126
 // Name: EnteringAnimation
-// Dependencies: [31, 27, 4123, 33, 4131, 4548, 689, 4132, 4135, 566, 8756, 11148, 3992, 5453, 11340, 11173, 2]
+// Dependencies: [31, 27, 4123, 33, 4131, 4548, 689, 4132, 4135, 566, 8756, 11149, 3992, 5453, 11341, 11174, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 11339 (EnteringAnimation)
+// Module 11340 (EnteringAnimation)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -75,11 +75,11 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
   let obj1 = require(8756) /* useGradientBottom */;
   const gradientBottom = obj1.useGradientBottom();
-  importDefault(11148)({ channelId: channelId.channelId });
+  importDefault(11149)({ channelId: channelId.channelId });
   obj = {};
   obj = { entering: closure_11, exiting: closure_13, style: items1, collapsable: false };
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
-  obj1 = { collapsable: false, style: tmp.glowLottie, source: require(11340) /* items */, autoPlay: !stateFromStores };
+  obj1 = { collapsable: false, style: tmp.glowLottie, source: require(11341) /* items */, autoPlay: !stateFromStores };
   const items2 = [callback(importDefault(5453), obj1), , ];
   const items3 = [tmp.glowMask, gradientBottom];
   items2[1] = callback(closure_3, { collapsable: false, style: items3 });
@@ -89,7 +89,7 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   const obj3 = { collapsable: false, style: tmp.trinketsLottie };
   const obj2 = { collapsable: false, style: tmp.fakeButton };
   const tmp5 = importDefault(5453);
-  obj3.source = require(11173) /* items1 */;
+  obj3.source = require(11174) /* items1 */;
   obj3.autoPlay = !stateFromStores;
   items4[1] = callback(importDefault(5453), obj3);
   obj.children = items4;

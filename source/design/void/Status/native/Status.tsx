@@ -1,10 +1,10 @@
-// Module ID: 13080
-// Function ID: 101082
+// Module ID: 13081
+// Function ID: 101087
 // Name: getStatusSource
-// Dependencies: [57, 31, 27, 1274, 653, 11954, 33, 4131, 13078, 689, 13081, 13082, 13083, 13084, 13085, 13086, 13087, 13079, 13088, 3992, 4543, 13065, 2]
+// Dependencies: [57, 31, 27, 1274, 653, 11955, 33, 4131, 13079, 689, 13082, 13083, 13084, 13085, 13086, 13087, 13088, 13080, 13089, 3992, 4543, 13066, 2]
 // Exports: StatusWithTyping, default
 
-// Module 13080 (getStatusSource)
+// Module 13081 (getStatusSource)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -25,23 +25,23 @@ let closure_9;
 const require = arg1;
 function getStatusSource(status, streaming, flag, flag2) {
   if (streaming) {
-    return importDefault(13081);
-  } else if (flag2) {
     return importDefault(13082);
-  } else if (flag) {
+  } else if (flag2) {
     return importDefault(13083);
-  } else if (StatusTypes.IDLE === status) {
+  } else if (flag) {
     return importDefault(13084);
-  } else if (StatusTypes.DND === status) {
+  } else if (StatusTypes.IDLE === status) {
     return importDefault(13085);
+  } else if (StatusTypes.DND === status) {
+    return importDefault(13086);
   } else {
     if (StatusTypes.OFFLINE !== status) {
       if (StatusTypes.INVISIBLE !== status) {
         const ONLINE = StatusTypes.ONLINE;
-        return importDefault(13087);
+        return importDefault(13088);
       }
     }
-    return importDefault(13086);
+    return importDefault(13087);
   }
 }
 ({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
@@ -51,7 +51,7 @@ let closure_13 = _createForOfIteratorHelperLoose.createStyles({ statusIcon: { wi
 let closure_14 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
   let dotSize;
   let height;
-  let obj = require(13078) /* getAnimatedTypingTranslateX */;
+  let obj = require(13079) /* getAnimatedTypingTranslateX */;
   const statusTypingDimensions = obj.getStatusTypingDimensions(arg0);
   ({ height, dotSize } = statusTypingDimensions);
   obj = {};
@@ -105,7 +105,7 @@ export default function Status(isMobileOnline) {
     streaming = false;
   }
   let obj = {};
-  const items = [importDefault(13079)(size, flag, flag2), style];
+  const items = [importDefault(13080)(size, flag, flag2), style];
   obj.style = items;
   obj = { style: callback2().statusIcon, source: getStatusSource(status, streaming, flag, flag2), resizeMode: "stretch" };
   obj.children = callback(closure_4, obj);

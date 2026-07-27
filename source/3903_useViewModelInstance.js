@@ -1,5 +1,5 @@
 // Module ID: 3903
-// Function ID: 32294
+// Function ID: 32295
 // Name: useViewModelInstance
 // Dependencies: [31, 3892, 3896, 3884]
 // Exports: useViewModelInstance

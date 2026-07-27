@@ -1,5 +1,5 @@
 // Module ID: 9768
-// Function ID: 75958
+// Function ID: 75959
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 653, 9769, 477, 4472, 1212, 4325, 2]
 // Exports: handleDocumentSelection

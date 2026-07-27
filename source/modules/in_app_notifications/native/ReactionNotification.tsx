@@ -1,10 +1,10 @@
-// Module ID: 10299
-// Function ID: 79630
+// Module ID: 10300
+// Function ID: 79635
 // Name: ReactionNotificationBody
-// Dependencies: [31, 27, 4123, 10200, 653, 33, 4131, 478, 689, 3804, 10233, 4127, 1392, 10300, 5150, 1212, 5856, 10199, 10218, 10219, 10239, 9026, 1273, 5513, 22, 4361, 566, 4338, 4139, 10198, 10241, 1935, 10272, 10271, 2]
+// Dependencies: [31, 27, 4123, 10201, 653, 33, 4131, 478, 689, 3804, 10234, 4127, 1392, 10301, 5150, 1212, 5856, 10200, 10219, 10220, 10240, 9026, 1273, 5513, 22, 4361, 566, 4338, 4139, 10199, 10242, 1935, 10273, 10272, 2]
 // Exports: default
 
-// Module 10299 (ReactionNotificationBody)
+// Module 10300 (ReactionNotificationBody)
 import maybeLoadBundle from "maybeLoadBundle";
 import { View } from "module_4338";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,11 +33,11 @@ function ReactionNotificationBody(arg0) {
   let text;
   ({ secondaryText, messagePreview } = arg0);
   ({ text, hasMessageContent } = arg0);
-  let obj = require(10199) /* hasMedia */;
+  let obj = require(10200) /* hasMedia */;
   const messagePreviewTextVariant = obj.getMessagePreviewTextVariant();
   const tmp = _createForOfIteratorHelperLoose();
   obj = {};
-  ({ gradientColors, gradientStyles } = importDefault(10218)());
+  ({ gradientColors, gradientStyles } = importDefault(10219)());
   obj = { variant: messagePreviewTextVariant, color: "text-default", style: tmp.italic, children: text };
   const items = [callback(require(4127) /* Text */.Text, obj), , ];
   let tmp6 = null;
@@ -51,7 +51,7 @@ function ReactionNotificationBody(arg0) {
     tmp11 = null;
     if (null != messagePreview) {
       const obj2 = { message: messagePreview, lineClamp: 1, maxHeight: closure_6, textColor: "text-subtle", gradientStyles, gradientColors };
-      tmp11 = callback(require(10219) /* PreviewIcon */.NativeChannelRowPreview, obj2);
+      tmp11 = callback(require(10220) /* PreviewIcon */.NativeChannelRowPreview, obj2);
     }
   }
   items[2] = tmp11;
@@ -240,9 +240,9 @@ function ReactionNotificationBodyWrapper(arg0) {
     }, items1);
   })(obj);
   const secondaryText = tmp4.secondaryText;
-  let obj1 = require(10199) /* hasMedia */;
+  let obj1 = require(10200) /* hasMedia */;
   const hasPreviewableMedia = obj1.useHasPreviewableMedia(message);
-  let obj2 = require(10239) /* useGetInitialMessagePreview */;
+  let obj2 = require(10240) /* useGetInitialMessagePreview */;
   obj = { message };
   if (hasPreviewableMedia) {
     message = obj2.useGetInitialMessagePreview(obj);

@@ -1,10 +1,10 @@
-// Module ID: 12413
-// Function ID: 96357
+// Module ID: 12414
+// Function ID: 96362
 // Name: SharedUser
 // Dependencies: [27, 653, 33, 4131, 689, 3970, 6159, 1273, 4127, 1212, 4544, 4630, 4099, 4141, 1921, 5187, 5186, 4542, 6727, 2]
 // Exports: default
 
-// Module 12413 (SharedUser)
+// Module 12414 (SharedUser)
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";

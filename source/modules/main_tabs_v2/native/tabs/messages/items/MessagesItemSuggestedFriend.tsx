@@ -1,10 +1,10 @@
-// Module ID: 14967
-// Function ID: 114101
+// Module ID: 14968
+// Function ID: 114106
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: [57, 31, 27, 3768, 653, 33, 4131, 689, 9849, 8297, 1935, 624, 1212, 3970, 14968, 14969, 675, 4661, 1273, 4127, 4544, 4077, 2]
+// Dependencies: [57, 31, 27, 3768, 653, 33, 4131, 689, 9849, 8297, 1935, 624, 1212, 3970, 14969, 14970, 675, 4661, 1273, 4127, 4544, 4077, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 14967 (getMessagesItemSuggestedFriendHeight)
+// Module 14968 (getMessagesItemSuggestedFriendHeight)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";

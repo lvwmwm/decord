@@ -1,10 +1,10 @@
-// Module ID: 15028
-// Function ID: 114570
+// Module ID: 15029
+// Function ID: 114574
 // Name: SubscriptionGatedChannelIcon
 // Dependencies: [31, 33, 1273, 9298, 2]
 // Exports: default
 
-// Module 15028 (SubscriptionGatedChannelIcon)
+// Module 15029 (SubscriptionGatedChannelIcon)
 import "result";
 import { jsx } from "jsxProd";
 

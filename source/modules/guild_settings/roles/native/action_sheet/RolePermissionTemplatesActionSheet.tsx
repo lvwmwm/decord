@@ -1,10 +1,10 @@
-// Module ID: 16387
-// Function ID: 127911
+// Module ID: 16399
+// Function ID: 127958
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [31, 27, 653, 33, 4131, 689, 675, 4099, 3831, 5186, 1212, 5498, 16366, 4471, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 675, 4099, 3831, 5186, 1212, 5498, 16378, 4471, 2]
 // Exports: default
 
-// Module 16387 (RolePermissionTemplatesActionSheet)
+// Module 16399 (RolePermissionTemplatesActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";

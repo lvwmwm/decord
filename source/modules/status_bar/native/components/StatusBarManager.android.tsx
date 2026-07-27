@@ -1,5 +1,5 @@
 // Module ID: 6623
-// Function ID: 58582
+// Function ID: 58583
 // Name: StatusBarManager
 // Dependencies: [6, 7, 27, 22, 1569, 2]
 

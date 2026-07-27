@@ -1,10 +1,10 @@
-// Module ID: 12295
-// Function ID: 95844
+// Module ID: 12296
+// Function ID: 95849
 // Name: createGuildProfileInvite
-// Dependencies: [57, 1922, 9436, 653, 5969, 7666, 5128, 3977, 689, 1387, 8390, 8388, 1392, 1833, 1825, 1212, 10920, 8397, 5970, 21, 1913, 5487, 665, 7658, 7670, 2]
+// Dependencies: [57, 1922, 9436, 653, 5969, 7666, 5128, 3977, 689, 1387, 8390, 8388, 1392, 1833, 1825, 1212, 10921, 8397, 5970, 21, 1913, 5487, 665, 7658, 7670, 2]
 // Exports: createGuildProfileInvite
 
-// Module 12295 (createGuildProfileInvite)
+// Module 12296 (createGuildProfileInvite)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { CodedLinkExtendedType } from "CodedLinkExtendedType";
@@ -120,24 +120,24 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   }
   let guildProfileCTAType = null;
   if (null != guildProfileFromInvite) {
-    guildProfileCTAType = id(10920).getGuildProfileCTAType(guildProfileFromInvite, invite.code);
-    const obj13 = id(10920);
+    guildProfileCTAType = id(10921).getGuildProfileCTAType(guildProfileFromInvite, invite.code);
+    const obj13 = id(10921);
   }
-  if (id(10920).CTATypes.IS_MEMBER === guildProfileCTAType) {
+  if (id(10921).CTATypes.IS_MEMBER === guildProfileCTAType) {
     const intl7 = id(1212).intl;
     let stringResult = intl7.string(id(1212).t.IRoQXr);
-  } else if (id(10920).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
+  } else if (id(10921).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
     const intl6 = id(1212).intl;
     stringResult = intl6.string(id(1212).t["4yfIDk"]);
-  } else if (id(10920).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
+  } else if (id(10921).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
     const intl5 = id(1212).intl;
     stringResult = intl5.string(id(1212).t["7XdMW2"]);
-  } else if (id(10920).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
+  } else if (id(10921).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
     const intl4 = id(1212).intl;
     stringResult = intl4.string(id(1212).t.MMlhsr);
   } else {
-    if (id(10920).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
-      const JOIN_VIA_INVITE = id(10920).CTATypes.JOIN_VIA_INVITE;
+    if (id(10921).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
+      const JOIN_VIA_INVITE = id(10921).CTATypes.JOIN_VIA_INVITE;
     }
     const intl3 = id(1212).intl;
     stringResult = intl3.string(id(1212).t.XpeFYr);

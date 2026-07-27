@@ -1,10 +1,10 @@
-// Module ID: 11942
-// Function ID: 92369
+// Module ID: 11943
+// Function ID: 92374
 // Name: isOnMetaQuest
 // Dependencies: [653, 2]
 // Exports: default
 
-// Module 11942 (isOnMetaQuest)
+// Module 11943 (isOnMetaQuest)
 import { ActivityGamePlatforms } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/isOnMetaQuest.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 7282
-// Function ID: 60158
+// Function ID: 60159
 // Name: NitroSupergraphicLogo
 // Dependencies: [27, 33, 689, 3835, 7283, 2]
 // Exports: NitroSupergraphicLogo

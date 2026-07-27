@@ -1,10 +1,10 @@
-// Module ID: 11755
-// Function ID: 91309
+// Module ID: 11756
+// Function ID: 91314
 // Name: getMemberCountFromInvite
-// Dependencies: [57, 31, 27, 11445, 1858, 1850, 653, 11756, 33, 4131, 689, 4974, 5968, 1273, 11688, 3970, 1212, 9099, 4127, 1392, 5085, 675, 566, 11757, 8163, 4544, 4966, 2]
+// Dependencies: [57, 31, 27, 11446, 1858, 1850, 653, 11757, 33, 4131, 689, 4974, 5968, 1273, 11689, 3970, 1212, 9099, 4127, 1392, 5085, 675, 566, 11758, 8163, 4544, 4966, 2]
 // Exports: default
 
-// Module 11755 (getMemberCountFromInvite)
+// Module 11756 (getMemberCountFromInvite)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "set";
@@ -92,9 +92,9 @@ function InviteDestinationIcon(invite) {
   }
   tmp5 = null;
   if (null != invite.guild) {
-    obj = { style: tmp.avatar, guild: invite.guild, size: importDefault(11688).Sizes.LARGE, textScale: 2 };
-    tmp5 = callback2(importDefault(11688), obj);
-    const tmp9 = importDefault(11688);
+    obj = { style: tmp.avatar, guild: invite.guild, size: importDefault(11689).Sizes.LARGE, textScale: 2 };
+    tmp5 = callback2(importDefault(11689), obj);
+    const tmp9 = importDefault(11689);
   }
 }
 function InviteHeader(invite) {
@@ -349,7 +349,7 @@ export default function InviteDetails(invite) {
   items2[2] = callback2(InviteHeader, obj2);
   const merged3 = Object.assign(obj);
   items2[3] = callback2(InviteMemberCounts, {});
-  items2[4] = callback2(importDefault(11757), { invite, style: tmp.rolesList });
+  items2[4] = callback2(importDefault(11758), { invite, style: tmp.rolesList });
   let tmp12 = null != guild_scheduled_event;
   if (tmp12) {
     const obj5 = { style: tmp.embedDetailsCard };

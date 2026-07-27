@@ -1,5 +1,5 @@
 // Module ID: 7162
-// Function ID: 59978
+// Function ID: 59979
 // Name: GroupGamingSpotIllustration
 // Dependencies: [33, 5085, 7163, 2]
 // Exports: GroupGamingSpotIllustration

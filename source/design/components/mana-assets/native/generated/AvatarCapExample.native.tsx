@@ -1,5 +1,5 @@
 // Module ID: 6784
-// Function ID: 59411
+// Function ID: 59412
 // Name: AvatarCapExample
 // Dependencies: [33, 5085, 6785, 2]
 // Exports: AvatarCapExample

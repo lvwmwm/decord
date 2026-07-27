@@ -1,10 +1,10 @@
-// Module ID: 15738
-// Function ID: 121400
+// Module ID: 15750
+// Function ID: 121447
 // Name: getActiveRoute
 // Dependencies: [57, 31, 3983, 2]
 // Exports: useIsOnMainSurface
 
-// Module 15738 (getActiveRoute)
+// Module 15750 (getActiveRoute)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import set from "getRootNavigationRef";

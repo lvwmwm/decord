@@ -1,10 +1,10 @@
-// Module ID: 10999
-// Function ID: 85507
+// Module ID: 11000
+// Function ID: 85512
 // Name: useCurrentUserHasAutomodQuarantinedProfile
 // Dependencies: [31, 9739, 1194, 1918, 1838, 3759, 3948, 653, 3747, 662, 624, 3765, 1212, 9740, 9741, 6554, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 10999 (useCurrentUserHasAutomodQuarantinedProfile)
+// Module 11000 (useCurrentUserHasAutomodQuarantinedProfile)
 import result from "result";
 import zustandStore from "zustandStore";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,9 +1,9 @@
-// Module ID: 14851
-// Function ID: 113291
+// Module ID: 14852
+// Function ID: 113296
 // Name: context
 // Dependencies: [31, 2]
 
-// Module 14851 (context)
+// Module 14852 (context)
 import importAllResult from "result";
 
 const context = require("result").createContext({ current: undefined });

@@ -1,10 +1,10 @@
-// Module ID: 11438
-// Function ID: 88928
+// Module ID: 11439
+// Function ID: 88933
 // Name: ApplicationCommandOptionItem
-// Dependencies: [57, 31, 27, 1918, 33, 4131, 689, 4974, 4661, 1212, 1273, 566, 11328, 5085, 4127, 7575, 8063, 11439, 2]
+// Dependencies: [57, 31, 27, 1918, 33, 4131, 689, 4974, 4661, 1212, 1273, 566, 11329, 5085, 4127, 7575, 8063, 11440, 2]
 // Exports: default
 
-// Module 11438 (ApplicationCommandOptionItem)
+// Module 11439 (ApplicationCommandOptionItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

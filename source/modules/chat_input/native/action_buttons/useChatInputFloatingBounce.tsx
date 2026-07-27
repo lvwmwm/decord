@@ -1,10 +1,10 @@
-// Module ID: 11344
-// Function ID: 88147
+// Module ID: 11345
+// Function ID: 88152
 // Name: useChatInputFloatingBounce
-// Dependencies: [57, 31, 11092, 3992, 4132, 4543, 2]
+// Dependencies: [57, 31, 11093, 3992, 4132, 4543, 2]
 // Exports: default
 
-// Module 11344 (useChatInputFloatingBounce)
+// Module 11345 (useChatInputFloatingBounce)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import TextAreaCta from "TextAreaCta";

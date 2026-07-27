@@ -1,5 +1,5 @@
 // Module ID: 7693
-// Function ID: 61509
+// Function ID: 61510
 // Name: canReactToMessageInternal
 // Dependencies: [1918, 4947, 3759, 1850, 653, 1360, 3748, 566, 2]
 // Exports: canReactToMessage, useCanReactToMessage

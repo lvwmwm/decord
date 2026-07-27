@@ -1,5 +1,5 @@
 // Module ID: 9299
-// Function ID: 72793
+// Function ID: 72794
 // Name: _isNativeReflectConstruct
 // Dependencies: [57, 6, 7, 15, 17, 18, 31, 27, 1280, 1850, 653, 6526, 1852, 33, 4131, 689, 4127, 3843, 6188, 1212, 3777, 6138, 6139, 4067, 3977, 9300, 9301, 9302, 9303, 6130, 9304, 9305, 9306, 9307, 566, 5502, 6152, 6137, 1450, 5462, 5482, 4560, 675, 9308, 4026, 4562, 1273, 5085, 9309, 9310, 6141, 2]
 
@@ -288,7 +288,7 @@ class PremiumUpsellAlert {
     initialUpsellKey = global.initialUpsellKey;
     analyticsLocation = global.analyticsLocation;
     imageSource = global.imageSource;
-    f72812 = undefined;
+    f72813 = undefined;
     useTier0UpsellContent = undefined;
     getUploadAlertDescription = function getUploadAlertDescription() {
       if (useTier0UpsellContent) {
@@ -320,7 +320,7 @@ class PremiumUpsellAlert {
     obj2 = require("initialize");
     items = [];
     items[0] = c13;
-    f72812 = obj2.useStateFromStores(items, () => outer1_13.getCurrentUser());
+    f72813 = obj2.useStateFromStores(items, () => outer1_13.getCurrentUser());
     generateUpsellItems = (function generateUpsellItems(initialUpsellKey) {
       let closure_0 = initialUpsellKey;
       const upsellItems = initialUpsellKey(imageSource[37]).getUpsellItems();

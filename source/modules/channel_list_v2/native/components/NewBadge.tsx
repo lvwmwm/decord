@@ -1,10 +1,10 @@
-// Module ID: 11386
-// Function ID: 88476
+// Module ID: 11387
+// Function ID: 88481
 // Name: NewBadge
 // Dependencies: [31, 27, 33, 4131, 477, 689, 3977, 8757, 4067, 4127, 1212, 2]
 // Exports: default
 
-// Module 11386 (NewBadge)
+// Module 11387 (NewBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

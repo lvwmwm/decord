@@ -1,10 +1,10 @@
-// Module ID: 12522
-// Function ID: 96961
+// Module ID: 12523
+// Function ID: 96966
 // Name: useOutboundPromotionRedemptionEndDate
 // Dependencies: [31, 3713, 3801, 2]
 // Exports: default
 
-// Module 12522 (useOutboundPromotionRedemptionEndDate)
+// Module 12523 (useOutboundPromotionRedemptionEndDate)
 import result from "result";
 import module_30 from "module_30";
 import importDefaultResult from "t";

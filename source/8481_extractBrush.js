@@ -1,5 +1,5 @@
 // Module ID: 8481
-// Function ID: 67559
+// Function ID: 67560
 // Name: extractBrush
 // Dependencies: [27, 8482]
 // Exports: default

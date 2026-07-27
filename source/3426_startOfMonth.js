@@ -1,5 +1,5 @@
 // Module ID: 3426
-// Function ID: 26677
+// Function ID: 26678
 // Name: startOfMonth
 // Dependencies: [3210, 3211]
 // Exports: default

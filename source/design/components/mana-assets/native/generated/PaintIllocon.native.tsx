@@ -1,5 +1,5 @@
 // Module ID: 7320
-// Function ID: 60215
+// Function ID: 60216
 // Name: PaintIllocon
 // Dependencies: [33, 5085, 7321, 2]
 // Exports: PaintIllocon

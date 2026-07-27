@@ -1,10 +1,10 @@
-// Module ID: 15180
-// Function ID: 115626
+// Module ID: 15193
+// Function ID: 115675
 // Name: getBannerLabel
-// Dependencies: [57, 31, 27, 12674, 14058, 653, 33, 4131, 689, 1212, 3835, 15181, 15183, 4127, 666, 3992, 5109, 4555, 566, 675, 14057, 4543, 12675, 2]
+// Dependencies: [57, 31, 27, 12675, 14059, 653, 33, 4131, 689, 1212, 3835, 15194, 15196, 4127, 666, 3992, 5109, 4555, 566, 675, 14058, 4543, 12676, 2]
 // Exports: default
 
-// Module 15180 (getBannerLabel)
+// Module 15193 (getBannerLabel)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -44,12 +44,12 @@ function ConnectionBannerIcon(state) {
   } else if (constants.NO_CONNECTION === state) {
     const obj1 = { style: tmp.leadingSlot };
     const obj2 = { size: "xs", color: importDefault(689).colors.INTERACTIVE_ICON_DEFAULT };
-    obj1.children = callback2(require(15181) /* ConnectionUnknownIcon */.ConnectionUnknownIcon, obj2);
+    obj1.children = callback2(require(15194) /* ConnectionUnknownIcon */.ConnectionUnknownIcon, obj2);
     return callback2(closure_6, obj1);
   } else if (constants.BACK_ONLINE === state) {
     obj = { style: tmp.leadingSlot };
     const obj3 = { size: "xs", color: importDefault(689).colors.ICON_FEEDBACK_POSITIVE };
-    obj.children = callback2(require(15183) /* ConnectionFineIcon */.ConnectionFineIcon, obj3);
+    obj.children = callback2(require(15196) /* ConnectionFineIcon */.ConnectionFineIcon, obj3);
     return callback2(closure_6, obj);
   }
 }
@@ -202,7 +202,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/mai
 export default function ConnectionBanner() {
   let hidden;
   let timeoutMs;
-  const config = importDefault(12675).useConfig({ location: "ConnectionBanner" });
+  const config = importDefault(12676).useConfig({ location: "ConnectionBanner" });
   ({ hidden, timeoutMs } = config);
   (function useConnectivityIndicatorAnalytics(hidden) {
     let closure_0 = hidden;

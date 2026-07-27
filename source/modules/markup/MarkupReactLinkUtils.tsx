@@ -1,5 +1,5 @@
 // Module ID: 9445
-// Function ID: 73745
+// Function ID: 73746
 // Name: isLinkTrusted
 // Dependencies: [8138, 7709, 2]
 // Exports: isLinkTrusted

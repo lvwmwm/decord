@@ -1,5 +1,5 @@
 // Module ID: 6630
-// Function ID: 58609
+// Function ID: 58610
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
 // Dependencies: [5, 1838, 5611, 653, 6631, 5609, 1198, 6632, 6636, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication

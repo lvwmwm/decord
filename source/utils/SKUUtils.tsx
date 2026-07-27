@@ -1,5 +1,5 @@
 // Module ID: 8449
-// Function ID: 67332
+// Function ID: 67333
 // Name: GameGenres
 // Dependencies: [57, 653, 3953, 1212, 4370, 477, 3713, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU

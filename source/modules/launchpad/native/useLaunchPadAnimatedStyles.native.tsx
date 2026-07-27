@@ -1,10 +1,10 @@
-// Module ID: 15704
-// Function ID: 121155
+// Module ID: 15716
+// Function ID: 121202
 // Name: useLaunchpadAnimatedStyles
-// Dependencies: [10414, 477, 4131, 15705, 14768, 1557, 3992, 4543, 2]
+// Dependencies: [10415, 477, 4131, 15717, 14769, 1557, 3992, 4543, 2]
 // Exports: default
 
-// Module 15704 (useLaunchpadAnimatedStyles)
+// Module 15716 (useLaunchpadAnimatedStyles)
 import { LAUNCH_PAD_SPRING_CONFIG } from "LAUNCH_PAD_SPRING_CONFIG";
 import set from "set";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

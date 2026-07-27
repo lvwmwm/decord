@@ -1,10 +1,10 @@
-// Module ID: 11990
-// Function ID: 92682
+// Module ID: 11991
+// Function ID: 92687
 // Name: useGamePress
-// Dependencies: [57, 31, 27, 1194, 8043, 33, 4131, 689, 8407, 8418, 8045, 11991, 4127, 11995, 1832, 11996, 566, 1324, 22, 5631, 1212, 5509, 5634, 11998, 5650, 11999, 12103, 2]
+// Dependencies: [57, 31, 27, 1194, 8043, 33, 4131, 689, 8407, 8418, 8045, 11992, 4127, 11996, 1832, 11997, 566, 1324, 22, 5631, 1212, 5509, 5634, 11999, 5650, 12000, 12104, 2]
 // Exports: default
 
-// Module 11990 (useGamePress)
+// Module 11991 (useGamePress)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "set";
@@ -31,7 +31,7 @@ function WidgetRenderer(isFirstWidget) {
   ({ userId, widget, cardStyle } = isFirstWidget);
   if (widget instanceof require(5650) /* ApplicationWidget */.ApplicationWidget) {
     let obj = { userId, widget, cardStyle, isFirstWidget: isFirstWidget.isFirstWidget };
-    let tmpResult = tmp(importDefault(11999), obj);
+    let tmpResult = tmp(importDefault(12000), obj);
   } else {
     obj = { userId, widget, cardStyle };
     tmpResult = tmp(closure_20, obj);
@@ -136,7 +136,7 @@ let closure_17 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  const tmp2 = importDefault(11995)(game.applicationId);
+  const tmp2 = importDefault(11996)(game.applicationId);
   const gameName = tmp2.gameName;
   let tmp3;
   if (!disableInteraction) {
@@ -184,7 +184,7 @@ let closure_17 = importAllResult.memo((game) => {
   if (tmp7) {
     const obj3 = { style: tmp.comment };
     const obj4 = { size: "xxs", color: importDefault(689).colors.TEXT_MUTED };
-    const items3 = [callback2(_require(11996).QuoteIcon, obj4), ];
+    const items3 = [callback2(_require(11997).QuoteIcon, obj4), ];
     obj5 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
     items3[1] = callback2(_require(4127).Text, obj5);
     obj3.children = items3;
@@ -205,7 +205,7 @@ let closure_18 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  const tmp2 = importDefault(11995)(game.applicationId);
+  const tmp2 = importDefault(11996)(game.applicationId);
   const gameName = tmp2.gameName;
   let tmp3;
   if (!disableInteraction) {
@@ -259,7 +259,7 @@ let closure_19 = importAllResult.memo((game) => {
   let c0;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  ({ coverImageUrl, gameName } = importDefault(11995)(game.applicationId));
+  ({ coverImageUrl, gameName } = importDefault(11996)(game.applicationId));
   let tmp3;
   if (!disableInteraction) {
     tmp3 = useGamePress(userId, game.applicationId);
@@ -451,7 +451,7 @@ export default function UserProfileWidgetsBoard(userId) {
     flag = true;
   }
   const cardStyle = userId.cardStyle;
-  let obj = userId(12103);
+  let obj = userId(12104);
   const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId);
   (function useTrackUserProfileWidgetsView(flag, arg1) {
     let closure_0 = flag;

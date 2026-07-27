@@ -1,10 +1,10 @@
-// Module ID: 15498
-// Function ID: 119151
+// Module ID: 15511
+// Function ID: 119200
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 1352, 1348, 3768, 5601, 8745, 653, 33, 3992, 4127, 4131, 689, 477, 4141, 5604, 686, 566, 675, 15499, 15500, 4132, 9050, 1212, 10348, 15501, 5462, 5482, 5159, 4560, 9059, 1198, 3831, 10159, 10158, 4070, 4069, 9852, 4544, 11402, 2]
+// Dependencies: [5, 57, 31, 27, 1352, 1348, 3768, 5601, 8745, 653, 33, 3992, 4127, 4131, 689, 477, 4141, 5604, 686, 566, 675, 15512, 15513, 4132, 9050, 1212, 10349, 15514, 5462, 5482, 5159, 4560, 9059, 1198, 3831, 10160, 10159, 4070, 4069, 9852, 4544, 11403, 2]
 // Exports: default
 
-// Module 15498 (_createForOfIteratorHelperLoose)
+// Module 15511 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import useMountLayoutEffect from "useMountLayoutEffect";
@@ -346,11 +346,11 @@ function ChatPreview(channelId) {
   let obj = { style: tmp.background };
   obj = { style: tmp.container };
   obj = { guildId: closure_15, channelId, chatInputRef: React.useRef(null), HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: tagListInputRef };
-  const items1 = [callback3(importDefault(10348), obj), ];
+  const items1 = [callback3(importDefault(10349), obj), ];
   const obj1 = {};
   const ref = React.useRef(null);
   obj1.portal = channelId(477).isAndroid();
-  items1[1] = callback3(channelId(15501).PortalKeyboardRenderer, obj1);
+  items1[1] = callback3(channelId(15514).PortalKeyboardRenderer, obj1);
   obj.children = items1;
   obj.children = callback4(View, obj);
   return callback3(View, obj);
@@ -542,6 +542,6 @@ export default function NewMessageScreen(navigation) {
   }, items8);
   obj = { value: tmp2(importDefault(5482).NEW_MESSAGE_COMPOSER).analyticsLocations };
   obj = { actions: memo, noResultActions: memo1, rowMode: stateFromStores.NONE, tagListInputRef: ref, onSelectUser: callback1, onQueryChanged: callback3, selectedUserIds: first, withAffinitySuggestions: true, overrideResults: tmp17Result, withGuildMembers: 0 === first.length, withGDMNames: true, forceSearchResults: tmp8, onForceSearchResults: callback2, defaultNoResultsFound: memo2, autoFocusSearch: true };
-  obj.children = callback3(importDefault(11402), obj);
+  obj.children = callback3(importDefault(11403), obj);
   return callback3(navigation(5462).AnalyticsLocationProvider, obj);
 };

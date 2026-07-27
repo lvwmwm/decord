@@ -1,5 +1,5 @@
 // Module ID: 9076
-// Function ID: 71409
+// Function ID: 71410
 // Name: BANNER_RATIO_HEIGHT_16_9
 // Dependencies: [1450, 2]
 // Exports: useBannerHeight

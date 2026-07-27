@@ -1,5 +1,5 @@
 // Module ID: 4729
-// Function ID: 41152
+// Function ID: 41153
 // Name: VideoTypes
 // Dependencies: [7, 6]
 

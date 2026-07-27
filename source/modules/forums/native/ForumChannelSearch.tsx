@@ -1,5 +1,5 @@
 // Module ID: 10065
-// Function ID: 78036
+// Function ID: 78037
 // Name: ForumChannelCloseSearchButton
 // Dependencies: [31, 27, 6027, 33, 4131, 1457, 10066, 9050, 4544, 1212, 9067, 566, 9171, 6026, 2]
 

@@ -1,10 +1,10 @@
-// Module ID: 12814
-// Function ID: 99867
+// Module ID: 12815
+// Function ID: 99872
 // Name: dispatchAutoDisableVideo
 // Dependencies: [4192, 686, 2]
 // Exports: default
 
-// Module 12814 (dispatchAutoDisableVideo)
+// Module 12815 (dispatchAutoDisableVideo)
 import { MediaEngineContextTypes } from "DesktopSources";
 
 const result = require("set").fileFinishedImporting("modules/media_engine/dispatchAutoDisableVideo.tsx");

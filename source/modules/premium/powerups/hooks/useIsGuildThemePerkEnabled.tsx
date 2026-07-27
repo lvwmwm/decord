@@ -1,10 +1,10 @@
-// Module ID: 15047
-// Function ID: 114658
+// Module ID: 15059
+// Function ID: 114704
 // Name: useIsGuildThemePerkEnabled
 // Dependencies: [1838, 4018, 653, 566, 4022, 2]
 // Exports: default
 
-// Module 15047 (useIsGuildThemePerkEnabled)
+// Module 15059 (useIsGuildThemePerkEnabled)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildFeatures } from "ME";

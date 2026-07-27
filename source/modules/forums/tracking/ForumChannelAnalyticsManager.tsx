@@ -1,5 +1,5 @@
 // Module ID: 6031
-// Function ID: 54094
+// Function ID: 54095
 // Name: ForumChannelAnalyticsManager
 // Dependencies: [7, 6, 1348, 2]
 

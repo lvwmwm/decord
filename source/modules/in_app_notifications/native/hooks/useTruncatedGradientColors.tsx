@@ -1,10 +1,10 @@
-// Module ID: 10218
-// Function ID: 79111
+// Module ID: 10219
+// Function ID: 79116
 // Name: useTruncatedGradientColors
 // Dependencies: [31, 4131, 3835, 689, 666, 2]
 // Exports: default
 
-// Module 10218 (useTruncatedGradientColors)
+// Module 10219 (useTruncatedGradientColors)
 import { useMemo } from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

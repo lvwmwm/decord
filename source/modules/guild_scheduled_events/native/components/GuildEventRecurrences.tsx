@@ -1,5 +1,5 @@
 // Module ID: 8268
-// Function ID: 66404
+// Function ID: 66405
 // Name: GuildEventRecurrences
 // Dependencies: [31, 27, 33, 4131, 689, 8269, 4127, 1212, 21, 8271, 4544, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 15684
-// Function ID: 121021
+// Module ID: 15696
+// Function ID: 121068
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [31, 27, 4123, 653, 33, 566, 14558, 477, 6154, 14559, 5085, 4544, 1212, 10121, 689, 4099, 3828, 1921, 6599, 2845, 2]
+// Dependencies: [31, 27, 4123, 653, 33, 566, 14559, 477, 6154, 14560, 5085, 4544, 1212, 10121, 689, 4099, 3828, 1921, 6599, 2845, 2]
 // Exports: default
 
-// Module 15684 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 15696 (IncentivizedAccountLinkConfirmationBottomSheet)
 import "result";
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,23 +19,23 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   const items = [_isNativeReflectConstruct];
   if (obj.useStateFromStores(items, () => outer1_4.useReducedMotion)) {
     obj = {};
-    obj = { uri: importDefault(14558) };
+    obj = { uri: importDefault(14559) };
     obj.source = obj;
     obj.style = { width: 150, height: 150 };
-    let tmp3Result = <Image uri={importDefault(14558)} />;
+    let tmp3Result = <Image uri={importDefault(14559)} />;
   } else {
     let obj1 = require(477) /* set */;
     if (obj1.isAndroid()) {
       obj1 = {};
       let tmp4Result = tmp4(6154);
-      obj1.url = tmp4(14559);
+      obj1.url = tmp4(14560);
       obj1.style = { width: 150, height: 150 };
       tmp3Result = tmp3(tmp4Result, obj1);
     } else {
       let obj2 = {};
       const obj3 = {};
       tmp4Result = tmp4(5085);
-      obj3.uri = tmp4(14559);
+      obj3.uri = tmp4(14560);
       obj2.source = obj3;
       obj2.resizeMode = "contain";
       obj2.style = { width: 150, height: 150 };

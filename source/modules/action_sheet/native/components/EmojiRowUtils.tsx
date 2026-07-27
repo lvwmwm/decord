@@ -1,5 +1,5 @@
 // Module ID: 9904
-// Function ID: 76731
+// Function ID: 76732
 // Name: shouldShowEmojiRow
 // Dependencies: [653, 1360, 2]
 // Exports: shouldShowEmojiRow

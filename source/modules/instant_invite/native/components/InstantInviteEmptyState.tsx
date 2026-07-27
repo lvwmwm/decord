@@ -1,10 +1,10 @@
-// Module ID: 12166
-// Function ID: 95257
+// Module ID: 12167
+// Function ID: 95262
 // Name: onCopy
-// Dependencies: [31, 27, 8287, 33, 4131, 689, 566, 1273, 12167, 1212, 8929, 4661, 8943, 4127, 8288, 4544, 2]
+// Dependencies: [31, 27, 8287, 33, 4131, 689, 566, 1273, 12168, 1212, 8929, 4661, 8943, 4127, 8288, 4544, 2]
 // Exports: default
 
-// Module 12166 (onCopy)
+// Module 12167 (onCopy)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ export default function _default(link) {
   const items = [_isNativeReflectConstruct];
   _require = obj.useStateFromStores(items, () => outer1_4.getInviteSettings());
   obj = { style: tmp.container };
-  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: importDefault(12167) };
+  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: importDefault(12168) };
   let intl = _require(1212).intl;
   obj.title = intl.string(_require(1212).t.tQc0l8);
   const intl2 = _require(1212).intl;

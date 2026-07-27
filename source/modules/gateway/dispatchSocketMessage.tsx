@@ -1,10 +1,10 @@
-// Module ID: 12669
-// Function ID: 98041
+// Module ID: 12670
+// Function ID: 98046
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 1352, 4029, 1858, 1348, 1918, 1850, 4147, 3782, 3783, 653, 3, 12641, 12625, 14, 566, 12670, 1318, 5720, 12671, 686, 22, 6041, 1829, 1861, 9490, 6023, 12747, 4452, 6244, 5656, 8050, 4461, 4354, 12748, 12750, 1828, 12752, 2]
+// Dependencies: [29, 1352, 4029, 1858, 1348, 1918, 1850, 4147, 3782, 3783, 653, 3, 12642, 12626, 14, 566, 12671, 1318, 5720, 12672, 686, 22, 6041, 1829, 1861, 9490, 6023, 12748, 4452, 6244, 5656, 8050, 4461, 4354, 12749, 12751, 1828, 12753, 2]
 // Exports: default
 
-// Module 12669 (_createForOfIteratorHelperLoose)
+// Module 12670 (_createForOfIteratorHelperLoose)
 import fetchSubscriptionPlansForSKU from "fetchSubscriptionPlansForSKU";
 import { createChannelRecordFromServer as closure_6 } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -363,8 +363,8 @@ function transformPresence(activities, guild_id) {
   if (null == hidden_activities) {
     hidden_activities = [];
   }
-  const tmpResult = importDefault(12752)(activities, hidden_activities);
-  const tmp = importDefault(12752);
+  const tmpResult = importDefault(12753)(activities, hidden_activities);
+  const tmp = importDefault(12753);
   return { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: populateCountdownFlagToActivities(tmpResult.activities), hiddenActivities: tmpResult.hiddenActivities, guildId: guild_id, processedAtTimestamp: activities.processed_at_timestamp };
 }
 function dispatchPresence(arg0) {
@@ -549,7 +549,7 @@ defineSimpleDispatch(["READY_SUPPLEMENTAL"], (arg0) => {
 });
 let result1 = definePreloadableDispatch(["READY"], (guilds) => {
   guilds = guilds.guilds;
-  const result = importAll(12670).preloadReadyPayloadData();
+  const result = importAll(12671).preloadReadyPayloadData();
   const found = guilds.filter((unavailable) => {
     let tmp = !unavailable.unavailable;
     if (tmp) {
@@ -578,7 +578,7 @@ let result1 = definePreloadableDispatch(["READY"], (guilds) => {
     guildIds = Promise.resolve();
   }
   const items = [result, guildIds];
-  const obj = importAll(12670);
+  const obj = importAll(12671);
   return Promise.all(items).then((arg0) => {
     let tmp;
     [tmp] = arg0;
@@ -711,9 +711,9 @@ defineSimpleDispatch(["EXPERIMENT_SESSION_OVERRIDE_DELETE"], (experimentName) =>
   obj.dispatch(obj);
 });
 defineSimpleDispatch(["RESUMED"], () => {
-  const localPresenceState = require(12625) /* importDefaultResult1 */.localPresenceState;
+  const localPresenceState = require(12626) /* importDefaultResult1 */.localPresenceState;
   localPresenceState.forceUpdate();
-  const localVoiceState = require(12625) /* importDefaultResult1 */.localVoiceState;
+  const localVoiceState = require(12626) /* importDefaultResult1 */.localVoiceState;
   localVoiceState.forceUpdate();
   dispatchOrResetSocket({ type: "CONNECTION_RESUMED" });
 });
@@ -893,7 +893,7 @@ const result13 = definePreloadableDispatch(["GUILD_CREATE"], (data_mode) => {
     let obj = { type: "GUILD_UNAVAILABLE", guildId: unavailable.id };
     dispatchOrResetSocket(obj);
   } else {
-    obj = importAll(12670);
+    obj = importAll(12671);
     const result = obj.hydratePreviouslyUnavailableGuild(unavailable);
     const require = result;
     obj = { type: "GUILD_CREATE", guild: result };
@@ -1607,25 +1607,25 @@ defineSimpleDispatch(["SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE"], (intera
   dispatchOrResetSocket({ type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE", interactionId: interactionId.interaction_id, applicationId: interactionId.application_id, skuId: interactionId.sku_id, recipientId: interactionId.recipient_id, eligible: interactionId.eligible, ineligibleReason: interactionId.ineligible_reason });
 });
 defineSimpleDispatch(["GUILD_ROOM_CONNECT"], (body, type) => {
-  const obj = { type, room: require(12748) /* mapGuildRoomBaseObjectFields */.serverGuildRoomToClient(body) };
+  const obj = { type, room: require(12749) /* mapGuildRoomBaseObjectFields */.serverGuildRoomToClient(body) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["GUILD_ROOM_DISCONNECT"], (userId, type) => {
   dispatchOrResetSocket({ type, userId: userId.user_id, roomId: userId.room_id });
 });
 defineSimpleDispatch(["GUILD_ROOM_UPDATE"], (body, type) => {
-  const obj = { type, room: require(12748) /* mapGuildRoomBaseObjectFields */.serverGuildRoomToClient(body) };
+  const obj = { type, room: require(12749) /* mapGuildRoomBaseObjectFields */.serverGuildRoomToClient(body) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["HAVEN_CONNECT"], (roomId, type) => {
-  const obj = { type, room: require(12750) /* parseParticipant */.parseRoom(roomId) };
+  const obj = { type, room: require(12751) /* parseParticipant */.parseRoom(roomId) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["HAVEN_DISCONNECT"], (userId, type) => {
   dispatchOrResetSocket({ type, userId: userId.user_id, roomId: userId.room_id });
 });
 defineSimpleDispatch(["HAVEN_UPDATE"], (roomId, type) => {
-  const obj = { type, room: require(12750) /* parseParticipant */.parseRoom(roomId) };
+  const obj = { type, room: require(12751) /* parseParticipant */.parseRoom(roomId) };
   dispatchOrResetSocket(obj);
 });
 defineSimpleDispatch(["GUILD_OFFICIAL_GAME_APPLICATIONS_UPDATE"], (gameApplicationIds, type) => {

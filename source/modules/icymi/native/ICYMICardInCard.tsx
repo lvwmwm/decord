@@ -1,10 +1,10 @@
-// Module ID: 15277
-// Function ID: 116481
+// Module ID: 15290
+// Function ID: 116530
 // Name: truncateUsername
-// Dependencies: [31, 27, 1348, 1918, 1838, 653, 33, 15236, 689, 7909, 5513, 1273, 4550, 566, 4362, 8321, 4320, 4127, 4321, 15278, 1212, 4639, 15276, 4661, 5874, 8895, 2]
+// Dependencies: [31, 27, 1348, 1918, 1838, 653, 33, 15249, 689, 7909, 5513, 1273, 4550, 566, 4362, 8321, 4320, 4127, 4321, 15291, 1212, 4639, 15289, 4661, 5874, 8895, 2]
 // Exports: default
 
-// Module 15277 (truncateUsername)
+// Module 15290 (truncateUsername)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

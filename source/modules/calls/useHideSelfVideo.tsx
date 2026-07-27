@@ -1,10 +1,10 @@
-// Module ID: 15946
-// Function ID: 123243
+// Module ID: 15958
+// Function ID: 123290
 // Name: useHideSelfVideo
 // Dependencies: [1194, 4178, 653, 4192, 566, 8770, 2]
 // Exports: default
 
-// Module 15946 (useHideSelfVideo)
+// Module 15958 (useHideSelfVideo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { VideoToggleState } from "ME";

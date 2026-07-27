@@ -1,5 +1,5 @@
 // Module ID: 9977
-// Function ID: 77204
+// Function ID: 77205
 // Name: MIN_PAN_GESTURE_MOVE
 // Dependencies: [477, 2]
 

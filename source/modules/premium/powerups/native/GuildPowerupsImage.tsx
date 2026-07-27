@@ -1,10 +1,10 @@
-// Module ID: 11551
-// Function ID: 89910
+// Module ID: 11552
+// Function ID: 89915
 // Name: GuildPowerupsImage
 // Dependencies: [4123, 33, 4131, 566, 478, 6154, 5085, 2]
 // Exports: default
 
-// Module 11551 (GuildPowerupsImage)
+// Module 11552 (GuildPowerupsImage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

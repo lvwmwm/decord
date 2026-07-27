@@ -1,10 +1,10 @@
-// Module ID: 15681
-// Function ID: 120970
+// Module ID: 15693
+// Function ID: 121017
 // Name: ConnectionIcon
-// Dependencies: [31, 27, 4168, 4813, 1345, 33, 4131, 689, 3843, 1557, 566, 4815, 5465, 5462, 5482, 15682, 4099, 15684, 1935, 5186, 5187, 4542, 15670, 4127, 1212, 2749, 8637, 4544, 10121, 3841, 1392, 4546, 5472, 5468, 2]
+// Dependencies: [31, 27, 4168, 4813, 1345, 33, 4131, 689, 3843, 1557, 566, 4815, 5465, 5462, 5482, 15694, 4099, 15696, 1935, 5186, 5187, 4542, 15682, 4127, 1212, 2749, 8637, 4544, 10121, 3841, 1392, 4546, 5472, 5468, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 15681 (ConnectionIcon)
+// Module 15693 (ConnectionIcon)
 import getIconSize from "getIconSize";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

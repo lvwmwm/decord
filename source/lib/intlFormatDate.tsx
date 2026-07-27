@@ -1,5 +1,5 @@
 // Module ID: 3821
-// Function ID: 31749
+// Function ID: 31750
 // Name: makeIntlFormatter
 // Dependencies: [1922, 3818, 1212, 2]
 // Exports: makeFormatter

@@ -1,5 +1,5 @@
 // Module ID: 6492
-// Function ID: 58061
+// Function ID: 58062
 // Name: SubscriptionAccountHoldNotice
 // Dependencies: [31, 27, 653, 33, 4131, 689, 1273, 6493, 4127, 1212, 3777, 4544, 2]
 // Exports: default

@@ -1,9 +1,9 @@
-// Module ID: 15819
-// Function ID: 122101
+// Module ID: 15831
+// Function ID: 122148
 // Name: SoundCategoryItem
-// Dependencies: [31, 27, 15804, 1850, 653, 33, 4131, 689, 4586, 5513, 1212, 9562, 4095, 15817, 4661, 1273, 4653, 4100, 4101, 566, 3777, 6155, 1557, 4002, 8316, 2]
+// Dependencies: [31, 27, 15816, 1850, 653, 33, 4131, 689, 4586, 5513, 1212, 9562, 4095, 15829, 4661, 1273, 4653, 4100, 4101, 566, 3777, 6155, 1557, 4002, 8316, 2]
 
-// Module 15819 (SoundCategoryItem)
+// Module 15831 (SoundCategoryItem)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { setSearchQuery } from "openExpressionPicker";
@@ -54,7 +54,7 @@ function SoundCategoryItem(style) {
   } else if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl = require(1212) /* getSystemLocale */.intl;
     name = intl.string(require(1212) /* getSystemLocale */.t.Rtvk9X);
-    tmp6 = importDefault(15817);
+    tmp6 = importDefault(15829);
     tmp7 = null;
     tmp8 = null;
   } else {
@@ -65,7 +65,7 @@ function SoundCategoryItem(style) {
     if (require(4586) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.SEARCH === type) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       name = intl4.string(require(1212) /* getSystemLocale */.t.sKt3xS);
-      tmp6 = importDefault(15817);
+      tmp6 = importDefault(15829);
       tmp7 = null;
       tmp8 = null;
     }

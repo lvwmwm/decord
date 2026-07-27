@@ -1,5 +1,5 @@
 // Module ID: 7826
-// Function ID: 62448
+// Function ID: 62449
 // Name: sanitizeMediaDimension
 // Dependencies: [2]
 // Exports: sanitizeMediaDimension

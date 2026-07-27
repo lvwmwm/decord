@@ -1,5 +1,5 @@
 // Module ID: 5683
-// Function ID: 48922
+// Function ID: 48923
 // Name: ROLL_DURATION_MS
 // Dependencies: [2]
 

@@ -1,5 +1,5 @@
 // Module ID: 8031
-// Function ID: 63906
+// Function ID: 63907
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: useIsProfileFramesEnabled

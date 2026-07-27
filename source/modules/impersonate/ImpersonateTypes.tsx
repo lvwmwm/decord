@@ -1,5 +1,5 @@
 // Module ID: 1916
-// Function ID: 21608
+// Function ID: 21609
 // Name: ImpersonateType
 // Dependencies: [2]
 

@@ -1,5 +1,5 @@
 // Module ID: 9565
-// Function ID: 74664
+// Function ID: 74665
 // Name: openStickerPackDetailActionSheet
 // Dependencies: [653, 675, 4099, 9566, 1935, 2]
 // Exports: default

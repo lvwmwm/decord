@@ -1,5 +1,5 @@
 // Module ID: 9732
-// Function ID: 75814
+// Function ID: 75815
 // Name: useAvatarDecorationPreviewSizes
 // Dependencies: [1450, 8005, 2]
 // Exports: useAvatarDecorationPreviewSizes

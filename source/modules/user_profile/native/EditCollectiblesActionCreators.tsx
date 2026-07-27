@@ -1,5 +1,5 @@
 // Module ID: 7895
-// Function ID: 62935
+// Function ID: 62936
 // Name: navigateToNitroManagement
 // Dependencies: [653, 6554, 2]
 // Exports: navigateToNitroManagement

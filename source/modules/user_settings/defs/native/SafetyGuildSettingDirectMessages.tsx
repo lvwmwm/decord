@@ -1,9 +1,9 @@
-// Module ID: 14597
-// Function ID: 111380
+// Module ID: 14598
+// Function ID: 111385
 // Name: toggle
-// Dependencies: [1838, 14591, 7697, 10060, 13789, 14598, 3804, 4471, 1212, 4562, 6449, 14599, 10059, 2]
+// Dependencies: [1838, 14592, 7697, 10060, 13790, 14599, 3804, 4471, 1212, 4562, 6449, 14600, 10059, 2]
 
-// Module 14597 (toggle)
+// Module 14598 (toggle)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
@@ -15,7 +15,7 @@ const require = arg1;
 ({ getSelectedGuildId: closure_4, useUserSafetySettingsSelectedGuildStore: closure_5 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
 createToggle = {
   useTitle() {
-    const allowFriendsFromMutualGuildsOnly = require(14599) /* useAllowFriendsFromMutualGuildsOnly */.useAllowFriendsFromMutualGuildsOnly();
+    const allowFriendsFromMutualGuildsOnly = require(14600) /* useAllowFriendsFromMutualGuildsOnly */.useAllowFriendsFromMutualGuildsOnly();
     const intl = require(1212) /* getSystemLocale */.intl;
     const string = intl.string;
     const t = require(1212) /* getSystemLocale */.t;
@@ -27,7 +27,7 @@ createToggle = {
     return stringResult;
   },
   useDescription() {
-    const allowFriendsFromMutualGuildsOnly = require(14599) /* useAllowFriendsFromMutualGuildsOnly */.useAllowFriendsFromMutualGuildsOnly();
+    const allowFriendsFromMutualGuildsOnly = require(14600) /* useAllowFriendsFromMutualGuildsOnly */.useAllowFriendsFromMutualGuildsOnly();
     if (callback2().selectedGuildId === closure_6) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       const string2 = intl2.string;
@@ -53,7 +53,7 @@ createToggle = {
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
     const selectedGuildId = callback2().selectedGuildId;
-    const obj = require(14598) /* useDefaultGuildsRestricted */;
+    const obj = require(14599) /* useDefaultGuildsRestricted */;
     const RestrictedGuildIds = require(3804) /* explicitContentFromProto */.RestrictedGuildIds;
     const setting = RestrictedGuildIds.useSetting();
     let tmp2 = !setting.includes(selectedGuildId);
@@ -109,7 +109,7 @@ createToggle = {
     }
   },
   useIsDisabled() {
-    let isParentallyControlled = require(13789) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    let isParentallyControlled = require(13790) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
     if (isParentallyControlled) {
       isParentallyControlled = tmp2 === closure_6;
     }

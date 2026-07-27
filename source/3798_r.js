@@ -1,5 +1,5 @@
 // Module ID: 3798
-// Function ID: 29622
+// Function ID: 29623
 // Name: r
 // Dependencies: []
 
@@ -6656,10 +6656,10 @@ let fn = () => {
             assetsUrl = configuration.gatewayConfiguration.assetsUrl;
             isDebug = configuration.isDebug;
           } else {
-            tmp2 = f30201;
+            tmp2 = f30202;
             tmp4 = globalThis;
             _Boolean = Boolean;
-            obj = f30201.create(global.authorization);
+            obj = f30202.create(global.authorization);
             assetsUrl = obj;
             isDebug = Boolean(global.isDebug);
           }
@@ -6866,7 +6866,7 @@ let fn = () => {
               });
               _setTimeout = setTimeout;
               tmp22 = INTEGRATION_TIMEOUT_MS;
-              f30201 = setTimeout(() => {
+              f30202 = setTimeout(() => {
                 outer1_19.sendEvent(self._clientPromise, "custom.hosted-fields.load.timed-out");
                 self._emit("timeout");
               }, INTEGRATION_TIMEOUT_MS);
@@ -9473,7 +9473,7 @@ let fn = () => {
         _initialize() {
           self = this;
           _client = this._client;
-          f30440 = setTimeout(() => {
+          f30441 = setTimeout(() => {
             outer1_4.sendEvent(_client, "local-payment.load.timed-out");
           }, INTEGRATION_TIMEOUT_MS);
           promise = new Promise((arg0) => {
@@ -11164,7 +11164,7 @@ let fn = () => {
           tmp = new closure_4();
           assign = tmp;
           configuration = global.getConfiguration();
-          f30544 = setTimeout(() => {
+          f30545 = setTimeout(() => {
             getConfiguration.sendEvent(getConfiguration, "paypal-checkout.frame-service.timed-out");
             tmp.reject(new outer1_5(outer1_7.PAYPAL_START_VAULT_INITIATED_CHECKOUT_SETUP_FAILED));
           }, INTEGRATION_TIMEOUT_MS);
@@ -11994,7 +11994,7 @@ let fn = () => {
         _initialize() {
           self = this;
           _client = this._client;
-          f30600 = setTimeout(() => {
+          f30601 = setTimeout(() => {
             outer1_8.sendEvent(_client, "paypal.load.timed-out");
           }, INTEGRATION_TIMEOUT_MS);
           promise = new Promise((arg0) => {

@@ -1,11 +1,11 @@
 // Module ID: 15598
-// Function ID: 120343
+// Function ID: 120263
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 15598 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/forum_channels", width: 343, height: 180, scales: [1], hash: "4344770a7977c211fcddc04a38055e0c", name: "channel_settings_grid_view_example_post", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b83c9486cfaf14d2dd0ad9edbe75c34d", name: "WebhookPlusIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

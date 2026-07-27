@@ -1,5 +1,5 @@
 // Module ID: 9280
-// Function ID: 72705
+// Function ID: 72706
 // Name: DoubleTapReminderContent
 // Dependencies: [31, 1345, 33, 4131, 689, 4127, 1212, 3947, 1334, 3804, 7691, 3832, 9281, 2]
 // Exports: maybeShowDoubleTapReminderToast

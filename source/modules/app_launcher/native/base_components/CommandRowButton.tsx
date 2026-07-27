@@ -1,10 +1,10 @@
-// Module ID: 11215
-// Function ID: 87294
+// Module ID: 11216
+// Function ID: 87299
 // Name: CommandRowIcon
-// Dependencies: [5, 57, 31, 33, 11143, 7953, 11108, 5676, 5171, 4544, 1212, 4077, 2]
+// Dependencies: [5, 57, 31, 33, 11144, 7953, 11109, 5676, 5171, 4544, 1212, 4077, 2]
 // Exports: default
 
-// Module 11215 (CommandRowIcon)
+// Module 11216 (CommandRowIcon)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

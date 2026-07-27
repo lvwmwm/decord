@@ -1,5 +1,5 @@
 // Module ID: 5664
-// Function ID: 48473
+// Function ID: 48474
 // Name: getApplicationFlags
 // Dependencies: [4154, 483, 2]
 // Exports: hasApplicationFlag

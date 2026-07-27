@@ -1,5 +1,5 @@
 // Module ID: 10100
-// Function ID: 78278
+// Function ID: 78279
 // Name: useLastChannelMessage
 // Dependencies: [4350, 566, 2]
 // Exports: useLastChannelMessage

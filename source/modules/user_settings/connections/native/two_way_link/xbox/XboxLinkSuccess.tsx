@@ -1,5 +1,5 @@
 // Module ID: 8963
-// Function ID: 70695
+// Function ID: 70696
 // Name: XboxLinkDiscordSuccess
 // Dependencies: [57, 31, 27, 8865, 8877, 33, 4131, 689, 8870, 477, 1456, 8964, 4127, 1212, 8965, 8966, 1273, 8967, 5121, 4544, 2]
 // Exports: default

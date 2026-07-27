@@ -1,24 +1,24 @@
-// Module ID: 16125
-// Function ID: 124983
+// Module ID: 16137
+// Function ID: 125030
 // Name: isEligible
-// Dependencies: [16122, 2]
+// Dependencies: [16134, 2]
 
-// Module 16125 (isEligible)
+// Module 16137 (isEligible)
 function isEligible() {
-  const isExperimentEligible = importDefault(16122).getIsExperimentEligible();
-  const obj = importDefault(16122);
+  const isExperimentEligible = importDefault(16134).getIsExperimentEligible();
+  const obj = importDefault(16134);
   return isHolidayHappening() && isExperimentEligible;
 }
 function useIsEligible() {
-  const isExperimentEligible = importDefault(16122).useIsExperimentEligible();
-  const obj = importDefault(16122);
+  const isExperimentEligible = importDefault(16134).useIsExperimentEligible();
+  const obj = importDefault(16134);
   return isHolidayHappening() && isExperimentEligible;
 }
 function isHolidayHappening() {
   const timestamp = Date.now();
-  let tmp2 = timestamp >= importDefault(16122).startTimeMs;
+  let tmp2 = timestamp >= importDefault(16134).startTimeMs;
   if (tmp2) {
-    tmp2 = timestamp <= importDefault(16122).endTimeMs;
+    tmp2 = timestamp <= importDefault(16134).endTimeMs;
   }
   return tmp2;
 }
@@ -30,10 +30,10 @@ export default {
     let tmp = null;
     if (useIsEligible()) {
       tmp = null;
-      if (null != importDefault(16122).soundpack) {
+      if (null != importDefault(16134).soundpack) {
         tmp = null;
-        if (null != importDefault(16122).soundpackLabel) {
-          const obj = { soundpack: importDefault(16122).soundpack, soundpackLabel: importDefault(16122).soundpackLabel };
+        if (null != importDefault(16134).soundpackLabel) {
+          const obj = { soundpack: importDefault(16134).soundpack, soundpackLabel: importDefault(16134).soundpackLabel };
           tmp = obj;
         }
       }
@@ -44,7 +44,7 @@ export default {
   getAppSpinnerSources() {
     let appSpinnerSources = null;
     if (isHolidayHappening()) {
-      appSpinnerSources = importDefault(16122).appSpinnerSources;
+      appSpinnerSources = importDefault(16134).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -52,9 +52,9 @@ export default {
     let tmp = null;
     if (isHolidayHappening()) {
       let loadingTips;
-      if (null != importDefault(16122).getLoadingTips) {
-        loadingTips = importDefault(16122).getLoadingTips();
-        const obj = importDefault(16122);
+      if (null != importDefault(16134).getLoadingTips) {
+        loadingTips = importDefault(16134).getLoadingTips();
+        const obj = importDefault(16134);
       }
       tmp = loadingTips;
     }
@@ -64,8 +64,8 @@ export default {
     let soundpack = null;
     if (isEligible()) {
       soundpack = null;
-      if (null != importDefault(16122).soundpack) {
-        soundpack = importDefault(16122).soundpack;
+      if (null != importDefault(16134).soundpack) {
+        soundpack = importDefault(16134).soundpack;
       }
     }
     return soundpack;

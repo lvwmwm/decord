@@ -1,10 +1,10 @@
-// Module ID: 16404
-// Function ID: 128112
+// Module ID: 16416
+// Function ID: 128159
 // Name: getBansEmptySource
-// Dependencies: [31, 27, 33, 6481, 16405, 16406, 16407, 3977, 2]
+// Dependencies: [31, 27, 33, 6481, 16417, 16418, 16419, 3977, 2]
 // Exports: BansEmpty
 
-// Module 16404 (getBansEmptySource)
+// Module 16416 (getBansEmptySource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

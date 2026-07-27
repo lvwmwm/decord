@@ -1,5 +1,5 @@
 // Module ID: 8016
-// Function ID: 63825
+// Function ID: 63826
 // Name: useProfileThemeOverrideStore
 // Dependencies: [653, 621, 4067, 7927, 3977, 2]
 // Exports: useEffectiveThemeOverride, useHasNonNitroThemeOverride, useIsBannerDisabledByOverride

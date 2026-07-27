@@ -1,8 +1,8 @@
-// Module ID: 14770
-// Function ID: 112597
-// Dependencies: [57, 31, 4535, 33, 4131, 7575, 5503, 14771, 2]
+// Module ID: 14771
+// Function ID: 112602
+// Dependencies: [57, 31, 4535, 33, 4131, 7575, 5503, 14772, 2]
 
-// Module 14770
+// Module 14771
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import useVisualEffectViewOverrides from "useVisualEffectViewOverrides";
@@ -66,7 +66,7 @@ const memoResult = importAllResult.memo(function VEVOOPropBlurAmount() {
   });
   const ref = importAllResult.useRef(first1);
   const tmp7 = jsx;
-  obj.subLabel = jsx(first1(14771), { disabled: !first, disabledOpacity: !first, initialValue: importAllResult.useRef(first1), onValueChange: callback });
+  obj.subLabel = jsx(first1(14772), { disabled: !first, disabledOpacity: !first, initialValue: importAllResult.useRef(first1), onValueChange: callback });
   obj.disabled = !first;
   return tmp7(_require(7575).FormRow, obj);
 });

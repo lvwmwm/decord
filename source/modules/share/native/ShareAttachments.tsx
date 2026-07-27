@@ -1,10 +1,10 @@
-// Module ID: 12973
-// Function ID: 100639
+// Module ID: 12974
+// Function ID: 100644
 // Name: ShareAttachments
 // Dependencies: [31, 27, 33, 3992, 4555, 1273, 4131, 689, 4132, 3975, 1212, 9792, 4675, 2]
 // Exports: default
 
-// Module 12973 (ShareAttachments)
+// Module 12974 (ShareAttachments)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

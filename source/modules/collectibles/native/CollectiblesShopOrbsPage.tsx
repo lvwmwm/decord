@@ -1,10 +1,10 @@
-// Module ID: 14568
-// Function ID: 111206
+// Module ID: 14569
+// Function ID: 111211
 // Name: onRenderFirstOrbsItem
-// Dependencies: [31, 27, 5770, 655, 33, 4131, 5462, 8595, 14538, 4099, 8663, 14542, 1273, 8307, 1212, 14567, 2]
+// Dependencies: [31, 27, 5770, 655, 33, 4131, 5462, 8595, 14539, 4099, 8663, 14543, 1273, 8307, 1212, 14568, 2]
 // Exports: default
 
-// Module 14568 (onRenderFirstOrbsItem)
+// Module 14569 (onRenderFirstOrbsItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

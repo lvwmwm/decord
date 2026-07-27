@@ -1,10 +1,10 @@
-// Module ID: 12103
-// Function ID: 94864
+// Module ID: 12104
+// Function ID: 94869
 // Name: isNonEmptyBoardWidget
-// Dependencies: [31, 5650, 5632, 12104, 12105, 2]
+// Dependencies: [31, 5650, 5632, 12105, 12106, 2]
 // Exports: useDisplayableBoardWidgets
 
-// Module 12103 (isNonEmptyBoardWidget)
+// Module 12104 (isNonEmptyBoardWidget)
 import result from "result";
 
 const require = arg1;
@@ -23,8 +23,8 @@ function isNonEmptyBoardWidget(games) {
 const result = require("items").fileFinishedImporting("modules/user_profile/hooks/useDisplayableBoardWidgets.tsx");
 
 export const useDisplayableBoardWidgets = function useDisplayableBoardWidgets(id) {
-  isMobileGameCollectionExperimentEnabled = isMobileGameCollectionExperimentEnabled(12104).useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
-  const tmp2 = importDefault(12105)(id);
+  isMobileGameCollectionExperimentEnabled = isMobileGameCollectionExperimentEnabled(12105).useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
+  const tmp2 = importDefault(12106)(id);
   importDefault = tmp2;
   const items = [isMobileGameCollectionExperimentEnabled, tmp2];
   return React.useMemo(() => {

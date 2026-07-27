@@ -1,10 +1,10 @@
-// Module ID: 11240
-// Function ID: 87436
+// Module ID: 11241
+// Function ID: 87441
 // Name: PlaceholderCommandRow
-// Dependencies: [5, 31, 27, 5669, 1455, 653, 4567, 33, 4131, 11241, 689, 11165, 5164, 10861, 11215, 5674, 11142, 1557, 7962, 1882, 11248, 7953, 5676, 11162, 477, 11250, 4127, 1212, 11252, 11212, 11254, 8938, 1273, 11261, 11263, 4099, 4325, 10937, 2]
+// Dependencies: [5, 31, 27, 5669, 1455, 653, 4567, 33, 4131, 11242, 689, 11166, 5164, 10862, 11216, 5674, 11143, 1557, 7962, 1882, 11249, 7953, 5676, 11163, 477, 11251, 4127, 1212, 11253, 11213, 11255, 8938, 1273, 11262, 11264, 4099, 4325, 10938, 2]
 // Exports: default
 
-// Module 11240 (PlaceholderCommandRow)
+// Module 11241 (PlaceholderCommandRow)
 import ME from "ME";
 import module_8938 from "module_8938";
 import { View } from "getSystemLocale";
@@ -31,9 +31,9 @@ function PlaceholderCommandRow(isFirstRow) {
     flag2 = false;
   }
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11165) /* usePlaceholderWidth */;
+  let obj = require(11166) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  let obj1 = require(11165) /* usePlaceholderWidth */;
+  let obj1 = require(11166) /* usePlaceholderWidth */;
   const placeholderWidth1 = obj1.usePlaceholderWidth(30, 90);
   obj = {};
   obj = {};

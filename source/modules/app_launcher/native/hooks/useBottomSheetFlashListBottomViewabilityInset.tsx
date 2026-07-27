@@ -1,10 +1,10 @@
-// Module ID: 11208
-// Function ID: 87226
+// Module ID: 11209
+// Function ID: 87231
 // Name: useBottomSheetFlashListBottomViewabilityInset
-// Dependencies: [31, 1450, 10861, 11147, 22, 3992, 2]
+// Dependencies: [31, 1450, 10862, 11148, 22, 3992, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 11208 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 11209 (useBottomSheetFlashListBottomViewabilityInset)
 import result from "result";
 
 const require = arg1;
@@ -13,13 +13,13 @@ let closure_5 = { code: "function useBottomSheetFlashListBottomViewabilityInsetT
 const result = require("useAppLauncherChatInputRefDummy").fileFinishedImporting("modules/app_launcher/native/hooks/useBottomSheetFlashListBottomViewabilityInset.tsx");
 
 export const useBottomSheetFlashListBottomViewabilityInset = function useBottomSheetFlashListBottomViewabilityInset() {
-  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(10861).AppLauncherContext);
+  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(10862).AppLauncherContext);
   bottomSheetPosition = undefined;
   if (null != context) {
     bottomSheetPosition = context.bottomSheetPosition;
   }
   const flashListRef = bottomVisibilityInsetRef.useRef(null);
-  const diff = flashListRef(1450)().height - flashListRef(11147)().maximum;
+  const diff = flashListRef(1450)().height - flashListRef(11148)().maximum;
   const dependencyMap = diff;
   bottomVisibilityInsetRef = bottomVisibilityInsetRef.useRef(9999);
   const memo = bottomVisibilityInsetRef.useMemo(() => flashListRef(diff[4]).debounce((current) => {

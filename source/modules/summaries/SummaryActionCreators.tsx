@@ -1,5 +1,5 @@
 // Module ID: 9484
-// Function ID: 73934
+// Function ID: 73935
 // Name: fetchSummary
 // Dependencies: [5, 31, 4809, 1348, 9441, 653, 664, 686, 507, 4030, 22, 9443, 624, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries

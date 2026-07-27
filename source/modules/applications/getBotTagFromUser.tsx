@@ -1,5 +1,5 @@
 // Module ID: 9023
-// Function ID: 70936
+// Function ID: 70937
 // Name: getBotTagTypeFromUser
 // Dependencies: [4157, 2]
 // Exports: getBotTagTypeFromUser

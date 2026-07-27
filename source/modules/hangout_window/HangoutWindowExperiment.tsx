@@ -1,10 +1,10 @@
-// Module ID: 15573
-// Function ID: 120094
+// Module ID: 15585
+// Function ID: 120141
 // Name: items
 // Dependencies: [4046, 4043, 2]
 // Exports: getHangoutWindowExperiment, useHangoutWindowExperiment
 
-// Module 15573 (items)
+// Module 15585 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-02_hangout_window", label: "Hangout Window", defaultConfig: { enableHangoutWindow: false }, commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL };

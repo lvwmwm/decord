@@ -1,10 +1,10 @@
-// Module ID: 16504
-// Function ID: 128656
+// Module ID: 16516
+// Function ID: 128703
 // Name: showCreateBenefitModal
-// Dependencies: [16505, 4338, 16506, 1935, 16512, 2]
+// Dependencies: [16517, 4338, 16518, 1935, 16524, 2]
 // Exports: showCreateBenefitModal, showEditBenefitModal, showEditEmojisModal
 
-// Module 16504 (showCreateBenefitModal)
+// Module 16516 (showCreateBenefitModal)
 import resetImperatively from "resetImperatively";
 
 const require = arg1;
@@ -17,7 +17,7 @@ export const showCreateBenefitModal = function showCreateBenefitModal(arg0) {
   let type;
   ({ guildId, listingId, type, onSave } = arg0);
   resetImperatively.resetImperatively();
-  importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(16506, dependencyMap.paths), { benefitType: type, guildId, onSave, listingId }, "GuildRoleSubscriptionBenefitEditorModal");
+  importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(16518, dependencyMap.paths), { benefitType: type, guildId, onSave, listingId }, "GuildRoleSubscriptionBenefitEditorModal");
 };
 export const showEditBenefitModal = function showEditBenefitModal(benefit) {
   let guildId;
@@ -29,7 +29,7 @@ export const showEditBenefitModal = function showEditBenefitModal(benefit) {
   const result = resetImperatively.initializeImperatively(benefit);
   let obj = importDefault(4338);
   obj = { benefitType: benefit.ref_type, guildId, onDelete, onSave, listingId };
-  obj.pushLazy(require(1935) /* maybeLoadBundle */(16506, dependencyMap.paths), obj, "GuildRoleSubscriptionBenefitEditorModal");
+  obj.pushLazy(require(1935) /* maybeLoadBundle */(16518, dependencyMap.paths), obj, "GuildRoleSubscriptionBenefitEditorModal");
 };
 export const showEditEmojisModal = function showEditEmojisModal(initialTierEmojiIds) {
   let guildId;
@@ -47,5 +47,5 @@ export const showEditEmojisModal = function showEditEmojisModal(initialTierEmoji
   obj.initialTierEmojiIds = initialTierEmojiIds;
   obj.listingId = listingId;
   obj.onSave = onSave;
-  obj.pushLazy(require(1935) /* maybeLoadBundle */(16512, dependencyMap.paths), obj, "GuildRoleSubscriptionEmojiEditorModal");
+  obj.pushLazy(require(1935) /* maybeLoadBundle */(16524, dependencyMap.paths), obj, "GuildRoleSubscriptionEmojiEditorModal");
 };

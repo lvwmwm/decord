@@ -1,10 +1,10 @@
-// Module ID: 11608
-// Function ID: 90191
+// Module ID: 11609
+// Function ID: 90196
 // Name: useExpiringBoostsEnabled
 // Dependencies: [1325, 2]
 // Exports: useExpiringBoostsEnabled
 
-// Module 11608 (useExpiringBoostsEnabled)
+// Module 11609 (useExpiringBoostsEnabled)
 const obj = { name: "2026-05-expiring-boosts", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const tmp2 = require("getUnitId")(obj);
 let closure_0 = tmp2;

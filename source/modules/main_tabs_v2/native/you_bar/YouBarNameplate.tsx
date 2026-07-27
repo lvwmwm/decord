@@ -1,8 +1,8 @@
-// Module ID: 15169
-// Function ID: 115547
-// Dependencies: [31, 14058, 33, 3835, 689, 14139, 3992, 4543, 8008, 2]
+// Module ID: 15182
+// Function ID: 115596
+// Dependencies: [31, 14059, 33, 3835, 689, 14140, 3992, 4543, 8008, 2]
 
-// Module 15169
+// Module 15182
 import { YOU_BAR_SPRING_CONFIG } from "CONNECTION_BANNER_HEIGHT";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
@@ -17,7 +17,7 @@ const memoResult = require("result").memo(function YouBarNameplate(isQuestRender
   ({ nameplate, barWidth } = isQuestRendered);
   let obj = isQuestRendered(3835);
   token = obj.useToken(token(689).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp2 = token(14139)(token);
+  const tmp2 = token(14140)(token);
   const dependencyMap = tmp2;
   let obj1 = isQuestRendered(3992);
   const fn = function l() {

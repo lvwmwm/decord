@@ -1,10 +1,10 @@
-// Module ID: 13889
-// Function ID: 106335
+// Module ID: 13890
+// Function ID: 106340
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [31, 27, 5766, 33, 4131, 689, 6200, 11050, 1212, 2199, 4127, 6201, 4661, 4338, 13890, 1935, 1273, 10294, 13891, 13888, 13892, 13883, 2]
+// Dependencies: [31, 27, 5766, 33, 4131, 689, 6200, 11051, 1212, 2199, 4127, 6201, 4661, 4338, 13891, 1935, 1273, 10295, 13892, 13889, 13893, 13884, 2]
 // Exports: default
 
-// Module 13889 (FamilyCenterPendingLinkRow)
+// Module 13890 (FamilyCenterPendingLinkRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserLinkStatus } from "items";
@@ -39,7 +39,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
         obj.pushLazy(str(outer1_2[15])(outer1_2[20], outer1_2.paths), obj);
       };
       obj.style = tmp.actionButton;
-      const obj1 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13888) };
+      const obj1 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13889) };
       obj.children = callback(str(1273).Icon, obj1);
       let tmp5Result = callback(str(4661).PressableOpacity, obj);
       const tmp28 = callback;
@@ -66,7 +66,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
         const items = [, ];
         ({ actionButton: arr[0], actionButtonFirst: arr[1] } = tmp);
         obj2.style = items;
-        const obj4 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(10294) };
+        const obj4 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(10295) };
         obj2.children = callback(str(1273).Icon, obj4);
         tmp9Result = callback(str(4661).PressableOpacity, obj2);
         const tmp9 = callback;
@@ -87,7 +87,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
         obj.pushLazy(str(outer1_2[15])(outer1_2[18], outer1_2.paths), obj);
       };
       obj5.style = tmp.actionButton;
-      const obj7 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13888) };
+      const obj7 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13889) };
       obj5.children = callback(str(1273).Icon, obj7);
       items1[1] = callback(str(4661).PressableOpacity, obj5);
       obj.children = items1;
@@ -97,7 +97,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       const tmp6 = closure_7;
     }
     const obj8 = { otherUser: str, actions: tmp5Result };
-    return callback(importDefault(13883), obj8);
+    return callback(importDefault(13884), obj8);
   }
   tmp2 = importDefault(6201)();
 }
@@ -119,7 +119,7 @@ export default function FamilyCenterPendingLinks() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = require(6200) /* useUserIdsForLinkStatus */;
   const usersForLinkStatus = obj.useUsersForLinkStatus(UserLinkStatus.PENDING);
-  require(11050) /* useAgeSpecificText */;
+  require(11051) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { count: usersForLinkStatus.length };
   intl.formatToPlainString(importDefault(2199).IkAgkG, obj);

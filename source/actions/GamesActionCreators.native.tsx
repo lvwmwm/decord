@@ -1,9 +1,9 @@
-// Module ID: 10894
-// Function ID: 84579
+// Module ID: 10895
+// Function ID: 84584
 // Name: fetchJoinSecret
-// Dependencies: [5, 653, 4156, 668, 5973, 3828, 686, 507, 10442, 5665, 10543, 2]
+// Dependencies: [5, 653, 4156, 668, 5973, 3828, 686, 507, 10443, 5665, 10544, 2]
 
-// Module 10894 (fetchJoinSecret)
+// Module 10895 (fetchJoinSecret)
 import module_3828 from "module_3828";
 import ME from "ME";
 import { ActivityIntent } from "items3";

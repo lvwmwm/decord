@@ -1,5 +1,5 @@
 // Module ID: 9687
-// Function ID: 75435
+// Function ID: 75436
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 31, 5630, 1194, 9688, 5610, 664, 566, 8605, 1327, 8612, 22, 8613, 7923, 9689, 9690, 2]
 // Exports: useRecommendationsForApplicationIds, useRecommendationsForSingleUser, useWishlistRecommendationsForSingleUser

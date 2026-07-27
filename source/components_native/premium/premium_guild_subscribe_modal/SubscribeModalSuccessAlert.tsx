@@ -1,10 +1,10 @@
-// Module ID: 12618
-// Function ID: 97555
+// Module ID: 12619
+// Function ID: 97560
 // Name: PremiumPaymentGuildAnimation
-// Dependencies: [57, 31, 27, 1838, 6173, 33, 4131, 689, 12619, 12620, 566, 4067, 4562, 1212, 4472, 4967, 4555, 668, 3977, 12621, 12622, 4127, 2]
+// Dependencies: [57, 31, 27, 1838, 6173, 33, 4131, 689, 12620, 12621, 566, 4067, 4562, 1212, 4472, 4967, 4555, 668, 3977, 12622, 12623, 4127, 2]
 // Exports: default
 
-// Module 12618 (PremiumPaymentGuildAnimation)
+// Module 12619 (PremiumPaymentGuildAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -101,9 +101,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const obj4 = { style: tmp.activatedImage };
   let obj7 = require(3977) /* AccessibilityAnnouncer */;
   if (obj7.isThemeLight(tmp7)) {
-    let tmp16Result = tmp16(12621);
+    let tmp16Result = tmp16(12622);
   } else {
-    tmp16Result = tmp16(12622);
+    tmp16Result = tmp16(12623);
   }
   obj4.source = tmp16Result;
   obj3.children = callback2(closure_6, obj4);

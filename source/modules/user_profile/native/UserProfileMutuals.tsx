@@ -1,10 +1,10 @@
-// Module ID: 12148
-// Function ID: 95165
+// Module ID: 12149
+// Function ID: 95170
 // Name: UserProfileMutuals
-// Dependencies: [31, 27, 8043, 5510, 33, 4131, 8045, 11632, 11917, 4099, 11639, 1935, 8297, 6633, 4661, 11952, 1273, 4127, 11640, 11647, 5513, 11634, 2]
+// Dependencies: [31, 27, 8043, 5510, 33, 4131, 8045, 11633, 11918, 4099, 11640, 1935, 8297, 6633, 4661, 11953, 1273, 4127, 11641, 11648, 5513, 11635, 2]
 // Exports: default
 
-// Module 12148 (UserProfileMutuals)
+// Module 12149 (UserProfileMutuals)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -58,10 +58,10 @@ export default function UserProfileMutuals(user) {
   let obj = user(8045);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c3, trackUserProfileAction: c4 } = userProfileAnalyticsContext);
-  const tmp3 = guildId(11632)(user);
+  const tmp3 = guildId(11633)(user);
   const mutualFriends = tmp3.mutualFriends;
   const mutualGuilds = tmp3.mutualGuilds;
-  if (guildId(11917)(user)) {
+  if (guildId(11918)(user)) {
     let tmp4 = null != mutualFriends;
     if (tmp4) {
       tmp4 = mutualFriends.length > 0;

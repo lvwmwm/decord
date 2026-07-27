@@ -1,5 +1,5 @@
 // Module ID: 8843
-// Function ID: 70047
+// Function ID: 70048
 // Name: useIsSecureFramesUIEnabled
 // Dependencies: [1348, 4203, 8826, 566, 2]
 // Exports: useIsSecureFramesUIEnabled

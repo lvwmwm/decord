@@ -1,10 +1,10 @@
-// Module ID: 10866
-// Function ID: 84420
+// Module ID: 10867
+// Function ID: 84425
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [31, 27, 33, 4131, 689, 5187, 5085, 7757, 1273, 10867, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5187, 5085, 7757, 1273, 10868, 4127, 1212, 2]
 // Exports: default
 
-// Module 10866 (PublicGuildAnnouncementProfile)
+// Module 10867 (PublicGuildAnnouncementProfile)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function PublicGuildAnnouncementProfile() {
   obj.source = obj3.getPublicSystemMessageAvatar();
   const items = [callback(importDefault(5085), obj), , , ];
   const obj1 = { style: tmp.nameWrapper };
-  const obj2 = { source: importDefault(10867), disableColor: true };
+  const obj2 = { source: importDefault(10868), disableColor: true };
   const items1 = [callback(require(1273) /* Button */.Icon, obj2), ];
   obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;

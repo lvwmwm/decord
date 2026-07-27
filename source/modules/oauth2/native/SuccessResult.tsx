@@ -1,10 +1,10 @@
-// Module ID: 10939
-// Function ID: 85002
+// Module ID: 10940
+// Function ID: 85007
 // Name: SuccessResultModal
-// Dependencies: [31, 27, 1348, 3759, 1907, 653, 1455, 33, 4131, 689, 8105, 1212, 4338, 6633, 675, 566, 4099, 3990, 1555, 5121, 10940, 4127, 4544, 2]
+// Dependencies: [31, 27, 1348, 3759, 1907, 653, 1455, 33, 4131, 689, 8105, 1212, 4338, 6633, 675, 566, 4099, 3990, 1555, 5121, 10941, 4127, 4544, 2]
 // Exports: default
 
-// Module 10939 (SuccessResultModal)
+// Module 10940 (SuccessResultModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

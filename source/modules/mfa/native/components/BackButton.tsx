@@ -1,10 +1,10 @@
-// Module ID: 14702
-// Function ID: 112017
+// Module ID: 14703
+// Function ID: 112022
 // Name: BackButton
-// Dependencies: [33, 1456, 14703, 1212, 14697, 2]
+// Dependencies: [33, 1456, 14704, 1212, 14698, 2]
 // Exports: default
 
-// Module 14702 (BackButton)
+// Module 14703 (BackButton)
 import { jsx } from "jsxProd";
 
 const result = require("MFAButton").fileFinishedImporting("modules/mfa/native/components/BackButton.tsx");
@@ -19,5 +19,5 @@ export default function BackButton(props) {
   obj.onPress = function onPress() {
 
   };
-  return jsx(importDefault(14703), { variant: "secondary" });
+  return jsx(importDefault(14704), { variant: "secondary" });
 };

@@ -1,5 +1,5 @@
 // Module ID: 7665
-// Function ID: 61385
+// Function ID: 61386
 // Name: items
 // Dependencies: [653, 4022, 2]
 // Exports: getRandomGuildTagBadgeKind, getRandomGuildTagBadgePreset

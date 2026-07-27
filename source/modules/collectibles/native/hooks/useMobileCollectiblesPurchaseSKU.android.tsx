@@ -1,10 +1,10 @@
-// Module ID: 11820
-// Function ID: 91720
+// Module ID: 11821
+// Function ID: 91725
 // Name: useMobileCollectiblesPurchaseSKU
 // Dependencies: [1850, 566, 8648, 9698, 2]
 // Exports: default
 
-// Module 11820 (useMobileCollectiblesPurchaseSKU)
+// Module 11821 (useMobileCollectiblesPurchaseSKU)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

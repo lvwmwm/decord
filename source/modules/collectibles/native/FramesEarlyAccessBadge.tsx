@@ -1,5 +1,5 @@
 // Module ID: 8670
-// Function ID: 68829
+// Function ID: 68830
 // Name: BadgeWithTooltip
 // Dependencies: [57, 31, 27, 33, 4131, 689, 4067, 1212, 8369, 3977, 6570, 4127, 8632, 5449, 2]
 // Exports: default

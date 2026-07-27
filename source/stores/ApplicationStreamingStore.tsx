@@ -1,7 +1,7 @@
 // Module ID: 4150
-// Function ID: 34959
+// Function ID: 34960
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4145, 4151, 1194, 1348, 1838, 4178, 3759, 4203, 1907, 4147, 653, 4196, 664, 4195, 12901, 12902, 12903, 1935, 5957, 12792, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4145, 4151, 1194, 1348, 1838, 4178, 3759, 4203, 1907, 4147, 653, 4196, 664, 4195, 12902, 12903, 12904, 1935, 5957, 12793, 566, 686, 2]
 
 // Module 4150 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -689,7 +689,7 @@ tmp4 = new tmp4(require("dispatcher"), {
         pid = gameForPID1.pid;
       }
       if (tmp) {
-        const tmp11 = importDefault(12902)(content);
+        const tmp11 = importDefault(12903)(content);
         let obj = { pid };
         let id;
         if (null != gameForPID1) {
@@ -926,11 +926,11 @@ tmp4 = new tmp4(require("dispatcher"), {
       } else if (reason === constants3.SAFETY_GUILD_RATE_LIMITED) {
         let obj = guildId(4195);
         guildId = obj.decodeStreamKey(streamKey).guildId;
-        guildId(1935)(12903, dependencyMap.paths).then((arg0) => {
+        guildId(1935)(12904, dependencyMap.paths).then((arg0) => {
           arg0.default(guildId);
         });
         FAILED = constants.ENDED;
-        const promise = guildId(1935)(12903, dependencyMap.paths);
+        const promise = guildId(1935)(12904, dependencyMap.paths);
       } else {
         let tmp10 = value.state === constants.FAILED;
         if (tmp10) {

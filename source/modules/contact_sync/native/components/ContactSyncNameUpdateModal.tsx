@@ -1,10 +1,10 @@
-// Module ID: 13810
-// Function ID: 105890
+// Module ID: 13811
+// Function ID: 105895
 // Name: onClose
-// Dependencies: [5, 57, 31, 27, 11704, 33, 4338, 4131, 689, 5084, 11706, 11710, 3832, 1212, 9104, 11723, 5087, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 11705, 33, 4338, 4131, 689, 5084, 11707, 11711, 3832, 1212, 9104, 11724, 5087, 5517, 2]
 // Exports: default
 
-// Module 13810 (onClose)
+// Module 13811 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

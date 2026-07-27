@@ -1,10 +1,10 @@
-// Module ID: 15548
-// Function ID: 119699
+// Module ID: 15561
+// Function ID: 119748
 // Name: getNoticeCTAColor
-// Dependencies: [31, 27, 12708, 653, 6173, 1852, 33, 664, 4131, 689, 15549, 675, 1212, 3713, 624, 6188, 6180, 15547, 1921, 4127, 3777, 4661, 1273, 6570, 4555, 5509, 2]
+// Dependencies: [31, 27, 12709, 653, 6173, 1852, 33, 664, 4131, 689, 15562, 675, 1212, 3713, 624, 6188, 6180, 15560, 1921, 4127, 3777, 4661, 1273, 6570, 4555, 5509, 2]
 // Exports: default
 
-// Module 15548 (getNoticeCTAColor)
+// Module 15561 (getNoticeCTAColor)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -87,7 +87,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
     }
   }
   const tmp4 = importDefault(6180);
-  let obj3 = navigateToPremium(15547);
+  let obj3 = navigateToPremium(15560);
   shouldShowExpiringTrialOfferCard = obj3.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {

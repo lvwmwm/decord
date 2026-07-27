@@ -1,5 +1,5 @@
 // Module ID: 5935
-// Function ID: 52841
+// Function ID: 52842
 // Name: DEFAULT_VIDEO_VOLUME
 // Dependencies: [2]
 

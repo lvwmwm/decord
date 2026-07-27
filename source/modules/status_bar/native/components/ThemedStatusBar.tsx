@@ -1,10 +1,10 @@
-// Module ID: 13563
-// Function ID: 104352
+// Module ID: 13564
+// Function ID: 104357
 // Name: ThemedStatusBar
-// Dependencies: [31, 1278, 1194, 33, 566, 3982, 3977, 10624, 6622, 2]
+// Dependencies: [31, 1278, 1194, 33, 566, 3982, 3977, 10625, 6622, 2]
 // Exports: default
 
-// Module 13563 (ThemedStatusBar)
+// Module 13564 (ThemedStatusBar)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -22,7 +22,7 @@ export default function ThemedStatusBar() {
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_0(outer1_2[6]).isThemeDark(outer1_3.theme));
   const obj3 = require(566) /* initialize */;
-  const globalStatusIndicatorState = require(10624) /* useGlobalStatusIndicatorState */.useGlobalStatusIndicatorState();
+  const globalStatusIndicatorState = require(10625) /* useGlobalStatusIndicatorState */.useGlobalStatusIndicatorState();
   if (!stateFromStores) {
     obj = { barStyle: "light-content" };
     return jsx(importDefault(6622), { barStyle: "light-content" });

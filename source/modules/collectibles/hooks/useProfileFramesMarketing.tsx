@@ -1,10 +1,10 @@
-// Module ID: 15687
-// Function ID: 121038
+// Module ID: 15699
+// Function ID: 121085
 // Name: deriveProfileFramesMarketing
-// Dependencies: [1850, 8632, 15688, 8598, 566, 8031, 8633, 2]
+// Dependencies: [1850, 8632, 15700, 8598, 566, 8031, 8633, 2]
 // Exports: getProfileFramesMarketing, useProfileFramesMarketing
 
-// Module 15687 (deriveProfileFramesMarketing)
+// Module 15699 (deriveProfileFramesMarketing)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -58,8 +58,8 @@ export const useProfileFramesMarketing = function useProfileFramesMarketing(Coll
   const obj2 = require(8632) /* isUserPaidTier2 */;
   obj.isEarlyAccess = require(8632) /* isUserPaidTier2 */.useIsProfileFramesEarlyAccessPhase(CollectiblesMobileAnnouncementActionSheet);
   const obj3 = require(8632) /* isUserPaidTier2 */;
-  obj.isFramesEAMarketingEnabled = require(15688) /* apexExperiment */.useIsProfileFramesEAMarketingEnabled(CollectiblesMobileAnnouncementActionSheet);
-  const obj4 = require(15688) /* apexExperiment */;
+  obj.isFramesEAMarketingEnabled = require(15700) /* apexExperiment */.useIsProfileFramesEAMarketingEnabled(CollectiblesMobileAnnouncementActionSheet);
+  const obj4 = require(15700) /* apexExperiment */;
   obj.isFrameGiftingEnabled = require(8598) /* apexExperiment */.useIsProfileFrameGiftingEnabled(CollectiblesMobileAnnouncementActionSheet);
   const obj5 = require(8598) /* apexExperiment */;
   const items = [_isNativeReflectConstruct];
@@ -84,8 +84,8 @@ export const getProfileFramesMarketing = function getProfileFramesMarketing(loca
   obj1.isEarlyAccess = enableProfileFrames;
   const obj3 = importDefault(8633);
   const tmp = deriveProfileFramesMarketing;
-  obj1.isFramesEAMarketingEnabled = require(15688) /* apexExperiment */.getIsProfileFramesEAMarketingEnabled(location);
-  const obj6 = require(15688) /* apexExperiment */;
+  obj1.isFramesEAMarketingEnabled = require(15700) /* apexExperiment */.getIsProfileFramesEAMarketingEnabled(location);
+  const obj6 = require(15700) /* apexExperiment */;
   obj1.isFrameGiftingEnabled = require(8598) /* apexExperiment */.getIsProfileFrameGiftingEnabled(location);
   const obj7 = require(8598) /* apexExperiment */;
   obj1.hasPaidTier2 = require(8632) /* isUserPaidTier2 */.isUserPaidTier2(currentUser.getCurrentUser());

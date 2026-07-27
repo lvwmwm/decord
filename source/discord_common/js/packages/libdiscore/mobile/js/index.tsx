@@ -1,5 +1,5 @@
 // Module ID: 1846
-// Function ID: 20259
+// Function ID: 20260
 // Name: LIBDISCORE_JSI
 // Dependencies: [6, 7, 27, 1847, 2]
 // Exports: consumeLogs, crash, generateLaunchSignature, getFluxApi, getHttpClientAPI, registerDevLogListener, rustMultiply

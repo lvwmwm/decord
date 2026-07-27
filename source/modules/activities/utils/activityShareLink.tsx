@@ -1,10 +1,10 @@
-// Module ID: 13476
-// Function ID: 103599
+// Module ID: 13477
+// Function ID: 103604
 // Name: items
 // Dependencies: [4115, 1443, 1212, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 13476 (items)
+// Module 13477 (items)
 const items = [require("_createForOfIteratorHelperLoose").parseQuestsEmbedCode];
 const result = require("getSystemLocale").fileFinishedImporting("modules/activities/utils/activityShareLink.tsx");
 

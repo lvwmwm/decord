@@ -1,9 +1,9 @@
-// Module ID: 16569
-// Function ID: 129317
+// Module ID: 16581
+// Function ID: 129364
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1907, 3948, 1850, 6271, 653, 12701, 10198, 10199, 10631, 1212, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 1907, 3948, 1850, 6271, 653, 12702, 10199, 10200, 10632, 1212, 5078, 2]
 
-// Module 16569 (_isNativeReflectConstruct)
+// Module 16581 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
@@ -35,7 +35,7 @@ function handleMessageSendFailure(shouldNotify) {
   ({ channelId, messageId } = shouldNotify);
   if (shouldNotify.shouldNotify) {
     if ("active" !== state.getState()) {
-      let obj = importDefault(10631);
+      let obj = importDefault(10632);
       obj = { category: "local" };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.alertTitle = intl.string(require(1212) /* getSystemLocale */.t.LdlH2M);
@@ -55,10 +55,10 @@ function handleMessageSendFailure(shouldNotify) {
               outer1_1(outer1_2[11]).clearNotification();
             }
       };
-      const obj4 = importDefault(10198);
-      obj1.inAppNotificationId = require(10199) /* hasMedia */.generateInAppNotificationId();
+      const obj4 = importDefault(10199);
+      obj1.inAppNotificationId = require(10200) /* hasMedia */.generateInAppNotificationId();
       obj4.enqueueNotification(obj1);
-      const obj6 = require(10199) /* hasMedia */;
+      const obj6 = require(10200) /* hasMedia */;
     }
   }
 }

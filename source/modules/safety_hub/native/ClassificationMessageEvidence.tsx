@@ -1,10 +1,10 @@
-// Module ID: 11018
-// Function ID: 85703
+// Module ID: 11019
+// Function ID: 85708
 // Name: ClassificationEvidence
-// Dependencies: [57, 31, 27, 1278, 1850, 11009, 6699, 653, 33, 7654, 4131, 566, 3977, 11019, 11020, 6698, 4318, 8053, 8081, 9984, 9222, 4352, 21, 2]
+// Dependencies: [57, 31, 27, 1278, 1850, 11010, 6699, 653, 33, 7654, 4131, 566, 3977, 11020, 11021, 6698, 4318, 8053, 8081, 9984, 9222, 4352, 21, 2]
 // Exports: default
 
-// Module 11018 (ClassificationEvidence)
+// Module 11019 (ClassificationEvidence)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -52,9 +52,9 @@ export default function ClassificationEvidence(arg0) {
   const items1 = [id];
   const resolveAssetSource = first2.resolveAssetSource;
   if (obj1.useStateFromStores(items1, () => ref(3977).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp8(11019));
+    let assetSource = resolveAssetSource(tmp8(11020));
   } else {
-    assetSource = resolveAssetSource(tmp8(11020));
+    assetSource = resolveAssetSource(tmp8(11021));
   }
   let map = arg0.flaggedContent[0];
   const tmp11 = first1(React.useState(map.attachments.length), 2);

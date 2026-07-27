@@ -1,10 +1,10 @@
-// Module ID: 10714
-// Function ID: 83330
+// Module ID: 10715
+// Function ID: 83335
 // Name: getMuteStates
 // Dependencies: [1910, 1194, 4178, 3759, 4147, 653, 566, 2]
 // Exports: default
 
-// Module 10714 (getMuteStates)
+// Module 10715 (getMuteStates)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

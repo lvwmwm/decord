@@ -1,5 +1,5 @@
 // Module ID: 7979
-// Function ID: 63598
+// Function ID: 63599
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 31, 3782, 653, 1852, 44, 7980, 3777, 6244, 566, 7982, 3713, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionSKUs, subscriptionCanDowngrade, useGetOrFetchSubscriptionPlan

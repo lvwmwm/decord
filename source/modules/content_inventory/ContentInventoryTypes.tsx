@@ -1,5 +1,5 @@
 // Module ID: 8114
-// Function ID: 64675
+// Function ID: 64676
 // Name: isPlayedGameEntry
 // Dependencies: [7848, 8115, 2]
 // Exports: isConsoleEntry, isLaunchedActivityEntry, isListeningLikeEntry, isRecentActivityEntry

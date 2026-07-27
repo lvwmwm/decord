@@ -1,5 +1,5 @@
 // Module ID: 6481
-// Function ID: 58002
+// Function ID: 58003
 // Name: getIllustrationSource
 // Dependencies: [3843, 2]
 // Exports: getIllustrationSource, useIllustrationSource

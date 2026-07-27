@@ -1,10 +1,10 @@
-// Module ID: 10667
-// Function ID: 83109
+// Module ID: 10668
+// Function ID: 83114
 // Name: useCanRaiseHand
 // Dependencies: [3759, 482, 566, 2]
 // Exports: useCanRaiseHand
 
-// Module 10667 (useCanRaiseHand)
+// Module 10668 (useCanRaiseHand)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "sum";
 

@@ -1,10 +1,10 @@
-// Module ID: 11346
-// Function ID: 88166
+// Module ID: 11347
+// Function ID: 88171
 // Name: PremiumAnimatedGiftButton
 // Dependencies: [31, 4123, 33, 4131, 689, 1324, 3835, 566, 477, 3992, 4661, 5453, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11346 (PremiumAnimatedGiftButton)
+// Module 11347 (PremiumAnimatedGiftButton)
 import result from "result";
 import { useRef } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

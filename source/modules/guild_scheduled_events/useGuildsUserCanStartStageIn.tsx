@@ -1,5 +1,5 @@
 // Module ID: 8186
-// Function ID: 65645
+// Function ID: 65646
 // Name: useChannelsUserCanStartStageIn
 // Dependencies: [1908, 3759, 1356, 566, 2]
 // Exports: useChannelsUserCanStartStageIn

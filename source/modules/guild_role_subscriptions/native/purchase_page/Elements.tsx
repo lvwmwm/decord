@@ -1,10 +1,10 @@
-// Module ID: 15325
-// Function ID: 116937
+// Module ID: 15338
+// Function ID: 116986
 // Name: TruncatedText
-// Dependencies: [57, 31, 27, 3782, 33, 4131, 689, 4127, 1212, 4661, 1273, 15326, 6515, 14177, 624, 6516, 5616, 2]
+// Dependencies: [57, 31, 27, 3782, 33, 4131, 689, 4127, 1212, 4661, 1273, 15339, 6515, 14178, 624, 6516, 5616, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15325 (TruncatedText)
+// Module 15338 (TruncatedText)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -110,15 +110,15 @@ export const ArrowButton = function ArrowButton(arg0) {
   let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress };
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
   const items = [callback2(require(4127) /* Text */.Text, obj), ];
-  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, source: importDefault(15326), style: tmp.arrowButtonIcon };
+  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, source: importDefault(15339), style: tmp.arrowButtonIcon };
   items[1] = callback2(require(1273) /* Button */.Icon, obj);
   obj.children = items;
   return callback3(require(4661) /* PressableBase */.PressableOpacity, obj);
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
   const obj = importDefault(6515);
-  const _require = callback(importAll(14177).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(14177);
+  const _require = callback(importAll(14178).useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = importAll(14178);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(624).useStateFromStores(items, () => outer1_8.get(id.id));
   const price = importDefault(6516)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;

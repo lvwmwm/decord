@@ -1,9 +1,9 @@
-// Module ID: 14600
-// Function ID: 111394
+// Module ID: 14601
+// Function ID: 111399
 // Name: showMessageRequestRestrictionModal
-// Dependencies: [1838, 14591, 7697, 10060, 3804, 4471, 1212, 4562, 14601, 6690, 6692, 6449, 14598, 13789, 10059, 2]
+// Dependencies: [1838, 14592, 7697, 10060, 3804, 4471, 1212, 4562, 14602, 6690, 6692, 6449, 14599, 13790, 10059, 2]
 
-// Module 14600 (showMessageRequestRestrictionModal)
+// Module 14601 (showMessageRequestRestrictionModal)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
@@ -43,13 +43,13 @@ function showMessageRequestRestrictionModal(arg0) {
   obj.show(obj);
 }
 function useIsDisabled() {
-  const defaultGuildsRestricted = require(14598) /* useDefaultGuildsRestricted */.useDefaultGuildsRestricted();
+  const defaultGuildsRestricted = require(14599) /* useDefaultGuildsRestricted */.useDefaultGuildsRestricted();
   const selectedGuildId = callback2().selectedGuildId;
   const RestrictedGuildIds = require(3804) /* explicitContentFromProto */.RestrictedGuildIds;
   const setting = RestrictedGuildIds.useSetting();
   let hasItem = setting.includes(selectedGuildId);
-  const obj = require(14598) /* useDefaultGuildsRestricted */;
-  const tmp3 = selectedGuildId !== closure_6 || !require(13789) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+  const obj = require(14599) /* useDefaultGuildsRestricted */;
+  const tmp3 = selectedGuildId !== closure_6 || !require(13790) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   let tmp4 = !tmp3;
   if (tmp3) {
     if (selectedGuildId === closure_6) {
@@ -89,7 +89,7 @@ createToggle = {
   useIsDisabled,
   onValueChange: function onAllowMessageRequestsFromServerMembersValueChange(arg0) {
     if (!arg0) {
-      let obj = require(14601) /* shouldAgeVerifyForDMDefaultOff */;
+      let obj = require(14602) /* shouldAgeVerifyForDMDefaultOff */;
       if (obj.shouldAgeVerifyForDMDefaultOff()) {
         obj = { entryPoint: require(6692) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
         const result = importDefault(6690).showAgeVerificationGetStartedModal(obj);

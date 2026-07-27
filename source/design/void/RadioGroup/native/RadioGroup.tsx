@@ -1,9 +1,9 @@
-// Module ID: 13070
-// Function ID: 101036
+// Module ID: 13071
+// Function ID: 101041
 // Name: getOuterStylesFromSize
-// Dependencies: [31, 27, 482, 33, 4131, 689, 3849, 5157, 13071, 2]
+// Dependencies: [31, 27, 482, 33, 4131, 689, 3849, 5157, 13072, 2]
 
-// Module 13070 (getOuterStylesFromSize)
+// Module 13071 (getOuterStylesFromSize)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { NOOP } from "sum";

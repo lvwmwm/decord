@@ -1,5 +1,5 @@
 // Module ID: 8409
-// Function ID: 67162
+// Function ID: 67163
 // Name: GameFlags
 // Dependencies: [2]
 

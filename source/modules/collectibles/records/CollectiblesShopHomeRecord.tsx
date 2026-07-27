@@ -1,5 +1,5 @@
 // Module ID: 5799
-// Function ID: 50994
+// Function ID: 50995
 // Name: CollectiblesShopHomeRecord
 // Dependencies: [6, 7, 5771, 5800, 5802, 5805, 5806, 5807, 5808, 5809, 5810, 5811, 5812, 5813, 5814, 5801, 2]
 

@@ -1,10 +1,10 @@
-// Module ID: 10686
-// Function ID: 83210
+// Module ID: 10687
+// Function ID: 83215
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4186, 10687, 10688, 2]
+// Dependencies: [4186, 10688, 10689, 2]
 // Exports: default
 
-// Module 10686 (_createForOfIteratorHelperLoose)
+// Module 10687 (_createForOfIteratorHelperLoose)
 import makeButton from "makeButton";
 
 let closure_3;
@@ -93,7 +93,7 @@ const result = require("canUseStreamSetting").fileFinishedImporting("modules/go_
 
 export default function canStreamWithSettings(arg0, arg1, arg2, arg3, arg4, arg5) {
   if (arg0 === constants.PRESET_AUTO) {
-    let obj = require(10687) /* getGoLiveAutoQualityExperimentConfig */;
+    let obj = require(10688) /* getGoLiveAutoQualityExperimentConfig */;
     obj = { location: "canStreamWithSettings" };
     return obj.getGoLiveAutoQualityExperimentConfig(obj).allowAutoQuality;
   } else {
@@ -111,7 +111,7 @@ export default function canStreamWithSettings(arg0, arg1, arg2, arg3, arg4, arg5
               let tmp4 = arg3;
               let tmp5 = arg4;
               let tmp6 = arg5;
-              if (importDefault(10688)(value, arg3, arg4, arg5)) {
+              if (importDefault(10689)(value, arg3, arg4, arg5)) {
                 break;
               }
             }

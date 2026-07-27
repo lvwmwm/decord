@@ -1,5 +1,5 @@
 // Module ID: 3427
-// Function ID: 26680
+// Function ID: 26681
 // Name: eachWeekendOfYear
 // Dependencies: [3424, 3428, 3429, 3211]
 // Exports: default

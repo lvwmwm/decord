@@ -1,10 +1,10 @@
-// Module ID: 16437
-// Function ID: 128281
+// Module ID: 16449
+// Function ID: 128328
 // Name: useCreateCreatorMonetizationAcceptTermsRequest
-// Dependencies: [5, 57, 31, 1391, 1838, 1850, 566, 12557, 16438, 4031, 2]
+// Dependencies: [5, 57, 31, 1391, 1838, 1850, 566, 12558, 16450, 4031, 2]
 // Exports: default
 
-// Module 16437 (useCreateCreatorMonetizationAcceptTermsRequest)
+// Module 16449 (useCreateCreatorMonetizationAcceptTermsRequest)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -25,9 +25,9 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
   const dependencyMap = tmp3[1];
   const tmp4 = isExpeditedOnboardingGuild(React.useState(false), 2);
   const callback = tmp4[1];
-  isExpeditedOnboardingGuild = _require(12557).useIsExpeditedOnboardingGuild(stateFromStores);
+  isExpeditedOnboardingGuild = _require(12558).useIsExpeditedOnboardingGuild(stateFromStores);
   obj = {};
-  const obj2 = _require(12557);
+  const obj2 = _require(12558);
   const items1 = [closure_9];
   const items2 = [stateFromStores];
   obj.canSubmitAcceptance = _require(566).useStateFromStores(items1, () => {

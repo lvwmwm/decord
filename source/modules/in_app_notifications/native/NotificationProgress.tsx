@@ -1,10 +1,10 @@
-// Module ID: 10276
-// Function ID: 79443
+// Module ID: 10277
+// Function ID: 79448
 // Name: useProgressAnimation
-// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 10240, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 10241, 2]
 // Exports: default
 
-// Module 10276 (useProgressAnimation)
+// Module 10277 (useProgressAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -100,7 +100,7 @@ export default function NotificationProgress(percent) {
   let type;
   percent = percent.percent;
   ({ canExpand, type } = percent);
-  let obj = require(10240) /* context */;
+  let obj = require(10241) /* context */;
   const inAppNotificationContext = obj.useInAppNotificationContext();
   if (canExpand) {
     obj = { percent, hideProgress: tmp2, type };

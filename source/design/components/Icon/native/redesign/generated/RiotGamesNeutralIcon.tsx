@@ -1,5 +1,5 @@
 // Module ID: 8435
-// Function ID: 67299
+// Function ID: 67300
 // Name: RiotGamesNeutralIcon
 // Dependencies: [31, 33, 689, 3834, 8436, 2]
 // Exports: RiotGamesNeutralIcon

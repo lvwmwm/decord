@@ -1,9 +1,9 @@
-// Module ID: 15928
-// Function ID: 123123
+// Module ID: 15940
+// Function ID: 123170
 // Name: getBadgeLeft
-// Dependencies: [31, 27, 33, 10467, 8463, 2]
+// Dependencies: [31, 27, 33, 10468, 8463, 2]
 
-// Module 15928 (getBadgeLeft)
+// Module 15940 (getBadgeLeft)
 import { PixelRatio } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import importAllResult from "result";
@@ -40,9 +40,9 @@ const memoResult = require("result").memo(function CircleWithCutout(arg0) {
     const result1 = badgeRadius * num;
   }
   const result2 = 2 * result;
-  let obj = require(10467) /* getCutoutCenterX */;
+  let obj = require(10468) /* getCutoutCenterX */;
   const cutoutCenterX = obj.getCutoutCenterX(result, cutoutPositionInDegrees);
-  let obj1 = require(10467) /* getCutoutCenterX */;
+  let obj1 = require(10468) /* getCutoutCenterX */;
   const cutoutCenterY = obj1.getCutoutCenterY(result, cutoutPositionInDegrees);
   if (alignBadgeEdgeWithCircleEdge) {
     alignBadgeEdgeWithCircleEdge = null != result1;

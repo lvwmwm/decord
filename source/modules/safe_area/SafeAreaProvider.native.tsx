@@ -1,10 +1,10 @@
-// Module ID: 13564
-// Function ID: 104356
+// Module ID: 13565
+// Function ID: 104361
 // Name: updateSafeAreaStoreEntry
 // Dependencies: [31, 27, 33, 1553, 1559, 477, 1558, 1569, 682, 1560, 1453, 2]
 // Exports: SafeAreaProvider, SafeAreaReporter
 
-// Module 13564 (updateSafeAreaStoreEntry)
+// Module 13565 (updateSafeAreaStoreEntry)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

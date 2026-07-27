@@ -1,10 +1,10 @@
-// Module ID: 15052
-// Function ID: 114683
+// Module ID: 15064
+// Function ID: 114729
 // Name: PreviewOverlay
-// Dependencies: [31, 27, 33, 4131, 689, 3979, 15053, 4067, 4555, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3979, 15065, 4067, 4555, 2]
 // Exports: default
 
-// Module 15052 (PreviewOverlay)
+// Module 15064 (PreviewOverlay)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -12,7 +12,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const require = arg1;
 function PreviewOverlay() {
-  return <View pointerEvents="none" style={_createForOfIteratorHelperLoose().previewOverlay}>{jsx(importDefault(15053), {})}</View>;
+  return <View pointerEvents="none" style={_createForOfIteratorHelperLoose().previewOverlay}>{jsx(importDefault(15065), {})}</View>;
 }
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { position: "relative", width: 256, aspectRatio: 1.5705521472392638, overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };

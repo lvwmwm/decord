@@ -1,5 +1,5 @@
 // Module ID: 7731
-// Function ID: 61662
+// Function ID: 61663
 // Name: createGuildDiscoveryDisqualifiedSystemMessage
 // Dependencies: [1212, 7687, 2]
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage

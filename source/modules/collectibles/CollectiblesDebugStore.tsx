@@ -1,5 +1,5 @@
 // Module ID: 5785
-// Function ID: 50890
+// Function ID: 50891
 // Name: useCollectiblesDebugStore
 // Dependencies: [621, 2]
 // Exports: addDebugLog

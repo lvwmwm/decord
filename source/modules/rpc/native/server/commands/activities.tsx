@@ -1,9 +1,9 @@
-// Module ID: 13501
-// Function ID: 103799
+// Module ID: 13502
+// Function ID: 103804
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4034, 653, 4345, 8112, 13470, 10553, 8286, 13459, 4676, 4687, 5668, 4031, 2]
+// Dependencies: [5, 4034, 653, 4345, 8112, 13471, 10554, 8286, 13460, 4676, 4687, 5668, 4031, 2]
 
-// Module 13501 (RPC_LOCAL_SCOPE)
+// Module 13502 (RPC_LOCAL_SCOPE)
 import validateOpenInviteDialog from "validateOpenInviteDialog";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -25,10 +25,10 @@ const items = [require("set").OAuth2Scopes.RPC, RPC_LOCAL_SCOPE, RPC_AUTHENTICAT
 obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj.scope = obj;
 obj.handler = function handler(socket) {
-  let obj = require(13470) /* validateOpenInviteDialog */;
+  let obj = require(13471) /* validateOpenInviteDialog */;
   const result = obj.validateOpenInviteDialog();
   if (null != result.frame) {
-    let tmp10 = importDefault(10553);
+    let tmp10 = importDefault(10554);
     obj = { errorCode: constants2.UNKNOWN_ERROR };
     const prototype = tmp10.prototype;
     tmp10 = new tmp10(obj, "Cannot support frames (yet)");

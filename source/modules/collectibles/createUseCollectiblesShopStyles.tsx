@@ -1,5 +1,5 @@
 // Module ID: 9731
-// Function ID: 75805
+// Function ID: 75806
 // Name: getMidpointColor
 // Dependencies: [57, 4123, 7927, 5780, 624, 2]
 // Exports: default

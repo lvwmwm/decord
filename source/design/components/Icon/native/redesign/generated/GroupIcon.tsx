@@ -1,5 +1,5 @@
 // Module ID: 4647
-// Function ID: 40354
+// Function ID: 40355
 // Name: GroupIcon
 // Dependencies: [31, 33, 689, 3834, 4599, 2]
 // Exports: GroupIcon

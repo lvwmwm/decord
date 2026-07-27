@@ -1,10 +1,10 @@
-// Module ID: 13868
-// Function ID: 106229
+// Module ID: 13869
+// Function ID: 106234
 // Name: AvatarDecorationPreviewImage
-// Dependencies: [31, 27, 8036, 33, 4131, 13867, 689, 8009, 8020, 8626, 11252, 6561, 6570, 1877, 1874, 2]
+// Dependencies: [31, 27, 8036, 33, 4131, 13868, 689, 8009, 8020, 8626, 11253, 6561, 6570, 1877, 1874, 2]
 // Exports: default
 
-// Module 13868 (AvatarDecorationPreviewImage)
+// Module 13869 (AvatarDecorationPreviewImage)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PROFILE_FRAME_ASPECT_RATIO as closure_5 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO";
@@ -18,7 +18,7 @@ function AvatarDecorationPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  let obj = require(13867) /* getCollectibleTypeName */;
+  let obj = require(13868) /* getCollectibleTypeName */;
   const avatarDecorationPreviewUrl = obj.getAvatarDecorationPreviewUrl(product);
   let tmp2 = null;
   if (null != avatarDecorationPreviewUrl) {
@@ -53,7 +53,7 @@ function ProfileEffectPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  let obj = require(13867) /* getCollectibleTypeName */;
+  let obj = require(13868) /* getCollectibleTypeName */;
   const profileEffectPreviewUrl = obj.getProfileEffectPreviewUrl(product);
   let tmp2 = null;
   if (null != profileEffectPreviewUrl) {
@@ -74,9 +74,9 @@ function ProfileFramePreviewImage(arg0) {
   let tmp2 = null;
   if (null != tmp) {
     let obj = { style: styles.profileFrameContainer };
-    obj = { profileFrame: tmp, previewWidth: require(13867) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5, previewHeight: require(13867) /* getCollectibleTypeName */.PREVIEW_SIZE, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-    obj.children = jsx(importDefault(8626), { profileFrame: tmp, previewWidth: require(13867) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5, previewHeight: require(13867) /* getCollectibleTypeName */.PREVIEW_SIZE, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW });
-    tmp2 = <closure_3 profileFrame={tmp} previewWidth={require(13867) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5} previewHeight={require(13867) /* getCollectibleTypeName */.PREVIEW_SIZE} profileBackgroundColor={importDefault(689).colors.BACKGROUND_BASE_LOW} />;
+    obj = { profileFrame: tmp, previewWidth: require(13868) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5, previewHeight: require(13868) /* getCollectibleTypeName */.PREVIEW_SIZE, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
+    obj.children = jsx(importDefault(8626), { profileFrame: tmp, previewWidth: require(13868) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5, previewHeight: require(13868) /* getCollectibleTypeName */.PREVIEW_SIZE, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW });
+    tmp2 = <closure_3 profileFrame={tmp} previewWidth={require(13868) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5} previewHeight={require(13868) /* getCollectibleTypeName */.PREVIEW_SIZE} profileBackgroundColor={importDefault(689).colors.BACKGROUND_BASE_LOW} />;
     const tmp8 = importDefault(8626);
   }
   return tmp2;
@@ -88,7 +88,7 @@ function SubscriptionPreview(arg0) {
   if (null == subscriptionPlanId) {
     let obj = { style: styles.purchasePlaceholder };
     obj = { size: "custom", style: { width: 20, height: 20 } };
-    obj.children = jsx(require(11252) /* ShopIcon */.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+    obj.children = jsx(require(11253) /* ShopIcon */.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
     return <closure_3 size="custom" style={{ width: 20, height: 20 }} />;
   } else {
     const obj1 = { style: styles.purchasePlaceholder };
@@ -109,7 +109,7 @@ function CollectiblePreview(arg0) {
   if (null == product) {
     let obj = { style: styles.purchasePlaceholder };
     obj = { size: "custom", style: { width: 20, height: 20 } };
-    obj.children = jsx(require(11252) /* ShopIcon */.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+    obj.children = jsx(require(11253) /* ShopIcon */.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
     return <closure_3 size="custom" style={{ width: 20, height: 20 }} />;
   } else {
     const type = product.type;
@@ -134,7 +134,7 @@ function CollectiblePreview(arg0) {
     } else {
       obj = { style: styles.purchasePlaceholder };
       const obj5 = { size: "custom", style: { width: 20, height: 20 } };
-      obj.children = jsx(require(11252) /* ShopIcon */.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+      obj.children = jsx(require(11253) /* ShopIcon */.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
       return <closure_3 style={styles.purchasePlaceholder} />;
     }
   }

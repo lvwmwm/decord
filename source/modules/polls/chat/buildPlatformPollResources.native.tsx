@@ -1,5 +1,5 @@
 // Module ID: 7938
-// Function ID: 63204
+// Function ID: 63205
 // Name: buildPlatformPollResources
 // Dependencies: [22, 7939, 4131, 689, 7670, 5181, 5504, 1395, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl

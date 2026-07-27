@@ -1,10 +1,10 @@
-// Module ID: 15372
-// Function ID: 117250
+// Module ID: 15385
+// Function ID: 117299
 // Name: ThreadChannelStarterMessage
 // Dependencies: [31, 5829, 4350, 33, 7654, 566, 4661, 1198, 9222, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 15372 (ThreadChannelStarterMessage)
+// Module 15385 (ThreadChannelStarterMessage)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ReferencedMessageState } from "_isNativeReflectConstruct";

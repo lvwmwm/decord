@@ -1,7 +1,7 @@
 // Module ID: 8447
-// Function ID: 67319
+// Function ID: 67320
 // Name: GameProfileView
-// Dependencies: [31, 27, 33, 4131, 689, 5462, 5482, 8448, 8451, 8452, 8453, 8575, 8576, 8579, 8582, 8591, 11854, 11856, 11873, 11874, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 5462, 5482, 8448, 8451, 8452, 8453, 8575, 8576, 8579, 8582, 8591, 11855, 11857, 11874, 11875, 2]
 // Exports: default
 
 // Module 8447 (GameProfileView)
@@ -84,10 +84,10 @@ export default function GameProfileView(arg0) {
   items2[5] = callback(importDefault(8579), { closeModal, game, onInviteResolved: onGuildInviteResolved, trackAction });
   items2[6] = callback(importDefault(8582), { gameId: game.id, invite, closeModal, trackAction, scrollOffsetRef });
   items2[7] = callback(importDefault(8591), { game, closeModal, trackAction });
-  items2[8] = callback(importDefault(11854), { gameId: game.id, trackAction });
-  items2[9] = callback(importDefault(11856), { game, viewId, source, trackAction });
+  items2[8] = callback(importDefault(11855), { gameId: game.id, trackAction });
+  items2[9] = callback(importDefault(11857), { game, viewId, source, trackAction });
   const obj5 = { style: tmp.buttonsContainer };
-  const items3 = [callback(importDefault(11873), { game, trackAction }), callback(importDefault(11874), { applicationId: game.id, trackAction })];
+  const items3 = [callback(importDefault(11874), { game, trackAction }), callback(importDefault(11875), { applicationId: game.id, trackAction })];
   obj5.children = items3;
   items2[10] = callback2(View, obj5);
   obj.children = items2;

@@ -1,10 +1,10 @@
-// Module ID: 16539
-// Function ID: 128902
+// Module ID: 16551
+// Function ID: 128949
 // Name: GuildRoleSubscriptionRolePreview
 // Dependencies: [31, 27, 1850, 33, 4131, 689, 1212, 624, 4320, 5085, 4127, 665, 1273, 5488, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 16539 (GuildRoleSubscriptionRolePreview)
+// Module 16551 (GuildRoleSubscriptionRolePreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

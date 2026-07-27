@@ -1,5 +1,5 @@
 // Module ID: 3897
-// Function ID: 32255
+// Function ID: 32256
 // Name: getStringProperty
 // Dependencies: [57, 3882, 3895]
 // Exports: useRiveString

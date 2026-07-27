@@ -1,7 +1,7 @@
 // Module ID: 7969
-// Function ID: 63444
+// Function ID: 63445
 // Name: getGiftStyleUrl
-// Dependencies: [27, 1194, 7970, 1850, 4176, 653, 1852, 12268, 12269, 12270, 12271, 12272, 12273, 12274, 12275, 12276, 12277, 12278, 11828, 3970, 7666, 3977, 3942, 1212, 10931, 10932, 689, 3713, 7658, 7670, 12279, 12280, 12281, 12282, 12283, 5609, 3777, 2]
+// Dependencies: [27, 1194, 7970, 1850, 4176, 653, 1852, 12269, 12270, 12271, 12272, 12273, 12274, 12275, 12276, 12277, 12278, 12279, 11829, 3970, 7666, 3977, 3942, 1212, 10932, 10933, 689, 3713, 7658, 7670, 12280, 12281, 12282, 12283, 12284, 5609, 3777, 2]
 // Exports: createGiftCodeEmbed
 
 // Module 7969 (getGiftStyleUrl)
@@ -21,32 +21,32 @@ let closure_4;
 let closure_9;
 function getGiftStyleUrl(arg0) {
   if (constants.BOX === arg0) {
-    return importDefault(12268);
-  } else if (constants.CUP === arg0) {
     return importDefault(12269);
-  } else if (constants.SNOWGLOBE === arg0) {
+  } else if (constants.CUP === arg0) {
     return importDefault(12270);
-  } else if (constants.STANDARD_BOX === arg0) {
+  } else if (constants.SNOWGLOBE === arg0) {
     return importDefault(12271);
-  } else if (constants.COFFEE === arg0) {
+  } else if (constants.STANDARD_BOX === arg0) {
     return importDefault(12272);
-  } else if (constants.CAKE === arg0) {
+  } else if (constants.COFFEE === arg0) {
     return importDefault(12273);
-  } else if (constants.CHEST === arg0) {
+  } else if (constants.CAKE === arg0) {
     return importDefault(12274);
-  } else if (constants.SEASONAL_STANDARD_BOX === arg0) {
+  } else if (constants.CHEST === arg0) {
     return importDefault(12275);
-  } else if (constants.SEASONAL_CAKE === arg0) {
+  } else if (constants.SEASONAL_STANDARD_BOX === arg0) {
     return importDefault(12276);
-  } else if (constants.SEASONAL_CHEST === arg0) {
+  } else if (constants.SEASONAL_CAKE === arg0) {
     return importDefault(12277);
-  } else if (constants.SEASONAL_COFFEE === arg0) {
+  } else if (constants.SEASONAL_CHEST === arg0) {
     return importDefault(12278);
+  } else if (constants.SEASONAL_COFFEE === arg0) {
+    return importDefault(12279);
   } else if (constants.NITROWEEN_STANDARD === arg0) {
-    const obj = { uri: importDefault(11828) };
+    const obj = { uri: importDefault(11829) };
     return obj;
   } else {
-    return importDefault(12271);
+    return importDefault(12272);
   }
 }
 function getUserNameOrDefault(arg0) {

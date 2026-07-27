@@ -1,5 +1,5 @@
 // Module ID: 9407
-// Function ID: 73435
+// Function ID: 73436
 // Name: emitClickEventWithCreative
 // Dependencies: [5, 5932, 653, 5960, 5949, 5930, 5959, 5966, 675, 491, 9408, 2]
 // Exports: captureAdUserAction

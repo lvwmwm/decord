@@ -1,5 +1,5 @@
 // Module ID: 8323
-// Function ID: 66829
+// Function ID: 66830
 // Name: DISPLAY_NAME_STYLES_EFFECT_NAMES
 // Dependencies: [31, 1863, 2557, 8324, 1212, 1864, 2]
 // Exports: useDisplayNameStylesEffectConfig

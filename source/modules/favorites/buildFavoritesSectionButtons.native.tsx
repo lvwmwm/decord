@@ -1,7 +1,7 @@
 // Module ID: 10150
-// Function ID: 78495
+// Function ID: 78496
 // Name: _addChannelToFavorites
-// Dependencies: [57, 5, 3832, 1212, 9351, 10151, 1935, 10157, 2945, 9353, 2]
+// Dependencies: [57, 5, 3832, 1212, 9351, 10151, 1935, 10158, 2945, 9353, 2]
 // Exports: default
 
 // Module 10150 (_addChannelToFavorites)

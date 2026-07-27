@@ -1,5 +1,5 @@
 // Module ID: 8587
-// Function ID: 68213
+// Function ID: 68214
 // Name: useGameAnnouncements
 // Dependencies: [31, 8414, 566, 8588, 2]
 // Exports: default

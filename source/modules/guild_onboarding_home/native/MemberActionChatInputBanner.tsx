@@ -1,9 +1,9 @@
-// Module ID: 11377
-// Function ID: 88408
+// Module ID: 11378
+// Function ID: 88413
 // Name: ActionChannelInfo
-// Dependencies: [57, 31, 27, 4123, 4992, 1348, 1918, 653, 1853, 33, 4131, 689, 624, 4321, 4127, 1212, 1273, 10927, 5085, 1392, 3772, 11378, 11376, 3992, 4132, 11379, 4661, 1198, 6627, 5605, 2]
+// Dependencies: [57, 31, 27, 4123, 4992, 1348, 1918, 653, 1853, 33, 4131, 689, 624, 4321, 4127, 1212, 1273, 10928, 5085, 1392, 3772, 11379, 11377, 3992, 4132, 11380, 4661, 1198, 6627, 5605, 2]
 
-// Module 11377 (ActionChannelInfo)
+// Module 11378 (ActionChannelInfo)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "shouldNavigate";
@@ -46,7 +46,7 @@ function ChannelActionEmoji(emoji) {
   let id;
   const tmp = callback3();
   let obj = { style: tmp.emojiPlaceholder };
-  obj = { size: id(1273).Icon.Sizes.REFRESH_SMALL_16, source: importDefault(10927) };
+  obj = { size: id(1273).Icon.Sizes.REFRESH_SMALL_16, source: importDefault(10928) };
   obj.children = callback(id(1273).Icon, obj);
   const tmp2 = callback(View, obj);
   id = undefined;
@@ -391,7 +391,7 @@ const memoResult1 = importAllResult.memo((channel) => {
   let channelAction;
   let completed;
   channel = channel.channel;
-  let obj = require(11378) /* useMemberActionsForChannel */;
+  let obj = require(11379) /* useMemberActionsForChannel */;
   const memberActionsForChannel = obj.useMemberActionsForChannel(channel.guild_id, channel);
   ({ channelAction, completed } = memberActionsForChannel);
   let channelId;
@@ -399,11 +399,11 @@ const memoResult1 = importAllResult.memo((channel) => {
     channelId = channelAction.channelId;
   }
   let actionType;
-  const nextMemberAction = require(11378) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
+  const nextMemberAction = require(11379) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
   if (null != channelAction) {
     actionType = channelAction.actionType;
   }
-  if (actionType !== require(11376) /* _createForOfIteratorHelperLoose */.NewMemberActionTypes.VIEW) {
+  if (actionType !== require(11377) /* _createForOfIteratorHelperLoose */.NewMemberActionTypes.VIEW) {
     obj = { channel };
     let tmp5 = callback(closure_18, obj);
   } else {

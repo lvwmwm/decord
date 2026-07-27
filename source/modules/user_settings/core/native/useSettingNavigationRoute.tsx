@@ -1,5 +1,5 @@
 // Module ID: 6273
-// Function ID: 56355
+// Function ID: 56356
 // Name: useSettingNavigationRoute
 // Dependencies: [1457, 2]
 // Exports: useSettingNavigationRoute

@@ -1,5 +1,5 @@
 // Module ID: 5968
-// Function ID: 53088
+// Function ID: 53089
 // Name: isGroupDMInvite
 // Dependencies: [5751, 1352, 5969, 5970, 2]
 // Exports: getGuildInviteExtendedType, getInviteType, isRoleSubscriptionInvite, isStreamInvite

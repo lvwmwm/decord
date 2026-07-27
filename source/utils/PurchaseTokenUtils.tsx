@@ -1,5 +1,5 @@
 // Module ID: 4461
-// Function ID: 39339
+// Function ID: 39340
 // Name: getPurchaseToken
 // Dependencies: [5, 664, 587, 491, 2]
 // Exports: getPurchaseTokenHash

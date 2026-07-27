@@ -1,5 +1,5 @@
 // Module ID: 8426
-// Function ID: 67285
+// Function ID: 67286
 // Name: getGameProfileStoreWebsiteData
 // Dependencies: [31, 33, 8422, 8427, 8418, 1212, 8429, 8431, 8433, 8435, 8437, 8441, 2]
 // Exports: default

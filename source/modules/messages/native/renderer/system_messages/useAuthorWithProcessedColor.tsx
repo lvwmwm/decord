@@ -1,5 +1,5 @@
 // Module ID: 7684
-// Function ID: 61478
+// Function ID: 61479
 // Name: getMessageAuthorWithProcessedColor
 // Dependencies: [27, 4361, 7685, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor

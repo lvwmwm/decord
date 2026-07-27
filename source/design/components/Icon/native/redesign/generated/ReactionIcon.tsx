@@ -1,5 +1,5 @@
 // Module ID: 6519
-// Function ID: 58273
+// Function ID: 58274
 // Name: ReactionIcon
 // Dependencies: [31, 33, 689, 3834, 6520, 2]
 // Exports: ReactionIcon

@@ -1,5 +1,5 @@
 // Module ID: 6982
-// Function ID: 59708
+// Function ID: 59709
 // Name: FistBumpSpotIllustration
 // Dependencies: [33, 5085, 6983, 2]
 // Exports: FistBumpSpotIllustration

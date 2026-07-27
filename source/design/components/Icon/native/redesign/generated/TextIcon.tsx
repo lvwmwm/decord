@@ -1,5 +1,5 @@
 // Module ID: 4639
-// Function ID: 40338
+// Function ID: 40339
 // Name: TextIcon
 // Dependencies: [31, 33, 689, 3834, 4598, 2]
 // Exports: TextIcon

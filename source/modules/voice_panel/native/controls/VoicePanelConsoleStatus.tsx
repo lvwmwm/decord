@@ -1,10 +1,10 @@
-// Module ID: 15914
-// Function ID: 123040
+// Module ID: 15926
+// Function ID: 123087
 // Name: VoicePanelConsoleStatus
-// Dependencies: [31, 9976, 9979, 9974, 33, 4131, 689, 9975, 15909, 3992, 4477, 15915, 4543, 5515, 1273, 4127, 4661, 8971, 1212, 15916, 2]
+// Dependencies: [31, 9976, 9979, 9974, 33, 4131, 689, 9975, 15921, 3992, 4477, 15927, 4543, 5515, 1273, 4127, 4661, 8971, 1212, 15928, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 15914 (VoicePanelConsoleStatus)
+// Module 15926 (VoicePanelConsoleStatus)
 import result from "result";
 import { EDGE_GUTTER } from "CARD_SIZE";
 import { CONTROLS_HEIGHT } from "VoicePanelControlsModes";

@@ -1,5 +1,5 @@
 // Module ID: 7982
-// Function ID: 63627
+// Function ID: 63628
 // Name: PauseDuration
 // Dependencies: [2]
 

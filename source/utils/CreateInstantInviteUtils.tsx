@@ -1,10 +1,10 @@
-// Module ID: 16547
-// Function ID: 129005
+// Module ID: 16559
+// Function ID: 129052
 // Name: getInvitableChannelForGuild
 // Dependencies: [1908, 3759, 653, 2]
 // Exports: getInvitableChannelForGuild
 
-// Module 16547 (getInvitableChannelForGuild)
+// Module 16559 (getInvitableChannelForGuild)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";

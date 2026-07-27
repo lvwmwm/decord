@@ -1,10 +1,10 @@
-// Module ID: 16381
-// Function ID: 127878
+// Module ID: 16393
+// Function ID: 127925
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [27, 16363, 16365, 16362, 482, 33, 4131, 689, 4067, 4572, 16382, 1212, 7654, 5187, 5186, 4099, 9222, 1914, 7685, 16383, 4127, 2231, 3995, 2]
+// Dependencies: [27, 16375, 16377, 16374, 482, 33, 4131, 689, 4067, 4572, 16394, 1212, 7654, 5187, 5186, 4099, 9222, 1914, 7685, 16395, 4127, 2231, 3995, 2]
 // Exports: default
 
-// Module 16381 (EnhancedRoleColorsSelectStyleModal)
+// Module 16393 (EnhancedRoleColorsSelectStyleModal)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { RoleColorsStyle } from "_isNativeReflectConstruct";
 import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS";
@@ -67,7 +67,7 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
   const dependencyMap = tmp;
   let obj = require(4572) /* useHasEnhancedRoleColors */;
   const hasEnhancedRoleColorsForRole = obj.useHasEnhancedRoleColorsForRole(guildId, role);
-  let obj1 = require(16382) /* useGuildSettingsRoleExampleMessage */;
+  let obj1 = require(16394) /* useGuildSettingsRoleExampleMessage */;
   let intl = require(1212) /* getSystemLocale */.intl;
   let closure_4 = obj1.useGuildSettingsRoleExampleMessage(intl.string(require(1212) /* getSystemLocale */.t.Mi9Kbe));
   let tmp3 = importDefault(7654);
@@ -117,7 +117,7 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
             const obj = outer2_0(1914);
             message.message.roleColors = outer2_0(7685).processColorStrings(result);
             message.message.shouldShowRoleOnName = true;
-            message.message.avatarURL = outer2_1(16383);
+            message.message.avatarURL = outer2_1(16395);
           }
         };
         const items1 = [outer1_9(outer1_1(tmp[16]), obj), ];

@@ -1,9 +1,9 @@
-// Module ID: 14047
-// Function ID: 107520
+// Module ID: 14048
+// Function ID: 107525
 // Name: metadata
 // Dependencies: [2]
 
-// Module 14047 (metadata)
+// Module 14048 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/quests/bounties/bounty_banner.mp4.js");
 
 export default "https://cdn.discordapp.com/assets/content/1f8c73e799db93109862fc412848d8f8130f2e45572376248cee590241d33442.mp4";

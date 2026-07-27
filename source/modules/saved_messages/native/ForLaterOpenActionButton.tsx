@@ -1,9 +1,9 @@
-// Module ID: 15188
-// Function ID: 115673
+// Module ID: 15201
+// Function ID: 115722
 // Name: BadgedIcon
-// Dependencies: [31, 27, 9489, 33, 7909, 15189, 4131, 689, 4067, 3835, 4549, 9490, 4095, 9893, 566, 9493, 6145, 6147, 9874, 6625, 1212, 2]
+// Dependencies: [31, 27, 9489, 33, 7909, 15202, 4131, 689, 4067, 3835, 4549, 9490, 4095, 9893, 566, 9493, 6145, 6147, 9874, 6625, 1212, 2]
 
-// Module 15188 (BadgedIcon)
+// Module 15201 (BadgedIcon)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

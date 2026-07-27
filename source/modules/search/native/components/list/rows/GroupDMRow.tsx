@@ -1,10 +1,10 @@
-// Module ID: 15404
-// Function ID: 117612
+// Module ID: 15417
+// Function ID: 117661
 // Name: GroupDMRow
-// Dependencies: [31, 33, 4321, 9026, 1273, 9027, 4127, 15403, 2]
+// Dependencies: [31, 33, 4321, 9026, 1273, 9027, 4127, 15416, 2]
 // Exports: default
 
-// Module 15404 (GroupDMRow)
+// Module 15417 (GroupDMRow)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -49,5 +49,5 @@ export default function GroupDMRow(channel) {
   obj.trailing = trailing;
   obj.accessibilityActions = accessibilityActions;
   obj.onAccessibilityAction = onAccessibilityAction;
-  return jsx(channel(15403).SearchListRow, {});
+  return jsx(channel(15416).SearchListRow, {});
 };

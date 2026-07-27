@@ -1,5 +1,5 @@
 // Module ID: 8261
-// Function ID: 66382
+// Function ID: 66383
 // Name: getNextShownUpcomingEventNoticeType
 // Dependencies: [1354, 3713, 21, 2]
 // Exports: getNextShownUpcomingEventNoticeType

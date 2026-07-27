@@ -1,5 +1,5 @@
 // Module ID: 7286
-// Function ID: 60164
+// Function ID: 60165
 // Name: NitroWishlistTileAbstractUI
 // Dependencies: [33, 5085, 7287, 2]
 // Exports: NitroWishlistTileAbstractUI

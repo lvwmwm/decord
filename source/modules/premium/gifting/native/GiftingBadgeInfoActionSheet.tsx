@@ -1,5 +1,5 @@
 // Module ID: 9643
-// Function ID: 75200
+// Function ID: 75201
 // Name: GiftingBadgeInfoActionSheet
 // Dependencies: [31, 27, 4123, 8047, 653, 33, 4131, 689, 1557, 566, 8044, 675, 5187, 4127, 1212, 2295, 9644, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 16352
-// Function ID: 127370
+// Module ID: 16364
+// Function ID: 127417
 // Name: areTypesInSameSection
-// Dependencies: [1352, 653, 11448, 5072, 2]
+// Dependencies: [1352, 653, 11449, 5072, 2]
 // Exports: getDnDUpdates, getDropData
 
-// Module 16352 (areTypesInSameSection)
+// Module 16364 (areTypesInSameSection)
 import _callSuper from "_callSuper";
 import { ChannelTypes } from "ME";
 

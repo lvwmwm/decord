@@ -1,5 +1,5 @@
 // Module ID: 3485
-// Function ID: 26894
+// Function ID: 26895
 // Name: getMinutes
 // Dependencies: [3210, 3211]
 // Exports: default

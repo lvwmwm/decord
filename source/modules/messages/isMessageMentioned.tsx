@@ -1,5 +1,5 @@
 // Module ID: 4366
-// Function ID: 38714
+// Function ID: 38715
 // Name: isMentioned
 // Dependencies: [1348, 1918, 1838, 2]
 // Exports: default, isRawMessageMentioned

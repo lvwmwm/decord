@@ -1,5 +1,5 @@
 // Module ID: 5808
-// Function ID: 51028
+// Function ID: 51029
 // Name: GameServerHostingBannerBlockRecord
 // Dependencies: [6, 7, 5801, 2]
 

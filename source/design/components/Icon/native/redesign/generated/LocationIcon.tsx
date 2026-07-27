@@ -1,5 +1,5 @@
 // Module ID: 8189
-// Function ID: 65651
+// Function ID: 65652
 // Name: LocationIcon
 // Dependencies: [31, 33, 689, 3834, 8190, 2]
 // Exports: LocationIcon

@@ -1,10 +1,10 @@
-// Module ID: 15060
-// Function ID: 114727
+// Module ID: 15072
+// Function ID: 114773
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [31, 4123, 1838, 4019, 653, 1345, 482, 33, 4131, 689, 566, 4067, 4038, 11541, 11523, 15061, 11508, 11549, 1212, 2231, 11551, 15062, 11548, 4022, 15058, 15063, 15064, 11578, 15065, 8368, 2]
+// Dependencies: [31, 4123, 1838, 4019, 653, 1345, 482, 33, 4131, 689, 566, 4067, 4038, 11542, 11524, 15073, 11509, 11550, 1212, 2231, 11552, 15074, 11549, 4022, 15070, 15075, 15076, 11579, 15077, 8368, 2]
 // Exports: default
 
-// Module 15060 (useGuildPowerupsCoachmark)
+// Module 15072 (useGuildPowerupsCoachmark)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";

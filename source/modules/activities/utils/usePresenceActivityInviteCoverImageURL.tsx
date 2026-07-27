@@ -1,10 +1,10 @@
-// Module ID: 12315
-// Function ID: 95946
+// Module ID: 12316
+// Function ID: 95951
 // Name: _getPresenceActivityInviteCoverImageURL
-// Dependencies: [31, 12316, 1825, 7856, 566, 12317, 2]
+// Dependencies: [31, 12317, 1825, 7856, 566, 12318, 2]
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
-// Module 12315 (_getPresenceActivityInviteCoverImageURL)
+// Module 12316 (_getPresenceActivityInviteCoverImageURL)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -74,8 +74,8 @@ export const getPresenceActivityInviteCoverImageURL = function getPresenceActivi
   const imageURL = tmp.imageURL;
   if (tmp.cachedImageURL !== imageURL) {
     obj = { messageId, coverImageURL: imageURL };
-    importAll(12317).setCoverImageURL(obj);
-    const obj2 = importAll(12317);
+    importAll(12318).setCoverImageURL(obj);
+    const obj2 = importAll(12318);
   }
   return imageURL;
 };

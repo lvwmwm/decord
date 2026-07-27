@@ -1,5 +1,5 @@
 // Module ID: 8034
-// Function ID: 63917
+// Function ID: 63918
 // Name: scaleProfileFrame
 // Dependencies: [2]
 // Exports: default

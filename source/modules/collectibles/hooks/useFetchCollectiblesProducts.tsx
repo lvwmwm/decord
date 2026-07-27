@@ -1,10 +1,10 @@
-// Module ID: 11853
-// Function ID: 91854
+// Module ID: 11854
+// Function ID: 91859
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 31, 4176, 5770, 653, 624, 1877, 5769, 2]
 // Exports: useFetchCollectiblesProducts
 
-// Module 11853 (_createForOfIteratorHelperLoose)
+// Module 11854 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

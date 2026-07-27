@@ -1,8 +1,8 @@
-// Module ID: 11984
-// Function ID: 92613
+// Module ID: 11985
+// Function ID: 92618
 // Dependencies: [653, 507, 2]
 
-// Module 11984
+// Module 11985
 import { Endpoints } from "ME";
 
 const result = require("set").fileFinishedImporting("actions/NoteActionCreators.tsx");

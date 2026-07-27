@@ -1,5 +1,5 @@
 // Module ID: 6356
-// Function ID: 57157
+// Function ID: 57158
 // Name: normalize
 // Dependencies: [57, 6357, 6317, 6318, 6314]
 // Exports: normalizeUrlToBase

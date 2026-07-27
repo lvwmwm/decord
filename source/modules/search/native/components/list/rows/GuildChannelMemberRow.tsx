@@ -1,10 +1,10 @@
-// Module ID: 15429
-// Function ID: 117779
+// Module ID: 15442
+// Function ID: 117828
 // Name: GuildChannelMemberRow
 // Dependencies: [31, 33, 8761, 2]
 // Exports: default
 
-// Module 15429 (GuildChannelMemberRow)
+// Module 15442 (GuildChannelMemberRow)
 import "result";
 import { jsx } from "jsxProd";
 

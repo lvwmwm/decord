@@ -1,5 +1,5 @@
 // Module ID: 3386
-// Function ID: 26557
+// Function ID: 26558
 // Name: compareAsc
 // Dependencies: [3210, 3211]
 // Exports: default

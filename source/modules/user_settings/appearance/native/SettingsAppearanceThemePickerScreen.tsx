@@ -1,10 +1,10 @@
-// Module ID: 14216
-// Function ID: 109358
+// Module ID: 14217
+// Function ID: 109363
 // Name: getThemeOverride
-// Dependencies: [57, 31, 27, 3943, 1322, 1279, 1278, 1280, 1281, 482, 33, 4131, 689, 477, 4131, 1212, 14217, 10318, 14219, 1450, 624, 4064, 1324, 1282, 3945, 3841, 5450, 14133, 1457, 5462, 5482, 5094, 8162, 3992, 3975, 3942, 4132, 4135, 3843, 9057, 4127, 4661, 5093, 14134, 14221, 8687, 14227, 14239, 14248, 5121, 6622, 2]
+// Dependencies: [57, 31, 27, 3943, 1322, 1279, 1278, 1280, 1281, 482, 33, 4131, 689, 477, 4131, 1212, 14218, 10319, 14220, 1450, 624, 4064, 1324, 1282, 3945, 3841, 5450, 14134, 1457, 5462, 5482, 5094, 8162, 3992, 3975, 3942, 4132, 4135, 3843, 9057, 4127, 4661, 5093, 14135, 14222, 8687, 14228, 14240, 14249, 5121, 6622, 2]
 // Exports: default
 
-// Module 14216 (getThemeOverride)
+// Module 14217 (getThemeOverride)
 import _slicedToArray from "_slicedToArray";
 import Background from "Background";
 import { View } from "getThemeNameForAnalytics";
@@ -114,21 +114,21 @@ function getSegmentedControlItems() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.K2sFfo);
   obj.id = ThemeTypes.LIGHT;
-  obj.icon = callback(require(14217) /* ThemeLightIcon */.ThemeLightIcon, {});
+  obj.icon = callback(require(14218) /* ThemeLightIcon */.ThemeLightIcon, {});
   obj.page = null;
   const items = [obj, , ];
   obj = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl2.string(require(1212) /* getSystemLocale */.t.b8Cei3);
   obj.id = ThemeTypes.DARKER;
-  obj.icon = callback(require(10318) /* ThemeDarkIcon */.ThemeDarkIcon, {});
+  obj.icon = callback(require(10319) /* ThemeDarkIcon */.ThemeDarkIcon, {});
   obj.page = null;
   items[1] = obj;
   obj = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl3.string(require(1212) /* getSystemLocale */.t.pQwSpQ);
   obj.id = ThemeTypes.MIDNIGHT;
-  obj.icon = callback(require(14219) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
+  obj.icon = callback(require(14220) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
   obj.page = null;
   items[2] = obj;
   return items;

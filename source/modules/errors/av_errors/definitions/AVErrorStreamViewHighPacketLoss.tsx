@@ -1,9 +1,9 @@
-// Module ID: 16590
-// Function ID: 129458
+// Module ID: 16602
+// Function ID: 129505
 // Name: AVErrorStreamViewHighPacketLossDefinition
-// Dependencies: [4150, 1194, 4217, 16589, 4195, 8784, 16586, 2]
+// Dependencies: [4150, 1194, 4217, 16601, 4195, 8784, 16598, 2]
 
-// Module 16590 (AVErrorStreamViewHighPacketLossDefinition)
+// Module 16602 (AVErrorStreamViewHighPacketLossDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

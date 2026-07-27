@@ -1,5 +1,5 @@
 // Module ID: 6009
-// Function ID: 53597
+// Function ID: 53598
 // Name: canReportUser
 // Dependencies: [1348, 4052, 3759, 1850, 653, 2]
 // Exports: canDeleteAndReportMessage

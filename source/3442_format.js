@@ -1,5 +1,5 @@
 // Module ID: 3442
-// Function ID: 26722
+// Function ID: 26723
 // Name: format
 // Dependencies: [3392, 3443, 3210, 3444, 3455, 3373, 3214, 3211, 3456, 3215, 3457]
 // Exports: default

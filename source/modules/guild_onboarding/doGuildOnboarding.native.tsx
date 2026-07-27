@@ -1,5 +1,5 @@
 // Module ID: 5054
-// Function ID: 43738
+// Function ID: 43739
 // Name: getBaseAnimationData
 // Dependencies: [5, 27, 3948, 5055, 5056, 653, 5057, 4099, 4338, 5049, 5058, 1392, 1825, 5062, 5063, 5064, 5081, 1935, 1198, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild

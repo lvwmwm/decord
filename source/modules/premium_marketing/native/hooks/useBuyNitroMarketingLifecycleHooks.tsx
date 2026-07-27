@@ -1,5 +1,5 @@
 // Module ID: 6505
-// Function ID: 58129
+// Function ID: 58130
 // Name: useBuyNitroMarketingLifecycleHooks
 // Dependencies: [31, 6171, 1345, 4131, 689, 6506, 6510, 3947, 1334, 1336, 6511, 2]
 // Exports: useBuyNitroMarketingLifecycleHooks

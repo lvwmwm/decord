@@ -1,5 +1,5 @@
 // Module ID: 9229
-// Function ID: 72326
+// Function ID: 72327
 // Name: ThumbsDownIcon
 // Dependencies: [31, 33, 689, 3834, 9230, 2]
 // Exports: ThumbsDownIcon

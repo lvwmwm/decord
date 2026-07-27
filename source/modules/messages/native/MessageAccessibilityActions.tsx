@@ -1,5 +1,5 @@
 // Module ID: 7690
-// Function ID: 61496
+// Function ID: 61497
 // Name: getQuickReactionLabel
 // Dependencies: [4947, 3759, 653, 3804, 7691, 1212, 7698, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel

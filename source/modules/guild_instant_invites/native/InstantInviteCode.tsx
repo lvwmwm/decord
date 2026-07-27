@@ -1,5 +1,5 @@
 // Module ID: 10140
-// Function ID: 78461
+// Function ID: 78462
 // Name: InstantInviteDetails
 // Dependencies: [31, 27, 1352, 3768, 1850, 33, 4131, 689, 4594, 4639, 4542, 4127, 4321, 4095, 1212, 10128, 2]
 // Exports: default

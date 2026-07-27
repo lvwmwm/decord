@@ -1,5 +1,5 @@
 // Module ID: 9737
-// Function ID: 75841
+// Function ID: 75842
 // Name: getCurrentUserProfile
 // Dependencies: [1850, 5630, 2]
 // Exports: default

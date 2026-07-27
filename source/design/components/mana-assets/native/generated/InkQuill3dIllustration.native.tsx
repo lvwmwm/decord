@@ -1,5 +1,5 @@
 // Module ID: 7190
-// Function ID: 60020
+// Function ID: 60021
 // Name: InkQuill3dIllustration
 // Dependencies: [33, 5085, 7191, 2]
 // Exports: InkQuill3dIllustration

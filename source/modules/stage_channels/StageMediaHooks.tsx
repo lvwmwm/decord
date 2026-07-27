@@ -1,5 +1,5 @@
 // Module ID: 4951
-// Function ID: 42453
+// Function ID: 42454
 // Name: useStageHasStream
 // Dependencies: [1838, 4147, 4952, 566, 4958, 2]
 // Exports: getStageHasMedia, isStageVideoEnabled, useIsStageVideoEnabled, useStageHasMedia

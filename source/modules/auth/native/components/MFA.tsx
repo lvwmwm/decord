@@ -1,10 +1,10 @@
-// Module ID: 14819
-// Function ID: 113060
+// Module ID: 14820
+// Function ID: 113065
 // Name: statesAreEqual
-// Dependencies: [31, 1194, 33, 22, 1456, 9125, 566, 5588, 14696, 478, 689, 2]
+// Dependencies: [31, 1194, 33, 22, 1456, 9125, 566, 5588, 14697, 478, 689, 2]
 // Exports: default
 
-// Module 14819 (statesAreEqual)
+// Module 14820 (statesAreEqual)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -65,7 +65,7 @@ export default function ConnectedMFA() {
       tmp14 = obj;
     }
     obj.headerRightContainerStyle = tmp14;
-    return jsx(isMultiAccount(14696).MFAModal, obj);
+    return jsx(isMultiAccount(14697).MFAModal, obj);
   } else {
     obj1 = {};
     const obj6 = isMultiAccount(478);

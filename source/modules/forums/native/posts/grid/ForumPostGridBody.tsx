@@ -1,10 +1,10 @@
-// Module ID: 11120
-// Function ID: 86525
+// Module ID: 11121
+// Function ID: 86530
 // Name: GIFIcon
-// Dependencies: [57, 31, 27, 33, 4131, 689, 1273, 11121, 11122, 9810, 4127, 1450, 1327, 11123, 5999, 8130, 11127, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 1273, 11122, 11123, 9810, 4127, 1450, 1327, 11124, 5999, 8130, 11128, 2]
 // Exports: default
 
-// Module 11120 (GIFIcon)
+// Module 11121 (GIFIcon)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -15,11 +15,11 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function GIFIcon() {
-  const obj = { size: require(1273) /* Button */.Icon.Sizes.CUSTOM, source: importDefault(11121), disableColor: true, style: _createForOfIteratorHelperLoose().gifIcon };
+  const obj = { size: require(1273) /* Button */.Icon.Sizes.CUSTOM, source: importDefault(11122), disableColor: true, style: _createForOfIteratorHelperLoose().gifIcon };
   return callback2(require(1273) /* Button */.Icon, obj);
 }
 function PlayIcon() {
-  const obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL_20, source: importDefault(11122), disableColor: true };
+  const obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL_20, source: importDefault(11123), disableColor: true };
   return callback2(require(1273) /* Button */.Icon, obj);
 }
 function ExtraMediaIcon(extraMediaCount) {
@@ -167,7 +167,7 @@ export default function ForumPostGridBody(thread) {
   if (tmp3) {
     const obj1 = { style: tmp.footerLeftContainer };
     const obj2 = { appliedTags: first, additionalTagsCount: tmp2[1], hasUnreads: thread.hasUnreads };
-    obj1.children = callback2(thread(11127).ForumPostAppliedTagPills, obj2);
+    obj1.children = callback2(thread(11128).ForumPostAppliedTagPills, obj2);
     tmp3 = callback2(View, obj1);
   }
   items4[1] = tmp3;

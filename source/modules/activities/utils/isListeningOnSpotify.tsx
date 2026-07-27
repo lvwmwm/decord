@@ -1,5 +1,5 @@
 // Module ID: 9011
-// Function ID: 70905
+// Function ID: 70906
 // Name: isListeningOnSpotify
 // Dependencies: [653, 8113, 4815, 2]
 // Exports: default

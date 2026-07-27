@@ -1,10 +1,10 @@
-// Module ID: 11425
-// Function ID: 88843
+// Module ID: 11426
+// Function ID: 88848
 // Name: useGameMentionSearchBarHeight
 // Dependencies: [27, 9849, 2]
 // Exports: default
 
-// Module 11425 (useGameMentionSearchBarHeight)
+// Module 11426 (useGameMentionSearchBarHeight)
 import { StyleSheet } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/game_mentions/hooks/native/useGameMentionSearchBarHeight.tsx");

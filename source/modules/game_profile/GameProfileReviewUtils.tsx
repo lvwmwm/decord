@@ -1,5 +1,5 @@
 // Module ID: 8455
-// Function ID: 67383
+// Function ID: 67384
 // Name: getSteamReviewScoreDescriptionColor
 // Dependencies: [4165, 1212, 2]
 // Exports: canShowLocalizedSteamReview, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl

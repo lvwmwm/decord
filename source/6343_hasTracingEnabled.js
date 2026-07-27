@@ -1,5 +1,5 @@
 // Module ID: 6343
-// Function ID: 57031
+// Function ID: 57032
 // Name: hasTracingEnabled
 // Dependencies: [6338]
 

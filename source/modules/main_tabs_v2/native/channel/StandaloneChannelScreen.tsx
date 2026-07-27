@@ -1,15 +1,15 @@
-// Module ID: 15316
-// Function ID: 116885
+// Module ID: 15329
+// Function ID: 116934
 // Name: Header
-// Dependencies: [31, 27, 9051, 653, 1355, 33, 4131, 689, 1457, 1557, 8756, 8936, 1212, 3982, 9231, 9052, 5449, 10075, 9059, 10057, 4575, 5605, 4067, 1324, 8105, 10087, 3985, 1273, 4663, 15317, 15334, 15352, 15369, 10348, 15373, 2]
+// Dependencies: [31, 27, 9051, 653, 1355, 33, 4131, 689, 1457, 1557, 8756, 8936, 1212, 3982, 9231, 9052, 5449, 10075, 9059, 10057, 4575, 5605, 4067, 1324, 8105, 10087, 3985, 1273, 4663, 15330, 15347, 15365, 15382, 10349, 15386, 2]
 
-// Module 15316 (Header)
+// Module 15329 (Header)
 import importAllResult from "StandaloneMembersView";
 import get_ActivityIndicator from "Button";
 import MIN_HEADER_HEIGHT from "MIN_HEADER_HEIGHT";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
-import jsxProd from "module_10348";
+import jsxProd from "module_10349";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let MIDNIGHT_BORDER_WIDTH;
@@ -277,7 +277,7 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
             let tmp36 = null;
             if (canSeeOnboardingHome) {
               obj2 = { guildId };
-              tmp36 = callback(importDefault(15334), obj2);
+              tmp36 = callback(importDefault(15347), obj2);
             }
             obj1.children = tmp36;
             items2[1] = callback(chatInputFloating, obj1);
@@ -285,12 +285,12 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
             return closure_12(chatInputFloating, obj);
           } else if (channelId === StaticChannelRoute.MEMBER_SAFETY) {
             obj3 = { guildId };
-            return callback(importDefault(15352), obj3);
+            return callback(importDefault(15365), obj3);
           } else if (showCreateThread) {
             obj4 = { style: memo1 };
             const items3 = [tmp52, ];
             obj5 = { channelId, screenIndex };
-            items3[1] = callback(frame(15369).CreateThreadView, obj5);
+            items3[1] = callback(frame(15382).CreateThreadView, obj5);
             obj4.children = items3;
             return tmp55(chatInputFloating, obj4);
           } else {
@@ -298,13 +298,13 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
             const items4 = [tmp52, ];
             const obj7 = { style: memo1 };
             const obj8 = { guildId, channelId, chatInputRef: ref, screenIndex };
-            obj7.children = callback(importDefault(10348), obj8);
+            obj7.children = callback(importDefault(10349), obj8);
             items4[1] = callback(chatInputFloating, obj7);
             obj6.children = items4;
             const tmp55Result = tmp55(closure_13, obj6);
             if (isSwipeToMemberListEnabled) {
               const obj9 = { style: memo, channelId, screenIndex, isBackEnabled: tmp11, children: tmp55Result };
-              let tmp20Result = tmp20(importDefault(15373), obj9);
+              let tmp20Result = tmp20(importDefault(15386), obj9);
             } else {
               const obj10 = {
                 style: memo,
@@ -333,7 +333,7 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
         tmp49 = channelId;
       }
       obj14.gatedChannelId = tmp49;
-      items6[1] = callback(importDefault(15317), obj14);
+      items6[1] = callback(importDefault(15330), obj14);
       obj12.children = items6;
       items5[1] = closure_12(chatInputFloating, obj12);
       obj11.children = items5;

@@ -1,5 +1,5 @@
 // Module ID: 8694
-// Function ID: 69000
+// Function ID: 69001
 // Name: useVirtualCurrencyData
 // Dependencies: [31, 5781, 8651, 2]
 // Exports: useVirtualCurrencyData

@@ -1,10 +1,10 @@
-// Module ID: 12626
-// Function ID: 97588
+// Module ID: 12627
+// Function ID: 97593
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 5, 6, 7, 15, 17, 18, 683, 653, 3, 12627, 12629, 664, 561, 12630, 12632, 12634, 12640, 12642, 12661, 20, 14, 4125, 12639, 477, 507, 675, 44, 566, 5882, 5886, 5889, 5887, 12662, 12663, 12645, 644, 5839, 5844, 1184, 686, 2]
+// Dependencies: [57, 5, 6, 7, 15, 17, 18, 683, 653, 3, 12628, 12630, 664, 561, 12631, 12633, 12635, 12641, 12643, 12662, 20, 14, 4125, 12640, 477, 507, 675, 44, 566, 5882, 5886, 5889, 5887, 12663, 12664, 12646, 644, 5839, 5844, 1184, 686, 2]
 // Exports: setAccountSwitchUserId
 
-// Module 12626 (_isNativeReflectConstruct)
+// Module 12627 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";

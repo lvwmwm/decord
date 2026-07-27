@@ -1,5 +1,5 @@
 // Module ID: 8036
-// Function ID: 63929
+// Function ID: 63930
 // Name: PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO
 // Dependencies: [8026, 2]
 

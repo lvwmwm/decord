@@ -1,10 +1,10 @@
-// Module ID: 10986
-// Function ID: 85409
+// Module ID: 10987
+// Function ID: 85414
 // Name: BanConfirmModal
-// Dependencies: [31, 33, 9038, 9040, 1212, 10979, 2]
+// Dependencies: [31, 33, 9038, 9040, 1212, 10980, 2]
 // Exports: default
 
-// Module 10986 (BanConfirmModal)
+// Module 10987 (BanConfirmModal)
 import "result";
 import { jsx } from "jsxProd";
 

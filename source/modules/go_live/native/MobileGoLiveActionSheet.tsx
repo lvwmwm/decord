@@ -1,10 +1,10 @@
-// Module ID: 10683
-// Function ID: 83184
+// Module ID: 10684
+// Function ID: 83189
 // Name: ApplicationStreamPresets
-// Dependencies: [57, 31, 4221, 4150, 1348, 1838, 1907, 1850, 4186, 653, 4192, 33, 4131, 689, 478, 4099, 10683, 1935, 480, 566, 10684, 10689, 5462, 5482, 3992, 4310, 8770, 9140, 1212, 2069, 10690, 10692, 5515, 4127, 3834, 9338, 5187, 5189, 5121, 5501, 7596, 6137, 668, 7595, 9336, 6147, 8365, 5502, 4544, 10682, 2]
+// Dependencies: [57, 31, 4221, 4150, 1348, 1838, 1907, 1850, 4186, 653, 4192, 33, 4131, 689, 478, 4099, 10684, 1935, 480, 566, 10685, 10690, 5462, 5482, 3992, 4310, 8770, 9140, 1212, 2069, 10691, 10693, 5515, 4127, 3834, 9338, 5187, 5189, 5121, 5501, 7596, 6137, 668, 7595, 9336, 6147, 8365, 5502, 4544, 10683, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 10683 (ApplicationStreamPresets)
+// Module 10684 (ApplicationStreamPresets)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "ImageSparkleIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -317,5 +317,5 @@ export const showMobileGoLiveActionSheet = function showMobileGoLiveActionSheet(
   obj = { impressionName: require(480) /* isThrottled */.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET };
   obj = { location_stack: analyticsLocations };
   obj.impressionProperties = obj;
-  obj.openLazy(require(1935) /* maybeLoadBundle */(10683, dependencyMap.paths), "MobileGoLiveActionSheet", obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(10684, dependencyMap.paths), "MobileGoLiveActionSheet", obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 16286
-// Function ID: 126608
+// Module ID: 16298
+// Function ID: 126655
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4992, 5059, 4334, 1353, 5036, 16285, 1348, 1911, 3768, 1850, 16284, 653, 1355, 10990, 1354, 3, 4207, 1212, 6652, 21, 16287, 483, 1360, 4321, 1882, 24, 665, 8288, 16288, 3801, 3713, 2]
+// Dependencies: [4992, 5059, 4334, 1353, 5036, 16297, 1348, 1911, 3768, 1850, 16296, 653, 1355, 10991, 1354, 3, 4207, 1212, 6652, 21, 16299, 483, 1360, 4321, 1882, 24, 665, 8288, 16300, 3801, 3713, 2]
 // Exports: checkChangesToRender, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, transformLogs
 
-// Module 16286 (_createForOfIteratorHelperLoose)
+// Module 16298 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -1773,9 +1773,9 @@ export const getChangeTitle = function getChangeTitle(log) {
                                                                                                                                             const newValue = found2.newValue;
                                                                                                                                             found = require;
                                                                                                                                             found = dependencyMap;
-                                                                                                                                            if (require(16287) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
+                                                                                                                                            if (require(16299) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
                                                                                                                                               return require(1212) /* getSystemLocale */.t["PyEa+J"];
-                                                                                                                                            } else if (require(16287) /* set */.GuildFeedItemTypes.FORUM_POST === newValue) {
+                                                                                                                                            } else if (require(16299) /* set */.GuildFeedItemTypes.FORUM_POST === newValue) {
                                                                                                                                               return require(1212) /* getSystemLocale */.t.hCuAb1;
                                                                                                                                             } else {
                                                                                                                                               return require(1212) /* getSystemLocale */.t["UZ+U3A"];

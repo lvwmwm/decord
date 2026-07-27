@@ -1,7 +1,7 @@
 // Module ID: 6270
-// Function ID: 56323
+// Function ID: 56324
 // Name: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING
-// Dependencies: [57, 31, 27, 1850, 3782, 3783, 5821, 6271, 5619, 653, 1852, 33, 4131, 6272, 1557, 5462, 5482, 6273, 4560, 675, 566, 1456, 1390, 6236, 6234, 686, 6274, 5822, 6188, 6203, 6187, 6446, 6447, 6448, 6449, 3777, 6452, 6454, 6494, 6501, 6502, 9254, 12376, 12428, 6301, 477, 2]
+// Dependencies: [57, 31, 27, 1850, 3782, 3783, 5821, 6271, 5619, 653, 1852, 33, 4131, 6272, 1557, 5462, 5482, 6273, 4560, 675, 566, 1456, 1390, 6236, 6234, 686, 6274, 5822, 6188, 6203, 6187, 6446, 6447, 6448, 6449, 3777, 6452, 6454, 6494, 6501, 6502, 9254, 12377, 12429, 6301, 477, 2]
 // Exports: default
 
 // Module 6270 (USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING)
@@ -224,7 +224,7 @@ export default function UserSettingsPremium(applicationId) {
       if (hasTier2Premium) {
         if (null == premiumFeatureCardOrder) {
           obj6 = { onClose };
-          tmp44Result = jsx(importDefault(12376), { onClose });
+          tmp44Result = jsx(importDefault(12377), { onClose });
         }
       }
       let TIER_2_LEADING = premiumFeatureCardOrder;
@@ -298,9 +298,9 @@ export default function UserSettingsPremium(applicationId) {
       obj7.onPaymentSuccess = onPaymentSuccess;
       obj7.onPaymentDismiss = onPaymentDismiss;
       obj7.isFullScreenPresentation = isFullScreenPresentation;
-      tmp44Result = jsx(importDefault(12428), { applicationId, userHasSubscription: tmp23 });
+      tmp44Result = jsx(importDefault(12429), { applicationId, userHasSubscription: tmp23 });
       const tmp44 = jsx;
-      const tmp47 = importDefault(12428);
+      const tmp47 = importDefault(12429);
     }
     obj4.children = tmp44Result;
     obj2.children = jsx(applicationId(5462).AnalyticsLocationProvider, { value: analyticsLocations });

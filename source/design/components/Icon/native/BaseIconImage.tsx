@@ -1,5 +1,5 @@
 // Module ID: 3834
-// Function ID: 32005
+// Function ID: 32006
 // Name: BaseIconImage
 // Dependencies: [31, 27, 33, 3835, 2]
 // Exports: BaseIconImage

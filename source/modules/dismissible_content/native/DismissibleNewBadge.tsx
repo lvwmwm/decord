@@ -1,10 +1,10 @@
-// Module ID: 14417
-// Function ID: 110243
+// Module ID: 14418
+// Function ID: 110248
 // Name: DismissibleNewTag
 // Dependencies: [31, 6173, 33, 4131, 689, 9602, 477, 1273, 4555, 668, 2]
 // Exports: default
 
-// Module 14417 (DismissibleNewTag)
+// Module 14418 (DismissibleNewTag)
 import "result";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";

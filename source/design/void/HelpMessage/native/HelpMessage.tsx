@@ -1,10 +1,10 @@
-// Module ID: 13067
-// Function ID: 101028
+// Module ID: 13068
+// Function ID: 101033
 // Name: getIcon
 // Dependencies: [31, 27, 33, 4131, 689, 665, 6673, 4087, 6679, 4092, 4127, 2]
 // Exports: default
 
-// Module 13067 (getIcon)
+// Module 13068 (getIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

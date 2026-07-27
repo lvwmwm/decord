@@ -1,5 +1,5 @@
 // Module ID: 9855
-// Function ID: 76413
+// Function ID: 76414
 // Name: ShareFooterLayout
 // Dependencies: [31, 27, 33, 4131, 689, 5159, 3992, 4543, 4547, 4127, 2]
 // Exports: default

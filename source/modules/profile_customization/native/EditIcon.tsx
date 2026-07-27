@@ -1,10 +1,10 @@
-// Module ID: 13645
-// Function ID: 104863
+// Module ID: 13646
+// Function ID: 104868
 // Name: EditIcon
 // Dependencies: [31, 27, 33, 4131, 689, 9034, 2]
 // Exports: default
 
-// Module 13645 (EditIcon)
+// Module 13646 (EditIcon)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

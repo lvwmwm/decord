@@ -1,5 +1,5 @@
 // Module ID: 8245
-// Function ID: 66247
+// Function ID: 66248
 // Name: canUseMobileServerTagSettings
 // Dependencies: [1838, 3759, 653, 8246, 7881, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty

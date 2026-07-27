@@ -1,10 +1,10 @@
-// Module ID: 13690
-// Function ID: 105141
+// Module ID: 13691
+// Function ID: 105146
 // Name: PasskeyUpsellView
-// Dependencies: [57, 31, 27, 13686, 653, 1345, 33, 4131, 689, 1456, 1212, 13691, 13692, 5087, 1921, 5121, 13695, 4127, 477, 4544, 9129, 2]
+// Dependencies: [57, 31, 27, 13687, 653, 1345, 33, 4131, 689, 1456, 1212, 13692, 13693, 5087, 1921, 5121, 13696, 4127, 477, 4544, 9129, 2]
 // Exports: default
 
-// Module 13690 (PasskeyUpsellView)
+// Module 13691 (PasskeyUpsellView)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -74,7 +74,7 @@ export default function PasskeyUpsellView() {
   obj = { bottom: true, style: tmp2.container };
   obj = { contentContainerStyle: tmp2.scrollViewContainer };
   obj1 = { style: tmp2.headerContainer };
-  const obj2 = { source: importDefault(13695), style: tmp2.headerImage };
+  const obj2 = { source: importDefault(13696), style: tmp2.headerImage };
   const items1 = [callback(closure_6, obj2), , ];
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.headerText };
   let intl = navigation(1212).intl;

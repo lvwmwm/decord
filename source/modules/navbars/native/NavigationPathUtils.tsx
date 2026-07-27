@@ -1,10 +1,10 @@
-// Module ID: 11809
-// Function ID: 91666
+// Module ID: 11810
+// Function ID: 91671
 // Name: getSelectedSpecialNavigationPath
 // Dependencies: [653, 3959, 2]
 // Exports: useSelectedSpecialNavigationPath
 
-// Module 11809 (getSelectedSpecialNavigationPath)
+// Module 11810 (getSelectedSpecialNavigationPath)
 import { Routes } from "ME";
 
 function getSelectedSpecialNavigationPath(pathname) {

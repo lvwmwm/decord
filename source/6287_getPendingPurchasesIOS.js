@@ -1,5 +1,5 @@
 // Module ID: 6287
-// Function ID: 56586
+// Function ID: 56587
 // Name: getPendingPurchasesIOS
 // Dependencies: [5, 27, 6279]
 // Exports: buyPromotedProductIOS, clearProductsIOS, clearTransactionIOS, deepLinkToSubscriptionsIos, getPromotedProductIOS

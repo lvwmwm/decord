@@ -1,5 +1,5 @@
 // Module ID: 4282
-// Function ID: 37512
+// Function ID: 37513
 // Name: logger
 // Dependencies: [6, 7, 4192, 4, 4228, 2]
 

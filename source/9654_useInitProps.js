@@ -1,5 +1,5 @@
 // Module ID: 9654
-// Function ID: 75234
+// Function ID: 75235
 // Name: useInitProps
 // Dependencies: [31, 9655]
 // Exports: useInitProps

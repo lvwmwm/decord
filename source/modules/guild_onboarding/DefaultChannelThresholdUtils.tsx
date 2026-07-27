@@ -1,5 +1,5 @@
 // Module ID: 8217
-// Function ID: 65895
+// Function ID: 65896
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 1838, 5059, 5060, 653, 5058, 5066, 483, 4471, 1212, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete

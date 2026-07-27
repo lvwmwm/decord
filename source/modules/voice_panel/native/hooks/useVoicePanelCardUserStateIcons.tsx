@@ -1,10 +1,10 @@
-// Module ID: 15846
-// Function ID: 122380
+// Module ID: 15858
+// Function ID: 122427
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [31, 4203, 4147, 4149, 33, 9975, 8794, 624, 10748, 4228, 10705, 15115, 15797, 3832, 6673, 689, 1212, 2]
+// Dependencies: [31, 4203, 4147, 4149, 33, 9975, 8794, 624, 10749, 4228, 10706, 15127, 15809, 3832, 6673, 689, 1212, 2]
 // Exports: default
 
-// Module 15846 (useVoicePanelCardUserStateIcons)
+// Module 15858 (useVoicePanelCardUserStateIcons)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -65,16 +65,16 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (arg0 === stateFromStores.STREAM) {
     tmp9 = id;
   }
-  let tmp8 = importDefault(10748);
-  showTileVolumeIndicator = importDefault(10705).useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
+  let tmp8 = importDefault(10749);
+  showTileVolumeIndicator = importDefault(10706).useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = 0 === tmp8(tmp9, _require(4228).MediaEngineContextTypes.STREAM).effectiveVolume;
   }
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === stateFromStores.STREAM;
   }
-  let obj5 = importDefault(10705);
-  isRTCDisconnectedUIVisible = _require(15115).useIsRTCDisconnectedUIVisible(tmp, id);
+  let obj5 = importDefault(10706);
+  isRTCDisconnectedUIVisible = _require(15127).useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [setShowFloatingCTA];
   callback = setShowFloatingCTA.useCallback(() => {
 

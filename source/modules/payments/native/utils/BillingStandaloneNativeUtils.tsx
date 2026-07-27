@@ -1,5 +1,5 @@
 // Module ID: 6496
-// Function ID: 58075
+// Function ID: 58076
 // Name: emitMWRCSentryErrorOnFailure
 // Dependencies: [4114, 653, 3, 6497, 6498, 1553, 668, 3828, 2]
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp

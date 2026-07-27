@@ -1,5 +1,5 @@
 // Module ID: 4102
-// Function ID: 33970
+// Function ID: 33971
 // Name: useHaptics
 // Dependencies: [4103, 4104, 4106, 4108, 4109, 4107, 4110]
 

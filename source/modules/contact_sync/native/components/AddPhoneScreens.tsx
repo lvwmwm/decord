@@ -1,10 +1,10 @@
-// Module ID: 11729
-// Function ID: 91042
+// Module ID: 11730
+// Function ID: 91047
 // Name: AddPhoneScreen
-// Dependencies: [5, 57, 31, 27, 1850, 11703, 33, 4131, 5084, 689, 1456, 4127, 1212, 9166, 9167, 11702, 624, 5582, 44, 9191, 9161, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 11704, 33, 4131, 5084, 689, 1456, 4127, 1212, 9166, 9167, 11703, 624, 5582, 44, 9191, 9161, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 11729 (AddPhoneScreen)
+// Module 11730 (AddPhoneScreen)
 import initialValues from "initialValues";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

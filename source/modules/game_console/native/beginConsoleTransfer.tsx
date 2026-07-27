@@ -1,5 +1,5 @@
 // Module ID: 8970
-// Function ID: 70709
+// Function ID: 70710
 // Name: _beginConsoleTransfer
 // Dependencies: [5, 653, 8971, 8978, 4099, 8979, 1935, 480, 8982, 2]
 // Exports: beginConsoleTransfer

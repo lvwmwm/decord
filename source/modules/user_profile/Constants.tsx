@@ -1,5 +1,5 @@
 // Module ID: 8043
-// Function ID: 63956
+// Function ID: 63957
 // Name: USER_PROFILE_TOOLTIP_DELAY
 // Dependencies: [653, 8044, 2]
 // Exports: getBadgeAssetFromCDN, getBadgeName

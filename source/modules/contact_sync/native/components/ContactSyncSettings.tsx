@@ -1,10 +1,10 @@
-// Module ID: 13809
-// Function ID: 105874
+// Module ID: 13810
+// Function ID: 105879
 // Name: syncContacts
-// Dependencies: [5, 31, 1850, 11705, 653, 33, 11706, 3832, 1212, 9104, 11710, 675, 11702, 566, 3804, 1360, 7575, 4338, 13810, 1935, 2]
+// Dependencies: [5, 31, 1850, 11706, 653, 33, 11707, 3832, 1212, 9104, 11711, 675, 11703, 566, 3804, 1360, 7575, 4338, 13811, 1935, 2]
 // Exports: default
 
-// Module 13809 (syncContacts)
+// Module 13810 (syncContacts)
 import closure_3 from "jsxProd";
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,8 +45,8 @@ function handleSyncContacts(localAccount, phone, arg2) {
     obj.location = obj;
     obj.track(constants.OPEN_MODAL, obj);
     const obj1 = { page: "User Settings" };
-    require(11702) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, obj1);
-    const obj4 = require(11702) /* handleNameInputScreenOrSuggestions */;
+    require(11703) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, obj1);
+    const obj4 = require(11703) /* handleNameInputScreenOrSuggestions */;
   } else {
     updateFriendSync(localAccount, phone, arg2);
   }
@@ -57,7 +57,7 @@ function handleSyncContacts(localAccount, phone, arg2) {
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSettings.tsx");
 
 export default function ContactSyncSettings() {
-  let obj = contactSyncAccount(11706);
+  let obj = contactSyncAccount(11707);
   contactSyncAccount = obj.useContactSyncAccount();
   let obj1 = contactSyncAccount(566);
   const items = [_isNativeReflectConstruct];
@@ -70,7 +70,7 @@ export default function ContactSyncSettings() {
   if (null != stateFromStores) {
     isStaffResult = stateFromStores.isStaff();
   }
-  let obj3 = contactSyncAccount(11706);
+  let obj3 = contactSyncAccount(11707);
   const FriendDiscoverySettings = contactSyncAccount(3804).FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
   let obj4 = contactSyncAccount(1360);
@@ -85,7 +85,7 @@ export default function ContactSyncSettings() {
   let tmp10 = null;
   if (isStaffResult) {
     obj1 = {};
-    const obj2 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: contactSyncAccount(11706).adminDeleteContactSync };
+    const obj2 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: contactSyncAccount(11707).adminDeleteContactSync };
     const items1 = [callback2(contactSyncAccount(7575).FormSwitchRow, obj2), callback2(contactSyncAccount(7575).FormDivider, {})];
     obj1.children = items1;
     tmp10 = callback3(closure_11, obj1);
@@ -122,7 +122,7 @@ export default function ContactSyncSettings() {
   const items4 = [callback3(contactSyncAccount(7575).FormSection, obj), , , ];
   const obj7 = {};
   const intl4 = contactSyncAccount(1212).intl;
-  const obj8 = { onClick: contactSyncAccount(11706).handleOpenLearnMoreLink };
+  const obj8 = { onClick: contactSyncAccount(11707).handleOpenLearnMoreLink };
   obj7.children = intl4.format(contactSyncAccount(1212).t.BoR0dO, obj8);
   items4[1] = callback2(contactSyncAccount(7575).FormHint, obj7);
   const obj9 = {};

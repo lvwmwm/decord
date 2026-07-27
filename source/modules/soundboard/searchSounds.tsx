@@ -1,10 +1,10 @@
-// Module ID: 12567
-// Function ID: 97311
+// Module ID: 12568
+// Function ID: 97316
 // Name: trackSearchStart
-// Dependencies: [4992, 653, 574, 675, 3772, 5046, 10713, 2]
+// Dependencies: [4992, 653, 574, 675, 3772, 5046, 10714, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 12567 (trackSearchStart)
+// Module 12568 (trackSearchStart)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -104,8 +104,8 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
       }
       let result1 = sum6 > 0;
       if (result1) {
-        result1 = callback(10713).canUseSoundboardSound(closure_1, name, closure_2);
-        const obj4 = callback(10713);
+        result1 = callback(10714).canUseSoundboardSound(closure_1, name, closure_2);
+        const obj4 = callback(10714);
       }
       let sum7 = sum6;
       if (result1) {

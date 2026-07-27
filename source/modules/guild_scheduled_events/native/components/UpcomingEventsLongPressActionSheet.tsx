@@ -1,10 +1,10 @@
-// Module ID: 11411
-// Function ID: 88702
+// Module ID: 11412
+// Function ID: 88707
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [31, 27, 1838, 4326, 4327, 33, 4131, 566, 5498, 5186, 5513, 1212, 7575, 1273, 11412, 5070, 4099, 11413, 11414, 5079, 5074, 2]
+// Dependencies: [31, 27, 1838, 4326, 4327, 33, 4131, 566, 5498, 5186, 5513, 1212, 7575, 1273, 11413, 5070, 4099, 11414, 11415, 5079, 5074, 2]
 // Exports: default
 
-// Module 11411 (UpcomingEventsLongPressActionSheet)
+// Module 11412 (UpcomingEventsLongPressActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -42,7 +42,7 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
   obj.title = intl.string(guildId(1212).t.tlopTM);
   const items2 = [callback(guildId(5186).BottomSheetTitleHeader, obj), , ];
   const obj3 = {};
-  const obj4 = { source: stateFromStores1(11412) };
+  const obj4 = { source: stateFromStores1(11413) };
   obj3.leading = callback(guildId(1273).Icon, obj4);
   const obj5 = {};
   const intl2 = guildId(1212).intl;
@@ -57,9 +57,9 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
   const obj6 = {};
   const obj7 = {};
   if (stateFromStores1) {
-    let tmp9 = 11413;
+    let tmp9 = 11414;
   } else {
-    tmp9 = 11414;
+    tmp9 = 11415;
   }
   obj7.source = tmp6(tmp9);
   obj6.leading = callback(guildId(1273).Icon, obj7);

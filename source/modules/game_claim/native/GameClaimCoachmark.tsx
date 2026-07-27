@@ -1,10 +1,10 @@
-// Module ID: 15075
-// Function ID: 114886
+// Module ID: 15087
+// Function ID: 114932
 // Name: PX_8
-// Dependencies: [5, 31, 27, 653, 1345, 33, 689, 15076, 9849, 4548, 4131, 15077, 11995, 1212, 5166, 4661, 5119, 4127, 4544, 7562, 11749, 2]
+// Dependencies: [5, 31, 27, 653, 1345, 33, 689, 15088, 9849, 4548, 4131, 15089, 11996, 1212, 5166, 4661, 5119, 4127, 4544, 7562, 11750, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 15075 (PX_8)
+// Module 15087 (PX_8)
 import closure_3 from "jsxProd";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -39,15 +39,15 @@ const memoResult = importAllResult.memo((arg0) => {
   let require;
   ({ guild, markAsDismissed: require } = arg0);
   const tmp2 = callback4();
-  let obj = require(15077) /* fetchUnclaimedGames */;
+  let obj = require(15089) /* fetchUnclaimedGames */;
   const first = obj.useUnclaimedGameIdsForGuild(guild.id)[0];
   let tmp4 = null;
   if (null != first) {
     tmp4 = first;
   }
   const intl = require(1212) /* getSystemLocale */.intl;
-  const tmp5 = importDefault(11995);
-  const coverImageUrl = importDefault(11995)(tmp4, intl.string(require(1212) /* getSystemLocale */.t.VQq92a)).coverImageUrl;
+  const tmp5 = importDefault(11996);
+  const coverImageUrl = importDefault(11996)(tmp4, intl.string(require(1212) /* getSystemLocale */.t.VQq92a)).coverImageUrl;
   if (null == coverImageUrl) {
     return null;
   } else {
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo((arg0) => {
     };
     const items = [callback2(require(4661) /* PressableBase */.PressableOpacity, obj), , , , ];
     const obj1 = { imageSrc: coverImageUrl };
-    items[1] = callback2(importDefault(15076), obj1);
+    items[1] = callback2(importDefault(15088), obj1);
     const obj2 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp2.centeredText };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj3 = { gameName: tmp7 };
@@ -96,7 +96,7 @@ const memoResult = importAllResult.memo((arg0) => {
     obj.children = items;
     return callback3(require(5166) /* getCardBackgroundToken */.Card, obj);
   }
-  const tmp5Result = importDefault(11995)(tmp4, intl.string(require(1212) /* getSystemLocale */.t.VQq92a));
+  const tmp5Result = importDefault(11996)(tmp4, intl.string(require(1212) /* getSystemLocale */.t.VQq92a));
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/game_claim/native/GameClaimCoachmark.tsx");
 
@@ -105,7 +105,7 @@ export const GAME_CLAIM_NOTICE_MARGIN_TOP = PX_8;
 export const GAME_CLAIM_NOTICE_MARGIN_BOTTOM = PX_82;
 export const getScaledGameClaimNoticeHeight = function getScaledGameClaimNoticeHeight(fontScale) {
   const sum = PX_8 + closure_12;
-  const sum1 = sum + require(15076) /* importDefaultResult1 */.CARD_STACK_HEIGHT;
+  const sum1 = sum + require(15088) /* importDefaultResult1 */.CARD_STACK_HEIGHT;
   const sum2 = sum1 + require(9849) /* scaleLineHeight */.scaleTextLineHeight("text-md/medium", fontScale);
   const sum3 = sum2 + importDefault(689).space.PX_4;
   const obj = require(9849) /* scaleLineHeight */;

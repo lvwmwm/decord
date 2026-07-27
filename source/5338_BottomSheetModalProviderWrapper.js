@@ -1,5 +1,5 @@
 // Module ID: 5338
-// Function ID: 45918
+// Function ID: 45919
 // Name: BottomSheetModalProviderWrapper
 // Dependencies: [31, 33, 1582, 5193, 5336, 5190, 5200, 5312, 4002]
 // Exports: default

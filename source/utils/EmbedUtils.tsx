@@ -1,5 +1,5 @@
 // Module ID: 4465
-// Function ID: 39392
+// Function ID: 39393
 // Name: validateSize
 // Dependencies: [653, 4466, 21, 1360, 22, 3713, 665, 4354, 2]
 // Exports: canEmbedLinks, getEffectiveVideoProvider, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds

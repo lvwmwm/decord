@@ -1,10 +1,10 @@
-// Module ID: 11986
-// Function ID: 92654
+// Module ID: 11987
+// Function ID: 92659
 // Name: UserCheckIcon
 // Dependencies: [31, 33, 689, 3834, 7791, 2]
 // Exports: UserCheckIcon
 
-// Module 11986 (UserCheckIcon)
+// Module 11987 (UserCheckIcon)
 import "result";
 import { jsx } from "jsxProd";
 

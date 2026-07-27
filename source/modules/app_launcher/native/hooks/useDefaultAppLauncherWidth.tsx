@@ -1,10 +1,10 @@
-// Module ID: 10862
-// Function ID: 84412
+// Module ID: 10863
+// Function ID: 84417
 // Name: useDefaultAppLauncherWidth
 // Dependencies: [5188, 1450, 7955, 2]
 // Exports: useDefaultAppLauncherWidth
 
-// Module 10862 (useDefaultAppLauncherWidth)
+// Module 10863 (useDefaultAppLauncherWidth)
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
 
 const result = require("AppLauncherEntrypoint").fileFinishedImporting("modules/app_launcher/native/hooks/useDefaultAppLauncherWidth.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 8335
-// Function ID: 66859
+// Function ID: 66860
 // Name: TieredTenureBadgeItem
 // Dependencies: [31, 27, 1850, 1852, 653, 33, 4131, 689, 8336, 5651, 8361, 5085, 4127, 1212, 8362, 566, 1873, 8364, 480, 1557, 6554, 4099, 8297, 6156, 8365, 5187, 5189, 2]
 // Exports: default

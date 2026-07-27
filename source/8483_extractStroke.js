@@ -1,5 +1,5 @@
 // Module ID: 8483
-// Function ID: 67565
+// Function ID: 67566
 // Name: extractStroke
 // Dependencies: [8481, 8469, 8484]
 

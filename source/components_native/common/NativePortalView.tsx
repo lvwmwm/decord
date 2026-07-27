@@ -1,5 +1,5 @@
 // Module ID: 8058
-// Function ID: 64135
+// Function ID: 64136
 // Name: MediaPlayerManager
 // Dependencies: [31, 27, 33, 4131, 477, 8059, 8060, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive

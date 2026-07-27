@@ -1,5 +1,5 @@
 // Module ID: 4180
-// Function ID: 35857
+// Function ID: 35858
 // Name: assertInjected
 // Dependencies: [2]
 // Exports: getOpenH264LibraryPath, getVoiceEngine, inject, setProcessPriority, supported, supportsFeature

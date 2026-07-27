@@ -1,7 +1,7 @@
 // Module ID: 8167
-// Function ID: 65539
+// Function ID: 65540
 // Name: openCreateOrEditGuildEventModal
-// Dependencies: [5, 31, 1348, 1908, 1838, 3759, 5751, 1354, 8156, 653, 33, 4338, 44, 8168, 1935, 4099, 8201, 8257, 8273, 8283, 4473, 8146, 3832, 1212, 8284, 8264, 8152, 8285, 8164, 5490, 3831, 8286, 6636, 8155, 8153, 8148, 12201, 7633, 3804, 5489, 1450, 12202, 5495, 2]
+// Dependencies: [5, 31, 1348, 1908, 1838, 3759, 5751, 1354, 8156, 653, 33, 4338, 44, 8168, 1935, 4099, 8201, 8257, 8273, 8283, 4473, 8146, 3832, 1212, 8284, 8264, 8152, 8285, 8164, 5490, 3831, 8286, 6636, 8155, 8153, 8148, 12202, 7633, 3804, 5489, 1450, 12203, 5495, 2]
 // Exports: closeGuildEventListActionSheet, openGuildEventListActionSheet, openShareEvent, showGuildEventModeratorActionSheet, transitionToEventDetailsFromInvite
 
 // Module 8167 (openCreateOrEditGuildEventModal)

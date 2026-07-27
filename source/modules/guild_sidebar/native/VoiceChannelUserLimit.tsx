@@ -1,8 +1,8 @@
-// Module ID: 15030
-// Function ID: 114574
-// Dependencies: [31, 27, 33, 4131, 689, 1273, 12782, 4127, 2]
+// Module ID: 15031
+// Function ID: 114578
+// Dependencies: [31, 27, 33, 4131, 689, 1273, 12783, 4127, 2]
 
-// Module 15030
+// Module 15031
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -33,7 +33,7 @@ const memoResult = require("result").memo(function VoiceChannelUserLimit(videoLi
   obj = { style: rect.left };
   let tmp3 = null;
   if (videoLimit.videoLimit) {
-    obj = { source: importDefault(12782), size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
+    obj = { source: importDefault(12783), size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
     tmp3 = callback(require(1273) /* Button */.Icon, obj);
   }
   const items = [tmp3, ];

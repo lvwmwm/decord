@@ -1,7 +1,7 @@
 // Module ID: 1346
 // Function ID: 15835
 // Name: getVersionedDismissibleContentCurrentVersion
-// Dependencies: [1347, 5815, 1334, 13056, 13057, 1882, 13058, 1361, 2]
+// Dependencies: [1347, 5815, 1334, 13057, 13058, 1882, 13059, 1361, 2]
 // Exports: getVersionedDismissibleContentCurrentVersion
 
 // Module 1346 (getVersionedDismissibleContentCurrentVersion)
@@ -13,7 +13,7 @@ const result = require("DismissibleContent").fileFinishedImporting("modules/dism
 
 export const getVersionedDismissibleContentCurrentVersion = function getVersionedDismissibleContentCurrentVersion(closure_0) {
   if (require(1334) /* DismissibleContent */.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING === closure_0) {
-    marketingBySurface = marketingBySurface.getMarketingBySurface(require(13056) /* CollectiblesMarketingSurface */.CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
+    marketingBySurface = marketingBySurface.getMarketingBySurface(require(13057) /* CollectiblesMarketingSurface */.CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
     let version;
     if (null != marketingBySurface) {
       version = marketingBySurface.version;
@@ -25,12 +25,12 @@ export const getVersionedDismissibleContentCurrentVersion = function getVersione
     return num10;
   } else if (require(1334) /* DismissibleContent */.DismissibleContent.ACTIVITIES_VOICE_LAUNCHER_BADGE === closure_0) {
     let obj = { storeState: state.getState(), surface: require(1882) /* PermissionOverwriteType */.EmbeddedActivitySurfaces.VOICE_LAUNCHER };
-    return require(13057) /* getNewestBadgeableVersion */.getNewestBadgeableVersion(obj);
+    return require(13058) /* getNewestBadgeableVersion */.getNewestBadgeableVersion(obj);
   } else {
     if (require(1334) /* DismissibleContent */.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK !== closure_0) {
       if (require(1334) /* DismissibleContent */.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE !== closure_0) {
         if (require(1334) /* DismissibleContent */.DismissibleContent.COLLECTIBLES_SHOP_WIDE_BANNER === closure_0) {
-          return require(13058) /* getWideBannerDismissibleContentVersion */.getWideBannerDismissibleContentVersion();
+          return require(13059) /* getWideBannerDismissibleContentVersion */.getWideBannerDismissibleContentVersion();
         } else {
           if (require(1334) /* DismissibleContent */.DismissibleContent.GAME_SHOP_ANNOUNCEMENT_MODAL !== closure_0) {
             if (require(1334) /* DismissibleContent */.DismissibleContent.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE !== closure_0) {

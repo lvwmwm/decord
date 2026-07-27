@@ -1,5 +1,5 @@
 // Module ID: 4516
-// Function ID: 39746
+// Function ID: 39747
 // Name: TabsHost
 // Dependencies: [57, 29, 31, 27, 33, 4517, 4492, 4518, 4519, 4521]
 // Exports: default

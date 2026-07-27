@@ -1,7 +1,7 @@
 // Module ID: 1194
 // Function ID: 13665
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1195, 1196, 653, 1197, 3, 684, 587, 1198, 675, 13175, 686, 13176, 9128, 4031, 490, 13177, 1184, 11447, 566, 10426, 13178, 1328, 1882, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1195, 1196, 653, 1197, 3, 684, 587, 1198, 675, 13176, 686, 13177, 9128, 4031, 490, 13178, 1184, 11448, 566, 10427, 13179, 1328, 1882, 2]
 
 // Module 1194 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -105,7 +105,7 @@ function loadExperiments(withGuildExperiments) {
   const obj2 = importDefault(675);
   obj = { withGuildExperiments: withGuildExperiments.withGuildExperiments, headers: obj };
   obj = {};
-  let obj3 = require(13175) /* fetchExperiments */;
+  let obj3 = require(13176) /* fetchExperiments */;
   obj.location = require(1198) /* shouldNavigate */.getFingerprintLocation();
   obj.context = obj;
   const experiments = obj3.fetchExperiments(obj);
@@ -481,7 +481,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     if (null != email) {
       tmp2 = email;
     }
-    obj.setUser(id, username, tmp2, importDefault(11447)(user));
+    obj.setUser(id, username, tmp2, importDefault(11448)(user));
     setAnalyticsToken(analyticsToken);
     id = user.id;
     if (undefined !== auth) {
@@ -521,7 +521,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     if (null != email) {
       tmp = email;
     }
-    importDefault(1184).setUser(id, username, tmp, importDefault(11447)(user));
+    importDefault(1184).setUser(id, username, tmp, importDefault(11448)(user));
     setAuthToken(token, user.id);
     if (null != analyticsToken) {
       setAnalyticsToken(analyticsToken);
@@ -758,7 +758,7 @@ let obj = {
     if (null != email) {
       tmp2 = email;
     }
-    obj.setUser(id, username, tmp2, importDefault(11447)(user));
+    obj.setUser(id, username, tmp2, importDefault(11448)(user));
     setAnalyticsToken(analyticsToken);
     id = user.id;
     if (undefined !== auth) {
@@ -798,7 +798,7 @@ let obj = {
     if (null != email) {
       tmp = email;
     }
-    importDefault(1184).setUser(id, username, tmp, importDefault(11447)(user));
+    importDefault(1184).setUser(id, username, tmp, importDefault(11448)(user));
     setAuthToken(token, user.id);
     if (null != analyticsToken) {
       setAnalyticsToken(analyticsToken);

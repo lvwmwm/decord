@@ -1,7 +1,7 @@
 // Module ID: 8702
-// Function ID: 69043
+// Function ID: 69044
 // Name: CollectiblesShopGiftModal
-// Dependencies: [31, 5770, 653, 33, 8703, 8050, 8044, 566, 5462, 5482, 1832, 5769, 3790, 8704, 1212, 8705, 11816, 11819, 2]
+// Dependencies: [31, 5770, 653, 33, 8703, 8050, 8044, 566, 5462, 5482, 1832, 5769, 3790, 8704, 1212, 8705, 11817, 11820, 2]
 // Exports: default
 
 // Module 8702 (CollectiblesShopGiftModal)

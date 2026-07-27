@@ -1,10 +1,10 @@
-// Module ID: 13167
-// Function ID: 101488
+// Module ID: 13168
+// Function ID: 101493
 // Name: BadgeColors
 // Dependencies: [31, 27, 33, 4131, 689, 4127, 2]
 // Exports: TextBadge
 
-// Module 13167 (BadgeColors)
+// Module 13168 (BadgeColors)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,5 +1,5 @@
 // Module ID: 8212
-// Function ID: 65818
+// Function ID: 65819
 // Name: useCreateChannelSubmit
 // Dependencies: [5, 57, 31, 653, 1882, 483, 8213, 3977, 1212, 2]
 // Exports: default

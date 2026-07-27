@@ -1,5 +1,5 @@
 // Module ID: 8221
-// Function ID: 65945
+// Function ID: 65946
 // Name: _fetchGuildTopGames
 // Dependencies: [5, 3949, 1918, 8219, 653, 686, 507, 5128, 4030, 675, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed

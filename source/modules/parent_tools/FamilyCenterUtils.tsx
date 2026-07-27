@@ -1,5 +1,5 @@
 // Module ID: 5827
-// Function ID: 51178
+// Function ID: 51179
 // Name: getActivityTypeTextConfigs
 // Dependencies: [5765, 5766, 1212, 2199, 3713, 5767, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction

@@ -1,5 +1,5 @@
 // Module ID: 4451
-// Function ID: 38978
+// Function ID: 38979
 // Name: capitalize
 // Dependencies: []
 

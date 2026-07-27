@@ -1,5 +1,5 @@
 // Module ID: 9386
-// Function ID: 73198
+// Function ID: 73199
 // Name: DiscordTag
 // Dependencies: [31, 27, 33, 4131, 689, 4127, 8328, 2]
 // Exports: default

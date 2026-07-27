@@ -1,5 +1,5 @@
 // Module ID: 6704
-// Function ID: 59202
+// Function ID: 59203
 // Name: originWhitelistToRegex
 // Dependencies: [31, 27, 33, 6705, 6706]
 // Exports: defaultRenderError, defaultRenderLoading, useWebWiewLogic

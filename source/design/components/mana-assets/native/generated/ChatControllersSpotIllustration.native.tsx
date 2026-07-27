@@ -1,5 +1,5 @@
 // Module ID: 6860
-// Function ID: 59525
+// Function ID: 59526
 // Name: ChatControllersSpotIllustration
 // Dependencies: [33, 5085, 6861, 2]
 // Exports: ChatControllersSpotIllustration

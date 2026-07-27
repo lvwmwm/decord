@@ -1,5 +1,5 @@
 // Module ID: 4073
-// Function ID: 33894
+// Function ID: 33895
 // Name: UserMinusIcon
 // Dependencies: [31, 33, 689, 3834, 4074, 2]
 // Exports: UserMinusIcon

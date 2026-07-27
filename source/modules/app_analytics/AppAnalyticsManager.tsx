@@ -1,9 +1,9 @@
-// Module ID: 16046
-// Function ID: 124109
+// Module ID: 16058
+// Function ID: 124156
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4151, 4178, 4203, 4811, 4953, 4204, 653, 664, 4016, 4325, 15486, 4302, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4151, 4178, 4203, 4811, 4953, 4204, 653, 664, 4016, 4325, 15499, 4302, 5078, 2]
 
-// Module 16046 (_isNativeReflectConstruct)
+// Module 16058 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getGamePlatform from "getGamePlatform";

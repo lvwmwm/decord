@@ -1,5 +1,5 @@
 // Module ID: 9335
-// Function ID: 72954
+// Function ID: 72955
 // Name: PremiumEmojiFeatureUpsell
 // Dependencies: [31, 27, 33, 4131, 689, 1557, 6687, 668, 3992, 9336, 6147, 2]
 // Exports: default

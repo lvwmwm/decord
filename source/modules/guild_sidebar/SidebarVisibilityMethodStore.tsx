@@ -1,5 +1,5 @@
 // Module ID: 9402
-// Function ID: 73409
+// Function ID: 73410
 // Name: SidebarVisibilityMethodStore
 // Dependencies: [621, 2]
 // Exports: getVisibleChannelIdsMethod, getVisibleGuildIdsMethod, setGetVisibleChannelIds, setGetVisibleGuildIds

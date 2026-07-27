@@ -1,9 +1,9 @@
-// Module ID: 16064
-// Function ID: 124354
+// Module ID: 16076
+// Function ID: 124401
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1348, 1907, 10069, 10094, 16065, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 1348, 1907, 10069, 10094, 16077, 5078, 2]
 
-// Module 16064 (_isNativeReflectConstruct)
+// Module 16076 (_isNativeReflectConstruct)
 import InappropriateConversationExperiment from "InappropriateConversationExperiment";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -42,9 +42,9 @@ function handleChannelSelect(channelId) {
               ({ id: obj5.warningId, type: obj5.warningType } = inappropriateConversationTakeoverForChannel);
               obj.senderId = channel.getRecipientId();
               obj.channelId = channelId;
-              require(16065) /* showTakeoverModal */.showTakeoverModal(obj);
+              require(16077) /* showTakeoverModal */.showTakeoverModal(obj);
               flag3 = true;
-              const obj4 = require(16065) /* showTakeoverModal */;
+              const obj4 = require(16077) /* showTakeoverModal */;
             }
             return flag3;
           }
@@ -81,9 +81,9 @@ function handleChannelUpdates(channels) {
             ({ id: obj4.warningId, type: obj4.warningType } = inappropriateConversationTakeoverForChannel);
             obj.senderId = found.getRecipientId();
             obj.channelId = found.id;
-            currentlySelectedChannelId(16065).showTakeoverModal(obj);
+            currentlySelectedChannelId(16077).showTakeoverModal(obj);
             flag3 = true;
-            const obj3 = currentlySelectedChannelId(16065);
+            const obj3 = currentlySelectedChannelId(16077);
           }
           return flag3;
         }

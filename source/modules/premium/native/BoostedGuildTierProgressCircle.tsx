@@ -1,10 +1,10 @@
-// Module ID: 12471
-// Function ID: 96741
+// Module ID: 12472
+// Function ID: 96746
 // Name: getTierIcon
-// Dependencies: [31, 27, 653, 33, 4131, 689, 12472, 12476, 12477, 12478, 4038, 4023, 11621, 4127, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 12473, 12477, 12478, 12479, 4038, 4023, 11622, 4127, 2]
 // Exports: default
 
-// Module 12471 (getTierIcon)
+// Module 12472 (getTierIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -23,15 +23,15 @@ function getTierIcon(theme, premiumTier) {
     if (premiumTier.premiumTier !== closure_6.NONE) {
       premiumTier = premiumTier.premiumTier;
       if (closure_6.TIER_1 === premiumTier) {
-        return importDefault(12476);
-      } else if (closure_6.TIER_2 === premiumTier) {
         return importDefault(12477);
-      } else if (closure_6.TIER_3 === premiumTier) {
+      } else if (closure_6.TIER_2 === premiumTier) {
         return importDefault(12478);
+      } else if (closure_6.TIER_3 === premiumTier) {
+        return importDefault(12479);
       }
     }
   }
-  return require(12472) /* getTier048PxSource */.getTier048PxSource(theme);
+  return require(12473) /* getTier048PxSource */.getTier048PxSource(theme);
 }
 ({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_5, BoostedGuildTiers: closure_6 } = ME);
@@ -82,7 +82,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     obj2.importantForAccessibility = "no";
     const items = [callback(closure_4, obj2), ];
     const obj3 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active" };
-    const tmp9 = importDefault(11621);
+    const tmp9 = importDefault(11622);
     obj3.children = require(4023) /* _createForOfIteratorHelperLoose */.getTierName(guild.premiumTier);
     items[1] = callback(require(4127) /* Text */.Text, obj3);
     obj1.children = items;

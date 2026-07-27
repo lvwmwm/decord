@@ -1,5 +1,5 @@
 // Module ID: 9241
-// Function ID: 72453
+// Function ID: 72454
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 5, 9242, 5829, 1348, 1918, 4947, 4350, 4223, 3759, 4143, 1850, 7655, 653, 4318, 4354, 1882, 5852, 6022, 4620, 3748, 3832, 1212, 9243, 9244, 1873, 4100, 4101, 9073, 6024, 6026, 4325, 5490, 4313, 21, 3831, 9396, 14, 22, 477, 1555, 675, 9397, 5685, 4980, 4063, 9401, 9431, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia

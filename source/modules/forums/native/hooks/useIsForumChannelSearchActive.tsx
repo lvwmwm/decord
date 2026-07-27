@@ -1,5 +1,5 @@
 // Module ID: 10087
-// Function ID: 78158
+// Function ID: 78159
 // Name: useIsForumChannelSearchActive
 // Dependencies: [6027, 10066, 566, 2]
 // Exports: useIsForumChannelSearchActive

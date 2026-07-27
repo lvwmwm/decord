@@ -1,26 +1,20 @@
 // Module ID: 13310
-// Function ID: 102143
+// Function ID: 102146
 // Name: __core-js_shared__
-// Dependencies: [13294, 13295, 13311]
+// Dependencies: [13311]
 
 // Module 13310 (__core-js_shared__)
-import { "\"__core-js_shared__\"" as __core_js_shared__ } from "check";
 
-if (!__core_js_shared__) {
-  __core_js_shared__ = require("check")("__core-js_shared__", {});
-}
-let versions = __core_js_shared__.versions;
-if (!versions) {
-  const items = [];
-  __core_js_shared__.versions = items;
-  versions = items;
-}
-const obj = { version: "3.41.0", mode: null, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" };
-let str2 = "global";
-if (require("module_13311")) {
-  str2 = "pure";
-}
-obj.mode = str2;
-versions.push(obj);
-
-export default __core_js_shared__;
+export default (arg0, arg1) => {
+  let obj = arg1;
+  let tmp = require(13311) /* __core-js_shared__ */[arg0];
+  if (!tmp) {
+    if (!obj) {
+      obj = {};
+    }
+    require(13311) /* __core-js_shared__ */[arg0] = obj;
+    tmp = obj;
+    const tmp4 = require(13311) /* __core-js_shared__ */;
+  }
+  return tmp;
+};

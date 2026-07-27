@@ -1,5 +1,5 @@
 // Module ID: 8024
-// Function ID: 63878
+// Function ID: 63879
 // Name: _readFile
 // Dependencies: [5, 3, 1247, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile

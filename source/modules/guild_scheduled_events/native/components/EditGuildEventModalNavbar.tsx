@@ -1,5 +1,5 @@
 // Module ID: 8170
-// Function ID: 65586
+// Function ID: 65587
 // Name: EditGuildEventModalNavbar
 // Dependencies: [57, 31, 27, 33, 4131, 8147, 1327, 5121, 4127, 1212, 6695, 7640, 2]
 // Exports: default

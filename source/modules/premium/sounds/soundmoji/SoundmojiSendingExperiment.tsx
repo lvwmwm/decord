@@ -1,5 +1,5 @@
 // Module ID: 9278
-// Function ID: 72696
+// Function ID: 72697
 // Name: getSoundmojiSendExperiment
 // Dependencies: [1428, 2]
 // Exports: getSoundmojiSendExperiment, useSoundmojiEmojiPickerSectionExperiment, useSoundmojiSendExperiment

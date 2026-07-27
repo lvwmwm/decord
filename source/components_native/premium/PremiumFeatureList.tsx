@@ -1,5 +1,5 @@
 // Module ID: 9265
-// Function ID: 72580
+// Function ID: 72581
 // Name: PremiumFeatureList
 // Dependencies: [31, 27, 653, 33, 4131, 5053, 689, 7575, 2]
 // Exports: default

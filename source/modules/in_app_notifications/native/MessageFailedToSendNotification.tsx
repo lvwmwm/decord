@@ -1,8 +1,8 @@
-// Module ID: 10279
-// Function ID: 79458
-// Dependencies: [31, 27, 33, 4131, 689, 1212, 4139, 4063, 10272, 9909, 10217, 2]
+// Module ID: 10280
+// Function ID: 79463
+// Dependencies: [31, 27, 33, 4131, 689, 1212, 4139, 4063, 10273, 9909, 10218, 2]
 
-// Module 10279
+// Module 10280
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -34,11 +34,11 @@ const memoResult = importAllResult.memo(function MessageFailedToSendNotification
   const obj2 = {};
   const intl2 = channelId(1212).intl;
   obj2.text = intl2.string(channelId(1212).t.xxRPOT);
-  obj.children = jsx(channelId(10217).SystemMessageText, {});
+  obj.children = jsx(channelId(10218).SystemMessageText, {});
   obj.header = obj;
   obj.onPress = callback;
   obj.notification = notification;
-  return jsx(channelId(10272).NotificationPressable, { style: callback().iconContainer });
+  return jsx(channelId(10273).NotificationPressable, { style: callback().iconContainer });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_notifications/native/MessageFailedToSendNotification.tsx");
 

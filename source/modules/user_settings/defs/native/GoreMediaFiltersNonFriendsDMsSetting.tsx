@@ -1,14 +1,14 @@
-// Module ID: 13797
-// Function ID: 105808
+// Module ID: 13798
+// Function ID: 105813
 // Name: useGoreContentNonFriendsDmSettingValue
-// Dependencies: [7697, 13785, 5834, 5855, 13786, 1212, 10059, 13788, 2]
+// Dependencies: [7697, 13786, 5834, 5855, 13787, 1212, 10059, 13789, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 13797 (useGoreContentNonFriendsDmSettingValue)
+// Module 13798 (useGoreContentNonFriendsDmSettingValue)
 import createToggle from "createToggle";
 
 function useGoreContentNonFriendsDmSettingValue() {
-  const obj = require(13785) /* useExplicitContentSettingOrDefault */;
+  const obj = require(13786) /* useExplicitContentSettingOrDefault */;
   return require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentNonFriendDm)();
 }
 function onGoreContentNonFriendsDmOnPress() {
@@ -23,7 +23,7 @@ function onGoreContentNonFriendsDmOnPress() {
     return obj.updateGoreContentSetting(obj);
   };
   obj.currentValue = obj.getGoreContentSettingOrDefault().goreContentNonFriendDm;
-  const result = require(13786) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+  const result = require(13787) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
 }
 function getTitle() {
   const intl = require(1212) /* getSystemLocale */.intl;

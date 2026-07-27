@@ -1,10 +1,10 @@
-// Module ID: 10361
-// Function ID: 80015
+// Module ID: 10362
+// Function ID: 80020
 // Name: useCreateThreadViewProps
 // Dependencies: [1348, 9505, 624, 2]
 // Exports: default
 
-// Module 10361 (useCreateThreadViewProps)
+// Module 10362 (useCreateThreadViewProps)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let require = arg1;

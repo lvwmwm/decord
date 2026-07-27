@@ -1,10 +1,10 @@
-// Module ID: 14240
-// Function ID: 109442
+// Module ID: 14241
+// Function ID: 109447
 // Name: ChannelRowItem
 // Dependencies: [31, 27, 653, 33, 4131, 689, 1273, 9026, 4127, 2]
 // Exports: default
 
-// Module 14240 (ChannelRowItem)
+// Module 14241 (ChannelRowItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import { StatusTypes } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 14400
-// Function ID: 110157
+// Module ID: 14401
+// Function ID: 110162
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isEligibleForProfileUpdatesNotificationsToggle, useProfileUpdatesNotificationExperiment
 
-// Module 14400 (apexExperiment)
+// Module 14401 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-01-profile-updates-notification", defaultConfig: { showSettingsToggle: false }, variations: { [0]: { showSettingsToggle: false }, [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true } } };

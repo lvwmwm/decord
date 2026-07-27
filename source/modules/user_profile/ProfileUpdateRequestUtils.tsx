@@ -1,5 +1,5 @@
 // Module ID: 9736
-// Function ID: 75832
+// Function ID: 75833
 // Name: getProfileChangesForUpdateRequest
 // Dependencies: [7891, 9737, 1877, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest

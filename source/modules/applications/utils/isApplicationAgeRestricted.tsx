@@ -1,5 +1,5 @@
 // Module ID: 7964
-// Function ID: 63433
+// Function ID: 63434
 // Name: isApplicationAgeRestricted
 // Dependencies: [4168, 7965, 7966, 2]
 // Exports: default

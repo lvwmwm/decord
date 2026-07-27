@@ -1,5 +1,5 @@
 // Module ID: 4960
-// Function ID: 42640
+// Function ID: 42641
 // Name: GuildMemberRequestState
 // Dependencies: [6, 7, 4016, 22, 2]
 

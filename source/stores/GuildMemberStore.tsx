@@ -1,5 +1,5 @@
 // Module ID: 1918
-// Function ID: 21615
+// Function ID: 21616
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1919, 1910, 1194, 1348, 1911, 1838, 3747, 3, 3748, 1913, 1360, 21, 1828, 1829, 1861, 1327, 1881, 22, 3749, 566, 686, 2]
 // Exports: getUserCommunicationDisabledVersion

@@ -1,10 +1,10 @@
-// Module ID: 10720
-// Function ID: 83359
+// Module ID: 10721
+// Function ID: 83364
 // Name: canChannelUseSoundboard
 // Dependencies: [1348, 3759, 1907, 653, 566, 2]
 // Exports: canSelectedVoiceChannelUseSoundboard, useCanChannelUseSoundboard
 
-// Module 10720 (canChannelUseSoundboard)
+// Module 10721 (canChannelUseSoundboard)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

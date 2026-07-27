@@ -1,5 +1,5 @@
 // Module ID: 9069
-// Function ID: 71336
+// Function ID: 71337
 // Name: _isNativeReflectConstruct
 // Dependencies: [7, 6, 15, 17, 18, 9070, 9068, 6026, 6028, 2]
 // Exports: markForumPostItemAsSeen, markForumPostItemAsUnseen

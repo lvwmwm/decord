@@ -1,5 +1,5 @@
 // Module ID: 6040
-// Function ID: 54199
+// Function ID: 54200
 // Name: getAccessibilityLabelFormatter
 // Dependencies: [29, 4143, 4326, 3761, 1211, 653, 1212, 5727, 4325, 675, 6033, 5074, 1360, 566, 21, 3713, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp

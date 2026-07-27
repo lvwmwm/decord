@@ -1,5 +1,5 @@
 // Module ID: 10010
-// Function ID: 77478
+// Function ID: 77479
 // Name: GuildDirectoryCreateOrAddDescription
 // Dependencies: [5, 31, 27, 33, 4131, 10011, 1387, 10012, 9999, 10000, 4127, 1212, 10008, 2]
 // Exports: default

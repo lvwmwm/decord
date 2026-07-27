@@ -1,5 +1,5 @@
 // Module ID: 5688
-// Function ID: 49127
+// Function ID: 49128
 // Name: GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD
 // Dependencies: [2]
 

@@ -1,5 +1,5 @@
 // Module ID: 8019
-// Function ID: 63844
+// Function ID: 63845
 // Name: useUserProfileColors
 // Dependencies: [4123, 482, 4067, 5484, 566, 1324, 3835, 689, 7927, 665, 2]
 // Exports: useUserProfileColors

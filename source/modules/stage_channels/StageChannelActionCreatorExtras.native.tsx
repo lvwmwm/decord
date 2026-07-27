@@ -1,7 +1,7 @@
 // Module ID: 6654
-// Function ID: 58863
+// Function ID: 58864
 // Name: openStageChannel
-// Dependencies: [6655, 4948, 4099, 6657, 1935, 7572, 7616, 7623, 12350, 4344, 4342, 4338, 10444, 8297, 7618, 2]
+// Dependencies: [6655, 4948, 4099, 6657, 1935, 7572, 7616, 7623, 12351, 4344, 4342, 4338, 10445, 8297, 7618, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannelAudienceNoticeModal, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
 // Module 6654 (openStageChannel)
@@ -22,7 +22,7 @@ function openStageChannel(isGuildStageVoice) {
     } else {
       obj = { channel: isGuildStageVoice };
       const obj2 = importDefault(4338);
-      const tmp6 = require(1935) /* maybeLoadBundle */(10444, dependencyMap.paths);
+      const tmp6 = require(1935) /* maybeLoadBundle */(10445, dependencyMap.paths);
       obj2.pushLazy(tmp6, obj, require(4342) /* getVoiceChannelKeyByChannelId */.getVoiceChannelKey(isGuildStageVoice.id));
       const obj4 = require(4342) /* getVoiceChannelKeyByChannelId */;
     }
@@ -57,7 +57,7 @@ export const openStageSettingsSheet = function openStageSettingsSheet(closure_0,
 export const openEndStageModal = function openEndStageModal(channel) {
   let obj = importDefault(4099);
   obj = { channel };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12350, dependencyMap.paths), closure_8, obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(12351, dependencyMap.paths), closure_8, obj);
 };
 export { openStageChannel };
 export const showPlatformUserProfile = function showPlatformUserProfile(arg0) {

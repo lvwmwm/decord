@@ -1,8 +1,8 @@
-// Module ID: 14868
-// Function ID: 113411
-// Dependencies: [31, 33, 4131, 477, 10196, 14869, 14879, 14948, 10833, 5217, 5515, 7619, 14949, 2]
+// Module ID: 14869
+// Function ID: 113416
+// Dependencies: [31, 33, 4131, 477, 10197, 14870, 14880, 14949, 10834, 5217, 5515, 7619, 14950, 2]
 
-// Module 14868
+// Module 14869
 import importAllResult from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -26,11 +26,11 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
     flag = false;
   }
   let fastListRef;
-  const tmp2 = importDefault(14869)();
+  const tmp2 = importDefault(14870)();
   fastListRef = tmp2.fastListRef;
   ({ scrollPosition, gesture, scrollerRef, persistantKeys, onFastListScroll, onFastListScrollWorklet } = tmp2);
   const tmp = callback2();
-  ({ listProps, listDataProps } = importDefault(14879)(fastListRef));
+  ({ listProps, listDataProps } = importDefault(14880)(fastListRef));
   let items = [fastListRef];
   let effect = importAllResult.useEffect(() => {
     const result = fastListRef(outer1_2[7]).registerGuildVisibilityMethod(fastListRef);
@@ -89,11 +89,11 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
     }, items);
   })(listProps, fastListRef);
   let obj = {};
-  const tmp3 = importDefault(14879)(fastListRef);
-  obj.profile = fastListRef(10833).Profiles.Guilds;
+  const tmp3 = importDefault(14880)(fastListRef);
+  obj.profile = fastListRef(10834).Profiles.Guilds;
   obj = { gesture };
   obj = { style: tmp.wrapper, collapsable: false, nativeID: "guilds-bar-view" };
-  const tmp7 = importDefault(10833);
+  const tmp7 = importDefault(10834);
   const tmp8 = closure_5;
   const obj1 = {};
   const tmp9 = importDefault(5515);
@@ -116,7 +116,7 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
   }
   obj1["style"] = tmp13;
   obj1["nativeID"] = "guilds-bar-fast-list";
-  const items1 = [callback(importDefault(7619), obj1), callback(importDefault(14949), {})];
+  const items1 = [callback(importDefault(7619), obj1), callback(importDefault(14950), {})];
   obj.children = items1;
   obj.children = tmp8(tmp9, obj);
   obj.children = callback(fastListRef(5217).GestureDetector, obj);

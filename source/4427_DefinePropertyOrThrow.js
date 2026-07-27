@@ -1,5 +1,5 @@
 // Module ID: 4427
-// Function ID: 38919
+// Function ID: 38920
 // Name: DefinePropertyOrThrow
 // Dependencies: [4377, 518, 4424, 4428, 4429, 4431, 4432, 4433, 4434]
 

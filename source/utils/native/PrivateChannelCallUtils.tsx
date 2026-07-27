@@ -1,7 +1,7 @@
 // Module ID: 4342
-// Function ID: 38323
+// Function ID: 38324
 // Name: getVoiceChannelKeyByChannelId
-// Dependencies: [5, 31, 3824, 4343, 1348, 3768, 1907, 1850, 653, 1197, 4345, 33, 4346, 4324, 10626, 1207, 4338, 10444, 1935, 5582, 5587, 4099, 12756, 4945, 4472, 1212, 4676, 3990, 12791, 4473, 8849, 3982, 6654, 2]
+// Dependencies: [5, 31, 3824, 4343, 1348, 3768, 1907, 1850, 653, 1197, 4345, 33, 4346, 4324, 10627, 1207, 4338, 10445, 1935, 5582, 5587, 4099, 12757, 4945, 4472, 1212, 4676, 3990, 12792, 4473, 8849, 3982, 6654, 2]
 // Exports: handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openVoiceChannelActionSheet
 
 // Module 4342 (getVoiceChannelKeyByChannelId)
@@ -42,10 +42,10 @@ function openChannelCallModal(channel) {
     } else {
       obj = { channel };
       const obj4 = importDefault(4338);
-      obj4.pushLazy(require(1935) /* maybeLoadBundle */(10444, dependencyMap.paths), obj, getVoiceChannelKey(channel.id));
-      const tmp8 = require(1935) /* maybeLoadBundle */(10444, dependencyMap.paths);
+      obj4.pushLazy(require(1935) /* maybeLoadBundle */(10445, dependencyMap.paths), obj, getVoiceChannelKey(channel.id));
+      const tmp8 = require(1935) /* maybeLoadBundle */(10445, dependencyMap.paths);
     }
-    obj3 = require(10626) /* isVoicePanelEnabled */;
+    obj3 = require(10627) /* isVoicePanelEnabled */;
   }
 }
 function dismissVoiceChannelScreens(channel, onExited) {
@@ -126,7 +126,7 @@ export const maybeShowAgeGateModal = function maybeShowAgeGateModal(channelId) {
 export const openVoiceChannelActionSheet = function openVoiceChannelActionSheet(outer1_0) {
   let obj = importDefault(4099);
   obj = { channel: outer1_0 };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12756, dependencyMap.paths), getVoiceChannelKey(outer1_0.id), obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(12757, dependencyMap.paths), getVoiceChannelKey(outer1_0.id), obj);
 };
 export const hideVoiceChannelActionSheet = function hideVoiceChannelActionSheet(id) {
   importDefault(4099).hideActionSheet(getVoiceChannelKey(id.id));

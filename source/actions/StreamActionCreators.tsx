@@ -1,5 +1,5 @@
 // Module ID: 4310
-// Function ID: 37733
+// Function ID: 37734
 // Name: isVoiceChannelFull
 // Dependencies: [5, 4145, 4311, 4312, 4150, 1194, 1348, 1838, 1907, 4147, 653, 4196, 686, 4195, 44, 4313, 4324, 4337, 507, 664, 4943, 480, 8783, 4945, 4141, 8849, 2]
 // Exports: changeStreamRegion, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, toggleSelfStreamHidden, updateStreamSettings

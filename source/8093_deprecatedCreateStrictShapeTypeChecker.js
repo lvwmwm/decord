@@ -1,5 +1,5 @@
 // Module ID: 8093
-// Function ID: 64438
+// Function ID: 64439
 // Name: deprecatedCreateStrictShapeTypeChecker
 // Dependencies: [44]
 

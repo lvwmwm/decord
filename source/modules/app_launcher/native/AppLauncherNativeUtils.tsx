@@ -1,10 +1,10 @@
-// Module ID: 11162
-// Function ID: 86750
+// Module ID: 11163
+// Function ID: 86755
 // Name: handleApplicationSelected
-// Dependencies: [31, 1348, 1850, 1455, 653, 4567, 4325, 5676, 11163, 5674, 1882, 6037, 1831, 7953, 1392, 10861, 9339, 11168, 5468, 10546, 4100, 2]
+// Dependencies: [31, 1348, 1850, 1455, 653, 4567, 4325, 5676, 11164, 5674, 1882, 6037, 1831, 7953, 1392, 10862, 9339, 11169, 5468, 10547, 4100, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11162 (handleApplicationSelected)
+// Module 11163 (handleApplicationSelected)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -73,7 +73,7 @@ export const handleViewAllSelected = function handleViewAllSelected(arg0) {
   ({ navigation, sectionName, applications, sectionItemType, commands } = arg0);
   ({ location: _location, context, sectionOverallPosition, sectionDescriptors, title, promotedApplicationIds } = arg0);
   let obj = require(4325) /* _createForOfIteratorHelperLoose */;
-  obj = { section_name: sectionName, num: sectionItemType === require(11163) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
+  obj = { section_name: sectionName, num: sectionItemType === require(11164) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
   obj.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_SECTION_VIEW_MORE, obj);
   navigation.navigate(constants.APP_LIST_VIEW, { analyticsLocation: _location, context, sectionName, sectionOverallPosition, applications, sectionItemType, commands, sectionDescriptors, title, promotedApplicationIds });
 };
@@ -261,7 +261,7 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
 };
 export const useLogAppLauncherEmptyStateView = function useLogAppLauncherEmptyStateView(COMMAND_NOT_FOUND, query) {
   const _require = COMMAND_NOT_FOUND;
-  const entrypoint = _require(10861).useAppLauncherContext().entrypoint;
+  const entrypoint = _require(10862).useAppLauncherContext().entrypoint;
   const items = [COMMAND_NOT_FOUND, query, entrypoint];
   const effect = React.useEffect(() => {
     if (null != COMMAND_NOT_FOUND) {

@@ -1,10 +1,10 @@
-// Module ID: 15518
-// Function ID: 119449
+// Module ID: 15531
+// Function ID: 119498
 // Name: UsernameSearchScreen
-// Dependencies: [31, 27, 653, 33, 4131, 689, 675, 5159, 4529, 8756, 477, 5585, 4663, 12925, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 675, 5159, 4529, 8756, 477, 5585, 4663, 12926, 1212, 2]
 // Exports: default
 
-// Module 15518 (UsernameSearchScreen)
+// Module 15531 (UsernameSearchScreen)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -88,7 +88,7 @@ export default function UsernameSearchScreen(navigation) {
   obj3.headerText = intl.string(navigation(1212).t.YEOwDM);
   obj3.headerTextStyle = tmp.headerText;
   obj3.ref = ref;
-  obj1.children = callback(ref(12925), obj3);
+  obj1.children = callback(ref(12926), obj3);
   items2[1] = callback(closure_4, obj1);
   obj.children = items2;
   obj.children = callback2(tmp7, obj);

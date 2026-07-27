@@ -1,5 +1,5 @@
 // Module ID: 6089
-// Function ID: 54345
+// Function ID: 54346
 // Name: updatePoggermodeSettings
 // Dependencies: [1194, 5910, 6090, 686, 6092, 2]
 // Exports: clearMessageCombo, updateCombo, updateComboOnMessageSend, updatePoggermodeSettings

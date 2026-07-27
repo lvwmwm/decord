@@ -1,5 +1,5 @@
 // Module ID: 7300
-// Function ID: 60185
+// Function ID: 60186
 // Name: NitroWumpusHero3dIllustration
 // Dependencies: [33, 5085, 7301, 2]
 // Exports: NitroWumpusHero3dIllustration

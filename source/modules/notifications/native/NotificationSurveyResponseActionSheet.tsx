@@ -1,5 +1,5 @@
 // Module ID: 9480
-// Function ID: 73914
+// Function ID: 73915
 // Name: onClose
 // Dependencies: [31, 27, 653, 33, 4131, 5053, 689, 4099, 5187, 5186, 5499, 9481, 4127, 1212, 1921, 2]
 // Exports: default

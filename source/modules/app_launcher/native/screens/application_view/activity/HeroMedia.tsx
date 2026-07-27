@@ -1,10 +1,10 @@
-// Module ID: 11194
-// Function ID: 87186
+// Module ID: 11195
+// Function ID: 87191
 // Name: useHeroMediaDimensions
-// Dependencies: [31, 4123, 1455, 5188, 33, 4131, 10862, 10607, 566, 5468, 11169, 8080, 1212, 2]
+// Dependencies: [31, 4123, 1455, 5188, 33, 4131, 10863, 10608, 566, 5468, 11170, 8080, 1212, 2]
 // Exports: default
 
-// Module 11194 (useHeroMediaDimensions)
+// Module 11195 (useHeroMediaDimensions)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -19,7 +19,7 @@ function useHeroMediaDimensions(arg0) {
     obj = {};
   }
   let width = obj.width;
-  let defaultAppLauncherWidth = require(10862) /* useDefaultAppLauncherWidth */.useDefaultAppLauncherWidth();
+  let defaultAppLauncherWidth = require(10863) /* useDefaultAppLauncherWidth */.useDefaultAppLauncherWidth();
   if (null != width) {
     defaultAppLauncherWidth = width;
   }
@@ -41,7 +41,7 @@ export default function HeroMedia(width) {
   const tmp = callback();
   const size = useHeroMediaDimensions({ width: width.width });
   let obj = { applicationId, size: size.width, names: ["embedded_cover"] };
-  const tmp2 = importDefault(10607)(obj);
+  const tmp2 = importDefault(10608)(obj);
   let obj1 = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_3.useReducedMotion, []);
@@ -57,7 +57,7 @@ export default function HeroMedia(width) {
   }
   let tmp7 = null;
   if (null != prop1) {
-    tmp7 = importDefault(11169)(applicationId, prop.activity_preview_video_asset_id);
+    tmp7 = importDefault(11170)(applicationId, prop.activity_preview_video_asset_id);
   }
   let tmp16Result = null;
   if (null != tmp7) {

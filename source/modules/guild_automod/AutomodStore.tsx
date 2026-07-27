@@ -1,10 +1,10 @@
-// Module ID: 16289
-// Function ID: 126870
+// Module ID: 16301
+// Function ID: 126917
 // Name: useSyncAutomodRules
-// Dependencies: [57, 5, 31, 10990, 653, 677, 16290, 682, 10995, 4030, 3744, 2]
+// Dependencies: [57, 5, 31, 10991, 653, 677, 16302, 682, 10996, 4030, 3744, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRulesEffect
 
-// Module 16289 (useSyncAutomodRules)
+// Module 16301 (useSyncAutomodRules)
 import _slicedToArray from "_slicedToArray";
 import closure_3 from "useStoreWithEqualityFn";
 import result from "result";

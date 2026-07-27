@@ -1,5 +1,5 @@
 // Module ID: 5519
-// Function ID: 47023
+// Function ID: 47024
 // Name: createStackNavigator
 // Dependencies: [5520, 5550, 5521, 5569, 5549, 5571, 5572, 5567, 5524, 5577, 5578]
 

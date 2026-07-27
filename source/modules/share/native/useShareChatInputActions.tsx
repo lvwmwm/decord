@@ -1,5 +1,5 @@
 // Module ID: 9854
-// Function ID: 76404
+// Function ID: 76405
 // Name: useShareChatInputActions
 // Dependencies: [57, 31, 1853, 9268, 2]
 // Exports: useShareChatInputActions

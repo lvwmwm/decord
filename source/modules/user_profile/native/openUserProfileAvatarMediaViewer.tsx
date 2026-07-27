@@ -1,5 +1,5 @@
 // Module ID: 8052
-// Function ID: 64045
+// Function ID: 64046
 // Name: openUserProfileAvatarMediaViewer
 // Dependencies: [4123, 653, 8053, 2]
 // Exports: default
@@ -20,11 +20,14 @@ export default function openUserProfileAvatarMediaViewer(user) {
   if (animate) {
     animate = user.animate;
   }
-  const avatarURL = user.getAvatarURL(guildId, tmp, animate);
-  let obj = require(8053) /* _openMediaModal */;
-  obj = { initialSources: null, originViewOrOriginLayout: null, analyticsSource: "user_profile_avatar", openAs: "action-sheet", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
-  const items = [{ uri: avatarURL, mediaIndex: 0, height: AVATAR_MAX_SIZE, width: AVATAR_MAX_SIZE, accessoryType: "embed" }];
-  obj.initialSources = items;
-  obj.originViewOrOriginLayout = originViewOrOriginLayout;
-  obj.openMediaModal(obj);
+  const avatarURL = user.getAvatarURL(guildId, AVATAR_MAX_SIZE, animate);
+  if ("string" === typeof avatarURL) {
+    let obj = require(8053) /* _openMediaModal */;
+    obj = { initialSources: null, originViewOrOriginLayout: null, analyticsSource: "user_profile_avatar", openAs: "action-sheet", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
+    obj = { uri: avatarURL, mediaIndex: 0, height: AVATAR_MAX_SIZE, width: AVATAR_MAX_SIZE, accessoryType: "embed" };
+    const items = [obj];
+    obj.initialSources = items;
+    obj.originViewOrOriginLayout = originViewOrOriginLayout;
+    obj.openMediaModal(obj);
+  }
 };

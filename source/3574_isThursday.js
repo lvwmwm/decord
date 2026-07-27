@@ -1,5 +1,5 @@
 // Module ID: 3574
-// Function ID: 27736
+// Function ID: 27737
 // Name: isThursday
 // Dependencies: [3210, 3211]
 // Exports: default

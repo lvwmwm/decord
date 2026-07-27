@@ -1,15 +1,15 @@
-// Module ID: 12687
-// Function ID: 98463
+// Module ID: 12688
+// Function ID: 98468
 // Name: getFirstInstallTimeMillis
-// Dependencies: [1194, 587, 12688, 4207, 2]
+// Dependencies: [1194, 587, 12689, 4207, 2]
 // Exports: getFirstInstallTimeElapsed
 
-// Module 12687 (getFirstInstallTimeMillis)
+// Module 12688 (getFirstInstallTimeMillis)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 function getFirstInstallTimeMillis(arg0) {
-  const firstInstallTimeMillis = importDefault(12688).getFirstInstallTimeMillis();
+  const firstInstallTimeMillis = importDefault(12689).getFirstInstallTimeMillis();
   let str = "InstallTimeLaunch";
   if ("authed" === arg0.from) {
     str = "InstallTimeAuthed";

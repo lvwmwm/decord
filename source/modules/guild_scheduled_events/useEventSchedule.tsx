@@ -1,5 +1,5 @@
 // Module ID: 8154
-// Function ID: 65389
+// Function ID: 65390
 // Name: _getEventSchedule
 // Dependencies: [5751, 8148, 8153, 566, 2]
 // Exports: default, getEventSchedule, useEventScheduleById

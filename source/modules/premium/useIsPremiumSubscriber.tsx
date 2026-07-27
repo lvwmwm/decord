@@ -1,5 +1,5 @@
 // Module ID: 8334
-// Function ID: 66856
+// Function ID: 66857
 // Name: useIsPremiumSubscriber
 // Dependencies: [1850, 1852, 566, 1873, 2]
 // Exports: useIsPremiumSubscriber

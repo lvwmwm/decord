@@ -1,5 +1,5 @@
 // Module ID: 9131
-// Function ID: 71767
+// Function ID: 71768
 // Name: encodeTotpSecret
 // Dependencies: [27, 1553, 9132, 1184, 2]
 // Exports: captureWebAuthnException, encodeTotpSecretAsUrl, generateTotpSecret

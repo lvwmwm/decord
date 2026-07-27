@@ -1,8 +1,8 @@
-// Module ID: 11158
-// Function ID: 86742
-// Dependencies: [31, 27, 9242, 33, 4131, 689, 11159, 2]
+// Module ID: 11159
+// Function ID: 86747
+// Dependencies: [31, 27, 9242, 33, 4131, 689, 11160, 2]
 
-// Module 11158
+// Module 11159
 import { View } from "get ActivityIndicator";
 import { useBestActiveChatInputContainerHeight as closure_3 } from "getChatInputContainerHeight";
 import { jsx } from "jsxProd";
@@ -26,7 +26,7 @@ const memoResult = require("result").memo((visibleContent) => {
     items[1] = obj;
     obj.style = items;
     obj = { context, visibleContent };
-    obj.children = jsx(importDefault(11159), { context, visibleContent });
+    obj.children = jsx(importDefault(11160), { context, visibleContent });
     tmp3 = <View context={context} visibleContent={visibleContent} />;
   }
   return tmp3;

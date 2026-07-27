@@ -1,9 +1,9 @@
-// Module ID: 15119
-// Function ID: 115141
+// Module ID: 15131
+// Function ID: 115187
 // Name: handlePress
-// Dependencies: [31, 10222, 4327, 33, 4131, 689, 3832, 1212, 9243, 4321, 9029, 15026, 2]
+// Dependencies: [31, 10223, 4327, 33, 4131, 689, 3832, 1212, 9243, 4321, 9029, 15027, 2]
 
-// Module 15119 (handlePress)
+// Module 15131 (handlePress)
 import importAllResult from "result";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj.channel = channel;
   obj.selected = selected;
   obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-  return jsx(importDefault(15026), { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true });
+  return jsx(importDefault(15027), { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true });
 });
 let result = require("ReadStateTypes").fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
 

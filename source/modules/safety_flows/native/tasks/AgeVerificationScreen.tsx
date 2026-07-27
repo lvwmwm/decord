@@ -1,10 +1,10 @@
-// Module ID: 16628
-// Function ID: 129733
+// Module ID: 16640
+// Function ID: 129780
 // Name: AgeVerificationScreen
-// Dependencies: [31, 27, 1850, 653, 33, 4131, 491, 16621, 566, 7566, 16615, 1882, 6692, 16624, 6727, 1212, 2461, 2717, 6690, 1921, 13151, 5588, 4127, 7569, 2]
+// Dependencies: [31, 27, 1850, 653, 33, 4131, 491, 16633, 566, 7566, 16627, 1882, 6692, 16636, 6727, 1212, 2461, 2717, 6690, 1921, 13152, 5588, 4127, 7569, 2]
 // Exports: default
 
-// Module 16628 (AgeVerificationScreen)
+// Module 16640 (AgeVerificationScreen)
 import result from "result";
 import { Pressable } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

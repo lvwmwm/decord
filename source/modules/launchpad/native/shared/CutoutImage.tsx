@@ -1,8 +1,8 @@
-// Module ID: 15713
-// Function ID: 121272
-// Dependencies: [57, 31, 27, 33, 491, 8463, 11956, 2]
+// Module ID: 15725
+// Function ID: 121319
+// Dependencies: [57, 31, 27, 33, 491, 8463, 11957, 2]
 
-// Module 15713
+// Module 15725
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { Image } from "get ActivityIndicator";
@@ -170,7 +170,7 @@ const memoResult = importAllResult.memo(function CutoutImage(cutoutTopLeftSize) 
         return tmp12(tmp13, obj);
       } else {
         if ("number" !== typeof imageSource) {
-          const obj10 = { height: imageSize, width: imageSize, href: importDefault(11956)(imageSource), mask: combined, clipPath: combined1 };
+          const obj10 = { height: imageSize, width: imageSize, href: importDefault(11957)(imageSource), mask: combined, clipPath: combined1 };
           let tmp66 = callback2(imageTintColor(8463).Image, obj10);
         }
         const obj11 = { height: imageSize, width: imageSize, mask: combined, clipPath: combined1 };

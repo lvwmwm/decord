@@ -1,5 +1,5 @@
 // Module ID: 4328
-// Function ID: 38012
+// Function ID: 38013
 // Name: getVoiceAnalyticsMetadataAdditional
 // Dependencies: [2]
 // Exports: getVoiceAnalyticsMetadataAdditional

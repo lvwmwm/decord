@@ -1,10 +1,10 @@
-// Module ID: 15442
-// Function ID: 117886
+// Module ID: 15455
+// Function ID: 117935
 // Name: useSearchMessages
 // Dependencies: [5847, 10041, 566, 10042, 2]
 // Exports: useSearchMessages
 
-// Module 15442 (useSearchMessages)
+// Module 15455 (useSearchMessages)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

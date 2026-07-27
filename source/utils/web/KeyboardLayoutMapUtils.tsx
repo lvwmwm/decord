@@ -1,10 +1,10 @@
-// Module ID: 12889
-// Function ID: 100133
+// Module ID: 12890
+// Function ID: 100138
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 5, 6, 7, 683, 5732, 3, 477, 12888, 587, 2]
+// Dependencies: [15, 17, 18, 57, 5, 6, 7, 683, 5732, 3, 477, 12889, 587, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, resetKeyboardMapper
 
-// Module 12889 (_isNativeReflectConstruct)
+// Module 12890 (_isNativeReflectConstruct)
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";

@@ -1,10 +1,10 @@
-// Module ID: 15712
-// Function ID: 121260
+// Module ID: 15724
+// Function ID: 121307
 // Name: SimpleGuildContainer
-// Dependencies: [31, 27, 33, 4131, 9055, 14920, 689, 15711, 3835, 15713, 3992, 4543, 2]
+// Dependencies: [31, 27, 33, 4131, 9055, 14921, 689, 15723, 3835, 15725, 3992, 4543, 2]
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 15712 (SimpleGuildContainer)
+// Module 15724 (SimpleGuildContainer)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,14 +48,14 @@ let closure_12 = importAllResult.memo((arg0) => {
     obj = { backgroundColor };
     obj.style = obj;
     ({ source: obj3.source, IconComponent: obj3.IconComponent, isCurrentUserConnected: obj3.isCurrentUserConnected } = activityIndicatorState);
-    let tmp2 = callback(require(14920) /* getMediaIcon */.GuildsBarActivityIndicatorBase, obj);
+    let tmp2 = callback(require(14921) /* getMediaIcon */.GuildsBarActivityIndicatorBase, obj);
   } else {
     tmp2 = null;
     if (null != guildId) {
       obj = { guildId };
       const obj1 = { backgroundColor };
       obj.style = obj1;
-      tmp2 = callback(importDefault(14920), obj);
+      tmp2 = callback(importDefault(14921), obj);
     }
   }
   return tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 10816
-// Function ID: 83901
+// Module ID: 10817
+// Function ID: 83906
 // Name: openChannelCallModalForChannelId
 // Dependencies: [1348, 6653, 4342, 2]
 // Exports: default
 
-// Module 10816 (openChannelCallModalForChannelId)
+// Module 10817 (openChannelCallModalForChannelId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

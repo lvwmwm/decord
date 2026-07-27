@@ -1,5 +1,5 @@
 // Module ID: 8577
-// Function ID: 68148
+// Function ID: 68149
 // Name: ExperimentalGameControllerLinkIcon
 // Dependencies: [31, 33, 689, 3834, 8578, 2]
 // Exports: ExperimentalGameControllerLinkIcon

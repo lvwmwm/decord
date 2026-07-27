@@ -1,5 +1,5 @@
 // Module ID: 9995
-// Function ID: 77329
+// Function ID: 77330
 // Name: orderByTotalMemberCount
 // Dependencies: [9996, 44, 22, 2]
 // Exports: guildDirectoryEntryFromServer, rankByDateAdded, rankGuildEntries

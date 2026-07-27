@@ -1,5 +1,5 @@
 // Module ID: 9253
-// Function ID: 72548
+// Function ID: 72549
 // Name: openPremiumModal
 // Dependencies: [4338, 6269, 1935, 2]
 // Exports: default

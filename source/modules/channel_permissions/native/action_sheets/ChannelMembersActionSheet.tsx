@@ -1,10 +1,10 @@
-// Module ID: 10856
-// Function ID: 84376
+// Module ID: 10857
+// Function ID: 84381
 // Name: ChannelMembersActionSheet
-// Dependencies: [31, 27, 1348, 1918, 1911, 1838, 3759, 653, 33, 4131, 689, 1557, 566, 1456, 4321, 8215, 1212, 5187, 5186, 4661, 4099, 7627, 10857, 8943, 7578, 10855, 10158, 1273, 5189, 8223, 4127, 2]
+// Dependencies: [31, 27, 1348, 1918, 1911, 1838, 3759, 653, 33, 4131, 689, 1557, 566, 1456, 4321, 8215, 1212, 5187, 5186, 4661, 4099, 7627, 10858, 8943, 7578, 10856, 10159, 1273, 5189, 8223, 4127, 2]
 // Exports: default
 
-// Module 10856 (ChannelMembersActionSheet)
+// Module 10857 (ChannelMembersActionSheet)
 import "set";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -125,7 +125,7 @@ export default function ChannelMembersActionSheet(arg0) {
           obj5.onPress = function onPress() {
             return outer1_0(tmp[25]).openAddMembersActionSheet(stateFromStores);
           };
-          obj5.icon = tmp13(require(10158) /* GroupPlusIcon */.GroupPlusIcon, {});
+          obj5.icon = tmp13(require(10159) /* GroupPlusIcon */.GroupPlusIcon, {});
           let tmp13Result = tmp13(require(7578) /* RowButtonWrapper */.RowButton, obj5);
         } else {
           const obj6 = { style: tmp.warning };

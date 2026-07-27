@@ -1,10 +1,10 @@
-// Module ID: 10187
-// Function ID: 78814
+// Module ID: 10188
+// Function ID: 78819
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1347, 3760, 5602, 3761, 4343, 1352, 1348, 1838, 4203, 3768, 1907, 3948, 4811, 4326, 1342, 1850, 10188, 653, 5660, 1211, 4346, 3804, 1360, 10189, 10190, 4366, 3983, 10191, 5916, 4321, 1212, 7934, 4320, 5870, 7708, 3, 5856, 3970, 1882, 5914, 10193, 566, 2]
+// Dependencies: [1347, 3760, 5602, 3761, 4343, 1352, 1348, 1838, 4203, 3768, 1907, 3948, 4811, 4326, 1342, 1850, 10189, 653, 5660, 1211, 4346, 3804, 1360, 10190, 10191, 4366, 3983, 10192, 5916, 4321, 1212, 7934, 4320, 5870, 7708, 3, 5856, 3970, 1882, 5914, 10194, 566, 2]
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications
 
-// Module 10187 (_createForOfIteratorHelperLoose)
+// Module 10188 (_createForOfIteratorHelperLoose)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -259,7 +259,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
               if (obj4.isChannelCurrentlyVisible(channel1.id)) {
                 return false;
               }
-              obj4 = require(10189) /* isChannelCurrentlyVisible */;
+              obj4 = require(10190) /* isChannelCurrentlyVisible */;
             }
             if (closure_13.isBlockedOrIgnoredForMessage(message)) {
               return false;
@@ -287,7 +287,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
                 if (muted.isMuted(channel1.id)) {
                   return false;
                 } else {
-                  const threadNotificationSetting = require(10190) /* computeThreadNotificationSetting */.computeThreadNotificationSetting(channel1);
+                  const threadNotificationSetting = require(10191) /* computeThreadNotificationSetting */.computeThreadNotificationSetting(channel1);
                   let tmp44 = threadNotificationSetting !== ThreadMemberFlags.NO_MESSAGES;
                   if (tmp44) {
                     result = threadNotificationSetting === ThreadMemberFlags.ALL_MESSAGES;
@@ -398,8 +398,8 @@ export const shouldNotifyForForumThreadCreation = function shouldNotifyForForumT
       if (tmp12) {
         let result = !flag;
         if (result) {
-          result = require(10189) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel2.id);
-          const obj2 = require(10189) /* isChannelCurrentlyVisible */;
+          result = require(10190) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel2.id);
+          const obj2 = require(10190) /* isChannelCurrentlyVisible */;
         }
         let newForumThreadsCreated = !result;
         if (newForumThreadsCreated) {
@@ -440,8 +440,8 @@ export const shouldNotifyForReaction = function shouldNotifyForReaction(arg0) {
       if (tmp13) {
         let result = !includeSelectedChannel;
         if (result) {
-          result = require(10189) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel.id);
-          const obj2 = require(10189) /* isChannelCurrentlyVisible */;
+          result = require(10190) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel.id);
+          const obj2 = require(10190) /* isChannelCurrentlyVisible */;
         }
         tmp13 = !result;
       }
@@ -459,8 +459,8 @@ export const shouldIncludeSelectedChannel = function shouldIncludeSelectedChanne
       const rootNavigationRef = require(3983) /* getRootNavigationRef */.getRootNavigationRef();
       let tmp7 = null == rootNavigationRef || !rootNavigationRef.isReady();
       if (!tmp7) {
-        tmp7 = !require(10191) /* getFocusedChannelId */.isChannelFocused();
-        const obj4 = require(10191) /* getFocusedChannelId */;
+        tmp7 = !require(10192) /* getFocusedChannelId */.isChannelFocused();
+        const obj4 = require(10192) /* getFocusedChannelId */;
       }
       flag = tmp7;
       const obj2 = require(3983) /* getRootNavigationRef */;
@@ -733,8 +733,8 @@ export const allowInAppNotifications = function allowInAppNotifications() {
 export const useAllowInAppNotifications = function useAllowInAppNotifications() {
   const ShowInAppNotifications = require(3804) /* explicitContentFromProto */.ShowInAppNotifications;
   const setting = ShowInAppNotifications.useSetting();
-  const focusModeEnabled = require(10193) /* useFocusModeEnabled */.useFocusModeEnabled();
-  const obj = require(10193) /* useFocusModeEnabled */;
+  const focusModeEnabled = require(10194) /* useFocusModeEnabled */.useFocusModeEnabled();
+  const obj = require(10194) /* useFocusModeEnabled */;
   const items = [closure_18];
   const obj2 = require(566) /* initialize */;
   return !require(566) /* initialize */.useStateFromStores(items, () => outer1_18.hasAction()) && setting && !focusModeEnabled;

@@ -1,10 +1,10 @@
-// Module ID: 10429
-// Function ID: 80852
+// Module ID: 10430
+// Function ID: 80857
 // Name: date
-// Dependencies: [57, 31, 4977, 1428, 9422, 9423, 10430, 664, 2]
+// Dependencies: [57, 31, 4977, 1428, 9422, 9423, 10431, 664, 2]
 // Exports: useMobileQuestOrbRewardModalCtaPriorityExperiment, useQuestOrbsMultiplierMarketing, useShouldRemoveQuestHomeHero
 
-// Module 10429 (date)
+// Module 10430 (date)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
@@ -87,7 +87,7 @@ export const useQuestOrbsMultiplierMarketing = function useQuestOrbsMultiplierMa
     enabled = closure_5.useConfig(obj).enabled;
   }
   obj.shouldShowBonusOrbsUX = enabled;
-  obj.multiplier = require(10430) /* QuestOrbsMultiplier */.QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100;
+  obj.multiplier = require(10431) /* QuestOrbsMultiplier */.QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100;
   return obj;
 };
 export const VideoQuestPlayerRefactorExperiment = ApexExperiment;

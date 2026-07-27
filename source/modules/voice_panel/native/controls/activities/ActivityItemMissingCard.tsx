@@ -1,9 +1,9 @@
-// Module ID: 15886
-// Function ID: 122738
+// Module ID: 15898
+// Function ID: 122785
 // Name: ActivityItemEmptyCard
-// Dependencies: [5, 31, 27, 33, 4131, 689, 9975, 5462, 10578, 10607, 4661, 15887, 15888, 5515, 2]
+// Dependencies: [5, 31, 27, 33, 4131, 689, 9975, 5462, 10579, 10608, 4661, 15899, 15900, 5515, 2]
 
-// Module 15886 (ActivityItemEmptyCard)
+// Module 15898 (ActivityItemEmptyCard)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import importAllResult from "result";
 import { ActivityIndicator } from "get ActivityIndicator";

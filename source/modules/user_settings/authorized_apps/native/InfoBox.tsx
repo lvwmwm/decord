@@ -1,5 +1,5 @@
 // Module ID: 7993
-// Function ID: 63721
+// Function ID: 63722
 // Name: InfoBox
 // Dependencies: [31, 27, 33, 4131, 689, 4087, 6673, 4127, 2]
 // Exports: default

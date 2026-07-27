@@ -1,9 +1,9 @@
-// Module ID: 10409
-// Function ID: 80437
+// Module ID: 10410
+// Function ID: 80442
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1348, 1838, 4203, 3768, 1907, 1850, 4952, 1353, 4948, 653, 3764, 9012, 4958, 4321, 4951, 636, 566, 686, 2]
 
-// Module 10409 (_isNativeReflectConstruct)
+// Module 10410 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import calculateElevatedPermissions from "calculateElevatedPermissions";

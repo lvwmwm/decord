@@ -1,9 +1,9 @@
-// Module ID: 12249
-// Function ID: 95655
+// Module ID: 12250
+// Function ID: 95660
 // Name: HTML
-// Dependencies: [57, 31, 653, 33, 8078, 8063, 8057, 8055, 12250, 477, 2]
+// Dependencies: [57, 31, 653, 33, 8078, 8063, 8057, 8055, 12251, 477, 2]
 
-// Module 12249 (HTML)
+// Module 12250 (HTML)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { YOUTUBE_EMBED_PAGE_TYPE } from "ME";
@@ -148,7 +148,7 @@ const memoResult = importAllResult.memo((visible) => {
     if (first === visible(8078).PlayerState.ERRORED) {
       if ("embed_not_allowed" === tmp5[0]) {
         obj = { videoId: youtubeVideoIdFromURI.videoId };
-        return ref(first(12250), obj);
+        return ref(first(12251), obj);
       }
     }
     const tmp17 = visible(477).isAndroid() ? { nestedScrollEnabled: true, overScrollMode: "never", domStorageEnabled: true, mixedContentMode: "compatibility" } : {};

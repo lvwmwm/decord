@@ -1,5 +1,5 @@
 // Module ID: 9955
-// Function ID: 77083
+// Function ID: 77084
 // Name: UserSummaryItem
 // Dependencies: [31, 27, 1918, 33, 4131, 689, 1273, 566, 1392, 4320, 1212, 4127, 2]
 // Exports: default

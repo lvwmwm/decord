@@ -1,5 +1,5 @@
 // Module ID: 8593
-// Function ID: 68265
+// Function ID: 68266
 // Name: useDefaultVariantIndex
 // Dependencies: [5786, 566, 5781, 2]
 // Exports: useDefaultVariantIndex

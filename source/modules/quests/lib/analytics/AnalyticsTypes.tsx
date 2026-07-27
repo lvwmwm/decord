@@ -1,5 +1,5 @@
 // Module ID: 5959
-// Function ID: 53043
+// Function ID: 53044
 // Name: getQuestContentName
 // Dependencies: [4980, 2]
 // Exports: getContentProperties, getQuestStatus

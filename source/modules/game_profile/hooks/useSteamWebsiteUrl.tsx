@@ -1,5 +1,5 @@
 // Module ID: 8423
-// Function ID: 67275
+// Function ID: 67276
 // Name: buildSteamStoreUrl
 // Dependencies: [4152, 653, 566, 8424, 8422, 1832, 2]
 // Exports: useSteamWebsiteUrl

@@ -1,9 +1,9 @@
-// Module ID: 14202
-// Function ID: 109275
+// Module ID: 14203
+// Function ID: 109280
 // Name: getActiveApplicationStream
-// Dependencies: [4150, 1194, 4178, 7697, 566, 4228, 44, 8770, 10705, 10059, 1212, 2]
+// Dependencies: [4150, 1194, 4178, 7697, 566, 4228, 44, 8770, 10706, 10059, 1212, 2]
 
-// Module 14202 (getActiveApplicationStream)
+// Module 14203 (getActiveApplicationStream)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -54,7 +54,7 @@ createToggle = {
     importDefault(8770).setLocalVolume(tmp.ownerId, volume, require(4228) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM);
   },
   usePredicate: function useHasStreamVolumeSetting() {
-    const obj = importDefault(10705);
+    const obj = importDefault(10706);
     let items = [_isNativeReflectConstruct, closure_4];
     const obj2 = require(566) /* initialize */;
     return require(566) /* initialize */.useStateFromStores(items, () => {

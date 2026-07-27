@@ -1,9 +1,9 @@
-// Module ID: 12625
-// Function ID: 97581
+// Module ID: 12626
+// Function ID: 97586
 // Name: importDefaultResult1
-// Dependencies: [1194, 3, 12626, 12665, 12668, 9413, 675, 652, 477, 3742, 1430, 686, 2]
+// Dependencies: [1194, 3, 12627, 12666, 12669, 9413, 675, 652, 477, 3742, 1430, 686, 2]
 
-// Module 12625 (importDefaultResult1)
+// Module 12626 (importDefaultResult1)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importDefaultResult from "_isNativeReflectConstruct";
 import importDefaultResult1 from "_isNativeReflectConstruct";

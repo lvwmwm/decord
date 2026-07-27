@@ -1,5 +1,5 @@
 // Module ID: 8387
-// Function ID: 67097
+// Function ID: 67098
 // Name: RestrictedGuildProfileView
 // Dependencies: [31, 27, 33, 8388, 4067, 3835, 689, 4555, 5513, 4127, 1212, 2]
 // Exports: default

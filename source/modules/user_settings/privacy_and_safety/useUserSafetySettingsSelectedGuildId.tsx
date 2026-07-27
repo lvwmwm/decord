@@ -1,10 +1,10 @@
-// Module ID: 14593
-// Function ID: 111361
+// Module ID: 14594
+// Function ID: 111366
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: [1838, 14591, 653, 566, 2]
+// Dependencies: [1838, 14592, 653, 566, 2]
 // Exports: useAllServersOptionSelected, useIsSelectedGuildAHub
 
-// Module 14593 (useUserSafetySettingsSelectedGuildId)
+// Module 14594 (useUserSafetySettingsSelectedGuildId)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { GuildFeatures } from "ME";

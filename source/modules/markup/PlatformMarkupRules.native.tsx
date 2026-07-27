@@ -1,5 +1,5 @@
 // Module ID: 4593
-// Function ID: 40250
+// Function ID: 40251
 // Name: decorateWithIcon
 // Dependencies: [27, 4594, 3772, 3830, 4573, 1392, 4574, 4577, 2]
 

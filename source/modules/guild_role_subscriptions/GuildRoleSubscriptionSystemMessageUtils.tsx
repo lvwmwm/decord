@@ -1,5 +1,5 @@
 // Module ID: 7714
-// Function ID: 61605
+// Function ID: 61606
 // Name: identityHook
 // Dependencies: [1838, 1850, 7715, 653, 21, 1212, 7716, 4325, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick

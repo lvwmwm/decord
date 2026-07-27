@@ -1,10 +1,10 @@
-// Module ID: 10745
-// Function ID: 83442
+// Module ID: 10746
+// Function ID: 83447
 // Name: ExpandedControlItemIcon
-// Dependencies: [31, 27, 4150, 1194, 4192, 33, 4131, 689, 1273, 10746, 10747, 7575, 566, 10748, 1212, 10709, 477, 8763, 8788, 10682, 10749, 10734, 10750, 10751, 2]
+// Dependencies: [31, 27, 4150, 1194, 4192, 33, 4131, 689, 1273, 10747, 10748, 7575, 566, 10749, 1212, 10710, 477, 8763, 8788, 10683, 10750, 10735, 10751, 10752, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 10745 (ExpandedControlItemIcon)
+// Module 10746 (ExpandedControlItemIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,9 +31,9 @@ function ExpandedControlItemIcon(iconSource) {
     if (iconSource.showIconSparkle) {
       obj = {};
       const items = [tmp14, , ];
-      obj = { style: tmp.sparkle2, source: importDefault(10746) };
+      obj = { style: tmp.sparkle2, source: importDefault(10747) };
       items[1] = callback(closure_4, obj);
-      const obj1 = { style: tmp.sparkle, source: importDefault(10747) };
+      const obj1 = { style: tmp.sparkle, source: importDefault(10748) };
       items[2] = callback(closure_4, obj1);
       obj.children = items;
       tmp10 = callback2(closure_3, obj);
@@ -105,8 +105,8 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   if (null != stateFromStores) {
     ownerId = stateFromStores.ownerId;
   }
-  const tmp3 = importDefault(10748);
-  ({ effectiveVolume, handleVolumeChange } = importDefault(10748)(ownerId, MediaEngineContextTypes.STREAM));
+  const tmp3 = importDefault(10749);
+  ({ effectiveVolume, handleVolumeChange } = importDefault(10749)(ownerId, MediaEngineContextTypes.STREAM));
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.text = intl.string(require(1212) /* getSystemLocale */.t.pEAl4b);
@@ -114,9 +114,9 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   obj.style = items1;
   const items2 = [callback(require(7575) /* Form */.FormLabel, obj), ];
   obj = {};
-  const tmp3Result = importDefault(10748)(ownerId, MediaEngineContextTypes.STREAM);
+  const tmp3Result = importDefault(10749)(ownerId, MediaEngineContextTypes.STREAM);
   const tmp6 = callback;
-  const tmp7 = importDefault(10709);
+  const tmp7 = importDefault(10710);
   let fn;
   if (obj4.isAndroid()) {
     fn = () => true;
@@ -157,7 +157,7 @@ export const ScreenshareButton = function ScreenshareButton(arg0) {
   let onPress;
   let text;
   ({ channel, disabled } = arg0);
-  const tmp = importDefault(10682)(channel);
+  const tmp = importDefault(10683)(channel);
   const obj = {};
   let tmp4 = !tmp.isFeatureEnabled;
   ({ onPress, imgSource, text } = tmp);
@@ -175,12 +175,12 @@ export const DeafenButton = function DeafenButton(disabled) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(10734) /* NOOP */;
-  const deafHandler = obj.createDeafHandler(importDefault(10749)(disabled.channel));
+  let obj = require(10735) /* NOOP */;
+  const deafHandler = obj.createDeafHandler(importDefault(10750)(disabled.channel));
   if (deafHandler.deaf) {
-    let tmp5 = 10750;
+    let tmp5 = 10751;
   } else {
-    tmp5 = 10751;
+    tmp5 = 10752;
   }
   obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(tmp5) };
   const intl = require(1212) /* getSystemLocale */.intl;

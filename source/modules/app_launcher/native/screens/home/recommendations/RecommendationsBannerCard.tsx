@@ -1,10 +1,10 @@
-// Module ID: 11201
-// Function ID: 87204
+// Module ID: 11202
+// Function ID: 87209
 // Name: RecommendationsBannerCard
-// Dependencies: [31, 27, 653, 33, 4131, 689, 7953, 7923, 1392, 11193, 4661, 11202, 1882, 11196, 4127, 1212, 11167, 5171, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 7953, 7923, 1392, 11194, 4661, 11203, 1882, 11197, 4127, 1212, 11168, 5171, 2]
 // Exports: default
 
-// Module 11201 (RecommendationsBannerCard)
+// Module 11202 (RecommendationsBannerCard)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -76,7 +76,7 @@ export default function RecommendationsBannerCard(application) {
   const applicationIconSource = obj2.getApplicationIconSource(obj);
   if (isLandscape) {
     obj = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    let tmp9Result = callback(application(11193).BaseAppRow, obj);
+    let tmp9Result = callback(application(11194).BaseAppRow, obj);
   } else {
     obj1 = {};
     const items1 = [tmp.container, , ];
@@ -105,11 +105,11 @@ export default function RecommendationsBannerCard(application) {
     }
     obj4.applicationIcon = tmp19;
     obj4.overrideImageUrl = application.overrideImageUrl;
-    const items2 = [callback(importDefault(11202), obj4), ];
+    const items2 = [callback(importDefault(11203), obj4), ];
     if (showsPromoted) {
       const obj5 = { style: tmp.notifsContainer };
       const obj6 = { labelType: shelfBadgeTypeIfActive, replacementStyles: tmp.badge };
-      const items3 = [callback(importDefault(11196), obj6), ];
+      const items3 = [callback(importDefault(11197), obj6), ];
       if (showsPromoted) {
         const obj7 = { style: tmp.promotedLabelWrapper };
         obj8 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary" };
@@ -133,7 +133,7 @@ export default function RecommendationsBannerCard(application) {
     let tmp34 = null != applicationIconSource;
     if (tmp34) {
       const obj10 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp34 = callback(importDefault(11167), obj10);
+      tmp34 = callback(importDefault(11168), obj10);
     }
     const items5 = [tmp34, , ];
     const obj11 = { style: tmp.appDetails };
@@ -151,7 +151,7 @@ export default function RecommendationsBannerCard(application) {
     const tmp12 = callback2;
     const tmp13 = View;
     const tmp14 = callback;
-    const tmp17 = importDefault(11202);
+    const tmp17 = importDefault(11203);
     const tmp32 = callback2;
     const tmp33 = View;
     const tmp9 = callback2;

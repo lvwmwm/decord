@@ -1,10 +1,10 @@
-// Module ID: 14989
-// Function ID: 114291
+// Module ID: 14990
+// Function ID: 114296
 // Name: HappeningNowCardPlaceholder
-// Dependencies: [31, 27, 14244, 33, 4131, 689, 3992, 4132, 14245, 2]
+// Dependencies: [31, 27, 14245, 33, 4131, 689, 3992, 4132, 14246, 2]
 // Exports: HappeningNowCardPlaceholder
 
-// Module 14989 (HappeningNowCardPlaceholder)
+// Module 14990 (HappeningNowCardPlaceholder)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { HAPPENING_NOW_CONTENT_HEIGHT } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
@@ -84,5 +84,5 @@ export const HappeningNowCardPlaceholder = function HappeningNowCardPlaceholder(
   items1[1] = callback2(View, obj1);
   obj.children = items1;
   obj.children = callback2(importDefault(3992).View, obj);
-  return tmp3(importDefault(14245), obj);
+  return tmp3(importDefault(14246), obj);
 };

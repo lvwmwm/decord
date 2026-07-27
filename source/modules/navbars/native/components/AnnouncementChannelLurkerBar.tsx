@@ -1,9 +1,9 @@
-// Module ID: 10331
-// Function ID: 79849
+// Module ID: 10332
+// Function ID: 79854
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [31, 27, 33, 4131, 689, 4127, 1212, 4544, 10332, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4127, 1212, 4544, 10333, 2]
 
-// Module 10331 (AnnouncementChannelLurkerBar)
+// Module 10332 (AnnouncementChannelLurkerBar)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

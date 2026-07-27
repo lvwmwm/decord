@@ -1,5 +1,5 @@
 // Module ID: 10129
-// Function ID: 78409
+// Function ID: 78410
 // Name: GroupDMInviteManagement
 // Dependencies: [5, 57, 31, 27, 6640, 7628, 653, 33, 4131, 4560, 507, 22, 689, 10130, 5583, 1273, 10148, 10149, 1212, 5087, 480, 5517, 2]
 

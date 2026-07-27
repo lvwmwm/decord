@@ -1,5 +1,5 @@
 // Module ID: 7611
-// Function ID: 60836
+// Function ID: 60837
 // Name: useLegacyTextMigrationHighlight
 // Dependencies: [4130, 4131, 689, 566, 2]
 // Exports: useLegacyTextMigrationHighlight

@@ -1,5 +1,5 @@
 // Module ID: 10058
-// Function ID: 78001
+// Function ID: 78002
 // Name: useSwipeToReplySettingValue
 // Dependencies: [7697, 653, 1282, 1212, 675, 3804, 10059, 2]
 // Exports: getSwipeToReplySettingValue, useSwipeToReplySettingValue

@@ -1,5 +1,5 @@
 // Module ID: 10096
-// Function ID: 78240
+// Function ID: 78241
 // Name: dismissChannelSafetyWarnings
 // Dependencies: [9031, 653, 686, 507, 2]
 // Exports: acknowledgeChannelSafetyWarningTooltip, clearChannelSafetyWarnings, dismissChannelSafetyWarnings, markAsStrangerDanger, reportFalsePositive, setChannelSafetyWarningFeedback

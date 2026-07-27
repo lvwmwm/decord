@@ -1,10 +1,10 @@
-// Module ID: 15826
-// Function ID: 122184
+// Module ID: 15838
+// Function ID: 122231
 // Name: calculatePIPState
-// Dependencies: [4144, 4150, 9976, 4149, 4195, 15827, 2]
+// Dependencies: [4144, 4150, 9976, 4149, 4195, 15839, 2]
 // Exports: default
 
-// Module 15826 (calculatePIPState)
+// Module 15838 (calculatePIPState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { VoicePanelModes } from "VoicePanelModes";
@@ -34,7 +34,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
     set.add(focusedId.focusedId);
   }
   let obj = { channelId, lastParticipantId, speakingUserId, focusedParticipantId: focusedId.focusedId, blockList: set, panelMode: focusedId.mode, showSecondaryPIP: focusedId.showSecondaryPIP };
-  const pIPParticipantToShow = require(15827) /* _createForOfIteratorHelperLoose */.computePIPParticipantToShow(obj);
+  const pIPParticipantToShow = require(15839) /* _createForOfIteratorHelperLoose */.computePIPParticipantToShow(obj);
   let type1;
   if (null != pIPParticipantToShow) {
     type1 = pIPParticipantToShow.type;
@@ -58,7 +58,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
     }
     tmp15 = tmp18;
   }
-  const obj3 = require(15827) /* _createForOfIteratorHelperLoose */;
+  const obj3 = require(15839) /* _createForOfIteratorHelperLoose */;
   tmp11 = null != focusedId.focusedId && tmp10;
   let id1;
   if (null != pIPParticipantToShow) {
@@ -66,11 +66,11 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   }
   let SquarePIPReferenceDimensions = getTargetDimensions.getTargetDimensions(id1);
   if (null == SquarePIPReferenceDimensions) {
-    SquarePIPReferenceDimensions = require(15827) /* _createForOfIteratorHelperLoose */.SquarePIPReferenceDimensions;
+    SquarePIPReferenceDimensions = require(15839) /* _createForOfIteratorHelperLoose */.SquarePIPReferenceDimensions;
   }
   if (tmp10) {
     tmp10 = tmp;
   }
-  obj = { participant: pIPParticipantToShow, dimensions: require(15827) /* _createForOfIteratorHelperLoose */.computePIPSize(SquarePIPReferenceDimensions, tmp15, tmp10, focusedId.showSecondaryPIP) };
+  obj = { participant: pIPParticipantToShow, dimensions: require(15839) /* _createForOfIteratorHelperLoose */.computePIPSize(SquarePIPReferenceDimensions, tmp15, tmp10, focusedId.showSecondaryPIP) };
   return obj;
 };

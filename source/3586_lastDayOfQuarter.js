@@ -1,5 +1,5 @@
 // Module ID: 3586
-// Function ID: 27772
+// Function ID: 27773
 // Name: lastDayOfQuarter
 // Dependencies: [3210, 3211]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 8366
-// Function ID: 66930
+// Function ID: 66931
 // Name: OrbsBadgeCoachmarkImg
 // Dependencies: [31, 27, 33, 4131, 8367, 1212, 3983, 8368, 2]
 // Exports: default, useOrbsBadgeCoachmark

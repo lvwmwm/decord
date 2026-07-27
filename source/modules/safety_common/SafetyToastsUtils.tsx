@@ -1,5 +1,5 @@
 // Module ID: 6665
-// Function ID: 58946
+// Function ID: 58947
 // Name: getSafetyToastTypeContent
 // Dependencies: [1348, 1850, 6659, 4320, 3970, 1212, 2299, 2]
 // Exports: getSafetyToastTypeContent

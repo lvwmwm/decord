@@ -1,5 +1,5 @@
 // Module ID: 8032
-// Function ID: 63908
+// Function ID: 63909
 // Name: useProfileFrame
 // Dependencies: [5770, 5786, 5777, 566, 2]
 // Exports: default

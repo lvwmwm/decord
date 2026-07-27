@@ -1,5 +1,5 @@
 // Module ID: 4980
-// Function ID: 42981
+// Function ID: 42982
 // Name: QuestsVisibleMessagesChangedSource
 // Dependencies: [4981, 2, 4982, 4983]
 

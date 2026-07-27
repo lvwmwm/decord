@@ -1,5 +1,5 @@
 // Module ID: 7974
-// Function ID: 63542
+// Function ID: 63543
 // Name: redeemGiftCode
 // Dependencies: [5, 653, 6234, 6299, 686, 507, 675, 4030, 4338, 7975, 1935, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode

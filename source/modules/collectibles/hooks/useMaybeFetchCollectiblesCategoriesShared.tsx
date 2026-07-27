@@ -1,5 +1,5 @@
 // Module ID: 7899
-// Function ID: 62953
+// Function ID: 62954
 // Name: useMaybeFetchCollectiblesCategoriesShared
 // Dependencies: [57, 31, 4045, 5770, 655, 566, 5819, 5769, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared

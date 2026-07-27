@@ -1,10 +1,10 @@
-// Module ID: 11254
-// Function ID: 87503
+// Module ID: 11255
+// Function ID: 87508
 // Name: Tag
-// Dependencies: [5, 57, 31, 27, 5663, 4154, 653, 33, 689, 4131, 4127, 10861, 11255, 11168, 11162, 5676, 7953, 1212, 675, 7955, 4544, 4141, 10580, 11232, 5462, 5482, 4664, 566, 5125, 5502, 10583, 6670, 5468, 11256, 11257, 11258, 1273, 11194, 8938, 4647, 11260, 2]
+// Dependencies: [5, 57, 31, 27, 5663, 4154, 653, 33, 689, 4131, 4127, 10862, 11256, 11169, 11163, 5676, 7953, 1212, 675, 7955, 4544, 4141, 10581, 11233, 5462, 5482, 4664, 566, 5125, 5502, 10584, 6670, 5468, 11257, 11258, 11259, 1273, 11195, 8938, 4647, 11261, 2]
 // Exports: default
 
-// Module 11254 (Tag)
+// Module 11255 (Tag)
 import _callSuper from "_callSuper";
 import _slicedToArray from "_slicedToArray";
 import TextInput from "TextInput";
@@ -149,9 +149,9 @@ export default function ActivityDetailContent(application) {
   ({ context, entrypoint } = application);
   ({ sectionName, onActivityItemSelected, hasCommands } = application);
   let mapped = _createForOfIteratorHelperLoose();
-  let obj = application(10861);
+  let obj = application(10862);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj1 = application(11232);
+  let obj1 = application(11233);
   const getPrimaryAppCommand = obj1.useGetPrimaryAppCommand(context, application.id);
   const analyticsLocations = importDefault(5462)(importDefault(5482).APP_DETAIL).analyticsLocations;
   let obj2 = application(4664);
@@ -183,7 +183,7 @@ export default function ActivityDetailContent(application) {
       let intl = application(1212).intl;
       obj1.label = intl.string(application(1212).t["3TSGuD"]);
       obj1.value = useActivityUrlOverride;
-      obj1.onValueChange = importAll(10583).toggleUseActivityUrlOverride;
+      obj1.onValueChange = importAll(10584).toggleUseActivityUrlOverride;
       obj1.end = true;
       items1[1] = callback3(application(5502).TableSwitchRow, obj1);
       let tmp25Result = null;
@@ -195,7 +195,7 @@ export default function ActivityDetailContent(application) {
           tmp30 = activityUrlOverride;
         }
         obj3.value = tmp30;
-        obj3.onChange = importAll(10583).setActivityUrlOverride;
+        obj3.onChange = importAll(10584).setActivityUrlOverride;
         obj2.children = callback3(application(6670).TextInput, obj3);
         tmp25Result = callback3(View, obj2);
         const tmp25 = callback3;
@@ -214,17 +214,17 @@ export default function ActivityDetailContent(application) {
     if (null != getOrFetchApplication) {
       bot = getOrFetchApplication.bot;
     }
-    let obj11 = application(11168);
+    let obj11 = application(11169);
     obj4 = { context, applicationId: application.id };
     const activityAction = obj11.useActivityAction(obj4);
-    let obj13 = application(11256);
+    let obj13 = application(11257);
     const delayedSwapToActivityActionLeave = obj13.useDelayedSwapToActivityActionLeave(activityAction);
     const obj5 = { context, application, activityAction: delayedSwapToActivityActionLeave };
-    const tmp42 = importDefault(11257)(obj5);
+    const tmp42 = importDefault(11258)(obj5);
     const reason = tmp42.reason;
     const obj6 = { context, application };
     let id;
-    importDefault(11258);
+    importDefault(11259);
     if (null != bot) {
       id = bot.id;
     }
@@ -303,7 +303,7 @@ export default function ActivityDetailContent(application) {
       result = 65 * width / 100;
     }
     obj20.width = result;
-    obj19.children = callback3(importDefault(11194), obj20);
+    obj19.children = callback3(importDefault(11195), obj20);
     const items5 = [callback3(View, obj19), ];
     const obj21 = {};
     const items6 = [mapped.details, ];
@@ -328,7 +328,7 @@ export default function ActivityDetailContent(application) {
     const tmp80 = callback3;
     const tmp81 = View;
     const tmp82 = callback3;
-    const tmp85 = importDefault(11194);
+    const tmp85 = importDefault(11195);
     const tmp87 = closure_12;
     const tmp88 = View;
     const tmp92 = closure_12;
@@ -339,13 +339,13 @@ export default function ActivityDetailContent(application) {
     if (null != num) {
       num22 = num;
     }
-    obj24.tagName = application(11260).getItemSubtitleForMaxPlayersShort(num22);
+    obj24.tagName = application(11261).getItemSubtitleForMaxPlayersShort(num22);
     let num23 = 0;
-    const obj37 = application(11260);
+    const obj37 = application(11261);
     if (null != num) {
       num23 = num;
     }
-    obj24.accessibilityLabel = importDefault(11260)(num23);
+    obj24.accessibilityLabel = importDefault(11261)(num23);
     const items8 = [tmp94(tmp95, obj24, "participants"), ];
     const tags = application.tags;
     mapped = undefined;

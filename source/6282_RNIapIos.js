@@ -1,5 +1,5 @@
 // Module ID: 6282
-// Function ID: 56544
+// Function ID: 56545
 // Name: RNIapIos
 // Dependencies: [27, 6283]
 // Exports: getAndroidModuleType, getIosModule, getNativeModule, isIosStorekit2, setAndroidNativeModule, setIosNativeModule, storekit1Mode, storekit2Mode, storekitHybridMode

@@ -1,5 +1,5 @@
 // Module ID: 5823
-// Function ID: 51172
+// Function ID: 51173
 // Name: CollectiblesShopPerfCheckpoint
 // Dependencies: [653, 675, 2]
 // Exports: trackShopPerf

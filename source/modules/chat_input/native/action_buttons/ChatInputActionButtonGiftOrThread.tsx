@@ -1,9 +1,9 @@
-// Module ID: 11342
-// Function ID: 88132
+// Module ID: 11343
+// Function ID: 88137
 // Name: renderChatInputActionButtonGiftAndThread
-// Dependencies: [31, 27, 11092, 33, 4131, 11343, 11336, 1212, 11334, 11345, 3835, 689, 4477, 2]
+// Dependencies: [31, 27, 11093, 33, 4131, 11344, 11337, 1212, 11335, 11346, 3835, 689, 4477, 2]
 
-// Module 11342 (renderChatInputActionButtonGiftAndThread)
+// Module 11343 (renderChatInputActionButtonGiftAndThread)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { ChatInputActionType } from "TextAreaCta";
@@ -27,19 +27,19 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     const intl = onPress(1212).intl;
     obj.accessibilityLabel = intl.string(onPress(1212).t["4WNcpu"]);
     obj.disabled = !canStartThreads;
-    obj.IconComponent = onPress(11334).ThreadPlusIcon;
+    obj.IconComponent = onPress(11335).ThreadPlusIcon;
     obj.onPress = function onPress(arg0) {
       return onPress(arg0, outer1_5.THREAD);
     };
     obj.style = styleButton;
-    let tmp3Result = tmp3(tmp4(11336), obj);
-    const tmp4Result = tmp4(11336);
+    let tmp3Result = tmp3(tmp4(11337), obj);
+    const tmp4Result = tmp4(11337);
   } else {
     obj = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmp3Result = tmp3(tmp4(11345), obj);
+    tmp3Result = tmp3(tmp4(11346), obj);
   }
   obj.children = tmp3Result;
-  return jsx(importDefault(11343), { cleanup, state }, arg0);
+  return jsx(importDefault(11344), { cleanup, state }, arg0);
 }
 function getChatInputActionButtonGiftAndThreadKey(shouldShowThread) {
   let str = "gift";

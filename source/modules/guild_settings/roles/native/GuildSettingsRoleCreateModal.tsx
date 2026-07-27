@@ -1,10 +1,10 @@
-// Module ID: 16361
-// Function ID: 127543
+// Module ID: 16373
+// Function ID: 127590
 // Name: logTransitionEvent
-// Dependencies: [5, 57, 31, 27, 1391, 1911, 1850, 8243, 16362, 653, 33, 4131, 5084, 689, 675, 4325, 4127, 1212, 16360, 566, 44, 3764, 1456, 6687, 5087, 5049, 3831, 16359, 4099, 14878, 1935, 4542, 6670, 5501, 5164, 13631, 665, 4544, 16366, 16367, 8242, 16368, 5159, 4529, 4540, 5583, 4560, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 1391, 1911, 1850, 8243, 16374, 653, 33, 4131, 5084, 689, 675, 4325, 4127, 1212, 16372, 566, 44, 3764, 1456, 6687, 5087, 5049, 3831, 16371, 4099, 14879, 1935, 4542, 6670, 5501, 5164, 13632, 665, 4544, 16378, 16379, 8242, 16380, 5159, 4529, 4540, 5583, 4560, 5517, 2]
 // Exports: default
 
-// Module 16361 (logTransitionEvent)
+// Module 16373 (logTransitionEvent)
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Stack";
@@ -39,7 +39,7 @@ function logTransitionEvent(from_step, FLOW_DISMISSED, skip, guildId) {
 }
 function closeModal(from_step, guildId) {
   logTransitionEvent(from_step, constants4.FLOW_DISMISSED, false, guildId);
-  importDefault(16360).close();
+  importDefault(16372).close();
 }
 function useGuildSettingsStoreGuild() {
   const items = [closure_12];

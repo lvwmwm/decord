@@ -1,9 +1,9 @@
-// Module ID: 13507
-// Function ID: 103835
+// Module ID: 13508
+// Function ID: 103840
 // Name: messageEventsValidation
-// Dependencies: [4168, 4151, 1391, 4150, 1348, 1918, 1838, 4178, 4203, 1850, 4147, 4034, 653, 10556, 10558, 10553, 4346, 8112, 22, 13455, 483, 620, 10559, 13508, 13509, 2]
+// Dependencies: [4168, 4151, 1391, 4150, 1348, 1918, 1838, 4178, 4203, 1850, 4147, 4034, 653, 10557, 10559, 10554, 4346, 8112, 22, 13456, 483, 620, 10560, 13509, 13510, 2]
 
-// Module 13507 (messageEventsValidation)
+// Module 13508 (messageEventsValidation)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import { getGuildIconURL } from "isGuildOwner";
@@ -26,7 +26,7 @@ let closure_15;
 let closure_16;
 const require = arg1;
 function messageEventsValidation(string) {
-  let obj = importDefault(10556)(string);
+  let obj = importDefault(10557)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.channel_id = string.string().required();
@@ -40,7 +40,7 @@ function messageEvents(args) {
     if (obj4.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes)) {
       let obj = require(4346) /* shouldAgeVerifyForAgeGate */;
       if (obj.userCannotSeeNSFWContent(channel)) {
-        let tmp6 = importDefault(10553);
+        let tmp6 = importDefault(10554);
         obj = { errorCode: constants2.INVALID_CHANNEL };
         const _HermesInternal = HermesInternal;
         const prototype = tmp6.prototype;
@@ -48,15 +48,15 @@ function messageEvents(args) {
         throw tmp6;
       }
     }
-    obj4 = require(10558) /* recurseReplaceContentTree */;
+    obj4 = require(10559) /* recurseReplaceContentTree */;
   }
-  let tmp14 = importDefault(10553);
+  let tmp14 = importDefault(10554);
   obj = { errorCode: constants2.INVALID_CHANNEL };
   tmp14 = new tmp14(obj, "Invalid channel id: " + channel_id);
   throw tmp14;
 }
 function speakingEventsValidation(string) {
-  let obj = importDefault(10556)(string);
+  let obj = importDefault(10557)(string);
   obj = { channel_id: string.string().allow(null) };
   return obj.keys(obj);
 }
@@ -64,7 +64,7 @@ function speakingEvents(args) {
   const channel_id = args.args.channel_id;
   if (null != channel_id) {
     if (null == store.getChannel(channel_id)) {
-      let tmp4 = importDefault(10553);
+      let tmp4 = importDefault(10554);
       const obj = { errorCode: constants2.INVALID_CHANNEL };
       const _HermesInternal = HermesInternal;
       const prototype = tmp4.prototype;
@@ -79,7 +79,7 @@ let obj = {};
 obj = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10556)(string);
+    let obj = importDefault(10557)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.guild_id = string.string().required();
@@ -88,7 +88,7 @@ obj = {
   handler(args) {
     const guild_id = args.args.guild_id;
     if (null == guild.getGuild(guild_id)) {
-      let tmp3 = importDefault(10553);
+      let tmp3 = importDefault(10554);
       let obj = { errorCode: constants2.INVALID_GUILD };
       const _HermesInternal = HermesInternal;
       const prototype = tmp3.prototype;
@@ -128,7 +128,7 @@ const items = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_
 obj1[RPC_SCOPE_CONFIG.ANY] = items;
 obj.scope = obj1;
 obj.validation = function validation(string) {
-  let obj = importDefault(10556)(string);
+  let obj = importDefault(10557)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.channel_id = string.string().required();
@@ -137,7 +137,7 @@ obj.validation = function validation(string) {
 obj.handler = function handler(args) {
   const channel_id = args.args.channel_id;
   if (null == store.getChannel(channel_id)) {
-    let tmp3 = importDefault(10553);
+    let tmp3 = importDefault(10554);
     const obj = { errorCode: constants2.INVALID_CHANNEL };
     const _HermesInternal = HermesInternal;
     const prototype = tmp3.prototype;
@@ -171,7 +171,7 @@ const items1 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC
 obj3[RPC_SCOPE_CONFIG.ANY] = items1;
 obj2.scope = obj3;
 obj2.validation = function validation(string) {
-  let obj = importDefault(10556)(string);
+  let obj = importDefault(10557)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.channel_id = string.string().required();
@@ -180,7 +180,7 @@ obj2.validation = function validation(string) {
 obj2.handler = function handler(args) {
   const channel_id = args.args.channel_id;
   if (null == store.getChannel(channel_id)) {
-    let tmp3 = importDefault(10553);
+    let tmp3 = importDefault(10554);
     const obj = { errorCode: constants2.INVALID_CHANNEL };
     const _HermesInternal = HermesInternal;
     const prototype = tmp3.prototype;
@@ -209,7 +209,7 @@ const items2 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC
 obj5[RPC_SCOPE_CONFIG.ANY] = items2;
 obj4.scope = obj5;
 obj4.validation = function validation(string) {
-  let obj = importDefault(10556)(string);
+  let obj = importDefault(10557)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.channel_id = string.string().required();
@@ -218,7 +218,7 @@ obj4.validation = function validation(string) {
 obj4.handler = function handler(args) {
   const channel_id = args.args.channel_id;
   if (null == store.getChannel(channel_id)) {
-    let tmp3 = importDefault(10553);
+    let tmp3 = importDefault(10554);
     const obj = { errorCode: constants2.INVALID_CHANNEL };
     const _HermesInternal = HermesInternal;
     const prototype = tmp3.prototype;
@@ -444,7 +444,7 @@ obj[RPCEvents.RELATIONSHIP_UPDATE] = {
     const obj2 = importAll(483);
     const deserializeResult = importAll(483).deserialize(num);
     if (obj.has(deserializeResult, obj3.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
-      let tmp4 = importDefault(10553);
+      let tmp4 = importDefault(10554);
       obj = { errorCode: constants2.INVALID_PERMISSIONS };
       const prototype = tmp4.prototype;
       tmp4 = new tmp4(obj, "Missing Permissions");
@@ -613,7 +613,7 @@ const obj34 = {
     const obj2 = importAll(483);
     const deserializeResult = importAll(483).deserialize(num);
     if (obj.has(deserializeResult, obj3.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
-      let tmp4 = importDefault(10553);
+      let tmp4 = importDefault(10554);
       obj = { errorCode: constants2.INVALID_PERMISSIONS };
       const prototype = tmp4.prototype;
       tmp4 = new tmp4(obj, "Missing Permissions");

@@ -1,10 +1,10 @@
-// Module ID: 11892
-// Function ID: 92052
+// Module ID: 11893
+// Function ID: 92057
 // Name: useFriendsSinceDate
 // Dependencies: [1922, 3768, 653, 624, 4940, 2]
 // Exports: useFriendsSinceDate
 
-// Module 11892 (useFriendsSinceDate)
+// Module 11893 (useFriendsSinceDate)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { RelationshipTypes } from "ME";

@@ -1,5 +1,5 @@
 // Module ID: 6397
-// Function ID: 57533
+// Function ID: 57534
 // Name: instrumentConsole
 // Dependencies: [6309, 6312, 6311, 6317]
 

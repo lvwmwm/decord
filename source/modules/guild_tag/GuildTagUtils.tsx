@@ -1,5 +1,5 @@
 // Module ID: 7881
-// Function ID: 62833
+// Function ID: 62834
 // Name: getUserPrimaryGuild
 // Dependencies: [1918, 1838, 1850, 7665, 653, 566, 3765, 2]
 // Exports: getGuildTagBadgeUrl, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild

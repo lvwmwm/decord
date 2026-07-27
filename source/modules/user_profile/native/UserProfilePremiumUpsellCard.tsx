@@ -1,10 +1,10 @@
-// Module ID: 13672
-// Function ID: 105014
+// Module ID: 13673
+// Function ID: 105019
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [31, 653, 33, 4131, 1557, 1456, 6187, 5462, 5482, 6448, 9253, 9254, 13673, 1212, 4127, 2]
+// Dependencies: [31, 653, 33, 4131, 1557, 1456, 6187, 5462, 5482, 6448, 9253, 9254, 13674, 1212, 4127, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 13672 (UserProfilePremiumUpsellCard)
+// Module 13673 (UserProfilePremiumUpsellCard)
 import result from "result";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -74,5 +74,5 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   }
   obj.children = stringResult1;
   obj.children = jsx(navigation(4127).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5 });
-  return tmp8(analyticsLocations(13673), obj);
+  return tmp8(analyticsLocations(13674), obj);
 };

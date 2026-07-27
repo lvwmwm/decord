@@ -1,10 +1,10 @@
-// Module ID: 11587
-// Function ID: 90047
+// Module ID: 11588
+// Function ID: 90052
 // Name: GuildPowerupsWarning
-// Dependencies: [31, 27, 33, 4131, 689, 11588, 6673, 4127, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 11589, 6673, 4127, 2]
 // Exports: default
 
-// Module 11587 (GuildPowerupsWarning)
+// Module 11588 (GuildPowerupsWarning)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

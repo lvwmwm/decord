@@ -1,10 +1,10 @@
-// Module ID: 11541
-// Function ID: 89860
+// Module ID: 11542
+// Function ID: 89865
 // Name: getHasAllocateBoostPermission
 // Dependencies: [1838, 3759, 482, 566, 2]
 // Exports: default
 
-// Module 11541 (getHasAllocateBoostPermission)
+// Module 11542 (getHasAllocateBoostPermission)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "sum";

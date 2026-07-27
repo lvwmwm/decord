@@ -1,5 +1,5 @@
 // Module ID: 9099
-// Function ID: 71555
+// Function ID: 71556
 // Name: checkGuildForFeature
 // Dependencies: [31, 653, 33, 8398, 8399, 9100, 9101, 1387, 1273, 2]
 

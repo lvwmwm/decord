@@ -1,10 +1,10 @@
-// Module ID: 12128
-// Function ID: 95026
+// Module ID: 12129
+// Function ID: 95031
 // Name: useTrackUserProfileWishlistView
 // Dependencies: [31, 8606, 566, 2]
 // Exports: default
 
-// Module 12128 (useTrackUserProfileWishlistView)
+// Module 12129 (useTrackUserProfileWishlistView)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

@@ -1,5 +1,5 @@
 // Module ID: 8639
-// Function ID: 68634
+// Function ID: 68635
 // Name: WishlistButtonBase
 // Dependencies: [5, 57, 31, 27, 1194, 1850, 655, 482, 33, 3992, 4548, 4131, 689, 3843, 5511, 3977, 3850, 3832, 1212, 4132, 4543, 4547, 8640, 8603, 566, 8599, 8631, 8642, 8597, 2]
 // Exports: default
@@ -46,7 +46,7 @@ class WishlistButtonBase {
     useState = undefined;
     c13 = undefined;
     c14 = undefined;
-    tmp = f68653(size);
+    tmp = f68654(size);
     c6 = tmp;
     tmp2 = require("ICON_SIZE").ICON_SIZE[jsxs[size]];
     obj = require("ManaContext");
@@ -177,7 +177,7 @@ class WishlistButtonBase {
     obj.SUBTLE_SPRING = require("SUBTLE_SPRING").SUBTLE_SPRING;
     J.__closure = obj;
     J.__workletHash = 1357254413161;
-    J.__initData = f68653;
+    J.__initData = f68654;
     animatedStyle = obj4.useAnimatedStyle(J);
     obj6 = require("module_3992");
     class Y {
@@ -207,7 +207,7 @@ class WishlistButtonBase {
     obj1.Extrapolation = require("module_3992").Extrapolation;
     Y.__closure = obj1;
     Y.__workletHash = 15039903885060;
-    Y.__initData = f68653;
+    Y.__initData = f68654;
     animatedStyle1 = obj6.useAnimatedStyle(Y);
     obj8 = require("module_3992");
     class K {
@@ -241,7 +241,7 @@ class WishlistButtonBase {
     obj2.Extrapolation = require("module_3992").Extrapolation;
     K.__closure = obj2;
     K.__workletHash = 12429379889426;
-    K.__initData = f68653;
+    K.__initData = f68654;
     obj3 = {
       style(pressed) {
             pressed = pressed.pressed;

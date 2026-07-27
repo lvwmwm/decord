@@ -1,10 +1,10 @@
-// Module ID: 11632
-// Function ID: 90312
+// Module ID: 11633
+// Function ID: 90317
 // Name: useUserProfileMutuals
 // Dependencies: [57, 31, 5892, 4971, 5630, 566, 22, 8270, 2]
 // Exports: default
 
-// Module 11632 (useUserProfileMutuals)
+// Module 11633 (useUserProfileMutuals)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

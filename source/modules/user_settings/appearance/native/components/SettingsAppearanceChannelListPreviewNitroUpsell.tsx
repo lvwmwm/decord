@@ -1,9 +1,9 @@
-// Module ID: 14251
-// Function ID: 109493
+// Module ID: 14252
+// Function ID: 109498
 // Name: SettingsAppearanceChannelListPreviewNitroUpsellComponent
 // Dependencies: [31, 27, 4123, 653, 33, 3992, 4555, 4543, 4547, 4131, 689, 5462, 5482, 9253, 9254, 4544, 1212, 1273, 566, 8374, 2]
 
-// Module 14251 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
+// Module 14252 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

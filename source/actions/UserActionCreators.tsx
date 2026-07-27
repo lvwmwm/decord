@@ -1,5 +1,5 @@
 // Module ID: 5656
-// Function ID: 48331
+// Function ID: 48332
 // Name: _fetchProfile
 // Dependencies: [5, 1858, 1850, 653, 654, 3, 507, 686, 4943, 640, 44, 4030, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag

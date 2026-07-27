@@ -1,10 +1,10 @@
-// Module ID: 15334
-// Function ID: 116984
+// Module ID: 15347
+// Function ID: 117033
 // Name: GuildOnboardingHomePage
-// Dependencies: [31, 4045, 4334, 4335, 653, 33, 3992, 566, 5606, 11375, 675, 4325, 5049, 15335, 15336, 15341, 15345, 15346, 15349, 5605, 2]
+// Dependencies: [31, 4045, 4334, 4335, 653, 33, 3992, 566, 5606, 11376, 675, 4325, 5049, 15348, 15349, 15354, 15358, 15359, 15362, 5605, 2]
 // Exports: default
 
-// Module 15334 (GuildOnboardingHomePage)
+// Module 15347 (GuildOnboardingHomePage)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -96,25 +96,25 @@ function GuildOnboardingHomePage(guildId) {
   } else {
     obj = { guildId, scrollValue: sharedValue };
     obj = { guildId, hideDescription: tmp3 };
-    const items3 = [callback(stateFromStores(15336), obj), ];
+    const items3 = [callback(stateFromStores(15349), obj), ];
     if (tmp3) {
       obj1 = {};
       let obj2 = { guildId };
-      const items4 = [callback(stateFromStores(15341), obj2), , ];
+      const items4 = [callback(stateFromStores(15354), obj2), , ];
       let obj3 = { guildId };
-      items4[1] = callback(stateFromStores(15345), obj3);
+      items4[1] = callback(stateFromStores(15358), obj3);
       const obj4 = { guildId };
-      items4[2] = callback(stateFromStores(15346), obj4);
+      items4[2] = callback(stateFromStores(15359), obj4);
       obj1.children = items4;
       let tmp17 = callback2(closure_10, obj1);
     } else {
       let obj5 = { guildId };
-      tmp17 = callback(stateFromStores(15349), obj5);
+      tmp17 = callback(stateFromStores(15362), obj5);
     }
     items3[1] = tmp17;
     obj.children = items3;
-    callback2(stateFromStores(15335), obj);
-    const tmp12 = stateFromStores(15335);
+    callback2(stateFromStores(15348), obj);
+    const tmp12 = stateFromStores(15348);
     const tmp9 = callback2;
   }
 }

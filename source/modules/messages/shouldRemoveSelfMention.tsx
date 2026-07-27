@@ -1,5 +1,5 @@
 // Module ID: 5871
-// Function ID: 51851
+// Function ID: 51852
 // Name: shouldRemoveSelfMention
 // Dependencies: [653, 2]
 // Exports: default

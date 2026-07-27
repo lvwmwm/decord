@@ -1,10 +1,10 @@
-// Module ID: 14192
-// Function ID: 109205
+// Module ID: 14193
+// Function ID: 109210
 // Name: getEmojiId
-// Dependencies: [31, 27, 1348, 33, 4131, 3772, 14190, 1273, 4127, 566, 4321, 1212, 4594, 2]
+// Dependencies: [31, 27, 1348, 33, 4131, 3772, 14191, 1273, 4127, 566, 4321, 1212, 4594, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 14192 (getEmojiId)
+// Module 14193 (getEmojiId)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ function BenefitRow(description) {
   ({ emojiId, guildId, title } = description);
   const tmp = callback3();
   let obj = { style: tmp.container };
-  const items = [callback(importDefault(14190), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1273) /* Button */.Spacer, { size: 16 }), ];
+  const items = [callback(importDefault(14191), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1273) /* Button */.Spacer, { size: 16 }), ];
   obj = { style: tmp.textContainer };
   const items1 = [title, ];
   let tmp6 = null;

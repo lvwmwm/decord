@@ -1,5 +1,5 @@
 // Module ID: 7695
-// Function ID: 61519
+// Function ID: 61520
 // Name: XSmallBoldIcon
 // Dependencies: [31, 33, 689, 3834, 5505, 2]
 // Exports: XSmallBoldIcon

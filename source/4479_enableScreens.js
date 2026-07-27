@@ -1,5 +1,5 @@
 // Module ID: 4479
-// Function ID: 39601
+// Function ID: 39602
 // Name: enableScreens
 // Dependencies: [4480, 4481, 4482, 4483, 4494, 4499, 4501, 4503, 4506, 4495, 4512, 4510, 4508, 4491, 4492, 4514, 4515]
 

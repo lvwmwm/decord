@@ -1,10 +1,10 @@
-// Module ID: 15761
-// Function ID: 121583
+// Module ID: 15773
+// Function ID: 121630
 // Name: MorphablePanelModes
-// Dependencies: [31, 9977, 1450, 1557, 3992, 5217, 9980, 15759, 15762, 4100, 2]
+// Dependencies: [31, 9977, 1450, 1557, 3992, 5217, 9980, 15771, 15774, 4100, 2]
 // Exports: default
 
-// Module 15761 (MorphablePanelModes)
+// Module 15773 (MorphablePanelModes)
 import result from "result";
 import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE";
 

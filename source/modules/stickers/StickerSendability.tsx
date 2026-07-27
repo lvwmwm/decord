@@ -1,5 +1,5 @@
 // Module ID: 9559
-// Function ID: 74635
+// Function ID: 74636
 // Name: getStickerSendability
 // Dependencies: [1918, 5038, 653, 3777, 4467, 3764, 2]
 // Exports: isSendableSticker

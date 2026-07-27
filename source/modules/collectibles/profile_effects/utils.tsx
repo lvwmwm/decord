@@ -1,5 +1,5 @@
 // Module ID: 7998
-// Function ID: 63758
+// Function ID: 63759
 // Name: randomizeProfileEffect
 // Dependencies: [57, 31, 22, 2]
 // Exports: sortEffectLayers, usePotentiallyRandomizedProfileEffect

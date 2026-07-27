@@ -1,10 +1,10 @@
-// Module ID: 12119
-// Function ID: 94942
+// Module ID: 12120
+// Function ID: 94947
 // Name: VerifiedIcon
-// Dependencies: [31, 27, 1922, 3971, 5510, 653, 4941, 33, 1273, 4131, 689, 9962, 3835, 3977, 9967, 9968, 8045, 1324, 4940, 4815, 1392, 8138, 4325, 3828, 4100, 5490, 3831, 1212, 4127, 5164, 3834, 7562, 4661, 3843, 566, 12120, 5509, 5501, 12123, 2]
+// Dependencies: [31, 27, 1922, 3971, 5510, 653, 4941, 33, 1273, 4131, 689, 9962, 3835, 3977, 9967, 9968, 8045, 1324, 4940, 4815, 1392, 8138, 4325, 3828, 4100, 5490, 3831, 1212, 4127, 5164, 3834, 7562, 4661, 3843, 566, 12121, 5509, 5501, 12124, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 12119 (VerifiedIcon)
+// Module 12120 (VerifiedIcon)
 import importAllResult from "LinkExternalSmallIcon";
 import get_ActivityIndicator from "getSystemLocale";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -548,7 +548,7 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   const items1 = [closure_7];
   const stateFromStores = userId(566).useStateFromStores(items1, () => outer1_7.hidePersonalInformation);
   const obj3 = userId(566);
-  ({ connections, appIdentities } = theme(12120)(userId));
+  ({ connections, appIdentities } = theme(12121)(userId));
   if (!stateFromStores) {
     const items2 = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(connections.map((account) => outer1_13(outer1_18, { account, theme, locale: closure_2, userId }, account.id)), 0);
@@ -587,7 +587,7 @@ export const UserProfileApplicationRoleConnectionsCard = function UserProfileApp
   ({ userId, style } = arg0);
   const tmp = callback3();
   const tmp2 = importDefault(1324)("UserProfileConnections");
-  const arr = importDefault(12123)(userId);
+  const arr = importDefault(12124)(userId);
   let obj = require(566) /* initialize */;
   const items = [closure_7];
   if (!obj.useStateFromStores(items, () => outer1_7.hidePersonalInformation)) {

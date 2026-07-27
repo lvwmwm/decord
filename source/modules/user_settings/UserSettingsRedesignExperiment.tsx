@@ -1,5 +1,5 @@
 // Module ID: 4987
-// Function ID: 42994
+// Function ID: 42995
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getIsEligibleForUserSettingsRedesign4DExperiment, useIsEligibleForUserSettingsRedesign4DExperiment

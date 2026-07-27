@@ -1,5 +1,5 @@
 // Module ID: 7749
-// Function ID: 61707
+// Function ID: 61708
 // Name: createStageEndSystemMessage
 // Dependencies: [7684, 1212, 7686, 7687, 2]
 // Exports: createStageEndSystemMessage

@@ -1,5 +1,5 @@
 // Module ID: 7186
-// Function ID: 60014
+// Function ID: 60015
 // Name: HighFiveSpotIllustration
 // Dependencies: [33, 5085, 7187, 2]
 // Exports: HighFiveSpotIllustration

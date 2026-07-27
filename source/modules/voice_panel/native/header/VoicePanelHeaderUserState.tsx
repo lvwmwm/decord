@@ -1,9 +1,9 @@
-// Module ID: 15845
-// Function ID: 122372
+// Module ID: 15857
+// Function ID: 122419
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4144, 33, 3992, 8174, 4131, 689, 15846, 15844, 8793, 5515, 9975, 566, 4132, 2]
+// Dependencies: [31, 4144, 33, 3992, 8174, 4131, 689, 15858, 15856, 8793, 5515, 9975, 566, 4132, 2]
 
-// Module 15845 (_createForOfIteratorHelperLoose)
+// Module 15857 (_createForOfIteratorHelperLoose)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -98,19 +98,19 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
   if (null != participant) {
     type = participant.type;
   }
-  let obj = require(15844) /* isStableStreamParticipant */;
+  let obj = require(15856) /* isStableStreamParticipant */;
   let id;
   if (obj.isStableParticipantWithUser(participant)) {
     id = participant.user.id;
   }
-  const tmp2Result = _createForOfIteratorHelperLoose(importDefault(15846)(type, id, guildId));
+  const tmp2Result = _createForOfIteratorHelperLoose(importDefault(15858)(type, id, guildId));
   let iter = tmp2Result();
   if (!iter.done) {
     do {
       let value = iter.value;
       let tmp7 = require;
       let tmp8 = dependencyMap;
-      if (value.type === require(15846) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
+      if (value.type === require(15858) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
         let tmp9 = jsx;
         let tmp10 = require;
         let tmp11 = dependencyMap;
@@ -122,7 +122,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
       }
       let tmp14 = require;
       let tmp15 = dependencyMap;
-      if (value.type === require(15846) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+      if (value.type === require(15858) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
         let tmp26 = require;
         let tmp27 = dependencyMap;
         let tmp25 = jsx;
@@ -153,7 +153,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
     return jsx(importDefault(5515), {});
   }
   const tmp2 = _createForOfIteratorHelperLoose;
-  const tmp3 = importDefault(15846);
+  const tmp3 = importDefault(15858);
 }
 let closure_6 = require("module_3992").createAnimatedComponent(require("TwinButtons").BackgroundBlurView);
 let closure_7 = { duration: 100 };
@@ -183,7 +183,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderUserState(isHea
     }
     return id;
   });
-  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(15844)(stateFromStores, channelId, guildId), guildId);
+  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(15856)(stateFromStores, channelId, guildId), guildId);
   isHeaderHidden(3992);
   const fn = function s() {
     const obj = {};

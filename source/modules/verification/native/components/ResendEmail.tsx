@@ -1,5 +1,5 @@
 // Module ID: 9116
-// Function ID: 71651
+// Function ID: 71652
 // Name: ResendEmail
 // Dependencies: [57, 31, 27, 1342, 1850, 653, 33, 4131, 1456, 566, 44, 9117, 9109, 6727, 4127, 1212, 4544, 5588, 3832, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 10300
-// Function ID: 79645
+// Module ID: 10301
+// Function ID: 79650
 // Name: BurstReactionButton
-// Dependencies: [31, 27, 33, 4131, 689, 10301, 4661, 1212, 4127, 6023, 9244, 10312, 3804, 9388, 665, 1392, 3770, 5150, 10314, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 10302, 4661, 1212, 4127, 6023, 9244, 10313, 3804, 9388, 665, 1392, 3770, 5150, 10315, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10300 (BurstReactionButton)
+// Module 10301 (BurstReactionButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -158,7 +158,7 @@ export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.N8hbZB);
   const items = [_createForOfIteratorHelperLoose().container, containerStyle];
   obj.style = items;
-  obj.onPress = importDefault(10301)({ threadId }).onTapReactionCount;
+  obj.onPress = importDefault(10302)({ threadId }).onTapReactionCount;
   obj = { variant: "heading-sm/medium", color: "interactive-text-default" };
   const items1 = ["+", count];
   obj.children = items1;
@@ -178,7 +178,7 @@ export const AddReactionButton = function AddReactionButton(reactionType) {
   items = [_createForOfIteratorHelperLoose().container, containerStyle];
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lfIHs4);
-  obj.onPress = importDefault(10301)(obj).onTapAddReaction;
+  obj.onPress = importDefault(10302)(obj).onTapAddReaction;
   obj.children = callback2(require(9244) /* handleOutOfSuperReactions */.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
   return callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 15814
-// Function ID: 122088
+// Module ID: 15826
+// Function ID: 122135
 // Name: context
 // Dependencies: [31, 2]
 
-// Module 15814 (context)
+// Module 15826 (context)
 import importAllResult from "result";
 
 const context = importAllResult.createContext({ audioRef: importAllResult.createRef() });

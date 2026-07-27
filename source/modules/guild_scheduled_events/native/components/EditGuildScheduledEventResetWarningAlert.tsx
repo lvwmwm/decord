@@ -1,5 +1,5 @@
 // Module ID: 8256
-// Function ID: 66309
+// Function ID: 66310
 // Name: EditGuildScheduledEventResetWarningAlert
 // Dependencies: [31, 33, 4562, 1212, 2]
 // Exports: default

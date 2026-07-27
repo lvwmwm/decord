@@ -1,10 +1,10 @@
-// Module ID: 12309
-// Function ID: 95927
+// Module ID: 12310
+// Function ID: 95932
 // Name: getApplicationFromMessage
-// Dependencies: [4154, 12306, 8113, 2]
+// Dependencies: [4154, 12307, 8113, 2]
 // Exports: getApplicationFromMessage
 
-// Module 12309 (getApplicationFromMessage)
+// Module 12310 (getApplicationFromMessage)
 import _callSuper from "_callSuper";
 import { SpotifyApplication } from "_isNativeReflectConstruct";
 import { isSpotifyParty } from "spotifyUtmParams";

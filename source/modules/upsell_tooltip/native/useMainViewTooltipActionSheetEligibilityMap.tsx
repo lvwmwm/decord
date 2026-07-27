@@ -1,10 +1,10 @@
-// Module ID: 15690
-// Function ID: 121047
+// Module ID: 15702
+// Function ID: 121094
 // Name: PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID
-// Dependencies: [57, 31, 8047, 15673, 6207, 1316, 1342, 653, 1852, 662, 566, 15691, 1553, 6204, 6188, 15692, 6506, 6510, 8740, 12538, 8050, 8044, 15687, 15670, 12431, 15681, 8320, 1334, 3947, 1212, 2749, 2]
+// Dependencies: [57, 31, 8047, 15685, 6207, 1316, 1342, 653, 1852, 662, 566, 15703, 1553, 6204, 6188, 15704, 6506, 6510, 8740, 12539, 8050, 8044, 15699, 15682, 12432, 15693, 8320, 1334, 3947, 1212, 2749, 2]
 // Exports: useMainViewTooltipActionSheetMap
 
-// Module 15690 (PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID)
+// Module 15702 (PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,7 +31,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   let obj = isEligibleToShowGiftingBadgeCoachmark(566);
   let items = [closure_8];
   let stateFromStores = obj.useStateFromStores(items, () => outer1_8.hasLoaded(outer1_11.PRELOADED_USER_SETTINGS));
-  let obj1 = importDefault(15691);
+  let obj1 = importDefault(15703);
   let obj2 = isEligibleToShowGiftingBadgeCoachmark(566);
   const items1 = [closure_9];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_9.hasAction());
@@ -57,7 +57,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   const premiumDiscountOffer = obj5.usePremiumDiscountOffer();
   let obj6 = isEligibleToShowGiftingBadgeCoachmark(6188);
   const premiumTrialOffer = obj6.usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = isEligibleToShowGiftingBadgeCoachmark(15692).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = isEligibleToShowGiftingBadgeCoachmark(15704).PremiumTrialOfferActionSheetKillSwitchExperiment;
   let obj7 = isEligibleToShowGiftingBadgeCoachmark(6506);
   const promotionMarketingComponent = obj7.usePromotionMarketingComponent(isEligibleToShowGiftingBadgeCoachmark(6510).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
@@ -105,7 +105,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     return prop;
   });
   const GiftPromotionReminderExperiment = isEligibleToShowGiftingBadgeCoachmark(8740).GiftPromotionReminderExperiment;
-  let obj11 = isEligibleToShowGiftingBadgeCoachmark(12538);
+  let obj11 = isEligibleToShowGiftingBadgeCoachmark(12539);
   isEligibleToShowGiftingBadgeCoachmark = obj11.useIsEligibleToShowGiftingBadgeCoachmark({ platform: "native", location: "MainViewTooltipActionSheets" });
   const items6 = [isEligibleToShowGiftingBadgeCoachmark];
   const effect = React.useEffect(() => {
@@ -117,16 +117,16 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   let obj12 = isEligibleToShowGiftingBadgeCoachmark(566);
   const items7 = [_isNativeReflectConstruct];
   const stateFromStores5 = obj12.useStateFromStores(items7, () => null != outer1_5.getBadgeById(isEligibleToShowGiftingBadgeCoachmark(outer1_2[21]).BadgeId.GIFTING));
-  let obj13 = isEligibleToShowGiftingBadgeCoachmark(15687);
-  let obj14 = isEligibleToShowGiftingBadgeCoachmark(15670);
+  let obj13 = isEligibleToShowGiftingBadgeCoachmark(15699);
+  let obj14 = isEligibleToShowGiftingBadgeCoachmark(15682);
   const shouldShowRobloxConnectionCoachmark = obj14.useShouldShowRobloxConnectionCoachmark();
-  let obj15 = isEligibleToShowGiftingBadgeCoachmark(12431);
+  let obj15 = isEligibleToShowGiftingBadgeCoachmark(12432);
   const items8 = [, ];
   ({ LEAGUE_OF_LEGENDS: arr9[0], RIOT_GAMES: arr9[1] } = PlatformTypes);
   const isEligibleForBogoPromotion = obj15.useIsEligibleForBogoPromotion();
-  let obj16 = isEligibleToShowGiftingBadgeCoachmark(15681);
+  let obj16 = isEligibleToShowGiftingBadgeCoachmark(15693);
   const shouldShowConnectionDeprecationBottomSheet = obj16.useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items8 });
-  let obj17 = isEligibleToShowGiftingBadgeCoachmark(15681);
+  let obj17 = isEligibleToShowGiftingBadgeCoachmark(15693);
   const items9 = [PlatformTypes.BATTLENET];
   const shouldShowConnectionDeprecationBottomSheet1 = obj17.useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items9 });
   isEligibleToShowGiftingBadgeCoachmark(8320);

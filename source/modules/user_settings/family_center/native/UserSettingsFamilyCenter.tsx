@@ -1,10 +1,10 @@
-// Module ID: 13834
-// Function ID: 106067
+// Module ID: 13835
+// Function ID: 106072
 // Name: FamilyCenterLoading
-// Dependencies: [57, 31, 27, 5765, 1850, 653, 1197, 1345, 5766, 33, 4542, 4131, 689, 5462, 5482, 6200, 13835, 13836, 6202, 624, 8162, 1212, 2199, 13837, 13877, 5767, 675, 5839, 5844, 4560, 3947, 1334, 5587, 8687, 8685, 2]
+// Dependencies: [57, 31, 27, 5765, 1850, 653, 1197, 1345, 5766, 33, 4542, 4131, 689, 5462, 5482, 6200, 13836, 13837, 6202, 624, 8162, 1212, 2199, 13838, 13878, 5767, 675, 5839, 5844, 4560, 3947, 1334, 5587, 8687, 8685, 2]
 // Exports: default
 
-// Module 13834 (FamilyCenterLoading)
+// Module 13835 (FamilyCenterLoading)
 import _slicedToArray from "_slicedToArray";
 import DismissibleContent from "DismissibleContent";
 import get_ActivityIndicator from "set";
@@ -33,8 +33,8 @@ function FamilyCenter() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = familyCenterInitialized(6200);
   const acceptedRequestsCount = obj.useAcceptedRequestsCount();
-  const tmp4 = isLoading(13835)();
-  const selectedTab = isLoading(13836)().selectedTab;
+  const tmp4 = isLoading(13836)();
+  const selectedTab = isLoading(13837)().selectedTab;
   let obj1 = familyCenterInitialized(6202);
   const selectedTeenId = obj1.useSelectedTeenId();
   let obj2 = familyCenterInitialized(624);
@@ -55,13 +55,13 @@ function FamilyCenter() {
   const intl = familyCenterInitialized(1212).intl;
   obj.label = intl.string(isLoading(2199).bdBmqy);
   obj.id = FamilyCenterSubPages.ACTIVITY;
-  obj.page = callback2(isLoading(13837), {});
+  obj.page = callback2(isLoading(13838), {});
   const items1 = [obj, ];
   obj1 = {};
   const intl2 = familyCenterInitialized(1212).intl;
   obj1.label = intl2.string(isLoading(2199)["gVWG+6"]);
   obj1.id = FamilyCenterSubPages.REQUESTS;
-  obj1.page = callback2(isLoading(13877), {});
+  obj1.page = callback2(isLoading(13878), {});
   items1[1] = obj1;
   obj.items = items1;
   obj.onPageChange = function onPageChange(arg0) {

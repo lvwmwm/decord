@@ -1,10 +1,10 @@
-// Module ID: 16350
-// Function ID: 127312
+// Module ID: 16362
+// Function ID: 127359
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1348, 1838, 3759, 3768, 1850, 16266, 653, 33, 4131, 5053, 689, 1212, 3977, 665, 7575, 1273, 16351, 3843, 566, 4594, 4321, 4661, 1557, 4544, 5495, 8214, 8661, 16352, 16353, 16264, 10927, 14247, 3764, 5049, 4471, 6695, 16354, 5448, 7627, 1456, 44, 4550, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1348, 1838, 3759, 3768, 1850, 16278, 653, 33, 4131, 5053, 689, 1212, 3977, 665, 7575, 1273, 16363, 3843, 566, 4594, 4321, 4661, 1557, 4544, 5495, 8214, 8661, 16364, 16365, 16276, 10928, 14248, 3764, 5049, 4471, 6695, 16366, 5448, 7627, 1456, 44, 4550, 2]
 // Exports: default
 
-// Module 16350 (_callSuper)
+// Module 16362 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -140,7 +140,7 @@ function ChannelItem(arg0) {
   if (stateFromStores) {
     tmp21 = null;
     if (sortingEnabled) {
-      const obj5 = { source: importDefault(16351), style: actionIconStyle };
+      const obj5 = { source: importDefault(16363), style: actionIconStyle };
       tmp21 = callback4(channel(7575).FormRow.Icon, obj5);
     }
   }

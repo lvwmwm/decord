@@ -1,5 +1,5 @@
 // Module ID: 5813
-// Function ID: 51048
+// Function ID: 51049
 // Name: SocialLayerStorefrontPromotionalBannerBlockRecord
 // Dependencies: [6, 7, 5801, 2]
 

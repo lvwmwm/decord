@@ -1,5 +1,5 @@
 // Module ID: 8030
-// Function ID: 63905
+// Function ID: 63906
 // Name: DefaultProfileFrameDimensions
 // Dependencies: [2]
 

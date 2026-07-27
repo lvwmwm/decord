@@ -1,5 +1,5 @@
 // Module ID: 8111
-// Function ID: 64665
+// Function ID: 64666
 // Name: CRUNCHYROLL_LINK_DEST_ORIGIN
 // Dependencies: [8112, 2]
 

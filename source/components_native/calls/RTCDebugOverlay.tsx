@@ -1,10 +1,10 @@
-// Module ID: 10766
-// Function ID: 83528
+// Module ID: 10767
+// Function ID: 83533
 // Name: Text
-// Dependencies: [31, 27, 1348, 1838, 4203, 10767, 4217, 1850, 4192, 33, 4131, 3975, 689, 1273, 566, 4321, 10769, 10768, 686, 5121, 4544, 1212, 2]
+// Dependencies: [31, 27, 1348, 1838, 4203, 10768, 4217, 1850, 4192, 33, 4131, 3975, 689, 1273, 566, 4321, 10770, 10769, 686, 5121, 4544, 1212, 2]
 // Exports: default
 
-// Module 10766 (Text)
+// Module 10767 (Text)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

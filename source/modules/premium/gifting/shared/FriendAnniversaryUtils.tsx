@@ -1,5 +1,5 @@
 // Module ID: 7795
-// Function ID: 61923
+// Function ID: 61924
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [3356, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince

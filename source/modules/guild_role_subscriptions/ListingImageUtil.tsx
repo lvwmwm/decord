@@ -1,10 +1,10 @@
-// Module ID: 16475
-// Function ID: 128446
+// Module ID: 16487
+// Function ID: 128493
 // Name: getSource
 // Dependencies: [4370, 2]
 // Exports: getSource
 
-// Module 16475 (getSource)
+// Module 16487 (getSource)
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/ListingImageUtil.tsx");
 
 export const getSource = function getSource(image_asset) {

@@ -1,5 +1,5 @@
 // Module ID: 7955
-// Function ID: 63305
+// Function ID: 63306
 // Name: AppLauncherEntrypoint
 // Dependencies: [2]
 

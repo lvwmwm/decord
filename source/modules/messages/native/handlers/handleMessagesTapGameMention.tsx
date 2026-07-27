@@ -1,10 +1,10 @@
-// Module ID: 10865
-// Function ID: 84418
+// Module ID: 10866
+// Function ID: 84423
 // Name: handleMessagesTapGameMention
 // Dependencies: [8412, 8418, 2]
 // Exports: handleMessagesTapGameMention
 
-// Module 10865 (handleMessagesTapGameMention)
+// Module 10866 (handleMessagesTapGameMention)
 const result = require("set").fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapGameMention.tsx");
 
 export const handleMessagesTapGameMention = function handleMessagesTapGameMention(gameId) {

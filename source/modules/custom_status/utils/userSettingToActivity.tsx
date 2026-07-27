@@ -1,5 +1,5 @@
 // Module ID: 8018
-// Function ID: 63838
+// Function ID: 63839
 // Name: _activityFromSetting
 // Dependencies: [31, 4992, 653, 3772, 3804, 566, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity

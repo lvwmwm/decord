@@ -1,7 +1,7 @@
 // Module ID: 12069
-// Function ID: 93957
+// Function ID: 93951
 // Name: cached
-// Dependencies: [12015]
+// Dependencies: [12016]
 
 // Module 12069 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "\u5B57\u5143", verb: "\u64C1\u6709" }, file: { unit: "\u4F4D\u5143\u7D44", verb: "\u64C1\u6709" }, array: { unit: "\u9805\u76EE", verb: "\u64C1\u6709" }, set: { unit: "\u9805\u76EE", verb: "\u64C1\u6709" } };
-      let closure_1 = { regex: "\u8F38\u5165", email: "\u90F5\u4EF6\u5730\u5740", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO \u65E5\u671F\u6642\u9593", date: "ISO \u65E5\u671F", time: "ISO \u6642\u9593", duration: "ISO \u671F\u9593", ipv4: "IPv4 \u4F4D\u5740", ipv6: "IPv6 \u4F4D\u5740", cidrv4: "IPv4 \u7BC4\u570D", cidrv6: "IPv6 \u7BC4\u570D", base64: "base64 \u7DE8\u78BC\u5B57\u4E32", base64url: "base64url \u7DE8\u78BC\u5B57\u4E32", json_string: "JSON \u5B57\u4E32", e164: "E.164 \u6578\u503C", jwt: "JWT", template_literal: "\u8F38\u5165" };
-      let closure_2 = { nan: "NaN" };
+      let closure_0 = { string: { unit: "\u5B57\u7B26", verb: "\u5305\u542B" }, file: { unit: "\u5B57\u8282", verb: "\u5305\u542B" }, array: { unit: "\u9879", verb: "\u5305\u542B" }, set: { unit: "\u9879", verb: "\u5305\u542B" } };
+      let closure_1 = { regex: "\u8F93\u5165", email: "\u7535\u5B50\u90AE\u4EF6", url: "URL", emoji: "\u8868\u60C5\u7B26\u53F7", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO\u65E5\u671F\u65F6\u95F4", date: "ISO\u65E5\u671F", time: "ISO\u65F6\u95F4", duration: "ISO\u65F6\u957F", ipv4: "IPv4\u5730\u5740", ipv6: "IPv6\u5730\u5740", cidrv4: "IPv4\u7F51\u6BB5", cidrv6: "IPv6\u7F51\u6BB5", base64: "base64\u7F16\u7801\u5B57\u7B26\u4E32", base64url: "base64url\u7F16\u7801\u5B57\u7B26\u4E32", json_string: "JSON\u5B57\u7B26\u4E32", e164: "E.164\u53F7\u7801", jwt: "JWT", template_literal: "\u8F93\u5165" };
+      let closure_2 = { nan: "NaN", number: "\u6570\u5B57", array: "\u6570\u7EC4", null: "\u7A7A\u503C(null)" };
       return (code) => {
         let minimum;
         let origin;
@@ -82,113 +82,109 @@ if (self2) {
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "\u7121\u6548\u7684\u8F38\u5165\u503C\uFF1A\u9810\u671F\u70BA instanceof " + code.expected + "\uFF0C\u4F46\u6536\u5230 " + tmp51;
+            let combined = "\u65E0\u6548\u8F93\u5165\uFF1A\u671F\u671B instanceof " + code.expected + "\uFF0C\u5B9E\u9645\u63A5\u6536 " + tmp51;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "\u7121\u6548\u7684\u8F38\u5165\u503C\uFF1A\u9810\u671F\u70BA " + expected + "\uFF0C\u4F46\u6536\u5230 " + tmp51;
+            combined = "\u65E0\u6548\u8F93\u5165\uFF1A\u671F\u671B " + expected + "\uFF0C\u5B9E\u9645\u63A5\u6536 " + tmp51;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "\u7121\u6548\u7684\u8F38\u5165\u503C\uFF1A\u9810\u671F\u70BA " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "\u65E0\u6548\u8F93\u5165\uFF1A\u671F\u671B " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "\u7121\u6548\u7684\u9078\u9805\uFF1A\u9810\u671F\u70BA\u4EE5\u4E0B\u5176\u4E2D\u4E4B\u4E00 " + closure_2.joinValues(code.values, "|");
+            combined1 = "\u65E0\u6548\u9009\u9879\uFF1A\u671F\u671B\u4EE5\u4E0B\u4E4B\u4E00 " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str31 = "<";
+          let str30 = "<";
           if (code.inclusive) {
-            str31 = "<=";
+            str30 = "<=";
           }
           const tmp26 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str32 = "\u503C";
+          let str31 = "\u503C";
           if (tmp26) {
             if (tmp28) {
-              str32 = origin2;
+              str31 = origin2;
             }
             let str = code.maximum.toString();
             const unit = tmp26.unit;
-            let str37 = "\u500B\u5143\u7D20";
+            let str36 = "\u4E2A\u5143\u7D20";
             if (null != unit) {
-              str37 = unit;
+              str36 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "\u6578\u503C\u904E\u5927\uFF1A\u9810\u671F " + str32 + " \u61C9\u70BA " + str31 + str + " " + str37;
-            const str36 = code.maximum;
+            let combined2 = "\u6570\u503C\u8FC7\u5927\uFF1A\u671F\u671B " + str31 + " " + str30 + str + " " + str36;
+            const str35 = code.maximum;
           } else {
-            let tmp29 = str32;
+            let tmp29 = str31;
             if (tmp28) {
               tmp29 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "\u6578\u503C\u904E\u5927\uFF1A\u9810\u671F " + tmp29 + " \u61C9\u70BA " + str31 + code.maximum.toString();
-            const str33 = code.maximum;
+            combined2 = "\u6570\u503C\u8FC7\u5927\uFF1A\u671F\u671B " + tmp29 + " " + str30 + code.maximum.toString();
+            const str32 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str25 = ">";
+          let str23 = ">";
           if (code.inclusive) {
-            str25 = ">=";
+            str23 = ">=";
           }
           const tmp15 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
           if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "\u6578\u503C\u904E\u5C0F\uFF1A\u9810\u671F " + origin + " \u61C9\u70BA " + str25 + str1 + " " + tmp15.unit;
+            let combined3 = "\u6570\u503C\u8FC7\u5C0F\uFF1A\u671F\u671B " + origin + " " + str23 + str1 + " " + tmp15.unit;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "\u6578\u503C\u904E\u5C0F\uFF1A\u9810\u671F " + origin + " \u61C9\u70BA " + str25 + str1;
+            combined3 = "\u6570\u503C\u8FC7\u5C0F\uFF1A\u671F\u671B " + origin + " " + str23 + str1;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "\u7121\u6548\u7684\u5B57\u4E32\uFF1A\u5FC5\u9808\u4EE5 \"" + code.prefix + "\" \u958B\u982D";
+            let combined4 = "\u65E0\u6548\u5B57\u7B26\u4E32\uFF1A\u5FC5\u987B\u4EE5 \"" + code.prefix + "\" \u5F00\u5934";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "\u7121\u6548\u7684\u5B57\u4E32\uFF1A\u5FC5\u9808\u4EE5 \"" + code.suffix + "\" \u7D50\u5C3E";
+            combined4 = "\u65E0\u6548\u5B57\u7B26\u4E32\uFF1A\u5FC5\u987B\u4EE5 \"" + code.suffix + "\" \u7ED3\u5C3E";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "\u7121\u6548\u7684\u5B57\u4E32\uFF1A\u5FC5\u9808\u5305\u542B \"" + code.includes + "\"";
+            combined4 = "\u65E0\u6548\u5B57\u7B26\u4E32\uFF1A\u5FC5\u987B\u5305\u542B \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "\u7121\u6548\u7684\u5B57\u4E32\uFF1A\u5FC5\u9808\u7B26\u5408\u683C\u5F0F " + code.pattern;
+            combined4 = "\u65E0\u6548\u5B57\u7B26\u4E32\uFF1A\u5FC5\u987B\u6EE1\u8DB3\u6B63\u5219\u8868\u8FBE\u5F0F " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "\u7121\u6548\u7684 " + format;
+            combined4 = "\u65E0\u6548" + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "\u7121\u6548\u7684\u6578\u5B57\uFF1A\u5FC5\u9808\u70BA " + code.divisor + " \u7684\u500D\u6578";
+          return "\u65E0\u6548\u6570\u5B57\uFF1A\u5FC5\u987B\u662F " + code.divisor + " \u7684\u500D\u6570";
         } else if ("unrecognized_keys" === code) {
-          let str9 = "";
-          if (code.keys.length > 1) {
-            str9 = "\u5011";
-          }
           const _HermesInternal3 = HermesInternal;
-          return "\u7121\u6CD5\u8B58\u5225\u7684\u9375\u503C" + str9 + "\uFF1A" + closure_2.joinValues(code.keys, "\u3001");
+          return "\u51FA\u73B0\u672A\u77E5\u7684\u952E(key): " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "" + code.origin + " \u4E2D\u6709\u7121\u6548\u7684\u9375\u503C";
+            return "" + code.origin + " \u4E2D\u7684\u952E(key)\u65E0\u6548";
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "" + code.origin + " \u4E2D\u6709\u7121\u6548\u7684\u503C";
+                return "" + code.origin + " \u4E2D\u5305\u542B\u65E0\u6548\u503C(value)";
               }
             }
-            return "\u7121\u6548\u7684\u8F38\u5165\u503C";
+            return "\u65E0\u6548\u8F93\u5165";
           }
         }
       };

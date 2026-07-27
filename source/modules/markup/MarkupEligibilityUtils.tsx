@@ -1,5 +1,5 @@
 // Module ID: 7804
-// Function ID: 61950
+// Function ID: 61951
 // Name: isMessageNewerThanImprovedMarkdownEpoch
 // Dependencies: [21, 2]
 // Exports: isMessageNewerThanImprovedMarkdownEpoch

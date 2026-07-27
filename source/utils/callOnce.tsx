@@ -1,5 +1,5 @@
 // Module ID: 5901
-// Function ID: 52380
+// Function ID: 52381
 // Name: callOnce
 // Dependencies: [2]
 // Exports: callOnce

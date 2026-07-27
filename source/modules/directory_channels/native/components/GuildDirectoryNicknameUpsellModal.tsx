@@ -1,10 +1,10 @@
-// Module ID: 11691
-// Function ID: 90693
+// Module ID: 11692
+// Function ID: 90698
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 57, 31, 27, 1838, 11680, 33, 4131, 5084, 689, 566, 5159, 5080, 4030, 5513, 4127, 1212, 8927, 1273, 4544, 11681, 11690, 5087, 5517, 5450, 2]
+// Dependencies: [5, 57, 31, 27, 1838, 11681, 33, 4131, 5084, 689, 566, 5159, 5080, 4030, 5513, 4127, 1212, 8927, 1273, 4544, 11682, 11691, 5087, 5517, 5450, 2]
 // Exports: default
 
-// Module 11691 (GuildDirectoryNicknameUpsell)
+// Module 11692 (GuildDirectoryNicknameUpsell)
 import GuildPrompts from "GuildPrompts";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

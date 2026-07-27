@@ -1,5 +1,5 @@
 // Module ID: 8238
-// Function ID: 66063
+// Function ID: 66064
 // Name: AddModerators
 // Dependencies: [57, 31, 27, 1838, 6661, 33, 4131, 689, 1456, 44, 8212, 4949, 1882, 1212, 5087, 6695, 4127, 1273, 8239, 1356, 2]
 // Exports: default

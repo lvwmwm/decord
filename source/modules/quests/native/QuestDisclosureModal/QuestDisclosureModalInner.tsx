@@ -1,10 +1,10 @@
-// Module ID: 14067
-// Function ID: 107681
+// Module ID: 14068
+// Function ID: 107686
 // Name: QuestDisclosureModalInner
-// Dependencies: [27, 653, 33, 4131, 689, 3804, 8936, 1212, 8952, 10952, 8867, 6727, 4127, 9425, 5166, 1921, 4544, 2]
+// Dependencies: [27, 653, 33, 4131, 689, 3804, 8936, 1212, 8952, 10953, 8867, 6727, 4127, 9425, 5166, 1921, 4544, 2]
 // Exports: default
 
-// Module 14067 (QuestDisclosureModalInner)
+// Module 14068 (QuestDisclosureModalInner)
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -58,7 +58,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
     items1 = [obj, , ];
     const obj1 = {};
     const obj2 = { size: "xs" };
-    obj1.icon = tmp3(tmp4(10952).UserIcon, obj2);
+    obj1.icon = tmp3(tmp4(10953).UserIcon, obj2);
     const intl2 = tmp4(1212).intl;
     obj1.text = intl2.string(tmp4(1212).t.mYt7hQ);
     items1[1] = obj1;

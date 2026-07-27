@@ -1,10 +1,10 @@
-// Module ID: 10270
-// Function ID: 79388
+// Module ID: 10271
+// Function ID: 79393
 // Name: NotificationSettingsChannelPost
 // Dependencies: [31, 27, 4326, 33, 566, 5501, 1212, 9024, 5079, 2]
 // Exports: NotificationSettingsChannelPost
 
-// Module 10270 (NotificationSettingsChannelPost)
+// Module 10271 (NotificationSettingsChannelPost)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

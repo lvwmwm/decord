@@ -1,10 +1,10 @@
-// Module ID: 13859
-// Function ID: 106181
+// Module ID: 13860
+// Function ID: 106186
 // Name: useActionTotalsForDisplayType
 // Dependencies: [5765, 5766, 624, 5827, 5616, 2]
 // Exports: useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
 
-// Module 13859 (useActionTotalsForDisplayType)
+// Module 13860 (useActionTotalsForDisplayType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { TeenActionDisplayType } from "items";
 

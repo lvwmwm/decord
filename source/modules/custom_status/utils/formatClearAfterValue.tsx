@@ -1,10 +1,10 @@
-// Module ID: 11915
-// Function ID: 92218
+// Module ID: 11916
+// Function ID: 92223
 // Name: formatDuration
-// Dependencies: [11904, 3801, 1212, 664, 1327, 2]
+// Dependencies: [11905, 3801, 1212, 664, 1327, 2]
 // Exports: default
 
-// Module 11915 (formatDuration)
+// Module 11916 (formatDuration)
 import { ClearAfterValues } from "StatusTypes";
 
 function formatDuration(arg0) {

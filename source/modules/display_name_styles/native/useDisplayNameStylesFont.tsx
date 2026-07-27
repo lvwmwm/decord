@@ -1,5 +1,5 @@
 // Module ID: 8321
-// Function ID: 66822
+// Function ID: 66823
 // Name: DISPLAY_NAME_STYLES_FONT_FAMILY_MAP
 // Dependencies: [1862, 1864, 4363, 8320, 2]
 // Exports: useDisplayNameStylesFont

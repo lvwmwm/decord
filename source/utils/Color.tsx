@@ -1,5 +1,5 @@
 // Module ID: 3976
-// Function ID: 32978
+// Function ID: 32979
 // Name: hslToRgb
 // Dependencies: [57, 6, 7, 2]
 

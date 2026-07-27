@@ -1,5 +1,5 @@
 // Module ID: 9422
-// Function ID: 73544
+// Function ID: 73545
 // Name: getQuestOrbMultiplierEligibilityForUser
 // Dependencies: [1850, 566, 9423, 3777, 2]
 // Exports: useQuestOrbMultiplierEligibility

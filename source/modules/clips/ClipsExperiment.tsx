@@ -1,5 +1,5 @@
 // Module ID: 4190
-// Function ID: 36064
+// Function ID: 36065
 // Name: isUserPremiumTypeForClipsEarlyAccess
 // Dependencies: [4178, 1850, 1852, 1428, 4191, 566, 3777, 2]
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, useIsClipsAvailable, useScreenshotKeybindEnabled

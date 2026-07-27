@@ -1,10 +1,10 @@
-// Module ID: 14945
-// Function ID: 113959
+// Module ID: 14946
+// Function ID: 113964
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 3949, 4972, 566, 10921, 14946, 9088, 4973, 1212, 2]
+// Dependencies: [31, 3949, 4972, 566, 10922, 14947, 9088, 4973, 1212, 2]
 // Exports: default
 
-// Module 14945 (_createForOfIteratorHelperLoose)
+// Module 14946 (_createForOfIteratorHelperLoose)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -96,7 +96,7 @@ export default function useGuildsBarCreatePendingFolderNode() {
   let obj = stateFromStores(566);
   const items = [_isNativeReflectConstruct];
   stateFromStores = obj.useStateFromStores(items, () => outer1_4.hasFetchedRequestToJoinGuilds);
-  const arr2 = importDefault(10921)();
+  const arr2 = importDefault(10922)();
   const items1 = [closure_5];
   const stateFromStores1 = stateFromStores(566).useStateFromStores(items1, () => outer1_5.isFolderExpanded(stateFromStores(outer1_2[5]).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER));
   const items2 = [stateFromStores];
@@ -107,7 +107,7 @@ export default function useGuildsBarCreatePendingFolderNode() {
     }
   }, items2);
   if (arr2.length > 0) {
-    obj = { folderId: stateFromStores(14946).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER };
+    obj = { folderId: stateFromStores(14947).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER };
     const intl = stateFromStores(1212).intl;
     obj.folderName = intl.string(stateFromStores(1212).t["scsU+l"]);
     obj.expanded = stateFromStores1;

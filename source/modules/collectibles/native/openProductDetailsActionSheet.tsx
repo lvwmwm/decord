@@ -1,5 +1,5 @@
 // Module ID: 8663
-// Function ID: 68797
+// Function ID: 68798
 // Name: PRODUCT_DETAILS_ACTION_SHEET_KEY
 // Dependencies: [5781, 5769, 4099, 8664, 1935, 2]
 // Exports: openProductDetailsActionSheet

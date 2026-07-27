@@ -1,10 +1,10 @@
-// Module ID: 12465
-// Function ID: 96707
+// Module ID: 12466
+// Function ID: 96712
 // Name: GuildBoostSlotCooldown
-// Dependencies: [31, 27, 1278, 1838, 4024, 3783, 653, 33, 4131, 689, 5053, 6180, 4127, 1212, 21, 4661, 4967, 5513, 12466, 566, 1392, 12467, 12471, 4452, 4027, 22, 2]
+// Dependencies: [31, 27, 1278, 1838, 4024, 3783, 653, 33, 4131, 689, 5053, 6180, 4127, 1212, 21, 4661, 4967, 5513, 12467, 566, 1392, 12468, 12472, 4452, 4027, 22, 2]
 // Exports: default
 
-// Module 12465 (GuildBoostSlotCooldown)
+// Module 12466 (GuildBoostSlotCooldown)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -197,7 +197,7 @@ function BoostedGuildInfo(guild) {
     const obj2 = { style: tmp.guildInfoName, variant: "heading-lg/extrabold", color: "interactive-text-active", children: guild.name };
     const items1 = [callback(require(4127) /* Text */.Text, obj2), ];
     const obj3 = { style: tmp.guildInfoRowBottom };
-    const obj4 = { source: importDefault(12466), style: tmp.guildInfoRowIcon };
+    const obj4 = { source: importDefault(12467), style: tmp.guildInfoRowIcon };
     const items2 = [callback(closure_6, obj4), ];
     const obj5 = { style: tmp.guildInfoSubscriptionCount, variant: "text-xs/semibold", color: "interactive-text-active" };
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -233,7 +233,7 @@ function BoostedGuild(arg0) {
       guildBannerSource = obj2.getGuildBannerSource(stateFromStores);
     }
   }
-  let obj3 = require(12467) /* getSubscriptionPlaceholderPatternSource */;
+  let obj3 = require(12468) /* getSubscriptionPlaceholderPatternSource */;
   let subscriptionPlaceholderPatternSource = obj3.useSubscriptionPlaceholderPatternSource();
   if (null != guildBannerSource) {
     subscriptionPlaceholderPatternSource = guildBannerSource;
@@ -256,7 +256,7 @@ function BoostedGuild(arg0) {
     tmp17 = callback(closure_5, obj3);
   }
   items3[1] = tmp17;
-  items3[2] = callback(guildBoostSlots(12471), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = callback(guildBoostSlots(12472), { guild: stateFromStores, theme: stateFromStores1 });
   obj1.children = items3;
   const items4 = [closure_12(closure_5, obj1), callback(BoostedGuildInfo, { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length })];
   obj.children = items4;

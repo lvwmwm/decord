@@ -1,5 +1,5 @@
 // Module ID: 9610
-// Function ID: 74968
+// Function ID: 74969
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 1280, 1348, 4469, 1907, 4468, 1552, 653, 4345, 4666, 6134, 4673, 4675, 4676, 675, 4687, 477, 4111, 9611, 1207, 9637, 4540, 9767, 9768, 22, 2]
 // Exports: addAttachmentForCommand, cropResultToUploadItem, handleSelectGift, handleSelectThread

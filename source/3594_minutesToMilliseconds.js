@@ -1,5 +1,5 @@
 // Module ID: 3594
-// Function ID: 27792
+// Function ID: 27793
 // Name: minutesToMilliseconds
 // Dependencies: [3211, 3389]
 // Exports: default

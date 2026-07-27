@@ -1,10 +1,10 @@
-// Module ID: 13472
-// Function ID: 103571
+// Module ID: 13473
+// Function ID: 103576
 // Name: _fetchIsLinkTrusted
 // Dependencies: [5, 653, 507, 2]
 // Exports: fetchIsLinkTrusted
 
-// Module 13472 (_fetchIsLinkTrusted)
+// Module 13473 (_fetchIsLinkTrusted)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

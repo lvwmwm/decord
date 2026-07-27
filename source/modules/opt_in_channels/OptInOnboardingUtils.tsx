@@ -1,5 +1,5 @@
 // Module ID: 9937
-// Function ID: 76886
+// Function ID: 76887
 // Name: hasNotSetUpChannelOptIn
 // Dependencies: [1316, 1908, 1918, 4326, 3747, 5761, 1360, 5073, 5064, 1282, 2]
 // Exports: hasClearedGuildOnboardingNotice, toggleShowAllChannels

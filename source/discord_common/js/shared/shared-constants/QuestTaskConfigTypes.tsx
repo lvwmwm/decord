@@ -1,5 +1,5 @@
 // Module ID: 5942
-// Function ID: 52876
+// Function ID: 52877
 // Name: QuestTaskConfigTypes
 // Dependencies: [2]
 

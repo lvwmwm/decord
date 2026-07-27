@@ -1,10 +1,10 @@
-// Module ID: 11839
-// Function ID: 91796
+// Module ID: 11840
+// Function ID: 91801
 // Name: NitroAcquiredHeader
-// Dependencies: [31, 27, 653, 1852, 33, 4131, 689, 8646, 5085, 11840, 4067, 5818, 3977, 6260, 6261, 4127, 1212, 1921, 3828, 5187, 6172, 4661, 9758, 4544, 4099, 5446, 2]
+// Dependencies: [31, 27, 653, 1852, 33, 4131, 689, 8646, 5085, 11841, 4067, 5818, 3977, 6260, 6261, 4127, 1212, 1921, 3828, 5187, 6172, 4661, 9758, 4544, 4099, 5446, 2]
 // Exports: default
 
-// Module 11839 (NitroAcquiredHeader)
+// Module 11840 (NitroAcquiredHeader)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -23,7 +23,7 @@ const require = arg1;
 function NitroAcquiredHeader(skuId) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.header };
-  obj = { source: importDefault(11840) };
+  obj = { source: importDefault(11841) };
   const items = [callback(importDefault(5085), obj), ];
   obj = { style: tmp.fractionNitroIcon };
   const obj1 = { skuId: skuId.skuId, width: require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET, height: require(8646) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET };

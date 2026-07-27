@@ -1,10 +1,10 @@
-// Module ID: 15329
-// Function ID: 116948
+// Module ID: 15342
+// Function ID: 116997
 // Name: ContentHeader
-// Dependencies: [57, 31, 27, 1348, 33, 4131, 689, 4127, 4099, 15330, 1935, 9361, 14190, 1273, 566, 4321, 1212, 4594, 14177, 15325, 5085, 15331, 2]
+// Dependencies: [57, 31, 27, 1348, 33, 4131, 689, 4127, 4099, 15343, 1935, 9361, 14191, 1273, 566, 4321, 1212, 4594, 14178, 15338, 5085, 15344, 2]
 // Exports: default
 
-// Module 15329 (ContentHeader)
+// Module 15342 (ContentHeader)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -149,16 +149,16 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   listingId = listingId.listingId;
   const guildId = listingId.guildId;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(14177);
+  let obj = importAll(14178);
   const first = callback(obj.useImage(listingId), 1)[0];
-  let obj1 = importAll(14177);
-  let obj2 = importAll(14177);
+  let obj1 = importAll(14178);
+  let obj2 = importAll(14178);
   const first1 = callback(obj2.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj3 = importAll(14177);
+  let obj3 = importAll(14178);
   const first2 = callback(obj3.useChannelBenefits(listingId), 1)[0];
-  let obj4 = importAll(14177);
+  let obj4 = importAll(14178);
   const first3 = callback(obj4.useIntangibleBenefits(listingId), 1)[0];
-  let obj5 = listingId(15325);
+  let obj5 = listingId(15338);
   const first4 = first2[0];
   const first5 = first3[0];
   const size = first1.size;
@@ -183,7 +183,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   obj3.children = items1;
   items[2] = callback3(closure_6, obj3);
   obj.children = items;
-  const items2 = [callback3(closure_6, obj), callback2(listingId(1273).Spacer, { size: 16 }), callback2(guildId(15331), { listingId }), ];
+  const items2 = [callback3(closure_6, obj), callback2(listingId(1273).Spacer, { size: 16 }), callback2(guildId(15344), { listingId }), ];
   let tmp14Result = length > 0 || size > 0 || length2 > 0;
   if (tmp14Result) {
     const obj6 = {};

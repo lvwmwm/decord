@@ -1,8 +1,8 @@
-// Module ID: 10801
-// Function ID: 83779
-// Dependencies: [31, 27, 33, 4131, 5084, 10762, 10758, 2]
+// Module ID: 10802
+// Function ID: 83784
+// Dependencies: [31, 27, 33, 4131, 5084, 10763, 10759, 2]
 
-// Module 10801
+// Module 10802
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,20 +18,20 @@ obj.header = obj;
 let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = require("result").memo((channel) => {
   channel = channel.channel;
-  const tmp2 = importDefault(10762)(channel.id);
+  const tmp2 = importDefault(10763)(channel.id);
   let speaker;
   if (null != tmp2) {
     speaker = tmp2.speaker;
   }
   let obj = { style: callback2().header, pointerEvents: "box-none" };
-  const items = [callback(require(10758) /* closeStageModal */.HideStageChannelCallIcon, { channel }), callback(require(10758) /* closeStageModal */.StageChannelCallHeader, { channel }), , ];
+  const items = [callback(require(10759) /* closeStageModal */.HideStageChannelCallIcon, { channel }), callback(require(10759) /* closeStageModal */.StageChannelCallHeader, { channel }), , ];
   if (speaker) {
     obj = { channelId: channel.id };
-    speaker = callback(require(10758) /* closeStageModal */.MusicMuteButton, obj);
+    speaker = callback(require(10759) /* closeStageModal */.MusicMuteButton, obj);
   }
   items[2] = speaker;
   obj = { channelId: channel.id };
-  items[3] = callback(require(10758) /* closeStageModal */.StageInviteButton, obj);
+  items[3] = callback(require(10759) /* closeStageModal */.StageInviteButton, obj);
   obj.children = items;
   return closure_5(View, obj);
 });

@@ -1,10 +1,10 @@
-// Module ID: 14599
-// Function ID: 111391
+// Module ID: 14600
+// Function ID: 111396
 // Name: useAllowFriendsFromMutualGuildsOnly
 // Dependencies: [31, 3804, 6449, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnly
 
-// Module 14599 (useAllowFriendsFromMutualGuildsOnly)
+// Module 14600 (useAllowFriendsFromMutualGuildsOnly)
 import result from "result";
 
 const require = arg1;

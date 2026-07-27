@@ -1,9 +1,9 @@
-// Module ID: 10842
-// Function ID: 84292
+// Module ID: 10843
+// Function ID: 84297
 // Name: onLongPressLink
-// Dependencies: [5, 9482, 9538, 8143, 3828, 9485, 8297, 5482, 4099, 10843, 1935, 21, 3804, 1212, 5490, 3831, 4471, 9341, 2]
+// Dependencies: [5, 9482, 9538, 8143, 3828, 9485, 8297, 5482, 4099, 10844, 1935, 21, 3804, 1212, 5490, 3831, 4471, 9341, 2]
 
-// Module 10842 (onLongPressLink)
+// Module 10843 (onLongPressLink)
 import importDefaultResult from "castNativeSyntheticEventData";
 
 const require = arg1;
@@ -51,7 +51,7 @@ obj.onTapMention = function onTapMention(nativeEvent) {
     if (null != roleId) {
       if (null != guildId) {
         obj = { guildId, roleId, channelId };
-        importDefault(4099).openLazy(parsedUserId(1935)(10843, dependencyMap.paths), "RoleMembersActionSheet", obj);
+        importDefault(4099).openLazy(parsedUserId(1935)(10844, dependencyMap.paths), "RoleMembersActionSheet", obj);
         const obj9 = importDefault(4099);
       }
     }
@@ -59,7 +59,7 @@ obj.onTapMention = function onTapMention(nativeEvent) {
       if (null != guildId) {
         const obj1 = { guildId };
         const obj6 = importDefault(4099);
-        const tmp14 = parsedUserId(1935)(10843, dependencyMap.paths);
+        const tmp14 = parsedUserId(1935)(10844, dependencyMap.paths);
         obj1.roleId = importDefault(21).castGuildIdAsEveryoneGuildRoleId(guildId);
         obj1.channelId = channelId;
         obj6.openLazy(tmp14, "RoleMembersActionSheet", obj1);

@@ -1,10 +1,10 @@
-// Module ID: 11476
-// Function ID: 89369
+// Module ID: 11477
+// Function ID: 89374
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 566, 11471, 3832, 1212, 9104, 4099, 5187, 5186, 5499, 7575, 4544, 2]
+// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 566, 11472, 3832, 1212, 9104, 4099, 5187, 5186, 5499, 7575, 4544, 2]
 // Exports: default
 
-// Module 11476 (SpamMessageRequestHamActionSheet)
+// Module 11477 (SpamMessageRequestHamActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -42,7 +42,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(recipientId.getRecipientId()));
-  let obj1 = require(11471) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(11472) /* _createForOfIteratorHelperLoose */;
   obj = {
     user: stateFromStores,
     onError() {

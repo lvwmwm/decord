@@ -1,10 +1,10 @@
-// Module ID: 10179
-// Function ID: 78662
+// Module ID: 10180
+// Function ID: 78667
 // Name: NotificationsContainer
-// Dependencies: [31, 27, 3760, 1348, 1907, 653, 1345, 33, 4131, 3985, 10180, 566, 10329, 8063, 3947, 1334, 10330, 10331, 10346, 2]
+// Dependencies: [31, 27, 3760, 1348, 1907, 653, 1345, 33, 4131, 3985, 10181, 566, 10330, 8063, 3947, 1334, 10331, 10332, 10347, 2]
 // Exports: ChannelContainer
 
-// Module 10179 (NotificationsContainer)
+// Module 10180 (NotificationsContainer)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ const require = arg1;
 function NotificationsContainer() {
   let tmp2 = null;
   if (importDefault(3985)().isChatBesideChannelList) {
-    const obj = { style: tmp.container, children: callback(importDefault(10180), {}) };
+    const obj = { style: tmp.container, children: callback(importDefault(10181), {}) };
     tmp2 = callback(View, obj);
   }
   return tmp2;
@@ -54,7 +54,7 @@ export const ChannelContainer = function ChannelContainer(children) {
   });
   let channel = stateFromStoresObject.channel;
   ({ voiceChannelId, isStageChannel } = stateFromStoresObject);
-  let tmp2 = !isStageChannel || channelId(10329)(voiceChannelId);
+  let tmp2 = !isStageChannel || channelId(10330)(voiceChannelId);
   let obj1 = require(566) /* initialize */;
   const items1 = [_isNativeReflectConstruct];
   let isPrivateResult = null != channel;
@@ -95,7 +95,7 @@ export const ChannelContainer = function ChannelContainer(children) {
       const result = obj.UNSAFE_markDismissibleContentAsDismissed(outer1_0(_undefined[15]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
     }
   }, items2);
-  let obj2 = require(10330) /* styles */;
+  let obj2 = require(10331) /* styles */;
   const channelStyles = obj2.useChannelStyles();
   obj = { style: channelStyles.scene };
   obj = { style: channelStyles.flex };
@@ -108,13 +108,13 @@ export const ChannelContainer = function ChannelContainer(children) {
     tmp13 = null;
     if (stateFromStores) {
       obj1 = { channel };
-      tmp13 = callback(channelId(10331), obj1);
+      tmp13 = callback(channelId(10332), obj1);
     }
   }
   const items3 = [tmp13, children.children, ];
   if (tmp2) {
     obj2 = { style: channelStyles.callPTTButton };
-    tmp2 = callback(channelId(10346), obj2);
+    tmp2 = callback(channelId(10347), obj2);
   }
   items3[2] = tmp2;
   obj.children = items3;

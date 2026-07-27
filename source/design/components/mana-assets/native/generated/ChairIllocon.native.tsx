@@ -1,5 +1,5 @@
 // Module ID: 6858
-// Function ID: 59522
+// Function ID: 59523
 // Name: ChairIllocon
 // Dependencies: [33, 5085, 6859, 2]
 // Exports: ChairIllocon

@@ -1,10 +1,10 @@
-// Module ID: 14943
-// Function ID: 113952
+// Module ID: 14944
+// Function ID: 113957
 // Name: computeIsFavoritesGuildVisible
-// Dependencies: [1340, 3948, 1351, 1841, 10157, 10152, 1334, 3947, 566, 2]
+// Dependencies: [1340, 3948, 1351, 1841, 10158, 10152, 1334, 3947, 566, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 14943 (computeIsFavoritesGuildVisible)
+// Module 14944 (computeIsFavoritesGuildVisible)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -21,8 +21,8 @@ function computeIsFavoritesGuildVisible(closure_5, closure_4, isExperimentEnable
       if (tmp10) {
         let isFavoritesGuildEnabled = !tmp12;
         if (!!tmp2) {
-          isFavoritesGuildEnabled = require(10157) /* computeIsFavoritesGuildEnabled */.computeIsFavoritesGuildEnabled(tmp, closure_5);
-          const obj2 = require(10157) /* computeIsFavoritesGuildEnabled */;
+          isFavoritesGuildEnabled = require(10158) /* computeIsFavoritesGuildEnabled */.computeIsFavoritesGuildEnabled(tmp, closure_5);
+          const obj2 = require(10158) /* computeIsFavoritesGuildEnabled */;
         }
         tmp11 = isFavoritesGuildEnabled;
       }

@@ -1,9 +1,9 @@
-// Module ID: 11673
-// Function ID: 90495
+// Module ID: 11674
+// Function ID: 90500
 // Name: useDerivedColors
-// Dependencies: [57, 31, 27, 4123, 1348, 11090, 11091, 653, 1277, 11092, 33, 3992, 1273, 4661, 4127, 22, 8463, 4131, 689, 4974, 566, 3835, 1324, 5122, 1212, 4132, 4067, 3977, 4629, 10305, 11674, 5159, 1557, 4529, 4540, 1207, 11001, 1450, 10596, 11675, 11676, 4091, 11353, 4078, 10737, 2]
+// Dependencies: [57, 31, 27, 4123, 1348, 11091, 11092, 653, 1277, 11093, 33, 3992, 1273, 4661, 4127, 22, 8463, 4131, 689, 4974, 566, 3835, 1324, 5122, 1212, 4132, 4067, 3977, 4629, 10306, 11675, 5159, 1557, 4529, 4540, 1207, 11002, 1450, 10597, 11676, 11677, 4091, 11354, 4078, 10738, 2]
 
-// Module 11673 (useDerivedColors)
+// Module 11674 (useDerivedColors)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useSafeAreaInsetsKeyboardAware";
 import get_ActivityIndicator from "AccessibilityAnnouncer";
@@ -640,7 +640,7 @@ let closure_53 = importAllResult.memo((channelId) => {
       }
       if (!tmp) {
         const ComponentDispatch = channelId(1207).ComponentDispatch;
-        const obj = { isCancelling: true, cancelReason: channelId(11001).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND };
+        const obj = { isCancelling: true, cancelReason: channelId(11002).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND };
         ComponentDispatch.dispatchKeyed(outer2_12.VOICE_MESSAGE_SEND, closure_0, obj);
       }
     });
@@ -738,7 +738,7 @@ let closure_53 = importAllResult.memo((channelId) => {
   F.__workletHash = 4588671012938;
   F.__initData = closure_50;
   const animatedStyle5 = obj13.useAnimatedStyle(F);
-  let obj14 = channelId(10596);
+  let obj14 = channelId(10597);
   const wakeLock = obj14.useWakeLock("VoiceMessageOverlay");
   let obj15 = channelId(3992);
   class Ie {
@@ -778,7 +778,7 @@ let closure_53 = importAllResult.memo((channelId) => {
     const tmp53 = callback2;
     const tmp54 = exiting;
     const tmp56 = callback2;
-    const tmp57 = exiting(11675);
+    const tmp57 = exiting(11676);
     obj8.icon = exiting(4091);
     obj8.tintColor = token1;
     obj8.boxSize = token;
@@ -792,14 +792,14 @@ let closure_53 = importAllResult.memo((channelId) => {
       const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
       ComponentDispatch.dispatchKeyed(outer1_12.VOICE_MESSAGE_SEND, channelId, { isCancelling: true });
     };
-    obj7.leftAccessory = callback2(exiting(11676), obj8);
+    obj7.leftAccessory = callback2(exiting(11677), obj8);
     obj9 = { ref };
-    const tmp59 = exiting(11676);
+    const tmp59 = exiting(11677);
     const tmp61 = callback2;
     if (tmp5) {
       let tmp64 = 4078;
     } else {
-      tmp64 = 10737;
+      tmp64 = 10738;
     }
     obj9.icon = tmp54(tmp64);
     obj9.tintColor = token4;
@@ -816,12 +816,12 @@ let closure_53 = importAllResult.memo((channelId) => {
       const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
       ComponentDispatch.dispatchKeyed(outer1_12.VOICE_MESSAGE_SEND, channelId, { isCancelling: false });
     };
-    obj9 = tmp61(exiting(11676), obj9);
+    obj9 = tmp61(exiting(11677), obj9);
     obj7.rightAccessory = obj9;
     obj7 = tmp56(tmp57, obj7);
     obj6.children = obj7;
     tmp53(exiting(3992).View, obj6);
-    const tmp62 = exiting(11676);
+    const tmp62 = exiting(11677);
   } else {
     obj10 = {};
     obj11 = {};
@@ -843,7 +843,7 @@ let closure_53 = importAllResult.memo((channelId) => {
     const items7 = [callback2(closure_20, obj11), , ];
     obj13 = { style: tmp2.voiceChatContainer };
     obj14 = { isRecording: tmp5, initialAnimation, backgroundColor: tmp15 };
-    obj13.children = callback2(exiting(11675), obj14);
+    obj13.children = callback2(exiting(11676), obj14);
     items7[1] = callback2(exiting(3992).View, obj13);
     obj15 = { ref };
     const items8 = [tmp2.sendContainer, animatedStyle2];
@@ -860,7 +860,7 @@ let closure_53 = importAllResult.memo((channelId) => {
     if (tmp5) {
       let tmp50 = 4078;
     } else {
-      tmp50 = 10737;
+      tmp50 = 10738;
     }
     obj16.source = exiting(tmp50);
     obj16.size = channelId(1273).Icon.Sizes.MEDIUM;

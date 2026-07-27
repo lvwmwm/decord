@@ -1,10 +1,10 @@
-// Module ID: 11967
-// Function ID: 92508
+// Module ID: 11968
+// Function ID: 92513
 // Name: isUserProfileVoiceActivityForChannel
 // Dependencies: [4218, 4147, 5972, 8997, 566, 2]
 // Exports: default
 
-// Module 11967 (isUserProfileVoiceActivityForChannel)
+// Module 11968 (isUserProfileVoiceActivityForChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 

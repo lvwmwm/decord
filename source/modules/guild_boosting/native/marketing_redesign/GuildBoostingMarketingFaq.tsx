@@ -1,10 +1,10 @@
-// Module ID: 12601
-// Function ID: 97477
+// Module ID: 12602
+// Function ID: 97482
 // Name: items1
-// Dependencies: [57, 31, 27, 653, 33, 4131, 12571, 689, 1212, 1921, 4127, 4661, 1273, 12602, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 12572, 689, 1212, 1921, 4127, 4661, 1273, 12603, 2]
 // Exports: default
 
-// Module 12601 (items1)
+// Module 12602 (items1)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -189,7 +189,7 @@ export default function GuildBoostingMarketingFaq() {
         obj1.variant = "text-md/normal";
         obj1.children = getQuestion.getQuestion();
         const items1 = [outer1_7(tmp(4127).Text, obj1), ];
-        const obj2 = { source: callback(12602) };
+        const obj2 = { source: callback(12603) };
         const items2 = [tmp.questionIcon, ];
         let questionIconExpanded = tmp;
         if (tmp) {

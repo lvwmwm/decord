@@ -1,5 +1,5 @@
 // Module ID: 9027
-// Function ID: 70952
+// Function ID: 70953
 // Name: useRecipientsLabel
 // Dependencies: [31, 1850, 1212, 566, 1327, 3970, 2]
 // Exports: useRecipientsLabel

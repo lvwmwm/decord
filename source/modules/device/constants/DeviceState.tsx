@@ -1,5 +1,5 @@
 // Module ID: 5985
-// Function ID: 53255
+// Function ID: 53256
 // Name: ThermalState
 // Dependencies: [2]
 

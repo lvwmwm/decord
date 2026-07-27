@@ -1,10 +1,10 @@
-// Module ID: 11233
-// Function ID: 87408
+// Module ID: 11234
+// Function ID: 87413
 // Name: useAppsInThisServer
-// Dependencies: [31, 5669, 1850, 4567, 566, 7962, 1882, 5682, 11231, 22, 7964, 2]
+// Dependencies: [31, 5669, 1850, 4567, 566, 7962, 1882, 5682, 11232, 22, 7964, 2]
 // Exports: default
 
-// Module 11233 (useAppsInThisServer)
+// Module 11234 (useAppsInThisServer)
 import result from "result";
 import { useGuildIndexState } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

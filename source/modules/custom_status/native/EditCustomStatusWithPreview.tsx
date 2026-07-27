@@ -1,10 +1,10 @@
-// Module ID: 11903
-// Function ID: 92127
+// Module ID: 11904
+// Function ID: 92132
 // Name: ClearInputButton
-// Dependencies: [57, 31, 27, 1850, 11904, 653, 1853, 33, 4131, 689, 4661, 1212, 1273, 8930, 11905, 675, 8018, 566, 11906, 11907, 3977, 11909, 4540, 9268, 5159, 9786, 9039, 3990, 11910, 9050, 5087, 4127, 9017, 7584, 5501, 5164, 4099, 11913, 1935, 11915, 4090, 478, 1571, 4338, 5517, 2]
+// Dependencies: [57, 31, 27, 1850, 11905, 653, 1853, 33, 4131, 689, 4661, 1212, 1273, 8930, 11906, 675, 8018, 566, 11907, 11908, 3977, 11910, 4540, 9268, 5159, 9786, 9039, 3990, 11911, 9050, 5087, 4127, 9017, 7584, 5501, 5164, 4099, 11914, 1935, 11916, 4090, 478, 1571, 4338, 5517, 2]
 // Exports: default
 
-// Module 11903 (ClearInputButton)
+// Module 11904 (ClearInputButton)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import get_ActivityIndicator from "getHighestActiveScreenIndex";

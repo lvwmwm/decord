@@ -1,10 +1,10 @@
-// Module ID: 14520
-// Function ID: 110891
+// Module ID: 14521
+// Function ID: 110896
 // Name: useScreens
-// Dependencies: [57, 31, 27, 33, 4131, 689, 5517, 5087, 4338, 6695, 1212, 6670, 3828, 11059, 13149, 6725, 6726, 4127, 11057, 13151, 9865, 9864, 5501, 5502, 4544, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 5517, 5087, 4338, 6695, 1212, 6670, 3828, 11060, 13150, 6725, 6726, 4127, 11058, 13152, 9865, 9864, 5501, 5502, 4544, 2]
 // Exports: default
 
-// Module 14520 (useScreens)
+// Module 14521 (useScreens)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -136,7 +136,7 @@ function useScreens() {
 }
 function DemoModal() {
   const tmp = useScreens();
-  return callback2(require(11059) /* Modal */.Modal, { screens: useScreens(), initialRouteName: constants.START });
+  return callback2(require(11060) /* Modal */.Modal, { screens: useScreens(), initialRouteName: constants.START });
 }
 function DemoStepModal() {
   const memo = React.useMemo(() => {
@@ -144,7 +144,7 @@ function DemoStepModal() {
     return items;
   }, []);
   const tmp = useScreens();
-  return callback2(require(13149) /* StepModal */.StepModal, { screens: useScreens(), steps: memo, initialRouteName: constants.START });
+  return callback2(require(13150) /* StepModal */.StepModal, { screens: useScreens(), steps: memo, initialRouteName: constants.START });
 }
 function DemoScreen(arg0) {
   let action;
@@ -179,7 +179,7 @@ function DemoScreen(arg0) {
     let tmp13 = null != disclaimer;
     if (tmp13) {
       const obj4 = { children: disclaimer };
-      tmp13 = callback2(require(13151) /* ModalDisclaimer */.ModalDisclaimer, obj4);
+      tmp13 = callback2(require(13152) /* ModalDisclaimer */.ModalDisclaimer, obj4);
     }
     const items2 = [tmp13, , ];
     let tmp14 = null != action;
@@ -195,7 +195,7 @@ function DemoScreen(arg0) {
     }
     items2[2] = tmp18;
     obj3.children = items2;
-    footer = closure_8(require(11057) /* ModalFooter */.ModalFooter, obj3);
+    footer = closure_8(require(11058) /* ModalFooter */.ModalFooter, obj3);
     const tmp22 = closure_8;
   }
   items1[1] = footer;

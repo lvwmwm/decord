@@ -1,5 +1,5 @@
 // Module ID: 4095
-// Function ID: 33926
+// Function ID: 33927
 // Name: ClockIcon
 // Dependencies: [31, 33, 689, 3834, 4096, 2]
 // Exports: ClockIcon

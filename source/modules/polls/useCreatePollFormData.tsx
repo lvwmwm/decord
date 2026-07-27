@@ -1,10 +1,10 @@
-// Module ID: 11313
-// Function ID: 87957
+// Module ID: 11314
+// Function ID: 87962
 // Name: createPollCreationImageForMedia
-// Dependencies: [5, 57, 31, 6088, 6020, 11314, 9895, 11315, 11316, 11317, 1212, 7940, 2]
+// Dependencies: [5, 57, 31, 6088, 6020, 11315, 9895, 11316, 11317, 11318, 1212, 7940, 2]
 // Exports: default
 
-// Module 11313 (createPollCreationImageForMedia)
+// Module 11314 (createPollCreationImageForMedia)
 import useRequest from "useRequest";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -87,7 +87,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
     tmp18 = 0 === found1.length;
   }
   const tmp14 = first(React.useState({}), 2);
-  const tmp21 = first(importDefault(11314)(importDefault(9895).createPoll), 2);
+  const tmp21 = first(importDefault(11315)(importDefault(9895).createPoll), 2);
   const first4 = tmp21[0];
   const loading = tmp23.loading;
   let closure_16 = tmp24;

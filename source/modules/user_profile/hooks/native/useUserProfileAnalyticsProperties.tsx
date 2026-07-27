@@ -1,5 +1,5 @@
 // Module ID: 8300
-// Function ID: 66710
+// Function ID: 66711
 // Name: useUserProfileAnalyticsProperties
 // Dependencies: [31, 8043, 2]
 // Exports: default

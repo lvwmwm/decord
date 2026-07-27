@@ -1,5 +1,5 @@
 // Module ID: 8789
-// Function ID: 69612
+// Function ID: 69613
 // Name: VOICE_PANEL_SETTINGS_KEY
 // Dependencies: [2]
 

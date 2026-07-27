@@ -1,10 +1,10 @@
-// Module ID: 12723
-// Function ID: 99018
+// Module ID: 12724
+// Function ID: 99023
 // Name: getUserCalloutRowText
-// Dependencies: [31, 27, 1348, 1850, 12724, 653, 33, 4131, 689, 4127, 4320, 1212, 566, 1327, 1273, 10952, 9026, 4092, 4087, 675, 5498, 10376, 5501, 5164, 4544, 4099, 12725, 4141, 2]
+// Dependencies: [31, 27, 1348, 1850, 12725, 653, 33, 4131, 689, 4127, 4320, 1212, 566, 1327, 1273, 10953, 9026, 4092, 4087, 675, 5498, 10377, 5501, 5164, 4544, 4099, 12726, 4141, 2]
 // Exports: default
 
-// Module 12723 (getUserCalloutRowText)
+// Module 12724 (getUserCalloutRowText)
 import result from "result";
 import get_ActivityIndicator from "module_4141";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -97,7 +97,7 @@ function UserCalloutAvatars(userIds) {
       obj["aria-hidden"] = true;
       let tmp10 = callback(userIds(1273).Avatar, obj);
     } else {
-      tmp10 = callback(userIds(10952).UserIcon, {});
+      tmp10 = callback(userIds(10953).UserIcon, {});
     }
   } else {
     obj = { users: found, size: userIds(1273).AvatarSizes.REFRESH_MEDIUM_32 };

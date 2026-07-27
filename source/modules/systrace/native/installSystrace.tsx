@@ -1,10 +1,10 @@
-// Module ID: 13388
-// Function ID: 102702
+// Module ID: 13389
+// Function ID: 102707
 // Name: resolveName
-// Dependencies: [27, 477, 13389, 2]
+// Dependencies: [27, 477, 13390, 2]
 // Exports: installSystrace
 
-// Module 13388 (resolveName)
+// Module 13389 (resolveName)
 import { Systrace } from "get ActivityIndicator";
 
 function resolveName(arg0) {

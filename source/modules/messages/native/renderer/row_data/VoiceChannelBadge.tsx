@@ -1,5 +1,5 @@
 // Module ID: 7944
-// Function ID: 63231
+// Function ID: 63232
 // Name: createVoiceChannelBadge
 // Dependencies: [27, 1348, 3759, 4147, 653, 7945, 4594, 4346, 2]
 // Exports: createVoiceChannelBadge

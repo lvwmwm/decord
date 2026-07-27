@@ -1,10 +1,10 @@
-// Module ID: 15756
-// Function ID: 121539
+// Module ID: 15768
+// Function ID: 121586
 // Name: renderActivityOrPIP
-// Dependencies: [31, 27, 5660, 33, 15757, 15763, 15777, 5449, 4477, 15778, 15755, 2]
+// Dependencies: [31, 27, 5660, 33, 15769, 15775, 15789, 5449, 4477, 15790, 15767, 2]
 // Exports: default
 
-// Module 15756 (renderActivityOrPIP)
+// Module 15768 (renderActivityOrPIP)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ActivityPanelModes } from "ActivityPanelModes";
@@ -17,9 +17,9 @@ let closure_8;
 const require = arg1;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 15757;
+    let tmp4 = 15769;
   } else {
-    tmp4 = 15763;
+    tmp4 = 15775;
   }
   return closure_7(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }

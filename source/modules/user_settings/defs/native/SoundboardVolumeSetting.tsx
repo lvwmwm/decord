@@ -1,9 +1,9 @@
-// Module ID: 14203
-// Function ID: 109284
+// Module ID: 14204
+// Function ID: 109289
 // Name: volumeSlider
-// Dependencies: [7697, 10059, 1212, 10713, 7986, 5482, 2]
+// Dependencies: [7697, 10059, 1212, 10714, 7986, 5482, 2]
 
-// Module 14203 (volumeSlider)
+// Module 14204 (volumeSlider)
 import createToggle from "createToggle";
 
 const volumeSlider = createToggle.createVolumeSlider({

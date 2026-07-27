@@ -1,5 +1,5 @@
 // Module ID: 8918
-// Function ID: 70525
+// Function ID: 70526
 // Name: CrunchyrollLinkLanding
 // Dependencies: [31, 8917, 653, 33, 4131, 1212, 8065, 1456, 8869, 8919, 1921, 2]
 // Exports: default

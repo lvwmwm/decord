@@ -1,5 +1,5 @@
 // Module ID: 9604
-// Function ID: 74924
+// Function ID: 74925
 // Name: AppliedForumTag
 // Dependencies: [31, 27, 4992, 1853, 33, 4131, 689, 566, 9605, 1212, 5150, 1392, 4127, 2]
 // Exports: AppliedForumTagPill
@@ -24,7 +24,7 @@ class AppliedForumTag {
     obj = require("initialize");
     items = [];
     items[0] = emojiName;
-    f74926 = obj.useStateFromStores(items, () => {
+    f74927 = obj.useStateFromStores(items, () => {
       let usableCustomEmojiById = null;
       if (null != closure_3) {
         usableCustomEmojiById = outer1_4.getUsableCustomEmojiById(closure_3);

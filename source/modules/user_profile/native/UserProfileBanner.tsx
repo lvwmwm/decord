@@ -1,5 +1,5 @@
 // Module ID: 8039
-// Function ID: 63944
+// Function ID: 63945
 // Name: UserProfileBanner
 // Dependencies: [57, 31, 27, 653, 33, 4131, 666, 689, 3804, 7918, 1392, 8040, 4661, 1212, 8041, 2]
 // Exports: default

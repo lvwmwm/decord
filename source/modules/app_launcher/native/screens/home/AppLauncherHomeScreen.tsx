@@ -1,10 +1,10 @@
-// Module ID: 11193
-// Function ID: 87090
+// Module ID: 11194
+// Function ID: 87095
 // Name: AppRowLabel
-// Dependencies: [57, 31, 27, 1347, 5669, 4130, 11184, 3759, 11155, 1455, 653, 1345, 33, 689, 11188, 4131, 4127, 1212, 11167, 7953, 10220, 3809, 5164, 11162, 1392, 9851, 11194, 10607, 566, 5676, 11195, 5085, 8174, 11196, 11171, 1557, 11197, 8056, 8759, 10861, 1450, 7955, 5668, 11199, 11198, 11200, 11201, 11203, 11204, 11163, 5674, 11205, 22, 4325, 5582, 11207, 11208, 8364, 480, 3947, 1334, 11209, 11210, 11212, 9171, 11214, 1327, 11220, 11221, 11223, 11226, 11227, 11189, 11228, 11150, 11229, 11233, 7952, 11182, 7967, 11234, 11218, 11235, 1360, 11236, 11237, 2]
+// Dependencies: [57, 31, 27, 1347, 5669, 4130, 11185, 3759, 11156, 1455, 653, 1345, 33, 689, 11189, 4131, 4127, 1212, 11168, 7953, 10221, 3809, 5164, 11163, 1392, 9851, 11195, 10608, 566, 5676, 11196, 5085, 8174, 11197, 11172, 1557, 11198, 8056, 8759, 10862, 1450, 7955, 5668, 11200, 11199, 11201, 11202, 11204, 11205, 11164, 5674, 11206, 22, 4325, 5582, 11208, 11209, 8364, 480, 3947, 1334, 11210, 11211, 11213, 9171, 11215, 1327, 11221, 11222, 11224, 11227, 11228, 11190, 11229, 11151, 11230, 11234, 7952, 11183, 7967, 11235, 11219, 11236, 1360, 11237, 11238, 2]
 // Exports: default
 
-// Module 11193 (AppRowLabel)
+// Module 11194 (AppRowLabel)
 import trackImpression from "trackImpression";
 import preload from "preload";
 import get_ActivityIndicator from "useEmbeddedActivityBackground";
@@ -141,7 +141,7 @@ function AppRow(isLastRow) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(11162) /* handleApplicationSelected */;
+  let obj = require(11163) /* handleApplicationSelected */;
   obj = { application: section.application, iconSource: obj.getAppLauncherIconSource(section.application), onPress: isLastRow.onPress, isFirstRow, isLastRow: flag };
   return callback2(BaseAppRow, obj);
 }
@@ -169,7 +169,7 @@ function ActivityRow(section) {
   let tmp3 = null != applicationIconSource;
   if (tmp3) {
     obj = { iconSource: applicationIconSource };
-    tmp3 = callback2(onPress(11167), obj);
+    tmp3 = callback2(onPress(11168), obj);
   }
   const items = [section];
   const items1 = [section, onPress];
@@ -501,7 +501,7 @@ function getRecommendationItemsWithViewAll(arr, sectionName, section) {
   let COLLAPSED_LIST_ITEM_MAX = arg3;
   const _require = sectionName;
   if (arg3 === undefined) {
-    COLLAPSED_LIST_ITEM_MAX = _require(11218).COLLAPSED_LIST_ITEM_MAX;
+    COLLAPSED_LIST_ITEM_MAX = _require(11219).COLLAPSED_LIST_ITEM_MAX;
   }
   const importDefault = tmp;
   let bound;
@@ -514,7 +514,7 @@ function getRecommendationItemsWithViewAll(arr, sectionName, section) {
     bound = Math.min(length, COLLAPSED_LIST_ITEM_MAX);
     dependencyMap = tmp13;
     items = [];
-    let obj = { type: _require(11198).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section, sectionName, numItems: length, numVisibleItems: bound };
+    let obj = { type: _require(11199).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section, sectionName, numItems: length, numVisibleItems: bound };
     items.push(obj);
     const substr = arr.slice(0, bound);
     const item = substr.forEach((application, sectionPosition) => {
@@ -530,7 +530,7 @@ function getRecommendationItemsWithViewAll(arr, sectionName, section) {
       items.push(obj);
     });
     if (bound < length) {
-      obj = { type: _require(11198).AppLauncherHomeListItemType.VIEW_ALL, applications: arr.map((application) => application.application) };
+      obj = { type: _require(11199).AppLauncherHomeListItemType.VIEW_ALL, applications: arr.map((application) => application.application) };
       const _Set = Set;
       const set = new Set();
       obj.promotedApplicationIds = arr.reduce((add, showsPromoted) => {

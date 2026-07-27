@@ -1,5 +1,5 @@
 // Module ID: 7726
-// Function ID: 61652
+// Function ID: 61653
 // Name: createUserPremiumGuildSubscriptionSystemMessage
 // Dependencies: [7727, 7684, 7686, 1212, 7687, 2]
 // Exports: createUserPremiumGuildSubscriptionSystemMessage

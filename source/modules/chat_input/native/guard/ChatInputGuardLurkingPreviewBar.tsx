@@ -1,8 +1,8 @@
-// Module ID: 11463
-// Function ID: 89246
-// Dependencies: [31, 27, 1838, 11092, 653, 33, 4131, 689, 566, 4099, 8385, 1935, 4325, 4661, 5513, 4127, 8396, 1273, 5512, 1212, 11464, 2]
+// Module ID: 11464
+// Function ID: 89251
+// Dependencies: [31, 27, 1838, 11093, 653, 33, 4131, 689, 566, 4099, 8385, 1935, 4325, 4661, 5513, 4127, 8396, 1273, 5512, 1212, 11465, 2]
 
-// Module 11463
+// Module 11464
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -74,7 +74,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar
     obj.children = items3;
     const items6 = [callback2(guildId(4661).PressableOpacity, obj), ];
     const obj8 = { guildId, joinSource: constants.CHAT_INPUT_BLOCKER, onBeforeJoin: tmp4 };
-    items6[1] = callback(importDefault(11464), obj8);
+    items6[1] = callback(importDefault(11465), obj8);
     obj.children = items6;
     tmp5 = callback2(View, obj);
     const tmp13 = importDefault(8396);

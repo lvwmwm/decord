@@ -1,5 +1,5 @@
 // Module ID: 9657
-// Function ID: 75247
+// Function ID: 75248
 // Name: useCommonVariables
 // Dependencies: [1582, 9658, 9659, 9660]
 

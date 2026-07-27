@@ -1,9 +1,9 @@
-// Module ID: 11387
-// Function ID: 88479
+// Module ID: 11388
+// Function ID: 88484
 // Name: handleInviteDisabledPress
-// Dependencies: [31, 27, 1348, 1908, 1838, 1907, 10222, 653, 33, 4131, 689, 11388, 1935, 4473, 1456, 10039, 8193, 9991, 11389, 5169, 6625, 10159, 1212, 8266, 4544, 8233, 3992, 11406, 566, 8289, 8286, 11407, 11408, 11410, 2]
+// Dependencies: [31, 27, 1348, 1908, 1838, 1907, 10223, 653, 33, 4131, 689, 11389, 1935, 4473, 1456, 10039, 8193, 9991, 11390, 5169, 6625, 10160, 1212, 8266, 4544, 8233, 3992, 11407, 566, 8289, 8286, 11408, 11409, 11411, 2]
 
-// Module 11387 (handleInviteDisabledPress)
+// Module 11388 (handleInviteDisabledPress)
 import importAllResult from "useInvitesDisabledPermission";
 import { View } from "SEARCH_BAR_HEIGHT";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -152,9 +152,9 @@ const memoResult = importAllResult.memo(function ConnectedGuildSearchAndInviteIn
     const channels = outer1_6.getChannels(guild.id);
     const result = guild(outer1_2[30]).handleOpenInviteActionsheet(guild, channelId, channels, outer1_11.GUILD_HEADER);
   });
-  const shouldShowInvitesDisabledNotif = guild(11407).useShouldShowInvitesDisabledNotif(guild);
-  const obj2 = guild(11407);
-  const tmp5 = importDefault(11410)(guild);
+  const shouldShowInvitesDisabledNotif = guild(11408).useShouldShowInvitesDisabledNotif(guild);
+  const obj2 = guild(11408);
+  const tmp5 = importDefault(11411)(guild);
   obj = { guildId: guild.id, canInvite: stateFromStores, invitesDisabled: shouldShowInvitesDisabledNotif, onInvitePress: tmp2, onEventsPress: tmp5.handlePress, onEventsLongPress: tmp5.handleLongPress, hasUnreadEvents: tmp5.hasUnread };
   if (flag2) {
     flag2 = tmp4;

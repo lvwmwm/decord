@@ -1,5 +1,5 @@
 // Module ID: 9785
-// Function ID: 76023
+// Function ID: 76024
 // Name: AddDescription
 // Dependencies: [57, 31, 27, 4469, 4468, 33, 4131, 689, 566, 1450, 1456, 5159, 9786, 9050, 1212, 6134, 9784, 7585, 9040, 2]
 // Exports: default

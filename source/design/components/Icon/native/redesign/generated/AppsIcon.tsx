@@ -1,5 +1,5 @@
 // Module ID: 6556
-// Function ID: 58362
+// Function ID: 58363
 // Name: AppsIcon
 // Dependencies: [31, 33, 689, 3834, 6557, 2]
 // Exports: AppsIcon

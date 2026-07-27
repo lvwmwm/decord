@@ -1,5 +1,5 @@
 // Module ID: 5946
-// Function ID: 52888
+// Function ID: 52889
 // Name: questCtaConfigFromServer
 // Dependencies: [2]
 // Exports: questCtaConfigFromServer

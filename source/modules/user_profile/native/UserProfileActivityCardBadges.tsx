@@ -1,10 +1,10 @@
-// Module ID: 11927
-// Function ID: 92321
+// Module ID: 11928
+// Function ID: 92326
 // Name: UserProfileActivityCardBadges
-// Dependencies: [31, 27, 653, 33, 11928, 2]
+// Dependencies: [31, 27, 653, 33, 11929, 2]
 // Exports: default
 
-// Module 11927 (UserProfileActivityCardBadges)
+// Module 11928 (UserProfileActivityCardBadges)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ActivityTypes } from "ME";
@@ -16,13 +16,13 @@ const result = require("ME").fileFinishedImporting("modules/user_profile/native/
 export default function UserProfileActivityCardBadges(activity) {
   activity = activity.activity;
   if (activity.type === ActivityTypes.PLAYING) {
-    const items = [activity(11928).PartyBadge, activity(11928).TimestampBadge];
+    const items = [activity(11929).PartyBadge, activity(11929).TimestampBadge];
     let items3 = items;
   } else if (activity.type === ActivityTypes.LISTENING) {
-    const items1 = [activity(11928).TimestampBadge];
+    const items1 = [activity(11929).TimestampBadge];
     items3 = items1;
   } else if (activity.type === ActivityTypes.WATCHING) {
-    const items2 = [activity(11928).TimestampBadge, activity(11928).EpisodeBadge];
+    const items2 = [activity(11929).TimestampBadge, activity(11929).EpisodeBadge];
     items3 = items2;
   } else {
     items3 = [];

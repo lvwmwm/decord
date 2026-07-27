@@ -1,5 +1,5 @@
 // Module ID: 3492
-// Function ID: 26915
+// Function ID: 26916
 // Name: startOfWeekYear
 // Dependencies: [3493, 3369, 3214, 3211, 3215]
 // Exports: default

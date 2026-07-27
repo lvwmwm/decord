@@ -1,5 +1,5 @@
 // Module ID: 6578
-// Function ID: 58392
+// Function ID: 58393
 // Name: DoorEnterIcon
 // Dependencies: [31, 33, 689, 3834, 6579, 2]
 // Exports: DoorEnterIcon

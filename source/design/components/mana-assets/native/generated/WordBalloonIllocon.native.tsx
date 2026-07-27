@@ -1,5 +1,5 @@
 // Module ID: 7546
-// Function ID: 60554
+// Function ID: 60555
 // Name: WordBalloonIllocon
 // Dependencies: [33, 5085, 7547, 2]
 // Exports: WordBalloonIllocon

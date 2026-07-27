@@ -1,9 +1,9 @@
-// Module ID: 10385
-// Function ID: 80130
+// Module ID: 10386
+// Function ID: 80135
 // Name: IgnoredInformationTable
-// Dependencies: [57, 31, 27, 1348, 1850, 8851, 10383, 653, 33, 4131, 689, 8299, 1212, 4089, 5501, 5164, 1273, 1557, 5462, 5482, 566, 675, 5656, 5187, 5189, 8302, 4127, 4320, 8301, 4099, 10384, 1935, 480, 4544, 8850, 1921, 3828, 2]
+// Dependencies: [57, 31, 27, 1348, 1850, 8851, 10384, 653, 33, 4131, 689, 8299, 1212, 4089, 5501, 5164, 1273, 1557, 5462, 5482, 566, 675, 5656, 5187, 5189, 8302, 4127, 4320, 8301, 4099, 10385, 1935, 480, 4544, 8850, 1921, 3828, 2]
 
-// Module 10385 (IgnoredInformationTable)
+// Module 10386 (IgnoredInformationTable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "maybeLoadBundle";
 import { View } from "getNickname";

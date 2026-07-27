@@ -1,5 +1,5 @@
 // Module ID: 5949
-// Function ID: 52894
+// Function ID: 52895
 // Name: assignBillingSessionId
 // Dependencies: [5, 5950, 683, 5932, 653, 5693, 5952, 5930, 5953, 5955, 5959, 5960, 4325, 675, 5961, 5909, 477, 491, 5966, 4980, 2]
 // Exports: trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAppStoreOverlayEvent, trackBountyAutoScrollDismissed, trackBountyCarouselEmptyStateViewed, trackBountyCarouselScroll, trackBountyVerticalScroll, trackQuestBarOrDockModeChange, trackQuestContentClicked, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted

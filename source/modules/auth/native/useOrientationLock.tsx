@@ -1,10 +1,10 @@
-// Module ID: 14844
-// Function ID: 113226
+// Module ID: 14845
+// Function ID: 113231
 // Name: usePortraitOrientationOnly
 // Dependencies: [31, 4111, 1553, 9125, 8105, 2]
 // Exports: default
 
-// Module 14844 (usePortraitOrientationOnly)
+// Module 14845 (usePortraitOrientationOnly)
 import result from "result";
 
 let require = arg1;

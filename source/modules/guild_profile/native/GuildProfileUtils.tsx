@@ -1,5 +1,5 @@
 // Module ID: 8390
-// Function ID: 67109
+// Function ID: 67110
 // Name: useProfilePrimaryColor
 // Dependencies: [57, 4123, 1392, 7850, 5780, 2]
 // Exports: getProfilePrimaryColor, useProfilePrimaryColor

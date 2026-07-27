@@ -1,5 +1,5 @@
 // Module ID: 9959
-// Function ID: 77097
+// Function ID: 77098
 // Name: isNearBottom
 // Dependencies: [57, 31, 27, 33, 4131, 689, 1450, 1557, 5585, 8445, 2]
 // Exports: default

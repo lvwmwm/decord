@@ -1,5 +1,5 @@
 // Module ID: 7853
-// Function ID: 62641
+// Function ID: 62642
 // Name: calculateTimestampDurations
 // Dependencies: [664, 21, 1212, 3713, 7854, 3356, 7848, 2]
 // Exports: formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getTrendingType, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak

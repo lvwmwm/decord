@@ -1,10 +1,10 @@
-// Module ID: 11913
-// Function ID: 92211
+// Module ID: 11914
+// Function ID: 92216
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [57, 31, 27, 11904, 33, 4131, 689, 5187, 5186, 1212, 7596, 7595, 11914, 4544, 4099, 2]
+// Dependencies: [57, 31, 27, 11905, 33, 4131, 689, 5187, 5186, 1212, 7596, 7595, 11915, 4544, 4099, 2]
 // Exports: default
 
-// Module 11913 (ClearAfterOptionsActionSheet)
+// Module 11914 (ClearAfterOptionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

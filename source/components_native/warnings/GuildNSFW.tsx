@@ -1,5 +1,5 @@
 // Module ID: 9971
-// Function ID: 77172
+// Function ID: 77173
 // Name: GuildNSFW
 // Dependencies: [29, 31, 1838, 1197, 33, 566, 4346, 4348, 5049, 6690, 6692, 1212, 9972, 2]
 // Exports: default

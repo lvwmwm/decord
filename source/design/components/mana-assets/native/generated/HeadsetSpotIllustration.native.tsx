@@ -1,5 +1,5 @@
 // Module ID: 7174
-// Function ID: 59996
+// Function ID: 59997
 // Name: HeadsetSpotIllustration
 // Dependencies: [33, 5085, 7175, 2]
 // Exports: HeadsetSpotIllustration

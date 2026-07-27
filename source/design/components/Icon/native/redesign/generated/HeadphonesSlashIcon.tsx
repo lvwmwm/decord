@@ -1,5 +1,5 @@
 // Module ID: 8797
-// Function ID: 69657
+// Function ID: 69658
 // Name: HeadphonesSlashIcon
 // Dependencies: [31, 33, 689, 3834, 8798, 2]
 // Exports: HeadphonesSlashIcon

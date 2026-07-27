@@ -1,5 +1,5 @@
 // Module ID: 9905
-// Function ID: 76733
+// Function ID: 76734
 // Name: EmojiRow
 // Dependencies: [31, 27, 5188, 33, 4131, 4099, 4100, 6022, 3770, 5685, 9280, 3835, 689, 9906, 9907, 9244, 9908, 5482, 2]
 // Exports: default

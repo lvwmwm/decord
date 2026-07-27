@@ -1,7 +1,7 @@
 // Module ID: 8388
-// Function ID: 67099
+// Function ID: 67100
 // Name: getBackgroundForProfile
-// Dependencies: [31, 27, 1838, 653, 33, 3841, 3843, 4131, 689, 566, 1387, 1450, 1392, 8389, 4067, 3835, 8390, 4555, 5166, 4127, 1212, 8391, 8392, 8406, 11886, 2]
+// Dependencies: [31, 27, 1838, 653, 33, 3841, 3843, 4131, 689, 566, 1387, 1450, 1392, 8389, 4067, 3835, 8390, 4555, 5166, 4127, 1212, 8391, 8392, 8406, 11887, 2]
 // Exports: default
 
 // Module 8388 (getBackgroundForProfile)
@@ -148,7 +148,7 @@ export default function GuildProfileView(guildProfile) {
     const obj2 = { profile: guildProfile };
     const items3 = [callback(importDefault(8406), obj2), ];
     const obj3 = { profile: guildProfile };
-    items3[1] = callback(importDefault(11886), obj3);
+    items3[1] = callback(importDefault(11887), obj3);
     obj1.children = items3;
     tmp21 = callback2(closure_10, obj1);
   }

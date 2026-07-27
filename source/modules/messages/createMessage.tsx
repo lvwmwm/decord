@@ -1,5 +1,5 @@
 // Module ID: 5986
-// Function ID: 53256
+// Function ID: 53257
 // Name: userRecordToServer
 // Dependencies: [5829, 1858, 1850, 653, 44, 5987, 2]
 // Exports: createBotMessage, default

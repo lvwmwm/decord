@@ -1,5 +1,5 @@
 // Module ID: 7658
-// Function ID: 61307
+// Function ID: 61308
 // Name: processColorOrThrow
 // Dependencies: [27, 2]
 // Exports: processColorOrThrow

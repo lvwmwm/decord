@@ -1,7 +1,7 @@
 // Module ID: 5049
-// Function ID: 43629
+// Function ID: 43630
 // Name: showTooManyUserGuildsAlert
-// Dependencies: [29, 5, 5050, 1194, 4972, 1908, 1838, 1907, 3948, 1850, 653, 1197, 4471, 1212, 686, 5051, 507, 1198, 5054, 1935, 5587, 5595, 5600, 5626, 11466, 4943, 480, 12561, 3764, 483, 7629, 3800, 675, 12562, 4346, 7668, 2]
+// Dependencies: [29, 5, 5050, 1194, 4972, 1908, 1838, 1907, 3948, 1850, 653, 1197, 4471, 1212, 686, 5051, 507, 1198, 5054, 1935, 5587, 5595, 5600, 5626, 11467, 4943, 480, 12562, 3764, 483, 7629, 3800, 675, 12563, 4346, 7668, 2]
 
 // Module 5049 (showTooManyUserGuildsAlert)
 import fromHexReverseArray from "fromHexReverseArray";
@@ -215,7 +215,7 @@ export default {
   },
   deleteGuild,
   selectGuild(guildId) {
-    require(11466) /* _createForOfIteratorHelperLoose */.stopLurking(guildId);
+    require(11467) /* _createForOfIteratorHelperLoose */.stopLurking(guildId);
   },
   createGuild(guild) {
     let obj = importDefault(686);
@@ -330,7 +330,7 @@ export default {
     let closure_3 = arg3;
     const self = this;
     return callback(async () => {
-      let obj = callback(12561);
+      let obj = callback(12562);
       const usePubSub = obj.getConfig({ location: "startBulkBan" }).usePubSub;
       let num = 14;
       let obj1 = callback(686);
@@ -603,7 +603,7 @@ export default {
     obj.dispatch(obj);
   },
   nsfwReturnToSafety(guildId) {
-    const tmp = importDefault(12562)(guildId);
+    const tmp = importDefault(12563)(guildId);
     if (null == tmp) {
       if (null != guildId) {
         const defaultChannel = store.getDefaultChannel(guildId);

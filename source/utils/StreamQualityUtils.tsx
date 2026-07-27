@@ -1,5 +1,5 @@
 // Module ID: 8783
-// Function ID: 69583
+// Function ID: 69584
 // Name: isPremiumRequirement
 // Dependencies: [31, 4221, 1194, 1838, 4203, 1850, 653, 4186, 1852, 4192, 1212, 566, 675, 2]
 // Exports: getFPSText, getResolutionText, isPremiumFPS, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality

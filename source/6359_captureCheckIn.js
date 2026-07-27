@@ -1,5 +1,5 @@
 // Module ID: 6359
-// Function ID: 57176
+// Function ID: 57177
 // Name: captureCheckIn
 // Dependencies: [5, 6338, 6360, 6339, 6311, 6322, 6325, 6318, 6348, 6312, 6334]
 // Exports: addEventProcessor, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor

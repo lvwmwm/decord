@@ -1,5 +1,5 @@
 // Module ID: 5598
-// Function ID: 47590
+// Function ID: 47591
 // Name: HotspotLocations
 // Dependencies: [2]
 

@@ -1,5 +1,5 @@
 // Module ID: 9057
-// Function ID: 71171
+// Function ID: 71172
 // Name: PressableNavigatorModalIcon
 // Dependencies: [33, 9053, 9050, 9054, 9058, 1212, 2]
 // Exports: default

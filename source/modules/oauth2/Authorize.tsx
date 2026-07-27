@@ -1,5 +1,5 @@
 // Module ID: 8881
-// Function ID: 70275
+// Function ID: 70276
 // Name: filterScopes
 // Dependencies: [1348, 3948, 653, 8882, 8112, 4989, 3764, 483, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps

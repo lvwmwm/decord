@@ -1,5 +1,5 @@
 // Module ID: 8599
-// Function ID: 68295
+// Function ID: 68296
 // Name: useHasNeverWishlisted
 // Dependencies: [31, 5630, 1194, 1345, 566, 3947, 1334, 1336, 4099, 8600, 1935, 2]
 // Exports: default

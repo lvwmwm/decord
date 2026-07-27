@@ -1,5 +1,5 @@
 // Module ID: 5915
-// Function ID: 52573
+// Function ID: 52574
 // Name: regExp
 // Dependencies: [2]
 // Exports: default

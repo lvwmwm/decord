@@ -1,10 +1,10 @@
-// Module ID: 14907
-// Function ID: 113730
+// Module ID: 14908
+// Function ID: 113735
 // Name: VoiceUsers
-// Dependencies: [31, 27, 1908, 3768, 4326, 4204, 653, 33, 4131, 689, 11952, 1273, 4127, 1212, 10790, 5085, 4555, 14906, 566, 22, 14908, 2]
+// Dependencies: [31, 27, 1908, 3768, 4326, 4204, 653, 33, 4131, 689, 11953, 1273, 4127, 1212, 10791, 5085, 4555, 14907, 566, 22, 14909, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 14907 (VoiceUsers)
+// Module 14908 (VoiceUsers)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ function VoiceUsers(arg0) {
           return outer1_11(outer1_0(outer1_2[11]).Avatar, obj, user.id);
         })
     };
-    obj.children = callback(require(11952) /* AvatarPile */.AvatarPile, obj);
+    obj.children = callback(require(11953) /* AvatarPile */.AvatarPile, obj);
     tmp = callback(View, obj);
   }
   return tmp;
@@ -89,7 +89,7 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
   if (null != streamingUser) {
     id = streamingUser.id;
   }
-  const previewUrl = importDefault(10790)(guildId, tmp4, id).previewUrl;
+  const previewUrl = importDefault(10791)(guildId, tmp4, id).previewUrl;
   if (!tmp2) {
     return null;
   } else {

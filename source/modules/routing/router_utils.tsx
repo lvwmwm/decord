@@ -37,10 +37,10 @@ function maybeExternallyNavigate(ME, assign) {
   }
   return flag;
 }
-function transitionTo(CHANNELResult, source) {
-  if (!maybeExternallyNavigate(CHANNELResult, "assign")) {
+function transitionTo(ME, source) {
+  if (!maybeExternallyNavigate(ME, "assign")) {
     const _HermesInternal = HermesInternal;
-    importDefaultResult.log("transitionTo - Transitioning to " + CHANNELResult);
+    importDefaultResult.log("transitionTo - Transitioning to " + ME);
     source = undefined;
     if (null != source) {
       source = source.source;
@@ -50,12 +50,12 @@ function transitionTo(CHANNELResult, source) {
       sourceLocationStack = source.sourceLocationStack;
     }
     if (null == source) {
-      _extends.push(CHANNELResult);
+      _extends.push(ME);
     } else {
       const _URL = URL;
       const _window = window;
       const _HermesInternal2 = HermesInternal;
-      const uRL = new URL(CHANNELResult, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
+      const uRL = new URL(ME, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
       const obj = {};
       ({ pathname: obj.pathname, search: obj.search, hash: obj.hash } = uRL);
       const merged = Object.assign(source);

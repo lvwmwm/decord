@@ -1,5 +1,5 @@
 // Module ID: 4071
-// Function ID: 33891
+// Function ID: 33892
 // Name: UserPlatformIcon
 // Dependencies: [31, 33, 689, 3834, 4072, 2]
 // Exports: UserPlatformIcon

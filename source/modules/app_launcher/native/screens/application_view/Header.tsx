@@ -1,10 +1,10 @@
-// Module ID: 11241
-// Function ID: 87459
+// Module ID: 11242
+// Function ID: 87464
 // Name: xl
-// Dependencies: [31, 27, 1850, 7954, 1455, 653, 33, 689, 4131, 3992, 566, 11162, 3835, 7850, 11167, 7953, 5664, 11242, 4127, 1273, 6625, 4076, 675, 5490, 11243, 3831, 1212, 11244, 2]
+// Dependencies: [31, 27, 1850, 7954, 1455, 653, 33, 689, 4131, 3992, 566, 11163, 3835, 7850, 11168, 7953, 5664, 11243, 4127, 1273, 6625, 4076, 675, 5490, 11244, 3831, 1212, 11245, 2]
 // Exports: default
 
-// Module 11241 (xl)
+// Module 11242 (xl)
 import "result";
 import { View } from "AppDetailsOverflowMenu";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -56,7 +56,7 @@ export default function Header(application) {
   const tmp = _createForOfIteratorHelperLoose();
   let appLauncherIconSource = null;
   if (null != application) {
-    let obj1 = application(11162);
+    let obj1 = application(11163);
     appLauncherIconSource = obj1.getAppLauncherIconSource(application);
   }
   let obj2 = application(3835);
@@ -77,7 +77,7 @@ export default function Header(application) {
   const tmp6Result = importDefault(7850)(tmp7, str2);
   if (null != appLauncherIconSource) {
     obj = { iconSource: appLauncherIconSource, iconBorderRadius: xl, iconSize: 72 };
-    let tmp12 = callback(importDefault(11167), obj);
+    let tmp12 = callback(importDefault(11168), obj);
   } else {
     obj = { style: tmp.loadingIcon };
     tmp12 = callback(currentUser2, obj);
@@ -183,7 +183,7 @@ export default function Header(application) {
       return obj;
     })({ scrollOffsetY }).style
   ];
-  const items6 = [callback(importDefault(3992).View, { style: items5, pointerEvents: "none" }), callback(importDefault(11242), { onPress: onPressBack }), , ];
+  const items6 = [callback(importDefault(3992).View, { style: items5, pointerEvents: "none" }), callback(importDefault(11243), { onPress: onPressBack }), , ];
   obj5 = { style: tmp18.nameStyle, pointerEvents: "none" };
   obj6 = { variant: "heading-lg/bold", color: "text-overlay-light", children: str };
   obj5.children = callback(application(4127).Heading, obj6);
@@ -231,7 +231,7 @@ export default function Header(application) {
       obj8.maxFontSizeMultiplier = 1.5;
       const items7 = [callback(application(6625).IconButton, obj8), ];
       const obj9 = { application, onAddAppMenuClick };
-      items7[1] = callback(importDefault(11244), obj9);
+      items7[1] = callback(importDefault(11245), obj9);
       obj7.children = items7;
       tmp27 = callback2(currentUser2, obj7);
     }

@@ -1,7 +1,7 @@
 // Module ID: 8138
-// Function ID: 64940
+// Function ID: 64941
 // Name: isLinkTrusted
-// Dependencies: [8139, 1348, 1838, 8140, 4350, 3768, 1907, 653, 3830, 4471, 1212, 675, 8141, 8142, 8143, 8145, 3822, 12222, 12226, 4569, 12227, 12229, 2]
+// Dependencies: [8139, 1348, 1838, 8140, 4350, 3768, 1907, 653, 3830, 4471, 1212, 675, 8141, 8142, 8143, 8145, 3822, 12223, 12227, 4569, 12228, 12230, 2]
 // Exports: handleClick, isLinkTrusted
 
 // Module 8138 (isLinkTrusted)
@@ -352,7 +352,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         preventDefaultResult = channelId;
         preventDefaultResult = dependencyMap;
         let num14 = 17;
-        let obj17 = channelId(12222);
+        let obj17 = channelId(12223);
         preventDefaultResult = obj17.show(tmp4);
       } else {
         preventDefaultResult = trusted;
@@ -362,7 +362,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
           preventDefaultResult = _require;
           preventDefaultResult = dependencyMap;
           let num7 = 18;
-          let TRUSTED_URLS = _require(12226).TRUSTED_URLS;
+          let TRUSTED_URLS = _require(12227).TRUSTED_URLS;
           preventDefaultResult = tmp4;
           preventDefaultResult = TRUSTED_URLS.has(tmp4);
         }
@@ -393,13 +393,13 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
             preventDefaultResult = channelId;
             preventDefaultResult = dependencyMap;
             let num12 = 20;
-            let obj13 = channelId(12227);
+            let obj13 = channelId(12228);
             obj4 = {};
             preventDefaultResult = tmp4;
             obj4.url = tmp4;
             preventDefaultResult = _require;
             let num13 = 21;
-            obj4.trustUrl = _require(12229).trustProtocol;
+            obj4.trustUrl = _require(12230).trustProtocol;
             preventDefaultResult = handleConfirm;
             obj4.onConfirm = handleConfirm;
             obj4.onCancel = tmp98;
@@ -419,11 +419,11 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
             preventDefaultResult = dependencyMap;
             let num10 = 20;
             preventDefaultResult = null != preventDefaultResult ? preventDefaultResult.displayTarget : tmp4;
-            let obj11 = channelId(12227);
+            let obj11 = channelId(12228);
             let obj5 = { url: preventDefaultResult };
             preventDefaultResult = _require;
             let num11 = 21;
-            obj5.trustUrl = _require(12229).trustDomain;
+            obj5.trustUrl = _require(12230).trustDomain;
             preventDefaultResult = handleConfirm;
             obj5.onConfirm = handleConfirm;
             preventDefaultResult = tmp98;

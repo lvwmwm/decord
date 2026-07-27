@@ -1,10 +1,10 @@
-// Module ID: 12121
-// Function ID: 94975
+// Module ID: 12122
+// Function ID: 94980
 // Name: useConnectionFilteredAppIdentities
-// Dependencies: [31, 4816, 12098, 2]
+// Dependencies: [31, 4816, 12099, 2]
 // Exports: default
 
-// Module 12121 (useConnectionFilteredAppIdentities)
+// Module 12122 (useConnectionFilteredAppIdentities)
 import result from "result";
 import { APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS as closure_3 } from "items1";
 

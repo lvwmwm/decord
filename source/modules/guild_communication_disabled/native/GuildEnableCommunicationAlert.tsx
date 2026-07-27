@@ -1,10 +1,10 @@
-// Module ID: 10971
-// Function ID: 85333
+// Module ID: 10972
+// Function ID: 85338
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 57, 31, 27, 1850, 1920, 653, 33, 4131, 7699, 4560, 675, 10970, 3832, 1212, 10294, 4562, 4127, 4320, 10128, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 1920, 653, 33, 4131, 7699, 4560, 675, 10971, 3832, 1212, 10295, 4562, 4127, 4320, 10128, 2]
 // Exports: default
 
-// Module 10971 (GuildEnableCommunicationAlert)
+// Module 10972 (GuildEnableCommunicationAlert)
 import closure_3 from "getFriendlyDurationString";
 import _slicedToArray from "_slicedToArray";
 import "result";

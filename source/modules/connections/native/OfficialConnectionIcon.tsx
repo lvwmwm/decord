@@ -1,5 +1,5 @@
 // Module ID: 9948
-// Function ID: 77046
+// Function ID: 77047
 // Name: OfficialConnectionIcon
 // Dependencies: [31, 27, 653, 33, 4131, 5486, 689, 665, 1273, 9949, 9950, 2]
 // Exports: default

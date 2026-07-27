@@ -1,5 +1,5 @@
 // Module ID: 10154
-// Function ID: 78574
+// Function ID: 78578
 // Name: FREE_FAVORITE_LIMIT
 // Dependencies: [2]
 

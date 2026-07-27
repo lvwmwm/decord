@@ -1,5 +1,5 @@
 // Module ID: 6637
-// Function ID: 58761
+// Function ID: 58762
 // Name: shouldWaitForBlockingModals
 // Dependencies: [6638, 4809, 686, 2]
 // Exports: addPostConnectionCallback

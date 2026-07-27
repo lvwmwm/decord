@@ -1,5 +1,5 @@
 // Module ID: 5677
-// Function ID: 48765
+// Function ID: 48766
 // Name: computeAllowNsfw
 // Dependencies: [31, 1910, 1352, 1391, 1194, 1348, 1918, 1838, 3759, 1850, 653, 5678, 566, 483, 1882, 2]
 // Exports: buildPermissionContext, computeCommandContextType, usePermissionContext

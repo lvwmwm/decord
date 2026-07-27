@@ -1,5 +1,5 @@
 // Module ID: 6404
-// Function ID: 57578
+// Function ID: 57579
 // Name: sessionTimingIntegration
 // Dependencies: [77, 6325, 6367]
 

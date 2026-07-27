@@ -1,10 +1,10 @@
-// Module ID: 11501
-// Function ID: 89544
+// Module ID: 11502
+// Function ID: 89549
 // Name: useGuildChannelCreated
-// Dependencies: [31, 1194, 1348, 1908, 4052, 1838, 11502, 4350, 3759, 653, 566, 8165, 21, 22, 5870, 2]
+// Dependencies: [31, 1194, 1348, 1908, 4052, 1838, 11503, 4350, 3759, 653, 566, 8165, 21, 22, 5870, 2]
 // Exports: useCompletedStates, usePermissions
 
-// Module 11501 (useGuildChannelCreated)
+// Module 11502 (useGuildChannelCreated)
 import result from "result";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

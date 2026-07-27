@@ -1,10 +1,10 @@
-// Module ID: 16534
-// Function ID: 128858
+// Module ID: 16546
+// Function ID: 128905
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [57, 31, 27, 1277, 482, 33, 4131, 689, 5053, 14162, 4661, 1273, 1212, 5186, 5498, 7619, 7575, 4127, 2]
+// Dependencies: [57, 31, 27, 1277, 482, 33, 4131, 689, 5053, 14163, 4661, 1273, 1212, 5186, 5498, 7619, 7575, 4127, 2]
 // Exports: default
 
-// Module 16534 (SelectEmojiRolesActionSheet)
+// Module 16546 (SelectEmojiRolesActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -64,7 +64,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = require(14162) /* _createForOfIteratorHelperLoose */;
+  let obj = require(14163) /* _createForOfIteratorHelperLoose */;
   const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { includeSoftDeleted: true, sortDeletedListingsLast: true });
   obj = {
     onPress() {

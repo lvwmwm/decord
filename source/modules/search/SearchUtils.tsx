@@ -1,5 +1,5 @@
 // Module ID: 10042
-// Function ID: 77668
+// Function ID: 77669
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 1348, 1908, 4347, 3768, 1907, 1850, 9033, 653, 3713, 1212, 10043, 21, 10048, 22, 10049, 4321, 3970, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker

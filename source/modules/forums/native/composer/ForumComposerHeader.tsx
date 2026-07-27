@@ -1,5 +1,5 @@
 // Module ID: 9518
-// Function ID: 74302
+// Function ID: 74303
 // Name: ForumComposerHeader
 // Dependencies: [31, 27, 33, 4131, 689, 4321, 4661, 1212, 5119, 4646, 4127, 4634, 2]
 // Exports: default

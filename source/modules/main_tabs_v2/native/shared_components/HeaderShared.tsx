@@ -1,5 +1,5 @@
 // Module ID: 9050
-// Function ID: 71129
+// Function ID: 71130
 // Name: GenericHeaderTitle
 // Dependencies: [31, 27, 9051, 33, 4131, 689, 4127, 3835, 5088, 5094, 9052, 477, 9057, 1557, 1457, 8756, 5161, 620, 9059, 10075, 4661, 1273, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader

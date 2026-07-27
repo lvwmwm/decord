@@ -1,5 +1,5 @@
 // Module ID: 7903
-// Function ID: 62975
+// Function ID: 62976
 // Name: EditCollectibleListItem
 // Dependencies: [31, 27, 1850, 655, 33, 4131, 689, 4661, 4100, 4101, 1273, 7904, 4127, 1212, 5462, 5769, 4099, 7905, 7906, 566, 3777, 7894, 5782, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop

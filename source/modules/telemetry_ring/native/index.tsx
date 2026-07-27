@@ -1,7 +1,7 @@
 // Module ID: 1186
 // Function ID: 13540
 // Name: TelemetryRingLifecycle
-// Dependencies: [2, 1187, 13181, 13186, 13187, 13182, 13179]
+// Dependencies: [2, 1187, 13182, 13187, 13188, 13183, 13180]
 
 // Module 1186 (TelemetryRingLifecycle)
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/telemetry_ring/native/index.tsx");

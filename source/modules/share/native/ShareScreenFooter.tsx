@@ -1,10 +1,10 @@
-// Module ID: 12975
-// Function ID: 100656
+// Module ID: 12976
+// Function ID: 100661
 // Name: ShareScreenFooter
 // Dependencies: [31, 33, 9854, 9855, 4544, 9863, 2]
 // Exports: default
 
-// Module 12975 (ShareScreenFooter)
+// Module 12976 (ShareScreenFooter)
 import "result";
 import { jsx } from "jsxProd";
 

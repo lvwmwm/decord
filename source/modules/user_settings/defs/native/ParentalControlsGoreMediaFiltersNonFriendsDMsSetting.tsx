@@ -1,16 +1,16 @@
-// Module ID: 14622
-// Function ID: 111500
+// Module ID: 14623
+// Function ID: 111505
 // Name: useGoreContentNonFriendsDmSettingValue
-// Dependencies: [5765, 7697, 13789, 5834, 13793, 13786, 1212, 1282, 10059, 2]
+// Dependencies: [5765, 7697, 13790, 5834, 13794, 13787, 1212, 1282, 10059, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 14622 (useGoreContentNonFriendsDmSettingValue)
+// Module 14623 (useGoreContentNonFriendsDmSettingValue)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useGoreContentNonFriendsDmSettingValue() {
-  const parentalControlledGoreContentSettings = require(13789) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
+  const parentalControlledGoreContentSettings = require(13790) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
   let prop;
   if (null != parentalControlledGoreContentSettings) {
     prop = parentalControlledGoreContentSettings.goreContentNonFriendDm;
@@ -25,7 +25,7 @@ function useGoreContentNonFriendsDmSettingValue() {
 function onGoreContentNonFriendsDmOnPress() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(13793);
+    let obj = selectedTeenId(13794);
     obj = {};
     const intl = selectedTeenId(1212).intl;
     obj.title = intl.string(selectedTeenId(1212).t["16/3Bi"]);
@@ -38,8 +38,8 @@ function onGoreContentNonFriendsDmOnPress() {
     obj.currentValue = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
     const items = [selectedTeenId(1282).ExplicitContentRedaction.SHOW];
     obj.excluded = items;
-    const result = selectedTeenId(13786).handleSensitiveMediaFilterPress(obj);
-    const obj2 = selectedTeenId(13786);
+    const result = selectedTeenId(13787).handleSensitiveMediaFilterPress(obj);
+    const obj2 = selectedTeenId(13787);
   }
 }
 function getTitle() {

@@ -1,5 +1,5 @@
 // Module ID: 9686
-// Function ID: 75416
+// Function ID: 75417
 // Name: PremiumGiftWishlistBanner
 // Dependencies: [5, 31, 27, 5610, 1852, 653, 655, 8043, 33, 689, 4131, 8592, 8605, 9687, 9691, 5462, 5482, 675, 8297, 9640, 9692, 3983, 3832, 1212, 5769, 8701, 3970, 4127, 9709, 9714, 2]
 // Exports: PremiumGiftWishlistBanner

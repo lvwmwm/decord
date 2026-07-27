@@ -1,5 +1,5 @@
 // Module ID: 9358
-// Function ID: 73063
+// Function ID: 73064
 // Name: Emoji
 // Dependencies: [31, 27, 33, 4131, 689, 3776, 1392, 5150, 9343, 9359, 9361, 2]
 // Exports: EmojiGrid

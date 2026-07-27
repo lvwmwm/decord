@@ -1,5 +1,5 @@
 // Module ID: 7846
-// Function ID: 62597
+// Function ID: 62598
 // Name: MediaGalleryItemType
 // Dependencies: [2]
 

@@ -1,5 +1,5 @@
 // Module ID: 8208
-// Function ID: 65782
+// Function ID: 65783
 // Name: useStageChannelUpsellCardStore
 // Dependencies: [1354, 677, 587, 682, 3744, 2]
 // Exports: useStageChannelUpsellCardStore

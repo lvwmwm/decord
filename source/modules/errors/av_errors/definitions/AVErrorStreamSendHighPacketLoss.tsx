@@ -1,9 +1,9 @@
-// Module ID: 16591
-// Function ID: 129462
+// Module ID: 16603
+// Function ID: 129509
 // Name: AVErrorStreamSendHighPacketLossDefinition
-// Dependencies: [4150, 4217, 4195, 16589, 8784, 16586, 2]
+// Dependencies: [4150, 4217, 4195, 16601, 8784, 16598, 2]
 
-// Module 16591 (AVErrorStreamSendHighPacketLossDefinition)
+// Module 16603 (AVErrorStreamSendHighPacketLossDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 
@@ -26,12 +26,12 @@ export const AVErrorStreamSendHighPacketLossDefinition = {
       if (null == mediaEngineConnectionId) {
         return null;
       } else {
-        const accumulatedStatsWithMinDatapoints = require(16589) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
+        const accumulatedStatsWithMinDatapoints = require(16601) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
         let tmp8 = null;
         if (null != accumulatedStatsWithMinDatapoints) {
           if (100 * accumulatedStatsWithMinDatapoints.short.packetLossRate > 10) {
             const obj = { type: require(8784) /* validateUniqueErrorCodes */.AVError.STREAM_SEND_HIGH_PACKET_LOSS };
-            const obj2 = require(16586) /* getCommonErrorContext */;
+            const obj2 = require(16598) /* getCommonErrorContext */;
             const merged = Object.assign(obj2.getStreamErrorContext(require(4195) /* isStreamKey */.encodeStreamKey(currentUserActiveStream)));
             const items = [obj];
             const obj3 = require(4195) /* isStreamKey */;

@@ -1,8 +1,8 @@
-// Module ID: 15091
-// Function ID: 114967
-// Dependencies: [31, 1348, 1908, 10222, 4327, 33, 4131, 689, 624, 1198, 9029, 15026, 8254, 2]
+// Module ID: 15103
+// Function ID: 115013
+// Dependencies: [31, 1348, 1908, 10223, 4327, 33, 4131, 689, 624, 1198, 9029, 15027, 8254, 2]
 
-// Module 15091
+// Module 15103
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -51,8 +51,8 @@ const memoResult = importAllResult.memo((guildId) => {
     obj.channel = stateFromStores;
     obj.selected = selected;
     obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-    tmp6 = jsx(id(15026), { channel: stateFromStores });
-    const tmp10 = id(15026);
+    tmp6 = jsx(id(15027), { channel: stateFromStores });
+    const tmp10 = id(15027);
   }
   return tmp6;
 });

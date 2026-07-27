@@ -1,10 +1,10 @@
-// Module ID: 14703
-// Function ID: 112020
+// Module ID: 14704
+// Function ID: 112025
 // Name: MFAButton
 // Dependencies: [31, 33, 4544, 2]
 // Exports: default
 
-// Module 14703 (MFAButton)
+// Module 14704 (MFAButton)
 import "result";
 import { jsx } from "jsxProd";
 

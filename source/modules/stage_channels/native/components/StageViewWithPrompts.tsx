@@ -1,10 +1,10 @@
-// Module ID: 10620
-// Function ID: 82763
+// Module ID: 10621
+// Function ID: 82768
 // Name: styles
-// Dependencies: [31, 27, 482, 33, 10621, 4131, 1557, 10622, 6667, 4127, 2]
+// Dependencies: [31, 27, 482, 33, 10622, 4131, 1557, 10623, 6667, 4127, 2]
 // Exports: default
 
-// Module 10620 (styles)
+// Module 10621 (styles)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ThemeTypes } from "sum";
@@ -32,7 +32,7 @@ export default function StageViewWithPrompts(arg0) {
   const tmp = styles();
   let obj = { style: tmp.scrollView };
   const items = [tmp.container, ];
-  obj = { paddingTop: top + require(10622) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
+  obj = { paddingTop: top + require(10623) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
   ({ top, bottom } = importDefault(1557)());
   items[1] = obj;
   obj.contentContainerStyle = items;

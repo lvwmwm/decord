@@ -1,10 +1,10 @@
-// Module ID: 11866
-// Function ID: 91913
+// Module ID: 11867
+// Function ID: 91918
 // Name: getGameProfileWebsiteData
-// Dependencies: [33, 8422, 8952, 8418, 1212, 7811, 11395, 7813, 7815, 11867, 11869, 11871, 2]
+// Dependencies: [33, 8422, 8952, 8418, 1212, 7811, 11396, 7813, 7815, 11868, 11870, 11872, 2]
 // Exports: default
 
-// Module 11866 (getGameProfileWebsiteData)
+// Module 11867 (getGameProfileWebsiteData)
 import { jsx } from "jsxProd";
 
 const result = require("GlobeEarthIcon").fileFinishedImporting("modules/game_profile/native/utils/getGameProfileWebsiteData.tsx");
@@ -32,7 +32,7 @@ export default function getGameProfileWebsiteData(category, color) {
   } else if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.YOUTUBE === category) {
     const obj3 = {};
     const obj4 = { size: "md", color };
-    obj3.icon = jsx(require(11395) /* YoutubeNeutralIcon */.YoutubeNeutralIcon, { size: "md", color });
+    obj3.icon = jsx(require(11396) /* YoutubeNeutralIcon */.YoutubeNeutralIcon, { size: "md", color });
     obj3.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.YouTubeLink;
     const intl6 = require(1212) /* getSystemLocale */.intl;
     obj3.title = intl6.string(require(1212) /* getSystemLocale */.t.lNmxbE);
@@ -59,7 +59,7 @@ export default function getGameProfileWebsiteData(category, color) {
   } else if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.BLUESKY === category) {
     const obj9 = {};
     const obj10 = { size: "md", color };
-    obj9.icon = jsx(require(11867) /* BlueskyNeutralIcon */.BlueskyNeutralIcon, { size: "md", color });
+    obj9.icon = jsx(require(11868) /* BlueskyNeutralIcon */.BlueskyNeutralIcon, { size: "md", color });
     obj9.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.BlueskyLink;
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj9.title = intl3.string(require(1212) /* getSystemLocale */.t["D/PHq5"]);
@@ -68,7 +68,7 @@ export default function getGameProfileWebsiteData(category, color) {
   } else if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.REDDIT === category) {
     const obj11 = {};
     const obj12 = { size: "md", color };
-    obj11.icon = jsx(require(11869) /* RedditNeutralIcon */.RedditNeutralIcon, { size: "md", color });
+    obj11.icon = jsx(require(11870) /* RedditNeutralIcon */.RedditNeutralIcon, { size: "md", color });
     obj11.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.RedditLink;
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj11.title = intl2.string(require(1212) /* getSystemLocale */.t["Hgb+fc"]);
@@ -77,7 +77,7 @@ export default function getGameProfileWebsiteData(category, color) {
   } else if (require(8422) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.TWITCH === category) {
     obj = {};
     const obj13 = { size: "md", color };
-    obj.icon = jsx(require(11871) /* TwitchNeutralIcon */.TwitchNeutralIcon, { size: "md", color });
+    obj.icon = jsx(require(11872) /* TwitchNeutralIcon */.TwitchNeutralIcon, { size: "md", color });
     obj.action = require(8418) /* GameProfileEmbedAction */.GameProfileTrackActionActions.TwitchLink;
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.title = intl.string(require(1212) /* getSystemLocale */.t["7xtz4G"]);

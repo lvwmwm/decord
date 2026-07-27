@@ -1,10 +1,10 @@
-// Module ID: 11290
-// Function ID: 87807
+// Module ID: 11291
+// Function ID: 87812
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [31, 33, 4131, 689, 11283, 7575, 4127, 1273, 5173, 2]
+// Dependencies: [31, 33, 4131, 689, 11284, 7575, 4127, 1273, 5173, 2]
 // Exports: default
 
-// Module 11290 (AppLauncherSelectOptionFormRow)
+// Module 11291 (AppLauncherSelectOptionFormRow)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   ({ style, option, autoFocus } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
-  let obj1 = require(11283) /* useAnimationDelayedAutoFocus */;
+  let obj1 = require(11284) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
   obj = { start: true, end: true };
   const items = [_createForOfIteratorHelperLoose().formRow, style];

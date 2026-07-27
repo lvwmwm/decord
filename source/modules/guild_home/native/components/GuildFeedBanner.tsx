@@ -1,9 +1,9 @@
-// Module ID: 15336
-// Function ID: 116998
+// Module ID: 15349
+// Function ID: 117047
 // Name: GuildFeedBanner
-// Dependencies: [31, 27, 13038, 1838, 15337, 653, 33, 4131, 689, 3992, 1450, 4067, 13039, 477, 1392, 9099, 4132, 4135, 566, 6504, 10827, 3977, 15338, 15339, 5513, 4127, 1273, 4661, 3832, 1212, 15340, 2]
+// Dependencies: [31, 27, 13039, 1838, 15350, 653, 33, 4131, 689, 3992, 1450, 4067, 13040, 477, 1392, 9099, 4132, 4135, 566, 6504, 10828, 3977, 15351, 15352, 5513, 4127, 1273, 4661, 3832, 1212, 15353, 2]
 
-// Module 15336 (GuildFeedBanner)
+// Module 15349 (GuildFeedBanner)
 import importAllResult from "set";
 import get_ActivityIndicator from "PressableBase";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -92,7 +92,7 @@ function GuildFeedBanner(guild) {
   const size = sharedValue(1450)();
   width = size.width;
   height = size.height;
-  let obj4 = guild(10827);
+  let obj4 = guild(10828);
   drawerWidth = obj4.useDrawerWidth();
   const items4 = [width, height, tmp9, drawerWidth];
   obj = { style: tmp.container };
@@ -121,9 +121,9 @@ function GuildFeedBanner(guild) {
     obj2.style = items6;
     let obj8 = guild(3977);
     if (obj8.isThemeDark(tmp5)) {
-      let tmp18Result = tmp18(15338);
+      let tmp18Result = tmp18(15351);
     } else {
-      tmp18Result = tmp18(15339);
+      tmp18Result = tmp18(15352);
     }
     obj2.source = tmp18Result;
     obj2.onLoad = handleLoad;
@@ -183,7 +183,7 @@ function GuildFeedBanner(guild) {
               obj.open(obj);
             }
       };
-      const obj14 = { style: tmp.publicIcon, source: sharedValue(15340) };
+      const obj14 = { style: tmp.publicIcon, source: sharedValue(15353) };
       const items12 = [callback(guild(1273).Icon, obj14), ];
       const obj15 = { variant: "text-xs/medium", color: "text-default" };
       class G {

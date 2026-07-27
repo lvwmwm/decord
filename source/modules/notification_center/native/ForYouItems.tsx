@@ -1,9 +1,9 @@
-// Module ID: 15202
-// Function ID: 115828
+// Module ID: 15215
+// Function ID: 115877
 // Name: ForYouFooter
-// Dependencies: [5, 57, 31, 27, 4123, 4168, 1348, 1838, 1850, 15196, 653, 5591, 33, 4131, 4127, 689, 4563, 15201, 1212, 1360, 7765, 6020, 9810, 9594, 7617, 566, 7817, 1273, 11657, 15203, 1456, 4112, 12920, 5873, 675, 7949, 15204, 9454, 3832, 9477, 1935, 4099, 15206, 4090, 15198, 5495, 15207, 15208, 21, 4661, 15209, 5874, 12151, 1457, 3804, 3809, 15219, 15220, 15221, 15222, 15223, 15229, 787, 15230, 15231, 1327, 15200, 6619, 15232, 2]
+// Dependencies: [5, 57, 31, 27, 4123, 4168, 1348, 1838, 1850, 15209, 653, 5591, 33, 4131, 4127, 689, 4563, 15214, 1212, 1360, 7765, 6020, 9810, 9594, 7617, 566, 7817, 1273, 11658, 15216, 1456, 4112, 12921, 5873, 675, 7949, 15217, 9454, 3832, 9477, 1935, 4099, 15219, 4090, 15211, 5495, 15220, 15221, 21, 4661, 15222, 5874, 12152, 1457, 3804, 3809, 15232, 15233, 15234, 15235, 15236, 15242, 787, 15243, 15244, 1327, 15213, 6619, 15245, 2]
 
-// Module 15202 (ForYouFooter)
+// Module 15215 (ForYouFooter)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader";
 import importAllResult from "parseQuery";
@@ -36,7 +36,7 @@ const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15201) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15214) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
@@ -281,7 +281,7 @@ function ApplicationName(applicationId) {
     let tmp5 = callback(closure_7, {});
   } else {
     obj = { application: stateFromStores, textVariant: applicationId.textVariant, iconSize: 16 };
-    tmp5 = callback(importDefault(11657), obj, stateFromStores.id);
+    tmp5 = callback(importDefault(11658), obj, stateFromStores.id);
   }
   return tmp5;
 }

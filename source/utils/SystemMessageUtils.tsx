@@ -1,5 +1,5 @@
 // Module ID: 7708
-// Function ID: 61564
+// Function ID: 61565
 // Name: getSystemMessageUserJoinMobile
 // Dependencies: [57, 3769, 1194, 1348, 1838, 3768, 1850, 653, 1212, 21, 7709, 7713, 4320, 4321, 7714, 7717, 4361, 4352, 7718, 7719, 5744, 2]
 

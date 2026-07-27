@@ -1,5 +1,5 @@
 // Module ID: 3626
-// Function ID: 27888
+// Function ID: 27889
 // Name: setDayOfYear
 // Dependencies: [3214, 3210, 3211]
 // Exports: default

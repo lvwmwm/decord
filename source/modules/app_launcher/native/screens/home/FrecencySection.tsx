@@ -1,10 +1,10 @@
-// Module ID: 11163
-// Function ID: 86765
+// Module ID: 11164
+// Function ID: 86770
 // Name: Placeholder
-// Dependencies: [57, 31, 27, 1347, 11164, 653, 33, 4131, 689, 7953, 1327, 5468, 1324, 11165, 10861, 566, 7955, 4325, 3992, 4132, 1212, 8329, 11166, 11162, 1882, 8174, 11167, 4127, 9231, 8330, 4661, 11168, 5676, 5085, 11171, 2]
+// Dependencies: [57, 31, 27, 1347, 11165, 653, 33, 4131, 689, 7953, 1327, 5468, 1324, 11166, 10862, 566, 7955, 4325, 3992, 4132, 1212, 8329, 11167, 11163, 1882, 8174, 11168, 4127, 9231, 8330, 4661, 11169, 5676, 5085, 11172, 2]
 // Exports: default
 
-// Module 11163 (Placeholder)
+// Module 11164 (Placeholder)
 import _slicedToArray from "_slicedToArray";
 import getStaffReleasePhase from "getStaffReleasePhase";
 import get_ActivityIndicator from "Text";
@@ -22,9 +22,9 @@ let closure_6;
 const require = arg1;
 function Placeholder() {
   const tmp2 = _createForOfIteratorHelperLoose();
-  let obj = require(11165) /* usePlaceholderWidth */;
+  let obj = require(11166) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(20, 90);
-  let obj1 = require(11165) /* usePlaceholderWidth */;
+  let obj1 = require(11166) /* usePlaceholderWidth */;
   obj = {};
   const items = [tmp2.commandContainer, ];
   let rowShadow = !importDefault(1324)("AppLauncherRecents-native");
@@ -106,7 +106,7 @@ function FrecentApp(app) {
   if (null == app.section) {
     return null;
   } else {
-    const appLauncherIconSource = app(11162).getAppLauncherIconSource(app.section.application);
+    const appLauncherIconSource = app(11163).getAppLauncherIconSource(app.section.application);
     let obj = { style: disabled ? tmp.appContainerDisabled : tmp.appContainer, disabled, accessible: true };
     const application = app.section.application;
     let name;
@@ -132,7 +132,7 @@ function FrecentApp(app) {
     }
     const items = [tmp3, ];
     obj = { submitting, style: tmp.submittingOverlay };
-    items[1] = callback2(app(11171).SubmittingOverlay, obj);
+    items[1] = callback2(app(11172).SubmittingOverlay, obj);
     obj.children = items;
     return closure_12(app(4661).PressableOpacity, obj, app.applicationId);
   }

@@ -1,10 +1,10 @@
-// Module ID: 11362
-// Function ID: 88302
+// Module ID: 11363
+// Function ID: 88307
 // Name: getDmHasMessageHistory
 // Dependencies: [1348, 653, 675, 2]
 // Exports: trackWaveCtaClicked
 
-// Module 11362 (getDmHasMessageHistory)
+// Module 11363 (getDmHasMessageHistory)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 

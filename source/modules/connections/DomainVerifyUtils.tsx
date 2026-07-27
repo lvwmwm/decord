@@ -1,5 +1,5 @@
 // Module ID: 8932
-// Function ID: 70583
+// Function ID: 70584
 // Name: EXAMPLE_DOMAIN
 // Dependencies: [2]
 // Exports: getDnsName, getHttpName

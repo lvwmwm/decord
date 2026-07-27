@@ -1,5 +1,5 @@
 // Module ID: 10039
-// Function ID: 77591
+// Function ID: 77592
 // Name: getChannelDetailsSearchContext
 // Dependencies: [31, 1348, 653, 44, 624, 2]
 // Exports: useChannelDetailsSearchContext, useGuildChannelSearchContext, useGuildSearchContext

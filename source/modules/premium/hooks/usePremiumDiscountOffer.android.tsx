@@ -1,5 +1,5 @@
 // Module ID: 6204
-// Function ID: 55660
+// Function ID: 55661
 // Name: useGetDiscountOffer
 // Dependencies: [5619, 1852, 6205, 5622, 624, 2]
 // Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer

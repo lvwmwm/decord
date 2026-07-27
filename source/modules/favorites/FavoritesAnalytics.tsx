@@ -1,5 +1,5 @@
 // Module ID: 10156
-// Function ID: 78578
+// Function ID: 78582
 // Name: setNextFavoritesGuildViewSource
 // Dependencies: [3948, 653, 1841, 675, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddModalOpened, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildUpsellModalOpened, trackFavoritesGuildViewed, trackFavoritesGuildVisibilitySettingToggled

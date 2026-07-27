@@ -1,10 +1,10 @@
-// Module ID: 10259
-// Function ID: 79354
+// Module ID: 10260
+// Function ID: 79359
 // Name: NotificationSettingsMockMessage
-// Dependencies: [31, 27, 1850, 653, 33, 4131, 689, 566, 3970, 3992, 4132, 4135, 4127, 1212, 1273, 10260, 2]
+// Dependencies: [31, 27, 1850, 653, 33, 4131, 689, 566, 3970, 3992, 4132, 4135, 4127, 1212, 1273, 10261, 2]
 // Exports: default
 
-// Module 10259 (NotificationSettingsMockMessage)
+// Module 10260 (NotificationSettingsMockMessage)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -86,7 +86,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   const obj4 = { style: tmp.card };
   const obj5 = { style: tmp.cardContent };
   const obj6 = {};
-  const obj7 = { source: sharedValue(10260), size: require(1273) /* Button */.AvatarSizes.LARGE_48 };
+  const obj7 = { source: sharedValue(10261), size: require(1273) /* Button */.AvatarSizes.LARGE_48 };
   obj6.children = callback(require(1273) /* Button */.Avatar, obj7);
   const items4 = [callback(View, obj6), ];
   const obj8 = { style: tmp.cardMessage };

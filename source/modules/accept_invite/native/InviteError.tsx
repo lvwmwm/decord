@@ -1,10 +1,10 @@
-// Module ID: 11758
-// Function ID: 91330
+// Module ID: 11759
+// Function ID: 91335
 // Name: InviteErrorBase
-// Dependencies: [31, 27, 653, 33, 4131, 689, 3977, 4067, 11759, 11760, 11761, 1212, 4127, 4544, 1392, 1273, 11762, 5513, 1921, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 3977, 4067, 11760, 11761, 11762, 1212, 4127, 4544, 1392, 1273, 11763, 5513, 1921, 2]
 // Exports: default
 
-// Module 11758 (InviteErrorBase)
+// Module 11759 (InviteErrorBase)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -27,11 +27,11 @@ function InviteErrorBase(invite) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = require(3977) /* AccessibilityAnnouncer */;
   if (obj.isThemeDark(importDefault(4067)())) {
-    let tmp4 = 11759;
+    let tmp4 = 11760;
   } else {
-    tmp4 = 11760;
+    tmp4 = 11761;
   }
-  let obj1 = require(11761) /* getDescriptiveInviteError */;
+  let obj1 = require(11762) /* getDescriptiveInviteError */;
   let code;
   if (null != inviteError) {
     code = inviteError.code;
@@ -91,7 +91,7 @@ function InviteDisabledError(onPressClose) {
     obj = {};
     const obj1 = { style: tmp.disabledView };
     const guildIconURL = obj.getGuildIconURL(obj);
-    const obj2 = { style: tmp.disabledPauseIcon, source: importDefault(11762) };
+    const obj2 = { style: tmp.disabledPauseIcon, source: importDefault(11763) };
     const items = [callback(onPressClose(1273).Icon, obj2), ];
     const obj3 = { style: tmp.guildIcon, icon: guildIconURL, size: onPressClose(5513).GuildIconSizes.XLARGE };
     items[1] = callback(importDefault(5513), obj3);

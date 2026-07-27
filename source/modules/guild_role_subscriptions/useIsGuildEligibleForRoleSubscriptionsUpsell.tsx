@@ -1,10 +1,10 @@
-// Module ID: 15133
-// Function ID: 115204
+// Module ID: 15146
+// Function ID: 115253
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: [1391, 1838, 1850, 653, 566, 12557, 2]
+// Dependencies: [1391, 1838, 1850, 653, 566, 12558, 2]
 // Exports: default
 
-// Module 15133 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 15146 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 import { isGuildOwner } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ export default function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
     tmp4 = isGuildOwner(stateFromStores, tmp3);
   }
   const obj = _require(566);
-  const isUserInCreatorMonetizationEligibleCountry = _require(12557).useIsUserInCreatorMonetizationEligibleCountry();
+  const isUserInCreatorMonetizationEligibleCountry = _require(12558).useIsUserInCreatorMonetizationEligibleCountry();
   if (tmp4) {
     let hasItem;
     if (null != stateFromStores) {

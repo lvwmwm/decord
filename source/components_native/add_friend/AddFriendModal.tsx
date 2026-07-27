@@ -1,10 +1,10 @@
-// Module ID: 12923
-// Function ID: 100375
+// Module ID: 12924
+// Function ID: 100380
 // Name: AddFriendModalScene
-// Dependencies: [57, 31, 27, 1850, 653, 11704, 33, 4131, 5053, 689, 11706, 4560, 675, 477, 1459, 4338, 3970, 1212, 8134, 6695, 12924, 5087, 4127, 12925, 12927, 1557, 5517, 2]
+// Dependencies: [57, 31, 27, 1850, 653, 11705, 33, 4131, 5053, 689, 11707, 4560, 675, 477, 1459, 4338, 3970, 1212, 8134, 6695, 12925, 5087, 4127, 12926, 12928, 1557, 5517, 2]
 // Exports: default
 
-// Module 12923 (AddFriendModalScene)
+// Module 12924 (AddFriendModalScene)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "set";

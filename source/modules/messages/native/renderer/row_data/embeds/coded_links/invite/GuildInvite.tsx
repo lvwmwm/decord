@@ -1,10 +1,10 @@
-// Module ID: 12287
-// Function ID: 95811
+// Module ID: 12288
+// Function ID: 95816
 // Name: createResolvingGuildInvite
-// Dependencies: [27, 1391, 4150, 1348, 1918, 1838, 4116, 3768, 1850, 9436, 653, 5969, 7666, 1212, 7658, 689, 3970, 3977, 10931, 10932, 1387, 1921, 7670, 11762, 11761, 9438, 9437, 12288, 1360, 6652, 1392, 1825, 4594, 8397, 4321, 2]
+// Dependencies: [27, 1391, 4150, 1348, 1918, 1838, 4116, 3768, 1850, 9436, 653, 5969, 7666, 1212, 7658, 689, 3970, 3977, 10932, 10933, 1387, 1921, 7670, 11763, 11762, 9438, 9437, 12289, 1360, 6652, 1392, 1825, 4594, 8397, 4321, 2]
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
-// Module 12287 (createResolvingGuildInvite)
+// Module 12288 (createResolvingGuildInvite)
 import { Image } from "getHeaderTextForInvite";
 import isGuildOwner from "isGuildOwner";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -79,9 +79,9 @@ export const createExpiredGuildInvite = function createExpiredGuildInvite(author
   obj["titleText"] = intl5.string(require(1212) /* getSystemLocale */.t["Jhx/ud"]);
   const obj2 = require(7658) /* processColorOrThrow */;
   if (obj5.isThemeDark(closure_2)) {
-    let tmp14Result = tmp14(10931);
+    let tmp14Result = tmp14(10932);
   } else {
-    tmp14Result = tmp14(10932);
+    tmp14Result = tmp14(10933);
   }
   obj["thumbnailUrl"] = Image.resolveAssetSource(tmp14Result).uri;
   obj["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;
@@ -141,7 +141,7 @@ export const createDisabledGuildInvite = function createDisabledGuildInvite(invi
   }
   obj["guildIcon"] = tmp16;
   const obj4 = importDefault(1921);
-  obj["thumbnailUrl"] = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(11762));
+  obj["thumbnailUrl"] = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(11763));
   let tmp17;
   if (null == tmp10) {
     let tmp18;
@@ -160,7 +160,7 @@ export const createErroredGuildInvite = function createErroredGuildInvite(code, 
   let colors;
   ({ colors, baseColors } = importDefault(7666)(closure_2));
   inviteError = inviteError.getInviteError(code);
-  let obj = require(11761) /* getDescriptiveInviteError */;
+  let obj = require(11762) /* getDescriptiveInviteError */;
   code = undefined;
   if (null != inviteError) {
     code = inviteError.code;
@@ -202,9 +202,9 @@ export const createErroredGuildInvite = function createErroredGuildInvite(code, 
   obj["titleText"] = title;
   const obj3 = require(7658) /* processColorOrThrow */;
   if (obj4.isThemeDark(closure_2)) {
-    let tmp12Result = tmp12(10931);
+    let tmp12Result = tmp12(10932);
   } else {
-    tmp12Result = tmp12(10932);
+    tmp12Result = tmp12(10933);
   }
   obj["thumbnailUrl"] = Image.resolveAssetSource(tmp12Result).uri;
   obj["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;
@@ -243,7 +243,7 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
     guild = obj1.fromInviteGuild(invite.guild);
     flag = false;
   }
-  let obj2 = require(12288) /* getHeaderTextForInvite */;
+  let obj2 = require(12289) /* getHeaderTextForInvite */;
   obj = { isVoiceChannel: tmp5, isOwnInvite };
   let hasItem;
   if (null != guild) {

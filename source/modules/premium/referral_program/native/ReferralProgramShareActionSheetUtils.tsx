@@ -1,10 +1,10 @@
-// Module ID: 12412
-// Function ID: 96355
+// Module ID: 12413
+// Function ID: 96360
 // Name: buildReferralUserRow
 // Dependencies: [3768, 8745, 2]
 // Exports: buildReferralUserRow
 
-// Module 12412 (buildReferralUserRow)
+// Module 12413 (buildReferralUserRow)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserRowModes } from "UserRowModes";
 

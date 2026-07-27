@@ -1,5 +1,5 @@
 // Module ID: 8249
-// Function ID: 66262
+// Function ID: 66263
 // Name: _fetchGuildIntegrationsApplications
 // Dependencies: [5, 4154, 1858, 653, 507, 686, 2]
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications

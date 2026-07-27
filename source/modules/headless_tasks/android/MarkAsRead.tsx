@@ -1,9 +1,9 @@
-// Module ID: 16682
-// Function ID: 130147
+// Module ID: 16694
+// Function ID: 130194
 // Name: promise
 // Dependencies: [653, 5070, 2]
 
-// Module 16682 (promise)
+// Module 16694 (promise)
 import ME from "ME";
 
 let closure_2;

@@ -1,5 +1,5 @@
 // Module ID: 4025
-// Function ID: 33519
+// Function ID: 33520
 // Name: PremiumGuildOverrides
 // Dependencies: [2]
 

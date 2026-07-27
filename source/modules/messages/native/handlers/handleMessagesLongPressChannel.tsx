@@ -1,5 +1,5 @@
 // Module ID: 9970
-// Function ID: 77170
+// Function ID: 77171
 // Name: handleMessagesLongPressChannel
 // Dependencies: [4313, 9482, 2]
 // Exports: handleMessagesLongPressChannel

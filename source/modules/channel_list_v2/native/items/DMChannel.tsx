@@ -1,8 +1,8 @@
-// Module ID: 15118
-// Function ID: 115135
-// Dependencies: [31, 4143, 4326, 10222, 4327, 33, 4131, 689, 9029, 4139, 566, 14958, 15026, 8254, 2]
+// Module ID: 15130
+// Function ID: 115181
+// Dependencies: [31, 4143, 4326, 10223, 4327, 33, 4131, 689, 9029, 4139, 566, 14959, 15027, 8254, 2]
 
-// Module 15118
+// Module 15130
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -40,9 +40,9 @@ const memoResult = importAllResult.memo((channel) => {
   const items5 = [channel];
   const stateFromStores = channel(566).useStateFromStores(items4, () => outer1_5.isChannelMuted(channel.getGuildId(), channel.id), items5);
   const obj2 = channel(566);
-  ({ isIncomingCall, isOngoingCall } = importDefault(14958)(channel.id));
+  ({ isIncomingCall, isOngoingCall } = importDefault(14959)(channel.id));
   obj = { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button" };
-  const tmp6 = importDefault(14958)(channel.id);
+  const tmp6 = importDefault(14959)(channel.id);
   obj.accessibilityLabel = importDefault(8254)({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
   obj.accessibilityState = { selected };
   obj.channel = channel;
@@ -51,7 +51,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj.resolvedUnreadSetting = UnreadSetting.ALL_MESSAGES;
   obj.mentionCount = mentionCount;
   obj.muted = stateFromStores;
-  return jsx(importDefault(15026), { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button" });
+  return jsx(importDefault(15027), { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button" });
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/items/DMChannel.tsx");
 

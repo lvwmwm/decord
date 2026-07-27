@@ -1,10 +1,10 @@
-// Module ID: 11543
-// Function ID: 89866
+// Module ID: 11544
+// Function ID: 89871
 // Name: GuildPowerupRollbackSheet
 // Dependencies: [33, 6599, 4544, 2]
 // Exports: default
 
-// Module 11543 (GuildPowerupRollbackSheet)
+// Module 11544 (GuildPowerupRollbackSheet)
 import { jsx } from "jsxProd";
 
 const result = require("Button").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupRollbackSheet.tsx");

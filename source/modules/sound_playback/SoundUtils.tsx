@@ -1,10 +1,10 @@
-// Module ID: 10209
-// Function ID: 78986
+// Module ID: 10210
+// Function ID: 78991
 // Name: createSound
-// Dependencies: [10210, 3971, 8771, 3, 10212, 10213, 2]
+// Dependencies: [10211, 3971, 8771, 3, 10213, 10214, 2]
 // Exports: createSoundForPack, playSound
 
-// Module 10209 (createSound)
+// Module 10210 (createSound)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SoundOutputChannel } from "SoundOutputChannel";
@@ -22,7 +22,7 @@ function createSound(stage_waiting, soundboard_sound, _volume, DEFAULT, flag) {
   if (flag === undefined) {
     flag = false;
   }
-  const mobileAudioSound = new require(10213) /* RNSound */.MobileAudioSound(stage_waiting, soundboard_sound, num, DEFAULT, flag);
+  const mobileAudioSound = new require(10214) /* RNSound */.MobileAudioSound(stage_waiting, soundboard_sound, num, DEFAULT, flag);
   return mobileAudioSound;
 }
 importDefaultResult = new importDefaultResult("SoundUtils");
@@ -37,7 +37,7 @@ export const createSoundForPack = function createSoundForPack(call_calling, soun
   if (DEFAULT === undefined) {
     DEFAULT = SoundOutputChannel.DEFAULT;
   }
-  const tmp3 = importDefault(10212)(soundpack)[call_calling];
+  const tmp3 = importDefault(10213)(soundpack)[call_calling];
   let tmp4 = call_calling;
   if (null != tmp3) {
     tmp4 = tmp3;
@@ -56,7 +56,7 @@ export const playSound = function playSound(arg0, arg1, arg2, arg3, outputChanne
     if (null == arg3) {
       soundpack = soundpack.getSoundpack();
     }
-    const tmp3Result = importDefault(10212)(soundpack);
+    const tmp3Result = importDefault(10213)(soundpack);
     if (null == tmp3Result) {
       const _HermesInternal = HermesInternal;
       importDefaultResult.log("Unable to find sound for pack name: " + arg3);

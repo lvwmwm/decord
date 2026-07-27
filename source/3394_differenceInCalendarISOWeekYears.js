@@ -1,5 +1,5 @@
 // Module ID: 3394
-// Function ID: 26580
+// Function ID: 26581
 // Name: differenceInCalendarISOWeekYears
 // Dependencies: [3367, 3211]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 9064
-// Function ID: 71214
+// Function ID: 71215
 // Name: useIsNsfwGated
 // Dependencies: [4347, 1850, 566, 2]
 // Exports: default

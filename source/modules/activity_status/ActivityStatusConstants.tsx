@@ -1,5 +1,5 @@
 // Module ID: 8995
-// Function ID: 70866
+// Function ID: 70867
 // Name: TOOLTIP_DELAY_MS
 // Dependencies: [2]
 

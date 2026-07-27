@@ -1,10 +1,10 @@
-// Module ID: 11110
-// Function ID: 86435
+// Module ID: 11111
+// Function ID: 86440
 // Name: executeCommand
 // Dependencies: [57, 4992, 4350, 653, 3804, 6129, 3830, 6022, 3770, 5685, 4325, 2]
 // Exports: handleLegacyCommands
 
-// Module 11110 (executeCommand)
+// Module 11111 (executeCommand)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

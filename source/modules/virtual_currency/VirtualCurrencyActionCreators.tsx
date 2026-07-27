@@ -1,5 +1,5 @@
 // Module ID: 8654
-// Function ID: 68746
+// Function ID: 68747
 // Name: fetchVirtualCurrencyBalance
 // Dependencies: [5, 4176, 653, 3, 686, 507, 4030, 6444, 1184, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay

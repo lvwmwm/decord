@@ -1,10 +1,10 @@
-// Module ID: 14352
-// Function ID: 109954
+// Module ID: 14353
+// Function ID: 109959
 // Name: VideoUploadQualityNitroUpsell
-// Dependencies: [31, 27, 1850, 3783, 7697, 653, 33, 4131, 689, 1456, 624, 3777, 4127, 1212, 5166, 1273, 9569, 6448, 10059, 13612, 2]
+// Dependencies: [31, 27, 1850, 3783, 7697, 653, 33, 4131, 689, 1456, 624, 3777, 4127, 1212, 5166, 1273, 9569, 6448, 10059, 13613, 2]
 // Exports: default
 
-// Module 14352 (VideoUploadQualityNitroUpsell)
+// Module 14353 (VideoUploadQualityNitroUpsell)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -161,5 +161,5 @@ export default function SettingsChatScreen(route) {
     obj.scrollTarget = initialSetting;
     return obj.createList(obj);
   }, items);
-  return callback(importDefault(13612), { node });
+  return callback(importDefault(13613), { node });
 };

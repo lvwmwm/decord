@@ -1,5 +1,5 @@
 // Module ID: 8448
-// Function ID: 67324
+// Function ID: 67325
 // Name: GameProfileHeader
 // Dependencies: [57, 31, 27, 33, 4131, 689, 3992, 8449, 4555, 8450, 4127, 2]
 // Exports: default

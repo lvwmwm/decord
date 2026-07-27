@@ -1,10 +1,10 @@
-// Module ID: 12116
-// Function ID: 94927
+// Module ID: 12117
+// Function ID: 94932
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getIsInPrivateProfilesStrictExperiment, useIsInPrivateProfilesStrictExperiment
 
-// Module 12116 (apexExperiment)
+// Module 12117 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-private-profiles-strict", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true }, [2]: { enabled: true }, [3]: { enabled: true } } };

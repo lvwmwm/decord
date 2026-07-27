@@ -1,7 +1,7 @@
 // Module ID: 4968
-// Function ID: 42695
+// Function ID: 42696
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [57, 31, 1278, 4969, 653, 33, 4970, 5087, 4967, 6695, 3977, 12568, 12569, 8943, 1212, 6449, 6554, 1273, 12570, 12603, 5450, 4541, 5517, 2]
+// Dependencies: [57, 31, 1278, 4969, 653, 33, 4970, 5087, 4967, 6695, 3977, 12569, 12570, 8943, 1212, 6449, 6554, 1273, 12571, 12604, 5450, 4541, 5517, 2]
 // Exports: default
 
 // Module 4968 (PremiumGuildSubscribeModal)

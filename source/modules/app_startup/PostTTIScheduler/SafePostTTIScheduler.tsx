@@ -1,5 +1,5 @@
 // Module ID: 5899
-// Function ID: 52369
+// Function ID: 52370
 // Name: waitSafelyForPostTTI
 // Dependencies: [5900, 2]
 // Exports: waitSafelyForPostTTI

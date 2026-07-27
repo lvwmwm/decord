@@ -1,10 +1,10 @@
-// Module ID: 10994
-// Function ID: 85444
+// Module ID: 10995
+// Function ID: 85449
 // Name: Navbar
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 5121, 6695, 1212, 7640, 5746, 1557, 4127, 7575, 1273, 4544, 4325, 10995, 5745, 3831, 5517, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 5121, 6695, 1212, 7640, 5746, 1557, 4127, 7575, 1273, 4544, 4325, 10996, 5745, 3831, 5517, 2]
 // Exports: default
 
-// Module 10994 (Navbar)
+// Module 10995 (Navbar)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

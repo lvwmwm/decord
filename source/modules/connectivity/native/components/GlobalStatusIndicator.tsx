@@ -1,10 +1,10 @@
-// Module ID: 10628
-// Function ID: 82802
+// Module ID: 10629
+// Function ID: 82807
 // Name: nativeEventEmitter
-// Dependencies: [31, 27, 3824, 4144, 9504, 1348, 4203, 33, 8861, 566, 10178, 4342, 1212, 10629, 3992, 10624, 2]
+// Dependencies: [31, 27, 3824, 4144, 9504, 1348, 4203, 33, 8861, 566, 10179, 4342, 1212, 10630, 3992, 10625, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 10628 (nativeEventEmitter)
+// Module 10629 (nativeEventEmitter)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

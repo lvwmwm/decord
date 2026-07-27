@@ -1,10 +1,10 @@
-// Module ID: 14848
-// Function ID: 113257
+// Module ID: 14849
+// Function ID: 113262
 // Name: getActiveTabsRoute
 // Dependencies: [57, 31, 1348, 1907, 3948, 653, 1355, 3983, 3982, 3985, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 14848 (getActiveTabsRoute)
+// Module 14849 (getActiveTabsRoute)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

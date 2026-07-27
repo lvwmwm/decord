@@ -1,5 +1,5 @@
 // Module ID: 9313
-// Function ID: 72855
+// Function ID: 72856
 // Name: getEmojiPickerDataRowPremiumInlineRoadblock
 // Dependencies: [9311, 2]
 // Exports: default

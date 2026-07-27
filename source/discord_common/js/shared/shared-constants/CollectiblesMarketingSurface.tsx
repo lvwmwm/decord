@@ -1,9 +1,9 @@
-// Module ID: 13056
-// Function ID: 100982
+// Module ID: 13057
+// Function ID: 100987
 // Name: CollectiblesMarketingSurface
 // Dependencies: [2]
 
-// Module 13056 (CollectiblesMarketingSurface)
+// Module 13057 (CollectiblesMarketingSurface)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingSurface.tsx");
 
 export const CollectiblesMarketingSurface = { DESKTOP_SHOP_BUTTON: 0, [0]: "DESKTOP_SHOP_BUTTON", MOBILE_SHOP_BUTTON: 1, [1]: "MOBILE_SHOP_BUTTON", EDIT_PROFILE_SETTINGS: 2, [2]: "EDIT_PROFILE_SETTINGS" };

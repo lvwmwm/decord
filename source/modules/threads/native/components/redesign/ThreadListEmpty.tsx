@@ -1,8 +1,8 @@
-// Module ID: 15456
-// Function ID: 117992
-// Dependencies: [31, 27, 33, 4131, 689, 1273, 11335, 4127, 1212, 4544, 2]
+// Module ID: 15469
+// Function ID: 118041
+// Dependencies: [31, 27, 33, 4131, 689, 1273, 11336, 4127, 1212, 4544, 2]
 
-// Module 15456
+// Module 15469
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -23,7 +23,7 @@ const memoResult = require("result").memo((onCreateThreadPress) => {
   const tmp = callback2();
   let obj = { style: tmp.container };
   obj = { style: tmp.iconWrapper };
-  obj = { source: importDefault(11335), size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
+  obj = { source: importDefault(11336), size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
   obj.children = callback(require(1273) /* Button */.Icon, obj);
   const items = [callback(View, obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };

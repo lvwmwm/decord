@@ -1,10 +1,10 @@
-// Module ID: 12559
-// Function ID: 97270
+// Module ID: 12560
+// Function ID: 97275
 // Name: useGuildShopPreviewVisible
-// Dependencies: [3759, 653, 3947, 1334, 624, 12554, 2]
+// Dependencies: [3759, 653, 3947, 1334, 624, 12555, 2]
 // Exports: useGuildShopPreviewVisible
 
-// Module 12559 (useGuildShopPreviewVisible)
+// Module 12560 (useGuildShopPreviewVisible)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -39,9 +39,9 @@ export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(fe
   }
   const items1 = [, , ];
   ({ CREATOR_MONETIZABLE: arr2[0], CREATOR_MONETIZABLE_PROVISIONAL: arr2[1], ROLE_SUBSCRIPTIONS_ENABLED: arr2[2] } = constants);
-  const guildEligibleForGuildProducts = _require(12554).useGuildEligibleForGuildProducts(id);
+  const guildEligibleForGuildProducts = _require(12555).useGuildEligibleForGuildProducts(id);
   let tmp9 = null != features;
-  const obj3 = _require(12554);
+  const obj3 = _require(12555);
   if (tmp9) {
     tmp9 = stateFromStores;
   }

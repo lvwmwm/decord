@@ -1,10 +1,10 @@
-// Module ID: 10178
-// Function ID: 78660
+// Module ID: 10179
+// Function ID: 78665
 // Name: context
 // Dependencies: [31, 2]
 // Exports: useVoiceChatNavigationContext
 
-// Module 10178 (context)
+// Module 10179 (context)
 import importAllResult from "result";
 
 const context = importAllResult.createContext(null);

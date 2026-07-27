@@ -1,5 +1,5 @@
 // Module ID: 8012
-// Function ID: 63807
+// Function ID: 63808
 // Name: useCollectiblesMobileFlexibleBundlesExperiment
 // Dependencies: [1428, 2]
 // Exports: useCollectiblesMobileFlexibleBundlesExperiment

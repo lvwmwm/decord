@@ -1,10 +1,10 @@
-// Module ID: 11612
-// Function ID: 90199
+// Module ID: 11613
+// Function ID: 90204
 // Name: BoostGemSlashIcon
-// Dependencies: [31, 33, 689, 3834, 11613, 2]
+// Dependencies: [31, 33, 689, 3834, 11614, 2]
 // Exports: BoostGemSlashIcon
 
-// Module 11612 (BoostGemSlashIcon)
+// Module 11613 (BoostGemSlashIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const BoostGemSlashIcon = function BoostGemSlashIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11613) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11614) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(11613) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(11614) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

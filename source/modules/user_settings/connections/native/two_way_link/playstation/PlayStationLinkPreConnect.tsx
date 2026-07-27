@@ -1,5 +1,5 @@
 // Module ID: 8903
-// Function ID: 70476
+// Function ID: 70477
 // Name: PlayStationLinkPreConnect
 // Dependencies: [31, 8900, 33, 4131, 1456, 8904, 8874, 1212, 2]
 // Exports: PlayStationLinkPreConnect

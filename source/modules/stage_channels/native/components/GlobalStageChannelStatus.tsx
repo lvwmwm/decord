@@ -1,10 +1,10 @@
-// Module ID: 10630
-// Function ID: 82820
+// Module ID: 10631
+// Function ID: 82825
 // Name: getText
-// Dependencies: [5, 57, 31, 27, 3824, 1353, 653, 33, 1212, 4131, 689, 4321, 566, 4560, 10631, 7618, 10621, 4956, 6690, 6692, 6658, 6654, 1273, 4127, 4545, 4544, 10623, 10329, 4067, 3841, 6622, 4594, 2]
+// Dependencies: [5, 57, 31, 27, 3824, 1353, 653, 33, 1212, 4131, 689, 4321, 566, 4560, 10632, 7618, 10622, 4956, 6690, 6692, 6658, 6654, 1273, 4127, 4545, 4544, 10624, 10330, 4067, 3841, 6622, 4594, 2]
 // Exports: default
 
-// Module 10630 (getText)
+// Module 10631 (getText)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import getThreadChannelIcon from "getThreadChannelIcon";
@@ -41,7 +41,7 @@ class StageChannelRaiseHandAck {
   constructor(arg0) {
     channel = global.channel;
     c1 = undefined;
-    f82826 = undefined;
+    f82831 = undefined;
     c3 = undefined;
     _handleAcceptInvite = function _handleAcceptInvite(arg0) {
       // CreateGeneratorClosureLongIndex (0x67)
@@ -64,9 +64,9 @@ class StageChannelRaiseHandAck {
     items1 = [];
     items1[0] = channel.id;
     stateFromStores = obj.useStateFromStores(items, () => outer1_9.getStageInstanceByChannel(channel.id), items1);
-    f82826 = stateFromStores;
+    f82831 = stateFromStores;
     tmp6 = require("useMountLayoutEffect")(() => {
-      let obj = _undefined(10631);
+      let obj = _undefined(10632);
       obj = {};
       const intl = channel(1212).intl;
       obj = { channelName: _undefined };
@@ -237,8 +237,8 @@ export default function GlobalStageChannelStatus(arg0) {
     const intl = id(1212).intl;
     stringResult = intl.string(id(1212).t["/YzI63"]);
   }
-  const tmp6 = importDefault(10623)();
-  let invitedHeaderText = importDefault(10329)(id);
+  const tmp6 = importDefault(10624)();
+  let invitedHeaderText = importDefault(10330)(id);
   let obj = id(566);
   const items = [closure_9];
   const items1 = [id];

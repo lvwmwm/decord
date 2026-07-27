@@ -1,10 +1,10 @@
-// Module ID: 11888
-// Function ID: 92013
+// Module ID: 11889
+// Function ID: 92018
 // Name: GuildProfileCTA
-// Dependencies: [31, 653, 662, 33, 10920, 9738, 4099, 6633, 6636, 11889, 3951, 9080, 5130, 9073, 6632, 11464, 4544, 1212, 2]
+// Dependencies: [31, 653, 662, 33, 10921, 9738, 4099, 6633, 6636, 11890, 3951, 9080, 5130, 9073, 6632, 11465, 4544, 1212, 2]
 // Exports: default
 
-// Module 11888 (GuildProfileCTA)
+// Module 11889 (GuildProfileCTA)
 import result from "result";
 import ME from "ME";
 import { ProfileCustomizationScrollPositions as closure_6 } from "MAX_FAVORITES";

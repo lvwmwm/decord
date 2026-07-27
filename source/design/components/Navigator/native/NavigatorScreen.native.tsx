@@ -1,5 +1,5 @@
 // Module ID: 5579
-// Function ID: 47400
+// Function ID: 47401
 // Name: NavigatorScreen
 // Dependencies: [31, 33, 5580, 5581, 2]
 

@@ -1,10 +1,10 @@
-// Module ID: 11409
-// Function ID: 88693
+// Module ID: 11410
+// Function ID: 88698
 // Name: useIsHubForGuild
 // Dependencies: [1838, 653, 566, 2]
 // Exports: default
 
-// Module 11409 (useIsHubForGuild)
+// Module 11410 (useIsHubForGuild)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 

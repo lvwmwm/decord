@@ -1,9 +1,9 @@
-// Module ID: 15791
-// Function ID: 121779
+// Module ID: 15803
+// Function ID: 121826
 // Name: VoicePanel
-// Dependencies: [31, 1348, 4343, 33, 566, 15792, 15833, 3744, 4477, 2]
+// Dependencies: [31, 1348, 4343, 33, 566, 15804, 15845, 3744, 4477, 2]
 
-// Module 15791 (VoicePanel)
+// Module 15803 (VoicePanel)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import withEqualityFn from "withEqualityFn";
@@ -26,7 +26,7 @@ function VoicePanel(arg0) {
   const merged = Object.assign(arg0);
   obj["guildId"] = stateFromStores;
   obj["children"] = importAllResult.useMemo(() => outer1_6(outer1_1(outer1_2[6]), {}), []);
-  return jsx(importDefault(15792), {});
+  return jsx(importDefault(15804), {});
 }
 function getChannelKey(arg0) {
   return arg0;

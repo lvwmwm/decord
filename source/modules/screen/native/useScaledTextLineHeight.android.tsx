@@ -1,5 +1,5 @@
 // Module ID: 9849
-// Function ID: 76389
+// Function ID: 76390
 // Name: scaleLineHeight
 // Dependencies: [9850, 4127, 4550, 2]
 // Exports: useScaledTextLineHeight

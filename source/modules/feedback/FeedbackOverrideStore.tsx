@@ -1,9 +1,9 @@
-// Module ID: 16096
-// Function ID: 124624
+// Module ID: 16108
+// Function ID: 124671
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 16095, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 16107, 566, 686, 2]
 
-// Module 16096 (_isNativeReflectConstruct)
+// Module 16108 (_isNativeReflectConstruct)
 import initialize from "initialize";
 import dispatcher from "dispatcher";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -68,7 +68,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     feedbackType = feedbackType.feedbackType;
     const obj = {};
     ({ cooldown, chance } = feedbackType);
-    const merged = Object.assign(require(16095) /* _isNativeReflectConstruct */.FeedbackConfig[feedbackType]);
+    const merged = Object.assign(require(16107) /* _isNativeReflectConstruct */.FeedbackConfig[feedbackType]);
     obj["cooldown"] = cooldown;
     obj["chance"] = chance;
     closure_7[feedbackType] = obj;

@@ -1,11 +1,11 @@
 // Module ID: 15218
-// Function ID: 115918
+// Function ID: 115914
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 15218 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/main_tabs", width: 48, height: 48, scales: [1], hash: "af7e0b726a672f5506a1ba72e26e2adc", name: "NitroWheelIconWithGradient", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "137c8d60debe14e8345280ef0c17818d", name: "LightbulbIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

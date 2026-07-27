@@ -1,5 +1,5 @@
 // Module ID: 7958
-// Function ID: 63348
+// Function ID: 63349
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [4567, 44, 7959, 4119, 1882, 2]
 // Exports: getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, normalizeNumericString

@@ -1,10 +1,10 @@
-// Module ID: 15042
-// Function ID: 114641
+// Module ID: 15043
+// Function ID: 114645
 // Name: useStickyServerHeaderSubtitle
 // Dependencies: [4052, 653, 566, 2]
 // Exports: default
 
-// Module 15042 (useStickyServerHeaderSubtitle)
+// Module 15043 (useStickyServerHeaderSubtitle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildFeatures } from "ME";
 

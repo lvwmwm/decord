@@ -1,5 +1,5 @@
 // Module ID: 6924
-// Function ID: 59621
+// Function ID: 59622
 // Name: DiscordNitroLockupLogo
 // Dependencies: [27, 33, 689, 3835, 6925, 2]
 // Exports: DiscordNitroLockupLogo

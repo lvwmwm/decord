@@ -1,5 +1,5 @@
 // Module ID: 3975
-// Function ID: 32923
+// Function ID: 32924
 // Name: hexToRgb
 // Dependencies: [57, 666, 1212, 3, 3976, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgbArray, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex

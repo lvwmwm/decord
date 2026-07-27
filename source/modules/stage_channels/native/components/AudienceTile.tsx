@@ -1,9 +1,9 @@
-// Module ID: 10797
-// Function ID: 83751
+// Module ID: 10798
+// Function ID: 83756
 // Name: RaisedHandIcon
-// Dependencies: [31, 27, 1918, 33, 4131, 689, 4315, 1273, 7614, 1450, 566, 4958, 4320, 5217, 1212, 6653, 10779, 3977, 10798, 2]
+// Dependencies: [31, 27, 1918, 33, 4131, 689, 4315, 1273, 7614, 1450, 566, 4958, 4320, 5217, 1212, 6653, 10780, 3977, 10799, 2]
 
-// Module 10797 (RaisedHandIcon)
+// Module 10798 (RaisedHandIcon)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";

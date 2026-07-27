@@ -1,5 +1,5 @@
 // Module ID: 8993
-// Function ID: 70854
+// Function ID: 70855
 // Name: AcceptRequestConfirmationModal
 // Dependencies: [31, 27, 33, 4131, 689, 4562, 1212, 4471, 4127, 2]
 // Exports: default

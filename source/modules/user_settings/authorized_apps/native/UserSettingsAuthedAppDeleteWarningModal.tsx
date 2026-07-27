@@ -1,10 +1,10 @@
-// Module ID: 11627
-// Function ID: 90294
+// Module ID: 11628
+// Function ID: 90299
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [33, 10832, 1212, 11628, 7993, 4476, 2]
+// Dependencies: [33, 10833, 1212, 11629, 7993, 4476, 2]
 // Exports: default
 
-// Module 11627 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 11628 (UserSettingsAuthedAppDeleteWarningModal)
 import jsxProd from "jsxProd";
 
 let closure_3;
@@ -18,7 +18,7 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let scopes;
   application = application.application;
   ({ scopes, onDelete } = application);
-  let obj = require(10832) /* isSocialLayerApplication */;
+  let obj = require(10833) /* isSocialLayerApplication */;
   let result = obj.isSocialLayerSDKAuthorization(application, scopes);
   const intl = require(1212) /* getSystemLocale */.intl;
   if (result) {
@@ -38,7 +38,7 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
     formatToPlainStringResult1 = formatToPlainString(t.QWGvxA, obj1);
   }
   const obj2 = {};
-  let tmp8 = importDefault(11628)(application.id);
+  let tmp8 = importDefault(11629)(application.id);
   if (tmp8) {
     const obj3 = {};
     const intl3 = require(1212) /* getSystemLocale */.intl;

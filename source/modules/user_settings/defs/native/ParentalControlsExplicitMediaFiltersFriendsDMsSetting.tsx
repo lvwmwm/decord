@@ -1,9 +1,9 @@
-// Module ID: 14619
-// Function ID: 111485
+// Module ID: 14620
+// Function ID: 111490
 // Name: getTitle
-// Dependencies: [5765, 7697, 13789, 5834, 13793, 1212, 13786, 1282, 10059, 2]
+// Dependencies: [5765, 7697, 13790, 5834, 13794, 1212, 13787, 1282, 10059, 2]
 
-// Module 14619 (getTitle)
+// Module 14620 (getTitle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -16,7 +16,7 @@ createToggle = {
   useTitle: getTitle,
   parent: require("MobileSetting").MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useObscuredContentFriendsDmSettingValue() {
-    const parentalControlledExplicitContentSettings = require(13789) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
+    const parentalControlledExplicitContentSettings = require(13790) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
     let prop;
     if (null != parentalControlledExplicitContentSettings) {
       prop = parentalControlledExplicitContentSettings.explicitContentFriendDm;
@@ -31,7 +31,7 @@ createToggle = {
   onPress: function onObscuredContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(13793);
+      let obj = selectedTeenId(13794);
       const intl = selectedTeenId(1212).intl;
       const stringResult = intl.string(selectedTeenId(1212).t.GYpoAq);
       obj = {
@@ -46,8 +46,8 @@ createToggle = {
       obj.currentValue = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentFriendDm;
       const items = [selectedTeenId(1282).ExplicitContentRedaction.SHOW];
       obj.excluded = items;
-      const result = selectedTeenId(13786).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(13786);
+      const result = selectedTeenId(13787).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(13787);
     }
   },
   unsearchable: true

@@ -1,10 +1,10 @@
-// Module ID: 11580
-// Function ID: 90024
+// Module ID: 11581
+// Function ID: 90029
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [27, 4019, 33, 4131, 689, 11581, 6561, 4127, 2]
+// Dependencies: [27, 4019, 33, 4131, 689, 11582, 6561, 4127, 2]
 // Exports: default
 
-// Module 11580 (GuildPowerupsBoostInfo)
+// Module 11581 (GuildPowerupsBoostInfo)
 import { View } from "get ActivityIndicator";
 import { BoostInfoType } from "BoostedGuildTiers";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   let type;
   ({ count, type } = arg0);
   const tmp = callback2();
-  let obj = require(11581) /* getGuildPowerupsBoostInfoText */;
+  let obj = require(11582) /* getGuildPowerupsBoostInfoText */;
   const guildPowerupsBoostInfoText = obj.getGuildPowerupsBoostInfoText(count, type);
   obj = { style: tmp.container, accessible: true, accessibilityLabel: "" + count + ", " + guildPowerupsBoostInfoText };
   obj = { style: tmp.headerContainer, importantForAccessibility: "no-hide-descendants", accessible: false };

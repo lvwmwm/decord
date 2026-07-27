@@ -1,9 +1,9 @@
-// Module ID: 10560
-// Function ID: 82300
+// Module ID: 10561
+// Function ID: 82305
 // Name: LeakyBucket
 // Dependencies: [6, 7, 2]
 
-// Module 10560 (LeakyBucket)
+// Module 10561 (LeakyBucket)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

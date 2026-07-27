@@ -1,10 +1,10 @@
-// Module ID: 10467
-// Function ID: 81224
+// Module ID: 10468
+// Function ID: 81229
 // Name: getCutoutCenterX
 // Dependencies: [31, 33, 8463, 2]
 // Exports: default, getBadgeLeft, getBadgeTop
 
-// Module 10467 (getCutoutCenterX)
+// Module 10468 (getCutoutCenterX)
 import "result";
 import jsxProd from "jsxProd";
 

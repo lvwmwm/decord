@@ -1,5 +1,5 @@
 // Module ID: 4986
-// Function ID: 42988
+// Function ID: 42989
 // Name: normalizeSection
 // Dependencies: [57, 662, 653, 4987, 4988, 675, 4989, 2]
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl

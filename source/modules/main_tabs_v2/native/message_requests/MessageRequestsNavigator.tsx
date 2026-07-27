@@ -1,10 +1,10 @@
-// Module ID: 15614
-// Function ID: 120441
+// Module ID: 15626
+// Function ID: 120488
 // Name: MessageRequestsNavigator
-// Dependencies: [31, 27, 33, 9041, 4131, 689, 5517, 5703, 1557, 9050, 1212, 10123, 15615, 15634, 15635, 2]
+// Dependencies: [31, 27, 33, 9041, 4131, 689, 5517, 5703, 1557, 9050, 1212, 10123, 15627, 15646, 15647, 2]
 // Exports: default
 
-// Module 15614 (MessageRequestsNavigator)
+// Module 15626 (MessageRequestsNavigator)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

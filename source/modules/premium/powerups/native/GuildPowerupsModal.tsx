@@ -1,10 +1,10 @@
-// Module ID: 11509
-// Function ID: 89648
+// Module ID: 11510
+// Function ID: 89653
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 4019, 33, 4131, 689, 4042, 11510, 11519, 11539, 1557, 5462, 11544, 11545, 11573, 4338, 4038, 5094, 1212, 2231, 9050, 5087, 11580, 11582, 11590, 11596, 11606, 11615, 2]
+// Dependencies: [31, 27, 4019, 33, 4131, 689, 4042, 11511, 11520, 11540, 1557, 5462, 11545, 11546, 11574, 4338, 4038, 5094, 1212, 2231, 9050, 5087, 11581, 11583, 11591, 11597, 11607, 11616, 2]
 // Exports: default
 
-// Module 11509 (_createForOfIteratorHelperLoose)
+// Module 11510 (_createForOfIteratorHelperLoose)
 import result from "result";
 import get_ActivityIndicator from "GuildPowerupsBoostButton";
 import BoostedGuildTiers from "BoostedGuildTiers";

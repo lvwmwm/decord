@@ -1,10 +1,10 @@
-// Module ID: 16546
-// Function ID: 128988
+// Module ID: 16558
+// Function ID: 129035
 // Name: AdvancedInstantInviteScreen
-// Dependencies: [57, 31, 1348, 8287, 1838, 3759, 653, 33, 4131, 689, 1456, 566, 44, 22, 16547, 8293, 4471, 1212, 4560, 686, 6695, 7575, 16548, 8288, 480, 5087, 5517, 2]
+// Dependencies: [57, 31, 1348, 8287, 1838, 3759, 653, 33, 4131, 689, 1456, 566, 44, 22, 16559, 8293, 4471, 1212, 4560, 686, 6695, 7575, 16560, 8288, 480, 5087, 5517, 2]
 // Exports: default
 
-// Module 16546 (AdvancedInstantInviteScreen)
+// Module 16558 (AdvancedInstantInviteScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -152,7 +152,7 @@ function AdvancedInstantInviteScreen() {
   obj.onChangeTemporary = callback3;
   obj.onChangeFlags = callback4;
   obj.onChangeRoleIds = callback5;
-  obj.children = jsx(channel(16548), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
+  obj.children = jsx(channel(16560), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
   return jsx(navigation(7575).Form, { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
 }
 ({ InviteModalScenes: closure_9, Permissions: closure_10 } = ME);

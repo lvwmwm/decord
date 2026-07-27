@@ -1,7 +1,7 @@
 // Module ID: 675
 // Function ID: 8287
 // Name: expandLocation
-// Dependencies: [29, 31, 676, 683, 653, 13191, 4157, 1845, 674, 480, 13189, 1184, 686, 5907, 1212, 12, 491, 2, 13192]
+// Dependencies: [29, 31, 676, 683, 653, 13192, 4157, 1845, 674, 480, 13190, 1184, 686, 5907, 1212, 12, 491, 2, 13193]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
 // Module 675 (expandLocation)
@@ -43,7 +43,7 @@ function expandSource(source) {
   return obj;
 }
 function addBreadcrumb(message) {
-  const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = require(13189) /* IGNORE_ANALYTICS_BREADCRUMB_EVENTS */.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
+  const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = require(13190) /* IGNORE_ANALYTICS_BREADCRUMB_EVENTS */.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
   if (!IGNORE_ANALYTICS_BREADCRUMB_EVENTS.includes(message)) {
     let obj = importDefault(1184);
     obj = { category: "analytics", message };

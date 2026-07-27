@@ -1,10 +1,10 @@
-// Module ID: 13031
-// Function ID: 100843
+// Module ID: 13032
+// Function ID: 100848
 // Name: useGuildActionSheetPermissions
 // Dependencies: [3759, 653, 566, 2]
 // Exports: useGuildActionSheetPermissions
 
-// Module 13031 (useGuildActionSheetPermissions)
+// Module 13032 (useGuildActionSheetPermissions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
 

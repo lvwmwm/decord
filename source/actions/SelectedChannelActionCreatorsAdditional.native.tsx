@@ -1,7 +1,7 @@
 // Module ID: 4946
-// Function ID: 42412
+// Function ID: 42413
 // Name: selectVoiceChannelAdditional
-// Dependencies: [1348, 1838, 4947, 3759, 1907, 1850, 4147, 4948, 4313, 4949, 3831, 4950, 4951, 4099, 4963, 1935, 12623, 491, 686, 2]
+// Dependencies: [1348, 1838, 4947, 3759, 1907, 1850, 4147, 4948, 4313, 4949, 3831, 4950, 4951, 4099, 4963, 1935, 12624, 491, 686, 2]
 // Exports: selectVoiceChannelAdditional
 
 // Module 4946 (selectVoiceChannelAdditional)

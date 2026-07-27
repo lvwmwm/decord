@@ -1,10 +1,10 @@
-// Module ID: 11567
-// Function ID: 89983
+// Module ID: 11568
+// Function ID: 89988
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [27, 33, 4131, 689, 11568, 11569, 11570, 4476, 6673, 1212, 2231, 4476, 4127, 2]
+// Dependencies: [27, 33, 4131, 689, 11569, 11570, 11571, 4476, 6673, 1212, 2231, 4476, 4127, 2]
 // Exports: default
 
-// Module 11567 (GuildPowerupsDeactivateAlert)
+// Module 11568 (GuildPowerupsDeactivateAlert)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -29,10 +29,10 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   ({ guildId, powerup } = arg0);
   const tmp = callback2();
   const require = tmp;
-  ({ onDeactivate: importDefault, error } = importDefault(11568)(guildId, powerup));
-  const tmp2 = importDefault(11568)(guildId, powerup);
-  let obj = require(11570) /* ModalType */;
-  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11570) /* ModalType */.ModalType.DEACTIVATE);
+  ({ onDeactivate: importDefault, error } = importDefault(11569)(guildId, powerup));
+  const tmp2 = importDefault(11569)(guildId, powerup);
+  let obj = require(11571) /* ModalType */;
+  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11571) /* ModalType */.ModalType.DEACTIVATE);
   obj = {};
   obj = { style: tmp.headerContainer };
   const obj1 = { color: importDefault(689).colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: { width: 40, height: 40 } };
@@ -70,14 +70,14 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   items[2] = callback(require(4476) /* getAlertModalItemKey */.AlertActionButton, obj7, "cancel");
   obj4.children = items;
   obj.actions = closure_5(require(4476) /* getAlertModalItemKey */.AlertActions, obj4);
-  const arr = importDefault(11569)(guildId, powerup);
+  const arr = importDefault(11570)(guildId, powerup);
   const obj2 = { perk: powerup.title };
   const obj3 = { perk: powerup.title };
   const tmp4 = callback;
   const tmp5 = closure_5;
   obj.extraContent = callback(View, {
     style: tmp.extraContentContainer,
-    children: importDefault(11569)(guildId, powerup).map((critical) => {
+    children: importDefault(11570)(guildId, powerup).map((critical) => {
       const obj = { style: outer1_4.warningText };
       let str = "text-sm/medium";
       if (critical.critical) {

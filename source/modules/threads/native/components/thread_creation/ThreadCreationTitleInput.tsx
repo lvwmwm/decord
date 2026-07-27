@@ -1,8 +1,8 @@
-// Module ID: 15370
-// Function ID: 117235
-// Dependencies: [31, 1348, 653, 33, 15371, 6036, 6132, 566, 6131, 1212, 6670, 5122, 2]
+// Module ID: 15383
+// Function ID: 117284
+// Dependencies: [31, 1348, 653, 33, 15384, 6036, 6132, 566, 6131, 1212, 6670, 5122, 2]
 
-// Module 15370
+// Module 15383
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MAX_CHANNEL_NAME_LENGTH } from "ME";
@@ -14,7 +14,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   const threadSettingsDraft = chatInputRef.threadSettingsDraft;
   const optional = chatInputRef.optional;
   const dependencyMap = ref;
-  let obj = chatInputRef(15371);
+  let obj = chatInputRef(15384);
   obj = { content: threadSettingsDraft.name };
   ref = ref.useRef(threadSettingsDraft.name);
   const items = [threadSettingsDraft.parentChannelId];

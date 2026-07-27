@@ -1,5 +1,5 @@
 // Module ID: 7366
-// Function ID: 60284
+// Function ID: 60285
 // Name: RulebookSpotIllustration
 // Dependencies: [33, 5085, 7367, 2]
 // Exports: RulebookSpotIllustration

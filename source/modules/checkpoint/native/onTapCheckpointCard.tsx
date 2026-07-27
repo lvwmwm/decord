@@ -1,10 +1,10 @@
-// Module ID: 11069
-// Function ID: 86019
+// Module ID: 11070
+// Function ID: 86024
 // Name: onTapCheckpointCard
 // Dependencies: [1348, 653, 675, 4325, 2]
 // Exports: onTapCheckpointCard
 
-// Module 11069 (onTapCheckpointCard)
+// Module 11070 (onTapCheckpointCard)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 

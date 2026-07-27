@@ -1,5 +1,5 @@
 // Module ID: 7770
-// Function ID: 61756
+// Function ID: 61757
 // Name: createPremiumGroupInviteEmbed
 // Dependencies: [3791, 4131, 689, 7670, 7771, 7772, 1212, 2781, 2]
 // Exports: createPremiumGroupInviteEmbed

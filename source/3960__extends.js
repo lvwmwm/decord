@@ -1,5 +1,5 @@
 // Module ID: 3960
-// Function ID: 32709
+// Function ID: 32710
 // Name: _extends
 // Dependencies: [31, 3956, 1205, 1206, 3961, 3963, 3965, 1199]
 // Exports: Prompt, Redirect, useHistory, useParams, useRouteMatch, withRouter

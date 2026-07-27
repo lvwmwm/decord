@@ -1,5 +1,5 @@
 // Module ID: 5820
-// Function ID: 51098
+// Function ID: 51099
 // Name: calculateFractionalPremiumInfo
 // Dependencies: [57, 31, 1850, 3783, 5821, 653, 1852, 3713, 44, 3792, 3777, 566, 4560, 5822, 22, 2]
 // Exports: default

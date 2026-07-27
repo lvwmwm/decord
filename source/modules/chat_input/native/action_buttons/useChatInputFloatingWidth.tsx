@@ -1,10 +1,10 @@
-// Module ID: 11356
-// Function ID: 88273
+// Module ID: 11357
+// Function ID: 88278
 // Name: useChatInputFloatingWidth
-// Dependencies: [31, 11092, 3992, 4132, 2]
+// Dependencies: [31, 11093, 3992, 4132, 2]
 // Exports: default
 
-// Module 11356 (useChatInputFloatingWidth)
+// Module 11357 (useChatInputFloatingWidth)
 import result from "result";
 import { CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG as closure_3 } from "TextAreaCta";
 

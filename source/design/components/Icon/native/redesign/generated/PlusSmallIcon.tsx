@@ -1,5 +1,5 @@
 // Module ID: 8661
-// Function ID: 68794
+// Function ID: 68795
 // Name: PlusSmallIcon
 // Dependencies: [31, 33, 689, 3834, 8662, 2]
 // Exports: PlusSmallIcon

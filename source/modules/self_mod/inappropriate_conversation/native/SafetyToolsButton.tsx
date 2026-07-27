@@ -1,5 +1,5 @@
 // Module ID: 10091
-// Function ID: 78200
+// Function ID: 78201
 // Name: SafetyToolsButton
 // Dependencies: [57, 31, 27, 33, 4131, 689, 10092, 10093, 1212, 10095, 4560, 10096, 10097, 8369, 10064, 8961, 2]
 // Exports: SafetyToolsButton

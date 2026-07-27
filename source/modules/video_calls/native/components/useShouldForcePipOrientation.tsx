@@ -1,10 +1,10 @@
-// Module ID: 10458
-// Function ID: 81160
+// Module ID: 10459
+// Function ID: 81165
 // Name: useShouldForcePipOrientation
-// Dependencies: [1347, 4144, 1194, 4156, 4149, 10459, 566, 10448, 8105, 2]
+// Dependencies: [1347, 4144, 1194, 4156, 4149, 10460, 566, 10449, 8105, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 10458 (useShouldForcePipOrientation)
+// Module 10459 (useShouldForcePipOrientation)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   let activityLockOrientation;
   let focusedEmbeddedActivityParticipant;
   channel = channel.channel;
-  const tmp = importDefault(10459)(channel.id);
+  const tmp = importDefault(10460)(channel.id);
   const items = [_isNativeReflectConstruct, id];
   const stateFromStores = channel(566).useStateFromStores(items, () => {
     const participant = outer1_4.getParticipant(channel.id, outer1_5.getId());

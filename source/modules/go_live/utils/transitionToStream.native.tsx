@@ -1,5 +1,5 @@
 // Module ID: 4337
-// Function ID: 38300
+// Function ID: 38301
 // Name: transitionToStream
 // Dependencies: [1348, 4099, 4338, 4342, 2]
 // Exports: default

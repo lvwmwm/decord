@@ -1,5 +1,5 @@
 // Module ID: 5345
-// Function ID: 45951
+// Function ID: 45952
 // Name: BottomSheetDraggableScrollable
 // Dependencies: [31, 33, 5217]
 // Exports: BottomSheetDraggableScrollable

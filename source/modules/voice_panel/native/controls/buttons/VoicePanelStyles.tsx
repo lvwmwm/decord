@@ -1,10 +1,10 @@
-// Module ID: 15919
-// Function ID: 123088
+// Module ID: 15931
+// Function ID: 123135
 // Name: useVoicePanelButtonStyles
 // Dependencies: [4131, 689, 8056, 1324, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 15919 (useVoicePanelButtonStyles)
+// Module 15931 (useVoicePanelButtonStyles)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_3 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {

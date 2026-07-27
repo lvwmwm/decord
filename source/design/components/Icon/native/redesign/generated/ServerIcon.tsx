@@ -1,5 +1,5 @@
 // Module ID: 8936
-// Function ID: 70604
+// Function ID: 70605
 // Name: ServerIcon
 // Dependencies: [31, 33, 689, 3834, 8937, 2]
 // Exports: ServerIcon

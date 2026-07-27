@@ -1,5 +1,5 @@
 // Module ID: 8130
-// Function ID: 64853
+// Function ID: 64854
 // Name: isValidImageAttachment
 // Dependencies: [31, 6014, 1348, 4350, 1850, 653, 4318, 3804, 1360, 1443, 1327, 4354, 1882, 4359, 21, 2]
 // Exports: getEmbedColor, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostMediaThumbnail

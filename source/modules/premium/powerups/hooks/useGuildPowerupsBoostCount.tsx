@@ -1,5 +1,5 @@
 // Module ID: 4038
-// Function ID: 33612
+// Function ID: 33613
 // Name: useGuildAppliedBoostCount
 // Dependencies: [31, 1838, 4039, 4018, 4042, 566, 2]
 // Exports: default, getGuildPowerupsBoostCount

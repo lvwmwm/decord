@@ -1,10 +1,10 @@
-// Module ID: 16189
-// Function ID: 125535
+// Module ID: 16201
+// Function ID: 125582
 // Name: RedesignSkipAvatarUploadAlertModal
 // Dependencies: [31, 33, 4476, 1212, 4476, 2]
 // Exports: default
 
-// Module 16189 (RedesignSkipAvatarUploadAlertModal)
+// Module 16201 (RedesignSkipAvatarUploadAlertModal)
 import "result";
 import jsxProd from "jsxProd";
 

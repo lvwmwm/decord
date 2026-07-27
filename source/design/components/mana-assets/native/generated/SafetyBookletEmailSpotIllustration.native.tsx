@@ -1,5 +1,5 @@
 // Module ID: 7368
-// Function ID: 60287
+// Function ID: 60288
 // Name: SafetyBookletEmailSpotIllustration
 // Dependencies: [33, 5085, 7369, 2]
 // Exports: SafetyBookletEmailSpotIllustration

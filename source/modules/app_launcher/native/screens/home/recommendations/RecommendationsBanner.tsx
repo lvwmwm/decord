@@ -1,8 +1,8 @@
-// Module ID: 11202
-// Function ID: 87207
-// Dependencies: [31, 27, 1858, 653, 33, 4131, 10861, 11194, 10607, 5085, 7922, 8039, 1392, 7850, 2]
+// Module ID: 11203
+// Function ID: 87212
+// Dependencies: [31, 27, 1858, 653, 33, 4131, 10862, 11195, 10608, 5085, 7922, 8039, 1392, 7850, 2]
 
-// Module 11202
+// Module 11203
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,11 +18,11 @@ let closure_9 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: {
 let closure_10 = importAllResult.memo((applicationId) => {
   let imageSource;
   let imageStyle;
-  let obj = heroMediaDimensions(10861);
-  let obj1 = heroMediaDimensions(11194);
+  let obj = heroMediaDimensions(10862);
+  let obj1 = heroMediaDimensions(11195);
   heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
-  const tmp2 = importDefault(10607)(obj);
+  const tmp2 = importDefault(10608)(obj);
   importDefault = tmp2;
   let items = [heroMediaDimensions, tmp2];
   const memo = importAllResult.useMemo(() => {

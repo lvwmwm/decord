@@ -1,5 +1,5 @@
 // Module ID: 9051
-// Function ID: 71155
+// Function ID: 71156
 // Name: MIN_HEADER_HEIGHT
 // Dependencies: [27, 1324, 2]
 // Exports: getMinHeaderHeight

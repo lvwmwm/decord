@@ -1,10 +1,10 @@
-// Module ID: 15085
-// Function ID: 114943
+// Module ID: 15097
+// Function ID: 114989
 // Name: handlePress
-// Dependencies: [5, 31, 27, 653, 33, 4131, 689, 9849, 1921, 1935, 3828, 4661, 15086, 4127, 1212, 1273, 2]
+// Dependencies: [5, 31, 27, 653, 33, 4131, 689, 9849, 1921, 1935, 3828, 4661, 15098, 4127, 1212, 1273, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 15085 (handlePress)
+// Module 15097 (handlePress)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import "result";
 import { Image } from "get ActivityIndicator";
@@ -37,7 +37,7 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/g
 export default function GuildMFAWarning() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress };
-  obj = { style: tmp.MFAWarningIcon, source: importDefault(15086) };
+  obj = { style: tmp.MFAWarningIcon, source: importDefault(15098) };
   const items = [callback2(Image, obj), ];
   obj = { variant: "text-xs/medium", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;

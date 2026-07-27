@@ -1,5 +1,5 @@
 // Module ID: 8419
-// Function ID: 67259
+// Function ID: 67260
 // Name: isGameProfileObscured
 // Dependencies: [1850, 7966, 566, 2]
 // Exports: default

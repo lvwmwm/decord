@@ -1,10 +1,10 @@
-// Module ID: 14821
-// Function ID: 113073
+// Module ID: 14822
+// Function ID: 113078
 // Name: getWumpTrashSource
-// Dependencies: [31, 27, 33, 6481, 14822, 14823, 3977, 2]
+// Dependencies: [31, 27, 33, 6481, 14823, 14824, 3977, 2]
 // Exports: WumpTrash
 
-// Module 14821 (getWumpTrashSource)
+// Module 14822 (getWumpTrashSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

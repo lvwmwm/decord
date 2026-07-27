@@ -1,5 +1,5 @@
 // Module ID: 4948
-// Function ID: 42437
+// Function ID: 42438
 // Name: MAX_STAGE_TOPIC_LENGTH
 // Dependencies: [653, 1212, 1921, 2]
 // Exports: getStagePublicInfoText

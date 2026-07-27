@@ -1,9 +1,9 @@
-// Module ID: 11270
-// Function ID: 87636
+// Module ID: 11271
+// Function ID: 87641
 // Name: isValidRoleMention
 // Dependencies: [1922, 4468, 1882, 7960, 44, 1212, 7958, 5674, 7961, 2]
 
-// Module 11270 (isValidRoleMention)
+// Module 11271 (isValidRoleMention)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 

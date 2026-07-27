@@ -1,5 +1,5 @@
 // Module ID: 5761
-// Function ID: 50313
+// Function ID: 50314
 // Name: useOptInEnabledForGuild
 // Dependencies: [1838, 3759, 4326, 1850, 653, 566, 2]
 // Exports: isOptInEnabledForGuild, useOptInEnabledForGuild, useShouldShowOnboardingAdminUpsellForGuild

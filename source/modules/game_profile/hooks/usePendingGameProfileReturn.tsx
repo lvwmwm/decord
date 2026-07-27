@@ -1,10 +1,10 @@
-// Module ID: 11459
-// Function ID: 89217
+// Module ID: 11460
+// Function ID: 89222
 // Name: usePendingGameProfileReturn
 // Dependencies: [31, 4152, 8414, 653, 566, 8412, 8418, 2]
 // Exports: default
 
-// Module 11459 (usePendingGameProfileReturn)
+// Module 11460 (usePendingGameProfileReturn)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

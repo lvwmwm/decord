@@ -1,5 +1,5 @@
 // Module ID: 9724
-// Function ID: 75763
+// Function ID: 75764
 // Name: useGiftingPromotionConfig
 // Dependencies: [2]
 // Exports: default

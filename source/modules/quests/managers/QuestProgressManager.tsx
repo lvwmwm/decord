@@ -1,9 +1,9 @@
-// Module ID: 16639
-// Function ID: 129830
+// Module ID: 16651
+// Function ID: 129877
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 5, 6, 7, 15, 17, 18, 1347, 5658, 4151, 4150, 4163, 4204, 5932, 15772, 4977, 664, 5938, 5930, 10439, 4978, 9401, 4980, 5959, 4303, 4302, 4984, 5955, 4195, 1327, 4301, 5953, 5078, 2]
+// Dependencies: [57, 5, 6, 7, 15, 17, 18, 1347, 5658, 4151, 4150, 4163, 4204, 5932, 15784, 4977, 664, 5938, 5930, 10440, 4978, 9401, 4980, 5959, 4303, 4302, 4984, 5955, 4195, 1327, 4301, 5953, 5078, 2]
 
-// Module 16639 (_isNativeReflectConstruct)
+// Module 16651 (_isNativeReflectConstruct)
 import "_slicedToArray";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -126,7 +126,7 @@ function isQuestProgressable(userStatus) {
   return tmp;
 }
 function handleEmbeddedActivityLaunchSuccess(applicationId) {
-  let obj = require(10439) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10440) /* _createForOfIteratorHelperLoose */;
   const tmp2 = _createForOfIteratorHelperLoose(obj.getEligibleQuestsForApplicationId(quests.quests, applicationId));
   const iter = tmp2();
   let iter2 = iter;

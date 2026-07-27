@@ -1,5 +1,5 @@
 // Module ID: 6152
-// Function ID: 55096
+// Function ID: 55097
 // Name: convertThemeToProto
 // Dependencies: [5, 3943, 1279, 1278, 653, 1281, 1331, 1282, 1313, 686, 3804, 2]
 // Exports: saveClientTheme, saveGuildFolders

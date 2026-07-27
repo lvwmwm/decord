@@ -1,10 +1,10 @@
-// Module ID: 11722
-// Function ID: 91013
+// Module ID: 11723
+// Function ID: 91018
 // Name: SkipHeaderButton
 // Dependencies: [31, 33, 4131, 689, 1212, 9050, 2]
 // Exports: default
 
-// Module 11722 (SkipHeaderButton)
+// Module 11723 (SkipHeaderButton)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

@@ -1,5 +1,5 @@
 // Module ID: 6272
-// Function ID: 56351
+// Function ID: 56352
 // Name: useStoreConnectionErrorAlert
 // Dependencies: [31, 5619, 566, 4471, 1212, 2]
 // Exports: default

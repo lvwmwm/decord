@@ -1,10 +1,10 @@
-// Module ID: 12205
-// Function ID: 95435
+// Module ID: 12206
+// Function ID: 95440
 // Name: getGuildScheduledEventHeaderProps
-// Dependencies: [5751, 1354, 8148, 689, 8264, 1212, 7624, 12206, 2]
+// Dependencies: [5751, 1354, 8148, 689, 8264, 1212, 7624, 12207, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 12205 (getGuildScheduledEventHeaderProps)
+// Module 12206 (getGuildScheduledEventHeaderProps)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildScheduledEventEntityTypes as closure_5 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 
@@ -57,11 +57,11 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     let stringResult1 = stringResult;
     let tmp8 = tmp6;
   } else if (tmp5) {
-    tmp8 = importDefault(12206);
+    tmp8 = importDefault(12207);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
     stringResult1 = startDateTimeString;
   } else if (currentOrPastEvent) {
-    tmp8 = importDefault(12206);
+    tmp8 = importDefault(12207);
     const intl3 = require(1212) /* getSystemLocale */.intl;
     stringResult1 = intl3.string(require(1212) /* getSystemLocale */.t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
@@ -80,8 +80,8 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
       }
       stringResult1 = formatToPlainStringResult;
       ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
-      tmp8 = importDefault(12206);
-      const tmp11 = importDefault(12206);
+      tmp8 = importDefault(12207);
+      const tmp11 = importDefault(12207);
     }
   }
   if (isCanceled) {

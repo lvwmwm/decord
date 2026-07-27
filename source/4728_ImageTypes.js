@@ -1,5 +1,5 @@
 // Module ID: 4728
-// Function ID: 41150
+// Function ID: 41151
 // Name: ImageTypes
 // Dependencies: [7, 6]
 

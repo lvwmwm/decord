@@ -1,10 +1,10 @@
-// Module ID: 10462
-// Function ID: 81190
+// Module ID: 10463
+// Function ID: 81195
 // Name: useIsViewingActivity
-// Dependencies: [4144, 10447, 3982, 10444, 566, 2]
+// Dependencies: [4144, 10448, 3982, 10445, 566, 2]
 // Exports: useIsViewingActivity
 
-// Module 10462 (useIsViewingActivity)
+// Module 10463 (useIsViewingActivity)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -12,8 +12,8 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 
 export const useIsViewingActivity = function useIsViewingActivity(channelId) {
   channelId = channelId.channelId;
-  let tmp = importDefault(10447)(channelId);
-  const isModalOpen = channelId(3982).useIsModalOpen(importDefault(10444));
+  let tmp = importDefault(10448)(channelId);
+  const isModalOpen = channelId(3982).useIsModalOpen(importDefault(10445));
   const obj = channelId(3982);
   const items = [_isNativeReflectConstruct];
   const items1 = [channelId];

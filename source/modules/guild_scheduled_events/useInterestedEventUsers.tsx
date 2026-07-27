@@ -1,5 +1,5 @@
 // Module ID: 8160
-// Function ID: 65456
+// Function ID: 65457
 // Name: useInterestedEventUsers
 // Dependencies: [31, 5751, 1354, 566, 2]
 // Exports: default

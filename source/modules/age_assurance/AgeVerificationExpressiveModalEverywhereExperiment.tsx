@@ -1,5 +1,5 @@
 // Module ID: 7557
-// Function ID: 60579
+// Function ID: 60580
 // Name: useIsAgeVerificationExpressiveModalEverywhereEnabled
 // Dependencies: [1428, 2]
 // Exports: isAgeVerificationExpressiveModalEverywhereEnabled, useIsAgeVerificationExpressiveModalEverywhereEnabled

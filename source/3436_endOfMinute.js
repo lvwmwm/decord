@@ -1,5 +1,5 @@
 // Module ID: 3436
-// Function ID: 26707
+// Function ID: 26708
 // Name: endOfMinute
 // Dependencies: [3210, 3211]
 // Exports: default

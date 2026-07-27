@@ -1,5 +1,5 @@
 // Module ID: 3564
-// Function ID: 27706
+// Function ID: 27707
 // Name: startOfSecond
 // Dependencies: [3210, 3211]
 // Exports: default

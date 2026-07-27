@@ -1,9 +1,9 @@
-// Module ID: 16679
-// Function ID: 130085
+// Module ID: 16691
+// Function ID: 130132
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 15961, 4045, 6637, 1194, 1348, 1838, 3, 3989, 10292, 16150, 686, 5907, 1554, 675, 5588, 6636, 4139, 14461, 1284, 2]
+// Dependencies: [5, 15973, 4045, 6637, 1194, 1348, 1838, 3, 3989, 10293, 16162, 686, 5907, 1554, 675, 5588, 6636, 4139, 14462, 1284, 2]
 
-// Module 16679 (_createForOfIteratorHelperLoose)
+// Module 16691 (_createForOfIteratorHelperLoose)
 import importDefaultResult from "_isNativeReflectConstruct";
 import { applicationReady } from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -180,42 +180,42 @@ let obj = {
     importDefault(3989).logToDevice(json);
   },
   () => {
-    const result = require(10292) /* formatString */.resetComponentProfiler();
+    const result = require(10293) /* formatString */.resetComponentProfiler();
     sendReply("success", "reset-component-profiler");
   },
   () => {
-    const result = require(10292) /* formatString */.pauseComponentProfiler();
+    const result = require(10293) /* formatString */.pauseComponentProfiler();
     sendReply("success", "pause-component-profiler");
   },
   () => {
-    const result = require(10292) /* formatString */.resumeComponentProfiler();
+    const result = require(10293) /* formatString */.resumeComponentProfiler();
     sendReply("success", "resume-component-profiler");
   },
   () => {
-    const obj = { stats: require(10292) /* formatString */.dumpStats() };
+    const obj = { stats: require(10293) /* formatString */.dumpStats() };
     sendReply("success", "dump-component-profiler-stats", obj);
   },
   () => {
     const obj = {};
     let report;
-    if (null != importDefault(16150)) {
-      report = importDefault(16150).requestReport();
-      const obj2 = importDefault(16150);
+    if (null != importDefault(16162)) {
+      report = importDefault(16162).requestReport();
+      const obj2 = importDefault(16162);
     }
     obj.report = report;
     sendReply("success", "dump-jank-stats", obj);
   },
   (multiplier) => {
-    if (null != importDefault(16150)) {
-      const result = importDefault(16150).setJankHeuristicMultiplier(multiplier.multiplier);
-      const obj = importDefault(16150);
+    if (null != importDefault(16162)) {
+      const result = importDefault(16162).setJankHeuristicMultiplier(multiplier.multiplier);
+      const obj = importDefault(16162);
     }
     sendReply("success", "set-jank-multiplier");
   },
   () => {
-    if (null != importDefault(16150)) {
-      importDefault(16150).startTracking();
-      const obj = importDefault(16150);
+    if (null != importDefault(16162)) {
+      importDefault(16162).startTracking();
+      const obj = importDefault(16162);
     }
     sendReply("success", "start-jank-stats");
   },

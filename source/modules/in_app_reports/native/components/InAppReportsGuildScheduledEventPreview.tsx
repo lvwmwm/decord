@@ -1,10 +1,10 @@
-// Module ID: 12333
-// Function ID: 95996
+// Module ID: 12334
+// Function ID: 96001
 // Name: GuildScheduledEventPreview
 // Dependencies: [31, 27, 1838, 33, 4131, 689, 566, 3975, 4127, 1212, 5513, 2]
 // Exports: default
 
-// Module 12333 (GuildScheduledEventPreview)
+// Module 12334 (GuildScheduledEventPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";

@@ -1,10 +1,10 @@
-// Module ID: 13837
-// Function ID: 106084
+// Module ID: 13838
+// Function ID: 106089
 // Name: FamilyCenterActivityPage
-// Dependencies: [31, 27, 33, 4131, 689, 6200, 5121, 13838, 13840, 13850, 11049, 13854, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 6200, 5121, 13839, 13841, 13851, 11050, 13855, 2]
 // Exports: default
 
-// Module 13837 (FamilyCenterActivityPage)
+// Module 13838 (FamilyCenterActivityPage)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,16 +33,16 @@ export default function FamilyCenterActivityPage() {
   const activeLinkUserIds = obj.useActiveLinkUserIds();
   obj = { bottom: true };
   const obj1 = { style: tmp.container };
-  const items = [callback(importDefault(13838), {}), ];
+  const items = [callback(importDefault(13839), {}), ];
   if (0 === activeLinkUserIds.length) {
     const obj2 = {};
-    const items1 = [callback(importDefault(13840), {}), callback(importDefault(13850), {}), ];
-    const obj3 = { style: tmp.dataConfirmation, children: callback(importDefault(11049), {}) };
+    const items1 = [callback(importDefault(13841), {}), callback(importDefault(13851), {}), ];
+    const obj3 = { style: tmp.dataConfirmation, children: callback(importDefault(11050), {}) };
     items1[2] = callback(closure_3, obj3);
     obj2.children = items1;
     let tmp9 = callback2(closure_6, obj2);
   } else {
-    tmp9 = callback(importDefault(13854), {});
+    tmp9 = callback(importDefault(13855), {});
   }
   items[1] = tmp9;
   obj1.children = items;

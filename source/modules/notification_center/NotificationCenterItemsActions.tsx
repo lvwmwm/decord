@@ -1,10 +1,10 @@
-// Module ID: 15198
-// Function ID: 115787
+// Module ID: 15211
+// Function ID: 115836
 // Name: _fetchNotificationCenterItems
 // Dependencies: [5, 5872, 653, 686, 4943, 480, 1361, 5874, 507, 3804, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15198 (_fetchNotificationCenterItems)
+// Module 15211 (_fetchNotificationCenterItems)
 import isThrottled from "isThrottled";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

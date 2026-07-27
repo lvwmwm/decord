@@ -1,10 +1,10 @@
-// Module ID: 15049
-// Function ID: 114665
+// Module ID: 15061
+// Function ID: 114711
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 57, 31, 27, 3948, 4017, 1345, 33, 3, 4131, 689, 15050, 4063, 566, 4099, 1212, 5187, 15051, 4127, 7596, 7595, 1273, 4544, 2]
+// Dependencies: [5, 57, 31, 27, 3948, 4017, 1345, 33, 3, 4131, 689, 15062, 4063, 566, 4099, 1212, 5187, 15063, 4127, 7596, 7595, 1273, 4544, 2]
 // Exports: default
 
-// Module 15049 (GuildThemeNuxActionSheet)
+// Module 15061 (GuildThemeNuxActionSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -45,7 +45,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   guildId = guildId.guildId;
   const markAsDismissed = guildId.markAsDismissed;
   const tmp = _createForOfIteratorHelperLoose();
-  let tmp2 = callback2(React.useState(guildId(15050).getInitialGuildThemeNuxSelection), 2);
+  let tmp2 = callback2(React.useState(guildId(15062).getInitialGuildThemeNuxSelection), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
   [tmp5, _isNativeReflectConstruct] = callback2(React.useState(null), 2);
@@ -114,7 +114,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   obj.dismissAccessibilityLabel = intl2.string(guildId(1212).t.cpT0Cq);
   obj.onDismiss = callback3;
   obj.contentStyles = tmp.container;
-  const items7 = [callback3(markAsDismissed(15051), { themeSettings: stateFromStores1, isPersonal: tmp8 }), , , , , , ];
+  const items7 = [callback3(markAsDismissed(15063), { themeSettings: stateFromStores1, isPersonal: tmp8 }), , , , , , ];
   obj = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title };
   const intl3 = guildId(1212).intl;
   obj.children = intl3.string(guildId(1212).t.Q9zFy9);

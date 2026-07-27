@@ -1,5 +1,5 @@
 // Module ID: 5170
-// Function ID: 45005
+// Function ID: 45006
 // Name: TableRowIcon
 // Dependencies: [29, 31, 27, 33, 4131, 689, 4546, 2]
 // Exports: TableRowIcon

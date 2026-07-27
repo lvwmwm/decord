@@ -1,10 +1,10 @@
-// Module ID: 13525
-// Function ID: 104062
+// Module ID: 13526
+// Function ID: 104067
 // Name: getVolumeForSound
 // Dependencies: [4178, 4581, 3804, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 13525 (getVolumeForSound)
+// Module 13526 (getVolumeForSound)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

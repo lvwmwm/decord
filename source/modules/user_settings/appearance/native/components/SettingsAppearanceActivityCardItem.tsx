@@ -1,10 +1,10 @@
-// Module ID: 14243
-// Function ID: 109450
+// Module ID: 14244
+// Function ID: 109455
 // Name: HAPPENING_NOW_BADGE_SIZE
-// Dependencies: [31, 27, 1922, 14244, 33, 3992, 1273, 4131, 689, 624, 7909, 5085, 4127, 1827, 14245, 14246, 14247, 2]
+// Dependencies: [31, 27, 1922, 14245, 33, 3992, 1273, 4131, 689, 624, 7909, 5085, 4127, 1827, 14246, 14247, 14248, 2]
 // Exports: default
 
-// Module 14243 (HAPPENING_NOW_BADGE_SIZE)
+// Module 14244 (HAPPENING_NOW_BADGE_SIZE)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

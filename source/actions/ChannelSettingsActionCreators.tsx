@@ -1,5 +1,5 @@
 // Module ID: 7627
-// Function ID: 61000
+// Function ID: 61001
 // Name: init
 // Dependencies: [5, 7628, 1348, 653, 686, 3983, 6024, 507, 7629, 2]
 // Exports: deleteChannel, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus

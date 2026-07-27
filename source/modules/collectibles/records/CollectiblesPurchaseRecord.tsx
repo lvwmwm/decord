@@ -1,5 +1,5 @@
 // Module ID: 5798
-// Function ID: 50989
+// Function ID: 50990
 // Name: CollectiblesPurchaseRecord
 // Dependencies: [6, 7, 5773, 5774, 5772, 655, 653, 4172, 2]
 

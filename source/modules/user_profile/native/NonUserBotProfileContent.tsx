@@ -1,6 +1,6 @@
 // Module ID: 8313
-// Function ID: 66776
-// Dependencies: [31, 27, 5510, 5188, 33, 8017, 8045, 4320, 3970, 8033, 8305, 8314, 1557, 8015, 8019, 5490, 3831, 8315, 3992, 8042, 8317, 1212, 11890, 2]
+// Function ID: 66777
+// Dependencies: [31, 27, 5510, 5188, 33, 8017, 8045, 4320, 3970, 8033, 8305, 8314, 1557, 8015, 8019, 5490, 3831, 8315, 3992, 8042, 8317, 1212, 11891, 2]
 
 // Module 8313
 import { View } from "get ActivityIndicator";
@@ -119,7 +119,7 @@ const memoResult = require("result").memo(function NonUserBotProfileContent(scro
     const obj9 = { backgroundColor: containerBackground };
     items4[1] = obj9;
     obj8.style = items4;
-    obj7.children = callback(importDefault(11890), obj8);
+    obj7.children = callback(importDefault(11891), obj8);
     items3[1] = callback(View, obj7);
     obj3.children = items3;
     items1[1] = closure_8(View, obj3);

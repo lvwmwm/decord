@@ -1,10 +1,10 @@
-// Module ID: 11196
-// Function ID: 87192
+// Module ID: 11197
+// Function ID: 87197
 // Name: ActivityShelfBadge
 // Dependencies: [31, 27, 653, 33, 4131, 689, 1273, 1882, 4127, 1212, 2]
 // Exports: default
 
-// Module 11196 (ActivityShelfBadge)
+// Module 11197 (ActivityShelfBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

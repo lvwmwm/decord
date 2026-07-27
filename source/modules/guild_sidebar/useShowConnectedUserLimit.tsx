@@ -1,10 +1,10 @@
-// Module ID: 11384
-// Function ID: 88468
+// Module ID: 11385
+// Function ID: 88473
 // Name: formatNumber
 // Dependencies: [653, 8769, 2]
 // Exports: default, useConnectedUserLimitFormatted
 
-// Module 11384 (formatNumber)
+// Module 11385 (formatNumber)
 import { MAX_STAGE_VOICE_USER_LIMIT as closure_2 } from "ME";
 
 function formatNumber(toFixed) {

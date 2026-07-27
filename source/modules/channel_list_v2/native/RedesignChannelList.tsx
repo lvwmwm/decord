@@ -1,27 +1,25 @@
-// Module ID: 15020
-// Function ID: 114474
+// Module ID: 15021
+// Function ID: 114479
 // Name: getInitialPosition
-// Dependencies: [57, 31, 27, 4123, 5750, 14861, 1838, 1907, 653, 33, 1459, 3982, 10864, 4131, 689, 1324, 15021, 15040, 14948, 14059, 15066, 15041, 15068, 14051, 5764, 15039, 5761, 15069, 15073, 5753, 15074, 9851, 14851, 14060, 14860, 1557, 10833, 5449, 15121, 15122, 15135, 7619, 15138, 15140, 566, 15144, 15145, 15146, 15148, 1841, 9290, 15152, 9986, 2]
+// Dependencies: [57, 31, 27, 4123, 5750, 14862, 1838, 1907, 653, 33, 1459, 3982, 10865, 1324, 15022, 15041, 14949, 14060, 15078, 15042, 15080, 5764, 15040, 5761, 15081, 15085, 5753, 15086, 9851, 14852, 14061, 10834, 5449, 15133, 15135, 15148, 7619, 15151, 15153, 566, 15157, 15158, 15044, 15159, 15161, 1841, 9290, 15165, 9986, 2]
 
-// Module 15020 (getInitialPosition)
+// Module 15021 (getInitialPosition)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "t";
-import { View } from "useGuildHasLiveChannelNotice";
+import importAllResult from "setLevels";
+import { View } from "hasGuildActions";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import computeMaxX from "computeMaxX";
-import closure_9 from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_10 from "_isNativeReflectConstruct";
 import ME from "ME";
-import jsxProd from "useYouBarTotalHeight";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ChannelListPanelBackdrop";
 
 let closure_11;
 let closure_12;
 let closure_13;
 let closure_14;
 let closure_15;
-let closure_16;
 const require = arg1;
 function getInitialPosition(arg0, arg1, arg2) {
   const first = callback(arg0.getSectionRowsFromChannel(arg1), 1)[0];
@@ -48,11 +46,11 @@ function GuildChannels(guild) {
   let guildChannelsVersion;
   let startApplicationAccountLinkAuthorization;
   const _require = guild;
-  importDefault = importDefault(rows[42])(guild.guild);
-  const tmp = importDefault(rows[43])(guild.guild);
+  importDefault = importDefault(rows[37])(guild.guild);
+  const tmp = importDefault(rows[38])(guild.guild);
   rows = tmp.rows;
   ({ gameClaimMarkAsDismissed, applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication } = tmp);
-  let obj = _require(rows[44]);
+  let obj = _require(rows[39]);
   const items = [closure_7];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_7.getGuild(guild.guild.id, { guildActionRows: closure_1, channelNoticeRows: rows }));
   ({ guildChannels, guildChannelsVersion } = stateFromStoresObject);
@@ -66,7 +64,7 @@ function GuildChannels(guild) {
     obj["applicationAccountLinkMarkAsDismissed"] = applicationAccountLinkMarkAsDismissed;
     obj["startApplicationAccountLinkAuthorization"] = startApplicationAccountLinkAuthorization;
     obj["accountLinkApplication"] = accountLinkApplication;
-    tmp3 = callback2(closure_18, obj);
+    tmp3 = callback2(closure_16, obj);
   }
   return tmp3;
 }
@@ -74,22 +72,30 @@ function FavoriteChannels(arg0) {
   let guildChannels;
   let shouldShowEmptyState;
   let guild = arg0;
-  let obj = require(15145) /* _createForOfIteratorHelperLoose */;
+  let obj = require(15158) /* _createForOfIteratorHelperLoose */;
   const favoritesGuildChannelList = obj.useFavoritesGuildChannelList();
   ({ guildChannels, shouldShowEmptyState } = favoritesGuildChannelList);
-  if (!obj2.useShouldRenderChannelList()) {
+  let obj1 = require(15157) /* useShouldRenderChannelList */;
+  if (!obj1.useShouldRenderChannelList()) {
     return null;
   } else if (shouldShowEmptyState) {
     obj = {};
+    ({ style: obj4.style, contentInset: obj4.contentInset } = guild);
+    obj = { guild: guild.guild, showExtraButtons: false, canOpenGuildActionSheet: false };
+    const items = [callback2(importDefault(15044), obj), ];
+    obj1 = {};
     guild = guild.guild;
-    obj.guild = guild;
-    let tmp2Result = tmp2(importDefault(15135), obj);
+    obj1.guild = guild;
+    items[1] = callback2(importDefault(15148), obj1);
+    obj.children = items;
+    let tmp7 = callback3(importDefault(15133), obj);
+    const tmp11 = importDefault(15133);
   } else {
-    obj = {};
+    const obj2 = {};
     const merged = Object.assign(guild);
-    obj["guildChannels"] = guildChannels;
-    obj["guildChannelsVersion"] = 0;
-    tmp2Result = tmp2(closure_18, obj);
+    obj2["guildChannels"] = guildChannels;
+    obj2["guildChannelsVersion"] = 0;
+    tmp7 = callback2(closure_16, obj2);
   }
 }
 function ChannelsWrapper(selectedGuildId) {
@@ -100,14 +106,14 @@ function ChannelsWrapper(selectedGuildId) {
   obj.selectedChannelId = 0;
   const merged = Object.assign(selectedGuildId, obj);
   obj = selectedGuildId(566);
-  const items = [closure_9];
+  const items = [_createForOfIteratorHelperLoose];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getGuild(selectedGuildId));
   let obj1 = selectedGuildId(566);
   const items1 = [closure_10];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_10.getVoiceChannelId());
   if (selectedGuildId === closure_12) {
     obj = { style: merged.style };
-    let tmp7Result = callback2(importDefault(15146), obj);
+    let tmp7Result = callback2(importDefault(15159), obj);
   } else {
     if (null != stateFromStores) {
       if (selectedGuildId !== closure_11) {
@@ -122,7 +128,7 @@ function ChannelsWrapper(selectedGuildId) {
           let obj2 = selectedGuildId(9290);
           if (obj2.shouldNSFWGateGuild(selectedGuildId)) {
             obj2 = { style: merged.style, guildId: selectedGuildId };
-            tmp7Result = tmp7(importDefault(15152), obj2);
+            tmp7Result = tmp7(importDefault(15165), obj2);
           } else {
             const obj3 = {};
             const merged2 = Object.assign(merged);
@@ -136,126 +142,74 @@ function ChannelsWrapper(selectedGuildId) {
       }
     }
     const obj4 = { style: merged.style, selectedGuildId };
-    tmp7Result = callback2(importDefault(15148), obj4);
+    tmp7Result = callback2(importDefault(15161), obj4);
   }
   return tmp7Result;
 }
-({ EMPTY_NUX_SERVER: closure_11, MOBILE_GUILD_UPSELL_LIST: closure_12, DM_WIDTH: closure_13 } = ME);
-({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-let obj = { container: { flex: 1, position: "relative", overflow: "hidden" } };
-obj = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.PANEL_BG };
-obj.panelTint = obj;
-obj.listWrapper = { flex: 1 };
-let closure_17 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_18 = importAllResult.memo((contentInset) => {
+({ EMPTY_NUX_SERVER: closure_11, MOBILE_GUILD_UPSELL_LIST: closure_12 } = ME);
+({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
+let closure_16 = importAllResult.memo((gameClaimMarkAsDismissed) => {
+  let contentInset;
   let listBottom;
   let listPaddingBottom;
   let listViewportHeight;
-  contentInset = contentInset.contentInset;
-  const gameClaimMarkAsDismissed = contentInset.gameClaimMarkAsDismissed;
-  const guild = contentInset.guild;
-  const guildChannels = contentInset.guildChannels;
-  const selectedChannelId = contentInset.selectedChannelId;
-  const selectedVoiceChannelId = contentInset.selectedVoiceChannelId;
-  const style = contentInset.style;
-  const applicationAccountLinkMarkAsDismissed = contentInset.applicationAccountLinkMarkAsDismissed;
-  const startApplicationAccountLinkAuthorization = contentInset.startApplicationAccountLinkAuthorization;
-  const accountLinkApplication = contentInset.accountLinkApplication;
-  let tmp = gameClaimMarkAsDismissed(guild[15])("ChannelList");
-  let closure_10 = tmp;
-  let tmp2 = listViewportHeight();
-  let closure_11 = tmp2;
-  let obj = contentInset(guild[16]);
+  let style;
+  gameClaimMarkAsDismissed = gameClaimMarkAsDismissed.gameClaimMarkAsDismissed;
+  const guild = gameClaimMarkAsDismissed.guild;
+  const guildChannels = gameClaimMarkAsDismissed.guildChannels;
+  const selectedChannelId = gameClaimMarkAsDismissed.selectedChannelId;
+  const selectedVoiceChannelId = gameClaimMarkAsDismissed.selectedVoiceChannelId;
+  const applicationAccountLinkMarkAsDismissed = gameClaimMarkAsDismissed.applicationAccountLinkMarkAsDismissed;
+  const startApplicationAccountLinkAuthorization = gameClaimMarkAsDismissed.startApplicationAccountLinkAuthorization;
+  const accountLinkApplication = gameClaimMarkAsDismissed.accountLinkApplication;
+  ({ contentInset, style } = gameClaimMarkAsDismissed);
+  let tmp = guild(guildChannels[13])("ChannelList");
+  let computeMaxX = tmp;
+  let obj = gameClaimMarkAsDismissed(guildChannels[14]);
   const categoryStyles = obj.useCategoryStyles();
-  let tmp4 = gameClaimMarkAsDismissed(guild[17])(guild);
-  const bannerHeight = tmp4.bannerHeight;
-  const bannerWidth = tmp4.bannerWidth;
-  const headerHeight = tmp4.headerHeight;
-  const fontScale = tmp4.fontScale;
-  ({ listBottom, listPaddingBottom, listViewportHeight } = tmp4);
-  const ref = selectedChannelId.useRef(null);
+  const tmp3 = guild(guildChannels[15])(guild);
+  const bannerHeight = tmp3.bannerHeight;
+  const bannerWidth = tmp3.bannerWidth;
+  const headerHeight = tmp3.headerHeight;
+  const fontScale = tmp3.fontScale;
+  ({ listBottom, listPaddingBottom, listViewportHeight } = tmp3);
+  const ref = selectedVoiceChannelId.useRef(null);
   let items = [ref, guildChannels];
-  let effect = selectedChannelId.useEffect(() => {
-    const result = contentInset(guild[18]).registerFastListChannelVisibilityMethod(ref, guildChannels);
+  let effect = selectedVoiceChannelId.useEffect(() => {
+    const result = gameClaimMarkAsDismissed(guildChannels[16]).registerFastListChannelVisibilityMethod(ref, guildChannels);
   }, items);
   const sections = guildChannels.getSections(false);
-  let obj1 = contentInset(guild[19]);
+  let obj1 = gameClaimMarkAsDismissed(guildChannels[17]);
   const items1 = [guildChannels, guild, headerHeight];
-  const callback = selectedChannelId.useCallback(() => {
-    const state = startApplicationAccountLinkAuthorization.getState();
+  const callback = selectedVoiceChannelId.useCallback(() => {
+    const state = tmp.getState();
     state.noteInteraction();
   }, []);
   const items2 = [guild, bannerHeight, bannerWidth];
-  const callback1 = selectedChannelId.useCallback((fastList) => bannerWidth(gameClaimMarkAsDismissed(guild[20]), { fastList, guildChannels, guild, headerHeight }), items1);
-  const callback2 = selectedChannelId.useCallback((scrollPosValue) => bannerWidth(gameClaimMarkAsDismissed(guild[21]), { guild, scrollPosition: scrollPosValue.scrollPosValue, bannerHeight, bannerWidth }, guild.id), items2);
-  const callback3 = selectedChannelId.useCallback(() => {
-    const result = contentInset(guild[22]).logChannelListEndReached();
+  const callback1 = selectedVoiceChannelId.useCallback((fastList) => fontScale(guild(guildChannels[18]), { fastList, guildChannels, guild, headerHeight }), items1);
+  const callback2 = selectedVoiceChannelId.useCallback((scrollPosValue) => fontScale(guild(guildChannels[19]), { guild, scrollPosition: scrollPosValue.scrollPosValue, bannerHeight, bannerWidth }, guild.id), items2);
+  const callback3 = selectedVoiceChannelId.useCallback(() => {
+    const result = gameClaimMarkAsDismissed(guildChannels[20]).logChannelListEndReached();
   }, []);
-  let obj2 = contentInset(guild[23]);
-  const mobileQuestDockHeight = obj2.useMobileQuestDockHeight();
-  const items3 = [contentInset, style, tmp2, mobileQuestDockHeight];
-  const memo = selectedChannelId.useMemo(() => {
-    const items = [tmp2.container, , ];
-    const obj = {};
-    let top;
-    if (null != contentInset) {
-      top = contentInset.top;
-      tmp2 = contentInset;
-    }
-    let num = 0;
-    if (null != top) {
-      num = top;
-    }
-    obj.marginTop = num;
-    let bottom;
-    if (null != contentInset) {
-      bottom = contentInset.bottom;
-    }
-    let num2 = 0;
-    if (null != bottom) {
-      num2 = bottom;
-    }
-    obj.paddingBottom = num2 + mobileQuestDockHeight;
-    let left;
-    if (null != contentInset) {
-      left = contentInset.left;
-    }
-    let num3 = 0;
-    if (null != left) {
-      num3 = left;
-    }
-    obj.marginLeft = num3;
-    let right;
-    if (null != contentInset) {
-      right = contentInset.right;
-    }
-    let num4 = 0;
-    if (null != right) {
-      num4 = right;
-    }
-    obj.marginRight = num4;
-    items[1] = obj;
-    items[2] = style;
-    return items;
-  }, items3);
-  let obj3 = contentInset(guild[24]);
-  const recentlyActiveChannelsEnabled = obj3.useRecentlyActiveChannelsEnabled();
-  const tmp16 = gameClaimMarkAsDismissed(guild[25])(guild.id);
-  let obj4 = contentInset(guild[26]);
-  const optInEnabledForGuild = obj4.useOptInEnabledForGuild(guild.id);
-  let obj5 = contentInset(guild[27]);
-  const guildLiveChannelNoticeInfo = obj5.useGuildLiveChannelNoticeInfo(guild.id);
-  let obj6 = contentInset(guild[28]);
-  const scaledLiveChannelNoticeHeight = obj6.getScaledLiveChannelNoticeHeight(fontScale, guildLiveChannelNoticeInfo);
+  let obj2 = gameClaimMarkAsDismissed(guildChannels[21]);
+  const recentlyActiveChannelsEnabled = obj2.useRecentlyActiveChannelsEnabled();
+  const tmp13 = guild(guildChannels[22])(guild.id);
+  const GuildChannels = tmp13;
+  let obj3 = gameClaimMarkAsDismissed(guildChannels[23]);
+  const optInEnabledForGuild = obj3.useOptInEnabledForGuild(guild.id);
+  let obj4 = gameClaimMarkAsDismissed(guildChannels[24]);
+  const guildLiveChannelNoticeInfo = obj4.useGuildLiveChannelNoticeInfo(guild.id);
+  const externalScrollEventHandler = obj1.useExternalScrollEventHandler({ id: guild.id });
+  const scaledLiveChannelNoticeHeight = gameClaimMarkAsDismissed(guildChannels[25]).getScaledLiveChannelNoticeHeight(fontScale, guildLiveChannelNoticeInfo);
   (function useDrawerAwareScrollToTop(ref) {
     let closure_0 = ref;
-    let navigation = contentInset(guild[10]).useNavigation();
+    let navigation = gameClaimMarkAsDismissed(guildChannels[10]).useNavigation();
     const items = [navigation, ref];
-    const effect = selectedChannelId.useEffect(() => {
+    const effect = selectedVoiceChannelId.useEffect(() => {
       let c0 = -1;
       navigation = navigation.addListener("tabPress", (arg0) => {
         let timeout = arg0;
-        if (null != obj.coerceGuildsRoute(gameClaimMarkAsDismissed(guild[12])())) {
+        if (null != obj.coerceGuildsRoute(guild(guildChannels[12])())) {
           if (-1 === timeout) {
             const _clearTimeout2 = clearTimeout;
             clearTimeout(timeout);
@@ -278,11 +232,11 @@ let closure_18 = importAllResult.memo((contentInset) => {
       };
     }, items);
   })(ref);
-  const items4 = [guildChannels, sections, tmp];
-  const callback4 = selectedChannelId.useCallback((arg0) => {
+  const items3 = [guildChannels, sections, tmp];
+  const callback4 = selectedVoiceChannelId.useCallback((arg0) => {
     const diff = arg0 - 1;
     let tmp2 = diff;
-    if (arg0 <= contentInset(guild[29]).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+    if (arg0 <= gameClaimMarkAsDismissed(guildChannels[26]).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
       tmp2 = diff;
       if (diff >= 0) {
         let tmp4 = diff;
@@ -303,116 +257,112 @@ let closure_18 = importAllResult.memo((contentInset) => {
     }
     let tmp7 = -1 !== tmp2;
     if (tmp7) {
-      tmp7 = !contentInset(guild[30]).getChannelListSectionHasFooterDivider(guildChannels, tmp2, closure_10);
-      const obj = contentInset(guild[30]);
+      tmp7 = !gameClaimMarkAsDismissed(guildChannels[27]).getChannelListSectionHasFooterDivider(guildChannels, tmp2, computeMaxX);
+      const obj = gameClaimMarkAsDismissed(guildChannels[27]);
     }
     return tmp7;
-  }, items4);
-  const items5 = [guildChannels, fontScale, tmp16, scaledLiveChannelNoticeHeight, listViewportHeight, tmp];
-  const items6 = [guildChannels, selectedChannelId, guild, gameClaimMarkAsDismissed, applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication];
-  const callback5 = selectedChannelId.useCallback((section, row) => {
-    let obj = contentInset(guild[30]);
-    obj = { guildChannels, section, row, fontScale, voiceStates: closure_22, liveChannelNoticeHeight: scaledLiveChannelNoticeHeight, listViewportHeight, isRefreshEnabled: closure_10 };
+  }, items3);
+  const items4 = [guildChannels, fontScale, tmp13, scaledLiveChannelNoticeHeight, listViewportHeight, tmp];
+  const items5 = [guildChannels, selectedChannelId, guild, gameClaimMarkAsDismissed, applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication];
+  const callback5 = selectedVoiceChannelId.useCallback((section, row) => {
+    let obj = gameClaimMarkAsDismissed(guildChannels[27]);
+    obj = { guildChannels, section, row, fontScale, voiceStates: closure_18, liveChannelNoticeHeight: scaledLiveChannelNoticeHeight, listViewportHeight, isRefreshEnabled: computeMaxX };
     const channelListItemSize = obj.getChannelListItemSize(obj);
-    return gameClaimMarkAsDismissed(guild[31])(channelListItemSize);
-  }, items5);
-  const items7 = [guildChannels, fontScale, callback4];
-  const callback6 = selectedChannelId.useCallback((section, row) => {
+    return guild(guildChannels[28])(channelListItemSize);
+  }, items4);
+  const items6 = [guildChannels, fontScale, callback4];
+  const callback6 = selectedVoiceChannelId.useCallback((section, row) => {
     let obj = {};
     obj = { guildChannels, section, row, selectedChannelId, guild, gameClaimMarkAsDismissed, applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication };
-    obj.children = contentInset(guild[30]).renderChannelListItem(obj);
-    return bannerWidth(selectedVoiceChannelId, obj);
+    obj.children = gameClaimMarkAsDismissed(guildChannels[27]).renderChannelListItem(obj);
+    return fontScale(applicationAccountLinkMarkAsDismissed, obj);
+  }, items5);
+  const items7 = [guildChannels, recentlyActiveChannelsEnabled, callback4, categoryStyles, tmp];
+  const callback7 = selectedVoiceChannelId.useCallback((section) => {
+    const channelListSectionHeaderSize = gameClaimMarkAsDismissed(guildChannels[27]).getChannelListSectionHeaderSize(guildChannels, section, fontScale, callback4(section));
+    return guild(guildChannels[28])(channelListSectionHeaderSize);
   }, items6);
-  const items8 = [guildChannels, recentlyActiveChannelsEnabled, callback4, categoryStyles, tmp];
-  const callback7 = selectedChannelId.useCallback((section) => {
-    const channelListSectionHeaderSize = contentInset(guild[30]).getChannelListSectionHeaderSize(guildChannels, section, fontScale, callback4(section));
-    return gameClaimMarkAsDismissed(guild[31])(channelListSectionHeaderSize);
+  const items8 = [guildChannels, optInEnabledForGuild, tmp13, selectedChannelId, selectedVoiceChannelId, tmp];
+  const callback8 = selectedVoiceChannelId.useCallback((recentsSectionNumber) => {
+    let obj = gameClaimMarkAsDismissed(guildChannels[27]);
+    obj = { children: obj.renderChannelListSectionHeader(guildChannels, recentsSectionNumber, recentlyActiveChannelsEnabled, callback4(recentsSectionNumber), categoryStyles, computeMaxX) };
+    return fontScale(applicationAccountLinkMarkAsDismissed, obj);
   }, items7);
-  const items9 = [guildChannels, optInEnabledForGuild, tmp16, selectedChannelId, selectedVoiceChannelId, tmp];
-  const callback8 = selectedChannelId.useCallback((recentsSectionNumber) => {
-    let obj = contentInset(guild[30]);
-    obj = { children: obj.renderChannelListSectionHeader(guildChannels, recentsSectionNumber, recentlyActiveChannelsEnabled, callback4(recentsSectionNumber), categoryStyles, closure_10) };
-    return bannerWidth(selectedVoiceChannelId, obj);
+  const items9 = [guildChannels, optInEnabledForGuild, tmp13, selectedChannelId, selectedVoiceChannelId, tmp];
+  const callback9 = selectedVoiceChannelId.useCallback((section) => {
+    let obj = gameClaimMarkAsDismissed(guildChannels[27]);
+    obj = { guildChannels, section, optInChannelsEnabled: optInEnabledForGuild, voiceStates: closure_18, selectedChannelId, selectedVoiceChannelId };
+    const result = obj.calculateVoiceSummary(obj);
+    const channelListSectionFooterSize = gameClaimMarkAsDismissed(guildChannels[27]).getChannelListSectionFooterSize(guildChannels, section, result, computeMaxX);
+    return guild(guildChannels[28])(channelListSectionFooterSize);
   }, items8);
-  const items10 = [guildChannels, optInEnabledForGuild, tmp16, selectedChannelId, selectedVoiceChannelId, tmp];
-  const callback9 = selectedChannelId.useCallback((section) => {
-    let obj = contentInset(guild[30]);
-    obj = { guildChannels, section, optInChannelsEnabled: optInEnabledForGuild, voiceStates: closure_22, selectedChannelId, selectedVoiceChannelId };
+  const items10 = [sections];
+  const callback10 = selectedVoiceChannelId.useCallback((section) => {
+    let obj = gameClaimMarkAsDismissed(guildChannels[27]);
+    obj = { guildChannels, section, optInChannelsEnabled: optInEnabledForGuild, voiceStates: closure_18, selectedChannelId, selectedVoiceChannelId };
     const result = obj.calculateVoiceSummary(obj);
-    const channelListSectionFooterSize = contentInset(guild[30]).getChannelListSectionFooterSize(guildChannels, section, result, closure_10);
-    return gameClaimMarkAsDismissed(guild[31])(channelListSectionFooterSize);
+    obj = { children: gameClaimMarkAsDismissed(guildChannels[27]).renderChannelListSectionFooter(guildChannels, section, ref, result, computeMaxX) };
+    return fontScale(applicationAccountLinkMarkAsDismissed, obj);
   }, items9);
-  const items11 = [sections];
-  const callback10 = selectedChannelId.useCallback((section) => {
-    let obj = contentInset(guild[30]);
-    obj = { guildChannels, section, optInChannelsEnabled: optInEnabledForGuild, voiceStates: closure_22, selectedChannelId, selectedVoiceChannelId };
-    const result = obj.calculateVoiceSummary(obj);
-    obj = { children: contentInset(guild[30]).renderChannelListSectionFooter(guildChannels, section, ref, result, closure_10) };
-    return bannerWidth(selectedVoiceChannelId, obj);
-  }, items10);
-  const items12 = [guildChannels];
-  const memo1 = selectedChannelId.useMemo(() => 0 === sections.reduce((arg0, arg1) => arg0 + arg1, 0), items11);
-  const callback11 = selectedChannelId.useCallback((arg0, section, row) => contentInset(guild[30]).getFastListRecyclerKey(guildChannels, arg0, section, row), items12);
-  const context = selectedChannelId.useContext(gameClaimMarkAsDismissed(guild[32]));
-  let obj7 = contentInset(guild[33]);
-  const youBarTotalHeight = obj7.useYouBarTotalHeight(16);
-  const externalScrollEventHandler = obj1.useExternalScrollEventHandler({ id: guild.id });
-  const youBarTotalHeight1 = contentInset(guild[33]).useYouBarTotalHeight(-16);
+  const items11 = [guildChannels];
+  const memo = selectedVoiceChannelId.useMemo(() => 0 === sections.reduce((arg0, arg1) => arg0 + arg1, 0), items10);
+  const callback11 = selectedVoiceChannelId.useCallback((arg0, section, row) => gameClaimMarkAsDismissed(guildChannels[27]).getFastListRecyclerKey(guildChannels, arg0, section, row), items11);
+  const context = selectedVoiceChannelId.useContext(guild(guildChannels[29]));
+  const obj6 = gameClaimMarkAsDismissed(guildChannels[25]);
+  const youBarTotalHeight = gameClaimMarkAsDismissed(guildChannels[30]).useYouBarTotalHeight(16);
+  const obj7 = gameClaimMarkAsDismissed(guildChannels[30]);
+  const youBarTotalHeight1 = gameClaimMarkAsDismissed(guildChannels[30]).useYouBarTotalHeight(-16);
   obj = {};
-  const obj9 = contentInset(guild[33]);
-  const tmp33 = bannerWidth;
-  obj.profile = contentInset(guild[36]).Profiles.Channels;
+  const obj8 = gameClaimMarkAsDismissed(guildChannels[30]);
+  const tmp30 = fontScale;
+  obj.profile = gameClaimMarkAsDismissed(guildChannels[31]).Profiles.Channels;
   obj = {};
-  obj1 = { style: memo };
-  obj2 = { offsetX: bannerHeight, offsetY: gameClaimMarkAsDismissed(guild[35])().top, parentSpringTranslateX: selectedChannelId.useContext(contentInset(guild[34]).HomeDrawerStateContext).panelSpringTranslateX };
-  const items13 = [bannerWidth(gameClaimMarkAsDismissed(guild[38]), obj2), , ];
-  obj3 = { pointerEvents: "none", style: tmp2.panelTint };
-  items13[1] = bannerWidth(selectedVoiceChannelId, obj3);
-  obj4 = { style: tmp2.listWrapper };
-  const items14 = [bannerWidth(gameClaimMarkAsDismissed(guild[39]), { guild }), ];
-  if (memo1) {
-    obj5 = { guild };
-    let tmp38Result = tmp38(tmp39(tmp40[40]), obj5);
+  obj1 = { style, contentInset };
+  const tmp31 = guild(guildChannels[31]);
+  const tmp32 = fontScale;
+  const tmp33 = listViewportHeight;
+  const items12 = [fontScale(guild(guildChannels[34]), { guild }), ];
+  if (memo) {
+    obj2 = { guild };
+    let tmp35Result = tmp35(tmp36(tmp37[35]), obj2);
   } else {
-    obj6 = { insetEnd: youBarTotalHeight };
-    obj7 = { bottom: youBarTotalHeight1 };
-    obj6.scrollIndicatorInsets = obj7;
-    obj6.waitFor = context;
-    obj6.ref = ref;
-    obj6.chunkBase = listViewportHeight;
-    obj6.stickyHeaderFooter = true;
-    obj6.renderHeader = callback2;
-    obj6.headerSize = tmp4.listTop;
-    obj6.footerSize = listBottom + listPaddingBottom;
-    obj6.endReachedThreshold = listBottom + listPaddingBottom;
-    obj6.onEndReached = callback3;
-    obj6.renderAccessory = callback1;
-    obj6.disableContentWrappers = true;
-    obj6.sections = sections;
-    obj6.stickySectionsVariant = "disabled";
-    obj6.renderSection = callback8;
-    obj6.sectionSize = callback7;
-    obj6.renderItem = callback6;
-    obj6.itemSize = callback5;
-    obj6.renderSectionFooter = callback10;
-    obj6.sectionFooterSize = callback9;
-    obj6.optimizeListItemRender = true;
-    obj6.getRecyclerKey = callback11;
-    obj6.initialScrollSection = sections(guildChannels, selectedChannelId, "section");
-    obj6.initialScrollItem = sections(guildChannels, selectedChannelId, "item");
-    obj6.initialScrollOrientation = "center";
-    obj6.onScroll = callback;
-    obj6.onScrollWorklet = externalScrollEventHandler;
-    tmp38Result = tmp38(tmp39(tmp40[41]), obj6, guild.id);
-    const tmp39Result = tmp39(tmp40[41]);
+    obj3 = { insetEnd: youBarTotalHeight };
+    obj4 = { bottom: youBarTotalHeight1 };
+    obj3.scrollIndicatorInsets = obj4;
+    obj3.waitFor = context;
+    obj3.ref = ref;
+    obj3.chunkBase = listViewportHeight;
+    obj3.stickyHeaderFooter = true;
+    obj3.renderHeader = callback2;
+    obj3.headerSize = tmp3.listTop;
+    obj3.footerSize = listBottom + listPaddingBottom;
+    obj3.endReachedThreshold = listBottom + listPaddingBottom;
+    obj3.onEndReached = callback3;
+    obj3.renderAccessory = callback1;
+    obj3.disableContentWrappers = true;
+    obj3.sections = sections;
+    obj3.stickySectionsVariant = "disabled";
+    obj3.renderSection = callback8;
+    obj3.sectionSize = callback7;
+    obj3.renderItem = callback6;
+    obj3.itemSize = callback5;
+    obj3.renderSectionFooter = callback10;
+    obj3.sectionFooterSize = callback9;
+    obj3.optimizeListItemRender = true;
+    obj3.getRecyclerKey = callback11;
+    obj3.initialScrollSection = recentlyActiveChannelsEnabled(guildChannels, selectedChannelId, "section");
+    obj3.initialScrollItem = recentlyActiveChannelsEnabled(guildChannels, selectedChannelId, "item");
+    obj3.initialScrollOrientation = "center";
+    obj3.onScroll = callback;
+    obj3.onScrollWorklet = externalScrollEventHandler;
+    tmp35Result = tmp35(tmp36(tmp37[36]), obj3, guild.id);
+    const tmp36Result = tmp36(tmp37[36]);
   }
-  items14[1] = tmp38Result;
-  obj4.children = items14;
-  items13[2] = headerHeight(selectedVoiceChannelId, obj4);
-  obj1.children = items13;
-  obj.children = headerHeight(selectedVoiceChannelId, obj1);
-  obj.children = bannerWidth(contentInset(guild[37]).LayerScope, obj);
-  return tmp33(gameClaimMarkAsDismissed(guild[36]), obj);
+  items12[1] = tmp35Result;
+  obj1.children = items12;
+  obj.children = tmp33(guild(guildChannels[33]), obj1);
+  obj.children = tmp32(gameClaimMarkAsDismissed(guildChannels[32]).LayerScope, obj);
+  return tmp30(tmp31, obj);
 });
 const memoResult = importAllResult.memo((arg0) => {
   let obj = {};
@@ -420,7 +370,7 @@ const memoResult = importAllResult.memo((arg0) => {
   const merged = Object.assign(arg0);
   const items = [callback2(ChannelsWrapper, obj), callback2(require(9986) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "channel-list", checkFocusedScreen: "guilds" })];
   obj.children = items;
-  return callback3(closure_16, obj);
+  return callback3(closure_15, obj);
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/channel_list_v2/native/RedesignChannelList.tsx");
 

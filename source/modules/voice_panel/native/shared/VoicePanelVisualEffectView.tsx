@@ -1,9 +1,9 @@
-// Module ID: 15916
-// Function ID: 123050
+// Module ID: 15928
+// Function ID: 123097
 // Name: VoicePanelVisualEffectView
 // Dependencies: [31, 27, 33, 4131, 689, 3835, 1324, 8174, 2]
 
-// Module 15916 (VoicePanelVisualEffectView)
+// Module 15928 (VoicePanelVisualEffectView)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

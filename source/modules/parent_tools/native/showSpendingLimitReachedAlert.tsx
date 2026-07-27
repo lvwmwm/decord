@@ -1,5 +1,5 @@
 // Module ID: 6199
-// Function ID: 55606
+// Function ID: 55607
 // Name: isSpendingLimitError
 // Dependencies: [4030, 3799, 6200, 4472, 1212, 5817, 4141, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert

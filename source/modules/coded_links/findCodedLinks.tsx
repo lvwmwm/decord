@@ -1,5 +1,5 @@
 // Module ID: 4115
-// Function ID: 34037
+// Function ID: 34038
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [4116, 653, 655, 4119, 1445, 4120, 4121, 7711, 4564, 4047, 7819, 4117, 5968, 8881, 8112, 5922, 4989, 2]
 // Exports: findCodedLink, isSuspiciousCodedLink, remainingPathFromDiscordHostMatch

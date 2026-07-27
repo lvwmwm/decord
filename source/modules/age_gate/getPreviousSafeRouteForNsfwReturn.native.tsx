@@ -1,10 +1,10 @@
-// Module ID: 12562
-// Function ID: 97280
+// Module ID: 12563
+// Function ID: 97285
 // Name: getPreviousSafeRouteForNsfwReturn
-// Dependencies: [10192, 1348, 1908, 653, 4346, 7668, 2]
+// Dependencies: [10193, 1348, 1908, 653, 4346, 7668, 2]
 // Exports: default
 
-// Module 12562 (getPreviousSafeRouteForNsfwReturn)
+// Module 12563 (getPreviousSafeRouteForNsfwReturn)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,5 +1,5 @@
 // Module ID: 5710
-// Function ID: 49534
+// Function ID: 49535
 // Name: Chained
 // Dependencies: [6, 7, 2]
 // Exports: chain

@@ -1,9 +1,9 @@
-// Module ID: 15168
-// Function ID: 115542
+// Module ID: 15181
+// Function ID: 115591
 // Name: YouBarMaskedBackground
-// Dependencies: [31, 27, 14058, 33, 4131, 689, 5109, 4555, 666, 3835, 14139, 3992, 4543, 2]
+// Dependencies: [31, 27, 14059, 33, 4131, 689, 5109, 4555, 666, 3835, 14140, 3992, 4543, 2]
 
-// Module 15168 (YouBarMaskedBackground)
+// Module 15181 (YouBarMaskedBackground)
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 import jsxProd from "jsxProd";
@@ -51,9 +51,9 @@ function YouBarAnimatedBackground(arg0) {
   ({ barWidth, backgroundColor } = arg0);
   let obj = require(3835) /* map */;
   const token = obj.useToken(importDefault(689).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp3 = importDefault(14139)(token);
+  const tmp3 = importDefault(14140)(token);
   require = tmp3;
-  const tmp4 = importDefault(14139)(token, YOU_BAR_HEIGHT / 2);
+  const tmp4 = importDefault(14140)(token, YOU_BAR_HEIGHT / 2);
   importDefault = tmp4;
   const tmp = callback3();
   const fn = function u() {

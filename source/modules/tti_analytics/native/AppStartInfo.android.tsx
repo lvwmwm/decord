@@ -1,5 +1,5 @@
 // Module ID: 5904
-// Function ID: 52386
+// Function ID: 52387
 // Name: AppStartInfo
 // Dependencies: [57, 5, 5905, 3989, 2]
 

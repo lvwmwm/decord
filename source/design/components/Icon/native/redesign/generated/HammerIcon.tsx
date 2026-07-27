@@ -1,5 +1,5 @@
 // Module ID: 8956
-// Function ID: 70684
+// Function ID: 70685
 // Name: HammerIcon
 // Dependencies: [31, 33, 689, 3834, 8957, 2]
 // Exports: HammerIcon

@@ -1,5 +1,5 @@
 // Module ID: 8429
-// Function ID: 67290
+// Function ID: 67291
 // Name: EpicGamesNeutralIcon
 // Dependencies: [31, 33, 689, 3834, 8430, 2]
 // Exports: EpicGamesNeutralIcon

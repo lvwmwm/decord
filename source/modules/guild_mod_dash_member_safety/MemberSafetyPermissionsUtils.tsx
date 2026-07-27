@@ -1,5 +1,5 @@
 // Module ID: 6010
-// Function ID: 53602
+// Function ID: 53603
 // Name: getContextForPermission
 // Dependencies: [57, 1391, 1838, 3759, 1850, 3763, 653, 483, 3764, 566, 2]
 // Exports: canBulkBanUser, canPruneGuildMembers, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanBulkBanUser

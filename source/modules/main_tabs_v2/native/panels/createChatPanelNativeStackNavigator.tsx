@@ -1,9 +1,9 @@
-// Module ID: 14786
-// Function ID: 112746
+// Module ID: 14787
+// Function ID: 112751
 // Name: navigatorFactory
-// Dependencies: [31, 33, 1457, 3982, 13148, 9041, 2]
+// Dependencies: [31, 33, 1457, 3982, 13149, 9041, 2]
 
-// Module 14786 (navigatorFactory)
+// Module 14787 (navigatorFactory)
 import result from "result";
 import { jsx } from "jsxProd";
 import Link from "Link";

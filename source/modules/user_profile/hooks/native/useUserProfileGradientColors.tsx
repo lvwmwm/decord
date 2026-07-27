@@ -1,5 +1,5 @@
 // Module ID: 8312
-// Function ID: 66772
+// Function ID: 66773
 // Name: useUserProfileGradientColors
 // Dependencies: [31, 4123, 566, 3843, 5484, 7927, 2]
 // Exports: useUserProfileGradientColors

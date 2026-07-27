@@ -1,5 +1,5 @@
 // Module ID: 5159
-// Function ID: 44957
+// Function ID: 44958
 // Name: useSafeAreaInsetsKeyboardAware
 // Dependencies: [57, 31, 1452, 5160, 5161, 1557, 1453, 477, 1823, 3997, 1555, 5162, 2]
 // Exports: default

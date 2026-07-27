@@ -1,5 +1,5 @@
 // Module ID: 9188
-// Function ID: 72046
+// Function ID: 72047
 // Name: getBatchesToRender
 // Dependencies: [31, 27, 33, 9183, 9178, 7619, 9181, 2]
 

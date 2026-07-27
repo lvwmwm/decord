@@ -1,5 +1,5 @@
 // Module ID: 9281
-// Function ID: 72711
+// Function ID: 72712
 // Name: ToastEmoji
 // Dependencies: [31, 4123, 1853, 33, 4131, 689, 477, 566, 1392, 5150, 4127, 1212, 4529, 3844, 3832, 2]
 // Exports: showDoubleTapEmojiUpdatedToast

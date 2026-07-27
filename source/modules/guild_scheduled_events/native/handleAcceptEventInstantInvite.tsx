@@ -1,5 +1,5 @@
 // Module ID: 9446
-// Function ID: 73747
+// Function ID: 73748
 // Name: handleAcceptEventInstantInvite
 // Dependencies: [5751, 9290, 5968, 6636, 8167, 2]
 // Exports: default

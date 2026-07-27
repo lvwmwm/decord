@@ -1,5 +1,5 @@
 // Module ID: 5066
-// Function ID: 43923
+// Function ID: 43924
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1348, 4813, 1908, 1838, 3759, 5060, 653, 3747, 566, 1360, 4624, 5061, 3764, 1327, 620, 1832, 5067, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel

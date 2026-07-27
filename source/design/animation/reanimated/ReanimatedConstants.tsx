@@ -1,5 +1,5 @@
 // Module ID: 4133
-// Function ID: 34393
+// Function ID: 34394
 // Name: CONFIG_NEVER_ANIMATE
 // Dependencies: [3992, 2]
 

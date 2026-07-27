@@ -1,10 +1,10 @@
-// Module ID: 15501
-// Function ID: 119214
+// Module ID: 15514
+// Function ID: 119263
 // Name: transitionGroupGetItemKey
-// Dependencies: [31, 1452, 33, 4477, 3997, 1555, 477, 15502, 3998, 3983, 5604, 10191, 1454, 4001, 9330, 2]
+// Dependencies: [31, 1452, 33, 4477, 3997, 1555, 477, 15515, 3998, 3983, 5604, 10192, 1454, 4001, 9330, 2]
 // Exports: PortalKeyboardRenderer
 
-// Module 15501 (transitionGroupGetItemKey)
+// Module 15514 (transitionGroupGetItemKey)
 import result from "result";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ function transitionGroupRenderItem(arg0, item, state, cleanUp) {
   let tmp7 = null;
   if (!isAndroidResult) {
     obj = { item, state, cleanUp };
-    tmp7 = jsx(importDefault(15502), { item, state, cleanUp }, arg0);
+    tmp7 = jsx(importDefault(15515), { item, state, cleanUp }, arg0);
   }
   return tmp7;
 }
@@ -69,7 +69,7 @@ export const PortalKeyboardRenderer = function PortalKeyboardRenderer(portal) {
         tmp2 = field.channelId !== id(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
       }
       if (tmp2) {
-        let obj = id(10191);
+        let obj = id(10192);
         tmp2 = obj.getFocusedChannelId() !== field.channelId;
       }
       if (tmp2) {

@@ -1,5 +1,5 @@
 // Module ID: 8437
-// Function ID: 67302
+// Function ID: 67303
 // Name: MinecraftNeutralIcon
 // Dependencies: [31, 27, 33, 689, 3834, 8438, 8439, 8440, 2]
 // Exports: MinecraftNeutralIcon

@@ -1,9 +1,9 @@
-// Module ID: 16601
-// Function ID: 129504
+// Module ID: 16613
+// Function ID: 129551
 // Name: AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition
-// Dependencies: [1194, 10449, 8784, 2]
+// Dependencies: [1194, 10450, 8784, 2]
 
-// Module 16601 (AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition)
+// Module 16613 (AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

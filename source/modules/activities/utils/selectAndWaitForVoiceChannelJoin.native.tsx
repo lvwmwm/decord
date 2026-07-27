@@ -1,10 +1,10 @@
-// Module ID: 10591
-// Function ID: 82555
+// Module ID: 10592
+// Function ID: 82560
 // Name: _isNativeReflectConstruct
 // Dependencies: [5, 7, 6, 15, 17, 18, 162, 1907, 4945, 2]
 // Exports: default
 
-// Module 10591 (_isNativeReflectConstruct)
+// Module 10592 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _wrapNativeSuper from "_wrapNativeSuper";

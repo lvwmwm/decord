@@ -1,10 +1,10 @@
-// Module ID: 10295
-// Function ID: 79594
+// Module ID: 10296
+// Function ID: 79599
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 10285, 5164, 4099, 7597, 5159, 22, 5046, 8759, 8760, 5187, 5186, 1212, 9171, 9173, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 10286, 5164, 4099, 7597, 5159, 22, 5046, 8759, 8760, 5187, 5186, 1212, 9171, 9173, 2]
 // Exports: default
 
-// Module 10295 (BugReporterFeatureActionSheet)
+// Module 10296 (BugReporterFeatureActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -40,9 +40,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(10285);
+  let obj = item(10286);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(10285).getFeatureId(feature);
+  const featureId1 = item(10286).getFeatureId(feature);
   obj = {
     start,
     end,

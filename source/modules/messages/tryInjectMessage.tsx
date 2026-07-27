@@ -1,10 +1,10 @@
-// Module ID: 11083
-// Function ID: 86103
+// Module ID: 11084
+// Function ID: 86108
 // Name: createInjectedInGameNuxMessage
-// Dependencies: [1194, 653, 5986, 4352, 1360, 11084, 11085, 2]
+// Dependencies: [1194, 653, 5986, 4352, 1360, 11085, 11086, 2]
 // Exports: tryCreateInjectedMessage
 
-// Module 11083 (createInjectedInGameNuxMessage)
+// Module 11084 (createInjectedInGameNuxMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -44,7 +44,7 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
                 num2 = recipientFlags;
               }
               tmp4 = null;
-              if (!obj2.hasFlag(num2, require(11084) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
+              if (!obj2.hasFlag(num2, require(11085) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
                 tmp4 = null;
                 if (!map.has(closure_0.id)) {
                   const result = map.set(closure_0.id, id.id);
@@ -55,10 +55,10 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
                     num4 = recipientFlags2;
                   }
                   const obj3 = require(1360) /* hasFlag */;
-                  const setFlagResult = require(1360) /* hasFlag */.setFlag(num4, require(11084) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
-                  const result1 = importDefault(11085).updatePrivateChannelRecipientFlags(closure_0.id, setFlagResult);
+                  const setFlagResult = require(1360) /* hasFlag */.setFlag(num4, require(11085) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
+                  const result1 = importDefault(11086).updatePrivateChannelRecipientFlags(closure_0.id, setFlagResult);
                   tmp4 = tmp12;
-                  const obj4 = importDefault(11085);
+                  const obj4 = importDefault(11086);
                 }
               }
               obj2 = require(1360) /* hasFlag */;

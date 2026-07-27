@@ -1,5 +1,5 @@
 // Module ID: 4186
-// Function ID: 36032
+// Function ID: 36033
 // Name: makeButton
 // Dependencies: [653, 1852, 1212, 2]
 // Exports: getApplicationFramerate, getApplicationResolution

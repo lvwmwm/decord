@@ -1,10 +1,10 @@
-// Module ID: 11604
-// Function ID: 90165
+// Module ID: 11605
+// Function ID: 90170
 // Name: useGameServerFeaturedGameNames
 // Dependencies: [4020, 5639, 2]
 // Exports: default
 
-// Module 11604 (useGameServerFeaturedGameNames)
+// Module 11605 (useGameServerFeaturedGameNames)
 import NewGamesCoachmarkContent from "NewGamesCoachmarkContent";
 
 let closure_2;

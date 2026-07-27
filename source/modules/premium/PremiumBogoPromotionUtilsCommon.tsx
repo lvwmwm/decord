@@ -1,10 +1,10 @@
-// Module ID: 12431
-// Function ID: 96439
+// Module ID: 12432
+// Function ID: 96444
 // Name: isUserEligibleBasedOnCurrentOrPreviousSubs
-// Dependencies: [5, 1850, 3783, 6157, 5821, 6207, 1852, 653, 3713, 3777, 477, 4369, 6234, 12432, 12433, 624, 6188, 6204, 12434, 12435, 4452, 6507, 2]
+// Dependencies: [5, 1850, 3783, 6157, 5821, 6207, 1852, 653, 3713, 3777, 477, 4369, 6234, 12433, 12434, 624, 6188, 6204, 12435, 12436, 4452, 6507, 2]
 // Exports: maybeFetchActiveBogoPromotion, useIsEligibleForBogoPromotion
 
-// Module 12431 (isUserEligibleBasedOnCurrentOrPreviousSubs)
+// Module 12432 (isUserEligibleBasedOnCurrentOrPreviousSubs)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -108,10 +108,10 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
   }
   let obj = require(6234) /* items */;
   const isPaymentsBlocked = obj.useIsPaymentsBlocked();
-  const promotion = require(12432) /* useEligibleActiveOutboundPromotions */.useBogoPromotion().promotion;
-  const obj2 = require(12432) /* useEligibleActiveOutboundPromotions */;
-  const bogoPromotionGateEnabled = require(12433) /* apexExperiment */.useBogoPromotionGateEnabled("bogo eligibility hook");
-  const obj3 = require(12433) /* apexExperiment */;
+  const promotion = require(12433) /* useEligibleActiveOutboundPromotions */.useBogoPromotion().promotion;
+  const obj2 = require(12433) /* useEligibleActiveOutboundPromotions */;
+  const bogoPromotionGateEnabled = require(12434) /* apexExperiment */.useBogoPromotionGateEnabled("bogo eligibility hook");
+  const obj3 = require(12434) /* apexExperiment */;
   const items = [closure_5];
   const stateFromStoresObject = require(624) /* defaultAreStatesEqual */.useStateFromStoresObject(items, () => ({ mostRecentSubscription: outer1_5.getMostRecentPremiumTypeSubscription(), premiumSubscription: outer1_5.getPremiumTypeSubscription(), previousPremiumSubscription: outer1_5.getPreviousPremiumTypeSubscription() }));
   ({ mostRecentSubscription, premiumSubscription, previousPremiumSubscription } = stateFromStoresObject);
@@ -137,15 +137,15 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
     num2 = valueOfResult - timestamp;
   }
   obj.delay = num2;
-  importDefault(12434)(obj);
+  importDefault(12435)(obj);
   let isAndroidResult = !require(4369) /* isTablet */.isMobile;
   if (!isAndroidResult) {
     isAndroidResult = require(477) /* set */.isAndroid();
     const obj9 = require(477) /* set */;
   }
-  const tmp10 = importDefault(12434);
+  const tmp10 = importDefault(12435);
   const tmp15 = isUserEligibleBasedOnCurrentOrPreviousSubs({ experimentEnabled: bogoPromotionGateEnabled, premiumSubscription, mostRecentSubscription, previousPremiumSubscription });
-  let bogoMarketingMaterialsEnabled = require(12435) /* apexExperiment */.useBogoMarketingMaterialsEnabled("bogo marketing eligibility hook");
+  let bogoMarketingMaterialsEnabled = require(12436) /* apexExperiment */.useBogoMarketingMaterialsEnabled("bogo marketing eligibility hook");
   let tmp17 = !tmp9;
   if (timestamp <= valueOfResult) {
     if (!flag) {

@@ -1,5 +1,5 @@
 // Module ID: 4535
-// Function ID: 39828
+// Function ID: 39829
 // Name: useVisualEffectViewOverrides
 // Dependencies: [621, 682, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides

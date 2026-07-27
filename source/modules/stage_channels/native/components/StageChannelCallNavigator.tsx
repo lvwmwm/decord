@@ -1,13 +1,13 @@
-// Module ID: 10615
-// Function ID: 82725
+// Module ID: 10616
+// Function ID: 82730
 // Name: ModeratorViewOverlay
-// Dependencies: [57, 31, 27, 482, 33, 10616, 3992, 4543, 689, 10617, 10675, 10619, 10177, 10176, 9837, 9981, 4324, 10676, 10744, 3843, 10446, 10752, 10753, 10622, 10758, 10766, 10770, 10801, 10802, 4131, 10803, 10638, 2]
+// Dependencies: [57, 31, 27, 482, 33, 10617, 3992, 4543, 689, 10618, 10676, 10620, 10178, 10177, 9837, 9981, 4324, 10677, 10745, 3843, 10447, 10753, 10754, 10623, 10759, 10767, 10771, 10802, 10803, 4131, 10804, 10639, 2]
 // Exports: default
 
-// Module 10615 (ModeratorViewOverlay)
+// Module 10616 (ModeratorViewOverlay)
 import _slicedToArray from "_slicedToArray";
 import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet";
-import get_ActivityIndicator from "module_10801";
+import get_ActivityIndicator from "module_10802";
 import { ThemeTypes } from "sum";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -101,16 +101,16 @@ function JoinStageOverlay(channel) {
   items[1] = obj1;
   items[2] = animatedStyle;
   obj.style = items;
-  obj.children = callback2(importDefault(10675), { channel: channel.channel });
+  obj.children = callback2(importDefault(10676), { channel: channel.channel });
   return callback2(importDefault(3992).View, obj);
 }
 function StagePromptWrapper(channel) {
   const obj = { children: callback2(StagePromptInner, { channel: channel.channel }) };
-  return callback2(require(10803) /* RootThemeContextProvider */.DisableCustomTheme, obj);
+  return callback2(require(10804) /* RootThemeContextProvider */.DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
   const tmp = _createForOfIteratorHelperLoose();
-  return callback2(require(10638) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: _createForOfIteratorHelperLoose().startStagePrompt });
+  return callback2(require(10639) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: _createForOfIteratorHelperLoose().startStagePrompt });
 }
 ({ StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);

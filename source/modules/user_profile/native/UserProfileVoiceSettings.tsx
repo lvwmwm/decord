@@ -1,10 +1,10 @@
-// Module ID: 11968
-// Function ID: 92513
+// Module ID: 11969
+// Function ID: 92518
 // Name: UserVoiceSettings
-// Dependencies: [31, 27, 4579, 4178, 3759, 653, 482, 33, 4131, 8045, 566, 4315, 8843, 10709, 8770, 5509, 1212, 8801, 10736, 11969, 6575, 11971, 6580, 6673, 4127, 11649, 8858, 7575, 4099, 8828, 8824, 2]
+// Dependencies: [31, 27, 4579, 4178, 3759, 653, 482, 33, 4131, 8045, 566, 4315, 8843, 10710, 8770, 5509, 1212, 8801, 10737, 11970, 6575, 11972, 6580, 6673, 4127, 11650, 8858, 7575, 4099, 8828, 8824, 2]
 // Exports: default
 
-// Module 11968 (UserVoiceSettings)
+// Module 11969 (UserVoiceSettings)
 import "set";
 import { View } from "Form";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -230,7 +230,7 @@ function CurrentUserVoiceSettings(channel) {
     if (stateFromStores) {
       let MicrophoneIcon = tmp18(8801).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp18(10736).MicrophoneIcon;
+      MicrophoneIcon = tmp18(10737).MicrophoneIcon;
     }
     obj1.icon = MicrophoneIcon;
     obj1.onPress = function onPress() {

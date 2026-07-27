@@ -1,10 +1,10 @@
-// Module ID: 14526
-// Function ID: 110960
+// Module ID: 14527
+// Function ID: 110965
 // Name: Radio
-// Dependencies: [57, 31, 27, 653, 33, 4131, 4127, 7596, 7595, 5501, 5502, 8950, 9024, 5164, 13153, 10710, 4659, 4542, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 4127, 7596, 7595, 5501, 5502, 8950, 9024, 5164, 13154, 10711, 4659, 4542, 2]
 // Exports: default
 
-// Module 14526 (Radio)
+// Module 14527 (Radio)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -118,8 +118,8 @@ function SliderDemo() {
   let obj = {};
   const items = [callback2(require(4127) /* Text */.Text, { variant: "heading-lg/bold", children: "Slider" }), ];
   obj = { start: true, end: true, label: "Volume" };
-  obj = { startIcon: callback2(require(10710) /* VoiceXIcon */.VoiceXIcon, {}), endIcon: callback2(require(4659) /* VoiceNormalIcon */.VoiceNormalIcon, {}), onValueChange: NOOP };
-  obj.subLabel = callback2(require(13153) /* Slider */.Slider, obj);
+  obj = { startIcon: callback2(require(10711) /* VoiceXIcon */.VoiceXIcon, {}), endIcon: callback2(require(4659) /* VoiceNormalIcon */.VoiceNormalIcon, {}), onValueChange: NOOP };
+  obj.subLabel = callback2(require(13154) /* Slider */.Slider, obj);
   items[1] = callback2(require(5164) /* TableRowInner */.TableRow, obj);
   obj.children = items;
   return callback3(closure_8, obj);

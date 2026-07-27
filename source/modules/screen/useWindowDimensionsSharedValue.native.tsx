@@ -1,10 +1,10 @@
-// Module ID: 14768
-// Function ID: 112586
+// Module ID: 14769
+// Function ID: 112591
 // Name: getWindowDimensionsWorklet
-// Dependencies: [3992, 1450, 11097, 9980, 2]
+// Dependencies: [3992, 1450, 11098, 9980, 2]
 // Exports: default
 
-// Module 14768 (getWindowDimensionsWorklet)
+// Module 14769 (getWindowDimensionsWorklet)
 import module_3992 from "module_3992";
 import useWindowDimensions from "useWindowDimensions";
 import module_3992 from "module_3992";

@@ -1,8 +1,8 @@
-// Module ID: 10172
-// Function ID: 78620
-// Dependencies: [31, 27, 10173, 33, 4131, 689, 9837, 1557, 10178, 22, 10177, 4067, 4663, 10179, 6622, 10348, 4661, 1212, 1273, 9966, 11808, 2]
+// Module ID: 10173
+// Function ID: 78625
+// Dependencies: [31, 27, 10174, 33, 4131, 689, 9837, 1557, 10179, 22, 10178, 4067, 4663, 10180, 6622, 10349, 4661, 1212, 1273, 9966, 11809, 2]
 
-// Module 10172
+// Module 10173
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { useIsVoiceChatFocused } from "resetFocusTimer";
@@ -42,7 +42,7 @@ const memoResult = importAllResult.memo((channel) => {
     const messages = obj.fetchMessages(obj);
   }, items);
   const top = guild_id(1557)().top;
-  let obj = id(10178);
+  let obj = id(10179);
   const voiceChatNavigationContext = obj.useVoiceChatNavigationContext();
   let openVoice;
   if (null != voiceChatNavigationContext) {
@@ -51,7 +51,7 @@ const memoResult = importAllResult.memo((channel) => {
   if (null == openVoice) {
     openVoice = guild_id(22).noop;
   }
-  let obj1 = id(10177);
+  let obj1 = id(10178);
   const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel.channel);
   obj = {};
   let str = "no-hide-descendants";
@@ -100,7 +100,7 @@ const memoResult = importAllResult.memo((channel) => {
   items4[1] = obj5;
   obj4.style = items4;
   items2[2] = callback(View, obj4);
-  items2[3] = callback(guild_id(10348), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
+  items2[3] = callback(guild_id(10349), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
   const obj6 = {};
   const items5 = [tmp.chatHeader, ];
   const obj7 = { top };
@@ -128,11 +128,11 @@ const memoResult = importAllResult.memo((channel) => {
   const tmp23 = View;
   const tmp24 = closure_7;
   const tmp25 = View;
-  items6[1] = callback(View, { style: tmp.chatHeaderTitleContainer, children: callback(id(11808).ChannelTitle, { guildId: guild_id, channelId: id }) });
+  items6[1] = callback(View, { style: tmp.chatHeaderTitleContainer, children: callback(id(11809).ChannelTitle, { guildId: guild_id, channelId: id }) });
   obj6.children = items6;
   items2[4] = tmp24(tmp25, obj6);
   obj.children = items2;
-  items1[1] = tmp13(id(10179).ChannelContainer, obj);
+  items1[1] = tmp13(id(10180).ChannelContainer, obj);
   obj.children = items1;
   return tmp11(tmp12, obj);
 });

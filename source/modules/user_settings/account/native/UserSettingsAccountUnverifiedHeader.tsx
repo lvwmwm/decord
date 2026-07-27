@@ -1,5 +1,5 @@
 // Module ID: 9162
-// Function ID: 71903
+// Function ID: 71904
 // Name: handleOpenEmailVerification
 // Dependencies: [31, 1850, 33, 4131, 689, 9109, 1212, 566, 4661, 4127, 2]
 // Exports: default

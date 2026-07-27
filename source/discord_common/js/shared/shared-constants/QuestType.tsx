@@ -1,5 +1,5 @@
 // Module ID: 5958
-// Function ID: 53042
+// Function ID: 53043
 // Name: QuestType
 // Dependencies: [2]
 

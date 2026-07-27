@@ -1,9 +1,9 @@
-// Module ID: 16031
-// Function ID: 123846
+// Module ID: 16043
+// Function ID: 123893
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 10183, 1850, 5765, 1212, 2199, 1871, 10185, 686, 5828, 16026, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 10184, 1850, 5765, 1212, 2199, 1871, 10186, 686, 5828, 16038, 5078, 2]
 
-// Module 16031 (_isNativeReflectConstruct)
+// Module 16043 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
@@ -36,12 +36,12 @@ function dispatchWarningIfNeeded(rule) {
     const date = new Date(startAtMs);
     const stringResult = intl.string(importDefault(2199)["0JlDg0"]);
     const items = [require(1871) /* _createForOfIteratorHelperLoose */.JS_DAY_TO_DAY_OF_WEEK[date.getDay(date)]];
-    const obj2 = require(10185) /* _createForOfIteratorHelperLoose */;
-    const formatDaysResult = require(10185) /* _createForOfIteratorHelperLoose */.formatDays(items);
+    const obj2 = require(10186) /* _createForOfIteratorHelperLoose */;
+    const formatDaysResult = require(10186) /* _createForOfIteratorHelperLoose */.formatDays(items);
     const _HermesInternal = HermesInternal;
-    const obj3 = require(10185) /* _createForOfIteratorHelperLoose */;
-    const trimmed = "" + formatDaysResult + " " + require(10185) /* _createForOfIteratorHelperLoose */.getScheduleRuleDateRange(rule.rule).trim();
-    const str2 = "" + formatDaysResult + " " + require(10185) /* _createForOfIteratorHelperLoose */.getScheduleRuleDateRange(rule.rule);
+    const obj3 = require(10186) /* _createForOfIteratorHelperLoose */;
+    const trimmed = "" + formatDaysResult + " " + require(10186) /* _createForOfIteratorHelperLoose */.getScheduleRuleDateRange(rule.rule).trim();
+    const str2 = "" + formatDaysResult + " " + require(10186) /* _createForOfIteratorHelperLoose */.getScheduleRuleDateRange(rule.rule);
     const obj = { type: "RESTRICTED_HOURS_WARNING", title: stringResult, subtitle: trimmed };
     importDefault(686).dispatch(obj);
     const obj4 = importDefault(686);
@@ -105,7 +105,7 @@ function checkAndUpdateModal() {
     let obj = importDefault(686);
     obj = { type: "RESTRICTED_HOURS_STATE_CHANGE", isInRestrictedHours: c11 };
     obj.dispatch(obj);
-    const obj3 = require(16026) /* closeRestrictedHoursModal */;
+    const obj3 = require(16038) /* closeRestrictedHoursModal */;
     if (c11) {
       const result = obj3.openRestrictedHoursModal();
     } else {

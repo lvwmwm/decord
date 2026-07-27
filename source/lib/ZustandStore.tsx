@@ -1,5 +1,5 @@
 // Module ID: 3999
-// Function ID: 33171
+// Function ID: 33172
 // Name: defaultStatesAreEqual
 // Dependencies: [677, 4000, 682, 2]
 // Exports: createZustandStore

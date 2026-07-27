@@ -1,12 +1,12 @@
-// Module ID: 15163
-// Function ID: 115449
+// Module ID: 15176
+// Function ID: 115498
 // Name: RemoveMultiAccountUserButton
-// Dependencies: [57, 5, 31, 27, 1194, 3971, 1850, 11445, 11446, 15164, 653, 33, 9041, 4131, 689, 566, 1273, 4472, 1212, 11449, 4661, 14262, 14794, 3992, 4132, 8063, 675, 5121, 15165, 14795, 10326, 15166, 5175, 7575, 11245, 5517, 9050, 10123, 14820, 5588, 9123, 14819, 2]
+// Dependencies: [57, 5, 31, 27, 1194, 3971, 1850, 11446, 11447, 15177, 653, 33, 9041, 4131, 689, 566, 1273, 4472, 1212, 11450, 4661, 14263, 14795, 3992, 4132, 8063, 675, 5121, 15178, 14796, 10327, 15179, 5175, 7575, 11246, 5517, 9050, 10123, 14821, 5588, 9123, 14820, 2]
 
-// Module 15163 (RemoveMultiAccountUserButton)
+// Module 15176 (RemoveMultiAccountUserButton)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import importAllResult from "module_15166";
+import importAllResult from "module_15179";
 import { View } from "SafeAreaPaddingView";
 import closure_8 from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
@@ -65,7 +65,7 @@ function RemoveMultiAccountUserButton(user) {
       return _handlePressRemove(...arguments);
     };
     obj1 = { color: importDefault(689).colors.ICON_FEEDBACK_CRITICAL };
-    obj.children = callback2(user(14262).CircleMinusIcon, obj1);
+    obj.children = callback2(user(14263).CircleMinusIcon, obj1);
     return callback2(user(4661).PressableOpacity, obj);
   }
 }

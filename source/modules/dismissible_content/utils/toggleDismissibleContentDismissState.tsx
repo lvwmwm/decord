@@ -1,10 +1,10 @@
-// Module ID: 14646
-// Function ID: 111653
+// Module ID: 14647
+// Function ID: 111658
 // Name: toggleDismissibleContentShared
-// Dependencies: [31, 3948, 13059, 1346, 1336, 1331, 21, 566, 3947, 664, 1335, 2]
+// Dependencies: [31, 3948, 13060, 1346, 1336, 1331, 21, 566, 3947, 664, 1335, 2]
 // Exports: default
 
-// Module 14646 (toggleDismissibleContentShared)
+// Module 14647 (toggleDismissibleContentShared)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 function toggleDismissibleContentShared(dismissibleContent, arg1, guildId) {
@@ -12,7 +12,7 @@ function toggleDismissibleContentShared(dismissibleContent, arg1, guildId) {
   if (!arg1) {
     tmp = dismissibleContent;
   }
-  const result = require(13059) /* handleDCShownToUser */.overrideDCFLastDCDismissed(tmp, guildId);
+  const result = require(13060) /* handleDCShownToUser */.overrideDCFLastDCDismissed(tmp, guildId);
 }
 require("result").useCallback;
 let result = require("handleDCShownToUser").fileFinishedImporting("modules/dismissible_content/utils/toggleDismissibleContentDismissState.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 3979
-// Function ID: 33003
+// Function ID: 33004
 // Name: createPresetAppearance
 // Dependencies: [482, 666, 3980, 2]
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSingleColorGuildThemeGradientColors

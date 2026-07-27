@@ -1,5 +1,5 @@
 // Module ID: 4303
-// Function ID: 37689
+// Function ID: 37690
 // Name: ROBLOX_PROTOCOL_URL
 // Dependencies: [2]
 // Exports: ROBLOX_DEFERRED_WEB_URL

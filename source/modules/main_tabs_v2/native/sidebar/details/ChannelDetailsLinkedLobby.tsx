@@ -1,10 +1,10 @@
-// Module ID: 15480
-// Function ID: 119020
+// Module ID: 15493
+// Function ID: 119069
 // Name: ChannelDetailsLinkedLobby
 // Dependencies: [31, 27, 653, 33, 4131, 689, 5468, 4127, 1212, 1921, 2]
 // Exports: default
 
-// Module 15480 (ChannelDetailsLinkedLobby)
+// Module 15493 (ChannelDetailsLinkedLobby)
 import "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";

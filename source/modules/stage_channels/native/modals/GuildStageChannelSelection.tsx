@@ -1,5 +1,5 @@
 // Module ID: 8282
-// Function ID: 66507
+// Function ID: 66508
 // Name: GuildStageChannelSelection
 // Dependencies: [31, 3768, 1850, 33, 4131, 8186, 4321, 1820, 4099, 8184, 1935, 1212, 4127, 2]
 // Exports: default

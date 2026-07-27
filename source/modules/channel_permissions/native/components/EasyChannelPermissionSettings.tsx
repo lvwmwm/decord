@@ -1,10 +1,10 @@
-// Module ID: 15564
-// Function ID: 119915
+// Module ID: 15576
+// Function ID: 119962
 // Name: ChannelPermissionSettingsBasicView
-// Dependencies: [57, 5, 31, 27, 15565, 1348, 1918, 1911, 1838, 3759, 3768, 1850, 6661, 653, 33, 4131, 689, 1456, 566, 8215, 8216, 8217, 1212, 4321, 4471, 8223, 3764, 4542, 5501, 5502, 1273, 5164, 11245, 10855, 5093, 4325, 8162, 8687, 15566, 15568, 2]
+// Dependencies: [57, 5, 31, 27, 15577, 1348, 1918, 1911, 1838, 3759, 3768, 1850, 6661, 653, 33, 4131, 689, 1456, 566, 8215, 8216, 8217, 1212, 4321, 4471, 8223, 3764, 4542, 5501, 5502, 1273, 5164, 11246, 10856, 5093, 4325, 8162, 8687, 15578, 15580, 2]
 // Exports: default
 
-// Module 15564 (ChannelPermissionSettingsBasicView)
+// Module 15576 (ChannelPermissionSettingsBasicView)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import TableRowInner from "TableRowInner";

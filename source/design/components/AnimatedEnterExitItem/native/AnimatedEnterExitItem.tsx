@@ -1,5 +1,5 @@
 // Module ID: 8374
-// Function ID: 66972
+// Function ID: 66973
 // Name: AnimatedRenderItem
 // Dependencies: [31, 33, 3992, 4477, 2]
 // Exports: default

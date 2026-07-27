@@ -1,5 +1,5 @@
 // Module ID: 5671
-// Function ID: 48672
+// Function ID: 48673
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1316, 4567, 4157, 662, 4215, 22, 566, 686, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands

@@ -1,10 +1,10 @@
-// Module ID: 13885
-// Function ID: 106317
+// Module ID: 13886
+// Function ID: 106322
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [31, 27, 33, 4131, 1273, 689, 6200, 13857, 4127, 2]
+// Dependencies: [31, 27, 33, 4131, 1273, 689, 6200, 13858, 4127, 2]
 // Exports: default
 
-// Module 13885 (FamilyCenterRequestorDetails)
+// Module 13886 (FamilyCenterRequestorDetails)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,7 +31,7 @@ export default function FamilyCenterRequestorDetails(otherUser) {
   obj = { avatarStyle: tmp.avatar, user: otherUser, guildId: undefined, disablePlaceholder: true, avatarDecoration: otherUser.avatarDecoration };
   const items = [callback(require(1273) /* Button */.Avatar, obj), ];
   const obj1 = { style: tmp.detailsContainer };
-  const items1 = [callback(importDefault(13857), { user: otherUser }), ];
+  const items1 = [callback(importDefault(13858), { user: otherUser }), ];
   const obj2 = { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText };
   items1[1] = callback(require(4127) /* Text */.Text, obj2);
   obj1.children = items1;

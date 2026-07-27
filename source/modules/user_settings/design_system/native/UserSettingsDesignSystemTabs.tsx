@@ -1,10 +1,10 @@
-// Module ID: 14502
-// Function ID: 110800
+// Module ID: 14503
+// Function ID: 110805
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 3835, 3975, 8162, 4542, 11645, 11797, 8685, 4544, 5502, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 4127, 3835, 3975, 8162, 4542, 11646, 11798, 8685, 4544, 5502, 2]
 // Exports: default
 
-// Module 14502 (UserSettingsDesignSystemTabs)
+// Module 14503 (UserSettingsDesignSystemTabs)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -101,11 +101,11 @@ export default function UserSettingsDesignSystemTabs() {
   obj = { style: tmp11.container, onLayout: callback };
   obj1 = { spacing: 24 };
   obj2 = {};
-  let items1 = [callback3(_require(11645).Tabs, { state: segmentedControlState, grow: first1 }), ];
+  let items1 = [callback3(_require(11646).Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp20 = first2;
   if (first2) {
     const obj3 = { state: segmentedControlState, colors: items };
-    tmp20 = callback3(first(11797), obj3);
+    tmp20 = callback3(first(11798), obj3);
   }
   items1[1] = tmp20;
   obj2.children = items1;

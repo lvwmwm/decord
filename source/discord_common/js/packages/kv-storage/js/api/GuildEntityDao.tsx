@@ -1,5 +1,5 @@
 // Module ID: 1896
-// Function ID: 21235
+// Function ID: 21236
 // Name: GuildEntityDao
 // Dependencies: [6, 7, 1888, 1890, 2]
 

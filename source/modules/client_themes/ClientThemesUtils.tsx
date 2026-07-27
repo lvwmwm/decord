@@ -1,5 +1,5 @@
 // Module ID: 3974
-// Function ID: 32915
+// Function ID: 32916
 // Name: getThemeForColor
 // Dependencies: [3944, 1281, 482, 688, 2]
 // Exports: areThemesEqualForGradientThemes, getBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName

@@ -1,5 +1,5 @@
 // Module ID: 9485
-// Function ID: 73974
+// Function ID: 73975
 // Name: castNativeSyntheticEventData
 // Dependencies: [2]
 // Exports: castNativeSyntheticEventData, getNativeSyntheticEventData

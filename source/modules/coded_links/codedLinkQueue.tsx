@@ -1,10 +1,10 @@
-// Module ID: 16155
-// Function ID: 125233
+// Module ID: 16167
+// Function ID: 125280
 // Name: importDefaultResult1
-// Dependencies: [3, 16156, 2]
+// Dependencies: [3, 16168, 2]
 // Exports: queueMessageLinkFetch
 
-// Module 16155 (importDefaultResult1)
+// Module 16167 (importDefaultResult1)
 import importDefaultResult from "timestamp";
 import importDefaultResult1 from "_isNativeReflectConstruct";
 

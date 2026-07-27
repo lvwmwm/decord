@@ -1,10 +1,10 @@
-// Module ID: 10171
-// Function ID: 78615
+// Module ID: 10172
+// Function ID: 78620
 // Name: ChannelVoiceChatModal
-// Dependencies: [31, 33, 4321, 4324, 9040, 4655, 4012, 10172, 2]
+// Dependencies: [31, 33, 4321, 4324, 9040, 4655, 4012, 10173, 2]
 // Exports: default
 
-// Module 10171 (ChannelVoiceChatModal)
+// Module 10172 (ChannelVoiceChatModal)
 import result from "result";
 import { jsx } from "jsxProd";
 

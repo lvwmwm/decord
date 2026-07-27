@@ -1,5 +1,5 @@
 // Module ID: 6495
-// Function ID: 58068
+// Function ID: 58069
 // Name: getPremiumManagementMethod
 // Dependencies: [653, 482, 33, 3, 4472, 1212, 477, 1553, 6496, 6499, 2]
 // Exports: getExternalManagementMessage

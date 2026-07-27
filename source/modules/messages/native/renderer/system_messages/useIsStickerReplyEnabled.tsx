@@ -1,5 +1,5 @@
 // Module ID: 7720
-// Function ID: 61633
+// Function ID: 61634
 // Name: computeIsStickerReplyEnabled
 // Dependencies: [1918, 3759, 1850, 653, 5996, 2]
 // Exports: computeIsStickerReplyEnabled

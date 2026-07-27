@@ -1,5 +1,5 @@
 // Module ID: 5588
-// Function ID: 47439
+// Function ID: 47440
 // Name: dispatchLogout
 // Dependencies: [5, 5589, 1194, 5590, 653, 5591, 3, 4125, 686, 3983, 1198, 4338, 4943, 480, 507, 4030, 5592, 5593, 587, 684, 2]
 
@@ -34,9 +34,9 @@ function dispatchLogout(arg0) {
     throw error;
   });
 }
-function handleLogout(source, CHANNELResult) {
-  let DEFAULT_LOGGED_OUT = CHANNELResult;
-  if (CHANNELResult === undefined) {
+function handleLogout(source, ME) {
+  let DEFAULT_LOGGED_OUT = ME;
+  if (ME === undefined) {
     DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
   }
   dispatchLogout();

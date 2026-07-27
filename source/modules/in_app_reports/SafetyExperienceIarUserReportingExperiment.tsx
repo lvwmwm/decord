@@ -1,10 +1,10 @@
-// Module ID: 11898
-// Function ID: 92098
+// Module ID: 11899
+// Function ID: 92103
 // Name: items
 // Dependencies: [4043, 2]
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 11898 (items)
+// Module 11899 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "user", id: "2023-09_iar_user_reporting", label: "Safety Experience IAR User Reporting", defaultConfig: { enabled: false } };

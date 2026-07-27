@@ -1,10 +1,10 @@
-// Module ID: 13009
-// Function ID: 100793
+// Module ID: 13010
+// Function ID: 100798
 // Name: items
-// Dependencies: [31, 33, 491, 12987, 8463, 2]
+// Dependencies: [31, 33, 491, 12988, 8463, 2]
 // Exports: GuildBadgeBunny
 
-// Module 13009 (items)
+// Module 13010 (items)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -30,7 +30,7 @@ export const GuildBadgeBunny = function GuildBadgeBunny(primaryTintColor) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryTintColor, obj);
   const memo = React.useMemo(() => "badge-bunny-clip-" + outer1_0(outer1_1[2]).v4(), []);
-  let obj1 = require(12987) /* getTransformedBadgeColors */;
+  let obj1 = require(12988) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_5, primaryTintColor: primaryTintColor.primaryTintColor, primaryTintLuminances: closure_6, primaryLuminanceWeights: items };
   const primaryColorsTransformed = obj1.getTransformedBadgeColors(obj).primaryColorsTransformed;
   obj = {};

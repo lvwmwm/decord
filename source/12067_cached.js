@@ -1,7 +1,7 @@
 // Module ID: 12067
-// Function ID: 93935
+// Function ID: 93929
 // Name: cached
-// Dependencies: [12015]
+// Dependencies: [12016]
 
 // Module 12067 (cached)
 const self = this;
@@ -63,10 +63,12 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "k\u00FD t\u1EF1", verb: "c\u00F3" }, file: { unit: "byte", verb: "c\u00F3" }, array: { unit: "ph\u1EA7n t\u1EED", verb: "c\u00F3" }, set: { unit: "ph\u1EA7n t\u1EED", verb: "c\u00F3" } };
-      let closure_1 = { regex: "\u0111\u1EA7u v\u00E0o", email: "\u0111\u1ECBa ch\u1EC9 email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ng\u00E0y gi\u1EDD ISO", date: "ng\u00E0y ISO", time: "gi\u1EDD ISO", duration: "kho\u1EA3ng th\u1EDDi gian ISO", ipv4: "\u0111\u1ECBa ch\u1EC9 IPv4", ipv6: "\u0111\u1ECBa ch\u1EC9 IPv6", cidrv4: "d\u1EA3i IPv4", cidrv6: "d\u1EA3i IPv6", base64: "chu\u1ED7i m\u00E3 h\u00F3a base64", base64url: "chu\u1ED7i m\u00E3 h\u00F3a base64url", json_string: "chu\u1ED7i JSON", e164: "s\u1ED1 E.164", jwt: "JWT", template_literal: "\u0111\u1EA7u v\u00E0o" };
-      let closure_2 = { nan: "NaN", number: "s\u1ED1", array: "m\u1EA3ng" };
+      let closure_0 = { string: { unit: "belgi", verb: "bo\u2018lishi kerak" }, file: { unit: "bayt", verb: "bo\u2018lishi kerak" }, array: { unit: "element", verb: "bo\u2018lishi kerak" }, set: { unit: "element", verb: "bo\u2018lishi kerak" } };
+      let closure_1 = { regex: "kirish", email: "elektron pochta manzili", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO sana va vaqti", date: "ISO sana", time: "ISO vaqt", duration: "ISO davomiylik", ipv4: "IPv4 manzil", ipv6: "IPv6 manzil", mac: "MAC manzil", cidrv4: "IPv4 diapazon", cidrv6: "IPv6 diapazon", base64: "base64 kodlangan satr", base64url: "base64url kodlangan satr", json_string: "JSON satr", e164: "E.164 raqam", jwt: "JWT", template_literal: "kirish" };
+      let closure_2 = { nan: "NaN", number: "raqam", array: "massiv" };
       return (code) => {
+        let minimum;
+        let origin;
         code = code.code;
         if ("invalid_type" === code) {
           let expected = closure_2[code.expected];
@@ -74,117 +76,113 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp50 = parsedTypeResult;
+          let tmp48 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp50 = tmp49;
+            tmp48 = tmp47;
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "\u0110\u1EA7u v\u00E0o kh\u00F4ng h\u1EE3p l\u1EC7: mong \u0111\u1EE3i instanceof " + code.expected + ", nh\u1EADn \u0111\u01B0\u1EE3c " + tmp50;
+            let combined = "Noto\u2018g\u2018ri kirish: kutilgan instanceof " + code.expected + ", qabul qilingan " + tmp48;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "\u0110\u1EA7u v\u00E0o kh\u00F4ng h\u1EE3p l\u1EC7: mong \u0111\u1EE3i " + expected + ", nh\u1EADn \u0111\u01B0\u1EE3c " + tmp50;
+            combined = "Noto\u2018g\u2018ri kirish: kutilgan " + expected + ", qabul qilingan " + tmp48;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "\u0110\u1EA7u v\u00E0o kh\u00F4ng h\u1EE3p l\u1EC7: mong \u0111\u1EE3i " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Noto\u2018g\u2018ri kirish: kutilgan " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "T\u00F9y ch\u1ECDn kh\u00F4ng h\u1EE3p l\u1EC7: mong \u0111\u1EE3i m\u1ED9t trong c\u00E1c gi\u00E1 tr\u1ECB " + closure_2.joinValues(code.values, "|");
+            combined1 = "Noto\u2018g\u2018ri variant: quyidagilardan biri kutilgan " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str31 = "<";
+          let str34 = "<";
           if (code.inclusive) {
-            str31 = "<=";
+            str34 = "<=";
           }
-          const tmp24 = getSizing(code.origin);
+          const tmp26 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str32 = "gi\u00E1 tr\u1ECB";
-          if (tmp24) {
-            if (tmp26) {
-              str32 = origin2;
-            }
-            const verb = tmp24.verb;
-            let str = code.maximum.toString();
-            const unit = tmp24.unit;
-            let str37 = "ph\u1EA7n t\u1EED";
-            if (null != unit) {
-              str37 = unit;
+          let str35 = "qiymat";
+          if (tmp26) {
+            if (tmp28) {
+              str35 = origin2;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Qu\u00E1 l\u1EDBn: mong \u0111\u1EE3i " + str32 + " " + verb + " " + str31 + str + " " + str37;
-            const str36 = code.maximum;
+            let combined2 = "Juda katta: kutilgan " + str35 + " " + str34 + code.maximum.toString() + " " + tmp26.unit + " " + tmp26.verb;
+            const str39 = code.maximum;
           } else {
-            let tmp27 = str32;
-            if (tmp26) {
-              tmp27 = origin2;
+            let tmp29 = str35;
+            if (tmp28) {
+              tmp29 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Qu\u00E1 l\u1EDBn: mong \u0111\u1EE3i " + tmp27 + " " + str31 + code.maximum.toString();
-            const str33 = code.maximum;
+            combined2 = "Juda katta: kutilgan " + tmp29 + " " + str34 + code.maximum.toString();
+            const str36 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str21 = ">";
+          let str26 = ">";
           if (code.inclusive) {
-            str21 = ">=";
+            str26 = ">=";
           }
           const tmp15 = getSizing(code.origin);
-          const origin = code.origin;
+          ({ origin, minimum } = code);
+          let str = minimum.toString();
           if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Qu\u00E1 nh\u1ECF: mong \u0111\u1EE3i " + origin + " " + tmp15.verb + " " + str21 + code.minimum.toString() + " " + tmp15.unit;
-            const str25 = code.minimum;
+            let combined3 = "Juda kichik: kutilgan " + origin + " " + str26 + str + " " + tmp15.unit + " " + tmp15.verb;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Qu\u00E1 nh\u1ECF: mong \u0111\u1EE3i " + origin + " " + str21 + code.minimum.toString();
-            const str22 = code.minimum;
+            combined3 = "Juda kichik: kutilgan " + origin + " " + str26 + str;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Chu\u1ED7i kh\u00F4ng h\u1EE3p l\u1EC7: ph\u1EA3i b\u1EAFt \u0111\u1EA7u b\u1EB1ng \"" + code.prefix + "\"";
+            let combined4 = "Noto\u2018g\u2018ri satr: \"" + code.prefix + "\" bilan boshlanishi kerak";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Chu\u1ED7i kh\u00F4ng h\u1EE3p l\u1EC7: ph\u1EA3i k\u1EBFt th\u00FAc b\u1EB1ng \"" + code.suffix + "\"";
+            combined4 = "Noto\u2018g\u2018ri satr: \"" + code.suffix + "\" bilan tugashi kerak";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Chu\u1ED7i kh\u00F4ng h\u1EE3p l\u1EC7: ph\u1EA3i bao g\u1ED3m \"" + code.includes + "\"";
+            combined4 = "Noto\u2018g\u2018ri satr: \"" + code.includes + "\" ni o\u2018z ichiga olishi kerak";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Chu\u1ED7i kh\u00F4ng h\u1EE3p l\u1EC7: ph\u1EA3i kh\u1EDBp v\u1EDBi m\u1EABu " + code.pattern;
+            combined4 = "Noto\u2018g\u2018ri satr: " + code.pattern + " shabloniga mos kelishi kerak";
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "" + format + " kh\u00F4ng h\u1EE3p l\u1EC7";
+            combined4 = "Noto\u2018g\u2018ri " + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "S\u1ED1 kh\u00F4ng h\u1EE3p l\u1EC7: ph\u1EA3i l\u00E0 b\u1ED9i s\u1ED1 c\u1EE7a " + code.divisor;
+          return "Noto\u2018g\u2018ri raqam: " + code.divisor + " ning karralisi bo\u2018lishi kerak";
         } else if ("unrecognized_keys" === code) {
+          let str9 = "";
+          if (code.keys.length > 1) {
+            str9 = "lar";
+          }
           const _HermesInternal3 = HermesInternal;
-          return "Kh\u00F3a kh\u00F4ng \u0111\u01B0\u1EE3c nh\u1EADn d\u1EA1ng: " + closure_2.joinValues(code.keys, ", ");
+          return "Noma\u2019lum kalit" + str9 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Kh\u00F3a kh\u00F4ng h\u1EE3p l\u1EC7 trong " + code.origin;
+            return "" + code.origin + " dagi kalit noto\u2018g\u2018ri";
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "Gi\u00E1 tr\u1ECB kh\u00F4ng h\u1EE3p l\u1EC7 trong " + code.origin;
+                return "" + code.origin + " da noto\u2018g\u2018ri qiymat";
               }
             }
-            return "\u0110\u1EA7u v\u00E0o kh\u00F4ng h\u1EE3p l\u1EC7";
+            return "Noto\u2018g\u2018ri kirish";
           }
         }
       };

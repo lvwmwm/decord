@@ -1,5 +1,5 @@
 // Module ID: 6155
-// Function ID: 55136
+// Function ID: 55137
 // Name: isSoundboardSectionNitroLocked
 // Dependencies: [4586, 6147, 668, 44, 2]
 // Exports: getUpsellType, isSoundboardSectionNitroLocked

@@ -1,5 +1,5 @@
 // Module ID: 9974
-// Function ID: 77191
+// Function ID: 77192
 // Name: VoicePanelControlsModes
 // Dependencies: [2]
 

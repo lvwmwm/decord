@@ -1,10 +1,10 @@
-// Module ID: 10189
-// Function ID: 78841
+// Module ID: 10190
+// Function ID: 78846
 // Name: isChannelCurrentlyVisible
 // Dependencies: [5846, 1907, 3948, 2]
 // Exports: isChannelCurrentlyVisible
 
-// Module 10189 (isChannelCurrentlyVisible)
+// Module 10190 (isChannelCurrentlyVisible)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";

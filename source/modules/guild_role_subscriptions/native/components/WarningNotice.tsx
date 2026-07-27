@@ -1,10 +1,10 @@
-// Module ID: 16436
-// Function ID: 128279
+// Module ID: 16448
+// Function ID: 128326
 // Name: WarningNotice
 // Dependencies: [31, 27, 33, 4131, 689, 5085, 9104, 4127, 4544, 2]
 // Exports: default
 
-// Module 16436 (WarningNotice)
+// Module 16448 (WarningNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

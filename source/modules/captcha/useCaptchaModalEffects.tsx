@@ -1,10 +1,10 @@
-// Module ID: 16021
-// Function ID: 123779
+// Module ID: 16033
+// Function ID: 123826
 // Name: useCaptchaModalEffects
 // Dependencies: [31, 653, 4560, 9403, 675, 2]
 // Exports: default
 
-// Module 16021 (useCaptchaModalEffects)
+// Module 16033 (useCaptchaModalEffects)
 import result from "result";
 import { AnalyticEvents } from "ME";
 

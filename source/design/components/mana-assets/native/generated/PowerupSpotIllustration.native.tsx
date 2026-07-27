@@ -1,5 +1,5 @@
 // Module ID: 7338
-// Function ID: 60242
+// Function ID: 60243
 // Name: PowerupSpotIllustration
 // Dependencies: [33, 5085, 7339, 2]
 // Exports: PowerupSpotIllustration

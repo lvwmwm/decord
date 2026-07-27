@@ -1,10 +1,10 @@
-// Module ID: 15033
-// Function ID: 114593
+// Module ID: 15034
+// Function ID: 114597
 // Name: getVoiceUserHeight
-// Dependencies: [31, 27, 4123, 33, 1273, 9849, 4131, 689, 10223, 566, 3992, 4132, 1392, 15034, 8799, 8801, 8795, 8797, 6580, 6557, 8985, 2]
+// Dependencies: [31, 27, 4123, 33, 1273, 9849, 4131, 689, 10224, 566, 3992, 4132, 1392, 15035, 8799, 8801, 8795, 8797, 6580, 6557, 8985, 2]
 // Exports: getVoiceUserHeight
 
-// Module 15033 (getVoiceUserHeight)
+// Module 15034 (getVoiceUserHeight)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -110,7 +110,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
     const items2 = [callback(require(1273) /* Button */.Avatar, obj3), , , , , , , ];
     let obj4 = { variant: "text-sm/medium", color: "redesign-channel-name-muted-text" };
     const merged = Object.assign(arg0);
-    items2[1] = callback(importDefault(15034), obj4);
+    items2[1] = callback(importDefault(15035), obj4);
     if (disabled) {
       items2[2] = null;
       if (disabled) {
@@ -177,7 +177,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
         tmp19 = callback(require(8801) /* MicrophoneSlashIcon */.MicrophoneSlashIcon, obj13);
       }
     }
-    const tmp13 = importDefault(15034);
+    const tmp13 = importDefault(15035);
     tmp5 = closure_6;
   }
   return tmp5Result;

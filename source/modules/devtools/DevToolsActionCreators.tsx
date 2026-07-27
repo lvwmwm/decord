@@ -1,10 +1,10 @@
-// Module ID: 13572
-// Function ID: 104447
+// Module ID: 13573
+// Function ID: 104452
 // Name: updateDevToolsSettings
 // Dependencies: [5950, 686, 2]
 // Exports: clearAnalyticsLog, openDevTools, toggleDisplayDevTools
 
-// Module 13572 (updateDevToolsSettings)
+// Module 13573 (updateDevToolsSettings)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 function updateDevToolsSettings(settings) {

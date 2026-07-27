@@ -1,5 +1,5 @@
 // Module ID: 6124
-// Function ID: 54959
+// Function ID: 54960
 // Name: ALLOWED_TYPES
 // Dependencies: [6111, 2]
 // Exports: isAllowedType

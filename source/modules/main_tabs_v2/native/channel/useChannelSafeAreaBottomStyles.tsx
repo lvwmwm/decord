@@ -1,10 +1,10 @@
-// Module ID: 10360
-// Function ID: 80009
+// Module ID: 10361
+// Function ID: 80014
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [31, 4809, 3760, 1348, 4178, 4203, 653, 1355, 4131, 689, 10361, 4575, 3997, 624, 1555, 477, 1324, 3835, 8756, 2]
+// Dependencies: [31, 4809, 3760, 1348, 4178, 4203, 653, 1355, 4131, 689, 10362, 4575, 3997, 624, 1555, 477, 1324, 3835, 8756, 2]
 // Exports: default
 
-// Module 10360 (useChannelSafeAreaBottomStyles)
+// Module 10361 (useChannelSafeAreaBottomStyles)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

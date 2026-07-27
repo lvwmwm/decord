@@ -1,10 +1,10 @@
-// Module ID: 13492
-// Function ID: 103765
+// Module ID: 13493
+// Function ID: 103770
 // Name: getInitialSubscriptionPayload
-// Dependencies: [1347, 5658, 5932, 653, 4156, 10566, 4664, 13455, 5955, 2]
+// Dependencies: [1347, 5658, 5932, 653, 4156, 10567, 4664, 13456, 5955, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 13492 (getInitialSubscriptionPayload)
+// Module 13493 (getInitialSubscriptionPayload)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -72,9 +72,9 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     }
     return tmp30;
   } else if (RPCEvents.THERMAL_STATE_UPDATE === outer1_2) {
-    const thermalState = require(10566) /* _getThermalState */.getThermalState();
+    const thermalState = require(10567) /* _getThermalState */.getThermalState();
     let tmp23 = null;
-    if (thermalState !== require(10566) /* _getThermalState */.ThermalStates.UNHANDLED) {
+    if (thermalState !== require(10567) /* _getThermalState */.ThermalStates.UNHANDLED) {
       let obj2 = { thermal_state: thermalState };
       tmp23 = obj2;
     }
@@ -85,7 +85,7 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     obj3.screen_orientation = obj4.getIsScreenLandscape() ? closure_7.LANDSCAPE : closure_7.PORTRAIT;
     return obj3;
   } else if (RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === outer1_2) {
-    obj2 = require(13455) /* activityInstanceConnectedParticipants */;
+    obj2 = require(13456) /* activityInstanceConnectedParticipants */;
     return obj2.activityInstanceConnectedParticipants();
   } else if (RPCEvents.QUEST_ENROLLMENT_STATUS_UPDATE === outer1_2) {
     const quest_id = outer1_3.quest_id;

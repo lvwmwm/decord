@@ -1,5 +1,5 @@
 // Module ID: 9420
-// Function ID: 73504
+// Function ID: 73505
 // Name: getCollectiblesQuestReward
 // Dependencies: [5770, 9421, 5937, 5930, 3356, 1212, 9422, 9423, 9424, 9425, 9426, 4980, 2]
 // Exports: getCollectibleQuestRewardDuration, getCollectibleQuestRewardExtendableExpirationDate, getCollectiblesQuestRewardItem, getDefaultPlatform, getDefaultRewardName, getDefaultRewardNameWithArticle, getInGameQuestReward, getPlatformString, getQuestOrbMultiplierForUser, getQuestPrimaryReward, getRewardCodeQuestReward, getVirtualCurrencyRewardPremiumOrbQuantity, hasCollectiblesQuestReward, hasInGameQuestReward, hasQuestRewardCode, isCollectibleQuestRewardPermanentWithPremiumSubscription, isTieredRewardCodeQuest

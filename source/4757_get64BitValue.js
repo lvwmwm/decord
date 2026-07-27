@@ -1,5 +1,5 @@
 // Module ID: 4757
-// Function ID: 41329
+// Function ID: 41330
 // Name: get64BitValue
 // Dependencies: []
 

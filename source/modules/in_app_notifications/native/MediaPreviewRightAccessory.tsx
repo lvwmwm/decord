@@ -1,10 +1,10 @@
-// Module ID: 10271
-// Function ID: 79392
+// Module ID: 10272
+// Function ID: 79397
 // Name: VideoBadge
-// Dependencies: [31, 27, 4123, 10200, 33, 4131, 689, 8065, 4127, 3835, 477, 4534, 4640, 8665, 624, 5834, 9826, 10233, 7845, 8055, 1449, 5085, 5849, 5852, 8080, 9573, 1273, 7909, 3992, 2]
+// Dependencies: [31, 27, 4123, 10201, 33, 4131, 689, 8065, 4127, 3835, 477, 4534, 4640, 8665, 624, 5834, 9826, 10234, 7845, 8055, 1449, 5085, 5849, 5852, 8080, 9573, 1273, 7909, 3992, 2]
 // Exports: MediaPreviewRightAccessory
 
-// Module 10271 (VideoBadge)
+// Module 10272 (VideoBadge)
 import result from "result";
 import get_ActivityIndicator from "SolidCutout";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -94,18 +94,18 @@ function SinglePreviewableMedia(arg0) {
   const shouldAgeVerifyForExplicitMedia = obj1.useShouldAgeVerifyForExplicitMedia();
   let obj2 = require(9826) /* useEnabledHarmTypesBitmaskForChannelAndAuthorId */;
   const enabledHarmTypesBitmaskForMessage = obj2.useEnabledHarmTypesBitmaskForMessage(message);
-  if (require(10233) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VOICE_MESSAGE === type) {
+  if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VOICE_MESSAGE === type) {
     obj = {};
     obj = { width: size, height: size };
     obj.style = obj;
     obj.children = icon;
     return callback(View, obj);
   } else {
-    if (require(10233) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.AUDIO !== type) {
-      if (require(10233) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.FILE !== type) {
-        if (require(10233) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.IMAGE !== type) {
-          if (require(10233) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO !== type) {
-            if (require(10233) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.GIF === type) {
+    if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.AUDIO !== type) {
+      if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.FILE !== type) {
+        if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.IMAGE !== type) {
+          if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO !== type) {
+            if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.GIF === type) {
               const video = media.video;
               if (null != video) {
                 const url = video.url;
@@ -160,7 +160,7 @@ function SinglePreviewableMedia(arg0) {
                 url2 = thumbnail.url;
                 const tmp16 = require(5849) /* _createForOfIteratorHelperLoose */;
               }
-            } else if (require(10233) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.STICKER === type) {
+            } else if (require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.STICKER === type) {
               const obj9 = {};
               const items2 = [tmp.mediaThumbnailContainer, ];
               const obj10 = { width: size, height: size };
@@ -186,7 +186,7 @@ function SinglePreviewableMedia(arg0) {
                 const obj27 = require(8055) /* _createForOfIteratorHelperLoose */;
                 const obj13 = { src: attachmentUrl, sourceWidth: width, sourceHeight: height, targetWidth: 2 * size, targetHeight: 2 * size, animated: false };
                 let str5;
-                if (type === require(10233) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO) {
+                if (type === require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO) {
                   str5 = "png";
                 }
                 obj13.format = str5;
@@ -205,7 +205,7 @@ function SinglePreviewableMedia(arg0) {
                 obj17.resizeMode = "cover";
                 const items4 = [callback(importDefault(5085), obj17), ];
                 let tmp39 = null;
-                if (type === require(10233) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO) {
+                if (type === require(10234) /* _createForOfIteratorHelperLoose */.PreviewableMediaTypes.VIDEO) {
                   tmp39 = callback(VideoBadge, {});
                 }
                 items4[1] = tmp39;
@@ -334,7 +334,7 @@ export const MediaPreviewRightAccessory = function MediaPreviewRightAccessory(ar
   let accessoryExitProgressSV;
   let message;
   ({ message, accessoryExitProgressSV } = arg0);
-  let obj = require(10233) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10234) /* _createForOfIteratorHelperLoose */;
   const previewableMedia = obj.usePreviewableMedia(message);
   if (0 === previewableMedia.length) {
     return null;

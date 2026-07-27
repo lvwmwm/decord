@@ -1,10 +1,10 @@
-// Module ID: 11292
-// Function ID: 87815
+// Module ID: 11293
+// Function ID: 87820
 // Name: MentionableIcon
-// Dependencies: [57, 31, 4123, 1911, 1850, 482, 33, 4131, 689, 566, 11293, 6717, 11294, 1273, 11295, 11296, 11290, 4099, 11294, 1935, 2]
+// Dependencies: [57, 31, 4123, 1911, 1850, 482, 33, 4131, 689, 566, 11294, 6717, 11295, 1273, 11296, 11297, 11291, 4099, 11295, 1935, 2]
 // Exports: default
 
-// Module 11292 (MentionableIcon)
+// Module 11293 (MentionableIcon)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,23 +24,23 @@ function MentionableIcon(mentionable) {
   const tmp = _createForOfIteratorHelperLoose();
   obj.icon = jsx(require(6717) /* UserCircleIcon */.UserCircleIcon, { size: "sm", color: "interactive-text-default" });
   obj.wrapperStyle = tmp.iconWrapper;
-  const tmp4 = jsx(importDefault(11293), {});
+  const tmp4 = jsx(importDefault(11294), {});
   if (null == mentionable) {
     return tmp4;
   } else {
     const type = mentionable.type;
-    if (require(11294) /* AppLauncherMentionableListActionSheet */.MentionableItemTypes.USER === type) {
+    if (require(11295) /* AppLauncherMentionableListActionSheet */.MentionableItemTypes.USER === type) {
       obj = { user: mentionable.result.user, guildId: mentionable.guildId, animate: !stateFromStores, size: require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32 };
       return jsx(require(1273) /* Button */.Avatar, { user: mentionable.result.user, guildId: mentionable.guildId, animate: !stateFromStores, size: require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32 });
-    } else if (require(11294) /* AppLauncherMentionableListActionSheet */.MentionableItemTypes.ROLE === type) {
+    } else if (require(11295) /* AppLauncherMentionableListActionSheet */.MentionableItemTypes.ROLE === type) {
       const obj1 = { role: mentionable.result };
-      return jsx(require(11295) /* getRoleColor */.RoleIcon, { role: mentionable.result });
+      return jsx(require(11296) /* getRoleColor */.RoleIcon, { role: mentionable.result });
     } else {
-      const GLOBAL = require(11294) /* AppLauncherMentionableListActionSheet */.MentionableItemTypes.GLOBAL;
+      const GLOBAL = require(11295) /* AppLauncherMentionableListActionSheet */.MentionableItemTypes.GLOBAL;
       return tmp4;
     }
   }
-  const tmp3 = importDefault(11293);
+  const tmp3 = importDefault(11294);
 }
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };

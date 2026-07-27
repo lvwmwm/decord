@@ -1,10 +1,10 @@
-// Module ID: 15411
-// Function ID: 117666
+// Module ID: 15424
+// Function ID: 117715
 // Name: ChannelContentComponent
-// Dependencies: [31, 27, 10222, 4327, 33, 4131, 477, 10223, 4624, 15412, 4653, 7570, 15028, 4127, 2]
+// Dependencies: [31, 27, 10223, 4327, 33, 4131, 477, 10224, 4624, 15425, 4653, 7570, 15029, 4127, 2]
 // Exports: renderChannelContent
 
-// Module 15411 (ChannelContentComponent)
+// Module 15424 (ChannelContentComponent)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
@@ -35,7 +35,7 @@ function ChannelContentComponent(arg0) {
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, muted, connected, needSubscriptionToAccess } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(10223) /* getLayoutStyles */;
+  let obj = require(10224) /* getLayoutStyles */;
   let tmp3 = null != channel;
   const layoutStyles = obj.getLayoutStyles(layout);
   if (tmp3) {
@@ -80,7 +80,7 @@ function ChannelContentComponent(arg0) {
   obj5.resolvedUnreadSetting = resolvedUnreadSetting;
   obj5.connected = connected;
   obj5.layout = layout;
-  const items1 = [callback(importDefault(15412), obj5), ];
+  const items1 = [callback(importDefault(15425), obj5), ];
   let tmp22Result = tmp3;
   if (!tmp3) {
     tmp22Result = isNSFWResult;
@@ -111,7 +111,7 @@ function ChannelContentComponent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj10 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = callback(importDefault(15028), obj10);
+      isSubscriptionGated = callback(importDefault(15029), obj10);
     }
     items3[2] = isSubscriptionGated;
     obj6.children = items3;

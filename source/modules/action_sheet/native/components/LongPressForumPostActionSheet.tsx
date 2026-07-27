@@ -1,10 +1,10 @@
-// Module ID: 10303
-// Function ID: 79666
+// Module ID: 10304
+// Function ID: 79671
 // Name: ForumPostLongPressActionSheet
-// Dependencies: [31, 3760, 3761, 6014, 1194, 1838, 653, 1355, 33, 10150, 1212, 8665, 5070, 4073, 6024, 10167, 4095, 4085, 10304, 4653, 9034, 9502, 21, 5482, 8943, 7627, 10306, 4099, 9813, 1935, 4075, 9241, 10165, 10243, 10168, 10308, 9917, 4471, 4090, 5685, 1273, 6719, 5490, 3831, 566, 6012, 5996, 9065, 3804, 4321, 10310, 5513, 5498, 1553, 10311, 5500, 2]
+// Dependencies: [31, 3760, 3761, 6014, 1194, 1838, 653, 1355, 33, 10150, 1212, 8665, 5070, 4073, 6024, 10168, 4095, 4085, 10305, 4653, 9034, 9502, 21, 5482, 8943, 7627, 10307, 4099, 9813, 1935, 4075, 9241, 10166, 10244, 10169, 10309, 9917, 4471, 4090, 5685, 1273, 6719, 5490, 3831, 566, 6012, 5996, 9065, 3804, 4321, 10311, 5513, 5498, 1553, 10312, 5500, 2]
 // Exports: default
 
-// Module 10303 (ForumPostLongPressActionSheet)
+// Module 10304 (ForumPostLongPressActionSheet)
 import "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -85,8 +85,8 @@ export default function ForumPostLongPressActionSheet(thread) {
     obj = { size: thread(1273).AvatarSizes.LARGE, channel: thread };
     tmp18 = jsx(thread(1273).Avatar, { size: thread(1273).AvatarSizes.LARGE, channel: thread });
   }
-  obj1 = { thread, parentChannel, hasJoinedPost: stateFromStores1, muted: stateFromStores2, isModerator: isThreadModerator, isAuthor: stateFromStores5 === id, canManageThread, developerModeEnabled: setting, existingPin, messageCount: stateFromStores4, canUnarchiveThread, isLurking: stateFromStores3, favorites: importDefault(10310)(thread, "ForumPostLongPressActionSheet") };
-  const tmp14 = importDefault(10310)(thread, "ForumPostLongPressActionSheet");
+  obj1 = { thread, parentChannel, hasJoinedPost: stateFromStores1, muted: stateFromStores2, isModerator: isThreadModerator, isAuthor: stateFromStores5 === id, canManageThread, developerModeEnabled: setting, existingPin, messageCount: stateFromStores4, canUnarchiveThread, isLurking: stateFromStores3, favorites: importDefault(10311)(thread, "ForumPostLongPressActionSheet") };
+  const tmp14 = importDefault(10311)(thread, "ForumPostLongPressActionSheet");
   obj2 = { showGradient: true };
   const arr7 = (function getActionSheetButtons(thread) {
     let canUnarchiveThread;
@@ -152,7 +152,7 @@ export default function ForumPostLongPressActionSheet(thread) {
         push(obj2);
       } else {
         obj2.label = string(t.ihLPiO);
-        obj2.IconComponent = tmp6(10167).BellIcon;
+        obj2.IconComponent = tmp6(10168).BellIcon;
         obj2.onPress = function onPress() {
           return outer2_1(isModerator[14]).joinThread(thread, "Context Menu");
         };
@@ -191,7 +191,7 @@ export default function ForumPostLongPressActionSheet(thread) {
       const t2 = thread(1212).t;
       if (locked) {
         obj5.label = string2(t2["/OKSxp"]);
-        obj5.IconComponent = tmp16(10304).LockUnlockedIcon;
+        obj5.IconComponent = tmp16(10305).LockUnlockedIcon;
         obj5.onPress = function onPress() {
           outer2_1(isModerator[14]).unlockThread(thread);
         };
@@ -244,7 +244,7 @@ export default function ForumPostLongPressActionSheet(thread) {
         const obj8 = {};
         const intl8 = thread(1212).intl;
         obj8.label = intl8.string(thread(1212).t["436ZFw"]);
-        obj8.IconComponent = thread(10306).TagsIcon;
+        obj8.IconComponent = thread(10307).TagsIcon;
         obj8.onPress = function onPress() {
           let obj = outer2_1(isModerator[27]);
           obj = { thread, parentChannel, canManageThread };
@@ -406,7 +406,7 @@ export default function ForumPostLongPressActionSheet(thread) {
       let flag = thread(1212).t;
       if (muted) {
         obj16.label = string3(flag["0JQfsP"]);
-        obj16.IconComponent = tmp33(10167).BellIcon;
+        obj16.IconComponent = tmp33(10168).BellIcon;
         obj16.onPress = function onPress() {
           let obj = outer2_1(isModerator[14]);
           obj = { muted: !muted };
@@ -415,7 +415,7 @@ export default function ForumPostLongPressActionSheet(thread) {
         push3(obj16);
       } else {
         obj16.label = string3(flag["nP+Ykd"]);
-        obj16.IconComponent = tmp33(10165).BellSlashIcon;
+        obj16.IconComponent = tmp33(10166).BellSlashIcon;
         obj16.onPress = function onPress() {
           let obj = outer2_1(isModerator[27]);
           obj = {};
@@ -433,7 +433,7 @@ export default function ForumPostLongPressActionSheet(thread) {
       intl10 = thread(1212).intl;
       string3 = intl10.string;
       obj17.label = string3(thread(1212).t.HcoRu0);
-      obj17.IconComponent = thread(10168).ChannelNotificationIcon;
+      obj17.IconComponent = thread(10169).ChannelNotificationIcon;
       obj17.onPress = function onPress() {
         return thread(isModerator[35]).showThreadNotificationsBottomSheet(thread);
       };
@@ -445,7 +445,7 @@ export default function ForumPostLongPressActionSheet(thread) {
   })(obj1);
   obj2.startExpanded = thread(1553).isMetaQuest();
   obj3 = { title: tmp13, icon: tmp18 };
-  obj2.header = jsx(thread(10311).ActionSheetIconHeader, { title: tmp13, icon: tmp18 });
+  obj2.header = jsx(thread(10312).ActionSheetIconHeader, { title: tmp13, icon: tmp18 });
   obj2.children = arr7.map((buttons) => {
     buttons = buttons.buttons;
     let obj = {

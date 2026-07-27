@@ -1,5 +1,5 @@
 // Module ID: 9284
-// Function ID: 72733
+// Function ID: 72734
 // Name: PortalKeyboardFooterIOS
 // Dependencies: [31, 33, 4131, 689, 1557, 1571, 3997, 3992, 1555, 668, 4002, 2]
 // Exports: default

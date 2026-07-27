@@ -1,5 +1,5 @@
 // Module ID: 7917
-// Function ID: 63039
+// Function ID: 63040
 // Name: _isStreaming
 // Dependencies: [4156, 653, 2]
 // Exports: default

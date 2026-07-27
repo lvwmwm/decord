@@ -1,5 +1,5 @@
 // Module ID: 4576
-// Function ID: 40130
+// Function ID: 40131
 // Name: isChannelTypeMentionable
 // Dependencies: [1352, 2]
 // Exports: isChannelTypeMentionable

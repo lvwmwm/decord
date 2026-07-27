@@ -1,5 +1,5 @@
 // Module ID: 3982
-// Function ID: 33031
+// Function ID: 33032
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 31, 653, 3983, 491, 1457, 3984, 3989, 3990, 2]
 // Exports: coerceSidebarRoute, getCurrentRouteParents, getICYMIRouteIfActive, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToMemberVerification, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, setHomeDrawerState, useCurrentNavigationRouteName, useIsModalOpen, useOpenModalKey

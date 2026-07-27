@@ -1,5 +1,5 @@
 // Module ID: 7218
-// Function ID: 60062
+// Function ID: 60063
 // Name: MiniaturesSpotIllustration
 // Dependencies: [33, 5085, 7219, 2]
 // Exports: MiniaturesSpotIllustration

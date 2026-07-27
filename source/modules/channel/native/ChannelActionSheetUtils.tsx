@@ -1,10 +1,10 @@
-// Module ID: 10162
-// Function ID: 78599
+// Module ID: 10163
+// Function ID: 78604
 // Name: copyGuildChannelOrThreadLink
 // Dependencies: [4313, 5490, 3831, 2]
 // Exports: copyGuildChannelOrThreadLink
 
-// Module 10162 (copyGuildChannelOrThreadLink)
+// Module 10163 (copyGuildChannelOrThreadLink)
 const result = require("presentAddedFriendToast").fileFinishedImporting("modules/channel/native/ChannelActionSheetUtils.tsx");
 
 export const copyGuildChannelOrThreadLink = function copyGuildChannelOrThreadLink(guild_id, id) {

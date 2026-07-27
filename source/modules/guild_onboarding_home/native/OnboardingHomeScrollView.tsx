@@ -1,10 +1,10 @@
-// Module ID: 15335
-// Function ID: 116992
+// Module ID: 15348
+// Function ID: 117041
 // Name: OnboardingHomeScrollView
 // Dependencies: [31, 27, 33, 4131, 689, 1557, 2]
 // Exports: default
 
-// Module 15335 (OnboardingHomeScrollView)
+// Module 15348 (OnboardingHomeScrollView)
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

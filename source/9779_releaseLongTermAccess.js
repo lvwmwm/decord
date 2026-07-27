@@ -1,5 +1,5 @@
 // Module ID: 9779
-// Function ID: 76000
+// Function ID: 76001
 // Name: releaseLongTermAccess
 // Dependencies: [5, 9771]
 

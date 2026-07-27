@@ -1,9 +1,9 @@
-// Module ID: 10476
-// Function ID: 81284
+// Module ID: 10477
+// Function ID: 81289
 // Name: areParticipantsEqual
-// Dependencies: [57, 31, 27, 1347, 4144, 1194, 4178, 1907, 4953, 10455, 10173, 4149, 33, 4131, 1273, 689, 10178, 22, 10447, 10477, 566, 4324, 10478, 10481, 10491, 9981, 10507, 10538, 10443, 10608, 3835, 7850, 8284, 10462, 10458, 10461, 1450, 477, 8105, 2]
+// Dependencies: [57, 31, 27, 1347, 4144, 1194, 4178, 1907, 4953, 10456, 10174, 4149, 33, 4131, 1273, 689, 10179, 22, 10448, 10478, 566, 4324, 10479, 10482, 10492, 9981, 10508, 10539, 10444, 10609, 3835, 7850, 8284, 10463, 10459, 10462, 1450, 477, 8105, 2]
 
-// Module 10476 (areParticipantsEqual)
+// Module 10477 (areParticipantsEqual)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "hasFetchedColors";
 import get_ActivityIndicator from "ActivityTileInner";
@@ -296,9 +296,9 @@ let closure_21 = importAllResult.memo((channel) => {
     obj.style = items1;
     if (tmp10) {
       if (!tmp4) {
-        obj2 = { participant: tmp5, avatarSize: require(1273) /* Button */.AvatarSizes.PROFILE, resizeMode: require(10491) /* resetIOSScrollZoom */.ResizeMode.COVER };
-        let tmp18 = callback3(importDefault(10507), obj2);
-        const tmp16 = importDefault(10507);
+        obj2 = { participant: tmp5, avatarSize: require(1273) /* Button */.AvatarSizes.PROFILE, resizeMode: require(10492) /* resetIOSScrollZoom */.ResizeMode.COVER };
+        let tmp18 = callback3(importDefault(10508), obj2);
+        const tmp16 = importDefault(10508);
       }
       let items2 = [tmp18, ];
       let tmp22 = null;
@@ -326,13 +326,13 @@ const memoResult = importAllResult.memo((arg0) => {
   let width;
   ({ channel, pipParticipant, selfParticipant } = arg0);
   const tmp = callback4();
-  let obj = require(10462) /* useIsViewingActivity */;
+  let obj = require(10463) /* useIsViewingActivity */;
   obj = { channelId: channel.id };
   const isViewingActivity = obj.useIsViewingActivity(obj);
-  let obj2 = require(10458) /* useShouldForcePipOrientation */;
+  let obj2 = require(10459) /* useShouldForcePipOrientation */;
   const shouldForcePipOrientation = obj2.useShouldForcePipOrientation({ channel });
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const tmp4 = importDefault(10461)(obj);
+  const tmp4 = importDefault(10462)(obj);
   const obj1 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background };
   obj2 = { activeOpacity: 0.7 };
   const obj3 = {};

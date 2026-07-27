@@ -1,5 +1,5 @@
 // Module ID: 6091
-// Function ID: 54376
+// Function ID: 54377
 // Name: getStepwiseValue
 // Dependencies: [5911, 688, 2]
 // Exports: getComboPercentage, getComboScore, getComboShakeIntensity, getComboStyles

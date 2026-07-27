@@ -1,5 +1,5 @@
 // Module ID: 10155
-// Function ID: 78575
+// Function ID: 78579
 // Name: useFavoritesGuildConfig
 // Dependencies: [1428, 2]
 // Exports: getFavoritesGuildConfig, useFavoritesGuildConfig

@@ -1,5 +1,5 @@
 // Module ID: 8315
-// Function ID: 66790
+// Function ID: 66791
 // Name: UserProfileOverscrollBanner
 // Dependencies: [31, 27, 33, 3992, 8316, 8039, 477, 2]
 // Exports: default

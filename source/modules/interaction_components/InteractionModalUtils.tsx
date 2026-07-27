@@ -1,10 +1,10 @@
-// Module ID: 16131
-// Function ID: 125023
+// Module ID: 16143
+// Function ID: 125070
 // Name: useApplicationInfo
-// Dependencies: [5, 57, 31, 1194, 1348, 4469, 1918, 3948, 4468, 13394, 7833, 653, 7832, 1882, 1392, 5661, 12551, 566, 5450, 21, 686, 6134, 1212, 44, 4354, 6100, 7837, 4667, 507, 664, 2]
+// Dependencies: [5, 57, 31, 1194, 1348, 4469, 1918, 3948, 4468, 13395, 7833, 653, 7832, 1882, 1392, 5661, 12552, 566, 5450, 21, 686, 6134, 1212, 44, 4354, 6100, 7837, 4667, 507, 664, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16131 (useApplicationInfo)
+// Module 16143 (useApplicationInfo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

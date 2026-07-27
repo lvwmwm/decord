@@ -1,8 +1,8 @@
-// Module ID: 15135
-// Function ID: 115211
-// Dependencies: [31, 27, 3759, 653, 33, 4131, 4127, 689, 624, 8242, 8214, 14060, 1841, 6727, 15136, 1212, 2945, 7578, 1273, 15137, 4545, 2]
+// Module ID: 15148
+// Function ID: 115260
+// Dependencies: [31, 27, 3759, 653, 33, 4131, 4127, 689, 624, 8242, 8214, 14061, 1841, 6727, 15149, 1212, 2945, 7578, 1273, 15150, 4545, 2]
 
-// Module 15135
+// Module 15148
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -48,14 +48,14 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const callback1 = importAllResult.useCallback(() => {
     outer1_1(outer1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  let obj1 = guild(14060);
+  let obj1 = guild(14061);
   const youBarTotalHeight = obj1.useYouBarTotalHeight(16);
   let obj2 = guild(1841);
   const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(guild.id);
   if (isFavoritesGuildIdResult) {
     let tmp7Result = tmp7(guild(6727).FavoritesSpotIllustration, { width: 192, height: 108 });
   } else {
-    obj = { source: importDefault(15136) };
+    obj = { source: importDefault(15149) };
     tmp7Result = tmp7(closure_5, obj);
   }
   const intl = guild(1212).intl;
@@ -77,7 +77,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   if (canCustomizeGuild) {
     obj1 = { style: tmp.personalizeButtonWrapper };
     obj2 = {};
-    const obj3 = { source: importDefault(15137), disableColor: true };
+    const obj3 = { source: importDefault(15150), disableColor: true };
     obj2.icon = callback(guild(1273).Icon, obj3);
     const intl3 = guild(1212).intl;
     obj2.label = intl3.string(guild(1212).t["Yhi9/N"]);

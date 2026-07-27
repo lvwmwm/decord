@@ -1,10 +1,10 @@
-// Module ID: 12933
-// Function ID: 100434
+// Module ID: 12934
+// Function ID: 100439
 // Name: RemoteAuthBody
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 1557, 12934, 12932, 5161, 507, 22, 12935, 4127, 1212, 1273, 4966, 4544, 4338, 12936, 12937, 5584, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 1557, 12935, 12933, 5161, 507, 22, 12936, 4127, 1212, 1273, 4966, 4544, 4338, 12937, 12938, 5584, 2]
 // Exports: default
 
-// Module 12933 (RemoteAuthBody)
+// Module 12934 (RemoteAuthBody)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -83,7 +83,7 @@ function RemoteAuthLogin(arg0) {
     tmp6 = !tmp3[0];
   }
   obj = {};
-  obj = { source: importDefault(12935), style: tmp.mainImage };
+  obj = { source: importDefault(12936), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   const obj1 = { variant: "heading-md/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -131,7 +131,7 @@ function RemoteAuthLogin(arg0) {
 function RemoteAuthLoginSucceeded() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(12936), style: tmp.mainImage };
+  obj = { source: importDefault(12937), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -154,7 +154,7 @@ function RemoteAuthLoginSucceeded() {
 function RemoteAuthNotFound() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(12937), style: tmp.mainImage };
+  obj = { source: importDefault(12938), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -193,9 +193,9 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/rem
 
 export default function RemoteAuth(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = { source: importDefault(12934) };
+  let obj = { source: importDefault(12935) };
   ({ imageStyle: obj.imageStyle, background: obj.style } = tmp);
-  obj = { style: items, source: importDefault(12932) };
+  obj = { style: items, source: importDefault(12933) };
   items = [tmp.logo, { marginTop: importDefault(1557)().top }];
   const items1 = [callback2(closure_6, obj), ];
   obj = { style: tmp.container };

@@ -1,10 +1,10 @@
-// Module ID: 12735
-// Function ID: 99160
+// Module ID: 12736
+// Function ID: 99165
 // Name: getApplicationIdForActivity
-// Dependencies: [12306, 12736, 12737, 4156, 9011, 7917, 11925, 2]
+// Dependencies: [12307, 12737, 12738, 4156, 9011, 7917, 11926, 2]
 // Exports: default
 
-// Module 12735 (getApplicationIdForActivity)
+// Module 12736 (getApplicationIdForActivity)
 import { SpotifyApplication } from "_isNativeReflectConstruct";
 import { TWITCH_APPLICATION_ID_PREFIX as closure_3 } from "_isNativeReflectConstruct";
 import { XBOX_APPLICATION_ID_PREFIX as closure_4 } from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ export default function getApplicationIdForActivity(party) {
     }
   }
   id = null;
-  if (importDefault(11925)(party)) {
+  if (importDefault(11926)(party)) {
     id = closure_4 + party.name;
   }
 };

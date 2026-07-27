@@ -1,10 +1,10 @@
-// Module ID: 15287
-// Function ID: 116650
+// Module ID: 15300
+// Function ID: 116699
 // Name: sendMessageWithEmbed
 // Dependencies: [5914, 5685, 2]
 // Exports: sendMessageWithEmbed, sendMessageWithoutContentInventoryEntry
 
-// Module 15287 (sendMessageWithEmbed)
+// Module 15300 (sendMessageWithEmbed)
 const result = require("set").fileFinishedImporting("modules/content_inventory/reactionUtils.tsx");
 
 export const sendMessageWithEmbed = function sendMessageWithEmbed(channel) {

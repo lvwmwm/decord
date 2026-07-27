@@ -1,5 +1,5 @@
 // Module ID: 9590
-// Function ID: 74815
+// Function ID: 74816
 // Name: useStickerPickerListData
 // Dependencies: [31, 9561, 9525, 1314, 9560, 22, 1212, 4800, 9290, 2]
 // Exports: default

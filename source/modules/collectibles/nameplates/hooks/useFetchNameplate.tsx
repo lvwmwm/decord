@@ -1,10 +1,10 @@
-// Module ID: 13664
-// Function ID: 104967
+// Module ID: 13665
+// Function ID: 104972
 // Name: useFetchNameplate
 // Dependencies: [7983, 1877, 1874, 2]
 // Exports: useFetchNameplate
 
-// Module 13664 (useFetchNameplate)
+// Module 13665 (useFetchNameplate)
 const result = require("getNameplateData").fileFinishedImporting("modules/collectibles/nameplates/hooks/useFetchNameplate.tsx");
 
 export const useFetchNameplate = function useFetchNameplate(skuId) {

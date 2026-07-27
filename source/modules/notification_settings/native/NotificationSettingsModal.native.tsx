@@ -1,10 +1,10 @@
-// Module ID: 16544
-// Function ID: 128939
+// Module ID: 16556
+// Function ID: 128986
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 1352, 1348, 5071, 4052, 1838, 16252, 3768, 4326, 1850, 653, 33, 4131, 689, 4099, 10243, 1935, 5079, 5074, 4325, 10253, 10257, 10264, 7596, 1212, 7595, 5501, 5502, 4127, 1273, 3828, 1921, 10252, 5164, 10247, 5170, 11791, 3762, 4329, 4594, 4321, 7575, 4542, 10248, 3843, 1456, 566, 5072, 5448, 5087, 16545, 10242, 5517, 2]
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 1352, 1348, 5071, 4052, 1838, 16264, 3768, 4326, 1850, 653, 33, 4131, 689, 4099, 10244, 1935, 5079, 5074, 4325, 10254, 10258, 10265, 7596, 1212, 7595, 5501, 5502, 4127, 1273, 3828, 1921, 10253, 5164, 10248, 5170, 11792, 3762, 4329, 4594, 4321, 7575, 4542, 10249, 3843, 1456, 566, 5072, 5448, 5087, 16557, 10243, 5517, 2]
 // Exports: default
 
-// Module 16544 (_isNativeReflectConstruct)
+// Module 16556 (_isNativeReflectConstruct)
 import NotificationSettingsMessageUnread from "NotificationSettingsMessageUnread";
 import result from "result";
 import getActivityIndicator from "get ActivityIndicator";
@@ -68,7 +68,7 @@ function ConnectedNotificationSettings(guildId) {
   }), items1);
   const tmp3 = callback(stateFromStoresObject, closure_3);
   obj = {};
-  obj = { guildId, channels: memo, navigation, shouldUseNewNotificationSystem: guildId(10248).useShouldUseNewNotificationSystem("NotificationSettingsModalNative") };
+  obj = { guildId, channels: memo, navigation, shouldUseNewNotificationSystem: guildId(10249).useShouldUseNewNotificationSystem("NotificationSettingsModalNative") };
   const merged = Object.assign(tmp3);
   const items2 = [callback4(closure_35, obj), callback4(guildId(5448).NavScrim, {})];
   obj.children = items2;

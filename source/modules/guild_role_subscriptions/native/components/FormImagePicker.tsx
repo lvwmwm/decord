@@ -1,10 +1,10 @@
-// Module ID: 16483
-// Function ID: 128496
+// Module ID: 16495
+// Function ID: 128543
 // Name: pickImage
-// Dependencies: [5, 31, 27, 33, 4131, 689, 4675, 1426, 8278, 1212, 5085, 16484, 9034, 4127, 4544, 2]
+// Dependencies: [5, 31, 27, 33, 4131, 689, 4675, 1426, 8278, 1212, 5085, 16496, 9034, 4127, 4544, 2]
 // Exports: default
 
-// Module 16483 (pickImage)
+// Module 16495 (pickImage)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import { View } from "get ActivityIndicator";

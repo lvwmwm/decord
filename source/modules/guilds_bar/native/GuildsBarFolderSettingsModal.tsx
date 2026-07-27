@@ -1,10 +1,10 @@
-// Module ID: 14875
-// Function ID: 113497
+// Module ID: 14876
+// Function ID: 113502
 // Name: GuildFolderSettingsScene
-// Dependencies: [57, 31, 4971, 14876, 33, 6152, 7575, 1212, 1273, 14877, 5087, 566, 14874, 5517, 2]
+// Dependencies: [57, 31, 4971, 14877, 33, 6152, 7575, 1212, 1273, 14878, 5087, 566, 14875, 5517, 2]
 // Exports: default
 
-// Module 14875 (GuildFolderSettingsScene)
+// Module 14876 (GuildFolderSettingsScene)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -35,7 +35,7 @@ function GuildFolderSettingsScene(arg0) {
   const obj1 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj1.title = intl3.string(require(1212) /* getSystemLocale */.t.xpurRF);
-  obj1.children = callback(importDefault(14877), { color, onChange: onColorChange });
+  obj1.children = callback(importDefault(14878), { color, onChange: onColorChange });
   items[1] = callback(require(7575) /* Form */.FormSection, obj1);
   obj.children = items;
   return callback2(require(7575) /* Form */.Form, obj);
@@ -98,10 +98,10 @@ export default function GuildFolderSettingsModal(folderId) {
         return tmp;
       }));
     })(folderId, first, first1);
-    const result = folderId(14874).hideGuildsBarFolderModal();
+    const result = folderId(14875).hideGuildsBarFolderModal();
   }, items2);
   callback1 = React.useCallback(() => {
-    const result = folderId(14874).hideGuildsBarFolderModal();
+    const result = folderId(14875).hideGuildsBarFolderModal();
   }, []);
   const items3 = [first1, first, first !== initialFolderName || first1 !== initialFolderColor, callback, callback1];
   const screens = React.useMemo(() => (function getScreens(arg0, c5, callback, callback1) {

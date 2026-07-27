@@ -1,5 +1,5 @@
 // Module ID: 6498
-// Function ID: 58093
+// Function ID: 58094
 // Name: goToBillingStandalonePageWithHandoff
 // Dependencies: [653, 1443, 491, 507, 2]
 // Exports: goToStandalonePremiumCheckoutWeb

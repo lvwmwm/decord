@@ -1,10 +1,10 @@
-// Module ID: 14021
-// Function ID: 107259
+// Module ID: 14022
+// Function ID: 107264
 // Name: BountiesModalEndCard
-// Dependencies: [27, 33, 4131, 3992, 4132, 4135, 4555, 14003, 2]
+// Dependencies: [27, 33, 4131, 3992, 4132, 4135, 4555, 14004, 2]
 // Exports: default
 
-// Module 14021 (BountiesModalEndCard)
+// Module 14022 (BountiesModalEndCard)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -59,7 +59,7 @@ export default function BountiesModalEndCard(visible) {
     const obj1 = { colors: ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"], locations: [0, 0.841], style: tmp.backdropGradient };
     items1[1] = callback(importDefault(4555), obj1);
     const obj2 = { bounty, sourceQuestContent };
-    items1[2] = callback(importDefault(14003), obj2);
+    items1[2] = callback(importDefault(14004), obj2);
     obj.children = items1;
     visible = callback2(importDefault(3992).View, obj);
   }

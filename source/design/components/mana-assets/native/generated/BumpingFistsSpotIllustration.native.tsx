@@ -1,5 +1,5 @@
 // Module ID: 6842
-// Function ID: 59498
+// Function ID: 59499
 // Name: BumpingFistsSpotIllustration
 // Dependencies: [33, 5085, 6843, 2]
 // Exports: BumpingFistsSpotIllustration

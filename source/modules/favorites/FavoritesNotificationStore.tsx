@@ -1,5 +1,5 @@
 // Module ID: 10153
-// Function ID: 78568
+// Function ID: 78572
 // Name: useFavoritesNotificationStore
 // Dependencies: [621, 682, 2]
 
@@ -10,7 +10,7 @@ const obj = keys.create((arg0) => {
   let closure_0 = arg0;
   return {
     favoriteAdded: false,
-    notifyFavoriteAdded() {
+    notifyFavoriteAdded(arg0) {
       return callback(outer1_1[1]).batchUpdates(() => outer1_0({ favoriteAdded: true }));
     },
     clearFavoriteAdded() {

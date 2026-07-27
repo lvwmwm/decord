@@ -1,10 +1,10 @@
-// Module ID: 15812
-// Function ID: 122073
+// Module ID: 15824
+// Function ID: 122120
 // Name: useSoundButtonStyleConfig
-// Dependencies: [5, 31, 4123, 1278, 15805, 5188, 1450, 566, 3977, 1331, 7986, 2]
+// Dependencies: [5, 31, 4123, 1278, 15817, 5188, 1450, 566, 3977, 1331, 7986, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 15812 (useSoundButtonStyleConfig)
+// Module 15824 (useSoundButtonStyleConfig)
 import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

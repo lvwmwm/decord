@@ -1,10 +1,10 @@
-// Module ID: 16631
-// Function ID: 129759
+// Module ID: 16643
+// Function ID: 129806
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 5765, 1850, 5766, 566, 6200, 11047, 2]
+// Dependencies: [57, 31, 5765, 1850, 5766, 566, 6200, 11048, 2]
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 16631 (_createForOfIteratorHelperLoose)
+// Module 16643 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -240,7 +240,7 @@ export const usePendingRequestListController = function usePendingRequestListCon
       callback();
     }
   };
-  const familyCenterActions = pendingRequests(11047).useFamilyCenterActions(obj);
+  const familyCenterActions = pendingRequests(11048).useFamilyCenterActions(obj);
   acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
@@ -249,7 +249,7 @@ export const usePendingRequestListController = function usePendingRequestListCon
     tmp4 = isDeclineLoading;
   }
   c5 = tmp4;
-  const obj2 = pendingRequests(11047);
+  const obj2 = pendingRequests(11048);
   [c6, c7] = callback(acceptLinkRequest.useState(() => new Set()), 2);
   callback = acceptLinkRequest.useCallback((arg0) => {
     let closure_0 = arg0;

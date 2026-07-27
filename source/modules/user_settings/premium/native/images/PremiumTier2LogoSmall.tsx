@@ -1,10 +1,10 @@
-// Module ID: 12444
-// Function ID: 96535
+// Module ID: 12445
+// Function ID: 96540
 // Name: PremiumTier2LogoSmall
 // Dependencies: [31, 33, 3835, 689, 8463, 2]
 // Exports: default
 
-// Module 12444 (PremiumTier2LogoSmall)
+// Module 12445 (PremiumTier2LogoSmall)
 import "result";
 import { jsx } from "jsxProd";
 

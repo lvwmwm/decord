@@ -1,10 +1,10 @@
-// Module ID: 10843
-// Function ID: 84305
+// Module ID: 10844
+// Function ID: 84310
 // Name: RoleMembersActionSheet
-// Dependencies: [31, 27, 4123, 6003, 1911, 33, 4131, 689, 21, 5149, 566, 5147, 1273, 4127, 5187, 10844, 2]
+// Dependencies: [31, 27, 4123, 6003, 1911, 33, 4131, 689, 21, 5149, 566, 5147, 1273, 4127, 5187, 10845, 2]
 // Exports: default
 
-// Module 10843 (RoleMembersActionSheet)
+// Module 10844 (RoleMembersActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -82,9 +82,9 @@ export default function RoleMembersActionSheet(guildId) {
     }
     obj.channelId = channelId;
     obj.roleId = roleId;
-    obj.children = closure_8(roleId(10844), obj);
+    obj.children = closure_8(roleId(10845), obj);
     tmp14Result = tmp14(guildId(5187).BottomSheet, obj);
-    const tmp18 = roleId(10844);
+    const tmp18 = roleId(10845);
   }
   return tmp14Result;
 };

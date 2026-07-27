@@ -1,5 +1,5 @@
 // Module ID: 9380
-// Function ID: 73135
+// Function ID: 73136
 // Name: EmojiPickerCategoriesBackspaceItem
 // Dependencies: [31, 27, 653, 33, 4016, 1212, 9381, 2]
 // Exports: default

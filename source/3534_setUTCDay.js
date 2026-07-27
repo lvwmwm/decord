@@ -1,5 +1,5 @@
 // Module ID: 3534
-// Function ID: 27331
+// Function ID: 27332
 // Name: setUTCDay
 // Dependencies: [3210, 3211, 3214, 3215]
 // Exports: default

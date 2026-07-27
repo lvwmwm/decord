@@ -1,10 +1,10 @@
-// Module ID: 13998
-// Function ID: 107145
+// Module ID: 13999
+// Function ID: 107150
 // Name: BountiesScrollIndicatorAnimation
 // Dependencies: [57, 31, 27, 33, 4131, 3835, 689, 3843, 2]
 // Exports: default
 
-// Module 13998 (BountiesScrollIndicatorAnimation)
+// Module 13999 (BountiesScrollIndicatorAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

@@ -1,5 +1,5 @@
 // Module ID: 7456
-// Function ID: 60419
+// Function ID: 60420
 // Name: StreamSpotIllustration
 // Dependencies: [33, 5085, 7457, 2]
 // Exports: StreamSpotIllustration

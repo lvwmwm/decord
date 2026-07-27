@@ -1,5 +1,5 @@
 // Module ID: 9029
-// Function ID: 70969
+// Function ID: 70970
 // Name: openChannelLongPressActionSheet
 // Dependencies: [4099, 9030, 1935, 2]
 // Exports: openChannelLongPressActionSheet

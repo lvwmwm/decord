@@ -1,7 +1,7 @@
 // Module ID: 4112
-// Function ID: 34028
+// Function ID: 34029
 // Name: parseQuery
-// Dependencies: [57, 653, 655, 4113, 4114, 1440, 3830, 1445, 4115, 4120, 12217, 4367, 12918, 1443, 4322, 8881, 6497, 1553, 477, 8833, 675, 490, 12919, 2]
+// Dependencies: [57, 653, 655, 4113, 4114, 1440, 3830, 1445, 4115, 4120, 12218, 4367, 12919, 1443, 4322, 8881, 6497, 1553, 477, 8833, 675, 490, 12920, 2]
 // Exports: default
 
 // Module 4112 (parseQuery)
@@ -204,7 +204,7 @@ export default function parseURL(target) {
                                             sanitizeUrlResult = isValidUUID;
                                             sanitizeUrlResult = dependencyMap;
                                             if (isValidUUID(4120).CodedLinkType.COLLECTIBLES_SHOP === type) {
-                                              obj2 = isValidUUID(12217);
+                                              obj2 = isValidUUID(12218);
                                               const tmp12 = callback(findCodedLinkResult.code.split("-"), 2)[1];
                                               if (obj2.isVirtualCurrencyEnabled().enabled) {
                                                 if (tmp11 === constants2.ORBS) {
@@ -267,7 +267,7 @@ export default function parseURL(target) {
     } else {
       sanitizeUrlResult = isValidUUID;
       sanitizeUrlResult = dependencyMap;
-      obj = isValidUUID(12918);
+      obj = isValidUUID(12919);
       const result = obj.findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
@@ -832,9 +832,9 @@ export default function parseURL(target) {
                             sanitizeUrlResult = importDefault;
                             sanitizeUrlResult = dependencyMap;
                             sanitizeUrlResult = closure_5;
-                            obj78.settingsSection = importDefault(12919)(closure_5, 655);
+                            obj78.settingsSection = importDefault(12920)(closure_5, 655);
                             sanitizeUrlResult = closure_6;
-                            obj78.settingsSubsection = importDefault(12919)(closure_6, 4113);
+                            obj78.settingsSubsection = importDefault(12920)(closure_6, 4113);
                             obj77.payload = obj78;
                             return obj77;
                           } else {
@@ -855,9 +855,9 @@ export default function parseURL(target) {
                               sanitizeUrlResult = importDefault;
                               sanitizeUrlResult = dependencyMap;
                               sanitizeUrlResult = closure_5;
-                              obj80.settingsSection = importDefault(12919)(closure_5, 653);
+                              obj80.settingsSection = importDefault(12920)(closure_5, 653);
                               sanitizeUrlResult = closure_6;
-                              obj80.settingsSubsection = importDefault(12919)(closure_6, 655);
+                              obj80.settingsSubsection = importDefault(12920)(closure_6, 655);
                               obj80.feature = sanitizeUrlResult(sanitizeUrlResult).feature;
                               obj79.payload = obj80;
                               return obj79;

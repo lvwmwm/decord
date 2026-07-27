@@ -1,5 +1,5 @@
 // Module ID: 9940
-// Function ID: 76923
+// Function ID: 76924
 // Name: categoryCollapse
 // Dependencies: [686, 2]
 // Exports: categoryCollapse, categoryCollapseAll, categoryExpand, categoryExpandAll

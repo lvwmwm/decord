@@ -1,10 +1,10 @@
-// Module ID: 11462
-// Function ID: 89243
+// Module ID: 11463
+// Function ID: 89248
 // Name: useChangelogIdFromChannel
 // Dependencies: [4350, 566, 2]
 // Exports: default
 
-// Module 11462 (useChangelogIdFromChannel)
+// Module 11463 (useChangelogIdFromChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 15525
-// Function ID: 119523
+// Module ID: 15538
+// Function ID: 119572
 // Name: SpamRequestsScreen
-// Dependencies: [31, 3768, 1850, 8745, 653, 33, 5462, 5482, 566, 15524, 8364, 480, 8297, 8752, 2]
+// Dependencies: [31, 3768, 1850, 8745, 653, 33, 5462, 5482, 566, 15537, 8364, 480, 8297, 8752, 2]
 // Exports: default
 
-// Module 15525 (SpamRequestsScreen)
+// Module 15538 (SpamRequestsScreen)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

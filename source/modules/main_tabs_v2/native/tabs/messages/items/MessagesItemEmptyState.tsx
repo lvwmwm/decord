@@ -1,9 +1,9 @@
-// Module ID: 15015
-// Function ID: 114450
+// Module ID: 15016
+// Function ID: 114455
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
-// Dependencies: [31, 27, 33, 4131, 689, 3983, 15016, 4127, 1212, 4544, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 3983, 15017, 4127, 1212, 4544, 2]
 
-// Module 15015 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+// Module 15016 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
       obj2.navigate("friends", obj);
     }
   }, []);
-  obj.source = importDefault(15016);
+  obj.source = importDefault(15017);
   obj.style = tmp.image;
   obj.children = callback(closure_4, obj);
   const items = [callback(closure_5, obj), , , ];

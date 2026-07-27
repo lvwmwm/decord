@@ -1,10 +1,10 @@
-// Module ID: 16625
-// Function ID: 129716
+// Module ID: 16637
+// Function ID: 129763
 // Name: onTaskComplete
-// Dependencies: [5, 57, 31, 33, 16620, 16621, 16615, 3832, 1212, 2461, 16624, 4542, 689, 4127, 6670, 16626, 2]
+// Dependencies: [5, 57, 31, 33, 16632, 16633, 16627, 3832, 1212, 2461, 16636, 4542, 689, 4127, 6670, 16638, 2]
 // Exports: default
 
-// Module 16625 (onTaskComplete)
+// Module 16637 (onTaskComplete)
 import getScreensForTaskType from "getScreensForTaskType";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

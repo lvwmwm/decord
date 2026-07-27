@@ -1,9 +1,9 @@
-// Module ID: 14416
-// Function ID: 110236
+// Module ID: 14417
+// Function ID: 110241
 // Name: route
-// Dependencies: [57, 31, 653, 1345, 33, 14417, 1334, 8379, 10059, 1212, 14418, 6525, 14420, 2]
+// Dependencies: [57, 31, 653, 1345, 33, 14418, 1334, 8379, 10059, 1212, 14419, 6525, 14421, 2]
 
-// Module 14416 (route)
+// Module 14417 (route)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -20,7 +20,7 @@ createToggle = {
   IconComponent: require("SettingsItemAppIcon"),
   useTrailing: function useAppIconSettingTrailing() {
     const obj = { dismissibleContent: require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, newPremiumStyle: true };
-    return jsx(importDefault(14417), { dismissibleContent: require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, newPremiumStyle: true });
+    return jsx(importDefault(14418), { dismissibleContent: require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, newPremiumStyle: true });
   },
   usePreNavigationAction: function useAppIconSettingPreNavigationAction() {
     const items = [first(1334).DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE];
@@ -43,7 +43,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APP_ICONS,
   getComponent() {
-    return require(14420).default;
+    return require(14421).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

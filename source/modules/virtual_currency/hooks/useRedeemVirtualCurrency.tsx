@@ -1,5 +1,5 @@
 // Module ID: 8655
-// Function ID: 68758
+// Function ID: 68759
 // Name: useRedeemVirtualCurrency
 // Dependencies: [5, 57, 31, 4114, 8656, 3799, 5625, 3792, 8654, 1212, 2]
 // Exports: useRedeemVirtualCurrency

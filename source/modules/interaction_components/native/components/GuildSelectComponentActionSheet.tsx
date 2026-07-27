@@ -1,10 +1,10 @@
-// Module ID: 13679
-// Function ID: 105054
+// Module ID: 13680
+// Function ID: 105059
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [57, 31, 27, 1838, 4971, 33, 4131, 4360, 1212, 4099, 10949, 5513, 4320, 1273, 4127, 4975, 2]
+// Dependencies: [57, 31, 27, 1838, 4971, 33, 4131, 4360, 1212, 4099, 10950, 5513, 4320, 1273, 4127, 4975, 2]
 // Exports: default
 
-// Module 13679 (GuildSelectComponentActionSheet)
+// Module 13680 (GuildSelectComponentActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -128,5 +128,5 @@ export default function GuildSelectComponentActionSheet(arg0) {
     allowEmpty: false,
     expanded: true
   };
-  return callback(importDefault(10949), obj);
+  return callback(importDefault(10950), obj);
 };

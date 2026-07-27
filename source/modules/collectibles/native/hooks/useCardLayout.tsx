@@ -1,10 +1,10 @@
-// Module ID: 14550
-// Function ID: 111117
+// Module ID: 14551
+// Function ID: 111122
 // Name: calculateTotalGaps
 // Dependencies: [8592, 1450, 2]
 // Exports: useCardLayout
 
-// Module 14550 (calculateTotalGaps)
+// Module 14551 (calculateTotalGaps)
 function calculateTotalGaps(arg0, arg1) {
   return arg1 + require(8592) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP * (arg0 - 1);
 }

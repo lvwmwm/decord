@@ -1,5 +1,5 @@
 // Module ID: 7434
-// Function ID: 60386
+// Function ID: 60387
 // Name: SleepingWumpusSpotIllustration
 // Dependencies: [33, 5085, 7435, 2]
 // Exports: SleepingWumpusSpotIllustration

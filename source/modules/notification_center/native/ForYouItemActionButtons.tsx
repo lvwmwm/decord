@@ -1,10 +1,10 @@
-// Module ID: 15207
-// Function ID: 115867
+// Module ID: 15220
+// Function ID: 115916
 // Name: focusChatInput
-// Dependencies: [5, 31, 27, 1348, 1850, 653, 33, 4131, 1207, 3992, 4132, 4542, 4544, 1212, 4127, 624, 7698, 14969, 4112, 12920, 8988, 5873, 4141, 8850, 3832, 9501, 675, 2]
+// Dependencies: [5, 31, 27, 1348, 1850, 653, 33, 4131, 1207, 3992, 4132, 4542, 4544, 1212, 4127, 624, 7698, 14970, 4112, 12921, 8988, 5873, 4141, 8850, 3832, 9501, 675, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 15207 (focusChatInput)
+// Module 15220 (focusChatInput)
 import closure_3 from "ME";
 import result from "result";
 import { View } from "set";
@@ -367,7 +367,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
     const dMChannel = callback(navigation[22]).getDMChannel(id);
     dMChannel.then((arg0) => {
       const obj = { payload: callback(4112)("https://discord.com/channels/@me/" + arg0).payload, safe: true, navigationReplace: false };
-      callback(12920)(obj);
+      callback(12921)(obj);
       outer2_21(arg0);
     });
   }, items5);

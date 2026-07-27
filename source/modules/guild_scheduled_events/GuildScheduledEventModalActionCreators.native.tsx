@@ -1,7 +1,7 @@
 // Module ID: 8155
-// Function ID: 65395
+// Function ID: 65396
 // Name: openGuildEventDetails
-// Dependencies: [5, 1354, 8156, 4099, 8157, 1935, 8148, 12211, 2]
+// Dependencies: [5, 1354, 8156, 4099, 8157, 1935, 8148, 12212, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
 // Module 8155 (openGuildEventDetails)
@@ -49,5 +49,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
 export const openEndEventModal = function openEndEventModal(channel) {
   let obj = importDefault(4099);
   obj = { channel };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12211, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(require(1935) /* maybeLoadBundle */(12212, dependencyMap.paths), closure_4, obj);
 };

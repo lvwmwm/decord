@@ -1,9 +1,9 @@
-// Module ID: 16418
-// Function ID: 128204
+// Module ID: 16430
+// Function ID: 128251
 // Name: styles
 // Dependencies: [27, 4131, 2]
 
-// Module 16418 (styles)
+// Module 16430 (styles)
 import { Platform } from "get ActivityIndicator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

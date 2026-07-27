@@ -1,5 +1,5 @@
 // Module ID: 9119
-// Function ID: 71672
+// Function ID: 71673
 // Name: _confirmEmailChange
 // Dependencies: [5, 653, 4943, 480, 2]
 // Exports: confirmEmailChange, sendConfirmationCode

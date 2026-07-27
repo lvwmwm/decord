@@ -1,10 +1,10 @@
-// Module ID: 10220
-// Function ID: 79123
+// Module ID: 10221
+// Function ID: 79128
 // Name: getRules
-// Dependencies: [4565, 4566, 10221, 3830, 4121, 3809, 1362, 2]
+// Dependencies: [4565, 4566, 10222, 3830, 4121, 3809, 1362, 2]
 // Exports: renderMessagePreviewMarkup
 
-// Module 10220 (getRules)
+// Module 10221 (getRules)
 import importDefaultResult from "priv";
 
 const require = arg1;
@@ -13,7 +13,7 @@ function getRules(layout) {
   let fontScale;
   let maxFontSizeMultiplier;
   ({ color, fontScale, maxFontSizeMultiplier } = layout);
-  const items = [importDefault(4566).RULES, importDefault(10221)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
+  const items = [importDefault(4566).RULES, importDefault(10222)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
   return importDefault(4565)(items);
 }
 function renderASTToReact(layout) {

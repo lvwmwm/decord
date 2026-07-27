@@ -1,5 +1,5 @@
 // Module ID: 9689
-// Function ID: 75493
+// Function ID: 75494
 // Name: useWishlistApplicationIds
 // Dependencies: [31, 653, 2]
 // Exports: useWishlistApplicationIds

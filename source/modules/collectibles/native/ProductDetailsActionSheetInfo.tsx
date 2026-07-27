@@ -1,5 +1,5 @@
 // Module ID: 8689
-// Function ID: 68973
+// Function ID: 68974
 // Name: ProductNameAndDescription
 // Dependencies: [27, 33, 4131, 689, 8690, 4127, 5782, 8642, 1212, 8691, 8012, 1877, 2]
 // Exports: default

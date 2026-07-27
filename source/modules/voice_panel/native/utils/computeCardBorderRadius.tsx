@@ -1,10 +1,10 @@
-// Module ID: 15874
-// Function ID: 122672
+// Module ID: 15886
+// Function ID: 122719
 // Name: VoicePanelModes
 // Dependencies: [9976, 2]
 // Exports: default
 
-// Module 15874 (VoicePanelModes)
+// Module 15886 (VoicePanelModes)
 import VoicePanelModes from "VoicePanelModes";
 
 VoicePanelModes = VoicePanelModes.VoicePanelModes;

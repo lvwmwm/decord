@@ -1,5 +1,5 @@
 // Module ID: 9969
-// Function ID: 77168
+// Function ID: 77169
 // Name: UserProfileSection
 // Dependencies: [31, 27, 33, 4131, 689, 3843, 5484, 3975, 7582, 4127, 2]
 // Exports: default

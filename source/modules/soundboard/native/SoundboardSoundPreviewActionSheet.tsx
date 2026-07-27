@@ -1,10 +1,10 @@
-// Module ID: 15816
-// Function ID: 122091
+// Module ID: 15828
+// Function ID: 122138
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [29, 31, 27, 1850, 4579, 653, 33, 4131, 689, 477, 566, 5462, 7986, 10713, 4586, 4549, 5498, 5150, 11065, 4127, 4544, 9351, 9353, 1212, 7625, 3992, 2]
+// Dependencies: [29, 31, 27, 1850, 4579, 653, 33, 4131, 689, 477, 566, 5462, 7986, 10714, 4586, 4549, 5498, 5150, 11066, 4127, 4544, 9351, 9353, 1212, 7625, 3992, 2]
 // Exports: default
 
-// Module 15816 (SoundboardSoundPreviewActionSheet)
+// Module 15828 (SoundboardSoundPreviewActionSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -114,7 +114,7 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   const tmp6 = borderPlaying(buttonPressAnimationProps, analyticsLocations);
   const tmp8 = closure_12;
   const tmp9 = closure_6;
-  obj1.src = sound(11065)(sound, 64);
+  obj1.src = sound(11066)(sound, 64);
   const emojiName = sound.emojiName;
   let str = "";
   if (null != emojiName) {

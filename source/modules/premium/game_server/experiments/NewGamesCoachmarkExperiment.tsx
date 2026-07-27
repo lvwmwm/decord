@@ -1,10 +1,10 @@
-// Module ID: 11536
-// Function ID: 89839
+// Module ID: 11537
+// Function ID: 89844
 // Name: useIsNewGamesCoachmarkEnabled
 // Dependencies: [1428, 2]
 // Exports: useIsNewGamesCoachmarkEnabled
 
-// Module 11536 (useIsNewGamesCoachmarkEnabled)
+// Module 11537 (useIsNewGamesCoachmarkEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-04-new-games-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

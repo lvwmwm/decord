@@ -1,5 +1,5 @@
 // Module ID: 8232
-// Function ID: 66050
+// Function ID: 66051
 // Name: MagnifyingGlassIcon
 // Dependencies: [31, 33, 689, 3834, 8233, 2]
 // Exports: MagnifyingGlassIcon

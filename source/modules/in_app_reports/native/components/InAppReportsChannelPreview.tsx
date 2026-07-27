@@ -1,10 +1,10 @@
-// Module ID: 12331
-// Function ID: 95991
+// Module ID: 12332
+// Function ID: 95996
 // Name: ChannelPreview
 // Dependencies: [31, 27, 1838, 33, 4131, 689, 566, 3975, 4127, 1212, 5513, 2]
 // Exports: default
 
-// Module 12331 (ChannelPreview)
+// Module 12332 (ChannelPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";

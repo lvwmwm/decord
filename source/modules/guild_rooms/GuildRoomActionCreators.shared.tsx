@@ -1,10 +1,10 @@
-// Module ID: 16110
-// Function ID: 124833
+// Module ID: 16122
+// Function ID: 124880
 // Name: _guildRoomConnect
-// Dependencies: [5, 1194, 16107, 653, 507, 12748, 686, 16111, 9205, 9212, 12749, 2]
+// Dependencies: [5, 1194, 16119, 653, 507, 12749, 686, 16123, 9205, 9212, 12750, 2]
 // Exports: createGuildRoomNote, deleteGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomLocalDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, placePendingGuildRoomNote, selectGuildRoomLocalPosition, startPendingGuildRoomNote
 
-// Module 16110 (_guildRoomConnect)
+// Module 16122 (_guildRoomConnect)
 import mapGuildRoomBaseObjectFields from "mapGuildRoomBaseObjectFields";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

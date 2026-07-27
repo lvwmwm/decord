@@ -1,11 +1,11 @@
 // Module ID: 10792
-// Function ID: 83741
+// Function ID: 83745
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 10792 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "4231d943574087a463ee922a711ec0bb", name: "ic_mobile_device", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 18, height: 18, scales: [2, 3], hash: "ade8732f10573e5215aa029a138cb853", name: "watch", type: "png" };
 
 export default registerAsset.registerAsset(obj);

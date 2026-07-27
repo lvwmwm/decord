@@ -1,5 +1,5 @@
 // Module ID: 5517
-// Function ID: 47001
+// Function ID: 47002
 // Name: NavigationStack
 // Dependencies: [57, 31, 27, 33, 4131, 689, 5518, 5087, 3835, 5519, 1557, 477, 1212, 22, 5579, 1457, 4067, 5586, 1185, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens

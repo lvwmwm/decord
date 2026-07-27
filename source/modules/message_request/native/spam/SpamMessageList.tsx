@@ -1,10 +1,10 @@
-// Module ID: 15632
-// Function ID: 120526
+// Module ID: 15644
+// Function ID: 120573
 // Name: PendingSpamMessageRequestRow
-// Dependencies: [31, 27, 653, 33, 4131, 689, 1212, 11479, 3832, 9104, 4139, 4338, 11471, 675, 4661, 15617, 1273, 10294, 13888, 7575, 1557, 15626, 15633, 15624, 4560, 5839, 5844, 15627, 477, 4127, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 1212, 11480, 3832, 9104, 4139, 4338, 11472, 675, 4661, 15629, 1273, 10295, 13889, 7575, 1557, 15638, 15645, 15636, 4560, 5839, 5844, 15639, 477, 4127, 2]
 // Exports: default
 
-// Module 15632 (PendingSpamMessageRequestRow)
+// Module 15644 (PendingSpamMessageRequestRow)
 import result from "result";
 import get_ActivityIndicator from "MessageRequestEmpty";
 import { AnalyticEvents } from "ME";
@@ -197,10 +197,10 @@ export default function SpamMessageList(goToMessageRequestPreview) {
   const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
   const bottom = importDefault(1557)().bottom;
-  let obj = goToMessageRequestPreview(15626);
+  let obj = goToMessageRequestPreview(15638);
   const dependencyMap = obj.useSpamMessageRequestCount();
-  const arr = importDefault(15633)();
-  let obj1 = goToMessageRequestPreview(15624);
+  const arr = importDefault(15645)();
+  let obj1 = goToMessageRequestPreview(15636);
   let closure_4 = obj1.useListHasSingleSpamMessageRequest();
   importDefault(4560)(() => {
     let obj = tmp(675);
@@ -213,7 +213,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
     obj = {};
     let intl = goToMessageRequestPreview(1212).intl;
     obj.bodyText = intl.string(goToMessageRequestPreview(1212).t.hasFPQ);
-    return callback(importDefault(15627), obj);
+    return callback(importDefault(15639), obj);
   } else {
     const items = ["header-section"];
     HermesBuiltin.arraySpread(arr, 1);

@@ -1,5 +1,5 @@
 // Module ID: 3980
-// Function ID: 33019
+// Function ID: 33020
 // Name: items
 // Dependencies: [666, 2]
 // Exports: generateRandomColorOptions

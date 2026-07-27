@@ -1,10 +1,10 @@
-// Module ID: 15927
-// Function ID: 123119
+// Module ID: 15939
+// Function ID: 123166
 // Name: ChatButton
-// Dependencies: [31, 33, 4131, 689, 9975, 15919, 15870, 15907, 15920, 1212, 15928, 5515, 4630, 2]
+// Dependencies: [31, 33, 4131, 689, 9975, 15931, 15882, 15919, 15932, 1212, 15940, 5515, 4630, 2]
 // Exports: default
 
-// Module 15927 (ChatButton)
+// Module 15939 (ChatButton)
 import result from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

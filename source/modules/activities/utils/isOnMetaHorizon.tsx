@@ -1,10 +1,10 @@
-// Module ID: 11943
-// Function ID: 92371
+// Module ID: 11944
+// Function ID: 92376
 // Name: isOnMetaHorizon
 // Dependencies: [4156, 653, 2]
 // Exports: default
 
-// Module 11943 (isOnMetaHorizon)
+// Module 11944 (isOnMetaHorizon)
 import { META_PRESENCE_APPLICATION_ID as closure_0 } from "items3";
 import { ActivityGamePlatforms } from "ME";
 

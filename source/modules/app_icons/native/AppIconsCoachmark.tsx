@@ -1,10 +1,10 @@
-// Module ID: 15667
-// Function ID: 120886
+// Module ID: 15679
+// Function ID: 120933
 // Name: AppIconsCoachmarkActionSheet
-// Dependencies: [31, 27, 1850, 1345, 33, 4131, 689, 566, 3777, 4099, 5187, 15668, 1273, 9338, 4127, 1212, 4544, 6525, 2]
+// Dependencies: [31, 27, 1850, 1345, 33, 4131, 689, 566, 3777, 4099, 5187, 15680, 1273, 9338, 4127, 1212, 4544, 6525, 2]
 // Exports: default
 
-// Module 15667 (AppIconsCoachmarkActionSheet)
+// Module 15679 (AppIconsCoachmarkActionSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -53,7 +53,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     contentStyles: tmp.container
   };
   obj = { style: tmp.info };
-  obj1 = { source: importDefault(15668), style: tmp.image };
+  obj1 = { source: importDefault(15680), style: tmp.image };
   const items2 = [callback(closure_4, obj1), , ];
   const obj2 = { style: tmp.titleContainer };
   const obj3 = { source: importDefault(9338), size: markAsDismissed(1273).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };

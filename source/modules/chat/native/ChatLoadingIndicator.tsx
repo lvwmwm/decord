@@ -1,5 +1,5 @@
 // Module ID: 10081
-// Function ID: 78114
+// Function ID: 78115
 // Name: openLoadingIndicatorDebugBody
 // Dependencies: [57, 31, 27, 4123, 4809, 4350, 1907, 1850, 6271, 653, 33, 4131, 689, 4472, 4562, 1935, 566, 4127, 10082, 3992, 4132, 1212, 4661, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator

@@ -1,9 +1,9 @@
-// Module ID: 13898
-// Function ID: 106395
+// Module ID: 13899
+// Function ID: 106400
 // Name: route
-// Dependencies: [7697, 653, 10059, 1212, 2199, 13899, 2]
+// Dependencies: [7697, 653, 10059, 1212, 2199, 13900, 2]
 
-// Module 13898 (route)
+// Module 13899 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER_SCHEDULE_DOWNTIME,
   getComponent() {
-    return require(13899) /* openTimePicker */.default;
+    return require(13900) /* openTimePicker */.default;
   }
 };
 const route = createToggle.createRoute(obj);

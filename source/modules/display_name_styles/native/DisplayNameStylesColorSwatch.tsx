@@ -1,10 +1,10 @@
-// Module ID: 13649
-// Function ID: 104876
+// Module ID: 13650
+// Function ID: 104881
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [27, 33, 4131, 689, 1863, 13650, 4555, 665, 2]
+// Dependencies: [27, 33, 4131, 689, 1863, 13651, 4555, 665, 2]
 // Exports: default
 
-// Module 13649 (DisplayNameStylesColorSwatch)
+// Module 13650 (DisplayNameStylesColorSwatch)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -26,7 +26,7 @@ export default function DisplayNameStylesColorSwatch(colors) {
       ({ colorSwatch: arr3[0], gummySwatch: arr3[1] } = tmp);
       obj.style = items;
       obj = { colors };
-      obj.children = jsx(importDefault(13650), { colors });
+      obj.children = jsx(importDefault(13651), { colors });
       return <View colors={colors} />;
     }
   }

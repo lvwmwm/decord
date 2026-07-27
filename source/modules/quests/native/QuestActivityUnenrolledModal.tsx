@@ -1,10 +1,10 @@
-// Module ID: 15773
-// Function ID: 121687
+// Module ID: 15785
+// Function ID: 121734
 // Name: QuestActivityUnenrolledModalInner
-// Dependencies: [5, 57, 31, 27, 5932, 15772, 4977, 33, 4131, 689, 478, 4067, 3841, 566, 5468, 5955, 10427, 10904, 4980, 1392, 9401, 5959, 4338, 3849, 4542, 5085, 10900, 4127, 1212, 4544, 7577, 6695, 7640, 10907, 11059, 2]
+// Dependencies: [5, 57, 31, 27, 5932, 15784, 4977, 33, 4131, 689, 478, 4067, 3841, 566, 5468, 5955, 10428, 10905, 4980, 1392, 9401, 5959, 4338, 3849, 4542, 5085, 10901, 4127, 1212, 4544, 7577, 6695, 7640, 10908, 11060, 2]
 // Exports: default
 
-// Module 15773 (QuestActivityUnenrolledModalInner)
+// Module 15785 (QuestActivityUnenrolledModalInner)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import HeaderActionButton from "HeaderActionButton";
@@ -36,9 +36,9 @@ function QuestActivityUnenrolledModalInner(quest) {
   let obj3 = quest(5468);
   let obj4 = quest(5955);
   const getOrFetchApplication = obj3.useGetOrFetchApplication(obj4.getActivityApplicationId(quest));
-  let obj5 = quest(10427);
+  let obj5 = quest(10428);
   const questTaskDetails = obj5.useQuestTaskDetails(quest);
-  let obj6 = quest(10904);
+  let obj6 = quest(10905);
   obj = { quest, taskDetails: questTaskDetails, location: QuestsExperimentLocations.QUEST_ACTIVITY_UNENROLLED_MODAL, sourceQuestContent: quest(4980).QuestContent.QUEST_ACTIVITY_UNENROLLED_MODAL };
   const items1 = [getOrFetchApplication];
   const fn = () => {
@@ -76,7 +76,7 @@ function QuestActivityUnenrolledModalInner(quest) {
   }
   const items3 = [tmp18, ];
   obj8 = { quest, height: 87, width: 87, style: tmp2.questRewardTile };
-  items3[1] = callback2(closure_7, { style: tmp2.rewardTileContainer, children: callback2(first(10900), obj8) });
+  items3[1] = callback2(closure_7, { style: tmp2.rewardTileContainer, children: callback2(first(10901), obj8) });
   obj3.children = items3;
   obj2.children = callback3(closure_7, obj3);
   const items4 = [callback2(closure_7, obj2), ];
@@ -249,6 +249,6 @@ export default function QuestActivityUnenrolledModal(questId) {
     };
     obj[constants.MAIN] = obj;
     const obj1 = { screens: obj, initialRouteName: constants.MAIN };
-    return callback2(questId(11059).Modal, obj1);
+    return callback2(questId(11060).Modal, obj1);
   }
 };

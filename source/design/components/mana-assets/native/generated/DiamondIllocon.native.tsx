@@ -1,5 +1,5 @@
 // Module ID: 6920
-// Function ID: 59615
+// Function ID: 59616
 // Name: DiamondIllocon
 // Dependencies: [33, 5085, 6921, 2]
 // Exports: DiamondIllocon

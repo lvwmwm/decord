@@ -1,10 +1,10 @@
-// Module ID: 12774
-// Function ID: 99438
+// Module ID: 12775
+// Function ID: 99443
 // Name: JoinVoiceChannelButton
-// Dependencies: [31, 27, 3759, 653, 33, 4131, 10672, 566, 1212, 1820, 4945, 4544, 2]
+// Dependencies: [31, 27, 3759, 653, 33, 4131, 10673, 566, 1212, 1820, 4945, 4544, 2]
 // Exports: default
 
-// Module 12774 (JoinVoiceChannelButton)
+// Module 12775 (JoinVoiceChannelButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

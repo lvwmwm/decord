@@ -1,5 +1,5 @@
 // Module ID: 9765
-// Function ID: 75949
+// Function ID: 75950
 // Name: GiftingBadgeLevelUpProgress
 // Dependencies: [31, 27, 8047, 33, 4131, 689, 9644, 4127, 1212, 2295, 2]
 // Exports: default

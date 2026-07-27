@@ -1,10 +1,10 @@
-// Module ID: 11232
-// Function ID: 87397
+// Module ID: 11233
+// Function ID: 87402
 // Name: _getPrimaryAppCommand
 // Dependencies: [5, 31, 1348, 5669, 1882, 5680, 5673, 5655, 2]
 // Exports: default, useIsPrimaryAppCommandUsableInAppDM
 
-// Module 11232 (_getPrimaryAppCommand)
+// Module 11233 (_getPrimaryAppCommand)
 import ScoreMethod from "ScoreMethod";
 import result from "result";
 import closure_4 from "_isNativeReflectConstruct";

@@ -1,5 +1,5 @@
 // Module ID: 5427
-// Function ID: 46506
+// Function ID: 46507
 // Name: useDataMultiplier
 // Dependencies: []
 

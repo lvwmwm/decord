@@ -1,5 +1,5 @@
 // Module ID: 7302
-// Function ID: 60188
+// Function ID: 60189
 // Name: NitroWumpusOfferingLeft3dIllustration
 // Dependencies: [33, 5085, 7303, 2]
 // Exports: NitroWumpusOfferingLeft3dIllustration

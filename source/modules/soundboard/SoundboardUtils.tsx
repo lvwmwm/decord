@@ -1,10 +1,10 @@
-// Module ID: 10713
-// Function ID: 83309
+// Module ID: 10714
+// Function ID: 83314
 // Name: hasPermissionToPlaySound
-// Dependencies: [5, 1316, 1352, 3759, 1850, 4579, 4580, 653, 1314, 3804, 3777, 10714, 7986, 4586, 10715, 686, 10718, 10719, 10720, 624, 3970, 1334, 1331, 675, 4325, 2]
+// Dependencies: [5, 1316, 1352, 3759, 1850, 4579, 4580, 653, 1314, 3804, 3777, 10715, 7986, 4586, 10716, 686, 10719, 10720, 10721, 624, 3970, 1334, 1331, 675, 4325, 2]
 // Exports: getAmplitudinalSoundboardVolume, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 10713 (hasPermissionToPlaySound)
+// Module 10714 (hasPermissionToPlaySound)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_5 } from "_callSuper";
@@ -67,7 +67,7 @@ function canUseSoundboardSound(currentUser, sound, channel) {
   return result;
 }
 function canMakeSound(channel) {
-  let obj = require(10714) /* getMuteStates */;
+  let obj = require(10715) /* getMuteStates */;
   obj = { channel };
   const muteStates = obj.getMuteStates(obj);
   return !muteStates.mute && !muteStates.suppress;
@@ -132,8 +132,8 @@ export { canMakeSound };
 export const playSound = function playSound(soundId, channelId) {
   let obj = require(7986) /* _fetchDefaultSoundsFromApi2 */;
   obj.playSoundLocally(channelId, soundId, require(4586) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
-  const result = require(10715) /* _getCancellationSlowConnection */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
-  const obj2 = require(10715) /* _getCancellationSlowConnection */;
+  const result = require(10716) /* _getCancellationSlowConnection */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
+  const obj2 = require(10716) /* _getCancellationSlowConnection */;
   obj = { type: "SOUNDBOARD_TRACK_USAGE", soundId: soundId.soundId };
   importDefault(686).dispatch(obj);
 };

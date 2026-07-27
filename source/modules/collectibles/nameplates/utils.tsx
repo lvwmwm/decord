@@ -1,5 +1,5 @@
 // Module ID: 1874
-// Function ID: 20880
+// Function ID: 20881
 // Name: getNameplateData
 // Dependencies: [1875, 482, 1878, 1880, 1212, 2]
 // Exports: getBackgroundGradientColors, getNameplateDataFromProductRecord, getNameplateSampleUsers, parseFirstFrame

@@ -1,5 +1,5 @@
 // Module ID: 4438
-// Function ID: 38941
+// Function ID: 38942
 // Name: CreateDataPropertyOrThrow
 // Dependencies: [4377, 518, 4424, 4439]
 

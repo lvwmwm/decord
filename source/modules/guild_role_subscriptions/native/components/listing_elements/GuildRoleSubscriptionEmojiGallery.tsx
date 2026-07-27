@@ -1,10 +1,10 @@
-// Module ID: 14189
-// Function ID: 109196
+// Module ID: 14190
+// Function ID: 109201
 // Name: EmojiGallery
-// Dependencies: [31, 27, 33, 9359, 9361, 14190, 2]
+// Dependencies: [31, 27, 33, 9359, 9361, 14191, 2]
 // Exports: default
 
-// Module 14189 (EmojiGallery)
+// Module 14190 (EmojiGallery)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

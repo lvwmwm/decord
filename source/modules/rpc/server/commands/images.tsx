@@ -1,8 +1,8 @@
-// Module ID: 13465
-// Function ID: 103516
-// Dependencies: [1850, 4034, 653, 10556, 1392, 10553, 1447, 2]
+// Module ID: 13466
+// Function ID: 103521
+// Dependencies: [1850, 4034, 653, 10557, 1392, 10554, 1447, 2]
 
-// Module 13465
+// Module 13466
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -11,7 +11,7 @@ const RPCErrors = ME.RPCErrors;
 let obj = {
   scope: require("RPC_SCOPE_CONFIG").RPC_LOCAL_SCOPE,
   validation(string) {
-    let obj = importDefault(10556)(string);
+    let obj = importDefault(10557)(string);
     obj = {};
     const requiredResult = obj.required();
     const stringResult = string.string();
@@ -42,7 +42,7 @@ let obj = {
     if ("user" === args.type) {
       user = user.getUser(id);
       if (null == user) {
-        let tmp15 = importDefault(10553);
+        let tmp15 = importDefault(10554);
         let obj = { errorCode: RPCErrors.INVALID_USER };
         const _HermesInternal = HermesInternal;
         const prototype2 = tmp15.prototype;
@@ -63,7 +63,7 @@ let obj = {
       }
     }
     if (null == text) {
-      let tmp6 = importDefault(10553);
+      let tmp6 = importDefault(10554);
       obj = { errorCode: RPCErrors.INVALID_COMMAND };
       const prototype = tmp6.prototype;
       tmp6 = new tmp6(obj, "No valid type.");

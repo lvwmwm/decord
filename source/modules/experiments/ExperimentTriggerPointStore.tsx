@@ -1,9 +1,9 @@
-// Module ID: 12677
-// Function ID: 98414
+// Module ID: 12678
+// Function ID: 98419
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4045, 1188, 12678, 12679, 686, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4045, 1188, 12679, 12680, 686, 566, 2]
 
-// Module 12677 (_isNativeReflectConstruct)
+// Module 12678 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "apexExperiment";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -24,7 +24,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleConnectionOpen() {
-  const ConnectionOpenTriggerPoint = require(12679) /* commonTriggerPointConfiguration */.ConnectionOpenTriggerPoint;
+  const ConnectionOpenTriggerPoint = require(12680) /* commonTriggerPointConfiguration */.ConnectionOpenTriggerPoint;
   ConnectionOpenTriggerPoint.trigger();
 }
 let tmp3 = ((Store) => {

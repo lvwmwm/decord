@@ -1,10 +1,10 @@
-// Module ID: 11111
-// Function ID: 86449
+// Module ID: 11112
+// Function ID: 86454
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 4469, 5918, 4468, 1850, 653, 4124, 1852, 6134, 1184, 6036, 11110, 5914, 9501, 5685, 6135, 6130, 3777, 6137, 4471, 1212, 675, 9509, 8130, 4099, 11112, 1935, 4712, 4671, 5482, 11142, 7957, 11143, 5676, 2]
+// Dependencies: [5, 4469, 5918, 4468, 1850, 653, 4124, 1852, 6134, 1184, 6036, 11111, 5914, 9501, 5685, 6135, 6130, 3777, 6137, 4471, 1212, 675, 9509, 8130, 4099, 11113, 1935, 4712, 4671, 5482, 11143, 7957, 11144, 5676, 2]
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand
 
-// Module 11111 (_createForOfIteratorHelperLoose)
+// Module 11112 (_createForOfIteratorHelperLoose)
 import closure_3 from "ME";
 import { DraftType } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -339,7 +339,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
                           outer1_15({ text: closure_0, parsedMessage: c2, tts: undefined, source: "AddMediaToOriginalForumPostActionSheet", params });
                         }
             };
-            params(4099).openLazy(require(1935) /* maybeLoadBundle */(11112, dependencyMap.paths), "add-media-to-original-forum-post", obj);
+            params(4099).openLazy(require(1935) /* maybeLoadBundle */(11113, dependencyMap.paths), "add-media-to-original-forum-post", obj);
             const obj6 = params(4099);
           }
           obj4 = require(8130) /* isValidImageAttachment */;

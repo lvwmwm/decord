@@ -1,5 +1,5 @@
 // Module ID: 3433
-// Function ID: 26698
+// Function ID: 26699
 // Name: endOfISOWeek
 // Dependencies: [3434, 3211]
 // Exports: default

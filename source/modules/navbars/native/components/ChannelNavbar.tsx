@@ -1,10 +1,10 @@
-// Module ID: 11808
-// Function ID: 91644
+// Module ID: 11809
+// Function ID: 91649
 // Name: ChannelTitleContent
-// Dependencies: [31, 27, 4809, 1352, 1348, 1838, 4218, 3768, 1850, 653, 1355, 1345, 33, 4131, 5053, 689, 566, 1212, 4594, 4321, 8994, 11809, 11810, 1273, 10079, 11811, 5085, 10077, 9290, 4661, 4127, 3970, 7917, 8278, 3947, 1334, 9602, 11812, 2]
+// Dependencies: [31, 27, 4809, 1352, 1348, 1838, 4218, 3768, 1850, 653, 1355, 1345, 33, 4131, 5053, 689, 566, 1212, 4594, 4321, 8994, 11810, 11811, 1273, 10079, 11812, 5085, 10077, 9290, 4661, 4127, 3970, 7917, 8278, 3947, 1334, 9602, 11813, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 11808 (ChannelTitleContent)
+// Module 11809 (ChannelTitleContent)
 import importAllResult from "conceal";
 import { View } from "registerAsset";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

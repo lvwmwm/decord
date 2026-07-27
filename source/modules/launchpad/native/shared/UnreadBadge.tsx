@@ -1,8 +1,8 @@
-// Module ID: 15721
-// Function ID: 121310
-// Dependencies: [31, 27, 10222, 4327, 33, 4131, 15717, 4550, 9056, 2]
+// Module ID: 15733
+// Function ID: 121357
+// Dependencies: [31, 27, 10223, 4327, 33, 4131, 15729, 4550, 9056, 2]
 
-// Module 15721
+// Module 15733
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -17,7 +17,7 @@ const memoResult = require("result").memo(function UnreadBadge(arg0) {
   let resolvedUnreadSetting;
   let unread;
   ({ unread, resolvedUnreadSetting, muted } = arg0);
-  const tmp2 = importDefault(15717)();
+  const tmp2 = importDefault(15729)();
   require(4550) /* getFontScale */;
   let tmp6Result = null;
   if (unread) {

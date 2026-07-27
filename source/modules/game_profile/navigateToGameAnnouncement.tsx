@@ -1,5 +1,5 @@
 // Module ID: 8590
-// Function ID: 68237
+// Function ID: 68238
 // Name: _navigateToGameAnnouncement
 // Dependencies: [5, 1838, 653, 44, 6632, 6636, 1198, 2]
 // Exports: default

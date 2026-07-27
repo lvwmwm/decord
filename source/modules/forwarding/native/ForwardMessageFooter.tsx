@@ -1,5 +1,5 @@
 // Module ID: 9853
-// Function ID: 76398
+// Function ID: 76399
 // Name: ForwardMessageFooter
 // Dependencies: [57, 31, 4469, 33, 9831, 6105, 566, 6036, 9854, 1212, 9855, 9856, 4544, 9863, 2]
 // Exports: ForwardMessageFooter

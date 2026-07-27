@@ -1,5 +1,5 @@
 // Module ID: 10123
-// Function ID: 78365
+// Function ID: 78366
 // Name: getNavigationModalPresentation
 // Dependencies: [477, 6504, 4111, 8105, 2]
 // Exports: default

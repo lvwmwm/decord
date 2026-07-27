@@ -1,10 +1,10 @@
-// Module ID: 11647
-// Function ID: 90396
+// Module ID: 11648
+// Function ID: 90401
 // Name: GuildIconPile
-// Dependencies: [31, 33, 5513, 9869, 11648, 7909, 9870, 2]
+// Dependencies: [31, 33, 5513, 9869, 11649, 7909, 9870, 2]
 // Exports: GuildIconPile
 
-// Module 11647 (GuildIconPile)
+// Module 11648 (GuildIconPile)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -24,7 +24,7 @@ export const GuildIconPile = function GuildIconPile(arg0) {
   ({ size, names } = arg0);
   const countResult = Children.count(children);
   const tmp2 = require(5513) /* makeSizeStyle */.ImageSizes[size];
-  let obj = { "aria-label": require(11648) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7909) /* SolidCutout */.CutoutShape.RoundedRect, size: tmp2 };
+  let obj = { "aria-label": require(11649) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7909) /* SolidCutout */.CutoutShape.RoundedRect, size: tmp2 };
   let num = 3;
   if (tmp2 <= 40) {
     num = 2;

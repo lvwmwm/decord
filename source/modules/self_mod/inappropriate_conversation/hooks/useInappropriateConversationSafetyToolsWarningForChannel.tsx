@@ -1,5 +1,5 @@
 // Module ID: 10068
-// Function ID: 78066
+// Function ID: 78067
 // Name: useInappropriateConversationSafetyToolsWarningForChannel
 // Dependencies: [10069, 10070, 10072, 2]
 // Exports: useInappropriateConversationSafetyToolsWarningForChannel

@@ -1,10 +1,10 @@
-// Module ID: 11982
-// Function ID: 92599
+// Module ID: 11983
+// Function ID: 92604
 // Name: UserProfileEditNoteModal
-// Dependencies: [31, 33, 4338, 5517, 478, 1212, 4127, 5087, 11983, 2]
+// Dependencies: [31, 33, 4338, 5517, 478, 1212, 4127, 5087, 11984, 2]
 // Exports: default
 
-// Module 11982 (UserProfileEditNoteModal)
+// Module 11983 (UserProfileEditNoteModal)
 import "result";
 import { jsx } from "jsxProd";
 

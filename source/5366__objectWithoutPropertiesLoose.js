@@ -1,5 +1,5 @@
 // Module ID: 5366
-// Function ID: 46021
+// Function ID: 46022
 // Name: _objectWithoutPropertiesLoose
 // Dependencies: []
 

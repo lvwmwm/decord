@@ -1,10 +1,10 @@
-// Module ID: 12535
-// Function ID: 97023
+// Module ID: 12536
+// Function ID: 97028
 // Name: PremiumText
 // Dependencies: [31, 27, 1852, 33, 4131, 3975, 689, 3777, 1212, 1273, 2]
 // Exports: default
 
-// Module 12535 (PremiumText)
+// Module 12536 (PremiumText)
 import "result";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";

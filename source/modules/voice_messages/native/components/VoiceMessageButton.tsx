@@ -1,9 +1,9 @@
-// Module ID: 11352
-// Function ID: 88199
+// Module ID: 11353
+// Function ID: 88204
 // Name: VoiceMessageRecordingCancelledToastIcon
-// Dependencies: [5, 57, 31, 27, 3824, 5912, 1348, 11090, 11091, 653, 4124, 4345, 33, 4131, 689, 7695, 3982, 4342, 11353, 3992, 1324, 8756, 10826, 1450, 11001, 4665, 4666, 5685, 6135, 9501, 1207, 3832, 1212, 10191, 3983, 4676, 3831, 8231, 5217, 11355, 11336, 10736, 2]
+// Dependencies: [5, 57, 31, 27, 3824, 5912, 1348, 11091, 11092, 653, 4124, 4345, 33, 4131, 689, 7695, 3982, 4342, 11354, 3992, 1324, 8756, 10827, 1450, 11002, 4665, 4666, 5685, 6135, 9501, 1207, 3832, 1212, 10192, 3983, 4676, 3831, 8231, 5217, 11356, 11337, 10737, 2]
 
-// Module 11352 (VoiceMessageRecordingCancelledToastIcon)
+// Module 11353 (VoiceMessageRecordingCancelledToastIcon)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "dispatcher";
@@ -43,8 +43,8 @@ function VoiceMessageRecordingCancelledToastIcon() {
 }
 function triggerHapticGuarded() {
   if (state.getState().showRecordingOverlay) {
-    require(11353) /* generateBase64EncodedWaveform */.triggerHaptic();
-    const obj = require(11353) /* generateBase64EncodedWaveform */;
+    require(11354) /* generateBase64EncodedWaveform */.triggerHaptic();
+    const obj = require(11354) /* generateBase64EncodedWaveform */;
   }
 }
 ({ View: closure_6, AppState: closure_7 } = get_ActivityIndicator);
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo((disabled) => {
   const currentState = importAllResult.useRef(true);
   let _isNativeReflectConstruct = importAllResult.useRef(currentState.currentState);
   let closure_9 = importAllResult.useRef(null);
-  const tmp9 = channelId(10826)();
+  const tmp9 = channelId(10827)();
   let items = [channelId, tmp5[2]];
   const callback = importAllResult.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
@@ -129,7 +129,7 @@ const memoResult = importAllResult.memo((disabled) => {
         tmp = tmp2;
       }
       if (!tmp) {
-        tmp = outer1_9.current !== disabled(11001).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND;
+        tmp = outer1_9.current !== disabled(11002).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND;
       }
       if (!tmp) {
         let obj = channelId(3832);
@@ -329,11 +329,11 @@ const memoResult = importAllResult.memo((disabled) => {
     return onUpdateResult.onFinalize(fn3);
   }, items8);
   obj = { gesture: memo };
-  obj1 = { ref: channelId(11355)().tooltipTargetRef };
+  obj1 = { ref: channelId(11356)().tooltipTargetRef };
   const tmp22Result = tmp22(sharedValue(8231), intl.string(disabled(1212).t.lwy6aX));
   const tmp27 = jsx;
   const tmp28 = jsx;
-  obj1.IconComponent = disabled(10736).MicrophoneIcon;
+  obj1.IconComponent = disabled(10737).MicrophoneIcon;
   obj1.active = false;
   const intl2 = disabled(1212).intl;
   obj1.accessibilityLabel = intl2.string(disabled(1212).t.lwy6aX);
@@ -345,7 +345,7 @@ const memoResult = importAllResult.memo((disabled) => {
     tmp30 = clientThemesOverride;
   }
   obj1.style = tmp30;
-  obj.children = tmp28(channelId(11336), obj1);
+  obj.children = tmp28(channelId(11337), obj1);
   return tmp27(disabled(5217).GestureDetector, obj);
 });
 let result = require("result").fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageButton.tsx");

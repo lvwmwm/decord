@@ -1,5 +1,5 @@
 // Module ID: 7854
-// Function ID: 62681
+// Function ID: 62682
 // Name: ContentInventoryTraitType
 // Dependencies: [2]
 

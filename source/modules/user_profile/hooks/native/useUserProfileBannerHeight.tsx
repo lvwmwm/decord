@@ -1,5 +1,5 @@
 // Module ID: 8305
-// Function ID: 66755
+// Function ID: 66756
 // Name: useUserProfileBannerHeight
 // Dependencies: [5510, 1450, 2]
 // Exports: default

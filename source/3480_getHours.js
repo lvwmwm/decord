@@ -1,5 +1,5 @@
 // Module ID: 3480
-// Function ID: 26879
+// Function ID: 26880
 // Name: getHours
 // Dependencies: [3210, 3211]
 // Exports: default

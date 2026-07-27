@@ -1,5 +1,5 @@
 // Module ID: 5994
-// Function ID: 53302
+// Function ID: 53303
 // Name: isGuildOfficialMessagesEnabled
 // Dependencies: [1838, 3759, 4124, 653, 665, 666, 3975, 3977, 5995, 566, 5996, 5870, 2]
 // Exports: canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages

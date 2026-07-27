@@ -1,5 +1,5 @@
 // Module ID: 8441
-// Function ID: 67307
+// Function ID: 67308
 // Name: XboxNeutralIcon
 // Dependencies: [31, 33, 689, 3834, 8442, 2]
 // Exports: XboxNeutralIcon

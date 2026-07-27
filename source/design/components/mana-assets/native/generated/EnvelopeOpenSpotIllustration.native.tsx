@@ -1,5 +1,5 @@
 // Module ID: 6956
-// Function ID: 59669
+// Function ID: 59670
 // Name: EnvelopeOpenSpotIllustration
 // Dependencies: [33, 5085, 6957, 2]
 // Exports: EnvelopeOpenSpotIllustration

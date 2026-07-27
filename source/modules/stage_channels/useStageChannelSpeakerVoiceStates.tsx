@@ -1,10 +1,10 @@
-// Module ID: 15117
-// Function ID: 115126
+// Module ID: 15129
+// Function ID: 115172
 // Name: transformParticipantToSortedVoiceState
 // Dependencies: [57, 1351, 1348, 4204, 4952, 566, 1841, 21, 1327, 4958, 4965, 2]
 // Exports: default
 
-// Module 15117 (transformParticipantToSortedVoiceState)
+// Module 15129 (transformParticipantToSortedVoiceState)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

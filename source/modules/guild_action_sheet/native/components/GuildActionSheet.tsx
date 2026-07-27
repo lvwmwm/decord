@@ -1,8 +1,8 @@
-// Module ID: 13042
-// Function ID: 100927
-// Dependencies: [31, 27, 33, 4131, 689, 1557, 7892, 5187, 5189, 477, 13037, 13043, 12980, 13044, 13047, 5446, 2]
+// Module ID: 13043
+// Function ID: 100932
+// Dependencies: [31, 27, 33, 4131, 689, 1557, 7892, 5187, 5189, 477, 13038, 13044, 12981, 13045, 13048, 5446, 2]
 
-// Module 13042
+// Module 13043
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -39,9 +39,9 @@ const memoResult = require("result").memo(function GuildActionSheet(arg0) {
   }
   obj1.paddingBottom = importDefault(1557)().bottom + num;
   obj.contentContainerStyle = obj1;
-  const items = [callback(importDefault(13037), { guild }), callback(importDefault(13043), { guild }), , ];
+  const items = [callback(importDefault(13038), { guild }), callback(importDefault(13044), { guild }), , ];
   const obj2 = { style: tmp.actions };
-  const items1 = [callback(require(12980) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), callback(importDefault(13044), { guild }), callback(require(12980) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), callback(require(12980) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), callback(require(12980) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), callback(importDefault(13047), { guildId: guild.id })];
+  const items1 = [callback(require(12981) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), callback(importDefault(13045), { guild }), callback(require(12981) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), callback(require(12981) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), callback(require(12981) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), callback(importDefault(13048), { guildId: guild.id })];
   obj2.children = items1;
   items[2] = callback2(View, obj2);
   items[3] = callback(require(5446) /* ActionSheetHeaderBar */.ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });

@@ -1,5 +1,5 @@
 // Module ID: 3502
-// Function ID: 26942
+// Function ID: 26943
 // Name: intlFormat
 // Dependencies: [3211]
 // Exports: default

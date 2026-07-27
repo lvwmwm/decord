@@ -1,5 +1,5 @@
 // Module ID: 9348
-// Function ID: 73020
+// Function ID: 73021
 // Name: useEmojiAndSource
 // Dependencies: [5, 57, 31, 1838, 4992, 5514, 653, 3775, 624, 2]
 // Exports: useEmojiAndSource

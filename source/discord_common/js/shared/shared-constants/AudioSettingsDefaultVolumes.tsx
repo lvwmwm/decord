@@ -1,5 +1,5 @@
 // Module ID: 8773
-// Function ID: 69486
+// Function ID: 69487
 // Name: AudioSettingsDefaultVolumes
 // Dependencies: [2]
 

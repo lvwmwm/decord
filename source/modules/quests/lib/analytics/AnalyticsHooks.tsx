@@ -1,16 +1,16 @@
-// Module ID: 10903
-// Function ID: 84676
+// Module ID: 10904
+// Function ID: 84681
 // Name: useTrackQuestEventWithImpression
-// Dependencies: [31, 653, 10431, 5949, 5930, 5961, 5959, 5909, 491, 477, 5966, 4980, 5960, 675, 2]
+// Dependencies: [31, 653, 10432, 5949, 5930, 5961, 5959, 5909, 491, 477, 5966, 4980, 5960, 675, 2]
 // Exports: useBountyCarouselEmptyStateAnalytics, useQuestHomeEntrypointAnalyticsEvents, useQuestsEmbedFallbackAnalytics, useTrackAdContentClickedWithImpression, useTrackQuestContentClickedWithImpression
 
-// Module 10903 (useTrackQuestEventWithImpression)
+// Module 10904 (useTrackQuestEventWithImpression)
 import result from "result";
 import { AnalyticEvents } from "ME";
 
 let require = arg1;
 function useTrackQuestEventWithImpression() {
-  questImpression = questImpression(10431).useQuestImpression();
+  questImpression = questImpression(10432).useQuestImpression();
   const items = [questImpression];
   return React.useCallback((properties) => {
     let obj = questImpression(outer1_2[3]);
@@ -28,7 +28,7 @@ function useTrackQuestEventWithImpression() {
   }, items);
 }
 function useTrackAdContentEventWithImpression() {
-  questImpression = questImpression(10431).useQuestImpression();
+  questImpression = questImpression(10432).useQuestImpression();
   const items = [questImpression];
   return React.useCallback((properties) => {
     let obj = questImpression(outer1_2[3]);

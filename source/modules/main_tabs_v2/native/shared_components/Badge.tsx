@@ -1,5 +1,5 @@
 // Module ID: 9056
-// Function ID: 71169
+// Function ID: 71170
 // Name: DEFAULT_BADGE_SIZE
 // Dependencies: [31, 27, 33, 4131, 689, 2]
 

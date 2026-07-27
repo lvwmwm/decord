@@ -1,10 +1,10 @@
-// Module ID: 11833
-// Function ID: 91740
+// Module ID: 11834
+// Function ID: 91745
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
 // Dependencies: [31, 27, 33, 4131, 689, 1557, 4338, 5769, 5482, 6725, 1212, 5119, 4127, 2295, 9762, 2]
 // Exports: default
 
-// Module 11833 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 11834 (CollectiblesShopGiftBadgePostPurchaseModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

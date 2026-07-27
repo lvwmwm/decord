@@ -1,5 +1,5 @@
 // Module ID: 7911
-// Function ID: 63007
+// Function ID: 63008
 // Name: flattenColorOverOpaqueBackground
 // Dependencies: [666, 2]
 // Exports: flattenColorOverOpaqueBackground

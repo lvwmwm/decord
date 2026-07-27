@@ -1,5 +1,5 @@
 // Module ID: 3750
-// Function ID: 28608
+// Function ID: 28609
 // Name: isSubscriptionRole
 // Dependencies: [2]
 // Exports: isSubscriptionRole, isSubscriptionRoleAvailableForPurchase

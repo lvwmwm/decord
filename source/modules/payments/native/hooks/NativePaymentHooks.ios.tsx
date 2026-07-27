@@ -1,5 +1,5 @@
 // Module ID: 6609
-// Function ID: 58496
+// Function ID: 58497
 // Name: useNativeIAPPayments
 // Dependencies: [5, 57, 31, 5621, 3782, 3783, 5619, 653, 3, 566, 6274, 6610, 3792, 6611, 5450, 675, 6239, 5622, 44, 4452, 6613, 6614, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription

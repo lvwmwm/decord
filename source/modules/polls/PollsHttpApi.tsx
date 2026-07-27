@@ -1,5 +1,5 @@
 // Module ID: 9901
-// Function ID: 76710
+// Function ID: 76711
 // Name: _submitPollVote
 // Dependencies: [5, 653, 507, 4030, 2]
 // Exports: endPollEarly, submitPollVote

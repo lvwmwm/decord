@@ -1,10 +1,10 @@
-// Module ID: 15035
-// Function ID: 114604
+// Module ID: 15036
+// Function ID: 114608
 // Name: num2
 // Dependencies: [31, 27, 1850, 7665, 33, 477, 4131, 689, 566, 7881, 8384, 4127, 2]
 // Exports: default
 
-// Module 15035 (num2)
+// Module 15036 (num2)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

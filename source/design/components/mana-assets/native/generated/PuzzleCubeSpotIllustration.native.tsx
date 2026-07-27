@@ -1,5 +1,5 @@
 // Module ID: 7352
-// Function ID: 60263
+// Function ID: 60264
 // Name: PuzzleCubeSpotIllustration
 // Dependencies: [33, 5085, 7353, 2]
 // Exports: PuzzleCubeSpotIllustration

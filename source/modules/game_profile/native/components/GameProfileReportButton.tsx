@@ -1,10 +1,10 @@
-// Module ID: 11874
-// Function ID: 91929
+// Module ID: 11875
+// Function ID: 91934
 // Name: GameProfileReportButton
-// Dependencies: [31, 33, 4099, 8418, 4338, 11875, 1935, 11875, 4544, 1212, 2]
+// Dependencies: [31, 33, 4099, 8418, 4338, 11876, 1935, 11876, 4544, 1212, 2]
 // Exports: default
 
-// Module 11874 (GameProfileReportButton)
+// Module 11875 (GameProfileReportButton)
 import result from "result";
 import { jsx } from "jsxProd";
 

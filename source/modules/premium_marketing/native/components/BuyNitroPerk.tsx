@@ -1,5 +1,5 @@
 // Module ID: 6617
-// Function ID: 58549
+// Function ID: 58550
 // Name: BuyNitroPerk
 // Dependencies: [31, 27, 33, 4131, 689, 5164, 6618, 2]
 // Exports: default

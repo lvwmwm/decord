@@ -1,10 +1,10 @@
-// Module ID: 10617
-// Function ID: 82754
+// Module ID: 10618
+// Function ID: 82759
 // Name: ModeratorStartStageView
-// Dependencies: [57, 31, 1838, 33, 566, 8259, 10618, 8204, 8258, 10619, 8148, 10620, 1212, 10637, 10638, 2]
+// Dependencies: [57, 31, 1838, 33, 566, 8259, 10619, 8204, 8258, 10620, 8148, 10621, 1212, 10638, 10639, 2]
 // Exports: default
 
-// Module 10617 (ModeratorStartStageView)
+// Module 10618 (ModeratorStartStageView)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ export default function ModeratorStartStageView(channel) {
   const first = callback(obj1.useGuildChannelScheduledEvents(channel.id), 1)[0];
   let obj2 = guild_id(8204);
   const canManageGuildEventResult = obj2.useManageResourcePermissions(channel).canManageGuildEvent(first);
-  let obj3 = guild_id(10619);
+  let obj3 = guild_id(10620);
   const isLive = obj3.useStageChannelStartEvent(channel.id).isLive;
   let obj4 = guild_id(8148);
   const nextRecurrenceIdInEvent = obj4.getNextRecurrenceIdInEvent(first);
@@ -48,28 +48,28 @@ export default function ModeratorStartStageView(channel) {
       tmp15 = null;
       if (null != first) {
         obj1 = { channel, event: first, isLive, guild: stateFromStores, recurrenceId: tmp6 };
-        tmp15 = callback2(guild_id(10637).StartEventPrompt, obj1);
+        tmp15 = callback2(guild_id(10638).StartEventPrompt, obj1);
       }
     }
     const items2 = [tmp15, , , ];
     let tmp19 = null;
-    if (importDefault(10618)(channel.id, true).moderator) {
+    if (importDefault(10619)(channel.id, true).moderator) {
       obj2 = { channel, isLive };
-      tmp19 = callback2(guild_id(10638).StartStagePrompt, obj2);
+      tmp19 = callback2(guild_id(10639).StartStagePrompt, obj2);
     }
     items2[1] = tmp19;
     let tmp23 = null;
     if (tmp4) {
       obj3 = { channel, isLive, guild: stateFromStores };
-      tmp23 = callback2(guild_id(10637).ScheduleEventPrompt, obj3);
+      tmp23 = callback2(guild_id(10638).ScheduleEventPrompt, obj3);
     }
     items2[2] = tmp23;
     obj4 = { onContinue: channel.onSkip };
-    items2[3] = callback2(guild_id(10638).ContinueToStagePrompt, obj4);
+    items2[3] = callback2(guild_id(10639).ContinueToStagePrompt, obj4);
     obj.children = items2;
     obj.children = closure_7(closure_6, obj);
-    tmp8Result = callback2(importDefault(10620), obj);
-    const tmp11 = importDefault(10620);
+    tmp8Result = callback2(importDefault(10621), obj);
+    const tmp11 = importDefault(10621);
     const tmp13 = closure_7;
     const tmp14 = closure_6;
     const tmp8 = callback2;

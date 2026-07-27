@@ -1,10 +1,10 @@
-// Module ID: 12538
-// Function ID: 97046
+// Module ID: 12539
+// Function ID: 97051
 // Name: getGiftingBadgeProgressPercent
-// Dependencies: [8047, 1850, 8703, 12539, 566, 3947, 1334, 2]
+// Dependencies: [8047, 1850, 8703, 12540, 566, 3947, 1334, 2]
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
-// Module 12538 (getGiftingBadgeProgressPercent)
+// Module 12539 (getGiftingBadgeProgressPercent)
 import { getSingleRequirementThreshold as closure_2 } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -32,7 +32,7 @@ export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDeskt
   const GiftingBadgeExperiment = require(8703) /* apexExperiment */.GiftingBadgeExperiment;
   let obj = { location };
   const enabled = GiftingBadgeExperiment.useConfig(obj).enabled;
-  const GiftingBadgeDesktopExperiment = require(12539) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = require(12540) /* apexExperiment */.GiftingBadgeDesktopExperiment;
   obj = {};
   let str = "-DISABLED";
   if (enabled) {
@@ -47,7 +47,7 @@ export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDeskt
   const tmp = !GiftingBadgeExperiment.getConfig(obj).enabled;
   let enabled = !tmp;
   if (!tmp) {
-    const GiftingBadgeDesktopExperiment = require(12539) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+    const GiftingBadgeDesktopExperiment = require(12540) /* apexExperiment */.GiftingBadgeDesktopExperiment;
     obj = { location };
     enabled = GiftingBadgeDesktopExperiment.getConfig(obj).enabled;
   }
@@ -57,7 +57,7 @@ export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleTo
   const _location = location.location;
   const GiftingBadgeExperiment = require(8703) /* apexExperiment */.GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: _location }).enabled;
-  const GiftingBadgeDesktopExperiment = require(12539) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = require(12540) /* apexExperiment */.GiftingBadgeDesktopExperiment;
   const obj = {};
   let str = "-DISABLED";
   if ("web" === location.platform) {

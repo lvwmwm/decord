@@ -1,10 +1,10 @@
-// Module ID: 16333
-// Function ID: 127174
+// Module ID: 16345
+// Function ID: 127221
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 57, 31, 27, 8219, 1838, 8243, 653, 7665, 33, 4131, 689, 1456, 8245, 566, 8220, 7881, 8221, 8242, 3831, 1212, 11508, 4022, 5087, 6695, 1529, 4472, 1273, 5583, 11887, 4127, 5501, 5502, 5164, 4542, 12985, 7575, 12983, 16334, 2]
+// Dependencies: [5, 57, 31, 27, 8219, 1838, 8243, 653, 7665, 33, 4131, 689, 1456, 8245, 566, 8220, 7881, 8221, 8242, 3831, 1212, 11509, 4022, 5087, 6695, 1529, 4472, 1273, 5583, 11888, 4127, 5501, 5502, 5164, 4542, 12986, 7575, 12984, 16346, 2]
 // Exports: default
 
-// Module 16333 (GuildSettingsModalServerTag)
+// Module 16345 (GuildSettingsModalServerTag)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
@@ -262,7 +262,7 @@ export default function GuildSettingsModalServerTag(guildId) {
                   return guildId(result[17]).getGuildProfile(guildId, true);
                 }
         };
-        return callback(navigation(11887), obj);
+        return callback(navigation(11888), obj);
       } else if (null == stateFromStores1) {
         return callback(guildId(5583).SceneLoadingIndicator, {});
       } else {
@@ -317,7 +317,7 @@ export default function GuildSettingsModalServerTag(guildId) {
             }
             obj5.secondaryTintColor = tmp52;
             ({ SIZE_16: obj14.width, SIZE_16: obj14.height } = c12);
-            tmp48Result = callback(guildId(12985).GuildBadge, obj5);
+            tmp48Result = callback(guildId(12986).GuildBadge, obj5);
             const tmp48 = callback;
           }
           const items12 = [tmp48Result, tmp33];
@@ -345,12 +345,12 @@ export default function GuildSettingsModalServerTag(guildId) {
           const obj10 = { guildId };
           ({ tag: obj20.tag, badge: obj20.badge, badgeColorPrimary: obj20.primaryColor, badgeColorSecondary: obj20.secondaryColor } = stateFromStores1);
           obj10.isDirty = result1;
-          items14[3] = tmp61(tmp59(12983), obj10);
+          items14[3] = tmp61(tmp59(12984), obj10);
           obj7.children = items14;
           let tmp62 = obj7;
         } else {
           const obj11 = { guildId, onUnlockPress: callback2 };
-          const items15 = [tmp61(tmp59(16334), obj11), tmp37Result];
+          const items15 = [tmp61(tmp59(16346), obj11), tmp37Result];
           obj7.children = items15;
           tmp62 = obj7;
         }

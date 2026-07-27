@@ -1,5 +1,5 @@
 // Module ID: 4534
-// Function ID: 39823
+// Function ID: 39824
 // Name: getIOSBlurEffect
 // Dependencies: [31, 27, 4535, 33, 477, 4536, 3835, 689, 4539, 3975, 2]
 

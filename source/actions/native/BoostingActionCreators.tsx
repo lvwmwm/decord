@@ -1,5 +1,5 @@
 // Module ID: 4967
-// Function ID: 42691
+// Function ID: 42692
 // Name: openApplyBoostModal
 // Dependencies: [4338, 4968, 1935, 2]
 // Exports: closeApplyBoostModal, openApplyBoostModal, openTransferModal

@@ -1,5 +1,5 @@
 // Module ID: 9283
-// Function ID: 72726
+// Function ID: 72727
 // Name: EducationCoachmarkImg
 // Dependencies: [57, 31, 27, 1850, 1345, 33, 1334, 4131, 689, 6567, 566, 3777, 8379, 1212, 8368, 2]
 // Exports: default

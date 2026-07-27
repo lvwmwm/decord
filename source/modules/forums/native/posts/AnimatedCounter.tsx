@@ -1,9 +1,9 @@
-// Module ID: 10314
-// Function ID: 79724
+// Module ID: 10315
+// Function ID: 79729
 // Name: getStartPosition
-// Dependencies: [57, 31, 27, 33, 4131, 44, 3992, 4477, 4543, 4127, 4547, 10315, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 44, 3992, 4477, 4543, 4127, 4547, 10316, 2]
 
-// Module 10314 (getStartPosition)
+// Module 10315 (getStartPosition)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -216,7 +216,7 @@ const memoResult = importAllResult.memo((textColor) => {
   }
   let defaultFormatter = textColor.formatter;
   if (defaultFormatter === undefined) {
-    defaultFormatter = require(10315) /* defaultFormatter */.defaultFormatter;
+    defaultFormatter = require(10316) /* defaultFormatter */.defaultFormatter;
   }
   if (animate) {
     let obj = { count, formatter: defaultFormatter, springConfig: textColor.springConfig, textColor: str, textVariant: str2, textStyle };

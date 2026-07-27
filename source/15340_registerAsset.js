@@ -1,11 +1,11 @@
 // Module ID: 15340
-// Function ID: 117012
+// Function ID: 116995
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 15340 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 14, height: 14, scales: [2, 3], hash: "c34a0c861b7d42ccaa05d56a524cbcd8", name: "ic_public", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "e831387e9387034c87c9b5bc784cf6eb", name: "partner_icon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

@@ -1,10 +1,10 @@
-// Module ID: 10411
-// Function ID: 80488
+// Module ID: 10412
+// Function ID: 80493
 // Name: doesGameHaveRichPresence
 // Dependencies: [4168, 1882, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 10411 (doesGameHaveRichPresence)
+// Module 10412 (doesGameHaveRichPresence)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

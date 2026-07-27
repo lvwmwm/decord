@@ -1,9 +1,9 @@
-// Module ID: 12710
-// Function ID: 98875
+// Module ID: 12711
+// Function ID: 98880
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 1850, 12711, 3375, 3403, 3358, 12712, 664, 12715, 566, 686, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 1850, 12712, 3375, 3403, 3358, 12713, 664, 12716, 566, 686, 2]
 
-// Module 12710 (_isNativeReflectConstruct)
+// Module 12711 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import NetworkTtlCache from "NetworkTtlCache";

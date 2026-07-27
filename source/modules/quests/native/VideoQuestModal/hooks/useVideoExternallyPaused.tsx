@@ -1,10 +1,10 @@
-// Module ID: 14114
-// Function ID: 108532
+// Module ID: 14115
+// Function ID: 108537
 // Name: useVideoExternallyPaused
-// Dependencies: [3824, 9232, 3982, 10437, 566, 4473, 477, 2]
+// Dependencies: [3824, 9232, 3982, 10438, 566, 4473, 477, 2]
 // Exports: useVideoExternallyPaused
 
-// Module 14114 (useVideoExternallyPaused)
+// Module 14115 (useVideoExternallyPaused)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -15,8 +15,8 @@ export const useVideoExternallyPaused = function useVideoExternallyPaused(id, ar
   const obj = require(9232) /* updateContextMenuState */;
   const openModalKey = require(3982) /* _createForOfIteratorHelperLoose */.useOpenModalKey();
   const obj2 = require(3982) /* _createForOfIteratorHelperLoose */;
-  const obj3 = require(10437) /* sendVideoProgress */;
-  const tmp3 = openModalKey !== require(10437) /* sendVideoProgress */.getVideoQuestModalKey(id);
+  const obj3 = require(10438) /* sendVideoProgress */;
+  const tmp3 = openModalKey !== require(10438) /* sendVideoProgress */.getVideoQuestModalKey(id);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getKey());
   const obj4 = require(566) /* initialize */;

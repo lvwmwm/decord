@@ -1,10 +1,10 @@
-// Module ID: 11745
-// Function ID: 91220
+// Module ID: 11746
+// Function ID: 91225
 // Name: InstantInviteAgeText
 // Dependencies: [31, 27, 8287, 33, 4131, 566, 4127, 8288, 4661, 8286, 1212, 2]
 // Exports: default
 
-// Module 11745 (InstantInviteAgeText)
+// Module 11746 (InstantInviteAgeText)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

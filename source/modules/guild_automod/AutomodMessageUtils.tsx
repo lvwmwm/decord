@@ -1,5 +1,5 @@
 // Module ID: 5736
-// Function ID: 49832
+// Function ID: 49833
 // Name: getEmbedFieldFromMessage
 // Dependencies: [57, 31, 1348, 3759, 3768, 1850, 653, 5737, 5738, 5739, 1212, 5740, 5741, 5742, 4321, 5743, 5744, 5745, 566, 5746, 2]
 // Exports: default, extractAutomodNotificationFields, getActionHeaderText, getActionHeaderTextMobile, getQuarantineReasonString, getRaidAlertResolveCTAText, getUserIdOfAutomodAction, isAutomodMessageRecord, isAutomodNotification, useAutomodAlertActions

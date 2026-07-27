@@ -1,10 +1,10 @@
-// Module ID: 15925
-// Function ID: 123112
+// Module ID: 15937
+// Function ID: 123159
 // Name: VoicePanelMaxCapacityAlert
-// Dependencies: [31, 1348, 33, 624, 4476, 4476, 15923, 1212, 2]
+// Dependencies: [31, 1348, 33, 624, 4476, 4476, 15935, 1212, 2]
 // Exports: default
 
-// Module 15925 (VoicePanelMaxCapacityAlert)
+// Module 15937 (VoicePanelMaxCapacityAlert)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -30,7 +30,7 @@ export default function VoicePanelMaxCapacityAlert(channelId) {
     return num;
   }, items1);
   const obj2 = channelId(4476);
-  obj = { header: jsx(importDefault(15923), {}) };
+  obj = { header: jsx(importDefault(15935), {}) };
   const intl = channelId(1212).intl;
   obj.title = intl.string(channelId(1212).t.hHbsQj);
   const intl2 = channelId(1212).intl;

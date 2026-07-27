@@ -1,5 +1,5 @@
 // Module ID: 7972
-// Function ID: 63523
+// Function ID: 63524
 // Name: resolveGiftCode
 // Dependencies: [5, 4168, 5770, 5778, 653, 1852, 686, 4367, 5463, 5769, 4030, 507, 7973, 7974, 2]
 // Exports: resolveGiftCode

@@ -1,5 +1,5 @@
 // Module ID: 9648
-// Function ID: 75219
+// Function ID: 75220
 // Name: useShouldShowGiftingPromotionDeco
 // Dependencies: [1852, 8736, 2]
 // Exports: default

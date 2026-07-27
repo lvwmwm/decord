@@ -1,10 +1,10 @@
-// Module ID: 10230
-// Function ID: 79179
+// Module ID: 10231
+// Function ID: 79184
 // Name: createInlineChannelReact
 // Dependencies: [31, 33, 9929, 1273, 1327, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact
 
-// Module 10230 (createInlineChannelReact)
+// Module 10231 (createInlineChannelReact)
 import "result";
 import { jsxs } from "jsxProd";
 

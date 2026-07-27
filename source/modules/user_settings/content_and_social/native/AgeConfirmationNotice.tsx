@@ -1,10 +1,10 @@
-// Module ID: 13783
-// Function ID: 105698
+// Module ID: 13784
+// Function ID: 105703
 // Name: AgeConfirmationNotice
-// Dependencies: [31, 27, 6659, 33, 5855, 13713, 3828, 1921, 6690, 6692, 689, 1273, 4544, 1212, 4127, 2]
+// Dependencies: [31, 27, 6659, 33, 5855, 13714, 3828, 1921, 6690, 6692, 689, 1273, 4544, 1212, 4127, 2]
 // Exports: default
 
-// Module 13783 (AgeConfirmationNotice)
+// Module 13784 (AgeConfirmationNotice)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import SafetyToastType from "SafetyToastType";

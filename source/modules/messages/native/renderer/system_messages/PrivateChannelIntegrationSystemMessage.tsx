@@ -1,5 +1,5 @@
 // Module ID: 7754
-// Function ID: 61718
+// Function ID: 61719
 // Name: createPrivateChannelIntegrationSystemMessage
 // Dependencies: [653, 7684, 7686, 7719, 7687, 2]
 // Exports: createPrivateChannelIntegrationSystemMessage

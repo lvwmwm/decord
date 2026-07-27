@@ -1,5 +1,5 @@
 // Module ID: 8794
-// Function ID: 69646
+// Function ID: 69647
 // Name: isStableVoiceStateEqual
 // Dependencies: [4178, 4147, 620, 566, 2]
 // Exports: useMuteDeafenIconState, useVideoIconState

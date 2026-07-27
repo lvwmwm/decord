@@ -1,5 +1,5 @@
 // Module ID: 9213
-// Function ID: 72239
+// Function ID: 72240
 // Name: PaperIcon
 // Dependencies: [31, 33, 689, 3834, 9214, 2]
 // Exports: PaperIcon

@@ -1,5 +1,5 @@
 // Module ID: 5933
-// Function ID: 52807
+// Function ID: 52808
 // Name: useConsoleQuestUIStore
 // Dependencies: [621, 2]
 

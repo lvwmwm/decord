@@ -1,5 +1,5 @@
 // Module ID: 6341
-// Function ID: 57010
+// Function ID: 57011
 // Name: addTracingExtensions
 // Dependencies: [6307]
 

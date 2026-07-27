@@ -1,10 +1,10 @@
-// Module ID: 10736
-// Function ID: 83418
+// Module ID: 10737
+// Function ID: 83423
 // Name: MicrophoneIcon
-// Dependencies: [31, 33, 689, 3834, 10737, 2]
+// Dependencies: [31, 33, 689, 3834, 10738, 2]
 // Exports: MicrophoneIcon
 
-// Module 10736 (MicrophoneIcon)
+// Module 10737 (MicrophoneIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const MicrophoneIcon = function MicrophoneIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10737) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10738) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10737) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(10738) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

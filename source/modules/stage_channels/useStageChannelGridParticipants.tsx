@@ -1,10 +1,10 @@
-// Module ID: 10799
-// Function ID: 83758
+// Module ID: 10800
+// Function ID: 83763
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4144, 4952, 566, 4965, 4958, 22, 4964, 10800, 2]
+// Dependencies: [57, 31, 4144, 4952, 566, 4965, 4958, 22, 4964, 10801, 2]
 // Exports: useStageChannelParticipantsListThrottled, useThrottleDurationForChannel
 
-// Module 10799 (_createForOfIteratorHelperLoose)
+// Module 10800 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -196,7 +196,7 @@ export const useStageChannelParticipantsListThrottled = function useStageChannel
   const tmp2 = callback(tmp, 2);
   const first = tmp2[0];
   const items = [memo[require(undefined, 4958) /* sortKey */.StageChannelParticipantNamedIndex.AUDIENCE]];
-  const tmp5 = callback(require(10800) /* throttleStateFn */.useThrottledState(tmp, throttleDurationForChannel, items), 2);
+  const tmp5 = callback(require(10801) /* throttleStateFn */.useThrottledState(tmp, throttleDurationForChannel, items), 2);
   const items1 = [first[flag ? constants.MEDIA : constants.SELECTED], first[constants.SPEAKER], tmp5[0][constants.AUDIENCE]];
   const items2 = [items1, ];
   const items3 = [tmp2[1][flag ? constants.MEDIA : constants.SELECTED], tmp2[1][constants.SPEAKER], tmp5[1][constants.AUDIENCE]];

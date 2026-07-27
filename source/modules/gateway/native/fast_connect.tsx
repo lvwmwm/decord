@@ -1,7 +1,7 @@
 // Module ID: 25
 // Function ID: 1097
 // Name: prepareIdentify
-// Dependencies: [26, 27, 476, 3, 477, 479, 480, 652, 12662, 5882, 12644, 12631, 12629, 20, 14, 2]
+// Dependencies: [26, 27, 476, 3, 477, 479, 480, 652, 12663, 5882, 12645, 12632, 12630, 20, 14, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 25 (prepareIdentify)
@@ -43,7 +43,7 @@ function prepareIdentify(json, json, parsed, arg3) {
   obj.properties = obj;
   const obj6 = importAll(652);
   const obj3 = {};
-  const obj9 = require(12662) /* getClientCapabilities */;
+  const obj9 = require(12663) /* getClientCapabilities */;
   if (obj11.isAndroid()) {
     const useChannelObfuscation2 = importDefault(479).getConstants().useChannelObfuscation;
     let tmp9 = null != useChannelObfuscation2 && useChannelObfuscation2;

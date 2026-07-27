@@ -1,9 +1,9 @@
-// Module ID: 14621
-// Function ID: 111495
+// Module ID: 14622
+// Function ID: 111500
 // Name: getTitle
-// Dependencies: [5765, 7697, 13789, 5834, 13793, 13786, 1212, 1282, 10059, 2]
+// Dependencies: [5765, 7697, 13790, 5834, 13794, 13787, 1212, 1282, 10059, 2]
 
-// Module 14621 (getTitle)
+// Module 14622 (getTitle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -16,7 +16,7 @@ createToggle = {
   useTitle: getTitle,
   parent: require("MobileSetting").MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const parentalControlledGoreContentSettings = require(13789) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
+    const parentalControlledGoreContentSettings = require(13790) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
     let goreContentFriendDm;
     if (null != parentalControlledGoreContentSettings) {
       goreContentFriendDm = parentalControlledGoreContentSettings.goreContentFriendDm;
@@ -31,7 +31,7 @@ createToggle = {
   onPress: function onGoreContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(13793);
+      let obj = selectedTeenId(13794);
       obj = {};
       const intl = selectedTeenId(1212).intl;
       obj.title = intl.string(selectedTeenId(1212).t["16/3Bi"]);
@@ -44,8 +44,8 @@ createToggle = {
       obj.currentValue = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       const items = [selectedTeenId(1282).ExplicitContentRedaction.SHOW];
       obj.excluded = items;
-      const result = selectedTeenId(13786).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(13786);
+      const result = selectedTeenId(13787).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(13787);
     }
   },
   unsearchable: true

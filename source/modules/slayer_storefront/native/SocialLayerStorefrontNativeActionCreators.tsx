@@ -1,5 +1,5 @@
 // Module ID: 9692
-// Function ID: 75513
+// Function ID: 75514
 // Name: openSocialLayerStorefrontUnsupportedOnMobileAlert
 // Dependencies: [33, 4472, 1212, 3105, 7829, 6631, 4338, 9693, 1935, 9704, 9708, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal

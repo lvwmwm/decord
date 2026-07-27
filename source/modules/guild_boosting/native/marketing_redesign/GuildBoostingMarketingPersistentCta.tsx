@@ -1,10 +1,10 @@
-// Module ID: 12571
-// Function ID: 97336
+// Module ID: 12572
+// Function ID: 97341
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [31, 27, 4123, 653, 33, 4131, 689, 624, 3992, 4543, 4555, 5513, 4127, 11616, 2]
+// Dependencies: [31, 27, 4123, 653, 33, 4131, 689, 624, 3992, 4543, 4555, 5513, 4127, 11617, 2]
 // Exports: default
 
-// Module 12571 (GuildBoostingMarketingPersistentCta)
+// Module 12572 (GuildBoostingMarketingPersistentCta)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -92,7 +92,7 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   obj3.children = items3;
   const items4 = [callback2(View, obj3), ];
   const tmp5 = stateFromStores(5513);
-  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(11616), obj7) });
+  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(11617), obj7) });
   obj2.children = items4;
   obj1.children = callback2(View, obj2);
   obj.children = callback(tmp4, obj1);

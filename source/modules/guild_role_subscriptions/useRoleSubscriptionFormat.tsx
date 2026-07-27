@@ -1,10 +1,10 @@
-// Module ID: 16473
-// Function ID: 128440
+// Module ID: 16485
+// Function ID: 128487
 // Name: useRoleSubscriptionFormat
-// Dependencies: [31, 1912, 1911, 1838, 14155, 653, 566, 2]
+// Dependencies: [31, 1912, 1911, 1838, 14156, 653, 566, 2]
 // Exports: default
 
-// Module 16473 (useRoleSubscriptionFormat)
+// Module 16485 (useRoleSubscriptionFormat)
 import result from "result";
 import { hasPermission } from "GuildRoleRecordTypeTag";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

@@ -1,5 +1,5 @@
 // Module ID: 8846
-// Function ID: 70053
+// Function ID: 70054
 // Name: isEmpty
 // Dependencies: [1194, 4203, 4217, 566, 2]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty

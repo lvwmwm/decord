@@ -1,10 +1,10 @@
-// Module ID: 16409
-// Function ID: 128147
+// Module ID: 16421
+// Function ID: 128194
 // Name: FeatureCard
-// Dependencies: [31, 27, 1838, 3759, 8243, 653, 33, 4131, 689, 9554, 1212, 4127, 15204, 4087, 1456, 566, 686, 8242, 16410, 1921, 4544, 16414, 3831, 5448, 2]
+// Dependencies: [31, 27, 1838, 3759, 8243, 653, 33, 4131, 689, 9554, 1212, 4127, 15217, 4087, 1456, 566, 686, 8242, 16422, 1921, 4544, 16426, 3831, 5448, 2]
 // Exports: default
 
-// Module 16409 (FeatureCard)
+// Module 16421 (FeatureCard)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_7 from "_createForOfIteratorHelperLoose";

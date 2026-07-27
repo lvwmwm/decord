@@ -1,5 +1,5 @@
 // Module ID: 6277
-// Function ID: 56486
+// Function ID: 56487
 // Name: NativeModules
 // Dependencies: [5, 27, 6278, 6279, 6284, 6285, 6286, 6287, 6288]
 // Exports: deepLinkToSubscriptions, endConnection, finishTransaction, flushFailedPurchasesCachedAsPendingAndroid, getAvailablePurchases, getProducts, getPurchaseHistory, getStorefront, getSubscriptions, initConnection, requestPurchase, requestSubscription, setup

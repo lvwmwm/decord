@@ -1,10 +1,10 @@
-// Module ID: 13040
-// Function ID: 100897
+// Module ID: 13041
+// Function ID: 100902
 // Name: useThrottledDispatch
-// Dependencies: [31, 4052, 13041, 22, 686, 566, 2]
+// Dependencies: [31, 4052, 13042, 22, 686, 566, 2]
 // Exports: useGuildHeaderCounts
 
-// Module 13040 (useThrottledDispatch)
+// Module 13041 (useThrottledDispatch)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

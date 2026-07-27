@@ -1,5 +1,5 @@
 // Module ID: 6093
-// Function ID: 54392
+// Function ID: 54393
 // Name: _isNativeReflectConstruct
 // Dependencies: [29, 6, 7, 15, 17, 102, 18, 4130, 1194, 4223, 653, 4124, 664, 3, 507, 4325, 6094, 5691, 1882, 44, 4665, 4667, 4671, 6095, 2]
 // Exports: getFailedMessageId, isMessageDataCommand

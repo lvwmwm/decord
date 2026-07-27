@@ -1,10 +1,10 @@
-// Module ID: 11952
-// Function ID: 92422
+// Module ID: 11953
+// Function ID: 92427
 // Name: AvatarPile
-// Dependencies: [31, 33, 11953, 9869, 11648, 7909, 9870, 2]
+// Dependencies: [31, 33, 11954, 9869, 11649, 7909, 9870, 2]
 // Exports: AvatarPile
 
-// Module 11952 (AvatarPile)
+// Module 11953 (AvatarPile)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -23,9 +23,9 @@ export const AvatarPile = function AvatarPile(arg0) {
   const Children = React.Children;
   ({ size, names } = arg0);
   const countResult = Children.count(children);
-  const tmp2 = require(11953) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
+  const tmp2 = require(11954) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
   let num = 3;
-  let obj = { "aria-label": require(11648) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7909) /* SolidCutout */.CutoutShape.Circle, size: tmp2 };
+  let obj = { "aria-label": require(11649) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7909) /* SolidCutout */.CutoutShape.Circle, size: tmp2 };
   if (tmp2 <= 40) {
     num = 2;
   }

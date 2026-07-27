@@ -1,5 +1,5 @@
 // Module ID: 5726
-// Function ID: 49764
+// Function ID: 49765
 // Name: getJoinedAtDateFormatter
 // Dependencies: [1212, 5727, 2]
 // Exports: formatDateRelativeTime, getJoinedAtTimestamp

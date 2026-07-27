@@ -1,5 +1,5 @@
 // Module ID: 5809
-// Function ID: 51032
+// Function ID: 51033
 // Name: HeroBlockRecord
 // Dependencies: [6, 7, 5801, 5782, 2]
 

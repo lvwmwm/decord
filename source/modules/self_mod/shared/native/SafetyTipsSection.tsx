@@ -1,5 +1,5 @@
 // Module ID: 10118
-// Function ID: 78350
+// Function ID: 78351
 // Name: SafetyTipsContainer
 // Dependencies: [31, 27, 33, 4131, 689, 4542, 6727, 4127, 1212, 7561, 2]
 // Exports: default

@@ -1,9 +1,9 @@
-// Module ID: 15487
-// Function ID: 119079
+// Module ID: 15500
+// Function ID: 119128
 // Name: Loading
-// Dependencies: [31, 27, 1908, 1838, 3949, 653, 33, 4131, 689, 5584, 9075, 566, 5450, 3951, 9080, 1198, 3982, 1557, 5585, 15488, 2]
+// Dependencies: [31, 27, 1908, 1838, 3949, 653, 33, 4131, 689, 5584, 9075, 566, 5450, 3951, 9080, 1198, 3982, 1557, 5585, 15501, 2]
 
-// Module 15487 (Loading)
+// Module 15500 (Loading)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

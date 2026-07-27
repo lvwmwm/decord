@@ -1,10 +1,10 @@
-// Module ID: 15275
-// Function ID: 116449
+// Module ID: 15288
+// Function ID: 116498
 // Name: Separator
-// Dependencies: [31, 27, 6014, 1348, 1918, 3759, 1850, 653, 33, 6104, 11881, 4645, 9807, 15204, 5070, 5626, 5582, 5685, 4063, 15236, 477, 689, 1273, 7909, 5513, 4550, 4661, 4127, 5874, 15276, 8895, 566, 4320, 8123, 8297, 4652, 8122, 15008, 8265, 1212, 15237, 4067, 3835, 3975, 3992, 4132, 4141, 4630, 5512, 4121, 2]
+// Dependencies: [31, 27, 6014, 1348, 1918, 3759, 1850, 653, 33, 6104, 11882, 4645, 9807, 15217, 5070, 5626, 5582, 5685, 4063, 15249, 477, 689, 1273, 7909, 5513, 4550, 4661, 4127, 5874, 15289, 8895, 566, 4320, 8123, 8297, 4652, 8122, 15009, 8265, 1212, 15250, 4067, 3835, 3975, 3992, 4132, 4141, 4630, 5512, 4121, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost
 
-// Module 15275 (Separator)
+// Module 15288 (Separator)
 import initialize from "initialize";
 import { View } from "Text";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,7 +30,7 @@ let closure_20;
 const require = arg1;
 class Separator {
   constructor() {
-    obj = { style: f116456().separator };
+    obj = { style: f116505().separator };
     return jsx(View, obj);
   }
 }
@@ -76,7 +76,7 @@ class GuildContentPost {
     guild = global.guild;
     ({ channel, id, type } = global);
     ({ timestamp, hideTimestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f116456();
+    tmp = f116505();
     obj = require("getFontScale");
     obj = {};
     fontScale = obj.useFontScale();

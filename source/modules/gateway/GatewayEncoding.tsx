@@ -1,9 +1,9 @@
-// Module ID: 12627
-// Function ID: 97674
+// Module ID: 12628
+// Function ID: 97679
 // Name: JSONEncoding
-// Dependencies: [6, 7, 12628, 4678, 2]
+// Dependencies: [6, 7, 12629, 4678, 2]
 
-// Module 12627 (JSONEncoding)
+// Module 12628 (JSONEncoding)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import getErlpackEncoding from "getErlpackEncoding";

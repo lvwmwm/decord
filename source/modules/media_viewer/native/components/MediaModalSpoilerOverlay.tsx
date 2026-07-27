@@ -1,8 +1,8 @@
-// Module ID: 12252
-// Function ID: 95675
-// Dependencies: [57, 31, 27, 33, 4131, 689, 477, 3835, 12237, 3992, 4534, 4640, 4127, 1212, 2]
+// Module ID: 12253
+// Function ID: 95680
+// Dependencies: [57, 31, 27, 33, 4131, 689, 477, 3835, 12238, 3992, 4534, 4640, 4127, 1212, 2]
 
-// Module 12252
+// Module 12253
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default require("result").memo(function MediaModalSpoilerOverlay(source) 
   let tmp = callback4();
   let obj = require(3835) /* map */;
   const token = obj.useToken(importDefault(689).colors.SPOILER_HIDDEN_BACKGROUND);
-  let obj1 = require(12237) /* useMediaItemSpoilerState */;
+  let obj1 = require(12238) /* useMediaItemSpoilerState */;
   if (!tmp3[0]) {
     return null;
   } else {

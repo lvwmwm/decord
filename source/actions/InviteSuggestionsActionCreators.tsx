@@ -1,5 +1,5 @@
 // Module ID: 10025
-// Function ID: 77523
+// Function ID: 77524
 // Name: loadInviteSuggestions
 // Dependencies: [10026, 8748, 686, 2]
 // Exports: loadInviteSuggestions, searchInviteSuggestions

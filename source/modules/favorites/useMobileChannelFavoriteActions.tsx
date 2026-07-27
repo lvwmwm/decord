@@ -1,10 +1,10 @@
-// Module ID: 10310
-// Function ID: 79710
+// Module ID: 10311
+// Function ID: 79715
 // Name: useMobileChannelFavoriteActions
 // Dependencies: [1194, 1918, 1351, 10152, 1841, 566, 2]
 // Exports: default
 
-// Module 10310 (useMobileChannelFavoriteActions)
+// Module 10311 (useMobileChannelFavoriteActions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

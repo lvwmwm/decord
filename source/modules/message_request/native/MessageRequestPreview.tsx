@@ -1,8 +1,8 @@
-// Module ID: 15619
-// Function ID: 120473
-// Dependencies: [31, 27, 3768, 653, 33, 4131, 5053, 689, 11624, 566, 675, 1212, 7817, 4467, 1273, 2]
+// Module ID: 15631
+// Function ID: 120520
+// Dependencies: [31, 27, 3768, 653, 33, 4131, 5053, 689, 11625, 566, 675, 1212, 7817, 4467, 1273, 2]
 
-// Module 15619
+// Module 15631
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   let loaded;
   channel = channel.channel;
   const tmp = callback();
-  let obj = channel(11624);
+  let obj = channel(11625);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);

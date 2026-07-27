@@ -1,5 +1,5 @@
 // Module ID: 5877
-// Function ID: 51947
+// Function ID: 51948
 // Name: appDatabaseManager
 // Dependencies: [5878, 5880, 5881, 4998, 5883, 5884, 5885, 5039, 5886, 5887, 5705, 5888, 5889, 5718, 5717, 5719, 5890, 2]
 

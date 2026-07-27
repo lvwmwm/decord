@@ -1,5 +1,5 @@
 // Module ID: 3478
-// Function ID: 26874
+// Function ID: 26875
 // Name: getDecade
 // Dependencies: [3210, 3211]
 // Exports: default

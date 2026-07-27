@@ -1,10 +1,10 @@
-// Module ID: 14992
-// Function ID: 114320
+// Module ID: 14993
+// Function ID: 114325
 // Name: useCallActivityData
-// Dependencies: [31, 1347, 4150, 3768, 33, 14993, 15005, 15006, 624, 14983, 2]
+// Dependencies: [31, 1347, 4150, 3768, 33, 14994, 15006, 15007, 624, 14984, 2]
 // Exports: default
 
-// Module 14992 (useCallActivityData)
+// Module 14993 (useCallActivityData)
 import "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -62,13 +62,13 @@ export default function HappeningNowCardUnifiedVC(arg0) {
   ({ stream, activity } = useCallActivityData(voiceState.channelId));
   if (null != stream) {
     let obj = { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant };
-    let tmp5 = jsx(importDefault(14993), { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant });
+    let tmp5 = jsx(importDefault(14994), { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant });
   } else if (null != activity) {
     obj = { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant };
-    tmp5 = jsx(importDefault(15005), { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant });
+    tmp5 = jsx(importDefault(15006), { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant });
   } else {
     obj = { index, voiceState, fullwidth, guildId, panelVariant };
-    tmp5 = jsx(importDefault(15006), { index, voiceState, fullwidth, guildId, panelVariant });
+    tmp5 = jsx(importDefault(15007), { index, voiceState, fullwidth, guildId, panelVariant });
   }
   return tmp5;
 };

@@ -1,10 +1,10 @@
-// Module ID: 10678
-// Function ID: 83161
+// Module ID: 10679
+// Function ID: 83166
 // Name: useHasVideoPermission
 // Dependencies: [1838, 3759, 566, 5957, 2]
 // Exports: default, getVideoPermission
 
-// Module 10678 (useHasVideoPermission)
+// Module 10679 (useHasVideoPermission)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

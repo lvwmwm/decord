@@ -1,10 +1,10 @@
-// Module ID: 15835
-// Function ID: 122296
+// Module ID: 15847
+// Function ID: 122343
 // Name: useControlsLock
 // Dependencies: [31, 9975, 2]
 // Exports: default
 
-// Module 15835 (useControlsLock)
+// Module 15847 (useControlsLock)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/useControlsLock.tsx");

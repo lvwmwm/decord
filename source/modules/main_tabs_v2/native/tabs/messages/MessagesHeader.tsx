@@ -1,10 +1,10 @@
-// Module ID: 14953
-// Function ID: 114023
+// Module ID: 14954
+// Function ID: 114028
 // Name: PX_16
-// Dependencies: [31, 27, 653, 33, 689, 1324, 9849, 4548, 4131, 3992, 4543, 3988, 3983, 11389, 5088, 6625, 10160, 1212, 4127, 8233, 8232, 14954, 4544, 4070, 4069, 2]
+// Dependencies: [31, 27, 653, 33, 689, 1324, 9849, 4548, 4131, 3992, 4543, 3988, 3983, 11390, 5088, 6625, 10161, 1212, 4127, 8233, 8232, 14955, 4544, 4070, 4069, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 14953 (PX_16)
+// Module 14954 (PX_16)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { SearchTypes } from "ME";
@@ -102,7 +102,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
   }, []);
   obj = { variant: "primary", icon: null, size: "sm" };
   const obj1 = { size: "sm", color: scrollPosition(689).colors.WHITE };
-  obj.icon = callback(height(10160).PlusLargeIcon, obj1);
+  obj.icon = callback(height(10161).PlusLargeIcon, obj1);
   const intl = height(1212).intl;
   obj.accessibilityLabel = intl.string(height(1212).t.jD1qzM);
   obj.onPress = callback3;
@@ -139,7 +139,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
   obj6.accessibilityLabel = intl3.string(height(1212).t["5h0QOP"]);
   const items2 = [callback(height(6625).IconButton, obj6), , , ];
   const obj8 = { noMargin: true, onPress: callback, alternateVariant: true };
-  items2[1] = callback(scrollPosition(14954), obj8);
+  items2[1] = callback(scrollPosition(14955), obj8);
   const obj9 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: null, onPress: null, maxFontSizeMultiplier: 1 };
   if (tmp2) {
     let tmp28 = scrollPosition(4070);

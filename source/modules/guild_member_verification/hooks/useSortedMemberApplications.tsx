@@ -1,10 +1,10 @@
-// Module ID: 15367
-// Function ID: 117213
+// Module ID: 15380
+// Function ID: 117262
 // Name: useSortedMemberApplications
 // Dependencies: [31, 5686, 566, 3951, 2]
 // Exports: useSortedMemberApplications
 
-// Module 15367 (useSortedMemberApplications)
+// Module 15380 (useSortedMemberApplications)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

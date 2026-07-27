@@ -1,10 +1,10 @@
-// Module ID: 16192
-// Function ID: 125564
+// Module ID: 16204
+// Function ID: 125611
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [31, 27, 33, 4131, 689, 1557, 5084, 4127, 1212, 5085, 11788, 11706, 4544, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 1557, 5084, 4127, 1212, 5085, 11789, 11707, 4544, 2]
 // Exports: default
 
-// Module 16192 (RedesignDiscoverabilityLanding)
+// Module 16204 (RedesignDiscoverabilityLanding)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,7 +48,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.KMW0kP);
   items[2] = callback(require(4127) /* Text */.Text, obj2);
-  const obj3 = { resizeMode: "contain", style: tmp.image, source: importDefault(11788) };
+  const obj3 = { resizeMode: "contain", style: tmp.image, source: importDefault(11789) };
   items[3] = callback(importDefault(5085), obj3);
   const obj4 = { style: tmp.info, variant: "text-sm/medium", color: "text-default" };
   const intl3 = require(1212) /* getSystemLocale */.intl;

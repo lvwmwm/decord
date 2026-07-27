@@ -1,5 +1,5 @@
 // Module ID: 8598
-// Function ID: 68292
+// Function ID: 68293
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getIsProfileFrameGiftingEnabled, useIsProfileFrameGiftingEnabled

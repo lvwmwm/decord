@@ -1,9 +1,9 @@
-// Module ID: 12169
-// Function ID: 95273
+// Module ID: 12170
+// Function ID: 95278
 // Name: SHARE_APPS_KEY
-// Dependencies: [27, 8292, 653, 10873, 12170, 689, 1212, 8286, 10139, 4076, 12171, 1553, 12172, 4099, 12173, 1935, 5992, 477, 12190, 12191, 4305, 5685, 4472, 12192, 11776, 12193, 12194, 12195, 12196, 12197, 12198, 2]
+// Dependencies: [27, 8292, 653, 10874, 12171, 689, 1212, 8286, 10139, 4076, 12172, 1553, 12173, 4099, 12174, 1935, 5992, 477, 12191, 12192, 4305, 5685, 4472, 12193, 11777, 12194, 12195, 12196, 12197, 12198, 12199, 2]
 
-// Module 12169 (SHARE_APPS_KEY)
+// Module 12170 (SHARE_APPS_KEY)
 import { Linking } from "registerAsset";
 import SHARE_APPS_KEY from "SHARE_APPS_KEY";
 import ME from "ME";
@@ -30,7 +30,7 @@ const SHARE_URLS = SHARE_APPS_KEY.SHARE_URLS;
 let obj = { SHARE: 0, [0]: "SHARE", COPY: 1, [1]: "COPY", QR_CODE: 2, [2]: "QR_CODE", MESSAGES: 3, [3]: "MESSAGES", MAIL: 4, [4]: "MAIL", FB_MESSENGER: 5, [5]: "FB_MESSENGER", GMAIL: 6, [6]: "GMAIL", TELEGRAM: 7, [7]: "TELEGRAM", TWITTER: 8, [8]: "TWITTER", WHATSAPP: 9, [9]: "WHATSAPP", LINE: 10, [10]: "LINE" };
 obj = {
   type: obj.SHARE,
-  icon: require("module_10873"),
+  icon: require("module_10874"),
   isAvailable: Promise.resolve(true),
   IconComponent: require("registerAsset"),
   backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500,
@@ -83,7 +83,7 @@ obj1.onPress = function onPress(code) {
   obj.link = importDefault(5992)(code);
   obj.location = _location;
   obj.channel = channel;
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12173, dependencyMap.paths), combined, obj, "stack");
+  obj.openLazy(require(1935) /* maybeLoadBundle */(12174, dependencyMap.paths), combined, obj, "stack");
 };
 items[2] = obj1;
 let obj2 = { type: obj.MESSAGES };

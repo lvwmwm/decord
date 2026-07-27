@@ -1,5 +1,5 @@
 // Module ID: 8050
-// Function ID: 64032
+// Function ID: 64033
 // Name: urlUserId
 // Dependencies: [5, 1850, 653, 686, 507, 5839, 5844, 1184, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, markBadgeDirectoryBadgeIndicatorSeen

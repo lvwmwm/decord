@@ -1,5 +1,5 @@
 // Module ID: 8333
-// Function ID: 66855
+// Function ID: 66856
 // Name: DEFAULT_PREMIUM_BADGE_ID
 // Dependencies: [2]
 

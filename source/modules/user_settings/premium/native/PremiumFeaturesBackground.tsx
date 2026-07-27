@@ -1,5 +1,5 @@
 // Module ID: 7907
-// Function ID: 62992
+// Function ID: 62993
 // Name: PremiumFeaturesBackground
 // Dependencies: [31, 6173, 1852, 33, 4131, 689, 666, 4555, 668, 2]
 // Exports: default

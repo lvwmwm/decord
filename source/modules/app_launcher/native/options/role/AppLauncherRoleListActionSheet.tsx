@@ -1,10 +1,10 @@
-// Module ID: 11295
-// Function ID: 87835
+// Module ID: 11296
+// Function ID: 87840
 // Name: getRoleColor
-// Dependencies: [57, 31, 5148, 1912, 1911, 653, 33, 11293, 8224, 566, 5149, 5164, 4127, 4647, 5046, 4099, 11280, 11281, 2]
+// Dependencies: [57, 31, 5148, 1912, 1911, 653, 33, 11294, 8224, 566, 5149, 5164, 4127, 4647, 5046, 4099, 11281, 11282, 2]
 // Exports: default
 
-// Module 11295 (getRoleColor)
+// Module 11296 (getRoleColor)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

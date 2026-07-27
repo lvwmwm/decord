@@ -1,5 +1,5 @@
 // Module ID: 7502
-// Function ID: 60488
+// Function ID: 60489
 // Name: SwordAndChestSpotIllustration
 // Dependencies: [33, 5085, 7503, 2]
 // Exports: SwordAndChestSpotIllustration

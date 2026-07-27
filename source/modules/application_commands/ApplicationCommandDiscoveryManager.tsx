@@ -1,10 +1,10 @@
-// Module ID: 11432
-// Function ID: 88892
+// Module ID: 11433
+// Function ID: 88897
 // Name: useCommandDiscoveryManager
 // Dependencies: [621, 682, 2]
 // Exports: updateInitialSectionId
 
-// Module 11432 (useCommandDiscoveryManager)
+// Module 11433 (useCommandDiscoveryManager)
 import keys from "keys";
 
 const obj = keys.create(() => ({ initialSectionId: undefined }));

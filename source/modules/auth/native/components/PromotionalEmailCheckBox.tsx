@@ -1,10 +1,10 @@
-// Module ID: 14828
-// Function ID: 113109
+// Module ID: 14829
+// Function ID: 113114
 // Name: PromotionalEmailCheckBox
 // Dependencies: [31, 27, 5589, 33, 4131, 3849, 1212, 7577, 4127, 2]
 // Exports: default
 
-// Module 14828 (PromotionalEmailCheckBox)
+// Module 14829 (PromotionalEmailCheckBox)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import setPromoEmailConsentState from "setPromoEmailConsentState";

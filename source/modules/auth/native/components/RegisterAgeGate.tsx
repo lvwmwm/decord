@@ -1,10 +1,10 @@
-// Module ID: 14825
-// Function ID: 113087
+// Module ID: 14826
+// Function ID: 113092
 // Name: RegisterAgeGate
-// Dependencies: [57, 31, 27, 5590, 14789, 14790, 653, 33, 4131, 689, 3713, 14826, 3843, 1456, 14787, 566, 9137, 14805, 14788, 44, 9147, 1212, 6671, 8174, 14827, 4544, 8931, 8195, 3977, 2]
+// Dependencies: [57, 31, 27, 5590, 14790, 14791, 653, 33, 4131, 689, 3713, 14827, 3843, 1456, 14788, 566, 9137, 14806, 14789, 44, 9147, 1212, 6671, 8174, 14828, 4544, 8931, 8195, 3977, 2]
 // Exports: default
 
-// Module 14825 (RegisterAgeGate)
+// Module 14826 (RegisterAgeGate)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "getTheme";

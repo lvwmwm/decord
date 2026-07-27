@@ -1,5 +1,5 @@
 // Module ID: 4675
-// Function ID: 40656
+// Function ID: 40657
 // Name: openImagePickerUnhandled
 // Dependencies: [29, 5, 27, 1280, 4223, 1850, 653, 4345, 3, 4676, 4687, 4667, 4693, 477, 3831, 1212, 3777, 4666, 1247, 4696, 4698, 4671, 4111, 4699, 4700, 4701, 1327, 4702, 4703, 4704, 4359, 4705, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, isHEVCEncodingSupported, openImagePicker

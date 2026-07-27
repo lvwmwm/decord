@@ -1,10 +1,10 @@
-// Module ID: 10543
-// Function ID: 81538
+// Module ID: 10544
+// Function ID: 81543
 // Name: _handleJoinEmbeddedActivityInternal
-// Dependencies: [5, 4168, 1348, 1907, 1850, 1347, 4156, 10544, 10545, 3749, 10443, 10581, 10584, 10401, 10591, 7952, 10592, 5668, 2]
+// Dependencies: [5, 4168, 1348, 1907, 1850, 1347, 4156, 10545, 10546, 3749, 10444, 10582, 10585, 10402, 10592, 7952, 10593, 5668, 2]
 // Exports: default
 
-// Module 10543 (_handleJoinEmbeddedActivityInternal)
+// Module 10544 (_handleJoinEmbeddedActivityInternal)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -23,8 +23,8 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export default function handleJoinEmbeddedActivity(arg0) {
   const _require = arg0;
-  const obj = _require(10544);
-  return obj.wrapPreemptiveActivityPopout(_require(10544).shouldOpenActivityInPopoutWindow(), () => (function handleJoinEmbeddedActivityInternal(closure_0) {
+  const obj = _require(10545);
+  return obj.wrapPreemptiveActivityPopout(_require(10545).shouldOpenActivityInPopoutWindow(), () => (function handleJoinEmbeddedActivityInternal(closure_0) {
     return outer2_10(...arguments);
   })(closure_0));
 };

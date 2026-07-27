@@ -1,10 +1,10 @@
-// Module ID: 16006
-// Function ID: 123693
+// Module ID: 16018
+// Function ID: 123740
 // Name: setUpdateRules
-// Dependencies: [57, 6, 7, 16007, 15965, 3830, 16008, 16009, 2]
+// Dependencies: [57, 6, 7, 16019, 15977, 3830, 16020, 16021, 2]
 // Exports: getMessage
 
-// Module 16006 (setUpdateRules)
+// Module 16018 (setUpdateRules)
 import _slicedToArray from "_slicedToArray";
 import link from "link";
 import updateRules from "updateRules";
@@ -31,11 +31,11 @@ function setUpdateRules(arg0) {
       }
       return callback2(callback(text, { inline: tmp, context, unsafeContext }));
     };
-  })(require(16008) /* link */.rules, arg0);
+  })(require(16020) /* link */.rules, arg0);
   let closure_4 = (function parserForNonReact(rules) {
     let closure_0 = outer1_1(outer1_2[5]).parserFor(rules);
     return (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
-  })(require(16008) /* link */.rules);
+  })(require(16020) /* link */.rules);
 }
 ({ FORMAT_RE: closure_8, MARKDOWN_RE: closure_9, UNSAFE_RE: closure_10, UNSAFE_RE_ALL: closure_11 } = FORMAT_RE);
 let tmp3 = (() => {
@@ -135,7 +135,7 @@ export const getMessage = function getMessage(str) {
     return "";
   } else {
     if (null == closure_3) {
-      setUpdateRules(require(16009) /* updateRules */.default);
+      setUpdateRules(require(16021) /* updateRules */.default);
     }
     const replaced = str.replace(/^\n+|\n+$/g, "");
     const isMatch = regex.test(replaced);

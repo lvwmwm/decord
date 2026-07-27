@@ -1,10 +1,10 @@
-// Module ID: 12254
-// Function ID: 95696
+// Module ID: 12255
+// Function ID: 95701
 // Name: useMediaViewerPanGestureConfig
 // Dependencies: [31, 3992, 8061, 8057, 4543, 8193, 5217, 2]
 // Exports: useMediaViewerPanGesture, useMediaViewerPanGestureConfig
 
-// Module 12254 (useMediaViewerPanGestureConfig)
+// Module 12255 (useMediaViewerPanGestureConfig)
 import result from "result";
 
 const require = arg1;

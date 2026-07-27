@@ -1,5 +1,5 @@
 // Module ID: 5751
-// Function ID: 49966
+// Function ID: 49967
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1194, 1918, 1354, 3755, 22, 21, 566, 686, 2]
 // Exports: eventScheduledToStartWithin, isGuildEventEnded, scheduledEventSort

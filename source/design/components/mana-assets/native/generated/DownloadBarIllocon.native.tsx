@@ -1,5 +1,5 @@
 // Module ID: 6950
-// Function ID: 59660
+// Function ID: 59661
 // Name: DownloadBarIllocon
 // Dependencies: [33, 5085, 6951, 2]
 // Exports: DownloadBarIllocon

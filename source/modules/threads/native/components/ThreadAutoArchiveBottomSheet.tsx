@@ -1,9 +1,9 @@
-// Module ID: 15559
-// Function ID: 119891
+// Module ID: 15572
+// Function ID: 119940
 // Name: AutoArchiveDurationOptions
 // Dependencies: [31, 1355, 33, 6133, 7596, 1212, 7595, 2]
 
-// Module 15559 (AutoArchiveDurationOptions)
+// Module 15572 (AutoArchiveDurationOptions)
 import { ChannelFlags } from "set";
 import { jsx } from "jsxProd";
 import importAllResult from "result";

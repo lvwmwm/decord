@@ -1,9 +1,9 @@
-// Module ID: 15811
-// Function ID: 122061
+// Module ID: 15823
+// Function ID: 122108
 // Name: useAnimation
-// Dependencies: [31, 27, 1850, 15805, 33, 3992, 4131, 689, 477, 4661, 4543, 5150, 11065, 15812, 566, 15813, 5462, 5482, 10713, 3777, 6145, 6147, 3832, 10798, 1212, 15815, 4127, 4653, 2]
+// Dependencies: [31, 27, 1850, 15817, 33, 3992, 4131, 689, 477, 4661, 4543, 5150, 11066, 15824, 566, 15825, 5462, 5482, 10714, 3777, 6145, 6147, 3832, 10799, 1212, 15827, 4127, 4653, 2]
 
-// Module 15811 (useAnimation)
+// Module 15823 (useAnimation)
 import importAllResult from "result";
 import { View } from "LockIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -90,7 +90,7 @@ function SoundButtonEmoji(arg0) {
   const tmp5 = closure_6;
   const tmp6 = closure_8;
   const tmp7 = closure_6;
-  obj.src = importDefault(11065)(sound, 24);
+  obj.src = importDefault(11066)(sound, 24);
   const emojiName = sound.emojiName;
   let str = "";
   if (null != emojiName) {

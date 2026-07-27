@@ -1,7 +1,7 @@
 // Module ID: 12053
-// Function ID: 93788
+// Function ID: 93782
 // Name: cached
-// Dependencies: [12015]
+// Dependencies: [12016]
 
 // Module 12053 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "harf", verb: "olmal\u0131d\u0131r" }, file: { unit: "bayt", verb: "olmal\u0131d\u0131r" }, array: { unit: "unsur", verb: "olmal\u0131d\u0131r" }, set: { unit: "unsur", verb: "olmal\u0131d\u0131r" } };
-      let closure_1 = { regex: "giren", email: "epostag\u00E2h", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO heng\u00E2m\u0131", date: "ISO tarihi", time: "ISO zaman\u0131", duration: "ISO m\u00FCddeti", ipv4: "IPv4 ni\u015F\u00E2n\u0131", ipv6: "IPv6 ni\u015F\u00E2n\u0131", cidrv4: "IPv4 menzili", cidrv6: "IPv6 menzili", base64: "base64-\u015Fifreli metin", base64url: "base64url-\u015Fifreli metin", json_string: "JSON metin", e164: "E.164 say\u0131s\u0131", jwt: "JWT", template_literal: "giren" };
-      let closure_2 = { nan: "NaN", number: "numara", array: "saf", null: "gayb" };
+      let closure_0 = { string: { unit: "tegn", verb: "\u00E5 ha" }, file: { unit: "bytes", verb: "\u00E5 ha" }, array: { unit: "elementer", verb: "\u00E5 inneholde" }, set: { unit: "elementer", verb: "\u00E5 inneholde" } };
+      let closure_1 = { regex: "input", email: "e-postadresse", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dato- og klokkeslett", date: "ISO-dato", time: "ISO-klokkeslett", duration: "ISO-varighet", ipv4: "IPv4-omr\u00E5de", ipv6: "IPv6-omr\u00E5de", cidrv4: "IPv4-spekter", cidrv6: "IPv6-spekter", base64: "base64-enkodet streng", base64url: "base64url-enkodet streng", json_string: "JSON-streng", e164: "E.164-nummer", jwt: "JWT", template_literal: "input" };
+      let closure_2 = { nan: "NaN", number: "tall", array: "liste" };
       return (code) => {
         let minimum;
         let origin;
@@ -82,112 +82,113 @@ if (self2) {
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "F\u00E2sit giren: umulan instanceof " + code.expected + ", al\u0131nan " + tmp51;
+            let combined = "Ugyldig input: forventet instanceof " + code.expected + ", fikk " + tmp51;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "F\u00E2sit giren: umulan " + expected + ", al\u0131nan " + tmp51;
+            combined = "Ugyldig input: forventet " + expected + ", fikk " + tmp51;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "F\u00E2sit giren: umulan " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Ugyldig verdi: forventet " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "F\u00E2sit tercih: m\u00FBteberler " + closure_2.joinValues(code.values, "|");
+            combined1 = "Ugyldig valg: forventet en av " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str35 = "<";
+          let str28 = "<";
           if (code.inclusive) {
-            str35 = "<=";
+            str28 = "<=";
           }
           const tmp26 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str36 = "value";
+          let str29 = "value";
           if (tmp26) {
             if (tmp28) {
-              str36 = origin2;
+              str29 = origin2;
             }
             let str = code.maximum.toString();
             const unit = tmp26.unit;
-            let str42 = "elements";
+            let str34 = "elementer";
             if (null != unit) {
-              str42 = unit;
+              str34 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Fazla b\u00FCy\u00FCk: " + str36 + ", " + str35 + str + " " + str42 + " sahip olmal\u0131yd\u0131.";
-            const str41 = code.maximum;
+            let combined2 = "For stor(t): forventet " + str29 + " til \u00E5 ha " + str28 + str + " " + str34;
+            const str33 = code.maximum;
           } else {
-            let tmp29 = str36;
+            let tmp29 = str29;
             if (tmp28) {
               tmp29 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Fazla b\u00FCy\u00FCk: " + tmp29 + ", " + str35 + code.maximum.toString() + " olmal\u0131yd\u0131.";
-            const str37 = code.maximum;
+            combined2 = "For stor(t): forventet " + tmp29 + " til \u00E5 ha " + str28 + code.maximum.toString();
+            const str30 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str27 = ">";
+          let str22 = ">";
           if (code.inclusive) {
-            str27 = ">=";
+            str22 = ">=";
           }
           const tmp15 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
           if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Fazla k\u00FC\u00E7\u00FCk: " + origin + ", " + str27 + str1 + " " + tmp15.unit + " sahip olmal\u0131yd\u0131.";
+            let combined3 = "For lite(n): forventet " + origin + " til \u00E5 ha " + str22 + str1 + " " + tmp15.unit;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Fazla k\u00FC\u00E7\u00FCk: " + origin + ", " + str27 + str1 + " olmal\u0131yd\u0131.";
+            combined3 = "For lite(n): forventet " + origin + " til \u00E5 ha " + str22 + str1;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "F\u00E2sit metin: \"" + code.prefix + "\" ile ba\u015Flamal\u0131.";
+            let combined4 = "Ugyldig streng: m\u00E5 starte med \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "F\u00E2sit metin: \"" + code.suffix + "\" ile bitmeli.";
+            combined4 = "Ugyldig streng: m\u00E5 ende med \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "F\u00E2sit metin: \"" + code.includes + "\" ihtiv\u00E2 etmeli.";
+            combined4 = "Ugyldig streng: m\u00E5 inneholde \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "F\u00E2sit metin: " + code.pattern + " nak\u015F\u0131na uymal\u0131.";
+            combined4 = "Ugyldig streng: m\u00E5 matche m\u00F8nsteret " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "F\u00E2sit " + format;
+            combined4 = "Ugyldig " + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "F\u00E2sit say\u0131: " + code.divisor + " kat\u0131 olmal\u0131yd\u0131.";
+          return "Ugyldig tall: m\u00E5 v\u00E6re et multiplum av " + code.divisor;
         } else if ("unrecognized_keys" === code) {
-          let str10 = "";
+          let str7 = "Ukjent n\u00F8kkel";
           if (code.keys.length > 1) {
-            str10 = "s";
+            str7 = "Ukjente n\u00F8kler";
           }
           const _HermesInternal3 = HermesInternal;
-          return "Tan\u0131nmayan anahtar " + str10 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "" + code.origin + " i\u00E7in tan\u0131nmayan anahtar var.";
-          } else if ("invalid_union" === code) {
-            return "Giren tan\u0131namad\u0131.";
-          } else if ("invalid_element" === code) {
-            const _HermesInternal = HermesInternal;
-            return "" + code.origin + " i\u00E7in tan\u0131nmayan k\u0131ymet var.";
+            return "Ugyldig n\u00F8kkel i " + code.origin;
           } else {
-            return "K\u0131ymet tan\u0131namad\u0131.";
+            if ("invalid_union" !== code) {
+              if ("invalid_element" === code) {
+                const _HermesInternal = HermesInternal;
+                return "Ugyldig verdi i " + code.origin;
+              }
+            }
+            return "Ugyldig input";
           }
         }
       };

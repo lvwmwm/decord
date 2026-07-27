@@ -1,10 +1,10 @@
-// Module ID: 13655
-// Function ID: 104908
+// Module ID: 13656
+// Function ID: 104913
 // Name: UserProfileEffectEditButton
-// Dependencies: [31, 27, 5510, 7977, 482, 33, 4131, 689, 7882, 7983, 4099, 13656, 1935, 1212, 13651, 5584, 5085, 11817, 7997, 1273, 7904, 2]
+// Dependencies: [31, 27, 5510, 7977, 482, 33, 4131, 689, 7882, 7983, 4099, 13657, 1935, 1212, 13652, 5584, 5085, 11818, 7997, 1273, 7904, 2]
 // Exports: default
 
-// Module 13655 (UserProfileEffectEditButton)
+// Module 13656 (UserProfileEffectEditButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET";

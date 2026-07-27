@@ -1,5 +1,5 @@
 // Module ID: 7755
-// Function ID: 61720
+// Function ID: 61721
 // Name: nativeStyleProperties
 // Dependencies: [1348, 4131, 689, 7677, 7684, 7686, 1212, 7756, 7687, 1395, 1392, 2]
 // Exports: createGuildAlertModeDisabledSystemMessage, createGuildAlertModeEnabledSystemMessage

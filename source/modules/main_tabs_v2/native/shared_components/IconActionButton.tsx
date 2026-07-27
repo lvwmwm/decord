@@ -1,5 +1,5 @@
 // Module ID: 10064
-// Function ID: 78030
+// Function ID: 78031
 // Name: ButtonBadge
 // Dependencies: [31, 33, 4131, 689, 477, 1273, 1324, 4550, 4661, 4127, 9056, 2]
 // Exports: default
@@ -18,7 +18,7 @@ class ButtonBadge {
     if (str === undefined) {
       str = "left";
     }
-    tmp = f78032(false);
+    tmp = f78033(false);
     tmp2 = jsx;
     obj = {};
     tmp3 = require("DEFAULT_BADGE_SIZE");

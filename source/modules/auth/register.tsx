@@ -1,10 +1,10 @@
-// Module ID: 14800
-// Function ID: 112912
+// Module ID: 14801
+// Function ID: 112917
 // Name: _scorePassword
-// Dependencies: [5, 14801, 1194, 653, 1197, 3713, 675, 4943, 480, 4031, 9403, 686, 14802, 14803, 2]
+// Dependencies: [5, 14802, 1194, 653, 1197, 3713, 675, 4943, 480, 4031, 9403, 686, 14803, 14804, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 14800 (_scorePassword)
+// Module 14801 (_scorePassword)
 import closure_4 from "t";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -57,7 +57,7 @@ function registerFull(giftCodeSKUId) {
   let obj = importDefault(686);
   obj.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    importDefault(14802)(birthday, constants2.REGISTER);
+    importDefault(14803)(birthday, constants2.REGISTER);
     obj = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     importDefault(675).track(constants.AGE_GATE_ACTION, obj);
     const obj9 = importDefault(675);

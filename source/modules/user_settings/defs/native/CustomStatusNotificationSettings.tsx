@@ -1,10 +1,10 @@
-// Module ID: 14381
-// Function ID: 110096
+// Module ID: 14382
+// Function ID: 110101
 // Name: onChange
 // Dependencies: [7697, 653, 3771, 3804, 1282, 675, 10059, 1212, 2]
 // Exports: onChange
 
-// Module 14381 (onChange)
+// Module 14382 (onChange)
 import { AnalyticEvents } from "ME";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import createToggle from "createToggle";

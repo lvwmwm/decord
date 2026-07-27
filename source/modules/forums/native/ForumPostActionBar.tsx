@@ -1,10 +1,10 @@
-// Module ID: 10392
-// Function ID: 80201
+// Module ID: 10393
+// Function ID: 80206
 // Name: ForumPostActionBar
-// Dependencies: [57, 31, 27, 3760, 3761, 1348, 653, 33, 4131, 689, 566, 6012, 1450, 9241, 8756, 10393, 4661, 1212, 4083, 4127, 10167, 4075, 2]
+// Dependencies: [57, 31, 27, 3760, 3761, 1348, 653, 33, 4131, 689, 566, 6012, 1450, 9241, 8756, 10394, 4661, 1212, 4083, 4127, 10168, 4075, 2]
 // Exports: default
 
-// Module 10392 (ForumPostActionBar)
+// Module 10393 (ForumPostActionBar)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -72,7 +72,7 @@ export default function ForumPostActionBar(channel) {
   if (tmp9) {
     obj = { style: tmp.reactionRow };
     obj1 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: tmp5[0] };
-    obj.children = callback(channel(10393).ForumPostActionBarReactions, obj1);
+    obj.children = callback(channel(10394).ForumPostActionBarReactions, obj1);
     tmp9 = callback(View, obj);
   }
   const items5 = [tmp9, ];
@@ -130,7 +130,7 @@ export default function ForumPostActionBar(channel) {
       obj5.style = tmp.actionButton;
       obj5.onPress = items9;
       const obj7 = { size: "xs" };
-      const items11 = [callback(tmp20(10167).BellIcon, obj7), ];
+      const items11 = [callback(tmp20(10168).BellIcon, obj7), ];
       const obj8 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "interactive-text-default" };
       const intl2 = tmp20(tmp21[num3]).intl;
       obj8.children = intl2.string(tmp20(tmp21[num3]).t["0rQinA"]);

@@ -1,5 +1,5 @@
 // Module ID: 9423
-// Function ID: 73548
+// Function ID: 73549
 // Name: items
 // Dependencies: [3777, 1866, 1868, 5784, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier

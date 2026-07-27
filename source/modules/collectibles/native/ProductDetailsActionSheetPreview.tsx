@@ -1,5 +1,5 @@
 // Module ID: 8673
-// Function ID: 68853
+// Function ID: 68854
 // Name: BundleProductPreview
 // Dependencies: [57, 31, 27, 655, 33, 4131, 689, 1877, 8012, 8674, 7984, 1212, 8676, 8162, 8685, 8687, 2]
 // Exports: default

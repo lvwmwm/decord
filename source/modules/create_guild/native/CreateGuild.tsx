@@ -1,5 +1,5 @@
 // Module ID: 10027
-// Function ID: 77552
+// Function ID: 77553
 // Name: CreateGuild
 // Dependencies: [31, 27, 1850, 653, 33, 4131, 689, 4529, 4540, 4542, 4127, 1212, 10028, 6670, 5502, 4544, 8931, 2]
 // Exports: default

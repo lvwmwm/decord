@@ -1,9 +1,9 @@
-// Module ID: 10216
-// Function ID: 79070
+// Module ID: 10217
+// Function ID: 79075
 // Name: useSetHeightOnLayout
-// Dependencies: [31, 27, 4123, 10200, 653, 33, 477, 689, 4131, 10217, 10218, 566, 10199, 1450, 3992, 10219, 1273, 10240, 4100, 6022, 3770, 1212, 4361, 4529, 5914, 3844, 4338, 4139, 10241, 1935, 10271, 4132, 10272, 10277, 2]
+// Dependencies: [31, 27, 4123, 10201, 653, 33, 477, 689, 4131, 10218, 10219, 566, 10200, 1450, 3992, 10220, 1273, 10241, 4100, 6022, 3770, 1212, 4361, 4529, 5914, 3844, 4338, 4139, 10242, 1935, 10272, 4132, 10273, 10278, 2]
 
-// Module 10216 (useSetHeightOnLayout)
+// Module 10217 (useSetHeightOnLayout)
 import importAllResult from "withTiming";
 import { View } from "transitionToChannel";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -37,7 +37,7 @@ set = set.isAndroid();
 const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
 const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
 let closure_16 = _createForOfIteratorHelperLoose.createStyles({ newContainerRoleDot: { paddingRight: 4, paddingTop: 0 }, initialPreviewOverlay: { position: "absolute", top: 0, left: 0, right: 0, overflow: "hidden" }, expandedPreviewOverlay: { position: "absolute", top: 0, left: 0, right: 0 } });
-let closure_17 = importAllResult.memo((message) => callback(importDefault(10217), { message: message.message, lineClamp: closure_8, maxHeight: closure_7 }));
+let closure_17 = importAllResult.memo((message) => callback(importDefault(10218), { message: message.message, lineClamp: closure_8, maxHeight: closure_7 }));
 let closure_18 = { code: "function MessageNotificationTsx1(){const{contentHeight,EXPANDED_MAX_HEIGHT,TRUNCATED_MESSAGE_HEIGHT_OFFSET,EXPANDED_SHORT_PREVIEW_PADDING}=this.__closure;const isGradientShown=contentHeight.get()>=EXPANDED_MAX_HEIGHT-TRUNCATED_MESSAGE_HEIGHT_OFFSET;const isShortPreview=contentHeight.get()>0&&!isGradientShown;return{paddingBottom:isShortPreview?EXPANDED_SHORT_PREVIEW_PADDING:0};}" };
 let closure_19 = { code: "function MessageNotificationTsx2(){const{IS_ANDROID,hasPreviewableMedia,hasTextContent,hasEmbedMedia,fadeProgress,ACCESSORY_EXIT_THRESHOLD}=this.__closure;if(IS_ANDROID&&hasPreviewableMedia&&hasTextContent&&!hasEmbedMedia){return{opacity:fadeProgress.get()};}if(!hasTextContent||hasEmbedMedia){return{opacity:fadeProgress.get(),transform:[{translateY:(1-fadeProgress.get())*ACCESSORY_EXIT_THRESHOLD}]};}return{opacity:1};}" };
 let closure_20 = importAllResult.memo((message) => {

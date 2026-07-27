@@ -1,9 +1,9 @@
-// Module ID: 13764
-// Function ID: 105607
+// Module ID: 13765
+// Function ID: 105612
 // Name: route
-// Dependencies: [31, 13685, 1850, 7697, 653, 4471, 1212, 5592, 566, 10059, 13688, 2]
+// Dependencies: [31, 13686, 1850, 7697, 653, 4471, 1212, 5592, 566, 10059, 13689, 2]
 
-// Module 13764 (route)
+// Module 13765 (route)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -53,7 +53,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(13688) /* UserSettingsWebAuthn */.default;
+    return require(13689) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

@@ -1,5 +1,5 @@
 // Module ID: 4649
-// Function ID: 40358
+// Function ID: 40359
 // Name: AnnouncementsWarningIcon
 // Dependencies: [31, 33, 689, 3834, 4611, 2]
 // Exports: AnnouncementsWarningIcon

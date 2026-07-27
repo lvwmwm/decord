@@ -1,5 +1,5 @@
 // Module ID: 9996
-// Function ID: 77338
+// Function ID: 77339
 // Name: DirectoryEntryTypes
 // Dependencies: [653, 1212, 3764, 483, 2]
 // Exports: getHubCategories, getHubGuildTemplatesMap

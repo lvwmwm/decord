@@ -1,10 +1,10 @@
-// Module ID: 11792
-// Function ID: 91512
+// Module ID: 11793
+// Function ID: 91517
 // Name: GuildDirectoryEmpty
-// Dependencies: [31, 27, 1908, 653, 33, 4131, 689, 1557, 566, 9998, 11793, 1273, 1212, 4127, 7575, 9999, 11794, 8286, 11795, 2]
+// Dependencies: [31, 27, 1908, 653, 33, 4131, 689, 1557, 566, 9998, 11794, 1273, 1212, 4127, 7575, 9999, 11795, 8286, 11796, 2]
 // Exports: default
 
-// Module 11792 (GuildDirectoryEmpty)
+// Module 11793 (GuildDirectoryEmpty)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ export default function GuildDirectoryEmpty(guild) {
   items1[1] = obj;
   obj1 = {};
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
-  obj1.source = channel(11793);
+  obj1.source = channel(11794);
   obj1.style = tmp.header;
   const items2 = [callback(closure_3, obj1), , , , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header" };
@@ -65,7 +65,7 @@ export default function GuildDirectoryEmpty(guild) {
           obj = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
           return obj.open(obj);
         },
-      iconSource: channel(11794)
+      iconSource: channel(11795)
     };
     const intl3 = guild(1212).intl;
     obj5.title = intl3.string(guild(1212).t.hyK15i);
@@ -77,7 +77,7 @@ export default function GuildDirectoryEmpty(guild) {
     onPress() {
       return guild(8286).handleOpenInviteActionsheet(guild, channel.id, dependencyMap, outer1_6.HUB_EMPTY_STATE);
     },
-    iconSource: channel(11795)
+    iconSource: channel(11796)
   };
   const intl4 = guild(1212).intl;
   obj6.title = intl4.string(guild(1212).t.L4bwJ9);

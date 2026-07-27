@@ -1,10 +1,10 @@
-// Module ID: 12885
-// Function ID: 100102
+// Module ID: 12886
+// Function ID: 100107
 // Name: getWmfCpuEncodeIntel
 // Dependencies: [1428, 2]
 // Exports: getWmfCpuEncodeIntel
 
-// Module 12885 (getWmfCpuEncodeIntel)
+// Module 12886 (getWmfCpuEncodeIntel)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-wmf-cpu-encode-intel", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

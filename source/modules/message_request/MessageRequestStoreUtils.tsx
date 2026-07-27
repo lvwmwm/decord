@@ -1,10 +1,10 @@
-// Module ID: 15623
-// Function ID: 120498
+// Module ID: 15635
+// Function ID: 120545
 // Name: sortChannelIds
 // Dependencies: [21, 2]
 // Exports: sortChannelIds
 
-// Module 15623 (sortChannelIds)
+// Module 15635 (sortChannelIds)
 const result = require("set").fileFinishedImporting("modules/message_request/MessageRequestStoreUtils.tsx");
 
 export const sortChannelIds = function sortChannelIds(found) {

@@ -1,5 +1,5 @@
 // Module ID: 6424
-// Function ID: 57758
+// Function ID: 57759
 // Name: isBrowser
 // Dependencies: [6425, 6312]
 

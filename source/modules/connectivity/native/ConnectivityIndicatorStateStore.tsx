@@ -1,9 +1,9 @@
-// Module ID: 12674
-// Function ID: 98379
+// Module ID: 12675
+// Function ID: 98384
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5704, 1194, 4350, 1907, 6271, 653, 3, 12675, 1430, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5704, 1194, 4350, 1907, 6271, 653, 3, 12676, 1430, 566, 686, 2]
 
-// Module 12674 (_isNativeReflectConstruct)
+// Module 12675 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import dispatcher from "dispatcher";
@@ -28,7 +28,7 @@ function _isNativeReflectConstruct() {
 }
 function getShowWaitingForNetworkDelayMs() {
   if (closure_7.hasCache()) {
-    let obj = importDefault(12675);
+    let obj = importDefault(12676);
     obj = { location: "ConnectivityIndicatorStateStore" };
     const timeoutMs = obj.getConfig(obj).timeoutMs;
     let num2 = 10000;

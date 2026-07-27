@@ -1,5 +1,5 @@
 // Module ID: 3986
-// Function ID: 33098
+// Function ID: 33099
 // Name: calculateFromWidth
 // Dependencies: [3987, 2]
 // Exports: default, getWindowSizeClassifier

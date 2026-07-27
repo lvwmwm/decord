@@ -1,10 +1,10 @@
-// Module ID: 16386
-// Function ID: 127897
+// Module ID: 16398
+// Function ID: 127944
 // Name: GuildSettingsRoleEditPermission
-// Dependencies: [57, 31, 27, 1391, 3759, 1850, 653, 33, 4131, 689, 3764, 44, 4127, 1212, 4099, 16387, 1935, 15571, 16384, 9171, 675, 483, 15575, 5502, 5501, 1273, 8234, 2]
+// Dependencies: [57, 31, 27, 1391, 3759, 1850, 653, 33, 4131, 689, 3764, 44, 4127, 1212, 4099, 16399, 1935, 15583, 16396, 9171, 675, 483, 15587, 5502, 5501, 1273, 8234, 2]
 // Exports: default
 
-// Module 16386 (GuildSettingsRoleEditPermission)
+// Module 16398 (GuildSettingsRoleEditPermission)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "set";
@@ -102,7 +102,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   canResult = obj2.can(obj);
   const tmp14 = callback2;
   const tmp15 = c6;
-  let obj7 = role(15571);
+  let obj7 = role(15583);
   const guildPermissionSpec = obj7.generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {};
@@ -117,7 +117,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   const found = mapped.filter((permissions) => permissions.permissions.length > 0);
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
   let obj3 = {};
-  const items = [callback2(role(16384), { role }), , , ];
+  const items = [callback2(role(16396), { role }), , , ];
   const tmp14Result = callback2(c6, obj);
   const tmp21 = mapped1.length > 0;
   const tmp22 = closure_16;

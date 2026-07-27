@@ -1,10 +1,10 @@
-// Module ID: 11819
-// Function ID: 91703
+// Module ID: 11820
+// Function ID: 91708
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 57, 31, 27, 8047, 6164, 653, 1852, 482, 33, 4131, 689, 5159, 8703, 566, 8044, 5462, 9707, 11820, 686, 4338, 4472, 11821, 1935, 477, 675, 9651, 4127, 1212, 4544, 6445, 8667, 3790, 8672, 8701, 8696, 6608, 2]
+// Dependencies: [5, 57, 31, 27, 8047, 6164, 653, 1852, 482, 33, 4131, 689, 5159, 8703, 566, 8044, 5462, 9707, 11821, 686, 4338, 4472, 11822, 1935, 477, 675, 9651, 4127, 1212, 4544, 6445, 8667, 3790, 8672, 8701, 8696, 6608, 2]
 // Exports: default
 
-// Module 11819 (CollectiblesShopGiftPurchaseSection)
+// Module 11820 (CollectiblesShopGiftPurchaseSection)
 import context from "context";
 import _slicedToArray from "_slicedToArray";
 import apexExperiment from "apexExperiment";

@@ -1,10 +1,10 @@
-// Module ID: 11206
-// Function ID: 87219
+// Module ID: 11207
+// Function ID: 87224
 // Name: TrackSectionHeader
 // Dependencies: [7954, 8364, 480, 2]
 // Exports: default
 
-// Module 11206 (TrackSectionHeader)
+// Module 11207 (TrackSectionHeader)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

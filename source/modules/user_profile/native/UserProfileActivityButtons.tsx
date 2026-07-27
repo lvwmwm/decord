@@ -1,10 +1,10 @@
-// Module ID: 11957
-// Function ID: 92441
+// Module ID: 11958
+// Function ID: 92446
 // Name: JoinActivityButton
-// Dependencies: [5, 31, 1347, 1348, 4813, 4052, 1838, 10407, 3759, 3768, 1907, 4811, 4147, 653, 8113, 33, 4131, 689, 5462, 3749, 624, 11958, 11959, 5972, 4544, 1212, 6556, 10543, 4099, 10894, 9011, 1273, 7859, 10877, 3828, 11961, 7917, 4338, 3983, 6653, 4342, 4815, 1392, 8897, 6554, 8117, 10881, 1443, 8138, 2]
+// Dependencies: [5, 31, 1347, 1348, 4813, 4052, 1838, 10408, 3759, 3768, 1907, 4811, 4147, 653, 8113, 33, 4131, 689, 5462, 3749, 624, 11959, 11960, 5972, 4544, 1212, 6556, 10544, 4099, 10895, 9011, 1273, 7859, 10878, 3828, 11962, 7917, 4338, 3983, 6653, 4342, 4815, 1392, 8897, 6554, 8117, 10882, 1443, 8138, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 11957 (JoinActivityButton)
+// Module 11958 (JoinActivityButton)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import "Button";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -106,9 +106,9 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
   let tmp2 = null;
   if (null != application) {
     tmp2 = null;
-    if (stateFromStores !== require(11959) /* getActivityJoinability */.ActivityJoinability.CANNOT_JOIN) {
+    if (stateFromStores !== require(11960) /* getActivityJoinability */.ActivityJoinability.CANNOT_JOIN) {
       obj = {};
-      if (stateFromStores === require(11959) /* getActivityJoinability */.ActivityJoinability.JOINED) {
+      if (stateFromStores === require(11960) /* getActivityJoinability */.ActivityJoinability.JOINED) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.DPfdsq);
       } else {
@@ -117,7 +117,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
       }
       obj.text = stringResult;
       obj.variant = "active";
-      obj.disabled = stateFromStores === require(11959) /* getActivityJoinability */.ActivityJoinability.JOINED;
+      obj.disabled = stateFromStores === require(11960) /* getActivityJoinability */.ActivityJoinability.JOINED;
       obj.onPress = function onPress() {
         onAction({ action: "PRESS_JOIN_BUTTON" });
         let obj = outer1_1(outer1_2[29]);
@@ -158,7 +158,7 @@ export const WatchActivityButton = function WatchActivityButton(arg0) {
   let activity;
   let require;
   ({ activity, onAction: require } = arg0);
-  let tmp = importDefault(11961)(activity);
+  let tmp = importDefault(11962)(activity);
   importDefault = tmp;
   let tmp2 = null;
   if (importDefault(7917)(activity)) {

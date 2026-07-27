@@ -1,8 +1,8 @@
-// Module ID: 16327
-// Function ID: 127139
-// Dependencies: [5, 57, 31, 27, 4992, 5036, 653, 1853, 3807, 33, 4131, 689, 5159, 9786, 5450, 3772, 4675, 16328, 9558, 4467, 4127, 1212, 4026, 1921, 4544, 4542, 4661, 9573, 16329, 9268, 5150, 1392, 6519, 6670, 7585, 2]
+// Module ID: 16339
+// Function ID: 127186
+// Dependencies: [5, 57, 31, 27, 4992, 5036, 653, 1853, 3807, 33, 4131, 689, 5159, 9786, 5450, 3772, 4675, 16340, 9558, 4467, 4127, 1212, 4026, 1921, 4544, 4542, 4661, 9573, 16341, 9268, 5150, 1392, 6519, 6670, 7585, 2]
 
-// Module 16327
+// Module 16339
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getAvatarURL";
@@ -298,7 +298,7 @@ export default importAllResult.forwardRef((stickerId) => {
     tmp37 = callback(closure_6, obj12);
   } else {
     const obj14 = { size: "lg" };
-    tmp37 = callback(stickerId(16329).StickerPlusIcon, obj14);
+    tmp37 = callback(stickerId(16341).StickerPlusIcon, obj14);
   }
   obj10.children = tmp37;
   items4[1] = callback(stickerId(4661).PressableHighlight, obj10);

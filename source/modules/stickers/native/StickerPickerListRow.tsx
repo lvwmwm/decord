@@ -1,5 +1,5 @@
 // Module ID: 9572
-// Function ID: 74688
+// Function ID: 74689
 // Name: STICKER_SIZE
 // Dependencies: [57, 31, 27, 1850, 3807, 9525, 1314, 33, 4131, 477, 3804, 4100, 4101, 4467, 9559, 4800, 9573, 9576, 1184, 4661, 2]
 // Exports: default

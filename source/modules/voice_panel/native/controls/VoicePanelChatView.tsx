@@ -1,11 +1,11 @@
-// Module ID: 11369
-// Function ID: 88337
+// Module ID: 11370
+// Function ID: 88342
 // Name: updateChatOpen
-// Dependencies: [31, 27, 9974, 653, 33, 4131, 4324, 1324, 1207, 11367, 1212, 4086, 6625, 9975, 3992, 7620, 4663, 8756, 1450, 1557, 11370, 4141, 3978, 10828, 3843, 4526, 11371, 10348, 2]
+// Dependencies: [31, 27, 9974, 653, 33, 4131, 4324, 1324, 1207, 11368, 1212, 4086, 6625, 9975, 3992, 7620, 4663, 8756, 1450, 1557, 11371, 4141, 3978, 10829, 3843, 4526, 11372, 10349, 2]
 
-// Module 11369 (updateChatOpen)
+// Module 11370 (updateChatOpen)
 import importAllResult from "result";
-import { Platform } from "module_10348";
+import { Platform } from "module_10349";
 import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes";
 import ME from "ME";
 import jsxProd from "jsxProd";
@@ -52,8 +52,8 @@ const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
     obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t["5MstTl"]);
     obj.icon = importDefault(4086);
     obj.onPress = callback;
-    let tmp3Result = tmp3(importDefault(11367), obj);
-    const tmp10 = importDefault(11367);
+    let tmp3Result = tmp3(importDefault(11368), obj);
+    const tmp10 = importDefault(11368);
   } else {
     obj = {};
     const intl = require(1212) /* getSystemLocale */.intl;

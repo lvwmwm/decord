@@ -1,5 +1,5 @@
 // Module ID: 9021
-// Function ID: 70933
+// Function ID: 70934
 // Name: CrownIcon
 // Dependencies: [31, 33, 689, 3834, 9022, 2]
 // Exports: CrownIcon

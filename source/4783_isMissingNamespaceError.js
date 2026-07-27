@@ -1,5 +1,5 @@
 // Module ID: 4783
-// Function ID: 41587
+// Function ID: 41588
 // Name: isMissingNamespaceError
 // Dependencies: []
 

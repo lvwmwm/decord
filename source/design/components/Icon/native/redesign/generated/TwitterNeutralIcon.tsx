@@ -1,10 +1,10 @@
-// Module ID: 11393
-// Function ID: 88536
+// Module ID: 11394
+// Function ID: 88541
 // Name: TwitterNeutralIcon
-// Dependencies: [31, 33, 689, 3834, 11394, 2]
+// Dependencies: [31, 33, 689, 3834, 11395, 2]
 // Exports: TwitterNeutralIcon
 
-// Module 11393 (TwitterNeutralIcon)
+// Module 11394 (TwitterNeutralIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TwitterNeutralIcon = function TwitterNeutralIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11394) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11395) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(11394) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(11395) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

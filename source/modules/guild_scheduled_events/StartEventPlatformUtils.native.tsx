@@ -1,5 +1,5 @@
 // Module ID: 8276
-// Function ID: 66464
+// Function ID: 66465
 // Name: _navigateToEvent
 // Dependencies: [5, 1348, 4203, 3948, 1354, 653, 44, 6653, 6658, 4945, 1198, 2]
 // Exports: navigateToEvent, postStartActions

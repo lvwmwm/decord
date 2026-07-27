@@ -1,5 +1,5 @@
 // Module ID: 9845
-// Function ID: 76350
+// Function ID: 76351
 // Name: getQuickSwitcherOptions
 // Dependencies: [5, 57, 4976, 1352, 1348, 4166, 1907, 3948, 6107, 653, 1355, 655, 6111, 6110, 675, 8144, 686, 6633, 4139, 4324, 4945, 4141, 9846, 8412, 8418, 5626, 9847, 5769, 5482, 6636, 2]
 // Exports: search, selectResult, switchToResult, toggle

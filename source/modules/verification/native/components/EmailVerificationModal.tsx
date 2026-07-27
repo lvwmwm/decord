@@ -1,5 +1,5 @@
 // Module ID: 9110
-// Function ID: 71606
+// Function ID: 71607
 // Name: closeModal
 // Dependencies: [57, 31, 1850, 9111, 653, 33, 9109, 480, 5087, 9112, 9115, 9116, 9118, 9121, 9156, 9161, 9163, 566, 5450, 5517, 1212, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 8029
-// Function ID: 63896
+// Function ID: 63897
 // Name: maxOverflowOrFallback
 // Dependencies: [8030, 8027, 8028, 2]
 // Exports: computeProfileFrameDimensions

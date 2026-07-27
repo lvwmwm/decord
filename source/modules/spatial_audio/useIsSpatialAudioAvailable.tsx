@@ -1,10 +1,10 @@
-// Module ID: 12817
-// Function ID: 99890
+// Module ID: 12818
+// Function ID: 99895
 // Name: useIsSpatialAudioAvailable
-// Dependencies: [4178, 4192, 12818, 566, 2]
+// Dependencies: [4178, 4192, 12819, 566, 2]
 // Exports: default, isSpatialAudioAvailable
 
-// Module 12817 (useIsSpatialAudioAvailable)
+// Module 12818 (useIsSpatialAudioAvailable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Features } from "DesktopSources";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("apexExperiment").fileFinishedImporting("modules/spatial_audio/useIsSpatialAudioAvailable.tsx");
 
 export default function useIsSpatialAudioAvailable(location) {
-  let obj = importDefault(12818);
+  let obj = importDefault(12819);
   obj = { location };
   let enabled = obj.useConfig(obj).enabled;
   const items = [_isNativeReflectConstruct];
@@ -22,7 +22,7 @@ export default function useIsSpatialAudioAvailable(location) {
   return enabled;
 };
 export const isSpatialAudioAvailable = function isSpatialAudioAvailable(RTCConnectionStore) {
-  let obj = importDefault(12818);
+  let obj = importDefault(12819);
   obj = { location: RTCConnectionStore };
   let enabled = obj.getConfig(obj).enabled;
   if (enabled) {

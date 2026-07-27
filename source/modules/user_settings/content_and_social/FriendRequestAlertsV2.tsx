@@ -1,5 +1,5 @@
 // Module ID: 8990
-// Function ID: 70844
+// Function ID: 70845
 // Name: useIsFriendRequestAlertsV2Enabled
 // Dependencies: [1428, 2]
 // Exports: isFriendRequestAlertsV2Enabled, useIsFriendRequestAlertsV2Enabled

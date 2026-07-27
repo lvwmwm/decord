@@ -1,10 +1,10 @@
-// Module ID: 12560
-// Function ID: 97274
+// Module ID: 12561
+// Function ID: 97279
 // Name: canReviewGuildMemberApplications
 // Dependencies: [1838, 3759, 653, 566, 4621, 2]
 // Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications
 
-// Module 12560 (canReviewGuildMemberApplications)
+// Module 12561 (canReviewGuildMemberApplications)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

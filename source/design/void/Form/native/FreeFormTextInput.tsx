@@ -1,5 +1,5 @@
 // Module ID: 8929
-// Function ID: 70571
+// Function ID: 70572
 // Name: ClearButton
 // Dependencies: [31, 27, 33, 4131, 689, 4661, 1212, 1273, 8930, 44, 2]
 

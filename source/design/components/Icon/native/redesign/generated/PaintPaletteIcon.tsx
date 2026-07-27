@@ -1,5 +1,5 @@
 // Module ID: 6587
-// Function ID: 58404
+// Function ID: 58405
 // Name: PaintPaletteIcon
 // Dependencies: [31, 33, 689, 3834, 6588, 2]
 // Exports: PaintPaletteIcon

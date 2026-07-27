@@ -1,5 +1,5 @@
 // Module ID: 9072
-// Function ID: 71386
+// Function ID: 71387
 // Name: useHandleJoinThreadVoice
 // Dependencies: [5, 3761, 4620, 9073, 1935, 6024, 4342, 2]
 // Exports: default

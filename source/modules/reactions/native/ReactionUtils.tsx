@@ -1,5 +1,5 @@
 // Module ID: 9244
-// Function ID: 72527
+// Function ID: 72528
 // Name: handleOutOfSuperReactions
 // Dependencies: [1348, 4350, 3948, 1850, 653, 1853, 33, 3770, 4100, 4101, 6022, 3777, 4099, 9245, 1935, 3990, 9268, 6023, 4325, 9383, 9393, 9394, 9395, 6519, 6567, 4471, 1212, 4127, 2]
 // Exports: handleAddNewReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions

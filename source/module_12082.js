@@ -1,8 +1,10 @@
 // Module ID: 12082
-// Function ID: 94671
-// Dependencies: [12011]
+// Function ID: 94663
+// Dependencies: [65, 12012, 12016]
 
 // Module 12082
+import _toConsumableArray from "_toConsumableArray";
+
 const self = this;
 let self2 = this;
 if (this) {
@@ -50,35 +52,56 @@ if (self2) {
     }
     const _Object3 = Object;
     let obj = { value: true };
-    exports.ZodIssueCode = undefined;
-    exports.$brand = undefined;
-    exports.config = undefined;
-    exports.ZodFirstPartyTypeKind = undefined;
-    exports.setErrorMap = function setErrorMap(customError) {
-      closure_4.config({ customError });
-    };
-    exports.getErrorMap = function getErrorMap() {
-      return closure_4.config().customError;
-    };
-    let closure_4 = fn(require("module_12011"));
-    exports.ZodIssueCode = { invalid_type: "invalid_type", too_big: "too_big", too_small: "too_small", invalid_format: "invalid_format", not_multiple_of: "not_multiple_of", unrecognized_keys: "unrecognized_keys", invalid_union: "invalid_union", invalid_key: "invalid_key", invalid_element: "invalid_element", invalid_value: "invalid_value", custom: "custom" };
-    const _Object4 = Object;
-    obj = {
-      enumerable: true,
-      get() {
-            return require(12011).$brand;
+    exports.ZodError = undefined;
+    exports.ZodRealError = undefined;
+    const fnResult = fn(require("module_12012"));
+    let closure_6 = fn(require("cached"));
+    function initializer(arg0, arg1) {
+      const _require = arg0;
+      const $ZodError = _require(12012).$ZodError;
+      $ZodError.init(arg0, arg1);
+      arg0.name = "ZodError";
+      let obj = {
+        value(arg0) {
+          return outer1_5.formatError(closure_0, arg0);
+        }
+      };
+      obj = {
+        value(arg0) {
+          return outer1_5.flattenError(closure_0, arg0);
+        }
+      };
+      obj = {
+        value(arg0) {
+          const issues = closure_0.issues;
+          issues.push(arg0);
+          closure_0.message = JSON.stringify(closure_0.issues, outer1_6.jsonStringifyReplacer, 2);
+        }
+      };
+      Object.defineProperties(arg0, {
+        format: obj,
+        flatten: obj,
+        addIssue: obj,
+        addIssues: {
+          value(arg0) {
+            const issues = closure_0.issues;
+            const push = issues.push;
+            push.apply(issues, outer1_2(arg0));
+            closure_0.message = JSON.stringify(closure_0.issues, outer1_6.jsonStringifyReplacer, 2);
           }
-    };
-    Object.defineProperty(exports, "$brand", obj);
-    const _Object5 = Object;
-    obj = {
-      enumerable: true,
-      get() {
-            return require(12011).config;
+        },
+        isEmpty: {
+          get() {
+            return 0 === closure_0.issues.length;
           }
-    };
-    Object.defineProperty(exports, "config", obj);
-    exports.ZodFirstPartyTypeKind = {};
+        }
+      });
+    }
+    exports.ZodError = fnResult.$constructor("ZodError", initializer);
+    obj = {};
+    const _Error = Error;
+    obj.Parent = Error;
+    exports.ZodRealError = fnResult.$constructor("ZodError", initializer, obj);
   } else {
     const _Object2 = Object;
   }

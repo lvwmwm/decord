@@ -1,8 +1,8 @@
-// Module ID: 14065
-// Function ID: 107670
-// Dependencies: [5955, 9406, 9407, 9408, 5960, 5949, 4338, 14066, 1935, 2]
+// Module ID: 14066
+// Function ID: 107675
+// Dependencies: [5955, 9406, 9407, 9408, 5960, 5949, 4338, 14067, 1935, 2]
 
-// Module 14065
+// Module 14066
 let result = require("emitClickEventWithCreative").fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalActionCreators.tsx");
 
 export default {
@@ -36,7 +36,7 @@ export default {
     }
     obj1.cosponsorName = name;
     obj1.isVideoQuest = hasWatchVideoTasksResult;
-    obj7.pushLazy(require(1935) /* maybeLoadBundle */(14066, dependencyMap.paths), obj1, "QUEST_DISCLOSURE_MODAL");
+    obj7.pushLazy(require(1935) /* maybeLoadBundle */(14067, dependencyMap.paths), obj1, "QUEST_DISCLOSURE_MODAL");
   },
   hideModal() {
     importDefault(4338).popWithKey("QUEST_DISCLOSURE_MODAL");

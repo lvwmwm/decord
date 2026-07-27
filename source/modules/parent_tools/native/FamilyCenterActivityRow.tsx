@@ -1,10 +1,10 @@
-// Module ID: 13865
-// Function ID: 106215
+// Module ID: 13866
+// Function ID: 106220
 // Name: memoResult1
-// Dependencies: [31, 27, 1850, 5765, 5766, 653, 33, 4131, 689, 1273, 44, 624, 21, 4127, 3970, 5827, 5513, 9099, 1212, 2199, 13866, 13869, 13870, 2]
+// Dependencies: [31, 27, 1850, 5765, 5766, 653, 33, 4131, 689, 1273, 44, 624, 21, 4127, 3970, 5827, 5513, 9099, 1212, 2199, 13867, 13870, 13871, 2]
 // Exports: default
 
-// Module 13865 (memoResult1)
+// Module 13866 (memoResult1)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -160,7 +160,7 @@ export default function FamilyCenterActivityRow(action) {
     if (null != purchaseInfo) {
       obj = {};
       ({ sku_id: obj11.skuId, subscription_plan_id: obj11.subscriptionPlanId, total: obj11.total, currency: obj11.currency } = purchaseInfo);
-      tmp23 = callback(importDefault(13866), obj);
+      tmp23 = callback(importDefault(13867), obj);
     }
     return tmp23;
   } else {
@@ -169,10 +169,10 @@ export default function FamilyCenterActivityRow(action) {
       if (null == giftInfo) {
         return null;
       } else {
-        const giftRowDisplayInfo = require(13869) /* formatGiftDate */.getGiftRowDisplayInfo(giftInfo);
+        const giftRowDisplayInfo = require(13870) /* formatGiftDate */.getGiftRowDisplayInfo(giftInfo);
         ({ skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt } = giftRowDisplayInfo);
         obj = { skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt };
-        return callback(importDefault(13870), obj);
+        return callback(importDefault(13871), obj);
       }
     } else {
       obj1 = {};

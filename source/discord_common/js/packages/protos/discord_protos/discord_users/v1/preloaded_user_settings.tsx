@@ -213,21 +213,15 @@ let tmp2 = ((MessageType) => {
   let items = [obj, , ];
   obj = {
     key: "internalBinaryRead",
-    value(pos, arg1, binaryReadOptionsResult2) {
+    value(pos) {
       let obj = arg3;
       const self = this;
       if (null == arg3) {
         obj = self.create();
       }
-      const sum = pos.pos + arg1;
-      if (pos.pos < sum) {
-        obj.appVersionSettings = outer1_81.internalBinaryRead(pos, pos.uint32(), binaryReadOptionsResult2, obj.appVersionSettings);
-        while (true) {
-          do {
-            let tmp3 = tmp9;
-            let tmp4 = tmp10;
-          } while (pos.pos >= sum);
-        }
+      if (pos.pos < pos.pos + arg1) {
+        [r10026, r10027] = outer1_2(pos.tag(), 2);
+        const tmp3 = outer1_2(pos.tag(), 2);
       }
       return obj;
     }

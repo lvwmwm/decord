@@ -1,5 +1,5 @@
 // Module ID: 5903
-// Function ID: 52384
+// Function ID: 52385
 // Name: getMediaPerformanceClass
 // Dependencies: [4111, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 9371
-// Function ID: 73112
+// Function ID: 73113
 // Name: ObjectIcon
 // Dependencies: [31, 33, 689, 3834, 9372, 2]
 // Exports: ObjectIcon

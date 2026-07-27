@@ -1,5 +1,5 @@
 // Module ID: 6511
-// Function ID: 58192
+// Function ID: 58193
 // Name: useIsBuyNitroPurchaseBlocked
 // Dependencies: [5619, 621, 566, 2]
 // Exports: useIsBuyNitroPurchaseBlocked

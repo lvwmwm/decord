@@ -1,5 +1,5 @@
 // Module ID: 4536
-// Function ID: 39836
+// Function ID: 39837
 // Name: BLUR_EFFECT_NAMES
 // Dependencies: [4111, 4537, 4538, 2]
 

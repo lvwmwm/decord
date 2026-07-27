@@ -1,10 +1,10 @@
-// Module ID: 12487
-// Function ID: 96777
+// Module ID: 12488
+// Function ID: 96782
 // Name: FEATURES_PREMIUM_GUILD_USER
-// Dependencies: [31, 27, 4971, 1852, 33, 4131, 689, 12466, 1212, 6561, 12488, 12489, 12491, 8224, 12492, 6519, 12493, 6572, 12494, 11556, 12495, 6522, 12496, 9351, 566, 12381, 12497, 4067, 6467, 3977, 6476, 6477, 4127, 9265, 12501, 12502, 12503, 2]
+// Dependencies: [31, 27, 4971, 1852, 33, 4131, 689, 12467, 1212, 6561, 12489, 12490, 12492, 8224, 12493, 6519, 12494, 6572, 12495, 11557, 12496, 6522, 12497, 9351, 566, 12382, 12498, 4067, 6467, 3977, 6476, 6477, 4127, 9265, 12502, 12503, 12504, 2]
 // Exports: default
 
-// Module 12487 (FEATURES_PREMIUM_GUILD_USER)
+// Module 12488 (FEATURES_PREMIUM_GUILD_USER)
 import "registerAsset";
 import get_ActivityIndicator from "useTheme";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -65,9 +65,9 @@ export default function GuildBoostingUpsell(arg0) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getFlattenedGuildIds().length > 0);
-  let obj1 = require(12381) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(12382) /* _createForOfIteratorHelperLoose */;
   const subscriptionPlansLoaded = obj1.useSubscriptionPlansLoaded();
-  let obj2 = require(12497) /* getGuildSubscriptionNoGuildsSource */;
+  let obj2 = require(12498) /* getGuildSubscriptionNoGuildsSource */;
   const guildSubscriptionNoGuildsSource = obj2.useGuildSubscriptionNoGuildsSource();
   if (fractionalState !== FractionalPremiumStates.NONE) {
     if (!isInReverseTrial) {
@@ -118,31 +118,31 @@ export default function GuildBoostingUpsell(arg0) {
   const obj8 = { style: tmp.features };
   const obj9 = {};
   const tmp14 = importDefault(9265);
-  obj9.icon = importDefault(12492);
+  obj9.icon = importDefault(12493);
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj9.label = intl5.string(require(1212) /* getSystemLocale */.t.Ts7BVI);
   obj9.IconComponent = require(6519) /* ReactionIcon */.ReactionIcon;
   obj9.color = importDefault(689).unsafe_rawColors.PREMIUM_PERK_YELLOW;
   const items3 = [obj9, , , , ];
-  const obj10 = { icon: importDefault(12493) };
+  const obj10 = { icon: importDefault(12494) };
   const intl6 = require(1212) /* getSystemLocale */.intl;
   obj10.label = intl6.string(require(1212) /* getSystemLocale */.t.QcJbt6);
   obj10.IconComponent = require(6572) /* StickerIcon */.StickerIcon;
   obj10.color = importDefault(689).unsafe_rawColors.PREMIUM_PERK_PURPLE;
   items3[1] = obj10;
-  const obj11 = { icon: importDefault(12494) };
+  const obj11 = { icon: importDefault(12495) };
   const intl7 = require(1212) /* getSystemLocale */.intl;
   obj11.label = intl7.string(require(1212) /* getSystemLocale */.t.rFNkf5);
   obj11.color = "#4173da";
-  obj11.IconComponent = require(11556) /* HeadphonesIcon */.HeadphonesIcon;
+  obj11.IconComponent = require(11557) /* HeadphonesIcon */.HeadphonesIcon;
   items3[2] = obj11;
-  const obj12 = { icon: importDefault(12495) };
+  const obj12 = { icon: importDefault(12496) };
   const intl8 = require(1212) /* getSystemLocale */.intl;
   obj12.label = intl8.string(require(1212) /* getSystemLocale */.t["BpjjS/"]);
   obj12.IconComponent = require(6522) /* UploadIcon */.UploadIcon;
   obj12.color = importDefault(689).unsafe_rawColors.GUILD_BOOSTING_PINK;
   items3[3] = obj12;
-  const obj13 = { icon: importDefault(12496) };
+  const obj13 = { icon: importDefault(12497) };
   const intl9 = require(1212) /* getSystemLocale */.intl;
   obj13.label = intl9.string(require(1212) /* getSystemLocale */.t["9g5Lgb"]);
   obj13.IconComponent = require(9351) /* StarIcon */.StarIcon;
@@ -155,7 +155,7 @@ export default function GuildBoostingUpsell(arg0) {
   if (subscriptionPlansLoaded) {
     tmp18 = null;
     if (fractionalState === FractionalPremiumStates.NONE) {
-      tmp18 = callback(importDefault(12501), {});
+      tmp18 = callback(importDefault(12502), {});
     }
   }
   const items4 = [tmp18, , ];
@@ -164,7 +164,7 @@ export default function GuildBoostingUpsell(arg0) {
     let tmp34 = null;
     if (subscriptionPlansLoaded) {
       const obj15 = { onLearnMorePremium, style: tmp.subscriptionUpsell };
-      tmp34 = callback(importDefault(12503), obj15);
+      tmp34 = callback(importDefault(12504), obj15);
     }
     items4[2] = tmp34;
     obj14.children = items4;
@@ -188,7 +188,7 @@ export default function GuildBoostingUpsell(arg0) {
       obj18.children = num4;
       items5[1] = tmp25(require(dependencyMap[num3]).Text, obj18);
       const obj19 = { style: tmp.guildList };
-      num3 = tmp25(importDefault(12502), obj19);
+      num3 = tmp25(importDefault(12503), obj19);
       items5[2] = num3;
       obj16.children = items5;
       let tmp29 = obj16;

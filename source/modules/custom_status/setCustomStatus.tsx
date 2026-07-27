@@ -1,10 +1,10 @@
-// Module ID: 11907
-// Function ID: 92195
+// Module ID: 11908
+// Function ID: 92200
 // Name: determineEmojiType
-// Dependencies: [11904, 653, 3804, 3713, 11908, 675, 2]
+// Dependencies: [11905, 653, 3804, 3713, 11909, 675, 2]
 // Exports: default
 
-// Module 11907 (determineEmojiType)
+// Module 11908 (determineEmojiType)
 import { ClearAfterValues } from "StatusTypes";
 import { AnalyticEvents } from "ME";
 
@@ -50,9 +50,9 @@ export default function setCustomStatus(arg0) {
     if (clearAfter !== ClearAfterValues.DONT_CLEAR) {
       const _String = String;
       const obj2 = importDefault(3713)();
-      const addResult = importDefault(3713)().add(importDefault(11908)(clearAfter), "ms");
-      str2 = String(importDefault(3713)().add(importDefault(11908)(clearAfter), "ms").toDate().getTime());
-      const toDateResult = importDefault(3713)().add(importDefault(11908)(clearAfter), "ms").toDate();
+      const addResult = importDefault(3713)().add(importDefault(11909)(clearAfter), "ms");
+      str2 = String(importDefault(3713)().add(importDefault(11909)(clearAfter), "ms").toDate().getTime());
+      const toDateResult = importDefault(3713)().add(importDefault(11909)(clearAfter), "ms").toDate();
     }
   }
   obj.expiresAtMs = str2;

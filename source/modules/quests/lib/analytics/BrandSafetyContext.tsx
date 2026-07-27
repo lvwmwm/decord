@@ -1,10 +1,10 @@
-// Module ID: 10434
-// Function ID: 80900
+// Module ID: 10435
+// Function ID: 80905
 // Name: getBrandSafetyContext
-// Dependencies: [9402, 1348, 1838, 3768, 3948, 1850, 10433, 5930, 1392, 4321, 2]
+// Dependencies: [9402, 1348, 1838, 3768, 3948, 1850, 10434, 5930, 1392, 4321, 2]
 // Exports: getBrandSafetyContext
 
-// Module 10434 (getBrandSafetyContext)
+// Module 10435 (getBrandSafetyContext)
 import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

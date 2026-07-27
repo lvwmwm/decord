@@ -1,5 +1,5 @@
 // Module ID: 9983
-// Function ID: 77268
+// Function ID: 77269
 // Name: isNewLayoutBetter
 // Dependencies: [2]
 // Exports: default

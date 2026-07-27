@@ -1,5 +1,5 @@
 // Module ID: 8045
-// Function ID: 63960
+// Function ID: 63961
 // Name: UserProfileAnalyticsProvider
 // Dependencies: [31, 33, 5462, 8046, 491, 2]
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext

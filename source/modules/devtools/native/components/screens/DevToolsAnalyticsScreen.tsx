@@ -1,10 +1,10 @@
-// Module ID: 13571
-// Function ID: 104436
+// Module ID: 13572
+// Function ID: 104441
 // Name: CommonProperty
-// Dependencies: [57, 31, 27, 1850, 13395, 653, 33, 4131, 689, 4127, 5164, 9554, 3713, 9386, 4661, 5490, 4079, 566, 6619, 4542, 5501, 5502, 11265, 4090, 13572, 9171, 2]
+// Dependencies: [57, 31, 27, 1850, 13396, 653, 33, 4131, 689, 4127, 5164, 9554, 3713, 9386, 4661, 5490, 4079, 566, 6619, 4542, 5501, 5502, 11266, 4090, 13573, 9171, 2]
 // Exports: default
 
-// Module 13571 (CommonProperty)
+// Module 13572 (CommonProperty)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -209,9 +209,9 @@ export default function DevToolsAnalyticsScreen() {
   obj = {};
   const obj1 = { spacing: 16 };
   const obj2 = { title: "Actions", hasIcons: true };
-  const obj3 = { icon: callback2(trimmed(11265).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp3[1] };
+  const obj3 = { icon: callback2(trimmed(11266).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp3[1] };
   const items2 = [callback2(trimmed(5502).TableSwitchRow, obj3), ];
-  const obj4 = { arrow: true, variant: "danger", icon: callback2(trimmed(4090).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(13572).clearAnalyticsLog };
+  const obj4 = { arrow: true, variant: "danger", icon: callback2(trimmed(4090).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(13573).clearAnalyticsLog };
   items2[1] = callback2(trimmed(5164).TableRow, obj4);
   obj2.children = items2;
   const items3 = [callback3(trimmed(5501).TableRowGroup, obj2), , ];

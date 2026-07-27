@@ -1,5 +1,5 @@
 // Module ID: 5982
-// Function ID: 53234
+// Function ID: 53235
 // Name: SystemResources
 // Dependencies: [5, 6, 7, 5976, 5907, 5983, 2]
 
@@ -13,11 +13,11 @@ const tmp2 = (() => {
   class SystemResources {
     constructor() {
       tmp = outer1_4(this, SystemResources);
-      histogram = new f53245(f53239[3]).Histogram();
+      histogram = new f53246(f53240[3]).Histogram();
       this.cpuHistogram = histogram;
-      histogram1 = new f53245(f53239[3]).Histogram();
+      histogram1 = new f53246(f53240[3]).Histogram();
       this.memoryHistogram = histogram1;
-      obj = f53242(f53239[4]);
+      obj = f53243(f53240[4]);
       this.startCPU = obj.getCumulativeCPUUsage();
       this.lastCPU = this.startCPU;
       this.lastBattery = null;

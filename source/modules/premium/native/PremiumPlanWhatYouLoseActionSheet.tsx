@@ -1,5 +1,5 @@
 // Module ID: 6479
-// Function ID: 57987
+// Function ID: 57988
 // Name: WhatYouLoseItem
 // Dependencies: [31, 27, 1852, 33, 4131, 689, 5085, 4127, 3777, 5462, 6480, 44, 6485, 1212, 6486, 6151, 6487, 6488, 4099, 5187, 6172, 4544, 6238, 2]
 // Exports: default

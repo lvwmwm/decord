@@ -1,5 +1,5 @@
 // Module ID: 9713
-// Function ID: 75701
+// Function ID: 75702
 // Name: SocialLayerStorefrontWishlistItemCard
 // Dependencies: [31, 4168, 9711, 33, 4131, 689, 566, 7991, 5085, 8602, 2]
 // Exports: default

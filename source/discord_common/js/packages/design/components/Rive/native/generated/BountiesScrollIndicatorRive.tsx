@@ -1,5 +1,5 @@
 // Module ID: 3914
-// Function ID: 32356
+// Function ID: 32357
 // Name: BountiesScrollIndicatorRive
 // Dependencies: [29, 31, 33, 3860, 3915, 3911, 2]
 

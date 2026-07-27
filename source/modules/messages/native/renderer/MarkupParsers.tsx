@@ -1,5 +1,5 @@
 // Module ID: 7805
-// Function ID: 61952
+// Function ID: 61953
 // Name: importDefaultResult1
 // Dependencies: [653, 664, 1362, 4121, 7806, 7817, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup

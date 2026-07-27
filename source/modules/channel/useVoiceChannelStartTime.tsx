@@ -1,10 +1,10 @@
-// Module ID: 15113
-// Function ID: 115068
+// Module ID: 15125
+// Function ID: 115114
 // Name: useStartTime
-// Dependencies: [31, 4809, 4470, 9435, 653, 566, 10421, 2]
+// Dependencies: [31, 4809, 4470, 9435, 653, 566, 10422, 2]
 // Exports: useStartTime
 
-// Module 15113 (useStartTime)
+// Module 15125 (useStartTime)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

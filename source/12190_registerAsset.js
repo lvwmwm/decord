@@ -1,11 +1,11 @@
 // Module ID: 12190
-// Function ID: 95392
+// Function ID: 95396
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12190 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "811fb35960f597c4ee3417f16bd2f9e6", name: "messages", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/auth", width: 100, height: 100, scales: [1], hash: "2466a8cae3eebcc6d13072f6ff1957c4", name: "img-auth-qrcode-overlay", type: "png" };
 
 export default registerAsset.registerAsset(obj);

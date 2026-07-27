@@ -1,10 +1,10 @@
-// Module ID: 16038
-// Function ID: 124042
+// Module ID: 16050
+// Function ID: 124089
 // Name: onClose
-// Dependencies: [31, 3948, 1197, 16039, 653, 33, 477, 3832, 16040, 1212, 5587, 5049, 4338, 675, 480, 5087, 16041, 16043, 16044, 14829, 9291, 4346, 4348, 5517, 2]
+// Dependencies: [31, 3948, 1197, 16051, 653, 33, 477, 3832, 16052, 1212, 5587, 5049, 4338, 675, 480, 5087, 16053, 16055, 16056, 14830, 9291, 4346, 4348, 5517, 2]
 // Exports: default
 
-// Module 16038 (onClose)
+// Module 16050 (onClose)
 import closure_3 from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import result from "result";

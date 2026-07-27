@@ -1,10 +1,10 @@
-// Module ID: 15073
-// Function ID: 114845
+// Module ID: 15085
+// Function ID: 114891
 // Name: UserSummaryRow
-// Dependencies: [31, 27, 4952, 1353, 4150, 3759, 4204, 1354, 482, 33, 689, 1273, 4121, 10230, 9929, 9849, 477, 4548, 4131, 4127, 11556, 10223, 1820, 4342, 6653, 4067, 8757, 4544, 3977, 4321, 566, 1212, 4594, 8265, 8151, 8189, 8155, 4964, 4958, 4951, 8259, 4655, 15072, 9029, 5166, 2]
+// Dependencies: [31, 27, 4952, 1353, 4150, 3759, 4204, 1354, 482, 33, 689, 1273, 4121, 10231, 9929, 9849, 477, 4548, 4131, 4127, 11557, 10224, 1820, 4342, 6653, 4067, 8757, 4544, 3977, 4321, 566, 1212, 4594, 8265, 8151, 8189, 8155, 4964, 4958, 4951, 8259, 4655, 15084, 9029, 5166, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 15073 (UserSummaryRow)
+// Module 15085 (UserSummaryRow)
 import importAllResult from "getSystemLocale";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -105,9 +105,9 @@ function UserSummaryRow(arg0) {
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       obj1.style = items2;
       let obj2 = { size: "custom" };
-      let obj5 = max(10223);
+      let obj5 = max(10224);
       obj2.style = obj5.makeSizeStyle(14);
-      const items3 = [callback(max(11556).HeadphonesIcon, obj2), ];
+      const items3 = [callback(max(11557).HeadphonesIcon, obj2), ];
       let obj3 = { variant: "text-xs/semibold", style: null, maxFontSizeMultiplier: 1 };
       let obj4 = { marginLeft: 4 };
       obj3.style = obj4;
@@ -446,7 +446,7 @@ let result = set.fileFinishedImporting("modules/guild_scheduled_events/native/gu
 
 export default importAllResult.memo((guild) => {
   guild = guild.guild;
-  let obj = activeEventOrStageInstanceChannel(15072);
+  let obj = activeEventOrStageInstanceChannel(15084);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
   let obj1 = activeEventOrStageInstanceChannel(8259);
   const guildActiveEvent = obj1.useGuildActiveEvent(guild.id);

@@ -1,5 +1,5 @@
 // Module ID: 8009
-// Function ID: 63803
+// Function ID: 63804
 // Name: getNameplateAssets
 // Dependencies: [1830, 2]
 // Exports: getNameplateAssets

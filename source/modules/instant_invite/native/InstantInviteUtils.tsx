@@ -1,5 +1,5 @@
 // Module ID: 8286
-// Function ID: 66527
+// Function ID: 66528
 // Name: showInstantInviteActionSheet
 // Dependencies: [5687, 1352, 1348, 8287, 1908, 4116, 4218, 1850, 8291, 5969, 8292, 653, 675, 5971, 8293, 8294, 4117, 4099, 8134, 3831, 5992, 5490, 4305, 44, 8289, 2]
 // Exports: getShareMessage, handleCopy, handleOpenInviteActionsheet, handleOpenShareSheet, handlePressSettings, hasDeferredInvite, isAppInstalled, showInstantInviteActionSheetForChannel

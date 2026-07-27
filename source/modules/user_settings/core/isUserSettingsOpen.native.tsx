@@ -1,10 +1,10 @@
-// Module ID: 12747
-// Function ID: 99332
+// Module ID: 12748
+// Function ID: 99337
 // Name: isSettingsRoutePresent
 // Dependencies: [57, 31, 3983, 2]
 // Exports: useIsUserSettingsOpen
 
-// Module 12747 (isSettingsRoutePresent)
+// Module 12748 (isSettingsRoutePresent)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

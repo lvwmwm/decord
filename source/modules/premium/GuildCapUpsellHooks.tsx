@@ -1,5 +1,5 @@
 // Module ID: 5595
-// Function ID: 47565
+// Function ID: 47566
 // Name: hasIncreasedGuildCap
 // Dependencies: [1838, 1850, 653, 566, 5596, 3777, 2]
 // Exports: hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell

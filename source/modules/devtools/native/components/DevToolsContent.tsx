@@ -1,9 +1,9 @@
-// Module ID: 13568
-// Function ID: 104384
+// Module ID: 13569
+// Function ID: 104389
 // Name: DevToolsContentSortButtons
-// Dependencies: [57, 31, 27, 10403, 4045, 1188, 33, 4131, 689, 566, 10917, 13569, 4127, 4661, 4100, 14015, 14765, 1456, 1557, 5501, 5164, 3832, 13567, 2]
+// Dependencies: [57, 31, 27, 10404, 4045, 1188, 33, 4131, 689, 566, 10918, 13570, 4127, 4661, 4100, 14016, 14766, 1456, 1557, 5501, 5164, 3832, 13568, 2]
 
-// Module 13568 (DevToolsContentSortButtons)
+// Module 13569 (DevToolsContentSortButtons)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -41,7 +41,7 @@ function DevToolsContentSortButtons(arg0) {
   obj.style = items;
   obj.accessibilityRole = "button";
   obj.accessibilityLabel = "Shift up";
-  obj.children = callback2(require(14015) /* ArrowSmallUpIcon */.ArrowSmallUpIcon, {});
+  obj.children = callback2(require(14016) /* ArrowSmallUpIcon */.ArrowSmallUpIcon, {});
   const items1 = [callback2(require(4661) /* PressableBase */.PressableOpacity, obj), ];
   obj = {
     onPress() {
@@ -59,7 +59,7 @@ function DevToolsContentSortButtons(arg0) {
   obj.style = items2;
   obj.accessibilityRole = "button";
   obj.accessibilityLabel = "Shift down";
-  obj.children = callback2(require(14765) /* ArrowSmallDownIcon */.ArrowSmallDownIcon, {});
+  obj.children = callback2(require(14766) /* ArrowSmallDownIcon */.ArrowSmallDownIcon, {});
   items1[1] = callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
   obj.children = items1;
   return closure_11(closure_5, obj);
@@ -111,7 +111,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
     const items2 = [outer1_9];
     const dependencyMap = stateFromStores + callback(566).useStateFromStores(items2, () => Object.keys(outer2_9.getClientOverrides()).length);
     const obj3 = callback(566);
-    return dependencyMap(13569)().map((arg0) => {
+    return dependencyMap(13570)().map((arg0) => {
       let tmp;
       [tmp] = arg0;
       if ("buildOverride" === tmp) {
@@ -134,7 +134,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
   let tmp3 = callback(arr.useState(false), 2);
   let dependencyMap = tmp3[0];
   callback = tmp3[1];
-  arr = importDefault(13569)();
+  arr = importDefault(13570)();
   obj = {
     title,
     hasIcons: true,
@@ -170,7 +170,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
           if (null != outer1_0.push) {
             outer1_0.push(callback);
           } else {
-            let obj = callback(13567);
+            let obj = callback(13568);
             obj = { screenKey: callback };
             obj.navigateToDevTools(obj);
           }

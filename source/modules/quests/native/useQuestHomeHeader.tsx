@@ -1,10 +1,10 @@
-// Module ID: 13962
-// Function ID: 106759
+// Module ID: 13963
+// Function ID: 106764
 // Name: QuestHomeHeaderTitle
-// Dependencies: [31, 27, 4977, 653, 655, 33, 4131, 689, 13959, 4127, 1212, 8652, 4099, 9754, 1935, 675, 5482, 5769, 9742, 13963, 6626, 13964, 1456, 12217, 2]
+// Dependencies: [31, 27, 4977, 653, 655, 33, 4131, 689, 13960, 4127, 1212, 8652, 4099, 9754, 1935, 675, 5482, 5769, 9742, 13964, 6626, 13965, 1456, 12218, 2]
 // Exports: default
 
-// Module 13962 (QuestHomeHeaderTitle)
+// Module 13963 (QuestHomeHeaderTitle)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { QuestHomeSortMethods } from "QuestsExperimentLocations";
@@ -19,7 +19,7 @@ const require = arg1;
 function QuestHomeHeaderTitle() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.headerTitleContainer };
-  const items = [callback(require(13959) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(13960) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.JALI2K);

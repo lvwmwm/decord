@@ -1,5 +1,5 @@
 // Module ID: 6309
-// Function ID: 56731
+// Function ID: 56732
 // Name: addHandler
 // Dependencies: [6310, 6311, 6314]
 

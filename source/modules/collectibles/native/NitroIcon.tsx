@@ -1,5 +1,5 @@
 // Module ID: 8683
-// Function ID: 68903
+// Function ID: 68904
 // Name: NitroIcon
 // Dependencies: [31, 33, 8463, 2]
 // Exports: default

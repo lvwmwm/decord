@@ -1,10 +1,10 @@
-// Module ID: 13877
-// Function ID: 106294
+// Module ID: 13878
+// Function ID: 106299
 // Name: FamilyCenterMaxConnectionsBlurb
-// Dependencies: [31, 27, 5766, 10098, 33, 4131, 689, 6200, 6201, 11050, 1212, 2199, 4127, 10101, 5121, 13838, 13878, 13880, 13889, 2]
+// Dependencies: [31, 27, 5766, 10098, 33, 4131, 689, 6200, 6201, 11051, 1212, 2199, 4127, 10101, 5121, 13839, 13879, 13881, 13890, 2]
 // Exports: default
 
-// Module 13877 (FamilyCenterMaxConnectionsBlurb)
+// Module 13878 (FamilyCenterMaxConnectionsBlurb)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import items from "items";
@@ -25,7 +25,7 @@ function FamilyCenterMaxConnectionsBlurb() {
   let obj = require(6200) /* useUserIdsForLinkStatus */;
   const hasMaxConnections = obj.useHasMaxConnections();
   const tmp = _createForOfIteratorHelperLoose();
-  require(11050) /* useAgeSpecificText */;
+  require(11051) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
   intl.formatToPlainString(importDefault(2199)["1/PzIj"], { maxConnections: importDefault(6201)() ? closure_5 : closure_6 });
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -92,7 +92,7 @@ export default function FamilyCenterRequestsPage() {
   let obj = { style: tmp.scrollView };
   obj = { bottom: true };
   obj = { style: tmp.container };
-  const items = [callback(importDefault(13838), {}), callback(importDefault(13878), {}), callback(importDefault(13880), {}), callback(importDefault(13889), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
+  const items = [callback(importDefault(13839), {}), callback(importDefault(13879), {}), callback(importDefault(13881), {}), callback(importDefault(13890), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
   obj.children = items;
   obj.children = callback2(closure_3, obj);
   obj.children = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

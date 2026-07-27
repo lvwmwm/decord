@@ -1,5 +1,5 @@
 // Module ID: 4162
-// Function ID: 35159
+// Function ID: 35160
 // Name: isImageProxyURL
 // Dependencies: [1443, 1426, 2]
 // Exports: getSizedImageProxyURL

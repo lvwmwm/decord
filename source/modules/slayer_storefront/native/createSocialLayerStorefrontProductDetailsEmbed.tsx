@@ -1,10 +1,10 @@
-// Module ID: 10831
-// Function ID: 84049
+// Module ID: 10832
+// Function ID: 84054
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4168, 4176, 653, 5969, 7666, 1212, 10832, 5613, 5609, 3105, 7829, 6515, 4120, 6631, 478, 566, 1327, 5468, 2]
+// Dependencies: [57, 31, 4168, 4176, 653, 5969, 7666, 1212, 10833, 5613, 5609, 3105, 7829, 6515, 4120, 6631, 478, 566, 1327, 5468, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10831 (_createForOfIteratorHelperLoose)
+// Module 10832 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -131,7 +131,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (importDefault(10832)(application)) {
+        if (importDefault(10833)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result2 = require(5613) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(value);
             const obj2 = require(5613) /* transformStorefrontSKUPricesServer */;

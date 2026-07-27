@@ -1,9 +1,9 @@
-// Module ID: 16032
-// Function ID: 123863
+// Module ID: 16044
+// Function ID: 123910
 // Name: timestamp
 // Dependencies: [3, 2]
 
-// Module 16032 (timestamp)
+// Module 16044 (timestamp)
 import importDefaultResult from "timestamp";
 
 importDefaultResult = new importDefaultResult("app");

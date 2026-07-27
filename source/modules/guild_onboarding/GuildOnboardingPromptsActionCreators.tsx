@@ -1,5 +1,5 @@
 // Module ID: 5058
-// Function ID: 43777
+// Function ID: 43778
 // Name: fetchOnboardingPrompts
 // Dependencies: [5, 1194, 1918, 1838, 5059, 5060, 653, 3747, 675, 4325, 686, 507, 1360, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts

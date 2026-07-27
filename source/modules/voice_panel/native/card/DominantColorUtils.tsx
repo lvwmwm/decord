@@ -1,5 +1,5 @@
 // Module ID: 7992
-// Function ID: 63711
+// Function ID: 63712
 // Name: getCachedSourceFromURI
 // Dependencies: [57, 31, 27, 1362, 3975, 689, 620, 2]
 // Exports: useDominantColorFromImage

@@ -1,9 +1,9 @@
-// Module ID: 10704
-// Function ID: 83262
+// Module ID: 10705
+// Function ID: 83267
 // Name: combined
 // Dependencies: [653, 1921, 2]
 
-// Module 10704 (combined)
+// Module 10705 (combined)
 import importDefaultResult from "wrapURL";
 
 const combined = "" + require("wrapURL").getArticleURL(require("ME").HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";

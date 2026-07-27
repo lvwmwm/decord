@@ -1,10 +1,10 @@
-// Module ID: 13923
-// Function ID: 106556
+// Module ID: 13924
+// Function ID: 106561
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [31, 27, 5067, 1194, 4813, 1922, 653, 33, 4131, 689, 4067, 566, 12121, 5470, 4939, 4099, 13922, 1935, 8897, 13924, 7575, 13927, 4542, 13928, 2]
+// Dependencies: [31, 27, 5067, 1194, 4813, 1922, 653, 33, 4131, 689, 4067, 566, 12122, 5470, 4939, 4099, 13923, 1935, 8897, 13925, 7575, 13928, 4542, 13929, 2]
 // Exports: UserSettingsConnections
 
-// Module 13923 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 13924 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import result from "result";
 import { ActivityIndicator } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   const authorizedAppsFetchState = stateFromStoresObject1.authorizedAppsFetchState;
   const authorizedApps = stateFromStoresObject1.authorizedApps;
   const obj3 = selectedPlatformType(566);
-  const tmp4Result = importDefault(12121)(id.getId(), { includeHidden: true });
+  const tmp4Result = importDefault(12122)(id.getId(), { includeHidden: true });
   const prop = tmp4Result.filteredAppIdentities;
   const items3 = [authorizedAppsFetchState];
   const effect = authorizedAppsFetchState.useEffect(() => {
@@ -73,7 +73,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (!tmp4Result.isLoading) {
       if (0 === accounts.length) {
         if (0 === prop.length) {
-          let tmp13 = callback(importDefault(13924), {});
+          let tmp13 = callback(importDefault(13925), {});
         }
       }
       obj = { style: tmp.form };

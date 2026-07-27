@@ -1,5 +1,5 @@
 // Module ID: 5822
-// Function ID: 51159
+// Function ID: 51160
 // Name: _fetchUserEntitlements
 // Dependencies: [5, 653, 686, 507, 4370, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication

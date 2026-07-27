@@ -1,10 +1,10 @@
-// Module ID: 14066
-// Function ID: 107673
+// Module ID: 14067
+// Function ID: 107678
 // Name: CloseButton
-// Dependencies: [33, 6695, 7640, 14065, 1212, 5087, 14067, 5517, 2]
+// Dependencies: [33, 6695, 7640, 14066, 1212, 5087, 14068, 5517, 2]
 // Exports: default
 
-// Module 14066 (CloseButton)
+// Module 14067 (CloseButton)
 import { jsx } from "jsxProd";
 
 function CloseButton() {

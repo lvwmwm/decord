@@ -1,10 +1,10 @@
-// Module ID: 15570
-// Function ID: 120058
+// Module ID: 15582
+// Function ID: 120105
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [57, 5, 31, 27, 1391, 1348, 1911, 1838, 3759, 3768, 1850, 653, 33, 4131, 689, 1456, 1557, 566, 3764, 483, 8217, 4141, 1882, 3970, 4471, 1212, 3828, 1921, 1356, 15571, 9050, 4127, 4321, 10141, 5164, 5501, 15575, 477, 15576, 2]
+// Dependencies: [57, 5, 31, 27, 1391, 1348, 1911, 1838, 3759, 3768, 1850, 653, 33, 4131, 689, 1456, 1557, 566, 3764, 483, 8217, 4141, 1882, 3970, 4471, 1212, 3828, 1921, 1356, 15583, 9050, 4127, 4321, 10141, 5164, 5501, 15587, 477, 15588, 2]
 // Exports: default
 
-// Module 15570 (ChannelSettingsPermissionsOverrides)
+// Module 15582 (ChannelSettingsPermissionsOverrides)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import Text from "Text";
@@ -184,8 +184,8 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         let title;
         ({ title, flag } = description);
         const tmp = outer1_7(flag);
-        let obj = { variant: "text-xs/medium", color: "text-subtle", children: outer2_0(15575).renderDescription(description.description) };
-        const obj2 = outer2_0(15575);
+        let obj = { variant: "text-xs/medium", color: "text-subtle", children: outer2_0(15587).renderDescription(description.description) };
+        const obj2 = outer2_0(15587);
         const tmp2 = null != tmp && tmp;
         const tmp3 = outer2_19;
         obj = {};
@@ -203,7 +203,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         obj.onValueChange = function onValueChange(arg0) {
           outer2_6(flag, arg0);
         };
-        obj.trailing = outer2_19(id(15576), obj);
+        obj.trailing = outer2_19(id(15588), obj);
         return tmp3(outer2_0(5164).TableRow, obj, "row-" + arg1);
       });
       obj.children = outer1_19(outer1_0(outer1_19[35]).TableRowGroup, obj);

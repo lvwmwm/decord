@@ -1,5 +1,5 @@
 // Module ID: 9944
-// Function ID: 76953
+// Function ID: 76954
 // Name: PlatformIcon
 // Dependencies: [5, 57, 31, 27, 5067, 1922, 1858, 1194, 1348, 4813, 1918, 3759, 4941, 653, 33, 4131, 689, 4067, 4815, 1392, 3977, 1273, 4594, 4321, 4127, 1212, 4940, 9945, 5465, 8328, 9946, 9947, 22, 3835, 9948, 44, 3832, 9243, 4560, 7575, 4939, 566, 4942, 5049, 675, 4325, 4099, 6554, 9951, 8897, 686, 4338, 9956, 1935, 5655, 9960, 5187, 9961, 5506, 4544, 2]
 
@@ -792,7 +792,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     useState = undefined;
     useState = undefined;
     useStateFromStores = undefined;
-    f77008 = undefined;
+    f77009 = undefined;
     useState = undefined;
     handleClose = function handleClose() {
       let flag = true;
@@ -932,7 +932,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
         });
       }
     };
-    tmp = f77011();
+    tmp = f77012();
     registerAsset = tmp;
     tmp2 = onCloseModal(registerAsset.useState(filter.CHECKS_REQUIRED), 2);
     first = tmp2[0];
@@ -964,7 +964,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     obj3 = require("initialize");
     items2 = [];
     items2[0] = useState;
-    f77007 = obj3.useStateFromStores(items2, () => outer1_12.getId());
+    f77008 = obj3.useStateFromStores(items2, () => outer1_12.getId());
     tmp13 = onCloseModal(registerAsset.useState(null), 2);
     first2 = tmp13[0];
     useStateFromStores = first2;
@@ -986,7 +986,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
       }
       return tmp;
     }), 2);
-    [useState, f77008] = tmp17;
+    [useState, f77009] = tmp17;
     tmp18 = onCloseModal(registerAsset.useState(null), 2);
     [c28, useState] = tmp18;
     c30 = require("useTheme")();
@@ -994,7 +994,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     items3 = [];
     items3[0] = useState;
     stateFromStores2 = obj4.useStateFromStores(items3, () => member.getMember(guildId, closure_21));
-    f77009 = stateFromStores2;
+    f77010 = stateFromStores2;
     obj5 = require("initialize");
     items4 = [];
     items4[0] = useState;
@@ -1002,7 +1002,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     obj6 = require("initialize");
     items5 = [];
     items5[0] = useState;
-    f77011 = obj6.useStateFromStores(items5, () => outer1_10.locale);
+    f77012 = obj6.useStateFromStores(items5, () => outer1_10.locale);
     values = Object.values(stateFromStores3);
     found = values.filter((channel) => {
       let canResult = outer1_16.can(_undefined.VIEW_CHANNEL, channel);

@@ -1,9 +1,9 @@
-// Module ID: 13620
-// Function ID: 104696
+// Module ID: 13621
+// Function ID: 104701
 // Name: useTitle
-// Dependencies: [653, 10059, 1212, 13621, 2]
+// Dependencies: [653, 10059, 1212, 13622, 2]
 
-// Module 13620 (useTitle)
+// Module 13621 (useTitle)
 import createToggle from "createToggle";
 
 const obj = {
@@ -16,7 +16,7 @@ const obj = {
   screen: {
     route: require("ME").UserSettingsSections.PROFILE_CUSTOMIZATION,
     getComponent() {
-      return require(13621) /* ProfileCustomizationSubsection */.default;
+      return require(13622) /* ProfileCustomizationSubsection */.default;
     }
   }
 };

@@ -1,5 +1,5 @@
 // Module ID: 8075
-// Function ID: 64284
+// Function ID: 64285
 // Name: MediaViewerDimensionsProvider
 // Dependencies: [31, 33, 1450, 44, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions

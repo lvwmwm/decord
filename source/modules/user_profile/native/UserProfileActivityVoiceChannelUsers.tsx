@@ -1,10 +1,10 @@
-// Module ID: 11951
-// Function ID: 92415
+// Module ID: 11952
+// Function ID: 92420
 // Name: UserRow
-// Dependencies: [31, 4218, 33, 9018, 566, 5164, 4320, 1273, 11633, 1212, 2]
+// Dependencies: [31, 4218, 33, 9018, 566, 5164, 4320, 1273, 11634, 1212, 2]
 // Exports: default
 
-// Module 11951 (UserRow)
+// Module 11952 (UserRow)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -66,7 +66,7 @@ export default function UserProfileActivityVoiceChannelUsers(arg0) {
       }, item.id);
     }
   };
-  obj.children = jsx(require(11633) /* UserProfileStackedActionSheet */.UserProfileStackedActionSheetList, {
+  obj.children = jsx(require(11634) /* UserProfileStackedActionSheet */.UserProfileStackedActionSheetList, {
     data: users,
     keyExtractor(id) {
       return id.id;
@@ -84,7 +84,7 @@ export default function UserProfileActivityVoiceChannelUsers(arg0) {
       }, item.id);
     }
   });
-  return jsx(importDefault(11633), {
+  return jsx(importDefault(11634), {
     data: users,
     keyExtractor(id) {
       return id.id;

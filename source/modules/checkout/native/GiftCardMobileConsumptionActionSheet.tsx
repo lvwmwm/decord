@@ -1,10 +1,10 @@
-// Module ID: 12423
-// Function ID: 96405
+// Module ID: 12424
+// Function ID: 96410
 // Name: GiftCardMobileConsumptionActionSheet
 // Dependencies: [31, 27, 1345, 33, 4131, 689, 1557, 4099, 5187, 4542, 6727, 4127, 1212, 2003, 4544, 2]
 // Exports: default
 
-// Module 12423 (GiftCardMobileConsumptionActionSheet)
+// Module 12424 (GiftCardMobileConsumptionActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

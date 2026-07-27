@@ -1,10 +1,10 @@
-// Module ID: 16632
-// Function ID: 129782
+// Module ID: 16644
+// Function ID: 129829
 // Name: AgeUpdateFooter
 // Dependencies: [31, 33, 4131, 4127, 1212, 2461, 6690, 6692, 2]
 // Exports: default
 
-// Module 16632 (AgeUpdateFooter)
+// Module 16644 (AgeUpdateFooter)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

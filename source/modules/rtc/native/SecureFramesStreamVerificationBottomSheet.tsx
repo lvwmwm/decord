@@ -1,5 +1,5 @@
 // Module ID: 8839
-// Function ID: 70023
+// Function ID: 70024
 // Name: SecureFramesStreamVerificationBottomSheet
 // Dependencies: [31, 4217, 653, 33, 566, 8834, 8134, 8840, 1212, 8824, 2]
 // Exports: default

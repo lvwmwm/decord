@@ -1,5 +1,5 @@
 // Module ID: 8207
-// Function ID: 65776
+// Function ID: 65777
 // Name: StageChannelUpsell
 // Dependencies: [57, 31, 27, 1352, 8208, 8156, 653, 33, 4131, 689, 4661, 1273, 7640, 8209, 4127, 1212, 4544, 4338, 8210, 1935, 4099, 2]
 // Exports: default

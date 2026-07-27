@@ -1,5 +1,5 @@
 // Module ID: 4641
-// Function ID: 40342
+// Function ID: 40343
 // Name: ForumWarningIcon
 // Dependencies: [31, 33, 689, 3834, 4615, 2]
 // Exports: ForumWarningIcon

@@ -1,10 +1,10 @@
-// Module ID: 16540
-// Function ID: 128905
+// Module ID: 16552
+// Function ID: 128952
 // Name: getPrivateChannelIconComponent
 // Dependencies: [669, 4637, 4656, 4654, 4644, 4643, 4651, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 16540 (getPrivateChannelIconComponent)
+// Module 16552 (getPrivateChannelIconComponent)
 const result = require("VoiceLockIcon").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx");
 
 export const getPrivateChannelIconComponent = function getPrivateChannelIconComponent(type) {

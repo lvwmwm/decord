@@ -1,10 +1,10 @@
-// Module ID: 16510
-// Function ID: 128719
+// Module ID: 16522
+// Function ID: 128766
 // Name: FormEmojiPicker
-// Dependencies: [31, 653, 1853, 33, 4131, 5053, 689, 12968, 3772, 14191, 14190, 5085, 16511, 8278, 9268, 1273, 3776, 1212, 10674, 2]
+// Dependencies: [31, 653, 1853, 33, 4131, 5053, 689, 12969, 3772, 14192, 14191, 5085, 16523, 8278, 9268, 1273, 3776, 1212, 10675, 2]
 // Exports: default
 
-// Module 16510 (FormEmojiPicker)
+// Module 16522 (FormEmojiPicker)
 import "result";
 import { Fonts } from "ME";
 import { EmojiIntention } from "set";
@@ -42,13 +42,13 @@ export default function FormEmojiPicker(emoji) {
     }
     emojiId = obj.convertSurrogateToName(str, false);
   }
-  let obj1 = guildId(14191);
+  let obj1 = guildId(14192);
   const emojiByIdOrName = obj1.useEmojiByIdOrName(guildId, emojiId);
   if (null != emojiId) {
     obj = { guildId, id: emojiId };
-    let tmp10 = callback(onChange(14190), obj);
+    let tmp10 = callback(onChange(14191), obj);
   } else {
-    obj = { resizeMode: "contain", source: onChange(16511) };
+    obj = { resizeMode: "contain", source: onChange(16523) };
     tmp10 = callback(onChange(5085), obj);
     const tmp9 = onChange(5085);
   }
@@ -77,10 +77,10 @@ export default function FormEmojiPicker(emoji) {
       const result = obj.openEmojiPickerActionSheet(obj);
     }
   };
-  items = [tmp.container, onChange(12968)().textInput];
+  items = [tmp.container, onChange(12969)().textInput];
   const items1 = [tmp10, , ];
   const tmp14 = closure_5;
-  const tmp2 = onChange(12968)();
+  const tmp2 = onChange(12969)();
   const obj2 = { style: items2 };
   items2 = [tmp.content, null != emojiByIdOrName ? tmp.text : tmp.placeholder];
   if (null != emojiByIdOrName) {
@@ -92,7 +92,7 @@ export default function FormEmojiPicker(emoji) {
   }
   obj2.children = allEmojiNamesString;
   items1[1] = callback(guildId(1273).LegacyText, obj2);
-  const obj3 = { size: guildId(1273).Icon.Sizes.MEDIUM, source: onChange(10674) };
+  const obj3 = { size: guildId(1273).Icon.Sizes.MEDIUM, source: onChange(10675) };
   items1[2] = callback(guildId(1273).Icon, obj3);
   obj1.children = items1;
   return tmp14(onChange(8278), obj1);

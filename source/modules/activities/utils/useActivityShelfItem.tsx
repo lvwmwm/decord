@@ -1,10 +1,10 @@
-// Module ID: 11168
-// Function ID: 86810
+// Module ID: 11169
+// Function ID: 86815
 // Name: getStaffReleasePhase
-// Dependencies: [5, 1347, 4156, 653, 7956, 477, 10607, 11169, 11170, 1882, 5664, 10540, 10539, 5468, 3749, 5462, 10442, 5665, 4141, 10580, 10543, 2]
+// Dependencies: [5, 1347, 4156, 653, 7956, 477, 10608, 11170, 11171, 1882, 5664, 10541, 10540, 5468, 3749, 5462, 10443, 5665, 4141, 10581, 10544, 2]
 // Exports: default
 
-// Module 11168 (getStaffReleasePhase)
+// Module 11169 (getStaffReleasePhase)
 import set from "set";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { STAFF_RELEASE_PHASES } from "items3";
@@ -38,11 +38,11 @@ function useActivityAction(applicationId) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  let tmp2 = importDefault(10540)();
+  let tmp2 = importDefault(10541)();
   obj = { fetchesApplication };
-  const tmp3 = importDefault(10539)(obj);
+  const tmp3 = importDefault(10540)(obj);
   getOrFetchApplication = getOrFetchApplication(5468).useGetOrFetchApplication(applicationId.applicationId, fetchesApplication);
-  importDefault(11170)(channel);
+  importDefault(11171)(channel);
   if (null == getOrFetchApplication) {
     return START;
   } else {
@@ -105,8 +105,8 @@ function useOnActivityItemSelected(arg0) {
   obj = { context, applicationId: str, fetchesApplication };
   const tmp2 = useActivityAction(obj);
   analyticsLocations = context(5462)().analyticsLocations;
-  closure_14 = context(10540)();
-  closure_15 = require(10442) /* canLaunchFrame */.canLaunchFrame(application);
+  closure_14 = context(10541)();
+  closure_15 = require(10443) /* canLaunchFrame */.canLaunchFrame(application);
   if (null == application) {
     return () => {
       if (null != callback) {
@@ -137,7 +137,7 @@ function useOnActivityItemSelected(arg0) {
       }) : undefined;
     }
   }
-  const obj2 = require(10442) /* canLaunchFrame */;
+  const obj2 = require(10443) /* canLaunchFrame */;
 }
 let obj = { START: 0, [0]: "START", JOIN: 1, [1]: "JOIN", LEAVE: 2, [2]: "LEAVE" };
 const result = require("items3").fileFinishedImporting("modules/activities/utils/useActivityShelfItem.tsx");
@@ -184,18 +184,18 @@ export default function useActivityShelfItem(backgroundResolution) {
   let tmp6 = null;
   const tmp = importDefault(7956);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp6 = importDefault(11169)(application.id, activity.activity_preview_video_asset_id);
+    tmp6 = importDefault(11170)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
-  const tmp5 = importDefault(10607)(obj);
+  const tmp5 = importDefault(10608)(obj);
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  const tmp9 = importDefault(11170);
+  const tmp9 = importDefault(11171);
   obj = { context, applicationId: application.id };
-  const found = importDefault(11170)(channel).find((embeddedActivity) => application.id === embeddedActivity.embeddedActivity.applicationId);
+  const found = importDefault(11171)(channel).find((embeddedActivity) => application.id === embeddedActivity.embeddedActivity.applicationId);
   const obj1 = { application: activityItem.application, context, locationObject, embeddedActivitiesManager, onActivityItemSelectedProp: onActivityItemSelected, launchingComponentId, commandOrigin, source };
-  const tmp9Result = importDefault(11170)(channel);
+  const tmp9Result = importDefault(11171)(channel);
   const tmp12 = useActivityAction(obj);
   const obj2 = { imageBackground: tmp5, videoUrl: tmp6, joinableEmbeddedApp: found, activityAction: tmp12, onActivityItemSelected: useOnActivityItemSelected(obj1) };
   const tmp13 = useOnActivityItemSelected(obj1);

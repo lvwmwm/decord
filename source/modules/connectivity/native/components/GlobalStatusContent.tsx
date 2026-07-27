@@ -1,10 +1,10 @@
-// Module ID: 10629
-// Function ID: 82817
+// Module ID: 10630
+// Function ID: 82822
 // Name: ConnectivityGlobalStatusContent
-// Dependencies: [31, 27, 1348, 1838, 4203, 4146, 10625, 653, 33, 4131, 689, 8861, 566, 10329, 10623, 3977, 4067, 4664, 3982, 10444, 477, 1557, 6622, 10630, 2]
+// Dependencies: [31, 27, 1348, 1838, 4203, 4146, 10626, 653, 33, 4131, 689, 8861, 566, 10330, 10624, 3977, 4067, 4664, 3982, 10445, 477, 1557, 6622, 10631, 2]
 // Exports: default
 
-// Module 10629 (ConnectivityGlobalStatusContent)
+// Module 10630 (ConnectivityGlobalStatusContent)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -91,11 +91,11 @@ export default function ConnectivityGlobalStatusContent() {
   if (null != channel) {
     id = channel.id;
   }
-  let tmp5Result = importDefault(10329)(id);
-  const tmp5 = importDefault(10329);
+  let tmp5Result = importDefault(10330)(id);
+  const tmp5 = importDefault(10330);
   let obj1 = require(3977) /* AccessibilityAnnouncer */;
   let tmp11 = tmp9;
-  const tmp8 = importDefault(10623)();
+  const tmp8 = importDefault(10624)();
   if (isGuildStageVoiceResult) {
     if (!tmp5Result) {
       tmp5Result = tmp8;
@@ -105,7 +105,7 @@ export default function ConnectivityGlobalStatusContent() {
   let obj2 = require(4664) /* getIsScreenLandscape */;
   let isScreenLandscape = obj2.useIsScreenLandscape();
   if (isScreenLandscape) {
-    isScreenLandscape = require(3982) /* _createForOfIteratorHelperLoose */.isModalOpen(importDefault(10444));
+    isScreenLandscape = require(3982) /* _createForOfIteratorHelperLoose */.isModalOpen(importDefault(10445));
     const obj4 = require(3982) /* _createForOfIteratorHelperLoose */;
   }
   if (isScreenLandscape) {
@@ -130,7 +130,7 @@ export default function ConnectivityGlobalStatusContent() {
   let tmp23 = null;
   if (isGuildStageVoiceResult) {
     obj2 = { channel, guild, hasRTCConnectivity: tmp9, isDarkTheme: isThemeDarkResult, rtcConnectionState, remotePlatform };
-    tmp23 = callback(importDefault(10630), obj2);
+    tmp23 = callback(importDefault(10631), obj2);
   }
   items3[1] = tmp23;
   obj.children = items3;

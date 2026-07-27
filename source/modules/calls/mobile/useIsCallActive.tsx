@@ -1,5 +1,5 @@
 // Module ID: 7703
-// Function ID: 61549
+// Function ID: 61550
 // Name: checkIsCallActive
 // Dependencies: [4810, 4144, 4149, 566, 2]
 // Exports: default, useIsCallActiveNullable

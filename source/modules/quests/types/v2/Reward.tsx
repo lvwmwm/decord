@@ -1,5 +1,5 @@
 // Module ID: 5945
-// Function ID: 52884
+// Function ID: 52885
 // Name: _rewardRedemptionInstructionsFromServer
 // Dependencies: [4980, 5937, 2]
 // Exports: questRewardsConfigV2FromServer

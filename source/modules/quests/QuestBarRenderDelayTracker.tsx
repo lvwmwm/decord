@@ -1,5 +1,5 @@
 // Module ID: 9412
-// Function ID: 73463
+// Function ID: 73464
 // Name: QuestBarRenderDelayTracker
 // Dependencies: [6, 7, 653, 5839, 5844, 675, 9413, 2]
 

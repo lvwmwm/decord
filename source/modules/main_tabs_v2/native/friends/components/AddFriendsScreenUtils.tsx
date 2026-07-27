@@ -1,10 +1,10 @@
-// Module ID: 14969
-// Function ID: 114115
+// Module ID: 14970
+// Function ID: 114120
 // Name: _sendWave
-// Dependencies: [5, 1348, 653, 4124, 8988, 4141, 3831, 1212, 11362, 5685, 8850, 2]
+// Dependencies: [5, 1348, 653, 4124, 8988, 4141, 3831, 1212, 11363, 5685, 8850, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 14969 (_sendWave)
+// Module 14970 (_sendWave)
 import module_4141 from "module_4141";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticsSections } from "ME";

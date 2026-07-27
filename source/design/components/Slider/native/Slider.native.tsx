@@ -1,10 +1,10 @@
-// Module ID: 13153
-// Function ID: 101299
+// Module ID: 13154
+// Function ID: 101304
 // Name: Slider
 // Dependencies: [31, 27, 33, 4131, 689, 4100, 4101, 7600, 2]
 // Exports: Slider
 
-// Module 13153 (Slider)
+// Module 13154 (Slider)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

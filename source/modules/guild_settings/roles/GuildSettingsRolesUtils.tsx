@@ -1,10 +1,10 @@
-// Module ID: 16367
-// Function ID: 127703
+// Module ID: 16379
+// Function ID: 127750
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 1918, 1850, 16358, 653, 566, 3970, 5149, 5048, 675, 5046, 1327, 2]
+// Dependencies: [31, 1918, 1850, 16370, 653, 566, 3970, 5149, 5048, 675, 5046, 1327, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 16367 (_createForOfIteratorHelperLoose)
+// Module 16379 (_createForOfIteratorHelperLoose)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 12461
-// Function ID: 96662
+// Module ID: 12462
+// Function ID: 96667
 // Name: ManagePlanHeader
-// Dependencies: [5, 57, 31, 27, 3778, 1850, 3779, 3782, 3783, 5821, 6271, 5619, 653, 5126, 4114, 1852, 33, 3, 4131, 689, 1456, 4661, 5091, 4127, 1212, 4974, 1324, 5462, 6490, 5482, 566, 3843, 3977, 668, 4452, 5450, 6238, 6495, 675, 3777, 44, 5616, 12462, 12463, 6465, 6475, 6256, 4544, 6454, 6500, 6494, 4649, 9255, 12379, 1921, 5166, 4555, 1273, 6571, 1557, 6503, 5820, 4560, 6244, 7782, 12425, 12402, 1390, 4533, 6448, 6449, 6501, 12440, 2]
+// Dependencies: [5, 57, 31, 27, 3778, 1850, 3779, 3782, 3783, 5821, 6271, 5619, 653, 5126, 4114, 1852, 33, 3, 4131, 689, 1456, 4661, 5091, 4127, 1212, 4974, 1324, 5462, 6490, 5482, 566, 3843, 3977, 668, 4452, 5450, 6238, 6495, 675, 3777, 44, 5616, 12463, 12464, 6465, 6475, 6256, 4544, 6454, 6500, 6494, 4649, 9255, 12380, 1921, 5166, 4555, 1273, 6571, 1557, 6503, 5820, 4560, 6244, 7782, 12426, 12403, 1390, 4533, 6448, 6449, 6501, 12441, 2]
 // Exports: default
 
-// Module 12461 (ManagePlanHeader)
+// Module 12462 (ManagePlanHeader)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import Button from "Button";
 import ManaContext from "ManaContext";
@@ -689,7 +689,7 @@ export default function PremiumManagePlan() {
   });
   let obj6 = navigation(7782);
   let isInReverseTrial = obj6.useIsInReverseTrial();
-  const tmp12 = importDefault(12425);
+  const tmp12 = importDefault(12426);
   let obj7 = navigation(3777);
   const unactivatedFractionalPremiumDurationString = obj7.getUnactivatedFractionalPremiumDurationString(tmp9);
   if (null !== first) {
@@ -749,7 +749,7 @@ export default function PremiumManagePlan() {
   const items5 = [tmp.topBlur, ];
   obj1 = {};
   let num = 0;
-  const tmp12Result = importDefault(12425)(tmp9.endsAt, navigation(12425).CountDownMessageTypes.SHORT_TIME);
+  const tmp12Result = importDefault(12426)(tmp9.endsAt, navigation(12426).CountDownMessageTypes.SHORT_TIME);
   const tmp23 = callback4;
   const tmp24 = closure_8;
   const tmp25 = callback3;
@@ -848,7 +848,7 @@ export default function PremiumManagePlan() {
   obj13.isFractionalOnly = tmp9.fractionalState === constants3.FP_ONLY;
   obj13.isPremiumGroup = result;
   obj13.premiumGroupRole = premiumGroupRole;
-  items9[6] = callback3(importDefault(12440), obj13);
+  items9[6] = callback3(importDefault(12441), obj13);
   obj4.children = items9;
   items8[1] = tmp29(tmp30, obj4);
   obj2.children = items8;

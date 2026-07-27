@@ -1,10 +1,10 @@
-// Module ID: 11779
-// Function ID: 91446
+// Module ID: 11780
+// Function ID: 91451
 // Name: EmptyState
-// Dependencies: [5, 57, 31, 27, 11756, 33, 4131, 689, 11780, 4127, 1212, 1456, 5046, 1557, 11769, 4030, 5087, 10038, 1273, 11774, 2]
+// Dependencies: [5, 57, 31, 27, 11757, 33, 4131, 689, 11781, 4127, 1212, 1456, 5046, 1557, 11770, 4030, 5087, 10038, 1273, 11775, 2]
 // Exports: default
 
-// Module 11779 (EmptyState)
+// Module 11780 (EmptyState)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -23,7 +23,7 @@ const require = arg1;
 function EmptyState() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.emptyWrapper };
-  obj = { style: tmp.emptyStateImage, source: importDefault(11780) };
+  obj = { style: tmp.emptyStateImage, source: importDefault(11781) };
   const items = [callback2(closure_7, obj), ];
   obj = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 16035
-// Function ID: 124015
+// Module ID: 16047
+// Function ID: 124062
 // Name: AcceptInviteModal
-// Dependencies: [31, 9155, 33, 480, 4117, 11747, 8581, 5517, 2]
+// Dependencies: [31, 9155, 33, 480, 4117, 11748, 8581, 5517, 2]
 // Exports: default
 
-// Module 16035 (AcceptInviteModal)
+// Module 16047 (AcceptInviteModal)
 import result from "result";
 import { CreateGuildModalStates } from "NUXGuildTemplatesAnalytics";
 import { jsx } from "jsxProd";

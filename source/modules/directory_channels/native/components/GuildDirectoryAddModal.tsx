@@ -1,5 +1,5 @@
 // Module ID: 10000
-// Function ID: 77353
+// Function ID: 77354
 // Name: GuildDirectoryAddModal
 // Dependencies: [31, 10001, 33, 4131, 5084, 480, 5087, 9999, 10002, 10010, 10014, 10024, 5121, 5450, 5517, 1212, 2]
 // Exports: GuildDirectoryAddModalScreen, default

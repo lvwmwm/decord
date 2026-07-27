@@ -1,5 +1,5 @@
 // Module ID: 8105
-// Function ID: 64457
+// Function ID: 64458
 // Name: handleOrientationChange
 // Dependencies: [31, 27, 621, 477, 682, 4111, 8106, 2]
 // Exports: getOrientation, getOrientationLock, handleOrientationChange, restoreDefaultOrientation, toggleOrientation, useOrientation, useOrientationListener

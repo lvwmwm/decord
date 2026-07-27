@@ -1,10 +1,10 @@
-// Module ID: 14919
-// Function ID: 113807
+// Module ID: 14920
+// Function ID: 113812
 // Name: useIsDontBadgeMutedVcsEnabled
 // Dependencies: [1325, 2]
 // Exports: useIsDontBadgeMutedVcsEnabled
 
-// Module 14919 (useIsDontBadgeMutedVcsEnabled)
+// Module 14920 (useIsDontBadgeMutedVcsEnabled)
 const obj = { kind: "user", name: "2026-06-dont-badge-muted-vcs", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 let closure_0 = require("getUnitId")(obj);
 const result = require("set").fileFinishedImporting("modules/guilds_bar/DontBadgeMutedVcsExperiment.tsx");

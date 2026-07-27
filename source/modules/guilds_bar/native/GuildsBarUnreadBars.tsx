@@ -1,9 +1,9 @@
-// Module ID: 14941
-// Function ID: 113916
+// Module ID: 14942
+// Function ID: 113921
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 5868, 3948, 4971, 14871, 14058, 33, 4131, 7619, 1557, 14051, 14060, 574, 620, 566, 3992, 14942, 2]
+// Dependencies: [57, 31, 27, 5868, 3948, 4971, 14872, 14059, 33, 4131, 7619, 1557, 14052, 14061, 574, 620, 566, 3992, 14943, 2]
 
-// Module 14941 (_createForOfIteratorHelperLoose)
+// Module 14942 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -538,7 +538,7 @@ const memoResult = importAllResult.memo(function GuildsBarUnreadBars(fastList) {
     obj["orientation"] = "visible";
     fastList.scrollToLocation(obj);
   }, items2);
-  obj.children = jsx(top(14942), { beforeItem, afterItem, scrollToLocation: callback, compact: true });
+  obj.children = jsx(top(14943), { beforeItem, afterItem, scrollToLocation: callback, compact: true });
   return <scrollPosValue style={tmp6.style} collapsable={false} pointerEvents="box-none" testID="guilds-bar-unread-bars" />;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/guilds_bar/native/GuildsBarUnreadBars.tsx");

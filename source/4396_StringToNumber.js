@@ -1,5 +1,5 @@
 // Module ID: 4396
-// Function ID: 38854
+// Function ID: 38855
 // Name: StringToNumber
 // Dependencies: [517, 551, 1371, 518, 4397]
 

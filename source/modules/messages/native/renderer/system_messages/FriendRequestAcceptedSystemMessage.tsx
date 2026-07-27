@@ -1,5 +1,5 @@
 // Module ID: 7790
-// Function ID: 61863
+// Function ID: 61864
 // Name: createFriendRequestAcceptedSystemMessage
 // Dependencies: [1348, 1850, 7684, 7686, 4131, 689, 1212, 7670, 7791, 7687, 2]
 // Exports: createFriendRequestAcceptedSystemMessage

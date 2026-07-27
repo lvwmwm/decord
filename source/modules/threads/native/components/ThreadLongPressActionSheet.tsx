@@ -1,10 +1,10 @@
-// Module ID: 15025
-// Function ID: 114534
+// Module ID: 15026
+// Function ID: 114538
 // Name: ThreadLongPressActionSheetConnected
-// Dependencies: [31, 1348, 1838, 4147, 3761, 653, 33, 1212, 8665, 5070, 10150, 4073, 6024, 10158, 9015, 4095, 4085, 10304, 4653, 9034, 7627, 4075, 10162, 10165, 4099, 10243, 1935, 10167, 10168, 10308, 566, 5996, 22, 9072, 4321, 3804, 10310, 5513, 1273, 5498, 10311, 5500, 6719, 5490, 3831, 2]
+// Dependencies: [31, 1348, 1838, 4147, 3761, 653, 33, 1212, 8665, 5070, 10150, 4073, 6024, 10159, 9015, 4095, 4085, 10305, 4653, 9034, 7627, 4075, 10163, 10166, 4099, 10244, 1935, 10168, 10169, 10309, 566, 5996, 22, 9072, 4321, 3804, 10311, 5513, 1273, 5498, 10312, 5500, 6719, 5490, 3831, 2]
 // Exports: default
 
-// Module 15025 (ThreadLongPressActionSheetConnected)
+// Module 15026 (ThreadLongPressActionSheetConnected)
 import useCanStartPublicThread from "useCanStartPublicThread";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -70,7 +70,7 @@ function ThreadLongPressActionSheetConnected(channel) {
   }
   obj1.handleJoinThreadVoice = tmp22;
   obj1.hasActiveThreadVoice = stateFromStores2;
-  obj1.favorites = onClose(10310)(channel, "ThreadLongPressActionSheet");
+  obj1.favorites = onClose(10311)(channel, "ThreadLongPressActionSheet");
   arr5 = (function getActionSheetButtons(channel) {
     let canManageThread;
     let canModerateThread;
@@ -139,7 +139,7 @@ function ThreadLongPressActionSheetConnected(channel) {
         stringResult = string(t["10kukS"]);
       }
       obj3.label = stringResult;
-      obj3.IconComponent = channel(10158).GroupPlusIcon;
+      obj3.IconComponent = channel(10159).GroupPlusIcon;
       obj3.onPress = function onPress() {
         onClose(paths[12]).joinThread(channel, "Context Menu");
       };
@@ -185,7 +185,7 @@ function ThreadLongPressActionSheetConnected(channel) {
               obj5.label = string6Result;
               t6 = channel;
               string6 = dependencyMap;
-              obj5.IconComponent = channel(10304).LockUnlockedIcon;
+              obj5.IconComponent = channel(10305).LockUnlockedIcon;
               obj5.onPress = function onPress() {
                 onClose(paths[12]).unlockThread(channel);
               };
@@ -233,7 +233,7 @@ function ThreadLongPressActionSheetConnected(channel) {
               obj8.label = string8Result;
               t8 = channel;
               string8 = dependencyMap;
-              obj8.IconComponent = channel(10167).BellIcon;
+              obj8.IconComponent = channel(10168).BellIcon;
               obj8.onPress = function onPress() {
                 let obj = onClose(paths[12]);
                 obj = { muted: !isMuted };
@@ -247,7 +247,7 @@ function ThreadLongPressActionSheetConnected(channel) {
                 string8Result1 = string8(t8.bUUd8q);
               }
               obj8.label = string8Result1;
-              obj8.IconComponent = channel(10165).BellSlashIcon;
+              obj8.IconComponent = channel(10166).BellSlashIcon;
               obj8.onPress = function onPress() {
                 let obj = onClose(paths[24]);
                 obj = {};
@@ -261,7 +261,7 @@ function ThreadLongPressActionSheetConnected(channel) {
               const obj9 = {};
               const intl10 = channel(1212).intl;
               obj9.label = intl10.string(channel(1212).t.h850Ss);
-              obj9.IconComponent = channel(10168).ChannelNotificationIcon;
+              obj9.IconComponent = channel(10169).ChannelNotificationIcon;
               obj9.onPress = function onPress() {
                 const result = channel(paths[29]).showThreadNotificationsBottomSheet(channel);
               };
@@ -339,7 +339,7 @@ function ThreadLongPressActionSheetConnected(channel) {
   }, items4);
   obj2 = {};
   obj3 = { title: tmp10, icon: tmp16 };
-  obj2.header = callback(channel(10311).ActionSheetIconHeader, obj3);
+  obj2.header = callback(channel(10312).ActionSheetIconHeader, obj3);
   const items5 = [
     arr5.map((buttons) => {
       let obj = { hasIcons: true };

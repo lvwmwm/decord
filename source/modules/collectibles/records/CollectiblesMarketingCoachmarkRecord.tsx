@@ -1,5 +1,5 @@
 // Module ID: 5796
-// Function ID: 50981
+// Function ID: 50982
 // Name: CollectiblesMarketingCoachmarkRecord
 // Dependencies: [6, 7, 5794, 2]
 

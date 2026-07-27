@@ -1,5 +1,5 @@
 // Module ID: 7600
-// Function ID: 60801
+// Function ID: 60802
 // Name: _getRequireWildcardCache
 // Dependencies: [7601, 57, 29, 31, 27, 7602, 33, 7604, 7605, 7606]
 

@@ -1,5 +1,5 @@
 // Module ID: 7874
-// Function ID: 62757
+// Function ID: 62758
 // Name: getDecorationSizeForAvatarSize
 // Dependencies: [1393, 1273, 4099, 7875, 1935, 2]
 // Exports: getDecorationCutoutForAvatarCutout, getDecorationSizeForAvatarSize, openAvatarDecorationActionSheet

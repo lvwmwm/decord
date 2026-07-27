@@ -1,10 +1,10 @@
-// Module ID: 13895
-// Function ID: 106384
+// Module ID: 13896
+// Function ID: 106389
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [31, 27, 653, 7697, 33, 10059, 1212, 1921, 13612, 2]
+// Dependencies: [31, 27, 653, 7697, 33, 10059, 1212, 1921, 13613, 2]
 // Exports: default
 
-// Module 13895 (FamilyCenterParentalControlsContentAndSocial)
+// Module 13896 (FamilyCenterParentalControlsContentAndSocial)
 import "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -42,6 +42,6 @@ export default function FamilyCenterParentalControlsContentAndSocial() {
   obj.sections = items1;
   obj4 = {};
   const list = obj.createList(obj);
-  obj4.children = jsx(importDefault(13612), { node: list });
+  obj4.children = jsx(importDefault(13613), { node: list });
   return <View />;
 };

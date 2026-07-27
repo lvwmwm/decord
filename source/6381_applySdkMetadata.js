@@ -1,5 +1,5 @@
 // Module ID: 6381
-// Function ID: 57440
+// Function ID: 57441
 // Name: applySdkMetadata
 // Dependencies: [6313]
 

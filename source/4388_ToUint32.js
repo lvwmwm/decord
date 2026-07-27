@@ -1,5 +1,5 @@
 // Module ID: 4388
-// Function ID: 38837
+// Function ID: 38838
 // Name: ToUint32
 // Dependencies: [4389, 4406, 4407, 4409]
 

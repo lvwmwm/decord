@@ -1,9 +1,9 @@
-// Module ID: 13575
-// Function ID: 104455
+// Module ID: 13576
+// Function ID: 104460
 // Name: jsx
-// Dependencies: [57, 31, 27, 10403, 33, 4131, 689, 6596, 13576, 5159, 566, 10917, 4542, 5501, 5164, 4079, 5490, 3831, 13573, 4090, 7596, 7595, 6670, 4544, 1327, 2]
+// Dependencies: [57, 31, 27, 10404, 33, 4131, 689, 6596, 13577, 5159, 566, 10918, 4542, 5501, 5164, 4079, 5490, 3831, 13574, 4090, 7596, 7595, 6670, 4544, 1327, 2]
 
-// Module 13575 (jsx)
+// Module 13576 (jsx)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -41,7 +41,7 @@ const memoResult = importAllResult.memo(() => {
     const overrides = outer1_6.getCurrentBuildOverride().overrides;
     let tmp;
     if (null != overrides) {
-      tmp = overrides[stateFromStores(undefined, 10917).DEVICE_FIELD];
+      tmp = overrides[stateFromStores(undefined, 10918).DEVICE_FIELD];
     }
     return tmp;
   });
@@ -81,12 +81,12 @@ const memoResult = importAllResult.memo(() => {
   ,
 
     ];
-    const obj4 = { icon: jsx(stateFromStores(13573).RefreshIcon, {}), label: "Refresh Override", onPress: stateFromStores(10917).refreshBuildOverride, arrow: true };
-    items1[1] = jsx(stateFromStores(5164).TableRow, { icon: jsx(stateFromStores(13573).RefreshIcon, {}), label: "Refresh Override", onPress: stateFromStores(10917).refreshBuildOverride, arrow: true });
+    const obj4 = { icon: jsx(stateFromStores(13574).RefreshIcon, {}), label: "Refresh Override", onPress: stateFromStores(10918).refreshBuildOverride, arrow: true };
+    items1[1] = jsx(stateFromStores(5164).TableRow, { icon: jsx(stateFromStores(13574).RefreshIcon, {}), label: "Refresh Override", onPress: stateFromStores(10918).refreshBuildOverride, arrow: true });
     const obj5 = { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true };
     const obj6 = { color: "text-feedback-critical" };
     obj5.icon = jsx(stateFromStores(4090).TrashIcon, { color: "text-feedback-critical" });
-    obj5.onPress = stateFromStores(10917).clearBuildOverride;
+    obj5.onPress = stateFromStores(10918).clearBuildOverride;
     items1[2] = jsx(stateFromStores(5164).TableRow, { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true });
     obj2.children = items1;
     tmp9 = jsxs(stateFromStores(5501).TableRowGroup, { title: "Current Override", hasIcons: true });
@@ -155,11 +155,11 @@ const memoResult = importAllResult.memo(() => {
     onPress() {
       const type = first.type;
       if ("branch" === type) {
-        const result = stateFromStores(10917).setBuildOverrideForBranch(first.id);
-        const obj3 = stateFromStores(10917);
+        const result = stateFromStores(10918).setBuildOverrideForBranch(first.id);
+        const obj3 = stateFromStores(10918);
       } else if ("id" === type) {
-        const result1 = stateFromStores(10917).setBuildOverrideForId(first.id);
-        const obj2 = stateFromStores(10917);
+        const result1 = stateFromStores(10918).setBuildOverrideForId(first.id);
+        const obj2 = stateFromStores(10918);
       } else {
         stateFromStores(1327).assertNever(first.type);
         const obj = stateFromStores(1327);

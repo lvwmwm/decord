@@ -1,10 +1,10 @@
-// Module ID: 11406
-// Function ID: 88683
+// Module ID: 11407
+// Function ID: 88688
 // Name: SEARCH_BAR_HEIGHT
 // Dependencies: [31, 27, 33, 4131, 689, 8232, 4127, 1212, 2]
 // Exports: SearchButtonContent
 
-// Module 11406 (SEARCH_BAR_HEIGHT)
+// Module 11407 (SEARCH_BAR_HEIGHT)
 import "result";
 import { Pressable } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,5 +1,5 @@
 // Module ID: 8657
-// Function ID: 68776
+// Function ID: 68777
 // Name: CollectiblesShopPricePlaceholder
 // Dependencies: [31, 33, 4131, 689, 3992, 4132, 2]
 // Exports: CollectiblesShopPricePlaceholder

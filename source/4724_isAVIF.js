@@ -1,5 +1,5 @@
 // Module ID: 4724
-// Function ID: 41106
+// Function ID: 41107
 // Name: isAVIF
 // Dependencies: [4718, 4719]
 

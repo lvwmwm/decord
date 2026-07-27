@@ -1,5 +1,5 @@
 // Module ID: 10147
-// Function ID: 78491
+// Function ID: 78492
 // Name: InstantInviteUsesLabel
 // Dependencies: [31, 33, 4127, 2]
 // Exports: default

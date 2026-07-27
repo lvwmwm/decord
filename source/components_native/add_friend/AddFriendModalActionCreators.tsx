@@ -1,8 +1,8 @@
-// Module ID: 12922
-// Function ID: 100372
-// Dependencies: [1850, 4338, 12923, 1935, 2]
+// Module ID: 12923
+// Function ID: 100377
+// Dependencies: [1850, 4338, 12924, 1935, 2]
 
-// Module 12922
+// Module 12923
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -10,13 +10,13 @@ const result = require("AddFriendModalScene").fileFinishedImporting("components_
 
 export default {
   openAddFriendModalDeeplink() {
-    importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(12923, dependencyMap.paths));
+    importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(12924, dependencyMap.paths));
   },
   openAddFriendModal(sourceMetadata) {
     if (null != currentUser.getCurrentUser()) {
       let obj = importDefault(4338);
       obj = { sourceMetadata };
-      obj.pushLazy(require(1935) /* maybeLoadBundle */(12923, dependencyMap.paths), obj);
+      obj.pushLazy(require(1935) /* maybeLoadBundle */(12924, dependencyMap.paths), obj);
     }
   }
 };

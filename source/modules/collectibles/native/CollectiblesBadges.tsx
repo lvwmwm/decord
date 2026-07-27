@@ -1,5 +1,5 @@
 // Module ID: 7906
-// Function ID: 62985
+// Function ID: 62986
 // Name: NewBadge
 // Dependencies: [31, 27, 1852, 33, 4131, 689, 4127, 1212, 7907, 4653, 6570, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge

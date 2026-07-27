@@ -1,10 +1,10 @@
-// Module ID: 16262
-// Function ID: 126271
+// Module ID: 16274
+// Function ID: 126318
 // Name: handleTouch
 // Dependencies: [5, 57, 31, 27, 1342, 653, 33, 4131, 689, 5495, 1212, 5588, 1557, 5093, 4541, 5656, 8364, 480, 4127, 4544, 8278, 8272, 2]
 // Exports: default
 
-// Module 16262 (handleTouch)
+// Module 16274 (handleTouch)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

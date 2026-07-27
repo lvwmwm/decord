@@ -1,5 +1,5 @@
 // Module ID: 4689
-// Function ID: 40850
+// Function ID: 40851
 // Name: launchCamera
 // Dependencies: [27, 4690]
 // Exports: launchCamera, launchImageLibrary

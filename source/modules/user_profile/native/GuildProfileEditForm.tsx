@@ -1,10 +1,10 @@
-// Module ID: 13680
-// Function ID: 105070
+// Module ID: 13681
+// Function ID: 105075
 // Name: EditGuildProfileBanner
-// Dependencies: [29, 31, 27, 1918, 5630, 5510, 653, 1852, 33, 3777, 5462, 5482, 13626, 4099, 13627, 1935, 7882, 1212, 7880, 6137, 8017, 13637, 6687, 5159, 689, 9786, 13675, 566, 7922, 8018, 8033, 7890, 13031, 13681, 8015, 8019, 4127, 3843, 13682, 11912, 11901, 8317, 13646, 3970, 13647, 13652, 13654, 13655, 13659, 13663, 13673, 9253, 9254, 2]
+// Dependencies: [29, 31, 27, 1918, 5630, 5510, 653, 1852, 33, 3777, 5462, 5482, 13627, 4099, 13628, 1935, 7882, 1212, 7880, 6137, 8017, 13638, 6687, 5159, 689, 9786, 13676, 566, 7922, 8018, 8033, 7890, 13032, 13682, 8015, 8019, 4127, 3843, 13683, 11913, 11902, 8317, 13647, 3970, 13648, 13653, 13655, 13656, 13660, 13664, 13674, 9253, 9254, 2]
 // Exports: default
 
-// Module 13680 (EditGuildProfileBanner)
+// Module 13681 (EditGuildProfileBanner)
 import _activityFromSetting from "_activityFromSetting";
 import getImageFormat from "getImageFormat";
 import get_ActivityIndicator from "initialize";
@@ -84,7 +84,7 @@ function EditGuildProfileBanner(user) {
   let intl = user(1212).intl;
   obj.editButtonAccessibilityLabel = intl.string(user(1212).t["95hPAe"]);
   obj.editDisabled = disabled;
-  obj.children = tmp4(importDefault(13626), obj);
+  obj.children = tmp4(importDefault(13627), obj);
   return tmp3(user(5462).AnalyticsLocationProvider, obj);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];

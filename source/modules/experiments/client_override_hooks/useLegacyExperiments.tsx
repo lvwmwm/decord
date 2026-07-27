@@ -1,10 +1,10 @@
-// Module ID: 10424
-// Function ID: 80611
+// Module ID: 10425
+// Function ID: 80616
 // Name: bucketVariantType
 // Dependencies: [57, 31, 4045, 4046, 7822, 4053, 7820, 566, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 10424 (bucketVariantType)
+// Module 10425 (bucketVariantType)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

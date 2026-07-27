@@ -1,10 +1,10 @@
-// Module ID: 10973
-// Function ID: 85345
+// Module ID: 10974
+// Function ID: 85350
 // Name: closeModal
-// Dependencies: [5, 31, 10974, 33, 10972, 480, 1212, 5087, 10975, 9122, 8242, 3831, 5517, 2]
+// Dependencies: [5, 31, 10975, 33, 10973, 480, 1212, 5087, 10976, 9122, 8242, 3831, 5517, 2]
 // Exports: default
 
-// Module 10973 (closeModal)
+// Module 10974 (closeModal)
 import isThrottled from "isThrottled";
 import result from "result";
 import TransferOwnershipModalScenes from "TransferOwnershipModalScenes";
@@ -14,7 +14,7 @@ let closure_5;
 let closure_6;
 const require = arg1;
 function closeModal() {
-  importDefault(10972).close();
+  importDefault(10973).close();
 }
 ({ TransferOwnershipModalScenes: closure_5, TransferOwnershipVerificationTypes: closure_6 } = TransferOwnershipModalScenes);
 let result = require("TransferOwnershipModalScenes").fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModal.tsx");

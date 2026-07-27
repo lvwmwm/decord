@@ -1,9 +1,9 @@
-// Module ID: 16570
-// Function ID: 129327
+// Module ID: 16582
+// Function ID: 129374
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 27, 1922, 1194, 477, 16571, 4807, 16572, 675, 16573, 507, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 27, 1922, 1194, 477, 16583, 4807, 16584, 675, 16585, 507, 5078, 2]
 
-// Module 16570 (_isNativeReflectConstruct)
+// Module 16582 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
@@ -30,8 +30,8 @@ function syncYYTextReplacementExperiment() {
     const NSUserDefaultsBridge = NativeModules.NSUserDefaultsBridge;
     if (!tmp3) {
       obj = { location: "NativeExperimentBridgeManager" };
-      const result = NSUserDefaultsBridge.setShouldEnableYYTextReplacement(require(16571) /* shouldEnableYYTextReplacement */.shouldEnableYYTextReplacement(obj));
-      const obj2 = require(16571) /* shouldEnableYYTextReplacement */;
+      const result = NSUserDefaultsBridge.setShouldEnableYYTextReplacement(require(16583) /* shouldEnableYYTextReplacement */.shouldEnableYYTextReplacement(obj));
+      const obj2 = require(16583) /* shouldEnableYYTextReplacement */;
     }
     tmp3 = null == NSUserDefaultsBridge || null == NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
   }
@@ -57,7 +57,7 @@ function updateIOSExperiments() {
 function updateAndroidExperiments() {
   let obj = { "X-Super-Properties": importDefault(675).getSuperPropertiesBase64(), "X-Fingerprint": store.getFingerprint(), "X-Installation-ID": store.getInstallationForTracking(), "X-Discord-Locale": locale.locale };
   const obj2 = importDefault(675);
-  const config = importDefault(16573).getConfig({ location: "NativeExperimentBridgeManager" });
+  const config = importDefault(16585).getConfig({ location: "NativeExperimentBridgeManager" });
   const NativeCacheModule = NativeModules.NativeCacheModule;
   if (null != NativeCacheModule) {
     const _JSON = JSON;

@@ -1,10 +1,10 @@
-// Module ID: 10938
-// Function ID: 85000
+// Module ID: 10939
+// Function ID: 85005
 // Name: authorizeCallback
-// Dependencies: [10614, 4338, 8892, 1935, 1443, 10939, 4097, 668, 3828, 2]
+// Dependencies: [10615, 4338, 8892, 1935, 1443, 10940, 4097, 668, 3828, 2]
 // Exports: default
 
-// Module 10938 (authorizeCallback)
+// Module 10939 (authorizeCallback)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
 let closure_3;
@@ -33,7 +33,7 @@ export default function authorizeCallback(arg0) {
         if (null != pathname) {
           if (null != pathname.match(closure_5)) {
             let obj = { application: tmp, guild: tmp2 };
-            importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(10939, dependencyMap.paths), obj, closure_3);
+            importDefault(4338).pushLazy(require(1935) /* maybeLoadBundle */(10940, dependencyMap.paths), obj, closure_3);
           } else if (null != pathname.match(closure_6)) {
             if (!canceled) {
               obj = {};

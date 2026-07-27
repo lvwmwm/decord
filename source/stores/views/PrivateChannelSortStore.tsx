@@ -1,5 +1,5 @@
 // Module ID: 5601
-// Function ID: 47598
+// Function ID: 47599
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 5602, 5603, 1352, 1348, 1838, 4143, 4326, 1850, 21, 3755, 3713, 5604, 566, 686, 2]
 
@@ -92,7 +92,7 @@ const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap(function
 let closure_18 = [];
 let closure_19 = [];
 let closure_20 = [];
-const f47608 = () => {
+const f47609 = () => {
   let values = secondaryIndexMap.values(constants.FAVORITE);
   values = secondaryIndexMap.values(constants.DEFAULT);
   let tmp = values === values;

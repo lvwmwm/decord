@@ -1,5 +1,5 @@
 // Module ID: 7696
-// Function ID: 61521
+// Function ID: 61522
 // Name: DoubleTapNitroAlert
 // Dependencies: [31, 27, 7692, 653, 7697, 33, 4131, 6554, 4473, 4476, 6673, 1212, 2]
 // Exports: default

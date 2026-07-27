@@ -1,5 +1,5 @@
 // Module ID: 9404
-// Function ID: 73424
+// Function ID: 73425
 // Name: useCaptchaStore
 // Dependencies: [57, 621, 682, 5839, 5844, 2]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty

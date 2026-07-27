@@ -1,5 +1,5 @@
 // Module ID: 9533
-// Function ID: 74403
+// Function ID: 74404
 // Name: trackSearchStart
 // Dependencies: [1922, 9532, 653, 662, 4325, 9534, 9537, 507, 686, 22, 491, 1443, 9538, 1331, 1317, 4471, 1212, 675, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, initializeSearch, removeFavoriteGIF, search, trackSelectGIF

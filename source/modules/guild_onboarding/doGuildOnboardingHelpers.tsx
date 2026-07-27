@@ -1,5 +1,5 @@
 // Module ID: 5063
-// Function ID: 43875
+// Function ID: 43876
 // Name: waitForOnboardingCompletion
 // Dependencies: [1918, 3747, 1360, 5064, 2]
 // Exports: waitForOnboardingCompletion

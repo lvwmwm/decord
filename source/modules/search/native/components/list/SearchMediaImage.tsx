@@ -1,10 +1,10 @@
-// Module ID: 15416
-// Function ID: 117690
+// Module ID: 15429
+// Function ID: 117739
 // Name: SearchMediaObscurityIcon
-// Dependencies: [57, 31, 27, 5847, 33, 4131, 4067, 3977, 5851, 9788, 4640, 4534, 1449, 11126, 477, 1212, 8585, 9826, 8055, 566, 9807, 9792, 2]
+// Dependencies: [57, 31, 27, 5847, 33, 4131, 4067, 3977, 5851, 9788, 4640, 4534, 1449, 11127, 477, 1212, 8585, 9826, 8055, 566, 9807, 9792, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 15416 (SearchMediaObscurityIcon)
+// Module 15429 (SearchMediaObscurityIcon)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -106,7 +106,7 @@ let closure_13 = importAllResult.memo((containerWidth) => {
         let obj = containerHeight(1449);
         obj = { src: mediaUrl, sourceWidth: mediaWidth, sourceHeight: mediaHeight, targetWidth: tmp6, targetHeight: tmp7, format: "png" };
         const srcWithWidthAndHeight = obj.getSrcWithWidthAndHeight(obj);
-        let obj2 = containerHeight(11126);
+        let obj2 = containerHeight(11127);
         const obscuredAlt = obj2.getObscuredAlt(obscureReason);
         let tmp12 = null;
         if (null != obscureReason) {

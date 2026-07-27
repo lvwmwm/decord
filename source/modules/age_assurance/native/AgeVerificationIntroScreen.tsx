@@ -1,5 +1,5 @@
 // Module ID: 7559
-// Function ID: 60600
+// Function ID: 60601
 // Name: GetStartedScreen
 // Dependencies: [5, 31, 27, 6691, 653, 6699, 33, 4131, 689, 1557, 4348, 7560, 6727, 4127, 5501, 7561, 1212, 6690, 1921, 6692, 4544, 7562, 2]
 // Exports: default

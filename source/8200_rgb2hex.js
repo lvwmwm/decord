@@ -1,5 +1,5 @@
 // Module ID: 8200
-// Function ID: 65709
+// Function ID: 65710
 // Name: rgb2hex
 // Dependencies: [57]
 // Exports: colorToHex

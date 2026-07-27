@@ -1,5 +1,5 @@
 // Module ID: 4621
-// Function ID: 40304
+// Function ID: 40305
 // Name: isValidFormResponse
 // Dependencies: [4622, 653, 3951, 1327, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields

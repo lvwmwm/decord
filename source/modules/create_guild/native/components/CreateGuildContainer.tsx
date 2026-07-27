@@ -1,5 +1,5 @@
 // Module ID: 10024
-// Function ID: 77516
+// Function ID: 77517
 // Name: CreateGuildContainer
 // Dependencies: [5, 57, 31, 1908, 1850, 653, 33, 4131, 5084, 5048, 4675, 10011, 5049, 1387, 10025, 5121, 10027, 2]
 // Exports: default

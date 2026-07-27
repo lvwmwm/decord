@@ -1,5 +1,5 @@
 // Module ID: 9599
-// Function ID: 74897
+// Function ID: 74898
 // Name: getGameMentionsAutocompleteConfig
 // Dependencies: [9600, 3804, 2]
 // Exports: getGameMentionsAutocompleteConfig

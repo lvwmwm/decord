@@ -1,10 +1,10 @@
-// Module ID: 15191
-// Function ID: 115684
+// Module ID: 15204
+// Function ID: 115733
 // Name: NotificationCenterActionSheet
-// Dependencies: [31, 5869, 653, 33, 566, 15192, 9492, 4099, 9493, 6145, 6147, 9874, 6554, 5498, 5186, 1212, 5500, 4648, 10325, 10167, 15193, 9893, 9490, 4095, 8943, 2]
+// Dependencies: [31, 5869, 653, 33, 566, 15205, 9492, 4099, 9493, 6145, 6147, 9874, 6554, 5498, 5186, 1212, 5500, 4648, 10326, 10168, 15206, 9893, 9490, 4095, 8943, 2]
 // Exports: default
 
-// Module 15191 (NotificationCenterActionSheet)
+// Module 15204 (NotificationCenterActionSheet)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserSettingsSections } from "ME";
@@ -24,7 +24,7 @@ export default function NotificationCenterActionSheet() {
   const everyoneFilter = stateFromStoresObject.everyoneFilter;
   const items1 = [everyoneFilter, roleFilter];
   const dependencyMap = React.useCallback((arg0) => {
-    let obj = everyoneFilter(15192);
+    let obj = everyoneFilter(15205);
     obj = { roleFilter, everyoneFilter };
     const merged = Object.assign(arg0);
     obj.setGuildFilter(obj);
@@ -61,7 +61,7 @@ export default function NotificationCenterActionSheet() {
   };
   const intl2 = roleFilter(1212).intl;
   obj2.label = intl2.string(roleFilter(1212).t.asInft);
-  const obj3 = { IconComponent: roleFilter(4648).AtIcon, source: everyoneFilter(10325) };
+  const obj3 = { IconComponent: roleFilter(4648).AtIcon, source: everyoneFilter(10326) };
   obj2.icon = callback(roleFilter(5500).ActionSheetRow.Icon, obj3);
   const items2 = [callback(roleFilter(5500).ActionSheetSwitchRow, obj2), ];
   const obj4 = {
@@ -74,7 +74,7 @@ export default function NotificationCenterActionSheet() {
   obj4.label = intl3.string(roleFilter(1212).t.S9GLtt);
   const intl4 = roleFilter(1212).intl;
   obj4.subLabel = intl4.string(roleFilter(1212).t.jYgZa4);
-  const obj5 = { IconComponent: roleFilter(10167).BellIcon, source: everyoneFilter(15193) };
+  const obj5 = { IconComponent: roleFilter(10168).BellIcon, source: everyoneFilter(15206) };
   obj4.icon = callback(roleFilter(5500).ActionSheetRow.Icon, obj5);
   items2[1] = callback(roleFilter(5500).ActionSheetSwitchRow, obj4);
   obj1.children = items2;

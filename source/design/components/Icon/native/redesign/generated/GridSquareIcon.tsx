@@ -1,10 +1,10 @@
-// Module ID: 15560
-// Function ID: 119894
+// Module ID: 15573
+// Function ID: 119943
 // Name: GridSquareIcon
-// Dependencies: [31, 33, 689, 3834, 14505, 2]
+// Dependencies: [31, 33, 689, 3834, 14506, 2]
 // Exports: GridSquareIcon
 
-// Module 15560 (GridSquareIcon)
+// Module 15573 (GridSquareIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const GridSquareIcon = function GridSquareIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14505) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14506) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(14505) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(14506) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

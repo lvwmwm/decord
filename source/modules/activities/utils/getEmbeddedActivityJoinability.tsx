@@ -1,10 +1,10 @@
-// Module ID: 10541
-// Function ID: 81531
+// Module ID: 10542
+// Function ID: 81536
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [1348, 1838, 3759, 1850, 4147, 653, 10542, 4313, 10470, 566, 2]
+// Dependencies: [1348, 1838, 3759, 1850, 4147, 653, 10543, 4313, 10471, 566, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 10541 (getEmbeddedActivityJoinability)
+// Module 10542 (getEmbeddedActivityJoinability)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";
@@ -111,7 +111,7 @@ function getEmbeddedActivityJoinability(arg0) {
       } else {
         return obj.ACTIVITY_NOT_SUPPORTED_ON_OS;
       }
-      tmp7 = importDefault(10542);
+      tmp7 = importDefault(10543);
     } else {
       return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS;
     }

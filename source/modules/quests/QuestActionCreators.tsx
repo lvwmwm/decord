@@ -1,5 +1,5 @@
 // Module ID: 9401
-// Function ID: 73295
+// Function ID: 73296
 // Name: _manuallyStartConsoleQuest
 // Dependencies: [5, 9402, 4972, 4223, 4971, 5932, 5934, 4977, 653, 507, 686, 4031, 4980, 1212, 5939, 1184, 4943, 480, 9403, 9406, 9407, 9408, 5960, 5949, 9409, 5930, 9410, 5693, 5952, 9411, 3966, 9412, 675, 5909, 9414, 9415, 664, 9429, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress

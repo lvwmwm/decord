@@ -1,10 +1,10 @@
-// Module ID: 11197
-// Function ID: 87194
+// Module ID: 11198
+// Function ID: 87199
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [31, 7954, 3992, 11198, 8364, 480, 2]
+// Dependencies: [31, 7954, 3992, 11199, 8364, 480, 2]
 // Exports: useViewableAppLauncherHomeItems
 
-// Module 11197 (useViewableAppLauncherHomeItems)
+// Module 11198 (useViewableAppLauncherHomeItems)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

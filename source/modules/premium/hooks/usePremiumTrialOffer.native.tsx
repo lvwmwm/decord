@@ -1,5 +1,5 @@
 // Module ID: 6188
-// Function ID: 55533
+// Function ID: 55534
 // Name: useGetTrialOffer
 // Dependencies: [5619, 1852, 6189, 5622, 624, 2]
 // Exports: usePremiumTrialOffer

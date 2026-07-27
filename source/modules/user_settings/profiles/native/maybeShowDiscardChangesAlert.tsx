@@ -1,5 +1,5 @@
 // Module ID: 9039
-// Function ID: 71078
+// Function ID: 71079
 // Name: maybeShowDiscardChangesAlert
 // Dependencies: [4472, 1212, 2]
 // Exports: default, showDiscardChangesAlert

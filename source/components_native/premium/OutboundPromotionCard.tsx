@@ -1,10 +1,10 @@
-// Module ID: 12521
-// Function ID: 96950
+// Module ID: 12522
+// Function ID: 96955
 // Name: TermsAndConditionsActionSheet
-// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 4974, 5187, 5186, 1212, 4127, 4121, 4067, 6509, 12522, 4472, 12523, 1935, 6507, 4544, 4099, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 689, 4974, 5187, 5186, 1212, 4127, 4121, 4067, 6509, 12523, 4472, 12524, 1935, 6507, 4544, 4099, 2]
 // Exports: default
 
-// Module 12521 (TermsAndConditionsActionSheet)
+// Module 12522 (TermsAndConditionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

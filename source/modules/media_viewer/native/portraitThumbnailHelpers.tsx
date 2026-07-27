@@ -1,5 +1,5 @@
 // Module ID: 8076
-// Function ID: 64287
+// Function ID: 64288
 // Name: lerpVarWidthThumbnailScrollBounds
 // Dependencies: [2]
 

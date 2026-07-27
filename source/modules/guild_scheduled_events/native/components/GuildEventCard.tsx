@@ -1,5 +1,5 @@
 // Module ID: 8267
-// Function ID: 66398
+// Function ID: 66399
 // Name: GuildEventCardControls
 // Dependencies: [31, 27, 4203, 5751, 1354, 33, 4131, 689, 8163, 4966, 566, 8147, 5166, 6689, 8268, 2]
 

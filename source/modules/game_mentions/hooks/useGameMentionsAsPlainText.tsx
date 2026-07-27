@@ -1,5 +1,5 @@
 // Module ID: 8998
-// Function ID: 70879
+// Function ID: 70880
 // Name: useGameMentionsAsPlainText
 // Dependencies: [31, 4152, 1850, 4568, 5639, 566, 1832, 8419, 1212, 2]
 // Exports: useGameMentionsAsPlainText

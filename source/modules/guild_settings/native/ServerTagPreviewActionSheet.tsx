@@ -1,10 +1,10 @@
-// Module ID: 12982
-// Function ID: 100727
+// Module ID: 12983
+// Function ID: 100732
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [31, 27, 8219, 33, 4131, 689, 8220, 8221, 12983, 4099, 4127, 1212, 4544, 5583, 5498, 5186, 2]
+// Dependencies: [31, 27, 8219, 33, 4131, 689, 8220, 8221, 12984, 4099, 4127, 1212, 4544, 5583, 5498, 5186, 2]
 // Exports: default
 
-// Module 12982 (ServerTagPreviewActionSheet)
+// Module 12983 (ServerTagPreviewActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ export default function ServerTagPreviewActionSheet(guildId) {
     obj.onAdopted = function onAdopted(arg0) {
       return outer1_1(outer1_2[9]).hideActionSheet();
     };
-    let tmp7 = callback(importDefault(12983), obj);
+    let tmp7 = callback(importDefault(12984), obj);
   } else if (guildProfile.fetchStatus === GuildProfileFetchStatus.FETCHED) {
     obj = { style: tmp.error };
     const obj1 = { variant: "text-md/medium", color: "text-muted" };

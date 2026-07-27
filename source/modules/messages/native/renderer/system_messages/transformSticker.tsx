@@ -1,5 +1,5 @@
 // Module ID: 7721
-// Function ID: 61635
+// Function ID: 61636
 // Name: transform
 // Dependencies: [31, 3807, 4467, 7722, 1212, 3804, 7676, 2]
 // Exports: default, transformSticker

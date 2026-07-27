@@ -1,10 +1,10 @@
-// Module ID: 12201
-// Function ID: 95413
+// Module ID: 12202
+// Function ID: 95418
 // Name: restoreEventRecurrence
 // Dependencies: [8146, 2]
 // Exports: default
 
-// Module 12201 (restoreEventRecurrence)
+// Module 12202 (restoreEventRecurrence)
 let result = require("set").fileFinishedImporting("modules/guild_scheduled_events/restoreEventRecurrence.tsx");
 
 export default function restoreEventRecurrence(arg0, guild_id, id, event_exception_id) {

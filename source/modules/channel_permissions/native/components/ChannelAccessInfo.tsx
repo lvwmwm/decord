@@ -1,10 +1,10 @@
-// Module ID: 11500
-// Function ID: 89539
+// Module ID: 11501
+// Function ID: 89544
 // Name: ChannelAccessInfo
-// Dependencies: [31, 27, 1391, 1918, 1911, 33, 4131, 689, 1212, 566, 8215, 1327, 4127, 4661, 10855, 1273, 11499, 4647, 8226, 8224, 10674, 2]
+// Dependencies: [31, 27, 1391, 1918, 1911, 33, 4131, 689, 1212, 566, 8215, 1327, 4127, 4661, 10856, 1273, 11500, 4647, 8226, 8224, 10675, 2]
 // Exports: default
 
-// Module 11500 (ChannelAccessInfo)
+// Module 11501 (ChannelAccessInfo)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { isGuildOwner } from "isGuildOwner";
@@ -126,7 +126,7 @@ export default function ChannelAccessInfo(guild) {
   } else {
     obj7 = {};
     const MEMBERS = constants.MEMBERS;
-    channel(11499);
+    channel(11500);
     const items5 = [renderCounts(MEMBERS, existingMembers.length, undefined, guild(4647).GroupIcon), ];
     const ROLES = constants.ROLES;
     channel(8226);
@@ -135,7 +135,7 @@ export default function ChannelAccessInfo(guild) {
   }
   obj1.children = callback2(closure_10, obj7);
   const items6 = [callback(View, obj1), ];
-  const obj8 = { source: channel(10674), size: guild(1273).Icon.Sizes.SMALL };
+  const obj8 = { source: channel(10675), size: guild(1273).Icon.Sizes.SMALL };
   items6[1] = callback(guild(1273).Icon, obj8);
   obj.children = items6;
   items2[1] = callback2(guild(4661).PressableOpacity, obj);

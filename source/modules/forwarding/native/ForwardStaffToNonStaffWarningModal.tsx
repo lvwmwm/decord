@@ -1,5 +1,5 @@
 // Module ID: 9836
-// Function ID: 76279
+// Function ID: 76280
 // Name: ForwardStaffToNonStaffWarningModal
 // Dependencies: [33, 4476, 1212, 2]
 // Exports: default

@@ -1,9 +1,9 @@
-// Module ID: 15006
-// Function ID: 114398
+// Module ID: 15007
+// Function ID: 114403
 // Name: useVoiceChannelUsers
-// Dependencies: [31, 27, 5892, 1850, 4147, 14244, 653, 33, 4131, 675, 10816, 1935, 14989, 14245, 4659, 11964, 14999, 7789, 566, 22, 1327, 4320, 1212, 2]
+// Dependencies: [31, 27, 5892, 1850, 4147, 14245, 653, 33, 4131, 675, 10817, 1935, 14990, 14246, 4659, 11965, 15000, 7789, 566, 22, 1327, 4320, 1212, 2]
 
-// Module 15006 (useVoiceChannelUsers)
+// Module 15007 (useVoiceChannelUsers)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

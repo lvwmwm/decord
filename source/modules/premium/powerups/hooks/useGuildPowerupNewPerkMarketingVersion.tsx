@@ -1,10 +1,10 @@
-// Module ID: 11531
-// Function ID: 89810
+// Module ID: 11532
+// Function ID: 89815
 // Name: useGuildPowerupNewPerkMarketingVersion
 // Dependencies: [31, 1838, 3759, 4019, 653, 4042, 566, 4061, 4060, 4022, 8245, 2]
 // Exports: default
 
-// Module 11531 (useGuildPowerupNewPerkMarketingVersion)
+// Module 11532 (useGuildPowerupNewPerkMarketingVersion)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

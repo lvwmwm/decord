@@ -1,10 +1,10 @@
-// Module ID: 11948
-// Function ID: 92385
+// Module ID: 11949
+// Function ID: 92390
 // Name: extractTimeComponents
 // Dependencies: [57, 31, 664, 7853, 4016, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 11948 (extractTimeComponents)
+// Module 11949 (extractTimeComponents)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

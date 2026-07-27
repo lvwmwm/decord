@@ -1,5 +1,5 @@
 // Module ID: 1865
-// Function ID: 20546
+// Function ID: 20547
 // Name: parseServerPremiumState
 // Dependencies: [2]
 // Exports: parseServerPremiumState

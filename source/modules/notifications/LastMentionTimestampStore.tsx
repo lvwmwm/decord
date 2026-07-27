@@ -1,5 +1,5 @@
 // Module ID: 5075
-// Function ID: 44134
+// Function ID: 44135
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1918, 4326, 1850, 686, 566, 2]
 // Exports: trackMessageNotificationTimestamps

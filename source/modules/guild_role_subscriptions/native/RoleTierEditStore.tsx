@@ -1,10 +1,10 @@
-// Module ID: 16482
-// Function ID: 128462
+// Module ID: 16494
+// Function ID: 128509
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 682, 677, 12553, 3744, 4560, 14162, 2]
+// Dependencies: [57, 5, 682, 677, 12554, 3744, 4560, 14163, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 16482 (_createForOfIteratorHelperLoose)
+// Module 16494 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import isIterable from "isIterable";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
@@ -169,7 +169,7 @@ export const usePriceTiersAvailableInGuild = function usePriceTiersAvailableInGu
   const tmp = usePriceTiers(guildId);
   const tiers = tmp.tiers;
   ({ state, onRefresh } = tmp);
-  let obj = set(14162);
+  let obj = set(14163);
   const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId);
   set = new Set();
   const tmp3 = _createForOfIteratorHelperLoose(subscriptionListingsForGuild);

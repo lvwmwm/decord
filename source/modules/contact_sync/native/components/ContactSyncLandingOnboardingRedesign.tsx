@@ -1,10 +1,10 @@
-// Module ID: 11718
-// Function ID: 91000
+// Module ID: 11719
+// Function ID: 91005
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 31, 27, 4345, 33, 4131, 689, 5084, 4676, 11719, 4127, 1212, 4544, 11720, 11712, 2]
+// Dependencies: [5, 31, 27, 4345, 33, 4131, 689, 5084, 4676, 11720, 4127, 1212, 4544, 11721, 11713, 2]
 // Exports: default
 
-// Module 11718 (ContactSyncLandingOnboardingRedesign)
+// Module 11719 (ContactSyncLandingOnboardingRedesign)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -51,7 +51,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   obj = { style: tmp2.content };
   obj = { resizeMode: "contain", style: tmp2.headerImage };
   callback = React.useCallback(callback(tmp), items);
-  obj.source = importDefault(11719);
+  obj.source = importDefault(11720);
   const items1 = [callback2(closure_6, obj), , , , ];
   const obj1 = { style: tmp2.title, variant: "heading-xl/bold" };
   const intl = onNext(1212).intl;
@@ -69,9 +69,9 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   obj4.loading = loading;
   obj3.children = callback2(onNext(4544).Button, obj4);
   items1[3] = callback2(closure_5, obj3);
-  items1[4] = callback2(importDefault(11720), { error });
+  items1[4] = callback2(importDefault(11721), { error });
   obj.children = items1;
-  const items2 = [callback3(closure_5, obj), callback2(closure_5, { style: tmp2.trailing, children: callback2(importDefault(11712), { discoverabilityEnabled, onValueChanged: setDiscoverabilityEnabled }) })];
+  const items2 = [callback3(closure_5, obj), callback2(closure_5, { style: tmp2.trailing, children: callback2(importDefault(11713), { discoverabilityEnabled, onValueChanged: setDiscoverabilityEnabled }) })];
   obj.children = items2;
   return callback3(closure_10, obj);
 };

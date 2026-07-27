@@ -1,10 +1,10 @@
-// Module ID: 16627
-// Function ID: 129730
+// Module ID: 16639
+// Function ID: 129777
 // Name: UpdateAppScreen
 // Dependencies: [27, 33, 4131, 689, 4127, 1212, 2461, 4544, 2]
 // Exports: default
 
-// Module 16627 (UpdateAppScreen)
+// Module 16639 (UpdateAppScreen)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

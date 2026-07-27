@@ -1,5 +1,5 @@
 // Module ID: 9919
-// Function ID: 76778
+// Function ID: 76779
 // Name: StampIcon
 // Dependencies: [31, 33, 689, 3834, 9920, 2]
 // Exports: StampIcon

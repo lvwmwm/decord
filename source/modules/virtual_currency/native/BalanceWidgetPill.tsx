@@ -1,5 +1,5 @@
 // Module ID: 9743
-// Function ID: 75863
+// Function ID: 75864
 // Name: BalanceWidgetPill
 // Dependencies: [31, 27, 33, 4131, 4548, 689, 477, 9744, 1212, 9745, 9751, 9752, 2]
 

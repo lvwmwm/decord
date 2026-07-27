@@ -1,10 +1,10 @@
-// Module ID: 12467
-// Function ID: 96731
+// Module ID: 12468
+// Function ID: 96736
 // Name: getSubscriptionPlaceholderPatternSource
-// Dependencies: [31, 27, 33, 6481, 12468, 12469, 12470, 3977, 2]
+// Dependencies: [31, 27, 33, 6481, 12469, 12470, 12471, 3977, 2]
 // Exports: SubscriptionPlaceholderPattern
 
-// Module 12467 (getSubscriptionPlaceholderPatternSource)
+// Module 12468 (getSubscriptionPlaceholderPatternSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

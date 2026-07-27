@@ -1,10 +1,10 @@
-// Module ID: 11226
-// Function ID: 87336
+// Module ID: 11227
+// Function ID: 87341
 // Name: GlobalSearchCoachmark
 // Dependencies: [31, 27, 1455, 1345, 33, 4131, 689, 6556, 8377, 1212, 2]
 // Exports: default
 
-// Module 11226 (GlobalSearchCoachmark)
+// Module 11227 (GlobalSearchCoachmark)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";

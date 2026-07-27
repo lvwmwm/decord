@@ -1,10 +1,10 @@
-// Module ID: 15474
-// Function ID: 118963
+// Module ID: 15487
+// Function ID: 119012
 // Name: getSearchQueryChannelIds
-// Dependencies: [1918, 3768, 1850, 10041, 9033, 653, 1212, 9839, 4075, 8954, 9613, 9615, 6580, 4645, 6575, 6572, 10952, 8958, 15475, 10042, 3970, 2]
+// Dependencies: [1918, 3768, 1850, 10041, 9033, 653, 1212, 9839, 4075, 8954, 9613, 9615, 6580, 4645, 6575, 6572, 10953, 8958, 15488, 10042, 3970, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15474 (getSearchQueryChannelIds)
+// Module 15487 (getSearchQueryChannelIds)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -79,7 +79,7 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = require(1212) /* getSystemLocale */.intl;
   if (intl.string(require(1212) /* getSystemLocale */.t.tPZo4p) === text) {
-    return require(10952) /* UserIcon */.UserIcon;
+    return require(10953) /* UserIcon */.UserIcon;
   } else {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     if (intl3.string(require(1212) /* getSystemLocale */.t.JL7sRS) === text) {
@@ -87,7 +87,7 @@ export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeI
     } else {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       if (intl2.string(require(1212) /* getSystemLocale */.t.WjkIKU) === text) {
-        return require(15475) /* WebhookIcon */.WebhookIcon;
+        return require(15488) /* WebhookIcon */.WebhookIcon;
       }
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 14013
-// Function ID: 107200
+// Module ID: 14014
+// Function ID: 107205
 // Name: BountiesModalCloseButton
 // Dependencies: [31, 33, 4131, 689, 4661, 1212, 5119, 2]
 // Exports: default
 
-// Module 14013 (BountiesModalCloseButton)
+// Module 14014 (BountiesModalCloseButton)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

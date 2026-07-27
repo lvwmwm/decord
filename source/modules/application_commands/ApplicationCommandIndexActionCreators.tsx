@@ -1,5 +1,5 @@
 // Module ID: 5673
-// Function ID: 48703
+// Function ID: 48704
 // Name: _fetchApplicationCommandIndex
 // Dependencies: [5, 653, 686, 507, 664, 675, 1327, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex

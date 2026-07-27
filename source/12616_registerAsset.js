@@ -1,11 +1,11 @@
 // Module ID: 12616
-// Function ID: 97553
+// Function ID: 97557
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12616 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 215, height: 128, scales: [2, 3], hash: "91b8f5f85a023591658822c0d3091e54", name: "guild_subscription_removal_darker", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 203, height: 120, scales: [1, 2, 3], hash: "4cb64ea1ce49f760ec2c14cca07c9930", name: "guild_subscription_removal_dark", type: "png" };
 
 export default registerAsset.registerAsset(obj);

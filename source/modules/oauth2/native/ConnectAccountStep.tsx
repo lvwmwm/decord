@@ -1,5 +1,5 @@
 // Module ID: 8894
-// Function ID: 70435
+// Function ID: 70436
 // Name: ConnectAccountStep
 // Dependencies: [31, 27, 4168, 1194, 1850, 33, 4131, 689, 4067, 566, 4815, 1392, 3977, 5463, 1273, 8895, 4127, 1212, 4544, 8897, 4087, 4083, 2]
 // Exports: ConnectedAccountCard, default

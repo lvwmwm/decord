@@ -1,5 +1,5 @@
 // Module ID: 3845
-// Function ID: 32035
+// Function ID: 32036
 // Name: updateAccessibilityAnnouncerLiveRegionMessage
 // Dependencies: [31, 27, 33, 3846, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage

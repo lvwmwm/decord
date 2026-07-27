@@ -1,10 +1,10 @@
-// Module ID: 15505
-// Function ID: 119270
+// Module ID: 15518
+// Function ID: 119319
 // Name: useMediaKeyboardConfig
-// Dependencies: [31, 1552, 653, 6020, 11333, 5996, 7952, 9610, 1882, 2]
+// Dependencies: [31, 1552, 653, 6020, 11334, 5996, 7952, 9610, 1882, 2]
 // Exports: default
 
-// Module 15505 (useMediaKeyboardConfig)
+// Module 15518 (useMediaKeyboardConfig)
 import result from "result";
 import { MediaKeyboardTarget } from "DRAG_HANDLE";
 import ME from "ME";
@@ -26,7 +26,7 @@ export default function useMediaKeyboardConfig(arg0) {
   let mediaKeyboardDraftType;
   const tmp2 = context(6020).useCanPostPollsInChannel(channel) && context.target !== MediaKeyboardTarget.COMMAND;
   importDefault = tmp2;
-  const tmp3 = importDefault(11333)(channel);
+  const tmp3 = importDefault(11334)(channel);
   dependencyMap = tmp3;
   let obj = context(6020);
   canStartThread = context(5996).useCanStartThread(channel);

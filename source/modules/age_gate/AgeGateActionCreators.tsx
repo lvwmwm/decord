@@ -1,10 +1,10 @@
-// Module ID: 14803
-// Function ID: 112939
+// Module ID: 14804
+// Function ID: 112944
 // Name: submitDateOfBirth
-// Dependencies: [1197, 653, 14802, 675, 507, 686, 2]
+// Dependencies: [1197, 653, 14803, 675, 507, 686, 2]
 // Exports: logoutUnderageNewUser, preventUnderageRegistration, submitDateOfBirth
 
-// Module 14803 (submitDateOfBirth)
+// Module 14804 (submitDateOfBirth)
 import { AgeGateAnalyticAction } from "result";
 import ME from "ME";
 
@@ -15,7 +15,7 @@ const result = require("trackAgeGateSubmitted").fileFinishedImporting("modules/a
 
 export const submitDateOfBirth = function submitDateOfBirth(format, source) {
   const _require = source;
-  importDefault(14802)(format, source);
+  importDefault(14803)(format, source);
   let obj = importDefault(675);
   obj = { source, action: AgeGateAnalyticAction.AGE_GATE_SUBMITTED };
   obj.track(constants.AGE_GATE_ACTION, obj);

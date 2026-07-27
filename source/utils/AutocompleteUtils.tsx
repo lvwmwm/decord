@@ -1,7 +1,7 @@
 // Module ID: 4975
-// Function ID: 42878
+// Function ID: 42879
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 4976, 4992, 4579, 5035, 5036, 5040, 3761, 1352, 1912, 1858, 1348, 5043, 1908, 1918, 1911, 1838, 4350, 3759, 4218, 3768, 1907, 3948, 1850, 4176, 653, 5044, 1355, 3, 5045, 1387, 4119, 5046, 1832, 3970, 5047, 4800, 22, 1917, 1327, 5048, 3764, 4321, 1212, 21, 12563, 9599, 5605, 9931, 12566, 1331, 9559, 7986, 4584, 12567, 2]
+// Dependencies: [57, 6, 7, 4976, 4992, 4579, 5035, 5036, 5040, 3761, 1352, 1912, 1858, 1348, 5043, 1908, 1918, 1911, 1838, 4350, 3759, 4218, 3768, 1907, 3948, 1850, 4176, 653, 5044, 1355, 3, 5045, 1387, 4119, 5046, 1832, 3970, 5047, 4800, 22, 1917, 1327, 5048, 3764, 4321, 1212, 21, 12564, 9599, 5605, 9931, 12567, 1331, 9559, 7986, 4584, 12568, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
 // Module 4975 (_createForOfIteratorHelperLoose)
@@ -2601,7 +2601,7 @@ areArraysShallowlyEqual = {
         } while (num < length);
       }
       const found = arr2.filter((record) => "null" !== record.record.id);
-      const sorted = found.sort(importDefault(12566));
+      const sorted = found.sort(importDefault(12567));
       let substr = sorted;
       if (tmp5) {
         substr = sorted.slice(0, limit);
@@ -2821,7 +2821,7 @@ areArraysShallowlyEqual = {
       return arg0;
     }, []);
     let arr = Array.from(sounds.values());
-    return _require(12567).searchSounds(arg0, reduced, currentUser, channel);
+    return _require(12568).searchSounds(arg0, reduced, currentUser, channel);
   },
   matchSentinel(arg0, arg1, outer1_12) {
     let tmp = !tmp8.test(arg1);

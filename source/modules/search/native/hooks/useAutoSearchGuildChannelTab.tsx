@@ -1,10 +1,10 @@
-// Module ID: 15469
-// Function ID: 118916
+// Module ID: 15482
+// Function ID: 118965
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [31, 11390, 10042, 11397, 22, 11389, 2]
+// Dependencies: [31, 11391, 10042, 11398, 22, 11390, 2]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 15469 (useAutoSearchGuildChannelTab)
+// Module 15482 (useAutoSearchGuildChannelTab)
 import result from "result";
 import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";
 

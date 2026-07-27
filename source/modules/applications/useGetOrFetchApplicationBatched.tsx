@@ -1,5 +1,5 @@
 // Module ID: 9945
-// Function ID: 77030
+// Function ID: 77031
 // Name: useRequestApplication
 // Dependencies: [6, 7, 31, 4168, 4016, 22, 5463, 566, 2]
 // Exports: useGetOrFetchApplicationBatched

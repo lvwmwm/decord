@@ -1,10 +1,10 @@
-// Module ID: 11178
-// Function ID: 86876
+// Module ID: 11179
+// Function ID: 86881
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 5671, 5669, 5670, 11179, 4567, 4568, 5677, 1882, 7953, 7963, 11150, 11181, 22, 7955, 566, 5655, 11180, 11182, 2]
+// Dependencies: [57, 31, 5671, 5669, 5670, 11180, 4567, 4568, 5677, 1882, 7953, 7963, 11151, 11182, 22, 7955, 566, 5655, 11181, 11183, 2]
 // Exports: bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, useGlobalSearchResults, useLocalSearchResults
 
-// Module 11178 (_createForOfIteratorHelperLoose)
+// Module 11179 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import closure_6 from "_isNativeReflectConstruct";
@@ -896,7 +896,7 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
       obj.length = diff;
       return tmp2(obj, (arg0, arg1) => {
         let results;
-        const searchResults = outer2_12.getSearchResults({ query: outer1_0, guildId: outer1_4, page: arg1 + 1, integrationType: substr(5655).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: outer1_3, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11180).SearchAppsRequestSource.APP_LAUNCHER });
+        const searchResults = outer2_12.getSearchResults({ query: outer1_0, guildId: outer1_4, page: arg1 + 1, integrationType: substr(5655).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: outer1_3, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11181).SearchAppsRequestSource.APP_LAUNCHER });
         if (null != searchResults) {
           results = searchResults.results;
         }

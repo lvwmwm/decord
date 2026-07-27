@@ -1,9 +1,9 @@
-// Module ID: 16063
-// Function ID: 124312
+// Module ID: 16075
+// Function ID: 124359
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 1194, 1348, 4470, 1838, 4809, 653, 1355, 3, 664, 5078, 675, 686, 5885, 12663, 1360, 491, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 1194, 1348, 4470, 1838, 4809, 653, 1355, 3, 664, 5078, 675, 686, 5885, 12664, 1360, 491, 2]
 
-// Module 16063 (_isNativeReflectConstruct)
+// Module 16075 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -254,7 +254,7 @@ function _getResyncGuilds() {
 }
 function scheduleIntegrityCheck(guild_id) {
   const _require = guild_id;
-  let obj = _require(12663);
+  let obj = _require(12664);
   if (obj.isChannelMetadataIntegrityCheckEnabled("scheduleIntegrityCheck")) {
     cleanupIntegrityCheckState(guild_id);
     if (null != dependencyMap[guild_id]) {

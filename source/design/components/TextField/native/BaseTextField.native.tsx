@@ -1,5 +1,5 @@
 // Module ID: 6685
-// Function ID: 59014
+// Function ID: 59015
 // Name: collapseNewlines
 // Dependencies: [31, 33, 477, 1324, 6683, 3840, 6686, 3839, 2]
 

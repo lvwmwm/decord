@@ -1,10 +1,10 @@
-// Module ID: 12551
-// Function ID: 97097
+// Module ID: 12552
+// Function ID: 97102
 // Name: useUnmountAbortSignal
 // Dependencies: [5450, 4560, 2]
 // Exports: default, useUnmountAbortSignalWithDelay
 
-// Module 12551 (useUnmountAbortSignal)
+// Module 12552 (useUnmountAbortSignal)
 const result = require("set").fileFinishedImporting("hooks/useUnmountAbortSignal.tsx");
 
 export default function useUnmountAbortSignal() {

@@ -1,5 +1,5 @@
 // Module ID: 6354
-// Function ID: 57132
+// Function ID: 57133
 // Name: createEventEnvelope
 // Dependencies: [65, 6310, 6311, 6355, 6358, 6347, 6316]
 // Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope

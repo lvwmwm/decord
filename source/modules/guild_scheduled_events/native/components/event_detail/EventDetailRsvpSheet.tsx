@@ -1,9 +1,9 @@
-// Module ID: 12208
-// Function ID: 95450
+// Module ID: 12209
+// Function ID: 95455
 // Name: EmptyDisplay
-// Dependencies: [31, 27, 4218, 1850, 482, 33, 4131, 689, 5053, 6667, 12209, 4127, 1212, 7575, 5085, 5462, 566, 1273, 9386, 3970, 8297, 12210, 5189, 5584, 2]
+// Dependencies: [31, 27, 4218, 1850, 482, 33, 4131, 689, 5053, 6667, 12210, 4127, 1212, 7575, 5085, 5462, 566, 1273, 9386, 3970, 8297, 12211, 5189, 5584, 2]
 
-// Module 12208 (EmptyDisplay)
+// Module 12209 (EmptyDisplay)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ function EmptyDisplay(arg0) {
   let obj = {};
   const items = [callback3().emptyDisplayContainer, style];
   obj.style = items;
-  obj = { icon: importDefault(12209) };
+  obj = { icon: importDefault(12210) };
   const items1 = [callback(importDefault(6667), obj), children];
   obj.children = items1;
   return callback2(View, obj);
@@ -48,7 +48,7 @@ function RemainingUsersRow(remainingUsersGroup) {
   const tmp = callback3();
   let obj = { DEPRECATED_style: tmp.userListRow };
   obj = { style: tmp.remainingUsersIconContainer };
-  obj = { source: importDefault(12209), style: tmp.remainingUsersIcon };
+  obj = { source: importDefault(12210), style: tmp.remainingUsersIcon };
   obj.children = callback(importDefault(5085), obj);
   obj.leading = callback(View, obj);
   const intl = require(1212) /* getSystemLocale */.intl;

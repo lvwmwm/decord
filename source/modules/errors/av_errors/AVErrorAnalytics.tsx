@@ -1,10 +1,10 @@
-// Module ID: 16604
-// Function ID: 129517
+// Module ID: 16616
+// Function ID: 129564
 // Name: getOutboundVideoStats
-// Dependencies: [57, 4216, 4200, 4221, 1348, 4178, 4203, 4224, 1907, 4217, 653, 4192, 8784, 4195, 4301, 22, 5975, 10496, 5907, 4125, 675, 2]
+// Dependencies: [57, 4216, 4200, 4221, 1348, 4178, 4203, 4224, 1907, 4217, 653, 4192, 8784, 4195, 4301, 22, 5975, 10497, 5907, 4125, 675, 2]
 // Exports: sendAVErrorAnalyticsEvent
 
-// Module 16604 (getOutboundVideoStats)
+// Module 16616 (getOutboundVideoStats)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo";

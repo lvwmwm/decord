@@ -1,5 +1,5 @@
 // Module ID: 7290
-// Function ID: 60170
+// Function ID: 60171
 // Name: NitroWumpusExcitement3dIllustration
 // Dependencies: [33, 5085, 7291, 2]
 // Exports: NitroWumpusExcitement3dIllustration

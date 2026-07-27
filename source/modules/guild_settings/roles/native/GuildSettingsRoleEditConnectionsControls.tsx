@@ -1,10 +1,10 @@
-// Module ID: 16389
-// Function ID: 127932
+// Module ID: 16401
+// Function ID: 127979
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 5148, 16363, 653, 4941, 33, 4131, 689, 4940, 22, 6673, 4127, 1212, 4542, 4661, 1921, 7596, 7595, 16390, 4544, 11245, 4099, 16391, 1935, 16392, 16394, 566, 7575, 16377, 2]
+// Dependencies: [31, 27, 5148, 16375, 653, 4941, 33, 4131, 689, 4940, 22, 6673, 4127, 1212, 4542, 4661, 1921, 7596, 7595, 16402, 4544, 11246, 4099, 16403, 1935, 16404, 16406, 566, 7575, 16389, 2]
 // Exports: default
 
-// Module 16389 (_createForOfIteratorHelperLoose)
+// Module 16401 (_createForOfIteratorHelperLoose)
 import result from "result";
 import { View } from "initialize";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -303,7 +303,7 @@ function AddConnectionButton(locked) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.text = intl.string(require(1212) /* getSystemLocale */.t["OSvW5+"]);
   obj.variant = "secondary";
-  obj.icon = callback(require(11245) /* CirclePlusIcon */.CirclePlusIcon, { size: "sm" });
+  obj.icon = callback(require(11246) /* CirclePlusIcon */.CirclePlusIcon, { size: "sm" });
   obj.disabled = locked.locked;
   obj.onPress = function onPress() {
     let obj = outer1_1(outer1_2[22]);

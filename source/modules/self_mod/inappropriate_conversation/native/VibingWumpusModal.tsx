@@ -1,5 +1,5 @@
 // Module ID: 10110
-// Function ID: 78326
+// Function ID: 78327
 // Name: VibingWumpusScreen
 // Dependencies: [57, 31, 27, 4123, 10098, 10111, 653, 33, 4131, 689, 624, 10112, 675, 10113, 5453, 10114, 4127, 1212, 4544, 4338, 8065, 8067, 5517, 2]
 // Exports: default

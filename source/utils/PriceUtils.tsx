@@ -1,5 +1,5 @@
 // Module ID: 5616
-// Function ID: 47880
+// Function ID: 47881
 // Name: formatSingleCurrencyPrice
 // Dependencies: [1922, 3779, 1852, 482, 477, 5617, 5619, 5621, 1212, 3777, 2]
 // Exports: formatPercent, formatSubscriptionPlanRate, shortenAndFormatPrice

@@ -1,10 +1,10 @@
-// Module ID: 11410
-// Function ID: 88696
+// Module ID: 11411
+// Function ID: 88701
 // Name: useEventsButtonProps
-// Dependencies: [31, 4143, 4326, 4327, 566, 8259, 4620, 9073, 8167, 4099, 11411, 1935, 1212, 11415, 2]
+// Dependencies: [31, 4143, 4326, 4327, 566, 8259, 4620, 9073, 8167, 4099, 11412, 1935, 1212, 11416, 2]
 // Exports: default
 
-// Module 11410 (useEventsButtonProps)
+// Module 11411 (useEventsButtonProps)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -50,13 +50,13 @@ export default function useEventsButtonProps(id) {
     const intl = _require(1212).intl;
     formatToPlainStringResult = intl.string(_require(1212).t.tlopTM);
   }
-  let UNREAD_IMPORTANT = _require(11415).ChannelModes.DEFAULT;
+  let UNREAD_IMPORTANT = _require(11416).ChannelModes.DEFAULT;
   let tmp10 = hasUnread;
   if (hasUnread) {
     tmp10 = !stateFromStores;
   }
   if (tmp10) {
-    UNREAD_IMPORTANT = _require(11415).ChannelModes.UNREAD_IMPORTANT;
+    UNREAD_IMPORTANT = _require(11416).ChannelModes.UNREAD_IMPORTANT;
   }
   obj = { hasUnread, mentionCount, mode: UNREAD_IMPORTANT, name: formatToPlainStringResult, eventsMuted: stateFromStores, handlePress: callback, handleLongPress: callback1 };
   return obj;

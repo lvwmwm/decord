@@ -1,5 +1,5 @@
 // Module ID: 7990
-// Function ID: 63703
+// Function ID: 63704
 // Name: WarningBox
 // Dependencies: [31, 27, 33, 4131, 7991, 4127, 1212, 7993, 3105, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 8922
-// Function ID: 70535
+// Function ID: 70536
 // Name: CrunchyrollLinkDiscordConsent
 // Dependencies: [31, 8917, 653, 8111, 33, 1456, 8878, 2]
 // Exports: default

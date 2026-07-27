@@ -1,10 +1,10 @@
-// Module ID: 12298
-// Function ID: 95851
+// Module ID: 12299
+// Function ID: 95856
 // Name: createBuildOverrideEmbed
-// Dependencies: [27, 10403, 5969, 7666, 10917, 12299, 1554, 1212, 7658, 689, 3977, 10931, 10932, 12297, 2]
+// Dependencies: [27, 10404, 5969, 7666, 10918, 12300, 1554, 1212, 7658, 689, 3977, 10932, 10933, 12298, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 12298 (createBuildOverrideEmbed)
+// Module 12299 (createBuildOverrideEmbed)
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { State } from "_isNativeReflectConstruct";
@@ -30,7 +30,7 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     if (null != override2) {
       const targetBuildOverride = override2.targetBuildOverride;
       if (null != targetBuildOverride) {
-        const tmp7 = targetBuildOverride[require(undefined, 10917) /* setBuildOverrideForBranch */.DEVICE_FIELD];
+        const tmp7 = targetBuildOverride[require(undefined, 10918) /* setBuildOverrideForBranch */.DEVICE_FIELD];
         if (null != tmp7) {
           id = tmp7.id;
         }
@@ -41,7 +41,7 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
       const overrides = currentBuildOverride.overrides;
       let id1;
       if (null != overrides) {
-        const tmp12 = overrides[require(undefined, 10917) /* setBuildOverrideForBranch */.DEVICE_FIELD];
+        const tmp12 = overrides[require(undefined, 10918) /* setBuildOverrideForBranch */.DEVICE_FIELD];
         if (null != tmp12) {
           id1 = tmp12.id;
         }
@@ -49,7 +49,7 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
       tmp8 = id === id1;
     }
     obj = importAll(1554);
-    const tmp15Result = importDefault(12299)(buildOverride.override, ["discord_ios", "discord_android"], obj.getConstants().Version);
+    const tmp15Result = importDefault(12300)(buildOverride.override, ["discord_ios", "discord_android"], obj.getConstants().Version);
     if (currentBuildOverride.state !== State.Invalid) {
       if (buildOverride.state !== State.Invalid) {
         if (null != buildOverride.override) {
@@ -66,7 +66,7 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
               if (null != override) {
                 const targetBuildOverride2 = override.targetBuildOverride;
                 if (null != targetBuildOverride2) {
-                  const tmp44 = targetBuildOverride2[require(undefined, 10917) /* setBuildOverrideForBranch */.DEVICE_FIELD];
+                  const tmp44 = targetBuildOverride2[require(undefined, 10918) /* setBuildOverrideForBranch */.DEVICE_FIELD];
                   if (null != tmp44) {
                     type = tmp44.type;
                   }
@@ -81,7 +81,7 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
               obj["titleColor"] = colors.titleColor;
               obj["subtitle"] = id;
               obj["subtitleColor"] = colors.subtitleColor;
-              obj["thumbnailUrl"] = Image.resolveAssetSource(importDefault(12297)).uri;
+              obj["thumbnailUrl"] = Image.resolveAssetSource(importDefault(12298)).uri;
               let str17 = "primary";
               if (tmp8) {
                 str17 = "destructive";
@@ -109,7 +109,7 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     const obj1 = {};
     const merged2 = Object.assign(baseColors);
     const intl = require(1212) /* getSystemLocale */.intl;
-    const tmp15 = importDefault(12299);
+    const tmp15 = importDefault(12300);
     obj1["headerText"] = intl.string(require(1212) /* getSystemLocale */.t.d34xi4).toLocaleUpperCase();
     const stringResult2 = intl.string(require(1212) /* getSystemLocale */.t.d34xi4);
     obj1["titleColor"] = require(7658) /* processColorOrThrow */.processColorOrThrow(importDefault(689).unsafe_rawColors.RED_400);
@@ -128,9 +128,9 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     obj1["subtitleColor"] = subtitleColor;
     const obj4 = require(7658) /* processColorOrThrow */;
     if (obj5.isThemeDark(closure_2)) {
-      let tmp32Result = tmp32(10931);
+      let tmp32Result = tmp32(10932);
     } else {
-      tmp32Result = tmp32(10932);
+      tmp32Result = tmp32(10933);
     }
     obj1["thumbnailUrl"] = Image.resolveAssetSource(tmp32Result).uri;
     obj1["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;

@@ -1,5 +1,5 @@
 // Module ID: 5843
-// Function ID: 51413
+// Function ID: 51414
 // Name: addGlobalTag
 // Dependencies: [650, 2]
 // Exports: addGlobalTag, getGlobalTagsArray

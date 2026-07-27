@@ -1,5 +1,5 @@
 // Module ID: 4790
-// Function ID: 41666
+// Function ID: 41667
 // Name: getOrientationDescription
 // Dependencies: [4751, 4766, 4767, 4746]
 

@@ -1,10 +1,10 @@
-// Module ID: 15651
-// Function ID: 120679
+// Module ID: 15663
+// Function ID: 120726
 // Name: PIP_WINDOW_OFFSET
 // Dependencies: [9977, 2]
 // Exports: default
 
-// Module 15651 (PIP_WINDOW_OFFSET)
+// Module 15663 (PIP_WINDOW_OFFSET)
 import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE";
 
 const fn = function _(arg0) {

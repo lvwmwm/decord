@@ -1,5 +1,5 @@
 // Module ID: 9155
-// Function ID: 71845
+// Function ID: 71846
 // Name: NUXGuildTemplatesAnalytics
 // Dependencies: [2]
 

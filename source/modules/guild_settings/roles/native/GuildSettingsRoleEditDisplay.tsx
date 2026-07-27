@@ -1,10 +1,10 @@
-// Module ID: 16378
-// Function ID: 127856
+// Module ID: 16390
+// Function ID: 127903
 // Name: GuildSettingsRoleEditDisplay
-// Dependencies: [31, 27, 1912, 16363, 16362, 653, 16365, 33, 4131, 689, 4572, 566, 5487, 5486, 1273, 16379, 4099, 14878, 1935, 16377, 16380, 16381, 6670, 1212, 16384, 5501, 5164, 4555, 1327, 665, 13631, 4087, 4127, 2231, 5502, 2]
+// Dependencies: [31, 27, 1912, 16375, 16374, 653, 16377, 33, 4131, 689, 4572, 566, 5487, 5486, 1273, 16391, 4099, 14879, 1935, 16389, 16392, 16393, 6670, 1212, 16396, 5501, 5164, 4555, 1327, 665, 13632, 4087, 4127, 2231, 5502, 2]
 // Exports: default
 
-// Module 16378 (GuildSettingsRoleEditDisplay)
+// Module 16390 (GuildSettingsRoleEditDisplay)
 import CircleInformationIcon from "CircleInformationIcon";
 import { View } from "LinearGradient";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";

@@ -1,5 +1,5 @@
 // Module ID: 9886
-// Function ID: 76599
+// Function ID: 76600
 // Name: ChatArrowRightIcon
 // Dependencies: [31, 33, 689, 3834, 9887, 2]
 // Exports: ChatArrowRightIcon

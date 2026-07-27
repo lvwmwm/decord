@@ -1,5 +1,5 @@
 // Module ID: 5373
-// Function ID: 46044
+// Function ID: 46045
 // Name: AverageWindow
 // Dependencies: [5368, 5369]
 

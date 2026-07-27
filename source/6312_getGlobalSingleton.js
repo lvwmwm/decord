@@ -1,5 +1,5 @@
 // Module ID: 6312
-// Function ID: 56752
+// Function ID: 56753
 // Name: getGlobalSingleton
 // Dependencies: [6313]
 

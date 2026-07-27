@@ -1,10 +1,10 @@
-// Module ID: 15097
-// Function ID: 115001
+// Module ID: 15109
+// Function ID: 115047
 // Name: useSubmittedGuildJoinRequestTotal
 // Dependencies: [5686, 566, 2]
 // Exports: useSubmittedGuildJoinRequestTotal
 
-// Module 15097 (useSubmittedGuildJoinRequestTotal)
+// Module 15109 (useSubmittedGuildJoinRequestTotal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

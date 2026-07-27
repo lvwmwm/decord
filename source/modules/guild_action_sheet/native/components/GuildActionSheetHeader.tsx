@@ -1,10 +1,10 @@
-// Module ID: 13037
-// Function ID: 100870
+// Module ID: 13038
+// Function ID: 100875
 // Name: CommunityPill
-// Dependencies: [31, 27, 13038, 1838, 6002, 653, 33, 4131, 689, 478, 1212, 8400, 8394, 8952, 8403, 4661, 3832, 1273, 4127, 6504, 566, 1387, 13039, 13040, 1450, 5513, 1392, 1426, 8756, 3835, 5085, 8396, 10085, 2]
+// Dependencies: [31, 27, 13039, 1838, 6002, 653, 33, 4131, 689, 478, 1212, 8400, 8394, 8952, 8403, 4661, 3832, 1273, 4127, 6504, 566, 1387, 13040, 13041, 1450, 5513, 1392, 1426, 8756, 3835, 5085, 8396, 10085, 2]
 // Exports: default
 
-// Module 13037 (CommunityPill)
+// Module 13038 (CommunityPill)
 import GuildBadgeV2 from "GuildBadgeV2";
 import get_ActivityIndicator from "isAttachmentLadderEnabled";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

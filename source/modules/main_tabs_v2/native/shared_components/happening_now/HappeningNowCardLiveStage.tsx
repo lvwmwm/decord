@@ -1,9 +1,9 @@
-// Module ID: 14990
-// Function ID: 114297
+// Module ID: 14991
+// Function ID: 114302
 // Name: HappeningNowLiveStageContent
-// Dependencies: [31, 27, 14244, 653, 33, 4131, 689, 675, 10816, 1935, 14991, 14992, 14993, 14245, 4655, 1273, 15002, 4321, 1212, 4320, 2]
+// Dependencies: [31, 27, 14245, 653, 33, 4131, 689, 675, 10817, 1935, 14992, 14993, 14994, 14246, 4655, 1273, 15003, 4321, 1212, 4320, 2]
 
-// Module 14990 (HappeningNowLiveStageContent)
+// Module 14991 (HappeningNowLiveStageContent)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";

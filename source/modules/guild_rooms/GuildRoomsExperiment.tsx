@@ -1,9 +1,9 @@
-// Module ID: 16108
-// Function ID: 124823
+// Module ID: 16120
+// Function ID: 124870
 // Name: items
 // Dependencies: [4043, 2]
 
-// Module 16108 (items)
+// Module 16120 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-06_guild_rooms", label: "Guild Rooms", defaultConfig: { enabled: false, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: false } };

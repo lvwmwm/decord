@@ -1,5 +1,5 @@
 // Module ID: 6409
-// Function ID: 57620
+// Function ID: 57621
 // Name: isProfilingIntegrationWithProfiler
 // Dependencies: [6338, 6339, 6311]
 

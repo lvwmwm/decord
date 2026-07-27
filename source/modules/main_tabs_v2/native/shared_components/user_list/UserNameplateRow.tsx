@@ -1,5 +1,5 @@
 // Module ID: 8680
-// Function ID: 68895
+// Function ID: 68896
 // Name: UserNameplateRow
 // Dependencies: [57, 31, 33, 4131, 689, 5165, 3835, 5166, 8008, 5164, 5125, 2]
 // Exports: UserNameplateRow

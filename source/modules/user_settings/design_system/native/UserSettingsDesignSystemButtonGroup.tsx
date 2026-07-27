@@ -1,10 +1,10 @@
-// Module ID: 14488
-// Function ID: 110729
+// Module ID: 14489
+// Function ID: 110734
 // Name: UserSettingsDesignSystemButtonGroup
 // Dependencies: [31, 27, 33, 4131, 4542, 4127, 4966, 4544, 6625, 8944, 2]
 // Exports: default
 
-// Module 14488 (UserSettingsDesignSystemButtonGroup)
+// Module 14489 (UserSettingsDesignSystemButtonGroup)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

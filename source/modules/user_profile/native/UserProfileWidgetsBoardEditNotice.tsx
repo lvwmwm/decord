@@ -1,10 +1,10 @@
-// Module ID: 11989
-// Function ID: 92678
+// Module ID: 11990
+// Function ID: 92683
 // Name: UserProfileWidgetsBoardEditNotice
 // Dependencies: [31, 27, 1345, 33, 4131, 689, 8017, 1324, 9602, 1334, 4087, 4127, 1212, 4661, 5119, 2]
 // Exports: default
 
-// Module 11989 (UserProfileWidgetsBoardEditNotice)
+// Module 11990 (UserProfileWidgetsBoardEditNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

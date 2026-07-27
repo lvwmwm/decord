@@ -1,5 +1,5 @@
 // Module ID: 9353
-// Function ID: 73051
+// Function ID: 73052
 // Name: StarOutlineIcon
 // Dependencies: [31, 33, 689, 3834, 9354, 2]
 // Exports: StarOutlineIcon

@@ -1,10 +1,10 @@
-// Module ID: 11205
-// Function ID: 87216
+// Module ID: 11206
+// Function ID: 87221
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [31, 27, 653, 33, 4131, 689, 3828, 1921, 1212, 11206, 7955, 4127, 4661, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 3828, 1921, 1212, 11207, 7955, 4127, 4661, 2]
 // Exports: default
 
-// Module 11205 (LearnMoreAboutAppsSection)
+// Module 11206 (LearnMoreAboutAppsSection)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -59,5 +59,5 @@ export default function LearnMoreAboutAppsSection(visible) {
   items[5] = callback(View, { style: tmp.divider });
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(importDefault(11206), obj);
+  return callback(importDefault(11207), obj);
 };

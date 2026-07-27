@@ -1,9 +1,9 @@
-// Module ID: 13784
-// Function ID: 105704
+// Module ID: 13785
+// Function ID: 105709
 // Name: getTitle
-// Dependencies: [7697, 13785, 5834, 5853, 1212, 13786, 10059, 13788, 2]
+// Dependencies: [7697, 13786, 5834, 5853, 1212, 13787, 10059, 13789, 2]
 
-// Module 13784 (getTitle)
+// Module 13785 (getTitle)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
@@ -17,7 +17,7 @@ const pressable = createToggle.createPressable({
     return MobileSetting.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: function useObscuredContentFriendsDmSettingValue() {
-    const obj = require(13785) /* useExplicitContentSettingOrDefault */;
+    const obj = require(13786) /* useExplicitContentSettingOrDefault */;
     return require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentFriendDm)();
   },
   onPress: function onObscuredContentFriendsDmOnPress() {
@@ -34,7 +34,7 @@ const pressable = createToggle.createPressable({
       },
       currentValue: obj.getExplicitContentSettingOrDefault().explicitContentFriendDm
     };
-    const result = require(13786) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13787) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms: function getSearchTerms() {
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -53,7 +53,7 @@ let obj = {
     return MobileSetting.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: function useObscuredContentFriendsDmSettingValue() {
-    const obj = require(13785) /* useExplicitContentSettingOrDefault */;
+    const obj = require(13786) /* useExplicitContentSettingOrDefault */;
     return require(5834) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentFriendDm)();
   },
   onPress: function onObscuredContentFriendsDmOnPress() {
@@ -70,7 +70,7 @@ let obj = {
       },
       currentValue: obj.getExplicitContentSettingOrDefault().explicitContentFriendDm
     };
-    const result = require(13786) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13787) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms: function getSearchTerms() {
     const intl = require(1212) /* getSystemLocale */.intl;

@@ -1,5 +1,5 @@
 // Module ID: 3510
-// Function ID: 26964
+// Function ID: 26965
 // Name: isFuture
 // Dependencies: [3210, 3211]
 // Exports: default

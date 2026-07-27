@@ -1,10 +1,10 @@
-// Module ID: 10921
-// Function ID: 84873
+// Module ID: 10922
+// Function ID: 84878
 // Name: getPendingFolderGuildIds
 // Dependencies: [3949, 1838, 566, 2]
 // Exports: default
 
-// Module 10921 (getPendingFolderGuildIds)
+// Module 10922 (getPendingFolderGuildIds)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

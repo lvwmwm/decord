@@ -1,23 +1,23 @@
-// Module ID: 13499
-// Function ID: 103794
-// Dependencies: [4034, 653, 10556, 13500, 10553, 2]
+// Module ID: 13500
+// Function ID: 103799
+// Dependencies: [4034, 653, 10557, 13501, 10554, 2]
 
-// Module 13499
+// Module 13500
 import ME from "ME";
 
 const RPCErrors = ME.RPCErrors;
 let obj = {
   scope: require("RPC_SCOPE_CONFIG").RPC_LOCAL_SCOPE,
   validation(boolean) {
-    let obj = importDefault(10556)(boolean);
+    let obj = importDefault(10557)(boolean);
     obj = { open: boolean.boolean() };
     return obj.keys(obj);
   },
   handler(args) {
-    let obj = require(13500) /* toggleVoiceChannelChat */;
+    let obj = require(13501) /* toggleVoiceChannelChat */;
     const result = obj.toggleVoiceChannelChat(args.args.open);
     if (null == result) {
-      let tmp4 = importDefault(10553);
+      let tmp4 = importDefault(10554);
       obj = { errorCode: RPCErrors.INVALID_CHANNEL };
       const prototype = tmp4.prototype;
       tmp4 = new tmp4(obj, "Not connected to a guild voice channel");

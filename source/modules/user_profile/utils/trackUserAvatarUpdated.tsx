@@ -1,5 +1,5 @@
 // Module ID: 9159
-// Function ID: 71889
+// Function ID: 71890
 // Name: trackUserAvatarUpdated
 // Dependencies: [653, 7891, 675, 1392, 2]
 // Exports: trackUserAvatarUpdated

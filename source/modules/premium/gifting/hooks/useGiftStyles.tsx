@@ -1,5 +1,5 @@
 // Module ID: 8708
-// Function ID: 69075
+// Function ID: 69076
 // Name: useGiftStyles
 // Dependencies: [1852, 2]
 // Exports: useGiftStyles

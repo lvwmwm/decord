@@ -1,5 +1,5 @@
 // Module ID: 8407
-// Function ID: 67153
+// Function ID: 67154
 // Name: useOpenGameProfileModal
 // Dependencies: [8408, 8412, 2]
 // Exports: default

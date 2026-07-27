@@ -1,5 +1,5 @@
 // Module ID: 6603
-// Function ID: 58438
+// Function ID: 58439
 // Name: BuyNitroPurchaseButton
 // Dependencies: [57, 31, 27, 5619, 1852, 33, 4131, 5482, 6497, 1212, 477, 6604, 5450, 6238, 6511, 566, 5462, 4472, 4544, 6605, 6606, 2]
 // Exports: default

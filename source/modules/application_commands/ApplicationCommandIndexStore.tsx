@@ -1,5 +1,5 @@
 // Module ID: 5669
-// Function ID: 48562
+// Function ID: 48563
 // Name: _isNativeReflectConstruct
 // Dependencies: [57, 6, 7, 15, 17, 18, 5, 31, 5670, 1922, 1194, 1348, 1918, 1838, 1850, 5671, 4567, 653, 3, 5672, 5673, 5674, 5675, 5049, 44, 5677, 675, 1882, 5680, 566, 686, 5681, 5682, 1331, 7963, 5676, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, useDiscoveryState, useGuildIndexState

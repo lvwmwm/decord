@@ -1,10 +1,10 @@
-// Module ID: 15391
-// Function ID: 117455
+// Module ID: 15404
+// Function ID: 117504
 // Name: SearchTabsPage
-// Dependencies: [57, 31, 27, 1348, 9033, 653, 33, 4131, 566, 7668, 4346, 9971, 9973, 15392, 15434, 15436, 15440, 15441, 15449, 15451, 15452, 15458, 15465, 44, 8056, 2]
+// Dependencies: [57, 31, 27, 1348, 9033, 653, 33, 4131, 566, 7668, 4346, 9971, 9973, 15405, 15447, 15449, 15453, 15454, 15462, 15464, 15465, 15471, 15478, 44, 8056, 2]
 // Exports: default
 
-// Module 15391 (SearchTabsPage)
+// Module 15404 (SearchTabsPage)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -56,34 +56,34 @@ function SearchTabsPage(selectMediaTab) {
     }
     if (SearchTabs.RECENT === tab) {
       obj1 = { onJumpToMedia: selectMediaTab.selectMediaTab, searchContext, width };
-      return jsx(importDefault(15392), { onJumpToMedia: selectMediaTab.selectMediaTab, searchContext, width });
+      return jsx(importDefault(15405), { onJumpToMedia: selectMediaTab.selectMediaTab, searchContext, width });
     } else if (SearchTabs.PEOPLE === tab) {
       const obj2 = { searchContext };
-      return jsx(importDefault(15434), { searchContext });
+      return jsx(importDefault(15447), { searchContext });
     } else if (SearchTabs.MEMBERS === tab) {
       const obj3 = { searchContext };
-      return jsx(importDefault(15436), { searchContext });
+      return jsx(importDefault(15449), { searchContext });
     } else if (SearchTabs.GUILD_CHANNELS === tab) {
       const obj4 = { searchContext };
-      return jsx(importDefault(15440), { searchContext });
+      return jsx(importDefault(15453), { searchContext });
     } else if (SearchTabs.MEDIA === tab) {
       const obj5 = { tab, searchContext, isFocused, width };
-      return jsx(importDefault(15441), { tab, searchContext, isFocused, width });
+      return jsx(importDefault(15454), { tab, searchContext, isFocused, width });
     } else if (SearchTabs.FILES === tab) {
       const obj6 = { tab, searchContext, isFocused, width };
-      return jsx(importDefault(15449), { tab, searchContext, isFocused, width });
+      return jsx(importDefault(15462), { tab, searchContext, isFocused, width });
     } else if (SearchTabs.LINKS === tab) {
       const obj7 = { tab, searchContext, isFocused, width };
-      return jsx(importDefault(15451), { tab, searchContext, isFocused, width });
+      return jsx(importDefault(15464), { tab, searchContext, isFocused, width });
     } else if (SearchTabs.THREADS === tab) {
       const obj8 = { searchContext };
-      return jsx(searchContext(15452).SearchTabsThreadScreen, { searchContext });
+      return jsx(searchContext(15465).SearchTabsThreadScreen, { searchContext });
     } else if (SearchTabs.MESSAGES === tab) {
       const obj9 = { tab, searchContext, isFocused };
-      return jsx(importDefault(15458), { tab, searchContext, isFocused });
+      return jsx(importDefault(15471), { tab, searchContext, isFocused });
     } else if (SearchTabs.PINS === tab) {
       const obj10 = { tab, searchContext, isFocused };
-      return jsx(importDefault(15465), { tab, searchContext, isFocused });
+      return jsx(importDefault(15478), { tab, searchContext, isFocused });
     } else {
       return null;
     }

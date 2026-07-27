@@ -1,10 +1,10 @@
-// Module ID: 14725
-// Function ID: 112251
+// Module ID: 14726
+// Function ID: 112256
 // Name: BalanceWidget
-// Dependencies: [31, 27, 653, 655, 1345, 4977, 33, 1324, 4661, 4127, 1212, 9602, 1334, 675, 10897, 4980, 14726, 8651, 4099, 9754, 1935, 5482, 5769, 9753, 3947, 4559, 4131, 689, 2]
+// Dependencies: [31, 27, 653, 655, 1345, 4977, 33, 1324, 4661, 4127, 1212, 9602, 1334, 675, 10898, 4980, 14727, 8651, 4099, 9754, 1935, 5482, 5769, 9753, 3947, 4559, 4131, 689, 2]
 // Exports: default
 
-// Module 14725 (BalanceWidget)
+// Module 14726 (BalanceWidget)
 import result from "result";
 import { View } from "_createForOfIteratorHelperLoose";
 import { AnalyticEvents } from "ME";

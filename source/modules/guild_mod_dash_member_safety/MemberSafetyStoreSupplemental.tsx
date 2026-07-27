@@ -1,5 +1,5 @@
 // Module ID: 5729
-// Function ID: 49776
+// Function ID: 49777
 // Name: getMemberSupplementalByGuildId
 // Dependencies: [5730, 2]
 // Exports: hasMemberSupplemental, syncMemberSupplemental

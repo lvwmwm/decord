@@ -1,10 +1,10 @@
-// Module ID: 14551
-// Function ID: 111121
+// Module ID: 14552
+// Function ID: 111126
 // Name: ShopCardGridItem
-// Dependencies: [31, 27, 5770, 33, 4131, 8592, 8595, 14550, 22, 2]
+// Dependencies: [31, 27, 5770, 33, 4131, 8592, 8595, 14551, 22, 2]
 // Exports: default
 
-// Module 14551 (ShopCardGridItem)
+// Module 14552 (ShopCardGridItem)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -55,7 +55,7 @@ export default function CollectiblesShopCardsGrid(accessibilityLabel) {
   let cardWidth;
   ({ onScroll, paddingTop, paddingBottom } = accessibilityLabel);
   closure_5 = _createForOfIteratorHelperLoose();
-  let obj = products(14550);
+  let obj = products(14551);
   const cardLayout = obj.useCardLayout();
   columns = cardLayout.columns;
   cardWidth = cardLayout.cardWidth;

@@ -1,10 +1,10 @@
-// Module ID: 15107
-// Function ID: 115050
+// Module ID: 15119
+// Function ID: 115096
 // Name: LimitAndDurationInfo
-// Dependencies: [31, 5757, 1838, 3759, 4143, 4147, 653, 33, 4131, 566, 11170, 5761, 9065, 15108, 15109, 4314, 1273, 15111, 15112, 15028, 4951, 11384, 15029, 15113, 11933, 2]
+// Dependencies: [31, 5757, 1838, 3759, 4143, 4147, 653, 33, 4131, 566, 11171, 5761, 9065, 15120, 15121, 4314, 1273, 15123, 15124, 15029, 4951, 11385, 15030, 15125, 11934, 2]
 // Exports: default
 
-// Module 15107 (LimitAndDurationInfo)
+// Module 15119 (LimitAndDurationInfo)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -51,7 +51,7 @@ function LimitAndDurationInfo(channel) {
     }
     obj.video = hasVideo;
     obj.channel = channel;
-    let tmp4Result = tmp4(channel(15029).ConnectedUserLimit, obj);
+    let tmp4Result = tmp4(channel(15030).ConnectedUserLimit, obj);
   } else {
     const obj1 = { channel };
     tmp4Result = tmp4(DurationInfo, obj1);
@@ -59,7 +59,7 @@ function LimitAndDurationInfo(channel) {
   return tmp4Result;
 }
 function DurationInfo(channel) {
-  let obj = require(15113) /* useStartTime */;
+  let obj = require(15125) /* useStartTime */;
   const startTime = obj.useStartTime(channel.channel);
   let tmp3 = null;
   if (null != startTime) {
@@ -67,7 +67,7 @@ function DurationInfo(channel) {
     obj = { start: startTime };
     obj.entry = obj;
     obj.style = tmp.activeTimestamp;
-    tmp3 = jsx(require(11933) /* ActiveTimestamp */.ActiveTimestamp, { start: startTime });
+    tmp3 = jsx(require(11934) /* ActiveTimestamp */.ActiveTimestamp, { start: startTime });
   }
   return tmp3;
 }
@@ -93,13 +93,13 @@ export default function ChannelInfo(channel) {
   const items = [closure_4, closure_6, _isNativeReflectConstruct];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ guild: outer1_4.getGuild(channel.guild_id), mentionsCount: outer1_6.getMentionCount(channel.id), isMentionLowImportance: outer1_6.getIsMentionLowImportance(channel.id), isNewChannel: outer1_3.shouldIndicateNewChannel(channel.guild_id, channel.id) }));
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
-  const tmp2 = importDefault(11170)(channel);
+  const tmp2 = importDefault(11171)(channel);
   let obj1 = channel(5761);
   const optInEnabledForGuild = obj1.useOptInEnabledForGuild(channel.guild_id);
   let obj2 = channel(9065);
   const unreadThreadsCountForParent = obj2.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   obj = { mentionsCount, isNewChannel, postsWithUnreadsCount: unreadThreadsCountForParent, muted };
-  if (importDefault(15108)(obj)) {
+  if (importDefault(15120)(obj)) {
     obj = { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance };
     if (isNewChannel) {
       isNewChannel = optInEnabledForGuild;
@@ -111,7 +111,7 @@ export default function ChannelInfo(channel) {
     }
     obj.postsWithUnreadsCount = tmp28;
     obj.muted = muted;
-    return jsx(importDefault(15109), { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance });
+    return jsx(importDefault(15121), { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance });
   } else {
     if (null != isChannelCollapsed) {
       if (isChannelCollapsed) {
@@ -134,16 +134,16 @@ export default function ChannelInfo(channel) {
       if (enableActivities) {
         if (obj6.showChannelItemEmbeddedActivities(tmp2)) {
           obj1 = { embeddedApps: tmp2, muted };
-          return jsx(importDefault(15112), { embeddedApps: tmp2, muted });
+          return jsx(importDefault(15124), { embeddedApps: tmp2, muted });
         }
-        obj6 = channel(15111);
+        obj6 = channel(15123);
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
           obj2 = { locked: needSubscriptionToAccess };
-          return jsx(importDefault(15028), { locked: needSubscriptionToAccess });
+          return jsx(importDefault(15029), { locked: needSubscriptionToAccess });
         }
       }
     }

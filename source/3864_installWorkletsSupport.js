@@ -1,5 +1,5 @@
 // Module ID: 3864
-// Function ID: 32127
+// Function ID: 32128
 // Name: installWorkletsSupport
 // Dependencies: [3865]
 

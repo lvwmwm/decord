@@ -1,5 +1,5 @@
 // Module ID: 10066
-// Function ID: 78045
+// Function ID: 78046
 // Name: useCanSearchForumPostsByChannelId
 // Dependencies: [1348, 3759, 653, 566, 2]
 // Exports: useCanSearchForumPostsByChannelId

@@ -1,5 +1,5 @@
 // Module ID: 5855
-// Function ID: 51665
+// Function ID: 51666
 // Name: resolveGoreSettingWithDefaults
 // Dependencies: [31, 1850, 653, 1282, 3810, 3817, 3804, 2]
 // Exports: updateGoreContentSetting, useSensitiveContentFilterHelpArticle

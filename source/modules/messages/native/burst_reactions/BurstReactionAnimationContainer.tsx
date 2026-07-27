@@ -1,10 +1,10 @@
-// Module ID: 15653
-// Function ID: 120683
+// Module ID: 15665
+// Function ID: 120730
 // Name: BurstReactionAnimationContainerInner
 // Dependencies: [57, 31, 27, 1345, 33, 4131, 689, 6043, 4100, 4101, 686, 3992, 4132, 9602, 1334, 1273, 6085, 4127, 1212, 3843, 2]
 // Exports: default
 
-// Module 15653 (BurstReactionAnimationContainerInner)
+// Module 15665 (BurstReactionAnimationContainerInner)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

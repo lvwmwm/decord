@@ -1,5 +1,5 @@
 // Module ID: 8866
-// Function ID: 70171
+// Function ID: 70172
 // Name: XboxLinkLanding
 // Dependencies: [31, 8865, 653, 33, 4131, 1212, 4659, 6564, 4647, 8867, 1456, 1921, 8868, 8869, 2]
 // Exports: default

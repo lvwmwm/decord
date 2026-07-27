@@ -1,5 +1,5 @@
 // Module ID: 8555
-// Function ID: 68001
+// Function ID: 68002
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42]
 

@@ -1,5 +1,5 @@
 // Module ID: 9814
-// Function ID: 76100
+// Function ID: 76101
 // Name: AvailableForumTag
 // Dependencies: [31, 4992, 1853, 33, 4131, 689, 566, 9605, 8174, 5150, 1392, 4127, 2]
 // Exports: default

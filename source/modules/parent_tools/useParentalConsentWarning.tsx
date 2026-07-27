@@ -1,10 +1,10 @@
-// Module ID: 13831
-// Function ID: 106046
+// Module ID: 13832
+// Function ID: 106051
 // Name: useParentalConsentWarning
-// Dependencies: [13832, 566, 2]
+// Dependencies: [13833, 566, 2]
 // Exports: useParentalConsentWarning
 
-// Module 13831 (useParentalConsentWarning)
+// Module 13832 (useParentalConsentWarning)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

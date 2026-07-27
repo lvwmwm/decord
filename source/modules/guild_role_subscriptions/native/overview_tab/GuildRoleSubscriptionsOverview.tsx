@@ -1,10 +1,10 @@
-// Module ID: 15317
-// Function ID: 116896
+// Module ID: 15330
+// Function ID: 116945
 // Name: serverNameHook
-// Dependencies: [31, 4809, 3952, 1838, 33, 4127, 15318, 1212, 6515, 14163, 15319, 624, 7716, 5032, 4472, 1198, 2]
+// Dependencies: [31, 4809, 3952, 1838, 33, 4127, 15331, 1212, 6515, 14164, 15332, 624, 7716, 5032, 4472, 1198, 2]
 // Exports: default
 
-// Module 15317 (serverNameHook)
+// Module 15330 (serverNameHook)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -38,8 +38,8 @@ function PurchasePage(arg0) {
   if (null != storeFront) {
     country = storeFront.country;
   }
-  obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15319), { guildId, gatedChannelId }) };
-  return jsx(require(14163) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15319), { guildId, gatedChannelId }) });
+  obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15332), { guildId, gatedChannelId }) };
+  return jsx(require(14164) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15332), { guildId, gatedChannelId }) });
 }
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
 

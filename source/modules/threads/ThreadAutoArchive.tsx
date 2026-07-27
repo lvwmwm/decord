@@ -1,5 +1,5 @@
 // Module ID: 6133
-// Function ID: 55032
+// Function ID: 55033
 // Name: getAutoArchiveOptions
 // Dependencies: [1211, 664, 1212, 708, 3713, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText

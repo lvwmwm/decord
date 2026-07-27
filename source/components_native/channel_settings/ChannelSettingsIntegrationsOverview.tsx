@@ -1,10 +1,10 @@
-// Module ID: 15579
-// Function ID: 120144
+// Module ID: 15591
+// Function ID: 120191
 // Name: LinkedLobbyFormSection
-// Dependencies: [31, 1348, 653, 33, 1456, 5468, 5501, 1212, 5164, 1273, 1392, 4131, 689, 566, 7575, 4542, 15475, 15580, 2]
+// Dependencies: [31, 1348, 653, 33, 1456, 5468, 5501, 1212, 5164, 1273, 1392, 4131, 689, 566, 7575, 4542, 15488, 15592, 2]
 // Exports: default
 
-// Module 15579 (LinkedLobbyFormSection)
+// Module 15591 (LinkedLobbyFormSection)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelSettingsSections } from "ME";
@@ -79,7 +79,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj3.label = intl.string(require(1212) /* getSystemLocale */.t.jp25Id);
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj3.subLabel = intl2.string(require(1212) /* getSystemLocale */.t.mKIOkI);
-      obj3.icon = callback(require(15475) /* WebhookIcon */.WebhookIcon, {});
+      obj3.icon = callback(require(15488) /* WebhookIcon */.WebhookIcon, {});
       obj3.arrow = true;
       obj3.onPress = function onPress() {
         return arr.push(outer1_4.WEBHOOKS);
@@ -90,7 +90,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj4.label = intl3.string(require(1212) /* getSystemLocale */.t.OrV60r);
       const intl4 = require(1212) /* getSystemLocale */.intl;
       obj4.subLabel = intl4.string(require(1212) /* getSystemLocale */.t.rQREJl);
-      obj4.icon = callback(require(15580) /* ChannelsFollowedIcon */.ChannelsFollowedIcon, {});
+      obj4.icon = callback(require(15592) /* ChannelsFollowedIcon */.ChannelsFollowedIcon, {});
       obj4.arrow = true;
       obj4.onPress = function onPress() {
         return arr.push(outer1_4.CHANNELS_FOLLOWED);

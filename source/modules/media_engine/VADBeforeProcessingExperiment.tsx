@@ -1,10 +1,10 @@
-// Module ID: 12824
-// Function ID: 99910
+// Module ID: 12825
+// Function ID: 99915
 // Name: getVADBeforeProcessingExperimentConfig
 // Dependencies: [1325, 2]
 // Exports: getVADBeforeProcessingExperimentConfig
 
-// Module 12824 (getVADBeforeProcessingExperimentConfig)
+// Module 12825 (getVADBeforeProcessingExperimentConfig)
 let obj = { kind: "user", name: "2025-10-vad-before-processing", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 let closure_0 = require("getUnitId")(obj);
 const result = require("set").fileFinishedImporting("modules/media_engine/VADBeforeProcessingExperiment.tsx");

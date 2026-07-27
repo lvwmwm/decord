@@ -1,5 +1,5 @@
 // Module ID: 3402
-// Function ID: 26605
+// Function ID: 26606
 // Name: differenceInHours
 // Dependencies: [3403, 3211, 3389, 3404]
 // Exports: default

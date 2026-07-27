@@ -1,5 +1,5 @@
 // Module ID: 6786
-// Function ID: 59414
+// Function ID: 59415
 // Name: AvatarClydeExample
 // Dependencies: [33, 5085, 6787, 2]
 // Exports: AvatarClydeExample

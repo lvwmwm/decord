@@ -1,5 +1,5 @@
 // Module ID: 8283
-// Function ID: 66515
+// Function ID: 66516
 // Name: DeleteEventAlert
 // Dependencies: [5, 31, 5751, 33, 4131, 566, 8146, 4099, 4476, 1212, 4127, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 6954
-// Function ID: 59666
+// Function ID: 59667
 // Name: EmojiSlotsAbstractUI
 // Dependencies: [33, 5085, 6955, 2]
 // Exports: EmojiSlotsAbstractUI

@@ -1,5 +1,5 @@
 // Module ID: 3940
-// Function ID: 32470
+// Function ID: 32471
 // Name: toRGBAString
 // Dependencies: [57, 666, 2]
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity

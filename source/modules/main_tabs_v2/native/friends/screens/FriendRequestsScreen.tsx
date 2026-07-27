@@ -1,10 +1,10 @@
-// Module ID: 15522
-// Function ID: 119471
+// Module ID: 15535
+// Function ID: 119520
 // Name: compareUserItems
-// Dependencies: [57, 31, 27, 5872, 3768, 1850, 8745, 653, 8992, 33, 4131, 689, 15523, 1935, 4473, 624, 5873, 3804, 15198, 5874, 21, 5462, 5482, 675, 11988, 5468, 15524, 636, 8297, 1212, 1456, 5501, 5164, 4127, 8162, 4663, 8687, 4661, 9852, 6727, 8752, 2]
+// Dependencies: [57, 31, 27, 5872, 3768, 1850, 8745, 653, 8992, 33, 4131, 689, 15536, 1935, 4473, 624, 5873, 3804, 15211, 5874, 21, 5462, 5482, 675, 11989, 5468, 15537, 636, 8297, 1212, 1456, 5501, 5164, 4127, 8162, 4663, 8687, 4661, 9852, 6727, 8752, 2]
 // Exports: default
 
-// Module 15522 (compareUserItems)
+// Module 15535 (compareUserItems)
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
 import { View } from "isUndefinedOrNull";
@@ -73,10 +73,10 @@ export default function FriendRequestsScreen() {
         const mapped = stateFromStoresArray.map((local_id) => local_id.local_id);
         const _Boolean = Boolean;
         const found = mapped.filter(Boolean);
-        const result = analyticsLocations(15198).markNotificationCenterLocalItemsAcked(found);
-        const obj = analyticsLocations(15198);
-        const result1 = analyticsLocations(15198).bulkMarkNotificationCenterItemsAcked(stateFromStoresArray.filter((addResult) => !analyticsLocations(table[19]).isRemoteAcked(addResult, outer1_1)));
-        const obj2 = analyticsLocations(15198);
+        const result = analyticsLocations(15211).markNotificationCenterLocalItemsAcked(found);
+        const obj = analyticsLocations(15211);
+        const result1 = analyticsLocations(15211).bulkMarkNotificationCenterItemsAcked(stateFromStoresArray.filter((addResult) => !analyticsLocations(table[19]).isRemoteAcked(addResult, outer1_1)));
+        const obj2 = analyticsLocations(15211);
       }
     }, items1);
   })();
@@ -93,9 +93,9 @@ export default function FriendRequestsScreen() {
   }), 2);
   first = tmp5[0];
   const dependencyMap = tmp7;
-  let obj1 = analyticsLocations(11988);
+  let obj1 = analyticsLocations(11989);
   gameRelationshipsByType = obj1.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj2 = analyticsLocations(11988);
+  let obj2 = analyticsLocations(11989);
   gameRelationshipsByType1 = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   let items1 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {

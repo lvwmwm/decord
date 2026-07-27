@@ -1,5 +1,5 @@
 // Module ID: 9215
-// Function ID: 72242
+// Function ID: 72243
 // Name: HeaderWithBorder
 // Dependencies: [31, 33, 3835, 689, 9050, 477, 9041, 5517, 9216, 9217, 1212, 9218, 9226, 9237, 3983, 2]
 // Exports: default, openConversationNavigator

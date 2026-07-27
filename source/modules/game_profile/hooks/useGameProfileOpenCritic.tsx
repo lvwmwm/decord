@@ -1,5 +1,5 @@
 // Module ID: 8456
-// Function ID: 67387
+// Function ID: 67388
 // Name: getOpenCriticTierText
 // Dependencies: [8457, 1212, 8458, 8459, 8460, 8461, 2]
 // Exports: getOpenCriticCircleRatingColor, getOpenCriticTierImage, getOpenCriticTierText

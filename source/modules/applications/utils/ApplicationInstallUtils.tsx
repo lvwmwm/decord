@@ -1,5 +1,5 @@
 // Module ID: 7968
-// Function ID: 63439
+// Function ID: 63440
 // Name: canInstallApplication
 // Dependencies: [5669, 4567, 5655, 2]
 // Exports: isAppUserInstallable, shouldInstallApplicationOnDemand

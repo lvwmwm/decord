@@ -1,10 +1,10 @@
-// Module ID: 14830
-// Function ID: 113120
+// Module ID: 14831
+// Function ID: 113125
 // Name: renderSteps
-// Dependencies: [31, 27, 653, 33, 4131, 14831, 5584, 4127, 1212, 4544, 1273, 3970, 1456, 4365, 675, 14832, 14836, 9147, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 14832, 5584, 4127, 1212, 4544, 1273, 3970, 1456, 4365, 675, 14833, 14837, 9147, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 14830 (renderSteps)
+// Module 14831 (renderSteps)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -19,9 +19,9 @@ let closure_9;
 const require = arg1;
 function renderSteps(state, avatar, callback1, context) {
   const step = state.step;
-  if (require(14831) /* RemoteAuthStep */.RemoteAuthStep.INITIALIZING !== step) {
-    if (require(14831) /* RemoteAuthStep */.RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (require(14831) /* RemoteAuthStep */.RemoteAuthStep.PENDING_TICKET === step) {
+  if (require(14832) /* RemoteAuthStep */.RemoteAuthStep.INITIALIZING !== step) {
+    if (require(14832) /* RemoteAuthStep */.RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (require(14832) /* RemoteAuthStep */.RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         let obj = {};
         obj = { style: avatar.avatar, user, size: require(1273) /* Button */.AvatarSizes.LARGE, guildId: context };
@@ -87,13 +87,13 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     obj.login_instance_id = tmp;
     obj.track(outer1_5.LOGIN_SUCCESSFUL, obj);
   }, []);
-  const state = navigation(14832).useAuthWebsocket(callback, true).state;
+  const state = navigation(14833).useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(14831).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(14832).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -109,7 +109,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     }
   }, items1);
   obj = {};
-  const obj2 = navigation(14832);
+  const obj2 = navigation(14833);
   const intl = navigation(1212).intl;
   obj.headerText = intl.string(navigation(1212).t["7fNJgA"]);
   obj = { style: tmp.statusContainer, children: renderSteps(state, tmp, callback1, context) };

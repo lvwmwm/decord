@@ -1,5 +1,5 @@
 // Module ID: 9605
-// Function ID: 74929
+// Function ID: 74930
 // Name: ForumTagContextMenu
 // Dependencies: [33, 3804, 1212, 6719, 5490, 3831, 9231, 2]
 // Exports: default

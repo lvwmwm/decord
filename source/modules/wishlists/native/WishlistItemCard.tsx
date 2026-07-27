@@ -1,5 +1,5 @@
 // Module ID: 9709
-// Function ID: 75678
+// Function ID: 75679
 // Name: WishlistItemCard
 // Dependencies: [31, 653, 33, 7829, 9710, 9712, 9713, 2]
 // Exports: default

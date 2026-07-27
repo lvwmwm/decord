@@ -1,10 +1,10 @@
-// Module ID: 14301
-// Function ID: 109845
+// Module ID: 14302
+// Function ID: 109850
 // Name: ChatPreview
 // Dependencies: [31, 27, 33, 4131, 689, 7882, 1874, 8014, 1212, 2557, 9761, 3801, 1273, 8318, 8319, 4127, 2]
 // Exports: default
 
-// Module 14301 (ChatPreview)
+// Module 14302 (ChatPreview)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

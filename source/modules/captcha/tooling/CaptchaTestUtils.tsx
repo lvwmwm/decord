@@ -1,9 +1,9 @@
-// Module ID: 14714
-// Function ID: 112111
+// Module ID: 14715
+// Function ID: 112116
 // Name: found
-// Dependencies: [14715, 2]
+// Dependencies: [14716, 2]
 
-// Module 14714 (found)
+// Module 14715 (found)
 const entries = Object.entries(require("_testCaptcha").HCaptchaDifficulty);
 const mapped = entries.map((arg0) => {
   let str;

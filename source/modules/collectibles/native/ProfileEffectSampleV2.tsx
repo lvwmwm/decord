@@ -1,5 +1,5 @@
 // Module ID: 7995
-// Function ID: 63730
+// Function ID: 63731
 // Name: ProfileEffectSample
 // Dependencies: [27, 7977, 33, 4131, 689, 5085, 7996, 7997, 2]
 // Exports: default

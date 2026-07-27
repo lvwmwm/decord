@@ -1,5 +1,5 @@
 // Module ID: 6085
-// Function ID: 54331
+// Function ID: 54332
 // Name: BurstReactionAnimation
 // Dependencies: [31, 4123, 33, 4131, 6043, 566, 6086, 5453, 2]
 // Exports: default

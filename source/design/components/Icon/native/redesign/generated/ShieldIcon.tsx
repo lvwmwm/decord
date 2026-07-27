@@ -1,5 +1,5 @@
 // Module ID: 8960
-// Function ID: 70690
+// Function ID: 70691
 // Name: ShieldIcon
 // Dependencies: [31, 33, 689, 3834, 8961, 2]
 // Exports: ShieldIcon

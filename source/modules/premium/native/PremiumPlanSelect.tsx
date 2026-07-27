@@ -1,10 +1,10 @@
-// Module ID: 12506
-// Function ID: 96825
+// Module ID: 12507
+// Function ID: 96830
 // Name: BoostPurchaseNitroBanner
-// Dependencies: [5, 57, 31, 27, 6164, 1838, 3782, 3783, 5619, 12507, 1852, 653, 6173, 4114, 33, 4131, 5053, 4974, 689, 4542, 6727, 4127, 1212, 3777, 12508, 12509, 12510, 12511, 12512, 12513, 6570, 3835, 566, 12514, 6194, 4067, 1273, 6478, 6479, 5164, 12515, 5584, 5217, 3977, 478, 6195, 6238, 4472, 12516, 1935, 5501, 4555, 12518, 5622, 3792, 4338, 6269, 6245, 5462, 6244, 5450, 4560, 6239, 6196, 1456, 6234, 6490, 5482, 6198, 4452, 6301, 6454, 6495, 675, 6445, 6608, 2]
+// Dependencies: [5, 57, 31, 27, 6164, 1838, 3782, 3783, 5619, 12508, 1852, 653, 6173, 4114, 33, 4131, 5053, 4974, 689, 4542, 6727, 4127, 1212, 3777, 12509, 12510, 12511, 12512, 12513, 12514, 6570, 3835, 566, 12515, 6194, 4067, 1273, 6478, 6479, 5164, 12516, 5584, 5217, 3977, 478, 6195, 6238, 4472, 12517, 1935, 5501, 4555, 12519, 5622, 3792, 4338, 6269, 6245, 5462, 6244, 5450, 4560, 6239, 6196, 1456, 6234, 6490, 5482, 6198, 4452, 6301, 6454, 6495, 675, 6445, 6608, 2]
 // Exports: default
 
-// Module 12506 (BoostPurchaseNitroBanner)
+// Module 12507 (BoostPurchaseNitroBanner)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import getHeaderBackground from "getHeaderBackground";
 import importAllResult from "map";
@@ -717,7 +717,7 @@ obj.nitroBannerText = { textAlign: "center" };
 let obj8 = { alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj.recommendedText = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GUILD_BOOSTING_PINK };
 let closure_35 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_36 = { [importDefault(12511)]: "imgWumpusNitro", [importDefault(12513)]: "imgWumpusNitroBoost", [importDefault(12510)]: "imgWumpusNitroClassic", [importDefault(12512)]: "imgWumpusNitroClassicBoost", [importDefault(12509)]: "imgWumpusNitroTier0", [importDefault(12508)]: "imgBoost" };
+let closure_36 = { [importDefault(12512)]: "imgWumpusNitro", [importDefault(12514)]: "imgWumpusNitroBoost", [importDefault(12511)]: "imgWumpusNitroClassic", [importDefault(12513)]: "imgWumpusNitroClassicBoost", [importDefault(12510)]: "imgWumpusNitroTier0", [importDefault(12509)]: "imgBoost" };
 items = [
   {
     id: "premium",

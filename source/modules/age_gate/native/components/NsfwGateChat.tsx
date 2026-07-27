@@ -1,10 +1,10 @@
-// Module ID: 11692
-// Function ID: 90710
+// Module ID: 11693
+// Function ID: 90715
 // Name: NsfwGateChat
-// Dependencies: [31, 27, 33, 4131, 689, 11693, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 11694, 4127, 1212, 2]
 // Exports: default
 
-// Module 11692 (NsfwGateChat)
+// Module 11693 (NsfwGateChat)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function NsfwGateChat() {
   obj = { style: tmp.border };
   const items = [callback(closure_3, obj), ];
   obj = { style: tmp.container };
-  const items1 = [callback(closure_4, { source: importDefault(11693) }), ];
+  const items1 = [callback(closure_4, { source: importDefault(11694) }), ];
   const obj2 = { style: tmp.description, variant: "text-md/medium", color: "text-muted" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl.string(require(1212) /* getSystemLocale */.t.W4Qyxr);

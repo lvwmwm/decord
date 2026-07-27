@@ -1,10 +1,10 @@
-// Module ID: 16273
-// Function ID: 126417
+// Module ID: 16285
+// Function ID: 126464
 // Name: HasCreatedListingsSection
-// Dependencies: [31, 1391, 1850, 653, 33, 566, 5501, 1212, 5164, 16274, 16275, 16276, 16277, 12556, 2]
+// Dependencies: [31, 1391, 1850, 653, 33, 566, 5501, 1212, 5164, 16286, 16287, 16288, 16289, 12557, 2]
 // Exports: default
 
-// Module 16273 (HasCreatedListingsSection)
+// Module 16285 (HasCreatedListingsSection)
 import "result";
 import { isGuildOwner } from "isGuildOwner";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,7 +31,7 @@ function HasCreatedListingsSection(arg0) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl2.string(require(1212) /* getSystemLocale */.t["/CfKoD"]);
   obj.arrow = true;
-  const obj1 = { source: importDefault(16274) };
+  const obj1 = { source: importDefault(16286) };
   obj.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj1);
   obj.onPress = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_BASIC);
@@ -41,7 +41,7 @@ function HasCreatedListingsSection(arg0) {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.pXbGYc);
   obj2.arrow = true;
-  const obj3 = { source: importDefault(16275) };
+  const obj3 = { source: importDefault(16287) };
   obj2.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj3);
   obj2.onPress = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_TIERS);
@@ -52,7 +52,7 @@ function HasCreatedListingsSection(arg0) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj4.label = intl4.string(require(1212) /* getSystemLocale */.t.p2Rsdl);
     obj4.arrow = true;
-    const obj5 = { source: importDefault(16276) };
+    const obj5 = { source: importDefault(16288) };
     obj4.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj5);
     obj4.onPress = function onPress() {
       return callback(outer1_6.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
@@ -64,7 +64,7 @@ function HasCreatedListingsSection(arg0) {
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj6.label = intl5.string(require(1212) /* getSystemLocale */.t.C5Dbwn);
   obj6.arrow = true;
-  const obj7 = { source: importDefault(16277) };
+  const obj7 = { source: importDefault(16289) };
   obj6.icon = callback(require(5164) /* TableRowInner */.TableRow.Icon, obj7);
   obj6.onPress = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_EMOJIS);
@@ -79,7 +79,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export default function GuildSettingsRoleSubscriptionsSection(guild) {
   guild = guild.guild;
-  let obj = require(12556) /* canSeeGuildRoleSubscriptionSettingsContent */;
+  let obj = require(12557) /* canSeeGuildRoleSubscriptionSettingsContent */;
   let tmp = null;
   if (obj.useCanSeeGuildRoleSubscriptionSettings(guild)) {
     const features = guild.features;

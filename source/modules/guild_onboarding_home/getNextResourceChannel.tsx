@@ -1,10 +1,10 @@
-// Module ID: 11374
-// Function ID: 88365
+// Module ID: 11375
+// Function ID: 88370
 // Name: getCurrentAndNextResourceChannel
 // Dependencies: [4334, 566, 2]
 // Exports: default, usePreviousAndNextResourceChannel
 
-// Module 11374 (getCurrentAndNextResourceChannel)
+// Module 11375 (getCurrentAndNextResourceChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 12544
-// Function ID: 97064
+// Module ID: 12545
+// Function ID: 97069
 // Name: ForumExplicitMediaAlert
-// Dependencies: [31, 27, 33, 4131, 689, 4562, 4127, 1212, 4544, 11041, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4562, 4127, 1212, 4544, 11042, 2]
 // Exports: default
 
-// Module 12544 (ForumExplicitMediaAlert)
+// Module 12545 (ForumExplicitMediaAlert)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

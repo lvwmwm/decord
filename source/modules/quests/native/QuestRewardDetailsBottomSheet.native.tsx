@@ -1,10 +1,10 @@
-// Module ID: 10899
-// Function ID: 84634
+// Module ID: 10900
+// Function ID: 84639
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [31, 27, 1850, 33, 4131, 689, 10897, 4099, 10427, 9420, 5937, 1212, 566, 5187, 4542, 10900, 4127, 2]
+// Dependencies: [31, 27, 1850, 33, 4131, 689, 10898, 4099, 10428, 9420, 5937, 1212, 566, 5187, 4542, 10901, 4127, 2]
 // Exports: default
 
-// Module 10899 (QuestRewardDetailsBottomSheet)
+// Module 10900 (QuestRewardDetailsBottomSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -44,7 +44,7 @@ function QuestRewardDetailsBottomSheet(quest) {
   obj = { direction: "vertical", spacing: memo(689).space.PX_16, style: tmp.wrapper };
   obj1 = { align: "center", direction: "horizontal", spacing: memo(689).space.PX_16 };
   const obj2 = { quest, height: 56, width: 56, withAnimation: true };
-  const items3 = [callback(memo(10900), obj2), ];
+  const items3 = [callback(memo(10901), obj2), ];
   const obj3 = { direction: "vertical", spacing: memo(689).space.PX_4, style: tmp.rewardDetailsCopy };
   const obj4 = { variant: "eyebrow", color: "text-subtle" };
   let intl = quest(1212).intl;
@@ -87,7 +87,7 @@ export default function QuestRewardDetailsBottomSheetConnected(questId) {
     const obj = outer1_0(outer1_2[6]);
     outer1_1(outer1_2[7]).hideActionSheet();
   }, []);
-  let obj = require(10427) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10428) /* _createForOfIteratorHelperLoose */;
   const nonNullableQuest = obj.useNonNullableQuest(questId.questId, callback);
   let tmp3 = null;
   if (null != nonNullableQuest) {

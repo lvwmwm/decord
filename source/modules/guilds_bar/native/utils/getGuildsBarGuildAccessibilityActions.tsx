@@ -1,10 +1,10 @@
-// Module ID: 14925
-// Function ID: 113824
+// Module ID: 14926
+// Function ID: 113829
 // Name: folderLabel
-// Dependencies: [1838, 4971, 1212, 6152, 3977, 14926, 5049, 2]
+// Dependencies: [1838, 4971, 1212, 6152, 3977, 14927, 5049, 2]
 // Exports: default
 
-// Module 14925 (folderLabel)
+// Module 14926 (folderLabel)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -27,7 +27,7 @@ function persistAndAnnounce(intl) {
   }
 }
 function performMove(id, arg1, arg2, closure_5, intl) {
-  const tmp = importDefault(14926)(id);
+  const tmp = importDefault(14927)(id);
   if (null != tmp) {
     const tmp3 = arg1(tmp);
     if (null != tmp3) {
@@ -97,7 +97,7 @@ export default function getGuildsBarGuildAccessibilityActions(guildId) {
   if (null != name) {
     str = name;
   }
-  const tmp3 = importDefault(14926)(guildId);
+  const tmp3 = importDefault(14927)(guildId);
   if (null == tmp3) {
     return items;
   } else {

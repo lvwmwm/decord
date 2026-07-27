@@ -1,10 +1,10 @@
-// Module ID: 14009
-// Function ID: 107192
+// Module ID: 14010
+// Function ID: 107197
 // Name: BountiesRecapOrbsBackground
-// Dependencies: [31, 27, 4123, 33, 689, 4131, 477, 6153, 14010, 8080, 14011, 1557, 566, 14012, 4127, 1212, 8637, 4544, 2]
+// Dependencies: [31, 27, 4123, 33, 689, 4131, 477, 6153, 14011, 8080, 14012, 1557, 566, 14013, 4127, 1212, 8637, 4544, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 14009 (BountiesRecapOrbsBackground)
+// Module 14010 (BountiesRecapOrbsBackground)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,12 +23,12 @@ function BountiesRecapOrbsBackground(arg0) {
   let obj = require(477) /* set */;
   if (obj.isAndroid()) {
     obj = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none" };
-    obj = { url: importDefault(14010), style: closure_3.absoluteFillObject, autoplay: !reducedMotion };
+    obj = { url: importDefault(14011), style: closure_3.absoluteFillObject, autoplay: !reducedMotion };
     obj.children = callback(require(6153) /* useAPNGPlayerControls */.APNGPlayer, obj);
     let tmpResult = tmp(closure_4, obj);
   } else {
     const obj1 = { source: null, style: null, resizeMode: "contain", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-    const obj2 = { uri: importDefault(14011) };
+    const obj2 = { uri: importDefault(14012) };
     obj1.source = obj2;
     obj1.style = style;
     obj1.paused = reducedMotion;
@@ -78,7 +78,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   items1 = [tmp.root, style];
   obj = { style: closure_3.absoluteFillObject, pointerEvents: "none" };
   const obj1 = { source: null, style: null, resizeMode: "cover", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-  const obj2 = { uri: importDefault(14012) };
+  const obj2 = { uri: importDefault(14013) };
   obj1.source = obj2;
   obj1.style = closure_3.absoluteFillObject;
   obj1.paused = stateFromStores;

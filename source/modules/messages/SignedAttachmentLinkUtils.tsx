@@ -1,5 +1,5 @@
 // Module ID: 9538
-// Function ID: 74444
+// Function ID: 74445
 // Name: isAttachmentUrl
 // Dependencies: [5, 653, 664, 4162, 1443, 507, 2]
 // Exports: isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters

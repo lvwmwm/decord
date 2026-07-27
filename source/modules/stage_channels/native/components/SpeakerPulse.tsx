@@ -1,10 +1,10 @@
-// Module ID: 13090
-// Function ID: 101108
+// Module ID: 13091
+// Function ID: 101113
 // Name: SpeakerPulse
 // Dependencies: [31, 27, 4123, 33, 4131, 689, 566, 3992, 4132, 2]
 // Exports: default
 
-// Module 13090 (SpeakerPulse)
+// Module 13091 (SpeakerPulse)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

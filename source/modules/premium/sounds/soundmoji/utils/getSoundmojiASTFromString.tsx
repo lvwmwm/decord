@@ -1,5 +1,5 @@
 // Module ID: 4578
-// Function ID: 40135
+// Function ID: 40136
 // Name: getSoundmojiFromMessage
 // Dependencies: [4579, 4350, 653, 4583, 4584, 4585, 4587, 1392, 2]
 // Exports: default

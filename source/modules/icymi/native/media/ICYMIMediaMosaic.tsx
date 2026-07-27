@@ -1,10 +1,10 @@
-// Module ID: 15281
-// Function ID: 116532
+// Module ID: 15294
+// Function ID: 116581
 // Name: isMediaSourceGif
-// Dependencies: [57, 31, 27, 4123, 1348, 3768, 1850, 8108, 653, 33, 4131, 689, 4318, 668, 566, 8080, 3992, 4132, 15282, 5085, 4127, 1212, 8065, 4675, 4661, 8123, 10710, 4659, 15237, 8055, 6104, 1327, 22, 5070, 8053, 4321, 2]
+// Dependencies: [57, 31, 27, 4123, 1348, 3768, 1850, 8108, 653, 33, 4131, 689, 4318, 668, 566, 8080, 3992, 4132, 15295, 5085, 4127, 1212, 8065, 4675, 4661, 8123, 10711, 4659, 15250, 8055, 6104, 1327, 22, 5070, 8053, 4321, 2]
 // Exports: default
 
-// Module 15281 (isMediaSourceGif)
+// Module 15294 (isMediaSourceGif)
 import _slicedToArray from "_slicedToArray";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import get_ActivityIndicator from "VoiceNormalIcon";
@@ -101,7 +101,7 @@ function MediaMosaicImage(source) {
   obj = {};
   const memo = React.useMemo(() => {
     if (null != source.placeholder) {
-      const obj = { uri: source(15282).createThumbhashImageFromPlaceholder(source.placeholder) };
+      const obj = { uri: source(15295).createThumbhashImageFromPlaceholder(source.placeholder) };
       ({ width: obj.width, height: obj.height } = source);
       return obj;
     }
@@ -393,7 +393,7 @@ class GravityAttachmentMediaMosaic {
     items = [, ];
     items[0] = length;
     items[1] = sources;
-    tmp = f116558();
+    tmp = f116607();
     memo = isDiscordFrontendDevelopment.useMemo(() => {
       let sum;
       const items = [];
@@ -483,7 +483,7 @@ class GravityAttachmentMediaMosaic {
 }
 function useMaxWidth(widthOverride) {
   let diff = widthOverride;
-  const context = React.useContext(require(15237) /* useICYMIContextConstructor */.ICYMIContext);
+  const context = React.useContext(require(15250) /* useICYMIContextConstructor */.ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (null != context) {

@@ -1,5 +1,5 @@
 // Module ID: 9071
-// Function ID: 71383
+// Function ID: 71384
 // Name: getIsWindowSmall
 // Dependencies: [3986, 2]
 // Exports: default, useIsWindowSmall

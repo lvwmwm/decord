@@ -1,5 +1,5 @@
 // Module ID: 9928
-// Function ID: 76797
+// Function ID: 76798
 // Name: maybeStartLurking
 // Dependencies: [5, 1352, 1391, 1348, 1918, 1911, 1838, 3759, 653, 1355, 5060, 5056, 6632, 8143, 9929, 4338, 9930, 1935, 5626, 4099, 9944, 9952, 1327, 4322, 4342, 4945, 2]
 // Exports: handleMessagesTapChannel

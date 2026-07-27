@@ -1,5 +1,5 @@
 // Module ID: 7565
-// Function ID: 60625
+// Function ID: 60626
 // Name: AgeVerificationEmbeddedIntroScreen
 // Dependencies: [31, 653, 33, 4131, 689, 6698, 7558, 7566, 6725, 6726, 4542, 6727, 4127, 4348, 7569, 1212, 2717, 6690, 1921, 2]
 // Exports: default

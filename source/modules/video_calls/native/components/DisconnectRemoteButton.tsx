@@ -1,10 +1,10 @@
-// Module ID: 10743
-// Function ID: 83431
+// Module ID: 10744
+// Function ID: 83436
 // Name: DisconnectRemoteButton
-// Dependencies: [31, 4145, 33, 566, 10465, 7640, 10698, 1212, 8971, 8763, 2]
+// Dependencies: [31, 4145, 33, 566, 10466, 7640, 10699, 1212, 8971, 8763, 2]
 // Exports: DisconnectRemoteButton
 
-// Module 10743 (DisconnectRemoteButton)
+// Module 10744 (DisconnectRemoteButton)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -22,7 +22,7 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
   if (stateFromStoresObject.awaitingRemote) {
     let tmp5 = 7640;
   } else {
-    tmp5 = 10698;
+    tmp5 = 10699;
   }
   obj.source = remoteSessionId(tmp5);
   const intl = channel(1212).intl;
@@ -39,5 +39,5 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
       const obj = channel(outer1_3[8]);
     }
   };
-  return jsx(importAll(10465).PrimaryActionButton, {});
+  return jsx(importAll(10466).PrimaryActionButton, {});
 };

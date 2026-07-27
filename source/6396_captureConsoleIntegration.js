@@ -1,5 +1,5 @@
 // Module ID: 6396
-// Function ID: 57525
+// Function ID: 57526
 // Name: captureConsoleIntegration
 // Dependencies: [6311, 6312, 6397, 6338, 6367, 6398, 6322, 6320, 6359]
 

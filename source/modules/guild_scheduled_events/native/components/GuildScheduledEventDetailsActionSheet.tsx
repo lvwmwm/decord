@@ -1,7 +1,7 @@
 // Module ID: 8157
-// Function ID: 65404
+// Function ID: 65405
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [57, 31, 27, 1838, 5751, 1354, 33, 4131, 689, 1212, 5462, 5482, 566, 8158, 8160, 8161, 8159, 1557, 8162, 8163, 8687, 5187, 5189, 12207, 12208, 2]
+// Dependencies: [57, 31, 27, 1838, 5751, 1354, 33, 4131, 689, 1212, 5462, 5482, 566, 8158, 8160, 8161, 8159, 1557, 8162, 8163, 8687, 5187, 5189, 12208, 12209, 2]
 // Exports: default
 
 // Module 8157 (GuildScheduledEventDetailsActionSheet)

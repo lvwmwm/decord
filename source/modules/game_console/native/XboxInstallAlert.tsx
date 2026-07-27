@@ -1,5 +1,5 @@
 // Module ID: 8984
-// Function ID: 70796
+// Function ID: 70797
 // Name: XboxInstallAlert
 // Dependencies: [31, 8877, 33, 4131, 689, 4562, 1212, 1273, 8967, 477, 3828, 2]
 // Exports: default

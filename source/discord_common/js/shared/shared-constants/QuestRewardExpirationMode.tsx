@@ -1,5 +1,5 @@
 // Module ID: 9421
-// Function ID: 73543
+// Function ID: 73544
 // Name: QuestRewardExpirationMode
 // Dependencies: [2]
 

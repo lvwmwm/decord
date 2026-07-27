@@ -1,5 +1,5 @@
 // Module ID: 9043
-// Function ID: 71094
+// Function ID: 71095
 // Name: NativeStackViewInner
 // Dependencies: [57, 31, 27, 33, 1457, 4488, 9044, 4479, 1560, 5526, 9045, 9048, 9049]
 // Exports: default

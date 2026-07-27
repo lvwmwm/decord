@@ -1,5 +1,5 @@
 // Module ID: 9204
-// Function ID: 72154
+// Function ID: 72155
 // Name: channelProps
 // Dependencies: [1348, 653, 675, 2]
 

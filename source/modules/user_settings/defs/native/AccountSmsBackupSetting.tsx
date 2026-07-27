@@ -1,9 +1,9 @@
-// Module ID: 13763
-// Function ID: 105597
+// Module ID: 13764
+// Function ID: 105602
 // Name: useAccountSMSBackupSettingDescription
-// Dependencies: [1850, 7697, 653, 9165, 566, 13759, 1212, 13709, 13761, 4472, 4338, 9164, 1935, 9167, 22, 10059, 13710, 2]
+// Dependencies: [1850, 7697, 653, 9165, 566, 13760, 1212, 13710, 13762, 4472, 4338, 9164, 1935, 9167, 22, 10059, 13711, 2]
 
-// Module 13763 (useAccountSMSBackupSettingDescription)
+// Module 13764 (useAccountSMSBackupSettingDescription)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserFlags } from "ME";
 import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY";
@@ -16,8 +16,8 @@ function useAccountSMSBackupSettingDescription() {
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getCurrentUser());
   let sMSBackupDisabledMessage = null;
   if (null != stateFromStores) {
-    sMSBackupDisabledMessage = require(13759) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
-    const obj2 = require(13759) /* getSMSBackupDisabledMessage */;
+    sMSBackupDisabledMessage = require(13760) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
+    const obj2 = require(13760) /* getSMSBackupDisabledMessage */;
   }
   return sMSBackupDisabledMessage;
 }
@@ -30,11 +30,11 @@ let closure_6 = apply.debounce(function toggleSMS(user) {
     const str2 = intl2.string(require(1212) /* getSystemLocale */.t["CIGa+7"]);
     let obj = {};
     const formatted1 = intl3.string(require(1212) /* getSystemLocale */.t.wlfmlR).toUpperCase();
-    obj.onSubmit = importDefault(13709).disableSMS;
+    obj.onSubmit = importDefault(13710).disableSMS;
     obj.title = formatted1;
     obj.placeholder = formatted;
     obj.closeOnSuccess = true;
-    importDefault(13761)(obj);
+    importDefault(13762)(obj);
     const str3 = intl3.string(require(1212) /* getSystemLocale */.t.wlfmlR);
   } else {
     if (null != user) {

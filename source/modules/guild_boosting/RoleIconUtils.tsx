@@ -1,5 +1,5 @@
 // Module ID: 5487
-// Function ID: 46853
+// Function ID: 46854
 // Name: getRoleIconSource
 // Dependencies: [653, 477, 3772, 1426, 1392, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize

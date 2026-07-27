@@ -1,5 +1,5 @@
 // Module ID: 9781
-// Function ID: 76012
+// Function ID: 76013
 // Name: useSetMediaPostThumbnail
 // Dependencies: [31, 4469, 4468, 624, 4666, 6134, 4099, 2]
 // Exports: default

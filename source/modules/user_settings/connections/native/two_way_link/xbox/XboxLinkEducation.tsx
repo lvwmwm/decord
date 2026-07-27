@@ -1,5 +1,5 @@
 // Module ID: 8968
-// Function ID: 70704
+// Function ID: 70705
 // Name: XboxLinkEducation
 // Dependencies: [31, 27, 653, 33, 4131, 8870, 1921, 8909, 4127, 1212, 5121, 4544, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 10146
-// Function ID: 78488
+// Function ID: 78489
 // Name: RolePill
 // Dependencies: [31, 27, 653, 33, 4131, 689, 3804, 5486, 5490, 3831, 4661, 5506, 4127, 2]
 // Exports: default

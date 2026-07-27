@@ -1,10 +1,10 @@
-// Module ID: 12917
-// Function ID: 100315
+// Module ID: 12918
+// Function ID: 100320
 // Name: MarkupGameMention
-// Dependencies: [31, 33, 4131, 689, 1212, 4122, 11424, 5085, 8412, 8418, 4127, 2]
+// Dependencies: [31, 33, 4131, 689, 1212, 4122, 11425, 5085, 8412, 8418, 4127, 2]
 // Exports: default
 
-// Module 12917 (MarkupGameMention)
+// Module 12918 (MarkupGameMention)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -48,7 +48,7 @@ export default function MarkupGameMention(arg0) {
     if (tmp13) {
       tmp13 = "" !== icon;
     }
-    let tmp14 = callback(state(11424).UnknownGameIcon, obj);
+    let tmp14 = callback(state(11425).UnknownGameIcon, obj);
     if (tmp13) {
       obj = { style: tmp.icon };
       const obj1 = { uri: icon };

@@ -1,10 +1,10 @@
-// Module ID: 14930
-// Function ID: 113864
+// Module ID: 14931
+// Function ID: 113869
 // Name: useBaseChannelUnreadBadgeState
 // Dependencies: [5757, 4143, 4326, 566, 5761, 2]
 // Exports: useChannelUnreadBadgeState
 
-// Module 14930 (useBaseChannelUnreadBadgeState)
+// Module 14931 (useBaseChannelUnreadBadgeState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

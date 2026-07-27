@@ -1,5 +1,5 @@
 // Module ID: 5490
-// Function ID: 46862
+// Function ID: 46863
 // Name: _copy
 // Dependencies: [5, 5491, 2]
 // Exports: copy, getString

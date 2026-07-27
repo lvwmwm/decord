@@ -1,5 +1,5 @@
 // Module ID: 8127
-// Function ID: 64848
+// Function ID: 64849
 // Name: useLabFeature
 // Dependencies: [8125, 566, 2]
 // Exports: default

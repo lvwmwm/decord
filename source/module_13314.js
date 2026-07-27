@@ -1,49 +1,31 @@
 // Module ID: 13314
-// Function ID: 102148
-// Dependencies: [13294, 13315]
+// Function ID: 102151
+// Dependencies: [13299, 13295, 13315]
 
 // Module 13314
-let tmp = require("check").process && require("check").process.versions;
-if (!tmp) {
-  tmp = require("check").Deno && require("check").Deno.version;
-  const tmp2 = require("check").Deno && require("check").Deno.version;
-}
-let str = tmp;
-if (tmp) {
-  str = tmp.v8;
-}
-let tmp4;
-if (str) {
-  const parts = str.split(".");
-  if (parts[0] <= 0) {
-    let num2 = +parts[0] + parts[1];
-  } else {
-    num2 = 1;
-  }
-  tmp4 = num2;
-  let tmp3 = parts;
-}
-let _module = !tmp4;
-if (!tmp4) {
-  _module = require("check");
-}
-if (_module) {
-  const match = require("check").match(/Edge\/(\d+)/);
-  let tmp8 = !match;
-  if (!tmp8) {
-    tmp8 = match[1] >= 74;
-  }
-  _module = tmp8;
-  tmp3 = match;
-  const str3 = require("check");
-}
-if (_module) {
-  _module = require("check").match(/Chrome\/(\d+)/);
-  tmp3 = _module;
-  const str4 = require("check");
-}
-if (_module) {
-  tmp4 = +tmp3[1];
+let tmp2 = !tmp;
+if (!!Object.getOwnPropertySymbols) {
+  tmp2 = !require("module_13299")(() => {
+    const SymbolResult = Symbol("symbol detection");
+    let tmp2 = !require(13295) /* check */.String(SymbolResult);
+    if (!tmp2) {
+      const _Object = Object;
+      const _Symbol = Symbol;
+      tmp2 = !(Object(SymbolResult) instanceof Symbol);
+    }
+    if (!tmp2) {
+      const _Symbol2 = Symbol;
+      let tmp3 = !Symbol.sham;
+      if (tmp3) {
+        tmp3 = require(13315);
+      }
+      if (tmp3) {
+        tmp3 = require(13315) < 41;
+      }
+      tmp2 = tmp3;
+    }
+    return tmp2;
+  });
 }
 
-export default tmp4;
+export default tmp2;

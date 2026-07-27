@@ -1,10 +1,10 @@
-// Module ID: 16117
-// Function ID: 124929
+// Module ID: 16129
+// Function ID: 124976
 // Name: getSpatialAudioPointFromGuildRoomPosition
-// Dependencies: [1194, 16107, 16112, 16113, 566, 16108, 2]
+// Dependencies: [1194, 16119, 16124, 16125, 566, 16120, 2]
 // Exports: livingRoomWorldPointToMediaEnginePoint, useGuildRoomSpatialAudio
 
-// Module 16117 (getSpatialAudioPointFromGuildRoomPosition)
+// Module 16129 (getSpatialAudioPointFromGuildRoomPosition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getName from "getName";
@@ -67,7 +67,7 @@ export const useGuildRoomSpatialAudio = function useGuildRoomSpatialAudio(channe
   let obj = channelId(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getId());
-  let interactionsEnabled = stateFromStores(16108).useExperiment({ guildId, location: "SpatialAudioPanel" }).interactionsEnabled;
+  let interactionsEnabled = stateFromStores(16120).useExperiment({ guildId, location: "SpatialAudioPanel" }).interactionsEnabled;
   if (interactionsEnabled) {
     interactionsEnabled = null != guildId;
   }
@@ -77,7 +77,7 @@ export const useGuildRoomSpatialAudio = function useGuildRoomSpatialAudio(channe
   }
   dependencyMap = tmp3;
   obj = { available: interactionsEnabled };
-  const obj2 = stateFromStores(16108);
+  const obj2 = stateFromStores(16120);
   const items1 = [closure_4];
   const items2 = [tmp3, channelId, stateFromStores];
   obj.worldPoints = channelId(566).useStateFromStores(items1, () => {

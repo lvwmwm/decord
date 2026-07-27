@@ -1,5 +1,5 @@
 // Module ID: 5032
-// Function ID: 43338
+// Function ID: 43339
 // Name: compareVersions
 // Dependencies: [31, 1838, 653, 477, 5033, 624, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP

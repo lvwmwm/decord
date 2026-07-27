@@ -1,10 +1,10 @@
-// Module ID: 12334
-// Function ID: 95999
+// Module ID: 12335
+// Function ID: 96004
 // Name: GuildDiscoveryPreviewElement
 // Dependencies: [31, 27, 4123, 33, 4131, 689, 566, 3975, 4127, 1212, 5513, 1387, 2]
 // Exports: default
 
-// Module 12334 (GuildDiscoveryPreviewElement)
+// Module 12335 (GuildDiscoveryPreviewElement)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

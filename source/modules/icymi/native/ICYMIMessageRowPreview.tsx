@@ -1,9 +1,9 @@
-// Module ID: 15280
-// Function ID: 116515
+// Module ID: 15293
+// Function ID: 116564
 // Name: isMediaEmbed
 // Dependencies: [31, 653, 33, 8130, 3809, 7656, 5856, 4067, 4131, 689, 3804, 7654, 9222, 7846, 1212, 2]
 
-// Module 15280 (isMediaEmbed)
+// Module 15293 (isMediaEmbed)
 import importAllResult from "result";
 import { MessageEmbedTypes } from "ME";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 13750
-// Function ID: 105523
+// Module ID: 13751
+// Function ID: 105528
 // Name: TwoFASetupLanding
-// Dependencies: [31, 27, 33, 4131, 13751, 13747, 5121, 13752, 4127, 1212, 2]
+// Dependencies: [31, 27, 33, 4131, 13752, 13748, 5121, 13753, 4127, 1212, 2]
 // Exports: default
 
-// Module 13750 (TwoFASetupLanding)
+// Module 13751 (TwoFASetupLanding)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,12 +22,12 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/a
 
 export default function TwoFASetupLanding() {
   const tmp = callback3();
-  let obj = require(13751) /* styles */;
+  let obj = require(13752) /* styles */;
   const twoFASetupStyles = obj.useTwoFASetupStyles();
   obj = {};
   obj = { style: tmp.container };
   const obj1 = { bottom: true, style: tmp.container };
-  const obj2 = { source: importDefault(13752), style: tmp.authIcon };
+  const obj2 = { source: importDefault(13753), style: tmp.authIcon };
   const items = [callback(closure_3, obj2), , ];
   const obj3 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -42,5 +42,5 @@ export default function TwoFASetupLanding() {
   obj1.children = items;
   obj.children = callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
   obj.children = callback(closure_4, obj);
-  return callback(require(13747) /* getPageMarker */.TwoFASetupModalScreen, obj);
+  return callback(require(13748) /* getPageMarker */.TwoFASetupModalScreen, obj);
 };

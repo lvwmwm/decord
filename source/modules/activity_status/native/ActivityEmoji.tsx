@@ -1,5 +1,5 @@
 // Module ID: 9017
-// Function ID: 70920
+// Function ID: 70921
 // Name: ActivityEmoji
 // Dependencies: [31, 33, 4131, 3804, 1392, 6519, 5150, 2]
 // Exports: default

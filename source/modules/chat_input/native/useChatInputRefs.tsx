@@ -1,10 +1,10 @@
-// Module ID: 11100
-// Function ID: 86264
+// Module ID: 11101
+// Function ID: 86269
 // Name: useChatInputRefs
-// Dependencies: [31, 5036, 4469, 5913, 5918, 1850, 9242, 653, 4568, 4124, 5450, 3990, 22, 11101, 11105, 11106, 11109, 6130, 6036, 3997, 1555, 1454, 477, 3998, 1820, 675, 9499, 5685, 9501, 11110, 5914, 11111, 4467, 11144, 6687, 2]
+// Dependencies: [31, 5036, 4469, 5913, 5918, 1850, 9242, 653, 4568, 4124, 5450, 3990, 22, 11102, 11106, 11107, 11110, 6130, 6036, 3997, 1555, 1454, 477, 3998, 1820, 675, 9499, 5685, 9501, 11111, 5914, 11112, 4467, 11145, 6687, 2]
 // Exports: default
 
-// Module 11100 (useChatInputRefs)
+// Module 11101 (useChatInputRefs)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DraftType } from "_isNativeReflectConstruct";
@@ -252,7 +252,7 @@ export default function useChatInputRefs(chatInputProps) {
           const editingMessage = store.getEditingMessage(channel.id);
           if (null != editingMessage) {
             const obj = { channel, isEdit: true };
-            const handleLegacyCommandsResult = chatInputProps(11110).handleLegacyCommands(text, obj);
+            const handleLegacyCommandsResult = chatInputProps(11111).handleLegacyCommands(text, obj);
             let content;
             if (null != handleLegacyCommandsResult) {
               content = handleLegacyCommandsResult.content;
@@ -277,7 +277,7 @@ export default function useChatInputRefs(chatInputProps) {
                 const obj3 = chatInputTextFieldHeight(5685);
               }
             }
-            const obj5 = chatInputProps(11110);
+            const obj5 = chatInputProps(11111);
             chatInputTextFieldHeight(5685).endEditMessage(channel.id);
             const current = outer2_16.current;
             if (null != current) {
@@ -300,7 +300,7 @@ export default function useChatInputRefs(chatInputProps) {
           threadCreationCallback = outer1_13.current.threadCreationCallback;
           if (null != threadCreationCallback) {
             const text = chatInputTextFieldHeight(ref[13]).getText(outer1_8.current, outer1_10.current, (text) => {
-              let obj = chatInputProps(11111);
+              let obj = chatInputProps(11112);
               obj = { text };
               obj = {};
               const merged = Object.assign(outer2_13.current);
@@ -309,8 +309,8 @@ export default function useChatInputRefs(chatInputProps) {
               const result = obj.chatInputValidateContentLength(obj);
               if (null != result) {
                 const obj1 = { text: result.content, threadCreationCallback };
-                const result1 = chatInputProps(11111).chatInputCreateThread(obj1);
-                const obj4 = chatInputProps(11111);
+                const result1 = chatInputProps(11112).chatInputCreateThread(obj1);
+                const obj4 = chatInputProps(11112);
               }
             });
             outer1_15.current.sending = false;
@@ -320,7 +320,7 @@ export default function useChatInputRefs(chatInputProps) {
             let sendCommandResult;
             if (null != applicationCommandManager) {
               sendCommandResult = applicationCommandManager.sendCommand(outer1_14.current.text, outer1_13.current.channel, (command, optionValues) => {
-                let obj = chatInputProps(11111);
+                let obj = chatInputProps(11112);
                 obj = { applicationCommand: obj };
                 obj = { command, optionValues };
                 const obj1 = {};
@@ -340,7 +340,7 @@ export default function useChatInputRefs(chatInputProps) {
                   }
                 } else {
                   outer1_1.cancel();
-                  let obj = chatInputProps(11111);
+                  let obj = chatInputProps(11112);
                   obj = { text };
                   obj = {};
                   const merged = Object.assign(outer2_13.current);

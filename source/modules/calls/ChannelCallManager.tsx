@@ -1,9 +1,9 @@
-// Module ID: 16062
-// Function ID: 124292
+// Module ID: 16074
+// Function ID: 124339
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 99, 100, 10210, 4810, 1348, 10183, 1907, 3971, 4147, 4204, 4144, 10209, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 99, 100, 10211, 4810, 1348, 10184, 1907, 3971, 4147, 4204, 4144, 10210, 5078, 2]
 
-// Module 16062 (_isNativeReflectConstruct)
+// Module 16074 (_isNativeReflectConstruct)
 import _classPrivateFieldKey from "_classPrivateFieldKey";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

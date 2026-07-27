@@ -1,5 +1,5 @@
 // Module ID: 6416
-// Function ID: 57685
+// Function ID: 57686
 // Name: _addTracingHeadersToFetchRequest
 // Dependencies: [830, 65, 77, 6307, 6310, 6311, 6325, 6335, 6339, 6343, 6393, 6316, 6345, 6326, 6344, 6382, 6328, 6324, 6318]
 // Exports: addTracingHeadersToFetchRequest, instrumentFetchRequest

@@ -1,10 +1,10 @@
-// Module ID: 14496
-// Function ID: 110774
+// Module ID: 14497
+// Function ID: 110779
 // Name: DemoModal
 // Dependencies: [5, 31, 27, 33, 4476, 4473, 4131, 4544, 2]
 // Exports: default
 
-// Module 14496 (DemoModal)
+// Module 14497 (DemoModal)
 import useAlertStore from "useAlertStore";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

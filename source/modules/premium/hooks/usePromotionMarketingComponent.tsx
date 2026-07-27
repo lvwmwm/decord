@@ -1,5 +1,5 @@
 // Module ID: 6506
-// Function ID: 58139
+// Function ID: 58140
 // Name: usePromotionMarketingComponent
 // Dependencies: [57, 31, 6157, 6207, 6507, 566, 6209, 2]
 // Exports: usePromotionMarketingComponent

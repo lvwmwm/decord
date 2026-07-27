@@ -1,10 +1,10 @@
-// Module ID: 11922
-// Function ID: 92284
+// Module ID: 11923
+// Function ID: 92289
 // Name: getApplicationImage
-// Dependencies: [31, 4168, 653, 4156, 8114, 7856, 1212, 11923, 5639, 9012, 1392, 11925, 4815, 11926, 5468, 566, 675, 8117, 2]
+// Dependencies: [31, 4168, 653, 4156, 8114, 7856, 1212, 11924, 5639, 9012, 1392, 11926, 4815, 11927, 5468, 566, 675, 8117, 2]
 // Exports: useImageForActivity, useImageForContentEntry
 
-// Module 11922 (getApplicationImage)
+// Module 11923 (getApplicationImage)
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -69,7 +69,7 @@ function useComputedImagesForActivity(activity, application) {
       obj1.smallImage = undefined;
       obj = obj1;
       const obj9 = require(9012) /* unpackStageChannelParty */;
-    } else if (importDefault(11925)(activity)) {
+    } else if (importDefault(11926)(activity)) {
       const obj3 = {};
       let obj4 = {};
       let obj7 = importDefault(4815);
@@ -81,7 +81,7 @@ function useComputedImagesForActivity(activity, application) {
       obj = obj3;
     } else {
       if (null == smallImage) {
-        if (importDefault(11926)(activity)) {
+        if (importDefault(11927)(activity)) {
           const obj5 = {};
           const obj6 = {};
           obj4 = importDefault(4815);
@@ -291,7 +291,7 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
   if (showCoverImage === undefined) {
     showCoverImage = true;
   }
-  ({ activity, activityApplication, fallbackApplication } = importDefault(11923)(entry));
+  ({ activity, activityApplication, fallbackApplication } = importDefault(11924)(entry));
   let obj = activityApplication;
   if (null != fallbackApplication) {
     obj = fallbackApplication;

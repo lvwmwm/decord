@@ -1,5 +1,5 @@
 // Module ID: 7916
-// Function ID: 63032
+// Function ID: 63033
 // Name: useAvatarDecorationIfNotExpired
 // Dependencies: [57, 31, 653, 1828, 4016, 2]
 // Exports: default

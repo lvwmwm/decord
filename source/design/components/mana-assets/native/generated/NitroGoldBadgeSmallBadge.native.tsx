@@ -1,5 +1,5 @@
 // Module ID: 7250
-// Function ID: 60110
+// Function ID: 60111
 // Name: NitroGoldBadgeSmallBadge
 // Dependencies: [33, 5085, 7251, 2]
 // Exports: NitroGoldBadgeSmallBadge

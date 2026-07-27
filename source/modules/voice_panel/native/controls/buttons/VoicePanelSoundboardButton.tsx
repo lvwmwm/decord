@@ -1,10 +1,10 @@
-// Module ID: 15933
-// Function ID: 123145
+// Module ID: 15945
+// Function ID: 123192
 // Name: SoundboardButton
-// Dependencies: [31, 33, 4131, 689, 9975, 15919, 15934, 15920, 1212, 5515, 6575, 2]
+// Dependencies: [31, 33, 4131, 689, 9975, 15931, 15946, 15932, 1212, 5515, 6575, 2]
 // Exports: default
 
-// Module 15933 (SoundboardButton)
+// Module 15945 (SoundboardButton)
 import result from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,10 +28,10 @@ export default function SoundboardButton(arg0) {
   let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(15919) /* useVoicePanelButtonStyles */;
+  let obj = require(15931) /* useVoicePanelButtonStyles */;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp3 = importDefault(15934);
-  ({ disabled, handlePress, visible } = importDefault(15934)(React.useContext(importDefault(9975)).channelId, require(15934) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
+  const tmp3 = importDefault(15946);
+  ({ disabled, handlePress, visible } = importDefault(15946)(React.useContext(importDefault(9975)).channelId, require(15946) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
   if (disabled) {
     let color = importDefault(689).colors.ICON_MUTED;
   } else {
@@ -49,7 +49,7 @@ export default function SoundboardButton(arg0) {
     obj.style = items;
     const items1 = [callback(importDefault(5515), obj), ];
     const obj2 = { style: tmp.iconContainer };
-    const tmp11 = importDefault(15920);
+    const tmp11 = importDefault(15932);
     const obj3 = { color };
     obj2.children = callback(require(6575) /* SoundboardIcon */.SoundboardIcon, obj3);
     items1[1] = callback(importDefault(5515), obj2);

@@ -1,5 +1,5 @@
 // Module ID: 4346
-// Function ID: 38392
+// Function ID: 38393
 // Name: shouldAgeVerifyForAgeGate
 // Dependencies: [1391, 1348, 4347, 1838, 1850, 1197, 653, 1212, 21, 4348, 3810, 4957, 566, 6692, 1921, 5587, 7668, 2]
 // Exports: guildNeedsAgeGate, isChannelAgeVerificationGated, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForSettingsToggles, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userCannotSeeNSFWContent, userNeedsAgeGate

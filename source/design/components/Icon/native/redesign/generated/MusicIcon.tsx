@@ -1,5 +1,5 @@
 // Module ID: 9006
-// Function ID: 70897
+// Function ID: 70898
 // Name: MusicIcon
 // Dependencies: [31, 33, 689, 3834, 9007, 2]
 // Exports: MusicIcon

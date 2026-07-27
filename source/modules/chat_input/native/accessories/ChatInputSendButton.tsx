@@ -1,9 +1,9 @@
-// Module ID: 11351
-// Function ID: 88188
+// Module ID: 11352
+// Function ID: 88193
 // Name: renderChatInputSendButton
-// Dependencies: [57, 31, 27, 4123, 5918, 11092, 33, 4131, 689, 3835, 11343, 11352, 11336, 4077, 1212, 1324, 566, 4477, 11356, 3992, 2]
+// Dependencies: [57, 31, 27, 4123, 5918, 11093, 33, 4131, 689, 3835, 11344, 11353, 11337, 4077, 1212, 1324, 566, 4477, 11357, 3992, 2]
 
-// Module 11351 (renderChatInputSendButton)
+// Module 11352 (renderChatInputSendButton)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -31,7 +31,7 @@ function FloatingSlot(arg0) {
   let sendVoiceMessageEnabled;
   ({ buttonHeight, buttonMargin } = arg0);
   ({ buttonWidth, sendVoiceMessageEnabled, children } = arg0);
-  const style = [{ height: buttonHeight }, importDefault(11356)({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
+  const style = [{ height: buttonHeight }, importDefault(11357)({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
   return jsx(importDefault(3992).View, { style, children });
 }
 let closure_10 = { BUTTON_SEND: "send-button", BUTTON_SEND_DISABLED: "send-button-disabled", BUTTON_SEND_VOICE_MESSAGE: "voice-message-button", BUTTON_SEND_VOICE_MESSAGE_DISABLED: "voice-message-button-disabled" };
@@ -69,7 +69,7 @@ let closure_12 = importAllResult.memo((type) => {
   const tmp5 = jsx;
   if (tmp3) {
     obj = { disabled: isOnCooldown, channelId };
-    let tmp7Result = tmp7(tmp8(11352), obj);
+    let tmp7Result = tmp7(tmp8(11353), obj);
   } else {
     obj1 = { active: true };
     ({ button: obj4.style, buttonActive: obj4.activeStyle, iconActive: obj4.activeIconStyle } = tmp2);
@@ -78,11 +78,11 @@ let closure_12 = importAllResult.memo((type) => {
     obj1.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.TXNS7S);
     obj1.onPress = onSendMessage;
     obj1.disabled = !sendEnabled;
-    tmp7Result = tmp7(tmp8(11336), obj1);
-    const tmp8Result = tmp8(11336);
+    tmp7Result = tmp7(tmp8(11337), obj1);
+    const tmp8Result = tmp8(11337);
   }
   obj.children = tmp7Result;
-  return tmp5(importDefault(11343), obj);
+  return tmp5(importDefault(11344), obj);
 });
 const forwardRefResult = importAllResult.forwardRef((channel) => {
   let canSendVoiceMessage;

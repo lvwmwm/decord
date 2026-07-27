@@ -1,5 +1,5 @@
 // Module ID: 10075
-// Function ID: 78095
+// Function ID: 78096
 // Name: ChannelHeader
 // Dependencies: [31, 1348, 653, 1355, 33, 477, 3990, 10057, 1207, 3983, 624, 4346, 10076, 10078, 10080, 10086, 1212, 10088, 2]
 // Exports: default, navigateToChannelDetails

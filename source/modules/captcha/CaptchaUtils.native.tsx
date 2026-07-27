@@ -1,8 +1,8 @@
-// Module ID: 16019
-// Function ID: 123760
-// Dependencies: [3824, 9405, 566, 4099, 16020, 1935, 9403, 2]
+// Module ID: 16031
+// Function ID: 123807
+// Dependencies: [3824, 9405, 566, 4099, 16032, 1935, 9403, 2]
 
-// Module 16019
+// Module 16031
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { CAPTCHA_MODAL_KEY } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
 
@@ -32,7 +32,7 @@ export default {
     const obj2 = importDefault(4099);
     const merged = Object.assign(obj);
     const merged1 = Object.assign(options.options);
-    obj2.openLazy(_require(1935)(16020, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
+    obj2.openLazy(_require(1935)(16032, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
   },
   showCaptchaAsync(nextResult1) {
     let c1;

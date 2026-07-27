@@ -1,5 +1,5 @@
 // Module ID: 6480
-// Function ID: 57995
+// Function ID: 57996
 // Name: getWhatYouLoseProfileTier1Source
 // Dependencies: [31, 27, 33, 6481, 6482, 6483, 6484, 3977, 2]
 // Exports: WhatYouLoseProfileTier1

@@ -1,5 +1,5 @@
 // Module ID: 8985
-// Function ID: 70800
+// Function ID: 70801
 // Name: PlatformTypes
 // Dependencies: [653, 4149, 8965, 8986, 2]
 // Exports: default, getConsoleIconForVoicePlatform

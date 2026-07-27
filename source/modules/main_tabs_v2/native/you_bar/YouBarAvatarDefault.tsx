@@ -1,9 +1,9 @@
-// Module ID: 15171
-// Function ID: 115555
+// Module ID: 15184
+// Function ID: 115604
 // Name: AvatarDefault
-// Dependencies: [31, 27, 14058, 653, 33, 4131, 689, 3835, 1273, 7909, 6519, 2]
+// Dependencies: [31, 27, 14059, 653, 33, 4131, 689, 3835, 1273, 7909, 6519, 2]
 
-// Module 15171 (AvatarDefault)
+// Module 15184 (AvatarDefault)
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 import { StatusTypes } from "ME";

@@ -1,8 +1,8 @@
-// Module ID: 15387
-// Function ID: 117414
-// Dependencies: [31, 9061, 33, 15386, 15381, 1324, 9231, 1212, 6625, 13964, 2]
+// Module ID: 15400
+// Function ID: 117463
+// Dependencies: [31, 9061, 33, 15399, 15394, 1324, 9231, 1212, 6625, 13965, 2]
 
-// Module 15387
+// Module 15400
 import importAllResult from "result";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import { jsx } from "jsxProd";
@@ -10,15 +10,15 @@ import { jsx } from "jsxProd";
 const require = arg1;
 const memoResult = importAllResult.memo((searchContext) => {
   searchContext = searchContext.searchContext;
-  let obj = searchContext(15386);
+  let obj = searchContext(15399);
   const validOrderedFilterTokens = obj.useValidOrderedFilterTokens(searchContext);
   const items = [searchContext, validOrderedFilterTokens];
   const memo = importAllResult.useMemo(() => validOrderedFilterTokens.map((searchTokenType) => {
-    const obj = { label: searchContext(15381).getSearchTokenLabel(outer1_0, searchTokenType) };
-    const obj2 = searchContext(15381);
-    obj.IconComponent = searchContext(15381).getSearchTokenIcon(searchTokenType);
-    const obj3 = searchContext(15381);
-    obj.action = searchContext(15381).getSearchTokenPressHandler(outer1_0, searchTokenType, outer2_4.CONTEXT_MENU);
+    const obj = { label: searchContext(15394).getSearchTokenLabel(outer1_0, searchTokenType) };
+    const obj2 = searchContext(15394);
+    obj.IconComponent = searchContext(15394).getSearchTokenIcon(searchTokenType);
+    const obj3 = searchContext(15394);
+    obj.action = searchContext(15394).getSearchTokenPressHandler(outer1_0, searchTokenType, outer2_4.CONTEXT_MENU);
     return obj;
   }), items);
   const dependencyMap = validOrderedFilterTokens(1324)("SearchFilterButton");
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo((searchContext) => {
       str = "md";
     }
     obj["size"] = str;
-    obj["icon"] = outer1_5(searchContext(13964).FiltersHorizontalIcon, { size: "sm", color: "redesign-button-tertiary-text" });
+    obj["icon"] = outer1_5(searchContext(13965).FiltersHorizontalIcon, { size: "sm", color: "redesign-button-tertiary-text" });
     return outer1_5(searchContext(6625).IconButton, obj);
   };
   return jsx(searchContext(9231).ContextMenu, { items: memo, align: "below" });

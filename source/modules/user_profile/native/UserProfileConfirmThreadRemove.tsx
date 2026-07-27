@@ -1,10 +1,10 @@
-// Module ID: 11655
-// Function ID: 90418
+// Module ID: 11656
+// Function ID: 90423
 // Name: UserProfileConfirmThreadRemove
 // Dependencies: [31, 33, 3970, 4476, 1212, 4476, 2]
 // Exports: default
 
-// Module 11655 (UserProfileConfirmThreadRemove)
+// Module 11656 (UserProfileConfirmThreadRemove)
 import "result";
 import jsxProd from "jsxProd";
 

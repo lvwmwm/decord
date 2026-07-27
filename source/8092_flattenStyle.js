@@ -1,5 +1,5 @@
 // Module ID: 8092
-// Function ID: 64434
+// Function ID: 64435
 // Name: flattenStyle
 // Dependencies: [8093]
 

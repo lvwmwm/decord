@@ -1,5 +1,5 @@
 // Module ID: 6678
-// Function ID: 58991
+// Function ID: 58992
 // Name: useInputClearButtonConfig
 // Dependencies: [31, 27, 33, 6679, 1212, 2]
 // Exports: useInputClearButton

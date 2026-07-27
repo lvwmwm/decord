@@ -1,10 +1,10 @@
-// Module ID: 13880
-// Function ID: 106304
+// Module ID: 13881
+// Function ID: 106309
 // Name: FamilyCenterAcceptedLinkRow
-// Dependencies: [31, 27, 5766, 33, 4131, 689, 6201, 6200, 11050, 1212, 2199, 4127, 13881, 13883, 4661, 4338, 13886, 1935, 1273, 13888, 2]
+// Dependencies: [31, 27, 5766, 33, 4131, 689, 6201, 6200, 11051, 1212, 2199, 4127, 13882, 13884, 4661, 4338, 13887, 1935, 1273, 13889, 2]
 // Exports: default
 
-// Module 13880 (FamilyCenterAcceptedLinkRow)
+// Module 13881 (FamilyCenterAcceptedLinkRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import items from "items";
@@ -37,11 +37,11 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
       obj.pushLazy(str(outer1_2[17])(outer1_2[16], outer1_2.paths), obj);
     };
     obj.style = tmp.actionButton;
-    obj = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13888) };
+    obj = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13889) };
     obj.children = callback(str(1273).Icon, obj);
     obj.actions = callback(str(4661).PressableOpacity, obj);
-    tmp8Result = callback(importDefault(13883), obj);
-    const tmp11 = importDefault(13883);
+    tmp8Result = callback(importDefault(13884), obj);
+    const tmp11 = importDefault(13884);
     const tmp12 = callback;
     const tmp8 = callback;
   }
@@ -66,7 +66,7 @@ export default function FamilyCenterAcceptedLinks() {
   let obj = require(6200) /* useUserIdsForLinkStatus */;
   const activeLinkUsers = obj.useActiveLinkUsers();
   obj = { count: activeLinkUsers.length, max: importDefault(6201)() ? closure_4 : closure_5 };
-  let obj2 = require(11050) /* useAgeSpecificText */;
+  let obj2 = require(11051) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
   const tmp2 = importDefault(6201)();
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -80,9 +80,9 @@ export default function FamilyCenterAcceptedLinks() {
     const obj4 = {};
     const intl3 = require(1212) /* getSystemLocale */.intl;
     obj4.text = intl3.string(importDefault(2199).C4ScLD);
-    obj3.children = callback(importDefault(13881), obj4);
+    obj3.children = callback(importDefault(13882), obj4);
     let mapped = callback(View, obj3);
-    const tmp14 = importDefault(13881);
+    const tmp14 = importDefault(13882);
   } else {
     mapped = activeLinkUsers.map((id) => outer1_6(outer1_10, { otherUser: id }, "accepted-" + id.id));
   }

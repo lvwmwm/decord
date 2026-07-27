@@ -1,10 +1,10 @@
-// Module ID: 14954
-// Function ID: 114032
+// Module ID: 14955
+// Function ID: 114037
 // Name: useMessageRequestCounts
-// Dependencies: [31, 27, 5602, 5603, 33, 4131, 566, 14955, 4544, 1212, 6625, 10064, 11776, 2]
+// Dependencies: [31, 27, 5602, 5603, 33, 4131, 566, 14956, 4544, 1212, 6625, 10064, 11777, 2]
 // Exports: default
 
-// Module 14954 (useMessageRequestCounts)
+// Module 14955 (useMessageRequestCounts)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,7 +41,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items);
-  return callback(ref(14955).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(14956).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_9 = _createForOfIteratorHelperLoose.createStyles({ buttonContainer: { position: "relative" } });
@@ -91,7 +91,7 @@ export default function MessageRequestsButton(alternateVariant) {
     obj.children = items;
     return closure_8(View, obj);
   } else {
-    obj = { source: importDefault(11776), IconComponent: MessageRequestAnimation };
+    obj = { source: importDefault(11777), IconComponent: MessageRequestAnimation };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.e7GWjQ);
     let str1;

@@ -1,9 +1,9 @@
-// Module ID: 15963
-// Function ID: 123435
+// Module ID: 15975
+// Function ID: 123482
 // Name: getMessage
-// Dependencies: [15964, 2, 16006]
+// Dependencies: [15976, 2, 16018]
 
-// Module 15963 (getMessage)
+// Module 15975 (getMessage)
 const result = require("setUpdateRules").fileFinishedImporting("../discord_common/js/packages/i18n/index.tsx");
 
 export { I18N as default } from "_callSuper";

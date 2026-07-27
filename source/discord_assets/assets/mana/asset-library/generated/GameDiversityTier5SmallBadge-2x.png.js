@@ -1,5 +1,5 @@
 // Module ID: 7057
-// Function ID: 59821
+// Function ID: 59822
 // Name: vanityUrl
 // Dependencies: [2]
 

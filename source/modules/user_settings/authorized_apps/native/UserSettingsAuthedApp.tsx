@@ -1,10 +1,10 @@
-// Module ID: 13906
-// Function ID: 106465
+// Module ID: 13907
+// Function ID: 106470
 // Name: WarningLabel
-// Dependencies: [31, 27, 1347, 5067, 1348, 3768, 4326, 1922, 653, 9032, 10383, 33, 4131, 689, 4087, 4127, 1456, 1457, 1212, 5470, 10546, 8887, 566, 11628, 1392, 4473, 11627, 4099, 10384, 1935, 480, 8850, 6664, 6448, 6449, 8138, 3983, 5079, 5074, 21, 11167, 8939, 5501, 5502, 5164, 2]
+// Dependencies: [31, 27, 1347, 5067, 1348, 3768, 4326, 1922, 653, 9032, 10384, 33, 4131, 689, 4087, 4127, 1456, 1457, 1212, 5470, 10547, 8887, 566, 11629, 1392, 4473, 11628, 4099, 10385, 1935, 480, 8850, 6664, 6448, 6449, 8138, 3983, 5079, 5074, 21, 11168, 8939, 5501, 5502, 5164, 2]
 // Exports: default
 
-// Module 13906 (WarningLabel)
+// Module 13907 (WarningLabel)
 import showAlert from "showAlert";
 import get_ActivityIndicator from "showActionSheet";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -71,7 +71,7 @@ function handleDeleteApp(outer1_1) {
   }
   obj.location = _location;
   obj.applicationId = application.id;
-  importDefault(10546).leaveActivity(obj);
+  importDefault(10547).leaveActivity(obj);
 }
 ({ ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ UserSettingsSections: closure_12, AnalyticsSections: closure_13, AnalyticsPages: closure_14 } = ME);

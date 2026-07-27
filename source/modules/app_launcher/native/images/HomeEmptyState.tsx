@@ -1,10 +1,10 @@
-// Module ID: 11222
-// Function ID: 87330
+// Module ID: 11223
+// Function ID: 87335
 // Name: SvgComponent
 // Dependencies: [31, 33, 8463, 2]
 // Exports: default
 
-// Module 11222 (SvgComponent)
+// Module 11223 (SvgComponent)
 import "result";
 import jsxProd from "jsxProd";
 

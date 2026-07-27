@@ -1,10 +1,10 @@
-// Module ID: 15888
-// Function ID: 122747
+// Module ID: 15900
+// Function ID: 122794
 // Name: ParticipantsSummary
-// Dependencies: [57, 31, 27, 33, 4131, 689, 3975, 15889, 9955, 1273, 4553, 4127, 3992, 4559, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 3975, 15901, 9955, 1273, 4553, 4127, 3992, 4559, 2]
 // Exports: default
 
-// Module 15888 (ParticipantsSummary)
+// Module 15900 (ParticipantsSummary)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -19,8 +19,8 @@ function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   ({ applicationId, channelId } = arg0);
-  const obj = { users: importDefault(15889)(applicationId, channelId), max: 5 };
-  const tmp = importDefault(15889)(applicationId, channelId);
+  const obj = { users: importDefault(15901)(applicationId, channelId), max: 5 };
+  const tmp = importDefault(15901)(applicationId, channelId);
   obj.avatarSize = require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj.withPlusCount = true;
   obj.style = { marginBottom: 8 };

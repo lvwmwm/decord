@@ -1,10 +1,10 @@
-// Module ID: 12284
-// Function ID: 95803
+// Module ID: 12285
+// Function ID: 95808
 // Name: canSeeDevLinks
-// Dependencies: [57, 3760, 1838, 1850, 5921, 11070, 4120, 12285, 12286, 12296, 12298, 12291, 12300, 12293, 10423, 10930, 7829, 10831, 12301, 1327, 2]
+// Dependencies: [57, 3760, 1838, 1850, 5921, 11071, 4120, 12286, 12287, 12297, 12299, 12292, 12301, 12294, 10424, 10931, 7829, 10832, 12302, 1327, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 12284 (canSeeDevLinks)
+// Module 12285 (canSeeDevLinks)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -74,7 +74,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                 obj.message = message;
                 appLinkGateResult = callback;
                 obj.theme = callback;
-                appLinkGateResult = message(11070).getAppLinkGateResult(obj);
+                appLinkGateResult = message(11071).getAppLinkGateResult(obj);
                 if ("unavailable" === appLinkGateResult.state) {
                   return null;
                 } else if ("blocked" === appLinkGateResult.state) {
@@ -86,7 +86,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                   appLinkGateResult = dependencyMap;
                   if (message(4120).CodedLinkType.ACTIVITY_BOOKMARK === type2) {
                     obj = { theme: callback, embedUrl: url, message, app, params: applicationCodedLinkData.params };
-                    return message(12285).createActivityMessageEmbed(obj);
+                    return message(12286).createActivityMessageEmbed(obj);
                   } else {
                     appLinkGateResult = message;
                     appLinkGateResult = dependencyMap;
@@ -96,10 +96,10 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                       }
                     }
                     let obj1 = { theme: callback, embedUrl: url, message, app };
-                    return message(11070).createAppMessageEmbed(obj1);
+                    return message(11071).createAppMessageEmbed(obj1);
                   }
                 }
-                const obj29 = message(11070);
+                const obj29 = message(11071);
               }
               const obj23 = message(5921);
             } else {
@@ -110,30 +110,30 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
         } else {
           appLinkGateResult = message;
           if (message(4120).CodedLinkType.INVITE === type) {
-            return message(12286).createInviteEmbed(message, code, callback);
+            return message(12287).createInviteEmbed(message, code, callback);
           } else if (message(4120).CodedLinkType.TEMPLATE === type) {
-            return message(12296).createGuildTemplateEmbed(code, callback);
+            return message(12297).createGuildTemplateEmbed(code, callback);
           } else if (message(4120).CodedLinkType.BUILD_OVERRIDE === type) {
-            return message(12298).createBuildOverrideEmbed(code, callback);
+            return message(12299).createBuildOverrideEmbed(code, callback);
           } else if (message(4120).CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
             let buildOverrideEmbed = null;
             if (outer1_6()) {
-              buildOverrideEmbed = message(12298).createBuildOverrideEmbed(code, callback);
-              const obj19 = message(12298);
+              buildOverrideEmbed = message(12299).createBuildOverrideEmbed(code, callback);
+              const obj19 = message(12299);
             }
             return buildOverrideEmbed;
           } else if (message(4120).CodedLinkType.EVENT === type) {
-            return message(12291).createGuildScheduledEventLinkEmbed(code, callback);
+            return message(12292).createGuildScheduledEventLinkEmbed(code, callback);
           } else if (message(4120).CodedLinkType.CHANNEL_LINK === type) {
-            return message(12300).createVoiceChannelLinkEmbed(code, callback);
+            return message(12301).createVoiceChannelLinkEmbed(code, callback);
           } else if (message(4120).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
             let obj2 = { theme: callback, inviteCode: code };
-            return message(12293).createEmbeddedActivityInviteEmbed(obj2);
+            return message(12294).createEmbeddedActivityInviteEmbed(obj2);
           } else if (message(4120).CodedLinkType.EXPERIMENT === type) {
             let experimentEmbed = null;
             if (obj13.canSeeExperimentEmbeds()) {
-              experimentEmbed = message(10930).createExperimentEmbed(url, callback);
-              const obj14 = message(10930);
+              experimentEmbed = message(10931).createExperimentEmbed(url, callback);
+              const obj14 = message(10931);
             }
             return experimentEmbed;
           } else {
@@ -145,7 +145,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                     appLinkGateResult = message;
                     appLinkGateResult = dependencyMap;
                     if (message(4120).CodedLinkType.QUESTS_EMBED === type) {
-                      obj2 = message(12301);
+                      obj2 = message(12302);
                       const obj3 = { theme: callback, questId: code, currentUser: _isNativeReflectConstruct };
                       return obj2.createQuestsEmbed(obj3);
                     } else {
@@ -169,10 +169,10 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                     let obj6 = { type: "application", applicationId: tmp29 };
                     obj5.guildOrApplication = obj6;
                     obj5.theme = callback;
-                    return message(10831).createSocialLayerStorefrontProductDetailsEmbed(obj5);
+                    return message(10832).createSocialLayerStorefrontProductDetailsEmbed(obj5);
                   } else {
                     [tmp21, tmp22] = callback(code.split("-"), 2);
-                    obj6 = message(10831);
+                    obj6 = message(10832);
                     const obj7 = { skuId: tmp21 };
                     const obj8 = { type: "guild", guildId: tmp22 };
                     obj7.guildOrApplication = obj8;

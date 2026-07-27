@@ -1,5 +1,5 @@
 // Module ID: 7586
-// Function ID: 60742
+// Function ID: 60743
 // Name: getLengthRemainingTextColor
 // Dependencies: [31, 27, 33, 4131, 689, 6683, 6677, 3837, 7587, 1212, 6686, 4127, 2]
 

@@ -1,10 +1,10 @@
-// Module ID: 11751
-// Function ID: 91282
+// Module ID: 11752
+// Function ID: 91287
 // Name: SimpleLoadingModal
 // Dependencies: [31, 27, 33, 4131, 5584, 2]
 // Exports: default
 
-// Module 11751 (SimpleLoadingModal)
+// Module 11752 (SimpleLoadingModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

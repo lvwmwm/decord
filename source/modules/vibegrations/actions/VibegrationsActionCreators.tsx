@@ -1,5 +1,5 @@
 // Module ID: 5657
-// Function ID: 48349
+// Function ID: 48350
 // Name: refreshAppRecord
 // Dependencies: [5, 5658, 5653, 653, 5463, 5665, 686, 507, 2]
 // Exports: createProject, deleteProject, listProjects, publishPreviewProject, publishProject, renameProject, setBuilderPreviewApplicationId, setChatSidebarWidth, setGuildHints

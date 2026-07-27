@@ -1,5 +1,5 @@
 // Module ID: 5735
-// Function ID: 49828
+// Function ID: 49829
 // Name: isSpammer
 // Dependencies: [1850, 653, 5736, 2]
 // Exports: isSpam, isSpamSupported

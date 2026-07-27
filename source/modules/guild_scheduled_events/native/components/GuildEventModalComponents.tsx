@@ -1,5 +1,5 @@
 // Module ID: 8173
-// Function ID: 65596
+// Function ID: 65597
 // Name: GuildEventTopic
 // Dependencies: [31, 27, 1354, 653, 33, 4131, 6670, 1212, 8148, 4127, 8174, 1820, 4099, 8184, 1935, 8185, 8186, 8187, 4659, 8188, 8189, 7624, 4655, 7596, 7595, 7585, 3713, 8191, 4542, 2]
 // Exports: GuildEventDatetime, GuildEventDescription, GuildEventEntityTypeSelection, GuildEventLocation, GuildEventRecurrence, GuildEventTopic

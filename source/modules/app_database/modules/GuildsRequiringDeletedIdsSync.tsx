@@ -1,5 +1,5 @@
 // Module ID: 5884
-// Function ID: 52121
+// Function ID: 52122
 // Name: GuildsRequiringDeletedIdsSync
 // Dependencies: [5, 6, 7, 1883, 2]
 

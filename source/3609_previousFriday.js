@@ -1,5 +1,5 @@
 // Module ID: 3609
-// Function ID: 27839
+// Function ID: 27840
 // Name: previousFriday
 // Dependencies: [3211, 3608]
 // Exports: default

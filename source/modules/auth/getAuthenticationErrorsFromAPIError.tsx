@@ -1,5 +1,5 @@
 // Module ID: 9128
-// Function ID: 71740
+// Function ID: 71741
 // Name: getAuthenticationErrorsFromAPIError
 // Dependencies: [2]
 // Exports: getAuthenticationErrorsFromAPIError, getAuthenticationErrorsFromV6OrEarlierAPIError

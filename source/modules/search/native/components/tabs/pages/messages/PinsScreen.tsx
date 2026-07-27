@@ -1,9 +1,9 @@
-// Module ID: 15465
-// Function ID: 118877
+// Module ID: 15478
+// Function ID: 118926
 // Name: InitialPinsScreen
-// Dependencies: [31, 9821, 5847, 10041, 9033, 9061, 653, 33, 566, 15397, 9820, 15394, 10040, 15437, 15401, 15400, 15458, 2]
+// Dependencies: [31, 9821, 5847, 10041, 9033, 9061, 653, 33, 566, 15410, 9820, 15407, 10040, 15450, 15414, 15413, 15471, 2]
 
-// Module 15465 (InitialPinsScreen)
+// Module 15478 (InitialPinsScreen)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
@@ -166,7 +166,7 @@ const memoResult = importAllResult.memo(function PinsScreen(searchContext) {
   const items1 = [searchContext];
   if (!obj.useStateFromStores(items, () => outer1_7.isInitialSearchQuery(searchContext), items1)) {
     obj = { searchContext, tab, isFocused };
-    let tmp6 = jsx(importDefault(15458), { searchContext, tab, isFocused });
+    let tmp6 = jsx(importDefault(15471), { searchContext, tab, isFocused });
   } else {
     obj = { searchContext, tab, isFocused };
     tmp6 = <InitialPinsScreen searchContext={searchContext} tab={tab} isFocused={isFocused} />;

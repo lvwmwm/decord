@@ -1,5 +1,5 @@
 // Module ID: 6453
-// Function ID: 57934
+// Function ID: 57935
 // Name: getMobileNitroMarketingRedesignExperiment
 // Dependencies: [1428, 2]
 // Exports: getMobileNitroMarketingRedesignExperiment

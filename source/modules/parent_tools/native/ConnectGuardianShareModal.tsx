@@ -1,10 +1,10 @@
-// Module ID: 16210
-// Function ID: 125721
+// Module ID: 16222
+// Function ID: 125768
 // Name: ConnectGuardianShareScreen
-// Dependencies: [31, 27, 5765, 33, 4131, 689, 1212, 2199, 3831, 4338, 11047, 624, 13845, 6725, 6726, 4542, 4127, 13846, 5584, 5087, 11059, 2]
+// Dependencies: [31, 27, 5765, 33, 4131, 689, 1212, 2199, 3831, 4338, 11048, 624, 13846, 6725, 6726, 4542, 4127, 13847, 5584, 5087, 11060, 2]
 // Exports: default
 
-// Module 16210 (ConnectGuardianShareScreen)
+// Module 16222 (ConnectGuardianShareScreen)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ function ConnectGuardianShareScreen() {
     let arr = outer1_1(outer1_2[9]);
     arr = arr.pop();
   }, []);
-  let obj1 = getLinkCode(11047);
+  let obj1 = getLinkCode(11048);
   getLinkCode = obj1.useFamilyCenterActions({ onError: callback }).getLinkCode;
   let obj2 = getLinkCode(624);
   const items = [_isNativeReflectConstruct];
@@ -35,7 +35,7 @@ function ConnectGuardianShareScreen() {
   const effect = React.useEffect(() => {
     getLinkCode();
   }, []);
-  importDefault(13845)(importDefault(4338).pop);
+  importDefault(13846)(importDefault(4338).pop);
   obj = {};
   obj = {};
   obj1 = { spacing: importDefault(689).space.PX_40 };
@@ -58,7 +58,7 @@ function ConnectGuardianShareScreen() {
   if (null != stateFromStores) {
     if (null != stateFromStores1) {
       const obj7 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      let tmp13 = callback(getLinkCode(13846).ConnectGuardianCard, obj7);
+      let tmp13 = callback(getLinkCode(13847).ConnectGuardianCard, obj7);
     }
     items4[1] = tmp13;
     obj5.children = items4;
@@ -71,7 +71,7 @@ function ConnectGuardianShareScreen() {
   tmp10 = callback;
   tmp11 = callback2;
   tmp12 = callback2;
-  const tmp7 = importDefault(13845);
+  const tmp7 = importDefault(13846);
   tmp9 = callback;
   tmp13 = callback(View, { style: tmp.loading, children: callback(getLinkCode(5584).ActivityIndicator, {}) });
 }
@@ -101,5 +101,5 @@ export default function ConnectGuardianShareModal() {
   let obj = { initialRouteName: "CONNECT_GUARDIAN_SHARE", screens: memo };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  return callback(require(11059) /* Modal */.Modal, obj);
+  return callback(require(11060) /* Modal */.Modal, obj);
 };

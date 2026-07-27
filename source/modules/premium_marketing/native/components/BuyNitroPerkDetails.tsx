@@ -1,5 +1,5 @@
 // Module ID: 6598
-// Function ID: 58420
+// Function ID: 58421
 // Name: openBuyNitroPerkDetails
 // Dependencies: [31, 27, 33, 4131, 6512, 6599, 1212, 4542, 689, 6602, 6603, 5482, 4099, 2]
 // Exports: openBuyNitroPerkDetails

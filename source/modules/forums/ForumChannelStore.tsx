@@ -1,10 +1,10 @@
-// Module ID: 11115
-// Function ID: 86501
+// Module ID: 11116
+// Function ID: 86506
 // Name: set
 // Dependencies: [7, 6, 1348, 1358, 1357, 1359, 682, 44, 6031, 621, 566, 2]
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 11115 (set)
+// Module 11116 (set)
 import batchUpdates from "batchUpdates";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import keys from "keys";

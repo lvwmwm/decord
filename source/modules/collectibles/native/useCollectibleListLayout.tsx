@@ -1,5 +1,5 @@
 // Module ID: 7902
-// Function ID: 62972
+// Function ID: 62973
 // Name: useCollectibleListLayout
 // Dependencies: [57, 31, 2]
 // Exports: default

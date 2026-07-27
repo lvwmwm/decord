@@ -1,5 +1,5 @@
 // Module ID: 3818
-// Function ID: 31730
+// Function ID: 31731
 // Name: __DiscordCreateDateFormatter
 // Dependencies: [27, 477, 3819, 2]
 // Exports: supportsSystemDateFormatter

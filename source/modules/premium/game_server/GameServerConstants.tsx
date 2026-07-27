@@ -1,5 +1,5 @@
 // Module ID: 4020
-// Function ID: 33453
+// Function ID: 33454
 // Name: NewGamesCoachmarkContent
 // Dependencies: [7, 6, 1857, 4021, 2]
 // Exports: GAME_SERVER_SURVEY_URL

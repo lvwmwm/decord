@@ -1,10 +1,10 @@
-// Module ID: 11426
-// Function ID: 88845
+// Module ID: 11427
+// Function ID: 88850
 // Name: isMentionAnchorValid
 // Dependencies: [57, 31, 653, 9514, 2]
 // Exports: default
 
-// Module 11426 (isMentionAnchorValid)
+// Module 11427 (isMentionAnchorValid)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { WHITESPACE_RE } from "ME";

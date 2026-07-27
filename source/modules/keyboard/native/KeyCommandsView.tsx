@@ -1,10 +1,10 @@
-// Module ID: 13561
-// Function ID: 104332
+// Module ID: 13562
+// Function ID: 104337
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 33, 4131, 13562, 2]
+// Dependencies: [57, 31, 33, 4131, 13563, 2]
 // Exports: default, useKeyCommands
 
-// Module 13561 (_createForOfIteratorHelperLoose)
+// Module 13562 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { jsx } from "jsxProd";
@@ -134,7 +134,7 @@ export default function KeyCommandsView(style) {
       found.onKeyCommand(nativeEvent);
     }
   };
-  obj.children = jsx(first(13562), {});
+  obj.children = jsx(first(13563), {});
   return <redux.Provider />;
 };
 export const useKeyCommands = function useKeyCommands(memo) {

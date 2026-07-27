@@ -1,9 +1,9 @@
-// Module ID: 16303
-// Function ID: 126970
+// Module ID: 16315
+// Function ID: 127017
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 1858, 3768, 1850, 653, 33, 4131, 689, 1395, 1392, 4815, 3977, 5468, 4127, 16286, 1212, 3970, 1273, 1387, 4321, 4313, 3713, 1327, 665, 9604, 5150, 5166, 16295, 4661, 4099, 8297, 13636, 3843, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 1858, 3768, 1850, 653, 33, 4131, 689, 1395, 1392, 4815, 3977, 5468, 4127, 16298, 1212, 3970, 1273, 1387, 4321, 4313, 3713, 1327, 665, 9604, 5150, 5166, 16307, 4661, 4099, 8297, 13637, 3843, 566, 2]
 
-// Module 16303 (_isNativeReflectConstruct)
+// Module 16315 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ensureAvatarSource from "ensureAvatarSource";

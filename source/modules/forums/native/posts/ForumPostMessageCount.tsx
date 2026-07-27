@@ -1,10 +1,10 @@
-// Module ID: 11132
-// Function ID: 86585
+// Module ID: 11133
+// Function ID: 86590
 // Name: num2
-// Dependencies: [31, 27, 33, 4131, 689, 477, 9065, 1212, 4630, 4127, 10314, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 477, 9065, 1212, 4630, 4127, 10315, 2]
 // Exports: default
 
-// Module 11132 (num2)
+// Module 11133 (num2)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -71,7 +71,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     let tmp6Result = tmp6(require(4127) /* Text */.Text, obj1);
   } else {
     const obj2 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
-    tmp6Result = tmp6(importDefault(10314), obj2);
+    tmp6Result = tmp6(importDefault(10315), obj2);
   }
   items1[1] = tmp6Result;
   let tmp12 = null != unreadCount;

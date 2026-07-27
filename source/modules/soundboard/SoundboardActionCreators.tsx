@@ -1,5 +1,5 @@
 // Module ID: 7986
-// Function ID: 63650
+// Function ID: 63651
 // Name: _fetchDefaultSoundsFromApi2
 // Dependencies: [5, 4579, 4580, 653, 662, 507, 4586, 686, 5824, 4031, 7987, 675, 1331, 22, 4471, 1212, 6632, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, muteCustomJoinSound, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound

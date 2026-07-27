@@ -1,10 +1,10 @@
-// Module ID: 15413
-// Function ID: 117672
+// Module ID: 15426
+// Function ID: 117721
 // Name: LaunchpadChannelIcon
-// Dependencies: [31, 27, 1838, 3768, 1850, 4327, 33, 8254, 1212, 4131, 689, 10223, 566, 5513, 11302, 5874, 15225, 9026, 15411, 4321, 2]
+// Dependencies: [31, 27, 1838, 3768, 1850, 4327, 33, 8254, 1212, 4131, 689, 10224, 566, 5513, 11303, 5874, 15238, 9026, 15424, 4321, 2]
 // Exports: getChannelAccessibilityProps, renderChannelItem
 
-// Module 15413 (LaunchpadChannelIcon)
+// Module 15426 (LaunchpadChannelIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -21,7 +21,7 @@ const require = arg1;
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
   const layout = channel.layout;
-  let obj = channel(10223);
+  let obj = channel(10224);
   const layoutStyles = obj.getLayoutStyles(layout);
   let obj1 = channel(566);
   const items = [closure_4];
@@ -41,13 +41,13 @@ function LaunchpadChannelIcon(channel) {
     str = "md";
   }
   obj2.size = str;
-  obj7 = channel(10223);
+  obj7 = channel(10224);
   let num = 32;
   if (obj8.isLayoutCozy(layout)) {
     num = 48;
   }
   obj2.wrapperSize = num;
-  items1[1] = tmp6(channel(11302).ChannelIcon, obj2);
+  items1[1] = tmp6(channel(11303).ChannelIcon, obj2);
   obj.children = items1;
   return tmp4(tmp5, obj);
 }
@@ -139,14 +139,14 @@ export const renderChannelItem = function renderChannelItem(unread) {
       relativeTimestamp = obj.getRelativeTimestamp(latestMessageTimestamp);
     }
   }
-  let obj1 = require(10223) /* getLayoutStyles */;
+  let obj1 = require(10224) /* getLayoutStyles */;
   const layoutStyles = obj1.getLayoutStyles(layout);
-  let obj2 = require(15225) /* renderChannelWrapper */;
+  let obj2 = require(15238) /* renderChannelWrapper */;
   obj = {};
   const items = [unreadBadge, , , ];
   obj = {};
   obj1 = { position: "relative", borderRadius: importDefault(689).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
-  let obj6 = require(10223) /* getLayoutStyles */;
+  let obj6 = require(10224) /* getLayoutStyles */;
   const merged = Object.assign(obj6.makeSizeStyle(layoutStyles.icon.wrapper.size));
   const merged1 = Object.assign(layoutStyles.icon.margin);
   obj.style = obj1;
@@ -178,7 +178,7 @@ export const renderChannelItem = function renderChannelItem(unread) {
   obj4.mentionBadge = mentionBadge;
   obj4.isSubscriptionGated = isSubscriptionGated;
   obj4.needSubscriptionToAccess = flag4;
-  items[2] = require(15411) /* ChannelContentComponent */.renderChannelContent(obj4);
+  items[2] = require(15424) /* ChannelContentComponent */.renderChannelContent(obj4);
   let tmp21 = null;
   if (null != end) {
     const obj5 = {};

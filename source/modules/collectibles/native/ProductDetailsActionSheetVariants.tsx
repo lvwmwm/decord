@@ -1,5 +1,5 @@
 // Module ID: 8695
-// Function ID: 69003
+// Function ID: 69004
 // Name: VariantOption
 // Dependencies: [31, 27, 33, 4131, 689, 8642, 4661, 1212, 8660, 5153, 5781, 4127, 2]
 // Exports: default

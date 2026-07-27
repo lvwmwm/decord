@@ -1,5 +1,5 @@
 // Module ID: 8649
-// Function ID: 68701
+// Function ID: 68702
 // Name: BalanceWidgetMode
 // Dependencies: [2]
 

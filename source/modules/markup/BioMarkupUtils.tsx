@@ -1,5 +1,5 @@
 // Module ID: 8939
-// Function ID: 70619
+// Function ID: 70620
 // Name: getOrParseBioAST
 // Dependencies: [4565, 4566, 4122, 1362, 7709, 4121, 3830, 22, 2]
 // Exports: parseBioReactWithCachedAST

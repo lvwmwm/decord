@@ -1,5 +1,5 @@
 // Module ID: 7686
-// Function ID: 61489
+// Function ID: 61490
 // Name: formatUsernameOnClick
 // Dependencies: [7685, 2]
 // Exports: default

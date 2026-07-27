@@ -1,9 +1,9 @@
-// Module ID: 16079
-// Function ID: 124447
+// Module ID: 16091
+// Function ID: 124494
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4992, 5036, 1348, 1911, 1838, 4809, 3, 686, 5078, 566, 5884, 1193, 21, 2]
 
-// Module 16079 (_isNativeReflectConstruct)
+// Module 16091 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import GuildsRequiringDeletedIdsSync from "GuildsRequiringDeletedIdsSync";

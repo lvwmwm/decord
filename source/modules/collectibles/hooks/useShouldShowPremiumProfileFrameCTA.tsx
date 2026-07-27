@@ -1,15 +1,15 @@
-// Module ID: 11843
-// Function ID: 91818
+// Module ID: 11844
+// Function ID: 91823
 // Name: useShouldShowPremiumProfileFrameCTA
-// Dependencies: [11844, 8632, 1877, 2]
+// Dependencies: [11845, 8632, 1877, 2]
 // Exports: default
 
-// Module 11843 (useShouldShowPremiumProfileFrameCTA)
+// Module 11844 (useShouldShowPremiumProfileFrameCTA)
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameCTA.tsx");
 
 export default function useShouldShowPremiumProfileFrameCTA(location) {
   const _location = location.location;
-  let tmp = importDefault(11844)(_location);
+  let tmp = importDefault(11845)(_location);
   if (tmp) {
     tmp = !importDefault(8632)(_location);
   }

@@ -1,10 +1,10 @@
-// Module ID: 14025
-// Function ID: 107268
+// Module ID: 14026
+// Function ID: 107273
 // Name: BountiesNuxPromoSheet
-// Dependencies: [31, 27, 33, 4131, 689, 4099, 14024, 6599, 1212, 6832, 4544, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 4099, 14025, 6599, 1212, 6832, 4544, 2]
 // Exports: default
 
-// Module 14025 (BountiesNuxPromoSheet)
+// Module 14026 (BountiesNuxPromoSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

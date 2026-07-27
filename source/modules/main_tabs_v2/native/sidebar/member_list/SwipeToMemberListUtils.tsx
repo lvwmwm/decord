@@ -1,5 +1,5 @@
 // Module ID: 10057
-// Function ID: 77998
+// Function ID: 77999
 // Name: useIsSwipeToMemberListEnabled
 // Dependencies: [10058, 1282, 2]
 // Exports: isSwipeToMemberListEnabled, useIsSwipeToMemberListEnabled

@@ -1,10 +1,10 @@
-// Module ID: 11525
-// Function ID: 89782
+// Module ID: 11526
+// Function ID: 89787
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [4018, 566, 4022, 11526, 1334, 1212, 2231, 11528, 2]
+// Dependencies: [4018, 566, 4022, 11527, 1334, 1212, 2231, 11529, 2]
 // Exports: default
 
-// Module 11525 (useGuildPowerupRollbackNotificationConfig)
+// Module 11526 (useGuildPowerupRollbackNotificationConfig)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -22,7 +22,7 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, locat
   if (null != tmp2) {
     const storeRemovalDate = tmp2.storeRemovalDate;
   }
-  let obj1 = _require(11526);
+  let obj1 = _require(11527);
   let tmp5 = null;
   if (obj1.useShouldShowFileUploadRollback(guildId, location)) {
     tmp5 = null;
@@ -41,10 +41,10 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, locat
         if (null != cost) {
           obj = { dismissibleContent: _require(1334).DismissibleContent.FILE_UPLOAD_POWERUP_ROLLBACK_NOTIFICATION };
           const intl = _require(1212).intl;
-          obj = { dateString: importDefault(11528)(storeRemovalDate) };
+          obj = { dateString: importDefault(11529)(storeRemovalDate) };
           obj.title = intl.formatToPlainString(importDefault(2231)["6e2ry1"], obj);
           const intl2 = _require(1212).intl;
-          obj1 = { startDate: importDefault(11528)(storeRemovalDate), endDate: importDefault(11528)(storeRemovalDate) };
+          obj1 = { startDate: importDefault(11529)(storeRemovalDate), endDate: importDefault(11529)(storeRemovalDate) };
           let title1;
           if (null != tmp2) {
             title1 = tmp2.title;

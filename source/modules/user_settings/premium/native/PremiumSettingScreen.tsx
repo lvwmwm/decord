@@ -1,10 +1,10 @@
-// Module ID: 13948
-// Function ID: 106702
+// Module ID: 13949
+// Function ID: 106707
 // Name: PremiumScreen
 // Dependencies: [31, 33, 6273, 1456, 6448, 6270, 2]
 // Exports: default
 
-// Module 13948 (PremiumScreen)
+// Module 13949 (PremiumScreen)
 import "result";
 import { jsx } from "jsxProd";
 

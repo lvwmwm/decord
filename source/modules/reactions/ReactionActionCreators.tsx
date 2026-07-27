@@ -1,5 +1,5 @@
 // Module ID: 6022
-// Function ID: 53851
+// Function ID: 53852
 // Name: checkReactionResponse
 // Dependencies: [5, 1194, 1348, 4350, 653, 664, 4471, 1212, 1207, 686, 6023, 507, 6024, 675, 4325, 3977, 6042, 3776, 2]
 // Exports: getReactors, playBurstReaction

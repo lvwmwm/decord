@@ -1,9 +1,9 @@
-// Module ID: 13493
-// Function ID: 103767
+// Module ID: 13494
+// Function ID: 103772
 // Name: RPC_EMBEDDED_APP_SCOPE
-// Dependencies: [1850, 4034, 653, 13467, 10559, 2]
+// Dependencies: [1850, 4034, 653, 13468, 10560, 2]
 
-// Module 13493 (RPC_EMBEDDED_APP_SCOPE)
+// Module 13494 (RPC_EMBEDDED_APP_SCOPE)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import { RPCCommands } from "ME";
@@ -20,7 +20,7 @@ obj = {
     user = user.getUser(args.args.id);
     let tmp2 = null;
     if (null != user) {
-      tmp2 = importDefault(10559)(user);
+      tmp2 = importDefault(10560)(user);
     }
     return tmp2;
   }

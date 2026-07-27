@@ -1,10 +1,10 @@
-// Module ID: 11050
-// Function ID: 85957
+// Module ID: 11051
+// Function ID: 85962
 // Name: useAgeSpecificText
 // Dependencies: [6201, 2]
 // Exports: useAgeSpecificText
 
-// Module 11050 (useAgeSpecificText)
+// Module 11051 (useAgeSpecificText)
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useAgeSpecificText.tsx");
 
 export const useAgeSpecificText = function useAgeSpecificText(stringResult, intl2) {

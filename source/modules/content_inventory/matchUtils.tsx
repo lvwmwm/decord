@@ -1,5 +1,5 @@
 // Module ID: 8110
-// Function ID: 64655
+// Function ID: 64656
 // Name: isSpotifyEntry
 // Dependencies: [653, 8111, 8113, 8114, 8116, 8117, 7853, 2]
 // Exports: findMatchingEntry

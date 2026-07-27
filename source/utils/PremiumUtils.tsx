@@ -1,7 +1,7 @@
 // Module ID: 3777
-// Function ID: 29061
+// Function ID: 29062
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 3778, 1850, 3779, 3780, 3782, 3783, 653, 1852, 3791, 482, 3, 3792, 3789, 1873, 44, 1212, 2781, 3713, 3801, 3822, 5616, 3790, 12425, 664, 566, 7980, 4026, 13050, 5784, 1866, 1868, 9308, 2]
+// Dependencies: [57, 31, 3778, 1850, 3779, 3780, 3782, 3783, 653, 1852, 3791, 482, 3, 3792, 3789, 1873, 44, 1212, 2781, 3713, 3801, 3822, 5616, 3790, 12426, 664, 566, 7980, 4026, 13051, 5784, 1866, 1868, 9308, 2]
 // Exports: calculateYearlyPlanMonthlyRateAmount, calculateYearlyPlanMonthsSaved, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, formatInterval, formatIntervalDuration, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getFormattedRateForPlan, getInterval, getIntervalForInvoice, getIntervalString, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBoostOnlySubscription, isNewUser, isNitroLockedState, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumSubscriptionPlan, isSwitchingPlansDisabled, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState
 
 // Module 3777 (_createForOfIteratorHelperLoose)
@@ -1557,7 +1557,7 @@ function getUnactivatedFractionalPremiumDurationString(unactivatedUnits) {
   if (tmp > 0) {
     if (unactivatedUnits.fractionalState === constants5.NONE) {
       const obj = { days: require(1212) /* getSystemLocale */.t.fYmirx, hours: require(1212) /* getSystemLocale */.t["C3RO+g"], minutes: require(1212) /* getSystemLocale */.t.r77oHc };
-      const obj2 = require(12425) /* roundFPCountdownUnits */;
+      const obj2 = require(12426) /* roundFPCountdownUnits */;
       const result = obj2.roundFPCountdownUnits(require(3801) /* resetCache */.diffAsUnits(0, tmp * importDefault(664).Millis.HOUR));
       const obj3 = require(3801) /* resetCache */;
       return require(3801) /* resetCache */.unitsAsStrings(result, obj);
@@ -2097,10 +2097,10 @@ function isNewUser(createdAt) {
   return tmp;
 }
 function canUseQuestOrbMultiplier(perks) {
-  return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.QUEST_ORB_MULTIPLIER, perks);
+  return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.QUEST_ORB_MULTIPLIER, perks);
 }
 function canUseCollectibles(user) {
-  return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.COLLECTIBLES, user);
+  return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.COLLECTIBLES, user);
 }
 function formatPriceString(defaultPrice, interval) {
   const obj = require(5616) /* formatSingleCurrencyPrice */;
@@ -2471,78 +2471,78 @@ obj = {
   getDaysSincePremium,
   getDaysRemainingUntilSubscriptionCurrentPeriodEnds,
   canUseAnimatedEmojis(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.ANIMATED_EMOJIS, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.ANIMATED_EMOJIS, currentUser);
   },
   canUseEmojisEverywhere(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.EMOJIS_EVERYWHERE, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.EMOJIS_EVERYWHERE, currentUser);
   },
   canUseSoundboardEverywhere(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.SOUNDBOARD_EVERYWHERE, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.SOUNDBOARD_EVERYWHERE, currentUser);
   },
   canUseCustomCallSounds(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.CUSTOM_CALL_SOUNDS, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.CUSTOM_CALL_SOUNDS, currentUser);
   },
   canUploadLargeFiles(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.UPLOAD_LARGE_FILES, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.UPLOAD_LARGE_FILES, currentUser);
   },
   canUseBadges(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.PROFILE_BADGES, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.PROFILE_BADGES, currentUser);
   },
   canUseHighVideoUploadQuality(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
   },
   canEditDiscriminator(stateFromStores) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.CUSTOM_DISCRIMINATOR, stateFromStores);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.CUSTOM_DISCRIMINATOR, stateFromStores);
   },
   hasBoostDiscount(stateFromStores) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.BOOST_DISCOUNT, stateFromStores);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.BOOST_DISCOUNT, stateFromStores);
   },
   canUseAnimatedAvatar(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.ANIMATED_AVATAR, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.ANIMATED_AVATAR, currentUser);
   },
   canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
   },
   canUseIncreasedMessageLength(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.INCREASED_MESSAGE_LENGTH, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.INCREASED_MESSAGE_LENGTH, currentUser);
   },
   canUseIncreasedGuildCap(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.INCREASED_GUILD_LIMIT, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.INCREASED_GUILD_LIMIT, currentUser);
   },
   canRedeemPremiumPerks(isPremiumWithFractionalPremiumOnly) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
   },
   canUsePremiumProfileCustomization(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.PROFILE_PREMIUM_FEATURES, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.PROFILE_PREMIUM_FEATURES, currentUser);
   },
   canUsePremiumAppIcons(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.APP_ICONS, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.APP_ICONS, currentUser);
   },
   canUsePremiumGuildMemberProfile(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
   },
   canUseClientThemes(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.CLIENT_THEMES, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.CLIENT_THEMES, currentUser);
   },
   canStreamQuality(HIGH, user) {
     if (HIGH === obj.HIGH) {
-      let canUserUseResult = require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.STREAM_HIGH_QUALITY, user);
-      const obj2 = require(13050) /* _isNativeReflectConstruct */;
+      let canUserUseResult = require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.STREAM_HIGH_QUALITY, user);
+      const obj2 = require(13051) /* _isNativeReflectConstruct */;
     } else {
-      obj = require(13050) /* _isNativeReflectConstruct */;
-      canUserUseResult = obj.canUserUse(require(13050) /* _isNativeReflectConstruct */.STREAM_MID_QUALITY, user);
+      obj = require(13051) /* _isNativeReflectConstruct */;
+      canUserUseResult = obj.canUserUse(require(13051) /* _isNativeReflectConstruct */.STREAM_MID_QUALITY, user);
     }
     return canUserUseResult;
   },
   canUseQuestOrbMultiplier,
   hasFreeBoosts(stateFromStores) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.FREE_BOOSTS, stateFromStores);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.FREE_BOOSTS, stateFromStores);
   },
   canUseCustomStickersEverywhere(currentUser) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.STICKERS_EVERYWHERE, currentUser);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.STICKERS_EVERYWHERE, currentUser);
   },
   canUseCustomBackgrounds(id) {
-    return require(13050) /* _isNativeReflectConstruct */.canUserUse(require(13050) /* _isNativeReflectConstruct */.VIDEO_FILTER_ASSETS, id);
+    return require(13051) /* _isNativeReflectConstruct */.canUserUse(require(13051) /* _isNativeReflectConstruct */.VIDEO_FILTER_ASSETS, id);
   },
   canUseCollectibles,
   canUseMonthlyOrbs(perks) {

@@ -1,5 +1,5 @@
 // Module ID: 6856
-// Function ID: 59519
+// Function ID: 59520
 // Name: CaterpillarIllocon
 // Dependencies: [33, 5085, 6857, 2]
 // Exports: CaterpillarIllocon

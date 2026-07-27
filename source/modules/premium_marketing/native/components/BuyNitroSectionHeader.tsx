@@ -1,5 +1,5 @@
 // Module ID: 6616
-// Function ID: 58546
+// Function ID: 58547
 // Name: renderTitleWithNitroLink
 // Dependencies: [33, 4127, 2]
 // Exports: default

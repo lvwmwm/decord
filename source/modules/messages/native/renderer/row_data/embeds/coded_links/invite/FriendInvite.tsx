@@ -1,10 +1,10 @@
-// Module ID: 12290
-// Function ID: 95822
+// Module ID: 12291
+// Function ID: 95827
 // Name: createFriendInvite
 // Dependencies: [27, 3768, 5969, 7666, 1212, 3970, 1392, 2]
 // Exports: createFriendInvite
 
-// Module 12290 (createFriendInvite)
+// Module 12291 (createFriendInvite)
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { InviteTypes } from "InviteSendStates";

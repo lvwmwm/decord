@@ -1,5 +1,5 @@
 // Module ID: 5691
-// Function ID: 49144
+// Function ID: 49145
 // Name: receiveNetworkInfoformation
 // Dependencies: [5, 6, 7, 27, 4809, 5692, 1838, 653, 3, 1432, 1431, 5702, 664, 587, 686, 3989, 5693, 5703, 14, 2]
 // Exports: getSignalStrength, isSlowNetwork
@@ -65,26 +65,26 @@ let tmp7 = (() => {
       if (outer1_16) {
         tmp2 = globalThis;
         _setTimeout = setTimeout;
-        tmp3 = f49161;
-        tmp4 = f49158;
+        tmp3 = f49162;
+        tmp4 = f49159;
         num2 = 12;
         num3 = 1;
-        num = setTimeout(() => self.track(), f49161(f49158[12]).Millis.MINUTE);
+        num = setTimeout(() => self.track(), f49162(f49159[12]).Millis.MINUTE);
       }
       self.trackTimeout = num;
       num4 = 0;
       if (outer1_16) {
         tmp5 = globalThis;
         _setInterval = setInterval;
-        tmp6 = f49161;
-        tmp7 = f49158;
+        tmp6 = f49162;
+        tmp7 = f49159;
         num5 = 12;
         num6 = 5;
-        num4 = setInterval(() => self.writeExistingEventStorage(), 5 * f49161(f49158[12]).Millis.SECOND);
+        num4 = setInterval(() => self.writeExistingEventStorage(), 5 * f49162(f49159[12]).Millis.SECOND);
       }
       self.flushStorageInterval = num4;
       self.didEverTrack = false;
-      Storage = f49166(f49158[13]).Storage;
+      Storage = f49167(f49159[13]).Storage;
       value = Storage.get("previousNetStatsEvents");
       if (null == value) {
         value = [];
@@ -112,10 +112,10 @@ let tmp7 = (() => {
       if (outer1_7.isConnected()) {
         trackExistingEventsResult = self.trackExistingEvents();
       } else {
-        tmp8 = f49161;
-        tmp9 = f49158;
+        tmp8 = f49162;
+        tmp9 = f49159;
         num7 = 14;
-        obj = f49161(f49158[14]);
+        obj = f49162(f49159[14]);
         str = "CONNECTION_OPEN";
         subscription = obj.subscribe("CONNECTION_OPEN", self.trackExistingEvents);
       }

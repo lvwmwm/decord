@@ -1,10 +1,10 @@
-// Module ID: 12291
-// Function ID: 95824
+// Module ID: 12292
+// Function ID: 95829
 // Name: createGuildScheduledEventEmbed
-// Dependencies: [57, 27, 5751, 1391, 1348, 1838, 3768, 1850, 9436, 1354, 5969, 7666, 7670, 8164, 8154, 8148, 12205, 1212, 7673, 10873, 7658, 689, 10294, 4121, 8151, 4321, 8253, 8159, 12292, 8146, 1387, 2]
+// Dependencies: [57, 27, 5751, 1391, 1348, 1838, 3768, 1850, 9436, 1354, 5969, 7666, 7670, 8164, 8154, 8148, 12206, 1212, 7673, 10874, 7658, 689, 10295, 4121, 8151, 4321, 8253, 8159, 12293, 8146, 1387, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 12291 (createGuildScheduledEventEmbed)
+// Module 12292 (createGuildScheduledEventEmbed)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -67,16 +67,16 @@ function createGuildScheduledEventEmbed(type) {
   const eventTimeData = require(8148) /* getNextBucketedTime */.getEventTimeData(toISOStringResult);
   const obj4 = require(8148) /* getNextBucketedTime */;
   obj = { eventTimeData, isStage: entity_type === constants.STAGE_INSTANCE, theme, event: guildEvent };
-  const guildScheduledEventHeaderProps = require(12205) /* getGuildScheduledEventHeaderProps */.getGuildScheduledEventHeaderProps(obj);
+  const guildScheduledEventHeaderProps = require(12206) /* getGuildScheduledEventHeaderProps */.getGuildScheduledEventHeaderProps(obj);
   const color = guildScheduledEventHeaderProps.color;
   obj = { titleColor: colors.titleColor, borderColor: colors.borderColor, backgroundColor: colors.backgroundColor, thumbnailCornerRadius: 15, embedCanBeTapped: tmp13 };
   ({ icon, shouldChangeTextColor, text } = guildScheduledEventHeaderProps);
   const intl = require(1212) /* getSystemLocale */.intl;
   const stringResult = intl.string(require(1212) /* getSystemLocale */.t.DlcqlU);
-  const obj5 = require(12205) /* getGuildScheduledEventHeaderProps */;
+  const obj5 = require(12206) /* getGuildScheduledEventHeaderProps */;
   const assetUriForEmbed1 = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(7673));
   const obj8 = require(7670) /* frozen */;
-  const assetUriForEmbed2 = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(10873));
+  const assetUriForEmbed2 = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(10874));
   if (null != guild) {
     if (tmp7) {
       if (guildEvent.entity_type === constants.EXTERNAL) {
@@ -90,7 +90,7 @@ function createGuildScheduledEventEmbed(type) {
       const acceptLabelActiveBackgroundColor2 = colors.acceptLabelActiveBackgroundColor;
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
-      let assetUriForEmbed3 = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(10294));
+      let assetUriForEmbed3 = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(10295));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       let flag2 = result1;
       let stringResult2 = stringResult;
@@ -158,7 +158,7 @@ function createGuildScheduledEventEmbed(type) {
   }
   obj2["badgeCount"] = toLocaleStringResult;
   const obj19 = importDefault(8159);
-  obj2["badgeIcon"] = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(12292));
+  obj2["badgeIcon"] = require(7670) /* frozen */.getAssetUriForEmbed(importDefault(12293));
   let assetUriForEmbed4;
   if (null != eventLocationIconSource) {
     assetUriForEmbed4 = require(7670) /* frozen */.getAssetUriForEmbed(eventLocationIconSource);

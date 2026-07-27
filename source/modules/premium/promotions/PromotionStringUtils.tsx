@@ -1,10 +1,10 @@
-// Module ID: 12365
-// Function ID: 96145
+// Module ID: 12366
+// Function ID: 96150
 // Name: useFormatStringWithCommonPremiumParams
 // Dependencies: [3782, 1852, 566, 3777, 5616, 1212, 1921, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12365 (useFormatStringWithCommonPremiumParams)
+// Module 12366 (useFormatStringWithCommonPremiumParams)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
 

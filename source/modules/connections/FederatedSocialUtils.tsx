@@ -1,5 +1,5 @@
 // Module ID: 8934
-// Function ID: 70594
+// Function ID: 70595
 // Name: validateHandle
 // Dependencies: [653, 2]
 // Exports: getExampleHandle, validateHandle

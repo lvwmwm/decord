@@ -1,5 +1,5 @@
 // Module ID: 5998
-// Function ID: 53359
+// Function ID: 53360
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [29, 31, 1348, 1838, 653, 566, 5999, 6012, 5463, 6018, 5973, 2]
 // Exports: canInviteToActivity, useFirstMessage, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useSubscribeToGameInvitePostAuthors

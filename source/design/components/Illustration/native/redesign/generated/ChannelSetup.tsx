@@ -1,10 +1,10 @@
-// Module ID: 16422
-// Function ID: 128216
+// Module ID: 16434
+// Function ID: 128263
 // Name: getChannelSetupSource
-// Dependencies: [31, 27, 33, 6481, 16423, 16424, 16425, 3977, 2]
+// Dependencies: [31, 27, 33, 6481, 16435, 16436, 16437, 3977, 2]
 // Exports: ChannelSetup
 
-// Module 16422 (getChannelSetupSource)
+// Module 16434 (getChannelSetupSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

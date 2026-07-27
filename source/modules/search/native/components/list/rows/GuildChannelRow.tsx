@@ -1,9 +1,9 @@
-// Module ID: 15410
-// Function ID: 117663
+// Module ID: 15423
+// Function ID: 117712
 // Name: GuildChannelLabel
-// Dependencies: [31, 27, 9033, 33, 4131, 689, 4321, 15411, 4594, 15413, 15403, 2]
+// Dependencies: [31, 27, 9033, 33, 4131, 689, 4321, 15424, 4594, 15426, 15416, 2]
 
-// Module 15410 (GuildChannelLabel)
+// Module 15423 (GuildChannelLabel)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_LIST_SEARCH_LAYOUT as closure_5 } from "SearchAutocompleteSelectAnalyticsActions";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ function GuildChannelLabel(channel) {
   const tmp = callback();
   const tmp2 = importDefault(4321)(channel);
   obj = { channel, layout: closure_5, name: tmp2 };
-  obj.children = require(15411) /* ChannelContentComponent */.renderChannelContent(obj);
+  obj.children = require(15424) /* ChannelContentComponent */.renderChannelContent(obj);
   return <closure_4 channel={channel} layout={closure_5} name={tmp2} />;
 }
 ({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
@@ -41,7 +41,7 @@ const memoResult = require("result").memo(function GuildChannelRow(channel) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);
   const tmp3 = callback();
-  let obj1 = require(15413) /* LaunchpadChannelIcon */;
+  let obj1 = require(15426) /* LaunchpadChannelIcon */;
   obj = { channel, unread: false, mentionCount: 0, voiceStates };
   const channelAccessibilityProps = obj1.getChannelAccessibilityProps(obj);
   obj = {};
@@ -61,7 +61,7 @@ const memoResult = require("result").memo(function GuildChannelRow(channel) {
   obj2["onPress"] = onPress;
   obj2["trailing"] = trailing;
   obj2["extras"] = extras;
-  return jsx(require(15403) /* SearchListRow */.SearchListRow, {});
+  return jsx(require(15416) /* SearchListRow */.SearchListRow, {});
 });
 const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/rows/GuildChannelRow.tsx");
 

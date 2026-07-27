@@ -1,9 +1,9 @@
-// Module ID: 13148
-// Function ID: 101282
+// Module ID: 13149
+// Function ID: 101287
 // Name: useAccessibilityPatchedDescriptors
 // Dependencies: [31, 33, 5517, 1457, 9041, 2]
 
-// Module 13148 (useAccessibilityPatchedDescriptors)
+// Module 13149 (useAccessibilityPatchedDescriptors)
 import result from "result";
 import { jsx } from "jsxProd";
 import Link from "Link";

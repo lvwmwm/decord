@@ -1,10 +1,10 @@
-// Module ID: 10482
-// Function ID: 81318
+// Module ID: 10483
+// Function ID: 81323
 // Name: useVideoStreamErrorContext
-// Dependencies: [1194, 10483, 4192, 566, 8784, 2]
+// Dependencies: [1194, 10484, 4192, 566, 8784, 2]
 // Exports: default
 
-// Module 10482 (useVideoStreamErrorContext)
+// Module 10483 (useVideoStreamErrorContext)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { MediaEngineContextTypes } from "DesktopSources";

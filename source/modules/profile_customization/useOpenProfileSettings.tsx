@@ -1,5 +1,5 @@
 // Module ID: 9738
-// Function ID: 75843
+// Function ID: 75844
 // Name: useOpenProfileSettings
 // Dependencies: [31, 1850, 9739, 653, 662, 7877, 9740, 9741, 6554, 2]
 // Exports: default

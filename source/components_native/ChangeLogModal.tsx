@@ -1,13 +1,13 @@
-// Module ID: 14436
-// Function ID: 110366
+// Module ID: 14437
+// Function ID: 110371
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 1906, 33, 4131, 689, 3843, 8053, 675, 14437, 5085, 8080, 1212, 4661, 8278, 9568, 1273, 7806, 1450, 7807, 1457, 5087, 3713, 7808, 4127, 4338, 5517, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 1906, 33, 4131, 689, 3843, 8053, 675, 14438, 5085, 8080, 1212, 4661, 8278, 9568, 1273, 7806, 1450, 7807, 1457, 5087, 3713, 7808, 4127, 4338, 5517, 2]
 // Exports: default
 
-// Module 14436 (_callSuper)
+// Module 14437 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
-import module_14437 from "module_14437";
+import module_14438 from "module_14438";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "module_4338";
@@ -32,7 +32,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return module_14437(arg0, constructResult);
+  return module_14438(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -158,13 +158,13 @@ class ChangeLogScreen {
       tmp15Result = tmp15(tmp16, tmp20);
     } else {
       tmp12 = jsx;
-      tmp13 = f110381;
+      tmp13 = f110386;
       obj5 = {};
       obj5.onClose = fn;
       obj5.height = height;
       obj5.width = width;
       obj5.changeLog = changelog;
-      tmp14 = jsx(f110381, obj5);
+      tmp14 = jsx(f110386, obj5);
     }
     return tmp14;
   }

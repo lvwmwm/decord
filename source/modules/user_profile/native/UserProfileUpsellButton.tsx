@@ -1,10 +1,10 @@
-// Module ID: 13628
-// Function ID: 104755
+// Module ID: 13629
+// Function ID: 104760
 // Name: UserProfileUpsellButton
 // Dependencies: [31, 653, 1852, 33, 4131, 5462, 6187, 675, 4544, 6137, 1212, 6570, 2]
 // Exports: default
 
-// Module 13628 (UserProfileUpsellButton)
+// Module 13629 (UserProfileUpsellButton)
 import result from "result";
 import ME from "ME";
 import { PremiumUpsellTypes } from "GuildFeatures";

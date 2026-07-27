@@ -1,9 +1,9 @@
-// Module ID: 16052
-// Function ID: 124171
+// Module ID: 16064
+// Function ID: 124218
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 57, 4145, 4579, 1194, 4178, 4192, 8773, 21, 1282, 587, 1331, 8772, 22, 12893, 8971, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 57, 4145, 4579, 1194, 4178, 4192, 8773, 21, 1282, 587, 1331, 8772, 22, 12894, 8971, 5078, 2]
 
-// Module 16052 (_isNativeReflectConstruct)
+// Module 16064 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -334,9 +334,9 @@ function handleSetLocalVolume(arg0) {
       callback3(remoteSessionId, userId, context, obj);
     }
     obj = { volume };
-    const result = require(12893) /* makeContextUserKey */.updatePendingSettings(context, userId, obj);
+    const result = require(12894) /* makeContextUserKey */.updatePendingSettings(context, userId, obj);
     lib();
-    const obj2 = require(12893) /* makeContextUserKey */;
+    const obj2 = require(12894) /* makeContextUserKey */;
   }
 }
 function handleSetLocalMute(arg0) {
@@ -344,7 +344,7 @@ function handleSetLocalMute(arg0) {
   let userId;
   ({ context, userId } = arg0);
   if (userId !== store.getId()) {
-    let obj = require(12893) /* makeContextUserKey */;
+    let obj = require(12894) /* makeContextUserKey */;
     obj = { muted: closure_12.isLocalMute(userId, context) };
     const result = obj.updatePendingSettings(context, userId, obj);
     lib.cancel();
@@ -356,7 +356,7 @@ function handleSetLocalSoundboardMute(userId) {
   userId = userId.userId;
   if (userId !== store.getId()) {
     const result = localSoundboardMuted.isLocalSoundboardMuted(userId);
-    let obj = require(12893) /* makeContextUserKey */;
+    let obj = require(12894) /* makeContextUserKey */;
     obj = { soundboardMuted: result };
     const result1 = obj.updatePendingSettings(userId.context, userId, obj);
     lib.cancel();

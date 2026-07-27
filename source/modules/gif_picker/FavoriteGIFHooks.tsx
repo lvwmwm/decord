@@ -1,5 +1,5 @@
 // Module ID: 9540
-// Function ID: 74468
+// Function ID: 74469
 // Name: useFavoriteGIFs
 // Dependencies: [31, 9541, 22, 2]
 // Exports: useIsFavoriteGIF, useShouldShowTooltipOnFavorite, useSortedFavoriteGIFs

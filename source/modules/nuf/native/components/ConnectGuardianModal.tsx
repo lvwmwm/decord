@@ -1,10 +1,10 @@
-// Module ID: 16193
-// Function ID: 125567
+// Module ID: 16205
+// Function ID: 125614
 // Name: ConnectGuardianModal
-// Dependencies: [31, 27, 653, 5766, 33, 4131, 689, 1557, 16194, 675, 5584, 4127, 1212, 2199, 13846, 4544, 2]
+// Dependencies: [31, 27, 653, 5766, 33, 4131, 689, 1557, 16206, 675, 5584, 4127, 1212, 2199, 13847, 4544, 2]
 // Exports: default
 
-// Module 16193 (ConnectGuardianModal)
+// Module 16205 (ConnectGuardianModal)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -39,7 +39,7 @@ const result = require("ME").fileFinishedImporting("modules/nuf/native/component
 export default function ConnectGuardianModal(route) {
   const onComplete = route.route.params.onComplete;
   let tmp = _createForOfIteratorHelperLoose();
-  let obj = onComplete(16194);
+  let obj = onComplete(16206);
   const connectGuardianGate = obj.useConnectGuardianGate();
   const dependencyMap = React.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -86,7 +86,7 @@ export default function ConnectGuardianModal(route) {
     const items4 = [callback(onComplete(4127).Text, obj6), ];
     const obj7 = { shareActions: "compact" };
     ({ linkCode: obj10.linkCode, expiresAt: obj10.expiresAt, refresh: obj10.onRefresh } = connectGuardianGate);
-    items4[1] = callback(onComplete(13846).ConnectGuardianCard, obj7);
+    items4[1] = callback(onComplete(13847).ConnectGuardianCard, obj7);
     obj5.children = items4;
     items3[1] = callback2(View, obj5);
     const obj8 = { style: tmp.grow };

@@ -1,5 +1,5 @@
 // Module ID: 5849
-// Function ID: 51598
+// Function ID: 51599
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 4130, 1348, 4350, 3768, 1850, 5835, 5850, 1327, 5852, 1882, 4359, 1360, 1282, 5856, 2]
 // Exports: getUnscannedMediaIds, isEligibleForScanning, isMediaObscuredForHarmTypes, messageHasObscurableMedia

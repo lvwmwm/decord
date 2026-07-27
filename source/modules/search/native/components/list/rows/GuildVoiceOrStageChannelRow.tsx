@@ -1,9 +1,9 @@
-// Module ID: 15406
-// Function ID: 117645
+// Module ID: 15419
+// Function ID: 117694
 // Name: GuildVoiceChannelSubtitle
-// Dependencies: [31, 27, 1353, 9033, 33, 10223, 3970, 1212, 4131, 566, 15407, 4964, 4958, 15408, 15410, 11381, 2]
+// Dependencies: [31, 27, 1353, 9033, 33, 10224, 3970, 1212, 4131, 566, 15420, 4964, 4958, 15421, 15423, 11382, 2]
 
-// Module 15406 (GuildVoiceChannelSubtitle)
+// Module 15419 (GuildVoiceChannelSubtitle)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -140,7 +140,7 @@ function GuildVoiceChannelExtras(arg0) {
   if (tmp6) {
     obj = { style: tmp.users };
     obj = { users, max: 5, guildId: channel.guild_id, layout: closure_6, audienceCount: tmp3 };
-    obj.children = jsx(importDefault(15408), { users, max: 5, guildId: channel.guild_id, layout: closure_6, audienceCount: tmp3 });
+    obj.children = jsx(importDefault(15421), { users, max: 5, guildId: channel.guild_id, layout: closure_6, audienceCount: tmp3 });
     tmp6 = <View users={users} max={5} guildId={channel.guild_id} layout={closure_6} audienceCount={tmp3} />;
   }
   obj.children = tmp6;
@@ -169,13 +169,13 @@ const memoResult = importAllResult.memo(function GuildVoiceChannelRow(channel) {
   if (null == trailing) {
     obj = { style: tmp.trailing };
     const obj1 = { channel, voiceStates };
-    obj.children = jsx(channel(11381).VocalChannelJoinButton, { channel, voiceStates });
+    obj.children = jsx(channel(11382).VocalChannelJoinButton, { channel, voiceStates });
     trailing = <View style={tmp.trailing} />;
   }
   obj.trailing = trailing;
   const obj2 = { channel, voiceStates, users: mapped };
   obj.extras = <GuildVoiceChannelExtras channel={channel} voiceStates={voiceStates} users={mapped} />;
-  return tmp4(onPress(15410), obj);
+  return tmp4(onPress(15423), obj);
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/list/rows/GuildVoiceOrStageChannelRow.tsx");
 

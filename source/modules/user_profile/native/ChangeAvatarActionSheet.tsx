@@ -1,10 +1,10 @@
-// Module ID: 13643
-// Function ID: 104851
+// Module ID: 13644
+// Function ID: 104856
 // Name: ChangeAvatarActionSheet
-// Dependencies: [31, 27, 1850, 653, 33, 4131, 689, 566, 3777, 5498, 5186, 1212, 6570, 5501, 5164, 7575, 13628, 2]
+// Dependencies: [31, 27, 1850, 653, 33, 4131, 689, 566, 3777, 5498, 5186, 1212, 6570, 5501, 5164, 7575, 13629, 2]
 // Exports: default
 
-// Module 13643 (ChangeAvatarActionSheet)
+// Module 13644 (ChangeAvatarActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -102,12 +102,12 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
     const obj11 = { analyticsObject: AnalyticsObjects.ANIMATED_AVATAR };
     const intl7 = require(1212) /* getSystemLocale */.intl;
     obj11.label = intl7.string(require(1212) /* getSystemLocale */.t.mr4K7D);
-    obj10.children = callback(importDefault(13628), obj11);
+    obj10.children = callback(importDefault(13629), obj11);
     items4[1] = callback(View, obj10);
     obj8.children = items4;
     obj4.subLabel = callback2(closure_8, obj8);
     showAnimatedAvatarUpsell = callback(require(5164) /* TableRowInner */.TableRow, obj4);
-    const tmp21 = importDefault(13628);
+    const tmp21 = importDefault(13629);
   }
   items2[2] = showAnimatedAvatarUpsell;
   let tmp23 = null != handleEditAvatarDecorationSelect;

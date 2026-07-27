@@ -1,5 +1,5 @@
 // Module ID: 9551
-// Function ID: 74520
+// Function ID: 74521
 // Name: GifIcon
 // Dependencies: [31, 33, 689, 3834, 7800, 2]
 // Exports: GifIcon

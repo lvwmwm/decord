@@ -1,10 +1,10 @@
-// Module ID: 14748
-// Function ID: 112421
+// Module ID: 14749
+// Function ID: 112426
 // Name: FramePreviewOverrideSection
-// Dependencies: [57, 31, 27, 5770, 5786, 8022, 33, 4131, 689, 8592, 4127, 4545, 624, 7896, 14749, 1273, 9728, 2]
+// Dependencies: [57, 31, 27, 5770, 5786, 8022, 33, 4131, 689, 8592, 4127, 4545, 624, 7896, 14750, 1273, 9728, 2]
 // Exports: default
 
-// Module 14748 (FramePreviewOverrideSection)
+// Module 14749 (FramePreviewOverrideSection)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

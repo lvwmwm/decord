@@ -1,10 +1,10 @@
-// Module ID: 14459
-// Function ID: 110529
+// Module ID: 14460
+// Function ID: 110534
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 57, 31, 27, 653, 33, 4131, 689, 6684, 587, 10288, 1557, 9171, 4661, 1212, 8134, 10290, 12230, 6619, 4127, 2]
+// Dependencies: [5, 57, 31, 27, 653, 33, 4131, 689, 6684, 587, 10289, 1557, 9171, 4661, 1212, 8134, 10291, 12231, 6619, 4127, 2]
 // Exports: default
 
-// Module 14459 (UserSettingsPushNotificationLogs)
+// Module 14460 (UserSettingsPushNotificationLogs)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -100,7 +100,7 @@ export default function UserSettingsPushNotificationLogs() {
   obj1.accessibilityLabel = intl.string(first(1212).t.leICvh);
   // CreateGeneratorClosureLongIndex (0x67)
   obj1.onPress = callback(tmp);
-  obj1.children = callback3(first(12230).ShareIcon, {});
+  obj1.children = callback3(first(12231).ShareIcon, {});
   items1[1] = callback3(first(4661).PressableOpacity, obj1);
   obj.children = items1;
   let items2 = [callback4(View, obj), ];

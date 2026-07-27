@@ -1,9 +1,9 @@
-// Module ID: 14426
-// Function ID: 110282
+// Module ID: 14427
+// Function ID: 110287
 // Name: radio
-// Dependencies: [7697, 10414, 3804, 1282, 1212, 10059, 10415, 2]
+// Dependencies: [7697, 10415, 3804, 1282, 1212, 10059, 10416, 2]
 
-// Module 14426 (radio)
+// Module 14427 (radio)
 import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
 import createToggle from "createToggle";
 

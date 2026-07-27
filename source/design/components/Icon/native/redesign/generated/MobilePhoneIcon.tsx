@@ -1,5 +1,5 @@
 // Module ID: 9140
-// Function ID: 71798
+// Function ID: 71799
 // Name: MobilePhoneIcon
 // Dependencies: [31, 33, 689, 3834, 9141, 2]
 // Exports: MobilePhoneIcon

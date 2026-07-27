@@ -1,5 +1,5 @@
 // Module ID: 7890
-// Function ID: 62910
+// Function ID: 62911
 // Name: getImageFormat
 // Dependencies: [653, 1392, 1426, 1440, 1212, 7891, 1327, 2]
 // Exports: createPendingImage, generateAvatarDescription, generateRecentAvatarFileDetails, getPendingAvatarSrc

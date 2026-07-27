@@ -1,10 +1,10 @@
-// Module ID: 10396
-// Function ID: 80220
+// Module ID: 10397
+// Function ID: 80225
 // Name: updateChannelUnreadSettings
-// Dependencies: [4326, 653, 4327, 662, 5079, 10251, 5074, 2]
+// Dependencies: [4326, 653, 4327, 662, 5079, 10252, 5074, 2]
 // Exports: default
 
-// Module 10396 (updateChannelUnreadSettings)
+// Module 10397 (updateChannelUnreadSettings)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticsObjects } from "ME";
 import { UnreadSetting } from "ReadStateTypes";
@@ -15,7 +15,7 @@ let result = require("ReadStateTypes").fileFinishedImporting("modules/notificati
 
 export default function updateChannelUnreadSettings(guildId, id, UNREADS_ONLY_MENTIONS) {
   let obj = importDefault(5079);
-  obj = { flags: require(10251) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags.getChannelIdFlags(guildId, id), UNREADS_ONLY_MENTIONS) };
+  obj = { flags: require(10252) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags.getChannelIdFlags(guildId, id), UNREADS_ONLY_MENTIONS) };
   const NotificationLabel = require(5074) /* differ */.NotificationLabel;
   if (UNREADS_ONLY_MENTIONS === constants.UNREADS_ALL_MESSAGES) {
     let ONLY_MENTIONS = UnreadSetting.ALL_MESSAGES;

@@ -1,5 +1,5 @@
 // Module ID: 3599
-// Function ID: 27803
+// Function ID: 27804
 // Name: nextFriday
 // Dependencies: [3598, 3211]
 // Exports: default

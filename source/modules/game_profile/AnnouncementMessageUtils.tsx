@@ -1,5 +1,5 @@
 // Module ID: 8583
-// Function ID: 68188
+// Function ID: 68189
 // Name: toAnnouncementMessages
 // Dependencies: [3769, 1882, 4359, 4318, 8584, 4352, 7937, 1212, 1443, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages

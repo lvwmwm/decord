@@ -1,9 +1,9 @@
-// Module ID: 13540
-// Function ID: 104233
+// Module ID: 13541
+// Function ID: 104238
 // Name: GestureWrapper
-// Dependencies: [57, 31, 27, 10192, 1348, 1907, 653, 1355, 33, 4131, 689, 3992, 4664, 13541, 4341, 1207, 1185, 3983, 4479, 5580, 13543, 13544, 3982, 1198, 4067, 675, 3984, 13545, 5586, 1457, 1327, 13546, 477, 10833, 13547, 13555, 3907, 13557, 1453, 10600, 10806, 10812, 13558, 4002, 13559, 13561, 13563, 13564, 13565, 14774, 14782, 14783, 1184, 2]
+// Dependencies: [57, 31, 27, 10193, 1348, 1907, 653, 1355, 33, 4131, 689, 3992, 4664, 13542, 4341, 1207, 1185, 3983, 4479, 5580, 13544, 13545, 3982, 1198, 4067, 675, 3984, 13546, 5586, 1457, 1327, 13547, 477, 10834, 13548, 13556, 3907, 13558, 1453, 10601, 10807, 10813, 13559, 4002, 13560, 13562, 13564, 13565, 13566, 14775, 14783, 14784, 1184, 2]
 
-// Module 13540 (GestureWrapper)
+// Module 13541 (GestureWrapper)
 import _slicedToArray from "_slicedToArray";
 import useRequestGatewaySocket from "useRequestGatewaySocket";
 import { NativeModules } from "timestamp";
@@ -39,7 +39,7 @@ function GestureWrapper(children) {
     items[1] = rootBackgroundColor;
     return items;
   }, items);
-  return callback2(importDefault(13541), { style, children: children.children });
+  return callback2(importDefault(13542), { style, children: children.children });
 }
 function handleNavigationOnReady() {
   importDefault(4341).flush();
@@ -165,7 +165,7 @@ let obj2 = { useTrackNavigatorScreenImpression: require("useTrackNavigatorScreen
 const result1 = require("isNonEmptyString").profiledRootComponent(function AppContainer(children) {
   children = children.children;
   const appEntryKey = children.appEntryKey;
-  const requestGatewaySocket = appEntryKey(13546).useRequestGatewaySocket("AppContainer:" + appEntryKey);
+  const requestGatewaySocket = appEntryKey(13547).useRequestGatewaySocket("AppContainer:" + appEntryKey);
   const effect = React.useEffect(() => {
     if (!outer1_17) {
       const RNScreensTurboModule = children.RNScreensTurboModule;

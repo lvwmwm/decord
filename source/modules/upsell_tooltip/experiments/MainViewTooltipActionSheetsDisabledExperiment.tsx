@@ -1,9 +1,9 @@
-// Module ID: 15691
-// Function ID: 121057
+// Module ID: 15703
+// Function ID: 121104
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 15691 (apexExperiment)
+// Module 15703 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-01-mobile-action-sheet-killswitch", defaultConfig: { disabled: false }, variations: { [0]: { disabled: false }, [1]: { disabled: true } } };

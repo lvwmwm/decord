@@ -1,5 +1,5 @@
 // Module ID: 7827
-// Function ID: 62450
+// Function ID: 62451
 // Name: nativeStyleProperties
 // Dependencies: [27, 4123, 1348, 1838, 4124, 7655, 653, 4131, 3975, 689, 5994, 4352, 1449, 2]
 

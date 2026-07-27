@@ -1,5 +1,5 @@
 // Module ID: 5970
-// Function ID: 53099
+// Function ID: 53100
 // Name: getEstablishedDate
 // Dependencies: [1352, 653, 1387, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile

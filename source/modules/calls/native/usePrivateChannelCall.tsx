@@ -1,10 +1,10 @@
-// Module ID: 12157
-// Function ID: 95223
+// Module ID: 12158
+// Function ID: 95228
 // Name: usePrivateChannelCall
 // Dependencies: [5, 31, 1348, 566, 1212, 8762, 4141, 2]
 // Exports: default
 
-// Module 12157 (usePrivateChannelCall)
+// Module 12158 (usePrivateChannelCall)
 import getPrivateChannelCall from "getPrivateChannelCall";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

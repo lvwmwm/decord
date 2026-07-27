@@ -1,7 +1,7 @@
 // Module ID: 5629
-// Function ID: 48046
+// Function ID: 48047
 // Name: vibegrationsAppIdFromTopic
-// Dependencies: [5, 4168, 5630, 1838, 3759, 5653, 653, 5654, 566, 5655, 483, 5656, 5463, 5657, 12547, 2]
+// Dependencies: [5, 4168, 5630, 1838, 3759, 5653, 653, 5654, 566, 5655, 483, 5656, 5463, 5657, 12548, 2]
 // Exports: canManageVibegrations, isVibegrationsChannelCandidate, publishPreviewAndReauthorizeIfPermissionsChanged, useCanManageVibegrations, useIsVibegrationsChannelCandidate, vibegrationsTopicForApp
 
 // Module 5629 (vibegrationsAppIdFromTopic)

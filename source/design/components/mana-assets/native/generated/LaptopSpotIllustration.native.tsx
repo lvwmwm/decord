@@ -1,5 +1,5 @@
 // Module ID: 7196
-// Function ID: 60029
+// Function ID: 60030
 // Name: LaptopSpotIllustration
 // Dependencies: [33, 5085, 7197, 2]
 // Exports: LaptopSpotIllustration

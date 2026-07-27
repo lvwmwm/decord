@@ -1,10 +1,10 @@
-// Module ID: 15550
-// Function ID: 119712
+// Module ID: 15563
+// Function ID: 119761
 // Name: UserProfileYourFriendsCard
-// Dependencies: [57, 31, 27, 5892, 3768, 1850, 653, 33, 1273, 4131, 689, 566, 11988, 8748, 22, 1327, 4661, 1212, 4127, 5512, 2]
+// Dependencies: [57, 31, 27, 5892, 3768, 1850, 653, 33, 1273, 4131, 689, 566, 11989, 8748, 22, 1327, 4661, 1212, 4127, 5512, 2]
 // Exports: default
 
-// Module 15550 (UserProfileYourFriendsCard)
+// Module 15563 (UserProfileYourFriendsCard)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -48,7 +48,7 @@ export default function UserProfileYourFriendsCard(arg0) {
   const items1 = [closure_7];
   stateFromStoresArray1 = require(566) /* initialize */.useStateFromStoresArray(items1, () => outer1_7.getFriendIDs());
   const obj2 = require(566) /* initialize */;
-  const gameRelationshipsByType = require(11988) /* useGameRelationshipsForUserByType */.useGameRelationshipsByType(RelationshipTypes.FRIEND);
+  const gameRelationshipsByType = require(11989) /* useGameRelationshipsForUserByType */.useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
     const userAffinitiesV2 = tmp(8748).fetchUserAffinitiesV2();
   }, []);

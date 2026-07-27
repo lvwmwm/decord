@@ -1,10 +1,10 @@
-// Module ID: 10312
-// Function ID: 79716
+// Module ID: 10313
+// Function ID: 79721
 // Name: useReactionPermissions
-// Dependencies: [57, 3760, 1918, 4947, 3759, 653, 566, 3765, 7699, 5996, 10313, 2]
+// Dependencies: [57, 3760, 1918, 4947, 3759, 653, 566, 3765, 7699, 5996, 10314, 2]
 // Exports: default
 
-// Module 10312 (useReactionPermissions)
+// Module 10313 (useReactionPermissions)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

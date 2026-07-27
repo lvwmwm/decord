@@ -1,5 +1,5 @@
 // Module ID: 7926
-// Function ID: 63105
+// Function ID: 63106
 // Name: rgbToHex
 // Dependencies: [31, 653, 7927, 665, 2]
 // Exports: useVideoTileGradientColors

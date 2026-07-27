@@ -1,5 +1,5 @@
 // Module ID: 6507
-// Function ID: 58147
+// Function ID: 58148
 // Name: fetchActivePromotions
 // Dependencies: [5, 1922, 6208, 6207, 1852, 653, 686, 6508, 507, 5822, 1331, 1313, 6509, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions

@@ -1,10 +1,10 @@
-// Module ID: 14051
-// Function ID: 107555
+// Module ID: 14052
+// Function ID: 107560
 // Name: useIsMobileQuestDockRenderedBase
-// Dependencies: [5, 31, 3824, 4168, 5932, 4977, 9405, 482, 14052, 5947, 566, 4980, 5930, 14075, 10191, 3982, 6504, 10427, 10428, 9415, 5955, 10442, 5953, 10542, 5463, 5665, 10817, 2]
+// Dependencies: [5, 31, 3824, 4168, 5932, 4977, 9405, 482, 14053, 5947, 566, 4980, 5930, 14076, 10192, 3982, 6504, 10428, 10429, 9415, 5955, 10443, 5953, 10543, 5463, 5665, 10818, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 14051 (useIsMobileQuestDockRenderedBase)
+// Module 14052 (useIsMobileQuestDockRenderedBase)
 import closure_3 from "QuestsExperimentLocations";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -39,8 +39,8 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }
   const obj = require(566) /* initialize */;
   const tmp8 = null != claimedAt;
-  const isQuestExpired = require(10427) /* _createForOfIteratorHelperLoose */.useIsQuestExpired(mobileQuestDock);
-  require(10428) /* getIsEligibleForQuests */;
+  const isQuestExpired = require(10428) /* _createForOfIteratorHelperLoose */.useIsQuestExpired(mobileQuestDock);
+  require(10429) /* getIsEligibleForQuests */;
   let tmp12 = null != mobileQuestDock;
   if (stateFromStores) {
     if (tmp12) {
@@ -161,8 +161,8 @@ export const useMobileQuestDock = function useMobileQuestDock() {
 export const useIsMobileQuestDockVisibleToUser = function useIsMobileQuestDockVisibleToUser(arg0, arg1) {
   let tmp = arg1;
   const _require = arg0;
-  const isChannelFocused = _require(10191).useIsChannelFocused();
-  const obj = _require(10191);
+  const isChannelFocused = _require(10192).useIsChannelFocused();
+  const obj = _require(10192);
   const currentNavigationRouteName = _require(3982).useCurrentNavigationRouteName();
   const obj2 = _require(3982);
   let tmp4 = null != _require(3982).coerceGuildsRoute({ name: currentNavigationRouteName });

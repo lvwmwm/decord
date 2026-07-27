@@ -1,9 +1,9 @@
-// Module ID: 16640
-// Function ID: 129878
+// Module ID: 16652
+// Function ID: 129925
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 102, 18, 4097, 15682, 2]
+// Dependencies: [6, 7, 15, 17, 102, 18, 4097, 15694, 2]
 
-// Module 16640 (_isNativeReflectConstruct)
+// Module 16652 (_isNativeReflectConstruct)
 import removeInAppBrowserCloseSubscription from "removeInAppBrowserCloseSubscription";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

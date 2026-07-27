@@ -1,10 +1,10 @@
-// Module ID: 10284
-// Function ID: 79516
+// Module ID: 10285
+// Function ID: 79521
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 3, 491, 4675, 1184, 2]
 // Exports: getAttachments
 
-// Module 10284 (_createForOfIteratorHelperLoose)
+// Module 10285 (_createForOfIteratorHelperLoose)
 import set from "set";
 import importDefaultResult from "openImagePickerUnhandled";
 

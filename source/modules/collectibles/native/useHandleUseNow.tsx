@@ -1,5 +1,5 @@
 // Module ID: 9734
-// Function ID: 75819
+// Function ID: 75820
 // Name: useHandleUseNow
 // Dependencies: [31, 8699, 4099, 4338, 3983, 3832, 1212, 9735, 9738, 2]
 // Exports: useHandleUseNow

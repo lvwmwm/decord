@@ -1,16 +1,16 @@
-// Module ID: 12960
-// Function ID: 100539
+// Module ID: 12961
+// Function ID: 100544
 // Name: useGuildSettingsPickerFeature
-// Dependencies: [57, 31, 3759, 12961, 12962, 1212, 566, 2]
+// Dependencies: [57, 31, 3759, 12962, 12963, 1212, 566, 2]
 // Exports: useGuildSettingsPickerFeature
 
-// Module 12960 (useGuildSettingsPickerFeature)
+// Module 12961 (useGuildSettingsPickerFeature)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
-let obj = { "server-subscriptions-onboarding": require("module_12961"), "server-subscriptions-create-tier-from-template": require("module_12962") };
+let obj = { "server-subscriptions-onboarding": require("module_12962"), "server-subscriptions-create-tier-from-template": require("module_12963") };
 let closure_6 = {
   title() {
     const intl = require(1212) /* getSystemLocale */.intl;

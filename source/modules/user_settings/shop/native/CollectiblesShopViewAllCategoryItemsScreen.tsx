@@ -1,10 +1,10 @@
-// Module ID: 14571
-// Function ID: 111222
+// Module ID: 14572
+// Function ID: 111227
 // Name: CollectiblesShopViewAllCategoryItemsScreen
-// Dependencies: [31, 33, 6273, 1456, 14572, 2]
+// Dependencies: [31, 33, 6273, 1456, 14573, 2]
 // Exports: default
 
-// Module 14571 (CollectiblesShopViewAllCategoryItemsScreen)
+// Module 14572 (CollectiblesShopViewAllCategoryItemsScreen)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -22,5 +22,5 @@ export default function CollectiblesShopViewAllCategoryItemsScreen() {
   obj = {};
   const obj2 = stackNavigation(1456);
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(importDefault(14572), {});
+  return jsx(importDefault(14573), {});
 };

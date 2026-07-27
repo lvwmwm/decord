@@ -1,10 +1,10 @@
-// Module ID: 10609
-// Function ID: 82682
+// Module ID: 10610
+// Function ID: 82687
 // Name: useIsStreamFocused
 // Dependencies: [4144, 4149, 566, 2]
 // Exports: useIsStreamFocused
 
-// Module 10609 (useIsStreamFocused)
+// Module 10610 (useIsStreamFocused)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isStreamParticipant } from "ParticipantTypes";
 

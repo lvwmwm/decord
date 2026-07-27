@@ -1,9 +1,9 @@
-// Module ID: 15898
-// Function ID: 122803
+// Module ID: 15910
+// Function ID: 122850
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 1347, 4145, 12719, 4150, 1194, 1348, 3759, 4146, 1850, 4147, 4204, 9976, 9979, 653, 12724, 33, 4131, 9982, 689, 9975, 4945, 4310, 4195, 566, 5515, 4127, 1212, 11963, 5468, 3749, 15889, 1450, 3992, 10541, 10578, 10607, 4661, 15887, 4544, 8364, 480, 6673, 8792, 4320, 5164, 9851, 10399, 5462, 5482, 675, 15855, 4543, 4477, 7620, 15777, 15899, 2]
+// Dependencies: [5, 57, 31, 27, 1347, 4145, 12720, 4150, 1194, 1348, 3759, 4146, 1850, 4147, 4204, 9976, 9979, 653, 12725, 33, 4131, 9982, 689, 9975, 4945, 4310, 4195, 566, 5515, 4127, 1212, 11964, 5468, 3749, 15901, 1450, 3992, 10542, 10579, 10608, 4661, 15899, 4544, 8364, 480, 6673, 8792, 4320, 5164, 9851, 10400, 5462, 5482, 675, 15867, 4543, 4477, 7620, 15789, 15911, 2]
 
-// Module 15898 (_createForOfIteratorHelperLoose)
+// Module 15910 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import module_7620 from "module_7620";
 import importAllResult from "VoicePanelStreamPreview";
@@ -649,7 +649,7 @@ const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
   const context = importAllResult.useContext(guildId(9975));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(15777)(channelId);
+  const tmp2 = guildId(15789)(channelId);
   const dependencyMap = tmp2;
   let obj = channelId(566);
   let items = [closure_16, closure_8, closure_6, closure_9];
@@ -690,7 +690,7 @@ const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
       const obj = { members: voiceStatesForChannelAlt, activities: embeddedActivitiesForChannel, streamingMembers: items, blockedMembers: blockedUsersForVoiceChannel, ignoredMembers: ignoredUsersForVoiceChannel };
       return obj;
     }
-  }, items1, channelId(15899).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(15911).areVoicePanelPreJoinContentPropsEqual);
   obj = { item: stateFromStores, renderItem };
   return callback2(channelId(4477).TransitionItem, obj);
 });

@@ -1,5 +1,5 @@
 // Module ID: 7619
-// Function ID: 60866
+// Function ID: 60867
 // Name: _isNativeReflectConstruct
 // Dependencies: [29, 15, 17, 18, 57, 6, 7, 31, 27, 33, 22, 620, 5515, 4127, 477, 3992, 7620, 7621, 5189, 7622, 5217, 3995, 2]
 // Exports: getItemSizeOverrideKey

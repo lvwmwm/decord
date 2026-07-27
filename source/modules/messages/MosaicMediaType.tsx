@@ -1,5 +1,5 @@
 // Module ID: 9859
-// Function ID: 76429
+// Function ID: 76430
 // Name: isVisualMedia
 // Dependencies: [653, 4318, 1360, 9860, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia

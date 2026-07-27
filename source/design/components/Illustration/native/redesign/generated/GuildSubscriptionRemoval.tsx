@@ -1,10 +1,10 @@
-// Module ID: 12614
-// Function ID: 97545
+// Module ID: 12615
+// Function ID: 97550
 // Name: getGuildSubscriptionRemovalSource
-// Dependencies: [31, 27, 33, 6481, 12615, 12616, 12617, 3977, 2]
+// Dependencies: [31, 27, 33, 6481, 12616, 12617, 12618, 3977, 2]
 // Exports: GuildSubscriptionRemoval
 
-// Module 12614 (getGuildSubscriptionRemovalSource)
+// Module 12615 (getGuildSubscriptionRemovalSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

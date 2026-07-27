@@ -1,10 +1,10 @@
-// Module ID: 11917
-// Function ID: 92229
+// Module ID: 11918
+// Function ID: 92234
 // Name: useShouldShowMutualInfo
-// Dependencies: [1850, 566, 11918, 2]
+// Dependencies: [1850, 566, 11919, 2]
 // Exports: default
 
-// Module 11917 (useShouldShowMutualInfo)
+// Module 11918 (useShouldShowMutualInfo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -18,6 +18,6 @@ export default function useShouldShowMutualInfo(id) {
   if (null != stateFromStores) {
     id = stateFromStores.id;
   }
-  const tmp3 = importDefault(11918)(id);
-  return id !== id.id && !importDefault(11918)(id);
+  const tmp3 = importDefault(11919)(id);
+  return id !== id.id && !importDefault(11919)(id);
 };

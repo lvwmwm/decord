@@ -1,5 +1,5 @@
 // Module ID: 10001
-// Function ID: 77365
+// Function ID: 77366
 // Name: GuildDirectoryCreate
 // Dependencies: [2]
 

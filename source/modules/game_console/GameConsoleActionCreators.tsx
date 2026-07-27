@@ -1,5 +1,5 @@
 // Module ID: 8971
-// Function ID: 70714
+// Function ID: 70715
 // Name: logRemoteCommand
 // Dependencies: [5, 4203, 4146, 4145, 653, 675, 686, 4471, 1212, 8772, 8972, 507, 1184, 8973, 8974, 8977, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession

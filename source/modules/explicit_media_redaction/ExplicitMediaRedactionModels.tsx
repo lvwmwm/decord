@@ -1,5 +1,5 @@
 // Module ID: 5852
-// Function ID: 51655
+// Function ID: 51656
 // Name: ContentHarmTypeChannel
 // Dependencies: [2]
 

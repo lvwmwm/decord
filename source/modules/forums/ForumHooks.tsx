@@ -1,5 +1,5 @@
 // Module ID: 9065
-// Function ID: 71218
+// Function ID: 71219
 // Name: sortForumPostReactionsByPopularityDesc
 // Dependencies: [5, 31, 4992, 5040, 5041, 6014, 1348, 4959, 1838, 3759, 4143, 1850, 6013, 6001, 9066, 6027, 6016, 653, 1355, 1211, 566, 6015, 686, 22, 1327, 4560, 21, 6040, 1357, 7667, 4361, 7817, 8130, 9067, 5070, 2]
 // Exports: getForumPostAuthor, useAutomaticForumSearch, useCanManageChannel, useCanViewArchivedPosts, useChannelTemplate, useExistingPin, useFacepileUsers, useForumActiveThreadIds, useForumPostAuthor, useForumPostFirstMessageMarkup, useForumPostMessageAuthor, useForumPostReadStates, useForumSearchQuery, useForumThreadsForChannelList, useHasForumSearchQuery, useLastActiveTimestamp, useLoadForumUnreadCounts, useMaxPossibleForumPostReactions, useMessageCount, useMostUsedReaction, useSomeForumPostReactions

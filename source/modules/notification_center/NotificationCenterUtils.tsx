@@ -1,5 +1,5 @@
 // Module ID: 5874
-// Function ID: 51922
+// Function ID: 51923
 // Name: getRelativeTimestamp
 // Dependencies: [5875, 3804, 21, 5873, 2]
 // Exports: getRelativeTimestamp, incomingFriendRequestLocalItem, incomingGameFriendRequestLocalItem, isMentionItem, isRemoteAcked, mobileNativeUpdateAvailableLocalItem

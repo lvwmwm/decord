@@ -1,5 +1,5 @@
 // Module ID: 10083
-// Function ID: 78132
+// Function ID: 78133
 // Name: TitleWrapper
 // Dependencies: [57, 31, 27, 3768, 1850, 9051, 33, 4131, 689, 1324, 4661, 477, 8318, 4127, 1273, 10084, 9026, 3835, 4594, 10085, 1212, 4321, 2]
 // Exports: renderChannelIcon, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar

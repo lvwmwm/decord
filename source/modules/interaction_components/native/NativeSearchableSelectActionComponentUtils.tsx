@@ -1,5 +1,5 @@
 // Module ID: 7842
-// Function ID: 62585
+// Function ID: 62586
 // Name: getChannelIconData
 // Dependencies: [1348, 1911, 1838, 1850, 653, 4360, 1327, 1395, 5487, 7843, 665, 689, 7844, 4594, 2]
 // Exports: transformSearchableSelectOptions

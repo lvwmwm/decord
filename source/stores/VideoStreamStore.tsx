@@ -1,9 +1,9 @@
-// Module ID: 10449
-// Function ID: 81050
+// Module ID: 10450
+// Function ID: 81055
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 653, 4192, 566, 686, 2]
 
-// Module 10449 (_isNativeReflectConstruct)
+// Module 10450 (_isNativeReflectConstruct)
 import DesktopSources from "DesktopSources";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

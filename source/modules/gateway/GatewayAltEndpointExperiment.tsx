@@ -1,10 +1,10 @@
-// Module ID: 13538
-// Function ID: 104230
+// Module ID: 13539
+// Function ID: 104235
 // Name: USE_ALT_GATEWAY_KEY
-// Dependencies: [1428, 2, 13539]
+// Dependencies: [1428, 2, 13540]
 // Exports: useShouldUseAltGateway
 
-// Module 13538 (USE_ALT_GATEWAY_KEY)
+// Module 13539 (USE_ALT_GATEWAY_KEY)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-07-aws-gateway", kind: "user", defaultConfig: { enableAltGateway: false }, variations: { [1]: { enableAltGateway: false }, [2]: { enableAltGateway: true } } };

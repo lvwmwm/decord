@@ -1,5 +1,5 @@
 // Module ID: 7340
-// Function ID: 60245
+// Function ID: 60246
 // Name: PrivacyShieldBannerSpotIllustration
 // Dependencies: [33, 5085, 7341, 2]
 // Exports: PrivacyShieldBannerSpotIllustration

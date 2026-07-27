@@ -1,5 +1,5 @@
 // Module ID: 3582
-// Function ID: 27760
+// Function ID: 27761
 // Name: lastDayOfDecade
 // Dependencies: [3210, 3211]
 // Exports: default

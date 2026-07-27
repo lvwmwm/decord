@@ -1,5 +1,5 @@
 // Module ID: 9356
-// Function ID: 73057
+// Function ID: 73058
 // Name: handleJoinGuild
 // Dependencies: [5049, 2]
 // Exports: handleJoinGuild

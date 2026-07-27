@@ -1,5 +1,5 @@
 // Module ID: 9593
-// Function ID: 74828
+// Function ID: 74829
 // Name: CATEGORY_ICON_SIZE
 // Dependencies: [57, 31, 27, 1838, 9561, 653, 1314, 33, 4131, 689, 3804, 4467, 4800, 675, 4661, 1273, 1392, 5513, 9573, 4100, 4101, 9375, 9376, 9173, 1212, 9594, 2]
 // Exports: default

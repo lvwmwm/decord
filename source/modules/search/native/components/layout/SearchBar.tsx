@@ -1,9 +1,9 @@
-// Module ID: 15378
-// Function ID: 117327
+// Module ID: 15391
+// Function ID: 117376
 // Name: useSearchPlaceholder
-// Dependencies: [31, 27, 1348, 1838, 3768, 1850, 10041, 9033, 9061, 653, 33, 4131, 689, 1212, 4321, 566, 1324, 4550, 11389, 11397, 3844, 10040, 10043, 8227, 15379, 2]
+// Dependencies: [31, 27, 1348, 1838, 3768, 1850, 10041, 9033, 9061, 653, 33, 4131, 689, 1212, 4321, 566, 1324, 4550, 11390, 11398, 3844, 10040, 10043, 8227, 15392, 2]
 
-// Module 15378 (useSearchPlaceholder)
+// Module 15391 (useSearchPlaceholder)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

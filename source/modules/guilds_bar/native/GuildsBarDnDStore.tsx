@@ -1,10 +1,10 @@
-// Module ID: 14870
-// Function ID: 113461
+// Module ID: 14871
+// Function ID: 113466
 // Name: withEqualityFn
 // Dependencies: [4971, 677, 3992, 682, 1184, 3744, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 14870 (withEqualityFn)
+// Module 14871 (withEqualityFn)
 import { GuildsNodeType } from "_isNativeReflectConstruct";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 

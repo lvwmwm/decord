@@ -1,5 +1,5 @@
 // Module ID: 10004
-// Function ID: 77407
+// Function ID: 77408
 // Name: GuildDirectoryMoreMenu
 // Dependencies: [31, 33, 9998, 10005, 4472, 1212, 10007, 1273, 7633, 9034, 4090, 9373, 9231, 6625, 8895, 689, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 16200
-// Function ID: 125648
+// Module ID: 16212
+// Function ID: 125695
 // Name: isNativeAppStoreAgeSignalsEnabled
 // Dependencies: [1428, 2]
 // Exports: isNativeAppStoreAgeSignalsEnabled
 
-// Module 16200 (isNativeAppStoreAgeSignalsEnabled)
+// Module 16212 (isNativeAppStoreAgeSignalsEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-07-native-app-store-age-signals", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

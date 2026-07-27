@@ -1,5 +1,5 @@
 // Module ID: 9461
-// Function ID: 73849
+// Function ID: 73850
 // Name: RatingSelector
 // Dependencies: [31, 27, 9457, 33, 4131, 9462, 9463, 1212, 9467, 9468, 9472, 9473, 7578, 4661, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 5585
-// Function ID: 47420
+// Function ID: 47421
 // Name: getKeyboardHeightWithOffset
 // Dependencies: [57, 31, 27, 1452, 33, 1823, 3997, 1555, 5162, 5160, 5161, 2]
 

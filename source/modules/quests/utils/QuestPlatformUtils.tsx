@@ -1,10 +1,10 @@
-// Module ID: 10435
-// Function ID: 80907
+// Module ID: 10436
+// Function ID: 80912
 // Name: supportedConsoles
-// Dependencies: [4977, 653, 5955, 4984, 9406, 9407, 9408, 5960, 5949, 8897, 1212, 477, 9425, 4097, 10436, 1207, 491, 10429, 3822, 6554, 686, 2]
+// Dependencies: [4977, 653, 5955, 4984, 9406, 9407, 9408, 5960, 5949, 8897, 1212, 477, 9425, 4097, 10437, 1207, 491, 10430, 3822, 6554, 686, 2]
 // Exports: getExpiredCredentialsHintMessage, isQuestSupportedOnWeb, openAdGameLinkDirectly, openAddConsoleConnectionModal, openAuthorizationConnectionModal, openConsoleConnectionSettings, openGameLinkDirectly, openSingleConsoleConnectionModal, supportedTaskPlatforms
 
-// Module 10435 (supportedConsoles)
+// Module 10436 (supportedConsoles)
 import { QuestTaskPlatform } from "QuestsExperimentLocations";
 import ME from "ME";
 
@@ -121,7 +121,7 @@ function openAppStoreOverlay(appId, arg1) {
   let dependencyMap;
   let importDefault;
   const _require = arg1;
-  ({ clearAppStoreOverlayOpen: importDefault, setAppStoreOverlayOpen: dependencyMap } = _require(10436));
+  ({ clearAppStoreOverlayOpen: importDefault, setAppStoreOverlayOpen: dependencyMap } = _require(10437));
   let str = appId.appId;
   str = undefined;
   if (null != str) {
@@ -133,7 +133,7 @@ function openAppStoreOverlay(appId, arg1) {
     const ComponentDispatch = callback(outer1_2[15]).ComponentDispatch;
     ComponentDispatch.dispatch(outer1_5.QUEST_APP_STORE_OVERLAY_FINISHED);
   });
-  const tmp = _require(10436);
+  const tmp = _require(10437);
   result.then((arg0) => {
     if (arg0) {
       const obj = {
@@ -273,7 +273,7 @@ export const openGameLinkDirectly = function openGameLinkDirectly(quest, arg1) {
       let tmp34 = constants;
       let dispatchResult = ComponentDispatch.dispatch(constants.QUEST_GAME_LINK_OPENED);
       let num8 = 17;
-      let AppStoreBottomSheetOverlayFeatureGate = _require(10429).AppStoreBottomSheetOverlayFeatureGate;
+      let AppStoreBottomSheetOverlayFeatureGate = _require(10430).AppStoreBottomSheetOverlayFeatureGate;
       obj2 = {};
       let str4 = "quest_open_game_link";
       obj2.location = "quest_open_game_link";
@@ -355,7 +355,7 @@ export const openAdGameLinkDirectly = function openAdGameLinkDirectly(adContentI
   }
   const ComponentDispatch = adContentId(1207).ComponentDispatch;
   ComponentDispatch.dispatch(constants.QUEST_GAME_LINK_OPENED);
-  const AppStoreBottomSheetOverlayFeatureGate = adContentId(10429).AppStoreBottomSheetOverlayFeatureGate;
+  const AppStoreBottomSheetOverlayFeatureGate = adContentId(10430).AppStoreBottomSheetOverlayFeatureGate;
   if (!AppStoreBottomSheetOverlayFeatureGate.getConfig({ location: "quest_open_game_link" }).enabled) {
     if (null != tmp) {
       const tmp8 = getInlineStoreParamsFromCta(cta);

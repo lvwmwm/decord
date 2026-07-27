@@ -1,10 +1,10 @@
-// Module ID: 16633
-// Function ID: 129785
+// Module ID: 16645
+// Function ID: 129832
 // Name: PendingRequestRow
-// Dependencies: [31, 27, 1850, 33, 4131, 689, 1273, 566, 16631, 16634, 1392, 4127, 1212, 2461, 4661, 2199, 8623, 13888, 13842, 3832, 4542, 6727, 12230, 13847, 2]
+// Dependencies: [31, 27, 1850, 33, 4131, 689, 1273, 566, 16643, 16646, 1392, 4127, 1212, 2461, 4661, 2199, 8623, 13889, 13843, 3832, 4542, 6727, 12231, 13848, 2]
 // Exports: default
 
-// Module 16633 (PendingRequestRow)
+// Module 16645 (PendingRequestRow)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -265,8 +265,8 @@ export default function PendingRequestList(arg0) {
   ({ pendingRequests, linkedUsersProcessed, expiresAt, onRefreshLinkCode, onInviteAnotherGuardian, onShare } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   const require = tmp;
-  importDefault(13842)(expiresAt, onRefreshLinkCode);
-  let obj = require(16631) /* _createForOfIteratorHelperLoose */;
+  importDefault(13843)(expiresAt, onRefreshLinkCode);
+  let obj = require(16643) /* _createForOfIteratorHelperLoose */;
   obj = {
     pendingRequests,
     linkedUsersProcessed,
@@ -347,7 +347,7 @@ export default function PendingRequestList(arg0) {
   const items5 = [, ];
   ({ actionButton: arr6[0], inviteShareButton: arr6[1] } = tmp);
   obj12.style = items5;
-  obj12.children = callback(require(12230) /* ShareIcon */.ShareIcon, { size: "sm", color: tmp.declineIcon.color });
+  obj12.children = callback(require(12231) /* ShareIcon */.ShareIcon, { size: "sm", color: tmp.declineIcon.color });
   const items6 = [callback(require(4661) /* PressableBase */.PressableOpacity, obj12), ];
   const obj14 = { accessibilityRole: "button" };
   const intl5 = require(1212) /* getSystemLocale */.intl;
@@ -356,7 +356,7 @@ export default function PendingRequestList(arg0) {
   const items7 = [, ];
   ({ actionButton: arr8[0], inviteQrButton: arr8[1] } = tmp);
   obj14.style = items7;
-  obj14.children = callback(require(13847) /* QrCodeIcon */.QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
+  obj14.children = callback(require(13848) /* QrCodeIcon */.QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
   items6[1] = callback(require(4661) /* PressableBase */.PressableOpacity, obj14);
   obj11.children = items6;
   items3[2] = callback2(closure_5, obj11);

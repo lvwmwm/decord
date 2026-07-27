@@ -1,5 +1,5 @@
 // Module ID: 8165
-// Function ID: 65534
+// Function ID: 65535
 // Name: canViewInviteModal
 // Dependencies: [653, 2]
 // Exports: canViewInviteModal

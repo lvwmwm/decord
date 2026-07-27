@@ -1,10 +1,10 @@
-// Module ID: 14225
-// Function ID: 109422
+// Module ID: 14226
+// Function ID: 109427
 // Name: SynchronizeIcon
 // Dependencies: [31, 33, 8463, 2]
 // Exports: default
 
-// Module 14225 (SynchronizeIcon)
+// Module 14226 (SynchronizeIcon)
 import "result";
 import jsxProd from "jsxProd";
 

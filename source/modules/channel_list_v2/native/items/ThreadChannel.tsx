@@ -1,10 +1,10 @@
-// Module ID: 15023
-// Function ID: 114522
+// Module ID: 15024
+// Function ID: 114526
 // Name: ThreadChannel
-// Dependencies: [31, 27, 3761, 1348, 3759, 4143, 1907, 1850, 4147, 4204, 10222, 653, 4327, 1211, 33, 4131, 689, 8463, 4550, 566, 11384, 4139, 10302, 15024, 15026, 8254, 15029, 1273, 15031, 15037, 4313, 2]
+// Dependencies: [31, 27, 3761, 1348, 3759, 4143, 1907, 1850, 4147, 4204, 10223, 653, 4327, 1211, 33, 4131, 689, 8463, 4550, 566, 11385, 4139, 10303, 15025, 15027, 8254, 15030, 1273, 15032, 15038, 4313, 2]
 // Exports: default
 
-// Module 15023 (ThreadChannel)
+// Module 15024 (ThreadChannel)
 import importAllResult from "set";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

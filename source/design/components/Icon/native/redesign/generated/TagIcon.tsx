@@ -1,5 +1,5 @@
 // Module ID: 6596
-// Function ID: 58417
+// Function ID: 58418
 // Name: TagIcon
 // Dependencies: [31, 33, 689, 3834, 6597, 2]
 // Exports: TagIcon

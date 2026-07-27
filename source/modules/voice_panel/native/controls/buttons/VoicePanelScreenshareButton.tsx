@@ -1,10 +1,10 @@
-// Module ID: 15935
-// Function ID: 123151
+// Module ID: 15947
+// Function ID: 123198
 // Name: MobilePhoneShareIcon
-// Dependencies: [31, 27, 1348, 653, 33, 1553, 11558, 15936, 4131, 689, 9975, 15919, 566, 44, 10682, 675, 1324, 15920, 1212, 5515, 2]
+// Dependencies: [31, 27, 1348, 653, 33, 1553, 11559, 15948, 4131, 689, 9975, 15931, 566, 44, 10683, 675, 1324, 15932, 1212, 5515, 2]
 // Exports: default
 
-// Module 15935 (MobilePhoneShareIcon)
+// Module 15947 (MobilePhoneShareIcon)
 import result from "result";
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

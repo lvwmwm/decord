@@ -1,9 +1,9 @@
-// Module ID: 10410
-// Function ID: 80451
+// Module ID: 10411
+// Function ID: 80456
 // Name: _isNativeReflectConstruct
 // Dependencies: [15, 17, 18, 6, 7, 5, 4813, 3971, 653, 664, 507, 4939, 686, 7856, 4815, 636, 566, 2]
 
-// Module 10410 (_isNativeReflectConstruct)
+// Module 10411 (_isNativeReflectConstruct)
 import isUndefinedOrNull from "isUndefinedOrNull";
 import closure_4 from "set";
 import _inherits from "_inherits";

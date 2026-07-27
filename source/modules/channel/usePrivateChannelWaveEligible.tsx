@@ -1,10 +1,10 @@
-// Module ID: 14964
-// Function ID: 114090
+// Module ID: 14965
+// Function ID: 114095
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [4350, 3768, 1355, 653, 566, 21, 3801, 3713, 10366, 2]
+// Dependencies: [4350, 3768, 1355, 653, 566, 21, 3801, 3713, 10367, 2]
 // Exports: usePrivateChannelWaveEligible
 
-// Module 14964 (usePrivateChannelWaveEligible)
+// Module 14965 (usePrivateChannelWaveEligible)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { ChannelFlags } from "set";
@@ -66,7 +66,7 @@ export const usePrivateChannelWaveEligible = function usePrivateChannelWaveEligi
   const obj6 = _require(3801);
   const tmp9 = recipientId(3713)();
   const isWithinIntervalResult = obj6.isWithinInterval(recipientId(3713)(), recipientId(3713)(extractTimestampResult), 1814400000);
-  const strangerDangerWarning = _require(10366).useStrangerDangerWarning(isDM.id);
+  const strangerDangerWarning = _require(10367).useStrangerDangerWarning(isDM.id);
   if (tmp) {
     tmp = stateFromStores;
   }

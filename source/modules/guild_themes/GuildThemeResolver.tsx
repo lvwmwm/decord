@@ -1,5 +1,5 @@
 // Module ID: 4013
-// Function ID: 33299
+// Function ID: 33300
 // Name: resolveRenderableGuildThemeSettings
 // Dependencies: [31, 1316, 1838, 3948, 4014, 4017, 653, 3979, 566, 4060, 4063, 2]
 // Exports: getActiveGuildTheme, isRenderableGuildThemeSettings, useActiveGuildTheme, useEnabledGuildThemeForGuildId, useIsGuildThemePreviewActive

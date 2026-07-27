@@ -1,5 +1,5 @@
 // Module ID: 8946
-// Function ID: 70635
+// Function ID: 70636
 // Name: Scope
 // Dependencies: [31, 27, 33, 4131, 1212, 6679, 689, 4092, 4127, 5450, 8882, 5655, 8112, 2]
 // Exports: default

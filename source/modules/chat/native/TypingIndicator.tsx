@@ -1,9 +1,9 @@
-// Module ID: 11364
-// Function ID: 88309
+// Module ID: 11365
+// Function ID: 88314
 // Name: TypingIndicatorInner
-// Dependencies: [31, 27, 9242, 5918, 33, 4131, 689, 1324, 11134, 3992, 4477, 4543, 4547, 3835, 1273, 4127, 11365, 11094, 2]
+// Dependencies: [31, 27, 9242, 5918, 33, 4131, 689, 1324, 11135, 3992, 4477, 4543, 4547, 3835, 1273, 4127, 11366, 11095, 2]
 
-// Module 11364 (TypingIndicatorInner)
+// Module 11365 (TypingIndicatorInner)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { useChatShowingAutoComplete as closure_5 } from "getChatInputContainerHeight";

@@ -1,9 +1,9 @@
-// Module ID: 15576
-// Function ID: 120132
+// Module ID: 15588
+// Function ID: 120179
 // Name: getAccessibilityLabel
-// Dependencies: [31, 27, 33, 689, 4131, 3764, 1212, 10387, 8623, 15577, 3849, 2]
+// Dependencies: [31, 27, 33, 689, 4131, 3764, 1212, 10388, 8623, 15589, 3849, 2]
 
-// Module 15576 (getAccessibilityLabel)
+// Module 15588 (getAccessibilityLabel)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -29,7 +29,7 @@ function getIcon(arg0, arg1, icon) {
     let obj = { size: "sm", style: icon.icon };
     const colors3 = importDefault(689).colors;
     obj.color = arg1 ? colors3.WHITE : colors3.ICON_FEEDBACK_CRITICAL;
-    return jsx(require(10387) /* DenyIcon */.DenyIcon, { size: "sm", style: icon.icon });
+    return jsx(require(10388) /* DenyIcon */.DenyIcon, { size: "sm", style: icon.icon });
   } else if (require(3764) /* calculateElevatedPermissions */.ALLOW === arg0) {
     obj = { size: "sm", style: icon.icon };
     const colors2 = importDefault(689).colors;
@@ -39,7 +39,7 @@ function getIcon(arg0, arg1, icon) {
     obj = { size: "sm", style: icon.icon };
     const colors = importDefault(689).colors;
     obj.color = arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT;
-    return jsx(require(15577) /* SlashIcon */.SlashIcon, { size: "sm", style: icon.icon });
+    return jsx(require(15589) /* SlashIcon */.SlashIcon, { size: "sm", style: icon.icon });
   } else {
     return null;
   }

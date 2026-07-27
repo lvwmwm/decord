@@ -1,5 +1,5 @@
 // Module ID: 7506
-// Function ID: 60494
+// Function ID: 60495
 // Name: SwordIllocon
 // Dependencies: [33, 5085, 7507, 2]
 // Exports: SwordIllocon

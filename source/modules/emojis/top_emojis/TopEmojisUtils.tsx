@@ -1,5 +1,5 @@
 // Module ID: 9274
-// Function ID: 72678
+// Function ID: 72679
 // Name: maybeFetchTopEmojisByGuild
 // Dependencies: [1850, 4992, 4995, 9275, 2]
 // Exports: maybeFetchTopEmojisByGuild

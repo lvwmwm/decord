@@ -1,5 +1,5 @@
 // Module ID: 3489
-// Function ID: 26906
+// Function ID: 26907
 // Name: getTime
 // Dependencies: [3210, 3211]
 // Exports: default

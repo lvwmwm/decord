@@ -1,8 +1,8 @@
-// Module ID: 15676
-// Function ID: 120946
-// Dependencies: [31, 27, 33, 4131, 689, 10952, 1212, 8941, 4633, 6727, 4127, 14719, 4544, 6570, 2]
+// Module ID: 15688
+// Function ID: 120993
+// Dependencies: [31, 27, 33, 4131, 689, 10953, 1212, 8941, 4633, 6727, 4127, 14720, 4544, 6570, 2]
 
-// Module 15676
+// Module 15688
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,7 +24,7 @@ const memoResult = require("result").memo(function PremiumDiscountOfferActionShe
   let onConfirm;
   ({ discountOffer, onConfirm } = arg0);
   const tmp = callback3();
-  let obj = { IconComponent: require(10952) /* UserIcon */.UserIcon };
+  let obj = { IconComponent: require(10953) /* UserIcon */.UserIcon };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.kpMomJ);
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -49,7 +49,7 @@ const memoResult = require("result").memo(function PremiumDiscountOfferActionShe
   const intl7 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl7.formatToPlainString(require(1212) /* getSystemLocale */.t.qowbUk, { percent: amount });
   items1[1] = callback(require(4127) /* Text */.Text, obj3);
-  items1[2] = callback(importDefault(14719), { perks: items });
+  items1[2] = callback(importDefault(14720), { perks: items });
   const obj4 = { style: tmp.buttonContainer };
   const obj5 = { size: "lg" };
   const intl8 = require(1212) /* getSystemLocale */.intl;

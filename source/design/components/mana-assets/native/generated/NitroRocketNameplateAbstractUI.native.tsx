@@ -1,5 +1,5 @@
 // Module ID: 7268
-// Function ID: 60137
+// Function ID: 60138
 // Name: NitroRocketNameplateAbstractUI
 // Dependencies: [33, 5085, 7269, 2]
 // Exports: NitroRocketNameplateAbstractUI

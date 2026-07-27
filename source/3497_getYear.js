@@ -1,5 +1,5 @@
 // Module ID: 3497
-// Function ID: 26930
+// Function ID: 26931
 // Name: getYear
 // Dependencies: [3210, 3211]
 // Exports: default

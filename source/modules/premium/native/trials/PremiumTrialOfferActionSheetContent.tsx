@@ -1,8 +1,8 @@
-// Module ID: 14718
-// Function ID: 112193
-// Dependencies: [31, 27, 33, 4131, 689, 10952, 1212, 8941, 4633, 6727, 4127, 3777, 14719, 4544, 6570, 2]
+// Module ID: 14719
+// Function ID: 112198
+// Dependencies: [31, 27, 33, 4131, 689, 10953, 1212, 8941, 4633, 6727, 4127, 3777, 14720, 4544, 6570, 2]
 
-// Module 14718
+// Module 14719
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ const memoResult = require("result").memo(function PremiumTrialOfferActionSheetC
   if (null != trialOffer) {
     subscription_trial = trialOffer.subscription_trial;
   }
-  let obj = { IconComponent: require(10952) /* UserIcon */.UserIcon };
+  let obj = { IconComponent: require(10953) /* UserIcon */.UserIcon };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.kpMomJ);
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -68,7 +68,7 @@ const memoResult = require("result").memo(function PremiumTrialOfferActionSheetC
   obj4.duration = intervalDuration;
   obj3.children = intl7.formatToPlainString(require(1212) /* getSystemLocale */.t.q8eMc0, obj4);
   items1[1] = callback(require(4127) /* Text */.Text, obj3);
-  items1[2] = callback(importDefault(14719), { perks: items });
+  items1[2] = callback(importDefault(14720), { perks: items });
   const obj5 = { style: tmp.buttonContainer };
   const obj6 = { size: "lg" };
   const intl8 = require(1212) /* getSystemLocale */.intl;

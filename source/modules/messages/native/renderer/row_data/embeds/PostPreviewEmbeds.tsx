@@ -1,10 +1,10 @@
-// Module ID: 12320
-// Function ID: 95967
+// Module ID: 12321
+// Function ID: 95972
 // Name: createPostPreviewEmbeds
-// Dependencies: [653, 12321, 2]
+// Dependencies: [653, 12322, 2]
 // Exports: createPostPreviewEmbeds
 
-// Module 12320 (createPostPreviewEmbeds)
+// Module 12321 (createPostPreviewEmbeds)
 import { MessageEmbedTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/PostPreviewEmbeds.tsx");

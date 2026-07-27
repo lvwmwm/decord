@@ -1,10 +1,10 @@
-// Module ID: 15852
-// Function ID: 122441
+// Module ID: 15864
+// Function ID: 122488
 // Name: getChannelInfoSubtitle
 // Dependencies: [4320, 1212, 2]
 // Exports: default
 
-// Module 15852 (getChannelInfoSubtitle)
+// Module 15864 (getChannelInfoSubtitle)
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/getChannelInfoSubtitle.tsx");
 
 export default function getChannelInfoSubtitle(arg0, arg1, arg2) {

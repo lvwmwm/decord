@@ -1,10 +1,10 @@
-// Module ID: 10925
-// Function ID: 84898
+// Module ID: 10926
+// Function ID: 84903
 // Name: GuildTemplateResolving
-// Dependencies: [31, 27, 1352, 1912, 653, 5688, 33, 4131, 689, 5053, 5584, 44, 1557, 1915, 4127, 1212, 10028, 8927, 4544, 7582, 1273, 22, 8187, 10926, 10927, 10146, 665, 2]
+// Dependencies: [31, 27, 1352, 1912, 653, 5688, 33, 4131, 689, 5053, 5584, 44, 1557, 1915, 4127, 1212, 10028, 8927, 4544, 7582, 1273, 22, 8187, 10927, 10928, 10146, 665, 2]
 // Exports: default
 
-// Module 10925 (GuildTemplateResolving)
+// Module 10926 (GuildTemplateResolving)
 import "result";
 import get_ActivityIndicator from "set";
 import { isGuildVocalChannelType } from "_callSuper";
@@ -180,9 +180,9 @@ function getChannelIcon(type) {
   if (isGuildVocalChannelType(type)) {
     let tmp4 = importDefault(8187);
   } else if (type === constants2.GUILD_CATEGORY) {
-    tmp4 = importDefault(10926);
-  } else {
     tmp4 = importDefault(10927);
+  } else {
+    tmp4 = importDefault(10928);
   }
   return tmp4;
 }

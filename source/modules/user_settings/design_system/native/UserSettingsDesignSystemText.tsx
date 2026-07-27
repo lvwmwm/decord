@@ -1,10 +1,10 @@
-// Module ID: 14479
-// Function ID: 110625
+// Module ID: 14480
+// Function ID: 110630
 // Name: UserSettingsDesignSystemText
 // Dependencies: [31, 27, 33, 3835, 689, 4542, 5501, 4128, 5164, 4127, 2]
 // Exports: default
 
-// Module 14479 (UserSettingsDesignSystemText)
+// Module 14480 (UserSettingsDesignSystemText)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 11652
-// Function ID: 90411
+// Module ID: 11653
+// Function ID: 90416
 // Name: UserProfileConfirmRemoveGameFriend
 // Dependencies: [31, 33, 8046, 8988, 4476, 1212, 4476, 2]
 // Exports: default
 
-// Module 11652 (UserProfileConfirmRemoveGameFriend)
+// Module 11653 (UserProfileConfirmRemoveGameFriend)
 import result from "result";
 import jsxProd from "jsxProd";
 

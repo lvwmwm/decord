@@ -1,5 +1,5 @@
 // Module ID: 9314
-// Function ID: 72857
+// Function ID: 72858
 // Name: PremiumUpsellSectionDivider
 // Dependencies: [31, 27, 6173, 33, 4131, 689, 9315, 4555, 668, 4653, 2]
 // Exports: default

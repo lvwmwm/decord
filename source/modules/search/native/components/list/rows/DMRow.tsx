@@ -1,9 +1,9 @@
-// Module ID: 15402
-// Function ID: 117598
+// Module ID: 15415
+// Function ID: 117647
 // Name: FriendPresence
-// Dependencies: [5, 57, 31, 27, 4123, 4218, 3768, 653, 33, 4131, 689, 4127, 3970, 8994, 566, 8328, 1273, 8225, 12466, 15403, 2]
+// Dependencies: [5, 57, 31, 27, 4123, 4218, 3768, 653, 33, 4131, 689, 4127, 3970, 8994, 566, 8328, 1273, 8225, 12467, 15416, 2]
 
-// Module 15402 (FriendPresence)
+// Module 15415 (FriendPresence)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";

@@ -1,5 +1,5 @@
 // Module ID: 3920
-// Function ID: 32387
+// Function ID: 32388
 // Name: CheckpointFriendsRive
 // Dependencies: [29, 31, 33, 3860, 3921, 3911, 2]
 

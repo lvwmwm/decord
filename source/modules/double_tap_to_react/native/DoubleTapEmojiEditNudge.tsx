@@ -1,5 +1,5 @@
 // Module ID: 9908
-// Function ID: 76749
+// Function ID: 76750
 // Name: DoubleTapEmojiEditNudgeInner
 // Dependencies: [5, 31, 27, 4123, 1451, 653, 1853, 33, 4131, 689, 3804, 7691, 1453, 566, 1392, 9268, 675, 9281, 4127, 1212, 5150, 4661, 2]
 // Exports: DoubleTapEmojiEditNudge

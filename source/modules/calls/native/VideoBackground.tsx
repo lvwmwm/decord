@@ -1,5 +1,5 @@
 // Module ID: 7919
-// Function ID: 63046
+// Function ID: 63047
 // Name: useDominantRGBFromImage
 // Dependencies: [57, 31, 27, 653, 33, 4131, 22, 7920, 7921, 3975, 689, 1324, 7922, 7926, 7923, 1273, 4555, 2]
 
@@ -96,7 +96,7 @@ class VideoBackground {
     c1 = undefined;
     id = undefined;
     tmp3 = c12();
-    tmp4 = f63053(url);
+    tmp4 = f63054(url);
     tmp5 = useDominantColorFromImage(url, tmp4);
     tmp6 = require("useIsMobileVisualRefreshExperimentEnabled")("VideoBackground-native");
     c1 = tmp6;

@@ -1,10 +1,10 @@
-// Module ID: 15396
-// Function ID: 117569
+// Module ID: 15409
+// Function ID: 117618
 // Name: useSearchMediaSize
 // Dependencies: [9033, 2]
 // Exports: default
 
-// Module 15396 (useSearchMediaSize)
+// Module 15409 (useSearchMediaSize)
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 
 ({ SEARCH_LIST_HORIZONTAL_PADDING: closure_0, MEDIA_NUM_COLUMNS: closure_1, MEDIA_ITEM_GAP_WIDTH: closure_2 } = SearchAutocompleteSelectAnalyticsActions);

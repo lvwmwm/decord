@@ -1,10 +1,10 @@
-// Module ID: 13183
-// Function ID: 101541
+// Module ID: 13184
+// Function ID: 101546
 // Name: convertDeviceEventBreadcrumb
-// Dependencies: [653, 5907, 12633, 12799, 2]
+// Dependencies: [653, 5907, 12634, 12800, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 13183 (convertDeviceEventBreadcrumb)
+// Module 13184 (convertDeviceEventBreadcrumb)
 import { AnalyticEvents } from "ME";
 
 function convertDeviceEventBreadcrumb(data) {
@@ -109,7 +109,7 @@ function buildSocketMessageIdentity(data, arg1) {
     const tmp21 = coerceNumberFromUnknown(data.op);
     let tmp22 = null;
     if (null != tmp21) {
-      const tmp25 = require(12633) /* Opcode */.Opcode[tmp21];
+      const tmp25 = require(12634) /* Opcode */.Opcode[tmp21];
       let tmp26 = null;
       if ("string" === typeof tmp25) {
         tmp26 = tmp25;
@@ -142,7 +142,7 @@ function buildSocketMessageIdentity(data, arg1) {
     const tmp10 = coerceNumberFromUnknown(data.op);
     let tmp11 = null;
     if (null != tmp10) {
-      const tmp14 = require(12799) /* _isNativeReflectConstruct */.RTCSocketOpcode[tmp10];
+      const tmp14 = require(12800) /* _isNativeReflectConstruct */.RTCSocketOpcode[tmp10];
       let tmp15 = null;
       if ("string" === typeof tmp14) {
         tmp15 = tmp14;

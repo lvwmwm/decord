@@ -1,10 +1,10 @@
-// Module ID: 12756
-// Function ID: 99370
+// Module ID: 12757
+// Function ID: 99375
 // Name: VoiceActionSheet
-// Dependencies: [31, 27, 4204, 33, 4131, 5462, 5482, 566, 3982, 4342, 12757, 12758, 5498, 12768, 12771, 12772, 4534, 12775, 2]
+// Dependencies: [31, 27, 4204, 33, 4131, 5462, 5482, 566, 3982, 4342, 12758, 12759, 5498, 12769, 12772, 12773, 4534, 12776, 2]
 // Exports: default
 
-// Module 12756 (VoiceActionSheet)
+// Module 12757 (VoiceActionSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,18 +41,18 @@ export default function VoiceActionSheet(channel) {
       outer2_1(outer2_2[10]).terminate();
     };
   }, items1);
-  let obj1 = importDefault(12758);
+  let obj1 = importDefault(12759);
   if (obj1.requiresVoiceChannelsOnboard()) {
     obj = {};
     obj = { channel };
-    obj.children = callback(importDefault(12768), obj);
+    obj.children = callback(importDefault(12769), obj);
     let tmp11 = callback(channel(5498).ActionSheet, obj);
   } else if (stateFromStores) {
     obj1 = {};
     const obj2 = { channel };
-    const items2 = [callback(importDefault(12771), obj2), ];
+    const items2 = [callback(importDefault(12772), obj2), ];
     let obj3 = { channel };
-    items2[1] = callback(importDefault(12772), obj3);
+    items2[1] = callback(importDefault(12773), obj3);
     obj1.children = items2;
     tmp11 = callback2(channel(5498).ActionSheet, obj1);
   } else {
@@ -61,7 +61,7 @@ export default function VoiceActionSheet(channel) {
     const obj6 = { blurTheme: "dark", style: tmp.visualEffectView };
     const items3 = [callback(importDefault(4534), obj6), ];
     const obj7 = { channel };
-    items3[1] = callback(importDefault(12775), obj7);
+    items3[1] = callback(importDefault(12776), obj7);
     obj5.children = items3;
     obj4.children = callback2(View, obj5);
     tmp11 = callback(channel(5498).ActionSheet, obj4);

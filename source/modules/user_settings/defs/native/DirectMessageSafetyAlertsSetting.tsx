@@ -1,9 +1,9 @@
-// Module ID: 13799
-// Function ID: 105821
+// Module ID: 13800
+// Function ID: 105826
 // Name: toggle
-// Dependencies: [7697, 11005, 10069, 10071, 10059, 1212, 10070, 13800, 2]
+// Dependencies: [7697, 11006, 10069, 10071, 10059, 1212, 10070, 13801, 2]
 
-// Module 13799 (toggle)
+// Module 13800 (toggle)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
@@ -18,7 +18,7 @@ const toggle = createToggle.createToggle({
   useValue: require("useSafetyAlertsSettingOrDefault").useSafetyAlertsSettingOrDefault,
   onValueChange: require("updateDmSafetyAlertsSetting").updateDmSafetyAlertsSetting,
   usePredicate: function useHasDmSafetyAlertsSetting() {
-    const tmp = importDefault(11005)();
+    const tmp = importDefault(11006)();
     const isEligibleForInappropriateConversationWarning = require(10069) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
     const obj = require(10069) /* InappropriateConversationExperiment */;
     const tmp2 = null == tmp || tmp;
@@ -44,7 +44,7 @@ let obj = {
   useValue: require("useSafetyAlertsSettingOrDefault").useSafetyAlertsSettingOrDefault,
   onValueChange: require("updateDmSafetyAlertsSetting").updateDmSafetyAlertsSetting,
   usePredicate: function useHasDmSafetyAlertsSetting() {
-    const tmp = importDefault(11005)();
+    const tmp = importDefault(11006)();
     const isEligibleForInappropriateConversationWarning = require(10069) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
     const obj = require(10069) /* InappropriateConversationExperiment */;
     const tmp2 = null == tmp || tmp;

@@ -1,11 +1,11 @@
-// Module ID: 16118
-// Function ID: 124938
+// Module ID: 16130
+// Function ID: 124985
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 653, 12358, 1360, 6652, 12359, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 653, 12359, 1360, 6652, 12360, 5078, 2]
 
-// Module 16118 (_isNativeReflectConstruct)
+// Module 16130 (_isNativeReflectConstruct)
 import hasFlag from "hasFlag";
-import module_12358 from "module_12358";
+import module_12359 from "module_12359";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -34,8 +34,8 @@ function handleInviteData(invite) {
       const features = guild.features;
       if (null != features) {
         if (features.includes(GuildFeatures.HUB)) {
-          importDefault(12358).onOpenHubInvite(invite.invite);
-          const obj5 = importDefault(12358);
+          importDefault(12359).onOpenHubInvite(invite.invite);
+          const obj5 = importDefault(12359);
         }
       }
     }
@@ -54,12 +54,12 @@ function handleInviteData(invite) {
     new_member = null != guild;
   }
   if (new_member) {
-    new_member = require(12359) /* inviteGuildHasPendingMemberDisabledVerification */.inviteGuildHasPendingMemberDisabledVerification(guild);
-    const obj3 = require(12359) /* inviteGuildHasPendingMemberDisabledVerification */;
+    new_member = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */.inviteGuildHasPendingMemberDisabledVerification(guild);
+    const obj3 = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
   if (new_member) {
-    const result = require(12359) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
-    const obj4 = require(12359) /* inviteGuildHasPendingMemberDisabledVerification */;
+    const result = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
+    const obj4 = require(12360) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
 }
 tmp2 = new tmp2();

@@ -1,10 +1,10 @@
-// Module ID: 15521
-// Function ID: 119465
+// Module ID: 15534
+// Function ID: 119514
 // Name: UserSettingsFriendRequests
 // Dependencies: [31, 27, 653, 33, 3804, 6449, 5501, 1212, 5502, 1360, 2]
 // Exports: default
 
-// Module 15521 (UserSettingsFriendRequests)
+// Module 15534 (UserSettingsFriendRequests)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";

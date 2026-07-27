@@ -1,5 +1,5 @@
 // Module ID: 6715
-// Function ID: 59283
+// Function ID: 59284
 // Name: WalletIcon
 // Dependencies: [31, 33, 689, 3834, 6716, 2]
 // Exports: WalletIcon

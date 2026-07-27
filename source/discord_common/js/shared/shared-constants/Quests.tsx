@@ -1,5 +1,5 @@
 // Module ID: 4979
-// Function ID: 42980
+// Function ID: 42981
 // Name: Quests
 // Dependencies: [2]
 

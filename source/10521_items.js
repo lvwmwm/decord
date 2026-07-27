@@ -1,10 +1,10 @@
 // Module ID: 10521
-// Function ID: 81487
+// Function ID: 81491
 // Name: items
 // Dependencies: []
 
 // Module 10521 (items)
-let obj = { v: "4.8.0", meta: { g: "LottieFiles AE 3.0.0", a: "", k: "", d: "", tc: "" }, fr: 60, ip: 3, op: 102, w: 1280, h: 720, nm: "FrameEffect_02-5_Out", ddd: 0 };
+let obj = { v: "4.8.0", meta: { g: "LottieFiles AE 3.0.0", a: "", k: "", d: "", tc: "" }, fr: 60, ip: 3, op: 102, w: 1280, h: 720, nm: "FrameEffect_02-4_Out", ddd: 0 };
 const items = [{ id: "image_0", w: 35, h: 35, u: "", p: "", e: 1 }, ];
 obj = { ddd: 0, ind: 3, ty: 2, nm: "smile", refId: "image_0", sr: 1, ks: null, ao: 0, ip: 0, op: 914, st: 0, bm: 0 };
 obj = { a: 0, k: [19.875, 20.125, 0], ix: 2 };
@@ -24,48 +24,48 @@ const obj6 = { a: 0, k: [130.88, 130.88, 100], ix: 6 };
 obj3.ks = { o: { a: 0, k: 0, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj4, a: obj5, s: obj6 };
 obj3.shapes = [];
 const items4 = [obj3, , , , , , , , , ];
-const obj7 = { ddd: 0, ind: 2, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: null, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -24, bm: 0 };
+const obj7 = { ddd: 0, ind: 2, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: null, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -15, bm: 0 };
 const obj8 = { a: 1, k: null, ix: 2 };
 const items5 = [465.988, -410, 0];
 const items6 = [-138.328, 0, 0];
-const items7 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 0, s: items5, to: items6, ti: [138.328, 0, 0] }, ];
+const items7 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 9, s: items5, to: items6, ti: [138.328, 0, 0] }, ];
 const items8 = [-363.982, -410, 0];
-items7[1] = { t: 45, s: items8 };
+items7[1] = { t: 54, s: items8 };
 obj8.k = items7;
 const obj9 = { a: 0, k: [20, 40, 0], ix: 1 };
 const obj10 = { a: 0, k: [341.7, 341.7, 100], ix: 6 };
 obj7.ks = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj8, a: obj9, s: obj10 };
 items4[1] = obj7;
-const obj11 = { ddd: 0, ind: 3, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: null, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -21, bm: 0 };
+const obj11 = { ddd: 0, ind: 3, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: null, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -18, bm: 0 };
 const obj12 = { a: 1, k: null, ix: 2 };
 const items9 = [465.988, -272, 0];
 const items10 = [-138.328, 0, 0];
-const items11 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 3, s: items9, to: items10, ti: [138.328, 0, 0] }, ];
+const items11 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 6, s: items9, to: items10, ti: [138.328, 0, 0] }, ];
 const items12 = [-363.982, -272, 0];
-items11[1] = { t: 48, s: items12 };
+items11[1] = { t: 51, s: items12 };
 obj12.k = items11;
 const obj13 = { a: 0, k: [20, 40, 0], ix: 1 };
 const obj14 = { a: 0, k: [341.7, 341.7, 100], ix: 6 };
 obj11.ks = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj12, a: obj13, s: obj14 };
 items4[2] = obj11;
-const obj15 = { ddd: 0, ind: 4, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: null, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -18, bm: 0 };
+const obj15 = { ddd: 0, ind: 4, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: null, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -21, bm: 0 };
 const obj16 = { a: 1, k: null, ix: 2 };
 const items13 = [465.988, -136, 0];
 const items14 = [-138.328, 0, 0];
-const items15 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 6, s: items13, to: items14, ti: [138.328, 0, 0] }, ];
+const items15 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 3, s: items13, to: items14, ti: [138.328, 0, 0] }, ];
 const items16 = [-363.982, -136, 0];
-items15[1] = { t: 51, s: items16 };
+items15[1] = { t: 48, s: items16 };
 obj16.k = items15;
 const obj17 = { a: 0, k: [20, 40, 0], ix: 1 };
 const obj18 = { a: 0, k: [341.7, 341.7, 100], ix: 6 };
 obj15.ks = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj16, a: obj17, s: obj18 };
 items4[3] = obj15;
-const obj19 = { ddd: 0, ind: 5, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: null, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -15, bm: 0 };
+const obj19 = { ddd: 0, ind: 5, ty: 0, nm: "particle", parent: 1, refId: "comp_0", sr: 1, ks: null, ao: 0, w: 40, h: 40, ip: 0, op: 55, st: -24, bm: 0 };
 const obj20 = { a: 1, k: null, ix: 2 };
 const items17 = [-138.328, 0, 0];
-const items18 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 9, s: [465.988, 0, 0], to: items17, ti: [138.328, 0, 0] }, ];
+const items18 = [{ i: { x: 0.575, y: 1 }, o: { x: 0.699, y: 0 }, t: 0, s: [465.988, 0, 0], to: items17, ti: [138.328, 0, 0] }, ];
 const items19 = [-363.982, 0, 0];
-items18[1] = { t: 54, s: items19 };
+items18[1] = { t: 45, s: items19 };
 obj20.k = items18;
 const obj21 = { a: 0, k: [20, 40, 0], ix: 1 };
 const obj22 = { a: 0, k: [341.7, 341.7, 100], ix: 6 };

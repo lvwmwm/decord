@@ -1,10 +1,10 @@
-// Module ID: 16647
-// Function ID: 129918
+// Module ID: 16659
+// Function ID: 129965
 // Name: handleAppStateChanged
-// Dependencies: [1194, 6271, 653, 3, 20, 686, 4203, 16646, 5703, 3973, 14, 675, 2]
+// Dependencies: [1194, 6271, 653, 3, 20, 686, 4203, 16658, 5703, 3973, 14, 675, 2]
 // Exports: default
 
-// Module 16647 (handleAppStateChanged)
+// Module 16659 (handleAppStateChanged)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -39,8 +39,8 @@ export default function handleAppStateChanged(state) {
     const _default = require(4203) /* _isNativeReflectConstruct */.default;
   }
   if (isAuthenticatedResult) {
-    importDefault(16646).deferUpdate();
-    const obj4 = importDefault(16646);
+    importDefault(16658).deferUpdate();
+    const obj4 = importDefault(16658);
   }
   if (state === constants2.ACTIVE) {
     require(5703) /* _createForOfIteratorHelperLoose */.trackAppOpened("launcher");

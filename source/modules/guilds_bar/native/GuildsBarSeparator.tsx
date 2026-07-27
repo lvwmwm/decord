@@ -1,8 +1,8 @@
-// Module ID: 14931
-// Function ID: 113870
-// Dependencies: [31, 33, 4131, 689, 3835, 14860, 3992, 4543, 7620, 2]
+// Module ID: 14932
+// Function ID: 113875
+// Dependencies: [31, 33, 4131, 689, 3835, 14861, 3992, 4543, 7620, 2]
 
-// Module 14931
+// Module 14932
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -16,7 +16,7 @@ let closure_6 = { code: "function GuildsBarSeparatorTsx1(){const{withSpring,guil
 const memoResult = importAllResult.memo(function GuildsBarSeparator() {
   let obj = token(3835);
   token = obj.useToken(panelX(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  panelX = importAllResult.useContext(token(14860).HomeDrawerStateContext).panelX;
+  panelX = importAllResult.useContext(token(14861).HomeDrawerStateContext).panelX;
   const tmp = callback();
   const fn = function l() {
     const obj = {};
@@ -24,7 +24,7 @@ const memoResult = importAllResult.memo(function GuildsBarSeparator() {
     obj.maxWidth = token(outer1_2[7]).withSpring(bound, token(outer1_2[5]).HOME_DRAWER_FLING_PHYSICS);
     return obj;
   };
-  obj = { withSpring: token(4543).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: token(14860).HOME_DRAWER_FLING_PHYSICS };
+  obj = { withSpring: token(4543).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: token(14861).HOME_DRAWER_FLING_PHYSICS };
   fn.__closure = obj;
   fn.__workletHash = 1425261651828;
   fn.__initData = closure_6;

@@ -1,5 +1,5 @@
 // Module ID: 3770
-// Function ID: 28961
+// Function ID: 28962
 // Name: getReactionEmojiName
 // Dependencies: [1194, 653, 3771, 3772, 1212, 3804, 675, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, isCustomReactionEmojiId, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting

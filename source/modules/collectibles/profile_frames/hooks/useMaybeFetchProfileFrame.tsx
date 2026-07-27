@@ -1,5 +1,5 @@
 // Module ID: 8020
-// Function ID: 63847
+// Function ID: 63848
 // Name: useMaybeFetchProfileFrame
 // Dependencies: [31, 8021, 8031, 8032, 5769, 2]
 // Exports: default

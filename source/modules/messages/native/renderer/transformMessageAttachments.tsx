@@ -1,5 +1,5 @@
 // Module ID: 7932
-// Function ID: 63135
+// Function ID: 63136
 // Name: transformMessageAttachments
 // Dependencies: [7655, 653, 1360, 4318, 7827, 477, 7933, 7826, 1212, 7934, 4672, 7845, 2]
 // Exports: default

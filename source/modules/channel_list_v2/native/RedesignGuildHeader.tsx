@@ -1,10 +1,10 @@
-// Module ID: 15041
-// Function ID: 114623
+// Module ID: 15042
+// Function ID: 114627
 // Name: GuildInfoHeader
-// Dependencies: [31, 27, 4123, 3824, 3760, 10222, 653, 33, 8757, 4067, 3977, 4550, 15042, 1841, 9849, 3835, 689, 4548, 9851, 4131, 3992, 3993, 4663, 15043, 1450, 566, 6634, 1457, 4543, 4547, 12977, 1392, 5085, 8391, 2]
+// Dependencies: [31, 27, 4123, 3824, 3760, 10223, 653, 33, 8757, 4067, 3977, 4550, 15043, 1841, 9849, 3835, 689, 4548, 9851, 4131, 3992, 3993, 4663, 15044, 1450, 566, 6634, 1457, 4543, 4547, 12978, 1392, 5085, 8391, 2]
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 15041 (GuildInfoHeader)
+// Module 15042 (GuildInfoHeader)
 import importAllResult from "getAvatarURL";
 import get_ActivityIndicator from "Link";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -65,7 +65,7 @@ function GuildInfoHeader(bannerHeight) {
   const tmp5 = bannerHeight(3993);
   obj.children = callback(bannerHeight(4663), { absolute: true, tall: true });
   const items1 = [callback(bannerHeight(3993), obj), ];
-  obj1 = { style: tmp.headerWrapper, children: callback(bannerHeight(15043), obj2) };
+  obj1 = { style: tmp.headerWrapper, children: callback(bannerHeight(15044), obj2) };
   obj2 = { guild, showExtraButtons: !isFavoritesGuildIdResult, canOpenGuildActionSheet: !isFavoritesGuildIdResult, showCoachmarks: !isFavoritesGuildIdResult };
   items1[1] = callback(closure_5, obj1);
   obj.children = items1;
@@ -107,51 +107,63 @@ function ReanimatedGuildBanner(guild) {
     scrollPosition(bannerHeight[30])(guild);
   }, items3);
   let obj4 = guild(bannerHeight[20]);
-  const fn = function b() {
-    const value = scrollPosition.get();
-    let obj = {};
-    const items = [0, bannerHeight];
-    obj.opacity = guild(bannerHeight[20]).interpolate(value, items, [1, 0], "clamp");
-    obj = {};
-    if (value >= 0) {
-      const obj4 = guild(bannerHeight[20]);
-      const items1 = [0, bannerHeight];
-      const items2 = [0, -bannerHeight];
-      let interpolateResult = obj4.interpolate(-value, items1, items2, "clamp");
-    } else {
-      interpolateResult = value / 2;
-    }
-    obj.translateY = interpolateResult;
-    const items3 = [obj, ];
-    obj = {};
-    let num2 = 1;
-    if (value < 0) {
-      num2 = (bannerHeight - value) / bannerHeight;
-    }
-    obj.scale = num2;
-    items3[1] = obj;
-    obj.transform = items3;
-    return obj;
-  };
-  obj = { scrollPosition, interpolate: guild(bannerHeight[20]).interpolate, maxScrollPosition: bannerHeight, bannerHeight };
-  fn.__closure = obj;
-  fn.__workletHash = 16532496584630;
-  fn.__initData = closure_21;
-  const animatedStyle = obj4.useAnimatedStyle(fn);
   class H {
     constructor() {
+      value = scrollPosition.get();
       obj = {};
       obj2 = guild(bannerHeight[20]);
-      obj.opacity = obj2.interpolate(_isNativeReflectConstruct.get(), [0, 1], [0, 0.3]);
+      items = [0];
+      items[1] = bannerHeight;
+      obj.opacity = obj2.interpolate(value, items, [1, 0], "clamp");
+      obj = {};
+      if (value >= 0) {
+        tmp3 = guild;
+        tmp4 = bannerHeight;
+        obj4 = guild(bannerHeight[20]);
+        tmp5 = bannerHeight;
+        items1 = [0];
+        items1[1] = bannerHeight;
+        items2 = [0];
+        items2[1] = -bannerHeight;
+        tmp6 = obj4;
+        tmp7 = items1;
+        tmp8 = items2;
+        str = "clamp";
+        interpolateResult = obj4.interpolate(-value, items1, items2, "clamp");
+      } else {
+        num = 2;
+        interpolateResult = value / 2;
+      }
+      obj.translateY = interpolateResult;
+      items3 = [, ];
+      items3[0] = obj;
+      obj1 = {};
+      num2 = 1;
+      if (value < 0) {
+        tmp9 = bannerHeight;
+        num2 = (bannerHeight - value) / bannerHeight;
+      }
+      obj1.scale = num2;
+      items3[1] = obj1;
+      obj.transform = items3;
       return obj;
     }
   }
-  obj = { interpolate: guild(bannerHeight[20]).interpolate, pressed: sharedValue };
+  obj = { scrollPosition, interpolate: guild(bannerHeight[20]).interpolate, maxScrollPosition: bannerHeight, bannerHeight };
   H.__closure = obj;
-  H.__workletHash = 13777976622560;
-  H.__initData = closure_22;
+  H.__workletHash = 16532496584630;
+  H.__initData = closure_21;
+  const animatedStyle = obj4.useAnimatedStyle(H);
+  const fn = function b() {
+    const obj = { opacity: guild(bannerHeight[20]).interpolate(sharedValue.get(), [0, 1], [0, 0.3]) };
+    return obj;
+  };
+  obj = { interpolate: guild(bannerHeight[20]).interpolate, pressed: sharedValue };
+  fn.__closure = obj;
+  fn.__workletHash = 13777976622560;
+  fn.__initData = closure_22;
   const items4 = [tmp, bannerWidth, bannerHeight];
-  const animatedStyle1 = guild(bannerHeight[20]).useAnimatedStyle(H);
+  const animatedStyle1 = guild(bannerHeight[20]).useAnimatedStyle(fn);
   if (null == guild.banner) {
     return null;
   } else {
@@ -233,22 +245,23 @@ const result1 = require("_isNativeReflectConstruct").fileFinishedImporting("modu
 
 export default memoResult;
 export const useRedesignGuildHeaderHeight = function useRedesignGuildHeaderHeight(id) {
-  let isThemeDarkResult = importDefault(8757)();
-  if (!isThemeDarkResult) {
+  const tmp = importDefault(8757)();
+  let isThemeDarkResult = tmp;
+  if (!tmp) {
     isThemeDarkResult = require(3977) /* AccessibilityAnnouncer */.isThemeDark(tmp2);
     const obj = require(3977) /* AccessibilityAnnouncer */;
   }
   const fontScale = require(4550) /* getFontScale */.useFontScale();
   const obj2 = require(4550) /* getFontScale */;
-  const tmp6 = null != importDefault(15042)(id);
+  const tmp7 = null != importDefault(15043)(id);
   const isFavoritesGuildIdResult = require(1841) /* isFavoritesGuildId */.isFavoritesGuildId(id.id);
   const obj3 = require(1841) /* isFavoritesGuildId */;
+  const scaleTextLineHeightResult = require(9849) /* scaleLineHeight */.scaleTextLineHeight("redesign/heading-18/bold", fontScale);
   let num2 = 0;
-  const obj4 = require(9849) /* scaleLineHeight */;
   if (isThemeDarkResult) {
     num2 = 1;
   }
-  const scaleTextLineHeightResult = require(9849) /* scaleLineHeight */.scaleTextLineHeight("redesign/heading-18/bold", fontScale);
+  const obj4 = require(9849) /* scaleLineHeight */;
   let num3 = 0;
   const token = require(3835) /* map */.useToken(importDefault(689).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   if (!isFavoritesGuildIdResult) {
@@ -259,9 +272,14 @@ export const useRedesignGuildHeaderHeight = function useRedesignGuildHeaderHeigh
     num5 = 12;
   }
   let num6 = 0;
-  if (tmp6) {
+  if (tmp7) {
     num6 = require(9849) /* scaleLineHeight */.scaleTextLineHeight(token, fontScale);
     const obj6 = require(9849) /* scaleLineHeight */;
   }
-  return importDefault(9851)(16 + scaleTextLineHeightResult + num6 + num3 + num5 + num2);
+  let bound = scaleTextLineHeightResult;
+  if (isFavoritesGuildIdResult) {
+    const _Math = Math;
+    bound = Math.max(scaleTextLineHeightResult, require(4548) /* getButtonPadding */.SMALL_BUTTON_HEIGHT);
+  }
+  return importDefault(9851)(16 + bound + num6 + num3 + num5 + num2);
 };

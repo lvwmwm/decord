@@ -1,5 +1,5 @@
 // Module ID: 7364
-// Function ID: 60281
+// Function ID: 60282
 // Name: RubberDuckSpotIllustration
 // Dependencies: [33, 5085, 7365, 2]
 // Exports: RubberDuckSpotIllustration

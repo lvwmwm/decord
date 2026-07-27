@@ -1,10 +1,10 @@
-// Module ID: 11444
-// Function ID: 89003
+// Module ID: 11445
+// Function ID: 89008
 // Name: getOrRefreshPushSyncToken
-// Dependencies: [5, 11445, 1194, 653, 5591, 3, 684, 507, 1184, 11449, 587, 4943, 477, 480, 1327, 686, 2]
+// Dependencies: [5, 11446, 1194, 653, 5591, 3, 684, 507, 1184, 11450, 587, 4943, 477, 480, 1327, 686, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 11444 (getOrRefreshPushSyncToken)
+// Module 11445 (getOrRefreshPushSyncToken)
 import timestamp from "timestamp";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";

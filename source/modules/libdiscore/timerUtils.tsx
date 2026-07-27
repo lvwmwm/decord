@@ -1,10 +1,10 @@
-// Module ID: 16672
-// Function ID: 130054
+// Module ID: 16684
+// Function ID: 130101
 // Name: flushDelayLogs
 // Dependencies: [653, 3, 675, 574, 1849, 2]
 // Exports: setupLibdiscoreTimersMonitor
 
-// Module 16672 (flushDelayLogs)
+// Module 16684 (flushDelayLogs)
 import { AnalyticEvents } from "ME";
 import importDefaultResult from "debounce";
 

@@ -1,10 +1,10 @@
-// Module ID: 10838
-// Function ID: 84135
+// Module ID: 10839
+// Function ID: 84140
 // Name: useChannelLoading
-// Dependencies: [57, 31, 10839, 9241, 4561, 2]
+// Dependencies: [57, 31, 10840, 9241, 4561, 2]
 // Exports: default
 
-// Module 10838 (useChannelLoading)
+// Module 10839 (useChannelLoading)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

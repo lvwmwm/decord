@@ -1,10 +1,10 @@
-// Module ID: 11216
-// Function ID: 87299
+// Module ID: 11217
+// Function ID: 87304
 // Name: useTrackSearchItems
-// Dependencies: [31, 10861, 8364, 480, 5676, 2]
+// Dependencies: [31, 10862, 8364, 480, 5676, 2]
 // Exports: useTrackSearchItems
 
-// Module 11216 (useTrackSearchItems)
+// Module 11217 (useTrackSearchItems)
 import result from "result";
 
 const require = arg1;
@@ -14,7 +14,7 @@ export const useTrackSearchItems = function useTrackSearchItems(getApplicationId
   const _require = getApplicationIdFromApplicationItem;
   const dependencyMap = getImpressionPropsFromApplicationItem;
   const React = first;
-  let obj = _require(10861);
+  let obj = _require(10862);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   let closure_4 = React.useRef({});
   let closure_5 = React.useRef(first);

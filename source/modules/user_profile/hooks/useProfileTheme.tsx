@@ -1,5 +1,5 @@
 // Module ID: 8015
-// Function ID: 63822
+// Function ID: 63823
 // Name: useProfileTheme
 // Dependencies: [57, 4123, 8016, 653, 4067, 566, 688, 7850, 665, 7927, 3977, 2]
 // Exports: default

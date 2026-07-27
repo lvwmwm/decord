@@ -1,5 +1,5 @@
 // Module ID: 5997
-// Function ID: 53356
+// Function ID: 53357
 // Name: useIsRemote
 // Dependencies: [4145, 566, 2]
 // Exports: default

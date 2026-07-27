@@ -1,10 +1,10 @@
-// Module ID: 15068
-// Function ID: 114797
+// Module ID: 15080
+// Function ID: 114843
 // Name: isFavoritesSection
 // Dependencies: [653, 5753, 4325, 2]
 // Exports: isFavoritesSection, isNamedCategorySection, isRecentsSection, isVoiceChannelsSection, logChannelListEndReached
 
-// Module 15068 (isFavoritesSection)
+// Module 15080 (isFavoritesSection)
 import { AnalyticEvents } from "ME";
 
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/channel_list_v2/native/ChannelListUtils.tsx");

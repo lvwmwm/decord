@@ -1,5 +1,5 @@
 // Module ID: 6834
-// Function ID: 59486
+// Function ID: 59487
 // Name: BrushAndSwordIllocon
 // Dependencies: [33, 5085, 6835, 2]
 // Exports: BrushAndSwordIllocon

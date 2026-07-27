@@ -1,10 +1,10 @@
-// Module ID: 10192
-// Function ID: 78857
+// Module ID: 10193
+// Function ID: 78862
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [6, 7, 15, 17, 18, 566, 686, 3983, 3982, 3985, 2]
 // Exports: getIdFromHistoryItem, getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 10192 (_createForOfIteratorHelperLoose)
+// Module 10193 (_createForOfIteratorHelperLoose)
 import dispatcher from "dispatcher";
 import getRootNavigationRef from "getRootNavigationRef";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

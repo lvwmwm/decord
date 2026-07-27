@@ -1,5 +1,5 @@
 // Module ID: 9788
-// Function ID: 76058
+// Function ID: 76059
 // Name: SpoilerIcon
 // Dependencies: [31, 33, 689, 3834, 9789, 2]
 // Exports: SpoilerIcon

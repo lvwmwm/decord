@@ -1,10 +1,10 @@
-// Module ID: 13816
-// Function ID: 105934
+// Module ID: 13817
+// Function ID: 105939
 // Name: getPermissiveness
 // Dependencies: [5043, 4052, 1838, 4971, 1282, 6449, 1212, 3804, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getProfileToActivityUpsellStrings, getUpsellStrings, sortGuildIdsByFrecency
 
-// Module 13816 (getPermissiveness)
+// Module 13817 (getPermissiveness)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

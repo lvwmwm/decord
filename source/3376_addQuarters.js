@@ -1,5 +1,5 @@
 // Module ID: 3376
-// Function ID: 26517
+// Function ID: 26518
 // Name: addQuarters
 // Dependencies: [3214, 3359, 3211]
 // Exports: default

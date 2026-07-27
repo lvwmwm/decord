@@ -1,10 +1,10 @@
-// Module ID: 13097
-// Function ID: 101126
+// Module ID: 13098
+// Function ID: 101131
 // Name: LiveTag
 // Dependencies: [31, 27, 33, 4131, 689, 477, 4127, 1212, 2]
 // Exports: default
 
-// Module 13097 (LiveTag)
+// Module 13098 (LiveTag)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

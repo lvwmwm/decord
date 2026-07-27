@@ -1,5 +1,5 @@
 // Module ID: 6689
-// Function ID: 59041
+// Function ID: 59042
 // Name: StageChannelAgeVerificationNoticeContent
 // Dependencies: [31, 27, 653, 33, 4131, 689, 4348, 1212, 4127, 3822, 1921, 6690, 6692, 4087, 7570, 1273, 4956, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 5984
-// Function ID: 53250
+// Function ID: 53251
 // Name: _getDeviceState
 // Dependencies: [5, 27, 3, 5985, 2]
 // Exports: getDeviceState

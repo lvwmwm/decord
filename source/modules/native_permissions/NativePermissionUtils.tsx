@@ -1,5 +1,5 @@
 // Module ID: 4676
-// Function ID: 40749
+// Function ID: 40750
 // Name: NativePermissionsRequestOptions
 // Dependencies: [4677, 4678, 4679, 4683, 2, 4680]
 

@@ -1,5 +1,5 @@
 // Module ID: 8582
-// Function ID: 68173
+// Function ID: 68174
 // Name: getSharedMarkdownParser
 // Dependencies: [31, 27, 33, 4563, 1212, 4131, 689, 8583, 4127, 8585, 3801, 6519, 5462, 8587, 8418, 8412, 8590, 4544, 5512, 2]
 // Exports: default

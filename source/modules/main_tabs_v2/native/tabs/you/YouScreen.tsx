@@ -1,10 +1,10 @@
-// Module ID: 15528
-// Function ID: 119543
+// Module ID: 15541
+// Function ID: 119592
 // Name: handleBackButtonPress
-// Dependencies: [57, 31, 27, 5630, 1922, 13614, 5868, 1850, 15158, 653, 655, 1345, 5510, 33, 3992, 8316, 4131, 478, 689, 666, 3983, 624, 1212, 4661, 15187, 8305, 8364, 480, 7922, 1557, 8015, 4067, 8314, 3985, 1450, 3804, 1457, 15529, 1392, 7918, 6504, 15530, 8045, 4664, 8020, 8304, 5482, 8034, 1334, 8379, 5085, 15531, 5449, 15534, 15535, 3843, 15543, 8035, 8026, 8311, 665, 8041, 7997, 15545, 9986, 7923, 8605, 6554, 5769, 11902, 5703, 2]
+// Dependencies: [57, 31, 27, 5630, 1922, 13615, 5868, 1850, 15171, 653, 655, 1345, 5510, 33, 3992, 8316, 4131, 478, 689, 666, 3983, 624, 1212, 4661, 15200, 8305, 8364, 480, 7922, 1557, 8015, 4067, 8314, 3985, 1450, 3804, 1457, 15542, 1392, 7918, 6504, 15543, 8045, 4664, 8020, 8304, 5482, 8034, 1334, 8379, 5085, 15544, 5449, 15547, 15548, 3843, 15556, 8035, 8026, 8311, 665, 8041, 7997, 15558, 9986, 7923, 8605, 6554, 5769, 11903, 5703, 2]
 // Exports: default
 
-// Module 15528 (handleBackButtonPress)
+// Module 15541 (handleBackButtonPress)
 import ProfileFrameLayer from "ProfileFrameLayer";
 import useTheme from "useTheme";
 import get_ActivityIndicator from "isThrottled";
@@ -60,7 +60,7 @@ function BackButton(paddingTop) {
   items1 = [callback4().backButton, { top: paddingTop.paddingTop }];
   obj.accessibilityLabel = formatToPlainStringResult;
   obj.onPress = handleBackButtonPress;
-  obj.children = callback2(require(15187) /* IconWithBadge */.CloseIconWithBadgeOnSide, { count: stateFromStores });
+  obj.children = callback2(require(15200) /* IconWithBadge */.CloseIconWithBadgeOnSide, { count: stateFromStores });
   return callback2(require(4661) /* PressableBase */.PressableOpacity, obj);
 }
 function UnconnectedYouScreen(arg0) {
@@ -154,7 +154,7 @@ function UnconnectedYouScreen(arg0) {
   const setting = GifAutoPlay.getSetting();
   let obj4 = navigateToSettings(1457);
   const isFocused = obj4.useIsFocused();
-  let obj5 = navigateToSettings(15529);
+  let obj5 = navigateToSettings(15542);
   const tmp24 = !isFocused && !obj5.useIsProfileModalTransitioning();
   const animatedScrollHandler = obj3.useAnimatedScrollHandler(M);
   const ref2 = rect.useRef(undefined);
@@ -298,7 +298,7 @@ function UnconnectedYouScreen(arg0) {
         _undefined(outer1_18.TAKE_ACTION);
       }, items4);
       let tmp83 = null != memo2;
-      let obj18 = navigateToSettings(15531);
+      let obj18 = navigateToSettings(15544);
       obj4 = { disabled: tmp83 };
       youSettingsCoachmark = obj18.useYouSettingsCoachmark(obj4);
       let tmp85 = null != youSettingsCoachmark;
@@ -307,7 +307,7 @@ function UnconnectedYouScreen(arg0) {
         tmp86 = tmp85;
       }
       c13 = tmp86;
-      let obj20 = navigateToSettings(15530);
+      let obj20 = navigateToSettings(15543);
       closure_14 = callback(rect.useState(!obj20.isYouNavFloating()), 2)[1];
       let tmp94Result = null;
       if (tmp86) {
@@ -318,7 +318,7 @@ function UnconnectedYouScreen(arg0) {
             const obj6 = { buttonRef: ref4, markAsDismissed: tmp73, visible: tmp74 };
             ({ title: obj23.title, description: obj23.description, avatarSrc: obj23.avatarSrc, decorationAsset: obj23.decorationAsset, renderImgComponent: obj23.renderImgComponent } = memo2);
             obj6.navigateToShop = callback1;
-            tmp83 = callback2(navigateToShop(15534), obj6);
+            tmp83 = callback2(navigateToShop(15547), obj6);
           }
           const items5 = [tmp83, ];
           if (tmp85) {
@@ -327,7 +327,7 @@ function UnconnectedYouScreen(arg0) {
             merged = dependencyMap;
             obj7 = { buttonRef: ref5 };
             merged = obj7;
-            merged = navigateToShop(15531);
+            merged = navigateToShop(15544);
             merged = Object.assign(youSettingsCoachmark.props);
             tmp85 = callback2(merged, obj7);
           }
@@ -346,7 +346,7 @@ function UnconnectedYouScreen(arg0) {
             const timeout = setTimeout(() => outer1_14(true), 500);
             return () => clearTimeout(closure_0);
           }
-          obj = navigateToSettings(15530);
+          obj = navigateToSettings(15543);
         }
       }, items6);
       merged = rect;
@@ -372,7 +372,7 @@ function UnconnectedYouScreen(arg0) {
           return;
         }
       }
-      let obj25 = navigateToSettings(15530);
+      let obj25 = navigateToSettings(15543);
       merged = undefined;
       if (obj25.isYouNavFloating()) {
         merged = rect.bottom;
@@ -415,7 +415,7 @@ function UnconnectedYouScreen(arg0) {
       merged = closure_14;
       obj13.nativeID = closure_14;
       merged = null != tmp47Result;
-      merged = navigateToShop(15543);
+      merged = navigateToShop(15556);
       if (merged) {
         merged = callback2;
         merged = navigateToShop;
@@ -436,7 +436,7 @@ function UnconnectedYouScreen(arg0) {
       const obj15 = { gradientHeight: height, bannerHeight: tmp4Result, style: tmp7.background };
       items9[1] = callback2(navigateToShop(8311), obj15);
       merged = navigateToSettings;
-      let obj33 = navigateToSettings(15530);
+      let obj33 = navigateToSettings(15543);
       merged = !obj33.isYouNavFloating() && tmp94Result;
       items9[2] = merged;
       obj16 = { contentContainerStyle: memo.contentContainerStyle, ref, onScroll: animatedScrollHandler, onLayout: callback };
@@ -461,7 +461,7 @@ function UnconnectedYouScreen(arg0) {
           obj18 = { paddingTop: bound1 };
           merged = callback2(BackButton, obj18);
         }
-        obj37 = navigateToSettings(15530);
+        obj37 = navigateToSettings(15543);
       }
       const items11 = [merged, ];
       merged = navigateToShop;
@@ -524,7 +524,7 @@ function UnconnectedYouScreen(arg0) {
           items17[1] = merged;
           obj23.children = items17;
           mergedResult = merged(navigateToShop(3992).View, obj23);
-          obj53 = navigateToSettings(15530);
+          obj53 = navigateToSettings(15543);
         }
         items15[1] = mergedResult;
         merged = callback2;
@@ -540,7 +540,7 @@ function UnconnectedYouScreen(arg0) {
         obj27.navigateToShop = navigateToShop;
         obj27.initialTab = initialTab;
         obj27.animateAvatar = !tmp24;
-        items15[2] = callback2(navigateToShop(15545), obj27);
+        items15[2] = callback2(navigateToShop(15558), obj27);
         merged = callback2;
         merged = navigateToSettings;
         const obj28 = { label: "you_screen" };
@@ -565,12 +565,12 @@ function UnconnectedYouScreen(arg0) {
         merged = navigateToSettings;
         merged = dependencyMap;
         const obj48 = navigateToSettings(478);
-        merged = navigateToSettings(15530).isYouNavFloating() && merged;
+        merged = navigateToSettings(15543).isYouNavFloating() && merged;
         items9[5] = merged;
         merged = navigateToSettings;
         merged = dependencyMap;
-        const obj58 = navigateToSettings(15530);
-        merged = navigateToSettings(15530).isYouNavFloating() && tmp94Result;
+        const obj58 = navigateToSettings(15543);
+        merged = navigateToSettings(15543).isYouNavFloating() && tmp94Result;
         items9[6] = merged;
         obj13.children = items9;
         obj12.children = merged(merged, obj13);

@@ -1,5 +1,5 @@
 // Module ID: 7705
-// Function ID: 61558
+// Function ID: 61559
 // Name: createChangeChannelIconSystemMessage
 // Dependencies: [1348, 7677, 7684, 7686, 7687, 1212, 7690, 2]
 // Exports: createChangeChannelIconSystemMessage

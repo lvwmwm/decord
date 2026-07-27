@@ -1,9 +1,9 @@
-// Module ID: 11156
-// Function ID: 86729
+// Module ID: 11157
+// Function ID: 86734
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 21, 11154, 5676, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1850, 21, 11155, 5676, 566, 686, 2]
 
-// Module 11156 (_isNativeReflectConstruct)
+// Module 11157 (_isNativeReflectConstruct)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import result from "result";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -105,7 +105,7 @@ tmp2 = new tmp2(require("dispatcher"), {
             const extractTimestampResult = obj.extractTimestamp(message.id);
             const _Date = Date;
             const timestamp = Date.now();
-            if (timestamp <= extractTimestampResult + require(11154) /* result */.RECENT_MESSAGE_MS) {
+            if (timestamp <= extractTimestampResult + require(11155) /* result */.RECENT_MESSAGE_MS) {
               obj = { timeMs: extractTimestampResult, guildId, channelId };
             }
           }

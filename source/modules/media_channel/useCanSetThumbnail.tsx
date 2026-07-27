@@ -1,5 +1,5 @@
 // Module ID: 9780
-// Function ID: 76009
+// Function ID: 76010
 // Name: useCanSetThumbnail
 // Dependencies: [1348, 624, 2]
 // Exports: default

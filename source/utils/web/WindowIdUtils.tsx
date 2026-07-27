@@ -1,5 +1,5 @@
 // Module ID: 5134
-// Function ID: 44522
+// Function ID: 44523
 // Name: getWindowId
 // Dependencies: [22, 2]
 // Exports: getMainWindowId, setupWindowId

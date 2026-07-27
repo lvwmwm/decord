@@ -1,5 +1,5 @@
 // Module ID: 6697
-// Function ID: 59111
+// Function ID: 59112
 // Name: requestAgeVerification
 // Dependencies: [5, 1194, 6691, 653, 6698, 507, 686, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap

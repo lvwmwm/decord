@@ -1,5 +1,5 @@
 // Module ID: 5091
-// Function ID: 44345
+// Function ID: 44346
 // Name: ArrowLargeLeftIcon
 // Dependencies: [31, 33, 689, 3834, 5092, 2]
 // Exports: ArrowLargeLeftIcon

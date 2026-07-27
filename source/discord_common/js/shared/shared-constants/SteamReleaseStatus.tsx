@@ -1,5 +1,5 @@
 // Module ID: 8424
-// Function ID: 67281
+// Function ID: 67282
 // Name: SteamReleaseStatus
 // Dependencies: [2]
 

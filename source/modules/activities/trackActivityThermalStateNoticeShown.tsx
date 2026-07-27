@@ -1,10 +1,10 @@
-// Module ID: 15796
-// Function ID: 121926
+// Module ID: 15808
+// Function ID: 121973
 // Name: trackActivityThermalStateNoticeShown
 // Dependencies: [1348, 4203, 1347, 653, 3749, 675, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 15796 (trackActivityThermalStateNoticeShown)
+// Module 15808 (trackActivityThermalStateNoticeShown)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

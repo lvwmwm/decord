@@ -1,9 +1,9 @@
-// Module ID: 11347
-// Function ID: 88171
+// Module ID: 11348
+// Function ID: 88176
 // Name: GiftIconTrinketsAnimation
 // Dependencies: [31, 27, 4123, 33, 4131, 4548, 1324, 3835, 689, 566, 1832, 477, 6153, 5085, 2]
 
-// Module 11347 (GiftIconTrinketsAnimation)
+// Module 11348 (GiftIconTrinketsAnimation)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";

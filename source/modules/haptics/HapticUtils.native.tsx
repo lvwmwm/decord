@@ -1,5 +1,5 @@
 // Module ID: 4100
-// Function ID: 33966
+// Function ID: 33967
 // Name: getAndroidLightImpactEffect
 // Dependencies: [4101, 4102, 477, 4111, 2]
 // Exports: triggerHapticFeedback

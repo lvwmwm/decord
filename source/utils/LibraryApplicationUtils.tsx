@@ -1,5 +1,5 @@
 // Module ID: 4175
-// Function ID: 35424
+// Function ID: 35425
 // Name: convertToTransitionState
 // Dependencies: [57, 1850, 4176, 653, 3804, 2]
 // Exports: calculateProgressPercentage, convertComboId, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary

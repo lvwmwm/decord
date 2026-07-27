@@ -1,5 +1,5 @@
 // Module ID: 8905
-// Function ID: 70482
+// Function ID: 70483
 // Name: PlayStationLinkDiscordConsent
 // Dependencies: [31, 8900, 653, 8877, 33, 1456, 8906, 8907, 8878, 2]
 // Exports: PlayStationLinkDiscordConsent

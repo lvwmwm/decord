@@ -1,10 +1,10 @@
-// Module ID: 13486
-// Function ID: 103704
+// Module ID: 13487
+// Function ID: 103709
 // Name: fetchStoreListingsForApplications
-// Dependencies: [4168, 4176, 13487, 653, 4370, 507, 686, 6444, 2]
+// Dependencies: [4168, 4176, 13488, 653, 4370, 507, 686, 6444, 2]
 // Exports: fetchAllStoreListingsForApplication, fetchStoreListingForSku, fetchStoreListingsForApplications
 
-// Module 13486 (fetchStoreListingsForApplications)
+// Module 13487 (fetchStoreListingsForApplications)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

@@ -1,5 +1,5 @@
 // Module ID: 8443
-// Function ID: 67310
+// Function ID: 67311
 // Name: GameProfileStoreLinksActionSheet
 // Dependencies: [31, 27, 33, 4131, 689, 8415, 3828, 1557, 5498, 5189, 4127, 1212, 4544, 4099, 2]
 // Exports: default

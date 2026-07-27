@@ -1,10 +1,10 @@
-// Module ID: 10273
-// Function ID: 79421
+// Module ID: 10274
+// Function ID: 79426
 // Name: DragHandle
-// Dependencies: [57, 31, 27, 33, 4131, 689, 4529, 3992, 10274, 8379, 1334, 4132, 4127, 1212, 10275, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 4529, 3992, 10275, 8379, 1334, 4132, 4127, 1212, 10276, 2]
 // Exports: default
 
-// Module 10273 (DragHandle)
+// Module 10274 (DragHandle)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -203,12 +203,12 @@ export default function NotificationContent(arg0) {
   if ("message" === header.type) {
     const obj4 = {};
     const merged = Object.assign(header);
-    let tmp20 = callback2(importDefault(10275), obj4);
-    const tmp24 = importDefault(10275);
+    let tmp20 = callback2(importDefault(10276), obj4);
+    const tmp24 = importDefault(10276);
   } else {
     const obj5 = {};
     const merged1 = Object.assign(header);
-    tmp20 = callback2(require(10275) /* LocationText */.SimpleNotificationHeader, obj5);
+    tmp20 = callback2(require(10276) /* LocationText */.SimpleNotificationHeader, obj5);
   }
   obj3.children = tmp20;
   items2[1] = callback2(closure_6, obj3);

@@ -1,5 +1,5 @@
 // Module ID: 9271
-// Function ID: 72606
+// Function ID: 72607
 // Name: IMAGE_SIZE
 // Dependencies: [1314, 2]
 

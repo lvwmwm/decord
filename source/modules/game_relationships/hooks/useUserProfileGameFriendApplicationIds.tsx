@@ -1,10 +1,10 @@
-// Module ID: 12107
-// Function ID: 94878
+// Module ID: 12108
+// Function ID: 94883
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [31, 3768, 1850, 566, 11988, 2]
+// Dependencies: [31, 3768, 1850, 566, 11989, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 12107 (useUserProfileGameFriendApplicationIds)
+// Module 12108 (useUserProfileGameFriendApplicationIds)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

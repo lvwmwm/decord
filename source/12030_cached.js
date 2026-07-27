@@ -1,7 +1,7 @@
 // Module ID: 12030
-// Function ID: 93534
+// Function ID: 93528
 // Name: cached
-// Dependencies: [12015]
+// Dependencies: [12016]
 
 // Module 12030 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "characters", verb: "to have" }, file: { unit: "bytes", verb: "to have" }, array: { unit: "items", verb: "to have" }, set: { unit: "items", verb: "to have" }, map: { unit: "entries", verb: "to have" } };
-      let closure_1 = { regex: "input", email: "email address", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datetime", date: "ISO date", time: "ISO time", duration: "ISO duration", ipv4: "IPv4 address", ipv6: "IPv6 address", mac: "MAC address", cidrv4: "IPv4 range", cidrv6: "IPv6 range", base64: "base64-encoded string", base64url: "base64url-encoded string", json_string: "JSON string", e164: "E.164 number", jwt: "JWT", template_literal: "input" };
-      let closure_2 = { nan: "NaN" };
+      let closure_0 = { string: { unit: "Zeichen", verb: "zu haben" }, file: { unit: "Bytes", verb: "zu haben" }, array: { unit: "Elemente", verb: "zu haben" }, set: { unit: "Elemente", verb: "zu haben" } };
+      let closure_1 = { regex: "Eingabe", email: "E-Mail-Adresse", url: "URL", emoji: "Emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO-Datum und -Uhrzeit", date: "ISO-Datum", time: "ISO-Uhrzeit", duration: "ISO-Dauer", ipv4: "IPv4-Adresse", ipv6: "IPv6-Adresse", cidrv4: "IPv4-Bereich", cidrv6: "IPv6-Bereich", base64: "Base64-codierter String", base64url: "Base64-URL-codierter String", json_string: "JSON-String", e164: "E.164-Nummer", jwt: "JWT", template_literal: "Eingabe" };
+      let closure_2 = { nan: "NaN", number: "Zahl", array: "Array" };
       return (code) => {
         let minimum;
         let origin;
@@ -80,109 +80,115 @@ if (self2) {
           if (null != closure_2[parsedTypeResult]) {
             tmp51 = tmp50;
           }
-          const _HermesInternal16 = HermesInternal;
-          return "Invalid input: expected " + expected + ", received " + tmp51;
+          if (obj.test(code.expected)) {
+            const _HermesInternal17 = HermesInternal;
+            let combined = "Ung\u00FCltige Eingabe: erwartet instanceof " + code.expected + ", erhalten " + tmp51;
+          } else {
+            const _HermesInternal16 = HermesInternal;
+            combined = "Ung\u00FCltige Eingabe: erwartet " + expected + ", erhalten " + tmp51;
+          }
+          return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined = "Invalid input: expected " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Ung\u00FCltige Eingabe: erwartet " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined = "Invalid option: expected one of " + closure_2.joinValues(code.values, "|");
+            combined1 = "Ung\u00FCltige Option: erwartet eine von " + closure_2.joinValues(code.values, "|");
           }
-          return combined;
+          return combined1;
         } else if ("too_big" === code) {
-          let str28 = "<";
+          let str33 = "<";
           if (code.inclusive) {
-            str28 = "<=";
+            str33 = "<=";
           }
           const tmp26 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str29 = "value";
+          let str34 = "Wert";
           if (tmp26) {
             if (tmp28) {
-              str29 = origin2;
+              str34 = origin2;
             }
             let str = code.maximum.toString();
             const unit = tmp26.unit;
-            let str34 = "elements";
+            let str40 = "Elemente";
             if (null != unit) {
-              str34 = unit;
+              str40 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined1 = "Too big: expected " + str29 + " to have " + str28 + str + " " + str34;
-            const str33 = code.maximum;
+            let combined2 = "Zu gro\u00DF: erwartet, dass " + str34 + " " + str33 + str + " " + str40 + " hat";
+            const str39 = code.maximum;
           } else {
-            let tmp29 = str29;
+            let tmp29 = str34;
             if (tmp28) {
               tmp29 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined1 = "Too big: expected " + tmp29 + " to be " + str28 + code.maximum.toString();
-            const str30 = code.maximum;
+            combined2 = "Zu gro\u00DF: erwartet, dass " + tmp29 + " " + str33 + code.maximum.toString() + " ist";
+            const str35 = code.maximum;
           }
-          return combined1;
+          return combined2;
         } else if ("too_small" === code) {
-          let str22 = ">";
+          let str24 = ">";
           if (code.inclusive) {
-            str22 = ">=";
+            str24 = ">=";
           }
           const tmp15 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
           if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined2 = "Too small: expected " + origin + " to have " + str22 + str1 + " " + tmp15.unit;
+            let combined3 = "Zu klein: erwartet, dass " + origin + " " + str24 + str1 + " " + tmp15.unit + " hat";
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined2 = "Too small: expected " + origin + " to be " + str22 + str1;
+            combined3 = "Zu klein: erwartet, dass " + origin + " " + str24 + str1 + " ist";
           }
-          return combined2;
+          return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined3 = "Invalid string: must start with \"" + code.prefix + "\"";
+            let combined4 = "Ung\u00FCltiger String: muss mit \"" + code.prefix + "\" beginnen";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined3 = "Invalid string: must end with \"" + code.suffix + "\"";
+            combined4 = "Ung\u00FCltiger String: muss mit \"" + code.suffix + "\" enden";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined3 = "Invalid string: must include \"" + code.includes + "\"";
+            combined4 = "Ung\u00FCltiger String: muss \"" + code.includes + "\" enthalten";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined3 = "Invalid string: must match pattern " + code.pattern;
+            combined4 = "Ung\u00FCltiger String: muss dem Muster " + code.pattern + " entsprechen";
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined3 = "Invalid " + format;
+            combined4 = "Ung\u00FCltig: " + format;
           }
-          return combined3;
+          return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "Invalid number: must be a multiple of " + code.divisor;
+          return "Ung\u00FCltige Zahl: muss ein Vielfaches von " + code.divisor + " sein";
         } else if ("unrecognized_keys" === code) {
-          let str7 = "";
+          let str7 = "Unbekannter Schl\u00FCssel";
           if (code.keys.length > 1) {
-            str7 = "s";
+            str7 = "Unbekannte Schl\u00FCssel";
           }
           const _HermesInternal3 = HermesInternal;
-          return "Unrecognized key" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Invalid key in " + code.origin;
+            return "Ung\u00FCltiger Schl\u00FCssel in " + code.origin;
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "Invalid value in " + code.origin;
+                return "Ung\u00FCltiger Wert in " + code.origin;
               }
             }
-            return "Invalid input";
+            return "Ung\u00FCltige Eingabe";
           }
         }
       };

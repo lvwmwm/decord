@@ -1,10 +1,10 @@
-// Module ID: 14879
-// Function ID: 113523
+// Module ID: 14880
+// Function ID: 113528
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4809, 3760, 5602, 5603, 12732, 4470, 1918, 1838, 12740, 3948, 4971, 14870, 14871, 33, 14880, 14894, 14895, 14898, 14901, 14928, 14931, 14932, 14933, 14935, 14936, 14937, 14939, 14941, 3835, 689, 1557, 14051, 14060, 14943, 566, 12910, 14944, 14945, 1450, 14947, 7619, 2]
+// Dependencies: [31, 4809, 3760, 5602, 5603, 12733, 4470, 1918, 1838, 12741, 3948, 4971, 14871, 14872, 33, 14881, 14895, 14896, 14899, 14902, 14929, 14932, 14933, 14934, 14936, 14937, 14938, 14940, 14942, 3835, 689, 1557, 14052, 14061, 14944, 566, 12911, 14945, 14946, 1450, 14948, 7619, 2]
 // Exports: default
 
-// Module 14879 (_createForOfIteratorHelperLoose)
+// Module 14880 (_createForOfIteratorHelperLoose)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

@@ -1,5 +1,5 @@
 // Module ID: 9258
-// Function ID: 72570
+// Function ID: 72571
 // Name: PremiumFeaturesLogo
 // Dependencies: [31, 1852, 33, 9259, 6178, 5085, 3777, 2]
 // Exports: default

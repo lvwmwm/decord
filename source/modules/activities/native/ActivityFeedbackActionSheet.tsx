@@ -1,10 +1,10 @@
-// Module ID: 16086
-// Function ID: 124572
+// Module ID: 16098
+// Function ID: 124619
 // Name: ActivityFeedbackReasons
-// Dependencies: [31, 4156, 653, 9457, 33, 675, 16087, 9478, 1212, 9460, 3831, 16088, 2]
+// Dependencies: [31, 4156, 653, 9457, 33, 675, 16099, 9478, 1212, 9460, 3831, 16100, 2]
 // Exports: default
 
-// Module 16086 (ActivityFeedbackReasons)
+// Module 16098 (ActivityFeedbackReasons)
 import "result";
 import { ActivityFeedbackReasons } from "items3";
 import { AnalyticEvents } from "ME";
@@ -28,7 +28,7 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
     prop = embeddedActivityConfig.displays_advertisements;
   }
   let obj = {};
-  const tmp2 = importDefault(16087)(true, true === prop);
+  const tmp2 = importDefault(16099)(true, true === prop);
   const intl = activityApplication(1212).intl;
   obj = { applicationName: activityApplication.name };
   obj.headerLabel = intl.formatToPlainString(activityApplication(1212).t.QXYwoD, obj);

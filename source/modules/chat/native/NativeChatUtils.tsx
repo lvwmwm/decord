@@ -1,5 +1,5 @@
 // Module ID: 9397
-// Function ID: 73273
+// Function ID: 73274
 // Name: ChatScrollPosition
 // Dependencies: [27, 477, 9398, 1184, 3995, 9399, 9400, 2]
 

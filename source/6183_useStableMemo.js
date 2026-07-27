@@ -1,5 +1,5 @@
 // Module ID: 6183
-// Function ID: 55517
+// Function ID: 55518
 // Name: useStableMemo
 // Dependencies: [31, 6184]
 // Exports: default

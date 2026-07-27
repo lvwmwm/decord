@@ -1,10 +1,10 @@
-// Module ID: 10197
-// Function ID: 78908
+// Module ID: 10198
+// Function ID: 78913
 // Name: isMessageContentPreviewable
 // Dependencies: [1194, 3768, 1850, 653, 663, 566, 7703, 4361, 1212, 4318, 5856, 22, 7708, 7787, 2]
 // Exports: useFormattedMessagePreview
 
-// Module 10197 (isMessageContentPreviewable)
+// Module 10198 (isMessageContentPreviewable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

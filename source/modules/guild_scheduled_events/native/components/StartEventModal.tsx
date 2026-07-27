@@ -1,5 +1,5 @@
 // Module ID: 8273
-// Function ID: 66427
+// Function ID: 66428
 // Name: NavigationBar
 // Dependencies: [5, 57, 31, 27, 1348, 1838, 1354, 8156, 33, 4131, 689, 4338, 4661, 1212, 1273, 7675, 4127, 8267, 566, 8204, 8274, 5121, 6689, 8277, 4544, 2]
 // Exports: default

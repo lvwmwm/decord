@@ -1,5 +1,5 @@
 // Module ID: 7048
-// Function ID: 59807
+// Function ID: 59808
 // Name: GameDiversityTier3SmallBadge
 // Dependencies: [33, 5085, 7049, 2]
 // Exports: GameDiversityTier3SmallBadge

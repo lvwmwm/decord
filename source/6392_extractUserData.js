@@ -1,5 +1,5 @@
 // Module ID: 6392
-// Function ID: 57493
+// Function ID: 57494
 // Name: extractUserData
 // Dependencies: [57, 65, 6393, 6394, 6395, 6318, 6356, 6320, 6310, 6311, 6317]
 // Exports: addNormalizedRequestDataToEvent, addRequestDataToEvent, extractPathForTransaction, httpRequestToRequestData, winterCGRequestToRequestData

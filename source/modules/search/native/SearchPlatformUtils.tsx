@@ -1,10 +1,10 @@
-// Module ID: 11389
-// Function ID: 88492
+// Module ID: 11390
+// Function ID: 88497
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5847, 10041, 9033, 11390, 653, 10042, 8055, 1360, 6687, 477, 1820, 4075, 1443, 9700, 689, 3804, 10040, 11397, 10049, 22, 620, 2]
+// Dependencies: [5847, 10041, 9033, 11391, 653, 10042, 8055, 1360, 6687, 477, 1820, 4075, 1443, 9700, 689, 3804, 10040, 11398, 10049, 22, 620, 2]
 // Exports: delayUntilNavigationComplete, getFiles, getLinks, getMedia, getMediaGridItemStyles, getUrlIcon, performKeyboardAwareNavigation, toSearchBarTag
 
-// Module 11389 (_createForOfIteratorHelperLoose)
+// Module 11390 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
@@ -232,7 +232,7 @@ function onInitialFetchMessagesSuccess(arg0) {
 }
 function onFetchMessagesStart(searchQueryString) {
   searchQueryString = searchQueryString.searchQueryString;
-  importDefault(11397).updateSearchQuery(searchQueryString.searchContext, (setSearchResultsQuery) => setSearchResultsQuery.setSearchResultsQuery(searchQueryString));
+  importDefault(11398).updateSearchQuery(searchQueryString.searchContext, (setSearchResultsQuery) => setSearchResultsQuery.setSearchResultsQuery(searchQueryString));
 }
 function fetchInitialMessages(closure_0) {
   const _require = closure_0;
@@ -389,7 +389,7 @@ obj.syncAutocompleteDebounced = require("apply").debounce(syncAutocomplete, SEAR
 obj.navigateToSearchWithPrefetch = function navigateToSearchWithPrefetch(closure_8, closure_9) {
   let obj = importDefault(10049);
   const result = obj.initializeAutocomplete(closure_9);
-  const result1 = importDefault(11397).initializeSearchQuery(closure_9);
+  const result1 = importDefault(11398).initializeSearchQuery(closure_9);
   fetchInitialMessages(closure_9);
   obj = { searchContext: closure_9 };
   closure_8.navigate("search", obj);

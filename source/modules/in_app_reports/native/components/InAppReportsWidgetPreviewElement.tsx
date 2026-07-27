@@ -1,10 +1,10 @@
-// Module ID: 12330
-// Function ID: 95989
+// Module ID: 12331
+// Function ID: 95994
 // Name: WidgetPreview
-// Dependencies: [31, 27, 33, 4131, 689, 8017, 5632, 4127, 1212, 11990, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 8017, 5632, 4127, 1212, 11991, 2]
 // Exports: default
 
-// Module 12330 (WidgetPreview)
+// Module 12331 (WidgetPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function WidgetPreview(widget) {
       const obj1 = { userId: widget.userId, widget, disableInteraction: true };
       const items1 = [tmp2.card, tmp.card];
       obj1.cardStyle = items1;
-      items[1] = callback(require(11990) /* useGamePress */.WidgetSection, obj1);
+      items[1] = callback(require(11991) /* useGamePress */.WidgetSection, obj1);
       obj.children = items;
       tmp3 = callback2(View, obj);
       const str = intl.string(require(1212) /* getSystemLocale */.t.SpsnDY);

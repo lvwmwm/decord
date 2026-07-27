@@ -1,8 +1,8 @@
-// Module ID: 14420
-// Function ID: 110250
-// Dependencies: [5, 31, 27, 1850, 653, 6526, 33, 4131, 566, 6525, 1873, 5462, 6527, 6137, 7575, 14421, 8365, 9253, 9254, 1212, 2]
+// Module ID: 14421
+// Function ID: 110255
+// Dependencies: [5, 31, 27, 1850, 653, 6526, 33, 4131, 566, 6525, 1873, 5462, 6527, 6137, 7575, 14422, 8365, 9253, 9254, 1212, 2]
 
-// Module 14420
+// Module 14421
 import getDefaultIcon from "getDefaultIcon";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -41,7 +41,7 @@ const memoResult = require("result").memo(() => {
   obj1 = {};
   obj2 = {
     accessibilityRole: "radiogroup",
-    children: callback(importDefault(14421), {
+    children: callback(importDefault(14422), {
       onSelect(arg0) {
         return _onSelect(...arguments);
       }

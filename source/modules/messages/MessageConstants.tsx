@@ -1,5 +1,5 @@
 // Module ID: 4124
-// Function ID: 34310
+// Function ID: 34311
 // Name: MESSAGE_GROUP_SPACING
 // Dependencies: [653, 664, 561, 2]
 // Exports: isChannelStreamMessage

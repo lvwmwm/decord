@@ -1,5 +1,5 @@
 // Module ID: 9929
-// Function ID: 76806
+// Function ID: 76807
 // Name: smartOutput
 // Dependencies: [2]
 // Exports: isStaticRouteIconType, smartOutput

@@ -1,5 +1,5 @@
 // Module ID: 6137
-// Function ID: 55055
+// Function ID: 55056
 // Name: usePremiumUpsellConfig
 // Dependencies: [31, 1850, 653, 1852, 33, 6138, 1212, 6139, 6140, 6141, 6142, 6143, 6144, 4472, 9299, 1935, 3777, 6188, 9254, 3990, 675, 4099, 9253, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig

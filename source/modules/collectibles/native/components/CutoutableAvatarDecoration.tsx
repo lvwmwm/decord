@@ -1,5 +1,5 @@
 // Module ID: 7908
-// Function ID: 62995
+// Function ID: 62996
 // Name: CutoutableAvatarDecoration
 // Dependencies: [31, 27, 4123, 33, 624, 1392, 477, 7909, 6154, 5085, 2]
 // Exports: default

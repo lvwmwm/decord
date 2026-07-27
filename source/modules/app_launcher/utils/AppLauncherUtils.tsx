@@ -1,5 +1,5 @@
 // Module ID: 7953
-// Function ID: 63257
+// Function ID: 63258
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [29, 5, 5669, 4154, 7954, 653, 4567, 4124, 1212, 5664, 7956, 477, 1882, 5676, 7957, 5914, 5685, 4471, 1392, 7955, 7967, 5674, 7968, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication

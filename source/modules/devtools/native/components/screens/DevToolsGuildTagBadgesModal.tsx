@@ -1,8 +1,8 @@
-// Module ID: 14733
-// Function ID: 112314
-// Dependencies: [31, 33, 9041, 5517, 9050, 10123, 14734, 2]
+// Module ID: 14734
+// Function ID: 112319
+// Dependencies: [31, 33, 9041, 5517, 9050, 10123, 14735, 2]
 
-// Module 14733
+// Module 14734
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import importAllResult from "result";
@@ -38,15 +38,15 @@ const memoResult = require("result").memo(function DevToolsGuildTagBadgesModal()
     options() {
       return { title: "Guild Tag Badges" };
     },
-    component: importDefault(14734)
+    component: importDefault(14735)
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
   obj.children = <Screen name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(14734)} />;
+  }} component={importDefault(14735)} />;
   return <Navigator name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(14734)} />;
+  }} component={importDefault(14735)} />;
 });
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");
 

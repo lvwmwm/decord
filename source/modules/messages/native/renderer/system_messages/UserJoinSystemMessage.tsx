@@ -1,5 +1,5 @@
 // Module ID: 7707
-// Function ID: 61562
+// Function ID: 61563
 // Name: createUserJoinSystemMessage
 // Dependencies: [1348, 1838, 653, 7684, 7708, 7720, 7721, 7724, 1212, 7686, 7687, 2]
 // Exports: createUserJoinSystemMessage

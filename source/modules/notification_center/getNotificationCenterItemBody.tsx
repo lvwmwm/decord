@@ -1,10 +1,10 @@
-// Module ID: 15208
-// Function ID: 115896
+// Module ID: 15221
+// Function ID: 115945
 // Name: escapeMarkdown
 // Dependencies: [5751, 1838, 3768, 1850, 653, 1212, 3970, 5873, 1832, 44, 2]
 // Exports: default
 
-// Module 15208 (escapeMarkdown)
+// Module 15221 (escapeMarkdown)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isGuildEventEnded } from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

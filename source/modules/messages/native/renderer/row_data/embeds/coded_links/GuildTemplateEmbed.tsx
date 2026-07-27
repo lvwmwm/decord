@@ -1,10 +1,10 @@
-// Module ID: 12296
-// Function ID: 95848
+// Module ID: 12297
+// Function ID: 95853
 // Name: createGuildTemplateEmbed
-// Dependencies: [27, 5687, 5688, 5969, 7666, 1212, 7658, 689, 3977, 10931, 10932, 12297, 2]
+// Dependencies: [27, 5687, 5688, 5969, 7666, 1212, 7658, 689, 3977, 10932, 10933, 12298, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 12296 (createGuildTemplateEmbed)
+// Module 12297 (createGuildTemplateEmbed)
 import { Image } from "get ActivityIndicator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
@@ -38,9 +38,9 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj["titleText"] = intl2.string(require(1212) /* getSystemLocale */.t.A6MwXE);
     const str = intl.string(require(1212) /* getSystemLocale */.t.C7ZRNw);
     if (obj3.isThemeDark(closure_2)) {
-      let tmp10Result = tmp10(10931);
+      let tmp10Result = tmp10(10932);
     } else {
-      tmp10Result = tmp10(10932);
+      tmp10Result = tmp10(10933);
     }
     obj["thumbnailUrl"] = Image.resolveAssetSource(tmp10Result).uri;
     obj["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;
@@ -60,7 +60,7 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj1["titleColor"] = colors.titleColor;
     obj1["subtitle"] = formatToPlainStringResult;
     obj1["subtitleColor"] = colors.subtitleColor;
-    obj1["thumbnailUrl"] = Image.resolveAssetSource(importDefault(12297)).uri;
+    obj1["thumbnailUrl"] = Image.resolveAssetSource(importDefault(12298)).uri;
     obj1["acceptLabelColor"] = colors.acceptLabelGreenColor;
     obj1["acceptLabelBackgroundColor"] = colors.acceptLabelGreenBackgroundColor;
     const intl6 = require(1212) /* getSystemLocale */.intl;

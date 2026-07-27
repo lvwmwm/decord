@@ -1,10 +1,10 @@
-// Module ID: 14398
-// Function ID: 110151
+// Module ID: 14399
+// Function ID: 110156
 // Name: onFriendGamingActivityNotificationSettingsChanged
 // Dependencies: [3771, 653, 3804, 675, 2]
 // Exports: onFriendGamingActivityNotificationSettingsChanged
 
-// Module 14398 (onFriendGamingActivityNotificationSettingsChanged)
+// Module 14399 (onFriendGamingActivityNotificationSettingsChanged)
 import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
 import { AnalyticEvents } from "ME";
 

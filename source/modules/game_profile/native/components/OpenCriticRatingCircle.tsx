@@ -1,5 +1,5 @@
 // Module ID: 8462
-// Function ID: 67396
+// Function ID: 67397
 // Name: OpenCriticRatingCircle
 // Dependencies: [33, 8463, 2]
 // Exports: default

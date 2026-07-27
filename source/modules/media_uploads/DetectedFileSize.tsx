@@ -1,5 +1,5 @@
 // Module ID: 4711
-// Function ID: 40992
+// Function ID: 40993
 // Name: _getDetectedFileSize
 // Dependencies: [5, 2]
 // Exports: getDetectedFileSize

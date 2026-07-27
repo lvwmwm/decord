@@ -1,10 +1,10 @@
-// Module ID: 11818
-// Function ID: 91701
+// Module ID: 11819
+// Function ID: 91706
 // Name: OrbCheckoutAmountTag
 // Dependencies: [27, 33, 4131, 689, 8637, 4127, 1212, 2]
 // Exports: default
 
-// Module 11818 (OrbCheckoutAmountTag)
+// Module 11819 (OrbCheckoutAmountTag)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

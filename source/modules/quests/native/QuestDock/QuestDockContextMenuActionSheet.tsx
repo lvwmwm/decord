@@ -1,10 +1,10 @@
-// Module ID: 14062
-// Function ID: 107652
+// Module ID: 14063
+// Function ID: 107657
 // Name: QuestDockContextMenuActionSheet
-// Dependencies: [5, 31, 653, 33, 5953, 10427, 9425, 5498, 5500, 12347, 7575, 10435, 4980, 5959, 4099, 4079, 1212, 14063, 9406, 9407, 9408, 5960, 5949, 10897, 9758, 14065, 5119, 9401, 14068, 6592, 14069, 14071, 14073, 8665, 6554, 5490, 2]
+// Dependencies: [5, 31, 653, 33, 5953, 10428, 9425, 5498, 5500, 12348, 7575, 10436, 4980, 5959, 4099, 4079, 1212, 14064, 9406, 9407, 9408, 5960, 5949, 10898, 9758, 14066, 5119, 9401, 14069, 6592, 14070, 14072, 14074, 8665, 6554, 5490, 2]
 // Exports: default
 
-// Module 14062 (QuestDockContextMenuActionSheet)
+// Module 14063 (QuestDockContextMenuActionSheet)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import "UndoIcon";
 import { UserSettingsSections } from "ME";
@@ -24,7 +24,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
   quest = quest.quest;
   let obj = quest(5953);
   let isShareableQuestResult = obj.isShareableQuest(quest.config);
-  let obj1 = quest(10427);
+  let obj1 = quest(10428);
   const questPreviewActions = obj1.useQuestPreviewActions(quest.id);
   ({ handleComplete: importDefault, handleProgress: dependencyMap, handleResetDismissibilityClick: _createForOfIteratorHelperLoose, handleResetStatusClick: UserSettingsSections } = questPreviewActions);
   let obj2 = quest(9425);
@@ -32,7 +32,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
   obj = {};
   obj = { hasIcons: true };
   obj1 = {};
-  obj2 = { IconComponent: quest(12347).LinkExternalMediumIcon };
+  obj2 = { IconComponent: quest(12348).LinkExternalMediumIcon };
   obj1.icon = callback2(quest(5500).ActionSheetRow.Icon, obj2);
   obj1.label = callback2(quest(7575).FormLabel, { text: externalCtaLabel });
   obj1.onPress = function onPress() {
@@ -63,7 +63,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
   const items1 = [callback3(quest(5500).ActionSheetRow.Group, obj), , ];
   let obj6 = { hasIcons: true };
   const obj7 = {};
-  const obj8 = { IconComponent: importDefault(14063) };
+  const obj8 = { IconComponent: importDefault(14064) };
   obj7.icon = callback2(quest(5500).ActionSheetRow.Icon, obj8);
   const obj9 = {};
   const intl2 = quest(1212).intl;
@@ -136,7 +136,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
     };
     const items3 = [callback2(quest(5500).ActionSheetRow, obj17), , , , , , ];
     const obj20 = {};
-    const obj21 = { IconComponent: quest(14069).RedoIcon };
+    const obj21 = { IconComponent: quest(14070).RedoIcon };
     obj20.icon = callback2(quest(5500).ActionSheetRow.Icon, obj21);
     const obj22 = {};
     const intl8 = quest(1212).intl;
@@ -148,7 +148,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
     };
     items3[1] = callback2(quest(5500).ActionSheetRow, obj20);
     const obj23 = {};
-    const obj24 = { IconComponent: quest(14071).UndoIcon };
+    const obj24 = { IconComponent: quest(14072).UndoIcon };
     obj23.icon = callback2(quest(5500).ActionSheetRow.Icon, obj24);
     const obj25 = {};
     const intl9 = quest(1212).intl;
@@ -160,7 +160,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
     };
     items3[2] = callback2(quest(5500).ActionSheetRow, obj23);
     const obj26 = {};
-    const obj27 = { IconComponent: quest(14073).UnsendIcon };
+    const obj27 = { IconComponent: quest(14074).UnsendIcon };
     obj26.icon = callback2(quest(5500).ActionSheetRow.Icon, obj27);
     const obj28 = {};
     const intl10 = quest(1212).intl;

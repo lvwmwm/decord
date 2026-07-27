@@ -1,5 +1,5 @@
 // Module ID: 9187
-// Function ID: 72044
+// Function ID: 72045
 // Name: PortalToNativeView
 // Dependencies: [31, 27, 33, 4131, 2]
 // Exports: default

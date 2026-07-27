@@ -1,10 +1,10 @@
-// Module ID: 10412
-// Function ID: 80493
+// Module ID: 10413
+// Function ID: 80498
 // Name: _computeActivityPartyPrivacyFlags
 // Dependencies: [653, 3804, 587, 1360, 5972, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 10412 (_computeActivityPartyPrivacyFlags)
+// Module 10413 (_computeActivityPartyPrivacyFlags)
 import ME from "ME";
 
 let closure_3;

@@ -1,5 +1,5 @@
 // Module ID: 4633
-// Function ID: 40326
+// Function ID: 40327
 // Name: FolderIcon
 // Dependencies: [31, 33, 689, 3834, 4597, 2]
 // Exports: FolderIcon

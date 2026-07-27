@@ -1,10 +1,10 @@
-// Module ID: 15234
-// Function ID: 115981
+// Module ID: 15247
+// Function ID: 116030
 // Name: SettingsButton
-// Dependencies: [57, 31, 27, 4123, 1194, 1838, 8120, 8108, 15235, 1345, 33, 4131, 689, 15236, 6625, 13964, 8123, 4099, 15238, 1935, 4087, 15249, 4127, 1212, 6504, 5121, 4663, 3942, 4661, 15185, 15187, 5119, 8122, 1450, 1557, 1457, 5703, 566, 15175, 15269, 15272, 8380, 1334, 15259, 1456, 6104, 9874, 9490, 14051, 669, 15273, 15279, 15284, 15297, 15298, 15299, 15300, 15301, 15302, 15303, 15304, 8756, 15305, 6619, 477, 9986, 3978, 15306, 15237, 3843, 2]
+// Dependencies: [57, 31, 27, 4123, 1194, 1838, 8120, 8108, 15248, 1345, 33, 4131, 689, 15249, 6625, 13965, 8123, 4099, 15251, 1935, 4087, 15262, 4127, 1212, 6504, 5121, 4663, 3942, 4661, 15198, 15200, 5119, 8122, 1450, 1557, 1457, 5703, 566, 15188, 15282, 15285, 8380, 1334, 15272, 1456, 6104, 9874, 9490, 14052, 669, 15286, 15292, 15297, 15310, 15311, 15312, 15313, 15314, 15315, 15316, 15317, 8756, 15318, 6619, 477, 9986, 3978, 15319, 15250, 3843, 2]
 // Exports: ICYMITab
 
-// Module 15234 (SettingsButton)
+// Module 15247 (SettingsButton)
 import CutoutGuildBanner from "CutoutGuildBanner";
 import importAllResult from "XSmallIcon";
 import get_ActivityIndicator from "colorToHex";
@@ -30,7 +30,7 @@ function SettingsButton() {
     accessibilityLabel: "button",
     variant: "tertiary",
     size: "sm",
-    icon: callback(require(13964) /* FiltersHorizontalIcon */.FiltersHorizontalIcon, { size: "sm" }),
+    icon: callback(require(13965) /* FiltersHorizontalIcon */.FiltersHorizontalIcon, { size: "sm" }),
     onPress() {
       outer1_1(outer1_2[16]).itemInteracted("filters_button", "filters_button", "press_info_button");
       const obj = outer1_1(outer1_2[16]);
@@ -372,10 +372,10 @@ let closure_19 = importAllResult.memo((inNestedNavigator) => {
   const obj5 = { style: tmp.headerClose };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj5.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  obj5.onPress = require(15185) /* goBack */.goBack;
+  obj5.onPress = require(15198) /* goBack */.goBack;
   let LeftBackIconWithBadge = require;
   if (inNestedNavigator) {
-    LeftBackIconWithBadge = LeftBackIconWithBadge(15187).LeftBackIconWithBadge;
+    LeftBackIconWithBadge = LeftBackIconWithBadge(15200).LeftBackIconWithBadge;
     const obj6 = { includeNotificationsCount: true };
     let tmp11Result = tmp11(LeftBackIconWithBadge, obj6);
   } else {
@@ -436,6 +436,6 @@ export const ICYMITab = function ICYMITab(route) {
   items2[1] = callback(require(3843) /* ManaContext */.ThemeContextProvider, obj4);
   obj1["children"] = items2;
   obj.children = closure_16(Fragment, obj1);
-  obj.children = callback(require(15237) /* useICYMIContextConstructor */.ICYMIContextProvider, obj);
-  return tmp8(importDefault(15306), obj);
+  obj.children = callback(require(15250) /* useICYMIContextConstructor */.ICYMIContextProvider, obj);
+  return tmp8(importDefault(15319), obj);
 };

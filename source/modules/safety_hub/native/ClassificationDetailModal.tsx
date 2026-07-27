@@ -1,10 +1,10 @@
-// Module ID: 11006
-// Function ID: 85551
+// Module ID: 11007
+// Function ID: 85556
 // Name: ClassificationDetailModal
-// Dependencies: [31, 653, 11007, 33, 4131, 689, 4338, 5087, 11008, 6554, 11038, 11015, 1457, 5517, 1212, 2]
+// Dependencies: [31, 653, 11008, 33, 4131, 689, 4338, 5087, 11009, 6554, 11039, 11016, 1457, 5517, 1212, 2]
 // Exports: default
 
-// Module 11006 (ClassificationDetailModal)
+// Module 11007 (ClassificationDetailModal)
 import result from "result";
 import { UserSettingsSections } from "ME";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
@@ -30,7 +30,7 @@ export default function ClassificationDetailModal(classificationId) {
   let safetyHubInitialized;
   const tmp = _createForOfIteratorHelperLoose();
   dependencyMap = tmp;
-  let obj = classificationId(11038);
+  let obj = classificationId(11039);
   safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -56,7 +56,7 @@ export default function ClassificationDetailModal(classificationId) {
       },
       headerLeft: classificationId(table[7]).getHeaderCloseButton(closeModal),
       render() {
-        return outer3_7(source(11008), {
+        return outer3_7(source(11009), {
           classificationId: closure_0,
           source: closure_2,
           onClose() {

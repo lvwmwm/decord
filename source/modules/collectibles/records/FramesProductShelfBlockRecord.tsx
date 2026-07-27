@@ -1,5 +1,5 @@
 // Module ID: 5807
-// Function ID: 51024
+// Function ID: 51025
 // Name: FramesProductShelfBlockRecord
 // Dependencies: [6, 7, 5801, 2]
 

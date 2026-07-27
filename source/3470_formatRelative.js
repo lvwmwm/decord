@@ -1,5 +1,5 @@
 // Module ID: 3470
-// Function ID: 26850
+// Function ID: 26851
 // Name: formatRelative
 // Dependencies: [3372, 3442, 3456, 3443, 3210, 3373, 3211, 3214, 3215]
 // Exports: default

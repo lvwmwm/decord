@@ -1,10 +1,10 @@
-// Module ID: 10845
-// Function ID: 84346
+// Module ID: 10846
+// Function ID: 84351
 // Name: useMemberListAction
-// Dependencies: [57, 31, 27, 1348, 3759, 3768, 1850, 8753, 653, 33, 4131, 1324, 624, 8215, 8759, 3982, 10846, 10847, 1212, 10159, 10158, 3947, 1334, 10849, 10854, 8943, 10855, 1820, 8286, 7578, 5164, 2]
+// Dependencies: [57, 31, 27, 1348, 3759, 3768, 1850, 8753, 653, 33, 4131, 1324, 624, 8215, 8759, 3982, 10847, 10848, 1212, 10160, 10159, 3947, 1334, 10850, 10855, 8943, 10856, 1820, 8286, 7578, 5164, 2]
 // Exports: default
 
-// Module 10845 (useMemberListAction)
+// Module 10846 (useMemberListAction)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "dismissGlobalKeyboard";
@@ -157,7 +157,7 @@ export default function useMemberListAction(channel) {
                   outer1_13();
                 } else {
                   obj = { onClick: outer1_13 };
-                  sum(10849)(obj);
+                  sum(10850)(obj);
                 }
               }
             };
@@ -170,8 +170,8 @@ export default function useMemberListAction(channel) {
             obj.handlePress = function handlePress() {
               const channel = store.getChannel(outer1_8);
               if (null != channel) {
-                const result = channel(10855).openChannelMembersActionSheet(channel.id, channel.guild_id);
-                const obj = channel(10855);
+                const result = channel(10856).openChannelMembersActionSheet(channel.id, channel.guild_id);
+                const obj = channel(10856);
               }
             };
             tmp7 = obj;

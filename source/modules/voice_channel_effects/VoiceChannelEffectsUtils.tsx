@@ -1,10 +1,10 @@
-// Module ID: 10509
-// Function ID: 81466
+// Module ID: 10510
+// Function ID: 81471
 // Name: getUniqueListFromMetadata
-// Dependencies: [1850, 10510, 10511, 10512, 10513, 10514, 10515, 10516, 10517, 10518, 10519, 10520, 10521, 10522, 10523, 10524, 10525, 10526, 10527, 10528, 10529, 10530, 10531, 10532, 22, 1426, 1392, 3772, 3776, 1212, 2]
+// Dependencies: [1850, 10511, 10512, 10513, 10514, 10515, 10516, 10517, 10518, 10519, 10520, 10521, 10522, 10523, 10524, 10525, 10526, 10527, 10528, 10529, 10530, 10531, 10532, 10533, 22, 1426, 1392, 3772, 3776, 1212, 2]
 // Exports: getEffectAnnouncement, getEffectUrl, sampleAnimationId
 
-// Module 10509 (getUniqueListFromMetadata)
+// Module 10510 (getUniqueListFromMetadata)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType";
 import importDefaultResult from "items";

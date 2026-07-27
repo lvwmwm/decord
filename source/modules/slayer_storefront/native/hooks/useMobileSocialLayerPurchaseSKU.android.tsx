@@ -1,5 +1,5 @@
 // Module ID: 9697
-// Function ID: 75574
+// Function ID: 75575
 // Name: useMobileSocialLayerPurchaseSKU
 // Dependencies: [31, 653, 6243, 9698, 2]
 // Exports: default

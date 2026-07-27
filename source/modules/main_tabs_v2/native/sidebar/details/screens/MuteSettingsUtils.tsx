@@ -1,10 +1,10 @@
-// Module ID: 10244
-// Function ID: 79279
+// Module ID: 10245
+// Function ID: 79284
 // Name: getMuteSettingLabel
-// Dependencies: [3761, 1348, 1838, 3768, 4326, 1850, 653, 662, 1212, 4321, 6024, 5079, 5074, 10245, 2]
+// Dependencies: [3761, 1348, 1838, 3768, 4326, 1850, 653, 662, 1212, 4321, 6024, 5079, 5074, 10246, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 10244 (getMuteSettingLabel)
+// Module 10245 (getMuteSettingLabel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -80,7 +80,7 @@ export const handleMuteSettingPress = function handleMuteSettingPress(arg0) {
   let onOptionPress;
   ({ guildId, onOptionPress } = arg0);
   ({ channelId, muteDurationSeconds } = arg0);
-  const muteSettings = importAll(10245).getMuteSettings(muteDurationSeconds);
+  const muteSettings = importAll(10246).getMuteSettings(muteDurationSeconds);
   const channel = store.getChannel(channelId);
   guild = guild.getGuild(guildId);
   if (null != onOptionPress) {

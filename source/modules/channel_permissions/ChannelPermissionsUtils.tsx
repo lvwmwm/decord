@@ -1,5 +1,5 @@
 // Module ID: 8215
-// Function ID: 65836
+// Function ID: 65837
 // Name: isAdmin
 // Dependencies: [1352, 1391, 1912, 1918, 1850, 6661, 653, 1913, 1212, 483, 21, 3970, 1327, 3764, 8216, 1882, 4313, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, getExistingMembersRows, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission

@@ -1,9 +1,9 @@
-// Module ID: 16174
-// Function ID: 125440
+// Module ID: 16186
+// Function ID: 125487
 // Name: AddAvatarScreen
-// Dependencies: [5, 57, 31, 27, 7877, 653, 33, 4131, 689, 5084, 5053, 1557, 566, 7890, 16175, 7919, 4675, 7880, 7882, 4127, 1212, 16184, 1273, 4544, 16172, 480, 6695, 5087, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 7877, 653, 33, 4131, 689, 5084, 5053, 1557, 566, 7890, 16187, 7919, 4675, 7880, 7882, 4127, 1212, 16196, 1273, 4544, 16184, 480, 6695, 5087, 5517, 2]
 
-// Module 16174 (AddAvatarScreen)
+// Module 16186 (AddAvatarScreen)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -39,7 +39,7 @@ function AddAvatarScreen() {
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getPendingChanges().pendingAvatar);
   if (null != first1) {
     let obj1 = _require(7890);
-    obj = { imageUri: _require(16175).DEFAULT_AVATARS[first1] };
+    obj = { imageUri: _require(16187).DEFAULT_AVATARS[first1] };
     let obj3 = _require(7890);
     obj.description = obj3.generateAvatarDescription();
     pendingImage = obj1.createPendingImage(obj);
@@ -83,7 +83,7 @@ function AddAvatarScreen() {
       return _handleSelectAvatar(...arguments);
     }
   };
-  items3[1] = callback(first1(16184), obj6);
+  items3[1] = callback(first1(16196), obj6);
   const obj7 = { style: tmp.errorContainer };
   const obj8 = { style: tmp.errorText };
   if (first) {
@@ -94,7 +94,7 @@ function AddAvatarScreen() {
   obj7.children = callback(_require(1273).LegacyText, obj8);
   items3[2] = callback(View, obj7);
   obj2.children = items3;
-  const items4 = [callback2(View, obj2), callback(first1(16175), { onAvatarSelect: tmp4[1], selectedAvatar: first1 }), ];
+  const items4 = [callback2(View, obj2), callback(first1(16187), { onAvatarSelect: tmp4[1], selectedAvatar: first1 }), ];
   const obj9 = { style: tmp.buttonContainer };
   const obj10 = {};
   const intl4 = _require(1212).intl;

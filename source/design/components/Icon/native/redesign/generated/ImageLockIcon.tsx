@@ -1,5 +1,5 @@
 // Module ID: 4643
-// Function ID: 40346
+// Function ID: 40347
 // Name: ImageLockIcon
 // Dependencies: [31, 33, 689, 3834, 4626, 2]
 // Exports: ImageLockIcon

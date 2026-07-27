@@ -1,5 +1,5 @@
 // Module ID: 4407
-// Function ID: 38882
+// Function ID: 38883
 // Name: truncate
 // Dependencies: [518, 4408]
 

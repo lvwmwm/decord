@@ -1,10 +1,10 @@
-// Module ID: 14711
-// Function ID: 112087
+// Module ID: 14712
+// Function ID: 112092
 // Name: updateClientPremiumTypeOverride
 // Dependencies: [1850, 686, 5986, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 14711 (updateClientPremiumTypeOverride)
+// Module 14712 (updateClientPremiumTypeOverride)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

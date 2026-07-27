@@ -1,10 +1,10 @@
-// Module ID: 14562
-// Function ID: 111165
+// Module ID: 14563
+// Function ID: 111170
 // Name: ListEdgeSpacer
-// Dependencies: [31, 27, 33, 4131, 689, 14544, 5462, 5482, 14034, 14036, 8595, 8592, 8670, 4127, 5449, 6619, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 14545, 5462, 5482, 14035, 14037, 8595, 8592, 8670, 4127, 5449, 6619, 2]
 // Exports: default
 
-// Module 14562 (ListEdgeSpacer)
+// Module 14563 (ListEdgeSpacer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,12 +40,12 @@ export default function _default(block) {
   block = block.block;
   const preferVCPrice = block.preferVCPrice;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = block(14544);
-  const tmp3 = preferVCPrice(14034)();
+  let obj = block(14545);
+  const tmp3 = preferVCPrice(14035)();
   const dependencyMap = tmp3;
   const items = [block.rankedSkuIds, tmp3];
   const memo = React.useMemo(() => tmp3(block.rankedSkuIds), items);
-  let obj1 = block(14036);
+  let obj1 = block(14037);
   const filteredAndSortedProducts = obj1.useFilteredAndSortedProducts({ products: memo });
   const items1 = [preferVCPrice];
   const callback = React.useCallback((arg0) => {

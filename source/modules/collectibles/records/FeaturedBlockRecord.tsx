@@ -1,5 +1,5 @@
 // Module ID: 5802
-// Function ID: 51006
+// Function ID: 51007
 // Name: FeaturedBlockRecord
 // Dependencies: [6, 7, 5803, 5801, 5804, 2]
 

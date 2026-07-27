@@ -1,10 +1,10 @@
-// Module ID: 11130
-// Function ID: 86581
+// Module ID: 11131
+// Function ID: 86586
 // Name: ForumPostTitle
 // Dependencies: [31, 33, 4131, 478, 4127, 2]
 // Exports: default
 
-// Module 11130 (ForumPostTitle)
+// Module 11131 (ForumPostTitle)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

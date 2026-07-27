@@ -1,5 +1,5 @@
 // Module ID: 7745
-// Function ID: 61699
+// Function ID: 61700
 // Name: createRoleSubscriptionPurchaseSystemMessage
 // Dependencies: [1348, 1838, 653, 4361, 7684, 7720, 7721, 7714, 1395, 1392, 7686, 1212, 7687, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage

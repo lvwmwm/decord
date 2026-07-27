@@ -1,10 +1,10 @@
-// Module ID: 10495
-// Function ID: 81387
+// Module ID: 10496
+// Function ID: 81392
 // Name: useVideoReadyTimeout
-// Dependencies: [31, 664, 4016, 10494, 4228, 10496, 10498, 2]
+// Dependencies: [31, 664, 4016, 10495, 4228, 10497, 10499, 2]
 // Exports: default
 
-// Module 10495 (useVideoReadyTimeout)
+// Module 10496 (useVideoReadyTimeout)
 import result from "result";
 
 const require = arg1;

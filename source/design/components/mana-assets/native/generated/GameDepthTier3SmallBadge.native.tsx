@@ -1,5 +1,5 @@
 // Module ID: 7008
-// Function ID: 59747
+// Function ID: 59748
 // Name: GameDepthTier3SmallBadge
 // Dependencies: [33, 5085, 7009, 2]
 // Exports: GameDepthTier3SmallBadge

@@ -1,10 +1,10 @@
-// Module ID: 10774
-// Function ID: 83645
+// Module ID: 10775
+// Function ID: 83650
 // Name: useActiveSpeakerPillScrollHandler
 // Dependencies: [57, 31, 677, 682, 3744, 2]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
-// Module 10774 (useActiveSpeakerPillScrollHandler)
+// Module 10775 (useActiveSpeakerPillScrollHandler)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";

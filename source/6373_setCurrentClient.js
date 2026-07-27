@@ -1,5 +1,5 @@
 // Module ID: 6373
-// Function ID: 57362
+// Function ID: 57363
 // Name: setCurrentClient
 // Dependencies: [6339, 6311, 6338]
 

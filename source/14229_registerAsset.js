@@ -1,11 +1,11 @@
 // Module ID: 14229
-// Function ID: 109428
+// Function ID: 109432
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 14229 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 161, height: 160, scales: [1], hash: "483ce0fdce44b3dc03843ae26158121f", name: "amanda_1", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/main_tabs", width: 192, height: 144, scales: [1], hash: "2bbd6220afd7d7de1fa25c481ae56a3d", name: "ExampleSketchheadsActivity", type: "png" };
 
 export default registerAsset.registerAsset(obj);

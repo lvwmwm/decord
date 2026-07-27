@@ -1,5 +1,5 @@
 // Module ID: 8836
-// Function ID: 70010
+// Function ID: 70011
 // Name: SecureFramesExistingVerificationsHelpMessage
 // Dependencies: [27, 33, 4131, 8837, 1273, 1212, 2]
 // Exports: default

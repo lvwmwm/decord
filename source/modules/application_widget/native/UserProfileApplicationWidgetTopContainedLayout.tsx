@@ -1,10 +1,10 @@
-// Module ID: 12091
-// Function ID: 94730
+// Module ID: 12092
+// Function ID: 94735
 // Name: UserProfileApplicationWidgetTopContainedLayout
-// Dependencies: [31, 27, 33, 4131, 689, 12002, 12089, 12090, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 12003, 12090, 12091, 2]
 // Exports: default
 
-// Module 12091 (UserProfileApplicationWidgetTopContainedLayout)
+// Module 12092 (UserProfileApplicationWidgetTopContainedLayout)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,33 +36,33 @@ export default function UserProfileApplicationWidgetTopContainedLayout(header) {
   let topConfig;
   ({ topConfig, resolveFieldValue, numberFormat } = header);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(12002) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj = require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  let obj1 = require(12002) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj1 = require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const textComponentValues1 = obj1.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  let obj2 = require(12002) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj2 = require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const textComponentValues2 = obj2.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
-  let obj3 = require(12002) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj3 = require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const contained_image = topConfig.components.contained_image;
   let image;
   const textComponentValues3 = obj3.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (null != contained_image) {
     image = contained_image.fields.image;
   }
-  const items = [require(12002) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
+  const items = [require(12003) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   obj = {};
   const items1 = [header.header, ];
   obj = { style: tmp.contentRow };
   obj1 = { style: tmp.text };
   obj2 = { field: textComponentValues, variant: "text-lg/medium", color: "text-default" };
-  const items2 = [callback(require(12089) /* formatDurationNarrow */.FieldText, obj2), , , ];
+  const items2 = [callback(require(12090) /* formatDurationNarrow */.FieldText, obj2), , , ];
   obj3 = { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" };
-  items2[1] = callback(require(12089) /* formatDurationNarrow */.FieldText, obj3);
+  items2[1] = callback(require(12090) /* formatDurationNarrow */.FieldText, obj3);
   const obj4 = { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" };
-  items2[2] = callback(require(12089) /* formatDurationNarrow */.FieldText, obj4);
+  items2[2] = callback(require(12090) /* formatDurationNarrow */.FieldText, obj4);
   const obj5 = { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" };
-  items2[3] = callback(require(12089) /* formatDurationNarrow */.FieldText, obj5);
+  items2[3] = callback(require(12090) /* formatDurationNarrow */.FieldText, obj5);
   obj1.children = items2;
   const items3 = [callback2(closure_3, obj1), ];
   if (null != fieldValue) {
@@ -76,7 +76,7 @@ export default function UserProfileApplicationWidgetTopContainedLayout(header) {
     let tmp13 = callback(closure_3, obj6);
   } else {
     const obj9 = { style: tmp.imageSkeleton };
-    tmp13 = callback(require(12090) /* ImageSkeleton */.ImageSkeleton, obj9);
+    tmp13 = callback(require(12091) /* ImageSkeleton */.ImageSkeleton, obj9);
   }
   items3[1] = tmp13;
   obj.children = items3;

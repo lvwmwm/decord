@@ -1,9 +1,9 @@
-// Module ID: 14541
-// Function ID: 111074
-// Dependencies: [31, 27, 655, 33, 4131, 1273, 8307, 1212, 14542, 2]
+// Module ID: 14542
+// Function ID: 111079
+// Dependencies: [31, 27, 655, 33, 4131, 1273, 8307, 1212, 14543, 2]
 // Exports: default
 
-// Module 14541
+// Module 14542
 import "result";
 import { View } from "get ActivityIndicator";
 import { CollectiblesMobileShopScreen as closure_4 } from "items";
@@ -22,7 +22,7 @@ export default function _default(shopBlock) {
   if (null === fetchShopHomeError) {
     if (undefined !== shopBlock) {
       let obj = { block: shopBlock, screen: constants.FEATURED_PAGE, framesBannerBlock };
-      let tmp6 = jsx(importDefault(14542), { block: shopBlock, screen: constants.FEATURED_PAGE, framesBannerBlock });
+      let tmp6 = jsx(importDefault(14543), { block: shopBlock, screen: constants.FEATURED_PAGE, framesBannerBlock });
     }
     return tmp6;
   }

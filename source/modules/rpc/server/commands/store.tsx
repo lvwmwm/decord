@@ -1,9 +1,9 @@
-// Module ID: 13483
-// Function ID: 103649
+// Module ID: 13484
+// Function ID: 103654
 // Name: getSubscriptionSkusViaListings
-// Dependencies: [5, 4034, 653, 13484, 13485, 10553, 6444, 6442, 13486, 5822, 2]
+// Dependencies: [5, 4034, 653, 13485, 13486, 10554, 6444, 6442, 13487, 5822, 2]
 
-// Module 13483 (getSubscriptionSkusViaListings)
+// Module 13484 (getSubscriptionSkusViaListings)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -34,11 +34,11 @@ function _getSkusHandler() {
 }
 function getEntitlementsHandler(socket) {
   socket = socket.socket;
-  let obj = require(13485) /* validateTransportType */;
+  let obj = require(13486) /* validateTransportType */;
   const result = obj.validateTransportType(socket.transport);
   const id = socket.application.id;
   if (null == id) {
-    let tmp6 = importDefault(10553);
+    let tmp6 = importDefault(10554);
     obj = { errorCode: constants.INVALID_COMMAND };
     const prototype = tmp6.prototype;
     tmp6 = new tmp6(obj, "No application.");

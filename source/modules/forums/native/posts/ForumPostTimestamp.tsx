@@ -1,10 +1,10 @@
-// Module ID: 11128
-// Function ID: 86577
+// Module ID: 11129
+// Function ID: 86582
 // Name: ForumPostTimestamp
-// Dependencies: [31, 11115, 33, 4131, 9065, 4127, 2]
+// Dependencies: [31, 11116, 33, 4131, 9065, 4127, 2]
 // Exports: default
 
-// Module 11128 (ForumPostTimestamp)
+// Module 11129 (ForumPostTimestamp)
 import "result";
 import { useForumChannelStore } from "set";
 import { jsx } from "jsxProd";

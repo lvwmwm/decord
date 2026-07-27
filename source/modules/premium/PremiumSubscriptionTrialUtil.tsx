@@ -1,5 +1,5 @@
 // Module ID: 7781
-// Function ID: 61814
+// Function ID: 61815
 // Name: useHasActiveTrial
 // Dependencies: [1850, 3783, 6157, 1852, 566, 6189, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial

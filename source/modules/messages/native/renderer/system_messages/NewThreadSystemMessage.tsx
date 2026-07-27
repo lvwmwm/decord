@@ -1,5 +1,5 @@
 // Module ID: 7734
-// Function ID: 61671
+// Function ID: 61672
 // Name: createNewThreadSystemMessage
 // Dependencies: [1348, 3768, 1850, 7684, 1212, 7686, 4321, 7687, 2]
 // Exports: createNewThreadSystemMessage

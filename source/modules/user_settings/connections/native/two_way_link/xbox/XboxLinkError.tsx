@@ -1,5 +1,5 @@
 // Module ID: 8969
-// Function ID: 70707
+// Function ID: 70708
 // Name: XboxLinkDiscordError
 // Dependencies: [31, 8865, 33, 1456, 8911, 8912, 1212, 2]
 // Exports: default

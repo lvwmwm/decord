@@ -1,10 +1,10 @@
-// Module ID: 16254
-// Function ID: 126188
+// Module ID: 16266
+// Function ID: 126235
 // Name: PhoneThenEmailInterstitial
-// Dependencies: [5, 31, 27, 16255, 1342, 1850, 653, 33, 4131, 1273, 16256, 1212, 4544, 480, 5087, 6695, 8272, 5495, 5588, 16260, 9116, 9121, 9118, 9156, 9166, 9167, 9117, 16261, 9191, 9161, 566, 4099, 3990, 5517, 2]
+// Dependencies: [5, 31, 27, 16267, 1342, 1850, 653, 33, 4131, 1273, 16268, 1212, 4544, 480, 5087, 6695, 8272, 5495, 5588, 16272, 9116, 9121, 9118, 9156, 9166, 9167, 9117, 16273, 9191, 9161, 566, 4099, 3990, 5517, 2]
 // Exports: default
 
-// Module 16254 (PhoneThenEmailInterstitial)
+// Module 16266 (PhoneThenEmailInterstitial)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import showActionSheet from "showActionSheet";
 import { View } from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ let closure_9;
 const require = arg1;
 function PhoneThenEmailInterstitial(navigation) {
   navigation = navigation.navigation;
-  let obj = { Illustration: navigation(16256).VerifyPhone };
+  let obj = { Illustration: navigation(16268).VerifyPhone };
   const intl = navigation(1212).intl;
   obj.title = intl.string(navigation(1212).t.KLnLIP);
   const intl2 = navigation(1212).intl;

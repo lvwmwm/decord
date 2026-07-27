@@ -1,5 +1,5 @@
 // Module ID: 7192
-// Function ID: 60023
+// Function ID: 60024
 // Name: KeyRingSpotIllustration
 // Dependencies: [33, 5085, 7193, 2]
 // Exports: KeyRingSpotIllustration

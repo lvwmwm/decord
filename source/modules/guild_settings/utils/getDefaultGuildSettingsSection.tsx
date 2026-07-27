@@ -1,5 +1,5 @@
 // Module ID: 8248
-// Function ID: 66260
+// Function ID: 66261
 // Name: getDefaultGuildSettingsSection
 // Dependencies: [653, 2]
 // Exports: getDefaultGuildSettingsSection

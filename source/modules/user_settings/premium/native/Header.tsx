@@ -1,10 +1,10 @@
-// Module ID: 12436
-// Function ID: 96497
+// Module ID: 12437
+// Function ID: 96502
 // Name: Header
-// Dependencies: [31, 27, 33, 4131, 4067, 5085, 1212, 3977, 6624, 12437, 4127, 2]
+// Dependencies: [31, 27, 33, 4131, 4067, 5085, 1212, 3977, 6624, 12438, 4127, 2]
 // Exports: default
 
-// Module 12436 (Header)
+// Module 12437 (Header)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function Header(style) {
   if (obj3.isThemeDark(tmp2)) {
     let tmp7Result = tmp7(6624);
   } else {
-    tmp7Result = tmp7(12437);
+    tmp7Result = tmp7(12438);
   }
   obj.source = tmp7Result;
   const items1 = [tmp5(tmp6, obj), ];

@@ -1,10 +1,10 @@
-// Module ID: 12963
-// Function ID: 100562
+// Module ID: 12964
+// Function ID: 100567
 // Name: GuildFeatures
 // Dependencies: [1838, 653, 624, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates, useGuildEligibleForTierTemplates
 
-// Module 12963 (GuildFeatures)
+// Module 12964 (GuildFeatures)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 

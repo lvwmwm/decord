@@ -1,10 +1,10 @@
-// Module ID: 10626
-// Function ID: 82787
+// Module ID: 10627
+// Function ID: 82792
 // Name: isVoicePanelEnabled
 // Dependencies: [1348, 4203, 4343, 4344, 624, 2]
 // Exports: isVoicePanelEnabled, useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 10626 (isVoicePanelEnabled)
+// Module 10627 (isVoicePanelEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import withEqualityFn from "withEqualityFn";

@@ -1,5 +1,5 @@
 // Module ID: 7918
-// Function ID: 63042
+// Function ID: 63043
 // Name: useEditBannerSource
 // Dependencies: [7919, 1392, 665, 2]
 // Exports: getAvatarSource, useEditBannerSource, useUserProfileBannerBackgroundColor

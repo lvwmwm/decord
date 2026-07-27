@@ -1,10 +1,10 @@
-// Module ID: 11802
-// Function ID: 91624
+// Module ID: 11803
+// Function ID: 91629
 // Name: EmojiIcon
-// Dependencies: [57, 31, 4992, 11115, 653, 33, 4131, 6026, 4560, 5498, 5186, 1212, 8192, 5189, 5501, 9024, 566, 5150, 1392, 2]
+// Dependencies: [57, 31, 4992, 11116, 653, 33, 4131, 6026, 4560, 5498, 5186, 1212, 8192, 5189, 5501, 9024, 566, 5150, 1392, 2]
 // Exports: default
 
-// Module 11802 (EmojiIcon)
+// Module 11803 (EmojiIcon)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

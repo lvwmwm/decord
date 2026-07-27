@@ -1,9 +1,9 @@
-// Module ID: 15809
-// Function ID: 122034
+// Module ID: 15821
+// Function ID: 122081
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 15809 (apexExperiment)
+// Module 15821 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-06-soundboard-frequently-used", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

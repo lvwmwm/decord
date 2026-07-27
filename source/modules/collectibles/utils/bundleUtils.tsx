@@ -1,5 +1,5 @@
 // Module ID: 8625
-// Function ID: 68589
+// Function ID: 68590
 // Name: extractBundleItemsFromArray
 // Dependencies: [7984, 5782, 2]
 // Exports: bundleContainsNameplates, isValidCollectiblesBundle, isValidCollectiblesBundleItems

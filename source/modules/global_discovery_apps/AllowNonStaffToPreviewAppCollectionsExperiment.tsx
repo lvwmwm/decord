@@ -1,9 +1,9 @@
-// Module ID: 11227
-// Function ID: 87342
+// Module ID: 11228
+// Function ID: 87347
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 11227 (apexExperiment)
+// Module 11228 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2025-01-allow-nonstaff-to-preview-app-collections", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

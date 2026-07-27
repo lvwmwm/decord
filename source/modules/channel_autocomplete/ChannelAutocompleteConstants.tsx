@@ -1,5 +1,5 @@
 // Module ID: 4568
-// Function ID: 40061
+// Function ID: 40062
 // Name: regExp
 // Dependencies: [2]
 // Exports: extractGameMentionIds, formatGameMentionRaw

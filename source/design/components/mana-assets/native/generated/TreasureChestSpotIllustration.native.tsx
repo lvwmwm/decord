@@ -1,5 +1,5 @@
 // Module ID: 7520
-// Function ID: 60515
+// Function ID: 60516
 // Name: TreasureChestSpotIllustration
 // Dependencies: [33, 5085, 7521, 2]
 // Exports: TreasureChestSpotIllustration

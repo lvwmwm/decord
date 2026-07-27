@@ -1,5 +1,5 @@
 // Module ID: 4023
-// Function ID: 33458
+// Function ID: 33459
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1838, 1850, 4024, 3783, 653, 1853, 1852, 3791, 4025, 1212, 1327, 4026, 1921, 22, 3713, 4027, 2781, 3777, 1184, 4038, 4057, 2]
 // Exports: boostedGuildTierToAnalyticsObjectType, generateBlockGuildSubscriptionPurchasesNode, getAppliedGuildBoostMonths, getAvailableSoundboardSoundCount, getAvailableStickerSlotCount, getGracePeriodEndingDate, getGuildBoostingProgressBarFillFactor, getMaxEmojiSlots, getNextGuildTierFromGuild, getNextTier, getNumberOfAppliedBoostsNeededForTier, getShortenedTierName, getTierName, getTiers, getUserLevel, isAppliedGuildBoostActive, isInGracePeriod, isTierUnlocked

@@ -1,5 +1,5 @@
 // Module ID: 8987
-// Function ID: 70804
+// Function ID: 70805
 // Name: isVideoMode
 // Dependencies: [4150, 1348, 4178, 1907, 4147, 566, 2]
 // Exports: default

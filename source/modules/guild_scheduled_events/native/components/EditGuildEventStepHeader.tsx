@@ -1,5 +1,5 @@
 // Module ID: 8240
-// Function ID: 66089
+// Function ID: 66090
 // Name: EditGuildEventStepHeader
 // Dependencies: [31, 27, 33, 4131, 4127, 2]
 // Exports: default

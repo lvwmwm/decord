@@ -1,5 +1,5 @@
 // Module ID: 9782
-// Function ID: 76017
+// Function ID: 76018
 // Name: ImageFileIcon
 // Dependencies: [31, 33, 689, 3834, 9783, 2]
 // Exports: ImageFileIcon

@@ -1,9 +1,9 @@
-// Module ID: 14045
-// Function ID: 107501
+// Module ID: 14046
+// Function ID: 107506
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 57, 5932, 5960, 5930, 566, 686, 2]
 
-// Module 14045 (_isNativeReflectConstruct)
+// Module 14046 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import AdCreativeType from "AdCreativeType";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,8 +1,8 @@
-// Module ID: 14141
-// Function ID: 108763
-// Dependencies: [31, 27, 4977, 14055, 33, 4131, 14137, 14056, 3992, 4543, 7620, 14142, 14147, 2]
+// Module ID: 14142
+// Function ID: 108768
+// Dependencies: [31, 27, 4977, 14056, 33, 4131, 14138, 14057, 3992, 4543, 7620, 14143, 14148, 2]
 
-// Module 14141
+// Module 14142
 import importAllResult from "result";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import { QUEST_DOCK_MODE_CHANGE_PHYSICS as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT";
@@ -25,13 +25,13 @@ let closure_10 = { code: "function QuestDockContentCollapsedTsx2(){const{activeQ
 const memoResult = importAllResult.memo(function QuestDockContentCollapsed(hideOnExpand) {
   hideOnExpand = hideOnExpand.hideOnExpand;
   const require = tmp;
-  const userStatus = importAllResult.useContext(activeQuestDockMode(14137)).quest.userStatus;
+  const userStatus = importAllResult.useContext(activeQuestDockMode(14138)).quest.userStatus;
   let enrolledAt;
   if (null != userStatus) {
     enrolledAt = userStatus.enrolledAt;
   }
   let tmp4 = null != enrolledAt;
-  activeQuestDockMode = importAllResult.useContext(require(14056) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = importAllResult.useContext(require(14057) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
   let obj = require(3992);
   const fn = function p() {
     const obj = {};
@@ -76,11 +76,11 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(hideO
   const obj3 = require(3992);
   const tmp7 = closure_7;
   if (!tmp4) {
-    tmp9 = callback(activeQuestDockMode(14142), {});
+    tmp9 = callback(activeQuestDockMode(14143), {});
   }
   const items1 = [tmp9, ];
   if (tmp4) {
-    tmp4 = callback(activeQuestDockMode(14147), {});
+    tmp4 = callback(activeQuestDockMode(14148), {});
   }
   items1[1] = tmp4;
   obj.children = items1;

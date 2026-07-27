@@ -1,5 +1,5 @@
 // Module ID: 8417
-// Function ID: 67248
+// Function ID: 67249
 // Name: XBOX_DISCORD_OCID
 // Dependencies: [2]
 // Exports: buildXboxGamePassStoreDeepLinkUrl, buildXboxGamePassStoreUrl

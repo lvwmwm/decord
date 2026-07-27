@@ -1,10 +1,10 @@
-// Module ID: 13773
-// Function ID: 105647
+// Module ID: 13774
+// Function ID: 105652
 // Name: IgnoredUsersList
-// Dependencies: [31, 27, 3768, 33, 4131, 689, 5462, 5482, 1273, 13767, 1212, 5121, 4127, 5501, 13774, 566, 2]
+// Dependencies: [31, 27, 3768, 33, 4131, 689, 5462, 5482, 1273, 13768, 1212, 5121, 4127, 5501, 13775, 566, 2]
 // Exports: default
 
-// Module 13773 (IgnoredUsersList)
+// Module 13774 (IgnoredUsersList)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ function IgnoredUsersList(userIds) {
   const tmp = _createForOfIteratorHelperLoose();
   importDefault(5462);
   if (0 === userIds.length) {
-    let obj = { Illustration: require(13767) /* getBlockedSource */.Blocked };
+    let obj = { Illustration: require(13768) /* getBlockedSource */.Blocked };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.body = intl.string(require(1212) /* getSystemLocale */.t.PYrWFW);
     let tmp7 = callback(require(1273) /* Button */.EmptyState, obj);

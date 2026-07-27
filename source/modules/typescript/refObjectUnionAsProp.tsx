@@ -1,5 +1,5 @@
 // Module ID: 7622
-// Function ID: 60982
+// Function ID: 60983
 // Name: refObjectUnionAsProp
 // Dependencies: [2]
 // Exports: default

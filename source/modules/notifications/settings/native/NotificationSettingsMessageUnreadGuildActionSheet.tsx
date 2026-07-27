@@ -1,10 +1,10 @@
-// Module ID: 10267
-// Function ID: 79380
+// Module ID: 10268
+// Function ID: 79385
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
-// Dependencies: [31, 4326, 653, 4327, 662, 33, 10256, 10268, 1212, 5079, 10251, 5074, 2]
+// Dependencies: [31, 4326, 653, 4327, 662, 33, 10257, 10269, 1212, 5079, 10252, 5074, 2]
 // Exports: default
 
-// Module 10267 (NotificationSettingsMessageUnreadGuildActionSheet)
+// Module 10268 (NotificationSettingsMessageUnreadGuildActionSheet)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserNotificationSettings } from "ME";
@@ -19,7 +19,7 @@ export default function NotificationSettingsMessageUnreadGuildActionSheet(guildI
   let notification;
   let unread;
   const _require = guildId;
-  let obj = _require(10256);
+  let obj = _require(10257);
   const guildPresetSettings = obj.useGuildPresetSettings(guildId.guildId);
   ({ unread, notification } = guildPresetSettings);
   obj = {};
@@ -43,5 +43,5 @@ export default function NotificationSettingsMessageUnreadGuildActionSheet(guildI
     const NotificationLabel = guildId(outer1_2[11]).NotificationLabel;
     const result = obj.updateGuildNotificationSettings(guildId.guildId, obj, NotificationLabel.unreads(ONLY_MENTIONS));
   };
-  return jsx(importDefault(10268), {});
+  return jsx(importDefault(10269), {});
 };

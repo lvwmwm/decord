@@ -1,5 +1,5 @@
 // Module ID: 5996
-// Function ID: 53316
+// Function ID: 53317
 // Name: useCanStartPublicThread
 // Dependencies: [57, 4044, 1352, 1194, 1348, 3759, 5040, 653, 566, 483, 5870, 21, 22, 5997, 5998, 4346, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useIsNonModInLockedThread

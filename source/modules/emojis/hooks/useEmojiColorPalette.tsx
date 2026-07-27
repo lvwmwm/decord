@@ -1,5 +1,5 @@
 // Module ID: 9388
-// Function ID: 73202
+// Function ID: 73203
 // Name: useEmojiColorPalette
 // Dependencies: [4123, 1278, 566, 3977, 7681, 2]
 // Exports: useEmojiColorPalette

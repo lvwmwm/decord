@@ -1,10 +1,10 @@
-// Module ID: 11096
-// Function ID: 86245
+// Module ID: 11097
+// Function ID: 86250
 // Name: getChatInputMaxHeight
-// Dependencies: [57, 31, 1452, 11092, 1823, 5162, 3997, 1555, 1450, 11097, 4132, 4135, 3992, 2]
+// Dependencies: [57, 31, 1452, 11093, 1823, 5162, 3997, 1555, 1450, 11098, 4132, 4135, 3992, 2]
 // Exports: default, getChatInputHeightAnimationTiming, getChatInputMinHeight
 
-// Module 11096 (getChatInputMaxHeight)
+// Module 11097 (getChatInputMaxHeight)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";

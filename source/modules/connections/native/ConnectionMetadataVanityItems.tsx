@@ -1,5 +1,5 @@
 // Module ID: 9962
-// Function ID: 77144
+// Function ID: 77145
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [31, 27, 4941, 33, 4131, 689, 1212, 9963, 9964, 22, 1827, 4127, 1273, 4940, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems

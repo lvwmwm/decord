@@ -1,10 +1,8 @@
 // Module ID: 12081
-// Function ID: 94658
-// Dependencies: [65, 12011, 12015]
+// Function ID: 94656
+// Dependencies: [12012, 12082]
 
 // Module 12081
-import _toConsumableArray from "_toConsumableArray";
-
 const self = this;
 let self2 = this;
 if (this) {
@@ -52,56 +50,31 @@ if (self2) {
     }
     const _Object3 = Object;
     let obj = { value: true };
-    exports.ZodError = undefined;
-    exports.ZodRealError = undefined;
-    const fnResult = fn(require("module_12011"));
-    let closure_6 = fn(require("cached"));
-    function initializer(arg0, arg1) {
-      const _require = arg0;
-      const $ZodError = _require(12011).$ZodError;
-      $ZodError.init(arg0, arg1);
-      arg0.name = "ZodError";
-      let obj = {
-        value(arg0) {
-          return outer1_5.formatError(closure_0, arg0);
-        }
-      };
-      obj = {
-        value(arg0) {
-          return outer1_5.flattenError(closure_0, arg0);
-        }
-      };
-      obj = {
-        value(arg0) {
-          const issues = closure_0.issues;
-          issues.push(arg0);
-          closure_0.message = JSON.stringify(closure_0.issues, outer1_6.jsonStringifyReplacer, 2);
-        }
-      };
-      Object.defineProperties(arg0, {
-        format: obj,
-        flatten: obj,
-        addIssue: obj,
-        addIssues: {
-          value(arg0) {
-            const issues = closure_0.issues;
-            const push = issues.push;
-            push.apply(issues, outer1_2(arg0));
-            closure_0.message = JSON.stringify(closure_0.issues, outer1_6.jsonStringifyReplacer, 2);
-          }
-        },
-        isEmpty: {
-          get() {
-            return 0 === closure_0.issues.length;
-          }
-        }
-      });
-    }
-    exports.ZodError = fnResult.$constructor("ZodError", initializer);
-    obj = {};
-    const _Error = Error;
-    obj.Parent = Error;
-    exports.ZodRealError = fnResult.$constructor("ZodError", initializer, obj);
+    exports.parse = undefined;
+    exports.parseAsync = undefined;
+    exports.safeParse = undefined;
+    exports.safeParseAsync = undefined;
+    exports.encode = undefined;
+    exports.decode = undefined;
+    exports.encodeAsync = undefined;
+    exports.decodeAsync = undefined;
+    exports.safeEncode = undefined;
+    exports.safeDecode = undefined;
+    exports.safeEncodeAsync = undefined;
+    exports.safeDecodeAsync = undefined;
+    const fnResult = fn(require("module_12012"));
+    exports.parse = fnResult._parse(require("module_12082").ZodRealError);
+    exports.parseAsync = fnResult._parseAsync(require("module_12082").ZodRealError);
+    exports.safeParse = fnResult._safeParse(require("module_12082").ZodRealError);
+    exports.safeParseAsync = fnResult._safeParseAsync(require("module_12082").ZodRealError);
+    exports.encode = fnResult._encode(require("module_12082").ZodRealError);
+    exports.decode = fnResult._decode(require("module_12082").ZodRealError);
+    exports.encodeAsync = fnResult._encodeAsync(require("module_12082").ZodRealError);
+    exports.decodeAsync = fnResult._decodeAsync(require("module_12082").ZodRealError);
+    exports.safeEncode = fnResult._safeEncode(require("module_12082").ZodRealError);
+    exports.safeDecode = fnResult._safeDecode(require("module_12082").ZodRealError);
+    exports.safeEncodeAsync = fnResult._safeEncodeAsync(require("module_12082").ZodRealError);
+    exports.safeDecodeAsync = fnResult._safeDecodeAsync(require("module_12082").ZodRealError);
   } else {
     const _Object2 = Object;
   }

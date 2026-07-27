@@ -1,5 +1,5 @@
 // Module ID: 9694
-// Function ID: 75562
+// Function ID: 75563
 // Name: SlayerShopCardCTAType
 // Dependencies: [2]
 

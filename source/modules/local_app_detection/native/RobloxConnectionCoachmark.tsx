@@ -1,10 +1,10 @@
-// Module ID: 15670
-// Function ID: 120898
+// Module ID: 15682
+// Function ID: 120945
 // Name: RobloxIcon
-// Dependencies: [57, 31, 27, 4813, 1850, 12696, 653, 1345, 33, 4131, 689, 3843, 1557, 4099, 5187, 5186, 5499, 4542, 4127, 1212, 4544, 10121, 8897, 6554, 3841, 4815, 1392, 1273, 8463, 566, 12697, 4939, 3947, 1334, 2]
+// Dependencies: [57, 31, 27, 4813, 1850, 12697, 653, 1345, 33, 4131, 689, 3843, 1557, 4099, 5187, 5186, 5499, 4542, 4127, 1212, 4544, 10121, 8897, 6554, 3841, 4815, 1392, 1273, 8463, 566, 12698, 4939, 3947, 1334, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 15670 (RobloxIcon)
+// Module 15682 (RobloxIcon)
 import _slicedToArray from "_slicedToArray";
 import callback from "callback";
 import { View } from "Button";
@@ -166,7 +166,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
 export { UnionIcon };
 export const useShouldShowRobloxConnectionCoachmark = function useShouldShowRobloxConnectionCoachmark() {
   const items = [closure_8];
-  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_8.isAppInstalled(stateFromStores(12697).DetectableAppNames.ROBLOX));
+  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_8.isAppInstalled(stateFromStores(12698).DetectableAppNames.ROBLOX));
   const tmp2 = hasRoloxAccount(React.useState(false), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];

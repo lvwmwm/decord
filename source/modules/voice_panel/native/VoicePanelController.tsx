@@ -1,10 +1,10 @@
-// Module ID: 15792
-// Function ID: 121787
+// Module ID: 15804
+// Function ID: 121834
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4123, 1347, 4144, 8072, 10613, 10455, 1348, 4178, 4203, 4343, 9976, 9974, 653, 4156, 5660, 4149, 9977, 33, 15793, 3992, 9379, 664, 15794, 566, 3832, 10534, 1212, 15795, 15796, 8770, 5668, 15797, 1450, 1557, 15820, 9978, 9980, 22, 491, 1207, 682, 10358, 11097, 5840, 675, 8105, 10448, 15749, 4477, 15821, 4324, 4325, 3990, 5582, 15822, 15823, 3749, 15824, 15830, 15831, 15754, 1184, 15832, 9975, 4012, 2]
+// Dependencies: [57, 31, 27, 4123, 1347, 4144, 8072, 10614, 10456, 1348, 4178, 4203, 4343, 9976, 9974, 653, 4156, 5660, 4149, 9977, 33, 15805, 3992, 9379, 664, 15806, 566, 3832, 10535, 1212, 15807, 15808, 8770, 5668, 15809, 1450, 1557, 15832, 9978, 9980, 22, 491, 1207, 682, 10359, 11098, 5840, 675, 8105, 10449, 15761, 4477, 15833, 4324, 4325, 3990, 5582, 15834, 15835, 3749, 15836, 15842, 15843, 15766, 1184, 15844, 9975, 4012, 2]
 // Exports: default
 
-// Module 15792 (_createForOfIteratorHelperLoose)
+// Module 15804 (_createForOfIteratorHelperLoose)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown";
 import { AppState } from "dispatcher";
@@ -12,7 +12,7 @@ import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_createForOfIteratorHelperLoose";
 import closure_8 from "_isNativeReflectConstruct";
 import module_8072 from "module_8072";
-import module_10613 from "module_10613";
+import module_10614 from "module_10614";
 import closure_11 from "_isNativeReflectConstruct";
 import closure_12 from "_isNativeReflectConstruct";
 import closure_13 from "_isNativeReflectConstruct";
@@ -671,7 +671,7 @@ export default function VoicePanelController(channelId) {
       const setControlsMode = memo.setControlsMode;
       const _Set = Set;
       const set = new Set();
-      let module_10613 = outer1_4.useRef(set);
+      let module_10614 = outer1_4.useRef(set);
       const items2 = [tmp2Result, callback1, callback];
       const items3 = [setControlsMode];
       const callback2 = outer1_4.useCallback((arg0) => {

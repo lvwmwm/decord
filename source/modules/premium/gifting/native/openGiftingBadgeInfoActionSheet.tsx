@@ -1,5 +1,5 @@
 // Module ID: 9642
-// Function ID: 75198
+// Function ID: 75199
 // Name: openGiftingBadgeInfoActionSheet
 // Dependencies: [4099, 9643, 1935, 2]
 // Exports: default

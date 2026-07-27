@@ -1,10 +1,10 @@
-// Module ID: 14539
-// Function ID: 111061
+// Module ID: 14540
+// Function ID: 111066
 // Name: Spacing
-// Dependencies: [31, 27, 655, 653, 33, 8592, 4131, 689, 5462, 1456, 14036, 14538, 6619, 14540, 8595, 4099, 8663, 5769, 5482, 4661, 1212, 5085, 5512, 2]
+// Dependencies: [31, 27, 655, 653, 33, 8592, 4131, 689, 5462, 1456, 14037, 14539, 6619, 14541, 8595, 4099, 8663, 5769, 5482, 4661, 1212, 5085, 5512, 2]
 // Exports: ShopCategory
 
-// Module 14539 (Spacing)
+// Module 14540 (Spacing)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { CollectiblesMobileShopScreen as closure_5 } from "items";
@@ -53,11 +53,11 @@ export const ShopCategory = function ShopCategory(category) {
   let obj = category(1456);
   const dependencyMap = obj.useNavigation();
   const unpublishedAt = category.unpublishedAt;
-  let obj1 = category(14036);
+  let obj1 = category(14037);
   obj = { products: category.products, bypassAndroidUnsyncedFilter: category.isOrbsExclusive };
   const filteredAndSortedProducts = obj1.useFilteredAndSortedProducts(obj);
   const mobileBannerUrl = category.mobileBannerUrl;
-  let obj3 = category(14538);
+  let obj3 = category(14539);
   const collectiblesShopDeepLinkProps = obj3.useCollectiblesShopDeepLinkProps({ products: filteredAndSortedProducts });
   ({ productIndex, initialProductSkuId } = collectiblesShopDeepLinkProps);
   const initialVariantIndex = collectiblesShopDeepLinkProps.initialVariantIndex;
@@ -70,7 +70,7 @@ export const ShopCategory = function ShopCategory(category) {
       current.scrollToOffset({ offset: 0, animated: false });
     }
   });
-  let obj5 = category(14540);
+  let obj5 = category(14541);
   obj = {};
   let tmp6 = null != productIndex;
   if (tmp6) {
@@ -79,7 +79,7 @@ export const ShopCategory = function ShopCategory(category) {
   obj.shouldScroll = tmp6;
   obj.initialScrollIndex = productIndex;
   obj.flashListRef = ref;
-  obj.afterMs = category(14540).INITIAL_SCROLL_DELAY_MS;
+  obj.afterMs = category(14541).INITIAL_SCROLL_DELAY_MS;
   obj.resetKey = category.storeListingId;
   const scrollToInitialIndexOnce = obj5.useScrollToInitialIndexOnce(obj);
   let obj7 = category(8595);

@@ -1,5 +1,5 @@
 // Module ID: 7110
-// Function ID: 59900
+// Function ID: 59901
 // Name: GiftBagGlowSpotIllustration
 // Dependencies: [33, 5085, 7111, 2]
 // Exports: GiftBagGlowSpotIllustration

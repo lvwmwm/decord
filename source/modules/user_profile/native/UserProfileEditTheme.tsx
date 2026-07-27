@@ -1,10 +1,10 @@
-// Module ID: 13652
-// Function ID: 104891
+// Module ID: 13653
+// Function ID: 104896
 // Name: ColorSwatch
-// Dependencies: [31, 27, 33, 4131, 689, 665, 5507, 4661, 1212, 9034, 4127, 7922, 8015, 7850, 4277, 3947, 1334, 13629, 4099, 13653, 1935, 8895, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 665, 5507, 4661, 1212, 9034, 4127, 7922, 8015, 7850, 4277, 3947, 1334, 13630, 4099, 13654, 1935, 8895, 2]
 // Exports: default
 
-// Module 13652 (ColorSwatch)
+// Module 13653 (ColorSwatch)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

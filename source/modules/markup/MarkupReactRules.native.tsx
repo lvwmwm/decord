@@ -1,7 +1,7 @@
 // Module ID: 4122
-// Function ID: 34157
+// Function ID: 34158
 // Name: MarkupText
-// Dependencies: [31, 27, 4123, 1348, 1918, 1911, 1838, 653, 1355, 482, 33, 4126, 4127, 4131, 689, 4139, 4322, 3983, 4338, 8297, 4471, 1212, 5490, 3831, 5513, 1273, 1443, 8138, 3828, 9445, 9482, 9929, 566, 3975, 7685, 4099, 10843, 1935, 21, 3804, 5085, 9947, 12912, 10858, 4564, 10229, 12913, 12915, 4075, 4566, 477, 4594, 12917, 10231, 2]
+// Dependencies: [31, 27, 4123, 1348, 1918, 1911, 1838, 653, 1355, 482, 33, 4126, 4127, 4131, 689, 4139, 4322, 3983, 4338, 8297, 4471, 1212, 5490, 3831, 5513, 1273, 1443, 8138, 3828, 9445, 9482, 9929, 566, 3975, 7685, 4099, 10844, 1935, 21, 3804, 5085, 9947, 12913, 10859, 4564, 10230, 12914, 12916, 4075, 4566, 477, 4594, 12918, 10232, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 4122 (MarkupText)
@@ -545,7 +545,7 @@ function MarkupAttachmentLink(state) {
   }
   obj.variant = str2;
   obj.style = tmp.channelMentionText;
-  obj = { themedColor: node(689).colors.MENTION_FOREGROUND, source: node(12912), size: getIconSize() };
+  obj = { themedColor: node(689).colors.MENTION_FOREGROUND, source: node(12913), size: getIconSize() };
   const items = [callback(state(1273).ThemedIcon, obj), ];
   let obj2 = state(9929);
   items[1] = obj2.smartOutput(node, output, state);
@@ -602,7 +602,7 @@ function MarkupCommandMention(state) {
     mention = tmp.mention;
   }
   obj.style = mention;
-  return tmp2(importDefault(10858), obj, state.key);
+  return tmp2(importDefault(10859), obj, state.key);
 }
 ({ PixelRatio: closure_4, Pressable: closure_5, View: closure_6, Text: closure_7 } = get_ActivityIndicator);
 ({ EMOJI_CHAT_SIZE, GuildFeatures: closure_13 } = ME);

@@ -1,10 +1,10 @@
-// Module ID: 15381
-// Function ID: 117387
+// Module ID: 15394
+// Function ID: 117436
 // Name: getSearchTokenText
-// Dependencies: [9033, 9061, 653, 1212, 10952, 9615, 12915, 4648, 8265, 15382, 15384, 8958, 10043, 11397, 11389, 4099, 8191, 1935, 10040, 2]
+// Dependencies: [9033, 9061, 653, 1212, 10953, 9615, 12916, 4648, 8265, 15395, 15397, 8958, 10043, 11398, 11390, 4099, 8191, 1935, 10040, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 15381 (getSearchTokenText)
+// Module 15394 (getSearchTokenText)
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import ME from "ME";
@@ -106,19 +106,19 @@ export const getSearchTokenSubLabel = function getSearchTokenSubLabel(searchToke
 };
 export const getSearchTokenIcon = function getSearchTokenIcon(searchTokenType) {
   if (constants.FILTER_FROM === searchTokenType) {
-    return require(10952) /* UserIcon */.UserIcon;
+    return require(10953) /* UserIcon */.UserIcon;
   } else if (constants.FILTER_HAS === searchTokenType) {
     return require(9615) /* AttachmentIcon */.AttachmentIcon;
   } else if (constants.FILTER_IN === searchTokenType) {
-    return require(12915) /* ChannelListMagnifyingGlassIcon */.ChannelListMagnifyingGlassIcon;
+    return require(12916) /* ChannelListMagnifyingGlassIcon */.ChannelListMagnifyingGlassIcon;
   } else if (constants.FILTER_MENTIONS === searchTokenType) {
     return require(4648) /* AtIcon */.AtIcon;
   } else if (constants.FILTER_ON === searchTokenType) {
     return require(8265) /* CalendarIcon */.CalendarIcon;
   } else if (constants.FILTER_BEFORE === searchTokenType) {
-    return require(15382) /* CalendarMinusIcon */.CalendarMinusIcon;
+    return require(15395) /* CalendarMinusIcon */.CalendarMinusIcon;
   } else if (constants.FILTER_AFTER === searchTokenType) {
-    return require(15384) /* CalendarPlusIcon */.CalendarPlusIcon;
+    return require(15397) /* CalendarPlusIcon */.CalendarPlusIcon;
   } else if (constants.FILTER_AUTHOR_TYPE === searchTokenType) {
     return require(8958) /* RobotIcon */.RobotIcon;
   } else {
@@ -156,12 +156,12 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(ou
                   obj = {
                     onSubmit(format) {
                       let closure_0 = format.format(outer4_6);
-                      let obj = callback(11397);
+                      let obj = callback(11398);
                       obj.updateSearchQuery(outer1_0, () => { ... });
                       obj = { searchContext: outer1_0, searchTokenType: outer1_1, location: outer1_2 };
                       callback(10040).trackSearchFilterAdd(obj);
                       const obj2 = callback(10040);
-                      const initialMessages = callback(11389).fetchInitialMessages(outer1_0);
+                      const initialMessages = callback(11390).fetchInitialMessages(outer1_0);
                     }
                   };
                   obj.openLazy(callback(paths[17])(paths[16], paths.paths), "DatePicker", obj);
@@ -177,15 +177,15 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(ou
     (function handleSearchTokenPress(closure_0, closure_1, closure_2) {
       closure_0 = closure_1;
       const callback = closure_2;
-      callback(11397).updateSearchQuery(closure_0, (saveDraftTextInputValue) => {
+      callback(11398).updateSearchQuery(closure_0, (saveDraftTextInputValue) => {
         if (closure_1 === outer3_5.CONTEXT_MENU) {
           const result = saveDraftTextInputValue.saveDraftTextInputValue();
         }
         saveDraftTextInputValue.setTextInputValue(outer3_3);
         saveDraftTextInputValue.addTag({ type: outer3_4.PREFIX, searchTokenType: closure_0, location: closure_1, text: outer3_9(closure_0) });
       });
-      const obj = callback(11397);
-      callback(11389).syncAutocomplete(closure_0);
+      const obj = callback(11398);
+      callback(11390).syncAutocomplete(closure_0);
     })(closure_0, closure_1, closure_2);
   };
 };

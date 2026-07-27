@@ -1,10 +1,10 @@
-// Module ID: 14717
-// Function ID: 112187
+// Module ID: 14718
+// Function ID: 112192
 // Name: markAsDismissed
-// Dependencies: [31, 1852, 653, 1345, 33, 5462, 5482, 675, 6446, 9253, 3777, 5187, 14718, 2]
+// Dependencies: [31, 1852, 653, 1345, 33, 5462, 5482, 675, 6446, 9253, 3777, 5187, 14719, 2]
 // Exports: default
 
-// Module 14717 (markAsDismissed)
+// Module 14718 (markAsDismissed)
 import result from "result";
 import { PremiumTypes } from "GuildFeatures";
 import { AnalyticEvents } from "ME";

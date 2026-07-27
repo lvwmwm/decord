@@ -1,5 +1,5 @@
 // Module ID: 5084
-// Function ID: 44285
+// Function ID: 44286
 // Name: NAV_BAR_HEIGHT
 // Dependencies: [2]
 

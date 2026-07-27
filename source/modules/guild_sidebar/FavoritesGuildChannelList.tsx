@@ -1,10 +1,10 @@
-// Module ID: 15145
-// Function ID: 115249
+// Module ID: 15158
+// Function ID: 115298
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 1347, 1351, 3758, 4809, 5751, 5040, 3761, 1352, 5077, 1348, 5752, 4163, 3759, 4143, 1907, 4326, 1386, 482, 5753, 1282, 10352, 10152, 22, 1327, 2]
+// Dependencies: [57, 31, 1347, 1351, 3758, 4809, 5751, 5040, 3761, 1352, 5077, 1348, 5752, 4163, 3759, 4143, 1907, 4326, 1386, 482, 5753, 1282, 10353, 10152, 22, 1327, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 15145 (_createForOfIteratorHelperLoose)
+// Module 15158 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import importDefaultResult1 from "_isNativeReflectConstruct";
@@ -139,7 +139,7 @@ function getMissingFavoriteThreadIds(includeLoading) {
             } else {
               let tmp5 = importDefault;
               let tmp6 = dependencyMap;
-              let obj = importDefault(10352);
+              let obj = importDefault(10353);
               let loadState = obj.getLoadState(key10016);
               let tmp8 = "NOT_FOUND" !== loadState;
               if (tmp8) {

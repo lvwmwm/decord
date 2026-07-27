@@ -1,5 +1,5 @@
 // Module ID: 9276
-// Function ID: 72688
+// Function ID: 72689
 // Name: getTopAndNewlyAddedEmojis
 // Dependencies: [4992, 1853, 624, 2]
 // Exports: default

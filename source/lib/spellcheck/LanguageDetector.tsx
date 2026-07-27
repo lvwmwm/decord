@@ -1,5 +1,5 @@
 // Module ID: 5140
-// Function ID: 44593
+// Function ID: 44594
 // Name: LanguageDetector
 // Dependencies: [6, 7, 5141, 2]
 

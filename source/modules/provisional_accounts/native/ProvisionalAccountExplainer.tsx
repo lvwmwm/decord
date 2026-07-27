@@ -1,10 +1,10 @@
-// Module ID: 11656
-// Function ID: 90420
+// Module ID: 11657
+// Function ID: 90425
 // Name: useNativeProvisionalAccountExplainerText
-// Dependencies: [31, 27, 33, 4131, 689, 11657, 11658, 5166, 4127, 1212, 6673, 5509, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 11658, 11659, 5166, 4127, 1212, 6673, 5509, 2]
 // Exports: ChatProvisionalAccountExplainerCard, UserProfileProvisionalAccountExplainerCard
 
-// Module 11656 (useNativeProvisionalAccountExplainerText)
+// Module 11657 (useNativeProvisionalAccountExplainerText)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -18,7 +18,7 @@ function useNativeProvisionalAccountExplainerText(userId) {
   const textVariant = userId.textVariant;
   const items = [iconSize, textVariant];
   const renderApplicationName = React.useCallback((application) => outer1_5(textVariant(outer1_2[5]), { application, textVariant, iconSize }, application.id), items);
-  return iconSize(11658).useProvisionalAccountExplanationText({ userId: userId.userId, renderApplicationName });
+  return iconSize(11659).useProvisionalAccountExplanationText({ userId: userId.userId, renderApplicationName });
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let closure_7 = _createForOfIteratorHelperLoose.createStyles(() => {

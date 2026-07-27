@@ -1,5 +1,5 @@
 // Module ID: 8471
-// Function ID: 67420
+// Function ID: 67421
 // Name: appendTransformProps
 // Dependencies: [8472, 8473, 8474]
 

@@ -1,5 +1,5 @@
 // Module ID: 10101
-// Function ID: 78281
+// Function ID: 78282
 // Name: useShouldShowHelplineLink
 // Dependencies: [31, 1922, 5765, 6201, 624, 10102, 2]
 // Exports: useShouldShowThroughlineLink

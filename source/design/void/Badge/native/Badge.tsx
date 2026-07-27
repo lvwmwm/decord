@@ -1,10 +1,10 @@
-// Module ID: 13154
-// Function ID: 101302
+// Module ID: 13155
+// Function ID: 101307
 // Name: Badge
 // Dependencies: [31, 27, 1922, 653, 1275, 33, 4131, 689, 477, 566, 7610, 1827, 2]
 // Exports: MaskedBadge
 
-// Module 13154 (Badge)
+// Module 13155 (Badge)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

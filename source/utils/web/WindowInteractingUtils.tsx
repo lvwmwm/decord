@@ -1,5 +1,5 @@
 // Module ID: 5135
-// Function ID: 44526
+// Function ID: 44527
 // Name: INTERACTION_EVENTS
 // Dependencies: [2]
 // Exports: clearCurrentlyInteractingWindowId, getCurrentlyInteractingWindowId, setCurrentlyInteractingWindowId

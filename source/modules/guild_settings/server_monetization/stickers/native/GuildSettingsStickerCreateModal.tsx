@@ -1,10 +1,10 @@
-// Module ID: 16326
-// Function ID: 127136
+// Module ID: 16338
+// Function ID: 127183
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [31, 33, 9037, 9040, 1212, 16327, 2]
+// Dependencies: [31, 33, 9037, 9040, 1212, 16339, 2]
 // Exports: default
 
-// Module 16326 (GuildSettingsStickerCreateModal)
+// Module 16338 (GuildSettingsStickerCreateModal)
 import "result";
 import { jsx } from "jsxProd";
 

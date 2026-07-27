@@ -1,10 +1,10 @@
-// Module ID: 12230
-// Function ID: 95537
+// Module ID: 12231
+// Function ID: 95542
 // Name: ShareIcon
-// Dependencies: [31, 33, 689, 3834, 12170, 2]
+// Dependencies: [31, 33, 689, 3834, 12171, 2]
 // Exports: ShareIcon
 
-// Module 12230 (ShareIcon)
+// Module 12231 (ShareIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ShareIcon = function ShareIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(12170) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(12171) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(12170) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(12171) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

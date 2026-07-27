@@ -1,9 +1,9 @@
-// Module ID: 12683
-// Function ID: 98438
+// Module ID: 12684
+// Function ID: 98443
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4045, 1188, 1907, 653, 12684, 4207, 12685, 3983, 3982, 6687, 12687, 668, 587, 675, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4045, 1188, 1907, 653, 12685, 4207, 12686, 3983, 3982, 6687, 12688, 668, 587, 675, 566, 686, 2]
 
-// Module 12683 (_isNativeReflectConstruct)
+// Module 12684 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getFirstInstallTimeMillis from "getFirstInstallTimeMillis";
@@ -31,7 +31,7 @@ function recordRequestRevision(arg0) {
 }
 function delayShowReviewRequestModal() {
   cancelExistingTimeout();
-  const RequestReviewNoTTIExperiment = require(12684) /* apexExperiment */.RequestReviewNoTTIExperiment;
+  const RequestReviewNoTTIExperiment = require(12685) /* apexExperiment */.RequestReviewNoTTIExperiment;
   let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
   let tmp2 = c15;
   if (c15) {
@@ -66,7 +66,7 @@ function showReviewRequestModal() {
       if (!obj.isInVoice) {
         importDefault(675).track(AnalyticEvents.REVIEW_REQUEST_SHOW_ATTEMPTED);
         recordRequestRevision(1);
-        importDefault(12685)();
+        importDefault(12686)();
         let c15 = false;
         const obj6 = importDefault(675);
       }
@@ -137,7 +137,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     guilds = guilds.guilds;
     let obj = {};
     obj = { from: "authed", unit: require(4207) /* sleep */.TimeUnits.DAYS };
-    obj.isInstallOldEnough = require(12687) /* getFirstInstallTimeMillis */.getFirstInstallTimeElapsed(obj) >= 10;
+    obj.isInstallOldEnough = require(12688) /* getFirstInstallTimeMillis */.getFirstInstallTimeElapsed(obj) >= 10;
     obj.isInLargeEnoughGuild = guilds.some((member_count) => member_count.member_count >= 5);
     obj.isAccountVerified = true === guilds.user.verified;
     obj.isNewRevision = revision.revision < 1;

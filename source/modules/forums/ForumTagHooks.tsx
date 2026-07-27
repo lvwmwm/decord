@@ -1,5 +1,5 @@
 // Module ID: 5999
-// Function ID: 53376
+// Function ID: 53377
 // Name: useAvailableTags
 // Dependencies: [31, 1348, 3759, 482, 566, 1327, 6000, 2]
 // Exports: useSomeAppliedTags, useVisibleAppliedForumTags

@@ -1,10 +1,10 @@
-// Module ID: 14873
-// Function ID: 113486
+// Module ID: 14874
+// Function ID: 113491
 // Name: getGuildFolderMenuItems
-// Dependencies: [5, 4971, 653, 9194, 1212, 13030, 1935, 8943, 14874, 2]
+// Dependencies: [5, 4971, 653, 9194, 1212, 13031, 1935, 8943, 14875, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 14873 (getGuildFolderMenuItems)
+// Module 14874 (getGuildFolderMenuItems)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticsSections } from "ME";

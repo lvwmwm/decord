@@ -1,10 +1,10 @@
-// Module ID: 15484
-// Function ID: 119071
+// Module ID: 15497
+// Function ID: 119120
 // Name: getChannelOpenedRouteTrackingProps
 // Dependencies: [1348, 6033, 1198, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 15484 (getChannelOpenedRouteTrackingProps)
+// Module 15497 (getChannelOpenedRouteTrackingProps)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

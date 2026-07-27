@@ -1,5 +1,5 @@
 // Module ID: 9097
-// Function ID: 71549
+// Function ID: 71550
 // Name: AVATAR_SIZE
 // Dependencies: [31, 27, 9076, 33, 4131, 689, 1392, 9098, 1557, 3992, 4555, 5513, 9099, 4127, 1212, 2]
 // Exports: default

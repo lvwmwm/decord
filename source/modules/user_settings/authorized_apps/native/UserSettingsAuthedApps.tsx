@@ -1,10 +1,10 @@
-// Module ID: 13903
-// Function ID: 106448
+// Module ID: 13904
+// Function ID: 106453
 // Name: UserSettingsAuthedApps
-// Dependencies: [31, 27, 5067, 653, 33, 689, 4131, 8885, 8952, 8954, 4087, 1557, 566, 1456, 1457, 5470, 4127, 1212, 5501, 1392, 5164, 11167, 6448, 6449, 2]
+// Dependencies: [31, 27, 5067, 653, 33, 689, 4131, 8885, 8952, 8954, 4087, 1557, 566, 1456, 1457, 5470, 4127, 1212, 5501, 1392, 5164, 11168, 6448, 6449, 2]
 // Exports: DisclosureIcon, default
 
-// Module 13903 (UserSettingsAuthedApps)
+// Module 13904 (UserSettingsAuthedApps)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

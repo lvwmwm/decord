@@ -1,5 +1,5 @@
 // Module ID: 4752
-// Function ID: 41271
+// Function ID: 41272
 // Name: isSOF0Marker
 // Dependencies: [4749, 4746]
 

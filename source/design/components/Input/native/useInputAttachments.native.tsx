@@ -1,5 +1,5 @@
 // Module ID: 6682
-// Function ID: 58998
+// Function ID: 58999
 // Name: estimateAttachmentWidth
 // Dependencies: [57, 31, 27, 33, 5511, 4127, 1324, 6683, 2]
 // Exports: useInputAttachments

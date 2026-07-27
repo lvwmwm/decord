@@ -1,5 +1,5 @@
 // Module ID: 4372
-// Function ID: 38800
+// Function ID: 38801
 // Name: requirePromise
 // Dependencies: []
 

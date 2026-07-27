@@ -1,10 +1,10 @@
-// Module ID: 12370
-// Function ID: 96177
+// Module ID: 12371
+// Function ID: 96182
 // Name: PaymentFlowWarningMessage
 // Dependencies: [31, 27, 33, 4131, 689, 4974, 1273, 4127, 2]
 // Exports: default
 
-// Module 12370 (PaymentFlowWarningMessage)
+// Module 12371 (PaymentFlowWarningMessage)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

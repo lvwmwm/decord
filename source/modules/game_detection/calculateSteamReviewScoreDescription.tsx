@@ -1,5 +1,5 @@
 // Module ID: 8454
-// Function ID: 67381
+// Function ID: 67382
 // Name: calculateSteamReviewScoreDescription
 // Dependencies: [4165, 2]
 // Exports: calculateSteamReviewScoreDescription

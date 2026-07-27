@@ -1,5 +1,5 @@
 // Module ID: 6928
-// Function ID: 59627
+// Function ID: 59628
 // Name: DiscordShopLockupLogo
 // Dependencies: [27, 33, 689, 3835, 6929, 2]
 // Exports: DiscordShopLockupLogo

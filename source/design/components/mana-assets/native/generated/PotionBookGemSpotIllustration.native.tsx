@@ -1,5 +1,5 @@
 // Module ID: 7332
-// Function ID: 60233
+// Function ID: 60234
 // Name: PotionBookGemSpotIllustration
 // Dependencies: [33, 5085, 7333, 2]
 // Exports: PotionBookGemSpotIllustration

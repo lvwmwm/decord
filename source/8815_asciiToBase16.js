@@ -1,5 +1,5 @@
 // Module ID: 8815
-// Function ID: 69754
+// Function ID: 69755
 // Name: asciiToBase16
 // Dependencies: [6, 7, 5, 8816, 8817]
 // Exports: asyncLoop, byteSwap, byteSwap32, bytesToHex, checkOpts, concatBytes, createView, hexToBytes, isBytes, randomBytes, rotl, rotr, u32, u8, wrapConstructor, wrapConstructorWithOpts, wrapXOFConstructorWithOpts

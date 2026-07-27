@@ -1,9 +1,9 @@
-// Module ID: 15851
-// Function ID: 122410
+// Module ID: 15863
+// Function ID: 122457
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 1347, 4144, 10455, 1194, 1348, 4178, 3759, 1850, 4204, 653, 4149, 8826, 33, 4131, 689, 566, 15852, 4321, 8843, 8805, 5515, 4127, 8858, 1212, 4653, 12, 3832, 15849, 8134, 5164, 5170, 14453, 7631, 5171, 686, 5502, 3804, 8770, 4324, 7627, 10701, 4099, 15853, 1935, 8828, 8846, 15854, 15842, 15800, 10399, 8792, 15855, 8943, 15856, 8797, 15857, 6580, 10681, 10158, 10159, 2]
+// Dependencies: [31, 1347, 4144, 10456, 1194, 1348, 4178, 3759, 1850, 4204, 653, 4149, 8826, 33, 4131, 689, 566, 15864, 4321, 8843, 8805, 5515, 4127, 8858, 1212, 4653, 12, 3832, 15861, 8134, 5164, 5170, 14454, 7631, 5171, 686, 5502, 3804, 8770, 4324, 7627, 10702, 4099, 15865, 1935, 8828, 8846, 15866, 15854, 15812, 10400, 8792, 15867, 8943, 15868, 8797, 15869, 6580, 10682, 10159, 10160, 2]
 
-// Module 15851 (_createForOfIteratorHelperLoose)
+// Module 15863 (_createForOfIteratorHelperLoose)
 import importAllResult from "TableRowIcon";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -209,7 +209,7 @@ function ShareActivityLogsButton() {
     }
   }, []);
   let obj = { onPress: callback };
-  obj = { IconComponent: require(14453) /* WrenchIcon */.WrenchIcon, source: importDefault(7631) };
+  obj = { IconComponent: require(14454) /* WrenchIcon */.WrenchIcon, source: importDefault(7631) };
   obj.icon = callback(require(5170) /* TableRowIcon */.TableRowIcon, obj);
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.iQzQs3);
@@ -226,7 +226,7 @@ function ActivityDebugToggle() {
     obj.dispatch(obj);
   }, []);
   obj = {};
-  obj = { IconComponent: require(14453) /* WrenchIcon */.WrenchIcon, source: importDefault(7631) };
+  obj = { IconComponent: require(14454) /* WrenchIcon */.WrenchIcon, source: importDefault(7631) };
   obj.icon = callback(require(5170) /* TableRowIcon */.TableRowIcon, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityHint = intl.string(require(1212) /* getSystemLocale */.t["qv5/SP"]);

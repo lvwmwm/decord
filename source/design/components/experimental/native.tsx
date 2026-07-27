@@ -1,5 +1,5 @@
 // Module ID: 8174
-// Function ID: 65613
+// Function ID: 65614
 // Name: TwinButtons
 // Dependencies: [8175, 2, 8176, 8177, 8178, 8179, 8180, 8182, 7579, 7580, 5168, 8183]
 

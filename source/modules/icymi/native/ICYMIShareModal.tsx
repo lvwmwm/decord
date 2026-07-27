@@ -1,10 +1,10 @@
-// Module ID: 15286
-// Function ID: 116622
+// Module ID: 15299
+// Function ID: 116671
 // Name: Screenshot
-// Dependencies: [57, 5, 31, 27, 1348, 4469, 4468, 653, 8745, 4124, 33, 4131, 689, 8166, 1212, 15287, 3832, 1450, 3978, 8756, 15288, 4663, 3942, 3843, 5159, 9854, 9863, 4544, 4338, 6106, 1327, 5914, 6134, 491, 4666, 5685, 6135, 1557, 477, 5094, 9050, 5087, 9843, 2]
+// Dependencies: [57, 5, 31, 27, 1348, 4469, 4468, 653, 8745, 4124, 33, 4131, 689, 8166, 1212, 15300, 3832, 1450, 3978, 8756, 15301, 4663, 3942, 3843, 5159, 9854, 9863, 4544, 4338, 6106, 1327, 5914, 6134, 491, 4666, 5685, 6135, 1557, 477, 5094, 9050, 5087, 9843, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15286 (Screenshot)
+// Module 15299 (Screenshot)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -51,7 +51,7 @@ function Screenshot(setUri) {
   const tmp4 = ref(3978)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true };
   const obj4 = {};
-  const tmp6 = ref(15288);
+  const tmp6 = ref(15301);
   obj4.dark = setUri(3942).OverlayOpacity.LEVEL_7;
   obj4.light = setUri(3942).OverlayOpacity.LEVEL_8;
   obj3.mixAmount = obj4;

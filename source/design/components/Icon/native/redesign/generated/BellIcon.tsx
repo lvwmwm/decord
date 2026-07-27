@@ -1,10 +1,10 @@
-// Module ID: 10167
-// Function ID: 78607
+// Module ID: 10168
+// Function ID: 78612
 // Name: BellIcon
 // Dependencies: [31, 33, 689, 3834, 7673, 2]
 // Exports: BellIcon
 
-// Module 10167 (BellIcon)
+// Module 10168 (BellIcon)
 import "result";
 import { jsx } from "jsxProd";
 

@@ -1,5 +1,5 @@
 // Module ID: 3836
-// Function ID: 32010
+// Function ID: 32011
 // Name: getSemanticColorContextFromThemeContext
 // Dependencies: [665, 666, 3837, 3842, 3942, 2]
 // Exports: getSemanticColorContextFromThemeContext

@@ -1,10 +1,10 @@
-// Module ID: 11024
-// Function ID: 85757
+// Module ID: 11025
+// Function ID: 85762
 // Name: getHeader
-// Dependencies: [5, 57, 31, 27, 11009, 6699, 653, 33, 4131, 689, 4127, 566, 11014, 1456, 6700, 11023, 11015, 6698, 5121, 1212, 4544, 5087, 11025, 480, 11030, 11032, 11034, 11036, 11037, 5450, 5517, 2]
+// Dependencies: [5, 57, 31, 27, 11010, 6699, 653, 33, 4131, 689, 4127, 566, 11015, 1456, 6700, 11024, 11016, 6698, 5121, 1212, 4544, 5087, 11026, 480, 11031, 11033, 11035, 11037, 11038, 5450, 5517, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 11024 (getHeader)
+// Module 11025 (getHeader)
 import closure_4 from "SafetyHubLinks";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -45,7 +45,7 @@ export default function AppealIngestionModal(classificationId) {
   let require;
   let flag;
   let flag2;
-  let obj = require(11014) /* useSafetyHubClassifications */;
+  let obj = require(11015) /* useSafetyHubClassifications */;
   const safetyHubClassification = obj.useSafetyHubClassification(classificationId.classificationId);
   ({ isDsaEligible: require, classification } = safetyHubClassification);
   flag = undefined;

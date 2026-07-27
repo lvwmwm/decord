@@ -1,5 +1,5 @@
 // Module ID: 7757
-// Function ID: 61725
+// Function ID: 61726
 // Name: isPublicSystemMessage
 // Dependencies: [7758, 653, 7759, 7760, 675, 4325, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow

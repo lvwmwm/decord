@@ -1,5 +1,5 @@
 // Module ID: 4077
-// Function ID: 33900
+// Function ID: 33901
 // Name: SendMessageIcon
 // Dependencies: [31, 33, 689, 3834, 4078, 2]
 // Exports: SendMessageIcon

@@ -1,5 +1,5 @@
 // Module ID: 9010
-// Function ID: 70903
+// Function ID: 70904
 // Name: getChannelCopyForEmbeddedActivity
 // Dependencies: [1212, 2]
 // Exports: default

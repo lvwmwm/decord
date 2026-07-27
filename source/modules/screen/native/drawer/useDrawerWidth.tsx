@@ -1,10 +1,10 @@
-// Module ID: 10827
-// Function ID: 83956
+// Module ID: 10828
+// Function ID: 83961
 // Name: computeTabletDrawerWidth
 // Dependencies: [653, 3987, 3985, 2]
 // Exports: getDrawerWidth, useDrawerWidth
 
-// Module 10827 (computeTabletDrawerWidth)
+// Module 10828 (computeTabletDrawerWidth)
 import { DM_WIDTH } from "ME";
 
 function computeTabletDrawerWidth(width, arg1) {

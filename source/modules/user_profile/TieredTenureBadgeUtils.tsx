@@ -1,5 +1,5 @@
 // Module ID: 5651
-// Function ID: 48298
+// Function ID: 48299
 // Name: getTieredTenureBadgeData
 // Dependencies: [1852, 3713, 2]
 // Exports: getEarnedOnDate, getTieredTenureBadge

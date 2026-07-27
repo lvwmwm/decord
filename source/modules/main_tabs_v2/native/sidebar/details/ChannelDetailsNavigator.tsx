@@ -1,9 +1,9 @@
-// Module ID: 15551
-// Function ID: 119723
+// Module ID: 15564
+// Function ID: 119772
 // Name: ConnectedCreateThreadHeaderButton
-// Dependencies: [31, 27, 1348, 9032, 653, 15395, 33, 9041, 624, 5996, 9767, 9050, 1212, 11807, 675, 15552, 5517, 5093, 3983, 1557, 15600, 477, 15601, 15602, 15603, 15604, 15452, 2]
+// Dependencies: [31, 27, 1348, 9032, 653, 15408, 33, 9041, 624, 5996, 9767, 9050, 1212, 11808, 675, 15565, 5517, 5093, 3983, 1557, 15612, 477, 15613, 15614, 15615, 15616, 15465, 2]
 
-// Module 15551 (ConnectedCreateThreadHeaderButton)
+// Module 15564 (ConnectedCreateThreadHeaderButton)
 import importAllResult from "result";
 import { View } from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -39,7 +39,7 @@ function CreateThreadHeaderButton(channel) {
     const intl = channel(1212).intl;
     obj.accessibilityLabel = intl.string(channel(1212).t.rBIGBL);
     obj.onPress = tmp2;
-    obj.source = importDefault(11807);
+    obj.source = importDefault(11808);
     tmp3 = callback(channel(9050).HeaderIconButton, obj);
   }
   return tmp3;

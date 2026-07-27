@@ -1,10 +1,10 @@
-// Module ID: 16291
-// Function ID: 126901
+// Module ID: 16303
+// Function ID: 126948
 // Name: AutomodTriggerType
-// Dependencies: [31, 10990, 1212, 15574, 10204, 2]
+// Dependencies: [31, 10991, 1212, 15586, 10205, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 16291 (AutomodTriggerType)
+// Module 16303 (AutomodTriggerType)
 import result from "result";
 import AutomodEventType from "AutomodEventType";
 import set from "getSystemLocale";
@@ -193,7 +193,7 @@ export const validateRuleByTriggerConfigOrThrow = function validateRuleByTrigger
   }
 };
 export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) {
-  isUserProfileRuleEnabled = isUserProfileRuleEnabled(15574).useIsUserProfileRuleEnabled(arg0);
+  isUserProfileRuleEnabled = isUserProfileRuleEnabled(15586).useIsUserProfileRuleEnabled(arg0);
   const items = [isUserProfileRuleEnabled];
   return React.useMemo(() => {
     const keys = Object.keys(outer1_7);
@@ -219,7 +219,7 @@ export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) 
   }, items);
 };
 export const getDefaultTriggerMetadataForTriggerType = function getDefaultTriggerMetadataForTriggerType(triggerType, guildId) {
-  require(10204) /* isInMentionRaidExperiment */;
+  require(10205) /* isInMentionRaidExperiment */;
   if (AutomodTriggerType.DEFAULT_KEYWORD_LIST === triggerType) {
     let obj = { allowList: [], presets: [] };
     return obj;

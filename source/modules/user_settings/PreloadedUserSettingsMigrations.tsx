@@ -1,9 +1,9 @@
-// Module ID: 13451
-// Function ID: 103322
+// Module ID: 13452
+// Function ID: 103327
 // Name: migrateDismissibleContent
-// Dependencies: [1348, 653, 11446, 1282, 1333, 5596, 587, 1318, 566, 1313, 1334, 5674, 2]
+// Dependencies: [1348, 653, 11447, 1282, 1333, 5596, 587, 1318, 566, 1313, 1334, 5674, 2]
 
-// Module 13451 (migrateDismissibleContent)
+// Module 13452 (migrateDismissibleContent)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelNoticeTypes } from "ME";
 import { MULTIACCOUNT_TOOLTIP_SEEN_KEY as closure_5 } from "MAX_ACCOUNTS";

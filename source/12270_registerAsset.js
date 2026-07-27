@@ -1,11 +1,11 @@
 // Module ID: 12270
-// Function ID: 95789
+// Function ID: 95793
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12270 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 132, height: 145, scales: [1, 2, 3], hash: "79c6466cf28ca8f6510b4a84fb435a2a", name: "wumpus_snowglobe_premium120", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 120, height: 125, scales: [1, 2, 3], hash: "c43124de927c4f7db7d60a63938625a8", name: "wumpus_cup_premium120", type: "png" };
 
 export default registerAsset.registerAsset(obj);

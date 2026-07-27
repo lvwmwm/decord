@@ -1,5 +1,5 @@
 // Module ID: 9347
-// Function ID: 72997
+// Function ID: 72998
 // Name: _updateEmoji
 // Dependencies: [5, 4992, 4809, 4470, 653, 662, 1331, 1313, 686, 507, 7888, 3977, 1212, 4031, 3772, 1327, 4999, 22, 4471, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji

@@ -1,5 +1,5 @@
 // Module ID: 10106
-// Function ID: 78306
+// Function ID: 78307
 // Name: SafetyToolsActionSheetHeader
 // Dependencies: [31, 27, 33, 4131, 689, 10097, 5087, 4127, 2]
 // Exports: default

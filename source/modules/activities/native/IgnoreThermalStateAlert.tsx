@@ -1,10 +1,10 @@
-// Module ID: 10474
-// Function ID: 81257
+// Module ID: 10475
+// Function ID: 81262
 // Name: IgnoreThermalStateAlert
 // Dependencies: [31, 33, 4131, 4562, 1212, 5668, 4127, 2]
 // Exports: IgnoreThermalStateAlert
 
-// Module 10474 (IgnoreThermalStateAlert)
+// Module 10475 (IgnoreThermalStateAlert)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

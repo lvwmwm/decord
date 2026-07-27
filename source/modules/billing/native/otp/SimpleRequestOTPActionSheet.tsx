@@ -1,10 +1,10 @@
-// Module ID: 14723
-// Function ID: 112212
+// Module ID: 14724
+// Function ID: 112217
 // Name: GiftPurchaseSKUView
-// Dependencies: [5, 57, 31, 27, 1850, 4176, 653, 1852, 33, 3, 1557, 8736, 566, 7983, 5769, 1873, 6243, 11820, 4099, 4472, 5782, 4542, 4127, 5166, 4544, 8709, 491, 6238, 5187, 8696, 2]
+// Dependencies: [5, 57, 31, 27, 1850, 4176, 653, 1852, 33, 3, 1557, 8736, 566, 7983, 5769, 1873, 6243, 11821, 4099, 4472, 5782, 4542, 4127, 5166, 4544, 8709, 491, 6238, 5187, 8696, 2]
 // Exports: default
 
-// Module 14723 (GiftPurchaseSKUView)
+// Module 14724 (GiftPurchaseSKUView)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -114,7 +114,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
     },
     giftParams: { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } }
   };
-  closure_8 = first(11820)(obj);
+  closure_8 = first(11821)(obj);
   const items5 = [product];
   [tmp12, tmp13] = callback(React.useMemo(() => {
     if (null == c5) {

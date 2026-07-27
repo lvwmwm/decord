@@ -1,12 +1,32 @@
 // Module ID: 15987
-// Function ID: 123601
+// Function ID: 123622
 // Dependencies: []
 
 // Module 15987
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "ko",
+  locale: "cs",
   pluralRuleFunction(arg0, arg1) {
-    return "other";
+    const parts = String(arg0).split(".");
+    const first = parts[0];
+    let str2 = "other";
+    if (!arg1) {
+      if (1 != arg0) {
+        if (first >= 2) {
+          if (first <= 4) {
+            let str4 = "few";
+          }
+          let str3 = str4;
+        }
+        let str5 = "many";
+        if (tmp3) {
+          str5 = "other";
+        }
+        str4 = str5;
+      } else {
+        str3 = "one";
+      }
+      str2 = str3;
+    }
+    return str2;
   }
 });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "ko-KP", parentLocale: "ko" });

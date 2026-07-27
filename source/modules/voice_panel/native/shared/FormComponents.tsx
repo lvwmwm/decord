@@ -1,5 +1,5 @@
 // Module ID: 8792
-// Function ID: 69634
+// Function ID: 69635
 // Name: VoiceBadges
 // Dependencies: [31, 4218, 33, 4131, 689, 5515, 5501, 8793, 1273, 5462, 8794, 8805, 8847, 4362, 8321, 8297, 566, 5971, 4127, 1212, 5164, 4544, 8849, 3970, 8384, 8858, 2]
 // Exports: MemberRowItem, VoicePanelFormSection

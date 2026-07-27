@@ -1,10 +1,10 @@
-// Module ID: 10936
-// Function ID: 84977
+// Module ID: 10937
+// Function ID: 84982
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [4292, 2]
 // Exports: getBestMatches, getEntries, sortEntries
 
-// Module 10936 (_createForOfIteratorHelperLoose)
+// Module 10937 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;

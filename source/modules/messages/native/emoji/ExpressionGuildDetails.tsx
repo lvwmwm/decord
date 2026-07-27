@@ -1,5 +1,5 @@
 // Module ID: 9357
-// Function ID: 73060
+// Function ID: 73061
 // Name: ExpressionGuildDetails
 // Dependencies: [31, 27, 5514, 33, 4131, 689, 5513, 1392, 5085, 4127, 1212, 4661, 9356, 9099, 1273, 2]
 

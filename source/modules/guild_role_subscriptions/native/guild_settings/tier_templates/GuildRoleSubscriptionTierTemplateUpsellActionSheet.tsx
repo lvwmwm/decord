@@ -1,10 +1,10 @@
-// Module ID: 15130
-// Function ID: 115186
+// Module ID: 15143
+// Function ID: 115235
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
 // Dependencies: [57, 31, 27, 4123, 653, 1345, 33, 4131, 689, 4664, 624, 5187, 1212, 8080, 4127, 4544, 8242, 4099, 2]
 // Exports: default
 
-// Module 15130 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 15143 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

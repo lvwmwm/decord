@@ -1,5 +1,5 @@
 // Module ID: 4406
-// Function ID: 38880
+// Function ID: 38881
 // Name: isFinite
 // Dependencies: [549]
 

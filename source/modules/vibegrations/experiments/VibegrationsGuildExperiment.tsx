@@ -1,5 +1,5 @@
 // Module ID: 5654
-// Function ID: 48327
+// Function ID: 48328
 // Name: useIsVibegrationsGuildEnabled
 // Dependencies: [653, 1428, 2]
 // Exports: isVibegrationsGuildEnabled, useIsVibegrationsGuildEnabled

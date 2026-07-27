@@ -1,10 +1,10 @@
-// Module ID: 10262
-// Function ID: 79363
+// Module ID: 10263
+// Function ID: 79368
 // Name: NotificationSettingsMessageNotificationActionSheet
-// Dependencies: [31, 27, 653, 33, 4131, 689, 5187, 10259, 4127, 1212, 7596, 7595, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 5187, 10260, 4127, 1212, 7596, 7595, 2]
 // Exports: default
 
-// Module 10262 (NotificationSettingsMessageNotificationActionSheet)
+// Module 10263 (NotificationSettingsMessageNotificationActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserNotificationSettings } from "ME";
@@ -30,7 +30,7 @@ export default function NotificationSettingsMessageNotificationActionSheet(defau
   let obj = { startExpanded: true, backgroundStyles: tmp.sheet };
   obj = { style: tmp.header };
   obj = { notificationSetting: defaultValue.value };
-  obj.children = callback(importDefault(10259), obj);
+  obj.children = callback(importDefault(10260), obj);
   const items = [callback(View, obj), ];
   const obj1 = { style: tmp.content };
   const obj2 = { variant: "text-sm/semibold" };

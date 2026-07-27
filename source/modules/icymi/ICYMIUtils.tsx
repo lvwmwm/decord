@@ -1,5 +1,5 @@
 // Module ID: 8122
-// Function ID: 64743
+// Function ID: 64744
 // Name: generateHydrationId
 // Dependencies: [5, 5751, 1352, 1348, 1838, 4350, 4143, 8108, 8121, 653, 6104, 8123, 4352, 21, 566, 8124, 8128, 7848, 8129, 8130, 1212, 5070, 1935, 653, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, getViewableFeedItemsArray, hydrateNextPage, icymiEnabled, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, isItemUnreadInChannel, itemToType, numberToCustomScore, regenerateFeedAndClearReadStates, useGravityMessage, useGravityMessageItem, useICYMIMessage

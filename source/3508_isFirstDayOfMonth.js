@@ -1,5 +1,5 @@
 // Module ID: 3508
-// Function ID: 26958
+// Function ID: 26959
 // Name: isFirstDayOfMonth
 // Dependencies: [3210, 3211]
 // Exports: default

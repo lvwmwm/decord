@@ -1,5 +1,5 @@
 // Module ID: 9930
-// Function ID: 76809
+// Function ID: 76810
 // Name: ChannelsAndRolesScreen
 // Dependencies: [57, 31, 27, 1838, 5060, 33, 4131, 689, 624, 9931, 8162, 1212, 8687, 9932, 9938, 9040, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 9505
-// Function ID: 74170
+// Function ID: 74171
 // Name: useGetThreadDraftSettings
 // Dependencies: [4469, 566, 21, 2]
 // Exports: default, useHasThreadDraft

@@ -1,5 +1,5 @@
 // Module ID: 9670
-// Function ID: 75307
+// Function ID: 75308
 // Name: useCarouselController
 // Dependencies: [31, 9662, 1582, 9671, 9655, 9656, 9672, 9658]
 // Exports: useCarouselController

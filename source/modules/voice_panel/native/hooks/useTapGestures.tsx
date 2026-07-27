@@ -1,10 +1,10 @@
-// Module ID: 15876
-// Function ID: 122676
+// Module ID: 15888
+// Function ID: 122723
 // Name: useTapGestures
 // Dependencies: [31, 9975, 5217, 3992, 4100, 2]
 // Exports: default
 
-// Module 15876 (useTapGestures)
+// Module 15888 (useTapGestures)
 import result from "result";
 
 const require = arg1;

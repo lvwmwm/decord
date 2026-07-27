@@ -1,10 +1,10 @@
-// Module ID: 10390
-// Function ID: 80175
+// Module ID: 10391
+// Function ID: 80180
 // Name: useUnreadSettingNotice
-// Dependencies: [57, 31, 1352, 10248, 566, 10391, 2]
+// Dependencies: [57, 31, 1352, 10249, 566, 10392, 2]
 // Exports: default
 
-// Module 10390 (useUnreadSettingNotice)
+// Module 10391 (useUnreadSettingNotice)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING as closure_5 } from "_callSuper";

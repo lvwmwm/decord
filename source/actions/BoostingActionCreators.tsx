@@ -1,5 +1,5 @@
 // Module ID: 4027
-// Function ID: 33523
+// Function ID: 33524
 // Name: _fetchAppliedGuildBoostsForGuild
 // Dependencies: [5, 4028, 4029, 3783, 653, 507, 686, 4030, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot

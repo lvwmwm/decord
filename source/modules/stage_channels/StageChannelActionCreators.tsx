@@ -1,5 +1,5 @@
 // Module ID: 6658
-// Function ID: 58895
+// Function ID: 58896
 // Name: audienceAckRequestToSpeak
 // Dependencies: [5, 1907, 4147, 653, 6659, 44, 4325, 6660, 507, 6664, 4315, 4956, 5049, 1882, 3764, 483, 4141, 6653, 6666, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, startStage, toggleRequestToSpeak

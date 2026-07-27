@@ -1,10 +1,10 @@
-// Module ID: 16036
-// Function ID: 124022
+// Module ID: 16048
+// Function ID: 124069
 // Name: handleInviteAccepted
-// Dependencies: [1348, 3768, 6636, 3832, 1212, 10294, 686, 10863, 2]
+// Dependencies: [1348, 3768, 6636, 3832, 1212, 10295, 686, 10864, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 16036 (handleInviteAccepted)
+// Module 16048 (handleInviteAccepted)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 

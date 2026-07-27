@@ -1,10 +1,10 @@
-// Module ID: 12260
-// Function ID: 95756
+// Module ID: 12261
+// Function ID: 95761
 // Name: GiftBoxAnimation
-// Dependencies: [31, 4123, 1852, 33, 566, 4330, 12261, 12262, 12263, 8714, 8723, 8720, 8717, 8726, 8729, 8732, 8735, 5453, 2]
+// Dependencies: [31, 4123, 1852, 33, 566, 4330, 12262, 12263, 12264, 8714, 8723, 8720, 8717, 8726, 8729, 8732, 8735, 5453, 2]
 // Exports: default
 
-// Module 12260 (GiftBoxAnimation)
+// Module 12261 (GiftBoxAnimation)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumGiftStyles } from "GuildFeatures";

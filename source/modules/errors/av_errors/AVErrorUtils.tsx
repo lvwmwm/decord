@@ -1,10 +1,10 @@
-// Module ID: 16589
-// Function ID: 129454
+// Module ID: 16601
+// Function ID: 129501
 // Name: getReportInboundErrors
-// Dependencies: [4216, 664, 10496, 2]
+// Dependencies: [4216, 664, 10497, 2]
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 16589 (getReportInboundErrors)
+// Module 16601 (getReportInboundErrors)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -12,11 +12,11 @@ let closure_3 = 10 * require("set").Millis.SECOND;
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/AVErrorUtils.tsx");
 
 export const getReportInboundErrors = function getReportInboundErrors() {
-  const WindowVisibilityVideoManager = require(10496) /* _isNativeReflectConstruct */.WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = require(10497) /* _isNativeReflectConstruct */.WindowVisibilityVideoManager;
   let result = WindowVisibilityVideoManager.isIncomingVideoEnabled();
   if (result) {
     const _performance = performance;
-    const WindowVisibilityVideoManager2 = require(10496) /* _isNativeReflectConstruct */.WindowVisibilityVideoManager;
+    const WindowVisibilityVideoManager2 = require(10497) /* _isNativeReflectConstruct */.WindowVisibilityVideoManager;
     result = performance.now() - WindowVisibilityVideoManager2.lastIncomingVideoEnabledChangeTime() > closure_3;
     const nowResult = performance.now();
   }

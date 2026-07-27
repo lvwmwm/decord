@@ -1,8 +1,8 @@
-// Module ID: 13458
-// Function ID: 103468
-// Dependencies: [4168, 4034, 653, 10556, 10558, 13459, 5664, 10553, 10567, 675, 507, 6444, 2]
+// Module ID: 13459
+// Function ID: 103473
+// Dependencies: [4168, 4034, 653, 10557, 10559, 13460, 5664, 10554, 10568, 675, 507, 6444, 2]
 
-// Module 13458
+// Module 13459
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -14,12 +14,12 @@ const require = arg1;
 ({ ApplicationFlags: closure_4, Endpoints: closure_5, RPCCommands, RPCErrors: closure_6 } = ME);
 let obj = {
   validation(string) {
-    let obj = importDefault(10556)(string);
+    let obj = importDefault(10557)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.event_name = string.string().required();
     const stringResult = string.string();
-    obj.event_properties = importDefault(10556)(string).required();
+    obj.event_properties = importDefault(10557)(string).required();
     return requiredResult.keys(obj);
   },
   handler(arg0) {
@@ -27,18 +27,18 @@ let obj = {
     let socket;
     ({ socket, args } = arg0);
     const event_properties = args.event_properties;
-    let obj = require(10558) /* recurseReplaceContentTree */;
+    let obj = require(10559) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    let obj1 = require(10558) /* recurseReplaceContentTree */;
+    let obj1 = require(10559) /* recurseReplaceContentTree */;
     obj1.validateApplication(socket.application);
     const id = socket.application.id;
-    const obj3 = importDefault(13459)();
+    const obj3 = importDefault(13460)();
     if (null != obj3) {
       const guildId = obj3.getGuildId();
     }
     application = application.getApplication(id);
     if (obj4.hasApplicationFlag(application, constants.EMBEDDED_FIRST_PARTY)) {
-      const activeAnalyticsSessionIDs = require(10567) /* _createForOfIteratorHelperLoose */.getActiveAnalyticsSessionIDs(id);
+      const activeAnalyticsSessionIDs = require(10568) /* _createForOfIteratorHelperLoose */.getActiveAnalyticsSessionIDs(id);
       obj = { activity_application_id: id };
       let type;
       if (null != obj3) {
@@ -51,13 +51,13 @@ let obj = {
         prop = activeAnalyticsSessionIDs.activityUserSessionId;
       }
       obj.activity_user_session_id = prop;
-      const obj6 = require(10567) /* _createForOfIteratorHelperLoose */;
+      const obj6 = require(10568) /* _createForOfIteratorHelperLoose */;
       obj = {};
       const merged = Object.assign(obj);
       const merged1 = Object.assign(event_properties);
       importDefault(675).track(args.event_name, obj);
     } else {
-      let tmp7 = importDefault(10553);
+      let tmp7 = importDefault(10554);
       obj1 = { errorCode: constants2.INVALID_COMMAND };
       const prototype = tmp7.prototype;
       tmp7 = new tmp7(obj1, "This application cannot access this API");
@@ -71,7 +71,7 @@ obj = {
   handler(socket) {
     const id = socket.socket.application.id;
     if (null == id) {
-      let tmp3 = importDefault(10553);
+      let tmp3 = importDefault(10554);
       let obj = { errorCode: constants2.INVALID_COMMAND };
       const prototype = tmp3.prototype;
       tmp3 = new tmp3(obj, "No application.");

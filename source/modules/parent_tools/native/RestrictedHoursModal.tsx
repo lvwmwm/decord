@@ -1,10 +1,10 @@
-// Module ID: 16027
-// Function ID: 123821
+// Module ID: 16039
+// Function ID: 123868
 // Name: RestrictedHoursLogoutBlockingLayer
-// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 5584, 1557, 16028, 566, 3992, 4132, 1212, 2199, 6725, 16029, 3843, 4127, 5517, 16030, 5588, 16026, 4541, 11059, 2]
+// Dependencies: [57, 31, 27, 1850, 33, 4131, 689, 5584, 1557, 16040, 566, 3992, 4132, 1212, 2199, 6725, 16041, 3843, 4127, 5517, 16042, 5588, 16038, 4541, 11060, 2]
 // Exports: default
 
-// Module 16027 (RestrictedHoursLogoutBlockingLayer)
+// Module 16039 (RestrictedHoursLogoutBlockingLayer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -196,7 +196,7 @@ let closure_14 = { code: "function RestrictedHoursModalTsx3(){const{contentOpaci
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/parent_tools/native/RestrictedHoursModal.tsx");
 
 export default function RestrictedHoursModal() {
-  const tmp = importDefault(16030)();
+  const tmp = importDefault(16042)();
   const require = tmp;
   importDefault = React.useRef(false);
   const dependencyMap = React.useRef(true);
@@ -215,8 +215,8 @@ export default function RestrictedHoursModal() {
       current = ref.current;
     }
     if (!current) {
-      const result = tmp(16026).closeRestrictedHoursModal();
-      const obj = tmp(16026);
+      const result = tmp(16038).closeRestrictedHoursModal();
+      const obj = tmp(16038);
     }
   }, items);
   importDefault(4541)(() => true);
@@ -247,7 +247,7 @@ export default function RestrictedHoursModal() {
       const logoutResult = ref(5588).logout("restricted_hours");
     }
   }, []), tmp3[0]);
-  return callback2(require(11059) /* Modal */.Modal, {
+  return callback2(require(11060) /* Modal */.Modal, {
     screens: (function useScreens(result, arg1) {
       let closure_1 = arg1;
       const items = [result, arg1];

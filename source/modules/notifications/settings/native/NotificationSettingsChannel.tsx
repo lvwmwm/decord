@@ -1,10 +1,10 @@
-// Module ID: 10249
-// Function ID: 79300
+// Module ID: 10250
+// Function ID: 79305
 // Name: NotificationSettingsChannel
-// Dependencies: [31, 27, 4326, 33, 4131, 689, 10250, 1212, 4321, 1456, 5087, 5079, 5074, 566, 7575, 10252, 10253, 10257, 10264, 10270, 4544, 2]
+// Dependencies: [31, 27, 4326, 33, 4131, 689, 10251, 1212, 4321, 1456, 5087, 5079, 5074, 566, 7575, 10253, 10254, 10258, 10265, 10271, 4544, 2]
 // Exports: default
 
-// Module 10249 (NotificationSettingsChannel)
+// Module 10250 (NotificationSettingsChannel)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export default function NotificationSettingsChannel(channel) {
   const _require = channel;
-  let obj = _require(10250);
+  let obj = _require(10251);
   const channelPresetInheritance = obj.useChannelPresetInheritance(channel.channel);
   const intl = _require(1212).intl;
   const importDefault = intl.string(_require(1212).t.h850Ss);
@@ -46,7 +46,7 @@ export default function NotificationSettingsChannel(channel) {
   });
   const items = [channel.channel];
   const items1 = [channel.channel];
-  const callback = React.useCallback(() => channel(10250).updateChannelToGuildDefault(channel.channel.guild_id, channel.channel.id), items);
+  const callback = React.useCallback(() => channel(10251).updateChannelToGuildDefault(channel.channel.guild_id, channel.channel.id), items);
   const callback1 = React.useCallback(() => {
     let obj = callback(5079);
     obj = { muted: false };
@@ -63,16 +63,16 @@ export default function NotificationSettingsChannel(channel) {
     obj.style = obj1;
     const intl2 = _require(1212).intl;
     obj.title = intl2.string(_require(1212).t["6MCxAy"]);
-    let obj6 = _require(10252);
+    let obj6 = _require(10253);
     obj.subtitle = obj6.getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
     obj.onPressUnmute = callback1;
-    muted = callback(_require(10252).NotificationSettingsMuteBanner, obj);
+    muted = callback(_require(10253).NotificationSettingsMuteBanner, obj);
   }
   const items3 = [muted, , , , , ];
   obj2 = { channel: channel.channel };
-  items3[1] = callback(_require(10253).NotificationSettingsChannelPresets, obj2);
-  items3[2] = callback(_require(10257).NotificationSettingsChannelMessageNotification, { style: { marginTop: 24 }, channel: channel.channel });
-  items3[3] = callback(_require(10264).NotificationSettingsChannelMessageUnread, { style: { marginTop: 24 }, channel: channel.channel });
+  items3[1] = callback(_require(10254).NotificationSettingsChannelPresets, obj2);
+  items3[2] = callback(_require(10258).NotificationSettingsChannelMessageNotification, { style: { marginTop: 24 }, channel: channel.channel });
+  items3[3] = callback(_require(10265).NotificationSettingsChannelMessageUnread, { style: { marginTop: 24 }, channel: channel.channel });
   channel = channel.channel;
   let isForumLikeChannelResult = channel.isForumLikeChannel();
   if (isForumLikeChannelResult) {
@@ -80,7 +80,7 @@ export default function NotificationSettingsChannel(channel) {
     obj6 = { marginTop: 24 };
     obj5.style = obj6;
     obj5.channel = channel.channel;
-    isForumLikeChannelResult = callback(_require(10270).NotificationSettingsChannelPost, obj5);
+    isForumLikeChannelResult = callback(_require(10271).NotificationSettingsChannelPost, obj5);
   }
   items3[4] = isForumLikeChannelResult;
   let tmp15 = !channelPresetInheritance.inherited;

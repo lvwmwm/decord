@@ -1,10 +1,10 @@
-// Module ID: 15885
-// Function ID: 122736
+// Module ID: 15897
+// Function ID: 122783
 // Name: ActivitiesDebugOverlay
-// Dependencies: [31, 27, 33, 4131, 3975, 689, 10566, 1557, 4127, 2]
+// Dependencies: [31, 27, 33, 4131, 3975, 689, 10567, 1557, 4127, 2]
 // Exports: default
 
-// Module 15885 (ActivitiesDebugOverlay)
+// Module 15897 (ActivitiesDebugOverlay)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,20 +25,20 @@ const result = require("jsxProd").fileFinishedImporting("modules/activities/nati
 
 export default function ActivitiesDebugOverlay() {
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(10566)();
+  const tmp2 = importDefault(10567)();
   let str = "";
   let str2 = "text-overlay-light";
-  if (require(10566) /* _getThermalState */.ThermalStates.UNHANDLED !== tmp2) {
+  if (require(10567) /* _getThermalState */.ThermalStates.UNHANDLED !== tmp2) {
     str = "nominal";
     str2 = "text-feedback-positive";
-    if (require(10566) /* _getThermalState */.ThermalStates.NOMINAL !== tmp2) {
+    if (require(10567) /* _getThermalState */.ThermalStates.NOMINAL !== tmp2) {
       str = "fair";
       str2 = "text-feedback-warning";
-      if (require(10566) /* _getThermalState */.ThermalStates.FAIR !== tmp2) {
+      if (require(10567) /* _getThermalState */.ThermalStates.FAIR !== tmp2) {
         str = "serious";
         str2 = "text-feedback-critical";
-        if (require(10566) /* _getThermalState */.ThermalStates.SERIOUS !== tmp2) {
-          if (require(10566) /* _getThermalState */.ThermalStates.CRITICAL === tmp2) {
+        if (require(10567) /* _getThermalState */.ThermalStates.SERIOUS !== tmp2) {
+          if (require(10567) /* _getThermalState */.ThermalStates.CRITICAL === tmp2) {
             str = "critical";
             str2 = "text-feedback-critical";
           }

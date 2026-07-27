@@ -1,5 +1,5 @@
 // Module ID: 6900
-// Function ID: 59585
+// Function ID: 59586
 // Name: D20SpotIllustration
 // Dependencies: [33, 5085, 6901, 2]
 // Exports: D20SpotIllustration

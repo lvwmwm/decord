@@ -1,5 +1,5 @@
 // Module ID: 9984
-// Function ID: 77271
+// Function ID: 77272
 // Name: DCDChatList
 // Dependencies: [31, 4123, 33, 4131, 1324, 5217, 9985, 9986, 566, 9398, 2]
 

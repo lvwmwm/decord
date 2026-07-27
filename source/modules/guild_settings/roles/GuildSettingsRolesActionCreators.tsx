@@ -1,10 +1,10 @@
-// Module ID: 16377
-// Function ID: 127824
+// Module ID: 16389
+// Function ID: 127871
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 653, 686, 5049, 9960, 1207, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 16377 (_createForOfIteratorHelperLoose)
+// Module 16389 (_createForOfIteratorHelperLoose)
 import reportDevtoolsEvent from "reportDevtoolsEvent";
 import { ComponentActions } from "ME";
 

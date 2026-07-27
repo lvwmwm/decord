@@ -1,10 +1,10 @@
-// Module ID: 11606
-// Function ID: 90168
+// Module ID: 11607
+// Function ID: 90173
 // Name: GuildPowerupsRecentActivityRow
-// Dependencies: [27, 4123, 33, 4131, 689, 11607, 3801, 5874, 566, 7685, 6561, 11610, 11612, 1273, 4127, 11614, 11608, 1212, 2]
+// Dependencies: [27, 4123, 33, 4131, 689, 11608, 3801, 5874, 566, 7685, 6561, 11611, 11613, 1273, 4127, 11615, 11609, 1212, 2]
 // Exports: default
 
-// Module 11606 (GuildPowerupsRecentActivityRow)
+// Module 11607 (GuildPowerupsRecentActivityRow)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ function GuildPowerupsRecentActivityRow(row) {
   row = row.row;
   ({ boost, phase, sortKey } = row);
   const tmp = callback3();
-  let obj = require(11607) /* useMaybeGetSortedBoosts */;
+  let obj = require(11608) /* useMaybeGetSortedBoosts */;
   const getBoostUserConfig = obj.useGetBoostUserConfig(boost);
   ({ roleColor, roleColorStrings } = getBoostUserConfig);
   if (row.isExpiringBoostsEnabled) {
@@ -47,9 +47,9 @@ function GuildPowerupsRecentActivityRow(row) {
     if ("gave" === phase) {
       let BoostGemSlashIcon = require(6561) /* BoostGemIcon */.BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = require(11610) /* BoostTier1Icon */.BoostTier1Icon;
+      BoostGemSlashIcon = require(11611) /* BoostTier1Icon */.BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = require(11612) /* BoostGemSlashIcon */.BoostGemSlashIcon;
+      BoostGemSlashIcon = require(11613) /* BoostGemSlashIcon */.BoostGemSlashIcon;
     }
     obj = { style: tmp.boostRowContainer };
     if ("gave" === phase) {
@@ -80,7 +80,7 @@ function GuildPowerupsRecentActivityRow(row) {
     obj5.children = getBoostUserConfig.username;
     items2[1] = callback(require(4127) /* Text */.Text, obj5);
     items2[2] = callback(require(4127) /* Text */.Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
-    obj6 = { variant: "text-md/medium", lineClamp: 1, style: tmp.messageText, children: importDefault(11614)(row) };
+    obj6 = { variant: "text-md/medium", lineClamp: 1, style: tmp.messageText, children: importDefault(11615)(row) };
     items2[3] = callback(require(4127) /* Text */.Text, obj6);
     obj3.children = items2;
     items1[1] = closure_6(View, obj3);
@@ -106,8 +106,8 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/powerup
 
 export default function GuildPowerupsRecentActivitySection(guildId) {
   const tmp = callback3();
-  const arr = importDefault(11607)(guildId.guildId, 10);
-  let obj = _require(11608);
+  const arr = importDefault(11608)(guildId.guildId, 10);
+  let obj = _require(11609);
   _require = obj.useExpiringBoostsEnabled("GuildPowerupsRecentActivity");
   let tmp2 = null;
   if (0 !== arr.length) {

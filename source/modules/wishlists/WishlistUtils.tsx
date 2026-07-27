@@ -1,10 +1,10 @@
-// Module ID: 12108
-// Function ID: 94883
+// Module ID: 12109
+// Function ID: 94888
 // Name: createNitroSuggestedSku
 // Dependencies: [57, 4170, 8609, 8610, 8611, 653, 1852, 1212, 5613, 3777, 2]
 // Exports: buildReorderedNitroFirstWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12108 (createNitroSuggestedSku)
+// Module 12109 (createNitroSuggestedSku)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isCollectiblesWishlistItemRecord as closure_5 } from "_createForOfIteratorHelperLoose";

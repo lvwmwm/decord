@@ -1,9 +1,9 @@
-// Module ID: 14993
-// Function ID: 114325
+// Module ID: 14994
+// Function ID: 114330
 // Name: IconOrPreview
-// Dependencies: [31, 27, 1353, 1850, 14244, 653, 482, 33, 14994, 14995, 4131, 689, 5462, 566, 5468, 675, 10816, 1935, 8297, 14989, 4320, 14996, 14245, 14990, 1273, 14999, 9011, 15000, 9006, 11925, 8441, 4655, 8867, 1212, 3975, 10787, 5085, 14991, 15002, 10790, 7856, 15004, 7919, 2]
+// Dependencies: [31, 27, 1353, 1850, 14245, 653, 482, 33, 14995, 14996, 4131, 689, 5462, 566, 5468, 675, 10817, 1935, 8297, 14990, 4320, 14997, 14246, 14991, 1273, 15000, 9011, 15001, 9006, 11926, 8441, 4655, 8867, 1212, 3975, 10788, 5085, 14992, 15003, 10791, 7856, 15005, 7919, 2]
 
-// Module 14993 (IconOrPreview)
+// Module 14994 (IconOrPreview)
 import importAllResult from "StageIcon";
 import get_ActivityIndicator from "SpotifyNeutralIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -157,7 +157,7 @@ function IconOrPreview(arg0) {
     const intl5 = require(1212) /* getSystemLocale */.intl;
     obj.ctaText = intl5.string(require(1212) /* getSystemLocale */.t["7Xq/nV"]);
     obj.disabled = true;
-    obj.children = callback(importDefault(10787), obj);
+    obj.children = callback(importDefault(10788), obj);
     return callback(closure_4, obj);
   } else {
     if (importDefault(9011)(activity)) {
@@ -171,7 +171,7 @@ function IconOrPreview(arg0) {
       if (type === constants.LISTENING) {
         const intl3 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl3.string(require(1212) /* getSystemLocale */.t.kUEnxN);
-      } else if (importDefault(11925)(activity)) {
+      } else if (importDefault(11926)(activity)) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl2.string(require(1212) /* getSystemLocale */.t.T0uYK9);
       } else {
@@ -197,7 +197,7 @@ function StageStreamAvatars(stage) {
   let audienceCount;
   let audienceFriends;
   stage = stage.stage;
-  let obj = require(14991) /* useLiveStageData */;
+  let obj = require(14992) /* useLiveStageData */;
   const liveStageData = obj.useLiveStageData(stage);
   obj = { style: callback3().avatarStackContainer };
   ({ audienceCount, audienceFriends } = liveStageData);
@@ -209,7 +209,7 @@ function StageStreamAvatars(stage) {
   obj.userCount = audienceCount + 1;
   obj.isStage = true;
   obj.avatarSize = require(1273) /* Button */.AvatarSizes.SIZE_16;
-  obj.children = callback(require(15002) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
+  obj.children = callback(require(15003) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
   return callback(closure_4, obj);
 }
 ({ PixelRatio, View: closure_4 } = get_ActivityIndicator);

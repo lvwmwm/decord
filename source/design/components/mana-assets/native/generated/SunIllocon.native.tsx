@@ -1,5 +1,5 @@
 // Module ID: 7500
-// Function ID: 60485
+// Function ID: 60486
 // Name: SunIllocon
 // Dependencies: [33, 5085, 7501, 2]
 // Exports: SunIllocon

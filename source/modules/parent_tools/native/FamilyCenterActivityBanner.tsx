@@ -1,10 +1,10 @@
-// Module ID: 13840
-// Function ID: 106092
+// Module ID: 13841
+// Function ID: 106097
 // Name: FamilyCenterActivityBannerButton
-// Dependencies: [31, 27, 33, 4131, 6200, 6201, 13841, 689, 11050, 1212, 2199, 13848, 13849, 4127, 2]
+// Dependencies: [31, 27, 33, 4131, 6200, 6201, 13842, 689, 11051, 1212, 2199, 13849, 13850, 4127, 2]
 // Exports: default
 
-// Module 13840 (FamilyCenterActivityBannerButton)
+// Module 13841 (FamilyCenterActivityBannerButton)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ function FamilyCenterActivityBannerButton() {
       tmp4 = null;
     }
     obj = { style: tmp.container };
-    let tmp7Result = require(13841) /* FamilyCenterTeenQRCodeButtonInner */;
+    let tmp7Result = require(13842) /* FamilyCenterTeenQRCodeButtonInner */;
     tmp7Result = closure_5(tmp3 ? tmp7Result.FamilyCenterParentQRCodeButton : tmp7Result.FamilyCenterTeenQRCodeButton, {});
     obj.children = tmp7Result;
     closure_5(closure_3, obj);
@@ -55,13 +55,13 @@ export default function FamilyCenterActivityBanner() {
   const tmp3 = _createForOfIteratorHelperLoose();
   let obj = require(6200) /* useUserIdsForLinkStatus */;
   const hasMaxConnections = obj.useHasMaxConnections();
-  let obj1 = require(11050) /* useAgeSpecificText */;
+  let obj1 = require(11051) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
   const tmp = importDefault;
   const tmp2 = importDefault(6201)();
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const ageSpecificText = obj1.useAgeSpecificText(intl.string(importDefault(2199)["T7GyW+"]), intl2.string(importDefault(2199).goKE2b));
-  let obj2 = require(11050) /* useAgeSpecificText */;
+  let obj2 = require(11051) /* useAgeSpecificText */;
   const intl3 = require(1212) /* getSystemLocale */.intl;
   const stringResult = intl.string(importDefault(2199)["T7GyW+"]);
   const intl4 = require(1212) /* getSystemLocale */.intl;
@@ -69,9 +69,9 @@ export default function FamilyCenterActivityBanner() {
   obj = {};
   const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(importDefault(2199).MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(importDefault(2199).EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
   if (tmp2) {
-    let tmp14 = 13848;
+    let tmp14 = 13849;
   } else {
-    tmp14 = 13849;
+    tmp14 = 13850;
   }
   obj.source = tmp(tmp14);
   obj.style = tmp3.art;

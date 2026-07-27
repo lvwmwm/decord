@@ -1,9 +1,9 @@
-// Module ID: 14096
-// Function ID: 107959
+// Module ID: 14097
+// Function ID: 107964
 // Name: SessionManager
 // Dependencies: [6, 7, 2]
 
-// Module 14096 (SessionManager)
+// Module 14097 (SessionManager)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

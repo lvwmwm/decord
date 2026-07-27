@@ -1,5 +1,5 @@
 // Module ID: 5676
-// Function ID: 48764
+// Function ID: 48765
 // Name: ApplicationCommandSectionType
 // Dependencies: [2]
 

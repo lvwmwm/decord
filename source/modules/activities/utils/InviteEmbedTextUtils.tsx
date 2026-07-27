@@ -1,10 +1,10 @@
-// Module ID: 12310
-// Function ID: 95929
+// Module ID: 12311
+// Function ID: 95934
 // Name: getRequestToStreamText
 // Dependencies: [1850, 653, 1212, 2653, 4320, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText
 
-// Module 12310 (getRequestToStreamText)
+// Module 12311 (getRequestToStreamText)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ActivityActionTypes } from "ME";
 

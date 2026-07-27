@@ -1,5 +1,5 @@
 // Module ID: 6205
-// Function ID: 55666
+// Function ID: 55667
 // Name: useDiscountOffer
 // Dependencies: [57, 31, 1850, 6157, 1852, 566, 3777, 4016, 2]
 // Exports: default

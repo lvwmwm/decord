@@ -1,5 +1,5 @@
 // Module ID: 4151
-// Function ID: 35026
+// Function ID: 35027
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4152, 4163, 4166, 4177, 566, 686, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings

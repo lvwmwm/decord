@@ -1,8 +1,8 @@
-// Module ID: 11101
-// Function ID: 86312
-// Dependencies: [27, 11102, 11104, 5987, 1184, 2]
+// Module ID: 11102
+// Function ID: 86317
+// Dependencies: [27, 11103, 11105, 5987, 1184, 2]
 
-// Module 11101
+// Module 11102
 import get_ActivityIndicator from "get ActivityIndicator";
 
 let closure_3;
@@ -14,50 +14,50 @@ export default {
   backspace(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         Commands.backspace(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.backspace(callback(arg0));
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   blur(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         Commands.blur(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.blur(callback(arg0));
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   closeCustomKeyboard(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         Commands.closeCustomKeyboard(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.closeCustomKeyboard(callback(arg0));
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   flushText(arg0, arg1) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         Commands.flushText(arg0, arg1);
       } else {
         const _Error = Error;
         const error = new Error("flushText is not supported/needed on iOS");
         throw error;
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   getText(arg0, set) {
@@ -94,68 +94,68 @@ export default {
   focus(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         Commands.focus(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.focus(callback(arg0));
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   openCustomKeyboard(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         Commands.openCustomKeyboard(arg0);
       } else {
         const _Error = Error;
         const error = new Error("openCustomKeyboard is not supported/needed on iOS");
         throw error;
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   openSystemKeyboard(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         Commands.openSystemKeyboard(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.openSystemKeyboard(callback(arg0));
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   setText(arg0, arg1) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         Commands.setText(arg0, arg1);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.setText(callback(arg0), arg1);
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   setSelectedRange(arg0, arg1, arg2) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         Commands.setSelectedRange(arg0, arg1, arg2);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.setSelectedRange(callback(arg0), arg1, arg2);
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   updateTextBlocks(arg0, arg1, arg2) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         const _JSON = JSON;
         let tmp8;
         const json = JSON.stringify(arg1);
@@ -167,7 +167,7 @@ export default {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.updateTextBlocks(callback(arg0), arg1, arg2);
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   },
   replaceRange(arg0, keepCursorPosition) {
@@ -186,14 +186,14 @@ export default {
     const editId = keepCursorPosition.editId;
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11104) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = require(11105) /* __INTERNAL_VIEW_CONFIG */.Commands;
         const _JSON = JSON;
         Commands.replaceRange(arg0, _location, length, text, JSON.stringify(nodes), flag, editId);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.replaceRange(callback(arg0), _location, length, text, nodes, flag, editId);
       }
-      obj = require(11102) /* resolveShouldUseFabric */;
+      obj = require(11103) /* resolveShouldUseFabric */;
     }
   }
 };

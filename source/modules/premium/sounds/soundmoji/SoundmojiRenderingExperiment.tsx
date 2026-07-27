@@ -1,5 +1,5 @@
 // Module ID: 4583
-// Function ID: 40206
+// Function ID: 40207
 // Name: getSoundmojiRenderingExperiment
 // Dependencies: [1428, 2]
 // Exports: getSoundmojiRenderingExperiment, useSoundmojiRenderingExperiment

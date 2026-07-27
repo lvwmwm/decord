@@ -1,9 +1,9 @@
-// Module ID: 16231
-// Function ID: 125938
+// Module ID: 16243
+// Function ID: 125985
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 3824, 1348, 3759, 1907, 4948, 4099, 4951, 8769, 1356, 4963, 1935, 5078, 2]
 
-// Module 16231 (_isNativeReflectConstruct)
+// Module 16243 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import maybeLoadBundle from "maybeLoadBundle";

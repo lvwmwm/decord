@@ -1,10 +1,10 @@
-// Module ID: 10920
-// Function ID: 84862
+// Module ID: 10921
+// Function ID: 84867
 // Name: useGuildProfileCTA
-// Dependencies: [31, 1194, 1918, 1838, 4116, 1850, 653, 566, 1360, 6652, 10921, 7881, 5130, 2]
+// Dependencies: [31, 1194, 1918, 1838, 4116, 1850, 653, 566, 1360, 6652, 10922, 7881, 5130, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 10920 (useGuildProfileCTA)
+// Module 10921 (useGuildProfileCTA)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -84,7 +84,7 @@ export default function useGuildProfileCTA(id) {
   const validInviteKey = stateFromStoresObject.validInviteKey;
   const isBypassInvite = stateFromStoresObject.isBypassInvite;
   const inviteRoles = stateFromStoresObject.inviteRoles;
-  const tmp6 = importDefault(10921)();
+  const tmp6 = importDefault(10922)();
   obj = tmp6;
   const items8 = [stateFromStores3, tmp6, id, features, validInviteKey, , , , , , , ];
   ({ visibility: arr9[5], tag: arr9[6] } = id);
@@ -228,7 +228,7 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
       }
     }
   }
-  const pendingFolderGuildIds = _Set(10921).getPendingFolderGuildIds();
+  const pendingFolderGuildIds = _Set(10922).getPendingFolderGuildIds();
   if (tmp7) {
     let roles;
     if (null != invite) {
@@ -287,6 +287,6 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
     }
     return APPLY_TO_JOIN;
   }
-  const obj2 = _Set(10921);
+  const obj2 = _Set(10922);
   tmp7 = null != joinedAt;
 };

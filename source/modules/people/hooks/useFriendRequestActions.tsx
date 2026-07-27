@@ -1,10 +1,10 @@
-// Module ID: 12150
-// Function ID: 95185
+// Module ID: 12151
+// Function ID: 95190
 // Name: useFriendRequestActions
 // Dependencies: [31, 8988, 2]
 // Exports: useFriendRequestActions
 
-// Module 12150 (useFriendRequestActions)
+// Module 12151 (useFriendRequestActions)
 import result from "result";
 
 let result = require("set").fileFinishedImporting("modules/people/hooks/useFriendRequestActions.tsx");

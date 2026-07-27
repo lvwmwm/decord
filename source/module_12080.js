@@ -1,6 +1,6 @@
 // Module ID: 12080
-// Function ID: 94651
-// Dependencies: [12011, 12081]
+// Function ID: 94641
+// Dependencies: [12012, 12078]
 
 // Module 12080
 const self = this;
@@ -50,31 +50,48 @@ if (self2) {
     }
     const _Object3 = Object;
     let obj = { value: true };
-    exports.parse = undefined;
-    exports.parseAsync = undefined;
-    exports.safeParse = undefined;
-    exports.safeParseAsync = undefined;
-    exports.encode = undefined;
-    exports.decode = undefined;
-    exports.encodeAsync = undefined;
-    exports.decodeAsync = undefined;
-    exports.safeEncode = undefined;
-    exports.safeDecode = undefined;
-    exports.safeEncodeAsync = undefined;
-    exports.safeDecodeAsync = undefined;
-    const fnResult = fn(require("module_12011"));
-    exports.parse = fnResult._parse(require("module_12081").ZodRealError);
-    exports.parseAsync = fnResult._parseAsync(require("module_12081").ZodRealError);
-    exports.safeParse = fnResult._safeParse(require("module_12081").ZodRealError);
-    exports.safeParseAsync = fnResult._safeParseAsync(require("module_12081").ZodRealError);
-    exports.encode = fnResult._encode(require("module_12081").ZodRealError);
-    exports.decode = fnResult._decode(require("module_12081").ZodRealError);
-    exports.encodeAsync = fnResult._encodeAsync(require("module_12081").ZodRealError);
-    exports.decodeAsync = fnResult._decodeAsync(require("module_12081").ZodRealError);
-    exports.safeEncode = fnResult._safeEncode(require("module_12081").ZodRealError);
-    exports.safeDecode = fnResult._safeDecode(require("module_12081").ZodRealError);
-    exports.safeEncodeAsync = fnResult._safeEncodeAsync(require("module_12081").ZodRealError);
-    exports.safeDecodeAsync = fnResult._safeDecodeAsync(require("module_12081").ZodRealError);
+    exports.ZodISODateTime = undefined;
+    exports.ZodISODate = undefined;
+    exports.ZodISOTime = undefined;
+    exports.ZodISODuration = undefined;
+    exports.datetime = function datetime(message) {
+      return closure_3._isoDateTime(exports.ZodISODateTime, message);
+    };
+    exports.date = function date(message) {
+      return closure_3._isoDate(exports.ZodISODate, message);
+    };
+    exports.time = function time(message) {
+      return closure_3._isoTime(exports.ZodISOTime, message);
+    };
+    exports.duration = function duration(message) {
+      return closure_3._isoDuration(exports.ZodISODuration, message);
+    };
+    const fnResult = fn(require("module_12012"));
+    let closure_4 = fn(require("string"));
+    exports.ZodISODateTime = fnResult.$constructor("ZodISODateTime", (arg0, arg1) => {
+      const $ZodISODateTime = closure_3.$ZodISODateTime;
+      $ZodISODateTime.init(arg0, arg1);
+      const ZodStringFormat = closure_4.ZodStringFormat;
+      ZodStringFormat.init(arg0, arg1);
+    });
+    exports.ZodISODate = fnResult.$constructor("ZodISODate", (arg0, arg1) => {
+      const $ZodISODate = closure_3.$ZodISODate;
+      $ZodISODate.init(arg0, arg1);
+      const ZodStringFormat = closure_4.ZodStringFormat;
+      ZodStringFormat.init(arg0, arg1);
+    });
+    exports.ZodISOTime = fnResult.$constructor("ZodISOTime", (arg0, arg1) => {
+      const $ZodISOTime = closure_3.$ZodISOTime;
+      $ZodISOTime.init(arg0, arg1);
+      const ZodStringFormat = closure_4.ZodStringFormat;
+      ZodStringFormat.init(arg0, arg1);
+    });
+    exports.ZodISODuration = fnResult.$constructor("ZodISODuration", (arg0, arg1) => {
+      const $ZodISODuration = closure_3.$ZodISODuration;
+      $ZodISODuration.init(arg0, arg1);
+      const ZodStringFormat = closure_4.ZodStringFormat;
+      ZodStringFormat.init(arg0, arg1);
+    });
   } else {
     const _Object2 = Object;
   }

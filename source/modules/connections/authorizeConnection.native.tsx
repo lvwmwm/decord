@@ -1,5 +1,5 @@
 // Module ID: 8897
-// Function ID: 70445
+// Function ID: 70446
 // Name: authorizeConnection
 // Dependencies: [4941, 653, 686, 4099, 8863, 8898, 8915, 4338, 8926, 1935, 4815, 8933, 8138, 3828, 4939, 2]
 // Exports: default

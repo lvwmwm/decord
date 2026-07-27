@@ -1,10 +1,10 @@
-// Module ID: 15671
-// Function ID: 120913
+// Module ID: 15683
+// Function ID: 120960
 // Name: BogoPromotionActionSheet
 // Dependencies: [31, 27, 1852, 653, 1345, 33, 4131, 689, 5462, 6162, 5187, 5085, 4127, 1212, 1921, 8365, 2]
 // Exports: default
 
-// Module 15671 (BogoPromotionActionSheet)
+// Module 15683 (BogoPromotionActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";

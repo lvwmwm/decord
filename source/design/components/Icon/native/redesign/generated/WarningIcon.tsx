@@ -1,5 +1,5 @@
 // Module ID: 7570
-// Function ID: 60678
+// Function ID: 60679
 // Name: WarningIcon
 // Dependencies: [31, 33, 689, 3834, 7571, 2]
 // Exports: WarningIcon

@@ -1,5 +1,5 @@
 // Module ID: 7950
-// Function ID: 63242
+// Function ID: 63243
 // Name: getCommandUserAvatar
 // Dependencies: [27, 1858, 1348, 1850, 653, 1395, 1392, 4361, 7951, 689, 5674, 1882, 7685, 7952, 1212, 7953, 2]
 // Exports: createExecutedCommand

@@ -1,10 +1,10 @@
-// Module ID: 11220
-// Function ID: 87320
+// Module ID: 11221
+// Function ID: 87325
 // Name: AppInThisServer
-// Dependencies: [31, 27, 33, 4131, 689, 11198, 1327, 4127, 1212, 4661, 1324, 11162, 8174, 7955, 11167, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 11199, 1327, 4127, 1212, 4661, 1324, 11163, 8174, 7955, 11168, 2]
 // Exports: default
 
-// Module 11220 (AppInThisServer)
+// Module 11221 (AppInThisServer)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function AppInThisServer(onAppSelected) {
   onAppSelected = onAppSelected.onAppSelected;
   const tmp2 = _createForOfIteratorHelperLoose();
   const application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11162);
+  let obj = onAppSelected(11163);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
@@ -46,7 +46,7 @@ function AppInThisServer(onAppSelected) {
   let tmp5 = null;
   if (null != appLauncherIconSource) {
     obj = { iconSource: appLauncherIconSource, wrapperStyle: tmp2.iconContainer, iconSize: 36 };
-    tmp5 = callback(application(11167), obj);
+    tmp5 = callback(application(11168), obj);
   }
   const items1 = [tmp5, ];
   const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };

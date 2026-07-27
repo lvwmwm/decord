@@ -1,8 +1,8 @@
-// Module ID: 15789
-// Function ID: 121773
-// Dependencies: [31, 5660, 33, 15776, 10572, 2]
+// Module ID: 15801
+// Function ID: 121820
+// Dependencies: [31, 5660, 33, 15788, 10573, 2]
 
-// Module 15789
+// Module 15801
 import { ActivityPanelModes } from "ActivityPanelModes";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
@@ -12,7 +12,7 @@ const memoResult = require("result").memo(function LeaveActivityButton(arg0) {
   let importDefault;
   let require;
   ({ frame: require, setMode: importDefault } = arg0);
-  return jsx(require(15776) /* BaseLeaveActivityButton */.BaseLeaveActivityButton, {
+  return jsx(require(15788) /* BaseLeaveActivityButton */.BaseLeaveActivityButton, {
     onPress() {
       callback(outer1_3.DISCONNECTED);
       const timerId = setTimeout(() => {

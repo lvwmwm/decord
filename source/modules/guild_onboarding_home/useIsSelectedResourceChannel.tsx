@@ -1,10 +1,10 @@
-// Module ID: 10350
-// Function ID: 79946
+// Module ID: 10351
+// Function ID: 79951
 // Name: useIsSelectedResourceChannel
-// Dependencies: [5846, 1348, 1907, 653, 1355, 624, 1360, 10351, 5605, 2]
+// Dependencies: [5846, 1348, 1907, 653, 1355, 624, 1360, 10352, 5605, 2]
 // Exports: default
 
-// Module 10350 (useIsSelectedResourceChannel)
+// Module 10351 (useIsSelectedResourceChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

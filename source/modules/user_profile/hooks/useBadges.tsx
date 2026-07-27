@@ -1,5 +1,5 @@
 // Module ID: 8033
-// Function ID: 63911
+// Function ID: 63912
 // Name: useBadges
 // Dependencies: [3971, 1850, 3804, 624, 1212, 2]
 // Exports: default

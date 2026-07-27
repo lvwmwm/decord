@@ -1,10 +1,10 @@
-// Module ID: 12605
-// Function ID: 97531
+// Module ID: 12606
+// Function ID: 97536
 // Name: getThemedImageSource
-// Dependencies: [31, 27, 1278, 653, 33, 4131, 689, 4974, 3977, 12606, 12607, 12608, 12609, 12610, 12611, 12612, 12613, 1273, 4023, 566, 5513, 2]
+// Dependencies: [31, 27, 1278, 653, 33, 4131, 689, 4974, 3977, 12607, 12608, 12609, 12610, 12611, 12612, 12613, 12614, 1273, 4023, 566, 5513, 2]
 // Exports: default
 
-// Module 12605 (getThemedImageSource)
+// Module 12606 (getThemedImageSource)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,13 +26,13 @@ function getThemedImageSource(arg0, arg1, arg2) {
 }
 function getTierIcon(arg0, arg1) {
   if (BoostedGuildTiers.NONE === arg1) {
-    return getThemedImageSource(arg0, importDefault(12606), importDefault(12607));
+    return getThemedImageSource(arg0, importDefault(12607), importDefault(12608));
   } else if (BoostedGuildTiers.TIER_1 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12608), importDefault(12609));
+    return getThemedImageSource(arg0, importDefault(12609), importDefault(12610));
   } else if (BoostedGuildTiers.TIER_2 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12610), importDefault(12611));
+    return getThemedImageSource(arg0, importDefault(12611), importDefault(12612));
   } else if (BoostedGuildTiers.TIER_3 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12612), importDefault(12613));
+    return getThemedImageSource(arg0, importDefault(12613), importDefault(12614));
   }
 }
 function PremiumGuildTierPill(tier) {

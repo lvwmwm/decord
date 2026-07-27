@@ -1,5 +1,5 @@
 // Module ID: 7588
-// Function ID: 60748
+// Function ID: 60749
 // Name: hasTrailingError
 // Dependencies: [31, 27, 1277, 33, 4131, 689, 5163, 5157, 7582, 5501, 7589, 477, 2]
 // Exports: default

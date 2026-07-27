@@ -1,10 +1,10 @@
-// Module ID: 10394
-// Function ID: 80215
+// Module ID: 10395
+// Function ID: 80220
 // Name: UnreadSettingNoticeConnected
-// Dependencies: [31, 27, 662, 33, 4131, 689, 10395, 4127, 1212, 4661, 10396, 2]
+// Dependencies: [31, 27, 662, 33, 4131, 689, 10396, 4127, 1212, 4661, 10397, 2]
 // Exports: default
 
-// Module 10394 (UnreadSettingNoticeConnected)
+// Module 10395 (UnreadSettingNoticeConnected)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ChannelNotificationSettingsFlags as closure_4 } from "MAX_FAVORITES";
@@ -30,7 +30,7 @@ export default function UnreadSettingNoticeConnected(channel) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.content };
   obj = { id: channel.channel.id };
-  const items = [callback(importDefault(10395), obj), , ];
+  const items = [callback(importDefault(10396), obj), , ];
   obj = { style: tmp.informations };
   const obj1 = { variant: "text-md/semibold" };
   const intl = _require(1212).intl;

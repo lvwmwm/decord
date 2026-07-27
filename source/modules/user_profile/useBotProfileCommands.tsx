@@ -1,10 +1,10 @@
-// Module ID: 11893
-// Function ID: 92056
+// Module ID: 11894
+// Function ID: 92061
 // Name: useBotProfileCommands
 // Dependencies: [31, 7962, 1882, 2]
 // Exports: default
 
-// Module 11893 (useBotProfileCommands)
+// Module 11894 (useBotProfileCommands)
 import result from "result";
 
 const require = arg1;

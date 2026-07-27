@@ -1,9 +1,9 @@
-// Module ID: 12743
-// Function ID: 99271
+// Module ID: 12744
+// Function ID: 99276
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4148, 1348, 4203, 1850, 4147, 4204, 653, 4149, 4164, 4320, 9018, 4228, 566, 686, 2]
 
-// Module 12743 (_isNativeReflectConstruct)
+// Module 12744 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getAvatarDecoration from "getAvatarDecoration";

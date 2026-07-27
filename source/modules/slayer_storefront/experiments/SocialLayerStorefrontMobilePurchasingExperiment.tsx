@@ -1,5 +1,5 @@
 // Module ID: 7829
-// Function ID: 62457
+// Function ID: 62458
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getIsEligibleForSocialLayerStorefrontMobilePurchasing, useIsEligibleForSocialLayerStorefrontMobilePurchasing

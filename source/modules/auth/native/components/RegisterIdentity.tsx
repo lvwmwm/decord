@@ -1,10 +1,10 @@
-// Module ID: 14798
-// Function ID: 112881
+// Module ID: 14799
+// Function ID: 112886
 // Name: RegisterIdentityBase
-// Dependencies: [5, 57, 31, 27, 14789, 14790, 33, 4131, 4550, 9125, 1456, 14799, 668, 14787, 14804, 14805, 14788, 4560, 9143, 9147, 14806, 4544, 1212, 8931, 5585, 14808, 14809, 8162, 8687, 2]
+// Dependencies: [5, 57, 31, 27, 14790, 14791, 33, 4131, 4550, 9125, 1456, 14800, 668, 14788, 14805, 14806, 14789, 4560, 9143, 9147, 14807, 4544, 1212, 8931, 5585, 14809, 14810, 8162, 8687, 2]
 // Exports: RegisterIdentity
 
-// Module 14798 (RegisterIdentityBase)
+// Module 14799 (RegisterIdentityBase)
 import closure_3 from "RegistrationTransitionActionTypes";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -59,7 +59,7 @@ function RegisterIdentityBase(inputMode) {
   dependencyMap = obj1.useNavigation();
   const tmp3 = callback2((errors) => errors.errors);
   let closure_3 = tmp3;
-  let obj2 = inputMode(14799);
+  let obj2 = inputMode(14800);
   const identityRegistrationStep = obj2.useIdentityRegistrationStep(inputMode(668).AuthStates.REGISTER_IDENTITY, inputMode);
   loginEmail = identityRegistrationStep.loginEmail;
   const identityErrorMessage = identityRegistrationStep.identityErrorMessage;
@@ -67,7 +67,7 @@ function RegisterIdentityBase(inputMode) {
   ({ setLoginEmail, loginPhone, updateLoginPhone, preventSubmitIdentity, identityError } = identityRegistrationStep);
   const tmp5 = loginEmail(identityErrorMessage.useState(false), 2);
   closure_8 = tmp5[1];
-  closure_9 = identityErrorMessage.useContext(inputMode(14787).TrackRegistrationContext);
+  closure_9 = identityErrorMessage.useContext(inputMode(14788).TrackRegistrationContext);
   const items = [tmp3.message, identityErrorMessage];
   const memo = identityErrorMessage.useMemo(() => {
     if (null != identityErrorMessage) {
@@ -78,10 +78,10 @@ function RegisterIdentityBase(inputMode) {
     return message;
   }, items);
   const tmp2 = setInputMode(9125)();
-  setInputMode(14804)(inputMode(668).AuthStates.REGISTER_IDENTITY);
-  const tmp7 = setInputMode(14804);
-  let obj3 = inputMode(14788);
-  setInputMode(14805)(obj3.getPreviousRegistrationTransitionStep(inputMode(668).AuthStates.REGISTER_IDENTITY));
+  setInputMode(14805)(inputMode(668).AuthStates.REGISTER_IDENTITY);
+  const tmp7 = setInputMode(14805);
+  let obj3 = inputMode(14789);
+  setInputMode(14806)(obj3.getPreviousRegistrationTransitionStep(inputMode(668).AuthStates.REGISTER_IDENTITY));
   setInputMode(4560)(() => {
     callback({ step: outer1_12.ACCOUNT_IDENTITY, actionType: outer1_13.VIEWED });
   });
@@ -89,8 +89,8 @@ function RegisterIdentityBase(inputMode) {
   obj = { style: tmp.container, contentContainerStyle: tmp.scrollContent, keyboardShouldPersistTaps: "handled" };
   const items1 = [controlComponent, , , ];
   const tmp12 = callback3;
-  const tmp9 = setInputMode(14805);
-  items1[1] = callback3(inputMode(14806).RegisterPhoneOrEmailInput, { loginPhone, loginEmail, setLoginPhone: updateLoginPhone, setLoginEmail, inputMode, onSubmit: handleSubmit, inputError: identityError, autoFocus: true });
+  const tmp9 = setInputMode(14806);
+  items1[1] = callback3(inputMode(14807).RegisterPhoneOrEmailInput, { loginPhone, loginEmail, setLoginPhone: updateLoginPhone, setLoginEmail, inputMode, onSubmit: handleSubmit, inputError: identityError, autoFocus: true });
   obj1 = { style: tmp.button };
   obj2 = { loading: tmp5[0], size: "lg" };
   const intl = inputMode(1212).intl;
@@ -130,11 +130,11 @@ const result = require("result").fileFinishedImporting("modules/auth/native/comp
 
 export const RegisterIdentity = function RegisterIdentity() {
   let obj = hasItem(4550);
-  let obj1 = hasItem(14808);
+  let obj1 = hasItem(14809);
   const deviceCountry = obj1.getDeviceCountry();
   hasItem = null != deviceCountry;
   if (hasItem) {
-    const EMAIL_FIRST_COUNTRIES = hasItem(14809).EMAIL_FIRST_COUNTRIES;
+    const EMAIL_FIRST_COUNTRIES = hasItem(14810).EMAIL_FIRST_COUNTRIES;
     hasItem = EMAIL_FIRST_COUNTRIES.has(deviceCountry);
   }
   let items = [hasItem];

@@ -1,9 +1,9 @@
-// Module ID: 10594
-// Function ID: 82574
+// Module ID: 10595
+// Function ID: 82579
 // Name: useBaseActivityView
-// Dependencies: [57, 31, 27, 1347, 4156, 4157, 33, 4131, 10593, 1450, 686, 10595, 10596, 10539, 566, 10598, 10546, 10599, 10605, 2]
+// Dependencies: [57, 31, 27, 1347, 4156, 4157, 33, 4131, 10594, 1450, 686, 10596, 10597, 10540, 566, 10599, 10547, 10600, 10606, 2]
 
-// Module 10594 (useBaseActivityView)
+// Module 10595 (useBaseActivityView)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -131,7 +131,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
   let landscapeSafeAreasConfig = portraitSafeAreasConfig.portraitSafeAreasConfig;
   let setIsResetting;
   currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
-  const tmp4 = currentEmbeddedActivity(10539)();
+  const tmp4 = currentEmbeddedActivity(10540)();
   const dependencyMap = tmp4;
   let obj = layoutMode(566);
   const items = [currentEmbeddedActivity];
@@ -194,7 +194,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       tmp14 = obj;
     }
   }
-  currentEmbeddedActivity(10598)({ connectedEmbeddedActivity: currentEmbeddedActivity });
+  currentEmbeddedActivity(10599)({ connectedEmbeddedActivity: currentEmbeddedActivity });
   const items2 = [layoutMode, currentEmbeddedActivity];
   const layoutEffect = importAllResult.useLayoutEffect(() => {
     if (null != currentEmbeddedActivity) {
@@ -239,7 +239,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
   if (!tmp19) {
     tmp19 = null == tmp4;
   }
-  const obj1 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp19, setShowLoadingStateForLockingOrientation: tmp8, application: tmp4, setOrientationLockState: layoutMode(10593).setOrientationLockState };
+  const obj1 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp19, setShowLoadingStateForLockingOrientation: tmp8, application: tmp4, setOrientationLockState: layoutMode(10594).setOrientationLockState };
   const tmp2 = currentEmbeddedActivity;
   const tmp6 = setIsResetting(importAllResult.useState(true), 2);
   setIsResetting = useBaseActivityView(obj1).setIsResetting;
@@ -277,15 +277,15 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       const tmp25 = closure_11;
       const tmp26 = BaseActivityView;
       const tmp27 = closure_11;
-      const tmp30 = currentEmbeddedActivity(10599);
-      obj3.allowPopups = layoutMode(10605).allowPopups(tmp4);
+      const tmp30 = currentEmbeddedActivity(10600);
+      obj3.allowPopups = layoutMode(10606).allowPopups(tmp4);
       obj3.referrerPolicy = "origin";
       let tmp37 = layoutMode === constants.PIP;
       if (!tmp37) {
         tmp37 = layoutMode === constants.GRID;
       }
       obj3.isPipOrGridMode = tmp37;
-      obj3.webViewKey = layoutMode(10546).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
+      obj3.webViewKey = layoutMode(10547).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
       if (tmp23) {
         landscapeSafeAreasConfig = portraitSafeAreasConfig.landscapeSafeAreasConfig;
       }
@@ -293,7 +293,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       obj3.ignoreSilentHardwareSwitch = !set.has(id);
       obj2.children = tmp27(tmp30, obj3);
       tmp25Result = tmp25(tmp26, obj2);
-      const obj6 = layoutMode(10605);
+      const obj6 = layoutMode(10606);
     }
   }
   return tmp25Result;

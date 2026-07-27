@@ -1,5 +1,5 @@
 // Module ID: 9863
-// Function ID: 76438
+// Function ID: 76439
 // Name: ShareChatInput
 // Dependencies: [57, 31, 27, 653, 33, 4131, 689, 477, 6130, 7584, 1212, 4661, 6519, 2]
 // Exports: default

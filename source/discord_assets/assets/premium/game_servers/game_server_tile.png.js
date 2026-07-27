@@ -1,9 +1,9 @@
-// Module ID: 11605
-// Function ID: 90167
+// Module ID: 11606
+// Function ID: 90172
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11605 (metadata)
+// Module 11606 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/premium/game_servers/game_server_tile.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2b844e74bd90a5e0ccb408b039a4915f295d8b9c192c823a4afc69c1fc3604a2.png";

@@ -1,5 +1,5 @@
 // Module ID: 3628
-// Function ID: 27893
+// Function ID: 27894
 // Name: setHours
 // Dependencies: [3214, 3210, 3211]
 // Exports: default

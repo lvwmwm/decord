@@ -1,9 +1,9 @@
-// Module ID: 15539
-// Function ID: 119637
+// Module ID: 15552
+// Function ID: 119686
 // Name: str2
-// Dependencies: [31, 27, 33, 15530, 15189, 689, 7909, 4131, 1212, 8174, 4127, 2]
+// Dependencies: [31, 27, 33, 15543, 15202, 689, 7909, 4131, 1212, 8174, 4127, 2]
 
-// Module 15539 (str2)
+// Module 15552 (str2)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -128,7 +128,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
   }
   const obj3 = { ref, style: tmp.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp10, onPress, hitSlop: importDefault(689).space.PX_8 };
   if (showNitroSlant) {
-    let obj6 = require(15530) /* isYouNavFloating */;
+    let obj6 = require(15543) /* isYouNavFloating */;
     showNitroSlant = !obj6.isYouNavFloating();
   }
   if (showNitroSlant) {
@@ -161,11 +161,11 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
     }
     obj7.children = accessibilityLabel;
     let tmp23Result = callback(require(4127) /* Text */.Text, obj7);
-    obj13 = require(15530) /* isYouNavFloating */;
+    obj13 = require(15543) /* isYouNavFloating */;
     const tmp23 = callback;
   } else {
     tmp23Result = null;
-    const obj11 = require(15530) /* isYouNavFloating */;
+    const obj11 = require(15543) /* isYouNavFloating */;
   }
   items4[2] = tmp23Result;
   obj3.children = items4;

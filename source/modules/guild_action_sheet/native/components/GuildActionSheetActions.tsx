@@ -1,10 +1,10 @@
-// Module ID: 12980
-// Function ID: 100675
+// Module ID: 12981
+// Function ID: 100680
 // Name: HideMutedChannelsOption
-// Dependencies: [31, 27, 5757, 1316, 1391, 5868, 1911, 4143, 4326, 1850, 653, 5056, 7665, 4327, 33, 4131, 689, 566, 5500, 1212, 10170, 9931, 3947, 1334, 5753, 4099, 4338, 9930, 1935, 11381, 4320, 5462, 5482, 9738, 1273, 9386, 12981, 1282, 1331, 8245, 12982, 7881, 8384, 4127, 3804, 6449, 5079, 10248, 5074, 13030, 10243, 13031, 8258, 4940, 8214, 8167, 9951, 13032, 4473, 44, 12979, 10203, 10202, 5761, 9937, 13033, 7633, 7740, 10956, 5489, 5490, 3831, 1392, 2]
+// Dependencies: [31, 27, 5757, 1316, 1391, 5868, 1911, 4143, 4326, 1850, 653, 5056, 7665, 4327, 33, 4131, 689, 566, 5500, 1212, 10171, 9931, 3947, 1334, 5753, 4099, 4338, 9930, 1935, 11382, 4320, 5462, 5482, 9738, 1273, 9386, 12982, 1282, 1331, 8245, 12983, 7881, 8384, 4127, 3804, 6449, 5079, 10249, 5074, 13031, 10244, 13032, 8258, 4940, 8214, 8167, 9951, 13033, 4473, 44, 12980, 10204, 10203, 5761, 9937, 13034, 7633, 7740, 10957, 5489, 5490, 3831, 1392, 2]
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction
 
-// Module 12980 (HideMutedChannelsOption)
+// Module 12981 (HideMutedChannelsOption)
 import mergeLocations from "mergeLocations";
 import { View } from "ChannelsAndRolesScreen";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -85,7 +85,7 @@ function BrowseChannelsOption(guild) {
       obj.label = stringResult;
       tmp6(tmp9, obj);
     }
-    tmp10 = callback2(guild(11381).NewBadge, {});
+    tmp10 = callback2(guild(11382).NewBadge, {});
     tmp6 = callback2;
   }
 }
@@ -324,7 +324,7 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
 };
 export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryActions(guild) {
   guild = guild.guild;
-  let obj = guild(13031);
+  let obj = guild(13032);
   let obj1 = guild(566);
   const items = [closure_10];
   const items1 = [];
@@ -393,7 +393,7 @@ export const GuildActionSheetDirectoryActions = function GuildActionSheetDirecto
   items.push(callback2(NotificationAction, { guild }));
   items.push(callback2(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
-  let obj = guild(12979);
+  let obj = guild(12980);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
@@ -432,9 +432,9 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   let shouldShowIncidentActions;
   guild = guild.guild;
   const currentUser = authStore.getCurrentUser();
-  let obj = guild(10203);
+  let obj = guild(10204);
   const canReportRaid = obj.useCanReportRaid(guild);
-  let obj1 = guild(10202);
+  let obj1 = guild(10203);
   const guildIncidentsState = obj1.useGuildIncidentsState(guild.id);
   const items = [];
   ({ shouldShowIncidentActions, isUnderLockdown } = guildIncidentsState);
@@ -456,7 +456,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   }
   items.push(callback2(HideMutedChannelsOption, { guild }));
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
-  let obj4 = guild(12979);
+  let obj4 = guild(12980);
   const messageRequestPrivacyOption = obj4.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);

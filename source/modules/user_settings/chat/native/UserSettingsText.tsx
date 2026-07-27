@@ -1,10 +1,10 @@
-// Module ID: 14356
-// Function ID: 109969
+// Module ID: 14357
+// Function ID: 109974
 // Name: trackSettingsUpdated
 // Dependencies: [31, 27, 1850, 3783, 1279, 1280, 653, 33, 4131, 689, 675, 3804, 6152, 3835, 566, 3777, 1456, 6448, 1273, 9569, 4127, 1212, 7575, 4542, 5501, 5502, 7596, 7595, 2]
 // Exports: default, setLowQualityImageMode, setStickerAutocomplete
 
-// Module 14356 (trackSettingsUpdated)
+// Module 14357 (trackSettingsUpdated)
 import "result";
 import { View } from "TableRadioRow";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

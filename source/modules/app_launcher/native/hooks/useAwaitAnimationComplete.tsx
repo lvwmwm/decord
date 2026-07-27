@@ -1,10 +1,10 @@
-// Module ID: 11276
-// Function ID: 87706
+// Module ID: 11277
+// Function ID: 87711
 // Name: AwaitAnimationContext
 // Dependencies: [31, 33, 2]
 // Exports: AwaitAnimationContext, useAwaitAnimationCompletion
 
-// Module 11276 (AwaitAnimationContext)
+// Module 11277 (AwaitAnimationContext)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 

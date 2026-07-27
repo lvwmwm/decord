@@ -1,10 +1,10 @@
-// Module ID: 11891
-// Function ID: 92046
+// Module ID: 11892
+// Function ID: 92051
 // Name: LinkButton
 // Dependencies: [31, 27, 653, 1906, 33, 4131, 3828, 675, 4127, 8939, 477, 1905, 1212, 2]
 // Exports: default
 
-// Module 11891 (LinkButton)
+// Module 11892 (LinkButton)
 import result from "result";
 import { Pressable } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";

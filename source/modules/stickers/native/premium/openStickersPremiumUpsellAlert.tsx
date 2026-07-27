@@ -1,5 +1,5 @@
 // Module ID: 9581
-// Function ID: 74756
+// Function ID: 74757
 // Name: _openStickersPremiumUpsellAlert
 // Dependencies: [5, 31, 653, 33, 675, 6244, 4452, 4472, 9582, 1935, 2]
 // Exports: default

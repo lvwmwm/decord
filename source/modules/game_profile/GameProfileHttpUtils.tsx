@@ -1,5 +1,5 @@
 // Module ID: 8588
-// Function ID: 68217
+// Function ID: 68218
 // Name: _getShopCollection
 // Dependencies: [5, 1922, 8414, 653, 8589, 686, 4370, 507, 566, 561, 664, 8583, 2]
 // Exports: getGameAnnouncements, getShopCollection

@@ -1,5 +1,5 @@
 // Module ID: 6594
-// Function ID: 58414
+// Function ID: 58415
 // Name: SparklesIcon
 // Dependencies: [31, 33, 689, 3834, 6595, 2]
 // Exports: SparklesIcon

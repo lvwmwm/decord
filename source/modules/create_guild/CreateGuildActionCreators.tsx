@@ -1,5 +1,5 @@
 // Module ID: 10011
-// Function ID: 77484
+// Function ID: 77485
 // Name: _createGuildFromTemplate
 // Dependencies: [5, 653, 4943, 480, 4030, 2]
 

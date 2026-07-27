@@ -1,5 +1,5 @@
 // Module ID: 8080
-// Function ID: 64332
+// Function ID: 64333
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 57, 31, 27, 33, 4131, 689, 8081, 8053, 5582, 1212, 3843, 2]
 // Exports: createVideoControls

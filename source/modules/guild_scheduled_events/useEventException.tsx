@@ -1,5 +1,5 @@
 // Module ID: 8153
-// Function ID: 65383
+// Function ID: 65384
 // Name: _getEventException
 // Dependencies: [5751, 566, 2]
 // Exports: default, getEventException

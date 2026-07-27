@@ -1,10 +1,10 @@
-// Module ID: 10937
-// Function ID: 84990
+// Module ID: 10938
+// Function ID: 84995
 // Name: openOAuth2Modal
-// Dependencies: [653, 10614, 675, 8138, 3828, 10938, 483, 4338, 9956, 1935, 8112, 2]
+// Dependencies: [653, 10615, 675, 8138, 3828, 10939, 483, 4338, 9956, 1935, 8112, 2]
 // Exports: installApplication, installPrivateChannelIntegration
 
-// Module 10937 (openOAuth2Modal)
+// Module 10938 (openOAuth2Modal)
 import { AnalyticEvents } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
 

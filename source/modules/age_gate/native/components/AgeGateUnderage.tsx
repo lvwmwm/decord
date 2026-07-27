@@ -1,10 +1,10 @@
-// Module ID: 14829
-// Function ID: 113114
+// Module ID: 14830
+// Function ID: 113119
 // Name: AgeGateUnderage
 // Dependencies: [31, 27, 653, 33, 4131, 689, 9125, 1456, 5087, 5093, 1212, 9150, 9153, 6727, 9149, 4127, 1921, 4544, 2]
 // Exports: default
 
-// Module 14829 (AgeGateUnderage)
+// Module 14830 (AgeGateUnderage)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";

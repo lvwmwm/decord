@@ -1,5 +1,5 @@
 // Module ID: 9720
-// Function ID: 75735
+// Function ID: 75736
 // Name: PremiumGiftDurationButton
 // Dependencies: [31, 27, 1852, 33, 4131, 689, 8736, 5164, 7578, 9647, 3849, 4127, 1212, 8737, 5450, 2]
 // Exports: default

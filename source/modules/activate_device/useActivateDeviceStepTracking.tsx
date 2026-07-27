@@ -1,10 +1,10 @@
-// Module ID: 12946
-// Function ID: 100495
+// Module ID: 12947
+// Function ID: 100500
 // Name: useActivateDeviceStepTracking
-// Dependencies: [31, 653, 8063, 12947, 675, 2]
+// Dependencies: [31, 653, 8063, 12948, 675, 2]
 // Exports: useActivateDeviceStepTracking
 
-// Module 12946 (useActivateDeviceStepTracking)
+// Module 12947 (useActivateDeviceStepTracking)
 import result from "result";
 import { AnalyticEvents } from "ME";
 

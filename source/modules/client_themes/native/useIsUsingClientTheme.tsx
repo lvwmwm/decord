@@ -1,5 +1,5 @@
 // Module ID: 8757
-// Function ID: 69303
+// Function ID: 69304
 // Name: useIsUsingClientTheme
 // Dependencies: [8758, 2]
 // Exports: default

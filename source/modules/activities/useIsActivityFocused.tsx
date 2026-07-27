@@ -1,10 +1,10 @@
-// Module ID: 10447
-// Function ID: 81014
+// Module ID: 10448
+// Function ID: 81019
 // Name: isActivityFocused
-// Dependencies: [4144, 1347, 10448, 566, 2]
+// Dependencies: [4144, 1347, 10449, 566, 2]
 // Exports: default
 
-// Module 10447 (isActivityFocused)
+// Module 10448 (isActivityFocused)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -18,7 +18,7 @@ function isActivityFocused(channelId) {
   let tmp3 = null != selectedParticipant && null != currentEmbeddedActivity;
   if (tmp3) {
     let compositeInstanceId;
-    let obj = require(10448) /* getEmbeddedActivityParticipantId */;
+    let obj = require(10449) /* getEmbeddedActivityParticipantId */;
     obj = { applicationId: currentEmbeddedActivity.applicationId };
     if (null != currentEmbeddedActivity) {
       compositeInstanceId = currentEmbeddedActivity.compositeInstanceId;

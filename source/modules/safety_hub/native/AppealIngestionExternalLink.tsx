@@ -1,10 +1,10 @@
-// Module ID: 11029
-// Function ID: 85800
+// Module ID: 11030
+// Function ID: 85805
 // Name: AppealIngestionExternalLink
 // Dependencies: [31, 27, 33, 4131, 689, 4661, 3828, 4127, 1273, 7644, 2]
 // Exports: default
 
-// Module 11029 (AppealIngestionExternalLink)
+// Module 11030 (AppealIngestionExternalLink)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

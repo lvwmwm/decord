@@ -1,5 +1,5 @@
 // Module ID: 9622
-// Function ID: 75094
+// Function ID: 75095
 // Name: getDeviceMediaPhotos
 // Dependencies: [27, 3, 1184, 477, 9623, 2]
 // Exports: default

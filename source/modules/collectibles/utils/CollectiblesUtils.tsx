@@ -1,5 +1,5 @@
 // Module ID: 5818
-// Function ID: 51092
+// Function ID: 51093
 // Name: constructGoLiveSource
 // Dependencies: [4186, 4228, 5819, 5820, 3801, 2]
 // Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl, useFetchFractionalPremiumInfo

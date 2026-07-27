@@ -1,5 +1,5 @@
 // Module ID: 5486
-// Function ID: 46848
+// Function ID: 46849
 // Name: useRoleIcon
 // Dependencies: [31, 1911, 1838, 33, 566, 5487, 5488, 1212, 2]
 // Exports: getRoleIcon, useRoleIcon

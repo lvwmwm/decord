@@ -1,5 +1,5 @@
 // Module ID: 9570
-// Function ID: 74681
+// Function ID: 74682
 // Name: StickerPackBanner
 // Dependencies: [31, 27, 33, 4467, 2]
 // Exports: default

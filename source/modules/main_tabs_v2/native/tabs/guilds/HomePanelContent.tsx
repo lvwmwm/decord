@@ -1,9 +1,9 @@
-// Module ID: 14867
-// Function ID: 113407
+// Module ID: 14868
+// Function ID: 113412
 // Name: HomePanelContent
-// Dependencies: [31, 27, 14861, 653, 33, 4131, 3988, 14864, 14860, 8758, 3835, 689, 3992, 14868, 2]
+// Dependencies: [31, 27, 14862, 653, 33, 4131, 3988, 14865, 14861, 8758, 3835, 689, 3992, 14869, 2]
 
-// Module 14867 (HomePanelContent)
+// Module 14868 (HomePanelContent)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import computeMaxX from "computeMaxX";
@@ -18,9 +18,9 @@ const memoResult = importAllResult.memo(() => {
   const tmp = callback();
   const MobileHomeDrawerExperiment = enableHome(3988).MobileHomeDrawerExperiment;
   enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
-  let obj = enableHome(14864);
+  let obj = enableHome(14865);
   const drawerOpen = obj.useDrawerOpen(enableHome);
-  const panelSpringTranslateX = isClientThemeOrCustomThemeActive.useContext(enableHome(14860).HomeDrawerStateContext).panelSpringTranslateX;
+  const panelSpringTranslateX = isClientThemeOrCustomThemeActive.useContext(enableHome(14861).HomeDrawerStateContext).panelSpringTranslateX;
   const tmp3 = token1((maxX) => maxX.maxX);
   const dependencyMap = tmp3;
   let obj1 = enableHome(8758);
@@ -65,7 +65,7 @@ const memoResult = importAllResult.memo(() => {
     items1[1] = tmp11;
     obj1.style = items1;
     obj3 = { enableHome };
-    obj1.children = jsx(panelSpringTranslateX(14868), { enableHome });
+    obj1.children = jsx(panelSpringTranslateX(14869), { enableHome });
     obj.children = tmp8(tmp10, obj1);
     return tmp8(tmp9, obj);
   }

@@ -1,10 +1,10 @@
-// Module ID: 14060
-// Function ID: 107647
+// Module ID: 14061
+// Function ID: 107652
 // Name: useYouBarTotalHeight
-// Dependencies: [14058, 14057, 14061, 2]
+// Dependencies: [14059, 14058, 14062, 2]
 // Exports: useYouBarTotalHeight
 
-// Module 14060 (useYouBarTotalHeight)
+// Module 14061 (useYouBarTotalHeight)
 import { YOU_BAR_HEIGHT } from "CONNECTION_BANNER_HEIGHT";
 
 const result = require("useConnectionBannerHeight").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarTotalHeight.tsx");
@@ -14,7 +14,7 @@ export const useYouBarTotalHeight = function useYouBarTotalHeight(arg0) {
   if (arg0 === undefined) {
     num = 0;
   }
-  const youBarBottomMargin = require(14057) /* useYouBarHorizontalMargin */.useYouBarBottomMargin();
-  const obj = require(14057) /* useYouBarHorizontalMargin */;
-  return youBarBottomMargin + YOU_BAR_HEIGHT + require(14061) /* useConnectionBannerHeight */.useConnectionBannerHeight() + num;
+  const youBarBottomMargin = require(14058) /* useYouBarHorizontalMargin */.useYouBarBottomMargin();
+  const obj = require(14058) /* useYouBarHorizontalMargin */;
+  return youBarBottomMargin + YOU_BAR_HEIGHT + require(14062) /* useConnectionBannerHeight */.useConnectionBannerHeight() + num;
 };

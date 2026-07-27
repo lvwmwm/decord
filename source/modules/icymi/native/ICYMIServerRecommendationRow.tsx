@@ -1,10 +1,10 @@
-// Module ID: 15301
-// Function ID: 116770
+// Module ID: 15314
+// Function ID: 116819
 // Name: CutoutGuildBanner
-// Dependencies: [57, 5, 31, 27, 4123, 1838, 8108, 653, 33, 15236, 689, 566, 1392, 1387, 7909, 5085, 5513, 8123, 3832, 1212, 5049, 4127, 4544, 15275, 9173, 2]
+// Dependencies: [57, 5, 31, 27, 4123, 1838, 8108, 653, 33, 15249, 689, 566, 1392, 1387, 7909, 5085, 5513, 8123, 3832, 1212, 5049, 4127, 4544, 15288, 9173, 2]
 // Exports: ICYMIServerRecommendationRow
 
-// Module 15301 (CutoutGuildBanner)
+// Module 15314 (CutoutGuildBanner)
 import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import result from "result";
@@ -179,7 +179,7 @@ export const ICYMIServerRecommendationRow = function ICYMIServerRecommendationRo
     const obj3 = { discoverableGuilds: stateFromStoresArray };
     items1[2] = callback3(RecommendedGuildsRow, obj3);
     obj.children = items1;
-    const items2 = [callback4(View, obj), callback3(require(15275) /* Separator */.Separator, {})];
+    const items2 = [callback4(View, obj), callback3(require(15288) /* Separator */.Separator, {})];
     obj.children = items2;
     tmp2 = callback4(closure_16, obj);
   }

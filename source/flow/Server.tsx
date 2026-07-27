@@ -1,5 +1,5 @@
 // Module ID: 1882
-// Function ID: 20976
+// Function ID: 20977
 // Name: PermissionOverwriteType
 // Dependencies: [2]
 

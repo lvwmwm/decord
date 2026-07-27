@@ -1,5 +1,5 @@
 // Module ID: 3488
-// Function ID: 26903
+// Function ID: 26904
 // Name: getSeconds
 // Dependencies: [3210, 3211]
 // Exports: default

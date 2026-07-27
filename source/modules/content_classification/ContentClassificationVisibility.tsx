@@ -1,10 +1,10 @@
-// Module ID: 11071
-// Function ID: 86026
+// Module ID: 11072
+// Function ID: 86031
 // Name: getContentClassificationVisibility
 // Dependencies: [1850, 5641, 5643, 566, 2]
 // Exports: useContentClassificationVisibility
 
-// Module 11071 (getContentClassificationVisibility)
+// Module 11072 (getContentClassificationVisibility)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

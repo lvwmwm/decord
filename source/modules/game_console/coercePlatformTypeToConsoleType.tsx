@@ -1,10 +1,10 @@
-// Module ID: 10740
-// Function ID: 83423
+// Module ID: 10741
+// Function ID: 83428
 // Name: coercePlatformTypeToConsoleType
 // Dependencies: [8877, 653, 2]
 // Exports: coerceConsoleTypeToPlatformType, coercePlatformTypeToConsoleType
 
-// Module 10740 (coercePlatformTypeToConsoleType)
+// Module 10741 (coercePlatformTypeToConsoleType)
 import { GameConsoleTypes } from "XBOX_URL_BASE";
 import { PlatformTypes } from "ME";
 

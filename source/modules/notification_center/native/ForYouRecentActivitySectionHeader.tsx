@@ -1,10 +1,10 @@
-// Module ID: 15220
-// Function ID: 115921
+// Module ID: 15233
+// Function ID: 115970
 // Name: ForYouRecentActivitySectionHeader
 // Dependencies: [31, 27, 33, 4131, 689, 4127, 1212, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 15220 (ForYouRecentActivitySectionHeader)
+// Module 15233 (ForYouRecentActivitySectionHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

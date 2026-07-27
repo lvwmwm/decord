@@ -1,5 +1,5 @@
 // Module ID: 4121
-// Function ID: 34109
+// Function ID: 34110
 // Name: combineAndInjectMentionRule
 // Dependencies: [4122, 4565, 22, 4566, 7709, 2]
 

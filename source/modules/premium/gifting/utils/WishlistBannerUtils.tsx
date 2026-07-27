@@ -1,5 +1,5 @@
 // Module ID: 9691
-// Function ID: 75503
+// Function ID: 75504
 // Name: getBannerMode
 // Dependencies: [31, 1212, 8605, 5609, 2]
 // Exports: useWishlistBannerConfig

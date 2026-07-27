@@ -1,5 +1,5 @@
 // Module ID: 9896
-// Function ID: 76673
+// Function ID: 76674
 // Name: showVotesForAnswer
 // Dependencies: [4099, 9897, 1935, 2]
 // Exports: showVotesForAnswer

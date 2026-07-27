@@ -1,5 +1,5 @@
 // Module ID: 9637
-// Function ID: 75142
+// Function ID: 75143
 // Name: openGiftModal
 // Dependencies: [4338, 9638, 1935, 2]
 // Exports: openGiftModal

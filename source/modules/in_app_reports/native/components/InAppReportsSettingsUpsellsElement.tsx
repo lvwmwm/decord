@@ -1,10 +1,10 @@
-// Module ID: 12344
-// Function ID: 96045
+// Module ID: 12345
+// Function ID: 96050
 // Name: SettingsUpsellsTableRow
-// Dependencies: [57, 31, 27, 1348, 653, 33, 4131, 689, 4560, 7637, 12338, 8943, 566, 7645, 5501, 1212, 4127, 6554, 4325, 2]
+// Dependencies: [57, 31, 27, 1348, 653, 33, 4131, 689, 4560, 7637, 12339, 8943, 566, 7645, 5501, 1212, 4127, 6554, 4325, 2]
 // Exports: default
 
-// Module 12344 (SettingsUpsellsTableRow)
+// Module 12345 (SettingsUpsellsTableRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -43,7 +43,7 @@ function SettingsUpsellsTableRow(arg0) {
     },
     icon: callback2(require(8943) /* SettingsIcon */.SettingsIcon, {})
   };
-  return callback2(importDefault(12338), obj);
+  return callback2(importDefault(12339), obj);
 }
 ({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = ME);
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);

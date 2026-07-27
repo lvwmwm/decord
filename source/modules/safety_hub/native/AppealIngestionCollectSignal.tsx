@@ -1,10 +1,10 @@
-// Module ID: 11030
-// Function ID: 85803
+// Module ID: 11031
+// Function ID: 85808
 // Name: AppealSignalRadioRow
-// Dependencies: [31, 27, 6699, 33, 4131, 689, 3849, 7575, 6698, 11014, 686, 4099, 11031, 1935, 1212, 11024, 4127, 2]
+// Dependencies: [31, 27, 6699, 33, 4131, 689, 3849, 7575, 6698, 11015, 686, 4099, 11032, 1935, 1212, 11025, 4127, 2]
 // Exports: default
 
-// Module 11030 (AppealSignalRadioRow)
+// Module 11031 (AppealSignalRadioRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import SafetyHubLinks from "SafetyHubLinks";
@@ -77,13 +77,13 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
   }
   const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  let obj = isDsaEligible(11014);
+  let obj = isDsaEligible(11015);
   const dependencyMap = obj.useSafetyHubAppealSignal();
   const intl = isDsaEligible(1212).intl;
   const intl2 = isDsaEligible(1212).intl;
   const stringResult = intl.string(isDsaEligible(1212).t["C5q+pW"]);
   obj = {};
-  const items = [callback(isDsaEligible(11024).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(isDsaEligible(1212).t.VEcRhw) }), ];
+  const items = [callback(isDsaEligible(11025).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(isDsaEligible(1212).t.VEcRhw) }), ];
   obj = { style: tmp.container };
   const obj1 = { style: tmp.form };
   const obj2 = { sectionBodyStyle: tmp.formSection, accessibilityRole: "radiogroup", children: closure_5.map((signal) => outer1_6(outer1_9, { signal, selected: signal === closure_2, rowStyle: tmp.formRow, onSelect: handleAppealSignalSelect }, "formrow-" + arg1)) };
@@ -98,5 +98,5 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
   obj.children = callback2(isDsaEligible(7575).Form, obj1);
   items[1] = callback(handleAppealSignalSelect, obj);
   obj.children = items;
-  return callback2(isDsaEligible(11024).AppealIngestionModalScreen, obj);
+  return callback2(isDsaEligible(11025).AppealIngestionModalScreen, obj);
 };

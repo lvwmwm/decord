@@ -1,5 +1,5 @@
 // Module ID: 5558
-// Function ID: 47223
+// Function ID: 47224
 // Name: getDistanceForDirection
 // Dependencies: [5557]
 

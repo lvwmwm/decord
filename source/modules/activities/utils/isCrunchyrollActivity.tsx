@@ -1,5 +1,5 @@
 // Module ID: 8117
-// Function ID: 64691
+// Function ID: 64692
 // Name: isCrunchyrollActivity
 // Dependencies: [8111, 2]
 // Exports: default

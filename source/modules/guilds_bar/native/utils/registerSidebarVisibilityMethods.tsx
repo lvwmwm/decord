@@ -1,10 +1,10 @@
-// Module ID: 14948
-// Function ID: 113973
+// Module ID: 14949
+// Function ID: 113978
 // Name: registerGuildVisibilityMethod
 // Dependencies: [9402, 1838, 4971, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 14948 (registerGuildVisibilityMethod)
+// Module 14949 (registerGuildVisibilityMethod)
 import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

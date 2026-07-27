@@ -1,11 +1,11 @@
 // Module ID: 15137
-// Function ID: 115217
+// Function ID: 115221
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 15137 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/tabs/guilds/empty_states/images", width: 32, height: 32, scales: [2, 3, 4], hash: "c33937cb1ecf8da1cf6ed34f37467be9", name: "ic-customize", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 311, height: 205.5, scales: [2, 3], hash: "020c495593a12ad5f00af9becbc3507d", name: "premium_role_unavailable", type: "png" };
 
 export default registerAsset.registerAsset(obj);

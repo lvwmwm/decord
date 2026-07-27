@@ -1,5 +1,5 @@
 // Module ID: 9088
-// Function ID: 71478
+// Function ID: 71479
 // Name: _fetchGuildJoinRequests
 // Dependencies: [5, 1352, 5686, 3949, 653, 3951, 686, 507, 6125, 4471, 1212, 4945, 2]
 

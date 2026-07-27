@@ -1,5 +1,5 @@
 // Module ID: 10043
-// Function ID: 77716
+// Function ID: 77717
 // Name: getMonths
 // Dependencies: [57, 1348, 1908, 3768, 1907, 3971, 1850, 10044, 10045, 653, 3713, 22, 1212, 4321, 3970, 10042, 10046, 5046, 4975, 6111, 10047, 10048, 2]
 // Exports: buildCrossDMSearchTokensConfig, getLocalizedAuthorTypeAnswer, getLocalizedHasAnswer, getRandomDateShortcut, isMeAutcompleteAnswer, isSearchFilterTokenType, isValidFilterAnswerForSubmit, rebuildSearchTokenConfigs

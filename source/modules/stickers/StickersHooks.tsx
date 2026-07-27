@@ -1,5 +1,5 @@
 // Module ID: 9557
-// Function ID: 74545
+// Function ID: 74546
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 57, 31, 1838, 3948, 4971, 1850, 5035, 5036, 653, 566, 9558, 3804, 4467, 8204, 4800, 4023, 1212, 3764, 9541, 9559, 2]
 // Exports: useFetchStickerPack, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid

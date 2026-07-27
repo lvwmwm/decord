@@ -1,7 +1,7 @@
 // Module ID: 6653
-// Function ID: 58848
+// Function ID: 58849
 // Name: connectToStage
-// Dependencies: [5, 4150, 1348, 1838, 3759, 1907, 1356, 6654, 11466, 5049, 12351, 12352, 4945, 4195, 4310, 12354, 2]
+// Dependencies: [5, 4150, 1348, 1838, 3759, 1907, 1356, 6654, 11467, 5049, 12352, 12353, 4945, 4195, 4310, 12355, 2]
 // Exports: connectOrLurkStage, showUserProfile
 
 // Module 6653 (connectToStage)
@@ -41,7 +41,7 @@ function connectToStage(channel, flag) {
       return false;
     }
   }
-  let obj = importDefault(12352);
+  let obj = importDefault(12353);
   obj.initialize();
   const voiceChannel = importDefault(4945).selectVoiceChannel(channel.id);
   if (store.getVoiceChannelId() !== channel.id) {
@@ -74,8 +74,8 @@ function connectAndOpen(channel, flag) {
   const voiceChannelId = store.getVoiceChannelId();
   let result = !flag3 && voiceChannelId !== channel.id;
   if (result) {
-    result = _require(12354).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12354);
+    result = _require(12355).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12355);
   }
   if (result) {
     result = flag2(6654).showChannelChangeConfirmationAlert(channel, () => {

@@ -1,9 +1,9 @@
-// Module ID: 11418
-// Function ID: 88744
+// Module ID: 11419
+// Function ID: 88749
 // Name: num2
 // Dependencies: [31, 27, 4123, 5188, 1853, 33, 4131, 477, 689, 566, 4661, 5150, 1392, 9272, 1450, 3776, 7691, 9268, 6023, 6519, 2]
 
-// Module 11418 (num2)
+// Module 11419 (num2)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,7 +1,7 @@
 // Module ID: 6131
-// Function ID: 55000
+// Function ID: 55001
 // Name: getIsPrivate
-// Dependencies: [57, 5, 31, 6013, 1194, 1348, 4469, 4350, 5918, 1211, 653, 4124, 5996, 5914, 6132, 1212, 6133, 21, 507, 6036, 6134, 5915, 1360, 4667, 6135, 6026, 4325, 5685, 4471, 686, 3977, 664, 5987, 12543, 2]
+// Dependencies: [57, 5, 31, 6013, 1194, 1348, 4469, 4350, 5918, 1211, 653, 4124, 5996, 5914, 6132, 1212, 6133, 21, 507, 6036, 6134, 5915, 1360, 4667, 6135, 6026, 4325, 5685, 4471, 686, 3977, 664, 5987, 12544, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
 // Module 6131 (getIsPrivate)

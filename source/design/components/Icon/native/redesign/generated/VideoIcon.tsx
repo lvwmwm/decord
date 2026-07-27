@@ -1,5 +1,5 @@
 // Module ID: 6580
-// Function ID: 58395
+// Function ID: 58396
 // Name: VideoIcon
 // Dependencies: [31, 33, 689, 3834, 6581, 2]
 // Exports: VideoIcon

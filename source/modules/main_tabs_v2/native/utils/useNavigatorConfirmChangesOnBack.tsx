@@ -1,5 +1,5 @@
 // Module ID: 9037
-// Function ID: 71067
+// Function ID: 71068
 // Name: useNavigatorConfirmChangesOnBack
 // Dependencies: [31, 27, 653, 9038, 9039, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 6926
-// Function ID: 59624
+// Function ID: 59625
 // Name: DiscordQuestsLockupLogo
 // Dependencies: [27, 33, 689, 3835, 6927, 2]
 // Exports: DiscordQuestsLockupLogo

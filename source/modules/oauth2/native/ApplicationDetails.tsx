@@ -1,5 +1,5 @@
 // Module ID: 8951
-// Function ID: 70674
+// Function ID: 70675
 // Name: ApplicationDetailsEntry
 // Dependencies: [31, 27, 33, 4131, 689, 8884, 8952, 8954, 21, 8882, 4075, 1212, 4653, 8886, 8956, 4095, 8112, 8958, 8960, 4127, 2]
 // Exports: default

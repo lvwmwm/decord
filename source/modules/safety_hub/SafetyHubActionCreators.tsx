@@ -1,10 +1,10 @@
-// Module ID: 11015
-// Function ID: 85662
+// Module ID: 11016
+// Function ID: 85667
 // Name: _getSafetyHubData
-// Dependencies: [5, 1194, 11009, 6699, 653, 686, 507, 4318, 6698, 2]
+// Dependencies: [5, 1194, 11010, 6699, 653, 686, 507, 4318, 6698, 2]
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification
 
-// Module 11015 (_getSafetyHubData)
+// Module 11016 (_getSafetyHubData)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

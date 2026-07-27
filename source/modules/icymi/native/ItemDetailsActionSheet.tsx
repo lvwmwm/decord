@@ -1,10 +1,10 @@
-// Module ID: 15242
-// Function ID: 116070
+// Module ID: 15255
+// Function ID: 116119
 // Name: ItemDetailsActionSheet
-// Dependencies: [31, 27, 1348, 1838, 8108, 33, 4131, 689, 566, 4321, 5089, 5513, 1273, 8122, 5498, 10311, 15243, 5501, 5164, 2]
+// Dependencies: [31, 27, 1348, 1838, 8108, 33, 4131, 689, 566, 4321, 5089, 5513, 1273, 8122, 5498, 10312, 15256, 5501, 5164, 2]
 // Exports: default
 
-// Module 15242 (ItemDetailsActionSheet)
+// Module 15255 (ItemDetailsActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -73,11 +73,11 @@ export default function ItemDetailsActionSheet(arg0) {
     str = name;
   }
   obj2.subtitle = str;
-  obj1.header = callback(require(10311) /* ActionSheetIconHeader */.ActionSheetIconHeader, obj2);
+  obj1.header = callback(require(10312) /* ActionSheetIconHeader */.ActionSheetIconHeader, obj2);
   let tmp22 = result;
   if (result) {
     const obj3 = { channel: stateFromStores, guild: stateFromStores1 };
-    tmp22 = callback(require(15243) /* customScoreToIndex */.ChannelScoreSettings, obj3);
+    tmp22 = callback(require(15256) /* customScoreToIndex */.ChannelScoreSettings, obj3);
   }
   const items3 = [tmp22, , ];
   let tmp27Result = null != stateFromStores2 && null != stateFromStores1;
@@ -89,7 +89,7 @@ export default function ItemDetailsActionSheet(arg0) {
     }
     const items4 = [result, ];
     const obj6 = { guild: stateFromStores1 };
-    items4[1] = callback(require(15243) /* customScoreToIndex */.GuildScoreSettings, obj6);
+    items4[1] = callback(require(15256) /* customScoreToIndex */.GuildScoreSettings, obj6);
     obj4.children = items4;
     tmp27Result = closure_9(closure_8, obj4);
     const tmp27 = closure_9;

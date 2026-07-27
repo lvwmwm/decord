@@ -1,5 +1,5 @@
 // Module ID: 10125
-// Function ID: 78380
+// Function ID: 78381
 // Name: useAnnounceAsyncCompletion
 // Dependencies: [31, 27, 3977, 477, 4529, 2]
 // Exports: default

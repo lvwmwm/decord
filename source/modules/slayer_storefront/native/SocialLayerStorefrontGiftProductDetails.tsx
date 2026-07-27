@@ -1,5 +1,5 @@
 // Module ID: 9705
-// Function ID: 75613
+// Function ID: 75614
 // Name: SocialLayerStorefrontGiftProductDetails
 // Dependencies: [31, 27, 653, 33, 4131, 689, 5468, 9696, 1392, 7991, 4127, 2]
 // Exports: default

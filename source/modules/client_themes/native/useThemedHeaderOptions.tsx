@@ -1,10 +1,10 @@
-// Module ID: 15491
-// Function ID: 119120
+// Module ID: 15504
+// Function ID: 119169
 // Name: headerBackground
 // Dependencies: [31, 33, 4663, 8757, 1557, 477, 4111, 2]
 // Exports: default
 
-// Module 15491 (headerBackground)
+// Module 15504 (headerBackground)
 import result from "result";
 import { jsx } from "jsxProd";
 

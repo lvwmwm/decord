@@ -1,10 +1,10 @@
-// Module ID: 16076
-// Function ID: 124430
+// Module ID: 16088
+// Function ID: 124477
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [31, 27, 1838, 33, 4131, 689, 566, 16073, 16077, 5498, 10376, 4127, 1212, 5513, 4544, 6449, 3804, 3832, 10294, 4099, 12977, 2]
+// Dependencies: [31, 27, 1838, 33, 4131, 689, 566, 16085, 16089, 5498, 10377, 4127, 1212, 5513, 4544, 6449, 3804, 3832, 10295, 4099, 12978, 2]
 // Exports: default
 
-// Module 16076 (DmSettingsUpsellActionSheet)
+// Module 16088 (DmSettingsUpsellActionSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -49,7 +49,7 @@ export default function DmSettingsUpsellActionSheet(guildId) {
   if (null != stateFromStores) {
     obj = { startExpanded: true };
     obj = { style: tmp.container };
-    const obj1 = { source: stateFromStores(10376), style: tmp.headerImage };
+    const obj1 = { source: stateFromStores(10377), style: tmp.headerImage };
     const items2 = [callback(closure_5, obj1), , , , , , ];
     let obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.title };
     let intl = guildId(1212).intl;

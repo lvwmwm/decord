@@ -1,10 +1,10 @@
-// Module ID: 13000
-// Function ID: 100774
+// Module ID: 13001
+// Function ID: 100779
 // Name: items
-// Dependencies: [31, 33, 491, 12987, 8463, 2]
+// Dependencies: [31, 33, 491, 12988, 8463, 2]
 // Exports: GuildBadgeForce
 
-// Module 13000 (items)
+// Module 13001 (items)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -38,7 +38,7 @@ export const GuildBadgeForce = function GuildBadgeForce(width) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
   const memo = React.useMemo(() => "badge-force-gradient-" + outer1_0(outer1_1[2]).v4(), []);
-  let obj1 = require(12987) /* getTransformedBadgeColors */;
+  let obj1 = require(12988) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_5, primaryTintColor, primaryTintLuminances: closure_7, primaryLuminanceWeights: items, secondaryBaseColors: closure_6, secondaryTintColor, secondaryTintLuminances: closure_9, secondaryLuminanceWeights: items1 };
   const transformedBadgeColors = obj1.getTransformedBadgeColors(obj);
   ({ primaryColorsTransformed, secondaryColorsTransformed } = transformedBadgeColors);

@@ -1,10 +1,10 @@
-// Module ID: 12133
-// Function ID: 95063
+// Module ID: 12134
+// Function ID: 95068
 // Name: useAddToWishlistGridItems
-// Dependencies: [31, 1852, 9687, 12134, 12108, 2]
+// Dependencies: [31, 1852, 9687, 12135, 12109, 2]
 // Exports: useAddToWishlistGridItems
 
-// Module 12133 (useAddToWishlistGridItems)
+// Module 12134 (useAddToWishlistGridItems)
 import result from "result";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";
 

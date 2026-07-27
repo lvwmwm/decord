@@ -1,5 +1,5 @@
 // Module ID: 5769
-// Function ID: 50520
+// Function ID: 50521
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 4130, 1922, 5770, 5785, 5786, 5787, 5788, 5792, 5772, 5798, 5799, 655, 653, 5815, 5816, 3983, 686, 5817, 5818, 5823, 507, 4030, 5824, 5819, 5782, 5825, 5826, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch

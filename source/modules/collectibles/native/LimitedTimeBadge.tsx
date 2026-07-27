@@ -1,5 +1,5 @@
 // Module ID: 8636
-// Function ID: 68627
+// Function ID: 68628
 // Name: LimitedTimeBadge
 // Dependencies: [31, 27, 1922, 1278, 33, 4131, 689, 1212, 566, 3977, 6180, 4127, 2]
 // Exports: default

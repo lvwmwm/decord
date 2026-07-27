@@ -1,5 +1,5 @@
 // Module ID: 9787
-// Function ID: 76044
+// Function ID: 76045
 // Name: measureView
 // Dependencies: [2]
 // Exports: measureViewRef, measureViewRefInView, measureViewRefInWindow

@@ -1,9 +1,9 @@
-// Module ID: 10813
-// Function ID: 83886
+// Module ID: 10814
+// Function ID: 83891
 // Name: getMatchData
 // Dependencies: [653, 3953, 3966, 677, 682, 2]
 
-// Module 10813 (getMatchData)
+// Module 10814 (getMatchData)
 import ME from "ME";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 

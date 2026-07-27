@@ -1,10 +1,10 @@
-// Module ID: 16519
-// Function ID: 128768
+// Module ID: 16531
+// Function ID: 128815
 // Name: GuildPremiumRoleSubscribeButton
 // Dependencies: [31, 33, 4131, 9296, 1212, 2]
 // Exports: GuildPremiumRoleSubscribeButton
 
-// Module 16519 (GuildPremiumRoleSubscribeButton)
+// Module 16531 (GuildPremiumRoleSubscribeButton)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

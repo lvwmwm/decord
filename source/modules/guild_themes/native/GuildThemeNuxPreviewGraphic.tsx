@@ -1,10 +1,10 @@
-// Module ID: 15051
-// Function ID: 114681
+// Module ID: 15063
+// Function ID: 114727
 // Name: GuildThemeNuxPreviewGraphic
-// Dependencies: [31, 27, 33, 4131, 689, 15052, 2]
+// Dependencies: [31, 27, 33, 4131, 689, 15064, 2]
 // Exports: default
 
-// Module 15051 (GuildThemeNuxPreviewGraphic)
+// Module 15063 (GuildThemeNuxPreviewGraphic)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -27,6 +27,6 @@ export default function GuildThemeNuxPreviewGraphic(arg0) {
     tmp4 = themeSettings;
   }
   obj.themeSettings = tmp4;
-  obj.children = jsx(importDefault(15052), {});
+  obj.children = jsx(importDefault(15064), {});
   return <View />;
 };

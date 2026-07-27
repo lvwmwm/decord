@@ -1,5 +1,5 @@
 // Module ID: 7616
-// Function ID: 60843
+// Function ID: 60844
 // Name: RestrictedUser
 // Dependencies: [57, 31, 27, 3768, 4955, 4948, 33, 4131, 689, 566, 1212, 1273, 7617, 4127, 4099, 7618, 5121, 4544, 5187, 7619, 2]
 // Exports: default

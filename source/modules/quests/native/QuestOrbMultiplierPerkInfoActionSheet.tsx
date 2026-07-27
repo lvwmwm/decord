@@ -1,10 +1,10 @@
-// Module ID: 14123
-// Function ID: 108588
+// Module ID: 14124
+// Function ID: 108593
 // Name: Footer
-// Dependencies: [31, 27, 653, 33, 4131, 689, 4099, 6554, 6156, 3828, 1921, 4544, 1212, 1557, 5446, 3843, 4127, 9423, 3041, 5187, 14120, 2]
+// Dependencies: [31, 27, 653, 33, 4131, 689, 4099, 6554, 6156, 3828, 1921, 4544, 1212, 1557, 5446, 3843, 4127, 9423, 3041, 5187, 14121, 2]
 // Exports: default
 
-// Module 14123 (Footer)
+// Module 14124 (Footer)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -156,6 +156,6 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
   }, items1);
   obj = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles: closure_11 };
   obj = { visible: tmp2, children: callback(SheetContent, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result }) };
-  obj.children = callback(orbMultiplierEligibility(14120), obj);
+  obj.children = callback(orbMultiplierEligibility(14121), obj);
   return callback(multiplier(5187).BottomSheet, obj);
 };

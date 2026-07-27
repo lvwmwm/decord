@@ -1,10 +1,10 @@
-// Module ID: 13546
-// Function ID: 104264
+// Module ID: 13547
+// Function ID: 104269
 // Name: useRequestGatewaySocket
 // Dependencies: [31, 9413, 652, 2]
 // Exports: useRequestGatewaySocket
 
-// Module 13546 (useRequestGatewaySocket)
+// Module 13547 (useRequestGatewaySocket)
 import result from "result";
 
 const result = require("addToken").fileFinishedImporting("modules/gateway/useRequestGatewaySocket.tsx");

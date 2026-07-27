@@ -1,10 +1,10 @@
-// Module ID: 10659
-// Function ID: 83090
+// Module ID: 10660
+// Function ID: 83095
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [31, 27, 10173, 653, 33, 4131, 689, 4661, 3977, 4534, 1273, 2]
+// Dependencies: [31, 27, 10174, 653, 33, 4131, 689, 4661, 3977, 4534, 1273, 2]
 // Exports: default
 
-// Module 10659 (ChannelCallNavigatorIcon)
+// Module 10660 (ChannelCallNavigatorIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetFocusTimer } from "resetFocusTimer";

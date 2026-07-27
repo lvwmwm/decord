@@ -1,5 +1,5 @@
 // Module ID: 4714
-// Function ID: 41007
+// Function ID: 41008
 // Name: _shouldConvertToWebP
 // Dependencies: [5, 3, 4715, 1193, 2]
 // Exports: maybeConvertToWebP

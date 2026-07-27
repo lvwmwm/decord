@@ -1,5 +1,5 @@
 // Module ID: 9257
-// Function ID: 72568
+// Function ID: 72569
 // Name: PremiumGroupWordmark
 // Dependencies: [31, 33, 3835, 689, 8463, 2]
 // Exports: default

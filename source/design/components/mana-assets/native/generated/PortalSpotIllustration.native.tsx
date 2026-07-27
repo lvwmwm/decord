@@ -1,5 +1,5 @@
 // Module ID: 7330
-// Function ID: 60230
+// Function ID: 60231
 // Name: PortalSpotIllustration
 // Dependencies: [33, 5085, 7331, 2]
 // Exports: PortalSpotIllustration

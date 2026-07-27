@@ -1,5 +1,5 @@
 // Module ID: 8055
-// Function ID: 64061
+// Function ID: 64062
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [31, 27, 653, 4318, 1360, 5849, 5852, 1449, 7934, 7817, 4465, 7670, 4354, 1882, 7830, 7846, 1327, 8056, 668, 3831, 8057, 4472, 1212, 8058, 2]
 // Exports: downloadMediaAsset, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedImageSource, setMediaSourcePortal, supportOverlayVideoControls, useSelectedMediaSource

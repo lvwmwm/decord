@@ -1,5 +1,5 @@
 // Module ID: 7306
-// Function ID: 60194
+// Function ID: 60195
 // Name: NitroWumpusPinkSpotIllustration
 // Dependencies: [33, 5085, 7307, 2]
 // Exports: NitroWumpusPinkSpotIllustration

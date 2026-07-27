@@ -1,5 +1,5 @@
 // Module ID: 8851
-// Function ID: 70117
+// Function ID: 70118
 // Name: ClearFriendRequestFilters
 // Dependencies: [2]
 

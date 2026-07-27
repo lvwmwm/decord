@@ -1,9 +1,9 @@
-// Module ID: 13184
-// Function ID: 101564
+// Module ID: 13185
+// Function ID: 101569
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 3, 587, 13185, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 3, 587, 13186, 2]
 
-// Module 13184 (_isNativeReflectConstruct)
+// Module 13185 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import timestamp from "timestamp";
 import Storage from "Storage";

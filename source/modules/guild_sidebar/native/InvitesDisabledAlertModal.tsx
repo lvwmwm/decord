@@ -1,10 +1,10 @@
-// Module ID: 11388
-// Function ID: 88490
+// Module ID: 11389
+// Function ID: 88495
 // Name: InvitesDisabledAlertModal
 // Dependencies: [31, 33, 4476, 1212, 4476, 2]
 // Exports: default
 
-// Module 11388 (InvitesDisabledAlertModal)
+// Module 11389 (InvitesDisabledAlertModal)
 import "result";
 import { jsx } from "jsxProd";
 

@@ -1,10 +1,10 @@
-// Module ID: 11565
-// Function ID: 89973
+// Module ID: 11566
+// Function ID: 89978
 // Name: _launchGuildBoostFlowOrAlert
 // Dependencies: [5, 3783, 653, 1852, 4472, 1212, 675, 4452, 6495, 6489, 3777, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 11565 (_launchGuildBoostFlowOrAlert)
+// Module 11566 (_launchGuildBoostFlowOrAlert)
 import getSystemLocale from "getSystemLocale";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

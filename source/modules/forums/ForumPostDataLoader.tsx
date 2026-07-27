@@ -1,5 +1,5 @@
 // Module ID: 6012
-// Function ID: 53617
+// Function ID: 53618
 // Name: _shouldRequestFirstMessage
 // Dependencies: [5, 6, 7, 1348, 6013, 6001, 6017, 653, 22, 21, 566, 507, 686, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage

@@ -1,10 +1,10 @@
-// Module ID: 15955
-// Function ID: 123292
+// Module ID: 15967
+// Function ID: 123339
 // Name: MediaPlaybackPanelController
-// Dependencies: [57, 31, 4123, 1347, 4343, 13523, 5660, 9977, 33, 3992, 1557, 15750, 13522, 566, 15956, 2]
+// Dependencies: [57, 31, 4123, 1347, 4343, 13524, 5660, 9977, 33, 3992, 1557, 15762, 13523, 566, 15968, 2]
 // Exports: default
 
-// Module 15955 (MediaPlaybackPanelController)
+// Module 15967 (MediaPlaybackPanelController)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -106,5 +106,5 @@ export default function MediaPlaybackPanelController(children) {
     }
     const result = canShowPIP.set(tmp2);
   }, items2);
-  return first(importDefault(15956).Provider, { value: callback(React.useState(() => ({ mode, setMode: closure_12, morphablePanelMode: closure_1, wrapperDimensions: closure_2, useReducedMotion: _slicedToArray, pipState: result, pipAvoidanceSpecs: _isNativeReflectConstruct, dismissToPipGestureRef: closure_10, dismissPanel: closure_13, scrollPosition: _createForOfIteratorHelperLoose, canShowPIP, lockScrolling: closure_8, wrapperOffset: closure_9 })), 1)[0], children: children.children });
+  return first(importDefault(15968).Provider, { value: callback(React.useState(() => ({ mode, setMode: closure_12, morphablePanelMode: closure_1, wrapperDimensions: closure_2, useReducedMotion: _slicedToArray, pipState: result, pipAvoidanceSpecs: _isNativeReflectConstruct, dismissToPipGestureRef: closure_10, dismissPanel: closure_13, scrollPosition: _createForOfIteratorHelperLoose, canShowPIP, lockScrolling: closure_8, wrapperOffset: closure_9 })), 1)[0], children: children.children });
 };

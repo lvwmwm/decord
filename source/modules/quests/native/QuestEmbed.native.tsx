@@ -1,10 +1,10 @@
-// Module ID: 12301
-// Function ID: 95861
+// Module ID: 12302
+// Function ID: 95866
 // Name: buildBaseEmbedProps
-// Dependencies: [27, 1278, 5932, 4977, 653, 5969, 477, 1212, 5955, 10904, 4980, 3977, 9415, 1553, 12302, 5930, 5949, 5953, 7666, 2]
+// Dependencies: [27, 1278, 5932, 4977, 653, 5969, 477, 1212, 5955, 10905, 4980, 3977, 9415, 1553, 12303, 5930, 5949, 5953, 7666, 2]
 // Exports: createQuestsEmbed
 
-// Module 12301 (buildBaseEmbedProps)
+// Module 12302 (buildBaseEmbedProps)
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -66,7 +66,7 @@ function buildSupportedOnMobileEmbedBodyText(quest) {
     obj.thirdPartyTaskDetails = tmp;
     obj.withoutMarkdown = true;
     obj.currentUser = quest.currentUser;
-    return require(10904) /* formatWithOrWithoutMarkdown */.getQuestsInstructionsToWinReward(obj);
+    return require(10905) /* formatWithOrWithoutMarkdown */.getQuestsInstructionsToWinReward(obj);
   }
   date = new Date();
 }
@@ -85,7 +85,7 @@ function buildQuestsEmbedProps(currentUser) {
     const intl9 = require(1212) /* getSystemLocale */.intl;
     obj.bodyText = intl9.string(require(1212) /* getSystemLocale */.t.CXEb9p);
     obj.themeColors = themeColors;
-    obj.thumbnailUrl = Image.resolveAssetSource(importDefault(12302)).uri;
+    obj.thumbnailUrl = Image.resolveAssetSource(importDefault(12303)).uri;
     const merged = Object.assign(buildBaseEmbedProps(obj));
     const intl10 = require(1212) /* getSystemLocale */.intl;
     obj["acceptLabelText"] = intl10.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
@@ -114,7 +114,7 @@ function buildQuestsEmbedProps(currentUser) {
         obj2.bodyText = intl7.string(require(1212) /* getSystemLocale */.t.ii4mJo);
         obj2.themeColors = themeColors;
         questId = Image.resolveAssetSource;
-        obj2.thumbnailUrl = questId(importDefault(12302)).uri;
+        obj2.thumbnailUrl = questId(importDefault(12303)).uri;
         let tmp53 = buildBaseEmbedProps(obj2);
         const obj13 = require(5949) /* assignBillingSessionId */;
       } else {
@@ -125,7 +125,7 @@ function buildQuestsEmbedProps(currentUser) {
         const intl12 = require(1212) /* getSystemLocale */.intl;
         obj3.bodyText = intl12.string(require(1212) /* getSystemLocale */.t.Ow5AQI);
         obj3.themeColors = themeColors;
-        obj3.thumbnailUrl = Image.resolveAssetSource(importDefault(12302)).uri;
+        obj3.thumbnailUrl = Image.resolveAssetSource(importDefault(12303)).uri;
         tmp53 = buildBaseEmbedProps(obj3);
         const obj19 = require(5949) /* assignBillingSessionId */;
       }
@@ -191,7 +191,7 @@ function buildQuestsEmbedProps(currentUser) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         obj9.bodyText = intl2.string(require(1212) /* getSystemLocale */.t.NXrP3N);
         obj9.themeColors = themeColors;
-        obj9.thumbnailUrl = Image.resolveAssetSource(importDefault(12302)).uri;
+        obj9.thumbnailUrl = Image.resolveAssetSource(importDefault(12303)).uri;
         tmp17 = buildBaseEmbedProps(obj9);
       }
       obj18 = require(5953) /* _createForOfIteratorHelperLoose */;

@@ -1,10 +1,10 @@
-// Module ID: 15825
-// Function ID: 122181
+// Module ID: 15837
+// Function ID: 122228
 // Name: useSelfHasVideo
 // Dependencies: [4144, 1194, 4178, 566, 9981, 2]
 // Exports: default
 
-// Module 15825 (useSelfHasVideo)
+// Module 15837 (useSelfHasVideo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

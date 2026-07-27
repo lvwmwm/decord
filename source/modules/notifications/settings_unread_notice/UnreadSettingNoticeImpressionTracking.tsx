@@ -1,10 +1,10 @@
-// Module ID: 10395
-// Function ID: 80218
+// Module ID: 10396
+// Function ID: 80223
 // Name: UnreadSettingNoticeImpressionTracking
 // Dependencies: [8364, 480, 2]
 // Exports: default
 
-// Module 10395 (UnreadSettingNoticeImpressionTracking)
+// Module 10396 (UnreadSettingNoticeImpressionTracking)
 const result = require("set").fileFinishedImporting("modules/notifications/settings_unread_notice/UnreadSettingNoticeImpressionTracking.tsx");
 
 export default function UnreadSettingNoticeImpressionTracking(id) {

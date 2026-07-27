@@ -1,10 +1,10 @@
-// Module ID: 10641
-// Function ID: 83023
+// Module ID: 10642
+// Function ID: 83028
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 4178, 1907, 4147, 4952, 1353, 10639, 10209, 566, 4964, 4958, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 4178, 1907, 4147, 4952, 1353, 10640, 10210, 566, 4964, 4958, 5078, 2]
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 10641 (_isNativeReflectConstruct)
+// Module 10642 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import sortKey from "sortKey";

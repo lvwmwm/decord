@@ -1,9 +1,9 @@
-// Module ID: 16637
-// Function ID: 129810
+// Module ID: 16649
+// Function ID: 129857
 // Name: _isNativeReflectConstruct
 // Dependencies: [7, 6, 15, 17, 18, 653, 5716, 675, 5078, 2]
 
-// Module 16637 (_isNativeReflectConstruct)
+// Module 16649 (_isNativeReflectConstruct)
 import expandLocation from "expandLocation";
 import makeLogKey from "makeLogKey";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

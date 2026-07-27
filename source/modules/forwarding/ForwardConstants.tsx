@@ -1,5 +1,5 @@
 // Module ID: 9834
-// Function ID: 76273
+// Function ID: 76274
 // Name: MAX_DESTINATION_COUNT
 // Dependencies: [2]
 

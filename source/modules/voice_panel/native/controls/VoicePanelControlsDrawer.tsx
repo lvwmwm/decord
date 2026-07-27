@@ -1,9 +1,9 @@
-// Module ID: 15941
-// Function ID: 123172
+// Module ID: 15953
+// Function ID: 123219
 // Name: renderChat
-// Dependencies: [57, 31, 27, 9976, 33, 4131, 689, 5122, 4490, 11369, 9975, 3992, 11370, 4543, 9379, 15942, 15953, 2]
+// Dependencies: [57, 31, 27, 9976, 33, 4131, 689, 5122, 4490, 11370, 9975, 3992, 11371, 4543, 9379, 15954, 15965, 2]
 
-// Module 15941 (renderChat)
+// Module 15953 (renderChat)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -19,7 +19,7 @@ let closure_8;
 let closure_9;
 const require = arg1;
 function renderChat(shown) {
-  obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback(importDefault(11369), obj) };
+  obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback(importDefault(11370), obj) };
   obj = { shown };
   return callback(closure_6, obj);
 }

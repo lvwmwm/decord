@@ -1,5 +1,5 @@
 // Module ID: 9362
-// Function ID: 73077
+// Function ID: 73078
 // Name: EXPRESSION_FOOTER_HEIGHT
 // Dependencies: [31, 4996, 653, 1314, 33, 4131, 689, 3992, 675, 4100, 4101, 9363, 9375, 5217, 9376, 9173, 9378, 9380, 2]
 
@@ -207,8 +207,8 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
         tmp2 = categories;
         num = 7;
         obj = bottomSheetRef(categories[7]);
-        tmp3 = f73085;
-        tmp4 = obj.runOnJS(f73085)();
+        tmp3 = f73086;
+        tmp4 = obj.runOnJS(f73086)();
       }
       return;
     }

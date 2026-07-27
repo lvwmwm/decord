@@ -1,5 +1,5 @@
 // Module ID: 9607
-// Function ID: 74951
+// Function ID: 74952
 // Name: IMAGE_CAROUSEL_TILE_HEIGHT
 // Dependencies: [2]
 

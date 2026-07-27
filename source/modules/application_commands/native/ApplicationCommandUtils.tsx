@@ -1,10 +1,10 @@
-// Module ID: 11328
-// Function ID: 88074
+// Module ID: 11329
+// Function ID: 88079
 // Name: getApplicationCommandsIconSource
-// Dependencies: [4469, 4468, 4567, 1392, 11329, 11330, 5676, 1831, 9608, 6134, 2]
+// Dependencies: [4469, 4468, 4567, 1392, 11330, 11331, 5676, 1831, 9608, 6134, 2]
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 11328 (getApplicationCommandsIconSource)
+// Module 11329 (getApplicationCommandsIconSource)
 import { DraftType } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
@@ -18,9 +18,9 @@ export const getApplicationCommandsIconSource = function getApplicationCommandsI
   } else {
     const id = section.id;
     if (BuiltInSectionId.BUILT_IN === id) {
-      return importDefault(1392).makeSource(importDefault(11329));
-    } else if (BuiltInSectionId.FRECENCY === id) {
       return importDefault(1392).makeSource(importDefault(11330));
+    } else if (BuiltInSectionId.FRECENCY === id) {
+      return importDefault(1392).makeSource(importDefault(11331));
     } else {
       if (section.type === require(5676) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION) {
         let obj = importDefault(1392);

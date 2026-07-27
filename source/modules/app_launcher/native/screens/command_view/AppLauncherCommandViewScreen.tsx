@@ -1,10 +1,10 @@
-// Module ID: 11267
-// Function ID: 87561
+// Module ID: 11268
+// Function ID: 87566
 // Name: AppLauncherCommandViewFooter
-// Dependencies: [5, 57, 31, 27, 4123, 5669, 1911, 1455, 653, 1552, 33, 4131, 689, 11268, 566, 3992, 4132, 4135, 4100, 4555, 3975, 4545, 1212, 4077, 10861, 4325, 5159, 11269, 5676, 8063, 11162, 682, 11143, 11271, 1882, 7953, 11108, 11142, 1450, 11147, 9610, 11272, 9611, 4675, 1820, 4666, 11273, 7955, 5189, 4127, 11274, 11275, 11303, 1273, 44, 11239, 7962, 5674, 5677, 7963, 11304, 11305, 11224, 11225, 2]
+// Dependencies: [5, 57, 31, 27, 4123, 5669, 1911, 1455, 653, 1552, 33, 4131, 689, 11269, 566, 3992, 4132, 4135, 4100, 4555, 3975, 4545, 1212, 4077, 10862, 4325, 5159, 11270, 5676, 8063, 11163, 682, 11144, 11272, 1882, 7953, 11109, 11143, 1450, 11148, 9610, 11273, 9611, 4675, 1820, 4666, 11274, 7955, 5189, 4127, 11275, 11276, 11304, 1273, 44, 11240, 7962, 5674, 5677, 7963, 11305, 11306, 11225, 11226, 2]
 // Exports: default
 
-// Module 11267 (AppLauncherCommandViewFooter)
+// Module 11268 (AppLauncherCommandViewFooter)
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
 import batchUpdates from "batchUpdates";
@@ -1192,10 +1192,10 @@ function LoadingState() {
 }
 function NotFoundState(onPressBack) {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11162) /* handleApplicationSelected */;
+  let obj = require(11163) /* handleApplicationSelected */;
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(7955) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.COMMAND_NOT_FOUND);
   obj = { style: tmp.emptyStateContainer };
-  obj = { style: tmp.emptyState, lightSource: importDefault(11304), darkSource: importDefault(11305) };
+  obj = { style: tmp.emptyState, lightSource: importDefault(11305), darkSource: importDefault(11306) };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["pX/qb9"]);
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -1211,7 +1211,7 @@ function NotFoundState(onPressBack) {
 function NoPermsState(command) {
   command = command.command;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11162) /* handleApplicationSelected */;
+  let obj = require(11163) /* handleApplicationSelected */;
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(7955) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.COMMAND_NO_PERMISSIONS);
   obj = { style: tmp.emptyStateContainer };
   obj = { style: tmp.commandNameContainer };
@@ -1221,7 +1221,7 @@ function NoPermsState(command) {
   items[1] = callback4(require(4127) /* Text */.Text, obj2);
   obj.children = items;
   const items1 = [callback5(closure_7, obj), ];
-  const obj3 = { style: tmp.emptyState, lightSource: importDefault(11224), darkSource: importDefault(11225) };
+  const obj3 = { style: tmp.emptyState, lightSource: importDefault(11225), darkSource: importDefault(11226) };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj3.title = intl.string(require(1212) /* getSystemLocale */.t.TzufcR);
   const intl2 = require(1212) /* getSystemLocale */.intl;

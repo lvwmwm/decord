@@ -1,5 +1,5 @@
 // Module ID: 6436
-// Function ID: 57810
+// Function ID: 57811
 // Name: _asyncOptionalChain2
 // Dependencies: [5]
 // Exports: _asyncOptionalChain

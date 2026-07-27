@@ -1,10 +1,10 @@
-// Module ID: 14522
-// Function ID: 110928
+// Module ID: 14523
+// Function ID: 110933
 // Name: SampleCard
-// Dependencies: [31, 27, 33, 4131, 1273, 5513, 4542, 5166, 4127, 11952, 1395, 13152, 11647, 9869, 11648, 7909, 2]
+// Dependencies: [31, 27, 33, 4131, 1273, 5513, 4542, 5166, 4127, 11953, 1395, 13153, 11648, 9869, 11649, 7909, 2]
 // Exports: default
 
-// Module 14522 (SampleCard)
+// Module 14523 (SampleCard)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,5 +1,5 @@
 // Module ID: 8362
-// Function ID: 66898
+// Function ID: 66899
 // Name: useTieredTenureBadge
 // Dependencies: [5630, 1850, 3783, 1852, 566, 8363, 1873, 3713, 5651, 2]
 // Exports: useTieredTenureBadgeData, useTieredTenureBadgesFromSubscriptionData

@@ -1,10 +1,10 @@
-// Module ID: 10891
-// Function ID: 84570
+// Module ID: 10892
+// Function ID: 84575
 // Name: getSupportsRemoteJoin
 // Dependencies: [653, 5973, 2]
 // Exports: getSupportsRemoteJoin
 
-// Module 10891 (getSupportsRemoteJoin)
+// Module 10892 (getSupportsRemoteJoin)
 import { ActivityFlags } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/getSupportsRemoteJoin.tsx");

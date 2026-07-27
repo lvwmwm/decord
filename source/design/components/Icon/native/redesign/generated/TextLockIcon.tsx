@@ -1,5 +1,5 @@
 // Module ID: 4637
-// Function ID: 40334
+// Function ID: 40335
 // Name: TextLockIcon
 // Dependencies: [31, 33, 689, 3834, 4619, 2]
 // Exports: TextLockIcon

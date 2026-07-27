@@ -1,7 +1,7 @@
 // Module ID: 12029
-// Function ID: 93523
+// Function ID: 93517
 // Name: cached
-// Dependencies: [12015]
+// Dependencies: [12016]
 
 // Module 12029 (cached)
 const self = this;
@@ -63,12 +63,10 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "Zeichen", verb: "zu haben" }, file: { unit: "Bytes", verb: "zu haben" }, array: { unit: "Elemente", verb: "zu haben" }, set: { unit: "Elemente", verb: "zu haben" } };
-      let closure_1 = { regex: "Eingabe", email: "E-Mail-Adresse", url: "URL", emoji: "Emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO-Datum und -Uhrzeit", date: "ISO-Datum", time: "ISO-Uhrzeit", duration: "ISO-Dauer", ipv4: "IPv4-Adresse", ipv6: "IPv6-Adresse", cidrv4: "IPv4-Bereich", cidrv6: "IPv6-Bereich", base64: "Base64-codierter String", base64url: "Base64-URL-codierter String", json_string: "JSON-String", e164: "E.164-Nummer", jwt: "JWT", template_literal: "Eingabe" };
-      let closure_2 = { nan: "NaN", number: "Zahl", array: "Array" };
+      let closure_0 = { string: { unit: "tegn", verb: "havde" }, file: { unit: "bytes", verb: "havde" }, array: { unit: "elementer", verb: "indeholdt" }, set: { unit: "elementer", verb: "indeholdt" } };
+      let closure_1 = { regex: "input", email: "e-mailadresse", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dato- og klokkesl\u00E6t", date: "ISO-dato", time: "ISO-klokkesl\u00E6t", duration: "ISO-varighed", ipv4: "IPv4-omr\u00E5de", ipv6: "IPv6-omr\u00E5de", cidrv4: "IPv4-spektrum", cidrv6: "IPv6-spektrum", base64: "base64-kodet streng", base64url: "base64url-kodet streng", json_string: "JSON-streng", e164: "E.164-nummer", jwt: "JWT", template_literal: "input" };
+      let closure_2 = { nan: "NaN", string: "streng", number: "tal", boolean: "boolean", array: "liste", object: "objekt", set: "s\u00E6t", file: "fil" };
       return (code) => {
-        let minimum;
-        let origin;
         code = code.code;
         if ("invalid_type" === code) {
           let expected = closure_2[code.expected];
@@ -76,119 +74,126 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp51 = parsedTypeResult;
+          let tmp53 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp51 = tmp50;
+            tmp53 = tmp52;
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "Ung\u00FCltige Eingabe: erwartet instanceof " + code.expected + ", erhalten " + tmp51;
+            let combined = "Ugyldigt input: forventede instanceof " + code.expected + ", fik " + tmp53;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "Ung\u00FCltige Eingabe: erwartet " + expected + ", erhalten " + tmp51;
+            combined = "Ugyldigt input: forventede " + expected + ", fik " + tmp53;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Ung\u00FCltige Eingabe: erwartet " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Ugyldig v\u00E6rdi: forventede " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "Ung\u00FCltige Option: erwartet eine von " + closure_2.joinValues(code.values, "|");
+            combined1 = "Ugyldigt valg: forventede en af f\u00F8lgende " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str33 = "<";
+          let str35 = "<";
           if (code.inclusive) {
-            str33 = "<=";
+            str35 = "<=";
           }
           const tmp26 = getSizing(code.origin);
-          const origin2 = code.origin;
-          let str34 = "Wert";
+          let origin2 = closure_2[code.origin];
+          if (null == origin2) {
+            origin2 = code.origin;
+          }
+          let str36 = "value";
           if (tmp26) {
-            if (tmp28) {
-              str34 = origin2;
+            if (tmp29) {
+              str36 = origin2;
             }
+            const verb = tmp26.verb;
             let str = code.maximum.toString();
             const unit = tmp26.unit;
-            let str40 = "Elemente";
+            let str42 = "elementer";
             if (null != unit) {
-              str40 = unit;
+              str42 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Zu gro\u00DF: erwartet, dass " + str34 + " " + str33 + str + " " + str40 + " hat";
-            const str39 = code.maximum;
+            let combined2 = "For stor: forventede " + str36 + " " + verb + " " + str35 + " " + str + " " + str42;
+            const str41 = code.maximum;
           } else {
-            let tmp29 = str34;
-            if (tmp28) {
-              tmp29 = origin2;
+            let tmp30 = str36;
+            if (tmp29) {
+              tmp30 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Zu gro\u00DF: erwartet, dass " + tmp29 + " " + str33 + code.maximum.toString() + " ist";
-            const str35 = code.maximum;
+            combined2 = "For stor: forventede " + tmp30 + " havde " + str35 + " " + code.maximum.toString();
+            const str37 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str24 = ">";
+          let str23 = ">";
           if (code.inclusive) {
-            str24 = ">=";
+            str23 = ">=";
           }
           const tmp15 = getSizing(code.origin);
-          ({ origin, minimum } = code);
-          const str1 = minimum.toString();
+          let origin = closure_2[code.origin];
+          if (null == origin) {
+            origin = code.origin;
+          }
           if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Zu klein: erwartet, dass " + origin + " " + str24 + str1 + " " + tmp15.unit + " hat";
+            let combined3 = "For lille: forventede " + origin + " " + tmp15.verb + " " + str23 + " " + code.minimum.toString() + " " + tmp15.unit;
+            const str28 = code.minimum;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Zu klein: erwartet, dass " + origin + " " + str24 + str1 + " ist";
+            combined3 = "For lille: forventede " + origin + " havde " + str23 + " " + code.minimum.toString();
+            const str24 = code.minimum;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Ung\u00FCltiger String: muss mit \"" + code.prefix + "\" beginnen";
+            let combined4 = "Ugyldig streng: skal starte med \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Ung\u00FCltiger String: muss mit \"" + code.suffix + "\" enden";
+            combined4 = "Ugyldig streng: skal ende med \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Ung\u00FCltiger String: muss \"" + code.includes + "\" enthalten";
+            combined4 = "Ugyldig streng: skal indeholde \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Ung\u00FCltiger String: muss dem Muster " + code.pattern + " entsprechen";
+            combined4 = "Ugyldig streng: skal matche m\u00F8nsteret " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "Ung\u00FCltig: " + format;
+            combined4 = "Ugyldig " + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "Ung\u00FCltige Zahl: muss ein Vielfaches von " + code.divisor + " sein";
+          return "Ugyldigt tal: skal v\u00E6re deleligt med " + code.divisor;
         } else if ("unrecognized_keys" === code) {
-          let str7 = "Unbekannter Schl\u00FCssel";
+          let str8 = "Ukendt n\u00F8gle";
           if (code.keys.length > 1) {
-            str7 = "Unbekannte Schl\u00FCssel";
+            str8 = "Ukendte n\u00F8gler";
           }
           const _HermesInternal3 = HermesInternal;
-          return "" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "" + str8 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Ung\u00FCltiger Schl\u00FCssel in " + code.origin;
+            return "Ugyldig n\u00F8gle i " + code.origin;
+          } else if ("invalid_union" === code) {
+            return "Ugyldigt input: matcher ingen af de tilladte typer";
+          } else if ("invalid_element" === code) {
+            const _HermesInternal = HermesInternal;
+            return "Ugyldig v\u00E6rdi i " + code.origin;
           } else {
-            if ("invalid_union" !== code) {
-              if ("invalid_element" === code) {
-                const _HermesInternal = HermesInternal;
-                return "Ung\u00FCltiger Wert in " + code.origin;
-              }
-            }
-            return "Ung\u00FCltige Eingabe";
+            return "Ugyldigt input";
           }
         }
       };

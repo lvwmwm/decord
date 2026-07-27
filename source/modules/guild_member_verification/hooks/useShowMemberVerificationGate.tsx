@@ -1,5 +1,5 @@
 // Module ID: 4620
-// Function ID: 40300
+// Function ID: 40301
 // Name: shouldShowMembershipVerificationGate
 // Dependencies: [1918, 1838, 1850, 4621, 566, 2]
 // Exports: useShowMemberVerificationGate

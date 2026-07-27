@@ -1,10 +1,10 @@
-// Module ID: 11838
-// Function ID: 91783
+// Module ID: 11839
+// Function ID: 91788
 // Name: screens
-// Dependencies: [31, 27, 4123, 33, 4131, 689, 5087, 4338, 8651, 9742, 566, 5085, 10909, 8080, 10910, 5121, 8645, 4127, 1212, 4544, 7883, 8648, 5517, 2]
+// Dependencies: [31, 27, 4123, 33, 4131, 689, 5087, 4338, 8651, 9742, 566, 5085, 10910, 8080, 10911, 5121, 8645, 4127, 1212, 4544, 7883, 8648, 5517, 2]
 // Exports: default
 
-// Module 11838 (screens)
+// Module 11839 (screens)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -57,16 +57,16 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   }, items2);
   if (stateFromStores) {
     obj = {};
-    const obj1 = { uri: onPressViewBadge(10909) };
+    const obj1 = { uri: onPressViewBadge(10910) };
     obj.source = obj1;
     obj.style = tmp.background;
     let tmp7Result = tmp7(onPressViewBadge(5085), obj);
     const tmp14 = onPressViewBadge(5085);
   } else {
     const obj2 = { source: null, poster: null, style: null, resizeMode: "contain", muted: true, pauseWhileAppInactive: true, paused: false };
-    const obj3 = { uri: onPressViewBadge(10910) };
+    const obj3 = { uri: onPressViewBadge(10911) };
     obj2.source = obj3;
-    obj2.poster = onPressViewBadge(10909);
+    obj2.poster = onPressViewBadge(10910);
     obj2.style = tmp.background;
     tmp7Result = tmp7(modalKey(8080).VideoComponent, obj2);
   }

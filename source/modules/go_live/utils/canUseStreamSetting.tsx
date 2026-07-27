@@ -1,10 +1,10 @@
-// Module ID: 10688
-// Function ID: 83220
+// Module ID: 10689
+// Function ID: 83225
 // Name: canUseStreamSetting
 // Dependencies: [1852, 3777, 4023, 2]
 // Exports: default
 
-// Module 10688 (canUseStreamSetting)
+// Module 10689 (canUseStreamSetting)
 import { StreamQualities } from "GuildFeatures";
 
 let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");

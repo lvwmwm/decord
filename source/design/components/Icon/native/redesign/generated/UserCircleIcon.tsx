@@ -1,5 +1,5 @@
 // Module ID: 6717
-// Function ID: 59286
+// Function ID: 59287
 // Name: UserCircleIcon
 // Dependencies: [31, 33, 689, 3834, 6718, 2]
 // Exports: UserCircleIcon

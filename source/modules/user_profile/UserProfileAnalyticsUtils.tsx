@@ -1,5 +1,5 @@
 // Module ID: 8046
-// Function ID: 63971
+// Function ID: 63972
 // Name: getProfileProperties
 // Dependencies: [8047, 5067, 5892, 4150, 1918, 4218, 3768, 1850, 5630, 8043, 653, 482, 1392, 7922, 675, 4325, 8051, 2]
 // Exports: maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction

@@ -1,10 +1,10 @@
-// Module ID: 15648
-// Function ID: 120652
+// Module ID: 15660
+// Function ID: 120699
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [31, 27, 6699, 33, 4131, 689, 5121, 6625, 1212, 5588, 7640, 4127, 3828, 13714, 2]
+// Dependencies: [31, 27, 6699, 33, 4131, 689, 5121, 6625, 1212, 5588, 7640, 4127, 3828, 13715, 2]
 // Exports: default
 
-// Module 15648 (SuspendedUserSafetyHubPage)
+// Module 15660 (SuspendedUserSafetyHubPage)
 import "result";
 import { View } from "get ActivityIndicator";
 import { SafetyHubLinks } from "SafetyHubLinks";
@@ -56,7 +56,7 @@ export default function SuspendedUserSafetyHubPage() {
   obj2.children = items1;
   items[1] = callback2(require(4127) /* Text */.Text, obj2);
   obj.children = items;
-  const items2 = [callback2(View, obj), callback(importDefault(13714), { visible: true })];
+  const items2 = [callback2(View, obj), callback(importDefault(13715), { visible: true })];
   obj.children = items2;
   obj.children = callback2(View, obj);
   return callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

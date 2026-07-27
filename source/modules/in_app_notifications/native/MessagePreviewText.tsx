@@ -1,10 +1,10 @@
-// Module ID: 10217
-// Function ID: 79103
+// Module ID: 10218
+// Function ID: 79108
 // Name: NativeMessagePreviewContent
-// Dependencies: [31, 27, 1348, 10200, 33, 4131, 478, 689, 10218, 10219, 10199, 4127, 5085, 10233, 4361, 10238, 10239, 670, 5856, 1212, 3809, 2]
+// Dependencies: [31, 27, 1348, 10201, 33, 4131, 478, 689, 10219, 10220, 10200, 4127, 5085, 10234, 4361, 10239, 10240, 670, 5856, 1212, 3809, 2]
 // Exports: default
 
-// Module 10217 (NativeMessagePreviewContent)
+// Module 10218 (NativeMessagePreviewContent)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -27,9 +27,9 @@ function NativeMessagePreviewContent(arg0) {
   let maxHeight;
   let message;
   ({ message, lineClamp, maxHeight } = arg0);
-  const tmp = importDefault(10218)();
+  const tmp = importDefault(10219)();
   ({ gradientColors, gradientStyles } = tmp);
-  return callback(View, { children: callback(require(10219) /* PreviewIcon */.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) });
+  return callback(View, { children: callback(require(10220) /* PreviewIcon */.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) });
 }
 class SystemMessageText {
   constructor(arg0) {
@@ -179,7 +179,7 @@ export default function MessagePreviewText(message) {
   if (showMessageAuthor === undefined) {
     showMessageAuthor = false;
   }
-  let obj = message(10233);
+  let obj = message(10234);
   const previewableMedia = obj.usePreviewableMedia(message);
   let obj1 = message(4361);
   let tmp = null;
@@ -187,10 +187,10 @@ export default function MessagePreviewText(message) {
     tmp = message;
   }
   const nullableMessageAuthor = obj1.useNullableMessageAuthor(tmp);
-  let obj2 = message(10238);
+  let obj2 = message(10239);
   const previewableMediaText = obj2.usePreviewableMediaText({ previewableMedia, author: nullableMessageAuthor });
   ({ text, secondaryText } = previewableMediaText);
-  let obj3 = message(10239);
+  let obj3 = message(10240);
   const getInitialMessagePreview = obj3.useGetInitialMessagePreview({ message });
   const items = [message.embeds];
   const memo = React.useMemo(() => {
@@ -216,7 +216,7 @@ export default function MessagePreviewText(message) {
   } else if (importDefault(5856)(message)) {
     let tmp41 = previewableMedia.length > 0;
     if (tmp41) {
-      tmp41 = previewableMedia[0].type === message(10233).PreviewableMediaTypes.GIF;
+      tmp41 = previewableMedia[0].type === message(10234).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       if (null != nullableMessageAuthor) {
@@ -235,10 +235,10 @@ export default function MessagePreviewText(message) {
   } else if (message.content.length > 0) {
     if (null != nullableMessageAuthor) {
       channel = channel.getChannel(message.channel_id);
-      message(10199);
+      message(10200);
       if (null != channel) {
         const obj6 = { channel, message, color: "text-default", layout: message(3809).ChannelListLayoutTypes.COZY, variant: tmp34, muted: false, lineClamp };
-        return callback(message(10219).ChannelRowPreview, obj6);
+        return callback(message(10220).ChannelRowPreview, obj6);
       }
     }
     const obj7 = { message: getInitialMessagePreview, lineClamp, maxHeight };

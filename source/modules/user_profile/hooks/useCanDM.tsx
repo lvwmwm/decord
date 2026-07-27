@@ -1,10 +1,10 @@
-// Module ID: 12146
-// Function ID: 95147
+// Module ID: 12147
+// Function ID: 95152
 // Name: useCanDM
 // Dependencies: [5891, 3760, 1194, 1918, 3768, 3804, 566, 2]
 // Exports: canDm, default
 
-// Module 12146 (useCanDM)
+// Module 12147 (useCanDM)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

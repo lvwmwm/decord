@@ -1,5 +1,5 @@
 // Module ID: 5814
-// Function ID: 51052
+// Function ID: 51053
 // Name: WideBannerBlockRecord
 // Dependencies: [6, 7, 5801, 2]
 

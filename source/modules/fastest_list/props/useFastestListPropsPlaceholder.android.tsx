@@ -1,5 +1,5 @@
 // Module ID: 9179
-// Function ID: 72013
+// Function ID: 72014
 // Name: createNativePlaceholderConfig
 // Dependencies: [31, 8755, 3975, 2]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 9424
-// Function ID: 73551
+// Function ID: 73552
 // Name: getFractionalPremiumQuestRewards
 // Dependencies: [3777, 1212, 5937, 3801, 664, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName

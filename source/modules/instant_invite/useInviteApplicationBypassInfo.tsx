@@ -1,10 +1,10 @@
-// Module ID: 16549
-// Function ID: 129019
+// Module ID: 16561
+// Function ID: 129066
 // Name: useInviteApplicationBypassInfo
 // Dependencies: [3759, 653, 566, 2]
 // Exports: useInviteApplicationBypassInfo
 
-// Module 16549 (useInviteApplicationBypassInfo)
+// Module 16561 (useInviteApplicationBypassInfo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

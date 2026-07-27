@@ -1,5 +1,5 @@
 // Module ID: 7977
-// Function ID: 63593
+// Function ID: 63594
 // Name: SAMPLE_PROFILE_ASPECT_RATIO
 // Dependencies: [2]
 

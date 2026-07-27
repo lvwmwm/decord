@@ -1,10 +1,10 @@
-// Module ID: 12155
-// Function ID: 95220
+// Module ID: 12156
+// Function ID: 95225
 // Name: UserClockIcon
-// Dependencies: [31, 33, 689, 3834, 12156, 2]
+// Dependencies: [31, 33, 689, 3834, 12157, 2]
 // Exports: UserClockIcon
 
-// Module 12155 (UserClockIcon)
+// Module 12156 (UserClockIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const UserClockIcon = function UserClockIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(12156) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(12157) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(12156) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3834) /* BaseIconImage */.BaseIconImage, { source: require(12157) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

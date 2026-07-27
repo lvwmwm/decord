@@ -1,10 +1,10 @@
-// Module ID: 13881
-// Function ID: 106309
+// Module ID: 13882
+// Function ID: 106314
 // Name: FamilyCenterEmpty
-// Dependencies: [31, 27, 33, 4131, 13882, 4127, 2]
+// Dependencies: [31, 27, 33, 4131, 13883, 4127, 2]
 // Exports: default
 
-// Module 13881 (FamilyCenterEmpty)
+// Module 13882 (FamilyCenterEmpty)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 export default function FamilyCenterEmpty(text) {
   const tmp = callback3();
   let obj = { style: tmp.empty };
-  obj = { source: importDefault(13882), style: tmp.art, resizeMethod: "scale" };
+  obj = { source: importDefault(13883), style: tmp.art, resizeMethod: "scale" };
   const items = [callback(closure_4, obj), ];
   obj = { variant: "text-sm/medium", color: "text-muted", children: text.text };
   items[1] = callback(require(4127) /* Text */.Text, obj);

@@ -1,9 +1,9 @@
-// Module ID: 11710
-// Function ID: 90922
+// Module ID: 11711
+// Function ID: 90927
 // Name: _updateDiscoverability
-// Dependencies: [5, 4813, 653, 3804, 1360, 675, 11706, 4939, 2]
+// Dependencies: [5, 4813, 653, 3804, 1360, 675, 11707, 4939, 2]
 
-// Module 11710 (_updateDiscoverability)
+// Module 11711 (_updateDiscoverability)
 import expandLocation from "expandLocation";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

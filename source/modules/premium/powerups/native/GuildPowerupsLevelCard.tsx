@@ -1,10 +1,10 @@
-// Module ID: 11592
-// Function ID: 90109
+// Module ID: 11593
+// Function ID: 90114
 // Name: GuildLevelPowerupHeader
-// Dependencies: [31, 27, 4019, 653, 11593, 33, 4131, 689, 4555, 6561, 11575, 11555, 4127, 1212, 2231, 11527, 11547, 11594, 11595, 11552, 2]
+// Dependencies: [31, 27, 4019, 653, 11594, 33, 4131, 689, 4555, 6561, 11576, 11556, 4127, 1212, 2231, 11528, 11548, 11595, 11596, 11553, 2]
 // Exports: default
 
-// Module 11592 (GuildLevelPowerupHeader)
+// Module 11593 (GuildLevelPowerupHeader)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import BoostedGuildTiers from "BoostedGuildTiers";
@@ -163,11 +163,11 @@ export default function GuildPowerupsLevelCard(arg0) {
   let powerup;
   ({ guildId, powerup, nextPowerup, index, isScrollingRef } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(11527)(guildId, powerup);
-  let obj = isScrollingRef(11547);
+  const tmp2 = importDefault(11528)(guildId, powerup);
+  let obj = isScrollingRef(11548);
   const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp2, false);
-  const tmp3 = importDefault(11527)(guildId, nextPowerup);
-  const tmp7 = importDefault(11594)(guildId, powerup);
+  const tmp3 = importDefault(11528)(guildId, nextPowerup);
+  const tmp7 = importDefault(11595)(guildId, powerup);
   importDefault = tmp7;
   if (0 === index) {
     let MIDDLE = constants.START;
@@ -186,7 +186,7 @@ export default function GuildPowerupsLevelCard(arg0) {
   obj = { position: MIDDLE, active: tmp2.type !== constants2.INACTIVE };
   let tmp17;
   const tmp13 = callback2;
-  const tmp6 = importDefault(11527)(guildId, nextPowerup).type !== constants2.INACTIVE;
+  const tmp6 = importDefault(11528)(guildId, nextPowerup).type !== constants2.INACTIVE;
   if (null != nextPowerup) {
     tmp17 = tmp6;
   }
@@ -195,10 +195,10 @@ export default function GuildPowerupsLevelCard(arg0) {
   const obj1 = { style: tmp.contentContainer };
   const items2 = [callback(isScrollingRef(4127).Text, { variant: "heading-lg/semibold", children: powerup.title }), callback(GuildPowerupLevelBody, { isActive: tmp2.type !== constants2.INACTIVE, index }), ];
   const obj2 = { variant: "heading-lg/semibold", children: powerup.title };
-  const tmp14 = importDefault(11595);
+  const tmp14 = importDefault(11596);
   const tmp15 = callback;
   const tmp16 = GuildLevelPowerupHeader;
-  items2[2] = callback(View, { style: tmp.footerContainer, children: callback(isScrollingRef(11552).GuildPowerupsCardFooter, obj4) });
+  items2[2] = callback(View, { style: tmp.footerContainer, children: callback(isScrollingRef(11553).GuildPowerupsCardFooter, obj4) });
   obj1.children = items2;
   items1[1] = callback2(View, obj1);
   obj.children = items1;

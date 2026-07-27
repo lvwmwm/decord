@@ -1,5 +1,5 @@
 // Module ID: 8427
-// Function ID: 67287
+// Function ID: 67288
 // Name: SteamNeutralIcon
 // Dependencies: [31, 33, 689, 3834, 8428, 2]
 // Exports: SteamNeutralIcon

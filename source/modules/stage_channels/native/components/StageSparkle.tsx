@@ -1,5 +1,5 @@
 // Module ID: 6667
-// Function ID: 58958
+// Function ID: 58959
 // Name: StageSparkleInner
 // Dependencies: [31, 27, 33, 4131, 689, 6668, 5085, 6669, 3843, 2]
 // Exports: default

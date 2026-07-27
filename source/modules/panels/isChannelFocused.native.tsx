@@ -1,10 +1,10 @@
-// Module ID: 10191
-// Function ID: 78847
+// Module ID: 10192
+// Function ID: 78852
 // Name: getFocusedChannelId
-// Dependencies: [57, 31, 4144, 10192, 4343, 3984, 3982, 3983, 3985, 2]
+// Dependencies: [57, 31, 4144, 10193, 4343, 3984, 3982, 3983, 3985, 2]
 // Exports: isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 10191 (getFocusedChannelId)
+// Module 10192 (getFocusedChannelId)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

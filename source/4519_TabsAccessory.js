@@ -1,5 +1,5 @@
 // Module ID: 4519
-// Function ID: 39755
+// Function ID: 39756
 // Name: TabsAccessory
 // Dependencies: [31, 27, 33, 4520]
 // Exports: default

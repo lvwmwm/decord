@@ -1,10 +1,10 @@
-// Module ID: 11615
-// Function ID: 90204
+// Module ID: 11616
+// Function ID: 90209
 // Name: GuildPowerupsBoostButton
-// Dependencies: [31, 1838, 1850, 4024, 653, 33, 566, 5820, 1868, 4967, 11616, 2]
+// Dependencies: [31, 1838, 1850, 4024, 653, 33, 566, 5820, 1868, 4967, 11617, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 11615 (GuildPowerupsBoostButton)
+// Module 11616 (GuildPowerupsBoostButton)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -39,7 +39,7 @@ export const GuildPowerupsBoostButton = function GuildPowerupsBoostButton(guildI
   let tmp9 = null;
   if (null != stateFromStores) {
     obj = { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp3.fractionalState, onAvailableSlotPress: tmp8, premiumGroupRole: UNSPECIFIED };
-    tmp9 = jsx(stateFromStores1(11616), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp3.fractionalState, onAvailableSlotPress: tmp8, premiumGroupRole: UNSPECIFIED });
+    tmp9 = jsx(stateFromStores1(11617), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp3.fractionalState, onAvailableSlotPress: tmp8, premiumGroupRole: UNSPECIFIED });
   }
   return tmp9;
 };

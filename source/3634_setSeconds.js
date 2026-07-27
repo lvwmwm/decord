@@ -1,5 +1,5 @@
 // Module ID: 3634
-// Function ID: 27911
+// Function ID: 27912
 // Name: setSeconds
 // Dependencies: [3214, 3210, 3211]
 // Exports: default

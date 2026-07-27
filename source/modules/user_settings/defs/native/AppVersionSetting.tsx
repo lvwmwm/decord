@@ -1,8 +1,8 @@
-// Module ID: 14447
-// Function ID: 110455
-// Dependencies: [1554, 1212, 14448, 10059, 9700, 3804, 2]
+// Module ID: 14448
+// Function ID: 110460
+// Dependencies: [1554, 1212, 14449, 10059, 9700, 3804, 2]
 
-// Module 14447
+// Module 14448
 import createToggle from "createToggle";
 import importAllResult from "getConstants";
 
@@ -16,13 +16,13 @@ let obj = {
   parent: null,
   IconComponent: require("ClydeIcon").ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
-    const clientInfoString = require(14448) /* getClientInfoString */.getClientInfoString(closure_3.ReleaseChannel);
-    const obj = require(14448) /* getClientInfoString */;
-    const obj2 = require(14448) /* getClientInfoString */;
+    const clientInfoString = require(14449) /* getClientInfoString */.getClientInfoString(closure_3.ReleaseChannel);
+    const obj = require(14449) /* getClientInfoString */;
+    const obj2 = require(14449) /* getClientInfoString */;
     const clientInfoString1 = obj2.getClientInfoString(importAll(1554).getBuildNumberLabel());
     const hasItem = clientInfoString1.includes("dev");
     const obj3 = importAll(1554);
-    const clientInfoString2 = require(14448) /* getClientInfoString */.getClientInfoString(closure_3.Version);
+    const clientInfoString2 = require(14449) /* getClientInfoString */.getClientInfoString(closure_3.Version);
     if (hasItem) {
       let combined = concat(clientInfoString2, " (", clientInfoString, ")");
     } else {
@@ -40,13 +40,13 @@ const createStaticResult = createToggle.createStatic({
   parent: null,
   IconComponent: require("ClydeIcon").ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
-    const clientInfoString = require(14448) /* getClientInfoString */.getClientInfoString(closure_3.ReleaseChannel);
-    const obj = require(14448) /* getClientInfoString */;
-    const obj2 = require(14448) /* getClientInfoString */;
+    const clientInfoString = require(14449) /* getClientInfoString */.getClientInfoString(closure_3.ReleaseChannel);
+    const obj = require(14449) /* getClientInfoString */;
+    const obj2 = require(14449) /* getClientInfoString */;
     const clientInfoString1 = obj2.getClientInfoString(importAll(1554).getBuildNumberLabel());
     const hasItem = clientInfoString1.includes("dev");
     const obj3 = importAll(1554);
-    const clientInfoString2 = require(14448) /* getClientInfoString */.getClientInfoString(closure_3.Version);
+    const clientInfoString2 = require(14449) /* getClientInfoString */.getClientInfoString(closure_3.Version);
     if (hasItem) {
       let combined = concat(clientInfoString2, " (", clientInfoString, ")");
     } else {

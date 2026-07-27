@@ -1,10 +1,10 @@
-// Module ID: 10507
-// Function ID: 81434
+// Module ID: 10508
+// Function ID: 81439
 // Name: UserTile
-// Dependencies: [57, 31, 27, 10508, 1194, 1348, 4178, 653, 4149, 4192, 33, 4131, 689, 3975, 566, 7919, 1273, 8284, 4127, 1212, 10491, 10494, 7612, 10533, 10534, 10535, 10450, 9981, 10536, 10178, 10479, 5217, 10537, 2]
+// Dependencies: [57, 31, 27, 10509, 1194, 1348, 4178, 653, 4149, 4192, 33, 4131, 689, 3975, 566, 7919, 1273, 8284, 4127, 1212, 10492, 10495, 7612, 10534, 10535, 10536, 10451, 9981, 10537, 10179, 10480, 5217, 10538, 2]
 // Exports: default
 
-// Module 10507 (UserTile)
+// Module 10508 (UserTile)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Directions";
 import { View } from "participantHasVideo";
@@ -147,9 +147,9 @@ let closure_19 = importAllResult.memo((userId) => {
   if (tmp2[0]) {
     let tmp4 = importDefault(7612);
   } else if (deafened) {
-    tmp4 = importDefault(10533);
-  } else if (muted) {
     tmp4 = importDefault(10534);
+  } else if (muted) {
+    tmp4 = importDefault(10535);
   }
   if (tmp3) {
     tmp3 = !tmp2[2];
@@ -161,7 +161,7 @@ let closure_19 = importAllResult.memo((userId) => {
       obj = {};
       const items2 = [tmp.statusWrapper, style];
       obj.style = items2;
-      const obj1 = { source: importDefault(10535), size: userId(1273).Icon.Sizes.SMALL, disableColor: true };
+      const obj1 = { source: importDefault(10536), size: userId(1273).Icon.Sizes.SMALL, disableColor: true };
       obj.children = callback2(userId(1273).Icon, obj1);
       tmp15 = callback2(View, obj);
     }

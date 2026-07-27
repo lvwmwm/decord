@@ -1,10 +1,10 @@
-// Module ID: 11885
-// Function ID: 91997
+// Module ID: 11886
+// Function ID: 92002
 // Name: GuildProfileGameRow
-// Dependencies: [31, 27, 33, 8407, 8418, 5164, 11879, 4131, 11883, 11884, 7892, 1212, 4099, 8385, 1935, 5187, 5189, 5501, 2]
+// Dependencies: [31, 27, 33, 8407, 8418, 5164, 11880, 4131, 11884, 11885, 7892, 1212, 4099, 8385, 1935, 5187, 5189, 5501, 2]
 // Exports: default
 
-// Module 11885 (GuildProfileGameRow)
+// Module 11886 (GuildProfileGameRow)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,13 +21,13 @@ function GuildProfileGameRow(activityLevel) {
   if (clickable) {
     clickable = null != tmpResult;
   }
-  obj = { icon: jsx(importDefault(11879), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable };
+  obj = { icon: jsx(importDefault(11880), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable };
   let fn;
   if (clickable) {
     fn = () => tmpResult();
   }
   obj.onPress = fn;
-  return jsx(require(5164) /* TableRowInner */.TableRow, { icon: jsx(importDefault(11879), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable });
+  return jsx(require(5164) /* TableRowInner */.TableRow, { icon: jsx(importDefault(11880), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable });
 }
 let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, paddingBottom: 48 } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGamesActionSheet.tsx");

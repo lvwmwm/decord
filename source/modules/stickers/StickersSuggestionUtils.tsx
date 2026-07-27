@@ -1,5 +1,5 @@
 // Module ID: 4802
-// Function ID: 41744
+// Function ID: 41745
 // Name: removePunctuation
 // Dependencies: [2]
 // Exports: getQueriesFromUserInput

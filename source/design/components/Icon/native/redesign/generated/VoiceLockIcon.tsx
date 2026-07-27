@@ -1,5 +1,5 @@
 // Module ID: 4656
-// Function ID: 40372
+// Function ID: 40373
 // Name: VoiceLockIcon
 // Dependencies: [31, 33, 689, 3834, 4605, 2]
 // Exports: VoiceLockIcon

@@ -1,10 +1,10 @@
-// Module ID: 13823
-// Function ID: 105990
+// Module ID: 13824
+// Function ID: 105995
 // Name: useIsHarvestRequestDisabled
-// Dependencies: [27, 1850, 7697, 653, 33, 677, 9158, 682, 566, 3744, 13824, 1212, 3713, 10059, 13826, 2]
+// Dependencies: [27, 1850, 7697, 653, 33, 677, 9158, 682, 566, 3744, 13825, 1212, 3713, 10059, 13827, 2]
 // Exports: fetchHarvestStatus
 
-// Module 13823 (useIsHarvestRequestDisabled)
+// Module 13824 (useIsHarvestRequestDisabled)
 import { ActivityIndicator } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -20,8 +20,8 @@ function useIsHarvestRequestDisabled() {
   let tmp4 = null == stateFromStores;
   if (!tmp4) {
     if (!harvestDisabledResult) {
-      harvestDisabledResult = require(13824) /* harvestDisabled */.harvestDisabled(tmp2, stateFromStores);
-      const obj2 = require(13824) /* harvestDisabled */;
+      harvestDisabledResult = require(13825) /* harvestDisabled */.harvestDisabled(tmp2, stateFromStores);
+      const obj2 = require(13825) /* harvestDisabled */;
     }
     tmp4 = harvestDisabledResult;
   }
@@ -84,7 +84,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.REQUEST_DATA,
   getComponent() {
-    return require(13826).default;
+    return require(13827).default;
   }
 };
 const route = createToggle.createRoute(obj);

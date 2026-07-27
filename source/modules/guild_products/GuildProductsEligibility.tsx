@@ -1,10 +1,10 @@
-// Module ID: 12554
-// Function ID: 97239
+// Module ID: 12555
+// Function ID: 97244
 // Name: useGuildEligibleForGuildProducts
 // Dependencies: [1838, 653, 566, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 12554 (useGuildEligibleForGuildProducts)
+// Module 12555 (useGuildEligibleForGuildProducts)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 

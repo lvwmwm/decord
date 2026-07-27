@@ -1,10 +1,10 @@
-// Module ID: 11579
-// Function ID: 90022
+// Module ID: 11580
+// Function ID: 90027
 // Name: GuildPowerupsSectionHeader
 // Dependencies: [27, 33, 4131, 689, 4127, 2]
 // Exports: default
 
-// Module 11579 (GuildPowerupsSectionHeader)
+// Module 11580 (GuildPowerupsSectionHeader)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

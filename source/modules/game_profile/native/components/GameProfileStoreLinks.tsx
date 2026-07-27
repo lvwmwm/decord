@@ -1,5 +1,5 @@
 // Module ID: 8452
-// Function ID: 67370
+// Function ID: 67371
 // Name: WebsiteGameStoreLinkButton
 // Dependencies: [31, 27, 33, 4131, 689, 8415, 3828, 4544, 1212, 4099, 8443, 8418, 2]
 // Exports: default

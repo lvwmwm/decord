@@ -1,10 +1,10 @@
-// Module ID: 14763
-// Function ID: 112566
+// Module ID: 14764
+// Function ID: 112571
 // Name: ScrollBenchmark
-// Dependencies: [31, 33, 14760, 5164, 2]
+// Dependencies: [31, 33, 14761, 5164, 2]
 // Exports: default
 
-// Module 14763 (ScrollBenchmark)
+// Module 14764 (ScrollBenchmark)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export default function ScrollBenchmark(subLabel) {
   if (str === undefined) {
     str = "Records frame times while you scroll the content below.";
   }
-  const tmp = importDefault(14760)(subLabel.onResult);
+  const tmp = importDefault(14761)(subLabel.onResult);
   ({ monitoring, start } = tmp);
   const obj = {};
   let str2 = "Start scroll monitor";

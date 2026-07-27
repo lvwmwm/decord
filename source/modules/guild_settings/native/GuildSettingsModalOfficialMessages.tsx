@@ -1,10 +1,10 @@
-// Module ID: 16543
-// Function ID: 128920
+// Module ID: 16555
+// Function ID: 128967
 // Name: MessagePreview
-// Dependencies: [57, 31, 27, 4123, 1838, 8243, 5126, 4124, 482, 33, 4131, 689, 1212, 14217, 10318, 14219, 4131, 1456, 566, 8242, 5087, 6695, 4099, 14878, 1935, 8162, 3992, 5164, 13631, 665, 4127, 8687, 3801, 5994, 666, 1273, 14232, 2]
+// Dependencies: [57, 31, 27, 4123, 1838, 8243, 5126, 4124, 482, 33, 4131, 689, 1212, 14218, 10319, 14220, 4131, 1456, 566, 8242, 5087, 6695, 4099, 14879, 1935, 8162, 3992, 5164, 13632, 665, 4127, 8687, 3801, 5994, 666, 1273, 14233, 2]
 // Exports: default
 
-// Module 16543 (MessagePreview)
+// Module 16555 (MessagePreview)
 import _slicedToArray from "_slicedToArray";
 import SegmentedControl from "SegmentedControl";
 import get_ActivityIndicator from "TableRowInner";
@@ -50,7 +50,7 @@ function MessagePreview(theme) {
   ({ borderStrong: arr[1], bgBaseLow: arr[2] } = animatedStyles);
   obj = { style: items1 };
   items1 = [tmp.chatContainerInner, { backgroundColor: obj2.alpha(closure_10).hex() }];
-  const obj1 = { source: importDefault(14232) };
+  const obj1 = { source: importDefault(14233) };
   const items2 = [callback(require(1273) /* Button */.Avatar, obj1), ];
   obj2 = { style: tmp.chatContent };
   const obj3 = { style: tmp.chatHeader };

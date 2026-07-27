@@ -1,10 +1,10 @@
-// Module ID: 12450
-// Function ID: 96544
+// Module ID: 12451
+// Function ID: 96549
 // Name: getPremiumGroupFeaturesTableCardSubheaderString
-// Dependencies: [3783, 3791, 1212, 2781, 1868, 7772, 12451, 566, 2]
+// Dependencies: [3783, 3791, 1212, 2781, 1868, 7772, 12452, 566, 2]
 // Exports: default
 
-// Module 12450 (getPremiumGroupFeaturesTableCardSubheaderString)
+// Module 12451 (getPremiumGroupFeaturesTableCardSubheaderString)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import TOTAL_PREMIUM_GROUP_MEMBER_SEATS from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 
@@ -54,5 +54,5 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
     obj1 = { subheaderString: getPremiumGroupFeaturesTableCardSubheaderString(arg0, tmp, stateFromStores), bodyString: formatResult };
     return obj1;
   }
-  tmp = importDefault(12451)(obj);
+  tmp = importDefault(12452)(obj);
 };

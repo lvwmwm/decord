@@ -1,5 +1,5 @@
 // Module ID: 4393
-// Function ID: 38847
+// Function ID: 38848
 // Name: isPrimitive
 // Dependencies: []
 

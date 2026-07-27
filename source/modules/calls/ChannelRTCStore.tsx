@@ -1,7 +1,7 @@
 // Module ID: 4144
-// Function ID: 34744
+// Function ID: 34745
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1347, 4145, 4150, 1194, 4810, 1348, 4218, 1907, 4953, 1850, 10449, 4147, 4149, 653, 3, 10448, 22, 44, 8848, 4195, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1347, 4145, 4150, 1194, 4810, 1348, 4218, 1907, 4953, 1850, 10450, 4147, 4149, 653, 3, 10449, 22, 44, 8848, 4195, 566, 686, 2]
 
 // Module 4144 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -126,7 +126,7 @@ function _arrayLikeToArray(arg0, arg1) {
 function _getParticipants(channelId) {
   let tmp = table[channelId];
   if (null == tmp) {
-    let tmp4 = importDefault(10448);
+    let tmp4 = importDefault(10449);
     const prototype = tmp4.prototype;
     tmp4 = new tmp4(channelId);
     table[channelId] = tmp4;
@@ -288,9 +288,9 @@ function setSelectedParticipantId(channelId, arg1) {
   }
 }
 function hasVideo(id) {
-  let hasEmbeddedActivityResult = id.size(require(10448) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM) > 0;
+  let hasEmbeddedActivityResult = id.size(require(10449) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM) > 0;
   if (!hasEmbeddedActivityResult) {
-    hasEmbeddedActivityResult = id.size(require(10448) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.VIDEO) > 0;
+    hasEmbeddedActivityResult = id.size(require(10449) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.VIDEO) > 0;
   }
   if (!hasEmbeddedActivityResult) {
     hasEmbeddedActivityResult = id.hasEmbeddedActivity();
@@ -807,12 +807,12 @@ tmp8 = new tmp8(require("dispatcher"), {
     const tmp3 = _getParticipants(channelId);
     const require = tmp3;
     if (null == id) {
-      const item = tmp3.toArray(require(10448) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM).forEach((user) => {
+      const item = tmp3.toArray(require(10449) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM).forEach((user) => {
         if (outer1_23(user)) {
           tmp3.updateParticipant(user.user.id);
         }
       });
-      const toArrayResult = tmp3.toArray(require(10448) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM);
+      const toArrayResult = tmp3.toArray(require(10449) /* getEmbeddedActivityParticipantId */.ChannelRTCParticipantsIndexes.STREAM);
     }
     if (null != id) {
       let NONE = id;

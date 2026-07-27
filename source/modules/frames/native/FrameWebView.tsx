@@ -1,10 +1,10 @@
-// Module ID: 15786
-// Function ID: 121757
+// Module ID: 15798
+// Function ID: 121804
 // Name: FrameWebView
-// Dependencies: [31, 33, 10599, 10572, 2]
+// Dependencies: [31, 33, 10600, 10573, 2]
 // Exports: default
 
-// Module 15786 (FrameWebView)
+// Module 15798 (FrameWebView)
 import result from "result";
 import { jsx } from "jsxProd";
 

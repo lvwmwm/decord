@@ -1,10 +1,10 @@
-// Module ID: 11195
-// Function ID: 87190
+// Module ID: 11196
+// Function ID: 87195
 // Name: BrokenImage
 // Dependencies: [31, 33, 8463, 2]
 // Exports: default
 
-// Module 11195 (BrokenImage)
+// Module 11196 (BrokenImage)
 import "result";
 import { jsx } from "jsxProd";
 

@@ -1,5 +1,5 @@
 // Module ID: 3924
-// Function ID: 32404
+// Function ID: 32405
 // Name: CheckpointKnickKnacksRive
 // Dependencies: [29, 31, 33, 3860, 3925, 3911, 2]
 

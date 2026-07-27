@@ -1,5 +1,5 @@
 // Module ID: 5972
-// Function ID: 53110
+// Function ID: 53111
 // Name: isEmbeddedActivity
 // Dependencies: [653, 5973, 2]
 // Exports: default

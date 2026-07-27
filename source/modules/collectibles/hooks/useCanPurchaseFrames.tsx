@@ -1,5 +1,5 @@
 // Module ID: 8632
-// Function ID: 68617
+// Function ID: 68618
 // Name: isUserPaidTier2
 // Dependencies: [1850, 1852, 8031, 8633, 1873, 1868, 566, 2]
 // Exports: default, useCanViewProfileFramesInCollectiblesShop, useIsProfileFramesEarlyAccessPhase

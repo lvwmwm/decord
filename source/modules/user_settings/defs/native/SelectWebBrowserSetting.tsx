@@ -1,10 +1,10 @@
-// Module ID: 14369
-// Function ID: 110031
+// Module ID: 14370
+// Function ID: 110036
 // Name: useWebBrowserSettingOptions
 // Dependencies: [7697, 4097, 1212, 668, 477, 10059, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 14369 (useWebBrowserSettingOptions)
+// Module 14370 (useWebBrowserSettingOptions)
 import createToggle from "createToggle";
 
 function useWebBrowserSettingOptions() {

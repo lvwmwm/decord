@@ -1,5 +1,5 @@
 // Module ID: 5387
-// Function ID: 46161
+// Function ID: 46162
 // Name: RenderStackManager
 // Dependencies: [5359, 5368, 5369]
 

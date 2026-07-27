@@ -1,10 +1,10 @@
-// Module ID: 15279
-// Function ID: 116496
+// Module ID: 15292
+// Function ID: 116545
 // Name: MessageRowContent
-// Dependencies: [31, 27, 1348, 1918, 1838, 3768, 4326, 1850, 15274, 653, 33, 689, 15236, 477, 15237, 8055, 6104, 566, 15280, 15281, 4127, 1212, 1273, 4320, 5049, 8122, 8123, 9029, 9486, 15275, 15277, 21, 4661, 8254, 15283, 2]
+// Dependencies: [31, 27, 1348, 1918, 1838, 3768, 4326, 1850, 15287, 653, 33, 689, 15249, 477, 15250, 8055, 6104, 566, 15293, 15294, 4127, 1212, 1273, 4320, 5049, 8122, 8123, 9029, 9486, 15288, 15290, 21, 4661, 8254, 15296, 2]
 // Exports: default
 
-// Module 15279 (MessageRowContent)
+// Module 15292 (MessageRowContent)
 import importAllResult from "DISCORD_EPOCH";
 import { View } from "openChannelLongPressActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -39,7 +39,7 @@ class MessageRowContent {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    tmp = f116504();
+    tmp = f116553();
     context = defineProperty.useContext(require("useICYMIContextConstructor").ICYMIContext);
     obj = require("_createForOfIteratorHelperLoose");
     result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, require("MessageEmbedTypes").GRAVITY_VALID_EMBED_TYPES);
@@ -166,7 +166,7 @@ function ReplyMessageContent(message) {
   message = message.message;
   ({ channel, guild } = message);
   const tmp = callback3();
-  const context = importAllResult.useContext(message(15237).ICYMIContext);
+  const context = importAllResult.useContext(message(15250).ICYMIContext);
   let obj = message(566);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getUser(message.author.id));
@@ -180,7 +180,7 @@ function ReplyMessageContent(message) {
   if (null == colorString) {
     colorString = closure_12;
   }
-  const width = importAllResult.useContext(message(15237).ICYMIContext).width;
+  const width = importAllResult.useContext(message(15250).ICYMIContext).width;
   let tmp6 = null;
   if (null != stateFromStores) {
     obj = { style: tmp.replyPreview };
@@ -207,7 +207,7 @@ function ReplyMessageContent(message) {
     obj8.value = obj9;
     const obj10 = { message, channel, guild, nested: true };
     obj8.children = callback(MessageRowContent, obj10);
-    items4[1] = callback(message(15237).ICYMIContext.Provider, obj8);
+    items4[1] = callback(message(15250).ICYMIContext.Provider, obj8);
     obj4.children = items4;
     items3[1] = callback2(View, obj4);
     obj2.children = items3;

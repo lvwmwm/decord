@@ -1,9 +1,9 @@
-// Module ID: 14151
-// Function ID: 108821
+// Module ID: 14152
+// Function ID: 108826
 // Name: QUEST_DOCK_EXPANDED_HEIGHT
-// Dependencies: [57, 31, 27, 4123, 4977, 14055, 653, 33, 4131, 14137, 14051, 14056, 14059, 8056, 566, 3835, 689, 666, 3992, 4543, 477, 10897, 7620, 8080, 5085, 4555, 2]
+// Dependencies: [57, 31, 27, 4123, 4977, 14056, 653, 33, 4131, 14138, 14052, 14057, 14060, 8056, 566, 3835, 689, 666, 3992, 4543, 477, 10898, 7620, 8080, 5085, 4555, 2]
 
-// Module 14151 (QUEST_DOCK_EXPANDED_HEIGHT)
+// Module 14152 (QUEST_DOCK_EXPANDED_HEIGHT)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

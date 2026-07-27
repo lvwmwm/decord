@@ -1,10 +1,10 @@
-// Module ID: 11960
-// Function ID: 92468
+// Module ID: 11961
+// Function ID: 92473
 // Name: getCurrentActivityGamePlatform
 // Dependencies: [653, 478, 1553, 5973, 2]
 // Exports: default
 
-// Module 11960 (getCurrentActivityGamePlatform)
+// Module 11961 (getCurrentActivityGamePlatform)
 import ME from "ME";
 
 let closure_3;

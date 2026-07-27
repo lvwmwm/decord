@@ -1,10 +1,10 @@
-// Module ID: 15562
-// Function ID: 119898
+// Module ID: 15574
+// Function ID: 119945
 // Name: ConnectedChannelSettingsInstantInvites
-// Dependencies: [57, 31, 27, 7628, 1348, 653, 33, 4131, 689, 1557, 566, 7627, 10130, 1273, 10148, 10149, 1212, 5583, 15563, 9173, 2]
+// Dependencies: [57, 31, 27, 7628, 1348, 653, 33, 4131, 689, 1557, 566, 7627, 10130, 1273, 10148, 10149, 1212, 5583, 15575, 9173, 2]
 // Exports: default
 
-// Module 15562 (ConnectedChannelSettingsInstantInvites)
+// Module 15574 (ConnectedChannelSettingsInstantInvites)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -127,7 +127,7 @@ export default function ConnectedChannelSettingsInstantInvites() {
     memo1 = memo1[0];
     obj3.item = memo1;
     obj3.onMeasured = callback;
-    tmp17 = callback(importDefault(15563), obj3);
+    tmp17 = callback(importDefault(15575), obj3);
   }
   items8[1] = tmp17;
   obj2.children = items8;

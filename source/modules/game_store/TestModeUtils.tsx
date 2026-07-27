@@ -1,5 +1,5 @@
 // Module ID: 6444
-// Function ID: 57875
+// Function ID: 57876
 // Name: isTestModeForApplication
 // Dependencies: [5663, 5662, 566, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication

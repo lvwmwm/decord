@@ -1,5 +1,5 @@
 // Module ID: 8710
-// Function ID: 69083
+// Function ID: 69084
 // Name: PremiumGiftBackgroundAnimation
 // Dependencies: [57, 31, 27, 4123, 33, 4131, 566, 7798, 8711, 5453, 2]
 // Exports: default

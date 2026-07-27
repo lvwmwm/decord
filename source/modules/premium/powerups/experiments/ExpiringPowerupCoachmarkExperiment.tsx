@@ -1,10 +1,10 @@
-// Module ID: 11535
-// Function ID: 89837
+// Module ID: 11536
+// Function ID: 89842
 // Name: useExpiringPowerupCoachmarkEnabled
 // Dependencies: [1325, 2]
 // Exports: useExpiringPowerupCoachmarkEnabled
 
-// Module 11535 (useExpiringPowerupCoachmarkEnabled)
+// Module 11536 (useExpiringPowerupCoachmarkEnabled)
 const obj = { name: "2026-02-expiring-powerup-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const tmp2 = require("getUnitId")(obj);
 let closure_0 = tmp2;

@@ -1,5 +1,5 @@
 // Module ID: 4582
-// Function ID: 40203
+// Function ID: 40204
 // Name: perceptualToAmplitude
 // Dependencies: [2]
 // Exports: amplitudeToPerceptual, perceptualToAmplitude

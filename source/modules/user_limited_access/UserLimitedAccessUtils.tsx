@@ -1,5 +1,5 @@
 // Module ID: 8853
-// Function ID: 70121
+// Function ID: 70122
 // Name: isLimitedAccessErrorCode
 // Dependencies: [653, 2]
 // Exports: isLimitedAccessErrorCode

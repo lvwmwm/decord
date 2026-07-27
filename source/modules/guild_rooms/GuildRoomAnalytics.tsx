@@ -1,10 +1,10 @@
-// Module ID: 16111
-// Function ID: 124876
+// Module ID: 16123
+// Function ID: 124923
 // Name: resolveGuildId
-// Dependencies: [1194, 1348, 4203, 4147, 16107, 16112, 653, 4325, 2]
+// Dependencies: [1194, 1348, 4203, 4147, 16119, 16124, 653, 4325, 2]
 // Exports: trackGuildRoomInteracted, trackGuildRoomLayoutToggled, trackGuildRoomObjectInteracted, trackGuildRoomOpened, trackGuildRoomSeatSelected, trackGuildRoomUserConnected, trackGuildRoomUserDisconnected, trackGuildRoomUserInteracted, trackGuildRoomUserUpdated
 
-// Module 16111 (resolveGuildId)
+// Module 16123 (resolveGuildId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

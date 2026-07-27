@@ -1,10 +1,10 @@
-// Module ID: 12424
-// Function ID: 96413
+// Module ID: 12425
+// Function ID: 96418
 // Name: useMaybeFetchTieredTenureBadgeData
 // Dependencies: [1850, 1852, 566, 8334, 4560, 7923, 2]
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 12424 (useMaybeFetchTieredTenureBadgeData)
+// Module 12425 (useMaybeFetchTieredTenureBadgeData)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumTypes } from "GuildFeatures";
 

@@ -1,5 +1,5 @@
 // Module ID: 4636
-// Function ID: 40332
+// Function ID: 40333
 // Name: TextSpoilerIcon
 // Dependencies: [31, 33, 689, 3834, 4610, 2]
 // Exports: TextSpoilerIcon

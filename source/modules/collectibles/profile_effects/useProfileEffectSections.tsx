@@ -1,10 +1,10 @@
-// Module ID: 13657
-// Function ID: 104922
+// Module ID: 13658
+// Function ID: 104927
 // Name: useProfileEffectSections
 // Dependencies: [57, 31, 5770, 5786, 624, 5782, 1212, 2]
 // Exports: default
 
-// Module 13657 (useProfileEffectSections)
+// Module 13658 (useProfileEffectSections)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

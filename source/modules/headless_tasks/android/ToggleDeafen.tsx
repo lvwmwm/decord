@@ -1,9 +1,9 @@
-// Module ID: 16684
-// Function ID: 130154
+// Module ID: 16696
+// Function ID: 130201
 // Name: promise
-// Dependencies: [1348, 16681, 10749, 10734, 2]
+// Dependencies: [1348, 16693, 10750, 10735, 2]
 
-// Module 16684 (promise)
+// Module 16696 (promise)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

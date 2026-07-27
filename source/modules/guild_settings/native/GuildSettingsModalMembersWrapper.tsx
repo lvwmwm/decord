@@ -1,8 +1,8 @@
-// Module ID: 16402
-// Function ID: 128094
-// Dependencies: [31, 33, 12560, 15353, 15355, 2]
+// Module ID: 16414
+// Function ID: 128141
+// Dependencies: [31, 33, 12561, 15366, 15368, 2]
 
-// Module 16402
+// Module 16414
 import { jsx } from "jsxProd";
 import importAllResult from "result";
 
@@ -10,9 +10,9 @@ const require = arg1;
 const memoResult = require("result").memo((guildId) => {
   guildId = guildId.guildId;
   if (obj.useCanReviewGuildMemberApplications(guildId)) {
-    let tmp4 = 15353;
+    let tmp4 = 15366;
   } else {
-    tmp4 = 15355;
+    tmp4 = 15368;
   }
   return jsx(importDefault(tmp4), { guildId });
 });

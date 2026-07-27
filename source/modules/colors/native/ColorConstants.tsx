@@ -1,5 +1,5 @@
 // Module ID: 6173
-// Function ID: 55498
+// Function ID: 55499
 // Name: items
 // Dependencies: [1852, 689, 2]
 // Exports: getPremiumGradientColor

@@ -1,10 +1,10 @@
-// Module ID: 13871
-// Function ID: 106243
+// Module ID: 13872
+// Function ID: 106248
 // Name: SpendingLimitRow
-// Dependencies: [31, 27, 5766, 653, 33, 4131, 689, 4127, 1212, 2199, 4338, 13872, 1935, 13874, 5164, 6200, 13858, 5828, 1456, 13875, 4542, 5501, 4544, 5817, 4141, 13790, 5767, 13876, 2]
+// Dependencies: [31, 27, 5766, 653, 33, 4131, 689, 4127, 1212, 2199, 4338, 13873, 1935, 13875, 5164, 6200, 13859, 5828, 1456, 13876, 4542, 5501, 4544, 5817, 4141, 13791, 5767, 13877, 2]
 // Exports: default
 
-// Module 13871 (SpendingLimitRow)
+// Module 13872 (SpendingLimitRow)
 import result from "result";
 import { View } from "useUserIsTeenAgeGroup";
 import { FamilyCenterSubPages } from "items";
@@ -19,7 +19,7 @@ function SpendingLimitRow(teenId) {
   let subLabel;
   let trailing;
   teenId = teenId.teenId;
-  let obj = teenId(13874);
+  let obj = teenId(13875);
   const tmp = _createForOfIteratorHelperLoose();
   ({ trailing, subLabel } = (function getSpendingLimitRowProps(kind, subLabelWarning) {
     function renderTrailing(monthlyText) {
@@ -168,9 +168,9 @@ function FamilyCenterSettingsParentalControls() {
     navigation.navigate(outer1_6.FAMILY_CENTER_PARENTAL_CONTROLS, { selectedSubPage: CONTENT_AND_SOCIAL });
   }
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = selectedTeenUser(13858);
+  let obj = selectedTeenUser(13859);
   selectedTeenUser = obj.useSelectedTeenUser();
-  let obj1 = selectedTeenUser(13858);
+  let obj1 = selectedTeenUser(13859);
   const shouldLoadSettingsForSelectedTeenUser = obj1.useShouldLoadSettingsForSelectedTeenUser();
   let obj2 = selectedTeenUser(5828);
   let isFamilyCenterV3Enabled = obj2.useIsFamilyCenterV3Enabled({ location: "FamilyCenterSettingsControls" });
@@ -186,7 +186,7 @@ function FamilyCenterSettingsParentalControls() {
   if (null == rules) {
     rules = [];
   }
-  const ParentalControlledSpendingLimit = selectedTeenUser(13790).ParentalControlledSpendingLimit;
+  const ParentalControlledSpendingLimit = selectedTeenUser(13791).ParentalControlledSpendingLimit;
   let id;
   if (null != selectedTeenUser) {
     id = selectedTeenUser.id;
@@ -207,7 +207,7 @@ function FamilyCenterSettingsParentalControls() {
       const obj = shouldLoadSettingsForSelectedTeenUser(navigation[26]);
     }
   }, items);
-  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(13875)(rules));
+  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(13876)(rules));
   obj = { style: tmp.parentalControlsContainer };
   obj = { variant: "text-sm/semibold" };
   const intl = selectedTeenUser(1212).intl;

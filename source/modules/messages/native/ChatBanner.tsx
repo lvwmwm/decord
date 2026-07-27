@@ -1,10 +1,10 @@
-// Module ID: 10397
-// Function ID: 80222
+// Module ID: 10398
+// Function ID: 80227
 // Name: OptInChannelBanner
-// Dependencies: [31, 27, 4809, 4143, 10398, 653, 33, 4131, 689, 10399, 10400, 566, 21, 1324, 675, 4325, 5073, 4127, 1212, 4544, 5996, 6024, 4661, 5070, 7695, 2]
+// Dependencies: [31, 27, 4809, 4143, 10399, 653, 33, 4131, 689, 10400, 10401, 566, 21, 1324, 675, 4325, 5073, 4127, 1212, 4544, 5996, 6024, 4661, 5070, 7695, 2]
 // Exports: default
 
-// Module 10397 (OptInChannelBanner)
+// Module 10398 (OptInChannelBanner)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -262,7 +262,7 @@ export default function ChatBanner(channel) {
   let oldestUnreadTimestamp;
   let unreadCount;
   channel = channel.channel;
-  let obj = importDefault(10400)();
+  let obj = importDefault(10401)();
   let obj1 = channel(566);
   const items = [closure_6];
   const items1 = [channel.id];

@@ -1,5 +1,5 @@
 // Module ID: 3754
-// Function ID: 28673
+// Function ID: 28674
 // Name: CreatorMonetizationRestrictions
 // Dependencies: [2]
 

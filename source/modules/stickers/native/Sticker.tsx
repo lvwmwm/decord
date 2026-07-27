@@ -1,5 +1,5 @@
 // Module ID: 9573
-// Function ID: 74702
+// Function ID: 74703
 // Name: getStickerAssetUrl
 // Dependencies: [31, 27, 1278, 33, 4800, 4467, 1212, 7722, 9574, 5085, 3977, 5151, 5152, 2]
 // Exports: default

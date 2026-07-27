@@ -1,5 +1,5 @@
 // Module ID: 6043
-// Function ID: 54222
+// Function ID: 54223
 // Name: _generateAnimationSource
 // Dependencies: [5, 57, 31, 27, 3776, 6044, 1392, 477, 6081, 2]
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage

@@ -1,5 +1,5 @@
 // Module ID: 8677
-// Function ID: 68885
+// Function ID: 68886
 // Name: ProfileFrameUserPreview
 // Dependencies: [31, 33, 8014, 1212, 2]
 // Exports: default

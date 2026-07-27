@@ -1,10 +1,10 @@
-// Module ID: 10782
-// Function ID: 83682
+// Module ID: 10783
+// Function ID: 83687
 // Name: StageSectionHeader
 // Dependencies: [31, 27, 33, 4131, 689, 3992, 4132, 4127, 1273, 5452, 2]
 // Exports: default
 
-// Module 10782 (StageSectionHeader)
+// Module 10783 (StageSectionHeader)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 12516
-// Function ID: 96919
+// Module ID: 12517
+// Function ID: 96924
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [57, 31, 27, 1922, 5619, 12507, 1852, 482, 33, 4131, 5053, 4974, 6195, 566, 1827, 4562, 12517, 1273, 1212, 3777, 4544, 2]
+// Dependencies: [57, 31, 27, 1922, 5619, 12508, 1852, 482, 33, 4131, 5053, 4974, 6195, 566, 1827, 4562, 12518, 1273, 1212, 3777, 4544, 2]
 // Exports: default
 
-// Module 12516 (PremiumPlanSelectYearlyUpsellModal)
+// Module 12517 (PremiumPlanSelectYearlyUpsellModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -89,7 +89,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     const formatPercentResult = obj3.formatPercent(stateFromStores, closure_10 / 100);
     obj = { onClose, noDefaultButtons: true };
     obj = { style: tmp.container };
-    obj1 = { style: tmp.image, source: importDefault(12517) };
+    obj1 = { style: tmp.image, source: importDefault(12518) };
     const items2 = [callback2(closure_5, obj1), , , , , ];
     obj2 = { style: tmp.header };
     const intl = productId(1212).intl;

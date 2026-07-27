@@ -1,5 +1,5 @@
 // Module ID: 5740
-// Function ID: 49860
+// Function ID: 49861
 // Name: AutomodQuarantineEventMessageEmbedKeys
 // Dependencies: [2]
 

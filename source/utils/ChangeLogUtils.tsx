@@ -1,5 +1,5 @@
 // Module ID: 7809
-// Function ID: 61994
+// Function ID: 61995
 // Name: parseWithClassNameExtraction
 // Dependencies: [3830, 7810, 4573, 4591, 4592, 4121, 2]
 // Exports: renderChangelogMessageMarkup

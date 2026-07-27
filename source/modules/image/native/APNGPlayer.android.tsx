@@ -1,5 +1,5 @@
 // Module ID: 6153
-// Function ID: 55117
+// Function ID: 55118
 // Name: useAPNGPlayerControls
 // Dependencies: [31, 33, 6154, 2]
 // Exports: useAPNGPlayerControls

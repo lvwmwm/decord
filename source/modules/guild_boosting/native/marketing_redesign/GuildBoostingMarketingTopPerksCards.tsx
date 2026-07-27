@@ -1,10 +1,10 @@
-// Module ID: 12597
-// Function ID: 97462
+// Module ID: 12598
+// Function ID: 97467
 // Name: items
-// Dependencies: [31, 27, 4123, 33, 4131, 689, 1212, 12598, 5453, 12599, 12600, 4127, 11591, 2]
+// Dependencies: [31, 27, 4123, 33, 4131, 689, 1212, 12599, 5453, 12600, 12601, 4127, 11592, 2]
 // Exports: default
 
-// Module 12597 (items)
+// Module 12598 (items)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ let items = [
       return intl.string(require(1212) /* getSystemLocale */.t.HTvLGu);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12598) });
+      return callback(closure_3, { style, source: importDefault(12599) });
     }
   },
   {
@@ -51,7 +51,7 @@ let items = [
       return intl.string(require(1212) /* getSystemLocale */.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: require(12599) /* items1 */, autoPlay: !useReducedMotion.useReducedMotion, style };
+      const obj = { source: require(12600) /* items1 */, autoPlay: !useReducedMotion.useReducedMotion, style };
       return callback(importDefault(5453), obj);
     }
   },
@@ -65,7 +65,7 @@ let items = [
       return intl.string(require(1212) /* getSystemLocale */.t.yCjoUC);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12600) });
+      return callback(closure_3, { style, source: importDefault(12601) });
     }
   }
 ];
@@ -102,7 +102,7 @@ export default function GuildBoostingMarketingTopPerksCards() {
       return outer1_7(outer1_4, obj, arg1);
     })
   };
-  items[1] = callback(require(11591) /* getClampedIndex */.MarketingCardsScroller, obj);
+  items[1] = callback(require(11592) /* getClampedIndex */.MarketingCardsScroller, obj);
   obj.children = items;
   return callback2(closure_4, obj);
 };

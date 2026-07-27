@@ -1,10 +1,10 @@
-// Module ID: 10202
-// Function ID: 78941
+// Module ID: 10203
+// Function ID: 78946
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1316, 1838, 3759, 3948, 1850, 10182, 7739, 653, 624, 21, 7738, 483, 3764, 10203, 2]
+// Dependencies: [1316, 1838, 3759, 3948, 1850, 10183, 7739, 653, 624, 21, 7738, 483, 3764, 10204, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 10202 (_createForOfIteratorHelperLoose)
+// Module 10203 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_6 from "_isNativeReflectConstruct";

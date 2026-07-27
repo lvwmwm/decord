@@ -1,5 +1,5 @@
 // Module ID: 4487
-// Function ID: 39623
+// Function ID: 39624
 // Name: isIndexInClosedRange
 // Dependencies: [27]
 // Exports: assertDetentsArrayIsSorted, resolveSheetAllowedDetents, resolveSheetInitialDetentIndex, resolveSheetLargestUndimmedDetent

@@ -1,5 +1,5 @@
 // Module ID: 7956
-// Function ID: 63306
+// Function ID: 63307
 // Name: getPlatform
 // Dependencies: [1882, 2]
 // Exports: default

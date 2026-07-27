@@ -1,5 +1,5 @@
 // Module ID: 10117
-// Function ID: 78347
+// Function ID: 78348
 // Name: SafetyToolsSafetyTipsActionSheet
 // Dependencies: [31, 27, 10098, 33, 4131, 689, 10105, 1212, 10118, 4127, 2]
 // Exports: default

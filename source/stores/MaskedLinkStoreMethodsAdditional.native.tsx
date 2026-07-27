@@ -1,5 +1,5 @@
 // Module ID: 8141
-// Function ID: 64962
+// Function ID: 64963
 // Name: getHostname
 // Dependencies: [2]
 // Exports: getHostname, getProtocol

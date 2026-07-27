@@ -1,10 +1,10 @@
-// Module ID: 15591
-// Function ID: 120227
+// Module ID: 15603
+// Function ID: 120274
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 1908, 3759, 3768, 1850, 653, 33, 4131, 689, 15584, 10336, 507, 5490, 4472, 1212, 4562, 477, 9057, 5087, 9050, 4127, 7575, 4542, 15592, 1392, 6670, 5501, 5164, 4321, 1273, 4594, 3843, 1456, 5448, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 1908, 3759, 3768, 1850, 653, 33, 4131, 689, 15596, 10337, 507, 5490, 4472, 1212, 4562, 477, 9057, 5087, 9050, 4127, 7575, 4542, 15604, 1392, 6670, 5501, 5164, 4321, 1273, 4594, 3843, 1456, 5448, 2]
 // Exports: default
 
-// Module 15591 (_isNativeReflectConstruct)
+// Module 15603 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import openChannelPicker from "openChannelPicker";

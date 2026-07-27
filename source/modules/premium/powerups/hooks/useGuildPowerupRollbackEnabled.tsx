@@ -1,10 +1,10 @@
-// Module ID: 11524
-// Function ID: 89779
+// Module ID: 11525
+// Function ID: 89784
 // Name: useGuildPowerupRollbackEnabled
 // Dependencies: [4059, 4022, 2]
 // Exports: default, isGuildPowerupRollbackEnabled
 
-// Module 11524 (useGuildPowerupRollbackEnabled)
+// Module 11525 (useGuildPowerupRollbackEnabled)
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx");
 
 export default function useGuildPowerupRollbackEnabled(guildId, skuId, location) {

@@ -1,10 +1,10 @@
-// Module ID: 13503
-// Function ID: 103810
+// Module ID: 13504
+// Function ID: 103815
 // Name: authorizeWithPrompt
-// Dependencies: [57, 5, 4168, 4154, 1850, 4034, 653, 10560, 664, 587, 10553, 5664, 5655, 10582, 8888, 8884, 8890, 3764, 483, 507, 686, 13467, 8112, 1440, 2]
+// Dependencies: [57, 5, 4168, 4154, 1850, 4034, 653, 10561, 664, 587, 10554, 5664, 5655, 10583, 8888, 8884, 8890, 3764, 483, 507, 686, 13468, 8112, 1440, 2]
 // Exports: default
 
-// Module 13503 (authorizeWithPrompt)
+// Module 13504 (authorizeWithPrompt)
 import _slicedToArray from "_slicedToArray";
 import closure_5 from "RPC_SCOPE_CONFIG";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,13 +34,13 @@ function authenticate(authorization) {
   const _require = authorization;
   const importDefault = arg1;
   if (authorization.authorization.accessToken) {
-    let tmp16 = importDefault(10553);
+    let tmp16 = importDefault(10554);
     let obj = { errorCode: constants2.INVALID_COMMAND };
     let prototype2 = tmp16.prototype;
     tmp16 = new tmp16(obj, "Already authenticated");
     throw tmp16;
   } else if (authorization.authorization.authing) {
-    let tmp7 = importDefault(10553);
+    let tmp7 = importDefault(10554);
     obj = { errorCode: constants2.INVALID_COMMAND };
     let prototype = tmp7.prototype;
     tmp7 = new tmp7(obj, "Already authenticating");
@@ -231,7 +231,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
       }
     }
   };
-  obj[constants.AUTHENTICATE] = _require(13467).createRPCCommand(constants.AUTHENTICATE, obj);
+  obj[constants.AUTHENTICATE] = _require(13468).createRPCCommand(constants.AUTHENTICATE, obj);
   obj[constants.AUTHORIZE] = {
     handler(socket) {
       socket = socket.socket;

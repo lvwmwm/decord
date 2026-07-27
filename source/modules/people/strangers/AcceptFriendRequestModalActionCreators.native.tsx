@@ -1,5 +1,5 @@
 // Module ID: 8991
-// Function ID: 70847
+// Function ID: 70848
 // Name: openAcceptFriendRequestConfirmModal
 // Dependencies: [8992, 653, 33, 675, 4472, 8993, 1935, 2]
 // Exports: openAcceptFriendRequestConfirmModal

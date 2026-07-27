@@ -1,5 +1,5 @@
 // Module ID: 4580
-// Function ID: 40201
+// Function ID: 40202
 // Name: MAX_LENGTH_SOUND_NAME
 // Dependencies: [2]
 

@@ -1,5 +1,5 @@
 // Module ID: 10126
-// Function ID: 78389
+// Function ID: 78390
 // Name: IconUploader
 // Dependencies: [5, 31, 27, 653, 33, 4131, 4675, 5513, 1392, 10127, 4661, 1212, 2]
 // Exports: default

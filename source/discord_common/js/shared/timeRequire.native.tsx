@@ -1,5 +1,5 @@
 // Module ID: 5720
-// Function ID: 49623
+// Function ID: 49624
 // Name: timeRequire
 // Dependencies: [20, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 14512
-// Function ID: 110849
+// Module ID: 14513
+// Function ID: 110854
 // Name: useCanRotate
 // Dependencies: [57, 31, 27, 33, 4131, 8105, 8369, 4544, 5502, 4127, 5121, 5449, 2]
 // Exports: default
 
-// Module 14512 (useCanRotate)
+// Module 14513 (useCanRotate)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

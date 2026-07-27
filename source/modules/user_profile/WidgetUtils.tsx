@@ -1,5 +1,5 @@
 // Module ID: 5634
-// Function ID: 48144
+// Function ID: 48145
 // Name: widgetSupportsComment
 // Dependencies: [57, 1850, 5630, 5635, 5636, 5633, 1212, 5632, 5637, 5638, 5639, 5641, 5643, 2]
 // Exports: addPendingGameToWidget, addWidgetToPending, areWidgetGamesEqual, getGameWidgetSubtitle, getRandomElement, getRandomElements, getWidgetTitle, isGameAllowedInGameWidgets, isGameLimitReached, removePendingGameFromWidget, removeTagFromGame, removeWidgetFromPending, reorderGamesInWidget, reorderWidgets, updatePendingGameComment

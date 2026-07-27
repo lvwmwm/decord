@@ -1,10 +1,10 @@
-// Module ID: 15112
-// Function ID: 115066
+// Module ID: 15124
+// Function ID: 115112
 // Name: ChannelItemEmbeddedActivities
 // Dependencies: [31, 27, 33, 4131, 689, 5472, 4127, 2]
 // Exports: default
 
-// Module 15112 (ChannelItemEmbeddedActivities)
+// Module 15124 (ChannelItemEmbeddedActivities)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

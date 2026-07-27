@@ -1,10 +1,10 @@
-// Module ID: 11855
-// Function ID: 91879
+// Module ID: 11856
+// Function ID: 91884
 // Name: useSimilarGames
 // Dependencies: [4152, 1850, 8589, 8588, 5639, 566, 8408, 8419, 2]
 // Exports: default
 
-// Module 11855 (useSimilarGames)
+// Module 11856 (useSimilarGames)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_4 } from "set";

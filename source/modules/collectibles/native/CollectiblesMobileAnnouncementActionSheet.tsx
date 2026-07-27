@@ -1,10 +1,10 @@
-// Module ID: 15685
-// Function ID: 121026
+// Module ID: 15697
+// Function ID: 121073
 // Name: CatEarsBackdrop
-// Dependencies: [31, 27, 655, 5188, 1345, 33, 4131, 689, 1450, 5189, 1557, 3992, 15686, 4127, 1212, 15687, 5769, 5482, 5187, 15689, 6727, 4544, 2]
+// Dependencies: [31, 27, 655, 5188, 1345, 33, 4131, 689, 1450, 5189, 1557, 3992, 15698, 4127, 1212, 15699, 5769, 5482, 5187, 15701, 6727, 4544, 2]
 // Exports: default
 
-// Module 15685 (CatEarsBackdrop)
+// Module 15697 (CatEarsBackdrop)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
@@ -47,7 +47,7 @@ function CatEarsBackdrop() {
   obj1 = { top: -138 * result1, left: tmp6, right: tmp6 };
   items1[1] = obj1;
   const obj2 = {};
-  const obj3 = { uri: top(15686) };
+  const obj3 = { uri: top(15698) };
   obj2.source = obj3;
   obj2.style = tmp.mascotImage;
   obj2.accessibilityElementsHidden = true;
@@ -98,7 +98,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   let showGiftingMarketing;
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = markAsDismissed(15687);
+  let obj = markAsDismissed(15699);
   const profileFramesMarketing = obj.useProfileFramesMarketing("CollectiblesMobileAnnouncementActionSheet");
   const intl = markAsDismissed(1212).intl;
   const string = intl.string;
@@ -149,7 +149,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   obj = { onDismiss: callback1, backdropChildren: memo };
   obj = { style: tmp.container };
   const obj1 = {};
-  const obj2 = { uri: importDefault(15689) };
+  const obj2 = { uri: importDefault(15701) };
   obj1.source = obj2;
   obj1.style = tmp.framePreviewImage;
   obj1.accessibilityElementsHidden = true;

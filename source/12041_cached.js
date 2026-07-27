@@ -1,7 +1,7 @@
 // Module ID: 12041
-// Function ID: 93662
+// Function ID: 93656
 // Name: cached
-// Dependencies: [12015]
+// Dependencies: [12016]
 
 // Module 12041 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "stafi", verb: "a\u00F0 hafa" }, file: { unit: "b\u00E6ti", verb: "a\u00F0 hafa" }, array: { unit: "hluti", verb: "a\u00F0 hafa" }, set: { unit: "hluti", verb: "a\u00F0 hafa" } };
-      let closure_1 = { regex: "gildi", email: "netfang", url: "vefsl\u00F3\u00F0", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dagsetning og t\u00EDmi", date: "ISO dagsetning", time: "ISO t\u00EDmi", duration: "ISO t\u00EDmalengd", ipv4: "IPv4 address", ipv6: "IPv6 address", cidrv4: "IPv4 range", cidrv6: "IPv6 range", base64: "base64-encoded strengur", base64url: "base64url-encoded strengur", json_string: "JSON strengur", e164: "E.164 t\u00F6lugildi", jwt: "JWT", template_literal: "gildi" };
-      let closure_2 = { nan: "NaN", number: "n\u00FAmer", array: "fylki" };
+      let closure_0 = { string: { unit: "karakter", verb: "memiliki" }, file: { unit: "byte", verb: "memiliki" }, array: { unit: "item", verb: "memiliki" }, set: { unit: "item", verb: "memiliki" } };
+      let closure_1 = { regex: "input", email: "alamat email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "tanggal dan waktu format ISO", date: "tanggal format ISO", time: "jam format ISO", duration: "durasi format ISO", ipv4: "alamat IPv4", ipv6: "alamat IPv6", cidrv4: "rentang alamat IPv4", cidrv6: "rentang alamat IPv6", base64: "string dengan enkode base64", base64url: "string dengan enkode base64url", json_string: "string JSON", e164: "angka E.164", jwt: "JWT", template_literal: "input" };
+      let closure_2 = { nan: "NaN" };
       return (code) => {
         let minimum;
         let origin;
@@ -82,113 +82,113 @@ if (self2) {
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp51 + " \u00FEar sem \u00E1 a\u00F0 vera instanceof " + code.expected;
+            let combined = "Input tidak valid: diharapkan instanceof " + code.expected + ", diterima " + tmp51;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp51 + " \u00FEar sem \u00E1 a\u00F0 vera " + expected;
+            combined = "Input tidak valid: diharapkan " + expected + ", diterima " + tmp51;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Rangt gildi: gert r\u00E1\u00F0 fyrir " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Input tidak valid: diharapkan " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "\u00D3gilt val: m\u00E1 vera eitt af eftirfarandi " + closure_2.joinValues(code.values, "|");
+            combined1 = "Pilihan tidak valid: diharapkan salah satu dari " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str28 = "<";
+          let str29 = "<";
           if (code.inclusive) {
-            str28 = "<=";
+            str29 = "<=";
           }
           const tmp26 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str29 = "gildi";
+          let str30 = "value";
           if (tmp26) {
             if (tmp28) {
-              str29 = origin2;
+              str30 = origin2;
             }
             let str = code.maximum.toString();
             const unit = tmp26.unit;
-            let str34 = "hluti";
+            let str35 = "elemen";
             if (null != unit) {
-              str34 = unit;
+              str35 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + str29 + " hafi " + str28 + str + " " + str34;
-            const str33 = code.maximum;
+            let combined2 = "Terlalu besar: diharapkan " + str30 + " memiliki " + str29 + str + " " + str35;
+            const str34 = code.maximum;
           } else {
-            let tmp29 = str29;
+            let tmp29 = str30;
             if (tmp28) {
               tmp29 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + tmp29 + " s\u00E9 " + str28 + code.maximum.toString();
-            const str30 = code.maximum;
+            combined2 = "Terlalu besar: diharapkan " + tmp29 + " menjadi " + str29 + code.maximum.toString();
+            const str31 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str22 = ">";
+          let str23 = ">";
           if (code.inclusive) {
-            str22 = ">=";
+            str23 = ">=";
           }
           const tmp15 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
           if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " hafi " + str22 + str1 + " " + tmp15.unit;
+            let combined3 = "Terlalu kecil: diharapkan " + origin + " memiliki " + str23 + str1 + " " + tmp15.unit;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " s\u00E9 " + str22 + str1;
+            combined3 = "Terlalu kecil: diharapkan " + origin + " menjadi " + str23 + str1;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 byrja \u00E1 \"" + code.prefix + "\"";
+            let combined4 = "String tidak valid: harus dimulai dengan \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 enda \u00E1 \"" + code.suffix + "\"";
+            combined4 = "String tidak valid: harus berakhir dengan \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 innihalda \"" + code.includes + "\"";
+            combined4 = "String tidak valid: harus menyertakan \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 fylgja mynstri " + code.pattern;
+            combined4 = "String tidak valid: harus sesuai pola " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "Rangt " + format;
+            combined4 = "" + format + " tidak valid";
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "R\u00F6ng tala: ver\u00F0ur a\u00F0 vera margfeldi af " + code.divisor;
+          return "Angka tidak valid: harus kelipatan dari " + code.divisor;
         } else if ("unrecognized_keys" === code) {
-          let str7 = "ur lykill";
+          let str7 = "";
           if (code.keys.length > 1) {
-            str7 = "ir lyklar";
+            str7 = "s";
           }
           const _HermesInternal3 = HermesInternal;
-          return "\u00D3\u00FEekkt " + str7 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "Kunci tidak dikenali " + str7 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Rangur lykill \u00ED " + code.origin;
+            return "Kunci tidak valid di " + code.origin;
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "Rangt gildi \u00ED " + code.origin;
+                return "Nilai tidak valid di " + code.origin;
               }
             }
-            return "Rangt gildi";
+            return "Input tidak valid";
           }
         }
       };

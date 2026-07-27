@@ -1,5 +1,5 @@
 // Module ID: 6774
-// Function ID: 59396
+// Function ID: 59397
 // Name: AnimatedAvatarsAbstractUI
 // Dependencies: [33, 5085, 6775, 2]
 // Exports: AnimatedAvatarsAbstractUI

@@ -1,5 +1,5 @@
 // Module ID: 4302
-// Function ID: 37671
+// Function ID: 37672
 // Name: hasSubgameInfoChanged
 // Dependencies: [5, 4151, 653, 4303, 22, 4304, 3822, 2]
 // Exports: convertMapToRobloxSubgameInfo, getSubgameMetadata, hasRunningGameChanged, isRobloxSubgameApplication, isRobloxSubgameGame, keyForRobloxGame, maybeAddAdditionalGameMetadata, maybeTransformRobloxSubgameToRoblox, openRobloxURLWithRootPlaceId, updateRunningGameWithRobloxSubgameInfo

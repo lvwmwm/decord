@@ -1,5 +1,5 @@
 // Module ID: 9931
-// Function ID: 76817
+// Function ID: 76818
 // Name: useGuildOnboardingAvailable
 // Dependencies: [1910, 653, 566, 2]
 // Exports: default, isGuildOnboardingAvailable

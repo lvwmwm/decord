@@ -1,5 +1,5 @@
 // Module ID: 5929
-// Function ID: 52644
+// Function ID: 52645
 // Name: __handleIntersections
 // Dependencies: [2]
 // Exports: getIntersectionObserver, unwatch, watch

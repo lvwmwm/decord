@@ -1,5 +1,5 @@
 // Module ID: 5607
-// Function ID: 47691
+// Function ID: 47692
 // Name: canUseGuildSpace
 // Dependencies: [3759, 653, 5608, 566, 2]
 // Exports: canUseGuildSpace, useCanUseGuildSpace

@@ -1,10 +1,10 @@
-// Module ID: 12147
-// Function ID: 95155
+// Module ID: 12148
+// Function ID: 95160
 // Name: AddFriendNicknameModal
 // Dependencies: [5, 57, 31, 27, 3768, 1850, 33, 4131, 689, 566, 1212, 4338, 8850, 5585, 4562, 4127, 6676, 3970, 2]
 // Exports: default
 
-// Module 12147 (AddFriendNicknameModal)
+// Module 12148 (AddFriendNicknameModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

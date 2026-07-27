@@ -1,10 +1,10 @@
-// Module ID: 15844
-// Function ID: 122363
+// Module ID: 15856
+// Function ID: 122410
 // Name: isStableStreamParticipant
 // Dependencies: [4144, 1194, 4178, 1850, 4149, 620, 566, 4320, 9018, 9981, 2]
 // Exports: default, isStableParticipantWithUser, stableParticipantHasVideo
 
-// Module 15844 (isStableStreamParticipant)
+// Module 15856 (isStableStreamParticipant)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

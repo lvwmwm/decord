@@ -1,10 +1,10 @@
-// Module ID: 13627
-// Function ID: 104744
+// Module ID: 13628
+// Function ID: 104749
 // Name: ChangeBannerColorRow
-// Dependencies: [5, 31, 27, 7877, 653, 33, 4131, 689, 5462, 3777, 4099, 4675, 5498, 5186, 1212, 6570, 5501, 5164, 7575, 13628, 566, 7890, 7922, 7919, 665, 7880, 13629, 13631, 4127, 1273, 13636, 2]
+// Dependencies: [5, 31, 27, 7877, 653, 33, 4131, 689, 5462, 3777, 4099, 4675, 5498, 5186, 1212, 6570, 5501, 5164, 7575, 13629, 566, 7890, 7922, 7919, 665, 7880, 13630, 13632, 4127, 1273, 13637, 2]
 // Exports: default
 
-// Module 13627 (ChangeBannerColorRow)
+// Module 13628 (ChangeBannerColorRow)
 import closure_3 from "jsxProd";
 import set from "set";
 import { View } from "styles";
@@ -73,17 +73,17 @@ function ChangeBannerColorRow(user) {
   obj.label = callback(_require(7575).FormLabel, obj1);
   const obj2 = { style: tmp.selectedColor };
   obj3 = { style: tmp.bannerColor, color: num2 };
-  const items2 = [callback(num2(13631), obj3), , ];
+  const items2 = [callback(num2(13632), obj3), , ];
   obj4 = { style: tmp.selectedColorHex, variant: "text-md/medium", color: "interactive-text-default" };
   const memoizedImageSourceResult = obj3.memoizedImageSource(pendingAvatarSrc);
   obj4.children = _require(665).int2hex(num2);
   items2[1] = callback(_require(4127).Text, obj4);
-  obj5 = { style: tmp.rowArrow, size: _require(1273).Icon.Sizes.CUSTOM, source: num2(13636) };
+  obj5 = { style: tmp.rowArrow, size: _require(1273).Icon.Sizes.CUSTOM, source: num2(13637) };
   items2[2] = callback(_require(1273).Icon, obj5);
   obj2.children = items2;
   obj.trailing = callback2(View, obj2);
   obj.onPress = function handleChangeColor() {
-    num2(13629)({ color: num2, onSelect: dependencyMap });
+    num2(13630)({ color: num2, onSelect: dependencyMap });
   };
   return callback(_require(5164).TableRow, obj);
 }
@@ -189,7 +189,7 @@ export default function ChangeBannerActionSheet(isTryItOut) {
   if (tmp28) {
     const obj10 = { style: tmp.upsellButton };
     const obj11 = { analyticsObject: constants.EDIT_PROFILE_BANNER };
-    obj10.children = callback(_handleBannerUploadSelect(13628), obj11);
+    obj10.children = callback(_handleBannerUploadSelect(13629), obj11);
     tmp28 = callback(View, obj10);
   }
   items3[1] = tmp28;

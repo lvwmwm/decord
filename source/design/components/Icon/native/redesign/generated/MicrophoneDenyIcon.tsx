@@ -1,5 +1,5 @@
 // Module ID: 8799
-// Function ID: 69660
+// Function ID: 69661
 // Name: MicrophoneDenyIcon
 // Dependencies: [31, 33, 689, 3834, 8800, 2]
 // Exports: MicrophoneDenyIcon

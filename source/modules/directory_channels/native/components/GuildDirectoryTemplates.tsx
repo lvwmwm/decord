@@ -1,5 +1,5 @@
 // Module ID: 10014
-// Function ID: 77499
+// Function ID: 77500
 // Name: GuildTemplatesItem
 // Dependencies: [31, 27, 9996, 10001, 33, 4131, 10015, 1273, 10016, 1456, 1557, 10000, 4127, 1212, 5501, 8928, 2]
 // Exports: default

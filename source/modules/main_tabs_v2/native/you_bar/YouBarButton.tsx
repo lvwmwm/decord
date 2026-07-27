@@ -1,9 +1,9 @@
-// Module ID: 15176
-// Function ID: 115600
+// Module ID: 15189
+// Function ID: 115649
 // Name: YouBarButtonIcon
-// Dependencies: [31, 27, 14058, 33, 4131, 689, 7909, 9056, 6625, 2]
+// Dependencies: [31, 27, 14059, 33, 4131, 689, 7909, 9056, 6625, 2]
 
-// Module 15176 (YouBarButtonIcon)
+// Module 15189 (YouBarButtonIcon)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";

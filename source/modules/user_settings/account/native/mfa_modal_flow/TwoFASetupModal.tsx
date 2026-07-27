@@ -1,10 +1,10 @@
-// Module ID: 13747
-// Function ID: 105504
+// Module ID: 13748
+// Function ID: 105509
 // Name: getPageMarker
-// Dependencies: [31, 27, 13748, 33, 4131, 689, 1456, 13746, 5121, 4544, 1212, 13749, 5087, 13750, 13753, 13754, 13756, 5450, 9131, 5517, 2]
+// Dependencies: [31, 27, 13749, 33, 4131, 689, 1456, 13747, 5121, 4544, 1212, 13750, 5087, 13751, 13754, 13755, 13757, 5450, 9131, 5517, 2]
 // Exports: TwoFASetupModalScreen, default
 
-// Module 13747 (getPageMarker)
+// Module 13748 (getPageMarker)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { TwoFAModalSetupSections } from "frozen";
@@ -15,7 +15,7 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function getPageMarker(arg0) {
-  return callback(require(13749) /* PageMarker */.PageMarker, { currentPage: table[arg0], numMarkers: Object.keys(table).length - 1 });
+  return callback(require(13750) /* PageMarker */.PageMarker, { currentPage: table[arg0], numMarkers: Object.keys(table).length - 1 });
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = {};

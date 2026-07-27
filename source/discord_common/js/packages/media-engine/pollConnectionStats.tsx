@@ -1,5 +1,5 @@
 // Module ID: 4236
-// Function ID: 37143
+// Function ID: 37144
 // Name: pollConnectionStats
 // Dependencies: [5, 4228, 4237, 2]
 // Exports: default

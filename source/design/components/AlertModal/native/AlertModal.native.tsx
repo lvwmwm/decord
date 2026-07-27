@@ -1,5 +1,5 @@
 // Module ID: 4476
-// Function ID: 39546
+// Function ID: 39547
 // Name: getAlertModalItemKey
 // Dependencies: [5, 57, 830, 31, 27, 482, 33, 4131, 689, 4477, 4473, 3992, 1820, 4478, 4525, 682, 4532, 1212, 3850, 1557, 4540, 1450, 4541, 4542, 4127, 4543, 4544, 2]
 // Exports: showConfirmModal, useDismissModalCallback
@@ -203,7 +203,7 @@ class AlertModal {
         return obj;
       }
     }
-    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3992").runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39578, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
+    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3992").runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39579, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
     B.__closure = obj;
     B.__workletHash = 655123755546;
     B.__initData = memo;

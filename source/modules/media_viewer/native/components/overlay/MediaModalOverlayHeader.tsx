@@ -1,10 +1,10 @@
-// Module ID: 12238
-// Function ID: 95577
+// Module ID: 12239
+// Function ID: 95582
 // Name: MediaModalOverlayHeader
-// Dependencies: [31, 27, 33, 4131, 5084, 12235, 8107, 9494, 3992, 5121, 12239, 1212, 5119, 1273, 689, 4127, 12240, 9231, 477, 12241, 8895, 2]
+// Dependencies: [31, 27, 33, 4131, 5084, 12236, 8107, 9494, 3992, 5121, 12240, 1212, 5119, 1273, 689, 4127, 12241, 9231, 477, 12242, 8895, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 12238 (MediaModalOverlayHeader)
+// Module 12239 (MediaModalOverlayHeader)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -42,7 +42,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   ({ source, contextName, contextIcon } = arg0);
   ({ onClose, disableDownload, disableMediaOverlayButton, shareable, animationDriver, channelId } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(12235) /* useOverlayLayoutDriver */;
+  let obj = require(12236) /* useOverlayLayoutDriver */;
   const headerLayoutAnimation = obj.useHeaderLayoutAnimation(animationDriver);
   let obj1 = require(8107) /* useMediaShareActions */;
   const mediaShareActions = obj1.useMediaShareActions({ source, disableDownload, shareable });
@@ -61,7 +61,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   obj4.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj4.icon = callback(require(5119) /* XSmallIcon */.XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj4.onPress = onClose;
-  const items1 = [callback(importDefault(12239), obj4), ];
+  const items1 = [callback(importDefault(12240), obj4), ];
   let tmp11Result = null != contextName;
   if (tmp11Result) {
     const obj5 = { style: tmp.navbarName };
@@ -89,7 +89,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   if (tmp24Result) {
     const obj10 = { style: tmp.navbarRight };
     const obj11 = { source };
-    const items4 = [callback(importDefault(12240), obj11), ];
+    const items4 = [callback(importDefault(12241), obj11), ];
     let tmp29 = null;
     if (!disableMediaOverlayButton) {
       const obj12 = {

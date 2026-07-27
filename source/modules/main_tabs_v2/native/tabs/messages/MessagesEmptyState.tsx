@@ -1,10 +1,10 @@
-// Module ID: 15019
-// Function ID: 114470
+// Module ID: 15020
+// Function ID: 114475
 // Name: MessagesEmptyState
-// Dependencies: [57, 31, 27, 33, 4131, 1450, 1456, 8364, 480, 4664, 14060, 15016, 4127, 1212, 4544, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 1450, 1456, 8364, 480, 4664, 14061, 15017, 4127, 1212, 4544, 2]
 // Exports: default
 
-// Module 15019 (MessagesEmptyState)
+// Module 15020 (MessagesEmptyState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -45,7 +45,7 @@ export default function MessagesEmptyState() {
   const result = 0.9 * width;
   let obj2 = _require(4664);
   const isScreenLandscape = obj2.useIsScreenLandscape();
-  _require(14060);
+  _require(14061);
   obj = { alwaysBounceVertical: false, bounces: false };
   const items1 = [tmp.scrollViewContentContainer, ];
   let tmp15;
@@ -58,7 +58,7 @@ export default function MessagesEmptyState() {
   obj2 = { style: tmp.container, onLayout: callback };
   const obj3 = { style: tmp.innerContainer };
   const obj4 = { style: tmp.imageContainer };
-  const obj5 = { resizeMode: "contain", source: navigation(15016) };
+  const obj5 = { resizeMode: "contain", source: navigation(15017) };
   const obj6 = {};
   let num = 350;
   if (result < 622) {

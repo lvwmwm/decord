@@ -1,10 +1,10 @@
-// Module ID: 10687
-// Function ID: 83215
+// Module ID: 10688
+// Function ID: 83220
 // Name: getGoLiveAutoQualityExperimentConfig
 // Dependencies: [1188, 4221, 4186, 1325, 566, 587, 4310, 2]
 // Exports: maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 10687 (getGoLiveAutoQualityExperimentConfig)
+// Module 10688 (getGoLiveAutoQualityExperimentConfig)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { ApplicationStreamPresets } from "makeButton";

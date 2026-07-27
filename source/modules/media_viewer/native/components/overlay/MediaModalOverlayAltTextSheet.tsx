@@ -1,10 +1,10 @@
-// Module ID: 10836
-// Function ID: 84123
+// Module ID: 10837
+// Function ID: 84128
 // Name: MediaViewerAltTextSheet
-// Dependencies: [31, 33, 4131, 689, 10837, 4664, 5187, 5186, 1212, 4127, 2]
+// Dependencies: [31, 33, 4131, 689, 10838, 4664, 5187, 5186, 1212, 4127, 2]
 // Exports: default
 
-// Module 10836 (MediaViewerAltTextSheet)
+// Module 10837 (MediaViewerAltTextSheet)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -17,7 +17,7 @@ _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltTextSheet.tsx");
 
 export default function MediaViewerAltTextSheet(description) {
-  let obj = require(10837) /* useMessagePreviewHeightStore */;
+  let obj = require(10838) /* useMessagePreviewHeightStore */;
   const messagePreviewCollapsedheight = obj.useMessagePreviewCollapsedheight();
   let obj1 = require(4664) /* getIsScreenLandscape */;
   let num = 70;

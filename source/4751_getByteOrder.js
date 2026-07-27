@@ -1,5 +1,5 @@
 // Module ID: 4751
-// Function ID: 41269
+// Function ID: 41270
 // Name: getByteOrder
 // Dependencies: []
 

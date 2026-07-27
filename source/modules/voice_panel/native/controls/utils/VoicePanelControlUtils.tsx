@@ -1,9 +1,9 @@
-// Module ID: 15908
-// Function ID: 123012
+// Module ID: 15920
+// Function ID: 123059
 // Name: getDrawerSpec
 // Dependencies: [9851, 2]
 
-// Module 15908 (getDrawerSpec)
+// Module 15920 (getDrawerSpec)
 let closure_2 = { code: "function getDrawerSpec_VoicePanelControlUtilsTsx1(height,top){const{roundToNearestPixel}=this.__closure;const maxHeight=height-top;return{minHeight:roundToNearestPixel(maxHeight*0.65),maxHeight:maxHeight};}" };
 const tmp2 = (() => {
   export function getDrawerSpec(height, top) {

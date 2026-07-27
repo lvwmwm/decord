@@ -1,5 +1,5 @@
 // Module ID: 7818
-// Function ID: 62054
+// Function ID: 62055
 // Name: checkForJumboEmoji
 // Dependencies: [653, 4465, 4047, 7819, 4115, 1184, 2]
 // Exports: runMessageMarkupPostProcessors

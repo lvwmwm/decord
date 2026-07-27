@@ -1,5 +1,5 @@
 // Module ID: 7941
-// Function ID: 63225
+// Function ID: 63226
 // Name: NativeShadowType
 // Dependencies: [2]
 

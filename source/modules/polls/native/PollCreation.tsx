@@ -1,10 +1,10 @@
-// Module ID: 11309
-// Function ID: 87931
+// Module ID: 11310
+// Function ID: 87936
 // Name: UnsavedChangesAlertModal
-// Dependencies: [31, 27, 6088, 33, 4131, 689, 477, 4476, 1212, 6670, 1273, 11310, 4127, 11311, 4099, 11312, 1935, 5164, 3990, 8364, 480, 5159, 11308, 3832, 9613, 3844, 11313, 11318, 5093, 6020, 4473, 11319, 6695, 5120, 11320, 7575, 11322, 9024, 2]
+// Dependencies: [31, 27, 6088, 33, 4131, 689, 477, 4476, 1212, 6670, 1273, 11311, 4127, 11312, 4099, 11313, 1935, 5164, 3990, 8364, 480, 5159, 11309, 3832, 9613, 3844, 11314, 11319, 5093, 6020, 4473, 11320, 6695, 5120, 11321, 7575, 11323, 9024, 2]
 // Exports: default
 
-// Module 11309 (UnsavedChangesAlertModal)
+// Module 11310 (UnsavedChangesAlertModal)
 import importAllResult from "FocusHelperState";
 import get_ActivityIndicator from "useTrackPollCreationEvents";
 import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER";
@@ -44,7 +44,7 @@ function UnsavedChangesAlertModal(onConfirm) {
 }
 function AddAnswerButton(onPress) {
   const tmp = callback3();
-  let obj = { source: importDefault(11310), size: require(1273) /* Button */.Icon.Sizes.LARGE, color: tmp.addAnswerIcon.color };
+  let obj = { source: importDefault(11311), size: require(1273) /* Button */.Icon.Sizes.LARGE, color: tmp.addAnswerIcon.color };
   obj = { onPress: onPress.onPress, style: tmp.addAnswerButtonDefault, accessibilityRole: "button" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.B2Uvme);
@@ -59,7 +59,7 @@ function AddAnswerButton(onPress) {
 function PollDurationSelectionRow(selectedDuration) {
   selectedDuration = selectedDuration.selectedDuration;
   const onChange = selectedDuration.onChange;
-  const tmp = onChange(11311)()[selectedDuration];
+  const tmp = onChange(11312)()[selectedDuration];
   let obj = {};
   const intl = selectedDuration(1212).intl;
   obj.label = intl.string(selectedDuration(1212).t.bGHzxb);
@@ -170,7 +170,7 @@ export default function PollCreation(channel) {
   let closure_16;
   function handleCancelClose() {
     callback2();
-    channel(11308).closeCreatePollModal();
+    channel(11309).closeCreatePollModal();
     const AccessibilityAnnouncer = channel(3844).AccessibilityAnnouncer;
     const intl = channel(1212).intl;
     AccessibilityAnnouncer.announce(intl.string(channel(1212).t["+G3oRq"]));
@@ -192,7 +192,7 @@ export default function PollCreation(channel) {
   dependencyMap = answers.useRef(false);
   const callback = answers.useCallback(() => {
     dependencyMap.current = true;
-    let obj = channel(11308);
+    let obj = channel(11309);
     obj.closeCreatePollModal();
     obj = { key: "POLL_CREATED_SUCCESS", IconComponent: channel(9613).PollsIcon };
     const intl = channel(1212).intl;
@@ -204,7 +204,7 @@ export default function PollCreation(channel) {
     const intl = channel(1212).intl;
     AccessibilityAnnouncer.announce(intl.formatToPlainString(channel(1212).t.BByGU4, { number: indexToRemove.indexToRemove + 1 }));
   }, []);
-  const tmp7 = onCancel(11313)(channel, callback, callback1);
+  const tmp7 = onCancel(11314)(channel, callback, callback1);
   answers = tmp7.answers;
   ({ question: closure_4, allowMultiSelect } = tmp7);
   ({ setAllowMultiSelect: closure_6, canAddMoreAnswers, canRemoveMoreAnswers: closure_7, handleAnswerTextChange: closure_8, handleEmojiSelect: closure_9, handleAddAnswer } = tmp7);
@@ -212,7 +212,7 @@ export default function PollCreation(channel) {
   ({ createPollError, shouldFocusOnInvalidField } = tmp7);
   const setShouldFocusOnInvalidField = tmp7.setShouldFocusOnInvalidField;
   ({ handleQuestionChange, handleSubmitPoll, duration, setDuration, submitting } = tmp7);
-  let obj1 = channel(11318);
+  let obj1 = channel(11319);
   closure_16 = obj1.useTrackPollCreationEvents(answers, allowMultiSelect).trackPollCreationCancelled;
   let obj2 = channel(5093);
   obj2.useNavigatorBackPressHandler(() => {
@@ -236,7 +236,7 @@ export default function PollCreation(channel) {
       handleAddAnswer();
     }
   };
-  let obj4 = onCancel(11319)(obj);
+  let obj4 = onCancel(11320)(obj);
   const items1 = [fieldErrors, obj4, setShouldFocusOnInvalidField, shouldFocusOnInvalidField];
   const effect1 = answers.useEffect(() => {
     const keys = Object.keys(fieldErrors);
@@ -296,9 +296,9 @@ export default function PollCreation(channel) {
       anyErrorMessage = createPollError.getAnyErrorMessage();
     }
     obj7.children = anyErrorMessage;
-    tmp17Result = callback(onCancel(11320), obj7);
+    tmp17Result = callback(onCancel(11321), obj7);
     const tmp17 = callback;
-    const tmp20 = onCancel(11320);
+    const tmp20 = onCancel(11321);
   }
   const items6 = [tmp17Result, , ];
   const obj8 = { ref: obj4.refWithKey("question"), onChange: handleQuestionChange, onSubmitEditing: obj4.focusNext };
@@ -324,7 +324,7 @@ export default function PollCreation(channel) {
         tmp3 = fieldErrors["answer-" + localCreationAnswerId.localCreationAnswerId];
       }
       obj.error = tmp3;
-      return outer1_9(onCancel(11322), obj, localCreationAnswerId.localCreationAnswerId);
+      return outer1_9(onCancel(11323), obj, localCreationAnswerId.localCreationAnswerId);
     }),
 
   ];

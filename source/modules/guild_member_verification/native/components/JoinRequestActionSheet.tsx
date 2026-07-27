@@ -1,9 +1,9 @@
-// Module ID: 15363
-// Function ID: 117180
+// Module ID: 15376
+// Function ID: 117229
 // Name: JoinRequestActionSheet
-// Dependencies: [31, 27, 4123, 1858, 1850, 653, 33, 4131, 566, 7922, 7892, 3992, 8015, 4067, 5484, 3835, 689, 665, 7927, 6125, 1905, 7923, 5187, 1273, 8307, 1212, 3843, 5189, 15364, 5446, 2]
+// Dependencies: [31, 27, 4123, 1858, 1850, 653, 33, 4131, 566, 7922, 7892, 3992, 8015, 4067, 5484, 3835, 689, 665, 7927, 6125, 1905, 7923, 5187, 1273, 8307, 1212, 3843, 5189, 15377, 5446, 2]
 
-// Module 15363 (JoinRequestActionSheet)
+// Module 15376 (JoinRequestActionSheet)
 import importAllResult from "result";
 import { View } from "BottomSheetModal";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

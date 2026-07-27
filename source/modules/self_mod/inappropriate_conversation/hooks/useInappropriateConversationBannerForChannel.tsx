@@ -1,10 +1,10 @@
-// Module ID: 10370
-// Function ID: 80045
+// Module ID: 10371
+// Function ID: 80050
 // Name: useInappropriateConversationBannerForChannel
-// Dependencies: [9031, 10069, 10070, 10072, 10369, 2]
+// Dependencies: [9031, 10069, 10070, 10072, 10370, 2]
 // Exports: useInappropriateConversationBannerForChannel
 
-// Module 10370 (useInappropriateConversationBannerForChannel)
+// Module 10371 (useInappropriateConversationBannerForChannel)
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";
 
 const result = require("useSafetyAlertsSettingOrDefault").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx");
@@ -16,7 +16,7 @@ export const useInappropriateConversationBannerForChannel = function useInapprop
   const safetyAlertsSettingOrDefault = require(10070) /* useSafetyAlertsSettingOrDefault */.useSafetyAlertsSettingOrDefault();
   const obj3 = require(10070) /* useSafetyAlertsSettingOrDefault */;
   const inappropriateConversationWarningsForChannel = require(10072) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
-  require(10369) /* useChannelSafetyWarning */;
+  require(10370) /* useChannelSafetyWarning */;
   if (isEligibleForInappropriateConversationWarning) {
     if (safetyAlertsSettingOrDefault) {
       if (0 !== inappropriateConversationWarningsForChannel.length) {

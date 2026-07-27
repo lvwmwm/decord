@@ -1,5 +1,5 @@
 // Module ID: 8279
-// Function ID: 66497
+// Function ID: 66498
 // Name: useCanSendStageStartNotification
 // Dependencies: [4052, 3759, 482, 566, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle

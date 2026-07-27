@@ -1,11 +1,43 @@
 // Module ID: 13295
-// Function ID: 102109
+// Function ID: 102112
 // Name: check
-// Dependencies: [13294]
+// Dependencies: []
 
 // Module 13295 (check)
+const self = this;
+function check(Math) {
+  let tmp = Math;
+  if (Math) {
+    const _Math = Math;
+    tmp = Math.Math === Math;
+  }
+  if (tmp) {
+    tmp = Math;
+  }
+  return tmp;
+}
+let checkResult = check("object" === typeof globalThis && globalThis);
+if (!checkResult) {
+  const _window = window;
+  checkResult = check("object" === typeof window && window);
+  const tmp3 = "object" === typeof window && window;
+}
+if (!checkResult) {
+  const _self = self;
+  checkResult = check("object" === typeof self && self);
+  const tmp4 = "object" === typeof self && self;
+}
+if (!checkResult) {
+  checkResult = check("object" === typeof global && global);
+  const tmp5 = "object" === typeof global && global;
+}
+if (!checkResult) {
+  checkResult = check("object" === typeof self && self);
+  const tmp6 = "object" === typeof self && self;
+}
+if (!checkResult) {
+  const _Function = Function;
+  checkResult = Function("return this")();
+}
 
-export default (arg0, value) => {
-  const obj = { value, configurable: true, writable: true };
-  defineProperty(require(13294) /* check */, arg0, obj);
-};
+export default checkResult;

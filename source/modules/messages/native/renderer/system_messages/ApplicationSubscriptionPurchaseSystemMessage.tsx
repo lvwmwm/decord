@@ -1,5 +1,5 @@
 // Module ID: 7753
-// Function ID: 61716
+// Function ID: 61717
 // Name: createApplicationSubscriptionPurchaseSystemMessage
 // Dependencies: [7684, 7718, 7686, 7687, 2]
 // Exports: createApplicationSubscriptionPurchaseSystemMessage

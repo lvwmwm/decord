@@ -1,10 +1,10 @@
-// Module ID: 11682
-// Function ID: 90616
+// Module ID: 11683
+// Function ID: 90621
 // Name: useShowWelcomeModal
-// Dependencies: [31, 11683, 1908, 1838, 3959, 11684, 566, 11685, 4099, 11686, 1935, 2]
+// Dependencies: [31, 11684, 1908, 1838, 3959, 11685, 566, 11686, 4099, 11687, 1935, 2]
 // Exports: openWelcomeActionSheet, useShowWelcomeModal
 
-// Module 11682 (useShowWelcomeModal)
+// Module 11683 (useShowWelcomeModal)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { NO_WELCOME_SCREEN } from "_isNativeReflectConstruct";
@@ -78,5 +78,5 @@ export const useShowWelcomeModal = function useShowWelcomeModal(guildId, channel
 export const openWelcomeActionSheet = function openWelcomeActionSheet(onHide) {
   const guildId = onHide.guildId;
   const obj = importDefault(4099);
-  obj.openLazy(require(1935) /* maybeLoadBundle */(11686, dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
+  obj.openLazy(require(1935) /* maybeLoadBundle */(11687, dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
 };

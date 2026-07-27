@@ -1,7 +1,7 @@
 // Module ID: 4178
-// Function ID: 35472
+// Function ID: 35473
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 5, 4179, 4184, 4045, 4151, 4200, 1316, 1194, 4201, 4202, 1348, 4203, 1850, 12820, 653, 4196, 4345, 12821, 662, 12822, 4192, 3, 664, 477, 4228, 4016, 4676, 12823, 12824, 12825, 10347, 12826, 22, 12807, 12827, 12828, 12829, 12830, 12831, 12832, 12833, 8784, 675, 686, 10726, 12834, 12835, 4954, 12836, 12881, 12882, 12883, 12884, 12885, 12886, 4191, 4307, 4125, 3742, 587, 12887, 10705, 5141, 12891, 12892, 1212, 4451, 12893, 12894, 12895, 44, 12819, 12818, 12896, 12802, 1184, 4189, 10196, 12897, 12898, 12899, 12900, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 5, 4179, 4184, 4045, 4151, 4200, 1316, 1194, 4201, 4202, 1348, 4203, 1850, 12821, 653, 4196, 4345, 12822, 662, 12823, 4192, 3, 664, 477, 4228, 4016, 4676, 12824, 12825, 12826, 10348, 12827, 22, 12808, 12828, 12829, 12830, 12831, 12832, 12833, 12834, 8784, 675, 686, 10727, 12835, 12836, 4954, 12837, 12882, 12883, 12884, 12885, 12886, 12887, 4191, 4307, 4125, 3742, 587, 12888, 10706, 5141, 12892, 12893, 1212, 4451, 12894, 12895, 12896, 44, 12820, 12819, 12897, 12803, 1184, 4189, 10197, 12898, 12899, 12900, 12901, 566, 2]
 
 // Module 4178 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
@@ -196,7 +196,7 @@ function getDefaultSettings() {
   return obj;
 }
 function getHdrCaptureMode(location) {
-  let obj = require(12823) /* HdrCaptureMode */;
+  let obj = require(12824) /* HdrCaptureMode */;
   obj = { location };
   return obj.getGoLiveHdrConfig(obj).hdrCaptureMode;
 }
@@ -286,8 +286,8 @@ function _getSettings0(context) {
   const merged2 = Object.assign(modeOptions2);
   if (null == obj.vadDuringPreProcess) {
     obj = { location: "getSettings" };
-    obj.vadDuringPreProcess = require(12824) /* getVADBeforeProcessingExperimentConfig */.getVADBeforeProcessingExperimentConfig(obj).enabled;
-    const obj5 = require(12824) /* getVADBeforeProcessingExperimentConfig */;
+    obj.vadDuringPreProcess = require(12825) /* getVADBeforeProcessingExperimentConfig */.getVADBeforeProcessingExperimentConfig(obj).enabled;
+    const obj5 = require(12825) /* getVADBeforeProcessingExperimentConfig */;
   }
   if (null != obj.vadKrispActivationThreshold) {
     obj = {};
@@ -297,7 +297,7 @@ function _getSettings0(context) {
     obj["modeOptions"] = obj;
     return obj;
   }
-  const aGC2ExperimentConfig = require(12825) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig({ location: "getSettings" });
+  const aGC2ExperimentConfig = require(12826) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig({ location: "getSettings" });
   if (null != aGC2ExperimentConfig.vadKrispActivationThreshold) {
     obj.vadKrispActivationThreshold = aGC2ExperimentConfig.vadKrispActivationThreshold;
   }
@@ -306,10 +306,10 @@ function setInputMode(SOFT_INPUT_ADJUST_RESIZE, arg1) {
   const tmp = _getSettings0(SOFT_INPUT_ADJUST_RESIZE.context);
   const mode = tmp.mode;
   if (SOFT_INPUT_ADJUST_RESIZE.context === MediaEngineContextTypes.DEFAULT) {
-    let obj = require(10347) /* setPushToTalkState */;
+    let obj = require(10348) /* setPushToTalkState */;
     obj.setPushToTalkState(false, false);
   }
-  let showPTTSpeakingIndicator = importDefault(12826).getConfig({ location: "setInputMode" }).showPTTSpeakingIndicator;
+  let showPTTSpeakingIndicator = importDefault(12827).getConfig({ location: "setInputMode" }).showPTTSpeakingIndicator;
   if (showPTTSpeakingIndicator) {
     showPTTSpeakingIndicator = mode === InputModes.PUSH_TO_TALK;
   }
@@ -374,8 +374,8 @@ function updateConnectionMuteDeaf(context) {
   context.setSelfMute(flag);
   context.setSelfDeaf(tmp.deaf);
   if (context.context === MediaEngineContextTypes.DEFAULT) {
-    importDefault(12807).updateNativeMute();
-    const obj2 = importDefault(12807);
+    importDefault(12808).updateNativeMute();
+    const obj2 = importDefault(12808);
   }
 }
 function updateVideo(c99, arg1) {
@@ -451,17 +451,17 @@ function updateVideo(c99, arg1) {
               if (!isWindowsResult) {
                 let tmp61 = !videoHook2;
                 if (!tmp61) {
-                  const DisableHookFramePacerExperiment = require(12830) /* apexExperiment */.DisableHookFramePacerExperiment;
+                  const DisableHookFramePacerExperiment = require(12831) /* apexExperiment */.DisableHookFramePacerExperiment;
                   obj = { location: "updateVideo" };
                   tmp61 = !DisableHookFramePacerExperiment.getConfig(obj).enabled;
                 }
                 let enabled2 = videoHook2;
                 if (videoHook2) {
-                  const VideoHookDX12Experiment = require(12831) /* apexExperiment */.VideoHookDX12Experiment;
+                  const VideoHookDX12Experiment = require(12832) /* apexExperiment */.VideoHookDX12Experiment;
                   let obj1 = { location: "updateVideo" };
                   enabled2 = VideoHookDX12Experiment.getConfig(obj1).enabled;
                 }
-                const UpscaleSmallCapturedFramesExperiment = require(12832) /* apexExperiment */.UpscaleSmallCapturedFramesExperiment;
+                const UpscaleSmallCapturedFramesExperiment = require(12833) /* apexExperiment */.UpscaleSmallCapturedFramesExperiment;
                 let obj2 = { location: "updateVideo" };
                 const config = UpscaleSmallCapturedFramesExperiment.getConfig(obj2);
                 let obj3 = {};
@@ -476,7 +476,7 @@ function updateVideo(c99, arg1) {
                 obj4.hdrCaptureMode = tmp79;
                 const obj14 = require(477) /* set */;
                 obj5 = { location: "updateVideo" };
-                obj4.enableGlobalFramePoolLock = require(12833) /* getGlobalFramePoolLockExperimentConfig */.getGlobalFramePoolLockExperimentConfig(obj5).enabled;
+                obj4.enableGlobalFramePoolLock = require(12834) /* getGlobalFramePoolLockExperimentConfig */.getGlobalFramePoolLockExperimentConfig(obj5).enabled;
                 obj4.useGraphicsCaptureDirtyRegions = false;
                 obj4.videoHookAllowDx12 = enabled2;
                 obj4.minCaptureWidth = minCaptureWidth;
@@ -484,13 +484,13 @@ function updateVideo(c99, arg1) {
                 obj3.desktopDescription = obj4;
                 obj3.quality = obj;
                 store3.setGoLiveSource(obj3, STREAM);
-                const obj15 = require(12833) /* getGlobalFramePoolLockExperimentConfig */;
+                const obj15 = require(12834) /* getGlobalFramePoolLockExperimentConfig */;
               } else if (true === c136) {
-                const WGCDirtyRegionsExperiment = require(12828) /* apexExperiment */.WGCDirtyRegionsExperiment;
+                const WGCDirtyRegionsExperiment = require(12829) /* apexExperiment */.WGCDirtyRegionsExperiment;
                 const obj6 = { location: "updateVideo" };
                 let enabled = WGCDirtyRegionsExperiment.getConfig(obj6).enabled;
               } else {
-                const WGCDirtyRegionsAllExperiment = require(12829) /* apexExperiment */.WGCDirtyRegionsAllExperiment;
+                const WGCDirtyRegionsAllExperiment = require(12830) /* apexExperiment */.WGCDirtyRegionsAllExperiment;
                 const obj7 = { location: "updateVideo" };
                 enabled = WGCDirtyRegionsAllExperiment.getConfig(obj7).enabled;
               }
@@ -498,7 +498,7 @@ function updateVideo(c99, arg1) {
               obj3 = require(477) /* set */;
               let isWindowsResult1 = obj3.isWindows();
               if (isWindowsResult1) {
-                obj4 = importDefault(12836);
+                obj4 = importDefault(12837);
                 let release;
                 if (null != importDefault(3742)) {
                   release = importDefault(3742).os.release;
@@ -548,14 +548,14 @@ function updateVideo(c99, arg1) {
         videoHook = _getSettings0().videoHook;
       }
       if (videoHook) {
-        obj1 = importAll(12827);
+        obj1 = importAll(12828);
         const result = obj1.cancelAttachToProcess(tmp3.desktopSource.sourcePid);
       }
       store3.setGoLiveSource(null, STREAM);
     } else {
       obj = require(477) /* set */;
     }
-    obj2 = importAll(12827);
+    obj2 = importAll(12828);
     const result1 = obj2.cancelAttachToProcess(tmp3.desktopSource.soundshareId);
   }
 }
@@ -638,19 +638,19 @@ function handleVideoFilterError(code) {
 function getAutomaticGainControlConfig(disable) {
   let obj = { enabled: disable };
   obj = { location: "getAutomaticGainControlConfig", disable: !disable };
-  const merged = Object.assign(require(12825) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig(obj).noiseCancellationConfig);
+  const merged = Object.assign(require(12826) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig(obj).noiseCancellationConfig);
   return obj;
 }
 function setAutomaticGainControl(setAutomaticGainControl, disable) {
   const result = setAutomaticGainControl.setAutomaticGainControl(getAutomaticGainControlConfig(disable));
 }
 function setNoiseCancellation(setNoiseCancellation) {
-  const tmpResult = importDefault(10726)(arg1, tmp20.getSystemMicrophoneMode());
+  const tmpResult = importDefault(10727)(arg1, tmp20.getSystemMicrophoneMode());
   if (tmpResult !== arg1) {
     importDefaultResult.info("Falling back to system noise suppression.");
   }
   setNoiseCancellation.setNoiseCancellation(tmpResult);
-  let obj = require(12825) /* getAGC2ExperimentConfig */;
+  let obj = require(12826) /* getAGC2ExperimentConfig */;
   obj = { location: "setNoiseCancellation", disable: !tmpResult };
   const result = setNoiseCancellation.setNoiseCancellationDuringProcessing(obj.getAGC2ExperimentConfig(obj).noiseCancellationDuringProcessing);
 }
@@ -672,12 +672,12 @@ function updateConnectionVoiceProcessing(setEchoCancellation) {
     if (null != importDefault(3742)) {
       release = importDefault(3742).os.release;
     }
-    isWindowsResult = importDefault(12836).satisfies(release, c147);
-    const obj2 = importDefault(12836);
+    isWindowsResult = importDefault(12837).satisfies(release, c147);
+    const obj2 = importDefault(12837);
   }
   if (isWindowsResult) {
     if (setEchoCancellation.context === MediaEngineContextTypes.DEFAULT) {
-      const obj4 = require(12834) /* getSystemwideEchoCancellationExperimentConfig */;
+      const obj4 = require(12835) /* getSystemwideEchoCancellationExperimentConfig */;
       obj = { location: "updateConnectionVoiceProcessing" };
       const systemwideEchoCancellationExperimentConfig = obj4.getSystemwideEchoCancellationExperimentConfig(obj);
       let tmp23 = isDeviceSystemEchoIncompatible(obj3[tmp20.getInputDeviceId(tmp20)]);
@@ -1272,8 +1272,8 @@ function supportsWindowsGraphicsCapture() {
     if (null != importDefault(3742)) {
       release = importDefault(3742).os.release;
     }
-    isWindowsResult = importDefault(12836).satisfies(release, closure_34);
-    const obj2 = importDefault(12836);
+    isWindowsResult = importDefault(12837).satisfies(release, closure_34);
+    const obj2 = importDefault(12837);
   }
   return isWindowsResult;
 }
@@ -1287,8 +1287,8 @@ function supportsScreenCaptureKit() {
     if (null != importDefault(3742)) {
       release = importDefault(3742).os.release;
     }
-    isMacResult = importDefault(12836).satisfies(release, closure_29);
-    const obj2 = importDefault(12836);
+    isMacResult = importDefault(12837).satisfies(release, closure_29);
+    const obj2 = importDefault(12837);
   }
   return isMacResult;
 }
@@ -1338,7 +1338,7 @@ function applySettings() {
   const result = store3.setSidechainCompression(tmp.sidechainCompression);
   const result1 = store3.setSidechainCompressionStrength(tmp.sidechainCompressionStrength);
   const result2 = store3.setAudioInputBypassSystemProcessing(tmp.bypassSystemInputProcessing);
-  obj = importDefault(10705);
+  obj = importDefault(10706);
   if (obj2.isLinux()) {
     let tmp17 = null == importDefault(5141);
     if (!tmp17) {
@@ -1496,10 +1496,10 @@ function maybeProbeAudioEffects(inputDeviceId) {
         guid = tmp4.guid;
       }
       if (null != guid) {
-        importDefault(12892)(tmp4.guid, inputDeviceId, closure_77);
+        importDefault(12893)(tmp4.guid, inputDeviceId, closure_77);
       }
     }
-    obj2 = importDefault(12891);
+    obj2 = importDefault(12892);
   }
 }
 function setInputDevice(inputDeviceId) {
@@ -1701,8 +1701,8 @@ function maybeTryHookProcess(pidFromDesktopSource, sound) {
     videoHook = _getSettings0().videoHook;
   }
   if (videoHook) {
-    importAll(12827).attachToProcess(pidFromDesktopSource);
-    const obj5 = importAll(12827);
+    importAll(12828).attachToProcess(pidFromDesktopSource);
+    const obj5 = importAll(12828);
   }
   return { soundshareId: null, soundshareSession: null };
 }
@@ -1722,7 +1722,7 @@ function resetProbingState() {
   mergeSettings({ videoToggleStateMap }, DEFAULT, false);
 }
 function computeSpatialAudioEnabled(audioMixerSettings) {
-  let supportsResult = true === audioMixerSettings.enabled && importDefault(12818).getConfig({ location: "MediaEngineStore" }).enabled;
+  let supportsResult = true === audioMixerSettings.enabled && importDefault(12819).getConfig({ location: "MediaEngineStore" }).enabled;
   if (supportsResult) {
     supportsResult = store3.supports(Features.SPATIAL_AUDIO);
   }
@@ -1744,9 +1744,9 @@ function trackVoiceProcessing(location) {
   if (null != tmp4) {
     name = tmp4.name;
   }
-  const tmp6 = importDefault(10726);
+  const tmp6 = importDefault(10727);
   let obj = importDefault(675);
-  obj = { echo_cancellation: tmp.echoCancellation, noise_cancellation: tmp.noiseCancellation, noise_suppression: tmp.noiseSuppression, automatic_gain_control: tmp.automaticGainControl, location, bypass_system_input_processing: tmp.bypassSystemInputProcessing, audio_subsystem: audioSubsystem, audio_layer: audioLayer, input_device: name, effective_noise_cancellation: importDefault(10726)(tmp.noiseCancellation, tmp20.getSystemMicrophoneMode()) };
+  obj = { echo_cancellation: tmp.echoCancellation, noise_cancellation: tmp.noiseCancellation, noise_suppression: tmp.noiseSuppression, automatic_gain_control: tmp.automaticGainControl, location, bypass_system_input_processing: tmp.bypassSystemInputProcessing, audio_subsystem: audioSubsystem, audio_layer: audioLayer, input_device: name, effective_noise_cancellation: importDefault(10727)(tmp.noiseCancellation, tmp20.getSystemMicrophoneMode()) };
   obj.track(constants.VOICE_PROCESSING, obj);
 }
 function setLoopback() {
@@ -3510,8 +3510,8 @@ getMediaEngineImpl = {
     }
     let enabled = require(477) /* set */.isIOS();
     if (enabled) {
-      enabled = require(12894) /* getIOSAudioInterruptExperimentConfig */.getIOSAudioInterruptExperimentConfig("handleConnectionOpen").enabled;
-      const obj2 = require(12894) /* getIOSAudioInterruptExperimentConfig */;
+      enabled = require(12895) /* getIOSAudioInterruptExperimentConfig */.getIOSAudioInterruptExperimentConfig("handleConnectionOpen").enabled;
+      const obj2 = require(12895) /* getIOSAudioInterruptExperimentConfig */;
     }
     if (enabled) {
       store3.updateFieldTrial("WebRTC-Audio-iOS-Holding", "Enabled");
@@ -3522,8 +3522,8 @@ getMediaEngineImpl = {
       const requireModuleResult = importDefault(5141).requireModule("discord_krisp");
       const setMklZenOverrideEnabled = requireModuleResult.setMklZenOverrideEnabled;
       if (null != setMklZenOverrideEnabled) {
-        setMklZenOverrideEnabled.call(requireModuleResult, require(12895) /* getMklZenOverrideExperimentConfig */.getMklZenOverrideExperimentConfig("handleConnectionOpen").enabled);
-        const obj5 = require(12895) /* getMklZenOverrideExperimentConfig */;
+        setMklZenOverrideEnabled.call(requireModuleResult, require(12896) /* getMklZenOverrideExperimentConfig */.getMklZenOverrideExperimentConfig("handleConnectionOpen").enabled);
+        const obj5 = require(12896) /* getMklZenOverrideExperimentConfig */;
       }
       const obj4 = importDefault(5141);
     }
@@ -3712,7 +3712,7 @@ getMediaEngineImpl = {
         }
       }
       if (isAutomatic) {
-        disabledLocalVideos(12819)(userId, tmp6 ? constants12.AUTO_DISABLE : constants12.AUTO_ENABLE, tmp10);
+        disabledLocalVideos(12820)(userId, tmp6 ? constants12.AUTO_DISABLE : constants12.AUTO_ENABLE, tmp10);
         if (tmp6) {
           obj8.add(userId);
         } else {
@@ -3734,10 +3734,10 @@ getMediaEngineImpl = {
             if (!tmp44) {
               obj7.disable();
             }
-            disabledLocalVideos(12819)(userId, constants12.MANUAL_REENABLE, tmp10);
+            disabledLocalVideos(12820)(userId, constants12.MANUAL_REENABLE, tmp10);
           }
         }
-        disabledLocalVideos(12819)(userId, tmp6 ? constants12.MANUAL_DISABLE : constants12.MANUAL_ENABLE, tmp10);
+        disabledLocalVideos(12820)(userId, tmp6 ? constants12.MANUAL_DISABLE : constants12.MANUAL_ENABLE, tmp10);
       }
       if (tmp17) {
         tmp17 = !tmp6;
@@ -3760,7 +3760,7 @@ getMediaEngineImpl = {
         return setLocalVideoDisabled.setLocalVideoDisabled(userId, tmp3);
       }, context);
     } else {
-      disabledLocalVideos(12819)(userId, tmp6 ? constants12.AUTO_DISABLE : constants12.AUTO_ENABLE, tmp10);
+      disabledLocalVideos(12820)(userId, tmp6 ? constants12.AUTO_DISABLE : constants12.AUTO_ENABLE, tmp10);
     }
   },
   AUDIO_SET_LOCAL_VOLUME: function handleSetLocalVolume(volume) {
@@ -3893,7 +3893,7 @@ getMediaEngineImpl = {
     trackVoiceProcessing(enabled.location);
   },
   AUDIO_SET_KRISP_MODEL_OVERRIDE: function handleSetKrispModelOverride(model) {
-    const result = importDefault(12802).setKrispModelOverride(model.model);
+    const result = importDefault(12803).setKrispModelOverride(model.model);
     model = model.model;
     setLoopback();
   },
@@ -3905,7 +3905,7 @@ getMediaEngineImpl = {
   },
   AUDIO_SET_KRISP_SUPPRESSION_LEVEL: function handleSetKrispSuppressionLevel(level) {
     level = level.level;
-    const result = importDefault(12802).setKrispSuppressionLevel(level);
+    const result = importDefault(12803).setKrispSuppressionLevel(level);
   },
   AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS: function handleSetNoiseCancellationEnableStats(enabled) {
     if (!obj.isWeb()) {
@@ -4006,7 +4006,7 @@ getMediaEngineImpl = {
         timeout2.stop();
       } else if (_getSettings0().mode === InputModes.VOICE_ACTIVITY) {
         if (c107) {
-          let obj = importDefault(12896);
+          let obj = importDefault(12897);
           obj = { location: "MediaEngineStore.handleInputDetected" };
           const config = obj.getConfig(obj);
           const resetSilenceWarningAfterNMinutes = config.resetSilenceWarningAfterNMinutes;
@@ -4191,7 +4191,7 @@ getMediaEngineImpl = {
   },
   APP_STATE_UPDATE: function handleFocus(state) {
     state = state.state;
-    importDefault(10196);
+    importDefault(10197);
     if (state === constants2.BACKGROUND) {
       if (c99) {
         if (!tmp2) {
@@ -4357,7 +4357,7 @@ getMediaEngineImpl = {
           store3.setClipsSource(null);
           if (obj12.isWindows()) {
             if (null != obj.desktopSource.soundshareId) {
-              let obj2 = importAll(12827);
+              let obj2 = importAll(12828);
               const result = obj2.cancelAttachToProcess(obj.desktopSource.soundshareId);
             } else {
               let videoHook = null != obj.desktopSource.sourcePid;
@@ -4365,7 +4365,7 @@ getMediaEngineImpl = {
                 videoHook = _getSettings0().videoHook;
               }
               if (videoHook) {
-                let obj1 = importAll(12827);
+                let obj1 = importAll(12828);
                 const result1 = obj1.cancelAttachToProcess(obj.desktopSource.sourcePid);
               }
             }
@@ -4383,17 +4383,17 @@ getMediaEngineImpl = {
         const videoHook2 = _getSettings0().videoHook;
         let tmp26 = !videoHook2;
         if (!tmp26) {
-          const DisableHookFramePacerExperiment = require(12830) /* apexExperiment */.DisableHookFramePacerExperiment;
+          const DisableHookFramePacerExperiment = require(12831) /* apexExperiment */.DisableHookFramePacerExperiment;
           obj1 = { location: "handleClipsInit" };
           tmp26 = !DisableHookFramePacerExperiment.getConfig(obj1).enabled;
         }
         let enabled = videoHook2;
         if (videoHook2) {
-          const VideoHookDX12Experiment = require(12831) /* apexExperiment */.VideoHookDX12Experiment;
+          const VideoHookDX12Experiment = require(12832) /* apexExperiment */.VideoHookDX12Experiment;
           obj2 = { location: "handleClipsInit" };
           enabled = VideoHookDX12Experiment.getConfig(obj2).enabled;
         }
-        const UpscaleSmallCapturedFramesExperiment = require(12832) /* apexExperiment */.UpscaleSmallCapturedFramesExperiment;
+        const UpscaleSmallCapturedFramesExperiment = require(12833) /* apexExperiment */.UpscaleSmallCapturedFramesExperiment;
         obj3 = { location: "handleClipsInit" };
         const config = UpscaleSmallCapturedFramesExperiment.getConfig(obj3);
         const obj4 = {};

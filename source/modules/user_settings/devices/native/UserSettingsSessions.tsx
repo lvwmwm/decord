@@ -1,10 +1,10 @@
-// Module ID: 13913
-// Function ID: 106508
+// Module ID: 13914
+// Function ID: 106513
 // Name: UserSettingsSessions
-// Dependencies: [57, 31, 27, 1850, 653, 33, 4131, 5053, 689, 13700, 566, 13914, 4542, 5501, 1212, 5164, 5121, 4127, 1327, 4661, 1273, 7640, 1456, 11361, 6448, 13915, 11858, 10792, 9140, 13916, 2]
+// Dependencies: [57, 31, 27, 1850, 653, 33, 4131, 5053, 689, 13701, 566, 13915, 4542, 5501, 1212, 5164, 5121, 4127, 1327, 4661, 1273, 7640, 1456, 11362, 6448, 13916, 11859, 10793, 9140, 13917, 2]
 // Exports: default
 
-// Module 13913 (UserSettingsSessions)
+// Module 13914 (UserSettingsSessions)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "registerAsset";
@@ -25,7 +25,7 @@ function UserSettingsSessions() {
   let currentSession;
   let otherSessions;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = otherSessions(13700);
+  let obj = otherSessions(13701);
   let authSessions = obj.useAuthSessions();
   ({ currentSession, otherSessions } = authSessions);
   let obj1 = otherSessions(566);
@@ -142,18 +142,18 @@ function SessionInfo(session) {
         if ("ios" !== trimmed) {
           if ("android" !== trimmed) {
             if ("horizon os" === trimmed) {
-              let obj = { text: os, iconSource: importDefault(10792), IconComponent: session(13916).VrHeadsetIcon };
+              let obj = { text: os, iconSource: importDefault(10793), IconComponent: session(13917).VrHeadsetIcon };
             } else {
-              obj = { text: os, iconSource: importDefault(13915), IconComponent: session(11858).ScreenIcon };
+              obj = { text: os, iconSource: importDefault(13916), IconComponent: session(11859).ScreenIcon };
             }
           }
         }
-        obj = { text: os, iconSource: importDefault(10792), IconComponent: session(9140).MobilePhoneIcon };
+        obj = { text: os, iconSource: importDefault(10793), IconComponent: session(9140).MobilePhoneIcon };
       }
       let formatDateResult = null;
       ({ text, iconSource, IconComponent } = obj);
       if (!current) {
-        let obj4 = session(13700);
+        let obj4 = session(13701);
         formatDateResult = obj4.formatDate(session.approx_last_used_time);
       }
       const items = [text, platform];
@@ -218,15 +218,15 @@ function SessionInfo(session) {
   const obj16 = {};
   const intl = session(1212).intl;
   obj16.text = intl.string(session(1212).t.cDHCNY);
-  obj16.iconSource = importDefault(13915);
-  obj16.IconComponent = session(11858).ScreenIcon;
+  obj16.iconSource = importDefault(13916);
+  obj16.IconComponent = session(11859).ScreenIcon;
   obj = obj16;
 }
 function UnknownLegacySessionsInfo() {
   let obj = _require(1456);
   _require = obj.useNavigation();
   obj = {};
-  obj = { variant: "translucent", source: importDefault(11361) };
+  obj = { variant: "translucent", source: importDefault(11362) };
   obj.icon = callback2(_require(5164).TableRow.Icon, obj);
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t.iUa0sn);

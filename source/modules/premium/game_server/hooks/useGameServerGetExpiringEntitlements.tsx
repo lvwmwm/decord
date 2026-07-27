@@ -1,10 +1,10 @@
-// Module ID: 11586
-// Function ID: 90043
+// Module ID: 11587
+// Function ID: 90048
 // Name: useGameServerGetExpiringEntitlements
-// Dependencies: [31, 4039, 566, 11521, 2]
+// Dependencies: [31, 4039, 566, 11522, 2]
 // Exports: default
 
-// Module 11586 (useGameServerGetExpiringEntitlements)
+// Module 11587 (useGameServerGetExpiringEntitlements)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

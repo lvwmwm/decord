@@ -1,5 +1,5 @@
 // Module ID: 7756
-// Function ID: 61723
+// Function ID: 61724
 // Name: getTagProperties
 // Dependencies: [27, 4124, 7757, 1212, 7759, 7761, 2]
 // Exports: default

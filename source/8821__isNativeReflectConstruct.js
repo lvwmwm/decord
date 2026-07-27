@@ -1,5 +1,5 @@
 // Module ID: 8821
-// Function ID: 69843
+// Function ID: 69844
 // Name: _isNativeReflectConstruct
 // Dependencies: [65, 6, 7, 15, 17, 18, 8815, 8816]
 // Exports: Chi, Maj

@@ -1,5 +1,5 @@
 // Module ID: 9015
-// Function ID: 70917
+// Function ID: 70918
 // Name: PhoneCallIcon
 // Dependencies: [31, 33, 689, 3834, 9016, 2]
 // Exports: PhoneCallIcon

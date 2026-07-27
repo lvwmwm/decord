@@ -1,7 +1,7 @@
 // Module ID: 5667
-// Function ID: 48483
+// Function ID: 48484
 // Name: _launchFrame
-// Dependencies: [5, 5658, 686, 5668, 12546, 10570, 10545, 10576, 2]
+// Dependencies: [5, 5658, 686, 5668, 12547, 10571, 10546, 10577, 2]
 // Exports: launchFrame, refreshProxyTicket, stopFrame, updateFrameLayoutMode, updateFramePanelMode
 
 // Module 5667 (_launchFrame)

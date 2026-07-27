@@ -1,7 +1,7 @@
 // Module ID: 5668
-// Function ID: 48495
+// Function ID: 48496
 // Name: _runPrimaryAppCommandOrJoinEmbeddedActivity
-// Dependencies: [5, 5669, 4168, 4144, 4311, 4154, 1194, 1348, 1838, 3759, 1850, 4147, 1347, 4156, 5660, 653, 4157, 1345, 5969, 10442, 5987, 10570, 10575, 10574, 10585, 686, 10895, 10577, 4031, 4357, 5664, 7952, 11232, 1882, 11142, 10584, 7957, 675, 10581, 11074, 10579, 4471, 1212, 10401, 10591, 480, 4943, 3749, 10448, 4324, 507, 1327, 6636, 5685, 4141, 5914, 1336, 1334, 2]
+// Dependencies: [5, 5669, 4168, 4144, 4311, 4154, 1194, 1348, 1838, 3759, 1850, 4147, 1347, 4156, 5660, 653, 4157, 1345, 5969, 10443, 5987, 10571, 10576, 10575, 10586, 686, 10896, 10578, 4031, 4357, 5664, 7952, 11233, 1882, 11143, 10585, 7957, 675, 10582, 11075, 10580, 4471, 1212, 10402, 10592, 480, 4943, 3749, 10449, 4324, 507, 1327, 6636, 5685, 4141, 5914, 1336, 1334, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, fetchDeveloperApplications, fetchShelf, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
 // Module 5668 (_runPrimaryAppCommandOrJoinEmbeddedActivity)
@@ -571,7 +571,7 @@ function stopEmbeddedActivity(showFeedback) {
             const participant = importDefault(4324).selectParticipant(embeddedActivityLocationChannelId, null);
             const obj6 = importDefault(4324);
           }
-          obj4 = applicationId(10448);
+          obj4 = applicationId(10449);
         }
       }
     }

@@ -1,5 +1,5 @@
 // Module ID: 6008
-// Function ID: 53596
+// Function ID: 53597
 // Name: ReportToModPermissions
 // Dependencies: [653, 483, 2]
 

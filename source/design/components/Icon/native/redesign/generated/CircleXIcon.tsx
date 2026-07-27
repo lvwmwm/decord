@@ -1,5 +1,5 @@
 // Module ID: 6679
-// Function ID: 58994
+// Function ID: 58995
 // Name: CircleXIcon
 // Dependencies: [31, 27, 33, 689, 3834, 6680, 6681, 2]
 // Exports: CircleXIcon

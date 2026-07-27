@@ -1,5 +1,5 @@
 // Module ID: 8048
-// Function ID: 64027
+// Function ID: 64028
 // Name: set
 // Dependencies: [8049, 8044, 2]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId

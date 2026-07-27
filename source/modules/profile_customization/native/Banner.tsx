@@ -1,5 +1,5 @@
 // Module ID: 8040
-// Function ID: 63948
+// Function ID: 63949
 // Name: ProfileBanner
 // Dependencies: [31, 27, 653, 33, 4131, 665, 5085, 2]
 // Exports: default

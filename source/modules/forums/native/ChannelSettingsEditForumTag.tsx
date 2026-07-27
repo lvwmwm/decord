@@ -1,10 +1,10 @@
-// Module ID: 15596
-// Function ID: 120321
+// Module ID: 15608
+// Function ID: 120368
 // Name: ChannelSettingsEditForumTag
 // Dependencies: [57, 31, 27, 4992, 1348, 1853, 33, 4131, 689, 1456, 566, 4127, 1212, 9067, 6695, 4542, 5501, 5164, 4661, 9268, 5150, 1392, 6519, 1273, 6679, 5502, 4472, 2]
 // Exports: default
 
-// Module 15596 (ChannelSettingsEditForumTag)
+// Module 15608 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "set";

@@ -1,10 +1,10 @@
-// Module ID: 12293
-// Function ID: 95831
+// Module ID: 12294
+// Function ID: 95836
 // Name: createEmbeddedActivityInviteEmbed
-// Dependencies: [57, 27, 1347, 7857, 4168, 1194, 1348, 4116, 3768, 1850, 9436, 5969, 686, 7856, 7666, 4594, 1212, 4321, 12294, 2]
+// Dependencies: [57, 27, 1347, 7857, 4168, 1194, 1348, 4116, 3768, 1850, 9436, 5969, 686, 7856, 7666, 4594, 1212, 4321, 12295, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 12293 (createEmbeddedActivityInviteEmbed)
+// Module 12294 (createEmbeddedActivityInviteEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "get ActivityIndicator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -107,8 +107,8 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
           if (null != id) {
             if (null != id2) {
               const obj1 = { channelId: id, guildId: id2, applicationId: id };
-              let embeddedActivityParticipantAvatarUris = id(12294).getEmbeddedActivityParticipantAvatarUris(obj1);
-              const obj8 = id(12294);
+              let embeddedActivityParticipantAvatarUris = id(12295).getEmbeddedActivityParticipantAvatarUris(obj1);
+              const obj8 = id(12295);
             }
             const string2 = id(1212).intl.string;
             if (0 === embeddedActivityParticipantAvatarUris.length) {

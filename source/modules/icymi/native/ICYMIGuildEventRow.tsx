@@ -1,10 +1,10 @@
-// Module ID: 15300
-// Function ID: 116760
+// Module ID: 15313
+// Function ID: 116809
 // Name: ICYMIGuildEventRow
-// Dependencies: [31, 27, 5751, 1348, 1838, 33, 15236, 689, 8154, 1212, 8148, 4321, 8151, 8253, 8123, 8155, 6633, 8158, 15277, 21, 4127, 8255, 4647, 1273, 566, 2]
+// Dependencies: [31, 27, 5751, 1348, 1838, 33, 15249, 689, 8154, 1212, 8148, 4321, 8151, 8253, 8123, 8155, 6633, 8158, 15290, 21, 4127, 8255, 4647, 1273, 566, 2]
 // Exports: default
 
-// Module 15300 (ICYMIGuildEventRow)
+// Module 15313 (ICYMIGuildEventRow)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -177,7 +177,7 @@ function ICYMIGuildEventRow(event) {
   items3[4] = callback4(closure_5, obj7);
   obj.children = items3;
   obj.children = callback4(closure_4, obj);
-  return tmp16(guild(15277), obj);
+  return tmp16(guild(15290), obj);
 }
 ({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ isGuildEventEnded: closure_6, isGuildScheduledEventActive: closure_7 } = _isNativeReflectConstruct);

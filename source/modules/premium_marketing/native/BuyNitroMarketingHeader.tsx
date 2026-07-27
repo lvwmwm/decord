@@ -1,5 +1,5 @@
 // Module ID: 6620
-// Function ID: 58564
+// Function ID: 58565
 // Name: BuyNitroMarketingHeader
 // Dependencies: [31, 27, 6173, 33, 689, 4131, 3992, 4134, 4132, 4067, 6621, 477, 6622, 6618, 668, 5085, 6175, 6193, 4555, 1212, 6624, 4127, 6625, 6627, 2]
 // Exports: default

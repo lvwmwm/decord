@@ -1,10 +1,10 @@
-// Module ID: 11293
-// Function ID: 87824
+// Module ID: 11294
+// Function ID: 87829
 // Name: styles
 // Dependencies: [31, 27, 33, 4131, 689, 2]
 // Exports: default
 
-// Module 11293 (styles)
+// Module 11294 (styles)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,5 +1,5 @@
 // Module ID: 7896
-// Function ID: 62937
+// Function ID: 62938
 // Name: useFetchPurchases
 // Dependencies: [57, 31, 4045, 5786, 624, 5769, 7897, 2]
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases

@@ -1,8 +1,8 @@
-// Module ID: 15542
-// Function ID: 119655
-// Dependencies: [57, 31, 6158, 12377, 1345, 33, 7778, 566, 8379, 1334, 15537, 15539, 6570, 1212, 2]
+// Module ID: 15555
+// Function ID: 119704
+// Dependencies: [57, 31, 6158, 12378, 1345, 33, 7778, 566, 8379, 1334, 15550, 15552, 6570, 1212, 2]
 
-// Module 15542
+// Module 15555
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
       }
     }
   }
-  obj = { cooldownDurationMs: onPress(15537).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
+  obj = { cooldownDurationMs: onPress(15550).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
   const tmp5 = callback(onPress(8379).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   dependencyMap = tmp6;
   const tmp7 = tmp5[0] === onPress(1334).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
@@ -57,7 +57,7 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
   obj.accessibilityLabel = intl.string(onPress(1212).t.Ipxkog);
   obj.onPress = callback;
   obj.showRedDot = tmp7;
-  return jsx(showReferralNotificationDot(15539), {});
+  return jsx(showReferralNotificationDot(15552), {});
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIconNitroSubscriber.tsx");
 

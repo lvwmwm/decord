@@ -1,5 +1,5 @@
 // Module ID: 9835
-// Function ID: 76274
+// Function ID: 76275
 // Name: isStaffChannel
 // Dependencies: [1348, 1838, 1850, 653, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 12142
-// Function ID: 95133
+// Module ID: 12143
+// Function ID: 95138
 // Name: EmptyGuildList
-// Dependencies: [57, 31, 27, 33, 4131, 689, 1273, 1212, 12143, 12144, 12140, 4127, 5159, 11633, 12145, 5186, 5187, 9171, 8288, 2]
+// Dependencies: [57, 31, 27, 33, 4131, 689, 1273, 1212, 12144, 12145, 12141, 4127, 5159, 11634, 12146, 5186, 5187, 9171, 8288, 2]
 // Exports: default
 
-// Module 12142 (EmptyGuildList)
+// Module 12143 (EmptyGuildList)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -20,8 +20,8 @@ function EmptyGuildList() {
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["2bfiLk"]);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.body = intl2.string(require(1212) /* getSystemLocale */.t.V6nAfF);
-  obj.darkSource = importDefault(12143);
-  obj.lightSource = importDefault(12144);
+  obj.darkSource = importDefault(12144);
+  obj.lightSource = importDefault(12145);
   return callback2(require(1273) /* Button */.ThemedEmptyState, obj);
 }
 function GuildList(recipientId) {
@@ -29,7 +29,7 @@ function GuildList(recipientId) {
   const source = recipientId.source;
   let callback;
   const dependencyMap = _createForOfIteratorHelperLoose();
-  let obj = recipientId(12140);
+  let obj = recipientId(12141);
   let tmp = callback(obj.useServerInviteRows(recipientId, recipientId.query), 2);
   const first = tmp[0];
   if (0 === first.length) {
@@ -77,7 +77,7 @@ function GuildList(recipientId) {
       return guild.guild.id;
     };
     obj.ListEmptyComponent = EmptyGuildList;
-    return closure_6(recipientId(11633).UserProfileStackedActionSheetSectionList, obj);
+    return closure_6(recipientId(11634).UserProfileStackedActionSheetSectionList, obj);
   }
   const obj1 = {};
   const intl = recipientId(1212).intl;

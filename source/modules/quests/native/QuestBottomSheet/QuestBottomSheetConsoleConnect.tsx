@@ -1,10 +1,10 @@
-// Module ID: 14119
-// Function ID: 108563
+// Module ID: 14120
+// Function ID: 108568
 // Name: NonInlineConsoleConnection
-// Dependencies: [31, 27, 653, 33, 689, 4131, 10427, 10903, 10431, 10435, 4099, 6554, 14077, 1935, 9406, 9407, 9408, 5960, 5959, 4980, 8897, 5501, 5164, 11860, 1212, 8441, 2]
+// Dependencies: [31, 27, 653, 33, 689, 4131, 10428, 10904, 10432, 10436, 4099, 6554, 14078, 1935, 9406, 9407, 9408, 5960, 5959, 4980, 8897, 5501, 5164, 11861, 1212, 8441, 2]
 // Exports: default
 
-// Module 14119 (NonInlineConsoleConnection)
+// Module 14120 (NonInlineConsoleConnection)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -39,7 +39,7 @@ function ConsoleRow(onPress) {
   const merged = Object.assign(onPress, obj);
   const type = merged.type;
   if (constants.PLAYSTATION === type) {
-    obj = { arrow: true, icon: callback(onPress(11860).PlaystationNeutralIcon, {}) };
+    obj = { arrow: true, icon: callback(onPress(11861).PlaystationNeutralIcon, {}) };
     const intl3 = onPress(1212).intl;
     obj.label = intl3.string(onPress(1212).t.JafL6p);
     let stringResult;
@@ -91,11 +91,11 @@ export default function QuestBottomSheetConsoleConnect(quest) {
     obj = { questId: quest.id, initialStep: closure_1, sourceQuestContent: closure_2 };
     obj.openLazy(quest(outer1_2[13])(outer1_2[12], outer1_2.paths), "QuestBottomSheet", obj);
   }
-  let obj = quest(10427);
+  let obj = quest(10428);
   const xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  let closure_4 = quest(10903).useTrackQuestContentClickedWithImpression();
-  let obj2 = quest(10903);
-  let closure_5 = quest(10431).useQuestImpressionId();
+  let closure_4 = quest(10904).useTrackQuestContentClickedWithImpression();
+  let obj2 = quest(10904);
+  let closure_5 = quest(10432).useQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
   obj = {
     consoles: xboxAndPlaystationAccounts.useMemo(() => {

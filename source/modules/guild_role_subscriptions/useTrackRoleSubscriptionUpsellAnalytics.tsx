@@ -1,10 +1,10 @@
-// Module ID: 15320
-// Function ID: 116918
+// Module ID: 15333
+// Function ID: 116967
 // Name: useTrackRoleSubscriptionUpsellAnalytics
-// Dependencies: [31, 3753, 653, 14163, 15321, 566, 5462, 1198, 675, 4325, 2]
+// Dependencies: [31, 3753, 653, 14164, 15334, 566, 5462, 1198, 675, 4325, 2]
 // Exports: default
 
-// Module 15320 (useTrackRoleSubscriptionUpsellAnalytics)
+// Module 15333 (useTrackRoleSubscriptionUpsellAnalytics)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";

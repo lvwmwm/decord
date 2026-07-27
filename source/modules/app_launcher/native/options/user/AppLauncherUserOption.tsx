@@ -1,10 +1,10 @@
-// Module ID: 11298
-// Function ID: 87858
+// Module ID: 11299
+// Function ID: 87863
 // Name: AppLauncherUserOption
-// Dependencies: [57, 31, 4123, 33, 4131, 689, 566, 11290, 1820, 4099, 11299, 1935, 11299, 1273, 11293, 6717, 11296, 4127, 2]
+// Dependencies: [57, 31, 4123, 33, 4131, 689, 566, 11291, 1820, 4099, 11300, 1935, 11300, 1273, 11294, 6717, 11297, 4127, 2]
 // Exports: default
 
-// Module 11298 (AppLauncherUserOption)
+// Module 11299 (AppLauncherUserOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -87,13 +87,13 @@ export default function AppLauncherUserOption(option) {
     let tmp15 = jsx(option(1273).Avatar, { user: tmp6, guildId: guild_id, animate: !stateFromStores, size: option(1273).AvatarSizes.REFRESH_MEDIUM_32 });
   } else {
     const obj1 = { icon: jsx(option(6717).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
-    tmp15 = jsx(importDefault(11293), { icon: jsx(option(6717).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper });
-    const tmp13 = importDefault(11293);
+    tmp15 = jsx(importDefault(11294), { icon: jsx(option(6717).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper });
+    const tmp13 = importDefault(11294);
   }
   obj.leading = tmp15;
   if (null != tmp6) {
     let obj2 = { guildId: guild_id, user: tmp6 };
-    let tmp19 = jsx(importDefault(11296), { guildId: guild_id, user: tmp6 });
+    let tmp19 = jsx(importDefault(11297), { guildId: guild_id, user: tmp6 });
   } else {
     tmp19 = null;
     if (null != first) {
@@ -103,5 +103,5 @@ export default function AppLauncherUserOption(option) {
   }
   obj.selectedItemName = tmp19;
   obj.autoFocus = autoFocus;
-  return tmp7(importDefault(11290), obj);
+  return tmp7(importDefault(11291), obj);
 };

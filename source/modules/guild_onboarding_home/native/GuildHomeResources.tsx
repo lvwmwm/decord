@@ -1,10 +1,10 @@
-// Module ID: 15349
-// Function ID: 117051
+// Module ID: 15362
+// Function ID: 117100
 // Name: ResourceChannelRow
-// Dependencies: [31, 27, 1348, 1908, 4350, 3759, 653, 33, 4131, 689, 566, 8130, 11123, 15350, 5685, 11375, 1392, 4661, 4127, 4121, 15343, 1198, 1212, 15351, 4544, 2]
+// Dependencies: [31, 27, 1348, 1908, 4350, 3759, 653, 33, 4131, 689, 566, 8130, 11124, 15363, 5685, 11376, 1392, 4661, 4127, 4121, 15356, 1198, 1212, 15364, 4544, 2]
 // Exports: default
 
-// Module 15349 (ResourceChannelRow)
+// Module 15362 (ResourceChannelRow)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -51,10 +51,10 @@ function ResourceChannelRow(channelId) {
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  let obj6 = channelId(11123);
+  let obj6 = channelId(11124);
   obj = { channel: stateFromStores, media: first };
   const shouldObscure = obj6.useSharedMediaProps(obj).shouldObscure;
-  const tmp8 = stateFromStores(15350)(firstResult);
+  const tmp8 = stateFromStores(15363)(firstResult);
   const tmp9 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp9;
   const items3 = [channelId, tmp9];
@@ -131,7 +131,7 @@ function ResourceChannelRow(channelId) {
               }
               obj10.firstMessageId = id;
               obj10.containerStyle = tmp.thumbnail;
-              tmp36Result = callback(channelId(11123).ForumPostMediaThumbnail, obj10);
+              tmp36Result = callback(channelId(11124).ForumPostMediaThumbnail, obj10);
               const obj23 = channelId(8130);
               const tmp36 = callback;
             }
@@ -164,14 +164,14 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export default function GuildHomeResources(guildId) {
   guildId = guildId.guildId;
   const tmp = _createForOfIteratorHelperLoose();
-  const arr = importDefault(15343)(guildId);
+  const arr = importDefault(15356)(guildId);
   if (0 === arr.length) {
     let obj = { style: tmp.emptyStateContainer };
     obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
     const intl = guildId(1212).intl;
     obj.children = intl.string(guildId(1212).t.owvC9U);
     const items = [callback(guildId(4127).Text, obj), , ];
-    const obj1 = { style: tmp.emptyStateImage, source: importDefault(15351) };
+    const obj1 = { style: tmp.emptyStateImage, source: importDefault(15364) };
     items[1] = callback(closure_5, obj1);
     const obj2 = {
       onPress() {

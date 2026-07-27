@@ -1,5 +1,5 @@
 // Module ID: 8982
-// Function ID: 70786
+// Function ID: 70787
 // Name: _transferToXbox
 // Dependencies: [5, 31, 27, 653, 33, 8974, 8971, 8983, 4472, 8984, 1935, 8977, 4310, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 14524
-// Function ID: 110946
+// Module ID: 14525
+// Function ID: 110951
 // Name: DemoActionSheet
-// Dependencies: [57, 31, 27, 653, 33, 4131, 5498, 5186, 8192, 5499, 4542, 6670, 5500, 4099, 1324, 4544, 1212, 6599, 6839, 12761, 5166, 4127, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4131, 5498, 5186, 8192, 5499, 4542, 6670, 5500, 4099, 1324, 4544, 1212, 6599, 6839, 12762, 5166, 4127, 2]
 // Exports: default
 
-// Module 14524 (DemoActionSheet)
+// Module 14525 (DemoActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -107,7 +107,7 @@ function DemoPromoSheet() {
     obj.actions = tmp2;
     let obj2 = obj;
   } else {
-    obj2 = { illustration: callback2(importDefault(12761), {}), title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp2 };
+    obj2 = { illustration: callback2(importDefault(12762), {}), title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp2 };
   }
   return callback2(require(6599) /* PromoSheet */.PromoSheet, obj2);
 }

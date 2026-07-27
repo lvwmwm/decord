@@ -1,5 +1,5 @@
 // Module ID: 8611
-// Function ID: 68435
+// Function ID: 68436
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4170, 8608, 2]
 // Exports: isSKUWishlistItemRecord
